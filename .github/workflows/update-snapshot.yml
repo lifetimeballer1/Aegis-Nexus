@@ -67,8 +67,6 @@ jobs:
         run: python --version && node --version && git --version
       - name: Run canonical refresh with per-stage verification
         run: python refresh_pipeline.py
-      - name: Build dedicated browser map points
-        run: python build_map_points.py
       - name: Repair map tile source
         run: |
           python - <<'PY'
