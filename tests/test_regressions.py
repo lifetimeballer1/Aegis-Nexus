@@ -125,3 +125,46 @@ def test_phase8_operational_health_gate_is_source_preserving():
     assert 'invalid map coordinates' in validator
     assert 'Brain relationship lacks evidence' in validator
     assert 'excessive duplicate story identities' in validator
+
+
+def test_strategic_actor_attribution_requires_action_local_context():
+    from intelligence_entity_extractor import extract_entities
+    from build_canonical_intelligence_v3 import participant_roles
+
+    def roles(text, event_type):
+        found_list=extract_entities(text)
+        found={str(x['id']):x for x in found_list}
+        names={str(x['id']):str(x['canonical_name']) for x in found_list}
+        matched=list(names)
+        actors,targets,_=participant_roles(found,matched,names,event_type,text)
+        return {names[x] for x in actors}, {names[x] for x in targets}
+
+    actors,_=roles('The United States imposed sanctions on Iran.', 'sanction')
+    assert 'United States' in actors
+
+    actors,_=roles('China deployed military forces near Taiwan.', 'military_action')
+    assert 'China' in actors
+
+    actors,_=roles('The military deployed forces near the border.', 'military_action')
+    assert 'United States' not in actors and 'China' not in actors
+
+    actors,_=roles('Washington announced a policy change affecting trade.', 'trade_action')
+    assert 'United States' not in actors
+
+    actors,_=roles('Beijing announced a policy change affecting trade.', 'trade_action')
+    assert 'China' not in actors
+
+
+def test_strategic_institution_attribution_requires_country_context_and_schema_supports_commands():
+    from intelligence_entity_extractor import extract_entities
+    from intelligence_schema import ENTITY_TYPES
+
+    pentagon=extract_entities('The Pentagon announced new military deployments.')
+    assert 'U.S. Department of Defense' in {x['canonical_name'] for x in pentagon}
+
+    generic=extract_entities('The defense department announced new military deployments.')
+    assert 'U.S. Department of Defense' not in {x['canonical_name'] for x in generic}
+
+    chinese=extract_entities('China said the Central Military Commission approved the deployment.')
+    assert 'Chinese Central Military Commission' in {x['canonical_name'] for x in chinese}
+    assert 'military_command' in ENTITY_TYPES
