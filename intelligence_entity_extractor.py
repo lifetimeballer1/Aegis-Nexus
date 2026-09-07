@@ -12,6 +12,21 @@ CANONICAL_ALIASES = {
     "Taiwan": ("country", {"taiwan", "taiwanese", "taipei"}),
     "Iran": ("country", {"iran", "iranian", "tehran"}),
     "Israel": ("country", {"israel", "israeli", "jerusalem"}),
+    "Japan": ("country", {"japan", "japanese", "tokyo"}),
+    "South Korea": ("country", {"south korea", "south korean", "republic of korea", "seoul"}),
+    "North Korea": ("country", {"north korea", "north korean", "democratic people's republic of korea", "pyongyang"}),
+    "India": ("country", {"india", "indian", "new delhi"}),
+    "Pakistan": ("country", {"pakistan", "pakistani", "islamabad"}),
+    "Australia": ("country", {"australia", "australian", "canberra"}),
+    "Canada": ("country", {"canada", "canadian", "ottawa"}),
+    "Mexico": ("country", {"mexico", "mexican"}),
+    "Brazil": ("country", {"brazil", "brazilian", "brasilia"}),
+    "Turkey": ("country", {"turkey", "turkish", "ankara"}),
+    "Saudi Arabia": ("country", {"saudi arabia", "saudi", "riyadh"}),
+    "United Kingdom": ("country", {"united kingdom", "uk", "u.k.", "britain", "british", "london"}),
+    "France": ("country", {"france", "french", "paris"}),
+    "Germany": ("country", {"germany", "german", "berlin"}),
+    "Italy": ("country", {"italy", "italian", "rome"}),
     "NATO": ("international_organization", {"nato"}),
     "European Union": ("international_organization", {"european union", "eu"}),
     "United Nations": ("international_organization", {"united nations", "u.n."}),
@@ -96,10 +111,6 @@ def normalize_known(text: str) -> list[dict]:
             matched=[a for a in matched if _has_context(text,{a},window=110) or a.startswith("chinese") or a.startswith("china's") or a.startswith("prc ")]
         if matched:
             found.append({"id":entity_id(canonical,entity_type),"canonical_name":canonical,"entity_type":entity_type,"aliases":matched})
-    # Preserve the sovereign country as an entity whenever a country-specific
-    # institution was positively identified. This lets downstream actor/target
-    # logic attribute the action to the country without treating mere co-mention
-    # as evidence. The institution must be source-backed and context-resolved.
     names={item["canonical_name"] for item in found}
     us_institutions={"U.S. Department of Defense","U.S. Department of State","U.S. Treasury","U.S. Department of Commerce","U.S. Department of Justice","U.S. Congress","White House"}
     china_institutions={"People's Liberation Army","Communist Party of China","Chinese State Council","Chinese Central Military Commission","Chinese Ministry of Foreign Affairs","Chinese Ministry of Commerce"}
