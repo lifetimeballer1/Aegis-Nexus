@@ -10,6 +10,7 @@ on:
       - 'refresh_pipeline.py'
       - 'validate_operational_health.py'
       - 'tests/test_regressions.py'
+      - 'tests/test_actor_target_trade_clause.py'
       - 'validate_*.py'
       - 'build_*.py'
       - 'update_*.py'
@@ -90,7 +91,7 @@ jobs:
       - name: Run regression tests
         run: |
           set -euo pipefail
-          python -m pytest -q tests/test_regressions.py
+          python -m pytest -q tests/test_regressions.py tests/test_actor_target_trade_clause.py
           python validate_data_resilience.py --require-manifest
       - name: Verify critical published inputs
         run: |
