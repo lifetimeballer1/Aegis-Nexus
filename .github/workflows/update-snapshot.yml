@@ -122,6 +122,10 @@ jobs:
           assert health.get('updatedAt') and int(health.get('feedsChecked',0)) >= 20 and int(health.get('rowsFetched',0)) > 0
           assert isinstance(health.get('sources'),list) and health['sources']
           assert int(summary.get('onlineWithData',0)) > 0
+          canonical=json.loads(Path('data/canonical_intelligence.json').read_text())
+          assert canonical.get('generated_at')
+          assert isinstance(canonical.get('entities'),list) and len(canonical['entities']) > 0
+          assert isinstance(canonical.get('evidence'),list) and len(canonical['evidence']) > 0
           mp=json.loads(Path('data/map_points.json').read_text()); assert isinstance(mp.get('markers'),list) and len(mp['markers'])>0
           assert all(-90<=float(x['lat'])<=90 and -180<=float(x['lng'])<=180 for x in mp['markers'])
           manifest=json.loads(Path('data/refresh_manifest.json').read_text())
@@ -183,8 +187,9 @@ jobs:
           assert all(-90<=float(x['lat'])<=90 and -180<=float(x['lng'])<=180 for x in markers)
           brain=json.loads(Path('_site/data/intelligence_brain.json').read_text()); assert brain.get('complete') is True and brain.get('sourceBackedOnly') is True and brain.get('consolidated') is True; assert int(brain.get('maxNodes',0))==35 and 10<=len(brain.get('nodes',[]))<=35 and len(brain.get('edges',[]))>=5
           health=json.loads(Path('_site/data/source_health.json').read_text()); assert health.get('updatedAt') and int(health.get('feedsChecked',0))>=20 and int(health.get('rowsFetched',0))>0 and (health.get('sources') or [])
+          canonical=json.loads(Path('_site/data/canonical_intelligence.json').read_text()); assert canonical.get('generated_at') and (canonical.get('entities') or []) and (canonical.get('evidence') or [])
           web=Path('_site/intelligence-web.html').read_text(); assert 'intelligence_brain_web.js?v=20260907-webgl5&semantic=native' in web and 'intelligence_semantic_layer.js' not in web
-          print(f'PASS exact minimal Pages site: mapPoints={len(markers)} brainNodes={len(brain.get("nodes",[]))} sources={len(health.get("sources",[]))}')
+          print(f'PASS exact minimal Pages site: mapPoints={len(markers)} brainNodes={len(brain.get("nodes",[]))} sources={len(health.get("sources",[]))} canonicalEntities={len(canonical.get("entities",[]))}')
           PY
       - name: Upload exact generated site
         uses: actions/upload-pages-artifact@v3
