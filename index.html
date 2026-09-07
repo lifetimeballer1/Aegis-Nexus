@@ -1,28 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#01050a">
-  <meta name="description" content="Global Pulse — real-time global conflict, geopolitical risk and open-source intelligence monitor.">
-  <title>Global Pulse — Global Conflict & Intelligence Monitor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#050a10">
+<meta name="description" content="Aegis Nexus — real-time global conflict, geopolitical risk, market context, hazards and evidence-linked open-source intelligence.">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Aegis Nexus — Global Intelligence Monitor">
+<meta property="og:description" content="Real-time global conflict, geopolitical risk, market context, hazards and evidence-linked open-source intelligence.">
+<meta property="og:image" content="assets/icons/icon-512.png">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; script-src 'self' 'unsafe-inline' https://unpkg.com; style-src 'self' 'unsafe-inline' https://unpkg.com; img-src 'self' data: blob: https:; font-src 'self' data: https:; connect-src 'self' https:; media-src 'self' https:; worker-src 'self' blob:; frame-src 'self'; upgrade-insecure-requests">
+  <title>Aegis Nexus — Global Intelligence Monitor</title>
   <link rel="manifest" href="site.webmanifest">
-  <link rel="icon" href="favicon.png">
+  <link rel="icon" type="image/png" href="favicon.png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" crossorigin="">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" crossorigin="">
   <link rel="stylesheet" href="css/app.css?v=20260906-mapfix3">
+  <style>
+    :root{--bg:#050a10;--panel:#0b1520;--panel2:#0e1a28;--line:#1c3347;--text:#e8f1f8;--muted:#8aa0b5;--green:#39ff88;--blue:#5da8ff}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:14px/1.45 system-ui,sans-serif}
+    .gp-intelweb-frame{display:block;width:100%;max-width:100%;min-width:0;height:900px;border:1px solid var(--line);border-radius:12px;background:#03070b;box-sizing:border-box}
+    @media(max-width:720px){.gp-intelweb-frame{height:620px}}
+  </style>
 </head>
 <body>
-  <div id="app"></div>
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
-  <script src="js/app.js?v=20260906-mapfix3"></script>
-  <script src="global_pulse_core.js?v=1"></script>
-  <script src="global_pulse_event_pipeline.js?v=1"></script>
-  <script src="global_pulse_brain_ui.js?v=1"></script>
-  <script src="global_pulse_performance.js?v=1"></script>
-  <script src="global_pulse_qa.js?v=1"></script>
+  <div id="app-root"></div>
+  <section class="gp-section" id="section-intelweb" data-section="intelweb" style="padding:12px">
+    <div class="gp-section-header"><h2 class="gp-section-title">Intelligence Web</h2></div>
+    <div class="gp-section-body" style="padding:0">
+      <iframe class="gp-intelweb-frame" src="intelligence-web.html?v=20260907-nooverlay" title="Aegis Nexus Intelligence Web" loading="lazy"></iframe>
+    </div>
+  </section>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js" crossorigin=""></script>
+  <script src="js/app.js?v=20260906-mapfix3" defer></script>
+  <script src="global_pulse_core.js?v=1" defer></script>
+  <script src="global_pulse_event_pipeline.js?v=1" defer></script>
+  <script src="global_pulse_brain_ui.js?v=1" defer></script>
+  <script src="global_pulse_performance.js?v=1" defer></script>
+  <script src="global_pulse_qa.js?v=1" defer></script>
 </body>
 </html>
