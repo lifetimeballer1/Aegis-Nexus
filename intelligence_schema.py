@@ -4,7 +4,7 @@ from dataclasses import asdict,dataclass,field
 from datetime import datetime,timezone
 from typing import Any,Dict,List,Optional
 SCHEMA_VERSION="2.1"
-ENTITY_TYPES={"country","government","government_agency","military","intelligence","political_party","person","company","financial_institution","international_organization","armed_group","region","location","conflict","infrastructure","technology","other"}
+ENTITY_TYPES={"country","government","government_agency","military","military_command","intelligence","political_party","person","company","financial_institution","international_organization","armed_group","region","location","conflict","infrastructure","technology","other"}
 EVENT_TYPES={"military_action","diplomatic_action","economic_action","political_action","trade_action","sanction","cyber_activity","technology_action","energy_action","conflict_event","protest","election","disaster","other"}
 RELATIONSHIP_TYPES={"allied_with","opposes","cooperates_with","negotiates_with","trades_with","sanctions","sanctioned_by","military_action_against","economic_action_toward","technology_action_toward","energy_action_toward","cyber_action_against","political_action_toward","deploys_to","supplies","targets","controls","located_in","member_of","owns","invests_in","depends_on","affects","participates_in","associated_with","mentioned_with","other"}
 def utc_now():return datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00","Z")
