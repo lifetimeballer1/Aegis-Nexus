@@ -6,7 +6,7 @@ from datetime import datetime,timezone
 from pathlib import Path
 ROOT=Path(__file__).resolve().parent;DATA=ROOT/'data'
 REQUIRED_ARTIFACTS=('snapshot.json','history.json','sources.json','live_articles.json','canonical_intelligence.json','intelligence_graph.json','intelligence_brain.json','map_points.json','strategic_signals.json','source_health.json')
-MANIFEST_ARTIFACTS=('snapshot.json','history.json','sources.json','live_articles.json','intelligence_graph.json','intelligence_brain.json','source_health.json')
+MANIFEST_ARTIFACTS=('snapshot.json','history.json','sources.json','live_articles.json','canonical_intelligence.json','intelligence_graph.json','intelligence_brain.json','map_points.json','strategic_signals.json','source_health.json')
 def run(label,*cmd):
  print(f'\n=== {label} ===',flush=True);print('$',' '.join(cmd),flush=True);subprocess.run(cmd,cwd=ROOT,check=True);print(f'PASS: {label}',flush=True)
 def load(name):
