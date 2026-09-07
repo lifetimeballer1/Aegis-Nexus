@@ -67,14 +67,34 @@ def main() -> int:
                     if eid not in rel["evidence_ids"]: rel["evidence_ids"].append(eid)
                 if event.get("id") not in rel["event_ids"]: rel["event_ids"].append(event["id"])
                 rel["weight"] = max(float(rel.get("weight") or 0), float(event.get("score") or 0))
-    semantic_pairs = {(str(r.get("source_entity_id")), str(r.get("target_entity_id"))) for r in relationships if r.get("relationship_type") != "mentioned_with"}
-    before = len(relationships)
-    data["relationships"] = [r for r in relationships if not (r.get("relationship_type") == "mentioned_with" and (str(r.get("source_entity_id")), str(r.get("target_entity_id"))) in semantic_pairs)]
-    data.setdefault("metadata", {})["semantic_relationship_enrichment"] = "actor-target-event-v1"
-    data["metadata"]["semantic_relationship_count"] = sum(r.get("relationship_type") != "mentioned_with" for r in data["relationships"])
-    data["metadata"]["cooccurrence_relationship_count"] = sum(r.get("relationship_type") == "mentioned_with" for r in data["relationships"])
-    PATH.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"PASS: semantic enrichment promoted={promoted} relationships={len(data['relationships'])} removed_cooccurrence={before-len(data['relationships'])}")
+    # Any remaining typed relationship must have a resolvable event/evidence trail.
+    # Unsupported legacy typed edges are discarded rather than presented as facts.
+    valid_event_ids = {str(e.get("id")) for e in data.get("events", [])}
+    valid_evidence_ids = {str(e.get("id")) for e in data.get("evidence", [])}
+    cleaned=[]
+    removed_unproven=0
+    for rel in relationships:
+        if rel.get("relationship_type") == "mentioned_with":
+            cleaned.append(rel)
+            continue
+        event_ids=[str(x) for x in rel.get("event_ids", []) if str(x) in valid_event_ids]
+        evidence_ids=[str(x) for x in rel.get("evidence_ids", []) if str(x) in valid_evidence_ids]
+        if not event_ids or not evidence_ids:
+            removed_unproven += 1
+            continue
+        rel["event_ids"]=event_ids
+        rel["evidence_ids"]=evidence_ids
+        cleaned.append(rel)
+    relationships=cleaned
+    semantic_pairs={(str(r.get("source_entity_id")),str(r.get("target_entity_id"))) for r in relationships if r.get("relationship_type")!="mentioned_with"}
+    before=len(relationships)
+    relationships=[r for r in relationships if not (r.get("relationship_type")=="mentioned_with" and (str(r.get("source_entity_id")),str(r.get("target_entity_id"))) in semantic_pairs)]
+    data["relationships"]=relationships
+    data.setdefault("metadata",{})["semantic_relationship_enrichment"]="actor-target-event-v2"
+    data["metadata"]["semantic_relationship_count"]=sum(r.get("relationship_type")!="mentioned_with" for r in relationships)
+    data["metadata"]["cooccurrence_relationship_count"]=sum(r.get("relationship_type")=="mentioned_with" for r in relationships)
+    PATH.write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    print(f"PASS: semantic enrichment promoted={promoted} relationships={len(relationships)} removed_cooccurrence={before-len(relationships)} removed_unproven={removed_unproven}")
     return 0
 
 if __name__ == "__main__":
