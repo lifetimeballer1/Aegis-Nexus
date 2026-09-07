@@ -28,6 +28,7 @@ PATTERNS={
   r'\b(?:trade|trades|trading|exports?|imports?)\b\s+(?:with|between)\s+([^.;,:!?]+)',
   r'\b(?:trade|trades|trading|exports?|imports?)\b\s+(?:to|from)\s+([^.;,:!?]+)',
   r'\b(?:tariffs?|trade restrictions?|anti-dumping measures?|anti-dumping duties?)\b\s+(?:on|against|toward|from)\s+([^.;,:!?]+)',
+  r'\b(?:target|targets|targeted|targeting)\b\s+([^.;,:!?]+)',
  ),
  'economic_action':(
   r'\b(?:tariffs?|taxes?|restrictions?|controls?)\b\s+(?:on|against|toward)\s+([^.;,:!?]+)',
