@@ -52,7 +52,11 @@ CHOKEPOINTS={'Strategic Chokepoints':['hormuz','strait of hormuz','red sea','bab
 SOURCE_ARTIFACTS=['snapshot.json','breaking_news.json','live_articles.json','intelligence_graph.json','claims.json','intelligence_assessment.json','event_intelligence.json','event_market_impact.json','event_consistency.json','event_resolution.json','event_history.json','historical_trends.json','history.json','map_points.json','enforcer_maps.json']
 
 STRATEGIC_ACTORS={'United States','China'}
-ACTION_TERMS=('sanction','sanctions','sanctioned','military','strike','strikes','attack','attacked','deploy','deployed','deployment','tariff','tariffs','export control','export controls','trade restriction','negotiat','agreement','treaty','diplomatic','cyber','hack','technology restriction','energy restriction','seized','arrested','indict','recognize','recognized','warned','threatened')
+STRATEGIC_ALIASES={
+ 'United States':('united states','u.s.','u.s.a.','usa','american','america','white house','pentagon','department of defense','defense department','state department','treasury','commerce department','justice department','congress'),
+ 'China':('china','chinese','people\'s republic of china','beijing','pla','people\'s liberation army','central military commission','state council','foreign ministry','commerce ministry','ccp','communist party of china')
+}
+ACTION_TERMS=('sanction','sanctions','sanctioned','military','strike','strikes','attack','attacked','deploy','deployed','deployment','tariff','tariffs','export control','export controls','trade restriction','trade restrictions','negotiat','agreement','treaty','diplomatic','cyber','hack','technology restriction','energy restriction','seized','arrested','indict','recognize','recognized','warned','threatened')
 DOMAIN_TERMS=('military','defense','security','diplomatic','diplomacy','trade','tariff','economic','finance','technology','semiconductor','energy','oil','cyber','political','sanction')
 
 def load(n,d=None):
@@ -89,8 +93,11 @@ def strategic_signal(t, actor):
     """
     action_hits=sum(1 for term in ACTION_TERMS if term in t)
     domain_hits=sum(1 for term in DOMAIN_TERMS if term in t)
-    # Require the actor itself to be present in the source; no score for unrelated records.
-    if actor.lower() not in t:return 0,0,0
+    aliases=STRATEGIC_ALIASES.get(actor,(actor.lower(),))
+    # Require an actor-specific identity marker in the source; a generic action
+    # term alone cannot manufacture a U.S./China strategic signal.
+    if not any(re.search(r'(?<![a-z])'+re.escape(alias)+r'(?![a-z])',t) for alias in aliases):
+        return 0,0,0
     action=min(action_hits,6)
     domains=min(domain_hits,5)
     # Actor-specific strategic signal: a source that contains an action/domain
@@ -148,7 +155,7 @@ def main():
                 if country in STRATEGIC_ACTORS:
                     meta.update({'strategicActor':True,'strategicSignal':strategic,'actionSignals':action_hits,'domainSignals':domain_hits})
                 hits.append(add(country,'country',source,extra,meta))
-        if re.search(r'(?<![a-z])(?:u\\.s\\.?|u\\.s\\.?a\\.?|usa|american)(?![a-z])',t):
+        if re.search(r'(?<![a-z])(?:u\.s\.?|u\.s\.?a\.?|usa|american)(?![a-z])',t):
             strategic,action_hits,domain_hits=strategic_signal(t,'united states')
             hits.append(add('United States','country',source,5+strategic,{'country':'United States','lat':38,'lng':-97,'clusterKey':'country:United States','canonical':True,'strategicActor':True,'strategicSignal':strategic,'actionSignals':action_hits,'domainSignals':domain_hits}))
         if any(re.search(r'(?<![a-z])'+re.escape(name.lower())+r'(?![a-z])',t) for name in CARTELS):
