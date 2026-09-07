@@ -5,8 +5,8 @@ import hashlib,json,subprocess,sys
 from datetime import datetime,timezone
 from pathlib import Path
 ROOT=Path(__file__).resolve().parent;DATA=ROOT/'data'
-REQUIRED_ARTIFACTS=('snapshot.json','history.json','sources.json','live_articles.json','canonical_intelligence.json','intelligence_graph.json','intelligence_brain.json','map_points.json','strategic_signals.json')
-MANIFEST_ARTIFACTS=('snapshot.json','history.json','sources.json','live_articles.json','intelligence_graph.json','intelligence_brain.json')
+REQUIRED_ARTIFACTS=('snapshot.json','history.json','sources.json','live_articles.json','canonical_intelligence.json','intelligence_graph.json','intelligence_brain.json','map_points.json','strategic_signals.json','source_health.json')
+MANIFEST_ARTIFACTS=('snapshot.json','history.json','sources.json','live_articles.json','intelligence_graph.json','intelligence_brain.json','source_health.json')
 def run(label,*cmd):
  print(f'\n=== {label} ===',flush=True);print('$',' '.join(cmd),flush=True);subprocess.run(cmd,cwd=ROOT,check=True);print(f'PASS: {label}',flush=True)
 def load(name):
@@ -89,6 +89,8 @@ def main():
  live_status=load('live_status.json')
  if int(live_status.get('rowsFetched',0))<=0:raise RuntimeError('live intelligence refresh returned no fetched rows')
  if int(live_status.get('exportedArticles',0))<=0:raise RuntimeError('live intelligence refresh exported no articles')
+ run('Build current source health telemetry',sys.executable,'build_source_health.py')
+ run('Validate current source health and strategic coverage',sys.executable,'validate_source_health.py')
  run('Build current evidence-backed snapshot graph',sys.executable,'update_intelligence_web.py')
  run('Build canonical intelligence layer',sys.executable,'build_canonical_intelligence_v3.py')
  run('Enrich semantic actor-action-target relationships',sys.executable,'enrich_semantic_relationships.py')
