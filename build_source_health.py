@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build honest per-source freshness, content and fallback telemetry."""
+"""Build honest per-source freshness, content and coverage telemetry."""
 from __future__ import annotations
 import json,re
 from datetime import datetime,timezone
@@ -32,6 +32,9 @@ def main():
   if not isinstance(item,dict) or not item.get('name'):continue
   name=str(item['name']);seen.add(name);r=results.get(name,{});old=previous_by.get(name,{})
   http_ok=bool(r.get('httpOk'));rows=int(r.get('rowsFetched',0) or 0);mode=str(r.get('mode') or 'not-polled');error=str(r.get('error') or '')
+  coverage=list(r.get('coverage') or item.get('coverage') or [])
+  category=str(r.get('category') or item.get('category') or item.get('type') or 'general')
+  source_url=str(r.get('sourceUrl') or item.get('url') or '')
   if not http_ok:
    status='failed';content_status='unavailable';last_success=old.get('lastSuccess')
   elif rows>0:
@@ -39,12 +42,14 @@ def main():
   else:
    status='online';content_status='online_empty';last_success=current.get('updatedAt') or now.isoformat()
   if mode=='gdelt-domain-fallback':content_status='fallback_data_available'
-  sources.append({'name':name,'url':item.get('url',''),'type':item.get('type','news'),'category':item.get('type','general'),'status':status,'contentStatus':content_status,'lastChecked':current.get('updatedAt') or now.isoformat(),'lastSuccess':last_success,'freshnessMinutes':age_minutes(last_success,now),'rowsFetched':rows,'newArticles':0,'mode':mode,'consecutiveFailures':(int(old.get('consecutiveFailures',0) or 0)+1 if not http_ok else 0),'error':error,'fallbackAvailable':mode in {'online-empty','failed'} and not ('news.google.com' in str(item.get('url','')) or 'gdeltproject.org' in str(item.get('url',''))),'dataValue':'articles' if rows else 'none'});sources[-1]['newArticles']=0
+  sources.append({'name':name,'url':source_url,'type':item.get('type','news'),'category':category,'coverage':coverage,'status':status,'contentStatus':content_status,'lastChecked':current.get('updatedAt') or now.isoformat(),'lastSuccess':last_success,'freshnessMinutes':age_minutes(last_success,now),'rowsFetched':rows,'newArticles':int(r.get('newArticles',0) or 0),'mode':mode,'consecutiveFailures':(int(old.get('consecutiveFailures',0) or 0)+1 if not http_ok else 0),'error':error,'fallbackAvailable':mode in {'online-empty','failed'} and not ('news.google.com' in source_url or 'gdeltproject.org' in source_url),'dataValue':'articles' if rows else 'none'})
  # X and any collector-only sources not represented in the registry
  for name,r in results.items():
   if name in seen:continue
-  rows=int(r.get('rowsFetched',0) or 0);sources.append({'name':name,'url':'','type':r.get('type','social'),'category':r.get('category','osint'),'status':'online' if r.get('httpOk') else 'failed','contentStatus':'data_available' if rows else ('online_empty' if r.get('httpOk') else 'unavailable'),'lastChecked':current.get('updatedAt') or now.isoformat(),'lastSuccess':current.get('updatedAt') if r.get('httpOk') else None,'freshnessMinutes':age_minutes(current.get('updatedAt'),now) if r.get('httpOk') else None,'rowsFetched':rows,'newArticles':0,'mode':r.get('mode'),'consecutiveFailures':0 if r.get('httpOk') else 1,'error':r.get('error',''),'fallbackAvailable':False,'dataValue':'posts' if rows else 'none'})
+  rows=int(r.get('rowsFetched',0) or 0);ok=bool(r.get('httpOk'));source_url=str(r.get('sourceUrl') or '')
+  sources.append({'name':name,'url':source_url,'type':r.get('type','social'),'category':r.get('category','osint'),'coverage':list(r.get('coverage') or []),'status':'online' if ok else 'failed','contentStatus':'data_available' if rows else ('online_empty' if ok else 'unavailable'),'lastChecked':current.get('updatedAt') or now.isoformat(),'lastSuccess':current.get('updatedAt') if ok else None,'freshnessMinutes':age_minutes(current.get('updatedAt'),now) if ok else None,'rowsFetched':rows,'newArticles':int(r.get('newArticles',0) or 0),'mode':r.get('mode'),'consecutiveFailures':0 if ok else 1,'error':r.get('error',''),'fallbackAvailable':False,'dataValue':'posts' if rows else 'none'})
  online=sum(x['status']=='online' for x in sources);failed=sum(x['status']=='failed' for x in sources);empty=sum(x['contentStatus']=='online_empty' for x in sources);data=sum(x['contentStatus'] in {'data_available','fallback_data_available'} for x in sources);fallback=sum(x['contentStatus']=='fallback_data_available' for x in sources)
- result={'version':2,'updatedAt':now.isoformat(),'collectorUpdatedAt':current.get('updatedAt'),'feedsChecked':len(sources),'rowsFetched':int(current.get('rowsFetched',0) or 0),'newArticles':int(current.get('newArticles',0) or 0),'databaseArticles':int(current.get('databaseArticles',0) or 0),'pollSeconds':int(current.get('pollSeconds',300) or 300),'summary':{'total':len(sources),'online':online,'failed':failed,'onlineWithData':data,'onlineEmpty':empty,'fallbackData':fallback,'dataCoveragePercent':round(100*data/len(sources),1) if sources else 0},'sources':sources}
+ coverage_counts={c:sum(c in x.get('coverage',[]) and x['contentStatus'] in {'data_available','fallback_data_available'} for x in sources) for c in ('united-states','china')}
+ result={'version':3,'updatedAt':now.isoformat(),'collectorUpdatedAt':current.get('updatedAt'),'feedsChecked':len(sources),'rowsFetched':int(current.get('rowsFetched',0) or 0),'newArticles':int(current.get('newArticles',0) or 0),'databaseArticles':int(current.get('databaseArticles',0) or 0),'pollSeconds':int(current.get('pollSeconds',300) or 300),'summary':{'total':len(sources),'online':online,'failed':failed,'onlineWithData':data,'onlineEmpty':empty,'fallbackData':fallback,'dataCoveragePercent':round(100*data/len(sources),1) if sources else 0,'coverageSourcesWithData':coverage_counts},'sources':sources}
  OUT.write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');print(json.dumps(result['summary'],ensure_ascii=False))
 if __name__=='__main__':main()
