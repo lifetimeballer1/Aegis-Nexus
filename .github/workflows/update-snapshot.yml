@@ -17,12 +17,19 @@ on:
       - 'intelligence_scoring.py'
       - 'intelligence_schema.py'
       - 'build_canonical_intelligence_v3.py'
+      - 'enrich_semantic_relationships.py'
+      - 'ensure_major_power_nodes.py'
+      - 'enrich_brain_actions.py'
       - 'global_pulse_*.js'
       - 'global_pulse_*.css'
       - 'js/**'
       - 'index.html'
       - 'intelligence-web.html'
       - 'intelligence_brain_web.js'
+      - 'intelligence_web_controls_fix.js'
+      - 'intelligence_action_panel.js'
+      - 'intelligence_action_flow.js'
+      - 'intelligence_semantic_layer.js'
       - 'data/enforcer_maps.json'
 concurrency:
   group: aegis-nexus-canonical-refresh
@@ -89,13 +96,16 @@ jobs:
       - name: Verify critical published inputs
         run: |
           set -euo pipefail
-          python -m py_compile harden_site.py install_qa_hardening.py refresh_pipeline.py pipeline/build_snapshot.py build_what_changed.py update_market_data.py ensure_brain_groups.py build_intelligence_brain.py validate_intelligence_brain.py validate_data_resilience.py validate_security.py validate_performance.py validate_operational_health.py build_map_points.py finalize_map_ui.py update_brain_feedback.py update_feed_expansion.py
+          python -m py_compile harden_site.py install_qa_hardening.py refresh_pipeline.py pipeline/build_snapshot.py build_what_changed.py update_market_data.py ensure_brain_groups.py build_intelligence_brain.py build_canonical_intelligence_v3.py enrich_semantic_relationships.py enrich_brain_actions.py ensure_major_power_nodes.py validate_intelligence_brain.py validate_data_resilience.py validate_security.py validate_performance.py validate_operational_health.py build_map_points.py finalize_map_ui.py update_brain_feedback.py update_feed_expansion.py
           python validate_data_resilience.py
           python validate_intelligence_brain.py
           python validate_performance.py
           python validate_operational_health.py
           node --check intelligence_brain_web.js
           node --check intelligence_web_controls_fix.js
+          node --check intelligence_action_panel.js
+          node --check intelligence_action_flow.js
+          node --check intelligence_semantic_layer.js
           node --check global_pulse_performance.js
           python - <<'PY'
           import json, hashlib
@@ -116,7 +126,7 @@ jobs:
               meta=manifest['artifacts'][name]; assert hashlib.sha256(Path('data',name).read_bytes()).hexdigest()==meta['sha256']
           html=Path('index.html').read_text(); assert all(x in html for x in ('global_pulse_core.js','global_pulse_event_pipeline.js','global_pulse_brain_ui.js','global_pulse_tokens.css','global_pulse_performance.js'))
           assert 'Aegis Nexus' in html and 'section-brain' in html and 'section-markets' in html and 'mapContainer' in html and 'loading="lazy"' in html and 'loading="eager"' not in html
-          web=Path('intelligence-web.html').read_text(); assert 'intelligence_brain_web.js?v=20260906-webgl4&consolidated=1' in web and 'intelligence_web_controls_fix.js?v=20260906-controlsfix1' in web
+          web=Path('intelligence-web.html').read_text(); assert 'intelligence_brain_web.js?v=20260906-webgl4&consolidated=1' in web and 'intelligence_web_controls_fix.js?v=20260906-controlsfix1' in web and 'intelligence_action_panel.js?v=20260906-actions1' in web and 'intelligence_action_flow.js?v=20260906-flow1' in web and 'intelligence_semantic_layer.js?v=20260907-semantic1' in web
           renderer=Path('intelligence_brain_web.js').read_text(); assert 'const LIMITS={nodes:35,links:150}' in renderer and 'function importance(n)' in renderer and "n.__tier=i<24?'major':'semi-major'" in renderer and 'Math.min(13,Math.sqrt(n.__degree+1)*1.7' in renderer
           print('PASS canonical data, manifest, browser integration and ranked WebGL renderer')
           PY
