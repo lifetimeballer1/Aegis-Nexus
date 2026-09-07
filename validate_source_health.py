@@ -13,12 +13,12 @@ DATA = Path(__file__).resolve().parent / "data"
 STATUS = DATA / "live_status.json"
 MIN_FEEDS = 20
 MIN_ROWS = 1
-# Optional feeds can fail transiently. Require a substantial healthy base while
-# allowing the collector to publish when the core source set is still usable.
 MIN_HEALTHY_RATIO = 0.40
 MAX_FAILURE_RATIO = 0.60
 MIN_HEALTHY_SOURCES = 20
 REQUIRED_CATEGORIES = {"international", "us-politics", "security"}
+REQUIRED_COVERAGE = {"united-states", "china"}
+MIN_COVERAGE_SOURCES = 2
 USABLE_MODES = {"native", "gdelt-domain-fallback"}
 
 
@@ -55,11 +55,23 @@ def main() -> int:
     if uncovered:
         raise SystemExit("SOURCE HEALTH GATE FAILED: no usable current source for " + ", ".join(sorted(uncovered)))
 
+    missing_coverage = []
+    coverage_report = {}
+    for coverage in REQUIRED_COVERAGE:
+        candidates = [s for s in results if coverage in (s.get("coverage") or [])]
+        usable = [s for s in candidates if s.get("httpOk") is True and s.get("mode") in USABLE_MODES and s.get("rowsFetched", 0) > 0]
+        coverage_report[coverage] = len(usable)
+        if len(usable) < MIN_COVERAGE_SOURCES:
+            missing_coverage.append(f"{coverage} ({len(usable)} usable sources)")
+    if missing_coverage:
+        raise SystemExit("SOURCE HEALTH GATE FAILED: strategic coverage below minimum: " + ", ".join(sorted(missing_coverage)))
+
     fallback = sum(1 for s in results if s.get("mode") == "gdelt-domain-fallback")
     empty = sum(1 for s in results if s.get("httpOk") is True and s.get("emptyFeed") is True)
     print("PASS: current source health gate")
     print(f"feeds={feeds} results={total} rows={rows} healthy={healthy}/{total} ({healthy_ratio:.1%}) failed={failed} ({failure_ratio:.1%})")
     print(f"empty={empty} gdeltFallback={fallback} required-categories={','.join(sorted(REQUIRED_CATEGORIES))}")
+    print("strategic-coverage=" + ", ".join(f"{k}:{v}" for k,v in sorted(coverage_report.items())))
     return 0
 
 
