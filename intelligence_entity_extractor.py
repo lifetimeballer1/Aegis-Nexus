@@ -96,6 +96,17 @@ def normalize_known(text: str) -> list[dict]:
             matched=[a for a in matched if _has_context(text,{a},window=110) or a.startswith("chinese") or a.startswith("china's") or a.startswith("prc ")]
         if matched:
             found.append({"id":entity_id(canonical,entity_type),"canonical_name":canonical,"entity_type":entity_type,"aliases":matched})
+    # Preserve the sovereign country as an entity whenever a country-specific
+    # institution was positively identified. This lets downstream actor/target
+    # logic attribute the action to the country without treating mere co-mention
+    # as evidence. The institution must be source-backed and context-resolved.
+    names={item["canonical_name"] for item in found}
+    us_institutions={"U.S. Department of Defense","U.S. Department of State","U.S. Treasury","U.S. Department of Commerce","U.S. Department of Justice","U.S. Congress","White House"}
+    china_institutions={"People's Liberation Army","Communist Party of China","Chinese State Council","Chinese Central Military Commission","Chinese Ministry of Foreign Affairs","Chinese Ministry of Commerce"}
+    if names & us_institutions and "United States" not in names:
+        found.append({"id":entity_id("United States","country"),"canonical_name":"United States","entity_type":"country","aliases":["institution_context"]})
+    if names & china_institutions and "China" not in names:
+        found.append({"id":entity_id("China","country"),"canonical_name":"China","entity_type":"country","aliases":["institution_context"]})
     return found
 
 def resolve_context_entities(text: str) -> list[dict]:
