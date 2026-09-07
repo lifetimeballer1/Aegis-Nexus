@@ -60,6 +60,7 @@ def verify_canonical_intelligence(document):
  errors=validate_document(document)
  if errors:raise RuntimeError(f'canonical intelligence schema validation failed: {errors[:5]}')
  if not document.get('generated_at'):raise RuntimeError('canonical intelligence has no generated_at timestamp')
+ fresh(document,field='generated_at',max_age=1800)
  if len(document.get('entities') or [])==0:raise RuntimeError('canonical intelligence contains no entities')
  if len(document.get('evidence') or [])==0:raise RuntimeError('canonical intelligence contains no evidence')
 def verify_graph(graph):
