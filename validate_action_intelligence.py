@@ -24,10 +24,12 @@ def main():
     layer=brain.get('actionLayer') or {}
     if layer.get('sourceBackedOnly') is not True: failures.append('Brain action layer is not source-backed-only')
     nodes={str(n.get('label')):n for n in brain.get('nodes',[]) if isinstance(n,dict)}
+    entities=[e for e in canonical.get('entities',[]) if isinstance(e,dict)]
+    entity_ids={str(e.get('id')) for e in entities}
+    entity_ids_by_name={str(e.get('canonical_name')):str(e.get('id')) for e in entities}
     events=[e for e in canonical.get('events',[]) if isinstance(e,dict)]
     evidence={str(e.get('id')):e for e in canonical.get('evidence',[]) if isinstance(e,dict)}
     relationships=[r for r in canonical.get('relationships',[]) if isinstance(r,dict)]
-    entity_ids={str(e.get('id')) for e in canonical.get('entities',[]) if isinstance(e,dict)}
     for actor in ACTORS:
         node=nodes.get(actor)
         if not node:
@@ -45,7 +47,8 @@ def main():
         declared=int(node.get('actionEvidenceCount') or 0)
         if declared!=total: failures.append(f'{actor}: actionEvidenceCount mismatch ({declared} != {total})')
         if total==0: failures.append(f'{actor}: no evidence-backed actions')
-        actor_events=[e for e in events if actor in {str(x) for x in e.get('actor_ids',[]) if x}]
+        actor_id=entity_ids_by_name.get(actor)
+        actor_events=[e for e in events if actor_id and actor_id in {str(x) for x in e.get('actor_ids',[]) if x}]
         if not actor_events:
             failures.append(f'{actor}: canonical actor attribution has no action events')
             print(f'{actor}: {total} Brain evidence items; canonical actor events=0'); continue
