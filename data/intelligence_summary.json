@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0",
+  "source": "canonical_intelligence.json",
+  "generated_at": "2026-09-07T13:50:25Z",
+  "counts": {
+    "entities": 121,
+    "events": 413,
+    "relationships": 134,
+    "evidence": 936
+  },
+  "us": {
+    "id": "ent-6409155421a757f6",
+    "name": "United States",
+    "importance": 0.3673435992408175,
+    "mentions": 90
+  },
+  "china": {
+    "id": "ent-a712896bf30165d4",
+    "name": "China",
+    "importance": 0.3491402306250626,
+    "mentions": 14
+  },
+  "strategic_actors": [
+    {
+      "id": "ent-6409155421a757f6",
+      "name": "United States",
+      "type": "country",
+      "importance": 0.3673435992408175,
+      "mentions": 90
+    },
+    {
+      "id": "ent-a712896bf30165d4",
+      "name": "China",
+      "type": "country",
+      "importance": 0.3491402306250626,
+      "mentions": 14
+    },
+    {
+      "id": "ent-1fa3e6acf2dd44b8",
+      "name": "U.S. Congress",
+      "type": "government",
+      "importance": 0.3351381318070057,
+      "mentions": 23
+    },
+    {
+      "id": "ent-abb37c6fe8be337e",
+      "name": "U.S. Department of Defense",
+      "type": "government_agency",
+      "importance": 0.3253518600519252,
+      "mentions": 9
+    },
+    {
+      "id": "ent-03129edfd80e10db",
+      "name": "Federal Reserve",
+      "type": "financial_institution",
+      "importance": 0.3147988459029548,
+      "mentions": 8
+    },
+    {
+      "id": "ent-ed9261221db0ebe3",
+      "name": "White House",
+      "type": "government",
+      "importance": 0.2925683810881389,
+      "mentions": 4
+    },
+    {
+      "id": "ent-afb155151d579029",
+      "name": "U.S. Treasury",
+      "type": "government_agency",
+      "importance": 0.19032220300906572,
+      "mentions": 2
+    }
+  ],
+  "relationship_types": {
+    "mentioned_with": 119,
+    "military_action_against": 8,
+    "negotiates_with": 3,
+    "cooperates_with": 1,
+    "deploys_to": 1,
+    "invests_in": 1,
+    "sanctions": 1
+  }
+}
