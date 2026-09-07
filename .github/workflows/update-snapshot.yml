@@ -125,7 +125,7 @@ jobs:
           mp=json.loads(Path('data/map_points.json').read_text()); assert isinstance(mp.get('markers'),list) and len(mp['markers'])>0
           assert all(-90<=float(x['lat'])<=90 and -180<=float(x['lng'])<=180 for x in mp['markers'])
           manifest=json.loads(Path('data/refresh_manifest.json').read_text())
-          for name in ('snapshot.json','history.json','sources.json','live_articles.json','intelligence_graph.json','intelligence_brain.json','source_health.json'):
+          for name in ('snapshot.json','history.json','sources.json','live_articles.json','canonical_intelligence.json','intelligence_graph.json','intelligence_brain.json','map_points.json','strategic_signals.json','source_health.json'):
               meta=manifest['artifacts'][name]; assert hashlib.sha256(Path('data',name).read_bytes()).hexdigest()==meta['sha256']
           html=Path('index.html').read_text(); assert all(x in html for x in ('global_pulse_core.js','global_pulse_event_pipeline.js','global_pulse_brain_ui.js','global_pulse_tokens.css','global_pulse_performance.js'))
           assert 'Aegis Nexus' in html and 'section-brain' in html and 'section-markets' in html and 'mapContainer' in html and 'loading="lazy"' in html and 'loading="eager"' not in html
