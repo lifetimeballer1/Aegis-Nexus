@@ -20,10 +20,16 @@ CANONICAL_ALIASES = {
     "NATO": ("international_organization", {"nato"}),
     "European Union": ("international_organization", {"european union", "eu"}),
     "United Nations": ("international_organization", {"united nations", "u.n."}),
-    "People's Liberation Army": ("military", {"people's liberation army", "pla"}),
+    "People's Liberation Army": ("military", {"people's liberation army", "pla", "pla forces"}),
+    "Communist Party of China": ("political_party", {"communist party of china", "ccp", "chinese communist party"}),
+    "Chinese State Council": ("government", {"state council", "chinese state council"}),
+    "Chinese Ministry of Foreign Affairs": ("government_agency", {"ministry of foreign affairs", "chinese foreign ministry"}),
+    "Chinese Ministry of Commerce": ("government_agency", {"ministry of commerce", "chinese commerce ministry"}),
     "U.S. Department of Defense": ("government_agency", {"department of defense", "defense department", "pentagon"}),
     "U.S. Department of State": ("government_agency", {"department of state", "state department"}),
     "U.S. Treasury": ("government_agency", {"u.s. treasury", "treasury department"}),
+    "U.S. Congress": ("government", {"u.s. congress", "congress", "house of representatives", "senate"}),
+    "White House": ("government", {"white house"}),
     "Federal Reserve": ("financial_institution", {"federal reserve", "fed"}),
     "JPMorgan": ("financial_institution", {"jpmorgan", "jpmorgan chase"}),
 }
@@ -39,8 +45,6 @@ PERSON_RULE = re.compile(
     r"\b(?:President|Vice President|Prime Minister|Chancellor|Secretary|Minister|Senator|Representative|General|Admiral|Ambassador|Director|Chairman|Chairwoman|CEO|CFO)\s+"
     r"(?:[A-Z][\w'’-]+(?:\s+[A-Z][\w'’-]+){0,3})"
 )
-# Require an explicit geographic suffix so ordinary capitalized words in
-# headlines (for example "Focus" or "Raise Rates") cannot become locations.
 LOCATION_RULE = re.compile(
     r"\b(?:in|near|at|from|to|toward|around|across|inside|outside|off)\s+"
     r"([A-Z][\w'’-]+(?:\s+[A-Z][\w'’-]+){0,2}\s+(?:City|State|Province|Region|District|County|Island|Islands|Sea|Strait|Gulf|Bay|River|Lake|Peninsula|Valley|Mount|Mountain))\b"
