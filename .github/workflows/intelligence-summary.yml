@@ -1,0 +1,101 @@
+name: Aegis Nexus — Intelligence Summary
+run-name: Aegis Nexus summary • ${{ github.event.workflow_run.id }}
+
+on:
+  workflow_run:
+    workflows: ["Aegis Nexus — Canonical Live Refresh"]
+    types: [completed]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: aegis-nexus-summary
+  cancel-in-progress: false
+
+jobs:
+  build-publish-summary:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+          ref: main
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Build intelligence summary
+        run: python intelligence_summary.py
+
+      - name: Validate summary
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('data/intelligence_summary.json')
+          s=json.loads(p.read_text(encoding='utf-8'))
+          assert s.get('schema_version') == '1.0'
+          assert s.get('source') == 'canonical_intelligence.json'
+          assert isinstance(s.get('counts'), dict)
+          assert isinstance(s.get('strategic_actors'), list)
+          assert isinstance(s.get('relationship_types'), dict)
+          assert s.get('us') is not None
+          assert s.get('china') is not None
+          print('PASS intelligence summary schema')
+          PY
+
+      - name: Commit summary
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/intelligence_summary.json
+          if git diff --cached --quiet; then
+            echo 'No summary changes'
+          else
+            git commit -m 'chore: publish intelligence summary'
+            git fetch origin main
+            git rebase -X theirs origin/main
+            git push origin HEAD:main
+          fi
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Prepare Pages site
+        run: |
+          set -euo pipefail
+          rm -rf _site
+          mkdir -p _site
+          rsync -a \
+            --include='index.html' \
+            --include='intelligence-web.html' \
+            --include='site.webmanifest' \
+            --include='favicon.png' \
+            --include='apple-touch-icon.png' \
+            --include='*.js' \
+            --include='*.css' \
+            --include='js/***' \
+            --include='css/***' \
+            --include='assets/***' \
+            --include='data/***' \
+            --exclude='*' \
+            ./ _site/
+          test -f _site/data/intelligence_summary.json
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
