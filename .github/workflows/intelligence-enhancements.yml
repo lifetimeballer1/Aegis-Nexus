@@ -1,7 +1,7 @@
 name: Global Pulse — Change & Regional Intelligence
 on:
   workflow_run:
-    workflows: ["Global Pulse — Canonical Live Refresh"]
+    workflows: ["Aegis Nexus — Canonical Live Refresh"]
     types: [completed]
   workflow_dispatch:
 permissions:
