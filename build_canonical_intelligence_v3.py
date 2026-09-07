@@ -56,7 +56,7 @@ def main():
    for eid in matched:entity_event_scores.setdefault(eid,[]).append(event['score'])
   kind=relation_type(text);positions=[]
   for eid in matched:
-   m=re.search(r'(?<![a-z])'+re.escape(names[eid])+r'(?![a-z)',text,re.I)
+   m=re.search(r'(?<![a-z])'+re.escape(names[eid])+r'(?![a-z])',text,re.I)
    if m:positions.append((m.start(),eid))
   positions.sort()
   if kind!='mentioned_with' and len(positions)>=2:
