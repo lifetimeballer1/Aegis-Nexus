@@ -95,6 +95,7 @@ def main():
  run('Build current evidence-backed snapshot graph',sys.executable,'update_intelligence_web.py')
  run('Build canonical intelligence layer',sys.executable,'build_canonical_intelligence_v3.py')
  run('Enrich semantic actor-action-target relationships',sys.executable,'enrich_semantic_relationships.py')
+ run('Repair source-backed strategic action targets',sys.executable,'repair_strategic_targets.py')
  canonical=verify_json('canonical_intelligence.json',fresh_required=False);verify_canonical_intelligence(canonical)
  run('Publish current Intelligence Web graph',sys.executable,'build_intelligence_graph.py')
  graph=verify_json('intelligence_graph.json');verify_graph(graph)
