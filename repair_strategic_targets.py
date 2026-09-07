@@ -29,6 +29,8 @@ PATTERNS={
   r'\b(?:talks?|negotiat(?:e|es|ed|ing)|meet(?:s|ing)?|met|summit)\b\s+(?:with|between)\s+([^.;:!?]+)',
   r'\b(?:meet(?:s|ing)?|met)\b\s+(?:with\s+)?([^.;:!?]+)',
   r'\b(?:agreement|accord|treaty)\b\s+(?:with|between)\s+([^.;:!?]+)',
+  r'\b(?:support(?:s|ed|ing)?|back(?:s|ed|ing)?|oppose(?:s|d|ing)?|urge(?:s|d|ing)?|recogniz(?:e|es|ed|ing)?)\b\s+(?:for|of|on|against|toward)\s+([^.;:!?]+)',
+  r'\b(?:support|backing|opposition|appeal)\b\s+(?:for|to)\s+([^.;:!?]+)',
  ),
  'trade_action':(
   r'\b(?:trade|trades|trading|exports?|imports?)\b\s+(?:with|between|to|from)\s+([^.;:!?]+)',
@@ -40,6 +42,7 @@ PATTERNS={
   r'\b(?:tariffs?|taxes?|restrictions?|controls?)\b\s+(?:on|against|toward)\s+([^.;:!?]+)',
   r'\b(?:investment|invests?|invested|investing)\b\s+(?:in|into)\s+([^.;:!?]+)',
   r'\b(?:measures?|policies|policy)\b\s+(?:against|toward|targeting)\s+([^.;:!?]+)',
+  r'\b(?:ruling|rulings|decision|decisions|finding|finds|found)\b\s+(?:on|against|concerning)\s+([^.;:!?]+)',
  ),
  'technology_action':(
   r'\b(?:restrict(?:s|ed|ing)?|ban(?:s|ned|ning)?|control(?:s|led|ling)?|limit(?:s|ed|ing)?)\b\s+(?:exports?|chips?|technology|semiconductors?)\s+(?:to|for|against)\s+([^.;:!?]+)',
@@ -54,7 +57,7 @@ PATTERNS={
   r'\b(?:cyber|hackers?|hacking)\b[^.;:!?]{0,80}\b(?:target(?:s|ed|ing)?|attack(?:s|ed|ing)?)\b\s+([^.;:!?]+)',
  ),
  'political_action':(
-  r'\b(?:support(?:s|ed|ing)?|back(?:s|ed|ing)?|oppos(?:e|es|ed|ing)|urge(?:s|d|ing)?|call(?:s|ed|ing)? for|recogniz(?:e|es|ed|ing)?)\b\s+([^.;:!?]+)',
+  r'\b(?:support(?:s|ed|ing)?|back(?:s|ed|ing)?|oppos(?:e|es|ed|ing)|urge(?:s|d|ing)?|call(?:s|ed|ing)? for|recogniz(?:e|es|ed|ing)?)\b\s+(?:for|of|on|against|toward)?\s*([^.;:!?]+)',
  ),
 }
 
@@ -125,8 +128,8 @@ def main():
       break
     if event.get('target_ids'): break
    if event.get('target_ids'): break
- data.setdefault('metadata',{})['explicit_target_repair_v4']='evidence-clause-alias-v4'
- data['metadata']['explicit_target_repairs_v4']=repaired
+ data.setdefault('metadata',{})['explicit_target_repair_v5']='evidence-clause-alias-v5'
+ data['metadata']['explicit_target_repairs_v5']=repaired
  data['metadata']['explicit_target_actor_reclassification_v2']=True
  CANONICAL.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
  print(f'PASS: strategic target repair repaired_targets={repaired} events={len(details)}')
