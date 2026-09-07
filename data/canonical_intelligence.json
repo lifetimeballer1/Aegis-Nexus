@@ -1,21 +1,7 @@
 {
   "schema_version": "2.1",
-  "generated_at": "2026-09-07T13:25:28Z",
+  "generated_at": "2026-09-07T13:32:31Z",
   "entities": [
-    {
-      "id": "ent-21335da9990c3bb9",
-      "canonical_name": "Chancellor Friedrich Merz",
-      "entity_type": "person",
-      "aliases": [],
-      "country": null,
-      "region": null,
-      "importance": 0.0,
-      "mention_count": 2,
-      "evidence_ids": [
-        "evd-5d234a8d198ca3b3",
-        "evd-baee6ab782602ce6"
-      ]
-    },
     {
       "id": "ent-1bc691128a51c96f",
       "canonical_name": "Israel",
@@ -26,10 +12,12 @@
       "country": "Israel",
       "region": null,
       "importance": 0.0,
-      "mention_count": 72,
+      "mention_count": 75,
       "evidence_ids": [
+        "evd-247f90d3e013fe75",
         "evd-ecee23c0c499ecde",
         "evd-033ad7f18ec0ec3e",
+        "evd-3de98ade13e57067",
         "evd-f6b5bbcf178b0a55",
         "evd-2eec307b53d322de",
         "evd-78452cba1072ae13",
@@ -43,6 +31,7 @@
         "evd-e5ef126344cf8249",
         "evd-c2cfb0a231a72d82",
         "evd-032b31b0bd5f9a8f",
+        "evd-2d9d70166b9dfcb5",
         "evd-616405561ce584c2",
         "evd-4fc2816cd86dc604",
         "evd-d97169183e45883a",
@@ -103,6 +92,20 @@
       ]
     },
     {
+      "id": "ent-21335da9990c3bb9",
+      "canonical_name": "Chancellor Friedrich Merz",
+      "entity_type": "person",
+      "aliases": [],
+      "country": null,
+      "region": null,
+      "importance": 0.0,
+      "mention_count": 2,
+      "evidence_ids": [
+        "evd-5d234a8d198ca3b3",
+        "evd-baee6ab782602ce6"
+      ]
+    },
+    {
       "id": "ent-a8df80c99563bc0a",
       "canonical_name": "Ukraine",
       "entity_type": "country",
@@ -112,7 +115,7 @@
       "country": "Ukraine",
       "region": null,
       "importance": 0.0,
-      "mention_count": 75,
+      "mention_count": 77,
       "evidence_ids": [
         "evd-c6275ac8e31659fc",
         "evd-f15b5e8cbab5e375",
@@ -126,6 +129,7 @@
         "evd-a44bb67954f6d0e4",
         "evd-011d86130d0dfeca",
         "evd-a741dfbd161586a0",
+        "evd-b8f85d4ab807ddb3",
         "evd-d0597c3372333788",
         "evd-678ae4fd11c2807a",
         "evd-0bde5beac2b310be",
@@ -134,6 +138,7 @@
         "evd-29db550eb276a311",
         "evd-b2a38fd8125d4d27",
         "evd-5c42aa1cc7e0426f",
+        "evd-dce4a57a64653918",
         "evd-c184c86a3b7a6b97",
         "evd-d59cad5cae61c41a",
         "evd-b7c3a54fab5c6b7d",
@@ -202,7 +207,7 @@
       "country": "Russia",
       "region": null,
       "importance": 0.0,
-      "mention_count": 77,
+      "mention_count": 78,
       "evidence_ids": [
         "evd-f15b5e8cbab5e375",
         "evd-b5e2a5d2ed363fa1",
@@ -227,6 +232,7 @@
         "evd-5cc0483f876ae560",
         "evd-87beeec0b2dc85ce",
         "evd-5c42aa1cc7e0426f",
+        "evd-dce4a57a64653918",
         "evd-c184c86a3b7a6b97",
         "evd-d59cad5cae61c41a",
         "evd-a86dc7bac350e122",
@@ -503,7 +509,7 @@
       "country": "Iran",
       "region": null,
       "importance": 0.0,
-      "mention_count": 114,
+      "mention_count": 115,
       "evidence_ids": [
         "evd-33ff7b244617f4b2",
         "evd-f6b5bbcf178b0a55",
@@ -517,6 +523,7 @@
         "evd-e5ef126344cf8249",
         "evd-f31e2e174485b911",
         "evd-616405561ce584c2",
+        "evd-d59535ae879a9ac1",
         "evd-9d0d65198b32a500",
         "evd-e6e4df8cdd287f10",
         "evd-84cf4c211d8901e1",
@@ -2132,6 +2139,30 @@
   ],
   "events": [
     {
+      "id": "evt-9f6f4a48f394798c",
+      "event_type": "military_action",
+      "title": "Two children among dead in Israeli strikes on Lebanon",
+      "timestamp": "2026-09-07T13:20:18+00:00",
+      "location": "Israel",
+      "severity": 0.0,
+      "confidence": 0.0,
+      "entity_ids": [
+        "ent-1bc691128a51c96f"
+      ],
+      "evidence_ids": [
+        "evd-247f90d3e013fe75"
+      ],
+      "actor_ids": [],
+      "target_ids": [],
+      "location_ids": [
+        "ent-1bc691128a51c96f"
+      ],
+      "action": "conducted or reported military activity",
+      "geopolitical_relevance": 0.15,
+      "strategic_relevance": 0.0,
+      "score": 0.029941207417470896
+    },
+    {
       "id": "evt-6e14ce728a0f19a0",
       "event_type": "trade_action",
       "title": "Kenya minister warns foreigners against 'misusing' visas to trade",
@@ -2149,7 +2180,7 @@
       "action": "conducted trade activity",
       "geopolitical_relevance": 0.83,
       "strategic_relevance": 0.0,
-      "score": 0.1654838180682928
+      "score": 0.16529675161822618
     },
     {
       "id": "evt-7573a54c30fe067d",
@@ -2173,7 +2204,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.1395359303918683
+      "score": 0.13937819601552698
     },
     {
       "id": "evt-ea5795e0296533f1",
@@ -2193,7 +2224,7 @@
       "action": "took political action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.19926029615920038
+      "score": 0.1990350481080196
     },
     {
       "id": "evt-63f23bf0f0e0141a",
@@ -2217,7 +2248,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 0.15,
       "strategic_relevance": 0.0,
-      "score": 0.02988840491477462
+      "score": 0.029854618448534206
     },
     {
       "id": "evt-87582068d1f2271f",
@@ -2241,7 +2272,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 0.15,
       "strategic_relevance": 0.0,
-      "score": 0.0298596448869403
+      "score": 0.029825890955633212
     },
     {
       "id": "evt-4bb951a4518955a6",
@@ -2261,7 +2292,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 0.83,
       "strategic_relevance": 0.0,
-      "score": 0.16521541524534453
+      "score": 0.16502865248822296
     },
     {
       "id": "evt-d6db2ccb4cf973ad",
@@ -2281,7 +2312,7 @@
       "action": "took economic policy action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.19905258757490463
+      "score": 0.19882757460635833
     },
     {
       "id": "evt-d9c4c30cb85207fe",
@@ -2301,7 +2332,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.13929657427012165
+      "score": 0.139139110656037
     },
     {
       "id": "evt-8743e4fcd92d7e39",
@@ -2327,7 +2358,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.19831299487945386
+      "score": 0.1980888173794307
     },
     {
       "id": "evt-b012bda11fb52e23",
@@ -2347,7 +2378,7 @@
       "action": "took technology-related action",
       "geopolitical_relevance": 0.07,
       "strategic_relevance": 0.0,
-      "score": 0.013874932185367407
+      "score": 0.013859247631829434
     },
     {
       "id": "evt-2f6eda96046c0c6b",
@@ -2374,7 +2405,7 @@
       "action": "took economic policy action",
       "geopolitical_relevance": 0.72,
       "strategic_relevance": 0.0,
-      "score": 0.14261134325799313
+      "score": 0.1424501319579018
     },
     {
       "id": "evt-b90fc05fa83105cd",
@@ -2401,7 +2432,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.13864991692624032
+      "score": 0.13849318371574318
     },
     {
       "id": "evt-b336ccb3cb82420c",
@@ -2425,7 +2456,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.13861061940247102
+      "score": 0.13845393057004235
     },
     {
       "id": "evt-72ebb4433811ed1f",
@@ -2445,7 +2476,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.1385957930627135
+      "score": 0.13843912100329908
     },
     {
       "id": "evt-618572e687d78306",
@@ -2469,7 +2500,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.1381801988150094
+      "score": 0.13802399658150433
     },
     {
       "id": "evt-b395d84ff921ccf6",
@@ -2498,7 +2529,7 @@
       "action": "took political action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.19730211995933514
+      "score": 0.1970790848642674
     },
     {
       "id": "evt-433f012ecb6461cd",
@@ -2522,7 +2553,7 @@
       "action": "conducted trade activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.19727943261683167
+      "score": 0.1970564231248743
     },
     {
       "id": "evt-d86af988c5771a1e",
@@ -2542,7 +2573,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.13788120872016968
+      "score": 0.13772534443803575
     },
     {
       "id": "evt-f16ad9044e1285d5",
@@ -2566,7 +2597,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.13774669164894657
+      "score": 0.13759097944254142
     },
     {
       "id": "evt-8d299211866064bf",
@@ -2590,7 +2621,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 0.15,
       "strategic_relevance": 0.0,
-      "score": 0.02947289916289234
+      "score": 0.02943958227770305
     },
     {
       "id": "evt-498f3f872c72bd83",
@@ -2614,7 +2645,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.13731968739385603
+      "score": 0.13716445790654225
     },
     {
       "id": "evt-29de0f34b35b44dd",
@@ -2638,7 +2669,7 @@
       "action": "took technology-related action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.19604144774580584
+      "score": 0.19581983771895894
     },
     {
       "id": "evt-def4b3171f098a5c",
@@ -2662,7 +2693,7 @@
       "action": "took political action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.19604144749993263
+      "score": 0.19581983746917442
     },
     {
       "id": "evt-3445c173e2a97204",
@@ -2682,7 +2713,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.13703025463002588
+      "score": 0.13687535212720087
     },
     {
       "id": "evt-543ccdbf69079c60",
@@ -2702,7 +2733,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.1956052289037485
+      "score": 0.19538411179180215
     },
     {
       "id": "evt-b8f05596117ba21c",
@@ -2726,7 +2757,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.13678788039391093
+      "score": 0.13663325182304184
     },
     {
       "id": "evt-4fef8eb26b0ae426",
@@ -2752,7 +2783,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.19533184161760334
+      "score": 0.19511103335444033
     },
     {
       "id": "evt-a57e1c193342c57a",
@@ -2778,7 +2809,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.1952749124231322
+      "score": 0.1950541684970183
     },
     {
       "id": "evt-defe691351cc4358",
@@ -2798,7 +2829,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 0.9,
       "strategic_relevance": 0.0,
-      "score": 0.17562808582674955
+      "score": 0.17542955118511255
     },
     {
       "id": "evt-5c7aacbad358920e",
@@ -2818,7 +2849,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 0.83,
       "strategic_relevance": 0.0,
-      "score": 0.16196812356719342
+      "score": 0.16178503051055776
     },
     {
       "id": "evt-c54ca9711c7029a5",
@@ -2846,7 +2877,7 @@
       "action": "conducted diplomatic engagement",
       "geopolitical_relevance": 0.95,
       "strategic_relevance": 0.0,
-      "score": 0.18513204343334913
+      "score": 0.18492276527363574
     },
     {
       "id": "evt-dca61e0274d71704",
@@ -2874,7 +2905,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.19483571124346735
+      "score": 0.19461546386495684
     },
     {
       "id": "evt-16c06e3cdd76d16d",
@@ -2898,7 +2929,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 0.15,
       "strategic_relevance": 0.0,
-      "score": 0.029213167171177994
+      "score": 0.02918014384491853
     },
     {
       "id": "evt-27ecb7d2eb83e038",
@@ -2922,7 +2953,7 @@
       "action": "conducted trade activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.1945987870635532
+      "score": 0.19437880748277625
     },
     {
       "id": "evt-744795e4fbbf1f16",
@@ -2948,7 +2979,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.1945451937292345
+      "score": 0.1943252747260542
     },
     {
       "id": "evt-68642f219edd892c",
@@ -2977,7 +3008,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 0.8,
       "strategic_relevance": 0.0,
-      "score": 0.15534550175603515
+      "score": 0.15516989509272042
     },
     {
       "id": "evt-9799bcbcc4fa11f0",
@@ -3006,7 +3037,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.1359273139801892
+      "score": 0.13577365815312023
     },
     {
       "id": "evt-6419f9bd84b4cb30",
@@ -3026,7 +3057,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.13590041742882567
+      "score": 0.13574679202411655
     },
     {
       "id": "evt-3724e6e6922f1e78",
@@ -3052,7 +3083,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.19412787811640553
+      "score": 0.1939084308645097
     },
     {
       "id": "evt-46f7d02ccfc78548",
@@ -3076,7 +3107,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 0.15,
       "strategic_relevance": 0.0,
-      "score": 0.029106024563841978
+      "score": 0.029073122350804552
     },
     {
       "id": "evt-5be79751f2d5a81b",
@@ -3096,7 +3127,7 @@
       "action": "took political action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.19394626500102152
+      "score": 0.19372702305091533
     },
     {
       "id": "evt-719da4c7256615a9",
@@ -3116,7 +3147,7 @@
       "action": "imposed or expanded sanctions",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.19390840694658426
+      "score": 0.19368920778755516
     },
     {
       "id": "evt-6534a198da84d7f4",
@@ -3136,7 +3167,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.13558931874930458
+      "score": 0.13543604502053255
     },
     {
       "id": "evt-0dd56fe19f3b7c07",
@@ -3156,7 +3187,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 0.83,
       "strategic_relevance": 0.0,
-      "score": 0.16076503277427404
+      "score": 0.16058329976112445
     },
     {
       "id": "evt-238cc341179dcab0",
@@ -3176,7 +3207,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 0.83,
       "strategic_relevance": 0.0,
-      "score": 0.16063696742449796
+      "score": 0.16045537911842211
     },
     {
       "id": "evt-0725fcd991ad3223",
@@ -3196,7 +3227,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.8,
       "strategic_relevance": 0.0,
-      "score": 0.15483081183961286
+      "score": 0.1546557869643724
     },
     {
       "id": "evt-3217d1a931056b6e",
@@ -3216,7 +3247,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.19352867963683876
+      "score": 0.19330990958317634
     },
     {
       "id": "evt-e9f0be5daccdc8d9",
@@ -3236,7 +3267,7 @@
       "action": "took political action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.19337141378935524
+      "score": 0.19315282152204116
     },
     {
       "id": "evt-f59ccf7e74a492f7",
@@ -3260,7 +3291,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 0.15,
       "strategic_relevance": 0.0,
-      "score": 0.028954717730087835
+      "score": 0.028921986484630915
     },
     {
       "id": "evt-5007695db7a15060",
@@ -3284,7 +3315,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.1927487789383155
+      "score": 0.19253089021562864
     },
     {
       "id": "evt-0c451c9817a791e1",
@@ -3308,7 +3339,7 @@
       "action": "took economic policy action",
       "geopolitical_relevance": 0.07,
       "strategic_relevance": 0.0,
-      "score": 0.013482171251912298
+      "score": 0.013466930622738097
     },
     {
       "id": "evt-087904d2d2851774",
@@ -3332,7 +3363,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.1347125131612284
+      "score": 0.1345602303021852
     },
     {
       "id": "evt-01fa5dd9408d6d42",
@@ -3358,7 +3389,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 0.9,
       "strategic_relevance": 0.0,
-      "score": 0.1731235437741411
+      "score": 0.17292783999423184
     },
     {
       "id": "evt-595f3a2758a36c4b",
@@ -3384,7 +3415,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 0.83,
       "strategic_relevance": 0.0,
-      "score": 0.15965837921183643
+      "score": 0.1594778968362309
     },
     {
       "id": "evt-55c2c78455d579f8",
@@ -3408,7 +3439,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 0.15,
       "strategic_relevance": 0.0,
-      "score": 0.028795110274773522
+      "score": 0.02876255946701829
     },
     {
       "id": "evt-8ec4a14bcb510b10",
@@ -3428,7 +3459,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.1342812684423711
+      "score": 0.13412947308359927
     },
     {
       "id": "evt-3b518ba593126be5",
@@ -3454,7 +3485,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.19172883747173408
+      "score": 0.19151210141374206
     },
     {
       "id": "evt-1c231d93bfc6623c",
@@ -3480,7 +3511,7 @@
       "action": "conducted diplomatic engagement",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.19172883737790683
+      "score": 0.19151210132463012
     },
     {
       "id": "evt-0bc7e6d6946de02e",
@@ -3506,7 +3537,7 @@
       "action": "took political action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.19172883728920675
+      "score": 0.1915121012442245
     },
     {
       "id": "evt-b4cf192fbf74809d",
@@ -3532,7 +3563,7 @@
       "action": "conducted trade activity",
       "geopolitical_relevance": 0.83,
       "strategic_relevance": 0.0,
-      "score": 0.159090256349429
+      "score": 0.15891041591008082
     },
     {
       "id": "evt-b9cd641bf4e98939",
@@ -3552,7 +3583,7 @@
       "action": "conducted trade activity",
       "geopolitical_relevance": 0.08,
       "strategic_relevance": 0.0,
-      "score": 0.015334000468062586
+      "score": 0.015316666443544217
     },
     {
       "id": "evt-caca93b873f60a64",
@@ -3572,7 +3603,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 0.83,
       "strategic_relevance": 0.0,
-      "score": 0.15895969677799712
+      "score": 0.1587800032010623
     },
     {
       "id": "evt-3c140056b927f914",
@@ -3601,7 +3632,7 @@
       "action": "conducted diplomatic engagement",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.19148697899647618
+      "score": 0.1912705155022153
     },
     {
       "id": "evt-611dccf3e9d03926",
@@ -3630,7 +3661,55 @@
       "action": "took political action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.19148697887921207
+      "score": 0.19127051538457226
+    },
+    {
+      "id": "evt-e8cb716591196710",
+      "event_type": "trade_action",
+      "title": "Oil prices jump to Sh12,559 per barrel as US-Iran conflict escalates, threatening Strait of Hormuz trade route - The Eastleigh Voice",
+      "timestamp": "2026-09-07T08:46:44+00:00",
+      "location": "Iran",
+      "severity": 0.0,
+      "confidence": 0.0,
+      "entity_ids": [
+        "ent-0f005c7ca9aa1003"
+      ],
+      "evidence_ids": [
+        "evd-d59535ae879a9ac1"
+      ],
+      "actor_ids": [],
+      "target_ids": [],
+      "location_ids": [
+        "ent-0f005c7ca9aa1003"
+      ],
+      "action": "conducted trade activity",
+      "geopolitical_relevance": 1.0,
+      "strategic_relevance": 0.0,
+      "score": 0.19103588231683127
+    },
+    {
+      "id": "evt-cdd17085f1af2762",
+      "event_type": "energy_action",
+      "title": "Oil prices jump to Sh12,559 per barrel as US-Iran conflict escalates, threatening Strait of Hormuz trade route - The Eastleigh Voice",
+      "timestamp": "2026-09-07T08:46:44+00:00",
+      "location": "Iran",
+      "severity": 0.0,
+      "confidence": 0.0,
+      "entity_ids": [
+        "ent-0f005c7ca9aa1003"
+      ],
+      "evidence_ids": [
+        "evd-d59535ae879a9ac1"
+      ],
+      "actor_ids": [],
+      "target_ids": [],
+      "location_ids": [
+        "ent-0f005c7ca9aa1003"
+      ],
+      "action": "took energy-related action",
+      "geopolitical_relevance": 1.0,
+      "strategic_relevance": 0.0,
+      "score": 0.19103588226472312
     },
     {
       "id": "evt-64b3c5efafbb37a1",
@@ -3654,7 +3733,7 @@
       "action": "took political action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.19119020533707867
+      "score": 0.1909740768306339
     },
     {
       "id": "evt-4b89e7d30ca9ac16",
@@ -3681,7 +3760,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.13380630389961498
+      "score": 0.13365504427226926
     },
     {
       "id": "evt-63a44c2ab58f663a",
@@ -3707,7 +3786,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.13379807380375802
+      "score": 0.13364682346357884
     },
     {
       "id": "evt-18b60e169c3c7a37",
@@ -3727,7 +3806,7 @@
       "action": "took technology-related action",
       "geopolitical_relevance": 0.77,
       "strategic_relevance": 0.0,
-      "score": 0.14697925649009883
+      "score": 0.14681310568479441
     },
     {
       "id": "evt-97601320d96f6ac6",
@@ -3751,7 +3830,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 0.15,
       "strategic_relevance": 0.0,
-      "score": 0.0286284944521843
+      "score": 0.028596131743828232
     },
     {
       "id": "evt-af57cbf6bd301975",
@@ -3771,7 +3850,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 0.83,
       "strategic_relevance": 0.0,
-      "score": 0.1580695087361509
+      "score": 0.15789082101797258
     },
     {
       "id": "evt-c0fae69317f7f63c",
@@ -3791,7 +3870,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 0.83,
       "strategic_relevance": 0.0,
-      "score": 0.1576882627436953
+      "score": 0.15751000585374572
     },
     {
       "id": "evt-23f2f2cdd692889c",
@@ -3811,7 +3890,7 @@
       "action": "conducted diplomatic engagement",
       "geopolitical_relevance": 0.95,
       "strategic_relevance": 0.0,
-      "score": 0.18034568415301155
+      "score": 0.18014181447000646
     },
     {
       "id": "evt-5bc1314ed8750918",
@@ -3835,7 +3914,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 0.83,
       "strategic_relevance": 0.0,
-      "score": 0.15754621493517942
+      "score": 0.1573681185554771
     },
     {
       "id": "evt-4e2fab214448f30f",
@@ -3855,7 +3934,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 0.83,
       "strategic_relevance": 0.0,
-      "score": 0.15694699488786426
+      "score": 0.1567695758953003
     },
     {
       "id": "evt-6ec2770d72ff9091",
@@ -3879,7 +3958,7 @@
       "action": "conducted trade activity",
       "geopolitical_relevance": 0.83,
       "strategic_relevance": 0.0,
-      "score": 0.15689454032110117
+      "score": 0.15671718061516327
     },
     {
       "id": "evt-bbb6400722c3c597",
@@ -3903,7 +3982,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.18841587724612036
+      "score": 0.18820288460695575
     },
     {
       "id": "evt-7b10b6dfedff8722",
@@ -3927,7 +4006,7 @@
       "action": "conducted diplomatic engagement",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.188415877190696
+      "score": 0.18820288454756773
     },
     {
       "id": "evt-c2406809f76ea4d8",
@@ -3953,7 +4032,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 0.15,
       "strategic_relevance": 0.0,
-      "score": 0.02821759876323916
+      "score": 0.028185700490631058
     },
     {
       "id": "evt-1cb7f91d28d059d1",
@@ -3977,7 +4056,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.18795842454391076
+      "score": 0.18774594903461186
     },
     {
       "id": "evt-de884486877c6a00",
@@ -3997,7 +4076,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.1315174264828388
+      "score": 0.13136875409557355
     },
     {
       "id": "evt-221fd69d6217f77b",
@@ -4017,7 +4096,7 @@
       "action": "took technology-related action",
       "geopolitical_relevance": 0.8200000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.15364237808691597
+      "score": 0.15346869479711867
     },
     {
       "id": "evt-f84fceec1c3f0d47",
@@ -4037,7 +4116,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 0.83,
       "strategic_relevance": 0.0,
-      "score": 0.1555160655821417
+      "score": 0.1553402642064003
     },
     {
       "id": "evt-4410159c21224962",
@@ -4061,7 +4140,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 0.9,
       "strategic_relevance": 0.0,
-      "score": 0.16804081603104148
+      "score": 0.1678508561898056
     },
     {
       "id": "evt-fc10d1cb7a3b04eb",
@@ -4085,7 +4164,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 0.83,
       "strategic_relevance": 0.0,
-      "score": 0.1549709747514435
+      "score": 0.15479578956042347
     },
     {
       "id": "evt-00bbe0544bce2b7e",
@@ -4105,7 +4184,7 @@
       "action": "took economic policy action",
       "geopolitical_relevance": 0.07,
       "strategic_relevance": 0.0,
-      "score": 0.01306204945076401
+      "score": 0.013047283604279479
     },
     {
       "id": "evt-267331089a1d105c",
@@ -4125,7 +4204,7 @@
       "action": "took technology-related action",
       "geopolitical_relevance": 0.8200000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.15285062772566757
+      "score": 0.15267783945254348
     },
     {
       "id": "evt-a6999ca625933ce4",
@@ -4145,7 +4224,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 0.83,
       "strategic_relevance": 0.0,
-      "score": 0.15471465973345266
+      "score": 0.15453976429002805
     },
     {
       "id": "evt-7cfc4645e37e38cd",
@@ -4165,7 +4244,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.13035180596860899
+      "score": 0.1302044513117676
     },
     {
       "id": "evt-435d21d9f6f31c86",
@@ -4185,7 +4264,7 @@
       "action": "took technology-related action",
       "geopolitical_relevance": 0.07,
       "strategic_relevance": 0.0,
-      "score": 0.013029534705423942
+      "score": 0.013014805621131274
     },
     {
       "id": "evt-d606d011e86f6571",
@@ -4209,7 +4288,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.1860968906557856
+      "score": 0.18588651962748978
     },
     {
       "id": "evt-d28dc79f783f04bb",
@@ -4233,7 +4312,7 @@
       "action": "took technology-related action",
       "geopolitical_relevance": 0.77,
       "strategic_relevance": 0.0,
-      "score": 0.14323866991736192
+      "score": 0.14307674746605398
     },
     {
       "id": "evt-e84efaadfff9b902",
@@ -4257,7 +4336,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 0.83,
       "strategic_relevance": 0.0,
-      "score": 0.15404173639529184
+      "score": 0.15386760175786443
     },
     {
       "id": "evt-671b6ce96c2fe83c",
@@ -4281,7 +4360,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 0.83,
       "strategic_relevance": 0.0,
-      "score": 0.1540223761957302
+      "score": 0.15384826339032434
     },
     {
       "id": "evt-93b4f2f1f53265cf",
@@ -4301,7 +4380,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.12954870811939465
+      "score": 0.12940226124338403
     },
     {
       "id": "evt-2c34ff19eaafe066",
@@ -4325,7 +4404,7 @@
       "action": "took technology-related action",
       "geopolitical_relevance": 0.8200000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.15165522918671698
+      "score": 0.1514837922307308
     },
     {
       "id": "evt-f53a4a879b7e66ea",
@@ -4349,7 +4428,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 0.83,
       "strategic_relevance": 0.0,
-      "score": 0.15350468315316076
+      "score": 0.1533311555022336
     },
     {
       "id": "evt-d7a235e9f50f5569",
@@ -4377,7 +4456,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.18488556678473617
+      "score": 0.18467656499477839
     },
     {
       "id": "evt-c44ae8fec4591681",
@@ -4403,7 +4482,7 @@
       "action": "conducted diplomatic engagement",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.18442435560264014
+      "score": 0.18421587522500762
     },
     {
       "id": "evt-e9105d078034c153",
@@ -4427,7 +4506,59 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 0.15,
       "strategic_relevance": 0.0,
-      "score": 0.027614132565830164
+      "score": 0.027582916493280932
+    },
+    {
+      "id": "evt-38754e3fa245b384",
+      "event_type": "military_action",
+      "title": "Russia Suspends Diesel Exports Amid Ukrainian Drone Strikes on Fuel Infrastructure - NTD News",
+      "timestamp": "2026-09-07T04:43:44+00:00",
+      "location": "Russia",
+      "severity": 0.0,
+      "confidence": 0.0,
+      "entity_ids": [
+        "ent-f35fdf88910c6585",
+        "ent-a8df80c99563bc0a"
+      ],
+      "evidence_ids": [
+        "evd-dce4a57a64653918"
+      ],
+      "actor_ids": [],
+      "target_ids": [],
+      "location_ids": [
+        "ent-f35fdf88910c6585",
+        "ent-a8df80c99563bc0a"
+      ],
+      "action": "conducted or reported military activity",
+      "geopolitical_relevance": 0.9,
+      "strategic_relevance": 0.0,
+      "score": 0.16535770560206317
+    },
+    {
+      "id": "evt-d2c7261c322c5e44",
+      "event_type": "trade_action",
+      "title": "Russia Suspends Diesel Exports Amid Ukrainian Drone Strikes on Fuel Infrastructure - NTD News",
+      "timestamp": "2026-09-07T04:43:44+00:00",
+      "location": "Russia",
+      "severity": 0.0,
+      "confidence": 0.0,
+      "entity_ids": [
+        "ent-f35fdf88910c6585",
+        "ent-a8df80c99563bc0a"
+      ],
+      "evidence_ids": [
+        "evd-dce4a57a64653918"
+      ],
+      "actor_ids": [],
+      "target_ids": [],
+      "location_ids": [
+        "ent-f35fdf88910c6585",
+        "ent-a8df80c99563bc0a"
+      ],
+      "action": "conducted trade activity",
+      "geopolitical_relevance": 0.83,
+      "strategic_relevance": 0.0,
+      "score": 0.1524965506831614
     },
     {
       "id": "evt-a8c661614e76337a",
@@ -4447,7 +4578,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 0.15,
       "strategic_relevance": 0.0,
-      "score": 0.02752566038506526
+      "score": 0.027494544262580016
     },
     {
       "id": "evt-b21a7cefadb50f6a",
@@ -4471,7 +4602,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.1282221095207993
+      "score": 0.12807716205818942
     },
     {
       "id": "evt-ca16f3cce2425549",
@@ -4497,7 +4628,7 @@
       "action": "conducted trade activity",
       "geopolitical_relevance": 0.9299999999999999,
       "strategic_relevance": 0.0,
-      "score": 0.1698782029147493
+      "score": 0.16968616578204757
     },
     {
       "id": "evt-cf43640494b93a11",
@@ -4517,7 +4648,7 @@
       "action": "took technology-related action",
       "geopolitical_relevance": 0.77,
       "strategic_relevance": 0.0,
-      "score": 0.1406518447564122
+      "score": 0.14049284628936096
     },
     {
       "id": "evt-092ae541d309c7f9",
@@ -4541,7 +4672,7 @@
       "action": "took technology-related action",
       "geopolitical_relevance": 0.77,
       "strategic_relevance": 0.0,
-      "score": 0.1396306188976734
+      "score": 0.13947277487671264
     },
     {
       "id": "evt-b9b00f08486cf59b",
@@ -4561,7 +4692,7 @@
       "action": "took technology-related action",
       "geopolitical_relevance": 0.07,
       "strategic_relevance": 0.0,
-      "score": 0.012612956948699764
+      "score": 0.012598698759416771
     },
     {
       "id": "evt-4c7f80fd7758b516",
@@ -4585,7 +4716,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.17966689575489214
+      "score": 0.17946379316086483
     },
     {
       "id": "evt-2fb1f08712928a0d",
@@ -4611,7 +4742,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 0.15,
       "strategic_relevance": 0.0,
-      "score": 0.02675629071086773
+      "score": 0.02672604434550144
     },
     {
       "id": "evt-76d5218e444f4886",
@@ -4631,7 +4762,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 0.83,
       "strategic_relevance": 0.0,
-      "score": 0.1476718828960419
+      "score": 0.14750494878959486
     },
     {
       "id": "evt-fe25ee1654d3e471",
@@ -4657,7 +4788,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.17782898086619278
+      "score": 0.17762795598827053
     },
     {
       "id": "evt-4d2783feb8582452",
@@ -4681,7 +4812,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.12439476490243562
+      "score": 0.12425414416532185
     },
     {
       "id": "evt-e61c3c467fb58de3",
@@ -4701,7 +4832,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 0.83,
       "strategic_relevance": 0.0,
-      "score": 0.14742763990923
+      "score": 0.14726098188733744
     },
     {
       "id": "evt-525aa635c0bfb686",
@@ -4721,7 +4852,7 @@
       "action": "took political action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.1775566995657673
+      "score": 0.17735598245878215
     },
     {
       "id": "evt-8bc22fedec06a4b2",
@@ -4741,7 +4872,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 0.83,
       "strategic_relevance": 0.0,
-      "score": 0.14670674975848874
+      "score": 0.14654090666005384
     },
     {
       "id": "evt-f3d476027c84b834",
@@ -4770,7 +4901,7 @@
       "action": "conducted diplomatic engagement",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.17664218638166507
+      "score": 0.17644250308830403
     },
     {
       "id": "evt-36e37c9383938835",
@@ -4799,7 +4930,7 @@
       "action": "took political action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.17664218629663797
+      "score": 0.17644250300431674
     },
     {
       "id": "evt-67f689719a73044e",
@@ -4830,7 +4961,7 @@
       "action": "took economic policy action",
       "geopolitical_relevance": 0.8200000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.14475094927852425
+      "score": 0.14458731709025407
     },
     {
       "id": "evt-3219863c0ffbc6f8",
@@ -4861,7 +4992,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 0.83,
       "strategic_relevance": 0.0,
-      "score": 0.14651620469601637
+      "score": 0.14635057699410736
     },
     {
       "id": "evt-8aaa42d76af7e425",
@@ -4892,7 +5023,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.8,
       "strategic_relevance": 0.0,
-      "score": 0.14122043820344035
+      "score": 0.1410607970473025
     },
     {
       "id": "evt-8fcac39d2c87aa92",
@@ -4912,7 +5043,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.1764736280239647
+      "score": 0.17627413522093724
     },
     {
       "id": "evt-52063876b73a1d51",
@@ -4932,7 +5063,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.17631937633535333
+      "score": 0.1761200579201076
     },
     {
       "id": "evt-b5ca204d2559e8ef",
@@ -4952,7 +5083,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 0.9299999999999999,
       "strategic_relevance": 0.0,
-      "score": 0.16397701994978223
+      "score": 0.1637916538254033
     },
     {
       "id": "evt-2987f834cf3b9e9c",
@@ -4972,7 +5103,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.12305708462865128
+      "score": 0.12291797601982629
     },
     {
       "id": "evt-21c2e7b0f8a938f0",
@@ -4996,7 +5127,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.17575259005700003
+      "score": 0.17555391236742102
     },
     {
       "id": "evt-77eb2a3954cb6c69",
@@ -5020,7 +5151,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.17575259001094062
+      "score": 0.17555391232188317
     },
     {
       "id": "evt-c14c13cd61ff495c",
@@ -5044,7 +5175,7 @@
       "action": "took political action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.17518387920115888
+      "score": 0.17498584442076875
     },
     {
       "id": "evt-a4264b149833e7b0",
@@ -5070,7 +5201,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 0.9,
       "strategic_relevance": 0.0,
-      "score": 0.15723727980353946
+      "score": 0.15705953258096578
     },
     {
       "id": "evt-c2b6f64001c16dfe",
@@ -5096,7 +5227,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 0.83,
       "strategic_relevance": 0.0,
-      "score": 0.1450077135597587
+      "score": 0.1448437911200426
     },
     {
       "id": "evt-789a15c3f11351c0",
@@ -5120,7 +5251,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 0.83,
       "strategic_relevance": 0.0,
-      "score": 0.14455124113503565
+      "score": 0.1443878346298289
     },
     {
       "id": "evt-22980e641ec4fb67",
@@ -5140,7 +5271,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.05,
       "strategic_relevance": 0.0,
-      "score": 0.008707277349168683
+      "score": 0.008697434293760574
     },
     {
       "id": "evt-03d178229d3df80f",
@@ -5160,7 +5291,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 0.15,
       "strategic_relevance": 0.0,
-      "score": 0.026060083606253698
+      "score": 0.02603062425665626
     },
     {
       "id": "evt-f38719c62485641c",
@@ -5180,7 +5311,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.12137979119619231
+      "score": 0.12124257871501734
     },
     {
       "id": "evt-aa85e7b939b4a58e",
@@ -5204,7 +5335,7 @@
       "action": "took technology-related action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.17169337817876368
+      "score": 0.17149928930920272
     },
     {
       "id": "evt-aca51bb71738a55d",
@@ -5224,7 +5355,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.11968758936092289
+      "score": 0.11955228987124046
     },
     {
       "id": "evt-4e15b18e4cba15d7",
@@ -5252,7 +5383,7 @@
       "action": "conducted diplomatic engagement",
       "geopolitical_relevance": 0.1,
       "strategic_relevance": 0.0,
-      "score": 0.01709360947882854
+      "score": 0.01707428620219468
     },
     {
       "id": "evt-21bfb5cce4f44130",
@@ -5278,7 +5409,7 @@
       "action": "conducted diplomatic engagement",
       "geopolitical_relevance": 0.95,
       "strategic_relevance": 0.0,
-      "score": 0.16200889071677863
+      "score": 0.16182574951684797
     },
     {
       "id": "evt-074100da3d9a1366",
@@ -5298,7 +5429,7 @@
       "action": "took political action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.1705306576683806
+      "score": 0.17033788314274653
     },
     {
       "id": "evt-350bfa8fa6676716",
@@ -5322,7 +5453,7 @@
       "action": "conducted diplomatic engagement",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.17025589314133527
+      "score": 0.1700634292252724
     },
     {
       "id": "evt-eeaa7e27f31f9ef7",
@@ -5342,7 +5473,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.16911964002577778
+      "score": 0.16892846063924674
     },
     {
       "id": "evt-9666b7aa8e528f85",
@@ -5366,7 +5497,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 0.8,
       "strategic_relevance": 0.0,
-      "score": 0.1350954200628412
+      "score": 0.13494270296237584
     },
     {
       "id": "evt-61eeab32082d6654",
@@ -5390,7 +5521,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.11820849252211053
+      "score": 0.118074865058609
     },
     {
       "id": "evt-88c8e3ea934dc4a1",
@@ -5414,7 +5545,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.11811369710680548
+      "score": 0.11798017681539061
     },
     {
       "id": "evt-7e0bcfa0638f8292",
@@ -5438,7 +5569,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 0.9,
       "strategic_relevance": 0.0,
-      "score": 0.1515497109028475
+      "score": 0.1513783932389443
     },
     {
       "id": "evt-cbeb2c0e1dde3eea",
@@ -5462,7 +5593,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 0.83,
       "strategic_relevance": 0.0,
-      "score": 0.13976251113531182
+      "score": 0.13960451818012906
     },
     {
       "id": "evt-6096693f6731ff13",
@@ -5486,7 +5617,7 @@
       "action": "imposed or expanded sanctions",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.16772388494469156
+      "score": 0.16753428343151833
     },
     {
       "id": "evt-d05f4643a6aaf81b",
@@ -5514,7 +5645,7 @@
       "action": "conducted diplomatic engagement",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.16717042181095604
+      "score": 0.1669814459729403
     },
     {
       "id": "evt-bbd739d3b9bf59ff",
@@ -5540,7 +5671,7 @@
       "action": "took political action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.1671704217018774
+      "score": 0.16698144585192842
     },
     {
       "id": "evt-3a0a8c1e8b642b85",
@@ -5560,7 +5691,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.11700177213002362
+      "score": 0.11686950883629853
     },
     {
       "id": "evt-9a2e6ddc30e85571",
@@ -5580,7 +5711,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.11673612187427038
+      "score": 0.11660415885653254
     },
     {
       "id": "evt-e2ceb8668e4769c6",
@@ -5604,7 +5735,7 @@
       "action": "conducted diplomatic engagement",
       "geopolitical_relevance": 0.95,
       "strategic_relevance": 0.0,
-      "score": 0.15831493923385728
+      "score": 0.15813597391407727
     },
     {
       "id": "evt-c006e7dd76ebf694",
@@ -5628,7 +5759,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.16646246415809599
+      "score": 0.16627428855890136
     },
     {
       "id": "evt-6fd988675e89a3ff",
@@ -5652,7 +5783,7 @@
       "action": "took political action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.16646246411669702
+      "score": 0.16627428851621526
     },
     {
       "id": "evt-05b832a0bdfc41f0",
@@ -5676,7 +5807,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.16646246377793755
+      "score": 0.16627428817872802
     },
     {
       "id": "evt-45a67f1fd578468c",
@@ -5700,7 +5831,7 @@
       "action": "took political action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.16646246373965462
+      "score": 0.16627428813737585
     },
     {
       "id": "evt-9751bb358561012a",
@@ -5720,7 +5851,7 @@
       "action": "took political action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.1662475934078555
+      "score": 0.16605966072461942
     },
     {
       "id": "evt-df28eb951d4b85c1",
@@ -5744,7 +5875,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.16566267172596524
+      "score": 0.16547540028506688
     },
     {
       "id": "evt-225c5449257a8445",
@@ -5770,7 +5901,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.1653347237640951
+      "score": 0.16514782307465492
     },
     {
       "id": "evt-f992ccb90376b88c",
@@ -5798,7 +5929,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.16530775522400382
+      "score": 0.16512088502083183
     },
     {
       "id": "evt-cef5af072b58b552",
@@ -5826,7 +5957,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.1653077551594627
+      "score": 0.1651208849594546
     },
     {
       "id": "evt-699eefa93881a641",
@@ -5850,7 +5981,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.16515619660160477
+      "score": 0.16496949771682654
     },
     {
       "id": "evt-2719c9db4231728e",
@@ -5870,7 +6001,7 @@
       "action": "conducted diplomatic engagement",
       "geopolitical_relevance": 0.95,
       "strategic_relevance": 0.0,
-      "score": 0.15688831676709514
+      "score": 0.15671096424150463
     },
     {
       "id": "evt-8f24a20e5da6b92f",
@@ -5890,7 +6021,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.9,
       "strategic_relevance": 0.0,
-      "score": 0.1486310368629219
+      "score": 0.1484630186868228
     },
     {
       "id": "evt-5899793fb826b109",
@@ -5916,7 +6047,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 0.83,
       "strategic_relevance": 0.0,
-      "score": 0.13638856122970797
+      "score": 0.13623438187114714
     },
     {
       "id": "evt-f66391dcbf00a07a",
@@ -5943,7 +6074,7 @@
       "action": "conducted trade activity",
       "geopolitical_relevance": 0.83,
       "strategic_relevance": 0.0,
-      "score": 0.13637178413226786
+      "score": 0.1362176237698414
     },
     {
       "id": "evt-0dca1a268b2e7364",
@@ -5967,7 +6098,7 @@
       "action": "conducted diplomatic engagement",
       "geopolitical_relevance": 0.95,
       "strategic_relevance": 0.0,
-      "score": 0.1558971303280617
+      "score": 0.15572089769685651
     },
     {
       "id": "evt-40ab77cd170b28d7",
@@ -5993,7 +6124,7 @@
       "action": "took technology-related action",
       "geopolitical_relevance": 0.07,
       "strategic_relevance": 0.0,
-      "score": 0.011459206205887904
+      "score": 0.011446252240914341
     },
     {
       "id": "evt-2426f4a249cfcd14",
@@ -6013,7 +6144,7 @@
       "action": "took political action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.1636884995390121
+      "score": 0.16350345925473317
     },
     {
       "id": "evt-1dad28f7dadc684e",
@@ -6033,7 +6164,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.11458194936905736
+      "score": 0.11445242116061645
     },
     {
       "id": "evt-ce3d181f2cb8e1df",
@@ -6053,7 +6184,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.11447506030529445
+      "score": 0.11434565330297929
     },
     {
       "id": "evt-31615c5208e7fc3f",
@@ -6077,7 +6208,7 @@
       "action": "conducted diplomatic engagement",
       "geopolitical_relevance": 0.95,
       "strategic_relevance": 0.0,
-      "score": 0.15521657341443318
+      "score": 0.15504111064680434
     },
     {
       "id": "evt-505c3ec062afaf3b",
@@ -6097,7 +6228,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.11432913006090804
+      "score": 0.11419988806588662
     },
     {
       "id": "evt-762057a8685194f6",
@@ -6117,7 +6248,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.05,
       "strategic_relevance": 0.0,
-      "score": 0.00816040670999308
+      "score": 0.008151181873990302
     },
     {
       "id": "evt-51ce8f66966fa031",
@@ -6137,7 +6268,7 @@
       "action": "took political action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.1631396256473594
+      "score": 0.1629552063894239
     },
     {
       "id": "evt-f166aab0b0c11812",
@@ -6161,7 +6292,7 @@
       "action": "conducted diplomatic engagement",
       "geopolitical_relevance": 0.95,
       "strategic_relevance": 0.0,
-      "score": 0.15487036815932953
+      "score": 0.15469529677111904
     },
     {
       "id": "evt-fc9ffade948735f4",
@@ -6185,7 +6316,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 0.15,
       "strategic_relevance": 0.0,
-      "score": 0.024408919894915778
+      "score": 0.024381327118707323
     },
     {
       "id": "evt-5537f2af9fa57a12",
@@ -6211,7 +6342,7 @@
       "action": "conducted diplomatic engagement",
       "geopolitical_relevance": 0.95,
       "strategic_relevance": 0.0,
-      "score": 0.15432506204588706
+      "score": 0.1541506070987494
     },
     {
       "id": "evt-a0850e0abe06d588",
@@ -6237,7 +6368,7 @@
       "action": "conducted diplomatic engagement",
       "geopolitical_relevance": 0.95,
       "strategic_relevance": 0.0,
-      "score": 0.15423677074028944
+      "score": 0.15406241559607353
     },
     {
       "id": "evt-9d0129cff71f70c9",
@@ -6261,7 +6392,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.16208640201946178
+      "score": 0.16190317334362342
     },
     {
       "id": "evt-8cee3636c3a09f68",
@@ -6285,7 +6416,7 @@
       "action": "took economic policy action",
       "geopolitical_relevance": 0.77,
       "strategic_relevance": 0.0,
-      "score": 0.12443095279346102
+      "score": 0.12429029126412995
     },
     {
       "id": "evt-0f967eaad8fd0b3a",
@@ -6312,7 +6443,7 @@
       "action": "imposed or expanded sanctions",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.16117008779540165
+      "score": 0.1609878948516378
     },
     {
       "id": "evt-4b0d85ec080cb323",
@@ -6339,7 +6470,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.1611700876419665
+      "score": 0.16098789468330824
     },
     {
       "id": "evt-a9065fa8c78c7551",
@@ -6366,7 +6497,7 @@
       "action": "conducted trade activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.16117008748077336
+      "score": 0.16098789451325662
     },
     {
       "id": "evt-e24a54331c227795",
@@ -6386,7 +6517,7 @@
       "action": "took technology-related action",
       "geopolitical_relevance": 0.77,
       "strategic_relevance": 0.0,
-      "score": 0.12410030236913815
+      "score": 0.12396001450240154
     },
     {
       "id": "evt-f17612e877f83335",
@@ -6410,7 +6541,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 0.83,
       "strategic_relevance": 0.0,
-      "score": 0.13374184039797893
+      "score": 0.13359065335177764
     },
     {
       "id": "evt-9b83e1e14dfc4d81",
@@ -6434,7 +6565,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.16109080096106515
+      "score": 0.16090869754639725
     },
     {
       "id": "evt-91120b70c8334e1b",
@@ -6460,7 +6591,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.1609073893482934
+      "score": 0.1607254932616324
     },
     {
       "id": "evt-44fa4b797f930d6c",
@@ -6486,7 +6617,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.16090738897350632
+      "score": 0.16072549287136606
     },
     {
       "id": "evt-bb8237402246d600",
@@ -6506,7 +6637,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.11256290552873717
+      "score": 0.11243565994653722
     },
     {
       "id": "evt-ea8ddf40b4220512",
@@ -6526,7 +6657,7 @@
       "action": "took economic policy action",
       "geopolitical_relevance": 0.77,
       "strategic_relevance": 0.0,
-      "score": 0.12378575699595265
+      "score": 0.12364582467954972
     },
     {
       "id": "evt-dfeba049a8e3ff3d",
@@ -6546,7 +6677,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.11252739021718665
+      "score": 0.1124001848123631
     },
     {
       "id": "evt-4d7f2962694ae897",
@@ -6572,7 +6703,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.16073793921885063
+      "score": 0.16055623470937203
     },
     {
       "id": "evt-72376e54ca64a319",
@@ -6592,7 +6723,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.16056652343607367
+      "score": 0.1603850126876066
     },
     {
       "id": "evt-a91da780175dec8a",
@@ -6612,7 +6743,7 @@
       "action": "took political action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.1605665234055874
+      "score": 0.1603850126567259
     },
     {
       "id": "evt-4dce082fd30f5968",
@@ -6636,7 +6767,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.11226079106311258
+      "score": 0.11213388703099961
     },
     {
       "id": "evt-de5b56c288339551",
@@ -6664,7 +6795,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 0.15,
       "strategic_relevance": 0.0,
-      "score": 0.02402740237368505
+      "score": 0.024000240831268227
     },
     {
       "id": "evt-232e6f4afe46ba4e",
@@ -6690,7 +6821,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 0.15,
       "strategic_relevance": 0.0,
-      "score": 0.02401250007721194
+      "score": 0.023985355379796115
     },
     {
       "id": "evt-fff63f20c2066b92",
@@ -6714,7 +6845,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.15987456085376325
+      "score": 0.15969383219349964
     },
     {
       "id": "evt-9935ad3efc656dfe",
@@ -6734,7 +6865,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.11187419102880607
+      "score": 0.11174772391735996
     },
     {
       "id": "evt-01295a189053a09d",
@@ -6760,7 +6891,7 @@
       "action": "conducted diplomatic engagement",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.15970961719461232
+      "score": 0.15952907500142796
     },
     {
       "id": "evt-d3ef50c5765fcc2e",
@@ -6784,7 +6915,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.11178327917865448
+      "score": 0.11165691485376553
     },
     {
       "id": "evt-160e0b0f24123b60",
@@ -6804,7 +6935,7 @@
       "action": "took political action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.15964086934466687
+      "score": 0.15946040482034463
     },
     {
       "id": "evt-5af129b0284d0cff",
@@ -6828,7 +6959,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.11173695406790131
+      "score": 0.11161064205735945
     },
     {
       "id": "evt-4858d05ae7ab72ea",
@@ -6848,7 +6979,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 0.15,
       "strategic_relevance": 0.0,
-      "score": 0.02394356893270076
+      "score": 0.023916502143437216
     },
     {
       "id": "evt-ad085ececcfeb7cd",
@@ -6872,7 +7003,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.11173516076400043
+      "score": 0.11160885075710393
     },
     {
       "id": "evt-ee75f1c8534eb540",
@@ -6900,7 +7031,7 @@
       "action": "conducted diplomatic engagement",
       "geopolitical_relevance": 0.95,
       "strategic_relevance": 0.0,
-      "score": 0.15143228278953544
+      "score": 0.1512610974623762
     },
     {
       "id": "evt-0d8d08a6301db80d",
@@ -6920,7 +7051,7 @@
       "action": "took technology-related action",
       "geopolitical_relevance": 0.77,
       "strategic_relevance": 0.0,
-      "score": 0.12271261004921108
+      "score": 0.12257389059834052
     },
     {
       "id": "evt-a585ba17ce35f649",
@@ -6944,7 +7075,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.1592967221594992
+      "score": 0.15911664649059426
     },
     {
       "id": "evt-b8cba34c2b33b64f",
@@ -6964,7 +7095,7 @@
       "action": "took political action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.15905409347271524
+      "score": 0.15887429204530001
     },
     {
       "id": "evt-d4543b382b5533fa",
@@ -6988,7 +7119,7 @@
       "action": "conducted diplomatic engagement",
       "geopolitical_relevance": 0.95,
       "strategic_relevance": 0.0,
-      "score": 0.15076920174849165
+      "score": 0.15059876590057256
     },
     {
       "id": "evt-53075145a1e34e64",
@@ -7012,7 +7143,7 @@
       "action": "took economic policy action",
       "geopolitical_relevance": 0.9199999999999999,
       "strategic_relevance": 0.0,
-      "score": 0.146008068974236
+      "score": 0.1458430153067968
     },
     {
       "id": "evt-e6018c5e750bb95b",
@@ -7036,7 +7167,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.9,
       "strategic_relevance": 0.0,
-      "score": 0.14283398043500628
+      "score": 0.14267251488590652
     },
     {
       "id": "evt-29e658d31880b05b",
@@ -7056,7 +7187,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.11048721665932491
+      "score": 0.11036231714439289
     },
     {
       "id": "evt-1a7a9298ff41d90e",
@@ -7080,7 +7211,7 @@
       "action": "conducted diplomatic engagement",
       "geopolitical_relevance": 0.95,
       "strategic_relevance": 0.0,
-      "score": 0.1492775871646918
+      "score": 0.14910883734353955
     },
     {
       "id": "evt-31410b28bd446e84",
@@ -7100,7 +7231,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.10965333255468554
+      "score": 0.10952937567019158
     },
     {
       "id": "evt-b6b1ce24ae32b5da",
@@ -7124,7 +7255,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.156577674992486
+      "score": 0.1564006727870954
     },
     {
       "id": "evt-baa03d11c3636bd4",
@@ -7150,7 +7281,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.15645211000775772
+      "score": 0.15627524974104745
     },
     {
       "id": "evt-c6be624eee57d17e",
@@ -7174,7 +7305,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.10950154150233642
+      "score": 0.10937775618651141
     },
     {
       "id": "evt-7627cb1fb543c259",
@@ -7194,7 +7325,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.10935522528661437
+      "score": 0.10923160537126511
     },
     {
       "id": "evt-bfc1d49fa22271a9",
@@ -7220,7 +7351,7 @@
       "action": "conducted diplomatic engagement",
       "geopolitical_relevance": 0.95,
       "strategic_relevance": 0.0,
-      "score": 0.14815450130541216
+      "score": 0.1479870210012688
     },
     {
       "id": "evt-088bb233a8eff02d",
@@ -7240,7 +7371,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.05,
       "strategic_relevance": 0.0,
-      "score": 0.00779128959525632
+      "score": 0.007782481976745981
     },
     {
       "id": "evt-859299084a0a07b6",
@@ -7264,7 +7395,7 @@
       "action": "took political action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.15547324065740442
+      "score": 0.1552974868130232
     },
     {
       "id": "evt-c5cc8720b01df96a",
@@ -7284,7 +7415,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.05,
       "strategic_relevance": 0.0,
-      "score": 0.007773433345816191
+      "score": 0.007764645911720597
     },
     {
       "id": "evt-a8638f5c26b520b2",
@@ -7308,7 +7439,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 0.15,
       "strategic_relevance": 0.0,
-      "score": 0.023287769397156568
+      "score": 0.023261443868700698
     },
     {
       "id": "evt-3ac22c908ff7a385",
@@ -7328,7 +7459,7 @@
       "action": "conducted diplomatic engagement",
       "geopolitical_relevance": 0.95,
       "strategic_relevance": 0.0,
-      "score": 0.14711852738472678
+      "score": 0.14695221802834688
     },
     {
       "id": "evt-1b0079dba31398c7",
@@ -7352,7 +7483,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.10840312519439191
+      "score": 0.10828058144999389
     },
     {
       "id": "evt-d87b60edeead7369",
@@ -7379,7 +7510,7 @@
       "action": "took political action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.15481440310319128
+      "score": 0.15463939400449567
     },
     {
       "id": "evt-4e679f2890760906",
@@ -7405,7 +7536,7 @@
       "action": "conducted diplomatic engagement",
       "geopolitical_relevance": 0.95,
       "strategic_relevance": 0.0,
-      "score": 0.14700722960248594
+      "score": 0.14684104606052095
     },
     {
       "id": "evt-6c6961e4c3ba27d7",
@@ -7433,7 +7564,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.15461539547531475
+      "score": 0.15444061133007897
     },
     {
       "id": "evt-120e36369ac85189",
@@ -7461,7 +7592,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.15461539541990985
+      "score": 0.15444061127267172
     },
     {
       "id": "evt-012450aefda32642",
@@ -7487,7 +7618,7 @@
       "action": "conducted diplomatic engagement",
       "geopolitical_relevance": 0.95,
       "strategic_relevance": 0.0,
-      "score": 0.14677115117132233
+      "score": 0.1466052345049263
     },
     {
       "id": "evt-cb8e6e79886218eb",
@@ -7511,7 +7642,7 @@
       "action": "conducted diplomatic engagement",
       "geopolitical_relevance": 0.95,
       "strategic_relevance": 0.0,
-      "score": 0.14634356483933494
+      "score": 0.14617813154735856
     },
     {
       "id": "evt-9e099db0da7968de",
@@ -7535,7 +7666,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.10753146920320868
+      "score": 0.10740991083613777
     },
     {
       "id": "evt-d6e954971be5222d",
@@ -7555,7 +7686,7 @@
       "action": "took political action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.15360734665123654
+      "score": 0.1534337020736001
     },
     {
       "id": "evt-252a2a8516a1b806",
@@ -7579,7 +7710,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.75,
       "strategic_relevance": 0.0,
-      "score": 0.11519441895059801
+      "score": 0.11506419807702009
     },
     {
       "id": "evt-8f7ed84c2fc3aecc",
@@ -7612,7 +7743,7 @@
       "action": "conducted diplomatic engagement",
       "geopolitical_relevance": 0.95,
       "strategic_relevance": 0.0,
-      "score": 0.14570315428490893
+      "score": 0.14553844497038326
     },
     {
       "id": "evt-892957e47b11d8aa",
@@ -7645,7 +7776,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.9,
       "strategic_relevance": 0.0,
-      "score": 0.13803456716892623
+      "score": 0.13787852677201415
     },
     {
       "id": "evt-881792519fdb88fc",
@@ -7665,7 +7796,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.1073418456852452
+      "score": 0.10722050168823569
     },
     {
       "id": "evt-f24dddfceb23267e",
@@ -7694,7 +7825,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.15322170132176532
+      "score": 0.15304849271236315
     },
     {
       "id": "evt-c856aca069fc8acf",
@@ -7723,7 +7854,7 @@
       "action": "conducted diplomatic engagement",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.15269159333790822
+      "score": 0.152518983947752
     },
     {
       "id": "evt-6b3d632a657ccad8",
@@ -7751,7 +7882,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.15222314692860703
+      "score": 0.15205106705783164
     },
     {
       "id": "evt-f9cf5cf510ee7a1b",
@@ -7775,7 +7906,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 0.15,
       "strategic_relevance": 0.0,
-      "score": 0.022780288989863038
+      "score": 0.022754537129446212
     },
     {
       "id": "evt-d9ce4138a2aaf34c",
@@ -7801,7 +7932,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 0.9,
       "strategic_relevance": 0.0,
-      "score": 0.13645639899355672
+      "score": 0.1363021425441117
     },
     {
       "id": "evt-8f5a483a78e4d601",
@@ -7827,7 +7958,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 0.83,
       "strategic_relevance": 0.0,
-      "score": 0.12584312347656987
+      "score": 0.12570086474261177
     },
     {
       "id": "evt-07a772a1feb32096",
@@ -7851,7 +7982,7 @@
       "action": "conducted diplomatic engagement",
       "geopolitical_relevance": 0.95,
       "strategic_relevance": 0.0,
-      "score": 0.14379715684395944
+      "score": 0.14363460206560344
     },
     {
       "id": "evt-70d408516cdb666d",
@@ -7877,7 +8008,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 0.15,
       "strategic_relevance": 0.0,
-      "score": 0.02270444988705012
+      "score": 0.022678783755645585
     },
     {
       "id": "evt-d232f2f0d19e5805",
@@ -7901,7 +8032,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 0.83,
       "strategic_relevance": 0.0,
-      "score": 0.1251340454339692
+      "score": 0.12499258823599232
     },
     {
       "id": "evt-ac76087b7fb20895",
@@ -7921,7 +8052,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 0.15,
       "strategic_relevance": 0.0,
-      "score": 0.022614344575079486
+      "score": 0.022588780298302497
     },
     {
       "id": "evt-7cc18b441a6620ab",
@@ -7949,7 +8080,7 @@
       "action": "conducted diplomatic engagement",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.15058420245971643
+      "score": 0.15041397526894407
     },
     {
       "id": "evt-5e42da8c2a4212ad",
@@ -7973,7 +8104,7 @@
       "action": "imposed or expanded sanctions",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.15055682164782624
+      "score": 0.15038662536009584
     },
     {
       "id": "evt-6b403c4b16852266",
@@ -8002,7 +8133,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.15011941162469128
+      "score": 0.149949709815597
     },
     {
       "id": "evt-a9a7f90115ab6bf5",
@@ -8026,7 +8157,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.1498683154948047
+      "score": 0.1496988975173783
     },
     {
       "id": "evt-733d88bcb130c2f8",
@@ -8050,7 +8181,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.1498683154599373
+      "score": 0.1496988974857529
     },
     {
       "id": "evt-1168eb75ec6b0c10",
@@ -8074,7 +8205,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.14984306842523193
+      "score": 0.1496736789870434
     },
     {
       "id": "evt-18c032192b7f582a",
@@ -8098,7 +8229,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.14984306838155484
+      "score": 0.14967367894701797
     },
     {
       "id": "evt-910df91867564647",
@@ -8124,7 +8255,7 @@
       "action": "conducted diplomatic engagement",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.14924640340759007
+      "score": 0.14907768840814553
     },
     {
       "id": "evt-a3049c3610ab901a",
@@ -8152,7 +8283,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.14889838460106236
+      "score": 0.14873006303956232
     },
     {
       "id": "evt-9d0cd02bc6e0a712",
@@ -8180,7 +8311,7 @@
       "action": "conducted or reported cyber activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.14889838454890067
+      "score": 0.14873006298507319
     },
     {
       "id": "evt-469f7fbe627bf43f",
@@ -8200,7 +8331,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 0.83,
       "strategic_relevance": 0.0,
-      "score": 0.1233865334097328
+      "score": 0.1232470516103485
     },
     {
       "id": "evt-81adebfadc9204b6",
@@ -8220,7 +8351,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 0.15,
       "strategic_relevance": 0.0,
-      "score": 0.022191693259852843
+      "score": 0.02216660675227917
     },
     {
       "id": "evt-7edf40f90e7cec49",
@@ -8244,7 +8375,7 @@
       "action": "took political action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.14781253909576336
+      "score": 0.14764544499301582
     },
     {
       "id": "evt-54be907e4bd2081d",
@@ -8264,7 +8395,7 @@
       "action": "conducted trade activity",
       "geopolitical_relevance": 0.83,
       "strategic_relevance": 0.0,
-      "score": 0.1221374073986011
+      "score": 0.12199933757070584
     },
     {
       "id": "evt-e5c549cb6875d929",
@@ -8284,7 +8415,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.14704139311091466
+      "score": 0.14687517066069952
     },
     {
       "id": "evt-fcbf24898be67781",
@@ -8310,7 +8441,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.14700915269028442
+      "score": 0.1468429666818252
     },
     {
       "id": "evt-a0a64dacbfe5f406",
@@ -8336,7 +8467,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.14652012863069686
+      "score": 0.14635449546291002
     },
     {
       "id": "evt-3994a2835fb8beb4",
@@ -8356,7 +8487,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.1463959728446503
+      "score": 0.14623047997906644
     },
     {
       "id": "evt-d42cc419b56d8dd7",
@@ -8376,7 +8507,7 @@
       "action": "took political action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.14639597267161217
+      "score": 0.14623047980192236
     },
     {
       "id": "evt-dbb18e62a0957926",
@@ -8400,7 +8531,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.14635056654595407
+      "score": 0.14618512498905822
     },
     {
       "id": "evt-6f1c46a1d2671ce6",
@@ -8431,7 +8562,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.145577317023126
+      "score": 0.1454127495846006
     },
     {
       "id": "evt-508fbb0260febb10",
@@ -8451,7 +8582,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.10177938809262191
+      "score": 0.10166433186181036
     },
     {
       "id": "evt-bd14c3345d8f8c4b",
@@ -8475,7 +8606,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.14420531048193208
+      "score": 0.14404229397976165
     },
     {
       "id": "evt-523ad39f3d82413b",
@@ -8499,7 +8630,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.14420531044414028
+      "score": 0.14404229394047177
     },
     {
       "id": "evt-f7d49e3258f82a39",
@@ -8523,7 +8654,7 @@
       "action": "took political action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.14420531040519155
+      "score": 0.14404229390233747
     },
     {
       "id": "evt-96552493085918a5",
@@ -8543,7 +8674,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.1441043100140153
+      "score": 0.14394140768023633
     },
     {
       "id": "evt-c7da5275540379ff",
@@ -8563,7 +8694,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 0.15,
       "strategic_relevance": 0.0,
-      "score": 0.021610907042482187
+      "score": 0.021586477051163927
     },
     {
       "id": "evt-b22c8aef269be7f8",
@@ -8587,7 +8718,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.14383057824744816
+      "score": 0.1436679853587792
     },
     {
       "id": "evt-b48881675a1e0a0b",
@@ -8613,7 +8744,7 @@
       "action": "conducted diplomatic engagement",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.14346334197877258
+      "score": 0.143301164214107
     },
     {
       "id": "evt-c16952a347dc9981",
@@ -8633,7 +8764,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.14319121078969516
+      "score": 0.14302934064776268
     },
     {
       "id": "evt-d8b1472b37accccb",
@@ -8659,7 +8790,7 @@
       "action": "conducted diplomatic engagement",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.14278627276020378
+      "score": 0.14262486036761862
     },
     {
       "id": "evt-0fa9816c5daa0a13",
@@ -8683,7 +8814,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.1380135759255788
+      "score": 0.13785755875267214
     },
     {
       "id": "evt-88d4e3bc5ce86344",
@@ -8707,7 +8838,7 @@
       "action": "conducted trade activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.13780668095191956
+      "score": 0.13765089765713545
     },
     {
       "id": "evt-9d314684e5207a22",
@@ -8731,7 +8862,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.13780668092280648
+      "score": 0.13765089762658292
     },
     {
       "id": "evt-44a9f4de3e46d7d8",
@@ -8755,7 +8886,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.09608698444928157
+      "score": 0.09597836308383272
     },
     {
       "id": "evt-4b40d43ae3471f30",
@@ -8779,7 +8910,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.1372065656389326
+      "score": 0.1370514607228143
     },
     {
       "id": "evt-2607e84b277d1c2e",
@@ -8805,7 +8936,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.1355497544477908
+      "score": 0.1353965224213087
     },
     {
       "id": "evt-db1f60c592674c1a",
@@ -8831,7 +8962,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.13554975441117986
+      "score": 0.1353965223865495
     },
     {
       "id": "evt-f9a1fc6694552317",
@@ -8858,7 +8989,7 @@
       "action": "conducted diplomatic engagement",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.13517148564510958
+      "score": 0.13501868126527355
     },
     {
       "id": "evt-95fb2ca6213b73a8",
@@ -8889,7 +9020,7 @@
       "action": "conducted diplomatic engagement",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.1332788149216436
+      "score": 0.13312815010861692
     },
     {
       "id": "evt-813d057bf49ad9fa",
@@ -8920,7 +9051,7 @@
       "action": "took political action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.13327881487531013
+      "score": 0.13312815006019976
     },
     {
       "id": "evt-d12b69be7ed678e1",
@@ -8947,7 +9078,7 @@
       "action": "conducted diplomatic engagement",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.131246526477615
+      "score": 0.1310981589827744
     },
     {
       "id": "evt-e2e2385bf417b12c",
@@ -8971,7 +9102,7 @@
       "action": "conducted diplomatic engagement",
       "geopolitical_relevance": 0.95,
       "strategic_relevance": 0.0,
-      "score": 0.12428206827953121
+      "score": 0.12414157371876788
     },
     {
       "id": "evt-497ad5bf30bba95d",
@@ -8997,7 +9128,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.12876914384198598
+      "score": 0.12862357686075251
     },
     {
       "id": "evt-ff590da3cd2cd7bf",
@@ -9023,7 +9154,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.1287691437682947
+      "score": 0.1286235767799213
     },
     {
       "id": "evt-ea2bee54167b18b2",
@@ -9043,7 +9174,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.08975234947391816
+      "score": 0.08965088897917978
     },
     {
       "id": "evt-3a1fb1c7f0767e60",
@@ -9069,7 +9200,7 @@
       "action": "conducted trade activity",
       "geopolitical_relevance": 0.83,
       "strategic_relevance": 0.0,
-      "score": 0.10625883505265224
+      "score": 0.10613871478243665
     },
     {
       "id": "evt-47fa3c1fddf2fea7",
@@ -9089,7 +9220,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.08939591770451663
+      "score": 0.08929486010993999
     },
     {
       "id": "evt-5cc23bf0c598a490",
@@ -9115,7 +9246,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.12705612328199897
+      "score": 0.12691249271025395
     },
     {
       "id": "evt-dafa1dd0d9126711",
@@ -9141,7 +9272,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.12705612325074003
+      "score": 0.12691249267461838
     },
     {
       "id": "evt-1ad0d085595def8d",
@@ -9161,7 +9292,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 0.83,
       "strategic_relevance": 0.0,
-      "score": 0.10528300706495822
+      "score": 0.10516398990853038
     },
     {
       "id": "evt-d4e635d2a955e02e",
@@ -9185,7 +9316,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.12643416981614347
+      "score": 0.12629124235387212
     },
     {
       "id": "evt-3915b66dbdc5fb5f",
@@ -9209,7 +9340,7 @@
       "action": "took political action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.12643416971707797
+      "score": 0.12629124224985275
     },
     {
       "id": "evt-3e0de983a1023163",
@@ -9236,7 +9367,7 @@
       "action": "took economic policy action",
       "geopolitical_relevance": 0.72,
       "strategic_relevance": 0.0,
-      "score": 0.08924004029585236
+      "score": 0.08913915886518164
     },
     {
       "id": "evt-a50a38467357403b",
@@ -9263,7 +9394,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.08676115025724031
+      "score": 0.08666307108787176
     },
     {
       "id": "evt-8bcc97018f6bf92a",
@@ -9293,7 +9424,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 0.15,
       "strategic_relevance": 0.0,
-      "score": 0.018591575571237116
+      "score": 0.018570558721068758
     },
     {
       "id": "evt-3a16c1779c7d76e2",
@@ -9317,7 +9448,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 0.83,
       "strategic_relevance": 0.0,
-      "score": 0.1028717339876348
+      "score": 0.10275544262090018
     },
     {
       "id": "evt-a86caffa24793a80",
@@ -9341,7 +9472,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.12325337037959357
+      "score": 0.12311403863609796
     },
     {
       "id": "evt-f86bb2e228e83509",
@@ -9370,7 +9501,7 @@
       "action": "imposed or expanded sanctions",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.12191720785303846
+      "score": 0.12177938652628406
     },
     {
       "id": "evt-bcdfcd38ce7c9039",
@@ -9399,7 +9530,7 @@
       "action": "took political action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.12191720778098616
+      "score": 0.12177938645170794
     },
     {
       "id": "evt-69e5dde130fd7832",
@@ -9419,7 +9550,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.12191688102790765
+      "score": 0.1217790600657279
     },
     {
       "id": "evt-2f6d1e0cb15742f5",
@@ -9439,7 +9570,7 @@
       "action": "conducted diplomatic engagement",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.12191688092325281
+      "score": 0.12177905996054005
     },
     {
       "id": "evt-8543a4262fe52181",
@@ -9459,7 +9590,7 @@
       "action": "took political action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.12191688083457333
+      "score": 0.12177905986902987
     },
     {
       "id": "evt-8b5bf31c290b9bbc",
@@ -9485,7 +9616,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.12178849246193296
+      "score": 0.1216508165735216
     },
     {
       "id": "evt-15999cd8b42dc9f8",
@@ -9511,7 +9642,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.12178849243522688
+      "score": 0.12165081655432795
     },
     {
       "id": "evt-d7bde8cda7d7ffa5",
@@ -9531,7 +9662,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.08469023920964384
+      "score": 0.08459450106860804
     },
     {
       "id": "evt-d7a8ba5f8d0f15f7",
@@ -9555,7 +9686,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.11513484687204711
+      "score": 0.11500469250702093
     },
     {
       "id": "evt-45130f9680e579af",
@@ -9581,7 +9712,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.08044409727242667
+      "score": 0.08035315911593742
     },
     {
       "id": "evt-ebfe71414914e1df",
@@ -9601,7 +9732,7 @@
       "action": "imposed or expanded sanctions",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.11366914844962323
+      "score": 0.11354065094191433
     },
     {
       "id": "evt-e9b66ac60cc3034a",
@@ -9621,7 +9752,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 0.98,
       "strategic_relevance": 0.0,
-      "score": 0.11139576545084151
+      "score": 0.1112698378906425
     },
     {
       "id": "evt-bc743614a69d18fb",
@@ -9641,7 +9772,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.9,
       "strategic_relevance": 0.0,
-      "score": 0.10049931211834588
+      "score": 0.10038570244633307
     },
     {
       "id": "evt-da5dd76893039b66",
@@ -9665,7 +9796,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.0771729127803343
+      "score": 0.0770856724735423
     },
     {
       "id": "evt-5f21305af55479a3",
@@ -9685,7 +9816,7 @@
       "action": "took political action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.10978629445059017
+      "score": 0.10966218625051899
     },
     {
       "id": "evt-7964b2d2a96db5ff",
@@ -9711,7 +9842,7 @@
       "action": "took economic policy action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.10255181270888486
+      "score": 0.10243588269451187
     },
     {
       "id": "evt-d9d44af32200e507",
@@ -9735,7 +9866,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.07177206399658072
+      "score": 0.0716909290398913
     },
     {
       "id": "evt-a501ea8eeeab35d2",
@@ -9755,7 +9886,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.10202279601017439
+      "score": 0.10190746399657039
     },
     {
       "id": "evt-f73c2ebcbf011efa",
@@ -9775,7 +9906,7 @@
       "action": "conducted trade activity",
       "geopolitical_relevance": 0.83,
       "strategic_relevance": 0.0,
-      "score": 0.08371749298612396
+      "score": 0.08362285426558447
     },
     {
       "id": "evt-d55c89645d3ec303",
@@ -9804,7 +9935,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.09988205411120422
+      "score": 0.09976914212837264
     },
     {
       "id": "evt-7705f5b194711b11",
@@ -9833,7 +9964,7 @@
       "action": "took political action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.0998820540788848
+      "score": 0.09976914209795737
     },
     {
       "id": "evt-80ac49bd9350db99",
@@ -9857,7 +9988,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.09914358631625804
+      "score": 0.09903150916183108
     },
     {
       "id": "evt-d521b727472c05e1",
@@ -9877,7 +10008,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.06892720752076094
+      "score": 0.06884928857770903
     },
     {
       "id": "evt-8a9010f1d19e3903",
@@ -9901,7 +10032,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.0960598116507362
+      "score": 0.0959512205344524
     },
     {
       "id": "evt-6cc46c56eb6d56cc",
@@ -9927,7 +10058,7 @@
       "action": "conducted trade activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.09583068964600742
+      "score": 0.09572235751556081
     },
     {
       "id": "evt-6226b51da4ef051e",
@@ -9953,7 +10084,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.09583068958834702
+      "score": 0.09572235745745367
     },
     {
       "id": "evt-ec90e38ee1b492f5",
@@ -9973,7 +10104,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.09472415298419162
+      "score": 0.0946170717398699
     },
     {
       "id": "evt-9a8a788e6758362e",
@@ -9993,7 +10124,7 @@
       "action": "took political action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.09472415290667897
+      "score": 0.09461707166244489
     },
     {
       "id": "evt-ae8d5efae74258ad",
@@ -10017,7 +10148,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.06478084672131812
+      "score": 0.06470761495760322
     },
     {
       "id": "evt-8e9eb37e81e18263",
@@ -10041,7 +10172,7 @@
       "action": "took political action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.09036750350542977
+      "score": 0.09026534719617395
     },
     {
       "id": "evt-0e6ec18ef4e51f95",
@@ -10065,7 +10196,7 @@
       "action": "took technology-related action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.0900030934149792
+      "score": 0.08990134905963035
     },
     {
       "id": "evt-7fba10cedf5d8ac4",
@@ -10091,7 +10222,7 @@
       "action": "took political action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.08898097831755461
+      "score": 0.08888038941961533
     },
     {
       "id": "evt-6c197c67a79a7804",
@@ -10115,7 +10246,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.0864772264646857
+      "score": 0.08637946794867979
     },
     {
       "id": "evt-f43c3850afa71ecf",
@@ -10139,7 +10270,7 @@
       "action": "conducted or reported cyber activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.08511032373139345
+      "score": 0.08501411043088156
     },
     {
       "id": "evt-f96e1b18a1fb8eef",
@@ -10159,7 +10290,7 @@
       "action": "took technology-related action",
       "geopolitical_relevance": 0.07,
       "strategic_relevance": 0.0,
-      "score": 0.00585394772898376
+      "score": 0.005847330106678641
     },
     {
       "id": "evt-53f2602c5d6cd18a",
@@ -10183,7 +10314,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.08218455480744402
+      "score": 0.08209164888192483
     },
     {
       "id": "evt-565a2ac7d9092b96",
@@ -10212,7 +10343,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.08065978362975827
+      "score": 0.08056860137601256
     },
     {
       "id": "evt-76b0ad1d911585fa",
@@ -10232,7 +10363,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 0.8,
       "strategic_relevance": 0.0,
-      "score": 0.0631571178560148
+      "score": 0.0630857215653976
     },
     {
       "id": "evt-f4cc0740e0efacca",
@@ -10252,7 +10383,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.05526247807775726
+      "score": 0.05520000632366712
     },
     {
       "id": "evt-f112d950a9e1a936",
@@ -10272,7 +10403,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.05496167699887772
+      "score": 0.05489954528662892
     },
     {
       "id": "evt-9e819723e544bb15",
@@ -10296,7 +10427,7 @@
       "action": "took political action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.07693908914395779
+      "score": 0.07685211294088408
     },
     {
       "id": "evt-9f1d9c270140480f",
@@ -10323,7 +10454,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.07583643408860843
+      "score": 0.07575070438821953
     },
     {
       "id": "evt-8df2145b894a046d",
@@ -10347,7 +10478,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 0.85,
       "strategic_relevance": 0.0,
-      "score": 0.06397292131076675
+      "score": 0.06390060278715423
     },
     {
       "id": "evt-b1d375cae3dcb0df",
@@ -10371,7 +10502,7 @@
       "action": "took technology-related action",
       "geopolitical_relevance": 0.77,
       "strategic_relevance": 0.0,
-      "score": 0.057951940462611304
+      "score": 0.05788642838876576
     },
     {
       "id": "evt-506b9e7fcccede38",
@@ -10391,7 +10522,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 0.83,
       "strategic_relevance": 0.0,
-      "score": 0.06204298220494548
+      "score": 0.0619728453929159
     },
     {
       "id": "evt-8972ebe90f0659a3",
@@ -10418,7 +10549,7 @@
       "action": "took political action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.07382938414395611
+      "score": 0.07374592332917997
     },
     {
       "id": "evt-2e2ef27049f2c1d2",
@@ -10444,7 +10575,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.06778988794068673
+      "score": 0.0677132544834553
     },
     {
       "id": "evt-0385c3d6d8efd37a",
@@ -10464,7 +10595,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.06699907002443413
+      "score": 0.06692333055369919
     },
     {
       "id": "evt-0689efeb89a93397",
@@ -10484,7 +10615,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.06699907000615905
+      "score": 0.06692333053472889
     },
     {
       "id": "evt-d4b993323a88bd6d",
@@ -10511,7 +10642,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.06431639677956241
+      "score": 0.06424368995547279
     },
     {
       "id": "evt-a63015c9e5260d5e",
@@ -10535,7 +10666,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.06430143491274296
+      "score": 0.06422874500993529
     },
     {
       "id": "evt-ff53f7c0825992f9",
@@ -10562,7 +10693,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.06282169832599022
+      "score": 0.06275068115002758
     },
     {
       "id": "evt-73b3051b7465c0b6",
@@ -10582,7 +10713,7 @@
       "action": "conducted diplomatic engagement",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.062055805196290684
+      "score": 0.061985653829267254
     },
     {
       "id": "evt-944f2452fca42cde",
@@ -10606,7 +10737,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.043407130241128244
+      "score": 0.04335806038479167
     },
     {
       "id": "evt-e3ce181ea87420f4",
@@ -10630,7 +10761,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.75,
       "strategic_relevance": 0.0,
-      "score": 0.045717222844390976
+      "score": 0.045665541533258525
     },
     {
       "id": "evt-8c0ae5608db8855e",
@@ -10650,7 +10781,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.04240028585954717
+      "score": 0.04235235419174062
     },
     {
       "id": "evt-463e9693c185a178",
@@ -10670,7 +10801,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.05939513138055324
+      "score": 0.059327987789735505
     },
     {
       "id": "evt-56839fcc754c3dac",
@@ -10694,7 +10825,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.05811775294185785
+      "score": 0.05805205337708023
     },
     {
       "id": "evt-f3e187b0e23a8186",
@@ -10720,7 +10851,7 @@
       "action": "took political action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.05723170423243308
+      "score": 0.05716700631288473
     },
     {
       "id": "evt-efcd73b26216e4a4",
@@ -10746,7 +10877,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.05347680618856975
+      "score": 0.053416353017360474
     },
     {
       "id": "evt-d52bd3b0ba91cc3d",
@@ -10770,7 +10901,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.05325318359831996
+      "score": 0.05319298321860484
     },
     {
       "id": "evt-0330944a596b8055",
@@ -10794,7 +10925,7 @@
       "action": "took political action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.053253183582085376
+      "score": 0.053192983203242096
     },
     {
       "id": "evt-5a71842392e38807",
@@ -10821,7 +10952,7 @@
       "action": "imposed or expanded sanctions",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.05299137012083696
+      "score": 0.052931465710581715
     },
     {
       "id": "evt-fe31d787eca779db",
@@ -10850,7 +10981,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.05218194168398164
+      "score": 0.052122952285637895
     },
     {
       "id": "evt-9bd590dafd60b93c",
@@ -10874,7 +11005,7 @@
       "action": "took economic policy action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.05083271928556874
+      "score": 0.05077525511125691
     },
     {
       "id": "evt-70388a3a77def39c",
@@ -10898,7 +11029,7 @@
       "action": "took political action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.050832719265722116
+      "score": 0.05077525509116118
     },
     {
       "id": "evt-10c8798ffa709577",
@@ -10918,7 +11049,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.04901209419282601
+      "score": 0.04895668814420301
     },
     {
       "id": "evt-ea17d5cd06b3aeaa",
@@ -10938,7 +11069,7 @@
       "action": "conducted diplomatic engagement",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.04153540026357111
+      "score": 0.041488446251506196
     },
     {
       "id": "evt-cbb7b2dc5ce89417",
@@ -10958,7 +11089,7 @@
       "action": "took energy-related action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.04153540025057557
+      "score": 0.04148844623675019
     },
     {
       "id": "evt-e205e6fbfabcee27",
@@ -10986,7 +11117,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 0.9,
       "strategic_relevance": 0.0,
-      "score": 0.03655434334719671
+      "score": 0.036513020204764955
     },
     {
       "id": "evt-a4e7c6d6d545c5cb",
@@ -11014,7 +11145,7 @@
       "action": "conducted trade activity",
       "geopolitical_relevance": 0.83,
       "strategic_relevance": 0.0,
-      "score": 0.03371122774315863
+      "score": 0.033673118623828185
     },
     {
       "id": "evt-c2e11ca758156c3a",
@@ -11034,7 +11165,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.04043690185601001
+      "score": 0.040391189638668896
     },
     {
       "id": "evt-1e2c7990285357a5",
@@ -11062,7 +11193,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.03982541613716218
+      "score": 0.03978039517509882
     },
     {
       "id": "evt-fe46d315f642b3f2",
@@ -11088,7 +11219,7 @@
       "action": "conducted trade activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.039825416125553625
+      "score": 0.03978039516382254
     },
     {
       "id": "evt-f62addfbf8695ac9",
@@ -11112,7 +11243,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.03949335565271483
+      "score": 0.03944871006497894
     },
     {
       "id": "evt-62b7a37244eb4d61",
@@ -11138,7 +11269,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.039318007110712566
+      "score": 0.03927355974864414
     },
     {
       "id": "evt-919cacb922b32d0f",
@@ -11162,7 +11293,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.036941643590544686
+      "score": 0.03689988260130448
     },
     {
       "id": "evt-32279ee238eee812",
@@ -11193,7 +11324,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.014794623871316989
+      "score": 0.014777899163298974
     },
     {
       "id": "evt-11738c595d5e84b7",
@@ -11222,7 +11353,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.014792447923464076
+      "score": 0.014775725670088575
     },
     {
       "id": "evt-732c2342aa78ebe1",
@@ -11251,7 +11382,7 @@
       "action": "conducted diplomatic engagement",
       "geopolitical_relevance": 0.95,
       "strategic_relevance": 0.0,
-      "score": 0.02006891638142844
+      "score": 0.020046229293618163
     },
     {
       "id": "evt-423aa700809b498f",
@@ -11280,7 +11411,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.9,
       "strategic_relevance": 0.0,
-      "score": 0.019012657610427575
+      "score": 0.018991164579937173
     },
     {
       "id": "evt-ad79178c6a22293c",
@@ -11309,7 +11440,7 @@
       "action": "conducted diplomatic engagement",
       "geopolitical_relevance": 0.95,
       "strategic_relevance": 0.0,
-      "score": 0.020066501306237956
+      "score": 0.020043816993274274
     },
     {
       "id": "evt-5338eba3197d0ec5",
@@ -11338,7 +11469,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.9,
       "strategic_relevance": 0.0,
-      "score": 0.019010369644510177
+      "score": 0.018988879241196795
     },
     {
       "id": "evt-9e016d6f0ddf7744",
@@ -11369,7 +11500,7 @@
       "action": "imposed or expanded sanctions",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.02111873562561872
+      "score": 0.02109486180083325
     },
     {
       "id": "evt-8aa6caf8f78de01e",
@@ -11400,7 +11531,7 @@
       "action": "imposed or expanded sanctions",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.02111585532404924
+      "score": 0.021091984844269846
     },
     {
       "id": "evt-85a956caddcd1524",
@@ -11431,7 +11562,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.0193437094707083
+      "score": 0.019321842343760682
     },
     {
       "id": "evt-1afdebda3207240b",
@@ -11460,7 +11591,7 @@
       "action": "took political action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.017449151632201673
+      "score": 0.0174294262041193
     },
     {
       "id": "evt-192284da8d67c813",
@@ -11488,7 +11619,7 @@
       "action": "imposed or expanded sanctions",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.009954702413210071
+      "score": 0.009943449096925688
     },
     {
       "id": "evt-6a5d8893f13c1e31",
@@ -11512,7 +11643,7 @@
       "action": "imposed or expanded sanctions",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.009845758914653722
+      "score": 0.009834628754298039
     },
     {
       "id": "evt-c08d7cc26ef69792",
@@ -11538,7 +11669,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.008013104024160033
+      "score": 0.008004045592655799
     },
     {
       "id": "evt-87063b88c92dd079",
@@ -11564,7 +11695,7 @@
       "action": "took technology-related action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.00801310402238147
+      "score": 0.008004045590793622
     },
     {
       "id": "evt-84f5e9b5fecddc13",
@@ -11584,7 +11715,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.002406968125568186
+      "score": 0.0024042471626271322
     },
     {
       "id": "evt-204cad83414827b6",
@@ -11608,7 +11739,7 @@
       "action": "took political action",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.002533870293793941
+      "score": 0.0025310058740100885
     },
     {
       "id": "evt-05b02ede57bf80f3",
@@ -11628,7 +11759,7 @@
       "action": "conducted diplomatic engagement",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.00228855475463732
+      "score": 0.00228596765240238
     },
     {
       "id": "evt-82306c3ad0839ef1",
@@ -11654,7 +11785,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 0.001226829269708912
+      "score": 0.0012254423975829052
     },
     {
       "id": "evt-dfb1a5c57a27d0d3",
@@ -11678,7 +11809,7 @@
       "action": "took political action",
       "geopolitical_relevance": 0.7000000000000001,
       "strategic_relevance": 0.0,
-      "score": 0.0002197480503190809
+      "score": 0.0002194996355892569
     },
     {
       "id": "evt-8f812dad26f4beb3",
@@ -11698,7 +11829,7 @@
       "action": "took technology-related action",
       "geopolitical_relevance": 0.07,
       "strategic_relevance": 0.0,
-      "score": 4.732102708760606e-06
+      "score": 4.726753291223012e-06
     },
     {
       "id": "evt-7f730db61f4de4a3",
@@ -11724,7 +11855,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 3.5743275201713495e-05
+      "score": 3.570286911297937e-05
     },
     {
       "id": "evt-b7023a0257b13240",
@@ -11748,7 +11879,7 @@
       "action": "conducted or reported military activity",
       "geopolitical_relevance": 1.0,
       "strategic_relevance": 0.0,
-      "score": 3.153660890782645e-05
+      "score": 3.150095825699112e-05
     }
   ],
   "relationships": [
@@ -11757,7 +11888,7 @@
       "relationship_type": "mentioned_with",
       "target_entity_id": "ent-f35fdf88910c6585",
       "confidence": 0.45,
-      "weight": 0.430537,
+      "weight": 0.432799,
       "first_seen": "2026-09-07T12:51:00+00:00",
       "last_seen": "2026-08-24T15:14:14+00:00",
       "evidence_ids": [
@@ -11774,6 +11905,7 @@
         "evd-bc2f512f66877b2e",
         "evd-29db550eb276a311",
         "evd-5c42aa1cc7e0426f",
+        "evd-dce4a57a64653918",
         "evd-c184c86a3b7a6b97",
         "evd-d59cad5cae61c41a",
         "evd-b7c3a54fab5c6b7d",
@@ -11803,14 +11935,14 @@
       ],
       "event_ids": [],
       "geopolitical_relevance": 1.0,
-      "strength": 0.4305367476397066
+      "strength": 0.4327993087432077
     },
     {
       "source_entity_id": "ent-a712896bf30165d4",
       "relationship_type": "mentioned_with",
       "target_entity_id": "ent-f35fdf88910c6585",
       "confidence": 0.45,
-      "weight": 0.013024,
+      "weight": 0.013023,
       "first_seen": "2026-09-07T12:41:06+00:00",
       "last_seen": "2026-09-06T16:37:21+00:00",
       "evidence_ids": [
@@ -11820,7 +11952,7 @@
       ],
       "event_ids": [],
       "geopolitical_relevance": 0.07,
-      "strength": 0.013023727951402973
+      "strength": 0.01302339546351612
     },
     {
       "source_entity_id": "ent-a712896bf30165d4",
@@ -11917,7 +12049,7 @@
       "relationship_type": "mentioned_with",
       "target_entity_id": "ent-1bc691128a51c96f",
       "confidence": 0.45,
-      "weight": 0.45135,
+      "weight": 0.451191,
       "first_seen": "2026-09-07T12:00:05+00:00",
       "last_seen": "2026-09-06T06:46:35+00:00",
       "evidence_ids": [
@@ -11939,14 +12071,14 @@
       ],
       "event_ids": [],
       "geopolitical_relevance": 1.0,
-      "strength": 0.4513497297412298
+      "strength": 0.45119126351790256
     },
     {
       "source_entity_id": "ent-0f005c7ca9aa1003",
       "relationship_type": "mentioned_with",
       "target_entity_id": "ent-a8df80c99563bc0a",
       "confidence": 0.45,
-      "weight": 0.031756,
+      "weight": 0.031754,
       "first_seen": "2026-09-07T11:26:27+00:00",
       "last_seen": "2026-09-05T11:43:20+00:00",
       "evidence_ids": [
@@ -11956,14 +12088,14 @@
       ],
       "event_ids": [],
       "geopolitical_relevance": 0.15,
-      "strength": 0.03175646190717794
+      "strength": 0.03175381207903502
     },
     {
       "source_entity_id": "ent-6409155421a757f6",
       "relationship_type": "mentioned_with",
       "target_entity_id": "ent-f35fdf88910c6585",
       "confidence": 0.45,
-      "weight": 0.445273,
+      "weight": 0.445124,
       "first_seen": "2026-09-07T11:07:18+00:00",
       "last_seen": "2026-09-05T11:43:20+00:00",
       "evidence_ids": [
@@ -11977,7 +12109,7 @@
       ],
       "event_ids": [],
       "geopolitical_relevance": 1.0,
-      "strength": 0.4452733424239499
+      "strength": 0.4451235438993658
     },
     {
       "source_entity_id": "ent-6409155421a757f6",
@@ -12074,7 +12206,7 @@
       "relationship_type": "negotiates_with",
       "target_entity_id": "ent-f35fdf88910c6585",
       "confidence": 0.76,
-      "weight": 0.645271,
+      "weight": 0.645052,
       "first_seen": "2026-09-07T10:43:43+00:00",
       "last_seen": "2026-09-06T18:47:59+00:00",
       "evidence_ids": [
@@ -12087,14 +12219,14 @@
         "evt-bbd739d3b9bf59ff"
       ],
       "geopolitical_relevance": 1.0,
-      "strength": 0.6452706719619616
+      "strength": 0.6450516286486315
     },
     {
       "source_entity_id": "ent-6409155421a757f6",
       "relationship_type": "mentioned_with",
       "target_entity_id": "ent-a8df80c99563bc0a",
       "confidence": 0.45,
-      "weight": 0.441922,
+      "weight": 0.441776,
       "first_seen": "2026-09-07T10:42:26+00:00",
       "last_seen": "2026-09-05T11:43:20+00:00",
       "evidence_ids": [
@@ -12108,14 +12240,14 @@
       ],
       "event_ids": [],
       "geopolitical_relevance": 1.0,
-      "strength": 0.44192240759095563
+      "strength": 0.4417763971385758
     },
     {
       "source_entity_id": "ent-1bc691128a51c96f",
       "relationship_type": "mentioned_with",
       "target_entity_id": "ent-6409155421a757f6",
       "confidence": 0.45,
-      "weight": 0.536985,
+      "weight": 0.536782,
       "first_seen": "2026-09-07T10:21:29+00:00",
       "last_seen": "2026-09-06T10:41:24+00:00",
       "evidence_ids": [
@@ -12128,7 +12260,7 @@
       ],
       "event_ids": [],
       "geopolitical_relevance": 1.0,
-      "strength": 0.5369851779967784
+      "strength": 0.5367816655443673
     },
     {
       "source_entity_id": "ent-6409155421a757f6",
@@ -12195,7 +12327,7 @@
       "relationship_type": "mentioned_with",
       "target_entity_id": "ent-6409155421a757f6",
       "confidence": 0.45,
-      "weight": 0.444223,
+      "weight": 0.444107,
       "first_seen": "2026-09-07T09:22:43+00:00",
       "last_seen": "2026-08-25T13:46:28+00:00",
       "evidence_ids": [
@@ -12227,7 +12359,7 @@
       ],
       "event_ids": [],
       "geopolitical_relevance": 1.0,
-      "strength": 0.44422320467866744
+      "strength": 0.4441072923961504
     },
     {
       "source_entity_id": "ent-93ca5e0c74b0f059",
@@ -12341,7 +12473,7 @@
       "relationship_type": "mentioned_with",
       "target_entity_id": "ent-6409155421a757f6",
       "confidence": 0.45,
-      "weight": 0.368522,
+      "weight": 0.368456,
       "first_seen": "2026-09-07T08:43:28+00:00",
       "last_seen": "2026-08-28T19:55:08+00:00",
       "evidence_ids": [
@@ -12353,7 +12485,7 @@
       ],
       "event_ids": [],
       "geopolitical_relevance": 0.95,
-      "strength": 0.3685216571583213
+      "strength": 0.36845598124590023
     },
     {
       "source_entity_id": "ent-1fa3e6acf2dd44b8",
@@ -12375,7 +12507,7 @@
       "relationship_type": "mentioned_with",
       "target_entity_id": "ent-54e810f517c042d3",
       "confidence": 0.45,
-      "weight": 0.322613,
+      "weight": 0.322551,
       "first_seen": "2026-09-07T08:31:26+00:00",
       "last_seen": "2026-07-29T05:01:12+00:00",
       "evidence_ids": [
@@ -12390,7 +12522,7 @@
       ],
       "event_ids": [],
       "geopolitical_relevance": 1.0,
-      "strength": 0.32261260434788397
+      "strength": 0.32255088149345695
     },
     {
       "source_entity_id": "ent-a3d17002b4d86e50",
@@ -12442,7 +12574,7 @@
       "relationship_type": "military_action_against",
       "target_entity_id": "ent-0f005c7ca9aa1003",
       "confidence": 0.76,
-      "weight": 0.629507,
+      "weight": 0.629305,
       "first_seen": "2026-09-07T01:13:12+00:00",
       "last_seen": "2026-09-06T10:41:24+00:00",
       "evidence_ids": [
@@ -12458,7 +12590,7 @@
         "evt-120e36369ac85189"
       ],
       "geopolitical_relevance": 1.0,
-      "strength": 0.6295074740297586
+      "strength": 0.6293045015898026
     },
     {
       "source_entity_id": "ent-f35fdf88910c6585",
@@ -12638,7 +12770,7 @@
       "relationship_type": "military_action_against",
       "target_entity_id": "ent-1bc691128a51c96f",
       "confidence": 0.76,
-      "weight": 0.61322,
+      "weight": 0.613034,
       "first_seen": "2026-09-06T16:44:45+00:00",
       "last_seen": "2026-09-06T06:12:43+00:00",
       "evidence_ids": [
@@ -12652,7 +12784,7 @@
         "evt-f24dddfceb23267e"
       ],
       "geopolitical_relevance": 1.0,
-      "strength": 0.6132199619002062
+      "strength": 0.6130340027884027
     },
     {
       "source_entity_id": "ent-1bc691128a51c96f",
@@ -12674,7 +12806,7 @@
       "relationship_type": "mentioned_with",
       "target_entity_id": "ent-f35fdf88910c6585",
       "confidence": 0.45,
-      "weight": 0.308723,
+      "weight": 0.308665,
       "first_seen": "2026-09-06T14:21:52+00:00",
       "last_seen": "2026-09-04T09:00:04+00:00",
       "evidence_ids": [
@@ -12684,7 +12816,7 @@
       ],
       "event_ids": [],
       "geopolitical_relevance": 1.0,
-      "strength": 0.3087226486558898
+      "strength": 0.30866526139030476
     },
     {
       "source_entity_id": "ent-0f005c7ca9aa1003",
@@ -12826,7 +12958,7 @@
       "relationship_type": "mentioned_with",
       "target_entity_id": "ent-a8df80c99563bc0a",
       "confidence": 0.45,
-      "weight": 0.523789,
+      "weight": 0.523602,
       "first_seen": "2026-09-06T10:49:25+00:00",
       "last_seen": "2026-09-06T09:51:04+00:00",
       "evidence_ids": [
@@ -12835,7 +12967,7 @@
       ],
       "event_ids": [],
       "geopolitical_relevance": 1.0,
-      "strength": 0.5237891585734408
+      "strength": 0.5236023122543623
     },
     {
       "source_entity_id": "ent-6409155421a757f6",
@@ -13071,7 +13203,7 @@
       "relationship_type": "mentioned_with",
       "target_entity_id": "ent-d14caf7604e4c7e7",
       "confidence": 0.45,
-      "weight": 0.304885,
+      "weight": 0.304846,
       "first_seen": "2026-09-06T06:00:58+00:00",
       "last_seen": "2026-09-02T13:08:13+00:00",
       "evidence_ids": [
@@ -13080,7 +13212,7 @@
       ],
       "event_ids": [],
       "geopolitical_relevance": 1.0,
-      "strength": 0.3048847272854603
+      "strength": 0.3048456679630953
     },
     {
       "source_entity_id": "ent-0f005c7ca9aa1003",
@@ -13239,7 +13371,7 @@
       "relationship_type": "mentioned_with",
       "target_entity_id": "ent-f35fdf88910c6585",
       "confidence": 0.45,
-      "weight": 0.444361,
+      "weight": 0.444254,
       "first_seen": "2026-09-05T17:40:08+00:00",
       "last_seen": "2026-09-01T11:31:43+00:00",
       "evidence_ids": [
@@ -13248,7 +13380,7 @@
       ],
       "event_ids": [],
       "geopolitical_relevance": 1.0,
-      "strength": 0.44436111374933707
+      "strength": 0.44425356507213754
     },
     {
       "source_entity_id": "ent-6409155421a757f6",
@@ -13270,7 +13402,7 @@
       "relationship_type": "mentioned_with",
       "target_entity_id": "ent-abb37c6fe8be337e",
       "confidence": 0.45,
-      "weight": 0.337387,
+      "weight": 0.337311,
       "first_seen": "2026-09-05T10:00:35+00:00",
       "last_seen": "2026-09-04T17:08:51+00:00",
       "evidence_ids": [
@@ -13279,7 +13411,7 @@
       ],
       "event_ids": [],
       "geopolitical_relevance": 1.0,
-      "strength": 0.3373872219197665
+      "strength": 0.33731142005413106
     },
     {
       "source_entity_id": "ent-1fa3e6acf2dd44b8",
@@ -13732,7 +13864,7 @@
       "relationship_type": "mentioned_with",
       "target_entity_id": "ent-27269893668dd31d",
       "confidence": 0.45,
-      "weight": 0.226611,
+      "weight": 0.226599,
       "first_seen": "2026-08-28T19:58:50+00:00",
       "last_seen": "2026-08-28T19:57:55+00:00",
       "evidence_ids": [
@@ -13741,14 +13873,14 @@
       ],
       "event_ids": [],
       "geopolitical_relevance": 0.7000000000000001,
-      "strength": 0.22661148360809003
+      "strength": 0.2265986065941129
     },
     {
       "source_entity_id": "ent-0f005c7ca9aa1003",
       "relationship_type": "mentioned_with",
       "target_entity_id": "ent-138f17a4982da241",
       "confidence": 0.45,
-      "weight": 0.332343,
+      "weight": 0.332322,
       "first_seen": "2026-08-28T19:58:50+00:00",
       "last_seen": "2026-08-28T19:55:08+00:00",
       "evidence_ids": [
@@ -13759,14 +13891,14 @@
       ],
       "event_ids": [],
       "geopolitical_relevance": 0.95,
-      "strength": 0.33234288023657554
+      "strength": 0.3323222890373011
     },
     {
       "source_entity_id": "ent-138f17a4982da241",
       "relationship_type": "mentioned_with",
       "target_entity_id": "ent-27269893668dd31d",
       "confidence": 0.45,
-      "weight": 0.226611,
+      "weight": 0.226599,
       "first_seen": "2026-08-28T19:58:50+00:00",
       "last_seen": "2026-08-28T19:57:55+00:00",
       "evidence_ids": [
@@ -13775,14 +13907,14 @@
       ],
       "event_ids": [],
       "geopolitical_relevance": 0.7000000000000001,
-      "strength": 0.22661148360720662
+      "strength": 0.2265986065931088
     },
     {
       "source_entity_id": "ent-6409155421a757f6",
       "relationship_type": "mentioned_with",
       "target_entity_id": "ent-afb155151d579029",
       "confidence": 0.45,
-      "weight": 0.386374,
+      "weight": 0.386348,
       "first_seen": "2026-08-28T19:53:59+00:00",
       "last_seen": "2026-08-28T19:53:08+00:00",
       "evidence_ids": [
@@ -13791,14 +13923,14 @@
       ],
       "event_ids": [],
       "geopolitical_relevance": 1.0,
-      "strength": 0.38637432627712215
+      "strength": 0.3863480669584678
     },
     {
       "source_entity_id": "ent-0f005c7ca9aa1003",
       "relationship_type": "mentioned_with",
       "target_entity_id": "ent-afb155151d579029",
       "confidence": 0.45,
-      "weight": 0.386374,
+      "weight": 0.386348,
       "first_seen": "2026-08-28T19:53:59+00:00",
       "last_seen": "2026-08-28T19:53:08+00:00",
       "evidence_ids": [
@@ -13807,7 +13939,7 @@
       ],
       "event_ids": [],
       "geopolitical_relevance": 1.0,
-      "strength": 0.38637432627646995
+      "strength": 0.3863480669577853
     },
     {
       "source_entity_id": "ent-3d9cf460b704c499",
@@ -13979,6 +14111,17 @@
   ],
   "evidence": [
     {
+      "id": "evd-247f90d3e013fe75",
+      "title": "Two children among dead in Israeli strikes on Lebanon",
+      "source": "France 24",
+      "url": "https://www.france24.com/en/video/20260907-two-children-among-dead-in-israeli-strikes-on-lebanon",
+      "published_at": "2026-09-07T13:20:18+00:00",
+      "reliability": 0.5,
+      "quality": 0.75,
+      "geopolitical_relevance": 0.15,
+      "excerpt": "Israeli airstrikes overnight killed 11 people in a south Lebanon village, including two infants, Lebanese state media said Monday, a day after separate raids left seven dead. France 24's Renée Davis in Beirut has the latest."
+    },
+    {
       "id": "evd-66d5ce3567deee00",
       "title": "Sherrill anti-ICE policy hammered after fleeing migrant driver injures Dem mayor’s wife",
       "source": "Fox News Politics",
@@ -13988,6 +14131,17 @@
       "quality": 0.75,
       "geopolitical_relevance": 0.0,
       "excerpt": "An illegal immigrant fled ICE agents and crashed into a Democratic mayor's wife on a New Jersey highway, reigniting the sanctuary state debate."
+    },
+    {
+      "id": "evd-da33df07accd99b2",
+      "title": "Human rights chief Türk renews call for end to Sudan war - Radio Tamazuj",
+      "source": "Google News — Sudan Conflict",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPMkN6VE5kRm5raW81c1V1OWd6QVg2dm1xZkZ1SjFtOWNmZmtpVmJOdndDMV9CYi02V0gtXzh5ZVVmaXU1bmlZZHM4TWZYaDFLZ2tDNy1YYUd0MG9RTXEtcVNINTFxZ0EwSHFkR0xSVmlSSEE0WHdBSUhJSGJ4cVFLN1N1RlFSYXJQQzdMcnZwOHZwV0YwT2RsdVlib2tKMFJpb1p3?oc=5",
+      "published_at": "2026-09-07T13:15:16+00:00",
+      "reliability": 0.5,
+      "quality": 0.75,
+      "geopolitical_relevance": 0.95,
+      "excerpt": "Human rights chief Türk renews call for end to Sudan war Radio Tamazuj"
     },
     {
       "id": "evd-be4962e574814eb1",
@@ -14089,6 +14243,17 @@
       "excerpt": "Chancellor ducks questions on whether he will have to raise taxes but says he will stick firmly to fiscal rules Business live – latest updates Politics live – latest updates John Healey has said boosting economic growth will be his defining mission as chancellor as he warned Labour had to “be honest” about the need to control public spending at next month’s budget. In his first big speech since taking the job in July, Healey said the top priority for his 28 October budget would be to support str"
     },
     {
+      "id": "evd-3de98ade13e57067",
+      "title": "Israeli rubble-clearing in Gaza could erase 'atrocity crimes' evidence: UN expert",
+      "source": "France 24",
+      "url": "https://www.france24.com/en/live-news/20260907-israeli-rubble-clearing-in-gaza-could-erase-atrocity-crimes-evidence-un-expert",
+      "published_at": "2026-09-07T12:51:23+00:00",
+      "reliability": 0.5,
+      "quality": 0.75,
+      "geopolitical_relevance": 0.85,
+      "excerpt": "A UN expert warned Monday that large-scale rubble removal in parts of Gaza under Israeli control risked erasing traces of \"atrocity crimes\", and preventing the recovery and identification of human remains."
+    },
+    {
       "id": "evd-f15b5e8cbab5e375",
       "title": "Russia, North Korea open first road bridge across border",
       "source": "CNA World",
@@ -14164,6 +14329,17 @@
       "quality": 0.75,
       "geopolitical_relevance": 0.0,
       "excerpt": "Chancellor accused of being ‘continuity Rachel Reeves’ and giving ‘dire and dreary speech’ as JLR announced 4,000 job losses Chancellor to argue UK economy can ‘turn corner’ despite bond market turmoil Healey says Andy Burnham set out in his statement to MPs last week what he thought had gone wrong The fundamentals of our economy [were] hollowed out through a series of past policy decisions, political power was centralised, weakening the relationships between the people, the businesses and the i"
+    },
+    {
+      "id": "evd-d6887d4818b85d24",
+      "title": "Saudi's Jazan refinery reported hit again - Quantum Commodity Intelligence",
+      "source": "Google News — Yemen / Red Sea",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPWElvbzhnemRBeG9kZFl0WUJFZ1lkWDBIT1VudnM1V0tDeUN3S0VwNzdPYjlnNkhxMlhJWGR0bE9XSHpyQk1Lcmkwam9ieTJIaGpYcVl4YVBfZ0FWUmRjcmIyeFMxM2J4NV9PZWQyaXJFaDBka1lVVnRJYXRZRTFtN3d2WDJjV3ZKWmQtNw?oc=5",
+      "published_at": "2026-09-07T12:30:16+00:00",
+      "reliability": 0.5,
+      "quality": 0.75,
+      "geopolitical_relevance": 0.0,
+      "excerpt": "Saudi's Jazan refinery reported hit again Quantum Commodity Intelligence"
     },
     {
       "id": "evd-e99702f0e2bfd6eb",
@@ -14494,6 +14670,17 @@
       "quality": 0.75,
       "geopolitical_relevance": 0.95,
       "excerpt": "Fanfare at Belgrade funeral of man convicted of genocide raises questions from EU over Serbia’s membership plan Europe live – latest updates Thousands of mourners have gathered in Belgrade for the funeral of Ratko Mladić , a Serbian general convicted of orchestrating the worst massacre in Europe since the second world war, and whose hero’s return home has raised international alarm. Known as the “Butcher of Bosnia” for ​his role during the Balkans genocide in the 1990s, Mladić died in prison in "
+    },
+    {
+      "id": "evd-ce678e76eb017f74",
+      "title": "Share Market Today: Nifty 50, Bank Nifty | Sep 07, 2026 - Liquide Blog",
+      "source": "Google News — Global Economics",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPTzRQSG1BbjZfZ2xNNzdrZEdoUmZJWk1EMVMyczVJSXJKcnp4cXg1aGFCNG15ZGwtcHJRQUdZdlhDaVh2MmRmU3pyVlhZYVJsbXJvZ1BDYU9GNXJCVUpVeTdIRmI4LTNQcV9SZVlsUS1sWXhTc2htSGRkTDR5eU1NWm1LdTNUNVpXQnJvLUVLMXpQcHpIMnR6Q2djeWxub0hZYm5JdWtNYmdRYmRVNF93VlcyM2dZVjNWNk1PWV9XZkVCMngxSjBEaGo4QQ?oc=5",
+      "published_at": "2026-09-07T11:18:18+00:00",
+      "reliability": 0.5,
+      "quality": 0.75,
+      "geopolitical_relevance": 0.0,
+      "excerpt": "Share Market Today: Nifty 50, Bank Nifty | Sep 07, 2026 Liquide Blog"
     },
     {
       "id": "evd-e1d197c1b622d0ea",
@@ -15035,6 +15222,17 @@
       "excerpt": "Connection across Tumen River is further sign of closer ties between the two countries since start of war in Ukraine Russia and North Korea have opened the first road bridge across their shared border , in the latest sign of the rapidly deepening ties between the two countries since the start of the war in Ukraine. The one-kilometre bridge spans the Tumen River between Khasan in Russia’s far east and Tumangang in North Korea, along a remote and sparsely populated stretch of the countries’ shared"
     },
     {
+      "id": "evd-b8f85d4ab807ddb3",
+      "title": "Porn to pay for drones? How Ukraine plans to turn adult content into a war revenue stream - The Times of India",
+      "source": "Google News — Ukraine War",
+      "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOQ1M2QmNJbGxrTUNxV3hDd3kwNXJ2SUpsNW5uWElwMUdYbFEwWHZuOU1GMmFaTnhlLVZ2V2o1a0lKLXF1bzV1QW90YjBXczdXN0ZHWUdJbHd3Ujh6bm5qRFR5eWhjS1BieTk5M1djOF9qOGt6YWVvYk02OTdDRjA5Z0tfeHFXUTJtQWhqb0dwdXI3Y0lSSHFHczhsR3h3LWRFdUVuazF2aE90Z1VQUHlfWU1UX3pUMGpoNkJKOHlWYVdLdDNqZHJNM0R4X1JuZENEclN4bVhmMVMtcDJxa2RVMHhoVVBXVzJJMjRqV2FVWE5yVHFtZVQ3V3VEUnZjc3kxZ2fSAYcCQVVfeXFMTzJTNTJtQ1FtN3ZYYjJaT0l3WDI3akZDRWpuYVVZanpVN3pvNXBaMkY2Um02OFZzUU5mcjBXQUxXOTJXRlZLUW5EYkNjUkpEWHJwWjV3N3FmdGRLS3hYT2FuUmc5c0hIUUM1c0loRVZpeXp2Zjc4Ymd0MDEtekNNMkhDMWRIYmdES1hXY1ByWlZZQmtCQkU3a1pUSVl0QzdtdmVaYURvcjdMMDZSZWZvTGI0eHc1ODRQc3R2eEZWSnNWVjVXeXBpcFdyU095bUEtTFFSSWQ0aUxzVVNrOHlRUHV6aml5U05xTDdzLVRTeTRZS2RSNnJLVmVaOHNsZ0RDMFg4dUJQMkU?oc=5",
+      "published_at": "2026-09-07T09:50:00+00:00",
+      "reliability": 0.5,
+      "quality": 0.75,
+      "geopolitical_relevance": 0.95,
+      "excerpt": "Porn to pay for drones? How Ukraine plans to turn adult content into a war revenue stream The Times of India"
+    },
+    {
       "id": "evd-d0597c3372333788",
       "title": "Ukraine outshoots Russia in cross-border drone war for 1st time, March data suggests - ABC News - Breaking News, Latest News and Videos",
       "source": "Google News — Ukraine War",
@@ -15244,6 +15442,17 @@
       "excerpt": "Secretaries board concerned material posted without proper context as Greens warn ban could result in lack of transparency Get our breaking news email , free app or daily news podcast The nation’s top bureaucrats want the Albanese government to ban video footage from parliamentary hearings being edited and shared on social media, in an extraordinary attempt to stop online ridicule and abuse. But the Greens say highly paid public service chiefs shouldn’t be allowed to control footage from open pa"
     },
     {
+      "id": "evd-2d9d70166b9dfcb5",
+      "title": "Could Trump become a lame duck? Why the Midterms matter for Israel - www.israelhayom.com",
+      "source": "Google News — U.S. Politics",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNaGVxalNlUHEzRnVxU1B6T2lBMWEyUEl6UFdyOGVQcGVfOFNOeWZhVFlseWhmdWJFWFhDU3Q2eFFGSnlJVnlYU2lsTGhRSW1iRFlNdThmd19tdEczbTUwUWtmV0RlMlVqQ2N0N1hxSy1Dc3BNTVVwTUdtLUtzaVV4ZlJlS0NiYmNxQ1FPdkhsVHJwZzdwREJiZVF5cnZQY3dJRmw5bl8yVzE?oc=5",
+      "published_at": "2026-09-07T09:05:03+00:00",
+      "reliability": 0.5,
+      "quality": 0.75,
+      "geopolitical_relevance": 0.0,
+      "excerpt": "Could Trump become a lame duck? Why the Midterms matter for Israel www.israelhayom.com"
+    },
+    {
       "id": "evd-c1fd57cc18b4e34e",
       "title": "How far will Trump go to influence the midterms? - AJC.com",
       "source": "Google News — U.S. Politics",
@@ -15308,6 +15517,28 @@
       "quality": 0.75,
       "geopolitical_relevance": 0.0,
       "excerpt": "Gavin Newsom stumps for South Carolina Democrats — and a possible 2028 bid CNN"
+    },
+    {
+      "id": "evd-d8f6caa9c1c781b5",
+      "title": "Farm state Republicans confront a difficult political bind - MS NOW",
+      "source": "Google News — U.S. Politics",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1rUDFIZjZiMjliazBENGhOSEV4X0czSFhVeWEyS0JSQzY2MTB0eTJ4czNUMDJyY3hXYjc0SnE4dWJHWGFzTUVWUjlHMGNNMFk4ZXIwckxPNE9pdFdpUlZocE9jbWdaSUpla2NmR2xuaHpDY1JBZU5RaHR5NA?oc=5",
+      "published_at": "2026-09-07T09:00:00+00:00",
+      "reliability": 0.5,
+      "quality": 0.75,
+      "geopolitical_relevance": 0.0,
+      "excerpt": "Farm state Republicans confront a difficult political bind MS NOW"
+    },
+    {
+      "id": "evd-831a9957085eea6b",
+      "title": "​Bond Markets Shaken, But Orderly - Global Markets: 5 things investors need to watch this week - The Economic Times",
+      "source": "Google News — Global Economics",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQdXJqcW9kWkVDYWg3c1ZTSDVqWEdPMWlTUlJmU0t5QVUxTDBaR19oWG1XaHRhVTBhNnAzODd0V042Vy1uclpEbkEyWHdKTFN6Y0tVZ3pSWTlycmp1OUdnOWhnVzJfWGgyaEFIWUNub3p3bXhCc0dCbGJhYmZDZGVOSFZxakRsVVNBNTlNaFV4SUZfVU1LdVc3NjRQbHV6N0p6UXJ5RTJDRFZSWFZMUVE2Y1VQTFFLa0pYVXA2bXFhWE9JakRpano1bjBTcE53ZHFnSGdabGdXSjBYVjVpOUdUbUV6eUZYSG0zUXVqdlJpZzBaZUdrSGtN?oc=5",
+      "published_at": "2026-09-07T08:58:40+00:00",
+      "reliability": 0.5,
+      "quality": 0.75,
+      "geopolitical_relevance": 0.0,
+      "excerpt": "​Bond Markets Shaken, But Orderly - Global Markets: 5 things investors need to watch this week The Economic Times"
     },
     {
       "id": "evd-89704460c020150a",
@@ -15407,6 +15638,17 @@
       "quality": 0.75,
       "geopolitical_relevance": 0.0,
       "excerpt": "At least five people were killed when an Amazon cargo plane overshot a runway after it landed Sunday at Miami International Airport, officials said. Prime Air ⁠Flight 7598 overran the airport's diagonal runway shortly before 2 p.m. EDT (1800 GMT) and struck multiple vehicles on the ground, officials said during a news conference on ‌Sunday afternoon."
+    },
+    {
+      "id": "evd-d59535ae879a9ac1",
+      "title": "Oil prices jump to Sh12,559 per barrel as US-Iran conflict escalates, threatening Strait of Hormuz trade route - The Eastleigh Voice",
+      "source": "Google News — Iran Israel",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxON05uSmhoc3VIZVBVUEhNMGJZRGdsaDZJZDdGZW95cG5XcmZVcDM2ODFpd2VBTTdLVGlVaS1XOXl2eW82eUVhR185YmRhOXV3T3lYN1d0Z19kRDRvNFJGWG1HMXoxMnVzMTR1TDBXcmEtQktzX2dMei01STc2MWpuTTVXdzltRlJaMDNkWHF3aWpPcWt1b3FuZlVNcWYzc2xOZXNGcjQwbWNHNndLeUdTV2dSclhTbXZBTFJ6X0dzYnNzNmE2TXNKcnpZZ2pGUS1OcFFPeENpb3Q5a3UwUEJNUVk1ZUhlbk5yQ1lza3RGdU8?oc=5",
+      "published_at": "2026-09-07T08:46:44+00:00",
+      "reliability": 0.5,
+      "quality": 0.75,
+      "geopolitical_relevance": 1.0,
+      "excerpt": "Oil prices jump to Sh12,559 per barrel as US-Iran conflict escalates, threatening Strait of Hormuz trade route The Eastleigh Voice"
     },
     {
       "id": "evd-a9f0ca715355ca43",
@@ -16210,6 +16452,17 @@
       "quality": 0.75,
       "geopolitical_relevance": 0.15,
       "excerpt": "EU Deploys Aid Workers in Ghana dailyasianage.com"
+    },
+    {
+      "id": "evd-dce4a57a64653918",
+      "title": "Russia Suspends Diesel Exports Amid Ukrainian Drone Strikes on Fuel Infrastructure - NTD News",
+      "source": "Google News — Ukraine War",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNQ2Vsd1FJd2JsM3g3YkpBZUJ4THk5alJ6WHo4ZHRycmRyak9raEgyTjAwdjdMRXRYUjZYVWgzVi1TLWVJWlMwWnA3Y1RUWnVRcEVGa2RTcVlrMmZQY0ZfMzR5eHotWktwOVFkcGtCNktkMFN4eXBENGlQODc0ellUcFduQmFvRER5LTdHQmhJRUxOZ1o5aE8wVHYyMFU3VmttVm1jbVBrUVdsUzVnYjhxTlltVk5uUQ?oc=5",
+      "published_at": "2026-09-07T04:43:44+00:00",
+      "reliability": 0.5,
+      "quality": 0.75,
+      "geopolitical_relevance": 0.9,
+      "excerpt": "Russia Suspends Diesel Exports Amid Ukrainian Drone Strikes on Fuel Infrastructure NTD News"
     },
     {
       "id": "evd-88b446b7f27de3c6",
@@ -24066,15 +24319,15 @@
       "excerpt": "Watch the bizarre moment Morocco's press conference was disrupted by two journalists arguing, leading to a very perplexed-looking Brahim Diaz."
     },
     {
-      "id": "evd-8618427751ed753c",
-      "title": "Inside Politics With Manu Raju - CNN",
+      "id": "evd-ab17f7bab38b7125",
+      "title": "Inside Politics With Manu Raju - cnn.com",
       "source": "Google News — CNN Politics",
       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4tVENvTlVxR2ZSUGttYVlYUFlVRlJfSk9ZdHR2OUZ2UklzbVZYVThHR01pYkhZT2oyS1Q4c1p3QUdnVmRPdnZEN1lSX1dqNHZ6U2c?oc=5",
       "published_at": "2023-09-25T16:52:27+00:00",
       "reliability": 0.5,
       "quality": 0.75,
       "geopolitical_relevance": 0.0,
-      "excerpt": "Inside Politics With Manu Raju CNN"
+      "excerpt": "Inside Politics With Manu Raju cnn.com"
     }
   ],
   "signals": [],
@@ -24085,9 +24338,9 @@
     "method": "shared-entity-extractor-v5",
     "scoring": "shared-intelligence-scoring-v1",
     "geopolitical_relevance": "canonical-context-v1",
-    "article_count": 918,
+    "article_count": 929,
     "entity_count": 121,
-    "event_count": 403,
+    "event_count": 408,
     "relationship_count": 137,
     "semantic_relationship_count": 15,
     "cooccurrence_relationship_count": 122,
