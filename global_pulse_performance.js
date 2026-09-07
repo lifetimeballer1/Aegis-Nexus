@@ -1,12 +1,22 @@
 /* Global Pulse — Phase 7 mobile performance layer. */
 (function(){
 'use strict';
-if(window.__GP_PERFORMANCE_V1__)return;
-window.__GP_PERFORMANCE_V1__=true;
+if(window.__GP_PERFORMANCE_V2__)return;
+window.__GP_PERFORMANCE_V2__=true;
 
 function idle(fn){
   if('requestIdleCallback' in window) window.requestIdleCallback(fn,{timeout:1200});
   else setTimeout(fn,80);
+}
+
+function cacheBust(src){
+  try{
+    var u=new URL(src,window.location.href);
+    u.searchParams.set('gpweb','20260907-runtime2');
+    return u.toString();
+  }catch(_){
+    return src+(src.indexOf('?')>=0?'&':'?')+'gpweb=20260907-runtime2';
+  }
 }
 
 function lazyIntelWeb(){
@@ -16,10 +26,20 @@ function lazyIntelWeb(){
   var src=frame.getAttribute('src');
   if(!src)return;
   frame.removeAttribute('src');
+  var loaded=false;
   var load=function(){
-    if(frame.getAttribute('src'))return;
-    frame.setAttribute('src',src);
+    if(loaded || frame.getAttribute('src'))return;
+    loaded=true;
+    frame.setAttribute('src',cacheBust(src));
   };
+
+  /* Deep links such as #section-intelweb must never depend on an
+     IntersectionObserver callback. They are explicit navigation intent. */
+  if(window.location.hash==='#section-intelweb'){
+    load();
+    return;
+  }
+
   if('IntersectionObserver' in window){
     var io=new IntersectionObserver(function(entries){
       entries.forEach(function(entry){
