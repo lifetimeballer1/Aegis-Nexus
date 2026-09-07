@@ -101,8 +101,12 @@ def main():
     fallback=' '.join(str(ev.get(k) or '') for k in ('title','excerpt')).strip()
     if fallback: source_text.append(fallback)
   if not source_text: continue
+  # An entity initially classified as an actor may still be the explicit target
+  # of the same source-backed action (e.g. China -> U.S.). Do not exclude actors
+  # from candidate matching; when the source clause explicitly identifies one as
+  # the target, move that entity from actor_ids to target_ids.
   actors={str(x) for x in event.get('actor_ids',[]) if x}
-  candidates=[(eid,entity) for eid,entity in entities.items() if eid not in actors]
+  candidates=list(entities.items())
   for text in source_text:
    for pat in patterns:
     for match in re.finditer(pat,text,re.I):
@@ -113,14 +117,18 @@ def main():
        if boundary(re.escape(name),clause).search(clause):
         found.append(eid);break
      if found:
-      event['target_ids']=list(dict.fromkeys(found))
-      repaired+=len(event['target_ids'])
-      details.append((event.get('id'),event_type,event['target_ids']))
+      found=list(dict.fromkeys(found))
+      event['target_ids']=found
+      # Explicit source syntax is authoritative for role separation here.
+      event['actor_ids']=[aid for aid in event.get('actor_ids',[]) if str(aid) not in found]
+      repaired+=len(found)
+      details.append((event.get('id'),event_type,found))
       break
     if event.get('target_ids'): break
    if event.get('target_ids'): break
  data.setdefault('metadata',{})['explicit_target_repair_v2']='evidence-clause-alias-v2'
  data['metadata']['explicit_target_repairs_v2']=repaired
+ data['metadata']['explicit_target_actor_reclassification_v1']=True
  CANONICAL.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
  print(f'PASS: strategic target repair repaired_targets={repaired} events={len(details)}')
  for event_id,event_type,target_ids in details[:20]: print(f'  {event_type} {event_id}: targets={target_ids}')
