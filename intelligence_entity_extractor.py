@@ -5,8 +5,8 @@ import re
 from typing import Iterable
 
 CANONICAL_ALIASES = {
-    "United States": ("country", {"united states", "u.s.", "u.s", "usa", "american", "america", "us"}),
-    "China": ("country", {"china", "chinese"}),
+    "United States": ("country", {"united states", "u.s.", "u.s", "usa", "american", "america", "us", "pentagon", "dod", "department of defense", "defense department", "department of state", "state department", "treasury department", "department of the treasury", "department of commerce", "commerce department", "department of justice", "justice department", "u.s. congress", "white house"}),
+    "China": ("country", {"china", "chinese", "people's republic of china", "pla", "people's liberation army", "central military commission", "state council", "foreign ministry", "chinese foreign ministry", "commerce ministry", "chinese commerce ministry", "ccp", "cpc", "communist party of china"}),
     "Russia": ("country", {"russia", "russian", "moscow"}),
     "Ukraine": ("country", {"ukraine", "ukrainian", "kyiv"}),
     "Taiwan": ("country", {"taiwan", "taiwanese", "taipei"}),
