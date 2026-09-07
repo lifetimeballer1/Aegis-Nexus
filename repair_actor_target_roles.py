@@ -11,15 +11,45 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parent; DATA=ROOT/'data'
 PATH=DATA/'canonical_intelligence.json'; LIVE=DATA/'live_articles.json'
 PATTERNS={
- 'sanction':(r'\bsanctions?\s+(?:on|against)\s+([^.;,:!?]+)',),
- 'military_action':(r'\b(?:strike|strikes|struck|attack|attacks|attacked|bombed|bombing|target|targets|targeted|targeting)\b(?:\s+(?:on|against))?\s+([^.;,:!?]+)',),
- 'diplomatic_action':(r'\b(?:talks?|negotiat(?:e|es|ed|ing)|meet(?:s|ing)?|summit)\b\s+(?:with|between)\s+([^.;,:!?]+)',),
- 'trade_action':(r'\b(?:trade|trades|trading|exports?|imports?)\b\s+(?:with|between)\s+([^.;,:!?]+)',r'\b(?:tariffs?|trade restrictions?)\b\s+(?:on|against|toward)\s+([^.;,:!?]+)'),
- 'economic_action':(r'\b(?:tariffs?|taxes?|restrictions?|controls?)\b\s+(?:on|against|toward)\s+([^.;,:!?]+)',),
- 'technology_action':(r'\b(?:export controls?|chip restrictions?|technology restrictions?)\b\s+(?:on|against|toward)\s+([^.;,:!?]+)',),
- 'energy_action':(r'\b(?:supply|supplies|supplied|supplying|export(?:s|ed|ing)?|import(?:s|ed|ing)?)\b\s+(?:oil|gas|lng|energy|electricity)\s+(?:to|from)\s+([^.;,:!?]+)',),
- 'cyber_activity':(r'\b(?:cyberattack|cyberattacks|hack(?:s|ed|ing)?|hacking)\b\s+(?:against|on|targeting)\s+([^.;,:!?]+)',),
- 'political_action':(r'\b(?:support(?:s|ed|ing)?|back(?:s|ed|ing)?|oppos(?:e|es|ed|ing))\b\s+([^.;,:!?]+)',),
+ 'sanction':(
+  r'\bsanctions?\s+(?:on|against)\s+([^.;,:!?]+)',
+  r'\b(?:impos(?:e|es|ed|ing)|expand(?:s|ed|ing)?|tighten(?:s|ed|ing)?)\b[^.;,:!?]{0,100}\bsanctions?\s+(?:on|against)\s+([^.;,:!?]+)',
+ ),
+ 'military_action':(
+  r'\b(?:strike|strikes|struck|attack|attacks|attacked|bombed|bombing|target|targets|targeted|targeting)\b(?:\s+(?:on|against))?\s+([^.;,:!?]+)',
+  r'\b(?:military|armed)\s+(?:operation|action|campaign)\b[^.;,:!?]{0,100}\b(?:against|targeting|on)\s+([^.;,:!?]+)',
+ ),
+ 'diplomatic_action':(
+  r'\b(?:talks?|negotiat(?:e|es|ed|ing)|meet(?:s|ing)?|summit)\b\s+(?:with|between)\s+([^.;,:!?]+)',
+  r'\b(?:support(?:s|ed|ing)?|back(?:s|ed|ing)?|oppose(?:s|d|ing)?|urge(?:s|d|ing)?|appeal(?:s|ed|ing)?)\b\s+(?:for|to|of|against|toward)\s+([^.;,:!?]+)',
+  r'\b(?:agreement|accord|treaty)\b\s+(?:with|between)\s+([^.;,:!?]+)',
+ ),
+ 'trade_action':(
+  r'\b(?:trade|trades|trading|exports?|imports?)\b\s+(?:with|between)\s+([^.;,:!?]+)',
+  r'\b(?:trade|trades|trading|exports?|imports?)\b\s+(?:to|from)\s+([^.;,:!?]+)',
+  r'\b(?:tariffs?|trade restrictions?|anti-dumping measures?|anti-dumping duties?)\b\s+(?:on|against|toward|from)\s+([^.;,:!?]+)',
+ ),
+ 'economic_action':(
+  r'\b(?:tariffs?|taxes?|restrictions?|controls?)\b\s+(?:on|against|toward)\s+([^.;,:!?]+)',
+  r'\b(?:measures?|policies|policy|rulings?|decisions?|findings?)\b\s+(?:against|toward|targeting|on|concerning)\s+([^.;,:!?]+)',
+ ),
+ 'technology_action':(
+  r'\b(?:export controls?|chip restrictions?|technology restrictions?)\b\s+(?:on|against|toward)\s+([^.;,:!?]+)',
+  r'\b(?:restrict(?:s|ed|ing)?|ban(?:s|ned|ning)?|control(?:s|led|ling)?|limit(?:s|ed|ing)?)\b[^.;,:!?]{0,80}\b(?:to|for|against|on)\s+([^.;,:!?]+)',
+ ),
+ 'energy_action':(
+  r'\b(?:supply|supplies|supplied|supplying|export(?:s|ed|ing)?|import(?:s|ed|ing)?)\b\s+(?:oil|gas|lng|energy|electricity)\s+(?:to|from)\s+([^.;,:!?]+)',
+  r'\b(?:oil|gas|lng|energy|electricity)\b[^.;,:!?]{0,80}\b(?:suppl(?:y|ies|ied|ying)|export(?:s|ed|ing)?|import(?:s|ed|ing)?)\b\s+(?:to|from)\s+([^.;,:!?]+)',
+ ),
+ 'cyber_activity':(
+  r'\b(?:cyberattack|cyberattacks|hack(?:s|ed|ing)?|hacking)\b\s+(?:against|on|targeting)\s+([^.;,:!?]+)',
+  r'\b(?:cyber|hackers?|hacking|intrusion|intrusions|campaign|campaigns|operation|operations)\b[^.;,:!?]{0,120}\b(?:target(?:s|ed|ing)?|attack(?:s|ed|ing)?|hit|hits|struck|strikes)\s+(?:at\s+)?([^.;,:!?]+)',
+  r'\b(?:cyber|hackers?|hacking)\b[^.;,:!?]{0,120}\b(?:against|on)\s+([^.;,:!?]+)',
+ ),
+ 'political_action':(
+  r'\b(?:support(?:s|ed|ing)?|back(?:s|ed|ing)?|oppos(?:e|es|ed|ing)|urge(?:s|d|ing)?|recogniz(?:e|es|ed|ing)?)\b\s+(?:for|of|on|against|toward)?\s*([^.;,:!?]+)',
+  r'\b(?:pressure|pressures|pressured|threaten(?:s|ed|ing)?|demand(?:s|ed|ing)?|punish(?:es|ed|ing)?)\b\s+(?:on|against|over|for)?\s*([^.;,:!?]+)',
+ ),
 }
 def text(a): return ' '.join(str(a.get(k) or '') for k in ('title','summary_snippet','summary','description','content')).strip()
 def norm(s): return re.sub(r'\s+',' ',str(s or '')).strip()
@@ -60,7 +90,7 @@ def main():
       repaired+=len(hits);events+=1;break
     if ev.get('target_ids'): break
    if ev.get('target_ids'): break
- data.setdefault('metadata',{})['actor_target_role_repair']='explicit-clause-existing-actor-v1'
+ data.setdefault('metadata',{})['actor_target_role_repair']='explicit-clause-existing-actor-v2'
  data['metadata']['actor_target_role_repairs']=repaired
  PATH.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
  print(f'PASS: actor-target role repair repaired_targets={repaired} events={events}')
