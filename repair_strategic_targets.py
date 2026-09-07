@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Repair missed U.S./China event targets from explicit source clauses only.
+"""Repair missed event targets from explicit source clauses only.
 
-This stage never creates a target from article-wide co-mention. A candidate must
-already be a canonical entity and its canonical name or known alias must occur in
-the object clause of an action construction tied to the event's own evidence.
+A candidate must already be a canonical entity and its canonical name or known
+alias must occur in an explicit object/partner clause tied to the event's own
+source evidence. Article-wide co-mention is never sufficient.
 """
 from __future__ import annotations
 import json,re
@@ -26,17 +26,20 @@ PATTERNS={
   r'\b(?:deploy|deploys|deployed|deploying)\b\s+(?:troops|forces|ships|aircraft|missiles)?\s*(?:to|toward|into)\s+([^.;:!?]+)',
  ),
  'diplomatic_action':(
-  r'\b(?:talks?|negotiat(?:e|es|ed|ing)|meet(?:s|ing)?|summit)\b\s+(?:with|between)\s+([^.;:!?]+)',
+  r'\b(?:talks?|negotiat(?:e|es|ed|ing)|meet(?:s|ing)?|met|summit)\b\s+(?:with|between)\s+([^.;:!?]+)',
+  r'\b(?:meet(?:s|ing)?|met)\b\s+(?:with\s+)?([^.;:!?]+)',
   r'\b(?:agreement|accord|treaty)\b\s+(?:with|between)\s+([^.;:!?]+)',
  ),
  'trade_action':(
   r'\b(?:trade|trades|trading|exports?|imports?)\b\s+(?:with|between)\s+([^.;:!?]+)',
-  r'\b(?:export|import)\s+(?:controls?|restrictions?|bans?)\s+(?:on|against|toward|to)\s+([^.;:!?]+)',
-  r'\b(?:tariffs?|trade restrictions?)\b\s+(?:on|against|toward)\s+([^.;:!?]+)',
+  r'\b(?:export|import)\s+(?:controls?|restrictions?|bans?)\s+(?:on|against|toward|to|from)\s+([^.;:!?]+)',
+  r'\b(?:tariffs?|trade restrictions?|anti-dumping measures?|anti-dumping duties?)\b\s+(?:on|against|toward|from|on imports? from)\s+([^.;:!?]+)',
+  r'\b(?:dumping|anti-dumping)\b[^.;:!?]{0,100}\b(?:from|by|against)\s+([^.;:!?]+)',
  ),
  'economic_action':(
   r'\b(?:tariffs?|taxes?|restrictions?|controls?)\b\s+(?:on|against|toward)\s+([^.;:!?]+)',
   r'\b(?:investment|invests?|invested|investing)\b\s+(?:in|into)\s+([^.;:!?]+)',
+  r'\b(?:measures?|policies|policy)\b\s+(?:against|toward|targeting)\s+([^.;:!?]+)',
  ),
  'technology_action':(
   r'\b(?:restrict(?:s|ed|ing)?|ban(?:s|ned|ning)?|control(?:s|led|ling)?|limit(?:s|ed|ing)?)\b\s+(?:exports?|chips?|technology|semiconductors?)\s+(?:to|for|against)\s+([^.;:!?]+)',
@@ -47,9 +50,10 @@ PATTERNS={
  ),
  'cyber_activity':(
   r'\b(?:cyberattack|cyberattacks|hack(?:s|ed|ing)?|hacking)\b\s+(?:against|on|targeting)\s+([^.;:!?]+)',
+  r'\b(?:cyber|hackers?|hacking)\b[^.;:!?]{0,80}\b(?:target(?:s|ed|ing)?|attack(?:s|ed|ing)?)\b\s+([^.;:!?]+)',
  ),
  'political_action':(
-  r'\b(?:support(?:s|ed|ing)?|back(?:s|ed|ing)?|oppos(?:e|es|ed|ing))\b\s+([^.;:!?]+)',
+  r'\b(?:support(?:s|ed|ing)?|back(?:s|ed|ing)?|oppos(?:e|es|ed|ing)|urge(?:s|d|ing)?|call(?:s|ed|ing)? for)\b\s+([^.;:!?]+)',
  ),
 }
 
@@ -73,8 +77,7 @@ def evidence_articles(data):
 
 def candidate_names(entity):
  names=[str(entity.get('canonical_name') or '')]
- aliases=entity.get('aliases') or []
- for alias in aliases:
+ for alias in entity.get('aliases') or []:
   alias=str(alias or '').strip()
   if alias and alias not in names and alias not in {'institution_context','context_resolved'}: names.append(alias)
  return sorted(names,key=len,reverse=True)
@@ -83,8 +86,7 @@ def main():
  data=json.loads(CANONICAL.read_text(encoding='utf-8'))
  by_url,by_title,evidence=evidence_articles(data)
  entities={str(e.get('id')):e for e in data.get('entities',[]) if isinstance(e,dict)}
- repaired=0
- details=[]
+ repaired=0; details=[]
  for event in data.get('events',[]):
   if event.get('target_ids'): continue
   event_type=str(event.get('event_type') or '')
@@ -101,34 +103,26 @@ def main():
     fallback=' '.join(str(ev.get(k) or '') for k in ('title','excerpt')).strip()
     if fallback: source_text.append(fallback)
   if not source_text: continue
-  # An entity initially classified as an actor may still be the explicit target
-  # of the same source-backed action (e.g. China -> U.S.). Do not exclude actors
-  # from candidate matching; when the source clause explicitly identifies one as
-  # the target, move that entity from actor_ids to target_ids.
-  actors={str(x) for x in event.get('actor_ids',[]) if x}
-  candidates=list(entities.items())
   for text in source_text:
    for pat in patterns:
     for match in re.finditer(pat,text,re.I):
      clause=match.group(1)
      found=[]
-     for eid,entity in candidates:
+     for eid,entity in entities.items():
       for name in candidate_names(entity):
-       if boundary(re.escape(name),clause).search(clause):
-        found.append(eid);break
+       if name and boundary(re.escape(name),clause).search(clause):
+        found.append(eid); break
      if found:
       found=list(dict.fromkeys(found))
       event['target_ids']=found
-      # Explicit source syntax is authoritative for role separation here.
       event['actor_ids']=[aid for aid in event.get('actor_ids',[]) if str(aid) not in found]
-      repaired+=len(found)
-      details.append((event.get('id'),event_type,found))
+      repaired+=len(found); details.append((event.get('id'),event_type,found))
       break
     if event.get('target_ids'): break
    if event.get('target_ids'): break
- data.setdefault('metadata',{})['explicit_target_repair_v2']='evidence-clause-alias-v2'
- data['metadata']['explicit_target_repairs_v2']=repaired
- data['metadata']['explicit_target_actor_reclassification_v1']=True
+ data.setdefault('metadata',{})['explicit_target_repair_v3']='evidence-clause-alias-v3'
+ data['metadata']['explicit_target_repairs_v3']=repaired
+ data['metadata']['explicit_target_actor_reclassification_v2']=True
  CANONICAL.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
  print(f'PASS: strategic target repair repaired_targets={repaired} events={len(details)}')
  for event_id,event_type,target_ids in details[:20]: print(f'  {event_type} {event_id}: targets={target_ids}')
