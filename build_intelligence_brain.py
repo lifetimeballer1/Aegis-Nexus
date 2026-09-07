@@ -51,6 +51,10 @@ CONFLICTS={
 CHOKEPOINTS={'Strategic Chokepoints':['hormuz','strait of hormuz','red sea','bab el-mandeb','houthi','suez canal','suez','panama canal']}
 SOURCE_ARTIFACTS=['snapshot.json','breaking_news.json','live_articles.json','intelligence_graph.json','claims.json','intelligence_assessment.json','event_intelligence.json','event_market_impact.json','event_consistency.json','event_resolution.json','event_history.json','historical_trends.json','history.json','map_points.json','enforcer_maps.json']
 
+STRATEGIC_ACTORS={'United States','China'}
+ACTION_TERMS=('sanction','sanctions','sanctioned','military','strike','strikes','attack','attacked','deploy','deployed','deployment','tariff','tariffs','export control','export controls','trade restriction','negotiat','agreement','treaty','diplomatic','cyber','hack','technology restriction','energy restriction','seized','arrested','indict','recognize','recognized','warned','threatened')
+DOMAIN_TERMS=('military','defense','security','diplomatic','diplomacy','trade','tariff','economic','finance','technology','semiconductor','energy','oil','cyber','political','sanction')
+
 def load(n,d=None):
     try:return json.loads((DATA/n).read_text(encoding='utf-8')) if (DATA/n).exists() else d
     except Exception:return d
@@ -76,6 +80,23 @@ def text(r):
     return ' '.join(str(r.get(k,'')) for k in ('title','headline','summary','description','content','detail','name','region','country','location','category','type','tags','keywords','eventType','layer','actor','actors','organization','organizations','group','provider','severity','impact','assessment','claim','text')).lower()
 
 def slug(x):return re.sub(r'[^a-z0-9]+','-',str(x).lower()).strip('-')
+
+def strategic_signal(t, actor):
+    """Return evidence-weighted strategic signals for major-power prioritization.
+
+    The score is intentionally modest: it should surface source-backed U.S./China
+    activity, not manufacture prominence when a country is merely mentioned.
+    """
+    action_hits=sum(1 for term in ACTION_TERMS if term in t)
+    domain_hits=sum(1 for term in DOMAIN_TERMS if term in t)
+    # Require the actor itself to be present in the source; no score for unrelated records.
+    if actor.lower() not in t:return 0,0,0
+    action=min(action_hits,6)
+    domains=min(domain_hits,5)
+    # Actor-specific strategic signal: a source that contains an action/domain
+    # term gets more priority than a generic country co-mention.
+    signal=action*3 + domains
+    return signal,action,domains
 
 def main():
     snap=load('snapshot.json',{}) or {}
@@ -119,9 +140,17 @@ def main():
         t=text(r);hits=[]
         for country,(lat,lng) in COUNTRIES.items():
             if re.search(r'(?<![a-z])'+re.escape(country.lower())+r'(?![a-z])',t):
-                hits.append(add(country,'country',source,3,{'country':country,'lat':lat,'lng':lng,'clusterKey':'country:'+country,'canonical':True}))
+                extra=3
+                strategic,action_hits,domain_hits=strategic_signal(t,country)
+                if country in STRATEGIC_ACTORS:
+                    extra += strategic
+                meta={'country':country,'lat':lat,'lng':lng,'clusterKey':'country:'+country,'canonical':True}
+                if country in STRATEGIC_ACTORS:
+                    meta.update({'strategicActor':True,'strategicSignal':strategic,'actionSignals':action_hits,'domainSignals':domain_hits})
+                hits.append(add(country,'country',source,extra,meta))
         if re.search(r'(?<![a-z])(?:u\\.s\\.?|u\\.s\\.?a\\.?|usa|american)(?![a-z])',t):
-            hits.append(add('United States','country',source,5,{'country':'United States','lat':38,'lng':-97,'clusterKey':'country:United States','canonical':True}))
+            strategic,action_hits,domain_hits=strategic_signal(t,'united states')
+            hits.append(add('United States','country',source,5+strategic,{'country':'United States','lat':38,'lng':-97,'clusterKey':'country:United States','canonical':True,'strategicActor':True,'strategicSignal':strategic,'actionSignals':action_hits,'domainSignals':domain_hits}))
         if any(re.search(r'(?<![a-z])'+re.escape(name.lower())+r'(?![a-z])',t) for name in CARTELS):
             hits.append(add('Cartels & Organized Crime','cartel',source,8,{'group':'Organized Crime','canonical':True,'lat':23.6,'lng':-102.5,'clusterKey':'cartel:organized-crime','description':'Consolidated hub for cartel, gang and organized-crime evidence; individual groups remain in node evidence, not as graph nodes.'}))
         for label,terms in CONFLICTS.items():
@@ -141,16 +170,30 @@ def main():
             if not any(evkey(x)==evkey(e) for x in nodes[mid]['evidence']) and len(nodes[mid]['evidence']) < MAX_EVIDENCE_PER_ITEM:
                 nodes[mid]['evidence'].append(e)
 
+    # Rank candidates by source-backed evidence first, then strategic action signal.
+    # Major powers receive only an evidence-conditional bonus, so they cannot crowd
+    # out an actor simply because its name appears in many unrelated records.
+    def rank(n):
+        evidence_count=len(n['evidence'])
+        strategic=n.get('strategicSignal',0)
+        action=n.get('actionSignals',0)
+        domain=n.get('domainSignals',0)
+        strategic_bonus=2 if n.get('strategicActor') and evidence_count and (action or strategic) else 0
+        return (n['score'] + strategic_bonus, strategic, action, domain, evidence_count, n['mentions'])
+
     quotas={'country':8,'conflict':4,'economic':3,'cartel':1,'chokepoint':1}
     chosen=[]
     for kind in ('country','conflict','economic','cartel','chokepoint'):
         pool=[n for n in nodes.values() if n['kind']==kind]
-        pool.sort(key=lambda n:(n['score'],len(n['evidence']),n['mentions']),reverse=True)
+        pool.sort(key=rank,reverse=True)
         chosen.extend(pool[:quotas[kind]])
 
+    # Keep U.S./China available when they have meaningful source-backed strategic
+    # evidence. If both qualify, they can displace the weakest country candidates.
     for required in ('United States','China'):
         rn=nodes.get(slug(required))
-        if rn and not any(n['id']==rn['id'] for n in chosen):
+        qualifies=bool(rn and rn['evidence'] and (rn.get('actionSignals',0) or rn.get('strategicSignal',0)))
+        if rn and qualifies and not any(n['id']==rn['id'] for n in chosen):
             idx=next((i for i in range(len(chosen)-1,-1,-1) if chosen[i]['kind']=='country' and chosen[i]['label'] not in ('United States','China')),None)
             if idx is not None:chosen[idx]=rn
             elif len(chosen)<MAX_NODES:chosen.append(rn)
@@ -165,8 +208,8 @@ def main():
     edges.sort(key=lambda e:(e['evidenceCount'],e['weight']),reverse=True)
 
     now=datetime.now(timezone.utc).isoformat().replace('+00:00','Z')
-    stats={'nodes':len(chosen),'edges':len(edges),'recordsScanned':len(reports),'artifactsScanned':len(artifact_counts),'artifactRows':artifact_counts,'marketIndicators':len(market.get('indicators') or []),'sourceBackedCandidates':len(nodes),'evidenceRecordsRetained':sum(len(n['evidence']) for n in chosen),'countryNodes':sum(n['kind']=='country' for n in chosen),'cartelNodes':sum(n['kind']=='cartel' for n in chosen),'conflictNodes':sum(n['kind']=='conflict' for n in chosen),'economicNodes':sum(n['kind']=='economic' for n in chosen),'chokepointNodes':sum(n['kind']=='chokepoint' for n in chosen)}
-    payload={'version':11,'updatedAt':now,'complete':True,'sourceBackedOnly':True,'consolidated':True,'maxNodes':MAX_NODES,'nodePolicy':'Major-hub graph. Country, conflict, economic and organized-crime records are consolidated beneath a bounded set of human-readable nodes. Evidence is retained on the hubs; subgroups such as Sinaloa and CJNG are evidence attributes, not separate graph nodes.','sourceArtifacts':SOURCE_ARTIFACTS,'method':'Consolidate the canonical news, conflict, OSINT map, event, claim, assessment, market-impact, historical and map-point artifacts into major hubs. Deduplicate evidence by title/url/source identity and cap each node/relationship at 100 retained evidence records.','caution':'Relationships are contextual evidence links and do not prove causation, coordination, intent or responsibility. Market links are context only.','nodes':chosen,'edges':edges,'stats':stats}
+    stats={'nodes':len(chosen),'edges':len(edges),'recordsScanned':len(reports),'artifactsScanned':len(artifact_counts),'artifactRows':artifact_counts,'marketIndicators':len(market.get('indicators') or []),'sourceBackedCandidates':len(nodes),'evidenceRecordsRetained':sum(len(n['evidence']) for n in chosen),'countryNodes':sum(n['kind']=='country' for n in chosen),'cartelNodes':sum(n['kind']=='cartel' for n in chosen),'conflictNodes':sum(n['kind']=='conflict' for n in chosen),'economicNodes':sum(n['kind']=='economic' for n in chosen),'chokepointNodes':sum(n['kind']=='chokepoint' for n in chosen),'strategicActorNodes':sum(bool(n.get('strategicActor')) for n in chosen),'strategicActorActionNodes':sum(bool(n.get('strategicActor') and n.get('actionSignals')) for n in chosen)}
+    payload={'version':12,'updatedAt':now,'complete':True,'sourceBackedOnly':True,'consolidated':True,'maxNodes':MAX_NODES,'nodePolicy':'Major-hub graph. Country, conflict, economic and organized-crime records are consolidated beneath a bounded set of human-readable nodes. Evidence is retained on the hubs; subgroups such as Sinaloa and CJNG are evidence attributes, not separate graph nodes. Strategic actors receive only an evidence-conditional prioritization bonus when their records contain meaningful action/domain signals.','sourceArtifacts':SOURCE_ARTIFACTS,'method':'Consolidate the canonical news, conflict, OSINT map, event, claim, assessment, market-impact, historical and map-point artifacts into major hubs. Deduplicate evidence by title/url/source identity and cap each node/relationship at 100 retained evidence records. Prioritize source-backed strategic actor activity without hard-coding current geopolitical events.','caution':'Relationships are contextual evidence links and do not prove causation, coordination, intent or responsibility. Market links are context only.','nodes':chosen,'edges':edges,'stats':stats}
     OUT.write_text(json.dumps(payload,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
     print(f'INTELLIGENCE BRAIN: {len(chosen)} hubs / {len(edges)} relationships / {sum(len(n["evidence"]) for n in chosen)} retained evidence records / {len(reports)} source records scanned')
 
