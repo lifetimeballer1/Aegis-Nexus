@@ -8,34 +8,45 @@
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Aegis Nexus — Global Intelligence Monitor">
-<meta property="og:description" content="Real-time global conflict, geopolitical risk, market context, hazards and evidence-linked open-source intelligence.">
+<meta property="og:description" content="Aegis Nexus connects real-time conflict, geopolitical risk, market context, hazards and evidence-linked open-source intelligence.">
 <meta property="og:image" content="assets/icons/icon-512.png">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; script-src 'self' 'unsafe-inline' https://unpkg.com; style-src 'self' 'unsafe-inline' https://unpkg.com; img-src 'self' data: blob: https:; font-src 'self' data: https:; connect-src 'self' https:; media-src 'self' https:; worker-src 'self' blob:; frame-src 'self'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; script-src 'self' 'unsafe-inline' https://unpkg.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://unpkg.com; img-src 'self' data: blob: https:; font-src 'self' data: https:; connect-src 'self' https:; media-src 'self' https:; worker-src 'self' blob:; upgrade-insecure-requests">
+  <meta name="application-name" content="Aegis Nexus">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <title>Aegis Nexus — Global Intelligence Monitor</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/map.css">
+  <link rel="stylesheet" href="global_pulse_tokens.css?v=1">
+  <style>
+    .gp-brain-summary{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}.gp-brain-chip{padding:7px 9px;border:1px solid var(--line);border-radius:9px;background:var(--panel2);font-size:10px}.gp-brain-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.gp-brain-node{cursor:pointer;text-align:left;width:100%}.gp-brain-node.selected{outline:1px solid var(--blue)}.gp-brain-details{margin-top:10px}.gp-more{width:100%;margin-top:10px}.gp-hidden{display:none!important}.gp-map-tools{display:flex;gap:6px;flex-wrap:wrap}.gp-map-filter-panel{display:none;padding:8px;margin:8px 0 0;border:1px solid var(--line);border-radius:9px;background:var(--panel2)}.gp-map-filter-panel.open{display:flex;gap:6px;flex-wrap:wrap}.gp-intelweb-frame{display:block;width:100%;max-width:100%;min-width:0;height:900px;border:1px solid var(--line);border-radius:12px;background:#03070b;box-sizing:border-box}.marker-cluster-small,.marker-cluster-medium,.marker-cluster-large{background-clip:padding-box;border-radius:50%}.marker-cluster-small div,.marker-cluster-medium div,.marker-cluster-large div{font-weight:800}.marker-cluster{cursor:pointer}@media(max-width:720px){.gp-intelweb-frame{height:620px}}@media(max-width:520px){.gp-brain-grid{grid-template-columns:1fr}}
+  </style>
   <link rel="manifest" href="site.webmanifest">
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" crossorigin="">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" crossorigin="">
-  <link rel="stylesheet" href="css/app.css?v=20260906-mapfix3">
-  <style>
-    :root{--bg:#050a10;--panel:#0b1520;--panel2:#0e1a28;--line:#1c3347;--text:#e8f1f8;--muted:#8aa0b5;--green:#39ff88;--blue:#5da8ff}
-    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:14px/1.45 system-ui,sans-serif}
-    .gp-intelweb-frame{display:block;width:100%;max-width:100%;min-width:0;height:900px;border:1px solid var(--line);border-radius:12px;background:#03070b;box-sizing:border-box}
-    @media(max-width:720px){.gp-intelweb-frame{height:620px}}
-  </style>
 </head>
 <body>
-  <div id="app-root"></div>
-  <section class="gp-section" id="section-intelweb" data-section="intelweb" style="padding:12px">
-    <div class="gp-section-header"><h2 class="gp-section-title">Intelligence Web</h2></div>
-    <div class="gp-section-body" style="padding:0">
-      <iframe class="gp-intelweb-frame" src="intelligence-web.html?v=20260907-nooverlay" title="Aegis Nexus Intelligence Web" loading="lazy"></iframe>
-    </div>
-  </section>
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js" crossorigin=""></script>
+  <div id="app">
+    <header class="gp-header"><div class="gp-brand"><span class="gp-mark">◈</span><div><strong>AEGIS NEXUS</strong><div class="gp-sub">Global Intelligence Monitor</div></div></div><div class="gp-header-meta" id="headerMeta">NEAR-LIVE OPEN DATA</div></header>
+    <main id="main">
+      <section class="gp-section" id="section-overview" data-section="overview"><div class="gp-section-header"><h2 class="gp-section-title"><span>◉</span> Global Situation Overview</h2></div><div class="gp-section-body" id="overviewBody"><div class="gp-state"><div class="gp-spinner"></div><div>Loading current signal…</div></div></div></section>
+      <section class="gp-section" id="section-breaking" data-section="breaking"><div class="gp-section-header"><h2 class="gp-section-title"><span>⚡</span> Breaking / Latest Reporting</h2></div><div class="gp-section-body" id="breakingBody"><div class="gp-state"><div class="gp-spinner"></div><div>Loading reporting…</div></div></div></section>
+      <section class="gp-section" id="section-conflicts" data-section="conflicts"><div class="gp-section-header"><h2 class="gp-section-title"><span>⚔️</span> Active Conflict Watch</h2></div><div class="gp-section-body" id="conflictsBody"><div class="gp-state"><div class="gp-spinner"></div><div>Loading conflict signals…</div></div></div></section>
+      <section class="gp-section" id="section-brain" data-section="brain"><div class="gp-section-header"><h2 class="gp-section-title"><span>🧠</span> Intelligence Brain</h2></div><div class="gp-section-body" id="brainBody"><div class="gp-state"><div class="gp-spinner"></div><div>Loading brain…</div></div></div></section>
+      <section class="gp-section" id="section-intelweb" data-section="intelweb"><div class="gp-section-header"><h2 class="gp-section-title"><span>🕸️</span> Intelligence Web</h2></div><div class="gp-section-body" style="padding:0"><iframe class="gp-intelweb-frame" src="intelligence-web.html?v=20260907-nooverlay" title="Aegis Nexus Intelligence Web" loading="lazy"></iframe></div></section>
+      <section class="gp-section" id="section-map" data-section="map"><div class="gp-section-header"><h2 class="gp-section-title"><span>🗺️</span> Global Situation Map</h2><div class="gp-map-tools"><button class="gp-btn" data-layer="all" type="button">All</button><button class="gp-btn" data-layer="conflict" type="button">Conflict</button><button class="gp-btn" data-layer="hazard" type="button">Hazards</button><button class="gp-btn" data-layer="strategic" type="button">Strategic</button><button class="gp-btn" data-layer="cartel" type="button">Cartel/Crime</button></div></div><div id="mapFilterPanel" class="gp-map-filter-panel" aria-hidden="true"><button class="gp-btn" data-map-filter="all" type="button">All</button><button class="gp-btn" data-map-filter="conflict" type="button">Conflict</button><button class="gp-btn" data-map-filter="hazard" type="button">Hazards</button><button class="gp-btn" data-map-filter="strategic" type="button">Strategic</button><button class="gp-btn" data-map-filter="cartel" type="button">Cartel/Crime</button></div><div class="gp-section-body" style="padding:0"><div id="mapContainer" style="height:420px;width:100%;background:var(--bg-elevated)"></div><div id="mapSidePanel" class="gp-card" style="display:none;margin:12px;border-radius:0 0 var(--radius) var(--radius)"></div></div></section>
+      <section class="gp-section" id="section-markets" data-section="markets"><div class="gp-section-header"><h2 class="gp-section-title"><span>📈</span> Market Pulse</h2><span class="gp-badge delayed">DELAYED</span></div><div class="gp-section-body" id="marketsBody"><div class="gp-state"><div class="gp-spinner"></div><div>Loading market pulse…</div></div></div></section>
+      <section class="gp-section" id="section-status" data-section="status"><div class="gp-section-header"><h2 class="gp-section-title"><span>📡</span> System & Source Status</h2></div><div class="gp-section-body" id="statusBody"><div class="gp-state"><div>Waiting for health data…</div></div></div></section>
+    </main>
+    <nav class="gp-bottom-nav" aria-label="Primary"><a href="#section-overview" class="gp-nav-item active" data-nav="overview"><span class="gp-nav-icon">◉</span><span>Overview</span></a><a href="#section-breaking" class="gp-nav-item" data-nav="breaking"><span class="gp-nav-icon">⚡</span><span>News</span></a><a href="#section-conflicts" class="gp-nav-item" data-nav="conflicts"><span class="gp-nav-icon">⚔️</span><span>Conflicts</span></a><a href="#section-brain" class="gp-nav-item" data-nav="brain"><span class="gp-nav-icon">🧠</span><span>Brain</span></a><a href="#section-intelweb" class="gp-nav-item" data-nav="intelweb"><span class="gp-nav-icon">🕸️</span><span>Web</span></a><a href="#section-map" class="gp-nav-item" data-nav="map"><span class="gp-nav-icon">🗺️</span><span>Map</span></a><a href="#section-markets" class="gp-nav-item" data-nav="markets"><span class="gp-nav-icon">📈</span><span>Markets</span></a></nav>
+  </div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
   <script src="js/app.js?v=20260906-mapfix3" defer></script>
   <script src="global_pulse_core.js?v=1" defer></script>
   <script src="global_pulse_event_pipeline.js?v=1" defer></script>
