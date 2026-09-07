@@ -109,6 +109,7 @@ def main():
  signals=verify_json('strategic_signals.json',fresh_required=False);verify_strategic_signals(signals)
  snapshot=load('snapshot.json');verify_market(snapshot)
  run('Build what changed',sys.executable,'build_what_changed.py')
+ run('Build dedicated browser map points',sys.executable,'build_map_points.py')
  for name in REQUIRED_ARTIFACTS:
   if not (DATA/name).exists():raise RuntimeError(f'missing required artifact: {name}')
  write_refresh_manifest()
