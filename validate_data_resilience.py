@@ -53,6 +53,16 @@ def validate_manifest(require_manifest: bool) -> None:
     print("PASS: refresh manifest hashes")
 
 
+def validate_graph_contract() -> None:
+    # Keep the dedicated Intelligence Web contract validator on the canonical
+    # refresh path without duplicating its node/edge rules here.
+    from validate_intelligence_graph import main as validate_graph
+    try:
+        validate_graph()
+    except AssertionError as exc:
+        raise SystemExit(f"RESILIENCE GATE FAILED: intelligence graph contract: {exc}") from exc
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -100,6 +110,7 @@ def main() -> int:
     if not isinstance(live.get("articles"), list) or not live.get("articles"):
         raise SystemExit("RESILIENCE GATE FAILED: live article artifact is empty")
 
+    validate_graph_contract()
     validate_manifest(args.require_manifest)
 
     print("PASS: Phase 5 data resilience gate")
