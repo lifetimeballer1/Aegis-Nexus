@@ -33,22 +33,31 @@ CANONICAL_ALIASES = {
 }
 
 # Generic institutional phrases are promoted only when nearby national
-# context makes the attribution defensible. This prevents a bare "military"
-# or "foreign ministry" mention from being assigned to a country incorrectly.
+# context makes the attribution defensible. A bare "military", "foreign
+# ministry", "defense department", "Washington", or "Beijing" is not enough.
 CONTEXT_RULES = (
-    ("People's Liberation Army", "military", re.compile(r"\b(?:china(?:'s)?|chinese|beijing)\b[^.!?]{0,90}\b(?:military|armed forces|army|navy|air force|rocket force)\b|\b(?:military|armed forces|army|navy|air force|rocket force)\b[^.!?]{0,90}\b(?:china(?:'s)?|chinese|beijing)\b", re.I)),
-    ("Communist Party of China", "political_party", re.compile(r"\b(?:china(?:'s)?|chinese|beijing)\b[^.!?]{0,90}\b(?:communist party|party leadership|party officials|party committee)\b|\b(?:communist party|party leadership|party officials|party committee)\b[^.!?]{0,90}\b(?:china(?:'s)?|chinese|beijing)\b", re.I)),
-    ("Chinese State Council", "government", re.compile(r"\b(?:china(?:'s)?|chinese|beijing)\b[^.!?]{0,90}\bstate council\b|\bstate council\b[^.!?]{0,90}\b(?:china(?:'s)?|chinese|beijing)\b", re.I)),
-    ("Chinese Ministry of Foreign Affairs", "government_agency", re.compile(r"\b(?:china(?:'s)?|chinese|beijing)\b[^.!?]{0,90}\b(?:foreign ministry|foreign minister|foreign ministry officials|diplomatic ministry)\b|\b(?:foreign ministry|foreign minister|foreign ministry officials|diplomatic ministry)\b[^.!?]{0,90}\b(?:china(?:'s)?|chinese|beijing)\b", re.I)),
-    ("Chinese Ministry of Commerce", "government_agency", re.compile(r"\b(?:china(?:'s)?|chinese|beijing)\b[^.!?]{0,90}\b(?:commerce ministry|ministry of commerce|trade ministry)\b|\b(?:commerce ministry|ministry of commerce|trade ministry)\b[^.!?]{0,90}\b(?:china(?:'s)?|chinese|beijing)\b", re.I)),
-    ("Chinese Central Military Commission", "military_command", re.compile(r"\b(?:china(?:'s)?|chinese|beijing)\b[^.!?]{0,90}\bcentral military commission\b|\bcentral military commission\b[^.!?]{0,90}\b(?:china(?:'s)?|chinese|beijing)\b", re.I)),
-    ("U.S. Department of Defense", "government_agency", re.compile(r"\b(?:u\.s\.?|united states|american|washington|white house)\b[^.!?]{0,90}\b(?:defense department|department of defense|pentagon|armed forces|military)\b|\b(?:defense department|department of defense|pentagon)\b[^.!?]{0,90}\b(?:u\.s\.?|united states|american|washington|white house)\b", re.I)),
-    ("U.S. Department of State", "government_agency", re.compile(r"\b(?:u\.s\.?|united states|american|washington|white house)\b[^.!?]{0,90}\b(?:state department|department of state|foreign policy|diplomats?)\b|\b(?:state department|department of state)\b[^.!?]{0,90}\b(?:u\.s\.?|united states|american|washington|white house)\b", re.I)),
-    ("U.S. Treasury", "government_agency", re.compile(r"\b(?:u\.s\.?|united states|american|washington)\b[^.!?]{0,90}\b(?:treasury|treasury department|department of the treasury)\b|\b(?:treasury|treasury department|department of the treasury)\b[^.!?]{0,90}\b(?:u\.s\.?|united states|american|washington)\b", re.I)),
-    ("U.S. Department of Commerce", "government_agency", re.compile(r"\b(?:u\.s\.?|united states|american|washington)\b[^.!?]{0,90}\b(?:commerce department|department of commerce|commerce secretary)\b|\b(?:commerce department|department of commerce)\b[^.!?]{0,90}\b(?:u\.s\.?|united states|american|washington)\b", re.I)),
-    ("U.S. Department of Justice", "government_agency", re.compile(r"\b(?:u\.s\.?|united states|american|washington)\b[^.!?]{0,90}\b(?:justice department|department of justice|doj)\b|\b(?:justice department|department of justice|doj)\b[^.!?]{0,90}\b(?:u\.s\.?|united states|american|washington)\b", re.I)),
-    ("White House", "government", re.compile(r"\b(?:washington|u\.s\.?|united states|american)\b[^.!?]{0,70}\bwhite house\b|\bwhite house\b[^.!?]{0,70}\b(?:washington|u\.s\.?|united states|american)\b", re.I)),
+    ("People's Liberation Army", "military", re.compile(r"\b(?:china(?:'s)?|chinese)\b[^.!?]{0,90}\b(?:military|armed forces|army|navy|air force|rocket force)\b|\b(?:military|armed forces|army|navy|air force|rocket force)\b[^.!?]{0,90}\b(?:china(?:'s)?|chinese)\b", re.I)),
+    ("Communist Party of China", "political_party", re.compile(r"\b(?:china(?:'s)?|chinese)\b[^.!?]{0,90}\b(?:communist party|party leadership|party officials|party committee)\b|\b(?:communist party|party leadership|party officials|party committee)\b[^.!?]{0,90}\b(?:china(?:'s)?|chinese)\b", re.I)),
+    ("Chinese State Council", "government", re.compile(r"\b(?:china(?:'s)?|chinese)\b[^.!?]{0,90}\bstate council\b|\bstate council\b[^.!?]{0,90}\b(?:china(?:'s)?|chinese)\b", re.I)),
+    ("Chinese Ministry of Foreign Affairs", "government_agency", re.compile(r"\b(?:china(?:'s)?|chinese)\b[^.!?]{0,90}\b(?:foreign ministry|foreign minister|foreign ministry officials|diplomatic ministry)\b|\b(?:foreign ministry|foreign minister|foreign ministry officials|diplomatic ministry)\b[^.!?]{0,90}\b(?:china(?:'s)?|chinese)\b", re.I)),
+    ("Chinese Ministry of Commerce", "government_agency", re.compile(r"\b(?:china(?:'s)?|chinese)\b[^.!?]{0,90}\b(?:commerce ministry|ministry of commerce|trade ministry)\b|\b(?:commerce ministry|ministry of commerce|trade ministry)\b[^.!?]{0,90}\b(?:china(?:'s)?|chinese)\b", re.I)),
+    ("Chinese Central Military Commission", "military_command", re.compile(r"\b(?:china(?:'s)?|chinese)\b[^.!?]{0,90}\bcentral military commission\b|\bcentral military commission\b[^.!?]{0,90}\b(?:china(?:'s)?|chinese)\b", re.I)),
+    ("U.S. Department of Defense", "government_agency", re.compile(r"\b(?:u\.s\.?|united states|american)\b[^.!?]{0,90}\b(?:defense department|department of defense|pentagon|armed forces|military)\b|\b(?:defense department|department of defense|pentagon)\b[^.!?]{0,90}\b(?:u\.s\.?|united states|american)\b", re.I)),
+    ("U.S. Department of State", "government_agency", re.compile(r"\b(?:u\.s\.?|united states|american)\b[^.!?]{0,90}\b(?:state department|department of state|foreign policy|diplomats?)\b|\b(?:state department|department of state)\b[^.!?]{0,90}\b(?:u\.s\.?|united states|american)\b", re.I)),
+    ("U.S. Treasury", "government_agency", re.compile(r"\b(?:u\.s\.?|united states|american)\b[^.!?]{0,90}\b(?:treasury|treasury department|department of the treasury)\b|\b(?:treasury|treasury department|department of the treasury)\b[^.!?]{0,90}\b(?:u\.s\.?|united states|american)\b", re.I)),
+    ("U.S. Department of Commerce", "government_agency", re.compile(r"\b(?:u\.s\.?|united states|american)\b[^.!?]{0,90}\b(?:commerce department|department of commerce|commerce secretary)\b|\b(?:commerce department|department of commerce)\b[^.!?]{0,90}\b(?:u\.s\.?|united states|american)\b", re.I)),
+    ("U.S. Department of Justice", "government_agency", re.compile(r"\b(?:u\.s\.?|united states|american)\b[^.!?]{0,90}\b(?:justice department|department of justice|doj)\b|\b(?:justice department|department of justice|doj)\b[^.!?]{0,90}\b(?:u\.s\.?|united states|american)\b", re.I)),
+    ("White House", "government", re.compile(r"\b(?:u\.s\.?|united states|american)\b[^.!?]{0,70}\bwhite house\b|\bwhite house\b[^.!?]{0,70}\b(?:u\.s\.?|united states|american)\b", re.I)),
 )
+
+# Strong aliases are unambiguous enough to resolve without contextual help.
+STRONG_ALIASES = {
+    "U.S. Department of Defense": {"pentagon"},
+    "U.S. Department of Justice": {"doj"},
+    "White House": {"white house"},
+    "People's Liberation Army": {"people's liberation army", "pla", "pla forces", "pla navy", "pla air force", "pla rocket force"},
+    "Communist Party of China": {"communist party of china", "ccp", "cpc", "chinese communist party"},
+}
 
 DISCOVERY_RULES = (
     ("government_agency", re.compile(r"\b(?:Department|Ministry|Agency|Office)\s+(?:of\s+)?(?:[A-Z][\w'’-]+\s*){1,5}")),
@@ -64,11 +73,29 @@ def entity_id(canonical_name: str, entity_type: str) -> str:
     digest = hashlib.sha256(f"{entity_type}|{canonical_name.lower()}".encode()).hexdigest()[:16]
     return f"ent-{digest}"
 
+def _has_context(text: str, aliases: set[str], window: int = 110) -> bool:
+    lowered = text.lower()
+    for alias in aliases:
+        for match in re.finditer(r"(?<![a-z])" + re.escape(alias) + r"(?![a-z])", lowered):
+            left = lowered[max(0, match.start() - window):match.start()]
+            right = lowered[match.end():match.end() + window]
+            if re.search(r"\b(?:united states|u\.s\.?|usa|american|america)\b", left + right, re.I):
+                return True
+    return False
+
 def normalize_known(text: str) -> list[dict]:
     lowered = text.lower(); found=[]
     for canonical,(entity_type,aliases) in CANONICAL_ALIASES.items():
         matched=sorted({a for a in aliases if re.search(r"(?<![a-z])"+re.escape(a)+r"(?![a-z])", lowered)})
-        if matched: found.append({"id":entity_id(canonical,entity_type),"canonical_name":canonical,"entity_type":entity_type,"aliases":matched})
+        if not matched:
+            continue
+        if canonical.startswith("U.S. Department") or canonical == "U.S. Treasury" or canonical == "U.S. Congress":
+            strong=STRONG_ALIASES.get(canonical,set())
+            matched=[a for a in matched if a in strong or _has_context(text,{a})]
+        if canonical.startswith("Chinese "):
+            matched=[a for a in matched if _has_context(text,{a},window=110) or a.startswith("chinese") or a.startswith("china's") or a.startswith("prc ")]
+        if matched:
+            found.append({"id":entity_id(canonical,entity_type),"canonical_name":canonical,"entity_type":entity_type,"aliases":matched})
     return found
 
 def resolve_context_entities(text: str) -> list[dict]:
