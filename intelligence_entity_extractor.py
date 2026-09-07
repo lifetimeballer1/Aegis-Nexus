@@ -5,7 +5,7 @@ import re
 from typing import Iterable
 
 CANONICAL_ALIASES = {
-    "United States": ("country", {"united states", "u.s.", "u.s", "usa", "american", "america"}),
+    "United States": ("country", {"united states", "u.s.", "u.s", "usa", "american", "america", "us"}),
     "China": ("country", {"china", "chinese"}),
     "Russia": ("country", {"russia", "russian", "moscow"}),
     "Ukraine": ("country", {"ukraine", "ukrainian", "kyiv"}),
@@ -32,9 +32,6 @@ CANONICAL_ALIASES = {
     "JPMorgan": ("financial_institution", {"jpmorgan", "jpmorgan chase"}),
 }
 
-# Generic institutional phrases are promoted only when nearby national
-# context makes the attribution defensible. A bare "military", "foreign
-# ministry", "defense department", "Washington", or "Beijing" is not enough.
 CONTEXT_RULES = (
     ("People's Liberation Army", "military", re.compile(r"\b(?:china(?:'s)?|chinese)\b[^.!?]{0,90}\b(?:military|armed forces|army|navy|air force|rocket force)\b|\b(?:military|armed forces|army|navy|air force|rocket force)\b[^.!?]{0,90}\b(?:china(?:'s)?|chinese)\b", re.I)),
     ("Communist Party of China", "political_party", re.compile(r"\b(?:china(?:'s)?|chinese)\b[^.!?]{0,90}\b(?:communist party|party leadership|party officials|party committee)\b|\b(?:communist party|party leadership|party officials|party committee)\b[^.!?]{0,90}\b(?:china(?:'s)?|chinese)\b", re.I)),
@@ -50,7 +47,6 @@ CONTEXT_RULES = (
     ("White House", "government", re.compile(r"\b(?:u\.s\.?|united states|american)\b[^.!?]{0,70}\bwhite house\b|\bwhite house\b[^.!?]{0,70}\b(?:u\.s\.?|united states|american)\b", re.I)),
 )
 
-# Strong aliases are unambiguous enough to resolve without contextual help.
 STRONG_ALIASES = {
     "U.S. Department of Defense": {"pentagon"},
     "U.S. Department of Justice": {"doj"},
@@ -87,6 +83,10 @@ def normalize_known(text: str) -> list[dict]:
     lowered = text.lower(); found=[]
     for canonical,(entity_type,aliases) in CANONICAL_ALIASES.items():
         matched=sorted({a for a in aliases if re.search(r"(?<![a-z])"+re.escape(a)+r"(?![a-z])", lowered)})
+        if canonical == "United States" and "us" in matched:
+            matched.remove("us")
+            if re.search(r"(?<![A-Za-z])US(?![A-Za-z])", text):
+                matched.append("us")
         if not matched:
             continue
         if canonical.startswith("U.S. Department") or canonical == "U.S. Treasury" or canonical == "U.S. Congress":
