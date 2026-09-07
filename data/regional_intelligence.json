@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-06T15:04:33.262425Z",
+  "updatedAt": "2026-09-07T23:59:25.417592Z",
   "method": "Rule-based regional classification from current public-report titles, summaries and live-event titles.",
   "regions": {
     "North America": {
       "reports": 44,
-      "active24h": 8,
+      "active24h": 0,
       "events": 3,
       "conflictReports": 6,
       "topStories": [
@@ -22,12 +22,12 @@
           "url": "https://www.mountaineagle.com/opinion/the-hidden-cost-of-america-s-massive-national-debt/article_b9ea44b5-90bb-5ee4-8f96-b3b32b807a67.html"
         }
       ],
-      "deltaReports": 2,
-      "trend": "UP"
+      "deltaReports": 0,
+      "trend": "STABLE"
     },
     "South America": {
       "reports": 18,
-      "active24h": 9,
+      "active24h": 0,
       "events": 0,
       "conflictReports": 5,
       "topStories": [
@@ -49,7 +49,7 @@
     },
     "Europe": {
       "reports": 50,
-      "active24h": 28,
+      "active24h": 0,
       "events": 9,
       "conflictReports": 19,
       "topStories": [
@@ -66,34 +66,34 @@
           "url": "https://www.theguardian.com/world/2026/sep/06/far-right-afd-saxony-anhalt-state-election-germany"
         }
       ],
-      "deltaReports": -1,
-      "trend": "DOWN"
+      "deltaReports": 0,
+      "trend": "STABLE"
     },
     "Middle East": {
-      "reports": 109,
-      "active24h": 33,
+      "reports": 110,
+      "active24h": 0,
       "events": 7,
       "conflictReports": 69,
       "topStories": [
         {
-          "title": "Bosnian Serbs strengthen ties with Israel amid tensions",
-          "url": "https://www.aljazeera.com/news/2026/9/6/bosnian-serbs-strengthen-ties-with-israel-amid-tensions?traffic_source=rss"
+          "title": "US, Iran engaged in tanker war: Where is the months-long conflict headed?",
+          "url": "https://www.aljazeera.com/news/2026/9/6/us-iran-engaged-in-tanker-war-where-is-the-months-long-conflict-headed?traffic_source=rss"
         },
         {
-          "title": "Israeli air attacks on Lebanon kill at least four",
-          "url": "https://www.aljazeera.com/news/2026/9/6/israeli-air-attacks-on-lebanon-kill-at-least-four?traffic_source=rss"
+          "title": "Palestinians in Gaza bury remains of 100 people recovered from rubble",
+          "url": "https://www.aljazeera.com/news/2026/9/6/palestinians-in-gaza-bury-remains-of-100-people-recovered-from-rubble?traffic_source=rss"
         },
         {
-          "title": "Israel bombards several towns in southern Lebanon",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/6/israel-bombards-several-towns-in-southern-lebanon?traffic_source=rss"
+          "title": "Israeli flags become the latest weapon of settlers in West Bank domination",
+          "url": "https://www.aljazeera.com/features/2026/9/6/israeli-flags-become-the-latest-weapon-of-settlers-in-west-bank-domination?traffic_source=rss"
         }
       ],
-      "deltaReports": -1,
-      "trend": "DOWN"
+      "deltaReports": 1,
+      "trend": "UP"
     },
     "Africa": {
-      "reports": 34,
-      "active24h": 14,
+      "reports": 33,
+      "active24h": 0,
       "events": 2,
       "conflictReports": 6,
       "topStories": [
@@ -110,19 +110,15 @@
           "url": "https://www.aljazeera.com/news/2026/9/6/egyptian-tv-presenter-sentenced-to-death-in-major-drug-case?traffic_source=rss"
         }
       ],
-      "deltaReports": 0,
-      "trend": "STABLE"
+      "deltaReports": -1,
+      "trend": "DOWN"
     },
     "South Asia": {
-      "reports": 14,
-      "active24h": 12,
+      "reports": 13,
+      "active24h": 0,
       "events": 1,
       "conflictReports": 0,
       "topStories": [
-        {
-          "title": "Nepal rescuers search hydropower tunnels for survivors",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/6/nepal-rescuers-search-hydropower-tunnels-for-survivors?traffic_source=rss"
-        },
         {
           "title": "‘People laughed at me’: Indian youth cleans up a trash-filled river",
           "url": "https://www.aljazeera.com/video/newsfeed/2026/9/6/people-laughed-at-me-indian-youth-cleans-up-a-trash-filled-river?traffic_source=rss"
@@ -130,10 +126,14 @@
         {
           "title": "India - Nepal teams continue rescue mission at Chilime tunnel : Indian Envoy to Nepal",
           "url": "http://www.nepalnational.com/news/279288501/india-nepal-teams-continue-rescue-mission-at-chilime-tunnel-indian-envoy-to-nepal"
+        },
+        {
+          "title": "Rescuers In Nepal Pull 2 People Alive From The Debris 10 Days After Devastating Floods",
+          "url": "https://www.theyeshivaworld.com/news/general/2594120/rescuers-in-nepal-pull-2-people-alive-from-the-debris-10-days-after-devastating-floods.html"
         }
       ],
-      "deltaReports": 1,
-      "trend": "UP"
+      "deltaReports": -1,
+      "trend": "DOWN"
     },
     "East Asia": {
       "reports": 3,
@@ -142,16 +142,16 @@
       "conflictReports": 1,
       "topStories": [
         {
-          "title": "U.S.-China Relations for the 2030s: Toward a Realistic Scenario for Coexistence - Carnegie Endowment for International Peace",
-          "url": "Carnegie Endowment for International Peace"
+          "title": "U.S.-China Relations for the 2030s: Toward a Realistic Scenario for Coexistence - carnegieendowment.org",
+          "url": "carnegieendowment.org"
         },
         {
           "title": "Confrontation With North Korea | Global Conflict Tracker - Council on Foreign Relations",
           "url": "Council on Foreign Relations"
         },
         {
-          "title": "Drought in North Korea prompts food appeal - DW.com",
-          "url": "DW.com"
+          "title": "Drought in North Korea prompts food appeal - dw.com",
+          "url": "dw.com"
         }
       ],
       "deltaReports": 0,
@@ -159,7 +159,7 @@
     },
     "Southeast Asia": {
       "reports": 9,
-      "active24h": 4,
+      "active24h": 0,
       "events": 1,
       "conflictReports": 3,
       "topStories": [
@@ -181,7 +181,7 @@
     },
     "Oceania": {
       "reports": 5,
-      "active24h": 4,
+      "active24h": 0,
       "events": 1,
       "conflictReports": 0,
       "topStories": [
@@ -205,12 +205,12 @@
   "priorityOrder": [
     "Middle East",
     "Europe",
-    "Africa",
-    "South Asia",
-    "South America",
     "North America",
+    "Africa",
+    "South America",
     "Southeast Asia",
-    "Oceania",
-    "East Asia"
+    "East Asia",
+    "South Asia",
+    "Oceania"
   ]
 }
