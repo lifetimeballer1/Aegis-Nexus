@@ -41,8 +41,7 @@ def _strategic_actor_signal(name,text,event_type):
  lowered=text.lower();aliases={name.lower()}
  if name=="United States":aliases.update({"united states","u.s.","u.s","usa","american"})
  elif name=="China":aliases.update({"china","chinese"})
- else:
-  aliases.update({a.lower() for a in ("pentagon","dod","doj","white house","pla","ccp") if a in lowered})
+ else:aliases.update({a.lower() for a in ("pentagon","dod","doj","white house","pla","ccp") if a in lowered})
  best=0.0
  for alias in aliases:
   for m in re.finditer(r"(?<![a-z])"+re.escape(alias)+r"(?![a-z])",lowered):
@@ -51,18 +50,11 @@ def _strategic_actor_signal(name,text,event_type):
    sentence=lowered[sentence_start:sentence_end]
    action_match=re.search(ACTION_CONTEXT.get(event_type,r"\b(?:action|acted)\b"),sentence,re.I)
    if action_match:
-    distance=abs((sentence_start+action_match.start())-m.start());score=.95 if distance<=80 else .80
-    best=max(best,score)
+    distance=abs((sentence_start+action_match.start())-m.start());score=.95 if distance<=80 else .80;best=max(best,score)
    elif _near_action(lowered,event_type,m.start(),m.end(),140):best=max(best,.70)
  return best
 def participant_roles(found,matched,names,event_type,text):
-    """Infer actors/targets with explicit target syntax and action-local attribution.
-
-    For U.S./China, co-occurrence is never enough: the country or a country-specific
-    institution must be tied to the event action by sentence/near-action context.
-    Generic "military", "government", "Washington", and "Beijing" mentions alone
-    cannot create a strategic actor attribution.
-    """
+    """Infer actors/targets from explicit action-object clauses, never article-wide co-mentions."""
     actors=[];targets=[];locations=[]
     actor_types={"person","government","government_agency","military","military_command","intelligence","political_party","company","financial_institution","international_organization","armed_group","country"}
     location_types={"region","location","conflict"}
@@ -73,13 +65,28 @@ def participant_roles(found,matched,names,event_type,text):
             if name in STRATEGIC_COUNTRIES or name in STRATEGIC_INSTITUTIONS:
                 if _strategic_actor_signal(name,text,event_type)>=.70:actors.append(eid)
             else:actors.append(eid)
-    target_pattern={"sanction":r"sanctions?\s+(?:on|against)\s+([^.;,:]+)","military_action":r"(?:strike|attack|operation)\s+(?:on|against|targeting)\s+([^.;,:]+)","diplomatic_action":r"(?:talks?|negotiat(?:e|ed|ing)|meet(?:s|ing)?)\s+(?:with|between)\s+([^.;,:]+)","trade_action":r"(?:trade|exports?|imports?)\s+(?:with|between)\s+([^.;,:]+)"}.get(event_type)
+    target_patterns={
+      "sanction":r"(?:impos(?:e|es|ed|ing)|expand(?:s|ed|ing)?|tighten(?:s|ed|ing)?)?\s*sanctions?\s+(?:on|against)\s+([^.;:!?]+)",
+      "military_action":r"(?:strike|strikes|struck|attack|attacks|attacked|airstrike|bomb(?:ed|ing)?|operation|target(?:s|ed|ing)?)\s+(?:on|against|targeting)?\s*([^.;:!?]+)",
+      "diplomatic_action":r"(?:talks?|negotiat(?:e|es|ed|ing)|meet(?:s|ing)?|met|summit)\s+(?:with|between)?\s*([^.;:!?]+)",
+      "trade_action":r"(?:trade|trades|trading|export(?:s|ed|ing)?|import(?:s|ed|ing)?)\s+(?:with|between|to|from)\s+([^.;:!?]+)",
+      "economic_action":r"(?:tariffs?|taxes?|restrictions?|controls?|measures?|policies|policy)\s+(?:on|against|toward|targeting)\s+([^.;:!?]+)",
+      "technology_action":r"(?:restrict(?:s|ed|ing)?|ban(?:s|ned|ning)?|control(?:s|led|ling)?|limit(?:s|ed|ing)?|export controls?|chip restrictions?|technology restrictions?)\s+(?:on|against|toward|to|for)?\s*([^.;:!?]+)",
+      "energy_action":r"(?:supply|supplies|supplied|supplying|export(?:s|ed|ing)?|import(?:s|ed|ing)?)\s+(?:oil|gas|lng|energy|electricity)\s+(?:to|from)\s+([^.;:!?]+)",
+      "cyber_activity":r"(?:cyberattack|cyberattacks|hack(?:s|ed|ing)?|hacking)\s+(?:against|on|targeting)\s+([^.;:!?]+)",
+      "political_action":r"(?:support(?:s|ed|ing)?|back(?:s|ed|ing)?|oppos(?:e|es|ed|ing)|urge(?:s|d|ing)?|call(?:s|ed|ing)?\s+for|recogniz(?:e|es|ed|ing)?)\s+([^.;:!?]+)",
+    }
+    target_pattern=target_patterns.get(event_type)
     if target_pattern:
-        m=re.search(target_pattern,text,re.I)
-        if m:
+        for m in re.finditer(target_pattern,text,re.I):
             clause=m.group(1).lower()
             for eid in matched:
-                if names[eid].lower() in clause and eid not in targets:targets.append(eid)
+                name=names[eid]
+                aliases=[name]
+                aliases.extend(str(a) for a in found.get(eid,{}).get("aliases",[]) if a)
+                if any(re.search(r"(?<![A-Za-z])"+re.escape(alias)+r"(?![A-Za-z])",clause,re.I) for alias in aliases):
+                    if eid not in targets:targets.append(eid)
+            if targets:break
     if targets:actors=[x for x in actors if x not in targets]
     if not actors and targets:
         first_target=targets[0];target_name=names[first_target];target_pos=text.lower().find(target_name.lower());before=text[:target_pos] if target_pos>=0 else ''
@@ -94,7 +101,7 @@ def main():
  if not INPUT.exists():print(f"ERROR: missing input {INPUT}");return 2
  try:raw=json.loads(INPUT.read_text(encoding='utf-8'))
  except json.JSONDecodeError as exc:print(f"ERROR: invalid input JSON: {exc}");return 2
- document=empty_document();document['metadata'].update({'input':str(INPUT.relative_to(ROOT)),'method':'shared-entity-extractor-v7','scoring':'shared-intelligence-scoring-v1','source_backed_only':True,'geopolitical_relevance':'canonical-context-v1','participant_model':'actor-target-location-v3','strategic_attribution':'action-local-v1'});entities={};evidence={};events={};relationships={};articles=raw.get('articles',[]) if isinstance(raw,dict) else [];discovered_ids=set();entity_event_scores={};entity_evidence_scores={}
+ document=empty_document();document['metadata'].update({'input':str(INPUT.relative_to(ROOT)),'method':'shared-entity-extractor-v7','scoring':'shared-intelligence-scoring-v1','source_backed_only':True,'geopolitical_relevance':'canonical-context-v1','participant_model':'actor-target-location-v4','strategic_attribution':'action-local-v1'});entities={};evidence={};events={};relationships={};articles=raw.get('articles',[]) if isinstance(raw,dict) else [];discovered_ids=set();entity_event_scores={};entity_evidence_scores={}
  for article in articles:
   if not isinstance(article,dict):continue
   title,url=str(article.get('title') or '').strip(),str(article.get('url') or '').strip()
@@ -126,7 +133,7 @@ def main():
     if ev_id not in rel['evidence_ids']:rel['evidence_ids'].append(ev_id)
  for eid,e in entities.items():e['importance']=entity_importance(e,entity_event_scores.get(eid),entity_evidence_scores.get(eid))
  for r in relationships.values():r['strength']=relationship_strength(r,[evidence_score(evidence[x]) for x in r['evidence_ids'] if x in evidence]);r['weight']=round(r['strength'],6)
- document['entities']=list(entities.values());document['events']=list(events.values());document['relationships']=list(relationships.values());document['evidence']=list(evidence.values());document['signals']=[];document['metadata'].update({'article_count':len(articles),'entity_count':len(entities),'event_count':len(events),'relationship_count':len(relationships),'semantic_relationship_count':sum(r['relationship_type']!='mentioned_with' for r in relationships.values()),'cooccurrence_relationship_count':sum(r['relationship_type']=='mentioned_with' for r in relationships.values()),'discovered_entity_count':len(discovered_ids),'event_participant_model':'actor-target-location-v3','strategic_attribution_model':'action-local-v1'})
+ document['entities']=list(entities.values());document['events']=list(events.values());document['relationships']=list(relationships.values());document['evidence']=list(evidence.values());document['signals']=[];document['metadata'].update({'article_count':len(articles),'entity_count':len(entities),'event_count':len(events),'relationship_count':len(relationships),'semantic_relationship_count':sum(r['relationship_type']!='mentioned_with' for r in relationships.values()),'cooccurrence_relationship_count':sum(r['relationship_type']=='mentioned_with' for r in relationships.values()),'discovered_entity_count':len(discovered_ids),'event_participant_model':'actor-target-location-v4','strategic_attribution_model':'action-local-v1'})
  errors=validate_document(document)
  if errors:print(f"FAIL: canonical build produced {len(errors)} validation errors");[print(f" - {x}") for x in errors[:25]];return 1
  OUTPUT.write_text(json.dumps(document,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');print(f"PASS: canonical v7 entities={len(entities)} events={len(events)} relationships={len(relationships)} evidence={len(evidence)} discovered={len(discovered_ids)}");return 0
