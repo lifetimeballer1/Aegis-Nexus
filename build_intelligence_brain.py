@@ -52,7 +52,7 @@ CHOKEPOINTS={'Strategic Chokepoints':['hormuz','strait of hormuz','red sea','bab
 SOURCE_ARTIFACTS=['snapshot.json','breaking_news.json','live_articles.json','intelligence_graph.json','claims.json','intelligence_assessment.json','event_intelligence.json','event_market_impact.json','event_consistency.json','event_resolution.json','event_history.json','historical_trends.json','history.json','map_points.json','enforcer_maps.json']
 
 STRATEGIC_ACTORS={'United States','China'}
-ACTION_TERMS=('sanction','sanctions','sanctioned','military','strike','strikes','attack','attacked','deploy','deployed','deployment','tariff','tariffs','export control','export controls','trade restriction','trade restrictions','negotiat','agreement','treaty','diplomatic','cyber','hack','technology restriction','energy restriction','seized','arrested','indict','recognize','recognized','warned','threatened')
+ACTION_TERMS=('sanction','sanctions','sanctioned','military','strike','strikes','attack','attacked','deploy','deployed','deployment','tariff','tariffs','export control','export controls','trade restriction','negotiat','agreement','treaty','diplomatic','cyber','hack','technology restriction','energy restriction','seized','arrested','indict','recognize','recognized','warned','threatened')
 DOMAIN_TERMS=('military','defense','security','diplomatic','diplomacy','trade','tariff','economic','finance','technology','semiconductor','energy','oil','cyber','political','sanction')
 
 def load(n,d=None):
