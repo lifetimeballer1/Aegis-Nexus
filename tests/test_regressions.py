@@ -168,3 +168,22 @@ def test_strategic_institution_attribution_requires_country_context_and_schema_s
     chinese=extract_entities('China said the Central Military Commission approved the deployment.')
     assert 'Chinese Central Military Commission' in {x['canonical_name'] for x in chinese}
     assert 'military_command' in ENTITY_TYPES
+
+
+def test_live_collector_has_explicit_us_and_china_coverage_contracts():
+    import news_feed_db
+    sources=news_feed_db.load_sources()
+    us=[s for s in sources.values() if 'united-states' in s.get('coverage',[])]
+    china=[s for s in sources.values() if 'china' in s.get('coverage',[])]
+    assert len(us)>=2
+    assert len(china)>=2
+    assert any(s.get('category')=='china-security' for s in china)
+    assert any(s.get('category')=='china-economics' for s in china)
+
+
+def test_source_health_validator_requires_strategic_coverage():
+    text=(ROOT/'validate_source_health.py').read_text(encoding='utf-8')
+    assert 'REQUIRED_COVERAGE' in text
+    assert 'united-states' in text and 'china' in text
+    assert 'MIN_COVERAGE_SOURCES' in text
+    assert 'rowsFetched' in text
