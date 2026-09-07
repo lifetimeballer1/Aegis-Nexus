@@ -45,14 +45,14 @@ def verify_brain(brain):
  if len(edges)<5:raise RuntimeError('intelligence brain verification failed: too few relationships')
  stats=brain.get('stats') if isinstance(brain.get('stats'),dict) else {}
  if stats.get('marketIndicators',0)<20:raise RuntimeError('intelligence brain market layer missing')
- ids={str(n.get('id')) for n in nodes};allowed={'country','cartel','economic','conflict','chokepoint'}
+ ids={str(n.get('id')) for n in nodes}
  for actor in ('United States','China'):
   node=next((n for n in nodes if n.get('label')==actor),None)
   if not node:raise RuntimeError(f'major strategic actor missing: {actor}')
   if not node.get('evidence'):raise RuntimeError(f'major strategic actor has no evidence: {actor}')
  for n in nodes:
   if not any(isinstance(x,dict) and (x.get('url') or x.get('source')) for x in (n.get('evidence') or [])):raise RuntimeError(f'unsourced brain node: {n.get("label")}')
-  if n.get('kind') not in allowed or not n.get('canonical'):raise RuntimeError(f'noncanonical brain node: {n.get("label")}')
+  if n.get('kind') not in {'country','cartel','economic','conflict','chokepoint'} or not n.get('canonical'):raise RuntimeError(f'noncanonical brain node: {n.get("label")}')
  for e in edges:
   if str(e.get('source')) not in ids or str(e.get('target')) not in ids or not e.get('evidence'):raise RuntimeError('invalid or unevidenced brain relationship')
 def verify_canonical_intelligence(document):
@@ -91,6 +91,7 @@ def main():
  if int(live_status.get('exportedArticles',0))<=0:raise RuntimeError('live intelligence refresh exported no articles')
  run('Build current evidence-backed snapshot graph',sys.executable,'update_intelligence_web.py')
  run('Build canonical intelligence layer',sys.executable,'build_canonical_intelligence_v3.py')
+ run('Enrich semantic actor-action-target relationships',sys.executable,'enrich_semantic_relationships.py')
  canonical=verify_json('canonical_intelligence.json',fresh_required=False);verify_canonical_intelligence(canonical)
  run('Publish current Intelligence Web graph',sys.executable,'build_intelligence_graph.py')
  graph=verify_json('intelligence_graph.json');verify_graph(graph)
