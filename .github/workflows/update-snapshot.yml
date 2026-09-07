@@ -134,9 +134,12 @@ jobs:
               meta=manifest['artifacts'][name]; assert hashlib.sha256(Path('data',name).read_bytes()).hexdigest()==meta['sha256']
           html=Path('index.html').read_text(); assert all(x in html for x in ('global_pulse_core.js','global_pulse_event_pipeline.js','global_pulse_brain_ui.js','global_pulse_tokens.css','global_pulse_performance.js'))
           assert 'Aegis Nexus' in html and 'section-brain' in html and 'section-markets' in html and 'mapContainer' in html and 'loading="lazy"' in html and 'loading="eager"' not in html
-          web=Path('intelligence-web.html').read_text(); assert 'intelligence_brain_web.js?v=20260907-webgl5&semantic=native' in web and 'intelligence_web_controls_fix.js?v=20260906-controlsfix1' in web and 'intelligence_action_panel.js?v=20260906-actions1' in web and 'intelligence_action_flow.js?v=20260906-flow1' in web and 'intelligence_semantic_layer.js' not in web
-          renderer=Path('intelligence_brain_web.js').read_text(); assert 'const LIMITS={nodes:35,links:150}' in renderer and 'function importance(n)' in renderer and "n.__tier=i<24?'major':'semi-major'" in renderer and 'Math.min(13,Math.sqrt(n.__degree+1)*1.7' in renderer and 'const REL_COLORS=' in renderer and 'function relationshipType(l)' in renderer and 'function arrowGeometry(' in renderer
-          print('PASS canonical data, source health, manifest, browser integration, native semantic WebGL renderer and action attribution gate')
+          web=Path('intelligence-web.html').read_text()
+          for src in ('intelligence_web_runtime_guard.js?v=20260907-guard2','intelligence_web_performance.js?v=20260907-perf2','intelligence_web_v2.js?v=20260907-v2fix1','intelligence_web_controls_fix.js?v=20260907-controlsfix2','intelligence_action_flow.js?v=20260907-flow2'):
+              assert src in web
+          assert 'intelligence_semantic_layer.js' not in web
+          renderer=Path('intelligence_web_v2.js').read_text(); assert 'const NODE_COLORS=' in renderer and "GRAPH='data/intelligence_graph.json'" in renderer and 'async function get(path)' in renderer and 'new ForceGraph3D' in renderer and 'function render()' in renderer
+          print('PASS canonical data, source health, manifest, current Intelligence Web runtime integration and action attribution gate')
           PY
       - name: Commit generated data and UI
         run: |
@@ -189,7 +192,10 @@ jobs:
           brain=json.loads(Path('_site/data/intelligence_brain.json').read_text()); assert brain.get('complete') is True and brain.get('sourceBackedOnly') is True and brain.get('consolidated') is True; assert int(brain.get('maxNodes',0))==35 and 10<=len(brain.get('nodes',[]))<=35 and len(brain.get('edges',[]))>=5
           health=json.loads(Path('_site/data/source_health.json').read_text()); assert health.get('updatedAt') and int(health.get('feedsChecked',0))>=20 and int(health.get('rowsFetched',0))>0 and (health.get('sources') or [])
           canonical=json.loads(Path('_site/data/canonical_intelligence.json').read_text()); assert canonical.get('generated_at') and (canonical.get('entities') or []) and (canonical.get('evidence') or [])
-          web=Path('_site/intelligence-web.html').read_text(); assert 'intelligence_brain_web.js?v=20260907-webgl5&semantic=native' in web and 'intelligence_semantic_layer.js' not in web
+          web=Path('_site/intelligence-web.html').read_text()
+          for src in ('intelligence_web_runtime_guard.js?v=20260907-guard2','intelligence_web_performance.js?v=20260907-perf2','intelligence_web_v2.js?v=20260907-v2fix1','intelligence_web_controls_fix.js?v=20260907-controlsfix2','intelligence_action_flow.js?v=20260907-flow2'):
+              assert src in web
+          assert 'intelligence_semantic_layer.js' not in web
           print(f'PASS exact minimal Pages site: mapPoints={len(markers)} brainNodes={len(brain.get("nodes",[]))} sources={len(health.get("sources",[]))} canonicalEntities={len(canonical.get("entities",[]))}')
           PY
       - name: Upload exact generated site
