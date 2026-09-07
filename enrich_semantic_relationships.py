@@ -23,11 +23,43 @@ TYPE_MAP = {
     "political_action": "political_action_toward",
 }
 
+COUNTRY_INSTITUTIONS = {
+    "United States": {
+        "U.S. Department of Defense", "U.S. Department of State", "U.S. Treasury",
+        "U.S. Department of Commerce", "U.S. Department of Justice", "U.S. Congress",
+        "White House",
+    },
+    "China": {
+        "People's Liberation Army", "Communist Party of China", "Chinese State Council",
+        "Chinese Central Military Commission", "Chinese Ministry of Foreign Affairs",
+        "Chinese Ministry of Commerce",
+    },
+}
+
 def main() -> int:
     data = json.loads(PATH.read_text(encoding="utf-8"))
     entities = {str(e.get("id")): e for e in data.get("entities", [])}
     relationships = data.setdefault("relationships", [])
     index = {(str(r.get("source_entity_id")), str(r.get("relationship_type")), str(r.get("target_entity_id"))): r for r in relationships}
+
+    # Country attribution bridge: country-specific institutions are already
+    # required to be action-local actors by the canonical builder. When one is
+    # an event actor, add the corresponding sovereign country to actor_ids.
+    # This preserves provenance instead of relying on article-wide co-mentions.
+    entity_ids_by_name = {str(e.get("canonical_name")): str(e.get("id")) for e in data.get("entities", [])}
+    country_actor_bridges = 0
+    for event in data.get("events", []):
+        actors = [str(x) for x in event.get("actor_ids", []) if str(x) in entities]
+        actor_names = {str(entities[x].get("canonical_name")) for x in actors}
+        for country, institutions in COUNTRY_INSTITUTIONS.items():
+            country_id = entity_ids_by_name.get(country)
+            if not country_id:
+                continue
+            if actor_names & institutions and country_id not in actors:
+                event["actor_ids"] = list(event.get("actor_ids", [])) + [country_id]
+                actors.append(country_id)
+                country_actor_bridges += 1
+
     promoted = 0
     for event in data.get("events", []):
         actors = [str(x) for x in event.get("actor_ids", []) if str(x) in entities]
@@ -67,6 +99,7 @@ def main() -> int:
                     if eid not in rel["evidence_ids"]: rel["evidence_ids"].append(eid)
                 if event.get("id") not in rel["event_ids"]: rel["event_ids"].append(event["id"])
                 rel["weight"] = max(float(rel.get("weight") or 0), float(event.get("score") or 0))
+
     # Any remaining typed relationship must have a resolvable event/evidence trail.
     # Unsupported legacy typed edges are discarded rather than presented as facts.
     valid_event_ids = {str(e.get("id")) for e in data.get("events", [])}
@@ -90,11 +123,12 @@ def main() -> int:
     before=len(relationships)
     relationships=[r for r in relationships if not (r.get("relationship_type")=="mentioned_with" and (str(r.get("source_entity_id")),str(r.get("target_entity_id"))) in semantic_pairs)]
     data["relationships"]=relationships
-    data.setdefault("metadata",{})["semantic_relationship_enrichment"]="actor-target-event-v2"
+    data.setdefault("metadata",{})["semantic_relationship_enrichment"]="actor-target-event-v3"
+    data["metadata"]["strategic_country_actor_bridge"]="institution-backed-v1"
     data["metadata"]["semantic_relationship_count"]=sum(r.get("relationship_type")!="mentioned_with" for r in relationships)
     data["metadata"]["cooccurrence_relationship_count"]=sum(r.get("relationship_type")=="mentioned_with" for r in relationships)
     PATH.write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-    print(f"PASS: semantic enrichment promoted={promoted} relationships={len(relationships)} removed_cooccurrence={before-len(relationships)} removed_unproven={removed_unproven}")
+    print(f"PASS: semantic enrichment country_actor_bridges={country_actor_bridges} promoted={promoted} relationships={len(relationships)} removed_cooccurrence={before-len(relationships)} removed_unproven={removed_unproven}")
     return 0
 
 if __name__ == "__main__":
