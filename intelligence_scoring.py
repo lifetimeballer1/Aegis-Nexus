@@ -47,12 +47,6 @@ def source_reliability(source: Mapping[str, Any] | None) -> float:
 
 
 def geopolitical_relevance(item: Mapping[str, Any] | None) -> float:
-    """Return bounded geopolitical relevance without inventing intelligence.
-
-    Explicit pipeline-derived relevance is authoritative when present.
-    Otherwise derive a conservative signal from an existing event type and
-    strategic relevance; unknown/general mentions receive a neutral floor.
-    """
     item = item or {}
     explicit = item.get("geopolitical_relevance", item.get("geopoliticalRelevance"))
     if explicit is not None:
@@ -124,20 +118,15 @@ def strategic_relevance(event: Mapping[str, Any]) -> float:
 def event_score(event: Mapping[str, Any], evidence: list[Mapping[str, Any]] | None = None) -> float:
     confidence = event_confidence(event, evidence)
     relevance = geopolitical_relevance(event)
-    return clamp(
-        (0.35 * event_severity(event)
-        + 0.25 * confidence
-        + 0.20 * recency_score(event.get("timestamp", event.get("date", event.get("first_seen"))))
-        + 0.20 * strategic_relevance(event)) * relevance
-    )
+    return clamp((0.35 * event_severity(event) + 0.25 * confidence + 0.20 * recency_score(event.get("timestamp", event.get("date", event.get("first_seen")))) + 0.20 * strategic_relevance(event)) * relevance)
 
 
 def relationship_strength(relationship: Mapping[str, Any], evidence_scores: list[float] | None = None) -> float:
-    explicit = relationship.get("strength", relationship.get("weight"))
+    explicit = relationship.get("strength")
     if explicit is not None:
         try:
             explicit_value = float(explicit)
-            if explicit_value <= 1:
+            if explicit_value > 0:
                 return clamp(explicit_value)
         except (TypeError, ValueError):
             pass
@@ -150,10 +139,13 @@ def relationship_strength(relationship: Mapping[str, Any], evidence_scores: list
 
 
 def entity_importance(entity: Mapping[str, Any], event_scores: list[float] | None = None, evidence_scores: list[float] | None = None) -> float:
+    """Score entities from evidence/events; zero is an initialization value, not an override."""
     explicit = entity.get("importance")
     if explicit is not None:
         try:
-            return clamp(float(explicit))
+            explicit_value = float(explicit)
+            if explicit_value > 0:
+                return clamp(explicit_value)
         except (TypeError, ValueError):
             pass
     events = clamp(sum(event_scores) / len(event_scores)) if event_scores else 0.0
