@@ -31,8 +31,8 @@ PATTERNS={
   r'\b(?:agreement|accord|treaty)\b\s+(?:with|between)\s+([^.;:!?]+)',
  ),
  'trade_action':(
-  r'\b(?:trade|trades|trading|exports?|imports?)\b\s+(?:with|between)\s+([^.;:!?]+)',
-  r'\b(?:export|import)\s+(?:controls?|restrictions?|bans?)\s+(?:on|against|toward|to|from)\s+([^.;:!?]+)',
+  r'\b(?:trade|trades|trading|exports?|imports?)\b\s+(?:with|between|to|from)\s+([^.;:!?]+)',
+  r'\b(?:export|exports|exported|exporting|import|imports|imported|importing)\b\s+(?:controls?|restrictions?|bans?)\s+(?:on|against|toward|to|from)\s+([^.;:!?]+)',
   r'\b(?:tariffs?|trade restrictions?|anti-dumping measures?|anti-dumping duties?)\b\s+(?:on|against|toward|from|on imports? from)\s+([^.;:!?]+)',
   r'\b(?:dumping|anti-dumping)\b[^.;:!?]{0,100}\b(?:from|by|against)\s+([^.;:!?]+)',
  ),
@@ -44,6 +44,7 @@ PATTERNS={
  'technology_action':(
   r'\b(?:restrict(?:s|ed|ing)?|ban(?:s|ned|ning)?|control(?:s|led|ling)?|limit(?:s|ed|ing)?)\b\s+(?:exports?|chips?|technology|semiconductors?)\s+(?:to|for|against)\s+([^.;:!?]+)',
   r'\b(?:export controls?|chip restrictions?|technology restrictions?)\b\s+(?:on|against|toward)\s+([^.;:!?]+)',
+  r'\b(?:sell|sells|sold|selling|provide|provides|provided|providing|supply|supplies|supplied|supplying)\b\s+(?:chips?|technology|semiconductors?|equipment)\s+(?:to|for)\s+([^.;:!?]+)',
  ),
  'energy_action':(
   r'\b(?:supply|supplies|supplied|supplying|export(?:s|ed|ing)?|import(?:s|ed|ing)?)\b\s+(?:oil|gas|lng|energy|electricity)\s+(?:to|from)\s+([^.;:!?]+)',
@@ -53,7 +54,7 @@ PATTERNS={
   r'\b(?:cyber|hackers?|hacking)\b[^.;:!?]{0,80}\b(?:target(?:s|ed|ing)?|attack(?:s|ed|ing)?)\b\s+([^.;:!?]+)',
  ),
  'political_action':(
-  r'\b(?:support(?:s|ed|ing)?|back(?:s|ed|ing)?|oppos(?:e|es|ed|ing)|urge(?:s|d|ing)?|call(?:s|ed|ing)? for)\b\s+([^.;:!?]+)',
+  r'\b(?:support(?:s|ed|ing)?|back(?:s|ed|ing)?|oppos(?:e|es|ed|ing)|urge(?:s|d|ing)?|call(?:s|ed|ing)? for|recogniz(?:e|es|ed|ing)?)\b\s+([^.;:!?]+)',
  ),
 }
 
@@ -82,6 +83,15 @@ def candidate_names(entity):
   if alias and alias not in names and alias not in {'institution_context','context_resolved'}: names.append(alias)
  return sorted(names,key=len,reverse=True)
 
+def match_targets(clause,entities):
+ """Resolve only canonical entities explicitly present in the extracted clause."""
+ found=[]
+ for eid,entity in entities.items():
+  for name in candidate_names(entity):
+   if name and boundary(re.escape(name),clause).search(clause):
+    found.append(eid); break
+ return list(dict.fromkeys(found))
+
 def main():
  data=json.loads(CANONICAL.read_text(encoding='utf-8'))
  by_url,by_title,evidence=evidence_articles(data)
@@ -107,21 +117,16 @@ def main():
    for pat in patterns:
     for match in re.finditer(pat,text,re.I):
      clause=match.group(1)
-     found=[]
-     for eid,entity in entities.items():
-      for name in candidate_names(entity):
-       if name and boundary(re.escape(name),clause).search(clause):
-        found.append(eid); break
+     found=match_targets(clause,entities)
      if found:
-      found=list(dict.fromkeys(found))
       event['target_ids']=found
       event['actor_ids']=[aid for aid in event.get('actor_ids',[]) if str(aid) not in found]
       repaired+=len(found); details.append((event.get('id'),event_type,found))
       break
     if event.get('target_ids'): break
    if event.get('target_ids'): break
- data.setdefault('metadata',{})['explicit_target_repair_v3']='evidence-clause-alias-v3'
- data['metadata']['explicit_target_repairs_v3']=repaired
+ data.setdefault('metadata',{})['explicit_target_repair_v4']='evidence-clause-alias-v4'
+ data['metadata']['explicit_target_repairs_v4']=repaired
  data['metadata']['explicit_target_actor_reclassification_v2']=True
  CANONICAL.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
  print(f'PASS: strategic target repair repaired_targets={repaired} events={len(details)}')
