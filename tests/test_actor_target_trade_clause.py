@@ -27,3 +27,5 @@ def test_actor_target_repair_accepts_explicit_trade_target_clause():
     for pattern in PATTERNS['trade_action']:
         clauses.extend(m.group(1) for m in re.finditer(pattern, text, re.I))
     assert any('Japanese Chemical Imports in Anti-Dumping Move' in clause for clause in clauses)
+
+# Production-refresh trigger marker: keeps this regression on the canonical workflow path.
