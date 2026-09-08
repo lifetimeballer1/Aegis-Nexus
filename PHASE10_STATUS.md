@@ -1,6 +1,6 @@
 # Phase 10 — Production polish and final intelligence quality
 
-Local acceptance completed September 8, 2026, against base `56ccd105c2c5401de8b561f26eb324a2230a522c`. Production acceptance requires pushing these changes and a successful GitHub Actions refresh/deployment. GUI Phase 1 has not started.
+Local acceptance completed September 8, 2026, against base `56ccd105c2c5401de8b561f26eb324a2230a522c`. Production acceptance requires pushing these changes and a successful GitHub Actions refresh/deployment. GUI Phases 1-9 and Map M1-M4 are complete; GUI-10 consolidation (shared severity, token alias) in progress.
 
 ## Repairs
 

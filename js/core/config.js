@@ -8,7 +8,6 @@ export const CONFIG = {
     intelligenceBrain: './data/intelligence_brain.json',
     sources: './data/sources.json',
     sourceHealth: './data/source_health.json',
-    markets: './data/markets.json',
     refreshManifest: './data/refresh_manifest.json',
     mapEvents: './data/live_events.json',
     mapRegional: './data/regional_intelligence.json',
