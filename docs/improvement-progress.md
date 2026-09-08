@@ -23,3 +23,12 @@
 - Verified: DOM-stub harness (eager src untouched, lazy deep-link cache-bust intact, brain poll exactly 50 with zero fetches); `node --check` clean; `pytest` 98 passed. Browser smoke NOT run.
 - Remaining: 18 unloaded `global_pulse_*.js` files still ship to Pages via `pages.yml` rsync (Phase 10); `globalpulse:dataready` never dispatched on current page (only dormant listeners).
 - Next: Phase 4 — pipeline dependability (`refresh_pipeline.py`, workflows).
+
+## Phase 4 — Pipeline dependability (2026-09-08, branch `phase-4-pipeline-dependability`) — DONE
+- Traced: `refresh_pipeline.py` builds+verifies in order, writes manifest, then read-only validators; `update-snapshot.yml` commits+deploys only after all gates — a failed refresh fails pre-commit, so the last valid release is preserved (verified by step order). `finalize_map_ui.py` touches only `index.html`; `update_brain_feedback.py` is never executed in CI.
+- Fixed overlap: 9 writer workflows + manual `pages.yml` used 5 different concurrency groups from canonical (`aegis-nexus-canonical-refresh`) — single-artifact commits (incl. 3 writing `data/snapshot.json`) could land mid-refresh and be clobbered by `git add -A` + `-X theirs`. All now share the canonical group (cancel flags preserved) so writers serialize.
+- Added post-rebase gate in `update-snapshot.yml`: `validate_data_resilience.py --require-manifest` re-runs after the push, before `_site` build/deploy.
+- Found on main (pre-existing, NOT introduced here): `refresh_manifest.json` brain hash ≠ committed `intelligence_brain.json` (manual rebuild without re-hash). Brain itself validates (17 nodes/92 edges); content gates pass. Heals on next canonical run (rebuilds everything pre-gate); not hand-patched.
+- Verified: all 16 workflow YAMLs parse; groups confirmed; `pytest` 98 passed. Actions queueing behavior NOT verifiable locally.
+- Remaining: manifest covers 10 of ~20 published JSONs (brief/event_history/what_changed/live_events/regional/enforcer/links unhashed); `what_changed.json` empty-window concern carries to Phase 5.
+- Next: Phase 5 — intelligence credibility.

@@ -7,7 +7,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: global-pulse-source-health
+  group: aegis-nexus-canonical-refresh
   cancel-in-progress: false
 jobs:
   source-health:

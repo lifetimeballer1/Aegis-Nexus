@@ -7,7 +7,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: global-pulse-canonical-refresh
+  group: aegis-nexus-canonical-refresh
   cancel-in-progress: false
 jobs:
   link:
