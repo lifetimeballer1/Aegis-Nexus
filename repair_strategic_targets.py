@@ -121,6 +121,8 @@ def main():
     for match in re.finditer(pat,text,re.I):
      clause=match.group(1)
      found=match_targets(clause,entities)
+     if event_type=='diplomatic_action':
+      found=[eid for eid in found if any(re.match(r'(?:the\s+)?'+re.escape(name)+r'(?![A-Za-z])',clause,re.I) for name in candidate_names(entities[eid]))]
      if found:
       event['target_ids']=found
       event['actor_ids']=[aid for aid in event.get('actor_ids',[]) if str(aid) not in found]

@@ -117,6 +117,8 @@ def repair_explicit_targets(data: dict) -> int:
                     clause = match.group(1)
                     clause_lower = clause.lower()
                     for eid, name in candidates:
+                        if event_type == 'diplomatic_action' and not re.match(r'(?:the\s+)?'+re.escape(name)+r'(?![A-Za-z])', clause, re.I):
+                            continue
                         if re.search(r"(?<![A-Za-z])" + re.escape(name) + r"(?![A-Za-z])", clause, re.I) and eid not in event["target_ids"]:
                             event["target_ids"].append(eid)
                             repaired += 1

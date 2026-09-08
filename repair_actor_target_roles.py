@@ -52,7 +52,7 @@ PATTERNS={
   r'\b(?:pressure|pressures|pressured|threaten(?:s|ed|ing)?|demand(?:s|ed|ing)?|punish(?:es|ed|ing)?)\b\s+(?:on|against|over|for)?\s*([^.;,:!?]+)',
  ),
 }
-def text(a): return ' '.join(str(a.get(k) or '') for k in ('title','summary_snippet','summary','description','content')).strip()
+def text(a): return '. '.join(str(a[k]).strip() for k in ('title','summary_snippet','summary','description','content') if a.get(k))
 def norm(s): return re.sub(r'\s+',' ',str(s or '')).strip()
 def names(e):
  out=[str(e.get('canonical_name') or '')]
@@ -85,6 +85,7 @@ def main():
      hits=[]
      for aid in actors:
       for n in names(entities[aid]):
+       if ev.get('event_type')=='diplomatic_action' and not re.match(r'(?:the\s+)?'+re.escape(n)+r'(?![A-Za-z])',clause,re.I): continue
        if n and re.search(r'(?<![A-Za-z])'+re.escape(n)+r'(?![A-Za-z])',clause,re.I): hits.append(aid);break
      if hits:
       ev['target_ids']=list(dict.fromkeys(hits)); ev['actor_ids']=[x for x in ev.get('actor_ids',[]) if str(x) not in hits]

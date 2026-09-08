@@ -80,11 +80,13 @@ def participant_roles(found,matched,names,event_type,text):
     if target_pattern:
         for m in re.finditer(target_pattern,text,re.I):
             clause=m.group(1).lower()
+            # Diplomatic counterparts must lead the object phrase. A country
+            # mentioned later in a news summary is not a participant in talks.
             for eid in matched:
                 name=names[eid]
                 aliases=[name]
                 aliases.extend(str(a) for a in found.get(eid,{}).get("aliases",[]) if a)
-                if any(re.search(r"(?<![A-Za-z])"+re.escape(alias)+r"(?![A-Za-z])",clause,re.I) for alias in aliases):
+                if any((re.match(r"(?:the\s+)?"+re.escape(alias)+r"(?![A-Za-z])",clause,re.I) if event_type=='diplomatic_action' else re.search(r"(?<![A-Za-z])"+re.escape(alias)+r"(?![A-Za-z])",clause,re.I)) for alias in aliases):
                     if eid not in targets:targets.append(eid)
             if targets:break
     if targets:actors=[x for x in actors if x not in targets]
@@ -109,6 +111,7 @@ def main():
   published=str(article.get('published_date') or '');text=article_text(article);event_types=[k for k,p in EVENT_PATTERNS if re.search(p,text,re.I)];article_relevance=classify_geopolitical_relevance(text,event_types[0] if event_types else None);ev_id=stable_id('evd',url,title);ev={'id':ev_id,'title':title,'source':str(article.get('source') or 'Unknown public source'),'url':url,'published_at':published,'reliability':article.get('reliability',.5),'quality':article.get('evidence_quality',.75),'geopolitical_relevance':article_relevance,'excerpt':str(article.get('summary_snippet') or '')[:500]};evidence[ev_id]=ev;ev_score=evidence_score(ev);found_list=extract_entities(text);found={str(x['id']):x for x in found_list};matched=[];names={}
   for eid,x in found.items():
    name=str(x['canonical_name']);etype=str(x['entity_type']);entity=entities.setdefault(eid,{'id':eid,'canonical_name':name,'entity_type':etype,'aliases':list(x.get('aliases',[])),'country':name if etype=='country' else None,'region':None,'importance':0.,'mention_count':0,'evidence_ids':[]});entity['mention_count']+=1;discovered_ids.add(eid) if x.get('discovered') else None
+   entity['aliases']=list(dict.fromkeys(entity['aliases']+list(x.get('aliases',[]))))
    if ev_id not in entity['evidence_ids']:entity['evidence_ids'].append(ev_id)
    entity_evidence_scores.setdefault(eid,[]).append(ev_score);matched.append(eid);names[eid]=name
   for event_type in event_types[:3]:

@@ -9,6 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 @pytest.mark.parametrize('headline,expected_targets', [
     ('China Targets Japanese Chemical Imports in Anti-Dumping Move.', ['japan']),
+    ('China Targets Japanese Chemical Imports in Anti-Dumping Move - Devdiscourse', ['japan']),
     ('China reviews trade policy. Japan reports economic growth.', []),
 ])
 def test_actor_target_repair_uses_event_evidence(tmp_path, monkeypatch, headline, expected_targets):
@@ -26,7 +27,7 @@ def test_actor_target_repair_uses_event_evidence(tmp_path, monkeypatch, headline
         'relationships': []}
     canonical.write_text(json.dumps(document), encoding='utf-8')
     live.write_text(json.dumps({'articles': [
-        {'url': 'https://example.test/event', 'title': headline},
+        {'url': 'https://example.test/event', 'title': headline, 'summary_snippet': headline},
         {'url': 'https://example.test/unrelated', 'title': 'China Targets Japanese Chemical Imports.'},
     ]}), encoding='utf-8')
     for module in (repair, semantic):
@@ -59,6 +60,51 @@ def test_map_conflict_filter_has_canonical_classifier_and_rerender():
     assert re.search(r'cfr|conflict|military|war|attack|strike', text, re.I)
     assert 'renderMap' in text
     assert 'window.renderMap' not in text
+
+
+def test_canonical_aliases_and_roles_survive_production_repair_chain(tmp_path, monkeypatch):
+    import build_canonical_intelligence_v3 as builder
+    import repair_strategic_targets as strategic
+    import repair_actor_target_roles as roles
+    import enrich_semantic_relationships as semantic
+
+    live = tmp_path / 'live.json'
+    canonical = tmp_path / 'canonical.json'
+    headlines = [
+        ('Japan reports growth', ''),
+        ('China Targets Japanese Chemical Imports in Anti-Dumping Move - Devdiscourse',
+         'China Targets Japanese Chemical Imports in Anti-Dumping Move Devdiscourse'),
+        ('No bailouts for Jaguar Land Rover amid reports of thousands of job cuts, says minister',
+         'Carmaker, which is battling Trump tariffs and Chinese competitors, faces talks with union leaders and government '
+         'The government has signalled that it will not invest taxpayers money to limit job losses at Jaguar Land Rover (JLR), '
+         'after it emerged that the UK biggest carmaker is planning up to 4,000 redundancies.'),
+    ]
+    articles = [{'url': f'https://example.test/{i}', 'title': title,
+                 'summary_snippet': summary, 'published_date': '2026-09-07T07:33:53+00:00'}
+                for i, (title, summary) in enumerate(headlines)]
+    live.write_text(json.dumps({'articles': articles}), encoding='utf-8')
+    monkeypatch.setattr(builder, 'ROOT', tmp_path)
+    monkeypatch.setattr(builder, 'INPUT', live)
+    monkeypatch.setattr(builder, 'OUTPUT', canonical)
+    monkeypatch.setattr(strategic, 'CANONICAL', canonical)
+    for module in (strategic, roles, semantic):
+        monkeypatch.setattr(module, 'LIVE', live)
+    for module in (roles, semantic):
+        monkeypatch.setattr(module, 'PATH', canonical)
+    for stage in (builder, strategic, roles, semantic):
+        assert stage.main() == 0
+    document = json.loads(canonical.read_text(encoding='utf-8'))
+    entities = {e['canonical_name']: e for e in document['entities']}
+    china, japan = entities['China']['id'], entities['Japan']['id']
+    assert 'japanese' in entities['Japan']['aliases']
+    trade = next(e for e in document['events'] if e['title'] == headlines[1][0])
+    assert trade['actor_ids'] == [china]
+    assert trade['target_ids'] == [japan]
+    assert any(r['source_entity_id'] == china and r['target_entity_id'] == japan
+               and trade['id'] in r['event_ids'] and r['evidence_ids'] == trade['evidence_ids']
+               for r in document['relationships'])
+    layoffs = [e for e in document['events'] if e['title'] == headlines[2][0]]
+    assert all(not e['target_ids'] for e in layoffs if e['event_type'] == 'diplomatic_action')
 
 
 def test_map_and_brain_share_canonical_artifact_and_node_identity():
