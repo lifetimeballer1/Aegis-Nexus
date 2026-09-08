@@ -4,7 +4,7 @@ from pathlib import Path
 
 p=Path('data/event_resolution.json')
 if not p.exists(): raise SystemExit('event resolution artifact missing')
-d=json.loads(p.read_text())
+d=json.loads(p.read_text(encoding='utf-8'))
 if not isinstance(d.get('events'),list): raise SystemExit('events must be a list')
 for e in d['events']:
     if not e.get('resolution_id'): raise SystemExit('missing resolution_id')
