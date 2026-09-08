@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-09-07T23:58:37.703854+00:00",
+  "updatedAt": "2026-09-08T00:06:15.674690+00:00",
   "feedsChecked": 65,
-  "rowsFetched": 777,
-  "newArticles": 115,
-  "purged": 50,
-  "databaseArticles": 1218,
-  "exportedArticles": 1218,
+  "rowsFetched": 752,
+  "newArticles": 59,
+  "purged": 49,
+  "databaseArticles": 1228,
+  "exportedArticles": 1228,
   "exportLimit": 2000,
   "healthySources": 57,
   "emptySources": 12,
@@ -13,11 +13,11 @@
   "failedSources": [
     {
       "source": "SOUTHCOM Official Reporting — GDELT Mirror",
-      "error": "HTTPError: HTTP Error 429: Too Many Requests"
+      "error": "URLError: <urlopen error _ssl.c:993: The handshake operation timed out>"
     },
     {
       "source": "GDELT — Western Hemisphere Counter-Cartel",
-      "error": "HTTPError: HTTP Error 429: Too Many Requests"
+      "error": "URLError: <urlopen error _ssl.c:993: The handshake operation timed out>"
     },
     {
       "source": "CNN",
@@ -235,7 +235,7 @@
       "httpOk": false,
       "mode": "failed",
       "emptyFeed": false,
-      "error": "HTTPError: HTTP Error 429: Too Many Requests"
+      "error": "URLError: <urlopen error _ssl.c:993: The handshake operation timed out>"
     },
     {
       "sourceId": "google_news_southcom",
@@ -303,7 +303,7 @@
       "type": "cartel",
       "category": "cartel",
       "coverage": [],
-      "rowsFetched": 4,
+      "rowsFetched": 5,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -331,7 +331,7 @@
       "httpOk": false,
       "mode": "failed",
       "emptyFeed": false,
-      "error": "HTTPError: HTTP Error 429: Too Many Requests"
+      "error": "URLError: <urlopen error _ssl.c:993: The handshake operation timed out>"
     },
     {
       "sourceId": "google_news_climate_disaster",
@@ -375,7 +375,7 @@
       "type": "us-politics",
       "category": "us-politics",
       "coverage": [],
-      "rowsFetched": 25,
+      "rowsFetched": 18,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -435,7 +435,7 @@
       "type": "economics",
       "category": "economics",
       "coverage": [],
-      "rowsFetched": 44,
+      "rowsFetched": 23,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -591,7 +591,7 @@
       "type": "middle-east-conflict",
       "category": "middle-east-conflict",
       "coverage": [],
-      "rowsFetched": 28,
+      "rowsFetched": 29,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -603,7 +603,7 @@
       "type": "europe-conflict",
       "category": "europe-conflict",
       "coverage": [],
-      "rowsFetched": 24,
+      "rowsFetched": 25,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
