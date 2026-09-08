@@ -81,7 +81,7 @@ export function renderMarkets() {
         const state = m.sessionStatus || m.marketState || m.status || '';
         const marketTime = m.marketTime || m.updatedAt || '';
         const sourceUrl = m.sourceUrl || m.url || '';
-        const sourceLink = /^https?:\\/\\//i.test(String(sourceUrl))
+        const sourceLink = /^https?:\/\//i.test(String(sourceUrl))
           ? `<a href="${escapeHtml(String(sourceUrl))}" target="_blank" rel="noopener noreferrer" style="color:var(--accent);text-decoration:none">Source ↗</a>`
           : '';
 
