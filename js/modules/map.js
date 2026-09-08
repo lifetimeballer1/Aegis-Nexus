@@ -44,6 +44,7 @@ function collect(){
   const s=getState()||{};const sources=[];
   const add=(name,data)=>{if(data&&typeof data==='object')sources.push([name,data])};
   add('snapshot',s.snapshot);add('snapshot-markers',s.snapshot?.markers);add('snapshot-osint',s.snapshot?.osintMaps);add('snapshot-conflict',s.snapshot?.conflictDataset);add('snapshot-map',s.snapshot?.mapPoints);
+  add('canonical-points',s.mapPoints);add('canonical-markers',s.mapPoints?.markers);
   add('state-events',s.mapData?.events);add('state-regional',s.mapData?.regional);add('state-cartel',s.mapData?.cartel);add('state-links',s.mapData?.links);add('state-points',s.mapData?.points);
   add('live-snapshot',mapData?.snapshot);add('live-events',mapData?.events);add('live-regional',mapData?.regional);add('live-cartel',mapData?.cartel);add('live-links',mapData?.links);add('live-points',mapData?.points);
   const brain=mapData?.brain;
@@ -121,5 +122,91 @@ export function renderMap(){
 function fitAll(points=collect().filter(matches)){if(!map||!points.length)return;map.fitBounds(L.latLngBounds(points.map(p=>[p.__lat,p.__lon])).pad(.08),{maxZoom:4,animate:false})}
 function closeDetail(){const p=document.getElementById('mapSidePanel');if(p){p.style.display='none';p.innerHTML=''}selected=null}
 function showDetail(p){closeDetail();selected=p;const panel=document.getElementById('mapSidePanel');if(!panel)return;const k=classify(p),m=LAYERS[k],title=p.title||p.label||p.name||p.location||'Map signal',detail=p.detail||p.summary||p.description||p.reason||'No additional detail available.',url=p.url||p.sourceUrl||p.source_url||'',links=brainEdgesFor(p);panel.style.display='block';panel.innerHTML=`<div class="gp-map-detail-head"><span>${m.icon}</span><div><div class="gp-card-title">${escapeHtml(title)}</div><div class="gp-map-detail-type">${escapeHtml(m.label)}${p.brainNode?' · Intelligence Brain':''}</div></div><button id="gpMapClose" class="gp-btn" type="button">×</button></div><div class="gp-map-detail-coords">${p.__lat.toFixed(4)}, ${p.__lon.toFixed(4)}</div><div class="gp-map-detail-text">${escapeHtml(String(detail).slice(0,1400))}</div>${p.source?`<div class="gp-map-detail-source">Source: ${escapeHtml(p.source)}</div>`:''}${links.length?`<div class="gp-map-detail-source"><strong>Brain connections</strong>${links.map(x=>`<div style="margin-top:6px"><button type="button" class="gp-map-brain-link" data-brain-target="${escapeHtml(x.id)}" style="background:none;border:0;padding:0;color:inherit;text-align:left;cursor:pointer">${escapeHtml(x.label)} — ${escapeHtml(x.relationship)}</button></div>`).join('')}</div>`:''}${/^https?:\/\//i.test(String(url))?`<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">Open source ↗</a>`:''}`;panel.querySelector('#gpMapClose').onclick=closeDetail;panel.querySelectorAll('[data-brain-target]').forEach(btn=>btn.onclick=()=>{const id=btn.dataset.brainTarget;if(!id)return;window.dispatchEvent(new CustomEvent('gp:brain-select',{detail:{id,source:'map'}}));document.getElementById('brainBody')?.scrollIntoView({behavior:'smooth',block:'start'});closeDetail()});if(p.brainNode&&p.nodeId)window.dispatchEvent(new CustomEvent('gp:brain-select',{detail:{id:String(p.nodeId),source:'map'}}))}
+/* GUI Phase 3 — Geospatial Operations workspace.
+ * Reads the canonical validated feed (state.mapPoints / data/map_points.json
+ * with markers, updatedAt, count) plus live map layers. Layer counts are real
+ * counts from the same collect() pipeline that drives Leaflet markers, so the
+ * operations list never disagrees with the rendered map. Nothing is
+ * fabricated: missing data renders honest loading/empty states. Severity
+ * follows the shared language (critical/watch/info/healthy), never
+ * decoration. */
+const OPS_LAYERS=['conflicts','hazards','strategic','cartel','osint'];
+const OPS_MAX_ROWS=30;
+function normalizeOpsFilter(value){
+  const v=String(value||'all').toLowerCase();
+  if(v==='all')return'all';
+  if(v==='conflict'||v==='conflicts')return'conflicts';
+  if(v==='hazard'||v==='hazards')return'hazards';
+  if(v==='strategic')return'strategic';
+  if(v==='cartel'||v==='cartel/crime'||v==='crime')return'cartel';
+  if(v==='osint')return'osint';
+  return'all';
+}
+function layerSeverity(kind){
+  if(kind==='conflicts'||kind==='cartel')return'critical';
+  if(kind==='hazards')return'watch';
+  if(kind==='osint'||kind==='strategic')return'info';
+  return'info';
+}
+function opsTitle(p){
+  return p.title||p.label||p.name||p.location||'Untitled signal';
+}
+function opsUpdatedAt(state){
+  return state.mapPoints?.updatedAt||mapData?.points?.updatedAt||mapData?.events?.updatedAt||state.snapshot?.updatedAt||null;
+}
+function bindOpsHeaderFilters(){
+  document.querySelectorAll('#section-map [data-layer]').forEach(btn=>{
+    if(btn.dataset.opsBound)return;btn.dataset.opsBound='1';
+    btn.addEventListener('click',()=>{filter=normalizeOpsFilter(btn.dataset.layer);try{localStorage.setItem('gp.mapFilter',filter)}catch{}renderMap();renderMapOps();});
+  });
+}
+export function renderMapOps(){
+  const host=document.getElementById('mapOpsBody');
+  if(!host)return;
+  bindOpsHeaderFilters();
+  const state=getState()||{};
+  if(!state.mapPoints&&!state.mapData&&!state.snapshot){
+    host.innerHTML=state.status==='loading'
+      ?'<div class="gp-state"><div class="gp-spinner"></div><div>Loading map operations…</div></div>'
+      :'<div class="gp-state"><div class="gp-state-title">Map signals unavailable</div><div>Canonical map feed failed to load. Check source health below.</div></div>';
+    return;
+  }
+  const all=collect();
+  const counts=Object.fromEntries(OPS_LAYERS.map(k=>[k,0]));
+  for(const p of all){try{counts[classify(p)]++}catch{}}
+  const total=all.length;
+  const visible=all.filter(matches);
+  const shown=visible.slice(0,OPS_MAX_ROWS);
+  const chips=['<button class="gp-filter'+(filter==='all'?' active':'')+'" data-map-ops-filter="all" type="button">All ('+total.toLocaleString()+')</button>']
+    .concat(OPS_LAYERS.map(k=>'<button class="gp-filter'+(filter===k?' active':'')+'" data-map-ops-filter="'+k+'" type="button">'+LAYERS[k].label+' ('+(counts[k]||0).toLocaleString()+')</button>')).join('');
+  const rows=shown.map((p,i)=>{
+    const k=classify(p);const m=LAYERS[k]||LAYERS.conflicts;const sev=layerSeverity(k);
+    const title=opsTitle(p);const place=[p.country,p.region,p.city].filter(Boolean).join(' · ');
+    const key=String(p.nodeId??p.id??p.eventId??(p.__lat+','+p.__lon)+':'+i);
+    return '<button class="gp-map-op-row sev-'+sev+'" data-map-ops-focus="'+escapeHtml(key)+'" data-map-ops-index="'+i+'" type="button">'
+      +'<span class="gp-map-op-dot" style="background:'+m.color+'"></span>'
+      +'<span class="grow"><span class="title">'+escapeHtml(String(title).slice(0,140))+'</span>'
+      +'<span class="meta">'+escapeHtml(m.label)+(place?' · '+escapeHtml(place):'')+' · '+p.__lat.toFixed(2)+', '+p.__lon.toFixed(2)+'</span></span>'
+      +'<span class="gp-sev gp-sev-'+(sev==='critical'?'critical':sev==='watch'?'high':'medium')+'">'+escapeHtml(k)+'</span></button>';
+  }).join('');
+  host.innerHTML='<div class="gp-map-ops-bar"><input id="mapOpsSearch" class="gp-map-search" type="search" aria-label="Filter map signals" placeholder="Filter map signals…" value="'+escapeHtml(query)+'">'
+    +'<span class="meta">Showing '+shown.length.toLocaleString()+' of '+visible.length.toLocaleString()+' signals · '+total.toLocaleString()+' total</span></div>'
+    +'<div class="gp-filter-row" role="group" aria-label="Filter map by layer">'+chips+'</div>'
+    +(rows?'<div class="gp-map-ops-list">'+rows+'</div>':'<div class="gp-state"><div class="gp-state-title">No signals match</div><div>Nothing in the canonical map feed matches this layer or search.</div></div>');
+  const search=host.querySelector('#mapOpsSearch');
+  search?.addEventListener('input',()=>{query=search.value.trim().toLowerCase();const leaf=host.querySelector('#mapOpsSearch');renderMap();renderMapOps();const again=document.getElementById('mapOpsSearch');if(again&&leaf){again.focus();again.setSelectionRange(again.value.length,again.value.length)}});
+  host.querySelectorAll('[data-map-ops-filter]').forEach(btn=>btn.addEventListener('click',()=>{
+    filter=normalizeOpsFilter(btn.dataset.mapOpsFilter);try{localStorage.setItem('gp.mapFilter',filter)}catch{}renderMap();renderMapOps();
+  }));
+  host.querySelectorAll('[data-map-ops-index]').forEach(btn=>btn.addEventListener('click',()=>{
+    const idx=Number(btn.dataset.mapOpsIndex);const p=shown[idx];if(!p)return;
+    const kind=classify(p);
+    if(!enabled[kind]){enabled[kind]=true;try{localStorage.setItem('gp.mapLayers',JSON.stringify(enabled))}catch{}renderMap()}
+    if(map){map.setView([p.__lat,p.__lon],Math.max(map.getZoom(),5),{animate:false});showDetail(p)}
+    document.getElementById('mapContainer')?.scrollIntoView({behavior:'smooth',block:'center'});
+  }));
+  const stamp=document.getElementById('mapUpdated');
+  if(stamp){const at=opsUpdatedAt(state);stamp.textContent=at?('Updated '+at.slice(0,16).replace('T',' ')+' UTC · '+total.toLocaleString()+' signals'):total.toLocaleString()+' signals'}
+}
 window.addEventListener('gp:brain-select',event=>{const id=event.detail?.id;if(!id||event.detail?.source==='map')return;const points=collect().filter(p=>String(p.nodeId??p.id??'')===String(id));if(!points.length)return;const p=points[0];const k=classify(p);if(!enabled[k]){enabled[k]=true;localStorage.setItem('gp.mapLayers',JSON.stringify(enabled));renderMap();return}if(map){map.setView([p.__lat,p.__lon],Math.max(map.getZoom(),5),{animate:false});showDetail(p)}});
 if(['localhost','127.0.0.1'].includes(location.hostname)){window.addEventListener('gp:test-open-map-detail',()=>{const p=collect().find(matches);if(p)showDetail(p)})}

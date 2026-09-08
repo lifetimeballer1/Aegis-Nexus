@@ -8,14 +8,17 @@ const targets = {
   dashboard: 'dashboardBody',
   alerts: 'alertsBody',
   timeline: 'timelineBody',
+  briefings: 'briefingsBody',
+  search: 'searchBody',
   overview: 'overviewBody',
   breaking: 'breakingBody',
   conflicts: 'conflictsBody',
   brain: 'brainBody',
-  intelligenceWeb: 'intelweb',
+  intelligenceWeb: 'intelwebBody',
   markets: 'marketsBody',
   status: 'statusBody',
-  map: 'mapContainer'
+  map: 'mapContainer',
+  mapOps: 'mapOpsBody'
 };
 
 function showModuleError(id, err) {
@@ -46,6 +49,8 @@ async function loadModules() {
     dashboard: './modules/dashboard.js',
     alerts: './modules/alerts.js',
     timeline: './modules/timeline.js',
+    briefings: './modules/briefings.js',
+    search: './modules/search.js',
     overview: './modules/overview.js',
     breaking: './modules/breaking.js',
     conflicts: './modules/conflicts.js',
@@ -77,6 +82,8 @@ function renderAll() {
   safeRender('dashboard', 'renderDashboard');
   safeRender('alerts', 'renderAlerts');
   safeRender('timeline', 'renderTimeline');
+  safeRender('briefings', 'renderBriefings');
+  safeRender('search', 'renderSearch');
   safeRender('overview');
   safeRender('breaking');
   safeRender('conflicts');
@@ -84,8 +91,9 @@ function renderAll() {
   safeRender('brainTimeline', 'renderBrainTimeline');
   safeRender('intelligenceWeb', 'renderIntelligenceWeb');
   safeRender('markets');
-  safeRender('status');
+  safeRender('status', 'renderStatus');
   safeRender('map');
+  safeRender('map', 'renderMapOps');
 }
 
 async function refresh(force = false) {

@@ -16,7 +16,8 @@ export const CONFIG = {
     mapLinks: './data/map_event_links.json',
     mapPoints: './data/map_points.json',
     whatChanged: './data/what_changed.json',
-    eventHistory: './data/event_history.json'
+    eventHistory: './data/event_history.json',
+    intelligenceBrief: './data/intelligence_brief.json'
   },
   refresh: {
     snapshot: 5 * 60 * 1000,

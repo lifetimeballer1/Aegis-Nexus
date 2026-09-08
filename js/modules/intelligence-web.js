@@ -14,6 +14,25 @@ function typeColor(type) {
   return ({ conflict:'#ff304f', military:'#ff7a00', political:'#b56cff', economic:'#ffd400', osint:'#00e5ff', country:'#39ff88', event:'#ffffff', cartel:'#ff8a35', strategic:'#4d9aff' })[String(type||'').toLowerCase()] || '#39ff88';
 }
 
+/* GUI Phase 5 — shared severity language for Web entity types (never decorative):
+ * conflict/military/cartel = critical, political/strategic = watch, all else = info. */
+function webSeverity(type) {
+  const t = String(type || '').toLowerCase();
+  if (t === 'conflict' || t === 'military' || t === 'cartel') return 'critical';
+  if (t === 'political' || t === 'strategic') return 'watch';
+  return 'info';
+}
+
+function webChip(type) {
+  const sev = webSeverity(type);
+  if (sev === 'critical') return 'gp-sev-critical';
+  if (sev === 'watch') return 'gp-sev-high';
+  return 'gp-sev-medium';
+}
+
+let webQuery = '';
+let webTypeFilter = 'all';
+
 function asArray(value) {
   if (Array.isArray(value)) return value;
   if (value && typeof value === 'object') return [value];
@@ -195,14 +214,59 @@ function mount3D(host, detail, data) {
 export function renderIntelligenceWeb() {
   const el=document.getElementById('intelwebBody'), updated=document.getElementById('intelwebUpdated');
   if(!el)return;
-  const state=getState(), graph=state.intelligenceGraph || state.snapshot?.intelligenceGraph || state.snapshot?.graph, brain=state.snapshot?.intelligenceBrain;
-  if(!graph && !(brain?.sourceBackedOnly===true && Array.isArray(brain.nodes))){el.innerHTML='<div class="gp-state"><div class="gp-state-title">Intelligence Web not available</div><div>Evidence-linked relationship data has not been generated for this snapshot.</div></div>';return;}
+  const state=getState(), graph=state.intelligenceGraph || state.snapshot?.intelligenceGraph || state.snapshot?.graph, brain=state.intelligenceBrain || state.snapshot?.intelligenceBrain;
+  if(!graph && !(brain?.sourceBackedOnly===true && Array.isArray(brain.nodes))){
+    el.innerHTML=state.status==='loading'
+      ?'<div class="gp-state"><div class="gp-spinner"></div><div>Loading relationship web…</div></div>'
+      :'<div class="gp-state"><div class="gp-state-title">Intelligence Web not available</div><div>Evidence-linked relationship data failed to load. Check source health below.</div></div>';
+    return;
+  }
   if(updated)updated.textContent=formatRelativeTime(graph?.updatedAt || brain?.updatedAt || state.snapshot?.updatedAt);
   const caution=graph?.caution || '';
-  el.innerHTML=`<div style="font-size:12.5px;color:var(--text-secondary);margin-bottom:10px">Evidence-backed relationships between actors, conflicts, economic pressure, strategic interests and other signals. The original Intelligence Web is preserved; source-backed Brain relationships are layered into it when available. Correlation is never treated as causation.</div>${caution?`<div class="gp-card" style="margin-bottom:10px;font-size:12px;color:var(--amber)">${escapeHtml(caution)}</div>`:''}<div id="gp-intelweb-3d" class="gp-intelweb-3d"></div><div id="gp-intelweb-detail" class="gp-intelweb-detail">Select a node to inspect its source-backed details.</div>`;
-  const host=document.getElementById('gp-intelweb-3d'),detail=document.getElementById('gp-intelweb-detail'),data=normalizeGraph(graph,brain);
-  currentData=data; currentDetail=detail; selectedWebId=null; showAllWebEvidence=false; showAllWebLinks=false;
-  loadLibrary().then(ok=>{if(!host)return;if(ok){mount3D(host,detail,data);}else{renderFallback(host,data);}});
+  const data=normalizeGraph(graph,brain);
+  currentData=data; currentDetail=null; selectedWebId=null; showAllWebEvidence=false; showAllWebLinks=false;
+  const types=[...new Set(data.nodes.map(n=>String(n.type||'entity')))].sort();
+  const typeOptions=types.map(t=>`<option value="${escapeHtml(t)}" ${webTypeFilter===t?'selected':''}>${escapeHtml(t)}</option>`).join('');
+  el.innerHTML=`<div style="font-size:12.5px;color:var(--text-secondary);margin-bottom:10px">Evidence-backed relationships between actors, conflicts, economic pressure, strategic interests and other signals. Source-backed Brain relationships are layered in when available. Correlation is never treated as causation.</div>`
+    + (caution?`<div class="gp-card" style="margin-bottom:10px;font-size:12px;color:var(--amber)">${escapeHtml(caution)}</div>`:'')
+    + `<div class="gp-brain-summary"><span class="gp-brain-chip">${data.nodes.length} entities</span><span class="gp-brain-chip">${data.links.length} connections</span><span class="gp-brain-chip">${types.length} types</span></div>`
+    + `<div class="gp-web-controls"><input id="gpWebSearch" class="gp-map-search" type="search" aria-label="Filter web entities" placeholder="Filter entities…" value="${escapeHtml(webQuery)}">`
+    + `<select id="gpWebType" aria-label="Filter by entity type"><option value="all">All types</option>${typeOptions}</select>`
+    + `<button id="gpWebLoad3d" class="gp-btn" type="button">Load 3D view</button></div>`
+    + `<div class="meta" id="gpWebCount" style="font-size:10px;color:var(--muted-2);margin-bottom:7px"></div>`
+    + `<div id="gpWebListWrap"></div><div id="gp-intelweb-detail" class="gp-intelweb-detail">Select a node to inspect its source-backed details.</div>`
+    + `<div style="margin-top:8px;font-size:10px;color:var(--muted-2)">Full 3D relationship view loads below on demand; the embedded frame stays lazy for mobile performance.</div>`;
+  currentDetail=document.getElementById('gp-intelweb-detail');
+  renderWebList();
+  el.querySelector('#gpWebSearch')?.addEventListener('input',event=>{webQuery=String(event.target.value||'').trim().toLowerCase();renderWebList();const input=document.getElementById('gpWebSearch');input?.focus();input?.setSelectionRange(input.value.length,input.value.length);});
+  el.querySelector('#gpWebType')?.addEventListener('change',event=>{webTypeFilter=String(event.target.value||'all');renderWebList();});
+  el.querySelector('#gpWebLoad3d')?.addEventListener('click',()=>{
+    const wrap=document.getElementById('gpWebListWrap');
+    if(!wrap)return;
+    wrap.innerHTML='<div id="gp-intelweb-3d" class="gp-intelweb-3d"><div class="gp-state"><div class="gp-spinner"></div><div>Loading 3D engine…</div></div></div>';
+    const host=document.getElementById('gp-intelweb-3d');
+    loadLibrary().then(ok=>{if(!host||!host.isConnected)return;if(ok){mount3D(host,currentDetail,currentData);}else{renderFallback(host,currentData);}});
+  });
+}
+
+function renderWebList() {
+  const wrap=document.getElementById('gpWebListWrap');
+  if(!wrap)return;
+  const degree={};
+  currentData.links.forEach(e=>{degree[e.source]=(degree[e.source]||0)+1;degree[e.target]=(degree[e.target]||0)+1;});
+  const filtered=currentData.nodes.filter(n=>{
+    if(webTypeFilter!=='all' && String(n.type||'entity')!==webTypeFilter)return false;
+    if(!webQuery)return true;
+    return [n.id,n.name,n.type,n.region,n.status,n.source].join(' ').toLowerCase().includes(webQuery);
+  });
+  const ranked=[...filtered].map(n=>({...n,_deg:degree[n.id]||0,_ev:evidenceItems(n).length})).sort((a,b)=>b._deg-a._deg);
+  const shown=ranked.slice(0,14);
+  const count=document.getElementById('gpWebCount');
+  if(count)count.textContent=`Showing ${shown.length} of ${ranked.length} entities · ${currentData.links.length} connections`;
+  wrap.innerHTML=shown.length
+    ? `<div class="gp-grid gp-grid-2">${shown.map(n=>`<button class="gp-card gp-web-node sev-${webSeverity(n.type)}" data-web-node="${escapeHtml(n.id)}" type="button"><div class="gp-card-title">${escapeHtml(n.name)}</div><div class="gp-card-meta"><span class="gp-sev ${webChip(n.type)}">${escapeHtml(n.type||'entity')}</span><span>${n._deg} links · ${n._ev} evidence${n.brain?' · Brain':''}</span></div></button>`).join('')}</div>`
+    : '<div class="gp-state"><div class="gp-state-title">No entities match</div><div>Nothing in the canonical relationship graph matches this type or search.</div></div>';
+  wrap.querySelectorAll('[data-web-node]').forEach(btn=>btn.addEventListener('click',()=>selectWebNode(btn.dataset.webNode)));
 }
 
 window.addEventListener('gp:brain-select', event => {

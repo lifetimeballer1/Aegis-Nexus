@@ -110,3 +110,131 @@
 .gp-tl-time{font-family:var(--font-mono);font-size:10px;color:var(--muted-2)}
 .gp-tl-title{font-weight:600;overflow-wrap:break-word}
 .gp-tl-meta{font-size:10px;color:var(--muted-2);margin-top:2px}
+
+/* GUI Phase 3 — Geospatial Operations Map workspace.
+   Shares the Phase 1 severity language and Phase 2 filter/severity chips;
+   layer dots keep Leaflet marker colors, severity text never decorates. */
+.gp-map-ops-bar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:8px}
+.gp-map-ops-bar .gp-map-search{flex:1;min-width:180px}
+.gp-map-ops-bar .meta{font-size:10px;color:var(--muted-2);white-space:nowrap}
+.gp-map-ops-list{display:flex;flex-direction:column;gap:6px;max-height:320px;overflow-y:auto;min-width:0}
+.gp-map-op-row{display:flex;gap:8px;align-items:flex-start;width:100%;background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--sev-info);border-radius:var(--radius);color:inherit;text-align:left;padding:8px 10px;cursor:pointer;font:inherit;font-size:12px;min-width:0}
+.gp-map-op-row.sev-critical{border-left-color:var(--sev-critical)}
+.gp-map-op-row.sev-watch{border-left-color:var(--sev-watch)}
+.gp-map-op-row.sev-info{border-left-color:var(--sev-info)}
+.gp-map-op-row.sev-healthy{border-left-color:var(--sev-healthy)}
+.gp-map-op-row:hover{border-color:var(--line-strong)}
+.gp-map-op-row .grow{min-width:0;flex:1}
+.gp-map-op-row .title{font-weight:600;overflow-wrap:break-word;display:block}
+.gp-map-op-row .meta{font-size:10px;color:var(--muted-2);margin-top:2px;display:block;overflow-wrap:break-word}
+.gp-map-op-dot{flex:0 0 9px;width:9px;height:9px;border-radius:50%;margin-top:4px}
+@media(max-width:720px){
+  .gp-map-ops-bar{flex-wrap:nowrap;overflow-x:auto;padding-bottom:2px}
+  .gp-map-ops-bar .gp-map-search{flex:0 0 190px}
+  .gp-map-ops-list{max-height:260px}
+}
+
+/* GUI Phase 4 — Intelligence Brain Workspace.
+   Node severity reuses the shared language (critical/watch/info);
+   kind chips reuse the Phase 2 gp-sev chips. */
+.gp-brain-node{border-left:3px solid var(--sev-info)}
+.gp-brain-node.sev-critical{border-left-color:var(--sev-critical)}
+.gp-brain-node.sev-watch{border-left-color:var(--sev-watch)}
+.gp-brain-node.sev-info{border-left-color:var(--sev-info)}
+.gp-brain-node.sev-healthy{border-left-color:var(--sev-healthy)}
+.gp-brain-node .gp-card-title{overflow-wrap:break-word}
+.gp-brain-node .gp-card-meta{display:flex;align-items:center;gap:8px;margin-top:4px;font-size:10px;color:var(--muted-2)}
+
+/* GUI Phase 5 — Intelligence Web Explorer.
+   Entity severity reuses the shared language; type chips reuse Phase 2
+   gp-sev chips. The 3D engine stays opt-in so mobile deferred loading holds. */
+.gp-web-controls{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:7px}
+.gp-web-controls .gp-map-search{flex:1;min-width:180px}
+.gp-web-controls select{min-height:34px;border:1px solid var(--line);border-radius:9px;background:var(--bg-elevated);color:var(--text);padding:7px 9px;font-size:11px}
+.gp-web-node{border-left:3px solid var(--sev-info);cursor:pointer;text-align:left;width:100%}
+.gp-web-node.sev-critical{border-left-color:var(--sev-critical)}
+.gp-web-node.sev-watch{border-left-color:var(--sev-watch)}
+.gp-web-node.sev-info{border-left-color:var(--sev-info)}
+.gp-web-node .gp-card-title{overflow-wrap:break-word}
+.gp-web-node .gp-card-meta{display:flex;align-items:center;gap:8px;margin-top:4px;font-size:10px;color:var(--muted-2)}
+.gp-intelweb-detail{margin-top:10px}
+@media(max-width:720px){
+  .gp-web-controls{flex-wrap:nowrap;overflow-x:auto;padding-bottom:2px}
+  .gp-web-controls .gp-map-search{flex:0 0 190px}
+}
+
+/* GUI Phase 6 — Sources / Validation / System Health workspace.
+   Row severity reuses the shared language; state chips reuse Phase 2
+   gp-sev chips plus a green healthy chip (green = healthy/validated). */
+.gp-source-summary{border-left:3px solid var(--sev-info)}
+.gp-source-summary.sev-healthy{border-left-color:var(--sev-healthy)}
+.gp-source-summary.sev-watch{border-left-color:var(--sev-watch)}
+.gp-source-summary.sev-critical{border-left-color:var(--sev-critical)}
+.gp-source-controls{margin:10px 0 8px}
+.gp-source-controls .gp-map-search{width:100%;box-sizing:border-box}
+.gp-source-row{display:flex;gap:8px;align-items:flex-start;background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--sev-info);border-radius:var(--radius);padding:8px 10px;font-size:12px;margin-bottom:6px;min-width:0}
+.gp-source-row.sev-healthy{border-left-color:var(--sev-healthy)}
+.gp-source-row.sev-watch{border-left-color:var(--sev-watch)}
+.gp-source-row.sev-critical{border-left-color:var(--sev-critical)}
+.gp-source-row .grow{min-width:0;flex:1}
+.gp-source-row .title{font-weight:600;overflow-wrap:break-word}
+.gp-source-row .meta{font-size:10px;color:var(--muted-2);margin-top:2px;overflow-wrap:break-word}
+.gp-source-chip{display:inline-flex;align-items:center;gap:4px;padding:2px 7px;border-radius:999px;font-size:10px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;border:1px solid transparent;white-space:nowrap}
+.gp-source-chip.sev-healthy{background:rgba(57,255,136,.12);color:var(--sev-healthy);border-color:rgba(57,255,136,.3)}
+
+/* GUI Phase 7 — Intelligence Briefings workspace.
+   Development rows reuse the alert severity language; watchlist rows reuse
+   the KPI severity language; category chips reuse Phase 2 gp-filter. */
+.gp-brief-head{margin-bottom:10px}
+.gp-brief-title{font-size:14px;font-weight:800}
+.gp-brief-head .meta{font-size:10px;color:var(--muted-2);margin-top:2px}
+.gp-brief-h{font-size:12px;margin:12px 0 8px}
+.gp-brief-dev{display:flex;gap:8px;align-items:flex-start;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:8px;overflow:hidden;padding:10px 12px;font-size:12px}
+.gp-brief-dev .gp-alert-bar{flex:0 0 3px;align-self:stretch;border-radius:2px;background:var(--muted-2)}
+.gp-brief-dev.sev-critical .gp-alert-bar{background:var(--sev-critical)}
+.gp-brief-dev.sev-high .gp-alert-bar{background:var(--sev-watch)}
+.gp-brief-dev.sev-medium .gp-alert-bar{background:var(--sev-info)}
+.gp-brief-dev.sev-low .gp-alert-bar{background:var(--muted-2)}
+.gp-brief-dev .grow{min-width:0;flex:1}
+.gp-brief-dev .title{font-weight:600;overflow-wrap:break-word}
+.gp-brief-dev .meta{font-size:10px;color:var(--muted-2);margin-top:2px;overflow-wrap:break-word}
+.gp-brief-watch{display:flex;gap:8px;align-items:flex-start;background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--sev-info);border-radius:var(--radius);padding:8px 10px;font-size:12px;margin-bottom:6px}
+.gp-brief-watch.sev-critical{border-left-color:var(--sev-critical)}
+.gp-brief-watch.sev-watch{border-left-color:var(--sev-watch)}
+.gp-brief-watch.sev-info{border-left-color:var(--sev-info)}
+.gp-brief-watch .grow{min-width:0;flex:1}
+.gp-brief-watch .title{font-weight:600;overflow-wrap:break-word}
+.gp-brief-watch .meta{font-size:10px;color:var(--muted-2);margin-top:2px;overflow-wrap:break-word}
+.gp-brief-level{font-size:10px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;white-space:nowrap;color:var(--text-secondary)}
+.gp-brief-caution{margin-top:10px;font-size:10px;color:var(--muted-2);border-top:1px solid var(--line);padding-top:8px;overflow-wrap:break-word}
+
+/* GUI Phase 8 — Universal Search workspace.
+   Group headers reuse brief headings; rows reuse dashboard row language. */
+.gp-search-group{margin-bottom:12px}
+.gp-search-group h3 a{font-size:11px;font-weight:600;color:var(--sev-info);text-decoration:none;white-space:nowrap}
+.gp-search-group .meta{font-size:10px;color:var(--muted-2)}
+.gp-search-group .meta a{color:var(--sev-info);text-decoration:none}
+.gp-search-row{display:flex;gap:8px;align-items:flex-start;font-size:12px;padding:6px 0;border-top:1px solid var(--line)}
+.gp-search-row .grow{min-width:0;flex:1}
+.gp-search-row .title{font-weight:600;overflow-wrap:break-word}
+.gp-search-row .title a{color:inherit;text-decoration:none}
+.gp-search-row .title a:hover{color:var(--sev-info);text-decoration:underline}
+.gp-search-row .meta{font-size:10px;color:var(--muted-2);margin-top:2px;overflow-wrap:break-word}
+#searchBody .gp-map-search{width:100%;box-sizing:border-box}
+
+/* GUI Phase 9 — responsive/mobile hardening (final GUI phase).
+   Section headers added across Phases 4-8 carry update stamps that must
+   wrap (never crush titles) on narrow screens; filter/button controls
+   meet a 36px touch target so Briefings/Search/Web/Map controls stay
+   tappable; expensive WebGL stays lazy/opt-in (see performance layer). */
+@media(max-width:720px){
+  .gp-section-header{flex-wrap:wrap;row-gap:6px}
+  .gp-section-header .gp-header-meta{flex:1 1 100%;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:10px}
+  .gp-filter{min-height:36px}
+  .gp-web-controls select{min-height:36px}
+  .gp-map-ops-bar .meta{flex:1 1 100%}
+}
+@media(pointer:coarse){
+  .gp-filter{min-height:36px}
+  .gp-btn{min-height:36px}
+}

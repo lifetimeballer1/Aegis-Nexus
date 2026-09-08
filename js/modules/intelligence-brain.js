@@ -26,6 +26,22 @@ function matches(node) {
   return hay.includes(query);
 }
 
+/* GUI Phase 4 — shared severity language for Brain kinds (never decorative):
+ * conflict/cartel = critical, chokepoint = watch, economic/country/entity = info. */
+function brainSeverity(kind) {
+  const k = String(kind || '').toLowerCase();
+  if (k === 'conflict' || k === 'cartel') return 'critical';
+  if (k === 'chokepoint') return 'watch';
+  return 'info';
+}
+
+function brainChip(kind) {
+  const sev = brainSeverity(kind);
+  if (sev === 'critical') return 'gp-sev-critical';
+  if (sev === 'watch') return 'gp-sev-high';
+  return 'gp-sev-medium';
+}
+
 function asArray(value) {
   if (Array.isArray(value)) return value;
   if (value && typeof value === 'object') return [value];
@@ -88,10 +104,12 @@ export function renderIntelligenceBrain() {
   const el = document.getElementById('brainBody');
   const updatedEl = document.getElementById('brainUpdated');
   if (!el) return;
-  const { snapshot } = getState();
-  const brain = snapshot?.intelligenceBrain || null;
+  const { snapshot, intelligenceBrain, status } = getState();
+  const brain = intelligenceBrain || snapshot?.intelligenceBrain || null;
   if (!brain || !Array.isArray(brain.nodes)) {
-    el.innerHTML = '<div class="gp-state"><div class="gp-state-title">Intelligence Brain unavailable</div><div>The latest cross-domain brain artifact is not present in this snapshot.</div></div>';
+    el.innerHTML = status === 'loading'
+      ? '<div class="gp-state"><div class="gp-spinner"></div><div>Loading intelligence workspace…</div></div>'
+      : '<div class="gp-state"><div class="gp-state-title">Intelligence Brain unavailable</div><div>The canonical brain artifact failed to load. Check source health below.</div></div>';
     return;
   }
   const nodes = brain.nodes;
@@ -127,7 +145,7 @@ export function renderIntelligenceBrain() {
       <button id="gpBrainClear" class="gp-btn" type="button">Clear</button>
     </div>
     <div style="font-size:10px;color:var(--muted-2);margin-bottom:7px">Showing ${visible.length} of ${ranked.length} matching nodes${query||kindFilter!=='all'?' · filtered':''}</div>
-    <div class="gp-brain-grid">${visible.map(n=>`<button class="gp-card gp-brain-node ${selectedId===String(n.id)?'selected':''}" data-brain-node="${escapeHtml(String(n.id))}" type="button"><div class="gp-card-title">${escapeHtml(n.label||n.name||n.id)}</div><div class="gp-card-meta"><span class="gp-badge category">${escapeHtml(n.kind||n.type||'entity')}</span><span>${degree[n.id]||0} links</span></div></button>`).join('')}</div>
+    <div class="gp-brain-grid">${visible.map(n=>`<button class="gp-card gp-brain-node sev-${brainSeverity(n.kind||n.type)} ${selectedId===String(n.id)?'selected':''}" data-brain-node="${escapeHtml(String(n.id))}" type="button"><div class="gp-card-title">${escapeHtml(n.label||n.name||n.id)}</div><div class="gp-card-meta"><span class="gp-sev ${brainChip(n.kind||n.type)}">${escapeHtml(n.kind||n.type||'entity')}</span><span>${degree[n.id]||0} links</span></div></button>`).join('')}</div>
     ${ranked.length===0 ? '<div class="gp-state" style="margin-top:8px">No Brain nodes match the current search/filter.</div>' : ''}
     ${ranked.length>5 ? `<button id="gpBrainMore" class="gp-btn" type="button" style="margin-top:9px;width:100%">${showAll?'Show fewer':'See more nodes'}</button>` : ''}
     ${selected ? `<div class="gp-card gp-brain-details">

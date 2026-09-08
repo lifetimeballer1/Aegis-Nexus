@@ -1,68 +1,112 @@
-/** System & Source Status */
+/** GUI Phase 6 — Sources / Validation / System Health workspace.
+ * Every figure is read from the canonical source-health artifact
+ * (data/source_health.json with summary/sources) plus fetch errors.
+ * Source state uses the artifact's real fields (status online/failed,
+ * consecutiveFailures, contentStatus, freshnessMinutes) — never invented.
+ * Severity follows the shared language: green healthy, amber watch,
+ * red critical. Missing data renders honest loading/empty states. */
 
 import { getState } from '../core/state.js';
 import { formatRelativeTime, escapeHtml } from '../core/utils.js';
 
+let statusFilter = 'all';
+let statusQuery = '';
+let showAllSources = false;
+
+const SOURCE_PAGE = 12;
+
+function isOnline(source) {
+  return String(source?.status || '').toLowerCase() === 'online';
+}
+
+function sourceDetail(source) {
+  const parts = [];
+  if (source?.type || source?.category) parts.push(String(source.type || source.category));
+  if (source?.contentStatus) parts.push(String(source.contentStatus).replace(/_/g, ' '));
+  if (Number.isFinite(Number(source?.freshnessMinutes))) parts.push(`${Number(source.freshnessMinutes).toFixed(0)}m fresh`);
+  const fails = Number(source?.consecutiveFailures || 0);
+  if (fails > 0) parts.push(`${fails} consecutive failure${fails === 1 ? '' : 's'}`);
+  return parts.join(' · ');
+}
 export function renderStatus() {
   const el = document.getElementById('statusBody');
-  const dot = document.getElementById('statusDot');
-  const globalUpdated = document.getElementById('globalLastUpdated');
   if (!el) return;
 
-  const { status, lastSuccessfulFetch, sourceHealth, sources, errors, snapshot } = getState();
+  const { status, lastSuccessfulFetch, sourceHealth, errors } = getState();
+  const stamp = document.getElementById('statusUpdated');
 
-  if (dot) {
-    dot.className = 'gp-status-dot ' + (status === 'live' ? 'live' : status === 'error' ? 'error' : 'stale');
+  if (!sourceHealth && status === 'loading') {
+    el.innerHTML = '<div class="gp-state"><div class="gp-spinner"></div><div>Loading source health…</div></div>';
+    return;
   }
-  if (globalUpdated) {
-    globalUpdated.textContent = lastSuccessfulFetch
-      ? `Updated ${formatRelativeTime(lastSuccessfulFetch)}`
-      : 'No successful fetch yet';
-  }
-
-  let healthHtml = '';
-  if (sourceHealth?.sources || Array.isArray(sourceHealth)) {
+  if (!sourceHealth) {
+    el.innerHTML = '<div class="gp-state"><div class="gp-state-title">Source health unavailable</div><div>Health telemetry failed to load. Check fetch errors below.</div></div>';
+  } else {
+    const summary = sourceHealth.summary || {};
     const list = Array.isArray(sourceHealth) ? sourceHealth : (sourceHealth.sources || []);
-    healthHtml = `
-      <div class="gp-grid gp-grid-2" style="margin-top:12px">
-        ${list.slice(0, 10).map(s => {
-          const name = s.name || s.id || s.domain || 'Source';
-          const ok = s.ok ?? s.healthy ?? s.status === 'ok';
-          const age = s.lastSuccess || s.last_fetched || s.updatedAt;
-          return `
-            <div class="gp-card" style="padding:10px">
-              <div style="font-weight:600;font-size:12px">${escapeHtml(name)}</div>
-              <div class="gp-card-meta">
-                <span class="gp-badge ${ok ? 'conf-high' : 'conf-unver'}">${ok ? 'OK' : 'ISSUE'}</span>
-                <span class="gp-time">${formatRelativeTime(age)}</span>
-              </div>
-            </div>`;
-        }).join('')}
-      </div>`;
-  }
+    const total = Number(summary.total ?? list.length);
+    const online = list.filter(isOnline);
+    const failed = list.filter(s => !isOnline(s));
+    const onlineWithData = Number(summary.onlineWithData ?? online.length);
+    const failedCount = Number(summary.failed ?? failed.length);
+    const pillSev = failedCount === 0 ? 'healthy' : (online.length ? 'watch' : 'critical');
 
-  const errorList = Object.entries(errors || {});
-  el.innerHTML = `
-    <div class="gp-card">
+    const visible = (statusFilter === 'online' ? online : statusFilter === 'failed' ? failed : list)
+      .filter(s => !statusQuery || [s.name, s.id, s.domain, s.url, s.type, s.category].join(' ').toLowerCase().includes(statusQuery));
+    const shown = showAllSources ? visible : visible.slice(0, SOURCE_PAGE);
+
+    const chips = [
+      `<button class="gp-filter${statusFilter === 'all' ? ' active' : ''}" data-status-filter="all" type="button">All (${list.length})</button>`,
+      `<button class="gp-filter${statusFilter === 'online' ? ' active' : ''}" data-status-filter="online" type="button">Online (${online.length})</button>`,
+      `<button class="gp-filter${statusFilter === 'failed' ? ' active' : ''}" data-status-filter="failed" type="button">Failed (${failed.length})</button>`
+    ].join('');
+
+    const rows = shown.map(s => {
+      const ok = isOnline(s);
+      const name = s.name || s.id || s.domain || 'Unnamed source';
+      const age = s.lastSuccess || s.lastChecked || s.updatedAt;
+      return `<div class="gp-source-row sev-${ok ? 'healthy' : 'critical'}"><div class="grow"><div class="title">${escapeHtml(String(name))}</div>`
+        + `<div class="meta">${escapeHtml(sourceDetail(s))}${age ? ` · ${escapeHtml(formatRelativeTime(age))}` : ''}</div></div>`
+        + (ok ? '<span class="gp-source-chip sev-healthy">Online</span>' : `<span class="gp-sev gp-sev-critical">Failed</span>`) + '</div>';
+    }).join('');
+
+    el.innerHTML = `
+    <div class="gp-card gp-source-summary sev-${pillSev}">
       <div style="display:flex;justify-content:space-between;align-items:center;gap:10px">
         <div>
           <div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em">Overall Status</div>
-          <div style="font-size:16px;font-weight:700;text-transform:capitalize">${escapeHtml(status)}</div>
+          <div style="font-size:16px;font-weight:700">${failedCount === 0 ? 'All reporting sources online' : `${failedCount} source${failedCount === 1 ? '' : 's'} failing`}</div>
+          <div style="font-size:11px;color:var(--muted-2);margin-top:2px">${total} tracked · ${onlineWithData} reporting with data · updated ${escapeHtml(formatRelativeTime(sourceHealth.updatedAt || lastSuccessfulFetch))}</div>
         </div>
         <div style="text-align:right;font-size:12px;color:var(--muted)">
           Last successful load<br>
-          <strong>${formatRelativeTime(lastSuccessfulFetch)}</strong>
+          <strong>${escapeHtml(formatRelativeTime(lastSuccessfulFetch))}</strong>
         </div>
       </div>
     </div>
-    ${errorList.length ? `
-      <div class="gp-card" style="margin-top:10px;border-color:var(--red-dim)">
-        <div style="font-weight:700;color:var(--red);margin-bottom:6px">Recent errors</div>
-        ${errorList.map(([k, v]) => `<div style="font-size:12px"><strong>${escapeHtml(k)}</strong>: ${escapeHtml(v)}</div>`).join('')}
-      </div>` : ''}
-    ${healthHtml}
-    <div style="margin-top:14px;font-size:11px;color:var(--muted-2)">
-      Global Pulse uses only public open sources. Source availability can change. Always verify critical claims against primary sources.
-    </div>
-  `;
+    <div class="gp-source-controls"><input id="statusSearch" class="gp-map-search" type="search" aria-label="Filter sources" placeholder="Filter sources…" value="${escapeHtml(statusQuery)}"></div>
+    <div class="gp-filter-row" role="group" aria-label="Filter sources by state">${chips}`
+      + `<span class="meta" style="align-self:center;font-size:10px;color:var(--muted-2)">Showing ${shown.length} of ${visible.length} sources</span></div>`
+      + (rows || '<div class="gp-state"><div class="gp-state-title">No sources match</div><div>Nothing in the health registry matches this state or search.</div></div>')
+      + (visible.length > SOURCE_PAGE ? `<button id="statusMore" class="gp-btn gp-more" type="button">${showAllSources ? 'Show fewer' : `Show all ${visible.length}`}</button>` : '');
+
+    el.querySelectorAll('[data-status-filter]').forEach(btn => btn.addEventListener('click', () => {
+      statusFilter = btn.dataset.statusFilter; showAllSources = false; renderStatus();
+    }));
+    el.querySelector('#statusSearch')?.addEventListener('input', event => {
+      statusQuery = String(event.target.value || '').trim().toLowerCase(); showAllSources = false; renderStatus();
+      const input = document.getElementById('statusSearch'); input?.focus(); input?.setSelectionRange(input.value.length, input.value.length);
+    });
+    el.querySelector('#statusMore')?.addEventListener('click', () => { showAllSources = !showAllSources; renderStatus(); });
+
+    if (stamp) stamp.textContent = sourceHealth.updatedAt ? `Updated ${formatRelativeTime(sourceHealth.updatedAt)} · ${online.length}/${list.length} online` : '';
+  }
+
+  const errorList = Object.entries(errors || {});
+  if (errorList.length) {
+    el.insertAdjacentHTML('beforeend',
+      `<div class="gp-card" style="margin-top:10px;border-color:var(--red-dim)"><div style="font-weight:700;color:var(--red);margin-bottom:6px">Recent errors</div>${errorList.map(([k, v]) => `<div style="font-size:12px"><strong>${escapeHtml(k)}</strong>: ${escapeHtml(v)}</div>`).join('')}</div>`);
+  }
+  el.insertAdjacentHTML('beforeend',
+    '<div style="margin-top:14px;font-size:11px;color:var(--muted-2)">Global Pulse uses only public open sources. Source availability can change. Always verify critical claims against primary sources.</div>');
 }
