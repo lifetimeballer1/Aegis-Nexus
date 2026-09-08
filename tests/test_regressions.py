@@ -200,6 +200,30 @@ def test_refresh_projects_repaired_canonical_data_before_publishing_graph(monkey
     assert [stage for stage in stages if stage in expected] == expected
 
 
+def test_graph_projection_preserves_semantics_provenance_and_endpoint_limits(tmp_path, monkeypatch):
+    import build_intelligence_graph as graph
+
+    snapshot, output = tmp_path / 'snapshot.json', tmp_path / 'graph.json'
+    nodes = [{'id': str(i), 'label': str(i), 'mentions': 200-i} for i in range(101)]
+    nodes[-1]['mentions'] = 0
+    evidence = [{'title': 'Explicit test source', 'url': 'https://example.test/source'}]
+    edges = [dict(source='0', target='1', relationship=kind, eventIds=[event], evidence=evidence)
+             for kind, event in [('trades_with', 'trade1'), ('sanctions', 'sanction'), ('trades_with', 'trade2')]]
+    edges.append(dict(source='0', target='100', relationship='mentioned_with', evidence=evidence))
+    snapshot.write_text(json.dumps({'intelligenceGraph': {'nodes': nodes, 'edges': edges}}), encoding='utf-8')
+    monkeypatch.setattr(graph, 'SNAP', snapshot)
+    monkeypatch.setattr(graph, 'OUT', output)
+    graph.main()
+    result = json.loads(output.read_text(encoding='utf-8'))
+    assert len(result['nodes']) == 100
+    assert len(result['edges']) == 2
+    by_kind = {e['relationship']: e for e in result['edges']}
+    assert by_kind['trades_with']['eventIds'] == ['trade1', 'trade2']
+    assert by_kind['sanctions']['eventIds'] == ['sanction']
+    ids = {node['id'] for node in result['nodes']}
+    assert all(e['source'] in ids and e['target'] in ids for e in result['edges'])
+
+
 def test_phase5_failover_preserves_existing_story_records():
     import source_failover
     existing=[{'url':'https://example.test/old','title':'Existing story','published_date':'2026-09-06T01:00:00Z'},{'url':'https://example.test/keep','title':'Another story','published_date':'2026-09-06T02:00:00Z'}]

@@ -19,13 +19,13 @@ NODE_FIELDS = (
     'importance', 'confidence', 'strategic_relevance', 'geographic_relevance',
     'country', 'region', 'lat', 'lon', 'latitude', 'longitude', 'entity_type',
     'actor_role', 'target_role', 'roles', 'events', 'event_ids', 'updatedAt',
-    'time', 'status',
+    'time', 'status', 'eventIds',
 )
 EDGE_FIELDS = (
     'source', 'target', 'sid', 'tid', 'weight', 'types', 'relationship',
     'confidence', 'importance', 'strategic_relevance', 'geographic_relevance',
     'actor_role', 'target_role', 'roles', 'event_ids', 'events', 'updatedAt',
-    'time', 'status',
+    'time', 'status', 'eventIds', 'strength',
 )
 
 
@@ -115,9 +115,8 @@ def main():
             'evidenceCount': len(evidence),
         })
 
-        # Deduplicate only identical resolved endpoint pairs while preserving
-        # all evidence-backed metadata. Never create a new relationship here.
-        key = (source, target)
+        # Different actions between the same endpoints are separate claims.
+        key = (source, edge['relationship'], target)
         if key not in seen:
             seen[key] = edge
             edges.append(edge)
@@ -128,6 +127,9 @@ def main():
             existing['evidence'] = existing['evidence'][:12]
             existing['evidenceCount'] = len(existing['evidence'])
             existing['types'] = list(dict.fromkeys((existing.get('types') or []) + edge['types']))
+            for field in ('eventIds', 'event_ids'):
+                if field in edge:
+                    existing[field] = list(dict.fromkeys(existing.get(field, []) + edge[field]))
             _merge_metadata(edge, existing)
 
     degree = {node['id']: 0 for node in nodes}
@@ -140,6 +142,8 @@ def main():
 
     nodes.sort(key=lambda n: (n['importance'], n['mentions'], n['label']), reverse=True)
     edges.sort(key=lambda e: (e['weight'], e['evidenceCount']), reverse=True)
+    published_ids = {node['id'] for node in nodes[:100]}
+    edges = [edge for edge in edges if edge['source'] in published_ids and edge['target'] in published_ids]
 
     payload = {
         'updatedAt': graph.get('updatedAt') or data.get('updatedAt') or '',
