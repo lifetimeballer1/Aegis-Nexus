@@ -161,14 +161,14 @@ def test_rss_parser_accepts_normal_feed_shape():
 def test_source_registry_preserves_explicit_categories():
     import news_feed_db
     registry = ROOT / 'data/sources.json'
-    original = registry.read_text(encoding='utf-8') if registry.exists() else None
+    original = registry.read_bytes() if registry.exists() else None
     try:
         registry.write_text('{"feeds":[{"name":"Category Test","url":"https://example.test/rss","type":"news","category":"security"}]}', encoding='utf-8')
         sources = news_feed_db.load_sources()
         assert sources['category_test']['category'] == 'security'
     finally:
         if original is not None:
-            registry.write_text(original, encoding='utf-8')
+            registry.write_bytes(original)
 
 
 def test_browser_qa_layer_is_installed_and_distinguishes_fetch_failure():
