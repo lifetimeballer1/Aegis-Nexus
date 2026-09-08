@@ -111,8 +111,10 @@ export function renderAlerts() {
   const rows = shown.map(item => {
     const open = expandedKey === item.key;
     const links = evidenceLinks(item.evidence);
+    const initial = esc(String(item.title || 'A').trim().charAt(0).toUpperCase());
+    const thumbBg = item.sev === 'critical' ? 'linear-gradient(135deg,#3d0f18,#160a0e)' : item.sev === 'high' ? 'linear-gradient(135deg,#3a2a0c,#14100a)' : item.sev === 'medium' ? 'linear-gradient(135deg,#10294a,#080f1a)' : 'linear-gradient(135deg,#1a2430,#0a0f14)';
     return `<div class="gp-alert sev-${item.sev}"><button class="gp-alert-head" data-alert-toggle="${esc(item.key)}" type="button" aria-expanded="${open}">`
-      + `<span class="gp-alert-bar"></span><span class="grow" style="min-width:0;flex:1"><span class="title" style="font-weight:600;overflow-wrap:break-word">${esc(item.title)}</span>`
+      + `<span class="gp-alert-bar"></span><span class="cc-thumb" style="flex:0 0 44px;width:44px;height:44px;font-size:16px;background:${thumbBg}" aria-hidden="true">${initial}</span><span class="grow" style="min-width:0;flex:1"><span class="title" style="font-weight:600;overflow-wrap:break-word">${esc(item.title)}</span>`
       + `<div class="meta" style="font-size:10px;color:var(--muted-2);margin-top:2px">${esc(item.sub)}${item.sub && item.meta ? ' · ' : ''}${esc(item.meta)}${item.time ? ` · ${esc(formatRelativeTime(item.time))}` : ''}</div></span>`
       + `<span class="gp-sev gp-sev-${item.sev}">${esc(item.sevLabel)}</span></button>`
       + (open ? `<div class="gp-alert-detail">${item.detail ? `<div style="margin-bottom:6px">${esc(item.detail)}</div>` : ''}${links || '<div style="color:var(--muted-2)">No linked evidence records in this snapshot.</div>'}</div>` : '')

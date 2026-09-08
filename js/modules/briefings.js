@@ -83,9 +83,14 @@ export function renderBriefings() {
 
   const method = brief.methodology || {};
 
+  const judgments = developments.slice(0, 3).map((d, i) =>
+    `<div class="gp-brief-watch sev-info"><div class="grow"><div class="title">${i + 1}. ${esc(d.title || 'Untitled development')}</div>`
+    + `<div class="meta">${d.reportCount ?? '—'} reports · ${d.independentSourceCount ?? '—'} independent sources · confidence ${esc(d.confidence || 'ungraded')}</div></div></div>`).join('');
+
   el.innerHTML = `<div class="gp-brief-head"><div class="gp-brief-title">${esc(brief.headline?.title || 'Global Intelligence Brief')}</div>`
     + `<div class="meta">${esc(brief.headline?.description || '')}</div>`
     + `<div class="meta">Snapshot ${esc(formatRelativeTime(freshness.snapshotUpdatedAt))} · events ${esc(formatRelativeTime(freshness.eventsUpdatedAt))} · assessments ${esc(formatRelativeTime(freshness.assessmentsUpdatedAt))}</div></div>`
+    + (judgments ? `<h3 class="gp-brief-h">Key Judgments</h3>${judgments}` : '')
     + `<h3 class="gp-brief-h">Top developments</h3>`
     + `<div class="gp-filter-row" role="group" aria-label="Filter developments by category">${chips}`
     + `<span class="meta" style="align-self:center;font-size:10px;color:var(--muted-2)">Showing ${shown.length} of ${visible.length} developments</span></div>`
