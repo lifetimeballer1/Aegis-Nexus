@@ -222,6 +222,13 @@ def test_graph_projection_preserves_semantics_provenance_and_endpoint_limits(tmp
     assert by_kind['sanctions']['eventIds'] == ['sanction']
     ids = {node['id'] for node in result['nodes']}
     assert all(e['source'] in ids and e['target'] in ids for e in result['edges'])
+    import validate_intelligence_graph as contract
+    monkeypatch.setattr(contract, 'GRAPH', output)
+    contract.main()
+    result['edges'].append(dict(result['edges'][0]))
+    output.write_text(json.dumps(result), encoding='utf-8')
+    with pytest.raises(AssertionError, match='duplicate relationship claim'):
+        contract.main()
 
 
 def test_phase5_failover_preserves_existing_story_records():

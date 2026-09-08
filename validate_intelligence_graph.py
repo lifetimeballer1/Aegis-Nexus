@@ -31,8 +31,10 @@ def main():
         assert source != target, 'self-loop is not allowed in published graph'
         evidence = edge.get('evidence')
         assert isinstance(evidence, list) and evidence, 'published edge must retain evidence'
-        pair = (source, target)
-        assert pair not in pairs, f'duplicate edge pair: {pair}'
+        relationship = str(edge.get('relationship') or '').strip()
+        assert relationship, 'edge relationship missing'
+        pair = (source, relationship, target)
+        assert pair not in pairs, f'duplicate relationship claim: {pair}'
         pairs.add(pair)
         assert int(edge.get('evidenceCount', 0) or 0) >= 1, 'edge evidenceCount missing'
 
