@@ -16,6 +16,7 @@ export const CONFIG = {
     mapPoints: './data/map_points.json',
     whatChanged: './data/what_changed.json',
     eventHistory: './data/event_history.json',
+    historicalTrends: './data/historical_trends.json',
     intelligenceBrief: './data/intelligence_brief.json'
   },
   fetch: {

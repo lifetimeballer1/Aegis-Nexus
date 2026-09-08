@@ -120,7 +120,11 @@ export function initMap(){
   if(!el||map||typeof L==='undefined')return;
   map=L.map(el,{center:CONFIG.mapDefaultCenter,zoom:CONFIG.mapDefaultZoom,worldCopyJump:true,preferCanvas:true,zoomControl:true});
   map.createPane('gp-brain-links').style.zIndex='430';map.createPane('gp-signals').style.zIndex='650';
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap contributors'}).addTo(map);
+  /* Dark operational basemap (CARTO Dark Matter pattern) + OSM fallback for offline/CSP */
+  const dark=L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{maxZoom:19,subdomains:'abcd',attribution:'© OpenStreetMap contributors © CARTO'});
+  const osm=L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap contributors'});
+  dark.addTo(map);
+  dark.on('tileerror',()=>{try{if(!map.hasLayer(osm))osm.addTo(map);}catch{}});
   brainLinks=L.layerGroup().addTo(map);
   for(const k of Object.keys(LAYERS)){groups[k]=makeGroup();groups[k].addTo(map)}
   controls();ensureMapSize();map.on('click',closeDetail);

@@ -50,7 +50,7 @@ export async function loadCoreData({force=false}={}){
   const prev=getState();
   const cold=!prev.snapshot&&!prev.liveArticles&&!prev.intelligenceGraph;
   if(cold)setState({status:'loading'});
-    const urls=[['snapshot',CONFIG.endpoints.snapshot],['liveArticles',CONFIG.endpoints.liveArticles],['intelligenceGraph',CONFIG.endpoints.intelligenceGraph],['intelligenceBrain',CONFIG.endpoints.intelligenceBrain],['sources',CONFIG.endpoints.sources],['sourceHealth',CONFIG.endpoints.sourceHealth],['mapEvents',CONFIG.endpoints.mapEvents],['mapRegional',CONFIG.endpoints.mapRegional],['mapCartel',CONFIG.endpoints.mapCartel],['mapLinks',CONFIG.endpoints.mapLinks],['mapPoints',CONFIG.endpoints.mapPoints],['whatChanged',CONFIG.endpoints.whatChanged],['eventHistory',CONFIG.endpoints.eventHistory],['intelligenceBrief',CONFIG.endpoints.intelligenceBrief]];
+    const urls=[['snapshot',CONFIG.endpoints.snapshot],['liveArticles',CONFIG.endpoints.liveArticles],['intelligenceGraph',CONFIG.endpoints.intelligenceGraph],['intelligenceBrain',CONFIG.endpoints.intelligenceBrain],['sources',CONFIG.endpoints.sources],['sourceHealth',CONFIG.endpoints.sourceHealth],['mapEvents',CONFIG.endpoints.mapEvents],['mapRegional',CONFIG.endpoints.mapRegional],['mapCartel',CONFIG.endpoints.mapCartel],['mapLinks',CONFIG.endpoints.mapLinks],['mapPoints',CONFIG.endpoints.mapPoints],['whatChanged',CONFIG.endpoints.whatChanged],['eventHistory',CONFIG.endpoints.eventHistory],['historicalTrends',CONFIG.endpoints.historicalTrends],['intelligenceBrief',CONFIG.endpoints.intelligenceBrief]];
   const results=await Promise.all(urls.map(([label,url])=>fetchJson(url,{force,label,quiet:true})));
   const by=Object.fromEntries(urls.map(([label],i)=>[label,results[i]]));
   const hasAny=by.snapshot.ok||by.liveArticles.ok||by.intelligenceGraph.ok;
@@ -69,6 +69,7 @@ export async function loadCoreData({force=false}={}){
     intelligenceGraph:by.intelligenceGraph.ok?by.intelligenceGraph.data:prev.intelligenceGraph,
     intelligenceBrain:by.intelligenceBrain.ok?by.intelligenceBrain.data:prev.intelligenceBrain,
     intelligenceBrief:keep('intelligenceBrief',prev.intelligenceBrief),
+    historicalTrends:keep('historicalTrends',prev.historicalTrends),
     sources:keep('sources',prev.sources),sourceHealth:keep('sourceHealth',prev.sourceHealth),
     whatChanged:keep('whatChanged',prev.whatChanged),eventHistory:keep('eventHistory',prev.eventHistory),
     mapPoints:by.mapPoints.ok?by.mapPoints.data:prev.mapPoints,
