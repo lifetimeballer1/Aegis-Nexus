@@ -155,9 +155,9 @@ export function renderDashboard() {
       <div class="cc-panel"><h3>▦ Headline Intelligence <a href="#section-breaking">View All →</a></h3>
         <input id="dashSearch" class="gp-map-search" type="search" aria-label="Filter headlines" placeholder="Filter headlines…" value="${esc(query)}" style="margin-bottom:8px">${headRows}</div>
       <div class="cc-panel"><h3>🌐 Global Map <a href="#section-map">View Full Map →</a></h3>
-        <div style="font-size:11px;color:var(--muted);margin-bottom:6px">All Domains · 24H · ${fmtInt(events.length)} signals · dark operational basemap below</div>
+        <div style="font-size:11px;color:var(--muted);margin-bottom:6px">All Domains · 24H · ${fmtInt(events.length)} signals · dark operational basemap</div>
         <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px">${order.slice(0, 6).map(n => `<span class="cc-pill gen">${esc(String(n).toUpperCase().slice(0, 14))} · ${fmtInt(regions[n]?.events ?? regions[n]?.reports)}</span>`).join('')}</div>
-        <div style="flex:1;min-height:220px;border:1px solid var(--line);border-radius:8px;background:radial-gradient(ellipse at 60% 30%,#0d2036 0%,#050b13 65%);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:11px;text-align:center;padding:12px">Operational map renders in full Map section with Dark Matter tiles.<br>Select View Full Map for interaction.</div>
+        <div id="dashMap" role="img" aria-label="Mini operational map" style="min-height:240px;height:260px;border:1px solid var(--line);border-radius:8px;background:#050b13;z-index:1"></div>
         <div class="cc-legend" aria-label="Map legend"><span><i style="background:var(--red)"></i>Critical</span><span><i style="background:var(--amber)"></i>Elevated</span><span><i style="background:var(--blue)"></i>Notable</span><span><i style="background:#cbd5e1"></i>Monitoring</span></div></div>
       <div class="cc-panel"><h3>🎯 Priority Regions <a href="#section-map">View All →</a></h3>
         <table class="cc-table" aria-label="Priority regions"><thead><tr><th>#</th><th>Region</th><th>Activity</th><th>Impact</th><th>Trend</th></tr></thead><tbody>${regionRows}</tbody></table>
@@ -184,4 +184,47 @@ export function renderDashboard() {
   }
   const stamp = document.getElementById('dashboardUpdated');
   if (stamp) stamp.textContent = snapshot?.updatedAt ? `Updated ${formatRelativeTime(snapshot.updatedAt)}` : '';
+  initDashMap(state);
+}
+
+let dashMap = null;
+let dashMapFp = '';
+function initDashMap(state) {
+  try {
+    const host = document.getElementById('dashMap');
+    if (!host || typeof L === 'undefined') return;
+    const markers = Array.isArray(state.mapPoints?.markers) ? state.mapPoints.markers : [];
+    const fp = `${state.mapPoints?.updatedAt || ''}|${markers.length}|${state.snapshot?.updatedAt || ''}`;
+    if (!dashMap) {
+      dashMap = L.map(host, { center: [20, 10], zoom: 2, worldCopyJump: true, preferCanvas: true, zoomControl: false, attributionControl: true, scrollWheelZoom: false });
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', { maxZoom: 18, subdomains: 'abcd', attribution: '© OSM © CARTO' }).addTo(dashMap);
+      L.control.zoom({ position: 'bottomright' }).addTo(dashMap);
+      setTimeout(() => { try { dashMap.invalidateSize(); } catch {} }, 300);
+      if (typeof IntersectionObserver !== 'undefined') {
+        new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { try { dashMap.invalidateSize(); } catch {} } }), { rootMargin: '200px' }).observe(host);
+      }
+    }
+    if (fp === dashMapFp) return;
+    dashMapFp = fp;
+    if (dashMap._dashLayer) dashMap.removeLayer(dashMap._dashLayer);
+    const layer = L.layerGroup().addTo(dashMap);
+    dashMap._dashLayer = layer;
+    const colorFor = (m) => {
+      const s = `${m.layer || ''} ${m.type || ''}`.toLowerCase();
+      if (/cartel|crime|gang/.test(s)) return '#ff8a35';
+      if (/hazard|gdacs|earthquake|flood|storm|fire/.test(s)) return '#ffd34d';
+      if (/strateg/.test(s)) return '#4d9aff';
+      return '#ff405f';
+    };
+    // Deterministic thin sample: every Nth marker so mini-map stays fast and honest.
+    const step = Math.max(1, Math.floor(markers.length / 350));
+    let plotted = 0;
+    for (let i = 0; i < markers.length && plotted < 350; i += step) {
+      const m = markers[i];
+      const lat = Number(m.lat), lon = Number(m.lng);
+      if (!Number.isFinite(lat) || !Number.isFinite(lon) || Math.abs(lat) > 90 || Math.abs(lon) > 180) continue;
+      L.circleMarker([lat, lon], { radius: 4, color: '#fff', weight: 1, fillColor: colorFor(m), fillOpacity: 0.95, interactive: false }).addTo(layer);
+      plotted++;
+    }
+  } catch {}
 }
