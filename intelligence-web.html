@@ -15,10 +15,10 @@
 #labels{position:fixed;inset:0;z-index:8;pointer-events:none;overflow:hidden}
 .node-label{position:absolute;transform:translate(-50%,-50%);white-space:nowrap;color:#e8f5fb;text-shadow:0 2px 8px #000;font:700 10px system-ui,sans-serif;opacity:.88;border:1px solid transparent;border-radius:6px;padding:2px 4px;background:rgba(0,0,0,.28)}
 .node-label .dot{display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:4px}
-.hud{position:fixed;left:14px;top:14px;width:min(720px,calc(100vw - 28px));z-index:30}.hud.collapsed{transform:translateY(-125%);opacity:0;pointer-events:none}
+.hud{position:fixed;left:14px;top:54px;max-height:calc(100vh - 170px);overflow:auto;width:min(720px,calc(100vw - 28px));z-index:30}.hud.collapsed{transform:translateY(-125%);opacity:0;pointer-events:none}
 .control-toggle{position:fixed;left:14px;top:14px;z-index:1200;border:1px solid var(--line);background:#07121b;color:var(--text);border-radius:9px;padding:8px 10px;min-height:34px;font-size:9px;font-weight:850}.control-toggle.active{color:var(--green);border-color:var(--green)}
 .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px 12px;backdrop-filter:blur(14px);box-shadow:0 12px 40px #000}.brand{color:var(--green);font-weight:900;letter-spacing:.14em;font-size:11px}.sub{color:var(--muted);font-size:10px;margin-top:4px;line-height:1.4}.row{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
-input,button{border:1px solid var(--line);background:#07121b;color:var(--text);border-radius:8px;padding:7px 9px;font-size:10px}input{flex:1;min-width:140px}button{cursor:pointer;font-weight:750}button.active,.filter.active{color:var(--green);border-color:var(--green)}#stats{margin-top:8px;color:var(--muted);font-size:10px}.legend{margin-top:6px;color:var(--muted);font-size:9px;line-height:1.35}
+input,button,select{border:1px solid var(--line);background:#07121b;color:var(--text);border-radius:8px;padding:7px 9px;font-size:10px}select{width:100%;max-width:100%}input{flex:1;min-width:140px}button{cursor:pointer;font-weight:750}button.active,.filter.active{color:var(--green);border-color:var(--green)}#stats{margin-top:8px;color:var(--muted);font-size:10px}.legend{margin-top:6px;color:var(--muted);font-size:9px;line-height:1.35}
 .timeline{position:fixed;left:14px;bottom:14px;z-index:30;width:min(520px,calc(100vw - 28px))}.timeline .card{padding:8px 10px}.timeline b{color:var(--green);font-size:9px;letter-spacing:.1em}
 #details{position:fixed;right:14px;top:14px;width:min(360px,calc(100vw - 28px));max-height:calc(100vh - 28px);overflow:auto;z-index:40;display:none;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px;backdrop-filter:blur(14px)}#details.open{display:block}#detail{padding-top:30px}.detail-close{position:absolute;right:10px;top:8px}
 #loading{position:fixed;inset:0;display:grid;place-items:center;background:rgba(0,0,0,.55);z-index:2000;color:var(--muted);font-size:12px}
@@ -35,18 +35,20 @@ input,button{border:1px solid var(--line);background:#07121b;color:var(--text);b
   <div class="brand">AEGIS NEXUS // INTELLIGENCE BRAIN</div>
   <div class="sub">Living cross-domain knowledge graph. Public-source relationships are evidence/context links, not proof of causation, coordination, intent or responsibility.</div>
   <div class="row"><input id="search" aria-label="Search intelligence graph" placeholder="Search countries, conflicts, events, organizations…"><button id="clear">CLEAR</button><button id="refresh">↻ REFRESH</button></div>
-  <div class="row"><button class="filter active" data-kind="all">ALL</button><button class="filter" data-kind="conflict">CONFLICT</button><button class="filter" data-kind="military">MILITARY</button><button class="filter" data-kind="geopolitical">GEOPOLITICAL</button><button class="filter" data-kind="political">POLITICAL</button><button class="filter" data-kind="economic">ECONOMIC</button><button class="filter" data-kind="market">MARKETS</button><button class="filter" data-kind="organized-crime">CRIMINAL</button><button class="filter" data-kind="infrastructure">INFRASTRUCTURE</button><button class="filter" data-kind="organization">ORGANIZATIONS</button><button class="filter" data-kind="country">COUNTRIES</button><button class="filter" data-kind="event">EVENTS</button></div>
-  <div class="row"><button id="reset">RESET VIEW</button><button id="orbit" class="active">3D ORBIT</button><button id="flow" class="active">RELATIONSHIPS</button><button id="labels-toggle" class="active">LABELS</button></div>
-  <div id="stats">Preparing intelligence graph…</div>
+  <div class="row"><button class="filter active" data-kind="all">ALL</button><button class="filter" data-kind="country">COUNTRIES</button><button class="filter" data-kind="person">PEOPLE</button><button class="filter" data-kind="government">GOVERNMENT</button><button class="filter" data-kind="military">MILITARY</button><button class="filter" data-kind="organization">ORGANIZATIONS</button><button class="filter" data-kind="economic">ECONOMY</button><button class="filter" data-kind="location">PLACES</button><button class="filter" data-kind="conflict">CONFLICTS</button><button class="filter" data-kind="infrastructure">INFRASTRUCTURE</button><button class="filter" data-kind="technology">TECHNOLOGY</button><button class="filter" data-kind="other">OTHER</button></div>
+  <div class="row"><button id="reset">RESET VIEW</button><button id="orbit">3D ORBIT</button><button id="flow" class="active">RELATIONSHIPS</button><button id="labels-toggle" class="active">LABELS</button></div>
+  <div class="row"><select id="node-select" aria-label="Select matching entity"><option>Loading entities…</option></select></div>
+  <div id="stats" role="status">Preparing intelligence graph…</div>
   <div class="legend">SEMANTIC WEBGL: RED SANCTIONS · ORANGE MILITARY ACTION · GREEN NEGOTIATION · GOLD TRADE/ECONOMIC · BLUE TECHNOLOGY · TEAL ENERGY · PURPLE CYBER/POLITICAL · ACTION ARROWS = ACTOR → TARGET · WHITE/BLUE = EVIDENCE CONTEXT</div>
  </div>
 </div>
-<div class="timeline"><div class="card"><b>NETWORK ACTIVITY</b><div class="row"><button class="period active" data-period="all">ALL</button><button class="period" data-period="24">24H</button><button class="period" data-period="168">7D</button><button class="period" data-period="720">30D</button><button class="period" data-period="2160">90D</button></div><span id="trend" hidden></span></div></div>
+<div class="timeline"><div class="card"><b>NETWORK ACTIVITY</b><div class="row"><button class="period active" data-period="all">ALL</button><button class="period" data-period="24">24H</button><button class="period" data-period="168">7D</button><button class="period" data-period="720">30D</button><button class="period" data-period="2160">90D</button></div><span id="trend"></span></div></div>
 <div id="details" aria-hidden="true"><button id="close" class="detail-close" type="button">CLOSE</button><div id="detail"></div></div>
 <script src="intelligence_web_runtime_guard.js?v=20260907-guard2"></script>
 <script src="intelligence_web_performance.js?v=20260907-perf2"></script>
 <script src="https://cdn.jsdelivr.net/npm/3d-force-graph@1.79.0/dist/3d-force-graph.min.js"></script>
-<script src="intelligence_web_v2.js?v=20260907-v2fix1"></script>
+<script src="js/intelligence_web_filters.js?v=20260908-filters1"></script>
+<script src="intelligence_web_v2.js?v=20260908-filters1"></script>
 <script src="intelligence_web_controls_fix.js?v=20260907-controlsfix2"></script>
 <script src="intelligence_action_flow.js?v=20260907-flow2"></script>
 <script>

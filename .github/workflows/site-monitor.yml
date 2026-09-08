@@ -22,7 +22,7 @@ jobs:
     steps:
       - name: Check published site and critical data
         env:
-          SITE_URL: https://lifetimeballer1.github.io/global-pulse/
+          SITE_URL: https://lifetimeballer1.github.io/Aegis-Nexus/
         run: |
           set -euo pipefail
           python - <<'PY'
@@ -39,7 +39,7 @@ jobs:
               if dt.tzinfo is None: dt=dt.replace(tzinfo=timezone.utc)
               return (datetime.now(timezone.utc)-dt.astimezone(timezone.utc)).total_seconds()
           html=get('').decode('utf-8','replace')
-          assert 'Global Pulse' in html, 'site title/content missing'
+          assert 'Aegis Nexus' in html, 'site title/content missing'
           assert 'global_pulse_core.js' in html, 'canonical core missing from published site'
           files=['data/snapshot.json','data/history.json','data/sources.json','data/live_articles.json','data/intelligence_graph.json','data/intelligence_brain.json','data/map_points.json']
           for path in files:

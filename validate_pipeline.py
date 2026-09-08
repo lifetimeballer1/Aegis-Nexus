@@ -3,9 +3,9 @@
 import json, math, sys
 from pathlib import Path
 
-SNAPSHOT = Path("snapshot.json")
+SNAPSHOT = Path(__file__).resolve().parent / "data" / "snapshot.json"
 if not SNAPSHOT.exists():
-    print("FAIL: snapshot.json missing")
+    print("FAIL: data/snapshot.json missing")
     sys.exit(1)
 try:
     data = json.loads(SNAPSHOT.read_text(encoding="utf-8"))
@@ -19,7 +19,14 @@ def require(cond,msg):
 
 stories=data.get("stories",[])
 conflicts=data.get("conflicts",[])
-markers=data.get("markers",data.get("map_markers",[]))
+# The browser consumes the canonical coordinate-filtered feed. Snapshot inputs
+# may legitimately contain public reports without a geographic location.
+try:
+    map_data = json.loads((SNAPSHOT.parent / "map_points.json").read_text(encoding="utf-8"))
+    markers = map_data["markers"]
+except (OSError, ValueError, KeyError, TypeError) as exc:
+    print(f"FAIL: invalid canonical map feed: {exc}")
+    sys.exit(1)
 require(isinstance(stories,list),"stories is not a list")
 require(isinstance(conflicts,list),"conflicts is not a list")
 require(isinstance(markers,list),"markers/map_markers is not a list")

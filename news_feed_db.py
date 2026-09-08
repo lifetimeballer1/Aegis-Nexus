@@ -126,6 +126,27 @@ def export_json(conn,limit=EXPORT_LIMIT):
   articles.append({'url':r[0],'title':r[1],'published_date':r[2],'summary_snippet':r[3],'source':r[4],'sourceType':r[5],'category':r[6],'author':r[7],'username':r[8],'credit':credit})
  return json.dumps({'updatedAt':iso_now(),'retentionDays':RETENTION_DAYS,'count':len(articles),'exportLimit':EXPORT_LIMIT,'articles':articles},ensure_ascii=False,indent=2)+'\n'
 def write_export(conn):DATA.mkdir(exist_ok=True);JSON_PATH.write_text(export_json(conn),encoding='utf-8')
+def restore_published_articles(conn):
+ """Recover retained source records after a cache miss, not current feed health."""
+ if conn.execute('SELECT COUNT(*) FROM articles').fetchone()[0] or not JSON_PATH.exists():
+  return 0
+ document=json.loads(JSON_PATH.read_text(encoding='utf-8'))
+ rows=[];now=utc_now();cutoff=now-timedelta(days=RETENTION_DAYS)
+ for article in document.get('articles',[]):
+  if not isinstance(article,dict):continue
+  if not all(isinstance(article.get(k),str) and article[k].strip() for k in ('url','title','source','published_date')):continue
+  if not article['url'].startswith(('https://','http://')):continue
+  try:
+   stamp=datetime.fromisoformat(article['published_date'].replace('Z','+00:00'))
+   if stamp.tzinfo is None or not cutoff<=stamp<=now:continue
+  except ValueError:continue
+  rows.append({'url':article['url'],'title':article['title'],'published_date':article['published_date'],
+   'summary_snippet':article.get('summary_snippet') or '', 'source_name':article['source'],
+   'source_type':article.get('sourceType') or 'news','category':article.get('category') or 'general',
+   'author':article.get('author') or '', 'username':article.get('username') or '',
+   'credit_metadata':json.dumps(article.get('credit') or {},ensure_ascii=False)})
+ return upsert_articles(conn,rows)
+
 def run_cycle(conn):
  sources=load_sources();fetched_rows=[];errors=[];source_results=[];jobs=[]
  with ThreadPoolExecutor(max_workers=MAX_WORKERS) as pool:
@@ -144,6 +165,8 @@ def main():
  parser=argparse.ArgumentParser();parser.add_argument('--once',action='store_true');args=parser.parse_args();DATA.mkdir(exist_ok=True);conn=sqlite3.connect(DB_PATH)
  try:
   init_db(conn)
+  restored=restore_published_articles(conn)
+  if restored:print(f'Restored {restored} retained published articles after database cache miss')
   while True:
    try:status=run_cycle(conn);print(json.dumps({'feedsChecked':status['feedsChecked'],'rowsFetched':status['rowsFetched'],'newArticles':status['newArticles'],'healthySources':status['healthySources'],'emptySources':status['emptySources'],'fallbackSources':status['fallbackSources'],'failedSources':len(status['failedSources']),'exportedArticles':status['exportedArticles']},ensure_ascii=False))
    except Exception as exc:print(f'collector-cycle-error: {type(exc).__name__}: {exc}')

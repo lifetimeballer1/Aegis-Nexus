@@ -12,6 +12,7 @@ on:
       - 'data/**'
       - '.github/workflows/browser-smoke.yml'
       - 'tests/intelligence_web_smoke.py'
+      - 'tests/dashboard_smoke.py'
   workflow_dispatch:
 
 permissions:
@@ -25,6 +26,8 @@ jobs:
   smoke:
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    env:
+      SMOKE_BASE_URL: http://127.0.0.1:4173/Aegis-Nexus
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -40,88 +43,13 @@ jobs:
           python -m playwright install --with-deps chromium
       - name: Start local production server
         run: |
-          python -m http.server 4173 --bind 127.0.0.1 >/tmp/global-pulse-http.log 2>&1 &
+          mkdir -p /tmp/aegis-smoke
+          ln -s "$GITHUB_WORKSPACE" /tmp/aegis-smoke/Aegis-Nexus
+          python -m http.server 4173 --directory /tmp/aegis-smoke --bind 127.0.0.1 >/tmp/global-pulse-http.log 2>&1 &
           echo $! >/tmp/global-pulse-http.pid
           sleep 2
       - name: Run desktop and mobile UI smoke tests
-        run: |
-          python - <<'PY'
-          from playwright.sync_api import sync_playwright
-
-          BASE='http://127.0.0.1:4173'
-
-          def dismiss_startup_modal(page):
-              modal = page.locator('#gp-how-to-read')
-              if modal.count() and modal.is_visible():
-                  close_candidates = [
-                      '#gp-how-to-read button[aria-label*="close" i]',
-                      '#gp-how-to-read button[data-close]',
-                      '#gp-how-to-read .gp-modal-close',
-                      '#gp-how-to-read button'
-                  ]
-                  closed = False
-                  for selector in close_candidates:
-                      candidate = page.locator(selector).first
-                      if candidate.count() and candidate.is_visible():
-                          candidate.click(force=True)
-                          closed = True
-                          break
-                  if not closed:
-                      page.keyboard.press('Escape')
-                  page.wait_for_timeout(150)
-              assert not modal.is_visible(), 'startup how-to-read modal remained open'
-
-          def smoke(page, name):
-              page_errors = []
-              page.on('pageerror', lambda exc: page_errors.append(str(exc)))
-              page.goto(BASE + '/index.html', wait_until='domcontentloaded', timeout=30000)
-              page.locator('#mapContainer').wait_for(timeout=30000)
-              dismiss_startup_modal(page)
-
-              page.locator('#gpMapLayers').wait_for(timeout=30000)
-              page.locator('#gpMapLayers').click()
-              assert page.locator('#gpMapLayerPanel').evaluate("el => el.classList.contains('open')")
-
-              page.locator('#gpMapSearch').fill('Ukraine')
-              page.locator('#gpMapReset').click()
-              count_text = page.locator('#gpMapCount').inner_text()
-              assert 'signals' in count_text.lower(), f'unexpected map count: {count_text}'
-              assert int(count_text.split()[0].replace(',', '')) > 0, f'map has no signals: {count_text}'
-
-              page.evaluate("window.dispatchEvent(new CustomEvent('gp:test-open-map-detail'))")
-              page.locator('#mapSidePanel').wait_for(timeout=10000, state='visible')
-              page.locator('#gpMapClose').wait_for(timeout=10000, state='visible')
-              page.locator('#gpMapClose').click()
-              page.locator('#mapSidePanel').wait_for(timeout=10000, state='hidden')
-
-              frame_el=page.locator('iframe.gp-intelweb-frame')
-              frame_el.scroll_into_view_if_needed()
-              frame=page.frame_locator('iframe.gp-intelweb-frame')
-              toggle=frame.locator('#control-toggle')
-              toggle.wait_for(timeout=30000, state='visible')
-              controls=frame.locator('#controls')
-              controls.wait_for(timeout=30000, state='visible')
-
-              toggle.click()
-              controls.wait_for(timeout=5000, state='visible')
-              assert controls.evaluate("el => el.classList.contains('collapsed')")
-              toggle.click()
-              assert not controls.evaluate("el => el.classList.contains('collapsed')")
-              frame.locator('#clear').wait_for(timeout=5000, state='visible')
-              frame.locator('#clear').click()
-              frame.locator('#reset').wait_for(timeout=5000, state='visible')
-              frame.locator('#reset').click()
-              assert not page_errors, f'page errors: {page_errors}'
-              print(f'SMOKE PASS {name}: startup modal, map layers/search/reset, signal detail/close, lazy Intelligence Web, filter toggle/clear/reset controls')
-
-          with sync_playwright() as p:
-              browser=p.chromium.launch(headless=True)
-              desktop=browser.new_page(viewport={'width':1440,'height':900}, reduced_motion='reduce')
-              smoke(desktop,'desktop')
-              mobile=browser.new_page(viewport={'width':390,'height':844}, reduced_motion='reduce')
-              smoke(mobile,'mobile')
-              browser.close()
-          PY
+        run: python tests/dashboard_smoke.py
       - name: Verify Intelligence Web rendering and boot failure
         run: python tests/intelligence_web_smoke.py
       - name: Upload Intelligence Web screenshots

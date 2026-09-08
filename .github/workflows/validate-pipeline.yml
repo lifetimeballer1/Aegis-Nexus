@@ -2,7 +2,7 @@ name: Validate Global Pulse Pipeline
 
 on:
   workflow_run:
-    workflows: ["Update Global Pulse Snapshot"]
+    workflows: ["Aegis Nexus — Canonical Live Refresh"]
     types: [completed]
   workflow_dispatch:
 
@@ -43,6 +43,6 @@ jobs:
         run: |
           set -e
           test -f index.html
-          test -f snapshot.json
-          test -s snapshot.json
+          test -f data/snapshot.json
+          test -s data/snapshot.json
           echo 'Frontend assets present.'

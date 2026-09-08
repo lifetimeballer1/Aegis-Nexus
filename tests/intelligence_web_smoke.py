@@ -46,6 +46,50 @@ def verify_render(page, name):
     page.locator('#labels-toggle').evaluate('el => el.click()')
     page.screenshot(path=str(OUTPUT / (name + '.png')))
     print('RENDER PASS ' + name + ': ' + json.dumps(state), flush=True)
+    page.locator('#control-toggle').click()
+    verify_controls(page, name)
+    assert not errors, errors
+
+
+def verify_controls(page, name):
+    graph = 'window.__gpGraph'
+    original = page.evaluate(f'{graph}.graphData().nodes.length')
+    page.locator('[data-kind="economic"]').click()
+    assert page.locator('[data-kind="economic"]').get_attribute('aria-pressed') == 'true'
+    assert page.locator('#node-select option').count() > 1
+    page.locator('#reset').click()
+    page.locator('#search').fill('China')
+    assert page.locator('#node-select option').count() > 1
+    page.locator('#node-select').select_option(index=1)
+    page.locator('#details').wait_for(state='visible')
+    assert page.locator('#detail .source-link[href^="http"]').count() > 0
+    page.locator('#close').click()
+    page.locator('#details').wait_for(state='hidden')
+    page.locator('#control-toggle').click()
+    page.locator('#search').fill('no-such-entity-xyz')
+    assert page.evaluate(f'{graph}.graphData().nodes.length') == 0
+    assert page.locator('#node-select').is_disabled()
+    page.locator('#reset').click()
+    assert page.evaluate(f'{graph}.graphData().nodes.length') == original
+    page.locator('[data-period="24"]').click()
+    assert page.locator('[data-period="24"]').get_attribute('aria-pressed') == 'true'
+    assert page.evaluate('''() => {
+        const g = window.__gpGraph.graphData(), now = Date.now();
+        return g.links.every(e => e.evidence.length && e.evidence.every(v => {
+            const t = Date.parse(v.time || v.published_at || v.published_date || '');
+            return t <= now && t >= now - 86400000;
+        }));
+    }''')
+    page.locator('#reset').click()
+    page.locator('#flow').click()
+    assert page.evaluate(f'{graph}.linkVisibility()') is False
+    page.locator('#flow').click()
+    assert page.evaluate(f'{graph}.linkVisibility()') is True
+    page.locator('#refresh').click()
+    page.wait_for_function(f'() => {graph}.graphData().nodes.length > 0')
+    page.set_viewport_size({'width': 600, 'height': 700})
+    page.wait_for_function(f'() => {graph}.width() === 600 && {graph}.height() === 700')
+    print('CONTROLS PASS ' + name + ': category, search, evidence drawer/close, empty/reset, source-date filter, relationships, refresh, resize', flush=True)
 
 
 def verify_failure(browser):
