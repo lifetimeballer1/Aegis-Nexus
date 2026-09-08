@@ -179,6 +179,27 @@ def test_refresh_pipeline_requires_real_market_prices_and_manifest():
     text=(ROOT/'refresh_pipeline.py').read_text(encoding='utf-8'); assert 'market data contains no positive real prices' in text; assert 'refresh_manifest.json' in text; assert 'build_what_changed.py' in text
 
 
+def test_refresh_projects_repaired_canonical_data_before_publishing_graph(monkeypatch):
+    import refresh_pipeline as pipeline
+
+    stages = []
+    monkeypatch.setattr(pipeline, 'run', lambda label, *cmd: stages.append(cmd[1]))
+    monkeypatch.setattr(pipeline, 'load', lambda name: {'rowsFetched': 1, 'exportedArticles': 1})
+    monkeypatch.setattr(pipeline, 'verify_json', lambda *args, **kwargs: {})
+    for name in ('verify_canonical_intelligence', 'verify_graph', 'verify_brain',
+                 'verify_strategic_signals', 'verify_market'):
+        monkeypatch.setattr(pipeline, name, lambda *args: None)
+    monkeypatch.setattr(pipeline, 'write_refresh_manifest', lambda: None)
+    monkeypatch.setattr(pipeline, 'REQUIRED_ARTIFACTS', ())
+    assert pipeline.main() == 0
+    expected = ['build_canonical_intelligence_v3.py', 'repair_strategic_targets.py',
+                'repair_actor_target_roles.py', 'enrich_semantic_relationships.py',
+                'trace_strategic_provenance.py', 'update_intelligence_web.py',
+                'build_intelligence_graph.py', 'build_intelligence_brain.py',
+                'validate_action_intelligence.py']
+    assert [stage for stage in stages if stage in expected] == expected
+
+
 def test_phase5_failover_preserves_existing_story_records():
     import source_failover
     existing=[{'url':'https://example.test/old','title':'Existing story','published_date':'2026-09-06T01:00:00Z'},{'url':'https://example.test/keep','title':'Another story','published_date':'2026-09-06T02:00:00Z'}]
