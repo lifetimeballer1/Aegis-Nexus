@@ -76,10 +76,15 @@ function matches(p){const k=classify(p);if(!enabled[k])return false;if(filter!==
 function controls(){
   const host=document.getElementById('mapContainer')?.parentElement;if(!host||document.getElementById('gpMapControls'))return;
   const box=document.createElement('div');box.id='gpMapControls';box.className='gp-map-mymaps-controls';
-  box.innerHTML=`<div class="gp-map-toolbar"><button class="gp-map-tool" id="gpMapLayers">☰ Layers</button><button class="gp-map-tool" id="gpMapFit">◎ Fit all</button><button class="gp-map-tool" id="gpMapReset">↺ Reset</button><input id="gpMapSearch" class="gp-map-search" type="search" placeholder="Search places, events, countries…"><span id="gpMapCount" class="gp-map-count">0 signals</span></div><div id="gpMapLayerPanel" class="gp-map-layers-panel"><strong>MAP LAYERS</strong><div id="gpMapLayerRows"></div><label class="gp-map-layer-row"><input type="checkbox" id="gpMapBrainLinks" ${showBrainLinks?'checked':''}><span class="gp-map-layer-dot" style="background:#8da2c4"></span><span>🧠 Brain relationships</span><b id="gpMapBrainLinkCount">0</b></label></div>`;
+  box.innerHTML=`<div class="gp-map-toolbar"><button class="gp-map-tool" id="gpMapLayers" aria-expanded="false" aria-controls="gpMapLayerPanel">☰ Layers</button><button class="gp-map-tool" id="gpMapFit">◎ Fit all</button><button class="gp-map-tool" id="gpMapReset">↺ Reset</button><input id="gpMapSearch" class="gp-map-search" type="search" aria-label="Search map signals" placeholder="Search places, events, countries…"><span id="gpMapCount" class="gp-map-count">0 signals</span></div><div id="gpMapLayerPanel" class="gp-map-layers-panel"><strong>MAP LAYERS</strong><div id="gpMapLayerRows"></div><label class="gp-map-layer-row"><input type="checkbox" id="gpMapBrainLinks" ${showBrainLinks?'checked':''}><span class="gp-map-layer-dot" style="background:#8da2c4"></span><span>🧠 Brain relationships</span><b id="gpMapBrainLinkCount">0</b></label></div>`;
   host.insertBefore(box,document.getElementById('mapContainer'));const rows=box.querySelector('#gpMapLayerRows');
-  for(const [k,m] of Object.entries(LAYERS)){const label=document.createElement('label');label.className='gp-map-layer-row';label.innerHTML=`<input type="checkbox" data-layer-check="${k}" ${enabled[k]?'checked':''}><span class="gp-map-layer-dot" style="background:${m.color}"></span><span>${m.icon} ${m.label}</span><b id="gpMapLayerCount-${k}">0</b>`;rows.appendChild(label);label.querySelector('input').onchange=e=>{enabled[k]=e.target.checked;localStorage.setItem('gp.mapLayers',JSON.stringify(enabled));renderMap()}}
-  box.querySelector('#gpMapLayers').onclick=()=>box.querySelector('#gpMapLayerPanel').classList.toggle('open');box.querySelector('#gpMapFit').onclick=fitAll;box.querySelector('#gpMapReset').onclick=()=>{query='';filter='all';enabled=Object.fromEntries(Object.keys(LAYERS).map(k=>[k,true]));showBrainLinks=true;localStorage.removeItem('gp.mapLayers');localStorage.removeItem('gp.mapFilter');localStorage.removeItem('gp.mapBrainLinks');box.querySelector('#gpMapSearch').value='';box.querySelectorAll('[data-layer-check]').forEach(x=>x.checked=true);box.querySelector('#gpMapBrainLinks').checked=true;renderMap();fitAll()};box.querySelector('#gpMapSearch').oninput=e=>{query=e.target.value.trim().toLowerCase();renderMap()};box.querySelector('#gpMapBrainLinks').onchange=e=>{showBrainLinks=e.target.checked;localStorage.setItem('gp.mapBrainLinks',showBrainLinks?'1':'0');renderBrainLinks()};
+  for(const [k,m] of Object.entries(LAYERS)){const label=document.createElement('label');label.className='gp-map-layer-row';label.innerHTML=`<input type="checkbox" data-layer-check="${k}" ${enabled[k]?'checked':''}><span class="gp-map-layer-dot" style="background:${m.color}"></span><span>${m.icon} ${m.label}</span><b id="gpMapLayerCount-${k}">0</b>`;rows.appendChild(label);label.querySelector('input').onchange=e=>{enabled[k]=e.target.checked;localStorage.setItem('gp.mapLayers',JSON.stringify(enabled));renderMap();renderMapOps()}}
+  const layersBtn=box.querySelector('#gpMapLayers');
+  layersBtn.onclick=()=>{const panel=box.querySelector('#gpMapLayerPanel');const open=panel.classList.toggle('open');layersBtn.setAttribute('aria-expanded',open?'true':'false')};
+  box.querySelector('#gpMapFit').onclick=fitAll;box.querySelector('#gpMapReset').onclick=()=>{query='';filter='all';enabled=Object.fromEntries(Object.keys(LAYERS).map(k=>[k,true]));showBrainLinks=true;localStorage.removeItem('gp.mapLayers');localStorage.removeItem('gp.mapFilter');localStorage.removeItem('gp.mapBrainLinks');box.querySelector('#gpMapSearch').value='';box.querySelectorAll('[data-layer-check]').forEach(x=>x.checked=true);box.querySelector('#gpMapBrainLinks').checked=true;renderMap();renderMapOps();fitAll()};
+  const mapSearch=box.querySelector('#gpMapSearch');
+  mapSearch.oninput=()=>{query=mapSearch.value.trim().toLowerCase();renderMap();renderMapOps();const again=document.getElementById('gpMapSearch');if(again){again.focus();again.setSelectionRange(again.value.length,again.value.length)}};
+  box.querySelector('#gpMapBrainLinks').onchange=e=>{showBrainLinks=e.target.checked;localStorage.setItem('gp.mapBrainLinks',showBrainLinks?'1':'0');renderBrainLinks()};
 }
 function makeGroup(){
   if(typeof L.markerClusterGroup!=='function')return L.layerGroup();
@@ -94,7 +99,20 @@ function makeGroup(){
     showCoverageOnHover:false,
     zoomToBoundsOnClick:true,
     animate:true,
-    animateAddingMarkers:false
+    animateAddingMarkers:false,
+    /* M4 — clusters wear their dominant child layer color so a conflict
+     * cluster never looks like an OSINT cluster. Falls back to neutral. */
+    iconCreateFunction(cluster){
+      const kids=cluster.getAllChildMarkers();
+      const votes={};
+      for(const m of kids){const k=m.options?.__layer;if(k)votes[k]=(votes[k]||0)+1}
+      let top=null,topN=0;
+      for(const [k,n] of Object.entries(votes)){if(n>topN){topN=n;top=k}}
+      const color=(top&&LAYERS[top]?LAYERS[top].color:'#8da2c4');
+      const n=cluster.getChildCount();
+      const size=n<10?'small':n<100?'medium':'large';
+      return L.divIcon({html:'<div style="background:'+color+'"><span>'+n+'</span></div>',className:'marker-cluster marker-cluster-'+size,iconSize:L.point(40,40)});
+    }
   });
 }
 export function initMap(){
@@ -105,23 +123,70 @@ export function initMap(){
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap contributors'}).addTo(map);
   brainLinks=L.layerGroup().addTo(map);
   for(const k of Object.keys(LAYERS)){groups[k]=makeGroup();groups[k].addTo(map)}
-  controls();setTimeout(()=>map.invalidateSize(),100);map.on('click',closeDetail);
+  controls();ensureMapSize();map.on('click',closeDetail);
+}
+/* M1 — the map section renders below the fold under content-visibility,
+ * so the container can measure 0px wide at boot (zero-size canvas =
+ * invisible, unclickable markers). Revalidate size until real, and again
+ * whenever the section scrolls into view. */
+let sizeChecks=0;
+function ensureMapSize(){
+  if(!map)return;
+  const el=document.getElementById('mapContainer');
+  const retry=()=>{
+    if(!map||sizeChecks>40)return;sizeChecks++;
+    const r=el?.getBoundingClientRect();
+    if(r&&r.width>0){
+      try{map.invalidateSize();}catch{}
+      if(map.getSize().x>0){
+        /* Force a full view reset so canvas renderers recompute bounds
+         * (invalidateSize alone does not resize already-created canvases
+         * when the size value itself did not change). */
+        try{map.setView(map.getCenter(),map.getZoom(),{animate:false});}catch{}
+        renderMap();return;
+      }
+    }
+    setTimeout(retry,250);
+  };
+  setTimeout(retry,100);
+  if(!ensureMapSize._observed&&typeof IntersectionObserver!=='undefined'&&el){
+    ensureMapSize._observed=true;
+    const io=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){sizeChecks=0;retry();}});},{rootMargin:'200px 0px'});
+    io.observe(el);
+  }
 }
 async function getFeed(key){try{const base=CONFIG.endpoints[key];if(!base)return null;const r=await fetch(`${base}${base.includes('?')?'&':'?'}v=${Date.now()}`,{cache:'no-store'});if(!r.ok)return null;return await r.json()}catch{return null}}
 export async function loadMapData(){const keys=['snapshot','mapEvents','mapRegional','mapCartel','mapLinks','mapPoints','intelligenceBrain'];const values=await Promise.all(keys.map(getFeed));const [snapshot,events,regional,cartel,links,points,brain]=values;mapData={snapshot,events,regional,cartel,links,points,brain};renderMap();return mapData}
+/* M2 — fingerprint of everything the marker build depends on. Re-renders
+ * are skipped when nothing changed, so background state updates (other
+ * workspaces, fetch telemetry) no longer rebuild ~3k markers + clusters
+ * and flicker the map under the user's cursor. */
+const MAP_RENDER_CAP=5000;
+function renderFingerprint(){
+  const s=getState()||{};
+  return JSON.stringify([s.mapPoints?.updatedAt,s.snapshot?.updatedAt,mapData?.snapshot?.updatedAt,mapData?.events?.updatedAt,mapData?.regional?.updatedAt,mapData?.cartel?.updatedAt,mapData?.links?.updatedAt,mapData?.points?.updatedAt,mapData?.brain?.updatedAt,filter,query,enabled,showBrainLinks]);
+}
 export function renderMap(){
   if(!map)initMap();if(!map)return;
+  const fp=renderFingerprint();
+  if(fp===renderMap._fp&&renderMap._fitted)return;
+  renderMap._fp=fp;
   for(const g of Object.values(groups))g.clearLayers();renderBrainLinks();
-  const all=collect();const points=all.filter(matches).slice(0,5000);const counts=Object.fromEntries(Object.keys(LAYERS).map(k=>[k,0]));
-  for(const p of points){const k=classify(p);counts[k]++;const m=LAYERS[k];const marker=L.circleMarker([p.__lat,p.__lon],{pane:'gp-signals',radius:p.brainNode?10:8,color:'#ffffff',weight:2.5,fillColor:m.color,fillOpacity:.98,opacity:1,interactive:true});marker.bindTooltip(String(p.title||p.label||p.name||p.location||m.label).slice(0,120),{direction:'top',sticky:true});marker.on('click',e=>{e.originalEvent?.stopPropagation();showDetail(p)});groups[k].addLayer(marker)}
-  const total=points.length;const count=document.getElementById('gpMapCount');if(count)count.textContent=`${total.toLocaleString()} signals`;
+  const all=collect();const capped=all.length>MAP_RENDER_CAP;const points=all.filter(matches).slice(0,MAP_RENDER_CAP);const counts=Object.fromEntries(Object.keys(LAYERS).map(k=>[k,0]));
+  for(const p of points){const k=classify(p);counts[k]++;const m=LAYERS[k];const imp=Math.max(1,Math.min(3,Number(p.importance)||1));const marker=L.circleMarker([p.__lat,p.__lon],{pane:'gp-signals',radius:p.brainNode?10:6+imp,color:'#ffffff',weight:2.5,fillColor:m.color,fillOpacity:.98,opacity:1,interactive:true,__layer:k});marker.bindTooltip(String(p.title||p.label||p.name||p.location||m.label).slice(0,120),{direction:'top',sticky:true});marker.on('click',e=>{/* M1 — stop BOTH propagation layers: native stopPropagation blocks DOM bubble to the container's own click handler, and _stopped halts Leaflet's internal target loop before it reaches map.on('click',closeDetail), which would otherwise close the panel in the same tick. */if(e.originalEvent){e.originalEvent._stopped=true;try{e.originalEvent.stopPropagation();}catch{}}showDetail(p)});groups[k].addLayer(marker)}
+  const total=all.length;const shown=points.length;const count=document.getElementById('gpMapCount');if(count)count.textContent=capped?`${shown.toLocaleString()} of ${total.toLocaleString()} signals (cap)`:`${total.toLocaleString()} signals`;
   for(const k of Object.keys(LAYERS)){const e=document.getElementById(`gpMapLayerCount-${k}`);if(e)e.textContent=counts[k].toLocaleString()}
   const linkCount=document.getElementById('gpMapBrainLinkCount');if(linkCount){const brain=mapData?.brain;linkCount.textContent=String(Array.isArray(brain?.edges)?brain.edges.filter(e=>String(e.source)!==String(e.target)).length:0)}
-  if(total)fitAll(points);else setTimeout(()=>map.invalidateSize(),50)
+  /* M1 — auto-fit only on the first render with data. Background refreshes
+   * re-render markers in place; refitting every time would yank the user's
+   * zoom/pan (and rebuild clusters under their cursor). Fit/Reset buttons
+   * still fit explicitly. */
+  if(total&&!renderMap._fitted){renderMap._fitted=true;fitAll(points)}
+  else if(!total)setTimeout(()=>map.invalidateSize(),50)
 }
 function fitAll(points=collect().filter(matches)){if(!map||!points.length)return;map.fitBounds(L.latLngBounds(points.map(p=>[p.__lat,p.__lon])).pad(.08),{maxZoom:4,animate:false})}
 function closeDetail(){const p=document.getElementById('mapSidePanel');if(p){p.style.display='none';p.innerHTML=''}selected=null}
-function showDetail(p){closeDetail();selected=p;const panel=document.getElementById('mapSidePanel');if(!panel)return;const k=classify(p),m=LAYERS[k],title=p.title||p.label||p.name||p.location||'Map signal',detail=p.detail||p.summary||p.description||p.reason||'No additional detail available.',url=p.url||p.sourceUrl||p.source_url||'',links=brainEdgesFor(p);panel.style.display='block';panel.innerHTML=`<div class="gp-map-detail-head"><span>${m.icon}</span><div><div class="gp-card-title">${escapeHtml(title)}</div><div class="gp-map-detail-type">${escapeHtml(m.label)}${p.brainNode?' · Intelligence Brain':''}</div></div><button id="gpMapClose" class="gp-btn" type="button">×</button></div><div class="gp-map-detail-coords">${p.__lat.toFixed(4)}, ${p.__lon.toFixed(4)}</div><div class="gp-map-detail-text">${escapeHtml(String(detail).slice(0,1400))}</div>${p.source?`<div class="gp-map-detail-source">Source: ${escapeHtml(p.source)}</div>`:''}${links.length?`<div class="gp-map-detail-source"><strong>Brain connections</strong>${links.map(x=>`<div style="margin-top:6px"><button type="button" class="gp-map-brain-link" data-brain-target="${escapeHtml(x.id)}" style="background:none;border:0;padding:0;color:inherit;text-align:left;cursor:pointer">${escapeHtml(x.label)} — ${escapeHtml(x.relationship)}</button></div>`).join('')}</div>`:''}${/^https?:\/\//i.test(String(url))?`<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">Open source ↗</a>`:''}`;panel.querySelector('#gpMapClose').onclick=closeDetail;panel.querySelectorAll('[data-brain-target]').forEach(btn=>btn.onclick=()=>{const id=btn.dataset.brainTarget;if(!id)return;window.dispatchEvent(new CustomEvent('gp:brain-select',{detail:{id,source:'map'}}));document.getElementById('brainBody')?.scrollIntoView({behavior:'smooth',block:'start'});closeDetail()});if(p.brainNode&&p.nodeId)window.dispatchEvent(new CustomEvent('gp:brain-select',{detail:{id:String(p.nodeId),source:'map'}}))}
+function showDetail(p){closeDetail();selected=p;const panel=document.getElementById('mapSidePanel');if(!panel)return;const k=classify(p),m=LAYERS[k],title=p.title||p.label||p.name||p.location||'Map signal',detail=p.detail||p.summary||p.description||p.reason||'No additional detail available.',url=p.url||p.sourceUrl||p.source_url||'',links=brainEdgesFor(p);panel.style.display='block';panel.style.borderLeft='3px solid '+m.color;panel.innerHTML=`<div class="gp-map-detail-head"><span>${m.icon}</span><div><div class="gp-card-title">${escapeHtml(title)}</div><div class="gp-map-detail-type">${escapeHtml(m.label)}${p.brainNode?' · Intelligence Brain':''}</div></div><button id="gpMapClose" class="gp-btn" type="button">×</button></div><div class="gp-map-detail-coords">${p.__lat.toFixed(4)}, ${p.__lon.toFixed(4)}</div><div class="gp-map-detail-text">${escapeHtml(String(detail).slice(0,1400))}</div>${p.source?`<div class="gp-map-detail-source">Source: ${escapeHtml(p.source)}</div>`:''}${links.length?`<div class="gp-map-detail-source"><strong>Brain connections</strong>${links.map(x=>`<div style="margin-top:6px"><button type="button" class="gp-map-brain-link" data-brain-target="${escapeHtml(x.id)}" style="background:none;border:0;padding:0;color:inherit;text-align:left;cursor:pointer">${escapeHtml(x.label)} — ${escapeHtml(x.relationship)}</button></div>`).join('')}</div>`:''}${/^https?:\/\//i.test(String(url))?`<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">Open source ↗</a>`:''}`;panel.querySelector('#gpMapClose').onclick=closeDetail;panel.querySelectorAll('[data-brain-target]').forEach(btn=>btn.onclick=()=>{const id=btn.dataset.brainTarget;if(!id)return;window.dispatchEvent(new CustomEvent('gp:brain-select',{detail:{id,source:'map'}}));document.getElementById('brainBody')?.scrollIntoView({behavior:'smooth',block:'start'});closeDetail()});if(p.brainNode&&p.nodeId)window.dispatchEvent(new CustomEvent('gp:brain-select',{detail:{id:String(p.nodeId),source:'map'}}))}
 /* GUI Phase 3 — Geospatial Operations workspace.
  * Reads the canonical validated feed (state.mapPoints / data/map_points.json
  * with markers, updatedAt, count) plus live map layers. Layer counts are real
@@ -210,3 +275,29 @@ export function renderMapOps(){
 }
 window.addEventListener('gp:brain-select',event=>{const id=event.detail?.id;if(!id||event.detail?.source==='map')return;const points=collect().filter(p=>String(p.nodeId??p.id??'')===String(id));if(!points.length)return;const p=points[0];const k=classify(p);if(!enabled[k]){enabled[k]=true;localStorage.setItem('gp.mapLayers',JSON.stringify(enabled));renderMap();return}if(map){map.setView([p.__lat,p.__lon],Math.max(map.getZoom(),5),{animate:false});showDetail(p)}});
 if(['localhost','127.0.0.1'].includes(location.hostname)){window.addEventListener('gp:test-open-map-detail',()=>{const p=collect().find(matches);if(p)showDetail(p)})}
+if(['localhost','127.0.0.1'].includes(location.hostname)){window.addEventListener('gp:test-map-debug',()=>{
+  const el=document.getElementById('mapContainer');const r=el?.getBoundingClientRect();
+  window.__gpMapDebug={checks:sizeChecks,fitted:!!renderMap._fitted,
+    container:{w:Math.round(r?.width||0),h:Math.round(r?.height||0)},
+    mapSize:map?{x:map.getSize().x,y:map.getSize().y}:null,
+    zoom:map?map.getZoom():null,
+    mapPane:(()=>{const p=document.querySelector('#mapContainer .leaflet-map-pane');const q=p?.getBoundingClientRect();return q?{w:Math.round(q.width)}:null})(),
+    layers:Object.fromEntries(Object.entries(groups).map(([k,g])=>[k,g.getLayers().length]))};
+})}
+if(['localhost','127.0.0.1'].includes(location.hostname)){window.addEventListener('gp:test-click-marker-direct',()=>{
+  const c=window.__gpTestClick;if(!c)return;
+  const target=document.elementFromPoint(c.x,c.y)||document.getElementById('mapContainer');
+  /* Non-bubbling: reaches canvas hit-testing but never the map container's
+   * own click handler — isolates the marker path from map-click-close. */
+  for(const t of ['mousedown','mouseup','click']){target.dispatchEvent(new MouseEvent(t,{bubbles:false,cancelable:true,clientX:c.x,clientY:c.y,button:0}))}
+})}
+if(['localhost','127.0.0.1'].includes(location.hostname)){window.addEventListener('gp:test-click-marker',()=>{
+  const pts=collect().filter(matches);const el=document.getElementById('mapContainer');if(!map||!pts.length||!el)return;
+  const p=pts[0];el.scrollIntoView({block:'center'});
+  setTimeout(()=>{map.setView([p.__lat,p.__lon],Math.max(map.getZoom(),8),{animate:false});map.invalidateSize();
+    setTimeout(()=>{const pt=map.latLngToContainerPoint([p.__lat,p.__lon]);const r=el.getBoundingClientRect();
+      const cx=r.left+pt.x,cy=r.top+pt.y;const target=document.elementFromPoint(cx,cy)||el;
+      window.__gpTestClick={x:Math.round(cx),y:Math.round(cy),title:opsTitle(p),target:target.tagName+'.'+(target.className?.baseVal??target.className??'')};
+      for(const t of ['mousedown','mouseup','click']){target.dispatchEvent(new MouseEvent(t,{bubbles:true,cancelable:true,clientX:cx,clientY:cy,button:0}))}},500);
+  },400);
+})}

@@ -1,5 +1,19 @@
 /* Global Pulse map styling */
 #mapContainer{background:var(--bg-elevated);min-height:420px;min-width:0;max-width:100%;}
+/* M1 — Leaflet-compat guard: the global content reset caps canvas/img/svg at
+   max-width:100%, which collapses Leaflet's explicitly-sized canvases inside
+   unsized panes to 0px (invisible, unclickable markers). Scoped to the map. */
+#mapContainer img,#mapContainer canvas,#mapContainer svg{max-width:none}
+/* M4 — clusters wear layer colors (set inline by iconCreateFunction);
+   keep white bold counts readable on every hue. Tooltips match the dark
+   application theme instead of Leaflet's default white box. */
+.marker-cluster div{color:#fff;font-weight:800}
+.marker-cluster span{color:#fff;font-weight:800}
+.leaflet-tooltip{background:var(--panel);color:var(--text);border:1px solid var(--line);border-radius:8px;box-shadow:var(--shadow);font-family:var(--font);font-size:11px}
+.leaflet-tooltip-top:before{border-top-color:var(--line)}
+.leaflet-tooltip-bottom:before{border-bottom-color:var(--line)}
+.leaflet-tooltip-left:before{border-left-color:var(--line)}
+.leaflet-tooltip-right:before{border-right-color:var(--line)}
 .leaflet-container{background:var(--bg-elevated);font-family:var(--font);z-index:1;min-width:0;}
 .leaflet-popup-content-wrapper{background:var(--panel);color:var(--text);border-radius:var(--radius);box-shadow:var(--shadow)}
 .leaflet-popup-tip{background:var(--panel)}
