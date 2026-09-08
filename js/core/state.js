@@ -1,5 +1,5 @@
 /** Simple reactive-ish state store */
-const state={snapshot:null,liveArticles:null,intelligenceGraph:null,sources:null,sourceHealth:null,markets:null,mapData:null,lastSuccessfulFetch:null,status:'loading',errors:{}};
+const state={snapshot:null,liveArticles:null,intelligenceGraph:null,sources:null,sourceHealth:null,markets:null,mapData:null,whatChanged:null,lastSuccessfulFetch:null,status:'loading',errors:{}};
 const listeners=new Set();
 export function getState(){return {...state};}
 export function setState(partial){Object.assign(state,partial);listeners.forEach(fn=>fn(getState()));}
