@@ -11,7 +11,8 @@
 }
 
 /* Command bar */
-.gp-command-bar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;width:100%;margin-top:10px}
+.gp-header .gp-brand{flex-shrink:0}
+.gp-command-bar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;flex:1;min-width:0;justify-content:flex-end}
 .gp-command-tabs{display:flex;gap:4px;flex-wrap:wrap;flex:1;min-width:0}
 .gp-command-tabs .gp-nav-item{padding:7px 11px;border:1px solid transparent;border-radius:8px;font-size:12px;color:var(--text-secondary);text-decoration:none;white-space:nowrap}
 .gp-command-tabs .gp-nav-item:hover{background:var(--panel-2);color:var(--text)}
@@ -66,6 +67,16 @@
 .gp-health-issue:first-of-type{border-top:0}
 
 @media(max-width:720px){
+  .gp-header{flex-wrap:wrap}
+  .gp-header .gp-header-meta{display:none}
+  .gp-command-bar{order:3;flex-basis:100%;justify-content:flex-start;flex-wrap:nowrap}
+  .gp-command-tabs{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
+  .gp-command-tabs::-webkit-scrollbar{display:none}
+  .gp-command-tabs .gp-nav-item{flex:0 0 auto}
   .gp-command-tabs .gp-nav-item{padding:6px 8px;font-size:11px}
+  .gp-status-pill{flex:0 0 auto}
+  .gp-bottom-nav{overflow-x:auto;justify-content:flex-start}
+  .gp-bottom-nav .gp-nav-item{flex:0 0 auto;min-width:58px;font-size:9px}
+  .gp-dash-row .title,.gp-dash-row .meta{overflow-wrap:break-word}
   .gp-kpi-value{font-size:20px}
 }

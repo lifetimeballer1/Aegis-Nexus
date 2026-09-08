@@ -66,6 +66,13 @@ def test_dashboard_is_wired_into_boot_and_data_layer():
     assert 'whatChanged' in state
 
 
+def test_dashboard_mobile_rules_keep_shell_usable():
+    css = (ROOT / 'css/dashboard.css').read_text(encoding='utf-8')
+    assert 'overflow-x:auto' in css, 'command tabs / bottom nav must scroll, not crush, on mobile'
+    assert '.gp-bottom-nav .gp-nav-item' in css
+    assert 'overflow-wrap:break-word' in css, 'headline text must wrap inside narrow panels'
+
+
 def test_dashboard_has_no_absolute_pages_paths():
     for name in ('js/modules/dashboard.js', 'css/dashboard.css'):
         text = (ROOT / name).read_text(encoding='utf-8')
