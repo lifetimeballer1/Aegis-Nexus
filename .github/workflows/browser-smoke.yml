@@ -11,6 +11,7 @@ on:
       - 'css/**'
       - 'data/**'
       - '.github/workflows/browser-smoke.yml'
+      - 'tests/intelligence_web_smoke.py'
   workflow_dispatch:
 
 permissions:
@@ -121,6 +122,14 @@ jobs:
               smoke(mobile,'mobile')
               browser.close()
           PY
+      - name: Verify Intelligence Web rendering and boot failure
+        run: python tests/intelligence_web_smoke.py
+      - name: Upload Intelligence Web screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: intelligence-web-rendering
+          path: artifacts/intelligence-web
       - name: Stop local server
         if: always()
         run: kill "$(cat /tmp/global-pulse-http.pid)" 2>/dev/null || true
