@@ -1,6 +1,7 @@
 /** GUI Phase 6 — Sources / Validation / System Health workspace.
  * Every figure is read from the canonical source-health artifact
- * (data/source_health.json with summary/sources) plus fetch errors.
+ * (data/source_health.json with summary/sources), collector telemetry
+ * (data/live_status.json) and refresh-manifest hashes — never invented.
  * Source state uses the artifact's real fields (status online/failed,
  * consecutiveFailures, contentStatus, freshnessMinutes) — never invented.
  * Severity follows the shared language: green healthy, amber watch,
@@ -28,19 +29,98 @@ function sourceDetail(source) {
   if (fails > 0) parts.push(`${fails} consecutive failure${fails === 1 ? '' : 's'}`);
   return parts.join(' · ');
 }
+
+let registryQuery = '';
+let registryFilter = 'attention';
+let registryExpanded = false;
+
+const REGISTRY_VISIBLE = 25;
+
+function esc(value) {
+  return escapeHtml(String(value ?? ''));
+}
+
+function fmtInt(value) {
+  return Number.isFinite(Number(value)) ? Number(value).toLocaleString() : '—';
+}
+
+function fmtSize(bytes) {
+  const n = Number(bytes);
+  if (!Number.isFinite(n) || n < 0) return '—';
+  if (n >= 1048576) return `${(n / 1048576).toFixed(1)} MB`;
+  if (n >= 1024) return `${(n / 1024).toFixed(1)} KB`;
+  return `${n} B`;
+}
+
+function sourceState(source) {
+  const status = String(source.status || source.mode || '').toLowerCase();
+  if (status === 'online' && String(source.contentStatus || '').toLowerCase().indexOf('unavailable') === -1 && Number(source.rowsFetched || 0) > 0) return 'healthy';
+  if (status === 'failed' || status === 'error' || status === 'offline') return 'critical';
+  return 'watch';
+}
+
+function stateBadge(kind, label) {
+  return `<span class="gp-sev gp-sev-${kind}">${esc(label)}</span>`;
+}
+
+function registryRows(list) {
+  return list.map(s => {
+    const kind = sourceState(s);
+    const label = kind === 'healthy' ? 'Online' : kind === 'critical' ? 'Failing' : 'Degraded';
+    const fails = s.consecutiveFailures === undefined || s.consecutiveFailures === null ? '' : `<div class="meta">${fmtInt(s.consecutiveFailures)} consecutive failures</div>`;
+    return `<div class="gp-dash-row"><div class="grow"><div class="title">${esc(s.name || s.url || 'Unnamed source')}</div>`
+      + `<div class="meta">${esc(s.category || s.type || 'uncategorized')} · ${fmtInt(s.rowsFetched)} rows · checked ${esc(formatRelativeTime(s.lastChecked))}</div>${fails}</div>`
+      + `<div>${stateBadge(kind, label)}</div></div>`;
+  }).join('');
+}
+
+function renderRegistry(sources) {
+  const box = document.getElementById('srcRegistry');
+  if (!box) return;
+  const q = registryQuery.trim().toLowerCase();
+  let list = (sources || []).filter(s => s && typeof s === 'object');
+  if (registryFilter !== 'all') list = list.filter(s => sourceState(s) !== 'healthy');
+  if (q) {
+    list = list.filter(s => `${s.name || ''} ${s.category || ''} ${s.type || ''} ${s.url || ''}`.toLowerCase().includes(q));
+  }
+  const ordered = [...list].sort((a, b) => {
+    const rank = s => (sourceState(s) === 'critical' ? 0 : sourceState(s) === 'watch' ? 1 : 2);
+    return rank(a) - rank(b) || String(a.name || '').localeCompare(String(b.name || ''));
+  });
+  const shown = registryExpanded ? ordered : ordered.slice(0, REGISTRY_VISIBLE);
+  box.innerHTML = `<div class="gp-filter-row" role="group" aria-label="Source status filter">`
+    + `<button class="gp-filter${registryFilter === 'attention' ? ' active' : ''}" data-src-filter="attention" type="button">Needs attention</button>`
+    + `<button class="gp-filter${registryFilter === 'all' ? ' active' : ''}" data-src-filter="all" type="button">All sources (${(sources || []).length})</button></div>`
+    + `<input id="srcSearch" class="gp-dash-search" type="search" aria-label="Filter sources" placeholder="Filter sources…" value="${esc(registryQuery)}">`
+    + (shown.length ? `<div class="gp-dash-list">${registryRows(shown)}</div><div class="meta" style="margin-top:6px;font-size:10px;color:var(--muted-2)">Showing ${shown.length} of ${ordered.length} matching sources</div>` : '<div class="gp-state"><div class="gp-state-title">No sources match</div><div>No registry entries match the current filter.</div></div>')
+    + (ordered.length > REGISTRY_VISIBLE ? `<button id="srcMore" class="gp-btn gp-more" type="button">${registryExpanded ? 'Show fewer' : `Show all ${ordered.length}`}</button>` : '');
+  box.querySelectorAll('[data-src-filter]').forEach(btn => btn.addEventListener('click', () => {
+    registryFilter = btn.dataset.srcFilter; registryExpanded = false; renderRegistry(sources);
+  }));
+  document.getElementById('srcSearch')?.addEventListener('input', event => {
+    registryQuery = event.target.value; registryExpanded = false;
+    const pos = event.target.selectionStart;
+    renderRegistry(sources);
+    const again = document.getElementById('srcSearch');
+    if (again) { again.focus(); try { again.setSelectionRange(pos, pos); } catch { /* keep focus only */ } }
+  });
+  document.getElementById('srcMore')?.addEventListener('click', () => { registryExpanded = !registryExpanded; renderRegistry(sources); });
+}
+
 export function renderStatus() {
   const el = document.getElementById('statusBody');
   if (!el) return;
-
-  const { status, lastSuccessfulFetch, sourceHealth, refreshManifest, errors } = getState();
+  const { status, lastSuccessfulFetch, sourceHealth, liveStatus, refreshManifest, errors } = getState();
   const stamp = document.getElementById('statusUpdated');
 
-  if (!sourceHealth && status === 'loading') {
+  if (!sourceHealth && !liveStatus && !refreshManifest && status === 'loading') {
     el.innerHTML = '<div class="gp-state"><div class="gp-spinner"></div><div>Loading source health…</div></div>';
     return;
   }
+
+  let html = '';
   if (!sourceHealth) {
-    el.innerHTML = '<div class="gp-state"><div class="gp-state-title">Source health unavailable</div><div>Health telemetry failed to load. Check fetch errors below.</div></div>';
+    html += '<div class="gp-state"><div class="gp-state-title">Source health unavailable</div><div>Health telemetry failed to load. Check fetch errors below.</div></div>';
   } else {
     const summary = sourceHealth.summary || {};
     const list = Array.isArray(sourceHealth) ? sourceHealth : (sourceHealth.sources || []);
@@ -79,7 +159,7 @@ export function renderStatus() {
       + `<div class="cc-kpi t-red"><div class="v">${failedCount}</div><div class="l">Sources with Issues</div></div>`
       + `<div class="cc-kpi t-amber"><div class="v">${Number.isFinite(coverage) ? coverage.toFixed(0) + '%' : '—'}</div><div class="l">Data Coverage</div></div></div>`;
 
-    el.innerHTML = kpiStrip + `
+    html += kpiStrip + `
     <div class="gp-card gp-source-summary sev-${pillSev}">
       <div style="display:flex;justify-content:space-between;align-items:center;gap:10px">
         <div>
@@ -99,31 +179,57 @@ export function renderStatus() {
       + (rows || '<div class="gp-state"><div class="gp-state-title">No sources match</div><div>Nothing in the health registry matches this state or search.</div></div>')
       + (visible.length > SOURCE_PAGE ? `<button id="statusMore" class="gp-btn gp-more" type="button">${showAllSources ? 'Show fewer' : `Show all ${visible.length}`}</button>` : '');
 
-    el.querySelectorAll('[data-status-filter]').forEach(btn => btn.addEventListener('click', () => {
-      statusFilter = btn.dataset.statusFilter; showAllSources = false; renderStatus();
-    }));
-    el.querySelector('#statusSearch')?.addEventListener('input', event => {
-      statusQuery = String(event.target.value || '').trim().toLowerCase(); showAllSources = false; renderStatus();
-      const input = document.getElementById('statusSearch'); input?.focus(); input?.setSelectionRange(input.value.length, input.value.length);
-    });
-    el.querySelector('#statusMore')?.addEventListener('click', () => { showAllSources = !showAllSources; renderStatus(); });
-
     if (stamp) stamp.textContent = sourceHealth.updatedAt ? `Updated ${formatRelativeTime(sourceHealth.updatedAt)} · ${online.length}/${list.length} online` : '';
   }
 
+  const live = liveStatus || {};
+  const failedSources = Array.isArray(live.failedSources) ? live.failedSources : [];
+  const manifest = refreshManifest || {};
+  const artifacts = manifest.artifacts && typeof manifest.artifacts === 'object' ? Object.entries(manifest.artifacts) : [];
   const errorList = Object.entries(errors || {});
-  const artifacts = refreshManifest?.artifacts && typeof refreshManifest.artifacts === 'object' ? Object.entries(refreshManifest.artifacts) : [];
-  if (artifacts.length) {
-    const fmtSize = (b) => { const n = Number(b); if (!Number.isFinite(n)) return '—'; if (n >= 1048576) return `${(n / 1048576).toFixed(1)} MB`; if (n >= 1024) return `${(n / 1024).toFixed(0)} KB`; return `${n} B`; };
-    const rows = artifacts.slice(0, 8).map(([name, a]) =>
-      `<div style="display:flex;gap:8px;font-size:11px;padding:5px 0;border-top:1px solid var(--line)"><span style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${escapeHtml(name)}</span><span style="font-family:var(--font-mono);color:var(--muted)">${escapeHtml(fmtSize(a?.size))}</span><span style="font-family:var(--font-mono);color:var(--muted-2)">sha ${escapeHtml(String(a?.sha256 || '').slice(0, 8))}</span></div>`).join('');
-    el.insertAdjacentHTML('beforeend',
-      `<div class="gp-card" style="margin-top:10px"><div style="font-weight:700;margin-bottom:2px">Artifact Integrity &amp; Provenance</div><div style="font-size:10px;color:var(--muted-2);margin-bottom:4px">Generated ${escapeHtml(formatRelativeTime(refreshManifest.generatedAt))} · ${artifacts.length} artifacts · sha256 pinned</div>${rows}</div>`);
-  }
-  if (errorList.length) {
-    el.insertAdjacentHTML('beforeend',
-      `<div class="gp-card" style="margin-top:10px;border-color:var(--red-dim)"><div style="font-weight:700;color:var(--red);margin-bottom:6px">Recent errors</div>${errorList.map(([k, v]) => `<div style="font-size:12px"><strong>${escapeHtml(k)}</strong>: ${escapeHtml(v)}</div>`).join('')}</div>`);
-  }
-  el.insertAdjacentHTML('beforeend',
-    '<div style="margin-top:14px;font-size:11px;color:var(--muted-2)">Global Pulse uses only public open sources. Source availability can change. Always verify critical claims against primary sources.</div>');
+
+  const collector = live && live.updatedAt ? `
+      <div class="gp-dash-grid">
+        <div class="gp-dash-panel"><h3>Latest Collector Run</h3>
+          <div class="gp-kpi-value" style="font-size:20px">${esc(formatRelativeTime(live.updatedAt))}</div>
+          <div class="meta" style="font-size:10px;color:var(--muted-2)">${fmtInt(live.feedsChecked)} feeds checked · ${fmtInt(live.rowsFetched)} rows · ${fmtInt(live.newArticles)} new · ${fmtInt(live.exportedArticles)} exported</div></div>
+        <div class="gp-dash-panel"><h3>Collector Health</h3>
+          <div class="gp-kpi-value" style="font-size:20px;color:var(--sev-healthy)">${fmtInt(live.healthySources)}</div>
+          <div class="meta" style="font-size:10px;color:var(--muted-2)">healthy · ${fmtInt(live.emptySources)} empty · ${fmtInt(failedSources.length)} failed</div></div>
+      </div>
+      ${failedSources.length ? `<div class="gp-dash-panel" style="margin-top:8px"><h3>Recent Collector Issues (${failedSources.length})</h3><div class="gp-dash-list">`
+        + failedSources.slice(0, 5).map(f => `<div class="gp-dash-row"><div class="grow"><div class="title">${esc(f.source || 'Unnamed feed')}</div><div class="meta">${esc(String(f.error || 'unknown error').slice(0, 160))}</div></div></div>`).join('')
+        + '</div></div>' : ''}` : '';
+
+  const manifestBlock = artifacts.length ? `
+      <div class="gp-dash-panel" style="margin-top:8px"><h3>Artifact Integrity</h3>
+        <div class="meta" style="font-size:10px;color:var(--muted-2);margin-bottom:6px">Manifest-recorded hashes · generated ${esc(formatRelativeTime(manifest.generatedAt))}</div>
+        <div class="gp-dash-list">` + artifacts.map(([name, meta]) => `
+          <div class="gp-dash-row"><div class="grow"><div class="title" style="font-family:var(--font-mono);font-size:11px">${esc(name)}</div>
+          <div class="meta">sha256 ${esc(String(meta.sha256 || '').slice(0, 12))}… · ${esc(fmtSize(meta.size))}</div></div></div>`).join('')
+      + '</div></div>' : '';
+
+  html += `
+    <div style="margin-top:8px">${collector}</div>
+    <div class="gp-dash-panel" style="margin-top:8px"><h3>Source Registry</h3><div id="srcRegistry"></div></div>
+    ${manifestBlock}
+    ${errorList.length ? `
+      <div class="gp-dash-panel" style="margin-top:8px"><h3>Recent fetch errors</h3>
+        ${errorList.map(([k, v]) => `<div style="font-size:12px"><strong>${esc(k)}</strong>: ${esc(v)}</div>`).join('')}</div>` : ''}
+    <div style="margin-top:10px;font-size:11px;color:var(--muted-2)">
+      Aegis Nexus uses only public open sources. Source availability can change. Always verify critical claims against primary sources.
+    </div>
+  `;
+  el.innerHTML = html;
+
+  el.querySelectorAll('[data-status-filter]').forEach(btn => btn.addEventListener('click', () => {
+    statusFilter = btn.dataset.statusFilter; showAllSources = false; renderStatus();
+  }));
+  el.querySelector('#statusSearch')?.addEventListener('input', event => {
+    statusQuery = String(event.target.value || '').trim().toLowerCase(); showAllSources = false; renderStatus();
+    const input = document.getElementById('statusSearch'); input?.focus(); input?.setSelectionRange(input.value.length, input.value.length);
+  });
+  el.querySelector('#statusMore')?.addEventListener('click', () => { showAllSources = !showAllSources; renderStatus(); });
+
+  renderRegistry(Array.isArray(sourceHealth?.sources) ? sourceHealth.sources : []);
 }
