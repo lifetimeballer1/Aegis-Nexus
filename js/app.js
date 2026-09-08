@@ -6,6 +6,8 @@ import { CONFIG } from './core/config.js';
 const modules = {};
 const targets = {
   dashboard: 'dashboardBody',
+  alerts: 'alertsBody',
+  timeline: 'timelineBody',
   overview: 'overviewBody',
   breaking: 'breakingBody',
   conflicts: 'conflictsBody',
@@ -42,6 +44,8 @@ function setupNav() {
 async function loadModules() {
   const imports = {
     dashboard: './modules/dashboard.js',
+    alerts: './modules/alerts.js',
+    timeline: './modules/timeline.js',
     overview: './modules/overview.js',
     breaking: './modules/breaking.js',
     conflicts: './modules/conflicts.js',
@@ -71,6 +75,8 @@ function safeRender(name, fnName = `render${name[0].toUpperCase()}${name.slice(1
 
 function renderAll() {
   safeRender('dashboard', 'renderDashboard');
+  safeRender('alerts', 'renderAlerts');
+  safeRender('timeline', 'renderTimeline');
   safeRender('overview');
   safeRender('breaking');
   safeRender('conflicts');

@@ -15,7 +15,8 @@ export const CONFIG = {
     mapCartel: './data/enforcer_maps.json',
     mapLinks: './data/map_event_links.json',
     mapPoints: './data/map_points.json',
-    whatChanged: './data/what_changed.json'
+    whatChanged: './data/what_changed.json',
+    eventHistory: './data/event_history.json'
   },
   refresh: {
     snapshot: 5 * 60 * 1000,
