@@ -29,6 +29,9 @@ on:
       - 'index.html'
       - 'intelligence-web.html'
       - 'intelligence_brain_web.js'
+      - 'intelligence_web_runtime_guard.js'
+      - 'intelligence_web_performance.js'
+      - 'intelligence_web_v2.js'
       - 'intelligence_web_controls_fix.js'
       - 'intelligence_action_panel.js'
       - 'intelligence_action_flow.js'
@@ -103,6 +106,9 @@ jobs:
           python validate_performance.py
           python validate_operational_health.py
           node --check intelligence_brain_web.js
+          node --check intelligence_web_runtime_guard.js
+          node --check intelligence_web_performance.js
+          node --check intelligence_web_v2.js
           node --check intelligence_web_controls_fix.js
           node --check intelligence_action_panel.js
           node --check intelligence_action_flow.js
