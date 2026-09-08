@@ -15,3 +15,11 @@
 - Verified via node harnesses (temp, uncommitted): fresh/cache/retry/timeout-bound (~110ms)/stale-fallback/404-no-retry; hard-503 preserves prior snapshot with truthful error. `pytest` 98 passed; `node --check` clean. Browser smoke NOT run (no Playwright here).
 - Remaining: `js/modules/map.js#getFeed` still has no timeout (Phase 7); 30-min TTL vs 5-min refresh retained — now labeled honestly via `feedMeta` instead.
 - Next: Phase 3 — code ownership (`js/modules` vs `global_pulse_*`).
+
+## Phase 3 — Code ownership (2026-09-08, branch `phase-3-code-ownership`) — DONE
+- Traced all 5 `index.html` legacy scripts; all script tags KEPT (CI `update-snapshot.yml:145`, `site-monitor.yml`, `test_regressions.py` assert their presence).
+- Ownership map: `js/app.js`+`js/modules/` own all sections; `performance.js` owns lazy iframe + reduced-motion + content-visibility; `qa.js` owns onboarding + Leaflet-marker a11y + data-error alert (its claim/deep-link hooks target markup that no longer exists — dormant, kept per regression contract); `core.js` partially live (card collapse/cap, `gp.mapFilter` persist, live-news fallback); `event_pipeline.js` fully dormant (needs `.wrap`, absent); `brain_ui.js` was an infinite 100ms `.wrap` poll.
+- Fixes: `performance.js#lazyIntelWeb` skips eager frames (markup owns eager; was strip/re-add churn = double graph load); `brain_ui.js` poll bounded to 50 attempts then terminates (was infinite).
+- Verified: DOM-stub harness (eager src untouched, lazy deep-link cache-bust intact, brain poll exactly 50 with zero fetches); `node --check` clean; `pytest` 98 passed. Browser smoke NOT run.
+- Remaining: 18 unloaded `global_pulse_*.js` files still ship to Pages via `pages.yml` rsync (Phase 10); `globalpulse:dataready` never dispatched on current page (only dormant listeners).
+- Next: Phase 4 — pipeline dependability (`refresh_pipeline.py`, workflows).
