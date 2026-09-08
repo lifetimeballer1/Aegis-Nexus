@@ -1,7 +1,53 @@
 from pathlib import Path
 import re
+import json
+
+import pytest
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+@pytest.mark.parametrize('headline,expected_targets', [
+    ('China Targets Japanese Chemical Imports in Anti-Dumping Move.', ['japan']),
+    ('China reviews trade policy. Japan reports economic growth.', []),
+])
+def test_actor_target_repair_uses_event_evidence(tmp_path, monkeypatch, headline, expected_targets):
+    import repair_actor_target_roles as repair
+    import enrich_semantic_relationships as semantic
+
+    canonical = tmp_path / 'canonical.json'
+    live = tmp_path / 'live.json'
+    event = {'id': 'event', 'event_type': 'trade_action', 'actor_ids': ['china', 'japan'],
+             'target_ids': [], 'evidence_ids': ['source']}
+    document = {'entities': [
+        {'id': 'china', 'canonical_name': 'China'},
+        {'id': 'japan', 'canonical_name': 'Japan', 'aliases': ['Japanese']},
+    ], 'events': [event], 'evidence': [{'id': 'source', 'url': 'https://example.test/event'}],
+        'relationships': []}
+    canonical.write_text(json.dumps(document), encoding='utf-8')
+    live.write_text(json.dumps({'articles': [
+        {'url': 'https://example.test/event', 'title': headline},
+        {'url': 'https://example.test/unrelated', 'title': 'China Targets Japanese Chemical Imports.'},
+    ]}), encoding='utf-8')
+    for module in (repair, semantic):
+        monkeypatch.setattr(module, 'PATH', canonical)
+        monkeypatch.setattr(module, 'LIVE', live)
+    assert repair.main() == 0
+    repaired = json.loads(canonical.read_text(encoding='utf-8'))['events'][0]
+    assert repaired['target_ids'] == expected_targets
+    assert repaired['actor_ids'] == (['china'] if expected_targets else ['china', 'japan'])
+    assert repaired['evidence_ids'] == ['source']
+    assert semantic.main() == 0
+    relationships = json.loads(canonical.read_text(encoding='utf-8'))['relationships']
+    if expected_targets:
+        assert len(relationships) == 1
+        relationship = relationships[0]
+        assert relationship['source_entity_id'] == 'china'
+        assert relationship['target_entity_id'] == 'japan'
+        assert relationship['event_ids'] == ['event']
+        assert relationship['evidence_ids'] == ['source']
+    else:
+        assert relationships == []
 
 
 def test_map_conflict_filter_has_canonical_classifier_and_rerender():
