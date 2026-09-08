@@ -18,6 +18,12 @@ export const CONFIG = {
     eventHistory: './data/event_history.json',
     intelligenceBrief: './data/intelligence_brief.json'
   },
+  fetch: {
+    timeoutMs: 15000,
+    snapshotTimeoutMs: 25000,
+    retries: 1,
+    retryDelayMs: 400
+  },
   refresh: {
     snapshot: 5 * 60 * 1000,
     breaking: 10 * 60 * 1000,

@@ -8,3 +8,10 @@
 - Confirmed (code-read): no fetch timeout in `js/core/fetch.js`; 30-min cache vs 5-min refresh; heavy boot (~9.3MB snapshot + 14 parallel feeds + iframe double-load of graph/brain); legacy `global_pulse_core.js` targets removed DOM (`#map`, `.wrap`, `window.DATA`) with its own 30s interval + fetch.
 - Suspected (needs Phase 2/3 verification): silent partial-fetch failures; `what_changed.json` empty 12h window; duplicate Web data load (iframe + module).
 - Next: Phase 2 — loading/freshness in `js/core/fetch.js`, `state.js`, `config.js`.
+
+## Phase 2 — Loading & freshness (2026-09-08, branch `phase-2-loading-freshness`) — DONE
+- `js/core/config.js`: new `CONFIG.fetch` knobs (15s timeout, 25s snapshot, 1 retry, 400ms backoff).
+- `js/core/fetch.js`: AbortController timeouts with truthful messages; retry for network/timeout/5xx only (no 4xx retry); result adds `stale`/`fetchedAt`; within-TTL cache fast-path no longer mislabeled stale; `loadCoreData` batches into ONE `setState` (was ~15 renders/cycle), sets `loading` only on cold boot, preserves prior data on failed feeds, keeps `lastSuccessfulFetch` unless nothing succeeded, records per-feed `state.feedMeta`.
+- Verified via node harnesses (temp, uncommitted): fresh/cache/retry/timeout-bound (~110ms)/stale-fallback/404-no-retry; hard-503 preserves prior snapshot with truthful error. `pytest` 98 passed; `node --check` clean. Browser smoke NOT run (no Playwright here).
+- Remaining: `js/modules/map.js#getFeed` still has no timeout (Phase 7); 30-min TTL vs 5-min refresh retained — now labeled honestly via `feedMeta` instead.
+- Next: Phase 3 — code ownership (`js/modules` vs `global_pulse_*`).
