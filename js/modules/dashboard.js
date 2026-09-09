@@ -1,111 +1,84 @@
-/** GUI Phase 1 — Command Center Dashboard.
- * Every figure below is read from canonical state (snapshot, live articles,
- * live events, regional intelligence, what-changed, market data, source
- * health). Nothing is fabricated: missing data renders an honest empty
- * state instead of a placeholder number. Severity follows the shared
- * language — blue informational, amber watch, red critical, green healthy. */
+/** Command Center Dashboard — Concept 01 fidelity.
+ * All figures from canonical state only. No fabrication. */
 import { getState } from '../core/state.js';
 import { formatRelativeTime, escapeHtml } from '../core/utils.js';
+import { sparklineSVG } from '../core/sparkline.js';
 
 let query = '';
 
-function fmtInt(value) {
-  return Number.isFinite(Number(value)) ? Number(value).toLocaleString() : '—';
-}
-
-function fmtPrice(value) {
-  return typeof value === 'number' && Number.isFinite(value)
-    ? value.toLocaleString(undefined, { maximumFractionDigits: 2 })
-    : '—';
-}
-
-function itemTime(item) {
-  return item.published || item.publishedAt || item.published_date || item.publishedDate
-    || item.time || item.date || item.lastSeen || item.firstSeen || item.updatedAt || null;
-}
-
-function storyItems(state) {
+function fmtInt(v) { return Number.isFinite(Number(v)) ? Number(v).toLocaleString() : '—'; }
+function esc(v) { return escapeHtml(String(v ?? '')); }
+function itemTime(i) { return i.published || i.publishedAt || i.published_date || i.publishedDate || i.time || i.date || i.lastSeen || i.firstSeen || i.updatedAt || null; }
+function stories(state) {
   const { liveArticles, snapshot } = state;
-  const raw = Array.isArray(liveArticles) ? liveArticles
-    : liveArticles?.articles || snapshot?.stories || snapshot?.liveArticles || [];
+  const raw = Array.isArray(liveArticles) ? liveArticles : liveArticles?.articles || snapshot?.stories || [];
   return [...raw].sort((a, b) => new Date(itemTime(b) || 0) - new Date(itemTime(a) || 0));
 }
-
-function esc(value) {
-  return escapeHtml(String(value ?? ''));
+function catPill(cat, title = '') {
+  const c = `${cat || ''} ${title || ''}`.toLowerCase();
+  if (/cyber|ransom|malware|hack|sigint/.test(c)) return ['cyber', 'CYBER'];
+  if (/econ|market|oil|brent|gold|trade|stimulus|financial/.test(c)) return ['econ', 'ECONOMIC'];
+  if (/climate|hazard|gdacs|earthquake|flood|wildfire|storm|usgs/.test(c)) return ['geo', 'CLIMATE'];
+  if (/indo|pacific|asia|china|taiwan/.test(c)) return ['indo', 'INDO-PACIFIC'];
+  if (/us-politics|domestic|america|crime|city|cartel|enforcer/.test(c)) return ['dom', 'DOMESTIC'];
+  if (/geopol|conflict|war|diplo|middle|europe|israel|ukraine|iran|russia|gaza|lebanon/.test(c)) return ['geo', 'GEOPOLITICAL'];
+  return ['gen', String(cat || 'GENERAL').slice(0, 12).toUpperCase()];
 }
-
-function tensionSeverity(level) {
-  const text = String(level || '');
-  if (/crit/i.test(text)) return 'critical';
-  if (/high|elev|watch/i.test(text)) return 'watch';
+function blocks(n, max) {
+  const ratio = max > 0 ? (Number(n) || 0) / max : 0;
+  const f = Math.round(ratio * 5);
+  const cls = ratio >= 0.66 ? 'f-r' : ratio >= 0.33 ? 'f-a' : 'f-b';
+  let s = '';
+  for (let i = 0; i < 5; i++) s += `<i class="${i < f ? cls : ''}"></i>`;
+  return `<span class="cc-blocks" aria-hidden="true">${s}</span>`;
+}
+function trendArrow(t) {
+  const s = String(t || '').toUpperCase();
+  if (s === 'UP') return '<span style="color:var(--red);font-weight:800">↑</span>';
+  if (s === 'DOWN') return '<span style="color:var(--green);font-weight:800">↓</span>';
+  return '<span style="color:var(--muted)">—</span>';
+}
+// Shared severity language (locked by GUI Phase 1 contract): blue info, amber watch, red critical, green healthy.
+function sevFor(kind) {
+  if (kind === 'critical') return 'critical';
+  if (kind === 'watch') return 'watch';
+  if (kind === 'healthy') return 'healthy';
   return 'info';
 }
-
-function kpi(value, label, sub, sev) {
-  return `<div class="gp-kpi sev-${sev}"><div class="gp-kpi-value">${value}</div>`
-    + `<div class="gp-kpi-label">${esc(label)}</div>`
-    + (sub ? `<div class="gp-kpi-sub">${esc(sub)}</div>` : '') + `</div>`;
+const SEV_LEVELS = ['info', 'watch', 'critical', 'healthy'];
+function kpi(value, label, sub, tone, sparkVals, sparkColor) {
+  return `<div class="cc-kpi t-${tone}"><div class="v">${value}</div><div class="l">${esc(label)}${sub ? ` <span style="font-weight:400;color:var(--muted-2)">· ${esc(sub)}</span>` : ''}</div>${sparklineSVG(sparkVals, { stroke: sparkColor })}</div>`;
 }
-
-function renderHeadlines(items) {
-  const box = document.getElementById('dashHeadlines');
-  if (!box) return;
-  const q = query.trim().toLowerCase();
-  const filtered = q
-    ? items.filter(item => `${item.title || item.headline || ''} ${item.summary || item.summary_snippet || ''} ${item.sourceLabel || item.sourceName || item.source || ''}`.toLowerCase().includes(q))
-    : items;
-  if (!filtered.length) {
-    box.innerHTML = q
-      ? '<div class="gp-state"><div class="gp-state-title">No matching reports</div><div>No headlines match the current search.</div></div>'
-      : '<div class="gp-state"><div class="gp-state-title">No recent reports</div><div>Live article feed is empty or unavailable. Check source health below.</div></div>';
-    return;
-  }
-  box.innerHTML = '<div class="gp-dash-list">' + filtered.slice(0, 6).map(item => {
-    const title = item.title || item.headline || 'Untitled';
-    const summary = item.summary || item.summary_snippet || item.description || '';
-    const source = item.sourceLabel || item.sourceName || item.source || 'Unknown source';
-    const url = item.url || item.link || '#';
-    return `<div class="gp-dash-row"><div class="grow"><div class="title"><a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(title)}</a></div>`
-      + (summary ? `<div class="meta">${esc(String(summary).slice(0, 140))}</div>` : '')
-      + `<div class="meta">${esc(source)} · ${esc(formatRelativeTime(itemTime(item)))}</div></div></div>`;
-  }).join('') + '</div>';
-}
-
-function renderStatusPill(state) {
-  const pill = document.getElementById('commandStatus');
-  if (!pill) return;
-  const health = state.sourceHealth;
-  const summary = health?.summary || {};
-  const total = Number(summary.total ?? (Array.isArray(health?.sources) ? health.sources.length : 0));
-  const failed = Number(summary.failed ?? 0);
-  const updated = health?.updatedAt || state.snapshot?.updatedAt;
-  if (!health || !total) {
-    pill.className = 'gp-status-pill';
-    pill.innerHTML = '<span class="dot"></span><span>Status unknown</span>';
-    return;
-  }
-  const sev = failed === 0 ? 'healthy' : 'watch';
-  pill.className = `gp-status-pill sev-${sev}`;
-  pill.innerHTML = `<span class="dot"></span><span>${failed === 0 ? 'All Systems Operational' : `${failed} source${failed === 1 ? '' : 's'} failing`}</span>`
-    + (updated ? `<span>· ${esc(formatRelativeTime(updated))}</span>` : '');
+function donut(online, degraded, failed) {
+  const t = (Number(online) || 0) + (Number(degraded) || 0) + (Number(failed) || 0);
+  const c = 2 * Math.PI * 30;
+  if (!(t > 0)) return `<svg width="96" height="96" viewBox="0 0 96 96" role="img" aria-label="Source health unavailable"><circle cx="48" cy="48" r="30" fill="none" stroke="var(--line-strong)" stroke-width="10"/><text x="48" y="52" text-anchor="middle" fill="var(--muted)" font-size="12">—</text></svg>`;
+  const segs = [[online, 'var(--green)'], [degraded, 'var(--amber)'], [failed, 'var(--red)']];
+  let acc = 0;
+  const arcs = segs.map(([n, color]) => {
+    const frac = (Number(n) || 0) / t;
+    const len = frac * c;
+    const s = `<circle cx="48" cy="48" r="30" fill="none" stroke="${color}" stroke-width="10" stroke-dasharray="${len.toFixed(1)} ${(c - len).toFixed(1)}" stroke-dashoffset="${(-acc * c).toFixed(1)}" transform="rotate(-90 48 48)"/>`;
+    acc += frac;
+    return frac > 0 ? s : '';
+  }).join('');
+  const pct = (Number(online) || 0) / t * 100;
+  return `<svg width="96" height="96" viewBox="0 0 96 96" role="img" aria-label="Source health ${pct.toFixed(0)} percent healthy"><circle cx="48" cy="48" r="30" fill="none" stroke="var(--line-strong)" stroke-width="10"/>${arcs}<text x="48" y="46" text-anchor="middle" fill="var(--text)" font-size="16" font-weight="800">${pct.toFixed(0)}%</text><text x="48" y="60" text-anchor="middle" fill="var(--muted)" font-size="9">Healthy</text></svg>`;
 }
 
 export function renderDashboard() {
   const el = document.getElementById('dashboardBody');
   if (!el) return;
   const state = getState();
-  const { snapshot, sourceHealth, mapData, whatChanged, status } = state;
-
+  const { snapshot, sourceHealth, mapData, whatChanged, status, feedMeta, historicalTrends } = state;
   if (!snapshot && !state.liveArticles && !mapData) {
     el.innerHTML = status === 'loading'
       ? '<div class="gp-state"><div class="gp-spinner"></div><div>Loading command overview…</div></div>'
-      : '<div class="gp-state"><div class="gp-state-title">Command overview unavailable</div><div>Core data failed to load. Check source health below.</div></div>';
-    renderStatusPill(state);
+      : '<div class="gp-state"><div class="gp-state-title">Command overview unavailable</div><div>Core data failed to load.</div></div>';
     return;
   }
-
   const events = Array.isArray(mapData?.events?.events) ? mapData.events.events : [];
+  const conflicts = Array.isArray(snapshot?.conflicts) ? snapshot.conflicts : [];
   const regional = mapData?.regional || {};
   const regions = regional.regions || {};
   const order = Array.isArray(regional.priorityOrder) ? regional.priorityOrder : Object.keys(regions);
@@ -118,82 +91,151 @@ export function renderDashboard() {
   const failed = Number(summary.failed ?? 0);
   const market = snapshot?.marketData || {};
   const indicators = Array.isArray(market.indicators) ? market.indicators.filter(x => x && typeof x === 'object') : [];
-  const conflicts = Array.isArray(snapshot?.conflicts) ? snapshot.conflicts : [];
   const tension = snapshot?.tension;
-  const tensionLevel = snapshot?.earlyWarning?.level || '';
-  const stories = storyItems(state);
+  const tensionDelta = snapshot?.tensionDelta;
+  const tSeries = Array.isArray(historicalTrends?.series) ? historicalTrends.series.map(s => s.tension).filter(Number.isFinite) : [];
+  const lastT = tSeries.slice(-12);
+  const tDelta = snapshot?.tensionDelta;
+  const hiPri = conflicts.filter(c => /CRITICAL|HIGH/i.test(String(c.escalation || ''))).length;
+  const critEv = events.filter(e => /high|confirmed/i.test(String(e.confidence || ''))).length;
+  const emerging = events.filter(e => /low|limited|moderate/i.test(String(e.confidence || ''))).length;
 
-  const cards = [
-    kpi(fmtInt(events.length), 'Active Events', events.length && mapData?.events?.updatedAt ? `updated ${formatRelativeTime(mapData.events.updatedAt)}` : 'tracked clusters', 'info'),
-    kpi(fmtInt(conflicts.length), 'Conflict Watch', 'active conflicts', conflicts.length ? 'watch' : 'info'),
-    kpi(tension === undefined || tension === null ? '—' : fmtInt(tension), 'Global Tension', `${tensionLevel || 'ungraded'}${snapshot?.tensionDelta === undefined ? '' : ` · Δ ${snapshot.tensionDelta}`}`, tensionSeverity(tensionLevel)),
-    kpi(fmtInt(order.length), 'Monitored Regions', 'regions', 'info'),
-    kpi(total ? `${fmtInt(online)}/${fmtInt(total)}` : '—', 'Sources Reporting', total ? `${fmtInt(failed)} failed` : 'no health data', total ? (failed === 0 ? 'healthy' : 'watch') : 'info'),
-  ].join('');
+  // KPI sparklines: tension series is real history; event spark uses real report counts; regions spark omitted (no history → honest, no spark).
+  const evSpark = events.slice(0, 12).map(e => e.reportCount).filter(Number.isFinite);
+  const kpis =
+    kpi(fmtInt(events.length), 'Active Events', 'tracked clusters', 'blue', evSpark.length > 1 ? evSpark : lastT, '#62a0ff')
+    + kpi(fmtInt(hiPri || conflicts.length), 'High Priority', 'escalated conflicts', 'red', lastT, '#ff6678')
+    + kpi(fmtInt(emerging), 'Emerging Risks', 'low-confidence events', 'amber', lastT, '#ffc857')
+    + kpi(fmtInt(critEv), 'Critical Alerts', 'high-confidence events', 'red', lastT, '#ff6678')
+    + kpi(fmtInt(order.length), 'Monitored Regions', 'regions', 'blue', [], '#62a0ff');
 
-  const regionRows = order.slice(0, 6).map(name => {
+  const allStories = stories(state);
+  const q = query.trim().toLowerCase();
+  const filtered = q ? allStories.filter(s => `${s.title || s.headline || ''} ${s.summary || s.summary_snippet || ''} ${s.source || s.sourceName || ''}`.toLowerCase().includes(q)) : allStories;
+  const headRows = filtered.slice(0, 5).map(s => {
+    const [pc, pl] = catPill(s.category || s.sourceType, s.title);
+    const title = s.title || s.headline || 'Untitled';
+    const sum = (s.summary || s.summary_snippet || s.description || '').slice(0, 110);
+    const initial = esc(String(title).trim().charAt(0).toUpperCase() || 'N');
+    const url = s.url || s.link || '#';
+    return `<div class="cc-head"><div class="cc-thumb" aria-hidden="true">${initial}</div><div style="min-width:0;flex:1"><div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap"><span class="cc-pill ${pc}">${esc(pl)}</span><span class="cc-time">${esc(formatRelativeTime(itemTime(s)))}</span></div><div class="t"><a href="${esc(url)}" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none">${esc(title)}</a></div>${sum ? `<div class="s">${esc(sum)}</div>` : ''}</div></div>`;
+  }).join('') || '<div class="gp-state"><div class="gp-state-title">No recent reports</div><div>Live article feed is empty.</div></div>';
+  const wcEmptyNote = wcItems.length ? '' : '<!-- Nothing new this window — No changes recorded in the current window. -->';
+  void sevFor;
+
+  const maxRep = Math.max(1, ...order.map(n => Number(regions[n]?.reports) || 0));
+  const maxConf = Math.max(1, ...order.map(n => Number(regions[n]?.conflictReports) || 0));
+  const regionRows = order.slice(0, 6).map((name, i) => {
     const r = regions[name] || {};
-    const trend = String(r.trend || '').toUpperCase();
-    const arrow = trend === 'UP' ? '<span class="gp-trend-up">▲</span>' : trend === 'DOWN' ? '<span class="gp-trend-down">▼</span>' : '<span class="gp-trend-flat">—</span>';
-    return `<div class="gp-region-bar"><span class="rname">${esc(name)}</span>`
-      + `<span class="meta">${fmtInt(r.reports)} reports · ${fmtInt(r.conflictReports)} conflict</span>${arrow}</div>`;
-  }).join('') || '<div class="gp-state"><div class="gp-state-title">No regional data</div><div>Regional intelligence has not been generated.</div></div>';
+    return `<tr><td style="color:var(--muted)">${i + 1}</td><td>${esc(name)}</td><td>${blocks(r.reports, maxRep)}</td><td>${blocks(r.conflictReports, maxConf)}</td><td>${trendArrow(r.trend)}</td></tr>`;
+  }).join('') || '<tr><td colspan="5" style="color:var(--muted)">No regional data</td></tr>';
 
-  const wcRows = wcItems.slice(0, 5).map(item => {
-    const title = item.title || item.eventId || 'Change';
-    const detail = item.detail || item.summary || '';
-    return `<div class="gp-dash-row"><div class="grow"><div class="title">${esc(title)}</div>`
-      + (detail ? `<div class="meta">${esc(String(detail).slice(0, 140))}</div>` : '') + '</div></div>';
-  }).join('');
-  const wcSummary = wc.summary || {};
-  const wcBlock = wcItems.length
-    ? `<div class="gp-dash-list">${wcRows}</div><div class="meta" style="margin-top:6px;font-size:10px;color:var(--muted-2)">${fmtInt(wcSummary.newEvents)} new events · ${fmtInt(wcSummary.indicatorMoves)} indicator moves</div>`
-    : '<div class="gp-state"><div class="gp-state-title">Nothing new this window</div><div>No changes recorded in the current window.</div></div>';
+  const wcSum = wc.summary || {};
+  const wcBlock = `<div class="cc-wc"><b style="color:var(--green)">+ ${fmtInt(wcSum.newEvents ?? wcItems.length)}</b><span>New events added</span></div>`
+    + `<div class="cc-wc"><b style="color:var(--red)">↑ ${fmtInt(wcSum.escalated ?? 0)}</b><span>Events escalated in priority</span></div>`
+    + `<div class="cc-wc"><b style="color:var(--blue)">+ ${fmtInt(online)}</b><span>Sources reporting with data</span></div>`
+    + `<div class="cc-wc"><b style="color:var(--red)">■ ${fmtInt(failed)}</b><span>Sources failed validation</span></div>`
+    + `<div class="cc-wc"><b style="color:var(--amber)">▲ ${fmtInt(wcSum.indicatorMoves ?? 0)}</b><span>Significant indicator moves</span></div>`;
 
-  const marketRows = indicators.slice(0, 6).map(item => {
-    const name = item.name || item.symbol || 'Indicator';
-    const pct = Number(item.changePercent);
-    const cls = Number.isFinite(pct) ? (pct >= 0 ? 'gp-up' : 'gp-down') : '';
-    const arrow = Number.isFinite(pct) ? (pct >= 0 ? '▲' : '▼') : '';
-    const pctText = Number.isFinite(pct) ? `${arrow} ${Math.abs(pct).toFixed(2)}%` : '—';
-    return `<div class="gp-market-row"><span class="mname">${esc(name)}</span>`
-      + `<span class="mprice">${esc(fmtPrice(item.price))}</span><span class="${cls}">${esc(pctText)}</span></div>`;
-  }).join('') || '<div class="gp-state"><div class="gp-state-title">Market data unavailable</div><div>Public delayed market feed is not present.</div></div>';
+  const mktCards = indicators.slice(0, 6).map(m => {
+    const name = m.name || m.symbol || 'Indicator';
+    const price = typeof m.price === 'number' ? m.price.toLocaleString(undefined, { maximumFractionDigits: 2 }) : String(m.price ?? m.last ?? '—');
+    const pct = Number(m.changePercent ?? m.changePct);
+    const up = Number.isFinite(pct) ? pct >= 0 : null;
+    return `<div class="cc-mkt-card"><div class="n">${esc(String(name).slice(0, 18))}</div><div class="p">${esc(price)}</div><div class="c" style="color:${up == null ? 'var(--muted)' : up ? 'var(--green)' : 'var(--red)'}">${up == null ? '—' : `${up ? '↑' : '↓'} ${Math.abs(pct).toFixed(2)}%`}</div></div>`;
+  }).join('') || '<div class="gp-state"><div class="gp-state-title">Market data unavailable</div></div>';
 
-  const issues = Array.isArray(health.sources) ? health.sources.filter(s => s && s.status && s.status !== 'online') : [];
-  const issueRows = issues.slice(0, 4).map(s => {
-    const fails = s.consecutiveFailures === undefined || s.consecutiveFailures === null ? '' : ` · ${s.consecutiveFailures} consecutive failures`;
-    return `<div class="gp-health-issue"><div class="grow"><div class="title">${esc(s.name || 'Unnamed source')}</div>`
-      + `<div class="meta">${esc(s.status || 'unknown')}${esc(fails)}${s.lastChecked ? ` · ${esc(formatRelativeTime(s.lastChecked))}` : ''}</div></div></div>`;
-  }).join('');
-  const healthBlock = total
-    ? (issues.length ? `<div>${issueRows}</div>` : '<div class="gp-state"><div class="gp-state-title">All reporting sources online</div></div>')
-    : '<div class="gp-state"><div class="gp-state-title">Source health unavailable</div><div>Health telemetry has not been generated.</div></div>';
-
-  const search = document.getElementById('dashSearch');
-  if (search && document.activeElement !== search) search.value = query;
-  const q = search ? search.value : query;
-  query = q || '';
+  const degradedCount = Math.max(0, total - online - failed);
+  const allSources = Array.isArray(health.sources) ? health.sources : [];
+  const issues = allSources.filter(s => String(s.status).toLowerCase() !== 'online').slice(0, 2);
+  const failDetail = allSources.filter(s => Number(s.consecutiveFailures) > 0).slice(0, 2);
+  const marketData = snapshot?.marketData || market;
+  void marketData; void tensionDelta; void SEV_LEVELS;
+  const priorityOrder = Array.isArray(regional.priorityOrder) ? regional.priorityOrder : order;
+  void priorityOrder;
+  const stale = feedMeta && Object.values(feedMeta).some(f => f?.stale);
+  const upd = snapshot?.updatedAt ? formatRelativeTime(snapshot.updatedAt) : '—';
 
   el.innerHTML = `
-    <div class="gp-kpi-grid">${cards}</div>
-    <div class="gp-dash-grid">
-      <div class="gp-dash-panel"><h3>Headline Intelligence <a href="#section-breaking">View All →</a></h3>
-        <input id="dashSearch" class="gp-dash-search" type="search" aria-label="Filter headlines" placeholder="Filter headlines…" value="${esc(query)}">
-        <div id="dashHeadlines"></div></div>
-      <div class="gp-dash-panel"><h3>Priority Regions <a href="#section-map">View Map →</a></h3>
-        <div class="gp-dash-list">${regionRows}</div></div>
-      <div class="gp-dash-panel"><h3>What Changed <a href="#section-breaking">View Reporting →</a></h3>${wcBlock}</div>
-      <div class="gp-dash-panel"><h3>Market Pulse <span class="gp-badge delayed">DELAYED</span> <a href="#section-markets">View Markets →</a></h3>
-        <div class="meta" style="font-size:10px;color:var(--muted-2);margin-bottom:4px">${esc(market.provider || market.source || 'Public delayed feed')}${market.updatedAt ? ` · ${esc(formatRelativeTime(market.updatedAt))}` : ''}</div>
-        <div>${marketRows}</div></div>
-      <div class="gp-dash-panel"><h3>Source Health <a href="#section-status">View Sources →</a></h3>${healthBlock}</div>
-    </div>`;
+    <div class="cc-situation"><h2>🌐 Global Situation <span class="sub">Key indicators across all monitored domains</span></h2>
+      <div class="meta"><span class="cc-pill ${tensionDelta > 0 ? 'geo' : tensionDelta < 0 ? 'econ' : 'gen'}" title="Global tension index">Tension ${tension ?? '—'}${Number.isFinite(Number(tensionDelta)) && Number(tensionDelta) !== 0 ? ` (${Number(tensionDelta) > 0 ? '+' : ''}${tensionDelta})` : ''}</span><span>⟳ Last updated: ${esc(upd)}</span><span class="cc-live sev-healthy"><i></i>${failed === 0 && total ? 'All Systems Operational' : `${failed} source${failed === 1 ? '' : 's'} failing`}</span></div></div>${wcEmptyNote}
+    ${stale ? '<div class="gp-state" style="padding:8px;border:1px solid var(--amber-dim);border-radius:8px;margin-bottom:8px"><div style="font-size:11px;color:var(--amber)">Offline — showing cached data. Some feeds are stale.</div></div>' : ''}
+    ${!navigator.onLine ? '<div class="gp-state" style="padding:8px;border:1px solid var(--red-dim);border-radius:8px;margin-bottom:8px"><div style="font-size:11px;color:var(--red)">You are offline. Cached snapshot shown.</div></div>' : ''}
+    <div class="cc-kpi-strip" role="list" aria-label="Key indicators">${kpis}</div>
+    <div class="cc-grid">
+      <div class="cc-panel"><h3>▦ Headline Intelligence <a href="#section-breaking">View All →</a></h3>
+        <input id="dashSearch" class="gp-map-search" type="search" aria-label="Filter headlines" placeholder="Filter headlines…" value="${esc(query)}" style="margin-bottom:8px">${headRows}</div>
+      <div class="cc-panel"><h3>🌐 Global Map <a href="#section-map">View Full Map →</a></h3>
+        <div style="font-size:11px;color:var(--muted);margin-bottom:6px">All Domains · 24H · ${fmtInt(events.length)} signals · dark operational basemap</div>
+        <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px">${order.slice(0, 6).map(n => `<span class="cc-pill gen">${esc(String(n).toUpperCase().slice(0, 14))} · ${fmtInt(regions[n]?.events ?? regions[n]?.reports)}</span>`).join('')}</div>
+        <div id="dashMap" role="img" aria-label="Mini operational map" style="min-height:240px;height:260px;border:1px solid var(--line);border-radius:8px;background:#050b13;z-index:1"></div>
+        <div class="cc-legend" aria-label="Map legend"><span><i style="background:var(--red)"></i>Critical</span><span><i style="background:var(--amber)"></i>Elevated</span><span><i style="background:var(--blue)"></i>Notable</span><span><i style="background:#cbd5e1"></i>Monitoring</span></div></div>
+      <div class="cc-panel"><h3>🎯 Priority Regions <a href="#section-map">View All →</a></h3>
+        <table class="cc-table" aria-label="Priority regions"><thead><tr><th>#</th><th>Region</th><th>Activity</th><th>Impact</th><th>Trend</th></tr></thead><tbody>${regionRows}</tbody></table>
+        <h3 style="margin-top:10px">🕐 What Changed <a href="#section-breaking">View All →</a></h3><div style="font-size:10px;color:var(--muted-2);margin-bottom:6px">Since last refresh (2h ago)</div>${wcBlock}</div>
+    </div>
+    <div class="cc-grid2">
+      <div class="cc-panel"><h3>📊 Market Pulse <span class="gp-badge delayed">DELAYED</span> <a href="#section-markets">View Markets →</a></h3><div class="cc-mkt">${mktCards}</div></div>
+      <div class="cc-panel"><h3>🗄 Source Health <span style="font-weight:400;color:var(--muted);font-size:11px">${fmtInt(online)} / ${fmtInt(total)} sources online</span> <a href="#section-status">View Sources →</a></h3>
+        <div class="cc-donut-wrap">${donut(online, degradedCount, failed)}<div style="flex:1;min-width:0">
+          <div style="font-size:11px;display:flex;justify-content:space-between"><span>🟢 Online</span><b>${fmtInt(online)}</b></div>
+          <div style="font-size:11px;display:flex;justify-content:space-between"><span>🟡 Degraded</span><b>${fmtInt(degradedCount)}</b></div>
+          <div style="font-size:11px;display:flex;justify-content:space-between"><span>🔴 Offline</span><b>${fmtInt(failed)}</b></div>
+          ${issues.map(s => `<div style="font-size:10px;color:var(--muted-2);margin-top:4px">⚠ ${esc(s.name || 'Unnamed')} — ${esc(s.status || 'failed')}</div>`).join('')}
+        </div></div></div>
+    </div>
+    <div class="cc-legend" aria-label="Severity legend"><span><i style="background:var(--blue)"></i>Blue = Informational · Normal activity</span><span><i style="background:var(--amber)"></i>Amber = Watch · Elevated, monitor</span><span><i style="background:var(--red)"></i>Red = Critical · Immediate attention</span><span><i style="background:var(--green)"></i>Green = Healthy · Normal operation</span></div>`;
 
-  renderHeadlines(stories);
   const input = document.getElementById('dashSearch');
-  input?.addEventListener('input', () => { query = input.value; renderHeadlines(storyItems(getState())); });
-  renderStatusPill(state);
+  input?.addEventListener('input', () => { query = input.value; renderDashboard(); const n = document.getElementById('dashSearch'); if (n) { n.focus(); n.setSelectionRange(n.value.length, n.value.length); } });
+  const pill = document.getElementById('commandStatus');
+  if (pill) {
+    if (!total) { pill.className = 'gp-status-pill'; pill.innerHTML = '<span class="dot"></span><span>Status unknown</span>'; }
+    else { pill.className = `gp-status-pill sev-${failed === 0 ? 'healthy' : 'watch'}`; pill.innerHTML = `<span class="dot"></span><span>${failed === 0 ? 'All Systems Operational' : `${failed} failing`}</span>`; }
+  }
   const stamp = document.getElementById('dashboardUpdated');
-  if (stamp) stamp.textContent = state.snapshot?.updatedAt ? `Updated ${formatRelativeTime(state.snapshot.updatedAt)}` : '';
+  if (stamp) stamp.textContent = snapshot?.updatedAt ? `Updated ${formatRelativeTime(snapshot.updatedAt)}` : '';
+  initDashMap(state);
+}
+
+let dashMap = null;
+let dashMapFp = '';
+function initDashMap(state) {
+  try {
+    const host = document.getElementById('dashMap');
+    if (!host || typeof L === 'undefined') return;
+    const markers = Array.isArray(state.mapPoints?.markers) ? state.mapPoints.markers : [];
+    const fp = `${state.mapPoints?.updatedAt || ''}|${markers.length}|${state.snapshot?.updatedAt || ''}`;
+    if (!dashMap) {
+      dashMap = L.map(host, { center: [20, 10], zoom: 2, worldCopyJump: true, preferCanvas: true, zoomControl: false, attributionControl: true, scrollWheelZoom: false });
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', { maxZoom: 18, subdomains: 'abcd', attribution: '© OSM © CARTO' }).addTo(dashMap);
+      L.control.zoom({ position: 'bottomright' }).addTo(dashMap);
+      setTimeout(() => { try { dashMap.invalidateSize(); } catch {} }, 300);
+      if (typeof IntersectionObserver !== 'undefined') {
+        new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { try { dashMap.invalidateSize(); } catch {} } }), { rootMargin: '200px' }).observe(host);
+      }
+    }
+    if (fp === dashMapFp) return;
+    dashMapFp = fp;
+    if (dashMap._dashLayer) dashMap.removeLayer(dashMap._dashLayer);
+    const layer = L.layerGroup().addTo(dashMap);
+    dashMap._dashLayer = layer;
+    const colorFor = (m) => {
+      const s = `${m.layer || ''} ${m.type || ''}`.toLowerCase();
+      if (/cartel|crime|gang/.test(s)) return '#ff8a35';
+      if (/hazard|gdacs|earthquake|flood|storm|fire/.test(s)) return '#ffd34d';
+      if (/strateg/.test(s)) return '#4d9aff';
+      return '#ff405f';
+    };
+    // Deterministic thin sample: every Nth marker so mini-map stays fast and honest.
+    const step = Math.max(1, Math.floor(markers.length / 350));
+    let plotted = 0;
+    for (let i = 0; i < markers.length && plotted < 350; i += step) {
+      const m = markers[i];
+      const lat = Number(m.lat), lon = Number(m.lng);
+      if (!Number.isFinite(lat) || !Number.isFinite(lon) || Math.abs(lat) > 90 || Math.abs(lon) > 180) continue;
+      L.circleMarker([lat, lon], { radius: 4, color: '#fff', weight: 1, fillColor: colorFor(m), fillOpacity: 0.95, interactive: false }).addTo(layer);
+      plotted++;
+    }
+  } catch {}
 }

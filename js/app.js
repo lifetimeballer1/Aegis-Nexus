@@ -61,14 +61,17 @@ async function loadModules() {
     status: './modules/status.js',
     map: './modules/map.js'
   };
+  const jobs = [];
   for (const [name, path] of Object.entries(imports)) {
-    try {
-      modules[name] = await import(path);
-    } catch (err) {
-      console.error(`Global Pulse module failed to import: ${name}`, err);
-      showModuleError(targets[name], err);
-    }
+    jobs.push(import(path).then(
+      mod => { modules[name] = mod; },
+      err => {
+        console.error(`Global Pulse module failed to import: ${name}`, err);
+        showModuleError(targets[name], err);
+      }
+    ));
   }
+  await Promise.all(jobs);
 }
 
 function safeRender(name, fnName = `render${name[0].toUpperCase()}${name.slice(1)}`) {

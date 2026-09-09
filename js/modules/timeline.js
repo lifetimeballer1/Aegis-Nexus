@@ -8,6 +8,7 @@ import { formatRelativeTime, escapeHtml } from '../core/utils.js';
 
 let periodHours = 24;
 let userPicked = false;
+let selectedIdx = -1;
 const PERIODS = [[24, '24H'], [168, '7D'], [720, '30D'], [0, 'ALL']];
 const MAX_POINTS = 60;
 
@@ -81,21 +82,31 @@ export function renderTimeline() {
     `<button class="gp-filter${periodHours === hours ? ' active' : ''}" data-tl-period="${hours}" type="button">${label}</button>`).join('');
 
   let lastDay = '';
-  const rows = shown.map(p => {
+  const sevName = { critical: 'CRITICAL', high: 'HIGH', medium: 'MEDIUM', low: 'LOW' };
+  const rows = shown.map((p, idx) => {
     const day = dayLabel(p.at);
     const header = day !== lastDay ? `<div class="gp-tl-meta" style="margin:4px 0 6px;font-weight:700">${esc(day)}</div>` : '';
     lastDay = day;
+    const sev = dotSeverity(p.confidence);
     const meta = [`${p.reports ?? '—'} reports`, `${p.sources ?? '—'} sources`, p.confidence ? `${p.confidence} confidence` : 'confidence ungraded', formatRelativeTime(p.at.toISOString())].join(' · ');
-    return `${header}<li class="gp-tl-item"><span class="gp-tl-dot sev-${dotSeverity(p.confidence)}"></span>`
-      + `<div class="gp-tl-time">${esc(p.at.toISOString().slice(11, 16))} UTC</div>`
-      + `<div class="gp-tl-title">${esc(p.title)}</div><div class="gp-tl-meta">${esc(meta)}</div></li>`;
+    return `${header}<li class="gp-tl-item"><button data-tl-select="${idx}" type="button" aria-pressed="${selectedIdx === idx}" style="all:unset;cursor:pointer;display:block;width:100%;box-sizing:border-box"><span class="gp-tl-dot sev-${sev}"></span>`
+      + `<div class="gp-tl-time">${esc(p.at.toISOString().slice(11, 16))} UTC · <span class="gp-sev gp-sev-${sev}" style="font-size:9px;padding:1px 6px">${sevName[sev] || sev}</span></div>`
+      + `<div class="gp-tl-title">${esc(p.title)}</div><div class="gp-tl-meta">${esc(meta)}</div></button></li>`;
   }).join('');
+
+  const sel = selectedIdx >= 0 ? shown[selectedIdx] : null;
+  const pane = sel ? `<div class="gp-card" style="margin-top:10px;border-color:var(--line-strong)"><div style="font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:4px">Reading Pane</div>`
+    + `<div class="gp-tl-title" style="font-size:13px">${esc(sel.title)}</div>`
+    + `<div class="gp-tl-meta">${esc(sel.at.toISOString().slice(0, 16).replace('T', ' '))} UTC · ${sel.reports ?? '—'} reports · ${sel.sources ?? '—'} sources · ${esc(sel.confidence || 'confidence ungraded')}</div></div>` : '';
 
   el.innerHTML = `<div class="gp-filter-row" role="group" aria-label="Timeline period">${chips}`
     + `<span class="meta" style="align-self:center;font-size:10px;color:var(--muted-2)">Showing ${shown.length} of ${points.length} signals</span></div>`
-    + (rows ? `<ol class="gp-timeline">${rows}</ol>` : '<div class="gp-state"><div class="gp-state-title">No signals in this period</div><div>No dated observations fall inside the selected window.</div></div>');
+    + (rows ? `<ol class="gp-timeline">${rows}</ol>${pane}` : '<div class="gp-state"><div class="gp-state-title">No signals in this period</div><div>No dated observations fall inside the selected window.</div></div>');
 
   el.querySelectorAll('[data-tl-period]').forEach(btn => btn.addEventListener('click', () => {
-    periodHours = Number(btn.dataset.tlPeriod); userPicked = true; renderTimeline();
+    periodHours = Number(btn.dataset.tlPeriod); userPicked = true; selectedIdx = -1; renderTimeline();
+  }));
+  el.querySelectorAll('[data-tl-select]').forEach(btn => btn.addEventListener('click', () => {
+    const i = Number(btn.dataset.tlSelect); selectedIdx = selectedIdx === i ? -1 : i; renderTimeline();
   }));
 }

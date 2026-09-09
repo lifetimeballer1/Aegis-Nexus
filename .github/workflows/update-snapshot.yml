@@ -162,6 +162,10 @@ jobs:
           exit 1
       - name: Verify main contains generated commit
         run: git fetch origin main && git merge-base --is-ancestor HEAD origin/main
+      - name: Re-verify artifacts after rebase, before deploy
+        run: |
+          set -euo pipefail
+          python validate_data_resilience.py --require-manifest
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
       - name: Prepare exact Pages site

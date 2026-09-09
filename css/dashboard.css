@@ -238,3 +238,63 @@
   .gp-filter{min-height:36px}
   .gp-btn{min-height:36px}
 }
+
+/* Command Center Concept 01 — dense terminal grid (coexists with gp-) */
+.cc-situation{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+.cc-situation h2{font-size:13px;margin:0;display:flex;gap:8px;align-items:center}
+.cc-situation .sub{font-size:11px;color:var(--muted);font-weight:400}
+.cc-situation .meta{display:flex;gap:10px;align-items:center;font-size:10px;color:var(--muted)}
+.cc-live{display:inline-flex;align-items:center;gap:6px;color:var(--green);font-weight:700}
+.cc-live i{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 8px var(--green)}
+.cc-kpi-strip{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin-bottom:10px}
+.cc-kpi{background:linear-gradient(180deg,var(--panel-2),var(--panel));border:1px solid var(--line);border-radius:10px;padding:10px 12px;min-width:0;position:relative;overflow:hidden}
+.cc-kpi::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--blue)}
+.cc-kpi.t-blue::before{background:var(--blue)}.cc-kpi.t-red::before{background:var(--red)}
+.cc-kpi.t-amber::before{background:var(--amber)}.cc-kpi.t-green::before{background:var(--green)}
+.cc-kpi .v{font-size:26px;font-weight:800;font-variant-numeric:tabular-nums;line-height:1;display:flex;align-items:baseline;gap:8px}
+.cc-kpi.t-blue .v{color:var(--blue)}.cc-kpi.t-red .v{color:var(--red)}
+.cc-kpi.t-amber .v{color:var(--amber)}.cc-kpi.t-green .v{color:var(--green)}
+.cc-kpi .d{font-size:10px;font-weight:800;padding:2px 6px;border-radius:6px;background:rgba(255,255,255,.06)}
+.cc-kpi .d.up{color:var(--green)}.cc-kpi .d.down{color:var(--red)}.cc-kpi .d.flat{color:var(--muted)}
+.cc-kpi .l{font-size:11px;font-weight:600;color:var(--text-secondary);margin-top:2px}
+.cc-kpi svg{position:absolute;right:8px;bottom:8px;opacity:.9}
+.cc-grid{display:grid;grid-template-columns:4fr 5fr 3fr;gap:8px;margin-bottom:8px}
+.cc-grid2{display:grid;grid-template-columns:7fr 5fr;gap:8px}
+.cc-panel{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 12px;min-width:0;display:flex;flex-direction:column}
+.cc-panel>h3{font-size:12px;margin:0 0 8px;display:flex;align-items:center;gap:8px}
+.cc-panel>h3 a{margin-left:auto;font-size:11px;color:var(--blue);text-decoration:none;white-space:nowrap}
+.cc-head{display:flex;gap:8px;align-items:flex-start;padding:8px;border:1px solid var(--line);border-radius:8px;margin-bottom:8px;background:var(--panel-2);min-width:0}
+.cc-thumb{flex:0 0 52px;width:52px;height:52px;border-radius:8px;background:linear-gradient(135deg,#13283d,#0a1520);display:flex;align-items:center;justify-content:center;font-weight:800;color:var(--blue);font-size:18px;overflow:hidden}
+.cc-head .t{font-size:12px;font-weight:700;line-height:1.3;overflow-wrap:break-word}
+.cc-head .s{font-size:11px;color:var(--muted);margin-top:2px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.cc-pill{font-size:9px;font-weight:800;letter-spacing:.05em;padding:2px 6px;border-radius:5px;text-transform:uppercase;white-space:nowrap;border:1px solid var(--line-strong)}
+.cc-pill.geo{background:rgba(255,200,87,.12);color:var(--amber)}.cc-pill.cyber{background:rgba(170,141,247,.14);color:var(--purple)}
+.cc-pill.econ{background:rgba(72,223,131,.12);color:var(--green)}.cc-pill.indo{background:rgba(98,160,255,.12);color:var(--blue)}
+.cc-pill.dom{background:rgba(72,223,131,.1);color:var(--green)}.cc-pill.gen{background:rgba(145,164,184,.12);color:var(--muted)}
+.cc-time{font-size:10px;color:var(--muted-2);white-space:nowrap}
+.cc-table{width:100%;border-collapse:collapse;font-size:11px}
+.cc-table th{font-size:10px;color:var(--muted-2);text-transform:uppercase;letter-spacing:.06em;text-align:left;padding:4px 6px;border-bottom:1px solid var(--line)}
+.cc-table td{padding:6px;border-bottom:1px solid var(--line);vertical-align:middle}
+.cc-table tr:last-child td{border-bottom:0}
+.cc-blocks{display:flex;gap:2px}
+.cc-blocks i{width:8px;height:8px;border-radius:2px;background:var(--line-strong)}
+.cc-blocks i.f-b{background:var(--blue)}.cc-blocks i.f-r{background:var(--red)}.cc-blocks i.f-a{background:var(--amber)}
+.cc-wc{display:flex;align-items:center;gap:8px;font-size:11px;padding:7px 8px;border:1px solid var(--line);border-radius:8px;margin-bottom:6px;background:var(--panel-2)}
+.cc-wc b{font-size:14px;font-variant-numeric:tabular-nums;min-width:26px;text-align:right}
+.cc-mkt{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px}
+.cc-mkt-card{border:1px solid var(--line);border-radius:8px;padding:8px;background:var(--panel-2);min-width:0}
+.cc-mkt-card .n{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+.cc-mkt-card .p{font-size:15px;font-weight:800;font-variant-numeric:tabular-nums}
+.cc-mkt-card .c{font-size:11px;font-weight:700}
+.cc-donut-wrap{display:flex;gap:12px;align-items:center}
+.cc-legend{display:flex;gap:12px;flex-wrap:wrap;font-size:10px;color:var(--muted);margin-top:8px;padding:8px;border:1px solid var(--line);border-radius:8px;background:var(--bg-deep)}
+.cc-legend span{display:inline-flex;align-items:center;gap:6px}
+.cc-legend i{width:10px;height:10px;border-radius:50%}
+@media(max-width:1200px){.cc-kpi-strip{grid-template-columns:repeat(3,minmax(0,1fr))}.cc-grid{grid-template-columns:1fr 1fr}.cc-grid .cc-panel:last-child{grid-column:1/-1}.cc-grid2{grid-template-columns:1fr}.cc-mkt{grid-template-columns:repeat(3,minmax(0,1fr))}}
+#dashMap img,#dashMap canvas,#dashMap svg.leaflet-zoom-animated{max-width:none}
+#dashMap .leaflet-container{background:#050b13;font-family:var(--font)}
+#dashMap:focus-visible,.cc-panel a:focus-visible,.cc-panel button:focus-visible,.gp-timeline button:focus-visible{outline:2px solid var(--blue);outline-offset:2px;border-radius:6px}
+.gp-timeline button[data-tl-select]{border-radius:8px}
+.gp-timeline button[data-tl-select][aria-pressed="true"]{background:var(--panel-2);outline:1px solid var(--line-strong)}
+@media(prefers-reduced-motion:reduce){.cc-kpi svg,.cc-blocks{animation:none!important;transition:none!important}}
+@media(max-width:720px){.cc-kpi-strip{grid-template-columns:repeat(2,minmax(0,1fr))}.cc-grid,.cc-grid2{grid-template-columns:1fr}.cc-mkt{grid-template-columns:repeat(2,minmax(0,1fr))}.cc-kpi svg{display:none}#dashMap{height:220px!important;min-height:220px}}

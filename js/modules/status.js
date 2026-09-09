@@ -32,7 +32,7 @@ export function renderStatus() {
   const el = document.getElementById('statusBody');
   if (!el) return;
 
-  const { status, lastSuccessfulFetch, sourceHealth, errors } = getState();
+  const { status, lastSuccessfulFetch, sourceHealth, refreshManifest, errors } = getState();
   const stamp = document.getElementById('statusUpdated');
 
   if (!sourceHealth && status === 'loading') {
@@ -65,12 +65,21 @@ export function renderStatus() {
       const ok = isOnline(s);
       const name = s.name || s.id || s.domain || 'Unnamed source';
       const age = s.lastSuccess || s.lastChecked || s.updatedAt;
+      const fresh = Number.isFinite(Number(s.freshnessMinutes)) ? `${Number(s.freshnessMinutes).toFixed(0)}m ago` : '—';
+      const fails = Number(s.consecutiveFailures || 0);
       return `<div class="gp-source-row sev-${ok ? 'healthy' : 'critical'}"><div class="grow"><div class="title">${escapeHtml(String(name))}</div>`
-        + `<div class="meta">${escapeHtml(sourceDetail(s))}${age ? ` · ${escapeHtml(formatRelativeTime(age))}` : ''}</div></div>`
+        + `<div class="meta">${escapeHtml(String(s.type || s.category || 'source'))} · fresh ${escapeHtml(fresh)} · ${escapeHtml(String(s.contentStatus || 'unknown').replace(/_/g, ' '))}${fails > 0 ? ` · ${fails} consecutive failure${fails === 1 ? '' : 's'}` : ''}${age ? ` · ${escapeHtml(formatRelativeTime(age))}` : ''}</div></div>`
         + (ok ? '<span class="gp-source-chip sev-healthy">Online</span>' : `<span class="gp-sev gp-sev-critical">Failed</span>`) + '</div>';
     }).join('');
 
-    el.innerHTML = `
+    const coverage = Number(sourceHealth.summary?.dataCoveragePercent);
+    const kpiStrip = `<div class="cc-kpi-strip" role="list" aria-label="Source indicators" style="grid-template-columns:repeat(4,minmax(0,1fr));margin-bottom:10px">`
+      + `<div class="cc-kpi t-blue"><div class="v">${total}</div><div class="l">Active Sources</div></div>`
+      + `<div class="cc-kpi t-green"><div class="v">${onlineWithData}</div><div class="l">Reporting with Data</div></div>`
+      + `<div class="cc-kpi t-red"><div class="v">${failedCount}</div><div class="l">Sources with Issues</div></div>`
+      + `<div class="cc-kpi t-amber"><div class="v">${Number.isFinite(coverage) ? coverage.toFixed(0) + '%' : '—'}</div><div class="l">Data Coverage</div></div></div>`;
+
+    el.innerHTML = kpiStrip + `
     <div class="gp-card gp-source-summary sev-${pillSev}">
       <div style="display:flex;justify-content:space-between;align-items:center;gap:10px">
         <div>
@@ -103,6 +112,14 @@ export function renderStatus() {
   }
 
   const errorList = Object.entries(errors || {});
+  const artifacts = refreshManifest?.artifacts && typeof refreshManifest.artifacts === 'object' ? Object.entries(refreshManifest.artifacts) : [];
+  if (artifacts.length) {
+    const fmtSize = (b) => { const n = Number(b); if (!Number.isFinite(n)) return '—'; if (n >= 1048576) return `${(n / 1048576).toFixed(1)} MB`; if (n >= 1024) return `${(n / 1024).toFixed(0)} KB`; return `${n} B`; };
+    const rows = artifacts.slice(0, 8).map(([name, a]) =>
+      `<div style="display:flex;gap:8px;font-size:11px;padding:5px 0;border-top:1px solid var(--line)"><span style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${escapeHtml(name)}</span><span style="font-family:var(--font-mono);color:var(--muted)">${escapeHtml(fmtSize(a?.size))}</span><span style="font-family:var(--font-mono);color:var(--muted-2)">sha ${escapeHtml(String(a?.sha256 || '').slice(0, 8))}</span></div>`).join('');
+    el.insertAdjacentHTML('beforeend',
+      `<div class="gp-card" style="margin-top:10px"><div style="font-weight:700;margin-bottom:2px">Artifact Integrity &amp; Provenance</div><div style="font-size:10px;color:var(--muted-2);margin-bottom:4px">Generated ${escapeHtml(formatRelativeTime(refreshManifest.generatedAt))} · ${artifacts.length} artifacts · sha256 pinned</div>${rows}</div>`);
+  }
   if (errorList.length) {
     el.insertAdjacentHTML('beforeend',
       `<div class="gp-card" style="margin-top:10px;border-color:var(--red-dim)"><div style="font-weight:700;color:var(--red);margin-bottom:6px">Recent errors</div>${errorList.map(([k, v]) => `<div style="font-size:12px"><strong>${escapeHtml(k)}</strong>: ${escapeHtml(v)}</div>`).join('')}</div>`);
