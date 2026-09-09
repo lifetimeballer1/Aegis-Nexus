@@ -1,6 +1,6 @@
 # Phase 10 — Production polish and final intelligence quality
 
-Local acceptance completed September 8, 2026, against base `56ccd105c2c5401de8b561f26eb324a2230a522c`. Production acceptance requires pushing these changes and a successful GitHub Actions refresh/deployment. GUI Phases 1-9 and Map M1-M4 are complete; GUI-10 consolidation (shared severity, token alias) in progress.
+Local acceptance completed September 8, 2026, against base `56ccd105c2c5401de8b561f26eb324a2230a522c`. Production acceptance completed September 9, 2026: commit `1981de3` (duplicate-evidence folding) passed the scheduled production refresh (#656), browser smoke tests, and Pages deployment. GUI Phases 1-9 and Map M1-M4 are complete; GUI-10 consolidation (shared severity, token alias) in progress.
 
 ## Repairs
 
@@ -16,6 +16,12 @@ Local acceptance completed September 8, 2026, against base `56ccd105c2c5401de8b5
 - Real Edge/Chromium desktop (1440×900) and mobile (390×844) tests passed for map, Brain, lazy Web, search, filters, evidence drawers, empty/reset states, relationships, refresh, resize, and missing-renderer retry behavior. WebGL rendered 100 nodes / 403 edges without errors on the committed source-backed dataset.
 - An isolated live canonical refresh restored 1,674 retained articles and added 165 new articles. It passed with 57/65 healthy source results, 1,839 articles, 100 graph nodes / 435 edges, 28 Brain nodes / 91 edges, and 2,880 map points. U.S. and China retained 11 and 1 explicitly targeted canonical events respectively. Operational health and manifest hashes passed.
 
-## Remaining production checks
+## Production acceptance (refresh #656)
 
-The latest inspected production refresh (#634) failed its existing source-health gate (30.8% healthy; China coverage below minimum). Local source availability differs from GitHub Actions; no thresholds were weakened. Confirm the next production refresh and Pages deployment pass before marking production acceptance complete. Public-source outages and underlying extraction ambiguity remain limitations; contextual relationships are not causal proof.
+- Production refresh #656 (September 9, 2026, on commit `1981de3`) succeeded: the canonical builder folded 150 duplicate evidence records (2,000 articles → 1,850 evidence), and all 12 validation contracts passed, including the source-health gate that the earlier refresh #634 had failed (30.8% healthy at the time). No thresholds were weakened.
+- Browser smoke tests on `1981de3` passed and the Pages deployment succeeded.
+- The duplicate-folding change keeps entity/relationship identity stable (194 entities, 433 relationships on the same input) while mention counts, relationship weights, and event tallies no longer inflate on feed-mirror variants or same-outlet re-issues.
+
+## Remaining limitations
+
+Public-source outages and underlying extraction ambiguity remain limitations; contextual relationships are not causal proof. Local source availability differs from GitHub Actions, so a green local run does not guarantee the next scheduled production refresh.
