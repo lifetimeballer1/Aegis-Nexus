@@ -23,8 +23,10 @@ function catPill(cat) {
   if (/geopol|conflict|war|diplo|middle|europe|israel|ukraine|iran/.test(c)) return ['geo', 'GEOPOLITICAL'];
   return ['gen', String(cat || 'GENERAL').slice(0, 12).toUpperCase()];
 }
-function blocks(n, max, cls) {
-  const f = max > 0 ? Math.round((Number(n) || 0) / max * 5) : 0;
+function blocks(n, max) {
+  const ratio = max > 0 ? (Number(n) || 0) / max : 0;
+  const f = Math.round(ratio * 5);
+  const cls = ratio >= 0.66 ? 'f-r' : ratio >= 0.33 ? 'f-a' : 'f-b';
   let s = '';
   for (let i = 0; i < 5; i++) s += `<i class="${i < f ? cls : ''}"></i>`;
   return `<span class="cc-blocks" aria-hidden="true">${s}</span>`;
@@ -48,11 +50,21 @@ function kpi(value, label, deltaPct, trend, tone, sparkVals, sparkColor) {
     : `<span class="d ${trend === 'up' ? 'up' : trend === 'down' ? 'down' : 'flat'}">${trend === 'up' ? '↑' : trend === 'down' ? '↓' : '—'} ${deltaPct}</span>`;
   return `<div class="cc-kpi t-${tone}"><div class="v">${value} ${d}</div><div class="l">${esc(label)}</div>${sparklineSVG(sparkVals, { stroke: sparkColor })}<\/div>`;
 }
-function donut(pct) {
-  const p = Math.max(0, Math.min(100, Number(pct) || 0));
+function donut(online, degraded, failed) {
+  const t = (Number(online) || 0) + (Number(degraded) || 0) + (Number(failed) || 0);
   const c = 2 * Math.PI * 30;
-  const off = c * (1 - p / 100);
-  return `<svg width="96" height="96" viewBox="0 0 96 96" role="img" aria-label="Source health ${p.toFixed(0)} percent"><circle cx="48" cy="48" r="30" fill="none" stroke="var(--line-strong)" stroke-width="10"/><circle cx="48" cy="48" r="30" fill="none" stroke="var(--green)" stroke-width="10" stroke-linecap="round" stroke-dasharray="${c.toFixed(1)}" stroke-dashoffset="${off.toFixed(1)}" transform="rotate(-90 48 48)"/><text x="48" y="46" text-anchor="middle" fill="var(--text)" font-size="16" font-weight="800">${p.toFixed(0)}%</text><text x="48" y="60" text-anchor="middle" fill="var(--muted)" font-size="9">Healthy</text></svg>`;
+  if (!(t > 0)) return `<svg width="96" height="96" viewBox="0 0 96 96" role="img" aria-label="Source health unavailable"><circle cx="48" cy="48" r="30" fill="none" stroke="var(--line-strong)" stroke-width="10"/><text x="48" y="52" text-anchor="middle" fill="var(--muted)" font-size="12">—</text></svg>`;
+  const segs = [[online, 'var(--green)'], [degraded, 'var(--amber)'], [failed, 'var(--red)']];
+  let acc = 0;
+  const arcs = segs.map(([n, color]) => {
+    const frac = (Number(n) || 0) / t;
+    const len = frac * c;
+    const s = `<circle cx="48" cy="48" r="30" fill="none" stroke="${color}" stroke-width="10" stroke-dasharray="${len.toFixed(1)} ${(c - len).toFixed(1)}" stroke-dashoffset="${(-acc * c).toFixed(1)}" transform="rotate(-90 48 48)"/>`;
+    acc += frac;
+    return frac > 0 ? s : '';
+  }).join('');
+  const pct = (Number(online) || 0) / t * 100;
+  return `<svg width="96" height="96" viewBox="0 0 96 96" role="img" aria-label="Source health ${pct.toFixed(0)} percent healthy"><circle cx="48" cy="48" r="30" fill="none" stroke="var(--line-strong)" stroke-width="10"/>${arcs}<text x="48" y="46" text-anchor="middle" fill="var(--text)" font-size="16" font-weight="800">${pct.toFixed(0)}%</text><text x="48" y="60" text-anchor="middle" fill="var(--muted)" font-size="9">Healthy</text></svg>`;
 }
 
 export function renderDashboard() {
@@ -116,7 +128,7 @@ export function renderDashboard() {
   const maxConf = Math.max(1, ...order.map(n => Number(regions[n]?.conflictReports) || 0));
   const regionRows = order.slice(0, 6).map((name, i) => {
     const r = regions[name] || {};
-    return `<tr><td style="color:var(--muted)">${i + 1}</td><td>${esc(name)}</td><td>${blocks(r.reports, maxRep, 'f-r')}</td><td>${blocks(r.conflictReports, maxConf, 'f-r')}</td><td>${trendArrow(r.trend)}</td></tr>`;
+    return `<tr><td style="color:var(--muted)">${i + 1}</td><td>${esc(name)}</td><td>${blocks(r.reports, maxRep)}</td><td>${blocks(r.conflictReports, maxConf)}</td><td>${trendArrow(r.trend)}</td></tr>`;
   }).join('') || '<tr><td colspan="5" style="color:var(--muted)">No regional data</td></tr>';
 
   const wcSum = wc.summary || {};
@@ -134,7 +146,7 @@ export function renderDashboard() {
     return `<div class="cc-mkt-card"><div class="n">${esc(String(name).slice(0, 18))}</div><div class="p">${esc(price)}</div><div class="c" style="color:${up == null ? 'var(--muted)' : up ? 'var(--green)' : 'var(--red)'}">${up == null ? '—' : `${up ? '↑' : '↓'} ${Math.abs(pct).toFixed(2)}%`}</div></div>`;
   }).join('') || '<div class="gp-state"><div class="gp-state-title">Market data unavailable</div></div>';
 
-  const hpct = total ? (online / total * 100) : 0;
+  const degradedCount = Math.max(0, total - online - failed);
   const allSources = Array.isArray(health.sources) ? health.sources : [];
   const issues = allSources.filter(s => String(s.status).toLowerCase() !== 'online').slice(0, 2);
   const failDetail = allSources.filter(s => Number(s.consecutiveFailures) > 0).slice(0, 2);
@@ -166,9 +178,9 @@ export function renderDashboard() {
     <div class="cc-grid2">
       <div class="cc-panel"><h3>📊 Market Pulse <span class="gp-badge delayed">DELAYED</span> <a href="#section-markets">View Markets →</a></h3><div class="cc-mkt">${mktCards}</div></div>
       <div class="cc-panel"><h3>🗄 Source Health <span style="font-weight:400;color:var(--muted);font-size:11px">${fmtInt(online)} / ${fmtInt(total)} sources online</span> <a href="#section-status">View Sources →</a></h3>
-        <div class="cc-donut-wrap">${donut(hpct)}<div style="flex:1;min-width:0">
+        <div class="cc-donut-wrap">${donut(online, degradedCount, failed)}<div style="flex:1;min-width:0">
           <div style="font-size:11px;display:flex;justify-content:space-between"><span>🟢 Online</span><b>${fmtInt(online)}</b></div>
-          <div style="font-size:11px;display:flex;justify-content:space-between"><span>🟡 Degraded</span><b>${fmtInt(Math.max(0, total - online - failed))}</b></div>
+          <div style="font-size:11px;display:flex;justify-content:space-between"><span>🟡 Degraded</span><b>${fmtInt(degradedCount)}</b></div>
           <div style="font-size:11px;display:flex;justify-content:space-between"><span>🔴 Offline</span><b>${fmtInt(failed)}</b></div>
           ${issues.map(s => `<div style="font-size:10px;color:var(--muted-2);margin-top:4px">⚠ ${esc(s.name || 'Unnamed')} — ${esc(s.status || 'failed')}</div>`).join('')}
         </div></div></div>
