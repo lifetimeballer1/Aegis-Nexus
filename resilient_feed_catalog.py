@@ -39,7 +39,7 @@ FEEDS = [
     ("Google News — U.S. Counter-Cartel Operations", google("US military cartels narco-terrorism Ecuador Mexico Caribbean Eastern Pacific"), "counter-cartel"),
     ("Google News — Los Choneros", google('"Los Choneros" Ecuador US military'), "cartel"),
     ("Google News — Sinaloa Cartel / CJNG", google("Sinaloa Cartel CJNG US military Mexico"), "cartel"),
-    ("GDELT — Western Hemisphere Counter-Cartel", "https://api.gdeltproject.org/api/v2/doc/doc?query=(SOUTHCOM%20OR%20%22Southern%20Spear%22%20OR%20%22Joint%20Task%20Force%20Western%20Hemisphere%22%20OR%20cartel%20OR%20narco-terrorism%20OR%20%22Los%20Choneros%22%20OR%20CJNG%20OR%20Sinaloa)&mode=ArtList&format=rss&maxrecords=250&timespan=15m", "counter-cartel"),
+    ("GDELT — Western Hemisphere Counter-Cartel", "https://api.gdeltproject.org/api/v2/doc/doc?query=(SOUTHCOM%20OR%20%22Southern%20Spear%22%20OR%20%22Joint%20Task%20Force%20Western%20Hemisphere%22%20OR%20cartel%20OR%20narco-terrorism%20OR%20%22Los%20Choneros%22%20OR%20CJNG%20OR%20Sinaloa)&mode=ArtList&format=rss&maxrecords=100&timespan=30m", "counter-cartel"),
     ("Google News — Climate & Disaster", google("flood wildfire hurricane disaster"), "climate-hazard"),
     ("Google News — Climate Security", google("climate crisis food water"), "climate-hazard"),
     ("Google News — Humanitarian", google("humanitarian crisis disaster displacement food insecurity emergency"), "humanitarian"),

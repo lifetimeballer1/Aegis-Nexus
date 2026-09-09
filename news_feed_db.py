@@ -63,6 +63,8 @@ def node_link(node):
   if child.tag.endswith('link') and child.attrib.get('href'):return child.attrib['href'].strip()
  return ''
 def parse_feed(payload,source_id,meta):
+ if not bytes(payload or b'').strip():
+  raise ValueError(f"empty response body - throttled or no results in window: {meta['name']}")
  head=bytes(payload[:256]).strip().lower() if isinstance(payload,(bytes,bytearray)) else str(payload[:256]).strip().lower()
  if head.startswith(b'<!doctype html') or head.startswith(b'<html'):
   raise ValueError(f"publisher returned HTML page, not RSS (quarantine candidate): {meta['name']}")

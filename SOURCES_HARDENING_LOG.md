@@ -50,4 +50,12 @@ Rule: commit ONLY scoped code files, never push. Pattern: `fix(sources): <batch>
       outages still trip multiple bounds).
       Verified: hash-match probe, annotation import check, resilience+manifest
       PASS, source-health PASS, pytest 123 passed.
+- [x] Loop-back (second live pass: 48/50 LIVE, 0 limited, 2 GDELT 429) —
+      batch 5 (resilient_feed_catalog.py, news_feed_db.py): WHCC GDELT query
+      lightened maxrecords 250→100 (collector parses max 100) + window
+      15m→30m; hardened fetch() recovered SOUTHCOM mirror live (HTTP 200
+      after backoff, 25s); empty-body 200s now raise a clear ValueError
+      instead of a cryptic XML ParseError for triage.
+      Verified: error-message probes, source-health PASS, manifest PASS,
+      pytest 123 passed.
 - [ ] Final — full validator sweep (12/12), pytest, diff check, report.
