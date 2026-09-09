@@ -230,6 +230,10 @@
   background: var(--panel-hover);
   border-color: var(--line-strong);
 }
+.gp-btn:focus-visible {
+  outline: 2px solid var(--sev-info);
+  outline-offset: 2px;
+}
 .gp-btn.primary {
   background: var(--blue);
   border-color: var(--blue);
@@ -237,6 +241,42 @@
 }
 .gp-btn.primary:hover {
   background: #7ab0ff;
+}
+
+/* Polish grind 7 — Focus/a11y: one visible focus ring everywhere.
+   Covers filters, map tools, search inputs, timeline/header buttons and
+   the all:unset timeline select buttons (which otherwise lose rings).
+   No keyboard traps: nothing here captures Tab/Escape. */
+:where(a, button, input, select, textarea, [tabindex]):focus-visible {
+  outline: 2px solid var(--sev-info);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+.gp-filter:focus-visible,
+.gp-map-tool:focus-visible,
+.gp-nav-item:focus-visible,
+[data-tl-select]:focus-visible,
+[data-alert-toggle]:focus-visible {
+  outline: 2px solid var(--sev-info);
+  outline-offset: 2px;
+}
+.gp-skip-link {
+  position: absolute;
+  left: 12px;
+  top: -48px;
+  z-index: 200;
+  background: var(--panel-2);
+  color: var(--text);
+  border: 1px solid var(--sev-info);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: top var(--duration) var(--ease);
+}
+.gp-skip-link:focus {
+  top: 12px;
 }
 
 /* Source attribution */

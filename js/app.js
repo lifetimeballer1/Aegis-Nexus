@@ -80,16 +80,27 @@ function resetRefreshTimer() {
 }
 function setupNav() {
   const items = document.querySelectorAll('.gp-nav-item');
+  const syncCurrent = () => items.forEach(i => {
+    if (i.classList.contains('active')) i.setAttribute('aria-current', 'true');
+    else i.removeAttribute('aria-current');
+  });
   items.forEach(item => item.addEventListener('click', () => {
     items.forEach(i => i.classList.remove('active'));
     item.classList.add('active');
+    syncCurrent();
   }));
+  syncCurrent();
   if (typeof IntersectionObserver === 'undefined') return;
   const sections = document.querySelectorAll('[data-section]');
   const observer = new IntersectionObserver(entries => entries.forEach(entry => {
     if (!entry.isIntersecting) return;
     const id = entry.target.dataset.section;
-    items.forEach(i => i.classList.toggle('active', i.dataset.nav === id));
+    items.forEach(i => {
+      const on = i.dataset.nav === id;
+      i.classList.toggle('active', on);
+      if (on) i.setAttribute('aria-current', 'true');
+      else i.removeAttribute('aria-current');
+    });
   }), {threshold:.35});
   sections.forEach(s => observer.observe(s));
 }
