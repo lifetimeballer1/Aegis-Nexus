@@ -58,4 +58,5 @@ Rule: commit ONLY scoped code files, never push. Pattern: `fix(sources): <batch>
       instead of a cryptic XML ParseError for triage.
       Verified: error-message probes, source-health PASS, manifest PASS,
       pytest 123 passed.
-- [ ] Final — full validator sweep (12/12), pytest, diff check, report.
+- [x] Final — full validator sweep (12/12), pytest 123 passed, diff check clean,
+      report delivered. Data/artifacts left untouched throughout.
