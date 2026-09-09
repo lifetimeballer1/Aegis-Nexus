@@ -449,7 +449,7 @@
 .cc-kpi svg[role="img"]{pointer-events:none}
 
 /* Polish grind 9 — 1440/390 cross-check: overflow risks, wrapping, touch targets.
-   1440px: .gp-main caps at 1400px so the 3-col workspace grid + rail fit with
+   1440px: .gp-app-main caps at 1400px so the 3-col workspace grid + rail fit with
    room to spare; no fixed-width children exceed their grid tracks.
    390px: tables wrap instead of overflowing; headlines wrap; situation header
    stacks; panels keep 36px contract targets (phase 9 lock). */

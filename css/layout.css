@@ -1,14 +1,16 @@
 /* Global Pulse — Layout */
 
-.app-shell { min-height:100dvh; display:flex; flex-direction:column; padding-bottom:calc(64px + var(--safe-bottom)); }
 .gp-header { position:sticky; top:0; z-index:100; background:rgba(5,10,16,.92); backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px); border-bottom:1px solid var(--line); padding:10px 16px; display:flex; align-items:center; justify-content:space-between; gap:12px; min-width:0; }
-.gp-logo { display:flex; align-items:baseline; gap:6px; font-weight:800; letter-spacing:.04em; text-transform:uppercase; font-size:15px; min-width:0; }
-.gp-logo span { color:var(--blue); }
 .gp-header-meta { display:flex; align-items:center; gap:10px; font-size:11px; color:var(--muted); min-width:0; }
-.gp-last-updated { font-variant-numeric:tabular-nums; min-width:0; }
-.gp-status-dot { width:8px; height:8px; border-radius:50%; background:var(--amber); flex-shrink:0; }
-.gp-status-dot.live { background:var(--green); } .gp-status-dot.stale { background:var(--amber); } .gp-status-dot.error { background:var(--red); }
-.gp-main { flex:1; width:100%; max-width:1400px; min-width:0; margin:0 auto; padding:12px 14px 24px; display:flex; flex-direction:column; gap:18px; }
+/* Header brand lockup (index.html .gp-brand): mark wears severity-info like
+   the rail brand; sub-line is a 10px micro-label. Shared by header + rail. */
+.gp-brand .gp-mark,.gp-rail-brand .gp-mark{color:var(--sev-info)}
+.gp-sub{font-size:10px;color:var(--muted-2);font-weight:600}
+/* Page column (2026-09-09): retargeted from the dead .gp-main/.app-shell
+   selectors — index.html mounts <main class="gp-app-main">, so the 1400px
+   cap and section rhythm live here now. Bottom padding clears the fixed
+   mobile bottom nav; the >=900px query resets it when the nav hides. */
+.gp-app-main { flex:1; width:100%; max-width:1400px; min-width:0; margin:0 auto; padding:12px 14px calc(64px + var(--safe-bottom)); display:flex; flex-direction:column; gap:18px; }
 .gp-section { background:var(--panel); border:1px solid var(--line); border-radius:var(--radius-lg); overflow:hidden; min-width:0; }
 .gp-section-header { display:flex; align-items:center; justify-content:space-between; gap:10px; padding:12px 14px; border-bottom:1px solid var(--line); background:var(--bg-elevated); min-width:0; }
 .gp-section-title { font-size:12px; font-weight:800; letter-spacing:.12em; text-transform:uppercase; color:var(--text-secondary); display:flex; align-items:center; gap:8px; min-width:0; }
@@ -17,8 +19,10 @@
 .gp-nav-item { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:3px; padding:8px 4px; min-height:48px; min-width:0; border-radius:var(--radius); color:var(--muted); font-size:10px; font-weight:700; letter-spacing:.04em; text-transform:uppercase; text-decoration:none; transition:color var(--duration) var(--ease), background var(--duration) var(--ease); -webkit-tap-highlight-color:transparent; }
 .gp-nav-item:hover,.gp-nav-item:focus-visible { color:var(--text); background:var(--panel-hover); outline:none; }
 .gp-nav-item.active { color:var(--blue); } .gp-nav-icon { font-size:18px; line-height:1; }
-@media (min-width:900px) { .gp-bottom-nav{display:none;} .app-shell{padding-bottom:0;} .gp-main{padding:18px 24px 40px; gap:22px;} }
+@media (min-width:900px) { .gp-bottom-nav{display:none;} .gp-app-main{padding:18px 24px 40px; gap:22px;} }
 .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+/* .sr-only is a reserved a11y utility (visually-hidden labels for icon-only
+   controls). No current markup uses it — keep; do not treat as dead CSS. */
 
 /* GUI visual fidelity pass — persistent left rail (desktop) + compact command bar.
    The rail reuses .gp-nav-item so js/app.js setupNav active-state sync applies. */
@@ -31,14 +35,12 @@
     background:var(--bg-deep);min-width:0}
   .gp-rail .gp-rail-brand{display:flex;align-items:center;gap:8px;padding:4px 8px 12px;
     font-weight:800;font-size:12px;letter-spacing:.1em;color:var(--text)}
-  .gp-rail .gp-rail-brand .gp-mark{color:var(--sev-info)}
   .gp-rail .gp-nav-item{flex-direction:row;justify-content:flex-start;gap:10px;min-height:0;
     padding:8px 10px;font-size:11px;border:1px solid transparent;border-radius:8px;width:100%;box-sizing:border-box}
   .gp-rail .gp-nav-item .gp-nav-icon{font-size:14px}
   .gp-rail .gp-nav-item.active{color:var(--sev-info);border-color:var(--line-strong);background:var(--panel-2)}
   .gp-rail .gp-rail-foot{margin-top:auto;padding:10px 8px 0;font-size:9px;color:var(--muted-2);
     text-transform:uppercase;letter-spacing:.08em}
-  .gp-app-main{flex:1;min-width:0}
   /* Compact top command bar: tighter density, 11-12px tab type, inline status. */
   .gp-header{padding:6px 14px;gap:8px}
   .gp-command-tabs .gp-nav-item{padding:5px 9px;font-size:11px}
