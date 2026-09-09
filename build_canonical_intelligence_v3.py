@@ -5,7 +5,7 @@ import hashlib,json,re
 from pathlib import Path
 from typing import Any
 from intelligence_entity_extractor import extract_entities
-from intelligence_scoring import entity_importance,event_confidence,event_score,evidence_score,event_severity,strategic_relevance,relationship_strength
+from intelligence_scoring import entity_importance,event_confidence,event_score,evidence_score,event_severity,strategic_relevance,relationship_strength,recency_score,source_reliability,parse_timestamp
 from intelligence_schema import empty_document,validate_document
 ROOT=Path(__file__).resolve().parent;DATA=ROOT/'data';INPUT=DATA/'live_articles.json';OUTPUT=DATA/'canonical_intelligence.json'
 EVENT_PATTERNS=(("sanction",r"\b(sanction|sanctions|sanctioned|sanctioning)\b"),("military_action",r"\b(strike|strikes|airstrike|airstrikes|missile|bombing|deployment|deploys|military operation|troops|forces)\b"),("diplomatic_action",r"\b(meet|meets|meeting|talks|negotiat|diplomatic|envoy|summit|ceasefire)\b"),("economic_action",r"\b(stimulus|interest rate|rate cut|tariff|tariffs|tax|capital|investment|economic policy)\b"),("trade_action",r"\b(trade|exports?|imports?|supply chain|customs)\b"),("technology_action",r"\b(chip|chips|semiconductor|semiconductors|artificial intelligence|technology|tech)\b"),("energy_action",r"\b(oil|gas|lng|energy|electricity|power grid|nuclear|uranium)\b"),("cyber_activity",r"\b(cyber|cyberattack|cyberattacks|hacking|malware|ransomware)\b"),("political_action",r"\b(election|elections|vote|voting|parliament|congress|president|government)\b"))
@@ -15,6 +15,36 @@ ACTION_CONTEXT={"sanction":r"sanction(?:s|ed|ing)?","military_action":r"strike|s
 STRATEGIC_COUNTRIES={"United States","China"}
 STRATEGIC_INSTITUTIONS={"U.S. Department of Defense","U.S. Department of State","U.S. Treasury","U.S. Department of Commerce","U.S. Department of Justice","U.S. Congress","White House","People's Liberation Army","Communist Party of China","Chinese State Council","Chinese Central Military Commission","Chinese Ministry of Foreign Affairs","Chinese Ministry of Commerce"}
 def stable_id(prefix,*parts):return f"{prefix}-{hashlib.sha256('|'.join(parts).encode('utf-8','ignore')).hexdigest()[:16]}"
+def normalize_url(url):
+ """Fold feed-mirror URL variants (scheme case, query/fragment, trailing slash) of the same link."""
+ u=str(url or '').strip()
+ if not u:return ''
+ if '://' not in u:u='https://'+u
+ try:
+  from urllib.parse import urlsplit,urlunsplit
+  p=urlsplit(u);path=p.path or ''
+  if path!='/':path=path.rstrip('/')
+  return urlunsplit(((p.scheme or 'https').lower(),(p.hostname or '').lower(),path,'',''))
+ except Exception:return u.lower()
+def url_host(url):
+ try:
+  from urllib.parse import urlsplit
+  return (urlsplit(str(url or '')).hostname or '').lower()
+ except Exception:return ''
+def normalize_title(title):
+ t=re.sub(r'\s+',' ',str(title or '').lower()).strip()
+ return re.sub(r'\s+',' ',re.sub(r'[^a-z0-9 ]','',t)).strip()
+def score_breakdown(ev,score):
+ """Human-readable confidence reasoning for one evidence record."""
+ try:quality=float(ev.get('quality',ev.get('evidence_quality',0.75)))
+ except (TypeError,ValueError):quality=0.75
+ rel=source_reliability(ev);rec=recency_score(ev.get('published_at'));relevance=float(ev.get('geopolitical_relevance') or 0.0)
+ return f"reliability {rel:.2f} | recency {rec:.2f} | quality {max(0.0,min(1.0,quality)):.2f} | relevance {relevance:.2f} => score {score:.3f}"
+def earlier_stamp(a,b):
+ """Return the earlier of two timestamp strings; empty means unknown."""
+ da,db=parse_timestamp(a),parse_timestamp(b)
+ if da and db:return a if da<=db else b
+ return a or b or ''
 def article_text(a):return " ".join(str(a.get(k) or "") for k in ("title","summary_snippet","summary","description","content")).strip()
 def classify_geopolitical_relevance(text,event_type=None):
  text=str(text or "");scores=[score for _,pattern,score in RELEVANCE_PATTERNS if re.search(pattern,text,re.I)];event_bonus={'sanction':.15,'military_action':.15,'diplomatic_action':.10,'trade_action':.08,'economic_action':.07,'technology_action':.07,'energy_action':.08,'cyber_activity':.12,'political_action':.05}.get(event_type,0.0) if event_type else 0.0
@@ -103,17 +133,32 @@ def main():
  if not INPUT.exists():print(f"ERROR: missing input {INPUT}");return 2
  try:raw=json.loads(INPUT.read_text(encoding='utf-8'))
  except json.JSONDecodeError as exc:print(f"ERROR: invalid input JSON: {exc}");return 2
- document=empty_document();document['metadata'].update({'input':str(INPUT.relative_to(ROOT)),'method':'shared-entity-extractor-v7','scoring':'shared-intelligence-scoring-v1','source_backed_only':True,'geopolitical_relevance':'canonical-context-v1','participant_model':'actor-target-location-v4','strategic_attribution':'action-local-v1'});entities={};evidence={};events={};relationships={};articles=raw.get('articles',[]) if isinstance(raw,dict) else [];discovered_ids=set();entity_event_scores={};entity_evidence_scores={}
+ document=empty_document();document['metadata'].update({'input':str(INPUT.relative_to(ROOT)),'method':'shared-entity-extractor-v7','scoring':'shared-intelligence-scoring-v1','source_backed_only':True,'geopolitical_relevance':'canonical-context-v1','participant_model':'actor-target-location-v4','strategic_attribution':'action-local-v1'});entities={};evidence={};events={};relationships={};articles=raw.get('articles',[]) if isinstance(raw,dict) else [];discovered_ids=set();entity_event_scores={};entity_evidence_scores={};by_url={};by_host_title={};folded=0
  for article in articles:
   if not isinstance(article,dict):continue
   title,url=str(article.get('title') or '').strip(),str(article.get('url') or '').strip()
   if not title or not url:continue
-  published=str(article.get('published_date') or '');text=article_text(article);event_types=[k for k,p in EVENT_PATTERNS if re.search(p,text,re.I)];article_relevance=classify_geopolitical_relevance(text,event_types[0] if event_types else None);ev_id=stable_id('evd',url,title);ev={'id':ev_id,'title':title,'source':str(article.get('source') or 'Unknown public source'),'url':url,'published_at':published,'reliability':article.get('reliability',.5),'quality':article.get('evidence_quality',.75),'geopolitical_relevance':article_relevance,'excerpt':str(article.get('summary_snippet') or '')[:500]};evidence[ev_id]=ev;ev_score=evidence_score(ev);found_list=extract_entities(text);found={str(x['id']):x for x in found_list};matched=[];names={}
+  published=str(article.get('published_date') or '');text=article_text(article);event_types=[k for k,p in EVENT_PATTERNS if re.search(p,text,re.I)];article_relevance=classify_geopolitical_relevance(text,event_types[0] if event_types else None)
+  nurl=normalize_url(url);host=url_host(nurl);ntitle=normalize_title(title)
+  ev_id=by_url.get(nurl) or (by_host_title.get((host,ntitle)) if host and len(ntitle)>25 else None)
+  if ev_id and ev_id in evidence:
+   # Same-link variant or same-outlet re-issue: fold into the existing
+   # evidence record instead of minting a duplicate that would inflate
+   # mention counts, relationship weights, and tension tallies.
+   ev=evidence[ev_id];folded+=1;ev['duplicate_count']=int(ev.get('duplicate_count') or 0)+1
+   dup_urls=ev.setdefault('duplicate_urls',[])
+   if url not in dup_urls and ev.get('url')!=url and len(dup_urls)<10:dup_urls.append(url)
+   if published and (not ev.get('published_at') or earlier_stamp(published,ev.get('published_at'))==published):ev['published_at']=published
+   ev_score=evidence_score(ev);ev['score_breakdown']=score_breakdown(ev,ev_score)
+  else:
+   ev_id=stable_id('evd',nurl or url,title);ev={'id':ev_id,'title':title,'source':str(article.get('source') or 'Unknown public source'),'url':url,'published_at':published,'reliability':article.get('reliability',.5),'quality':article.get('evidence_quality',.75),'geopolitical_relevance':article_relevance,'excerpt':str(article.get('summary_snippet') or '')[:500],'duplicate_count':0,'duplicate_urls':[]};evidence[ev_id]=ev;ev_score=evidence_score(ev);ev['score_breakdown']=score_breakdown(ev,ev_score);by_url.setdefault(nurl,ev_id)
+   if host and len(ntitle)>25:by_host_title.setdefault((host,ntitle),ev_id)
+  found_list=extract_entities(text);found={str(x['id']):x for x in found_list};matched=[];names={}
   for eid,x in found.items():
-   name=str(x['canonical_name']);etype=str(x['entity_type']);entity=entities.setdefault(eid,{'id':eid,'canonical_name':name,'entity_type':etype,'aliases':list(x.get('aliases',[])),'country':name if etype=='country' else None,'region':None,'importance':0.,'mention_count':0,'evidence_ids':[]});entity['mention_count']+=1;discovered_ids.add(eid) if x.get('discovered') else None
-   entity['aliases']=list(dict.fromkeys(entity['aliases']+list(x.get('aliases',[]))))
-   if ev_id not in entity['evidence_ids']:entity['evidence_ids'].append(ev_id)
-   entity_evidence_scores.setdefault(eid,[]).append(ev_score);matched.append(eid);names[eid]=name
+    name=str(x['canonical_name']);etype=str(x['entity_type']);entity=entities.setdefault(eid,{'id':eid,'canonical_name':name,'entity_type':etype,'aliases':list(x.get('aliases',[])),'country':name if etype=='country' else None,'region':None,'importance':0.,'mention_count':0,'evidence_ids':[]});discovered_ids.add(eid) if x.get('discovered') else None
+    entity['aliases']=list(dict.fromkeys(entity['aliases']+list(x.get('aliases',[]))))
+    if ev_id not in entity['evidence_ids']:entity['evidence_ids'].append(ev_id);entity['mention_count']+=1
+    entity_evidence_scores.setdefault(eid,[]).append(ev_score);matched.append(eid);names[eid]=name
   for event_type in event_types[:3]:
    event_id=stable_id('evt',ev_id,event_type);actors,targets,locations=participant_roles(found,matched,names,event_type,text);event={'id':event_id,'event_type':event_type,'title':title,'timestamp':published,'location':names[locations[0]] if locations else None,'severity':0.,'confidence':0.,'entity_ids':matched,'evidence_ids':[ev_id],'actor_ids':actors,'target_ids':targets,'location_ids':locations,'action':action_for(event_type),'geopolitical_relevance':classify_geopolitical_relevance(text,event_type)};event['severity']=event_severity(event);event['confidence']=event_confidence(event,[ev]);event['strategic_relevance']=strategic_relevance(event);event['score']=event_score(event,[ev]);events[event_id]=event
    for eid in matched:entity_event_scores.setdefault(eid,[]).append(event['score'])
@@ -123,8 +168,8 @@ def main():
    if m:positions.append((m.start(),eid))
   positions.sort()
   if kind!='mentioned_with' and len(positions)>=2:
-   source_id,target_id=positions[0][1],positions[1][1];key=f'{source_id}|{kind}|{target_id}';rel=relationships.setdefault(key,{'source_entity_id':source_id,'relationship_type':kind,'target_entity_id':target_id,'confidence':.68,'weight':0.,'first_seen':published,'last_seen':published,'evidence_ids':[],'event_ids':[],'geopolitical_relevance':article_relevance});rel['weight']+=1.;rel['last_seen']=published or rel['last_seen'];rel['confidence']=max(rel['confidence'],.76);rel['geopolitical_relevance']=max(rel['geopolitical_relevance'],article_relevance)
-   if ev_id not in rel['evidence_ids']:rel['evidence_ids'].append(ev_id)
+   source_id,target_id=positions[0][1],positions[1][1];key=f'{source_id}|{kind}|{target_id}';rel=relationships.setdefault(key,{'source_entity_id':source_id,'relationship_type':kind,'target_entity_id':target_id,'confidence':.68,'weight':0.,'first_seen':published,'last_seen':published,'evidence_ids':[],'event_ids':[],'geopolitical_relevance':article_relevance});rel['last_seen']=published or rel['last_seen'];rel['confidence']=max(rel['confidence'],.76);rel['geopolitical_relevance']=max(rel['geopolitical_relevance'],article_relevance)
+   if ev_id not in rel['evidence_ids']:rel['evidence_ids'].append(ev_id);rel['weight']+=1.
    for event_id,event in events.items():
     if event['evidence_ids']==[ev_id] and event_id not in rel['event_ids']:rel['event_ids'].append(event_id)
   for i,a in enumerate(matched):
@@ -132,11 +177,11 @@ def main():
     if a==b:continue
     pair=sorted((a,b));key=f'{pair[0]}|mentioned_with|{pair[1]}';semantic={f'{a}|{kind}|{b}',f'{b}|{kind}|{a}'}
     if kind!='mentioned_with' and any(k in relationships for k in semantic):continue
-    rel=relationships.setdefault(key,{'source_entity_id':pair[0],'relationship_type':'mentioned_with','target_entity_id':pair[1],'confidence':.45,'weight':0.,'first_seen':published,'last_seen':published,'evidence_ids':[],'event_ids':[],'geopolitical_relevance':article_relevance});rel['weight']+=1.;rel['last_seen']=published or rel['last_seen'];rel['geopolitical_relevance']=max(rel['geopolitical_relevance'],article_relevance)
-    if ev_id not in rel['evidence_ids']:rel['evidence_ids'].append(ev_id)
+    rel=relationships.setdefault(key,{'source_entity_id':pair[0],'relationship_type':'mentioned_with','target_entity_id':pair[1],'confidence':.45,'weight':0.,'first_seen':published,'last_seen':published,'evidence_ids':[],'event_ids':[],'geopolitical_relevance':article_relevance});rel['last_seen']=published or rel['last_seen'];rel['geopolitical_relevance']=max(rel['geopolitical_relevance'],article_relevance)
+    if ev_id not in rel['evidence_ids']:rel['evidence_ids'].append(ev_id);rel['weight']+=1.
  for eid,e in entities.items():e['importance']=entity_importance(e,entity_event_scores.get(eid),entity_evidence_scores.get(eid))
  for r in relationships.values():r['strength']=relationship_strength(r,[evidence_score(evidence[x]) for x in r['evidence_ids'] if x in evidence]);r['weight']=round(r['strength'],6)
- document['entities']=list(entities.values());document['events']=list(events.values());document['relationships']=list(relationships.values());document['evidence']=list(evidence.values());document['signals']=[];document['metadata'].update({'article_count':len(articles),'entity_count':len(entities),'event_count':len(events),'relationship_count':len(relationships),'semantic_relationship_count':sum(r['relationship_type']!='mentioned_with' for r in relationships.values()),'cooccurrence_relationship_count':sum(r['relationship_type']=='mentioned_with' for r in relationships.values()),'discovered_entity_count':len(discovered_ids),'event_participant_model':'actor-target-location-v4','strategic_attribution_model':'action-local-v1'})
+ document['entities']=list(entities.values());document['events']=list(events.values());document['relationships']=list(relationships.values());document['evidence']=list(evidence.values());document['signals']=[];document['metadata'].update({'article_count':len(articles),'folded_duplicates':folded,'entity_count':len(entities),'event_count':len(events),'relationship_count':len(relationships),'semantic_relationship_count':sum(r['relationship_type']!='mentioned_with' for r in relationships.values()),'cooccurrence_relationship_count':sum(r['relationship_type']=='mentioned_with' for r in relationships.values()),'discovered_entity_count':len(discovered_ids),'event_participant_model':'actor-target-location-v4','strategic_attribution_model':'action-local-v1'})
  errors=validate_document(document)
  if errors:print(f"FAIL: canonical build produced {len(errors)} validation errors");[print(f" - {x}") for x in errors[:25]];return 1
  OUTPUT.write_text(json.dumps(document,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');print(f"PASS: canonical v7 entities={len(entities)} events={len(events)} relationships={len(relationships)} evidence={len(evidence)} discovered={len(discovered_ids)}");return 0
