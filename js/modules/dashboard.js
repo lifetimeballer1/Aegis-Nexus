@@ -104,7 +104,7 @@ export function renderDashboard() {
   const evSpark = events.slice(0, 12).map(e => e.reportCount).filter(Number.isFinite);
   const kpis =
     kpi(fmtInt(events.length), 'Active Events', 'tracked clusters', 'blue', evSpark.length > 1 ? evSpark : lastT, '#62a0ff')
-    + kpi(fmtInt(hiPri || conflicts.length), 'High Priority', 'escalated conflicts', 'red', lastT, '#ff6678')
+    + kpi(fmtInt(hiPri), 'High Priority', 'escalated conflicts', 'red', lastT, '#ff6678')
     + kpi(fmtInt(emerging), 'Emerging Risks', 'low-confidence events', 'amber', lastT, '#ffc857')
     + kpi(fmtInt(critEv), 'Critical Alerts', 'high-confidence events', 'red', lastT, '#ff6678')
     + kpi(fmtInt(order.length), 'Monitored Regions', 'regions', 'blue', [], '#62a0ff');
@@ -172,7 +172,7 @@ export function renderDashboard() {
         <div class="cc-legend" aria-label="Map legend"><span><i style="background:var(--red)"></i>Critical</span><span><i style="background:var(--amber)"></i>Elevated</span><span><i style="background:var(--blue)"></i>Notable</span><span><i style="background:#cbd5e1"></i>Monitoring</span></div></div>
       <div class="cc-panel"><h3>🎯 Priority Regions <a href="#section-map">View All →</a></h3>
         <table class="cc-table" aria-label="Priority regions"><thead><tr><th>#</th><th>Region</th><th>Activity</th><th>Impact</th><th>Trend</th></tr></thead><tbody>${regionRows}</tbody></table>
-        <h3 style="margin-top:10px">🕐 What Changed <a href="#section-breaking">View All →</a></h3><div style="font-size:10px;color:var(--muted-2);margin-bottom:6px">Since last refresh (2h ago)</div>${wcBlock}</div>
+        <h3 style="margin-top:10px">🕐 What Changed <a href="#section-breaking">View All →</a></h3><div style="font-size:10px;color:var(--muted-2);margin-bottom:6px">Since last refresh (${esc(wc.window || 'current window')})</div>${wcBlock}</div>
     </div>
     <div class="cc-grid2">
       <div class="cc-panel"><h3>📊 Market Pulse <span class="gp-badge delayed">DELAYED</span> <a href="#section-markets">View Markets →</a></h3><div class="cc-mkt">${mktCards}</div></div>
@@ -208,7 +208,10 @@ function initDashMap(state) {
     const fp = `${state.mapPoints?.updatedAt || ''}|${markers.length}|${state.snapshot?.updatedAt || ''}`;
     if (!dashMap) {
       dashMap = L.map(host, { center: [20, 10], zoom: 2, worldCopyJump: true, preferCanvas: true, zoomControl: false, attributionControl: true, scrollWheelZoom: false });
-      L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', { maxZoom: 18, subdomains: 'abcd', attribution: '© OSM © CARTO' }).addTo(dashMap);
+      const dashBase = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', { maxZoom: 19, attribution: '© Esri © OpenStreetMap contributors' });
+      const dashFallback = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19, attribution: '© OpenStreetMap contributors' });
+      dashBase.addTo(dashMap);
+      dashBase.on('tileerror', () => { try { if (!dashMap.hasLayer(dashFallback)) dashFallback.addTo(dashMap); } catch {} });
       L.control.zoom({ position: 'bottomright' }).addTo(dashMap);
       setTimeout(() => { try { dashMap.invalidateSize(); } catch {} }, 300);
       if (typeof IntersectionObserver !== 'undefined') {
