@@ -25,8 +25,14 @@ Rule: commit ONLY scoped code files, never push. Pattern: `fix(sources): <batch>
       backoff (2/8/20s), GDELT spacing >=2.5s (thread-safe), per-source timeouts
       (GDELT 25s/NPR 15s/default 12s), HTML-payload guard, limits documented.
       Verified: import ok, behavior probes ok, source-health PASS, pytest 123 passed.
-- [ ] Batch 2 — catalog fixes (resilient_feed_catalog.py + update_snapshot.py):
-      France24→RFI replacement, broaden 9 narrow queries (verified live).
+- [x] Batch 2 — catalog fixes (resilient_feed_catalog.py, news_feed_db.py
+      builtin, update_snapshot.py legacy list): France24→RFI World replacement
+      (https://www.rfi.fr/en/general/rss, 22 items live, same media group);
+      broadened 9 zero-result queries (all verified live w/ results: 4/11/58/
+      3/9/5/11/5/97 items); removed duplicate France 24 builtin so the registry
+      is the single source of truth.
+      Verified: catalog shape (50 feeds, no dup names), each changed URL live,
+      source-health PASS, resilience PASS, pipeline PASS, repo PASS, pytest 123.
 - [ ] Batch 3 — quarantine mapping + fallbacks (source_failover.py,
       build_source_health.py): documented quarantine table, X-proxy note.
 - [ ] Batch 4 — manifest freshness + source-health thresholds review.

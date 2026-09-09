@@ -67,7 +67,7 @@ FEEDS = [
     ("NPR National Security", "https://feeds.npr.org/1122/rss.xml", "international"),
     ("Al Jazeera", "https://www.aljazeera.com/xml/rss/all.xml", "international"),
     ("DW World", "https://rss.dw.com/xml/rss-en-world", "international"),
-    ("France 24", "https://www.france24.com/en/rss", "international"),
+    ("RFI World", "https://www.rfi.fr/en/general/rss", "international"),
     ("Crisis Group", "https://www.crisisgroup.org/rss.xml", "analysis"),
     ("ReliefWeb", "https://reliefweb.int/updates/rss.xml", "humanitarian"),
 ]
