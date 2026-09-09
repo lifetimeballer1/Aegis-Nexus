@@ -147,7 +147,7 @@ export function renderDashboard() {
 
   el.innerHTML = `
     <div class="cc-situation"><h2>🌐 Global Situation <span class="sub">Key indicators across all monitored domains</span></h2>
-      <div class="meta"><span>⟳ Last updated: ${esc(upd)}</span><span class="cc-live sev-healthy"><i></i>${failed === 0 && total ? 'All Systems Operational' : `${failed} source${failed === 1 ? '' : 's'} failing`}</span></div></div>${wcEmptyNote}
+      <div class="meta"><span class="cc-pill ${tensionDelta > 0 ? 'geo' : tensionDelta < 0 ? 'econ' : 'gen'}" title="Global tension index">Tension ${tension ?? '—'}${Number.isFinite(Number(tensionDelta)) && Number(tensionDelta) !== 0 ? ` (${Number(tensionDelta) > 0 ? '+' : ''}${tensionDelta})` : ''}</span><span>⟳ Last updated: ${esc(upd)}</span><span class="cc-live sev-healthy"><i></i>${failed === 0 && total ? 'All Systems Operational' : `${failed} source${failed === 1 ? '' : 's'} failing`}</span></div></div>${wcEmptyNote}
     ${stale ? '<div class="gp-state" style="padding:8px;border:1px solid var(--amber-dim);border-radius:8px;margin-bottom:8px"><div style="font-size:11px;color:var(--amber)">Offline — showing cached data. Some feeds are stale.</div></div>' : ''}
     ${!navigator.onLine ? '<div class="gp-state" style="padding:8px;border:1px solid var(--red-dim);border-radius:8px;margin-bottom:8px"><div style="font-size:11px;color:var(--red)">You are offline. Cached snapshot shown.</div></div>' : ''}
     <div class="cc-kpi-strip" role="list" aria-label="Key indicators">${kpis}</div>

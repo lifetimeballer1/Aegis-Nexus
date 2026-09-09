@@ -32,7 +32,7 @@ export function renderStatus() {
   const el = document.getElementById('statusBody');
   if (!el) return;
 
-  const { status, lastSuccessfulFetch, sourceHealth, errors } = getState();
+  const { status, lastSuccessfulFetch, sourceHealth, refreshManifest, errors } = getState();
   const stamp = document.getElementById('statusUpdated');
 
   if (!sourceHealth && status === 'loading') {
@@ -112,6 +112,14 @@ export function renderStatus() {
   }
 
   const errorList = Object.entries(errors || {});
+  const artifacts = refreshManifest?.artifacts && typeof refreshManifest.artifacts === 'object' ? Object.entries(refreshManifest.artifacts) : [];
+  if (artifacts.length) {
+    const fmtSize = (b) => { const n = Number(b); if (!Number.isFinite(n)) return '—'; if (n >= 1048576) return `${(n / 1048576).toFixed(1)} MB`; if (n >= 1024) return `${(n / 1024).toFixed(0)} KB`; return `${n} B`; };
+    const rows = artifacts.slice(0, 8).map(([name, a]) =>
+      `<div style="display:flex;gap:8px;font-size:11px;padding:5px 0;border-top:1px solid var(--line)"><span style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${escapeHtml(name)}</span><span style="font-family:var(--font-mono);color:var(--muted)">${escapeHtml(fmtSize(a?.size))}</span><span style="font-family:var(--font-mono);color:var(--muted-2)">sha ${escapeHtml(String(a?.sha256 || '').slice(0, 8))}</span></div>`).join('');
+    el.insertAdjacentHTML('beforeend',
+      `<div class="gp-card" style="margin-top:10px"><div style="font-weight:700;margin-bottom:2px">Artifact Integrity &amp; Provenance</div><div style="font-size:10px;color:var(--muted-2);margin-bottom:4px">Generated ${escapeHtml(formatRelativeTime(refreshManifest.generatedAt))} · ${artifacts.length} artifacts · sha256 pinned</div>${rows}</div>`);
+  }
   if (errorList.length) {
     el.insertAdjacentHTML('beforeend',
       `<div class="gp-card" style="margin-top:10px;border-color:var(--red-dim)"><div style="font-weight:700;color:var(--red);margin-bottom:6px">Recent errors</div>${errorList.map(([k, v]) => `<div style="font-size:12px"><strong>${escapeHtml(k)}</strong>: ${escapeHtml(v)}</div>`).join('')}</div>`);
