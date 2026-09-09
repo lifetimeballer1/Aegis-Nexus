@@ -17,8 +17,9 @@ export function renderOverview() {
   if (!snapshot) {
     el.innerHTML = `
       <div class="gp-state">
-        <div class="gp-state-title">${status === 'error' ? 'Data unavailable' : 'Loading…'}</div>
-        <div>Public intelligence snapshot could not be loaded.</div>
+        ${status === 'loading' ? '<div class="gp-spinner"></div>' : ''}
+        <div class="gp-state-title">${status === 'error' ? 'Data unavailable' : 'Loading\u2026'}</div>
+        <div>${status === 'error' ? 'Public intelligence snapshot could not be loaded.' : 'Fetching the public intelligence snapshot.'}</div>
       </div>`;
     return;
   }

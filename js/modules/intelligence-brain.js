@@ -147,7 +147,7 @@ export function renderIntelligenceBrain() {
     </div>
     <div style="font-size:10px;color:var(--muted-2);margin-bottom:7px">Showing ${visible.length} of ${ranked.length} matching nodes${query||kindFilter!=='all'?' · filtered':''}</div>
     <div class="gp-brain-grid">${visible.map(n=>`<button class="gp-card gp-brain-node sev-${brainSeverity(n.kind||n.type)} ${selectedId===String(n.id)?'selected':''}" data-brain-node="${escapeHtml(String(n.id))}" type="button"><div class="gp-card-title">${escapeHtml(n.label||n.name||n.id)}</div><div class="gp-card-meta"><span class="gp-sev ${brainChip(n.kind||n.type)}">${escapeHtml(n.kind||n.type||'entity')}</span><span>${degree[n.id]||0} links</span></div></button>`).join('')}</div>
-    ${ranked.length===0 ? '<div class="gp-state" style="margin-top:8px">No Brain nodes match the current search/filter.</div>' : ''}
+    ${ranked.length===0 ? '<div class="gp-state" style="margin-top:8px"><div class="gp-state-title">No matching nodes</div><div>No Brain nodes match the current search/filter.</div></div>' : ''}
     ${ranked.length>5 ? `<button id="gpBrainMore" class="gp-btn" type="button" style="margin-top:9px;width:100%">${showAll?'Show fewer':'See more nodes'}</button>` : ''}
     ${selected ? `<div class="gp-card gp-brain-details">
       <div class="gp-card-title">${escapeHtml(selected.label||selected.name||selected.id)}</div>
