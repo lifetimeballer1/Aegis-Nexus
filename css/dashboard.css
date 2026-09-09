@@ -439,3 +439,25 @@
 .cc-table td{font-variant-numeric:tabular-nums}
 .gp-kpi-value{font-variant-numeric:tabular-nums}
 .cc-kpi svg[role="img"]{pointer-events:none}
+
+/* Polish grind 9 — 1440/390 cross-check: overflow risks, wrapping, touch targets.
+   1440px: .gp-main caps at 1400px so the 3-col workspace grid + rail fit with
+   room to spare; no fixed-width children exceed their grid tracks.
+   390px: tables wrap instead of overflowing; headlines wrap; situation header
+   stacks; panels keep 36px contract targets (phase 9 lock). */
+.cc-head{min-width:0}
+.cc-head .t{overflow-wrap:break-word;min-width:0}
+.cc-head .s{overflow-wrap:break-word}
+.cc-panel{min-width:0;overflow-wrap:break-word}
+.cc-table th,.cc-table td{overflow-wrap:break-word;min-width:0}
+.gp-section-body{overflow-wrap:break-word}
+@media(max-width:420px){
+  .cc-situation{align-items:flex-start}
+  .cc-situation h2{font-size:12px;overflow-wrap:break-word;min-width:0}
+  .cc-situation .meta{flex-wrap:wrap;row-gap:4px}
+  .cc-panel{padding:8px 10px}
+  .cc-kpi .v{font-size:19px}
+  .cc-thumb{flex-basis:44px;width:44px;height:44px}
+  .gp-workspace-grid .gp-section-body{padding:8px 10px}
+  #mapSidePanel{margin:8px}
+}
