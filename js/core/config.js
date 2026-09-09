@@ -9,6 +9,8 @@ export const CONFIG = {
     sources: './data/sources.json',
     sourceHealth: './data/source_health.json',
     refreshManifest: './data/refresh_manifest.json',
+    validationResults: './data/validation_results.json',
+    pipelineHistory: './data/pipeline_history.json',
     liveStatus: './data/live_status.json',
     mapEvents: './data/live_events.json',
     mapRegional: './data/regional_intelligence.json',

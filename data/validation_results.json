@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "updatedAt": "2026-09-09T03:44:11.385339Z",
+  "summary": {
+    "run": 12,
+    "passed": 10,
+    "failed": 2,
+    "blocked": 0
+  },
+  "results": [
+    {
+      "contract": "Source health gate",
+      "command": "validate_source_health.py",
+      "passed": true,
+      "detail": "feeds=65 results=65 rows=836 healthy=57/65 (87.7%) failed=8 (12.3%) | empty=7 gdeltFallback=0 required-categories=international,security,us-politics | strategic-coverage=china:5, united-states:2",
+      "durationMs": 92
+    },
+    {
+      "contract": "Data resilience gate",
+      "command": "validate_data_resilience.py",
+      "passed": true,
+      "detail": "PASS: Phase 5 data resilience gate | stories=705 liveArticles=2000 marketIndicators=26 failoverRecords=14 | failoverHealthy=28 failoverDown=22 fallbackCount=14",
+      "durationMs": 484
+    },
+    {
+      "contract": "Data resilience + manifest gate",
+      "command": "validate_data_resilience.py --require-manifest",
+      "passed": true,
+      "detail": "PASS: Phase 5 data resilience gate | stories=705 liveArticles=2000 marketIndicators=26 failoverRecords=14 | failoverHealthy=28 failoverDown=22 fallbackCount=14",
+      "durationMs": 467
+    },
+    {
+      "contract": "Intelligence Web evidence contract",
+      "command": "validate_intelligence_graph.py",
+      "passed": true,
+      "detail": "PASS intelligence graph contract: 100 nodes / 447 evidence-backed edges",
+      "durationMs": 94
+    },
+    {
+      "contract": "Intelligence Brain contract",
+      "command": "validate_intelligence_brain.py",
+      "passed": false,
+      "detail": "File \"\\validate_intelligence_brain.py\", line 18, in fail | raise RuntimeError(f\"INTELLIGENCE BRAIN VALIDATION FAILED: {message}\") | RuntimeError: INTELLIGENCE BRAIN VALIDATION FAILED: artifact is stale: 8465s old",
+      "durationMs": 93
+    },
+    {
+      "contract": "Action intelligence contract",
+      "command": "validate_action_intelligence.py",
+      "passed": true,
+      "detail": "China: 207 Brain evidence items; canonical actor events=49, targeted=1 | Canonical semantic relationships: 131 | PASS: U.S./China action attribution, evidence, targets, and semantic relationships are end-to-end backed",
+      "durationMs": 125
+    },
+    {
+      "contract": "Operational health gate",
+      "command": "validate_operational_health.py",
+      "passed": false,
+      "detail": "OPERATIONAL HEALTH FAILED: snapshot.json timestamp age=8466s",
+      "durationMs": 311
+    },
+    {
+      "contract": "Repository integrity gate",
+      "command": "validate_repository.py",
+      "passed": true,
+      "detail": "Local browser references checked: 16 | JSON artifacts checked: 34 | No duplicate real HTML ids or browser script inclusions detected.",
+      "durationMs": 391
+    },
+    {
+      "contract": "Performance / mobile gate",
+      "command": "validate_performance.py",
+      "passed": true,
+      "detail": "lazyIntelligenceWeb=True | idlePerformanceObserver=True | reducedMotion=True",
+      "durationMs": 78
+    },
+    {
+      "contract": "Security / privacy gate",
+      "command": "validate_security.py",
+      "passed": true,
+      "detail": "PASS client privacy scan (54 assets) | PASS hardening source contract | SECURITY VALIDATION PASSED",
+      "durationMs": 141
+    },
+    {
+      "contract": "Event resolution gate",
+      "command": "validate_event_resolution.py",
+      "passed": true,
+      "detail": "validated 80 resolved event groups",
+      "durationMs": 77
+    },
+    {
+      "contract": "Pipeline schema gate",
+      "command": "validate_pipeline.py",
+      "passed": true,
+      "detail": "PIPELINE VALIDATION PASSED: 705 stories, 31 conflicts, 2880 map markers",
+      "durationMs": 250
+    }
+  ]
+}

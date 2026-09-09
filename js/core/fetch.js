@@ -50,7 +50,7 @@ export async function loadCoreData({force=false}={}){
   const prev=getState();
   const cold=!prev.snapshot&&!prev.liveArticles&&!prev.intelligenceGraph;
   if(cold)setState({status:'loading'});
-    const urls=[['snapshot',CONFIG.endpoints.snapshot],['liveArticles',CONFIG.endpoints.liveArticles],['intelligenceGraph',CONFIG.endpoints.intelligenceGraph],['intelligenceBrain',CONFIG.endpoints.intelligenceBrain],['sources',CONFIG.endpoints.sources],['sourceHealth',CONFIG.endpoints.sourceHealth],['mapEvents',CONFIG.endpoints.mapEvents],['mapRegional',CONFIG.endpoints.mapRegional],['mapCartel',CONFIG.endpoints.mapCartel],['mapLinks',CONFIG.endpoints.mapLinks],['mapPoints',CONFIG.endpoints.mapPoints],['whatChanged',CONFIG.endpoints.whatChanged],['eventHistory',CONFIG.endpoints.eventHistory],['liveStatus',CONFIG.endpoints.liveStatus],['historicalTrends',CONFIG.endpoints.historicalTrends],['refreshManifest',CONFIG.endpoints.refreshManifest],['intelligenceBrief',CONFIG.endpoints.intelligenceBrief]];
+    const urls=[['snapshot',CONFIG.endpoints.snapshot],['liveArticles',CONFIG.endpoints.liveArticles],['intelligenceGraph',CONFIG.endpoints.intelligenceGraph],['intelligenceBrain',CONFIG.endpoints.intelligenceBrain],['sources',CONFIG.endpoints.sources],['sourceHealth',CONFIG.endpoints.sourceHealth],['mapEvents',CONFIG.endpoints.mapEvents],['mapRegional',CONFIG.endpoints.mapRegional],['mapCartel',CONFIG.endpoints.mapCartel],['mapLinks',CONFIG.endpoints.mapLinks],['mapPoints',CONFIG.endpoints.mapPoints],['whatChanged',CONFIG.endpoints.whatChanged],['eventHistory',CONFIG.endpoints.eventHistory],['liveStatus',CONFIG.endpoints.liveStatus],['validationResults',CONFIG.endpoints.validationResults],['pipelineHistory',CONFIG.endpoints.pipelineHistory],['historicalTrends',CONFIG.endpoints.historicalTrends],['refreshManifest',CONFIG.endpoints.refreshManifest],['intelligenceBrief',CONFIG.endpoints.intelligenceBrief]];
   const results=await Promise.all(urls.map(([label,url])=>fetchJson(url,{force,label,quiet:true})));
   const by=Object.fromEntries(urls.map(([label],i)=>[label,results[i]]));
   const hasAny=by.snapshot.ok||by.liveArticles.ok||by.intelligenceGraph.ok;
@@ -70,6 +70,8 @@ export async function loadCoreData({force=false}={}){
     intelligenceBrain:by.intelligenceBrain.ok?by.intelligenceBrain.data:prev.intelligenceBrain,
     intelligenceBrief:keep('intelligenceBrief',prev.intelligenceBrief),
     liveStatus:keep('liveStatus',prev.liveStatus),
+    validationResults:keep('validationResults',prev.validationResults),
+    pipelineHistory:keep('pipelineHistory',prev.pipelineHistory),
     historicalTrends:keep('historicalTrends',prev.historicalTrends),
     refreshManifest:keep('refreshManifest',prev.refreshManifest),
     sources:keep('sources',prev.sources),sourceHealth:keep('sourceHealth',prev.sourceHealth),
@@ -79,5 +81,5 @@ export async function loadCoreData({force=false}={}){
     lastSuccessfulFetch:hasAny?new Date().toISOString():prev.lastSuccessfulFetch,
     status:hasAny?(anyStale?'stale':'live'):'error'};
   setState(patch);
-   return{snapshot:by.snapshot,liveArticles:by.liveArticles,intelligenceGraph:by.intelligenceGraph,intelligenceBrain:by.intelligenceBrain,intelligenceBrief:by.intelligenceBrief,liveStatus:by.liveStatus,mapPoints:by.mapPoints,mapData:{events:by.mapEvents,regional:by.mapRegional,cartel:by.mapCartel,links:by.mapLinks}};
+   return{snapshot:by.snapshot,liveArticles:by.liveArticles,intelligenceGraph:by.intelligenceGraph,intelligenceBrain:by.intelligenceBrain,intelligenceBrief:by.intelligenceBrief,liveStatus:by.liveStatus,validationResults:by.validationResults,pipelineHistory:by.pipelineHistory,mapPoints:by.mapPoints,mapData:{events:by.mapEvents,regional:by.mapRegional,cartel:by.mapCartel,links:by.mapLinks}};
 }

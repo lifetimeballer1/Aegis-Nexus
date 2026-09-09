@@ -86,6 +86,16 @@ def write_refresh_manifest():
  (DATA/'refresh_manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
  print(f"PASS: refresh manifest artifacts={len(artifacts)}",flush=True)
 def main():
+  started=datetime.now(timezone.utc).isoformat().replace('+00:00','Z')
+  try:
+   return _run_pipeline(started)
+  except Exception as exc:
+   try:
+    from pipeline_history import record
+    record(status='Failed',started_iso=started,error=exc)
+   except Exception as hist_exc:print(f'history record failed: {hist_exc}',flush=True)
+   raise
+def _run_pipeline(started):
  run('Refresh live intelligence sources',sys.executable,'news_feed_db.py','--once')
  live_status=load('live_status.json')
  if int(live_status.get('rowsFetched',0))<=0:raise RuntimeError('live intelligence refresh returned no fetched rows')
@@ -119,5 +129,8 @@ def main():
  write_refresh_manifest()
  run('Validate data resilience',sys.executable,'validate_data_resilience.py')
  run('Validate final refresh manifest',sys.executable,'validate_data_resilience.py','--require-manifest')
+ run('Record structured validation results',sys.executable,'build_validation_results.py')
+ from pipeline_history import record
+ record(status='Success',started_iso=started)
  print('\n=== STRATEGIC INTELLIGENCE GATE: PASSED ===',flush=True);return 0
 if __name__=='__main__':raise SystemExit(main())

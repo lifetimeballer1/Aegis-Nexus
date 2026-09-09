@@ -20,6 +20,24 @@ function isOnline(source) {
   return String(source?.status || '').toLowerCase() === 'online';
 }
 
+/* Credibility tier, derived transparently from real registry fields
+ * (consecutiveFailures, rowsFetched, freshnessMinutes) — a presentation
+ * rule, not a measured score. Rule shown in the row title attribute. */
+function credibilityTier(source) {
+  const fails = Number(source?.consecutiveFailures || 0);
+  const rows = Number(source?.rowsFetched || 0);
+  const fresh = Number(source?.freshnessMinutes);
+  if (fails === 0 && rows > 0 && (!Number.isFinite(fresh) || fresh <= 180)) return 'High';
+  if (fails <= 2 && rows > 0) return 'Medium';
+  return 'Low';
+}
+
+function fallbackMode(source) {
+  if (source?.mode) return String(source.mode);
+  if (source?.fallbackAvailable) return 'standby available';
+  return '—';
+}
+
 function sourceDetail(source) {
   const parts = [];
   if (source?.type || source?.category) parts.push(String(source.type || source.category));
@@ -68,8 +86,9 @@ function registryRows(list) {
     const kind = sourceState(s);
     const label = kind === 'healthy' ? 'Online' : kind === 'critical' ? 'Failing' : 'Degraded';
     const fails = s.consecutiveFailures === undefined || s.consecutiveFailures === null ? '' : `<div class="meta">${fmtInt(s.consecutiveFailures)} consecutive failures</div>`;
+    const cred = credibilityTier(s);
     return `<div class="gp-dash-row"><div class="grow"><div class="title">${esc(s.name || s.url || 'Unnamed source')}</div>`
-      + `<div class="meta">${esc(s.category || s.type || 'uncategorized')} · ${fmtInt(s.rowsFetched)} rows · checked ${esc(formatRelativeTime(s.lastChecked))}</div>${fails}</div>`
+      + `<div class="meta">${esc(s.category || s.type || 'uncategorized')} · ${fmtInt(s.rowsFetched)} rows · checked ${esc(formatRelativeTime(s.lastChecked))} · <span title="Derived: no failures + fresh rows = High; ≤2 failures + rows = Medium; else Low">credibility ${cred}</span> · fallback ${esc(fallbackMode(s))}</div>${fails}</div>`
       + `<div>${stateBadge(kind, label)}</div></div>`;
   }).join('');
 }
@@ -110,7 +129,7 @@ function renderRegistry(sources) {
 export function renderStatus() {
   const el = document.getElementById('statusBody');
   if (!el) return;
-  const { status, lastSuccessfulFetch, sourceHealth, liveStatus, refreshManifest, errors } = getState();
+  const { status, lastSuccessfulFetch, sourceHealth, liveStatus, refreshManifest, errors, validationResults, pipelineHistory, snapshot, intelligenceBrain } = getState();
   const stamp = document.getElementById('statusUpdated');
 
   if (!sourceHealth && !liveStatus && !refreshManifest && status === 'loading') {
@@ -209,10 +228,53 @@ export function renderStatus() {
           <div class="meta">sha256 ${esc(String(meta.sha256 || '').slice(0, 12))}… · ${esc(fmtSize(meta.size))}</div></div></div>`).join('')
       + '</div></div>' : '';
 
+  const vSummary = validationResults?.summary || {};
+  const vResults = Array.isArray(validationResults?.results) ? validationResults.results : [];
+  const vRan = Number(vSummary.run ?? vResults.length);
+  const vPassed = Number(vSummary.passed ?? vResults.filter(r => r.passed).length);
+  const vFailed = Number(vSummary.failed ?? vResults.filter(r => !r.passed).length);
+  const validationBlock = `
+      <div class="gp-dash-panel" style="margin-top:8px"><h3>Validation &amp; Data Contracts</h3>
+        ${vResults.length ? `<div class="meta" style="font-size:10px;color:var(--muted-2);margin-bottom:6px">${fmtInt(vRan)} run · ${fmtInt(vPassed)} passed · ${fmtInt(vFailed)} failed · recorded ${esc(formatRelativeTime(validationResults.updatedAt))}</div>
+        <div class="gp-dash-list">` + vResults.map(r => `
+          <div class="gp-dash-row"><div class="grow"><div class="title" style="font-size:11px">${esc(r.contract || r.command || 'contract')}</div>
+          <div class="meta">${esc(String(r.detail || '').slice(0, 160))}</div></div>
+          <div>${r.passed ? '<span class="gp-sev gp-sev-healthy">Passed</span>' : '<span class="gp-sev gp-sev-critical">Failed</span>'}</div></div>`).join('')
+        + '</div>' : '<div class="meta">No validation run recorded yet — published by the next pipeline refresh.</div>'}</div>`;
+
+  const runs = Array.isArray(pipelineHistory?.runs) ? pipelineHistory.runs : [];
+  const historyBlock = `
+      <div class="gp-dash-panel" style="margin-top:8px"><h3>Pipeline Run History</h3>
+        ${runs.length ? `<div class="gp-dash-list">` + runs.slice(0, 8).map(r => {
+          const ok = String(r.status || '').toLowerCase() === 'success';
+          const dur = Number.isFinite(Number(r.durationSeconds)) ? `${Number(r.durationSeconds).toFixed(0)}s` : '—';
+          return `<div class="gp-dash-row"><div class="grow"><div class="title" style="font-family:var(--font-mono);font-size:11px">${esc(String(r.runId || 'run').slice(0, 24))}</div>
+          <div class="meta">${esc(r.trigger || 'manual')} · ${esc(formatRelativeTime(r.startedAt))} · ${esc(dur)}${r.error ? ` · ${esc(String(r.error).slice(0, 120))}` : ''}</div></div>
+          <div>${ok ? '<span class="gp-sev gp-sev-healthy">Success</span>' : '<span class="gp-sev gp-sev-critical">Failed</span>'}</div></div>`;
+        }).join('') + '</div>' : '<div class="meta">No run history yet — recorded on the next pipeline refresh.</div>'}</div>`;
+
+  const snapStories = Array.isArray(snapshot?.stories) ? snapshot.stories.length : 0;
+  const snapConflicts = Array.isArray(snapshot?.conflicts) ? snapshot.conflicts.length : 0;
+  const brainNodes = Array.isArray(intelligenceBrain?.nodes) ? intelligenceBrain.nodes.length : 0;
+  const brainEdges = Array.isArray(intelligenceBrain?.edges) ? intelligenceBrain.edges.length : 0;
+  const stage = (label, value, sub, kind) => `<div class="gp-dash-panel" style="flex:1;min-width:120px"><h3>${label}</h3><div class="gp-kpi-value" style="font-size:18px;color:${kind === 'healthy' ? 'var(--sev-healthy)' : kind === 'watch' ? 'var(--sev-watch)' : kind === 'critical' ? 'var(--sev-critical)' : 'var(--text)'}">${value}</div><div class="meta" style="font-size:10px;color:var(--muted-2)">${sub}</div></div>`;
+  const flowStrip = `
+      <div class="gp-dash-panel" style="margin-top:8px"><h3>Refresh Pipeline Health</h3>
+      <div style="display:flex;gap:6px;flex-wrap:wrap">`
+      + stage('Ingest', live?.updatedAt ? `${fmtInt(live.feedsChecked)} feeds` : '—', live?.updatedAt ? `${fmtInt(live.rowsFetched)} rows · ${esc(formatRelativeTime(live.updatedAt))}` : 'no collector run', live?.updatedAt && Number(live.rowsFetched) > 0 ? 'healthy' : 'info')
+      + stage('Validate', vResults.length ? `${fmtInt(vPassed)}/${fmtInt(vRan)}` : '—', vResults.length ? `gates passed${vFailed ? ` · ${fmtInt(vFailed)} failing` : ''}` : 'no validation run', !vResults.length ? 'info' : vFailed ? 'critical' : 'healthy')
+      + stage('Transform', snapStories ? fmtInt(snapStories) : '—', snapStories ? `${fmtInt(snapConflicts)} conflicts normalized` : 'no snapshot', snapStories ? 'healthy' : 'info')
+      + stage('Enrich', brainNodes ? fmtInt(brainNodes) : '—', brainNodes ? `${fmtInt(brainEdges)} brain edges` : 'no brain', brainNodes ? 'healthy' : 'info')
+      + stage('Publish', artifacts.length ? fmtInt(artifacts.length) : '—', artifacts.length ? `artifacts · ${esc(formatRelativeTime(manifest.generatedAt))}` : 'no manifest', artifacts.length ? 'healthy' : 'info')
+      + `</div></div>`;
+
   html += `
+    ${flowStrip}
     <div style="margin-top:8px">${collector}</div>
     <div class="gp-dash-panel" style="margin-top:8px"><h3>Source Registry</h3><div id="srcRegistry"></div></div>
     ${manifestBlock}
+    ${validationBlock}
+    ${historyBlock}
     ${errorList.length ? `
       <div class="gp-dash-panel" style="margin-top:8px"><h3>Recent fetch errors</h3>
         ${errorList.map(([k, v]) => `<div style="font-size:12px"><strong>${esc(k)}</strong>: ${esc(v)}</div>`).join('')}</div>` : ''}
