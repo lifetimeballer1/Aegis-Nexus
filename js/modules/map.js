@@ -253,8 +253,8 @@ export function renderMapOps(){
   const total=all.length;
   const visible=all.filter(matches);
   const shown=visible.slice(0,OPS_MAX_ROWS);
-  const chips=['<button class="gp-filter'+(filter==='all'?' active':'')+'" data-map-ops-filter="all" type="button">All ('+total.toLocaleString()+')</button>']
-    .concat(OPS_LAYERS.map(k=>'<button class="gp-filter'+(filter===k?' active':'')+'" data-map-ops-filter="'+k+'" type="button">'+LAYERS[k].label+' ('+(counts[k]||0).toLocaleString()+')</button>')).join('');
+  const chips=['<button class="gp-filter'+(filter==='all'?' active':'')+'" data-map-ops-filter="all" type="button" aria-pressed="'+(filter==='all')+'">All ('+total.toLocaleString()+')</button>']
+    .concat(OPS_LAYERS.map(k=>'<button class="gp-filter'+(filter===k?' active':'')+'" data-map-ops-filter="'+k+'" type="button" aria-pressed="'+(filter===k)+'">'+LAYERS[k].label+' ('+(counts[k]||0).toLocaleString()+')</button>')).join('');
   const rows=shown.map((p,i)=>{
     const k=classify(p);const m=LAYERS[k]||LAYERS.conflicts;const sev=layerSeverity(k);
     const title=opsTitle(p);const place=[p.country,p.region,p.city].filter(Boolean).join(' · ');

@@ -124,8 +124,8 @@ export function renderAlerts() {
   const visible = levelFilter === 'all' ? items : items.filter(i => i.sev === levelFilter);
   const shown = showAll ? visible : visible.slice(0, 12);
 
-  const chips = [`<button class="gp-filter${levelFilter === 'all' ? ' active' : ''}" data-alert-level="all" type="button">All (${counts.all})</button>`]
-    .concat(LEVELS.map(level => `<button class="gp-filter${levelFilter === level ? ' active' : ''}" data-alert-level="${level}" type="button">${LEVEL_LABEL[level]} (${counts[level]})</button>`)).join('');
+  const chips = [`<button class="gp-filter${levelFilter === 'all' ? ' active' : ''}" data-alert-level="all" type="button" aria-pressed="${levelFilter === 'all'}">All (${counts.all})</button>`]
+    .concat(LEVELS.map(level => `<button class="gp-filter${levelFilter === level ? ' active' : ''}" data-alert-level="${level}" type="button" aria-pressed="${levelFilter === level}">${LEVEL_LABEL[level]} (${counts[level]})</button>`)).join('');
 
   const rowsByGroup = (list) => list.map(item => {
     const open = expandedKey === item.key;

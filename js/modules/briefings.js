@@ -48,8 +48,8 @@ export function renderBriefings() {
   const shown = showAllDevelopments ? visible : visible.slice(0, DEV_PAGE);
   const freshness = brief.freshness || {};
 
-  const chips = [`<button class="gp-filter${categoryFilter === 'all' ? ' active' : ''}" data-brief-filter="all" type="button">All (${developments.length})</button>`]
-    .concat(categories.map(c => `<button class="gp-filter${categoryFilter === c ? ' active' : ''}" data-brief-filter="${esc(c)}" type="button">${esc(c)} (${developments.filter(d => String(d.category || 'general') === c).length})</button>`)).join('');
+  const chips = [`<button class="gp-filter${categoryFilter === 'all' ? ' active' : ''}" data-brief-filter="all" type="button" aria-pressed="${categoryFilter === 'all'}">All (${developments.length})</button>`]
+    .concat(categories.map(c => `<button class="gp-filter${categoryFilter === c ? ' active' : ''}" data-brief-filter="${esc(c)}" type="button" aria-pressed="${categoryFilter === c}">${esc(c)} (${developments.filter(d => String(d.category || 'general') === c).length})</button>`)).join('');
 
   const devRows = shown.map(dev => {
     const sev = developmentSeverity(dev);
@@ -204,7 +204,7 @@ function renderDrafts(el) {
   if (!draft && store.drafts.length) { draft = store.drafts[0]; activeDraftId = draft.id; }
 
   const listBtns = store.drafts.map(d =>
-    `<button class="gp-filter${draft && d.id === draft.id ? ' active' : ''}" data-draft-sel="${esc(d.id)}" type="button">${esc(d.title || 'Untitled briefing')}</button>`).join('');
+    `<button class="gp-filter${draft && d.id === draft.id ? ' active' : ''}" data-draft-sel="${esc(d.id)}" type="button" aria-pressed="${!!(draft && d.id === draft.id)}">${esc(d.title || 'Untitled briefing')}</button>`).join('');
 
   const editor = draft ? `
     <div class="gp-dash-panel" style="margin-top:8px"><h3>Content</h3>

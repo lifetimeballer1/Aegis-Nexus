@@ -86,8 +86,8 @@ export function renderTimeline() {
   }
   const shown = points.slice(0, MAX_POINTS);
   const chips = PERIODS.map(([hours, label]) =>
-    `<button class="gp-filter${!customActive && periodHours === hours ? ' active' : ''}" data-tl-period="${hours}" type="button">${label}</button>`).join('')
-    + `<button class="gp-filter${customActive ? ' active' : ''}" data-tl-period="custom" type="button">CUSTOM</button>`;
+    `<button class="gp-filter${!customActive && periodHours === hours ? ' active' : ''}" data-tl-period="${hours}" type="button" aria-pressed="${!customActive && periodHours === hours}">${label}</button>`).join('')
+    + `<button class="gp-filter${customActive ? ' active' : ''}" data-tl-period="custom" type="button" aria-pressed="${customActive}">CUSTOM</button>`;
   const customRow = customActive || customFrom || customTo
     ? `<div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-top:6px">`
       + `<label style="font-size:10px;color:var(--muted-2)">From <input id="tlFrom" class="gp-map-search" type="date" style="width:auto" value="${esc(customFrom)}" max="${new Date().toISOString().slice(0, 10)}"></label>`
