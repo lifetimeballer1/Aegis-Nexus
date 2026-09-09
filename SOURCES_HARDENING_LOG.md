@@ -85,3 +85,18 @@ Rule: commit ONLY scoped code files, never push. Pattern: `fix(sources): <batch>
       instead of blanket-False on aggregator URLs.
       Verified: live fallback probe, source-health + resilience +
       pipeline PASS, pytest 123.
+- Late re-probe 16:42 — GDELT SOUTHCOM mirror RECOVERED (HTTP 200,
+  0-item 24h window: reachable, online-empty by design); GDELT WHCC
+  still 429 (throttle holds); NPR flaky feed live (10 items); X proxy
+  still challenge-blocked (quarantine stands). Thin-query floor probes:
+  Haiti/Myanmar variants return more (9/100 vs 1/1) but catalog keeps
+  the specific queries by design (small conflicts not drowned); floor
+  confirmed non-zero, no change made.
+- Final verification 16:50 — all 12 validators PASS (repository,
+  pipeline, data_resilience, source_health 56/65 healthy, event_
+  resolution 80 groups, intelligence_schema, operational_health,
+  performance, security, action_intelligence, intelligence_brain,
+  intelligence_graph), build_validation_results 12/12, pytest 123
+  passed, git diff --check clean. Concurrent GUI commits landed on
+  main mid-shift; sources batches intact and interleaved cleanly.
+  Data/artifacts left uncommitted throughout; no push.
