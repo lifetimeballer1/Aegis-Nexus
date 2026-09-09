@@ -1,6 +1,11 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-09T20:36:06.716515Z",
+  "updatedAt": "2026-09-09T21:08:03.182283Z",
+  "manifest": {
+    "generatedAt": "2026-09-09T20:36:01.719239Z",
+    "ageSeconds": 1924,
+    "stale": false
+  },
   "summary": {
     "run": 12,
     "passed": 12,
@@ -13,7 +18,7 @@
       "command": "validate_source_health.py",
       "passed": true,
       "detail": "feeds=65 results=65 rows=862 healthy=56/65 (86.2%) failed=9 (13.8%) | empty=10 gdeltFallback=0 required-categories=international,security,us-politics | strategic-coverage=china:5, united-states:2",
-      "durationMs": 61
+      "durationMs": 77
     },
     {
       "contract": "Data resilience gate",
@@ -27,34 +32,34 @@
       "command": "validate_data_resilience.py --require-manifest",
       "passed": true,
       "detail": "PASS: Phase 5 data resilience gate | stories=705 liveArticles=2000 marketIndicators=26 failoverRecords=0 | failoverHealthy=55 failoverDown=10 fallbackCount=0",
-      "durationMs": 421
+      "durationMs": 422
     },
     {
       "contract": "Intelligence Web evidence contract",
       "command": "validate_intelligence_graph.py",
       "passed": true,
       "detail": "PASS intelligence graph contract: 100 nodes / 462 evidence-backed edges",
-      "durationMs": 78
+      "durationMs": 77
     },
     {
       "contract": "Intelligence Brain contract",
       "command": "validate_intelligence_brain.py",
       "passed": true,
-      "detail": "BRAIN FEEDBACK: gaps=5 next-cycle feed targets=5 | PASS: Intelligence Brain Phase 1 validation nodes=28 edges=95 kinds={'country': 8, 'conflict': 4, 'chokepoint': 1, 'cartel': 12, 'economic': 3} age=759s",
-      "durationMs": 765
+      "detail": "BRAIN FEEDBACK: gaps=5 next-cycle feed targets=5 | PASS: Intelligence Brain Phase 1 validation nodes=28 edges=95 kinds={'economic': 3, 'chokepoint': 1, 'country': 8, 'cartel': 12, 'conflict': 4} age=2675s",
+      "durationMs": 750
     },
     {
       "contract": "Action intelligence contract",
       "command": "validate_action_intelligence.py",
       "passed": true,
       "detail": "China: 269 Brain evidence items; canonical actor events=64, targeted=1 | Canonical semantic relationships: 137 | PASS: U.S./China action attribution, evidence, targets, and semantic relationships are end-to-end backed",
-      "durationMs": 109
+      "durationMs": 125
     },
     {
       "contract": "Operational health gate",
       "command": "validate_operational_health.py",
       "passed": true,
-      "detail": "PASS: Phase 8 operational health gate | stories=705 liveArticles=2000 mapPoints=2880 graph=100/462 brain=28/95 | snapshotAge=761s artifactMaxSkew=7200s uniqueStoryIdentities=705",
+      "detail": "PASS: Phase 8 operational health gate | stories=705 liveArticles=2000 mapPoints=2880 graph=100/462 brain=28/95 | snapshotAge=2678s artifactMaxSkew=7200s uniqueStoryIdentities=705",
       "durationMs": 265
     },
     {
@@ -83,7 +88,7 @@
       "command": "validate_event_resolution.py",
       "passed": true,
       "detail": "validated 80 resolved event groups",
-      "durationMs": 61
+      "durationMs": 63
     },
     {
       "contract": "Pipeline schema gate",
