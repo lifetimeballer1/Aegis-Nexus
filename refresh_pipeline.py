@@ -5,8 +5,8 @@ import hashlib,json,subprocess,sys
 from datetime import datetime,timezone
 from pathlib import Path
 ROOT=Path(__file__).resolve().parent;DATA=ROOT/'data'
-REQUIRED_ARTIFACTS=('snapshot.json','history.json','sources.json','live_articles.json','canonical_intelligence.json','intelligence_graph.json','intelligence_brain.json','map_points.json','strategic_signals.json','source_health.json')
-MANIFEST_ARTIFACTS=('snapshot.json','history.json','sources.json','live_articles.json','canonical_intelligence.json','intelligence_graph.json','intelligence_brain.json','map_points.json','strategic_signals.json','source_health.json')
+REQUIRED_ARTIFACTS=('snapshot.json','history.json','sources.json','live_articles.json','canonical_intelligence.json','intelligence_graph.json','intelligence_brain.json','map_points.json','strategic_signals.json','source_health.json','live_status.json','what_changed.json')
+MANIFEST_ARTIFACTS=('snapshot.json','history.json','sources.json','live_articles.json','canonical_intelligence.json','intelligence_graph.json','intelligence_brain.json','map_points.json','strategic_signals.json','source_health.json','live_status.json','what_changed.json')
 def run(label,*cmd):
  print(f'\n=== {label} ===',flush=True);print('$',' '.join(cmd),flush=True);subprocess.run(cmd,cwd=ROOT,check=True);print(f'PASS: {label}',flush=True)
 def load(name):
@@ -83,7 +83,7 @@ def write_refresh_manifest():
   if not path.is_file() or path.stat().st_size==0:raise RuntimeError(f'cannot manifest missing/empty {name}')
   artifacts[name]={'sha256':hashlib.sha256(path.read_bytes()).hexdigest(),'size':path.stat().st_size}
  manifest={'version':1,'generatedAt':datetime.now(timezone.utc).isoformat().replace('+00:00','Z'),'artifacts':artifacts}
- (DATA/'refresh_manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+ (DATA/'refresh_manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
  print(f"PASS: refresh manifest artifacts={len(artifacts)}",flush=True)
 def main():
   started=datetime.now(timezone.utc).isoformat().replace('+00:00','Z')
@@ -96,6 +96,7 @@ def main():
    except Exception as hist_exc:print(f'history record failed: {hist_exc}',flush=True)
    raise
 def _run_pipeline(started):
+ run('Rebuild feed registry from canonical catalog',sys.executable,'build_sources_registry.py')
  run('Refresh live intelligence sources',sys.executable,'news_feed_db.py','--once')
  live_status=load('live_status.json')
  if int(live_status.get('rowsFetched',0))<=0:raise RuntimeError('live intelligence refresh returned no fetched rows')
@@ -124,6 +125,7 @@ def _run_pipeline(started):
  snapshot=load('snapshot.json');verify_market(snapshot)
  run('Build what changed',sys.executable,'build_what_changed.py')
  run('Build dedicated browser map points',sys.executable,'build_map_points.py')
+ run('Refresh snapshot failover state from collector telemetry',sys.executable,'build_failover_state.py')
  for name in REQUIRED_ARTIFACTS:
   if not (DATA/name).exists():raise RuntimeError(f'missing required artifact: {name}')
  write_refresh_manifest()

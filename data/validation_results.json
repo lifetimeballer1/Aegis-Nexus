@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-09T03:44:11.385339Z",
+  "updatedAt": "2026-09-09T04:04:12.940450Z",
   "summary": {
     "run": 12,
     "passed": 10,
@@ -13,21 +13,21 @@
       "command": "validate_source_health.py",
       "passed": true,
       "detail": "feeds=65 results=65 rows=836 healthy=57/65 (87.7%) failed=8 (12.3%) | empty=7 gdeltFallback=0 required-categories=international,security,us-politics | strategic-coverage=china:5, united-states:2",
-      "durationMs": 92
+      "durationMs": 94
     },
     {
       "contract": "Data resilience gate",
       "command": "validate_data_resilience.py",
       "passed": true,
-      "detail": "PASS: Phase 5 data resilience gate | stories=705 liveArticles=2000 marketIndicators=26 failoverRecords=14 | failoverHealthy=28 failoverDown=22 fallbackCount=14",
-      "durationMs": 484
+      "detail": "PASS: Phase 5 data resilience gate | stories=705 liveArticles=2000 marketIndicators=26 failoverRecords=0 | failoverHealthy=57 failoverDown=8 fallbackCount=0",
+      "durationMs": 530
     },
     {
       "contract": "Data resilience + manifest gate",
       "command": "validate_data_resilience.py --require-manifest",
       "passed": true,
-      "detail": "PASS: Phase 5 data resilience gate | stories=705 liveArticles=2000 marketIndicators=26 failoverRecords=14 | failoverHealthy=28 failoverDown=22 fallbackCount=14",
-      "durationMs": 467
+      "detail": "PASS: Phase 5 data resilience gate | stories=705 liveArticles=2000 marketIndicators=26 failoverRecords=0 | failoverHealthy=57 failoverDown=8 fallbackCount=0",
+      "durationMs": 500
     },
     {
       "contract": "Intelligence Web evidence contract",
@@ -40,8 +40,8 @@
       "contract": "Intelligence Brain contract",
       "command": "validate_intelligence_brain.py",
       "passed": false,
-      "detail": "File \"\\validate_intelligence_brain.py\", line 18, in fail | raise RuntimeError(f\"INTELLIGENCE BRAIN VALIDATION FAILED: {message}\") | RuntimeError: INTELLIGENCE BRAIN VALIDATION FAILED: artifact is stale: 8465s old",
-      "durationMs": 93
+      "detail": "File \"\\validate_intelligence_brain.py\", line 18, in fail | raise RuntimeError(f\"INTELLIGENCE BRAIN VALIDATION FAILED: {message}\") | RuntimeError: INTELLIGENCE BRAIN VALIDATION FAILED: artifact is stale: 9666s old",
+      "durationMs": 108
     },
     {
       "contract": "Action intelligence contract",
@@ -54,8 +54,8 @@
       "contract": "Operational health gate",
       "command": "validate_operational_health.py",
       "passed": false,
-      "detail": "OPERATIONAL HEALTH FAILED: snapshot.json timestamp age=8466s",
-      "durationMs": 311
+      "detail": "OPERATIONAL HEALTH FAILED: snapshot.json timestamp age=9668s",
+      "durationMs": 296
     },
     {
       "contract": "Repository integrity gate",
@@ -75,22 +75,22 @@
       "contract": "Security / privacy gate",
       "command": "validate_security.py",
       "passed": true,
-      "detail": "PASS client privacy scan (54 assets) | PASS hardening source contract | SECURITY VALIDATION PASSED",
-      "durationMs": 141
+      "detail": "PASS client privacy scan (56 assets) | PASS hardening source contract | SECURITY VALIDATION PASSED",
+      "durationMs": 155
     },
     {
       "contract": "Event resolution gate",
       "command": "validate_event_resolution.py",
       "passed": true,
       "detail": "validated 80 resolved event groups",
-      "durationMs": 77
+      "durationMs": 78
     },
     {
       "contract": "Pipeline schema gate",
       "command": "validate_pipeline.py",
       "passed": true,
       "detail": "PIPELINE VALIDATION PASSED: 705 stories, 31 conflicts, 2880 map markers",
-      "durationMs": 250
+      "durationMs": 280
     }
   ]
 }

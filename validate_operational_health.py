@@ -7,7 +7,7 @@ from pathlib import Path
 
 ROOT=Path(__file__).resolve().parent
 DATA=ROOT/'data'
-ARTIFACTS=('snapshot.json','live_articles.json','map_points.json','intelligence_graph.json','intelligence_brain.json')
+ARTIFACTS=('snapshot.json','live_articles.json','map_points.json','intelligence_graph.json','intelligence_brain.json','sources.json')
 ARTIFACT_MAX_SKEW_SECONDS=7200
 SNAPSHOT_MAX_AGE_SECONDS=7200
 
