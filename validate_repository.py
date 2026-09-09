@@ -69,6 +69,23 @@ def main() -> None:
         "global_pulse_graph_v3.js",
         "global_pulse_graph_pro.js",
         "intelligence_web_v1.js",
+        "global_pulse_intelligence.css",
+        "global_pulse_list_density.css",
+        "global_pulse_phase3.css",
+        "install_breaking_alerts.py",
+        "install_claim_intelligence.py",
+        "install_commander_center.py",
+        "install_health_finalizer.py",
+        "install_intelligence_assessment.py",
+        "install_intelligence_web.py",
+        "install_live_events.py",
+        "install_map_age_filter.py",
+        "install_map_clustering.py",
+        "install_map_v3.py",
+        "install_qa_hardening.py",
+        "run_snapshot_resilient.py",
+        "run_snapshot_counter_cartel.py",
+        "build_canonical_intelligence.py",
     ]
     leftovers = [x for x in retired if (ROOT / x).exists()]
     if leftovers:

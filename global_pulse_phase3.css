@@ -1,9 +1,0 @@
-/* Phase 3 UX hardening: background lock + touch containment for intelligence dialogs. */
-html.gp-dialog-open,body.gp-dialog-open{overflow:hidden!important;overscroll-behavior:none!important}
-body.gp-dialog-open{touch-action:none}
-.gp-event-dialog{overscroll-behavior:contain;-webkit-overflow-scrolling:touch;touch-action:auto}
-@media(max-width:720px){
-  .gp-event-dialog{width:calc(100vw - 14px);max-height:calc(100dvh - 20px)}
-  .gp-event-close{min-width:36px;min-height:36px}
-  .gp-event-dialog .gp-event-links,.gp-event-dialog .gp-map-actions{max-width:100%;overflow-x:auto;flex-wrap:nowrap}
-}

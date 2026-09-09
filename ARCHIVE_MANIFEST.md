@@ -10,7 +10,7 @@ They have been removed from the runtime and are no longer required by the canoni
 
 ## One-time install/migration scripts
 
-The remaining `install_*.py` files are migration/installers rather than runtime services. They should not be added to production automation unless a specific migration is still required.
+The `install_*.py` migration/installers were removed from the active tree (Phase 9, 2026-09-09) after confirming zero references in workflows, tests, and runtime code; `validate_repository.py` locks against their return. They must not be added to production automation.
 
 The following legacy installers have already been removed from the active tree after their runtime behavior was consolidated or superseded:
 
