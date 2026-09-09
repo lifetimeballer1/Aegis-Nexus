@@ -13,7 +13,7 @@ def google(query: str) -> str:
 
 FEEDS = [
     ("GDACS Global Disaster Alerts", "https://www.gdacs.org/xml/rss.xml", "climate-hazard"),
-    ("NPR Politics", "https://feeds.npr.org/1014/rss.xml", "us-politics"),
+    ("NPR News", "https://feeds.npr.org/1001/rss.xml", "us-politics"),
     ("Fox News Politics", "https://moxie.foxnews.com/google-publisher/politics.xml", "us-politics"),
     ("BBC World", "https://feeds.bbci.co.uk/news/world/rss.xml", "international"),
     ("BBC Middle East", "https://feeds.bbci.co.uk/news/world/middle_east/rss.xml", "regional"),
@@ -22,9 +22,9 @@ FEEDS = [
     ("BBC Europe", "https://feeds.bbci.co.uk/news/world/europe/rss.xml", "regional"),
     ("Guardian World", "https://www.theguardian.com/world/rss", "international"),
     ("Guardian US", "https://www.theguardian.com/us-news/rss", "regional"),
-    ("NPR World", "https://feeds.npr.org/1004/rss.xml", "international"),
+    ("NPR National Security", "https://feeds.npr.org/1122/rss.xml", "international"),
     ("Al Jazeera", "https://www.aljazeera.com/xml/rss/all.xml", "international"),
-    ("DW World", "https://rss.dw.com/rdf/rss-en-world", "international"),
+    ("DW World", "https://rss.dw.com/xml/rss-en-world", "international"),
     ("France 24", "https://www.france24.com/en/rss", "international"),
     ("Crisis Group", "https://www.crisisgroup.org/rss.xml", "analysis"),
     # Western Hemisphere / SOUTHCOM counter-cartel intelligence feeds.

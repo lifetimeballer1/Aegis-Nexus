@@ -1,35 +1,31 @@
 {
-  "updatedAt": "2026-09-09T20:23:07.582747+00:00",
+  "updatedAt": "2026-09-09T20:35:04.686121+00:00",
   "feedsChecked": 65,
-  "rowsFetched": 780,
-  "newArticles": 118,
-  "purged": 48,
-  "databaseArticles": 2674,
+  "rowsFetched": 862,
+  "newArticles": 100,
+  "purged": 99,
+  "databaseArticles": 2284,
   "exportedArticles": 2000,
   "exportLimit": 2000,
-  "healthySources": 55,
-  "emptySources": 14,
+  "healthySources": 56,
+  "emptySources": 10,
   "fallbackSources": 0,
   "failedSources": [
     {
-      "source": "NPR Politics",
-      "error": "HTTPError: HTTP Error 404: Not Found"
-    },
-    {
-      "source": "NPR World",
-      "error": "HTTPError: HTTP Error 404: Not Found"
+      "source": "France 24",
+      "error": "ParseError: not well-formed (invalid token): line 10, column 92"
     },
     {
       "source": "SOUTHCOM Official Reporting — GDELT Mirror",
-      "error": "URLError: <urlopen error _ssl.c:993: The handshake operation timed out>"
+      "error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "source": "GDELT — Western Hemisphere Counter-Cartel",
-      "error": "URLError: <urlopen error _ssl.c:993: The handshake operation timed out>"
+      "error": "ParseError: syntax error: line 1, column 0"
     },
     {
-      "source": "CNN",
-      "error": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+      "source": "France 24",
+      "error": "ParseError: not well-formed (invalid token): line 10, column 92"
     },
     {
       "source": "X @NASA",
@@ -66,16 +62,16 @@
       "error": ""
     },
     {
-      "sourceId": "npr_politics",
-      "name": "NPR Politics",
+      "sourceId": "npr_news",
+      "name": "NPR News",
       "type": "us-politics",
       "category": "us-politics",
       "coverage": [],
-      "rowsFetched": 0,
-      "httpOk": false,
-      "mode": "failed",
+      "rowsFetched": 10,
+      "httpOk": true,
+      "mode": "native",
       "emptyFeed": false,
-      "error": "HTTPError: HTTP Error 404: Not Found"
+      "error": ""
     },
     {
       "sourceId": "fox_news_politics",
@@ -95,7 +91,7 @@
       "type": "international",
       "category": "international",
       "coverage": [],
-      "rowsFetched": 28,
+      "rowsFetched": 29,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -107,7 +103,7 @@
       "type": "regional",
       "category": "regional",
       "coverage": [],
-      "rowsFetched": 36,
+      "rowsFetched": 37,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -174,16 +170,16 @@
       "error": ""
     },
     {
-      "sourceId": "npr_world",
-      "name": "NPR World",
+      "sourceId": "npr_national_security",
+      "name": "NPR National Security",
       "type": "international",
       "category": "international",
       "coverage": [],
-      "rowsFetched": 0,
-      "httpOk": false,
-      "mode": "failed",
+      "rowsFetched": 10,
+      "httpOk": true,
+      "mode": "native",
       "emptyFeed": false,
-      "error": "HTTPError: HTTP Error 404: Not Found"
+      "error": ""
     },
     {
       "sourceId": "al_jazeera",
@@ -203,10 +199,10 @@
       "type": "international",
       "category": "international",
       "coverage": [],
-      "rowsFetched": 0,
+      "rowsFetched": 13,
       "httpOk": true,
-      "mode": "online-empty",
-      "emptyFeed": true,
+      "mode": "native",
+      "emptyFeed": false,
       "error": ""
     },
     {
@@ -215,11 +211,11 @@
       "type": "international",
       "category": "international",
       "coverage": [],
-      "rowsFetched": 24,
-      "httpOk": true,
-      "mode": "native",
+      "rowsFetched": 0,
+      "httpOk": false,
+      "mode": "failed",
       "emptyFeed": false,
-      "error": ""
+      "error": "ParseError: not well-formed (invalid token): line 10, column 92"
     },
     {
       "sourceId": "crisis_group",
@@ -243,7 +239,7 @@
       "httpOk": false,
       "mode": "failed",
       "emptyFeed": false,
-      "error": "URLError: <urlopen error _ssl.c:993: The handshake operation timed out>"
+      "error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "sourceId": "google_news_southcom",
@@ -339,7 +335,7 @@
       "httpOk": false,
       "mode": "failed",
       "emptyFeed": false,
-      "error": "URLError: <urlopen error _ssl.c:993: The handshake operation timed out>"
+      "error": "ParseError: syntax error: line 1, column 0"
     },
     {
       "sourceId": "google_news_climate_disaster",
@@ -371,7 +367,7 @@
       "type": "humanitarian",
       "category": "humanitarian",
       "coverage": [],
-      "rowsFetched": 5,
+      "rowsFetched": 6,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -383,7 +379,7 @@
       "type": "us-politics",
       "category": "us-politics",
       "coverage": [],
-      "rowsFetched": 33,
+      "rowsFetched": 34,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -443,7 +439,7 @@
       "type": "economics",
       "category": "economics",
       "coverage": [],
-      "rowsFetched": 22,
+      "rowsFetched": 23,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -479,7 +475,7 @@
       "type": "africa-conflict",
       "category": "africa-conflict",
       "coverage": [],
-      "rowsFetched": 5,
+      "rowsFetched": 6,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -491,7 +487,7 @@
       "type": "africa-conflict",
       "category": "africa-conflict",
       "coverage": [],
-      "rowsFetched": 2,
+      "rowsFetched": 1,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -587,7 +583,7 @@
       "type": "middle-east-conflict",
       "category": "middle-east-conflict",
       "coverage": [],
-      "rowsFetched": 28,
+      "rowsFetched": 24,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -599,7 +595,7 @@
       "type": "middle-east-conflict",
       "category": "middle-east-conflict",
       "coverage": [],
-      "rowsFetched": 42,
+      "rowsFetched": 41,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -611,10 +607,10 @@
       "type": "europe-conflict",
       "category": "europe-conflict",
       "coverage": [],
-      "rowsFetched": 0,
+      "rowsFetched": 31,
       "httpOk": true,
-      "mode": "online-empty",
-      "emptyFeed": true,
+      "mode": "native",
+      "emptyFeed": false,
       "error": ""
     },
     {
@@ -647,10 +643,10 @@
       "type": "south-asia",
       "category": "south-asia",
       "coverage": [],
-      "rowsFetched": 0,
+      "rowsFetched": 4,
       "httpOk": true,
-      "mode": "online-empty",
-      "emptyFeed": true,
+      "mode": "native",
+      "emptyFeed": false,
       "error": ""
     },
     {
@@ -659,11 +655,11 @@
       "type": "news",
       "category": "international",
       "coverage": [],
-      "rowsFetched": 0,
-      "httpOk": false,
-      "mode": "failed",
+      "rowsFetched": 50,
+      "httpOk": true,
+      "mode": "native",
       "emptyFeed": false,
-      "error": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+      "error": ""
     },
     {
       "sourceId": "fox_politics",
@@ -685,11 +681,11 @@
       "type": "news",
       "category": "international",
       "coverage": [],
-      "rowsFetched": 24,
-      "httpOk": true,
-      "mode": "native",
+      "rowsFetched": 0,
+      "httpOk": false,
+      "mode": "failed",
       "emptyFeed": false,
-      "error": ""
+      "error": "ParseError: not well-formed (invalid token): line 10, column 92"
     },
     {
       "sourceId": "cna_world",
@@ -741,10 +737,10 @@
       "coverage": [
         "china"
       ],
-      "rowsFetched": 0,
+      "rowsFetched": 12,
       "httpOk": true,
-      "mode": "online-empty",
-      "emptyFeed": true,
+      "mode": "native",
+      "emptyFeed": false,
       "error": ""
     },
     {

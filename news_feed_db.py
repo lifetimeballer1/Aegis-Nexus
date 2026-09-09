@@ -14,11 +14,12 @@ from datetime import datetime,timedelta,timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 from urllib.parse import quote,urlparse
+from urllib.error import HTTPError
 from urllib.request import Request,urlopen
 from xml.etree import ElementTree as ET
 ROOT=Path(__file__).resolve().parent;DATA=ROOT/'data';DB_PATH=ROOT/'news_feed.db';JSON_PATH=DATA/'live_articles.json';STATUS_PATH=DATA/'live_status.json';POLL_SECONDS=300;RETENTION_DAYS=7;MAX_WORKERS=15;FETCH_TIMEOUT=8;EXPORT_LIMIT=2000;USER_AGENT='GlobalPulse/13.0 (+https://github.com/lifetimeballer1/global-pulse)'
 BUILTIN_SOURCES={
-'cnn':{'name':'CNN','url':'https://rss.cnn.com/rss/edition.rss','type':'news','category':'international'},'fox_politics':{'name':'Fox News Politics','url':'https://moxie.foxnews.com/google-publisher/politics.xml','type':'news','category':'us-politics','coverage':['united-states']},'npr_politics':{'name':'NPR Politics','url':'https://feeds.npr.org/1014/rss.xml','type':'news','category':'us-politics','coverage':['united-states']},'bbc_world':{'name':'BBC World','url':'https://feeds.bbci.co.uk/news/world/rss.xml','type':'news','category':'international'},'guardian_world':{'name':'Guardian World','url':'https://www.theguardian.com/world/rss','type':'news','category':'international'},'al_jazeera':{'name':'Al Jazeera','url':'https://www.aljazeera.com/xml/rss/all.xml','type':'news','category':'international'},'dw_world':{'name':'DW World','url':'https://rss.dw.com/xml/rss-en-world','type':'news','category':'international'},'france24':{'name':'France 24','url':'https://www.france24.com/en/rss','type':'news','category':'international'},'cna_world':{'name':'CNA World','url':'https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml&category=6311','type':'news','category':'international','coverage':['china']},'stars_stripes':{'name':'Stars and Stripes','url':'https://subscribe.stripes.com/rss/top-news.xml','type':'news','category':'security','coverage':['united-states']},'morse_audio':{'name':'Morse Report','url':'https://rss.buzzsprout.com/2637181.rss','type':'podcast','category':'us-politics','coverage':['united-states']},
+'cnn':{'name':'CNN','url':'http://rss.cnn.com/rss/edition.rss','type':'news','category':'international'},'fox_politics':{'name':'Fox News Politics','url':'https://moxie.foxnews.com/google-publisher/politics.xml','type':'news','category':'us-politics','coverage':['united-states']},'npr_news':{'name':'NPR News','url':'https://feeds.npr.org/1001/rss.xml','type':'news','category':'us-politics','coverage':['united-states']},'bbc_world':{'name':'BBC World','url':'https://feeds.bbci.co.uk/news/world/rss.xml','type':'news','category':'international'},'guardian_world':{'name':'Guardian World','url':'https://www.theguardian.com/world/rss','type':'news','category':'international'},'al_jazeera':{'name':'Al Jazeera','url':'https://www.aljazeera.com/xml/rss/all.xml','type':'news','category':'international'},'dw_world':{'name':'DW World','url':'https://rss.dw.com/xml/rss-en-world','type':'news','category':'international'},'france24':{'name':'France 24','url':'https://www.france24.com/en/rss','type':'news','category':'international'},'cna_world':{'name':'CNA World','url':'https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml&category=6311','type':'news','category':'international','coverage':['china']},'stars_stripes':{'name':'Stars and Stripes','url':'https://subscribe.stripes.com/rss/top-news.xml','type':'news','category':'security','coverage':['united-states']},'morse_audio':{'name':'Morse Report','url':'https://rss.buzzsprout.com/2637181.rss','type':'podcast','category':'us-politics','coverage':['united-states']},
 'china_security':{'name':'Google News — China Security / PLA','url':'https://news.google.com/rss/search?q=China+PLA+military+Taiwan+South+China+Sea+security+when%3A1d&hl=en-US&gl=US&ceid=US:en','type':'china-security','category':'china-security','coverage':['china']},'china_economy':{'name':'Google News — China Economy / Trade','url':'https://news.google.com/rss/search?q=China+economy+trade+tariffs+exports+semiconductors+markets+when%3A1d&hl=en-US&gl=US&ceid=US:en','type':'china-economics','category':'china-economics','coverage':['china']},'china_politics':{'name':'Google News — China Politics / CCP','url':'https://news.google.com/rss/search?q=China+Xi+CCP+Communist+Party+government+policy+when%3A1d&hl=en-US&gl=US&ceid=US:en','type':'china-politics','category':'china-politics','coverage':['china']},'china_taiwan':{'name':'Google News — China Taiwan / Indo-Pacific','url':'https://news.google.com/rss/search?q=China+Taiwan+Indo-Pacific+Beijing+PLA+diplomacy+when%3A1d&hl=en-US&gl=US&ceid=US:en','type':'china-geopolitics','category':'china-geopolitics','coverage':['china']}}
 X_ACCOUNTS={'NASA':'NASA','WhiteHouse':'White House','POTUS':'POTUS','NATO':'NATO','UN':'United Nations'}
 def utc_now():return datetime.now(timezone.utc)
@@ -34,12 +35,15 @@ def parse_date(value):
  if dt.tzinfo is None:dt=dt.replace(tzinfo=timezone.utc)
  return dt.astimezone(timezone.utc).isoformat()
 def node_text(node,*tags):
+ RSS1='{http://purl.org/rss/1.0/}'
  for tag in tags:
-  try:found=node.find(tag)
-  except SyntaxError:continue
-  if found is not None:
-   if found.text:return found.text.strip()
-   if found.attrib.get('href'):return found.attrib['href'].strip()
+  variants=(tag,) if tag.startswith('{') else (tag,RSS1+tag)
+  for variant in variants:
+   try:found=node.find(variant)
+   except SyntaxError:continue
+   if found is not None:
+    if found.text:return found.text.strip()
+    if found.attrib.get('href'):return found.attrib['href'].strip()
  return ''
 def node_link(node):
  link=node_text(node,'link','{http://www.w3.org/2005/Atom}link')
@@ -49,6 +53,7 @@ def node_link(node):
  return ''
 def parse_feed(payload,source_id,meta):
  root=ET.fromstring(payload);items=root.findall('.//item');atom=False
+ if not items:items=root.findall('.//{http://purl.org/rss/1.0/}item')
  if not items:items=root.findall('.//{http://www.w3.org/2005/Atom}entry');atom=True
  rows=[]
  for item in items[:100]:
@@ -57,9 +62,15 @@ def parse_feed(payload,source_id,meta):
   if not title:title=f"Update from {meta['name']}"
   rows.append({'url':link,'title':title,'published_date':parse_date(pub),'summary_snippet':summary,'source_name':meta['name'],'source_type':meta.get('type','news'),'category':meta.get('category','general'),'author':author,'username':'','credit_metadata':json.dumps({'sourceId':source_id,'sourceUrl':meta['url'],'feedFormat':'atom' if atom else 'rss'},ensure_ascii=False)})
  return rows
-def fetch(url):
+def fetch(url,timeout=None):
+ if timeout is None:timeout=25 if 'api.gdeltproject.org' in url else FETCH_TIMEOUT
  req=Request(url,headers={'User-Agent':USER_AGENT,'Accept':'application/rss+xml, application/atom+xml, application/xml, text/xml;q=0.9, */*;q=0.8'})
- with urlopen(req,timeout=FETCH_TIMEOUT) as response:return response.read()
+ try:
+  with urlopen(req,timeout=timeout) as response:return response.read()
+ except HTTPError as exc:
+  if exc.code != 429:raise
+  time.sleep(8)
+  with urlopen(req,timeout=timeout) as response:return response.read()
 def x_urls(handle):return [f'https://rss.xcancel.com/{handle}/rss',f'https://xcancel.com/{handle}/rss']
 def parse_x_account(handle,display_name):
  last=None
