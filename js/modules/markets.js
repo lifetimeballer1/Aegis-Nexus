@@ -44,7 +44,9 @@ export function renderMarkets() {
     items = snapshot.marketPulse;
   }
 
-  items = items.filter(item => item && typeof item === 'object').slice(0, MAX_VISIBLE);
+  const allItems = items.filter(item => item && typeof item === 'object');
+  const marketsCapped = allItems.length > MAX_VISIBLE;
+  items = allItems.slice(0, MAX_VISIBLE);
 
   if (!items.length) {
     el.innerHTML = `
@@ -67,7 +69,7 @@ export function renderMarkets() {
       ${escapeHtml(provider)} · Updated ${formatRelativeTime(updated)} · <span class="gp-badge delayed">DELAYED</span>
     </div>
     <div style="display:flex;gap:7px;flex-wrap:wrap;margin-bottom:10px">
-      <span class="gp-brain-chip">${items.length} tracked indicators</span>
+      <span class="gp-brain-chip">${marketsCapped ? `${items.length} of ${allItems.length}` : items.length} tracked indicators</span>
       <span class="gp-brain-chip">${gainers} advancing</span>
       <span class="gp-brain-chip">${decliners} declining</span>
     </div>

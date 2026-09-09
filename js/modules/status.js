@@ -216,7 +216,7 @@ export function renderStatus() {
           <div class="gp-kpi-value gp-nums" style="font-size:20px;color:var(--sev-healthy)">${fmtInt(live.healthySources)}</div>
           <div class="meta" style="font-size:10px;color:var(--muted-2)">healthy · ${fmtInt(live.emptySources)} empty · ${fmtInt(failedSources.length)} failed</div></div>
       </div>
-      ${failedSources.length ? `<div class="gp-dash-panel" style="margin-top:8px"><h3>Recent Collector Issues (${failedSources.length})</h3><div class="gp-dash-list gp-source-table-dense">`
+      ${failedSources.length ? `<div class="gp-dash-panel" style="margin-top:8px"><h3>Recent Collector Issues (${failedSources.length > 5 ? `showing 5 of ${failedSources.length}` : failedSources.length})</h3><div class="gp-dash-list gp-source-table-dense">`
         + failedSources.slice(0, 5).map(f => `<div class="gp-dash-row"><div class="grow"><div class="title">${esc(f.source || 'Unnamed feed')}</div><div class="meta">${esc(String(f.error || 'unknown error').slice(0, 160))}</div></div></div>`).join('')
         + '</div></div>' : '<div class="gp-dash-panel" style="margin-top:8px"><h3>Recent Collector Issues</h3><div class="meta">No collector failures recorded in this run.</div></div>'}` : `
       <div class="gp-dash-panel" role="status" aria-live="polite"><h3>Latest Collector Run</h3>
