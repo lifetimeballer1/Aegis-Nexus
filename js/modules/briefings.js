@@ -154,6 +154,9 @@ export function addSupportingToDraft(entry) {
   window.dispatchEvent(new CustomEvent('gp:briefing-drafts-changed'));
 }
 
+export function getBriefCategory() { return categoryFilter; }
+export function setBriefCategory(c) { categoryFilter = c || 'all'; showAllDevelopments = false; renderBriefings(); }
+
 function draftOptions() {
   return ['Situation Update', 'Regional Brief', 'Thematic Brief'];
 }

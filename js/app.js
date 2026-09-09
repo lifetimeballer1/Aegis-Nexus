@@ -17,6 +17,8 @@ const targets = {
   intelligenceWeb: 'intelwebBody',
   markets: 'marketsBody',
   status: 'statusBody',
+  settings: 'settingsBody',
+  views: 'viewsBody',
   map: 'mapContainer',
   mapOps: 'mapOpsBody'
 };
@@ -28,6 +30,54 @@ function showModuleError(id, err) {
   el.innerHTML = `<div class="gp-state"><div class="gp-state-title">Temporarily unavailable</div><div>${message}</div></div>`;
 }
 
+function focusUniversalSearch() {
+  const go = (tries) => {
+    const input = document.getElementById('universalSearch');
+    if (input) {
+      try { document.getElementById('section-search')?.scrollIntoView({ block: 'start' }); } catch {}
+      input.focus();
+      return;
+    }
+    if (tries > 0) setTimeout(() => go(tries - 1), 300);
+  };
+  try { window.location.hash = '#section-search'; } catch {}
+  go(4);
+}
+
+function setupSearchShortcut() {
+  document.addEventListener('keydown', (event) => {
+    if (event.defaultPrevented) return;
+    const mod = event.ctrlKey || event.metaKey;
+    const target = event.target;
+    const typing = target && (target.tagName === 'INPUT' || target.tagName === 'TEXTAREA' || target.tagName === 'SELECT' || target.isContentEditable);
+    if ((mod && (event.key === 'k' || event.key === 'K')) || (!mod && event.key === '/' && !typing)) {
+      event.preventDefault();
+      focusUniversalSearch();
+    }
+  });
+}
+
+function readPrefs() {
+  try {
+    const raw = JSON.parse(localStorage.getItem('gp.prefs.v1') || '{}');
+    return {
+      autoRefresh: raw.autoRefresh !== false,
+      intervalMin: [5, 10, 15, 30].includes(Number(raw.intervalMin)) ? Number(raw.intervalMin) : 5,
+    };
+  } catch { return { autoRefresh: true, intervalMin: 5 }; }
+}
+
+let refreshTimer = null;
+function resetRefreshTimer() {
+  if (refreshTimer) { clearInterval(refreshTimer); refreshTimer = null; }
+  const prefs = readPrefs();
+  if (!prefs.autoRefresh) return;
+  refreshTimer = setInterval(() => {
+    if (document.visibilityState === 'visible') {
+      refresh(false).then(renderAll).catch(err => console.error('Refresh failed', err));
+    }
+  }, prefs.intervalMin * 60 * 1000);
+}
 function setupNav() {
   const items = document.querySelectorAll('.gp-nav-item');
   items.forEach(item => item.addEventListener('click', () => {
@@ -59,6 +109,8 @@ async function loadModules() {
     intelligenceWeb: './modules/intelligence-web.js',
     markets: './modules/markets.js',
     status: './modules/status.js',
+    settings: './modules/settings.js',
+    views: './modules/views.js',
     map: './modules/map.js'
   };
   const jobs = [];
@@ -95,6 +147,8 @@ function renderAll() {
   safeRender('intelligenceWeb', 'renderIntelligenceWeb');
   safeRender('markets');
   safeRender('status', 'renderStatus');
+  safeRender('settings', 'renderSettings');
+  safeRender('views', 'renderViews');
   safeRender('map');
   safeRender('map', 'renderMapOps');
 }
@@ -111,6 +165,8 @@ async function refresh(force = false) {
 
 async function boot() {
   setupNav();
+  setupSearchShortcut();
+  window.addEventListener('gp:prefs-changed', resetRefreshTimer);
   await loadModules();
   if (modules.map?.initMap) {
     try { modules.map.initMap(); } catch (err) { console.error('Map init failed', err); }
@@ -119,11 +175,7 @@ async function boot() {
   catch (err) { console.error('Global Pulse core data refresh failed', err); }
   renderAll();
   subscribe(() => renderAll());
-  setInterval(() => {
-    if (document.visibilityState === 'visible') {
-      refresh(false).then(renderAll).catch(err => console.error('Refresh failed', err));
-    }
-  }, CONFIG.refresh.snapshot);
+  resetRefreshTimer();
   window.addEventListener('online', () => refresh(true).then(renderAll).catch(err => console.error('Online refresh failed', err)));
   setTimeout(() => {
     try { modules.map?.initMap?.(); modules.map?.renderMap?.(); }

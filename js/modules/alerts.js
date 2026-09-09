@@ -156,3 +156,9 @@ export function renderAlerts() {
   }));
   document.getElementById('alertsMore')?.addEventListener('click', () => { showAll = !showAll; renderAlerts(); });
 }
+
+export function getAlertLevel() { return levelFilter; }
+export function setAlertLevel(level) {
+  if (level !== 'all' && !LEVELS.includes(level)) return;
+  levelFilter = level; expandedKey = null; showAll = false; renderAlerts();
+}

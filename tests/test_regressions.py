@@ -179,11 +179,14 @@ def test_refresh_pipeline_requires_real_market_prices_and_manifest():
     text=(ROOT/'refresh_pipeline.py').read_text(encoding='utf-8'); assert 'market data contains no positive real prices' in text; assert 'refresh_manifest.json' in text; assert 'build_what_changed.py' in text
 
 
-def test_refresh_projects_repaired_canonical_data_before_publishing_graph(monkeypatch):
+def test_refresh_projects_repaired_canonical_data_before_publishing_graph(tmp_path, monkeypatch):
     import refresh_pipeline as pipeline
+    import pipeline_history
 
     stages = []
     monkeypatch.setattr(pipeline, 'run', lambda label, *cmd: stages.append(cmd[1]))
+    monkeypatch.setattr(pipeline_history, 'HISTORY', tmp_path / 'pipeline_history.json')
+    monkeypatch.setattr(pipeline_history, 'DATA', tmp_path)
     monkeypatch.setattr(pipeline, 'load', lambda name: {'rowsFetched': 1, 'exportedArticles': 1})
     monkeypatch.setattr(pipeline, 'verify_json', lambda *args, **kwargs: {})
     for name in ('verify_canonical_intelligence', 'verify_graph', 'verify_brain',

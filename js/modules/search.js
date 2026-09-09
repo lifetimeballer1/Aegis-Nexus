@@ -140,7 +140,7 @@ export function renderSearch() {
 
   if (q.length < MIN_QUERY) {
     el.innerHTML = `<input id="universalSearch" class="gp-map-search" type="search" aria-label="Search all intelligence" placeholder="Search stories, conflicts, Brain, map, brief…" value="${esc(universalQuery)}">`
-      + '<div class="gp-state"><div class="gp-state-title">Search everything</div><div>Type at least 2 characters to search stories, conflicts, events, Brain nodes, Web entities, map signals, and brief records.</div></div>';
+      + '<div class="gp-state"><div class="gp-state-title">Search everything</div><div>Type at least 2 characters to search stories, conflicts, events, Brain nodes, Web entities, map signals, and brief records.</div><div class="meta" style="margin-top:6px">Tip: press Ctrl+K (or /) from anywhere to jump here.</div></div>';
   } else {
     const groups = collectGroups(state, q);
     const total = groups.reduce((n, g) => n + g.items.length, 0);

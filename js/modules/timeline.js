@@ -142,3 +142,11 @@ export function renderTimeline() {
     const i = Number(btn.dataset.tlSelect); selectedIdx = selectedIdx === i ? -1 : i; renderTimeline();
   }));
 }
+
+export function getTimelineView() { return { period: periodHours, custom: customActive, from: customFrom, to: customTo }; }
+export function setTimelineView(v) {
+  if (!v || typeof v !== 'object') return;
+  if (v.custom) { customActive = true; customFrom = v.from || ''; customTo = v.to || ''; }
+  else { customActive = false; if (Number.isFinite(Number(v.period))) periodHours = Number(v.period); }
+  userPicked = true; selectedIdx = -1; renderTimeline();
+}
