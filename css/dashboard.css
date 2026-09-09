@@ -376,3 +376,13 @@
   #statusBody .gp-filter-row{flex-wrap:nowrap;overflow-x:auto;padding-bottom:2px}
   #statusBody .gp-filter{flex:0 0 auto}
 }
+
+/* Polish grind 1 — Sources/Health: sticky filter UX, honest states, dense rows.
+   Sticky bars stay inside the scroll container (no viewport stick) so the
+   global sticky header is never covered; table headers pin within lists. */
+#statusBody .gp-source-controls{position:sticky;top:0;z-index:5;background:var(--panel);padding:6px 0}
+#statusBody .gp-filter-row[role="group"]{position:sticky;top:0;z-index:4;background:var(--panel);padding:6px 0;gap:6px}
+#statusBody .gp-filter{padding:5px 10px;font-size:10px;line-height:1.4;min-height:32px}
+#statusBody .gp-source-table-dense .gp-source-row,#statusBody .gp-source-table-dense .gp-dash-row{padding:5px 8px;font-size:11px;line-height:1.4}
+#statusBody .gp-state{padding:16px 12px}
+#statusBody .gp-state[role="status"]{border:1px dashed var(--line-strong);border-radius:var(--radius)}

@@ -133,7 +133,7 @@ export function renderStatus() {
   const stamp = document.getElementById('statusUpdated');
 
   if (!sourceHealth && !liveStatus && !refreshManifest && status === 'loading') {
-    el.innerHTML = '<div class="gp-state"><div class="gp-spinner"></div><div>Loading source health…</div></div>';
+    el.innerHTML = '<div class="gp-state" role="status" aria-live="polite"><div class="gp-spinner" aria-hidden="true"></div><div>Loading source health…</div></div>';
     return;
   }
 
@@ -208,25 +208,29 @@ export function renderStatus() {
   const errorList = Object.entries(errors || {});
 
   const collector = live && live.updatedAt ? `
-      <div class="gp-dash-grid">
-        <div class="gp-dash-panel"><h3>Latest Collector Run</h3>
-          <div class="gp-kpi-value" style="font-size:20px">${esc(formatRelativeTime(live.updatedAt))}</div>
+      <div class="gp-dash-grid" role="list" aria-label="Collector telemetry">
+        <div class="gp-dash-panel" role="listitem"><h3>Latest Collector Run</h3>
+          <div class="gp-kpi-value gp-nums" style="font-size:20px">${esc(formatRelativeTime(live.updatedAt))}</div>
           <div class="meta" style="font-size:10px;color:var(--muted-2)">${fmtInt(live.feedsChecked)} feeds checked · ${fmtInt(live.rowsFetched)} rows · ${fmtInt(live.newArticles)} new · ${fmtInt(live.exportedArticles)} exported</div></div>
-        <div class="gp-dash-panel"><h3>Collector Health</h3>
+        <div class="gp-dash-panel" role="listitem"><h3>Collector Health</h3>
           <div class="gp-kpi-value gp-nums" style="font-size:20px;color:var(--sev-healthy)">${fmtInt(live.healthySources)}</div>
           <div class="meta" style="font-size:10px;color:var(--muted-2)">healthy · ${fmtInt(live.emptySources)} empty · ${fmtInt(failedSources.length)} failed</div></div>
       </div>
       ${failedSources.length ? `<div class="gp-dash-panel" style="margin-top:8px"><h3>Recent Collector Issues (${failedSources.length})</h3><div class="gp-dash-list gp-source-table-dense">`
         + failedSources.slice(0, 5).map(f => `<div class="gp-dash-row"><div class="grow"><div class="title">${esc(f.source || 'Unnamed feed')}</div><div class="meta">${esc(String(f.error || 'unknown error').slice(0, 160))}</div></div></div>`).join('')
-        + '</div></div>' : ''}` : '';
+        + '</div></div>' : '<div class="gp-dash-panel" style="margin-top:8px"><h3>Recent Collector Issues</h3><div class="meta">No collector failures recorded in this run.</div></div>'}` : `
+      <div class="gp-dash-panel" role="status" aria-live="polite"><h3>Latest Collector Run</h3>
+        <div class="gp-state" style="padding:12px"><div class="gp-state-title">No collector run recorded yet</div><div>Collector telemetry publishes on the next pipeline refresh.</div></div></div>`;
 
   const manifestBlock = artifacts.length ? `
       <div class="gp-dash-panel" style="margin-top:8px"><h3>Artifact Integrity</h3>
         <div class="meta gp-micro-label" style="font-size:10px;color:var(--muted-2);margin-bottom:6px">Manifest-recorded hashes · generated ${esc(formatRelativeTime(manifest.generatedAt))}</div>
-        <div class="gp-dash-list gp-source-table-dense">` + artifacts.map(([name, meta]) => `
-          <div class="gp-dash-row"><div class="grow"><div class="title" style="font-family:var(--font-mono);font-size:11px">${esc(name)}</div>
+        <div class="gp-dash-list gp-source-table-dense" role="table" aria-label="Artifact integrity">` + artifacts.map(([name, meta]) => `
+          <div class="gp-dash-row" role="row"><div class="grow"><div class="title" style="font-family:var(--font-mono);font-size:11px">${esc(name)}</div>
           <div class="meta">sha256 ${esc(String(meta.sha256 || '').slice(0, 12))}… · ${esc(fmtSize(meta.size))}</div></div></div>`).join('')
-      + '</div></div>' : '';
+      + '</div></div>' : `
+      <div class="gp-dash-panel" style="margin-top:8px" role="status" aria-live="polite"><h3>Artifact Integrity</h3>
+        <div class="gp-state" style="padding:12px"><div class="gp-state-title">No manifest recorded yet</div><div>Artifact hashes publish on the next pipeline refresh.</div></div></div>`;
 
   const vSummary = validationResults?.summary || {};
   const vResults = Array.isArray(validationResults?.results) ? validationResults.results : [];
