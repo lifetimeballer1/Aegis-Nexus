@@ -249,6 +249,32 @@
 .gp-btn.primary:hover {
   background: #7ab0ff;
 }
+.gp-btn:active {
+  transform: translateY(1px);
+}
+.gp-btn:disabled,
+.gp-btn[aria-disabled="true"] {
+  opacity: .45;
+  cursor: not-allowed;
+  transform: none;
+}
+.gp-btn:disabled:hover,
+.gp-btn[aria-disabled="true"]:hover {
+  background: var(--panel);
+  border-color: var(--line);
+}
+.gp-btn.primary:disabled:hover,
+.gp-btn.primary[aria-disabled="true"]:hover {
+  background: var(--blue);
+  border-color: var(--blue);
+}
+/* Disabled form controls: dim + block interaction affordance. No JS
+   disables controls today; these rules keep any future `disabled`
+   attribute honest instead of looking tappable. */
+:where(input, select, textarea):disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
 
 /* Polish grind 7 — Focus/a11y: one visible focus ring everywhere.
    Covers filters, map tools, search inputs, timeline/header buttons and

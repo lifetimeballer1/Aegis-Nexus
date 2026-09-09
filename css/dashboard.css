@@ -81,9 +81,15 @@
 .gp-sev-healthy{background:rgba(72,223,131,.12);color:var(--sev-healthy);border-color:rgba(72,223,131,.3)}
 .gp-filter-row{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
 .gp-filter{border:1px solid var(--line);background:var(--panel2);color:var(--text-secondary);border-radius:999px;padding:6px 12px;font-size:11px;font-weight:700;cursor:pointer}
+.gp-filter:hover{border-color:var(--line-strong);color:var(--text);background:var(--panel-hover)}
+.gp-filter:active{transform:translateY(1px)}
 .gp-filter.active{color:var(--sev-info);border-color:var(--sev-info)}
+.gp-filter.active:hover{color:var(--sev-info);border-color:var(--sev-info);background:var(--panel2)}
+.gp-filter:disabled{opacity:.45;cursor:not-allowed;transform:none}
+.gp-filter:disabled:hover{border-color:var(--line);color:var(--text-secondary);background:var(--panel2)}
 .gp-alert{border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);margin-bottom:8px;overflow:hidden}
-.gp-alert-head{display:flex;gap:8px;align-items:flex-start;width:100%;background:none;border:0;color:inherit;text-align:left;padding:10px 12px;cursor:pointer;font:inherit}
+.gp-alert-head{display:flex;gap:8px;align-items:flex-start;width:100%;background:none;border:0;color:inherit;text-align:left;padding:10px 12px;cursor:pointer;font:inherit;border-radius:var(--radius)}
+.gp-alert-head:hover{background:var(--panel-2)}
 .gp-alert-bar{flex:0 0 3px;align-self:stretch;border-radius:2px;background:var(--muted-2)}
 .gp-alert.sev-critical .gp-alert-bar{background:var(--sev-critical)}
 .gp-alert.sev-high .gp-alert-bar{background:var(--sev-watch)}
@@ -143,6 +149,8 @@
 .gp-web-controls{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:7px}
 .gp-web-controls .gp-map-search{flex:1;min-width:180px}
 .gp-web-controls select{min-height:34px;border:1px solid var(--line);border-radius:9px;background:var(--bg-elevated);color:var(--text);padding:7px 9px;font-size:11px}
+.gp-web-controls select:hover{border-color:var(--line-strong)}
+.gp-web-controls select:disabled{opacity:.5;cursor:not-allowed}
 .gp-web-node{border-left:3px solid var(--sev-info);cursor:pointer;text-align:left;width:100%}
 .gp-web-node.sev-critical{border-left-color:var(--sev-critical)}
 .gp-web-node.sev-watch{border-left-color:var(--sev-watch)}

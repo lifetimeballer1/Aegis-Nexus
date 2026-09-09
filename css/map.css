@@ -22,6 +22,10 @@
 .gp-map-toolbar{display:flex;align-items:center;gap:7px;flex-wrap:wrap;min-width:0;}
 .gp-map-tool{border:1px solid var(--line);background:var(--panel2);color:var(--text);border-radius:9px;padding:8px 10px;font-size:11px;font-weight:800;cursor:pointer;min-height:36px}
 .gp-map-tool:hover{border-color:var(--blue)}
+.gp-map-tool:active{transform:translateY(1px)}
+.gp-map-tool:disabled{opacity:.45;cursor:not-allowed;transform:none}
+.gp-map-tool:disabled:hover{border-color:var(--line)}
+.gp-map-search:disabled{opacity:.5;cursor:not-allowed}
 .gp-map-search{flex:1;min-width:180px;background:var(--bg-elevated);color:var(--text);border:1px solid var(--line);border-radius:9px;padding:9px 11px;font-size:11px;outline:none}
 .gp-map-search:focus{border-color:var(--blue)}
 .gp-map-count{font-size:10px;color:var(--muted);white-space:nowrap}
