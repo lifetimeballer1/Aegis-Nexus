@@ -94,7 +94,7 @@ export function renderBriefings() {
     + `<span class="meta" style="align-self:center;font-size:10px;color:var(--muted-2)">Showing ${shown.length} of ${visible.length} developments</span></div>`
     + (devRows || '<div class="gp-state"><div class="gp-state-title">No developments match</div><div>Nothing in the current brief matches this category.</div></div>')
     + (visible.length > DEV_PAGE ? `<button id="briefMore" class="gp-btn gp-more" type="button">${showAllDevelopments ? 'Show fewer' : `Show all ${visible.length}`}</button>` : '')
-    + `<h3 class="gp-brief-h gp-micro-label">Watchlist · ${watchlist.length}</h3>`
+    + `<h3 class="gp-brief-h gp-micro-label">Watchlist · ${watchlist.length > 10 ? `${watchRows.length} of ${watchlist.length}` : watchlist.length}</h3>`
     + (watchRows || '<div class="gp-state"><div class="gp-state-title">Watchlist empty</div><div>No attention indicators in the current brief.</div></div>')
     + `<div class="gp-dash-panel" style="margin-top:8px"><h3>My Watchlist <span style="font-weight:400;color:var(--muted);font-size:10px">${pins.length} pinned · this device only</span></h3>`
     + (myRows ? `<div class="gp-dash-list">${myRows}</div><div style="margin-top:8px"><button class="gp-btn" data-watch-export type="button">Export watchlist JSON</button></div>` : '<div class="meta">Nothing pinned yet — pin entities from the pipeline watchlist above.</div>') + `</div>`
