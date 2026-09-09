@@ -65,12 +65,21 @@ export function renderStatus() {
       const ok = isOnline(s);
       const name = s.name || s.id || s.domain || 'Unnamed source';
       const age = s.lastSuccess || s.lastChecked || s.updatedAt;
+      const fresh = Number.isFinite(Number(s.freshnessMinutes)) ? `${Number(s.freshnessMinutes).toFixed(0)}m ago` : '—';
+      const fails = Number(s.consecutiveFailures || 0);
       return `<div class="gp-source-row sev-${ok ? 'healthy' : 'critical'}"><div class="grow"><div class="title">${escapeHtml(String(name))}</div>`
-        + `<div class="meta">${escapeHtml(sourceDetail(s))}${age ? ` · ${escapeHtml(formatRelativeTime(age))}` : ''}</div></div>`
+        + `<div class="meta">${escapeHtml(String(s.type || s.category || 'source'))} · fresh ${escapeHtml(fresh)} · ${escapeHtml(String(s.contentStatus || 'unknown').replace(/_/g, ' '))}${fails > 0 ? ` · ${fails} consecutive failure${fails === 1 ? '' : 's'}` : ''}${age ? ` · ${escapeHtml(formatRelativeTime(age))}` : ''}</div></div>`
         + (ok ? '<span class="gp-source-chip sev-healthy">Online</span>' : `<span class="gp-sev gp-sev-critical">Failed</span>`) + '</div>';
     }).join('');
 
-    el.innerHTML = `
+    const coverage = Number(sourceHealth.summary?.dataCoveragePercent);
+    const kpiStrip = `<div class="cc-kpi-strip" role="list" aria-label="Source indicators" style="grid-template-columns:repeat(4,minmax(0,1fr));margin-bottom:10px">`
+      + `<div class="cc-kpi t-blue"><div class="v">${total}</div><div class="l">Active Sources</div></div>`
+      + `<div class="cc-kpi t-green"><div class="v">${onlineWithData}</div><div class="l">Reporting with Data</div></div>`
+      + `<div class="cc-kpi t-red"><div class="v">${failedCount}</div><div class="l">Sources with Issues</div></div>`
+      + `<div class="cc-kpi t-amber"><div class="v">${Number.isFinite(coverage) ? coverage.toFixed(0) + '%' : '—'}</div><div class="l">Data Coverage</div></div></div>`;
+
+    el.innerHTML = kpiStrip + `
     <div class="gp-card gp-source-summary sev-${pillSev}">
       <div style="display:flex;justify-content:space-between;align-items:center;gap:10px">
         <div>
