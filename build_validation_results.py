@@ -7,6 +7,13 @@ data/validation_results.json for the Sources/Validation workspace.
 Invoked at the END of refresh_pipeline.py after all gates pass, so a
 failing gate still aborts the refresh before this file is rewritten
 (fail-closed preserved). Outside the refresh manifest (written earlier).
+
+Staleness coverage (kept strong): the "Data resilience + manifest gate"
+contract below re-verifies manifest sha256 hashes against the live files, so
+any drift between the manifest and the artifacts fails that contract instead
+of silently publishing. The top-level "manifest" annotation additionally
+records manifest age so stale-but-consistent results are visible as data,
+not hidden behind a green gate.
 """
 from __future__ import annotations
 import json
@@ -19,6 +26,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "data"
 OUT = DATA / "validation_results.json"
+MANIFEST = DATA / "refresh_manifest.json"
+# Manifest older than this is annotated stale (annotation only; the hard gate
+# stays the sha256 contract above so manual re-runs on older-but-consistent
+# data still report honestly per-contract).
+MANIFEST_STALE_SECONDS = 7200
 
 # (contract label, command argv). Read-only validators only; each <1s local.
 VALIDATORS: tuple[tuple[str, list[str]], ...] = (
@@ -62,15 +74,27 @@ def main() -> int:
             "durationMs": int((time.monotonic() - begun) * 1000),
         })
     passed_n = sum(1 for r in results if r["passed"])
+    try:
+        manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
+        generated = manifest.get("generatedAt") or ""
+        stamp = datetime.fromisoformat(str(generated).replace("Z", "+00:00"))
+        age_s = int((datetime.now(timezone.utc) - stamp).total_seconds())
+        manifest_meta = {"generatedAt": generated, "ageSeconds": age_s,
+                         "stale": age_s < -120 or age_s > MANIFEST_STALE_SECONDS}
+    except Exception:
+        manifest_meta = {"generatedAt": None, "ageSeconds": None, "stale": True}
     doc = {
         "version": 1,
         "updatedAt": started,
+        "manifest": manifest_meta,
         "summary": {"run": len(results), "passed": passed_n, "failed": len(results) - passed_n, "blocked": 0},
         "results": results,
     }
     DATA.mkdir(exist_ok=True)
     OUT.write_text(json.dumps(doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
     print(f"VALIDATION RESULTS: {passed_n}/{len(results)} passed -> {OUT.name}")
+    if manifest_meta.get("stale"):
+        print(f"MANIFEST STALENESS NOTE: generatedAt={manifest_meta.get('generatedAt')} ageSeconds={manifest_meta.get('ageSeconds')}")
     return 0
 
 

@@ -42,5 +42,12 @@ Rule: commit ONLY scoped code files, never push. Pattern: `fix(sources): <batch>
       quarantined/quarantineNote flags (thresholds untouched).
       Verified: all 8 published failures covered (6 docs + 2 fallback paths),
       source-health PASS, resilience PASS, pytest 123 passed.
-- [ ] Batch 4 — manifest freshness + source-health thresholds review.
+- [x] Batch 4 — manifest freshness + thresholds (build_validation_results.py,
+      validate_source_health.py): manifest annotation (generatedAt/ageSeconds/
+      stale>7200s) added, 12 contracts untouched; hash gate proven live (12/12
+      artifact hashes match — any drift fails the gate); threshold rationale
+      documented in-gate, numbers unchanged (bounds loose by design, systemic
+      outages still trip multiple bounds).
+      Verified: hash-match probe, annotation import check, resilience+manifest
+      PASS, source-health PASS, pytest 123 passed.
 - [ ] Final — full validator sweep (12/12), pytest, diff check, report.

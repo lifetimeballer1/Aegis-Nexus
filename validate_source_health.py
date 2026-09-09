@@ -4,6 +4,25 @@
 The collector intentionally includes optional search/social feeds. A transient
 failure in several optional feeds must not block the entire publication when
 there are still enough healthy sources, fresh rows, and required coverage.
+
+Threshold rationale (reviewed 2026-09-09, still meaningful after the feed
+fixes — bounds stay loose on purpose so transient GDELT 429 windows and
+flaky NPR 404s never block publication, while a real systemic outage trips
+multiple bounds at once):
+- MIN_FEEDS=20: registry carries ~50 catalog + ~14 collector-builtin feeds;
+  20 means more than two-thirds of polling vanished before we block.
+- MIN_ROWS=1: any fetched row proves the collector pipeline moved data;
+  row volume is monitored via telemetry, not gated, because GDELT
+  throttling windows can crater volume transiently.
+- MIN_HEALTHY_SOURCES=20 / MIN_HEALTHY_RATIO=0.40 / MAX_FAILURE_RATIO=0.60:
+  steady state is ~56/65 healthy (86%); the 5 quarantined X proxies alone
+  can never trip these bounds, but a systemic outage (e.g. all Google News
+  or all GDELT failing) trips all three together.
+- REQUIRED_CATEGORIES (international, us-politics, security): each is backed
+  by several independent publishers, so an uncovered category means a whole
+  brief section lost its sourcing, not one feed blinking.
+- REQUIRED_COVERAGE united-states/china x MIN_COVERAGE_SOURCES=2: the two
+  major-power briefs each need at least two usable sources with actual rows.
 """
 from __future__ import annotations
 import json
