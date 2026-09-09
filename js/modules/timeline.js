@@ -99,14 +99,17 @@ export function renderTimeline() {
 
   let lastDay = '';
   const sevName = { critical: 'CRITICAL', watch: 'WATCH', info: 'INFO', healthy: 'HEALTHY' };
+  const dayCounts = {};
+  for (const p of shown) { const d = dayLabel(p.at); dayCounts[d] = (dayCounts[d] || 0) + 1; }
   const rows = shown.map((p, idx) => {
     const day = dayLabel(p.at);
-    const header = day !== lastDay ? `<div class="gp-tl-meta" style="margin:4px 0 6px;font-weight:700">${esc(day)}</div>` : '';
+    const header = day !== lastDay ? `<div class="gp-tl-day" role="separator" aria-label="${esc(day)}, ${dayCounts[day]} signals"><span>${esc(day)}</span><span class="gp-tl-day-count gp-nums">${dayCounts[day]} signals</span></div>` : '';
     lastDay = day;
     const sev = confidenceSeverity(p.confidence);
     const meta = [`${p.reports ?? '—'} reports`, `${p.sources ?? '—'} sources`, p.confidence ? `${p.confidence} confidence` : 'confidence ungraded', formatRelativeTime(p.at.toISOString())].join(' · ');
-    return `${header}<li class="gp-tl-item"><button data-tl-select="${idx}" type="button" aria-pressed="${selectedIdx === idx}" style="all:unset;cursor:pointer;display:block;width:100%;box-sizing:border-box"><span class="gp-tl-dot sev-${sev}"></span>`
-      + `<div class="gp-tl-time">${esc(p.at.toISOString().slice(11, 16))} UTC · <span class="gp-sev gp-sev-${sev}" style="font-size:9px;padding:1px 6px">${sevName[sev] || sev}</span></div>`
+    const tip = `${p.title} — ${p.at.toISOString().slice(0, 16).replace('T', ' ')} UTC · ${p.confidence || 'ungraded'} confidence · ${p.reports ?? '—'} reports`;
+    return `${header}<li class="gp-tl-item"><button data-tl-select="${idx}" type="button" aria-pressed="${selectedIdx === idx}" aria-label="${esc(p.title)} — ${esc(meta)}" title="${esc(tip)}" style="all:unset;cursor:pointer;display:block;width:100%;box-sizing:border-box"><span class="gp-tl-dot sev-${sev}" title="${esc(sevName[sev] || sev)} · ${esc(p.confidence || 'ungraded')}" aria-hidden="true"></span>`
+      + `<div class="gp-tl-time gp-nums">${esc(p.at.toISOString().slice(11, 16))} UTC · <span class="gp-sev gp-sev-${sev}" style="font-size:9px;padding:1px 6px">${sevName[sev] || sev}</span></div>`
       + `<div class="gp-tl-title">${esc(p.title)}</div><div class="gp-tl-meta">${esc(meta)}</div></button></li>`;
   }).join('');
 
