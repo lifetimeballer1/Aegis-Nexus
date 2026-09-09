@@ -60,3 +60,28 @@ Rule: commit ONLY scoped code files, never push. Pattern: `fix(sources): <batch>
       pytest 123 passed.
 - [x] Final — full validator sweep (12/12), pytest 123 passed, diff check clean,
       report delivered. Data/artifacts left untouched throughout.
+
+## Hour-grind shift (16:00–17:00 CDT, 2026-09-09)
+- Live re-probe 16:05 — catalog 48/50 LIVE, 0 limited-empty. Down: GDELT
+  SOUTHCOM mirror (timeout this pass, was 429) + GDELT WHCC (429). NPR News
+  flaky feed RECOVERED live (10 items). RFI 22 items. All 9 broadened
+  queries live with results. 5 X proxies still challenge-blocked.
+- [x] Batch 1 — legacy snapshot path (update_snapshot.py, live via fast
+      builder + merge path): fetch() gains GDELT spacing (>=2.5s),
+      429/5xx retry/backoff with Retry-After honor, host+code error
+      context; 7 exact-duplicate FEEDS removed (46→39); two
+      maxrecords=250/timespan=15m GDELT queries lightened to 100/30m.
+      Verified: behavior probes, pipeline+repo PASS, pytest 123.
+- [x] Batch 2 — collector politeness (news_feed_db.py): Google News
+      requests spaced (>=1.0s) against burst 429s at MAX_WORKERS=15;
+      429s honor Retry-After (capped 60s) instead of fixed backoff.
+      Verified: retry-after parse/cap/spacing probes, source-health +
+      resilience PASS, pytest 123.
+- [x] Batch 3 — failover audit (source_failover.py,
+      build_source_health.py): fallback fetch gains 1 retry with
+      Retry-After honor (live probe 30 rows); CURRENT_FALLBACKS adds
+      NPR News so the flaky-404 feed has a discovery path if it stays
+      down; health telemetry marks fallbackAvailable for covered names
+      instead of blanket-False on aggregator URLs.
+      Verified: live fallback probe, source-health + resilience +
+      pipeline PASS, pytest 123.

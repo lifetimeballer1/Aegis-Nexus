@@ -17,9 +17,10 @@ Quarantine map (verified live 2026-09-09, re-verify when a replacement is attemp
   GDELT mirror itself is the failing source.
 """
 from __future__ import annotations
-import html,json,re
+import html,json,re,time
 from datetime import datetime,timezone
 from pathlib import Path
+from urllib.error import HTTPError
 from urllib.parse import quote_plus
 from urllib.request import Request,urlopen
 from xml.etree import ElementTree as ET
@@ -28,17 +29,37 @@ FALLBACKS={'GDELT Climate & Disaster Watch':'climate disaster flood wildfire dro
 # Fallbacks keyed to CURRENT canonical catalog/collector names so the loop below
 # actually triggers for presently observed failures (legacy FALLBACKS keys above
 # predate the catalog and would otherwise never match a live failedSource).
-CURRENT_FALLBACKS={'SOUTHCOM Official Reporting — GDELT Mirror':'SOUTHCOM US Southern Command military Caribbean','GDELT — Western Hemisphere Counter-Cartel':'cartel narco-terrorism Caribbean Eastern Pacific'}
+CURRENT_FALLBACKS={'SOUTHCOM Official Reporting — GDELT Mirror':'SOUTHCOM US Southern Command military Caribbean','GDELT — Western Hemisphere Counter-Cartel':'cartel narco-terrorism Caribbean Eastern Pacific','NPR News':'NPR news headlines'}
+# NPR's topic feeds intermittently answer HTTP 404 on valid IDs (verified live
+# 2026-09-09: the feed recovers on its own). The collector retry covers the
+# blink; this fallback keeps story discovery flowing if NPR stays down long
+# enough to appear in failedSources.
 # Dead endpoints with documented outcomes. 'replaced' => catalog already carries
 # the successor (record a doc entry, no fetch). 'unavailable' => no working
 # no-key path known (record honestly, no fetch, health thresholds tolerate).
 QUARANTINE={'France 24':{'status':'replaced','replacement':'RFI World','replacementUrl':'https://www.rfi.fr/en/general/rss','note':'France 24 /en/rss serves HTML, not RSS (verified 2026-09-09); catalog now polls RFI World instead.'},'X @NASA':{'status':'unavailable','note':'X proxy challenge/whitelist; no working no-key RSS proxy known (verified 2026-09-09).'},'X @WhiteHouse':{'status':'unavailable','note':'X proxy challenge/whitelist; no working no-key RSS proxy known (verified 2026-09-09).'},'X @POTUS':{'status':'unavailable','note':'X proxy challenge/whitelist; no working no-key RSS proxy known (verified 2026-09-09).'},'X @NATO':{'status':'unavailable','note':'X proxy challenge/whitelist; no working no-key RSS proxy known (verified 2026-09-09).'},'X @UN':{'status':'unavailable','note':'X proxy challenge/whitelist; no working no-key RSS proxy known (verified 2026-09-09).'}}
 def now():return datetime.now(timezone.utc).isoformat()
 def clean(text):return re.sub(r'\s+',' ',html.unescape(text or '')).strip()
-def fetch(query):
+def _retry_after_seconds(exc,default):
+ try:
+  raw=exc.headers.get('Retry-After') if getattr(exc,'headers',None) else None
+  return max(0.0,min(60.0,float(raw))) if raw is not None else default
+ except Exception:return default
+def fetch(query,timeout=15,retries=1):
  url='https://news.google.com/rss/search?q='+quote_plus(query)+'&hl=en-US&gl=US&ceid=US:en';req=Request(url,headers={'User-Agent':UA,'Accept':'application/rss+xml, application/xml'})
- with urlopen(req,timeout=15) as r:root=ET.fromstring(r.read())
- return [{'title':clean(i.findtext('title')),'url':clean(i.findtext('link')),'source':clean(i.find('source').text if i.find('source') is not None else 'Google News'),'published_date':clean(i.findtext('pubDate'))} for i in root.findall('./channel/item') if clean(i.findtext('title')) and clean(i.findtext('link'))][:30]
+ last=None
+ for attempt in range(1+retries):
+  try:
+   with urlopen(req,timeout=timeout) as r:root=ET.fromstring(r.read())
+   return [{'title':clean(i.findtext('title')),'url':clean(i.findtext('link')),'source':clean(i.find('source').text if i.find('source') is not None else 'Google News'),'published_date':clean(i.findtext('pubDate'))} for i in root.findall('./channel/item') if clean(i.findtext('title')) and clean(i.findtext('link'))][:30]
+  except HTTPError as exc:
+   last=exc
+   if int(exc.code or 0) not in (429,500,502,503,504) or attempt>=retries:raise
+   time.sleep(_retry_after_seconds(exc,5.0));continue
+  except Exception:
+   if attempt>=retries:raise
+   last=True;time.sleep(5.0)
+ raise RuntimeError(f'fallback fetch retries exhausted: {last}')
 def story_key(item):
  return str(item.get('url') or '').strip() or f"title:{str(item.get('title') or '').strip().lower()}|time:{str(item.get('published_date') or item.get('time') or '').strip()}"
 def merge_stories(existing, additions):

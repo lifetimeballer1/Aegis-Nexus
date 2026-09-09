@@ -5,8 +5,8 @@ import json,re
 from datetime import datetime,timezone
 from pathlib import Path
 ROOT=Path(__file__).resolve().parent;DATA=ROOT/'data';STATUS=DATA/'live_status.json';OUT=DATA/'source_health.json'
-try:from source_failover import QUARANTINE
-except Exception:QUARANTINE={}
+try:from source_failover import QUARANTINE,CURRENT_FALLBACKS
+except Exception:QUARANTINE={};CURRENT_FALLBACKS={}
 
 def parse_dt(value):
  if not value:return None
@@ -44,7 +44,7 @@ def main():
   else:
    status='online';content_status='online_empty';last_success=current.get('updatedAt') or now.isoformat()
   if mode=='gdelt-domain-fallback':content_status='fallback_data_available'
-  sources.append({'name':name,'url':source_url,'type':item.get('type','news'),'category':category,'coverage':coverage,'status':status,'contentStatus':content_status,'quarantined':name in QUARANTINE,'quarantineNote':QUARANTINE.get(name,{}).get('note','') if name in QUARANTINE else '','lastChecked':current.get('updatedAt') or now.isoformat(),'lastSuccess':last_success,'freshnessMinutes':age_minutes(last_success,now),'rowsFetched':rows,'newArticles':int(r.get('newArticles',0) or 0),'mode':mode,'consecutiveFailures':(int(old.get('consecutiveFailures',0) or 0)+1 if not http_ok else 0),'error':error,'fallbackAvailable':mode in {'online-empty','failed'} and not ('news.google.com' in source_url or 'gdeltproject.org' in source_url),'dataValue':'articles' if rows else 'none'})
+  sources.append({'name':name,'url':source_url,'type':item.get('type','news'),'category':category,'coverage':coverage,'status':status,'contentStatus':content_status,'quarantined':name in QUARANTINE,'quarantineNote':QUARANTINE.get(name,{}).get('note','') if name in QUARANTINE else '','lastChecked':current.get('updatedAt') or now.isoformat(),'lastSuccess':last_success,'freshnessMinutes':age_minutes(last_success,now),'rowsFetched':rows,'newArticles':int(r.get('newArticles',0) or 0),'mode':mode,'consecutiveFailures':(int(old.get('consecutiveFailures',0) or 0)+1 if not http_ok else 0),'error':error,'fallbackAvailable':(name in CURRENT_FALLBACKS) or (mode in {'online-empty','failed'} and not ('news.google.com' in source_url or 'gdeltproject.org' in source_url)),'dataValue':'articles' if rows else 'none'})
  # X and any collector-only sources not represented in the registry
  for name,r in results.items():
   if name in seen:continue
