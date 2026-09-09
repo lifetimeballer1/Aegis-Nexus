@@ -109,7 +109,7 @@ export function renderTimeline() {
   for (const p of shown) { const d = dayLabel(p.at); dayCounts[d] = (dayCounts[d] || 0) + 1; }
   const rows = shown.map((p, idx) => {
     const day = dayLabel(p.at);
-    const header = day !== lastDay ? `<div class="gp-tl-day" role="separator" aria-label="${esc(day)}, ${dayCounts[day]} ${dayUnit}"><span>${esc(day)}</span><span class="gp-tl-day-count gp-nums">${dayCounts[day]} ${dayUnit}</span></div>` : '';
+    const header = day !== lastDay ? `<li class="gp-tl-day" role="separator" aria-label="${esc(day)}, ${dayCounts[day]} ${dayUnit}"><span>${esc(day)}</span><span class="gp-tl-day-count gp-nums">${dayCounts[day]} ${dayUnit}</span></li>` : '';
     lastDay = day;
     const sev = confidenceSeverity(p.confidence);
     const meta = [`${p.reports ?? '—'} reports`, `${p.sources ?? '—'} sources`, p.confidence ? `${p.confidence} confidence` : 'confidence ungraded', formatRelativeTime(p.at.toISOString())].join(' · ');
