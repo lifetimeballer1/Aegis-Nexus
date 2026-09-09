@@ -57,6 +57,17 @@ Never touched: `data/`, `artifacts/`, pipeline/build/validate/collector scripts.
 21. `d8349b0` alert evidence links disclose 4-item cap.
 22. `313a909` intelweb 3D-page toggles (filter/period/orbit/labels/flow)
     gain `aria-pressed` + period chips gain active-state sync.
+23. `e58b6f6` timeline day separators are valid `<li>` items (were `<div>` in `<ol>`).
+
+## Reviewed, no change (recorded so the next pass skips them)
+- WebGL engine caps (500 nodes / 1500+1000 edges): perf guards far above live
+  scale (~100 nodes); visible "Showing X of Y" stays truthful in practice.
+- `briefings.js` inline `sources.slice(0, 4)`: illustrative list, counts carried
+  by adjacent `N reports · N sources` meta.
+- Legacy `gp-event-dialog` / `gp-dialog-open` hooks: dormant legacy scripts
+  under the regression contract; compat CSS retained intentionally.
+- `cc-pill` geo/cyber/econ/indo/dom variants + `.gp-grid-4`: intentional
+  variant/utility families, kept.
 
 ## Bugs fixed along the way
 - Page-width cap (`max-width:1400px`) applied to nothing (`.gp-main` dead).
