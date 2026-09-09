@@ -43,6 +43,11 @@ Never touched: `data/`, `artifacts/`, pipeline/build/validate/collector scripts.
 11. `8cdcda7` markets 20-cap + collector-issue counts honest
     (`js/modules/markets.js`, `js/modules/status.js`)
 12. `views.js` saved-view name input gains `aria-label` (had placeholder only).
+13. `bb2a81a` map detail close selector fix (`#gpMapClose`) + brain-link hover.
+14. `6edf8b4` `aria-pressed` on all filter chips (alerts/briefs/drafts/map-ops/
+    status/timeline) + brain node cards.
+15. `ef46aa3` map header quick-filters mirror ops filter state
+    (`.gp-btn.active` style added).
 
 ## Bugs fixed along the way
 - Page-width cap (`max-width:1400px`) applied to nothing (`.gp-main` dead).
