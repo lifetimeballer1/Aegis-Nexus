@@ -47,7 +47,7 @@ input,button,select{border:1px solid var(--line);background:#0e1e2a;color:var(--
   <div class="sub">Living cross-domain knowledge graph. Public-source relationships are evidence/context links, not proof of causation, coordination, intent or responsibility.</div>
   <div class="row"><input id="search" aria-label="Search intelligence graph" placeholder="Search countries, conflicts, events, organizations…"><button id="clear">CLEAR</button><button id="refresh">↻ REFRESH</button></div>
   <div class="row"><button class="filter active" data-kind="all">ALL</button><button class="filter" data-kind="country">COUNTRIES</button><button class="filter" data-kind="person">PEOPLE</button><button class="filter" data-kind="government">GOVERNMENT</button><button class="filter" data-kind="military">MILITARY</button><button class="filter" data-kind="organization">ORGANIZATIONS</button><button class="filter" data-kind="economic">ECONOMY</button><button class="filter" data-kind="location">PLACES</button><button class="filter" data-kind="conflict">CONFLICTS</button><button class="filter" data-kind="infrastructure">INFRASTRUCTURE</button><button class="filter" data-kind="technology">TECHNOLOGY</button><button class="filter" data-kind="other">OTHER</button></div>
-  <div class="row"><button id="reset">RESET VIEW</button><button id="orbit">3D ORBIT</button><button id="flow" class="active">RELATIONSHIPS</button><button id="labels-toggle" class="active">LABELS</button></div>
+  <div class="row"><button id="reset">RESET VIEW</button><button id="orbit" aria-pressed="false">3D ORBIT</button><button id="flow" class="active" aria-pressed="true">RELATIONSHIPS</button><button id="labels-toggle" class="active">LABELS</button></div>
   <div class="row"><select id="node-select" aria-label="Select matching entity"><option>Loading entities…</option></select></div>
   <div id="stats" role="status">Preparing intelligence graph…</div>
   <div class="legend">SEMANTIC WEBGL: RED SANCTIONS · ORANGE MILITARY ACTION · GREEN NEGOTIATION · GOLD TRADE/ECONOMIC · BLUE TECHNOLOGY · TEAL ENERGY · PURPLE CYBER/POLITICAL · ACTION ARROWS = ACTOR → TARGET · WHITE/BLUE = EVIDENCE CONTEXT</div>
@@ -63,7 +63,7 @@ input,button,select{border:1px solid var(--line);background:#0e1e2a;color:var(--
 <script src="intelligence_web_controls_fix.js?v=20260907-controlsfix2"></script>
 <script src="intelligence_action_flow.js?v=20260907-flow2"></script>
 <script>
-(()=>{const b=document.getElementById('labels-toggle'),w=document.getElementById('labels');if(b&&w){b.addEventListener('click',()=>{const on=w.style.display!=='none';w.style.display=on?'none':'';b.classList.toggle('active',!on);});}})();
+(()=>{const b=document.getElementById('labels-toggle'),w=document.getElementById('labels');if(b&&w){b.addEventListener('click',()=>{const on=w.style.display!=='none';w.style.display=on?'none':'';b.classList.toggle('active',!on);b.setAttribute('aria-pressed',String(!on));});if(b)b.setAttribute('aria-pressed','true');}})();
 </script>
 </body>
 </html>
