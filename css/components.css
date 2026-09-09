@@ -331,6 +331,12 @@
   text-decoration: underline;
 }
 
+/* Micro-meta base (2026-09-09): every bare `.meta` micro-copy line renders
+   10px muted-2. Scoped `.x .meta` rules and inline styles keep winning
+   where they add rhythm (margins) or tone; this only normalizes the
+   dozen-plus bare usages that previously inherited body type. */
+.meta{font-size:10px;color:var(--muted-2)}
+
 /* Timestamp */
 .gp-time {
   font-variant-numeric: tabular-nums;
