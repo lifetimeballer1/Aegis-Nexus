@@ -69,3 +69,16 @@ def test_phase7_styles_and_pages_safety():
     text = (ROOT / 'js/modules/briefings.js').read_text(encoding='utf-8')
     assert 'href="/' not in text and 'src="/' not in text
     assert '/Aegis-Nexus/' not in text
+
+
+def test_analyst_drafts_are_local_first_with_evidence_only():
+    text = (ROOT / 'js/modules/briefings.js').read_text(encoding='utf-8')
+    assert 'gp.briefDrafts.v1' in text
+    assert 'data-draft-new' in text
+    assert 'data-jadd' in text and 'data-ladd' in text
+    assert 'data-bdexport' in text
+    assert 'this device only' in text
+    assert 'Generate with AI' not in text, 'drafts must be analyst-authored, never generated'
+    alerts = (ROOT / 'js/modules/alerts.js').read_text(encoding='utf-8')
+    assert 'data-brief-add' in alerts
+    assert 'addSupportingToDraft' in alerts
