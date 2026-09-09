@@ -422,3 +422,9 @@
 #briefingsBody .gp-brief-watch .title{font-size:11px;line-height:1.4}
 #briefingsBody .gp-brief-dev .meta,#briefingsBody .gp-brief-watch .meta{font-size:10px;line-height:1.45}
 #briefingsBody .gp-brief-caution{font-size:10px;line-height:1.5}
+
+/* Polish grind 5 — Map ops list mobile: chips never crush, list scrolls. */
+@media(max-width:420px){
+  .gp-map-ops-list{max-height:240px}
+  .gp-map-ops-bar .gp-map-search{min-width:0}
+}
