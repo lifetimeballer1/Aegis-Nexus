@@ -170,7 +170,7 @@ export function renderDashboard() {
         <div style="font-size:11px;color:var(--muted);margin-bottom:6px">All Domains · 24H · ${fmtInt(events.length)} signals · dark operational basemap</div>
         <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px">${order.slice(0, 6).map(n => `<span class="cc-pill gen">${esc(String(n).toUpperCase().slice(0, 14))} · ${fmtInt(regions[n]?.events ?? regions[n]?.reports)}</span>`).join('')}</div>
         <div id="dashMap" role="img" aria-label="Mini operational map" style="min-height:240px;height:260px;border:1px solid var(--line);border-radius:8px;background:#0a1826;z-index:1"></div>
-        <div class="cc-legend" aria-label="Map legend"><span><i style="background:var(--red)"></i>Critical</span><span><i style="background:var(--amber)"></i>Elevated</span><span><i style="background:var(--blue)"></i>Notable</span><span><i style="background:#cbd5e1"></i>Monitoring</span></div></div>
+        <div class="cc-legend" role="group" aria-label="Map legend"><span><i style="background:var(--red)"></i>Critical</span><span><i style="background:var(--amber)"></i>Elevated</span><span><i style="background:var(--blue)"></i>Notable</span><span><i style="background:#cbd5e1"></i>Monitoring</span></div></div>
       <div class="cc-panel"><h3>🎯 Priority Regions <a href="#section-map">View All →</a></h3>
         <table class="cc-table" aria-label="Priority regions"><thead><tr><th>#</th><th>Region</th><th>Activity</th><th>Impact</th><th>Trend</th></tr></thead><tbody>${regionRows}</tbody></table>
         <h3 style="margin-top:10px">🕐 What Changed <a href="#section-breaking">View All →</a></h3><div style="font-size:10px;color:var(--muted-2);margin-bottom:6px">Since last refresh (${esc(wc.window || 'current window')})</div>${wcBlock}</div>
@@ -185,7 +185,7 @@ export function renderDashboard() {
           ${issues.map(s => `<div style="font-size:10px;color:var(--muted-2);margin-top:4px">⚠ ${esc(s.name || 'Unnamed')} — ${esc(s.status || 'failed')}</div>`).join('')}
         </div></div></div>
     </div>
-    <div class="cc-legend" aria-label="Severity legend"><span><i style="background:var(--blue)"></i>Blue = Informational · Normal activity</span><span><i style="background:var(--amber)"></i>Amber = Watch · Elevated, monitor</span><span><i style="background:var(--red)"></i>Red = Critical · Immediate attention</span><span><i style="background:var(--green)"></i>Green = Healthy · Normal operation</span></div>`;
+    <div class="cc-legend" role="group" aria-label="Severity legend"><span><i style="background:var(--blue)"></i>Blue = Informational · Normal activity</span><span><i style="background:var(--amber)"></i>Amber = Watch · Elevated, monitor</span><span><i style="background:var(--red)"></i>Red = Critical · Immediate attention</span><span><i style="background:var(--green)"></i>Green = Healthy · Normal operation</span></div>`;
 
   const input = document.getElementById('dashSearch');
   input?.addEventListener('input', () => { query = input.value; renderDashboard(); const n = document.getElementById('dashSearch'); if (n) { n.focus(); n.setSelectionRange(n.value.length, n.value.length); } });
