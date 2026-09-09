@@ -1,16 +1,24 @@
 {
-  "updatedAt": "2026-09-09T18:38:41.753269+00:00",
+  "updatedAt": "2026-09-09T20:23:07.582747+00:00",
   "feedsChecked": 65,
-  "rowsFetched": 832,
-  "newArticles": 135,
-  "purged": 53,
-  "databaseArticles": 2604,
+  "rowsFetched": 780,
+  "newArticles": 118,
+  "purged": 48,
+  "databaseArticles": 2674,
   "exportedArticles": 2000,
   "exportLimit": 2000,
-  "healthySources": 57,
-  "emptySources": 9,
+  "healthySources": 55,
+  "emptySources": 14,
   "fallbackSources": 0,
   "failedSources": [
+    {
+      "source": "NPR Politics",
+      "error": "HTTPError: HTTP Error 404: Not Found"
+    },
+    {
+      "source": "NPR World",
+      "error": "HTTPError: HTTP Error 404: Not Found"
+    },
     {
       "source": "SOUTHCOM Official Reporting — GDELT Mirror",
       "error": "URLError: <urlopen error _ssl.c:993: The handshake operation timed out>"
@@ -63,11 +71,11 @@
       "type": "us-politics",
       "category": "us-politics",
       "coverage": [],
-      "rowsFetched": 10,
-      "httpOk": true,
-      "mode": "native",
+      "rowsFetched": 0,
+      "httpOk": false,
+      "mode": "failed",
       "emptyFeed": false,
-      "error": ""
+      "error": "HTTPError: HTTP Error 404: Not Found"
     },
     {
       "sourceId": "fox_news_politics",
@@ -171,11 +179,11 @@
       "type": "international",
       "category": "international",
       "coverage": [],
-      "rowsFetched": 10,
-      "httpOk": true,
-      "mode": "native",
+      "rowsFetched": 0,
+      "httpOk": false,
+      "mode": "failed",
       "emptyFeed": false,
-      "error": ""
+      "error": "HTTPError: HTTP Error 404: Not Found"
     },
     {
       "sourceId": "al_jazeera",
@@ -255,10 +263,10 @@
       "type": "counter-cartel",
       "category": "counter-cartel",
       "coverage": [],
-      "rowsFetched": 1,
+      "rowsFetched": 0,
       "httpOk": true,
-      "mode": "native",
-      "emptyFeed": false,
+      "mode": "online-empty",
+      "emptyFeed": true,
       "error": ""
     },
     {
@@ -267,7 +275,7 @@
       "type": "counter-cartel",
       "category": "counter-cartel",
       "coverage": [],
-      "rowsFetched": 7,
+      "rowsFetched": 5,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -279,7 +287,7 @@
       "type": "counter-cartel",
       "category": "counter-cartel",
       "coverage": [],
-      "rowsFetched": 4,
+      "rowsFetched": 6,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -291,7 +299,7 @@
       "type": "counter-cartel",
       "category": "counter-cartel",
       "coverage": [],
-      "rowsFetched": 2,
+      "rowsFetched": 3,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -375,7 +383,7 @@
       "type": "us-politics",
       "category": "us-politics",
       "coverage": [],
-      "rowsFetched": 28,
+      "rowsFetched": 33,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -387,7 +395,7 @@
       "type": "us-politics",
       "category": "us-politics",
       "coverage": [],
-      "rowsFetched": 13,
+      "rowsFetched": 14,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -435,7 +443,7 @@
       "type": "economics",
       "category": "economics",
       "coverage": [],
-      "rowsFetched": 21,
+      "rowsFetched": 22,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -507,10 +515,10 @@
       "type": "africa-conflict",
       "category": "africa-conflict",
       "coverage": [],
-      "rowsFetched": 3,
+      "rowsFetched": 0,
       "httpOk": true,
-      "mode": "native",
-      "emptyFeed": false,
+      "mode": "online-empty",
+      "emptyFeed": true,
       "error": ""
     },
     {
@@ -543,7 +551,7 @@
       "type": "americas-conflict",
       "category": "americas-conflict",
       "coverage": [],
-      "rowsFetched": 1,
+      "rowsFetched": 3,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -591,7 +599,7 @@
       "type": "middle-east-conflict",
       "category": "middle-east-conflict",
       "coverage": [],
-      "rowsFetched": 41,
+      "rowsFetched": 42,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -603,10 +611,10 @@
       "type": "europe-conflict",
       "category": "europe-conflict",
       "coverage": [],
-      "rowsFetched": 27,
+      "rowsFetched": 0,
       "httpOk": true,
-      "mode": "native",
-      "emptyFeed": false,
+      "mode": "online-empty",
+      "emptyFeed": true,
       "error": ""
     },
     {
@@ -615,7 +623,7 @@
       "type": "americas",
       "category": "americas",
       "coverage": [],
-      "rowsFetched": 2,
+      "rowsFetched": 3,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -627,7 +635,7 @@
       "type": "middle-east",
       "category": "middle-east",
       "coverage": [],
-      "rowsFetched": 8,
+      "rowsFetched": 7,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -639,10 +647,10 @@
       "type": "south-asia",
       "category": "south-asia",
       "coverage": [],
-      "rowsFetched": 4,
+      "rowsFetched": 0,
       "httpOk": true,
-      "mode": "native",
-      "emptyFeed": false,
+      "mode": "online-empty",
+      "emptyFeed": true,
       "error": ""
     },
     {
@@ -733,10 +741,10 @@
       "coverage": [
         "china"
       ],
-      "rowsFetched": 9,
+      "rowsFetched": 0,
       "httpOk": true,
-      "mode": "native",
-      "emptyFeed": false,
+      "mode": "online-empty",
+      "emptyFeed": true,
       "error": ""
     },
     {
@@ -775,7 +783,7 @@
       "coverage": [
         "china"
       ],
-      "rowsFetched": 1,
+      "rowsFetched": 2,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
