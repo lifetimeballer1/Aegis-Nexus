@@ -73,12 +73,21 @@ export function renderBriefings() {
       + `<span class="gp-sev gp-sev-${sev}">${dev.breaking ? 'Breaking' : esc(dev.confidence || 'ungraded')}</span></div>`;
   }).join('');
 
+  const pins = loadPins();
   const watchRows = watchlist.slice(0, 10).map(w => {
     const sev = watchSeverity(w.level);
+    const pinned = pins.includes(w.entity);
     const factors = Array.isArray(w.topFactors) ? w.topFactors.slice(0, 3).map(f => `${f.label || ''}${f.delta !== undefined && f.delta !== null ? ` (${Number(f.delta) > 0 ? '+' : ''}${f.delta})` : ''}`) : [];
     return `<div class="gp-brief-watch sev-${sev}"><div class="grow"><div class="title">${esc(w.entity || 'Unnamed entity')}</div>`
       + `<div class="meta">score ${w.score ?? '—'} · ${w.evidenceCount ?? '—'} evidence records${factors.length ? ` · ${esc(factors.join('; '))}` : ''}</div></div>`
-      + `<span class="gp-brief-level">${deltaArrow(w.delta)} ${esc(w.level || 'ungraded')}</span></div>`;
+      + `<span class="gp-brief-level">${deltaArrow(w.delta)} ${esc(w.level || 'ungraded')}</span>`
+      + (w.entity ? `<button class="gp-btn" data-watch-pin="${esc(w.entity)}" type="button" title="Pin to My Watchlist on this device">${pinned ? 'Pinned ✓' : 'Pin'}</button>` : '') + `</div>`;
+  }).join('');
+  const myRows = pins.map(name => {
+    const live = watchlist.find(w => w.entity === name);
+    return `<div class="gp-dash-row"><div class="grow"><div class="title" style="font-size:11px">${esc(name)}</div>`
+      + `<div class="meta">${live ? `level ${esc(live.level || 'ungraded')} · score ${live.score ?? '—'} · ${live.evidenceCount ?? '—'} evidence records` : 'not in the current brief'}</div></div>`
+      + `<button class="gp-btn" data-watch-unpin="${esc(name)}" type="button">Unpin</button></div>`;
   }).join('');
 
   const method = brief.methodology || {};
@@ -98,12 +107,36 @@ export function renderBriefings() {
     + (visible.length > DEV_PAGE ? `<button id="briefMore" class="gp-btn gp-more" type="button">${showAllDevelopments ? 'Show fewer' : `Show all ${visible.length}`}</button>` : '')
     + `<h3 class="gp-brief-h">Watchlist</h3>`
     + (watchRows || '<div class="gp-state"><div class="gp-state-title">Watchlist empty</div><div>No attention indicators in the current brief.</div></div>')
+    + `<div class="gp-dash-panel" style="margin-top:8px"><h3>My Watchlist <span style="font-weight:400;color:var(--muted);font-size:10px">${pins.length} pinned · this device only</span></h3>`
+    + (myRows ? `<div class="gp-dash-list">${myRows}</div><div style="margin-top:8px"><button class="gp-btn" data-watch-export type="button">Export watchlist JSON</button></div>` : '<div class="meta">Nothing pinned yet — pin entities from the pipeline watchlist above.</div>') + `</div>`
     + (method.caution ? `<div class="gp-brief-caution">${esc(method.caution)}</div>` : '');
 
   el.querySelectorAll('[data-brief-filter]').forEach(btn => btn.addEventListener('click', () => {
     categoryFilter = btn.dataset.briefFilter; showAllDevelopments = false; renderBriefings();
   }));
   el.querySelector('#briefMore')?.addEventListener('click', () => { showAllDevelopments = !showAllDevelopments; renderBriefings(); });
+  el.querySelectorAll('[data-watch-pin]').forEach(btn => btn.addEventListener('click', () => {
+    const name = btn.dataset.watchPin;
+    const list = loadPins();
+    if (list.includes(name)) savePins(list.filter(x => x !== name));
+    else { list.push(name); savePins(list); }
+    renderBriefings();
+  }));
+  el.querySelectorAll('[data-watch-unpin]').forEach(btn => btn.addEventListener('click', () => {
+    savePins(loadPins().filter(x => x !== btn.dataset.watchUnpin));
+    renderBriefings();
+  }));
+  el.querySelector('[data-watch-export]')?.addEventListener('click', () => {
+    const brief = getState().intelligenceBrief || {};
+    const live = Array.isArray(brief.watchlist) ? brief.watchlist : [];
+    const payload = { exportedAt: new Date().toISOString(), pins: loadPins().map(name => ({ entity: name, live: live.find(w => w.entity === name) || null })) };
+    const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'my-watchlist.json';
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+  });
 
   const stamp = document.getElementById('briefingsUpdated');
   if (stamp) stamp.textContent = brief.updatedAt ? `Updated ${formatRelativeTime(brief.updatedAt)} · ${developments.length} developments · ${watchlist.length} watched` : '';
@@ -156,6 +189,20 @@ export function addSupportingToDraft(entry) {
 
 export function getBriefCategory() { return categoryFilter; }
 export function setBriefCategory(c) { categoryFilter = c || 'all'; showAllDevelopments = false; renderBriefings(); }
+
+/* My Watchlist — analyst-pinned entities (device-local). Live level/score
+ * resolve against the current pipeline brief watchlist by entity name;
+ * pins absent from the current brief say so honestly. */
+const MYWATCH_KEY = 'gp.mywatch.v1';
+function loadPins() {
+  try {
+    const raw = JSON.parse(localStorage.getItem(MYWATCH_KEY) || '[]');
+    return Array.isArray(raw) ? raw.filter(x => typeof x === 'string') : [];
+  } catch { return []; }
+}
+function savePins(pins) {
+  try { localStorage.setItem(MYWATCH_KEY, JSON.stringify(pins)); } catch {}
+}
 
 function draftOptions() {
   return ['Situation Update', 'Regional Brief', 'Thematic Brief'];

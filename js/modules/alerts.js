@@ -19,6 +19,12 @@ let acked = loadAck();
 function saveAck() {
   try { localStorage.setItem(ACK_KEY, JSON.stringify(acked)); } catch {}
 }
+/* Ack entries are {at, title}; legacy string entries (ISO only) still read. */
+function ackTime(key) {
+  const v = acked[key];
+  if (!v) return null;
+  return typeof v === 'string' ? v : (v.at || null);
+}
 
 const LEVELS = ['critical', 'high', 'medium', 'low'];
 const LEVEL_LABEL = { critical: 'Critical', high: 'High', medium: 'Medium', low: 'Low' };
@@ -122,7 +128,7 @@ export function renderAlerts() {
   const rows = shown.map(item => {
     const open = expandedKey === item.key;
     const links = evidenceLinks(item.evidence);
-    const ackAt = acked[item.key] || null;
+    const ackAt = ackTime(item.key);
     const initial = esc(String(item.title || 'A').trim().charAt(0).toUpperCase());
     const thumbBg = item.sev === 'critical' ? 'linear-gradient(135deg,#3d0f18,#160a0e)' : item.sev === 'high' ? 'linear-gradient(135deg,#3a2a0c,#14100a)' : item.sev === 'medium' ? 'linear-gradient(135deg,#10294a,#080f1a)' : 'linear-gradient(135deg,#1a2430,#0a0f14)';
     return `<div class="gp-alert sev-${item.sev}"><button class="gp-alert-head" data-alert-toggle="${esc(item.key)}" type="button" aria-expanded="${open}">`
@@ -134,9 +140,23 @@ export function renderAlerts() {
       + '</div>';
   }).join('');
 
+  const ackKeys = Object.keys(acked);
+  const liveKeys = new Set(items.map(i => i.key));
+  const unackedCritical = items.filter(i => (i.sev === 'critical' || i.sev === 'high') && !acked[i.key]).length;
+  const ackRows = ackKeys.map(k => {
+    const v = acked[k];
+    const title = (v && typeof v === 'object' && v.title) ? v.title : (items.find(i => i.key === k)?.title || k);
+    const at = ackTime(k);
+    return `<div class="gp-dash-row"><div class="grow"><div class="title" style="font-size:11px">${esc(title)}</div>`
+      + `<div class="meta">${at ? `acknowledged ${esc(formatRelativeTime(at))} · ` : ''}${liveKeys.has(k) ? 'still in queue' : 'rotated out of queue'}</div></div>`
+      + `<button class="gp-btn" data-ack-clear="${esc(k)}" type="button">Clear</button></div>`;
+  }).join('');
+
   el.innerHTML = `<div class="gp-filter-row" role="group" aria-label="Filter alerts by severity">${chips}</div>`
     + (rows || '<div class="gp-state"><div class="gp-state-title">No alerts at this severity</div><div>Nothing in the current snapshot matches this filter.</div></div>')
-    + (visible.length > 12 ? `<button id="alertsMore" class="gp-btn gp-more" type="button">${showAll ? 'Show fewer' : `Show all ${visible.length}`}</button>` : '');
+    + (visible.length > 12 ? `<button id="alertsMore" class="gp-btn gp-more" type="button">${showAll ? 'Show fewer' : `Show all ${visible.length}`}</button>` : '')
+    + `<div class="gp-dash-panel" style="margin-top:8px"><h3>Acknowledgement Status <span style="font-weight:400;color:var(--muted);font-size:10px">${ackKeys.length} acknowledged · ${unackedCritical} unacked critical/high · this device only</span></h3>`
+    + (ackRows ? `<div class="gp-dash-list">${ackRows}</div>` : '<div class="meta">Nothing acknowledged yet — expand an alert to acknowledge it.</div>') + `</div>`;
 
   el.querySelectorAll('[data-alert-level]').forEach(btn => btn.addEventListener('click', () => {
     levelFilter = btn.dataset.alertLevel; expandedKey = null; showAll = false; renderAlerts();
@@ -147,7 +167,10 @@ export function renderAlerts() {
   el.querySelectorAll('[data-alert-ack]').forEach(btn => btn.addEventListener('click', () => {
     const key = btn.dataset.alertAck;
     if (acked[key]) delete acked[key];
-    else acked[key] = new Date().toISOString();
+    else {
+      const item = items.find(i => i.key === key);
+      acked[key] = { at: new Date().toISOString(), title: item ? item.title : key };
+    }
     saveAck(); renderAlerts();
   }));
   el.querySelectorAll('[data-brief-add]').forEach(btn => btn.addEventListener('click', () => {
@@ -155,6 +178,9 @@ export function renderAlerts() {
     btn.textContent = 'Added ✓';
   }));
   document.getElementById('alertsMore')?.addEventListener('click', () => { showAll = !showAll; renderAlerts(); });
+  el.querySelectorAll('[data-ack-clear]').forEach(btn => btn.addEventListener('click', () => {
+    delete acked[btn.dataset.ackClear]; saveAck(); renderAlerts();
+  }));
 }
 
 export function getAlertLevel() { return levelFilter; }
