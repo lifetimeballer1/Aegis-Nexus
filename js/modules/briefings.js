@@ -218,15 +218,15 @@ function renderDrafts(el) {
     </div>
     <div class="gp-dash-panel" style="margin-top:8px"><h3>Key judgments</h3>
       <div class="gp-dash-list">${(draft.judgments || []).map((j, i) => `<div class="gp-dash-row"><div class="grow"><div class="title">${i + 1}. ${esc(j.text || '')}</div></div><button class="gp-btn" data-jdel="${i}" type="button">Remove</button></div>`).join('') || '<div class="meta">No judgments yet — add the analyst’s own assessments.</div>'}</div>
-      <div style="display:flex;gap:6px;margin-top:6px"><input id="bdJudgNew" class="gp-map-search" type="text" placeholder="New judgment…" maxlength="280" style="flex:1"><button class="gp-btn" data-jadd type="button">Add</button></div>
+      <div style="display:flex;gap:6px;margin-top:6px"><input id="bdJudgNew" class="gp-map-search" type="text" aria-label="New judgment" placeholder="New judgment…" maxlength="280" style="flex:1"><button class="gp-btn" data-jadd type="button">Add</button></div>
     </div>
     <div class="gp-dash-panel" style="margin-top:8px"><h3>Supporting content</h3>
       <div class="meta" style="font-size:10px;color:var(--muted-2);margin-bottom:6px">Attach evidence only — alerts via “Add to briefing”, or paste source URLs.</div>
       <div class="gp-dash-list">${(draft.links || []).map((l, i) => `<div class="gp-dash-row"><div class="grow"><div class="title">${esc(l.label || l.key || 'link')}</div><div class="meta">${esc(l.kind === 'alert' ? `alert · ${l.key || ''}` : l.url || '')}</div></div><button class="gp-btn" data-ldel="${i}" type="button">Remove</button></div>`).join('') || '<div class="meta">Nothing attached yet.</div>'}</div>
-      <div style="display:flex;gap:6px;margin-top:6px;flex-wrap:wrap"><input id="bdLinkLabel" class="gp-map-search" type="text" placeholder="Label" maxlength="120" style="flex:1;min-width:120px"><input id="bdLinkUrl" class="gp-map-search" type="url" placeholder="https://…" maxlength="500" style="flex:2;min-width:160px"><button class="gp-btn" data-ladd type="button">Attach URL</button></div>
+      <div style="display:flex;gap:6px;margin-top:6px;flex-wrap:wrap"><input id="bdLinkLabel" class="gp-map-search" type="text" aria-label="Link label" placeholder="Label" maxlength="120" style="flex:1;min-width:120px"><input id="bdLinkUrl" class="gp-map-search" type="url" aria-label="Link URL" placeholder="https://…" maxlength="500" style="flex:2;min-width:160px"><button class="gp-btn" data-ladd type="button">Attach URL</button></div>
     </div>
     <div class="gp-dash-panel" style="margin-top:8px"><h3>Analyst notes</h3>
-      <textarea id="bdNotes" class="gp-map-search" rows="2" maxlength="2000" style="width:100%;resize:vertical" placeholder="Private working notes — stored on this device only.">${esc(draft.notes)}</textarea>
+      <textarea id="bdNotes" class="gp-map-search" aria-label="Private working notes" rows="2" maxlength="2000" style="width:100%;resize:vertical" placeholder="Private working notes — stored on this device only.">${esc(draft.notes)}</textarea>
       <div style="display:flex;gap:6px;margin-top:8px;flex-wrap:wrap"><button class="gp-btn" data-bdexport type="button">Export JSON</button><button class="gp-btn" data-draft-del type="button">Delete draft</button><span class="meta" id="bdSaved" style="align-self:center">${draft.updatedAt ? `Saved ${esc(formatRelativeTime(draft.updatedAt))}` : ''}</span></div>
     </div>`
     : '<div class="gp-state"><div class="gp-state-title">No drafts yet</div><div>Start a briefing draft to collect judgments and evidence.</div></div>';

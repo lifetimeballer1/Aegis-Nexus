@@ -139,7 +139,7 @@ export function renderIntelligenceBrain() {
     </div>
     <div style="font-size:12px;color:var(--text-secondary);margin-bottom:10px">The Brain connects news, conflicts, geographic signals, events, claims, assessments, markets and macro context when public evidence supports the relationship. Connections are contextual relevance, not proof of causation, coordination or intent.</div>
     <div class="gp-brain-controls" style="display:flex;gap:7px;flex-wrap:wrap;margin-bottom:10px">
-      <input id="gpBrainSearch" type="search" value="${escapeHtml(query)}" placeholder="Search the Brain…" style="flex:1;min-width:180px">
+      <input id="gpBrainSearch" type="search" aria-label="Search the Brain" value="${escapeHtml(query)}" placeholder="Search the Brain…" style="flex:1;min-width:180px">
       <select id="gpBrainKind" style="min-height:34px;border:1px solid var(--line);border-radius:9px;background:var(--bg-elevated);color:var(--text);padding:7px 9px">
         <option value="all" ${kindFilter==='all'?'selected':''}>All types</option>${kinds.map(k=>`<option value="${escapeHtml(k)}" ${kindFilter===k?'selected':''}>${escapeHtml(k)}</option>`).join('')}
       </select>
