@@ -16,6 +16,19 @@ SNAP = DATA / "snapshot.json"
 HIST = DATA / "history.json"
 SOURCES = DATA / "sources.json"
 
+# Collector politeness for the legacy snapshot path (mirrors news_feed_db.py).
+# GDELT answers bursts with HTTP 429; space GDELT requests and retry 429/5xx
+# with backoff instead of failing the source on the first miss.
+import threading as _threading
+import time as _time
+from urllib.error import HTTPError as _HTTPError, URLError as _URLError
+FETCH_RETRIES = 2
+RETRY_BACKOFF_SECONDS = (2.0, 8.0)
+RETRYABLE_HTTP = {429, 500, 502, 503, 504}
+GDELT_MIN_INTERVAL = 2.5
+_GDELT_LOCK = _threading.Lock()
+_GDELT_LAST = [0.0]
+
 FEEDS = [
     ("SOUTHCOM Official Reporting — GDELT Mirror", "https://api.gdeltproject.org/api/v2/doc/doc?query=domain%3Asouthcom.mil&mode=ArtList&format=rss&maxrecords=100&timespan=24h", "southcom"),
     ("Google News — SOUTHCOM", "https://news.google.com/rss/search?q=SOUTHCOM+US+Southern+Command+military+when%3A1d&hl=en-US&gl=US&ceid=US:en", "southcom-news"),
@@ -25,7 +38,7 @@ FEEDS = [
     ("Google News — U.S. Counter-Cartel Operations", "https://news.google.com/rss/search?q=US+military+cartels+narco-terrorism+Ecuador+Mexico+Caribbean+Eastern+Pacific+when%3A1d&hl=en-US&gl=US&ceid=US:en", "counter-cartel"),
     ("Google News — Los Choneros", "https://news.google.com/rss/search?q=%22Los+Choneros%22+Ecuador+US+military+when%3A1d&hl=en-US&gl=US&ceid=US:en", "cartel"),
     ("Google News — Sinaloa Cartel / CJNG", "https://news.google.com/rss/search?q=Sinaloa+Cartel+CJNG+US+military+Mexico+when%3A1d&hl=en-US&gl=US&ceid=US:en", "cartel"),
-    ("GDELT — Western Hemisphere Counter-Cartel", "https://api.gdeltproject.org/api/v2/doc/doc?query=(SOUTHCOM%20OR%20%22Southern%20Spear%22%20OR%20%22Joint%20Task%20Force%20Western%20Hemisphere%22%20OR%20cartel%20OR%20narco-terrorism%20OR%20Los%20Choneros%20OR%20CJNG%20OR%20Sinaloa)&mode=ArtList&format=rss&maxrecords=250&timespan=15m", "counter-cartel"),
+    ("GDELT — Western Hemisphere Counter-Cartel", "https://api.gdeltproject.org/api/v2/doc/doc?query=(SOUTHCOM%20OR%20%22Southern%20Spear%22%20OR%20%22Joint%20Task%20Force%20Western%20Hemisphere%22%20OR%20cartel%20OR%20narco-terrorism%20OR%20Los%20Choneros%20OR%20CJNG%20OR%20Sinaloa)&mode=ArtList&format=rss&maxrecords=100&timespan=30m", "counter-cartel"),
 
     ("GDACS Global Disaster Alerts", "https://www.gdacs.org/xml/rss.xml", "climate-hazard"),
     ("GDELT Climate & Disaster Watch", "https://api.gdeltproject.org/api/v2/doc/doc?query=(drought%20OR%20flood%20OR%20wildfire%20OR%20cyclone%20OR%20hurricane%20OR%20heatwave%20OR%20famine%20OR%20food%20insecurity%20OR%20epidemic%20OR%20outbreak)&mode=ArtList&format=rss&maxrecords=200&timespan=15m", "climate-hazard"),
@@ -51,7 +64,7 @@ FEEDS = [
     ("GDELT Live — Global Economics", "https://api.gdeltproject.org/api/v2/doc/doc?query=(oil%20OR%20inflation%20OR%20tariff%20OR%20trade%20OR%20interest%20rate%20OR%20central%20bank%20OR%20stocks%20OR%20bonds%20OR%20currency)&mode=ArtList&format=rss&maxrecords=200&timespan=15m", "economics"),
     ("NPR News", "https://feeds.npr.org/1001/rss.xml", "us-politics"),
 
-    ("GDELT Live — Global", "https://api.gdeltproject.org/api/v2/doc/doc?query=(war%20OR%20conflict%20OR%20military%20OR%20sanctions%20OR%20election%20OR%20crisis)&mode=ArtList&format=rss&maxrecords=250&timespan=15m", "live"),
+    ("GDELT Live — Global", "https://api.gdeltproject.org/api/v2/doc/doc?query=(war%20OR%20conflict%20OR%20military%20OR%20sanctions%20OR%20election%20OR%20crisis)&mode=ArtList&format=rss&maxrecords=100&timespan=30m", "live"),
     ("GDELT Live — Africa", "https://api.gdeltproject.org/api/v2/doc/doc?query=(africa%20OR%20sudan%20OR%20congo%20OR%20sahel%20OR%20nigeria%20OR%20somalia)&mode=ArtList&format=rss&maxrecords=150&timespan=15m", "africa"),
     ("GDELT Live — Americas", "https://api.gdeltproject.org/api/v2/doc/doc?query=(mexico%20OR%20colombia%20OR%20venezuela%20OR%20brazil%20OR%20haiti%20OR%20ecuador%20OR%20peru)&mode=ArtList&format=rss&maxrecords=150&timespan=15m", "americas"),
     ("GDELT Live — Middle East", "https://api.gdeltproject.org/api/v2/doc/doc?query=(gaza%20OR%20iran%20OR%20israel%20OR%20yemen%20OR%20syria%20OR%20iraq)&mode=ArtList&format=rss&maxrecords=150&timespan=15m", "middle-east"),
@@ -71,6 +84,9 @@ FEEDS = [
     ("Crisis Group", "https://www.crisisgroup.org/rss.xml", "analysis"),
     ("ReliefWeb", "https://reliefweb.int/updates/rss.xml", "humanitarian"),
 ]
+# The list above accumulated copy-pasted duplicates over time (NPR/Fox/CNN/Axios
+# blocks appear twice). Dedupe exactly so feed counts and health math stay honest.
+FEEDS = list(dict.fromkeys(FEEDS))
 
 CONFLICTS = [    ("western-hemisphere-cartel", "Western Hemisphere Counter-Cartel Campaign", "Western Hemisphere", "CRIMINAL CONFLICT", "HIGH", ["socom", "southcom", "southern command", "operation southern spear", "southern spear", "joint task force western hemisphere", "jtf-whem", "americas counter cartel coalition", "counter cartel", "narco-terrorism", "narco terrorist", "narco-terrorist", "cartel", "los choneros", "sinaloa cartel", "cjng"]),
 
@@ -114,10 +130,49 @@ MIL_RE = re.compile(r"missile|drone|troops|military|army|navy|air force|fighter|
 SEVERITY = [("critical", re.compile(r"invasion|mass casualty|massacre|major offensive|missile barrage|bombing campaign|blockade|airstrike|explosion|coup", re.I), 12), ("high", re.compile(r"strike|attack|killed|drone|missile|shelling|clash|raid|hostage|shooting", re.I), 8), ("medium", re.compile(r"troops|military|sanction|ceasefire|mobiliz|threat|warning", re.I), 4)]
 
 
-def fetch(url):
+def _polite_gdelt_wait():
+    with _GDELT_LOCK:
+        wait = GDELT_MIN_INTERVAL - (_time.monotonic() - _GDELT_LAST[0])
+        if wait > 0:
+            _time.sleep(wait)
+        _GDELT_LAST[0] = _time.monotonic()
+
+
+def _retry_after_seconds(exc, default):
+    try:
+        raw = exc.headers.get("Retry-After") if getattr(exc, "headers", None) else None
+        return max(0.0, min(60.0, float(raw))) if raw is not None else default
+    except Exception:
+        return default
+
+
+def fetch(url, timeout=25):
+    """Fetch a feed URL with GDELT spacing plus 429/5xx retry/backoff.
+
+    Raises the last error with the host + HTTP code in the message so the
+    per-feed error strings in main() triage without re-running the fetch.
+    """
+    host = urlparse(url).netloc or url
     req = Request(url, headers={"User-Agent": "GlobalPulse/7.0 (+https://github.com/lifetimeballer1/global-pulse)"})
-    with urlopen(req, timeout=25) as response:
-        return response.read()
+    last = None
+    for attempt in range(1 + FETCH_RETRIES):
+        if "api.gdeltproject.org" in url:
+            _polite_gdelt_wait()
+        try:
+            with urlopen(req, timeout=timeout) as response:
+                return response.read()
+        except _HTTPError as exc:
+            last = exc
+            code = int(exc.code or 0)
+            if code not in RETRYABLE_HTTP or attempt >= FETCH_RETRIES:
+                raise RuntimeError(f"{host} answered HTTP {code} (no retry left): {exc.reason if hasattr(exc, 'reason') else exc}") from exc
+            _time.sleep(_retry_after_seconds(exc, RETRY_BACKOFF_SECONDS[min(attempt, len(RETRY_BACKOFF_SECONDS) - 1)]))
+        except (_URLError, TimeoutError, ConnectionError, OSError) as exc:
+            last = exc
+            if attempt >= FETCH_RETRIES:
+                raise RuntimeError(f"{host} unreachable after retries: {type(exc).__name__}: {exc}") from exc
+            _time.sleep(RETRY_BACKOFF_SECONDS[min(attempt, len(RETRY_BACKOFF_SECONDS) - 1)])
+    raise RuntimeError(f"{host} fetch retries exhausted: {last}")
 
 
 def clean(value):
@@ -244,7 +299,7 @@ def main():
                 if not title or not link: continue
                 stories.append({"id": hashlib.sha1(link.encode()).hexdigest()[:12], "sourceLabel": label, "sourceType": kind, "title": title[:240], "summary": summary[:420], "source": link, "time": pub, "tag": "Breaking" if is_breaking(title, summary) else "World", "confidence": "DEVELOPING", "breaking": is_breaking(title, summary)})
         except Exception as exc:
-            errors.append(f"{label}: {type(exc).__name__}")
+            errors.append(f"{label}: {type(exc).__name__}: {exc}"[:220])
     unique, seen = [], set()
     for story in stories:
         if story["id"] not in seen:
