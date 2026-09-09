@@ -428,3 +428,14 @@
   .gp-map-ops-list{max-height:240px}
   .gp-map-ops-bar .gp-map-search{min-width:0}
 }
+
+/* Polish grind 6 — KPI strip: tabular numerals + sparklines everywhere they belong.
+   Point-in-time counts (status KPIs, market cards) stay spark-free honestly;
+   history-backed KPIs keep real-data sparklines with labels. */
+.cc-kpi .v{font-variant-numeric:tabular-nums}
+.cc-kpi .d{font-variant-numeric:tabular-nums}
+.cc-mkt-card .p,.cc-mkt-card .c{font-variant-numeric:tabular-nums}
+.cc-wc b{font-variant-numeric:tabular-nums}
+.cc-table td{font-variant-numeric:tabular-nums}
+.gp-kpi-value{font-variant-numeric:tabular-nums}
+.cc-kpi svg[role="img"]{pointer-events:none}

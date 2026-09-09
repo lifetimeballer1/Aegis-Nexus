@@ -47,7 +47,8 @@ function sevFor(kind) {
 }
 const SEV_LEVELS = ['info', 'watch', 'critical', 'healthy'];
 function kpi(value, label, sub, tone, sparkVals, sparkColor) {
-  return `<div class="cc-kpi t-${tone}"><div class="v">${value}</div><div class="l">${esc(label)}${sub ? ` <span style="font-weight:400;color:var(--muted-2)">· ${esc(sub)}</span>` : ''}</div>${sparklineSVG(sparkVals, { stroke: sparkColor })}</div>`;
+  const spark = sparklineSVG(sparkVals, { stroke: sparkColor, id: label });
+  return `<div class="cc-kpi t-${tone}" role="listitem" aria-label="${esc(label)}: ${esc(String(value).replace(/<[^>]*>/g, ''))}${sub ? `, ${esc(sub)}` : ''}"><div class="v gp-nums">${value}</div><div class="l">${esc(label)}${sub ? ` <span style="font-weight:400;color:var(--muted-2)">· ${esc(sub)}</span>` : ''}</div>${spark}</div>`;
 }
 function donut(online, degraded, failed) {
   const t = (Number(online) || 0) + (Number(degraded) || 0) + (Number(failed) || 0);
@@ -142,7 +143,7 @@ export function renderDashboard() {
     const price = typeof m.price === 'number' ? m.price.toLocaleString(undefined, { maximumFractionDigits: 2 }) : String(m.price ?? m.last ?? '—');
     const pct = Number(m.changePercent ?? m.changePct);
     const up = Number.isFinite(pct) ? pct >= 0 : null;
-    return `<div class="cc-mkt-card"><div class="n">${esc(String(name).slice(0, 18))}</div><div class="p">${esc(price)}</div><div class="c" style="color:${up == null ? 'var(--muted)' : up ? 'var(--green)' : 'var(--red)'}">${up == null ? '—' : `${up ? '↑' : '↓'} ${Math.abs(pct).toFixed(2)}%`}</div></div>`;
+    return `<div class="cc-mkt-card"><div class="n">${esc(String(name).slice(0, 18))}</div><div class="p gp-nums">${esc(price)}</div><div class="c gp-nums" style="color:${up == null ? 'var(--muted)' : up ? 'var(--green)' : 'var(--red)'}">${up == null ? '—' : `${up ? '↑' : '↓'} ${Math.abs(pct).toFixed(2)}%`}</div></div>`;
   }).join('') || '<div class="gp-state"><div class="gp-state-title">Market data unavailable</div></div>';
 
   const degradedCount = Math.max(0, total - online - failed);
