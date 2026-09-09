@@ -5,7 +5,7 @@ from pathlib import Path
 
 from playwright.sync_api import sync_playwright
 
-BASE = os.environ.get('SMOKE_BASE_URL', 'http://127.0.0.1:4173')
+BASE = os.environ.get('SMOKE_BASE_URL', 'http://127.0.0.1:4173/Aegis-Nexus').rstrip('/')
 OUTPUT = Path(os.environ.get('SMOKE_OUTPUT_DIR', 'artifacts/intelligence-web'))
 
 

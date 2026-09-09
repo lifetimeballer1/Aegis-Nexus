@@ -7,6 +7,7 @@
  * loading/empty states. Severity follows the shared language. */
 import { getState } from '../core/state.js';
 import { formatRelativeTime, escapeHtml } from '../core/utils.js';
+import { confidenceSeverity, watchLevelSeverity } from '../core/severity.js';
 
 let categoryFilter = 'all';
 let showAllDevelopments = false;
@@ -18,19 +19,7 @@ function esc(value) {
 }
 
 function developmentSeverity(dev) {
-  if (dev.breaking) return 'critical';
-  const raw = String(dev.confidence || '').toLowerCase();
-  if (raw.includes('high') || raw === 'confirmed') return 'critical';
-  if (raw.includes('mod') || raw === 'likely') return 'high';
-  if (raw.includes('low') || raw === 'limited') return 'medium';
-  return 'low';
-}
-
-function watchSeverity(level) {
-  const raw = String(level || '').toUpperCase();
-  if (raw === 'CRITICAL') return 'critical';
-  if (raw === 'HIGH' || raw === 'ELEVATED' || raw === 'WATCH') return 'watch';
-  return 'info';
+  return dev.breaking ? 'critical' : confidenceSeverity(dev.confidence);
 }
 
 function deltaArrow(delta) {
@@ -75,7 +64,7 @@ export function renderBriefings() {
 
   const pins = loadPins();
   const watchRows = watchlist.slice(0, 10).map(w => {
-    const sev = watchSeverity(w.level);
+    const sev = watchLevelSeverity(w.level);
     const pinned = pins.includes(w.entity);
     const factors = Array.isArray(w.topFactors) ? w.topFactors.slice(0, 3).map(f => `${f.label || ''}${f.delta !== undefined && f.delta !== null ? ` (${Number(f.delta) > 0 ? '+' : ''}${f.delta})` : ''}`) : [];
     return `<div class="gp-brief-watch sev-${sev}"><div class="grow"><div class="title">${esc(w.entity || 'Unnamed entity')}</div>`

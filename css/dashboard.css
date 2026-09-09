@@ -1,14 +1,5 @@
-/* Aegis Nexus — GUI Phase 1: Command Center Dashboard
-   Shared severity language (never decorative):
-   blue = informational/selected · amber = elevated/watch ·
-   red = critical/failure · green = healthy/validated */
-
-:root {
-  --sev-info: var(--blue);
-  --sev-watch: var(--amber);
-  --sev-critical: var(--red);
-  --sev-healthy: var(--green);
-}
+/* Aegis Nexus — Command Center and workspace components.
+   Shared severity tokens live in css/tokens.css. */
 
 /* Command bar */
 .gp-header .gp-brand{flex-shrink:0}
@@ -84,9 +75,10 @@
 /* GUI Phase 2 — Alerts & Timeline (Concept 05 theme) */
 .gp-sev{display:inline-flex;align-items:center;gap:4px;padding:2px 7px;border-radius:999px;font-size:10px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;border:1px solid transparent;white-space:nowrap}
 .gp-sev-critical{background:rgba(255,102,120,.12);color:var(--sev-critical);border-color:rgba(255,102,120,.3)}
-.gp-sev-high{background:rgba(255,200,87,.12);color:var(--sev-watch);border-color:rgba(255,200,87,.3)}
-.gp-sev-medium{background:rgba(98,160,255,.12);color:var(--sev-info);border-color:rgba(98,160,255,.3)}
+.gp-sev-high,.gp-sev-watch{background:rgba(255,200,87,.12);color:var(--sev-watch);border-color:rgba(255,200,87,.3)}
+.gp-sev-medium,.gp-sev-info{background:rgba(98,160,255,.12);color:var(--sev-info);border-color:rgba(98,160,255,.3)}
 .gp-sev-low{background:rgba(145,164,184,.12);color:var(--muted);border-color:var(--line-strong)}
+.gp-sev-healthy{background:rgba(72,223,131,.12);color:var(--sev-healthy);border-color:rgba(72,223,131,.3)}
 .gp-filter-row{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
 .gp-filter{border:1px solid var(--line);background:var(--panel2);color:var(--text-secondary);border-radius:999px;padding:6px 12px;font-size:11px;font-weight:700;cursor:pointer}
 .gp-filter.active{color:var(--sev-info);border-color:var(--sev-info)}

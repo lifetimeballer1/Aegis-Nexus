@@ -43,6 +43,36 @@
   --conf-unver: #ff6678;
   --conf-conflict: #aa8df7;
 
+  /* Shared severity semantics — colors communicate state, never decoration. */
+  --sev-info: var(--blue);
+  --sev-watch: var(--amber);
+  --sev-critical: var(--red);
+  --sev-healthy: var(--green);
+
+  /* Compatibility aliases for retained global_pulse_* modules. */
+  --gp-space-1: 4px;
+  --gp-space-2: 8px;
+  --gp-space-3: 12px;
+  --gp-space-4: 16px;
+  --gp-space-5: 20px;
+  --gp-type-xs: 9px;
+  --gp-type-sm: 11px;
+  --gp-type-md: 14px;
+  --gp-type-lg: 18px;
+  --gp-type-xl: 32px;
+  --gp-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --gp-border: var(--line);
+  --gp-panel: var(--panel);
+  --gp-panel-alt: var(--panel-2);
+  --gp-text: var(--text);
+  --gp-muted: var(--muted);
+  --gp-conflict: var(--red);
+  --gp-energy: var(--orange);
+  --gp-economic: var(--amber);
+  --gp-strategic: var(--blue);
+  --gp-political: var(--purple);
+  --gp-resource: var(--green);
+
   /* Spacing & radii */
   --radius-sm: 6px;
   --radius: 10px;

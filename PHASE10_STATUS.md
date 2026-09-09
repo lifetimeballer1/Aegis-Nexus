@@ -1,6 +1,13 @@
 # Phase 10 — Production polish and final intelligence quality
 
-Local acceptance completed September 8, 2026, against base `56ccd105c2c5401de8b561f26eb324a2230a522c`. Production acceptance completed September 9, 2026: commit `1981de3` (duplicate-evidence folding) passed the scheduled production refresh (#656), browser smoke tests, and Pages deployment. GUI Phases 1-9 and Map M1-M4 are complete; GUI-10 consolidation (shared severity, token alias) in progress.
+Local acceptance completed September 8, 2026, against base `56ccd105c2c5401de8b561f26eb324a2230a522c`. Production acceptance completed September 9, 2026: commit `1981de3` (duplicate-evidence folding) passed the scheduled production refresh (#656), browser smoke tests, and Pages deployment. GUI Phases 1-9 and Map M1-M4 are complete. GUI-10 consolidation is locally complete; production acceptance remains pending until the change is pushed and passes the scheduled refresh, browser smoke tests, and Pages deployment.
+
+## GUI-10 local acceptance
+
+- `css/tokens.css` is the single owner of shared severity semantics and retained `global_pulse_*` compatibility aliases; the dashboard and Intelligence Web consume those canonical tokens.
+- Repeated confidence, escalation, and watch-level presentation mappings are centralized in `js/core/severity.js`. Status chips now cover healthy, watch, and informational states with the shared semantic colors.
+- The below-fold Intelligence Web remains lazy. Static performance validation rejects both eager HTML attributes and JavaScript that switches the iframe to eager loading.
+- Local verification passed 123 Python tests, 7 JavaScript filter tests, repository/performance/security validators, desktop and mobile dashboard smoke tests, and desktop/mobile WebGL render and control tests under `/Aegis-Nexus/` (100 nodes / 474 links).
 
 ## Repairs
 

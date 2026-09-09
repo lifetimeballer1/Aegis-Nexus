@@ -20,7 +20,14 @@ def main():
 
     assert 'class="gp-intelweb-frame"' in index
     assert 'loading="lazy"' in index, "Intelligence Web iframe must not eagerly load on mobile"
-    assert 'loading="eager"' not in index, "No below-fold iframe may use eager loading"
+    eager_patterns = (
+        r"loading\s*=\s*['\"]eager['\"]",
+        r"\.loading\s*=\s*['\"]eager['\"]",
+        r"setAttribute\(\s*['\"]loading['\"]\s*,\s*['\"]eager['\"]",
+    )
+    assert not any(re.search(pattern, index, re.I) for pattern in eager_patterns), (
+        "No below-fold iframe may be switched to eager loading"
+    )
     assert "global_pulse_performance.js" in index
     # CSSOM style properties are exposed in JavaScript as camelCase. Accept
     # either spelling so the gate verifies the real implementation instead of

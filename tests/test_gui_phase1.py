@@ -30,14 +30,14 @@ def test_dashboard_binds_real_artifact_fields_not_placeholders():
 
 def test_dashboard_uses_shared_severity_language():
     module = (ROOT / 'js/modules/dashboard.js').read_text(encoding='utf-8')
+    tokens = (ROOT / 'css/tokens.css').read_text(encoding='utf-8')
     css = (ROOT / 'css/dashboard.css').read_text(encoding='utf-8')
     for token in ('sev-info', 'sev-watch', 'sev-critical', 'sev-healthy'):
-        assert token in css, f'stylesheet missing {token}'
+        assert f'--{token}:' in tokens, f'canonical tokens missing {token}'
+        assert f'var(--{token})' in css, f'dashboard never consumes {token}'
     assert 'sev-' in module, 'module never applies severity classes'
     for level in ("'info'", "'watch'", "'critical'", "'healthy'"):
         assert level in module, f'module never selects severity {level}'
-    assert '--sev-info' in css and '--sev-watch' in css
-    assert '--sev-critical' in css and '--sev-healthy' in css
     assert '@media' in css
 
 

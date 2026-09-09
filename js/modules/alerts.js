@@ -4,6 +4,7 @@
  * Nothing is fabricated; an empty queue states so honestly. */
 import { getState } from '../core/state.js';
 import { formatRelativeTime, escapeHtml } from '../core/utils.js';
+import { confidenceSeverity, escalationSeverity } from '../core/severity.js';
 import { addSupportingToDraft } from './briefings.js';
 
 let levelFilter = 'all';
@@ -30,19 +31,11 @@ const LEVELS = ['critical', 'high', 'medium', 'low'];
 const LEVEL_LABEL = { critical: 'Critical', high: 'High', medium: 'Medium', low: 'Low' };
 
 function conflictSeverity(conflict) {
-  const raw = String(conflict.escalation || '').toUpperCase();
-  if (raw === 'CRITICAL') return 'critical';
-  if (raw === 'HIGH') return 'high';
-  if (raw === 'MODERATE') return 'medium';
-  return 'low';
+  return escalationSeverity(conflict.escalation);
 }
 
 function eventSeverity(event) {
-  const raw = String(event.confidence || '').toLowerCase();
-  if (raw.includes('high') || raw === 'confirmed') return 'critical';
-  if (raw.includes('mod') || raw === 'likely') return 'high';
-  if (raw.includes('low') || raw === 'limited') return 'medium';
-  return 'low';
+  return confidenceSeverity(event.confidence);
 }
 
 function esc(value) {

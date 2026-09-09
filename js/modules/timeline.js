@@ -5,6 +5,7 @@
  * Nothing is fabricated. */
 import { getState } from '../core/state.js';
 import { formatRelativeTime, escapeHtml } from '../core/utils.js';
+import { confidenceSeverity } from '../core/severity.js';
 
 let periodHours = 24;
 let userPicked = false;
@@ -19,13 +20,6 @@ function esc(value) {
   return escapeHtml(String(value ?? ''));
 }
 
-function dotSeverity(confidence) {
-  const raw = String(confidence || '').toLowerCase();
-  if (raw.includes('high') || raw === 'confirmed') return 'critical';
-  if (raw.includes('mod') || raw === 'likely') return 'high';
-  if (raw.includes('low') || raw === 'limited') return 'medium';
-  return 'low';
-}
 
 function parseTime(value) {
   if (!value) return null;
@@ -109,7 +103,7 @@ export function renderTimeline() {
     const day = dayLabel(p.at);
     const header = day !== lastDay ? `<div class="gp-tl-meta" style="margin:4px 0 6px;font-weight:700">${esc(day)}</div>` : '';
     lastDay = day;
-    const sev = dotSeverity(p.confidence);
+    const sev = confidenceSeverity(p.confidence);
     const meta = [`${p.reports ?? '—'} reports`, `${p.sources ?? '—'} sources`, p.confidence ? `${p.confidence} confidence` : 'confidence ungraded', formatRelativeTime(p.at.toISOString())].join(' · ');
     return `${header}<li class="gp-tl-item"><button data-tl-select="${idx}" type="button" aria-pressed="${selectedIdx === idx}" style="all:unset;cursor:pointer;display:block;width:100%;box-sizing:border-box"><span class="gp-tl-dot sev-${sev}"></span>`
       + `<div class="gp-tl-time">${esc(p.at.toISOString().slice(11, 16))} UTC · <span class="gp-sev gp-sev-${sev}" style="font-size:9px;padding:1px 6px">${sevName[sev] || sev}</span></div>`
