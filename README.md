@@ -51,7 +51,9 @@ The current production contract permits **up to 35 major nodes**. Raw evidence r
 The canonical pipeline includes:
 
 - live RSS/Atom news collection with persistent SQLite storage
+- feed registry rebuild from the canonical catalog
 - source health and fallback processing
+- failover-state refresh from collector telemetry (retention-based; no stories merged)
 - conflict corroboration from UCDP/CFR/public reporting
 - OSINT and geographic layers
 - GDACS disaster alerts and USGS earthquakes
@@ -64,6 +66,8 @@ The canonical pipeline includes:
 - evidence-linked Intelligence Web generation
 - compact Intelligence Brain generation and validation
 - canonical map marker generation
+- structured validation-results recording
+- pipeline run-history recording
 - refresh manifest/hash verification
 
 A failure in an optional external source is handled through source-health/failover logic rather than automatically destroying the entire dataset. Internal validation failures remain fail-closed so partially processed artifacts are not silently published.
@@ -74,19 +78,21 @@ Core generated files include:
 
 - `data/snapshot.json` — primary dashboard state
 - `data/history.json` — historical state
-- `data/sources.json` — source registry
+- `data/sources.json` — source registry (rebuilt every refresh from the canonical catalog)
 - `data/live_articles.json` — normalized live-news export
 - `data/live_status.json` — source health/collector telemetry
 - `data/intelligence_graph.json` — canonical evidence-linked Intelligence Web graph
 - `data/intelligence_brain.json` — compact cross-domain Brain
 - `data/map_points.json` — validated browser map feed
-- `data/refresh_manifest.json` — generation metadata and hashes
+- `data/validation_results.json` — per-contract validation outcomes with evidence tails
+- `data/pipeline_history.json` — recent refresh run records (trigger, duration, status)
+- `data/refresh_manifest.json` — generation metadata and hashes (covers the pipeline-written feed, graph, Brain, map, health, and registry artifacts)
 
 Additional event, assessment, claim, market-impact, trend, regional, and OSINT artifacts are produced by the pipeline.
 
 ## Map
 
-The canonical map is implemented in `js/modules/map.js` with Leaflet and OpenStreetMap tiles. It consumes the generated `data/map_points.json` feed and supports conflict, hazard, strategic, cartel/organized-crime and OSINT layers, clustering, filters, search, marker details, reset/fit controls, source links, and Brain relationship lines.
+The canonical map is implemented in `js/modules/map.js` with Leaflet on a dark Esri canvas basemap (OpenStreetMap fallback). It consumes the generated `data/map_points.json` feed and supports conflict, hazard, strategic, cartel/organized-crime and OSINT layers, clustering, filters, search, marker details, reset/fit controls, source links, and Brain relationship lines.
 
 The pipeline validates geographic coordinates before publication, and the browser filters malformed coordinates defensively before creating markers.
 
@@ -104,6 +110,20 @@ The main dashboard exposes:
 - source/system health
 
 Displayed data is sourced from the canonical generated artifacts. Loading, empty, stale, and error states are explicit rather than replaced with fabricated values.
+
+## Analyst workspace
+
+Beyond the read-only intelligence picture, the browser offers device-local analyst tools. Everything in this section stores data only in the visitor's own browser (localStorage) or exports a local file. There are no accounts, no team backends, no delivery integrations, and no generated content:
+
+- alert queue with severity filters, evidence expansion, and acknowledgement (with an acknowledgement status table)
+- event timeline with 24H/7D/30D/ALL presets plus a custom date range
+- briefing drafts: title/type/classification/priority, executive summary, key judgments, supporting content (alert links and pasted source URLs only), analyst notes, and JSON export
+- universal search across stories, conflicts, events, Brain, Web, map, and brief records (`Ctrl+K` or `/` jumps to it)
+- saved views: named snapshots of alert/timeline/brief filters, applied back through each module's own renderer
+- My Watchlist: pinned entities resolved against the current pipeline brief watchlist, with JSON export
+- settings: auto-refresh cadence, per-store device-data clearing, and build/about facts from canonical state
+
+Drafts, pins, acknowledgements, and views are the analyst's own work product. The application never generates assessments on their behalf.
 
 ## Refresh and deployment
 
@@ -129,6 +149,7 @@ Important repository gates include:
 - performance/mobile invariants
 - operational health
 - generated-artifact/hash verification
+- structured per-contract validation results (`data/validation_results.json`) and run history (`data/pipeline_history.json`), both rendered in Sources / Validation / System Health
 
 A green syntax/build check alone is not considered proof that the intelligence system is healthy.
 
@@ -181,7 +202,7 @@ The refresh requires network access to its public sources and currently targets 
 Run the regression suite with:
 
 ```bash
-python -m pytest -q tests/test_regressions.py
+python -m pytest -q
 ```
 
 Useful validation commands include:
@@ -193,6 +214,7 @@ python validate_performance.py
 python validate_operational_health.py
 python validate_security.py
 python validate_repository.py
+node --test tests/intelligence_web_filters.test.cjs
 ```
 
 ## Production limitations
