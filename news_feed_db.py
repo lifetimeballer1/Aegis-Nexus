@@ -125,7 +125,7 @@ def export_json(conn,limit=EXPORT_LIMIT):
   except Exception:credit={'raw':r[9]}
   articles.append({'url':r[0],'title':r[1],'published_date':r[2],'summary_snippet':r[3],'source':r[4],'sourceType':r[5],'category':r[6],'author':r[7],'username':r[8],'credit':credit})
  return json.dumps({'updatedAt':iso_now(),'retentionDays':RETENTION_DAYS,'count':len(articles),'exportLimit':EXPORT_LIMIT,'articles':articles},ensure_ascii=False,indent=2)+'\n'
-def write_export(conn):DATA.mkdir(exist_ok=True);JSON_PATH.write_text(export_json(conn),encoding='utf-8')
+def write_export(conn):DATA.mkdir(exist_ok=True);JSON_PATH.write_text(export_json(conn),encoding='utf-8',newline='\n')
 def restore_published_articles(conn):
  """Recover retained source records after a cache miss, not current feed health."""
  if conn.execute('SELECT COUNT(*) FROM articles').fetchone()[0] or not JSON_PATH.exists():
@@ -160,7 +160,7 @@ def run_cycle(conn):
     result={'sourceId':source_id,'name':meta['name'],'type':meta.get('type','news'),'category':meta.get('category','general'),'coverage':meta.get('coverage',[]),'rowsFetched':0,'httpOk':False,'mode':'failed','emptyFeed':False,'error':f'{type(exc).__name__}: {exc}'[:240]};source_results.append(result);errors.append({'source':meta['name'],'error':result['error']})
  purged=purge_old(conn);added=upsert_articles(conn,fetched_rows);write_export(conn);count=conn.execute('SELECT COUNT(*) FROM articles').fetchone()[0];healthy=sum(1 for x in source_results if x['httpOk']);empty=sum(1 for x in source_results if x['httpOk'] and x['emptyFeed']);fallback=sum(1 for x in source_results if x['mode']=='gdelt-domain-fallback');total=len(source_results)
  status={'updatedAt':iso_now(),'feedsChecked':total,'rowsFetched':len(fetched_rows),'newArticles':added,'purged':purged,'databaseArticles':count,'exportedArticles':min(count,EXPORT_LIMIT),'exportLimit':EXPORT_LIMIT,'healthySources':healthy,'emptySources':empty,'fallbackSources':fallback,'failedSources':errors,'sourceResults':source_results,'pollSeconds':POLL_SECONDS,'retentionDays':RETENTION_DAYS,'fetchTimeoutSeconds':FETCH_TIMEOUT}
- STATUS_PATH.write_text(json.dumps(status,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');return status
+ STATUS_PATH.write_text(json.dumps(status,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n');return status
 def main():
  parser=argparse.ArgumentParser();parser.add_argument('--once',action='store_true');args=parser.parse_args();DATA.mkdir(exist_ok=True);conn=sqlite3.connect(DB_PATH)
  try:
