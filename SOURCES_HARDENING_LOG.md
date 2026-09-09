@@ -33,7 +33,14 @@ Rule: commit ONLY scoped code files, never push. Pattern: `fix(sources): <batch>
       is the single source of truth.
       Verified: catalog shape (50 feeds, no dup names), each changed URL live,
       source-health PASS, resilience PASS, pipeline PASS, repo PASS, pytest 123.
-- [ ] Batch 3 — quarantine mapping + fallbacks (source_failover.py,
-      build_source_health.py): documented quarantine table, X-proxy note.
+- [x] Batch 3 — quarantine mapping + fallbacks (source_failover.py,
+      build_source_health.py): QUARANTINE table (France24→RFI replaced; 5 X
+      proxies unavailable-documented; NPR/GDELT retry-covered, not quarantined);
+      CURRENT_FALLBACKS keyed to live failing GDELT-mirror names so fallback
+      discovery actually triggers; quarantine doc entries appended to
+      replacements[] with shapes preserved; health telemetry gains additive
+      quarantined/quarantineNote flags (thresholds untouched).
+      Verified: all 8 published failures covered (6 docs + 2 fallback paths),
+      source-health PASS, resilience PASS, pytest 123 passed.
 - [ ] Batch 4 — manifest freshness + source-health thresholds review.
 - [ ] Final — full validator sweep (12/12), pytest, diff check, report.
