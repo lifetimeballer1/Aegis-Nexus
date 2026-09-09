@@ -47,7 +47,7 @@ export function renderViews() {
 
   el.innerHTML = `<div class="gp-dash-panel"><h3>📌 Saved Views <span style="font-weight:400;color:var(--muted);font-size:10px">filter snapshots · this device only</span></h3>`
     + (rows ? `<div class="gp-dash-list">${rows}</div>` : '<div class="meta">No saved views yet — set filters anywhere, then save them here.</div>')
-    + `<div style="display:flex;gap:6px;margin-top:8px"><input id="viewName" class="gp-map-search" type="text" placeholder="Name this view…" maxlength="60" style="flex:1">`
+    + `<div style="display:flex;gap:6px;margin-top:8px"><input id="viewName" class="gp-map-search" type="text" aria-label="Name this view" placeholder="Name this view…" maxlength="60" style="flex:1">`
     + `<button class="gp-btn" data-view-save type="button">Save current filters</button></div></div>`;
 
   el.querySelector('[data-view-save]')?.addEventListener('click', () => {
