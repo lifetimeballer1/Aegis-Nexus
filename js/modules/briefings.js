@@ -85,16 +85,16 @@ export function renderBriefings() {
     `<div class="gp-brief-watch sev-info"><div class="grow"><div class="title">${i + 1}. ${esc(d.title || 'Untitled development')}</div>`
     + `<div class="meta">${d.reportCount ?? '—'} reports · ${d.independentSourceCount ?? '—'} independent sources · confidence ${esc(d.confidence || 'ungraded')}</div></div></div>`).join('');
 
-  el.innerHTML = `<div class="gp-brief-head"><div class="gp-brief-title">${esc(brief.headline?.title || 'Global Intelligence Brief')}</div>`
+  el.innerHTML = `<div class="gp-brief-head gp-card"><div class="gp-micro-label">Daily digest · ${esc(brief.headline?.title ? 'staff brief' : 'intelligence brief')}</div><div class="gp-brief-title">${esc(brief.headline?.title || 'Global Intelligence Brief')}</div>`
     + `<div class="meta">${esc(brief.headline?.description || '')}</div>`
-    + `<div class="meta">Snapshot ${esc(formatRelativeTime(freshness.snapshotUpdatedAt))} · events ${esc(formatRelativeTime(freshness.eventsUpdatedAt))} · assessments ${esc(formatRelativeTime(freshness.assessmentsUpdatedAt))}</div></div>`
-    + (judgments ? `<h3 class="gp-brief-h">Key Judgments</h3>${judgments}` : '')
-    + `<h3 class="gp-brief-h">Top developments</h3>`
+    + `<div class="meta gp-nums">Snapshot ${esc(formatRelativeTime(freshness.snapshotUpdatedAt))} · events ${esc(formatRelativeTime(freshness.eventsUpdatedAt))} · assessments ${esc(formatRelativeTime(freshness.assessmentsUpdatedAt))}</div></div>`
+    + (judgments ? `<h3 class="gp-brief-h gp-micro-label">Key Judgments · ${developments.slice(0, 3).length}</h3><div role="list" aria-label="Key judgments">${judgments}</div>` : '')
+    + `<h3 class="gp-brief-h gp-micro-label">Top developments · ${visible.length}</h3>`
     + `<div class="gp-filter-row" role="group" aria-label="Filter developments by category">${chips}`
     + `<span class="meta" style="align-self:center;font-size:10px;color:var(--muted-2)">Showing ${shown.length} of ${visible.length} developments</span></div>`
     + (devRows || '<div class="gp-state"><div class="gp-state-title">No developments match</div><div>Nothing in the current brief matches this category.</div></div>')
     + (visible.length > DEV_PAGE ? `<button id="briefMore" class="gp-btn gp-more" type="button">${showAllDevelopments ? 'Show fewer' : `Show all ${visible.length}`}</button>` : '')
-    + `<h3 class="gp-brief-h">Watchlist</h3>`
+    + `<h3 class="gp-brief-h gp-micro-label">Watchlist · ${watchlist.length}</h3>`
     + (watchRows || '<div class="gp-state"><div class="gp-state-title">Watchlist empty</div><div>No attention indicators in the current brief.</div></div>')
     + `<div class="gp-dash-panel" style="margin-top:8px"><h3>My Watchlist <span style="font-weight:400;color:var(--muted);font-size:10px">${pins.length} pinned · this device only</span></h3>`
     + (myRows ? `<div class="gp-dash-list">${myRows}</div><div style="margin-top:8px"><button class="gp-btn" data-watch-export type="button">Export watchlist JSON</button></div>` : '<div class="meta">Nothing pinned yet — pin entities from the pipeline watchlist above.</div>') + `</div>`
