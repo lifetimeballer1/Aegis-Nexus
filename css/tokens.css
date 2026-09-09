@@ -20,7 +20,10 @@
   --text: #eef5ff;
   --text-secondary: #c5d4e6;
   --muted: #91a4b8;
-  --muted-2: #6b7f94;
+  /* Contrast audit 2026-09-09: --muted-2 raised from #6b7f94 to #8499ae so
+     10px micro-labels hold >= 4.5:1 on --bg/--panel. Do not darken without
+     re-checking micro-label contrast. */
+  --muted-2: #8499ae;
 
   /* Accent colors */
   --blue: #62a0ff;
@@ -127,4 +130,16 @@ body {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: var(--muted-2);
+}
+
+/* Reduced-motion audit 2026-09-09: kill all non-essential animation under
+   prefers-reduced-motion (spinners, transitions, smooth scroll). Severity
+   color is never motion-dependent, so meaning survives the cut. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
