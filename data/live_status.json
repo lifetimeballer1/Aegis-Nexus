@@ -1,23 +1,23 @@
 {
-  "updatedAt": "2026-09-08T23:29:00.106881+00:00",
+  "updatedAt": "2026-09-09T00:24:46.475674+00:00",
   "feedsChecked": 65,
-  "rowsFetched": 831,
-  "newArticles": 74,
+  "rowsFetched": 842,
+  "newArticles": 85,
   "purged": 51,
-  "databaseArticles": 2021,
+  "databaseArticles": 2055,
   "exportedArticles": 2000,
   "exportLimit": 2000,
   "healthySources": 57,
-  "emptySources": 8,
+  "emptySources": 7,
   "fallbackSources": 0,
   "failedSources": [
     {
       "source": "SOUTHCOM Official Reporting — GDELT Mirror",
-      "error": "HTTPError: HTTP Error 429: Too Many Requests"
+      "error": "URLError: <urlopen error _ssl.c:993: The handshake operation timed out>"
     },
     {
       "source": "GDELT — Western Hemisphere Counter-Cartel",
-      "error": "HTTPError: HTTP Error 429: Too Many Requests"
+      "error": "URLError: <urlopen error _ssl.c:993: The handshake operation timed out>"
     },
     {
       "source": "CNN",
@@ -235,7 +235,7 @@
       "httpOk": false,
       "mode": "failed",
       "emptyFeed": false,
-      "error": "HTTPError: HTTP Error 429: Too Many Requests"
+      "error": "URLError: <urlopen error _ssl.c:993: The handshake operation timed out>"
     },
     {
       "sourceId": "google_news_southcom",
@@ -279,7 +279,7 @@
       "type": "counter-cartel",
       "category": "counter-cartel",
       "coverage": [],
-      "rowsFetched": 5,
+      "rowsFetched": 6,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -303,7 +303,7 @@
       "type": "cartel",
       "category": "cartel",
       "coverage": [],
-      "rowsFetched": 19,
+      "rowsFetched": 18,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -331,7 +331,7 @@
       "httpOk": false,
       "mode": "failed",
       "emptyFeed": false,
-      "error": "HTTPError: HTTP Error 429: Too Many Requests"
+      "error": "URLError: <urlopen error _ssl.c:993: The handshake operation timed out>"
     },
     {
       "sourceId": "google_news_climate_disaster",
@@ -363,7 +363,7 @@
       "type": "humanitarian",
       "category": "humanitarian",
       "coverage": [],
-      "rowsFetched": 7,
+      "rowsFetched": 6,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -375,7 +375,7 @@
       "type": "us-politics",
       "category": "us-politics",
       "coverage": [],
-      "rowsFetched": 23,
+      "rowsFetched": 25,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -387,7 +387,7 @@
       "type": "us-politics",
       "category": "us-politics",
       "coverage": [],
-      "rowsFetched": 5,
+      "rowsFetched": 7,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -435,7 +435,7 @@
       "type": "economics",
       "category": "economics",
       "coverage": [],
-      "rowsFetched": 23,
+      "rowsFetched": 24,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -447,10 +447,10 @@
       "type": "live",
       "category": "live",
       "coverage": [],
-      "rowsFetched": 0,
+      "rowsFetched": 1,
       "httpOk": true,
-      "mode": "online-empty",
-      "emptyFeed": true,
+      "mode": "native",
+      "emptyFeed": false,
       "error": ""
     },
     {
@@ -471,7 +471,7 @@
       "type": "africa-conflict",
       "category": "africa-conflict",
       "coverage": [],
-      "rowsFetched": 3,
+      "rowsFetched": 2,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -555,7 +555,7 @@
       "type": "asia-conflict",
       "category": "asia-conflict",
       "coverage": [],
-      "rowsFetched": 2,
+      "rowsFetched": 1,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -579,7 +579,7 @@
       "type": "middle-east-conflict",
       "category": "middle-east-conflict",
       "coverage": [],
-      "rowsFetched": 30,
+      "rowsFetched": 34,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -591,7 +591,7 @@
       "type": "middle-east-conflict",
       "category": "middle-east-conflict",
       "coverage": [],
-      "rowsFetched": 42,
+      "rowsFetched": 45,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -733,7 +733,7 @@
       "coverage": [
         "china"
       ],
-      "rowsFetched": 11,
+      "rowsFetched": 12,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
