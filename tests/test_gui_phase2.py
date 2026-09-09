@@ -71,3 +71,17 @@ def test_phase2_styles_and_pages_safety():
         text = (ROOT / name).read_text(encoding='utf-8')
         assert 'href="/' not in text and "src=\"/" not in text
         assert '/Aegis-Nexus/' not in text
+
+
+def test_timeline_custom_range_and_alert_ack_are_wired():
+    tl = (ROOT / 'js/modules/timeline.js').read_text(encoding='utf-8')
+    assert 'CUSTOM' in tl
+    assert 'data-tl-apply' in tl
+    assert 'data-tl-clear' in tl
+    assert 'custom range' in tl
+    assert 'after end date' in tl
+    al = (ROOT / 'js/modules/alerts.js').read_text(encoding='utf-8')
+    assert 'data-alert-ack' in al
+    assert 'gp.alertAck.v1' in al
+    assert 'acknowledged' in al.lower()
+    assert 'this device' in al

@@ -9,6 +9,9 @@ import { formatRelativeTime, escapeHtml } from '../core/utils.js';
 let periodHours = 24;
 let userPicked = false;
 let selectedIdx = -1;
+let customFrom = '';
+let customTo = '';
+let customActive = false;
 const PERIODS = [[24, '24H'], [168, '7D'], [720, '30D'], [0, 'ALL']];
 const MAX_POINTS = 60;
 
@@ -51,9 +54,17 @@ function collectPoints(state, hours) {
       });
     }
   }
+  if (hours === undefined && customActive) {
+    const fromMs = customFrom ? new Date(`${customFrom}T00:00:00`).getTime() : 0;
+    const toMs = customTo ? new Date(`${customTo}T23:59:59`).getTime() : now;
+    if (customFrom || customTo) {
+      if (!Number.isFinite(fromMs) || !Number.isFinite(toMs) || fromMs > toMs) return { points: [], invalid: true };
+      return { points: points.filter(p => { const t = p.at.getTime(); return t >= fromMs && t <= toMs; }).sort((a, b) => b.at - a.at), invalid: false };
+    }
+  }
   const windowHours = hours === undefined ? periodHours : hours;
   const cutoff = windowHours === 0 ? 0 : now - windowHours * 3600000;
-  return points.filter(p => p.at.getTime() >= cutoff).sort((a, b) => b.at - a.at);
+  return { points: points.filter(p => p.at.getTime() >= cutoff).sort((a, b) => b.at - a.at), invalid: false };
 }
 
 function dayLabel(date) {
@@ -70,16 +81,27 @@ export function renderTimeline() {
     el.innerHTML = '<div class="gp-state"><div class="gp-spinner"></div><div>Loading event timeline…</div></div>';
     return;
   }
-  let points = collectPoints(state);
-  if (!userPicked && !points.length) {
+  let res = collectPoints(state);
+  let points = res.points;
+  let customInvalid = res.invalid;
+  if (!userPicked && !points.length && !customActive) {
     for (const [hours] of PERIODS) {
-      const wider = collectPoints(state, hours);
+      const wider = collectPoints(state, hours).points;
       if (wider.length) { periodHours = hours; points = wider; break; }
     }
   }
   const shown = points.slice(0, MAX_POINTS);
   const chips = PERIODS.map(([hours, label]) =>
-    `<button class="gp-filter${periodHours === hours ? ' active' : ''}" data-tl-period="${hours}" type="button">${label}</button>`).join('');
+    `<button class="gp-filter${!customActive && periodHours === hours ? ' active' : ''}" data-tl-period="${hours}" type="button">${label}</button>`).join('')
+    + `<button class="gp-filter${customActive ? ' active' : ''}" data-tl-period="custom" type="button">CUSTOM</button>`;
+  const customRow = customActive || customFrom || customTo
+    ? `<div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-top:6px">`
+      + `<label style="font-size:10px;color:var(--muted-2)">From <input id="tlFrom" class="gp-map-search" type="date" style="width:auto" value="${esc(customFrom)}" max="${new Date().toISOString().slice(0, 10)}"></label>`
+      + `<label style="font-size:10px;color:var(--muted-2)">To <input id="tlTo" class="gp-map-search" type="date" style="width:auto" value="${esc(customTo)}" max="${new Date().toISOString().slice(0, 10)}"></label>`
+      + `<button class="gp-btn" data-tl-apply type="button">Apply</button>`
+      + `<button class="gp-btn" data-tl-clear type="button">Clear</button></div>`
+      + (customInvalid ? '<div style="font-size:11px;color:var(--amber);margin-top:4px">Start date is after end date — custom range ignored.</div>' : '')
+    : '';
 
   let lastDay = '';
   const sevName = { critical: 'CRITICAL', high: 'HIGH', medium: 'MEDIUM', low: 'LOW' };
@@ -100,12 +122,22 @@ export function renderTimeline() {
     + `<div class="gp-tl-meta">${esc(sel.at.toISOString().slice(0, 16).replace('T', ' '))} UTC · ${sel.reports ?? '—'} reports · ${sel.sources ?? '—'} sources · ${esc(sel.confidence || 'confidence ungraded')}</div></div>` : '';
 
   el.innerHTML = `<div class="gp-filter-row" role="group" aria-label="Timeline period">${chips}`
-    + `<span class="meta" style="align-self:center;font-size:10px;color:var(--muted-2)">Showing ${shown.length} of ${points.length} signals</span></div>`
+    + `<span class="meta" style="align-self:center;font-size:10px;color:var(--muted-2)">Showing ${shown.length} of ${points.length} signals${customActive && !customInvalid ? ' · custom range' : ''}</span></div>${customRow}`
     + (rows ? `<ol class="gp-timeline">${rows}</ol>${pane}` : '<div class="gp-state"><div class="gp-state-title">No signals in this period</div><div>No dated observations fall inside the selected window.</div></div>');
 
   el.querySelectorAll('[data-tl-period]').forEach(btn => btn.addEventListener('click', () => {
-    periodHours = Number(btn.dataset.tlPeriod); userPicked = true; selectedIdx = -1; renderTimeline();
+    const v = btn.dataset.tlPeriod;
+    if (v === 'custom') { customActive = true; userPicked = true; selectedIdx = -1; renderTimeline(); return; }
+    periodHours = Number(v); customActive = false; customInvalid = false; userPicked = true; selectedIdx = -1; renderTimeline();
   }));
+  el.querySelector('[data-tl-apply]')?.addEventListener('click', () => {
+    customFrom = document.getElementById('tlFrom')?.value || '';
+    customTo = document.getElementById('tlTo')?.value || '';
+    customActive = true; userPicked = true; selectedIdx = -1; renderTimeline();
+  });
+  el.querySelector('[data-tl-clear]')?.addEventListener('click', () => {
+    customFrom = ''; customTo = ''; customActive = false; customInvalid = false; userPicked = true; selectedIdx = -1; renderTimeline();
+  });
   el.querySelectorAll('[data-tl-select]').forEach(btn => btn.addEventListener('click', () => {
     const i = Number(btn.dataset.tlSelect); selectedIdx = selectedIdx === i ? -1 : i; renderTimeline();
   }));

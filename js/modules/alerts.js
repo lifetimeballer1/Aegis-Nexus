@@ -9,6 +9,16 @@ let levelFilter = 'all';
 let expandedKey = null;
 let showAll = false;
 
+const ACK_KEY = 'gp.alertAck.v1';
+function loadAck() {
+  try { const raw = JSON.parse(localStorage.getItem(ACK_KEY) || '{}'); return raw && typeof raw === 'object' ? raw : {}; }
+  catch { return {}; }
+}
+let acked = loadAck();
+function saveAck() {
+  try { localStorage.setItem(ACK_KEY, JSON.stringify(acked)); } catch {}
+}
+
 const LEVELS = ['critical', 'high', 'medium', 'low'];
 const LEVEL_LABEL = { critical: 'Critical', high: 'High', medium: 'Medium', low: 'Low' };
 
@@ -111,13 +121,15 @@ export function renderAlerts() {
   const rows = shown.map(item => {
     const open = expandedKey === item.key;
     const links = evidenceLinks(item.evidence);
+    const ackAt = acked[item.key] || null;
     const initial = esc(String(item.title || 'A').trim().charAt(0).toUpperCase());
     const thumbBg = item.sev === 'critical' ? 'linear-gradient(135deg,#3d0f18,#160a0e)' : item.sev === 'high' ? 'linear-gradient(135deg,#3a2a0c,#14100a)' : item.sev === 'medium' ? 'linear-gradient(135deg,#10294a,#080f1a)' : 'linear-gradient(135deg,#1a2430,#0a0f14)';
     return `<div class="gp-alert sev-${item.sev}"><button class="gp-alert-head" data-alert-toggle="${esc(item.key)}" type="button" aria-expanded="${open}">`
       + `<span class="gp-alert-bar"></span><span class="cc-thumb" style="flex:0 0 44px;width:44px;height:44px;font-size:16px;background:${thumbBg}" aria-hidden="true">${initial}</span><span class="grow" style="min-width:0;flex:1"><span class="title" style="font-weight:600;overflow-wrap:break-word">${esc(item.title)}</span>`
-      + `<div class="meta" style="font-size:10px;color:var(--muted-2);margin-top:2px">${esc(item.sub)}${item.sub && item.meta ? ' · ' : ''}${esc(item.meta)}${item.time ? ` · ${esc(formatRelativeTime(item.time))}` : ''}</div></span>`
+      + `<div class="meta" style="font-size:10px;color:var(--muted-2);margin-top:2px">${esc(item.sub)}${item.sub && item.meta ? ' · ' : ''}${esc(item.meta)}${item.time ? ` · ${esc(formatRelativeTime(item.time))}` : ''}${ackAt ? ` · ✓ acknowledged ${esc(formatRelativeTime(ackAt))}` : ''}</div></span>`
       + `<span class="gp-sev gp-sev-${item.sev}">${esc(item.sevLabel)}</span></button>`
-      + (open ? `<div class="gp-alert-detail">${item.detail ? `<div style="margin-bottom:6px">${esc(item.detail)}</div>` : ''}${links || '<div style="color:var(--muted-2)">No linked evidence records in this snapshot.</div>'}</div>` : '')
+      + (open ? `<div class="gp-alert-detail">${item.detail ? `<div style="margin-bottom:6px">${esc(item.detail)}</div>` : ''}${links || '<div style="color:var(--muted-2)">No linked evidence records in this snapshot.</div>'}`
+        + `<div style="margin-top:8px"><button class="gp-btn" data-alert-ack="${esc(item.key)}" type="button" title="Stored only on this device">${ackAt ? 'Clear acknowledgement' : 'Acknowledge'}</button></div></div>` : '')
       + '</div>';
   }).join('');
 
@@ -130,6 +142,12 @@ export function renderAlerts() {
   }));
   el.querySelectorAll('[data-alert-toggle]').forEach(btn => btn.addEventListener('click', () => {
     expandedKey = expandedKey === btn.dataset.alertToggle ? null : btn.dataset.alertToggle; renderAlerts();
+  }));
+  el.querySelectorAll('[data-alert-ack]').forEach(btn => btn.addEventListener('click', () => {
+    const key = btn.dataset.alertAck;
+    if (acked[key]) delete acked[key];
+    else acked[key] = new Date().toISOString();
+    saveAck(); renderAlerts();
   }));
   document.getElementById('alertsMore')?.addEventListener('click', () => { showAll = !showAll; renderAlerts(); });
 }
