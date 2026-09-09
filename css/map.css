@@ -31,7 +31,7 @@
 .gp-map-count{font-size:10px;color:var(--muted);white-space:nowrap}
 .gp-map-layers-panel{display:none;position:absolute;left:8px;top:52px;width:min(340px,calc(100vw - 56px));z-index:1000;background:rgba(5,10,16,.97);border:1px solid var(--line);border-radius:12px;box-shadow:0 14px 40px rgba(0,0,0,.45);padding:12px;min-width:0;}
 .gp-map-layers-panel.open{display:block}
-.gp-map-panel-title{font-size:12px;font-weight:900;letter-spacing:.12em;color:var(--text)}
+.gp-map-panel-title{font-size:12px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;color:var(--text)}
 .gp-map-panel-subtitle{font-size:10px;color:var(--muted);margin:3px 0 9px}
 .gp-map-layer-row{display:flex;align-items:center;gap:8px;padding:9px 6px;border-radius:8px;cursor:pointer;color:var(--text);font-size:11px;min-width:0;}
 .gp-map-layer-row:hover{background:var(--panel2)}
