@@ -106,16 +106,16 @@ def sync_history(d):
  if not history and prev: history=[prev]
  history.append({'updatedAt':current_time,'tension':int(round(current_score)),'delta':delta,'scoreVersion':version})
  history=history[-48:]
- HISTORY.write_text(json.dumps(history,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+ HISTORY.write_text(json.dumps(history,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
  d['tensionDelta']=delta
  level='HIGH' if d['tension']>=75 else 'ELEVATED' if d['tension']>=55 else 'WATCH'; direction='rising' if delta>2 else 'falling' if delta<-2 else 'stable'; b=d.get('breakdownScores',{}); strongest=max(b,key=b.get) if b else ''
  d['earlyWarning']={'level':level,'score':d['tension'],'direction':direction,'momentum':delta,'strongestDriver':strongest,'strongestDriverScore':b.get(strongest,0),'method':'Current V5 tension snapshot compared with the previous V5 snapshot.'}
  return history
 
 def main():
- d=json.loads(SNAP.read_text(encoding='utf-8')); build_source_health(d); recalibrate(d); sync_history(d); SNAP.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+ d=json.loads(SNAP.read_text(encoding='utf-8')); build_source_health(d); recalibrate(d); sync_history(d); SNAP.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
  try:
-  s=json.loads(SOURCES.read_text(encoding='utf-8'));s['sourceHealth']=d['sourceHealthSummary'];SOURCES.write_text(json.dumps(s,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+  s=json.loads(SOURCES.read_text(encoding='utf-8'));s['sourceHealth']=d['sourceHealthSummary'];SOURCES.write_text(json.dumps(s,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
  except Exception:pass
  print('FINAL INTELLIGENCE:',d['tension'],d['breakdownScores']); print('SOURCE HEALTH:',d['sourceHealthSummary']); print('HISTORY:',d.get('tensionDelta'),d['earlyWarning'])
 

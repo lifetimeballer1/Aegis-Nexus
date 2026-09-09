@@ -133,7 +133,7 @@ def main():
  data.setdefault('metadata',{})['explicit_target_repair_v5']='evidence-clause-alias-v5'
  data['metadata']['explicit_target_repairs_v5']=repaired
  data['metadata']['explicit_target_actor_reclassification_v2']=True
- CANONICAL.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+ CANONICAL.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
  print(f'PASS: strategic target repair repaired_targets={repaired} events={len(details)}')
  for event_id,event_type,target_ids in details[:20]: print(f'  {event_type} {event_id}: targets={target_ids}')
  return 0

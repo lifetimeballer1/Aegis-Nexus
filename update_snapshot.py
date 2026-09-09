@@ -262,11 +262,11 @@ def main():
     conflicts = make_conflicts(stories, old)
     now = datetime.now(timezone.utc).isoformat()
     snapshot = {"updatedAt": now, "sourceStatus": f"{len(stories)} stories · {len(new_items)} new · {len(FEEDS)-len(errors)}/{len(FEEDS)} feeds healthy", "dataNote": "Public RSS aggregation. Conflict scores are theater-specific analytical signals based on current reporting, source breadth, event severity, and recency. They are not official conflict measurements.", "tension": tension, "tensionDelta": delta, "breakdownScores": breakdown, "changes": changes, "conflicts": conflicts, "markers": old.get("markers", []), "social": old.get("social", []), "stories": stories, "sourceHealth": [{"name": label, "type": kind, "status": "error" if any(e.startswith(label + ":") for e in errors) else "ok"} for label, _, kind in FEEDS]}
-    SNAP.write_text(json.dumps(snapshot, ensure_ascii=False, indent=2) + "\n")
+    SNAP.write_text(json.dumps(snapshot, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
     history = load_json(HIST, [])
     history.append({"updatedAt": now, "tension": tension, "delta": delta})
-    HIST.write_text(json.dumps(history[-240:], ensure_ascii=False, indent=2) + "\n")
-    SOURCES.write_text(json.dumps({"updatedAt": now, "feeds": [{"name": a, "url": b, "type": c, "domain": urlparse(b).netloc} for a, b, c in FEEDS], "errors": errors}, ensure_ascii=False, indent=2) + "\n")
+    HIST.write_text(json.dumps(history[-240:], ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
+    SOURCES.write_text(json.dumps({"updatedAt": now, "feeds": [{"name": a, "url": b, "type": c, "domain": urlparse(b).netloc} for a, b, c in FEEDS], "errors": errors}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
     print(snapshot["sourceStatus"], "tension", tension, "conflicts", len(conflicts))
     if errors: print("errors:", "; ".join(errors))
 

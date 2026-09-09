@@ -58,7 +58,7 @@ def main():
  keep={n.get('id') for n in nodes}; brain['edges']=[e for e in brain.get('edges',[]) if e.get('source') in keep and e.get('target') in keep and e.get('evidence')]
  stats=brain.setdefault('stats',{});stats['nodes']=len(nodes);stats['edges']=len(brain['edges']);stats['countryNodes']=sum(n.get('kind')=='country' for n in nodes)
  now=datetime.now(timezone.utc).isoformat().replace('+00:00','Z');brain['version']=max(int(brain.get('version') or 0),12);brain['updatedAt']=now;brain['majorPowerPolicy']={'required':['United States','China'],'sourceBackedOnly':True,'purpose':'Prevent major strategic actor hubs from disappearing during graph compaction.'}
- BRAIN.write_text(json.dumps(brain,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
+ BRAIN.write_text(json.dumps(brain,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8',newline='\n')
  print('MAJOR POWER GATE:','; '.join(f"{a}=present({len(next(n for n in nodes if n['label']==a).get('evidence',[]))} evidence)" for a in ALIASES),f'nodes={len(nodes)}')
  return 0
 if __name__=='__main__': sys.exit(main())

@@ -77,6 +77,6 @@ def main():
   events.append({'id':hashlib.sha1((lead.lower()+c['kind']).encode()).hexdigest()[:16],'title':lead,'category':c['kind'],'confidence':confidence,'reportCount':len(rs),'sourceCount':len(domains),'sources':domains[:8],'anchors':sorted(c['anchors'])[:12],'firstSeen':min([str(x.get('publishedAt') or x.get('published_date') or '') for x in rs if x.get('publishedAt') or x.get('published_date')] or ['']),'lastSeen':max([str(x.get('publishedAt') or x.get('published_date') or '') for x in rs if x.get('publishedAt') or x.get('published_date')] or ['']),'urls':links[:8],'reports':rs[:8]})
  events.sort(key=lambda e:(e['reportCount'],e['sourceCount'],e['lastSeen']),reverse=True)
  payload={'updatedAt':datetime.now(timezone.utc).isoformat().replace('+00:00','Z'),'window':'recent public reporting','method':'anchor-aware title clustering with category and publication-time agreement; candidate grouping only, not proof reports describe identical facts','events':events[:80]}
- OUT.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+ OUT.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
  print(f'LIVE EVENTS: {len(payload["events"])} clusters from {len(reports)} unique reports')
 if __name__=='__main__': main()

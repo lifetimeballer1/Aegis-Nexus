@@ -175,7 +175,7 @@ def main():
     }
     data["usPolitics"] = us
     data["worldPolitics"] = world
-    SNAP.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    SNAP.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
     print("POLITICAL INTELLIGENCE:", len(political), "signals;", len(corroborated), "corroborated")
 
 

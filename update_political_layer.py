@@ -60,7 +60,7 @@ def main():
     data["economics"] = [s for s in stories if s["intelligenceLayer"] == "economics"]
     data["layerCounts"] = counts
     data["layerNote"] = "Political and economic layers use explicit feed provenance first, then conservative headline/summary classification. General stories remain independent unless evidence supports a relationship."
-    SNAP.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    SNAP.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
     print("INTELLIGENCE LAYERS:", counts)
 
 

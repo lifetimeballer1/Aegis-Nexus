@@ -171,7 +171,7 @@ def main():
     DATA.mkdir(exist_ok=True)
     snapshot = json.loads(SNAP.read_text(encoding="utf-8")) if SNAP.exists() else {}
     result = build(snapshot.get("stories") or [])
-    OUT.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    OUT.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
     print(f"CLAIMS: {len(result['claims'])} clusters")
 
 if __name__ == "__main__":

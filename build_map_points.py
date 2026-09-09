@@ -114,7 +114,7 @@ def main():
         seen.add(k); p.pop('geometry',None); p.pop('coordinates',None); out.append(p)
     if not out: raise RuntimeError('map_points.json contains zero valid geographic markers')
     payload={'version':3,'updatedAt':datetime.now(timezone.utc).isoformat().replace('+00:00','Z'),'count':len(out),'source':'canonical snapshot geographic intelligence layers plus source-backed Brain regional references','markers':out}
-    OUT.write_text(json.dumps(payload,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
+    OUT.write_text(json.dumps(payload,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8',newline='\n')
     print(f'MAP POINTS: {len(out)} valid geographic markers')
 
 if __name__=='__main__': raise SystemExit(main())

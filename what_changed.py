@@ -31,5 +31,5 @@ for s in d.get('stories',[]):
 changes.sort(key=lambda x:x['timestamp'], reverse=True)
 d['last_24h_changes']=changes[:80]
 d['last_24h_generated_at']=now.isoformat()
-p.write_text(json.dumps(d,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
+p.write_text(json.dumps(d,ensure_ascii=False,separators=(',',':')),encoding='utf-8',newline='\n')
 print(f'Generated {len(d["last_24h_changes"])} last-24h changes')

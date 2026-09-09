@@ -91,7 +91,7 @@ def main() -> None:
         "policy": "Targets are derived from missing/weak source-backed coverage only. They are feed expansion hints, not intelligence claims.",
     }
     DATA.mkdir(exist_ok=True)
-    (DATA / "brain_feedback.json").write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    (DATA / "brain_feedback.json").write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
     print(f"BRAIN FEEDBACK: gaps={len(gaps)} next-cycle feed targets={len(targets)}")
 
 

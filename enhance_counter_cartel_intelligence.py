@@ -137,7 +137,7 @@ def main():
     data["markers"] = markers
     data["counterCartelLayer"] = {"campaign": "Operation Southern Spear", "updatedAt": graph["updatedAt"], "coverage": ["SOUTHCOM", "JTF-WHEM", "A3C", "U.S. Coast Guard", "Caribbean", "Eastern Pacific", "Ecuador", "Colombia", "Mexico", "Venezuela", "U.S. homeland"], "note": "Evidence-backed campaign layer; map theater nodes are not exact strike coordinates unless explicitly stated."}
     data["changes"] = ([{"kind":"intelligence","title":"Southern Spear relationship layer expanded","detail":"Added documented U.S.-SOUTHCOM-JTF-WHEM-A3C-cartel relationships and regional counter-cartel map nodes."}] + (data.get("changes") or []))[:10]
-    SNAP.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    SNAP.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
     print(f"Southern Spear layer: {len(graph['nodes'])} nodes / {len(graph['edges'])} edges / {len(markers)} map markers")
 
 if __name__ == "__main__":

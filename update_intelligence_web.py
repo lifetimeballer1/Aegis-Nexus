@@ -51,6 +51,6 @@ def main():
     for n in nodes.values(): n['graphImportance']=round(n['importance']+degree.get(n['id'],0),4)
     node_list=sorted(nodes.values(),key=lambda x:(x['graphImportance'],x['mentions'],x['label']),reverse=True)[:100]; allowed={n['id'] for n in node_list}; edge_list=[e for e in edge_list if e['source'] in allowed and e['target'] in allowed]; edge_list.sort(key=lambda x:(x['strength'],x['weight'],x['evidenceCount']),reverse=True); edge_list=edge_list[:500]
     output={'updatedAt':datetime.now(timezone.utc).isoformat().replace('+00:00','Z'),'method':'canonical intelligence events and evidence-backed semantic relationships','caution':'Semantic edges are generated from structured event actor/target roles; evidence-backed associations do not independently prove causation, coordination, alliance, or responsibility.','sourceSchemaVersion':canonical.get('schema_version'),'nodes':node_list,'edges':edge_list}
-    snapshot=json.loads(SNAP.read_text(encoding='utf-8')); snapshot['intelligenceGraph']=output; SNAP.write_text(json.dumps(snapshot,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    snapshot=json.loads(SNAP.read_text(encoding='utf-8')); snapshot['intelligenceGraph']=output; SNAP.write_text(json.dumps(snapshot,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
     print(f'Intelligence graph: {len(node_list)} canonical nodes / {len(edge_list)} evidence-backed edges')
 if __name__=='__main__': main()

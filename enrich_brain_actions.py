@@ -73,6 +73,6 @@ def main():
   node['actionIntelligence']={'method':'Source-backed classification of records mentioning the actor using explicit action vocabulary. Counts are evidence volumes, not measures of intent or impact.','updatedAt':datetime.now(timezone.utc).isoformat().replace('+00:00','Z')}
  brain['actionLayer']={'version':1,'actors':['United States','China'],'sourceBackedOnly':True,'categories':list(ACTION_TYPES),'description':'Action evidence is attached to the U.S. and China major hubs so the Intelligence Web can distinguish activity from simple country mentions.','updatedAt':datetime.now(timezone.utc).isoformat().replace('+00:00','Z')}
  brain['updatedAt']=datetime.now(timezone.utc).isoformat().replace('+00:00','Z')
- BRAIN.write_text(json.dumps(brain,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
+ BRAIN.write_text(json.dumps(brain,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8',newline='\n')
  print('BRAIN ACTION LAYER:',[(a,by.get(a,{}).get('actionEvidenceCount',0)) for a in ACTORS])
 if __name__=='__main__':main()

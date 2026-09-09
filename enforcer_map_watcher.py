@@ -77,7 +77,7 @@ def main():
             else: by_url[u].update({"title":video.get("title",""),"videoUrl":video.get("videoUrl",""),"published":video.get("published","")})
     maps=sorted(by_url.values(),key=lambda x:x.get("published","") or "",reverse=True)[:100]
     existing.update({"updatedAt":datetime.now(timezone.utc).isoformat(),"feedUrl":FEED,"channelUrl":CHANNEL,"maps":maps,"recentVideos":videos[:20],"newMapLinks":new_links,"collectionMethod":method,"checkErrors":errors,"note":"Public YouTube data only; map links are extracted from descriptions and remain source references."})
-    OUT.parent.mkdir(exist_ok=True); OUT.write_text(json.dumps(existing,ensure_ascii=False,indent=2),encoding="utf-8")
+    OUT.parent.mkdir(exist_ok=True); OUT.write_text(json.dumps(existing,ensure_ascii=False,indent=2),encoding="utf-8",newline="\n")
     print(f"Enforcer watcher: {len(videos)} videos checked, {len(maps)} unique map links, {new_links} new links via {method}")
 
 if __name__=="__main__": main()

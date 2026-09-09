@@ -157,7 +157,7 @@ def main():
         raise SystemExit(f'RENDER BLOCKED: graph has only {len(payload["nodes"])} nodes')
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text(json.dumps(payload, ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8')
+    OUT.write_text(json.dumps(payload, ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8', newline='\n')
     print(f'Published Intelligence Web artifact: {len(payload["nodes"])} ranked nodes / {len(payload["edges"])} evidence-backed edges')
 
 

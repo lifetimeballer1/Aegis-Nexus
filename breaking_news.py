@@ -40,11 +40,11 @@ def main():
     for r in f.result():
      if r['url'] not in seen:seen.add(r['url']);rows.append(r)
    except Exception as e:errors.append(f'{type(e).__name__}: {e}'[:180])
- rows=rows[:250];payload={'updatedAt':datetime.now(timezone.utc).isoformat().replace('+00:00','Z'),'window':'15min','provider':'GDELT DOC 2.0','sourceType':'open-data','articles':rows,'errors':errors};DATA.mkdir(exist_ok=True);OUT.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+ rows=rows[:250];payload={'updatedAt':datetime.now(timezone.utc).isoformat().replace('+00:00','Z'),'window':'15min','provider':'GDELT DOC 2.0','sourceType':'open-data','articles':rows,'errors':errors};DATA.mkdir(exist_ok=True);OUT.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
  if SNAP.exists():
   data=json.loads(SNAP.read_text(encoding='utf-8'));stories=data.get('stories',[]) if isinstance(data.get('stories'),list) else [];existing={str(x.get('url') or x.get('link') or '') for x in stories if isinstance(x,dict)};additions=[]
   for r in rows:
    if r['url'] not in existing:additions.append({'title':r['title'],'url':r['url'],'publishedAt':r['published_date'],'published_date':r['published_date'],'summary':r['summary'],'description':r['summary'],'source':r['source'],'sourceLabel':r['source'],'category':'breaking','priority':'breaking','sourceType':'open-data'})
-  data['stories']=(additions+stories)[:2000];data['breakingNews']=payload;data['updatedAt']=payload['updatedAt'];SNAP.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+  data['stories']=(additions+stories)[:2000];data['breakingNews']=payload;data['updatedAt']=payload['updatedAt'];SNAP.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
  print(f'BREAKING INTEL: {len(rows)} discoveries; {len(errors)} query errors')
 if __name__=='__main__':main()

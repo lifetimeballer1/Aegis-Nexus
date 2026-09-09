@@ -67,7 +67,7 @@ def main():
             enrich(ev)
 
     if changed:
-        SNAP.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        SNAP.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
     print(f"Intelligence source URL enrichment: {changed} evidence records repaired")
 
 if __name__ == "__main__":

@@ -18,5 +18,5 @@ def main():
   start=now-timedelta(hours=hours);subset=[r for r in rows if dt(r['updatedAt'])>=start]
   if len(subset)<2:out['windows'][name]={'available':False,'reason':f'Only {len(subset)} samples in requested window'};continue
   first,last=subset[0],subset[-1];delta=round(float(last['tension'])-float(first['tension']),1);out['windows'][name]={'available':True,'samples':len(subset),'start':first['updatedAt'],'end':last['updatedAt'],'startTension':first['tension'],'endTension':last['tension'],'delta':delta,'trend':'UP' if delta>1 else 'DOWN' if delta<-1 else 'STABLE'}
- (DATA/'historical_trends.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');print('HISTORICAL TRENDS:',{k:v.get('trend',v.get('reason')) for k,v in out['windows'].items()})
+ (DATA/'historical_trends.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n');print('HISTORICAL TRENDS:',{k:v.get('trend',v.get('reason')) for k,v in out['windows'].items()})
 if __name__=='__main__':main()

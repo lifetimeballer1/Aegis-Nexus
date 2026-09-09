@@ -134,7 +134,7 @@ def main():
         "sources":[{"name":"GDELT GEO","cadence":"each Global Pulse refresh","points":len(clean),"url":"https://www.gdeltproject.org/"},{"name":"Global Pulse reported-area extraction","cadence":"each Global Pulse refresh","points":len(reports),"url":"https://github.com/lifetimeballer1/global-pulse"}]
     }
     changes=snap.get("changes") or []; changes.insert(0,{"kind":"system","title":"Regional OSINT expansion refreshed","detail":f"Added {len(clean[:700])} GDELT regional signals and {len(reports)} current reported-area points across Africa, South America and South Asia."}); snap["changes"]=changes[:8]
-    SNAP.write_text(json.dumps(snap,ensure_ascii=False,indent=2),encoding="utf-8")
+    SNAP.write_text(json.dumps(snap,ensure_ascii=False,indent=2),encoding="utf-8",newline="\n")
     print(f"Regional OSINT: {len(clean[:700])} GDELT points + {len(reports)} reported-area points")
 
 if __name__=="__main__": main()

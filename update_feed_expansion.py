@@ -78,6 +78,6 @@ if ns.get('feeds'):
     ns['feeds']=clean
     ns['updatedAt']=__import__('datetime').datetime.now(__import__('datetime').timezone.utc).isoformat()
     (ROOT/'data').mkdir(exist_ok=True)
-    (ROOT/'data'/'sources.json').write_text(json.dumps(ns,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    (ROOT/'data'/'sources.json').write_text(json.dumps(ns,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
 
 print('Western Hemisphere SOUTHCOM/counter-cartel feeds, Brain gap feedback, dedicated conflict layer, and live source registry installed.')

@@ -37,5 +37,5 @@ def main():
   ids=[m.get('id') for m in members if m.get('id')]
   resolved.append({'resolution_id':f'ER-{len(resolved)+1:04d}','title':members[0].get('title'),'event_ids':ids,'report_count':sum(int(m.get('reportCount') or 0) for m in members),'unique_domains':domains,'member_count':len(members),'merge_reason':' ; '.join(reasons) if reasons else 'single candidate event cluster','confidence':'high' if len(members)>=3 and len(domains)>=3 else 'moderate' if len(members)>=2 else 'low'})
  out={'updatedAt':datetime.now(timezone.utc).isoformat().replace('+00:00','Z'),'generated_at':datetime.now(timezone.utc).isoformat(),'method':'event-cluster similarity using title tokens, geographic/actor anchors, category and publication timing; candidate grouping only','events':resolved}
- OUT.write_text(json.dumps(out,indent=2,ensure_ascii=False)+'\n',encoding='utf-8'); print(f'resolved {len(resolved)} candidate groups from {len(events)} live clusters')
+ OUT.write_text(json.dumps(out,indent=2,ensure_ascii=False)+'\n',encoding='utf-8',newline='\n'); print(f'resolved {len(resolved)} candidate groups from {len(events)} live clusters')
 if __name__=='__main__': main()

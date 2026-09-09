@@ -151,7 +151,7 @@ def main():
          'uniqueReportCount':len(reports),'uniqueSourceDomains':len({x.removeprefix('domain:') for x in counts if x.startswith('domain:')}),
          'sourceClassDefinitions':{'primary':'Government/institutional first-party domain. Does not make the claim true.','major-news':'Established news organization domain.','specialist':'Recognized research/humanitarian specialist.','other':'Unclassified publisher.','aggregator':'Republishing/aggregation surface; weak independence signal.','social':'Social platform; useful for leads, weak corroboration alone.','unknown':'No usable domain/source identity.'},
          'topSources':top,'eventSourceEvidence':event_metrics}
-    (DATA/'source_evidence.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    (DATA/'source_evidence.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
     print(f'SOURCE EVIDENCE: {len(reports)} reports / {out["uniqueSourceDomains"]} domains / quality metrics calculated')
 
 if __name__=='__main__':main()

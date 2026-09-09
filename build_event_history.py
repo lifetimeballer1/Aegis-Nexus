@@ -70,6 +70,6 @@ def main():
                 if now-dt<=timedelta(days=30): active[k]=h
             except Exception: pass
     payload={'updatedAt':now.isoformat().replace('+00:00','Z'),'window':'30 days','method':'stable candidate fingerprint plus material observation snapshots; historical records are descriptive, not proof of event identity','events':active}
-    OUT.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    OUT.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
     print(f'EVENT HISTORY: {len(active)} tracked events')
 if __name__=='__main__': main()

@@ -66,6 +66,6 @@ def main():
   if k not in seen:seen.add(k);clean.append(p)
  clean.sort(key=lambda p:p.get('geoResolution')=='COUNTRY-CENTER-APPROXIMATE')
  snap['markers']=base+clean[:2500];o=snap.setdefault('osintMaps',{});o['version']=4;o['regionalPoints']=clean;o['regionalCounts']=counts;o['regionalPreciseCounts']=precise;o['regionalFailures']=failed;o['regionalUpdatedAt']=now();o['regionalSourcePolicy']='GDELT GEO FIPS queries: city/landmark first, ADM1/city second; Google News RSS country-center fallback only after both GDELT passes fail.';o['regionalFipsQueryPolicy']='GDELT locationcc requires FIPS 10-4; countryCode remains ISO-style.'
- SNAP.write_text(json.dumps(snap,ensure_ascii=False,indent=2),encoding='utf-8');print(f'Regional OSINT v4: {len(clean)} points; precise={sum(precise.values())}; failures after fallback={len(failed)}; counts={counts}')
+ SNAP.write_text(json.dumps(snap,ensure_ascii=False,indent=2),encoding='utf-8',newline='\n');print(f'Regional OSINT v4: {len(clean)} points; precise={sum(precise.values())}; failures after fallback={len(failed)}; counts={counts}')
  if not clean: raise SystemExit('No fresh regional OSINT points from GDELT or Google News RSS')
 if __name__=='__main__':main()

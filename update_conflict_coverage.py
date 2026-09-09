@@ -41,6 +41,6 @@ def main():
     osint['normalization']={'urlFields':['url','link','sourceUrl','source_url'],'invalidCoordinatesDropped':True,'duplicatePointsDropped':True,'preservesRegionalPoints':True,'preservesRegionalDiagnostics':True}
     osint['normalizedPoints']=dedup;snap['osintMaps']=osint
     generated={'osint-regional','osint-gdelt','osint-reported'};markers=[m for m in (snap.get('markers') or []) if m.get('layer') not in generated];markers.extend(dedup);snap['markers']=markers
-    SNAP.write_text(json.dumps(snap,ensure_ascii=False,indent=2),encoding='utf-8')
+    SNAP.write_text(json.dumps(snap,ensure_ascii=False,indent=2),encoding='utf-8',newline='\n')
     print('Normalized OSINT points:',len(dedup),'regional:',len(osint.get('regionalPoints') or []),'counts:',osint.get('regionalCounts',{}),'precise:',osint.get('regionalPreciseCounts',{}))
 if __name__=='__main__':main()

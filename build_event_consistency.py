@@ -45,6 +45,6 @@ def main():
  out=[analyze_event(e) for e in events]
  flagged=[x for x in out if x['flagCount']]
  payload={'updatedAt':datetime.now(timezone.utc).isoformat().replace('+00:00','Z'),'method':'heuristic contradiction signals from report titles; flags require human review and are not truth judgments','events':out[:80],'flaggedEvents':flagged[:40],'summary':{'eventsAnalyzed':len(out),'eventsFlagged':len(flagged),'highSeverity':sum(1 for x in flagged if x['consistency']=='high')}}
- OUT.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+ OUT.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
  print(f'EVENT CONSISTENCY: analyzed {len(out)}, flagged {len(flagged)}, high severity {payload["summary"]["highSeverity"]}')
 if __name__=='__main__': main()

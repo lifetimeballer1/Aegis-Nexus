@@ -197,7 +197,7 @@ def main() -> int:
     data["metadata"]["explicit_target_repairs"]=target_repairs
     data["metadata"]["semantic_relationship_count"]=sum(r.get("relationship_type")!="mentioned_with" for r in relationships)
     data["metadata"]["cooccurrence_relationship_count"]=sum(r.get("relationship_type")=="mentioned_with" for r in relationships)
-    PATH.write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    PATH.write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n",encoding="utf-8",newline="\n")
     print(f"PASS: semantic enrichment country_actor_bridges={country_actor_bridges} target_repairs={target_repairs} promoted={promoted} relationships={len(relationships)} removed_cooccurrence={before-len(relationships)} removed_unproven={removed_unproven}")
     return 0
 

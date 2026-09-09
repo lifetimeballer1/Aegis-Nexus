@@ -138,7 +138,7 @@ def main():
         "fallbacks": int(live_status.get("fallbackSources", 0)),
     }
     snapshot["sourceStatus"] = f"{len(stories)} stories · {added} live-db merged · persistent 7-day SQLite collector active"
-    SNAP.write_text(json.dumps(snapshot, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    SNAP.write_text(json.dumps(snapshot, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
     print(f"live merge: {added} new rows, {len(stories)} total stories, droppedInvalidTimestamps={dropped_invalid_timestamps}")
 
 

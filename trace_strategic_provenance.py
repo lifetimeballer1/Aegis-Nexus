@@ -7,6 +7,7 @@ be localized to extraction, target repair, or relationship promotion.
 """
 from __future__ import annotations
 import json
+import sys
 from pathlib import Path
 
 DATA = Path("data")
@@ -15,6 +16,12 @@ COUNTRIES = ("United States", "China")
 
 
 def main() -> int:
+    try:
+        # Windows consoles default to a legacy code page; evidence text is
+        # full Unicode. Degrade glyphs instead of crashing the trace.
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
     data = json.loads(CANONICAL.read_text(encoding="utf-8"))
     entities = {str(e.get("id")): e for e in data.get("entities", []) if isinstance(e, dict)}
     ids_by_name = {str(e.get("canonical_name")): str(e.get("id")) for e in entities.values()}

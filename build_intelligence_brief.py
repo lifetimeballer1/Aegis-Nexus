@@ -109,7 +109,7 @@ def main():
             "caution": "Priority is not truth probability. Repeated syndicated reports may not be independent confirmation."
         }
     }
-    (DATA / "intelligence_brief.json").write_text(json.dumps(brief, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    (DATA / "intelligence_brief.json").write_text(json.dumps(brief, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
     print(f"Built intelligence brief: {len(brief['topDevelopments'])} developments / {len(brief['watchlist'])} watchlist entities")
 
 

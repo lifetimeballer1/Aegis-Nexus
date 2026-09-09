@@ -35,6 +35,6 @@ def main() -> None:
         kind = r.get("relationship_type", r.get("type", "unknown"))
         type_counts[kind] = type_counts.get(kind, 0) + 1
     summary = {"schema_version":"1.0","source":"canonical_intelligence.json","generated_at":data.get("generated_at"),"counts":{"entities":len(entities),"events":len(events),"relationships":len(relationships),"evidence":len(evidence)},"us":pick("United States"),"china":pick("China"),"strategic_actors":strategic,"relationship_types":dict(sorted(type_counts.items(), key=lambda x:(-x[1],x[0])))}
-    OUTPUT.write_text(json.dumps(summary, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    OUTPUT.write_text(json.dumps(summary, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
 
 if __name__ == "__main__": main()

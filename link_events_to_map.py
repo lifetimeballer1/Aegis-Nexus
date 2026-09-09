@@ -20,5 +20,5 @@ def main():
    links.append({'markerIndex':idx,'lat':m.get('lat'),'lng':m.get('lng'),'eventId':best.get('id'),'eventTitle':best.get('title'),'confidence':'candidate' if best_score<.5 else 'strong-candidate','matchScore':round(best_score,3)})
    if best_score<.5:review+=1
  out={'version':1,'updatedAt':events.get('updatedAt'),'markerCount':len(snap.get('markers',[])),'linkedMarkers':len(links),'reviewCandidates':review,'method':'Token-overlap candidate linking between marker text and live-event titles. Coordinates are read-only and never inferred or moved.','links':links}
- (DATA/'map_event_links.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');print('MAP EVENT LINKS:',len(links),'linked /',review,'review candidates')
+ (DATA/'map_event_links.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n');print('MAP EVENT LINKS:',len(links),'linked /',review,'review candidates')
 if __name__=='__main__':main()

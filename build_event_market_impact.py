@@ -28,5 +28,5 @@ def main():
   related=[{'name':n,'price':inds[n].get('price'),'changePercent':inds[n].get('changePercent'),'status':inds[n].get('status'),'marketTime':inds[n].get('marketTime')} for n in names[:8]]
   out.append({'eventId':e.get('id'),'title':e.get('title'),'marketBuckets':sorted(b),'relatedIndicators':related,'interpretation':'Contextual market exposure only. Price moves are not attributed to this event unless independently established.','updatedAt':market.get('updatedAt')})
  payload={'version':1,'updatedAt':datetime.now(timezone.utc).isoformat().replace('+00:00','Z'),'method':'Keyword-based event-to-market relevance mapping using existing public market indicators; no causal attribution.','events':out}
- (DATA/'event_market_impact.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');print('EVENT MARKET IMPACT:',len(out),'events mapped')
+ (DATA/'event_market_impact.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n');print('EVENT MARKET IMPACT:',len(out),'events mapped')
 if __name__=='__main__':main()

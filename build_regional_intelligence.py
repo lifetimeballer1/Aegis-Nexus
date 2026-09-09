@@ -39,5 +39,5 @@ def main():
   v['trend']='UP' if v['deltaReports']>0 else 'DOWN' if v['deltaReports']<0 else 'STABLE'
  ranked=sorted(rows.items(),key=lambda x:(x[1]['active24h'],x[1]['conflictReports'],x[1]['events']),reverse=True)
  out={'version':1,'updatedAt':datetime.now(timezone.utc).isoformat().replace('+00:00','Z'),'method':'Rule-based regional classification from current public-report titles, summaries and live-event titles.','regions':rows,'priorityOrder':[r for r,_ in ranked]}
- (DATA/'regional_intelligence.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');print('REGIONAL INTELLIGENCE:',[(r,v['active24h'],v['conflictReports']) for r,v in ranked])
+ (DATA/'regional_intelligence.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n');print('REGIONAL INTELLIGENCE:',[(r,v['active24h'],v['conflictReports']) for r,v in ranked])
 if __name__=='__main__':main()

@@ -123,7 +123,7 @@ def main() -> int:
         'signals': signals,
         'majorActorCoverage': {actor: any(s['actor'] == actor for s in signals) for actor in MAJOR_ACTORS},
     }
-    OUTPUT.write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    OUTPUT.write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n', encoding='utf-8', newline='\n')
     print(f'PASS: strategic signals={len(signals)} coverage={result["majorActorCoverage"]}')
     return 0
 

@@ -216,7 +216,7 @@ def main():
     if social:
         snap["social"] = social
 
-    SNAP.write_text(json.dumps(snap, ensure_ascii=False, indent=2))
+    SNAP.write_text(json.dumps(snap, ensure_ascii=False, indent=2), encoding="utf-8", newline="\n")
     print(status)
 
 

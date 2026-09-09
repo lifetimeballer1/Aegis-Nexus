@@ -94,7 +94,7 @@ def main():
    if ev.get('target_ids'): break
  data.setdefault('metadata',{})['actor_target_role_repair']='explicit-clause-existing-actor-v2'
  data['metadata']['actor_target_role_repairs']=repaired
- PATH.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+ PATH.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
  print(f'PASS: actor-target role repair repaired_targets={repaired} events={events}')
  return 0
 if __name__=='__main__': raise SystemExit(main())
