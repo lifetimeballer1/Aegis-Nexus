@@ -58,6 +58,13 @@ Never touched: `data/`, `artifacts/`, pipeline/build/validate/collector scripts.
 22. `313a909` intelweb 3D-page toggles (filter/period/orbit/labels/flow)
     gain `aria-pressed` + period chips gain active-state sync.
 23. `e58b6f6` timeline day separators are valid `<li>` items (were `<div>` in `<ol>`).
+24. `a90dceb` legend blocks get `role="group"` for labeled regions.
+25. `89531ad` draft save indicator (`#bdSaved`) is a live region.
+
+## Mid-shift verification (16:20)
+- `pytest -q`: 123 passed. `node --test intelligence_web_filters`: 7 passed.
+- `validate_repository` / `validate_performance` / `validate_security`: PASS.
+- `dashboard_smoke.py` desktop (1440) + mobile (390): SMOKE PASS both.
 
 ## Reviewed, no change (recorded so the next pass skips them)
 - WebGL engine caps (500 nodes / 1500+1000 edges): perf guards far above live
