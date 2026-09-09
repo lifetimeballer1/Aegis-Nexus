@@ -139,6 +139,9 @@
 .gp-web-node.sev-info{border-left-color:var(--sev-info)}
 .gp-web-node .gp-card-title{overflow-wrap:break-word}
 .gp-web-node .gp-card-meta{display:flex;align-items:center;gap:8px;margin-top:4px;font-size:10px;color:var(--muted-2)}
+/* Selected web card: info outline, parity with .gp-brain-node.selected
+   (which lives in the index.html inline block). */
+.gp-web-node.selected{outline:1px solid var(--sev-info)}
 .gp-intelweb-detail{margin-top:10px}
 @media(max-width:720px){
   .gp-web-controls{flex-wrap:nowrap;overflow-x:auto;padding-bottom:2px}

@@ -180,15 +180,25 @@ function renderDetail(nodeId) {
     <button id="gpWebCloseDetail" class="gp-btn" type="button" style="margin-top:9px">Close</button>`;
   detail.querySelector('#gpWebEvidenceMore')?.addEventListener('click',()=>{showAllWebEvidence=!showAllWebEvidence;renderDetail(selectedWebId);});
   detail.querySelector('#gpWebLinksMore')?.addEventListener('click',()=>{showAllWebLinks=!showAllWebLinks;renderDetail(selectedWebId);});
-  detail.querySelector('#gpWebCloseDetail')?.addEventListener('click',()=>{selectedWebId=null;showAllWebEvidence=false;showAllWebLinks=false;detail.textContent='Select a node to inspect its source-backed details.';});
+  detail.querySelector('#gpWebCloseDetail')?.addEventListener('click',()=>{selectedWebId=null;showAllWebEvidence=false;showAllWebLinks=false;detail.textContent='Select a node to inspect its source-backed details.';syncWebSelection();});
 }
 
+/* Selection parity with Brain node cards: the grid does not re-render on
+   selection, so sync classes/pressed state in place. */
+function syncWebSelection() {
+  document.querySelectorAll('[data-web-node]').forEach(btn => {
+    const on = selectedWebId !== null && String(btn.dataset.webNode) === String(selectedWebId);
+    btn.classList.toggle('selected', on);
+    btn.setAttribute('aria-pressed', String(on));
+  });
+}
 function selectWebNode(id) {
   const node=currentData.nodes.find(n=>String(n.id)===String(id));
   if(!node) return;
   showAllWebEvidence=false;
   showAllWebLinks=false;
   renderDetail(node.id);
+  syncWebSelection();
   if(graphInstance && node.x !== undefined && node.y !== undefined && node.z !== undefined) {
     const distance=Math.max(80, Math.hypot(node.x,node.y,node.z)*0.55);
     graphInstance.cameraPosition({x:node.x+distance,y:node.y+distance*0.35,z:node.z+distance},{x:node.x,y:node.y,z:node.z},700);
@@ -265,9 +275,10 @@ function renderWebList() {
   const count=document.getElementById('gpWebCount');
   if(count)count.textContent=`Showing ${shown.length} of ${ranked.length} entities · ${currentData.links.length} connections`;
   wrap.innerHTML=shown.length
-    ? `<div class="gp-grid gp-grid-2">${shown.map(n=>`<button class="gp-card gp-web-node sev-${webSeverity(n.type)}" data-web-node="${escapeHtml(n.id)}" type="button"><div class="gp-card-title">${escapeHtml(n.name)}</div><div class="gp-card-meta"><span class="gp-sev ${webChip(n.type)}">${escapeHtml(n.type||'entity')}</span><span>${n._deg} links · ${n._ev} evidence${n.brain?' · Brain':''}</span></div></button>`).join('')}</div>`
+    ? `<div class="gp-grid gp-grid-2">${shown.map(n=>`<button class="gp-card gp-web-node sev-${webSeverity(n.type)}${String(selectedWebId)===String(n.id)?' selected':''}" data-web-node="${escapeHtml(n.id)}" type="button" aria-pressed="${String(selectedWebId)===String(n.id)}"><div class="gp-card-title">${escapeHtml(n.name)}</div><div class="gp-card-meta"><span class="gp-sev ${webChip(n.type)}">${escapeHtml(n.type||'entity')}</span><span>${n._deg} links · ${n._ev} evidence${n.brain?' · Brain':''}</span></div></button>`).join('')}</div>`
     : '<div class="gp-state"><div class="gp-state-title">No entities match</div><div>Nothing in the canonical relationship graph matches this type or search.</div></div>';
   wrap.querySelectorAll('[data-web-node]').forEach(btn=>btn.addEventListener('click',()=>selectWebNode(btn.dataset.webNode)));
+  syncWebSelection();
 }
 
 window.addEventListener('gp:brain-select', event => {
