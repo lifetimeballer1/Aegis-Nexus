@@ -13,6 +13,9 @@ Observed public-feed limits (documented 2026-09-09 live verification):
   429/5xx with backoff instead of failing the source immediately.
 - NPR topic feeds (feeds.npr.org) intermittently answer 404 on valid IDs;
   a single 404 must be retried before the source is marked failed.
+- Google News RSS (news.google.com) answers bursts with HTTP 429 at high
+  worker counts; requests are spaced (>=1.0s apart) and 429s honor any
+  Retry-After header (capped at 60s) instead of a fixed backoff.
 - France 24 https://www.france24.com/en/rss now serves an HTML page, not RSS;
   HTML payloads are reported as a clean fetch error so quarantine mapping
   can replace them instead of surfacing an XML ParseError.
@@ -28,7 +31,7 @@ from urllib.error import HTTPError, URLError
 from urllib.request import Request,urlopen
 from xml.etree import ElementTree as ET
 ROOT=Path(__file__).resolve().parent;DATA=ROOT/'data';DB_PATH=ROOT/'news_feed.db';JSON_PATH=DATA/'live_articles.json';STATUS_PATH=DATA/'live_status.json';POLL_SECONDS=300;RETENTION_DAYS=7;MAX_WORKERS=15;FETCH_TIMEOUT=12;GDELT_TIMEOUT=25;NPR_TIMEOUT=15;EXPORT_LIMIT=2000;USER_AGENT='GlobalPulse/13.0 (+https://github.com/lifetimeballer1/global-pulse)'
-FETCH_RETRIES=3;RETRY_BACKOFF_SECONDS=(2.0,8.0,20.0);RETRYABLE_HTTP={429,500,502,503,504};GDELT_MIN_INTERVAL=2.5;_GDELT_LOCK=threading.Lock();_GDELT_LAST=[0.0]
+FETCH_RETRIES=3;RETRY_BACKOFF_SECONDS=(2.0,8.0,20.0);RETRYABLE_HTTP={429,500,502,503,504};GDELT_MIN_INTERVAL=2.5;GOOGLE_MIN_INTERVAL=1.0;RETRY_AFTER_CAP=60.0;_GDELT_LOCK=threading.Lock();_GDELT_LAST=[0.0];_GOOGLE_LOCK=threading.Lock();_GOOGLE_LAST=[0.0]
 BUILTIN_SOURCES={
 'cnn':{'name':'CNN','url':'http://rss.cnn.com/rss/edition.rss','type':'news','category':'international'},'fox_politics':{'name':'Fox News Politics','url':'https://moxie.foxnews.com/google-publisher/politics.xml','type':'news','category':'us-politics','coverage':['united-states']},'npr_news':{'name':'NPR News','url':'https://feeds.npr.org/1001/rss.xml','type':'news','category':'us-politics','coverage':['united-states']},'bbc_world':{'name':'BBC World','url':'https://feeds.bbci.co.uk/news/world/rss.xml','type':'news','category':'international'},'guardian_world':{'name':'Guardian World','url':'https://www.theguardian.com/world/rss','type':'news','category':'international'},'al_jazeera':{'name':'Al Jazeera','url':'https://www.aljazeera.com/xml/rss/all.xml','type':'news','category':'international'},'dw_world':{'name':'DW World','url':'https://rss.dw.com/xml/rss-en-world','type':'news','category':'international'},'cna_world':{'name':'CNA World','url':'https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml&category=6311','type':'news','category':'international','coverage':['china']},'stars_stripes':{'name':'Stars and Stripes','url':'https://subscribe.stripes.com/rss/top-news.xml','type':'news','category':'security','coverage':['united-states']},'morse_audio':{'name':'Morse Report','url':'https://rss.buzzsprout.com/2637181.rss','type':'podcast','category':'us-politics','coverage':['united-states']},
 'china_security':{'name':'Google News — China Security / PLA','url':'https://news.google.com/rss/search?q=China+PLA+military+Taiwan+South+China+Sea+security+when%3A1d&hl=en-US&gl=US&ceid=US:en','type':'china-security','category':'china-security','coverage':['china']},'china_economy':{'name':'Google News — China Economy / Trade','url':'https://news.google.com/rss/search?q=China+economy+trade+tariffs+exports+semiconductors+markets+when%3A1d&hl=en-US&gl=US&ceid=US:en','type':'china-economics','category':'china-economics','coverage':['china']},'china_politics':{'name':'Google News — China Politics / CCP','url':'https://news.google.com/rss/search?q=China+Xi+CCP+Communist+Party+government+policy+when%3A1d&hl=en-US&gl=US&ceid=US:en','type':'china-politics','category':'china-politics','coverage':['china']},'china_taiwan':{'name':'Google News — China Taiwan / Indo-Pacific','url':'https://news.google.com/rss/search?q=China+Taiwan+Indo-Pacific+Beijing+PLA+diplomacy+when%3A1d&hl=en-US&gl=US&ceid=US:en','type':'china-geopolitics','category':'china-geopolitics','coverage':['china']}}
@@ -83,6 +86,16 @@ def _polite_gdelt_wait():
   wait=GDELT_MIN_INTERVAL-(time.monotonic()-_GDELT_LAST[0])
   if wait>0:time.sleep(wait)
   _GDELT_LAST[0]=time.monotonic()
+def _polite_google_wait():
+ with _GOOGLE_LOCK:
+  wait=GOOGLE_MIN_INTERVAL-(time.monotonic()-_GOOGLE_LAST[0])
+  if wait>0:time.sleep(wait)
+  _GOOGLE_LAST[0]=time.monotonic()
+def _retry_after_seconds(exc,default):
+ try:
+  raw=exc.headers.get('Retry-After') if getattr(exc,'headers',None) else None
+  return max(0.0,min(RETRY_AFTER_CAP,float(raw))) if raw is not None else default
+ except Exception:return default
 def _timeout_for(url):
  if 'api.gdeltproject.org' in url:return GDELT_TIMEOUT
  if 'feeds.npr.org' in url:return NPR_TIMEOUT
@@ -93,11 +106,13 @@ def fetch(url,timeout=None):
  last=None
  for attempt in range(1+FETCH_RETRIES):
   if 'api.gdeltproject.org' in url:_polite_gdelt_wait()
+  if 'news.google.com' in url:_polite_google_wait()
   try:
    with urlopen(req,timeout=timeout) as response:return response.read()
   except HTTPError as exc:
    last=exc
    if int(exc.code or 0) not in RETRYABLE_HTTP or attempt>=FETCH_RETRIES:raise
+   time.sleep(_retry_after_seconds(exc,RETRY_BACKOFF_SECONDS[min(attempt,len(RETRY_BACKOFF_SECONDS)-1)]));continue
   except (URLError,TimeoutError,ConnectionError,OSError) as exc:
    last=exc
    if attempt>=FETCH_RETRIES:raise
