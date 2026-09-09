@@ -256,7 +256,7 @@ export function renderMapOps(){
       +'<span class="gp-map-op-dot" style="background:'+m.color+'"></span>'
       +'<span class="grow"><span class="title">'+escapeHtml(String(title).slice(0,140))+'</span>'
       +'<span class="meta">'+escapeHtml(m.label)+(place?' · '+escapeHtml(place):'')+' · '+p.__lat.toFixed(2)+', '+p.__lon.toFixed(2)+'</span></span>'
-      +'<span class="gp-sev gp-sev-'+(sev==='critical'?'critical':sev==='watch'?'high':'medium')+'">'+escapeHtml(k)+'</span></button>';
+      +'<span class="gp-sev gp-sev-'+sev+'">'+escapeHtml(k)+'</span></button>';
   }).join('');
   host.innerHTML='<div class="gp-map-ops-bar"><input id="mapOpsSearch" class="gp-map-search" type="search" aria-label="Filter map signals" placeholder="Filter map signals…" value="'+escapeHtml(query)+'">'
     +'<span class="meta">Showing '+shown.length.toLocaleString()+' of '+visible.length.toLocaleString()+' signals · '+total.toLocaleString()+' total</span></div>'

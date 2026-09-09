@@ -19,3 +19,28 @@
 .gp-nav-item.active { color:var(--blue); } .gp-nav-icon { font-size:18px; line-height:1; }
 @media (min-width:900px) { .gp-bottom-nav{display:none;} .app-shell{padding-bottom:0;} .gp-main{padding:18px 24px 40px; gap:22px;} }
 .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+
+/* GUI visual fidelity pass — persistent left rail (desktop) + compact command bar.
+   The rail reuses .gp-nav-item so js/app.js setupNav active-state sync applies. */
+.gp-rail{display:none}
+.gp-app-shell{display:flex;flex-direction:column;min-height:100dvh}
+@media (min-width:900px) {
+  .gp-app-shell{flex-direction:row;align-items:stretch}
+  .gp-rail{display:flex;flex-direction:column;gap:2px;position:sticky;top:0;height:100dvh;overflow-y:auto;
+    flex:0 0 172px;width:172px;padding:14px 10px;border-right:1px solid var(--line);
+    background:var(--bg-deep);min-width:0}
+  .gp-rail .gp-rail-brand{display:flex;align-items:center;gap:8px;padding:4px 8px 12px;
+    font-weight:800;font-size:12px;letter-spacing:.1em;color:var(--text)}
+  .gp-rail .gp-rail-brand .gp-mark{color:var(--sev-info)}
+  .gp-rail .gp-nav-item{flex-direction:row;justify-content:flex-start;gap:10px;min-height:0;
+    padding:8px 10px;font-size:11px;border:1px solid transparent;border-radius:8px;width:100%;box-sizing:border-box}
+  .gp-rail .gp-nav-item .gp-nav-icon{font-size:14px}
+  .gp-rail .gp-nav-item.active{color:var(--sev-info);border-color:var(--line-strong);background:var(--panel-2)}
+  .gp-rail .gp-rail-foot{margin-top:auto;padding:10px 8px 0;font-size:9px;color:var(--muted-2);
+    text-transform:uppercase;letter-spacing:.08em}
+  .gp-app-main{flex:1;min-width:0}
+  /* Compact top command bar: tighter density, 11-12px tab type, inline status. */
+  .gp-header{padding:6px 14px;gap:8px}
+  .gp-command-tabs .gp-nav-item{padding:5px 9px;font-size:11px}
+  .gp-status-pill{padding:4px 9px;font-size:10px}
+}

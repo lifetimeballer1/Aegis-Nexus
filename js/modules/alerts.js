@@ -27,8 +27,8 @@ function ackTime(key) {
   return typeof v === 'string' ? v : (v.at || null);
 }
 
-const LEVELS = ['critical', 'high', 'medium', 'low'];
-const LEVEL_LABEL = { critical: 'Critical', high: 'High', medium: 'Medium', low: 'Low' };
+const LEVELS = ['critical', 'watch', 'info', 'healthy'];
+const LEVEL_LABEL = { critical: 'Critical', watch: 'Watch', info: 'Info', healthy: 'Healthy' };
 
 function conflictSeverity(conflict) {
   return escalationSeverity(conflict.escalation);
@@ -93,7 +93,7 @@ function collectItems(state) {
       evidence: [...(e.reports || []), ...(e.urls || [])],
     });
   }
-  const rank = { critical: 0, high: 1, medium: 2, low: 3 };
+  const rank = { critical: 0, watch: 1, info: 2, healthy: 3 };
   items.sort((a, b) => (rank[a.sev] - rank[b.sev]) || (new Date(b.time || 0) - new Date(a.time || 0)));
   return items;
 }
@@ -123,7 +123,7 @@ export function renderAlerts() {
     const links = evidenceLinks(item.evidence);
     const ackAt = ackTime(item.key);
     const initial = esc(String(item.title || 'A').trim().charAt(0).toUpperCase());
-    const thumbBg = item.sev === 'critical' ? 'linear-gradient(135deg,#3d0f18,#160a0e)' : item.sev === 'high' ? 'linear-gradient(135deg,#3a2a0c,#14100a)' : item.sev === 'medium' ? 'linear-gradient(135deg,#10294a,#080f1a)' : 'linear-gradient(135deg,#1a2430,#0a0f14)';
+    const thumbBg = item.sev === 'critical' ? 'linear-gradient(135deg,#3d0f18,#160a0e)' : item.sev === 'watch' ? 'linear-gradient(135deg,#3a2a0c,#14100a)' : item.sev === 'healthy' ? 'linear-gradient(135deg,#0d2b1c,#081009)' : 'linear-gradient(135deg,#10294a,#080f1a)';;
     return `<div class="gp-alert sev-${item.sev}"><button class="gp-alert-head" data-alert-toggle="${esc(item.key)}" type="button" aria-expanded="${open}">`
       + `<span class="gp-alert-bar"></span><span class="cc-thumb" style="flex:0 0 44px;width:44px;height:44px;font-size:16px;background:${thumbBg}" aria-hidden="true">${initial}</span><span class="grow" style="min-width:0;flex:1"><span class="title" style="font-weight:600;overflow-wrap:break-word">${esc(item.title)}</span>`
       + `<div class="meta" style="font-size:10px;color:var(--muted-2);margin-top:2px">${esc(item.sub)}${item.sub && item.meta ? ' · ' : ''}${esc(item.meta)}${item.time ? ` · ${esc(formatRelativeTime(item.time))}` : ''}${ackAt ? ` · ✓ acknowledged ${esc(formatRelativeTime(ackAt))}` : ''}</div></span>`
@@ -135,7 +135,7 @@ export function renderAlerts() {
 
   const ackKeys = Object.keys(acked);
   const liveKeys = new Set(items.map(i => i.key));
-  const unackedCritical = items.filter(i => (i.sev === 'critical' || i.sev === 'high') && !acked[i.key]).length;
+  const unackedCritical = items.filter(i => (i.sev === 'critical' || i.sev === 'watch') && !acked[i.key]).length;
   const ackRows = ackKeys.map(k => {
     const v = acked[k];
     const title = (v && typeof v === 'object' && v.title) ? v.title : (items.find(i => i.key === k)?.title || k);
@@ -148,7 +148,7 @@ export function renderAlerts() {
   el.innerHTML = `<div class="gp-filter-row" role="group" aria-label="Filter alerts by severity">${chips}</div>`
     + (rows || '<div class="gp-state"><div class="gp-state-title">No alerts at this severity</div><div>Nothing in the current snapshot matches this filter.</div></div>')
     + (visible.length > 12 ? `<button id="alertsMore" class="gp-btn gp-more" type="button">${showAll ? 'Show fewer' : `Show all ${visible.length}`}</button>` : '')
-    + `<div class="gp-dash-panel" style="margin-top:8px"><h3>Acknowledgement Status <span style="font-weight:400;color:var(--muted);font-size:10px">${ackKeys.length} acknowledged · ${unackedCritical} unacked critical/high · this device only</span></h3>`
+    + `<div class="gp-dash-panel" style="margin-top:8px"><h3>Acknowledgement Status <span style="font-weight:400;color:var(--muted);font-size:10px">${ackKeys.length} acknowledged · ${unackedCritical} unacked critical/watch · this device only</span></h3>`
     + (ackRows ? `<div class="gp-dash-list">${ackRows}</div>` : '<div class="meta">Nothing acknowledged yet — expand an alert to acknowledge it.</div>') + `</div>`;
 
   el.querySelectorAll('[data-alert-level]').forEach(btn => btn.addEventListener('click', () => {

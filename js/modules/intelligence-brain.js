@@ -38,8 +38,9 @@ function brainSeverity(kind) {
 function brainChip(kind) {
   const sev = brainSeverity(kind);
   if (sev === 'critical') return 'gp-sev-critical';
-  if (sev === 'watch') return 'gp-sev-high';
-  return 'gp-sev-medium';
+  if (sev === 'watch') return 'gp-sev-watch';
+  if (sev === 'healthy') return 'gp-sev-healthy';
+  return 'gp-sev-info';
 }
 
 function asArray(value) {

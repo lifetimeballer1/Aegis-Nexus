@@ -290,3 +290,57 @@
 .gp-timeline button[data-tl-select][aria-pressed="true"]{background:var(--panel-2);outline:1px solid var(--line-strong)}
 @media(prefers-reduced-motion:reduce){.cc-kpi svg,.cc-blocks{animation:none!important;transition:none!important}}
 @media(max-width:720px){.cc-kpi-strip{grid-template-columns:repeat(2,minmax(0,1fr))}.cc-grid,.cc-grid2{grid-template-columns:1fr}.cc-mkt{grid-template-columns:repeat(2,minmax(0,1fr))}.cc-kpi svg{display:none}#dashMap{height:220px!important;min-height:220px}}
+
+/* GUI visual fidelity pass — unified severity coverage + dense workspaces.
+   Severity colors always reference canonical tokens (css/tokens.css). */
+/* Status chip: operational alias (healthy/online) + canonical watch/info. */
+.gp-sev-operational{background:rgba(72,223,131,.12);color:var(--sev-healthy);border-color:rgba(72,223,131,.3)}
+/* Canonical-named alert bars (alerts now emit critical/watch/info/healthy). */
+.gp-alert.sev-watch .gp-alert-bar{background:var(--sev-watch)}
+.gp-alert.sev-info .gp-alert-bar{background:var(--sev-info)}
+.gp-alert.sev-healthy .gp-alert-bar{background:var(--sev-healthy)}
+.gp-alert.sev-operational .gp-alert-bar{background:var(--sev-healthy)}
+/* Canonical-named timeline dots. */
+.gp-tl-dot.sev-watch{background:var(--sev-watch)}
+.gp-tl-dot.sev-info{background:var(--sev-info)}
+.gp-tl-dot.sev-healthy,.gp-tl-dot.sev-operational{background:var(--sev-healthy)}
+/* Canonical-named briefing bars + watch rows. */
+.gp-brief-dev.sev-watch .gp-alert-bar{background:var(--sev-watch)}
+.gp-brief-dev.sev-info .gp-alert-bar{background:var(--sev-info)}
+.gp-brief-dev.sev-healthy .gp-alert-bar,.gp-brief-dev.sev-operational .gp-alert-bar{background:var(--sev-healthy)}
+.gp-brief-watch.sev-healthy,.gp-brief-watch.sev-operational{border-left-color:var(--sev-healthy)}
+/* Canonical-named web/source/map rows. */
+.gp-web-node.sev-healthy,.gp-web-node.sev-operational{border-left-color:var(--sev-healthy)}
+.gp-source-row.sev-info{border-left-color:var(--sev-info)}
+.gp-source-row.sev-operational{border-left-color:var(--sev-healthy)}
+.gp-map-op-row.sev-operational{border-left-color:var(--sev-healthy)}
+
+/* Dedicated workspaces: alerts queue | timeline rail | briefing digest. */
+.gp-workspace-grid{display:grid;gap:12px;grid-template-columns:minmax(0,1fr);min-width:0}
+@media(min-width:1200px){
+  .gp-workspace-grid.gp-workspace-3{grid-template-columns:minmax(0,1.15fr) minmax(0,.95fr) minmax(0,1.05fr);align-items:start}
+}
+/* Dense workspace typography: 11-12px body, 10px micro-labels, mono numerals. */
+.gp-workspace-grid .gp-section-body{font-size:12px}
+.gp-micro-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted-2)}
+.gp-nums{font-family:var(--font-mono);font-variant-numeric:tabular-nums}
+.gp-workspace-grid .gp-tl-title,.gp-workspace-grid .gp-alert .title,
+.gp-workspace-grid .gp-brief-dev .title,.gp-workspace-grid .gp-brief-watch .title{font-size:12px}
+.gp-workspace-grid .gp-state{font-size:12px}
+/* Sources/Validation/Health workspace density. */
+.gp-source-table-dense .gp-source-row,.gp-source-table-dense .gp-dash-row{padding:6px 8px;font-size:11px}
+.gp-source-table-dense .meta{font-size:10px}
+
+/* Glowing map: dark basemap halo + marker glow (CSS only, no lib change). */
+#mapContainer{box-shadow:0 0 0 1px var(--line-strong),0 0 24px rgba(98,160,255,.14),0 0 72px rgba(63,197,255,.07);border-radius:12px}
+#dashMap{box-shadow:0 0 0 1px var(--line),0 0 18px rgba(98,160,255,.12);border-radius:8px}
+#mapContainer canvas{filter:drop-shadow(0 0 5px rgba(98,160,255,.35))}
+@media(prefers-reduced-motion:reduce){
+  #mapContainer,#dashMap{box-shadow:0 0 0 1px var(--line-strong)}
+  #mapContainer canvas{filter:none}
+}
+/* Compact KPI strip: dense tabular numerals, sparkline preserved. */
+.cc-kpi-strip{gap:6px}
+.cc-kpi{padding:8px 10px}
+.cc-kpi .v{font-size:22px}
+.cc-kpi .l{font-size:10px}

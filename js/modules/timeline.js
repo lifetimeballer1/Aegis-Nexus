@@ -98,7 +98,7 @@ export function renderTimeline() {
     : '';
 
   let lastDay = '';
-  const sevName = { critical: 'CRITICAL', high: 'HIGH', medium: 'MEDIUM', low: 'LOW' };
+  const sevName = { critical: 'CRITICAL', watch: 'WATCH', info: 'INFO', healthy: 'HEALTHY' };
   const rows = shown.map((p, idx) => {
     const day = dayLabel(p.at);
     const header = day !== lastDay ? `<div class="gp-tl-meta" style="margin:4px 0 6px;font-weight:700">${esc(day)}</div>` : '';

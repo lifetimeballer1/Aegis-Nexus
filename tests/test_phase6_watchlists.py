@@ -15,7 +15,7 @@ def test_ack_status_table_is_wired():
     assert 'Acknowledgement Status' in text
     assert 'data-ack-clear' in text
     assert 'rotated out of queue' in text
-    assert 'unacked critical/high' in text
+    assert 'unacked critical/watch' in text
     assert 'this device only' in text
 
 

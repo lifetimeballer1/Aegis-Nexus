@@ -26,8 +26,9 @@ function webSeverity(type) {
 function webChip(type) {
   const sev = webSeverity(type);
   if (sev === 'critical') return 'gp-sev-critical';
-  if (sev === 'watch') return 'gp-sev-high';
-  return 'gp-sev-medium';
+  if (sev === 'watch') return 'gp-sev-watch';
+  if (sev === 'healthy') return 'gp-sev-healthy';
+  return 'gp-sev-info';
 }
 
 let webQuery = '';
