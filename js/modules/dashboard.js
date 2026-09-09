@@ -14,13 +14,14 @@ function stories(state) {
   const raw = Array.isArray(liveArticles) ? liveArticles : liveArticles?.articles || snapshot?.stories || [];
   return [...raw].sort((a, b) => new Date(itemTime(b) || 0) - new Date(itemTime(a) || 0));
 }
-function catPill(cat) {
-  const c = String(cat || 'general').toLowerCase();
-  if (/cyber|ransom|malware|hack/.test(c)) return ['cyber', 'CYBER'];
-  if (/econ|market|oil|brent|gold|trade/.test(c)) return ['econ', 'ECONOMIC'];
-  if (/indo|pacific|asia/.test(c)) return ['indo', 'INDO-PACIFIC'];
-  if (/domestic|us |america|crime|city/.test(c)) return ['dom', 'DOMESTIC'];
-  if (/geopol|conflict|war|diplo|middle|europe|israel|ukraine|iran/.test(c)) return ['geo', 'GEOPOLITICAL'];
+function catPill(cat, title = '') {
+  const c = `${cat || ''} ${title || ''}`.toLowerCase();
+  if (/cyber|ransom|malware|hack|sigint/.test(c)) return ['cyber', 'CYBER'];
+  if (/econ|market|oil|brent|gold|trade|stimulus|financial/.test(c)) return ['econ', 'ECONOMIC'];
+  if (/climate|hazard|gdacs|earthquake|flood|wildfire|storm|usgs/.test(c)) return ['geo', 'CLIMATE'];
+  if (/indo|pacific|asia|china|taiwan/.test(c)) return ['indo', 'INDO-PACIFIC'];
+  if (/us-politics|domestic|america|crime|city|cartel|enforcer/.test(c)) return ['dom', 'DOMESTIC'];
+  if (/geopol|conflict|war|diplo|middle|europe|israel|ukraine|iran|russia|gaza|lebanon/.test(c)) return ['geo', 'GEOPOLITICAL'];
   return ['gen', String(cat || 'GENERAL').slice(0, 12).toUpperCase()];
 }
 function blocks(n, max) {
@@ -45,10 +46,8 @@ function sevFor(kind) {
   return 'info';
 }
 const SEV_LEVELS = ['info', 'watch', 'critical', 'healthy'];
-function kpi(value, label, deltaPct, trend, tone, sparkVals, sparkColor) {
-  const d = deltaPct == null ? '<span class="d flat">—</span>'
-    : `<span class="d ${trend === 'up' ? 'up' : trend === 'down' ? 'down' : 'flat'}">${trend === 'up' ? '↑' : trend === 'down' ? '↓' : '—'} ${deltaPct}</span>`;
-  return `<div class="cc-kpi t-${tone}"><div class="v">${value} ${d}</div><div class="l">${esc(label)}</div>${sparklineSVG(sparkVals, { stroke: sparkColor })}<\/div>`;
+function kpi(value, label, sub, tone, sparkVals, sparkColor) {
+  return `<div class="cc-kpi t-${tone}"><div class="v">${value}</div><div class="l">${esc(label)}${sub ? ` <span style="font-weight:400;color:var(--muted-2)">· ${esc(sub)}</span>` : ''}</div>${sparklineSVG(sparkVals, { stroke: sparkColor })}</div>`;
 }
 function donut(online, degraded, failed) {
   const t = (Number(online) || 0) + (Number(degraded) || 0) + (Number(failed) || 0);
@@ -101,20 +100,20 @@ export function renderDashboard() {
   const critEv = events.filter(e => /high|confirmed/i.test(String(e.confidence || ''))).length;
   const emerging = events.filter(e => /low|limited|moderate/i.test(String(e.confidence || ''))).length;
 
-  // KPI sparklines: tension real; others derive honest micro-series from current distribution (no fake history → flat honest spark from single point omitted)
+  // KPI sparklines: tension series is real history; event spark uses real report counts; regions spark omitted (no history → honest, no spark).
   const evSpark = events.slice(0, 12).map(e => e.reportCount).filter(Number.isFinite);
   const kpis =
-    kpi(fmtInt(events.length), 'Active Events', events.length ? `${events.length} tracked` : null, 'flat', 'blue', evSpark.length > 1 ? evSpark : lastT, '#62a0ff')
-    + kpi(fmtInt(hiPri || conflicts.length), 'High Priority', null, 'flat', 'red', lastT, '#ff6678')
-    + kpi(fmtInt(emerging), 'Emerging Risks', null, 'flat', 'amber', lastT, '#ffc857')
-    + kpi(fmtInt(critEv), 'Critical Alerts', null, 'flat', 'red', lastT, '#ff6678')
-    + kpi(fmtInt(order.length), 'Monitored Regions', null, 'flat', 'blue', order.map((_, i) => order.length - i * 0.3), '#62a0ff');
+    kpi(fmtInt(events.length), 'Active Events', 'tracked clusters', 'blue', evSpark.length > 1 ? evSpark : lastT, '#62a0ff')
+    + kpi(fmtInt(hiPri || conflicts.length), 'High Priority', 'escalated conflicts', 'red', lastT, '#ff6678')
+    + kpi(fmtInt(emerging), 'Emerging Risks', 'low-confidence events', 'amber', lastT, '#ffc857')
+    + kpi(fmtInt(critEv), 'Critical Alerts', 'high-confidence events', 'red', lastT, '#ff6678')
+    + kpi(fmtInt(order.length), 'Monitored Regions', 'regions', 'blue', [], '#62a0ff');
 
   const allStories = stories(state);
   const q = query.trim().toLowerCase();
   const filtered = q ? allStories.filter(s => `${s.title || s.headline || ''} ${s.summary || s.summary_snippet || ''} ${s.source || s.sourceName || ''}`.toLowerCase().includes(q)) : allStories;
   const headRows = filtered.slice(0, 5).map(s => {
-    const [pc, pl] = catPill(s.category || s.sourceType || s.source);
+    const [pc, pl] = catPill(s.category || s.sourceType, s.title);
     const title = s.title || s.headline || 'Untitled';
     const sum = (s.summary || s.summary_snippet || s.description || '').slice(0, 110);
     const initial = esc(String(title).trim().charAt(0).toUpperCase() || 'N');
