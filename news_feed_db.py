@@ -6,18 +6,29 @@ polled. A reachable feed with zero entries is recorded as online-empty rather
 than silently looking healthy. For direct publisher feeds that return no entries,
 a GDELT domain mirror is attempted so useful public reporting is not discarded
 just because a publisher's RSS endpoint is sparse or temporarily incomplete.
+
+Observed public-feed limits (documented 2026-09-09 live verification):
+- GDELT Doc API (api.gdeltproject.org) rate-limits bursts with HTTP 429;
+  parallel collectors must space GDELT requests (>=2.5s apart) and retry
+  429/5xx with backoff instead of failing the source immediately.
+- NPR topic feeds (feeds.npr.org) intermittently answer 404 on valid IDs;
+  a single 404 must be retried before the source is marked failed.
+- France 24 https://www.france24.com/en/rss now serves an HTML page, not RSS;
+  HTML payloads are reported as a clean fetch error so quarantine mapping
+  can replace them instead of surfacing an XML ParseError.
 """
 from __future__ import annotations
-import argparse,html,json,re,sqlite3,time
+import argparse,html,json,re,sqlite3,threading,time
 from concurrent.futures import ThreadPoolExecutor,as_completed
 from datetime import datetime,timedelta,timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 from urllib.parse import quote,urlparse
-from urllib.error import HTTPError
+from urllib.error import HTTPError, URLError
 from urllib.request import Request,urlopen
 from xml.etree import ElementTree as ET
-ROOT=Path(__file__).resolve().parent;DATA=ROOT/'data';DB_PATH=ROOT/'news_feed.db';JSON_PATH=DATA/'live_articles.json';STATUS_PATH=DATA/'live_status.json';POLL_SECONDS=300;RETENTION_DAYS=7;MAX_WORKERS=15;FETCH_TIMEOUT=8;EXPORT_LIMIT=2000;USER_AGENT='GlobalPulse/13.0 (+https://github.com/lifetimeballer1/global-pulse)'
+ROOT=Path(__file__).resolve().parent;DATA=ROOT/'data';DB_PATH=ROOT/'news_feed.db';JSON_PATH=DATA/'live_articles.json';STATUS_PATH=DATA/'live_status.json';POLL_SECONDS=300;RETENTION_DAYS=7;MAX_WORKERS=15;FETCH_TIMEOUT=12;GDELT_TIMEOUT=25;NPR_TIMEOUT=15;EXPORT_LIMIT=2000;USER_AGENT='GlobalPulse/13.0 (+https://github.com/lifetimeballer1/global-pulse)'
+FETCH_RETRIES=3;RETRY_BACKOFF_SECONDS=(2.0,8.0,20.0);RETRYABLE_HTTP={429,500,502,503,504};GDELT_MIN_INTERVAL=2.5;_GDELT_LOCK=threading.Lock();_GDELT_LAST=[0.0]
 BUILTIN_SOURCES={
 'cnn':{'name':'CNN','url':'http://rss.cnn.com/rss/edition.rss','type':'news','category':'international'},'fox_politics':{'name':'Fox News Politics','url':'https://moxie.foxnews.com/google-publisher/politics.xml','type':'news','category':'us-politics','coverage':['united-states']},'npr_news':{'name':'NPR News','url':'https://feeds.npr.org/1001/rss.xml','type':'news','category':'us-politics','coverage':['united-states']},'bbc_world':{'name':'BBC World','url':'https://feeds.bbci.co.uk/news/world/rss.xml','type':'news','category':'international'},'guardian_world':{'name':'Guardian World','url':'https://www.theguardian.com/world/rss','type':'news','category':'international'},'al_jazeera':{'name':'Al Jazeera','url':'https://www.aljazeera.com/xml/rss/all.xml','type':'news','category':'international'},'dw_world':{'name':'DW World','url':'https://rss.dw.com/xml/rss-en-world','type':'news','category':'international'},'france24':{'name':'France 24','url':'https://www.france24.com/en/rss','type':'news','category':'international'},'cna_world':{'name':'CNA World','url':'https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml&category=6311','type':'news','category':'international','coverage':['china']},'stars_stripes':{'name':'Stars and Stripes','url':'https://subscribe.stripes.com/rss/top-news.xml','type':'news','category':'security','coverage':['united-states']},'morse_audio':{'name':'Morse Report','url':'https://rss.buzzsprout.com/2637181.rss','type':'podcast','category':'us-politics','coverage':['united-states']},
 'china_security':{'name':'Google News — China Security / PLA','url':'https://news.google.com/rss/search?q=China+PLA+military+Taiwan+South+China+Sea+security+when%3A1d&hl=en-US&gl=US&ceid=US:en','type':'china-security','category':'china-security','coverage':['china']},'china_economy':{'name':'Google News — China Economy / Trade','url':'https://news.google.com/rss/search?q=China+economy+trade+tariffs+exports+semiconductors+markets+when%3A1d&hl=en-US&gl=US&ceid=US:en','type':'china-economics','category':'china-economics','coverage':['china']},'china_politics':{'name':'Google News — China Politics / CCP','url':'https://news.google.com/rss/search?q=China+Xi+CCP+Communist+Party+government+policy+when%3A1d&hl=en-US&gl=US&ceid=US:en','type':'china-politics','category':'china-politics','coverage':['china']},'china_taiwan':{'name':'Google News — China Taiwan / Indo-Pacific','url':'https://news.google.com/rss/search?q=China+Taiwan+Indo-Pacific+Beijing+PLA+diplomacy+when%3A1d&hl=en-US&gl=US&ceid=US:en','type':'china-geopolitics','category':'china-geopolitics','coverage':['china']}}
@@ -52,6 +63,9 @@ def node_link(node):
   if child.tag.endswith('link') and child.attrib.get('href'):return child.attrib['href'].strip()
  return ''
 def parse_feed(payload,source_id,meta):
+ head=bytes(payload[:256]).strip().lower() if isinstance(payload,(bytes,bytearray)) else str(payload[:256]).strip().lower()
+ if head.startswith(b'<!doctype html') or head.startswith(b'<html'):
+  raise ValueError(f"publisher returned HTML page, not RSS (quarantine candidate): {meta['name']}")
  root=ET.fromstring(payload);items=root.findall('.//item');atom=False
  if not items:items=root.findall('.//{http://purl.org/rss/1.0/}item')
  if not items:items=root.findall('.//{http://www.w3.org/2005/Atom}entry');atom=True
@@ -62,15 +76,31 @@ def parse_feed(payload,source_id,meta):
   if not title:title=f"Update from {meta['name']}"
   rows.append({'url':link,'title':title,'published_date':parse_date(pub),'summary_snippet':summary,'source_name':meta['name'],'source_type':meta.get('type','news'),'category':meta.get('category','general'),'author':author,'username':'','credit_metadata':json.dumps({'sourceId':source_id,'sourceUrl':meta['url'],'feedFormat':'atom' if atom else 'rss'},ensure_ascii=False)})
  return rows
+def _polite_gdelt_wait():
+ with _GDELT_LOCK:
+  wait=GDELT_MIN_INTERVAL-(time.monotonic()-_GDELT_LAST[0])
+  if wait>0:time.sleep(wait)
+  _GDELT_LAST[0]=time.monotonic()
+def _timeout_for(url):
+ if 'api.gdeltproject.org' in url:return GDELT_TIMEOUT
+ if 'feeds.npr.org' in url:return NPR_TIMEOUT
+ return FETCH_TIMEOUT
 def fetch(url,timeout=None):
- if timeout is None:timeout=25 if 'api.gdeltproject.org' in url else FETCH_TIMEOUT
+ if timeout is None:timeout=_timeout_for(url)
  req=Request(url,headers={'User-Agent':USER_AGENT,'Accept':'application/rss+xml, application/atom+xml, application/xml, text/xml;q=0.9, */*;q=0.8'})
- try:
-  with urlopen(req,timeout=timeout) as response:return response.read()
- except HTTPError as exc:
-  if exc.code != 429:raise
-  time.sleep(8)
-  with urlopen(req,timeout=timeout) as response:return response.read()
+ last=None
+ for attempt in range(1+FETCH_RETRIES):
+  if 'api.gdeltproject.org' in url:_polite_gdelt_wait()
+  try:
+   with urlopen(req,timeout=timeout) as response:return response.read()
+  except HTTPError as exc:
+   last=exc
+   if int(exc.code or 0) not in RETRYABLE_HTTP or attempt>=FETCH_RETRIES:raise
+  except (URLError,TimeoutError,ConnectionError,OSError) as exc:
+   last=exc
+   if attempt>=FETCH_RETRIES:raise
+  time.sleep(RETRY_BACKOFF_SECONDS[min(attempt,len(RETRY_BACKOFF_SECONDS)-1)])
+ raise RuntimeError(f'fetch retries exhausted: {last}' if last else 'fetch retries exhausted')
 def x_urls(handle):return [f'https://rss.xcancel.com/{handle}/rss',f'https://xcancel.com/{handle}/rss']
 def parse_x_account(handle,display_name):
  last=None
