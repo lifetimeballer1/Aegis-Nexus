@@ -17,7 +17,14 @@
 .node-label{position:absolute;transform:translate(-50%,-50%);white-space:nowrap;color:#e8f5fb;text-shadow:0 2px 8px #000;font:700 10px system-ui,sans-serif;opacity:.88;border:1px solid transparent;border-radius:6px;padding:2px 4px;background:rgba(0,0,0,.28)}
 .node-label .dot{display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:4px}
 .hud{position:fixed;left:14px;top:54px;max-height:calc(100vh - 170px);overflow:auto;width:min(720px,calc(100vw - 28px));z-index:30}.hud.collapsed{transform:translateY(-125%);opacity:0;pointer-events:none}
-.control-toggle{position:fixed;left:14px;top:14px;z-index:1200;border:1px solid var(--line);background:#07121b;color:var(--text);border-radius:9px;padding:8px 10px;min-height:34px;font-size:9px;font-weight:850}.control-toggle.active{color:var(--sev-info);border-color:var(--sev-info)}
+.control-toggle{position:fixed;left:14px;top:14px;z-index:1200;border:1px solid var(--line);background:#07121b;color:var(--text);border-radius:9px;padding:8px 10px;min-height:36px;font-size:9px;font-weight:850}.control-toggle.active{color:var(--sev-info);border-color:var(--sev-info)}
+/* Polish: visible focus ring (page ships its own CSS, not components.css). */
+:where(button,input,select,a):focus-visible{outline:2px solid #62a0ff;outline-offset:2px}
+@media(pointer:coarse){
+  input,button,select{min-height:40px}
+  .control-toggle{min-height:40px}
+  .filter,.period{min-height:40px}
+}
 .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px 12px;backdrop-filter:blur(14px);box-shadow:0 12px 40px #000}.brand{color:var(--sev-info);font-weight:900;letter-spacing:.14em;font-size:11px}.sub{color:var(--muted);font-size:10px;margin-top:4px;line-height:1.4}.row{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
 input,button,select{border:1px solid var(--line);background:#07121b;color:var(--text);border-radius:8px;padding:7px 9px;font-size:10px}select{width:100%;max-width:100%}input{flex:1;min-width:140px}button{cursor:pointer;font-weight:750}button.active,.filter.active{color:var(--sev-info);border-color:var(--sev-info)}#stats{margin-top:8px;color:var(--muted);font-size:10px}.legend{margin-top:6px;color:var(--muted);font-size:9px;line-height:1.35}
 .timeline{position:fixed;left:14px;bottom:14px;z-index:30;width:min(520px,calc(100vw - 28px))}.timeline .card{padding:8px 10px}.timeline b{color:var(--sev-info);font-size:9px;letter-spacing:.1em}
@@ -44,7 +51,7 @@ input,button,select{border:1px solid var(--line);background:#07121b;color:var(--
  </div>
 </div>
 <div class="timeline"><div class="card"><b>NETWORK ACTIVITY</b><div class="row"><button class="period active" data-period="all">ALL</button><button class="period" data-period="24">24H</button><button class="period" data-period="168">7D</button><button class="period" data-period="720">30D</button><button class="period" data-period="2160">90D</button></div><span id="trend"></span></div></div>
-<div id="details" aria-hidden="true"><button id="close" class="detail-close" type="button">CLOSE</button><div id="detail"></div></div>
+<div id="details" role="dialog" aria-label="Entity details" aria-hidden="true"><button id="close" class="detail-close" type="button">CLOSE</button><div id="detail"></div></div>
 <script src="intelligence_web_runtime_guard.js?v=20260907-guard2"></script>
 <script src="intelligence_web_performance.js?v=20260907-perf2"></script>
 <script src="https://cdn.jsdelivr.net/npm/3d-force-graph@1.79.0/dist/3d-force-graph.min.js"></script>
