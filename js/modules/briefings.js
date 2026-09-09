@@ -227,7 +227,7 @@ function renderDrafts(el) {
     </div>
     <div class="gp-dash-panel" style="margin-top:8px"><h3>Analyst notes</h3>
       <textarea id="bdNotes" class="gp-map-search" aria-label="Private working notes" rows="2" maxlength="2000" style="width:100%;resize:vertical" placeholder="Private working notes — stored on this device only.">${esc(draft.notes)}</textarea>
-      <div style="display:flex;gap:6px;margin-top:8px;flex-wrap:wrap"><button class="gp-btn" data-bdexport type="button">Export JSON</button><button class="gp-btn" data-draft-del type="button">Delete draft</button><span class="meta" id="bdSaved" style="align-self:center">${draft.updatedAt ? `Saved ${esc(formatRelativeTime(draft.updatedAt))}` : ''}</span></div>
+      <div style="display:flex;gap:6px;margin-top:8px;flex-wrap:wrap"><button class="gp-btn" data-bdexport type="button">Export JSON</button><button class="gp-btn" data-draft-del type="button">Delete draft</button><span class="meta" id="bdSaved" role="status" style="align-self:center">${draft.updatedAt ? `Saved ${esc(formatRelativeTime(draft.updatedAt))}` : ''}</span></div>
     </div>`
     : '<div class="gp-state"><div class="gp-state-title">No drafts yet</div><div>Start a briefing draft to collect judgments and evidence.</div></div>';
 
