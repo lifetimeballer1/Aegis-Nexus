@@ -344,3 +344,35 @@
 .cc-kpi{padding:8px 10px}
 .cc-kpi .v{font-size:22px}
 .cc-kpi .l{font-size:10px}
+
+/* GUI follow-up — dense terminal workspaces (Alerts/Timeline/Briefings grid
+   + Sources/Health). Dark-terminal aesthetic drawn from css/tokens.css:
+   panel-2 rows, mono numerals via .gp-nums, 10px micro-labels, canonical
+   severity tokens only. Visual-only: nav breakpoints (<900px bottom nav,
+   >=900px left rail), lazy Intelligence Web iframe, and 36px touch targets
+   are untouched. */
+@media(min-width:900px) and (max-width:1199px){
+  .gp-workspace-grid.gp-workspace-3{grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:start}
+  .gp-workspace-grid.gp-workspace-3>#section-briefings{grid-column:1/-1}
+}
+.gp-workspace-grid .gp-section{min-width:0}
+.gp-workspace-grid .gp-section-body{padding:10px 12px}
+.gp-workspace-grid .gp-filter-row{flex-wrap:nowrap;overflow-x:auto;padding-bottom:2px;scrollbar-width:none}
+.gp-workspace-grid .gp-filter-row::-webkit-scrollbar{display:none}
+.gp-workspace-grid .gp-filter{flex:0 0 auto}
+.gp-workspace-grid .gp-alert-head{padding:8px 10px}
+.gp-workspace-grid .gp-brief-dev{padding:8px 10px}
+.gp-workspace-grid .gp-brief-watch{padding:6px 8px}
+.gp-workspace-grid .gp-tl-item{padding-bottom:10px}
+.gp-workspace-grid .gp-brief-head .meta,.gp-workspace-grid .gp-filter-row .meta{overflow-wrap:break-word}
+/* Sources/Health dense workspace: terminal rows on panel-2, mono numerals. */
+.gp-source-kpis{grid-template-columns:repeat(4,minmax(0,1fr));margin-bottom:10px}
+#statusBody .gp-source-table-dense{display:flex;flex-direction:column;gap:6px}
+#statusBody .gp-source-table-dense .gp-source-row,#statusBody .gp-source-table-dense .gp-dash-row{background:var(--panel-2)}
+#statusBody .gp-source-table-dense .gp-source-row .title,#statusBody .gp-source-table-dense .gp-dash-row .title{font-size:11px}
+#statusBody .gp-source-summary{background:var(--panel-2)}
+@media(max-width:720px){
+  .gp-source-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}
+  #statusBody .gp-filter-row{flex-wrap:nowrap;overflow-x:auto;padding-bottom:2px}
+  #statusBody .gp-filter{flex:0 0 auto}
+}

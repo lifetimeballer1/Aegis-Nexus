@@ -111,7 +111,7 @@ function renderRegistry(sources) {
     + `<button class="gp-filter${registryFilter === 'attention' ? ' active' : ''}" data-src-filter="attention" type="button">Needs attention</button>`
     + `<button class="gp-filter${registryFilter === 'all' ? ' active' : ''}" data-src-filter="all" type="button">All sources (${(sources || []).length})</button></div>`
     + `<input id="srcSearch" class="gp-dash-search" type="search" aria-label="Filter sources" placeholder="Filter sources…" value="${esc(registryQuery)}">`
-    + (shown.length ? `<div class="gp-dash-list">${registryRows(shown)}</div><div class="meta" style="margin-top:6px;font-size:10px;color:var(--muted-2)">Showing ${shown.length} of ${ordered.length} matching sources</div>` : '<div class="gp-state"><div class="gp-state-title">No sources match</div><div>No registry entries match the current filter.</div></div>')
+    + (shown.length ? `<div class="gp-dash-list gp-source-table-dense">${registryRows(shown)}</div><div class="meta gp-nums" style="margin-top:6px;font-size:10px;color:var(--muted-2)">Showing ${shown.length} of ${ordered.length} matching sources</div>` : '<div class="gp-state"><div class="gp-state-title">No sources match</div><div>No registry entries match the current filter.</div></div>')
     + (ordered.length > REGISTRY_VISIBLE ? `<button id="srcMore" class="gp-btn gp-more" type="button">${registryExpanded ? 'Show fewer' : `Show all ${ordered.length}`}</button>` : '');
   box.querySelectorAll('[data-src-filter]').forEach(btn => btn.addEventListener('click', () => {
     registryFilter = btn.dataset.srcFilter; registryExpanded = false; renderRegistry(sources);
@@ -172,17 +172,17 @@ export function renderStatus() {
     }).join('');
 
     const coverage = Number(sourceHealth.summary?.dataCoveragePercent);
-    const kpiStrip = `<div class="cc-kpi-strip" role="list" aria-label="Source indicators" style="grid-template-columns:repeat(4,minmax(0,1fr));margin-bottom:10px">`
-      + `<div class="cc-kpi t-blue"><div class="v">${total}</div><div class="l">Active Sources</div></div>`
-      + `<div class="cc-kpi t-green"><div class="v">${onlineWithData}</div><div class="l">Reporting with Data</div></div>`
-      + `<div class="cc-kpi t-red"><div class="v">${failedCount}</div><div class="l">Sources with Issues</div></div>`
-      + `<div class="cc-kpi t-amber"><div class="v">${Number.isFinite(coverage) ? coverage.toFixed(0) + '%' : '—'}</div><div class="l">Data Coverage</div></div></div>`;
+    const kpiStrip = `<div class="cc-kpi-strip gp-source-kpis" role="list" aria-label="Source indicators">`
+      + `<div class="cc-kpi t-blue"><div class="v gp-nums">${total}</div><div class="l">Active Sources</div></div>`
+      + `<div class="cc-kpi t-green"><div class="v gp-nums">${onlineWithData}</div><div class="l">Reporting with Data</div></div>`
+      + `<div class="cc-kpi t-red"><div class="v gp-nums">${failedCount}</div><div class="l">Sources with Issues</div></div>`
+      + `<div class="cc-kpi t-amber"><div class="v gp-nums">${Number.isFinite(coverage) ? coverage.toFixed(0) + '%' : '—'}</div><div class="l">Data Coverage</div></div></div>`;
 
     html += kpiStrip + `
     <div class="gp-card gp-source-summary sev-${pillSev}">
       <div style="display:flex;justify-content:space-between;align-items:center;gap:10px">
         <div>
-          <div style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em">Overall Status</div>
+          <div class="gp-micro-label" style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em">Overall Status</div>
           <div style="font-size:16px;font-weight:700">${failedCount === 0 ? 'All reporting sources online' : `${failedCount} source${failedCount === 1 ? '' : 's'} failing`}</div>
           <div style="font-size:11px;color:var(--muted-2);margin-top:2px">${total} tracked · ${onlineWithData} reporting with data · updated ${escapeHtml(formatRelativeTime(sourceHealth.updatedAt || lastSuccessfulFetch))}</div>
         </div>
@@ -194,8 +194,8 @@ export function renderStatus() {
     </div>
     <div class="gp-source-controls"><input id="statusSearch" class="gp-map-search" type="search" aria-label="Filter sources" placeholder="Filter sources…" value="${escapeHtml(statusQuery)}"></div>
     <div class="gp-filter-row" role="group" aria-label="Filter sources by state">${chips}`
-      + `<span class="meta" style="align-self:center;font-size:10px;color:var(--muted-2)">Showing ${shown.length} of ${visible.length} sources</span></div>`
-      + (rows || '<div class="gp-state"><div class="gp-state-title">No sources match</div><div>Nothing in the health registry matches this state or search.</div></div>')
+      + `<span class="meta gp-nums gp-micro-label" style="align-self:center;font-size:10px;color:var(--muted-2)">Showing ${shown.length} of ${visible.length} sources</span></div>`
+      + (rows ? `<div class="gp-source-table-dense gp-dash-list" role="list" aria-label="Source health">${rows}</div>` : '<div class="gp-state"><div class="gp-state-title">No sources match</div><div>Nothing in the health registry matches this state or search.</div></div>')
       + (visible.length > SOURCE_PAGE ? `<button id="statusMore" class="gp-btn gp-more" type="button">${showAllSources ? 'Show fewer' : `Show all ${visible.length}`}</button>` : '');
 
     if (stamp) stamp.textContent = sourceHealth.updatedAt ? `Updated ${formatRelativeTime(sourceHealth.updatedAt)} · ${online.length}/${list.length} online` : '';
@@ -213,17 +213,17 @@ export function renderStatus() {
           <div class="gp-kpi-value" style="font-size:20px">${esc(formatRelativeTime(live.updatedAt))}</div>
           <div class="meta" style="font-size:10px;color:var(--muted-2)">${fmtInt(live.feedsChecked)} feeds checked · ${fmtInt(live.rowsFetched)} rows · ${fmtInt(live.newArticles)} new · ${fmtInt(live.exportedArticles)} exported</div></div>
         <div class="gp-dash-panel"><h3>Collector Health</h3>
-          <div class="gp-kpi-value" style="font-size:20px;color:var(--sev-healthy)">${fmtInt(live.healthySources)}</div>
+          <div class="gp-kpi-value gp-nums" style="font-size:20px;color:var(--sev-healthy)">${fmtInt(live.healthySources)}</div>
           <div class="meta" style="font-size:10px;color:var(--muted-2)">healthy · ${fmtInt(live.emptySources)} empty · ${fmtInt(failedSources.length)} failed</div></div>
       </div>
-      ${failedSources.length ? `<div class="gp-dash-panel" style="margin-top:8px"><h3>Recent Collector Issues (${failedSources.length})</h3><div class="gp-dash-list">`
+      ${failedSources.length ? `<div class="gp-dash-panel" style="margin-top:8px"><h3>Recent Collector Issues (${failedSources.length})</h3><div class="gp-dash-list gp-source-table-dense">`
         + failedSources.slice(0, 5).map(f => `<div class="gp-dash-row"><div class="grow"><div class="title">${esc(f.source || 'Unnamed feed')}</div><div class="meta">${esc(String(f.error || 'unknown error').slice(0, 160))}</div></div></div>`).join('')
         + '</div></div>' : ''}` : '';
 
   const manifestBlock = artifacts.length ? `
       <div class="gp-dash-panel" style="margin-top:8px"><h3>Artifact Integrity</h3>
-        <div class="meta" style="font-size:10px;color:var(--muted-2);margin-bottom:6px">Manifest-recorded hashes · generated ${esc(formatRelativeTime(manifest.generatedAt))}</div>
-        <div class="gp-dash-list">` + artifacts.map(([name, meta]) => `
+        <div class="meta gp-micro-label" style="font-size:10px;color:var(--muted-2);margin-bottom:6px">Manifest-recorded hashes · generated ${esc(formatRelativeTime(manifest.generatedAt))}</div>
+        <div class="gp-dash-list gp-source-table-dense">` + artifacts.map(([name, meta]) => `
           <div class="gp-dash-row"><div class="grow"><div class="title" style="font-family:var(--font-mono);font-size:11px">${esc(name)}</div>
           <div class="meta">sha256 ${esc(String(meta.sha256 || '').slice(0, 12))}… · ${esc(fmtSize(meta.size))}</div></div></div>`).join('')
       + '</div></div>' : '';
@@ -235,8 +235,8 @@ export function renderStatus() {
   const vFailed = Number(vSummary.failed ?? vResults.filter(r => !r.passed).length);
   const validationBlock = `
       <div class="gp-dash-panel" style="margin-top:8px"><h3>Validation &amp; Data Contracts</h3>
-        ${vResults.length ? `<div class="meta" style="font-size:10px;color:var(--muted-2);margin-bottom:6px">${fmtInt(vRan)} run · ${fmtInt(vPassed)} passed · ${fmtInt(vFailed)} failed · recorded ${esc(formatRelativeTime(validationResults.updatedAt))}</div>
-        <div class="gp-dash-list">` + vResults.map(r => `
+        ${vResults.length ? `<div class="meta gp-nums" style="font-size:10px;color:var(--muted-2);margin-bottom:6px">${fmtInt(vRan)} run · ${fmtInt(vPassed)} passed · ${fmtInt(vFailed)} failed · recorded ${esc(formatRelativeTime(validationResults.updatedAt))}</div>
+        <div class="gp-dash-list gp-source-table-dense">` + vResults.map(r => `
           <div class="gp-dash-row"><div class="grow"><div class="title" style="font-size:11px">${esc(r.contract || r.command || 'contract')}</div>
           <div class="meta">${esc(String(r.detail || '').slice(0, 160))}</div></div>
           <div>${r.passed ? '<span class="gp-sev gp-sev-healthy">Passed</span>' : '<span class="gp-sev gp-sev-critical">Failed</span>'}</div></div>`).join('')
@@ -245,7 +245,7 @@ export function renderStatus() {
   const runs = Array.isArray(pipelineHistory?.runs) ? pipelineHistory.runs : [];
   const historyBlock = `
       <div class="gp-dash-panel" style="margin-top:8px"><h3>Pipeline Run History</h3>
-        ${runs.length ? `<div class="gp-dash-list">` + runs.slice(0, 8).map(r => {
+        ${runs.length ? `<div class="gp-dash-list gp-source-table-dense">` + runs.slice(0, 8).map(r => {
           const ok = String(r.status || '').toLowerCase() === 'success';
           const dur = Number.isFinite(Number(r.durationSeconds)) ? `${Number(r.durationSeconds).toFixed(0)}s` : '—';
           return `<div class="gp-dash-row"><div class="grow"><div class="title" style="font-family:var(--font-mono);font-size:11px">${esc(String(r.runId || 'run').slice(0, 24))}</div>
