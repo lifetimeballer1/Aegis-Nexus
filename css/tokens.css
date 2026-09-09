@@ -22,9 +22,13 @@
   --text: #eef5ff;
   --text-secondary: #c5d4e6;
   --muted: #91a4b8;
-  /* Contrast audit 2026-09-09: --muted-2 raised from #6b7f94 to #8499ae so
-     10px micro-labels hold >= 4.5:1 on --bg/--panel. Do not darken without
-     re-checking micro-label contrast. */
+  /* Contrast audit 2026-09-09, VERIFIED by computed relative-luminance
+     ratios (WCAG formula): --muted-2 #8499ae holds >= 4.5:1 for 10px
+     micro-labels on every surface — 6.76:1 on --bg, 5.99:1 on
+     --bg-elevated, 5.78:1 on --panel, 5.26:1 on --panel-2 (worst case).
+     Companion checks: --muted 6.63:1, --text-secondary 11.26:1,
+     --sev-critical 6.00:1, --sev-info 6.46:1 on --panel. Do not darken
+     --muted-2 or lighten --panel-2 without re-checking micro-labels. */
   --muted-2: #8499ae;
 
   /* Accent colors */
