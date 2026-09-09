@@ -169,7 +169,7 @@ export function renderDashboard() {
       <div class="cc-panel"><h3>🌐 Global Map <a href="#section-map">View Full Map →</a></h3>
         <div style="font-size:11px;color:var(--muted);margin-bottom:6px">All Domains · 24H · ${fmtInt(events.length)} signals · dark operational basemap</div>
         <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px">${order.slice(0, 6).map(n => `<span class="cc-pill gen">${esc(String(n).toUpperCase().slice(0, 14))} · ${fmtInt(regions[n]?.events ?? regions[n]?.reports)}</span>`).join('')}</div>
-        <div id="dashMap" role="img" aria-label="Mini operational map" style="min-height:240px;height:260px;border:1px solid var(--line);border-radius:8px;background:#050b13;z-index:1"></div>
+        <div id="dashMap" role="img" aria-label="Mini operational map" style="min-height:240px;height:260px;border:1px solid var(--line);border-radius:8px;background:#0a1826;z-index:1"></div>
         <div class="cc-legend" aria-label="Map legend"><span><i style="background:var(--red)"></i>Critical</span><span><i style="background:var(--amber)"></i>Elevated</span><span><i style="background:var(--blue)"></i>Notable</span><span><i style="background:#cbd5e1"></i>Monitoring</span></div></div>
       <div class="cc-panel"><h3>🎯 Priority Regions <a href="#section-map">View All →</a></h3>
         <table class="cc-table" aria-label="Priority regions"><thead><tr><th>#</th><th>Region</th><th>Activity</th><th>Impact</th><th>Trend</th></tr></thead><tbody>${regionRows}</tbody></table>

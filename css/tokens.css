@@ -2,17 +2,19 @@
    Premium dark intelligence / financial terminal aesthetic */
 
 :root {
-  /* Core backgrounds */
+  /* Core backgrounds — concept-ref navy band (1280x960 refs, user-confirmed):
+     panels sit in #0e1e2a–#152733, steel-blue #1b3854 for secondary chrome.
+     Page depth (--bg/--bg-deep) stays near-black for contrast. */
   --bg: #050a10;
   --bg-deep: #03070c;
-  --bg-elevated: #081019;
-  --panel: #0b131d;
-  --panel-2: #0e1824;
+  --bg-elevated: #0c1a27;
+  --panel: #0e1e2a;
+  --panel-2: #142636;
   --panel2: var(--panel-2);
-  --panel-hover: #111e2c;
+  --panel-hover: #16293a;
 
-  /* Borders & lines */
-  --line: #1b2b3d;
+  /* Borders & lines — secondary chrome in steel-blue. */
+  --line: #1b3854;
   --line-strong: #2a3f55;
   --line-focus: #3d5a7a;
 
