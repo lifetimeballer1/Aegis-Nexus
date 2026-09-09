@@ -48,6 +48,15 @@ Never touched: `data/`, `artifacts/`, pipeline/build/validate/collector scripts.
     status/timeline) + brain node cards.
 15. `ef46aa3` map header quick-filters mirror ops filter state
     (`.gp-btn.active` style added).
+16. `08d93c3` `aria-pressed` on acknowledge + watchlist pin toggles.
+17. `cd6bd04` web node selection parity with brain cards
+    (`selected` + `aria-pressed`, in-place sync).
+18. `58b9ba3` briefings watchlist header honest over 10-item slice.
+19. `9480ad8` command headline link hover affordance.
+20. `a361e5b` global `.meta` micro-copy base rule (bare usages normalized).
+21. `d8349b0` alert evidence links disclose 4-item cap.
+22. `313a909` intelweb 3D-page toggles (filter/period/orbit/labels/flow)
+    gain `aria-pressed` + period chips gain active-state sync.
 
 ## Bugs fixed along the way
 - Page-width cap (`max-width:1400px`) applied to nothing (`.gp-main` dead).
