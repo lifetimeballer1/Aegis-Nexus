@@ -70,7 +70,7 @@ export function renderBriefings() {
     return `<div class="gp-brief-watch sev-${sev}"><div class="grow"><div class="title">${esc(w.entity || 'Unnamed entity')}</div>`
       + `<div class="meta">score ${w.score ?? '—'} · ${w.evidenceCount ?? '—'} evidence records${factors.length ? ` · ${esc(factors.join('; '))}` : ''}</div></div>`
       + `<span class="gp-brief-level">${deltaArrow(w.delta)} ${esc(w.level || 'ungraded')}</span>`
-      + (w.entity ? `<button class="gp-btn" data-watch-pin="${esc(w.entity)}" type="button" title="Pin to My Watchlist on this device">${pinned ? 'Pinned ✓' : 'Pin'}</button>` : '') + `</div>`;
+      + (w.entity ? `<button class="gp-btn" data-watch-pin="${esc(w.entity)}" type="button" aria-pressed="${pinned ? 'true' : 'false'}" title="Pin to My Watchlist on this device">${pinned ? 'Pinned ✓' : 'Pin'}</button>` : '') + `</div>`;
   }).join('');
   const myRows = pins.map(name => {
     const live = watchlist.find(w => w.entity === name);

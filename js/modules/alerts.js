@@ -138,7 +138,7 @@ export function renderAlerts() {
       + `<div class="meta" style="font-size:10px;color:var(--muted-2);margin-top:2px">${esc(item.sub)}${item.sub && item.meta ? ' · ' : ''}${esc(item.meta)}${item.time ? ` · ${esc(formatRelativeTime(item.time))}` : ''}${ackAt ? ` · ✓ acknowledged ${esc(formatRelativeTime(ackAt))}` : ''}</div></span>`
       + `<span class="gp-sev gp-sev-${item.sev}">${esc(item.sevLabel)}</span></button>`
       + (open ? `<div class="gp-alert-detail">${item.detail ? `<div style="margin-bottom:6px">${esc(item.detail)}</div>` : ''}${links || '<div style="color:var(--muted-2)">No linked evidence records in this snapshot.</div>'}`
-        + `<div style="margin-top:8px;display:flex;gap:6px;flex-wrap:wrap"><button class="gp-btn" data-alert-ack="${esc(item.key)}" type="button" title="Stored only on this device">${ackAt ? 'Clear acknowledgement' : 'Acknowledge'}</button><button class="gp-btn" data-brief-add="${esc(item.key)}" data-brief-title="${esc(item.title)}" type="button" title="Saved to the active briefing draft on this device">Add to briefing</button></div></div>` : '')
+        + `<div style="margin-top:8px;display:flex;gap:6px;flex-wrap:wrap"><button class="gp-btn" data-alert-ack="${esc(item.key)}" type="button" aria-pressed="${ackAt ? 'true' : 'false'}" title="Stored only on this device">${ackAt ? 'Clear acknowledgement' : 'Acknowledge'}</button><button class="gp-btn" data-brief-add="${esc(item.key)}" data-brief-title="${esc(item.title)}" type="button" title="Saved to the active briefing draft on this device">Add to briefing</button></div></div>` : '')
       + '</div>';
   }).join('');
 
