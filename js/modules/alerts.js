@@ -53,6 +53,7 @@ function esc(value) {
 
 function evidenceLinks(entries) {
   const out = [];
+  const total = Array.isArray(entries) ? entries.length : 0;
   for (const entry of (entries || []).slice(0, 4)) {
     if (!entry) continue;
     if (typeof entry === 'string') {
@@ -65,6 +66,7 @@ function evidenceLinks(entries) {
     if (/^https?:\/\//i.test(url)) out.push(`<div><a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(title || 'Open source ↗')}</a></div>`);
     else if (String(title).trim()) out.push(`<div>${esc(String(title).trim())}</div>`);
   }
+  if (total > 4) out.push(`<div class="meta">Showing 4 of ${total} evidence entries.</div>`);
   return out.join('');
 }
 
