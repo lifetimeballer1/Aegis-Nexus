@@ -99,11 +99,17 @@ export function renderTimeline() {
 
   let lastDay = '';
   const sevName = { critical: 'CRITICAL', watch: 'WATCH', info: 'INFO', healthy: 'HEALTHY' };
+  /* Honest day counts (2026-09-09): day separators tally the visible slice
+     only, so under MAX_POINTS truncation they read "N shown" — never a day
+     total. The filter-row footer ("Showing X of Y signals") carries the
+     full totals. Untruncated lists keep the plain "N signals" label. */
+  const truncated = points.length > shown.length;
+  const dayUnit = truncated ? 'shown' : 'signals';
   const dayCounts = {};
   for (const p of shown) { const d = dayLabel(p.at); dayCounts[d] = (dayCounts[d] || 0) + 1; }
   const rows = shown.map((p, idx) => {
     const day = dayLabel(p.at);
-    const header = day !== lastDay ? `<div class="gp-tl-day" role="separator" aria-label="${esc(day)}, ${dayCounts[day]} signals"><span>${esc(day)}</span><span class="gp-tl-day-count gp-nums">${dayCounts[day]} signals</span></div>` : '';
+    const header = day !== lastDay ? `<div class="gp-tl-day" role="separator" aria-label="${esc(day)}, ${dayCounts[day]} ${dayUnit}"><span>${esc(day)}</span><span class="gp-tl-day-count gp-nums">${dayCounts[day]} ${dayUnit}</span></div>` : '';
     lastDay = day;
     const sev = confidenceSeverity(p.confidence);
     const meta = [`${p.reports ?? '—'} reports`, `${p.sources ?? '—'} sources`, p.confidence ? `${p.confidence} confidence` : 'confidence ungraded', formatRelativeTime(p.at.toISOString())].join(' · ');
