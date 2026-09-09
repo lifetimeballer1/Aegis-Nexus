@@ -11,6 +11,15 @@ let levelFilter = 'all';
 let expandedKey = null;
 let showAll = false;
 
+const LEVEL_KEY = 'gp.alertLevel.v1';
+try {
+  const saved = localStorage.getItem(LEVEL_KEY);
+  if (saved === 'all' || LEVELS.includes(saved)) levelFilter = saved;
+} catch {}
+function persistLevel() {
+  try { localStorage.setItem(LEVEL_KEY, levelFilter); } catch {}
+}
+
 const ACK_KEY = 'gp.alertAck.v1';
 function loadAck() {
   try { const raw = JSON.parse(localStorage.getItem(ACK_KEY) || '{}'); return raw && typeof raw === 'object' ? raw : {}; }
@@ -118,20 +127,32 @@ export function renderAlerts() {
   const chips = [`<button class="gp-filter${levelFilter === 'all' ? ' active' : ''}" data-alert-level="all" type="button">All (${counts.all})</button>`]
     .concat(LEVELS.map(level => `<button class="gp-filter${levelFilter === level ? ' active' : ''}" data-alert-level="${level}" type="button">${LEVEL_LABEL[level]} (${counts[level]})</button>`)).join('');
 
-  const rows = shown.map(item => {
+  const rowsByGroup = (list) => list.map(item => {
     const open = expandedKey === item.key;
     const links = evidenceLinks(item.evidence);
     const ackAt = ackTime(item.key);
     const initial = esc(String(item.title || 'A').trim().charAt(0).toUpperCase());
     const thumbBg = item.sev === 'critical' ? 'linear-gradient(135deg,#3d0f18,#160a0e)' : item.sev === 'watch' ? 'linear-gradient(135deg,#3a2a0c,#14100a)' : item.sev === 'healthy' ? 'linear-gradient(135deg,#0d2b1c,#081009)' : 'linear-gradient(135deg,#10294a,#080f1a)';;
-    return `<div class="gp-alert sev-${item.sev}"><button class="gp-alert-head" data-alert-toggle="${esc(item.key)}" type="button" aria-expanded="${open}">`
-      + `<span class="gp-alert-bar"></span><span class="cc-thumb" style="flex:0 0 44px;width:44px;height:44px;font-size:16px;background:${thumbBg}" aria-hidden="true">${initial}</span><span class="grow" style="min-width:0;flex:1"><span class="title" style="font-weight:600;overflow-wrap:break-word">${esc(item.title)}</span>`
+    return `<div class="gp-alert sev-${item.sev}"><button class="gp-alert-head" data-alert-toggle="${esc(item.key)}" type="button" aria-expanded="${open}" aria-label="${esc(item.title)} — ${esc(item.sevLabel)}">`
+      + `<span class="gp-alert-bar" aria-hidden="true"></span><span class="cc-thumb gp-alert-thumb" style="flex:0 0 36px;width:36px;height:36px;font-size:14px;background:${thumbBg}" aria-hidden="true">${initial}</span><span class="grow" style="min-width:0;flex:1"><span class="title" style="font-weight:600;overflow-wrap:break-word">${esc(item.title)}</span>`
       + `<div class="meta" style="font-size:10px;color:var(--muted-2);margin-top:2px">${esc(item.sub)}${item.sub && item.meta ? ' · ' : ''}${esc(item.meta)}${item.time ? ` · ${esc(formatRelativeTime(item.time))}` : ''}${ackAt ? ` · ✓ acknowledged ${esc(formatRelativeTime(ackAt))}` : ''}</div></span>`
       + `<span class="gp-sev gp-sev-${item.sev}">${esc(item.sevLabel)}</span></button>`
       + (open ? `<div class="gp-alert-detail">${item.detail ? `<div style="margin-bottom:6px">${esc(item.detail)}</div>` : ''}${links || '<div style="color:var(--muted-2)">No linked evidence records in this snapshot.</div>'}`
         + `<div style="margin-top:8px;display:flex;gap:6px;flex-wrap:wrap"><button class="gp-btn" data-alert-ack="${esc(item.key)}" type="button" title="Stored only on this device">${ackAt ? 'Clear acknowledgement' : 'Acknowledge'}</button><button class="gp-btn" data-brief-add="${esc(item.key)}" data-brief-title="${esc(item.title)}" type="button" title="Saved to the active briefing draft on this device">Add to briefing</button></div></div>` : '')
       + '</div>';
   }).join('');
+
+  /* Grouping visuals: when viewing All, cluster rows under severity group
+   * headers (rank order, real counts); a filtered view stays a flat list. */
+  const rows = levelFilter === 'all'
+    ? LEVELS.map(level => {
+        const group = shown.filter(i => i.sev === level);
+        if (!group.length) return '';
+        return `<div class="gp-alert-group" role="group" aria-label="${LEVEL_LABEL[level]} alerts, ${group.length} shown of ${counts[level]} total">`
+          + `<div class="gp-micro-label gp-alert-group-head" aria-hidden="true">${LEVEL_LABEL[level]} · ${group.length}/${counts[level]}</div>`
+          + rowsByGroup(group) + '</div>';
+      }).join('')
+    : rowsByGroup(shown);
 
   const ackKeys = Object.keys(acked);
   const liveKeys = new Set(items.map(i => i.key));
@@ -152,7 +173,7 @@ export function renderAlerts() {
     + (ackRows ? `<div class="gp-dash-list">${ackRows}</div>` : '<div class="meta">Nothing acknowledged yet — expand an alert to acknowledge it.</div>') + `</div>`;
 
   el.querySelectorAll('[data-alert-level]').forEach(btn => btn.addEventListener('click', () => {
-    levelFilter = btn.dataset.alertLevel; expandedKey = null; showAll = false; renderAlerts();
+    levelFilter = btn.dataset.alertLevel; expandedKey = null; showAll = false; persistLevel(); renderAlerts();
   }));
   el.querySelectorAll('[data-alert-toggle]').forEach(btn => btn.addEventListener('click', () => {
     expandedKey = expandedKey === btn.dataset.alertToggle ? null : btn.dataset.alertToggle; renderAlerts();
@@ -179,5 +200,5 @@ export function renderAlerts() {
 export function getAlertLevel() { return levelFilter; }
 export function setAlertLevel(level) {
   if (level !== 'all' && !LEVELS.includes(level)) return;
-  levelFilter = level; expandedKey = null; showAll = false; renderAlerts();
+  levelFilter = level; expandedKey = null; showAll = false; persistLevel(); renderAlerts();
 }

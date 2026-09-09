@@ -386,3 +386,15 @@
 #statusBody .gp-source-table-dense .gp-source-row,#statusBody .gp-source-table-dense .gp-dash-row{padding:5px 8px;font-size:11px;line-height:1.4}
 #statusBody .gp-state{padding:16px 12px}
 #statusBody .gp-state[role="status"]{border:1px dashed var(--line-strong);border-radius:var(--radius)}
+
+/* Polish grind 2 — Alerts queue: grouping visuals + denser rows.
+   Group heads are sticky micro-labels; rows tighten to 11px/1.35. */
+.gp-alert-group{margin-bottom:10px}
+.gp-alert-group:last-of-type{margin-bottom:0}
+.gp-alert-group-head{position:sticky;top:0;z-index:3;background:var(--panel);padding:4px 2px;margin-bottom:6px;border-bottom:1px solid var(--line)}
+#alertsBody .gp-alert{margin-bottom:6px}
+#alertsBody .gp-alert-head{padding:7px 10px;gap:7px}
+#alertsBody .gp-alert .title{font-size:11px;line-height:1.35}
+#alertsBody .gp-alert .meta{font-size:10px;line-height:1.4}
+#alertsBody .gp-alert-thumb{border-radius:8px}
+#alertsBody .gp-alert-detail{padding:8px 10px;font-size:11px;line-height:1.45}
