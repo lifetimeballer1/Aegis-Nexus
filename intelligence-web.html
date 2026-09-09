@@ -18,15 +18,18 @@
 .node-label .dot{display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:4px}
 .hud{position:fixed;left:14px;top:54px;max-height:calc(100vh - 170px);overflow:auto;width:min(720px,calc(100vw - 28px));z-index:30}.hud.collapsed{transform:translateY(-125%);opacity:0;pointer-events:none}
 .control-toggle{position:fixed;left:14px;top:14px;z-index:1200;border:1px solid var(--line);background:#0e1e2a;color:var(--text);border-radius:9px;padding:8px 10px;min-height:36px;font-size:9px;font-weight:850}.control-toggle.active{color:var(--sev-info);border-color:var(--sev-info)}
-/* Polish: visible focus ring (page ships its own CSS, not components.css). */
-:where(button,input,select,a):focus-visible{outline:2px solid #62a0ff;outline-offset:2px}
+/* Polish: visible focus ring (page ships its own CSS, not components.css).
+   Uses the canonical --sev-info token (= #62a0ff) so WebGL-page focus
+   matches the app chrome. */
+:where(button,input,select,a):focus-visible{outline:2px solid var(--sev-info);outline-offset:2px}
+.hud{transition:transform var(--duration) var(--ease),opacity var(--duration) var(--ease)}
 @media(pointer:coarse){
   input,button,select{min-height:40px}
   .control-toggle{min-height:40px}
   .filter,.period{min-height:40px}
 }
 .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px 12px;backdrop-filter:blur(14px);box-shadow:0 12px 40px #000}.brand{color:var(--sev-info);font-weight:900;letter-spacing:.14em;font-size:11px}.sub{color:var(--muted);font-size:10px;margin-top:4px;line-height:1.4}.row{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
-input,button,select{border:1px solid var(--line);background:#0e1e2a;color:var(--text);border-radius:8px;padding:7px 9px;font-size:10px}select{width:100%;max-width:100%}input{flex:1;min-width:140px}button{cursor:pointer;font-weight:750}button.active,.filter.active{color:var(--sev-info);border-color:var(--sev-info)}#stats{margin-top:8px;color:var(--muted);font-size:10px}.legend{margin-top:6px;color:var(--muted);font-size:9px;line-height:1.35}
+input,button,select{border:1px solid var(--line);background:#0e1e2a;color:var(--text);border-radius:8px;padding:7px 9px;font-size:10px}select{width:100%;max-width:100%}input{flex:1;min-width:140px}button{cursor:pointer;font-weight:750}button:hover{border-color:var(--line-strong);background:#14273a}button:active{transform:translateY(1px)}button:disabled{opacity:.45;cursor:not-allowed;transform:none}button.active,.filter.active{color:var(--sev-info);border-color:var(--sev-info)}button.active:hover,.filter.active:hover{background:#14273a}#stats{margin-top:8px;color:var(--muted);font-size:10px}.legend{margin-top:6px;color:var(--muted);font-size:9px;line-height:1.35}
 .timeline{position:fixed;left:14px;bottom:14px;z-index:30;width:min(520px,calc(100vw - 28px))}.timeline .card{padding:8px 10px}.timeline b{color:var(--sev-info);font-size:9px;letter-spacing:.1em}
 #details{position:fixed;right:14px;top:14px;width:min(360px,calc(100vw - 28px));max-height:calc(100vh - 28px);overflow:auto;z-index:40;display:none;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px;backdrop-filter:blur(14px)}#details.open{display:block}#detail{padding-top:30px}.detail-close{position:absolute;right:10px;top:8px}
 #loading{position:fixed;inset:0;display:grid;place-items:center;background:rgba(0,0,0,.55);z-index:2000;color:var(--muted);font-size:12px}
