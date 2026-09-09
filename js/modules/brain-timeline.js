@@ -69,8 +69,8 @@ function render() {
     const title=textOf(item)||'Intelligence update';
     const source=item?.source||item?.publisher||'';
     const url=item?.url||item?.href||evidence?.[0]?.url||'';
-    const link=/^https?:\/\//i.test(url)?`<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer" style="color:var(--accent);text-decoration:none">Source ↗</a>`:'';
-    return `<div style="margin-top:7px;padding:8px;border-left:2px solid var(--accent);background:var(--bg);border-radius:7px"><div style="font-size:11px;font-weight:600">${escapeHtml(title)}</div><div style="font-size:10px;color:var(--muted-2);margin-top:3px">${escapeHtml(date.toISOString())}${source?` · ${escapeHtml(source)}`:''}</div>${link?`<div style="margin-top:4px;font-size:10px">${link}</div>`:''}</div>`;
+    const link=/^https?:\/\//i.test(url)?`<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer" style="color:var(--sev-info);text-decoration:none">Source ↗</a>`:'';
+    return `<div style="margin-top:7px;padding:8px;border-left:2px solid var(--sev-info);background:var(--bg);border-radius:7px"><div style="font-size:11px;font-weight:600">${escapeHtml(title)}</div><div style="font-size:10px;color:var(--muted-2);margin-top:3px">${escapeHtml(date.toISOString())}${source?` · ${escapeHtml(source)}`:''}</div>${link?`<div style="margin-top:4px;font-size:10px">${link}</div>`:''}</div>`;
   }).join(''):`<div style="font-size:11px;color:var(--muted-2);margin-top:7px">No explicitly time-stamped evidence or change record is linked to this node in the current artifact.</div>`}${combined.length>5?`<button id="gpBrainTimelineMore" class="gp-btn" type="button" style="margin-top:8px;width:100%">${showAll?'Show fewer':'See more timeline items'}</button>`:''}`;
   host.appendChild(wrap);
   wrap.querySelector('#gpBrainTimelineMore')?.addEventListener('click',()=>{showAll=!showAll;render();});

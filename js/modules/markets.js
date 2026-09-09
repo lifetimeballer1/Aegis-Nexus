@@ -82,7 +82,7 @@ export function renderMarkets() {
         const marketTime = m.marketTime || m.updatedAt || '';
         const sourceUrl = m.sourceUrl || m.url || '';
         const sourceLink = /^https?:\/\//i.test(String(sourceUrl))
-          ? `<a href="${escapeHtml(String(sourceUrl))}" target="_blank" rel="noopener noreferrer" style="color:var(--accent);text-decoration:none">Source ↗</a>`
+          ? `<a href="${escapeHtml(String(sourceUrl))}" target="_blank" rel="noopener noreferrer" style="color:var(--sev-info);text-decoration:none">Source ↗</a>`
           : '';
 
         return `

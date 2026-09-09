@@ -77,7 +77,7 @@ function evidenceHtml(items, limit) {
     const url = String(item.url || item.href || '').trim();
     const meta = [source, time].filter(Boolean).join(' · ');
     const link = /^https?:\/\//i.test(url)
-      ? `<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer" style="color:var(--accent);text-decoration:none">Open source ↗</a>`
+      ? `<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer" style="color:var(--sev-info);text-decoration:none">Open source ↗</a>`
       : '';
     return `<div style="margin-top:7px;padding:8px;border:1px solid var(--line);border-radius:8px;font-size:11px"><div style="font-weight:600">${escapeHtml(title)}</div>${meta?`<div style="color:var(--muted-2);margin-top:3px">${escapeHtml(meta)}</div>`:''}${link?`<div style="margin-top:4px">${link}</div>`:''}</div>`;
   }).join('');
