@@ -17,20 +17,10 @@
 .gp-status-pill.sev-watch{color:var(--sev-watch)}
 .gp-status-pill.sev-critical{color:var(--sev-critical)}
 
-/* KPI strip */
-.gp-kpi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;margin-bottom:12px}
-.gp-kpi{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--sev-info);border-radius:var(--radius);padding:10px 12px;min-width:0}
-.gp-kpi.sev-info{border-left-color:var(--sev-info)}
-.gp-kpi.sev-watch{border-left-color:var(--sev-watch)}
-.gp-kpi.sev-critical{border-left-color:var(--sev-critical)}
-.gp-kpi.sev-healthy{border-left-color:var(--sev-healthy)}
+/* KPI value numerals (status.js pipeline-stage cards reuse this class; the
+   legacy .gp-kpi card/grid/label/sub family was retired 2026-09-09 —
+   Command Center KPIs use .cc-kpi instead). */
 .gp-kpi-value{font-size:24px;font-weight:800;line-height:1.1;font-variant-numeric:tabular-nums}
-.gp-kpi.sev-info .gp-kpi-value{color:var(--sev-info)}
-.gp-kpi.sev-watch .gp-kpi-value{color:var(--sev-watch)}
-.gp-kpi.sev-critical .gp-kpi-value{color:var(--sev-critical)}
-.gp-kpi.sev-healthy .gp-kpi-value{color:var(--sev-healthy)}
-.gp-kpi-label{font-size:11px;font-weight:700;margin-top:2px}
-.gp-kpi-sub{font-size:10px;color:var(--muted-2);margin-top:2px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 
 /* Dashboard panels */
 .gp-dash-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:8px}
@@ -43,19 +33,11 @@
 .gp-dash-row .grow{min-width:0;flex:1}
 .gp-dash-row .title{font-weight:600}
 .gp-dash-row .meta{font-size:10px;color:var(--muted-2);margin-top:2px}
-.gp-region-bar{display:flex;align-items:center;gap:8px;font-size:12px}
-.gp-region-bar .rname{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .gp-trend-up{color:var(--sev-watch);font-weight:800}
 .gp-trend-down{color:var(--sev-info);font-weight:800}
 .gp-trend-flat{color:var(--muted-2);font-weight:800}
-.gp-market-row{display:flex;align-items:baseline;gap:8px;font-size:12px;padding:6px 0;border-top:1px solid var(--line)}
-.gp-market-row:first-of-type{border-top:0}
-.gp-market-row .mname{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.gp-market-row .mprice{font-family:var(--font-mono);font-variant-numeric:tabular-nums}
 .gp-up{color:var(--sev-healthy)}
 .gp-down{color:var(--sev-critical)}
-.gp-health-issue{display:flex;gap:8px;align-items:flex-start;font-size:12px;padding:6px 0;border-top:1px solid var(--line)}
-.gp-health-issue:first-of-type{border-top:0}
 
 @media(max-width:720px){
   .gp-header{flex-wrap:wrap}
@@ -300,28 +282,25 @@
 @media(max-width:720px){.cc-kpi-strip{grid-template-columns:repeat(2,minmax(0,1fr))}.cc-grid,.cc-grid2{grid-template-columns:1fr}.cc-mkt{grid-template-columns:repeat(2,minmax(0,1fr))}.cc-kpi svg{display:none}#dashMap{height:220px!important;min-height:220px}}
 
 /* GUI visual fidelity pass — unified severity coverage + dense workspaces.
-   Severity colors always reference canonical tokens (css/tokens.css). */
-/* Status chip: operational alias (healthy/online) + canonical watch/info. */
-.gp-sev-operational{background:rgba(72,223,131,.12);color:var(--sev-healthy);border-color:rgba(72,223,131,.3)}
+   Severity colors always reference canonical tokens (css/tokens.css).
+   Canonical set is info | watch | critical | healthy (js/core/severity.js);
+   the non-canonical `operational` aliases were retired 2026-09-09. */
 /* Canonical-named alert bars (alerts now emit critical/watch/info/healthy). */
 .gp-alert.sev-watch .gp-alert-bar{background:var(--sev-watch)}
 .gp-alert.sev-info .gp-alert-bar{background:var(--sev-info)}
 .gp-alert.sev-healthy .gp-alert-bar{background:var(--sev-healthy)}
-.gp-alert.sev-operational .gp-alert-bar{background:var(--sev-healthy)}
 /* Canonical-named timeline dots. */
 .gp-tl-dot.sev-watch{background:var(--sev-watch)}
 .gp-tl-dot.sev-info{background:var(--sev-info)}
-.gp-tl-dot.sev-healthy,.gp-tl-dot.sev-operational{background:var(--sev-healthy)}
+.gp-tl-dot.sev-healthy{background:var(--sev-healthy)}
 /* Canonical-named briefing bars + watch rows. */
 .gp-brief-dev.sev-watch .gp-alert-bar{background:var(--sev-watch)}
 .gp-brief-dev.sev-info .gp-alert-bar{background:var(--sev-info)}
-.gp-brief-dev.sev-healthy .gp-alert-bar,.gp-brief-dev.sev-operational .gp-alert-bar{background:var(--sev-healthy)}
-.gp-brief-watch.sev-healthy,.gp-brief-watch.sev-operational{border-left-color:var(--sev-healthy)}
+.gp-brief-dev.sev-healthy .gp-alert-bar{background:var(--sev-healthy)}
+.gp-brief-watch.sev-healthy{border-left-color:var(--sev-healthy)}
 /* Canonical-named web/source/map rows. */
-.gp-web-node.sev-healthy,.gp-web-node.sev-operational{border-left-color:var(--sev-healthy)}
+.gp-web-node.sev-healthy{border-left-color:var(--sev-healthy)}
 .gp-source-row.sev-info{border-left-color:var(--sev-info)}
-.gp-source-row.sev-operational{border-left-color:var(--sev-healthy)}
-.gp-map-op-row.sev-operational{border-left-color:var(--sev-healthy)}
 
 /* Dedicated workspaces: alerts queue | timeline rail | briefing digest. */
 .gp-workspace-grid{display:grid;gap:12px;grid-template-columns:minmax(0,1fr);min-width:0}
