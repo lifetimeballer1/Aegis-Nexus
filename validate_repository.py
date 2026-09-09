@@ -86,6 +86,8 @@ def main() -> None:
         "run_snapshot_resilient.py",
         "run_snapshot_counter_cartel.py",
         "build_canonical_intelligence.py",
+        "global_pulse_market_display.css",
+        "global_pulse_market_style.css",
     ]
     leftovers = [x for x in retired if (ROOT / x).exists()]
     if leftovers:

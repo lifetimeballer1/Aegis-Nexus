@@ -75,20 +75,6 @@ jobs:
         run: python --version && node --version && git --version
       - name: Run canonical refresh with per-stage verification
         run: python refresh_pipeline.py
-      - name: Repair map tile source
-        run: |
-          python - <<'PY'
-          from pathlib import Path
-          p=Path('index.html')
-          s=p.read_text(encoding='utf-8')
-          old='https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png'
-          new='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
-          if old in s:
-              s=s.replace(old,new)
-              s=s.replace("'&copy; OpenStreetMap &copy; CARTO'","'&copy; OpenStreetMap contributors'")
-              s=s.replace('&copy; OpenStreetMap &copy; CARTO','&copy; OpenStreetMap contributors')
-              p.write_text(s,encoding='utf-8')
-          PY
       - name: Finalize map UI and browser cache bust
         run: python finalize_map_ui.py
       - name: Install regression test runner
