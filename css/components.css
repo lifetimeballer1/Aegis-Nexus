@@ -249,6 +249,12 @@
 .gp-btn.primary:hover {
   background: #7ab0ff;
 }
+/* Selected-state buttons (map section quick-filters mirror the ops filter).
+   Same info-border contract as .gp-filter.active. */
+.gp-btn.active {
+  border-color: var(--sev-info);
+  color: var(--sev-info);
+}
 .gp-btn:active {
   transform: translateY(1px);
 }

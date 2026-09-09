@@ -281,6 +281,14 @@ export function renderMapOps(){
     if(map){map.setView([p.__lat,p.__lon],Math.max(map.getZoom(),5),{animate:false});showDetail(p)}
     document.getElementById('mapContainer')?.scrollIntoView({behavior:scrollBehavior(),block:'center'});
   }));
+  /* Header quick-filter buttons mirror the ops filter so the section header
+     always shows which layer is active (same .active + aria-pressed contract
+     as the ops filter chips above). */
+  document.querySelectorAll('#section-map [data-layer]').forEach(btn=>{
+    const on=normalizeOpsFilter(btn.dataset.layer)===filter;
+    btn.classList.toggle('active',on);
+    btn.setAttribute('aria-pressed',String(on));
+  });
   const stamp=document.getElementById('mapUpdated');
   if(stamp){const at=opsUpdatedAt(state);stamp.textContent=at?('Updated '+at.slice(0,16).replace('T',' ')+' UTC · '+total.toLocaleString()+' signals'):total.toLocaleString()+' signals'}
 }
