@@ -1005,6 +1005,26 @@ a.gp-btn {
   }
 }
 
+/* ---- Map concept (M6-M8) ---- */
+.gp-map-mymaps-controls{background:var(--c-glass-strong)}
+.gp-map-tool{background:var(--panel);border-radius:999px;font-size:10px;letter-spacing:.05em;text-transform:uppercase;padding:8px 12px}
+.gp-map-tool:hover{border-color:var(--line-strong);background:var(--panel-hover)}
+.gp-map-tool.active{color:var(--blue);border-color:rgba(98,160,255,.45);background:rgba(98,160,255,.14)}
+#gpMapCount{font-variant-numeric:tabular-nums}
+.gp-map-layers-panel{background:rgba(8,16,25,.97);border:1px solid var(--line-strong);border-radius:var(--radius-lg)}
+#mapSidePanel{position:fixed;right:16px;top:88px;bottom:18px;width:min(430px,calc(100vw - 32px));z-index:115;overflow-y:auto;border:1px solid var(--line-strong);border-radius:var(--radius-lg);box-shadow:var(--shadow-lg);background:var(--c-glass-strong);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);padding:14px}
+.gp-map-detail-head #gpMapClose{min-width:36px;min-height:36px;margin-left:auto;font-size:16px}
+.gp-map-detail-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;margin:10px 0}
+.gp-map-detail-field{border:1px solid var(--line);border-radius:var(--radius-sm);background:var(--panel-2);padding:7px 9px;min-width:0}
+.gp-map-detail-field b{display:block;font-size:9px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted-2)}
+.gp-map-detail-field span{font-size:11px;color:var(--text-secondary);overflow-wrap:anywhere}
+.gp-map-op-row.selected{border-color:var(--blue);box-shadow:0 0 0 1px rgba(98,160,255,.35) inset}
+.gp-map-detail-note{margin-top:9px;font-size:10px;color:var(--muted-2)}
+@media(max-width:900px){#mapSidePanel{left:8px;right:8px;top:auto;bottom:calc(72px + var(--safe-bottom));width:auto;max-height:52vh}}
+.leaflet-control-zoom a{min-width:38px!important;min-height:38px!important;line-height:38px!important}
+@media(pointer:coarse){.gp-map-layer-row{min-height:44px}.gp-map-layer-row input{width:20px;height:20px}}
+@media(prefers-reduced-motion:reduce){.leaflet-fade-anim .leaflet-tile,.leaflet-zoom-animated{transition:none!important;animation:none!important}}
+
 /* ---- Utilities ---- */
 .gp-row {
   display: flex;

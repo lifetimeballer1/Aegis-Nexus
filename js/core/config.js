@@ -16,6 +16,7 @@ export const CONFIG = {
     mapRegional: './data/regional_intelligence.json',
     mapCartel: './data/enforcer_maps.json',
     mapLinks: './data/map_event_links.json',
+    strategicSignals: './data/strategic_signals.json',
     mapPoints: './data/map_points.json',
     whatChanged: './data/what_changed.json',
     eventHistory: './data/event_history.json',
