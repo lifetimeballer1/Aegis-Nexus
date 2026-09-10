@@ -207,19 +207,24 @@ def test_graph_projection_preserves_semantics_provenance_and_endpoint_limits(tmp
     import build_intelligence_graph as graph
 
     snapshot, output = tmp_path / 'snapshot.json', tmp_path / 'graph.json'
-    nodes = [{'id': str(i), 'label': str(i), 'mentions': 200-i} for i in range(101)]
+    nodes = [{'id': str(i), 'label': str(i), 'mentions': 200-i} for i in range(51)]
     nodes[-1]['mentions'] = 0
     evidence = [{'title': 'Explicit test source', 'url': 'https://example.test/source'}]
     edges = [dict(source='0', target='1', relationship=kind, eventIds=[event], evidence=evidence)
              for kind, event in [('trades_with', 'trade1'), ('sanctions', 'sanction'), ('trades_with', 'trade2')]]
-    edges.append(dict(source='0', target='100', relationship='mentioned_with', evidence=evidence))
+    edges.append(dict(source='0', target='50', relationship='mentioned_with', evidence=evidence))
+    # Cycle keeps every real node above the publisher quality gate
+    # (mentions >= 2 and degree > 1); the zero-mention node still drops.
+    edges.extend(dict(source=str(i), target=str((i + 1) % 50),
+                      relationship='mentioned_with', evidence=evidence)
+                 for i in range(50))
     snapshot.write_text(json.dumps({'intelligenceGraph': {'nodes': nodes, 'edges': edges}}), encoding='utf-8')
     monkeypatch.setattr(graph, 'SNAP', snapshot)
     monkeypatch.setattr(graph, 'OUT', output)
     graph.main()
     result = json.loads(output.read_text(encoding='utf-8'))
-    assert len(result['nodes']) == 100
-    assert len(result['edges']) == 2
+    assert len(result['nodes']) == 50
+    assert len(result['edges']) == 52
     by_kind = {e['relationship']: e for e in result['edges']}
     assert by_kind['trades_with']['eventIds'] == ['trade1', 'trade2']
     assert by_kind['sanctions']['eventIds'] == ['sanction']
