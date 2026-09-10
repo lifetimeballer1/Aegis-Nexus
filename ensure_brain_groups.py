@@ -32,6 +32,30 @@ def rank(n):
  strategic=28 if text in STRATEGIC_COUNTRIES else 0
  kind_bonus={'country':8,'conflict':6,'economic':5,'chokepoint':4,'cartel':4}.get(str(n.get('kind') or '').lower(),0)
  return strategic+kind_bonus+score*2+math.log1p(ev)*7+math.log1p(mentions)*4
+def annotate_tension_truth(snap):
+ """Honest tension metadata: derive when the published tension block was
+ actually computed instead of implying it refreshed with the snapshot.
+ The canonical tension writer (build_tension.py) overwrites these fields
+ with tensionStale=False on every real recomputation."""
+ computed=None
+ try:
+  hist=json.loads((DATA/'history.json').read_text(encoding='utf-8'))
+  if isinstance(hist,list):
+   for row in reversed(hist):
+    if isinstance(row,dict) and row.get('tension')==snap.get('tension'):
+     computed=row.get('updatedAt');break
+   if not computed and hist:computed=hist[-1].get('updatedAt')
+ except Exception:pass
+ if not computed:computed=str(snap.get('tensionComputedAt') or (snap.get('freshness') or {}).get('generatedAt') or '')
+ snap['tensionComputedAt']=computed
+ age=None
+ if computed:
+  try:
+   dt=datetime.fromisoformat(str(computed).replace('Z','+00:00'))
+   age=(datetime.now(timezone.utc)-dt).total_seconds()/3600
+  except Exception:age=None
+ snap['tensionStale']=bool(age is None or age>6)
+ return snap
 def main():
  brain=json.loads(BRAIN.read_text(encoding='utf-8'));snap=json.loads(SNAP.read_text(encoding='utf-8'))
  nodes=brain.setdefault('nodes',[]);edges=brain.setdefault('edges',[]);by={str(n.get('id')):n for n in nodes}
@@ -73,7 +97,13 @@ def main():
  nodes=selected[:35];keep={n.get('id') for n in nodes};brain['nodes']=nodes
  brain['edges']=[e for e in edges if e.get('source') in keep and e.get('target') in keep and e.get('evidence')]
  stats=brain.setdefault('stats',{});stats.update({'nodes':len(nodes),'edges':len(brain['edges']),'cartelNodes':sum(n.get('kind')=='cartel' for n in nodes),'countryNodes':sum(n.get('kind')=='country' for n in nodes),'economicNodes':sum(n.get('kind')=='economic' for n in nodes),'conflictNodes':sum(n.get('kind')=='conflict' for n in nodes),'chokepointNodes':sum(n.get('kind')=='chokepoint' for n in nodes)})
- brain['updatedAt']=datetime.now(timezone.utc).isoformat().replace('+00:00','Z')
- BRAIN.write_text(json.dumps(brain,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8');snap['intelligenceBrain']=brain;snap['updatedAt']=brain['updatedAt'];snap['lastSuccessfulRefresh']=brain['updatedAt'];SNAP.write_text(json.dumps(snap,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
+ now=datetime.now(timezone.utc).isoformat().replace('+00:00','Z')
+ brain['updatedAt']=now
+ BRAIN.write_text(json.dumps(brain,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
+ snap['intelligenceBrain']=brain
+ snap['updatedAt']=now
+ snap['lastSuccessfulRefresh']=now
+ annotate_tension_truth(snap)
+ SNAP.write_text(json.dumps(snap,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
  print(f"BRAIN GROUP REPAIR: {len(nodes)} nodes / {len(brain['edges'])} edges / cartels={stats['cartelNodes']} countries={stats['countryNodes']} economic={stats['economicNodes']} conflicts={stats['conflictNodes']} chokepoints={stats['chokepointNodes']}")
 if __name__=='__main__':main()
