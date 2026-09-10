@@ -3,6 +3,40 @@
 Scope: GUI ONLY (`css/`, `js/modules/`, `index.html`, `intelligence-web.html`, `docs/`).
 Never touched: `data/`, `artifacts/`, pipeline/build/validate/collector scripts. No push.
 
+---
+
+# Evening Shift — Progressive First Render (2026-09-09, ~20:20–21:30 America/Chicago)
+
+Scope: `js/app.js` boot path + this doc. No data/pipeline/validator/test edits.
+Pushed to origin/main when green.
+
+## Change
+- `0f3fde0` `feat(gui)`: progressive first render — `renderAll()` runs
+  immediately after `loadModules()` (module shells/skeletons paint from
+  empty state), then again after `refresh(true)` fills the 19-feed state.
+  Cold visitors see structure instead of static Loading copy while the
+  ~9.5MB snapshot loads. No data or pipeline changes (3 added lines).
+
+## Verification (all green, then pushed)
+- `validate_repository` / `validate_performance` / `validate_security`: PASS.
+- `tests/dashboard_smoke.py` desktop + mobile: SMOKE PASS (also covers the
+  new empty-state first render — fresh profiles, no page errors).
+- `tests/intelligence_web_smoke.py`: RENDER + CONTROLS PASS desktop/mobile,
+  FAILURE PASS.
+- `pytest -q -k gui`: 61 passed. `node --test intelligence_web_filters`: 7 passed.
+- Timing probe (throwaway, not committed): unthrottled localhost paints
+  timeline/alerts shells at ~0.53s ahead of snapshot completion (~0.75s);
+  throttled 400KB/s cold-load paints shells at ~1.4s while the 9.5MB
+  snapshot needs ~25s — the gap this fix closes.
+
+## Feed triage (read-only, no hammering — nothing actionable in GUI scope)
+- `data/source_health.json` (15:35 CT): 55/63 online, 8 failed — all upstream:
+  France 24 transient malformed XML (succeeded 12 min earlier, fallback
+  available, self-heals); 2x GDELT rate-limited (HTTP 429 / empty reply,
+  58 consecutive fails, chronic); 5x X accounts proxy-challenged (locked).
+- Status panel already surfaces failed feeds honestly (counts, filters,
+  chips) — no GUI gap. No pipeline edits per scope; left for automation.
+
 ## Decisions (thin spots from brief)
 - **Group counts: honest labels, not full totals.** Sliced lists keep slice counts
   but label them so they never read as totals: timeline day headers read
