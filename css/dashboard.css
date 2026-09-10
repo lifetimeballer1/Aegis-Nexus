@@ -654,3 +654,20 @@
 .cc-mkt-card .p{font-size:14px;line-height:1.15;margin-top:1px}
 .cc-mkt-card .c{font-size:10px;margin-top:1px}
 @media(max-width:420px){.cc-mkt{gap:5px}.cc-mkt-card{padding:6px 7px}.cc-mkt-card .p{font-size:13px}}
+
+/* REF-FIDELITY 1024d — 390px mobile lock (overflow + pill truncation).
+   Before: domain pills (max-width 60%) had no ellipsis so long labels
+   pushed rows; table min 340px + panel padding risked x-scroll at 390px.
+   After: pill ellipsis, domain/signal rows min-width:0, table min 300px
+   under 420px, tension chart clips. Visual-only. */
+.cc-domain-row{min-width:0;overflow:hidden}
+.cc-domain-row .cc-pill{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+.cc-domain-row b{flex:none}
+.cc-signal-row{min-width:0;overflow:hidden}
+.cc-tension-chart{overflow:hidden}
+@media(max-width:420px){
+.cc-table{min-width:300px}
+.cc-domain-row .cc-pill{max-width:52%}
+.cc-signal-row .t{font-size:10.5px}
+.cc-tension-big{font-size:24px}
+}
