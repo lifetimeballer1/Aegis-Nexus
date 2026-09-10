@@ -32,6 +32,33 @@ function webChip(type) {
 
 let webQuery = '';
 let webTypeFilter = 'all';
+let webSort = 'degree';
+let webShowAll = false;
+
+function webFrame() {
+  return document.querySelector('.gp-intelweb-frame');
+}
+
+function postToFrame(payload) {
+  const frame = webFrame();
+  if (!frame || !frame.contentWindow) return;
+  try { frame.contentWindow.postMessage(payload, window.location.origin); } catch {}
+}
+
+window.addEventListener('message', event => {
+  if (event.origin !== window.location.origin) return;
+  const data = event.data;
+  if (!data || typeof data !== 'object') return;
+  if (data.type === 'gp:web-select') {
+    const id = String(data.id || '');
+    if (id && currentData.nodes.some(n => String(n.id) === id)) selectWebNode(id);
+    else window.dispatchEvent(new CustomEvent('gp:brain-select', { detail: { id, label: data.label, source: 'web-iframe' } }));
+  } else if (data.type === 'gp:web-crosslink') {
+    const target = data.target === 'brain' ? 'brain' : 'map';
+    try { window.location.hash = `#section-${target}`; } catch {}
+    window.dispatchEvent(new CustomEvent('gp:brain-select', { detail: { id: data.id, label: data.label, source: 'web-crosslink' } }));
+  }
+});
 
 function asArray(value) {
   if (Array.isArray(value)) return value;
@@ -227,11 +254,14 @@ export function renderIntelligenceWeb() {
   currentData=data; currentDetail=null; selectedWebId=null; showAllWebEvidence=false; showAllWebLinks=false;
   const types=[...new Set(data.nodes.map(n=>String(n.type||'entity')))].sort();
   const typeOptions=types.map(t=>`<option value="${escapeHtml(t)}" ${webTypeFilter===t?'selected':''}>${escapeHtml(t)}</option>`).join('');
+  const brainCount=data.nodes.filter(n=>n.brain).length;
   el.innerHTML=`<div style="font-size:12.5px;color:var(--text-secondary);margin-bottom:10px">Evidence-backed relationships between actors, conflicts, economic pressure, strategic interests and other signals. Source-backed Brain relationships are layered in when available. Correlation is never treated as causation.</div>`
     + (caution?`<div class="gp-card" style="margin-bottom:10px;font-size:12px;color:var(--amber)">${escapeHtml(caution)}</div>`:'')
-    + `<div class="gp-brain-summary"><span class="gp-brain-chip">${data.nodes.length} entities</span><span class="gp-brain-chip">${data.links.length} connections</span><span class="gp-brain-chip">${types.length} types</span></div>`
+    + (brainCount?`<div class="gp-honest" style="margin-bottom:10px">${brainCount} Brain-linked nodes are layered in from the consolidated Brain graph. Brain relationships are co-mention hubs, not causal proof.</div>`:'')
+    + `<div class="gp-brain-summary"><span class="gp-brain-chip">${data.nodes.length} entities</span><span class="gp-brain-chip">${data.links.length} connections</span><span class="gp-brain-chip">${types.length} types</span>${brainCount?`<span class="gp-brain-chip">${brainCount} Brain-linked</span>`:''}</div>`
     + `<div class="gp-web-controls"><input id="gpWebSearch" class="gp-map-search" type="search" aria-label="Filter web entities" placeholder="Filter entities…" value="${escapeHtml(webQuery)}">`
     + `<select id="gpWebType" aria-label="Filter by entity type"><option value="all">All types</option>${typeOptions}</select>`
+    + `<select id="gpWebSort" aria-label="Sort entities"><option value="degree"${webSort==='degree'?' selected':''}>Most connections</option><option value="evidence"${webSort==='evidence'?' selected':''}>Most evidence</option><option value="name"${webSort==='name'?' selected':''}>Name A–Z</option></select>`
     + `<button id="gpWebLoad3d" class="gp-btn" type="button">Load 3D view</button></div>`
     + `<div class="meta" id="gpWebCount" style="font-size:10px;color:var(--muted-2);margin-bottom:7px"></div>`
     + `<div id="gpWebListWrap"></div><div id="gp-intelweb-detail" class="gp-intelweb-detail">Select a node to inspect its source-backed details.</div>`
@@ -239,7 +269,8 @@ export function renderIntelligenceWeb() {
   currentDetail=document.getElementById('gp-intelweb-detail');
   renderWebList();
   el.querySelector('#gpWebSearch')?.addEventListener('input',event=>{webQuery=String(event.target.value||'').trim().toLowerCase();renderWebList();const input=document.getElementById('gpWebSearch');input?.focus();input?.setSelectionRange(input.value.length,input.value.length);});
-  el.querySelector('#gpWebType')?.addEventListener('change',event=>{webTypeFilter=String(event.target.value||'all');renderWebList();});
+  el.querySelector('#gpWebType')?.addEventListener('change',event=>{webTypeFilter=String(event.target.value||'all');webShowAll=false;renderWebList();});
+  el.querySelector('#gpWebSort')?.addEventListener('change',event=>{webSort=String(event.target.value||'degree');webShowAll=false;renderWebList();});
   el.querySelector('#gpWebLoad3d')?.addEventListener('click',()=>{
     const wrap=document.getElementById('gpWebListWrap');
     if(!wrap)return;
@@ -259,18 +290,24 @@ function renderWebList() {
     if(!webQuery)return true;
     return [n.id,n.name,n.type,n.region,n.status,n.source].join(' ').toLowerCase().includes(webQuery);
   });
-  const ranked=[...filtered].map(n=>({...n,_deg:degree[n.id]||0,_ev:evidenceItems(n).length})).sort((a,b)=>b._deg-a._deg);
-  const shown=ranked.slice(0,14);
+  const ranked=[...filtered].map(n=>({...n,_deg:degree[n.id]||0,_ev:evidenceItems(n).length}));
+  if(webSort==='name')ranked.sort((a,b)=>String(a.name).localeCompare(String(b.name)));
+  else if(webSort==='evidence')ranked.sort((a,b)=>b._ev-a._ev||b._deg-a._deg);
+  else ranked.sort((a,b)=>b._deg-a._deg||b._ev-a._ev);
+  const shown=webShowAll?ranked:ranked.slice(0,14);
   const count=document.getElementById('gpWebCount');
-  if(count)count.textContent=`Showing ${shown.length} of ${ranked.length} entities · ${currentData.links.length} connections`;
-  wrap.innerHTML=shown.length
+  if(count)count.textContent=`Showing ${shown.length} of ${ranked.length} entities · ${currentData.links.length} connections · sorted by ${webSort==='name'?'name':webSort==='evidence'?'evidence records':'connections'}`;
+  wrap.innerHTML=(shown.length
     ? `<div class="gp-grid gp-grid-2">${shown.map(n=>`<button class="gp-card gp-web-node sev-${webSeverity(n.type)}" data-web-node="${escapeHtml(n.id)}" type="button"><div class="gp-card-title">${escapeHtml(n.name)}</div><div class="gp-card-meta"><span class="gp-sev ${webChip(n.type)}">${escapeHtml(n.type||'entity')}</span><span>${n._deg} links · ${n._ev} evidence${n.brain?' · Brain':''}</span></div></button>`).join('')}</div>`
-    : '<div class="gp-state"><div class="gp-state-title">No entities match</div><div>Nothing in the canonical relationship graph matches this type or search.</div></div>';
+    : '<div class="gp-state"><div class="gp-state-title">No entities match</div><div>Nothing in the canonical relationship graph matches this type or search.</div></div>')
+    + (ranked.length>14?`<button id="gpWebMore" class="gp-btn gp-more" type="button">${webShowAll?'Show fewer':`Show all ${ranked.length} entities`}</button>`:'');
   wrap.querySelectorAll('[data-web-node]').forEach(btn=>btn.addEventListener('click',()=>selectWebNode(btn.dataset.webNode)));
+  wrap.querySelector('#gpWebMore')?.addEventListener('click',()=>{webShowAll=!webShowAll;renderWebList();});
 }
 
 window.addEventListener('gp:brain-select', event => {
   const id=event.detail?.id;
   if(!id || event.detail?.source==='web') return;
   if(currentData.nodes.some(n=>String(n.id)===String(id))) selectWebNode(String(id));
+  if(!String(event.detail?.source||'').startsWith('web')) postToFrame({type:'gp:web-focus',id:String(id),label:event.detail?.label});
 });
