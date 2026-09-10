@@ -122,6 +122,10 @@ def _run_pipeline(started):
  brain=verify_json('intelligence_brain.json');verify_brain(brain)
  run('Build strategic signals',sys.executable,'build_strategic_signals.py')
  signals=verify_json('strategic_signals.json',fresh_required=False);verify_strategic_signals(signals)
+ try:
+  run('Refresh public market indicators (keyless)',sys.executable,'update_market_data.py')
+ except Exception as exc:
+  print(f'WARNING: market refresh failed, preserving last good snapshot marketData: {exc}',flush=True)
  snapshot=load('snapshot.json');verify_market(snapshot)
  run('Build what changed',sys.executable,'build_what_changed.py')
  run('Build dedicated browser map points',sys.executable,'build_map_points.py')
