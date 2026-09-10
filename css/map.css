@@ -1,10 +1,10 @@
 /* Global Pulse map styling */
 #mapContainer{background:var(--bg-elevated);min-height:420px;min-width:0;max-width:100%;}
-/* M1 — Leaflet-compat guard: the global content reset caps canvas/img/svg at
+/* M1 â€” Leaflet-compat guard: the global content reset caps canvas/img/svg at
    max-width:100%, which collapses Leaflet's explicitly-sized canvases inside
    unsized panes to 0px (invisible, unclickable markers). Scoped to the map. */
 #mapContainer img,#mapContainer canvas,#mapContainer svg{max-width:none}
-/* M4 — clusters wear layer colors (set inline by iconCreateFunction);
+/* M4 â€” clusters wear layer colors (set inline by iconCreateFunction);
    keep white bold counts readable on every hue. Tooltips match the dark
    application theme instead of Leaflet's default white box. */
 .marker-cluster div{color:#fff;font-weight:800}
@@ -60,7 +60,7 @@
   .gp-map-layers-panel{left:6px;right:6px;width:auto;top:52px}
 }
 
-/* Polish grind 5 — Map ops list + legend + layer panel at 390px widths.
+/* Polish grind 5 â€” Map ops list + legend + layer panel at 390px widths.
    Ops rows wrap (never crush chips); legend tightens; layer panel scrolls
    within the viewport with 40px+ touch rows on coarse pointers. */
 @media(max-width:420px){
@@ -78,4 +78,168 @@
   .gp-map-tool{min-height:40px}
   .gp-map-layer-row{min-height:44px}
   .gp-map-op-row{min-height:44px}
+}
+
+/* ===== OPTION A "Ember Watch" (map-option-a prototype, 45-min timebox) ===== */
+/* Dark tactical evolution on the Esri dark-gray canvas. No new deps. */
+/* A1 - vignette + graticule overlay (pure CSS, pointer-events none). */
+#mapContainer{position:relative}
+#mapContainer::before{content:"";position:absolute;inset:0;z-index:440;pointer-events:none;opacity:.5;background:repeating-linear-gradient(0deg,transparent 0 79px,rgba(148,178,220,.06) 79px 80px),repeating-linear-gradient(90deg,transparent 0 79px,rgba(148,178,220,.06) 79px 80px)}
+#mapContainer::after{content:"";position:absolute;inset:0;z-index:441;pointer-events:none;background:radial-gradient(ellipse at center,transparent 55%,rgba(2,6,12,.42) 100%)}
+/* A2 - cluster badges as dark-glass chips: near-black glass face, 2px ring
+   in the dominant-layer color + soft outer glow of the same hue. */
+.marker-cluster{background:transparent;border:0}
+.marker-cluster div{background:transparent}
+.marker-cluster .ember-cluster{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:rgba(4,9,15,.82);border:2px solid var(--cluster-color,#8da2c4);box-shadow:0 0 14px -1px var(--cluster-color,#8da2c4),inset 0 0 8px rgba(0,0,0,.6);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px)}
+.marker-cluster .ember-cluster span{color:#fff;font-weight:800;font-size:12px;line-height:1;text-shadow:0 1px 3px rgba(0,0,0,.9);background:transparent}
+/* A3 - severity pulse rings on critical (conflict/cartel) markers. Angle: a
+   fixed 10px dot + an expanding ring, both tinted by layer color. Capped at
+   EMBER_PULSE_CAP nodes in JS; global reduced-motion rule already freezes
+   this, reinforced explicitly below. */
+.ember-pulse{background:transparent;border:0;pointer-events:none}
+.ember-pulse .ember-ring{position:relative;display:block;width:26px;height:26px}
+.ember-pulse .ember-ring::before{content:"";position:absolute;left:50%;top:50%;width:8px;height:8px;margin:-4px 0 0 -4px;border-radius:50%;background:var(--pulse-color,#ff405f);box-shadow:0 0 8px 1px var(--pulse-color,#ff405f),0 0 2px 1px #fff}
+.ember-pulse .ember-ring::after{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid var(--pulse-color,#ff405f);opacity:.9;animation:ember-ping 2.2s ease-out infinite}
+@keyframes ember-ping{0%{transform:scale(.45);opacity:.95}70%{transform:scale(1.15);opacity:0}100%{transform:scale(1.15);opacity:0}}
+@media (prefers-reduced-motion: reduce){.ember-pulse .ember-ring::after{animation:none;opacity:.55;transform:scale(.8)}}
+
+/* ===== EMBER CHROME part 2 — toolbar / panels / ops / legend (production) ===== */
+/* Tactile dark-glass toolbar. JS mounts #gpMapControls above #mapContainer. */
+.gp-map-mymaps-controls{position:relative;z-index:20;background:rgba(8,16,25,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:12px 12px 0 0;border-bottom:1px solid var(--line);padding:10px;min-width:0;box-shadow:inset 0 1px 0 rgba(255,255,255,.05)}
+.gp-map-toolbar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;min-width:0}
+.gp-map-tool{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line-strong);background:linear-gradient(180deg,var(--panel-hover),var(--panel-2));color:var(--text);border-radius:10px;padding:8px 12px;font-size:11px;font-weight:800;letter-spacing:.02em;cursor:pointer;min-height:38px;box-shadow:inset 0 1px 0 rgba(255,255,255,.07),0 2px 8px rgba(0,0,0,.35);-webkit-tap-highlight-color:transparent;transition:border-color var(--duration) var(--ease),background var(--duration) var(--ease),transform 120ms var(--ease),box-shadow var(--duration) var(--ease)}
+.gp-map-tool:hover{border-color:var(--blue);background:linear-gradient(180deg,#1a3049,var(--panel-2));box-shadow:inset 0 1px 0 rgba(255,255,255,.1),0 2px 12px rgba(98,160,255,.18)}
+.gp-map-tool:active{transform:translateY(1px);box-shadow:inset 0 2px 6px rgba(0,0,0,.45)}
+.gp-map-tool[aria-expanded="true"]{border-color:var(--sev-info);color:var(--sev-info);background:rgba(98,160,255,.1)}
+.gp-map-tool:focus-visible{outline:2px solid var(--sev-info);outline-offset:2px}
+.gp-map-tool:disabled{opacity:.45;cursor:not-allowed;transform:none;box-shadow:none}
+.gp-map-tool:disabled:hover{border-color:var(--line)}
+.gp-map-search{flex:1;min-width:180px;background:rgba(3,7,12,.72);color:var(--text);border:1px solid var(--line-strong);border-radius:10px;padding:9px 12px;font-size:12px;outline:none;min-height:38px;box-sizing:border-box;box-shadow:inset 0 2px 6px rgba(0,0,0,.4);transition:border-color var(--duration) var(--ease),box-shadow var(--duration) var(--ease)}
+.gp-map-search::placeholder{color:var(--muted-2);opacity:1}
+.gp-map-search:hover{border-color:var(--line-focus)}
+.gp-map-search:focus{border-color:var(--sev-info);box-shadow:inset 0 2px 6px rgba(0,0,0,.4),0 0 0 2px rgba(98,160,255,.35)}
+.gp-map-search:focus-visible{outline:2px solid var(--sev-info);outline-offset:2px}
+.gp-map-search:disabled{opacity:.5;cursor:not-allowed}
+.gp-map-search::-webkit-search-cancel-button{cursor:pointer}
+.gp-map-count{font-size:10px;color:var(--muted-2);white-space:nowrap;font-family:var(--font-mono);font-variant-numeric:tabular-nums}
+/* Layer panel dialog polish. Positioned under the toolbar; floats over map. */
+.gp-map-layers-panel{display:none;position:absolute;left:10px;top:58px;width:min(340px,calc(100vw - 60px));max-height:min(64vh,460px);overflow-y:auto;z-index:1000;background:rgba(6,12,19,.97);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid var(--line-strong);border-radius:14px;box-shadow:0 18px 50px rgba(0,0,0,.55),inset 0 1px 0 rgba(255,255,255,.06);padding:14px;min-width:0}
+.gp-map-layers-panel.open{display:block;animation:ember-panel-in 160ms var(--ease)}
+@keyframes ember-panel-in{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+.gp-map-panel-title{font-size:11px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;color:var(--text)}
+.gp-map-panel-subtitle{font-size:11px;color:var(--muted-2);margin:4px 0 10px;line-height:1.45}
+.gp-map-layer-row{display:flex;align-items:center;gap:10px;padding:10px 8px;border-radius:10px;cursor:pointer;color:var(--text);font-size:12px;min-width:0;border:1px solid transparent}
+.gp-map-layer-row:hover{background:var(--panel-hover);border-color:var(--line)}
+.gp-map-layer-row:focus-within{border-color:var(--sev-info);outline:2px solid var(--sev-info);outline-offset:-2px}
+.gp-map-layer-row input{accent-color:var(--blue);width:16px;height:16px;flex:none;cursor:pointer}
+.gp-map-layer-dot{width:10px;height:10px;border-radius:50%;flex:none;box-shadow:0 0 0 2px rgba(255,255,255,.1),0 0 8px 0 currentColor}
+.gp-map-layer-icon{width:20px;text-align:center;font-size:14px;flex:none}
+.gp-map-layer-name{flex:1;font-weight:700;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.gp-map-layer-count{font-variant-numeric:tabular-nums;font-family:var(--font-mono);color:var(--muted-2);font-size:11px;flex:none}
+/* Future hook: .gp-map-layers-backdrop (JS does not emit yet — see report). */
+.gp-map-layers-backdrop{position:fixed;inset:0;z-index:999;background:rgba(2,5,9,.5)}
+/* Future hook: .gp-map-layer-empty (JS does not emit yet — see report). */
+.gp-map-layer-empty,.gp-map-ops-empty{padding:16px 12px;text-align:center;color:var(--muted-2);font-size:12px;border:1px dashed var(--line-strong);border-radius:10px}
+/* Detail side panel typography. JS sets inline borderLeft layer color. */
+#mapSidePanel{background:rgba(8,16,25,.96);border:1px solid var(--line-strong)!important;border-left-width:4px!important;border-radius:0 0 var(--radius-lg) var(--radius-lg);padding:14px 16px;animation:ember-panel-in 160ms var(--ease)}
+#mapSidePanel .gp-map-detail-head{display:flex;align-items:flex-start;gap:10px;min-width:0}
+#mapSidePanel .gp-map-detail-icon{font-size:22px;line-height:1.2;flex:none}
+#mapSidePanel .gp-card-title{font-size:13.5px;font-weight:700;line-height:1.35;color:var(--text);overflow-wrap:break-word;padding-right:6px;min-width:0}
+#mapSidePanel .gp-map-detail-type{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin-top:3px;color:var(--muted-2)}
+#mapSidePanel #gpMapClose{margin-left:auto;flex:none;display:inline-flex;align-items:center;justify-content:center;min-width:36px;min-height:36px;padding:4px 10px;font-size:18px;line-height:1;border-radius:10px;border:1px solid var(--line-strong);background:var(--panel-2);color:var(--text);cursor:pointer}
+#mapSidePanel #gpMapClose:hover{border-color:var(--sev-critical);color:var(--sev-critical)}
+#mapSidePanel #gpMapClose:focus-visible{outline:2px solid var(--sev-info);outline-offset:2px}
+#mapSidePanel .gp-map-detail-coords{font-family:var(--font-mono);font-variant-numeric:tabular-nums;font-size:11px;color:var(--muted-2);margin:10px 0}
+#mapSidePanel .gp-map-detail-text{font-size:12.5px;line-height:1.6;color:var(--text-secondary);overflow-wrap:anywhere;max-width:75ch}
+#mapSidePanel .gp-map-detail-source{font-size:11px;color:var(--muted-2);margin-top:10px;overflow-wrap:anywhere;line-height:1.5}
+#mapSidePanel .gp-map-detail-source strong{display:block;font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;margin-bottom:2px}
+#mapSidePanel .gp-map-brain-link{background:none;border:0;padding:2px 0;color:var(--sev-info);font-size:11.5px;text-align:left;cursor:pointer;border-radius:4px}
+#mapSidePanel .gp-map-brain-link:hover{text-decoration:underline}
+#mapSidePanel .gp-map-brain-link:focus-visible{outline:2px solid var(--sev-info);outline-offset:2px}
+#mapSidePanel a[href^="http"]{display:inline-block;margin-top:10px;font-size:12px;font-weight:700;color:var(--sev-info);text-decoration:none;border:1px solid var(--line-strong);border-radius:9px;padding:7px 12px;min-height:36px;box-sizing:border-box}
+#mapSidePanel a[href^="http"]:hover{border-color:var(--sev-info);text-decoration:underline}
+#mapSidePanel a[href^="http"]:focus-visible{outline:2px solid var(--sev-info);outline-offset:2px}
+/* Cluster size steps: JS emits marker-cluster-small/medium/large. */
+.marker-cluster-small .ember-cluster{width:36px;height:36px}
+.marker-cluster-small .ember-cluster span{font-size:11px}
+.marker-cluster-medium .ember-cluster{width:44px;height:44px}
+.marker-cluster-medium .ember-cluster span{font-size:12px}
+.marker-cluster-large .ember-cluster{width:54px;height:54px;border-width:3px}
+.marker-cluster-large .ember-cluster span{font-size:13px}
+/* Ops list: bar, filter chips, rows, severity chips, timestamps. */
+#mapOpsBody{min-height:118px;min-width:0}
+.gp-map-ops-bar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.gp-map-ops-bar .gp-map-search{flex:1;min-width:180px}
+.gp-map-ops-bar .meta{font-size:10px;color:var(--muted-2);white-space:nowrap;font-family:var(--font-mono);font-variant-numeric:tabular-nums}
+#section-map .gp-filter-row{display:flex;gap:6px;flex-wrap:nowrap;overflow-x:auto;padding-bottom:4px;margin-bottom:10px;scrollbar-width:thin}
+#section-map .gp-filter{flex:0 0 auto;min-height:36px}
+#section-map .gp-filter[aria-pressed="true"]{color:var(--sev-info);border-color:var(--sev-info)}
+.gp-map-ops-list{display:flex;flex-direction:column;gap:6px;max-height:320px;overflow-y:auto;min-width:0;scrollbar-width:thin}
+.gp-map-op-row{display:flex;gap:10px;align-items:flex-start;width:100%;background:var(--panel-2);border:1px solid var(--line);border-left:3px solid var(--sev-info);border-radius:var(--radius);color:var(--text);text-align:left;padding:9px 12px;cursor:pointer;font:inherit;font-size:12px;min-width:0;min-height:44px;box-sizing:border-box;transition:border-color var(--duration) var(--ease),background var(--duration) var(--ease)}
+.gp-map-op-row.sev-critical{border-left-color:var(--sev-critical)}
+.gp-map-op-row.sev-watch{border-left-color:var(--sev-watch)}
+.gp-map-op-row.sev-info{border-left-color:var(--sev-info)}
+.gp-map-op-row.sev-healthy{border-left-color:var(--sev-healthy)}
+.gp-map-op-row:hover{border-color:var(--line-strong);background:var(--panel-hover)}
+.gp-map-op-row:focus-visible{outline:2px solid var(--sev-info);outline-offset:2px}
+.gp-map-op-row .grow{min-width:0;flex:1}
+.gp-map-op-row .title{font-weight:600;font-size:12px;line-height:1.4;color:var(--text);overflow-wrap:break-word;display:block}
+.gp-map-op-row .meta{font-size:10px;color:var(--muted-2);margin-top:3px;display:block;overflow-wrap:break-word;font-family:var(--font-mono);font-variant-numeric:tabular-nums}
+.gp-map-op-dot{flex:0 0 9px;width:9px;height:9px;border-radius:50%;margin-top:5px;box-shadow:0 0 6px 0 currentColor}
+.gp-map-op-row .gp-sev{flex:none;max-width:38vw}
+/* Legend (static key under the map; live counts live in the layer panel). */
+.ember-legend{display:flex;align-items:center;gap:14px;flex-wrap:wrap;font-size:10px;color:var(--muted-2);margin:0;padding:10px 14px;border-top:1px solid var(--line);background:var(--bg-deep);font-family:var(--font-mono);font-variant-numeric:tabular-nums}
+.ember-legend span{display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.ember-legend i{width:10px;height:10px;border-radius:50%;flex:none;box-shadow:0 0 6px 0 currentColor}
+.ember-legend .ember-legend-note{margin-left:auto;font-family:var(--font);color:var(--muted-2)}
+/* Vignette tuning: graticule whispers, vignette lifts tile edges without dimming markers (markers sit in pane 650, overlays at 440/441). */
+#mapContainer::before{opacity:.42}
+#mapContainer::after{background:radial-gradient(ellipse at center,transparent 58%,rgba(2,6,12,.36) 100%)}
+/* Leaflet dark-theme controls inside the map frame. */
+#mapContainer .leaflet-bar a{background:rgba(8,16,25,.92);color:var(--text);border-color:var(--line-strong)}
+#mapContainer .leaflet-bar a:hover{background:var(--panel-hover);color:var(--text)}
+#mapContainer .leaflet-bar a:focus-visible{outline:2px solid var(--sev-info);outline-offset:1px}
+#mapContainer .leaflet-control-attribution{background:rgba(3,7,12,.72);color:var(--muted-2);font-size:9px}
+#mapContainer .leaflet-control-attribution a{color:var(--muted-2)}
+/* Section header quick-filters: keep single-line scroll on narrow widths. */
+#section-map .gp-section-header{flex-wrap:wrap;row-gap:8px}
+#section-map .gp-map-tools{display:flex;gap:6px;flex-wrap:nowrap;overflow-x:auto;max-width:100%;padding-bottom:2px;scrollbar-width:none}
+#section-map .gp-map-tools::-webkit-scrollbar{display:none}
+#section-map .gp-map-tools .gp-btn{flex:0 0 auto}
+/* Map frame: fixed height reserves layout (no CLS); radius ties toolbar to map. */
+#section-map .ember-map-frame{padding:0;position:relative}
+#mapContainer{height:420px;border-radius:0;z-index:1}
+/* Reduced-motion: freeze every ember animation, keep meaning in color. */
+@media (prefers-reduced-motion: reduce){
+  .ember-pulse .ember-ring::after{animation:none!important;opacity:.55;transform:scale(.8)}
+  .gp-map-layers-panel.open{animation:none}
+  #mapSidePanel{animation:none}
+  .gp-map-tool:active,.gp-map-op-row:active{transform:none}
+}
+/* Mobile <900px: shorter map, wrapping toolbar, sheet panel, nav clearance. */
+@media (max-width:899px){
+  #mapContainer{height:360px}
+  .gp-map-mymaps-controls{border-radius:12px}
+  .gp-map-toolbar{flex-wrap:nowrap;overflow-x:auto;padding-bottom:4px;scrollbar-width:none}
+  .gp-map-toolbar::-webkit-scrollbar{display:none}
+  .gp-map-tool{flex:0 0 auto;white-space:nowrap;min-height:40px}
+  .gp-map-search{flex:0 0 200px;min-width:200px}
+  .gp-map-count{display:none}
+  .gp-map-layers-panel{left:8px;right:8px;width:auto;top:60px;max-height:min(58vh,400px)}
+  .gp-map-ops-bar{flex-wrap:wrap}
+  .gp-map-ops-bar .gp-map-search{flex:1 1 100%;min-width:0}
+  .gp-map-ops-bar .meta{flex:1 1 100%;white-space:normal;overflow-wrap:break-word}
+  .gp-map-ops-list{max-height:260px}
+  #mapSidePanel{margin:10px}
+  #section-map{margin-bottom:8px}
+  .ember-legend{gap:10px}
+  .ember-legend .ember-legend-note{flex:1 1 100%;margin-left:0}
+}
+@media (max-width:420px){
+  #mapContainer{height:340px}
+  .gp-map-op-row .gp-sev{max-width:40vw;overflow:hidden;text-overflow:ellipsis}
+}
+@media (pointer:coarse){
+  .gp-map-tool,#section-map .gp-filter{min-height:44px}
+  .gp-map-layer-row{min-height:48px}
 }

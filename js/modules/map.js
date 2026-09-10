@@ -6,15 +6,35 @@ import { escapeHtml } from '../core/utils.js';
 let map=null;
 let groups={};
 let brainLinks=null;
+let pulseLayer=null;
+/* Ember Watch (map-option-a): cap severity pulse rings so a dense viewport
+ * never spawns hundreds of animated DOM nodes. */
+const EMBER_PULSE_CAP=30;
 let mapData=null;
 let selected=null;
+/* Selected-marker state: a two-ring canvas overlay (layer-color glow + white
+ * ring) drawn above the cluster pane, plus a style bump on the clicked
+ * vector itself. Cleared on closeDetail. */
+let selectionRing=null;
+let selectedMarker=null;
 let query='';
 let filter='all';
 const LAYERS={conflicts:{label:'Conflicts & Military',color:'#ff405f',icon:'⚔️'},hazards:{label:'Hazards & Disasters',color:'#ffd34d',icon:'⚠️'},strategic:{label:'Strategic Sites',color:'#4d9aff',icon:'🎯'},cartel:{label:'Cartel / Organized Crime',color:'#ff8a35',icon:'🕶️'},osint:{label:'OSINT / Reporting',color:'#b08cff',icon:'🛰️'}};
+/* Ember Watch (markers-a): per-layer glow tuning so all five hues read on the
+ * dark canvas. White stroke core + layer-color halo everywhere; hazards
+ * yellow needs a wider, denser halo to separate from the white core, while
+ * saturated reds/oranges stay tighter to avoid bloom. */
+const LAYER_TUNE={conflicts:{haloOpacity:.22,haloPad:6,coreWeight:2.5},hazards:{haloOpacity:.34,haloPad:8,coreWeight:2.75},strategic:{haloOpacity:.26,haloPad:6,coreWeight:2.5},cartel:{haloOpacity:.24,haloPad:6,coreWeight:2.5},osint:{haloOpacity:.30,haloPad:7,coreWeight:2.5}};
+/* Brain-link perf cap: a dense intelligence graph can emit thousands of
+ * edges; only the first N render as live polylines. */
+const BRAIN_LINK_CAP=400;
 let enabled=Object.fromEntries(Object.keys(LAYERS).map(k=>[k,true]));
 let showBrainLinks=true;
 try{Object.assign(enabled,JSON.parse(localStorage.getItem('gp.mapLayers')||'{}'));filter=localStorage.getItem('gp.mapFilter')||'all';showBrainLinks=localStorage.getItem('gp.mapBrainLinks')!=='0'}catch{}
 const num=v=>{const n=Number(v);return Number.isFinite(n)?n:null};
+/* Reduced-motion: single probe shared by scroll behavior, pulse rings, and
+ * brain-link dash animation so motion-sensitive users get a static map. */
+function prefersReducedMotion(){try{return !!(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches)}catch{return false}}
 /* Reduced-motion: smooth scroll becomes instant under prefers-reduced-motion. */
 function scrollBehavior() {
   try {
@@ -73,10 +93,18 @@ function renderBrainLinks(){
   if(!showBrainLinks)return;
   const brain=mapData?.brain;if(brain?.sourceBackedOnly!==true||!Array.isArray(brain.nodes)||!Array.isArray(brain.edges))return;
   const byId=new Map();brain.nodes.forEach(n=>{const c=coords(n);if(c)byId.set(String(n.id),c)});
-  for(const e of brain.edges){const a=byId.get(String(e.source)),b=byId.get(String(e.target));if(!a||!b||String(e.source)===String(e.target))continue;
-    const line=L.polyline([a,b],{pane:'gp-brain-links',color:'#8da2c4',weight:1.5,opacity:.55,dashArray:'5 6',interactive:false});
-    line.bindTooltip(String(e.relationship||e.label||e.type||'Intelligence relationship').slice(0,100),{sticky:true});
-    brainLinks.addLayer(line);
+  let drawn=0;
+  for(const e of brain.edges){if(drawn>=BRAIN_LINK_CAP)break;const a=byId.get(String(e.source)),b=byId.get(String(e.target));if(!a||!b||String(e.source)===String(e.target))continue;
+    /* Color/weight/opacity pass: adversarial ties read warm, cooperative ties
+     * cool, everything else neutral slate; evidence-backed ties render
+     * heavier and more opaque than inferred ones. */
+    const rel=String(e.relationship||e.label||e.type||'Intelligence relationship');const rl=rel.toLowerCase();
+    const hot=/conflict|attack|strike|escalat|threat|sanction|seiz|disrupt/.test(rl);
+    const warm=/allian|support|partner|trade|aid|cooperat/.test(rl)&&!hot;
+    const hasEv=!!(e.evidence&&e.evidence.length);
+    const line=L.polyline([a,b],{pane:'gp-brain-links',color:hot?'#ff8a7a':warm?'#7fb8ff':'#c3d4f5',weight:hasEv?2.5:1.5,opacity:hasEv?.85:.6,dashArray:prefersReducedMotion()?null:'5 6',interactive:true});
+    line.bindTooltip(rel.slice(0,120),{sticky:true,direction:'top',opacity:1,className:'ember-tip ember-brain-tip'});
+    brainLinks.addLayer(line);drawn++;
   }
 }
 function matches(p){const k=classify(p);if(!enabled[k])return false;if(filter!=='all'&&filter!==k&&!(filter==='conflict'&&k==='conflicts'))return false;if(!query)return true;return [p.title,p.name,p.location,p.country,p.region,p.city,p.detail,p.summary,p.description,p.source,p.type,p.layer,p.eventType,p.kind,p.nodeId].map(v=>String(v??'').toLowerCase()).join(' ').includes(query)}
@@ -87,7 +115,9 @@ function controls(){
   host.insertBefore(box,document.getElementById('mapContainer'));const rows=box.querySelector('#gpMapLayerRows');
   for(const [k,m] of Object.entries(LAYERS)){const label=document.createElement('label');label.className='gp-map-layer-row';label.innerHTML=`<input type="checkbox" data-layer-check="${k}" ${enabled[k]?'checked':''}><span class="gp-map-layer-dot" style="background:${m.color}"></span><span class="gp-map-layer-icon">${m.icon}</span><span class="gp-map-layer-name">${m.label}</span><b id="gpMapLayerCount-${k}" class="gp-map-layer-count gp-nums">0</b>`;rows.appendChild(label);label.querySelector('input').onchange=e=>{enabled[k]=e.target.checked;localStorage.setItem('gp.mapLayers',JSON.stringify(enabled));renderMap();renderMapOps()}}
   const layersBtn=box.querySelector('#gpMapLayers');
-  layersBtn.onclick=()=>{const panel=box.querySelector('#gpMapLayerPanel');const open=panel.classList.toggle('open');layersBtn.setAttribute('aria-expanded',open?'true':'false')};
+  function setLayersOpen(open){const panel=box.querySelector('#gpMapLayerPanel');panel.classList.toggle('open',open);layersBtn.setAttribute('aria-expanded',open?'true':'false');layersBtn.setAttribute('aria-pressed',open?'true':'false');let backdrop=document.querySelector('.gp-map-layers-backdrop');if(open&&!backdrop){backdrop=document.createElement('div');backdrop.className='gp-map-layers-backdrop';backdrop.addEventListener('click',()=>setLayersOpen(false));document.body.appendChild(backdrop)}if(!open&&backdrop)backdrop.remove()}
+  layersBtn.onclick=()=>{const panel=box.querySelector('#gpMapLayerPanel');setLayersOpen(!panel.classList.contains('open'))};
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'){const panel=document.querySelector('#gpMapLayerPanel.open');if(panel)setLayersOpen(false);closeDetail()}});
   box.querySelector('#gpMapFit').onclick=fitAll;box.querySelector('#gpMapReset').onclick=()=>{query='';filter='all';enabled=Object.fromEntries(Object.keys(LAYERS).map(k=>[k,true]));showBrainLinks=true;localStorage.removeItem('gp.mapLayers');localStorage.removeItem('gp.mapFilter');localStorage.removeItem('gp.mapBrainLinks');box.querySelector('#gpMapSearch').value='';box.querySelectorAll('[data-layer-check]').forEach(x=>x.checked=true);box.querySelector('#gpMapBrainLinks').checked=true;renderMap();renderMapOps();fitAll()};
   const mapSearch=box.querySelector('#gpMapSearch');
   mapSearch.oninput=()=>{query=mapSearch.value.trim().toLowerCase();renderMap();renderMapOps();const again=document.getElementById('gpMapSearch');if(again){again.focus();again.setSelectionRange(again.value.length,again.value.length)}};
@@ -117,8 +147,12 @@ function makeGroup(){
       for(const [k,n] of Object.entries(votes)){if(n>topN){topN=n;top=k}}
       const color=(top&&LAYERS[top]?LAYERS[top].color:'#8da2c4');
       const n=cluster.getChildCount();
+      /* Count tiers: larger tap targets + type as clusters grow so dense
+       * spiderfy neighborhoods stay legible on small screens. */
       const size=n<10?'small':n<100?'medium':'large';
-      return L.divIcon({html:'<div style="background:'+color+'"><span>'+n+'</span></div>',className:'marker-cluster marker-cluster-'+size,iconSize:L.point(40,40)});
+      const px=size==='small'?44:size==='medium'?50:58;
+      const label=n.toLocaleString()+' signals'+(top&&LAYERS[top]?' · '+LAYERS[top].label:'');
+      return L.divIcon({html:'<div class="ember-cluster ember-cluster-'+size+'" style="--cluster-color:'+color+'" role="img" aria-label="'+label+'" title="'+label+'"><span>'+n+'</span></div>',className:'marker-cluster marker-cluster-'+size,iconSize:L.point(px,px)});
     }
   });
 }
@@ -133,6 +167,7 @@ export function initMap(){
   dark.addTo(map);
   dark.on('tileerror',()=>{try{if(!map.hasLayer(osm))osm.addTo(map);}catch{}});
   brainLinks=L.layerGroup().addTo(map);
+  pulseLayer=L.layerGroup().addTo(map);
   for(const k of Object.keys(LAYERS)){groups[k]=makeGroup();groups[k].addTo(map)}
   controls();ensureMapSize();map.on('click',closeDetail);
 }
@@ -182,9 +217,15 @@ export function renderMap(){
   const fp=renderFingerprint();
   if(fp===renderMap._fp&&renderMap._fitted)return;
   renderMap._fp=fp;
-  for(const g of Object.values(groups))g.clearLayers();renderBrainLinks();
+  for(const g of Object.values(groups))g.clearLayers();if(pulseLayer)pulseLayer.clearLayers();renderBrainLinks();
+  let pulses=0;
   const all=collect();const capped=all.length>MAP_RENDER_CAP;const points=all.filter(matches).slice(0,MAP_RENDER_CAP);const counts=Object.fromEntries(Object.keys(LAYERS).map(k=>[k,0]));
-  for(const p of points){const k=classify(p);counts[k]++;const m=LAYERS[k];const imp=Math.max(1,Math.min(3,Number(p.importance)||1));const marker=L.circleMarker([p.__lat,p.__lon],{pane:'gp-signals',radius:p.brainNode?10:6+imp,color:'#ffffff',weight:2.5,fillColor:m.color,fillOpacity:.98,opacity:1,interactive:true,__layer:k});marker.bindTooltip(String(p.title||p.label||p.name||p.location||m.label).slice(0,120),{direction:'top',sticky:true});marker.on('click',e=>{/* M1 — stop BOTH propagation layers: native stopPropagation blocks DOM bubble to the container's own click handler, and _stopped halts Leaflet's internal target loop before it reaches map.on('click',closeDetail), which would otherwise close the panel in the same tick. */if(e.originalEvent){e.originalEvent._stopped=true;try{e.originalEvent.stopPropagation();}catch{}}showDetail(p)});groups[k].addLayer(marker)}
+  for(const p of points){const k=classify(p);counts[k]++;const m=LAYERS[k];const tune=LAYER_TUNE[k]||LAYER_TUNE.conflicts;const imp=Math.max(1,Math.min(3,Number(p.importance)||1));const r=p.brainNode?10:6+imp;const haloPad=tune.haloPad+(p.brainNode?2:0);const halo=L.circleMarker([p.__lat,p.__lon],{pane:'gp-signals',radius:r+haloPad,fillColor:m.color,fillOpacity:tune.haloOpacity,stroke:false,interactive:false});groups[k].addLayer(halo);/* Keyboard-focusable markers where cheap: only brain nodes and top-importance
+ * signals take a tab stop, so keyboard users can reach key markers without
+ * tabbing through thousands of canvas paths. */
+const focusable=!!(p.brainNode||imp>=3);
+const tipTitle=String(p.title||p.label||p.name||p.location||m.label);
+const marker=L.circleMarker([p.__lat,p.__lon],{pane:'gp-signals',radius:r,color:'#ffffff',weight:tune.coreWeight,fillColor:m.color,fillOpacity:.98,opacity:1,interactive:true,keyboard:focusable,title:focusable?tipTitle.slice(0,80):'',__layer:k});if(pulseLayer&&!prefersReducedMotion()&&pulses<EMBER_PULSE_CAP&&(k==='conflicts'||k==='cartel')){pulses++;const pulse=L.marker([p.__lat,p.__lon],{pane:'gp-signals',interactive:false,keyboard:false,icon:L.divIcon({html:'<span class="ember-ring" style="--pulse-color:'+m.color+'"></span>',className:'ember-pulse',iconSize:L.point(26,26),iconAnchor:L.point(13,13)})});pulseLayer.addLayer(pulse)}marker.bindTooltip(tipTitle.slice(0,120),{direction:'top',sticky:true,offset:L.point(0,-6),opacity:1,className:'ember-tip ember-tip-'+k});if(focusable){marker.on('focus',()=>{try{marker.openTooltip()}catch{}});marker.on('blur',()=>{try{marker.closeTooltip()}catch{}})}marker.on('click',e=>{/* M1 — stop BOTH propagation layers: native stopPropagation blocks DOM bubble to the container's own click handler, and _stopped halts Leaflet's internal target loop before it reaches map.on('click',closeDetail), which would otherwise close the panel in the same tick. */if(e.originalEvent){e.originalEvent._stopped=true;try{e.originalEvent.stopPropagation();}catch{}}selectedMarker=marker;try{marker.bringToFront()}catch{}showDetail(p)});groups[k].addLayer(marker)}
   const total=all.length;const shown=points.length;const count=document.getElementById('gpMapCount');if(count)count.textContent=capped?`${shown.toLocaleString()} of ${total.toLocaleString()} signals (cap)`:`${total.toLocaleString()} signals`;
   for(const k of Object.keys(LAYERS)){const e=document.getElementById(`gpMapLayerCount-${k}`);if(e)e.textContent=counts[k].toLocaleString()}
   const linkCount=document.getElementById('gpMapBrainLinkCount');if(linkCount){const brain=mapData?.brain;linkCount.textContent=String(Array.isArray(brain?.edges)?brain.edges.filter(e=>String(e.source)!==String(e.target)).length:0)}
@@ -196,8 +237,10 @@ export function renderMap(){
   else if(!total)setTimeout(()=>map.invalidateSize(),50)
 }
 function fitAll(points=collect().filter(matches)){if(!map||!points.length)return;map.fitBounds(L.latLngBounds(points.map(p=>[p.__lat,p.__lon])).pad(.08),{maxZoom:4,animate:false})}
-function closeDetail(){const p=document.getElementById('mapSidePanel');if(p){p.style.display='none';p.innerHTML=''}selected=null}
-function showDetail(p){closeDetail();selected=p;const panel=document.getElementById('mapSidePanel');if(!panel)return;const k=classify(p),m=LAYERS[k],title=p.title||p.label||p.name||p.location||'Map signal',detail=p.detail||p.summary||p.description||p.reason||'No additional detail available.',url=p.url||p.sourceUrl||p.source_url||'',links=brainEdgesFor(p);panel.style.display='block';panel.style.borderLeft='3px solid '+m.color;panel.innerHTML=`<div class="gp-map-detail-head"><span class="gp-map-detail-icon" aria-hidden="true">${m.icon}</span><div><div class="gp-card-title">${escapeHtml(title)}</div><div class="gp-map-detail-type">${escapeHtml(m.label)}${p.brainNode?' · Intelligence Brain':''}</div></div><button id="gpMapClose" class="gp-btn" type="button">×</button></div><div class="gp-map-detail-coords">${p.__lat.toFixed(4)}, ${p.__lon.toFixed(4)}</div><div class="gp-map-detail-text">${escapeHtml(String(detail).slice(0,1400))}</div>${p.source?`<div class="gp-map-detail-source">Source: ${escapeHtml(p.source)}</div>`:''}${links.length?`<div class="gp-map-detail-source"><strong>Brain connections</strong>${links.map(x=>`<div style="margin-top:6px"><button type="button" class="gp-map-brain-link" data-brain-target="${escapeHtml(x.id)}" style="background:none;border:0;padding:0;color:inherit;text-align:left;cursor:pointer">${escapeHtml(x.label)} — ${escapeHtml(x.relationship)}</button></div>`).join('')}</div>`:''}${/^https?:\/\//i.test(String(url))?`<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">Open source ↗</a>`:''}`;panel.querySelector('#gpMapClose').onclick=closeDetail;panel.querySelectorAll('[data-brain-target]').forEach(btn=>btn.onclick=()=>{const id=btn.dataset.brainTarget;if(!id)return;window.dispatchEvent(new CustomEvent('gp:brain-select',{detail:{id,source:'map'}}));document.getElementById('brainBody')?.scrollIntoView({behavior:scrollBehavior(),block:'start'});closeDetail()});if(p.brainNode&&p.nodeId)window.dispatchEvent(new CustomEvent('gp:brain-select',{detail:{id:String(p.nodeId),source:'map'}}))}
+function clearSelectionRing(){if(selectionRing&&map){try{map.removeLayer(selectionRing)}catch{}}selectionRing=null;if(selectedMarker){const prev=selectedMarker;selectedMarker=null;try{const k=prev.options?.__layer;const tune=k&&LAYER_TUNE[k]?LAYER_TUNE[k]:null;prev.setStyle({weight:tune?tune.coreWeight:2.5})}catch{}}}
+function drawSelectionRing(p,k,m){if(!map)return;clearSelectionRing();const at=[p.__lat,p.__lon];const glow=L.circleMarker(at,{pane:'gp-signals',radius:15,fillColor:m.color,fillOpacity:.30,stroke:false,interactive:false,keyboard:false});const ring=L.circleMarker(at,{pane:'gp-signals',radius:11,color:'#ffffff',weight:2,fill:false,opacity:.95,interactive:false,keyboard:false});selectionRing=L.layerGroup([glow,ring]);try{selectionRing.addTo(map)}catch{selectionRing=null}}
+function closeDetail(){const p=document.getElementById('mapSidePanel');if(p){p.style.display='none';p.innerHTML='';p.removeAttribute('data-sev')}selected=null;clearSelectionRing()}
+function showDetail(p){closeDetail();selected=p;const panel=document.getElementById('mapSidePanel');if(!panel)return;const k=classify(p),m=LAYERS[k],title=p.title||p.label||p.name||p.location||'Map signal',detail=p.detail||p.summary||p.description||p.reason||'No additional detail available.',url=p.url||p.sourceUrl||p.source_url||'',links=brainEdgesFor(p);drawSelectionRing(p,k,m);try{panel.dataset.sev=layerSeverity(k)}catch{}if(selectedMarker){try{selectedMarker.setStyle({weight:3.5})}catch{}}panel.style.display='block';panel.style.borderLeft='3px solid '+m.color;panel.innerHTML=`<div class="gp-map-detail-head"><span class="gp-map-detail-icon" aria-hidden="true">${m.icon}</span><div><div class="gp-card-title">${escapeHtml(title)}</div><div class="gp-map-detail-type">${escapeHtml(m.label)}${p.brainNode?' · Intelligence Brain':''}</div></div><button id="gpMapClose" class="gp-btn" type="button">×</button></div><div class="gp-map-detail-coords">${p.__lat.toFixed(4)}, ${p.__lon.toFixed(4)}</div><div class="gp-map-detail-text">${escapeHtml(String(detail).slice(0,1400))}</div>${p.source?`<div class="gp-map-detail-source">Source: ${escapeHtml(p.source)}</div>`:''}${links.length?`<div class="gp-map-detail-source"><strong>Brain connections</strong>${links.map(x=>`<div style="margin-top:6px"><button type="button" class="gp-map-brain-link" data-brain-target="${escapeHtml(x.id)}" style="background:none;border:0;padding:0;color:inherit;text-align:left;cursor:pointer">${escapeHtml(x.label)} — ${escapeHtml(x.relationship)}</button></div>`).join('')}</div>`:''}${/^https?:\/\//i.test(String(url))?`<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">Open source ↗</a>`:''}`;panel.querySelector('#gpMapClose').onclick=closeDetail;panel.querySelectorAll('[data-brain-target]').forEach(btn=>btn.onclick=()=>{const id=btn.dataset.brainTarget;if(!id)return;window.dispatchEvent(new CustomEvent('gp:brain-select',{detail:{id,source:'map'}}));document.getElementById('brainBody')?.scrollIntoView({behavior:scrollBehavior(),block:'start'});closeDetail()});if(p.brainNode&&p.nodeId)window.dispatchEvent(new CustomEvent('gp:brain-select',{detail:{id:String(p.nodeId),source:'map'}}))}
 /* GUI Phase 3 — Geospatial Operations workspace.
  * Reads the canonical validated feed (state.mapPoints / data/map_points.json
  * with markers, updatedAt, count) plus live map layers. Layer counts are real
@@ -259,7 +302,7 @@ export function renderMapOps(){
     const k=classify(p);const m=LAYERS[k]||LAYERS.conflicts;const sev=layerSeverity(k);
     const title=opsTitle(p);const place=[p.country,p.region,p.city].filter(Boolean).join(' · ');
     const key=String(p.nodeId??p.id??p.eventId??(p.__lat+','+p.__lon)+':'+i);
-    return '<button class="gp-map-op-row sev-'+sev+'" data-map-ops-focus="'+escapeHtml(key)+'" data-map-ops-index="'+i+'" type="button">'
+    return '<button class="gp-map-op-row sev-'+sev+'" data-map-ops-focus="'+escapeHtml(key)+'" data-map-ops-index="'+i+'" type="button" aria-selected="false">'
       +'<span class="gp-map-op-dot" style="background:'+m.color+'"></span>'
       +'<span class="grow"><span class="title">'+escapeHtml(String(title).slice(0,140))+'</span>'
       +'<span class="meta">'+escapeHtml(m.label)+(place?' · '+escapeHtml(place):'')+' · '+p.__lat.toFixed(2)+', '+p.__lon.toFixed(2)+'</span></span>'
@@ -268,14 +311,19 @@ export function renderMapOps(){
   host.innerHTML='<div class="gp-map-ops-bar"><input id="mapOpsSearch" class="gp-map-search" type="search" aria-label="Filter map signals" placeholder="Filter map signals…" value="'+escapeHtml(query)+'">'
     +'<span class="meta">Showing '+shown.length.toLocaleString()+' of '+visible.length.toLocaleString()+' signals · '+total.toLocaleString()+' total</span></div>'
     +'<div class="gp-filter-row" role="group" aria-label="Filter map by layer">'+chips+'</div>'
-    +(rows?'<div class="gp-map-ops-list">'+rows+'</div>':'<div class="gp-state"><div class="gp-state-title">No signals match</div><div>Nothing in the canonical map feed matches this layer or search.</div></div>');
+    +(rows?'<div class="gp-map-ops-list" role="listbox" aria-label="Map signals">'+rows+'</div>':(Object.values(enabled).every(v=>!v)?'<div class="gp-map-layer-empty">All map layers are off. Re-enable a layer to see signals.</div><div class="gp-state gp-map-ops-empty"><div class="gp-state-title">No signals match</div><div>Nothing in the canonical map feed matches this layer or search.</div></div>':'<div class="gp-state gp-map-ops-empty"><div class="gp-state-title">No signals match</div><div>Nothing in the canonical map feed matches this layer or search.</div></div>'));
   const search=host.querySelector('#mapOpsSearch');
   search?.addEventListener('input',()=>{query=search.value.trim().toLowerCase();const leaf=host.querySelector('#mapOpsSearch');renderMap();renderMapOps();const again=document.getElementById('mapOpsSearch');if(again&&leaf){again.focus();again.setSelectionRange(again.value.length,again.value.length)}});
   host.querySelectorAll('[data-map-ops-filter]').forEach(btn=>btn.addEventListener('click',()=>{
     filter=normalizeOpsFilter(btn.dataset.mapOpsFilter);try{localStorage.setItem('gp.mapFilter',filter)}catch{}renderMap();renderMapOps();
   }));
+  host.querySelectorAll('[data-map-ops-index]').forEach(btn=>{
+    btn.addEventListener('focus',()=>{host.querySelectorAll('[data-map-ops-index]').forEach(x=>x.setAttribute('aria-selected','false'));btn.setAttribute('aria-selected','true')});
+    btn.addEventListener('blur',()=>{btn.setAttribute('aria-selected','false')});
+  });
   host.querySelectorAll('[data-map-ops-index]').forEach(btn=>btn.addEventListener('click',()=>{
     const idx=Number(btn.dataset.mapOpsIndex);const p=shown[idx];if(!p)return;
+    host.querySelectorAll('[data-map-ops-index]').forEach(x=>x.setAttribute('aria-selected','false'));btn.setAttribute('aria-selected','true');
     const kind=classify(p);
     if(!enabled[kind]){enabled[kind]=true;try{localStorage.setItem('gp.mapLayers',JSON.stringify(enabled))}catch{}renderMap()}
     if(map){map.setView([p.__lat,p.__lon],Math.max(map.getZoom(),5),{animate:false});showDetail(p)}
