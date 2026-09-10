@@ -139,6 +139,8 @@ def _run_pipeline(started):
  verify_json('brain_stories.json',min_list=('stories',1),max_age=1800)
  run('Validate Brain story contracts',sys.executable,'validate_brain_stories.py')
  run('Validate Brain gap history contracts',sys.executable,'validate_brain_gap_history.py')
+ run('Compute Global Tension v6 from drivers and story pressure',sys.executable,'build_tension.py')
+ run('Validate Global Tension v6 contract',sys.executable,'validate_tension.py')
  run('Build strategic signals',sys.executable,'build_strategic_signals.py')
  signals=verify_json('strategic_signals.json',fresh_required=False);verify_strategic_signals(signals)
  run('Build rolling tension trends from retained history',sys.executable,'build_historical_trends.py')

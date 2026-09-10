@@ -50,3 +50,9 @@ def test_story_builder_runs_after_brain_validation():
         assert f"'{name}'" in PIPELINE, f'{name} missing from refresh pipeline artifact lists'
     assert idx("'validate_brain_stories.py'") > idx("'build_brain_stories.py'")
     assert idx("'validate_brain_gap_history.py'") > idx("'build_brain_stories.py'")
+
+
+def test_tension_v6_runs_after_stories_and_before_trends():
+    assert idx("'build_brain_stories.py'") < idx("'build_tension.py'") < idx("'build_historical_trends.py'")
+    assert idx("'validate_tension.py'") > idx("'build_tension.py'")
+    assert idx("'build_tension.py'") < idx("'build_map_points.py'")
