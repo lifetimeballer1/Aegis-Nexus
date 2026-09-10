@@ -1,23 +1,19 @@
 {
-  "updatedAt": "2026-09-10T18:14:40.484298+00:00",
+  "updatedAt": "2026-09-10T18:16:23.986309+00:00",
   "feedsChecked": 64,
-  "rowsFetched": 1080,
-  "newArticles": 365,
-  "purged": 118,
-  "databaseArticles": 3910,
+  "rowsFetched": 1056,
+  "newArticles": 138,
+  "purged": 108,
+  "databaseArticles": 3940,
   "exportedArticles": 2000,
   "exportLimit": 2000,
-  "healthySources": 57,
-  "emptySources": 4,
+  "healthySources": 58,
+  "emptySources": 5,
   "fallbackSources": 0,
   "failedSources": [
     {
-      "source": "SOUTHCOM Official Reporting — GDELT Mirror",
-      "error": "HTTPError: HTTP Error 429: Too Many Requests"
-    },
-    {
       "source": "GDELT — Western Hemisphere Counter-Cartel",
-      "error": "HTTPError: HTTP Error 429: Too Many Requests"
+      "error": "ParseError: syntax error: line 1, column 0"
     },
     {
       "source": "X @NASA",
@@ -228,10 +224,10 @@
       "category": "southcom",
       "coverage": [],
       "rowsFetched": 0,
-      "httpOk": false,
-      "mode": "failed",
-      "emptyFeed": false,
-      "error": "HTTPError: HTTP Error 429: Too Many Requests"
+      "httpOk": true,
+      "mode": "online-empty",
+      "emptyFeed": true,
+      "error": ""
     },
     {
       "sourceId": "google_news_southcom",
@@ -327,7 +323,7 @@
       "httpOk": false,
       "mode": "failed",
       "emptyFeed": false,
-      "error": "HTTPError: HTTP Error 429: Too Many Requests"
+      "error": "ParseError: syntax error: line 1, column 0"
     },
     {
       "sourceId": "google_news_climate_disaster",
@@ -347,7 +343,7 @@
       "type": "climate-hazard",
       "category": "climate-hazard",
       "coverage": [],
-      "rowsFetched": 55,
+      "rowsFetched": 56,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -371,7 +367,7 @@
       "type": "us-politics",
       "category": "us-politics",
       "coverage": [],
-      "rowsFetched": 44,
+      "rowsFetched": 45,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -383,7 +379,7 @@
       "type": "us-politics",
       "category": "us-politics",
       "coverage": [],
-      "rowsFetched": 34,
+      "rowsFetched": 15,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -503,7 +499,7 @@
       "type": "africa-conflict",
       "category": "africa-conflict",
       "coverage": [],
-      "rowsFetched": 9,
+      "rowsFetched": 8,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -563,7 +559,7 @@
       "type": "south-asia-conflict",
       "category": "south-asia-conflict",
       "coverage": [],
-      "rowsFetched": 93,
+      "rowsFetched": 90,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -587,7 +583,7 @@
       "type": "middle-east-conflict",
       "category": "middle-east-conflict",
       "coverage": [],
-      "rowsFetched": 47,
+      "rowsFetched": 44,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -599,7 +595,7 @@
       "type": "europe-conflict",
       "category": "europe-conflict",
       "coverage": [],
-      "rowsFetched": 10,
+      "rowsFetched": 9,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -635,7 +631,7 @@
       "type": "south-asia",
       "category": "south-asia",
       "coverage": [],
-      "rowsFetched": 1,
+      "rowsFetched": 2,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
