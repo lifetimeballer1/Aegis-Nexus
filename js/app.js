@@ -79,7 +79,7 @@ function resetRefreshTimer() {
   }, prefs.intervalMin * 60 * 1000);
 }
 function setupNav() {
-  const items = document.querySelectorAll('.gp-nav-item');
+  const items = document.querySelectorAll('.gp-nav-item, .gp-rail-item');
   items.forEach(item => item.addEventListener('click', () => {
     items.forEach(i => i.classList.remove('active'));
     item.classList.add('active');
@@ -89,9 +89,18 @@ function setupNav() {
   const observer = new IntersectionObserver(entries => entries.forEach(entry => {
     if (!entry.isIntersecting) return;
     const id = entry.target.dataset.section;
-    items.forEach(i => i.classList.toggle('active', i.dataset.nav === id));
+    items.forEach(i => {
+      const on = i.dataset.nav === id;
+      i.classList.toggle('active', on);
+      if (on) i.setAttribute('aria-current', 'true'); else i.removeAttribute('aria-current');
+    });
   }), {threshold:.35});
   sections.forEach(s => observer.observe(s));
+}
+
+function setupHeaderSearch() {
+  const button = document.getElementById('gpHeaderSearch');
+  if (button) button.addEventListener('click', focusUniversalSearch);
 }
 
 async function loadModules() {
@@ -166,6 +175,7 @@ async function refresh(force = false) {
 async function boot() {
   setupNav();
   setupSearchShortcut();
+  setupHeaderSearch();
   window.addEventListener('gp:prefs-changed', resetRefreshTimer);
   await loadModules();
   if (modules.map?.initMap) {
