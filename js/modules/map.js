@@ -2,6 +2,7 @@
 import { getState } from '../core/state.js';
 import { CONFIG } from '../core/config.js';
 import { escapeHtml } from '../core/utils.js';
+import { fetchJson } from '../core/fetch.js';
 
 let map=null;
 let groups={};
@@ -40,8 +41,12 @@ function classify(p){
   return'conflicts';
 }
 function unique(points){const seen=new Set();return points.filter(p=>{const key=String(p.id??p.nodeId??p.eventId??p.mapId??p.datasetEventId??p.sourceUrl??p.url??`${p.__lat.toFixed(4)},${p.__lon.toFixed(4)},${p.title??p.name??p.location??''}`);if(seen.has(key))return false;seen.add(key);return true})}
+let collectCache={fp:'',points:[]};
 function collect(){
-  const s=getState()||{};const sources=[];
+  const s0=getState()||{};
+  const fp0=JSON.stringify([s0.snapshot?.updatedAt,s0.mapPoints?.updatedAt,mapData?.snapshot?.updatedAt,mapData?.events?.updatedAt,mapData?.regional?.updatedAt,mapData?.cartel?.updatedAt,mapData?.links?.updatedAt,mapData?.points?.updatedAt,mapData?.brain?.updatedAt]);
+  if(collectCache.fp===fp0)return collectCache.points;
+  const s=s0;const sources=[];
   const add=(name,data)=>{if(data&&typeof data==='object')sources.push([name,data])};
   add('snapshot',s.snapshot);add('snapshot-markers',s.snapshot?.markers);add('snapshot-osint',s.snapshot?.osintMaps);add('snapshot-conflict',s.snapshot?.conflictDataset);add('snapshot-map',s.snapshot?.mapPoints);
   add('canonical-points',s.mapPoints);add('canonical-markers',s.mapPoints?.markers);
@@ -49,7 +54,7 @@ function collect(){
   add('live-snapshot',mapData?.snapshot);add('live-events',mapData?.events);add('live-regional',mapData?.regional);add('live-cartel',mapData?.cartel);add('live-links',mapData?.links);add('live-points',mapData?.points);
   const brain=mapData?.brain;
   if(brain?.sourceBackedOnly===true&&Array.isArray(brain.nodes))add('intelligence-brain',brain.nodes.filter(n=>coords(n)).map(n=>({...n,nodeId:String(n.id),brainNode:true,detail:n.description||n.summary||`${n.mentions||0} mentions · ${n.evidence?.length||0} evidence records`})));
-  return unique(sources.flatMap(([name,data])=>flatten(data,name)));
+  const points=unique(sources.flatMap(([name,data])=>flatten(data,name)));collectCache={fp:fp0,points};return points;
 }
 function brainEdgesFor(p){
   const brain=mapData?.brain;if(!brain||!Array.isArray(brain.edges))return[];
@@ -127,7 +132,7 @@ export function initMap(){
   dark.on('tileerror',()=>{try{if(!map.hasLayer(osm))osm.addTo(map);}catch{}});
   brainLinks=L.layerGroup().addTo(map);
   for(const k of Object.keys(LAYERS)){groups[k]=makeGroup();groups[k].addTo(map)}
-  controls();ensureMapSize();map.on('click',closeDetail);
+  controls();ensureMapSize();map.on('click',closeDetail);document.addEventListener('keydown',e=>{if(e.key==='Escape'){const p=document.getElementById('mapSidePanel');if(p&&p.style.display!=='none')closeDetail()}});
 }
 /* M1 — the map section renders below the fold under content-visibility,
  * so the container can measure 0px wide at boot (zero-size canvas =
@@ -159,8 +164,25 @@ function ensureMapSize(){
     io.observe(el);
   }
 }
-async function getFeed(key){try{const base=CONFIG.endpoints[key];if(!base)return null;const r=await fetch(`${base}${base.includes('?')?'&':'?'}v=${Date.now()}`,{cache:'no-store'});if(!r.ok)return null;return await r.json()}catch{return null}}
-export async function loadMapData(){const keys=['snapshot','mapEvents','mapRegional','mapCartel','mapLinks','mapPoints','intelligenceBrain'];const values=await Promise.all(keys.map(getFeed));const [snapshot,events,regional,cartel,links,points,brain]=values;mapData={snapshot,events,regional,cartel,links,points,brain};renderMap();return mapData}
+async function getFeed(key){try{const base=CONFIG.endpoints[key];if(!base)return null;const r=await fetchJson(base,{label:'map-'+key,quiet:true,retries:1});return r.ok?r.data:null}catch{return null}}
+export async function loadMapData(){
+  const s=getState()||{};
+  const obj=v=>(v&&typeof v==='object')?v:null;
+  mapData={snapshot:obj(s.snapshot),events:obj(s.mapData?.events),regional:obj(s.mapData?.regional),cartel:obj(s.mapData?.cartel),links:obj(s.mapData?.links),points:obj(s.mapPoints),brain:obj(s.intelligenceBrain)};
+  const missing=[];
+  if(!mapData.snapshot)missing.push(['snapshot','snapshot']);
+  if(!mapData.events)missing.push(['events','mapEvents']);
+  if(!mapData.regional)missing.push(['regional','mapRegional']);
+  if(!mapData.cartel)missing.push(['cartel','mapCartel']);
+  if(!mapData.links)missing.push(['links','mapLinks']);
+  if(!mapData.points)missing.push(['points','mapPoints']);
+  if(!mapData.brain)missing.push(['brain','intelligenceBrain']);
+  if(missing.length){
+    const rs=await Promise.all(missing.map(([,ep])=>fetchJson(CONFIG.endpoints[ep],{label:'map-'+ep,quiet:true,retries:1})));
+    missing.forEach(([k],i)=>{if(rs[i].ok)mapData[k]=rs[i].data});
+  }
+  renderMap();return mapData;
+}
 /* M2 — fingerprint of everything the marker build depends on. Re-renders
  * are skipped when nothing changed, so background state updates (other
  * workspaces, fetch telemetry) no longer rebuild ~3k markers + clusters
@@ -177,10 +199,10 @@ export function renderMap(){
   renderMap._fp=fp;
   for(const g of Object.values(groups))g.clearLayers();renderBrainLinks();
   const all=collect();const capped=all.length>MAP_RENDER_CAP;const points=all.filter(matches).slice(0,MAP_RENDER_CAP);const counts=Object.fromEntries(Object.keys(LAYERS).map(k=>[k,0]));
-  for(const p of points){const k=classify(p);counts[k]++;const m=LAYERS[k];const imp=Math.max(1,Math.min(3,Number(p.importance)||1));const marker=L.circleMarker([p.__lat,p.__lon],{pane:'gp-signals',radius:p.brainNode?10:6+imp,color:'#ffffff',weight:2.5,fillColor:m.color,fillOpacity:.98,opacity:1,interactive:true,__layer:k});marker.bindTooltip(String(p.title||p.label||p.name||p.location||m.label).slice(0,120),{direction:'top',sticky:true});marker.on('click',e=>{/* M1 — stop BOTH propagation layers: native stopPropagation blocks DOM bubble to the container's own click handler, and _stopped halts Leaflet's internal target loop before it reaches map.on('click',closeDetail), which would otherwise close the panel in the same tick. */if(e.originalEvent){e.originalEvent._stopped=true;try{e.originalEvent.stopPropagation();}catch{}}showDetail(p)});groups[k].addLayer(marker)}
+  for(const p of points){const k=classify(p);counts[k]++;const m=LAYERS[k];const imp=Math.max(1,Math.min(3,Number(p.importance)||1));const marker=L.circleMarker([p.__lat,p.__lon],{pane:'gp-signals',radius:p.brainNode?10:6+imp,color:'#ffffff',weight:2.5,fillColor:m.color,fillOpacity:.98,opacity:1,interactive:true,__layer:k});marker.__point=p;marker.bindTooltip(String(p.title||p.label||p.name||p.location||m.label).slice(0,120),{direction:'top',sticky:true});marker.on('click',e=>{/* M1 — stop BOTH propagation layers: native stopPropagation blocks DOM bubble to the container's own click handler, and _stopped halts Leaflet's internal target loop before it reaches map.on('click',closeDetail), which would otherwise close the panel in the same tick. */if(e.originalEvent){e.originalEvent._stopped=true;try{e.originalEvent.stopPropagation();}catch{}}highlightMarker(marker);showDetail(p)});groups[k].addLayer(marker)}
   const total=all.length;const shown=points.length;const count=document.getElementById('gpMapCount');if(count)count.textContent=capped?`${shown.toLocaleString()} of ${total.toLocaleString()} signals (cap)`:`${total.toLocaleString()} signals`;
   for(const k of Object.keys(LAYERS)){const e=document.getElementById(`gpMapLayerCount-${k}`);if(e)e.textContent=counts[k].toLocaleString()}
-  const linkCount=document.getElementById('gpMapBrainLinkCount');if(linkCount){const brain=mapData?.brain;linkCount.textContent=String(Array.isArray(brain?.edges)?brain.edges.filter(e=>String(e.source)!==String(e.target)).length:0)}
+  const linkCount=document.getElementById('gpMapBrainLinkCount');if(linkCount){const brain=mapData?.brain;let drawn=0;if(Array.isArray(brain?.edges)&&Array.isArray(brain?.nodes)){const withCoords=new Set(brain.nodes.filter(n=>coords(n)).map(n=>String(n.id)));drawn=brain.edges.filter(e=>String(e.source)!==String(e.target)&&withCoords.has(String(e.source))&&withCoords.has(String(e.target))).length}linkCount.textContent=String(drawn)}
   /* M1 — auto-fit only on the first render with data. Background refreshes
    * re-render markers in place; refitting every time would yank the user's
    * zoom/pan (and rebuild clusters under their cursor). Fit/Reset buttons
@@ -189,8 +211,12 @@ export function renderMap(){
   else if(!total)setTimeout(()=>map.invalidateSize(),50)
 }
 function fitAll(points=collect().filter(matches)){if(!map||!points.length)return;map.fitBounds(L.latLngBounds(points.map(p=>[p.__lat,p.__lon])).pad(.08),{maxZoom:4,animate:false})}
-function closeDetail(){const p=document.getElementById('mapSidePanel');if(p){p.style.display='none';p.innerHTML=''}selected=null}
-function showDetail(p){closeDetail();selected=p;const panel=document.getElementById('mapSidePanel');if(!panel)return;const k=classify(p),m=LAYERS[k],title=p.title||p.label||p.name||p.location||'Map signal',detail=p.detail||p.summary||p.description||p.reason||'No additional detail available.',url=p.url||p.sourceUrl||p.source_url||'',links=brainEdgesFor(p);panel.style.display='block';panel.style.borderLeft='3px solid '+m.color;panel.innerHTML=`<div class="gp-map-detail-head"><span>${m.icon}</span><div><div class="gp-card-title">${escapeHtml(title)}</div><div class="gp-map-detail-type">${escapeHtml(m.label)}${p.brainNode?' · Intelligence Brain':''}</div></div><button id="gpMapClose" class="gp-btn" type="button">×</button></div><div class="gp-map-detail-coords">${p.__lat.toFixed(4)}, ${p.__lon.toFixed(4)}</div><div class="gp-map-detail-text">${escapeHtml(String(detail).slice(0,1400))}</div>${p.source?`<div class="gp-map-detail-source">Source: ${escapeHtml(p.source)}</div>`:''}${links.length?`<div class="gp-map-detail-source"><strong>Brain connections</strong>${links.map(x=>`<div style="margin-top:6px"><button type="button" class="gp-map-brain-link" data-brain-target="${escapeHtml(x.id)}" style="background:none;border:0;padding:0;color:inherit;text-align:left;cursor:pointer">${escapeHtml(x.label)} — ${escapeHtml(x.relationship)}</button></div>`).join('')}</div>`:''}${/^https?:\/\//i.test(String(url))?`<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">Open source ↗</a>`:''}`;panel.querySelector('#gpMapClose').onclick=closeDetail;panel.querySelectorAll('[data-brain-target]').forEach(btn=>btn.onclick=()=>{const id=btn.dataset.brainTarget;if(!id)return;window.dispatchEvent(new CustomEvent('gp:brain-select',{detail:{id,source:'map'}}));document.getElementById('brainBody')?.scrollIntoView({behavior:'smooth',block:'start'});closeDetail()});if(p.brainNode&&p.nodeId)window.dispatchEvent(new CustomEvent('gp:brain-select',{detail:{id:String(p.nodeId),source:'map'}}))}
+function closeDetail(){const p=document.getElementById('mapSidePanel');if(p){p.style.display='none';p.innerHTML=''}if(selectedMarker){try{const s=selectedMarker.__point||{};selectedMarker.setStyle({radius:(s.brainNode?10:6+Math.max(1,Math.min(3,Number(s.importance)||1))),weight:2.5,fillOpacity:.98})}catch{}selectedMarker=null}selected=null}
+let selectedMarker=null;
+function highlightMarker(marker){try{if(selectedMarker&&selectedMarker!==marker){const s=selectedMarker.__point||{};selectedMarker.setStyle({radius:(s.brainNode?10:6+Math.max(1,Math.min(3,Number(s.importance)||1))),weight:2.5,fillOpacity:.98})}selectedMarker=marker;if(marker){marker.setStyle({radius:12,weight:4,color:'#ffffff',fillOpacity:1});if(marker.bringToFront)marker.bringToFront()}}catch{}}
+function linkedEvent(p){const links=Array.isArray(mapData?.links?.links)?mapData.links.links:[];if(!links.length)return null;const id=p.eventId||p.datasetEventId;if(id){const hit=links.find(l=>String(l.eventId)===String(id));if(hit)return hit}let best=null,bd=0.06;for(const l of links){const d=Math.hypot(Number(l.lat)-p.__lat,Number(l.lng)-p.__lon);if(Number.isFinite(d)&&d<bd){bd=d;best=l}}return best}
+function detailField(label,value){return value?`<div class="gp-map-detail-field"><b>${escapeHtml(label)}</b><span>${escapeHtml(String(value))}</span></div>`:''}
+function showDetail(p){closeDetail();selected=p;const selKey=String(p.nodeId??p.id??p.eventId??'');document.querySelectorAll('.gp-map-op-row').forEach(r=>r.classList.toggle('selected',!!selKey&&r.dataset.mapOpsFocus===selKey));const panel=document.getElementById('mapSidePanel');if(!panel)return;const k=classify(p),m=LAYERS[k],title=p.title||p.label||p.name||p.location||'Map signal',detail=p.detail||p.summary||p.description||p.reason||'No additional detail available.',url=p.url||p.sourceUrl||p.source_url||'',links=brainEdgesFor(p),linked=linkedEvent(p);const conf=p.confidence||p.verification||'',imp=Number.isFinite(Number(p.importance))?Number(p.importance):null,etype=p.eventType||p.type||p.layer||'',srcCount=Array.isArray(p.sources)?p.sources.length:(Number(p.sourceCount)||null),fresh=Number.isFinite(Number(p.freshnessMinutes))?`${Number(p.freshnessMinutes).toFixed(0)} min`:'',precision=/unverified|not an exact|approximate|preliminary|source map report/i.test(`${conf} ${p.type||''} ${detail}`)?'Approximate / source-reported position':'';const fields=detailField('Confidence',conf)+detailField('Importance',imp!=null?imp:'')+detailField('Event type',etype)+detailField('Freshness',fresh)+detailField('Source records',srcCount!=null?srcCount:'')+detailField('Geo precision',precision);panel.style.display='block';panel.style.borderLeft='3px solid '+m.color;panel.innerHTML=`<div class="gp-map-detail-head"><span aria-hidden="true">${m.icon}</span><div><div class="gp-card-title">${escapeHtml(title)}</div><div class="gp-map-detail-type">${escapeHtml(m.label)}${p.brainNode?' · Intelligence Brain':''}</div></div><button id="gpMapClose" class="gp-btn" type="button" aria-label="Close signal details">×</button></div><div class="gp-map-detail-coords">${p.__lat.toFixed(4)}, ${p.__lon.toFixed(4)} <button id="gpMapCopyCoords" class="gp-btn" type="button" style="margin-left:6px;min-height:28px;padding:2px 8px;font-size:10px">Copy</button></div>${fields?`<div class="gp-map-detail-fields">${fields}</div>`:''}<div class="gp-map-detail-text">${escapeHtml(String(detail).slice(0,1400))}</div><div class="gp-map-detail-note">Marker color encodes map layer and size encodes recorded importance; neither is a risk judgement.</div>${p.source?`<div class="gp-map-detail-source">Source: ${escapeHtml(p.source)}</div>`:''}${srcCount?`<div class="gp-map-detail-source">${srcCount} source record${srcCount===1?'':'s'} attached to this signal.</div>`:''}${linked?`<div class="gp-map-detail-source"><strong>Linked event (candidate match, unverified)</strong><div style="margin-top:4px">${escapeHtml(String(linked.eventTitle||'Event').slice(0,200))}</div><div class="gp-map-detail-note">Match confidence: ${escapeHtml(String(linked.confidence||'candidate'))}${Number.isFinite(Number(linked.matchScore))?` · score ${Number(linked.matchScore).toFixed(2)}`:''}</div></div>`:''}${links.length?`<div class="gp-map-detail-source"><strong>Brain connections</strong>${links.map(x=>`<div style="margin-top:6px"><button type="button" class="gp-map-brain-link" data-brain-target="${escapeHtml(x.id)}" style="background:none;border:0;padding:0;color:inherit;text-align:left;cursor:pointer">${escapeHtml(x.label)} — ${escapeHtml(x.relationship)}</button></div>`).join('')}<div class="gp-map-detail-note">Contextual evidence links from the canonical Brain graph; not proof of causation.</div></div>`:''}<div style="margin-top:10px;display:flex;gap:6px;flex-wrap:wrap"><button id="gpMapOpenBrain" class="gp-btn" type="button">Open in Brain</button><button id="gpMapOpenWeb" class="gp-btn" type="button">Open in Web</button>${/^https?:\/\//i.test(String(url))?`<a class="gp-btn" href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">Open source ↗</a>`:''}</div>`;panel.querySelector('#gpMapClose').onclick=closeDetail;panel.querySelector('#gpMapCopyCoords')?.addEventListener('click',()=>{const text=`${p.__lat.toFixed(4)}, ${p.__lon.toFixed(4)}`;const done=()=>{const b=panel.querySelector('#gpMapCopyCoords');if(b)b.textContent='Copied'};try{navigator.clipboard.writeText(text).then(done,done)}catch{done()}});panel.querySelector('#gpMapOpenBrain')?.addEventListener('click',()=>{const id=p.nodeId||p.id||'';if(id)window.dispatchEvent(new CustomEvent('gp:brain-select',{detail:{id:String(id),label:title,source:'map'}}));document.getElementById('brainBody')?.scrollIntoView({behavior:'smooth',block:'start'})});panel.querySelector('#gpMapOpenWeb')?.addEventListener('click',()=>{window.dispatchEvent(new CustomEvent('gp:brain-select',{detail:{id:String(p.nodeId||p.id||''),label:title,source:'map'}}));try{window.location.hash='#section-intelweb'}catch{}});panel.querySelectorAll('[data-brain-target]').forEach(btn=>btn.onclick=()=>{const id=btn.dataset.brainTarget;if(!id)return;window.dispatchEvent(new CustomEvent('gp:brain-select',{detail:{id,source:'map'}}));document.getElementById('brainBody')?.scrollIntoView({behavior:'smooth',block:'start'});closeDetail()});if(p.brainNode&&p.nodeId)window.dispatchEvent(new CustomEvent('gp:brain-select',{detail:{id:String(p.nodeId),source:'map'}}));try{panel.querySelector('#gpMapClose')?.focus()}catch{}}
 /* GUI Phase 3 — Geospatial Operations workspace.
  * Reads the canonical validated feed (state.mapPoints / data/map_points.json
  * with markers, updatedAt, count) plus live map layers. Layer counts are real
@@ -225,10 +251,25 @@ function opsUpdatedAt(state){
 }
 function bindOpsHeaderFilters(){
   document.querySelectorAll('#section-map [data-layer]').forEach(btn=>{
+    const norm=normalizeOpsFilter(btn.dataset.layer);
+    btn.classList.toggle('active',norm===filter);
     if(btn.dataset.opsBound)return;btn.dataset.opsBound='1';
-    btn.addEventListener('click',()=>{filter=normalizeOpsFilter(btn.dataset.layer);try{localStorage.setItem('gp.mapFilter',filter)}catch{}renderMap();renderMapOps();});
+    btn.addEventListener('click',()=>{filter=normalizeOpsFilter(btn.dataset.layer);try{localStorage.setItem('gp.mapFilter',filter)}catch{}document.querySelectorAll('#section-map [data-layer]').forEach(b=>b.classList.toggle('active',normalizeOpsFilter(b.dataset.layer)===filter));renderMap();renderMapOps();});
   });
 }
+let opsSort='severity';
+let opsShowAll=false;
+let opsSev='all';
+function signalSeverity(p){
+  const c=String(p.confidence||p.verification||'').toLowerCase();
+  if(/high|confirmed|corroborat|documented/.test(c))return'critical';
+  if(/moderate|likely|reported|candidate|preliminary/.test(c))return'watch';
+  if(c)return'info';
+  const k=classify(p);
+  if(k==='conflicts'||k==='cartel'||k==='hazards')return'watch';
+  return'info';
+}
+function sigChip(sev){return sev==='critical'?'gp-sev-critical':sev==='watch'?'gp-sev-high':'gp-sev-medium'}
 export function renderMapOps(){
   const host=document.getElementById('mapOpsBody');
   if(!host)return;
@@ -245,33 +286,55 @@ export function renderMapOps(){
   for(const p of all){try{counts[classify(p)]++}catch{}}
   const total=all.length;
   const visible=all.filter(matches);
-  const shown=visible.slice(0,OPS_MAX_ROWS);
-  const chips=['<button class="gp-filter'+(filter==='all'?' active':'')+'" data-map-ops-filter="all" type="button">All ('+total.toLocaleString()+')</button>']
-    .concat(OPS_LAYERS.map(k=>'<button class="gp-filter'+(filter===k?' active':'')+'" data-map-ops-filter="'+k+'" type="button">'+LAYERS[k].label+' ('+(counts[k]||0).toLocaleString()+')</button>')).join('');
+  const shown0=visible;
+  const sevOf=new Map();const sevCounts={all:visible.length,critical:0,watch:0,info:0};
+  for(const p of shown0){const s=signalSeverity(p);sevOf.set(p,s);sevCounts[s]++}
+  const sevFiltered=opsSev==='all'?visible:visible.filter(p=>sevOf.get(p)===opsSev);
+  const rank={critical:0,watch:1,info:2};
+  const sorted=[...sevFiltered].sort((a,b)=>{
+    if(opsSort==='title')return String(opsTitle(a)).localeCompare(String(opsTitle(b)));
+    if(opsSort==='layer')return classify(a).localeCompare(classify(b))||String(opsTitle(a)).localeCompare(String(opsTitle(b)));
+    return (rank[sevOf.get(a)]-rank[sevOf.get(b)])||String(opsTitle(a)).localeCompare(String(opsTitle(b)));
+  });
+  const shown=opsShowAll?sorted:sorted.slice(0,OPS_MAX_ROWS);
+  const engineNote=typeof L==='undefined'?'<div class="gp-honest" style="margin-bottom:8px">Map engine (Leaflet) did not load, so markers cannot be drawn. The operations list below still reflects the canonical feed.</div>':(typeof L.markerClusterGroup!=='function'?'<div class="gp-honest" style="margin-bottom:8px">Marker clustering plugin unavailable; signals render unclustered.</div>':'');
+  const staleFeeds=Object.entries(state.feedMeta||{}).filter(([k,v])=>/^map|snapshot|intelligenceBrain/.test(k)&&v&&v.stale).map(([k])=>k);
+  const staleNote=staleFeeds.length?`<div class="gp-honest" style="margin-bottom:8px">Some map feeds are stale (${escapeHtml(staleFeeds.join(', '))}); showing the last successful data.</div>`:'';
+  const chips=['<button class="gp-filter'+(filter==='all'?' active':'')+'" data-map-ops-filter="all" type="button" aria-pressed="'+(filter==='all')+'">All ('+total.toLocaleString()+')</button>']
+    .concat(OPS_LAYERS.map(k=>'<button class="gp-filter'+(filter===k?' active':'')+'" data-map-ops-filter="'+k+'" type="button" aria-pressed="'+(filter===k)+'">'+LAYERS[k].label+' ('+(counts[k]||0).toLocaleString()+')</button>')).join('');
+  const sevChips=[['all','All severity'],['critical','Critical'],['watch','Watch'],['info','Informational']].map(([v,label])=>'<button class="gp-filter'+(opsSev===v?' active':'')+'" data-map-ops-sev="'+v+'" type="button" aria-pressed="'+(opsSev===v)+'">'+label+' ('+(sevCounts[v]||0).toLocaleString()+')</button>').join('');
   const rows=shown.map((p,i)=>{
-    const k=classify(p);const m=LAYERS[k]||LAYERS.conflicts;const sev=layerSeverity(k);
+    const k=classify(p);const m=LAYERS[k]||LAYERS.conflicts;const sev=sevOf.get(p);
     const title=opsTitle(p);const place=[p.country,p.region,p.city].filter(Boolean).join(' · ');
+    const conf=p.confidence||p.verification||'';const src=p.source||'';
     const key=String(p.nodeId??p.id??p.eventId??(p.__lat+','+p.__lon)+':'+i);
     return '<button class="gp-map-op-row sev-'+sev+'" data-map-ops-focus="'+escapeHtml(key)+'" data-map-ops-index="'+i+'" type="button">'
       +'<span class="gp-map-op-dot" style="background:'+m.color+'"></span>'
       +'<span class="grow"><span class="title">'+escapeHtml(String(title).slice(0,140))+'</span>'
-      +'<span class="meta">'+escapeHtml(m.label)+(place?' · '+escapeHtml(place):'')+' · '+p.__lat.toFixed(2)+', '+p.__lon.toFixed(2)+'</span></span>'
-      +'<span class="gp-sev gp-sev-'+(sev==='critical'?'critical':sev==='watch'?'high':'medium')+'">'+escapeHtml(k)+'</span></button>';
+      +'<span class="meta">'+escapeHtml(m.label)+(place?' · '+escapeHtml(place):'')+(conf?' · '+escapeHtml(String(conf)):'')+(src?' · '+escapeHtml(String(src).slice(0,40)):'')+' · '+p.__lat.toFixed(2)+', '+p.__lon.toFixed(2)+'</span></span>'
+      +'<span class="gp-sev '+sigChip(sev)+'">'+escapeHtml(conf?String(conf).slice(0,18):k)+'</span></button>';
   }).join('');
-  host.innerHTML='<div class="gp-map-ops-bar"><input id="mapOpsSearch" class="gp-map-search" type="search" aria-label="Filter map signals" placeholder="Filter map signals…" value="'+escapeHtml(query)+'">'
-    +'<span class="meta">Showing '+shown.length.toLocaleString()+' of '+visible.length.toLocaleString()+' signals · '+total.toLocaleString()+' total</span></div>'
+  host.innerHTML=engineNote+staleNote+'<div class="gp-map-ops-bar"><input id="mapOpsSearch" class="gp-map-search" type="search" aria-label="Filter map signals" placeholder="Filter map signals…" value="'+escapeHtml(query)+'">'
+    +'<select id="mapOpsSort" class="gp-map-search" aria-label="Sort map signals" style="flex:0 0 150px"><option value="severity"'+(opsSort==='severity'?' selected':'')+'>Sort: severity</option><option value="title"'+(opsSort==='title'?' selected':'')+'>Sort: title</option><option value="layer"'+(opsSort==='layer'?' selected':'')+'>Sort: layer</option></select>'
+    +'<span class="meta">Showing '+shown.length.toLocaleString()+' of '+sorted.length.toLocaleString()+' signals · '+total.toLocaleString()+' mapped points</span></div>'
     +'<div class="gp-filter-row" role="group" aria-label="Filter map by layer">'+chips+'</div>'
-    +(rows?'<div class="gp-map-ops-list">'+rows+'</div>':'<div class="gp-state"><div class="gp-state-title">No signals match</div><div>Nothing in the canonical map feed matches this layer or search.</div></div>');
+    +'<div class="gp-filter-row" role="group" aria-label="Filter map by confidence severity">'+sevChips+'</div>'
+    +(rows?'<div class="gp-map-ops-list">'+rows+'</div>':'<div class="gp-state"><div class="gp-state-title">No signals match</div><div>Nothing in the canonical map feed matches this layer, severity or search.</div></div>')
+    +(sorted.length>OPS_MAX_ROWS?'<button id="mapOpsMore" class="gp-btn gp-more" type="button">'+(opsShowAll?'Show fewer':'Show all '+sorted.length.toLocaleString())+'</button>':'');
   const search=host.querySelector('#mapOpsSearch');
-  search?.addEventListener('input',()=>{query=search.value.trim().toLowerCase();const leaf=host.querySelector('#mapOpsSearch');renderMap();renderMapOps();const again=document.getElementById('mapOpsSearch');if(again&&leaf){again.focus();again.setSelectionRange(again.value.length,again.value.length)}});
+  let opsTimer=0;
+  search?.addEventListener('input',()=>{clearTimeout(opsTimer);const v=search.value.trim().toLowerCase();opsTimer=setTimeout(()=>{query=v;renderMap();renderMapOps();const again=document.getElementById('mapOpsSearch');if(again){again.focus();again.setSelectionRange(again.value.length,again.value.length)}},180)});
+  host.querySelector('#mapOpsSort')?.addEventListener('change',e=>{opsSort=String(e.target.value||'severity');opsShowAll=false;renderMapOps()});
   host.querySelectorAll('[data-map-ops-filter]').forEach(btn=>btn.addEventListener('click',()=>{
     filter=normalizeOpsFilter(btn.dataset.mapOpsFilter);try{localStorage.setItem('gp.mapFilter',filter)}catch{}renderMap();renderMapOps();
   }));
+  host.querySelectorAll('[data-map-ops-sev]').forEach(btn=>btn.addEventListener('click',()=>{opsSev=String(btn.dataset.mapOpsSev||'all');opsShowAll=false;renderMapOps()}));
+  host.querySelector('#mapOpsMore')?.addEventListener('click',()=>{opsShowAll=!opsShowAll;renderMapOps()});
   host.querySelectorAll('[data-map-ops-index]').forEach(btn=>btn.addEventListener('click',()=>{
     const idx=Number(btn.dataset.mapOpsIndex);const p=shown[idx];if(!p)return;
     const kind=classify(p);
     if(!enabled[kind]){enabled[kind]=true;try{localStorage.setItem('gp.mapLayers',JSON.stringify(enabled))}catch{}renderMap()}
-    if(map){map.setView([p.__lat,p.__lon],Math.max(map.getZoom(),5),{animate:false});showDetail(p)}
+    if(map){map.setView([p.__lat,p.__lon],Math.max(map.getZoom(),5),{animate:false});showDetail(p);highlightMarker((groups[kind]&&groups[kind].getLayers?groups[kind].getLayers():[]).find(m=>m.__point===p)||null)}
     document.getElementById('mapContainer')?.scrollIntoView({behavior:'smooth',block:'center'});
   }));
   const stamp=document.getElementById('mapUpdated');

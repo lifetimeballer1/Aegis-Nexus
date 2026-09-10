@@ -195,7 +195,7 @@ export function renderDashboard() {
       <div class="cc-panel"><h3>▦ Headline Intelligence <a href="#section-breaking">View All →</a></h3>
         <input id="dashSearch" class="gp-map-search" type="search" aria-label="Filter headlines" placeholder="Filter headlines…" value="${esc(query)}" style="margin-bottom:8px">${headRows}</div>
       <div class="cc-panel"><h3>🌐 Global Map <a href="#section-map">View Full Map →</a></h3>
-        <div style="font-size:11px;color:var(--muted);margin-bottom:6px">All Domains · 24H · ${fmtInt(events.length)} signals · dark operational basemap</div>
+        <div style="font-size:11px;color:var(--muted);margin-bottom:6px">${fmtInt(Array.isArray(state.mapPoints?.markers) ? state.mapPoints.markers.length : 0)} mapped points · clustered bubbles · dark operational basemap</div>
         <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px">${order.slice(0, 6).map(n => `<span class="cc-pill gen">${esc(String(n).toUpperCase().slice(0, 14))} · ${fmtInt(regions[n]?.events ?? regions[n]?.reports)}</span>`).join('')}</div>
         <div id="dashMap" role="img" aria-label="Mini operational map" style="min-height:240px;height:260px;border:1px solid var(--line);border-radius:8px;background:#050b13;z-index:1"></div>
         <div class="cc-legend" aria-label="Map legend"><span><i style="background:var(--red)"></i>Critical</span><span><i style="background:var(--amber)"></i>Elevated</span><span><i style="background:var(--blue)"></i>Notable</span><span><i style="background:#cbd5e1"></i>Monitoring</span></div></div>
@@ -250,6 +250,7 @@ function initDashMap(state) {
       dashBase.on('tileerror', () => { try { if (!dashMap.hasLayer(dashFallback)) dashFallback.addTo(dashMap); } catch {} });
       L.control.zoom({ position: 'bottomright' }).addTo(dashMap);
       setTimeout(() => { try { dashMap.invalidateSize(); } catch {} }, 300);
+      dashMap.on('zoomend', () => { dashMapFp = ''; initDashMap(state); });
       if (typeof IntersectionObserver !== 'undefined') {
         new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { try { dashMap.invalidateSize(); } catch {} } }), { rootMargin: '200px' }).observe(host);
       }
@@ -264,12 +265,15 @@ function initDashMap(state) {
       if (/cartel|crime|gang/.test(s)) return '#ff8a35';
       if (/hazard|gdacs|earthquake|flood|storm|fire/.test(s)) return '#ffd34d';
       if (/strateg/.test(s)) return '#4d9aff';
+      if (/osint|regional|news|report/.test(s)) return '#b08cff';
       return '#ff405f';
     };
     // Deterministic thin sample: every Nth marker so mini-map stays fast and honest.
-    const step = Math.max(1, Math.floor(markers.length / 350));
+    const zf = Math.max(1, Math.min(4, (dashMap.getZoom() || 2) / 2));
+    const cap = Math.round(350 * zf);
+    const step = Math.max(1, Math.floor(markers.length / cap));
     const points = [];
-    for (let i = 0; i < markers.length && points.length < 350; i += step) {
+    for (let i = 0; i < markers.length && points.length < cap; i += step) {
       const m = markers[i];
       const lat = Number(m.lat), lon = Number(m.lng);
       if (!Number.isFinite(lat) || !Number.isFinite(lon) || Math.abs(lat) > 90 || Math.abs(lon) > 180) continue;
