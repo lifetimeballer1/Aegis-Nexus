@@ -318,6 +318,22 @@
   top: 12px;
 }
 
+/* DESIGN 20-phase (14): Sources/Validation/Health badges.
+   Ref: input-4d5fdfcb (unavailable, vision down). Validation states reuse
+   canonical severity tokens; health dot pulses only with motion allowed. */
+.gp-badge.validated{background:rgba(72,223,131,.12);color:var(--sev-healthy);border-color:rgba(72,223,131,.25)}
+.gp-badge.pending{background:rgba(255,200,87,.12);color:var(--sev-watch);border-color:rgba(255,200,87,.25)}
+.gp-badge.failed{background:rgba(255,102,120,.12);color:var(--sev-critical);border-color:rgba(255,102,120,.25)}
+.gp-badge.stale{background:rgba(145,164,184,.12);color:var(--muted);border-color:var(--line-strong)}
+.gp-health-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--muted-2);flex:none}
+.gp-health-dot.healthy{background:var(--sev-healthy);box-shadow:0 0 6px var(--sev-healthy)}
+.gp-health-dot.watch{background:var(--sev-watch)}
+.gp-health-dot.critical{background:var(--sev-critical);box-shadow:0 0 6px var(--sev-critical)}
+@media(prefers-reduced-motion:no-preference){
+  .gp-health-dot.healthy{animation:gp-health-pulse 2.4s infinite}
+  @keyframes gp-health-pulse{0%,100%{opacity:1}50%{opacity:.55}}
+}
+
 /* Source attribution */
 .gp-source {
   font-size: 11px;
@@ -336,6 +352,44 @@
    where they add rhythm (margins) or tone; this only normalizes the
    dozen-plus bare usages that previously inherited body type. */
 .meta{font-size:10px;color:var(--muted-2)}
+
+/* DESIGN 20-phase (17): Micro-interactions — skeletons, feedback,
+   hover, toasts. CSS-only; all motion guarded. Toast visuals only —
+   arch agent owns toast JS/queue/aria-live. */
+.gp-skeleton{position:relative;overflow:hidden;background:var(--skeleton-base,var(--panel-2));border-radius:6px;min-height:12px}
+.gp-skeleton::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent,var(--skeleton-shine,rgba(255,255,255,.06)),transparent);animation:gp-skeleton-shimmer 1.4s infinite}
+@keyframes gp-skeleton-shimmer{from{transform:translateX(-100%)}to{transform:translateX(100%)}}
+.gp-card{transition:border-color var(--duration) var(--ease),transform var(--duration) var(--ease)}
+@media(hover:hover){
+  .gp-card:hover{transform:translateY(-1px)}
+  .gp-news-title a:hover{color:var(--blue)}
+}
+.gp-btn{transition:background var(--duration) var(--ease),border-color var(--duration) var(--ease),transform 120ms var(--ease)}
+.gp-toast-stack{position:fixed;bottom:calc(var(--nav-bottom-h,56px) + 12px + var(--safe-bottom,0px));left:50%;transform:translateX(-50%);z-index:var(--z-toast,300);display:flex;flex-direction:column;gap:8px;width:min(420px,calc(100vw - 32px))}
+.gp-toast{background:var(--toast-bg,var(--bg-elevated));border:1px solid var(--toast-line,var(--line-strong));border-left:3px solid var(--sev-info);border-radius:var(--radius);padding:10px 12px;font-size:12px;color:var(--text);box-shadow:var(--shadow-lg)}
+.gp-toast.success{border-left-color:var(--sev-healthy)}
+.gp-toast.warning{border-left-color:var(--sev-watch)}
+.gp-toast.error{border-left-color:var(--sev-critical)}
+@media(min-width:900px){
+  .gp-toast-stack{left:auto;right:20px;transform:none;bottom:20px}
+}
+@media(prefers-reduced-motion:reduce){
+  .gp-skeleton::after{animation:none}
+  .gp-card:hover{transform:none}
+}
+
+/* DESIGN 20-phase (18): Accessibility — contrast, focus, keyboard, aria.
+   Tokens already audit >=4.5:1 (see tokens.css). This adds forced-colors
+   survival (severity never color-only: borders/text persist as system
+   colors), visible selection, and focus cover for new interactive hooks. */
+::selection{background:rgba(98,160,255,.32);color:var(--text)}
+.gp-toast:focus-visible,.gp-card:focus-visible{outline:2px solid var(--sev-info);outline-offset:2px}
+@media(forced-colors:active){
+  .gp-badge,.gp-sev,.gp-source-chip,.gp-toast{forced-color-adjust:none}
+  .gp-health-dot,.cc-live i,.gp-status-pill .dot{forced-color-adjust:none}
+  .gp-card,.gp-toast,.gp-alert,.gp-source-row{border:1px solid CanvasText}
+  :where(a,button,input,select,textarea,[tabindex]):focus-visible{outline:2px solid Highlight}
+}
 
 /* Timestamp */
 .gp-time {

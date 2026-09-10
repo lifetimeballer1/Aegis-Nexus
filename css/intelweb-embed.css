@@ -1,0 +1,61 @@
+/* Aegis Nexus — Intelligence Web embed shell (DESIGN 20-phase 16).
+   Optional host stylesheet for the index.html Intel Web section.
+   NOT linked yet (index.html is read-only for design scope) — arch agent
+   may link it: <link rel="stylesheet" href="css/intelweb-embed.css">.
+   Guarantees: reserved box (no layout shift) during lazy/toggle/clear/reset. */
+
+.gp-intelweb-shell {
+  position: relative;
+  min-height: var(--intelweb-min-h, 420px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg, 14px);
+  background: var(--bg-elevated);
+  overflow: hidden;
+}
+
+.gp-intelweb-shell .gp-intelweb-frame {
+  display: block;
+  width: 100%;
+  height: var(--intelweb-frame-h, 900px);
+  border: 0;
+  background: #0a1826;
+}
+
+.gp-intelweb-shell[data-state="loading"] .gp-intelweb-frame {
+  visibility: hidden;
+}
+
+.gp-intelweb-shell[data-state="ready"] .gp-intelweb-shell-skeleton {
+  display: none;
+}
+
+.gp-intelweb-shell-skeleton {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.gp-intelweb-shell-skeleton::after {
+  content: "";
+  width: 120px;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--line-strong);
+  display: block;
+  margin: 10px auto 0;
+}
+
+@media (max-width: 720px) {
+  .gp-intelweb-shell .gp-intelweb-frame {
+    height: var(--intelweb-frame-h-mobile, 620px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gp-intelweb-shell-skeleton::after {
+    animation: none;
+  }
+}

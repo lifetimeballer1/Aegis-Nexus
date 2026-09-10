@@ -20,6 +20,20 @@
 .gp-nav-item:hover,.gp-nav-item:focus-visible { color:var(--text); background:var(--panel-hover); outline:none; }
 .gp-nav-item.active { color:var(--blue); } .gp-nav-icon { font-size:18px; line-height:1; }
 @media (min-width:900px) { .gp-bottom-nav{display:none;} .gp-app-main{padding:18px 24px 40px; gap:22px;} }
+/* DESIGN 20-phase (15): Nav responsive lock — bottom nav <900px,
+   left rail >=900px. Bottom nav scrolls horizontally when items exceed
+   width; active item gets a top indicator; rail gets section rhythm. */
+@media (max-width:899px) {
+  .gp-bottom-nav{overflow-x:auto;scrollbar-width:none;min-height:var(--nav-bottom-h,56px)}
+  .gp-bottom-nav::-webkit-scrollbar{display:none}
+  .gp-bottom-nav .gp-nav-item{flex:0 0 auto;min-width:60px;position:relative}
+  .gp-bottom-nav .gp-nav-item.active::before{content:"";position:absolute;top:0;left:25%;right:25%;height:2px;border-radius:2px;background:var(--sev-info)}
+}
+@media (min-width:900px) {
+  .gp-rail .gp-nav-item.active{position:relative}
+  .gp-rail .gp-nav-item.active::before{content:"";position:absolute;left:0;top:20%;bottom:20%;width:3px;border-radius:2px;background:var(--sev-info)}
+  .gp-rail{scrollbar-width:thin}
+}
 .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
 /* .sr-only is a reserved a11y utility (visually-hidden labels for icon-only
    controls). No current markup uses it — keep; do not treat as dead CSS. */

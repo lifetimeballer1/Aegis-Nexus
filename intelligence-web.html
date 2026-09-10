@@ -33,6 +33,28 @@ input,button,select{border:1px solid var(--line);background:#0e1e2a;color:var(--
 .timeline{position:fixed;left:14px;bottom:14px;z-index:30;width:min(520px,calc(100vw - 28px))}.timeline .card{padding:8px 10px}.timeline b{color:var(--sev-info);font-size:9px;letter-spacing:.1em}
 #details{position:fixed;right:14px;top:14px;width:min(360px,calc(100vw - 28px));max-height:calc(100vh - 28px);overflow:auto;z-index:40;display:none;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px;backdrop-filter:blur(14px)}#details.open{display:block}#detail{padding-top:30px}.detail-close{position:absolute;right:10px;top:8px}
 #loading{position:fixed;inset:0;display:grid;place-items:center;background:rgba(0,0,0,.55);z-index:2000;color:var(--muted);font-size:12px}
+/* DESIGN 20-phase (19): Pages-safe paths — verified 2026-09-09.
+   First-party refs are all relative (css/tokens.css, js/*, ./*.js); no
+   absolute /data/ /js/ /css/ or url() in css/ — safe for GitHub Pages
+   project-subpath serving. Only third-party URL is the jsdelivr CDN
+   (arch scope). Mobile behavior preserved: loading shell wraps. */
+#loading{max-width:100vw;padding:0 16px;text-align:center;overflow-wrap:break-word}
+/* DESIGN 20-phase (16): Intel Web embed — lazy toggle/clear/reset, no layout shift.
+   HOST CONTRACT (arch agent implements in index.html/js — this file only styles
+   the framed document): wrap the iframe in a container with
+   min-height: var(--intelweb-min-h,420px) so lazy/toggle/clear/reset never
+   collapses host layout; keep loading="lazy" + fixed height (900px desktop /
+   620px <=720px); toggling visibility must use [hidden]/display without
+   removing the box. Inside-frame guarantees below: */
+#loading{content-visibility:auto}
+#loading::after{content:"";width:120px;height:3px;border-radius:2px;background:var(--line-strong);position:relative;overflow:hidden;display:block;margin:10px auto 0}
+#graph canvas{display:block;width:100%;height:100%}
+#labels:empty{display:none}
+.hud,.timeline,#details{content-visibility:auto}
+@media(prefers-reduced-motion:reduce){
+  #loading::after{animation:none}
+  .hud{transition:none}
+}
 @media(max-width:700px){.hud{left:8px;top:52px;width:calc(100vw - 16px)}.control-toggle{left:8px;top:8px}.timeline{left:8px;bottom:8px;width:calc(100vw - 16px)}#details{left:8px;right:8px;width:auto;top:auto;bottom:70px;max-height:45vh}}
 </style>
 </head>
