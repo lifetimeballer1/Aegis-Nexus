@@ -91,3 +91,49 @@ Playwright `dashboard_smoke.py` desktop/mobile + map-focused checks; report resu
 - 2026-09-10 — Branch `map-concept-track` stacked on `intelweb-concept-track`.
 - 2026-09-10 — Front-end only; enforcer/strategic/regional feeds surfaced as
   honest panels without invented coordinates.
+
+## Completion status (2026-09-10)
+
+All 40 phases landed:
+
+- **M6–M8** concept chrome, CDN/engine notices, fixed detail drawer (desktop) /
+  sheet (mobile) with Escape + close focus.
+- **M9–M14** detail fields (confidence, importance, event type, freshness,
+  source records, geo-precision note), selected-marker highlight, linked-event
+  candidate surfacing, Brain-line caveat + accurate drawn count, strategic
+  signals and cartel reference panels (links only, no invented pins).
+- **M15–M21** OSINT chip + active states, layer-panel consistency with layer
+  notes and dismiss/Escape, collapsed by default; regional panel; confidence-
+  derived severity (no layer-hardcoded severity).
+- **M22–M27** sorting, severity filters, ops↔map selection highlight, debounced
+  ops search, row fields (confidence/source), ARIA pressed states.
+- **M28–M33** `loadMapData` hydrates from core state (no double-fetch),
+  memoized `collect()`, cap disclosure, zoom-aware mini-map sampling, cluster
+  tooltips with layer counts, mini-map wording/colors, stale-feed badge.
+- **M34–M38** `#mapContainer` role/label, `#gpMapCount` live region, detail
+  region/close labels, Map↔Brain/Web cross-links, 44px coarse-pointer targets,
+  reduced-motion guards, copy-coordinate affordance, layer-vs-severity note.
+- **M39–M44** honesty wording (`mapped points`, drawn-line counts, caveats),
+  dead selector fix (`#gpMapClose`), Fit/Reset preserved, shared mini-map/main
+  colors, acceptance docs.
+
+## Verification evidence (M44)
+
+- `python -m pytest -q` → **116 passed** (all M1–M4 contracts intact).
+- `node --test tests/intelligence_web_filters.test.cjs` → 7 passed.
+- `validate_repository.py` / `validate_security.py` / `validate_performance.py` → passed.
+- `tests/dashboard_smoke.py` → PASS desktop + mobile.
+- `tests/intelligence_web_smoke.py` → RENDER/CONTROLS/FAILURE PASS.
+- Custom Web inspect + bridge checks → PASS; zero page errors.
+- `validate_operational_health.py` remains blocked by pre-existing snapshot
+  staleness (pipeline-owned), unrelated to these GUI changes.
+
+## Known limitations
+
+- Region boundary overlays are not possible from available data; the priority
+  region panel shows canonical counts/trends without polygons.
+- Enforcer and strategic feeds publish links/signals but no incident
+  coordinates; they are presented as reference panels and never pinned.
+- Mini-map bubbles use a deterministic sample (zoom-aware) and cluster real
+  coordinates; intra-cluster layer breakdown appears on hover only.
+

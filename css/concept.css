@@ -1022,6 +1022,7 @@ a.gp-btn {
 .gp-map-detail-note{margin-top:9px;font-size:10px;color:var(--muted-2)}
 @media(max-width:900px){#mapSidePanel{left:8px;right:8px;top:auto;bottom:calc(72px + var(--safe-bottom));width:auto;max-height:52vh}}
 .leaflet-control-zoom a{min-width:38px!important;min-height:38px!important;line-height:38px!important}
+@media(pointer:coarse){.gp-map-layer-row{min-height:44px}.gp-map-layer-row input{width:20px;height:20px}}
 @media(prefers-reduced-motion:reduce){.leaflet-fade-anim .leaflet-tile,.leaflet-zoom-animated{transition:none!important;animation:none!important}}
 
 /* ---- Utilities ---- */
