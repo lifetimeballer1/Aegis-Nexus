@@ -117,6 +117,7 @@ export function renderDashboard() {
   const tensionDeltaTxt = Number.isFinite(Number(tensionDelta)) && Number(tensionDelta) !== 0
     ? ` (${Number(tensionDelta) > 0 ? '+' : ''}${tensionDelta})` : '';
   const tensionBars = barsSVG(lastT, { w: 120, h: 26, fill: '#4da3ff', id: 'tension history' });
+  const upd = snapshot?.updatedAt ? formatRelativeTime(snapshot.updatedAt) : '—';
   const opsStrip = `<div class="cs-ops-strip" role="list" aria-label="Operations at a glance">`
     + `<div class="cs-ops-tile" role="listitem"><span class="k">Tension index</span><span class="v gp-nums">${esc(String(tensionTxt))}${esc(tensionDeltaTxt)}</span>${tensionBars}</div>`
     + `<div class="cs-ops-tile" role="listitem"><span class="k">Sources online</span><span class="v gp-nums">${fmtInt(online)} / ${fmtInt(total)}</span></div>`
@@ -130,13 +131,14 @@ export function renderDashboard() {
   const filtered = q ? allStories.filter(s => `${s.title || s.headline || ''} ${s.summary || s.summary_snippet || ''} ${s.source || s.sourceName || ''}`.toLowerCase().includes(q)) : allStories;
   const headRows = filtered.slice(0, 6).map((s, idx) => {
     const [pc, pl] = catPill(s.category || s.sourceType, s.title);
-    const title = s.title || s.headline || 'Untitled';
+    const titleFull = s.title || s.headline || 'Untitled';
+    const title = String(titleFull).slice(0, 110);
     const sum = (s.summary || s.summary_snippet || s.description || '').slice(0, 110);
     const initial = esc(String(title).trim().charAt(0).toUpperCase() || 'N');
     const url = s.url || s.link || '#';
     const rank = String(idx + 1).padStart(2, '0');
     const src = s.source || s.sourceName || s.domain || '';
-    return `<div class="cc-head" data-pill="${pc}"><span class="cc-rank gp-nums" aria-hidden="true">${rank}</span><div class="cc-thumb" aria-hidden="true">${initial}</div><div style="min-width:0;flex:1"><div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap"><span class="cc-pill ${pc}">${esc(pl)}</span><span class="cc-time">${esc(formatRelativeTime(itemTime(s)))}${src ? ` · ${esc(String(src).slice(0, 22))}` : ''}</span></div><div class="t"><a href="${esc(url)}" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none">${esc(title)}</a></div>${sum ? `<div class="s">${esc(sum)}</div>` : ''}</div></div>`;
+    return `<div class="cc-head" data-pill="${pc}"><span class="cc-rank gp-nums" aria-hidden="true">${rank}</span><div class="cc-thumb" aria-hidden="true">${initial}</div><div style="min-width:0;flex:1"><div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap"><span class="cc-pill ${pc}">${esc(pl)}</span><span class="cc-time">${esc(formatRelativeTime(itemTime(s)))}${src ? ` · ${esc(String(src).slice(0, 22))}` : ''}</span></div><div class="t"><a href="${esc(url)}" target="_blank" rel="noopener noreferrer" title="${esc(titleFull)}" style="color:inherit;text-decoration:none">${esc(title)}</a></div>${sum ? `<div class="s">${esc(sum)}</div>` : ''}</div></div>`;
   }).join('') || '<div class="gp-state"><div class="gp-state-title">No recent reports</div><div>Live article feed is empty.</div></div>';
   const wcEmptyNote = wcItems.length ? '' : '<!-- Nothing new this window — No changes recorded in the current window. -->';
   void sevFor;
@@ -199,7 +201,6 @@ export function renderDashboard() {
   const priorityOrder = Array.isArray(regional.priorityOrder) ? regional.priorityOrder : order;
   void priorityOrder;
   const stale = feedMeta && Object.values(feedMeta).some(f => f?.stale);
-  const upd = snapshot?.updatedAt ? formatRelativeTime(snapshot.updatedAt) : '—';
 
   el.innerHTML = `
     <div class="cc-situation"><h2>🌐 Global Situation <span class="sub">Key indicators across all monitored domains</span></h2>
