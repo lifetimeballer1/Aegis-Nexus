@@ -353,6 +353,31 @@
    dozen-plus bare usages that previously inherited body type. */
 .meta{font-size:10px;color:var(--muted-2)}
 
+/* DESIGN 20-phase (17): Micro-interactions — skeletons, feedback,
+   hover, toasts. CSS-only; all motion guarded. Toast visuals only —
+   arch agent owns toast JS/queue/aria-live. */
+.gp-skeleton{position:relative;overflow:hidden;background:var(--skeleton-base,var(--panel-2));border-radius:6px;min-height:12px}
+.gp-skeleton::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent,var(--skeleton-shine,rgba(255,255,255,.06)),transparent);animation:gp-skeleton-shimmer 1.4s infinite}
+@keyframes gp-skeleton-shimmer{from{transform:translateX(-100%)}to{transform:translateX(100%)}}
+.gp-card{transition:border-color var(--duration) var(--ease),transform var(--duration) var(--ease)}
+@media(hover:hover){
+  .gp-card:hover{transform:translateY(-1px)}
+  .gp-news-title a:hover{color:var(--blue)}
+}
+.gp-btn{transition:background var(--duration) var(--ease),border-color var(--duration) var(--ease),transform 120ms var(--ease)}
+.gp-toast-stack{position:fixed;bottom:calc(var(--nav-bottom-h,56px) + 12px + var(--safe-bottom,0px));left:50%;transform:translateX(-50%);z-index:var(--z-toast,300);display:flex;flex-direction:column;gap:8px;width:min(420px,calc(100vw - 32px))}
+.gp-toast{background:var(--toast-bg,var(--bg-elevated));border:1px solid var(--toast-line,var(--line-strong));border-left:3px solid var(--sev-info);border-radius:var(--radius);padding:10px 12px;font-size:12px;color:var(--text);box-shadow:var(--shadow-lg)}
+.gp-toast.success{border-left-color:var(--sev-healthy)}
+.gp-toast.warning{border-left-color:var(--sev-watch)}
+.gp-toast.error{border-left-color:var(--sev-critical)}
+@media(min-width:900px){
+  .gp-toast-stack{left:auto;right:20px;transform:none;bottom:20px}
+}
+@media(prefers-reduced-motion:reduce){
+  .gp-skeleton::after{animation:none}
+  .gp-card:hover{transform:none}
+}
+
 /* Timestamp */
 .gp-time {
   font-variant-numeric: tabular-nums;
