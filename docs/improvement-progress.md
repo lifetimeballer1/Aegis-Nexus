@@ -53,3 +53,9 @@
 - Global Tension v6: single writer (`build_tension.py`) with six drivers plus bounded Brain story pressure, auditable `tensionBreakdown` (top contributing stories), v6-only history, unified thresholds, `validate_tension.py`. Local chain: tension 51 = base 41.1 + story 10.3, up from the stale 41.
 - Brain workspace: "What matters now", story detail with gaps/evidence, gap board, refresh deltas, action-layer chips, cross-links. Web Brain mode: story nodes, gap ghost nodes, provenance detail, typed relationship filters.
 - Verified: pytest 138, node filter tests 7, repository/security/performance validators, `validate_tension` PASSED, dashboard/intelweb smoke PASS desktop+mobile, Brain UI + Web Brain mode checks PASS, zero page errors.
+
+## App Shell Track S1–S16 (2026-09-10, branch `shell-track`) — DONE
+- Replaced the stacked-section page with an app shell: `js/core/router.js` hash routes with one active view, click interception, history; mobile tabs Home/Map/Brain/Alerts/More + More sheet; desktop rail + contextual tabs; `aria-current` sync across all nav sets.
+- Lazy per-view rendering in `js/app.js` (`VIEW_RENDER` map + activation hooks): map initializes on first visit, the Web iframe stays lazy until its view opens, and state changes re-render only the active view. Stories-first Home; headlines moved to News; Overview folds into Home; Conflicts stays routable.
+- Smoke updated to route views before asserting; new `tests/test_shell_router.py`. Verified: pytest 143, validators passed, router-aware smoke PASS desktop+mobile, Intelligence Web smoke PASS. Boot: dashboard 816 DOM nodes with an unloaded lazy iframe; map renders on demand.
+- Remaining: core data still prefetches all feeds at boot (future data-layer deferral); `overview` remains a redirect-only section.
