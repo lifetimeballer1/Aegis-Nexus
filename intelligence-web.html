@@ -45,6 +45,9 @@ button.active,.filter.active,.period.active{color:var(--blue);border-color:rgba(
 #stats{margin-top:10px;font-size:10.5px;color:var(--muted);line-height:1.5}
 #stats b{color:var(--text)}
 .legend{margin-top:8px;font-size:9.5px;line-height:1.5;color:var(--muted-2)}
+.legend b{color:var(--muted);font-size:9px;letter-spacing:.08em}
+.legend .lg{display:inline-flex;align-items:center;gap:4px;margin-right:6px;white-space:nowrap}
+.legend .lg i{display:inline-block;width:8px;height:8px;border-radius:50%;flex:0 0 auto}
 .timeline .card{background:rgba(11,19,29,.92)}
 .timeline b{letter-spacing:.14em}
 #details{right:14px;top:14px;width:min(400px,calc(100vw - 28px));border-radius:14px;padding:14px;background:rgba(8,16,25,.96);backdrop-filter:blur(18px);border:1px solid var(--line-strong);box-shadow:0 18px 60px rgba(0,0,0,.55)}
@@ -89,7 +92,7 @@ button.active,.filter.active,.period.active{color:var(--blue);border-color:rgba(
   <div class="row"><button id="reset">RESET VIEW</button><button id="orbit">3D ORBIT</button><button id="flow" class="active">RELATIONSHIPS</button><button id="labels-toggle" class="active">LABELS</button></div>
   <div class="row"><select id="node-select" aria-label="Select matching entity"><option>Loading entities…</option></select></div>
   <div id="stats" role="status">Preparing intelligence graph…</div>
-  <div class="legend">SEMANTIC WEBGL: RED SANCTIONS · ORANGE MILITARY ACTION · GREEN NEGOTIATION · GOLD TRADE/ECONOMIC · BLUE TECHNOLOGY · TEAL ENERGY · PURPLE CYBER/POLITICAL · ACTION ARROWS = ACTOR → TARGET · WHITE/BLUE = EVIDENCE CONTEXT</div>
+  <div class="legend">Node colors encode entity kind; connection colors encode relationship category (co-mention vs action). Relationships are evidence/context links, not proof of causation. Live counts load with the graph.</div>
  </div>
 </div>
 <div class="timeline"><div class="card"><b>NETWORK ACTIVITY</b><div class="row"><button class="period active" data-period="all">ALL</button><button class="period" data-period="24">24H</button><button class="period" data-period="168">7D</button><button class="period" data-period="720">30D</button><button class="period" data-period="2160">90D</button></div><span id="trend"></span></div></div>
