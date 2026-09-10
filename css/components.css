@@ -378,6 +378,19 @@
   .gp-card:hover{transform:none}
 }
 
+/* DESIGN 20-phase (18): Accessibility — contrast, focus, keyboard, aria.
+   Tokens already audit >=4.5:1 (see tokens.css). This adds forced-colors
+   survival (severity never color-only: borders/text persist as system
+   colors), visible selection, and focus cover for new interactive hooks. */
+::selection{background:rgba(98,160,255,.32);color:var(--text)}
+.gp-toast:focus-visible,.gp-card:focus-visible{outline:2px solid var(--sev-info);outline-offset:2px}
+@media(forced-colors:active){
+  .gp-badge,.gp-sev,.gp-source-chip,.gp-toast{forced-color-adjust:none}
+  .gp-health-dot,.cc-live i,.gp-status-pill .dot{forced-color-adjust:none}
+  .gp-card,.gp-toast,.gp-alert,.gp-source-row{border:1px solid CanvasText}
+  :where(a,button,input,select,textarea,[tabindex]):focus-visible{outline:2px solid Highlight}
+}
+
 /* Timestamp */
 .gp-time {
   font-variant-numeric: tabular-nums;
