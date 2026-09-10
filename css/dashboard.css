@@ -579,6 +579,7 @@
 .cc-tension-chart svg{max-width:100%;height:auto;display:block;filter:drop-shadow(0 0 5px rgba(255,45,85,.4))}
 .cc-domain-list{display:flex;flex-direction:column;gap:7px;min-width:0}
 .cc-domain-row{display:flex;align-items:center;gap:8px;font-size:11px;min-width:0}
+.cc-domain-row .cc-pill{flex:none;max-width:60%}
 .cc-domain-row b{min-width:28px;text-align:right}
 .cc-domain-bar{flex:1;height:6px;border-radius:3px;background:var(--line);overflow:hidden;min-width:0}
 .cc-domain-bar i{display:block;height:100%;border-radius:3px;background:linear-gradient(90deg,var(--neon-blue,#4da3ff),var(--neon-purple,#a78bfa));box-shadow:0 0 8px rgba(77,163,255,.4)}
