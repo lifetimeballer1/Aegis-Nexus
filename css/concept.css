@@ -122,9 +122,22 @@ body {
   font-weight: 700;
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1420px) {
   .gp-header-tagline { display: block; }
 }
+
+.gp-command-tabs {
+  display: flex;
+  flex: 1 1 auto;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  min-width: 0;
+  scrollbar-width: none;
+}
+
+.gp-command-tabs::-webkit-scrollbar { display: none; }
+
+.gp-command-tabs .gp-nav-item { flex: 0 0 auto; }
 
 .gp-header-search {
   display: none;
@@ -155,7 +168,7 @@ body {
   color: var(--muted-2);
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1260px) {
   .gp-header-search { display: inline-flex; }
 }
 
@@ -196,7 +209,7 @@ body {
   letter-spacing: 0.08em;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1360px) {
   .gp-analyst-chip { display: inline-flex; }
 }
 
