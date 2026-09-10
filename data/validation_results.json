@@ -1,9 +1,9 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-10T11:17:16.408121Z",
+  "updatedAt": "2026-09-10T12:36:10.504717Z",
   "manifest": {
-    "generatedAt": "2026-09-10T11:17:16.044213Z",
-    "ageSeconds": 1,
+    "generatedAt": "2026-09-10T12:36:09.831075Z",
+    "ageSeconds": 2,
     "stale": false
   },
   "summary": {
@@ -17,85 +17,85 @@
       "contract": "Source health gate",
       "command": "validate_source_health.py",
       "passed": true,
-      "detail": "feeds=64 results=64 rows=1057 healthy=58/64 (90.6%) failed=6 (9.4%) | empty=4 gdeltFallback=0 required-categories=international,security,us-politics | strategic-coverage=china:5, united-states:2",
-      "durationMs": 16
+      "detail": "feeds=64 results=64 rows=1061 healthy=58/64 (90.6%) failed=6 (9.4%) | empty=4 gdeltFallback=0 required-categories=international,security,us-politics | strategic-coverage=china:5, united-states:2",
+      "durationMs": 28
     },
     {
       "contract": "Data resilience gate",
       "command": "validate_data_resilience.py",
       "passed": true,
       "detail": "PASS: Phase 5 data resilience gate | stories=705 liveArticles=2000 marketIndicators=26 failoverRecords=0 | failoverHealthy=58 failoverDown=6 fallbackCount=0",
-      "durationMs": 166
+      "durationMs": 315
     },
     {
       "contract": "Data resilience + manifest gate",
       "command": "validate_data_resilience.py --require-manifest",
       "passed": true,
       "detail": "PASS: Phase 5 data resilience gate | stories=705 liveArticles=2000 marketIndicators=26 failoverRecords=0 | failoverHealthy=58 failoverDown=6 fallbackCount=0",
-      "durationMs": 189
+      "durationMs": 325
     },
     {
       "contract": "Intelligence Web evidence contract",
       "command": "validate_intelligence_graph.py",
       "passed": true,
-      "detail": "PASS intelligence graph contract: 100 nodes / 425 evidence-backed edges",
-      "durationMs": 22
+      "detail": "PASS intelligence graph contract: 100 nodes / 419 evidence-backed edges",
+      "durationMs": 37
     },
     {
       "contract": "Intelligence Brain contract",
       "command": "validate_intelligence_brain.py",
       "passed": true,
-      "detail": "PASS: Intelligence Brain Phase 1 validation nodes=28 edges=93 kinds={'chokepoint': 1, 'conflict': 4, 'economic': 3, 'country': 8, 'cartel': 12} age=2s | BRAIN FEEDBACK: gaps=5 next-cycle feed targets=5",
-      "durationMs": 318
+      "detail": "PASS: Intelligence Brain Phase 1 validation nodes=28 edges=93 kinds={'chokepoint': 1, 'economic': 3, 'conflict': 4, 'cartel': 12, 'country': 8} age=3s | BRAIN FEEDBACK: gaps=5 next-cycle feed targets=5",
+      "durationMs": 595
     },
     {
       "contract": "Action intelligence contract",
       "command": "validate_action_intelligence.py",
       "passed": true,
-      "detail": "China: 276 Brain evidence items; canonical actor events=43, targeted=8 | Canonical semantic relationships: 131 | PASS: U.S./China action attribution, evidence, targets, and semantic relationships are end-to-end backed",
-      "durationMs": 42
+      "detail": "China: 277 Brain evidence items; canonical actor events=38, targeted=8 | Canonical semantic relationships: 127 | PASS: U.S./China action attribution, evidence, targets, and semantic relationships are end-to-end backed",
+      "durationMs": 69
     },
     {
       "contract": "Operational health gate",
       "command": "validate_operational_health.py",
       "passed": true,
-      "detail": "PASS: Phase 8 operational health gate | stories=705 liveArticles=2000 mapPoints=2880 graph=100/425 brain=28/93 | snapshotAge=3s artifactMaxSkew=7200s uniqueStoryIdentities=705",
-      "durationMs": 110
+      "detail": "PASS: Phase 8 operational health gate | stories=705 liveArticles=2000 mapPoints=2880 graph=100/419 brain=28/93 | snapshotAge=5s artifactMaxSkew=7200s uniqueStoryIdentities=705",
+      "durationMs": 201
     },
     {
       "contract": "Repository integrity gate",
       "command": "validate_repository.py",
       "passed": true,
-      "detail": "Local browser references checked: 16 | JSON artifacts checked: 35 | No duplicate real HTML ids or browser script inclusions detected.",
-      "durationMs": 136
+      "detail": "Local browser references checked: 18 | JSON artifacts checked: 35 | No duplicate real HTML ids or browser script inclusions detected.",
+      "durationMs": 246
     },
     {
       "contract": "Performance / mobile gate",
       "command": "validate_performance.py",
       "passed": true,
       "detail": "lazyIntelligenceWeb=True | idlePerformanceObserver=True | reducedMotion=True",
-      "durationMs": 16
+      "durationMs": 27
     },
     {
       "contract": "Security / privacy gate",
       "command": "validate_security.py",
       "passed": true,
-      "detail": "PASS client privacy scan (57 assets) | PASS hardening source contract | SECURITY VALIDATION PASSED",
-      "durationMs": 26
+      "detail": "PASS client privacy scan (59 assets) | PASS hardening source contract | SECURITY VALIDATION PASSED",
+      "durationMs": 53
     },
     {
       "contract": "Event resolution gate",
       "command": "validate_event_resolution.py",
       "passed": true,
       "detail": "validated 79 resolved event groups",
-      "durationMs": 16
+      "durationMs": 26
     },
     {
       "contract": "Pipeline schema gate",
       "command": "validate_pipeline.py",
       "passed": true,
       "detail": "PIPELINE VALIDATION PASSED: 705 stories, 31 conflicts, 2880 map markers",
-      "durationMs": 103
+      "durationMs": 177
     }
   ]
 }
