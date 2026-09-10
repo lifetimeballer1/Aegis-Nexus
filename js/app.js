@@ -150,6 +150,10 @@ function handleActivation(view) {
     try { modules.map?.initMap?.(); } catch (err) { console.error('Map init failed', err); }
   }
   if (view === 'intelweb') {
+    const frame = document.querySelector('.gp-intelweb-frame');
+    if (frame && !frame.getAttribute('src') && frame.dataset.src) {
+      try { frame.setAttribute('src', frame.dataset.src); } catch {}
+    }
     try { window.__gpLoadIntelWebFrame?.(); } catch {}
   }
   renderView(view);
