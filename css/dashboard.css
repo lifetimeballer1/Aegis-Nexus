@@ -643,3 +643,14 @@
 }
 @media(prefers-reduced-motion:reduce){.cc-pulse::before{animation:none;box-shadow:none}}
 @media(forced-colors:active){.cc-pulse::before{box-shadow:none}}
+
+/* REF-FIDELITY 1024c — market matrix tile density vs refs (8-tile 4x2).
+   Before: 8px grid gap + 8px card padding + 15px prices read airy vs refs.
+   After: 6px gap, 7px 8px cards, 9px names, 14px prices, 10px deltas.
+   Grid shape unchanged (4x2 desktop, 2-col mobile). Visual-only. */
+.cc-mkt{gap:6px}
+.cc-mkt-card{padding:7px 8px;border-radius:7px}
+.cc-mkt-card .n{font-size:9px;letter-spacing:.06em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cc-mkt-card .p{font-size:14px;line-height:1.15;margin-top:1px}
+.cc-mkt-card .c{font-size:10px;margin-top:1px}
+@media(max-width:420px){.cc-mkt{gap:5px}.cc-mkt-card{padding:6px 7px}.cc-mkt-card .p{font-size:13px}}
