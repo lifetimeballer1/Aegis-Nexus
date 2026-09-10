@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-09T20:33:37.299842+00:00",
+  "updatedAt": "2026-09-10T02:48:44.661881+00:00",
   "feeds": [
     {
       "name": "GDACS Global Disaster Alerts",
@@ -80,10 +80,10 @@
       "domain": "rss.dw.com"
     },
     {
-      "name": "France 24",
-      "url": "https://www.france24.com/en/rss",
+      "name": "RFI World",
+      "url": "https://www.rfi.fr/en/general/rss",
       "type": "international",
-      "domain": "www.france24.com"
+      "domain": "www.rfi.fr"
     },
     {
       "name": "Crisis Group",
@@ -105,7 +105,7 @@
     },
     {
       "name": "Google News — Operation Southern Spear",
-      "url": "https://news.google.com/rss/search?q=%22Operation+Southern+Spear%22+cartel+narco-terrorism+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+      "url": "https://news.google.com/rss/search?q=%22Operation+Southern+Spear%22+when%3A1d&hl=en-US&gl=US&ceid=US:en",
       "type": "counter-cartel",
       "domain": "news.google.com"
     },
@@ -141,19 +141,19 @@
     },
     {
       "name": "GDELT — Western Hemisphere Counter-Cartel",
-      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=(SOUTHCOM%20OR%20%22Southern%20Spear%22%20OR%20%22Joint%20Task%20Force%20Western%20Hemisphere%22%20OR%20cartel%20OR%20narco-terrorism%20OR%20%22Los%20Choneros%22%20OR%20CJNG%20OR%20Sinaloa)&mode=ArtList&format=rss&maxrecords=250&timespan=15m",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=(SOUTHCOM%20OR%20%22Southern%20Spear%22%20OR%20%22Joint%20Task%20Force%20Western%20Hemisphere%22%20OR%20cartel%20OR%20narco-terrorism%20OR%20%22Los%20Choneros%22%20OR%20CJNG%20OR%20Sinaloa)&mode=ArtList&format=rss&maxrecords=100&timespan=30m",
       "type": "counter-cartel",
       "domain": "api.gdeltproject.org"
     },
     {
       "name": "Google News — Climate & Disaster",
-      "url": "https://news.google.com/rss/search?q=drought+flood+wildfire+cyclone+hurricane+famine+epidemic+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+      "url": "https://news.google.com/rss/search?q=flood+wildfire+hurricane+disaster+when%3A1d&hl=en-US&gl=US&ceid=US:en",
       "type": "climate-hazard",
       "domain": "news.google.com"
     },
     {
       "name": "Google News — Climate Security",
-      "url": "https://news.google.com/rss/search?q=climate+security+migration+food+water+disease+crisis+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+      "url": "https://news.google.com/rss/search?q=climate+crisis+food+water+when%3A1d&hl=en-US&gl=US&ceid=US:en",
       "type": "climate-hazard",
       "domain": "news.google.com"
     },
@@ -183,13 +183,13 @@
     },
     {
       "name": "Google News — Morse Report",
-      "url": "https://news.google.com/rss/search?q=site%3Amorsereport.com+politics+Congress+Senate+White+House+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+      "url": "https://news.google.com/rss/search?q=Morse+Report+politics+when%3A1d&hl=en-US&gl=US&ceid=US:en",
       "type": "us-politics",
       "domain": "news.google.com"
     },
     {
       "name": "Google News — World Politics",
-      "url": "https://news.google.com/rss/search?q=election+president+parliament+diplomacy+sanctions+alliance+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+      "url": "https://news.google.com/rss/search?q=election+parliament+diplomacy+when%3A1d&hl=en-US&gl=US&ceid=US:en",
       "type": "world-politics",
       "domain": "news.google.com"
     },
@@ -207,7 +207,7 @@
     },
     {
       "name": "Google News — Africa Security",
-      "url": "https://news.google.com/rss/search?q=Africa+Sudan+Congo+Sahel+Nigeria+Somalia+conflict+military+attack+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+      "url": "https://news.google.com/rss/search?q=Africa+conflict+Sudan+Sahel+when%3A1d&hl=en-US&gl=US&ceid=US:en",
       "type": "africa",
       "domain": "news.google.com"
     },
@@ -231,7 +231,7 @@
     },
     {
       "name": "Google News — Somalia Security",
-      "url": "https://news.google.com/rss/search?q=Somalia+al+Shabaab+Puntland+militant+attack+security+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+      "url": "https://news.google.com/rss/search?q=Somalia+al+Shabaab+when%3A1d&hl=en-US&gl=US&ceid=US:en",
       "type": "africa-conflict",
       "domain": "news.google.com"
     },
@@ -243,7 +243,7 @@
     },
     {
       "name": "Google News — Mexico Cartel Conflict",
-      "url": "https://news.google.com/rss/search?q=Mexico+cartel+violence+Sinaloa+CJNG+military+security+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+      "url": "https://news.google.com/rss/search?q=Mexico+cartel+Sinaloa+when%3A1d&hl=en-US&gl=US&ceid=US:en",
       "type": "americas-conflict",
       "domain": "news.google.com"
     },
@@ -261,7 +261,7 @@
     },
     {
       "name": "Google News — Afghanistan Security",
-      "url": "https://news.google.com/rss/search?q=Afghanistan+Taliban+ISIS-K+attack+security+conflict+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+      "url": "https://news.google.com/rss/search?q=Afghanistan+Taliban+when%3A1d&hl=en-US&gl=US&ceid=US:en",
       "type": "south-asia-conflict",
       "domain": "news.google.com"
     },
