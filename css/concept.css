@@ -51,7 +51,8 @@ body {
     border-right: 1px solid var(--line);
     z-index: 80;
   }
-  .gp-main {
+  .gp-main,
+  #main {
     margin-left: var(--c-rail-w);
     max-width: calc(1400px + var(--c-rail-w));
   }
@@ -941,6 +942,38 @@ body {
   color: var(--muted);
   font-size: 11px;
   line-height: 1.5;
+}
+
+.gp-th-sort {
+  background: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  cursor: pointer;
+}
+
+.gp-th-sort:hover,
+.gp-th-sort:focus-visible {
+  color: var(--blue);
+  outline: none;
+}
+
+.gp-dash-bubble {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(98, 160, 255, 0.22);
+  border: 1px solid rgba(98, 160, 255, 0.6);
+  color: var(--text);
+  font-size: 10px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  box-shadow: 0 0 14px rgba(98, 160, 255, 0.35);
 }
 
 @media (max-width: 720px) {

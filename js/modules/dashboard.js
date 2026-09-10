@@ -5,6 +5,13 @@ import { formatRelativeTime, escapeHtml } from '../core/utils.js';
 import { sparklineSVG } from '../core/sparkline.js';
 
 let query = '';
+const regionSort = { key: 'activity', dir: -1 };
+function trendRank(t) {
+  const s = String(t || '').toUpperCase();
+  if (s === 'UP') return 2;
+  if (s === 'DOWN') return 0;
+  return 1;
+}
 
 function fmtInt(v) { return Number.isFinite(Number(v)) ? Number(v).toLocaleString() : '—'; }
 function esc(v) { return escapeHtml(String(v ?? '')); }
@@ -49,11 +56,11 @@ const SEV_LEVELS = ['info', 'watch', 'critical', 'healthy'];
 function kpi(value, label, sub, tone, sparkVals, sparkColor) {
   return `<div class="cc-kpi t-${tone}"><div class="v">${value}</div><div class="l">${esc(label)}${sub ? ` <span style="font-weight:400;color:var(--muted-2)">· ${esc(sub)}</span>` : ''}</div>${sparklineSVG(sparkVals, { stroke: sparkColor })}</div>`;
 }
-function donut(online, degraded, failed) {
-  const t = (Number(online) || 0) + (Number(degraded) || 0) + (Number(failed) || 0);
+function donut(healthy, degraded, failed, unknown) {
+  const t = (Number(healthy) || 0) + (Number(degraded) || 0) + (Number(failed) || 0) + (Number(unknown) || 0);
   const c = 2 * Math.PI * 30;
   if (!(t > 0)) return `<svg width="96" height="96" viewBox="0 0 96 96" role="img" aria-label="Source health unavailable"><circle cx="48" cy="48" r="30" fill="none" stroke="var(--line-strong)" stroke-width="10"/><text x="48" y="52" text-anchor="middle" fill="var(--muted)" font-size="12">—</text></svg>`;
-  const segs = [[online, 'var(--green)'], [degraded, 'var(--amber)'], [failed, 'var(--red)']];
+  const segs = [[healthy, 'var(--green)'], [degraded, 'var(--amber)'], [failed, 'var(--red)'], [unknown, 'var(--muted-2)']];
   let acc = 0;
   const arcs = segs.map(([n, color]) => {
     const frac = (Number(n) || 0) / t;
@@ -62,8 +69,8 @@ function donut(online, degraded, failed) {
     acc += frac;
     return frac > 0 ? s : '';
   }).join('');
-  const pct = (Number(online) || 0) / t * 100;
-  return `<svg width="96" height="96" viewBox="0 0 96 96" role="img" aria-label="Source health ${pct.toFixed(0)} percent healthy"><circle cx="48" cy="48" r="30" fill="none" stroke="var(--line-strong)" stroke-width="10"/>${arcs}<text x="48" y="46" text-anchor="middle" fill="var(--text)" font-size="16" font-weight="800">${pct.toFixed(0)}%</text><text x="48" y="60" text-anchor="middle" fill="var(--muted)" font-size="9">Healthy</text></svg>`;
+  const pct = (Number(healthy) || 0) / t * 100;
+  return `<svg width="96" height="96" viewBox="0 0 96 96" role="img" aria-label="Source health ${pct.toFixed(0)} percent with data"><circle cx="48" cy="48" r="30" fill="none" stroke="var(--line-strong)" stroke-width="10"/>${arcs}<text x="48" y="46" text-anchor="middle" fill="var(--text)" font-size="16" font-weight="800">${pct.toFixed(0)}%</text><text x="48" y="60" text-anchor="middle" fill="var(--muted)" font-size="9">With data</text></svg>`;
 }
 
 export function renderDashboard() {
@@ -125,19 +132,37 @@ export function renderDashboard() {
 
   const maxRep = Math.max(1, ...order.map(n => Number(regions[n]?.reports) || 0));
   const maxConf = Math.max(1, ...order.map(n => Number(regions[n]?.conflictReports) || 0));
-  const regionRows = order.slice(0, 6).map((name, i) => {
+  const regionVal = (name, r) => {
+    if (regionSort.key === 'region') return String(name).toLowerCase();
+    if (regionSort.key === 'impact') return Number(r.conflictReports) || 0;
+    if (regionSort.key === 'trend') return trendRank(r.trend);
+    return Number(r.reports) || 0;
+  };
+  const sortedOrder = [...order].sort((a, b) => {
+    const av = regionVal(a, regions[a] || {}), bv = regionVal(b, regions[b] || {});
+    const cmp = typeof av === 'string' ? av.localeCompare(bv) : av - bv;
+    return cmp * regionSort.dir;
+  });
+  const sortArrow = (key) => regionSort.key === key ? (regionSort.dir < 0 ? ' ↓' : ' ↑') : '';
+  const regionRows = sortedOrder.slice(0, 6).map((name, i) => {
     const r = regions[name] || {};
     return `<tr><td style="color:var(--muted)">${i + 1}</td><td>${esc(name)}</td><td>${blocks(r.reports, maxRep)}</td><td>${blocks(r.conflictReports, maxConf)}</td><td>${trendArrow(r.trend)}</td></tr>`;
   }).join('') || '<tr><td colspan="5" style="color:var(--muted)">No regional data</td></tr>';
 
   const wcSum = wc.summary || {};
   const wcBlock = `<div class="cc-wc"><b style="color:var(--green)">+ ${fmtInt(wcSum.newEvents ?? wcItems.length)}</b><span>New events added</span></div>`
-    + `<div class="cc-wc"><b style="color:var(--red)">↑ ${fmtInt(wcSum.escalated ?? 0)}</b><span>Events escalated in priority</span></div>`
+    + (Number.isFinite(Number(wcSum.escalated)) ? `<div class="cc-wc"><b style="color:var(--red)">↑ ${fmtInt(wcSum.escalated)}</b><span>Events escalated in priority</span></div>` : '')
     + `<div class="cc-wc"><b style="color:var(--blue)">+ ${fmtInt(online)}</b><span>Sources reporting with data</span></div>`
     + `<div class="cc-wc"><b style="color:var(--red)">■ ${fmtInt(failed)}</b><span>Sources failed validation</span></div>`
-    + `<div class="cc-wc"><b style="color:var(--amber)">▲ ${fmtInt(wcSum.indicatorMoves ?? 0)}</b><span>Significant indicator moves</span></div>`;
+    + `<div class="cc-wc"><b style="color:var(--amber)">▲ ${fmtInt(wcSum.indicatorMoves ?? 0)}</b><span>Significant indicator moves</span></div>`
+    + (Number.isFinite(Number(wcSum.escalated)) ? '' : '<div class="gp-honest" style="margin-top:6px">Escalation and narrative-change categories are not published for this window; only the counters above are source-backed.</div>');
 
-  const mktCards = indicators.slice(0, 6).map(m => {
+  const mktPref = ['S&P 500', 'Nasdaq Composite', 'Dow Jones', 'WTI Crude', 'Gold', 'EUR / USD', 'USD / JPY', 'VIX'];
+  const byName = new Map(indicators.map(i => [String(i.name || i.symbol || ''), i]));
+  const picked = mktPref.map(n => byName.get(n)).filter(Boolean);
+  const mktList = picked.length >= 3 ? picked.slice(0, 8) : indicators.slice(0, 6);
+  const mktOmitted = ['Brent', 'USD Index', 'DXY'].filter(n => !indicators.some(i => String(i.name || '').toLowerCase().includes(n.toLowerCase())));
+  const mktCards = mktList.map(m => {
     const name = m.name || m.symbol || 'Indicator';
     const price = typeof m.price === 'number' ? m.price.toLocaleString(undefined, { maximumFractionDigits: 2 }) : String(m.price ?? m.last ?? '—');
     const pct = Number(m.changePercent ?? m.changePct);
@@ -145,10 +170,14 @@ export function renderDashboard() {
     return `<div class="cc-mkt-card"><div class="n">${esc(String(name).slice(0, 18))}</div><div class="p">${esc(price)}</div><div class="c" style="color:${up == null ? 'var(--muted)' : up ? 'var(--green)' : 'var(--red)'}">${up == null ? '—' : `${up ? '↑' : '↓'} ${Math.abs(pct).toFixed(2)}%`}</div></div>`;
   }).join('') || '<div class="gp-state"><div class="gp-state-title">Market data unavailable</div></div>';
 
-  const degradedCount = Math.max(0, total - online - failed);
+  const healthyCount = Number(summary.onlineWithData ?? online);
+  const degradedCount = Math.max(0, Number(summary.onlineEmpty ?? (online - healthyCount)));
+  const unknownCount = Math.max(0, total - online - failed);
   const allSources = Array.isArray(health.sources) ? health.sources : [];
-  const issues = allSources.filter(s => String(s.status).toLowerCase() !== 'online').slice(0, 2);
-  const failDetail = allSources.filter(s => Number(s.consecutiveFailures) > 0).slice(0, 2);
+  const issues = allSources.filter(s => String(s.status).toLowerCase() !== 'online').slice(0, 5);
+  const issueRows = issues.length
+    ? issues.map(s => `<div class="cc-wc" style="align-items:flex-start"><span class="gp-dot ${esc(String(s.status || 'unknown').toLowerCase())}" style="margin-top:4px"></span><span style="flex:1;min-width:0">${esc(s.name || 'Unnamed source')}<span class="gp-tiny gp-muted" style="display:block">${esc(s.status || 'unknown')}${Number(s.consecutiveFailures) > 0 ? ` · ${fmtInt(s.consecutiveFailures)} consecutive failures` : ''}${Number.isFinite(Number(s.freshnessMinutes)) ? ` · last success ${fmtInt(Math.round(Number(s.freshnessMinutes)))} min ago` : ''}</span></span></div>`).join('')
+    : '<div class="gp-muted gp-tiny">No source issues in the current refresh.</div>';
   const marketData = snapshot?.marketData || market;
   void marketData; void tensionDelta; void SEV_LEVELS;
   const priorityOrder = Array.isArray(regional.priorityOrder) ? regional.priorityOrder : order;
@@ -171,23 +200,30 @@ export function renderDashboard() {
         <div id="dashMap" role="img" aria-label="Mini operational map" style="min-height:240px;height:260px;border:1px solid var(--line);border-radius:8px;background:#050b13;z-index:1"></div>
         <div class="cc-legend" aria-label="Map legend"><span><i style="background:var(--red)"></i>Critical</span><span><i style="background:var(--amber)"></i>Elevated</span><span><i style="background:var(--blue)"></i>Notable</span><span><i style="background:#cbd5e1"></i>Monitoring</span></div></div>
       <div class="cc-panel"><h3>🎯 Priority Regions <a href="#section-map">View All →</a></h3>
-        <table class="cc-table" aria-label="Priority regions"><thead><tr><th>#</th><th>Region</th><th>Activity</th><th>Impact</th><th>Trend</th></tr></thead><tbody>${regionRows}</tbody></table>
+        <table class="cc-table" aria-label="Priority regions"><thead><tr><th>#</th><th><button type="button" class="gp-th-sort" data-sort="region">Region${sortArrow('region')}</button></th><th><button type="button" class="gp-th-sort" data-sort="activity">Activity${sortArrow('activity')}</button></th><th><button type="button" class="gp-th-sort" data-sort="impact">Impact${sortArrow('impact')}</button></th><th><button type="button" class="gp-th-sort" data-sort="trend">Trend${sortArrow('trend')}</button></th></tr></thead><tbody>${regionRows}</tbody></table>
         <h3 style="margin-top:10px">🕐 What Changed <a href="#section-breaking">View All →</a></h3><div style="font-size:10px;color:var(--muted-2);margin-bottom:6px">Since last refresh (${esc(wc.window || 'current window')})</div>${wcBlock}</div>
     </div>
     <div class="cc-grid2">
-      <div class="cc-panel"><h3>📊 Market Pulse <span class="gp-badge delayed">DELAYED</span> <a href="#section-markets">View Markets →</a></h3><div class="cc-mkt">${mktCards}</div></div>
-      <div class="cc-panel"><h3>🗄 Source Health <span style="font-weight:400;color:var(--muted);font-size:11px">${fmtInt(online)} / ${fmtInt(total)} sources online</span> <a href="#section-status">View Sources →</a></h3>
-        <div class="cc-donut-wrap">${donut(online, degradedCount, failed)}<div style="flex:1;min-width:0">
-          <div style="font-size:11px;display:flex;justify-content:space-between"><span>🟢 Online</span><b>${fmtInt(online)}</b></div>
-          <div style="font-size:11px;display:flex;justify-content:space-between"><span>🟡 Degraded</span><b>${fmtInt(degradedCount)}</b></div>
-          <div style="font-size:11px;display:flex;justify-content:space-between"><span>🔴 Offline</span><b>${fmtInt(failed)}</b></div>
-          ${issues.map(s => `<div style="font-size:10px;color:var(--muted-2);margin-top:4px">⚠ ${esc(s.name || 'Unnamed')} — ${esc(s.status || 'failed')}</div>`).join('')}
-        </div></div></div>
+      <div class="cc-panel"><h3>📊 Market Pulse <span class="gp-badge delayed">DELAYED</span> <a href="#section-markets">View Markets →</a></h3><div class="cc-mkt">${mktCards}</div>${mktOmitted.length ? `<div class="gp-honest" style="margin-top:8px">Not published by the current market feed: ${esc(mktOmitted.join(', '))}. Shown symbols are source-backed.</div>` : ''}</div>
+      <div class="cc-panel"><h3>🗄 Source Health <span style="font-weight:400;color:var(--muted);font-size:11px">${fmtInt(healthyCount)} / ${fmtInt(total)} reporting with data</span> <a href="#section-status">View Sources →</a></h3>
+        <div class="cc-donut-wrap">${donut(healthyCount, degradedCount, failed, unknownCount)}<div style="flex:1;min-width:0">
+          <div style="font-size:11px;display:flex;justify-content:space-between"><span>🟢 Healthy (with data)</span><b>${fmtInt(healthyCount)}</b></div>
+          <div style="font-size:11px;display:flex;justify-content:space-between"><span>🟡 Degraded (empty)</span><b>${fmtInt(degradedCount)}</b></div>
+          <div style="font-size:11px;display:flex;justify-content:space-between"><span>🔴 Offline / failed</span><b>${fmtInt(failed)}</b></div>
+          <div style="font-size:11px;display:flex;justify-content:space-between"><span>⚪ Unknown</span><b>${fmtInt(unknownCount)}</b></div>
+        </div></div>
+        <div class="gp-tiny gp-muted" style="margin:10px 0 4px;text-transform:uppercase;letter-spacing:.08em">Recent issues</div>${issueRows}</div>
     </div>
     <div class="cc-legend" aria-label="Severity legend"><span><i style="background:var(--blue)"></i>Blue = Informational · Normal activity</span><span><i style="background:var(--amber)"></i>Amber = Watch · Elevated, monitor</span><span><i style="background:var(--red)"></i>Red = Critical · Immediate attention</span><span><i style="background:var(--green)"></i>Green = Healthy · Normal operation</span></div>`;
 
   const input = document.getElementById('dashSearch');
   input?.addEventListener('input', () => { query = input.value; renderDashboard(); const n = document.getElementById('dashSearch'); if (n) { n.focus(); n.setSelectionRange(n.value.length, n.value.length); } });
+  el.querySelectorAll('[data-sort]').forEach(btn => btn.addEventListener('click', () => {
+    const key = btn.dataset.sort;
+    if (regionSort.key === key) regionSort.dir *= -1;
+    else { regionSort.key = key; regionSort.dir = key === 'region' ? 1 : -1; }
+    renderDashboard();
+  }));
   const pill = document.getElementById('commandStatus');
   if (pill) {
     if (!total) { pill.className = 'gp-status-pill'; pill.innerHTML = '<span class="dot"></span><span>Status unknown</span>'; }
@@ -232,13 +268,30 @@ function initDashMap(state) {
     };
     // Deterministic thin sample: every Nth marker so mini-map stays fast and honest.
     const step = Math.max(1, Math.floor(markers.length / 350));
-    let plotted = 0;
-    for (let i = 0; i < markers.length && plotted < 350; i += step) {
+    const points = [];
+    for (let i = 0; i < markers.length && points.length < 350; i += step) {
       const m = markers[i];
       const lat = Number(m.lat), lon = Number(m.lng);
       if (!Number.isFinite(lat) || !Number.isFinite(lon) || Math.abs(lat) > 90 || Math.abs(lon) > 180) continue;
-      L.circleMarker([lat, lon], { radius: 4, color: '#fff', weight: 1, fillColor: colorFor(m), fillOpacity: 0.95, interactive: false }).addTo(layer);
-      plotted++;
+      points.push([lat, lon, colorFor(m)]);
+    }
+    // Bubbles = clustered real coordinates (no invented region geometry).
+    if (typeof L.markerClusterGroup === 'function') {
+      const cluster = L.markerClusterGroup({
+        maxClusterRadius: 46,
+        showCoverageOnHover: false,
+        spiderfyOnMaxZoom: false,
+        disableClusteringAtZoom: 5,
+        iconCreateFunction: (c) => L.divIcon({
+          html: `<span>${c.getChildCount()}</span>`,
+          className: 'gp-dash-bubble',
+          iconSize: L.point(34, 34)
+        })
+      });
+      points.forEach(([lat, lon, color]) => cluster.addLayer(L.circleMarker([lat, lon], { radius: 4, color: '#fff', weight: 1, fillColor: color, fillOpacity: 0.95, interactive: false })));
+      cluster.addTo(layer);
+    } else {
+      points.forEach(([lat, lon, color]) => L.circleMarker([lat, lon], { radius: 4, color: '#fff', weight: 1, fillColor: color, fillOpacity: 0.95, interactive: false }).addTo(layer));
     }
   } catch {}
 }
