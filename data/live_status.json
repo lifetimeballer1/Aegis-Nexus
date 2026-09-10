@@ -1,19 +1,23 @@
 {
-  "updatedAt": "2026-09-10T02:50:08.088597+00:00",
+  "updatedAt": "2026-09-10T02:55:24.794056+00:00",
   "feedsChecked": 64,
-  "rowsFetched": 1092,
-  "newArticles": 519,
-  "purged": 55,
-  "databaseArticles": 3138,
+  "rowsFetched": 1087,
+  "newArticles": 114,
+  "purged": 105,
+  "databaseArticles": 3147,
   "exportedArticles": 2000,
   "exportLimit": 2000,
-  "healthySources": 58,
+  "healthySources": 57,
   "emptySources": 2,
   "fallbackSources": 0,
   "failedSources": [
     {
-      "source": "GDELT — Western Hemisphere Counter-Cartel",
+      "source": "SOUTHCOM Official Reporting — GDELT Mirror",
       "error": "HTTPError: HTTP Error 429: Too Many Requests"
+    },
+    {
+      "source": "GDELT — Western Hemisphere Counter-Cartel",
+      "error": "ParseError: syntax error: line 1, column 0"
     },
     {
       "source": "X @NASA",
@@ -224,10 +228,10 @@
       "category": "southcom",
       "coverage": [],
       "rowsFetched": 0,
-      "httpOk": true,
-      "mode": "online-empty",
-      "emptyFeed": true,
-      "error": ""
+      "httpOk": false,
+      "mode": "failed",
+      "emptyFeed": false,
+      "error": "HTTPError: HTTP Error 429: Too Many Requests"
     },
     {
       "sourceId": "google_news_southcom",
@@ -323,7 +327,7 @@
       "httpOk": false,
       "mode": "failed",
       "emptyFeed": false,
-      "error": "HTTPError: HTTP Error 429: Too Many Requests"
+      "error": "ParseError: syntax error: line 1, column 0"
     },
     {
       "sourceId": "google_news_climate_disaster",
@@ -367,7 +371,7 @@
       "type": "us-politics",
       "category": "us-politics",
       "coverage": [],
-      "rowsFetched": 39,
+      "rowsFetched": 37,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -415,7 +419,7 @@
       "type": "world-politics",
       "category": "world-politics",
       "coverage": [],
-      "rowsFetched": 11,
+      "rowsFetched": 9,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -499,7 +503,7 @@
       "type": "africa-conflict",
       "category": "africa-conflict",
       "coverage": [],
-      "rowsFetched": 11,
+      "rowsFetched": 10,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -607,10 +611,10 @@
       "type": "americas",
       "category": "americas",
       "coverage": [],
-      "rowsFetched": 1,
+      "rowsFetched": 0,
       "httpOk": true,
-      "mode": "native",
-      "emptyFeed": false,
+      "mode": "online-empty",
+      "emptyFeed": true,
       "error": ""
     },
     {
@@ -741,7 +745,7 @@
       "coverage": [
         "china"
       ],
-      "rowsFetched": 8,
+      "rowsFetched": 9,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
