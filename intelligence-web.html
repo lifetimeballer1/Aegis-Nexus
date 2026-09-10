@@ -10,35 +10,142 @@
 <title>Aegis Nexus — Intelligence Web</title>
 <link rel="stylesheet" href="css/tokens.css">
 <style>
-:root{--panel:rgba(11,19,29,.92)}
-*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(--text);font:13px Inter,system-ui,sans-serif}
-#graph{position:fixed;inset:0;width:100%;height:100%;overflow:hidden;background:radial-gradient(circle at 50% 45%,#0a2230 0,#020a11 45%,#000 100%)}
+/* ============================================================
+   ABYSS CURRENT — chrome + styling (CSS-only layer).
+   Markup and inline <style> owned here; intelligence_web_v2.js
+   owns all behavior. Hooks styled: #graph, #labels, .node-label
+   (+ .dot/.text), .hud, .card, .filter, .period, .timeline,
+   #details (+ .title/.meta/.chips/.method/.section/.evidence/
+   .relation/.relation-title/.reason/.type-line/.no-evidence/
+   .source-card/.source-head/.source-link/.source-resolve/.muted),
+   #stats, #trend, #loading, .legend, .control-toggle.
+   ============================================================ */
+:root{
+  --panel:rgba(11,19,29,.92);
+  --abyss-teal:#5ad7f5;
+  --abyss-teal-dim:rgba(90,215,245,.55);
+  --abyss-heart:rgba(23,94,110,.34);
+  --abyss-label:#e9f7ff;
+  --abyss-glass:linear-gradient(160deg,rgba(8,26,39,.94),rgba(3,12,20,.96));
+  --abyss-line:rgba(64,190,220,.3);
+  --abyss-line-soft:rgba(64,190,220,.18);
+}
+*{box-sizing:border-box}
+html,body{margin:0;width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(--text);font:13px Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+
+/* ---------- 1. SCENE ---------- */
+#graph{position:fixed;inset:0;width:100%;height:100%;overflow:hidden;background:
+  radial-gradient(ellipse 90vmin 62vmin at 50% 42%,rgba(35,140,165,.30) 0,rgba(20,90,115,.14) 42%,transparent 70%),
+  radial-gradient(ellipse at 50% 42%,var(--abyss-heart) 0,rgba(8,28,40,.5) 34%,#010509 68%,#000 100%),
+  linear-gradient(180deg,#01040a 0%,#041422 42%,#031420 58%,#000308 100%)}
+/* Ultra-subtle concentric sonar rings over the scene. Pure decoration:
+   pointer-events none, below labels/HUD. Static under reduced-motion. */
+#graph::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:repeating-radial-gradient(circle at 50% 42%,transparent 0 88px,rgba(72,200,235,.055) 88px 89px,transparent 89px 176px)}
+/* One slow ping expanding from the heart of the scene. */
+#graph::after{content:"";position:absolute;left:50%;top:42%;width:74vmin;height:74vmin;transform:translate(-50%,-50%);z-index:1;pointer-events:none;border:1px solid rgba(90,215,245,.16);border-radius:50%;animation:abyss-ping 7s ease-out infinite}
+@keyframes abyss-ping{0%{transform:translate(-50%,-50%) scale(.12);opacity:.9}70%{opacity:.25}100%{transform:translate(-50%,-50%) scale(1);opacity:0}}
+#graph canvas{display:block;width:100%;height:100%}
+
+/* ---------- 2. LABELS ---------- */
 #labels{position:fixed;inset:0;z-index:8;pointer-events:none;overflow:hidden}
-.node-label{position:absolute;transform:translate(-50%,-50%);white-space:nowrap;color:#e8f5fb;text-shadow:0 2px 8px #000;font:700 10px system-ui,sans-serif;opacity:.88;border:1px solid transparent;border-radius:6px;padding:2px 4px;background:rgba(0,0,0,.28)}
-.node-label .dot{display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:4px}
-.hud{position:fixed;left:14px;top:54px;max-height:calc(100vh - 170px);overflow:auto;width:min(720px,calc(100vw - 28px));z-index:30}.hud.collapsed{transform:translateY(-125%);opacity:0;pointer-events:none}
-.control-toggle{position:fixed;left:14px;top:14px;z-index:1200;border:1px solid var(--line);background:#0e1e2a;color:var(--text);border-radius:9px;padding:8px 10px;min-height:36px;font-size:9px;font-weight:850}.control-toggle.active{color:var(--sev-info);border-color:var(--sev-info)}
-/* Polish: visible focus ring (page ships its own CSS, not components.css).
+#labels:empty{display:none}
+.node-label{position:absolute;transform:translate(-50%,-50%);white-space:nowrap;max-width:44vw;overflow:hidden;text-overflow:ellipsis;color:var(--abyss-label);text-shadow:0 1px 6px #000,0 0 10px rgba(70,200,240,.35);font:700 10px/1.5 system-ui,sans-serif;letter-spacing:.02em;opacity:.94;border:1px solid rgba(94,200,230,.35);border-left-width:3px;border-radius:7px;padding:2px 6px;background:rgba(2,12,20,.66);box-shadow:0 2px 10px rgba(0,0,0,.78),0 0 10px rgba(64,190,220,.14);backdrop-filter:blur(2px)}
+.node-label .dot{display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:5px;vertical-align:1px;flex:none}
+.node-label .text{vertical-align:middle}
+/* Far-zoom fade rules: applied when JS tags distant labels (see hooks
+   note). Harmless until the JS partner emits .far / [data-far]. */
+.node-label.far,.node-label[data-far="true"]{opacity:.42;font-size:9px;padding:1px 4px}
+.node-label.far .text,.node-label[data-far="true"] .text{max-width:18ch;overflow:hidden;text-overflow:ellipsis;display:inline-block;vertical-align:middle}
+/* Kind tick: JS emits data-kind per label (see ensureLabel). The ::before bar
+   carries the kind color (mirrors NODE_COLORS in intelligence_web_v2.js);
+   the inline border/dot colors stay as the primary kind signal. */
+.node-label[data-kind]::before{content:"";display:inline-block;width:3px;height:9px;border-radius:2px;margin-right:5px;vertical-align:-1px;background:#4fd2ff}
+.node-label[data-kind="political"]::before,.node-label[data-kind="government"]::before,.node-label[data-kind="government_agency"]::before,.node-label[data-kind="political_party"]::before{background:#b78cff}
+.node-label[data-kind="economic"]::before,.node-label[data-kind="company"]::before,.node-label[data-kind="financial_institution"]::before{background:#ffc857}
+.node-label[data-kind="strategic"]::before,.node-label[data-kind="technology"]::before{background:#46d8ff}
+.node-label[data-kind="military"]::before,.node-label[data-kind="military_command"]::before,.node-label[data-kind="intelligence"]::before,.node-label[data-kind="armed_group"]::before,.node-label[data-kind="conflict"]::before{background:#ff5d6e}
+.node-label[data-kind="resource"]::before{background:#3df097}
+.node-label[data-kind="oil"]::before,.node-label[data-kind="infrastructure"]::before{background:#ff8a3d}
+
+/* ---------- 3. HUD ---------- */
+.hud{position:fixed;left:14px;top:54px;max-height:calc(100vh - 170px);max-height:calc(100dvh - 170px);overflow:auto;width:min(720px,calc(100vw - 28px));z-index:30;transition:transform var(--duration) var(--ease),opacity var(--duration) var(--ease);scrollbar-width:thin;scrollbar-color:var(--line-strong) transparent}
+.hud.collapsed{transform:translateY(-125%);opacity:0;pointer-events:none}
+.control-toggle{position:fixed;left:14px;top:14px;z-index:1200;border:1px solid var(--line);background:#0e1e2a;color:var(--text);border-radius:9px;padding:8px 10px;min-height:36px;font-size:9px;font-weight:850;letter-spacing:.08em}
+.control-toggle.active{color:var(--sev-info);border-color:var(--sev-info)}
+/* Visible focus ring (page ships its own CSS, not components.css).
    Uses the canonical --sev-info token (= #62a0ff) so WebGL-page focus
    matches the app chrome. */
 :where(button,input,select,a):focus-visible{outline:2px solid var(--sev-info);outline-offset:2px}
-.hud{transition:transform var(--duration) var(--ease),opacity var(--duration) var(--ease)}
+.card{background:var(--abyss-glass);border:1px solid var(--abyss-line);border-radius:12px;padding:10px 12px;backdrop-filter:blur(18px) saturate(1.25);-webkit-backdrop-filter:blur(18px) saturate(1.25);box-shadow:0 12px 40px rgba(0,0,0,.7),inset 0 1px 0 rgba(120,220,245,.14)}
+.brand{color:#7fe3ff;font-weight:900;letter-spacing:.14em;font-size:11px;text-shadow:0 0 14px rgba(80,200,240,.5)}
+.sub{color:var(--muted);font-size:10px;margin-top:4px;line-height:1.45}
+.row{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+input,button,select{border:1px solid rgba(64,190,220,.25);background:#08202e;color:var(--text);border-radius:8px;padding:7px 9px;font-size:10px;font-family:inherit}
+select{width:100%;max-width:100%}
+input{flex:1;min-width:140px}
+input::placeholder{color:var(--muted-2);opacity:1}
+button{cursor:pointer;font-weight:750;letter-spacing:.04em}
+button:hover{border-color:rgba(90,215,245,.55);background:#0d2c3f}
+button:active{transform:translateY(1px)}
+button:disabled{opacity:.45;cursor:not-allowed;transform:none}
+button.active,.filter.active,.period.active{color:#7fe3ff;border-color:var(--abyss-teal-dim);background:#0d2c3f;box-shadow:inset 0 0 0 1px rgba(90,215,245,.25),0 0 12px rgba(64,190,220,.18)}
+button.active:hover,.filter.active:hover,.period.active:hover{background:#103446}
+button[aria-pressed="true"]:not(.active):not(.filter):not(.period){color:#7fe3ff;border-color:var(--abyss-teal-dim)}
+#stats{margin-top:8px;color:var(--muted);font-size:10px;font-family:var(--font-mono,ui-monospace,SFMono-Regular,Menlo,monospace);font-variant-numeric:tabular-nums lining-nums;line-height:1.5}
+#stats b{color:var(--text);font-weight:700}
+.legend{margin-top:6px;color:var(--muted);font-size:9px;line-height:1.5;letter-spacing:.02em;border-top:1px solid var(--abyss-line-soft);padding-top:6px}
+#node-select option{background:#08202e;color:var(--text)}
 @media(pointer:coarse){
   input,button,select{min-height:40px}
   .control-toggle{min-height:40px}
   .filter,.period{min-height:40px}
 }
-.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px 12px;backdrop-filter:blur(14px);box-shadow:0 12px 40px #000}.brand{color:var(--sev-info);font-weight:900;letter-spacing:.14em;font-size:11px}.sub{color:var(--muted);font-size:10px;margin-top:4px;line-height:1.4}.row{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
-input,button,select{border:1px solid var(--line);background:#0e1e2a;color:var(--text);border-radius:8px;padding:7px 9px;font-size:10px}select{width:100%;max-width:100%}input{flex:1;min-width:140px}button{cursor:pointer;font-weight:750}button:hover{border-color:var(--line-strong);background:#14273a}button:active{transform:translateY(1px)}button:disabled{opacity:.45;cursor:not-allowed;transform:none}button.active,.filter.active{color:var(--sev-info);border-color:var(--sev-info)}button.active:hover,.filter.active:hover{background:#14273a}#stats{margin-top:8px;color:var(--muted);font-size:10px}.legend{margin-top:6px;color:var(--muted);font-size:9px;line-height:1.35}
-.timeline{position:fixed;left:14px;bottom:14px;z-index:30;width:min(520px,calc(100vw - 28px))}.timeline .card{padding:8px 10px}.timeline b{color:var(--sev-info);font-size:9px;letter-spacing:.1em}
-#details{position:fixed;right:14px;top:14px;width:min(360px,calc(100vw - 28px));max-height:calc(100vh - 28px);overflow:auto;z-index:40;display:none;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px;backdrop-filter:blur(14px)}#details.open{display:block}#detail{padding-top:30px}.detail-close{position:absolute;right:10px;top:8px}
-#loading{position:fixed;inset:0;display:grid;place-items:center;background:rgba(0,0,0,.55);z-index:2000;color:var(--muted);font-size:12px}
+
+/* ---------- 4. TIMELINE + DETAILS ---------- */
+.timeline{position:fixed;left:14px;bottom:14px;z-index:30;width:min(520px,calc(100vw - 28px))}
+.timeline .card{padding:8px 10px}
+.timeline b{color:var(--sev-info);font-size:9px;letter-spacing:.12em}
+#trend{display:block;margin-top:6px;color:var(--muted);font-size:10px;line-height:1.45}
+#details{position:fixed;right:14px;top:14px;width:min(360px,calc(100vw - 28px));max-height:calc(100vh - 28px);max-height:calc(100dvh - 28px);overflow:auto;z-index:40;display:none;background:linear-gradient(165deg,rgba(8,26,39,.96),rgba(2,10,18,.97));border:1px solid rgba(64,190,220,.32);border-radius:12px;padding:12px 12px calc(12px + var(--safe-bottom));backdrop-filter:blur(18px) saturate(1.25);-webkit-backdrop-filter:blur(18px) saturate(1.25);box-shadow:0 16px 48px rgba(0,0,0,.72),inset 0 1px 0 rgba(120,220,245,.14);scrollbar-width:thin;scrollbar-color:var(--line-strong) transparent}
+#details.open{display:block}
+#detail{padding-top:30px;color:var(--text-secondary);font-size:11px;line-height:1.5}
+#detail .title{font-size:15px;font-weight:800;color:var(--text);line-height:1.3;letter-spacing:.01em;padding-right:52px;overflow-wrap:break-word}
+#detail .meta{margin-top:4px;font-size:9px;font-weight:800;letter-spacing:.14em;color:var(--abyss-teal)}
+#detail .chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}
+#detail .chips span{border:1px solid var(--abyss-line-soft);background:rgba(8,32,46,.7);color:var(--text-secondary);border-radius:999px;padding:2px 8px;font-size:9px;font-family:var(--font-mono,ui-monospace,monospace);font-variant-numeric:tabular-nums;white-space:nowrap}
+#detail .method{margin-top:8px;font-size:10px;font-style:italic;color:var(--muted);line-height:1.45}
+#detail .section{margin-top:10px;border-top:1px solid var(--abyss-line-soft);padding-top:8px}
+#detail .section>b{display:block;font-size:9px;letter-spacing:.14em;color:var(--sev-info);margin-bottom:6px}
+#detail .muted{color:var(--muted);font-size:10px}
+#detail .evidence{display:flex;flex-direction:column;gap:8px}
+#detail .relation{background:rgba(4,16,26,.6);border:1px solid var(--abyss-line-soft);border-radius:8px;padding:8px 9px}
+#detail .relation-title{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+#detail .relation-title strong{color:var(--text);font-size:11px}
+#detail .relation-title span{flex:none;font-size:9px;color:var(--muted);font-family:var(--font-mono,ui-monospace,monospace);font-variant-numeric:tabular-nums}
+#detail .reason{margin-top:4px;font-size:10px;color:var(--text-secondary)}
+#detail .reason b{color:var(--muted);font-size:9px;letter-spacing:.08em}
+#detail .type-line{margin-top:4px;font-size:9px;letter-spacing:.06em;color:var(--abyss-teal)}
+#detail .no-evidence{margin-top:4px;font-size:10px;color:var(--muted);font-style:italic}
+#detail .source-card{background:rgba(6,20,32,.75);border:1px solid var(--abyss-line-soft);border-radius:8px;padding:7px 8px;margin-top:6px}
+#detail .source-head{display:flex;justify-content:space-between;align-items:baseline;gap:8px;font-size:9px}
+#detail .source-head b{color:var(--abyss-teal);letter-spacing:.08em}
+#detail .source-head em{font-style:normal;color:var(--muted);font-family:var(--font-mono,ui-monospace,monospace);font-variant-numeric:tabular-nums}
+#detail .source-card strong{display:block;margin-top:3px;color:var(--text);font-size:10px;line-height:1.4}
+#detail .source-card p{margin:4px 0 0;font-size:10px;color:var(--text-secondary);line-height:1.5}
+#detail .source-link{display:inline-block;margin-top:6px;font-size:9px;font-weight:800;letter-spacing:.1em;color:#7fe3ff;text-decoration:none;border:1px solid rgba(90,215,245,.4);border-radius:6px;padding:5px 8px;background:rgba(13,44,63,.6)}
+#detail a.source-link:hover{background:#0d2c3f;border-color:var(--abyss-teal)}
+#detail button.source-link{font-family:inherit;cursor:pointer}
+#detail button.source-link:disabled{opacity:.5;cursor:not-allowed}
+.detail-close{position:absolute;right:10px;top:8px;border:1px solid rgba(64,190,220,.35);background:#08202e;color:var(--text);border-radius:8px;padding:7px 10px;font-size:9px;font-weight:850;letter-spacing:.1em;cursor:pointer}
+.detail-close:hover{border-color:var(--abyss-teal);background:#0d2c3f}
+
+/* ---------- 5. LOADING ---------- */
 /* DESIGN 20-phase (19): Pages-safe paths — verified 2026-09-09.
    First-party refs are all relative (css/tokens.css, js/*, ./*.js); no
    absolute /data/ /js/ /css/ or url() in css/ — safe for GitHub Pages
    project-subpath serving. Only third-party URL is the jsdelivr CDN
    (arch scope). Mobile behavior preserved: loading shell wraps. */
-#loading{max-width:100vw;padding:0 16px;text-align:center;overflow-wrap:break-word}
+#loading{position:fixed;inset:0;display:grid;place-items:center;place-content:center;gap:0;background:rgba(0,3,8,.72);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px);z-index:2000;color:var(--muted);font-size:12px;letter-spacing:.06em;max-width:100vw;padding:0 16px;text-align:center;overflow-wrap:break-word}
 /* DESIGN 20-phase (16): Intel Web embed — lazy toggle/clear/reset, no layout shift.
    HOST CONTRACT (arch agent implements in index.html/js — this file only styles
    the framed document): wrap the iframe in a container with
@@ -47,15 +154,27 @@ input,button,select{border:1px solid var(--line);background:#0e1e2a;color:var(--
    620px <=720px); toggling visibility must use [hidden]/display without
    removing the box. Inside-frame guarantees below: */
 #loading{content-visibility:auto}
-#loading::after{content:"";width:120px;height:3px;border-radius:2px;background:var(--line-strong);position:relative;overflow:hidden;display:block;margin:10px auto 0}
-#graph canvas{display:block;width:100%;height:100%}
-#labels:empty{display:none}
+#loading::after{content:"";width:170px;height:3px;border-radius:2px;background:linear-gradient(90deg,transparent,rgba(90,215,245,.9) 50%,transparent);background-size:60px 100%;background-repeat:no-repeat;animation:abyss-sweep 1.5s linear infinite;position:relative;display:block;margin:12px auto 0;box-shadow:0 0 12px rgba(70,200,240,.5)}
+@keyframes abyss-sweep{from{background-position:-60px 0}to{background-position:170px 0}}
 .hud,.timeline,#details{content-visibility:auto}
+
+/* ---------- reduced motion: everything static ---------- */
 @media(prefers-reduced-motion:reduce){
-  #loading::after{animation:none}
+  #loading::after{animation:none;background:rgba(90,215,245,.5);background-size:100% 100%}
+  #graph::after{animation:none;opacity:.25}
   .hud{transition:none}
+  button:active{transform:none}
 }
-@media(max-width:700px){.hud{left:8px;top:52px;width:calc(100vw - 16px)}.control-toggle{left:8px;top:8px}.timeline{left:8px;bottom:8px;width:calc(100vw - 16px)}#details{left:8px;right:8px;width:auto;top:auto;bottom:70px;max-height:45vh}}
+
+/* ---------- mobile (<=700px): bottom-sheet details, sane chrome ---------- */
+@media(max-width:700px){
+  .hud{left:8px;top:52px;width:calc(100vw - 16px);max-height:calc(100dvh - 220px)}
+  .control-toggle{left:8px;top:8px}
+  .timeline{left:8px;bottom:calc(8px + var(--safe-bottom));width:calc(100vw - 16px)}
+  #details{left:8px;right:8px;width:auto;top:auto;bottom:calc(64px + var(--safe-bottom));max-height:48dvh;border-radius:14px 14px 12px 12px;border-bottom:1px solid rgba(90,215,245,.4)}
+  #detail .title{font-size:14px}
+  .node-label{font-size:9px;max-width:52vw}
+}
 </style>
 </head>
 <body>
