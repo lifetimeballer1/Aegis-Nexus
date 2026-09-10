@@ -77,19 +77,45 @@ function sourceState(source) {
   return 'watch';
 }
 
+/* Device-local governance thresholds (Concept 06 Settings & Governance).
+ * These only change how THIS browser highlights rows — they never alter
+ * pipeline validation, which stays fail-closed server-side. */
+const GOV_KEY = 'gp.govThresholds.v1';
+function loadGov() {
+  try {
+    const raw = JSON.parse(localStorage.getItem(GOV_KEY) || '{}');
+    return {
+      sourceFailure: Number(raw.sourceFailure) > 0 ? Number(raw.sourceFailure) : 3,
+      validationFailure: Number(raw.validationFailure) > 0 ? Number(raw.validationFailure) : 5,
+      freshnessMinutes: Number(raw.freshnessMinutes) > 0 ? Number(raw.freshnessMinutes) : 60
+    };
+  } catch { return { sourceFailure: 3, validationFailure: 5, freshnessMinutes: 60 }; }
+}
+function saveGov(gov) {
+  try { localStorage.setItem(GOV_KEY, JSON.stringify(gov)); } catch {}
+}
+
 function stateBadge(kind, label) {
   return `<span class="gp-sev gp-sev-${kind}">${esc(label)}</span>`;
 }
 
 function registryRows(list) {
+  const gov = loadGov();
   return list.map(s => {
     const kind = sourceState(s);
     const label = kind === 'healthy' ? 'Online' : kind === 'critical' ? 'Failing' : 'Degraded';
-    const fails = s.consecutiveFailures === undefined || s.consecutiveFailures === null ? '' : `<div class="meta">${fmtInt(s.consecutiveFailures)} consecutive failures</div>`;
+    const fails = Number(s.consecutiveFailures || 0);
     const cred = credibilityTier(s);
-    return `<div class="gp-dash-row"><div class="grow"><div class="title">${esc(s.name || s.url || 'Unnamed source')}</div>`
-      + `<div class="meta">${esc(s.category || s.type || 'uncategorized')} · ${fmtInt(s.rowsFetched)} rows · checked ${esc(formatRelativeTime(s.lastChecked))} · <span title="Derived: no failures + fresh rows = High; ≤2 failures + rows = Medium; else Low">credibility ${cred}</span> · fallback ${esc(fallbackMode(s))}</div>${fails}</div>`
-      + `<div>${stateBadge(kind, label)}</div></div>`;
+    const credPct = cred === 'High' ? 92 : cred === 'Medium' ? 64 : 30;
+    const fresh = Number.isFinite(Number(s.freshnessMinutes)) ? `${Number(s.freshnessMinutes).toFixed(0)}m` : '—';
+    const stale = Number.isFinite(Number(s.freshnessMinutes)) && Number(s.freshnessMinutes) > gov.freshnessMinutes;
+    return `<tr><td class="strong">${esc(s.name || s.url || 'Unnamed source')}</td>`
+      + `<td>${esc(s.category || s.type || 'uncategorized')}</td>`
+      + `<td${stale ? ' title="Older than the device freshness threshold"' : ''}>${esc(fresh)}${stale ? ' <span class="gp-sev sev-high">stale</span>' : ''}</td>`
+      + `<td><span class="gp-dot ${esc(kind)}"></span> ${esc(label)}</td>`
+      + `<td class="num">${fmtInt(fails)}</td>`
+      + `<td><span class="gp-cred" title="Derived: no failures + fresh rows = High; ≤2 failures + rows = Medium; else Low"><span class="gp-cred-bar"><i style="width:${credPct}%"></i></span><span>${cred}</span></span></td>`
+      + `<td>${esc(fallbackMode(s))}</td></tr>`;
   }).join('');
 }
 
@@ -111,7 +137,7 @@ function renderRegistry(sources) {
     + `<button class="gp-filter${registryFilter === 'attention' ? ' active' : ''}" data-src-filter="attention" type="button">Needs attention</button>`
     + `<button class="gp-filter${registryFilter === 'all' ? ' active' : ''}" data-src-filter="all" type="button">All sources (${(sources || []).length})</button></div>`
     + `<input id="srcSearch" class="gp-dash-search" type="search" aria-label="Filter sources" placeholder="Filter sources…" value="${esc(registryQuery)}">`
-    + (shown.length ? `<div class="gp-dash-list">${registryRows(shown)}</div><div class="meta" style="margin-top:6px;font-size:10px;color:var(--muted-2)">Showing ${shown.length} of ${ordered.length} matching sources</div>` : '<div class="gp-state"><div class="gp-state-title">No sources match</div><div>No registry entries match the current filter.</div></div>')
+    + (shown.length ? `<div class="gp-table-wrap"><table class="gp-table" aria-label="Source registry"><thead><tr><th>Source</th><th>Category</th><th>Freshness</th><th>Status</th><th class="num">Failures</th><th>Credibility</th><th>Fallback Mode</th></tr></thead><tbody>${registryRows(shown)}</tbody></table></div><div class="meta" style="margin-top:6px;font-size:10px;color:var(--muted-2)">Showing ${shown.length} of ${ordered.length} matching sources</div>` : '<div class="gp-state"><div class="gp-state-title">No sources match</div><div>No registry entries match the current filter.</div></div>')
     + (ordered.length > REGISTRY_VISIBLE ? `<button id="srcMore" class="gp-btn gp-more" type="button">${registryExpanded ? 'Show fewer' : `Show all ${ordered.length}`}</button>` : '');
   box.querySelectorAll('[data-src-filter]').forEach(btn => btn.addEventListener('click', () => {
     registryFilter = btn.dataset.srcFilter; registryExpanded = false; renderRegistry(sources);
@@ -172,11 +198,19 @@ export function renderStatus() {
     }).join('');
 
     const coverage = Number(sourceHealth.summary?.dataCoveragePercent);
-    const kpiStrip = `<div class="cc-kpi-strip" role="list" aria-label="Source indicators" style="grid-template-columns:repeat(4,minmax(0,1fr));margin-bottom:10px">`
-      + `<div class="cc-kpi t-blue"><div class="v">${total}</div><div class="l">Active Sources</div></div>`
-      + `<div class="cc-kpi t-green"><div class="v">${onlineWithData}</div><div class="l">Reporting with Data</div></div>`
-      + `<div class="cc-kpi t-red"><div class="v">${failedCount}</div><div class="l">Sources with Issues</div></div>`
-      + `<div class="cc-kpi t-amber"><div class="v">${Number.isFinite(coverage) ? coverage.toFixed(0) + '%' : '—'}</div><div class="l">Data Coverage</div></div></div>`;
+    const runsAll = Array.isArray(pipelineHistory?.runs) ? pipelineHistory.runs : [];
+    const avgSec = runsAll.length ? runsAll.reduce((a, r) => a + (Number(r.durationSeconds) || 0), 0) / runsAll.length : NaN;
+    const artifactList = refreshManifest?.artifacts && typeof refreshManifest.artifacts === 'object' ? Object.entries(refreshManifest.artifacts) : [];
+    const vS = validationResults?.summary || {};
+    const vRanN = Number(vS.run ?? (Array.isArray(validationResults?.results) ? validationResults.results.length : 0));
+    const vPassN = Number(vS.passed ?? 0);
+    const degradedN = Math.max(0, Number(summary.onlineEmpty ?? (online.length - onlineWithData)));
+    const kpiStrip = `<div class="gp-tiles" role="list" aria-label="System health indicators" style="margin-bottom:10px">`
+      + `<div class="gp-tile tone-blue" role="listitem"><span class="gp-tile-label">Active Sources</span><span class="gp-tile-value">${fmtInt(total)}</span><span class="gp-tile-sub">${fmtInt(online.length)} online · ${fmtInt(degradedN)} degraded</span></div>`
+      + `<div class="gp-tile tone-green" role="listitem"><span class="gp-tile-label">Validation Pass Rate</span><span class="gp-tile-value">${vRanN > 0 ? `${Math.round(vPassN / vRanN * 100)}%` : '—'}</span><span class="gp-tile-sub">${fmtInt(vPassN)} of ${fmtInt(vRanN)} contracts</span></div>`
+      + `<div class="gp-tile tone-red" role="listitem"><span class="gp-tile-label">Sources with Issues</span><span class="gp-tile-value">${fmtInt(failedCount)}</span><span class="gp-tile-sub">failed the last refresh</span></div>`
+      + `<div class="gp-tile tone-amber" role="listitem"><span class="gp-tile-label">Avg Pipeline Time</span><span class="gp-tile-value">${Number.isFinite(avgSec) ? `${avgSec.toFixed(0)}s` : '—'}</span><span class="gp-tile-sub">${fmtInt(runsAll.length)} recorded runs</span></div>`
+      + `<div class="gp-tile tone-blue" role="listitem"><span class="gp-tile-label">Artifact Integrity</span><span class="gp-tile-value">${fmtInt(artifactList.length)}</span><span class="gp-tile-sub">${Number.isFinite(coverage) ? `${coverage.toFixed(0)}% data coverage` : 'manifest-verified hashes'}</span></div></div>`;
 
     html += kpiStrip + `
     <div class="gp-card gp-source-summary sev-${pillSev}">
@@ -221,52 +255,66 @@ export function renderStatus() {
         + '</div></div>' : ''}` : '';
 
   const manifestBlock = artifacts.length ? `
-      <div class="gp-dash-panel" style="margin-top:8px"><h3>Artifact Integrity</h3>
-        <div class="meta" style="font-size:10px;color:var(--muted-2);margin-bottom:6px">Manifest-recorded hashes · generated ${esc(formatRelativeTime(manifest.generatedAt))}</div>
-        <div class="gp-dash-list">` + artifacts.map(([name, meta]) => `
-          <div class="gp-dash-row"><div class="grow"><div class="title" style="font-family:var(--font-mono);font-size:11px">${esc(name)}</div>
-          <div class="meta">sha256 ${esc(String(meta.sha256 || '').slice(0, 12))}… · ${esc(fmtSize(meta.size))}</div></div></div>`).join('')
-      + '</div></div>' : '';
+      <div class="gp-panel" style="margin-top:8px"><div class="gp-panel-head"><h3 class="gp-panel-title">Artifact Integrity &amp; Provenance</h3><span class="gp-tiny gp-muted">${fmtInt(artifacts.length)} artifacts · ${esc(fmtSize(artifacts.reduce((a, [, m]) => a + (Number(m.size) || 0), 0)))} · generated ${esc(formatRelativeTime(manifest.generatedAt))}</span></div>
+      <div class="gp-panel-body"><div class="gp-table-wrap"><table class="gp-table" aria-label="Artifact hashes"><thead><tr><th>Artifact</th><th>SHA-256</th><th class="num">Size</th></tr></thead><tbody>`
+      + artifacts.map(([name, meta]) => `<tr><td class="strong gp-mono">${esc(name)}</td><td class="gp-mono">${esc(String(meta.sha256 || '').slice(0, 12))}…</td><td class="num">${esc(fmtSize(meta.size))}</td></tr>`).join('')
+      + `</tbody></table></div><div class="gp-tiny gp-muted" style="margin-top:6px">Hash prefixes are read from the refresh manifest. A full provenance ledger is not published.</div></div></div>` : '';
 
   const vSummary = validationResults?.summary || {};
   const vResults = Array.isArray(validationResults?.results) ? validationResults.results : [];
   const vRan = Number(vSummary.run ?? vResults.length);
   const vPassed = Number(vSummary.passed ?? vResults.filter(r => r.passed).length);
   const vFailed = Number(vSummary.failed ?? vResults.filter(r => !r.passed).length);
+  const vBlocked = Number(vSummary.blocked ?? 0);
   const validationBlock = `
-      <div class="gp-dash-panel" style="margin-top:8px"><h3>Validation &amp; Data Contracts</h3>
-        ${vResults.length ? `<div class="meta" style="font-size:10px;color:var(--muted-2);margin-bottom:6px">${fmtInt(vRan)} run · ${fmtInt(vPassed)} passed · ${fmtInt(vFailed)} failed · recorded ${esc(formatRelativeTime(validationResults.updatedAt))}</div>
-        <div class="gp-dash-list">` + vResults.map(r => `
-          <div class="gp-dash-row"><div class="grow"><div class="title" style="font-size:11px">${esc(r.contract || r.command || 'contract')}</div>
-          <div class="meta">${esc(String(r.detail || '').slice(0, 160))}</div></div>
-          <div>${r.passed ? '<span class="gp-sev gp-sev-healthy">Passed</span>' : '<span class="gp-sev gp-sev-critical">Failed</span>'}</div></div>`).join('')
-        + '</div>' : '<div class="meta">No validation run recorded yet — published by the next pipeline refresh.</div>'}</div>`;
+      <div class="gp-panel" style="margin-top:8px"><div class="gp-panel-head"><h3 class="gp-panel-title">Validation &amp; Data Contracts</h3><span class="gp-tiny gp-muted">${fmtInt(vRan)} run · ${fmtInt(vPassed)} passed · ${fmtInt(vFailed)} failed · ${fmtInt(vBlocked)} blocked · recorded ${esc(formatRelativeTime(validationResults.updatedAt))}</span></div>
+      <div class="gp-panel-body">${vResults.length ? `<div class="gp-table-wrap"><table class="gp-table" aria-label="Validation results"><thead><tr><th>Contract</th><th>Detail</th><th>Result</th></tr></thead><tbody>`
+      + vResults.map(r => `<tr><td class="strong">${esc(r.contract || r.command || 'contract')}</td><td>${esc(String(r.detail || '').slice(0, 160))}</td><td>${r.passed ? '<span class="gp-sev sev-low">Passed</span>' : '<span class="gp-sev sev-critical">Failed</span>'}</td></tr>`).join('')
+      + `</tbody></table></div>` : '<div class="gp-muted gp-tiny">No validation run recorded yet — published by the next pipeline refresh.</div>'}</div></div>`;
 
   const runs = Array.isArray(pipelineHistory?.runs) ? pipelineHistory.runs : [];
   const historyBlock = `
-      <div class="gp-dash-panel" style="margin-top:8px"><h3>Pipeline Run History</h3>
-        ${runs.length ? `<div class="gp-dash-list">` + runs.slice(0, 8).map(r => {
-          const ok = String(r.status || '').toLowerCase() === 'success';
-          const dur = Number.isFinite(Number(r.durationSeconds)) ? `${Number(r.durationSeconds).toFixed(0)}s` : '—';
-          return `<div class="gp-dash-row"><div class="grow"><div class="title" style="font-family:var(--font-mono);font-size:11px">${esc(String(r.runId || 'run').slice(0, 24))}</div>
-          <div class="meta">${esc(r.trigger || 'manual')} · ${esc(formatRelativeTime(r.startedAt))} · ${esc(dur)}${r.error ? ` · ${esc(String(r.error).slice(0, 120))}` : ''}</div></div>
-          <div>${ok ? '<span class="gp-sev gp-sev-healthy">Success</span>' : '<span class="gp-sev gp-sev-critical">Failed</span>'}</div></div>`;
-        }).join('') + '</div>' : '<div class="meta">No run history yet — recorded on the next pipeline refresh.</div>'}</div>`;
+      <div class="gp-panel" style="margin-top:8px"><div class="gp-panel-head"><h3 class="gp-panel-title">Pipeline Run History</h3><span class="gp-tiny gp-muted">Workflow names are not published by the current pipeline</span></div>
+      <div class="gp-panel-body">${runs.length ? `<div class="gp-table-wrap"><table class="gp-table" aria-label="Pipeline runs"><thead><tr><th>Run ID</th><th>Trigger</th><th>Started (UTC)</th><th class="num">Duration</th><th>Status</th></tr></thead><tbody>`
+      + runs.slice(0, 8).map(r => {
+        const ok = String(r.status || '').toLowerCase() === 'success';
+        const dur = Number.isFinite(Number(r.durationSeconds)) ? `${Number(r.durationSeconds).toFixed(0)}s` : '—';
+        const started = r.startedAt ? esc(String(r.startedAt).replace('T', ' ').slice(0, 19)) : '—';
+        return `<tr><td class="strong gp-mono">${esc(String(r.runId || 'run').slice(0, 24))}</td><td>${esc(r.trigger || 'manual')}</td><td class="gp-mono">${started}</td><td class="num">${esc(dur)}</td><td>${ok ? '<span class="gp-sev sev-low">Success</span>' : '<span class="gp-sev sev-critical">Failed</span>'}</td></tr>`;
+      }).join('')
+      + `</tbody></table></div>` : '<div class="gp-muted gp-tiny">No run history yet — recorded on the next pipeline refresh.</div>'}</div></div>`;
 
   const snapStories = Array.isArray(snapshot?.stories) ? snapshot.stories.length : 0;
   const snapConflicts = Array.isArray(snapshot?.conflicts) ? snapshot.conflicts.length : 0;
   const brainNodes = Array.isArray(intelligenceBrain?.nodes) ? intelligenceBrain.nodes.length : 0;
   const brainEdges = Array.isArray(intelligenceBrain?.edges) ? intelligenceBrain.edges.length : 0;
-  const stage = (label, value, sub, kind) => `<div class="gp-dash-panel" style="flex:1;min-width:120px"><h3>${label}</h3><div class="gp-kpi-value" style="font-size:18px;color:${kind === 'healthy' ? 'var(--sev-healthy)' : kind === 'watch' ? 'var(--sev-watch)' : kind === 'critical' ? 'var(--sev-critical)' : 'var(--text)'}">${value}</div><div class="meta" style="font-size:10px;color:var(--muted-2)">${sub}</div></div>`;
+  const flowNode = (label, value, sub, kind) => `<div class="gp-flow-node"><b>${label}</b><div class="gp-tile-value" style="font-size:18px;color:${kind === 'healthy' ? 'var(--green)' : kind === 'watch' ? 'var(--amber)' : kind === 'critical' ? 'var(--red)' : 'var(--text)'}">${value}</div><span>${sub}</span></div>`;
+  const arrow = '<span class="gp-flow-arrow" aria-hidden="true">→</span>';
   const flowStrip = `
-      <div class="gp-dash-panel" style="margin-top:8px"><h3>Refresh Pipeline Health</h3>
-      <div style="display:flex;gap:6px;flex-wrap:wrap">`
-      + stage('Ingest', live?.updatedAt ? `${fmtInt(live.feedsChecked)} feeds` : '—', live?.updatedAt ? `${fmtInt(live.rowsFetched)} rows · ${esc(formatRelativeTime(live.updatedAt))}` : 'no collector run', live?.updatedAt && Number(live.rowsFetched) > 0 ? 'healthy' : 'info')
-      + stage('Validate', vResults.length ? `${fmtInt(vPassed)}/${fmtInt(vRan)}` : '—', vResults.length ? `gates passed${vFailed ? ` · ${fmtInt(vFailed)} failing` : ''}` : 'no validation run', !vResults.length ? 'info' : vFailed ? 'critical' : 'healthy')
-      + stage('Transform', snapStories ? fmtInt(snapStories) : '—', snapStories ? `${fmtInt(snapConflicts)} conflicts normalized` : 'no snapshot', snapStories ? 'healthy' : 'info')
-      + stage('Enrich', brainNodes ? fmtInt(brainNodes) : '—', brainNodes ? `${fmtInt(brainEdges)} brain edges` : 'no brain', brainNodes ? 'healthy' : 'info')
-      + stage('Publish', artifacts.length ? fmtInt(artifacts.length) : '—', artifacts.length ? `artifacts · ${esc(formatRelativeTime(manifest.generatedAt))}` : 'no manifest', artifacts.length ? 'healthy' : 'info')
-      + `</div></div>`;
+      <div class="gp-panel" style="margin-top:8px"><div class="gp-panel-head"><h3 class="gp-panel-title">Refresh Pipeline Health</h3><span class="gp-tiny gp-muted">Stage counts from canonical artifacts</span></div>
+      <div class="gp-panel-body"><div class="gp-flow">`
+      + flowNode('Ingest', live?.updatedAt ? `${fmtInt(live.feedsChecked)} feeds` : '—', live?.updatedAt ? `${fmtInt(live.rowsFetched)} rows · ${esc(formatRelativeTime(live.updatedAt))}` : 'no collector run', live?.updatedAt && Number(live.rowsFetched) > 0 ? 'healthy' : 'info')
+      + arrow
+      + flowNode('Validate', vResults.length ? `${fmtInt(vPassed)}/${fmtInt(vRan)}` : '—', vResults.length ? `gates passed${vFailed ? ` · ${fmtInt(vFailed)} failing` : ''}` : 'no validation run', !vResults.length ? 'info' : vFailed ? 'critical' : 'healthy')
+      + arrow
+      + flowNode('Transform', snapStories ? fmtInt(snapStories) : '—', snapStories ? `${fmtInt(snapConflicts)} conflicts normalized` : 'no snapshot', snapStories ? 'healthy' : 'info')
+      + arrow
+      + flowNode('Enrich', brainNodes ? fmtInt(brainNodes) : '—', brainNodes ? `${fmtInt(brainEdges)} brain edges` : 'no brain', brainNodes ? 'healthy' : 'info')
+      + arrow
+      + flowNode('Publish', artifacts.length ? fmtInt(artifacts.length) : '—', artifacts.length ? `artifacts · ${esc(formatRelativeTime(manifest.generatedAt))}` : 'no manifest', artifacts.length ? 'healthy' : 'info')
+      + `</div></div></div>`;
+
+  const gov = loadGov();
+  const govBlock = `
+      <div class="gp-panel" style="margin-top:8px"><div class="gp-panel-head"><h3 class="gp-panel-title">Settings &amp; Governance</h3><span class="gp-tiny gp-muted">Device-local view thresholds</span></div>
+      <div class="gp-panel-body gp-stack">
+        <div class="gp-grid gp-grid-3">
+          <div class="gp-field"><label for="govSource">Source failures to flag</label><input id="govSource" class="gp-input" type="number" min="1" max="24" value="${gov.sourceFailure}"></div>
+          <div class="gp-field"><label for="govValidation">Validation failures to flag</label><input id="govValidation" class="gp-input" type="number" min="1" max="24" value="${gov.validationFailure}"></div>
+          <div class="gp-field"><label for="govFresh">Freshness threshold (min)</label><input id="govFresh" class="gp-input" type="number" min="5" max="1440" value="${gov.freshnessMinutes}"></div>
+        </div>
+        <div class="gp-row"><button class="gp-btn primary" id="govSave" type="button">Save thresholds</button><span class="gp-tiny gp-muted" id="govSaved">Only changes highlighting in this browser. Pipeline validation is unchanged.</span></div>
+      </div></div>`;
 
   html += `
     ${flowStrip}
@@ -275,6 +323,7 @@ export function renderStatus() {
     ${manifestBlock}
     ${validationBlock}
     ${historyBlock}
+    ${govBlock}
     ${errorList.length ? `
       <div class="gp-dash-panel" style="margin-top:8px"><h3>Recent fetch errors</h3>
         ${errorList.map(([k, v]) => `<div style="font-size:12px"><strong>${esc(k)}</strong>: ${esc(v)}</div>`).join('')}</div>` : ''}
@@ -292,6 +341,18 @@ export function renderStatus() {
     const input = document.getElementById('statusSearch'); input?.focus(); input?.setSelectionRange(input.value.length, input.value.length);
   });
   el.querySelector('#statusMore')?.addEventListener('click', () => { showAllSources = !showAllSources; renderStatus(); });
+  el.querySelector('#govSave')?.addEventListener('click', () => {
+    const clamp = (value, lo, hi, fallback) => {
+      const n = Number(value);
+      return Number.isFinite(n) ? Math.min(hi, Math.max(lo, Math.round(n))) : fallback;
+    };
+    saveGov({
+      sourceFailure: clamp(document.getElementById('govSource')?.value, 1, 24, 3),
+      validationFailure: clamp(document.getElementById('govValidation')?.value, 1, 24, 5),
+      freshnessMinutes: clamp(document.getElementById('govFresh')?.value, 5, 1440, 60)
+    });
+    renderStatus();
+  });
 
   renderRegistry(Array.isArray(sourceHealth?.sources) ? sourceHealth.sources : []);
 }

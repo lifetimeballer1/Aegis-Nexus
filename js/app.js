@@ -2,6 +2,7 @@
 import { loadCoreData } from './core/fetch.js';
 import { subscribe } from './core/state.js';
 import { CONFIG } from './core/config.js';
+import { setupDrawer } from './core/drawer.js';
 
 const modules = {};
 const targets = {
@@ -176,6 +177,7 @@ async function boot() {
   setupNav();
   setupSearchShortcut();
   setupHeaderSearch();
+  setupDrawer();
   window.addEventListener('gp:prefs-changed', resetRefreshTimer);
   await loadModules();
   if (modules.map?.initMap) {

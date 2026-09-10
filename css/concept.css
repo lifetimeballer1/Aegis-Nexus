@@ -905,6 +905,65 @@ body {
   font-size: 12px;
 }
 
+/* ---- Concept 05 refinements (C17-C29) ---- */
+a.gp-btn {
+  text-decoration: none;
+  color: var(--text);
+}
+
+.gp-filter-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+  max-width: 100%;
+  padding: 3px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--panel);
+}
+
+.gp-filter-row .meta {
+  padding: 0 8px;
+}
+
+.gp-filter {
+  border: 0;
+  background: transparent;
+  border-radius: 999px;
+  min-height: 30px;
+}
+
+.gp-filter.active {
+  background: rgba(98, 160, 255, 0.16);
+  color: var(--blue);
+}
+
+.gp-alert {
+  background: linear-gradient(180deg, var(--panel-2), var(--panel));
+}
+
+.gp-alert-head:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: -2px;
+  border-radius: var(--radius);
+}
+
+.gp-timeline::before {
+  left: 5px;
+  width: 1px;
+  background: var(--line-strong);
+}
+
+.gp-tl-dot {
+  width: 10px;
+  height: 10px;
+}
+
+.gp-tl-item button:hover .gp-tl-title {
+  color: var(--blue);
+}
+
 /* ---- Utilities ---- */
 .gp-row {
   display: flex;

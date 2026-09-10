@@ -5,6 +5,7 @@
  * Nothing is fabricated. */
 import { getState } from '../core/state.js';
 import { formatRelativeTime, escapeHtml } from '../core/utils.js';
+import { openDrawer } from '../core/drawer.js';
 
 let periodHours = 24;
 let userPicked = false;
@@ -119,7 +120,8 @@ export function renderTimeline() {
   const sel = selectedIdx >= 0 ? shown[selectedIdx] : null;
   const pane = sel ? `<div class="gp-card" style="margin-top:10px;border-color:var(--line-strong)"><div style="font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:4px">Reading Pane</div>`
     + `<div class="gp-tl-title" style="font-size:13px">${esc(sel.title)}</div>`
-    + `<div class="gp-tl-meta">${esc(sel.at.toISOString().slice(0, 16).replace('T', ' '))} UTC · ${sel.reports ?? '—'} reports · ${sel.sources ?? '—'} sources · ${esc(sel.confidence || 'confidence ungraded')}</div></div>` : '';
+    + `<div class="gp-tl-meta">${esc(sel.at.toISOString().slice(0, 16).replace('T', ' '))} UTC · ${sel.reports ?? '—'} reports · ${sel.sources ?? '—'} sources · ${esc(sel.confidence || 'confidence ungraded')}</div>`
+    + `<div style="margin-top:8px"><button class="gp-btn" data-tl-pane type="button">Open reading pane</button></div></div>` : '';
 
   el.innerHTML = `<div class="gp-filter-row" role="group" aria-label="Timeline period">${chips}`
     + `<span class="meta" style="align-self:center;font-size:10px;color:var(--muted-2)">Showing ${shown.length} of ${points.length} signals${customActive && !customInvalid ? ' · custom range' : ''}</span></div>${customRow}`
@@ -141,6 +143,17 @@ export function renderTimeline() {
   el.querySelectorAll('[data-tl-select]').forEach(btn => btn.addEventListener('click', () => {
     const i = Number(btn.dataset.tlSelect); selectedIdx = selectedIdx === i ? -1 : i; renderTimeline();
   }));
+  el.querySelector('[data-tl-pane]')?.addEventListener('click', () => {
+    const s = selectedIdx >= 0 ? shown[selectedIdx] : null;
+    if (!s) return;
+    const sev = dotSeverity(s.confidence);
+    openDrawer({
+      title: s.title,
+      html: `<div class="gp-row-between"><span class="gp-sev sev-${esc(sev)}">${esc(sev.toUpperCase())}</span><span class="gp-tiny gp-muted">${esc(s.at.toISOString().slice(0, 16).replace('T', ' '))} UTC</span></div>`
+        + `<div class="gp-tiny gp-muted" style="margin:8px 0 10px">${s.reports ?? '—'} reports · ${s.sources ?? '—'} sources · ${esc(s.confidence || 'confidence ungraded')}</div>`
+        + `<div class="gp-honest" style="margin-top:10px">Timeline observations are derived from the canonical 30-day event history. Device-local reading pane.</div>`
+    });
+  });
 }
 
 export function getTimelineView() { return { period: periodHours, custom: customActive, from: customFrom, to: customTo }; }

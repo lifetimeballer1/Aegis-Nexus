@@ -4,6 +4,7 @@
  * Nothing is fabricated; an empty queue states so honestly. */
 import { getState } from '../core/state.js';
 import { formatRelativeTime, escapeHtml } from '../core/utils.js';
+import { openDrawer } from '../core/drawer.js';
 import { addSupportingToDraft } from './briefings.js';
 
 let levelFilter = 'all';
@@ -122,8 +123,8 @@ export function renderAlerts() {
   const visible = levelFilter === 'all' ? items : items.filter(i => i.sev === levelFilter);
   const shown = showAll ? visible : visible.slice(0, 12);
 
-  const chips = [`<button class="gp-filter${levelFilter === 'all' ? ' active' : ''}" data-alert-level="all" type="button">All (${counts.all})</button>`]
-    .concat(LEVELS.map(level => `<button class="gp-filter${levelFilter === level ? ' active' : ''}" data-alert-level="${level}" type="button">${LEVEL_LABEL[level]} (${counts[level]})</button>`)).join('');
+  const chips = [`<button class="gp-filter${levelFilter === 'all' ? ' active' : ''}" data-alert-level="all" type="button" aria-pressed="${levelFilter === 'all'}">All (${counts.all})</button>`]
+    .concat(LEVELS.map(level => `<button class="gp-filter${levelFilter === level ? ' active' : ''}" data-alert-level="${level}" type="button" aria-pressed="${levelFilter === level}">${LEVEL_LABEL[level]} (${counts[level]})</button>`)).join('');
 
   const rows = shown.map(item => {
     const open = expandedKey === item.key;
@@ -136,7 +137,7 @@ export function renderAlerts() {
       + `<div class="meta" style="font-size:10px;color:var(--muted-2);margin-top:2px">${esc(item.sub)}${item.sub && item.meta ? ' · ' : ''}${esc(item.meta)}${item.time ? ` · ${esc(formatRelativeTime(item.time))}` : ''}${ackAt ? ` · ✓ acknowledged ${esc(formatRelativeTime(ackAt))}` : ''}</div></span>`
       + `<span class="gp-sev gp-sev-${item.sev}">${esc(item.sevLabel)}</span></button>`
       + (open ? `<div class="gp-alert-detail">${item.detail ? `<div style="margin-bottom:6px">${esc(item.detail)}</div>` : ''}${links || '<div style="color:var(--muted-2)">No linked evidence records in this snapshot.</div>'}`
-        + `<div style="margin-top:8px;display:flex;gap:6px;flex-wrap:wrap"><button class="gp-btn" data-alert-ack="${esc(item.key)}" type="button" title="Stored only on this device">${ackAt ? 'Clear acknowledgement' : 'Acknowledge'}</button><button class="gp-btn" data-brief-add="${esc(item.key)}" data-brief-title="${esc(item.title)}" type="button" title="Saved to the active briefing draft on this device">Add to briefing</button></div></div>` : '')
+        + `<div style="margin-top:8px;display:flex;gap:6px;flex-wrap:wrap"><button class="gp-btn" data-alert-pane="${esc(item.key)}" type="button">Open reading pane</button><button class="gp-btn" data-alert-ack="${esc(item.key)}" type="button" title="Stored only on this device">${ackAt ? 'Clear acknowledgement' : 'Acknowledge'}</button><button class="gp-btn" data-brief-add="${esc(item.key)}" data-brief-title="${esc(item.title)}" type="button" title="Saved to the active briefing draft on this device">Add to briefing</button><a class="gp-btn" href="#section-map">View map</a></div></div>` : '')
       + '</div>';
   }).join('');
 
@@ -172,6 +173,19 @@ export function renderAlerts() {
       acked[key] = { at: new Date().toISOString(), title: item ? item.title : key };
     }
     saveAck(); renderAlerts();
+  }));
+  el.querySelectorAll('[data-alert-pane]').forEach(btn => btn.addEventListener('click', () => {
+    const item = items.find(i => i.key === btn.dataset.alertPane);
+    if (!item) return;
+    const links = evidenceLinks(item.evidence) || '<div class="gp-muted gp-tiny">No linked evidence records in this snapshot.</div>';
+    openDrawer({
+      title: item.title,
+      html: `<div class="gp-row-between"><span class="gp-sev sev-${esc(item.sev)}">${esc(item.sevLabel)}</span><span class="gp-tiny gp-muted">${esc(item.sub || '')}</span></div>`
+        + `<div class="gp-tiny gp-muted" style="margin:8px 0 10px">${esc(item.meta)}${item.time ? ` · ${esc(formatRelativeTime(item.time))}` : ''}</div>`
+        + (item.detail ? `<p style="font-size:13px;line-height:1.55">${esc(item.detail)}</p>` : '')
+        + `<h3 class="gp-drawer-title" style="margin:12px 0 8px">Evidence</h3><div class="gp-stack">${links}</div>`
+        + `<div class="gp-honest" style="margin-top:12px">Device-local reading pane. Acknowledgement and briefing actions store only in this browser.</div>`
+    });
   }));
   el.querySelectorAll('[data-brief-add]').forEach(btn => btn.addEventListener('click', () => {
     addSupportingToDraft({ kind: 'alert', key: btn.dataset.briefAdd, label: btn.dataset.briefTitle || btn.dataset.briefAdd });

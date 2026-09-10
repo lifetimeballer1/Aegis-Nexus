@@ -151,6 +151,7 @@ export function renderBriefings() {
 
 export const DRAFTS_KEY = 'gp.briefDrafts.v1';
 let activeDraftId = null;
+let draftStep = 1;
 
 function loadDraftStore() {
   try {
@@ -165,6 +166,15 @@ function loadDraftStore() {
 
 function saveDraftStore(store) {
   try { localStorage.setItem(DRAFTS_KEY, JSON.stringify(store)); } catch {}
+}
+
+function downloadFile(name, content, type) {
+  const blob = new Blob([content], { type });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = name;
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(a.href), 2000);
 }
 
 function activeDraft(store) {
@@ -217,28 +227,64 @@ function renderDrafts(el) {
   const listBtns = store.drafts.map(d =>
     `<button class="gp-filter${draft && d.id === draft.id ? ' active' : ''}" data-draft-sel="${esc(d.id)}" type="button">${esc(d.title || 'Untitled briefing')}</button>`).join('');
 
+  const stepsNav = `<div class="gp-steps" role="tablist" aria-label="Briefing builder steps">`
+    + [['1', 'Content'], ['2', 'Structure'], ['3', 'Review'], ['4', 'Publish']].map(([n, label], i) =>
+      `${i ? '<span class="gp-step-line" aria-hidden="true"></span>' : ''}<button class="gp-step${draftStep === i + 1 ? ' active' : ''}${draftStep > i + 1 ? ' done' : ''}" data-draft-step="${i + 1}" type="button" role="tab" aria-selected="${draftStep === i + 1}"><span class="gp-step-num">${draftStep > i + 1 ? '✓' : n}</span>${label}</button>`).join('')
+    + `</div>`;
+  const judgments = Array.isArray(draft?.judgments) ? draft.judgments : [];
+  const links = Array.isArray(draft?.links) ? draft.links : [];
+  const missing = [];
+  if (!draft || !String(draft.title || '').trim() || draft.title === 'Untitled briefing') missing.push('a title');
+  if (!draft || !String(draft.summary || '').trim()) missing.push('an executive summary');
+  if (!judgments.length) missing.push('at least one key judgment');
+
   const editor = draft ? `
-    <div class="gp-dash-panel" style="margin-top:8px"><h3>Content</h3>
-      <label style="font-size:10px;color:var(--muted-2)">Title<input id="bdTitle" class="gp-map-search" type="text" value="${esc(draft.title)}" maxlength="120"></label>
-      <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:6px">
-        <label style="font-size:10px;color:var(--muted-2)">Type <select id="bdType" class="gp-map-search">${draftOptions().map(o => `<option${o === draft.type ? ' selected' : ''}>${esc(o)}</option>`).join('')}</select></label>
-        <label style="font-size:10px;color:var(--muted-2)">Classification <select id="bdClass" class="gp-map-search">${['Internal', 'Unclassified'].map(o => `<option${o === draft.classification ? ' selected' : ''}>${esc(o)}</option>`).join('')}</select></label>
-        <label style="font-size:10px;color:var(--muted-2)">Priority <select id="bdPri" class="gp-map-search">${['Low', 'Medium', 'High', 'Critical'].map(o => `<option${o === draft.priority ? ' selected' : ''}>${esc(o)}</option>`).join('')}</select></label>
-      </div>
-      <label style="font-size:10px;color:var(--muted-2);margin-top:6px;display:block">Executive summary<textarea id="bdSummary" class="gp-map-search" rows="3" maxlength="2000" style="width:100%;resize:vertical">${esc(draft.summary)}</textarea></label>
+    ${stepsNav}
+    <div class="gp-step-panel${draftStep === 1 ? ' active' : ''}" data-draft-panel="1">
+      <div class="gp-panel" style="margin-top:10px"><div class="gp-panel-head"><h4 class="gp-panel-title">1 · Content</h4><span class="gp-tiny gp-muted">Analyst-authored · device-local</span></div>
+      <div class="gp-panel-body gp-stack">
+        <div class="gp-field"><label for="bdTitle">Title</label><input id="bdTitle" class="gp-input" type="text" value="${esc(draft.title)}" maxlength="120"><span class="gp-counter" data-counter-for="bdTitle">${String(draft.title || '').length}/120</span></div>
+        <div class="gp-grid gp-grid-3">
+          <div class="gp-field"><label for="bdType">Briefing type</label><select id="bdType" class="gp-select">${draftOptions().map(o => `<option${o === draft.type ? ' selected' : ''}>${esc(o)}</option>`).join('')}</select></div>
+          <div class="gp-field"><label for="bdClass">Classification</label><select id="bdClass" class="gp-select">${['Internal', 'Unclassified'].map(o => `<option${o === draft.classification ? ' selected' : ''}>${esc(o)}</option>`).join('')}</select></div>
+          <div class="gp-field"><label for="bdPri">Priority</label><select id="bdPri" class="gp-select">${['Low', 'Medium', 'High', 'Critical'].map(o => `<option${o === draft.priority ? ' selected' : ''}>${esc(o)}</option>`).join('')}</select></div>
+        </div>
+        <div class="gp-field"><label for="bdSummary">Executive summary</label><textarea id="bdSummary" class="gp-textarea" rows="5" maxlength="2000">${esc(draft.summary)}</textarea><span class="gp-counter" data-counter-for="bdSummary">${String(draft.summary || '').length}/2000</span></div>
+      </div></div>
+      <div class="gp-row" style="justify-content:flex-end;margin-top:8px"><button class="gp-btn primary" data-draft-next type="button">Next: Structure →</button></div>
     </div>
-    <div class="gp-dash-panel" style="margin-top:8px"><h3>Key judgments</h3>
-      <div class="gp-dash-list">${(draft.judgments || []).map((j, i) => `<div class="gp-dash-row"><div class="grow"><div class="title">${i + 1}. ${esc(j.text || '')}</div></div><button class="gp-btn" data-jdel="${i}" type="button">Remove</button></div>`).join('') || '<div class="meta">No judgments yet — add the analyst’s own assessments.</div>'}</div>
-      <div style="display:flex;gap:6px;margin-top:6px"><input id="bdJudgNew" class="gp-map-search" type="text" placeholder="New judgment…" maxlength="280" style="flex:1"><button class="gp-btn" data-jadd type="button">Add</button></div>
+    <div class="gp-step-panel${draftStep === 2 ? ' active' : ''}" data-draft-panel="2">
+      <div class="gp-panel" style="margin-top:10px"><div class="gp-panel-head"><h4 class="gp-panel-title">2 · Structure</h4></div>
+      <div class="gp-panel-body gp-stack">
+        <div><div class="gp-tiny gp-muted" style="margin-bottom:6px;text-transform:uppercase;letter-spacing:.08em">Key judgments</div>
+          <div class="gp-stack">${judgments.map((j, i) => `<div class="gp-row-between" style="border:1px solid var(--line);border-radius:var(--radius);padding:8px 10px"><span style="font-size:12px;min-width:0">${i + 1}. ${esc(j.text || '')}</span><span class="gp-row"><button class="gp-btn" data-jup="${i}" type="button" ${i === 0 ? 'disabled' : ''} aria-label="Move judgment up">↑</button><button class="gp-btn" data-jdown="${i}" type="button" ${i === judgments.length - 1 ? 'disabled' : ''} aria-label="Move judgment down">↓</button><button class="gp-btn" data-jdel="${i}" type="button">Remove</button></span></div>`).join('') || '<div class="gp-muted gp-tiny">No judgments yet — add the analyst’s own assessments.</div>'}</div>
+          <div class="gp-row" style="margin-top:6px"><input id="bdJudgNew" class="gp-input" type="text" placeholder="New judgment…" maxlength="280" style="flex:1"><button class="gp-btn" data-jadd type="button">Add</button></div></div>
+        <div><div class="gp-tiny gp-muted" style="margin:10px 0 6px;text-transform:uppercase;letter-spacing:.08em">Supporting content</div>
+          <div class="gp-stack">${links.map((l, i) => `<div class="gp-row-between" style="border:1px solid var(--line);border-radius:var(--radius);padding:8px 10px"><span style="min-width:0"><span style="font-size:12px">${esc(l.label || l.key || 'link')}</span><span class="gp-tiny gp-muted" style="display:block">${esc(l.kind === 'alert' ? `alert · ${l.key || ''}` : l.url || '')}</span></span><button class="gp-btn" data-ldel="${i}" type="button">Remove</button></div>`).join('') || '<div class="gp-muted gp-tiny">Nothing attached yet — attach evidence via “Add to briefing” on an alert, or paste a source URL below.</div>'}</div>
+          <div class="gp-row" style="margin-top:6px"><input id="bdLinkLabel" class="gp-input" type="text" placeholder="Label" maxlength="120" style="flex:1;min-width:120px"><input id="bdLinkUrl" class="gp-input" type="url" placeholder="https://…" maxlength="500" style="flex:2;min-width:160px"><button class="gp-btn" data-ladd type="button">Attach URL</button></div></div>
+        <div class="gp-field"><label for="bdNotes">Analyst notes</label><textarea id="bdNotes" class="gp-textarea" rows="2" maxlength="2000" placeholder="Private working notes — stored on this device only.">${esc(draft.notes)}</textarea></div>
+      </div></div>
+      <div class="gp-row-between" style="margin-top:8px"><button class="gp-btn" data-draft-prev type="button">← Back</button><button class="gp-btn primary" data-draft-next type="button">Next: Review →</button></div>
     </div>
-    <div class="gp-dash-panel" style="margin-top:8px"><h3>Supporting content</h3>
-      <div class="meta" style="font-size:10px;color:var(--muted-2);margin-bottom:6px">Attach evidence only — alerts via “Add to briefing”, or paste source URLs.</div>
-      <div class="gp-dash-list">${(draft.links || []).map((l, i) => `<div class="gp-dash-row"><div class="grow"><div class="title">${esc(l.label || l.key || 'link')}</div><div class="meta">${esc(l.kind === 'alert' ? `alert · ${l.key || ''}` : l.url || '')}</div></div><button class="gp-btn" data-ldel="${i}" type="button">Remove</button></div>`).join('') || '<div class="meta">Nothing attached yet.</div>'}</div>
-      <div style="display:flex;gap:6px;margin-top:6px;flex-wrap:wrap"><input id="bdLinkLabel" class="gp-map-search" type="text" placeholder="Label" maxlength="120" style="flex:1;min-width:120px"><input id="bdLinkUrl" class="gp-map-search" type="url" placeholder="https://…" maxlength="500" style="flex:2;min-width:160px"><button class="gp-btn" data-ladd type="button">Attach URL</button></div>
+    <div class="gp-step-panel${draftStep === 3 ? ' active' : ''}" data-draft-panel="3">
+      <div class="gp-panel" style="margin-top:10px"><div class="gp-panel-head"><h4 class="gp-panel-title">3 · Review</h4></div>
+      <div class="gp-panel-body">
+        ${missing.length ? `<div class="gp-honest" style="margin-bottom:10px">Before publishing, add ${esc(missing.join(', '))}. Drafts are never auto-completed.</div>` : '<div class="gp-row" style="margin-bottom:10px"><span class="gp-sev sev-low">Ready</span><span class="gp-tiny gp-muted">Required fields present</span></div>'}
+        <div class="gp-brief-head"><div class="gp-brief-title">${esc(draft.title || 'Untitled briefing')}</div><div class="meta">${esc(draft.type || '')} · ${esc(draft.classification || '')} · priority ${esc(draft.priority || '')}</div></div>
+        <h3 class="gp-brief-h">Executive summary</h3><p style="font-size:12.5px;line-height:1.55;color:var(--text-secondary)">${esc(draft.summary || '—')}</p>
+        <h3 class="gp-brief-h">Key judgments</h3>${judgments.map((j, i) => `<div class="gp-brief-watch sev-info"><div class="grow"><div class="title">${i + 1}. ${esc(j.text || '')}</div></div></div>`).join('') || '<div class="gp-muted gp-tiny">None yet.</div>'}
+        <h3 class="gp-brief-h">Supporting content</h3>${links.map(l => `<div class="gp-tiny gp-muted">• ${esc(l.label || l.key || '')}${l.url ? ` — ${esc(l.url)}` : ''}</div>`).join('') || '<div class="gp-muted gp-tiny">None yet.</div>'}
+      </div></div>
+      <div class="gp-row-between" style="margin-top:8px"><button class="gp-btn" data-draft-prev type="button">← Back</button><button class="gp-btn primary" data-draft-next type="button">Next: Publish →</button></div>
     </div>
-    <div class="gp-dash-panel" style="margin-top:8px"><h3>Analyst notes</h3>
-      <textarea id="bdNotes" class="gp-map-search" rows="2" maxlength="2000" style="width:100%;resize:vertical" placeholder="Private working notes — stored on this device only.">${esc(draft.notes)}</textarea>
-      <div style="display:flex;gap:6px;margin-top:8px;flex-wrap:wrap"><button class="gp-btn" data-bdexport type="button">Export JSON</button><button class="gp-btn" data-draft-del type="button">Delete draft</button><span class="meta" id="bdSaved" style="align-self:center">${draft.updatedAt ? `Saved ${esc(formatRelativeTime(draft.updatedAt))}` : ''}</span></div>
+    <div class="gp-step-panel${draftStep === 4 ? ' active' : ''}" data-draft-panel="4">
+      <div class="gp-panel" style="margin-top:10px"><div class="gp-panel-head"><h4 class="gp-panel-title">4 · Publish</h4><span class="gp-tiny gp-muted">Local export only</span></div>
+      <div class="gp-panel-body gp-stack">
+        <div class="gp-honest">This build has no delivery backend. Publishing exports a local file (JSON / Markdown) or opens the browser print dialog. No email, chat, SMS, or generated content is available or simulated.</div>
+        <div class="gp-row"><button class="gp-btn primary" data-bdexport type="button">Export JSON</button><button class="gp-btn" data-bdmarkdown type="button">Export Markdown</button><button class="gp-btn" data-bdprint type="button">Print preview</button></div>
+        <div class="gp-row-between"><span class="meta" id="bdSaved">${draft.updatedAt ? `Saved ${esc(formatRelativeTime(draft.updatedAt))}` : ''}</span><button class="gp-btn" data-draft-del type="button">Delete draft</button></div>
+      </div></div>
+      <div class="gp-row" style="margin-top:8px"><button class="gp-btn" data-draft-prev type="button">← Back</button></div>
     </div>`
     : '<div class="gp-state"><div class="gp-state-title">No drafts yet</div><div>Start a briefing draft to collect judgments and evidence.</div></div>';
 
@@ -269,13 +315,22 @@ function renderDrafts(el) {
   host.querySelector('[data-draft-new]')?.addEventListener('click', () => {
     const s = loadDraftStore();
     const d = newDraft();
-    s.drafts.push(d); s.activeId = d.id; activeDraftId = d.id;
+    s.drafts.push(d); s.activeId = d.id; activeDraftId = d.id; draftStep = 1;
     saveDraftStore(s); renderBriefings();
   });
   host.querySelectorAll('[data-draft-sel]').forEach(b => b.addEventListener('click', () => {
-    activeDraftId = b.dataset.draftSel;
+    activeDraftId = b.dataset.draftSel; draftStep = 1;
     const s = loadDraftStore(); s.activeId = activeDraftId; saveDraftStore(s);
     renderBriefings();
+  }));
+  host.querySelectorAll('[data-draft-step]').forEach(b => b.addEventListener('click', () => {
+    draftStep = Number(b.dataset.draftStep) || 1; renderBriefings();
+  }));
+  host.querySelectorAll('[data-draft-next]').forEach(b => b.addEventListener('click', () => {
+    draftStep = Math.min(4, draftStep + 1); renderBriefings();
+  }));
+  host.querySelectorAll('[data-draft-prev]').forEach(b => b.addEventListener('click', () => {
+    draftStep = Math.max(1, draftStep - 1); renderBriefings();
   }));
   host.querySelector('[data-draft-del]')?.addEventListener('click', () => {
     mutate((d, s) => { s.drafts = s.drafts.filter(x => x.id !== d.id); activeDraftId = null; s.activeId = null; });
@@ -286,6 +341,8 @@ function renderDrafts(el) {
     if (!d) return;
     d[key] = e.target.value;
     saveDraftStore(s);
+    const counter = host.querySelector(`[data-counter-for="${id}"]`);
+    if (counter) counter.textContent = `${e.target.value.length}/${e.target.maxLength > 0 ? e.target.maxLength : ''}`;
     const stampEl = document.getElementById('bdSaved');
     if (stampEl) stampEl.textContent = 'Editing…';
     clearTimeout(bindField._t);
@@ -301,6 +358,14 @@ function renderDrafts(el) {
   host.querySelectorAll('[data-jdel]').forEach(b => b.addEventListener('click', () => {
     const i = Number(b.dataset.jdel);
     mutate((d) => { d.judgments.splice(i, 1); });
+  }));
+  host.querySelectorAll('[data-jup]').forEach(b => b.addEventListener('click', () => {
+    const i = Number(b.dataset.jup);
+    mutate((d) => { if (i > 0) { const t = d.judgments[i - 1]; d.judgments[i - 1] = d.judgments[i]; d.judgments[i] = t; } });
+  }));
+  host.querySelectorAll('[data-jdown]').forEach(b => b.addEventListener('click', () => {
+    const i = Number(b.dataset.jdown);
+    mutate((d) => { if (i < d.judgments.length - 1) { const t = d.judgments[i + 1]; d.judgments[i + 1] = d.judgments[i]; d.judgments[i] = t; } });
   }));
   host.querySelector('[data-ladd]')?.addEventListener('click', () => {
     const label = (host.querySelector('#bdLinkLabel')?.value || '').trim();
@@ -320,11 +385,37 @@ function renderDrafts(el) {
     const s = loadDraftStore();
     const d = activeDraft(s);
     if (!d) return;
-    const blob = new Blob([JSON.stringify(d, null, 2)], { type: 'application/json' });
-    const a = document.createElement('a');
-    a.href = URL.createObjectURL(blob);
-    a.download = `briefing-${d.id}.json`;
-    document.body.appendChild(a); a.click(); a.remove();
-    setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+    downloadFile(`briefing-${d.id}.json`, JSON.stringify(d, null, 2), 'application/json');
+  });
+  host.querySelector('[data-bdmarkdown]')?.addEventListener('click', () => {
+    const s = loadDraftStore();
+    const d = activeDraft(s);
+    if (!d) return;
+    const md = [
+      `# ${d.title || 'Untitled briefing'}`, '',
+      `*${d.type || ''} · ${d.classification || ''} · Priority: ${d.priority || ''}*`, '',
+      '## Executive summary', '', d.summary || '', '',
+      '## Key judgments', '', ...(d.judgments || []).map((j, i) => `${i + 1}. ${j.text || ''}`), '',
+      '## Supporting content', '', ...(d.links || []).map(l => `- ${l.label || l.key || 'link'}${l.url ? ` — ${l.url}` : ''}`), '',
+      '## Analyst notes', '', d.notes || '', ''
+    ].join('\n');
+    downloadFile(`briefing-${d.id}.md`, md, 'text/markdown');
+  });
+  host.querySelector('[data-bdprint]')?.addEventListener('click', () => {
+    const s = loadDraftStore();
+    const d = activeDraft(s);
+    if (!d) return;
+    const w = window.open('', '_blank');
+    if (!w) {
+      const stampEl = document.getElementById('bdSaved');
+      if (stampEl) stampEl.textContent = 'Print preview blocked by the browser.';
+      return;
+    }
+    const judgments = (d.judgments || []).map((j, i) => `<li>${esc(j.text || '')}</li>`).join('');
+    const links = (d.links || []).map(l => `<li>${esc(l.label || l.key || 'link')}${l.url ? ` — ${esc(l.url)}` : ''}</li>`).join('');
+    w.document.write(`<!DOCTYPE html><html><head><meta charset="utf-8"><title>${esc(d.title || 'Briefing')}</title><style>body{font-family:system-ui,-apple-system,sans-serif;max-width:720px;margin:32px auto;padding:0 16px;color:#111;line-height:1.5}h1{font-size:20px}h2{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:#555;margin-top:20px}ul{margin:6px 0 0 18px}</style></head><body><h1>${esc(d.title || 'Untitled briefing')}</h1><p><em>${esc(d.type || '')} · ${esc(d.classification || '')} · Priority: ${esc(d.priority || '')}</em></p><h2>Executive summary</h2><p>${esc(d.summary || '—')}</p><h2>Key judgments</h2><ul>${judgments || '<li>None yet.</li>'}</ul><h2>Supporting content</h2><ul>${links || '<li>None yet.</li>'}</ul><h2>Analyst notes</h2><p>${esc(d.notes || '—')}</p></body></html>`);
+    w.document.close();
+    w.focus();
+    w.print();
   });
 }
