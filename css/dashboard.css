@@ -621,3 +621,25 @@
 .cc-head .cc-time{font-size:9.5px}
 .cc-rank{font-size:10px;min-width:18px}
 @media(max-width:420px){.cc-head{gap:6px}.cc-thumb{flex-basis:36px;width:36px;height:36px;font-size:14px}}
+
+/* REF-FIDELITY 1024b — pulse row dot rhythm vs abyss refs.
+   Before: pulse tiles had no live-dot rhythm; svg sat flush under value.
+   After: CSS-only corner dot per tile with staggered 1.8s pulse timing
+   (nth-child delays), tighter 7px padding, 16px values, 4px chart offset.
+   Visual-only; dashboard.js markup untouched; motion-guarded. */
+.cc-pulse{position:relative;padding:7px 10px;overflow:hidden}
+.cc-pulse::before{content:"";position:absolute;top:8px;right:10px;width:7px;height:7px;border-radius:50%;background:var(--neon-blue,#4da3ff);box-shadow:0 0 6px rgba(77,163,255,.55)}
+.cc-pulse:nth-child(2)::before{background:var(--neon-red,#ff2d55);box-shadow:0 0 6px rgba(255,45,85,.6)}
+.cc-pulse:nth-child(3)::before{background:var(--neon-amber,#ffc857);box-shadow:0 0 6px rgba(255,200,87,.55)}
+.cc-pulse:nth-child(4)::before{background:var(--neon-green,#48df83);box-shadow:0 0 6px rgba(72,223,131,.55)}
+.cc-pulse .v{font-size:16px;letter-spacing:.01em}
+.cc-pulse svg{margin-top:4px;display:block}
+@media(prefers-reduced-motion:no-preference){
+.cc-pulse::before{animation:cc-pulse-dot 1.8s infinite}
+.cc-pulse:nth-child(2)::before{animation-delay:.45s}
+.cc-pulse:nth-child(3)::before{animation-delay:.9s}
+.cc-pulse:nth-child(4)::before{animation-delay:1.35s}
+@keyframes cc-pulse-dot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.45;transform:scale(.8)}}
+}
+@media(prefers-reduced-motion:reduce){.cc-pulse::before{animation:none;box-shadow:none}}
+@media(forced-colors:active){.cc-pulse::before{box-shadow:none}}
