@@ -128,13 +128,15 @@ export function renderDashboard() {
   const allStories = stories(state);
   const q = query.trim().toLowerCase();
   const filtered = q ? allStories.filter(s => `${s.title || s.headline || ''} ${s.summary || s.summary_snippet || ''} ${s.source || s.sourceName || ''}`.toLowerCase().includes(q)) : allStories;
-  const headRows = filtered.slice(0, 5).map(s => {
+  const headRows = filtered.slice(0, 6).map((s, idx) => {
     const [pc, pl] = catPill(s.category || s.sourceType, s.title);
     const title = s.title || s.headline || 'Untitled';
     const sum = (s.summary || s.summary_snippet || s.description || '').slice(0, 110);
     const initial = esc(String(title).trim().charAt(0).toUpperCase() || 'N');
     const url = s.url || s.link || '#';
-    return `<div class="cc-head" data-pill="${pc}"><div class="cc-thumb" aria-hidden="true">${initial}</div><div style="min-width:0;flex:1"><div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap"><span class="cc-pill ${pc}">${esc(pl)}</span><span class="cc-time">${esc(formatRelativeTime(itemTime(s)))}</span></div><div class="t"><a href="${esc(url)}" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none">${esc(title)}</a></div>${sum ? `<div class="s">${esc(sum)}</div>` : ''}</div></div>`;
+    const rank = String(idx + 1).padStart(2, '0');
+    const src = s.source || s.sourceName || s.domain || '';
+    return `<div class="cc-head" data-pill="${pc}"><span class="cc-rank gp-nums" aria-hidden="true">${rank}</span><div class="cc-thumb" aria-hidden="true">${initial}</div><div style="min-width:0;flex:1"><div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap"><span class="cc-pill ${pc}">${esc(pl)}</span><span class="cc-time">${esc(formatRelativeTime(itemTime(s)))}${src ? ` · ${esc(String(src).slice(0, 22))}` : ''}</span></div><div class="t"><a href="${esc(url)}" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none">${esc(title)}</a></div>${sum ? `<div class="s">${esc(sum)}</div>` : ''}</div></div>`;
   }).join('') || '<div class="gp-state"><div class="gp-state-title">No recent reports</div><div>Live article feed is empty.</div></div>';
   const wcEmptyNote = wcItems.length ? '' : '<!-- Nothing new this window — No changes recorded in the current window. -->';
   void sevFor;
@@ -153,7 +155,34 @@ export function renderDashboard() {
     + `<div class="cc-wc"><b style="color:var(--red)">■ ${fmtInt(failed)}</b><span>Sources failed validation</span></div>`
     + `<div class="cc-wc"><b style="color:var(--amber)">▲ ${fmtInt(wcSum.indicatorMoves ?? 0)}</b><span>Significant indicator moves</span></div>`;
 
-  const mktCards = indicators.slice(0, 6).map(m => {
+  const totalReports = events.reduce((a, e) => a + (Number(e.reportCount) || 0), 0);
+  const avgReports = events.length ? (totalReports / events.length) : 0;
+  const critShare = events.length ? Math.round((critEv / events.length) * 100) : 0;
+  const reportVals = events.slice(0, 18).map(e => Number(e.reportCount) || 0).filter((_, i) => i < 18);
+  const topSignals = [...events].sort((a, b) => (Number(b.reportCount) || 0) - (Number(a.reportCount) || 0)).slice(0, 4);
+  const domainCounts = {};
+  for (const s of allStories.slice(0, 60)) { const [pc] = catPill(s.category || s.sourceType, s.title); domainCounts[pc] = (domainCounts[pc] || 0) + 1; }
+  const domainMax = Math.max(1, ...Object.values(domainCounts));
+  const domainOrder = ['geo', 'cyber', 'econ', 'indo', 'dom', 'gen'].filter(k => domainCounts[k]);
+  const pulseRow = `<div class="cc-pulse-row" role="list" aria-label="Signal pulse">`
+    + `<div class="cc-pulse" role="listitem"><span class="k">Signals 24h</span><span class="v gp-nums">${fmtInt(events.length)}</span>${barsSVG(reportVals, { w: 110, h: 22, fill: '#4da3ff', id: 'signal volume' }) || '<span class="k">—</span>'}</div>`
+    + `<div class="cc-pulse" role="listitem"><span class="k">Critical share</span><span class="v gp-nums">${events.length ? `${critShare}%` : '—'}</span>${barsSVG(lastT, { w: 110, h: 22, fill: '#ff2d55', id: 'critical share' }) || '<span class="k">—</span>'}</div>`
+    + `<div class="cc-pulse" role="listitem"><span class="k">Avg reports / event</span><span class="v gp-nums">${events.length ? avgReports.toFixed(1) : '—'}</span>${sparklineSVG(reportVals, { w: 110, h: 22, stroke: '#ffc857', id: 'reports per event' }) || '<span class="k">—</span>'}</div>`
+    + `<div class="cc-pulse" role="listitem"><span class="k">Feed freshness</span><span class="v gp-nums">${staleCount === 0 ? 'Fresh' : `${fmtInt(staleCount)} stale`}</span><span class="k">${esc(upd)} · ${fmtInt(online)}/${fmtInt(total)} online</span></div>`
+    + `</div>`;
+  const signalRows = topSignals.map((e, i) => {
+    const t = e.title || 'Untitled event';
+    const cf = String(e.confidence || 'ungraded');
+    const sevCls = /high|confirmed/i.test(cf) ? 's-critical' : /moderate|medium|likely/i.test(cf) ? 's-warning' : 's-normal';
+    return `<div class="cc-signal-row"><span class="cc-rank gp-nums" aria-hidden="true">${String(i + 1).padStart(2, '0')}</span><span class="cs-strip-dot ${sevCls}" aria-hidden="true"></span><span style="min-width:0;flex:1"><span class="t">${esc(String(t).slice(0, 90))}</span><span class="m gp-nums">${fmtInt(e.reportCount)} reports · ${esc(cf)}${e.lastSeen ? ` · ${esc(formatRelativeTime(e.lastSeen))}` : ''}</span></span></div>`;
+  }).join('') || '<div class="meta">No signals in snapshot.</div>';
+  const domainRows = domainOrder.map(k => {
+    const n = domainCounts[k] || 0;
+    const label = { geo: 'GEOPOLITICAL', cyber: 'CYBER', econ: 'ECONOMIC', indo: 'INDO-PACIFIC', dom: 'DOMESTIC', gen: 'GENERAL' }[k] || k.toUpperCase();
+    return `<div class="cc-domain-row"><span class="cc-pill ${k === 'gen' ? 'gen' : k}">${esc(label)}</span><span class="cc-domain-bar" aria-hidden="true"><i style="width:${Math.round((n / domainMax) * 100)}%"></i></span><b class="gp-nums">${fmtInt(n)}</b></div>`;
+  }).join('') || '<div class="meta">No domain data.</div>';
+
+  const mktCards = indicators.slice(0, 8).map(m => {
     const name = m.name || m.symbol || 'Indicator';
     const price = typeof m.price === 'number' ? m.price.toLocaleString(undefined, { maximumFractionDigits: 2 }) : String(m.price ?? m.last ?? '—');
     const pct = Number(m.changePercent ?? m.changePct);
@@ -179,6 +208,7 @@ export function renderDashboard() {
     ${!navigator.onLine ? '<div class="gp-state" style="padding:8px;border:1px solid var(--red-dim);border-radius:8px;margin-bottom:8px"><div style="font-size:11px;color:var(--red)">You are offline. Cached snapshot shown.</div></div>' : ''}
     <div class="cc-kpi-strip" role="list" aria-label="Key indicators">${kpis}</div>
     ${opsStrip}
+    ${pulseRow}
     <div class="cc-grid">
       <div class="cc-panel"><h3>▦ Headline Intelligence <span class="cs-live-badge${allStories.length ? '' : ' is-empty'}">${allStories.length ? `LIVE · ${filtered.length}` : 'NO FEED'}</span> <a href="#section-breaking">View All →</a></h3>
         <input id="dashSearch" class="gp-map-search" type="search" aria-label="Filter headlines" placeholder="Filter headlines…" value="${esc(query)}" style="margin-bottom:8px">${headRows}</div>
@@ -200,6 +230,11 @@ export function renderDashboard() {
           <div style="font-size:11px;display:flex;justify-content:space-between"><span>🔴 Offline</span><b>${fmtInt(failed)}</b></div>
           ${issues.map(s => `<div style="font-size:10px;color:var(--muted-2);margin-top:4px">⚠ ${esc(s.name || 'Unnamed')} — ${esc(s.status || 'failed')}</div>`).join('')}
         </div></div></div>
+    </div>
+    <div class="cc-grid3">
+      <div class="cc-panel"><h3>⚠ Top Signals <a href="#section-alerts">View Alerts →</a></h3><div class="cc-signal-list">${signalRows}</div></div>
+      <div class="cc-panel"><h3>🌡 Tension Deep Dive <a href="#section-overview">View Overview →</a></h3><div class="cc-tension-big gp-nums">${esc(String(tensionTxt))}<span class="cc-tension-delta">${esc(tensionDeltaTxt || 'stable')}</span></div><div class="cc-tension-chart">${sparklineSVG(lastT, { w: 260, h: 52, stroke: '#ff2d55', id: 'tension deep' }) || '<span class="meta">No trend history</span>'}</div><div class="meta">${fmtInt(hiPri)} escalated · ${fmtInt(emerging)} emerging · ${fmtInt(critEv)} high-confidence</div></div>
+      <div class="cc-panel"><h3>◈ Domain Mix <a href="#section-breaking">View Feed →</a></h3><div class="cc-domain-list">${domainRows}</div><div class="meta">Last 60 headlines by category</div></div>
     </div>
     <div class="cc-legend" role="group" aria-label="Severity legend"><span><i style="background:var(--blue)"></i>Blue = Informational · Normal activity</span><span><i style="background:var(--amber)"></i>Amber = Watch · Elevated, monitor</span><span><i style="background:var(--red)"></i>Red = Critical · Immediate attention</span><span><i style="background:var(--green)"></i>Green = Healthy · Normal operation</span></div>`;
 
