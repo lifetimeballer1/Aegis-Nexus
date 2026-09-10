@@ -237,3 +237,25 @@ body::after {
 .cs-rail-count.is-src.is-hot{color:var(--neon-amber,#ffc857);border-color:rgba(255,200,87,.55);background:rgba(255,200,87,.1);box-shadow:0 0 8px rgba(255,200,87,.25)}
 @media(prefers-reduced-motion:no-preference){.cs-live-badge:not(.is-empty){animation:cs-live-pulse 2.4s infinite}@keyframes cs-live-pulse{0%,100%{box-shadow:var(--glow-red,0 0 10px rgba(255,45,85,.35))}50%{box-shadow:0 0 18px rgba(255,45,85,.55)}}.gp-alert.sev-critical{animation:cs-p1-edge 2.6s infinite}@keyframes cs-p1-edge{0%,100%{box-shadow:0 0 0 1px rgba(255,45,85,.25),0 0 18px rgba(255,45,85,.12)}50%{box-shadow:0 0 0 1px rgba(255,45,85,.45),0 0 26px rgba(255,45,85,.22)}}}
 @media(prefers-reduced-motion:reduce){.cs-rail-count.is-hot{box-shadow:none}}
+
+/* REF-FIDELITY 1024e — command-shell clock DOW + ticker dot rhythm.
+   Before: 420px query hid the red DOW signature and the UTC stayed,
+   ticker pills/dots static with no rhythm vs abyss refs.
+   After: DOW stays visible at 390px (UTC hides instead), ticker pills
+   tighten, dots get staggered 2.2s glow rhythm. Visual-only,
+   command-shell.js markup untouched, motion-guarded. */
+#commandTicker a{padding:2px 9px;font-size:10.5px;gap:6px}
+.tk-dot{width:6px;height:6px}
+@media(prefers-reduced-motion:no-preference){
+#commandTicker a:nth-child(3n) .tk-dot{animation:tk-dot-pulse 2.2s infinite}
+#commandTicker a:nth-child(3n+1) .tk-dot{animation:tk-dot-pulse 2.2s .7s infinite}
+#commandTicker a:nth-child(3n+2) .tk-dot{animation:tk-dot-pulse 2.2s 1.4s infinite}
+@keyframes tk-dot-pulse{0%,100%{opacity:1}50%{opacity:.5}}
+}
+@media(max-width:420px){
+.cs-dow{display:inline}
+#commandClock .cs-utc{display:none}
+#commandClock .cs-date{display:inline;font-size:10px}
+#commandTicker a{max-width:220px}
+}
+@media(prefers-reduced-motion:reduce){.tk-dot{animation:none}}
