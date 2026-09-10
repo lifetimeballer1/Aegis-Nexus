@@ -77,7 +77,7 @@ export function renderDashboard() {
   const el = document.getElementById('dashboardBody');
   if (!el) return;
   const state = getState();
-  const { snapshot, sourceHealth, mapData, whatChanged, status, feedMeta, historicalTrends } = state;
+  const { snapshot, sourceHealth, mapData, whatChanged, status, feedMeta, historicalTrends, brainStories } = state;
   if (!snapshot && !state.liveArticles && !mapData) {
     el.innerHTML = status === 'loading'
       ? '<div class="gp-state"><div class="gp-spinner"></div><div>Loading command overview…</div></div>'
