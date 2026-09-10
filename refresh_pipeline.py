@@ -5,8 +5,8 @@ import hashlib,json,subprocess,sys
 from datetime import datetime,timezone
 from pathlib import Path
 ROOT=Path(__file__).resolve().parent;DATA=ROOT/'data'
-REQUIRED_ARTIFACTS=('snapshot.json','history.json','sources.json','live_articles.json','canonical_intelligence.json','intelligence_graph.json','intelligence_brain.json','map_points.json','strategic_signals.json','source_health.json','live_status.json','what_changed.json','live_events.json','claims.json','source_evidence.json','event_intelligence.json','event_consistency.json','event_resolution.json','intelligence_assessment.json','historical_trends.json')
-MANIFEST_ARTIFACTS=('snapshot.json','history.json','sources.json','live_articles.json','canonical_intelligence.json','intelligence_graph.json','intelligence_brain.json','map_points.json','strategic_signals.json','source_health.json','live_status.json','what_changed.json','live_events.json','claims.json','source_evidence.json','event_intelligence.json','event_consistency.json','event_resolution.json','intelligence_assessment.json','historical_trends.json')
+REQUIRED_ARTIFACTS=('snapshot.json','history.json','sources.json','live_articles.json','canonical_intelligence.json','intelligence_graph.json','intelligence_brain.json','brain_stories.json','brain_gap_history.json','map_points.json','strategic_signals.json','source_health.json','live_status.json','what_changed.json','live_events.json','claims.json','source_evidence.json','event_intelligence.json','event_consistency.json','event_resolution.json','intelligence_assessment.json','historical_trends.json')
+MANIFEST_ARTIFACTS=('snapshot.json','history.json','sources.json','live_articles.json','canonical_intelligence.json','intelligence_graph.json','intelligence_brain.json','brain_stories.json','brain_gap_history.json','map_points.json','strategic_signals.json','source_health.json','live_status.json','what_changed.json','live_events.json','claims.json','source_evidence.json','event_intelligence.json','event_consistency.json','event_resolution.json','intelligence_assessment.json','historical_trends.json')
 def run(label,*cmd):
  print(f'\n=== {label} ===',flush=True);print('$',' '.join(cmd),flush=True);subprocess.run(cmd,cwd=ROOT,check=True);print(f'PASS: {label}',flush=True)
 def load(name):
@@ -135,6 +135,10 @@ def _run_pipeline(started):
  run('Validate U.S. and China action intelligence',sys.executable,'validate_action_intelligence.py')
  run('Strict Brain validation',sys.executable,'validate_intelligence_brain.py')
  brain=verify_json('intelligence_brain.json');verify_brain(brain)
+ run('Build Brain story graph and gap lifecycle',sys.executable,'build_brain_stories.py')
+ verify_json('brain_stories.json',min_list=('stories',1),max_age=1800)
+ run('Validate Brain story contracts',sys.executable,'validate_brain_stories.py')
+ run('Validate Brain gap history contracts',sys.executable,'validate_brain_gap_history.py')
  run('Build strategic signals',sys.executable,'build_strategic_signals.py')
  signals=verify_json('strategic_signals.json',fresh_required=False);verify_strategic_signals(signals)
  run('Build rolling tension trends from retained history',sys.executable,'build_historical_trends.py')

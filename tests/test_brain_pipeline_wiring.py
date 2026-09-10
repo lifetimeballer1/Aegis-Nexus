@@ -42,3 +42,11 @@ def test_required_and_manifest_cover_dormant_layers():
     for name in ('live_events.json', 'claims.json', 'source_evidence.json', 'event_intelligence.json',
                  'event_consistency.json', 'event_resolution.json', 'intelligence_assessment.json', 'historical_trends.json'):
         assert f"'{name}'" in PIPELINE, f'{name} missing from refresh pipeline artifact lists'
+
+
+def test_story_builder_runs_after_brain_validation():
+    assert idx("verify_brain(brain)") < idx("'build_brain_stories.py'") < idx("'build_strategic_signals.py'")
+    for name in ('brain_stories.json', 'brain_gap_history.json'):
+        assert f"'{name}'" in PIPELINE, f'{name} missing from refresh pipeline artifact lists'
+    assert idx("'validate_brain_stories.py'") > idx("'build_brain_stories.py'")
+    assert idx("'validate_brain_gap_history.py'") > idx("'build_brain_stories.py'")
