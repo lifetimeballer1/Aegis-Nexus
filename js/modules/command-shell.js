@@ -17,8 +17,10 @@ function tickClock() {
   const pad = (n) => String(n).padStart(2, '0');
   const local = `${pad(now.getHours())}:${pad(now.getMinutes())}:${pad(now.getSeconds())}`;
   const date = now.toLocaleDateString(undefined, { month: 'short', day: 'numeric' });
+  const dow = now.toLocaleDateString(undefined, { weekday: 'short' }).toUpperCase();
   const utc = `${pad(now.getUTCHours())}:${pad(now.getUTCMinutes())} UTC`;
   el.innerHTML = `<span class="cs-live-dot" aria-hidden="true"></span>`
+    + `<span class="cs-dow" aria-hidden="true">${esc(dow)}</span>`
     + `<span class="cs-time" aria-label="Local time ${local}">${local}</span>`
     + `<span class="cs-date">${esc(date)}</span>`
     + `<span class="cs-utc">${utc}</span>`;
@@ -59,12 +61,21 @@ function renderStrip() {
     return;
   }
   const { critical, warning, normal, ok } = stripCounts(state);
+  const pulse = critical > 0 ? ' is-hot' : '';
   el.innerHTML = `
-    <div class="cs-strip-seg s-critical" role="status"><span>●</span><span>Critical</span><span class="n">${critical}</span></div>
-    <div class="cs-strip-seg s-warning" role="status"><span>●</span><span>Warning</span><span class="n">${warning}</span></div>
-    <div class="cs-strip-seg s-normal" role="status"><span>●</span><span>Normal</span><span class="n">${normal}</span></div>
-    <div class="cs-strip-seg s-ok" role="status"><span>●</span><span>OK</span><span class="n">${ok}</span></div>`;
+    <div class="cs-strip-seg s-critical${pulse}" role="status" title="Critical: high-confidence events + critical conflicts"><span>●</span><span>Critical</span><span class="n">${critical}</span></div>
+    <div class="cs-strip-seg s-warning" role="status" title="Warning: moderate-confidence events + watch conflicts"><span>●</span><span>Warning</span><span class="n">${warning}</span></div>
+    <div class="cs-strip-seg s-normal" role="status" title="Normal: all other tracked signals"><span>●</span><span>Normal</span><span class="n">${normal}</span></div>
+    <div class="cs-strip-seg s-ok" role="status" title="OK: sources reporting without failure"><span>●</span><span>OK</span><span class="n">${ok}</span></div>`;
   el.setAttribute('aria-label', `System status: ${critical} critical, ${warning} warning, ${normal} normal, ${ok} sources ok`);
+}
+
+function tickDot(title) {
+  const c = `${title || ''}`.toLowerCase();
+  if (/cyber|ransom|malware|hack/.test(c)) return 'tk-cyber';
+  if (/market|oil|gold|trade|econ|financ/.test(c)) return 'tk-econ';
+  if (/war|conflict|gaza|ukraine|iran|russia|israel|geopol/.test(c)) return 'tk-geo';
+  return 'tk-gen';
 }
 
 function renderTicker() {
@@ -82,7 +93,7 @@ function renderTicker() {
     .slice(0, 12);
   el.innerHTML = `<span class="tk-label">News</span>` + items.map((s) => {
     const title = s.title || s.headline || 'Untitled';
-    return `<a href="#section-breaking" title="${esc(title)}">${esc(String(title).slice(0, 80))}</a>`;
+    return `<a href="#section-breaking" title="${esc(title)}"><span class="tk-dot ${tickDot(`${s.category || ''} ${title}`)}" aria-hidden="true"></span>${esc(String(title).slice(0, 80))}</a>`;
   }).join('');
 }
 
