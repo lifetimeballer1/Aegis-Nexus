@@ -12,9 +12,13 @@
 <style>
 :root{--panel:rgba(11,19,29,.92)}
 *{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(--text);font:13px Inter,system-ui,sans-serif}
-#graph{position:fixed;inset:0;width:100%;height:100%;overflow:hidden;background:radial-gradient(circle at 50% 45%,#0a2230 0,#020a11 45%,#000 100%)}
+#graph{position:fixed;inset:0;width:100%;height:100%;overflow:hidden;background:radial-gradient(ellipse at 50% 42%,rgba(23,94,110,.34) 0,rgba(8,28,40,.5) 34%,#010509 68%,#000 100%),linear-gradient(180deg,#01040a 0%,#041422 42%,#031420 58%,#000308 100%)}
+/* OPTION D Abyss Current: ultra-subtle concentric sonar rings over the scene + one slow ping. Static under reduced-motion. */
+#graph::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:repeating-radial-gradient(circle at 50% 42%,transparent 0 88px,rgba(72,200,235,.055) 88px 89px,transparent 89px 176px)}
+#graph::after{content:"";position:absolute;left:50%;top:42%;width:74vmin;height:74vmin;transform:translate(-50%,-50%);z-index:1;pointer-events:none;border:1px solid rgba(90,215,245,.16);border-radius:50%;animation:abyss-ping 7s ease-out infinite}
+@keyframes abyss-ping{0%{transform:translate(-50%,-50%) scale(.12);opacity:.9}70%{opacity:.25}100%{transform:translate(-50%,-50%) scale(1);opacity:0}}
 #labels{position:fixed;inset:0;z-index:8;pointer-events:none;overflow:hidden}
-.node-label{position:absolute;transform:translate(-50%,-50%);white-space:nowrap;color:#e8f5fb;text-shadow:0 2px 8px #000;font:700 10px system-ui,sans-serif;opacity:.88;border:1px solid transparent;border-radius:6px;padding:2px 4px;background:rgba(0,0,0,.28)}
+.node-label{position:absolute;transform:translate(-50%,-50%);white-space:nowrap;color:#dff4ff;text-shadow:0 1px 6px #000,0 0 10px rgba(70,200,240,.35);font:700 10px system-ui,sans-serif;opacity:.92;border:1px solid rgba(94,200,230,.35);border-radius:7px;padding:2px 5px;background:rgba(2,12,20,.62);box-shadow:0 2px 10px rgba(0,0,0,.75),0 0 10px rgba(64,190,220,.14);backdrop-filter:blur(2px)}
 .node-label .dot{display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:4px}
 .hud{position:fixed;left:14px;top:54px;max-height:calc(100vh - 170px);overflow:auto;width:min(720px,calc(100vw - 28px));z-index:30}.hud.collapsed{transform:translateY(-125%);opacity:0;pointer-events:none}
 .control-toggle{position:fixed;left:14px;top:14px;z-index:1200;border:1px solid var(--line);background:#0e1e2a;color:var(--text);border-radius:9px;padding:8px 10px;min-height:36px;font-size:9px;font-weight:850}.control-toggle.active{color:var(--sev-info);border-color:var(--sev-info)}
@@ -28,10 +32,10 @@
   .control-toggle{min-height:40px}
   .filter,.period{min-height:40px}
 }
-.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px 12px;backdrop-filter:blur(14px);box-shadow:0 12px 40px #000}.brand{color:var(--sev-info);font-weight:900;letter-spacing:.14em;font-size:11px}.sub{color:var(--muted);font-size:10px;margin-top:4px;line-height:1.4}.row{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
-input,button,select{border:1px solid var(--line);background:#0e1e2a;color:var(--text);border-radius:8px;padding:7px 9px;font-size:10px}select{width:100%;max-width:100%}input{flex:1;min-width:140px}button{cursor:pointer;font-weight:750}button:hover{border-color:var(--line-strong);background:#14273a}button:active{transform:translateY(1px)}button:disabled{opacity:.45;cursor:not-allowed;transform:none}button.active,.filter.active{color:var(--sev-info);border-color:var(--sev-info)}button.active:hover,.filter.active:hover{background:#14273a}#stats{margin-top:8px;color:var(--muted);font-size:10px}.legend{margin-top:6px;color:var(--muted);font-size:9px;line-height:1.35}
+.card{background:linear-gradient(160deg,rgba(7,24,36,.93),rgba(3,12,20,.95));border:1px solid rgba(64,190,220,.3);border-radius:12px;padding:10px 12px;backdrop-filter:blur(18px) saturate(1.25);box-shadow:0 12px 40px rgba(0,0,0,.7),inset 0 1px 0 rgba(120,220,245,.14)}.brand{color:#7fe3ff;font-weight:900;letter-spacing:.14em;font-size:11px;text-shadow:0 0 14px rgba(80,200,240,.5)}.sub{color:var(--muted);font-size:10px;margin-top:4px;line-height:1.4}.row{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+input,button,select{border:1px solid rgba(64,190,220,.25);background:#08202e;color:var(--text);border-radius:8px;padding:7px 9px;font-size:10px}select{width:100%;max-width:100%}input{flex:1;min-width:140px}button{cursor:pointer;font-weight:750}button:hover{border-color:rgba(90,215,245,.55);background:#0d2c3f}button:active{transform:translateY(1px)}button:disabled{opacity:.45;cursor:not-allowed;transform:none}button.active,.filter.active{color:#7fe3ff;border-color:rgba(90,215,245,.6)}button.active:hover,.filter.active:hover{background:#0d2c3f}#stats{margin-top:8px;color:var(--muted);font-size:10px}.legend{margin-top:6px;color:var(--muted);font-size:9px;line-height:1.35}
 .timeline{position:fixed;left:14px;bottom:14px;z-index:30;width:min(520px,calc(100vw - 28px))}.timeline .card{padding:8px 10px}.timeline b{color:var(--sev-info);font-size:9px;letter-spacing:.1em}
-#details{position:fixed;right:14px;top:14px;width:min(360px,calc(100vw - 28px));max-height:calc(100vh - 28px);overflow:auto;z-index:40;display:none;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px;backdrop-filter:blur(14px)}#details.open{display:block}#detail{padding-top:30px}.detail-close{position:absolute;right:10px;top:8px}
+#details{position:fixed;right:14px;top:14px;width:min(360px,calc(100vw - 28px));max-height:calc(100vh - 28px);overflow:auto;z-index:40;display:none;background:linear-gradient(165deg,rgba(7,24,36,.95),rgba(2,10,18,.96));border:1px solid rgba(64,190,220,.32);border-radius:12px;padding:12px;backdrop-filter:blur(18px) saturate(1.25);box-shadow:0 16px 48px rgba(0,0,0,.72),inset 0 1px 0 rgba(120,220,245,.14)}#details.open{display:block}#detail{padding-top:30px}.detail-close{position:absolute;right:10px;top:8px}
 #loading{position:fixed;inset:0;display:grid;place-items:center;background:rgba(0,0,0,.55);z-index:2000;color:var(--muted);font-size:12px}
 /* DESIGN 20-phase (19): Pages-safe paths — verified 2026-09-09.
    First-party refs are all relative (css/tokens.css, js/*, ./*.js); no
@@ -47,12 +51,14 @@ input,button,select{border:1px solid var(--line);background:#0e1e2a;color:var(--
    620px <=720px); toggling visibility must use [hidden]/display without
    removing the box. Inside-frame guarantees below: */
 #loading{content-visibility:auto}
-#loading::after{content:"";width:120px;height:3px;border-radius:2px;background:var(--line-strong);position:relative;overflow:hidden;display:block;margin:10px auto 0}
+#loading::after{content:"";width:170px;height:3px;border-radius:2px;background:linear-gradient(90deg,transparent,rgba(90,215,245,.9) 50%,transparent);background-size:60px 100%;background-repeat:no-repeat;animation:abyss-sweep 1.5s linear infinite;position:relative;display:block;margin:12px auto 0;box-shadow:0 0 12px rgba(70,200,240,.5)}
+@keyframes abyss-sweep{from{background-position:-60px 0}to{background-position:170px 0}}
 #graph canvas{display:block;width:100%;height:100%}
 #labels:empty{display:none}
 .hud,.timeline,#details{content-visibility:auto}
 @media(prefers-reduced-motion:reduce){
   #loading::after{animation:none}
+  #graph::after{animation:none;opacity:.25}
   .hud{transition:none}
 }
 @media(max-width:700px){.hud{left:8px;top:52px;width:calc(100vw - 16px)}.control-toggle{left:8px;top:8px}.timeline{left:8px;bottom:8px;width:calc(100vw - 16px)}#details{left:8px;right:8px;width:auto;top:auto;bottom:70px;max-height:45vh}}
