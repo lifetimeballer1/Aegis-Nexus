@@ -182,6 +182,9 @@ async function boot() {
   if (modules.map?.initMap) {
     try { modules.map.initMap(); } catch (err) { console.error('Map init failed', err); }
   }
+  // Progressive first render: paint module shells/skeletons immediately so
+  // cold visitors see structure while the 19-feed snapshot load runs.
+  try { renderAll(); } catch (err) { console.error('Progressive first render failed', err); }
   try { await refresh(true); }
   catch (err) { console.error('Global Pulse core data refresh failed', err); }
   renderAll();
