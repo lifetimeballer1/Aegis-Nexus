@@ -487,3 +487,67 @@
   .gp-workspace-grid .gp-section-body{padding:8px 10px}
   #mapSidePanel{margin:8px}
 }
+
+/* REF-DENSITY PASS (gui/ref-density-pass) — refs 1-3 command-center.
+   Near-black base + neon glow + tighter grids + headline priority bars
+   + mini-chart polish + 390px overflow lock. Visual-only; all figures
+   stay canonical (dashboard.js / command-shell.js untouched in meaning).
+   No new libs, no index.html changes (perf + repo gates stay green). */
+/* Density: tighter rhythm toward ref dashboards. */
+.gp-app-main{gap:14px}
+.cc-grid,.cc-grid2{gap:6px}
+.cc-kpi-strip{gap:6px}
+.cc-panel{gap:0}
+.cc-head{padding:7px 8px;margin-bottom:6px;gap:8px}
+/* Neon glow: panels, headers, KPI tiles get ref-style halo. */
+.gp-section{border-color:var(--line-strong);box-shadow:0 0 0 1px rgba(77,163,255,.08),0 4px 28px rgba(0,0,0,.55),0 0 22px rgba(77,163,255,.05)}
+.gp-section-header{background:linear-gradient(180deg,rgba(77,163,255,.06),var(--bg-elevated));box-shadow:inset 0 1px 0 rgba(77,163,255,.12)}
+.cc-panel{border-color:var(--line-strong);box-shadow:0 0 0 1px rgba(77,163,255,.07),0 4px 24px rgba(0,0,0,.5),0 0 18px rgba(77,163,255,.05)}
+.cc-kpi{border-color:var(--line-strong)}
+.cc-kpi.t-blue{box-shadow:0 0 0 1px rgba(77,163,255,.22),0 0 18px rgba(77,163,255,.14)}
+.cc-kpi.t-red{box-shadow:0 0 0 1px rgba(255,45,85,.25),0 0 18px rgba(255,45,85,.14)}
+.cc-kpi.t-amber{box-shadow:0 0 0 1px rgba(255,200,87,.22),0 0 18px rgba(255,200,87,.12)}
+.cc-kpi.t-green{box-shadow:0 0 0 1px rgba(72,223,131,.22),0 0 18px rgba(72,223,131,.12)}
+.cc-kpi svg{filter:drop-shadow(0 0 4px currentColor)}
+.cc-minibars{display:block;margin-top:4px;filter:drop-shadow(0 0 4px rgba(77,163,255,.5))}
+.cs-ops-tile{border-color:var(--line-strong);box-shadow:inset 0 0 14px rgba(77,163,255,.05)}
+/* Headline feed prominence: priority color bars keyed to existing
+   category pills (dashboard.js data-pill). Refs show red/amber/blue
+   rails on headline rows; glow on hover. */
+.cc-head{border-left:3px solid var(--line-strong);border-radius:0 8px 8px 0}
+.cc-head[data-pill="cyber"]{border-left-color:var(--purple);box-shadow:inset 0 0 12px rgba(167,139,250,.07)}
+.cc-head[data-pill="econ"]{border-left-color:var(--green);box-shadow:inset 0 0 12px rgba(72,223,131,.07)}
+.cc-head[data-pill="geo"]{border-left-color:var(--amber);box-shadow:inset 0 0 12px rgba(255,200,87,.08)}
+.cc-head[data-pill="indo"]{border-left-color:var(--blue);box-shadow:inset 0 0 12px rgba(98,160,255,.08)}
+.cc-head[data-pill="dom"]{border-left-color:var(--green);box-shadow:inset 0 0 12px rgba(72,223,131,.06)}
+.cc-head[data-pill="gen"]{border-left-color:var(--muted-2)}
+.cc-head:hover{border-color:var(--line-strong);box-shadow:0 0 14px rgba(77,163,255,.12)}
+.cc-head .t a:focus-visible{outline:2px solid var(--blue);outline-offset:2px;border-radius:4px}
+/* Table scroll containment (Priority Regions at 390px). */
+.cc-table-wrap{overflow-x:auto;scrollbar-width:thin;min-width:0;margin:0 -2px;padding:0 2px}
+.cc-table{min-width:340px;width:100%}
+/* 390px overflow lock: 1-col grids, compact type, safe ticker/nav. */
+@media(max-width:420px){
+  .gp-app-main{gap:12px}
+  .cc-kpi-strip{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
+  .cs-ops-strip{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .cc-mkt{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .cc-situation h2{font-size:12px}
+  .cc-thumb{display:none}
+  .cc-head{padding:6px 8px}
+  .cc-legend{font-size:9px;gap:8px}
+  .gp-section-body{padding:10px}
+  #commandShellBar{gap:8px}
+  #commandStrip{gap:6px}
+  .cs-strip-seg{padding:5px 8px;font-size:9px}
+  .cs-strip-seg .n{font-size:12px}
+}
+@media(prefers-reduced-motion:reduce){
+  .cc-kpi svg,.cc-minibars{filter:none}
+  .gp-section,.cc-panel,.cc-kpi{box-shadow:none}
+  .cc-head[data-pill]{box-shadow:none}
+}
+@media(forced-colors:active){
+  .gp-section,.cc-panel,.cc-kpi,.cc-head{box-shadow:none}
+  .cc-kpi svg,.cc-minibars{filter:none}
+}

@@ -2,7 +2,7 @@
  * All figures from canonical state only. No fabrication. */
 import { getState } from '../core/state.js';
 import { formatRelativeTime, escapeHtml } from '../core/utils.js';
-import { sparklineSVG } from '../core/sparkline.js';
+import { sparklineSVG, barsSVG } from '../core/sparkline.js';
 
 let query = '';
 
@@ -116,8 +116,9 @@ export function renderDashboard() {
   const tensionTxt = tension ?? '—';
   const tensionDeltaTxt = Number.isFinite(Number(tensionDelta)) && Number(tensionDelta) !== 0
     ? ` (${Number(tensionDelta) > 0 ? '+' : ''}${tensionDelta})` : '';
+  const tensionBars = barsSVG(lastT, { w: 120, h: 26, fill: '#4da3ff', id: 'tension history' });
   const opsStrip = `<div class="cs-ops-strip" role="list" aria-label="Operations at a glance">`
-    + `<div class="cs-ops-tile" role="listitem"><span class="k">Tension index</span><span class="v gp-nums">${esc(String(tensionTxt))}${esc(tensionDeltaTxt)}</span></div>`
+    + `<div class="cs-ops-tile" role="listitem"><span class="k">Tension index</span><span class="v gp-nums">${esc(String(tensionTxt))}${esc(tensionDeltaTxt)}</span>${tensionBars}</div>`
     + `<div class="cs-ops-tile" role="listitem"><span class="k">Sources online</span><span class="v gp-nums">${fmtInt(online)} / ${fmtInt(total)}</span></div>`
     + `<div class="cs-ops-tile" role="listitem"><span class="k">Stale feeds</span><span class="v gp-nums">${fmtInt(staleCount)}</span></div>`
     + `<div class="cs-ops-tile" role="listitem"><span class="k">Market signals</span><span class="v gp-nums">${fmtInt(indicators.length)}</span></div>`
@@ -133,7 +134,7 @@ export function renderDashboard() {
     const sum = (s.summary || s.summary_snippet || s.description || '').slice(0, 110);
     const initial = esc(String(title).trim().charAt(0).toUpperCase() || 'N');
     const url = s.url || s.link || '#';
-    return `<div class="cc-head"><div class="cc-thumb" aria-hidden="true">${initial}</div><div style="min-width:0;flex:1"><div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap"><span class="cc-pill ${pc}">${esc(pl)}</span><span class="cc-time">${esc(formatRelativeTime(itemTime(s)))}</span></div><div class="t"><a href="${esc(url)}" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none">${esc(title)}</a></div>${sum ? `<div class="s">${esc(sum)}</div>` : ''}</div></div>`;
+    return `<div class="cc-head" data-pill="${pc}"><div class="cc-thumb" aria-hidden="true">${initial}</div><div style="min-width:0;flex:1"><div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap"><span class="cc-pill ${pc}">${esc(pl)}</span><span class="cc-time">${esc(formatRelativeTime(itemTime(s)))}</span></div><div class="t"><a href="${esc(url)}" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none">${esc(title)}</a></div>${sum ? `<div class="s">${esc(sum)}</div>` : ''}</div></div>`;
   }).join('') || '<div class="gp-state"><div class="gp-state-title">No recent reports</div><div>Live article feed is empty.</div></div>';
   const wcEmptyNote = wcItems.length ? '' : '<!-- Nothing new this window — No changes recorded in the current window. -->';
   void sevFor;
@@ -187,7 +188,7 @@ export function renderDashboard() {
         <div id="dashMap" role="img" aria-label="Mini operational map" style="min-height:240px;height:260px;border:1px solid var(--line);border-radius:8px;background:#0a1826;z-index:1"></div>
         <div class="cc-legend" role="group" aria-label="Map legend"><span><i style="background:var(--red)"></i>Critical</span><span><i style="background:var(--amber)"></i>Elevated</span><span><i style="background:var(--blue)"></i>Notable</span><span><i style="background:#cbd5e1"></i>Monitoring</span></div></div>
       <div class="cc-panel"><h3>🎯 Priority Regions <a href="#section-map">View All →</a></h3>
-        <table class="cc-table" aria-label="Priority regions"><thead><tr><th>#</th><th>Region</th><th>Activity</th><th>Impact</th><th>Trend</th></tr></thead><tbody>${regionRows}</tbody></table>
+        <div class="cc-table-wrap"><table class="cc-table" aria-label="Priority regions"><thead><tr><th>#</th><th>Region</th><th>Activity</th><th>Impact</th><th>Trend</th></tr></thead><tbody>${regionRows}</tbody></table></div>
         <h3 style="margin-top:10px">🕐 What Changed <a href="#section-breaking">View All →</a></h3><div style="font-size:10px;color:var(--muted-2);margin-bottom:6px">Since last refresh (${esc(wc.window || 'current window')})</div>${wcBlock}</div>
     </div>
     <div class="cc-grid2">
