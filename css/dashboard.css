@@ -599,3 +599,8 @@
   .cc-pulse,.cc-signal-row{box-shadow:none}
   .cc-pulse .v,.cc-tension-big{text-shadow:none}
 }
+
+/* REF-FIDELITY 0941b — headline feed prominence toward refs. */
+.cc-panel .cc-head .t{font-size:12.5px;line-height:1.4}
+.cc-panel .cc-head .t a{transition:color var(--duration) var(--ease),text-shadow var(--duration) var(--ease)}
+@media(hover:hover){.cc-panel .cc-head:hover .t a{color:#fff;text-shadow:0 0 10px rgba(77,163,255,.45)}}

@@ -97,6 +97,36 @@ function renderTicker() {
   }).join('');
 }
 
+/** Rail count badges: canonical alert + source-failure counts on left nav.
+ * Idempotent; text-only updates so nav sync in app.js keeps working. */
+function renderRailCounts() {
+  try {
+    const state = getState();
+    const { critical, warning } = stripCounts(state);
+    const summary = state.sourceHealth?.summary || {};
+    const failed = Number(summary.failed ?? 0);
+    const hot = critical + warning;
+    const alertsLink = document.querySelector('.gp-rail a[data-nav="alerts"]');
+    if (alertsLink) {
+      let badge = alertsLink.querySelector('.cs-rail-count');
+      if (!badge) { badge = document.createElement('span'); badge.className = 'cs-rail-count'; alertsLink.appendChild(badge); }
+      badge.textContent = hot > 99 ? '99+' : String(hot);
+      badge.classList.toggle('is-hot', critical > 0);
+      badge.setAttribute('aria-label', `${hot} active critical or watch alerts`);
+      badge.style.display = hot > 0 ? '' : 'none';
+    }
+    const srcLink = document.querySelector('.gp-rail a[data-nav="status"]');
+    if (srcLink) {
+      let badge = srcLink.querySelector('.cs-rail-count');
+      if (!badge) { badge = document.createElement('span'); badge.className = 'cs-rail-count is-src'; srcLink.appendChild(badge); }
+      badge.textContent = failed > 99 ? '99+' : String(failed);
+      badge.classList.toggle('is-hot', failed > 0);
+      badge.setAttribute('aria-label', `${failed} sources failing`);
+      badge.style.display = failed > 0 ? '' : 'none';
+    }
+  } catch {}
+}
+
 /** Priority badges: P1 critical / P2 watch / P3 info / P4 healthy.
  * Decorates already-rendered .gp-alert heads; idempotent via data attr. */
 function decorateAlerts() {
@@ -123,6 +153,7 @@ export function renderCommandShell() {
   renderStrip();
   renderTicker();
   decorateAlerts();
+  renderRailCounts();
 }
 
 let clockTimer = null;
@@ -130,7 +161,7 @@ export function initCommandShell() {
   renderCommandShell();
   if (clockTimer) clearInterval(clockTimer);
   clockTimer = setInterval(tickClock, 1000);
-  subscribe(() => { renderStrip(); renderTicker(); decorateAlerts(); });
+  subscribe(() => { renderStrip(); renderTicker(); decorateAlerts(); renderRailCounts(); });
   // Alerts render through app.js renderAll; re-decorate after each cycle.
   const mo = new MutationObserver(() => decorateAlerts());
   const alertsBody = document.getElementById('alertsBody');

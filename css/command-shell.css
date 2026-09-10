@@ -230,3 +230,10 @@ body::after {
 @media(max-width:420px){.cs-dow{display:none}#commandTicker a{max-width:230px}}
 @media(prefers-reduced-motion:reduce){.cs-strip-seg.is-hot{animation:none}.tk-dot,.cs-dow{box-shadow:none;text-shadow:none}.gp-rail .gp-nav-item:hover{transform:none}}
 @media(forced-colors:active){.tk-dot,.cs-dow{box-shadow:none;text-shadow:none}}
+
+/* REF-FIDELITY 0941b — rail counts + headline prominence + P1 edge. */
+.cs-rail-count{margin-left:auto;flex:none;min-width:22px;text-align:center;font-family:var(--font-mono);font-size:10px;font-weight:800;padding:2px 6px;border-radius:999px;border:1px solid var(--line-strong);color:var(--muted);background:var(--panel)}
+.cs-rail-count.is-hot{color:#fff;border-color:var(--neon-red,#ff2d55);background:rgba(255,45,85,.16);box-shadow:0 0 10px rgba(255,45,85,.35)}
+.cs-rail-count.is-src.is-hot{color:var(--neon-amber,#ffc857);border-color:rgba(255,200,87,.55);background:rgba(255,200,87,.1);box-shadow:0 0 8px rgba(255,200,87,.25)}
+@media(prefers-reduced-motion:no-preference){.cs-live-badge:not(.is-empty){animation:cs-live-pulse 2.4s infinite}@keyframes cs-live-pulse{0%,100%{box-shadow:var(--glow-red,0 0 10px rgba(255,45,85,.35))}50%{box-shadow:0 0 18px rgba(255,45,85,.55)}}.gp-alert.sev-critical{animation:cs-p1-edge 2.6s infinite}@keyframes cs-p1-edge{0%,100%{box-shadow:0 0 0 1px rgba(255,45,85,.25),0 0 18px rgba(255,45,85,.12)}50%{box-shadow:0 0 0 1px rgba(255,45,85,.45),0 0 26px rgba(255,45,85,.22)}}}
+@media(prefers-reduced-motion:reduce){.cs-rail-count.is-hot{box-shadow:none}}
