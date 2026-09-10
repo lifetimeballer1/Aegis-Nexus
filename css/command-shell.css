@@ -103,6 +103,36 @@ body::before {
   #commandStrip { grid-template-columns: repeat(2, minmax(0, 1fr)); flex-basis: 100%; }
   #commandClock .cs-time { font-size: 17px; }
 }
+
+/* REF-DENSITY PASS (gui/ref-density-pass) — refs 1-3: clock banner + strip
+   read as one command bar; strip segments carry neon outer glow;
+   ticker pills clip safely at 390px. Visual-only. */
+#commandShellBar {
+  background: linear-gradient(180deg, #05080f, #020409);
+  box-shadow: inset 0 -1px 0 rgba(255, 45, 85, 0.12), 0 0 24px rgba(77, 163, 255, 0.06);
+}
+.cs-strip-seg.s-critical { box-shadow: inset 0 0 12px rgba(255, 45, 85, 0.08), 0 0 12px rgba(255, 45, 85, 0.12); }
+.cs-strip-seg.s-warning { box-shadow: inset 0 0 12px rgba(255, 200, 87, 0.06), 0 0 12px rgba(255, 200, 87, 0.1); }
+.cs-strip-seg.s-normal { box-shadow: inset 0 0 12px rgba(77, 163, 255, 0.07), 0 0 12px rgba(77, 163, 255, 0.1); }
+.cs-strip-seg.s-ok { box-shadow: inset 0 0 12px rgba(72, 223, 131, 0.06), 0 0 12px rgba(72, 223, 131, 0.08); }
+#commandTicker { max-width: 100%; }
+#commandTicker a { border-color: var(--line-strong); }
+#commandTicker a:hover { box-shadow: 0 0 10px rgba(77, 163, 255, 0.3); }
+@media (max-width: 420px) {
+  #commandShellBar { padding: 6px 10px; gap: 8px; }
+  #commandClock .cs-time { font-size: 16px; }
+  #commandClock .cs-date { display: none; }
+  #commandTicker { padding: 6px 10px; }
+  #commandTicker a { max-width: 240px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cs-strip-seg { box-shadow: none; }
+  #commandTicker a:hover { box-shadow: none; }
+}
+@media (forced-colors: active) {
+  #commandShellBar { box-shadow: none; }
+  .cs-strip-seg { box-shadow: none; }
+}
 @media (forced-colors: active) {
   #commandClock .cs-time { text-shadow: none; }
   .cs-strip-seg { box-shadow: none; }

@@ -17,6 +17,12 @@ const EDGE_COLORS={conflict:'#ff5d6e',military:'#ff7a45',political:'#b78cff',eco
    .abyss-crosshair[data-abyss="crosshair"], .node-label[data-abyss="label"].
    Legend color semantics unchanged. No new deps/hosts. */
 const ABYSS={maxLabels:28,farLabels:10,fitDist:0,haloScale:1.9,haloOpacity:.22,dimOpacity:.22};
+/* Mobile viewport helpers (2026-09-10 centering+perf fix): narrow viewports
+   (<=700px, e.g. 390px phones) start centered, run a shorter force
+   simulation, and cap labels/edges/pixel-ratio to stay smooth. */
+const isNarrowViewport=()=>{try{if(typeof window!=='undefined'&&Number(window.innerWidth)>0)return Number(window.innerWidth)<=700;if(typeof matchMedia==='function')return matchMedia('(max-width: 700px)').matches}catch{}return false};
+const MOBILE_LABEL_CAP=10,MOBILE_FAR_CAP=6,MOBILE_EDGE_CAP=220;
+function applyViewportCaps(){try{if(isNarrowViewport()){ABYSS.maxLabels=MOBILE_LABEL_CAP;ABYSS.farLabels=MOBILE_FAR_CAP}else{ABYSS.maxLabels=28;ABYSS.farLabels=10}}catch{}}
 const reducedMotion=()=>typeof matchMedia==='function'&&matchMedia('(prefers-reduced-motion: reduce)').matches;
 const isMajor=n=>/\b(united states|\bu\.s\.|\busa\b|china|\bprc\b)/i.test(String(n&&n.label||'')+' '+String(n&&n.id||''));
 function abyssSize(n,sel,isNb){const m=Number(n&&n.mentions)||0;const base=Math.max(2.5,Math.min(8,2.5+Math.sqrt(Math.max(1,m))*.9));const maj=isMajor(n)?1.35:1;if(!sel)return base*maj;if(String(n.id)===String(sel.id))return Math.min(11,base*1.15)*maj;if(isNb)return Math.max(2,Math.min(7,2+Math.sqrt(Math.max(1,m))*.8))*maj;return Math.max(1.5,Math.min(4,base*.62))}
@@ -67,6 +73,15 @@ function render(){
     links=rawLinks.filter(e=>!isWeak(e)||!strong.has(e.source)||!strong.has(e.target));
     weakHidden=rawLinks.length-links.length;
   }
+  /* Mobile perf cap: keep the strongest edges so the 390px view stays
+     readable and the force layout settles fast. Desktop keeps all edges. */
+  let mobileEdgeTrim=0;
+  if(isNarrowViewport()&&links.length>MOBILE_EDGE_CAP){
+    const scored=links.map(e=>({e,s:Math.max(Number(e.weight)||1,Math.min(6,Array.isArray(e.evidence)?e.evidence.length:0))}));
+    scored.sort((a,b)=>b.s-a.s);
+    links=scored.slice(0,MOBILE_EDGE_CAP).map(x=>x.e);
+    mobileEdgeTrim=rawLinks.length-links.length-weakHidden;
+  }
   const keep=new Set(view.focus.map(n=>String(n.id)));
   links.forEach(e=>{keep.add(e.source);keep.add(e.target)});
   active={nodes:view.nodes.filter(n=>keep.has(String(n.id))),links};
@@ -78,10 +93,12 @@ function render(){
   window.__gpGraph.graphData(active);
   styles();
   clearTimeout(fitTimer);
-  fitTimer=setTimeout(()=>{if(active.nodes.length){try{window.__gpGraph.zoomToFit(700,90)}catch{}}setTimeout(()=>{try{const p=window.__gpGraph.cameraPosition();ABYSS.fitDist=Math.sqrt(Math.pow(Number(p.x)||0,2)+Math.pow(Number(p.y)||0,2)+Math.pow(Number(p.z)||0,2))||0}catch{}syncLabels()},900);syncLabels()},450);
+  /* Centered fit: narrow viewports use a small padding so zoomToFit keeps
+     the main node in-frame instead of pushing it off-center to the right. */
+  fitTimer=setTimeout(()=>{if(active.nodes.length){try{window.__gpGraph.zoomToFit(isNarrowViewport()?400:700,isNarrowViewport()?20:90)}catch{}try{const ctl=window.__gpGraph.controls?.();if(ctl&&ctl.target&&typeof ctl.target.set==='function'){ctl.target.set(0,0,0);if(typeof ctl.update==='function')ctl.update()}}catch{}}setTimeout(()=>{try{const p=window.__gpGraph.cameraPosition();ABYSS.fitDist=Math.sqrt(Math.pow(Number(p.x)||0,2)+Math.pow(Number(p.y)||0,2)+Math.pow(Number(p.z)||0,2))||0}catch{}syncLabels()},900);syncLabels()},450);
   const range=period==='all'?'all available dates':`last ${period} hours`;
   pulseThreshold=view.nodes.reduce((m,n)=>Math.max(m,Number(n.mentions)||0),0)*.55;
-  $('stats').innerHTML='<b>'+view.focus.length+'</b> matching entities · <b>'+active.nodes.length+'</b> visible · <b>'+active.links.length+'</b> evidence-backed connections'+(showWeak?'':' · <b>'+weakHidden+'</b> weak links hidden')+' · '+range+' · updated '+esc(base.updatedAt||'unknown');
+  $('stats').innerHTML='<b>'+view.focus.length+'</b> matching entities · <b>'+active.nodes.length+'</b> visible · <b>'+active.links.length+'</b> evidence-backed connections'+(showWeak?'':' · <b>'+weakHidden+'</b> weak links hidden')+(mobileEdgeTrim>0?' · <b>'+mobileEdgeTrim+'</b> edges trimmed (mobile)':'')+' · '+range+' · updated '+esc(base.updatedAt||'unknown');
   $('trend').textContent=period==='all'?'All available source dates':'Only source records published in the last '+period+' hours; undated records excluded.';
   $('node-select').innerHTML='<option value="">'+(view.focus.length?'Select a matching entity…':'No matching entities')+'</option>'+view.focus.map(n=>'<option value="'+esc(n.id)+'">'+esc(n.label)+'</option>').join('');
   $('node-select').disabled=!view.focus.length;
@@ -90,10 +107,19 @@ function render(){
   document.querySelectorAll('.period').forEach(b=>{const on=b.dataset.period===period;b.classList.toggle('active',on);b.setAttribute('aria-pressed',String(on))});
 }
 if(typeof ForceGraph3D!=='function')throw Error('3D graph library failed to load');
+applyViewportCaps();
 const flowCount=()=>(relationships&&!paused&&!reducedMotion())?2:0;
-const graphBuilder=new ForceGraph3D($('graph'),{controlType:'orbit',rendererConfig:{antialias:true,alpha:true,powerPreference:'high-performance'}}).backgroundColor('#020a12').showNavInfo(false).nodeId('id').nodeRelSize(6).nodeVal(n=>abyssSize(n,null,false)).nodeLabel(n=>'<b>'+esc(n.label)+'</b><br>'+esc(n.kind)+' · '+n.mentions+' mentions').nodeColor(n=>NODE_COLORS[n.kind]||NODE_COLORS.actor).linkColor(edgeColor).linkOpacity(e=>linkBaseOpacity(e)).linkWidth(abyssLinkWidth).linkDirectionalArrowLength(5.5).linkDirectionalArrowRelPos(.88).linkDirectionalArrowColor(edgeColor).linkDirectionalParticles(flowCount).linkDirectionalParticleWidth(3.2).linkDirectionalParticleSpeed(.008).enableNodeDrag(true).onNodeClick(show).d3VelocityDecay(.55).d3AlphaDecay(.06).warmupTicks(150).cooldownTicks(260);window.__gpGraph=graphBuilder;
-window.addEventListener('resize',()=>{graphBuilder.width(window.innerWidth).height(window.innerHeight);syncLabels()});
-try{graphBuilder.d3Force('charge').strength(-1150).distanceMax(2200);graphBuilder.d3Force('link').distance(e=>Math.max(180,320-(Math.max(1,Number(e.weight)||1))*15))}catch{}
+const narrowBoot=isNarrowViewport();
+const graphBuilder=new ForceGraph3D($('graph'),{controlType:'orbit',rendererConfig:{antialias:!narrowBoot,alpha:true,powerPreference:narrowBoot?'low-power':'high-performance'}}).backgroundColor('#020a12').showNavInfo(false).nodeId('id').nodeRelSize(6).width(window.innerWidth).height(window.innerHeight).nodeVal(n=>abyssSize(n,null,false)).nodeLabel(n=>'<b>'+esc(n.label)+'</b><br>'+esc(n.kind)+' · '+n.mentions+' mentions').nodeColor(n=>NODE_COLORS[n.kind]||NODE_COLORS.actor).linkColor(edgeColor).linkOpacity(e=>linkBaseOpacity(e)).linkWidth(abyssLinkWidth).linkDirectionalArrowLength(5.5).linkDirectionalArrowRelPos(.88).linkDirectionalArrowColor(edgeColor).linkDirectionalParticles(flowCount).linkDirectionalParticleWidth(3.2).linkDirectionalParticleSpeed(.008).enableNodeDrag(true).onNodeClick(show).d3VelocityDecay(narrowBoot?.62:.55).d3AlphaDecay(narrowBoot?.09:.06).warmupTicks(narrowBoot?60:150).cooldownTicks(narrowBoot?120:260);window.__gpGraph=graphBuilder;
+/* Centering fix: pin the orbit target to the graph origin and open the camera
+   centered on narrow viewports so the main node starts in-frame at 390px. */
+try{graphBuilder.cameraPosition({x:0,y:0,z:narrowBoot?1100:800})}catch{}
+try{const ctl=graphBuilder.controls?.();if(ctl&&ctl.target&&typeof ctl.target.set==='function'){ctl.target.set(0,0,0);if(typeof ctl.update==='function')ctl.update()}}catch{}
+try{const rn=graphBuilder.renderer?.();if(rn&&typeof rn.setPixelRatio==='function')rn.setPixelRatio(Math.min(Number(window.devicePixelRatio)||1,narrowBoot?1.5:2))}catch{}
+try{if(typeof graphBuilder.cooldownTime==='function')graphBuilder.cooldownTime(narrowBoot?8000:15000)}catch{}
+let resizeTimer=0;
+window.addEventListener('resize',()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(()=>{try{graphBuilder.width(window.innerWidth).height(window.innerHeight)}catch{}applyViewportCaps();try{if(!selected){const ctl=graphBuilder.controls?.();if(ctl&&ctl.target&&typeof ctl.target.set==='function'){ctl.target.set(0,0,0);if(typeof ctl.update==='function')ctl.update()}}}catch{}syncLabels()},120)});
+try{graphBuilder.d3Force('charge').strength(narrowBoot?-650:-1150).distanceMax(narrowBoot?1400:2200);graphBuilder.d3Force('link').distance(e=>Math.max(narrowBoot?120:180,(narrowBoot?260:320)-(Math.max(1,Number(e.weight)||1))*15));const ctr=graphBuilder.d3Force('center');if(ctr&&typeof ctr.strength==='function')ctr.strength(1)}catch{}
 const details=$('details'),closeBtn=$('close');details.addEventListener('pointerdown',e=>e.stopPropagation(),true);details.addEventListener('click',e=>e.stopPropagation());details.addEventListener('touchstart',e=>e.stopPropagation(),{capture:true,passive:true});closeBtn.addEventListener('click',e=>{e.preventDefault();e.stopPropagation();close();$('node-select').value='';});details.addEventListener('click',e=>{const a=e.target.closest?.('.source-resolve');if(!a)return;e.preventDefault();e.stopPropagation();const t=normTitle(a.dataset.title),s=normTitle(a.dataset.source),u=liveBySourceTitle.get(s+'|'+t)||liveByTitle.get(t)||'';if(u)window.open(u,'_blank','noopener,noreferrer');else{a.textContent='SOURCE URL NOT AVAILABLE';a.disabled=true}},{capture:true});$('clear').onclick=()=>{$('search').value='';query='';render()};$('refresh').onclick=()=>load().then(x=>{base=x;render()}).catch(showLoadingError);$('search').oninput=e=>{query=e.target.value;render()};document.querySelectorAll('.filter').forEach(b=>b.onclick=()=>{filter=b.dataset.kind||'all';document.querySelectorAll('.filter').forEach(x=>{x.classList.toggle('active',x===b);x.setAttribute('aria-pressed',String(x===b))});render()});$('reset').onclick=()=>{filter='all';period='all';query='';$('search').value='';document.querySelectorAll('.filter').forEach(b=>{b.classList.toggle('active',b.dataset.kind==='all');b.setAttribute('aria-pressed',String(b.dataset.kind==='all'))});render()};$('orbit').onclick=function(){orbit=!orbit;this.classList.toggle('active',orbit);this.setAttribute('aria-pressed',String(orbit));cancelAnimationFrame(orbitFrame);if(orbit){let a=0;const go=()=>{if(!orbit||paused)return;window.__gpGraph.cameraPosition({x:720*Math.sin(a),y:150,z:720*Math.cos(a)},undefined,0);a+=.0025;orbitFrame=requestAnimationFrame(go)};go()}};$('flow').onclick=function(){relationships=!relationships;this.classList.toggle('active',relationships);this.setAttribute('aria-pressed',String(relationships));window.__gpGraph.linkVisibility(relationships);window.__gpGraph.linkDirectionalParticles(flowCount)};
 $('weak-toggle').onclick=function(){showWeak=!showWeak;this.classList.toggle('active',showWeak);this.setAttribute('aria-pressed',String(showWeak));render()};document.querySelectorAll('.filter,.period').forEach(x=>x.setAttribute('aria-pressed',String(x.classList.contains('active'))));document.querySelectorAll('.period').forEach(b=>b.onclick=()=>{period=b.dataset.period||'all';document.querySelectorAll('.period').forEach(x=>{x.classList.toggle('active',x===b);x.setAttribute('aria-pressed',String(x===b))});render()});$('node-select').onchange=e=>show(active.nodes.find(n=>n.id===e.target.value));document.addEventListener('keydown',e=>{if(e.key==='Escape'&&dialog){close();$('node-select').focus()}});render();startLabelLoop();startAbyssPulse();ensureCrosshair();$('details').style.pointerEvents='none';$('details').setAttribute('aria-hidden','true');hideLoading();setInterval(()=>{if(!document.hidden&&!dialog)load().then(x=>{if(x.updatedAt!==base.updatedAt){base=x;render()}}).catch(e=>console.warn('[Intelligence Web refresh]',e))},60000)}
 $('stats').textContent='Loading evidence graph…';load().then(main).catch(showLoadingError);
