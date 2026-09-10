@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#04080d">
+<meta name="description" content="Aegis Nexus Gods-Eye Lite — optional 2D sensor-look airspace + seismic overlay. Lazy-loaded only on navigation.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; script-src 'self' 'unsafe-inline' https://unpkg.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https:; font-src 'self' data: https:; connect-src 'self' https:; media-src 'self'; worker-src 'self' blob:">
+<title>Gods-Eye Lite — Aegis Nexus</title>
+<style>
+:root{--bg:#04080d;--panel:#0a121b;--line:#16283a;--txt:#cfe3f5;--dim:#6f8ba3;--amber:#ffb454;--cyan:#57e6ff;--red:#ff5d5d;--grn:#6dffa8}
+*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--txt);font:14px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+header{display:flex;gap:12px;align-items:center;padding:12px 16px;border-bottom:1px solid var(--line);background:rgba(6,12,19,.9);position:sticky;top:0;z-index:5;flex-wrap:wrap}
+header h1{font-size:15px;margin:0;letter-spacing:.08em;text-transform:uppercase}
+header h1 small{color:var(--dim);font-weight:400;letter-spacing:0}
+header .sp{flex:1}
+a{color:var(--cyan)}
+.btn{background:#0e1a27;border:1px solid var(--line);color:var(--txt);border-radius:8px;padding:7px 12px;cursor:pointer;font-size:13px;text-decoration:none;display:inline-block}
+.btn:hover{border-color:var(--cyan)}
+.btn.primary{border-color:var(--cyan);color:#03202a;background:var(--cyan);font-weight:600}
+.btn[disabled]{opacity:.45;cursor:default}
+main{display:grid;grid-template-columns:1fr 300px;gap:0;min-height:calc(100vh - 57px)}
+#stage{position:relative;min-height:60vh;background:radial-gradient(1200px 600px at 50% 30%,#0a1624 0%,#04080d 70%)}
+#eye{display:block;width:100%;height:calc(100vh - 57px);min-height:480px;cursor:crosshair}
+#hud{position:absolute;top:10px;left:12px;font-size:12px;color:var(--dim);background:rgba(4,8,13,.72);border:1px solid var(--line);border-radius:8px;padding:6px 10px;pointer-events:none}
+#hud b{color:var(--txt)}
+aside{border-left:1px solid var(--line);background:var(--panel);padding:14px;overflow:auto;max-height:calc(100vh - 57px)}
+aside h2{font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:var(--dim);margin:14px 0 6px}
+aside h2:first-child{margin-top:0}
+.kv{font-size:12.5px}.kv div{margin:3px 0}
+.pill{display:inline-block;font-size:11px;border:1px solid var(--line);border-radius:99px;padding:1px 8px;margin:1px 4px 1px 0;color:var(--dim)}
+.pill.live{color:var(--grn);border-color:#1e4d33}.pill.demo{color:var(--amber);border-color:#5a4416}.pill.err{color:var(--red);border-color:#5a2020}
+#trailInfo,#detail{font-size:12.5px;white-space:pre-wrap}
+.legend{font-size:12px;color:var(--dim)}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px;vertical-align:baseline}
+footer{padding:10px 16px;color:var(--dim);font-size:12px;border-top:1px solid var(--line)}
+@media(max-width:900px){main{grid-template-columns:1fr}#eye{height:62vh}aside{border-left:0;border-top:1px solid var(--line);max-height:none}}
+</style>
+</head>
+<body>
+<header>
+<h1>◉ Gods-Eye Lite <small>optional sensor view · 2D default</small></h1>
+<span class="sp"></span>
+<a class="btn" href="index.html#section-map">← Back to map</a>
+<button class="btn primary" id="btn3d" type="button">Enable 3D</button>
+</header>
+<main>
+<div id="stage">
+<canvas id="eye" width="1200" height="620" aria-label="Sensor-look world plot: earthquakes and flights"></canvas>
+<div id="hud">…</div>
+</div>
+<aside>
+<h2>Feeds</h2>
+<div class="kv" id="feeds"><div>starting…</div></div>
+<h2>Track</h2>
+<div id="detail">Click a marker to lock + track.</div>
+<h2>Trails</h2>
+<div id="trailInfo">Trails keep last 12 positions per flight.</div>
+<h2>Key</h2>
+<div class="legend"><span class="dot" style="background:#ffb454"></span>quake (size ∝ mag)<br><span class="dot" style="background:#57e6ff"></span>flight live<br><span class="dot" style="background:#8a97a5"></span>flight DEMO<br><span class="dot" style="background:#6dffa8"></span>tracked + trail</div>
+<h2>3D</h2>
+<div class="kv" id="mode3d">2D canvas mode. “Enable 3D” lazy-loads three.js from CDN only on click; failure or weak perf stays on 2D.</div>
+</aside>
+</main>
+<footer>Keyless free feeds: USGS all-day quakes + OpenSky states (short timeout, DEMO fallback). No trackers. Heavy 3D is opt-in only.</footer>
+<script src="js/gods-eye.js" defer></script>
+</body>
+</html>
