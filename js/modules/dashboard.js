@@ -74,7 +74,7 @@ export function renderDashboard() {
   const { snapshot, sourceHealth, mapData, whatChanged, status, feedMeta, historicalTrends } = state;
   if (!snapshot && !state.liveArticles && !mapData) {
     el.innerHTML = status === 'loading'
-      ? '<div class="gp-state"><div class="gp-spinner"></div><div>Loading command overview…</div></div>'
+      ? '<div class="cc-shell" role="status" aria-live="polite" aria-label="Loading command overview"><div class="cc-shell-kpis" aria-hidden="true"><div class="cc-shell-kpi"></div><div class="cc-shell-kpi"></div><div class="cc-shell-kpi"></div><div class="cc-shell-kpi"></div><div class="cc-shell-kpi"></div></div><div class="cc-shell-grid" aria-hidden="true"><div class="cc-shell-panel"><div class="cc-shell-line"></div><div class="cc-shell-line short"></div><div class="cc-shell-line"></div></div><div class="cc-shell-panel"><div class="cc-shell-line"></div><div class="cc-shell-line short"></div></div><div class="cc-shell-panel"><div class="cc-shell-line"></div><div class="cc-shell-line"></div><div class="cc-shell-line short"></div></div></div><div class="gp-state"><div class="gp-spinner" aria-hidden="true"></div><div>Loading command overview…</div></div></div>'
       : '<div class="gp-state"><div class="gp-state-title">Command overview unavailable</div><div>Core data failed to load.</div></div>';
     return;
   }

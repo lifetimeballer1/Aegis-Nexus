@@ -126,7 +126,7 @@ export function renderTimeline() {
 
   el.innerHTML = `<div class="gp-filter-row" role="group" aria-label="Timeline period">${chips}`
     + `<span class="meta" style="align-self:center;font-size:10px;color:var(--muted-2)">Showing ${shown.length} of ${points.length} signals${customActive && !customInvalid ? ' · custom range' : ''}</span></div>${customRow}`
-    + (rows ? `<ol class="gp-timeline">${rows}</ol>${pane}` : '<div class="gp-state"><div class="gp-state-title">No signals in this period</div><div>No dated observations fall inside the selected window.</div></div>');
+    + (rows ? `<div class="gp-timeline-rail" role="region" aria-label="Event timeline" tabindex="0"><ol class="gp-timeline">${rows}</ol></div>${pane}` : '<div class="gp-state"><div class="gp-state-title">No signals in this period</div><div>No dated observations fall inside the selected window.</div></div>');
 
   el.querySelectorAll('[data-tl-period]').forEach(btn => btn.addEventListener('click', () => {
     const v = btn.dataset.tlPeriod;

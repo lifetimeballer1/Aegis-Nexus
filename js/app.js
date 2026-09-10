@@ -2,6 +2,7 @@
 import { loadCoreData } from './core/fetch.js';
 import { subscribe } from './core/state.js';
 import { CONFIG } from './core/config.js';
+import { showToast } from './core/toast.js';
 
 const modules = {};
 const targets = {
@@ -77,7 +78,7 @@ function resetRefreshTimer() {
       // Force network revalidation: refresh(false) would serve the 30-min
       // localStorage fast-path in fetch.js and never hit the network,
       // so scheduled server refreshes (every ~10 min) stayed invisible.
-      refresh(true).then(renderAll).catch(err => console.error('Refresh failed', err));
+      refresh(true).then(renderAll).catch(err => { console.error('Refresh failed', err); try { showToast('Refresh failed — showing cached data.', 'warning'); } catch {} });
     }
   }, prefs.intervalMin * 60 * 1000);
 }
@@ -189,11 +190,12 @@ async function boot() {
   // cold visitors see structure while the 19-feed snapshot load runs.
   try { renderAll(); } catch (err) { console.error('Progressive first render failed', err); }
   try { await refresh(true); }
-  catch (err) { console.error('Global Pulse core data refresh failed', err); }
+  catch (err) { console.error('Global Pulse core data refresh failed', err); try { showToast('Initial load failed — partial cached data shown.', 'error'); } catch {} }
   renderAll();
   subscribe(() => renderAll());
   resetRefreshTimer();
-  window.addEventListener('online', () => refresh(true).then(renderAll).catch(err => console.error('Online refresh failed', err)));
+  window.addEventListener('online', () => refresh(true).then(() => { renderAll(); try { showToast('Back online — data refreshed.', 'success'); } catch {} }).catch(err => { console.error('Online refresh failed', err); try { showToast('Reconnected but refresh failed — cached data shown.', 'warning'); } catch {} }));
+  window.addEventListener('offline', () => { try { showToast('You are offline. Cached snapshot shown.', 'warning'); } catch {} });
   setTimeout(() => {
     try { modules.map?.initMap?.(); modules.map?.renderMap?.(); }
     catch (err) { console.error('Map retry failed', err); }
