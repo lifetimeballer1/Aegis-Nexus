@@ -608,3 +608,16 @@
 .cc-mkt{grid-template-columns:repeat(4,minmax(0,1fr))}
 @media(max-width:1200px){.cc-mkt{grid-template-columns:repeat(4,minmax(0,1fr))}}
 @media(max-width:720px){.cc-mkt{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* REF-FIDELITY 1024a — ranked headlines density vs intel-option-d.png.
+   Before: 52px thumbs + 12.5px/1.4 titles + 6px stack gap read loose vs ref.
+   After: 40px thumbs, 12px/1.35 titles, 5px stack gap, tighter pill/time row.
+   Visual-only; dashboard.js markup untouched. */
+.cc-head{padding:6px 8px;margin-bottom:5px;gap:7px}
+.cc-thumb{flex-basis:40px;width:40px;height:40px;font-size:15px;border-radius:7px}
+.cc-panel .cc-head .t{font-size:12px;line-height:1.35}
+.cc-head .s{font-size:10.5px;line-height:1.4;margin-top:1px}
+.cc-head .cc-pill{font-size:8.5px;padding:1px 6px}
+.cc-head .cc-time{font-size:9.5px}
+.cc-rank{font-size:10px;min-width:18px}
+@media(max-width:420px){.cc-head{gap:6px}.cc-thumb{flex-basis:36px;width:36px;height:36px;font-size:14px}}
