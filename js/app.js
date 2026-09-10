@@ -111,6 +111,7 @@ function setupNav() {
 
 async function loadModules() {
   const imports = {
+    commandShell: './modules/command-shell.js',
     dashboard: './modules/dashboard.js',
     alerts: './modules/alerts.js',
     timeline: './modules/timeline.js',
@@ -149,6 +150,7 @@ function safeRender(name, fnName = `render${name[0].toUpperCase()}${name.slice(1
 }
 
 function renderAll() {
+  safeRender('commandShell', 'renderCommandShell');
   safeRender('dashboard', 'renderDashboard');
   safeRender('alerts', 'renderAlerts');
   safeRender('timeline', 'renderTimeline');
@@ -179,6 +181,8 @@ async function refresh(force = false) {
 }
 
 async function boot() {
+  const { initCommandShell } = await import('./modules/command-shell.js').catch(() => ({}));
+  try { initCommandShell?.(); } catch (err) { console.error('Command shell init failed', err); }
   setupNav();
   setupSearchShortcut();
   window.addEventListener('gp:prefs-changed', resetRefreshTimer);
