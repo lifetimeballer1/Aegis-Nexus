@@ -166,7 +166,8 @@ Key layers include:
 - `global_pulse_brain_ui.js` — Brain presentation
 - `global_pulse_performance.js` — deferred/mobile performance behavior
 - `global_pulse_qa.js` — browser QA hardening
-- `intelligence_brain_web.js` — canonical 3D Intelligence Web renderer
+- `intelligence_web_v2.js` — live 3D Intelligence Web renderer (loaded by `intelligence-web.html`; data from `data/intelligence_graph.json` with `data/intelligence_brain.json` layered in by the parent explorer)
+- `intelligence_brain_web.js` — retired renderer kept only for historical reference; not loaded by any page
 - `intelligence_web_controls_fix.js` — Intelligence Web controls behavior
 
 The `global_pulse_*` filenames are retained as internal compatibility identifiers; they are not the application brand. The public application identity is Aegis Nexus.
