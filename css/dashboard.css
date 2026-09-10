@@ -420,6 +420,23 @@
   .gp-map-ops-bar .gp-map-search{min-width:0}
 }
 
+/* DESIGN 20-phase (12): Command Center shells/skeletons.
+   Inferred from .cc-* grid: KPI strip + 3-col grid + grid2. Skeleton
+   blocks hold layout (no CLS) while dashboardBody shows .gp-state
+   spinners; shimmer is motion-guarded. */
+.cc-shell{display:grid;gap:var(--density-gap-tight,6px)}
+.cc-shell-kpis{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:var(--density-gap-tight,6px)}
+.cc-shell-kpi{min-height:64px;border:1px solid var(--line);border-radius:10px;background:var(--panel-2);position:relative;overflow:hidden}
+.cc-shell-kpi::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--line-strong)}
+.cc-shell-grid{display:grid;grid-template-columns:4fr 5fr 3fr;gap:var(--density-gap,8px)}
+.cc-shell-panel{min-height:180px;border:1px solid var(--line);border-radius:10px;background:var(--panel)}
+.cc-shell-line{height:10px;border-radius:5px;background:var(--skeleton-base,var(--panel-2));position:relative;overflow:hidden;margin:8px}
+.cc-shell-line.short{width:55%}
+.cc-shell-line::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent,var(--skeleton-shine,rgba(255,255,255,.06)),transparent);animation:cc-shell-shimmer 1.4s infinite}
+@keyframes cc-shell-shimmer{from{transform:translateX(-100%)}to{transform:translateX(100%)}}
+@media(max-width:1200px){.cc-shell-kpis{grid-template-columns:repeat(3,minmax(0,1fr))}.cc-shell-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:720px){.cc-shell-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.cc-shell-grid{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.cc-shell-line::after{animation:none}}
 /* Polish grind 6 — KPI strip: tabular numerals + sparklines everywhere they belong.
    Point-in-time counts (status KPIs, market cards) stay spark-free honestly;
    history-backed KPIs keep real-data sparklines with labels. */
