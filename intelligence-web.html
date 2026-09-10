@@ -75,6 +75,9 @@ button.active,.filter.active,.period.active{color:var(--blue);border-color:rgba(
 #details .source-link{display:inline-block;margin-top:6px;font-size:9.5px;font-weight:700;letter-spacing:.06em;color:var(--blue);text-decoration:none;border:1px solid rgba(98,160,255,.35);border-radius:var(--radius-sm);padding:6px 9px;background:rgba(98,160,255,.08);cursor:pointer;text-transform:uppercase}
 #details .source-link:hover{background:rgba(98,160,255,.16)}
 #details .muted{color:var(--muted-2);font-size:11px}
+#details .actions{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+#details .actions button{min-height:34px}
+.node-label.pinned{border-color:#ffc857!important;background:rgba(255,200,87,.14)}
 #loading{background:rgba(2,6,10,.72);backdrop-filter:blur(6px);font-size:12px}
 @media(max-width:700px){.card{padding:10px 12px}#details{width:auto;left:8px;right:8px;bottom:70px;top:auto;max-height:50vh}}
 @media(pointer:coarse){.filter,.period,button,input,select{min-height:36px}}
@@ -91,14 +94,14 @@ button.active,.filter.active,.period.active{color:var(--blue);border-color:rgba(
   <div class="sub">Living cross-domain knowledge graph. Public-source relationships are evidence/context links, not proof of causation, coordination, intent or responsibility.</div>
   <div class="row"><input id="search" aria-label="Search intelligence graph" placeholder="Search countries, conflicts, events, organizations…"><button id="clear">CLEAR</button><button id="refresh">↻ REFRESH</button></div>
   <div class="row"><button class="filter active" data-kind="all">ALL</button><button class="filter" data-kind="country">COUNTRIES</button><button class="filter" data-kind="person">PEOPLE</button><button class="filter" data-kind="government">GOVERNMENT</button><button class="filter" data-kind="military">MILITARY</button><button class="filter" data-kind="organization">ORGANIZATIONS</button><button class="filter" data-kind="economic">ECONOMY</button><button class="filter" data-kind="location">PLACES</button><button class="filter" data-kind="conflict">CONFLICTS</button><button class="filter" data-kind="infrastructure">INFRASTRUCTURE</button><button class="filter" data-kind="technology">TECHNOLOGY</button><button class="filter" data-kind="other">OTHER</button></div>
-  <div class="row"><button id="reset">RESET VIEW</button><button id="orbit">3D ORBIT</button><button id="flow" class="active">RELATIONSHIPS</button><button id="labels-toggle" class="active">LABELS</button><select id="rel-type" aria-label="Filter by relationship type"><option value="all">ALL RELATIONSHIPS</option><option value="action">ACTION ONLY</option><option value="mention">CO-MENTION ONLY</option></select></div>
+  <div class="row"><button id="reset">RESET VIEW</button><button id="orbit">3D ORBIT</button><button id="flow" class="active">RELATIONSHIPS</button><button id="labels-toggle" class="active">LABELS</button><button id="trace" aria-pressed="false">TRACE PATH</button><select id="rel-type" aria-label="Filter by relationship type"><option value="all">ALL RELATIONSHIPS</option><option value="action">ACTION ONLY</option><option value="mention">CO-MENTION ONLY</option></select></div>
   <div class="row"><select id="node-select" aria-label="Select matching entity"><option>Loading entities…</option></select></div>
   <div id="stats" role="status">Preparing intelligence graph…</div>
   <div class="legend">Node colors encode entity kind; connection colors encode relationship category (co-mention vs action). Relationships are evidence/context links, not proof of causation. Live counts load with the graph.</div>
  </div>
 </div>
 <div class="timeline"><div class="card"><b>NETWORK ACTIVITY</b><div class="row"><button class="period active" data-period="all">ALL</button><button class="period" data-period="24">24H</button><button class="period" data-period="168">7D</button><button class="period" data-period="720">30D</button><button class="period" data-period="2160">90D</button><input id="since" type="date" aria-label="Show source records since date"></div><span id="trend"></span></div></div>
-<div id="details" aria-hidden="true"><button id="close" class="detail-close" type="button">CLOSE</button><div id="detail"></div></div>
+<div id="details" role="dialog" aria-modal="false" aria-labelledby="details-title" tabindex="-1" aria-hidden="true"><button id="close" class="detail-close" type="button">CLOSE</button><div id="detail"></div></div>
 <script src="intelligence_web_runtime_guard.js?v=20260907-guard2"></script>
 <script src="intelligence_web_performance.js?v=20260907-perf2"></script>
 <script src="https://cdn.jsdelivr.net/npm/3d-force-graph@1.79.0/dist/3d-force-graph.min.js"></script>
