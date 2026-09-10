@@ -166,9 +166,12 @@ export function renderStatus() {
       const age = s.lastSuccess || s.lastChecked || s.updatedAt;
       const fresh = Number.isFinite(Number(s.freshnessMinutes)) ? `${Number(s.freshnessMinutes).toFixed(0)}m ago` : '—';
       const fails = Number(s.consecutiveFailures || 0);
-      return `<div class="gp-source-row sev-${ok ? 'healthy' : 'critical'}"><div class="grow"><div class="title">${escapeHtml(String(name))}</div>`
+      const stale = ok && (/stale/i.test(String(s.contentStatus || '')) || (Number.isFinite(Number(s.freshnessMinutes)) && Number(s.freshnessMinutes) > 180));
+      const dot = !ok ? 'critical' : stale ? 'watch' : 'healthy';
+      const chip = !ok ? '<span class="gp-badge failed">Failed</span>' : stale ? '<span class="gp-badge stale">Stale</span>' : '<span class="gp-source-chip sev-healthy">Online</span>';
+      return `<div class="gp-source-row sev-${ok ? 'healthy' : 'critical'}"><span class="gp-health-dot ${dot}" aria-hidden="true" style="margin-top:5px"></span><div class="grow"><div class="title">${escapeHtml(String(name))}</div>`
         + `<div class="meta">${escapeHtml(String(s.type || s.category || 'source'))} · fresh ${escapeHtml(fresh)} · ${escapeHtml(String(s.contentStatus || 'unknown').replace(/_/g, ' '))}${fails > 0 ? ` · ${fails} consecutive failure${fails === 1 ? '' : 's'}` : ''}${age ? ` · ${escapeHtml(formatRelativeTime(age))}` : ''}</div></div>`
-        + (ok ? '<span class="gp-source-chip sev-healthy">Online</span>' : `<span class="gp-sev gp-sev-critical">Failed</span>`) + '</div>';
+        + chip + '</div>';
     }).join('');
 
     const coverage = Number(sourceHealth.summary?.dataCoveragePercent);
