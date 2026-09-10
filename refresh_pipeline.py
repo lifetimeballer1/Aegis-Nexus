@@ -5,8 +5,8 @@ import hashlib,json,subprocess,sys
 from datetime import datetime,timezone
 from pathlib import Path
 ROOT=Path(__file__).resolve().parent;DATA=ROOT/'data'
-REQUIRED_ARTIFACTS=('snapshot.json','history.json','sources.json','live_articles.json','canonical_intelligence.json','intelligence_graph.json','intelligence_brain.json','map_points.json','strategic_signals.json','source_health.json','live_status.json','what_changed.json')
-MANIFEST_ARTIFACTS=('snapshot.json','history.json','sources.json','live_articles.json','canonical_intelligence.json','intelligence_graph.json','intelligence_brain.json','map_points.json','strategic_signals.json','source_health.json','live_status.json','what_changed.json')
+REQUIRED_ARTIFACTS=('snapshot.json','history.json','sources.json','live_articles.json','canonical_intelligence.json','intelligence_graph.json','intelligence_brain.json','map_points.json','strategic_signals.json','source_health.json','live_status.json','what_changed.json','live_events.json','claims.json','source_evidence.json','event_intelligence.json','event_consistency.json','event_resolution.json','intelligence_assessment.json','historical_trends.json')
+MANIFEST_ARTIFACTS=('snapshot.json','history.json','sources.json','live_articles.json','canonical_intelligence.json','intelligence_graph.json','intelligence_brain.json','map_points.json','strategic_signals.json','source_health.json','live_status.json','what_changed.json','live_events.json','claims.json','source_evidence.json','event_intelligence.json','event_consistency.json','event_resolution.json','intelligence_assessment.json','historical_trends.json')
 def run(label,*cmd):
  print(f'\n=== {label} ===',flush=True);print('$',' '.join(cmd),flush=True);subprocess.run(cmd,cwd=ROOT,check=True);print(f'PASS: {label}',flush=True)
 def load(name):
@@ -103,6 +103,19 @@ def _run_pipeline(started):
  if int(live_status.get('exportedArticles',0))<=0:raise RuntimeError('live intelligence refresh exported no articles')
  run('Build current source health telemetry',sys.executable,'build_source_health.py')
  run('Validate current source health and strategic coverage',sys.executable,'validate_source_health.py')
+ run('Merge persistent live news into the snapshot',sys.executable,'merge_live_news.py')
+ run('Cluster current public reports into live events',sys.executable,'build_live_events.py')
+ verify_json('live_events.json',min_list=('events',1),max_age=1800)
+ run('Detect contradictions inside live event clusters',sys.executable,'build_event_consistency.py')
+ verify_json('event_consistency.json',min_list=('events',1),max_age=1800)
+ run('Resolve duplicate live event clusters',sys.executable,'build_event_resolution.py')
+ verify_json('event_resolution.json',min_list=('events',1),max_age=1800)
+ run('Build source evidence and independence metrics',sys.executable,'build_source_evidence.py')
+ verify_json('source_evidence.json',max_age=1800)
+ run('Build conservative claim intelligence',sys.executable,'claim_intelligence.py')
+ verify_json('claims.json',min_list=('claims',1),max_age=1800)
+ run('Grade evidence-aware event intelligence',sys.executable,'build_event_intelligence.py')
+ verify_json('event_intelligence.json',min_list=('events',1),max_age=1800)
  run('Build canonical intelligence layer',sys.executable,'build_canonical_intelligence_v3.py')
  run('Repair source-backed strategic action targets',sys.executable,'repair_strategic_targets.py')
  run('Repair explicit actor-to-target role propagation',sys.executable,'repair_actor_target_roles.py')
@@ -113,6 +126,8 @@ def _run_pipeline(started):
  run('Build current evidence-backed snapshot graph',sys.executable,'update_intelligence_web.py')
  run('Publish current Intelligence Web graph',sys.executable,'build_intelligence_graph.py')
  graph=verify_json('intelligence_graph.json');verify_graph(graph)
+ run('Build explainable risk assessments',sys.executable,'build_intelligence_assessment.py')
+ verify_json('intelligence_assessment.json',min_list=('assessments',1),max_age=1800)
  run('Build compact major-node Intelligence Brain',sys.executable,'build_intelligence_brain.py')
  run('Guarantee U.S. and China major-power hubs',sys.executable,'ensure_major_power_nodes.py')
  run('Ensure Brain group coverage',sys.executable,'ensure_brain_groups.py')
@@ -122,6 +137,8 @@ def _run_pipeline(started):
  brain=verify_json('intelligence_brain.json');verify_brain(brain)
  run('Build strategic signals',sys.executable,'build_strategic_signals.py')
  signals=verify_json('strategic_signals.json',fresh_required=False);verify_strategic_signals(signals)
+ run('Build rolling tension trends from retained history',sys.executable,'build_historical_trends.py')
+ verify_json('historical_trends.json',max_age=1800)
  snapshot=load('snapshot.json');verify_market(snapshot)
  run('Build what changed',sys.executable,'build_what_changed.py')
  run('Build dedicated browser map points',sys.executable,'build_map_points.py')
