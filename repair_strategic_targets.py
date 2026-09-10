@@ -31,12 +31,19 @@ PATTERNS={
   r'\b(?:agreement|accord|treaty)\b\s+(?:with|between)\s+([^.;:!?]+)',
   r'\b(?:support(?:s|ed|ing)?|back(?:s|ed|ing)?|oppose(?:s|d|ing)?|urge(?:s|d|ing)?|recogniz(?:e|es|ed|ing)?)\b\s+(?:for|of|on|against|toward)\s+([^.;:!?]+)',
   r'\b(?:support|backing|opposition|appeal)\b\s+(?:for|to)\s+([^.;:!?]+)',
+  r'\b[A-Za-z]+-([A-Za-z]+)\s+(?:delimitation\s+)?(?:talks|summit|meetings?|negotiations?)\b',
  ),
  'trade_action':(
   r'\b(?:trade|trades|trading|exports?|imports?)\b\s+(?:with|between|to|from)\s+([^.;:!?]+)',
   r'\b(?:export|exports|exported|exporting|import|imports|imported|importing)\b\s+(?:controls?|restrictions?|bans?)\s+(?:on|against|toward|to|from)\s+([^.;:!?]+)',
   r'\b(?:tariffs?|trade restrictions?|anti-dumping measures?|anti-dumping duties?)\b\s+(?:on|against|toward|from|on imports? from)\s+([^.;:!?]+)',
   r'\b(?:dumping|anti-dumping)\b[^.;:!?]{0,100}\b(?:from|by|against)\s+([^.;:!?]+)',
+  r'\b(?:trade\s+)?(?:surplus|deficit)\b\s+(?:with|against|versus|vs\.?)\s+([^.;:!?]+)',
+  r'\btrade\s+(?:barbs|spats?|rows?|disputes?|fight|war|tensions?|frictions?)\b\s+(?:over|about|on|between|with)\s+([^.;:!?]+)',
+  r'\b([A-Z][A-Za-z.()\-]{1,30}?)\s+trade\s+(?:deficit|surplus|gap|imbalance)\b',
+  r'\b([A-Z][A-Za-z .\'’&\-()]{1,50}?)\s+(?:to\s+)?(?:demand|demands|seek|seeks|seeking|urge|urges|press|push|ask)\b[^.;:!?]{0,80}?\bfrom\s+(?:China|Chinese)\b',
+  r'\b([A-Z][A-Za-z .\'’&\-()]{1,50}?)\s+(?:seek|seeks|seeking|demand|demands|request|requests|urge|urges)\b[^.;:!?]{0,80}?\bChinese\b[^.;:!?]{0,40}?\baction\b',
+  r'\bfor\s+([A-Z][A-Za-z .\'’&\-()]{1,50}?)\s+(?:playing|teaming|aligning|partnering|siding|dealing|trading)\b[^.;:!?]{0,60}?\bwith\b',
  ),
  'economic_action':(
   r'\b(?:tariffs?|taxes?|restrictions?|controls?)\b\s+(?:on|against|toward)\s+([^.;:!?]+)',
@@ -48,16 +55,20 @@ PATTERNS={
   r'\b(?:restrict(?:s|ed|ing)?|ban(?:s|ned|ning)?|control(?:s|led|ling)?|limit(?:s|ed|ing)?)\b\s+(?:exports?|chips?|technology|semiconductors?)\s+(?:to|for|against)\s+([^.;:!?]+)',
   r'\b(?:export controls?|chip restrictions?|technology restrictions?)\b\s+(?:on|against|toward)\s+([^.;:!?]+)',
   r'\b(?:sell|sells|sold|selling|provide|provides|provided|providing|supply|supplies|supplied|supplying)\b\s+(?:chips?|technology|semiconductors?|equipment)\s+(?:to|for)\s+([^.;:!?]+)',
+  r'\b([A-Z][A-Za-z .\'’&\-()]{1,50}?)\s+(?:outlines?|announces?|announced|unveils?|unveiled|details?|detailed|reveals?|revealed|issues?|issued|prepares?|prepared)\b[^.;:!?]{0,40}?\bresponses?\b[^.;:!?]{0,80}?\bto\b',
  ),
  'energy_action':(
   r'\b(?:supply|supplies|supplied|supplying|export(?:s|ed|ing)?|import(?:s|ed|ing)?)\b\s+(?:oil|gas|lng|energy|electricity)\s+(?:to|from)\s+([^.;:!?]+)',
+  r'\bpolic(?:y|ies)\b[^.;:!?]{0,40}?\btoward\s+([^.;:!?]+)',
  ),
  'cyber_activity':(
   r'\b(?:cyberattack|cyberattacks|hack(?:s|ed|ing)?|hacking)\b\s+(?:against|on|targeting)\s+([^.;:!?]+)',
   r'\b(?:cyber|hackers?|hacking)\b[^.;:!?]{0,80}\b(?:target(?:s|ed|ing)?|attack(?:s|ed|ing)?)\b\s+([^.;:!?]+)',
+  r'\bthreats?\b\s+(?:to|against)\s+([^.;:!?]+)',
  ),
  'political_action':(
   r'\b(?:support(?:s|ed|ing)?|back(?:s|ed|ing)?|oppos(?:e|es|ed|ing)|urge(?:s|d|ing)?|call(?:s|ed|ing)? for|recogniz(?:e|es|ed|ing)?)\b\s+(?:for|of|on|against|toward)?\s*([^.;:!?]+)',
+  r'\b([A-Z][A-Za-z .\'’&\-()]{1,50}?)\s+(?:outlines?|announces?|announced|unveils?|unveiled|details?|detailed|reveals?|revealed|issues?|issued|prepares?|prepared)\b[^.;:!?]{0,40}?\bresponses?\b[^.;:!?]{0,80}?\bto\b',
  ),
 }
 
@@ -87,13 +98,25 @@ def candidate_names(entity):
  return sorted(names,key=len,reverse=True)
 
 def match_targets(clause,entities):
- """Resolve only canonical entities explicitly present in the extracted clause."""
- found=[]
+ """Resolve only canonical entities explicitly present in the extracted clause.
+
+ Longest-name-wins span suppression: a shorter alias fully contained in a longer
+ match of a different entity (e.g. 'China' inside 'South China Sea') is ignored."""
+ spans=[]
  for eid,entity in entities.items():
   for name in candidate_names(entity):
-   if name and boundary(re.escape(name),clause).search(clause):
-    found.append(eid); break
- return list(dict.fromkeys(found))
+   if not name: continue
+   pattern=boundary(re.escape(name),clause)
+   for match in pattern.finditer(clause):
+    spans.append((match.start(),match.end(),len(name),eid))
+    break
+ spans.sort(key=lambda s:(-(s[1]-s[0]),-s[2]))
+ claimed=[]; found=[]
+ for start,end,_,eid in spans:
+  if any(start < cend and end > cstart for cstart,cend in claimed): continue
+  claimed.append((start,end))
+  if eid not in found: found.append(eid)
+ return found
 
 def main():
  data=json.loads(CANONICAL.read_text(encoding='utf-8'))
@@ -123,14 +146,15 @@ def main():
      found=match_targets(clause,entities)
      if event_type=='diplomatic_action':
       found=[eid for eid in found if any(re.match(r'(?:the\s+)?'+re.escape(name)+r'(?![A-Za-z])',clause,re.I) for name in candidate_names(entities[eid]))]
+     actor_set={str(aid) for aid in event.get('actor_ids',[])}
+     found=[eid for eid in found if eid not in actor_set]
      if found:
       event['target_ids']=found
-      event['actor_ids']=[aid for aid in event.get('actor_ids',[]) if str(aid) not in found]
       repaired+=len(found); details.append((event.get('id'),event_type,found))
       break
     if event.get('target_ids'): break
    if event.get('target_ids'): break
- data.setdefault('metadata',{})['explicit_target_repair_v5']='evidence-clause-alias-v5'
+ data.setdefault('metadata',{})['explicit_target_repair_v5']='evidence-clause-alias-v6'
  data['metadata']['explicit_target_repairs_v5']=repaired
  data['metadata']['explicit_target_actor_reclassification_v2']=True
  CANONICAL.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')

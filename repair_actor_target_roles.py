@@ -20,6 +20,7 @@ PATTERNS={
   r'\b(?:military|armed)\s+(?:operation|action|campaign)\b[^.;,:!?]{0,100}\b(?:against|targeting|on)\s+([^.;,:!?]+)',
  ),
  'diplomatic_action':(
+  r'\b[A-Za-z]+-([A-Za-z]+)\s+(?:delimitation\s+)?(?:talks|summit|meetings?|negotiations?)\b',
   r'\b(?:talks?|negotiat(?:e|es|ed|ing)|meet(?:s|ing)?|summit)\b\s+(?:with|between)\s+([^.;,:!?]+)',
   r'\b(?:support(?:s|ed|ing)?|back(?:s|ed|ing)?|oppose(?:s|d|ing)?|urge(?:s|d|ing)?|appeal(?:s|ed|ing)?)\b\s+(?:for|to|of|against|toward)\s+([^.;,:!?]+)',
   r'\b(?:agreement|accord|treaty)\b\s+(?:with|between)\s+([^.;,:!?]+)',
@@ -29,6 +30,12 @@ PATTERNS={
   r'\b(?:trade|trades|trading|exports?|imports?)\b\s+(?:to|from)\s+([^.;,:!?]+)',
   r'\b(?:tariffs?|trade restrictions?|anti-dumping measures?|anti-dumping duties?)\b\s+(?:on|against|toward|from)\s+([^.;,:!?]+)',
   r'\b(?:target|targets|targeted|targeting)\b\s+([^.;,:!?]+)',
+  r'\b(?:trade\s+)?(?:surplus|deficit)\b\s+(?:with|against|versus|vs\.?)\s+([^.;,:!?]+)',
+  r'\btrade\s+(?:barbs|spats?|rows?|disputes?|fight|war|tensions?|frictions?)\b\s+(?:over|about|on|between|with)\s+([^.;,:!?]+)',
+  r'\b([A-Z][A-Za-z.()\-]{1,30}?)\s+trade\s+(?:deficit|surplus|gap|imbalance)\b',
+  r'\b([A-Z][A-Za-z .\'’&\-()]{1,50}?)\s+(?:to\s+)?(?:demand|demands|seek|seeks|seeking|urge|urges|press|push|ask)\b[^.;,:!?]{0,80}?\bfrom\s+(?:China|Chinese)\b',
+  r'\b([A-Z][A-Za-z .\'’&\-()]{1,50}?)\s+(?:seek|seeks|seeking|demand|demands|request|requests|urge|urges)\b[^.;,:!?]{0,80}?\bChinese\b[^.;,:!?]{0,40}?\baction\b',
+  r'\bfor\s+([A-Z][A-Za-z .\'’&\-()]{1,50}?)\s+(?:playing|teaming|aligning|partnering|siding|dealing|trading)\b[^.;,:!?]{0,60}?\bwith\b',
  ),
  'economic_action':(
   r'\b(?:tariffs?|taxes?|restrictions?|controls?)\b\s+(?:on|against|toward)\s+([^.;,:!?]+)',
@@ -37,19 +44,23 @@ PATTERNS={
  'technology_action':(
   r'\b(?:export controls?|chip restrictions?|technology restrictions?)\b\s+(?:on|against|toward)\s+([^.;,:!?]+)',
   r'\b(?:restrict(?:s|ed|ing)?|ban(?:s|ned|ning)?|control(?:s|led|ling)?|limit(?:s|ed|ing)?)\b[^.;,:!?]{0,80}\b(?:to|for|against|on)\s+([^.;,:!?]+)',
+  r'\b([A-Z][A-Za-z .\'’&\-()]{1,50}?)\s+(?:outlines?|announces?|announced|unveils?|unveiled|details?|detailed|reveals?|revealed|issues?|issued|prepares?|prepared)\b[^.;,:!?]{0,40}?\bresponses?\b[^.;,:!?]{0,80}?\bto\b',
  ),
  'energy_action':(
   r'\b(?:supply|supplies|supplied|supplying|export(?:s|ed|ing)?|import(?:s|ed|ing)?)\b\s+(?:oil|gas|lng|energy|electricity)\s+(?:to|from)\s+([^.;,:!?]+)',
   r'\b(?:oil|gas|lng|energy|electricity)\b[^.;,:!?]{0,80}\b(?:suppl(?:y|ies|ied|ying)|export(?:s|ed|ing)?|import(?:s|ed|ing)?)\b\s+(?:to|from)\s+([^.;,:!?]+)',
+  r'\bpolic(?:y|ies)\b[^.;,:!?]{0,40}?\btoward\s+([^.;,:!?]+)',
  ),
  'cyber_activity':(
   r'\b(?:cyberattack|cyberattacks|hack(?:s|ed|ing)?|hacking)\b\s+(?:against|on|targeting)\s+([^.;,:!?]+)',
   r'\b(?:cyber|hackers?|hacking|intrusion|intrusions|campaign|campaigns|operation|operations)\b[^.;,:!?]{0,120}\b(?:target(?:s|ed|ing)?|attack(?:s|ed|ing)?|hit|hits|struck|strikes)\s+(?:at\s+)?([^.;,:!?]+)',
   r'\b(?:cyber|hackers?|hacking)\b[^.;,:!?]{0,120}\b(?:against|on)\s+([^.;,:!?]+)',
+  r'\bthreats?\b\s+(?:to|against)\s+([^.;,:!?]+)',
  ),
  'political_action':(
   r'\b(?:support(?:s|ed|ing)?|back(?:s|ed|ing)?|oppos(?:e|es|ed|ing)|urge(?:s|d|ing)?|recogniz(?:e|es|ed|ing)?)\b\s+(?:for|of|on|against|toward)?\s*([^.;,:!?]+)',
   r'\b(?:pressure|pressures|pressured|threaten(?:s|ed|ing)?|demand(?:s|ed|ing)?|punish(?:es|ed|ing)?)\b\s+(?:on|against|over|for)?\s*([^.;,:!?]+)',
+  r'\b([A-Z][A-Za-z .\'’&\-()]{1,50}?)\s+(?:outlines?|announces?|announced|unveils?|unveiled|details?|detailed|reveals?|revealed|issues?|issued|prepares?|prepared)\b[^.;,:!?]{0,40}?\bresponses?\b[^.;,:!?]{0,80}?\bto\b',
  ),
 }
 def text(a): return '. '.join(str(a[k]).strip() for k in ('title','summary_snippet','summary','description','content') if a.get(k))
@@ -88,11 +99,13 @@ def main():
        if ev.get('event_type')=='diplomatic_action' and not re.match(r'(?:the\s+)?'+re.escape(n)+r'(?![A-Za-z])',clause,re.I): continue
        if n and re.search(r'(?<![A-Za-z])'+re.escape(n)+r'(?![A-Za-z])',clause,re.I): hits.append(aid);break
      if hits:
-      ev['target_ids']=list(dict.fromkeys(hits)); ev['actor_ids']=[x for x in ev.get('actor_ids',[]) if str(x) not in hits]
+      remaining=[x for x in ev.get('actor_ids',[]) if str(x) not in hits]
+      if not remaining: break
+      ev['target_ids']=list(dict.fromkeys(hits)); ev['actor_ids']=remaining
       repaired+=len(hits);events+=1;break
     if ev.get('target_ids'): break
    if ev.get('target_ids'): break
- data.setdefault('metadata',{})['actor_target_role_repair']='explicit-clause-existing-actor-v2'
+ data.setdefault('metadata',{})['actor_target_role_repair']='explicit-clause-existing-actor-v3'
  data['metadata']['actor_target_role_repairs']=repaired
  PATH.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
  print(f'PASS: actor-target role repair repaired_targets={repaired} events={events}')
