@@ -91,10 +91,18 @@ function renderTicker() {
   const items = [...raw]
     .sort((a, b) => new Date(itemTime(b) || 0) - new Date(itemTime(a) || 0))
     .slice(0, 12);
-  el.innerHTML = `<span class="tk-label">News</span>` + items.map((s) => {
+  /* Seamless marquee: two identical halves so translateX(-50%) loops cleanly.
+   * Second half is aria-hidden + untabbable; duration scales with item count. */
+  const half = items.map((s) => {
     const title = s.title || s.headline || 'Untitled';
     return `<a href="#section-breaking" title="${esc(title)}"><span class="tk-dot ${tickDot(`${s.category || ''} ${title}`)}" aria-hidden="true"></span>${esc(String(title).slice(0, 80))}</a>`;
   }).join('');
+  const halfHidden = items.map((s) => {
+    const title = s.title || s.headline || 'Untitled';
+    return `<a href="#section-breaking" tabindex="-1" title="${esc(title)}"><span class="tk-dot ${tickDot(`${s.category || ''} ${title}`)}" aria-hidden="true"></span>${esc(String(title).slice(0, 80))}</a>`;
+  }).join('');
+  const dur = Math.max(20, items.length * 5);
+  el.innerHTML = `<span class="tk-label">News</span><div class="tk-viewport"><div class="tk-track" style="animation-duration:${dur}s">${half}<span aria-hidden="true" style="display:contents">${halfHidden}</span></div></div>`;
 }
 
 /** Rail count badges: canonical alert + source-failure counts on left nav.

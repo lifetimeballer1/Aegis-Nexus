@@ -1,0 +1,53 @@
+/* Ticker marquee rhythm — additive sidecar. Never rewrites command-shell.css
+ * values; this file only adds the seamless-track rhythm on #commandTicker.
+ * - .tk-track holds two identical halves; keyframes translate 0 → -50%.
+ * - Pause on hover/focus-within; reduced-motion + forced-colors fall back
+ *   to a plain scrollable row so no headline is motion-hidden. */
+#commandTicker {
+  overflow: hidden;
+}
+.tk-viewport {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+}
+.tk-track {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  will-change: transform;
+  animation: tk-marquee 60s linear infinite;
+}
+.tk-track a {
+  flex: none;
+  margin-right: 8px;
+}
+#commandTicker:hover .tk-track,
+#commandTicker:focus-within .tk-track {
+  animation-play-state: paused;
+}
+@keyframes tk-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .tk-track {
+    animation: none;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    max-width: 100%;
+  }
+  #commandTicker {
+    overflow-x: auto;
+  }
+}
+@media (forced-colors: active) {
+  .tk-track {
+    animation: none;
+    overflow-x: auto;
+    max-width: 100%;
+  }
+  #commandTicker {
+    overflow-x: auto;
+  }
+}
