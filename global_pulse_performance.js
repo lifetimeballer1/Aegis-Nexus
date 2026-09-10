@@ -23,9 +23,8 @@ function lazyIntelWeb(){
   var frame=document.querySelector('.gp-intelweb-frame');
   if(!frame || frame.dataset.gpLazyReady==='1')return;
   frame.dataset.gpLazyReady='1';
-  /* Ownership: index.html forces this frame to eager loading at runtime.
-     An eager frame is owned by markup — stripping and re-adding src here
-     would cancel the eager load and fetch the graph page twice. */
+  /* Ownership: index.html markup owns the lazy contract; this layer defers
+     the frame's src until it is near the viewport (or deep-linked). */
   if(frame.loading==='eager')return;
   var src=frame.getAttribute('src');
   if(!src)return;
