@@ -1,15 +1,62 @@
 {
-  "updatedAt": "2026-09-06T15:38:49.548465Z",
-  "generated_at": "2026-09-06T15:38:49.548476+00:00",
+  "updatedAt": "2026-09-10T03:03:11.594944Z",
+  "generated_at": "2026-09-10T03:03:11.594944+00:00",
   "method": "event-cluster similarity using title tokens, geographic/actor anchors, category and publication timing; candidate grouping only",
   "events": [
     {
       "resolution_id": "ER-0001",
-      "title": "Trump envoys Witkoff, Kushner arrive in Moscow with proposal to end war - The New Voice of Ukraine",
+      "title": "US envoys Witkoff, Kushner meet Putin for talks on Ukraine war",
       "event_ids": [
-        "aa26575eaa22323a"
+        "0dfe3e7a3c0607de",
+        "c693cc84a10876f1"
       ],
-      "report_count": 5,
+      "report_count": 6,
+      "unique_domains": [
+        "aljazeera.com",
+        "france24.com",
+        "news.google.com",
+        "theyeshivaworld.com"
+      ],
+      "member_count": 2,
+      "merge_reason": "score 0.65; shared anchors: uk, ukraine",
+      "confidence": "moderate"
+    },
+    {
+      "resolution_id": "ER-0002",
+      "title": "Green forest fire notification in Angola",
+      "event_ids": [
+        "2f976e3368b51239"
+      ],
+      "report_count": 4,
+      "unique_domains": [
+        "gdacs.org"
+      ],
+      "member_count": 1,
+      "merge_reason": "single candidate event cluster",
+      "confidence": "low"
+    },
+    {
+      "resolution_id": "ER-0003",
+      "title": "Russia’s Putin meets US envoys to discuss Trump proposal to end Ukraine war",
+      "event_ids": [
+        "cb2566ead6cb6da4"
+      ],
+      "report_count": 3,
+      "unique_domains": [
+        "aljazeera.com",
+        "channelnewsasia.com"
+      ],
+      "member_count": 1,
+      "merge_reason": "single candidate event cluster",
+      "confidence": "low"
+    },
+    {
+      "resolution_id": "ER-0004",
+      "title": "Multipolarity gives middle powers more choices, but fewer guarantees - Al Jazeera",
+      "event_ids": [
+        "bef7026ea7cf71d4"
+      ],
+      "report_count": 3,
       "unique_domains": [
         "aljazeera.com",
         "news.google.com"
@@ -19,7 +66,7 @@
       "confidence": "low"
     },
     {
-      "resolution_id": "ER-0002",
+      "resolution_id": "ER-0005",
       "title": "Green forest fire notification in Mozambique",
       "event_ids": [
         "cd02c5e532c38eed"
@@ -33,35 +80,22 @@
       "confidence": "low"
     },
     {
-      "resolution_id": "ER-0003",
-      "title": "Green forest fire notification in Angola",
+      "resolution_id": "ER-0006",
+      "title": "Germany's far-right AfD eyes historic state victory in Saxony-Anhalt election",
       "event_ids": [
-        "2f976e3368b51239"
+        "6871dad21aef6c87"
       ],
-      "report_count": 3,
+      "report_count": 2,
       "unique_domains": [
-        "gdacs.org"
+        "aljazeera.com",
+        "france24.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
       "confidence": "low"
     },
     {
-      "resolution_id": "ER-0004",
-      "title": "Putin orders 72-hour pause in Kyiv strikes as US envoys visit Russia and Ukraine - Belfast Telegraph",
-      "event_ids": [
-        "6296e8eb5edc9cfd"
-      ],
-      "report_count": 3,
-      "unique_domains": [
-        "news.google.com"
-      ],
-      "member_count": 1,
-      "merge_reason": "single candidate event cluster",
-      "confidence": "low"
-    },
-    {
-      "resolution_id": "ER-0005",
+      "resolution_id": "ER-0007",
       "title": "Greeks promised tax relief , wage hikes as protesters take to the streets over cost of living crunch",
       "event_ids": [
         "17e5746efc05d479"
@@ -76,22 +110,7 @@
       "confidence": "low"
     },
     {
-      "resolution_id": "ER-0006",
-      "title": "Putin Meets With Us Envoys At The Kremlin For Renewed Talks On Ending The War In Ukraine",
-      "event_ids": [
-        "a9b69c7213ce317c"
-      ],
-      "report_count": 2,
-      "unique_domains": [
-        "news.google.com",
-        "theyeshivaworld.com"
-      ],
-      "member_count": 1,
-      "merge_reason": "single candidate event cluster",
-      "confidence": "low"
-    },
-    {
-      "resolution_id": "ER-0007",
+      "resolution_id": "ER-0008",
       "title": "Trump PAC wades into midterms with $10 million ad buy to boost Ken Paxton",
       "event_ids": [
         "f332861d045a1821"
@@ -106,7 +125,7 @@
       "confidence": "low"
     },
     {
-      "resolution_id": "ER-0008",
+      "resolution_id": "ER-0009",
       "title": "Congress votes to avert government shutdown ahead of midterms",
       "event_ids": [
         "b4d4d9112dcb1617"
@@ -121,29 +140,15 @@
       "confidence": "low"
     },
     {
-      "resolution_id": "ER-0009",
-      "title": "US-IRAN WAR | U.S. Strikes 3 Iranian Oil Tankers After Navy Warships Targeted - WION",
-      "event_ids": [
-        "3c330215fe83dcd1"
-      ],
-      "report_count": 2,
-      "unique_domains": [
-        "news.google.com",
-        "stripes.com"
-      ],
-      "member_count": 1,
-      "merge_reason": "single candidate event cluster",
-      "confidence": "low"
-    },
-    {
       "resolution_id": "ER-0010",
-      "title": "Green forest fire notification in Zambia",
+      "title": "War in Ukraine: Putin, Zelensky order pause in strikes",
       "event_ids": [
-        "82783b4a7de15beb"
+        "2b4e1fad1def2f4e"
       ],
       "report_count": 2,
       "unique_domains": [
-        "gdacs.org"
+        "france24.com",
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -151,13 +156,14 @@
     },
     {
       "resolution_id": "ER-0011",
-      "title": "Green forest fire notification in Indonesia",
+      "title": "Iran rebuilding its axis of resistance for attack , Israeli intelligence . suggests",
       "event_ids": [
-        "632fbbf1bd52c1e7"
+        "540d4807fcb7b674"
       ],
       "report_count": 2,
       "unique_domains": [
-        "gdacs.org"
+        "jpost.com",
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -165,9 +171,9 @@
     },
     {
       "resolution_id": "ER-0012",
-      "title": "US-Israel-Iran War Latest Live News: US Faces Record-High Petrol Prices to Top $4 Per Gallon as War on Iran Continues to Raise Energy Costs - The Sunday Guardian",
+      "title": "War powers resolution: Senate votes to walk back rebuke of Trump over Iran - CNN",
       "event_ids": [
-        "2b678607b410e963"
+        "1a34da1f7be36dee"
       ],
       "report_count": 2,
       "unique_domains": [
@@ -179,9 +185,9 @@
     },
     {
       "resolution_id": "ER-0013",
-      "title": "Putin orders 3-day halt in Kyiv strikes as Trump envoys arrive in Moscow - english.mathrubhumi.com",
+      "title": "El Niño is coming for agriculture. Here is where the risks are highest - Food and Agriculture Organization",
       "event_ids": [
-        "749bc41d09f04eeb"
+        "0917232dcf89c4f2"
       ],
       "report_count": 2,
       "unique_domains": [
@@ -193,9 +199,9 @@
     },
     {
       "resolution_id": "ER-0014",
-      "title": "Netanyahu says Iran will face severe response if Tehran attacks Israel - Business Upturn",
+      "title": "Hungarian election could have implications for EU, US, Russia, and Ukraine - Atlantic Council",
       "event_ids": [
-        "4ef1cc324002ed0f"
+        "70f40fd4d440ce3c"
       ],
       "report_count": 2,
       "unique_domains": [
@@ -207,9 +213,9 @@
     },
     {
       "resolution_id": "ER-0015",
-      "title": "US-Israel-Iran War Live News: 4 Civilians Killed, 9 Injured in Houthi Missile Attack on Heijah Al-Abd Road South of Taiz - The Sunday Guardian",
+      "title": "Trump hits back at 'unpatriotic' vote after House rebukes him over Iran - BBC",
       "event_ids": [
-        "f0a51c475b31673a"
+        "65c2d1d01858f13a"
       ],
       "report_count": 2,
       "unique_domains": [
@@ -221,9 +227,9 @@
     },
     {
       "resolution_id": "ER-0016",
-      "title": "Trump’s peace push under fire? Russia hits Ukraine airports as US envoys arrive for peace talks - Mathrubhumi English",
+      "title": "US and Nigeria Kill IS Leader; RSF Defections: Africa File, May 21, 2026 - Critical Threats",
       "event_ids": [
-        "15f55aa43ae86ad6"
+        "487d6eaaad4ee0c5"
       ],
       "report_count": 2,
       "unique_domains": [
@@ -235,9 +241,9 @@
     },
     {
       "resolution_id": "ER-0017",
-      "title": "US-Israel-Iran War Latest Live News: Pete Hegseth Says ‘Decisive’ Days ahead as US Refuses To Rule Out Ground Troops; Trump Slams Europe, Iran Blamed For Oil Tanker Strike Near Dubai - The Sunday Guardian",
+      "title": "Interdiction of Narco-Terrorist Refueling Vessel, Sept. 5, 2026 - southcom.mil",
       "event_ids": [
-        "d7d02260831cbaaf"
+        "e3b5a98b939969d2"
       ],
       "report_count": 2,
       "unique_domains": [
@@ -249,13 +255,13 @@
     },
     {
       "resolution_id": "ER-0018",
-      "title": "Green forest fire notification in Australia",
+      "title": "Trump’s first major midterm money move: A $10M Texas Senate ad blitz - SRN News",
       "event_ids": [
-        "f4bef1a266999855"
+        "fc308c715682e1ed"
       ],
       "report_count": 2,
       "unique_domains": [
-        "gdacs.org"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -263,9 +269,9 @@
     },
     {
       "resolution_id": "ER-0019",
-      "title": "Russian strikes kill at least five people in Ukraine overnight as Moscow and Kiev await the arrival of U.S. envoys as Mo - fakti.bg",
+      "title": "U.S. strikes 3 Iranian oil tankers after saying warships were targeted with ballistic missiles - PBS",
       "event_ids": [
-        "6979133d77eef7d5"
+        "30dffcb547b89855"
       ],
       "report_count": 2,
       "unique_domains": [
@@ -277,11 +283,11 @@
     },
     {
       "resolution_id": "ER-0020",
-      "title": "Iranian tanker hit by four US missiles near Kharg Island - The Siasat Daily",
+      "title": "10 Conflicts to Watch in 2026 - International Crisis Group",
       "event_ids": [
-        "4ffd619cccbf8933"
+        "8e4c403102de0c4a"
       ],
-      "report_count": 2,
+      "report_count": 1,
       "unique_domains": [
         "news.google.com"
       ],
@@ -291,11 +297,11 @@
     },
     {
       "resolution_id": "ER-0021",
-      "title": "Here Is Where Ukraine Peace Talks Stand, as a New Round Approaches - The New York Times",
+      "title": "Scoop: Inside the White House pitch for pre-election MAGA megabill - axios.com",
       "event_ids": [
-        "d596679b541c8adf"
+        "13036f4e6b16360c"
       ],
-      "report_count": 2,
+      "report_count": 1,
       "unique_domains": [
         "news.google.com"
       ],
@@ -305,11 +311,11 @@
     },
     {
       "resolution_id": "ER-0022",
-      "title": "More deadly Russian attacks in Ukraine ahead of US envoys’ visit - Edp24",
+      "title": "Thune-Trump tensions escalate as clock ticks on megabill 3.0 - axios.com",
       "event_ids": [
-        "c07a6cc85e687f0b"
+        "17828a8c4dccb7a0"
       ],
-      "report_count": 2,
+      "report_count": 1,
       "unique_domains": [
         "news.google.com"
       ],
@@ -319,11 +325,11 @@
     },
     {
       "resolution_id": "ER-0023",
-      "title": "US Clears $5 Billion Sale Of JDAM Bombs To Saudi Arabia Amid Iran War - NDTV Profit",
+      "title": "Intensifying Somalia drought likely to be as severe as previous prolonged dry periods, FAO warns - Food and Agriculture Organization",
       "event_ids": [
-        "cd160f5f433c37bc"
+        "1d65ffc8af8c22f4"
       ],
-      "report_count": 2,
+      "report_count": 1,
       "unique_domains": [
         "news.google.com"
       ],
@@ -333,11 +339,11 @@
     },
     {
       "resolution_id": "ER-0024",
-      "title": "Cartels across Mexico turning to explosives - The Arkansas Democrat-Gazette",
+      "title": "Colombia’s 2026 Presidential Elections: Implications for US Policy - Quincy Institute for Responsible Statecraft",
       "event_ids": [
-        "b7f96c8cab0b0baa"
+        "58d83b7198d69c50"
       ],
-      "report_count": 2,
+      "report_count": 1,
       "unique_domains": [
         "news.google.com"
       ],
@@ -347,13 +353,13 @@
     },
     {
       "resolution_id": "ER-0025",
-      "title": "Prince William to represent King Charles at funeral of Norway’s King Harald V",
+      "title": "The LEGO Foundation commits $97 million to help IRC scale early learning for 5 million children affected by crisis - International Rescue Committee",
       "event_ids": [
-        "f749698ea9a4fa31"
+        "df9f5f1680bd1b74"
       ],
       "report_count": 1,
       "unique_domains": [
-        "theguardian.com"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -361,13 +367,13 @@
     },
     {
       "resolution_id": "ER-0026",
-      "title": "Commentary: The pushback against AI songs is music to my ears",
+      "title": "Tackling the intersecting challenges of climate change, fragility and conflict - blogs.worldbank.org",
       "event_ids": [
-        "13b6c4dde29b532b"
+        "b4ab9d7068c62c0c"
       ],
       "report_count": 1,
       "unique_domains": [
-        "channelnewsasia.com"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -375,13 +381,13 @@
     },
     {
       "resolution_id": "ER-0027",
-      "title": "Francisco Cerundolo roars back from brink to stun home hope Taylor Fritz at US Open",
+      "title": "The UN Security Council - Council on Foreign Relations",
       "event_ids": [
-        "9af36b2031292e9d"
+        "75a125fab7b68845"
       ],
       "report_count": 1,
       "unique_domains": [
-        "theguardian.com"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -389,13 +395,13 @@
     },
     {
       "resolution_id": "ER-0028",
-      "title": "El Niño strengthens into 2027 , raising risks for food prices , power and trade",
+      "title": "Analysis: Africa’s unreported extreme weather in 2022 and climate change - Carbon Brief",
       "event_ids": [
-        "74168854530ab877"
+        "1a95cd7082f65d43"
       ],
       "report_count": 1,
       "unique_domains": [
-        "marketbusinessnews.com"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -403,13 +409,13 @@
     },
     {
       "resolution_id": "ER-0029",
-      "title": "Presidente angolano promete água em abundância e reduo de conflitos no Cunene",
+      "title": "InSight Crime’s 2024 Homicide Round-Up - InSight Crime",
       "event_ids": [
-        "3decd0fbfe5f4944"
+        "cf8c0ac6569ef208"
       ],
       "report_count": 1,
       "unique_domains": [
-        "executivedigest.sapo.pt"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -417,13 +423,13 @@
     },
     {
       "resolution_id": "ER-0030",
-      "title": "Alerta : Clima pone en jaque al campo guatemalteco y 377 mil familias de agricultores están en peligro",
+      "title": "Instability in Syria | Global Conflict Tracker - Council on Foreign Relations",
       "event_ids": [
-        "786821f3b0309f9a"
+        "d30957fdc9640146"
       ],
       "report_count": 1,
       "unique_domains": [
-        "lahora.gt"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -431,13 +437,13 @@
     },
     {
       "resolution_id": "ER-0031",
-      "title": "Con más de un centenar de reproductores Angus y Hereford , arrancó la 49° Expo Ganadera en Río Colorado",
+      "title": "Recalibrating Diplomacy with Myanmar after Election Seals Military Control - International Crisis Group",
       "event_ids": [
-        "5d56c9b5bb3c0dd8"
+        "8e6aadf021ebf051"
       ],
       "report_count": 1,
       "unique_domains": [
-        "rionegro.com.ar"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -445,13 +451,13 @@
     },
     {
       "resolution_id": "ER-0032",
-      "title": "Premierul Greciei începe revoluția visată de toți românii ! Măriri de salarii , bonusuri pentru pensionari și reduceri de taxe și impozite",
+      "title": "Somalia’s humanitarian crisis worsening with 6.5 million people facing high levels of hunger, Federal Government and United Nations warn - Food and Agriculture Organization",
       "event_ids": [
-        "e0fcea845a8be776"
+        "5d1244ec49e0c81d"
       ],
       "report_count": 1,
       "unique_domains": [
-        "stiripesurse.ro"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -459,13 +465,13 @@
     },
     {
       "resolution_id": "ER-0033",
-      "title": "Migración detiene a 38 haitianos tras intervenir 12 negocios en Santo Domingo",
+      "title": "Congress passes war powers measure for first time, breaking with Trump over Iran - BBC",
       "event_ids": [
-        "1b10a7ca554fd2db"
+        "6bf685488c59b3f0"
       ],
       "report_count": 1,
       "unique_domains": [
-        "diariodigitalrd.com"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -473,13 +479,13 @@
     },
     {
       "resolution_id": "ER-0034",
-      "title": "Letter : National debt has increased under current administration",
+      "title": "Trump’s Refusal to Sign Housing Bill Complicates Fate of Bipartisan Effort - The New York Times",
       "event_ids": [
-        "8cfd8cdc6f7f0f50"
+        "e3b35f823045af68"
       ],
       "report_count": 1,
       "unique_domains": [
-        "grandforksherald.com"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -487,13 +493,13 @@
     },
     {
       "resolution_id": "ER-0035",
-      "title": "A eleio alemã que pode resultar no 1° governador da AfD",
+      "title": "Trump’s Capitol visit devolves into shouting match with GOP senator he helped oust in primary fight - CNN",
       "event_ids": [
-        "615f6ff09dff9357"
+        "c6d7bb9fefb1df9d"
       ],
       "report_count": 1,
       "unique_domains": [
-        "dw.com"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -501,13 +507,13 @@
     },
     {
       "resolution_id": "ER-0036",
-      "title": "الضفة .. سؤال أردني أم فلسطيني ؟",
+      "title": "Trump is growing tired of hearing ‘no’ from Thune. GOP senators are lining up behind the majority leader - CNN",
       "event_ids": [
-        "e2190a93d0670117"
+        "96683f88fb6fcdde"
       ],
       "report_count": 1,
       "unique_domains": [
-        "alghad.com"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -515,13 +521,13 @@
     },
     {
       "resolution_id": "ER-0037",
-      "title": "إسرائيل بعد أمريكا",
+      "title": "Trump asks Congress for $87.6B, mostly for Iran war - axios.com",
       "event_ids": [
-        "a88753935b4ae3eb"
+        "d0ba8b28dd9af37e"
       ],
       "report_count": 1,
       "unique_domains": [
-        "addustour.com"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -529,13 +535,13 @@
     },
     {
       "resolution_id": "ER-0038",
-      "title": "마사회 이전 논의 … 재원 확보 · 경마장 유지가 관건",
+      "title": "Trump cancels housing affordability bill signing until SAVE Act is passed - axios.com",
       "event_ids": [
-        "b5b952e733bc7339"
+        "f5f463149e25c699"
       ],
       "report_count": 1,
       "unique_domains": [
-        "newspim.com"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -543,13 +549,13 @@
     },
     {
       "resolution_id": "ER-0039",
-      "title": "[ AI그래픽 ] 삼성 좌완 이승현 5이닝 무실점 , 9월 5일 잠실 LG전 투구 분석",
+      "title": "Trump runs into Republicans who won't bend - axios.com",
       "event_ids": [
-        "79035d516dbb7307"
+        "0a0467d32629734f"
       ],
       "report_count": 1,
       "unique_domains": [
-        "newspim.com"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -557,13 +563,13 @@
     },
     {
       "resolution_id": "ER-0040",
-      "title": "الجامعات الخاصة بالمغرب .. من ملاذ بديل إلى استثمار عائلي للإدماج في سوق العمل",
+      "title": "They poured fortunes into trying to join Congress — and usually lost - The Washington Post",
       "event_ids": [
-        "092b80e1554e03a9"
+        "e5c0be74cc43275c"
       ],
       "report_count": 1,
       "unique_domains": [
-        "aljazeera.net"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -571,13 +577,13 @@
     },
     {
       "resolution_id": "ER-0041",
-      "title": "Em meio à crise no STF , Gilmar Mendes formaliza proposta para vetar delegados da PF e militares em gabinetes",
+      "title": "Impact of drought on global food security by 2050 - Nature",
       "event_ids": [
-        "1d55741ea0a38483"
+        "27f47b2ecfe911ae"
       ],
       "report_count": 1,
       "unique_domains": [
-        "revistaforum.com.br"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -585,13 +591,13 @@
     },
     {
       "resolution_id": "ER-0042",
-      "title": "Lori Dengler | Himalayan floods : A freak event or sign of things to come ?",
+      "title": "Latin America and the US: Changing Equations and Diplomatic Failures Under Trump - TheWire.in",
       "event_ids": [
-        "a30cd7de8e053f8b"
+        "5827769599e827cf"
       ],
       "report_count": 1,
       "unique_domains": [
-        "times-standard.com"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -599,13 +605,13 @@
     },
     {
       "resolution_id": "ER-0043",
-      "title": "La Fundación Banco de Alimentos Santiago del Estero celebra mañana su Almuerzo Anual Solidario con récord de apoyo y un impacto transformador - El evento reunirá a más de 300 personas , junto al respaldo de más de 30 empresas , institucione",
+      "title": "House Republicans adopt $95 billion package for the Iran war and Trump's priorities - PBS",
       "event_ids": [
-        "0249212c3420a8dd"
+        "2c7bf7f74aaee94a"
       ],
       "report_count": 1,
       "unique_domains": [
-        "elliberal.com.ar"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -613,13 +619,13 @@
     },
     {
       "resolution_id": "ER-0044",
-      "title": "Accoltellamento a Olbia , i partiti chiedono più sicurezza in città",
+      "title": "House Adopts $95 Billion G.O.P. Budget for Iran War - The New York Times",
       "event_ids": [
-        "cb83e99c8a8ed7af"
+        "4d249f8122019f3a"
       ],
       "report_count": 1,
       "unique_domains": [
-        "unionesarda.it"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -627,13 +633,13 @@
     },
     {
       "resolution_id": "ER-0045",
-      "title": "هل يصمد المنبوذ الاقتصادي ..؟",
+      "title": "Democrats chip away at GOP cash lead centered on Trump - The Washington Post",
       "event_ids": [
-        "dfcab449dad77e4b"
+        "fd482bfa008b71a1"
       ],
       "report_count": 1,
       "unique_domains": [
-        "alghad.com"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -641,13 +647,13 @@
     },
     {
       "resolution_id": "ER-0046",
-      "title": "تحالف أسطول الحرية يعلن مهمة جديدة لكسر الحصار عن غزة",
+      "title": "How climate change impacts refugees and displaced communities - unrefugees.org",
       "event_ids": [
-        "cb80f60e75310e67"
+        "25c81d97306360c2"
       ],
       "report_count": 1,
       "unique_domains": [
-        "aljazeera.net"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -655,13 +661,13 @@
     },
     {
       "resolution_id": "ER-0047",
-      "title": "Najveće svjetske agencije raspisale se o velikom prosvjedu zbog otpada u Gospiću",
+      "title": "Hunger Hotspots: FAO-WFP early warnings on acute food insecurity, October 2022 to January 2023 Outlook - World - ReliefWeb",
       "event_ids": [
-        "bfc94bd48611ac5d"
+        "c406fb42a7b0f5b4"
       ],
       "report_count": 1,
       "unique_domains": [
-        "net.hr"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -669,13 +675,13 @@
     },
     {
       "resolution_id": "ER-0048",
-      "title": "India - Nepal teams continue rescue mission at Chilime tunnel : Indian Envoy to Nepal",
+      "title": "Famine looms in Somalia, but many ‘hunger hotspots’ are in deep trouble - news.un.org",
       "event_ids": [
-        "782bbd22fa29bce6"
+        "03867482e468c262"
       ],
       "report_count": 1,
       "unique_domains": [
-        "nepalnational.com"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -683,13 +689,13 @@
     },
     {
       "resolution_id": "ER-0049",
-      "title": "عُمان .. رهان التحول المناخي",
+      "title": "Trump Gets His Payback, but It Comes at a Cost in Congress - The New York Times",
       "event_ids": [
-        "46f4bba7d6e141a4"
+        "0e148bf81cfec626"
       ],
       "report_count": 1,
       "unique_domains": [
-        "addustour.com"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -697,13 +703,13 @@
     },
     {
       "resolution_id": "ER-0050",
-      "title": "Koja je zemlja najsigurnija u slučaju globalne katastrofe ? Znanost ima odgovor",
+      "title": "Senate advances resolution to end Iran war as GOP Sen. Bill Cassidy flips to support it - NBC News",
       "event_ids": [
-        "28b16ff0ada4b7fc"
+        "294cf547b54de3da"
       ],
       "report_count": 1,
       "unique_domains": [
-        "dnevno.hr"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -711,13 +717,13 @@
     },
     {
       "resolution_id": "ER-0051",
-      "title": "規範致命自主武器邁出重要一步 聯合國就文本達成共識 - 國際",
+      "title": "Bridging localisation and climate adaptation pathways: Case studies from Asia, the Middle East and Africa, December 2023 - ReliefWeb",
       "event_ids": [
-        "904d0bd5a3b49466"
+        "173c844ed52ab213"
       ],
       "report_count": 1,
       "unique_domains": [
-        "news.ltn.com.tw"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -725,13 +731,13 @@
     },
     {
       "resolution_id": "ER-0052",
-      "title": "Tarcísio promete R$ 500 bilhões em obras e destaca TIC , barragens e rodovias na região de Campinas",
+      "title": "East Africa's Poor Rains: Hunger Worsened, Crops Scorched, Livestock Dead - Global Issues.Org",
       "event_ids": [
-        "79c4c40aaf9e48f5"
+        "9ce184a4af84e651"
       ],
       "report_count": 1,
       "unique_domains": [
-        "acidadeon.com"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -739,13 +745,13 @@
     },
     {
       "resolution_id": "ER-0053",
-      "title": "Comunas de Mixco , Santa Catarina Pinula y la capital reportan disminución de agua en pozos municipales",
+      "title": "The hidden face of climate disasters - The Climate Watch",
       "event_ids": [
-        "0a468ef72e32b63c"
+        "c96ce835d8603e98"
       ],
       "report_count": 1,
       "unique_domains": [
-        "lahora.gt"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -753,13 +759,13 @@
     },
     {
       "resolution_id": "ER-0054",
-      "title": "Ya tienen la cisterna : la conectarán para surtir agua al Centro",
+      "title": "Iran was a regional threat. War with the US changed that. | Opinion - usatoday.com",
       "event_ids": [
-        "b5a53134ed0cb33c"
+        "0027cc6306e48823"
       ],
       "report_count": 1,
       "unique_domains": [
-        "tiempo.com.mx"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -767,13 +773,13 @@
     },
     {
       "resolution_id": "ER-0055",
-      "title": "Compra de ingressos : governo muda regras para shows e amplia proteo ao consumidor",
+      "title": "Uae Fuels Regionalization Of Sudan War; Jnim Expands Along Benin Nigeria Border: Africa File, June 18, 2025 - Critical Threats",
       "event_ids": [
-        "d00098351e1bd347"
+        "f1080679e05f4579"
       ],
       "report_count": 1,
       "unique_domains": [
-        "acidadeon.com"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -781,13 +787,13 @@
     },
     {
       "resolution_id": "ER-0056",
-      "title": "南横套河见证 ： 夜幕下的血色突围 - 中国军网",
+      "title": "Surging gang violence across Latin America challenges aid sector to respond - The New Humanitarian",
       "event_ids": [
-        "bd88576e15c6bc7d"
+        "6af493bf776d3afc"
       ],
       "report_count": 1,
       "unique_domains": [
-        "81.cn"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -795,13 +801,13 @@
     },
     {
       "resolution_id": "ER-0057",
-      "title": "Envenenamento por mercúrio : Justiça ordena tratamento para artesã",
+      "title": "Trump upends careful compromise on intel chief, plunging GOP into disarray - CNN",
       "event_ids": [
-        "471ac725b69a1e29"
+        "d4aae4a70ca43575"
       ],
       "report_count": 1,
       "unique_domains": [
-        "g1.globo.com"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -809,13 +815,13 @@
     },
     {
       "resolution_id": "ER-0058",
-      "title": "Atac cibernetic de proporții în Germania : Hackerii șantajează Berlinul cu 2 milioane de euro - Peste un milion de date sensibile au fost publicate pe darknet",
+      "title": "Trump's DNI pick hearing scuttled over voting law spat - axios.com",
       "event_ids": [
-        "65887f0bfcd794fc"
+        "c9c6ec3fa8dd58a6"
       ],
       "report_count": 1,
       "unique_domains": [
-        "stiripesurse.ro"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -823,13 +829,13 @@
     },
     {
       "resolution_id": "ER-0059",
-      "title": "Мошенничество с кулинарными рецептами 2026 : новые схемы обмана",
+      "title": "Ten African Security Trends from 2025 in Graphics - Africa Center for Strategic Studies",
       "event_ids": [
-        "f48707cbc8d06990"
+        "6a3a741658b0d52a"
       ],
       "report_count": 1,
       "unique_domains": [
-        "iz.ru"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -837,13 +843,13 @@
     },
     {
       "resolution_id": "ER-0060",
-      "title": "Luis Miguel De Camps apuesta por conectar educación , talento y vocaciones productivas para transformar el agro",
+      "title": "Tracking Trump and Latin America: Security—Trump Blockades Sanctioned Venezuelan Oil - AS/COA",
       "event_ids": [
-        "f39c0cc53ccce03c"
+        "a1eef4cc9565af35"
       ],
       "report_count": 1,
       "unique_domains": [
-        "elcaribe.com.do"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -851,13 +857,13 @@
     },
     {
       "resolution_id": "ER-0061",
-      "title": "Fed九月會升息嗎 ？ 解讀聯準會下一步怎麼走 - 財經",
+      "title": "2026 Presidential Elections in Latin America: A Preview - AS/COA",
       "event_ids": [
-        "0580eb8af7afcca7"
+        "335e289d11e3abb4"
       ],
       "report_count": 1,
       "unique_domains": [
-        "chinatimes.com"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -865,13 +871,13 @@
     },
     {
       "resolution_id": "ER-0062",
-      "title": "Chinese national rescued alive in flood - hit Rasuwa ; 64 - year - old woman rescued in Nuwakot",
+      "title": "Democrats maintain massive money edge in key congressional races - The Washington Post",
       "event_ids": [
-        "a94882827fe69165"
+        "50558c391d0d576b"
       ],
       "report_count": 1,
       "unique_domains": [
-        "nepalnational.com"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -879,13 +885,13 @@
     },
     {
       "resolution_id": "ER-0063",
-      "title": "US pressure on Iran starting to tell , as sanctions and blockade bite",
+      "title": "Threats in sub-Saharan Africa by 2040 - A prospective analysis - Fondation pour la Recherche Stratégique",
       "event_ids": [
-        "03868936470fa5a6"
+        "cff739309eca7856"
       ],
       "report_count": 1,
       "unique_domains": [
-        "ksl.com:443"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -893,13 +899,13 @@
     },
     {
       "resolution_id": "ER-0064",
-      "title": "The hidden cost of America massive national debt | Opinion",
+      "title": "Bolduc wins New Hampshire's GOP Senate primary - PBS",
       "event_ids": [
-        "5ca697f37eaa10ef"
+        "735c355344449d8e"
       ],
       "report_count": 1,
       "unique_domains": [
-        "mountaineagle.com"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -907,13 +913,13 @@
     },
     {
       "resolution_id": "ER-0065",
-      "title": "La santandereana detrás de la tutela que tumbó el decreto con el que Petro quiso detener la minería en Santurbán",
+      "title": "Climate proofing: Zimbabwe's key to rural resilience and food security. - Food and Agriculture Organization",
       "event_ids": [
-        "b8ca403f3fcc8d41"
+        "6431cd4b6e0cd820"
       ],
       "report_count": 1,
       "unique_domains": [
-        "las2orillas.co"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -921,13 +927,13 @@
     },
     {
       "resolution_id": "ER-0066",
-      "title": "Proposta de Gilmar barra membros das Forças Armadas no STF - 05 / 09 / 2026 - Política",
+      "title": "Climate change as a game changer: Rethinking Africa’s food security- health outcome nexus through a multi-sectoral lens - Nature",
       "event_ids": [
-        "b1909dbe1b56ed61"
+        "71d1c6cfe8fb9d22"
       ],
       "report_count": 1,
       "unique_domains": [
-        "www1.folha.uol.com.br"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -935,13 +941,13 @@
     },
     {
       "resolution_id": "ER-0067",
-      "title": "House of Lords must not wreck assisted dying bill once again - let MPs decide",
+      "title": "Is the Middle East Reaching a Boiling Point? - The National Interest",
       "event_ids": [
-        "94eed7e99b8ec767"
+        "a819fab414bb25f4"
       ],
       "report_count": 1,
       "unique_domains": [
-        "mirror.co.uk"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -949,13 +955,13 @@
     },
     {
       "resolution_id": "ER-0068",
-      "title": "Polícia conclui que morte de João Gabriel em Araucária foi acidental",
+      "title": "Republicans are sweating about the White House ballroom project - axios.com",
       "event_ids": [
-        "46ff9253658cea18"
+        "e49ab95482739529"
       ],
       "report_count": 1,
       "unique_domains": [
-        "band.com.br"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -963,13 +969,13 @@
     },
     {
       "resolution_id": "ER-0069",
-      "title": "Polvo del Sahara ingresa a Guatemala este sábado 5 de septiembre : Estas son las recomendaciones de las autoridades",
+      "title": "White House ballroom funding a matter of presidential safety for US Republicans - report - The Jerusalem Post",
       "event_ids": [
-        "be523e6ba9e68379"
+        "abfdb15eab09dbb6"
       ],
       "report_count": 1,
       "unique_domains": [
-        "lahora.gt"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -977,13 +983,13 @@
     },
     {
       "resolution_id": "ER-0070",
-      "title": "1 . 000 días de Javier Milei : ¿ Cómo se encuentra la economía tras el ajuste más grande de la historia ?",
+      "title": "How Sudan became the world’s worst and most neglected humanitarian disaster - arabnews.jp",
       "event_ids": [
-        "21877cc6322ea24a"
+        "fafcc72a721433c0"
       ],
       "report_count": 1,
       "unique_domains": [
-        "elintransigente.com"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -991,13 +997,13 @@
     },
     {
       "resolution_id": "ER-0071",
-      "title": "Canada confirms defence strategy against invasion mainly waiting for Americans to die from preventable illnesses",
+      "title": "Americas: Limited Protection for People Fleeing Venezuela, Haiti - hrw.org",
       "event_ids": [
-        "81c0ea4b19bda60b"
+        "c91be4b7260ad0b4"
       ],
       "report_count": 1,
       "unique_domains": [
-        "thebeaverton.com"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -1005,13 +1011,13 @@
     },
     {
       "resolution_id": "ER-0072",
-      "title": "风雨中 ， 竞渡之舟 化身 生命之舟",
+      "title": "Niger: Food Insecurity Crisis - Emergency Appeal n° MDRNE026 - ReliefWeb",
       "event_ids": [
-        "433f7ce0037f5377"
+        "6d807b735e9797bc"
       ],
       "report_count": 1,
       "unique_domains": [
-        "baijiahao.baidu.com"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -1019,13 +1025,13 @@
     },
     {
       "resolution_id": "ER-0073",
-      "title": "UK households urged to stockpile tins of food as soon as possible",
+      "title": "ECB staff macroeconomic projections for the euro area, March 2026 - European Central Bank",
       "event_ids": [
-        "e8e584e8f360cd07"
+        "8d69da017bc1937d"
       ],
       "report_count": 1,
       "unique_domains": [
-        "express.co.uk"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -1033,13 +1039,13 @@
     },
     {
       "resolution_id": "ER-0074",
-      "title": "Granma Education Claims Joy in Schools Despite Fuel Crisis",
+      "title": "InSight Crime’s 2025 Homicide Round-Up - InSight Crime",
       "event_ids": [
-        "2da50689bd2c9850"
+        "29bd92761a03e0f7"
       ],
       "report_count": 1,
       "unique_domains": [
-        "cubaheadlines.com"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -1047,13 +1053,13 @@
     },
     {
       "resolution_id": "ER-0075",
-      "title": "El Niño : el valor de actuar con anticipación",
+      "title": "Iran’s regional proxies hold back from all-out war with US and Israel - The Guardian",
       "event_ids": [
-        "a0f3832e2ad61e88"
+        "d8aa819acfc2862a"
       ],
       "report_count": 1,
       "unique_domains": [
-        "prensa.com"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -1061,13 +1067,13 @@
     },
     {
       "resolution_id": "ER-0076",
-      "title": "UK households urged to stockpile three days of food and water | united kingdom | News",
+      "title": "The hidden health crisis: How plant diseases threaten global food security - Food and Agriculture Organization",
       "event_ids": [
-        "f253a1e713240f09"
+        "62f8d269c0b5931f"
       ],
       "report_count": 1,
       "unique_domains": [
-        "express.co.uk"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -1075,13 +1081,13 @@
     },
     {
       "resolution_id": "ER-0077",
-      "title": "Kuduz haritasını nasıl doğru çizebiliriz ?",
+      "title": "When people are displaced by climate change, what rights do they have? - Amnesty International",
       "event_ids": [
-        "2227842840faa6f4"
+        "41e30d0695559ac3"
       ],
       "report_count": 1,
       "unique_domains": [
-        "agos.com.tr"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -1089,13 +1095,13 @@
     },
     {
       "resolution_id": "ER-0078",
-      "title": "As dez pragas do agro brasileiro",
+      "title": "The current El Niño weather phenomenon is expected to break records for its overall strength, a top expert said, raising concerns about droughts, floods and other extremes linked to the event. #WeatherPatrol | via ANC 24/7 Link to full story in the comments se - facebook.com",
       "event_ids": [
-        "ee38df18d8ed9842"
+        "06e670ddf2ef6096"
       ],
       "report_count": 1,
       "unique_domains": [
-        "estadao.com.br"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",
@@ -1103,27 +1109,13 @@
     },
     {
       "resolution_id": "ER-0079",
-      "title": "Το καλάθι Μητσοτάκη ανοίγει : Ποιοι παίρνουν χρήματα από 25 Σεπτεμβρίου – Όλες οι ημερομηνίες έως το 2027",
+      "title": "Opinion | Trump’s Easter tirade reveals what the Iran war has become - The Washington Post",
       "event_ids": [
-        "4b16cb192d439879"
+        "9a245b2dadcc45d2"
       ],
       "report_count": 1,
       "unique_domains": [
-        "lykavitos.gr"
-      ],
-      "member_count": 1,
-      "merge_reason": "single candidate event cluster",
-      "confidence": "low"
-    },
-    {
-      "resolution_id": "ER-0080",
-      "title": "Malda : 2 lakh people stuck in waterlogged villages of bhutni",
-      "event_ids": [
-        "8587503a6dee69a9"
-      ],
-      "report_count": 1,
-      "unique_domains": [
-        "sangbadpratidin.in"
+        "news.google.com"
       ],
       "member_count": 1,
       "merge_reason": "single candidate event cluster",

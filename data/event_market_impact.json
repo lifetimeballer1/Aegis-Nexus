@@ -1,17 +1,59 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-06T15:38:49.633755Z",
+  "updatedAt": "2026-09-10T03:03:11.737946Z",
   "method": "Keyword-based event-to-market relevance mapping using existing public market indicators; no causal attribution.",
   "events": [
     {
-      "eventId": "aa26575eaa22323a",
-      "title": "Trump envoys Witkoff, Kushner arrive in Moscow with proposal to end war - The New Voice of Ukraine",
+      "eventId": "0dfe3e7a3c0607de",
+      "title": "US envoys Witkoff, Kushner meet Putin for talks on Ukraine war",
       "marketBuckets": [
         "europe",
         "risk",
         "us"
       ],
       "relatedIndicators": [
+        {
+          "name": "FTSE 100",
+          "price": 10831.09,
+          "changePercent": -0.003785255966392969,
+          "status": "closed",
+          "marketTime": "2026-09-04T15:35:00+00:00"
+        },
+        {
+          "name": "EUR / USD",
+          "price": 1.1621150970458984,
+          "changePercent": -0.08467912940431478,
+          "status": "closed",
+          "marketTime": "2026-09-04T21:29:00+00:00"
+        },
+        {
+          "name": "DAX",
+          "price": 26046.4,
+          "changePercent": 0.16574819349852588,
+          "status": "closed",
+          "marketTime": "2026-09-04T16:00:00+00:00"
+        },
+        {
+          "name": "Gold",
+          "price": 4476.60009765625,
+          "changePercent": -1.3943016882255037,
+          "status": "stale",
+          "marketTime": "2026-09-04T20:59:00+00:00"
+        },
+        {
+          "name": "VIX",
+          "price": 14.520000457763672,
+          "changePercent": 1.3966512413664216,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:14:00+00:00"
+        },
+        {
+          "name": "U.S. 10Y Yield",
+          "price": 4.783999919891357,
+          "changePercent": 0.46198907793695626,
+          "status": "closed",
+          "marketTime": "2026-09-04T18:59:00+00:00"
+        },
         {
           "name": "Nasdaq Composite",
           "price": 26506.99,
@@ -20,85 +62,11 @@
           "marketTime": "2026-09-04T21:16:00+00:00"
         },
         {
-          "name": "S&P 500",
-          "price": 7718.6,
-          "changePercent": -0.3757239235851583,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:33:00+00:00"
-        },
-        {
           "name": "Russell 2000",
           "price": 2975.648,
           "changePercent": 0.24856229386141276,
           "status": "closed",
           "marketTime": "2026-09-04T20:30:00+00:00"
-        },
-        {
-          "name": "Dow Jones",
-          "price": 53414.25,
-          "changePercent": -0.5063694326836901,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:33:00+00:00"
-        },
-        {
-          "name": "Nasdaq 100",
-          "price": 29544.154,
-          "changePercent": 0.20980045654511137,
-          "status": "closed",
-          "marketTime": "2026-09-04T21:16:00+00:00"
-        },
-        {
-          "name": "U.S. 10Y Yield",
-          "price": 4.783999919891357,
-          "changePercent": 0.46198907793695626,
-          "status": "closed",
-          "marketTime": "2026-09-04T18:59:00+00:00"
-        },
-        {
-          "name": "Gold",
-          "price": 4476.60009765625,
-          "changePercent": -1.3943016882255037,
-          "status": "stale",
-          "marketTime": "2026-09-04T20:59:00+00:00"
-        },
-        {
-          "name": "VIX",
-          "price": 14.520000457763672,
-          "changePercent": 1.3966512413664216,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:14:00+00:00"
-        }
-      ],
-      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
-      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
-    },
-    {
-      "eventId": "cd02c5e532c38eed",
-      "title": "Green forest fire notification in Mozambique",
-      "marketBuckets": [
-        "risk"
-      ],
-      "relatedIndicators": [
-        {
-          "name": "Gold",
-          "price": 4476.60009765625,
-          "changePercent": -1.3943016882255037,
-          "status": "stale",
-          "marketTime": "2026-09-04T20:59:00+00:00"
-        },
-        {
-          "name": "U.S. 10Y Yield",
-          "price": 4.783999919891357,
-          "changePercent": 0.46198907793695626,
-          "status": "closed",
-          "marketTime": "2026-09-04T18:59:00+00:00"
-        },
-        {
-          "name": "VIX",
-          "price": 14.520000457763672,
-          "changePercent": 1.3966512413664216,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:14:00+00:00"
         }
       ],
       "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
@@ -119,755 +87,32 @@
           "marketTime": "2026-09-04T20:59:00+00:00"
         },
         {
-          "name": "U.S. 10Y Yield",
-          "price": 4.783999919891357,
-          "changePercent": 0.46198907793695626,
-          "status": "closed",
-          "marketTime": "2026-09-04T18:59:00+00:00"
-        },
-        {
           "name": "VIX",
           "price": 14.520000457763672,
           "changePercent": 1.3966512413664216,
           "status": "closed",
           "marketTime": "2026-09-04T20:14:00+00:00"
+        },
+        {
+          "name": "U.S. 10Y Yield",
+          "price": 4.783999919891357,
+          "changePercent": 0.46198907793695626,
+          "status": "closed",
+          "marketTime": "2026-09-04T18:59:00+00:00"
         }
       ],
       "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
       "updatedAt": "2026-09-06T15:38:23.155747+00:00"
     },
     {
-      "eventId": "6296e8eb5edc9cfd",
-      "title": "Putin orders 72-hour pause in Kyiv strikes as US envoys visit Russia and Ukraine - Belfast Telegraph",
+      "eventId": "cb2566ead6cb6da4",
+      "title": "Russia’s Putin meets US envoys to discuss Trump proposal to end Ukraine war",
       "marketBuckets": [
         "europe",
         "risk",
         "us"
       ],
       "relatedIndicators": [
-        {
-          "name": "Nasdaq Composite",
-          "price": 26506.99,
-          "changePercent": -0.2900606001331508,
-          "status": "closed",
-          "marketTime": "2026-09-04T21:16:00+00:00"
-        },
-        {
-          "name": "S&P 500",
-          "price": 7718.6,
-          "changePercent": -0.3757239235851583,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:33:00+00:00"
-        },
-        {
-          "name": "Russell 2000",
-          "price": 2975.648,
-          "changePercent": 0.24856229386141276,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:30:00+00:00"
-        },
-        {
-          "name": "Dow Jones",
-          "price": 53414.25,
-          "changePercent": -0.5063694326836901,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:33:00+00:00"
-        },
-        {
-          "name": "Nasdaq 100",
-          "price": 29544.154,
-          "changePercent": 0.20980045654511137,
-          "status": "closed",
-          "marketTime": "2026-09-04T21:16:00+00:00"
-        },
-        {
-          "name": "U.S. 10Y Yield",
-          "price": 4.783999919891357,
-          "changePercent": 0.46198907793695626,
-          "status": "closed",
-          "marketTime": "2026-09-04T18:59:00+00:00"
-        },
-        {
-          "name": "Gold",
-          "price": 4476.60009765625,
-          "changePercent": -1.3943016882255037,
-          "status": "stale",
-          "marketTime": "2026-09-04T20:59:00+00:00"
-        },
-        {
-          "name": "VIX",
-          "price": 14.520000457763672,
-          "changePercent": 1.3966512413664216,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:14:00+00:00"
-        }
-      ],
-      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
-      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
-    },
-    {
-      "eventId": "17e5746efc05d479",
-      "title": "Greeks promised tax relief , wage hikes as protesters take to the streets over cost of living crunch",
-      "marketBuckets": [
-        "risk"
-      ],
-      "relatedIndicators": [
-        {
-          "name": "Gold",
-          "price": 4476.60009765625,
-          "changePercent": -1.3943016882255037,
-          "status": "stale",
-          "marketTime": "2026-09-04T20:59:00+00:00"
-        },
-        {
-          "name": "U.S. 10Y Yield",
-          "price": 4.783999919891357,
-          "changePercent": 0.46198907793695626,
-          "status": "closed",
-          "marketTime": "2026-09-04T18:59:00+00:00"
-        },
-        {
-          "name": "VIX",
-          "price": 14.520000457763672,
-          "changePercent": 1.3966512413664216,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:14:00+00:00"
-        }
-      ],
-      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
-      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
-    },
-    {
-      "eventId": "a9b69c7213ce317c",
-      "title": "Putin Meets With Us Envoys At The Kremlin For Renewed Talks On Ending The War In Ukraine",
-      "marketBuckets": [
-        "europe",
-        "risk",
-        "us"
-      ],
-      "relatedIndicators": [
-        {
-          "name": "Nasdaq Composite",
-          "price": 26506.99,
-          "changePercent": -0.2900606001331508,
-          "status": "closed",
-          "marketTime": "2026-09-04T21:16:00+00:00"
-        },
-        {
-          "name": "S&P 500",
-          "price": 7718.6,
-          "changePercent": -0.3757239235851583,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:33:00+00:00"
-        },
-        {
-          "name": "Russell 2000",
-          "price": 2975.648,
-          "changePercent": 0.24856229386141276,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:30:00+00:00"
-        },
-        {
-          "name": "Dow Jones",
-          "price": 53414.25,
-          "changePercent": -0.5063694326836901,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:33:00+00:00"
-        },
-        {
-          "name": "Nasdaq 100",
-          "price": 29544.154,
-          "changePercent": 0.20980045654511137,
-          "status": "closed",
-          "marketTime": "2026-09-04T21:16:00+00:00"
-        },
-        {
-          "name": "U.S. 10Y Yield",
-          "price": 4.783999919891357,
-          "changePercent": 0.46198907793695626,
-          "status": "closed",
-          "marketTime": "2026-09-04T18:59:00+00:00"
-        },
-        {
-          "name": "Gold",
-          "price": 4476.60009765625,
-          "changePercent": -1.3943016882255037,
-          "status": "stale",
-          "marketTime": "2026-09-04T20:59:00+00:00"
-        },
-        {
-          "name": "VIX",
-          "price": 14.520000457763672,
-          "changePercent": 1.3966512413664216,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:14:00+00:00"
-        }
-      ],
-      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
-      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
-    },
-    {
-      "eventId": "f332861d045a1821",
-      "title": "Trump PAC wades into midterms with $10 million ad buy to boost Ken Paxton",
-      "marketBuckets": [
-        "us"
-      ],
-      "relatedIndicators": [
-        {
-          "name": "Nasdaq Composite",
-          "price": 26506.99,
-          "changePercent": -0.2900606001331508,
-          "status": "closed",
-          "marketTime": "2026-09-04T21:16:00+00:00"
-        },
-        {
-          "name": "S&P 500",
-          "price": 7718.6,
-          "changePercent": -0.3757239235851583,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:33:00+00:00"
-        },
-        {
-          "name": "Russell 2000",
-          "price": 2975.648,
-          "changePercent": 0.24856229386141276,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:30:00+00:00"
-        },
-        {
-          "name": "Dow Jones",
-          "price": 53414.25,
-          "changePercent": -0.5063694326836901,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:33:00+00:00"
-        },
-        {
-          "name": "Nasdaq 100",
-          "price": 29544.154,
-          "changePercent": 0.20980045654511137,
-          "status": "closed",
-          "marketTime": "2026-09-04T21:16:00+00:00"
-        },
-        {
-          "name": "U.S. 10Y Yield",
-          "price": 4.783999919891357,
-          "changePercent": 0.46198907793695626,
-          "status": "closed",
-          "marketTime": "2026-09-04T18:59:00+00:00"
-        }
-      ],
-      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
-      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
-    },
-    {
-      "eventId": "b4d4d9112dcb1617",
-      "title": "Congress votes to avert government shutdown ahead of midterms",
-      "marketBuckets": [
-        "us"
-      ],
-      "relatedIndicators": [
-        {
-          "name": "Nasdaq Composite",
-          "price": 26506.99,
-          "changePercent": -0.2900606001331508,
-          "status": "closed",
-          "marketTime": "2026-09-04T21:16:00+00:00"
-        },
-        {
-          "name": "S&P 500",
-          "price": 7718.6,
-          "changePercent": -0.3757239235851583,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:33:00+00:00"
-        },
-        {
-          "name": "Russell 2000",
-          "price": 2975.648,
-          "changePercent": 0.24856229386141276,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:30:00+00:00"
-        },
-        {
-          "name": "Dow Jones",
-          "price": 53414.25,
-          "changePercent": -0.5063694326836901,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:33:00+00:00"
-        },
-        {
-          "name": "Nasdaq 100",
-          "price": 29544.154,
-          "changePercent": 0.20980045654511137,
-          "status": "closed",
-          "marketTime": "2026-09-04T21:16:00+00:00"
-        },
-        {
-          "name": "U.S. 10Y Yield",
-          "price": 4.783999919891357,
-          "changePercent": 0.46198907793695626,
-          "status": "closed",
-          "marketTime": "2026-09-04T18:59:00+00:00"
-        }
-      ],
-      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
-      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
-    },
-    {
-      "eventId": "3c330215fe83dcd1",
-      "title": "US-IRAN WAR | U.S. Strikes 3 Iranian Oil Tankers After Navy Warships Targeted - WION",
-      "marketBuckets": [
-        "energy",
-        "risk",
-        "us"
-      ],
-      "relatedIndicators": [
-        {
-          "name": "Nasdaq Composite",
-          "price": 26506.99,
-          "changePercent": -0.2900606001331508,
-          "status": "closed",
-          "marketTime": "2026-09-04T21:16:00+00:00"
-        },
-        {
-          "name": "S&P 500",
-          "price": 7718.6,
-          "changePercent": -0.3757239235851583,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:33:00+00:00"
-        },
-        {
-          "name": "Russell 2000",
-          "price": 2975.648,
-          "changePercent": 0.24856229386141276,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:30:00+00:00"
-        },
-        {
-          "name": "Dow Jones",
-          "price": 53414.25,
-          "changePercent": -0.5063694326836901,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:33:00+00:00"
-        },
-        {
-          "name": "Nasdaq 100",
-          "price": 29544.154,
-          "changePercent": 0.20980045654511137,
-          "status": "closed",
-          "marketTime": "2026-09-04T21:16:00+00:00"
-        },
-        {
-          "name": "U.S. 10Y Yield",
-          "price": 4.783999919891357,
-          "changePercent": 0.46198907793695626,
-          "status": "closed",
-          "marketTime": "2026-09-04T18:59:00+00:00"
-        },
-        {
-          "name": "Gold",
-          "price": 4476.60009765625,
-          "changePercent": -1.3943016882255037,
-          "status": "stale",
-          "marketTime": "2026-09-04T20:59:00+00:00"
-        },
-        {
-          "name": "VIX",
-          "price": 14.520000457763672,
-          "changePercent": 1.3966512413664216,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:14:00+00:00"
-        }
-      ],
-      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
-      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
-    },
-    {
-      "eventId": "82783b4a7de15beb",
-      "title": "Green forest fire notification in Zambia",
-      "marketBuckets": [
-        "risk"
-      ],
-      "relatedIndicators": [
-        {
-          "name": "Gold",
-          "price": 4476.60009765625,
-          "changePercent": -1.3943016882255037,
-          "status": "stale",
-          "marketTime": "2026-09-04T20:59:00+00:00"
-        },
-        {
-          "name": "U.S. 10Y Yield",
-          "price": 4.783999919891357,
-          "changePercent": 0.46198907793695626,
-          "status": "closed",
-          "marketTime": "2026-09-04T18:59:00+00:00"
-        },
-        {
-          "name": "VIX",
-          "price": 14.520000457763672,
-          "changePercent": 1.3966512413664216,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:14:00+00:00"
-        }
-      ],
-      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
-      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
-    },
-    {
-      "eventId": "632fbbf1bd52c1e7",
-      "title": "Green forest fire notification in Indonesia",
-      "marketBuckets": [
-        "risk"
-      ],
-      "relatedIndicators": [
-        {
-          "name": "Gold",
-          "price": 4476.60009765625,
-          "changePercent": -1.3943016882255037,
-          "status": "stale",
-          "marketTime": "2026-09-04T20:59:00+00:00"
-        },
-        {
-          "name": "U.S. 10Y Yield",
-          "price": 4.783999919891357,
-          "changePercent": 0.46198907793695626,
-          "status": "closed",
-          "marketTime": "2026-09-04T18:59:00+00:00"
-        },
-        {
-          "name": "VIX",
-          "price": 14.520000457763672,
-          "changePercent": 1.3966512413664216,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:14:00+00:00"
-        }
-      ],
-      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
-      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
-    },
-    {
-      "eventId": "2b678607b410e963",
-      "title": "US-Israel-Iran War Latest Live News: US Faces Record-High Petrol Prices to Top $4 Per Gallon as War on Iran Continues to Raise Energy Costs - The Sunday Guardian",
-      "marketBuckets": [
-        "energy",
-        "risk",
-        "us"
-      ],
-      "relatedIndicators": [
-        {
-          "name": "Nasdaq Composite",
-          "price": 26506.99,
-          "changePercent": -0.2900606001331508,
-          "status": "closed",
-          "marketTime": "2026-09-04T21:16:00+00:00"
-        },
-        {
-          "name": "S&P 500",
-          "price": 7718.6,
-          "changePercent": -0.3757239235851583,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:33:00+00:00"
-        },
-        {
-          "name": "Russell 2000",
-          "price": 2975.648,
-          "changePercent": 0.24856229386141276,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:30:00+00:00"
-        },
-        {
-          "name": "Dow Jones",
-          "price": 53414.25,
-          "changePercent": -0.5063694326836901,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:33:00+00:00"
-        },
-        {
-          "name": "Nasdaq 100",
-          "price": 29544.154,
-          "changePercent": 0.20980045654511137,
-          "status": "closed",
-          "marketTime": "2026-09-04T21:16:00+00:00"
-        },
-        {
-          "name": "U.S. 10Y Yield",
-          "price": 4.783999919891357,
-          "changePercent": 0.46198907793695626,
-          "status": "closed",
-          "marketTime": "2026-09-04T18:59:00+00:00"
-        },
-        {
-          "name": "Gold",
-          "price": 4476.60009765625,
-          "changePercent": -1.3943016882255037,
-          "status": "stale",
-          "marketTime": "2026-09-04T20:59:00+00:00"
-        },
-        {
-          "name": "VIX",
-          "price": 14.520000457763672,
-          "changePercent": 1.3966512413664216,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:14:00+00:00"
-        }
-      ],
-      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
-      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
-    },
-    {
-      "eventId": "749bc41d09f04eeb",
-      "title": "Putin orders 3-day halt in Kyiv strikes as Trump envoys arrive in Moscow - english.mathrubhumi.com",
-      "marketBuckets": [
-        "risk",
-        "us"
-      ],
-      "relatedIndicators": [
-        {
-          "name": "Nasdaq Composite",
-          "price": 26506.99,
-          "changePercent": -0.2900606001331508,
-          "status": "closed",
-          "marketTime": "2026-09-04T21:16:00+00:00"
-        },
-        {
-          "name": "S&P 500",
-          "price": 7718.6,
-          "changePercent": -0.3757239235851583,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:33:00+00:00"
-        },
-        {
-          "name": "Russell 2000",
-          "price": 2975.648,
-          "changePercent": 0.24856229386141276,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:30:00+00:00"
-        },
-        {
-          "name": "Dow Jones",
-          "price": 53414.25,
-          "changePercent": -0.5063694326836901,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:33:00+00:00"
-        },
-        {
-          "name": "Nasdaq 100",
-          "price": 29544.154,
-          "changePercent": 0.20980045654511137,
-          "status": "closed",
-          "marketTime": "2026-09-04T21:16:00+00:00"
-        },
-        {
-          "name": "U.S. 10Y Yield",
-          "price": 4.783999919891357,
-          "changePercent": 0.46198907793695626,
-          "status": "closed",
-          "marketTime": "2026-09-04T18:59:00+00:00"
-        },
-        {
-          "name": "Gold",
-          "price": 4476.60009765625,
-          "changePercent": -1.3943016882255037,
-          "status": "stale",
-          "marketTime": "2026-09-04T20:59:00+00:00"
-        },
-        {
-          "name": "VIX",
-          "price": 14.520000457763672,
-          "changePercent": 1.3966512413664216,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:14:00+00:00"
-        }
-      ],
-      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
-      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
-    },
-    {
-      "eventId": "4ef1cc324002ed0f",
-      "title": "Netanyahu says Iran will face severe response if Tehran attacks Israel - Business Upturn",
-      "marketBuckets": [
-        "risk",
-        "us"
-      ],
-      "relatedIndicators": [
-        {
-          "name": "Nasdaq Composite",
-          "price": 26506.99,
-          "changePercent": -0.2900606001331508,
-          "status": "closed",
-          "marketTime": "2026-09-04T21:16:00+00:00"
-        },
-        {
-          "name": "S&P 500",
-          "price": 7718.6,
-          "changePercent": -0.3757239235851583,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:33:00+00:00"
-        },
-        {
-          "name": "Russell 2000",
-          "price": 2975.648,
-          "changePercent": 0.24856229386141276,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:30:00+00:00"
-        },
-        {
-          "name": "Dow Jones",
-          "price": 53414.25,
-          "changePercent": -0.5063694326836901,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:33:00+00:00"
-        },
-        {
-          "name": "Nasdaq 100",
-          "price": 29544.154,
-          "changePercent": 0.20980045654511137,
-          "status": "closed",
-          "marketTime": "2026-09-04T21:16:00+00:00"
-        },
-        {
-          "name": "U.S. 10Y Yield",
-          "price": 4.783999919891357,
-          "changePercent": 0.46198907793695626,
-          "status": "closed",
-          "marketTime": "2026-09-04T18:59:00+00:00"
-        },
-        {
-          "name": "Gold",
-          "price": 4476.60009765625,
-          "changePercent": -1.3943016882255037,
-          "status": "stale",
-          "marketTime": "2026-09-04T20:59:00+00:00"
-        },
-        {
-          "name": "VIX",
-          "price": 14.520000457763672,
-          "changePercent": 1.3966512413664216,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:14:00+00:00"
-        }
-      ],
-      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
-      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
-    },
-    {
-      "eventId": "f0a51c475b31673a",
-      "title": "US-Israel-Iran War Live News: 4 Civilians Killed, 9 Injured in Houthi Missile Attack on Heijah Al-Abd Road South of Taiz - The Sunday Guardian",
-      "marketBuckets": [
-        "risk",
-        "us"
-      ],
-      "relatedIndicators": [
-        {
-          "name": "Nasdaq Composite",
-          "price": 26506.99,
-          "changePercent": -0.2900606001331508,
-          "status": "closed",
-          "marketTime": "2026-09-04T21:16:00+00:00"
-        },
-        {
-          "name": "S&P 500",
-          "price": 7718.6,
-          "changePercent": -0.3757239235851583,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:33:00+00:00"
-        },
-        {
-          "name": "Russell 2000",
-          "price": 2975.648,
-          "changePercent": 0.24856229386141276,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:30:00+00:00"
-        },
-        {
-          "name": "Dow Jones",
-          "price": 53414.25,
-          "changePercent": -0.5063694326836901,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:33:00+00:00"
-        },
-        {
-          "name": "Nasdaq 100",
-          "price": 29544.154,
-          "changePercent": 0.20980045654511137,
-          "status": "closed",
-          "marketTime": "2026-09-04T21:16:00+00:00"
-        },
-        {
-          "name": "U.S. 10Y Yield",
-          "price": 4.783999919891357,
-          "changePercent": 0.46198907793695626,
-          "status": "closed",
-          "marketTime": "2026-09-04T18:59:00+00:00"
-        },
-        {
-          "name": "Gold",
-          "price": 4476.60009765625,
-          "changePercent": -1.3943016882255037,
-          "status": "stale",
-          "marketTime": "2026-09-04T20:59:00+00:00"
-        },
-        {
-          "name": "VIX",
-          "price": 14.520000457763672,
-          "changePercent": 1.3966512413664216,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:14:00+00:00"
-        }
-      ],
-      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
-      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
-    },
-    {
-      "eventId": "15f55aa43ae86ad6",
-      "title": "Trump’s peace push under fire? Russia hits Ukraine airports as US envoys arrive for peace talks - Mathrubhumi English",
-      "marketBuckets": [
-        "europe",
-        "us"
-      ],
-      "relatedIndicators": [
-        {
-          "name": "Nasdaq Composite",
-          "price": 26506.99,
-          "changePercent": -0.2900606001331508,
-          "status": "closed",
-          "marketTime": "2026-09-04T21:16:00+00:00"
-        },
-        {
-          "name": "S&P 500",
-          "price": 7718.6,
-          "changePercent": -0.3757239235851583,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:33:00+00:00"
-        },
-        {
-          "name": "Russell 2000",
-          "price": 2975.648,
-          "changePercent": 0.24856229386141276,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:30:00+00:00"
-        },
-        {
-          "name": "Dow Jones",
-          "price": 53414.25,
-          "changePercent": -0.5063694326836901,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:33:00+00:00"
-        },
-        {
-          "name": "Nasdaq 100",
-          "price": 29544.154,
-          "changePercent": 0.20980045654511137,
-          "status": "closed",
-          "marketTime": "2026-09-04T21:16:00+00:00"
-        },
-        {
-          "name": "U.S. 10Y Yield",
-          "price": 4.783999919891357,
-          "changePercent": 0.46198907793695626,
-          "status": "closed",
-          "marketTime": "2026-09-04T18:59:00+00:00"
-        },
         {
           "name": "FTSE 100",
           "price": 10831.09,
@@ -881,62 +126,13 @@
           "changePercent": -0.08467912940431478,
           "status": "closed",
           "marketTime": "2026-09-04T21:29:00+00:00"
-        }
-      ],
-      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
-      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
-    },
-    {
-      "eventId": "d7d02260831cbaaf",
-      "title": "US-Israel-Iran War Latest Live News: Pete Hegseth Says ‘Decisive’ Days ahead as US Refuses To Rule Out Ground Troops; Trump Slams Europe, Iran Blamed For Oil Tanker Strike Near Dubai - The Sunday Guardian",
-      "marketBuckets": [
-        "energy",
-        "europe",
-        "risk",
-        "us"
-      ],
-      "relatedIndicators": [
-        {
-          "name": "Nasdaq Composite",
-          "price": 26506.99,
-          "changePercent": -0.2900606001331508,
-          "status": "closed",
-          "marketTime": "2026-09-04T21:16:00+00:00"
         },
         {
-          "name": "S&P 500",
-          "price": 7718.6,
-          "changePercent": -0.3757239235851583,
+          "name": "DAX",
+          "price": 26046.4,
+          "changePercent": 0.16574819349852588,
           "status": "closed",
-          "marketTime": "2026-09-04T20:33:00+00:00"
-        },
-        {
-          "name": "Russell 2000",
-          "price": 2975.648,
-          "changePercent": 0.24856229386141276,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:30:00+00:00"
-        },
-        {
-          "name": "Dow Jones",
-          "price": 53414.25,
-          "changePercent": -0.5063694326836901,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:33:00+00:00"
-        },
-        {
-          "name": "Nasdaq 100",
-          "price": 29544.154,
-          "changePercent": 0.20980045654511137,
-          "status": "closed",
-          "marketTime": "2026-09-04T21:16:00+00:00"
-        },
-        {
-          "name": "U.S. 10Y Yield",
-          "price": 4.783999919891357,
-          "changePercent": 0.46198907793695626,
-          "status": "closed",
-          "marketTime": "2026-09-04T18:59:00+00:00"
+          "marketTime": "2026-09-04T16:00:00+00:00"
         },
         {
           "name": "Gold",
@@ -951,107 +147,6 @@
           "changePercent": 1.3966512413664216,
           "status": "closed",
           "marketTime": "2026-09-04T20:14:00+00:00"
-        }
-      ],
-      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
-      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
-    },
-    {
-      "eventId": "f4bef1a266999855",
-      "title": "Green forest fire notification in Australia",
-      "marketBuckets": [
-        "us"
-      ],
-      "relatedIndicators": [
-        {
-          "name": "Nasdaq Composite",
-          "price": 26506.99,
-          "changePercent": -0.2900606001331508,
-          "status": "closed",
-          "marketTime": "2026-09-04T21:16:00+00:00"
-        },
-        {
-          "name": "S&P 500",
-          "price": 7718.6,
-          "changePercent": -0.3757239235851583,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:33:00+00:00"
-        },
-        {
-          "name": "Russell 2000",
-          "price": 2975.648,
-          "changePercent": 0.24856229386141276,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:30:00+00:00"
-        },
-        {
-          "name": "Dow Jones",
-          "price": 53414.25,
-          "changePercent": -0.5063694326836901,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:33:00+00:00"
-        },
-        {
-          "name": "Nasdaq 100",
-          "price": 29544.154,
-          "changePercent": 0.20980045654511137,
-          "status": "closed",
-          "marketTime": "2026-09-04T21:16:00+00:00"
-        },
-        {
-          "name": "U.S. 10Y Yield",
-          "price": 4.783999919891357,
-          "changePercent": 0.46198907793695626,
-          "status": "closed",
-          "marketTime": "2026-09-04T18:59:00+00:00"
-        }
-      ],
-      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
-      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
-    },
-    {
-      "eventId": "6979133d77eef7d5",
-      "title": "Russian strikes kill at least five people in Ukraine overnight as Moscow and Kiev await the arrival of U.S. envoys as Mo - fakti.bg",
-      "marketBuckets": [
-        "europe",
-        "risk",
-        "us"
-      ],
-      "relatedIndicators": [
-        {
-          "name": "Nasdaq Composite",
-          "price": 26506.99,
-          "changePercent": -0.2900606001331508,
-          "status": "closed",
-          "marketTime": "2026-09-04T21:16:00+00:00"
-        },
-        {
-          "name": "S&P 500",
-          "price": 7718.6,
-          "changePercent": -0.3757239235851583,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:33:00+00:00"
-        },
-        {
-          "name": "Russell 2000",
-          "price": 2975.648,
-          "changePercent": 0.24856229386141276,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:30:00+00:00"
-        },
-        {
-          "name": "Dow Jones",
-          "price": 53414.25,
-          "changePercent": -0.5063694326836901,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:33:00+00:00"
-        },
-        {
-          "name": "Nasdaq 100",
-          "price": 29544.154,
-          "changePercent": 0.20980045654511137,
-          "status": "closed",
-          "marketTime": "2026-09-04T21:16:00+00:00"
         },
         {
           "name": "U.S. 10Y Yield",
@@ -1060,6 +155,31 @@
           "status": "closed",
           "marketTime": "2026-09-04T18:59:00+00:00"
         },
+        {
+          "name": "Nasdaq Composite",
+          "price": 26506.99,
+          "changePercent": -0.2900606001331508,
+          "status": "closed",
+          "marketTime": "2026-09-04T21:16:00+00:00"
+        },
+        {
+          "name": "Russell 2000",
+          "price": 2975.648,
+          "changePercent": 0.24856229386141276,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:30:00+00:00"
+        }
+      ],
+      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
+      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
+    },
+    {
+      "eventId": "bef7026ea7cf71d4",
+      "title": "Multipolarity gives middle powers more choices, but fewer guarantees - Al Jazeera",
+      "marketBuckets": [
+        "risk"
+      ],
+      "relatedIndicators": [
         {
           "name": "Gold",
           "price": 4476.60009765625,
@@ -1073,53 +193,6 @@
           "changePercent": 1.3966512413664216,
           "status": "closed",
           "marketTime": "2026-09-04T20:14:00+00:00"
-        }
-      ],
-      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
-      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
-    },
-    {
-      "eventId": "4ffd619cccbf8933",
-      "title": "Iranian tanker hit by four US missiles near Kharg Island - The Siasat Daily",
-      "marketBuckets": [
-        "risk",
-        "us"
-      ],
-      "relatedIndicators": [
-        {
-          "name": "Nasdaq Composite",
-          "price": 26506.99,
-          "changePercent": -0.2900606001331508,
-          "status": "closed",
-          "marketTime": "2026-09-04T21:16:00+00:00"
-        },
-        {
-          "name": "S&P 500",
-          "price": 7718.6,
-          "changePercent": -0.3757239235851583,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:33:00+00:00"
-        },
-        {
-          "name": "Russell 2000",
-          "price": 2975.648,
-          "changePercent": 0.24856229386141276,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:30:00+00:00"
-        },
-        {
-          "name": "Dow Jones",
-          "price": 53414.25,
-          "changePercent": -0.5063694326836901,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:33:00+00:00"
-        },
-        {
-          "name": "Nasdaq 100",
-          "price": 29544.154,
-          "changePercent": 0.20980045654511137,
-          "status": "closed",
-          "marketTime": "2026-09-04T21:16:00+00:00"
         },
         {
           "name": "U.S. 10Y Yield",
@@ -1127,7 +200,18 @@
           "changePercent": 0.46198907793695626,
           "status": "closed",
           "marketTime": "2026-09-04T18:59:00+00:00"
-        },
+        }
+      ],
+      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
+      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
+    },
+    {
+      "eventId": "cd02c5e532c38eed",
+      "title": "Green forest fire notification in Mozambique",
+      "marketBuckets": [
+        "risk"
+      ],
+      "relatedIndicators": [
         {
           "name": "Gold",
           "price": 4476.60009765625,
@@ -1141,14 +225,21 @@
           "changePercent": 1.3966512413664216,
           "status": "closed",
           "marketTime": "2026-09-04T20:14:00+00:00"
+        },
+        {
+          "name": "U.S. 10Y Yield",
+          "price": 4.783999919891357,
+          "changePercent": 0.46198907793695626,
+          "status": "closed",
+          "marketTime": "2026-09-04T18:59:00+00:00"
         }
       ],
       "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
       "updatedAt": "2026-09-06T15:38:23.155747+00:00"
     },
     {
-      "eventId": "d596679b541c8adf",
-      "title": "Here Is Where Ukraine Peace Talks Stand, as a New Round Approaches - The New York Times",
+      "eventId": "6871dad21aef6c87",
+      "title": "Germany's far-right AfD eyes historic state victory in Saxony-Anhalt election",
       "marketBuckets": [
         "europe"
       ],
@@ -1179,8 +270,146 @@
       "updatedAt": "2026-09-06T15:38:23.155747+00:00"
     },
     {
-      "eventId": "c07a6cc85e687f0b",
-      "title": "More deadly Russian attacks in Ukraine ahead of US envoys’ visit - Edp24",
+      "eventId": "17e5746efc05d479",
+      "title": "Greeks promised tax relief , wage hikes as protesters take to the streets over cost of living crunch",
+      "marketBuckets": [
+        "risk"
+      ],
+      "relatedIndicators": [
+        {
+          "name": "Gold",
+          "price": 4476.60009765625,
+          "changePercent": -1.3943016882255037,
+          "status": "stale",
+          "marketTime": "2026-09-04T20:59:00+00:00"
+        },
+        {
+          "name": "VIX",
+          "price": 14.520000457763672,
+          "changePercent": 1.3966512413664216,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:14:00+00:00"
+        },
+        {
+          "name": "U.S. 10Y Yield",
+          "price": 4.783999919891357,
+          "changePercent": 0.46198907793695626,
+          "status": "closed",
+          "marketTime": "2026-09-04T18:59:00+00:00"
+        }
+      ],
+      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
+      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
+    },
+    {
+      "eventId": "f332861d045a1821",
+      "title": "Trump PAC wades into midterms with $10 million ad buy to boost Ken Paxton",
+      "marketBuckets": [
+        "us"
+      ],
+      "relatedIndicators": [
+        {
+          "name": "Nasdaq Composite",
+          "price": 26506.99,
+          "changePercent": -0.2900606001331508,
+          "status": "closed",
+          "marketTime": "2026-09-04T21:16:00+00:00"
+        },
+        {
+          "name": "Russell 2000",
+          "price": 2975.648,
+          "changePercent": 0.24856229386141276,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:30:00+00:00"
+        },
+        {
+          "name": "Nasdaq 100",
+          "price": 29544.154,
+          "changePercent": 0.20980045654511137,
+          "status": "closed",
+          "marketTime": "2026-09-04T21:16:00+00:00"
+        },
+        {
+          "name": "S&P 500",
+          "price": 7718.6,
+          "changePercent": -0.3757239235851583,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:33:00+00:00"
+        },
+        {
+          "name": "Dow Jones",
+          "price": 53414.25,
+          "changePercent": -0.5063694326836901,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:33:00+00:00"
+        },
+        {
+          "name": "U.S. 10Y Yield",
+          "price": 4.783999919891357,
+          "changePercent": 0.46198907793695626,
+          "status": "closed",
+          "marketTime": "2026-09-04T18:59:00+00:00"
+        }
+      ],
+      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
+      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
+    },
+    {
+      "eventId": "b4d4d9112dcb1617",
+      "title": "Congress votes to avert government shutdown ahead of midterms",
+      "marketBuckets": [
+        "us"
+      ],
+      "relatedIndicators": [
+        {
+          "name": "Nasdaq Composite",
+          "price": 26506.99,
+          "changePercent": -0.2900606001331508,
+          "status": "closed",
+          "marketTime": "2026-09-04T21:16:00+00:00"
+        },
+        {
+          "name": "Russell 2000",
+          "price": 2975.648,
+          "changePercent": 0.24856229386141276,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:30:00+00:00"
+        },
+        {
+          "name": "Nasdaq 100",
+          "price": 29544.154,
+          "changePercent": 0.20980045654511137,
+          "status": "closed",
+          "marketTime": "2026-09-04T21:16:00+00:00"
+        },
+        {
+          "name": "S&P 500",
+          "price": 7718.6,
+          "changePercent": -0.3757239235851583,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:33:00+00:00"
+        },
+        {
+          "name": "Dow Jones",
+          "price": 53414.25,
+          "changePercent": -0.5063694326836901,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:33:00+00:00"
+        },
+        {
+          "name": "U.S. 10Y Yield",
+          "price": 4.783999919891357,
+          "changePercent": 0.46198907793695626,
+          "status": "closed",
+          "marketTime": "2026-09-04T18:59:00+00:00"
+        }
+      ],
+      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
+      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
+    },
+    {
+      "eventId": "2b4e1fad1def2f4e",
+      "title": "War in Ukraine: Putin, Zelensky order pause in strikes",
       "marketBuckets": [
         "europe",
         "risk",
@@ -1188,46 +417,25 @@
       ],
       "relatedIndicators": [
         {
-          "name": "Nasdaq Composite",
-          "price": 26506.99,
-          "changePercent": -0.2900606001331508,
+          "name": "FTSE 100",
+          "price": 10831.09,
+          "changePercent": -0.003785255966392969,
           "status": "closed",
-          "marketTime": "2026-09-04T21:16:00+00:00"
+          "marketTime": "2026-09-04T15:35:00+00:00"
         },
         {
-          "name": "S&P 500",
-          "price": 7718.6,
-          "changePercent": -0.3757239235851583,
+          "name": "EUR / USD",
+          "price": 1.1621150970458984,
+          "changePercent": -0.08467912940431478,
           "status": "closed",
-          "marketTime": "2026-09-04T20:33:00+00:00"
+          "marketTime": "2026-09-04T21:29:00+00:00"
         },
         {
-          "name": "Russell 2000",
-          "price": 2975.648,
-          "changePercent": 0.24856229386141276,
+          "name": "DAX",
+          "price": 26046.4,
+          "changePercent": 0.16574819349852588,
           "status": "closed",
-          "marketTime": "2026-09-04T20:30:00+00:00"
-        },
-        {
-          "name": "Dow Jones",
-          "price": 53414.25,
-          "changePercent": -0.5063694326836901,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:33:00+00:00"
-        },
-        {
-          "name": "Nasdaq 100",
-          "price": 29544.154,
-          "changePercent": 0.20980045654511137,
-          "status": "closed",
-          "marketTime": "2026-09-04T21:16:00+00:00"
-        },
-        {
-          "name": "U.S. 10Y Yield",
-          "price": 4.783999919891357,
-          "changePercent": 0.46198907793695626,
-          "status": "closed",
-          "marketTime": "2026-09-04T18:59:00+00:00"
+          "marketTime": "2026-09-04T16:00:00+00:00"
         },
         {
           "name": "Gold",
@@ -1242,14 +450,635 @@
           "changePercent": 1.3966512413664216,
           "status": "closed",
           "marketTime": "2026-09-04T20:14:00+00:00"
+        },
+        {
+          "name": "U.S. 10Y Yield",
+          "price": 4.783999919891357,
+          "changePercent": 0.46198907793695626,
+          "status": "closed",
+          "marketTime": "2026-09-04T18:59:00+00:00"
+        },
+        {
+          "name": "Nasdaq Composite",
+          "price": 26506.99,
+          "changePercent": -0.2900606001331508,
+          "status": "closed",
+          "marketTime": "2026-09-04T21:16:00+00:00"
+        },
+        {
+          "name": "Russell 2000",
+          "price": 2975.648,
+          "changePercent": 0.24856229386141276,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:30:00+00:00"
         }
       ],
       "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
       "updatedAt": "2026-09-06T15:38:23.155747+00:00"
     },
     {
-      "eventId": "cd160f5f433c37bc",
-      "title": "US Clears $5 Billion Sale Of JDAM Bombs To Saudi Arabia Amid Iran War - NDTV Profit",
+      "eventId": "540d4807fcb7b674",
+      "title": "Iran rebuilding its axis of resistance for attack , Israeli intelligence . suggests",
+      "marketBuckets": [
+        "risk"
+      ],
+      "relatedIndicators": [
+        {
+          "name": "Gold",
+          "price": 4476.60009765625,
+          "changePercent": -1.3943016882255037,
+          "status": "stale",
+          "marketTime": "2026-09-04T20:59:00+00:00"
+        },
+        {
+          "name": "VIX",
+          "price": 14.520000457763672,
+          "changePercent": 1.3966512413664216,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:14:00+00:00"
+        },
+        {
+          "name": "U.S. 10Y Yield",
+          "price": 4.783999919891357,
+          "changePercent": 0.46198907793695626,
+          "status": "closed",
+          "marketTime": "2026-09-04T18:59:00+00:00"
+        }
+      ],
+      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
+      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
+    },
+    {
+      "eventId": "1a34da1f7be36dee",
+      "title": "War powers resolution: Senate votes to walk back rebuke of Trump over Iran - CNN",
+      "marketBuckets": [
+        "europe",
+        "risk",
+        "us"
+      ],
+      "relatedIndicators": [
+        {
+          "name": "FTSE 100",
+          "price": 10831.09,
+          "changePercent": -0.003785255966392969,
+          "status": "closed",
+          "marketTime": "2026-09-04T15:35:00+00:00"
+        },
+        {
+          "name": "EUR / USD",
+          "price": 1.1621150970458984,
+          "changePercent": -0.08467912940431478,
+          "status": "closed",
+          "marketTime": "2026-09-04T21:29:00+00:00"
+        },
+        {
+          "name": "DAX",
+          "price": 26046.4,
+          "changePercent": 0.16574819349852588,
+          "status": "closed",
+          "marketTime": "2026-09-04T16:00:00+00:00"
+        },
+        {
+          "name": "Gold",
+          "price": 4476.60009765625,
+          "changePercent": -1.3943016882255037,
+          "status": "stale",
+          "marketTime": "2026-09-04T20:59:00+00:00"
+        },
+        {
+          "name": "VIX",
+          "price": 14.520000457763672,
+          "changePercent": 1.3966512413664216,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:14:00+00:00"
+        },
+        {
+          "name": "U.S. 10Y Yield",
+          "price": 4.783999919891357,
+          "changePercent": 0.46198907793695626,
+          "status": "closed",
+          "marketTime": "2026-09-04T18:59:00+00:00"
+        },
+        {
+          "name": "Nasdaq Composite",
+          "price": 26506.99,
+          "changePercent": -0.2900606001331508,
+          "status": "closed",
+          "marketTime": "2026-09-04T21:16:00+00:00"
+        },
+        {
+          "name": "Russell 2000",
+          "price": 2975.648,
+          "changePercent": 0.24856229386141276,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:30:00+00:00"
+        }
+      ],
+      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
+      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
+    },
+    {
+      "eventId": "0917232dcf89c4f2",
+      "title": "El Niño is coming for agriculture. Here is where the risks are highest - Food and Agriculture Organization",
+      "marketBuckets": [
+        "risk"
+      ],
+      "relatedIndicators": [
+        {
+          "name": "Gold",
+          "price": 4476.60009765625,
+          "changePercent": -1.3943016882255037,
+          "status": "stale",
+          "marketTime": "2026-09-04T20:59:00+00:00"
+        },
+        {
+          "name": "VIX",
+          "price": 14.520000457763672,
+          "changePercent": 1.3966512413664216,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:14:00+00:00"
+        },
+        {
+          "name": "U.S. 10Y Yield",
+          "price": 4.783999919891357,
+          "changePercent": 0.46198907793695626,
+          "status": "closed",
+          "marketTime": "2026-09-04T18:59:00+00:00"
+        }
+      ],
+      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
+      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
+    },
+    {
+      "eventId": "70f40fd4d440ce3c",
+      "title": "Hungarian election could have implications for EU, US, Russia, and Ukraine - Atlantic Council",
+      "marketBuckets": [
+        "europe",
+        "us"
+      ],
+      "relatedIndicators": [
+        {
+          "name": "FTSE 100",
+          "price": 10831.09,
+          "changePercent": -0.003785255966392969,
+          "status": "closed",
+          "marketTime": "2026-09-04T15:35:00+00:00"
+        },
+        {
+          "name": "EUR / USD",
+          "price": 1.1621150970458984,
+          "changePercent": -0.08467912940431478,
+          "status": "closed",
+          "marketTime": "2026-09-04T21:29:00+00:00"
+        },
+        {
+          "name": "DAX",
+          "price": 26046.4,
+          "changePercent": 0.16574819349852588,
+          "status": "closed",
+          "marketTime": "2026-09-04T16:00:00+00:00"
+        },
+        {
+          "name": "Nasdaq Composite",
+          "price": 26506.99,
+          "changePercent": -0.2900606001331508,
+          "status": "closed",
+          "marketTime": "2026-09-04T21:16:00+00:00"
+        },
+        {
+          "name": "Russell 2000",
+          "price": 2975.648,
+          "changePercent": 0.24856229386141276,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:30:00+00:00"
+        },
+        {
+          "name": "Nasdaq 100",
+          "price": 29544.154,
+          "changePercent": 0.20980045654511137,
+          "status": "closed",
+          "marketTime": "2026-09-04T21:16:00+00:00"
+        },
+        {
+          "name": "S&P 500",
+          "price": 7718.6,
+          "changePercent": -0.3757239235851583,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:33:00+00:00"
+        },
+        {
+          "name": "Dow Jones",
+          "price": 53414.25,
+          "changePercent": -0.5063694326836901,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:33:00+00:00"
+        }
+      ],
+      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
+      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
+    },
+    {
+      "eventId": "65c2d1d01858f13a",
+      "title": "Trump hits back at 'unpatriotic' vote after House rebukes him over Iran - BBC",
+      "marketBuckets": [
+        "europe",
+        "us"
+      ],
+      "relatedIndicators": [
+        {
+          "name": "FTSE 100",
+          "price": 10831.09,
+          "changePercent": -0.003785255966392969,
+          "status": "closed",
+          "marketTime": "2026-09-04T15:35:00+00:00"
+        },
+        {
+          "name": "EUR / USD",
+          "price": 1.1621150970458984,
+          "changePercent": -0.08467912940431478,
+          "status": "closed",
+          "marketTime": "2026-09-04T21:29:00+00:00"
+        },
+        {
+          "name": "DAX",
+          "price": 26046.4,
+          "changePercent": 0.16574819349852588,
+          "status": "closed",
+          "marketTime": "2026-09-04T16:00:00+00:00"
+        },
+        {
+          "name": "Nasdaq Composite",
+          "price": 26506.99,
+          "changePercent": -0.2900606001331508,
+          "status": "closed",
+          "marketTime": "2026-09-04T21:16:00+00:00"
+        },
+        {
+          "name": "Russell 2000",
+          "price": 2975.648,
+          "changePercent": 0.24856229386141276,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:30:00+00:00"
+        },
+        {
+          "name": "Nasdaq 100",
+          "price": 29544.154,
+          "changePercent": 0.20980045654511137,
+          "status": "closed",
+          "marketTime": "2026-09-04T21:16:00+00:00"
+        },
+        {
+          "name": "S&P 500",
+          "price": 7718.6,
+          "changePercent": -0.3757239235851583,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:33:00+00:00"
+        },
+        {
+          "name": "Dow Jones",
+          "price": 53414.25,
+          "changePercent": -0.5063694326836901,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:33:00+00:00"
+        }
+      ],
+      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
+      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
+    },
+    {
+      "eventId": "487d6eaaad4ee0c5",
+      "title": "US and Nigeria Kill IS Leader; RSF Defections: Africa File, May 21, 2026 - Critical Threats",
+      "marketBuckets": [
+        "us"
+      ],
+      "relatedIndicators": [
+        {
+          "name": "Nasdaq Composite",
+          "price": 26506.99,
+          "changePercent": -0.2900606001331508,
+          "status": "closed",
+          "marketTime": "2026-09-04T21:16:00+00:00"
+        },
+        {
+          "name": "Russell 2000",
+          "price": 2975.648,
+          "changePercent": 0.24856229386141276,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:30:00+00:00"
+        },
+        {
+          "name": "Nasdaq 100",
+          "price": 29544.154,
+          "changePercent": 0.20980045654511137,
+          "status": "closed",
+          "marketTime": "2026-09-04T21:16:00+00:00"
+        },
+        {
+          "name": "S&P 500",
+          "price": 7718.6,
+          "changePercent": -0.3757239235851583,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:33:00+00:00"
+        },
+        {
+          "name": "Dow Jones",
+          "price": 53414.25,
+          "changePercent": -0.5063694326836901,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:33:00+00:00"
+        },
+        {
+          "name": "U.S. 10Y Yield",
+          "price": 4.783999919891357,
+          "changePercent": 0.46198907793695626,
+          "status": "closed",
+          "marketTime": "2026-09-04T18:59:00+00:00"
+        }
+      ],
+      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
+      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
+    },
+    {
+      "eventId": "e3b5a98b939969d2",
+      "title": "Interdiction of Narco-Terrorist Refueling Vessel, Sept. 5, 2026 - southcom.mil",
+      "marketBuckets": [
+        "risk"
+      ],
+      "relatedIndicators": [
+        {
+          "name": "Gold",
+          "price": 4476.60009765625,
+          "changePercent": -1.3943016882255037,
+          "status": "stale",
+          "marketTime": "2026-09-04T20:59:00+00:00"
+        },
+        {
+          "name": "VIX",
+          "price": 14.520000457763672,
+          "changePercent": 1.3966512413664216,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:14:00+00:00"
+        },
+        {
+          "name": "U.S. 10Y Yield",
+          "price": 4.783999919891357,
+          "changePercent": 0.46198907793695626,
+          "status": "closed",
+          "marketTime": "2026-09-04T18:59:00+00:00"
+        }
+      ],
+      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
+      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
+    },
+    {
+      "eventId": "fc308c715682e1ed",
+      "title": "Trump’s first major midterm money move: A $10M Texas Senate ad blitz - SRN News",
+      "marketBuckets": [
+        "us"
+      ],
+      "relatedIndicators": [
+        {
+          "name": "Nasdaq Composite",
+          "price": 26506.99,
+          "changePercent": -0.2900606001331508,
+          "status": "closed",
+          "marketTime": "2026-09-04T21:16:00+00:00"
+        },
+        {
+          "name": "Russell 2000",
+          "price": 2975.648,
+          "changePercent": 0.24856229386141276,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:30:00+00:00"
+        },
+        {
+          "name": "Nasdaq 100",
+          "price": 29544.154,
+          "changePercent": 0.20980045654511137,
+          "status": "closed",
+          "marketTime": "2026-09-04T21:16:00+00:00"
+        },
+        {
+          "name": "S&P 500",
+          "price": 7718.6,
+          "changePercent": -0.3757239235851583,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:33:00+00:00"
+        },
+        {
+          "name": "Dow Jones",
+          "price": 53414.25,
+          "changePercent": -0.5063694326836901,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:33:00+00:00"
+        },
+        {
+          "name": "U.S. 10Y Yield",
+          "price": 4.783999919891357,
+          "changePercent": 0.46198907793695626,
+          "status": "closed",
+          "marketTime": "2026-09-04T18:59:00+00:00"
+        }
+      ],
+      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
+      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
+    },
+    {
+      "eventId": "c693cc84a10876f1",
+      "title": "US envoys Witkoff, Kushner arrive in Moscow for talks on peace in Ukraine",
+      "marketBuckets": [
+        "europe",
+        "us"
+      ],
+      "relatedIndicators": [
+        {
+          "name": "FTSE 100",
+          "price": 10831.09,
+          "changePercent": -0.003785255966392969,
+          "status": "closed",
+          "marketTime": "2026-09-04T15:35:00+00:00"
+        },
+        {
+          "name": "EUR / USD",
+          "price": 1.1621150970458984,
+          "changePercent": -0.08467912940431478,
+          "status": "closed",
+          "marketTime": "2026-09-04T21:29:00+00:00"
+        },
+        {
+          "name": "DAX",
+          "price": 26046.4,
+          "changePercent": 0.16574819349852588,
+          "status": "closed",
+          "marketTime": "2026-09-04T16:00:00+00:00"
+        },
+        {
+          "name": "Nasdaq Composite",
+          "price": 26506.99,
+          "changePercent": -0.2900606001331508,
+          "status": "closed",
+          "marketTime": "2026-09-04T21:16:00+00:00"
+        },
+        {
+          "name": "Russell 2000",
+          "price": 2975.648,
+          "changePercent": 0.24856229386141276,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:30:00+00:00"
+        },
+        {
+          "name": "Nasdaq 100",
+          "price": 29544.154,
+          "changePercent": 0.20980045654511137,
+          "status": "closed",
+          "marketTime": "2026-09-04T21:16:00+00:00"
+        },
+        {
+          "name": "S&P 500",
+          "price": 7718.6,
+          "changePercent": -0.3757239235851583,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:33:00+00:00"
+        },
+        {
+          "name": "Dow Jones",
+          "price": 53414.25,
+          "changePercent": -0.5063694326836901,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:33:00+00:00"
+        }
+      ],
+      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
+      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
+    },
+    {
+      "eventId": "30dffcb547b89855",
+      "title": "U.S. strikes 3 Iranian oil tankers after saying warships were targeted with ballistic missiles - PBS",
+      "marketBuckets": [
+        "energy",
+        "risk"
+      ],
+      "relatedIndicators": [
+        {
+          "name": "Gold",
+          "price": 4476.60009765625,
+          "changePercent": -1.3943016882255037,
+          "status": "stale",
+          "marketTime": "2026-09-04T20:59:00+00:00"
+        },
+        {
+          "name": "VIX",
+          "price": 14.520000457763672,
+          "changePercent": 1.3966512413664216,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:14:00+00:00"
+        },
+        {
+          "name": "U.S. 10Y Yield",
+          "price": 4.783999919891357,
+          "changePercent": 0.46198907793695626,
+          "status": "closed",
+          "marketTime": "2026-09-04T18:59:00+00:00"
+        },
+        {
+          "name": "WTI Crude",
+          "price": 91.4800033569336,
+          "changePercent": 0.1971559221616611,
+          "status": "stale",
+          "marketTime": "2026-09-04T20:59:00+00:00"
+        }
+      ],
+      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
+      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
+    },
+    {
+      "eventId": "8e4c403102de0c4a",
+      "title": "10 Conflicts to Watch in 2026 - International Crisis Group",
+      "marketBuckets": [
+        "risk"
+      ],
+      "relatedIndicators": [
+        {
+          "name": "Gold",
+          "price": 4476.60009765625,
+          "changePercent": -1.3943016882255037,
+          "status": "stale",
+          "marketTime": "2026-09-04T20:59:00+00:00"
+        },
+        {
+          "name": "VIX",
+          "price": 14.520000457763672,
+          "changePercent": 1.3966512413664216,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:14:00+00:00"
+        },
+        {
+          "name": "U.S. 10Y Yield",
+          "price": 4.783999919891357,
+          "changePercent": 0.46198907793695626,
+          "status": "closed",
+          "marketTime": "2026-09-04T18:59:00+00:00"
+        }
+      ],
+      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
+      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
+    },
+    {
+      "eventId": "13036f4e6b16360c",
+      "title": "Scoop: Inside the White House pitch for pre-election MAGA megabill - axios.com",
+      "marketBuckets": [
+        "us"
+      ],
+      "relatedIndicators": [
+        {
+          "name": "Nasdaq Composite",
+          "price": 26506.99,
+          "changePercent": -0.2900606001331508,
+          "status": "closed",
+          "marketTime": "2026-09-04T21:16:00+00:00"
+        },
+        {
+          "name": "Russell 2000",
+          "price": 2975.648,
+          "changePercent": 0.24856229386141276,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:30:00+00:00"
+        },
+        {
+          "name": "Nasdaq 100",
+          "price": 29544.154,
+          "changePercent": 0.20980045654511137,
+          "status": "closed",
+          "marketTime": "2026-09-04T21:16:00+00:00"
+        },
+        {
+          "name": "S&P 500",
+          "price": 7718.6,
+          "changePercent": -0.3757239235851583,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:33:00+00:00"
+        },
+        {
+          "name": "Dow Jones",
+          "price": 53414.25,
+          "changePercent": -0.5063694326836901,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:33:00+00:00"
+        },
+        {
+          "name": "U.S. 10Y Yield",
+          "price": 4.783999919891357,
+          "changePercent": 0.46198907793695626,
+          "status": "closed",
+          "marketTime": "2026-09-04T18:59:00+00:00"
+        }
+      ],
+      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
+      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
+    },
+    {
+      "eventId": "17828a8c4dccb7a0",
+      "title": "Thune-Trump tensions escalate as clock ticks on megabill 3.0 - axios.com",
       "marketBuckets": [
         "risk",
         "us"
@@ -1263,25 +1092,11 @@
           "marketTime": "2026-09-04T21:16:00+00:00"
         },
         {
-          "name": "S&P 500",
-          "price": 7718.6,
-          "changePercent": -0.3757239235851583,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:33:00+00:00"
-        },
-        {
           "name": "Russell 2000",
           "price": 2975.648,
           "changePercent": 0.24856229386141276,
           "status": "closed",
           "marketTime": "2026-09-04T20:30:00+00:00"
-        },
-        {
-          "name": "Dow Jones",
-          "price": 53414.25,
-          "changePercent": -0.5063694326836901,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:33:00+00:00"
         },
         {
           "name": "Nasdaq 100",
@@ -1291,6 +1106,20 @@
           "marketTime": "2026-09-04T21:16:00+00:00"
         },
         {
+          "name": "S&P 500",
+          "price": 7718.6,
+          "changePercent": -0.3757239235851583,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:33:00+00:00"
+        },
+        {
+          "name": "Dow Jones",
+          "price": 53414.25,
+          "changePercent": -0.5063694326836901,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:33:00+00:00"
+        },
+        {
           "name": "U.S. 10Y Yield",
           "price": 4.783999919891357,
           "changePercent": 0.46198907793695626,
@@ -1316,18 +1145,47 @@
       "updatedAt": "2026-09-06T15:38:23.155747+00:00"
     },
     {
-      "eventId": "b7f96c8cab0b0baa",
-      "title": "Cartels across Mexico turning to explosives - The Arkansas Democrat-Gazette",
+      "eventId": "1d65ffc8af8c22f4",
+      "title": "Intensifying Somalia drought likely to be as severe as previous prolonged dry periods, FAO warns - Food and Agriculture Organization",
       "marketBuckets": [
-        "risk"
+        "risk",
+        "us"
       ],
       "relatedIndicators": [
         {
-          "name": "Gold",
-          "price": 4476.60009765625,
-          "changePercent": -1.3943016882255037,
-          "status": "stale",
-          "marketTime": "2026-09-04T20:59:00+00:00"
+          "name": "Nasdaq Composite",
+          "price": 26506.99,
+          "changePercent": -0.2900606001331508,
+          "status": "closed",
+          "marketTime": "2026-09-04T21:16:00+00:00"
+        },
+        {
+          "name": "Russell 2000",
+          "price": 2975.648,
+          "changePercent": 0.24856229386141276,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:30:00+00:00"
+        },
+        {
+          "name": "Nasdaq 100",
+          "price": 29544.154,
+          "changePercent": 0.20980045654511137,
+          "status": "closed",
+          "marketTime": "2026-09-04T21:16:00+00:00"
+        },
+        {
+          "name": "S&P 500",
+          "price": 7718.6,
+          "changePercent": -0.3757239235851583,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:33:00+00:00"
+        },
+        {
+          "name": "Dow Jones",
+          "price": 53414.25,
+          "changePercent": -0.5063694326836901,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:33:00+00:00"
         },
         {
           "name": "U.S. 10Y Yield",
@@ -1335,6 +1193,13 @@
           "changePercent": 0.46198907793695626,
           "status": "closed",
           "marketTime": "2026-09-04T18:59:00+00:00"
+        },
+        {
+          "name": "Gold",
+          "price": 4476.60009765625,
+          "changePercent": -1.3943016882255037,
+          "status": "stale",
+          "marketTime": "2026-09-04T20:59:00+00:00"
         },
         {
           "name": "VIX",
@@ -1348,40 +1213,8 @@
       "updatedAt": "2026-09-06T15:38:23.155747+00:00"
     },
     {
-      "eventId": "f749698ea9a4fa31",
-      "title": "Prince William to represent King Charles at funeral of Norway’s King Harald V",
-      "marketBuckets": [
-        "risk"
-      ],
-      "relatedIndicators": [
-        {
-          "name": "Gold",
-          "price": 4476.60009765625,
-          "changePercent": -1.3943016882255037,
-          "status": "stale",
-          "marketTime": "2026-09-04T20:59:00+00:00"
-        },
-        {
-          "name": "U.S. 10Y Yield",
-          "price": 4.783999919891357,
-          "changePercent": 0.46198907793695626,
-          "status": "closed",
-          "marketTime": "2026-09-04T18:59:00+00:00"
-        },
-        {
-          "name": "VIX",
-          "price": 14.520000457763672,
-          "changePercent": 1.3966512413664216,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:14:00+00:00"
-        }
-      ],
-      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
-      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
-    },
-    {
-      "eventId": "13b6c4dde29b532b",
-      "title": "Commentary: The pushback against AI songs is music to my ears",
+      "eventId": "58d83b7198d69c50",
+      "title": "Colombia’s 2026 Presidential Elections: Implications for US Policy - Quincy Institute for Responsible Statecraft",
       "marketBuckets": [
         "us"
       ],
@@ -1394,13 +1227,6 @@
           "marketTime": "2026-09-04T21:16:00+00:00"
         },
         {
-          "name": "S&P 500",
-          "price": 7718.6,
-          "changePercent": -0.3757239235851583,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:33:00+00:00"
-        },
-        {
           "name": "Russell 2000",
           "price": 2975.648,
           "changePercent": 0.24856229386141276,
@@ -1408,18 +1234,25 @@
           "marketTime": "2026-09-04T20:30:00+00:00"
         },
         {
-          "name": "Dow Jones",
-          "price": 53414.25,
-          "changePercent": -0.5063694326836901,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:33:00+00:00"
-        },
-        {
           "name": "Nasdaq 100",
           "price": 29544.154,
           "changePercent": 0.20980045654511137,
           "status": "closed",
           "marketTime": "2026-09-04T21:16:00+00:00"
+        },
+        {
+          "name": "S&P 500",
+          "price": 7718.6,
+          "changePercent": -0.3757239235851583,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:33:00+00:00"
+        },
+        {
+          "name": "Dow Jones",
+          "price": 53414.25,
+          "changePercent": -0.5063694326836901,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:33:00+00:00"
         },
         {
           "name": "U.S. 10Y Yield",
@@ -1433,8 +1266,368 @@
       "updatedAt": "2026-09-06T15:38:23.155747+00:00"
     },
     {
-      "eventId": "9af36b2031292e9d",
-      "title": "Francisco Cerundolo roars back from brink to stun home hope Taylor Fritz at US Open",
+      "eventId": "df9f5f1680bd1b74",
+      "title": "The LEGO Foundation commits $97 million to help IRC scale early learning for 5 million children affected by crisis - International Rescue Committee",
+      "marketBuckets": [
+        "risk"
+      ],
+      "relatedIndicators": [
+        {
+          "name": "Gold",
+          "price": 4476.60009765625,
+          "changePercent": -1.3943016882255037,
+          "status": "stale",
+          "marketTime": "2026-09-04T20:59:00+00:00"
+        },
+        {
+          "name": "VIX",
+          "price": 14.520000457763672,
+          "changePercent": 1.3966512413664216,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:14:00+00:00"
+        },
+        {
+          "name": "U.S. 10Y Yield",
+          "price": 4.783999919891357,
+          "changePercent": 0.46198907793695626,
+          "status": "closed",
+          "marketTime": "2026-09-04T18:59:00+00:00"
+        }
+      ],
+      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
+      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
+    },
+    {
+      "eventId": "b4ab9d7068c62c0c",
+      "title": "Tackling the intersecting challenges of climate change, fragility and conflict - blogs.worldbank.org",
+      "marketBuckets": [
+        "risk"
+      ],
+      "relatedIndicators": [
+        {
+          "name": "Gold",
+          "price": 4476.60009765625,
+          "changePercent": -1.3943016882255037,
+          "status": "stale",
+          "marketTime": "2026-09-04T20:59:00+00:00"
+        },
+        {
+          "name": "VIX",
+          "price": 14.520000457763672,
+          "changePercent": 1.3966512413664216,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:14:00+00:00"
+        },
+        {
+          "name": "U.S. 10Y Yield",
+          "price": 4.783999919891357,
+          "changePercent": 0.46198907793695626,
+          "status": "closed",
+          "marketTime": "2026-09-04T18:59:00+00:00"
+        }
+      ],
+      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
+      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
+    },
+    {
+      "eventId": "75a125fab7b68845",
+      "title": "The UN Security Council - Council on Foreign Relations",
+      "marketBuckets": [
+        "risk"
+      ],
+      "relatedIndicators": [
+        {
+          "name": "Gold",
+          "price": 4476.60009765625,
+          "changePercent": -1.3943016882255037,
+          "status": "stale",
+          "marketTime": "2026-09-04T20:59:00+00:00"
+        },
+        {
+          "name": "VIX",
+          "price": 14.520000457763672,
+          "changePercent": 1.3966512413664216,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:14:00+00:00"
+        },
+        {
+          "name": "U.S. 10Y Yield",
+          "price": 4.783999919891357,
+          "changePercent": 0.46198907793695626,
+          "status": "closed",
+          "marketTime": "2026-09-04T18:59:00+00:00"
+        }
+      ],
+      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
+      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
+    },
+    {
+      "eventId": "1a95cd7082f65d43",
+      "title": "Analysis: Africa’s unreported extreme weather in 2022 and climate change - Carbon Brief",
+      "marketBuckets": [
+        "risk"
+      ],
+      "relatedIndicators": [
+        {
+          "name": "Gold",
+          "price": 4476.60009765625,
+          "changePercent": -1.3943016882255037,
+          "status": "stale",
+          "marketTime": "2026-09-04T20:59:00+00:00"
+        },
+        {
+          "name": "VIX",
+          "price": 14.520000457763672,
+          "changePercent": 1.3966512413664216,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:14:00+00:00"
+        },
+        {
+          "name": "U.S. 10Y Yield",
+          "price": 4.783999919891357,
+          "changePercent": 0.46198907793695626,
+          "status": "closed",
+          "marketTime": "2026-09-04T18:59:00+00:00"
+        }
+      ],
+      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
+      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
+    },
+    {
+      "eventId": "cf8c0ac6569ef208",
+      "title": "InSight Crime’s 2024 Homicide Round-Up - InSight Crime",
+      "marketBuckets": [
+        "risk"
+      ],
+      "relatedIndicators": [
+        {
+          "name": "Gold",
+          "price": 4476.60009765625,
+          "changePercent": -1.3943016882255037,
+          "status": "stale",
+          "marketTime": "2026-09-04T20:59:00+00:00"
+        },
+        {
+          "name": "VIX",
+          "price": 14.520000457763672,
+          "changePercent": 1.3966512413664216,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:14:00+00:00"
+        },
+        {
+          "name": "U.S. 10Y Yield",
+          "price": 4.783999919891357,
+          "changePercent": 0.46198907793695626,
+          "status": "closed",
+          "marketTime": "2026-09-04T18:59:00+00:00"
+        }
+      ],
+      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
+      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
+    },
+    {
+      "eventId": "d30957fdc9640146",
+      "title": "Instability in Syria | Global Conflict Tracker - Council on Foreign Relations",
+      "marketBuckets": [
+        "risk"
+      ],
+      "relatedIndicators": [
+        {
+          "name": "Gold",
+          "price": 4476.60009765625,
+          "changePercent": -1.3943016882255037,
+          "status": "stale",
+          "marketTime": "2026-09-04T20:59:00+00:00"
+        },
+        {
+          "name": "VIX",
+          "price": 14.520000457763672,
+          "changePercent": 1.3966512413664216,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:14:00+00:00"
+        },
+        {
+          "name": "U.S. 10Y Yield",
+          "price": 4.783999919891357,
+          "changePercent": 0.46198907793695626,
+          "status": "closed",
+          "marketTime": "2026-09-04T18:59:00+00:00"
+        }
+      ],
+      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
+      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
+    },
+    {
+      "eventId": "8e6aadf021ebf051",
+      "title": "Recalibrating Diplomacy with Myanmar after Election Seals Military Control - International Crisis Group",
+      "marketBuckets": [
+        "risk"
+      ],
+      "relatedIndicators": [
+        {
+          "name": "Gold",
+          "price": 4476.60009765625,
+          "changePercent": -1.3943016882255037,
+          "status": "stale",
+          "marketTime": "2026-09-04T20:59:00+00:00"
+        },
+        {
+          "name": "VIX",
+          "price": 14.520000457763672,
+          "changePercent": 1.3966512413664216,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:14:00+00:00"
+        },
+        {
+          "name": "U.S. 10Y Yield",
+          "price": 4.783999919891357,
+          "changePercent": 0.46198907793695626,
+          "status": "closed",
+          "marketTime": "2026-09-04T18:59:00+00:00"
+        }
+      ],
+      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
+      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
+    },
+    {
+      "eventId": "5d1244ec49e0c81d",
+      "title": "Somalia’s humanitarian crisis worsening with 6.5 million people facing high levels of hunger, Federal Government and United Nations warn - Food and Agriculture Organization",
+      "marketBuckets": [
+        "risk",
+        "us"
+      ],
+      "relatedIndicators": [
+        {
+          "name": "Nasdaq Composite",
+          "price": 26506.99,
+          "changePercent": -0.2900606001331508,
+          "status": "closed",
+          "marketTime": "2026-09-04T21:16:00+00:00"
+        },
+        {
+          "name": "Russell 2000",
+          "price": 2975.648,
+          "changePercent": 0.24856229386141276,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:30:00+00:00"
+        },
+        {
+          "name": "Nasdaq 100",
+          "price": 29544.154,
+          "changePercent": 0.20980045654511137,
+          "status": "closed",
+          "marketTime": "2026-09-04T21:16:00+00:00"
+        },
+        {
+          "name": "S&P 500",
+          "price": 7718.6,
+          "changePercent": -0.3757239235851583,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:33:00+00:00"
+        },
+        {
+          "name": "Dow Jones",
+          "price": 53414.25,
+          "changePercent": -0.5063694326836901,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:33:00+00:00"
+        },
+        {
+          "name": "U.S. 10Y Yield",
+          "price": 4.783999919891357,
+          "changePercent": 0.46198907793695626,
+          "status": "closed",
+          "marketTime": "2026-09-04T18:59:00+00:00"
+        },
+        {
+          "name": "Gold",
+          "price": 4476.60009765625,
+          "changePercent": -1.3943016882255037,
+          "status": "stale",
+          "marketTime": "2026-09-04T20:59:00+00:00"
+        },
+        {
+          "name": "VIX",
+          "price": 14.520000457763672,
+          "changePercent": 1.3966512413664216,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:14:00+00:00"
+        }
+      ],
+      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
+      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
+    },
+    {
+      "eventId": "6bf685488c59b3f0",
+      "title": "Congress passes war powers measure for first time, breaking with Trump over Iran - BBC",
+      "marketBuckets": [
+        "risk",
+        "us"
+      ],
+      "relatedIndicators": [
+        {
+          "name": "Nasdaq Composite",
+          "price": 26506.99,
+          "changePercent": -0.2900606001331508,
+          "status": "closed",
+          "marketTime": "2026-09-04T21:16:00+00:00"
+        },
+        {
+          "name": "Russell 2000",
+          "price": 2975.648,
+          "changePercent": 0.24856229386141276,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:30:00+00:00"
+        },
+        {
+          "name": "Nasdaq 100",
+          "price": 29544.154,
+          "changePercent": 0.20980045654511137,
+          "status": "closed",
+          "marketTime": "2026-09-04T21:16:00+00:00"
+        },
+        {
+          "name": "S&P 500",
+          "price": 7718.6,
+          "changePercent": -0.3757239235851583,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:33:00+00:00"
+        },
+        {
+          "name": "Dow Jones",
+          "price": 53414.25,
+          "changePercent": -0.5063694326836901,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:33:00+00:00"
+        },
+        {
+          "name": "U.S. 10Y Yield",
+          "price": 4.783999919891357,
+          "changePercent": 0.46198907793695626,
+          "status": "closed",
+          "marketTime": "2026-09-04T18:59:00+00:00"
+        },
+        {
+          "name": "Gold",
+          "price": 4476.60009765625,
+          "changePercent": -1.3943016882255037,
+          "status": "stale",
+          "marketTime": "2026-09-04T20:59:00+00:00"
+        },
+        {
+          "name": "VIX",
+          "price": 14.520000457763672,
+          "changePercent": 1.3966512413664216,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:14:00+00:00"
+        }
+      ],
+      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
+      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
+    },
+    {
+      "eventId": "e3b35f823045af68",
+      "title": "Trump’s Refusal to Sign Housing Bill Complicates Fate of Bipartisan Effort - The New York Times",
       "marketBuckets": [
         "us"
       ],
@@ -1447,25 +1640,11 @@
           "marketTime": "2026-09-04T21:16:00+00:00"
         },
         {
-          "name": "S&P 500",
-          "price": 7718.6,
-          "changePercent": -0.3757239235851583,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:33:00+00:00"
-        },
-        {
           "name": "Russell 2000",
           "price": 2975.648,
           "changePercent": 0.24856229386141276,
           "status": "closed",
           "marketTime": "2026-09-04T20:30:00+00:00"
-        },
-        {
-          "name": "Dow Jones",
-          "price": 53414.25,
-          "changePercent": -0.5063694326836901,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:33:00+00:00"
         },
         {
           "name": "Nasdaq 100",
@@ -1475,6 +1654,20 @@
           "marketTime": "2026-09-04T21:16:00+00:00"
         },
         {
+          "name": "S&P 500",
+          "price": 7718.6,
+          "changePercent": -0.3757239235851583,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:33:00+00:00"
+        },
+        {
+          "name": "Dow Jones",
+          "price": 53414.25,
+          "changePercent": -0.5063694326836901,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:33:00+00:00"
+        },
+        {
           "name": "U.S. 10Y Yield",
           "price": 4.783999919891357,
           "changePercent": 0.46198907793695626,
@@ -1486,18 +1679,183 @@
       "updatedAt": "2026-09-06T15:38:23.155747+00:00"
     },
     {
-      "eventId": "74168854530ab877",
-      "title": "El Niño strengthens into 2027 , raising risks for food prices , power and trade",
+      "eventId": "c6d7bb9fefb1df9d",
+      "title": "Trump’s Capitol visit devolves into shouting match with GOP senator he helped oust in primary fight - CNN",
       "marketBuckets": [
-        "risk"
+        "europe",
+        "us"
       ],
       "relatedIndicators": [
         {
-          "name": "Gold",
-          "price": 4476.60009765625,
-          "changePercent": -1.3943016882255037,
-          "status": "stale",
-          "marketTime": "2026-09-04T20:59:00+00:00"
+          "name": "FTSE 100",
+          "price": 10831.09,
+          "changePercent": -0.003785255966392969,
+          "status": "closed",
+          "marketTime": "2026-09-04T15:35:00+00:00"
+        },
+        {
+          "name": "EUR / USD",
+          "price": 1.1621150970458984,
+          "changePercent": -0.08467912940431478,
+          "status": "closed",
+          "marketTime": "2026-09-04T21:29:00+00:00"
+        },
+        {
+          "name": "DAX",
+          "price": 26046.4,
+          "changePercent": 0.16574819349852588,
+          "status": "closed",
+          "marketTime": "2026-09-04T16:00:00+00:00"
+        },
+        {
+          "name": "Nasdaq Composite",
+          "price": 26506.99,
+          "changePercent": -0.2900606001331508,
+          "status": "closed",
+          "marketTime": "2026-09-04T21:16:00+00:00"
+        },
+        {
+          "name": "Russell 2000",
+          "price": 2975.648,
+          "changePercent": 0.24856229386141276,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:30:00+00:00"
+        },
+        {
+          "name": "Nasdaq 100",
+          "price": 29544.154,
+          "changePercent": 0.20980045654511137,
+          "status": "closed",
+          "marketTime": "2026-09-04T21:16:00+00:00"
+        },
+        {
+          "name": "S&P 500",
+          "price": 7718.6,
+          "changePercent": -0.3757239235851583,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:33:00+00:00"
+        },
+        {
+          "name": "Dow Jones",
+          "price": 53414.25,
+          "changePercent": -0.5063694326836901,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:33:00+00:00"
+        }
+      ],
+      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
+      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
+    },
+    {
+      "eventId": "96683f88fb6fcdde",
+      "title": "Trump is growing tired of hearing ‘no’ from Thune. GOP senators are lining up behind the majority leader - CNN",
+      "marketBuckets": [
+        "europe",
+        "us"
+      ],
+      "relatedIndicators": [
+        {
+          "name": "FTSE 100",
+          "price": 10831.09,
+          "changePercent": -0.003785255966392969,
+          "status": "closed",
+          "marketTime": "2026-09-04T15:35:00+00:00"
+        },
+        {
+          "name": "EUR / USD",
+          "price": 1.1621150970458984,
+          "changePercent": -0.08467912940431478,
+          "status": "closed",
+          "marketTime": "2026-09-04T21:29:00+00:00"
+        },
+        {
+          "name": "DAX",
+          "price": 26046.4,
+          "changePercent": 0.16574819349852588,
+          "status": "closed",
+          "marketTime": "2026-09-04T16:00:00+00:00"
+        },
+        {
+          "name": "Nasdaq Composite",
+          "price": 26506.99,
+          "changePercent": -0.2900606001331508,
+          "status": "closed",
+          "marketTime": "2026-09-04T21:16:00+00:00"
+        },
+        {
+          "name": "Russell 2000",
+          "price": 2975.648,
+          "changePercent": 0.24856229386141276,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:30:00+00:00"
+        },
+        {
+          "name": "Nasdaq 100",
+          "price": 29544.154,
+          "changePercent": 0.20980045654511137,
+          "status": "closed",
+          "marketTime": "2026-09-04T21:16:00+00:00"
+        },
+        {
+          "name": "S&P 500",
+          "price": 7718.6,
+          "changePercent": -0.3757239235851583,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:33:00+00:00"
+        },
+        {
+          "name": "Dow Jones",
+          "price": 53414.25,
+          "changePercent": -0.5063694326836901,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:33:00+00:00"
+        }
+      ],
+      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
+      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
+    },
+    {
+      "eventId": "d0ba8b28dd9af37e",
+      "title": "Trump asks Congress for $87.6B, mostly for Iran war - axios.com",
+      "marketBuckets": [
+        "risk",
+        "us"
+      ],
+      "relatedIndicators": [
+        {
+          "name": "Nasdaq Composite",
+          "price": 26506.99,
+          "changePercent": -0.2900606001331508,
+          "status": "closed",
+          "marketTime": "2026-09-04T21:16:00+00:00"
+        },
+        {
+          "name": "Russell 2000",
+          "price": 2975.648,
+          "changePercent": 0.24856229386141276,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:30:00+00:00"
+        },
+        {
+          "name": "Nasdaq 100",
+          "price": 29544.154,
+          "changePercent": 0.20980045654511137,
+          "status": "closed",
+          "marketTime": "2026-09-04T21:16:00+00:00"
+        },
+        {
+          "name": "S&P 500",
+          "price": 7718.6,
+          "changePercent": -0.3757239235851583,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:33:00+00:00"
+        },
+        {
+          "name": "Dow Jones",
+          "price": 53414.25,
+          "changePercent": -0.5063694326836901,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:33:00+00:00"
         },
         {
           "name": "U.S. 10Y Yield",
@@ -1505,6 +1863,13 @@
           "changePercent": 0.46198907793695626,
           "status": "closed",
           "marketTime": "2026-09-04T18:59:00+00:00"
+        },
+        {
+          "name": "Gold",
+          "price": 4476.60009765625,
+          "changePercent": -1.3943016882255037,
+          "status": "stale",
+          "marketTime": "2026-09-04T20:59:00+00:00"
         },
         {
           "name": "VIX",
@@ -1518,72 +1883,8 @@
       "updatedAt": "2026-09-06T15:38:23.155747+00:00"
     },
     {
-      "eventId": "3decd0fbfe5f4944",
-      "title": "Presidente angolano promete água em abundância e reduo de conflitos no Cunene",
-      "marketBuckets": [
-        "risk"
-      ],
-      "relatedIndicators": [
-        {
-          "name": "Gold",
-          "price": 4476.60009765625,
-          "changePercent": -1.3943016882255037,
-          "status": "stale",
-          "marketTime": "2026-09-04T20:59:00+00:00"
-        },
-        {
-          "name": "U.S. 10Y Yield",
-          "price": 4.783999919891357,
-          "changePercent": 0.46198907793695626,
-          "status": "closed",
-          "marketTime": "2026-09-04T18:59:00+00:00"
-        },
-        {
-          "name": "VIX",
-          "price": 14.520000457763672,
-          "changePercent": 1.3966512413664216,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:14:00+00:00"
-        }
-      ],
-      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
-      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
-    },
-    {
-      "eventId": "786821f3b0309f9a",
-      "title": "Alerta : Clima pone en jaque al campo guatemalteco y 377 mil familias de agricultores están en peligro",
-      "marketBuckets": [
-        "risk"
-      ],
-      "relatedIndicators": [
-        {
-          "name": "Gold",
-          "price": 4476.60009765625,
-          "changePercent": -1.3943016882255037,
-          "status": "stale",
-          "marketTime": "2026-09-04T20:59:00+00:00"
-        },
-        {
-          "name": "U.S. 10Y Yield",
-          "price": 4.783999919891357,
-          "changePercent": 0.46198907793695626,
-          "status": "closed",
-          "marketTime": "2026-09-04T18:59:00+00:00"
-        },
-        {
-          "name": "VIX",
-          "price": 14.520000457763672,
-          "changePercent": 1.3966512413664216,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:14:00+00:00"
-        }
-      ],
-      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
-      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
-    },
-    {
-      "eventId": "5d56c9b5bb3c0dd8",
-      "title": "Con más de un centenar de reproductores Angus y Hereford , arrancó la 49° Expo Ganadera en Río Colorado",
+      "eventId": "f5f463149e25c699",
+      "title": "Trump cancels housing affordability bill signing until SAVE Act is passed - axios.com",
       "marketBuckets": [
         "us"
       ],
@@ -1596,13 +1897,6 @@
           "marketTime": "2026-09-04T21:16:00+00:00"
         },
         {
-          "name": "S&P 500",
-          "price": 7718.6,
-          "changePercent": -0.3757239235851583,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:33:00+00:00"
-        },
-        {
           "name": "Russell 2000",
           "price": 2975.648,
           "changePercent": 0.24856229386141276,
@@ -1610,18 +1904,25 @@
           "marketTime": "2026-09-04T20:30:00+00:00"
         },
         {
-          "name": "Dow Jones",
-          "price": 53414.25,
-          "changePercent": -0.5063694326836901,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:33:00+00:00"
-        },
-        {
           "name": "Nasdaq 100",
           "price": 29544.154,
           "changePercent": 0.20980045654511137,
           "status": "closed",
           "marketTime": "2026-09-04T21:16:00+00:00"
+        },
+        {
+          "name": "S&P 500",
+          "price": 7718.6,
+          "changePercent": -0.3757239235851583,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:33:00+00:00"
+        },
+        {
+          "name": "Dow Jones",
+          "price": 53414.25,
+          "changePercent": -0.5063694326836901,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:33:00+00:00"
         },
         {
           "name": "U.S. 10Y Yield",
@@ -1635,8 +1936,8 @@
       "updatedAt": "2026-09-06T15:38:23.155747+00:00"
     },
     {
-      "eventId": "e0fcea845a8be776",
-      "title": "Premierul Greciei începe revoluția visată de toți românii ! Măriri de salarii , bonusuri pentru pensionari și reduceri de taxe și impozite",
+      "eventId": "0a0467d32629734f",
+      "title": "Trump runs into Republicans who won't bend - axios.com",
       "marketBuckets": [
         "us"
       ],
@@ -1649,25 +1950,11 @@
           "marketTime": "2026-09-04T21:16:00+00:00"
         },
         {
-          "name": "S&P 500",
-          "price": 7718.6,
-          "changePercent": -0.3757239235851583,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:33:00+00:00"
-        },
-        {
           "name": "Russell 2000",
           "price": 2975.648,
           "changePercent": 0.24856229386141276,
           "status": "closed",
           "marketTime": "2026-09-04T20:30:00+00:00"
-        },
-        {
-          "name": "Dow Jones",
-          "price": 53414.25,
-          "changePercent": -0.5063694326836901,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:33:00+00:00"
         },
         {
           "name": "Nasdaq 100",
@@ -1677,29 +1964,18 @@
           "marketTime": "2026-09-04T21:16:00+00:00"
         },
         {
-          "name": "U.S. 10Y Yield",
-          "price": 4.783999919891357,
-          "changePercent": 0.46198907793695626,
+          "name": "S&P 500",
+          "price": 7718.6,
+          "changePercent": -0.3757239235851583,
           "status": "closed",
-          "marketTime": "2026-09-04T18:59:00+00:00"
-        }
-      ],
-      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
-      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
-    },
-    {
-      "eventId": "1b10a7ca554fd2db",
-      "title": "Migración detiene a 38 haitianos tras intervenir 12 negocios en Santo Domingo",
-      "marketBuckets": [
-        "risk"
-      ],
-      "relatedIndicators": [
+          "marketTime": "2026-09-04T20:33:00+00:00"
+        },
         {
-          "name": "Gold",
-          "price": 4476.60009765625,
-          "changePercent": -1.3943016882255037,
-          "status": "stale",
-          "marketTime": "2026-09-04T20:59:00+00:00"
+          "name": "Dow Jones",
+          "price": 53414.25,
+          "changePercent": -0.5063694326836901,
+          "status": "closed",
+          "marketTime": "2026-09-04T20:33:00+00:00"
         },
         {
           "name": "U.S. 10Y Yield",
@@ -1707,237 +1983,6 @@
           "changePercent": 0.46198907793695626,
           "status": "closed",
           "marketTime": "2026-09-04T18:59:00+00:00"
-        },
-        {
-          "name": "VIX",
-          "price": 14.520000457763672,
-          "changePercent": 1.3966512413664216,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:14:00+00:00"
-        }
-      ],
-      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
-      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
-    },
-    {
-      "eventId": "8cfd8cdc6f7f0f50",
-      "title": "Letter : National debt has increased under current administration",
-      "marketBuckets": [
-        "risk"
-      ],
-      "relatedIndicators": [
-        {
-          "name": "Gold",
-          "price": 4476.60009765625,
-          "changePercent": -1.3943016882255037,
-          "status": "stale",
-          "marketTime": "2026-09-04T20:59:00+00:00"
-        },
-        {
-          "name": "U.S. 10Y Yield",
-          "price": 4.783999919891357,
-          "changePercent": 0.46198907793695626,
-          "status": "closed",
-          "marketTime": "2026-09-04T18:59:00+00:00"
-        },
-        {
-          "name": "VIX",
-          "price": 14.520000457763672,
-          "changePercent": 1.3966512413664216,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:14:00+00:00"
-        }
-      ],
-      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
-      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
-    },
-    {
-      "eventId": "615f6ff09dff9357",
-      "title": "A eleio alemã que pode resultar no 1° governador da AfD",
-      "marketBuckets": [
-        "risk"
-      ],
-      "relatedIndicators": [
-        {
-          "name": "Gold",
-          "price": 4476.60009765625,
-          "changePercent": -1.3943016882255037,
-          "status": "stale",
-          "marketTime": "2026-09-04T20:59:00+00:00"
-        },
-        {
-          "name": "U.S. 10Y Yield",
-          "price": 4.783999919891357,
-          "changePercent": 0.46198907793695626,
-          "status": "closed",
-          "marketTime": "2026-09-04T18:59:00+00:00"
-        },
-        {
-          "name": "VIX",
-          "price": 14.520000457763672,
-          "changePercent": 1.3966512413664216,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:14:00+00:00"
-        }
-      ],
-      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
-      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
-    },
-    {
-      "eventId": "e2190a93d0670117",
-      "title": "الضفة .. سؤال أردني أم فلسطيني ؟",
-      "marketBuckets": [
-        "risk"
-      ],
-      "relatedIndicators": [
-        {
-          "name": "Gold",
-          "price": 4476.60009765625,
-          "changePercent": -1.3943016882255037,
-          "status": "stale",
-          "marketTime": "2026-09-04T20:59:00+00:00"
-        },
-        {
-          "name": "U.S. 10Y Yield",
-          "price": 4.783999919891357,
-          "changePercent": 0.46198907793695626,
-          "status": "closed",
-          "marketTime": "2026-09-04T18:59:00+00:00"
-        },
-        {
-          "name": "VIX",
-          "price": 14.520000457763672,
-          "changePercent": 1.3966512413664216,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:14:00+00:00"
-        }
-      ],
-      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
-      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
-    },
-    {
-      "eventId": "a88753935b4ae3eb",
-      "title": "إسرائيل بعد أمريكا",
-      "marketBuckets": [
-        "risk"
-      ],
-      "relatedIndicators": [
-        {
-          "name": "Gold",
-          "price": 4476.60009765625,
-          "changePercent": -1.3943016882255037,
-          "status": "stale",
-          "marketTime": "2026-09-04T20:59:00+00:00"
-        },
-        {
-          "name": "U.S. 10Y Yield",
-          "price": 4.783999919891357,
-          "changePercent": 0.46198907793695626,
-          "status": "closed",
-          "marketTime": "2026-09-04T18:59:00+00:00"
-        },
-        {
-          "name": "VIX",
-          "price": 14.520000457763672,
-          "changePercent": 1.3966512413664216,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:14:00+00:00"
-        }
-      ],
-      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
-      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
-    },
-    {
-      "eventId": "b5b952e733bc7339",
-      "title": "마사회 이전 논의 … 재원 확보 · 경마장 유지가 관건",
-      "marketBuckets": [
-        "risk"
-      ],
-      "relatedIndicators": [
-        {
-          "name": "Gold",
-          "price": 4476.60009765625,
-          "changePercent": -1.3943016882255037,
-          "status": "stale",
-          "marketTime": "2026-09-04T20:59:00+00:00"
-        },
-        {
-          "name": "U.S. 10Y Yield",
-          "price": 4.783999919891357,
-          "changePercent": 0.46198907793695626,
-          "status": "closed",
-          "marketTime": "2026-09-04T18:59:00+00:00"
-        },
-        {
-          "name": "VIX",
-          "price": 14.520000457763672,
-          "changePercent": 1.3966512413664216,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:14:00+00:00"
-        }
-      ],
-      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
-      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
-    },
-    {
-      "eventId": "79035d516dbb7307",
-      "title": "[ AI그래픽 ] 삼성 좌완 이승현 5이닝 무실점 , 9월 5일 잠실 LG전 투구 분석",
-      "marketBuckets": [
-        "risk"
-      ],
-      "relatedIndicators": [
-        {
-          "name": "Gold",
-          "price": 4476.60009765625,
-          "changePercent": -1.3943016882255037,
-          "status": "stale",
-          "marketTime": "2026-09-04T20:59:00+00:00"
-        },
-        {
-          "name": "U.S. 10Y Yield",
-          "price": 4.783999919891357,
-          "changePercent": 0.46198907793695626,
-          "status": "closed",
-          "marketTime": "2026-09-04T18:59:00+00:00"
-        },
-        {
-          "name": "VIX",
-          "price": 14.520000457763672,
-          "changePercent": 1.3966512413664216,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:14:00+00:00"
-        }
-      ],
-      "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",
-      "updatedAt": "2026-09-06T15:38:23.155747+00:00"
-    },
-    {
-      "eventId": "092b80e1554e03a9",
-      "title": "الجامعات الخاصة بالمغرب .. من ملاذ بديل إلى استثمار عائلي للإدماج في سوق العمل",
-      "marketBuckets": [
-        "risk"
-      ],
-      "relatedIndicators": [
-        {
-          "name": "Gold",
-          "price": 4476.60009765625,
-          "changePercent": -1.3943016882255037,
-          "status": "stale",
-          "marketTime": "2026-09-04T20:59:00+00:00"
-        },
-        {
-          "name": "U.S. 10Y Yield",
-          "price": 4.783999919891357,
-          "changePercent": 0.46198907793695626,
-          "status": "closed",
-          "marketTime": "2026-09-04T18:59:00+00:00"
-        },
-        {
-          "name": "VIX",
-          "price": 14.520000457763672,
-          "changePercent": 1.3966512413664216,
-          "status": "closed",
-          "marketTime": "2026-09-04T20:14:00+00:00"
         }
       ],
       "interpretation": "Contextual market exposure only. Price moves are not attributed to this event unless independently established.",

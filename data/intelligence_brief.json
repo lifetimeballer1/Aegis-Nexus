@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-10T11:13:47.323070Z",
+  "updatedAt": "2026-09-10T03:03:49.329101Z",
   "method": "Deterministic prioritization of existing public Global Pulse artifacts; not a forecast or causal model.",
   "freshness": {
-    "snapshotUpdatedAt": "2026-09-10T10:15:25.050935Z",
-    "eventsUpdatedAt": "2026-09-05T22:47:33.597867Z",
-    "assessmentsUpdatedAt": "2026-09-06T15:38:50.350239Z"
+    "snapshotUpdatedAt": "2026-09-10T03:03:44.217884Z",
+    "eventsUpdatedAt": "2026-09-10T03:03:03.992880Z",
+    "assessmentsUpdatedAt": "2026-09-10T03:03:12.655499Z"
   },
   "headline": {
     "title": "Global Intelligence Brief",
@@ -13,49 +13,95 @@
   },
   "topDevelopments": [
     {
-      "id": "aa26575eaa22323a",
-      "title": "Trump envoys Witkoff, Kushner arrive in Moscow with proposal to end war - The New Voice of Ukraine",
-      "category": "general",
-      "confidence": "moderate",
-      "reportCount": 5,
-      "independentSourceCount": 2,
-      "sources": [
-        "google_news_ukraine_war",
-        "al_jazeera"
-      ],
-      "breaking": true,
-      "firstSeen": "2026-09-05T09:23:14+00:00",
-      "lastSeen": "2026-09-05T11:54:00+00:00"
-    },
-    {
-      "id": "a9b69c7213ce317c",
-      "title": "Putin Meets With Us Envoys At The Kremlin For Renewed Talks On Ending The War In Ukraine",
+      "id": "0dfe3e7a3c0607de",
+      "title": "US envoys Witkoff, Kushner meet Putin for talks on Ukraine war",
       "category": "diplomatic",
-      "confidence": "moderate",
-      "reportCount": 2,
-      "independentSourceCount": 2,
+      "confidence": "high",
+      "reportCount": 4,
+      "independentSourceCount": 3,
       "sources": [
+        "al_jazeera",
         "gdelt_climate_security_watch",
         "google_news_ukraine_war"
       ],
       "breaking": true,
-      "firstSeen": "2026-09-05T19:05:33+00:00",
-      "lastSeen": "2026-09-05T21:15:00+00:00"
+      "firstSeen": "2026-09-05T16:46:24+00:00",
+      "lastSeen": "2026-09-05T21:23:06+00:00"
     },
     {
-      "id": "3c330215fe83dcd1",
-      "title": "US-IRAN WAR | U.S. Strikes 3 Iranian Oil Tankers After Navy Warships Targeted - WION",
+      "id": "cb2566ead6cb6da4",
+      "title": "Russia’s Putin meets US envoys to discuss Trump proposal to end Ukraine war",
+      "category": "general",
+      "confidence": "moderate",
+      "reportCount": 3,
+      "independentSourceCount": 2,
+      "sources": [
+        "al_jazeera",
+        "cna_world"
+      ],
+      "breaking": true,
+      "firstSeen": "2026-09-05T17:20:00+00:00",
+      "lastSeen": "2026-09-05T18:12:52+00:00"
+    },
+    {
+      "id": "2b4e1fad1def2f4e",
+      "title": "War in Ukraine: Putin, Zelensky order pause in strikes",
       "category": "general",
       "confidence": "moderate",
       "reportCount": 2,
       "independentSourceCount": 2,
       "sources": [
-        "google_news_iran_israel",
-        "stars_stripes"
+        "france_24",
+        "google_news_ukraine_war"
       ],
       "breaking": true,
-      "firstSeen": "2026-09-05T14:17:54+00:00",
-      "lastSeen": "2026-09-05T15:05:00+00:00"
+      "firstSeen": "2026-09-05T13:48:46+00:00",
+      "lastSeen": "2026-09-05T16:15:40+00:00"
+    },
+    {
+      "id": "540d4807fcb7b674",
+      "title": "Iran rebuilding its axis of resistance for attack , Israeli intelligence . suggests",
+      "category": "conflict",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "independentSourceCount": 2,
+      "sources": [
+        "gdelt_live_middle_east",
+        "google_news_middle_east_security"
+      ],
+      "breaking": true,
+      "firstSeen": "2026-09-05T13:33:43+00:00",
+      "lastSeen": "2026-09-05T14:45:00+00:00"
+    },
+    {
+      "id": "bef7026ea7cf71d4",
+      "title": "Multipolarity gives middle powers more choices, but fewer guarantees - Al Jazeera",
+      "category": "general",
+      "confidence": "moderate",
+      "reportCount": 3,
+      "independentSourceCount": 2,
+      "sources": [
+        "google_news_americas_counter_cartel_coalition",
+        "al_jazeera"
+      ],
+      "breaking": false,
+      "firstSeen": "2026-09-05T14:51:08+00:00",
+      "lastSeen": "2026-09-05T14:54:23+00:00"
+    },
+    {
+      "id": "6871dad21aef6c87",
+      "title": "Germany's far-right AfD eyes historic state victory in Saxony-Anhalt election",
+      "category": "political",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "independentSourceCount": 2,
+      "sources": [
+        "france_24",
+        "al_jazeera"
+      ],
+      "breaking": false,
+      "firstSeen": "2026-09-05T18:07:43+00:00",
+      "lastSeen": "2026-09-06T05:52:06+00:00"
     },
     {
       "id": "17e5746efc05d479",
@@ -101,203 +147,214 @@
       "lastSeen": "2026-09-05T19:15:00+00:00"
     },
     {
-      "id": "6296e8eb5edc9cfd",
-      "title": "Putin orders 72-hour pause in Kyiv strikes as US envoys visit Russia and Ukraine - Belfast Telegraph",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 3,
-      "independentSourceCount": 1,
-      "sources": [
-        "google_news_ukraine_war"
-      ],
-      "breaking": true,
-      "firstSeen": "2026-09-05T12:38:43+00:00",
-      "lastSeen": "2026-09-05T13:48:46+00:00"
-    },
-    {
-      "id": "2b678607b410e963",
-      "title": "US-Israel-Iran War Latest Live News: US Faces Record-High Petrol Prices to Top $4 Per Gallon as War on Iran Continues to Raise Energy Costs - The Sunday Guardian",
-      "category": "general",
+      "id": "c693cc84a10876f1",
+      "title": "US envoys Witkoff, Kushner arrive in Moscow for talks on peace in Ukraine",
+      "category": "diplomatic",
       "confidence": "low",
       "reportCount": 2,
       "independentSourceCount": 1,
       "sources": [
-        "google_news_iran_israel"
+        "france_24"
       ],
       "breaking": true,
-      "firstSeen": "2026-09-05T12:52:16+00:00",
-      "lastSeen": "2026-09-05T13:22:15+00:00"
-    },
-    {
-      "id": "749bc41d09f04eeb",
-      "title": "Putin orders 3-day halt in Kyiv strikes as Trump envoys arrive in Moscow - english.mathrubhumi.com",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "independentSourceCount": 1,
-      "sources": [
-        "google_news_ukraine_war"
-      ],
-      "breaking": true,
-      "firstSeen": "2026-09-05T12:54:38+00:00",
-      "lastSeen": "2026-09-05T12:54:38+00:00"
-    },
-    {
-      "id": "4ef1cc324002ed0f",
-      "title": "Netanyahu says Iran will face severe response if Tehran attacks Israel - Business Upturn",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "independentSourceCount": 1,
-      "sources": [
-        "google_news_south_asia_security"
-      ],
-      "breaking": true,
-      "firstSeen": "2026-09-05T12:06:02+00:00",
-      "lastSeen": "2026-09-05T12:06:27+00:00"
+      "firstSeen": "2026-09-05T15:09:22+00:00",
+      "lastSeen": "2026-09-05T16:14:00+00:00"
     }
   ],
   "watchlist": [
     {
-      "entity": "Joint Task Force Western Hemisphere",
-      "score": 26,
+      "entity": "American Civil Liberties Union",
+      "score": 51,
+      "level": "ELEVATED",
+      "delta": 0,
+      "evidenceCount": 16,
+      "topFactors": [
+        {
+          "label": "Conflict / military activity",
+          "delta": 24
+        },
+        {
+          "label": "Economic / energy signals",
+          "delta": 6
+        },
+        {
+          "label": "Diplomatic / de-escalation signals",
+          "delta": -1
+        }
+      ]
+    },
+    {
+      "entity": "Remark Against Gulf",
+      "score": 45,
+      "level": "ELEVATED",
+      "delta": 0,
+      "evidenceCount": 18,
+      "topFactors": [
+        {
+          "label": "Conflict / military activity",
+          "delta": 18
+        },
+        {
+          "label": "Economic / energy signals",
+          "delta": 2
+        }
+      ]
+    },
+    {
+      "entity": "Ministry Condemned US Attacks",
+      "score": 43,
       "level": "WATCH",
       "delta": 0,
       "evidenceCount": 12,
       "topFactors": [
         {
           "label": "Conflict / military activity",
-          "delta": 9
-        }
-      ]
-    },
-    {
-      "entity": "Americas Counter Cartel Coalition",
-      "score": 13,
-      "level": "WATCH",
-      "delta": 0,
-      "evidenceCount": 6,
-      "topFactors": [
-        {
-          "label": "Conflict / military activity",
-          "delta": 4
-        }
-      ]
-    },
-    {
-      "entity": "United States",
-      "score": 11,
-      "level": "WATCH",
-      "delta": 0,
-      "evidenceCount": 11,
-      "topFactors": [
-        {
-          "label": "Conflict / military activity",
-          "delta": 2
+          "delta": 42
         },
         {
-          "label": "Live event activity",
-          "delta": 2
-        }
-      ]
-    },
-    {
-      "entity": "Eastern Pacific Maritime Theater",
-      "score": 11,
-      "level": "WATCH",
-      "delta": 0,
-      "evidenceCount": 5,
-      "topFactors": [
-        {
-          "label": "Conflict / military activity",
-          "delta": 4
-        }
-      ]
-    },
-    {
-      "entity": "U.S. Coast Guard",
-      "score": 11,
-      "level": "WATCH",
-      "delta": 0,
-      "evidenceCount": 3,
-      "topFactors": [
-        {
-          "label": "Conflict / military activity",
-          "delta": 8
-        }
-      ]
-    },
-    {
-      "entity": "U.S. Southern Command",
-      "score": 6,
-      "level": "WATCH",
-      "delta": 0,
-      "evidenceCount": 4,
-      "topFactors": [
-        {
-          "label": "Conflict / military activity",
+          "label": "Economic / energy signals",
           "delta": 3
         },
         {
           "label": "Diplomatic / de-escalation signals",
+          "delta": -1
+        }
+      ]
+    },
+    {
+      "entity": "Ministry Colonel Andrei Krestyansky Killed",
+      "score": 38,
+      "level": "WATCH",
+      "delta": 0,
+      "evidenceCount": 13,
+      "topFactors": [
+        {
+          "label": "Conflict / military activity",
+          "delta": 20
+        }
+      ]
+    },
+    {
+      "entity": "President Volodymyr Zelenskyy",
+      "score": 35,
+      "level": "WATCH",
+      "delta": 0,
+      "evidenceCount": 20,
+      "topFactors": [
+        {
+          "label": "Conflict / military activity",
+          "delta": 15
+        },
+        {
+          "label": "Diplomatic / de-escalation signals",
+          "delta": -8
+        }
+      ]
+    },
+    {
+      "entity": "President Volodymyr Zelenskiy",
+      "score": 35,
+      "level": "WATCH",
+      "delta": 0,
+      "evidenceCount": 19,
+      "topFactors": [
+        {
+          "label": "Conflict / military activity",
+          "delta": 15
+        },
+        {
+          "label": "Diplomatic / de-escalation signals",
+          "delta": -7
+        }
+      ]
+    },
+    {
+      "entity": "President Vladimir Putin",
+      "score": 34,
+      "level": "WATCH",
+      "delta": 0,
+      "evidenceCount": 32,
+      "topFactors": [
+        {
+          "label": "Conflict / military activity",
+          "delta": 20
+        },
+        {
+          "label": "Diplomatic / de-escalation signals",
+          "delta": -9
+        },
+        {
+          "label": "Live event activity",
+          "delta": 7
+        },
+        {
+          "label": "Economic / energy signals",
+          "delta": 1
+        }
+      ]
+    },
+    {
+      "entity": "Iran",
+      "score": 33,
+      "level": "WATCH",
+      "delta": 0,
+      "evidenceCount": 88,
+      "topFactors": [
+        {
+          "label": "Conflict / military activity",
+          "delta": 77
+        },
+        {
+          "label": "Live event activity",
+          "delta": 20
+        },
+        {
+          "label": "Economic / energy signals",
+          "delta": 6
+        },
+        {
+          "label": "Diplomatic / de-escalation signals",
           "delta": -2
+        }
+      ]
+    },
+    {
+      "entity": "Jordan Iran’s Islamic Revolutionary Guard Corps",
+      "score": 33,
+      "level": "WATCH",
+      "delta": 0,
+      "evidenceCount": 88,
+      "topFactors": [
+        {
+          "label": "Conflict / military activity",
+          "delta": 77
+        },
+        {
+          "label": "Live event activity",
+          "delta": 20
         },
         {
           "label": "Economic / energy signals",
-          "delta": 1
-        }
-      ]
-    },
-    {
-      "entity": "Venezuela",
-      "score": 6,
-      "level": "WATCH",
-      "delta": 0,
-      "evidenceCount": 4,
-      "topFactors": [
-        {
-          "label": "Conflict / military activity",
-          "delta": 2
+          "delta": 6
         },
         {
-          "label": "Economic / energy signals",
-          "delta": 1
+          "label": "Diplomatic / de-escalation signals",
+          "delta": -2
         }
       ]
     },
     {
-      "entity": "Ecuador",
-      "score": 5,
+      "entity": "Raise Stakes In Strait",
+      "score": 32,
       "level": "WATCH",
       "delta": 0,
-      "evidenceCount": 4,
+      "evidenceCount": 7,
       "topFactors": [
         {
           "label": "Conflict / military activity",
-          "delta": 2
+          "delta": 22
         }
       ]
-    },
-    {
-      "entity": "Caribbean Maritime Theater",
-      "score": 5,
-      "level": "WATCH",
-      "delta": 0,
-      "evidenceCount": 4,
-      "topFactors": [
-        {
-          "label": "Conflict / military activity",
-          "delta": 2
-        }
-      ]
-    },
-    {
-      "entity": "Colombia",
-      "score": 4,
-      "level": "WATCH",
-      "delta": 0,
-      "evidenceCount": 4,
-      "topFactors": []
     }
   ],
   "methodology": {
