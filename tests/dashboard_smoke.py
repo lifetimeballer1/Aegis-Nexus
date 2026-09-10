@@ -34,6 +34,10 @@ def smoke(page, name):
     page.locator('#gpMapLayers').wait_for(timeout=30000)
     page.locator('#gpMapLayers').click()
     assert page.locator('#gpMapLayerPanel').evaluate("el => el.classList.contains('open')")
+    assert page.locator('.gp-map-layers-backdrop').count() > 0
+    page.keyboard.press('Escape')
+    assert not page.locator('#gpMapLayerPanel').evaluate("el => el.classList.contains('open')")
+    assert page.locator('.gp-map-layers-backdrop').count() == 0
 
     page.locator('#gpMapSearch').fill('Ukraine')
     page.locator('#gpMapReset').click()
