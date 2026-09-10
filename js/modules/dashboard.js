@@ -108,7 +108,21 @@ export function renderDashboard() {
     + kpi(fmtInt(hiPri), 'High Priority', 'escalated conflicts', 'red', lastT, '#ff6678')
     + kpi(fmtInt(emerging), 'Emerging Risks', 'low-confidence events', 'amber', lastT, '#ffc857')
     + kpi(fmtInt(critEv), 'Critical Alerts', 'high-confidence events', 'red', lastT, '#ff6678')
-    + kpi(fmtInt(order.length), 'Monitored Regions', 'regions', 'blue', [], '#62a0ff');
+    + kpi(fmtInt(order.length), 'Monitored Regions', 'regions', 'blue', [], '#62a0ff')
+    + kpi(`${fmtInt(online)} / ${fmtInt(total)}`, 'Sources Online', 'reporting feeds', 'green', [], '#48df83');
+
+  // Ops at-a-glance: dense second tile row, all figures from canonical state.
+  const staleCount = feedMeta ? Object.values(feedMeta).filter((f) => f && f.stale).length : 0;
+  const tensionTxt = tension ?? '—';
+  const tensionDeltaTxt = Number.isFinite(Number(tensionDelta)) && Number(tensionDelta) !== 0
+    ? ` (${Number(tensionDelta) > 0 ? '+' : ''}${tensionDelta})` : '';
+  const opsStrip = `<div class="cs-ops-strip" role="list" aria-label="Operations at a glance">`
+    + `<div class="cs-ops-tile" role="listitem"><span class="k">Tension index</span><span class="v gp-nums">${esc(String(tensionTxt))}${esc(tensionDeltaTxt)}</span></div>`
+    + `<div class="cs-ops-tile" role="listitem"><span class="k">Sources online</span><span class="v gp-nums">${fmtInt(online)} / ${fmtInt(total)}</span></div>`
+    + `<div class="cs-ops-tile" role="listitem"><span class="k">Stale feeds</span><span class="v gp-nums">${fmtInt(staleCount)}</span></div>`
+    + `<div class="cs-ops-tile" role="listitem"><span class="k">Market signals</span><span class="v gp-nums">${fmtInt(indicators.length)}</span></div>`
+    + `<div class="cs-ops-trend" role="listitem" aria-label="Tension history trend">${sparklineSVG(lastT, { w: 220, h: 44, stroke: '#4da3ff', id: 'tension history' }) || '<span class="k">No trend history</span>'}</div>`
+    + `</div>`;
 
   const allStories = stories(state);
   const q = query.trim().toLowerCase();
@@ -163,8 +177,9 @@ export function renderDashboard() {
     ${stale ? '<div class="gp-state" style="padding:8px;border:1px solid var(--amber-dim);border-radius:8px;margin-bottom:8px"><div style="font-size:11px;color:var(--amber)">Offline — showing cached data. Some feeds are stale.</div></div>' : ''}
     ${!navigator.onLine ? '<div class="gp-state" style="padding:8px;border:1px solid var(--red-dim);border-radius:8px;margin-bottom:8px"><div style="font-size:11px;color:var(--red)">You are offline. Cached snapshot shown.</div></div>' : ''}
     <div class="cc-kpi-strip" role="list" aria-label="Key indicators">${kpis}</div>
+    ${opsStrip}
     <div class="cc-grid">
-      <div class="cc-panel"><h3>▦ Headline Intelligence <a href="#section-breaking">View All →</a></h3>
+      <div class="cc-panel"><h3>▦ Headline Intelligence <span class="cs-live-badge${allStories.length ? '' : ' is-empty'}">${allStories.length ? `LIVE · ${filtered.length}` : 'NO FEED'}</span> <a href="#section-breaking">View All →</a></h3>
         <input id="dashSearch" class="gp-map-search" type="search" aria-label="Filter headlines" placeholder="Filter headlines…" value="${esc(query)}" style="margin-bottom:8px">${headRows}</div>
       <div class="cc-panel"><h3>🌐 Global Map <a href="#section-map">View Full Map →</a></h3>
         <div style="font-size:11px;color:var(--muted);margin-bottom:6px">All Domains · 24H · ${fmtInt(events.length)} signals · dark operational basemap</div>

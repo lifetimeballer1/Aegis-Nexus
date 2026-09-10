@@ -107,3 +107,77 @@ body::before {
   #commandClock .cs-time { text-shadow: none; }
   .cs-strip-seg { box-shadow: none; }
 }
+
+/* Session 2 — dense command-center grid (refs 1-3). Visual-only. */
+
+/* Labeled left rail: group micro-labels + neon active treatment. */
+.gp-rail-group {
+  font-size: 9px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--muted-2); padding: 10px 10px 3px; min-width: 0;
+}
+.gp-rail-group:first-of-type { padding-top: 2px; }
+.gp-rail .gp-nav-item.active {
+  color: #fff; border-color: rgba(77, 163, 255, 0.5);
+  background: linear-gradient(90deg, rgba(77, 163, 255, 0.14), var(--panel-2));
+  box-shadow: 0 0 12px rgba(77, 163, 255, 0.18), inset 0 0 12px rgba(77, 163, 255, 0.06);
+}
+.gp-rail .gp-nav-item:hover { border-color: var(--line-strong); }
+
+/* Six-tile KPI strip (adds Sources Online tile). */
+.cc-kpi-strip { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+.cc-shell-kpis { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+@media (max-width: 1200px) { .cc-shell-kpis { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 720px) { .cc-shell-kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+/* Ops at-a-glance: dense mini tiles + tension trend chart. */
+.cs-ops-strip {
+  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)) minmax(0, 1.6fr);
+  gap: 6px; margin-bottom: 10px; min-width: 0;
+}
+.cs-ops-tile {
+  display: flex; flex-direction: column; justify-content: center; gap: 1px;
+  padding: 7px 10px; border: 1px solid var(--line); border-radius: 8px;
+  background: linear-gradient(180deg, #0b141f, #060b12); min-width: 0;
+}
+.cs-ops-tile .k { font-size: 9px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted-2); }
+.cs-ops-tile .v { font-size: 15px; font-weight: 800; color: var(--text); }
+.cs-ops-trend {
+  display: flex; align-items: center; justify-content: flex-end;
+  padding: 4px 10px; border: 1px solid rgba(77, 163, 255, 0.35); border-radius: 8px;
+  background: linear-gradient(180deg, rgba(77, 163, 255, 0.07), #060b12);
+  box-shadow: inset 0 0 14px rgba(77, 163, 255, 0.08); min-width: 0; overflow: hidden;
+}
+.cs-ops-trend .k { font-size: 10px; color: var(--muted-2); }
+@media (max-width: 1200px) { .cs-ops-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); } .cs-ops-trend { grid-column: 1 / -1; justify-content: flex-start; } }
+
+/* Headline live badge — count derived from canonical feed. */
+.cs-live-badge {
+  font-size: 9px; font-weight: 800; letter-spacing: 0.08em; white-space: nowrap;
+  color: #fff; border: 1px solid var(--neon-red, #ff2d55); border-radius: 6px;
+  background: rgba(255, 45, 85, 0.14); box-shadow: var(--glow-red, 0 0 10px rgba(255, 45, 85, 0.35));
+  padding: 2px 7px;
+}
+.cs-live-badge.is-empty { color: var(--neon-amber, #ffc857); border-color: rgba(255, 200, 87, 0.5); background: rgba(255, 200, 87, 0.08); box-shadow: none; }
+
+/* Ambient ops-grid overlay + section header glow. Motion-safe. */
+body::after {
+  content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none; opacity: 0.5;
+  background-image:
+    linear-gradient(rgba(77, 163, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(77, 163, 255, 0.025) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: radial-gradient(ellipse 90% 60% at 50% 0%, #000 30%, transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse 90% 60% at 50% 0%, #000 30%, transparent 100%);
+}
+.gp-section-header { box-shadow: inset 0 1px 0 rgba(77, 163, 255, 0.08); }
+#section-dashboard .gp-section-header { border-bottom-color: rgba(255, 45, 85, 0.25); }
+@media (prefers-reduced-motion: reduce) {
+  body::after { display: none; }
+  .gp-rail .gp-nav-item.active { box-shadow: none; }
+  .cs-live-badge { box-shadow: none; }
+}
+@media (forced-colors: active) {
+  body::after { display: none; }
+  .cs-live-badge { box-shadow: none; }
+  .gp-rail .gp-nav-item.active { box-shadow: none; }
+}
