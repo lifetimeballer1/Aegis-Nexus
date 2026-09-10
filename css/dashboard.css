@@ -450,6 +450,11 @@
 @media(max-width:720px){
   #alertsBody .gp-alert-list-scroll,#timelineBody .gp-timeline-rail{max-height:480px}
 }
+/* DESIGN 20-phase (14b): Sources dense rows — validation stripe.
+   Left stripe mirrors alert-bar language; status text stays 10px mono. */
+#statusBody .gp-source-row{position:relative}
+#statusBody .gp-source-row .meta.gp-nums{font-family:var(--font-mono);font-variant-numeric:tabular-nums}
+#statusBody .gp-source-summary .gp-micro-label{margin-bottom:4px}
 /* Polish grind 6 — KPI strip: tabular numerals + sparklines everywhere they belong.
    Point-in-time counts (status KPIs, market cards) stay spark-free honestly;
    history-backed KPIs keep real-data sparklines with labels. */
