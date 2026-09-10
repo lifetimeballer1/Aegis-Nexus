@@ -103,6 +103,34 @@
   /* Transitions */
   --ease: cubic-bezier(0.4, 0, 0.2, 1);
   --duration: 180ms;
+
+  /* DESIGN 20-phase token lock (11): dense terminal aesthetic.
+     Values inferred from css/tokens.css + prior GUI-10 work (vision down,
+     no pixel-guessing): panel-2 rows, 10px micro-labels, mono numerals,
+     canonical severity tokens only. Additions are aliases/scales — no
+     existing token value changes. */
+  --density-row: 6px;
+  --density-row-tight: 5px;
+  --density-gap: 8px;
+  --density-gap-tight: 6px;
+  --type-micro: 10px;
+  --type-body-dense: 11px;
+  --type-body: 12px;
+  --touch-min: 36px;
+  --touch-min-coarse: 40px;
+  --skeleton-base: var(--panel-2);
+  --skeleton-shine: rgba(255, 255, 255, 0.06);
+  --toast-bg: var(--bg-elevated);
+  --toast-line: var(--line-strong);
+  --intelweb-min-h: 420px;
+  --intelweb-frame-h: 900px;
+  --intelweb-frame-h-mobile: 620px;
+  --nav-rail-w: 172px;
+  --nav-bottom-h: 56px;
+  --z-nav: 90;
+  --z-header: 100;
+  --z-dialog: 200;
+  --z-toast: 300;
 }
 
 /* Dark-mode first — no light theme for now */
