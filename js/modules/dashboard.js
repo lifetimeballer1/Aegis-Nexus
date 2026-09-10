@@ -117,6 +117,7 @@ export function renderDashboard() {
   const tensionDeltaTxt = Number.isFinite(Number(tensionDelta)) && Number(tensionDelta) !== 0
     ? ` (${Number(tensionDelta) > 0 ? '+' : ''}${tensionDelta})` : '';
   const tensionBars = barsSVG(lastT, { w: 120, h: 26, fill: '#4da3ff', id: 'tension history' });
+  const upd = snapshot?.updatedAt ? formatRelativeTime(snapshot.updatedAt) : '—';
   const opsStrip = `<div class="cs-ops-strip" role="list" aria-label="Operations at a glance">`
     + `<div class="cs-ops-tile" role="listitem"><span class="k">Tension index</span><span class="v gp-nums">${esc(String(tensionTxt))}${esc(tensionDeltaTxt)}</span>${tensionBars}</div>`
     + `<div class="cs-ops-tile" role="listitem"><span class="k">Sources online</span><span class="v gp-nums">${fmtInt(online)} / ${fmtInt(total)}</span></div>`
@@ -200,7 +201,6 @@ export function renderDashboard() {
   const priorityOrder = Array.isArray(regional.priorityOrder) ? regional.priorityOrder : order;
   void priorityOrder;
   const stale = feedMeta && Object.values(feedMeta).some(f => f?.stale);
-  const upd = snapshot?.updatedAt ? formatRelativeTime(snapshot.updatedAt) : '—';
 
   el.innerHTML = `
     <div class="cc-situation"><h2>🌐 Global Situation <span class="sub">Key indicators across all monitored domains</span></h2>
