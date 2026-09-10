@@ -146,7 +146,7 @@ def main():
     edges = [edge for edge in edges if edge['source'] in published_ids and edge['target'] in published_ids]
 
     payload = {
-        'updatedAt': graph.get('updatedAt') or data.get('updatedAt') or '',
+        'updatedAt': datetime.now(timezone.utc).isoformat().replace('+00:00', 'Z'),
         'method': graph.get('method') or 'Evidence-backed public reporting graph',
         'caution': graph.get('caution') or 'A connection means the entities share a public evidence record; it does not independently prove causation, coordination, alliance, or responsibility.',
         'nodes': nodes[:100],
