@@ -92,3 +92,52 @@ Baseline at B1: branch `brain-track` off `map-concept-track`, brain 28 nodes /
 - 2026-09-10 — New manifest-hashed artifacts: `brain_stories.json`,
   `brain_gap_history.json`.
 - 2026-09-10 — Deterministic evidence rules only; no LLM/backend, no fabrication.
+
+## Completion status (2026-09-10)
+
+All 40 phases landed on `brain-track`:
+
+- **B2** honest tension freshness; **B3–B5** story/gap schema, validators,
+  pipeline wiring map.
+- **B6–B12** dormant layers rewired into the canonical refresh
+  (`merge_live_news`, `build_live_events`, event consistency/resolution,
+  source evidence, claims, event intelligence, assessment, historical trends)
+  with fresh gates and manifest coverage.
+- **B13–B20** `build_brain_stories.py`: canonical-event story clusters, evidence
+  independence, completeness slots, eight gap detectors, gap lifecycle with
+  `brain_gap_history.json`, hub linking, bounded story pressure, tests.
+- **B21–B26** `build_tension.py` v6 single writer: six drivers + capped
+  story pressure, audit payload (`tensionBreakdown.topStories`), v6-only
+  history, unified thresholds, `validate_tension.py`, dead legacy tension UIs
+  deleted, overview card renders structured early warning + staleness.
+- **B27–B32** Brain workspace: "What matters now", story detail with gaps and
+  evidence, gap board, refresh delta strip, action-layer chips, cross-links.
+- **B33–B37** Web Brain mode: story cluster nodes, gap ghost nodes, provenance
+  detail, typed relationship options, gap severity filter.
+- **B38–B40** dashboard story panel, acceptance battery, docs.
+
+## Verification evidence (B40)
+
+- `python -m pytest -q` → **138 passed**.
+- `node --test tests/intelligence_web_filters.test.cjs` → 7 passed.
+- `validate_repository` / `validate_security` / `validate_performance` → passed.
+- Local chain run: stories 80 / gaps 294; `validate_tension` PASSED at
+  **51 = base 41.1 + story pressure 10.3** (4 eligible live stories) —
+  up from the stale 41, with every contribution listed.
+- Browser: `dashboard_smoke` PASS desktop+mobile, `intelligence_web_smoke`
+  PASS, Brain UI check PASS (stories/detail/gaps/hubs), Web Brain mode PASS
+  (12 story nodes, 22 gap ghosts, clean restore), zero page errors.
+- `validate_operational_health` remains blocked only by pre-existing local
+  artifact staleness; CI refresh regenerates all artifacts.
+
+## Known limitations
+
+- Gaps describe published-evidence coverage, not ground truth; a closed gap
+  means newer canonical evidence satisfied a slot.
+- Story pressure is capped at +30 and only counts open critical/high stories
+  updated within 72 hours; it cannot manufacture tension.
+- Story/gap ghost nodes in the Web are provenance overlays; their links carry
+  no evidence, and the UI labels them as structural rather than evidential.
+- The first production refresh after merge publishes the new artifacts; until
+  then the UI shows an honest "story graph not published yet" state.
+
