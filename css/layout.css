@@ -60,3 +60,17 @@
   .gp-command-tabs .gp-nav-item{padding:5px 9px;font-size:11px}
   .gp-status-pill{padding:4px 9px;font-size:10px}
 }
+
+/* REF-DENSITY PASS (gui/ref-density-pass) — 390px overflow lock.
+   Single-col page rhythm; header/nav/ticker clip instead of pushing
+   viewport width. Complements component-level 420px queries. */
+@media (max-width:420px){
+  .gp-app-main{padding:10px 10px calc(64px + var(--safe-bottom));gap:12px}
+  .gp-header{padding:8px 10px;gap:8px}
+  .gp-header .gp-brand strong{font-size:13px}
+  .gp-section-header{padding:10px 12px}
+  .gp-section-body{padding:10px 12px}
+  .gp-section-title{font-size:11px;letter-spacing:.08em}
+  .gp-command-tabs .gp-nav-item{padding:6px 8px;font-size:11px}
+  table,.cc-table{max-width:100%}
+}
