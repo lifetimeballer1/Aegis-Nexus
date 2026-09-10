@@ -134,8 +134,8 @@ function renderRegistry(sources) {
   });
   const shown = registryExpanded ? ordered : ordered.slice(0, REGISTRY_VISIBLE);
   box.innerHTML = `<div class="gp-filter-row" role="group" aria-label="Source status filter">`
-    + `<button class="gp-filter${registryFilter === 'attention' ? ' active' : ''}" data-src-filter="attention" type="button">Needs attention</button>`
-    + `<button class="gp-filter${registryFilter === 'all' ? ' active' : ''}" data-src-filter="all" type="button">All sources (${(sources || []).length})</button></div>`
+    + `<button class="gp-filter${registryFilter === 'attention' ? ' active' : ''}" data-src-filter="attention" type="button" aria-pressed="${registryFilter === 'attention'}">Needs attention</button>`
+    + `<button class="gp-filter${registryFilter === 'all' ? ' active' : ''}" data-src-filter="all" type="button" aria-pressed="${registryFilter === 'all'}">All sources (${(sources || []).length})</button></div>`
     + `<input id="srcSearch" class="gp-dash-search" type="search" aria-label="Filter sources" placeholder="Filter sources…" value="${esc(registryQuery)}">`
     + (shown.length ? `<div class="gp-table-wrap"><table class="gp-table" aria-label="Source registry"><thead><tr><th>Source</th><th>Category</th><th>Freshness</th><th>Status</th><th class="num">Failures</th><th>Credibility</th><th>Fallback Mode</th></tr></thead><tbody>${registryRows(shown)}</tbody></table></div><div class="meta" style="margin-top:6px;font-size:10px;color:var(--muted-2)">Showing ${shown.length} of ${ordered.length} matching sources</div>` : '<div class="gp-state"><div class="gp-state-title">No sources match</div><div>No registry entries match the current filter.</div></div>')
     + (ordered.length > REGISTRY_VISIBLE ? `<button id="srcMore" class="gp-btn gp-more" type="button">${registryExpanded ? 'Show fewer' : `Show all ${ordered.length}`}</button>` : '');
@@ -181,9 +181,9 @@ export function renderStatus() {
     const shown = showAllSources ? visible : visible.slice(0, SOURCE_PAGE);
 
     const chips = [
-      `<button class="gp-filter${statusFilter === 'all' ? ' active' : ''}" data-status-filter="all" type="button">All (${list.length})</button>`,
-      `<button class="gp-filter${statusFilter === 'online' ? ' active' : ''}" data-status-filter="online" type="button">Online (${online.length})</button>`,
-      `<button class="gp-filter${statusFilter === 'failed' ? ' active' : ''}" data-status-filter="failed" type="button">Failed (${failed.length})</button>`
+      `<button class="gp-filter${statusFilter === 'all' ? ' active' : ''}" data-status-filter="all" type="button" aria-pressed="${statusFilter === 'all'}">All (${list.length})</button>`,
+      `<button class="gp-filter${statusFilter === 'online' ? ' active' : ''}" data-status-filter="online" type="button" aria-pressed="${statusFilter === 'online'}">Online (${online.length})</button>`,
+      `<button class="gp-filter${statusFilter === 'failed' ? ' active' : ''}" data-status-filter="failed" type="button" aria-pressed="${statusFilter === 'failed'}">Failed (${failed.length})</button>`
     ].join('');
 
     const rows = shown.map(s => {

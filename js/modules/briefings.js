@@ -59,8 +59,8 @@ export function renderBriefings() {
   const shown = showAllDevelopments ? visible : visible.slice(0, DEV_PAGE);
   const freshness = brief.freshness || {};
 
-  const chips = [`<button class="gp-filter${categoryFilter === 'all' ? ' active' : ''}" data-brief-filter="all" type="button">All (${developments.length})</button>`]
-    .concat(categories.map(c => `<button class="gp-filter${categoryFilter === c ? ' active' : ''}" data-brief-filter="${esc(c)}" type="button">${esc(c)} (${developments.filter(d => String(d.category || 'general') === c).length})</button>`)).join('');
+  const chips = [`<button class="gp-filter${categoryFilter === 'all' ? ' active' : ''}" data-brief-filter="all" type="button" aria-pressed="${categoryFilter === 'all'}">All (${developments.length})</button>`]
+    .concat(categories.map(c => `<button class="gp-filter${categoryFilter === c ? ' active' : ''}" data-brief-filter="${esc(c)}" type="button" aria-pressed="${categoryFilter === c}">${esc(c)} (${developments.filter(d => String(d.category || 'general') === c).length})</button>`)).join('');
 
   const devRows = shown.map(dev => {
     const sev = developmentSeverity(dev);

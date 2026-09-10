@@ -32,3 +32,9 @@
 - Verified: all 16 workflow YAMLs parse; groups confirmed; `pytest` 98 passed. Actions queueing behavior NOT verifiable locally.
 - Remaining: manifest covers 10 of ~20 published JSONs (brief/event_history/what_changed/live_events/regional/enforcer/links unhashed); `what_changed.json` empty-window concern carries to Phase 5.
 - Next: Phase 5 — intelligence credibility.
+
+## GUI Concept Track C1–C40 (2026-09-10, branch `gui-concept-track`) — DONE
+- Front-end-only track bringing the browser to feature parity with Concepts 01/05/06; no pipeline, workflow, or generated-JSON changes. See `docs/gui-concept-track.md` for the full ledger and evidence.
+- Added `css/concept.css` (design tokens + primitives), `js/core/drawer.js` (shared reading pane), desktop left rail, header search, sortable Priority Regions, honest What-Changed/market handling, 4-slice source donut, alert reading pane, Briefing Builder 1→4 wizard with JSON/Markdown/print export, status tables/KPI tiles/pipeline flow/artifact provenance, device-local governance thresholds.
+- Verified: `pytest` 116 passed; JS filter tests 7 passed; repository/security/performance validators passed; Playwright smoke PASS desktop + mobile; custom GUI check PASS desktop + mobile with zero page errors. `validate_operational_health.py` fails only on pre-existing snapshot staleness (age ≈27h).
+- Remaining: region boundary bubbles impossible from available data (marker clustering used); delivery routing/team watchlist/AI generation intentionally absent; Brent/USD Index/workflow names/narrative counters render honest omission notes.

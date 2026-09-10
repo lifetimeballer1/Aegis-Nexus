@@ -70,7 +70,7 @@ function deferBelowFold(){
   sections.forEach(function(section,i){
     if(i<2)return;
     section.style.contentVisibility='auto';
-    section.style.containIntrinsicSize='1px 360px';
+    section.style.containIntrinsicSize='auto 600px';
   });
 }
 

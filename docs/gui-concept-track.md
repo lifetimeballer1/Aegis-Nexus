@@ -90,3 +90,50 @@ Baseline at C1: `116 passed`, branch `gui-concept-track`, base `8a8891d`.
 - 2026-09-10 — Forbidden mockup features omitted.
 - 2026-09-10 — Target: `Default Project` `main`, branch `gui-concept-track`, C1–C40.
 - 2026-09-10 — Scope: GUI only; C13/C14 do not touch the pipeline.
+
+## Completion status (2026-09-10)
+
+All 40 front-end phases have landed on branch `gui-concept-track`:
+
+- **Arc 0** — `docs/gui-concept-track.md`, `css/concept.css` (tokens + primitives), ledger.
+- **Arc A** — desktop rail (`.gp-rail`), top-bar tagline/search/analyst chip, `#main`
+  rail offset, active-state sync, header search → universal search.
+- **Arc B** — KPI tiles, headline feed, clustered map bubbles, sortable Priority Regions,
+  honest "What Changed", preferred Market Pulse symbols with omitted-symbol note,
+  4-slice source donut + Recent Issues.
+- **Arc C** — severity segmented tabs, alert cards, shared reading-pane drawer
+  (`js/core/drawer.js`), acknowledgement table.
+- **Arc D** — Briefing Builder 1→4 wizard (Content/Structure/Review/Publish) with
+  counters, reorderable judgments, review validation, JSON/Markdown/print local export.
+- **Arc E** — timeline axis styling, period pills with `aria-pressed`, drawer detail.
+- **Arc F** — five KPI tiles, registry table (freshness/status/failures/credibility/
+  fallback), validation table incl. blocked, run-history table, pipeline flow,
+  artifact/provenance table, device-local governance thresholds.
+- **Arc G** — search/views polish, reduced-motion + visibility placeholder fixes,
+  focus/scroll polish, full regression.
+
+## Verification evidence (C40)
+
+- `python -m pytest -q` → **116 passed**.
+- `node --test tests/intelligence_web_filters.test.cjs` → **7 passed**.
+- `validate_repository.py` → no duplicate ids/scripts.
+- `validate_security.py` → passed.
+- `validate_performance.py` → passed.
+- Browser: repo Playwright smoke **PASS desktop + mobile**; custom Concept check
+  **PASS desktop + mobile** (rail, KPI tiles, alert drawer, wizard steps, status
+  tables, governance thresholds, region sorting, zero page errors).
+- `validate_operational_health.py` → fails **pre-existing** on snapshot staleness
+  (age ≈ 27h); the pipeline refreshes this artifact and the failure is unrelated to
+  these GUI changes.
+
+## Known limitations
+
+- Region boundary bubbles are not possible from available data; real marker
+  clustering is used instead.
+- Delivery Channels, Severity Routing, Team Watchlist, and AI generation remain
+  intentionally absent (no backend; test-forbidden).
+- Governance thresholds are device-local highlighting only; pipeline validation is
+  unchanged.
+- Mockup features without published data (Brent, USD Index, workflow names,
+  narrative-change counters) render honest omission notes rather than invented values.
+

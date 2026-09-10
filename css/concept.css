@@ -964,6 +964,47 @@ a.gp-btn {
   color: var(--blue);
 }
 
+/* ---- Quality pass (C37-C39) ---- */
+.gp-section {
+  scroll-margin-top: 84px;
+}
+
+.gp-search-group,
+#viewsBody .gp-dash-panel {
+  background: var(--c-glass);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 12px 14px;
+}
+
+.gp-filter:focus-visible,
+.gp-step:focus-visible,
+.gp-rail-item:focus-visible,
+.gp-btn:focus-visible,
+.gp-input:focus-visible,
+.gp-select:focus-visible,
+.gp-textarea:focus-visible,
+.gp-th-sort:focus-visible,
+.gp-drawer-close:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+}
+
+.gp-drawer-scrim {
+  border: 0;
+  padding: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gp-drawer,
+  .gp-drawer-scrim,
+  .gp-spinner,
+  .gp-meter-fill {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
 /* ---- Utilities ---- */
 .gp-row {
   display: flex;
