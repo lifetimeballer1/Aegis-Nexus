@@ -77,7 +77,7 @@ export function renderDashboard() {
   const el = document.getElementById('dashboardBody');
   if (!el) return;
   const state = getState();
-  const { snapshot, sourceHealth, mapData, whatChanged, status, feedMeta, historicalTrends } = state;
+  const { snapshot, sourceHealth, mapData, whatChanged, status, feedMeta, historicalTrends, brainStories } = state;
   if (!snapshot && !state.liveArticles && !mapData) {
     el.innerHTML = status === 'loading'
       ? '<div class="gp-state"><div class="gp-spinner"></div><div>Loading command overview…</div></div>'
@@ -162,6 +162,13 @@ export function renderDashboard() {
   const picked = mktPref.map(n => byName.get(n)).filter(Boolean);
   const mktList = picked.length >= 3 ? picked.slice(0, 8) : indicators.slice(0, 6);
   const mktOmitted = ['Brent', 'USD Index', 'DXY'].filter(n => !indicators.some(i => String(i.name || '').toLowerCase().includes(n.toLowerCase())));
+  const bsStories = Array.isArray(brainStories?.stories)
+    ? brainStories.stories.slice().sort((a, b) => (Number(b.tensionContribution) || 0) - (Number(a.tensionContribution) || 0)).slice(0, 3)
+    : [];
+  const bsOpenGaps = Number(brainStories?.stats?.open ?? (Array.isArray(brainStories?.gaps) ? brainStories.gaps.filter(g => g.state !== 'closed').length : 0));
+  const storiesBlock = bsStories.length
+    ? `<h3 style="margin-top:10px">🧠 What matters now <a href="#section-brain">View Brain →</a></h3><div class="gp-stack">${bsStories.map(s => `<div class="cc-wc" style="align-items:flex-start"><span class="gp-sev sev-${esc(s.severity || 'low')}">${esc(s.severity || 'low')}</span><span style="flex:1;min-width:0">${esc(String(s.title || '').slice(0, 110))}<span class="gp-tiny gp-muted" style="display:block">${esc(s.hub || 'site-wide')} · pressure ${esc(String(s.tensionContribution ?? 0))} · ${esc(String(s.confidence || 'unverified'))}</span></span></div>`).join('')}</div><div class="gp-tiny gp-muted" style="margin-top:4px">${bsOpenGaps} open evidence gaps tracked by the Brain; they close automatically as refreshes add source-backed evidence.</div>`
+    : '';
   const mktCards = mktList.map(m => {
     const name = m.name || m.symbol || 'Indicator';
     const price = typeof m.price === 'number' ? m.price.toLocaleString(undefined, { maximumFractionDigits: 2 }) : String(m.price ?? m.last ?? '—');
@@ -201,7 +208,7 @@ export function renderDashboard() {
         <div class="cc-legend" aria-label="Map legend"><span><i style="background:var(--red)"></i>Critical</span><span><i style="background:var(--amber)"></i>Elevated</span><span><i style="background:var(--blue)"></i>Notable</span><span><i style="background:#cbd5e1"></i>Monitoring</span></div></div>
       <div class="cc-panel"><h3>🎯 Priority Regions <a href="#section-map">View All →</a></h3>
         <table class="cc-table" aria-label="Priority regions"><thead><tr><th>#</th><th><button type="button" class="gp-th-sort" data-sort="region">Region${sortArrow('region')}</button></th><th><button type="button" class="gp-th-sort" data-sort="activity">Activity${sortArrow('activity')}</button></th><th><button type="button" class="gp-th-sort" data-sort="impact">Impact${sortArrow('impact')}</button></th><th><button type="button" class="gp-th-sort" data-sort="trend">Trend${sortArrow('trend')}</button></th></tr></thead><tbody>${regionRows}</tbody></table>
-        <h3 style="margin-top:10px">🕐 What Changed <a href="#section-breaking">View All →</a></h3><div style="font-size:10px;color:var(--muted-2);margin-bottom:6px">Since last refresh (${esc(wc.window || 'current window')})</div>${wcBlock}</div>
+        <h3 style="margin-top:10px">🕐 What Changed <a href="#section-breaking">View All →</a></h3><div style="font-size:10px;color:var(--muted-2);margin-bottom:6px">Since last refresh (${esc(wc.window || 'current window')})</div>${wcBlock}${storiesBlock}</div>
     </div>
     <div class="cc-grid2">
       <div class="cc-panel"><h3>📊 Market Pulse <span class="gp-badge delayed">DELAYED</span> <a href="#section-markets">View Markets →</a></h3><div class="cc-mkt">${mktCards}</div>${mktOmitted.length ? `<div class="gp-honest" style="margin-top:8px">Not published by the current market feed: ${esc(mktOmitted.join(', '))}. Shown symbols are source-backed.</div>` : ''}</div>

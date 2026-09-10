@@ -6,6 +6,8 @@ export const CONFIG = {
     liveArticles: './data/live_articles.json',
     intelligenceGraph: './data/intelligence_graph.json',
     intelligenceBrain: './data/intelligence_brain.json',
+    brainStories: './data/brain_stories.json',
+    brainGapHistory: './data/brain_gap_history.json',
     sources: './data/sources.json',
     sourceHealth: './data/source_health.json',
     refreshManifest: './data/refresh_manifest.json',

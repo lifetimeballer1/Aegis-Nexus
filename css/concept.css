@@ -1025,6 +1025,22 @@ a.gp-btn {
 @media(pointer:coarse){.gp-map-layer-row{min-height:44px}.gp-map-layer-row input{width:20px;height:20px}}
 @media(prefers-reduced-motion:reduce){.leaflet-fade-anim .leaflet-tile,.leaflet-zoom-animated{transition:none!important;animation:none!important}}
 
+/* ---- Brain stories (B27-B32) ---- */
+.gp-story-card{padding:0;overflow:hidden}
+.gp-story-card .gp-story-head{display:block;width:100%;text-align:left;background:none;border:0;color:inherit;padding:10px 12px;cursor:pointer;font:inherit}
+.gp-story-card .gp-story-head:focus-visible{outline:2px solid var(--blue);outline-offset:-2px}
+.gp-story-title{display:block;font-size:12.5px;font-weight:700;line-height:1.35}
+.gp-story-card.sev-critical{border-left:3px solid var(--red)}
+.gp-story-card.sev-high{border-left:3px solid var(--amber)}
+.gp-story-card.sev-medium{border-left:3px solid var(--blue)}
+.gp-story-card.sev-low{border-left:3px solid var(--muted-2)}
+.gp-story-card.selected{border-color:var(--blue)}
+.gp-completeness{display:block;height:4px;border-radius:2px;background:var(--line);margin-top:7px;overflow:hidden}
+.gp-completeness i{display:block;height:100%;border-radius:2px;background:linear-gradient(90deg,var(--amber),var(--green))}
+.gp-gap-row{display:flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:var(--radius);background:var(--panel-2);padding:7px 9px;font-size:11px;min-width:0}
+.gp-gap-row.closed{opacity:.75}
+.gp-gap-row .grow{flex:1;min-width:0;overflow-wrap:anywhere}
+
 /* ---- Utilities ---- */
 .gp-row {
   display: flex;

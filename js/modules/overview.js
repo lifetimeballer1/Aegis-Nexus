@@ -32,6 +32,9 @@ export function renderOverview() {
   const drivers = snapshot.driverSignals || {};
   const note = snapshot.dataNote || snapshot.sourceStatus || '';
   const early = snapshot.earlyWarning || null;
+  const tb = snapshot.tensionBreakdown || null;
+  const computedAt = snapshot.tensionComputedAt || null;
+  const stale = snapshot.tensionStale === true;
 
   const driverOrder = [
     'Conflict activity',
@@ -84,7 +87,10 @@ export function renderOverview() {
             <div class="gp-meter-fill ${tensionLevel}" style="width:${tension != null ? clampPct(tension) : 0}%"></div>
           </div>
         </div>
-        <div style="font-size:11px;color:var(--muted);margin-top:8px">Composite open-data signal. Higher = greater combined geopolitical, military, diplomatic and economic pressure.</div>
+        <div style="font-size:11px;color:var(--muted);margin-top:8px">Composite open-data signal. Higher = greater combined geopolitical, military, diplomatic and economic pressure.${snapshot.scoreVersion ? ` Score model v${escapeHtml(String(snapshot.scoreVersion))}.` : ''}</div>
+        ${tb ? `<div style="font-size:10px;color:var(--muted-2);margin-top:6px">Base drivers ${Math.round(Number(tb.base) || 0)} + story pressure ${escapeHtml(String(tb.storyPressure ?? 0))} (cap ${escapeHtml(String(tb.storyPressureCap ?? 30))}) from ${escapeHtml(String(tb.eligibleStories ?? 0))} open critical/high stor${Number(tb.eligibleStories) === 1 ? 'y' : 'ies'}.</div>` : ''}
+        ${tb && Array.isArray(tb.topStories) && tb.topStories.length ? `<div style="font-size:10px;color:var(--muted-2);margin-top:6px">Top contributors: ${tb.topStories.slice(0, 3).map(s => `${escapeHtml(String(s.title || '').slice(0, 60))} (${escapeHtml(String(s.contribution))})`).join(' · ')}</div>` : ''}
+        ${stale ? `<div class="gp-honest" style="margin-top:8px">Tension was last computed ${escapeHtml(computedAt ? formatRelativeTime(computedAt) : 'previously')} — the next canonical refresh recomputes it.</div>` : ''}
       </div>
       <div class="gp-card">
         <div style="font-size:11px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px">Key Drivers</div>
@@ -93,8 +99,17 @@ export function renderOverview() {
     </div>
     ${early ? `
       <div class="gp-card" style="margin-bottom:12px;border-color:var(--amber-dim)">
-        <div style="font-size:11px;font-weight:700;color:var(--amber);letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px">Early Warning</div>
-        <div style="font-size:13px;color:var(--text-secondary)">${escapeHtml(typeof early === 'string' ? early : (early.summary || early.message || JSON.stringify(early).slice(0, 200)))}</div>
+        <div class="gp-row-between" style="margin-bottom:6px">
+          <div style="font-size:11px;font-weight:700;color:var(--amber);letter-spacing:.08em;text-transform:uppercase">Early Warning</div>
+          <span class="gp-sev ${early.level === 'HIGH' ? 'sev-critical' : early.level === 'ELEVATED' ? 'sev-high' : 'sev-medium'}">${escapeHtml(String(early.level || 'WATCH'))}</span>
+        </div>
+        <div style="font-size:13px;color:var(--text-secondary)">${escapeHtml(early.summary || early.message || '')}</div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:8px;font-size:10px;color:var(--muted-2)">
+          <span>Momentum ${early.momentum != null ? escapeHtml(String(early.momentum)) : '—'}</span>
+          <span>Direction ${escapeHtml(String(early.direction || 'stable'))}</span>
+          <span>Strongest driver ${escapeHtml(String(early.strongestDriver || '—'))}${early.strongestDriverScore != null ? ` (${escapeHtml(String(early.strongestDriverScore))})` : ''}</span>
+          ${early.storyDriver ? `<span>Top story: ${escapeHtml(String(early.storyDriver).slice(0, 90))}</span>` : ''}
+        </div>
       </div>` : ''}
     ${note ? `<div class="gp-card" style="font-size:12px;color:var(--text-secondary)">${escapeHtml(note)}</div>` : ''}
     <div style="margin-top:12px;font-size:11px;color:var(--muted-2)">
