@@ -50,7 +50,7 @@ export async function loadCoreData({force=false}={}){
   const prev=getState();
   const cold=!prev.snapshot&&!prev.liveArticles&&!prev.intelligenceGraph;
   if(cold)setState({status:'loading'});
-    const urls=[['snapshot',CONFIG.endpoints.snapshot],['liveArticles',CONFIG.endpoints.liveArticles],['intelligenceGraph',CONFIG.endpoints.intelligenceGraph],['intelligenceBrain',CONFIG.endpoints.intelligenceBrain],['sources',CONFIG.endpoints.sources],['sourceHealth',CONFIG.endpoints.sourceHealth],['mapEvents',CONFIG.endpoints.mapEvents],['mapRegional',CONFIG.endpoints.mapRegional],['mapCartel',CONFIG.endpoints.mapCartel],['mapLinks',CONFIG.endpoints.mapLinks],['mapPoints',CONFIG.endpoints.mapPoints],['whatChanged',CONFIG.endpoints.whatChanged],['eventHistory',CONFIG.endpoints.eventHistory],['liveStatus',CONFIG.endpoints.liveStatus],['validationResults',CONFIG.endpoints.validationResults],['pipelineHistory',CONFIG.endpoints.pipelineHistory],['historicalTrends',CONFIG.endpoints.historicalTrends],['refreshManifest',CONFIG.endpoints.refreshManifest],['intelligenceBrief',CONFIG.endpoints.intelligenceBrief]];
+    const urls=[['snapshot',CONFIG.endpoints.snapshot],['liveArticles',CONFIG.endpoints.liveArticles],['intelligenceGraph',CONFIG.endpoints.intelligenceGraph],['intelligenceBrain',CONFIG.endpoints.intelligenceBrain],['brainStories',CONFIG.endpoints.brainStories],['brainGapHistory',CONFIG.endpoints.brainGapHistory],['sources',CONFIG.endpoints.sources],['sourceHealth',CONFIG.endpoints.sourceHealth],['mapEvents',CONFIG.endpoints.mapEvents],['mapRegional',CONFIG.endpoints.mapRegional],['mapCartel',CONFIG.endpoints.mapCartel],['mapLinks',CONFIG.endpoints.mapLinks],['mapPoints',CONFIG.endpoints.mapPoints],['whatChanged',CONFIG.endpoints.whatChanged],['eventHistory',CONFIG.endpoints.eventHistory],['liveStatus',CONFIG.endpoints.liveStatus],['validationResults',CONFIG.endpoints.validationResults],['pipelineHistory',CONFIG.endpoints.pipelineHistory],['historicalTrends',CONFIG.endpoints.historicalTrends],['refreshManifest',CONFIG.endpoints.refreshManifest],['intelligenceBrief',CONFIG.endpoints.intelligenceBrief]];
   const results=await Promise.all(urls.map(([label,url])=>fetchJson(url,{force,label,quiet:true})));
   const by=Object.fromEntries(urls.map(([label],i)=>[label,results[i]]));
   const hasAny=by.snapshot.ok||by.liveArticles.ok||by.intelligenceGraph.ok;
@@ -68,6 +68,8 @@ export async function loadCoreData({force=false}={}){
     liveArticles:by.liveArticles.ok?by.liveArticles.data:prev.liveArticles,
     intelligenceGraph:by.intelligenceGraph.ok?by.intelligenceGraph.data:prev.intelligenceGraph,
     intelligenceBrain:by.intelligenceBrain.ok?by.intelligenceBrain.data:prev.intelligenceBrain,
+    brainStories:by.brainStories.ok?by.brainStories.data:prev.brainStories,
+    brainGapHistory:by.brainGapHistory.ok?by.brainGapHistory.data:prev.brainGapHistory,
     intelligenceBrief:keep('intelligenceBrief',prev.intelligenceBrief),
     liveStatus:keep('liveStatus',prev.liveStatus),
     validationResults:keep('validationResults',prev.validationResults),
