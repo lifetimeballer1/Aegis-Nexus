@@ -182,7 +182,7 @@ export function renderDashboard() {
     return `<div class="cc-domain-row"><span class="cc-pill ${k === 'gen' ? 'gen' : k}">${esc(label)}</span><span class="cc-domain-bar" aria-hidden="true"><i style="width:${Math.round((n / domainMax) * 100)}%"></i></span><b class="gp-nums">${fmtInt(n)}</b></div>`;
   }).join('') || '<div class="meta">No domain data.</div>';
 
-  const mktCards = indicators.slice(0, 6).map(m => {
+  const mktCards = indicators.slice(0, 8).map(m => {
     const name = m.name || m.symbol || 'Indicator';
     const price = typeof m.price === 'number' ? m.price.toLocaleString(undefined, { maximumFractionDigits: 2 }) : String(m.price ?? m.last ?? '—');
     const pct = Number(m.changePercent ?? m.changePct);

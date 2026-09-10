@@ -601,6 +601,9 @@
 }
 
 /* REF-FIDELITY 0941b — headline feed prominence toward refs. */
-.cc-panel .cc-head .t{font-size:12.5px;line-height:1.4}
-.cc-panel .cc-head .t a{transition:color var(--duration) var(--ease),text-shadow var(--duration) var(--ease)}
+.cc-panel .cc-head .t{font-size:12.5px;line-height:1.4}.cc-panel .cc-head .t a{transition:color var(--duration) var(--ease),text-shadow var(--duration) var(--ease)}
 @media(hover:hover){.cc-panel .cc-head:hover .t a{color:#fff;text-shadow:0 0 10px rgba(77,163,255,.45)}}
+/* REF-FIDELITY 0941c — 8-tile market matrix (4x2 desktop, refs density). */
+.cc-mkt{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media(max-width:1200px){.cc-mkt{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:720px){.cc-mkt{grid-template-columns:repeat(2,minmax(0,1fr))}}
