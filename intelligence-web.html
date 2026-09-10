@@ -56,6 +56,16 @@ html,body{margin:0;width:100%;height:100%;overflow:hidden;background:var(--bg);c
    note). Harmless until the JS partner emits .far / [data-far]. */
 .node-label.far,.node-label[data-far="true"]{opacity:.42;font-size:9px;padding:1px 4px}
 .node-label.far .text,.node-label[data-far="true"] .text{max-width:18ch;overflow:hidden;text-overflow:ellipsis;display:inline-block;vertical-align:middle}
+/* Kind tick: JS emits data-kind per label (see ensureLabel). The ::before bar
+   carries the kind color (mirrors NODE_COLORS in intelligence_web_v2.js);
+   the inline border/dot colors stay as the primary kind signal. */
+.node-label[data-kind]::before{content:"";display:inline-block;width:3px;height:9px;border-radius:2px;margin-right:5px;vertical-align:-1px;background:#4fd2ff}
+.node-label[data-kind="political"]::before,.node-label[data-kind="government"]::before,.node-label[data-kind="government_agency"]::before,.node-label[data-kind="political_party"]::before{background:#b78cff}
+.node-label[data-kind="economic"]::before,.node-label[data-kind="company"]::before,.node-label[data-kind="financial_institution"]::before{background:#ffc857}
+.node-label[data-kind="strategic"]::before,.node-label[data-kind="technology"]::before{background:#46d8ff}
+.node-label[data-kind="military"]::before,.node-label[data-kind="military_command"]::before,.node-label[data-kind="intelligence"]::before,.node-label[data-kind="armed_group"]::before,.node-label[data-kind="conflict"]::before{background:#ff5d6e}
+.node-label[data-kind="resource"]::before{background:#3df097}
+.node-label[data-kind="oil"]::before,.node-label[data-kind="infrastructure"]::before{background:#ff8a3d}
 
 /* ---------- 3. HUD ---------- */
 .hud{position:fixed;left:14px;top:54px;max-height:calc(100vh - 170px);max-height:calc(100dvh - 170px);overflow:auto;width:min(720px,calc(100vw - 28px));z-index:30;transition:transform var(--duration) var(--ease),opacity var(--duration) var(--ease);scrollbar-width:thin;scrollbar-color:var(--line-strong) transparent}
