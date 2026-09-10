@@ -74,7 +74,10 @@ function resetRefreshTimer() {
   if (!prefs.autoRefresh) return;
   refreshTimer = setInterval(() => {
     if (document.visibilityState === 'visible') {
-      refresh(false).then(renderAll).catch(err => console.error('Refresh failed', err));
+      // Force network revalidation: refresh(false) would serve the 30-min
+      // localStorage fast-path in fetch.js and never hit the network,
+      // so scheduled server refreshes (every ~10 min) stayed invisible.
+      refresh(true).then(renderAll).catch(err => console.error('Refresh failed', err));
     }
   }, prefs.intervalMin * 60 * 1000);
 }
