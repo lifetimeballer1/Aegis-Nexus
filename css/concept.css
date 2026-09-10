@@ -1041,6 +1041,34 @@ a.gp-btn {
 .gp-gap-row.closed{opacity:.75}
 .gp-gap-row .grow{flex:1;min-width:0;overflow-wrap:anywhere}
 
+/* ---- App shell views (S4-S6) ---- */
+body[data-view] .gp-section { display: none; }
+body[data-view] .gp-section.view-active { display: block; }
+#main { min-height: 62vh; padding: 10px 10px calc(96px + var(--safe-bottom)); }
+#main .gp-section + .gp-section { margin-top: 12px; }
+@media (min-width: 900px) { #main { padding: 18px 24px 40px; } }
+button.gp-nav-item { background: none; border: 0; cursor: pointer; font: inherit; }
+.gp-more-sheet {
+  position: fixed;
+  left: 8px;
+  right: 8px;
+  bottom: calc(66px + var(--safe-bottom));
+  z-index: 95;
+  display: none;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px;
+  padding: 8px;
+  background: var(--c-glass-strong);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-lg);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow: var(--shadow-lg);
+}
+.gp-more-sheet.open { display: grid; }
+.gp-more-sheet .gp-nav-item { flex-direction: row; justify-content: flex-start; gap: 10px; min-height: 48px; font-size: 11px; }
+@media (min-width: 900px) { .gp-more-sheet { display: none !important; } }
+
 /* ---- Utilities ---- */
 .gp-row {
   display: flex;

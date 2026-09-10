@@ -24,13 +24,21 @@ def dismiss_startup_modal(page):
         page.wait_for_timeout(150)
     assert not modal.is_visible(), 'startup how-to-read modal remained open'
 
+def go_view(page, view):
+    page.evaluate(f"location.hash='#section-{view}'")
+    page.wait_for_function(f"() => document.body.getAttribute('data-view') === '{view}'", timeout=15000)
+    assert page.locator(f'#section-{view}').evaluate("el => getComputedStyle(el).display !== 'none'"), f'{view} view is not visible'
+
 def smoke(page, name):
     page_errors = []
     page.on('pageerror', lambda exc: page_errors.append(str(exc)))
     page.goto(BASE + '/index.html', wait_until='domcontentloaded', timeout=30000)
-    page.locator('#mapContainer').wait_for(timeout=30000)
+    page.wait_for_function("() => document.body.getAttribute('data-view') === 'dashboard'", timeout=30000)
+    page.locator('#dashboardBody').wait_for(timeout=30000)
     dismiss_startup_modal(page)
 
+    go_view(page, 'map')
+    page.locator('#mapContainer').wait_for(timeout=30000)
     page.locator('#gpMapLayers').wait_for(timeout=30000)
     page.locator('#gpMapLayers').click()
     assert page.locator('#gpMapLayerPanel').evaluate("el => el.classList.contains('open')")
@@ -48,6 +56,8 @@ def smoke(page, name):
     page.locator('#gpMapClose').click()
     page.locator('#mapSidePanel').wait_for(timeout=10000, state='hidden')
 
+    go_view(page, 'brain')
+    page.locator('#gpBrainSearch').wait_for(timeout=15000)
     page.locator('#gpBrainSearch').fill('China')
     node = page.locator('[data-brain-node]').first
     node.wait_for(state='visible')
@@ -57,6 +67,7 @@ def smoke(page, name):
     page.locator('#brainClearSelection').click()
     page.locator('#gpBrainClear').click()
 
+    go_view(page, 'intelweb')
     frame_el=page.locator('iframe.gp-intelweb-frame')
     frame_el.scroll_into_view_if_needed()
     frame=page.frame_locator('iframe.gp-intelweb-frame')
@@ -74,8 +85,12 @@ def smoke(page, name):
     frame.locator('#clear').click()
     frame.locator('#reset').wait_for(timeout=5000, state='visible')
     frame.locator('#reset').click()
+
+    go_view(page, 'dashboard')
+    page.locator('#dashboardBody').wait_for(timeout=15000)
+
     assert not page_errors, f'page errors: {page_errors}'
-    print(f'SMOKE PASS {name}: startup modal, map layers/search/reset, signal detail/close, Brain search/evidence/close, lazy Intelligence Web, filter toggle/clear/reset controls')
+    print(f'SMOKE PASS {name}: view router routes dashboard/map/brain/intelweb, map layers/search/reset, signal detail/close, Brain search/evidence/close, lazy Intelligence Web, filter toggle/clear/reset controls')
 
 with sync_playwright() as p:
     browser=p.chromium.launch(headless=True, **({'channel':os.environ['SMOKE_BROWSER_CHANNEL']} if os.environ.get('SMOKE_BROWSER_CHANNEL') else {}))

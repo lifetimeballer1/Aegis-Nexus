@@ -1,8 +1,9 @@
-/** Global Pulse — isolated application boot */
+/** Global Pulse — isolated application boot with app-shell view routing. */
 import { loadCoreData } from './core/fetch.js';
 import { subscribe } from './core/state.js';
 import { CONFIG } from './core/config.js';
 import { setupDrawer } from './core/drawer.js';
+import { setupRouter, showView, currentView, onActivate } from './core/router.js';
 
 const modules = {};
 const targets = {
@@ -24,6 +25,25 @@ const targets = {
   mapOps: 'mapOpsBody'
 };
 
+/* S7 — one active view renders at a time; each view is rendered on first
+ * activation and re-rendered on state changes while active. */
+const VIEW_RENDER = {
+  dashboard: [['dashboard', 'renderDashboard']],
+  alerts: [['alerts', 'renderAlerts']],
+  timeline: [['timeline', 'renderTimeline']],
+  briefings: [['briefings', 'renderBriefings']],
+  search: [['views', 'renderViews'], ['search', 'renderSearch']],
+  overview: [['overview']],
+  breaking: [['breaking']],
+  conflicts: [['conflicts']],
+  brain: [['brain', 'renderIntelligenceBrain'], ['brainTimeline', 'renderBrainTimeline']],
+  intelweb: [['intelligenceWeb', 'renderIntelligenceWeb']],
+  map: [['map', 'renderMap'], ['map', 'renderMapOps']],
+  markets: [['markets']],
+  status: [['status', 'renderStatus']],
+  settings: [['settings', 'renderSettings']]
+};
+
 function showModuleError(id, err) {
   const el = document.getElementById(id);
   if (!el) return;
@@ -32,17 +52,13 @@ function showModuleError(id, err) {
 }
 
 function focusUniversalSearch() {
+  try { showView('search'); } catch {}
   const go = (tries) => {
     const input = document.getElementById('universalSearch');
-    if (input) {
-      try { document.getElementById('section-search')?.scrollIntoView({ block: 'start' }); } catch {}
-      input.focus();
-      return;
-    }
-    if (tries > 0) setTimeout(() => go(tries - 1), 300);
+    if (input) { input.focus(); return; }
+    if (tries > 0) setTimeout(() => go(tries - 1), 200);
   };
-  try { window.location.hash = '#section-search'; } catch {}
-  go(4);
+  go(6);
 }
 
 function setupSearchShortcut() {
@@ -56,6 +72,11 @@ function setupSearchShortcut() {
       focusUniversalSearch();
     }
   });
+}
+
+function setupHeaderSearch() {
+  const button = document.getElementById('gpHeaderSearch');
+  if (button) button.addEventListener('click', focusUniversalSearch);
 }
 
 function readPrefs() {
@@ -75,33 +96,9 @@ function resetRefreshTimer() {
   if (!prefs.autoRefresh) return;
   refreshTimer = setInterval(() => {
     if (document.visibilityState === 'visible') {
-      refresh(false).then(renderAll).catch(err => console.error('Refresh failed', err));
+      refresh(false).then(() => renderView(currentView() || 'dashboard')).catch(err => console.error('Refresh failed', err));
     }
   }, prefs.intervalMin * 60 * 1000);
-}
-function setupNav() {
-  const items = document.querySelectorAll('.gp-nav-item, .gp-rail-item');
-  items.forEach(item => item.addEventListener('click', () => {
-    items.forEach(i => i.classList.remove('active'));
-    item.classList.add('active');
-  }));
-  if (typeof IntersectionObserver === 'undefined') return;
-  const sections = document.querySelectorAll('[data-section]');
-  const observer = new IntersectionObserver(entries => entries.forEach(entry => {
-    if (!entry.isIntersecting) return;
-    const id = entry.target.dataset.section;
-    items.forEach(i => {
-      const on = i.dataset.nav === id;
-      i.classList.toggle('active', on);
-      if (on) i.setAttribute('aria-current', 'true'); else i.removeAttribute('aria-current');
-    });
-  }), {threshold:.35});
-  sections.forEach(s => observer.observe(s));
-}
-
-function setupHeaderSearch() {
-  const button = document.getElementById('gpHeaderSearch');
-  if (button) button.addEventListener('click', focusUniversalSearch);
 }
 
 async function loadModules() {
@@ -136,31 +133,30 @@ async function loadModules() {
   await Promise.all(jobs);
 }
 
-function safeRender(name, fnName = `render${name[0].toUpperCase()}${name.slice(1)}`) {
+function safeRender(name, fnName) {
   const mod = modules[name];
-  if (!mod || typeof mod[fnName] !== 'function') return;
-  try { mod[fnName](); }
+  const fn = fnName || `render${name[0].toUpperCase()}${name.slice(1)}`;
+  if (!mod || typeof mod[fn] !== 'function') return;
+  try { mod[fn](); }
   catch (err) { console.error(`Global Pulse render failed: ${name}`, err); showModuleError(targets[name], err); }
 }
 
-function renderAll() {
-  safeRender('dashboard', 'renderDashboard');
-  safeRender('alerts', 'renderAlerts');
-  safeRender('timeline', 'renderTimeline');
-  safeRender('briefings', 'renderBriefings');
-  safeRender('search', 'renderSearch');
-  safeRender('overview');
-  safeRender('breaking');
-  safeRender('conflicts');
-  safeRender('brain', 'renderIntelligenceBrain');
-  safeRender('brainTimeline', 'renderBrainTimeline');
-  safeRender('intelligenceWeb', 'renderIntelligenceWeb');
-  safeRender('markets');
-  safeRender('status', 'renderStatus');
-  safeRender('settings', 'renderSettings');
-  safeRender('views', 'renderViews');
-  safeRender('map');
-  safeRender('map', 'renderMapOps');
+function renderView(view) {
+  for (const [name, fnName] of (VIEW_RENDER[view] || [])) safeRender(name, fnName);
+}
+
+function handleActivation(view) {
+  if (view === 'map') {
+    try { modules.map?.initMap?.(); } catch (err) { console.error('Map init failed', err); }
+  }
+  if (view === 'intelweb') {
+    try { window.__gpLoadIntelWebFrame?.(); } catch {}
+  }
+  renderView(view);
+  /* Leaflet canvases need a size revalidation after a hidden→visible switch. */
+  if (view === 'map' || view === 'dashboard') {
+    setTimeout(() => { try { window.dispatchEvent(new Event('resize')); } catch {} }, 80);
+  }
 }
 
 async function refresh(force = false) {
@@ -174,25 +170,20 @@ async function refresh(force = false) {
 }
 
 async function boot() {
-  setupNav();
   setupSearchShortcut();
   setupHeaderSearch();
   setupDrawer();
+  onActivate(handleActivation);
+  setupRouter();
   window.addEventListener('gp:prefs-changed', resetRefreshTimer);
   await loadModules();
-  if (modules.map?.initMap) {
-    try { modules.map.initMap(); } catch (err) { console.error('Map init failed', err); }
-  }
+  handleActivation(currentView() || 'dashboard');
   try { await refresh(true); }
   catch (err) { console.error('Global Pulse core data refresh failed', err); }
-  renderAll();
-  subscribe(() => renderAll());
+  renderView(currentView() || 'dashboard');
+  subscribe(() => renderView(currentView() || 'dashboard'));
   resetRefreshTimer();
-  window.addEventListener('online', () => refresh(true).then(renderAll).catch(err => console.error('Online refresh failed', err)));
-  setTimeout(() => {
-    try { modules.map?.initMap?.(); modules.map?.renderMap?.(); }
-    catch (err) { console.error('Map retry failed', err); }
-  }, 1000);
+  window.addEventListener('online', () => refresh(true).then(() => renderView(currentView() || 'dashboard')).catch(err => console.error('Online refresh failed', err)));
 }
 
 boot().catch(err => {

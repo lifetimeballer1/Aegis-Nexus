@@ -35,6 +35,7 @@ function lazyIntelWeb(){
     loaded=true;
     frame.setAttribute('src',cacheBust(src));
   };
+  window.__gpLoadIntelWebFrame=load;
 
   /* Deep links such as #section-intelweb must never depend on an
      IntersectionObserver callback. They are explicit navigation intent. */
