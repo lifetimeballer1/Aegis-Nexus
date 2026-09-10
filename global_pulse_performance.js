@@ -19,9 +19,20 @@ function cacheBust(src){
   }
 }
 
+function syncIntelShell(frame){
+  var shell=frame.closest ? frame.closest('.gp-intelweb-shell') : null;
+  if(!shell)return;
+  var ready=function(){shell.setAttribute('data-state','ready');};
+  frame.addEventListener('load',ready);
+  try{
+    if(frame.getAttribute('src') && frame.contentDocument && frame.contentDocument.readyState==='complete')ready();
+  }catch(_){ }
+}
 function lazyIntelWeb(){
   var frame=document.querySelector('.gp-intelweb-frame');
-  if(!frame || frame.dataset.gpLazyReady==='1')return;
+  if(!frame)return;
+  syncIntelShell(frame);
+  if(frame.dataset.gpLazyReady==='1')return;
   frame.dataset.gpLazyReady='1';
   /* Ownership: index.html forces this frame to eager loading at runtime.
      An eager frame is owned by markup — stripping and re-adding src here
