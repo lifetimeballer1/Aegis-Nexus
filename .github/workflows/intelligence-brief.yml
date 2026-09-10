@@ -1,8 +1,12 @@
 name: Global Pulse — Intelligence Brief
 
 on:
+# NOTE (2026-09-10 dead-weight audit): throttled from */5 to hourly.
+# The brief is fetched by js/core/config.js and tolerates hourly freshness;
+# every-5-min runs (288/day) queued behind the canonical refresh in the same
+# concurrency group and caused rebase/push races. Manual runs still available.
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '17 * * * *'
   workflow_dispatch:
 
 permissions:

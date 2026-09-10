@@ -49,12 +49,12 @@ html,body{margin:0;width:100%;height:100%;overflow:hidden;background:var(--bg);c
 /* ---------- 2. LABELS ---------- */
 #labels{position:fixed;inset:0;z-index:8;pointer-events:none;overflow:hidden}
 #labels:empty{display:none}
-.node-label{position:absolute;transform:translate(-50%,-50%);white-space:nowrap;max-width:44vw;overflow:hidden;text-overflow:ellipsis;color:var(--abyss-label);text-shadow:0 1px 6px #000,0 0 10px rgba(70,200,240,.35);font:700 10px/1.5 system-ui,sans-serif;letter-spacing:.02em;opacity:.94;border:1px solid rgba(94,200,230,.35);border-left-width:3px;border-radius:7px;padding:2px 6px;background:rgba(2,12,20,.66);box-shadow:0 2px 10px rgba(0,0,0,.78),0 0 10px rgba(64,190,220,.14);backdrop-filter:blur(2px)}
+.node-label{position:absolute;transform:translate(-50%,-50%);white-space:nowrap;max-width:44vw;overflow:hidden;text-overflow:ellipsis;color:var(--abyss-label);text-shadow:0 1px 6px #000,0 0 10px rgba(70,200,240,.35);font:700 9px/1.5 system-ui,sans-serif;letter-spacing:.02em;opacity:.9;border:1px solid rgba(94,200,230,.35);border-left-width:3px;border-radius:7px;padding:2px 6px;background:rgba(2,12,20,.66);box-shadow:0 2px 10px rgba(0,0,0,.78),0 0 10px rgba(64,190,220,.14);backdrop-filter:blur(2px)}
 .node-label .dot{display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:5px;vertical-align:1px;flex:none}
 .node-label .text{vertical-align:middle}
 /* Far-zoom fade rules: applied when JS tags distant labels (see hooks
    note). Harmless until the JS partner emits .far / [data-far]. */
-.node-label.far,.node-label[data-far="true"]{opacity:.42;font-size:9px;padding:1px 4px}
+.node-label.far,.node-label[data-far="true"]{opacity:.4;font-size:8px;padding:1px 4px}
 .node-label.far .text,.node-label[data-far="true"] .text{max-width:18ch;overflow:hidden;text-overflow:ellipsis;display:inline-block;vertical-align:middle}
 /* Kind tick: JS emits data-kind per label (see ensureLabel). The ::before bar
    carries the kind color (mirrors NODE_COLORS in intelligence_web_v2.js);
@@ -64,6 +64,11 @@ html,body{margin:0;width:100%;height:100%;overflow:hidden;background:var(--bg);c
 .node-label[data-kind="economic"]::before,.node-label[data-kind="company"]::before,.node-label[data-kind="financial_institution"]::before{background:#ffc857}
 .node-label[data-kind="strategic"]::before,.node-label[data-kind="technology"]::before{background:#46d8ff}
 .node-label[data-kind="military"]::before,.node-label[data-kind="military_command"]::before,.node-label[data-kind="intelligence"]::before,.node-label[data-kind="armed_group"]::before,.node-label[data-kind="conflict"]::before{background:#ff5d6e}
+.node-label[data-kind="country"]::before,.node-label[data-kind="location"]::before,.node-label[data-kind="region"]::before{background:#4fd2ff}
+.node-label[data-kind="conflict"]::before,.node-label[data-kind="armed_group"]::before{background:#ff5d6e}
+.node-label[data-kind="person"]::before{background:#7fe3ff}
+.node-label[data-kind="organization"]::before,.node-label[data-kind="international_organization"]::before{background:#3df097}
+.node-label[data-kind="other"]::before{background:#8fa3b8}
 .node-label[data-kind="resource"]::before{background:#3df097}
 .node-label[data-kind="oil"]::before,.node-label[data-kind="infrastructure"]::before{background:#ff8a3d}
 
@@ -188,10 +193,10 @@ button[aria-pressed="true"]:not(.active):not(.filter):not(.period){color:#7fe3ff
   <div class="sub">Living cross-domain knowledge graph. Public-source relationships are evidence/context links, not proof of causation, coordination, intent or responsibility.</div>
   <div class="row"><input id="search" aria-label="Search intelligence graph" placeholder="Search countries, conflicts, events, organizations…"><button id="clear">CLEAR</button><button id="refresh">↻ REFRESH</button></div>
   <div class="row"><button class="filter active" data-kind="all">ALL</button><button class="filter" data-kind="country">COUNTRIES</button><button class="filter" data-kind="person">PEOPLE</button><button class="filter" data-kind="government">GOVERNMENT</button><button class="filter" data-kind="military">MILITARY</button><button class="filter" data-kind="organization">ORGANIZATIONS</button><button class="filter" data-kind="economic">ECONOMY</button><button class="filter" data-kind="location">PLACES</button><button class="filter" data-kind="conflict">CONFLICTS</button><button class="filter" data-kind="infrastructure">INFRASTRUCTURE</button><button class="filter" data-kind="technology">TECHNOLOGY</button><button class="filter" data-kind="other">OTHER</button></div>
-  <div class="row"><button id="reset">RESET VIEW</button><button id="orbit" aria-pressed="false">3D ORBIT</button><button id="flow" class="active" aria-pressed="true">RELATIONSHIPS</button><button id="labels-toggle" class="active">LABELS</button></div>
+  <div class="row"><button id="reset">RESET VIEW</button><button id="orbit" aria-pressed="false">3D ORBIT</button><button id="flow" class="active" aria-pressed="true">RELATIONSHIPS</button><button id="weak-toggle" aria-pressed="false">WEAK LINKS</button><button id="labels-toggle" class="active">LABELS</button></div>
   <div class="row"><select id="node-select" aria-label="Select matching entity"><option>Loading entities…</option></select></div>
   <div id="stats" role="status">Preparing intelligence graph…</div>
-  <div class="legend">SEMANTIC WEBGL: RED SANCTIONS · ORANGE MILITARY ACTION · GREEN NEGOTIATION · GOLD TRADE/ECONOMIC · BLUE TECHNOLOGY · TEAL ENERGY · PURPLE CYBER/POLITICAL · ACTION ARROWS = ACTOR → TARGET · WHITE/BLUE = EVIDENCE CONTEXT</div>
+  <div class="legend">NODES: BLUE COUNTRIES/PLACES · RED CONFLICTS/MILITARY · GOLD ECONOMY · PURPLE GOVERNMENT · GREEN ORGS/RESOURCES · EDGES: RED SANCTIONS · ORANGE MILITARY ACTION · GREEN NEGOTIATION · GOLD TRADE/ECONOMIC · BLUE TECHNOLOGY · TEAL ENERGY · PURPLE CYBER/POLITICAL · WEAK SINGLE-SOURCE LINKS HIDDEN BY DEFAULT · ACTION ARROWS = ACTOR → TARGET · WHITE/BLUE = EVIDENCE CONTEXT</div>
  </div>
 </div>
 <div class="timeline"><div class="card"><b>NETWORK ACTIVITY</b><div class="row"><button class="period active" data-period="all">ALL</button><button class="period" data-period="24">24H</button><button class="period" data-period="168">7D</button><button class="period" data-period="720">30D</button><button class="period" data-period="2160">90D</button></div><span id="trend"></span></div></div>
@@ -200,7 +205,7 @@ button[aria-pressed="true"]:not(.active):not(.filter):not(.period){color:#7fe3ff
 <script src="intelligence_web_performance.js?v=20260907-perf2"></script>
 <script src="https://cdn.jsdelivr.net/npm/3d-force-graph@1.79.0/dist/3d-force-graph.min.js"></script>
 <script src="js/intelligence_web_filters.js?v=20260908-filters1"></script>
-<script src="intelligence_web_v2.js?v=20260908-filters1"></script>
+<script src="intelligence_web_v2.js?v=20260910-declutter1"></script>
 <script src="intelligence_web_controls_fix.js?v=20260907-controlsfix2"></script>
 <script src="intelligence_action_flow.js?v=20260907-flow2"></script>
 <script>

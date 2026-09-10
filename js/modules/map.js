@@ -108,10 +108,22 @@ function renderBrainLinks(){
   }
 }
 function matches(p){const k=classify(p);if(!enabled[k])return false;if(filter!=='all'&&filter!==k&&!(filter==='conflict'&&k==='conflicts'))return false;if(!query)return true;return [p.title,p.name,p.location,p.country,p.region,p.city,p.detail,p.summary,p.description,p.source,p.type,p.layer,p.eventType,p.kind,p.nodeId].map(v=>String(v??'').toLowerCase()).join(' ').includes(query)}
+/* Zoom gating: cartel + low-priority markers are hidden when zoomed out,
+ * cluster at mid zoom, and show full detail only on zoom-in. Thresholds:
+ * cartel >=5, importance<=1 >=3, everything else >=2 (world view). */
+const MIN_ZOOM_BY_LAYER={cartel:5};
+const MIN_ZOOM_LOW_PRIORITY=3;
+const MIN_ZOOM_DEFAULT=2;
+function importanceOf(p){const n=Number(p.importance);return Number.isFinite(n)?n:2}
+function minZoomFor(p){const k=classify(p);if(MIN_ZOOM_BY_LAYER[k]!=null)return MIN_ZOOM_BY_LAYER[k];if(importanceOf(p)<=1)return MIN_ZOOM_LOW_PRIORITY;return MIN_ZOOM_DEFAULT}
+function currentZoom(){try{return map?map.getZoom():MIN_ZOOM_DEFAULT}catch{return MIN_ZOOM_DEFAULT}}
+function matchesMap(p,z){if(!matches(p))return false;const zoom=(z==null?currentZoom():z);return zoom>=(minZoomFor(p))}
+/* Test/debug hook: window.__gpMapZoomGating exposes thresholds + classifier. */
+try{window.__gpMapZoomGating={MIN_ZOOM_BY_LAYER,MIN_ZOOM_LOW_PRIORITY,MIN_ZOOM_DEFAULT,minZoomFor,classify}}catch{}
 function controls(){
   const host=document.getElementById('mapContainer')?.parentElement;if(!host||document.getElementById('gpMapControls'))return;
   const box=document.createElement('div');box.id='gpMapControls';box.className='gp-map-mymaps-controls';
-  box.innerHTML=`<div class="gp-map-toolbar"><button class="gp-map-tool" id="gpMapLayers" aria-expanded="false" aria-controls="gpMapLayerPanel">☰ Layers</button><button class="gp-map-tool" id="gpMapFit">◎ Fit all</button><button class="gp-map-tool" id="gpMapReset">↺ Reset</button><input id="gpMapSearch" class="gp-map-search" type="search" aria-label="Search map signals" placeholder="Search places, events, countries…"><span id="gpMapCount" class="gp-map-count gp-nums">0 signals</span></div><div id="gpMapLayerPanel" class="gp-map-layers-panel" role="dialog" aria-label="Map layers"><div class="gp-map-panel-title">Map layers</div><div class="gp-map-panel-subtitle">Toggle signal layers on the dark basemap</div><div id="gpMapLayerRows"></div><label class="gp-map-layer-row"><input type="checkbox" id="gpMapBrainLinks" ${showBrainLinks?'checked':''}><span class="gp-map-layer-dot" style="background:#8da2c4"></span><span class="gp-map-layer-icon">🧠</span><span class="gp-map-layer-name">Brain relationships</span><b id="gpMapBrainLinkCount" class="gp-map-layer-count gp-nums">0</b></label></div>`;
+  box.innerHTML=`<div class="gp-map-toolbar"><button class="gp-map-tool" id="gpMapLayers" aria-expanded="false" aria-controls="gpMapLayerPanel">☰ Layers</button><button class="gp-map-tool" id="gpMapFit">◎ Fit all</button><button class="gp-map-tool" id="gpMapReset">↺ Reset</button><input id="gpMapSearch" class="gp-map-search" type="search" aria-label="Search map signals" placeholder="Search places, events, countries…"><span id="gpMapCount" class="gp-map-count gp-nums">0 signals</span></div><div id="gpMapLayerPanel" class="gp-map-layers-panel" role="dialog" aria-label="Map layers"><div class="gp-map-panel-title">Map layers</div><div class="gp-map-panel-subtitle">Toggle signal layers on the dark basemap · cartel detail needs zoom ≥5, low-priority ≥3</div><div id="gpMapLayerRows"></div><label class="gp-map-layer-row"><input type="checkbox" id="gpMapBrainLinks" ${showBrainLinks?'checked':''}><span class="gp-map-layer-dot" style="background:#8da2c4"></span><span class="gp-map-layer-icon">🧠</span><span class="gp-map-layer-name">Brain relationships</span><b id="gpMapBrainLinkCount" class="gp-map-layer-count gp-nums">0</b></label></div>`;
   host.insertBefore(box,document.getElementById('mapContainer'));const rows=box.querySelector('#gpMapLayerRows');
   for(const [k,m] of Object.entries(LAYERS)){const label=document.createElement('label');label.className='gp-map-layer-row';label.innerHTML=`<input type="checkbox" data-layer-check="${k}" ${enabled[k]?'checked':''}><span class="gp-map-layer-dot" style="background:${m.color}"></span><span class="gp-map-layer-icon">${m.icon}</span><span class="gp-map-layer-name">${m.label}</span><b id="gpMapLayerCount-${k}" class="gp-map-layer-count gp-nums">0</b>`;rows.appendChild(label);label.querySelector('input').onchange=e=>{enabled[k]=e.target.checked;localStorage.setItem('gp.mapLayers',JSON.stringify(enabled));renderMap();renderMapOps()}}
   const layersBtn=box.querySelector('#gpMapLayers');
@@ -123,15 +135,18 @@ function controls(){
   mapSearch.oninput=()=>{query=mapSearch.value.trim().toLowerCase();renderMap();renderMapOps();const again=document.getElementById('gpMapSearch');if(again){again.focus();again.setSelectionRange(again.value.length,again.value.length)}};
   box.querySelector('#gpMapBrainLinks').onchange=e=>{showBrainLinks=e.target.checked;localStorage.setItem('gp.mapBrainLinks',showBrainLinks?'1':'0');renderBrainLinks()};
 }
-function makeGroup(){
+function makeGroup(layerKey){
   if(typeof L.markerClusterGroup!=='function')return L.layerGroup();
+  /* Cartel stays clustered longer (decluster at 8) so mid-zoom views show
+   * aggregates, not individual nodes; detail only on deep zoom-in. */
+  const cartel=layerKey==='cartel';
   return L.markerClusterGroup({
     pane:'gp-signals',
     chunkedLoading:true,
     chunkInterval:80,
     chunkDelay:20,
-    maxClusterRadius:55,
-    disableClusteringAtZoom:7,
+    maxClusterRadius:cartel?60:55,
+    disableClusteringAtZoom:cartel?8:7,
     spiderfyOnMaxZoom:true,
     showCoverageOnHover:false,
     zoomToBoundsOnClick:true,
@@ -168,8 +183,11 @@ export function initMap(){
   dark.on('tileerror',()=>{try{if(!map.hasLayer(osm))osm.addTo(map);}catch{}});
   brainLinks=L.layerGroup().addTo(map);
   pulseLayer=L.layerGroup().addTo(map);
-  for(const k of Object.keys(LAYERS)){groups[k]=makeGroup();groups[k].addTo(map)}
+  for(const k of Object.keys(LAYERS)){groups[k]=makeGroup(k);groups[k].addTo(map)}
   controls();ensureMapSize();map.on('click',closeDetail);
+  /* Zoom gating: re-render markers when the zoom crosses a threshold so
+   * cartel/low-priority nodes hide when zoomed out and appear on zoom-in. */
+  map.on('zoomend',()=>{try{renderMap(true)}catch{}});
 }
 /* M1 — the map section renders below the fold under content-visibility,
  * so the container can measure 0px wide at boot (zero-size canvas =
@@ -210,23 +228,24 @@ export async function loadMapData(){const keys=['snapshot','mapEvents','mapRegio
 const MAP_RENDER_CAP=5000;
 function renderFingerprint(){
   const s=getState()||{};
-  return JSON.stringify([s.mapPoints?.updatedAt,s.snapshot?.updatedAt,mapData?.snapshot?.updatedAt,mapData?.events?.updatedAt,mapData?.regional?.updatedAt,mapData?.cartel?.updatedAt,mapData?.links?.updatedAt,mapData?.points?.updatedAt,mapData?.brain?.updatedAt,filter,query,enabled,showBrainLinks]);
+  return JSON.stringify([s.mapPoints?.updatedAt,s.snapshot?.updatedAt,mapData?.snapshot?.updatedAt,mapData?.events?.updatedAt,mapData?.regional?.updatedAt,mapData?.cartel?.updatedAt,mapData?.links?.updatedAt,mapData?.points?.updatedAt,mapData?.brain?.updatedAt,filter,query,enabled,showBrainLinks,Math.floor(currentZoom())]);
 }
-export function renderMap(){
+export function renderMap(force){
   if(!map)initMap();if(!map)return;
   const fp=renderFingerprint();
-  if(fp===renderMap._fp&&renderMap._fitted)return;
+  if(!force&&fp===renderMap._fp&&renderMap._fitted)return;
   renderMap._fp=fp;
   for(const g of Object.values(groups))g.clearLayers();if(pulseLayer)pulseLayer.clearLayers();renderBrainLinks();
   let pulses=0;
-  const all=collect();const capped=all.length>MAP_RENDER_CAP;const points=all.filter(matches).slice(0,MAP_RENDER_CAP);const counts=Object.fromEntries(Object.keys(LAYERS).map(k=>[k,0]));
+  const zoom=currentZoom();
+  const all=collect();const capped=all.length>MAP_RENDER_CAP;const matched=all.filter(matches);const points=matched.filter(p=>matchesMap(p,zoom)).slice(0,MAP_RENDER_CAP);const gated=matched.length-points.length;const counts=Object.fromEntries(Object.keys(LAYERS).map(k=>[k,0]));
   for(const p of points){const k=classify(p);counts[k]++;const m=LAYERS[k];const tune=LAYER_TUNE[k]||LAYER_TUNE.conflicts;const imp=Math.max(1,Math.min(3,Number(p.importance)||1));const r=p.brainNode?10:6+imp;const haloPad=tune.haloPad+(p.brainNode?2:0);const halo=L.circleMarker([p.__lat,p.__lon],{pane:'gp-signals',radius:r+haloPad,fillColor:m.color,fillOpacity:tune.haloOpacity,stroke:false,interactive:false});groups[k].addLayer(halo);/* Keyboard-focusable markers where cheap: only brain nodes and top-importance
  * signals take a tab stop, so keyboard users can reach key markers without
  * tabbing through thousands of canvas paths. */
 const focusable=!!(p.brainNode||imp>=3);
 const tipTitle=String(p.title||p.label||p.name||p.location||m.label);
-const marker=L.circleMarker([p.__lat,p.__lon],{pane:'gp-signals',radius:r,color:'#ffffff',weight:tune.coreWeight,fillColor:m.color,fillOpacity:.98,opacity:1,interactive:true,keyboard:focusable,title:focusable?tipTitle.slice(0,80):'',__layer:k});if(pulseLayer&&!prefersReducedMotion()&&pulses<EMBER_PULSE_CAP&&(k==='conflicts'||k==='cartel')){pulses++;const pulse=L.marker([p.__lat,p.__lon],{pane:'gp-signals',interactive:false,keyboard:false,icon:L.divIcon({html:'<span class="ember-ring" style="--pulse-color:'+m.color+'"></span>',className:'ember-pulse',iconSize:L.point(26,26),iconAnchor:L.point(13,13)})});pulseLayer.addLayer(pulse)}marker.bindTooltip(tipTitle.slice(0,120),{direction:'top',sticky:true,offset:L.point(0,-6),opacity:1,className:'ember-tip ember-tip-'+k});if(focusable){marker.on('focus',()=>{try{marker.openTooltip()}catch{}});marker.on('blur',()=>{try{marker.closeTooltip()}catch{}})}marker.on('click',e=>{/* M1 — stop BOTH propagation layers: native stopPropagation blocks DOM bubble to the container's own click handler, and _stopped halts Leaflet's internal target loop before it reaches map.on('click',closeDetail), which would otherwise close the panel in the same tick. */if(e.originalEvent){e.originalEvent._stopped=true;try{e.originalEvent.stopPropagation();}catch{}}selectedMarker=marker;try{marker.bringToFront()}catch{}showDetail(p)});groups[k].addLayer(marker)}
-  const total=all.length;const shown=points.length;const count=document.getElementById('gpMapCount');if(count)count.textContent=capped?`${shown.toLocaleString()} of ${total.toLocaleString()} signals (cap)`:`${total.toLocaleString()} signals`;
+const marker=L.circleMarker([p.__lat,p.__lon],{pane:'gp-signals',radius:r,color:'#ffffff',weight:tune.coreWeight,fillColor:m.color,fillOpacity:.98,opacity:1,interactive:true,keyboard:focusable,title:focusable?tipTitle.slice(0,80):'',__layer:k});if(pulseLayer&&!prefersReducedMotion()&&pulses<EMBER_PULSE_CAP&&(k==='conflicts'||(k==='cartel'&&zoom>=MIN_ZOOM_BY_LAYER.cartel))){pulses++;const pulse=L.marker([p.__lat,p.__lon],{pane:'gp-signals',interactive:false,keyboard:false,icon:L.divIcon({html:'<span class="ember-ring" style="--pulse-color:'+m.color+'"></span>',className:'ember-pulse',iconSize:L.point(26,26),iconAnchor:L.point(13,13)})});pulseLayer.addLayer(pulse)}marker.bindTooltip(tipTitle.slice(0,120),{direction:'top',sticky:true,offset:L.point(0,-6),opacity:1,className:'ember-tip ember-tip-'+k});if(focusable){marker.on('focus',()=>{try{marker.openTooltip()}catch{}});marker.on('blur',()=>{try{marker.closeTooltip()}catch{}})}marker.on('click',e=>{/* M1 — stop BOTH propagation layers: native stopPropagation blocks DOM bubble to the container's own click handler, and _stopped halts Leaflet's internal target loop before it reaches map.on('click',closeDetail), which would otherwise close the panel in the same tick. */if(e.originalEvent){e.originalEvent._stopped=true;try{e.originalEvent.stopPropagation();}catch{}}selectedMarker=marker;try{marker.bringToFront()}catch{}showDetail(p)});groups[k].addLayer(marker)}
+  const total=all.length;const shown=points.length;const count=document.getElementById('gpMapCount');if(count)count.textContent=(capped?`${shown.toLocaleString()} of ${total.toLocaleString()} signals (cap)`:gated>0?`${shown.toLocaleString()} of ${total.toLocaleString()} signals · ${gated.toLocaleString()} hidden by zoom`:`${total.toLocaleString()} signals`);
   for(const k of Object.keys(LAYERS)){const e=document.getElementById(`gpMapLayerCount-${k}`);if(e)e.textContent=counts[k].toLocaleString()}
   const linkCount=document.getElementById('gpMapBrainLinkCount');if(linkCount){const brain=mapData?.brain;linkCount.textContent=String(Array.isArray(brain?.edges)?brain.edges.filter(e=>String(e.source)!==String(e.target)).length:0)}
   /* M1 — auto-fit only on the first render with data. Background refreshes
