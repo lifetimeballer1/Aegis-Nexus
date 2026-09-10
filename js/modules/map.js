@@ -6,6 +6,10 @@ import { escapeHtml } from '../core/utils.js';
 let map=null;
 let groups={};
 let brainLinks=null;
+let pulseLayer=null;
+/* Ember Watch (map-option-a): cap severity pulse rings so a dense viewport
+ * never spawns hundreds of animated DOM nodes. */
+const EMBER_PULSE_CAP=30;
 let mapData=null;
 let selected=null;
 let query='';
@@ -74,7 +78,7 @@ function renderBrainLinks(){
   const brain=mapData?.brain;if(brain?.sourceBackedOnly!==true||!Array.isArray(brain.nodes)||!Array.isArray(brain.edges))return;
   const byId=new Map();brain.nodes.forEach(n=>{const c=coords(n);if(c)byId.set(String(n.id),c)});
   for(const e of brain.edges){const a=byId.get(String(e.source)),b=byId.get(String(e.target));if(!a||!b||String(e.source)===String(e.target))continue;
-    const line=L.polyline([a,b],{pane:'gp-brain-links',color:'#8da2c4',weight:1.5,opacity:.55,dashArray:'5 6',interactive:false});
+    const line=L.polyline([a,b],{pane:'gp-brain-links',color:'#c3d4f5',weight:2,opacity:.78,dashArray:'5 6',interactive:false});
     line.bindTooltip(String(e.relationship||e.label||e.type||'Intelligence relationship').slice(0,100),{sticky:true});
     brainLinks.addLayer(line);
   }
@@ -118,7 +122,7 @@ function makeGroup(){
       const color=(top&&LAYERS[top]?LAYERS[top].color:'#8da2c4');
       const n=cluster.getChildCount();
       const size=n<10?'small':n<100?'medium':'large';
-      return L.divIcon({html:'<div style="background:'+color+'"><span>'+n+'</span></div>',className:'marker-cluster marker-cluster-'+size,iconSize:L.point(40,40)});
+      return L.divIcon({html:'<div class="ember-cluster" style="--cluster-color:'+color+'"><span>'+n+'</span></div>',className:'marker-cluster marker-cluster-'+size,iconSize:L.point(44,44)});
     }
   });
 }
@@ -133,6 +137,7 @@ export function initMap(){
   dark.addTo(map);
   dark.on('tileerror',()=>{try{if(!map.hasLayer(osm))osm.addTo(map);}catch{}});
   brainLinks=L.layerGroup().addTo(map);
+  pulseLayer=L.layerGroup().addTo(map);
   for(const k of Object.keys(LAYERS)){groups[k]=makeGroup();groups[k].addTo(map)}
   controls();ensureMapSize();map.on('click',closeDetail);
 }
@@ -182,9 +187,10 @@ export function renderMap(){
   const fp=renderFingerprint();
   if(fp===renderMap._fp&&renderMap._fitted)return;
   renderMap._fp=fp;
-  for(const g of Object.values(groups))g.clearLayers();renderBrainLinks();
+  for(const g of Object.values(groups))g.clearLayers();if(pulseLayer)pulseLayer.clearLayers();renderBrainLinks();
+  let pulses=0;
   const all=collect();const capped=all.length>MAP_RENDER_CAP;const points=all.filter(matches).slice(0,MAP_RENDER_CAP);const counts=Object.fromEntries(Object.keys(LAYERS).map(k=>[k,0]));
-  for(const p of points){const k=classify(p);counts[k]++;const m=LAYERS[k];const imp=Math.max(1,Math.min(3,Number(p.importance)||1));const marker=L.circleMarker([p.__lat,p.__lon],{pane:'gp-signals',radius:p.brainNode?10:6+imp,color:'#ffffff',weight:2.5,fillColor:m.color,fillOpacity:.98,opacity:1,interactive:true,__layer:k});marker.bindTooltip(String(p.title||p.label||p.name||p.location||m.label).slice(0,120),{direction:'top',sticky:true});marker.on('click',e=>{/* M1 — stop BOTH propagation layers: native stopPropagation blocks DOM bubble to the container's own click handler, and _stopped halts Leaflet's internal target loop before it reaches map.on('click',closeDetail), which would otherwise close the panel in the same tick. */if(e.originalEvent){e.originalEvent._stopped=true;try{e.originalEvent.stopPropagation();}catch{}}showDetail(p)});groups[k].addLayer(marker)}
+  for(const p of points){const k=classify(p);counts[k]++;const m=LAYERS[k];const imp=Math.max(1,Math.min(3,Number(p.importance)||1));const r=p.brainNode?10:6+imp;const halo=L.circleMarker([p.__lat,p.__lon],{pane:'gp-signals',radius:r+6,fillColor:m.color,fillOpacity:.20,stroke:false,interactive:false});groups[k].addLayer(halo);const marker=L.circleMarker([p.__lat,p.__lon],{pane:'gp-signals',radius:r,color:'#ffffff',weight:2.5,fillColor:m.color,fillOpacity:.98,opacity:1,interactive:true,__layer:k});if(pulseLayer&&pulses<EMBER_PULSE_CAP&&(k==='conflicts'||k==='cartel')){pulses++;const pulse=L.marker([p.__lat,p.__lon],{pane:'gp-signals',interactive:false,keyboard:false,icon:L.divIcon({html:'<span class="ember-ring" style="--pulse-color:'+m.color+'"></span>',className:'ember-pulse',iconSize:L.point(26,26),iconAnchor:L.point(13,13)})});pulseLayer.addLayer(pulse)}marker.bindTooltip(String(p.title||p.label||p.name||p.location||m.label).slice(0,120),{direction:'top',sticky:true});marker.on('click',e=>{/* M1 — stop BOTH propagation layers: native stopPropagation blocks DOM bubble to the container's own click handler, and _stopped halts Leaflet's internal target loop before it reaches map.on('click',closeDetail), which would otherwise close the panel in the same tick. */if(e.originalEvent){e.originalEvent._stopped=true;try{e.originalEvent.stopPropagation();}catch{}}showDetail(p)});groups[k].addLayer(marker)}
   const total=all.length;const shown=points.length;const count=document.getElementById('gpMapCount');if(count)count.textContent=capped?`${shown.toLocaleString()} of ${total.toLocaleString()} signals (cap)`:`${total.toLocaleString()} signals`;
   for(const k of Object.keys(LAYERS)){const e=document.getElementById(`gpMapLayerCount-${k}`);if(e)e.textContent=counts[k].toLocaleString()}
   const linkCount=document.getElementById('gpMapBrainLinkCount');if(linkCount){const brain=mapData?.brain;linkCount.textContent=String(Array.isArray(brain?.edges)?brain.edges.filter(e=>String(e.source)!==String(e.target)).length:0)}

@@ -1,10 +1,10 @@
 /* Global Pulse map styling */
 #mapContainer{background:var(--bg-elevated);min-height:420px;min-width:0;max-width:100%;}
-/* M1 — Leaflet-compat guard: the global content reset caps canvas/img/svg at
+/* M1 â€” Leaflet-compat guard: the global content reset caps canvas/img/svg at
    max-width:100%, which collapses Leaflet's explicitly-sized canvases inside
    unsized panes to 0px (invisible, unclickable markers). Scoped to the map. */
 #mapContainer img,#mapContainer canvas,#mapContainer svg{max-width:none}
-/* M4 — clusters wear layer colors (set inline by iconCreateFunction);
+/* M4 â€” clusters wear layer colors (set inline by iconCreateFunction);
    keep white bold counts readable on every hue. Tooltips match the dark
    application theme instead of Leaflet's default white box. */
 .marker-cluster div{color:#fff;font-weight:800}
@@ -60,7 +60,7 @@
   .gp-map-layers-panel{left:6px;right:6px;width:auto;top:52px}
 }
 
-/* Polish grind 5 — Map ops list + legend + layer panel at 390px widths.
+/* Polish grind 5 â€” Map ops list + legend + layer panel at 390px widths.
    Ops rows wrap (never crush chips); legend tightens; layer panel scrolls
    within the viewport with 40px+ touch rows on coarse pointers. */
 @media(max-width:420px){
@@ -79,3 +79,26 @@
   .gp-map-layer-row{min-height:44px}
   .gp-map-op-row{min-height:44px}
 }
+
+/* ===== OPTION A "Ember Watch" (map-option-a prototype, 45-min timebox) ===== */
+/* Dark tactical evolution on the Esri dark-gray canvas. No new deps. */
+/* A1 - vignette + graticule overlay (pure CSS, pointer-events none). */
+#mapContainer{position:relative}
+#mapContainer::before{content:"";position:absolute;inset:0;z-index:440;pointer-events:none;opacity:.5;background:repeating-linear-gradient(0deg,transparent 0 79px,rgba(148,178,220,.06) 79px 80px),repeating-linear-gradient(90deg,transparent 0 79px,rgba(148,178,220,.06) 79px 80px)}
+#mapContainer::after{content:"";position:absolute;inset:0;z-index:441;pointer-events:none;background:radial-gradient(ellipse at center,transparent 55%,rgba(2,6,12,.42) 100%)}
+/* A2 - cluster badges as dark-glass chips: near-black glass face, 2px ring
+   in the dominant-layer color + soft outer glow of the same hue. */
+.marker-cluster{background:transparent;border:0}
+.marker-cluster div{background:transparent}
+.marker-cluster .ember-cluster{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:rgba(4,9,15,.82);border:2px solid var(--cluster-color,#8da2c4);box-shadow:0 0 14px -1px var(--cluster-color,#8da2c4),inset 0 0 8px rgba(0,0,0,.6);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px)}
+.marker-cluster .ember-cluster span{color:#fff;font-weight:800;font-size:12px;line-height:1;text-shadow:0 1px 3px rgba(0,0,0,.9);background:transparent}
+/* A3 - severity pulse rings on critical (conflict/cartel) markers. Angle: a
+   fixed 10px dot + an expanding ring, both tinted by layer color. Capped at
+   EMBER_PULSE_CAP nodes in JS; global reduced-motion rule already freezes
+   this, reinforced explicitly below. */
+.ember-pulse{background:transparent;border:0;pointer-events:none}
+.ember-pulse .ember-ring{position:relative;display:block;width:26px;height:26px}
+.ember-pulse .ember-ring::before{content:"";position:absolute;left:50%;top:50%;width:8px;height:8px;margin:-4px 0 0 -4px;border-radius:50%;background:var(--pulse-color,#ff405f);box-shadow:0 0 8px 1px var(--pulse-color,#ff405f),0 0 2px 1px #fff}
+.ember-pulse .ember-ring::after{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid var(--pulse-color,#ff405f);opacity:.9;animation:ember-ping 2.2s ease-out infinite}
+@keyframes ember-ping{0%{transform:scale(.45);opacity:.95}70%{transform:scale(1.15);opacity:0}100%{transform:scale(1.15);opacity:0}}
+@media (prefers-reduced-motion: reduce){.ember-pulse .ember-ring::after{animation:none;opacity:.55;transform:scale(.8)}}
