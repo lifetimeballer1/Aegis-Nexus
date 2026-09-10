@@ -671,3 +671,16 @@
 .cc-signal-row .t{font-size:10.5px}
 .cc-tension-big{font-size:24px}
 }
+
+/* REF-FIDELITY 1024f — situation header + panel title wrap lock at 390px.
+   Before: .cc-situation .sub stayed inline and panel h3 rows never wrapped,
+   so long titles + LIVE badge + link crushed at 390px.
+   After: sub hides under 420px, panel h3 wraps with tighter gaps.
+   Visual-only. */
+@media(max-width:420px){
+.cc-situation{gap:6px}
+.cc-situation .sub{display:none}
+.cc-situation .meta{font-size:9px;gap:6px}
+.cc-panel>h3{flex-wrap:wrap;row-gap:4px;font-size:11px}
+.cc-panel>h3 a{font-size:10px}
+}
