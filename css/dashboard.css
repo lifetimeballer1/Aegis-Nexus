@@ -437,6 +437,19 @@
 @media(max-width:1200px){.cc-shell-kpis{grid-template-columns:repeat(3,minmax(0,1fr))}.cc-shell-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:720px){.cc-shell-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.cc-shell-grid{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){.cc-shell-line::after{animation:none}}
+/* DESIGN 20-phase (13): Alerts/Briefings/Timeline list density + filters.
+   Ref: input-b140933a (unavailable, vision down). Builds on polish
+   grinds 2-4: sticky group heads stay; this adds scroll affordance,
+   bounded rails, and filter-row fade masks. Visual-only. */
+.gp-workspace-grid .gp-filter-row{-webkit-mask-image:linear-gradient(90deg,#000 92%,transparent);mask-image:linear-gradient(90deg,#000 92%,transparent)}
+#alertsBody .gp-alert-group-head{font-size:var(--type-micro,10px);font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+#alertsBody .gp-alert-list-scroll{max-height:560px;overflow-y:auto;scrollbar-width:thin;min-width:0}
+#timelineBody .gp-timeline-rail{max-height:560px;overflow-y:auto;scrollbar-width:thin;min-width:0}
+#briefingsBody .gp-brief-dev .meta .gp-nums,#briefingsBody .gp-brief-watch .meta .gp-nums{font-variant-numeric:tabular-nums}
+#alertsBody .gp-alert-head .title,#timelineBody .gp-tl-title{font-variant-numeric:tabular-nums}
+@media(max-width:720px){
+  #alertsBody .gp-alert-list-scroll,#timelineBody .gp-timeline-rail{max-height:480px}
+}
 /* Polish grind 6 — KPI strip: tabular numerals + sparklines everywhere they belong.
    Point-in-time counts (status KPIs, market cards) stay spark-free honestly;
    history-backed KPIs keep real-data sparklines with labels. */
