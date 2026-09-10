@@ -128,3 +128,47 @@ Baseline at W1: branch `intelweb-concept-track` off `gui-concept-track`
 - 2026-09-10 — Naming: W1–W40; Map continues M5–M44.
 - 2026-09-10 — Order: Web first, then Map.
 - 2026-09-10 — Branch: `intelweb-concept-track` stacked on `gui-concept-track`.
+
+## Completion status (2026-09-10)
+
+All 40 phases landed:
+
+- **W2–W4** concept tokens + chrome inside the iframe; fluid parent height.
+- **W5–W9** truthful data-derived legend, all canonical node kinds colored,
+  co-mention vs action edge encoding, honest stats (counts, cap disclosure, age).
+- **W10–W15** debounced search with instant zero-result feedback and camera
+  preservation, relationship filter, evidence-text search, zero-result category
+  states, ranked/capped entity select, date scrubber.
+- **W16–W22** dialog semantics + focus trap, relation direction/confidence/event
+  IDs, per-edge provenance, BFS path tracing, isolate/restore, device-local pins.
+- **W23–W28** keyboard traversal (arrows + Esc), reduced-motion inside the iframe,
+  edge tooltips, focus-camera, label state sync, control ARIA.
+- **W29–W34** lazy iframe restored (runtime eager override removed), runtime
+  render budget, hidden-tab engine pause, in-memory fetch cache, WebGL context-loss
+  handling, low-tier particle gating, action-overlay fix + toggle.
+- **W35–W38** iframe↔parent postMessage selection bridge, Map/Brain cross-links,
+  explorer sort/paging, Brain overlay caveat.
+- **W39–W40** a11y labels/live regions, doc drift corrected.
+
+## Verification evidence (W40)
+
+- `python -m pytest -q` → **116 passed**.
+- `node --test tests/intelligence_web_filters.test.cjs` → **7 passed**.
+- `validate_repository.py`, `validate_security.py`, `validate_performance.py` → passed.
+- `tests/intelligence_web_smoke.py` → RENDER + CONTROLS + FAILURE PASS (desktop/mobile).
+- `tests/dashboard_smoke.py` → PASS desktop + mobile (lazy iframe restored).
+- Custom checks: inspect (pin/isolate/trace/reset) PASS; bridge (postMessage relay,
+  Map cross-link, sort) PASS; zero page errors.
+- `validate_operational_health.py` remains blocked by pre-existing artifact
+  staleness (pipeline-owned), unrelated to this track.
+
+## Known limitations
+
+- Node color encodes entity kind, not risk; relationship color encodes category,
+  not intent. The legend states this and co-mention edges are visually muted.
+- Upstream truncation (100 nodes / 500 connections) is disclosed in stats; the UI
+  cannot recover records the pipeline did not publish.
+- `intelligence_brain_web.js`, `intelligence_web_boot_repair.js`, and the inert
+  `intelligence_web_performance.js` remain in the repo for CI/history; only the
+  first is documented as retired.
+

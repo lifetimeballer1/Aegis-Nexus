@@ -84,7 +84,7 @@ button.active,.filter.active,.period.active{color:var(--blue);border-color:rgba(
 </style>
 </head>
 <body>
-<div id="loading">Loading intelligence graph…</div>
+<div id="loading" role="status" aria-live="polite">Loading intelligence graph…</div>
 <div id="graph"></div>
 <div id="labels" aria-hidden="true"></div>
 <button id="control-toggle" class="control-toggle" aria-expanded="true">☰ CLOSE FILTERS</button>
@@ -101,7 +101,7 @@ button.active,.filter.active,.period.active{color:var(--blue);border-color:rgba(
  </div>
 </div>
 <div class="timeline"><div class="card"><b>NETWORK ACTIVITY</b><div class="row"><button class="period active" data-period="all">ALL</button><button class="period" data-period="24">24H</button><button class="period" data-period="168">7D</button><button class="period" data-period="720">30D</button><button class="period" data-period="2160">90D</button><input id="since" type="date" aria-label="Show source records since date"></div><span id="trend"></span></div></div>
-<div id="details" role="dialog" aria-modal="false" aria-labelledby="details-title" tabindex="-1" aria-hidden="true"><button id="close" class="detail-close" type="button">CLOSE</button><div id="detail"></div></div>
+<div id="details" role="dialog" aria-modal="false" aria-labelledby="details-title" tabindex="-1" aria-hidden="true"><button id="close" class="detail-close" type="button" aria-label="Close details">CLOSE</button><div id="detail"></div></div>
 <script src="intelligence_web_runtime_guard.js?v=20260907-guard2"></script>
 <script src="intelligence_web_performance.js?v=20260907-perf2"></script>
 <script src="https://cdn.jsdelivr.net/npm/3d-force-graph@1.79.0/dist/3d-force-graph.min.js"></script>

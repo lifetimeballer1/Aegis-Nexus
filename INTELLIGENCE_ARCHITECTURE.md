@@ -64,7 +64,7 @@ interaction + filters + camera
 selected-node intelligence inspector
 ```
 
-`intelligence_brain_web.js` owns graph normalization, evidence filtering, domain color mapping, node importance sizing, recency emphasis, force layout, WebGL rendering, hover/selection behavior, camera controls, filtering, and source inspection. The page uses `3d-force-graph` as the rendering engine.
+`intelligence_web_v2.js` (loaded by `intelligence-web.html`) owns graph normalization, evidence filtering, kind and relationship color mapping, node sizing, force layout, WebGL rendering, hover/selection behavior, camera controls, filtering, path tracing, isolate/pin, and source inspection. The page uses `3d-force-graph` as the rendering engine. `intelligence_brain_web.js` is a retired renderer that is no longer loaded by any page.
 
 Node size is derived from available real graph properties including degree/connectivity, mentions, importance/significance and confidence. Node color is controlled by the centralized `INTELLIGENCE_NODE_COLORS` mapping. Relationship appearance is based on relationship semantics and weight. Recent records receive greater visual emphasis without altering their source timestamps.
 
