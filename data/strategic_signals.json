@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "generatedAt": "2026-09-11T00:24:08.372380Z",
+  "generatedAt": "2026-09-11T04:57:02.452593Z",
   "sourceBackedOnly": true,
   "method": "Source-backed Brain evidence plus dict/list action layers; co-mention targets are co-occurrence volumes, not causality.",
   "signals": [
@@ -9,13 +9,13 @@
       "signal": "United States shows source-backed technology activity",
       "category": "technology",
       "categories": {
-        "technology": 72,
-        "military": 42,
-        "political": 37,
+        "technology": 66,
+        "military": 43,
+        "political": 36,
         "diplomatic": 23,
         "energy": 20,
-        "maritime": 16,
-        "economic": 15,
+        "maritime": 15,
+        "economic": 14,
         "security": 14
       },
       "dominantTarget": "Iran",
@@ -41,9 +41,9 @@
           "mentions": 5
         }
       ],
-      "actionCount": 239,
-      "actionEvidenceCount": 239,
-      "categoryCount": 72,
+      "actionCount": 231,
+      "actionEvidenceCount": 231,
+      "categoryCount": 66,
       "targetCount": 20,
       "evidenceCount": 92,
       "lastEvidenceTime": "Wed, 04 Mar 2026 08:00:00 GMT",
@@ -177,12 +177,12 @@
       "signal": "China shows source-backed technology activity",
       "category": "technology",
       "categories": {
-        "technology": 98,
+        "technology": 97,
         "economic": 53,
-        "military": 34,
-        "security": 33,
-        "maritime": 24,
-        "diplomatic": 15,
+        "military": 32,
+        "security": 31,
+        "maritime": 22,
+        "diplomatic": 16,
         "political": 14,
         "energy": 2
       },
@@ -191,10 +191,6 @@
         {
           "target": "Iran",
           "mentions": 4
-        },
-        {
-          "target": "Russia",
-          "mentions": 2
         },
         {
           "target": "Ukraine",
@@ -207,11 +203,15 @@
         {
           "target": "United States",
           "mentions": 1
+        },
+        {
+          "target": "Russia",
+          "mentions": 1
         }
       ],
-      "actionCount": 273,
-      "actionEvidenceCount": 273,
-      "categoryCount": 98,
+      "actionCount": 267,
+      "actionEvidenceCount": 267,
+      "categoryCount": 97,
       "targetCount": 4,
       "evidenceCount": 97,
       "lastEvidenceTime": "Tue, 10 Feb 2026 08:00:00 GMT",
@@ -326,16 +326,16 @@
           "time": ""
         },
         {
-          "title": "Fire onboard ship at Chinese shipyard kills 25 people",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/10/09-10-china-shipyard-fire-clip-mp4?traffic_source=rss",
-          "source": "Al Jazeera",
-          "time": "2026-09-10T18:59:21+00:00"
+          "title": "Inside the Maoist Communist Party of China. 3. A Failed Protest? - Bitter Winter",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOT2lfYlNvQkhhR2Uwdjl6RjR5Rnh1M2s3cGFBMk9KTk5oMjhFRzdZQ0NwZ0NaSnk0YW1QS043UlNrVDJrVWdhTlZZSGRZeFowMFdiWkxYUHJoU3dhbXpEbExobFdiaUlwdHdkZ2xadEtCMWhqaTZjV3l0ZWRuYXRvUEdYd1lta2tSQmdMeGI2VzY?oc=5",
+          "source": "Google News — China Politics / CCP",
+          "time": "2026-09-11T01:06:08+00:00"
         },
         {
-          "title": "US trial against China’s Huawei opens with prosecutor calling the company a criminal enterprise",
-          "url": "https://www.theguardian.com/technology/2026/sep/10/china-huawei-trial-us",
-          "source": "Guardian World",
-          "time": "2026-09-10T17:41:19+00:00"
+          "title": "G20 Coalition Against China, Trump–Xi Summit 2.0, CCP Plans Purges at Fifth Plenary Session - Hudson Institute",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPU3pQd1VuSWR4QUtqeUJ1c25KVFJoS2d2MkUtQjJiNGR4UkRUOVJzSGpsWlpVYlJzbU9uWEFKWVNKbmhTRi1BWlFKdkFaLUpLTGh0V09NYmxmdXRYcS11Mm05dVRIVEx2X09CS25qV3JnZ0pyMVpJa2x2bGpmamZHbVJEREVmaU5pWEdRNlgxWTNPczhYNkh4bFc2WUk3dnVxQzBmckF1Y3dibHlCVm9LNm84MVlkeDJta0tTY0N5WFk0V3JlWS1ad1J1d1FMNk1TZ01oRl9EZ2k3dw?oc=5",
+          "source": "Google News — China Politics / CCP",
+          "time": "2026-09-11T00:28:32+00:00"
         }
       ],
       "sourceBacked": true
@@ -621,6 +621,146 @@
       "sourceBacked": true
     },
     {
+      "actor": "Oil",
+      "signal": "Oil has source-backed intelligence activity",
+      "category": "energy",
+      "categories": {
+        "energy": 1
+      },
+      "dominantTarget": "",
+      "topTargets": [],
+      "actionCount": 0,
+      "actionEvidenceCount": 0,
+      "categoryCount": 1,
+      "targetCount": 0,
+      "evidenceCount": 99,
+      "lastEvidenceTime": "Wed, 17 Dec 2025 08:00:00 GMT",
+      "intensity": 35,
+      "evidence": [
+        {
+          "title": "Bullion markets this week: US inflation, crude and Middle East tensions to set the tone - The Times of India",
+          "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPZEVzUHRFY1IxS3J6QUJuRDhzaFpzWHVzczlsV3Q2TWl1a3p6R0ZTZFZSYkZoYy1qNlBweXIyRWNNRGhhdXAwRU9BV0ZIN3FwUS1fNVl1ZmZPV1p4Y0ZKc0QzTHNpZXdpa0k3X2kyNk5BZmQ2US1sdE0yQ2R3bXhHZVRTc01jMng1cU4zSk5tM0pBWDl5YWNKc2s5dFFxVDdmT3FraUJuRVhKTVpZVlE3TXVfZW14ajRqSkV3UlJreGJOYTUySS02bnNWanNHMUFqcWlJbnFvLUpOLWdQSEFwdlNiZFBpenh3NUhoOWlhd19VWlBkMFliU3VBRWlCcjAt0gGGAkFVX3lxTE4xN3ZHbmp5dk9xTHdwUGtOcm4tS2NWX1BVMHlHYXZqUTFOeFlyZ3VEN3pqdmpIZDlJYnEwWkhVR1NJcnF2U1RMYjVOdExlb05ab2Y0X2w0ajgyRGRfTDl5ZGNNWFFRTGNHZ2ZJUjZ3WHl5aGhQR1pBcWN0dHM5THA3T0ozS2xBV0FZdHhWaTk3OGliazlFN1V3cTNlcDZNZFNtcmVWTEpJVTdWcEw4UExwYlNxbnFSZ2oyZ0VPejhrVmtPN21fdWpCUWpSeGNDc0hJaHpJODFqMnlqaHNrWmVvUFJCbzZyX1M4OTF3MnRuSUFHQm9Ib3E1bGI4OVFHTTYxWnhnd0E?oc=5",
+          "source": "Google News — Global Economics",
+          "time": "Sun, 06 Sep 2026 15:06:00 GMT"
+        },
+        {
+          "title": "Wall Street rises as tech stocks climb and oil prices, bond yields hold relatively steady - Mankato Free Press",
+          "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxPX0JVOXVwejU1SzVfVnFrYWk5YlF2SGYweXF6emRScjdPS3A3ZlBIbkdUYkZDVDZGV0Z3cjBlVW5BWU1Rc0pqbmxEbjJTSjdobE5RYUptR181WUNRdlZRRUF0Vl93MDZmQVpsUmdlZ0RzZDdybHIwaU5zajB6Q1c3WndDSDl2OGhmNGVzLXQ3TE1uNDBad1Q5NERhNEFOQjlLT1cwRDNpTVNHSHZWa2dONTczMkRueDJSa3ZsWnFfV0staHZJZS1wTjVvYlNMWFhGRlhfMXBod2ZVZE4zdy12eGFlYVlCT25sdjdyZ1JFNzN5UjgzZkNvd05WRHUyMjRBbkhhR25pbW1ENnV1cE1WcUFUSGtvcnFj?oc=5",
+          "source": "Google News — Global Economics",
+          "time": "Sun, 06 Sep 2026 10:05:31 GMT"
+        },
+        {
+          "title": "Stock Market This Week: Fed Rate Hike Bets, Bond Yields, Crude Oil And Other Cues To Watch - Outlook Money",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQeUNoQUtyVlRzSS1feUZuSmMyaVRzcmlQY0pMZ1h4UzZvS2xhQVNxNERBTXpNUkFJT0Nqem5uQjRPbkMwSF9JOGR3a213bjNUelVQOUZ3Mi03bUNBbUg5bVQxYjlibTVoamxNLVZQbmt0T0JQSHdxOTlMRUtQblVvMmdlN1dsYl8xenlWNDdGMzdfQWVCLXpLeVM4empDSmdyRmdXZW96OUFlYVRSUmfSAa4BQVVfeXFMUHlDaEFLclZUc0ktX3lGbkpjMmlUc3JpUGNKTGdYeFM2b0tsYUFTcTREQU16TVJBSU9DanpubkI0T25DMEhfSThkd2ttd24zVHpVUDlGdzItN21DQW1IOW1UMWI5Ym01aGpsTS1WUG5rdE9CUEh3cTk5TEVLUG5VbzJnZTdXbGJfMXp5VjQ3RjM3X0FlQi16S3lTOHpqQ0pnckZnV2VvejlBZWFUUlJn?oc=5",
+          "source": "Google News — Global Economics",
+          "time": "Sun, 06 Sep 2026 08:04:11 GMT"
+        },
+        {
+          "title": "Dollar rallies as oil surge revives rate-hike bets - Philenews",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5RcmhsVXFFMDQxWHVfSW82RzhQRnJXM1ZtbEJXZkMzbURZSFh5TG05bEpKc0pMT0plQVpUVmxTdUh0M2RCSXVkNW16V05aamx3UTNOWmZEUkprLWlTaGNTS2J6bWdoWEt0clZwUmpHa1pDR1NNX1lZR0NWakpEaXM?oc=5",
+          "source": "Google News — Global Economics",
+          "time": "Sun, 06 Sep 2026 06:36:32 GMT"
+        },
+        {
+          "title": "US Secretary Of War Threatens To Sink Iranian Oil Tankers After US Strikes 3 Vessels - The Trumpet Newspaper Nigeria",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPNUxIX0xmdWRKYlNMQVRtVlJtaVI4Y0JFSXhETWlrZk5iakdJOEhzZVZDcGhHUGRaZWlUbGFsaFM4M2c1LXc5LVY4Tm1PQS1tLXpaM1dyUVVUUlM3Nnl4d0N3a2Q4dkxBTEx2YWRSMXVFR2FZQ212aU1mWlVVQ2RwUThTTmVJWXJKT0wyQWJ4bWNhT25SOGNZNnVVbUNiZVg3YjZIdTVrc1dfNjg?oc=5",
+          "source": "Google News — Iran Israel",
+          "time": "2026-09-05T18:07:50+00:00"
+        },
+        {
+          "title": "Middle-East Conflict: US Strikes Three Iranian Oil Tankers As Iran Targets American Warships - Sahara Reporters",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPVGlPTlNsOHJNeE9fa2VXbkdoUkxWUUhVX3hFNWE1cHZTNFJ6ZldJTVV6U3lNVEdKSHFkTWNVYXpwUEJWTTFlSFlTWUpUTG8yWDdpVmJnTGo2TmJWN0JwbU9IRVdWR1FCQmNNazJCZUtiMWhERUFaaDE1Rm84Mk9nX05JanVldXROeWFoV19FcWNNdmZFUjVKdzZrRGFJQm8tTUQ4VVEtMDBNdm9wNjR2YWtOb01Gdy1XelM4aUN0TzlKbjMzenc?oc=5",
+          "source": "Google News — Iran Israel",
+          "time": "2026-09-05T18:00:00+00:00"
+        },
+        {
+          "title": "Breaking News: The U.S. said it struck three Iranian oil tankers in retaliation for what it said were unprovoked attempts by Iran to attack two U.S. warships. The strikes came days",
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPazE2MFFyTVZWSXJHR1pheUZaZ2trX3gzanlTQU1WZnZfVVkxMEUtSVJXamJaa0ZXRldNdzhfdksxX1FxZHNvSjZpMVI2b3Q3clhGcnFFNnhHek1ybXppWWRBa2RzUnJJQk5lRzNnSEJGRVFNVUMzSUg5LU5uUVVfeTZPTnhmZEdwZ1BLYWlaN3BOLU1xZ1NYSVJwUEY3X0UzOHJ4R0xMYzM1LUVnSWs5WHFqRG1SdTRPMFZ3eEdjV2hJMW5LZ2owRjZFLWl1WlVWcU13?oc=5",
+          "source": "Google News — Iran Israel",
+          "time": "2026-09-05T17:28:11+00:00"
+        },
+        {
+          "title": "Libya's NOC reports drone attack attempt at fuel depot - Pipeline and Gas Journal",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPcHhvenhUWUcwQ25RX1FmeXFrbzFtd0lESjZCZGtVLVVpQkQxemM0MXRRblIybjdNM014NXp2T0ZfU1pycjFRak00d0s2SnF2RmxXNXFWY2oyQ0RaUGZQYW1TREhzZFhiQUhFd1Zld0JXMkVXWHdfZWZjd2ZmMTZiZDNBdGMyWTBzSVZVMjFRbHkzRzRhMFZHeWo2MA?oc=5",
+          "source": "Google News RSS",
+          "time": ""
+        },
+        {
+          "title": "Armenian Court Files Confirm Turkey’s Pipeline for Deploying Jihadists to Foreign Wars - Middle East Forum",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPM2xJaUUyV2tOQ2VZR1BGVUtteThYMVo1TFYxdXdvRXFLU2g0Y2ZHYkVZYUhqM2dLUEhIRHRKWTNKSl9OOUNTVjFvbzFlcHdXd1IwY1c2NmpjS0s2YjFqSTBoN3V1UGhSaVlhcmx4STAzMW00aGhhUm8xV1RTTTdNenhZcWxXN1Vva3J5WDU2VkNoak5faGpkNGxuV2wxdjhmTmVxS0x6YkNTTWxDbTF1SVdkVXViSEtSMmNoeQ?oc=5",
+          "source": "Google News RSS",
+          "time": ""
+        },
+        {
+          "title": "Oil prices set for 8 per cent weekly gain on fresh US-Iran hostilities - The Eastleigh Voice",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNR1FOMmZhakZ4SmNFVDN2MXV6NkJkaHZoZ1pDbXE4aldQZGdwOTN0MENjNWlGX0ZDcFk1RUozTlYxbk45V3R3RldmdHZFU2dUeURsN3I3SWtneHFEdkQwMFdCdWlocFdpVG1hbU1WdmF3TTZPX2VIQVFLaUVfTnJYV1F0Z3JtQ3lDbTJyY1NTMHNSX29HV3lraHh5RWh5WFU2NDVpNENqbFJCVThTUXFxTnlISzJPZ2ZRdzVzM1Nn?oc=5",
+          "source": "Google News RSS",
+          "time": ""
+        },
+        {
+          "title": "India turns to Nigeria, US for LNG as Qatar shipments halt amid Iran conflict - Telegraph India",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPZnc2b3FZZTB6U2ZlNVVNaWltdW1wcXlnbTVwUTBtamw2Nkw4UjNvdW5TQ1R3Q2NXdzMwZ2ltWWRRVlg5OVpQamRqbTBKcXJUUEpCeFRiR0UyTVpnUHRybngydUdoNUc0aF9vVGpoS2xSNGc5SFJDVEc5X2oyOWV4aVA4RGxFekRKV2MwSG00WEZYSnQ5WURXRlB5Y3V6NDJzd1hTRXJtWHppU1NVaU4yZWpqSEhtWWNUODhqcUJRRl9Iam95TFl5aWlqNVVRQdIB0wFBVV95cUxQTzNaamxwLWl6Z2NUd3hrSzJkX2ZNYkIzdTRYWENHb3c3UXZDeTRraGNwem4zR2RNYkJjaVhuR1BmTkt6Q29JMFpzWWM1U2hMZ2F2RDFrR3MwdkNOYThpV2RLQXVvM1paSXFwUlpzMnhWaDM5VzdRSU5lS1ppTUhMUzkyb1lmamlZNnRtRzBLQ0dEVXdpN0FTa3A1anQ3R0xtY1RtTjlUZUZ5Sk9pSGxMZW11MVAzUzczWmR2aWhsSHZnemZRMDZkbVY3UUFlcmFDdHVN?oc=5",
+          "source": "Google News RSS",
+          "time": ""
+        },
+        {
+          "title": "AFRICA/EQUATORIAL GUINEA - Government says it foiled coup attempt thanks to Russian help - Agenzia Fides",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQbWk3TjBla3djYnlRRkt5QjJWYUxCSVktek5MdERxd3ZicVctNFJGSG5SWnVibTJhei1jRTY4TVB3XzlxekVzdlRpanZnNUNLcllXQ3d6RmJXTjdQQnZZLU5WNG8wYmZXdFFiaUJ3dFM5VHpZOW93cHVuQ0twUC00aXZfZTBaTWVPQ3FFeFRha2lKSm00WnI5MFlFVnRiQWFZaDJ3V0hRTV9VckZIX2ZEVmFJUWZlQ2ZwdVhaOFJWRQ?oc=5",
+          "source": "Google News RSS",
+          "time": ""
+        },
+        {
+          "title": "Pearl Sweet and bitter truth of the oil resource - Daily Monitor",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxObVhRTDRiZUQ2RjBjUDFiTVQ5NWdsWHJCTi1PSHJfTGhpUnJpOXhCc2hOdEpOUEswMDhxUWc0V29YbU1zNEotN3RBX2RGSTVSV3lkWk01WnpFdGpMVnpSQmtabWItRGtxRnRBWl9ZaUZPYXV0YTlhLVJBS3BUMjV2MVRRTDJzek1ZTTZxZ1JSbmFJYWdtY0VEZGx4WkpSTzRuTHRxdDdlSng?oc=5",
+          "source": "Google News RSS",
+          "time": ""
+        },
+        {
+          "title": "World’s 5th most powerful military set to join US, UK and France in Strait of Hormuz after attacks on Liberia-flagged ships carrying Saudi crude - Business Insider Africa",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNUm5DRl9nUVVFRmVpQTQ2YmF1NTl5ZVhydVlkX0VOZ2ZYcDlMTFM1c1hVSlkyaXR2MXhFVkc2Qm8tYVJXWHRVaFQ3NlFLalQtZXRDOTVVeGZ3UzhXb0w5WEtnaFhEUkROajZ2aW5RZzY0a0ZpdzNhbGxQS2YtNERnN3NvT0RJZ2NiNmF1eEJPWEVYV2tDS2hPckl6N3AydDY0TUFySnROZFJPLXpON0pHM244cno4M1B3bURtZkNNMXVkcnpMS24wR1NWVldFUHRqd2FRTU9B?oc=5",
+          "source": "Google News RSS",
+          "time": ""
+        },
+        {
+          "title": "Egypt’s Strategic Spoiler Role in the Horn of Africa and Red Sea - ENA English",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE0tSjQyaHNiSkt4dEhIOFlTams4cWhJRUFfTlluYXh0QldYLW0xcFZsQkJUdDhXZXRULW9NYWtwUGxteUt6Vk9jS3lSWGFQeGwyVUE?oc=5",
+          "source": "Google News RSS",
+          "time": ""
+        },
+        {
+          "title": "Brazilian Supreme Court roiled by dispute between justices - Al Jazeera",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNS2lZRkktdE5BWXdhSHd2RGkwQWpLTjRMOUN4N3NjN2dwZHhRSzZVOV85ZlM2ejEzRjF3OGtCRG1nOS1tMk1mNjBHdzZoVU5XTVI1dzdObGx6engydWlLN0xCVDZmNTVhOS1LOVgycmwxdGpiUWNmMTdGdEZGazRxWU55dnBKWll1TDF1QXVyZDJGUjBpZzhJRGtkeFpUUjDSAaQBQVVfeXFMUElTZjRiZjdUelhJR3l3MXlkRll1MUdXRDFYM2VOQ2xPSmNEV1o1M0NvQWYtR2tCczNNLUZDYlRvSW5SVjhhTnhibmN5U21UbXUxcV9kMGFEOTlLX09Ea19RdDFSZmRCOXRvR0wxZ2tqenFZbXR4cXdJQ0dTSWVLcDlUV0ZNRjkxSU4zS3dFWXhRUnhXQnVHejdJcWZRdEsxMVRSRHQ?oc=5",
+          "source": "Google News RSS",
+          "time": ""
+        },
+        {
+          "title": "Trump’s Big Venezuela Deal Leaves US Oil Industry Blindsided - Bloomberg.com",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQMnRlSEpJWnhoWU5ING5GZWV2OXA1YkNRd1dKdGRtY19TUzdNdGk1UDhPUW9NRUhXV24zMHRMZzNUR0dSWlVsREpVUFdnT1FUNWFlVHk2d0pkLU1XQm42Y3ZLTnlyQjV0cnNCQl95dVJfS2FPS3phQ0NCejdvNTBMWEIwcnQ0bUItU1F1YnJOd1gtQVBKYk5rS3dUdFdhMGFaQjdTRmtqb0gyNzlzb3IzTA?oc=5",
+          "source": "Google News RSS",
+          "time": ""
+        },
+        {
+          "title": "Days after Trump announces Venezuela oil deal, White House fills in some of the details - WFMZ.com",
+          "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPU3E0TDdYaTlBNVZTT1Y0ZDFHeHM5Y3I2aTNiMjY2eEVBbGl5MmcxVzIyUE43NmdQU1ZYNWduZU5EcUV0LTlmSGtOX1RLTWRPUzhPRlBuemJwakhLZEZOYTRRLVhqQmNyM0Z1ZXhpOVowQ3BSRVRzYWZla2U1TXRJOVhvQXZqNEo0NUVaX3BHTWpxN2pNWWtZS3RVOWdtS2IyUGRrWTdSZzdRLUhtQ083enF2TjB4c2w1SlNaUk4yRmRxeWcxMnRyajU5ZG1Wdkp1bjJaTWlYaU91WlQ0S0FmeGU5T3dnSWtQbnd2YjFqRzlfcDhXZTdCdENR?oc=5",
+          "source": "Google News RSS",
+          "time": ""
+        },
+        {
+          "title": "SLB signs contract with PDVSA to access Venezuela's closely guarded oilfield data and modernize exploration systems - Energies Media",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9lbWVtZXdIMXZBTUpiTVZwTFhBNFZ2ZFUxVjRBNmk5d0RNQThvcVhZLWJ6X1FJcUhvZ1hLWVduV3dYMmxZdmRVZlNtb09fVmRsVFY2Nmw5S0wxaFJNS0IydzBHTHo4Tm1LRlhF?oc=5",
+          "source": "Google News RSS",
+          "time": ""
+        },
+        {
+          "title": "The Iran War Has Put Venezuela's Oil Back in the Spotlight - Crude Oil Prices Today | OilPrice.com",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNX3VIWXVfd05vVnFvWmpGZFdYNk9jTUJNNEFaZExweGwzMy12dnNnZUxRdGVUMTJwTEltR3lrWkYteGhkLXR0Z1Bfb09tU0hydVRSZHJSR25fdE5HbmhFT3ItQmFPWThpVmJWdHhVc0R4cFJvSTV3MjdZekY0dDFta2tEUmY1RVRlLVV6Z2hNb3VxYmlJTmM1S2hNb1hLVE5MNTN3dWl2SmdRVEl0OWfSAa4BQVVfeXFMTV91SFl1X3dOb1Zxb1pqRmRXWDZPY01CTTRBWmRMcHhsMzMtdnZzZ2VMUXRlVDEycExJbUd5a1pGLXhoZC10dGdQX29PbVNIcnVUUmRyUkduX3ROR25oRU9yLUJhT1k4aVZiVnR4VXNEeHBSb0k1dzI3WXpGNHQxbWtrRFJmNUVUZS1VemdoTW91cWJpSU5jNUtoTW9YS1ROTDUzd3VpdkpnUVRJdDln?oc=5",
+          "source": "Google News RSS",
+          "time": ""
+        }
+      ],
+      "sourceBacked": true
+    },
+    {
       "actor": "Strategic Chokepoints",
       "signal": "Strategic Chokepoints has source-backed intelligence activity",
       "category": "military",
@@ -755,146 +895,6 @@
           "title": "Strait of Hormuz",
           "url": "https://www.eia.gov/international/analysis/regions-of-interest/World",
           "source": "Guerilla Map Strategic Reference",
-          "time": ""
-        }
-      ],
-      "sourceBacked": true
-    },
-    {
-      "actor": "Oil",
-      "signal": "Oil has source-backed intelligence activity",
-      "category": "energy",
-      "categories": {
-        "energy": 1
-      },
-      "dominantTarget": "",
-      "topTargets": [],
-      "actionCount": 0,
-      "actionEvidenceCount": 0,
-      "categoryCount": 1,
-      "targetCount": 0,
-      "evidenceCount": 98,
-      "lastEvidenceTime": "Wed, 17 Dec 2025 08:00:00 GMT",
-      "intensity": 35,
-      "evidence": [
-        {
-          "title": "Bullion markets this week: US inflation, crude and Middle East tensions to set the tone - The Times of India",
-          "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPZEVzUHRFY1IxS3J6QUJuRDhzaFpzWHVzczlsV3Q2TWl1a3p6R0ZTZFZSYkZoYy1qNlBweXIyRWNNRGhhdXAwRU9BV0ZIN3FwUS1fNVl1ZmZPV1p4Y0ZKc0QzTHNpZXdpa0k3X2kyNk5BZmQ2US1sdE0yQ2R3bXhHZVRTc01jMng1cU4zSk5tM0pBWDl5YWNKc2s5dFFxVDdmT3FraUJuRVhKTVpZVlE3TXVfZW14ajRqSkV3UlJreGJOYTUySS02bnNWanNHMUFqcWlJbnFvLUpOLWdQSEFwdlNiZFBpenh3NUhoOWlhd19VWlBkMFliU3VBRWlCcjAt0gGGAkFVX3lxTE4xN3ZHbmp5dk9xTHdwUGtOcm4tS2NWX1BVMHlHYXZqUTFOeFlyZ3VEN3pqdmpIZDlJYnEwWkhVR1NJcnF2U1RMYjVOdExlb05ab2Y0X2w0ajgyRGRfTDl5ZGNNWFFRTGNHZ2ZJUjZ3WHl5aGhQR1pBcWN0dHM5THA3T0ozS2xBV0FZdHhWaTk3OGliazlFN1V3cTNlcDZNZFNtcmVWTEpJVTdWcEw4UExwYlNxbnFSZ2oyZ0VPejhrVmtPN21fdWpCUWpSeGNDc0hJaHpJODFqMnlqaHNrWmVvUFJCbzZyX1M4OTF3MnRuSUFHQm9Ib3E1bGI4OVFHTTYxWnhnd0E?oc=5",
-          "source": "Google News — Global Economics",
-          "time": "Sun, 06 Sep 2026 15:06:00 GMT"
-        },
-        {
-          "title": "Wall Street rises as tech stocks climb and oil prices, bond yields hold relatively steady - Mankato Free Press",
-          "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxPX0JVOXVwejU1SzVfVnFrYWk5YlF2SGYweXF6emRScjdPS3A3ZlBIbkdUYkZDVDZGV0Z3cjBlVW5BWU1Rc0pqbmxEbjJTSjdobE5RYUptR181WUNRdlZRRUF0Vl93MDZmQVpsUmdlZ0RzZDdybHIwaU5zajB6Q1c3WndDSDl2OGhmNGVzLXQ3TE1uNDBad1Q5NERhNEFOQjlLT1cwRDNpTVNHSHZWa2dONTczMkRueDJSa3ZsWnFfV0staHZJZS1wTjVvYlNMWFhGRlhfMXBod2ZVZE4zdy12eGFlYVlCT25sdjdyZ1JFNzN5UjgzZkNvd05WRHUyMjRBbkhhR25pbW1ENnV1cE1WcUFUSGtvcnFj?oc=5",
-          "source": "Google News — Global Economics",
-          "time": "Sun, 06 Sep 2026 10:05:31 GMT"
-        },
-        {
-          "title": "Stock Market This Week: Fed Rate Hike Bets, Bond Yields, Crude Oil And Other Cues To Watch - Outlook Money",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQeUNoQUtyVlRzSS1feUZuSmMyaVRzcmlQY0pMZ1h4UzZvS2xhQVNxNERBTXpNUkFJT0Nqem5uQjRPbkMwSF9JOGR3a213bjNUelVQOUZ3Mi03bUNBbUg5bVQxYjlibTVoamxNLVZQbmt0T0JQSHdxOTlMRUtQblVvMmdlN1dsYl8xenlWNDdGMzdfQWVCLXpLeVM4empDSmdyRmdXZW96OUFlYVRSUmfSAa4BQVVfeXFMUHlDaEFLclZUc0ktX3lGbkpjMmlUc3JpUGNKTGdYeFM2b0tsYUFTcTREQU16TVJBSU9DanpubkI0T25DMEhfSThkd2ttd24zVHpVUDlGdzItN21DQW1IOW1UMWI5Ym01aGpsTS1WUG5rdE9CUEh3cTk5TEVLUG5VbzJnZTdXbGJfMXp5VjQ3RjM3X0FlQi16S3lTOHpqQ0pnckZnV2VvejlBZWFUUlJn?oc=5",
-          "source": "Google News — Global Economics",
-          "time": "Sun, 06 Sep 2026 08:04:11 GMT"
-        },
-        {
-          "title": "Dollar rallies as oil surge revives rate-hike bets - Philenews",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5RcmhsVXFFMDQxWHVfSW82RzhQRnJXM1ZtbEJXZkMzbURZSFh5TG05bEpKc0pMT0plQVpUVmxTdUh0M2RCSXVkNW16V05aamx3UTNOWmZEUkprLWlTaGNTS2J6bWdoWEt0clZwUmpHa1pDR1NNX1lZR0NWakpEaXM?oc=5",
-          "source": "Google News — Global Economics",
-          "time": "Sun, 06 Sep 2026 06:36:32 GMT"
-        },
-        {
-          "title": "US Secretary Of War Threatens To Sink Iranian Oil Tankers After US Strikes 3 Vessels - The Trumpet Newspaper Nigeria",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPNUxIX0xmdWRKYlNMQVRtVlJtaVI4Y0JFSXhETWlrZk5iakdJOEhzZVZDcGhHUGRaZWlUbGFsaFM4M2c1LXc5LVY4Tm1PQS1tLXpaM1dyUVVUUlM3Nnl4d0N3a2Q4dkxBTEx2YWRSMXVFR2FZQ212aU1mWlVVQ2RwUThTTmVJWXJKT0wyQWJ4bWNhT25SOGNZNnVVbUNiZVg3YjZIdTVrc1dfNjg?oc=5",
-          "source": "Google News — Iran Israel",
-          "time": "2026-09-05T18:07:50+00:00"
-        },
-        {
-          "title": "Middle-East Conflict: US Strikes Three Iranian Oil Tankers As Iran Targets American Warships - Sahara Reporters",
-          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPVGlPTlNsOHJNeE9fa2VXbkdoUkxWUUhVX3hFNWE1cHZTNFJ6ZldJTVV6U3lNVEdKSHFkTWNVYXpwUEJWTTFlSFlTWUpUTG8yWDdpVmJnTGo2TmJWN0JwbU9IRVdWR1FCQmNNazJCZUtiMWhERUFaaDE1Rm84Mk9nX05JanVldXROeWFoV19FcWNNdmZFUjVKdzZrRGFJQm8tTUQ4VVEtMDBNdm9wNjR2YWtOb01Gdy1XelM4aUN0TzlKbjMzenc?oc=5",
-          "source": "Google News — Iran Israel",
-          "time": "2026-09-05T18:00:00+00:00"
-        },
-        {
-          "title": "Breaking News: The U.S. said it struck three Iranian oil tankers in retaliation for what it said were unprovoked attempts by Iran to attack two U.S. warships. The strikes came days",
-          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPazE2MFFyTVZWSXJHR1pheUZaZ2trX3gzanlTQU1WZnZfVVkxMEUtSVJXamJaa0ZXRldNdzhfdksxX1FxZHNvSjZpMVI2b3Q3clhGcnFFNnhHek1ybXppWWRBa2RzUnJJQk5lRzNnSEJGRVFNVUMzSUg5LU5uUVVfeTZPTnhmZEdwZ1BLYWlaN3BOLU1xZ1NYSVJwUEY3X0UzOHJ4R0xMYzM1LUVnSWs5WHFqRG1SdTRPMFZ3eEdjV2hJMW5LZ2owRjZFLWl1WlVWcU13?oc=5",
-          "source": "Google News — Iran Israel",
-          "time": "2026-09-05T17:28:11+00:00"
-        },
-        {
-          "title": "Libya's NOC reports drone attack attempt at fuel depot - Pipeline and Gas Journal",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPcHhvenhUWUcwQ25RX1FmeXFrbzFtd0lESjZCZGtVLVVpQkQxemM0MXRRblIybjdNM014NXp2T0ZfU1pycjFRak00d0s2SnF2RmxXNXFWY2oyQ0RaUGZQYW1TREhzZFhiQUhFd1Zld0JXMkVXWHdfZWZjd2ZmMTZiZDNBdGMyWTBzSVZVMjFRbHkzRzRhMFZHeWo2MA?oc=5",
-          "source": "Google News RSS",
-          "time": ""
-        },
-        {
-          "title": "Armenian Court Files Confirm Turkey’s Pipeline for Deploying Jihadists to Foreign Wars - Middle East Forum",
-          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPM2xJaUUyV2tOQ2VZR1BGVUtteThYMVo1TFYxdXdvRXFLU2g0Y2ZHYkVZYUhqM2dLUEhIRHRKWTNKSl9OOUNTVjFvbzFlcHdXd1IwY1c2NmpjS0s2YjFqSTBoN3V1UGhSaVlhcmx4STAzMW00aGhhUm8xV1RTTTdNenhZcWxXN1Vva3J5WDU2VkNoak5faGpkNGxuV2wxdjhmTmVxS0x6YkNTTWxDbTF1SVdkVXViSEtSMmNoeQ?oc=5",
-          "source": "Google News RSS",
-          "time": ""
-        },
-        {
-          "title": "Oil prices set for 8 per cent weekly gain on fresh US-Iran hostilities - The Eastleigh Voice",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNR1FOMmZhakZ4SmNFVDN2MXV6NkJkaHZoZ1pDbXE4aldQZGdwOTN0MENjNWlGX0ZDcFk1RUozTlYxbk45V3R3RldmdHZFU2dUeURsN3I3SWtneHFEdkQwMFdCdWlocFdpVG1hbU1WdmF3TTZPX2VIQVFLaUVfTnJYV1F0Z3JtQ3lDbTJyY1NTMHNSX29HV3lraHh5RWh5WFU2NDVpNENqbFJCVThTUXFxTnlISzJPZ2ZRdzVzM1Nn?oc=5",
-          "source": "Google News RSS",
-          "time": ""
-        },
-        {
-          "title": "India turns to Nigeria, US for LNG as Qatar shipments halt amid Iran conflict - Telegraph India",
-          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPZnc2b3FZZTB6U2ZlNVVNaWltdW1wcXlnbTVwUTBtamw2Nkw4UjNvdW5TQ1R3Q2NXdzMwZ2ltWWRRVlg5OVpQamRqbTBKcXJUUEpCeFRiR0UyTVpnUHRybngydUdoNUc0aF9vVGpoS2xSNGc5SFJDVEc5X2oyOWV4aVA4RGxFekRKV2MwSG00WEZYSnQ5WURXRlB5Y3V6NDJzd1hTRXJtWHppU1NVaU4yZWpqSEhtWWNUODhqcUJRRl9Iam95TFl5aWlqNVVRQdIB0wFBVV95cUxQTzNaamxwLWl6Z2NUd3hrSzJkX2ZNYkIzdTRYWENHb3c3UXZDeTRraGNwem4zR2RNYkJjaVhuR1BmTkt6Q29JMFpzWWM1U2hMZ2F2RDFrR3MwdkNOYThpV2RLQXVvM1paSXFwUlpzMnhWaDM5VzdRSU5lS1ppTUhMUzkyb1lmamlZNnRtRzBLQ0dEVXdpN0FTa3A1anQ3R0xtY1RtTjlUZUZ5Sk9pSGxMZW11MVAzUzczWmR2aWhsSHZnemZRMDZkbVY3UUFlcmFDdHVN?oc=5",
-          "source": "Google News RSS",
-          "time": ""
-        },
-        {
-          "title": "AFRICA/EQUATORIAL GUINEA - Government says it foiled coup attempt thanks to Russian help - Agenzia Fides",
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQbWk3TjBla3djYnlRRkt5QjJWYUxCSVktek5MdERxd3ZicVctNFJGSG5SWnVibTJhei1jRTY4TVB3XzlxekVzdlRpanZnNUNLcllXQ3d6RmJXTjdQQnZZLU5WNG8wYmZXdFFiaUJ3dFM5VHpZOW93cHVuQ0twUC00aXZfZTBaTWVPQ3FFeFRha2lKSm00WnI5MFlFVnRiQWFZaDJ3V0hRTV9VckZIX2ZEVmFJUWZlQ2ZwdVhaOFJWRQ?oc=5",
-          "source": "Google News RSS",
-          "time": ""
-        },
-        {
-          "title": "Pearl Sweet and bitter truth of the oil resource - Daily Monitor",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxObVhRTDRiZUQ2RjBjUDFiTVQ5NWdsWHJCTi1PSHJfTGhpUnJpOXhCc2hOdEpOUEswMDhxUWc0V29YbU1zNEotN3RBX2RGSTVSV3lkWk01WnpFdGpMVnpSQmtabWItRGtxRnRBWl9ZaUZPYXV0YTlhLVJBS3BUMjV2MVRRTDJzek1ZTTZxZ1JSbmFJYWdtY0VEZGx4WkpSTzRuTHRxdDdlSng?oc=5",
-          "source": "Google News RSS",
-          "time": ""
-        },
-        {
-          "title": "World’s 5th most powerful military set to join US, UK and France in Strait of Hormuz after attacks on Liberia-flagged ships carrying Saudi crude - Business Insider Africa",
-          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNUm5DRl9nUVVFRmVpQTQ2YmF1NTl5ZVhydVlkX0VOZ2ZYcDlMTFM1c1hVSlkyaXR2MXhFVkc2Qm8tYVJXWHRVaFQ3NlFLalQtZXRDOTVVeGZ3UzhXb0w5WEtnaFhEUkROajZ2aW5RZzY0a0ZpdzNhbGxQS2YtNERnN3NvT0RJZ2NiNmF1eEJPWEVYV2tDS2hPckl6N3AydDY0TUFySnROZFJPLXpON0pHM244cno4M1B3bURtZkNNMXVkcnpMS24wR1NWVldFUHRqd2FRTU9B?oc=5",
-          "source": "Google News RSS",
-          "time": ""
-        },
-        {
-          "title": "Egypt’s Strategic Spoiler Role in the Horn of Africa and Red Sea - ENA English",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE0tSjQyaHNiSkt4dEhIOFlTams4cWhJRUFfTlluYXh0QldYLW0xcFZsQkJUdDhXZXRULW9NYWtwUGxteUt6Vk9jS3lSWGFQeGwyVUE?oc=5",
-          "source": "Google News RSS",
-          "time": ""
-        },
-        {
-          "title": "Brazilian Supreme Court roiled by dispute between justices - Al Jazeera",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNS2lZRkktdE5BWXdhSHd2RGkwQWpLTjRMOUN4N3NjN2dwZHhRSzZVOV85ZlM2ejEzRjF3OGtCRG1nOS1tMk1mNjBHdzZoVU5XTVI1dzdObGx6engydWlLN0xCVDZmNTVhOS1LOVgycmwxdGpiUWNmMTdGdEZGazRxWU55dnBKWll1TDF1QXVyZDJGUjBpZzhJRGtkeFpUUjDSAaQBQVVfeXFMUElTZjRiZjdUelhJR3l3MXlkRll1MUdXRDFYM2VOQ2xPSmNEV1o1M0NvQWYtR2tCczNNLUZDYlRvSW5SVjhhTnhibmN5U21UbXUxcV9kMGFEOTlLX09Ea19RdDFSZmRCOXRvR0wxZ2tqenFZbXR4cXdJQ0dTSWVLcDlUV0ZNRjkxSU4zS3dFWXhRUnhXQnVHejdJcWZRdEsxMVRSRHQ?oc=5",
-          "source": "Google News RSS",
-          "time": ""
-        },
-        {
-          "title": "Trump’s Big Venezuela Deal Leaves US Oil Industry Blindsided - Bloomberg.com",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQMnRlSEpJWnhoWU5ING5GZWV2OXA1YkNRd1dKdGRtY19TUzdNdGk1UDhPUW9NRUhXV24zMHRMZzNUR0dSWlVsREpVUFdnT1FUNWFlVHk2d0pkLU1XQm42Y3ZLTnlyQjV0cnNCQl95dVJfS2FPS3phQ0NCejdvNTBMWEIwcnQ0bUItU1F1YnJOd1gtQVBKYk5rS3dUdFdhMGFaQjdTRmtqb0gyNzlzb3IzTA?oc=5",
-          "source": "Google News RSS",
-          "time": ""
-        },
-        {
-          "title": "Days after Trump announces Venezuela oil deal, White House fills in some of the details - WFMZ.com",
-          "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPU3E0TDdYaTlBNVZTT1Y0ZDFHeHM5Y3I2aTNiMjY2eEVBbGl5MmcxVzIyUE43NmdQU1ZYNWduZU5EcUV0LTlmSGtOX1RLTWRPUzhPRlBuemJwakhLZEZOYTRRLVhqQmNyM0Z1ZXhpOVowQ3BSRVRzYWZla2U1TXRJOVhvQXZqNEo0NUVaX3BHTWpxN2pNWWtZS3RVOWdtS2IyUGRrWTdSZzdRLUhtQ083enF2TjB4c2w1SlNaUk4yRmRxeWcxMnRyajU5ZG1Wdkp1bjJaTWlYaU91WlQ0S0FmeGU5T3dnSWtQbnd2YjFqRzlfcDhXZTdCdENR?oc=5",
-          "source": "Google News RSS",
-          "time": ""
-        },
-        {
-          "title": "SLB signs contract with PDVSA to access Venezuela's closely guarded oilfield data and modernize exploration systems - Energies Media",
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9lbWVtZXdIMXZBTUpiTVZwTFhBNFZ2ZFUxVjRBNmk5d0RNQThvcVhZLWJ6X1FJcUhvZ1hLWVduV3dYMmxZdmRVZlNtb09fVmRsVFY2Nmw5S0wxaFJNS0IydzBHTHo4Tm1LRlhF?oc=5",
-          "source": "Google News RSS",
-          "time": ""
-        },
-        {
-          "title": "The Iran War Has Put Venezuela's Oil Back in the Spotlight - Crude Oil Prices Today | OilPrice.com",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNX3VIWXVfd05vVnFvWmpGZFdYNk9jTUJNNEFaZExweGwzMy12dnNnZUxRdGVUMTJwTEltR3lrWkYteGhkLXR0Z1Bfb09tU0hydVRSZHJSR25fdE5HbmhFT3ItQmFPWThpVmJWdHhVc0R4cFJvSTV3MjdZekY0dDFta2tEUmY1RVRlLVV6Z2hNb3VxYmlJTmM1S2hNb1hLVE5MNTN3dWl2SmdRVEl0OWfSAa4BQVVfeXFMTV91SFl1X3dOb1Zxb1pqRmRXWDZPY01CTTRBWmRMcHhsMzMtdnZzZ2VMUXRlVDEycExJbUd5a1pGLXhoZC10dGdQX29PbVNIcnVUUmRyUkduX3ROR25oRU9yLUJhT1k4aVZiVnR4VXNEeHBSb0k1dzI3WXpGNHQxbWtrRFJmNUVUZS1VemdoTW91cWJpSU5jNUtoTW9YS1ROTDUzd3VpdkpnUVRJdDln?oc=5",
-          "source": "Google News RSS",
           "time": ""
         }
       ],
