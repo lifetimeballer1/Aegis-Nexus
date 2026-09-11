@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-11T21:58:33.786750+00:00",
+  "updatedAt": "2026-09-11T22:44:53.769552+00:00",
   "feeds": [
     {
       "name": "GDACS Global Disaster Alerts",
@@ -135,15 +135,51 @@
     },
     {
       "name": "Google News — Sinaloa Cartel / CJNG",
-      "url": "https://news.google.com/rss/search?q=Sinaloa+Cartel+CJNG+US+military+Mexico+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+      "url": "https://news.google.com/rss/search?q=Sinaloa+Cartel+CJNG+Mexico+when%3A1d&hl=en-US&gl=US&ceid=US:en",
       "type": "cartel",
       "domain": "news.google.com"
     },
     {
       "name": "GDELT — Western Hemisphere Counter-Cartel",
-      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=(SOUTHCOM%20OR%20%22Southern%20Spear%22%20OR%20%22Joint%20Task%20Force%20Western%20Hemisphere%22%20OR%20cartel%20OR%20narco-terrorism%20OR%20%22Los%20Choneros%22%20OR%20CJNG%20OR%20Sinaloa)&mode=ArtList&format=rss&maxrecords=100&timespan=30m",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc?query=(SOUTHCOM%20OR%20%22Southern%20Spear%22%20OR%20%22Joint%20Task%20Force%20Western%20Hemisphere%22%20OR%20cartel%20OR%20narco-terrorism%20OR%20%22Los%20Choneros%22%20OR%20CJNG%20OR%20Sinaloa)&mode=ArtList&format=rss&maxrecords=100&timespan=6h",
       "type": "counter-cartel",
       "domain": "api.gdeltproject.org"
+    },
+    {
+      "name": "USGS M4.5+ Earthquakes — Past Day",
+      "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
+      "type": "climate-hazard",
+      "domain": "earthquake.usgs.gov"
+    },
+    {
+      "name": "BBC Latin America",
+      "url": "https://feeds.bbci.co.uk/news/world/latin_america/rss.xml",
+      "type": "regional",
+      "domain": "feeds.bbci.co.uk"
+    },
+    {
+      "name": "RFI Africa",
+      "url": "https://www.rfi.fr/en/africa/rss",
+      "type": "regional",
+      "domain": "www.rfi.fr"
+    },
+    {
+      "name": "InSight Crime",
+      "url": "https://insightcrime.org/feed/",
+      "type": "analysis",
+      "domain": "insightcrime.org"
+    },
+    {
+      "name": "UN News — Global",
+      "url": "https://news.un.org/feed/subscribe/en/news/all/rss.xml",
+      "type": "humanitarian",
+      "domain": "news.un.org"
+    },
+    {
+      "name": "DoD News Releases",
+      "url": "https://www.defense.gov/DesktopModules/ArticleCS/RSS.ashx?ContentType=9&Site=945",
+      "type": "security",
+      "domain": "www.defense.gov"
     },
     {
       "name": "Google News — Climate & Disaster",
@@ -213,7 +249,7 @@
     },
     {
       "name": "Google News — Sudan Conflict",
-      "url": "https://news.google.com/rss/search?q=Sudan+SAF+RSF+war+Darfur+Kordofan+conflict+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+      "url": "https://news.google.com/rss/search?q=Sudan+SAF+RSF+Darfur+conflict+when%3A1d&hl=en-US&gl=US&ceid=US:en",
       "type": "africa-conflict",
       "domain": "news.google.com"
     },
@@ -255,7 +291,7 @@
     },
     {
       "name": "Google News — Myanmar Civil War",
-      "url": "https://news.google.com/rss/search?q=Myanmar+civil+war+junta+resistance+fighting+conflict+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+      "url": "https://news.google.com/rss/search?q=Myanmar+junta+resistance+conflict+when%3A1d&hl=en-US&gl=US&ceid=US:en",
       "type": "asia-conflict",
       "domain": "news.google.com"
     },
