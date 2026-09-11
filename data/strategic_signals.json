@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "generatedAt": "2026-09-11T09:17:26.690708Z",
+  "generatedAt": "2026-09-11T13:38:24.219556Z",
   "sourceBackedOnly": true,
   "method": "Source-backed Brain evidence plus dict/list action layers; co-mention targets are co-occurrence volumes, not causality.",
   "signals": [
@@ -9,28 +9,28 @@
       "signal": "United States shows source-backed technology activity",
       "category": "technology",
       "categories": {
-        "technology": 66,
-        "military": 45,
-        "political": 37,
-        "diplomatic": 22,
-        "energy": 20,
-        "maritime": 15,
-        "economic": 14,
-        "security": 14
+        "technology": 62,
+        "military": 46,
+        "political": 40,
+        "diplomatic": 21,
+        "energy": 19,
+        "economic": 17,
+        "security": 13,
+        "maritime": 13
       },
       "dominantTarget": "Iran",
       "topTargets": [
         {
           "target": "Iran",
-          "mentions": 20
+          "mentions": 18
         },
         {
           "target": "Oil",
-          "mentions": 17
+          "mentions": 15
         },
         {
           "target": "China",
-          "mentions": 9
+          "mentions": 8
         },
         {
           "target": "Ukraine",
@@ -41,10 +41,10 @@
           "mentions": 5
         }
       ],
-      "actionCount": 233,
-      "actionEvidenceCount": 233,
-      "categoryCount": 66,
-      "targetCount": 20,
+      "actionCount": 231,
+      "actionEvidenceCount": 231,
+      "categoryCount": 62,
+      "targetCount": 18,
       "evidenceCount": 92,
       "lastEvidenceTime": "Wed, 04 Mar 2026 08:00:00 GMT",
       "intensity": 100,
@@ -178,19 +178,23 @@
       "category": "technology",
       "categories": {
         "technology": 98,
-        "economic": 52,
-        "military": 32,
+        "economic": 53,
         "security": 32,
-        "maritime": 22,
+        "military": 31,
+        "maritime": 24,
         "diplomatic": 16,
-        "political": 16,
-        "energy": 2
+        "political": 15,
+        "energy": 3
       },
       "dominantTarget": "Iran",
       "topTargets": [
         {
           "target": "Iran",
           "mentions": 5
+        },
+        {
+          "target": "Russia",
+          "mentions": 2
         },
         {
           "target": "Ukraine",
@@ -203,14 +207,10 @@
         {
           "target": "United States",
           "mentions": 1
-        },
-        {
-          "target": "Russia",
-          "mentions": 1
         }
       ],
-      "actionCount": 270,
-      "actionEvidenceCount": 270,
+      "actionCount": 272,
+      "actionEvidenceCount": 272,
       "categoryCount": 98,
       "targetCount": 5,
       "evidenceCount": 97,
@@ -326,16 +326,16 @@
           "time": ""
         },
         {
-          "title": "Putin in India for Brics summit overshadowed by war",
-          "url": "https://www.rfi.fr/en/international/20260911-putin-in-india-for-brics-summit-overshadowed-by-war",
-          "source": "RFI World",
-          "time": "2026-09-11T04:22:16+00:00"
+          "title": "Wake up, Britain: Donald Trump’s US is no friend of ours. We must secure our own place in the world | Simon Jenkins",
+          "url": "https://www.theguardian.com/commentisfree/2026/sep/11/britain-donald-trump-us-president-secure-defence-europe",
+          "source": "Guardian US",
+          "time": "2026-09-11T11:00:04+00:00"
         },
         {
-          "title": "Hong Kong Tiananmen activists sentenced up to 7 years",
-          "url": "https://www.dw.com/en/hong-kong-tiananmen-activists-sentenced-up-to-7-years/a-79224243?maca=en-rss-en-world-4025-xml-mrss",
+          "title": "Why North Korea's Kim Jong Un doesn't need a US deal",
+          "url": "https://www.dw.com/en/why-north-korea-s-kim-jong-un-doesn-t-need-a-us-deal/a-79227854?maca=en-rss-en-world-4025-xml-mrss",
           "source": "DW World",
-          "time": "2026-09-11T08:40:00+00:00"
+          "time": "2026-09-11T10:40:00+00:00"
         }
       ],
       "sourceBacked": true
