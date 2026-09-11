@@ -5,8 +5,17 @@ import hashlib,json,subprocess,sys
 from datetime import datetime,timezone
 from pathlib import Path
 ROOT=Path(__file__).resolve().parent;DATA=ROOT/'data'
+# Canonical 12-artifact set produced by every refresh. REQUIRED and MANIFEST
+# intentionally alias the same tuple so the gate and the manifest can never drift.
 REQUIRED_ARTIFACTS=('snapshot.json','history.json','sources.json','live_articles.json','canonical_intelligence.json','intelligence_graph.json','intelligence_brain.json','map_points.json','strategic_signals.json','source_health.json','live_status.json','what_changed.json')
-MANIFEST_ARTIFACTS=('snapshot.json','history.json','sources.json','live_articles.json','canonical_intelligence.json','intelligence_graph.json','intelligence_brain.json','map_points.json','strategic_signals.json','source_health.json','live_status.json','what_changed.json')
+MANIFEST_ARTIFACTS=REQUIRED_ARTIFACTS
+# NOTE (2026-09-11 dead-weight review): update_brain_feedback.py +
+# update_feed_expansion.py form a retired feedback loop. update_feed_expansion
+# mutates the legacy update_snapshot.py FEEDS list, but the canonical refresh
+# rebuilds sources.json from resilient_feed_catalog.FEEDS via
+# build_sources_registry.py and never reads update_snapshot.py. Do NOT wire
+# either file into this pipeline without first retargeting the expansion to
+# resilient_feed_catalog and making it non-mutating.
 def run(label,*cmd):
  print(f'\n=== {label} ===',flush=True);print('$',' '.join(cmd),flush=True);subprocess.run(cmd,cwd=ROOT,check=True);print(f'PASS: {label}',flush=True)
 def load(name):
