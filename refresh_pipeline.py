@@ -130,6 +130,7 @@ def _run_pipeline(started):
  run('Build what changed',sys.executable,'build_what_changed.py')
  run('Build dedicated browser map points',sys.executable,'build_map_points.py')
  run('Refresh snapshot failover state from collector telemetry',sys.executable,'build_failover_state.py')
+ run('Apply source failover fallbacks (Google News)',sys.executable,'source_failover.py')
  for name in REQUIRED_ARTIFACTS:
   if not (DATA/name).exists():raise RuntimeError(f'missing required artifact: {name}')
  write_refresh_manifest()
