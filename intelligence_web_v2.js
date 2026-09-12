@@ -25,8 +25,8 @@ const MOBILE_LABEL_CAP=10,MOBILE_FAR_CAP=6,MOBILE_EDGE_CAP=220;
 function applyViewportCaps(){try{if(isNarrowViewport()){ABYSS.maxLabels=MOBILE_LABEL_CAP;ABYSS.farLabels=MOBILE_FAR_CAP}else{ABYSS.maxLabels=28;ABYSS.farLabels=10}}catch{}}
 const reducedMotion=()=>typeof matchMedia==='function'&&matchMedia('(prefers-reduced-motion: reduce)').matches;
 const isMajor=n=>/\b(united states|\bu\.s\.|\busa\b|china|\bprc\b)/i.test(String(n&&n.label||'')+' '+String(n&&n.id||''));
-function abyssSize(n,sel,isNb){const m=Number(n&&n.mentions)||0;const base=Math.max(2.5,Math.min(8,2.5+Math.sqrt(Math.max(1,m))*.9));const maj=isMajor(n)?1.35:1;if(!sel)return base*maj;if(String(n.id)===String(sel.id))return Math.min(11,base*1.15)*maj;if(isNb)return Math.max(2,Math.min(7,2+Math.sqrt(Math.max(1,m))*.8))*maj;return Math.max(1.5,Math.min(4,base*.62))}
-function abyssLinkWidth(e){const w=Math.max(1,Number(e&&e.weight)||1);const ev=Array.isArray(e&&e.evidence)?e.evidence.length:0;const s=Math.max(w,Math.min(12,ev||w));if(s<=2)return 3;if(s<=4)return 5;if(s<=8)return 7.5;return 10}
+function abyssSize(n,sel,isNb){const m=Number(n&&n.mentions)||0;const base=Math.max(3.5,Math.min(10,3.5+Math.sqrt(Math.max(1,m))*1.1));const maj=isMajor(n)?1.35:1;if(!sel)return base*maj;if(String(n.id)===String(sel.id))return Math.min(11,base*1.15)*maj;if(isNb)return Math.max(2,Math.min(7,2+Math.sqrt(Math.max(1,m))*.8))*maj;return Math.max(1.5,Math.min(4,base*.62))}
+function abyssLinkWidth(e){const w=Math.max(1,Number(e&&e.weight)||1);const ev=Array.isArray(e&&e.evidence)?e.evidence.length:0;const s=Math.max(w,Math.min(12,ev||w));if(s<=2)return 1.6;if(s<=4)return 2.6;if(s<=8)return 3.6;return 5}}
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]||c));
 const href=v=>{try{const raw=String(v||'').trim();if(!/^https?:\/\//i.test(raw))return'';const u=new URL(raw);return /^https?:$/.test(u.protocol)?u.href:''}catch{return''}};
 const normTitle=v=>String(v||'').toLowerCase().replace(/[‘’“”]/g,"'").replace(/[^a-z0-9]+/g,' ').trim();
