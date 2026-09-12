@@ -6,6 +6,23 @@ import { sparklineSVG, barsSVG } from '../core/sparkline.js';
 
 let query = '';
 
+export const MAP_PERIODS = ['24H', '7D', '30D'];
+// Concept01: honest period scoping over eventTime; undated signals disclosed, never fabricated.
+let dashboardMapView = { period: '24H' };
+export function getDashboardMapView() { return { ...dashboardMapView }; }
+export function setDashboardMapView(v) { if (v && MAP_PERIODS.includes(v.period)) dashboardMapView.period = v.period; }
+export function eventTime(e) { return e?.lastSeen || e?.firstSeen || e?.published || e?.publishedAt || e?.time || e?.date || e?.updatedAt || null; }
+export function inMapWindow(e, period) {
+  const t = eventTime(e);
+  if (!t) return false;
+  const ms = Date.parse(t);
+  if (!Number.isFinite(ms)) return false;
+  const ageH = (Date.now() - ms) / 36e5;
+  if (period === '7D') return ageH <= 7 * 24;
+  if (period === '30D') return ageH <= 30 * 24;
+  return ageH <= 24;
+}
+
 function fmtInt(v) { return Number.isFinite(Number(v)) ? Number(v).toLocaleString() : '—'; }
 function esc(v) { return escapeHtml(String(v ?? '')); }
 function itemTime(i) { return i.published || i.publishedAt || i.published_date || i.publishedDate || i.time || i.date || i.lastSeen || i.firstSeen || i.updatedAt || null; }
@@ -202,6 +219,14 @@ export function renderDashboard() {
   void priorityOrder;
   const stale = feedMeta && Object.values(feedMeta).some(f => f?.stale);
 
+  const mapPeriod = dashboardMapView.period || '24H';
+  const mapDated = events.filter(e => eventTime(e));
+  const mapUndated = events.length - mapDated.length;
+  const mapInWindow = events.filter(e => inMapWindow(e, mapPeriod));
+  const mapPeriodBtns = MAP_PERIODS.map(p => `<button type="button" data-dash-period="${p}" aria-pressed="${p === mapPeriod}" style="font-size:10px;padding:2px 8px;border-radius:20px;border:1px solid var(--line-strong);background:${p === mapPeriod ? 'var(--blue)' : 'transparent'};color:${p === mapPeriod ? '#fff' : 'var(--muted)'};cursor:pointer">${p}</button>`).join('');
+  const mapWindowNote = mapInWindow.length === 0 ? `<div style="font-size:10px;color:var(--amber);margin-top:6px">No dated signals in this window — try 7D/30D. No dated signals in ${esc(mapPeriod)} window.</div>` : '';
+  const mapUndatedNote = mapUndated > 0 ? `<div style="font-size:10px;color:var(--muted-2);margin-top:4px">incl. ${fmtInt(mapUndated)} undated signals shown as latest snapshot</div>` : '';
+
   el.innerHTML = `
     <div class="cc-situation"><h2>🌐 Global Situation <span class="sub">Key indicators across all monitored domains</span></h2>
       <div class="meta"><span class="cc-pill ${tensionDelta > 0 ? 'geo' : tensionDelta < 0 ? 'econ' : 'gen'}" title="Global tension index">Tension ${tension ?? '—'}${Number.isFinite(Number(tensionDelta)) && Number(tensionDelta) !== 0 ? ` (${Number(tensionDelta) > 0 ? '+' : ''}${tensionDelta})` : ''}</span><span>⟳ Last updated: ${esc(upd)}</span><span class="cc-live ${failed === 0 && total ? 'sev-healthy' : 'sev-watch'}"><i></i>${failed === 0 && total ? 'All Systems Operational' : `${failed} source${failed === 1 ? '' : 's'} failing`}</span></div></div>${wcEmptyNote}
@@ -214,7 +239,9 @@ export function renderDashboard() {
       <div class="cc-panel"><h3>▦ Headline Intelligence <span class="cs-live-badge${allStories.length ? '' : ' is-empty'}">${allStories.length ? `LIVE · ${filtered.length}` : 'NO FEED'}</span> <a href="#section-breaking">View All →</a></h3>
         <input id="dashSearch" class="gp-map-search" type="search" aria-label="Filter headlines" placeholder="Filter headlines…" value="${esc(query)}" style="margin-bottom:8px">${headRows}</div>
       <div class="cc-panel"><h3>🌐 Global Map <a href="#section-map">View Full Map →</a></h3>
-        <div style="font-size:11px;color:var(--muted);margin-bottom:6px">All Domains · 24H · ${fmtInt(events.length)} signals · dark operational basemap</div>
+        <div style="display:flex;gap:6px;align-items:center;margin-bottom:6px" role="group" aria-label="Map period">${mapPeriodBtns}</div>
+        <div style="font-size:11px;color:var(--muted);margin-bottom:6px">All Domains · ${esc(mapPeriod)} · ${fmtInt(mapInWindow.length)} of ${fmtInt(events.length)} signals · dark operational basemap</div>
+        ${mapWindowNote}${mapUndatedNote}
         <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px">${order.slice(0, 6).map(n => `<span class="cc-pill gen">${esc(String(n).toUpperCase().slice(0, 14))} · ${fmtInt(regions[n]?.events ?? regions[n]?.reports)}</span>`).join('')}</div>
         <div id="dashMap" role="img" aria-label="Mini operational map" style="min-height:240px;height:260px;border:1px solid var(--line);border-radius:8px;background:#0a1826;z-index:1"></div>
         <div class="cc-legend" role="group" aria-label="Map legend"><span><i style="background:var(--red)"></i>Critical</span><span><i style="background:var(--amber)"></i>Elevated</span><span><i style="background:var(--blue)"></i>Notable</span><span><i style="background:#cbd5e1"></i>Monitoring</span></div></div>
@@ -230,6 +257,7 @@ export function renderDashboard() {
           <div style="font-size:11px;display:flex;justify-content:space-between"><span>🟡 Degraded</span><b>${fmtInt(degradedCount)}</b></div>
           <div style="font-size:11px;display:flex;justify-content:space-between"><span>🔴 Offline</span><b>${fmtInt(failed)}</b></div>
           ${issues.map(s => `<div style="font-size:10px;color:var(--muted-2);margin-top:4px">⚠ ${esc(s.name || 'Unnamed')} — ${esc(s.status || 'failed')}</div>`).join('')}
+          ${failDetail.map(s => `<div style="font-size:10px;color:var(--muted-2)">↳ ${esc(s.name || 'Unnamed')} — ${fmtInt(s.consecutiveFailures)} consecutive failures</div>`).join('')}
         </div></div></div>
     </div>
     <div class="cc-grid3">
@@ -241,6 +269,9 @@ export function renderDashboard() {
 
   const input = document.getElementById('dashSearch');
   input?.addEventListener('input', () => { query = input.value; renderDashboard(); const n = document.getElementById('dashSearch'); if (n) { n.focus(); n.setSelectionRange(n.value.length, n.value.length); } });
+  el.querySelectorAll('[data-dash-period]').forEach(btn => {
+    btn.addEventListener('click', () => { setDashboardMapView({ period: btn.getAttribute('data-dash-period') }); renderDashboard(); });
+  });
   const pill = document.getElementById('commandStatus');
   if (pill) {
     if (!total) { pill.className = 'gp-status-pill'; pill.innerHTML = '<span class="dot"></span><span>Status unknown</span>'; }
