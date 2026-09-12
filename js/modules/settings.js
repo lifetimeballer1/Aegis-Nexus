@@ -72,13 +72,13 @@ export function renderSettings() {
   const artifactCount = manifest.artifacts ? Object.keys(manifest.artifacts).length : 0;
   const vSummary = state.validationResults?.summary || {};
 
-  el.innerHTML = `<div class="gp-dash-grid">
-      <div class="gp-dash-panel"><h3>Refresh preferences</h3>
+  el.innerHTML = `<div class="gp-dash-grid gp-glass-wrap">
+      <div class="gp-dash-panel gp-glass"><h3>Refresh preferences</h3>
         <label style="display:flex;gap:8px;align-items:center;font-size:12px"><input id="prefAuto" type="checkbox"${prefs.autoRefresh ? ' checked' : ''}> Auto-refresh while visible</label>
         <label style="display:block;font-size:10px;color:var(--muted-2);margin-top:8px">Interval
           <select id="prefInterval" class="gp-map-search">${[5, 10, 15, 30].map(m => `<option value="${m}"${m === prefs.intervalMin ? ' selected' : ''}>Every ${m} minutes</option>`).join('')}</select></label>
         <div class="meta" style="font-size:10px;color:var(--muted-2);margin-top:6px">Applies to this browser immediately.</div></div>
-      <div class="gp-dash-panel"><h3>About this build</h3>
+      <div class="gp-dash-panel gp-glass"><h3>About this build</h3>
         <div class="meta" style="font-size:11px">Aegis Nexus · evidence-backed public-source monitor</div>
         <div class="meta" style="font-size:11px">Data refresh: ${manifest.generatedAt ? esc(formatRelativeTime(manifest.generatedAt)) : '—'} · ${artifactCount ? `${artifactCount} hashed artifacts` : 'manifest unavailable'}</div>
         <div class="meta" style="font-size:11px">Validation: ${vSummary.run ? `${vSummary.passed}/${vSummary.run} gates passed` : 'no validation run recorded'}</div></div>

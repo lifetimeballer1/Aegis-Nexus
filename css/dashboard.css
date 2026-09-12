@@ -684,3 +684,10 @@
 .cc-panel>h3{flex-wrap:wrap;row-gap:4px;font-size:11px}
 .cc-panel>h3 a{font-size:10px}
 }
+
+/* CC-SHELL 01/05/06 — Command Center Dashboard skeleton (dark command-center, additive) */
+.cc-shell{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:10px;background:#050a10;color:#d7e3f0}
+.cc-panel{background:#0a1420;border:1px solid #1b2c40;border-radius:12px;padding:12px 14px;min-width:0}
+.cc-panel h3{font-size:12px;margin:0 0 8px;letter-spacing:.06em;text-transform:uppercase;color:#8aa0b5}
+.cc-span-01{grid-column:span 12}.cc-span-05{grid-column:span 7}.cc-span-06{grid-column:span 5}
+@media(max-width:900px){.cc-span-05,.cc-span-06{grid-column:span 12}}

@@ -150,6 +150,10 @@ function decorateAlerts() {
     badge.className = `cs-prio prio-${sev}`;
     badge.textContent = label;
     badge.setAttribute('aria-label', `Priority ${label}`);
+    const dot = document.createElement('span');
+    dot.className = `cs-prio-dot prio-${sev}`;
+    dot.setAttribute('aria-hidden', 'true');
+    badge.prepend(dot);
     const chip = head.querySelector('.gp-sev');
     if (chip) chip.before(badge);
     else head.prepend(badge);
@@ -162,6 +166,8 @@ export function renderCommandShell() {
   renderTicker();
   decorateAlerts();
   renderRailCounts();
+  try { renderBottomBar(); } catch {}
+  try { renderBottomTicker(); } catch {}
 }
 
 let clockTimer = null;
@@ -174,4 +180,40 @@ export function initCommandShell() {
   const mo = new MutationObserver(() => decorateAlerts());
   const alertsBody = document.getElementById('alertsBody');
   if (alertsBody) mo.observe(alertsBody, { childList: true, subtree: true });
+}
+
+function bottomCounts(state) {
+  const strip = (typeof stripCounts === 'function') ? stripCounts(state) : {critical:0,warning:0,normal:0,ok:0};
+  return strip;
+}
+function renderBottomBar() {
+  const el = document.getElementById('commandStatusBarCounts');
+  const clock = document.getElementById('commandStatusBarClock');
+  const state = getState();
+  if (el) {
+    if (!state.snapshot && !state.mapData && !state.sourceHealth) {
+      el.innerHTML = '<span class="cs-strip-seg s-normal"><span>Loading</span></span>';
+    } else {
+      const c = bottomCounts(state);
+      el.innerHTML = '<span class="cs-strip-seg s-critical"><span>●</span><span>Critical</span><span class="n">' + c.critical + '</span></span>'
+        + '<span class="cs-strip-seg s-warning"><span>●</span><span>Warning</span><span class="n">' + c.warning + '</span></span>'
+        + '<span class="cs-strip-seg s-normal"><span>●</span><span>Normal</span><span class="n">' + c.normal + '</span></span>'
+        + '<span class="cs-strip-seg s-ok"><span>●</span><span>OK</span><span class="n">' + c.ok + '</span></span>';
+    }
+  }
+  if (clock) {
+    const src = document.getElementById('commandClock');
+    if (src) clock.innerHTML = src.innerHTML;
+  }
+}
+function renderBottomTicker() {
+  const track = document.getElementById('commandBottomTrack');
+  const top = document.querySelector('#commandTicker .tk-track');
+  const shell = document.getElementById('commandBottomTicker');
+  if (!track || !shell) return;
+  const state = getState();
+  const raw = Array.isArray(state.liveArticles) ? state.liveArticles : state.liveArticles?.articles || state.snapshot?.stories || [];
+  if (!raw.length) { shell.style.display = 'none'; return; }
+  shell.style.display = '';
+  if (top && top.innerHTML && track.innerHTML !== top.innerHTML) track.innerHTML = top.innerHTML;
 }

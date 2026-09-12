@@ -259,3 +259,26 @@ body::after {
 #commandTicker a{max-width:220px}
 }
 @media(prefers-reduced-motion:reduce){.tk-dot{animation:none}}
+
+/* WORKER-B REF-FIDELITY — pinned bottom status bar + bottom headlines strip + prio dots + glass prefs. Additive, visual-only. */
+#commandStatusBar{position:fixed;left:0;right:0;bottom:0;z-index:95;display:flex;align-items:center;gap:10px;padding:5px 12px;background:rgba(3,7,12,.94);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--line);font-size:10px}
+#commandStatusBarCounts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;flex:1;min-width:0}
+#commandStatusBarCounts .cs-strip-seg{padding:3px 8px;font-size:9px}
+#commandStatusBarClock{font-family:var(--font-mono);font-size:10px;color:var(--muted);white-space:nowrap}
+#commandStatusBarClock .cs-time{font-size:13px;color:#fff;font-weight:800}
+#commandBottomTicker{display:flex;gap:8px;align-items:center;overflow:hidden;padding:4px 12px;background:#020409;border-top:1px solid var(--line);font-size:10.5px;white-space:nowrap;position:fixed;left:0;right:0;bottom:34px;z-index:94}
+#commandBottomTicker .tk-label{flex:none;font-size:9px;font-weight:800;letter-spacing:.1em;color:var(--neon-blue,#4da3ff);text-transform:uppercase}
+#commandBottomTicker .tk-viewport{overflow:hidden;flex:1;min-width:0}
+#commandBottomTicker .tk-track{display:inline-flex;gap:8px;white-space:nowrap}
+#commandBottomTicker a{flex:none;max-width:300px;overflow:hidden;text-overflow:ellipsis;color:var(--text-secondary);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:2px 9px;background:var(--panel);font-size:10.5px}
+body{padding-bottom:64px}
+@media(min-width:900px){#commandBottomTicker{bottom:30px}body{padding-bottom:60px}}
+@media(max-width:720px){#commandStatusBarCounts{grid-template-columns:repeat(2,minmax(0,1fr))}#commandBottomTicker{display:none}body{padding-bottom:96px}}
+.cs-prio-dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:5px;vertical-align:baseline;background:var(--muted-2)}
+.cs-prio-dot.prio-critical{background:var(--neon-red,#ff2d55);box-shadow:0 0 6px rgba(255,45,85,.7)}
+.cs-prio-dot.prio-watch{background:var(--neon-amber,#ffc857);box-shadow:0 0 6px rgba(255,200,87,.6)}
+.cs-prio-dot.prio-info{background:var(--neon-blue,#4da3ff);box-shadow:0 0 6px rgba(77,163,255,.6)}
+.cs-prio-dot.prio-healthy{background:var(--neon-green,#48df83);box-shadow:0 0 6px rgba(72,223,131,.55)}
+.gp-glass{background:linear-gradient(180deg,rgba(20,38,54,.72),rgba(6,11,18,.78));backdrop-filter:blur(16px) saturate(1.2);-webkit-backdrop-filter:blur(16px) saturate(1.2);border:1px solid rgba(122,162,200,.28);box-shadow:0 8px 32px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,.06)}
+@media(prefers-reduced-motion:reduce){.cs-prio-dot{box-shadow:none}}
+@media(forced-colors:active){.cs-prio-dot{box-shadow:none}#commandStatusBar,#commandBottomTicker{backdrop-filter:none}}
