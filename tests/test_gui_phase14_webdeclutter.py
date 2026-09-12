@@ -40,3 +40,14 @@ def test_mobile_label_text_shorter():
 def test_no_layout_reads_in_hot_loop():
     t = _js()
     assert 'no layout reads' in t.lower() or 'estimated' in t.lower()
+
+def test_hidden_label_hint_present():
+    t = _js()
+    assert 'label-hidden-hint' in t
+    assert 'hiddenLabelBadge' in t
+    assert 'more labels' in t
+
+def test_hint_tap_zooms_in():
+    t = _js()
+    assert 'cameraPosition' in t
+    assert 'aria-live' in t
