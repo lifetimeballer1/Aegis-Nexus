@@ -85,3 +85,7 @@ def test_timeline_custom_range_and_alert_ack_are_wired():
     assert 'gp.alertAck.v1' in al
     assert 'acknowledged' in al.lower()
     assert 'this device' in al
+def test_timeline_rail_region_label():
+    text = (ROOT / "js/modules/timeline.js").read_text(encoding="utf-8")
+    assert "gp-timeline-rail" in text
+    assert "Event timeline" in text

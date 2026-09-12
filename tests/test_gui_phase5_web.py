@@ -72,3 +72,7 @@ def test_phase5_styles_and_pages_safety():
     text = (ROOT / 'js/modules/intelligence-web.js').read_text(encoding='utf-8')
     assert 'href="/' not in text and 'src="/' not in text
     assert '/Aegis-Nexus/' not in text
+def test_web_node_evidence_and_3d_fallback_honest():
+    text = (ROOT / "js/modules/intelligence-web.js").read_text(encoding="utf-8")
+    assert "No evidence records are attached to this node." in text
+    assert "3D engine unavailable" in text

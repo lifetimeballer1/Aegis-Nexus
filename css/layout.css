@@ -19,7 +19,7 @@
 .gp-nav-item { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:3px; padding:8px 4px; min-height:48px; min-width:0; border-radius:var(--radius); color:var(--muted); font-size:10px; font-weight:700; letter-spacing:.04em; text-transform:uppercase; text-decoration:none; transition:color var(--duration) var(--ease), background var(--duration) var(--ease); -webkit-tap-highlight-color:transparent; }
 .gp-nav-item:hover,.gp-nav-item:focus-visible { color:var(--text); background:var(--panel-hover); outline:none; }
 .gp-nav-item.active { color:var(--blue); } .gp-nav-icon { font-size:18px; line-height:1; }
-@media (min-width:900px) { .gp-bottom-nav{display:none;} .gp-app-main{padding:18px 24px 40px; gap:22px;} }
+@media (min-width:900px) { .gp-bottom-nav{display:none;} .gp-app-main{padding:18px 24px 40px; gap:22px; margin-left:172px;} }
 /* DESIGN 20-phase (15): Nav responsive lock — bottom nav <900px,
    left rail >=900px. Bottom nav scrolls horizontally when items exceed
    width; active item gets a top indicator; rail gets section rhythm. */
@@ -44,8 +44,12 @@
 .gp-app-shell{display:flex;flex-direction:column;min-height:100dvh}
 @media (min-width:900px) {
   .gp-app-shell{flex-direction:row;align-items:stretch}
-  .gp-rail{display:flex;flex-direction:column;gap:2px;position:sticky;top:0;height:100dvh;overflow-y:auto;
-    flex:0 0 172px;width:172px;padding:14px 10px;border-right:1px solid var(--line);
+  .gp-rail{display:flex;flex-direction:column;gap:2px;position:fixed;left:0;top:0;bottom:0;z-index:90;height:100dvh;overflow-y:auto;
+    /* DETERMINISTIC fixed rail (2026-09-11 p1): sticky failed twice, fixed
+       cannot fail. Header is 48px on desktop (35px brand lockup + 12px
+       padding + 1px border), so padding-top:62px = 48px header + 14px
+       original rhythm keeps the rail brand clear. z-index:90 < header 100. */
+    flex:0 0 172px;width:172px;padding:62px 10px 14px;border-right:1px solid var(--line);
     background:var(--bg-deep);min-width:0}
   .gp-rail .gp-rail-brand{display:flex;align-items:center;gap:8px;padding:4px 8px 12px;
     font-weight:800;font-size:12px;letter-spacing:.1em;color:var(--text)}

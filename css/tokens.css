@@ -161,7 +161,9 @@ body {
   line-height: 1.45;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
+  /* overflow-x:clip (not hidden): keeps the 390px overflow lock without
+     creating a scroll container, so position:sticky keeps working. */
+  overflow-x: clip;
 }
 
 /* Scrollbar */
