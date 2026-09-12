@@ -111,6 +111,11 @@ applyViewportCaps();
 const flowCount=()=>(relationships&&!paused&&!reducedMotion())?2:0;
 const narrowBoot=isNarrowViewport();
 const graphBuilder=new ForceGraph3D($('graph'),{controlType:'orbit',rendererConfig:{antialias:!narrowBoot,alpha:true,powerPreference:narrowBoot?'low-power':'high-performance'}}).backgroundColor('#020a12').showNavInfo(false).nodeId('id').nodeRelSize(6).width(window.innerWidth).height(window.innerHeight).nodeVal(n=>abyssSize(n,null,false)).nodeLabel(n=>'<b>'+esc(n.label)+'</b><br>'+esc(n.kind)+' · '+n.mentions+' mentions').nodeColor(n=>NODE_COLORS[n.kind]||NODE_COLORS.actor).linkColor(edgeColor).linkOpacity(e=>linkBaseOpacity(e)).linkWidth(abyssLinkWidth).linkDirectionalArrowLength(5.5).linkDirectionalArrowRelPos(.88).linkDirectionalArrowColor(edgeColor).linkDirectionalParticles(flowCount).linkDirectionalParticleWidth(3.2).linkDirectionalParticleSpeed(.008).enableNodeDrag(true).onNodeClick(show).d3VelocityDecay(narrowBoot?.62:.55).d3AlphaDecay(narrowBoot?.09:.06).warmupTicks(narrowBoot?60:150).cooldownTicks(narrowBoot?120:260);window.__gpGraph=graphBuilder;
+/* Pass 3 unclump: stronger charge repulsion + longer link distance so the
+   center label pile spreads out (mobile gets extra push, desktop moderate).
+   Guarded so a missing force never breaks init. */
+try{const ch=graphBuilder.d3Force('charge');if(ch&&typeof ch.strength==='function')ch.strength(narrowBoot?-140:-90)}catch{}
+try{const lk=graphBuilder.d3Force('link');if(lk&&typeof lk.distance==='function')lk.distance(55)}catch{}
 /* Centering fix: pin the orbit target to the graph origin and open the camera
    centered on narrow viewports so the main node starts in-frame at 390px. */
 try{graphBuilder.cameraPosition({x:0,y:0,z:narrowBoot?1100:800})}catch{}

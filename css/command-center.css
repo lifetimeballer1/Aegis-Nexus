@@ -25,3 +25,7 @@
 .gp-section-title > span:first-child{ text-shadow:0 0 8px var(--sev-info); }
 /* Header command tabs: active tab glows instead of only changing color. */
 .gp-command-tabs .gp-nav-item.active{ text-shadow:0 0 10px var(--sev-info); }
+/* Situation-live indicator: green only when nothing is failing; amber watch
+   state the moment any source fails (severity honesty). */
+.cc-live.sev-watch{ color:var(--amber); }
+.cc-live.sev-watch i{ background:var(--amber); box-shadow:0 0 8px var(--amber); }
