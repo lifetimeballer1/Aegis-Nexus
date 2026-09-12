@@ -25,6 +25,15 @@
 .gp-section-title > span:first-child{ text-shadow:0 0 8px var(--sev-info); }
 /* Header command tabs: active tab glows instead of only changing color. */
 .gp-command-tabs .gp-nav-item.active{ text-shadow:0 0 10px var(--sev-info); }
+/* Header command tabs: rail-matching icons sit inline before labels (desktop
+   only — hidden under 700px so the 390px scroll row stays text-compact). */
+.gp-command-tabs .gp-nav-item{ display:inline-flex; align-items:center; gap:6px; }
+.gp-command-tabs .gp-nav-icon{ font-size:11px; line-height:1; opacity:.85; }
+.gp-command-tabs .gp-nav-item.active .gp-nav-icon{
+  opacity:1; text-shadow:0 0 8px var(--sev-info); }
+@media (max-width:700px){
+  .gp-command-tabs .gp-nav-icon{ display:none; }
+}
 /* Situation-live indicator: green only when nothing is failing; amber watch
    state the moment any source fails (severity honesty). */
 .cc-live.sev-watch{ color:var(--amber); }
