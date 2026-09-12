@@ -45,6 +45,9 @@
 @media (min-width:900px) {
   .gp-app-shell{flex-direction:row;align-items:stretch}
   .gp-rail{display:flex;flex-direction:column;gap:2px;position:sticky;top:0;height:100dvh;overflow-y:auto;
+    /* align-self:start keeps the rail at viewport height so sticky actually
+       sticks; with stretch it grew to full content height and scrolled away. */
+    align-self:flex-start;
     flex:0 0 172px;width:172px;padding:14px 10px;border-right:1px solid var(--line);
     background:var(--bg-deep);min-width:0}
   .gp-rail .gp-rail-brand{display:flex;align-items:center;gap:8px;padding:4px 8px 12px;
