@@ -29,7 +29,8 @@ def test_labels_clamped_to_viewport():
 
 def test_label_text_ellipsis_capped():
     t = _html()
-    assert '.node-label .text' in t
+    # Pin-anchor rework nests label text in .tag; cap contract unchanged.
+    assert '.node-label .tag .text' in t
     assert 'text-overflow:ellipsis' in t
     assert 'max-width:30ch' in t
 
