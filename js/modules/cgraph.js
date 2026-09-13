@@ -13,6 +13,41 @@ let pillsBox = null;
 const NODE_CAP = 120;
 const DATA_URL = 'data/gui-fixtures.json';
 let started = false;
+/* ---- story thumbnails (build-time manifest + category fallback art) ---- */
+let thumbManifest = null;
+function thumbSlug(t) { return String(t || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 48); }
+const THUMB_CATS = ['geopolitical', 'economic', 'indo-pacific', 'domestic', 'general', 'generic', 'regional', 'cartel', 'international', 'news', 'diplomatic', 'conflict', 'political'];
+function thumbFallback(cat) {
+  let c = String(cat || 'general').toLowerCase().replace(/[^a-z-]/g, '');
+  if (THUMB_CATS.indexOf(c) >= 0) return c;
+  if (/conflict|security/.test(c)) return 'conflict';
+  if (/cartel/.test(c)) return 'cartel';
+  if (/econom|market|trade/.test(c)) return 'economic';
+  if (c === 'us-politics') return 'domestic';
+  if (/politic|election/.test(c)) return 'political';
+  if (/china|asia|pacific|indo/.test(c)) return 'indo-pacific';
+  if (/geopolit|middle-east|europe|africa|americas|world/.test(c)) return 'geopolitical';
+  if (/region|southcom/.test(c) || c === 'live') return 'regional';
+  if (/diploma/.test(c)) return 'diplomatic';
+  if (/intern/.test(c)) return 'international';
+  return 'generic';
+}
+function thumbFor(title, cat) {
+  const fb = 'assets/thumbs/fallback-' + thumbFallback(cat) + '.svg';
+  const f = thumbManifest && thumbManifest[thumbSlug(title)];
+  return { src: f ? ('assets/thumbs/' + f) : fb, fb };
+}
+function thumbImg(title, cat, cls) {
+  const t = thumbFor(title, cat);
+  return '<img class="' + cls + '" src="' + t.src + '" alt="" loading="lazy" onerror="this.onerror=null;this.src=\'' + t.fb + '\'">';
+}
+function loadThumbs(rerender) {
+  fetch('assets/thumbs/manifest.json', { headers: { Accept: 'application/json' } })
+    .then((r) => { if (!r.ok) throw new Error('no manifest'); return r.json(); })
+    .then((m) => { thumbManifest = (m && m.map) || {}; if (rerender) { try { rerender(); } catch (e) {} } })
+    .catch(() => {});
+}
+
 
 function hashStr(s) {
   let h = 5381;
@@ -246,10 +281,10 @@ async function boot() {
   function showNodeDetail(n) {
     const t = relTime(frozenAt, n.h);
     const q = 'https://www.google.com/search?q=' + encodeURIComponent(n.label);
-    const html = '<article class="cg-card cg-detail" tabindex="0" id="cgDetailCard"><h4>' + esc(n.label) + '</h4>' +
+    const html = '<article class="cg-card cg-detail" tabindex="0" id="cgDetailCard"><div class="cg-main">' + thumbImg(n.label, n.cat, 'cg-thumb') + '<div class="cg-body"><h4>' + esc(n.label) + '</h4>' +
       '<div class="cg-meta"><span>📰 ' + esc(n.outlet) + '</span><span>🕒 ' + esc(t.label) + '</span>' +
       '<span class="cg-badge">' + esc(n.cat) + ' • ' + n.reports + ' report' + (n.reports === 1 ? '' : 's') + '</span>' +
-      '<a href="' + q + '" target="_blank" rel="noopener">Open link ↗</a></div></article>';
+      '<a href="' + q + '" target="_blank" rel="noopener">Open link ↗</a></div></div></div></article>';
     cards.innerHTML = html + cards.innerHTML;
     const d = document.getElementById('cgDetailCard');
     if (d) d.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
@@ -260,9 +295,9 @@ async function boot() {
       const t = relTime(frozenAt, n.h);
       const q = 'https://www.google.com/search?q=' + encodeURIComponent(n.label);
       const badge = n.hub ? '' : '<span class="cg-badge">' + esc(n.cat) + ' • ' + n.reports + ' report' + (n.reports === 1 ? '' : 's') + '</span>';
-      return '<article class="cg-card" tabindex="0"><h4>' + esc(n.label) + '</h4>' +
+      return '<article class="cg-card" tabindex="0"><div class="cg-main">' + thumbImg(n.label, n.cat, 'cg-thumb') + '<div class="cg-body"><h4>' + esc(n.label) + '</h4>' +
         '<div class="cg-meta"><span>📰 ' + esc(n.outlet) + '</span><span>🕒 ' + esc(t.label) + '</span>' + badge +
-        '<a href="' + q + '" target="_blank" rel="noopener">Open link ↗</a></div></article>';
+        '<a href="' + q + '" target="_blank" rel="noopener">Open link ↗</a></div></div></div></article>';
     }).join('') || '<p class="cg-sub">No stories match these filters.</p>';
   }
   function draw() {
@@ -275,6 +310,7 @@ async function boot() {
     drawCards(list);
   }
   draw();
+  loadThumbs(() => { try { drawCards(visible()); } catch (e) {} });
   pickPills();  new IntersectionObserver(es => {
     for (const e of es) {
       if (e.isIntersecting && ctx && !running) draw();

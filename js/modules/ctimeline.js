@@ -20,6 +20,41 @@ let remainS = REFRESH_S;
 let paused = false;
 let expanded = -1;
 let query = '';
+/* ---- story thumbnails (build-time manifest + category fallback art) ---- */
+let thumbManifest = null;
+function thumbSlug(t) { return String(t || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 48); }
+const THUMB_CATS = ['geopolitical', 'economic', 'indo-pacific', 'domestic', 'general', 'generic', 'regional', 'cartel', 'international', 'news', 'diplomatic', 'conflict', 'political'];
+function thumbFallback(cat) {
+  let c = String(cat || 'general').toLowerCase().replace(/[^a-z-]/g, '');
+  if (THUMB_CATS.indexOf(c) >= 0) return c;
+  if (/conflict|security/.test(c)) return 'conflict';
+  if (/cartel/.test(c)) return 'cartel';
+  if (/econom|market|trade/.test(c)) return 'economic';
+  if (c === 'us-politics') return 'domestic';
+  if (/politic|election/.test(c)) return 'political';
+  if (/china|asia|pacific|indo/.test(c)) return 'indo-pacific';
+  if (/geopolit|middle-east|europe|africa|americas|world/.test(c)) return 'geopolitical';
+  if (/region|southcom/.test(c) || c === 'live') return 'regional';
+  if (/diploma/.test(c)) return 'diplomatic';
+  if (/intern/.test(c)) return 'international';
+  return 'generic';
+}
+function thumbFor(title, cat) {
+  const fb = 'assets/thumbs/fallback-' + thumbFallback(cat) + '.svg';
+  const f = thumbManifest && thumbManifest[thumbSlug(title)];
+  return { src: f ? ('assets/thumbs/' + f) : fb, fb };
+}
+function thumbImg(title, cat, cls) {
+  const t = thumbFor(title, cat);
+  return '<img class="' + cls + '" src="' + t.src + '" alt="" loading="lazy" onerror="this.onerror=null;this.src=\'' + t.fb + '\'">';
+}
+function loadThumbs(rerender) {
+  fetch('assets/thumbs/manifest.json', { headers: { Accept: 'application/json' } })
+    .then((r) => { if (!r.ok) throw new Error('no manifest'); return r.json(); })
+    .then((m) => { thumbManifest = (m && m.map) || {}; if (rerender) { try { rerender(); } catch (e) {} } })
+    .catch(() => {});
+}
+
 
 function esc(value) {
   return String(value ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c] || c));
@@ -114,7 +149,7 @@ function headlinesPanel(fx) {
     return `<article class="ct-hl"><div class="ct-hl-top"><span class="ct-num">${num}</span>`
       + `<span class="ct-sevdot ${dot}" aria-hidden="true"></span>`
       + `<span class="ct-tag">${esc(ctx?.category || s.type || 'general')}</span></div>`
-      + `<div class="ct-hl-title">${esc(s.title || 'Untitled')}</div>`
+      + `<div class="ct-hl-main">${thumbImg(s.title, ctx?.category || s.type, 'ct-thumb')}<div class="ct-hl-title">${esc(s.title || 'Untitled')}</div></div>`
       + `<div class="ct-hl-meta">${esc(reports)} reports · ${esc(sev)} · ${esc(age)}</div>`
       + `<div class="ct-hl-actions"><button class="gp-btn" data-ct-expand="${i}" type="button" aria-expanded="${open}">${open ? 'CLOSE BRIEF' : 'READ FULL BRIEFING'}</button></div>`
       + brief + '</article>';
@@ -295,6 +330,7 @@ function boot(host, force) {
   const input = (typeof document !== 'undefined') ? host.querySelector('#ctSearch') : null;
   if (input && document.activeElement !== input) input.value = query;
   refresh(host);
+  loadThumbs(() => { if (cache) paintPanels(host); });
   startTimer(host);
 }
 

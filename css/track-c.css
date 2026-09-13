@@ -47,3 +47,9 @@
 .cg-nodepill i{width:7px;height:7px;border-radius:50%;background:var(--cyan);flex:none}
 .cg-nodepill[hidden]{display:none}
 .cg-card.cg-detail{border-color:var(--cyan)}
+
+/* ---- story thumbnails (graph) ---- */
+.cg-main{display:flex;gap:10px;align-items:flex-start}
+.cg-body{min-width:0;flex:1}
+.cg-thumb{width:96px;height:72px;object-fit:cover;border-radius:8px;border:1px solid var(--line-strong);flex:none;background:#0d1526}
+@media (max-width:480px){.cg-thumb{width:64px;height:48px}}

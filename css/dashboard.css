@@ -691,3 +691,7 @@
 .cc-panel h3{font-size:12px;margin:0 0 8px;letter-spacing:.06em;text-transform:uppercase;color:#8aa0b5}
 .cc-span-01{grid-column:span 12}.cc-span-05{grid-column:span 7}.cc-span-06{grid-column:span 5}
 @media(max-width:900px){.cc-span-05,.cc-span-06{grid-column:span 12}}
+
+/* ---- story thumbnails (briefings) ---- */
+.gp-brief-thumb{width:88px;height:66px;object-fit:cover;border-radius:8px;border:1px solid var(--line);flex:none;background:#0d1526}
+@media (max-width:480px){.gp-brief-thumb{width:64px;height:48px}}

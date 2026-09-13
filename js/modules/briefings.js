@@ -13,6 +13,41 @@ let categoryFilter = 'all';
 let showAllDevelopments = false;
 
 const DEV_PAGE = 8;
+/* ---- story thumbnails (build-time manifest + category fallback art) ---- */
+let thumbManifest = null;
+function thumbSlug(t) { return String(t || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 48); }
+const THUMB_CATS = ['geopolitical', 'economic', 'indo-pacific', 'domestic', 'general', 'generic', 'regional', 'cartel', 'international', 'news', 'diplomatic', 'conflict', 'political'];
+function thumbFallback(cat) {
+  let c = String(cat || 'general').toLowerCase().replace(/[^a-z-]/g, '');
+  if (THUMB_CATS.indexOf(c) >= 0) return c;
+  if (/conflict|security/.test(c)) return 'conflict';
+  if (/cartel/.test(c)) return 'cartel';
+  if (/econom|market|trade/.test(c)) return 'economic';
+  if (c === 'us-politics') return 'domestic';
+  if (/politic|election/.test(c)) return 'political';
+  if (/china|asia|pacific|indo/.test(c)) return 'indo-pacific';
+  if (/geopolit|middle-east|europe|africa|americas|world/.test(c)) return 'geopolitical';
+  if (/region|southcom/.test(c) || c === 'live') return 'regional';
+  if (/diploma/.test(c)) return 'diplomatic';
+  if (/intern/.test(c)) return 'international';
+  return 'generic';
+}
+function thumbFor(title, cat) {
+  const fb = 'assets/thumbs/fallback-' + thumbFallback(cat) + '.svg';
+  const f = thumbManifest && thumbManifest[thumbSlug(title)];
+  return { src: f ? ('assets/thumbs/' + f) : fb, fb };
+}
+function thumbImg(title, cat, cls) {
+  const t = thumbFor(title, cat);
+  return '<img class="' + cls + '" src="' + t.src + '" alt="" loading="lazy" onerror="this.onerror=null;this.src=\'' + t.fb + '\'">';
+}
+function loadThumbs(rerender) {
+  fetch('assets/thumbs/manifest.json', { headers: { Accept: 'application/json' } })
+    .then((r) => { if (!r.ok) throw new Error('no manifest'); return r.json(); })
+    .then((m) => { thumbManifest = (m && m.map) || {}; if (rerender) { try { rerender(); } catch (e) {} } })
+    .catch(() => {});
+}
+
 
 function esc(value) {
   return escapeHtml(String(value ?? ''));
@@ -56,7 +91,7 @@ export function renderBriefings() {
     const meta = [`${dev.reportCount ?? '—'} reports`, `${dev.independentSourceCount ?? '—'} independent sources`, `confidence ${dev.confidence || 'ungraded'}`];
     if (dev.lastSeen) meta.push(formatRelativeTime(dev.lastSeen));
     const sources = Array.isArray(dev.sources) ? dev.sources.slice(0, 4).join(', ') : '';
-    return `<div class="gp-brief-dev sev-${sev}"><span class="gp-alert-bar"></span><div class="grow">`
+    return `<div class="gp-brief-dev sev-${sev}"><span class="gp-alert-bar"></span>${thumbImg(dev.title, dev.category, 'gp-brief-thumb')}<div class="grow">`
       + `<div class="title">${esc(dev.title || 'Untitled development')}</div>`
       + `<div class="meta">${esc(meta.join(' · '))}${sources ? ` · ${esc(sources)}` : ''}</div></div>`
       + `<span class="gp-sev gp-sev-${sev}">${dev.breaking ? 'Breaking' : esc(dev.confidence || 'ungraded')}</span></div>`;
@@ -132,6 +167,8 @@ export function renderBriefings() {
 
   renderDrafts(el);
 }
+
+loadThumbs(() => { const b = typeof document !== 'undefined' && document.getElementById('briefingsBody'); if (b && b.querySelector('.gp-brief-dev')) renderBriefings(); });
 
 /* Analyst Drafts — local-first briefing builder (Concept 05 authoring).
  * Drafts are composed by the analyst from evidence they attach; nothing is

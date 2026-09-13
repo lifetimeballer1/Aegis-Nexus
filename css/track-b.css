@@ -87,3 +87,9 @@
 .ct-legend{display:grid;gap:6px;font-size:11px;color:var(--muted)}
 .ct-leg-row{display:flex;gap:8px;align-items:center}
 .ct-panel-alert{border-top:2px solid var(--sev-critical,#ff405f)}
+
+/* ---- story thumbnails (timeline) ---- */
+.ct-hl-main{display:flex;gap:10px;align-items:flex-start;margin:6px 0}
+.ct-hl-main .ct-hl-title{margin:0;flex:1;min-width:0}
+.ct-thumb{width:96px;height:72px;object-fit:cover;border-radius:8px;border:1px solid var(--line-strong);flex:none;background:#0d1526}
+@media (max-width:480px){.ct-thumb{width:64px;height:48px}}

@@ -397,3 +397,9 @@
   font-size: 11px;
   color: var(--muted-2);
 }
+
+/* ---- story thumbnails (breaking news) ---- */
+.gp-news-main{display:flex;gap:10px;align-items:flex-start}
+.gp-news-body{min-width:0;flex:1}
+.gp-news-thumb{width:96px;height:72px;object-fit:cover;border-radius:8px;border:1px solid var(--line);flex:none;background:#0d1526}
+@media (max-width:480px){.gp-news-thumb{width:64px;height:48px}}
