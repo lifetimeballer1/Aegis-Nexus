@@ -5,6 +5,11 @@
  * Perf: nodes capped at 120, one rAF loop, DPR<=2, layout precomputed, IO-gated, reduced-motion static.
  */
 const WINDOW_SCALE = { ALL: 1.0, '90D': 1.0, '30D': 0.75, '7D': 0.45, '24H': 0.18 };
+/* ref-pin: major-node pill anchors, in label priority order. First unmatched node per keyword gets a pill. */
+const PILL_KEYS = ['Communist Party of China', 'South China Sea', 'U.S. Department of Justice', 'U.S. Treasury', 'Middle East', 'China', 'Iran', 'Europe'];
+let lastP = null;
+let pillNodes = [];
+let pillsBox = null;
 const NODE_CAP = 120;
 const DATA_URL = 'data/gui-fixtures.json';
 let started = false;
@@ -46,6 +51,7 @@ export function initCgraph() {
 
 async function boot() {
   const $ = id => document.getElementById(id);
+  const frameEl = document.getElementById('cgFrame');
   const canvas = document.getElementById('cgCanvas'), svgBox = document.getElementById('cgSvgFallback'), status = document.getElementById('cgStatus'), cards = document.getElementById('cgCards');
   const res = await fetch(DATA_URL, { cache: 'no-store' });
   if (!res.ok) throw new Error('HTTP ' + res.status);
@@ -125,10 +131,10 @@ async function boot() {
   }
   // ---- canvas renderer (lazy, one rAF) ----
   const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
-  let raf = 0, angle = 0, scale = 1, ox = 0, oy = 0, running = false;
+  let raf = 0, angle = 0, scale = 1, ox = 0, oy = 0, running = false, pillTick = 0;
   function setupCanvas() {
     const dpr = Math.min(2, devicePixelRatio || 1);
-    const r = frame.getBoundingClientRect();
+    const r = frameEl.getBoundingClientRect();
     canvas.width = Math.max(300, r.width * dpr); canvas.height = 320 * dpr;
     const ctx = canvas.getContext('2d');
     if (!ctx) return null;
@@ -157,8 +163,7 @@ async function boot() {
     const W = canvas.clientWidth || 360, H = 320;
     ctx.clearRect(0, 0, W, H);
     const cx = W / 2 + ox, cy = H / 2 + oy, R = Math.min(W, H) * 0.42 * scale;
-    const P = new Map();
-    for (const n of list) {
+    const P = new Map();    for (const n of list) {
       const rot = reduceMotion ? 0 : angle;
       const x = n.bx * Math.cos(rot) - n.z * 0.25 * Math.sin(rot);
       const depth = (n.z * Math.cos(rot) + 0.6) / 1.6; // 0..1 pseudo-depth
@@ -180,6 +185,9 @@ async function boot() {
       ctx.globalAlpha = 0.55 + depth * 0.45; ctx.fill(); ctx.globalAlpha = 1;
     }
     if (!reduceMotion) angle += 0.0035;
+    lastP = P;
+    pillTick++;
+    if (pillTick % 20 === 0) placePills();
   }
   function svgFallback(list) {
     canvas.hidden = true; svgBox.hidden = false;
@@ -197,6 +205,54 @@ async function boot() {
       s += '<circle cx="' + px.toFixed(1) + '" cy="' + py.toFixed(1) + '" r="' + (n.kind === 'hub' ? 6 : 4) + '" fill="' + c + '"/>';
     }
     svgBox.innerHTML = s + '</svg>';
+  }
+  function pickPills() {
+    pillNodes = [];
+    const used = new Set();
+    const hubsFirst = [...nodes].sort((a, b) => (b.kind === 'hub') - (a.kind === 'hub'));
+    for (const key of PILL_KEYS) {
+      const hit = hubsFirst.find(n => !used.has(n.id) && n.label.toLowerCase().includes(key.toLowerCase()));
+      if (hit) { used.add(hit.id); pillNodes.push({ node: hit, short: key }); }
+      if (pillNodes.length >= 8) break;
+    }
+    buildPillDom();
+  }
+  function buildPillDom() {
+    pillsBox = document.getElementById('cgNodePills');
+    if (!pillsBox) return;
+    pillsBox.innerHTML = '';
+    pillNodes.forEach((p, i) => {
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'cg-nodepill';
+      b.innerHTML = '<i aria-hidden="true"></i>' + esc(p.short);
+      b.setAttribute('aria-label', 'Inspect node ' + p.node.label);
+      b.addEventListener('click', () => showNodeDetail(p.node));
+      pillsBox.append(b);
+      p.el = b;
+    });
+    placePills();
+  }
+  function placePills() {
+    if (!pillsBox || !lastP) return;
+    for (const p of pillNodes) {
+      const pos = lastP.get(p.node.id);
+      if (!pos || !p.el) { if (p.el) p.el.hidden = true; continue; }
+      p.el.hidden = false;
+      p.el.style.left = Math.max(4, Math.min(pos[0], (frameEl.clientWidth || 360) - 4)) + 'px';
+      p.el.style.top = Math.max(4, Math.min(pos[1], 316)) + 'px';
+    }
+  }
+  function showNodeDetail(n) {
+    const t = relTime(frozenAt, n.h);
+    const q = 'https://www.google.com/search?q=' + encodeURIComponent(n.label);
+    const html = '<article class="cg-card cg-detail" tabindex="0" id="cgDetailCard"><h4>' + esc(n.label) + '</h4>' +
+      '<div class="cg-meta"><span>📰 ' + esc(n.outlet) + '</span><span>🕒 ' + esc(t.label) + '</span>' +
+      '<span class="cg-badge">' + esc(n.cat) + ' • ' + n.reports + ' report' + (n.reports === 1 ? '' : 's') + '</span>' +
+      '<a href="' + q + '" target="_blank" rel="noopener">Open link ↗</a></div></article>';
+    cards.innerHTML = html + cards.innerHTML;
+    const d = document.getElementById('cgDetailCard');
+    if (d) d.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
   }
   function drawCards(list) {
     const items = list.filter(n => n.kind !== 'hub').slice(0, 30);
@@ -219,10 +275,10 @@ async function boot() {
     drawCards(list);
   }
   draw();
-  new IntersectionObserver(es => {
+  pickPills();  new IntersectionObserver(es => {
     for (const e of es) {
       if (e.isIntersecting && ctx && !running) draw();
       if (!e.isIntersecting && ctx) { running = false; cancelAnimationFrame(raf); }
     }
-  }).observe(frame);
+  }).observe(frameEl);
 }

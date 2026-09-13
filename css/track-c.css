@@ -38,3 +38,12 @@
   .cg-srcs { grid-template-columns: 1fr 1fr; }
 }
 @media (prefers-reduced-motion: reduce) { .cg-btn:active { transform: none; } }
+
+/* ---- ref-fidelity: graph (activity label, caption, labeled node pills) ---- */
+.cg-pills-label{font-size:10px;font-weight:800;letter-spacing:.08em;color:var(--muted);flex:1 1 100%}
+.cg-cap{font-size:10px;color:var(--muted-2);margin:2px 2px 0}
+.cg-nodepills{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:2}
+.cg-nodepill{position:absolute;transform:translate(-50%,-130%);pointer-events:auto;display:inline-flex;gap:6px;align-items:center;font-size:10px;font-weight:800;color:var(--text);background:rgba(10,24,38,.92);border:1px solid var(--cyan);border-radius:999px;padding:3px 9px;white-space:nowrap;cursor:pointer;max-width:180px;overflow:hidden;text-overflow:ellipsis}
+.cg-nodepill i{width:7px;height:7px;border-radius:50%;background:var(--cyan);flex:none}
+.cg-nodepill[hidden]{display:none}
+.cg-card.cg-detail{border-color:var(--cyan)}

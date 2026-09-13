@@ -11,7 +11,8 @@
       <a class="cg-tab" role="tab" aria-selected="true" href="#section-search">SEARCH</a>
     </div>
   </div>
-  <p class="cg-sub">Source-backed details. Every node and card traces to a fixture outlet.</p>
+  <p class="cg-sub"><b>Select a node to inspect its source-backed details.</b></p>
+  <p class="cg-sub">Full 3D relationship view loads below on demand; the embedded frame stays lazy for mobile performance.</p>
   <div class="cg-row">
     <button class="cg-btn" id="cgFiltersBtn" aria-expanded="false" aria-controls="cgDrawer">OPEN FILTERS</button>
   </div>
@@ -24,16 +25,19 @@
     <input type="range" id="cgMinRep" min="0" max="5" step="1" value="0">
   </div>
   <div class="cg-pills" id="cgPills" role="group" aria-label="Network activity window">
+    <span class="cg-pills-label" id="cgPillsLabel">NETWORK ACTIVITY</span>
     <button class="cg-pill" data-win="ALL" aria-pressed="true">ALL</button>
     <button class="cg-pill" data-win="24H" aria-pressed="false">24H</button>
     <button class="cg-pill" data-win="7D" aria-pressed="false">7D</button>
     <button class="cg-pill" data-win="30D" aria-pressed="false">30D</button>
     <button class="cg-pill" data-win="90D" aria-pressed="false">90D</button>
   </div>
+  <div class="cg-cap">All available source dates</div>
   <div class="cg-status" id="cgStatus" role="status">Loading fixture…</div>
   <div class="cg-frame" id="cgFrame">
     <canvas id="cgCanvas" aria-label="Story network graph (lazy canvas)"></canvas>
     <div id="cgSvgFallback" hidden></div>
+    <div class="cg-nodepills" id="cgNodePills" aria-label="Major nodes"></div>
     <span class="cg-hint" id="cgHint">scroll to load • drag to pan • pinch to zoom</span>
   </div>
   <div class="cg-cards" id="cgCards" aria-live="polite"></div>

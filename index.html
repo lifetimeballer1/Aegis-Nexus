@@ -47,28 +47,73 @@
       <nav class="gp-rail" aria-label="Views"><div class="gp-rail-brand"><span class="gp-mark">◈</span><span>AEGIS</span></div><div class="gp-rail-group" aria-hidden="true">Monitor</div><a href="#section-dashboard" class="gp-nav-item active" data-nav="dashboard"><span class="gp-nav-icon">◈</span><span>Command</span></a><a href="#section-alerts" class="gp-nav-item" data-nav="alerts"><span class="gp-nav-icon">⚠</span><span>Alerts</span></a><a href="#section-timeline" class="gp-nav-item" data-nav="timeline"><span class="gp-nav-icon">◷</span><span>Timeline</span></a><a href="#section-briefings" class="gp-nav-item" data-nav="briefings"><span class="gp-nav-icon">📰</span><span>Briefings</span></a><a href="#section-search" class="gp-nav-item" data-nav="search"><span class="gp-nav-icon">🔎</span><span>Search</span></a><div class="gp-rail-group" aria-hidden="true">Analyze</div><a href="#section-map" class="gp-nav-item" data-nav="map"><span class="gp-nav-icon">🗺️</span><span>Map</span></a><a href="#section-brain" class="gp-nav-item" data-nav="brain"><span class="gp-nav-icon">🧠</span><span>Brain</span></a><a href="#section-intelweb" class="gp-nav-item" data-nav="intelweb"><span class="gp-nav-icon">🕸️</span><span>Web</span></a><a href="#section-markets" class="gp-nav-item" data-nav="markets"><span class="gp-nav-icon">📈</span><span>Markets</span></a><div class="gp-rail-group" aria-hidden="true">System</div><a href="#section-status" class="gp-nav-item" data-nav="status"><span class="gp-nav-icon">📡</span><span>Sources</span></a><a href="#section-settings" class="gp-nav-item" data-nav="settings"><span class="gp-nav-icon">⚙️</span><span>Settings</span></a><div class="gp-rail-foot">Near-live open data</div></nav>
       <main id="main" class="gp-app-main">
       <section class="gp-section" id="section-dashboard" data-section="dashboard"><div class="gp-section-header"><h2 class="gp-section-title"><span>◈</span> Command Center</h2><div class="gp-header-meta" id="dashboardUpdated"></div></div><div class="gp-section-body" id="dashboardBody"><div class="gp-state"><div class="gp-spinner"></div><section id="trackA-center" class="ta-center" aria-label="Command Center (Track A)" data-fixtures="data/gui-fixtures.json">
-  <div class="ta-statusbar" role="status" aria-label="System status bar">
-    <span class="ta-pill"><span class="ta-dot op" aria-hidden="true"></span><span data-ta="opstate">OPERATIONAL</span></span>
-    <span class="ta-mono" data-ta="clock" title="UTC time">--:--:-- UTC</span>
-    <span class="ta-sub">Refresh <span class="ta-mono" data-ta="countdown">05:00</span></span>
-    <span class="ta-sub">Uptime <span class="ta-mono" data-ta="uptime">—</span></span>
-    <span class="ta-sub">Tasks <span class="ta-mono" data-ta="tasks">57 active</span></span>
-    <span class="ta-sub" data-ta="src">58/64 sources</span>
+  <div class="ta-cc-head">
+    <span class="ta-cc-title"><span aria-hidden="true">🌐</span> Global Situation</span>
+    <span class="ta-cc-sub">Key indicators across all monitored domains</span>
   </div>
-  <h3>Your Readiness</h3>
-  <div class="ta-grid"><div class="ta-readiness" data-ta="readiness" role="list" aria-label="Readiness checklist"></div></div>
-  <h3>Threats <span class="ta-sub" data-ta="threatsub"></span></h3>
-  <div class="ta-threats" data-ta="threats"></div>
-  <div class="ta-tension-head"><span class="ta-tension-score ta-mono" data-ta="tension">41</span><span class="ta-badge ta-sev-watch" data-ta="tlevel">WATCH</span><span class="ta-sub" data-ta="tdelta">Δ -1</span></div>
-  <div class="ta-drivers" data-ta="drivers"></div>
-  <h3>Signals</h3>
-  <div class="ta-signals" data-ta="signals" role="list"></div>
-  <h3>Feed Freshness</h3>
-  <div class="ta-fresh" data-ta="fresh"></div>
-  <h3>Market Signals</h3>
-  <div class="ta-market" data-ta="market"><span class="ta-badge ta-sev-info">DELAYED</span><span data-ta="marketext">26 indicators · Yahoo Finance 1m</span></div>
+  <div class="ta-tensionline" role="status" aria-label="Tension summary">
+    <span class="ta-pill ta-tensionpill">TENSION&nbsp;<b class="ta-mono" data-ta="tension">41</b>&nbsp;(<span data-ta="tdelta">-1</span>)</span>
+    <span class="ta-sub">◦ Last updated: <span data-ta="updated">2h ago</span></span>
+    <span class="ta-fail"><span class="ta-dot amber" aria-hidden="true"></span><b data-ta="failing">6 sources failing</b></span>
+  </div>
+  <div class="ta-tiles6" data-ta="tiles" role="list" aria-label="Key indicators"></div>
+  <div class="ta-row2">
+    <div class="ta-card" role="listitem" tabindex="0" aria-label="Tension index">
+      <div class="ta-cardh">TENSION INDEX</div>
+      <div class="ta-big ta-mono"><span data-ta="tindex">41</span> (<span data-ta="tindexd">-1</span>)</div>
+      <div class="ta-segbar" data-ta="segbar" role="img" aria-label="Tension index segmented bar"></div>
+    </div>
+    <div class="ta-card" role="listitem" tabindex="0" aria-label="Sources online">
+      <div class="ta-cardh">SOURCES ONLINE</div>
+      <div class="ta-big ta-mono"><span data-ta="online">47</span> / <span data-ta="ontotal">69</span></div>
+    </div>
+  </div>
+  <div class="ta-row2">
+    <div class="ta-card" role="listitem" tabindex="0" aria-label="Stale feeds">
+      <div class="ta-cardh">STALE FEEDS</div>
+      <div class="ta-big ta-mono" data-ta="stale">0</div>
+    </div>
+    <div class="ta-card" role="listitem" tabindex="0" aria-label="Market signals">
+      <div class="ta-cardh">MARKET SIGNALS</div>
+      <div class="ta-big ta-mono" data-ta="market">26</div>
+    </div>
+  </div>
+  <div class="ta-card ta-sparkcard" aria-label="Signal trend sparkline">
+    <svg class="ta-spark" data-ta="spark" viewBox="0 0 300 60" preserveAspectRatio="none" role="img" aria-label="Blue signal trend line"></svg>
+  </div>
+  <div class="ta-row2">
+    <div class="ta-card" role="listitem" tabindex="0" aria-label="Signals last 24 hours">
+      <div class="ta-cardh">SIGNALS 24H <span class="ta-hdot info" aria-hidden="true"></span></div>
+      <div class="ta-big ta-mono" data-ta="sig24">80</div>
+      <div class="ta-minibars" data-ta="sigbars" aria-hidden="true"></div>
+    </div>
+    <div class="ta-card" role="listitem" tabindex="0" aria-label="Critical share">
+      <div class="ta-cardh">CRITICAL SHARE <span class="ta-hdot critical" aria-hidden="true"></span></div>
+      <div class="ta-big ta-mono" data-ta="critshare">1%</div>
+      <div class="ta-minibars red" data-ta="critbars" aria-hidden="true"></div>
+    </div>
+  </div>
+  <div class="ta-row2">
+    <div class="ta-card" role="listitem" tabindex="0" aria-label="Average reports per event">
+      <div class="ta-cardh">AVG REPORTS / EVENT <span class="ta-hdot watch" aria-hidden="true"></span></div>
+      <div class="ta-big ta-mono" data-ta="avgreps">1.3</div>
+      <svg class="ta-step" data-ta="stepline" viewBox="0 0 200 36" preserveAspectRatio="none" role="img" aria-label="Average reports step line"></svg>
+    </div>
+    <div class="ta-card" role="listitem" tabindex="0" aria-label="Feed freshness">
+      <div class="ta-cardh">FEED FRESHNESS <span class="ta-hdot healthy" aria-hidden="true"></span></div>
+      <div class="ta-big">Fresh</div>
+      <div class="ta-sub ta-mono" data-ta="freshsub">2H AGO · 47/69 ONLINE</div>
+    </div>
+  </div>
+  <div class="ta-card ta-hlcard">
+    <div class="ta-hlhead"><span class="ta-hlsq" aria-hidden="true"></span><b>Headline Intelligence</b>
+      <span class="ta-live">LIVE · <span data-ta="livecount">2000</span></span>
+      <a class="ta-viewall" href="#section-timeline">View All →</a></div>
+    <div class="ta-hlbody" data-ta="headlines"></div>
+  </div>
   <div class="ta-empty" data-ta="empty" hidden>No fixture data yet — check data/gui-fixtures.json.</div>
 </section>
+
 <div>Loading command overview…</div></div></div></section>
       <div class="gp-workspace-grid gp-workspace-3" role="group" aria-label="Alerts, timeline and briefings workspace">
       <section class="gp-section" id="section-alerts" data-section="alerts"><div class="gp-section-header"><h2 class="gp-section-title"><span>⚠</span> Alerts &amp; Priority Feed</h2></div><div class="gp-section-body" id="alertsBody"><div class="gp-state"><div class="gp-spinner"></div><div>Loading alert queue…</div></div></div></section>
@@ -78,7 +123,12 @@
 <div>Loading event timeline…</div></div></div></section>
       <section class="gp-section" id="section-briefings" data-section="briefings"><div class="gp-section-header"><h2 class="gp-section-title"><span>📰</span> Intelligence Briefings</h2><div class="gp-header-meta" id="briefingsUpdated"></div></div><div class="gp-section-body" id="briefingsBody"><div class="gp-state"><div class="gp-spinner"></div><div>Loading intelligence brief…</div></div></div></section>
       </div>
-      <section class="gp-section" id="section-search" data-section="search"><div class="gp-section-header"><h2 class="gp-section-title"><span>🔎</span> Universal Search</h2><div class="gp-header-meta" id="searchUpdated"></div></div><div class="gp-section-body" id="viewsBody"><div class="gp-state"><div>Loading saved views…</div></div></div><div class="gp-section-body" id="searchBody"><div class="gp-state"><div class="gp-spinner"></div><section class="cg-wrap" id="section-cgraph" data-section="cgraph" aria-label="Network graph">
+      <section class="gp-section" id="section-search" data-section="search"><div class="gp-section-header"><h2 class="gp-section-title"><span>🔎</span> Universal Search</h2><div class="gp-header-meta" id="searchUpdated"></div></div><div class="gp-section-body" id="viewsBody"><div class="gp-state"><div>Loading saved views…</div></div></div><div class="gp-section-body" id="searchBody"><div class="gp-state"><div class="gp-spinner"></div><!-- TRACK-C / GUI-3 — Network Graph section. Self-contained. Owner: builder C. -->
+<!-- INTEGRATION: paste this <section> into index.html SEARCH tab body (#searchBody), add -->
+<!-- <link rel="stylesheet" href="css/track-c.css"> in <head>, and -->
+<!-- <script type="module">import { initCgraph } from './js/modules/cgraph.js'; initCgraph();</script> -->
+<!-- Data: fetch('data/gui-fixtures.json') (copy of ~/aegis-gui/fixtures.json). No live calls. -->
+<section class="cg-wrap" id="section-cgraph" data-section="cgraph" aria-label="Network graph">
   <div class="cg-strip">
     <h2>Global threat monitoring &amp; analysis</h2>
     <div class="cg-tabs" role="tablist" aria-label="Views">
@@ -86,7 +136,8 @@
       <a class="cg-tab" role="tab" aria-selected="true" href="#section-search">SEARCH</a>
     </div>
   </div>
-  <p class="cg-sub">Source-backed details. Every node and card traces to a fixture outlet.</p>
+  <p class="cg-sub"><b>Select a node to inspect its source-backed details.</b></p>
+  <p class="cg-sub">Full 3D relationship view loads below on demand; the embedded frame stays lazy for mobile performance.</p>
   <div class="cg-row">
     <button class="cg-btn" id="cgFiltersBtn" aria-expanded="false" aria-controls="cgDrawer">OPEN FILTERS</button>
   </div>
@@ -99,49 +150,66 @@
     <input type="range" id="cgMinRep" min="0" max="5" step="1" value="0">
   </div>
   <div class="cg-pills" id="cgPills" role="group" aria-label="Network activity window">
+    <span class="cg-pills-label" id="cgPillsLabel">NETWORK ACTIVITY</span>
     <button class="cg-pill" data-win="ALL" aria-pressed="true">ALL</button>
     <button class="cg-pill" data-win="24H" aria-pressed="false">24H</button>
     <button class="cg-pill" data-win="7D" aria-pressed="false">7D</button>
     <button class="cg-pill" data-win="30D" aria-pressed="false">30D</button>
     <button class="cg-pill" data-win="90D" aria-pressed="false">90D</button>
   </div>
+  <div class="cg-cap">All available source dates</div>
   <div class="cg-status" id="cgStatus" role="status">Loading fixture…</div>
   <div class="cg-frame" id="cgFrame">
     <canvas id="cgCanvas" aria-label="Story network graph (lazy canvas)"></canvas>
     <div id="cgSvgFallback" hidden></div>
+    <div class="cg-nodepills" id="cgNodePills" aria-label="Major nodes"></div>
     <span class="cg-hint" id="cgHint">scroll to load • drag to pan • pinch to zoom</span>
   </div>
   <div class="cg-cards" id="cgCards" aria-live="polite"></div>
   <noscript><p class="cg-sub">Network graph needs JavaScript; story list unavailable without it.</p></noscript>
 </section>
+
 <div>Loading search index…</div></div></div></section>
       <section class="gp-section" id="section-overview" data-section="overview"><div class="gp-section-header"><h2 class="gp-section-title"><span>◉</span> Global Situation Overview</h2></div><div class="gp-section-body" id="overviewBody"><div class="gp-state"><div class="gp-spinner"></div><div>Loading current signal…</div></div></div></section>
       <section class="gp-section" id="section-breaking" data-section="breaking"><div class="gp-section-header"><h2 class="gp-section-title"><span>⚡</span> Breaking / Latest Reporting</h2></div><div class="gp-section-body" id="breakingBody"><div class="gp-state"><div class="gp-spinner"></div><div>Loading reporting…</div></div></div></section>
       <section class="gp-section" id="section-conflicts" data-section="conflicts"><div class="gp-section-header"><h2 class="gp-section-title"><span>⚔️</span> Active Conflict Watch</h2></div><div class="gp-section-body" id="conflictsBody"><div class="gp-state"><div class="gp-spinner"></div><div>Loading conflict signals…</div></div></div></section>
       <section class="gp-section" id="section-brain" data-section="brain"><div class="gp-section-header"><h2 class="gp-section-title"><span>🧠</span> Intelligence Brain</h2><div class="gp-header-meta" id="brainUpdated"></div></div><div class="gp-section-body" id="brainBody"><div class="gp-state"><div class="gp-spinner"></div><div>Loading brain…</div></div></div></section>
       <section class="gp-section" id="section-intelweb" data-section="intelweb"><div class="gp-section-header"><h2 class="gp-section-title"><span>🕸️</span> Intelligence Web</h2><div class="gp-header-meta" id="intelwebUpdated"></div></div><div class="gp-section-body"><div id="intelwebBody"><div class="gp-state"><div class="gp-spinner"></div><div>Loading relationship web…</div></div></div></div><div class="gp-section-body" style="padding:0"><div class="gp-intelweb-shell" data-state="loading"><div class="gp-intelweb-shell-skeleton" aria-hidden="true">Loading relationship web…</div><iframe class="gp-intelweb-frame" src="intelligence-web.html?v=20260909-bootfix1" title="Aegis Nexus Intelligence Web" loading="lazy"></iframe></div></div></section>
-      <section class="gp-section" id="section-map" data-section="map" aria-label="Global situation map"><div class="gp-section-header"><h2 class="gp-section-title"><span aria-hidden="true">🗺️</span> Global Situation Map</h2><div class="gp-header-meta gp-nums" id="mapUpdated" role="status"></div><div class="gp-map-tools" role="group" aria-label="Quick layer filter"><button class="gp-btn" data-layer="all" type="button" aria-pressed="true">All</button><button class="gp-btn" data-layer="conflict" type="button" aria-pressed="false"><span class="gp-map-layer-dot" style="background:#ff405f"></span>Conflict</button><button class="gp-btn" data-layer="hazard" type="button" aria-pressed="false"><span class="gp-map-layer-dot" style="background:#ffd34d"></span>Hazards</button><button class="gp-btn" data-layer="strategic" type="button" aria-pressed="false"><span class="gp-map-layer-dot" style="background:#4d9aff"></span>Strategic</button><button class="gp-btn" data-layer="cartel" type="button" aria-pressed="false"><span class="gp-map-layer-dot" style="background:#ff8a35"></span>Cartel/Crime</button><button class="gp-btn" data-layer="osint" type="button" aria-pressed="false"><span class="gp-map-layer-dot" style="background:#b08cff"></span>OSINT</button><a class="gp-btn" href="gods-eye.html">◉ Gods-Eye Lite</a></div></div><div class="gp-section-body"><div id="mapOpsBody"><div class="gp-state"><div class="gp-spinner" aria-hidden="true"></div><div>Loading map operations…</div></div></div></div><div class="gp-section-body ember-map-frame" style="padding:0"><div id="mapContainer" style="height:420px;width:100%;background:var(--bg-elevated)" role="application" aria-label="Global signals map. Use the Layers panel and operations list for keyboard access."></div><div class="ember-legend" aria-label="Map layer key"><span><i style="background:#ff405f;color:#ff405f"></i>Conflict</span><span><i style="background:#ffd34d;color:#ffd34d"></i>Hazards</span><span><i style="background:#4d9aff;color:#4d9aff"></i>Strategic</span><span><i style="background:#ff8a35;color:#ff8a35"></i>Cartel/Crime</span><span><i style="background:#b08cff;color:#b08cff"></i>OSINT</span><span class="ember-legend-note">Live counts in Layers panel</span></div><div id="mapSidePanel" class="gp-card" style="display:none;margin:12px;border-radius:0 0 var(--radius) var(--radius)" role="complementary" <section id="trackA-map" class="ta-map" aria-label="Global Map (Track A)" data-fixtures="data/gui-fixtures.json">
-  <h3>Global Map <span class="ta-sub" data-tm="range">24H</span></h3>
+      <section class="gp-section" id="section-map" data-section="map" aria-label="Global situation map"><div class="gp-section-header"><h2 class="gp-section-title"><span aria-hidden="true">🗺️</span> Global Situation Map</h2><div class="gp-header-meta gp-nums" id="mapUpdated" role="status"></div><div class="gp-map-tools" role="group" aria-label="Quick layer filter"><button class="gp-btn" data-layer="all" type="button" aria-pressed="true">All</button><button class="gp-btn" data-layer="conflict" type="button" aria-pressed="false"><span class="gp-map-layer-dot" style="background:#ff405f"></span>Conflict</button><button class="gp-btn" data-layer="hazard" type="button" aria-pressed="false"><span class="gp-map-layer-dot" style="background:#ffd34d"></span>Hazards</button><button class="gp-btn" data-layer="strategic" type="button" aria-pressed="false"><span class="gp-map-layer-dot" style="background:#4d9aff"></span>Strategic</button><button class="gp-btn" data-layer="cartel" type="button" aria-pressed="false"><span class="gp-map-layer-dot" style="background:#ff8a35"></span>Cartel/Crime</button><button class="gp-btn" data-layer="osint" type="button" aria-pressed="false"><span class="gp-map-layer-dot" style="background:#b08cff"></span>OSINT</button><a class="gp-btn" href="gods-eye.html">◉ Gods-Eye Lite</a></div></div><div class="gp-section-body"><div id="mapOpsBody"><div class="gp-state"><div class="gp-spinner" aria-hidden="true"></div><div>Loading map operations…</div></div></div></div><div class="gp-section-body ember-map-frame" style="padding:0"><div id="mapContainer" style="height:420px;width:100%;background:var(--bg-elevated)" role="application" aria-label="Global signals map. Use the Layers panel and operations list for keyboard access."></div><div class="ember-legend" aria-label="Map layer key"><span><i style="background:#ff405f;color:#ff405f"></i>Conflict</span><span><i style="background:#ffd34d;color:#ffd34d"></i>Hazards</span><span><i style="background:#4d9aff;color:#4d9aff"></i>Strategic</span><span><i style="background:#ff8a35;color:#ff8a35"></i>Cartel/Crime</span><span><i style="background:#b08cff;color:#b08cff"></i>OSINT</span><span class="ember-legend-note">Live counts in Layers panel</span></div><div id="mapSidePanel" class="gp-card" style="display:none;margin:12px;border-radius:0 0 var(--radius) var(--radius)" role="complementary" aria-label="Selected map signal"></div>
+<section id="trackA-map" class="ta-map" aria-label="Global Map (Track A)" data-fixtures="data/gui-fixtures.json">
+  <div class="ta-maphead"><span class="ta-map-title"><span aria-hidden="true">🌐</span> Global Map</span>
+    <a class="ta-viewall" href="#section-map">View Full Map →</a></div>
   <div class="ta-pills" role="tablist" aria-label="Time window" data-tm="pills">
     <button class="ta-pillbtn" role="tab" aria-selected="true" aria-pressed="true" data-range="24H" type="button">24H</button>
     <button class="ta-pillbtn" role="tab" aria-selected="false" aria-pressed="false" data-range="7D" type="button">7D</button>
     <button class="ta-pillbtn" role="tab" aria-selected="false" aria-pressed="false" data-range="30D" type="button">30D</button>
   </div>
+  <div class="ta-sub" data-tm="winsub">All Domains · 24H · 0 of 80 signals · dark operational basemap</div>
+  <div class="ta-emptynote" data-tm="emptynote" role="note">No dated signals in this window — try 7D/30D. No dated signals in 24H window.</div>
+  <div class="ta-basemap" role="img" aria-label="Dark operational basemap placeholder"></div>
   <div class="ta-chips" data-tm="chips" aria-label="Region chips"></div>
-  <h3>Priority Regions</h3>
+  <div class="ta-legend" aria-label="Map legend">
+    <span><i class="ta-ldot critical" aria-hidden="true"></i>Critical</span>
+    <span><i class="ta-ldot elevated" aria-hidden="true"></i>Elevated</span>
+    <span><i class="ta-ldot notable" aria-hidden="true"></i>Notable</span>
+    <span><i class="ta-ldot monitoring" aria-hidden="true"></i>Monitoring</span>
+  </div>
+  <div class="ta-maphead"><span class="ta-map-title"><span aria-hidden="true">🎯</span> Priority Regions</span>
+    <a class="ta-viewall" href="#section-map">View All →</a></div>
   <div style="overflow-x:auto"><table class="ta-table" data-tm="ptable" aria-label="Priority regions">
-    <thead><tr><th scope="col">Region</th><th scope="col">Score</th><th scope="col">Severity</th><th scope="col">Events</th></tr></thead>
-    <tbody data-tm="pbody"><tr><td colspan="4">Loading…</td></tr></tbody>
+    <thead><tr><th scope="col">#</th><th scope="col">Region</th><th scope="col">Activity</th><th scope="col">Impact</th><th scope="col">Trend</th></tr></thead>
+    <tbody data-tm="pbody"><tr><td colspan="5">Loading…</td></tr></tbody>
   </table></div>
   <div class="ta-tiles2">
     <div class="ta-tile" role="listitem" tabindex="0" aria-label="Active conflicts"><div class="v ta-mono" data-tm="conflicts">31</div><div class="l">Active conflicts</div></div>
     <div class="ta-tile" role="listitem" tabindex="0" aria-label="Monitored regions"><div class="v ta-mono" data-tm="regions">9</div><div class="l">Monitored regions</div></div>
   </div>
-  <h3>What Changed (24H)</h3>
+  <div class="ta-maphead"><span class="ta-map-title"><span aria-hidden="true">⚪</span> What Changed</span>
+    <a class="ta-viewall" href="#section-map">View All →</a></div>
   <ul class="ta-changed" data-tm="changed"></ul>
   <div class="ta-empty" data-tm="empty" hidden>No map data yet — check data/gui-fixtures.json.</div>
 </section>
-aria-label="Selected map signal"></div></div></section>
+
       <section class="gp-section" id="section-markets" data-section="markets"><div class="gp-section-header"><h2 class="gp-section-title"><span>📈</span> Market Pulse</h2><span class="gp-badge delayed">DELAYED</span></div><div class="gp-section-body" id="marketsBody"><div class="gp-state"><div class="gp-spinner"></div><div>Loading market pulse…</div></div></div></section>
       <section class="gp-section" id="section-status" data-section="status"><div class="gp-section-header"><h2 class="gp-section-title"><span>📡</span> Sources &amp; System Health</h2><div class="gp-header-meta" id="statusUpdated"></div></div><div class="gp-section-body" id="statusBody"><div class="gp-state"><div>Waiting for health data…</div></div></div></section>
       <section class="gp-section" id="section-settings" data-section="settings"><div class="gp-section-header"><h2 class="gp-section-title"><span>⚙️</span> Settings & Preferences</h2></div><div class="gp-section-body" id="settingsBody"><div class="gp-state"><div>Loading settings…</div></div></div></section>
