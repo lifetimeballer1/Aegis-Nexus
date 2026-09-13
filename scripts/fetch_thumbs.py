@@ -31,6 +31,7 @@ MAX_FILE = 400 * 1024
 MAX_HTML = 300 * 1024
 WORKERS = 6
 LIVE_TOP_N = 40
+MAX_NEW_PER_RUN = 20
 
 CATS = ["geopolitical", "economic", "indo-pacific", "domestic", "general",
         "generic", "regional", "cartel", "international", "news",
@@ -245,6 +246,15 @@ def fetch_one(item):
 def main():
     os.makedirs(THUMB_DIR, exist_ok=True)
     write_fallbacks()
+    # Incremental mode: preserve existing manifest so re-runs only fetch NEW slugs.
+    existing_map = {}
+    try:
+        with open(os.path.join(THUMB_DIR, "manifest.json"), encoding="utf-8") as _mf:
+            _em = (json.load(_mf).get("map") or {})
+            if isinstance(_em, dict):
+                existing_map = _em
+    except Exception:
+        existing_map = {}
     live = collect_live()
     jobs, seen = [], set()
     for title, cat in collect_stories():
@@ -261,11 +271,27 @@ def main():
             continue
         seen.add(slug)
         jobs.append((title, cat, url))
+    # Incremental: skip slugs already manifested with file on disk; newest (live) first; cap per-run.
+    _new_jobs, _live_urls = [], set(_u for _t, _c, _u in live)
+    for _t, _c, _u in jobs:
+        _s = slugify(_t)
+        _f = existing_map.get(_s)
+        if _f and os.path.isfile(os.path.join(THUMB_DIR, _f)):
+            continue
+        _new_jobs.append((_t, _c, _u))
+    _new_jobs.sort(key=lambda _j: (0 if _j[2] in _live_urls else 1))
+    jobs = _new_jobs[:MAX_NEW_PER_RUN]
     results = []
     if jobs:
         with ThreadPoolExecutor(max_workers=WORKERS) as pool:
             results = list(pool.map(fetch_one, jobs))
-    mapping, real, total_bytes = {}, 0, 0
+    mapping = dict(existing_map)
+    try:
+        total_bytes = sum(os.path.getsize(os.path.join(THUMB_DIR, _f)) for _f in mapping.values() if os.path.isfile(os.path.join(THUMB_DIR, _f)))
+    except Exception:
+        total_bytes = 0
+    real = sum(1 for _f in mapping.values() if os.path.isfile(os.path.join(THUMB_DIR, _f)))
+    _new_real = 0
     skips = {"no-image": 0, "dl-fail": 0, "over-cap": 0}
     for title, cat, payload, err in results:
         slug = slugify(title)
@@ -285,8 +311,10 @@ def main():
             continue
         mapping[slug] = fname
         real += 1
+        _new_real += 1
         total_bytes += len(data)
-    manifest = {"_meta": {"real": real, "stories": len(seen),
+    _all_stories = len(set(list(seen) + list(existing_map.keys())))
+    manifest = {"_meta": {"real": real, "stories": _all_stories, "newReal": _new_real,
                           "kbTotal": round(total_bytes / 1024, 1),
                           "note": "slug->file; missing slug = use fallback-<category>.svg"},
                 "map": mapping}

@@ -94,6 +94,15 @@ def write_refresh_manifest():
  manifest={'version':1,'generatedAt':datetime.now(timezone.utc).isoformat().replace('+00:00','Z'),'artifacts':artifacts}
  (DATA/'refresh_manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
  print(f"PASS: refresh manifest artifacts={len(artifacts)}",flush=True)
+def maybe_refresh_thumbs():
+ """Best-effort story thumbnails: NEW slugs only (skip manifested), cap 20/run ~5MB. Never fails refresh."""
+ try:
+  print('=== Story thumbnails (auto, best-effort) ===',flush=True)
+  subprocess.run([sys.executable,'scripts/fetch_thumbs.py'],cwd=ROOT,check=False,timeout=600)
+  print('PASS: story thumbnails (best-effort)',flush=True)
+ except Exception as exc:
+  print(f'WARNING: thumbnail refresh skipped/failed (non-fatal): {exc}',flush=True)
+
 def main():
   started=datetime.now(timezone.utc).isoformat().replace('+00:00','Z')
   try:
@@ -140,6 +149,10 @@ def _run_pipeline(started):
  run('Build dedicated browser map points',sys.executable,'build_map_points.py')
  run('Refresh snapshot failover state from collector telemetry',sys.executable,'build_failover_state.py')
  run('Apply source failover fallbacks (Google News)',sys.executable,'source_failover.py')
+ try:
+  maybe_refresh_thumbs()
+ except Exception as exc:
+  print(f'WARNING: thumbnail hook failed (non-fatal): {exc}',flush=True)
  for name in REQUIRED_ARTIFACTS:
   if not (DATA/name).exists():raise RuntimeError(f'missing required artifact: {name}')
  write_refresh_manifest()
