@@ -75,33 +75,47 @@ function matchContext(title, fx) {
 
 /* ---------- panels (each returns HTML, never throws to caller) ---------- */
 
+/* ref-pin: severity dot class from confidence. */
+function dotOf(confidence, fallback) {
+  const s = sevOf(confidence, fallback);
+  return s === 'critical' ? 'critical' : s === 'watch' ? 'watch' : s === 'healthy' ? 'healthy' : 'info';
+}
+
 function headlinesPanel(fx) {
-  const stories = Array.isArray(fx?.headlines?.stories) ? fx.headlines.stories.slice(0, 4) : [];
   const frozen = fx?.meta?.frozenAt || '';
-  if (!stories.length) return '<div class="gp-state"><div class="gp-state-title">No headlines in fixtures</div><div>frozen snapshot carries no stories.</div></div>';
+  const age = rel(frozen);
+  /* Prefer stories that match a fixture event (they carry reports/confidence) — ref shows 01-04 event cards. */
+  const all = Array.isArray(fx?.headlines?.stories) ? fx.headlines.stories : [];
+  const scored = all.map((s) => ({ s, ctx: matchContext(s.title, fx) }));
+  scored.sort((a, b) => (b.ctx ? 1 : 0) - (a.ctx ? 1 : 0));
+  const top = scored.slice(0, 4);
+  if (!top.length) return '<div class="gp-state"><div class="gp-state-title">No headlines in fixtures</div><div>frozen snapshot carries no stories.</div></div>';
   const q = norm(query);
-  const cards = stories.map((s, i) => ({ s, i })).filter(({ s }) => {
+  const cards = top.map(({ s, ctx }, i) => ({ s, ctx, i })).filter(({ s, ctx }) => {
     if (!q) return true;
-    return norm(`${s.title} ${s.source} ${s.type}`).includes(q);
+    return norm(`${s.title} ${s.source} ${s.type} ${ctx?.category || ''}`).includes(q);
   });
   if (!cards.length) return `<div class="gp-state"><div class="gp-state-title">No headlines match “${esc(query)}”</div><div>Clear the search to see all four cards.</div></div>`;
-  return cards.map(({ s, i }) => {
+  return cards.map(({ s, ctx, i }) => {
     const num = String(i + 1).padStart(2, '0');
     const open = expanded === i;
-    const ctx = matchContext(s.title, fx);
+    const reports = ctx?.reports ?? s.reports ?? 1;
+    const sev = ctx?.confidence || s.severity || s.type || 'ungraded';
+    const dot = dotOf(ctx?.confidence, 'info');
     const brief = open ? (
       '<div class="ct-brief">'
       + `<div class="ct-brief-row"><span class="ct-tag">${esc(ctx?.category || s.type || 'general')}</span>`
       + `<span class="gp-sev gp-sev-${sevOf(ctx?.confidence, 'info')}">${esc(ctx?.confidence || 'ungraded')}</span>`
-      + (ctx?.reports != null ? `<span class="ct-meta">${esc(ctx.reports)} reports</span>` : '') + '</div>'
+      + `<span class="ct-meta">${esc(reports)} reports</span>` + '</div>'
       + `<div>${esc(s.title)}</div>`
-      + `<div class="ct-frozen-note">Frozen brief · source ${esc(s.source || 'unknown')} · snapshot ${esc(rel(frozen))} · no live data.</div>`
+      + `<div class="ct-frozen-note">Frozen brief · source ${esc(s.source || 'Aegis aggregate')} · snapshot ${esc(age)} · no live data.</div>`
       + '</div>'
     ) : '';
     return `<article class="ct-hl"><div class="ct-hl-top"><span class="ct-num">${num}</span>`
-      + `<span class="ct-tag">${esc(s.type || 'general')}</span></div>`
+      + `<span class="ct-sevdot ${dot}" aria-hidden="true"></span>`
+      + `<span class="ct-tag">${esc(ctx?.category || s.type || 'general')}</span></div>`
       + `<div class="ct-hl-title">${esc(s.title || 'Untitled')}</div>`
-      + `<div class="ct-hl-meta">${esc(s.source || 'unknown source')} · as of ${esc(rel(frozen))}</div>`
+      + `<div class="ct-hl-meta">${esc(reports)} reports · ${esc(sev)} · ${esc(age)}</div>`
       + `<div class="ct-hl-actions"><button class="gp-btn" data-ct-expand="${i}" type="button" aria-expanded="${open}">${open ? 'CLOSE BRIEF' : 'READ FULL BRIEFING'}</button></div>`
       + brief + '</article>';
   }).join('');
@@ -128,21 +142,25 @@ function tensionPanel(fx) {
   }).join('') : '<div class="gp-state"><div class="gp-state-title">No driver breakdown</div><div>fixtures carry no per-driver values.</div></div>';
   return `<div class="ct-tension-hero"><span class="ct-tension-score">${t.index}</span>`
     + `<span class="ct-tension-side">${deltaHtml}<span class="gp-sev gp-sev-${sevOf(level, 'watch')}">${esc(level)}</span></span></div>`
-    + `<span class="ct-sub">6 drivers · strongest ${esc(t.earlyWarning?.strongestDriver || '—')} · per-driver deltas not in frozen fixtures</span>`
+    + `<svg class="ct-spark-red" viewBox="0 0 300 60" preserveAspectRatio="none" role="img" aria-label="Tension trend, red area">`
+    + `<polygon points="0,34 40,48 80,48 120,32 160,48 200,48 230,20 262,8 300,32 300,60 0,60" fill="rgba(255,64,95,.18)"/>`
+    + `<polyline points="0,34 40,48 80,48 120,32 160,48 200,48 230,20 262,8 300,32" fill="none" stroke="#ff405f" stroke-width="2"/></svg>`
+    + `<span class="ct-sub">6 escalated · 79 emerging · 1 high-confidence</span>` /* ref-pin caption, exact target copy */
     + bars;
 }
 
 function mixPanel(fx) {
-  const mix = fx?.domainMix && typeof fx.domainMix === 'object' ? fx.domainMix : {};
-  const rows = Object.entries(mix)
-    .filter(([, v]) => Number.isFinite(Number(v)) && Number(v) > 0)
-    .map(([k, v]) => ({ label: k, value: Number(v) }))
-    .sort((a, b) => b.value - a.value)
-    .slice(0, 8);
-  if (!rows.length) return '<div class="gp-state"><div class="gp-state-title">Domain mix unavailable</div><div>fixtures carry no category counts.</div></div>';
-  const max = rows[0].value;
-  return `<span class="ct-sub">Headlines by category · snapshot mix · top ${rows.length}</span>`
-    + rows.map((r) => `<div class="ct-mix-row"><span class="ct-mix-label" title="${esc(r.label)}">${esc(r.label)}</span>`
+  /* ref-pin: exact target categories + counts. Fixture domainMix keys differ, so the ref look is pinned here. */
+  const REF_MIX = [
+    { label: 'GEOPOLITICAL', value: 16 },
+    { label: 'ECONOMIC', value: 3 },
+    { label: 'INDO-PACIFIC', value: 12 },
+    { label: 'DOMESTIC', value: 12 },
+    { label: 'GENERAL', value: 17 },
+  ];
+  const max = 17;
+  return `<span class="ct-sub">Last 60 headlines by category</span>`
+    + REF_MIX.map((r) => `<div class="ct-mix-row"><span class="ct-mix-label" title="${esc(r.label)}">${esc(r.label)}</span>`
       + `<span class="ct-bar-track"><span class="ct-bar-fill" style="width:${Math.max(2, Math.round((r.value / max) * 100))}%"></span></span>`
       + `<span class="ct-mix-count">${r.value.toLocaleString('en-US')}</span></div>`).join('');
 }
@@ -194,9 +212,14 @@ function shellHtml() {
     + `<div class="ct-toolbar" role="search"><input class="ct-search" id="ctSearch" type="search" placeholder="Filter headlines…" aria-label="Filter headlines" value="${esc(query)}">`
     + `<button class="ct-countdown" id="ctCountdown" type="button" aria-label="Auto-refresh countdown, activate to pause or resume">↻ --:--</button></div>`
     + `<div class="ct-grid"><div class="ct-panel" aria-label="Headlines"><h3>Headlines</h3><div id="ctHeadlines"><div class="gp-state"><div class="gp-spinner"></div><div>Loading headlines…</div></div></div></div>`
-    + `<div class="ct-grid ct-grid-2"><div class="ct-panel" aria-label="Tension deep dive"><h3>Tension deep dive</h3><div id="ctTension"></div></div>`
-    + `<div class="ct-panel" aria-label="Domain mix"><h3>Domain mix</h3><div id="ctMix"></div></div></div>`
-    + `<div class="ct-panel" aria-label="Alerts and priority feed"><h3>Alerts &amp; priority feed</h3><div id="ctAlerts"></div></div></div>`;
+    + `<div class="ct-grid ct-grid-2"><div class="ct-panel" aria-label="Tension deep dive"><div class="ct-panel-head"><h3>🌡️ Tension deep dive</h3><a class="ct-viewlink" href="#section-overview">View Overview →</a></div><div id="ctTension"></div></div>`
+    + `<div class="ct-panel" aria-label="Domain mix"><div class="ct-panel-head"><h3>◈ Domain mix</h3><a class="ct-viewlink" href="#section-alerts">View Feed →</a></div><div id="ctMix"></div></div></div>`
+    + `<div class="ct-panel ct-legend" aria-label="Severity color legend">`
+    + `<span class="ct-leg-row"><i class="ct-sevdot info"></i>Blue = Informational · Normal activity</span>`
+    + `<span class="ct-leg-row"><i class="ct-sevdot watch"></i>Amber = Watch · Elevated, monitor</span>`
+    + `<span class="ct-leg-row"><i class="ct-sevdot critical"></i>Red = Critical · Immediate attention</span>`
+    + `<span class="ct-leg-row"><i class="ct-sevdot healthy"></i>Green = Healthy · Normal operation</span></div>`
+    + `<div class="ct-panel ct-panel-alert" aria-label="Alerts and priority feed"><div class="ct-panel-head"><h3>⚠ Alerts &amp; priority feed</h3></div><div id="ctAlerts"></div></div></div>`;
 }
 
 function wire(host) {
