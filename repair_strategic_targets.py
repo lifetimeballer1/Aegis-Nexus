@@ -19,10 +19,12 @@ PATTERNS={
   r'\b(?:impose|imposes|imposed|imposing|expand|expanded|expands|tighten|tightened|tightens)\b[^.;:!?]{0,100}\bsanctions?\b\s+(?:on|against)\s+([^.;:!?]+)',
   r'\bsanctions?\b\s+(?:on|against)\s+([^.;:!?]+)',
   r'\b(?:countermeasures?|retaliatory measures?)\b\s+(?:against|on)\s+([^.;:!?]+)',
+ r'\b(?:flowing|shipped|supplied|routed|smuggled)\b\s+to\s+([^.;:!?]+)',
  ),
  'military_action':(
   r'\b(?:strike|strikes|struck|attack|attacks|attacked|bombed|bombing|military operation)\b\s+(?:on|against|targeting)\s+([^.;:!?]+)',
   r'\b(?:target|targets|targeted|targeting)\b\s+([^.;:!?]+)',
+ r'\b(?:hit|hits|hitting)\b\s+([^.;:!?]+)',
   r'\b(?:deploy|deploys|deployed|deploying)\b\s+(?:troops|forces|ships|aircraft|missiles)?\s*(?:to|toward|into)\s+([^.;:!?]+)',
  ),
  'diplomatic_action':(
@@ -31,7 +33,10 @@ PATTERNS={
   r'\b(?:agreement|accord|treaty)\b\s+(?:with|between)\s+([^.;:!?]+)',
   r'\b(?:support(?:s|ed|ing)?|back(?:s|ed|ing)?|oppose(?:s|d|ing)?|urge(?:s|d|ing)?|recogniz(?:e|es|ed|ing)?)\b\s+(?:for|of|on|against|toward)\s+([^.;:!?]+)',
   r'\b(?:support|backing|opposition|appeal)\b\s+(?:for|to)\s+([^.;:!?]+)',
+ r'\b(?:trial|trials|prosecution|prosecutions|lawsuit|indictment)\b\s+(?:against|of|over)\s+([^.;:!?]+)',
   r'\b[A-Za-z]+-([A-Za-z]+)\s+(?:delimitation\s+)?(?:talks|summit|meetings?|negotiations?)\b',
+ r'\b(?:before|ahead of|prior to)\b\s+(?:the\s+)?([^.;:!?]+?)\s+summit',
+ r'\b([A-Za-z]+-[A-Za-z]+)\b[^.;:!?]{0,100}?\btalks\b',
  ),
  'trade_action':(
   r'\b(?:trade|trades|trading|exports?|imports?)\b\s+(?:with|between|to|from)\s+([^.;:!?]+)',

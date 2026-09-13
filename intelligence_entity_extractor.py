@@ -43,6 +43,9 @@ CANONICAL_ALIASES = {
     "U.S. Department of Justice": ("government_agency", {"u.s. department of justice", "department of justice", "justice department", "doj"}),
     "U.S. Congress": ("government", {"u.s. congress", "congress", "house of representatives", "senate"}),
     "White House": ("government", {"white house"}),
+    "Yemen": ("country", {"yemen", "yemeni", "sanaa", "aden"}),
+    "Houthis": ("armed_group", {"houthis", "houthi", "ansar allah", "ansarallah"}),
+    "Huawei": ("company", {"huawei"}),
     "Federal Reserve": ("financial_institution", {"federal reserve", "fed"}),
     "JPMorgan": ("financial_institution", {"jpmorgan", "jpmorgan chase"}),
 }

@@ -1,0 +1,31 @@
+/* TRACK-E — BRIEFINGS tab. Mobile-first dark command-center. Prefix te-. */
+/* Consumes canonical tokens in css/tokens.css ONLY — no custom properties
+   defined here. Touch targets stay >= 36px. Shared primitives
+   (.gp-btn/.gp-filter/.gp-sev/.gp-state) reused, never restyled. */
+.te-section { min-width: 0; }
+.te-head { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+.te-title { font-size: 13px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--text-secondary); margin: 0; }
+.te-meta { font-size: 10px; color: var(--muted-2); }
+.te-toolbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 10px; }
+.te-search { flex: 1 1 200px; min-width: 0; min-height: 36px; background: var(--bg-elevated); border: 1px solid var(--line); border-radius: 8px; color: var(--text); padding: 8px 10px; font-size: 12px; }
+.te-search::placeholder { color: var(--muted-2); }
+.te-search:focus { outline: 1px solid var(--line-focus); }
+.te-count { font-family: var(--font-mono); font-size: 11px; color: var(--muted); background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; min-height: 36px; white-space: nowrap; }
+.te-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 10px; min-width: 0; }
+.te-card { border: 1px solid var(--line); border-radius: 10px; background: var(--panel-2); padding: 10px; min-width: 0; }
+.te-card-top { display: flex; gap: 10px; align-items: flex-start; }
+.te-thumb { width: 96px; height: 72px; object-fit: cover; border-radius: 8px; border: 1px solid var(--line-strong); flex: none; background: #0d1526; }
+.te-card-main { flex: 1; min-width: 0; }
+.te-card-title { font-size: 13px; font-weight: 700; color: var(--text); margin: 0 0 4px; overflow-wrap: break-word; }
+.te-card-meta { font-size: 10px; color: var(--muted-2); overflow-wrap: break-word; }
+.te-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 6px; }
+.te-tag { font-size: 9px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--blue); background: var(--bg-elevated); border: 1px solid var(--line); border-radius: 6px; padding: 2px 6px; }
+.te-tag.conf-high { color: var(--green); }
+.te-tag.conf-moderate { color: var(--amber); }
+.te-tag.conf-low { color: var(--muted); }
+.te-brief { margin-top: 8px; border-top: 1px dashed var(--line-strong); padding-top: 8px; font-size: 12px; color: var(--text-secondary); overflow-wrap: break-word; }
+.te-brief summary { cursor: pointer; min-height: 36px; display: inline-flex; align-items: center; color: var(--text-secondary); font-weight: 700; }
+.te-brief-body { margin-top: 6px; }
+@media (max-width: 480px) { .te-thumb { width: 64px; height: 48px; } }
+@media (min-width: 900px) { .te-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
+@media (prefers-reduced-motion: reduce) { .te-section * { animation: none !important; transition: none !important; } }

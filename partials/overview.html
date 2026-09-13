@@ -1,0 +1,33 @@
+<!-- TRACK-F — Overview landing partial (static skeleton; js/modules/coverview.js fills data-tf hooks). -->
+<section class="tf-overview" id="coverview" aria-label="Overview" data-testid="overview" data-fixtures="data/gui-fixtures.json">
+  <div class="tf-head">
+    <h2 class="tf-title" data-testid="overview-title"><span aria-hidden="true">◈</span> Overview</h2>
+    <p class="tf-sub">Global posture at a glance — frozen fixtures snapshot, no live dependency.</p>
+  </div>
+  <div class="tf-tiles" role="list" aria-label="Key indicators" data-tf="tiles" data-testid="overview-tiles">
+    <div class="tf-tile" role="listitem"><span class="tf-v" data-testid="tile-active-events">—</span><span class="tf-l">Active events</span></div>
+    <div class="tf-tile" role="listitem"><span class="tf-v" data-testid="tile-high-priority">—</span><span class="tf-l">High priority</span></div>
+    <div class="tf-tile" role="listitem"><span class="tf-v" data-testid="tile-emerging-risks">—</span><span class="tf-l">Emerging risks</span></div>
+    <div class="tf-tile" role="listitem"><span class="tf-v" data-testid="tile-critical-alerts">—</span><span class="tf-l">Critical alerts</span></div>
+    <div class="tf-tile" role="listitem"><span class="tf-v" data-testid="tile-regions">—</span><span class="tf-l">Regions</span></div>
+    <div class="tf-tile" role="listitem"><span class="tf-v" data-testid="tile-sources-online">—</span><span class="tf-l">Sources online</span></div>
+  </div>
+  <div class="tf-tension" role="status" aria-label="Tension summary" data-tf="tension" data-testid="overview-tension">
+    <span class="tf-pill" data-testid="tension-pill">TENSION&nbsp;<b class="tf-mono" data-tf-val="tension">—</b>&nbsp;(<span data-tf-val="tdelta">—</span>)</span>
+    <div class="tf-bar" role="img" aria-label="Tension index bar" data-tf-val="tbar-wrap"><span class="tf-bar-fill" data-tf-val="tbar" style="width:0%"></span></div>
+    <span class="tf-sub" data-tf-val="tdriver">—</span>
+  </div>
+  <div class="tf-hlcard" data-tf="headlines" data-testid="overview-headlines">
+    <div class="tf-hlhead"><span class="tf-cardh">Top headlines</span><a class="tf-viewall" href="#section-briefings">View all →</a></div>
+    <p class="tf-empty" data-tf-val="hl-empty">Loading headlines…</p>
+  </div>
+  <nav class="tf-nav" aria-label="Quick navigation" data-testid="overview-nav">
+    <a class="tf-navcard" href="#section-dashboard"><span aria-hidden="true">◈</span><b>Command</b><i>Live posture &amp; signals</i></a>
+    <a class="tf-navcard" href="#section-timeline"><span aria-hidden="true">◷</span><b>Timeline</b><i>Event flow &amp; tension</i></a>
+    <a class="tf-navcard" href="#section-search"><span aria-hidden="true">🔎</span><b>Search</b><i>Query the archive</i></a>
+    <a class="tf-navcard" href="#section-map"><span aria-hidden="true">🗺️</span><b>Map</b><i>Regional picture</i></a>
+    <a class="tf-navcard" href="#section-alerts"><span aria-hidden="true">⚠</span><b>Alerts</b><i>Critical &amp; watch</i></a>
+    <a class="tf-navcard" href="#section-briefings"><span aria-hidden="true">📰</span><b>Briefings</b><i>Stories &amp; analysis</i></a>
+  </nav>
+  <p class="tf-fresh" data-tf="fresh" data-testid="overview-freshness">Feed status: loading…</p>
+</section>

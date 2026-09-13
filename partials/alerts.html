@@ -1,0 +1,15 @@
+<!-- TRACK-D / ALERTS tab inner body. Owner: builder D. See INTEGRATION-D.md. -->
+<div class="td-wrap" data-testid="td-root" data-fixtures="data/gui-fixtures.json">
+  <div class="td-statusbar">
+    <span class="td-updated">Snapshot <b data-td="updated" data-testid="td-updated">…</b></span>
+    <button class="td-retry" type="button" data-td="retry" data-testid="td-retry">Retry</button>
+    <span class="td-status" role="status" aria-live="polite" data-td="status" data-testid="td-status">Loading alerts…</span>
+  </div>
+  <div class="td-pills" role="group" aria-label="Severity filter" data-testid="td-filters">
+    <button class="td-pillbtn" type="button" data-td-filter="ALL" data-testid="td-filter-all" aria-pressed="true">All</button>
+    <button class="td-pillbtn" type="button" data-td-filter="CRITICAL" data-testid="td-filter-critical" aria-pressed="false">Critical</button>
+    <button class="td-pillbtn" type="button" data-td-filter="WATCH" data-testid="td-filter-watch" aria-pressed="false">Watch</button>
+    <button class="td-pillbtn" type="button" data-td-filter="INFO" data-testid="td-filter-info" aria-pressed="false">Info</button>
+  </div>
+  <div class="td-list" role="list" aria-label="Priority alerts" data-td="list" data-testid="td-list"></div>
+</div>

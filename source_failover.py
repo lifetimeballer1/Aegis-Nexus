@@ -29,7 +29,7 @@ FALLBACKS={'GDELT Climate & Disaster Watch':'climate disaster flood wildfire dro
 # Fallbacks keyed to CURRENT canonical catalog/collector names so the loop below
 # actually triggers for presently observed failures (legacy FALLBACKS keys above
 # predate the catalog and would otherwise never match a live failedSource).
-CURRENT_FALLBACKS={'SOUTHCOM Official Reporting — GDELT Mirror':'SOUTHCOM US Southern Command military Caribbean','GDELT — Western Hemisphere Counter-Cartel':'cartel narco-terrorism Caribbean Eastern Pacific','NPR News':'NPR news headlines'}
+CURRENT_FALLBACKS={'SOUTHCOM Official Reporting — GDELT Mirror':'SOUTHCOM US Southern Command military Caribbean','GDELT — Western Hemisphere Counter-Cartel':'cartel narco-terrorism Caribbean Eastern Pacific','NPR News':'NPR news headlines','NPR National Security':'NPR national security news','Fox News Politics':'Fox News politics','BBC World':'BBC world news','BBC Middle East':'BBC Middle East news','BBC Africa':'BBC Africa news','BBC Asia':'BBC Asia news','BBC Europe':'BBC Europe news','Guardian World':'Guardian world news','Guardian US':'Guardian US news','Al Jazeera':'Al Jazeera world news','DW World':'Deutsche Welle world news','RFI World':'RFI France world news','Crisis Group':'International Crisis Group conflict report','GDACS Global Disaster Alerts':'GDACS disaster alert earthquake flood','X @NASA':'NASA announcement','X @WhiteHouse':'White House official statement','X @POTUS':'US president White House statement','X @NATO':'NATO official statement','X @UN':'United Nations official statement'}
 # NPR's topic feeds intermittently answer HTTP 404 on valid IDs (verified live
 # 2026-09-09: the feed recovers on its own). The collector retry covers the
 # blink; this fallback keeps story discovery flowing if NPR stays down long
@@ -73,8 +73,11 @@ def merge_stories(existing, additions):
 def main():
  data=json.loads(SNAP.read_text(encoding='utf-8')) if SNAP.exists() else {};sources=json.loads(SOURCES.read_text(encoding='utf-8')) if SOURCES.exists() else {};live=json.loads(STATUS.read_text(encoding='utf-8')) if STATUS.exists() else {};failed_sources={str(x.get('source') if isinstance(x,dict) else x) for x in (live.get('failedSources') or [])};feeds=sources.get('feeds',[]);total=int(live.get('feedsChecked') or len(feeds));stories=list(data.get('stories',[]));existing={story_key(x) for x in stories if isinstance(x,dict)};additions=[];replacements=[]
  for name,query in list(FALLBACKS.items())+[(k,v) for k,v in CURRENT_FALLBACKS.items() if k not in FALLBACKS]:
-  if failed_sources and name not in failed_sources:continue
-  if not failed_sources and not any(name==f.get('name') for f in feeds):continue
+  if name in CURRENT_FALLBACKS:
+   if name not in failed_sources:continue
+  else:
+   if failed_sources and name not in failed_sources:continue
+   if not failed_sources and not any(name==f.get('name') for f in feeds):continue
   try:
    rows=fetch(query);added=0
    for row in rows:

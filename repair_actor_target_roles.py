@@ -18,12 +18,16 @@ PATTERNS={
  'military_action':(
   r'\b(?:strike|strikes|struck|attack|attacks|attacked|bombed|bombing|target|targets|targeted|targeting)\b(?:\s+(?:on|against))?\s+([^.;,:!?]+)',
   r'\b(?:military|armed)\s+(?:operation|action|campaign)\b[^.;,:!?]{0,100}\b(?:against|targeting|on)\s+([^.;,:!?]+)',
+ r'\b(?:hit|hits|hitting)\b\s+([^.;,:!?]+)',
  ),
  'diplomatic_action':(
   r'\b[A-Za-z]+-([A-Za-z]+)\s+(?:delimitation\s+)?(?:talks|summit|meetings?|negotiations?)\b',
+ r'\b(?:before|ahead of|prior to)\b\s+(?:the\s+)?([^.;,:!?]+?)\s+summit',
+ r'\b([A-Za-z]+-[A-Za-z]+)\b[^.;,:!?]{0,100}?\btalks\b',
   r'\b(?:talks?|negotiat(?:e|es|ed|ing)|meet(?:s|ing)?|summit)\b\s+(?:with|between)\s+([^.;,:!?]+)',
   r'\b(?:support(?:s|ed|ing)?|back(?:s|ed|ing)?|oppose(?:s|d|ing)?|urge(?:s|d|ing)?|appeal(?:s|ed|ing)?)\b\s+(?:for|to|of|against|toward)\s+([^.;,:!?]+)',
   r'\b(?:agreement|accord|treaty)\b\s+(?:with|between)\s+([^.;,:!?]+)',
+ r'\b(?:trial|trials|prosecution|prosecutions|lawsuit|indictment)\b\s+(?:against|of|over)\s+([^.;,:!?]+)',
  ),
  'trade_action':(
   r'\b(?:trade|trades|trading|exports?|imports?)\b\s+(?:with|between)\s+([^.;,:!?]+)',

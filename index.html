@@ -29,7 +29,9 @@
   <link rel="stylesheet" href="css/intelweb-embed.css">
   <link rel="stylesheet" href="css/track-b.css">
   <link rel="stylesheet" href="css/track-c.css">
-  <link rel="stylesheet" href="css/command-center.css">
+  <link rel="stylesheet" href="css/track-d.css">
+  <link rel="stylesheet" href="css/track-e.css">
+  <link rel="stylesheet" href="css/track-f.css">
   <link rel="stylesheet" href="global_pulse_tokens.css?v=1">
   <style>
     .gp-brain-summary{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}.gp-brain-chip{padding:7px 9px;border:1px solid var(--line);border-radius:9px;background:var(--panel2);font-size:10px}.gp-brain-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.gp-brain-node{cursor:pointer;text-align:left;width:100%}.gp-brain-node.selected{outline:1px solid var(--blue)}.gp-brain-details{margin-top:10px}.gp-more{width:100%;margin-top:10px}.gp-hidden{display:none!important}.gp-map-tools{display:flex;gap:6px;flex-wrap:wrap}.gp-map-tools .gp-map-layer-dot{display:inline-block;margin-right:5px;vertical-align:baseline}.gp-intelweb-frame{display:block;width:100%;max-width:100%;min-width:0;height:900px;border:1px solid var(--line);border-radius:12px;background:#0a1826;box-sizing:border-box}.marker-cluster-small,.marker-cluster-medium,.marker-cluster-large{background-clip:padding-box;border-radius:50%}.marker-cluster-small div,.marker-cluster-medium div,.marker-cluster-large div{font-weight:800}.marker-cluster{cursor:pointer}@media(max-width:720px){.gp-intelweb-frame{height:620px}}@media(max-width:520px){.gp-brain-grid{grid-template-columns:1fr}}
@@ -117,12 +119,27 @@
 
 <div>Loading command overview…</div></div></div></section>
       <div class="gp-workspace-grid gp-workspace-3" role="group" aria-label="Alerts, timeline and briefings workspace">
-      <section class="gp-section" id="section-alerts" data-section="alerts"><div class="gp-section-header"><h2 class="gp-section-title"><span>⚠</span> Alerts &amp; Priority Feed</h2></div><div class="gp-section-body" id="alertsBody"><div class="gp-state"><div class="gp-spinner"></div><div>Loading alert queue…</div></div></div></section>
+      <section class="gp-section" id="section-alerts" data-section="alerts"><div class="gp-section-header"><h2 class="gp-section-title"><span>⚠</span> Alerts &amp; Priority Feed</h2></div><div class="gp-section-body" id="alertsBody"><div class="td-wrap" data-testid="td-root" data-fixtures="data/gui-fixtures.json">
+  <div class="td-statusbar">
+    <span class="td-updated">Snapshot <b data-td="updated" data-testid="td-updated">…</b></span>
+    <button class="td-retry" type="button" data-td="retry" data-testid="td-retry">Retry</button>
+    <span class="td-status" role="status" aria-live="polite" data-td="status" data-testid="td-status">Loading alerts…</span>
+  </div>
+  <div class="td-pills" role="group" aria-label="Severity filter" data-testid="td-filters">
+    <button class="td-pillbtn" type="button" data-td-filter="ALL" data-testid="td-filter-all" aria-pressed="true">All</button>
+    <button class="td-pillbtn" type="button" data-td-filter="CRITICAL" data-testid="td-filter-critical" aria-pressed="false">Critical</button>
+    <button class="td-pillbtn" type="button" data-td-filter="WATCH" data-testid="td-filter-watch" aria-pressed="false">Watch</button>
+    <button class="td-pillbtn" type="button" data-td-filter="INFO" data-testid="td-filter-info" aria-pressed="false">Info</button>
+  </div>
+  <div class="td-list" role="list" aria-label="Priority alerts" data-td="list" data-testid="td-list"></div>
+</div></div></section>
       <section class="gp-section" id="section-timeline" data-section="timeline"><div class="gp-section-header"><h2 class="gp-section-title"><span>◷</span> Event Timeline</h2></div><div class="gp-section-body" id="timelineBody"><div class="gp-state"><div class="gp-spinner"></div><div id="ctimelineBody" class="ct-section" role="region" aria-label="Command timeline">
   <div class="gp-state"><div class="gp-spinner"></div><div>Loading command timeline…</div></div>
 </div>
 <div>Loading event timeline…</div></div></div></section>
-      <section class="gp-section" id="section-briefings" data-section="briefings"><div class="gp-section-header"><h2 class="gp-section-title"><span>📰</span> Intelligence Briefings</h2><div class="gp-header-meta" id="briefingsUpdated"></div></div><div class="gp-section-body" id="briefingsBody"><div class="gp-state"><div class="gp-spinner"></div><div>Loading intelligence brief…</div></div></div></section>
+      <section class="gp-section" id="section-briefings" data-section="briefings"><div class="gp-section-header"><h2 class="gp-section-title"><span>📰</span> Intelligence Briefings</h2><div class="gp-header-meta" id="briefingsUpdated"></div></div><div class="gp-section-body" id="briefingsBody"><div id="cbriefsBody" class="te-section" role="region" aria-label="Intelligence briefings">
+  <div class="gp-state"><div class="gp-spinner"></div><div>Loading briefings&hellip;</div></div>
+</div></div></section>
       </div>
       <section class="gp-section" id="section-search" data-section="search"><div class="gp-section-header"><h2 class="gp-section-title"><span>🔎</span> Universal Search</h2><div class="gp-header-meta" id="searchUpdated"></div></div><div class="gp-section-body" id="viewsBody"><div class="gp-state"><div>Loading saved views…</div></div></div><div class="gp-section-body" id="searchBody"><div class="gp-state"><div class="gp-spinner"></div><!-- TRACK-C / GUI-3 — Network Graph section. Self-contained. Owner: builder C. -->
 <!-- INTEGRATION: paste this <section> into index.html SEARCH tab body (#searchBody), add -->
@@ -171,7 +188,38 @@
 </section>
 
 <div>Loading search index…</div></div></div></section>
-      <section class="gp-section" id="section-overview" data-section="overview"><div class="gp-section-header"><h2 class="gp-section-title"><span>◉</span> Global Situation Overview</h2></div><div class="gp-section-body" id="overviewBody"><div class="gp-state"><div class="gp-spinner"></div><div>Loading current signal…</div></div></div></section>
+      <section class="gp-section" id="section-overview" data-section="overview"><div class="gp-section-header"><h2 class="gp-section-title"><span>◉</span> Global Situation Overview</h2></div><div class="gp-section-body" id="overviewBody"><section class="tf-overview" id="coverview" aria-label="Overview" data-testid="overview" data-fixtures="data/gui-fixtures.json">
+  <div class="tf-head">
+    <h2 class="tf-title" data-testid="overview-title"><span aria-hidden="true">◈</span> Overview</h2>
+    <p class="tf-sub">Global posture at a glance — frozen fixtures snapshot, no live dependency.</p>
+  </div>
+  <div class="tf-tiles" role="list" aria-label="Key indicators" data-tf="tiles" data-testid="overview-tiles">
+    <div class="tf-tile" role="listitem"><span class="tf-v" data-testid="tile-active-events">—</span><span class="tf-l">Active events</span></div>
+    <div class="tf-tile" role="listitem"><span class="tf-v" data-testid="tile-high-priority">—</span><span class="tf-l">High priority</span></div>
+    <div class="tf-tile" role="listitem"><span class="tf-v" data-testid="tile-emerging-risks">—</span><span class="tf-l">Emerging risks</span></div>
+    <div class="tf-tile" role="listitem"><span class="tf-v" data-testid="tile-critical-alerts">—</span><span class="tf-l">Critical alerts</span></div>
+    <div class="tf-tile" role="listitem"><span class="tf-v" data-testid="tile-regions">—</span><span class="tf-l">Regions</span></div>
+    <div class="tf-tile" role="listitem"><span class="tf-v" data-testid="tile-sources-online">—</span><span class="tf-l">Sources online</span></div>
+  </div>
+  <div class="tf-tension" role="status" aria-label="Tension summary" data-tf="tension" data-testid="overview-tension">
+    <span class="tf-pill" data-testid="tension-pill">TENSION&nbsp;<b class="tf-mono" data-tf-val="tension">—</b>&nbsp;(<span data-tf-val="tdelta">—</span>)</span>
+    <div class="tf-bar" role="img" aria-label="Tension index bar" data-tf-val="tbar-wrap"><span class="tf-bar-fill" data-tf-val="tbar" style="width:0%"></span></div>
+    <span class="tf-sub" data-tf-val="tdriver">—</span>
+  </div>
+  <div class="tf-hlcard" data-tf="headlines" data-testid="overview-headlines">
+    <div class="tf-hlhead"><span class="tf-cardh">Top headlines</span><a class="tf-viewall" href="#section-briefings">View all →</a></div>
+    <p class="tf-empty" data-tf-val="hl-empty">Loading headlines…</p>
+  </div>
+  <nav class="tf-nav" aria-label="Quick navigation" data-testid="overview-nav">
+    <a class="tf-navcard" href="#section-dashboard"><span aria-hidden="true">◈</span><b>Command</b><i>Live posture &amp; signals</i></a>
+    <a class="tf-navcard" href="#section-timeline"><span aria-hidden="true">◷</span><b>Timeline</b><i>Event flow &amp; tension</i></a>
+    <a class="tf-navcard" href="#section-search"><span aria-hidden="true">🔎</span><b>Search</b><i>Query the archive</i></a>
+    <a class="tf-navcard" href="#section-map"><span aria-hidden="true">🗺️</span><b>Map</b><i>Regional picture</i></a>
+    <a class="tf-navcard" href="#section-alerts"><span aria-hidden="true">⚠</span><b>Alerts</b><i>Critical &amp; watch</i></a>
+    <a class="tf-navcard" href="#section-briefings"><span aria-hidden="true">📰</span><b>Briefings</b><i>Stories &amp; analysis</i></a>
+  </nav>
+  <p class="tf-fresh" data-tf="fresh" data-testid="overview-freshness">Feed status: loading…</p>
+</section></div></section>
       <section class="gp-section" id="section-breaking" data-section="breaking"><div class="gp-section-header"><h2 class="gp-section-title"><span>⚡</span> Breaking / Latest Reporting</h2></div><div class="gp-section-body" id="breakingBody"><div class="gp-state"><div class="gp-spinner"></div><div>Loading reporting…</div></div></div></section>
       <section class="gp-section" id="section-conflicts" data-section="conflicts"><div class="gp-section-header"><h2 class="gp-section-title"><span>⚔️</span> Active Conflict Watch</h2></div><div class="gp-section-body" id="conflictsBody"><div class="gp-state"><div class="gp-spinner"></div><div>Loading conflict signals…</div></div></div></section>
       <section class="gp-section" id="section-brain" data-section="brain"><div class="gp-section-header"><h2 class="gp-section-title"><span>🧠</span> Intelligence Brain</h2><div class="gp-header-meta" id="brainUpdated"></div></div><div class="gp-section-body" id="brainBody"><div class="gp-state"><div class="gp-spinner"></div><div>Loading brain…</div></div></div></section>
@@ -228,6 +276,9 @@
   <script src="js/modules/ccenter.js"></script>
   <script src="js/modules/cmap.js"></script>
   <script type="module" src="js/modules/ctimeline.js"></script>
+  <script src="js/modules/calerts.js"></script>
+  <script type="module" src="js/modules/cbriefs.js"></script>
+  <script src="js/modules/coverview.js" defer></script>
   <script type="module">import { initCgraph } from './js/modules/cgraph.js'; if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', () => { try { initCgraph(); } catch (e) { console.error('cgraph init failed', e); } }); } else { try { initCgraph(); } catch (e) { console.error('cgraph init failed', e); } }</script>
   <script src="global_pulse_core.js?v=1" defer></script>
   <script src="global_pulse_event_pipeline.js?v=1" defer></script>

@@ -97,15 +97,23 @@ def participant_roles(found,matched,names,event_type,text):
             else:actors.append(eid)
     target_patterns={
       "sanction":r"(?:impos(?:e|es|ed|ing)|expand(?:s|ed|ing)?|tighten(?:s|ed|ing)?)?\s*sanctions?\s+(?:on|against)\s+([^.;:!?]+)",
-      "military_action":r"(?:strike|strikes|struck|attack|attacks|attacked|airstrike|bomb(?:ed|ing)?|operation|target(?:s|ed|ing)?)\s+(?:on|against|targeting)?\s*([^.;:!?]+)",
+      "sanction_flow":r"(?:flowing|shipped|supplied|routed|smuggled)\s+to\s+([^.;:!?]+)",
+      "military_action":r"(?:strike|strikes|struck|hit|hits|hitting|attack|attacks|attacked|airstrike|bomb(?:ed|ing)?|operation|target(?:s|ed|ing)?)\s+(?:on|against|targeting)?\s*([^.;:!?]+)",
       "diplomatic_action":r"(?:talks?|negotiat(?:e|es|ed|ing)|meet(?:s|ing)?|met|summit)\s+(?:with|between)?\s*([^.;:!?]+)",
       "trade_action":r"(?:trade|trades|trading|export(?:s|ed|ing)?|import(?:s|ed|ing)?)\s+(?:with|between|to|from)\s+([^.;:!?]+)",
       "economic_action":r"(?:tariffs?|taxes?|restrictions?|controls?|measures?|policies|policy)\s+(?:on|against|toward|targeting)\s+([^.;:!?]+)",
       "technology_action":r"(?:restrict(?:s|ed|ing)?|ban(?:s|ned|ning)?|control(?:s|led|ling)?|limit(?:s|ed|ing)?|export controls?|chip restrictions?|technology restrictions?)\s+(?:on|against|toward|to|for)?\s*([^.;:!?]+)",
       "energy_action":r"(?:supply|supplies|supplied|supplying|export(?:s|ed|ing)?|import(?:s|ed|ing)?)\s+(?:oil|gas|lng|energy|electricity)\s+(?:to|from)\s+([^.;:!?]+)",
       "cyber_activity":r"(?:cyberattack|cyberattacks|hack(?:s|ed|ing)?|hacking)\s+(?:against|on|targeting)\s+([^.;:!?]+)",
-      "political_action":r"(?:support(?:s|ed|ing)?|back(?:s|ed|ing)?|oppos(?:e|es|ed|ing)|urge(?:s|d|ing)?|call(?:s|ed|ing)?\s+for|recogniz(?:e|es|ed|ing)?)\s+([^.;:!?]+)",
+      "political_action":r"(?:support(?:s|ed|ing)?|back(?:s|ed|ing)?|oppos(?:e|es|ed|ing)|urge(?:s|d|ing)?|call(?:s|ed|ing)?\s+for|recogniz(?:e|es|ed|ing)?|trial(?:s)?|prosecution(?:s)?|lawsuit(?:s)?|indictment(?:s)?)\s+([^.;:!?]+)",
     }
+    diplomatic_summit_before=r"(?:before|ahead of|prior to|on the sidelines of)\s+(?:the\s+)?([^.;:!?]+?)\s+summit"
+    hyphen_talks=r"\b([A-Za-z]+-[A-Za-z]+)\b[^.;:!?]{0,100}?\btalks\b"
+    extra_patterns=[]
+    if event_type=='sanction' and 'sanction_flow' in target_patterns:
+        extra_patterns.append(target_patterns['sanction_flow'])
+    if event_type=='diplomatic_action':
+        extra_patterns.extend([diplomatic_summit_before, hyphen_talks])
     target_pattern=target_patterns.get(event_type)
     if target_pattern:
         for m in re.finditer(target_pattern,text,re.I):
@@ -118,6 +126,18 @@ def participant_roles(found,matched,names,event_type,text):
                 aliases.extend(str(a) for a in found.get(eid,{}).get("aliases",[]) if a)
                 if any((re.match(r"(?:the\s+)?"+re.escape(alias)+r"(?![A-Za-z])",clause,re.I) if event_type=='diplomatic_action' else re.search(r"(?<![A-Za-z])"+re.escape(alias)+r"(?![A-Za-z])",clause,re.I)) for alias in aliases):
                     if eid not in targets:targets.append(eid)
+            if targets:break
+    if not targets:
+        for xp in extra_patterns:
+            for m in re.finditer(xp,text,re.I):
+                clause=m.group(1).lower()
+                for eid in matched:
+                    name=names[eid]
+                    aliases=[name]
+                    aliases.extend(str(a) for a in found.get(eid,{}).get("aliases",[]) if a)
+                    if any((re.match(r"(?:the\s+)?"+re.escape(alias)+r"(?![A-Za-z])",clause,re.I) if event_type=='diplomatic_action' else re.search(r"(?<![A-Za-z])"+re.escape(alias)+r"(?![A-Za-z])",clause,re.I)) for alias in aliases):
+                        if eid not in targets:targets.append(eid)
+                if targets:break
             if targets:break
     if targets:actors=[x for x in actors if x not in targets]
     if not actors and targets:

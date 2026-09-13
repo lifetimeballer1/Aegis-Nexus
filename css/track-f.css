@@ -1,0 +1,40 @@
+/* TRACK-F — Overview landing (GUI Day2). Mobile-first, 390px base.
+   Namespaced tf- only. No globals. Consumes css/tokens.css vars only. */
+.tf-overview{background:var(--panel,#0e1e2a);border:1px solid var(--line,#1b3854);border-radius:12px;padding:14px;margin:12px 0;color:var(--text,#eef5ff);min-width:0}
+.tf-head{margin-bottom:10px}
+.tf-title{margin:0;font-size:15px;font-weight:800;color:var(--text,#eef5ff)}
+.tf-sub{font-size:11px;color:var(--muted,#91a4b8);margin:4px 0 0}
+.tf-tiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-bottom:10px}
+.tf-tile{background:var(--bg-elevated,#0c1a27);border:1px solid var(--line,#1b3854);border-left:3px solid var(--blue,#62a0ff);border-radius:10px;padding:8px 10px}
+.tf-tile.edge-red{border-left-color:var(--red,#ff6678)}
+.tf-tile.edge-amber{border-left-color:var(--amber,#ffc857)}
+.tf-tile.edge-green{border-left-color:var(--green,#48df83)}
+.tf-tile .tf-v{display:block;font-size:20px;font-weight:800;font-variant-numeric:tabular-nums}
+.tf-tile .tf-l{display:block;font-size:10px;font-weight:700;color:var(--muted,#91a4b8);text-transform:uppercase;letter-spacing:.06em}
+.tf-tension{display:flex;flex-wrap:wrap;gap:8px;align-items:center;background:var(--bg-elevated,#0c1a27);border:1px solid var(--line,#1b3854);border-radius:10px;padding:10px;margin-bottom:10px;font-size:12px}
+.tf-pill{display:inline-flex;align-items:center;gap:6px;padding:3px 10px;border-radius:999px;border:1px solid var(--green,#48df83);color:var(--green,#48df83);background:var(--panel-2,#142636);font-size:11px;font-weight:800;white-space:nowrap}
+.tf-mono{font-family:var(--gp-mono,ui-monospace,Menlo,monospace);font-variant-numeric:tabular-nums}
+.tf-bar{flex:1 1 140px;height:8px;border-radius:6px;background:#0a141d;border:1px solid var(--line,#1b3854);overflow:hidden;min-width:120px}
+.tf-bar-fill{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--blue,#62a0ff),var(--cyan,#3fc5ff));border-radius:6px}
+.tf-hlcard{background:var(--bg-elevated,#0c1a27);border:1px solid var(--line,#1b3854);border-radius:10px;padding:10px;margin-bottom:10px;min-width:0}
+.tf-hlhead{display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:13px;margin-bottom:4px}
+.tf-cardh{font-size:10px;letter-spacing:.08em;color:var(--muted,#91a4b8);font-weight:800;text-transform:uppercase}
+.tf-viewall{margin-left:auto;color:var(--blue,#62a0ff);font-size:12px;font-weight:700;white-space:nowrap}
+.tf-hlrow{display:flex;gap:8px;padding:7px 0;border-top:1px solid var(--line,#1b3854);font-size:12px;min-width:0}
+.tf-hlrow:first-of-type{border-top:0}
+.tf-hldot{width:8px;height:8px;border-radius:50%;background:var(--blue,#62a0ff);flex:none;margin-top:4px}
+.tf-hltitle{color:var(--text,#eef5ff);font-weight:600;overflow-wrap:break-word}
+.tf-hlsrc{color:var(--muted,#91a4b8);font-size:11px;overflow-wrap:break-word}
+.tf-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-bottom:10px}
+.tf-navcard{display:flex;flex-direction:column;gap:2px;min-height:44px;background:var(--bg-elevated,#0c1a27);border:1px solid var(--line,#1b3854);border-radius:10px;padding:9px 10px;color:var(--text,#eef5ff);text-decoration:none;font-size:12px}
+.tf-navcard b{font-size:13px}
+.tf-navcard i{font-style:normal;font-size:10px;color:var(--muted,#91a4b8)}
+.tf-navcard:hover{border-color:var(--blue,#62a0ff)}
+.tf-navcard:focus-visible{outline:2px solid var(--blue,#62a0ff);outline-offset:2px}
+.tf-fresh{font-size:11px;color:var(--muted,#91a4b8);margin:0;font-variant-numeric:tabular-nums}
+.tf-empty{padding:10px;border:1px dashed var(--line-strong,#2a3f55);border-radius:8px;color:var(--muted,#91a4b8);font-size:12px;margin:0}
+.tf-overview a{color:var(--blue,#62a0ff)}
+.tf-navcard{color:var(--text,#eef5ff)}
+@media (min-width:720px){.tf-tiles{grid-template-columns:repeat(3,minmax(0,1fr))}.tf-nav{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (min-width:1080px){.tf-tiles{grid-template-columns:repeat(6,minmax(0,1fr))}}
+@media (prefers-reduced-motion:reduce){.tf-overview *{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
