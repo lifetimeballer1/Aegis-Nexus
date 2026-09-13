@@ -1,23 +1,67 @@
 <section id="trackA-center" class="ta-center" aria-label="Command Center (Track A)" data-fixtures="data/gui-fixtures.json">
-  <div class="ta-statusbar" role="status" aria-label="System status bar">
-    <span class="ta-pill"><span class="ta-dot op" aria-hidden="true"></span><span data-ta="opstate">OPERATIONAL</span></span>
-    <span class="ta-mono" data-ta="clock" title="UTC time">--:--:-- UTC</span>
-    <span class="ta-sub">Refresh <span class="ta-mono" data-ta="countdown">05:00</span></span>
-    <span class="ta-sub">Uptime <span class="ta-mono" data-ta="uptime">—</span></span>
-    <span class="ta-sub">Tasks <span class="ta-mono" data-ta="tasks">57 active</span></span>
-    <span class="ta-sub" data-ta="src">58/64 sources</span>
+  <div class="ta-cc-head">
+    <span class="ta-cc-title"><span aria-hidden="true">🌐</span> Global Situation</span>
+    <span class="ta-cc-sub">Key indicators across all monitored domains</span>
   </div>
-  <h3>Your Readiness</h3>
-  <div class="ta-grid"><div class="ta-readiness" data-ta="readiness" role="list" aria-label="Readiness checklist"></div></div>
-  <h3>Threats <span class="ta-sub" data-ta="threatsub"></span></h3>
-  <div class="ta-threats" data-ta="threats"></div>
-  <div class="ta-tension-head"><span class="ta-tension-score ta-mono" data-ta="tension">41</span><span class="ta-badge ta-sev-watch" data-ta="tlevel">WATCH</span><span class="ta-sub" data-ta="tdelta">Δ -1</span></div>
-  <div class="ta-drivers" data-ta="drivers"></div>
-  <h3>Signals</h3>
-  <div class="ta-signals" data-ta="signals" role="list"></div>
-  <h3>Feed Freshness</h3>
-  <div class="ta-fresh" data-ta="fresh"></div>
-  <h3>Market Signals</h3>
-  <div class="ta-market" data-ta="market"><span class="ta-badge ta-sev-info">DELAYED</span><span data-ta="marketext">26 indicators · Yahoo Finance 1m</span></div>
+  <div class="ta-tensionline" role="status" aria-label="Tension summary">
+    <span class="ta-pill ta-tensionpill">TENSION&nbsp;<b class="ta-mono" data-ta="tension">41</b>&nbsp;(<span data-ta="tdelta">-1</span>)</span>
+    <span class="ta-sub">◦ Last updated: <span data-ta="updated">2h ago</span></span>
+    <span class="ta-fail"><span class="ta-dot amber" aria-hidden="true"></span><b data-ta="failing">6 sources failing</b></span>
+  </div>
+  <div class="ta-tiles6" data-ta="tiles" role="list" aria-label="Key indicators"></div>
+  <div class="ta-row2">
+    <div class="ta-card" role="listitem" tabindex="0" aria-label="Tension index">
+      <div class="ta-cardh">TENSION INDEX</div>
+      <div class="ta-big ta-mono"><span data-ta="tindex">41</span> (<span data-ta="tindexd">-1</span>)</div>
+      <div class="ta-segbar" data-ta="segbar" role="img" aria-label="Tension index segmented bar"></div>
+    </div>
+    <div class="ta-card" role="listitem" tabindex="0" aria-label="Sources online">
+      <div class="ta-cardh">SOURCES ONLINE</div>
+      <div class="ta-big ta-mono"><span data-ta="online">47</span> / <span data-ta="ontotal">69</span></div>
+    </div>
+  </div>
+  <div class="ta-row2">
+    <div class="ta-card" role="listitem" tabindex="0" aria-label="Stale feeds">
+      <div class="ta-cardh">STALE FEEDS</div>
+      <div class="ta-big ta-mono" data-ta="stale">0</div>
+    </div>
+    <div class="ta-card" role="listitem" tabindex="0" aria-label="Market signals">
+      <div class="ta-cardh">MARKET SIGNALS</div>
+      <div class="ta-big ta-mono" data-ta="market">26</div>
+    </div>
+  </div>
+  <div class="ta-card ta-sparkcard" aria-label="Signal trend sparkline">
+    <svg class="ta-spark" data-ta="spark" viewBox="0 0 300 60" preserveAspectRatio="none" role="img" aria-label="Blue signal trend line"></svg>
+  </div>
+  <div class="ta-row2">
+    <div class="ta-card" role="listitem" tabindex="0" aria-label="Signals last 24 hours">
+      <div class="ta-cardh">SIGNALS 24H <span class="ta-hdot info" aria-hidden="true"></span></div>
+      <div class="ta-big ta-mono" data-ta="sig24">80</div>
+      <div class="ta-minibars" data-ta="sigbars" aria-hidden="true"></div>
+    </div>
+    <div class="ta-card" role="listitem" tabindex="0" aria-label="Critical share">
+      <div class="ta-cardh">CRITICAL SHARE <span class="ta-hdot critical" aria-hidden="true"></span></div>
+      <div class="ta-big ta-mono" data-ta="critshare">1%</div>
+      <div class="ta-minibars red" data-ta="critbars" aria-hidden="true"></div>
+    </div>
+  </div>
+  <div class="ta-row2">
+    <div class="ta-card" role="listitem" tabindex="0" aria-label="Average reports per event">
+      <div class="ta-cardh">AVG REPORTS / EVENT <span class="ta-hdot watch" aria-hidden="true"></span></div>
+      <div class="ta-big ta-mono" data-ta="avgreps">1.3</div>
+      <svg class="ta-step" data-ta="stepline" viewBox="0 0 200 36" preserveAspectRatio="none" role="img" aria-label="Average reports step line"></svg>
+    </div>
+    <div class="ta-card" role="listitem" tabindex="0" aria-label="Feed freshness">
+      <div class="ta-cardh">FEED FRESHNESS <span class="ta-hdot healthy" aria-hidden="true"></span></div>
+      <div class="ta-big">Fresh</div>
+      <div class="ta-sub ta-mono" data-ta="freshsub">2H AGO · 47/69 ONLINE</div>
+    </div>
+  </div>
+  <div class="ta-card ta-hlcard">
+    <div class="ta-hlhead"><span class="ta-hlsq" aria-hidden="true"></span><b>Headline Intelligence</b>
+      <span class="ta-live">LIVE · <span data-ta="livecount">2000</span></span>
+      <a class="ta-viewall" href="#section-timeline">View All →</a></div>
+    <div class="ta-hlbody" data-ta="headlines"></div>
+  </div>
   <div class="ta-empty" data-ta="empty" hidden>No fixture data yet — check data/gui-fixtures.json.</div>
 </section>
