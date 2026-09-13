@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-09-13T17:49:25.312427+00:00",
+  "updatedAt": "2026-09-13T17:53:51.424120+00:00",
   "feedsChecked": 70,
   "rowsFetched": 1071,
-  "newArticles": 357,
-  "purged": 302,
-  "databaseArticles": 6139,
+  "newArticles": 259,
+  "purged": 258,
+  "databaseArticles": 6140,
   "exportedArticles": 2000,
   "exportLimit": 2000,
   "healthySources": 63,
@@ -13,7 +13,7 @@
   "failedSources": [
     {
       "source": "GDELT — Western Hemisphere Counter-Cartel",
-      "error": "HTTPError: HTTP Error 429: Too Many Requests"
+      "error": "ParseError: syntax error: line 1, column 0"
     },
     {
       "source": "UN News — Global",
@@ -327,7 +327,7 @@
       "httpOk": false,
       "mode": "failed",
       "emptyFeed": false,
-      "error": "HTTPError: HTTP Error 429: Too Many Requests"
+      "error": "ParseError: syntax error: line 1, column 0"
     },
     {
       "sourceId": "usgs_m4_5_earthquakes_past_day",
@@ -335,7 +335,7 @@
       "type": "climate-hazard",
       "category": "climate-hazard",
       "coverage": [],
-      "rowsFetched": 6,
+      "rowsFetched": 5,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -419,7 +419,7 @@
       "type": "climate-hazard",
       "category": "climate-hazard",
       "coverage": [],
-      "rowsFetched": 27,
+      "rowsFetched": 28,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -443,7 +443,7 @@
       "type": "us-politics",
       "category": "us-politics",
       "coverage": [],
-      "rowsFetched": 37,
+      "rowsFetched": 39,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -503,7 +503,7 @@
       "type": "economics",
       "category": "economics",
       "coverage": [],
-      "rowsFetched": 16,
+      "rowsFetched": 15,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -599,7 +599,7 @@
       "type": "americas-conflict",
       "category": "americas-conflict",
       "coverage": [],
-      "rowsFetched": 16,
+      "rowsFetched": 15,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
