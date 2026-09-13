@@ -1,0 +1,325 @@
+{
+ "meta": {
+  "frozenAt": "2026-09-13T14:10:00Z",
+  "source": "Aegis-Nexus-B/data/snapshot.json@2026-09-12T18:46:39Z",
+  "commits": [
+   "46a8105 failover wiring",
+   "a907726 CC-SHELL skeleton"
+  ],
+  "note": "CANONICAL - all 4 GUI builders code against THIS file, no live-pipeline dependency during UI build"
+ },
+ "tension": {
+  "index": 41,
+  "delta": -1,
+  "breakdown": {
+   "Conflict activity": 45,
+   "Diplomatic strain": 36,
+   "Economic pressure": 43,
+   "Market volatility": 35,
+   "Military posture": 47,
+   "Climate & humanitarian pressure": 32
+  },
+  "earlyWarning": {
+   "level": "WATCH",
+   "score": 41,
+   "momentum": 0.3,
+   "direction": "stable",
+   "strongestDriver": "Military posture",
+   "strongestDriverScore": 47,
+   "method": "Current score model v5; recent 12 snapshots versus preceding 24 matching snapshots."
+  }
+ },
+ "sources": {
+  "total_collector": 63,
+  "total_failoverState": 64,
+  "healthy": 58,
+  "down": 6,
+  "online": 57,
+  "failed": 6,
+  "onlineWithData": 53,
+  "onlineEmpty": 4,
+  "dataCoveragePercent": 84.1,
+  "fallbacks": 1,
+  "failedSources": [
+   "GDELT \u2014 Western Hemisphere Counter-Cartel",
+   "X @NASA",
+   "X @NATO",
+   "X @POTUS",
+   "X @UN",
+   "X @WhiteHouse"
+  ],
+  "failingDetail": [
+   {
+    "name": "GDELT \u2014 Western Hemisphere Counter-Cartel",
+    "error": "ParseError: syntax error: line 1, column 0"
+   },
+   {
+    "name": "X @NASA",
+    "error": "RuntimeError: proxy challenge/whitelist response"
+   },
+   {
+    "name": "X @WhiteHouse",
+    "error": "RuntimeError: proxy challenge/whitelist response"
+   },
+   {
+    "name": "X @POTUS",
+    "error": "RuntimeError: proxy challenge/whitelist response"
+   },
+   {
+    "name": "X @NATO",
+    "error": "RuntimeError: proxy challenge/whitelist response"
+   },
+   {
+    "name": "X @UN",
+    "error": "RuntimeError: proxy challenge/whitelist response"
+   }
+  ]
+ },
+ "signals": {
+  "stories": 735,
+  "liveEvents": 80,
+  "conflicts": 31,
+  "markers": 8489,
+  "changes": 9,
+  "driverCategories": [
+   "Conflict activity",
+   "Diplomatic strain",
+   "Economic pressure",
+   "Market volatility",
+   "Military posture",
+   "Climate & humanitarian pressure"
+  ],
+  "liveArticlesCount": 2000,
+  "liveArticlesExport": 2000
+ },
+ "domainMix": {
+  "regional": 5,
+  "cartel": 2,
+  "international": 98,
+  "news": 16,
+  "southcom-news": 7,
+  "climate-hazard": 113,
+  "live": 3,
+  "us-politics": 16,
+  "middle-east-conflict": 15,
+  "africa-conflict": 3,
+  "counter-cartel": 4,
+  "americas": 4,
+  "europe-conflict": 7,
+  "economics": 1,
+  "middle-east": 5,
+  "world-politics": 1,
+  "fallback-news": 435
+ },
+ "regions": [
+  {
+   "name": "North America",
+   "reports": 44,
+   "events": 5,
+   "trend": "STABLE"
+  },
+  {
+   "name": "South America",
+   "reports": 18,
+   "events": 1,
+   "trend": "STABLE"
+  },
+  {
+   "name": "Europe",
+   "reports": 50,
+   "events": 9,
+   "trend": "STABLE"
+  },
+  {
+   "name": "Middle East",
+   "reports": 110,
+   "events": 14,
+   "trend": "STABLE"
+  },
+  {
+   "name": "Africa",
+   "reports": 33,
+   "events": 7,
+   "trend": "STABLE"
+  },
+  {
+   "name": "South Asia",
+   "reports": 13,
+   "events": 0,
+   "trend": "STABLE"
+  },
+  {
+   "name": "East Asia",
+   "reports": 3,
+   "events": 0,
+   "trend": "STABLE"
+  },
+  {
+   "name": "Southeast Asia",
+   "reports": 9,
+   "events": 1,
+   "trend": "STABLE"
+  },
+  {
+   "name": "Oceania",
+   "reports": 5,
+   "events": 0,
+   "trend": "STABLE"
+  }
+ ],
+ "headlines": {
+  "stories": [
+   {
+    "title": "US Open tennis 2026: Aryna Sabalenka and Marta Kostyuk in action on day eight \u2013 live",
+    "source": "Guardian US",
+    "type": "regional"
+   },
+   {
+    "title": "Federal government moves to seize suspected cartel leader\u2019s Hemet ranch - pressenterprise.com",
+    "source": "Google News \u2014 Sinaloa Cartel / CJNG",
+    "type": "cartel"
+   },
+   {
+    "title": "No bailouts for Jaguar Land Rover amid reports of thousands of job cuts, says minister",
+    "source": "Guardian World",
+    "type": "international"
+   },
+   {
+    "title": "German startup sends first commercial rocket into space from Europe",
+    "source": "Guardian World",
+    "type": "international"
+   },
+   {
+    "title": "US envoys Kushner and Witkoff arrive in Kyiv after talks with Putin",
+    "source": "Guardian World",
+    "type": "international"
+   },
+   {
+    "title": "Undercover report on donations \u2018looks bad\u2019 for Reform, admits Nigel Farage \u2013 as it happened",
+    "source": "Guardian World",
+    "type": "international"
+   },
+   {
+    "title": "US rejects claim it sought to influence Malaysian politics",
+    "source": "CNA World",
+    "type": "news"
+   },
+   {
+    "title": "Zia Yusuf\u2019s post about Camden council leader is \u2018straightforward racism\u2019, says minister",
+    "source": "Guardian World",
+    "type": "international"
+   }
+  ],
+  "topDevelopments": [
+   {
+    "title": "US envoys Witkoff, Kushner meet Putin for talks on Ukraine war",
+    "category": "diplomatic",
+    "confidence": "high"
+   },
+   {
+    "title": "Russia\u2019s Putin meets US envoys to discuss Trump proposal to end Ukraine war",
+    "category": "general",
+    "confidence": "moderate"
+   },
+   {
+    "title": "War in Ukraine: Putin, Zelensky order pause in strikes",
+    "category": "general",
+    "confidence": "moderate"
+   },
+   {
+    "title": "Iran rebuilding its axis of resistance for attack , Israeli intelligence . suggests",
+    "category": "conflict",
+    "confidence": "moderate"
+   },
+   {
+    "title": "Multipolarity gives middle powers more choices, but fewer guarantees - Al Jazeera",
+    "category": "general",
+    "confidence": "moderate"
+   },
+   {
+    "title": "Germany's far-right AfD eyes historic state victory in Saxony-Anhalt election",
+    "category": "political",
+    "confidence": "moderate"
+   }
+  ],
+  "events": [
+   {
+    "title": "US envoys Witkoff, Kushner meet Putin for talks on Ukraine war",
+    "category": "diplomatic",
+    "confidence": "high",
+    "reports": 4
+   },
+   {
+    "title": "Green forest fire notification in Angola",
+    "category": "general",
+    "confidence": "low",
+    "reports": 4
+   },
+   {
+    "title": "Russia\u2019s Putin meets US envoys to discuss Trump proposal to end Ukraine war",
+    "category": "general",
+    "confidence": "moderate",
+    "reports": 3
+   },
+   {
+    "title": "Multipolarity gives middle powers more choices, but fewer guarantees - Al Jazeera",
+    "category": "general",
+    "confidence": "moderate",
+    "reports": 3
+   },
+   {
+    "title": "Green forest fire notification in Mozambique",
+    "category": "general",
+    "confidence": "low",
+    "reports": 3
+   },
+   {
+    "title": "Germany's far-right AfD eyes historic state victory in Saxony-Anhalt election",
+    "category": "political",
+    "confidence": "moderate",
+    "reports": 2
+   }
+  ]
+ },
+ "alerts": {
+  "earlyWarning": {
+   "level": "WATCH",
+   "score": 41,
+   "momentum": 0.3,
+   "direction": "stable",
+   "strongestDriver": "Military posture",
+   "strongestDriverScore": 47,
+   "method": "Current score model v5; recent 12 snapshots versus preceding 24 matching snapshots."
+  },
+  "breakingWindow": "15min",
+  "breakingErrors": [
+   "HTTPError: HTTP Error 429: Too Many Requests",
+   "HTTPError: HTTP Error 429: Too Many Requests"
+  ],
+  "failedSources": [
+   "GDELT \u2014 Western Hemisphere Counter-Cartel",
+   "X @NASA",
+   "X @NATO",
+   "X @POTUS",
+   "X @UN",
+   "X @WhiteHouse"
+  ],
+  "topConflict": {
+   "name": "Western Hemisphere Counter-Cartel Campaign",
+   "escalation": "CRITICAL",
+   "signals": 13
+  }
+ },
+ "market": {
+  "updatedAt": "2026-09-11T17:12:09.834021+00:00",
+  "indicators": 26,
+  "note": "Yahoo Finance 1m, DELAYED badge, 26 indicators per Worker C (16 live/7 closed/3 stale)"
+ },
+ "conceptMap": {
+  "01_commandCenter": "~/Aegis-Nexus-B/js/modules/dashboard.js + index.html#commandStatusBar + css/dashboard.css + js/modules/command-shell.js",
+  "05_briefingsAlertsTimeline": "~/Aegis-Nexus-B/js/modules/briefings.js + alerts.js + timeline.js + brain-timeline.js + data/intelligence_brief.json + data/live_events.json",
+  "06_sourcesValidationHealth": "~/Aegis-Nexus-B/js/modules/status.js + data/source_health.json + source_failover.py + build_source_health.py + validate_*.py",
+  "pipeline": "~/Aegis-Nexus-B/refresh_pipeline.py + source_failover.py + build_failover_state.py",
+  "siteSource": "~/Aegis-Nexus-B/index.html IS the lifetimeballer1.github.io site source (same repo, origin https://github.com/lifetimeballer1/Aegis-Nexus.git)"
+ }
+}

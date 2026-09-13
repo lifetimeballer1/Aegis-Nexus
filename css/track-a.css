@@ -1,0 +1,53 @@
+/* Track A — GUI-1 Command Center + GUI-4 Map (dark command-center, mobile-first).
+   Namespaced `ta-` only. No globals. Works with tokens.css vars. */
+.ta-center,.ta-map{background:var(--panel,#0e1e2a);border:1px solid var(--line,#1b3854);border-radius:12px;padding:14px;margin:12px 0;color:var(--text,#eef5ff)}
+.ta-center h3,.ta-map h3{margin:0 0 10px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--text-secondary,#c5d4e6)}
+.ta-sub{font-size:11px;color:var(--muted,#91a4b8)}
+.ta-grid{display:grid;gap:10px}
+.ta-statusbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;background:var(--bg-elevated,#0c1a27);border:1px solid var(--line,#1b3854);border-radius:10px;padding:8px 10px;font-size:12px}
+.ta-pill{display:inline-flex;align-items:center;gap:6px;padding:3px 9px;border-radius:999px;border:1px solid var(--line,#1b3854);background:var(--panel-2,#142636);font-size:11px;font-weight:700}
+.ta-dot{width:8px;height:8px;border-radius:50%;background:var(--green,#48df83)}
+.ta-dot.op{background:var(--green,#48df83);box-shadow:0 0 6px var(--green,#48df83)}
+.ta-mono{font-family:var(--gp-mono,ui-monospace,Menlo,monospace);font-variant-numeric:tabular-nums}
+.ta-readiness{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.ta-ready{background:var(--bg-elevated,#0c1a27);border:1px solid var(--line,#1b3854);border-radius:10px;padding:8px 10px}
+.ta-ready .t{font-size:11px;font-weight:700;margin-bottom:6px}
+.ta-bar{height:8px;border-radius:6px;background:#0a141d;border:1px solid var(--line,#1b3854);overflow:hidden}
+.ta-bar-fill{display:block;height:100%;background:linear-gradient(90deg,var(--blue,#62a0ff),var(--cyan,#3fc5ff));border-radius:6px}
+.ta-threats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.ta-threat{background:var(--bg-elevated,#0c1a27);border:1px solid var(--line,#1b3854);border-radius:10px;padding:10px}
+.ta-threat .tt{font-size:12px;font-weight:700;margin-bottom:6px}
+.ta-badge{display:inline-block;padding:2px 8px;border-radius:999px;font-size:11px;font-weight:800;border:1px solid var(--line,#1b3854)}
+.ta-sev-critical{background:rgba(255,102,120,.15);color:var(--red,#ff6678);border-color:var(--red,#ff6678)}
+.ta-sev-watch{background:rgba(255,200,87,.14);color:var(--amber,#ffc857);border-color:var(--amber,#ffc857)}
+.ta-sev-info{background:rgba(98,160,255,.14);color:var(--blue,#62a0ff);border-color:var(--blue,#62a0ff)}
+.ta-sev-healthy,.ta-sev-stable{background:rgba(72,223,131,.13);color:var(--green,#48df83);border-color:var(--green,#48df83)}
+.ta-tension-head{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:8px}
+.ta-tension-score{font-size:28px;font-weight:800}
+.ta-drivers{display:grid;gap:8px}
+.ta-driver{display:grid;grid-template-columns:minmax(140px,200px) 1fr 44px;gap:8px;align-items:center;font-size:12px}
+.ta-signals{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.ta-tile{background:var(--bg-elevated,#0c1a27);border:1px solid var(--line,#1b3854);border-radius:10px;padding:10px;text-align:left}
+.ta-tile .v{font-size:20px;font-weight:800}
+.ta-tile .l{font-size:10px;color:var(--muted,#91a4b8);text-transform:uppercase;letter-spacing:.06em}
+.ta-fresh{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px}
+.ta-fresh .ta-tile .v{font-size:15px}
+.ta-market{display:flex;flex-wrap:wrap;gap:8px;align-items:center;background:var(--bg-elevated,#0c1a27);border:1px solid var(--line,#1b3854);border-radius:10px;padding:8px 10px;font-size:12px}
+.ta-pills{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px}
+.ta-pillbtn{padding:4px 12px;border-radius:999px;border:1px solid var(--line,#1b3854);background:var(--panel-2,#142636);color:var(--text,#eef5ff);font-size:12px;font-weight:700;cursor:pointer}
+.ta-pillbtn[aria-pressed="true"]{background:var(--blue,#62a0ff);color:#06121d;border-color:var(--blue,#62a0ff)}
+.ta-chips{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.ta-chip{padding:3px 9px;border-radius:999px;border:1px solid var(--line,#1b3854);background:var(--bg-elevated,#0c1a27);font-size:11px;font-weight:700}
+.ta-table{width:100%;border-collapse:collapse;font-size:12px}
+.ta-table th{text-align:left;font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted,#91a4b8);padding:6px 8px;border-bottom:1px solid var(--line,#1b3854)}
+.ta-table td{padding:7px 8px;border-bottom:1px solid var(--line,#1b3854)}
+.ta-tiles2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:10px 0}
+.ta-changed{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:6px;font-size:12px}
+.ta-changed li{display:flex;gap:8px;align-items:center;background:var(--bg-elevated,#0c1a27);border:1px solid var(--line,#1b3854);border-radius:8px;padding:6px 9px}
+.ta-up{color:var(--red,#ff6678);font-weight:800}.ta-down{color:var(--green,#48df83);font-weight:800}.ta-flat{color:var(--muted,#91a4b8);font-weight:800}
+.ta-empty{padding:10px;border:1px dashed var(--line-strong,#2a3f55);border-radius:8px;color:var(--muted,#91a4b8);font-size:12px}
+.ta-center a,.ta-map a{color:var(--blue,#62a0ff)}
+.ta-pillbtn:focus-visible,.ta-chip:focus-visible,.ta-tile:focus-visible{outline:2px solid var(--blue,#62a0ff);outline-offset:2px}
+@media (max-width:900px){.ta-readiness{grid-template-columns:repeat(2,minmax(0,1fr))}.ta-threats{grid-template-columns:1fr 1fr}.ta-signals{grid-template-columns:repeat(2,minmax(0,1fr))}.ta-fresh{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:520px){.ta-center,.ta-map{padding:10px}.ta-readiness,.ta-threats,.ta-signals,.ta-tiles2{grid-template-columns:1fr}.ta-fresh{grid-template-columns:repeat(2,minmax(0,1fr))}.ta-driver{grid-template-columns:1fr;gap:4px}}
+@media (prefers-reduced-motion:reduce){.ta-center *,.ta-map *{animation:none!important;transition:none!important;scroll-behavior:auto!important}}

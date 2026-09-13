@@ -1,0 +1,23 @@
+<section id="trackA-center" class="ta-center" aria-label="Command Center (Track A)" data-fixtures="data/gui-fixtures.json">
+  <div class="ta-statusbar" role="status" aria-label="System status bar">
+    <span class="ta-pill"><span class="ta-dot op" aria-hidden="true"></span><span data-ta="opstate">OPERATIONAL</span></span>
+    <span class="ta-mono" data-ta="clock" title="UTC time">--:--:-- UTC</span>
+    <span class="ta-sub">Refresh <span class="ta-mono" data-ta="countdown">05:00</span></span>
+    <span class="ta-sub">Uptime <span class="ta-mono" data-ta="uptime">—</span></span>
+    <span class="ta-sub">Tasks <span class="ta-mono" data-ta="tasks">57 active</span></span>
+    <span class="ta-sub" data-ta="src">58/64 sources</span>
+  </div>
+  <h3>Your Readiness</h3>
+  <div class="ta-grid"><div class="ta-readiness" data-ta="readiness" role="list" aria-label="Readiness checklist"></div></div>
+  <h3>Threats <span class="ta-sub" data-ta="threatsub"></span></h3>
+  <div class="ta-threats" data-ta="threats"></div>
+  <div class="ta-tension-head"><span class="ta-tension-score ta-mono" data-ta="tension">41</span><span class="ta-badge ta-sev-watch" data-ta="tlevel">WATCH</span><span class="ta-sub" data-ta="tdelta">Δ -1</span></div>
+  <div class="ta-drivers" data-ta="drivers"></div>
+  <h3>Signals</h3>
+  <div class="ta-signals" data-ta="signals" role="list"></div>
+  <h3>Feed Freshness</h3>
+  <div class="ta-fresh" data-ta="fresh"></div>
+  <h3>Market Signals</h3>
+  <div class="ta-market" data-ta="market"><span class="ta-badge ta-sev-info">DELAYED</span><span data-ta="marketext">26 indicators · Yahoo Finance 1m</span></div>
+  <div class="ta-empty" data-ta="empty" hidden>No fixture data yet — check data/gui-fixtures.json.</div>
+</section>
