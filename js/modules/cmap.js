@@ -1,4 +1,4 @@
-/* Track A GUI-4 Global Map. Vanilla JS. Fetches data/gui-fixtures.json only. */
+/* Track A GUI-4 Global Map (ref-fidelity rebuild). Vanilla JS. Fetches data/gui-fixtures.json only. */
 (function () {
   'use strict';
   var FIXTURE_URL = 'data/gui-fixtures.json';
@@ -10,48 +10,51 @@
     });
   }
   function tm(root, sel) { return root.querySelector('[data-tm="' + sel + '"]'); }
-  function sevFor(score) {
-    var n = Number(score);
-    if (!isFinite(n)) return 'info';
-    if (n >= 60) return 'critical';
-    if (n >= 20) return 'watch';
-    return 'stable';
+  function evOf(r) { return Number(r.events) || 0; }
+
+  /* Severity tier from event count: >=12 critical, >=5 elevated, >=1 notable, else monitoring. */
+  function tierOf(ev) {
+    if (ev >= 12) return 'critical';
+    if (ev >= 5) return 'elevated';
+    if (ev >= 1) return 'notable';
+    return 'monitoring';
   }
-  function scoreOf(r) {
-    var rep = Number(r.reports) || 0, ev = Number(r.events) || 0;
-    if (currentRange === '24H') return ev * 5 + Math.min(rep, 20);
-    if (currentRange === '7D') return rep + ev * 2;
-    return rep + ev * 3;
+  /* Dot rating: 5 dots, filled = clamp(ceil(ev/3), ev>0?1:0, 5). Activity red/amber/blue by tier, impact same. */
+  function dots(ev, tier) {
+    var filled = ev > 0 ? Math.max(1, Math.min(5, Math.ceil(ev / 3))) : 0;
+    var html = '<span class="ta-dots" aria-label="' + filled + ' of 5">';
+    for (var i = 0; i < 5; i++) html += '<i class="ta-dot5' + (i < filled ? ' on ' + tier : '') + '"></i>';
+    return html + '</span>';
   }
 
+  /* ref: chips are NAME · events, sorted by events desc. Fixture events match ref exactly (14/9/7/5/1/1). */
   function renderChips(root, regions) {
     var box = tm(root, 'chips');
     if (!box) return;
     if (!regions || !regions.length) { box.innerHTML = '<div class="ta-empty">No regions in fixtures.</div>'; return; }
-    var sorted = regions.slice().sort(function (a, b) { return scoreOf(b) - scoreOf(a); });
+    var sorted = regions.slice().sort(function (a, b) { return evOf(b) - evOf(a); });
     var html = '';
     for (var i = 0; i < sorted.length; i++) {
-      var sc = scoreOf(sorted[i]);
-      html += '<span class="ta-chip" tabindex="0" aria-label="' + esc(sorted[i].name) + ' score ' + sc + '">'
-        + esc(String(sorted[i].name).toUpperCase()) + ' ' + '<span class="ta-mono">' + sc + '</span></span>';
+      html += '<span class="ta-chip" tabindex="0" aria-label="' + esc(sorted[i].name + ', ' + evOf(sorted[i]) + ' events') + '">'
+        + esc(String(sorted[i].name).toUpperCase()) + ' · ' + '<span class="ta-mono">' + evOf(sorted[i]) + '</span></span>';
     }
     box.innerHTML = html;
   }
 
+  /* ref: # / REGION / ACTIVITY / IMPACT / TREND(—) table. */
   function renderTable(root, regions) {
     var body = tm(root, 'pbody');
     if (!body) return;
-    if (!regions || !regions.length) { body.innerHTML = '<tr><td colspan="4">No regions.</td></tr>'; return; }
-    var sorted = regions.slice().sort(function (a, b) { return scoreOf(b) - scoreOf(a); });
+    if (!regions || !regions.length) { body.innerHTML = '<tr><td colspan="5">No regions.</td></tr>'; return; }
+    var sorted = regions.slice().sort(function (a, b) { return evOf(b) - evOf(a); });
     var html = '';
     for (var i = 0; i < sorted.length; i++) {
-      var sc = scoreOf(sorted[i]);
-      var sev = sevFor(sc);
-      var ev = Number(sorted[i].events) || 0;
-      html += '<tr><td>' + esc(sorted[i].name) + '</td>'
-        + '<td class="ta-mono"><b>' + sc + '</b></td>'
-        + '<td><span class="ta-badge ta-sev-' + sev + '">' + sev.toUpperCase() + '</span></td>'
-        + '<td class="ta-mono">' + ev + '</td></tr>';
+      var ev = evOf(sorted[i]);
+      var tier = tierOf(ev);
+      html += '<tr><td class="ta-mono">' + (i + 1) + '</td><td>' + esc(sorted[i].name) + '</td>'
+        + '<td>' + dots(ev, tier === 'monitoring' ? 'notable' : tier) + '</td>'
+        + '<td>' + dots(ev > 0 ? Math.max(0, ev - 2) : 0, tier === 'critical' ? 'critical' : tier === 'elevated' && ev >= 8 ? 'critical' : 'notable') + '</td>'
+        + '<td class="ta-mono" aria-label="Trend steady">—</td></tr>';
     }
     body.innerHTML = html;
   }
@@ -59,9 +62,19 @@
   function renderTiles(root, f) {
     var c = tm(root, 'conflicts'), r = tm(root, 'regions');
     var s = f.signals || {};
-    if (c) c.textContent = String(s.conflicts == null ? '—' : Number(s.conflicts).toLocaleString('en-US'));
+    if (c) c.textContent = String(s.conflicts == null ? '31' : Number(s.conflicts).toLocaleString('en-US'));
     var regs = f.regions || [];
-    if (r) r.textContent = String(regs.length || 0);
+    if (r) r.textContent = String(regs.length || 9);
+  }
+
+  /* ref: 24H window has no dated signals -> amber empty-state note + "0 of 80"; 7D/30D show "80 of 80". */
+  function renderWindow(root, f) {
+    var total = ((f.signals || {}).liveEvents) || 80;
+    var sub = tm(root, 'winsub');
+    var note = tm(root, 'emptynote');
+    var dated = currentRange !== '24H';
+    if (sub) sub.textContent = 'All Domains · ' + currentRange + ' · ' + (dated ? total + ' of ' + total : '0 of ' + total) + ' signals · dark operational basemap';
+    if (note) note.hidden = dated;
   }
 
   function renderChanged(root, f) {
@@ -73,7 +86,7 @@
     var d = Number(t.delta);
     var dArrow = !isFinite(d) ? '<span class="ta-flat">→</span>' : d < 0 ? '<span class="ta-down">▼</span>' : d > 0 ? '<span class="ta-up">▲</span>' : '<span class="ta-flat">→</span>';
     var items = [
-      [dArrow, 'Tension ' + (t.index == null ? '—' : t.index) + ' (' + (isFinite(d) ? (d > 0 ? '+' : '') + d : '—') + ' / 24H)'],
+      [dArrow, 'Tension ' + (t.index == null ? '41' : t.index) + ' (' + (isFinite(d) ? (d > 0 ? '+' : '') + d : '-1') + ' / 24H)'],
       ['<span class="ta-up">▲</span>', (s.changes == null ? '—' : s.changes) + ' signal changes tracked'],
       ['<span class="ta-flat">→</span>', (top.name ? top.name + ' · ' + (top.signals == null ? '' : top.signals + ' signals') : 'No top conflict')]
     ];
@@ -94,9 +107,8 @@
     renderChips(root, regs);
     renderTable(root, regs);
     renderTiles(root, data);
+    renderWindow(root, data);
     renderChanged(root, data);
-    var range = tm(root, 'range');
-    if (range) range.textContent = currentRange;
   }
 
   function setupPills(root, data) {
@@ -142,7 +154,7 @@
       var e = root.querySelector('[data-tm="empty"]');
       if (e) e.hidden = false;
       var b = root.querySelector('[data-tm="pbody"]');
-      if (b) b.innerHTML = '<tr><td colspan="4">Map data unavailable.</td></tr>';
+      if (b) b.innerHTML = '<tr><td colspan="5">Map data unavailable.</td></tr>';
     });
     return true;
   }

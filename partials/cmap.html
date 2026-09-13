@@ -1,21 +1,33 @@
 <section id="trackA-map" class="ta-map" aria-label="Global Map (Track A)" data-fixtures="data/gui-fixtures.json">
-  <h3>Global Map <span class="ta-sub" data-tm="range">24H</span></h3>
+  <div class="ta-maphead"><span class="ta-map-title"><span aria-hidden="true">🌐</span> Global Map</span>
+    <a class="ta-viewall" href="#section-map">View Full Map →</a></div>
   <div class="ta-pills" role="tablist" aria-label="Time window" data-tm="pills">
     <button class="ta-pillbtn" role="tab" aria-selected="true" aria-pressed="true" data-range="24H" type="button">24H</button>
     <button class="ta-pillbtn" role="tab" aria-selected="false" aria-pressed="false" data-range="7D" type="button">7D</button>
     <button class="ta-pillbtn" role="tab" aria-selected="false" aria-pressed="false" data-range="30D" type="button">30D</button>
   </div>
+  <div class="ta-sub" data-tm="winsub">All Domains · 24H · 0 of 80 signals · dark operational basemap</div>
+  <div class="ta-emptynote" data-tm="emptynote" role="note">No dated signals in this window — try 7D/30D. No dated signals in 24H window.</div>
+  <div class="ta-basemap" role="img" aria-label="Dark operational basemap placeholder"></div>
   <div class="ta-chips" data-tm="chips" aria-label="Region chips"></div>
-  <h3>Priority Regions</h3>
+  <div class="ta-legend" aria-label="Map legend">
+    <span><i class="ta-ldot critical" aria-hidden="true"></i>Critical</span>
+    <span><i class="ta-ldot elevated" aria-hidden="true"></i>Elevated</span>
+    <span><i class="ta-ldot notable" aria-hidden="true"></i>Notable</span>
+    <span><i class="ta-ldot monitoring" aria-hidden="true"></i>Monitoring</span>
+  </div>
+  <div class="ta-maphead"><span class="ta-map-title"><span aria-hidden="true">🎯</span> Priority Regions</span>
+    <a class="ta-viewall" href="#section-map">View All →</a></div>
   <div style="overflow-x:auto"><table class="ta-table" data-tm="ptable" aria-label="Priority regions">
-    <thead><tr><th scope="col">Region</th><th scope="col">Score</th><th scope="col">Severity</th><th scope="col">Events</th></tr></thead>
-    <tbody data-tm="pbody"><tr><td colspan="4">Loading…</td></tr></tbody>
+    <thead><tr><th scope="col">#</th><th scope="col">Region</th><th scope="col">Activity</th><th scope="col">Impact</th><th scope="col">Trend</th></tr></thead>
+    <tbody data-tm="pbody"><tr><td colspan="5">Loading…</td></tr></tbody>
   </table></div>
   <div class="ta-tiles2">
     <div class="ta-tile" role="listitem" tabindex="0" aria-label="Active conflicts"><div class="v ta-mono" data-tm="conflicts">31</div><div class="l">Active conflicts</div></div>
     <div class="ta-tile" role="listitem" tabindex="0" aria-label="Monitored regions"><div class="v ta-mono" data-tm="regions">9</div><div class="l">Monitored regions</div></div>
   </div>
-  <h3>What Changed (24H)</h3>
+  <div class="ta-maphead"><span class="ta-map-title"><span aria-hidden="true">⚪</span> What Changed</span>
+    <a class="ta-viewall" href="#section-map">View All →</a></div>
   <ul class="ta-changed" data-tm="changed"></ul>
   <div class="ta-empty" data-tm="empty" hidden>No map data yet — check data/gui-fixtures.json.</div>
 </section>
