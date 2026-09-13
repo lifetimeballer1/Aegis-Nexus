@@ -107,3 +107,8 @@
 .ta-dot5{width:9px;height:9px;border-radius:2px;background:#1c3247;display:inline-block}
 .ta-dot5.on.critical{background:#ff405f}.ta-dot5.on.elevated{background:#ffc857}.ta-dot5.on.notable{background:#4d9aff}
 @media (max-width:520px){.ta-tiles6{grid-template-columns:repeat(3,minmax(0,1fr))}.ta-row2{grid-template-columns:minmax(0,1fr)}}
+
+/* Phone screenshots (390px): stat-tile labels must never split mid-word. */
+.ta-tile6{min-width:0}
+.ta-tile6 .l,.ta-tile6 .s,.ta-tile .l{word-break:normal;overflow-wrap:normal;hyphens:none}
+@media (max-width:520px){.ta-tile6 .l{font-size:9px}.ta-tile6 .s{font-size:8px}.ta-tile .l{font-size:9px}}

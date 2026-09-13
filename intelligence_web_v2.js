@@ -22,6 +22,7 @@ const ABYSS={maxLabels:28,farLabels:10,fitDist:0,haloScale:1.9,haloOpacity:.22,d
    simulation, and cap labels/edges/pixel-ratio to stay smooth. */
 const isNarrowViewport=()=>{try{if(typeof window!=='undefined'&&Number(window.innerWidth)>0)return Number(window.innerWidth)<=700;if(typeof matchMedia==='function')return matchMedia('(max-width: 700px)').matches}catch{}return false};
 const MOBILE_LABEL_CAP=10,MOBILE_FAR_CAP=6,MOBILE_EDGE_CAP=220;
+const MINOR_MENTIONS=5,MINOR_MAX_DEGREE=2;
 function applyViewportCaps(){try{if(isNarrowViewport()){ABYSS.maxLabels=MOBILE_LABEL_CAP;ABYSS.farLabels=MOBILE_FAR_CAP}else{ABYSS.maxLabels=28;ABYSS.farLabels=10}}catch{}}
 const reducedMotion=()=>typeof matchMedia==='function'&&matchMedia('(prefers-reduced-motion: reduce)').matches;
 const isMajor=n=>/\b(united states|\bu\.s\.|\busa\b|china|\bprc\b)/i.test(String(n&&n.label||'')+' '+String(n&&n.id||''));
@@ -103,6 +104,32 @@ function render(){
   }
   const keep=new Set(view.focus.map(n=>String(n.id)));
   links.forEach(e=>{keep.add(e.source);keep.add(e.target)});
+  /* Declutter: collapse sub-threshold minor nodes at the default view so
+     scattered unlabeled dots stop ringing the labeled core. Minor = not a
+     major power, fewer than MINOR_MENTIONS mentions, at most
+     MINOR_MAX_DEGREE links. Explicit search/category matches are never
+     collapsed. The WEAK LINKS toggle reveals everything; the stats line
+     keeps an honest +N more count. */
+  let minorHidden=0;
+  if(!showWeak){
+    const searching=(query&&query.trim()!=='')||filter!=='all';
+    const focusIds=new Set(view.focus.map(n=>String(n.id)));
+    const byId=new Map(view.nodes.map(n=>[String(n.id),n]));
+    const deg=new Map();
+    links.forEach(e=>{deg.set(String(e.source),(deg.get(String(e.source))||0)+1);deg.set(String(e.target),(deg.get(String(e.target))||0)+1)});
+    const minor=new Set();
+    keep.forEach(id=>{
+      id=String(id);
+      if(searching&&focusIds.has(id))return;
+      const n=byId.get(id);
+      if(n&&!isMajor(n)&&(Number(n.mentions)||0)<MINOR_MENTIONS&&(deg.get(id)||0)<=MINOR_MAX_DEGREE)minor.add(id);
+    });
+    if(minor.size){
+      minorHidden=minor.size;
+      minor.forEach(id=>keep.delete(id));
+      links=links.filter(e=>!minor.has(String(e.source))&&!minor.has(String(e.target)));
+    }
+  }
   active={nodes:view.nodes.filter(n=>keep.has(String(n.id))),links};
   ABYSS.fitDist=0;
   close();
@@ -117,7 +144,7 @@ function render(){
   fitTimer=setTimeout(()=>{if(active.nodes.length){try{window.__gpGraph.zoomToFit(isNarrowViewport()?400:700,isNarrowViewport()?20:90)}catch{}try{const ctl=window.__gpGraph.controls?.();if(ctl&&ctl.target&&typeof ctl.target.set==='function'){ctl.target.set(0,0,0);if(typeof ctl.update==='function')ctl.update()}}catch{}}setTimeout(()=>{try{const p=window.__gpGraph.cameraPosition();ABYSS.fitDist=Math.sqrt(Math.pow(Number(p.x)||0,2)+Math.pow(Number(p.y)||0,2)+Math.pow(Number(p.z)||0,2))||0}catch{}syncLabels()},900);syncLabels()},450);
   const range=period==='all'?'all available dates':`last ${period} hours`;
   pulseThreshold=view.nodes.reduce((m,n)=>Math.max(m,Number(n.mentions)||0),0)*.55;
-  $('stats').innerHTML='<b>'+view.focus.length+'</b> matching entities · <b>'+active.nodes.length+'</b> visible · <b>'+active.links.length+'</b> evidence-backed connections'+(showWeak?'':' · <b>'+weakHidden+'</b> weak links hidden')+(mobileEdgeTrim>0?' · <b>'+mobileEdgeTrim+'</b> edges trimmed (mobile)':'')+' · '+range+' · updated '+esc(base.updatedAt||'unknown');
+  $('stats').innerHTML='<b>'+view.focus.length+'</b> matching entities · <b>'+active.nodes.length+'</b> visible · <b>'+active.links.length+'</b> evidence-backed connections'+(showWeak?'':' · <b>'+weakHidden+'</b> weak links hidden')+(minorHidden>0?' · <b>+'+minorHidden+' more</b> minor nodes (WEAK LINKS shows all)':'')+(mobileEdgeTrim>0?' · <b>'+mobileEdgeTrim+'</b> edges trimmed (mobile)':'')+' · '+range+' · updated '+esc(base.updatedAt||'unknown');
   $('trend').textContent=period==='all'?'All available source dates':'Only source records published in the last '+period+' hours; undated records excluded.';
   $('node-select').innerHTML='<option value="">'+(view.focus.length?'Select a matching entity…':'No matching entities')+'</option>'+view.focus.map(n=>'<option value="'+esc(n.id)+'">'+esc(n.label)+'</option>').join('');
   $('node-select').disabled=!view.focus.length;

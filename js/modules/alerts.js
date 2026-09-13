@@ -11,6 +11,8 @@ let levelFilter = 'all';
 let expandedKey = null;
 let showAll = false;
 
+const LEVELS = ['critical', 'watch', 'info', 'healthy'];
+const LEVEL_LABEL = { critical: 'Critical', watch: 'Watch', info: 'Info', healthy: 'Healthy' };
 const LEVEL_KEY = 'gp.alertLevel.v1';
 try {
   const saved = localStorage.getItem(LEVEL_KEY);
@@ -36,8 +38,6 @@ function ackTime(key) {
   return typeof v === 'string' ? v : (v.at || null);
 }
 
-const LEVELS = ['critical', 'watch', 'info', 'healthy'];
-const LEVEL_LABEL = { critical: 'Critical', watch: 'Watch', info: 'Info', healthy: 'Healthy' };
 
 function conflictSeverity(conflict) {
   return escalationSeverity(conflict.escalation);
@@ -169,7 +169,7 @@ export function renderAlerts() {
   }).join('');
 
   el.innerHTML = `<div class="gp-filter-row" role="group" aria-label="Filter alerts by severity">${chips}</div>`
-    + (rows ? `<div class="gp-alert-list-scroll" role="region" aria-label="Alert queue" tabindex="0">${rows}</div>` : '<div class="gp-state"><div class="gp-state-title">No alerts at this severity</div><div>Nothing in the current snapshot matches this filter.</div></div>)'
+    + (rows ? `<div class="gp-alert-list-scroll" role="region" aria-label="Alert queue" tabindex="0">${rows}</div>` : '<div class="gp-state"><div class="gp-state-title">No alerts at this severity</div><div>Nothing in the current snapshot matches this filter.</div></div>')
 
     + (visible.length > 12 ? `<button id="alertsMore" class="gp-btn gp-more" type="button">${showAll ? 'Show fewer' : `Show all ${visible.length}`}</button>` : '')
     + `<div class="gp-dash-panel" style="margin-top:8px"><h3>Acknowledgement Status <span style="font-weight:400;color:var(--muted);font-size:10px">${ackKeys.length} acknowledged · ${unackedCritical} unacked critical/watch · this device only</span></h3>`

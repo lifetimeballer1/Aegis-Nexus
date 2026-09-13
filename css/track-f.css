@@ -38,3 +38,8 @@
 @media (min-width:720px){.tf-tiles{grid-template-columns:repeat(3,minmax(0,1fr))}.tf-nav{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media (min-width:1080px){.tf-tiles{grid-template-columns:repeat(6,minmax(0,1fr))}}
 @media (prefers-reduced-motion:reduce){.tf-overview *{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* Phone screenshots (390px): overview tile labels must never split mid-word. */
+.tf-tile{min-width:0}
+.tf-tile .tf-l{word-break:normal;overflow-wrap:normal;hyphens:none}
+@media (max-width:520px){.tf-tile .tf-l{font-size:9px}}

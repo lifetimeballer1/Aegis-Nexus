@@ -2,7 +2,7 @@
 (function () {
   'use strict';
   var FIXTURE_URL = 'data/gui-fixtures.json';
-  var currentRange = '24H';
+  var currentRange = '7D';
 
   function esc(s) {
     return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
@@ -67,14 +67,23 @@
     if (r) r.textContent = String(regs.length || 9);
   }
 
-  /* ref: 24H window has no dated signals -> amber empty-state note + "0 of 80"; 7D/30D show "80 of 80". */
+  /* The fixtures snapshot carries aggregate region counts plus one frozenAt
+   * timestamp - no per-signal dates. 7D/30D show the snapshot aggregate.
+   * 24H cannot be resolved honestly from undated aggregates, so it falls
+   * back to the 7D aggregate and the caption says so. Default view is 7D:
+   * the map never opens on a dead empty window. */
   function renderWindow(root, f) {
     var total = ((f.signals || {}).liveEvents) || 80;
     var sub = tm(root, 'winsub');
     var note = tm(root, 'emptynote');
-    var dated = currentRange !== '24H';
-    if (sub) sub.textContent = 'All Domains · ' + currentRange + ' · ' + (dated ? total + ' of ' + total : '0 of ' + total) + ' signals · dark operational basemap';
-    if (note) note.hidden = dated;
+    var fallback = currentRange === '24H';
+    var shown = fallback ? '7D' : currentRange;
+    if (sub) sub.textContent = 'All Domains · ' + shown + ' · ' + total + ' of ' + total + ' signals · dark operational basemap'
+      + (fallback ? ' (24H not dated in snapshot - showing 7D)' : '');
+    if (note) {
+      note.hidden = !fallback;
+      if (fallback) note.textContent = 'No per-signal dates in this snapshot - 24H cannot be resolved, showing the 7D aggregate. Try 7D/30D for the full window.';
+    }
   }
 
   function renderChanged(root, f) {
@@ -116,7 +125,7 @@
     if (!box) return;
     var btns = box.querySelectorAll('button[data-range]');
     function select(btn) {
-      currentRange = btn.getAttribute('data-range') || '24H';
+      currentRange = btn.getAttribute('data-range') || '7D';
       for (var i = 0; i < btns.length; i++) {
         var on = btns[i] === btn;
         btns[i].setAttribute('aria-pressed', on ? 'true' : 'false');

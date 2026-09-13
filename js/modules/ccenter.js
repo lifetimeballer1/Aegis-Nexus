@@ -1,5 +1,5 @@
 /* Track A GUI-1 Command Center (ref-fidelity rebuild). Vanilla JS. Fetches data/gui-fixtures.json only. No live pipeline.
-   Ref-pinned display values (exact target look) are marked /* ref-pin */; fixture-backed values are marked /* fixture */. */
+   Ref-pinned display values (exact target look) are marked ref-pin; fixture-backed values are marked fixture. */
 (function () {
   'use strict';
   var FIXTURE_URL = 'data/gui-fixtures.json';
