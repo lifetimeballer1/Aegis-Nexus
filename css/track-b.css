@@ -1,0 +1,75 @@
+/* TRACK-B — Command-Timeline section (Concepts 01/05/06 refs).
+   Dark command-center theme, mobile-first. Consumes the canonical
+   tokens in css/tokens.css ONLY — this file defines no custom
+   properties. Touch targets stay >= 36px. Shared primitives
+   (.gp-btn/.gp-filter/.gp-sev/.gp-state) are reused, never restyled. */
+
+.ct-section { min-width: 0; }
+
+.ct-head { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+.ct-title { font-size: 13px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--text-secondary); margin: 0; }
+.ct-meta { font-size: 10px; color: var(--muted-2); }
+
+.ct-toolbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 10px; }
+.ct-search { flex: 1 1 200px; min-width: 0; min-height: 36px; background: var(--bg-elevated); border: 1px solid var(--line); border-radius: 8px; color: var(--text); padding: 8px 10px; font-size: 12px; }
+.ct-search::placeholder { color: var(--muted-2); }
+.ct-search:focus { outline: 1px solid var(--line-focus); }
+.ct-countdown { font-family: var(--font-mono); font-size: 11px; color: var(--muted); background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; min-height: 36px; cursor: pointer; white-space: nowrap; }
+.ct-countdown:hover { border-color: var(--line-strong); color: var(--text-secondary); }
+
+.ct-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 10px; min-width: 0; }
+.ct-panel { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 12px; min-width: 0; }
+.ct-panel > h3 { font-size: 11px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 0 0 4px; }
+.ct-sub { display: block; font-size: 10px; color: var(--muted-2); font-weight: 400; letter-spacing: 0; text-transform: none; margin-bottom: 8px; }
+
+/* Headline cards 01-04 */
+.ct-hl { border: 1px solid var(--line); border-radius: 10px; background: var(--panel-2); padding: 10px; margin-bottom: 8px; }
+.ct-hl-top { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.ct-num { font-family: var(--font-mono); font-size: 12px; font-weight: 800; color: var(--cyan); }
+.ct-tag { font-size: 9px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--blue); background: var(--bg-elevated); border: 1px solid var(--line); border-radius: 6px; padding: 2px 6px; }
+.ct-hl-title { font-size: 13px; font-weight: 700; color: var(--text); margin: 6px 0; overflow-wrap: break-word; }
+.ct-hl-meta { font-size: 10px; color: var(--muted-2); overflow-wrap: break-word; }
+.ct-hl-actions { margin-top: 8px; }
+.ct-brief { margin-top: 8px; border-top: 1px dashed var(--line-strong); padding-top: 8px; font-size: 12px; color: var(--text-secondary); overflow-wrap: break-word; }
+.ct-brief-row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-bottom: 6px; }
+.ct-frozen-note { font-size: 10px; color: var(--muted-2); margin-top: 6px; }
+
+/* Tension deep dive */
+.ct-tension-hero { display: flex; gap: 12px; align-items: center; margin-bottom: 4px; flex-wrap: wrap; }
+.ct-tension-score { font-family: var(--font-mono); font-size: 40px; font-weight: 800; color: var(--text); line-height: 1; font-variant-numeric: tabular-nums; }
+.ct-tension-side { display: flex; flex-direction: column; gap: 4px; }
+.ct-delta { font-family: var(--font-mono); font-size: 11px; font-weight: 700; }
+.ct-delta-up { color: var(--red); }
+.ct-delta-down { color: var(--green); }
+.ct-delta-na { color: var(--muted-2); font-weight: 400; }
+.ct-bar-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 8px; padding: 6px 0; border-top: 1px solid var(--line); }
+.ct-bar-label { font-size: 12px; color: var(--text-secondary); overflow-wrap: break-word; }
+.ct-bar-val { font-family: var(--font-mono); font-size: 12px; color: var(--text); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.ct-bar-track { grid-column: 1 / -1; height: 6px; border-radius: 3px; background: var(--bg-deep); overflow: hidden; }
+.ct-bar-fill { display: block; height: 100%; border-radius: 3px; background: linear-gradient(90deg, var(--blue-dim), var(--cyan)); }
+.ct-bar-fill.hot { background: linear-gradient(90deg, var(--amber-dim), var(--amber)); }
+.ct-bar-fill.crit { background: linear-gradient(90deg, var(--red-dim), var(--red)); }
+
+/* Domain mix */
+.ct-mix-row { display: grid; grid-template-columns: minmax(0, 110px) minmax(0, 1fr) auto; gap: 8px; align-items: center; padding: 5px 0; border-top: 1px solid var(--line); }
+.ct-mix-row:first-of-type { border-top: 0; }
+.ct-mix-label { font-size: 11px; color: var(--text-secondary); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ct-mix-count { font-family: var(--font-mono); font-size: 11px; color: var(--text); font-variant-numeric: tabular-nums; }
+
+/* Alerts & priority feed (fixtures-backed replacement feed) */
+.ct-feed-row { border: 1px solid var(--line); border-left-width: 3px; border-radius: 8px; background: var(--panel-2); padding: 8px 10px; margin-bottom: 8px; }
+.ct-sev-critical { border-left-color: var(--sev-critical); }
+.ct-sev-watch { border-left-color: var(--sev-watch); }
+.ct-sev-info { border-left-color: var(--sev-info); }
+.ct-feed-title { font-size: 12px; font-weight: 700; color: var(--text); overflow-wrap: break-word; }
+.ct-feed-meta { font-size: 10px; color: var(--muted-2); margin-top: 2px; overflow-wrap: break-word; }
+.ct-feed-head { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+.ct-src-badge { font-size: 9px; font-weight: 800; letter-spacing: .08em; color: var(--green); border: 1px solid var(--line); border-radius: 6px; padding: 2px 6px; }
+.ct-fail-src { font-size: 11px; color: var(--text-secondary); padding: 3px 0; border-top: 1px solid var(--line); overflow-wrap: break-word; }
+.ct-fail-src:first-of-type { border-top: 0; }
+.ct-details { font-size: 11px; color: var(--muted); margin-top: 4px; }
+.ct-details summary { cursor: pointer; min-height: 36px; display: inline-flex; align-items: center; color: var(--text-secondary); }
+
+@media (min-width: 900px) {
+  .ct-grid-2 { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+}
