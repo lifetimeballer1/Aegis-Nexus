@@ -78,3 +78,20 @@
   .gp-command-tabs .gp-nav-item{padding:6px 8px;font-size:11px}
   table,.cc-table{max-width:100%}
 }
+
+/* MOBILE TAB ORDER (mobile-order) — mobile-only section/nav sequence.
+   Desktop layout stays exactly as-is: every rule below lives inside this
+   max-width query. Lead order: Command Center, Conflict Watch, Map,
+   Intel Web; all other sections/nav items follow in source order. */
+@media (max-width:899px){
+  .gp-app-main > .gp-section{order:10}
+  .gp-app-main > #section-dashboard{order:1}
+  .gp-app-main > #section-conflicts{order:2}
+  .gp-app-main > #section-map{order:3}
+  .gp-app-main > #section-intelweb{order:4}
+  .gp-bottom-nav > .gp-nav-item{order:10}
+  .gp-bottom-nav > [data-nav="dashboard"]{order:1}
+  .gp-bottom-nav > [data-nav="conflicts"]{order:2}
+  .gp-bottom-nav > [data-nav="map"]{order:3}
+  .gp-bottom-nav > [data-nav="intelweb"]{order:4}
+}
