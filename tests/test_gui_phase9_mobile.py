@@ -57,3 +57,8 @@ def test_expensive_webgl_stays_deferred():
     assert 'contentVisibility' in perf
     web = (ROOT / 'js/modules/intelligence-web.js').read_text(encoding='utf-8')
     assert 'gpWebLoad3d' in web, 'dashboard 3D must stay opt-in'
+def test_map_ops_bar_no_crush():
+    css = (ROOT / "css/dashboard.css").read_text(encoding="utf-8")
+    flat = css.replace(" ", "")
+    assert ".gp-map-ops-bar{flex-wrap:nowrap" in flat
+    assert "overflow-x:auto" in css

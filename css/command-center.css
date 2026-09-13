@@ -1,0 +1,40 @@
+/* Command-center glow pass 1 — nav rail + section headers (design/command-center).
+   Static styles only: no motion, no layout shifts, mobile (bottom nav) untouched. */
+@media (min-width:900px) {
+  /* Rail: brand mark glow + group labels read as deck dividers. */
+  .gp-rail .gp-rail-brand .gp-mark{ text-shadow:0 0 10px var(--sev-info); }
+  .gp-rail-group{ padding:10px 10px 4px; font-size:9px; font-weight:800;
+    letter-spacing:.14em; text-transform:uppercase; color:var(--muted-2); }
+  /* Rail items: hover lifts with a faint glow wash, active keeps its edge
+     bar plus a soft neon bleed so the selection reads at a glance. */
+  .gp-rail .gp-nav-item:hover{ background:var(--panel-hover);
+    box-shadow:inset 0 0 0 1px var(--line-strong); }
+  .gp-rail .gp-nav-item.active{ box-shadow:inset 0 0 0 1px var(--line-strong),
+    0 0 12px -4px var(--sev-info); }
+  .gp-rail .gp-nav-item.active::before{ box-shadow:0 0 8px var(--sev-info); }
+  .gp-rail .gp-nav-item.active .gp-nav-icon{ text-shadow:0 0 8px var(--sev-info); }
+}
+/* Section headers: thin neon keyline under the header + glowing title mark,
+   so each panel reads as a command deck. Applies at all viewports. */
+.gp-section{ box-shadow:inset 0 1px 0 rgba(127,227,255,.06); }
+.gp-section-header{ position:relative; }
+.gp-section-header::after{ content:""; position:absolute; left:0; right:0; bottom:-1px;
+  height:1px; background:linear-gradient(90deg, transparent,
+  color-mix(in srgb, var(--sev-info) 45%, transparent), transparent);
+  opacity:.5; pointer-events:none; }
+.gp-section-title > span:first-child{ text-shadow:0 0 8px var(--sev-info); }
+/* Header command tabs: active tab glows instead of only changing color. */
+.gp-command-tabs .gp-nav-item.active{ text-shadow:0 0 10px var(--sev-info); }
+/* Header command tabs: rail-matching icons sit inline before labels (desktop
+   only — hidden under 700px so the 390px scroll row stays text-compact). */
+.gp-command-tabs .gp-nav-item{ display:inline-flex; align-items:center; gap:6px; }
+.gp-command-tabs .gp-nav-icon{ font-size:11px; line-height:1; opacity:.85; }
+.gp-command-tabs .gp-nav-item.active .gp-nav-icon{
+  opacity:1; text-shadow:0 0 8px var(--sev-info); }
+@media (max-width:700px){
+  .gp-command-tabs .gp-nav-icon{ display:none; }
+}
+/* Situation-live indicator: green only when nothing is failing; amber watch
+   state the moment any source fails (severity honesty). */
+.cc-live.sev-watch{ color:var(--amber); }
+.cc-live.sev-watch i{ background:var(--amber); box-shadow:0 0 8px var(--amber); }
