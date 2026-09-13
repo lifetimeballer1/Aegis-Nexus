@@ -1,0 +1,40 @@
+/* TRACK-C — Network Graph (GUI-3). Mobile-first dark command-center. Prefix cg-. */
+/* Window scaling (deterministic, documented): ALL 1.0 | 90D 1.0 | 30D 0.75 | 7D 0.45 | 24H 0.18.
+   Applied to visible-node slice (stable hash sort) + domain hub counts (round(base*f)). */
+.cg-wrap { background: var(--bg); color: var(--text); padding: 12px 12px 24px; max-width: 1100px; margin: 0 auto; }
+.cg-strip { background: linear-gradient(180deg, var(--panel) , var(--bg-elevated)); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; }
+.cg-strip h2 { font-size: 15px; margin: 0; font-weight: 800; letter-spacing: .02em; }
+.cg-tabs { display: flex; gap: 6px; margin-top: 8px; }
+.cg-tab { font-size: 11px; font-weight: 800; letter-spacing: .08em; padding: 6px 12px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); text-decoration: none; }
+.cg-tab[aria-selected="true"] { color: var(--text); border-color: var(--line-focus); background: var(--panel-2); }
+.cg-sub { font-size: 11px; color: var(--muted-2); margin: 8px 2px 0; }
+.cg-row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin: 10px 0; }
+.cg-btn { font: inherit; font-size: 12px; font-weight: 800; letter-spacing: .06em; color: var(--text); background: var(--panel-2); border: 1px solid var(--line-strong); border-radius: 8px; padding: 9px 14px; cursor: pointer; min-height: 40px; }
+.cg-btn:active { transform: translateY(1px); }
+.cg-pills { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 2px; -webkit-overflow-scrolling: touch; }
+.cg-pill { flex: 0 0 auto; font-size: 11px; font-weight: 800; padding: 8px 12px; min-height: 36px; border-radius: 999px; border: 1px solid var(--line); background: transparent; color: var(--muted); cursor: pointer; }
+.cg-pill[aria-pressed="true"] { color: var(--text); background: var(--panel-2); border-color: var(--cyan); }
+.cg-drawer { border: 1px solid var(--line); border-radius: 10px; background: var(--panel); padding: 12px; margin: 8px 0; }
+.cg-drawer[hidden] { display: none; }
+.cg-drawer h3 { font-size: 12px; margin: 0 0 8px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.cg-srcs { display: grid; gap: 6px; margin-bottom: 10px; }
+.cg-srcs label { display: flex; gap: 8px; align-items: center; font-size: 13px; min-height: 36px; }
+.cg-srcs input { width: 18px; height: 18px; accent-color: var(--cyan); }
+.cg-drawer select, .cg-drawer input[type="range"] { width: 100%; min-height: 40px; background: var(--bg-elevated); color: var(--text); border: 1px solid var(--line); border-radius: 8px; padding: 8px; font: inherit; font-size: 13px; }
+.cg-frame { position: relative; border: 1px solid var(--line); border-radius: 12px; background: radial-gradient(120% 90% at 50% 0%, #0d2033 0%, var(--bg-deep) 70%); min-height: 300px; overflow: hidden; }
+.cg-frame canvas, .cg-frame svg { display: block; width: 100%; height: 320px; touch-action: pan-y; }
+.cg-hint { position: absolute; left: 10px; bottom: 8px; font-size: 10px; color: var(--muted-2); background: rgba(3,7,12,.7); padding: 3px 8px; border-radius: 999px; border: 1px solid var(--line); }
+.cg-status { font-size: 11px; color: var(--muted); margin: 6px 2px; font-variant-numeric: tabular-nums; }
+.cg-cards { display: grid; gap: 8px; margin-top: 10px; }
+.cg-card { background: var(--panel-2); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; }
+.cg-card h4 { font-size: 13px; line-height: 1.35; margin: 0 0 6px; }
+.cg-meta { display: flex; flex-wrap: wrap; gap: 6px 10px; font-size: 11px; color: var(--muted); }
+.cg-meta a { color: var(--cyan); text-decoration: none; font-weight: 700; }
+.cg-badge { display: inline-block; font-size: 10px; font-weight: 800; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--line-strong); color: var(--text-secondary); }
+@media (min-width: 720px) {
+  .cg-wrap { padding: 16px 20px 32px; }
+  .cg-frame canvas, .cg-frame svg { height: 420px; }
+  .cg-cards { grid-template-columns: 1fr 1fr; }
+  .cg-srcs { grid-template-columns: 1fr 1fr; }
+}
+@media (prefers-reduced-motion: reduce) { .cg-btn:active { transform: none; } }

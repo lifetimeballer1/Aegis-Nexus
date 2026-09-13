@@ -1,0 +1,41 @@
+<!-- TRACK-C / GUI-3 — Network Graph section. Self-contained. Owner: builder C. -->
+<!-- INTEGRATION: paste this <section> into index.html SEARCH tab body (#searchBody), add -->
+<!-- <link rel="stylesheet" href="css/track-c.css"> in <head>, and -->
+<!-- <script type="module">import { initCgraph } from './js/modules/cgraph.js'; initCgraph();</script> -->
+<!-- Data: fetch('data/gui-fixtures.json') (copy of ~/aegis-gui/fixtures.json). No live calls. -->
+<section class="cg-wrap" id="section-cgraph" data-section="cgraph" aria-label="Network graph">
+  <div class="cg-strip">
+    <h2>Global threat monitoring &amp; analysis</h2>
+    <div class="cg-tabs" role="tablist" aria-label="Views">
+      <a class="cg-tab" role="tab" aria-selected="false" href="#section-overview">OVERVIEW</a>
+      <a class="cg-tab" role="tab" aria-selected="true" href="#section-search">SEARCH</a>
+    </div>
+  </div>
+  <p class="cg-sub">Source-backed details. Every node and card traces to a fixture outlet.</p>
+  <div class="cg-row">
+    <button class="cg-btn" id="cgFiltersBtn" aria-expanded="false" aria-controls="cgDrawer">OPEN FILTERS</button>
+  </div>
+  <div class="cg-drawer" id="cgDrawer" hidden>
+    <h3>Filters</h3>
+    <div class="cg-srcs" id="cgSources"></div>
+    <label for="cgCat" style="font-size:11px;color:var(--muted)">Category</label>
+    <select id="cgCat"><option value="">All categories</option></select>
+    <label for="cgMinRep" style="font-size:11px;color:var(--muted)">Min reports: <span id="cgMinRepVal">0</span></label>
+    <input type="range" id="cgMinRep" min="0" max="5" step="1" value="0">
+  </div>
+  <div class="cg-pills" id="cgPills" role="group" aria-label="Network activity window">
+    <button class="cg-pill" data-win="ALL" aria-pressed="true">ALL</button>
+    <button class="cg-pill" data-win="24H" aria-pressed="false">24H</button>
+    <button class="cg-pill" data-win="7D" aria-pressed="false">7D</button>
+    <button class="cg-pill" data-win="30D" aria-pressed="false">30D</button>
+    <button class="cg-pill" data-win="90D" aria-pressed="false">90D</button>
+  </div>
+  <div class="cg-status" id="cgStatus" role="status">Loading fixture…</div>
+  <div class="cg-frame" id="cgFrame">
+    <canvas id="cgCanvas" aria-label="Story network graph (lazy canvas)"></canvas>
+    <div id="cgSvgFallback" hidden></div>
+    <span class="cg-hint" id="cgHint">scroll to load • drag to pan • pinch to zoom</span>
+  </div>
+  <div class="cg-cards" id="cgCards" aria-live="polite"></div>
+  <noscript><p class="cg-sub">Network graph needs JavaScript; story list unavailable without it.</p></noscript>
+</section>
