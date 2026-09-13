@@ -1,7 +1,15 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-13T19:54:26.367672Z",
+  "updatedAt": "2026-09-13T21:11:47.481947Z",
   "runs": [
+    {
+      "runId": "34783005625",
+      "trigger": "push",
+      "startedAt": "2026-09-13T21:10:37.149277Z",
+      "finishedAt": "2026-09-13T21:11:47.481947Z",
+      "durationSeconds": 70.3,
+      "status": "Success"
+    },
     {
       "runId": "34779011098",
       "trigger": "schedule",
@@ -232,14 +240,6 @@
       "startedAt": "2026-09-10T20:04:50.067525Z",
       "finishedAt": "2026-09-10T20:06:37.856126Z",
       "durationSeconds": 107.8,
-      "status": "Success"
-    },
-    {
-      "runId": "34512961337",
-      "trigger": "workflow_dispatch",
-      "startedAt": "2026-09-10T18:15:33.982189Z",
-      "finishedAt": "2026-09-10T18:16:48.956141Z",
-      "durationSeconds": 75.0,
       "status": "Success"
     }
   ]
