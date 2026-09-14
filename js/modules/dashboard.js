@@ -22,6 +22,29 @@ export function inMapWindow(e, period) {
   if (period === '30D') return ageH <= 30 * 24;
   return ageH <= 24;
 }
+export function eventAgeH(e, nowMs) {
+  const t = eventTime(e);
+  if (!t) return null;
+  const ms = Date.parse(t);
+  if (!Number.isFinite(ms)) return null;
+  return ((nowMs ?? Date.now()) - ms) / 36e5;
+}
+// Stale-data fallback (2026-09-14): when a window matches nothing but dated
+// signals exist, show the latest available instead of a dead blank. Honest -
+// never fabricates dates; the note discloses the fallback and data age.
+export function resolveMapWindow(events, period, nowMs) {
+  const list = Array.isArray(events) ? events : [];
+  const inWindow = list.filter(e => inMapWindow(e, period));
+  if (inWindow.length) return { shown: inWindow, inWindow: inWindow.length, total: list.length, fallback: false, newestAgeH: null };
+  const dated = list.filter(e => eventAgeH(e, nowMs) !== null).sort((a, b) => eventAgeH(a, nowMs) - eventAgeH(b, nowMs));
+  if (!dated.length) return { shown: [], inWindow: 0, total: list.length, fallback: false, newestAgeH: null };
+  const ages = dated.map(e => Math.max(0, eventAgeH(e, nowMs)));
+  return { shown: dated, inWindow: 0, total: list.length, fallback: true, newestAgeH: Math.min(...ages) };
+}
+export function fallbackNote(period, newestAgeH) {
+  const age = Number.isFinite(newestAgeH) ? (newestAgeH < 48 ? `${Math.max(0, Math.round(newestAgeH))}h` : `${Math.round(newestAgeH / 24)}d`) : 'unknown age';
+  return `No signals in ${period} - showing latest available - newest ${age} old`;
+}
 
 function fmtInt(v) { return Number.isFinite(Number(v)) ? Number(v).toLocaleString() : '—'; }
 function esc(v) { return escapeHtml(String(v ?? '')); }
@@ -222,9 +245,10 @@ export function renderDashboard() {
   const mapPeriod = dashboardMapView.period || '24H';
   const mapDated = events.filter(e => eventTime(e));
   const mapUndated = events.length - mapDated.length;
-  const mapInWindow = events.filter(e => inMapWindow(e, mapPeriod));
+  const mapWin = resolveMapWindow(events, mapPeriod);
+  const mapInWindow = mapWin.shown;
   const mapPeriodBtns = MAP_PERIODS.map(p => `<button type="button" data-dash-period="${p}" aria-pressed="${p === mapPeriod}" style="font-size:10px;padding:2px 8px;border-radius:20px;border:1px solid var(--line-strong);background:${p === mapPeriod ? 'var(--blue)' : 'transparent'};color:${p === mapPeriod ? '#fff' : 'var(--muted)'};cursor:pointer">${p}</button>`).join('');
-  const mapWindowNote = mapInWindow.length === 0 ? `<div style="font-size:10px;color:var(--amber);margin-top:6px">No dated signals in this window — try 7D/30D. No dated signals in ${esc(mapPeriod)} window.</div>` : '';
+  const mapWindowNote = mapWin.fallback ? `<div style="font-size:10px;color:var(--amber);margin-top:6px">${esc(fallbackNote(mapPeriod, mapWin.newestAgeH))}</div>` : (mapInWindow.length === 0 ? `<div style="font-size:10px;color:var(--amber);margin-top:6px">No dated signals in ${esc(mapPeriod)} window.</div>` : '');
   const mapUndatedNote = mapUndated > 0 ? `<div style="font-size:10px;color:var(--muted-2);margin-top:4px">incl. ${fmtInt(mapUndated)} undated signals shown as latest snapshot</div>` : '';
 
   el.innerHTML = `
