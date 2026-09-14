@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "generatedAt": "2026-09-14T16:20:14.805602Z",
+  "generatedAt": "2026-09-14T18:10:16.153533Z",
   "sourceBackedOnly": true,
   "method": "Source-backed Brain evidence plus dict/list action layers; co-mention targets are co-occurrence volumes, not causality.",
   "signals": [
@@ -9,11 +9,11 @@
       "signal": "United States shows source-backed technology activity",
       "category": "technology",
       "categories": {
-        "technology": 65,
-        "political": 50,
+        "technology": 69,
+        "political": 52,
         "military": 40,
-        "diplomatic": 26,
-        "energy": 20,
+        "diplomatic": 27,
+        "energy": 19,
         "economic": 16,
         "security": 15,
         "maritime": 11
@@ -22,11 +22,11 @@
       "topTargets": [
         {
           "target": "Iran",
-          "mentions": 19
+          "mentions": 18
         },
         {
           "target": "Oil",
-          "mentions": 16
+          "mentions": 15
         },
         {
           "target": "China",
@@ -41,10 +41,10 @@
           "mentions": 3
         }
       ],
-      "actionCount": 243,
-      "actionEvidenceCount": 243,
-      "categoryCount": 65,
-      "targetCount": 19,
+      "actionCount": 249,
+      "actionEvidenceCount": 249,
+      "categoryCount": 69,
+      "targetCount": 18,
       "evidenceCount": 92,
       "lastEvidenceTime": "Wed, 04 Mar 2026 08:00:00 GMT",
       "intensity": 100,
@@ -177,12 +177,12 @@
       "signal": "China shows source-backed technology activity",
       "category": "technology",
       "categories": {
-        "technology": 60,
-        "military": 29,
-        "security": 28,
+        "technology": 62,
+        "security": 31,
+        "military": 30,
         "economic": 25,
-        "political": 20,
-        "diplomatic": 17,
+        "political": 22,
+        "diplomatic": 18,
         "maritime": 9,
         "energy": 8
       },
@@ -205,18 +205,42 @@
           "mentions": 2
         },
         {
-          "target": "Yemen",
-          "mentions": 1
+          "target": "Russia",
+          "mentions": 2
         }
       ],
-      "actionCount": 196,
-      "actionEvidenceCount": 196,
-      "categoryCount": 60,
+      "actionCount": 205,
+      "actionEvidenceCount": 205,
+      "categoryCount": 62,
       "targetCount": 8,
-      "evidenceCount": 99,
-      "lastEvidenceTime": "2026-09-14T15:52:25+00:00",
+      "evidenceCount": 100,
+      "lastEvidenceTime": "2026-09-14T17:38:15+00:00",
       "intensity": 100,
       "evidence": [
+        {
+          "title": "China’s Top Spy Chief Warns A.I. Is a Threat to Party Rule - The New York Times",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNWnliOXZJeEJxZVNWd1RHbjdRam5qeXN4Y25OUTlkODQzd29SSkFadDhFanBNY0J5UnlxM29GY3R0R1c3amVfb1FldzdYZW5sclJBdDNYc2l0TjM2NGVmU2MwWDlsUF9MUGVjMld2ZU52Rnltd3dmbUx5WUZYSFpaOHd1Mm5zVUR5YUF0TQ?oc=5",
+          "source": "Google News — China Politics / CCP",
+          "time": "2026-09-14T17:38:15+00:00"
+        },
+        {
+          "title": "EU states to raise game as Arctic becomes strategic geopolitical frontier",
+          "url": "https://www.aljazeera.com/news/2026/9/14/eu-states-to-raise-game-as-arctic-becomes-strategic-geopolitical-frontier?traffic_source=rss",
+          "source": "Al Jazeera",
+          "time": "2026-09-14T17:30:36+00:00"
+        },
+        {
+          "title": "Cannonball, Cavalry, or Complacency: Interpreting The Latest Chinese Government Economic Outlook In Advance Of The Next Trump-Xi Summit - KraneShares",
+          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOajJBUGE3NmpIUF9yOHoxUFExVk9Ya2tNYXNqYVBjTExwZEY2SFF6WnloMnh1XzljVmk2amtqR3RtUnpjdDJWT1U3VGdLUjd2VWJOYlB4WDktOFlROUs0eXJRaHo0ME9xMklPeVJfYmxxOWVrcDZYWjBlaWJqbVBJQk1pSEhZUU5DUjJpZUpoN2RUTjNVdGpEd1F4b0hrRXNESC12aGs5MkNWVllSdDN3MHVFZmlacV9LWlhObG9XLUNneER2WlQ1bUNTUVpoVXJyVTU2SFM3Q3cxSUI4N01ZSDBhUTlHa2YwRU5kSDFn?oc=5",
+          "source": "Google News — China Economy / Trade",
+          "time": "2026-09-14T16:32:22+00:00"
+        },
+        {
+          "title": "The continued resumption of China-US security dialogue sends multiple signals: Global Times editorial - Global Times",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9XSXUxV29RWUlMQXFneE1oUm5la3JPakMxSmtaX0VPb3V0VTVRdTlWcmFyYnhKMUQtbGFSN0NsMmM3T3NhV2FvT0NtS3hLTE4tdTh6RWZldGZOSkdSTU10d1Bn?oc=5",
+          "source": "Google News — China Security / PLA",
+          "time": "2026-09-14T16:08:00+00:00"
+        },
         {
           "title": "Constructive strategic stability or strategic accommodation? - upi.com",
           "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPcENhU1duQmtwVUc2N2M3bVN4T29Sb3BlUjJhUmZ2TlZZWmxqdGoyUVNyUUQxQjRSLWRfUXZJaFJiQXNMeG9FcGVkSWFENXpPdDd0azFrd0w0OWNTZXFyU1JTQk43X0RYa0NVSVZwUnF6S3lVTXduaWk0NjdpLWw5WDJwNVkzWnPSAYwBQVVfeXFMT2h2RjBXM3BTOTVqM3RtQVlyeVUzR1Ruei1BbXJYVml3Zmc1dW1sTVMyRUtLTmQzbFRJc3ktN1phRVVBWTlndjZTN1kyNjUtc1lXc0pjQm9lTlhlQ1lVNE5LbVdqRkVpTFBtekxwQmZqVWZlT1BGQ2NnRFlvYmI2UzNmS0xtZV82eUZYdk4?oc=5",
@@ -290,6 +314,12 @@
           "time": "2026-09-14T12:00:08+00:00"
         },
         {
+          "title": "Taiwan defence logistics under fire over missing chargers for US drones - South China Morning Post",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNMTFoNkxWY0luZy1heTY5MEdHcEdPMkdWbkQ0dG5GMWJwdHF6ME9vbnJ0MFhlUEk4VUxaT1VSd191c3dWanpWUWo0UEZNWnZmRzNzdmdac2FfZUZCZUJIaFh6bU93djVoSmZZMEFSTGp6ZmItb3drQkJVRjJwblZUNkR1VlkxVHBZeVlNeTd3N0tpSU15R3cxYkkzMHM5UHlSVHRianJLUGx3YUVfdjFVaTh4TVUycXRTejZmWTdNa2xZUdIBwgFBVV95cUxOMUFPcERfTjFLLVlJazkzUmZyZl9NU2IwdjdZaDRXZlNfV2ZCNlo2RFJtSXFWbHh6Q0w2TjJ3a3NYY3d2MTBZZmdJTVVoSzA2Z2s1ODRfbmJNTnFYaFE1NnhSQ2JkYnhhZlEwbGdmR0xncHNLTWpaV1NzOTk1Z2xIb2xhUk1OSnN1a3NiNGsydUZVR2JSSnBVam1tWEs1Y3NQVVZxdkx6SmFKc2MyUE9BT1J3aTNPQVpCOXcybWVfcFRRQQ?oc=5",
+          "source": "Google News — China Security / PLA",
+          "time": "2026-09-14T12:00:08+00:00"
+        },
+        {
           "title": "China Opens Xiangshan Defence Forum Amid Regional Tensions - von.gov.ng",
           "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQR1F6RFllaHFxX0dSS3l0UFNkNVJqaGJ3U094ZWdWUkFEM2psY05FN1NDQVcxYnJLcjNKYlp3T25kME40cWVSOUJudnB6QXFnMFByOERqekdyblJXZkNNZzZXUW9kTmRMbVBwYXBJdzFEVDhhRFVJYmRzVUtZZ0czMVQ5WUg?oc=5",
           "source": "Google News — China Security / PLA",
@@ -306,36 +336,6 @@
           "url": "https://www.bbc.co.uk/news/articles/cn8me133119o?at_medium=RSS&at_campaign=rss",
           "source": "BBC World",
           "time": "2026-09-14T11:31:39+00:00"
-        },
-        {
-          "title": "India needs 10% manufacturing growth annually to reach 25% share by 2040: BofA Securities - malaysiasun.com",
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPZ1hGaGQ5VVVBaHplQTQxVTMzNDQzY09kajFFcnJndmJ3dzdNM1Rwd09YS0x2U1F0dzVldVZhcE0zVkJZMmdITmNMR1oxRDYwNy1qeThMQ1M1cjM5eTVGRE41MGNqMTc2RXk0bVNrNnZRNkF2d250WDM3SGtYXzBlZzZuRjVQWjhoLVRHQlA1akZZRXZBVWFtcTBUdEJsMEo3dFRuMEFvRGRqY2drRVh0WDQyVGZNdEFBcU9nSWZDdklRRXpPMUNV?oc=5",
-          "source": "Google News — China Economy / Trade",
-          "time": "2026-09-14T11:01:00+00:00"
-        },
-        {
-          "title": "China Rejects AI Export Curbs Ahead of Trump-Xi Summit - Whalesbook",
-          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOSTRlQUdBalhkM2ZjYXM3bER6b2FUTks2Zk04Y3J5T2R6dmJYT3pBa1hRSFc2U19iUW9WYW5kSzMzM2ZjNUJXVnRsSEZ0bkVFTVBabExvWk9rcm84SVVfTHQyaWhFY2FkOEtxd2Q4bXpyS2lYYjNVY1J1ZVpvM2IyaXJUckxIdll5Y29TTlRTTllpN25JUHRTNlBQOXRQNG11MG5Fa3ZjV1BVRnlib2pWZWNnc1FQcWFvMEItNEZYTU01ZHk5dWQ3d2hn?oc=5",
-          "source": "Google News — China Economy / Trade",
-          "time": "2026-09-14T10:29:20+00:00"
-        },
-        {
-          "title": "Beijing hits back at Anthropic CEO's call to curb China's AI development",
-          "url": "https://www.npr.org/2026/09/14/nx-s1-5968456/china-hits-back-ai-development",
-          "source": "NPR News",
-          "time": "2026-09-14T10:09:08+00:00"
-        },
-        {
-          "title": "Elemental Leverage: How the United States Can Stop China’s Rare-Earths Squeeze Before the Next Crisis - Center for International Maritime Security",
-          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPRWNiZUNxSkN0dWc2X0NRem91M2NrdDF6XzY5S2p3OVFqUXV2YkZyRXJiQjlZRFV2SlB6RVl2UjNmc0RpZm8yMW1KdUhVM294RmF5OENYaXotX0hMajFfZFROeTZqT2dtcUVROEZZTEJJS2Z1TDR4Nlo2V1RQZ0FiOUI1cHdqRm5GeWx4dXJNbE1DdTV2WjVtZWQwcVI3aHlDUlpWVkdXTjh0V21rZE9xWFZoa1RNVWplZnQw?oc=5",
-          "source": "Google News — China Economy / Trade",
-          "time": "2026-09-14T10:00:06+00:00"
-        },
-        {
-          "title": "Indonesia's Financial Leadership Shift Amid Economic Turmoil - Devdiscourse",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQTVRwR1Q2bnN0angwMFVNbUVWT3JGejM2eWxySlBMSjhQUEdzTlkxUEpfSmp5bzFaUEZHU3FBUHlMZkxWYzhyQkF6Wm9kdEZYZUwtMml5OEFLcmx0aUFkbHRWLU5hU240TUh6ODQ3RFgxcmhIS2JIX2xmc1lMY1VLU2lUcFJ6M05aYzRFWk9zZmRqbDFtZmdHTHlqTzVGSnRMdGptcVZOWFVLaXprRmdPRkJ1NmpudHJo0gG4AUFVX3lxTFBNVHBHVDZuc3RqeDAwVU1tRVZPckZ6MzZ5bHJKUExKOFBQR3NOWTFQSl9KanlvMVpQRkdTcUFQeUxmTFZjOHJCQXpab2R0RlhlTC0yaXk4QUtybHRpQWRsdFYtTmFTbjRNSHo4NDdEWDFyaEhLYkhfbGZzWUxjVUtTaVRwUnozTlpjNEVaT3NmZGpsMW1mZ0dMeWpPNUZKdEx0am1xVk5YVUtpemtGZ09GQnU2am50cmg?oc=5",
-          "source": "Google News — China Economy / Trade",
-          "time": "2026-09-14T09:05:07+00:00"
         }
       ],
       "sourceBacked": true
