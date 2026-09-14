@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "generatedAt": "2026-09-13T23:47:28.295813Z",
+  "generatedAt": "2026-09-14T01:44:23.263277Z",
   "sourceBackedOnly": true,
   "method": "Source-backed Brain evidence plus dict/list action layers; co-mention targets are co-occurrence volumes, not causality.",
   "signals": [
@@ -10,11 +10,11 @@
       "category": "technology",
       "categories": {
         "technology": 61,
-        "political": 48,
+        "political": 49,
         "military": 41,
         "diplomatic": 24,
         "energy": 20,
-        "economic": 17,
+        "economic": 18,
         "security": 15,
         "maritime": 10
       },
@@ -41,8 +41,8 @@
           "mentions": 3
         }
       ],
-      "actionCount": 236,
-      "actionEvidenceCount": 236,
+      "actionCount": 238,
+      "actionEvidenceCount": 238,
       "categoryCount": 61,
       "targetCount": 18,
       "evidenceCount": 92,
@@ -177,14 +177,14 @@
       "signal": "China shows source-backed technology activity",
       "category": "technology",
       "categories": {
-        "technology": 56,
-        "economic": 20,
-        "military": 19,
+        "technology": 57,
+        "economic": 21,
+        "military": 20,
+        "security": 19,
         "diplomatic": 17,
-        "security": 17,
         "political": 14,
         "maritime": 8,
-        "energy": 2
+        "energy": 4
       },
       "dominantTarget": "Iran",
       "topTargets": [
@@ -197,31 +197,61 @@
           "mentions": 2
         },
         {
+          "target": "Oil",
+          "mentions": 1
+        },
+        {
           "target": "Yemen",
           "mentions": 1
         },
         {
           "target": "Israel",
           "mentions": 1
-        },
-        {
-          "target": "United States",
-          "mentions": 1
         }
       ],
-      "actionCount": 153,
-      "actionEvidenceCount": 153,
-      "categoryCount": 56,
+      "actionCount": 160,
+      "actionEvidenceCount": 160,
+      "categoryCount": 57,
       "targetCount": 5,
-      "evidenceCount": 74,
-      "lastEvidenceTime": "2026-09-13T23:14:48+00:00",
+      "evidenceCount": 78,
+      "lastEvidenceTime": "2026-09-14T00:02:00+00:00",
       "intensity": 100,
       "evidence": [
+        {
+          "title": "Chinese defence forum set to open amid roiling regional tensions - reuters.com",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNMkRrLU5EQmZRYWFISWI0ZzFsZkkyel9ITDZrbmNlZEZVS2ZKeHJ3RUNyZVRETDZzdjEzWFhuNmtZdjB3OTVQMmZWQmJzWV9kMTRPd0FkQ1lqMEVvOWFDMUlUUmlEUlVacW00MnhBVXhQcTRNbEZTMWNiNkx0SjFYSW8zVmw4X0FnUkhiN0hZZjJOZjZmQ2xpSWJvS19RQVpFczUwNjlyVFdCLXRhVmc?oc=5",
+          "source": "Google News — China Security / PLA",
+          "time": "2026-09-14T00:02:00+00:00"
+        },
+        {
+          "title": "Oil and Conflict: The Mideast Tension Impact - Devdiscourse",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQZTV2STgzbm0zbG1zZENRSUZyb1pKSDB2U1FBVUJFWlNobkF1S21tU3hKYmxkZ0o0NVpFdGRkX2NhY3pnNUxaT0lEZ0did2lUWDdaLUxhZ1l4RHlhQ3ExYkJ4Z3A2aFpyVU5aMkQ3eGNpUUpRZy00RzhoUFplbFQwTlRzV1djVlBndHBsOVZ6RW8wU0VieFNVd1FSQ0V4cXJVcUVB0gGjAUFVX3lxTFBlNXZJODNubTNsbXNkQ1FJRnJvWkpIMHZTUUFVQkVaU2huQXVLbW1TeEpibGRnSjQ1WkV0ZGRfY2Fjemc1TFpPSURnR2J3aVRYN1otTGFnWXhEeWFDcTFiQnhncDZoWnJVTloyRDd4Y2lRSlFnLTRHOGhQWmVsVDBOVHNXV2NWUGd0cGw5VnpFbzBTRWJ4U1V3UVJDRXhxclVxRUE?oc=5",
+          "source": "Google News — China Economy / Trade",
+          "time": "2026-09-14T00:01:46+00:00"
+        },
+        {
+          "title": "China's Xiangshan Forum: Navigating Global Security in a Tense Asian Theater - Devdiscourse",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxONDJiVTZKd05zZlRHS0lsX0hBSHhPaWo1QXJRUm13T3hMT01JZld0aTdTZ3QyU3VYNHNiSUMtSWd5MllUWUoyRjN0QUtTdnlhZzlPM2xLdDU5ODdGN2lQLUpOeHpGSGFwT0xHZ3B2RjBEZkxnZ3I4eTR1bnM5UTJvR0JFXzFDSGxCQm9UUkkwYXpOMFFBRS1XeUJIMFdkemhqUGJmSnZKV3FWanJ6TmFHazFTZFhpbWlJRnBmOFAzRVJCeDM0T0VjQW5lcWfSAcwBQVVfeXFMTjQyYlU2SndOc2ZUR0tJbF9IQUh4T2lqNUFyUVJtd094TE9NSWZXdGk3U2d0MlN1WDRzYklDLUlneTJZVFlKMkYzdEFLU3Z5YWc5TzNsS3Q1OTg3RjdpUC1KTnh6RkhhcE9MR2dwdkYwRGZMZ2dyOHk0dW5zOVEyb0dCRV8xQ0hsQkJvVFJJMGF6TjBRQUUtV3lCSDBXZHpoalBiZkp2SldxVmpyek5hR2sxU2RYaW1pSUZwZjhQM0VSQngzNE9FY0FuZXFn?oc=5",
+          "source": "Google News — China Security / PLA",
+          "time": "2026-09-14T00:00:59+00:00"
+        },
+        {
+          "title": "Trump dismisses calls for AI slowdown from leading tech CEOs",
+          "url": "https://www.aljazeera.com/news/2026/9/13/trump-dismisses-calls-for-ai-slowdown-from-leading-tech-ceos?traffic_source=rss",
+          "source": "Al Jazeera",
+          "time": "2026-09-13T23:31:56+00:00"
+        },
         {
           "title": "Taiwan forum highlights growing link between China and CCP - UA.NEWS",
           "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNbHlhdnRSYnVSYlNzbU1EdXhhbHd0Mk1GTjVySEMxclRjVmRHWldmVmQxZUJxQkFNUkZqZy1tclpzenFJZC11WlAtU29rTFNXM1M5SkJscExxMEo0bWZSckRfZ095NzExM21GZEd3RnduaXU4TGFvN2k5Z2g2VC04cWw5MWNURHN1S1YxZUdYc1hUUjAycVVvQXFUUkg?oc=5",
           "source": "Google News — China Politics / CCP",
           "time": "2026-09-13T23:14:48+00:00"
+        },
+        {
+          "title": "Will the Taliban's participation in the Xiangshan conference enhance cooperation with China? - صوت الإمارات",
+          "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQZHZ1eG53eTZvRi1lWWRQMGl2ODAwODZGU1YzaVdwOGduZHpLWHlQNlRQYXozX0FmM24yckhEcmhaamc3a3hjcFlFcXBCc09uM3huTTdLc000STBPWWlwQm52OFNRMldaT2FtVDlOSzZwU3Via3RxMFJOOWY2TTh4RS1Idy1fUTYwaHNoMEctM2hteUlfd1I5dnVEZWd6aVNqZFJqcDBGa1Q0Tjd0d0Nkb3FnTjYxWnhoeWZKUjlUbzVfZzdoOU5QN3RzYjI1M3dCQkJaSU1VMjdQa1VpLTg4?oc=5",
+          "source": "Google News — Afghanistan Security",
+          "time": "2026-09-13T22:29:39+00:00"
         },
         {
           "title": "Is China Turning Economic Influence in Africa into Strategic Power? - Modern Diplomacy",
@@ -306,36 +336,6 @@
           "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNOGVFaE5INGhLYUhSZ21wbWJQOTNtdXBxbXFBRlg3dWVZRnVMbTIzdTJZLXhXYjlkWk40SUtyRS02OGpIR0stRUV0WjhLNVNidHR5N0RlNWkxQlItQnpTYmM3eVo1Yjc1NU9FMk1kckdjTjRBVTZ1WEQ1RHVIcmszQzJHLWpUakEzTjhoZTJpS3RQYi1mLUt1eE1OZEt1V0t4MEpUOGlaa25hWVFtT2pOS1NPWWYtNUVtSzBRUWVEQkZNbzRQXzh5MGlwTGd3UXfSAc8BQVVfeXFMTThlRWhOSDRoS2FIUmdtcG1iUDkzbXVwcW1xQUZYN3VlWUZ1TG0yM3UyWS14V2I5ZFpONElLckUtNjhqSEdLLUVFdFo4SzVTYnR0eTdEZTVpMUJSLUJ6U2JjN3laNWI3NTVPRTJNZHJHY040QVU2dVhENUR1SHJrM0MyRy1qVGpBM044aGUyaUt0UGItZi1LdXhNTmRLdVdLeDBKVDhpWmtuYVlRbU9qTktTT1lmLTVFbUswUVFlREJGTW80UF84eTBpcExnd1F3?oc=5",
           "source": "Google News — China Politics / CCP",
           "time": "2026-09-13T09:29:02+00:00"
-        },
-        {
-          "title": "Exclusive: Anthropic CEO on his ‘Hawkish’ position on China - CNN",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9QdnRwN2dXREwwbFZRaWw2cURHbXpwc3NpZUktbWxfUEpfSTVjblNrQVduQ0tmS05xeF9wQ1VRVDk4Rk9JWEQ3UVcweVI1RmhESGx0RQ?oc=5",
-          "source": "Google News — CNN Politics",
-          "time": "2026-09-13T09:29:00+00:00"
-        },
-        {
-          "title": "The Shadow of Mao Zedong That Will Never Disappear - Kompas.id",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNMGxJTDJ1N1RNOVV2R2FUU0ZxOFl4enZvX2NQS19tcXJpRlpMbFVxSVJ1MUlDZ0NMTFVZYm91ZDFiUU5sTzdaVlVaS18yMFk4VnZVbDQ1dFEyeWtFQ3lMQVhpT3EzYXNWLTY1cWpDbzZDM1JHUEN4YnJIbThxRUVoSlc3aTlseTg?oc=5",
-          "source": "Google News — China Politics / CCP",
-          "time": "2026-09-13T00:15:16+00:00"
-        },
-        {
-          "title": "Houthis hit Saudi base amid renewed fighting with Yemen government forces - South China Morning Post",
-          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNaGhoS1dDSllfeWd6dVhrU25nblhMRktSMUtUbTBfQXRLNDdvTkpfeVUzN1p0WGYzOWw0eHZBT1NVcWhaTG53QmtOcHJ6aDQ1dl9IZjJKcDZxbmRZbXJBeGdQenVQVTJ3Wl9nRENxZmM3bFJwVEJZS0hBQXFzcUlkSG1kWXY4b2p2X3p4eVpmM3RQUHJHcGx5LWtGclF5LVFuQkRaTHN6V2liTFFmNTNPaFdWZXRwdDBRdmZad0V0VTBTMjh0czFOaNIByAFBVV95cUxNaGhoS1dDSllfeWd6dVhrU25nblhMRktSMUtUbTBfQXRLNDdvTkpfeVUzN1p0WGYzOWw0eHZBT1NVcWhaTG53QmtOcHJ6aDQ1dl9IZjJKcDZxbmRZbXJBeGdQenVQVTJ3Wl9nRENxZmM3bFJwVEJZS0hBQXFzcUlkSG1kWXY4b2p2X3p4eVpmM3RQUHJHcGx5LWtGclF5LVFuQkRaTHN6V2liTFFmNTNPaFdWZXRwdDBRdmZad0V0VTBTMjh0czFOaA?oc=5",
-          "source": "Google News — Iran Israel",
-          "time": "2026-09-12T23:46:28+00:00"
-        },
-        {
-          "title": "Utah Gov. Cox: CCP Probably Still Controls TikTok Algorithm, They Know TikTok Is Bad, Push It on U.S. - breitbart.com",
-          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQVkRMTVF3emkydU5GZjllbTRKVnAzN2NoZ1ZsZUlSNi1kRHhZdGRXSGdGQ2xNZWhFajJLbDJvNFJ4ZWZSV3NhalB0dXA3dDlnUkQtV3BnQ2hYMWw3ZGxJcl82Q3NtRXJsdkxLN3dKeS1hS0tqZlpHWmxzQW0xTFJzR2FGSk1uV1pua1RTejdXYzQwSnpUcHdMSUFHZVA5S0QzU1pIOUZvVlY0SXpUeEJrQk8tOExCLWdLZVBCSXA0aktDdTdfV1Jsa1Rsa3pPaXViQTlEZTRKa9IB3AFBVV95cUxOUXZ5TVItdjFSc2hXVUd1VUV0LUljT1FHXzVEV2EzZTlleU1FTWVGUUFsMklkYmxrRUE5X1BHUUpwUmFBWVpzUjgtdEF3OUFkaUpDdHpvOXBDSGFmRnJaMk9FbERSNklJaktDcmlGYkg1TWlZSGNqZUI5QTBTRC1YWVNZS01GUVJOamJSOWhldFQ2QkNKdWtHX2FRb1Y3T0VCSHhkUFU4M0pvRUw3TVpzRGtpR1dKeGJULUZadzNteHM3U1RDQmxxRlg4a1U5RWI5Uy1LUkx1bU5SaVha?oc=5",
-          "source": "Google News — China Politics / CCP",
-          "time": "2026-09-12T23:22:46+00:00"
-        },
-        {
-          "title": "Iran joins Russia, China at BRICS conference calling for a halt to ‘escalation’ in Middle East - New York Post",
-          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOQk0zbEUyaDF5T3ZzZnIxU1pTaDQ0dWRFRVJxLWtmR0Q2M3cxYkt5VkgxQXVZTjllYi01WnBmVHJ3aVdHSVNhVnFWaF83S1ZxdXgwbjlTZjFnYTlyTU5wZWRnOXNkOTNRSEFOdVdwUkVBRzlPbUtYSi16NUEwaFI1REVSa2QybVZZQS1ES3drZzR2M0p4UzhWUENyYzg0blNGLUdmNnQ0bGt2MjJlTGN1Q3ZJZnNTWXA4ZHRSY09tYngwai12eXNUN2ZlM1ZFVUhJTVROZ2paLW4?oc=5",
-          "source": "Google News — Iran Israel",
-          "time": "2026-09-12T20:41:00+00:00"
         }
       ],
       "sourceBacked": true
