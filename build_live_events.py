@@ -3,11 +3,17 @@
 No API key required; consumes the existing snapshot and rapid open-data layer.
 """
 from __future__ import annotations
-import json,re,hashlib
+import json,re,hashlib,os
 from datetime import datetime,timezone
 from pathlib import Path
 from urllib.parse import urlparse
-ROOT=Path(__file__).resolve().parent; DATA=ROOT/'data'; SNAP=DATA/'snapshot.json'; RAPID=DATA/'breaking_news.json'; OUT=DATA/'live_events.json'
+ROOT=Path(__file__).resolve().parent
+def _paths(data_dir=None):
+ data=Path(data_dir) if data_dir else ROOT/'data'
+ return data/'snapshot.json',data/'breaking_news.json',data/'live_events.json'
+DATA=ROOT/'data'; SNAP=DATA/'snapshot.json'; RAPID=DATA/'breaking_news.json'; OUT=DATA/'live_events.json'
+def atomic_write(path,text):
+ tmp=path.with_suffix(path.suffix+'.tmp');tmp.write_text(text,encoding='utf-8',newline='\n');os.replace(tmp,path)
 STOP=set('the a an and or of to in on for from with by as at is are was were has have had this that report reports reported says said after before over into near amid during its their his her'.split())
 KEYWORDS={'conflict':{'attack','airstrike','missile','bomb','bombing','strike','war','fighting','invasion','clash','military','troops'},'diplomatic':{'nato','ceasefire','talks','summit','diplomatic','sanction','sanctions','agreement','negotiation'},'economic':{'tariff','trade','inflation','market','stocks','oil','crude','shipping','supply','economy','rate'},'disaster':{'earthquake','tsunami','hurricane','wildfire','flood','volcano','storm'},'political':{'election','president','parliament','congress','coup','government'}}
 # High-value geographic anchors. This is deliberately conservative and explainable.
@@ -42,7 +48,8 @@ def similarity(r,c):
  # Without a shared geographic/actor anchor, require stronger title similarity.
  if not ca: score-=.10
  return max(0,min(1,score))
-def main():
+def main(data_dir=None):
+ SNAP,RAPID,OUT=_paths(data_dir)
  stories=[]
  if SNAP.exists():
   d=json.loads(SNAP.read_text(encoding='utf-8')); stories += [x for x in d.get('stories',[]) if isinstance(x,dict)][:800]
@@ -77,6 +84,9 @@ def main():
   events.append({'id':hashlib.sha1((lead.lower()+c['kind']).encode()).hexdigest()[:16],'title':lead,'category':c['kind'],'confidence':confidence,'reportCount':len(rs),'sourceCount':len(domains),'sources':domains[:8],'anchors':sorted(c['anchors'])[:12],'firstSeen':min([str(x.get('publishedAt') or x.get('published_date') or '') for x in rs if x.get('publishedAt') or x.get('published_date')] or ['']),'lastSeen':max([str(x.get('publishedAt') or x.get('published_date') or '') for x in rs if x.get('publishedAt') or x.get('published_date')] or ['']),'urls':links[:8],'reports':rs[:8]})
  events.sort(key=lambda e:(e['reportCount'],e['sourceCount'],e['lastSeen']),reverse=True)
  payload={'updatedAt':datetime.now(timezone.utc).isoformat().replace('+00:00','Z'),'window':'recent public reporting','method':'anchor-aware title clustering with category and publication-time agreement; candidate grouping only, not proof reports describe identical facts','events':events[:80]}
- OUT.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
+ if not payload['events']:
+  raise SystemExit('live-events build produced zero clusters — refusing to overwrite')
+ atomic_write(OUT,json.dumps(payload,ensure_ascii=False,indent=2)+'\n')
  print(f'LIVE EVENTS: {len(payload["events"])} clusters from {len(reports)} unique reports')
+ return payload
 if __name__=='__main__': main()

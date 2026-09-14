@@ -96,8 +96,15 @@ function renderBrainLinks(){
   if(!showBrainLinks)return;
   const brain=mapData?.brain;if(brain?.sourceBackedOnly!==true||!Array.isArray(brain.nodes)||!Array.isArray(brain.edges))return;
   const byId=new Map();brain.nodes.forEach(n=>{const c=coords(n);if(c)byId.set(String(n.id),c)});
+  /* White-triangle gate (2026-09-14): several cartel nodes share the exact
+   * Mexico-centroid coords, so zero-length edges and duplicate endpoint pairs
+   * stack semi-transparent lines into a bright wedge at world zoom. Skip
+   * co-located endpoints and draw each undirected coordinate pair once. */
+  const seenPairs=new Set();
+  const pairKey=(a,b)=>{const k1=a[0].toFixed(3)+','+a[1].toFixed(3),k2=b[0].toFixed(3)+','+b[1].toFixed(3);return k1<k2?k1+'~'+k2:k2+'~'+k1};
   let drawn=0;
   for(const e of brain.edges){if(drawn>=BRAIN_LINK_CAP)break;const a=byId.get(String(e.source)),b=byId.get(String(e.target));if(!a||!b||String(e.source)===String(e.target))continue;
+    if(a[0]===b[0]&&a[1]===b[1])continue;const pk=pairKey(a,b);if(seenPairs.has(pk))continue;seenPairs.add(pk);
     /* Color/weight/opacity pass: adversarial ties read warm, cooperative ties
      * cool, everything else neutral slate; evidence-backed ties render
      * heavier and more opaque than inferred ones. */

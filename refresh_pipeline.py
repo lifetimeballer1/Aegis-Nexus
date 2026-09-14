@@ -1,13 +1,20 @@
 #!/usr/bin/env python3
 """Global Pulse canonical refresh pipeline with explicit resilience gates."""
 from __future__ import annotations
-import hashlib,json,subprocess,sys
+import hashlib,json,os,subprocess,sys
 from datetime import datetime,timezone
 from pathlib import Path
 ROOT=Path(__file__).resolve().parent;DATA=ROOT/'data'
-# Canonical 12-artifact set produced by every refresh. REQUIRED and MANIFEST
+# Canonical 15-artifact set produced by every refresh. REQUIRED and MANIFEST
 # intentionally alias the same tuple so the gate and the manifest can never drift.
-REQUIRED_ARTIFACTS=('snapshot.json','history.json','sources.json','live_articles.json','canonical_intelligence.json','intelligence_graph.json','intelligence_brain.json','map_points.json','strategic_signals.json','source_health.json','live_status.json','what_changed.json')
+# (2026-09-14 stale-export rewire: live_events + event_history + historical_trends
+# are regenerated every cycle — the timeline/map/signal readers consume them and
+# they rotted for days when no step wrote them.)
+REQUIRED_ARTIFACTS=('snapshot.json','history.json','sources.json','live_articles.json','canonical_intelligence.json','intelligence_graph.json','intelligence_brain.json','map_points.json','strategic_signals.json','source_health.json','live_status.json','what_changed.json','live_events.json','event_history.json','historical_trends.json')
+# Per-source kill switch for the event-export leg (local transforms only, no
+# network): set AEGIS_SKIP_EVENT_EXPORTS=1 to skip live-events/history/trends
+# regeneration while debugging. The feed-level catalog switches are untouched.
+SKIP_EVENT_EXPORTS=os.environ.get('AEGIS_SKIP_EVENT_EXPORTS')=='1'
 MANIFEST_ARTIFACTS=REQUIRED_ARTIFACTS
 # NOTE (2026-09-11 dead-weight review): update_brain_feedback.py +
 # update_feed_expansion.py form a retired feedback loop. update_feed_expansion
@@ -149,6 +156,15 @@ def _run_pipeline(started):
  run('Build dedicated browser map points',sys.executable,'build_map_points.py')
  run('Refresh snapshot failover state from collector telemetry',sys.executable,'build_failover_state.py')
  run('Apply source failover fallbacks (Google News)',sys.executable,'source_failover.py')
+ if SKIP_EVENT_EXPORTS:
+  print('SKIP: event-export leg disabled via AEGIS_SKIP_EVENT_EXPORTS=1',flush=True)
+ else:
+  run('Rebuild live events from fresh snapshot stories',sys.executable,'build_live_events.py')
+  verify_json('live_events.json',min_list=('events',1))
+  run('Append fresh event-history observations',sys.executable,'build_event_history.py')
+  verify_json('event_history.json')
+  run('Record tension sample and rebuild trends',sys.executable,'build_historical_trends.py')
+  verify_json('historical_trends.json')
  try:
   maybe_refresh_thumbs()
  except Exception as exc:

@@ -65,7 +65,7 @@ function cameraDist(){try{const g=window.__gpGraph;const p=g.cameraPosition();if
    labels clip past the viewport edge. Resolve per frame with estimated
    boxes (no layout reads, keeps the 60fps loop cheap): highest-priority
    label wins each overlap, centers clamped inside the viewport. */
-function labelEstBox(x,y,text){const w=Math.min(Math.max(120,window.innerWidth*.52),String(text||'').length*5.6+36);return{x:x-w/2,y:y-11,w,h:22}}
+function labelEstBox(x,y,text){const w=Math.min(Math.max(120,window.innerWidth*.52),Math.min(String(text||'').length,30)*5.6+36);return{x:x-w/2,y:y-11,w,h:22}}
 function labelBoxesOverlap(a,b,pad){return a.x-pad<b.x+b.w&&b.x-pad<a.x+a.w&&a.y-pad<b.y+b.h&&b.y-pad<a.y+a.h}
 function clampLabelBox(box){const vw=window.innerWidth||390,vh=window.innerHeight||700;const w=Math.min(box.w,vw-8);const cx=Math.min(Math.max(box.x+box.w/2,w/2+4),vw-w/2-4);const cy=Math.min(Math.max(box.y+box.h/2,15),vh-15);return{x:cx-w/2,y:cy-box.h/2,w,h:box.h}}
 /* Hidden-label hint (2026-09-12): losers of the collision pass are counted
