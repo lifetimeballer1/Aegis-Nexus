@@ -8,6 +8,34 @@
 import { getState } from '../core/state.js';
 import { formatRelativeTime, escapeHtml } from '../core/utils.js';
 import { confidenceSeverity, watchLevelSeverity } from '../core/severity.js';
+import { openDrawer, initDrawers } from '../core/drawer.js';
+
+initDrawers();
+/* Brief detail drawer (Phase 1 T2): dev rows are tap-to-open; the drawer
+ * slides in on phones and renders in place on desktop. Focus moves only
+ * on an explicit tap, never on background re-renders. */
+let selectedDevId = null;
+let briefDrawerArmed = false;
+
+function selectedDev(developments) {
+  if (!selectedDevId) return null;
+  return (developments || []).find(d => d && ((d.id || d.title) === selectedDevId)) || null;
+}
+
+function briefDrawerHtml(developments) {
+  const dev = selectedDev(developments);
+  if (!dev) return '';
+  const sev = developmentSeverity(dev);
+  const srcList = Array.isArray(dev.sources) ? dev.sources : [];
+  return `<div class="gp-card gp-drawer" id="briefDrawer" tabindex="-1" role="complementary" aria-label="Development details">`
+    + `<div class="gp-drawer-head"><div class="gp-drawer-title"><span class="gp-sev gp-sev-${sev}">${dev.breaking ? 'Breaking' : esc(dev.confidence || 'ungraded')}</span></div>`
+    + `<button class="gp-btn" type="button" data-drawer-close aria-label="Close development details">× Close</button></div>`
+    + `<div class="gp-tl-title" style="font-size:13px">${esc(dev.title || 'Untitled development')}</div>`
+    + `<div class="gp-tl-meta">${esc(String(dev.category || 'general'))} · ${dev.reportCount ?? '—'} reports · ${dev.independentSourceCount ?? '—'} independent sources · confidence ${esc(dev.confidence || 'ungraded')}</div>`
+    + `<div class="gp-tl-meta">first seen ${dev.firstSeen ? esc(formatRelativeTime(dev.firstSeen)) : '—'} · last seen ${dev.lastSeen ? esc(formatRelativeTime(dev.lastSeen)) : '—'}</div>`
+    + (srcList.length ? `<div class="gp-tl-meta">sources: ${srcList.map(s => esc(s)).join(', ')}</div>` : '')
+    + `</div>`;
+}
 
 let categoryFilter = 'all';
 let showAllDevelopments = false;
@@ -91,10 +119,10 @@ export function renderBriefings() {
     const meta = [`${dev.reportCount ?? '—'} reports`, `${dev.independentSourceCount ?? '—'} independent sources`, `confidence ${dev.confidence || 'ungraded'}`];
     if (dev.lastSeen) meta.push(formatRelativeTime(dev.lastSeen));
     const sources = Array.isArray(dev.sources) ? dev.sources.slice(0, 4).join(', ') : '';
-    return `<div class="gp-brief-dev sev-${sev}"><span class="gp-alert-bar"></span>${thumbImg(dev.title, dev.category, 'gp-brief-thumb')}<div class="grow">`
+    return `<button type="button" class="gp-brief-dev gp-tap sev-${sev}" data-brief-dev="${esc(dev.id || dev.title || ''})}" aria-label="${esc((dev.title || 'Untitled development') + ' — open details')}"><span class="gp-alert-bar"></span>${thumbImg(dev.title, dev.category, 'gp-brief-thumb')}<div class="grow">`
       + `<div class="title">${esc(dev.title || 'Untitled development')}</div>`
       + `<div class="meta">${esc(meta.join(' · '))}${sources ? ` · ${esc(sources)}` : ''}</div></div>`
-      + `<span class="gp-sev gp-sev-${sev}">${dev.breaking ? 'Breaking' : esc(dev.confidence || 'ungraded')}</span></div>`;
+      + `<span class="gp-sev gp-sev-${sev}">${dev.breaking ? 'Breaking' : esc(dev.confidence || 'ungraded')}</span></button>`;
   }).join('');
 
   const pins = loadPins();
@@ -134,12 +162,17 @@ export function renderBriefings() {
     + `<div class="gp-dash-panel" style="margin-top:8px"><h3>My Watchlist <span style="font-weight:400;color:var(--muted);font-size:10px">${pins.length} pinned · this device only</span></h3>`
     + (myRows ? `<div class="gp-dash-list">${myRows}</div><div style="margin-top:8px"><button class="gp-btn" data-watch-export type="button">Export watchlist JSON</button></div>` : '<div class="meta">Nothing pinned yet — pin entities from the pipeline watchlist above.</div>') + `</div>`
     + (method.caution ? `<div class="gp-brief-caution">${esc(method.caution)}</div>` : '');
+    + briefDrawerHtml(developments);
 
   el.querySelectorAll('[data-brief-filter]').forEach(btn => btn.addEventListener('click', () => {
     categoryFilter = btn.dataset.briefFilter; showAllDevelopments = false; renderBriefings();
   }));
   el.querySelector('#briefMore')?.addEventListener('click', () => { showAllDevelopments = !showAllDevelopments; renderBriefings(); });
-  el.querySelectorAll('[data-watch-pin]').forEach(btn => btn.addEventListener('click', () => {
+  el.querySelectorAll('[data-brief-dev]').forEach(btn => btn.addEventListener('click', () => {
+    const id = btn.dataset.briefDev;
+    selectedDevId = selectedDevId === id ? null : id; briefDrawerArmed = true; renderBriefings();
+  }));
+el.querySelectorAll('[data-watch-pin]').forEach(btn => btn.addEventListener('click', () => {
     const name = btn.dataset.watchPin;
     const list = loadPins();
     if (list.includes(name)) savePins(list.filter(x => x !== name));
@@ -166,6 +199,9 @@ export function renderBriefings() {
   if (stamp) stamp.textContent = brief.updatedAt ? `Updated ${formatRelativeTime(brief.updatedAt)} · ${developments.length} developments · ${watchlist.length} watched` : '';
 
   renderDrafts(el);
+  const bdEl = el.querySelector('#briefDrawer');
+  if (bdEl && selectedDev(developments)) openDrawer(bdEl, { stealFocus: briefDrawerArmed, onClose: () => { selectedDevId = null; renderBriefings(); } });
+  briefDrawerArmed = false;
 }
 
 loadThumbs(() => { const b = typeof document !== 'undefined' && document.getElementById('briefingsBody'); if (b && b.querySelector('.gp-brief-dev')) renderBriefings(); });

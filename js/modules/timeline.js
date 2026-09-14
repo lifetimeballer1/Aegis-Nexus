@@ -6,6 +6,11 @@
 import { getState } from '../core/state.js';
 import { formatRelativeTime, escapeHtml } from '../core/utils.js';
 import { confidenceSeverity } from '../core/severity.js';
+import { openDrawer, initDrawers } from '../core/drawer.js';
+
+initDrawers();
+/* Drawer focus is armed only by an explicit tap. */
+let tlDrawerArmed = false;
 
 let periodHours = 24;
 let userPicked = false;
@@ -25,6 +30,60 @@ function parseTime(value) {
   if (!value) return null;
   const date = new Date(String(value).replace(' ', 'T'));
   return Number.isNaN(date.getTime()) ? null : date;
+}
+
+/* Phase 1 T3 item 6 — Concept 05 pairing: rail entries carry tension-at-the-time
+   + linked alerts, joined from canonical files only (never invented).
+   Tension: latest historicalTrends series sample at or before the point; null
+   when the point predates every sample (rendered honestly as n/a, never
+   interpolated). Alerts: canonical alert timestamps (snapshot conflicts by
+   lastSignal + map events by lastSeen||firstSeen) within +/-24h of the point. */
+const ALERT_LINK_WINDOW_MS = 24 * 3600000;
+
+function tensionSeries(state) {
+  const raw = state.historicalTrends && state.historicalTrends.series;
+  if (!Array.isArray(raw)) return [];
+  return raw
+    .map((s) => ({ t: parseTime(s && s.updatedAt), tension: Number(s && s.tension) }))
+    .filter((s) => s.t && Number.isFinite(s.t.getTime()) && Number.isFinite(s.tension))
+    .map((s) => ({ t: s.t.getTime(), tension: s.tension }))
+    .sort((a, b) => a.t - b.t);
+}
+
+function tensionAt(series, date) {
+  const t = date instanceof Date ? date.getTime() : NaN;
+  if (!Number.isFinite(t)) return null;
+  let hit = null;
+  for (const s of series) { if (s.t <= t) hit = s.tension; else break; }
+  return hit;
+}
+
+function alertTimes(state) {
+  const out = [];
+  for (const c of (state.snapshot?.conflicts || [])) {
+    const d = parseTime(c && c.lastSignal);
+    if (d) out.push(d.getTime());
+  }
+  const events = state.mapData?.events?.events;
+  for (const e of (Array.isArray(events) ? events : [])) {
+    const d = parseTime((e && (e.lastSeen || e.firstSeen)) || null);
+    if (d) out.push(d.getTime());
+  }
+  return out;
+}
+
+function linkedAlertCount(times, date) {
+  const t = date instanceof Date ? date.getTime() : NaN;
+  if (!Number.isFinite(t)) return 0;
+  let n = 0;
+  for (const a of times) if (Math.abs(a - t) <= ALERT_LINK_WINDOW_MS) n++;
+  return n;
+}
+
+function entryContext(p) {
+  const t = p.tension == null ? 'tension n/a' : ('tension ' + p.tension);
+  const a = p.alerts ? (p.alerts + ' alert' + (p.alerts === 1 ? '' : 's') + ' \u00b124h') : 'no alerts \u00b124h';
+  return t + ' \u00b7 ' + a;
 }
 
 function collectPoints(state, hours) {
@@ -85,6 +144,10 @@ export function renderTimeline() {
     }
   }
   const shown = points.slice(0, MAX_POINTS);
+  /* Item 6 joins: tension-at-the-time + linked alerts per entry. */
+  const trend = tensionSeries(state);
+  const atimes = alertTimes(state);
+  for (const p of shown) { p.tension = tensionAt(trend, p.at); p.alerts = linkedAlertCount(atimes, p.at); }
   const chips = PERIODS.map(([hours, label]) =>
     `<button class="gp-filter${!customActive && periodHours === hours ? ' active' : ''}" data-tl-period="${hours}" type="button" aria-pressed="${!customActive && periodHours === hours}">${label}</button>`).join('')
     + `<button class="gp-filter${customActive ? ' active' : ''}" data-tl-period="custom" type="button" aria-pressed="${customActive}">CUSTOM</button>`;
@@ -112,22 +175,37 @@ export function renderTimeline() {
     const header = day !== lastDay ? `<li class="gp-tl-day" role="separator" aria-label="${esc(day)}, ${dayCounts[day]} ${dayUnit}"><span>${esc(day)}</span><span class="gp-tl-day-count gp-nums">${dayCounts[day]} ${dayUnit}</span></li>` : '';
     lastDay = day;
     const sev = confidenceSeverity(p.confidence);
-    const meta = [`${p.reports ?? '—'} reports`, `${p.sources ?? '—'} sources`, p.confidence ? `${p.confidence} confidence` : 'confidence ungraded', formatRelativeTime(p.at.toISOString())].join(' · ');
-    const tip = `${p.title} — ${p.at.toISOString().slice(0, 16).replace('T', ' ')} UTC · ${p.confidence || 'ungraded'} confidence · ${p.reports ?? '—'} reports`;
+    const meta = [`${p.reports ?? '—'} reports`, `${p.sources ?? '—'} sources`, p.confidence ? `${p.confidence} confidence` : 'confidence ungraded', entryContext(p), formatRelativeTime(p.at.toISOString())].join(' · ');
+    const tip = `${p.title} — ${p.at.toISOString().slice(0, 16).replace('T', ' ')} UTC · ${p.confidence || 'ungraded'} confidence · ${p.reports ?? '—'} reports · ${entryContext(p)}`;
     return `${header}<li class="gp-tl-item"><button data-tl-select="${idx}" type="button" aria-pressed="${selectedIdx === idx}" aria-label="${esc(p.title)} — ${esc(meta)}" title="${esc(tip)}" style="all:unset;cursor:pointer;display:block;width:100%;box-sizing:border-box"><span class="gp-tl-dot sev-${sev}" title="${esc(sevName[sev] || sev)} · ${esc(p.confidence || 'ungraded')}" aria-hidden="true"></span>`
       + `<div class="gp-tl-time gp-nums">${esc(p.at.toISOString().slice(11, 16))} UTC · <span class="gp-sev gp-sev-${sev}" style="font-size:9px;padding:1px 6px">${sevName[sev] || sev}</span></div>`
       + `<div class="gp-tl-title">${esc(p.title)}</div><div class="gp-tl-meta">${esc(meta)}</div></button></li>`;
   }).join('');
 
   const sel = selectedIdx >= 0 ? shown[selectedIdx] : null;
-  const pane = sel ? `<div class="gp-card" style="margin-top:10px;border-color:var(--line-strong)"><div style="font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:4px">Reading Pane</div>`
+  const pane = sel ? `<div class="gp-card gp-drawer" id="tlReadingPane" tabindex="-1" role="complementary" aria-label="Selected signal reading pane" style="margin-top:10px;border-color:var(--line-strong)">`
+    + `<div class="gp-drawer-head"><div class="gp-drawer-title" style="font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)">Reading Pane</div>`
+    + `<button class="gp-btn" type="button" data-drawer-close aria-label="Close reading pane">× Close</button></div>`
     + `<div class="gp-tl-title" style="font-size:13px">${esc(sel.title)}</div>`
-    + `<div class="gp-tl-meta">${esc(sel.at.toISOString().slice(0, 16).replace('T', ' '))} UTC · ${sel.reports ?? '—'} reports · ${sel.sources ?? '—'} sources · ${esc(sel.confidence || 'confidence ungraded')}</div></div>` : '';
+    + `<div class="gp-tl-meta">${esc(sel.at.toISOString().slice(0, 16).replace('T', ' '))} UTC · ${sel.reports ?? '—'} reports · ${sel.sources ?? '—'} sources · ${esc(sel.confidence || 'confidence ungraded')}</div>`
+    + `<div class="gp-tl-meta">${esc(sel.tension == null ? 'Tension n/a at signal time' : ('Tension ' + sel.tension + ' at signal time'))} · ${esc(sel.alerts ? (sel.alerts + ' alert' + (sel.alerts === 1 ? '' : 's') + ' within \u00b124h') : 'No alerts within \u00b124h')} · <a href="#section-alerts">View in Alerts \u2192</a></div></div>` : '';
+
+  /* Item 6 phone strip: current tension + alerts near the latest signal, then
+     rail, then reading pane (drawer on phone via T2). Desktop hides the strip
+     via CSS — desktop layout unchanged. */
+  const snapTension = state.snapshot?.tension;
+  const snapDelta = state.snapshot?.tensionDelta;
+  const headAlerts = shown.length ? linkedAlertCount(atimes, shown[0].at) : 0;
+  const strip = `<div class="gp-tl-tension" role="status" aria-label="Tension context"><span>TENSION&nbsp;<b class="gp-nums">${snapTension ?? '—'}</b>${Number.isFinite(Number(snapDelta)) && Number(snapDelta) !== 0 ? (`&nbsp;(${Number(snapDelta) > 0 ? '+' : ''}${snapDelta})`) : ''}</span>`
+    + `<span>·</span><span>${headAlerts ? (headAlerts + ' alert' + (headAlerts === 1 ? '' : 's') + ' near latest signal') : 'no alerts near latest signal'}</span>`
+    + `<a href="#section-alerts">View alerts \u2192</a></div>`;
 
   el.innerHTML = `<div class="gp-filter-row" role="group" aria-label="Timeline period">${chips}`
-    + `<span class="meta" style="align-self:center;font-size:10px;color:var(--muted-2)">Showing ${shown.length} of ${points.length} signals${customActive && !customInvalid ? ' · custom range' : ''}</span></div>${customRow}`
+    + `<span class="meta" style="align-self:center;font-size:10px;color:var(--muted-2)">Showing ${shown.length} of ${points.length} signals${customActive && !customInvalid ? ' · custom range' : ''}</span></div>${customRow}${strip}`
     + (rows ? `<div class="gp-timeline-rail" role="region" aria-label="Event timeline" tabindex="0"><ol class="gp-timeline">${rows}</ol></div>${pane}` : '<div class="gp-state"><div class="gp-state-title">No signals in this period</div><div>No dated observations fall inside the selected window.</div></div>');
 
+  const tlStamp = document.getElementById('timelineUpdated');
+  if (tlStamp) tlStamp.textContent = shown.length && shown[0].at ? `Updated ${formatRelativeTime(shown[0].at.toISOString())}` : '';
   el.querySelectorAll('[data-tl-period]').forEach(btn => btn.addEventListener('click', () => {
     const v = btn.dataset.tlPeriod;
     if (v === 'custom') { customActive = true; userPicked = true; selectedIdx = -1; renderTimeline(); return; }
@@ -142,8 +220,11 @@ export function renderTimeline() {
     customFrom = ''; customTo = ''; customActive = false; customInvalid = false; userPicked = true; selectedIdx = -1; renderTimeline();
   });
   el.querySelectorAll('[data-tl-select]').forEach(btn => btn.addEventListener('click', () => {
-    const i = Number(btn.dataset.tlSelect); selectedIdx = selectedIdx === i ? -1 : i; renderTimeline();
+    const i = Number(btn.dataset.tlSelect); selectedIdx = selectedIdx === i ? -1 : i; tlDrawerArmed = true; renderTimeline();
   }));
+  const paneEl = el.querySelector('#tlReadingPane');
+  if (sel && paneEl) openDrawer(paneEl, { stealFocus: tlDrawerArmed, onClose: () => { selectedIdx = -1; renderTimeline(); } });
+  tlDrawerArmed = false;
 }
 
 export function getTimelineView() { return { period: periodHours, custom: customActive, from: customFrom, to: customTo }; }

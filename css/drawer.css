@@ -1,0 +1,48 @@
+/* Phase 1 T2 — shared gp-drawer pattern (Concept 05/06 side-rails on phones).
+ * Any in-flow rail/detail card becomes a slide-in drawer on phones by adding
+ * class="gp-drawer" (+ tabindex="-1", labelled) and driving it with
+ * js/core/drawer.js openDrawer/closeDrawer. Desktop (>=1024px) is
+ * deliberately unstyled here: drawers keep rendering in place, exactly as
+ * before. Phone (<1024px): .gp-drawer.open slides in from the right over a
+ * tap-to-close scrim; body scroll locks while open; close via the drawer's
+ * [data-drawer-close] button, scrim tap, Esc, or right-swipe. Vanilla only. */
+
+/* Tap-to-open rows: div -> button keeps card styling (background/border/
+ * padding come from the row class); reset only what UA buttons impose. */
+button.gp-tap{font:inherit;color:inherit;text-align:left;cursor:pointer;width:100%}
+button.gp-tap:focus-visible{outline:2px solid var(--sev-info);outline-offset:2px;border-radius:8px}
+
+/* Shared drawer header row (title block + close button). */
+.gp-drawer-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:8px}
+.gp-drawer-head .gp-drawer-title{min-width:0;flex:1}
+
+/* Global scrim: inert until .open (opacity 0 + no pointer events). */
+#gpDrawerScrim{position:fixed;inset:0;z-index:200;background:rgba(2,6,12,.62);
+  opacity:0;pointer-events:none;transition:opacity .22s ease}
+#gpDrawerScrim.open{opacity:1;pointer-events:auto}
+
+/* Map signal panel: hidden until a marker is tapped (JS toggles .open). */
+#mapSidePanel{display:none}
+#mapSidePanel.open{display:block}
+
+/* Phone: rails become right slide-in drawers. */
+@media (max-width:1023.98px){
+  .gp-drawer{position:fixed;top:0;right:0;bottom:0;z-index:201;
+    width:min(430px,94vw);max-width:94vw;box-sizing:border-box;
+    background:var(--bg-deep);border-left:1px solid var(--line-strong);
+    border-radius:0;margin:0;padding:14px 14px calc(14px + var(--safe-bottom,0px));
+    overflow-y:auto;overscroll-behavior:contain;
+    box-shadow:-18px 0 48px rgba(0,0,0,.5);
+    transform:translateX(103%);transition:transform .24s ease}
+  .gp-drawer.open{transform:none}
+  body.gp-drawer-open{overflow:hidden}
+}
+
+/* Desktop >=1024px: drawers render in place — current layout unchanged. */
+@media (min-width:1024px){
+  #mapSidePanel.open{margin:12px;border-radius:0 0 var(--radius) var(--radius)}
+}
+
+@media (prefers-reduced-motion:reduce){
+  #gpDrawerScrim,.gp-drawer{transition:none}
+}

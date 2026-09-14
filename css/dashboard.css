@@ -695,3 +695,12 @@
 /* ---- story thumbnails (briefings) ---- */
 .gp-brief-thumb{width:88px;height:66px;object-fit:cover;border-radius:8px;border:1px solid var(--line);flex:none;background:#0d1526}
 @media (max-width:480px){.gp-brief-thumb{width:64px;height:48px}}
+
+/* Phase 1 T3 item 6 — timeline tension strip (Concept 05 pairing): phone-only
+   context above the rail. Hidden on desktop so desktop layout is unchanged. */
+.gp-tl-tension{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:11px;color:var(--muted);background:var(--panel-2);border:1px solid var(--line);border-radius:8px;padding:6px 10px;margin:8px 0}
+.gp-tl-tension b{color:var(--text)}
+.gp-tl-tension a{color:var(--blue)}
+@media(min-width:1024px){.gp-tl-tension{display:none}}
+/* Phase 1 T4 — markets filter/sort: phone-first horizontal chip scroll; desktop wraps in place, grid unchanged. */
+@media(max-width:1023px){.gp-mkt-filters{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:4px}.gp-mkt-filters .gp-filter{flex:0 0 auto}}

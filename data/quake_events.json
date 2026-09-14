@@ -1,0 +1,47 @@
+{
+  "updatedAt": "2026-09-14T15:37:48.924678Z",
+  "source": "USGS Earthquake Hazards Program (public domain, keyless)",
+  "feed": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson",
+  "scoring": {
+    "minMagnitude": 5.5,
+    "minScore": 30,
+    "rules": "M>=5.5 base; shallow-depth boost; populated-place boost; felt/tsunami/significance telemetry boost; missing=absent"
+  },
+  "eventCount": 2,
+  "events": [
+    {
+      "id": "7000thc6",
+      "kind": "earthquake",
+      "title": "M5.5 earthquake — 187 km SSW of Pelabuhanratu, Indonesia",
+      "magnitude": 5.5,
+      "lat": -8.5419,
+      "lon": 105.8726,
+      "score": 50.0,
+      "level": "ELEVATED",
+      "time": 1789378058536,
+      "evidence": [
+        {
+          "source": "USGS Earthquake Hazards Program",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thc6"
+        }
+      ]
+    },
+    {
+      "id": "7000thcs",
+      "kind": "earthquake",
+      "title": "M5.6 earthquake — 78 km NNE of Tobelo, Indonesia",
+      "magnitude": 5.6,
+      "lat": 2.4223,
+      "lon": 128.1704,
+      "score": 37.0,
+      "level": "WATCH",
+      "time": 1789383483047,
+      "evidence": [
+        {
+          "source": "USGS Earthquake Hazards Program",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000thcs"
+        }
+      ]
+    }
+  ]
+}

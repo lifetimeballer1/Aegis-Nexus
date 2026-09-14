@@ -194,6 +194,8 @@ export function renderAlerts() {
     addSupportingToDraft({ kind: 'alert', key: btn.dataset.briefAdd, label: btn.dataset.briefTitle || btn.dataset.briefAdd });
     btn.textContent = 'Added ✓';
   }));
+  const stamp = document.getElementById('alertsUpdated');
+  if (stamp) stamp.textContent = snapshot?.updatedAt ? `Updated ${formatRelativeTime(snapshot.updatedAt)} · ${items.length} alerts` : '';
   document.getElementById('alertsMore')?.addEventListener('click', () => { showAll = !showAll; renderAlerts(); });
   el.querySelectorAll('[data-ack-clear]').forEach(btn => btn.addEventListener('click', () => {
     delete acked[btn.dataset.ackClear]; saveAck(); renderAlerts();

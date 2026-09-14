@@ -9,6 +9,42 @@
 
 import { getState } from '../core/state.js';
 import { formatRelativeTime, escapeHtml } from '../core/utils.js';
+import { openDrawer, initDrawers } from '../core/drawer.js';
+
+initDrawers();
+/* Per-source drill-down drawer (Phase 1 T2, audit 7a). */
+let selectedSrcKey = null;
+let srcDrawerArmed = false;
+
+function srcKey(s) {
+  if (!s || typeof s !== 'object') return '';
+  return String(s.name || s.id || s.url || 'unnamed') + '||' + String(s.url || s.id || '');
+}
+function allSources(sh) {
+  if (!sh) return [];
+  return Array.isArray(sh) ? sh : (sh.sources || []);
+}
+function selectedSrc(sources) {
+  if (!selectedSrcKey) return null;
+  return (sources || []).find(s => s && srcKey(s) === selectedSrcKey) || null;
+}
+function srcDrawerHtml(source) {
+  if (!source) return '';
+  const kind = sourceState(source);
+  const label = kind === 'healthy' ? 'Online' : kind === 'critical' ? 'Failing' : 'Degraded';
+  const name = source.name || source.id || source.url || 'Unnamed source';
+  const url = source.url || '';
+  const age = source.lastSuccess || source.lastChecked || source.updatedAt;
+  return `<div class="gp-card gp-drawer" id="srcDrawer" tabindex="-1" role="complementary" aria-label="Source details">`
+    + `<div class="gp-drawer-head"><div class="gp-drawer-title">${stateBadge(kind, label)}</div>`
+    + `<button class="gp-btn" type="button" data-drawer-close aria-label="Close source details">× Close</button></div>`
+    + `<div class="gp-tl-title" style="font-size:13px">${esc(name)}</div>`
+    + `<div class="gp-tl-meta">${esc(String(source.category || source.type || 'uncategorized'))} · ${fmtInt(source.rowsFetched)} rows · ${esc(String(source.contentStatus || 'unknown').replace(/_/g, ' '))}</div>`
+    + `<div class="gp-tl-meta">checked ${age ? esc(formatRelativeTime(age)) : '—'}${Number.isFinite(Number(source.freshnessMinutes)) ? ' · ' + Number(source.freshnessMinutes).toFixed(0) + 'm fresh' : ''}${Number(source.consecutiveFailures || 0) > 0 ? ' · ' + source.consecutiveFailures + ' consecutive failures' : ''}</div>`
+    + `<div class="gp-tl-meta" title="Derived: no failures + fresh rows = High; up to 2 failures + rows = Medium; else Low">credibility ${esc(credibilityTier(source))} · fallback ${esc(fallbackMode(source))}</div>`
+    + (url && /^https?:\/\//i.test(String(url)) ? `<div class="gp-tl-meta"><a href="${esc(url)}" target="_blank" rel="noopener noreferrer">Open source ↗</a></div>` : '')
+    + `</div>`;
+}
 
 let statusFilter = 'all';
 let statusQuery = '';
@@ -87,9 +123,9 @@ function registryRows(list) {
     const label = kind === 'healthy' ? 'Online' : kind === 'critical' ? 'Failing' : 'Degraded';
     const fails = s.consecutiveFailures === undefined || s.consecutiveFailures === null ? '' : `<div class="meta">${fmtInt(s.consecutiveFailures)} consecutive failures</div>`;
     const cred = credibilityTier(s);
-    return `<div class="gp-dash-row"><div class="grow"><div class="title">${esc(s.name || s.url || 'Unnamed source')}</div>`
+    return `<button type="button" class="gp-dash-row gp-tap" data-src-drill="${esc(srcKey(s))}" aria-label="${esc(String(s.name || s.url || 'Unnamed source') + ' — open source details')}"><div class="grow"><div class="title">${esc(s.name || s.url || 'Unnamed source')}</div>`
       + `<div class="meta">${esc(s.category || s.type || 'uncategorized')} · ${fmtInt(s.rowsFetched)} rows · checked ${esc(formatRelativeTime(s.lastChecked))} · <span title="Derived: no failures + fresh rows = High; ≤2 failures + rows = Medium; else Low">credibility ${cred}</span> · fallback ${esc(fallbackMode(s))}</div>${fails}</div>`
-      + `<div>${stateBadge(kind, label)}</div></div>`;
+      + `<div>${stateBadge(kind, label)}</div></button>`;
   }).join('');
 }
 
@@ -169,9 +205,9 @@ export function renderStatus() {
       const stale = ok && (/stale/i.test(String(s.contentStatus || '')) || (Number.isFinite(Number(s.freshnessMinutes)) && Number(s.freshnessMinutes) > 180));
       const dot = !ok ? 'critical' : stale ? 'watch' : 'healthy';
       const chip = !ok ? '<span class="gp-badge failed">Failed</span>' : stale ? '<span class="gp-badge stale">Stale</span>' : '<span class="gp-source-chip sev-healthy">Online</span>';
-      return `<div class="gp-source-row sev-${ok ? 'healthy' : 'critical'}"><span class="gp-health-dot ${dot}" aria-hidden="true" style="margin-top:5px"></span><div class="grow"><div class="title">${escapeHtml(String(name))}</div>`
+      return `<button type="button" class="gp-source-row gp-tap sev-${ok ? 'healthy' : 'critical'}" data-src-drill="${escapeHtml(srcKey(s))}" aria-label="${escapeHtml(String(name) + ' — open source details')}"><span class="gp-health-dot ${dot}" aria-hidden="true" style="margin-top:5px"></span><div class="grow"><div class="title">${escapeHtml(String(name))}</div>`
         + `<div class="meta">${escapeHtml(String(s.type || s.category || 'source'))} · fresh ${escapeHtml(fresh)} · ${escapeHtml(String(s.contentStatus || 'unknown').replace(/_/g, ' '))}${fails > 0 ? ` · ${fails} consecutive failure${fails === 1 ? '' : 's'}` : ''}${age ? ` · ${escapeHtml(formatRelativeTime(age))}` : ''}</div></div>`
-        + chip + '</div>';
+        + chip + '</button>';
     }).join('');
 
     const coverage = Number(sourceHealth.summary?.dataCoveragePercent);
@@ -289,7 +325,7 @@ export function renderStatus() {
       Aegis Nexus uses only public open sources. Source availability can change. Always verify critical claims against primary sources.
     </div>
   `;
-  el.innerHTML = html;
+  el.innerHTML = html + srcDrawerHtml(selectedSrc(allSources(sourceHealth)));
 
   el.querySelectorAll('[data-status-filter]').forEach(btn => btn.addEventListener('click', () => {
     statusFilter = btn.dataset.statusFilter; showAllSources = false; renderStatus();
@@ -298,7 +334,13 @@ export function renderStatus() {
     statusQuery = String(event.target.value || '').trim().toLowerCase(); showAllSources = false; renderStatus();
     const input = document.getElementById('statusSearch'); input?.focus(); input?.setSelectionRange(input.value.length, input.value.length);
   });
-  el.querySelector('#statusMore')?.addEventListener('click', () => { showAllSources = !showAllSources; renderStatus(); });
+  el.querySelectorAll('[data-src-drill]').forEach(btn => btn.addEventListener('click', () => {
+    selectedSrcKey = btn.dataset.srcDrill || null; srcDrawerArmed = true; renderStatus();
+  }));
+el.querySelector('#statusMore')?.addEventListener('click', () => { showAllSources = !showAllSources; renderStatus(); });
 
   renderRegistry(Array.isArray(sourceHealth?.sources) ? sourceHealth.sources : []);
+  const sdEl = el.querySelector('#srcDrawer');
+  if (sdEl && selectedSrc(allSources(sourceHealth))) openDrawer(sdEl, { stealFocus: srcDrawerArmed, onClose: () => { selectedSrcKey = null; renderStatus(); } });
+  srcDrawerArmed = false;
 }
