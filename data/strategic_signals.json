@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "generatedAt": "2026-09-14T15:53:50.980957Z",
+  "generatedAt": "2026-09-14T16:20:14.805602Z",
   "sourceBackedOnly": true,
   "method": "Source-backed Brain evidence plus dict/list action layers; co-mention targets are co-occurrence volumes, not causality.",
   "signals": [
@@ -9,13 +9,13 @@
       "signal": "United States shows source-backed technology activity",
       "category": "technology",
       "categories": {
-        "technology": 64,
-        "political": 49,
+        "technology": 65,
+        "political": 50,
         "military": 40,
-        "diplomatic": 25,
+        "diplomatic": 26,
         "energy": 20,
         "economic": 16,
-        "security": 14,
+        "security": 15,
         "maritime": 11
       },
       "dominantTarget": "Iran",
@@ -29,21 +29,21 @@
           "mentions": 16
         },
         {
-          "target": "Mexico",
+          "target": "China",
           "mentions": 6
         },
         {
-          "target": "China",
-          "mentions": 5
+          "target": "Mexico",
+          "mentions": 6
         },
         {
           "target": "Ukraine",
           "mentions": 3
         }
       ],
-      "actionCount": 239,
-      "actionEvidenceCount": 239,
-      "categoryCount": 64,
+      "actionCount": 243,
+      "actionEvidenceCount": 243,
+      "categoryCount": 65,
       "targetCount": 19,
       "evidenceCount": 92,
       "lastEvidenceTime": "Wed, 04 Mar 2026 08:00:00 GMT",
@@ -177,12 +177,12 @@
       "signal": "China shows source-backed technology activity",
       "category": "technology",
       "categories": {
-        "technology": 61,
+        "technology": 60,
         "military": 29,
-        "security": 27,
+        "security": 28,
         "economic": 25,
         "political": 20,
-        "diplomatic": 18,
+        "diplomatic": 17,
         "maritime": 9,
         "energy": 8
       },
@@ -197,26 +197,32 @@
           "mentions": 3
         },
         {
-          "target": "Markets",
+          "target": "United States",
           "mentions": 2
         },
         {
-          "target": "United States",
-          "mentions": 1
+          "target": "Markets",
+          "mentions": 2
         },
         {
           "target": "Yemen",
           "mentions": 1
         }
       ],
-      "actionCount": 197,
-      "actionEvidenceCount": 197,
-      "categoryCount": 61,
+      "actionCount": 196,
+      "actionEvidenceCount": 196,
+      "categoryCount": 60,
       "targetCount": 8,
       "evidenceCount": 99,
-      "lastEvidenceTime": "2026-09-14T15:30:07+00:00",
+      "lastEvidenceTime": "2026-09-14T15:52:25+00:00",
       "intensity": 100,
       "evidence": [
+        {
+          "title": "Constructive strategic stability or strategic accommodation? - upi.com",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPcENhU1duQmtwVUc2N2M3bVN4T29Sb3BlUjJhUmZ2TlZZWmxqdGoyUVNyUUQxQjRSLWRfUXZJaFJiQXNMeG9FcGVkSWFENXpPdDd0azFrd0w0OWNTZXFyU1JTQk43X0RYa0NVSVZwUnF6S3lVTXduaWk0NjdpLWw5WDJwNVkzWnPSAYwBQVVfeXFMT2h2RjBXM3BTOTVqM3RtQVlyeVUzR1Ruei1BbXJYVml3Zmc1dW1sTVMyRUtLTmQzbFRJc3ktN1phRVVBWTlndjZTN1kyNjUtc1lXc0pjQm9lTlhlQ1lVNE5LbVdqRkVpTFBtekxwQmZqVWZlT1BGQ2NnRFlvYmI2UzNmS0xtZV82eUZYdk4?oc=5",
+          "source": "Google News — China Security / PLA",
+          "time": "2026-09-14T15:52:25+00:00"
+        },
         {
           "title": "US President Donald Trump downplayed reports that Chinese entities supplied Tehran with satellite images of a military base in Jordan before and after an Iranian strike killed three US soldiers. | via ANC 24/7 Link to the full story in the comments section. - facebook.com",
           "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNVDRaalRHMzV4QmhZei04SlBJSGZpWk0tVFlKclZIRFFUQkVIb2NONF9LaXpZYXRBQVg3YWJvZkVxTEY5d1dNRDd6YnFuX1ltdFNlaEVYdXZQWHBHZXd0NFZySkhmcm1mSzJJSU14SGt3UHRjVEJ1TWR5VHR5dHVDdXhHLS1QRHBZM3JMVTZFdVF3c0lqUi01YkxCN21heHlaNzJIejYzMkJUckIyZlY4YnZSSHBBOHdwV2RoYnJsVGowWkFaM180R3k4eFc4ZGRraXdPUDM3bw?oc=5",
@@ -330,12 +336,6 @@
           "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQTVRwR1Q2bnN0angwMFVNbUVWT3JGejM2eWxySlBMSjhQUEdzTlkxUEpfSmp5bzFaUEZHU3FBUHlMZkxWYzhyQkF6Wm9kdEZYZUwtMml5OEFLcmx0aUFkbHRWLU5hU240TUh6ODQ3RFgxcmhIS2JIX2xmc1lMY1VLU2lUcFJ6M05aYzRFWk9zZmRqbDFtZmdHTHlqTzVGSnRMdGptcVZOWFVLaXprRmdPRkJ1NmpudHJo0gG4AUFVX3lxTFBNVHBHVDZuc3RqeDAwVU1tRVZPckZ6MzZ5bHJKUExKOFBQR3NOWTFQSl9KanlvMVpQRkdTcUFQeUxmTFZjOHJCQXpab2R0RlhlTC0yaXk4QUtybHRpQWRsdFYtTmFTbjRNSHo4NDdEWDFyaEhLYkhfbGZzWUxjVUtTaVRwUnozTlpjNEVaT3NmZGpsMW1mZ0dMeWpPNUZKdEx0am1xVk5YVUtpemtGZ09GQnU2am50cmg?oc=5",
           "source": "Google News — China Economy / Trade",
           "time": "2026-09-14T09:05:07+00:00"
-        },
-        {
-          "title": "China Stocks Waver Amid AI and Semiconductor Weakness - Devdiscourse",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNNy1FNmdYMlROemc1cm5fdmJPUE15WGE4bWFZN0tsVElZT0tLSEtFbi1YVERnX1NabTJDZWNPa2ZtQ1ExUXVsQ05GZGdVZ3ZybHVGQWd4SkRZZUxTckZIN09XazVRYmxLOXVINUZicjFZQnlFb3U1TlNMbFVvYkNMdXZ6M0NWVmtXQ1c0Qnk2SnZuS1c1QUFNN2FNWl96RHJIeHlhVk5yY1J5WkZUclI3SNIBsAFBVV95cUxNNy1FNmdYMlROemc1cm5fdmJPUE15WGE4bWFZN0tsVElZT0tLSEtFbi1YVERnX1NabTJDZWNPa2ZtQ1ExUXVsQ05GZGdVZ3ZybHVGQWd4SkRZZUxTckZIN09XazVRYmxLOXVINUZicjFZQnlFb3U1TlNMbFVvYkNMdXZ6M0NWVmtXQ1c0Qnk2SnZuS1c1QUFNN2FNWl96RHJIeHlhVk5yY1J5WkZUclI3SA?oc=5",
-          "source": "Google News — China Economy / Trade",
-          "time": "2026-09-14T08:27:11+00:00"
         }
       ],
       "sourceBacked": true
