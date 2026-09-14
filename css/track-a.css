@@ -108,7 +108,11 @@
 .ta-dot5.on.critical{background:#ff405f}.ta-dot5.on.elevated{background:#ffc857}.ta-dot5.on.notable{background:#4d9aff}
 @media (max-width:520px){.ta-tiles6{grid-template-columns:repeat(3,minmax(0,1fr))}.ta-row2{grid-template-columns:minmax(0,1fr)}}
 
-/* Phone screenshots (390px): stat-tile labels must never split mid-word. */
+/* Phone screenshots (390px): stat-tile labels must never split mid-word.
+   Hotfix alerts-js: overflow-wrap:normal was a no-op (it is the default) so
+   narrow 3-up tiles still clipped/split labels. 2-up tiles at <=420px give
+   labels room; break-word keeps emergency breaks at word boundaries. */
 .ta-tile6{min-width:0}
-.ta-tile6 .l,.ta-tile6 .s,.ta-tile .l{word-break:normal;overflow-wrap:normal;hyphens:none}
+.ta-tile6 .l,.ta-tile6 .s,.ta-tile .l,.ta-tile .s{word-break:normal;overflow-wrap:break-word;hyphens:none}
+@media (max-width:420px){.ta-tiles6{grid-template-columns:repeat(2,minmax(0,1fr))}
 @media (max-width:520px){.ta-tile6 .l{font-size:9px}.ta-tile6 .s{font-size:8px}.ta-tile .l{font-size:9px}}

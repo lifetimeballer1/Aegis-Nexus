@@ -119,7 +119,7 @@ export function renderBriefings() {
     const meta = [`${dev.reportCount ?? '—'} reports`, `${dev.independentSourceCount ?? '—'} independent sources`, `confidence ${dev.confidence || 'ungraded'}`];
     if (dev.lastSeen) meta.push(formatRelativeTime(dev.lastSeen));
     const sources = Array.isArray(dev.sources) ? dev.sources.slice(0, 4).join(', ') : '';
-    return `<button type="button" class="gp-brief-dev gp-tap sev-${sev}" data-brief-dev="${esc(dev.id || dev.title || ''})}" aria-label="${esc((dev.title || 'Untitled development') + ' — open details')}"><span class="gp-alert-bar"></span>${thumbImg(dev.title, dev.category, 'gp-brief-thumb')}<div class="grow">`
+    return `<button type="button" class="gp-brief-dev gp-tap sev-${sev}" data-brief-dev="${esc(dev.id || dev.title || '')}" aria-label="${esc((dev.title || 'Untitled development') + ' — open details')}"><span class="gp-alert-bar"></span>${thumbImg(dev.title, dev.category, 'gp-brief-thumb')}<div class="grow">`
       + `<div class="title">${esc(dev.title || 'Untitled development')}</div>`
       + `<div class="meta">${esc(meta.join(' · '))}${sources ? ` · ${esc(sources)}` : ''}</div></div>`
       + `<span class="gp-sev gp-sev-${sev}">${dev.breaking ? 'Breaking' : esc(dev.confidence || 'ungraded')}</span></button>`;
@@ -161,7 +161,7 @@ export function renderBriefings() {
     + (watchRows || '<div class="gp-state"><div class="gp-state-title">Watchlist empty</div><div>No attention indicators in the current brief.</div></div>')
     + `<div class="gp-dash-panel" style="margin-top:8px"><h3>My Watchlist <span style="font-weight:400;color:var(--muted);font-size:10px">${pins.length} pinned · this device only</span></h3>`
     + (myRows ? `<div class="gp-dash-list">${myRows}</div><div style="margin-top:8px"><button class="gp-btn" data-watch-export type="button">Export watchlist JSON</button></div>` : '<div class="meta">Nothing pinned yet — pin entities from the pipeline watchlist above.</div>') + `</div>`
-    + (method.caution ? `<div class="gp-brief-caution">${esc(method.caution)}</div>` : '');
+    + (method.caution ? `<div class="gp-brief-caution">${esc(method.caution)}</div>` : '')
     + briefDrawerHtml(developments);
 
   el.querySelectorAll('[data-brief-filter]').forEach(btn => btn.addEventListener('click', () => {

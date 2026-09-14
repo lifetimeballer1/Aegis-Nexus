@@ -704,3 +704,8 @@
 @media(min-width:1024px){.gp-tl-tension{display:none}}
 /* Phase 1 T4 — markets filter/sort: phone-first horizontal chip scroll; desktop wraps in place, grid unchanged. */
 @media(max-width:1023px){.gp-mkt-filters{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:4px}.gp-mkt-filters .gp-filter{flex:0 0 auto}}
+
+/* Hotfix alerts-js (390px): command stat-card labels wrap only at word
+   boundaries, slightly smaller on narrow phones. */
+.cc-kpi .l{word-break:normal;overflow-wrap:break-word;hyphens:none}
+@media (max-width:420px){.cc-kpi .l{font-size:10px}}

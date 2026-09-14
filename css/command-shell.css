@@ -282,3 +282,9 @@ body{padding-bottom:64px}
 .gp-glass{background:linear-gradient(180deg,rgba(20,38,54,.72),rgba(6,11,18,.78));backdrop-filter:blur(16px) saturate(1.2);-webkit-backdrop-filter:blur(16px) saturate(1.2);border:1px solid rgba(122,162,200,.28);box-shadow:0 8px 32px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,.06)}
 @media(prefers-reduced-motion:reduce){.cs-prio-dot{box-shadow:none}}
 @media(forced-colors:active){.cs-prio-dot{box-shadow:none}#commandStatusBar,#commandBottomTicker{backdrop-filter:none}}
+
+/* Hotfix alerts-js: the pinned bottom bar copies #commandClock's spans into
+   a plain inline context (no flex gap), so date + UTC rendered jammed
+   ("Sep 1415:58 UTC"). Restore the gap for the copied spans only. */
+#commandStatusBarClock .cs-date{margin-left:.45em}
+#commandStatusBarClock .cs-utc{margin-left:.45em}
