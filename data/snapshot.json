@@ -3,254 +3,266 @@
   "scoreVersion": 5,
   "sourceStatus": "300 stories · 361 live-db merged · persistent 7-day SQLite collector active; Global War News Map: 250 points | Cartel Intelligence Map: 268 points; Strategic reference layer: 33 nodes | USGS earthquakes: live | GDACS alerts: 100 live",
   "dataNote": "Global Tension is a weighted monitoring index built from six distinct current signal pools. Driver evidence exposes matching stories and independent source domains; headline volume alone does not determine the score. Cartel Intelligence Map points are source-map reports and unverified until independently corroborated. Strategic reference nodes are not incident records. USGS and GDACS points are public live hazard data.",
-  "tension": 41,
-  "tensionDelta": -1,
+  "tension": 38,
+  "tensionDelta": -3,
   "breakdownScores": {
-    "Conflict activity": 45,
-    "Diplomatic strain": 36,
-    "Economic pressure": 43,
-    "Market volatility": 35,
-    "Military posture": 47,
-    "Climate & humanitarian pressure": 32
+    "Conflict activity": 42,
+    "Diplomatic strain": 37,
+    "Economic pressure": 38,
+    "Market volatility": 33,
+    "Military posture": 41,
+    "Climate & humanitarian pressure": 28
   },
   "driverSignals": {
     "Conflict activity": {
-      "poolSize": 153,
-      "matches": 22,
-      "sources": 6,
-      "recentMatches": 14,
-      "signalRatio": 0.145,
+      "poolSize": 757,
+      "matches": 84,
+      "sources": 4,
+      "recentMatches": 0,
+      "signalRatio": 0.107,
       "topSignals": [
         {
-          "title": "US envoys meet Putin: What’s behind latest diplomacy on Russia-Ukraine war?",
-          "source": "Al Jazeera",
-          "url": "https://www.aljazeera.com/news/2026/9/6/putin-meets-us-envoys-whats-behind-latest-diplomacy-on-russia-ukraine-war?traffic_source=rss",
-          "time": "Sun, 06 Sep 2026 15:00:16 +0000"
-        },
-        {
-          "title": "Shoebridge criticises Labor response after IDF officer’s ‘reprehensible’ comments on deadly Zomi Frankcom strike",
+          "title": "US envoys Kushner and Witkoff arrive in Kyiv after talks with Putin",
           "source": "Guardian World",
-          "url": "https://www.theguardian.com/australia-news/2026/sep/07/zomi-frankcom-israel-gaza-idf-world-central-kitchen-ntwnfb",
-          "time": "Sun, 06 Sep 2026 15:00:10 GMT"
+          "url": "https://www.theguardian.com/world/2026/sep/06/us-envoys-jared-kushner-steve-witkoff-arrive-kyiv-talks-on-ending-war",
+          "time": "2026-09-06T13:05:46+00:00"
         },
         {
-          "title": "Ukraine-Russia talks: What are the US objectives?",
-          "source": "France 24",
-          "url": "https://www.france24.com/en/video/20260906-ukraine-russia-talks-what-are-the-us-objectives",
-          "time": "Sun, 06 Sep 2026 14:03:26 GMT"
-        },
-        {
-          "title": "How significant are the Yemeni government’s military gains against Houthis?",
+          "title": "US, Iran engaged in tanker war: Where is the months-long conflict headed?",
           "source": "Al Jazeera",
-          "url": "https://www.aljazeera.com/news/2026/9/6/how-significant-are-the-yemeni-governments-military-gains-against-the-houthis?traffic_source=rss",
-          "time": "Sun, 06 Sep 2026 13:41:25 +0000"
+          "url": "https://www.aljazeera.com/news/2026/9/6/us-iran-engaged-in-tanker-war-where-is-the-months-long-conflict-headed?traffic_source=rss",
+          "time": "2026-09-06T10:49:22+00:00"
         },
         {
-          "title": "Germany: Why is the AfD so popular in Saxony-Anhalt?",
+          "title": "Brisbane swelters under hottest September day in years as east coast faces unseasonably warm weather",
+          "source": "Guardian World",
+          "url": "https://www.theguardian.com/australia-news/2026/sep/06/brisbane-queensland-hottest-september-day-in-years-east-coast-unseasonably-warm-weather",
+          "time": "2026-09-06T06:57:50+00:00"
+        },
+        {
+          "title": "Germany's far-right AfD eyes historic state victory in Saxony-Anhalt election",
           "source": "France 24",
-          "url": "https://www.france24.com/en/video/20260906-germany-why-is-the-afd-so-popular-in-saxony-anhalt",
-          "time": "Sun, 06 Sep 2026 13:37:48 GMT"
+          "url": "https://www.france24.com/en/europe/20260906-germany-s-far-right-afd-eyes-historic-state-victory-in-saxony-anhalt-election",
+          "time": "2026-09-06T05:52:06+00:00"
+        },
+        {
+          "title": "‘Nobody will win’: Zelenskyy adviser warns of mutual destruction if war with Russia continues",
+          "source": "Guardian World",
+          "url": "https://www.theguardian.com/world/2026/sep/06/zelenskyy-advisor-warns-mutual-destruction-war-russia",
+          "time": "2026-09-06T04:00:55+00:00"
         }
       ]
     },
     "Diplomatic strain": {
-      "poolSize": 57,
-      "matches": 3,
+      "poolSize": 659,
+      "matches": 49,
       "sources": 2,
-      "recentMatches": 3,
-      "signalRatio": 0.055,
+      "recentMatches": 0,
+      "signalRatio": 0.074,
       "topSignals": [
         {
-          "title": "Kushner, Witkoff set for Kyiv talks after Putin meeting in US push for peace",
-          "source": "Fox News Politics",
-          "url": "https://www.foxnews.com/politics/kushner-witkoff-set-kyiv-talks-after-putin-meeting-us-push-peace",
-          "time": "Sun, 06 Sep 2026 07:35:03 -0400"
+          "title": "President Trump Delivers Remarks to U.S. Embassy Personnel and Business Leaders - The White House (.gov)",
+          "source": "The White House (.gov)",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPU3Bqd0xVaUZ4SXVzT3A3dzFORHlJX29ZcE0tb1pyT1R0d25WNXB2bjd5c3RZMXN6VHBQbUZGYTdKQTZWWDJwRlBBNURmZFhsX1pwRzJSeWttZFA0VDI1WUJaSUVFTVVjaF9lVmI2UjU4OFZwUWUtYWpfYVk4SFBkeGxvSkFEZU1lZmlHdVh2SlBsUkI4SXFlS3I1SWEwd2VXUHJfc0R5Wk1Fa2t3RDQyUUlIZw?oc=5",
+          "time": "Sat, 12 Sep 2026 11:30:53 GMT"
         },
         {
-          "title": "High Stakes Talks: Putin and U.S. Envoys Seek Resolution in Ukraine Conflict - Devdiscourse",
-          "source": "Google News — U.S. Politics",
-          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPMi1YY2JUMEpfa0JXTnhad3ItVF96SFlVQWdRbG93TldGMW5SMU1ScU5nQ2RiSTc3blliTUU1bURqdXFRMDVacVRCMHlZZXBCSGtRNHRxa1kzMnJBMktvNEtub3V2UHdSU0lJR0prMExhWGswTWhNb0I3VWRLQjFXbmhZZGJKb0NyNDZSdzBZMUY3REdNc3M3ZEZYYUtuel9GMHUyOVk5N3g1cWVZdDlPWEY0aWZJZzRoZkxFVDhYR0EtNzhkV1BnUFBOMNIBywFBVV95cUxPMi1YY2JUMEpfa0JXTnhad3ItVF96SFlVQWdRbG93TldGMW5SMU1ScU5nQ2RiSTc3blliTUU1bURqdXFRMDVacVRCMHlZZXBCSGtRNHRxa1kzMnJBMktvNEtub3V2UHdSU0lJR0prMExhWGswTWhNb0I3VWRLQjFXbmhZZGJKb0NyNDZSdzBZMUY3REdNc3M3ZEZYYUtuel9GMHUyOVk5N3g1cWVZdDlPWEY0aWZJZzRoZkxFVDhYR0EtNzhkV1BnUFBOMA?oc=5",
-          "time": "Sun, 06 Sep 2026 02:54:50 GMT"
+          "title": "France apologises for diplomatic spat with US to lift block on new ambassador to Washington - France 24",
+          "source": "France 24",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNVkFseHgtdmtDVVozU0Y2QVpZY2tOdy1SU1JnZnJLd1p0T1JYQlBuQWl0Tm1IUkVzaVh0OHFIMUstZXZRMDFkZlVsb1dMMk5MOTFwdUY5QjZBdFY4VGtoSlB3bW93LXdFNnhacXFVazFKakMwVjNlNHU4TGpyb3FIZU9lSFZpY0FYZE9xYU1mNm9RZmJvRWpoX29zelQxbmp4SDVXMGdseThjclA1cmQyTEx5Zy1uUElhUVZadmp2OEo2eUtJME5FUmF3VUd2blpR?oc=5",
+          "time": "Sun, 13 Sep 2026 09:01:17 GMT"
         },
         {
-          "title": "Several Republicans vote with Democrats to pass Ukraine aid, Russia sanctions package - ABC News - Breaking News, Latest News and Videos",
-          "source": "Google News — U.S. Politics",
-          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPNHdrTGxMZUpZTFJQZjRNZU5lVFhJYVNmdEUzYVNCZ09zTkxEMUFJaDJfNGxHOFpNZUNiQk5qQ3JBWG5qeTlLOVp6bzE4YVZpNGtKZ2tUaUV4SFhqLTlYZTBDUzUtOTIwVDBiTVZfNmdlalllemFmMTZhMHdJazhsZFdTc05BdnQ0REtuTUZhbVBSUEFNd0t4NV9iSXhRZVNSazBzZHZTNGVKS1FM0gGyAUFVX3lxTFBWc2NUSVBWYzVyNVF0dVFmV282dHpZY1Y5Snh5ZWppNnEwYzZLYXlHVHpZLW5RbVg3aHhRMlVWTDlCMXRUR0M1WDFEV3R2MV9KUEZzVWhacTVxR1dxQllKWlpuUDBkSE8tSXBMVEhYemF0cDMtbDMzcDhvc3NiLTBxemo3Y1NvV0FFUzBvSEd4c0xDblJLUUc0YkZ5b0JlUGhuMnBnWE43Si11WDlPMmhsOWc?oc=5",
-          "time": "Sat, 05 Sep 2026 17:30:17 GMT"
+          "title": "PM Modi meeting with Iranian President at SCO Summit comes at an",
+          "source": "GDELT Live — World Politics",
+          "url": "http://www.calcuttanews.net/news/279279472/pm-modi-meeting-with-iranian-president-at-sco-summit-comes-at-an-important-time-former-envoy-gaddam-dharmendra",
+          "time": "2026-09-05T16:45:00+00:00"
+        },
+        {
+          "title": "In the Driest Region of the World, Water Offers Peace - Food Tank",
+          "source": "Food Tank",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNd3hIVThGV2owUzNJdndoMExEazVHaUVpQ21vUXNtZ2FMc0tpakdQSjF2eWhZckFXbFpHeUJMQndZOEtzSHl1MFJYZnFZOUJmS29qcHY5Wi1JTFVSMjh5a3Rlb1otZVNTLXlCVGFTT1pyTXkyeWtkbUhOVkhDNGZfWk1VTVBKdEV5cGxXYzAta1Y?oc=5",
+          "time": "Mon, 11 Jul 2022 07:00:00 GMT"
+        },
+        {
+          "title": "Trump’s Iran agreement draws rare reproach from powerful Republicans - CNN",
+          "source": "CNN",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPT1pHcUtaWG5oWTR0Y0p4RHoyWXlSdTRQZkliM1ZZclpWYVBMd1dEa1RBZTlUeWhGVXNlOUpwRnlxMjMySGpoRjBDQWhtVzlMQnJQY1ljMjB2dGdjSnZxUmlPM1lHeXl1TDdYZmk2WjhrellxOG5TNDVaNjZNV0trZDhlb2ZOUkxB?oc=5",
+          "time": "Thu, 18 Jun 2026 07:00:00 GMT"
         }
       ]
     },
     "Economic pressure": {
-      "poolSize": 139,
-      "matches": 24,
+      "poolSize": 749,
+      "matches": 63,
       "sources": 4,
-      "recentMatches": 15,
-      "signalRatio": 0.171,
+      "recentMatches": 0,
+      "signalRatio": 0.081,
       "topSignals": [
         {
-          "title": "China prepares £40bn stimulus for financial sector amid fears over sluggish growth",
+          "title": "No bailouts for Jaguar Land Rover amid reports of thousands of job cuts, says minister",
           "source": "Guardian World",
-          "url": "https://www.theguardian.com/world/2026/sep/06/china-prepares-40bn-stimulus-for-financial-sector-amid-fears-over-sluggish-growth",
-          "time": "Sun, 06 Sep 2026 15:16:43 GMT"
+          "url": "https://www.theguardian.com/business/2026/sep/06/bailouts-jaguar-land-rover-redundancies-cuts-business-secretary",
+          "time": "2026-09-06T13:24:05+00:00"
         },
         {
-          "title": "Bullion markets this week: US inflation, crude and Middle East tensions to set the tone - The Times of India",
-          "source": "Google News — Global Economics",
-          "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPZEVzUHRFY1IxS3J6QUJuRDhzaFpzWHVzczlsV3Q2TWl1a3p6R0ZTZFZSYkZoYy1qNlBweXIyRWNNRGhhdXAwRU9BV0ZIN3FwUS1fNVl1ZmZPV1p4Y0ZKc0QzTHNpZXdpa0k3X2kyNk5BZmQ2US1sdE0yQ2R3bXhHZVRTc01jMng1cU4zSk5tM0pBWDl5YWNKc2s5dFFxVDdmT3FraUJuRVhKTVpZVlE3TXVfZW14ajRqSkV3UlJreGJOYTUySS02bnNWanNHMUFqcWlJbnFvLUpOLWdQSEFwdlNiZFBpenh3NUhoOWlhd19VWlBkMFliU3VBRWlCcjAt0gGGAkFVX3lxTE4xN3ZHbmp5dk9xTHdwUGtOcm4tS2NWX1BVMHlHYXZqUTFOeFlyZ3VEN3pqdmpIZDlJYnEwWkhVR1NJcnF2U1RMYjVOdExlb05ab2Y0X2w0ajgyRGRfTDl5ZGNNWFFRTGNHZ2ZJUjZ3WHl5aGhQR1pBcWN0dHM5THA3T0ozS2xBV0FZdHhWaTk3OGliazlFN1V3cTNlcDZNZFNtcmVWTEpJVTdWcEw4UExwYlNxbnFSZ2oyZ0VPejhrVmtPN21fdWpCUWpSeGNDc0hJaHpJODFqMnlqaHNrWmVvUFJCbzZyX1M4OTF3MnRuSUFHQm9Ib3E1bGI4OVFHTTYxWnhnd0E?oc=5",
-          "time": "Sun, 06 Sep 2026 15:06:00 GMT"
+          "title": "German startup sends first commercial rocket into space from Europe",
+          "source": "Guardian World",
+          "url": "https://www.theguardian.com/business/2026/sep/06/german-startup-sends-first-commercial-rocket-into-space-from-europe",
+          "time": "2026-09-06T13:21:36+00:00"
         },
         {
-          "title": "Upcoming inflation data could determine if the Federal Reserve hikes interest rates soon, leaving Wall Street on edge - Fortune",
-          "source": "Google News — Global Economics",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNdmdaT3E5TjNKcU53Z0FXbDRKeGl0a2s5ZFFwNUVyaGFCUE1pODBBWU03REFMYzJyR2VhNWxzWDdTU09VdTFWVENmVzZNV2stYW11clZiNTVXRG8yQkVJRTZyZmJodk44Vl96bzd5OFRtck4wQXFWYlRSN29aRG4tZkk4WUlaSURDRUVyWWU4XzNjWUphdlRzNWljYw?oc=5",
-          "time": "Sun, 06 Sep 2026 15:03:00 GMT"
+          "title": "Tupac trial spotlights decades of US police failures in solving the case",
+          "source": "Guardian World",
+          "url": "https://www.theguardian.com/news/ng-interactive/2026/sep/06/tupac-shakur-murder-investigation",
+          "time": "2026-09-06T05:00:56+00:00"
         },
         {
-          "title": "Nikkei 225 Today: Tokyo Stocks Slip to 66,215.34 as Japanese Bond Yields Hit Three-Decade High - BBN Times",
-          "source": "Google News — Global Economics",
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNVkRjN0RQa3NmMGhRcXUwd2Y5RWhCQVVSQlFzRU94R0V1ZjF4OURVS2RYcU5jWGVrVUdYa3hSNm5abUhrSE1jWmdkM3loUE04VXA1UW1TVFdnc2JtVUpsd1pDREVqTmpuOGlFUTFPOEFRdmV0cmZScUxzaklLWUVnRmV5SzNZZ2dPWkZBbTA3Smt5V09PNlhnbU5aN1VGeHlobi01amV4d3VQTG1FUDk1QzM2ck1fZUZnNkRHYy1pV0p0ZVN6U0s0?oc=5",
-          "time": "Sun, 06 Sep 2026 12:05:07 GMT"
+          "title": "South Africa’s chrome riches fuel a deadly underground economy",
+          "source": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/6/south-africas-chrome-riches-fuel-a-deadly-underground-economy?traffic_source=rss",
+          "time": "2026-09-06T04:31:45+00:00"
         },
         {
-          "title": "Prediction markets have become America’s new national pastime | Dave Schilling",
-          "source": "Guardian US",
-          "url": "https://www.theguardian.com/commentisfree/2026/sep/06/prediction-markets-gambling-american-pastime",
-          "time": "Sun, 06 Sep 2026 11:00:04 GMT"
+          "title": "German company launches rocket as Europe enters satellite race",
+          "source": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/6/german-company-launches-rocket-as-europe-enters-satellite-race?traffic_source=rss",
+          "time": "2026-09-06T00:53:23+00:00"
         }
       ]
     },
     "Market volatility": {
-      "poolSize": 139,
-      "matches": 6,
+      "poolSize": 749,
+      "matches": 8,
       "sources": 2,
-      "recentMatches": 5,
-      "signalRatio": 0.045,
+      "recentMatches": 0,
+      "signalRatio": 0.01,
       "topSignals": [
         {
-          "title": "China prepares £40bn stimulus for financial sector amid fears over sluggish growth",
-          "source": "Guardian World",
-          "url": "https://www.theguardian.com/world/2026/sep/06/china-prepares-40bn-stimulus-for-financial-sector-amid-fears-over-sluggish-growth",
-          "time": "Sun, 06 Sep 2026 15:16:43 GMT"
+          "title": "Why has the Trump administration ordered staff to take polygraph tests?",
+          "source": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/9/5/why-has-the-trump-administration-ordered-staff-to-take-polygraph-tests?traffic_source=rss",
+          "time": "2026-09-05T13:54:33+00:00"
         },
         {
-          "title": "Nikkei 225 Today: Tokyo Stocks Slip to 66,215.34 as Japanese Bond Yields Hit Three-Decade High - BBN Times",
-          "source": "Google News — Global Economics",
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNVkRjN0RQa3NmMGhRcXUwd2Y5RWhCQVVSQlFzRU94R0V1ZjF4OURVS2RYcU5jWGVrVUdYa3hSNm5abUhrSE1jWmdkM3loUE04VXA1UW1TVFdnc2JtVUpsd1pDREVqTmpuOGlFUTFPOEFRdmV0cmZScUxzaklLWUVnRmV5SzNZZ2dPWkZBbTA3Smt5V09PNlhnbU5aN1VGeHlobi01amV4d3VQTG1FUDk1QzM2ck1fZUZnNkRHYy1pV0p0ZVN6U0s0?oc=5",
-          "time": "Sun, 06 Sep 2026 12:05:07 GMT"
+          "title": "Global Markets Under Pressure as Oil Prices Surge, Inflation Fears Rise and Geopolitical Tensions Escalate - India Infoline",
+          "source": "India Infoline",
+          "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOYlZoa0VKX2YyQnlxTjkyU1lvZktzRkNpY25lWlZpUlVPOEZYc1BuZG5rQXpfS3hhQXZ5dk5fclc2RnpFSld4QW1Kc3laTS1PX043eW5HaUt0THpjUzFDbkt0eUVJc1NSRUlDeW1FVXJFQlJmUUYtTVZKVzlteWRkR2FTLTM1bXgzVE1JSFBRX2loQ2g5Q2REWnFfbW9BRE1FVmhrdUdOM3hpdU1ZVkVHZ1d5Sk9MbTk3QXRNVFBMMkFpeGNNWExKekJzMkZuV09jSHY5V0NLNFZwZzM0RFR4dHBjQ3BpUVlRRHc?oc=5",
+          "time": "Fri, 24 Jul 2026 07:00:00 GMT"
         },
         {
-          "title": "Wall Street rises as tech stocks climb and oil prices, bond yields hold relatively steady - Mankato Free Press",
-          "source": "Google News — Global Economics",
-          "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxPX0JVOXVwejU1SzVfVnFrYWk5YlF2SGYweXF6emRScjdPS3A3ZlBIbkdUYkZDVDZGV0Z3cjBlVW5BWU1Rc0pqbmxEbjJTSjdobE5RYUptR181WUNRdlZRRUF0Vl93MDZmQVpsUmdlZ0RzZDdybHIwaU5zajB6Q1c3WndDSDl2OGhmNGVzLXQ3TE1uNDBad1Q5NERhNEFOQjlLT1cwRDNpTVNHSHZWa2dONTczMkRueDJSa3ZsWnFfV0staHZJZS1wTjVvYlNMWFhGRlhfMXBod2ZVZE4zdy12eGFlYVlCT25sdjdyZ1JFNzN5UjgzZkNvd05WRHUyMjRBbkhhR25pbW1ENnV1cE1WcUFUSGtvcnFj?oc=5",
-          "time": "Sun, 06 Sep 2026 10:05:31 GMT"
+          "title": "Oil prices in the driving seat as energy shock upends global markets - Financial Times",
+          "source": "Financial Times",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQNWdhSG5vZ0VXSER3UWJnbUtqTkVERVhkZHRRT05iN0ZXUENJOHk3LS1WbEh1QWVfdUFRb3ExaGtodmV4cWswcFZxMDBpd0xXRVJoSm9KNHUybW1qY0xFSG9Wdzh2ZkNzajZxSkFWSXdkeE82X3Y4TUFPVUpEUm5kcFNqYU0?oc=5",
+          "time": "Fri, 13 Mar 2026 07:00:00 GMT"
         },
         {
-          "title": "Stock Market This Week: Fed Rate Hike Bets, Bond Yields, Crude Oil And Other Cues To Watch - Outlook Money",
-          "source": "Google News — Global Economics",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQeUNoQUtyVlRzSS1feUZuSmMyaVRzcmlQY0pMZ1h4UzZvS2xhQVNxNERBTXpNUkFJT0Nqem5uQjRPbkMwSF9JOGR3a213bjNUelVQOUZ3Mi03bUNBbUg5bVQxYjlibTVoamxNLVZQbmt0T0JQSHdxOTlMRUtQblVvMmdlN1dsYl8xenlWNDdGMzdfQWVCLXpLeVM4empDSmdyRmdXZW96OUFlYVRSUmfSAa4BQVVfeXFMUHlDaEFLclZUc0ktX3lGbkpjMmlUc3JpUGNKTGdYeFM2b0tsYUFTcTREQU16TVJBSU9DanpubkI0T25DMEhfSThkd2ttd24zVHpVUDlGdzItN21DQW1IOW1UMWI5Ym01aGpsTS1WUG5rdE9CUEh3cTk5TEVLUG5VbzJnZTdXbGJfMXp5VjQ3RjM3X0FlQi16S3lTOHpqQ0pnckZnV2VvejlBZWFUUlJn?oc=5",
-          "time": "Sun, 06 Sep 2026 08:04:11 GMT"
+          "title": "The potential impact of high oil prices on economies - Vanguard Corporate",
+          "source": "Vanguard Corporate",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNNjQ4VFFTRy1iYVRHM2Nfb2djQU1XTE1vcVpOeVRTUFRud1M5MEpRTTBQeVBxSWthNS1VYUhJLXZCZFJEYWp3YzFFb3RhYjhFZThVMW5iQ3pCdnh3bFVwT3p6RlZscUp1NXF6aGE5MmFiS0haYzFKSEwzeHBiSEFLaV9SUG9waWJ5ZUVXVXc3OWE1WThoQUV3ZTRIR1JhcUh1MGxSRFpINWJLNngyWWxqWmRpM19mbzJzTDFqVw?oc=5",
+          "time": "Tue, 10 Mar 2026 07:00:00 GMT"
         },
         {
-          "title": "Dollar rallies as oil surge revives rate-hike bets - Philenews",
-          "source": "Google News — Global Economics",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5RcmhsVXFFMDQxWHVfSW82RzhQRnJXM1ZtbEJXZkMzbURZSFh5TG05bEpKc0pMT0plQVpUVmxTdUh0M2RCSXVkNW16V05aamx3UTNOWmZEUkprLWlTaGNTS2J6bWdoWEt0clZwUmpHa1pDR1NNX1lZR0NWakpEaXM?oc=5",
-          "time": "Sun, 06 Sep 2026 06:36:32 GMT"
+          "title": "War with Iran delivers high oil prices and another shock to the global economy - PBS",
+          "source": "PBS",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQaktDQ0VRUnhHNjVMaHF4dnY1eno0cThzMjUxOVB6cUdJTm5QOW1LUWRDelZOckdSNWZITzg1dktUUkdLajRvYmlUMlJISWNyZGUyWHN0NFM1Y25fVmFMV3p2M1JOZEZESzB4bTNuUG1aem1hTkJJM2pNTEVCS25ZVWhWLWhEYmxwczdKVVVMQ0RmdzBTN0lCbmVYSVVnMGJ3dWU0WERzWXVCQ0xlNHNTY2FWSdIBuAFBVV95cUxPUl9HSkxxQkpfYnJub0VxS0tsWk9KVjRIV0JON2pOVV9qSnRUdm96bDluUW9yUGxpSjZXd3ZmcjNRQnFwVm1HOVpVV0pTTmZ6MDlKWnl3ZzZ0cldJdEN1dUwtUzhyZDJxcFBFV185WW15RDQ5RDhYTUJkYXZWdGVWN2w2dndrRG12OXFnNmNqRHNFV014ZGtxTWV0NkxGX2dYWW0tV3V5SmliaFY5RGJ0VzFTOEVaNDRN?oc=5",
+          "time": "Tue, 10 Mar 2026 07:00:00 GMT"
         }
       ]
     },
     "Military posture": {
-      "poolSize": 153,
-      "matches": 27,
-      "sources": 5,
-      "recentMatches": 15,
-      "signalRatio": 0.173,
+      "poolSize": 757,
+      "matches": 63,
+      "sources": 4,
+      "recentMatches": 0,
+      "signalRatio": 0.084,
       "topSignals": [
         {
-          "title": "Al Jazeera English: Increased US military role in Latin America carries risks for the region - UA.NEWS",
-          "source": "Google News — Operation Southern Spear",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNNzRZYkdqWHd2RFlLaTQwNXhHVEd0V0g3UnRoaGlqUXozUUNnby1QWlJpVTY4a29wdXhGYjVHWF9SZUlHb0pjUW81dE1aYWlxV3VXZFdyRFFvYzZmWDFKMENEYmVQX3JGNE13LVh3Ml9ZQ2RvVDYwS29rdHdDNkhwc3RNa2tINlhhaEZoZkFOM2hYZW8wTDY3elFfOUZ2OEw1bEE5RGN0SXQyVDJOYmpOYmxBNEFYYjJPdF8wUnRR?oc=5",
-          "time": "Sun, 06 Sep 2026 15:10:51 GMT"
+          "title": "US military assists Ecuador in 1st land operation against cartels: Source - abcnews.com",
+          "source": "abcnews.com",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPS0FEVERUTVcwVFd4NUNKX2dRRzNzQXhfQUlNX2JDRW9zeWsyeU93ZVl5XzJ1a3BJbUtZQ1N2SjVPLTVlN0pfZUw4OFVWRWptM2VuNVYtSV9wbm5ELW5hdEtZdWNDclZwLTFFSmlLeUNrY3RnVk9KdkJfNFdkbmxZS0lMVXdpZWVROE9ob3VQY0E2UDJyVjhoekRlN3ljWHVseVNCNklFLUlVYm_SAbABQVVfeXFMUEVoWXJOeGhaM1FGMWZfUFRyOXRYVnJBTUFWV3FBT1U0YTVDdF9iR3g0NGhxWjVLOHhBTVhqYUNWemVNSms2U3ItX21fUVJKZUg4S2U5SVBSMzg3TGVLa0RwY3lqWUR2WjdZSUVELXJETElPNmctMkVva3hWTURMa3QzU1ZIcGx1dU5tWDlRT3Z2bjVVMUJmNzVnSFA1c1BQNHVCUGUzLUxCUnV1azI4Rzg?oc=5",
+          "time": "Sat, 12 Sep 2026 15:49:00 GMT"
         },
         {
-          "title": "Shoebridge criticises Labor response after IDF officer’s ‘reprehensible’ comments on deadly Zomi Frankcom strike",
-          "source": "Guardian World",
-          "url": "https://www.theguardian.com/australia-news/2026/sep/07/zomi-frankcom-israel-gaza-idf-world-central-kitchen-ntwnfb",
-          "time": "Sun, 06 Sep 2026 15:00:10 GMT"
+          "title": "Was Trump rescued by 2 firefighters after 9/11? - Snopes",
+          "source": "Snopes",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5rQkdzX05QbmItQ0lNT0hjNDlqcENjTThvWUloclktOWkzNDJpbEZfbTNFSExrd1Z3elFibVJXUXhfMDV5VHg3Ulp4SHh3REllYWZ5Nlp2S2huYkR3QTJ4bDhidmpwT1doX2tIbmd2Q0RoQ09VN3RQUg?oc=5",
+          "time": "Fri, 11 Sep 2026 17:23:17 GMT"
         },
         {
-          "title": "What the US militarisation of Latin America could look like",
-          "source": "Al Jazeera",
-          "url": "https://www.aljazeera.com/opinions/2026/9/6/what-the-us-militarisation-of-latin-america-could-look-like?traffic_source=rss",
-          "time": "Sun, 06 Sep 2026 14:10:35 +0000"
+          "title": "US Military announces three killed in Caribbean Sea boat strike - سانا",
+          "source": "سانا",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5PR01CcXkwSDZQeW9lUi1mQXhpNUQyX1Yyb2VLX3JYRzQxLV9yc0N0eU15Q040U2MzQUdham5UVjdMcWhKZ0VGVWc5dTN6a056Qlhv?oc=5",
+          "time": "Thu, 10 Sep 2026 08:27:33 GMT"
         },
         {
-          "title": "How significant are the Yemeni government’s military gains against Houthis?",
-          "source": "Al Jazeera",
-          "url": "https://www.aljazeera.com/news/2026/9/6/how-significant-are-the-yemeni-governments-military-gains-against-the-houthis?traffic_source=rss",
-          "time": "Sun, 06 Sep 2026 13:41:25 +0000"
+          "title": "US military strikes suspected drug-trafficking boat in Caribbean [VIDEO] - AzerNews",
+          "source": "AzerNews",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBSUkl1NEhXSlVoSFZReDQ5eFE3cWZGazZ1d0Q0cjlqckhUd19xUnZhaTc5aXZkbVVZcDlBLTJlbjJjVHpmUXdPZ2plOUZWZzhiaXRTaA?oc=5",
+          "time": "Thu, 10 Sep 2026 09:24:00 GMT"
         },
         {
-          "title": "Commemoration held for late Bosnian Serb war criminal Ratko Mladic",
-          "source": "France 24",
-          "url": "https://www.france24.com/en/video/20260906-commemoration-held-for-late-bosnian-serb-war-criminal-ratko-mladic",
-          "time": "Sun, 06 Sep 2026 12:52:04 GMT"
+          "title": "Video: U.S. Military Strikes Drug-Trafficking Vessel In Caribbean Sea, Killing 3 - Marine Insight",
+          "source": "Marine Insight",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQbzRJTmpxVHNvNkNlVm5QcGVlTm94RUtvS0piSHctMV9XOEpkazlpNjA2WlN0cHRrb016eFI4LXloX0QwQ3U3WVpPVy1fODBrRlo5a0FTUlhGQndLUXFabFhneEtuTktMd0hrd2tDcXlJWnZZSDQ3NUdiUUdMOGhPUnZWYktneFAzaFQ5Z29JU3AzNnBHZXRWNWxGcmtmRnVfT0VMM1A0TmpISGI2?oc=5",
+          "time": "Thu, 10 Sep 2026 14:54:32 GMT"
         }
       ]
     },
     "Climate & humanitarian pressure": {
-      "poolSize": 151,
-      "matches": 17,
+      "poolSize": 861,
+      "matches": 47,
       "sources": 6,
-      "recentMatches": 8,
-      "signalRatio": 0.112,
+      "recentMatches": 0,
+      "signalRatio": 0.053,
       "topSignals": [
         {
-          "title": "Green forest fire notification in Zambia",
+          "title": "Green flood alert in Canada",
           "source": "GDACS Global Disaster Alerts",
-          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031694",
-          "time": "Sun, 06 Sep 2026 15:02:57 GMT"
+          "url": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104143",
+          "time": "2026-09-06T07:22:19+00:00"
+        },
+        {
+          "title": "Brisbane swelters under hottest September day in years as east coast faces unseasonably warm weather",
+          "source": "Guardian World",
+          "url": "https://www.theguardian.com/australia-news/2026/sep/06/brisbane-queensland-hottest-september-day-in-years-east-coast-unseasonably-warm-weather",
+          "time": "2026-09-06T06:57:50+00:00"
+        },
+        {
+          "title": "Chinese national rescued alive in flood - hit Rasuwa ; 64 - year - old woman rescued in Nuwakot",
+          "source": "GDELT Climate Security Watch",
+          "url": "http://www.nepalnational.com/news/279288478/chinese-national-rescued-alive-in-flood-hit-rasuwa-64-year-old-woman-rescued-in-nuwakot",
+          "time": "2026-09-05T21:30:00+00:00"
+        },
+        {
+          "title": "Alarming AI ads are flooding social media in the lead-up to Victoria’s election. But who is behind them?",
+          "source": "Guardian World",
+          "url": "https://www.theguardian.com/australia-news/2026/sep/06/fix-victoria-ai-ads-flooding-social-media-election-who-is-behind-them",
+          "time": "2026-09-05T20:00:46+00:00"
         },
         {
           "title": "Green forest fire notification in Angola",
           "source": "GDACS Global Disaster Alerts",
-          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031723",
-          "time": "Sun, 06 Sep 2026 15:02:39 GMT"
-        },
-        {
-          "title": "The week in pictures: Nepal rescue operations, World Nomad Games and Russian strikes on Kyiv",
-          "source": "France 24",
-          "url": "https://www.france24.com/en/europe/20260906-the-week-in-pictures-nepal-rescue-operations-world-nomad-games-and-russian-strikes-on-kyiv",
-          "time": "Sun, 06 Sep 2026 14:21:52 GMT"
-        },
-        {
-          "title": "Seven mouths, one meal: Feeding a family through Gaza’s food crisis",
-          "source": "Al Jazeera",
-          "url": "https://www.aljazeera.com/features/2026/9/6/seven-mouths-one-meal-feeding-a-family-through-gazas-food-crisis?traffic_source=rss",
-          "time": "Sun, 06 Sep 2026 13:15:46 +0000"
-        },
-        {
-          "title": "Nepal Flood Disaster - Caritas Australia",
-          "source": "Google News — Humanitarian",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE01M0lEYV92OWM2WTZIQVgyWXI0dG5Ba241VFExWjFRSXZuSV9yaTBXQkFVT2Z1cl94TGd0SXoyb19XbzlLd3k4RUhCdXhpZFBrVWs3ZHltbGlLOVdVWlpfMFctXzlVMXJtWDRocTZVUTl1emM?oc=5",
-          "time": "Sun, 06 Sep 2026 10:06:36 GMT"
+          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1031705",
+          "time": "2026-09-05T19:17:10+00:00"
         }
       ]
     }
   },
   "climatePressure": {
     "Drought & water": 25,
-    "Floods & storms": 28,
-    "Heat & fire": 29,
+    "Floods & storms": 26,
+    "Heat & fire": 26,
     "Food security": 26,
     "Health outbreaks": 25
   },
   "earlyWarning": {
     "level": "WATCH",
-    "score": 41,
-    "momentum": 0.3,
+    "score": 38,
+    "momentum": 0.2,
     "direction": "stable",
-    "strongestDriver": "Military posture",
-    "strongestDriverScore": 47,
+    "strongestDriver": "Conflict activity",
+    "strongestDriverScore": 42,
     "method": "Current score model v5; recent 12 snapshots versus preceding 24 matching snapshots."
   },
   "changes": [
@@ -231552,5 +231564,6 @@
       "HTTPError: HTTP Error 429: Too Many Requests",
       "HTTPError: HTTP Error 429: Too Many Requests"
     ]
-  }
+  },
+  "tensionMethod": "V5: six-driver weighted index recomputed from current snapshot stories every refresh (942 stories); rises and falls with signal share, no ratchet."
 }

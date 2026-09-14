@@ -156,6 +156,7 @@ def _run_pipeline(started):
  run('Build dedicated browser map points',sys.executable,'build_map_points.py')
  run('Refresh snapshot failover state from collector telemetry',sys.executable,'build_failover_state.py')
  run('Apply source failover fallbacks (Google News)',sys.executable,'source_failover.py')
+ run('Recompute tension from current snapshot stories',sys.executable,'recompute_tension.py')
  if SKIP_EVENT_EXPORTS:
   print('SKIP: event-export leg disabled via AEGIS_SKIP_EVENT_EXPORTS=1',flush=True)
  else:

@@ -12,12 +12,12 @@ ROOT=Path(__file__).resolve().parent; DATA=ROOT/'data'; SNAP=DATA/'snapshot.json
 CLIMATE_RE=re.compile(r"\b(drought|water shortage|water stress|water scarcity|reservoir|water supply|flood|flooding|cyclone|hurricane|typhoon|storm surge|landslide|heatwave|heat wave|extreme heat|wildfire|forest fire|bushfire|extreme cold|food insecurity|food crisis|famine|acute hunger|hunger|crop failure|harvest failure|epidemic|outbreak|cholera|malaria|avian flu|pandemic|disease outbreak)\b",re.I)
 MARKET_RE=re.compile(r"\b(stock market|stocks|shares|bond yields?|treasury yields?|currency|forex|exchange rate|dollar|euro|yen|yuan|oil prices?|crude prices?|natural gas prices?|market volatility|market selloff|market rally|volatility index)\b",re.I)
 DRIVER_DEFS={
- 'Conflict activity':(re.compile(r"\b(war|armed conflict|fighting|battle|offensive|airstrike|shelling|invasion|insurgent|insurgency|militant attack|clash|bombing|hostage crisis)\b",re.I),{'live','international','regional','middle-east','africa','americas','analysis'}),
- 'Diplomatic strain':(base.DIPLO_RE,{'us-politics','world-politics','analysis'}),
- 'Economic pressure':(base.ECON_RE,{'economics','international','regional','live'}),
- 'Market volatility':(MARKET_RE,{'economics','international','regional','live'}),
- 'Military posture':(base.MIL_RE,{'live','international','regional','middle-east','africa','americas','analysis'}),
- 'Climate & humanitarian pressure':(CLIMATE_RE,{'climate-hazard','food-security','humanitarian','international','regional','live'})}
+ 'Conflict activity':(re.compile(r"\b(war|armed conflict|fighting|battle|offensive|airstrike|shelling|invasion|insurgent|insurgency|militant attack|clash|bombing|hostage crisis)\b",re.I),{'live','international','regional','middle-east','africa','americas','analysis','fallback-news'}),
+ 'Diplomatic strain':(base.DIPLO_RE,{'us-politics','world-politics','analysis','fallback-news'}),
+ 'Economic pressure':(base.ECON_RE,{'economics','international','regional','live','fallback-news'}),
+ 'Market volatility':(MARKET_RE,{'economics','international','regional','live','fallback-news'}),
+ 'Military posture':(base.MIL_RE,{'live','international','regional','middle-east','africa','americas','analysis','fallback-news'}),
+ 'Climate & humanitarian pressure':(CLIMATE_RE,{'climate-hazard','food-security','humanitarian','international','regional','live','fallback-news'})}
 
 def parse_feed(label,url,kind):
  rows=[]; error=None
@@ -59,7 +59,7 @@ def driver_evidence(stories,regex,eligible):
 
 def climate_metrics(stories):
  groups={'Drought & water':re.compile(r"\b(drought|water shortage|water stress|water scarcity|reservoir|water supply)\b",re.I),'Floods & storms':re.compile(r"\b(flood|flooding|cyclone|hurricane|typhoon|storm surge|landslide|glacier)\b",re.I),'Heat & fire':re.compile(r"\b(heatwave|heat wave|extreme heat|wildfire|forest fire|bushfire|extreme cold)\b",re.I),'Food security':re.compile(r"\b(famine|food insecurity|food crisis|acute hunger|hunger|crop failure|harvest failure|food shortage)\b",re.I),'Health outbreaks':re.compile(r"\b(epidemic|outbreak|cholera|malaria|avian flu|pandemic|disease outbreak)\b",re.I)}
- pool={'climate-hazard','food-security','humanitarian','international','regional','live'}
+ pool={'climate-hazard','food-security','humanitarian','international','regional','live','fallback-news'}
  return {name:normalized_score(stories,rx,25,pool) for name,rx in groups.items()}
 
 def build_early_warning(tension,breakdown,history):
