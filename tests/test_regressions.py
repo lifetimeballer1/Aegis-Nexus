@@ -188,7 +188,11 @@ def test_refresh_projects_repaired_canonical_data_before_publishing_graph(tmp_pa
     monkeypatch.setattr(pipeline_history, 'HISTORY', tmp_path / 'pipeline_history.json')
     monkeypatch.setattr(pipeline_history, 'DATA', tmp_path)
     monkeypatch.setattr(pipeline, 'load', lambda name: {'rowsFetched': 1, 'exportedArticles': 1})
-    monkeypatch.setattr(pipeline, 'verify_json', lambda *args, **kwargs: {})
+    def _fake_verify(name, *args, **kwargs):
+        if name == 'snapshot.json':
+            return {'stories': [{}], 'liveDatabase': {'enabled': True}}
+        return {}
+    monkeypatch.setattr(pipeline, "verify_json", _fake_verify)
     for name in ('verify_canonical_intelligence', 'verify_graph', 'verify_brain',
                  'verify_strategic_signals', 'verify_market'):
         monkeypatch.setattr(pipeline, name, lambda *args: None)

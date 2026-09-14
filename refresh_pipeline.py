@@ -126,6 +126,10 @@ def _run_pipeline(started):
  live_status=load('live_status.json')
  if int(live_status.get('rowsFetched',0))<=0:raise RuntimeError('live intelligence refresh returned no fetched rows')
  if int(live_status.get('exportedArticles',0))<=0:raise RuntimeError('live intelligence refresh exported no articles')
+ run('Merge live news database into snapshot',sys.executable,'merge_live_news.py')
+ merged=verify_json('snapshot.json',min_list=('stories',1))
+ live_db=merged.get('liveDatabase') or {}
+ if live_db.get('enabled') is not True:raise RuntimeError('snapshot missing live-database merge marker — intake is unwired again')
  run('Build current source health telemetry',sys.executable,'build_source_health.py')
  run('Validate current source health and strategic coverage',sys.executable,'validate_source_health.py')
  run('Build canonical intelligence layer',sys.executable,'build_canonical_intelligence_v3.py')
