@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-15T00:43:16.699398Z",
-  "availableSamples": 105,
-  "availableHours": 231.4,
+  "updatedAt": "2026-09-15T05:27:06.544898Z",
+  "availableSamples": 106,
+  "availableHours": 236.1,
   "series": [
     {
       "updatedAt": "2026-09-05T09:19:53.754145+00:00",
@@ -633,47 +633,53 @@
       "tension": 38,
       "delta": 0.0,
       "scoreVersion": 5
+    },
+    {
+      "updatedAt": "2026-09-15T05:27:06.544898Z",
+      "tension": 39,
+      "delta": 1.0,
+      "scoreVersion": 5
     }
   ],
   "windows": {
     "6h": {
       "available": true,
-      "samples": 4,
-      "start": "2026-09-14T19:01:30.378295Z",
-      "end": "2026-09-15T00:43:16.699398Z",
+      "samples": 2,
+      "start": "2026-09-15T00:43:16.699398Z",
+      "end": "2026-09-15T05:27:06.544898Z",
       "startTension": 38,
-      "endTension": 38,
-      "delta": 0.0,
+      "endTension": 39,
+      "delta": 1.0,
       "trend": "STABLE"
     },
     "24h": {
       "available": true,
-      "samples": 7,
+      "samples": 8,
       "start": "2026-09-14T17:03:53.700707Z",
-      "end": "2026-09-15T00:43:16.699398Z",
+      "end": "2026-09-15T05:27:06.544898Z",
       "startTension": 41,
-      "endTension": 38,
-      "delta": -3.0,
+      "endTension": 39,
+      "delta": -2.0,
       "trend": "DOWN"
     },
     "7d": {
       "available": true,
-      "samples": 7,
+      "samples": 8,
       "start": "2026-09-14T17:03:53.700707Z",
-      "end": "2026-09-15T00:43:16.699398Z",
+      "end": "2026-09-15T05:27:06.544898Z",
       "startTension": 41,
-      "endTension": 38,
-      "delta": -3.0,
+      "endTension": 39,
+      "delta": -2.0,
       "trend": "DOWN"
     },
     "30d": {
       "available": true,
-      "samples": 105,
+      "samples": 106,
       "start": "2026-09-05T09:19:53.754145+00:00",
-      "end": "2026-09-15T00:43:16.699398Z",
+      "end": "2026-09-15T05:27:06.544898Z",
       "startTension": 41,
-      "endTension": 38,
-      "delta": -3.0,
+      "endTension": 39,
+      "delta": -2.0,
       "trend": "DOWN"
     }
   }
