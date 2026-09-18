@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-09-18T01:36:50.581259Z",
+  "updatedAt": "2026-09-18T06:36:48.956939Z",
   "window": "12 hours primary + 7-day recent fallback",
   "items": [
     {
@@ -12,7 +12,7 @@
       "delta": 0,
       "score": null,
       "level": "LOW",
-      "new": true,
+      "new": false,
       "time": "2026-09-17T23:02:52+00:00"
     },
     {
@@ -24,7 +24,7 @@
       "delta": 0,
       "score": null,
       "level": "LOW",
-      "new": true,
+      "new": false,
       "time": "2026-09-17T23:01:44+00:00"
     },
     {
@@ -36,20 +36,8 @@
       "delta": 0,
       "score": null,
       "level": "LOW",
-      "new": true,
+      "new": false,
       "time": "2026-09-17T23:00:38+00:00"
-    },
-    {
-      "type": "event",
-      "eventId": "82783b4a7de15beb",
-      "entity": null,
-      "title": "Green forest fire notification in Zambia",
-      "detail": "2 reports · 1 source domains · LOW confidence",
-      "delta": 0,
-      "score": null,
-      "level": "LOW",
-      "new": true,
-      "time": "2026-09-17T15:05:25+00:00"
     },
     {
       "type": "event",
@@ -73,7 +61,8 @@
       "score": null,
       "level": "LOW",
       "new": false,
-      "time": "2026-09-17T16:30:04+00:00"
+      "time": "2026-09-17T16:30:04+00:00",
+      "recentFallback": true
     },
     {
       "type": "event",
@@ -85,7 +74,21 @@
       "score": null,
       "level": "LOW",
       "new": false,
-      "time": "2026-09-17T15:27:04+00:00"
+      "time": "2026-09-17T15:27:04+00:00",
+      "recentFallback": true
+    },
+    {
+      "type": "event",
+      "eventId": "82783b4a7de15beb",
+      "entity": null,
+      "title": "Green forest fire notification in Zambia",
+      "detail": "2 reports · 1 source domains · LOW confidence",
+      "delta": 0,
+      "score": null,
+      "level": "LOW",
+      "new": false,
+      "time": "2026-09-17T15:05:25+00:00",
+      "recentFallback": true
     },
     {
       "type": "event",
@@ -97,7 +100,8 @@
       "score": null,
       "level": "LOW",
       "new": false,
-      "time": "2026-09-17T15:03:32+00:00"
+      "time": "2026-09-17T15:03:32+00:00",
+      "recentFallback": true
     },
     {
       "type": "event",
@@ -109,13 +113,14 @@
       "score": null,
       "level": "MODERATE",
       "new": false,
-      "time": "2026-09-17T14:47:48+00:00"
+      "time": "2026-09-17T14:47:48+00:00",
+      "recentFallback": true
     }
   ],
   "summary": {
-    "newEvents": 4,
+    "newEvents": 0,
     "indicatorMoves": 0,
-    "recentFallbackEvents": 0,
+    "recentFallbackEvents": 5,
     "total": 9
   }
 }
