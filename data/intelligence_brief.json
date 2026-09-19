@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-19T00:21:43.361731Z",
+  "updatedAt": "2026-09-19T14:25:53.168987Z",
   "method": "Deterministic prioritization of existing public Global Pulse artifacts; not a forecast or causal model.",
   "freshness": {
-    "snapshotUpdatedAt": "2026-09-18T23:21:01.539404+00:00",
-    "eventsUpdatedAt": "2026-09-18T23:21:05.496810Z",
+    "snapshotUpdatedAt": "2026-09-19T13:55:09.082744+00:00",
+    "eventsUpdatedAt": "2026-09-19T13:55:13.198492Z",
     "assessmentsUpdatedAt": "2026-09-10T03:03:12.655499Z"
   },
   "headline": {
@@ -13,128 +13,114 @@
   },
   "topDevelopments": [
     {
-      "id": "d500ca1f5627d976",
-      "title": "Trump says he is banning CNN and Politico from White House",
+      "id": "e0a5c59a68a4a378",
+      "title": "Saudi Arabia issues first air raid alerts for Riyadh since Houthis escalated attacks",
       "category": "general",
-      "confidence": "high",
-      "reportCount": 4,
-      "independentSourceCount": 4,
+      "confidence": "moderate",
+      "reportCount": 3,
+      "independentSourceCount": 2,
       "sources": [
         "bbc_world",
-        "npr_news",
-        "google_news_cnn_politics",
-        "BBC"
+        "google_news_yemen_red_sea"
       ],
-      "breaking": false,
-      "firstSeen": "2026-09-18T19:40:44Z",
-      "lastSeen": "Fri, 18 Sep 2026 21:45:19 GMT"
+      "breaking": true,
+      "firstSeen": "2026-09-19T04:20:47Z",
+      "lastSeen": "2026-09-19T04:20:47Z"
     },
     {
-      "id": "552bff17ddd6b0bd",
-      "title": "Trump bans CNN, MS NOW and Politico from White House - Axios",
-      "category": "general",
+      "id": "1ff28d58bba6573b",
+      "title": "Revenge of the labor movement: Democrats with union backgrounds aim to retake Congress - The Guardian",
+      "category": "political",
       "confidence": "moderate",
       "reportCount": 2,
       "independentSourceCount": 2,
       "sources": [
-        "google_news_axios_politics",
-        "guardian_world"
+        "google_news_u_s_politics",
+        "guardian_us"
       ],
-      "breaking": true,
-      "firstSeen": "2026-09-18T19:36:16Z",
-      "lastSeen": "2026-09-18T19:51:19Z"
+      "breaking": false,
+      "firstSeen": "2026-09-19T12:00:46Z",
+      "lastSeen": "2026-09-19T12:01:00Z"
     },
     {
-      "id": "2aa6e5cfb490b7a4",
-      "title": "Russia seizes assets of French firms, summons UK envoy over Ukraine support - Al Jazeera",
-      "category": "general",
+      "id": "49d7a1b47b659b3c",
+      "title": "Trump signs Bill authorising sweeping Russia sanctions",
+      "category": "diplomatic",
       "confidence": "moderate",
       "reportCount": 2,
+      "independentSourceCount": 2,
+      "sources": [
+        "cna_world",
+        "al_jazeera"
+      ],
+      "breaking": false,
+      "firstSeen": "2026-09-19T00:46:04Z",
+      "lastSeen": "2026-09-19T09:09:00Z"
+    },
+    {
+      "id": "dae0b0acff6d653a",
+      "title": "US Israel Iran war Latest Live News: Saudi Arabia Issues Riyadh Air Threat Alert as Explosions Heard Amid Houthi Escalation - The Sunday Guardian",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 3,
       "independentSourceCount": 2,
       "sources": [
         "google_news_iran_israel",
-        "al_jazeera"
+        "google_news_yemen_red_sea"
       ],
       "breaking": true,
-      "firstSeen": "2026-09-18T14:17:20Z",
-      "lastSeen": "2026-09-18T14:20:09Z"
+      "firstSeen": "2026-09-19T02:24:15Z",
+      "lastSeen": "2026-09-19T11:47:14Z"
     },
     {
-      "id": "cd02c5e532c38eed",
-      "title": "Green forest fire notification in Mozambique",
+      "id": "50aa76d7e57a6f86",
+      "title": "US-Israel-Iran War Latest Live News: Saudi Arabia Launched 26 Strikes in 24 Hours Against Areas Under Houthis’ Control, Says Houthis Amid Escalating War in Yemen - The Sunday Guardian",
       "category": "general",
       "confidence": "low",
-      "reportCount": 10,
-      "independentSourceCount": 1,
+      "reportCount": 2,
+      "independentSourceCount": 2,
       "sources": [
-        "gdacs_global_disaster_alerts"
+        "google_news_yemen_red_sea",
+        "google_news_iran_israel"
       ],
-      "breaking": false,
-      "firstSeen": "2026-09-18T19:04:18Z",
-      "lastSeen": "2026-09-18T23:10:49Z"
+      "breaking": true,
+      "firstSeen": "2026-09-19T03:55:09Z",
+      "lastSeen": "2026-09-19T03:58:35Z"
     },
     {
-      "id": "d4032f4cad0427a7",
-      "title": "Relations with Ukraine - North Atlantic Treaty Organization | NATO",
-      "category": "diplomatic",
+      "id": "611a1ed34c81b60c",
+      "title": "‘You did that,’ Hegseth tells company’s workers after its drones used in naval operations",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 2,
+      "independentSourceCount": 1,
+      "sources": [
+        "stars_stripes"
+      ],
+      "breaking": true,
+      "firstSeen": "2026-09-18T22:57:01Z",
+      "lastSeen": "2026-09-18T22:57:01Z"
+    },
+    {
+      "id": "db037c2987eba324",
+      "title": "Green forest fire notification in Brazil",
+      "category": "general",
       "confidence": "low",
       "reportCount": 5,
       "independentSourceCount": 1,
       "sources": [
-        "North Atlantic Treaty Organization | NATO"
-      ],
-      "breaking": false,
-      "firstSeen": "Thu, 09 Jul 2026 07:00:00 GMT",
-      "lastSeen": "Tue, 11 Nov 2025 08:00:00 GMT"
-    },
-    {
-      "id": "ceb0de41cc5edb1f",
-      "title": "'The Nest of Snakes': Warring Cartels Target Women in Mexico - Springfield News-Sun",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 5,
-      "independentSourceCount": 1,
-      "sources": [
-        "google_news_mexico_cartel_conflict"
-      ],
-      "breaking": false,
-      "firstSeen": "2026-09-18T14:20:28Z",
-      "lastSeen": "2026-09-18T17:24:37Z"
-    },
-    {
-      "id": "82783b4a7de15beb",
-      "title": "Green forest fire notification in Zambia",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 4,
-      "independentSourceCount": 1,
-      "sources": [
         "gdacs_global_disaster_alerts"
       ],
       "breaking": false,
-      "firstSeen": "2026-09-18T15:03:34Z",
-      "lastSeen": "2026-09-18T19:09:17Z"
-    },
-    {
-      "id": "2f976e3368b51239",
-      "title": "Green forest fire notification in Angola",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 4,
-      "independentSourceCount": 1,
-      "sources": [
-        "gdacs_global_disaster_alerts"
-      ],
-      "breaking": false,
-      "firstSeen": "2026-09-18T19:00:35Z",
-      "lastSeen": "2026-09-18T19:07:21Z"
+      "firstSeen": "2026-09-18T23:01:54Z",
+      "lastSeen": "2026-09-19T07:07:38Z"
     },
     {
       "id": "9dbe1492b2c609c1",
       "title": "Statement of condemnation by the North Atlantic Council of Russia's malicious cyber activities - North Atlantic Treaty Organization | NATO",
       "category": "diplomatic",
       "confidence": "low",
-      "reportCount": 3,
+      "reportCount": 4,
       "independentSourceCount": 1,
       "sources": [
         "North Atlantic Treaty Organization | NATO"
@@ -144,18 +130,32 @@
       "lastSeen": "Tue, 23 Sep 2025 07:00:00 GMT"
     },
     {
-      "id": "3bde1e8e9aa8197c",
-      "title": "Green forest fire notification in Botswana",
+      "id": "d4032f4cad0427a7",
+      "title": "Relations with Ukraine - North Atlantic Treaty Organization | NATO",
+      "category": "diplomatic",
+      "confidence": "low",
+      "reportCount": 4,
+      "independentSourceCount": 1,
+      "sources": [
+        "North Atlantic Treaty Organization | NATO"
+      ],
+      "breaking": false,
+      "firstSeen": "Thu, 09 Jul 2026 07:00:00 GMT",
+      "lastSeen": "Tue, 07 Nov 2023 08:00:00 GMT"
+    },
+    {
+      "id": "cd02c5e532c38eed",
+      "title": "Green forest fire notification in Mozambique",
       "category": "general",
       "confidence": "low",
-      "reportCount": 3,
+      "reportCount": 4,
       "independentSourceCount": 1,
       "sources": [
         "gdacs_global_disaster_alerts"
       ],
       "breaking": false,
-      "firstSeen": "2026-09-18T19:02:41Z",
-      "lastSeen": "2026-09-18T23:08:56Z"
+      "firstSeen": "2026-09-18T23:07:58Z",
+      "lastSeen": "2026-09-18T23:10:49Z"
     }
   ],
   "watchlist": [
