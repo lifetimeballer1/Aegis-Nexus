@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-19T18:02:00.741370Z",
+  "updatedAt": "2026-09-20T12:22:56.087673Z",
   "method": "Deterministic prioritization of existing public Global Pulse artifacts; not a forecast or causal model.",
   "freshness": {
-    "snapshotUpdatedAt": "2026-09-19T16:54:51.043506+00:00",
-    "eventsUpdatedAt": "2026-09-19T16:54:55.592838Z",
+    "snapshotUpdatedAt": "2026-09-20T11:36:15.293021+00:00",
+    "eventsUpdatedAt": "2026-09-20T11:36:19.436315Z",
     "assessmentsUpdatedAt": "2026-09-10T03:03:12.655499Z"
   },
   "headline": {
@@ -13,39 +13,96 @@
   },
   "topDevelopments": [
     {
-      "id": "f8d3e2028f15e082",
-      "title": "CNN, MS NOW, Politico reporters denied access to White House following Trump ban",
+      "id": "2f952d71616f3c34",
+      "title": "Two killed in Ukrainian drone attack on Moscow, says Russia",
+      "category": "conflict",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "independentSourceCount": 2,
+      "sources": [
+        "al_jazeera",
+        "bbc_world"
+      ],
+      "breaking": true,
+      "firstSeen": "2026-09-20T06:16:37Z",
+      "lastSeen": "2026-09-20T06:57:05Z"
+    },
+    {
+      "id": "13b06f076faf34cc",
+      "title": "French cereal farmers experiment with African sorghum to beat the heat",
+      "category": "general",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "independentSourceCount": 2,
+      "sources": [
+        "rfi_world",
+        "google_news_climate_security"
+      ],
+      "breaking": false,
+      "firstSeen": "2026-09-20T08:07:58Z",
+      "lastSeen": "2026-09-20T08:07:58Z"
+    },
+    {
+      "id": "a12b06d9e96b2dc1",
+      "title": "Ed Sheeran says situation in Gaza is 'catastrophic and unjustifiable' as he opens solo concert",
       "category": "general",
       "confidence": "moderate",
       "reportCount": 2,
       "independentSourceCount": 2,
       "sources": [
         "npr_news",
-        "NPR"
+        "al_jazeera"
       ],
       "breaking": false,
-      "firstSeen": "2026-09-19T15:26:31Z",
-      "lastSeen": "Sat, 19 Sep 2026 15:26:31 GMT"
+      "firstSeen": "2026-09-20T03:31:54Z",
+      "lastSeen": "2026-09-20T03:34:12Z"
     },
     {
-      "id": "1ff28d58bba6573b",
-      "title": "Revenge of the labor movement: Democrats with union backgrounds aim to retake Congress - The Guardian",
-      "category": "political",
-      "confidence": "moderate",
-      "reportCount": 2,
-      "independentSourceCount": 2,
-      "sources": [
-        "google_news_u_s_politics",
-        "guardian_us"
-      ],
-      "breaking": false,
-      "firstSeen": "2026-09-19T12:00:46Z",
-      "lastSeen": "2026-09-19T12:01:00Z"
-    },
-    {
-      "id": "dae0b0acff6d653a",
-      "title": "US Israel Iran war Latest Live News: Saudi Arabia Issues Riyadh Air Threat Alert as Explosions Heard Amid Houthi Escalation - The Sunday Guardian",
+      "id": "db037c2987eba324",
+      "title": "Green forest fire notification in Brazil",
       "category": "general",
+      "confidence": "low",
+      "reportCount": 9,
+      "independentSourceCount": 1,
+      "sources": [
+        "gdacs_global_disaster_alerts"
+      ],
+      "breaking": false,
+      "firstSeen": "2026-09-19T23:01:26Z",
+      "lastSeen": "2026-09-20T11:11:11Z"
+    },
+    {
+      "id": "ca62cfc5b24b4e8b",
+      "title": "US-Israel-Iran War Latest News: US Warns Citizens Across Middle East of ‘Rapid’ Escalation ‘Heightened Vigilance’ Advised – Here’s What We Know So Far - The Sunday Guardian",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 3,
+      "independentSourceCount": 1,
+      "sources": [
+        "google_news_iran_israel"
+      ],
+      "breaking": true,
+      "firstSeen": "2026-09-19T22:56:43Z",
+      "lastSeen": "2026-09-19T23:11:06Z"
+    },
+    {
+      "id": "6bc0dc385e80f0e8",
+      "title": "Houthis claim drone attack on Saudi Arabia's capital after smoke seen rising near airport - coastfm.co.uk",
+      "category": "conflict",
+      "confidence": "low",
+      "reportCount": 2,
+      "independentSourceCount": 1,
+      "sources": [
+        "google_news_yemen_red_sea"
+      ],
+      "breaking": true,
+      "firstSeen": "2026-09-20T04:27:56Z",
+      "lastSeen": "2026-09-20T04:30:00Z"
+    },
+    {
+      "id": "a7633b1b93790f17",
+      "title": "US-Israel-Iran War Latest Live News: Riyadh Targeted With Ballistic Missile For First Time Since Latest Escalation; Houthis Claim Aramco Strike And ‘Massive Fires’ - The Sunday Guardian",
+      "category": "conflict",
       "confidence": "low",
       "reportCount": 2,
       "independentSourceCount": 2,
@@ -54,22 +111,38 @@
         "google_news_iran_israel"
       ],
       "breaking": true,
-      "firstSeen": "2026-09-19T11:47:14Z",
-      "lastSeen": "2026-09-19T11:47:16Z"
+      "firstSeen": "2026-09-20T04:05:26Z",
+      "lastSeen": "2026-09-20T04:05:32Z"
     },
     {
-      "id": "ad2d8f788111788c",
-      "title": "Pakistan: Suicide bombing death toll rises to at least 31 - dw.com",
+      "id": "d4359e5975b0b7f5",
+      "title": "4 killed in strike on vessel in Caribbean: SOUTHCOM - Big News Network.com",
       "category": "conflict",
       "confidence": "low",
       "reportCount": 2,
-      "independentSourceCount": 1,
+      "independentSourceCount": 2,
       "sources": [
-        "google_news_afghanistan_security"
+        "google_news_u_s_counter_cartel_operations",
+        "google_news_southcom"
       ],
       "breaking": true,
-      "firstSeen": "2026-09-19T06:56:15Z",
-      "lastSeen": "2026-09-19T07:03:46Z"
+      "firstSeen": "2026-09-20T03:14:00Z",
+      "lastSeen": "2026-09-20T03:29:00Z"
+    },
+    {
+      "id": "bc28e3823c1ea4cd",
+      "title": "US shifts Reaper drones from Africa to Latin America - taskandpurpose.com",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 2,
+      "independentSourceCount": 2,
+      "sources": [
+        "google_news_southcom",
+        "google_news_operation_southern_spear"
+      ],
+      "breaking": true,
+      "firstSeen": "2026-09-19T22:20:36Z",
+      "lastSeen": "2026-09-19T22:20:36Z"
     },
     {
       "id": "9dbe1492b2c609c1",
@@ -84,78 +157,6 @@
       "breaking": false,
       "firstSeen": "Fri, 18 Jul 2025 07:00:00 GMT",
       "lastSeen": "Tue, 23 Sep 2025 07:00:00 GMT"
-    },
-    {
-      "id": "d4032f4cad0427a7",
-      "title": "Relations with Ukraine - North Atlantic Treaty Organization | NATO",
-      "category": "diplomatic",
-      "confidence": "low",
-      "reportCount": 4,
-      "independentSourceCount": 1,
-      "sources": [
-        "North Atlantic Treaty Organization | NATO"
-      ],
-      "breaking": false,
-      "firstSeen": "Thu, 09 Jul 2026 07:00:00 GMT",
-      "lastSeen": "Tue, 07 Nov 2023 08:00:00 GMT"
-    },
-    {
-      "id": "f4bef1a266999855",
-      "title": "Green forest fire notification in Australia",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 4,
-      "independentSourceCount": 1,
-      "sources": [
-        "gdacs_global_disaster_alerts"
-      ],
-      "breaking": false,
-      "firstSeen": "2026-09-19T11:00:56Z",
-      "lastSeen": "2026-09-19T15:03:01Z"
-    },
-    {
-      "id": "7e25ab364b4dcc3b",
-      "title": "Explanation of Vote Before the Vote for UNGA 80 Adoption on the Resolution to “Correct the Map” - United States Mission to the United Nations (.gov)",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "independentSourceCount": 1,
-      "sources": [
-        "United States Mission to the United Nations (.gov)"
-      ],
-      "breaking": false,
-      "firstSeen": "Fri, 04 Sep 2026 07:00:00 GMT",
-      "lastSeen": "Wed, 25 Mar 2026 07:00:00 GMT"
-    },
-    {
-      "id": "fcd2c34449d21a25",
-      "title": "Next NATO summit in Albania in doubt amid US reluctance and low defence spending - Reuters",
-      "category": "diplomatic",
-      "confidence": "low",
-      "reportCount": 2,
-      "independentSourceCount": 2,
-      "sources": [
-        "Reuters",
-        "Internazionale"
-      ],
-      "breaking": false,
-      "firstSeen": "Tue, 30 Jun 2026 07:00:00 GMT",
-      "lastSeen": "Tue, 30 Jun 2026 07:00:00 GMT"
-    },
-    {
-      "id": "9946f14ec43be92c",
-      "title": "MS NOW, CNN and Politico say their journalists were denied access to White House after Trump ban - PBS",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "independentSourceCount": 2,
-      "sources": [
-        "PBS",
-        "CBC"
-      ],
-      "breaking": false,
-      "firstSeen": "Sat, 19 Sep 2026 16:11:47 GMT",
-      "lastSeen": "Sat, 19 Sep 2026 16:24:28 GMT"
     }
   ],
   "watchlist": [
