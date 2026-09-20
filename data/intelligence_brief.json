@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-20T12:22:56.087673Z",
+  "updatedAt": "2026-09-20T16:48:22.852318Z",
   "method": "Deterministic prioritization of existing public Global Pulse artifacts; not a forecast or causal model.",
   "freshness": {
-    "snapshotUpdatedAt": "2026-09-20T11:36:15.293021+00:00",
-    "eventsUpdatedAt": "2026-09-20T11:36:19.436315Z",
+    "snapshotUpdatedAt": "2026-09-20T14:50:28.974582+00:00",
+    "eventsUpdatedAt": "2026-09-20T14:50:33.120184Z",
     "assessmentsUpdatedAt": "2026-09-10T03:03:12.655499Z"
   },
   "headline": {
@@ -13,19 +13,20 @@
   },
   "topDevelopments": [
     {
-      "id": "2f952d71616f3c34",
-      "title": "Two killed in Ukrainian drone attack on Moscow, says Russia",
+      "id": "2e87c9817b156878",
+      "title": "Ukraine Launches Largest-Ever Drone Attack on Moscow, Russia Says - Newsweek",
       "category": "conflict",
-      "confidence": "moderate",
-      "reportCount": 2,
-      "independentSourceCount": 2,
+      "confidence": "high",
+      "reportCount": 3,
+      "independentSourceCount": 3,
       "sources": [
+        "google_news_ukraine_war",
         "al_jazeera",
         "bbc_world"
       ],
       "breaking": true,
       "firstSeen": "2026-09-20T06:16:37Z",
-      "lastSeen": "2026-09-20T06:57:05Z"
+      "lastSeen": "2026-09-20T07:56:00Z"
     },
     {
       "id": "13b06f076faf34cc",
@@ -43,47 +44,34 @@
       "lastSeen": "2026-09-20T08:07:58Z"
     },
     {
-      "id": "a12b06d9e96b2dc1",
-      "title": "Ed Sheeran says situation in Gaza is 'catastrophic and unjustifiable' as he opens solo concert",
+      "id": "0fcde6e30182cbea",
+      "title": "Iran warns against new escalation by US and allies - The Mighty 790 KFGO",
       "category": "general",
-      "confidence": "moderate",
+      "confidence": "low",
       "reportCount": 2,
       "independentSourceCount": 2,
       "sources": [
-        "npr_news",
-        "al_jazeera"
-      ],
-      "breaking": false,
-      "firstSeen": "2026-09-20T03:31:54Z",
-      "lastSeen": "2026-09-20T03:34:12Z"
-    },
-    {
-      "id": "db037c2987eba324",
-      "title": "Green forest fire notification in Brazil",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 9,
-      "independentSourceCount": 1,
-      "sources": [
-        "gdacs_global_disaster_alerts"
-      ],
-      "breaking": false,
-      "firstSeen": "2026-09-19T23:01:26Z",
-      "lastSeen": "2026-09-20T11:11:11Z"
-    },
-    {
-      "id": "ca62cfc5b24b4e8b",
-      "title": "US-Israel-Iran War Latest News: US Warns Citizens Across Middle East of ‘Rapid’ Escalation ‘Heightened Vigilance’ Advised – Here’s What We Know So Far - The Sunday Guardian",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 3,
-      "independentSourceCount": 1,
-      "sources": [
+        "google_news_yemen_red_sea",
         "google_news_iran_israel"
       ],
       "breaking": true,
-      "firstSeen": "2026-09-19T22:56:43Z",
-      "lastSeen": "2026-09-19T23:11:06Z"
+      "firstSeen": "2026-09-20T13:24:48Z",
+      "lastSeen": "2026-09-20T13:40:40Z"
+    },
+    {
+      "id": "96229239e7c13f5c",
+      "title": "Ukraine Launches Major Drone Attack on Moscow as Russia Holds Elections - Modern Diplomacy",
+      "category": "conflict",
+      "confidence": "low",
+      "reportCount": 2,
+      "independentSourceCount": 2,
+      "sources": [
+        "google_news_world_politics",
+        "google_news_iran_israel"
+      ],
+      "breaking": true,
+      "firstSeen": "2026-09-20T08:30:13Z",
+      "lastSeen": "2026-09-20T12:48:27Z"
     },
     {
       "id": "6bc0dc385e80f0e8",
@@ -115,36 +103,6 @@
       "lastSeen": "2026-09-20T04:05:32Z"
     },
     {
-      "id": "d4359e5975b0b7f5",
-      "title": "4 killed in strike on vessel in Caribbean: SOUTHCOM - Big News Network.com",
-      "category": "conflict",
-      "confidence": "low",
-      "reportCount": 2,
-      "independentSourceCount": 2,
-      "sources": [
-        "google_news_u_s_counter_cartel_operations",
-        "google_news_southcom"
-      ],
-      "breaking": true,
-      "firstSeen": "2026-09-20T03:14:00Z",
-      "lastSeen": "2026-09-20T03:29:00Z"
-    },
-    {
-      "id": "bc28e3823c1ea4cd",
-      "title": "US shifts Reaper drones from Africa to Latin America - taskandpurpose.com",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "independentSourceCount": 2,
-      "sources": [
-        "google_news_southcom",
-        "google_news_operation_southern_spear"
-      ],
-      "breaking": true,
-      "firstSeen": "2026-09-19T22:20:36Z",
-      "lastSeen": "2026-09-19T22:20:36Z"
-    },
-    {
       "id": "9dbe1492b2c609c1",
       "title": "Statement of condemnation by the North Atlantic Council of Russia's malicious cyber activities - North Atlantic Treaty Organization | NATO",
       "category": "diplomatic",
@@ -157,6 +115,48 @@
       "breaking": false,
       "firstSeen": "Fri, 18 Jul 2025 07:00:00 GMT",
       "lastSeen": "Tue, 23 Sep 2025 07:00:00 GMT"
+    },
+    {
+      "id": "d4032f4cad0427a7",
+      "title": "Relations with Ukraine - North Atlantic Treaty Organization | NATO",
+      "category": "diplomatic",
+      "confidence": "low",
+      "reportCount": 4,
+      "independentSourceCount": 1,
+      "sources": [
+        "North Atlantic Treaty Organization | NATO"
+      ],
+      "breaking": false,
+      "firstSeen": "Mon, 05 Aug 2024 07:00:00 GMT",
+      "lastSeen": "Thu, 24 Feb 2022 08:00:00 GMT"
+    },
+    {
+      "id": "db037c2987eba324",
+      "title": "Green forest fire notification in Brazil",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 3,
+      "independentSourceCount": 1,
+      "sources": [
+        "gdacs_global_disaster_alerts"
+      ],
+      "breaking": false,
+      "firstSeen": "2026-09-20T11:07:30Z",
+      "lastSeen": "2026-09-20T11:11:11Z"
+    },
+    {
+      "id": "f4bef1a266999855",
+      "title": "Green forest fire notification in Australia",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 3,
+      "independentSourceCount": 1,
+      "sources": [
+        "gdacs_global_disaster_alerts"
+      ],
+      "breaking": false,
+      "firstSeen": "2026-09-20T11:01:55Z",
+      "lastSeen": "2026-09-20T11:03:40Z"
     }
   ],
   "watchlist": [
