@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-21T19:31:37.152586Z",
-  "availableSamples": 140,
-  "availableHours": 394.2,
+  "updatedAt": "2026-09-21T22:46:12.388649Z",
+  "availableSamples": 141,
+  "availableHours": 397.4,
   "series": [
     {
       "updatedAt": "2026-09-05T09:19:53.754145+00:00",
@@ -843,34 +843,40 @@
       "tension": 38,
       "delta": 1.0,
       "scoreVersion": 5
+    },
+    {
+      "updatedAt": "2026-09-21T22:46:12.388649Z",
+      "tension": 38,
+      "delta": 0.0,
+      "scoreVersion": 5
     }
   ],
   "windows": {
     "6h": {
       "available": true,
       "samples": 2,
-      "start": "2026-09-21T14:13:31.056610Z",
-      "end": "2026-09-21T19:31:37.152586Z",
-      "startTension": 37,
-      "endTension": 38,
-      "delta": 1.0,
-      "trend": "STABLE"
-    },
-    "24h": {
-      "available": true,
-      "samples": 7,
-      "start": "2026-09-20T19:48:11.306637Z",
-      "end": "2026-09-21T19:31:37.152586Z",
+      "start": "2026-09-21T19:31:37.152586Z",
+      "end": "2026-09-21T22:46:12.388649Z",
       "startTension": 38,
       "endTension": 38,
       "delta": 0.0,
       "trend": "STABLE"
     },
+    "24h": {
+      "available": true,
+      "samples": 6,
+      "start": "2026-09-20T23:43:53.231222Z",
+      "end": "2026-09-21T22:46:12.388649Z",
+      "startTension": 37,
+      "endTension": 38,
+      "delta": 1.0,
+      "trend": "STABLE"
+    },
     "7d": {
       "available": true,
-      "samples": 38,
-      "start": "2026-09-14T20:44:15.251146Z",
-      "end": "2026-09-21T19:31:37.152586Z",
+      "samples": 37,
+      "start": "2026-09-15T00:43:16.699398Z",
+      "end": "2026-09-21T22:46:12.388649Z",
       "startTension": 38,
       "endTension": 38,
       "delta": 0.0,
@@ -878,9 +884,9 @@
     },
     "30d": {
       "available": true,
-      "samples": 140,
+      "samples": 141,
       "start": "2026-09-05T09:19:53.754145+00:00",
-      "end": "2026-09-21T19:31:37.152586Z",
+      "end": "2026-09-21T22:46:12.388649Z",
       "startTension": 41,
       "endTension": 38,
       "delta": -3.0,
