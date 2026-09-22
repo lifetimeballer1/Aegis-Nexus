@@ -1,8 +1,44 @@
 {
   "version": 2,
-  "updatedAt": "2026-09-22T01:14:30.596907Z",
+  "updatedAt": "2026-09-22T06:18:13.724396Z",
   "window": "12 hours primary + 7-day recent fallback",
   "items": [
+    {
+      "type": "event",
+      "eventId": "2f976e3368b51239",
+      "entity": null,
+      "title": "Green forest fire notification in Angola",
+      "detail": "2 reports · 1 source domains · LOW confidence",
+      "delta": 0,
+      "score": null,
+      "level": "LOW",
+      "new": true,
+      "time": "2026-09-21T23:04:28+00:00"
+    },
+    {
+      "type": "event",
+      "eventId": "db037c2987eba324",
+      "entity": null,
+      "title": "Green forest fire notification in Brazil",
+      "detail": "6 reports · 1 source domains · LOW confidence",
+      "delta": 0,
+      "score": null,
+      "level": "LOW",
+      "new": true,
+      "time": "2026-09-21T23:01:59+00:00"
+    },
+    {
+      "type": "event",
+      "eventId": "f324e8e8883d8123",
+      "entity": null,
+      "title": "Newsom Declares California Emergency as Potentially Historic El Niño Looms - mb.ntd.com",
+      "detail": "2 reports · 1 source domains · LOW confidence",
+      "delta": 0,
+      "score": null,
+      "level": "LOW",
+      "new": true,
+      "time": "2026-09-21T21:58:35+00:00"
+    },
     {
       "type": "event",
       "eventId": "3b9b43b32a43df2b",
@@ -12,8 +48,9 @@
       "delta": 0,
       "score": null,
       "level": "MODERATE",
-      "new": true,
-      "time": "2026-09-21T17:48:23+00:00"
+      "new": false,
+      "time": "2026-09-21T17:48:23+00:00",
+      "recentFallback": true
     },
     {
       "type": "event",
@@ -25,7 +62,8 @@
       "score": null,
       "level": "MODERATE",
       "new": false,
-      "time": "2026-09-21T16:19:29+00:00"
+      "time": "2026-09-21T16:19:29+00:00",
+      "recentFallback": true
     },
     {
       "type": "event",
@@ -37,7 +75,8 @@
       "score": null,
       "level": "MODERATE",
       "new": false,
-      "time": "2026-09-21T16:05:55+00:00"
+      "time": "2026-09-21T16:05:55+00:00",
+      "recentFallback": true
     },
     {
       "type": "event",
@@ -49,25 +88,14 @@
       "score": null,
       "level": "MODERATE",
       "new": false,
-      "time": "2026-09-21T14:19:46+00:00"
-    },
-    {
-      "type": "event",
-      "eventId": "eea42887f17eebf5",
-      "entity": null,
-      "title": "‘Planetary boundaries’ necessary for flourishing of life have been massively breached, scientists warn - The Guardian",
-      "detail": "2 reports · 2 source domains · MODERATE confidence",
-      "delta": 0,
-      "score": null,
-      "level": "MODERATE",
-      "new": false,
-      "time": "2026-09-21T14:00:33+00:00"
+      "time": "2026-09-21T14:19:46+00:00",
+      "recentFallback": true
     }
   ],
   "summary": {
-    "newEvents": 1,
+    "newEvents": 3,
     "indicatorMoves": 0,
-    "recentFallbackEvents": 0,
-    "total": 5
+    "recentFallbackEvents": 4,
+    "total": 7
   }
 }

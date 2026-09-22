@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-22T01:14:39.424490Z",
+  "updatedAt": "2026-09-22T06:18:23.089056Z",
   "window": "recent public reporting",
   "method": "anchor-aware title clustering with category and publication-time agreement; candidate grouping only, not proof reports describe identical facts",
   "events": [
@@ -8,15 +8,16 @@
       "title": "Green forest fire notification in Brazil",
       "category": "general",
       "confidence": "low",
-      "reportCount": 6,
+      "reportCount": 7,
       "sourceCount": 1,
       "sources": [
         "gdacs.org"
       ],
       "anchors": [],
       "firstSeen": "2026-09-21T23:01:59Z",
-      "lastSeen": "2026-09-21T23:18:13Z",
+      "lastSeen": "2026-09-22T03:03:17Z",
       "urls": [
+        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032313",
         "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032312",
         "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032311",
         "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032309",
@@ -26,9 +27,32 @@
       ],
       "reports": [
         {
-          "id": "ba3743270a19",
+          "id": "adbd36391228",
           "sourceLabel": "GDACS Global Disaster Alerts",
           "sourceName": "GDACS Global Disaster Alerts",
+          "sourceType": "climate-hazard",
+          "title": "Green forest fire notification in Brazil",
+          "summary": "On 14/09/2026, a forest fire started in Brazil, until 21/09/2026.",
+          "summary_snippet": "On 14/09/2026, a forest fire started in Brazil, until 21/09/2026.",
+          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032313",
+          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032313",
+          "time": "2026-09-22T03:03:17Z",
+          "published_date": "2026-09-22T03:03:17Z",
+          "publishedDate": "2026-09-22T03:03:17Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "gdacs_global_disaster_alerts",
+            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "ba3743270a19",
+          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032312",
+          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032312",
           "sourceType": "climate-hazard",
           "title": "Green forest fire notification in Brazil",
           "summary": "On 14/09/2026, a forest fire started in Brazil, until 21/09/2026.",
@@ -50,8 +74,8 @@
         },
         {
           "id": "c35f3d2b4f8d",
-          "sourceLabel": "GDACS Global Disaster Alerts",
-          "sourceName": "GDACS Global Disaster Alerts",
+          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032311",
+          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032311",
           "sourceType": "climate-hazard",
           "title": "Green forest fire notification in Brazil",
           "summary": "On 15/09/2026, a forest fire started in Brazil, until 21/09/2026.",
@@ -73,8 +97,8 @@
         },
         {
           "id": "c4fb950d0d54",
-          "sourceLabel": "GDACS Global Disaster Alerts",
-          "sourceName": "GDACS Global Disaster Alerts",
+          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032309",
+          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032309",
           "sourceType": "climate-hazard",
           "title": "Green forest fire notification in Brazil",
           "summary": "On 17/09/2026, a forest fire started in Brazil, until 21/09/2026.",
@@ -96,8 +120,8 @@
         },
         {
           "id": "48d4a49453f0",
-          "sourceLabel": "GDACS Global Disaster Alerts",
-          "sourceName": "GDACS Global Disaster Alerts",
+          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032308",
+          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032308",
           "sourceType": "climate-hazard",
           "title": "Green forest fire notification in Brazil",
           "summary": "On 17/09/2026, a forest fire started in Brazil, until 21/09/2026.",
@@ -119,8 +143,8 @@
         },
         {
           "id": "c3155ce948bf",
-          "sourceLabel": "GDACS Global Disaster Alerts",
-          "sourceName": "GDACS Global Disaster Alerts",
+          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032305",
+          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032305",
           "sourceType": "climate-hazard",
           "title": "Green forest fire notification in Brazil",
           "summary": "On 19/09/2026, a forest fire started in Brazil, until 21/09/2026.",
@@ -142,8 +166,8 @@
         },
         {
           "id": "ee1f87da8d5c",
-          "sourceLabel": "GDACS Global Disaster Alerts",
-          "sourceName": "GDACS Global Disaster Alerts",
+          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032304",
+          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032304",
           "sourceType": "climate-hazard",
           "title": "Green forest fire notification in Brazil",
           "summary": "On 20/09/2026, a forest fire started in Brazil, until 21/09/2026.",
@@ -337,6 +361,208 @@
       ]
     },
     {
+      "id": "c214e3b9d0b18cb0",
+      "title": "UK to refuel Saudi jets amid conflict with Yemen's Houthis - dw.com",
+      "category": "general",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "sourceCount": 2,
+      "sources": [
+        "news.google.com",
+        "dw.com"
+      ],
+      "anchors": [
+        "uk",
+        "yemen"
+      ],
+      "firstSeen": "2026-09-22T04:58:00Z",
+      "lastSeen": "2026-09-22T05:03:07Z",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMilAFBVV95cUxOMW5wTTh6eVBfVDV3LUFzbFBZb1hlY256SEJqUGtOMW5SVDRNdU5uTUVoTlVHSldVNzl6UHZEYnlxNkc1RVJnWThZcjRiUFJPcXVtQmRMWFVKWjB1Vm9rUTVoejJYTV9JWFpsOEg5NHYwdGwzVk1jZGRPRXZ0WTJUT2U1RWdab2ZuNnFwQjU5SHczT1Vy0gGUAUFVX3lxTE9RUmJ3ZkhsYWVZeExmRFJlaVMwcmNhUG1aNDItUkxINHIzMFJSN2Q1M2dHZWhzU1IzanpnX1pYeUlrVVBVN094QzcwTm1kbGxUQ080RGNhYWVhNHVjbmd0X1dnNnhqOXl4amh5bTdmVWU5UkRlQi1Mb08ydzk0V1JlYnBBSWgwZzJRbHFfR25WaS1Wel8?oc=5",
+        "https://www.dw.com/en/uk-to-refuel-saudi-jets-amid-conflict-with-yemen-s-houthis/a-79364964?maca=en-rss-en-world-4025-xml-mrss"
+      ],
+      "reports": [
+        {
+          "id": "1d2911126063",
+          "sourceLabel": "Google News — Yemen / Red Sea",
+          "sourceName": "Google News — Yemen / Red Sea",
+          "sourceType": "middle-east-conflict",
+          "title": "UK to refuel Saudi jets amid conflict with Yemen's Houthis - dw.com",
+          "summary": "UK to refuel Saudi jets amid conflict with Yemen's Houthis dw.com",
+          "summary_snippet": "UK to refuel Saudi jets amid conflict with Yemen's Houthis dw.com",
+          "source": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOMW5wTTh6eVBfVDV3LUFzbFBZb1hlY256SEJqUGtOMW5SVDRNdU5uTUVoTlVHSldVNzl6UHZEYnlxNkc1RVJnWThZcjRiUFJPcXVtQmRMWFVKWjB1Vm9rUTVoejJYTV9JWFpsOEg5NHYwdGwzVk1jZGRPRXZ0WTJUT2U1RWdab2ZuNnFwQjU5SHczT1Vy0gGUAUFVX3lxTE9RUmJ3ZkhsYWVZeExmRFJlaVMwcmNhUG1aNDItUkxINHIzMFJSN2Q1M2dHZWhzU1IzanpnX1pYeUlrVVBVN094QzcwTm1kbGxUQ080RGNhYWVhNHVjbmd0X1dnNnhqOXl4amh5bTdmVWU5UkRlQi1Mb08ydzk0V1JlYnBBSWgwZzJRbHFfR25WaS1Wel8?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOMW5wTTh6eVBfVDV3LUFzbFBZb1hlY256SEJqUGtOMW5SVDRNdU5uTUVoTlVHSldVNzl6UHZEYnlxNkc1RVJnWThZcjRiUFJPcXVtQmRMWFVKWjB1Vm9rUTVoejJYTV9JWFpsOEg5NHYwdGwzVk1jZGRPRXZ0WTJUT2U1RWdab2ZuNnFwQjU5SHczT1Vy0gGUAUFVX3lxTE9RUmJ3ZkhsYWVZeExmRFJlaVMwcmNhUG1aNDItUkxINHIzMFJSN2Q1M2dHZWhzU1IzanpnX1pYeUlrVVBVN094QzcwTm1kbGxUQ080RGNhYWVhNHVjbmd0X1dnNnhqOXl4amh5bTdmVWU5UkRlQi1Mb08ydzk0V1JlYnBBSWgwZzJRbHFfR25WaS1Wel8?oc=5",
+          "time": "2026-09-22T05:03:07Z",
+          "published_date": "2026-09-22T05:03:07Z",
+          "publishedDate": "2026-09-22T05:03:07Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_yemen_red_sea",
+            "sourceUrl": "https://news.google.com/rss/search?q=Yemen+Houthis+Red+Sea+shipping+missile+drone+conflict+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "7f820c175450",
+          "sourceLabel": "DW World",
+          "sourceName": "DW World",
+          "sourceType": "international",
+          "title": "UK to refuel Saudi jets amid conflict with Yemen's Houthis",
+          "summary": "British Prime Minister Andy Burnham said the UK's \"time-limited\" and \"defensive\" military support aims to help Saudi Arabia repel Houthi attacks and will not include supporting Saudi attacks against the Yemeni rebels.",
+          "summary_snippet": "British Prime Minister Andy Burnham said the UK's \"time-limited\" and \"defensive\" military support aims to help Saudi Arabia repel Houthi attacks and will not include supporting Saudi attacks against the Yemeni rebels.",
+          "source": "https://www.dw.com/en/uk-to-refuel-saudi-jets-amid-conflict-with-yemen-s-houthis/a-79364964?maca=en-rss-en-world-4025-xml-mrss",
+          "url": "https://www.dw.com/en/uk-to-refuel-saudi-jets-amid-conflict-with-yemen-s-houthis/a-79364964?maca=en-rss-en-world-4025-xml-mrss",
+          "time": "2026-09-22T04:58:00Z",
+          "published_date": "2026-09-22T04:58:00Z",
+          "publishedDate": "2026-09-22T04:58:00Z",
+          "tag": "Breaking",
+          "confidence": "DEVELOPING",
+          "breaking": true,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "dw_world",
+            "sourceUrl": "https://rss.dw.com/xml/rss-en-world",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
+      "id": "7fd141c3944fd035",
+      "title": "US strikes on alleged drug boats may be ‘crimes against humanity’, UN says - Al Jazeera",
+      "category": "general",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "sourceCount": 2,
+      "sources": [
+        "news.google.com",
+        "aljazeera.com"
+      ],
+      "anchors": [],
+      "firstSeen": "2026-09-22T03:52:23Z",
+      "lastSeen": "2026-09-22T04:00:08Z",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMisgFBVV95cUxPN2xsY1IweTVPZ0tnaVV2VGczcU4zbnl2X0c3SldXNk5qLXl1ZVNpMi1NV3JUVFpvVXBPaWlNM1hmVHlFdC1zNTRjRHh3djNlWmZGY1k0N1o5bUJBTDJWODExZmNqeXhBMGpBQlF2SzB3VEk2T0tLT1BTc2VaYlZRS0paTWZ3RUVUeHNHUWdaT2NQM05GamNzQW9wZEU0RTJpSTZBS0RFOVFuNHpPMXZ6Rk1B0gG3AUFVX3lxTE91dG9XelJsT2ZHQUIwWmF3bmV6cW16REdqNDk0WWc2a2VncktQYnZsOFk1QnZfdGdvalI2c2FyMzBXVjdpd3ZvTFpqOEcwajQ0NHBFaFFnUnJBOTVORHJCNVRzYk01b0NaMVczckIxT3BxbDlfLU83MzRPank5S3U2NkdRRHFrZFExUHFzRlYzS0k4UkRoUS1ZbHlxUGJnU1puVkFQbnpPazhjNkh4NlY4dW5uanVKbw?oc=5",
+        "https://www.aljazeera.com/news/2026/9/22/us-strikes-on-alleged-drug-boats-may-be-crimes-against-humanity-un-says?traffic_source=rss"
+      ],
+      "reports": [
+        {
+          "id": "853196ca5a1c",
+          "sourceLabel": "Google News — U.S. Counter-Cartel Operations",
+          "sourceName": "Google News — U.S. Counter-Cartel Operations",
+          "sourceType": "counter-cartel",
+          "title": "US strikes on alleged drug boats may be ‘crimes against humanity’, UN says - Al Jazeera",
+          "summary": "US strikes on alleged drug boats may be ‘crimes against humanity’, UN says Al Jazeera",
+          "summary_snippet": "US strikes on alleged drug boats may be ‘crimes against humanity’, UN says Al Jazeera",
+          "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPN2xsY1IweTVPZ0tnaVV2VGczcU4zbnl2X0c3SldXNk5qLXl1ZVNpMi1NV3JUVFpvVXBPaWlNM1hmVHlFdC1zNTRjRHh3djNlWmZGY1k0N1o5bUJBTDJWODExZmNqeXhBMGpBQlF2SzB3VEk2T0tLT1BTc2VaYlZRS0paTWZ3RUVUeHNHUWdaT2NQM05GamNzQW9wZEU0RTJpSTZBS0RFOVFuNHpPMXZ6Rk1B0gG3AUFVX3lxTE91dG9XelJsT2ZHQUIwWmF3bmV6cW16REdqNDk0WWc2a2VncktQYnZsOFk1QnZfdGdvalI2c2FyMzBXVjdpd3ZvTFpqOEcwajQ0NHBFaFFnUnJBOTVORHJCNVRzYk01b0NaMVczckIxT3BxbDlfLU83MzRPank5S3U2NkdRRHFrZFExUHFzRlYzS0k4UkRoUS1ZbHlxUGJnU1puVkFQbnpPazhjNkh4NlY4dW5uanVKbw?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPN2xsY1IweTVPZ0tnaVV2VGczcU4zbnl2X0c3SldXNk5qLXl1ZVNpMi1NV3JUVFpvVXBPaWlNM1hmVHlFdC1zNTRjRHh3djNlWmZGY1k0N1o5bUJBTDJWODExZmNqeXhBMGpBQlF2SzB3VEk2T0tLT1BTc2VaYlZRS0paTWZ3RUVUeHNHUWdaT2NQM05GamNzQW9wZEU0RTJpSTZBS0RFOVFuNHpPMXZ6Rk1B0gG3AUFVX3lxTE91dG9XelJsT2ZHQUIwWmF3bmV6cW16REdqNDk0WWc2a2VncktQYnZsOFk1QnZfdGdvalI2c2FyMzBXVjdpd3ZvTFpqOEcwajQ0NHBFaFFnUnJBOTVORHJCNVRzYk01b0NaMVczckIxT3BxbDlfLU83MzRPank5S3U2NkdRRHFrZFExUHFzRlYzS0k4UkRoUS1ZbHlxUGJnU1puVkFQbnpPazhjNkh4NlY4dW5uanVKbw?oc=5",
+          "time": "2026-09-22T04:00:08Z",
+          "published_date": "2026-09-22T04:00:08Z",
+          "publishedDate": "2026-09-22T04:00:08Z",
+          "tag": "Breaking",
+          "confidence": "DEVELOPING",
+          "breaking": true,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_u_s_counter_cartel_operations",
+            "sourceUrl": "https://news.google.com/rss/search?q=US+military+cartels+narco-terrorism+Ecuador+Mexico+Caribbean+Eastern+Pacific+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "43b35cec1691",
+          "sourceLabel": "Al Jazeera",
+          "sourceName": "Al Jazeera",
+          "sourceType": "international",
+          "title": "US strikes on alleged drug boats may be ‘crimes against humanity’, UN says",
+          "summary": "UN expert says US forces have killed 223 people in 68 attacks in the Caribbean and the Pacific in the past year.",
+          "summary_snippet": "UN expert says US forces have killed 223 people in 68 attacks in the Caribbean and the Pacific in the past year.",
+          "source": "https://www.aljazeera.com/news/2026/9/22/us-strikes-on-alleged-drug-boats-may-be-crimes-against-humanity-un-says?traffic_source=rss",
+          "url": "https://www.aljazeera.com/news/2026/9/22/us-strikes-on-alleged-drug-boats-may-be-crimes-against-humanity-un-says?traffic_source=rss",
+          "time": "2026-09-22T03:52:23Z",
+          "published_date": "2026-09-22T03:52:23Z",
+          "publishedDate": "2026-09-22T03:52:23Z",
+          "tag": "Breaking",
+          "confidence": "DEVELOPING",
+          "breaking": true,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "al_jazeera",
+            "sourceUrl": "https://www.aljazeera.com/xml/rss/all.xml",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
+      "id": "25a6c74c6b7984e4",
+      "title": "Trump speech inaudible as US networks boycott White House event - Al Jazeera",
+      "category": "general",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "sourceCount": 2,
+      "sources": [
+        "news.google.com",
+        "aljazeera.com"
+      ],
+      "anchors": [],
+      "firstSeen": "2026-09-21T20:38:51Z",
+      "lastSeen": "2026-09-21T21:05:19Z",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMitAFBVV95cUxPbW9xNTBabGp6VTNIZ3RaMEowZEx0bkZ4U1hNZXlNU1RzNUZHUDFTRzVpUjA3NllHRTNKQWpSNXdnYjN4dDhOc21xb3ZsVTdQbEttX1lUZnZMRUxpVUdIWGgzTWNnSE12TldZZWVlUkp6SnJnbVlKOVlwNnFxYjcyVnZOUG84ZzBaVU1UdS1aLVBfYU5KOTdubDdxSlNFd1RxU0tDalpxb2Q2Vy1hMjRhWUpuWmzSAboBQVVfeXFMTU9xSHdYLTNYSkNmcHdWa0FEcTFNMlcxS0tMSjFaYzI0eHBGUFczdmkwS19Mb2dUTThDREhUOEw1V19Cck9CamVsUGtZalpDOHcwU3JCNkJQZy1BQnFaWkJUcDJUa3FSaVhKd19fcElPbVF1aWM2RjItRjYtR1pheTBhMXNxOHFIaWZFR3dZWGt2RUVZRmE5d3Jzb3Z6MDlTYXNkaWdLZGF1aUxrUzZsak5pSUZ5eW9nWTRn?oc=5",
+        "https://www.aljazeera.com/video/newsfeed/2026/9/21/trump-speech-inaudible-as-us-networks-boycott-white-house-event?traffic_source=rss"
+      ],
+      "reports": [
+        {
+          "title": "Trump speech inaudible as US networks boycott White House event - Al Jazeera",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPbW9xNTBabGp6VTNIZ3RaMEowZEx0bkZ4U1hNZXlNU1RzNUZHUDFTRzVpUjA3NllHRTNKQWpSNXdnYjN4dDhOc21xb3ZsVTdQbEttX1lUZnZMRUxpVUdIWGgzTWNnSE12TldZZWVlUkp6SnJnbVlKOVlwNnFxYjcyVnZOUG84ZzBaVU1UdS1aLVBfYU5KOTdubDdxSlNFd1RxU0tDalpxb2Q2Vy1hMjRhWUpuWmzSAboBQVVfeXFMTU9xSHdYLTNYSkNmcHdWa0FEcTFNMlcxS0tMSjFaYzI0eHBGUFczdmkwS19Mb2dUTThDREhUOEw1V19Cck9CamVsUGtZalpDOHcwU3JCNkJQZy1BQnFaWkJUcDJUa3FSaVhKd19fcElPbVF1aWM2RjItRjYtR1pheTBhMXNxOHFIaWZFR3dZWGt2RUVZRmE5d3Jzb3Z6MDlTYXNkaWdLZGF1aUxrUzZsak5pSUZ5eW9nWTRn?oc=5",
+          "published_date": "2026-09-21T21:05:19Z",
+          "time": "2026-09-21T21:05:19Z",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Al Jazeera",
+          "summary": "Fallback discovery via Google News RSS; publisher: Al Jazeera",
+          "source": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPbW9xNTBabGp6VTNIZ3RaMEowZEx0bkZ4U1hNZXlNU1RzNUZHUDFTRzVpUjA3NllHRTNKQWpSNXdnYjN4dDhOc21xb3ZsVTdQbEttX1lUZnZMRUxpVUdIWGgzTWNnSE12TldZZWVlUkp6SnJnbVlKOVlwNnFxYjcyVnZOUG84ZzBaVU1UdS1aLVBfYU5KOTdubDdxSlNFd1RxU0tDalpxb2Q2Vy1hMjRhWUpuWmzSAboBQVVfeXFMTU9xSHdYLTNYSkNmcHdWa0FEcTFNMlcxS0tMSjFaYzI0eHBGUFczdmkwS19Mb2dUTThDREhUOEw1V19Cck9CamVsUGtZalpDOHcwU3JCNkJQZy1BQnFaWkJUcDJUa3FSaVhKd19fcElPbVF1aWM2RjItRjYtR1pheTBhMXNxOHFIaWZFR3dZWGt2RUVZRmE5d3Jzb3Z6MDlTYXNkaWdLZGF1aUxrUzZsak5pSUZ5eW9nWTRn?oc=5",
+          "sourceLabel": "Al Jazeera",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @POTUS",
+          "credit_metadata": "Google News RSS fallback",
+          "id": "189331c7ea49",
+          "sourceName": "Al Jazeera",
+          "publishedDate": "2026-09-21T21:05:19Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": "Google News RSS fallback"
+        },
+        {
+          "id": "9aa28f9db764",
+          "sourceLabel": "https://www.aljazeera.com/video/newsfeed/2026/9/21/trump-speech-inaudible-as-us-networks-boycott-white-house-event?traffic_source=rss",
+          "sourceName": "https://www.aljazeera.com/video/newsfeed/2026/9/21/trump-speech-inaudible-as-us-networks-boycott-white-house-event?traffic_source=rss",
+          "sourceType": "international",
+          "title": "Trump speech inaudible as US networks boycott White House event",
+          "summary": "US President Trump unveiled a new White House helicopter pad as major US TV networks stayed away in protest.",
+          "summary_snippet": "US President Trump unveiled a new White House helicopter pad as major US TV networks stayed away in protest.",
+          "source": "https://www.aljazeera.com/video/newsfeed/2026/9/21/trump-speech-inaudible-as-us-networks-boycott-white-house-event?traffic_source=rss",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/21/trump-speech-inaudible-as-us-networks-boycott-white-house-event?traffic_source=rss",
+          "time": "2026-09-21T20:38:51Z",
+          "published_date": "2026-09-21T20:38:51Z",
+          "publishedDate": "2026-09-21T20:38:51Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "al_jazeera",
+            "sourceUrl": "https://www.aljazeera.com/xml/rss/all.xml",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
       "id": "3b9b43b32a43df2b",
       "title": "First charges brought in UK for Rwanda genocide",
       "category": "general",
@@ -406,208 +632,50 @@
       ]
     },
     {
-      "id": "24b30d94e3b3fa0e",
-      "title": "Dem lawmakers scoff at Trump's $5K 'fantasy land' promise: 'Ain't happening'",
+      "id": "7e25ab364b4dcc3b",
+      "title": "Explanation of Vote Before the Vote for UNGA 80 Adoption on the Resolution to “Correct the Map” - United States Mission to the United Nations (.gov)",
       "category": "general",
-      "confidence": "moderate",
+      "confidence": "low",
       "reportCount": 2,
-      "sourceCount": 2,
+      "sourceCount": 1,
       "sources": [
-        "foxnews.com",
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "2026-09-21T16:19:29Z",
-      "lastSeen": "2026-09-21T16:19:29Z",
-      "urls": [
-        "https://www.foxnews.com/politics/dem-lawmakers-scoff-trumps-5k-fantasy-land-promise-aint-happening",
-        "https://news.google.com/rss/articles/CBMipAFBVV95cUxNbXc3eXctR0ZqV0w2OFZheTJTdFZFYU9SMGZ5WThPa3lMMVFneDg3aW83eWF3YWlHN280QmY1M00zQVZJbVlNYUdsRHRIQWFOdTlNOXRSYW9NbWVYc0wzZHZYejlDNE9XaEpMYWJHRkFjVmtIczhvLVJFODYxdFAyUnJLYnN0QXRDY194WlcxU3NlY2lzczdjYnJ3YUx2WWtKM0Ywd9IBpAFBVV95cUxNbXc3eXctR0ZqV0w2OFZheTJTdFZFYU9SMGZ5WThPa3lMMVFneDg3aW83eWF3YWlHN280QmY1M00zQVZJbVlNYUdsRHRIQWFOdTlNOXRSYW9NbWVYc0wzZHZYejlDNE9XaEpMYWJHRkFjVmtIczhvLVJFODYxdFAyUnJLYnN0QXRDY194WlcxU3NlY2lzczdjYnJ3YUx2WWtKM0Ywdw?oc=5"
-      ],
-      "reports": [
-        {
-          "id": "66e5d5f2fe85",
-          "sourceLabel": "https://www.foxnews.com/politics/dem-lawmakers-scoff-trumps-5k-fantasy-land-promise-aint-happening",
-          "sourceName": "https://www.foxnews.com/politics/dem-lawmakers-scoff-trumps-5k-fantasy-land-promise-aint-happening",
-          "sourceType": "us-politics",
-          "title": "Dem lawmakers scoff at Trump's $5K 'fantasy land' promise: 'Ain't happening'",
-          "summary": "President Donald Trump's $5,000 dividend pledge faces bipartisan pushback, with Democrats calling it a \"bribe\" and Republicans questioning its feasibility.",
-          "summary_snippet": "President Donald Trump's $5,000 dividend pledge faces bipartisan pushback, with Democrats calling it a \"bribe\" and Republicans questioning its feasibility.",
-          "source": "https://www.foxnews.com/politics/dem-lawmakers-scoff-trumps-5k-fantasy-land-promise-aint-happening",
-          "url": "https://www.foxnews.com/politics/dem-lawmakers-scoff-trumps-5k-fantasy-land-promise-aint-happening",
-          "time": "2026-09-21T16:19:29Z",
-          "published_date": "2026-09-21T16:19:29Z",
-          "publishedDate": "2026-09-21T16:19:29Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "fox_news_politics",
-            "sourceUrl": "https://moxie.foxnews.com/google-publisher/politics.xml",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "8b7e23ed7ca9",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNbXc3eXctR0ZqV0w2OFZheTJTdFZFYU9SMGZ5WThPa3lMMVFneDg3aW83eWF3YWlHN280QmY1M00zQVZJbVlNYUdsRHRIQWFOdTlNOXRSYW9NbWVYc0wzZHZYejlDNE9XaEpMYWJHRkFjVmtIczhvLVJFODYxdFAyUnJLYnN0QXRDY194WlcxU3NlY2lzczdjYnJ3YUx2WWtKM0Ywd9IBpAFBVV95cUxNbXc3eXctR0ZqV0w2OFZheTJTdFZFYU9SMGZ5WThPa3lMMVFneDg3aW83eWF3YWlHN280QmY1M00zQVZJbVlNYUdsRHRIQWFOdTlNOXRSYW9NbWVYc0wzZHZYejlDNE9XaEpMYWJHRkFjVmtIczhvLVJFODYxdFAyUnJLYnN0QXRDY194WlcxU3NlY2lzczdjYnJ3YUx2WWtKM0Ywdw?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNbXc3eXctR0ZqV0w2OFZheTJTdFZFYU9SMGZ5WThPa3lMMVFneDg3aW83eWF3YWlHN280QmY1M00zQVZJbVlNYUdsRHRIQWFOdTlNOXRSYW9NbWVYc0wzZHZYejlDNE9XaEpMYWJHRkFjVmtIczhvLVJFODYxdFAyUnJLYnN0QXRDY194WlcxU3NlY2lzczdjYnJ3YUx2WWtKM0Ywd9IBpAFBVV95cUxNbXc3eXctR0ZqV0w2OFZheTJTdFZFYU9SMGZ5WThPa3lMMVFneDg3aW83eWF3YWlHN280QmY1M00zQVZJbVlNYUdsRHRIQWFOdTlNOXRSYW9NbWVYc0wzZHZYejlDNE9XaEpMYWJHRkFjVmtIczhvLVJFODYxdFAyUnJLYnN0QXRDY194WlcxU3NlY2lzczdjYnJ3YUx2WWtKM0Ywdw?oc=5",
-          "sourceType": "us-politics",
-          "title": "Dem lawmakers scoff at Trump's $5K 'fantasy land' promise: 'Ain't happening' - Fox News",
-          "summary": "Dem lawmakers scoff at Trump's $5K 'fantasy land' promise: 'Ain't happening' Fox News",
-          "summary_snippet": "Dem lawmakers scoff at Trump's $5K 'fantasy land' promise: 'Ain't happening' Fox News",
-          "source": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNbXc3eXctR0ZqV0w2OFZheTJTdFZFYU9SMGZ5WThPa3lMMVFneDg3aW83eWF3YWlHN280QmY1M00zQVZJbVlNYUdsRHRIQWFOdTlNOXRSYW9NbWVYc0wzZHZYejlDNE9XaEpMYWJHRkFjVmtIczhvLVJFODYxdFAyUnJLYnN0QXRDY194WlcxU3NlY2lzczdjYnJ3YUx2WWtKM0Ywd9IBpAFBVV95cUxNbXc3eXctR0ZqV0w2OFZheTJTdFZFYU9SMGZ5WThPa3lMMVFneDg3aW83eWF3YWlHN280QmY1M00zQVZJbVlNYUdsRHRIQWFOdTlNOXRSYW9NbWVYc0wzZHZYejlDNE9XaEpMYWJHRkFjVmtIczhvLVJFODYxdFAyUnJLYnN0QXRDY194WlcxU3NlY2lzczdjYnJ3YUx2WWtKM0Ywdw?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNbXc3eXctR0ZqV0w2OFZheTJTdFZFYU9SMGZ5WThPa3lMMVFneDg3aW83eWF3YWlHN280QmY1M00zQVZJbVlNYUdsRHRIQWFOdTlNOXRSYW9NbWVYc0wzZHZYejlDNE9XaEpMYWJHRkFjVmtIczhvLVJFODYxdFAyUnJLYnN0QXRDY194WlcxU3NlY2lzczdjYnJ3YUx2WWtKM0Ywd9IBpAFBVV95cUxNbXc3eXctR0ZqV0w2OFZheTJTdFZFYU9SMGZ5WThPa3lMMVFneDg3aW83eWF3YWlHN280QmY1M00zQVZJbVlNYUdsRHRIQWFOdTlNOXRSYW9NbWVYc0wzZHZYejlDNE9XaEpMYWJHRkFjVmtIczhvLVJFODYxdFAyUnJLYnN0QXRDY194WlcxU3NlY2lzczdjYnJ3YUx2WWtKM0Ywdw?oc=5",
-          "time": "2026-09-21T16:19:29Z",
-          "published_date": "2026-09-21T16:19:29Z",
-          "publishedDate": "2026-09-21T16:19:29Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_u_s_politics",
-            "sourceUrl": "https://news.google.com/rss/search?q=US+politics+Congress+Senate+White+House+election+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "4dbee920aebca69a",
-      "title": "EU and five other countries condemn Russia's 'sham' elections",
-      "category": "general",
-      "confidence": "moderate",
-      "reportCount": 2,
-      "sourceCount": 2,
-      "sources": [
-        "rfi.fr",
         "news.google.com"
       ],
       "anchors": [
-        "russia"
+        "united states"
       ],
-      "firstSeen": "2026-09-21T16:05:55Z",
-      "lastSeen": "2026-09-21T16:05:55Z",
+      "firstSeen": "Fri, 04 Sep 2026 07:00:00 GMT",
+      "lastSeen": "Wed, 25 Mar 2026 07:00:00 GMT",
       "urls": [
-        "https://www.rfi.fr/en/international/20260921-eu-and-five-other-countries-condemn-russia-s-sham-elections",
-        "https://news.google.com/rss/articles/CBMipwFBVV95cUxNZFc0bUdkcE55bHRiQkd4M3lUc2hqOTRwTzdMZDk2bFFZcEZTQVFwbUlJd3RKMnh5SFgzLXQ0c2pQRnQ2WHpjd1hrT0d1M0pUeTZvcVNWMW5nXy05WGZ1WWtnSlp3ZEF1RnhQeWk3NXIzTmFDRktnZ0dmX2FHTXpLZC1BNXR5bVBNaWZQaHdyZGMwZGM1YWRRcW9OV3R3S3M4eHRSVTNYQQ?oc=5"
+        "https://news.google.com/rss/articles/CBMivgFBVV95cUxNTHA4MlhhUlpyZGZCdnZ6NzEzVGRMMzZlQVVxNGVRaXNsTGcxZU4zaHBUYlZQaG5TTlJ3ZlZQSmcyYlgwNGVQdWx6cDNpN2ZKUkJ0TlcySWxnT3U0bnRCV1NzVmFoVk5oQUNTZzc1a0xHMTNIQXRfcE4wc3d0MjVhNmtINlhiNVdvQkVhaUc2NFNLZlpQQ1RiMl9aaHBvTXB0TWR4c29ERDlpbDB1WDgxVDV1SWJ6VnN4R2d1VkRB?oc=5",
+        "https://news.google.com/rss/articles/CBMidkFVX3lxTE9YcXR5WUN6NzQ5WVVDNzZjeGNqdDBvcnVHbm9uRlhOQW1JSXFLdTViUWJLcVJOUDBaRlpBNS0xQ2Y0V1FXRW1iSmpCcWw2NU1sNnpYbF9acjJMb09rbEVwQXgwWXprVXlrZkhRLXNtTzhDeFlHYlE?oc=5"
       ],
       "reports": [
         {
-          "id": "f0c860e1ceaa",
-          "sourceLabel": "https://www.rfi.fr/en/international/20260921-eu-and-five-other-countries-condemn-russia-s-sham-elections",
-          "sourceName": "https://www.rfi.fr/en/international/20260921-eu-and-five-other-countries-condemn-russia-s-sham-elections",
-          "sourceType": "international",
-          "title": "EU and five other countries condemn Russia's 'sham' elections",
-          "summary": "EU top diplomat Kaja Kallas on Monday dismissed Russia's parliamentary elections as a \"veneer\" of democracy, and said she was proposing sanctions against those who organised them in occupied Ukraine. Five other countries – the UK, Norway, Australia, New Zealand and Canada – also condemned Russia's move as a violation of the UN charter.",
-          "summary_snippet": "EU top diplomat Kaja Kallas on Monday dismissed Russia's parliamentary elections as a \"veneer\" of democracy, and said she was proposing sanctions against those who organised them in occupied Ukraine. Five other countries – the UK, Norway, Australia, New Zealand and Canada – also condemned Russia's move as a violation of the UN charter.",
-          "source": "https://www.rfi.fr/en/international/20260921-eu-and-five-other-countries-condemn-russia-s-sham-elections",
-          "url": "https://www.rfi.fr/en/international/20260921-eu-and-five-other-countries-condemn-russia-s-sham-elections",
-          "time": "2026-09-21T16:05:55Z",
-          "published_date": "2026-09-21T16:05:55Z",
-          "publishedDate": "2026-09-21T16:05:55Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "rfi_world",
-            "sourceUrl": "https://www.rfi.fr/en/general/rss",
-            "feedFormat": "rss"
-          }
+          "title": "Explanation of Vote Before the Vote for UNGA 80 Adoption on the Resolution to “Correct the Map” - United States Mission to the United Nations (.gov)",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNTHA4MlhhUlpyZGZCdnZ6NzEzVGRMMzZlQVVxNGVRaXNsTGcxZU4zaHBUYlZQaG5TTlJ3ZlZQSmcyYlgwNGVQdWx6cDNpN2ZKUkJ0TlcySWxnT3U0bnRCV1NzVmFoVk5oQUNTZzc1a0xHMTNIQXRfcE4wc3d0MjVhNmtINlhiNVdvQkVhaUc2NFNLZlpQQ1RiMl9aaHBvTXB0TWR4c29ERDlpbDB1WDgxVDV1SWJ6VnN4R2d1VkRB?oc=5",
+          "published_date": "Fri, 04 Sep 2026 07:00:00 GMT",
+          "time": "Fri, 04 Sep 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: United States Mission to the United Nations (.gov)",
+          "summary": "Fallback discovery via Google News RSS; publisher: United States Mission to the United Nations (.gov)",
+          "source": "United States Mission to the United Nations (.gov)",
+          "sourceLabel": "United States Mission to the United Nations (.gov)",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @UN",
+          "credit_metadata": "Google News RSS fallback"
         },
         {
-          "id": "92190305de0d",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNZFc0bUdkcE55bHRiQkd4M3lUc2hqOTRwTzdMZDk2bFFZcEZTQVFwbUlJd3RKMnh5SFgzLXQ0c2pQRnQ2WHpjd1hrT0d1M0pUeTZvcVNWMW5nXy05WGZ1WWtnSlp3ZEF1RnhQeWk3NXIzTmFDRktnZ0dmX2FHTXpLZC1BNXR5bVBNaWZQaHdyZGMwZGM1YWRRcW9OV3R3S3M4eHRSVTNYQQ?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNZFc0bUdkcE55bHRiQkd4M3lUc2hqOTRwTzdMZDk2bFFZcEZTQVFwbUlJd3RKMnh5SFgzLXQ0c2pQRnQ2WHpjd1hrT0d1M0pUeTZvcVNWMW5nXy05WGZ1WWtnSlp3ZEF1RnhQeWk3NXIzTmFDRktnZ0dmX2FHTXpLZC1BNXR5bVBNaWZQaHdyZGMwZGM1YWRRcW9OV3R3S3M4eHRSVTNYQQ?oc=5",
-          "sourceType": "world-politics",
-          "title": "EU and five other countries condemn Russia's 'sham' elections - RFI",
-          "summary": "EU and five other countries condemn Russia's 'sham' elections RFI",
-          "summary_snippet": "EU and five other countries condemn Russia's 'sham' elections RFI",
-          "source": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNZFc0bUdkcE55bHRiQkd4M3lUc2hqOTRwTzdMZDk2bFFZcEZTQVFwbUlJd3RKMnh5SFgzLXQ0c2pQRnQ2WHpjd1hrT0d1M0pUeTZvcVNWMW5nXy05WGZ1WWtnSlp3ZEF1RnhQeWk3NXIzTmFDRktnZ0dmX2FHTXpLZC1BNXR5bVBNaWZQaHdyZGMwZGM1YWRRcW9OV3R3S3M4eHRSVTNYQQ?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNZFc0bUdkcE55bHRiQkd4M3lUc2hqOTRwTzdMZDk2bFFZcEZTQVFwbUlJd3RKMnh5SFgzLXQ0c2pQRnQ2WHpjd1hrT0d1M0pUeTZvcVNWMW5nXy05WGZ1WWtnSlp3ZEF1RnhQeWk3NXIzTmFDRktnZ0dmX2FHTXpLZC1BNXR5bVBNaWZQaHdyZGMwZGM1YWRRcW9OV3R3S3M4eHRSVTNYQQ?oc=5",
-          "time": "2026-09-21T16:05:55Z",
-          "published_date": "2026-09-21T16:05:55Z",
-          "publishedDate": "2026-09-21T16:05:55Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_world_politics",
-            "sourceUrl": "https://news.google.com/rss/search?q=election+parliament+diplomacy+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "16fd0673794cf916",
-      "title": "Flamingo cruise missiles, missile-drones and a Pelican – what Ukraine used in Moscow attack - Forces News",
-      "category": "conflict",
-      "confidence": "moderate",
-      "reportCount": 2,
-      "sourceCount": 2,
-      "sources": [
-        "news.google.com",
-        "aljazeera.com"
-      ],
-      "anchors": [
-        "uk",
-        "ukraine"
-      ],
-      "firstSeen": "2026-09-21T14:19:46Z",
-      "lastSeen": "2026-09-21T15:37:05Z",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNLXNqZHNlT3RjVG8xdGYyclpnN18zOTllYWxwTW4yUGVoczExd1hDZnhwNWFQaVlvT0NYSmQ4LXZ3NTBTRFhBd1JqVDZ4YXdJa19GM2kwYnozcFk1clBtazVNNDh0MGxfbHBpdExZdkhnZ3pSMW01alNhNVpBLVdxTC03aXJsWDdZZlM4Q2VuTkNHYlNucmIwWmdHTzUyU2hQWlg1cDhpU3hvVk5kbHJKRUl3VlpzSjhIV2RyY3o2SjA?oc=5",
-        "https://www.aljazeera.com/news/2026/9/21/is-it-a-missile-is-it-a-drone-whats-the-pelican-used-by-ukraine?traffic_source=rss"
-      ],
-      "reports": [
-        {
-          "id": "5408c3450633",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNLXNqZHNlT3RjVG8xdGYyclpnN18zOTllYWxwTW4yUGVoczExd1hDZnhwNWFQaVlvT0NYSmQ4LXZ3NTBTRFhBd1JqVDZ4YXdJa19GM2kwYnozcFk1clBtazVNNDh0MGxfbHBpdExZdkhnZ3pSMW01alNhNVpBLVdxTC03aXJsWDdZZlM4Q2VuTkNHYlNucmIwWmdHTzUyU2hQWlg1cDhpU3hvVk5kbHJKRUl3VlpzSjhIV2RyY3o2SjA?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNLXNqZHNlT3RjVG8xdGYyclpnN18zOTllYWxwTW4yUGVoczExd1hDZnhwNWFQaVlvT0NYSmQ4LXZ3NTBTRFhBd1JqVDZ4YXdJa19GM2kwYnozcFk1clBtazVNNDh0MGxfbHBpdExZdkhnZ3pSMW01alNhNVpBLVdxTC03aXJsWDdZZlM4Q2VuTkNHYlNucmIwWmdHTzUyU2hQWlg1cDhpU3hvVk5kbHJKRUl3VlpzSjhIV2RyY3o2SjA?oc=5",
-          "sourceType": "europe-conflict",
-          "title": "Flamingo cruise missiles, missile-drones and a Pelican – what Ukraine used in Moscow attack - Forces News",
-          "summary": "Flamingo cruise missiles, missile-drones and a Pelican – what Ukraine used in Moscow attack Forces News",
-          "summary_snippet": "Flamingo cruise missiles, missile-drones and a Pelican – what Ukraine used in Moscow attack Forces News",
-          "source": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNLXNqZHNlT3RjVG8xdGYyclpnN18zOTllYWxwTW4yUGVoczExd1hDZnhwNWFQaVlvT0NYSmQ4LXZ3NTBTRFhBd1JqVDZ4YXdJa19GM2kwYnozcFk1clBtazVNNDh0MGxfbHBpdExZdkhnZ3pSMW01alNhNVpBLVdxTC03aXJsWDdZZlM4Q2VuTkNHYlNucmIwWmdHTzUyU2hQWlg1cDhpU3hvVk5kbHJKRUl3VlpzSjhIV2RyY3o2SjA?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNLXNqZHNlT3RjVG8xdGYyclpnN18zOTllYWxwTW4yUGVoczExd1hDZnhwNWFQaVlvT0NYSmQ4LXZ3NTBTRFhBd1JqVDZ4YXdJa19GM2kwYnozcFk1clBtazVNNDh0MGxfbHBpdExZdkhnZ3pSMW01alNhNVpBLVdxTC03aXJsWDdZZlM4Q2VuTkNHYlNucmIwWmdHTzUyU2hQWlg1cDhpU3hvVk5kbHJKRUl3VlpzSjhIV2RyY3o2SjA?oc=5",
-          "time": "2026-09-21T15:37:05Z",
-          "published_date": "2026-09-21T15:37:05Z",
-          "publishedDate": "2026-09-21T15:37:05Z",
-          "tag": "Breaking",
-          "confidence": "DEVELOPING",
-          "breaking": true,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_ukraine_war",
-            "sourceUrl": "https://news.google.com/rss/search?q=Ukraine+Russia+war+frontline+missile+drone+strike+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "b962094e2196",
-          "sourceLabel": "https://www.aljazeera.com/news/2026/9/21/is-it-a-missile-is-it-a-drone-whats-the-pelican-used-by-ukraine?traffic_source=rss",
-          "sourceName": "https://www.aljazeera.com/news/2026/9/21/is-it-a-missile-is-it-a-drone-whats-the-pelican-used-by-ukraine?traffic_source=rss",
-          "sourceType": "international",
-          "title": "Is it a missile? Is it a drone? What’s the Pelican used by Ukraine?",
-          "summary": "The use of the Pelican has provoked interest among military analysts as to whether it is a tactical ballistic missile.",
-          "summary_snippet": "The use of the Pelican has provoked interest among military analysts as to whether it is a tactical ballistic missile.",
-          "source": "https://www.aljazeera.com/news/2026/9/21/is-it-a-missile-is-it-a-drone-whats-the-pelican-used-by-ukraine?traffic_source=rss",
-          "url": "https://www.aljazeera.com/news/2026/9/21/is-it-a-missile-is-it-a-drone-whats-the-pelican-used-by-ukraine?traffic_source=rss",
-          "time": "2026-09-21T14:19:46Z",
-          "published_date": "2026-09-21T14:19:46Z",
-          "publishedDate": "2026-09-21T14:19:46Z",
-          "tag": "Breaking",
-          "confidence": "DEVELOPING",
-          "breaking": true,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "al_jazeera",
-            "sourceUrl": "https://www.aljazeera.com/xml/rss/all.xml",
-            "feedFormat": "rss"
-          }
+          "title": "Explanation of Vote for UNGA Resolution - United States Mission to the United Nations (.gov)",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9YcXR5WUN6NzQ5WVVDNzZjeGNqdDBvcnVHbm9uRlhOQW1JSXFLdTViUWJLcVJOUDBaRlpBNS0xQ2Y0V1FXRW1iSmpCcWw2NU1sNnpYbF9acjJMb09rbEVwQXgwWXprVXlrZkhRLXNtTzhDeFlHYlE?oc=5",
+          "published_date": "Wed, 25 Mar 2026 07:00:00 GMT",
+          "time": "Wed, 25 Mar 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: United States Mission to the United Nations (.gov)",
+          "summary": "Fallback discovery via Google News RSS; publisher: United States Mission to the United Nations (.gov)",
+          "source": "United States Mission to the United Nations (.gov)",
+          "sourceLabel": "United States Mission to the United Nations (.gov)",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @UN",
+          "credit_metadata": "Google News RSS fallback"
         }
       ]
     },
@@ -679,8 +747,8 @@
       "reports": [
         {
           "id": "f50cf53f43f7",
-          "sourceLabel": "GDACS Global Disaster Alerts",
-          "sourceName": "GDACS Global Disaster Alerts",
+          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032310",
+          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032310",
           "sourceType": "climate-hazard",
           "title": "Green forest fire notification in Angola",
           "summary": "On 16/09/2026, a forest fire started in Angola, until 21/09/2026.",
@@ -702,8 +770,8 @@
         },
         {
           "id": "0bad44bd3d5a",
-          "sourceLabel": "GDACS Global Disaster Alerts",
-          "sourceName": "GDACS Global Disaster Alerts",
+          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032307",
+          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032307",
           "sourceType": "climate-hazard",
           "title": "Green forest fire notification in Angola",
           "summary": "On 18/09/2026, a forest fire started in Angola, until 21/09/2026.",
@@ -768,8 +836,8 @@
         },
         {
           "id": "7a75ba7f87c3",
-          "sourceLabel": "Google News — Climate & Disaster",
-          "sourceName": "Google News — Climate & Disaster",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQeVdXZC1sbkFmMlhWZzdmVjFITjYtdnNDeXZ4MC1nNFBISHVfNDFuQVVUU1htUXdtOFNIdExxMk1VcHlDeE9OSmQ2Ty1nakNBcEVGYWtqWm5NTDN2OFlVRDVLZUhLd2RGLTRhdFZPdkxLbkg1YnJsVDhaRG9KdEJCcVhhZHlhaTNGVWdOOXVBVU05TWFIdkF3ZmZVRG5hSU0wbDcwRk13MUgteW8?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQeVdXZC1sbkFmMlhWZzdmVjFITjYtdnNDeXZ4MC1nNFBISHVfNDFuQVVUU1htUXdtOFNIdExxMk1VcHlDeE9OSmQ2Ty1nakNBcEVGYWtqWm5NTDN2OFlVRDVLZUhLd2RGLTRhdFZPdkxLbkg1YnJsVDhaRG9KdEJCcVhhZHlhaTNGVWdOOXVBVU05TWFIdkF3ZmZVRG5hSU0wbDcwRk13MUgteW8?oc=5",
           "sourceType": "climate-hazard",
           "title": "Newsom Declares California Emergency as Potentially Historic El Niño Looms - NTD News",
           "summary": "Newsom Declares California Emergency as Potentially Historic El Niño Looms NTD News",
@@ -786,6 +854,72 @@
           "credit": {
             "sourceId": "google_news_climate_disaster",
             "sourceUrl": "https://news.google.com/rss/search?q=flood+wildfire+hurricane+disaster+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
+      "id": "413aafa46c5a88ce",
+      "title": "Pakistan launches deadly strikes on eastern Afghanistan - Courthouse News",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 2,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "2026-09-21T18:32:12Z",
+      "lastSeen": "2026-09-21T18:32:12Z",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMikAFBVV95cUxPMG9ieVJ6UE1vSEVfemZMaDlOOHRPNm80MzBhVkh1aVZEZGZCYWhXWmNSRmNVNGdQRmVsekJuRXRJMVZrc2xLTXVVVHlxSUxMWGFySEhQdmZpY01nZ1Q1NUtsUnFFa0pMS0N3RDRRQWtQbTJsZWFDclBGUktST2JZMFFBQWw5Zi0xQ1Y3TlVtM2c?oc=5",
+        "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPaF9aRXJONmtrclgtTThTSzZLWUYwVmV5UWlVaFNUWVVFcVZWaVZaS0NPOUhuR2RYazJMR0I0T2ZvYzFlVk01ZGg5QWZTV1c3TF82OU1UTDF0VndsdHo4S2ZKVmVnTmE4WmxJQWtaX0p0b21PLXY3NlBTeVFrMURDNEFya2ZFeV9ld2o4?oc=5"
+      ],
+      "reports": [
+        {
+          "id": "db58b03a5f55",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPMG9ieVJ6UE1vSEVfemZMaDlOOHRPNm80MzBhVkh1aVZEZGZCYWhXWmNSRmNVNGdQRmVsekJuRXRJMVZrc2xLTXVVVHlxSUxMWGFySEhQdmZpY01nZ1Q1NUtsUnFFa0pMS0N3RDRRQWtQbTJsZWFDclBGUktST2JZMFFBQWw5Zi0xQ1Y3TlVtM2c?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPMG9ieVJ6UE1vSEVfemZMaDlOOHRPNm80MzBhVkh1aVZEZGZCYWhXWmNSRmNVNGdQRmVsekJuRXRJMVZrc2xLTXVVVHlxSUxMWGFySEhQdmZpY01nZ1Q1NUtsUnFFa0pMS0N3RDRRQWtQbTJsZWFDclBGUktST2JZMFFBQWw5Zi0xQ1Y3TlVtM2c?oc=5",
+          "sourceType": "south-asia-conflict",
+          "title": "Pakistan launches deadly strikes on eastern Afghanistan - Courthouse News",
+          "summary": "Pakistan launches deadly strikes on eastern Afghanistan Courthouse News",
+          "summary_snippet": "Pakistan launches deadly strikes on eastern Afghanistan Courthouse News",
+          "source": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPMG9ieVJ6UE1vSEVfemZMaDlOOHRPNm80MzBhVkh1aVZEZGZCYWhXWmNSRmNVNGdQRmVsekJuRXRJMVZrc2xLTXVVVHlxSUxMWGFySEhQdmZpY01nZ1Q1NUtsUnFFa0pMS0N3RDRRQWtQbTJsZWFDclBGUktST2JZMFFBQWw5Zi0xQ1Y3TlVtM2c?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPMG9ieVJ6UE1vSEVfemZMaDlOOHRPNm80MzBhVkh1aVZEZGZCYWhXWmNSRmNVNGdQRmVsekJuRXRJMVZrc2xLTXVVVHlxSUxMWGFySEhQdmZpY01nZ1Q1NUtsUnFFa0pMS0N3RDRRQWtQbTJsZWFDclBGUktST2JZMFFBQWw5Zi0xQ1Y3TlVtM2c?oc=5",
+          "time": "2026-09-21T18:32:12Z",
+          "published_date": "2026-09-21T18:32:12Z",
+          "publishedDate": "2026-09-21T18:32:12Z",
+          "tag": "Breaking",
+          "confidence": "DEVELOPING",
+          "breaking": true,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_afghanistan_security",
+            "sourceUrl": "https://news.google.com/rss/search?q=Afghanistan+Taliban+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "e91bf80fbc5b",
+          "sourceLabel": "Google News — Afghanistan Security",
+          "sourceName": "Google News — Afghanistan Security",
+          "sourceType": "south-asia-conflict",
+          "title": "Pakistan launches deadly strikes on eastern Afghanistan - Courthouse News",
+          "summary": "Pakistan launches deadly strikes on eastern Afghanistan Courthouse News",
+          "summary_snippet": "Pakistan launches deadly strikes on eastern Afghanistan Courthouse News",
+          "source": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPaF9aRXJONmtrclgtTThTSzZLWUYwVmV5UWlVaFNUWVVFcVZWaVZaS0NPOUhuR2RYazJMR0I0T2ZvYzFlVk01ZGg5QWZTV1c3TF82OU1UTDF0VndsdHo4S2ZKVmVnTmE4WmxJQWtaX0p0b21PLXY3NlBTeVFrMURDNEFya2ZFeV9ld2o4?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPaF9aRXJONmtrclgtTThTSzZLWUYwVmV5UWlVaFNUWVVFcVZWaVZaS0NPOUhuR2RYazJMR0I0T2ZvYzFlVk01ZGg5QWZTV1c3TF82OU1UTDF0VndsdHo4S2ZKVmVnTmE4WmxJQWtaX0p0b21PLXY3NlBTeVFrMURDNEFya2ZFeV9ld2o4?oc=5",
+          "time": "2026-09-21T18:32:12Z",
+          "published_date": "2026-09-21T18:32:12Z",
+          "publishedDate": "2026-09-21T18:32:12Z",
+          "tag": "Breaking",
+          "confidence": "DEVELOPING",
+          "breaking": true,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_afghanistan_security",
+            "sourceUrl": "https://news.google.com/rss/search?q=Afghanistan+Taliban+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
         }
@@ -851,38 +985,6 @@
           "sourceLabel": "UN News",
           "sourceType": "fallback-news",
           "fallbackFor": "X @UN",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "c92c4eaafcc6a9d2",
-      "title": "NASA Provides Update on Moon Base Rovers, Landers, Missions - NASA (.gov)",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Wed, 27 May 2026 07:00:00 GMT",
-      "lastSeen": "Wed, 27 May 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMilwFBVV95cUxOdjNJWUJUYnF2eEUtazlSclhHZHpzZ3RvVnIxRlBGZnc4akl2bXIzZVlZSEtxMzdyVmNBdE9Wa2pIYlJXbUlDTE1WWXd2UHQ2V3BJcHF1M0FLWVFHdWFEUDhZYk9iR0FaNm5HTGZoVzN2aFJjVGVyeHBwcmZNdi1taE1DYTJwQWlKU3NQQUowcWJGVjNWWWdJ?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "NASA Provides Update on Moon Base Rovers, Landers, Missions - NASA (.gov)",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOdjNJWUJUYnF2eEUtazlSclhHZHpzZ3RvVnIxRlBGZnc4akl2bXIzZVlZSEtxMzdyVmNBdE9Wa2pIYlJXbUlDTE1WWXd2UHQ2V3BJcHF1M0FLWVFHdWFEUDhZYk9iR0FaNm5HTGZoVzN2aFJjVGVyeHBwcmZNdi1taE1DYTJwQWlKU3NQQUowcWJGVjNWWWdJ?oc=5",
-          "published_date": "Wed, 27 May 2026 07:00:00 GMT",
-          "time": "Wed, 27 May 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
-          "summary": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
-          "source": "NASA (.gov)",
-          "sourceLabel": "NASA (.gov)",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NASA",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -1048,38 +1150,6 @@
       ]
     },
     {
-      "id": "f6c892e9bec8e49c",
-      "title": "US military strike kills four suspected 'narco-terrorists' in Caribbean - TRT World",
-      "category": "conflict",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Wed, 26 Aug 2026 02:55:05 GMT",
-      "lastSeen": "Wed, 26 Aug 2026 02:55:05 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiWEFVX3lxTFB3STFwazV5eGotV3BVX2JpcmxmWWhCWEhSZFF6T0NobmtFWjUzc05fdWZSWWlSbEtkSGx0NTZocWhybkxsTi1hTXpqa2NjbXJlRUNNNzJhM3Y?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "US military strike kills four suspected 'narco-terrorists' in Caribbean - TRT World",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFB3STFwazV5eGotV3BVX2JpcmxmWWhCWEhSZFF6T0NobmtFWjUzc05fdWZSWWlSbEtkSGx0NTZocWhybkxsTi1hTXpqa2NjbXJlRUNNNzJhM3Y?oc=5",
-          "published_date": "Wed, 26 Aug 2026 02:55:05 GMT",
-          "time": "Wed, 26 Aug 2026 02:55:05 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: TRT World",
-          "summary": "Fallback discovery via Google News RSS; publisher: TRT World",
-          "source": "TRT World",
-          "sourceLabel": "TRT World",
-          "sourceType": "fallback-news",
-          "fallbackFor": "SOUTHCOM Official Reporting — GDELT Mirror",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
       "id": "c3b5fe6e7afc8791",
       "title": "Four killed in latest US attack on alleged drug-smuggling boat in Caribbean - Al Jazeera",
       "category": "conflict",
@@ -1107,38 +1177,6 @@
           "sourceLabel": "Al Jazeera",
           "sourceType": "fallback-news",
           "fallbackFor": "GDELT — Western Hemisphere Counter-Cartel",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "c8542d9ea7a242ed",
-      "title": "Explanation of Vote for UNGA Resolution - usun.usmission.gov",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Wed, 25 Mar 2026 07:00:00 GMT",
-      "lastSeen": "Wed, 25 Mar 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMidkFVX3lxTE9YcXR5WUN6NzQ5WVVDNzZjeGNqdDBvcnVHbm9uRlhOQW1JSXFLdTViUWJLcVJOUDBaRlpBNS0xQ2Y0V1FXRW1iSmpCcWw2NU1sNnpYbF9acjJMb09rbEVwQXgwWXprVXlrZkhRLXNtTzhDeFlHYlE?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Explanation of Vote for UNGA Resolution - usun.usmission.gov",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9YcXR5WUN6NzQ5WVVDNzZjeGNqdDBvcnVHbm9uRlhOQW1JSXFLdTViUWJLcVJOUDBaRlpBNS0xQ2Y0V1FXRW1iSmpCcWw2NU1sNnpYbF9acjJMb09rbEVwQXgwWXprVXlrZkhRLXNtTzhDeFlHYlE?oc=5",
-          "published_date": "Wed, 25 Mar 2026 07:00:00 GMT",
-          "time": "Wed, 25 Mar 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: usun.usmission.gov",
-          "summary": "Fallback discovery via Google News RSS; publisher: usun.usmission.gov",
-          "source": "usun.usmission.gov",
-          "sourceLabel": "usun.usmission.gov",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @UN",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -1435,6 +1473,38 @@
           "sourceLabel": "Al Jazeera",
           "sourceType": "fallback-news",
           "fallbackFor": "X @NATO",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "fc25e0c19534f53c",
+      "title": "NASA Announces Public-Private Partnership to Advance Mars Science - NASA (.gov)",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Wed, 17 Jun 2026 07:00:00 GMT",
+      "lastSeen": "Wed, 17 Jun 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiogFBVV95cUxQOVFvNHpLWmg4Nk8ya3NpMWRCVlExX2dGV2VHcW81eVJZMzNnS3hxRnNaMUpHejZFa2ZvMVExeGQxem9BRHVfM3NuZ0NVZDJSQzJ6ZEpCeS1ZTEZnNFNTMFFJbTBEVWY4SW9QN2dFSUFpWnhmNENsalVsNElWYS11RW1EckZwMlZCSjlWRzRoOTNyWHFkb1VjdkRSLTI2Z2FINFE?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "NASA Announces Public-Private Partnership to Advance Mars Science - NASA (.gov)",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQOVFvNHpLWmg4Nk8ya3NpMWRCVlExX2dGV2VHcW81eVJZMzNnS3hxRnNaMUpHejZFa2ZvMVExeGQxem9BRHVfM3NuZ0NVZDJSQzJ6ZEpCeS1ZTEZnNFNTMFFJbTBEVWY4SW9QN2dFSUFpWnhmNENsalVsNElWYS11RW1EckZwMlZCSjlWRzRoOTNyWHFkb1VjdkRSLTI2Z2FINFE?oc=5",
+          "published_date": "Wed, 17 Jun 2026 07:00:00 GMT",
+          "time": "Wed, 17 Jun 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
+          "summary": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
+          "source": "NASA (.gov)",
+          "sourceLabel": "NASA (.gov)",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NASA",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -2259,6 +2329,38 @@
       ]
     },
     {
+      "id": "c92c4eaafcc6a9d2",
+      "title": "NASA Provides Update on Moon Base Rovers, Landers, Missions - NASA (.gov)",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Tue, 26 May 2026 07:00:00 GMT",
+      "lastSeen": "Tue, 26 May 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMilwFBVV95cUxOdjNJWUJUYnF2eEUtazlSclhHZHpzZ3RvVnIxRlBGZnc4akl2bXIzZVlZSEtxMzdyVmNBdE9Wa2pIYlJXbUlDTE1WWXd2UHQ2V3BJcHF1M0FLWVFHdWFEUDhZYk9iR0FaNm5HTGZoVzN2aFJjVGVyeHBwcmZNdi1taE1DYTJwQWlKU3NQQUowcWJGVjNWWWdJ?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "NASA Provides Update on Moon Base Rovers, Landers, Missions - NASA (.gov)",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOdjNJWUJUYnF2eEUtazlSclhHZHpzZ3RvVnIxRlBGZnc4akl2bXIzZVlZSEtxMzdyVmNBdE9Wa2pIYlJXbUlDTE1WWXd2UHQ2V3BJcHF1M0FLWVFHdWFEUDhZYk9iR0FaNm5HTGZoVzN2aFJjVGVyeHBwcmZNdi1taE1DYTJwQWlKU3NQQUowcWJGVjNWWWdJ?oc=5",
+          "published_date": "Tue, 26 May 2026 07:00:00 GMT",
+          "time": "Tue, 26 May 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
+          "summary": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
+          "source": "NASA (.gov)",
+          "sourceLabel": "NASA (.gov)",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NASA",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
       "id": "1ca9ee3cebc8e6be",
       "title": "US boat strike in the Caribbean kills four suspected of ‘narco-trafficking’ - The Hill",
       "category": "conflict",
@@ -2291,8 +2393,8 @@
       ]
     },
     {
-      "id": "fa119470808948d3",
-      "title": "New Next-Gen Dish Adds Muscle to NASA’s Deep Space Network - NASA Jet Propulsion Laboratory (JPL) (.gov)",
+      "id": "98e8256d83829310",
+      "title": "New Next-Gen Dish Adds Muscle to NASA’s Deep Space Network - jpl.nasa.gov",
       "category": "general",
       "confidence": "low",
       "reportCount": 1,
@@ -2308,14 +2410,14 @@
       ],
       "reports": [
         {
-          "title": "New Next-Gen Dish Adds Muscle to NASA’s Deep Space Network - NASA Jet Propulsion Laboratory (JPL) (.gov)",
+          "title": "New Next-Gen Dish Adds Muscle to NASA’s Deep Space Network - jpl.nasa.gov",
           "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPdzBhWnZQLWV4VGFqYUtKX0JCdW5tZi1UQnI2NVQ2QlJmNUdtLWhEOW5pUGlFOERwNDI3TGNBZldtQ2NnenpNU2FpY2RvUXRudHF4N3dZZ3g4SkIxOVd4WEV1c2hhWlYyREhsOF92RkpaSFJlcVNaWEx5emwxb2NyY0ljSkktQTFmUWVEQWJDSHkxZw?oc=5",
           "published_date": "Tue, 25 Aug 2026 07:00:00 GMT",
           "time": "Tue, 25 Aug 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NASA Jet Propulsion Laboratory (JPL) (.gov)",
-          "summary": "Fallback discovery via Google News RSS; publisher: NASA Jet Propulsion Laboratory (JPL) (.gov)",
-          "source": "NASA Jet Propulsion Laboratory (JPL) (.gov)",
-          "sourceLabel": "NASA Jet Propulsion Laboratory (JPL) (.gov)",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: jpl.nasa.gov",
+          "summary": "Fallback discovery via Google News RSS; publisher: jpl.nasa.gov",
+          "source": "jpl.nasa.gov",
+          "sourceLabel": "jpl.nasa.gov",
           "sourceType": "fallback-news",
           "fallbackFor": "X @NASA",
           "credit_metadata": "Google News RSS fallback"
@@ -2416,6 +2518,38 @@
           "sourceLabel": "NASA (.gov)",
           "sourceType": "fallback-news",
           "fallbackFor": "X @NASA",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "59f45d206bb07aa8",
+      "title": "CNN, MS NOW and Politico file lawsuit against Trump's White House ban - BBC",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Tue, 22 Sep 2026 00:16:06 GMT",
+      "lastSeen": "Tue, 22 Sep 2026 00:16:06 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiW0FVX3lxTFA5V2F1ZTZjdWJmb1NpNHZXNHZTSVZSa0FsNjAtQnJycGh1YXZ4aUZ4UVN0c2YwOWlYVHJIeWtBVHF4R1pxRm1mV094RTRGaHZrQlNJZmp2QjhseEU?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "CNN, MS NOW and Politico file lawsuit against Trump's White House ban - BBC",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFA5V2F1ZTZjdWJmb1NpNHZXNHZTSVZSa0FsNjAtQnJycGh1YXZ4aUZ4UVN0c2YwOWlYVHJIeWtBVHF4R1pxRm1mV094RTRGaHZrQlNJZmp2QjhseEU?oc=5",
+          "published_date": "Tue, 22 Sep 2026 00:16:06 GMT",
+          "time": "Tue, 22 Sep 2026 00:16:06 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: BBC",
+          "summary": "Fallback discovery via Google News RSS; publisher: BBC",
+          "source": "BBC",
+          "sourceLabel": "BBC",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @POTUS",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -2681,8 +2815,8 @@
       ]
     },
     {
-      "id": "b14ca70f426c832f",
-      "title": "GOP governors, utilities join Trump data center pledge - Politico",
+      "id": "bfc9455bf81d24f8",
+      "title": "GOP governors, utilities join Trump data center pledge - politico.com",
       "category": "general",
       "confidence": "low",
       "reportCount": 1,
@@ -2698,14 +2832,14 @@
       ],
       "reports": [
         {
-          "title": "GOP governors, utilities join Trump data center pledge - Politico",
+          "title": "GOP governors, utilities join Trump data center pledge - politico.com",
           "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNejZMU0NBdDZvNWM4aHF4cXRoN0I4NTJJZ1liZmRVNEFQdi14VWNWUHBnaGNla1hKSGNtRkJsRkpZSVJISWJXWGEwVGdmVzdtdVNpcXRlRW44NHJWWUtiQkY1WV9pdFRIbHlXbVhvQzFuWnRUZG5iSnNXek8wMEx1TFlXRklOSDRFMWg1VVo4ZGxzc1lSNkJNREljTHZ3dmRHTVhORGhR?oc=5",
           "published_date": "Tue, 14 Jul 2026 07:00:00 GMT",
           "time": "Tue, 14 Jul 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Politico",
-          "summary": "Fallback discovery via Google News RSS; publisher: Politico",
-          "source": "Politico",
-          "sourceLabel": "Politico",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: politico.com",
+          "summary": "Fallback discovery via Google News RSS; publisher: politico.com",
+          "source": "politico.com",
+          "sourceLabel": "politico.com",
           "sourceType": "fallback-news",
           "fallbackFor": "X @WhiteHouse",
           "credit_metadata": "Google News RSS fallback"
@@ -2740,38 +2874,6 @@
           "sourceLabel": "Al Jazeera",
           "sourceType": "fallback-news",
           "fallbackFor": "GDELT — Western Hemisphere Counter-Cartel",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "b7037f92853b5020",
-      "title": "NASA to Share Artemis II Flight Readiness Review Update - NASA (.gov)",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Tue, 10 Mar 2026 07:00:00 GMT",
-      "lastSeen": "Tue, 10 Mar 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMilAFBVV95cUxNd08xYktuNUR4aUFRV1VJYUMtSFl1Z3NxSzVUYUhYYS1CbjBEa0JMTUpxbktfTF9WM3JVWWF0b2YwNzBESXV0dUxzRlduLV9veEVIb1g2dFd4WlByM0ZyLVdDZ1V3QUp0Umd4bEJoMmNGbXBOWjFfVHlleC1XdXhOdm55OE5GZksxNHlIVzd3dkVHSEhv?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "NASA to Share Artemis II Flight Readiness Review Update - NASA (.gov)",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNd08xYktuNUR4aUFRV1VJYUMtSFl1Z3NxSzVUYUhYYS1CbjBEa0JMTUpxbktfTF9WM3JVWWF0b2YwNzBESXV0dUxzRlduLV9veEVIb1g2dFd4WlByM0ZyLVdDZ1V3QUp0Umd4bEJoMmNGbXBOWjFfVHlleC1XdXhOdm55OE5GZksxNHlIVzd3dkVHSEhv?oc=5",
-          "published_date": "Tue, 10 Mar 2026 07:00:00 GMT",
-          "time": "Tue, 10 Mar 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
-          "summary": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
-          "source": "NASA (.gov)",
-          "sourceLabel": "NASA (.gov)",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NASA",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -3030,38 +3132,6 @@
           "sourceLabel": "White House Correspondents' Association",
           "sourceType": "fallback-news",
           "fallbackFor": "X @WhiteHouse",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "bbf298746373ecb3",
-      "title": "Assessing the Facts and Legal Questions About the U.S. Strikes on Alleged Drug Boats - FactCheck.org",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Thu, 30 Oct 2025 07:00:00 GMT",
-      "lastSeen": "Thu, 30 Oct 2025 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiugFBVV95cUxPSWo4YTN2TUk5SnNPa2VySzhEbl9wM2JQVEc3Nm9DVGh6ZlZfbWVTQ1Q3NnlBOXlaNmZpZ1pKS3d0V1FQQUFQU3lxMlFkUlBjdVowZlUwa20yU1c3SEhoZHJPSTVlS3NoX0FUb0NYaFIta0xZRmkwQTdsNkJCVlhxRHplTHhjbkd1U1JkNkstZEQ4QmNENHRFdlFXZHU4eld4RzFEUEJKLWlNUU1tUnFMejdmNTlUUGowQ1E?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Assessing the Facts and Legal Questions About the U.S. Strikes on Alleged Drug Boats - FactCheck.org",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPSWo4YTN2TUk5SnNPa2VySzhEbl9wM2JQVEc3Nm9DVGh6ZlZfbWVTQ1Q3NnlBOXlaNmZpZ1pKS3d0V1FQQUFQU3lxMlFkUlBjdVowZlUwa20yU1c3SEhoZHJPSTVlS3NoX0FUb0NYaFIta0xZRmkwQTdsNkJCVlhxRHplTHhjbkd1U1JkNkstZEQ4QmNENHRFdlFXZHU4eld4RzFEUEJKLWlNUU1tUnFMejdmNTlUUGowQ1E?oc=5",
-          "published_date": "Thu, 30 Oct 2025 07:00:00 GMT",
-          "time": "Thu, 30 Oct 2025 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: FactCheck.org",
-          "summary": "Fallback discovery via Google News RSS; publisher: FactCheck.org",
-          "source": "FactCheck.org",
-          "sourceLabel": "FactCheck.org",
-          "sourceType": "fallback-news",
-          "fallbackFor": "GDELT — Western Hemisphere Counter-Cartel",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
