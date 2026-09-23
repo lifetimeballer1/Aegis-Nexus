@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-23T16:59:58.821098Z",
+  "updatedAt": "2026-09-23T20:22:50.333918Z",
   "method": "Deterministic prioritization of existing public Global Pulse artifacts; not a forecast or causal model.",
   "freshness": {
-    "snapshotUpdatedAt": "2026-09-23T14:32:38.629745+00:00",
-    "eventsUpdatedAt": "2026-09-23T14:32:41.130545Z",
+    "snapshotUpdatedAt": "2026-09-23T18:36:28.216725+00:00",
+    "eventsUpdatedAt": "2026-09-23T18:36:32.449082Z",
     "assessmentsUpdatedAt": "2026-09-10T03:03:12.655499Z"
   },
   "headline": {
@@ -13,19 +13,35 @@
   },
   "topDevelopments": [
     {
-      "id": "f01ed11a52450c1f",
-      "title": "Russia pounds Kyiv with drone strikes after Zelenskyy-Trump talks",
-      "category": "diplomatic",
+      "id": "cd6ce5d8fe33bcf0",
+      "title": "Iran's president tells Trump it will never 'bend the knee'",
+      "category": "political",
+      "confidence": "high",
+      "reportCount": 3,
+      "independentSourceCount": 3,
+      "sources": [
+        "bbc_world",
+        "cna_world",
+        "google_news_iran_israel"
+      ],
+      "breaking": false,
+      "firstSeen": "2026-09-23T16:57:00Z",
+      "lastSeen": "2026-09-23T18:15:31Z"
+    },
+    {
+      "id": "dd9c981fabb59b88",
+      "title": "Trump pushes Russia-Ukraine ‘energy truce’: Can it work?",
+      "category": "general",
       "confidence": "moderate",
       "reportCount": 2,
       "independentSourceCount": 2,
       "sources": [
-        "cna_world",
+        "al_jazeera",
         "google_news_ukraine_war"
       ],
       "breaking": true,
-      "firstSeen": "2026-09-23T08:21:00Z",
-      "lastSeen": "2026-09-23T09:07:00Z"
+      "firstSeen": "2026-09-23T14:36:27Z",
+      "lastSeen": "2026-09-23T14:49:04Z"
     },
     {
       "id": "2cf7045fdd0b4c73",
@@ -43,8 +59,8 @@
       "lastSeen": "2026-09-23T14:01:15Z"
     },
     {
-      "id": "06841dbf9106e5bf",
-      "title": "BREAKING NEWS: Pakistan Shoots Down 8 Drones Fired By Afghan Taliban: Sources | Exclusive - News18",
+      "id": "06379d71fe9ecc02",
+      "title": "Pakistan says it shot down eight drones from Afghanistan amid border firing - India Today",
       "category": "general",
       "confidence": "low",
       "reportCount": 2,
@@ -53,66 +69,50 @@
         "google_news_afghanistan_security"
       ],
       "breaking": true,
-      "firstSeen": "2026-09-23T09:23:49Z",
-      "lastSeen": "2026-09-23T10:33:00Z"
+      "firstSeen": "2026-09-23T12:58:34Z",
+      "lastSeen": "2026-09-23T12:58:34Z"
     },
     {
-      "id": "6b12851bb9d821ef",
-      "title": "Israeli officials warn of risk of escalation in the Middle East — Jerusalem Post - UA.NEWS",
+      "id": "d4032f4cad0427a7",
+      "title": "Relations with Ukraine - North Atlantic Treaty Organization | NATO",
+      "category": "diplomatic",
+      "confidence": "low",
+      "reportCount": 5,
+      "independentSourceCount": 1,
+      "sources": [
+        "North Atlantic Treaty Organization | NATO"
+      ],
+      "breaking": false,
+      "firstSeen": "Thu, 09 Jul 2026 07:00:00 GMT",
+      "lastSeen": "Tue, 11 Nov 2025 08:00:00 GMT"
+    },
+    {
+      "id": "9dbe1492b2c609c1",
+      "title": "Statement of condemnation by the North Atlantic Council of Russia's malicious cyber activities - North Atlantic Treaty Organization | NATO",
+      "category": "diplomatic",
+      "confidence": "low",
+      "reportCount": 4,
+      "independentSourceCount": 1,
+      "sources": [
+        "North Atlantic Treaty Organization | NATO"
+      ],
+      "breaking": false,
+      "firstSeen": "Fri, 18 Jul 2025 07:00:00 GMT",
+      "lastSeen": "Tue, 23 Sep 2025 07:00:00 GMT"
+    },
+    {
+      "id": "7e25ab364b4dcc3b",
+      "title": "Explanation of Vote Before the Vote for UNGA 80 Adoption on the Resolution to “Correct the Map” - United States Mission to the United Nations (.gov)",
       "category": "general",
       "confidence": "low",
       "reportCount": 2,
       "independentSourceCount": 1,
       "sources": [
-        "google_news_iran_israel"
-      ],
-      "breaking": true,
-      "firstSeen": "2026-09-23T08:00:21Z",
-      "lastSeen": "2026-09-23T09:15:03Z"
-    },
-    {
-      "id": "395493fbf934adbb",
-      "title": "Statement of condemnation by the North Atlantic Council of Russia's malicious cyber activities - nato.int",
-      "category": "diplomatic",
-      "confidence": "low",
-      "reportCount": 3,
-      "independentSourceCount": 1,
-      "sources": [
-        "nato.int"
+        "United States Mission to the United Nations (.gov)"
       ],
       "breaking": false,
-      "firstSeen": "Mon, 13 Jul 2026 07:00:00 GMT",
-      "lastSeen": "Tue, 23 Sep 2025 07:00:00 GMT"
-    },
-    {
-      "id": "7f3dbed96cc42bb0",
-      "title": "US Tells Americans to Rethink Middle East Travel Amid Tensions - thetraveler.org",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 3,
-      "independentSourceCount": 2,
-      "sources": [
-        "google_news_middle_east_security",
-        "google_news_iran_israel"
-      ],
-      "breaking": false,
-      "firstSeen": "2026-09-23T10:05:28Z",
-      "lastSeen": "2026-09-23T10:16:24Z"
-    },
-    {
-      "id": "95ba9a35f01351f5",
-      "title": "China's purges of top military commanders spur questions about war-waging ability - The Standard (HK)",
-      "category": "conflict",
-      "confidence": "low",
-      "reportCount": 3,
-      "independentSourceCount": 2,
-      "sources": [
-        "china_taiwan",
-        "china_security"
-      ],
-      "breaking": false,
-      "firstSeen": "2026-09-23T08:00:14Z",
-      "lastSeen": "2026-09-23T09:25:12Z"
+      "firstSeen": "Fri, 04 Sep 2026 07:00:00 GMT",
+      "lastSeen": "Wed, 25 Mar 2026 07:00:00 GMT"
     },
     {
       "id": "fcd2c34449d21a25",
@@ -130,20 +130,6 @@
       "lastSeen": "Tue, 30 Jun 2026 07:00:00 GMT"
     },
     {
-      "id": "70e1ed6d04ecdc71",
-      "title": "Statement by the North Atlantic Council on Russia's attack on Ukraine - nato.int",
-      "category": "conflict",
-      "confidence": "low",
-      "reportCount": 2,
-      "independentSourceCount": 1,
-      "sources": [
-        "nato.int"
-      ],
-      "breaking": false,
-      "firstSeen": "Thu, 16 Dec 2021 08:00:00 GMT",
-      "lastSeen": "Thu, 24 Feb 2022 08:00:00 GMT"
-    },
-    {
       "id": "d280bc33a695d8f5",
       "title": "Cyprus: Guterres calls for renewed trust and a new meeting on the way forward - UN News",
       "category": "general",
@@ -156,6 +142,20 @@
       "breaking": false,
       "firstSeen": "Wed, 29 Jul 2026 07:00:00 GMT",
       "lastSeen": "Wed, 29 Jul 2026 07:00:00 GMT"
+    },
+    {
+      "id": "a7a1318844ff6e6b",
+      "title": "Crackdown Chief to Leave Minneapolis as White House Distances Trump From Uproar - The New York Times",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "independentSourceCount": 1,
+      "sources": [
+        "The New York Times"
+      ],
+      "breaking": false,
+      "firstSeen": "Wed, 28 Jan 2026 08:00:00 GMT",
+      "lastSeen": "Wed, 28 Jan 2026 08:00:00 GMT"
     }
   ],
   "watchlist": [
