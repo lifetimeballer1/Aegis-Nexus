@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-25T13:40:20.597295Z",
+  "updatedAt": "2026-09-25T18:06:08.316412Z",
   "window": "recent public reporting",
   "method": "anchor-aware title clustering with category and publication-time agreement; candidate grouping only, not proof reports describe identical facts",
   "events": [
@@ -235,6 +235,77 @@
       ]
     },
     {
+      "id": "ffb2ffec88b8f241",
+      "title": "US seeks to revive trilateral talks to end Russia-Ukraine war - Saudi Gazette",
+      "category": "diplomatic",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "sourceCount": 2,
+      "sources": [
+        "news.google.com",
+        "aljazeera.com"
+      ],
+      "anchors": [
+        "russia",
+        "uk",
+        "ukraine"
+      ],
+      "firstSeen": "2026-09-25T12:09:14Z",
+      "lastSeen": "2026-09-25T14:02:00Z",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMirwFBVV95cUxPVlQ1UGM3ZGh4N0xBT2htTTZIaHE3MlgzWkZzUndZUnFibENHWDRPOXBrSHBwR2g1YTN5Z1U5NnBjTDBpVk5qTkM5eDRWcDk4Y1NZd2J6SmhLNGQwQU55clB0UVVPOWF6XzVSa1pCbWVjNldsNjlYWm9sZEZlcG91X3Jyd0d5MjYwZ05iWTNtT3k4U3E2OTdHeWFybTdSaURSMlIzSkxhbjFDbE11TjZv?oc=5",
+        "https://www.aljazeera.com/news/2026/9/25/us-seeking-to-revive-russia-ukraine-ceasefire-talks?traffic_source=rss"
+      ],
+      "reports": [
+        {
+          "id": "f0527332e4cd",
+          "sourceLabel": "Google News — Iran Israel",
+          "sourceName": "Google News — Iran Israel",
+          "sourceType": "middle-east-conflict",
+          "title": "US seeks to revive trilateral talks to end Russia-Ukraine war - Saudi Gazette",
+          "summary": "US seeks to revive trilateral talks to end Russia-Ukraine war Saudi Gazette",
+          "summary_snippet": "US seeks to revive trilateral talks to end Russia-Ukraine war Saudi Gazette",
+          "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPVlQ1UGM3ZGh4N0xBT2htTTZIaHE3MlgzWkZzUndZUnFibENHWDRPOXBrSHBwR2g1YTN5Z1U5NnBjTDBpVk5qTkM5eDRWcDk4Y1NZd2J6SmhLNGQwQU55clB0UVVPOWF6XzVSa1pCbWVjNldsNjlYWm9sZEZlcG91X3Jyd0d5MjYwZ05iWTNtT3k4U3E2OTdHeWFybTdSaURSMlIzSkxhbjFDbE11TjZv?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPVlQ1UGM3ZGh4N0xBT2htTTZIaHE3MlgzWkZzUndZUnFibENHWDRPOXBrSHBwR2g1YTN5Z1U5NnBjTDBpVk5qTkM5eDRWcDk4Y1NZd2J6SmhLNGQwQU55clB0UVVPOWF6XzVSa1pCbWVjNldsNjlYWm9sZEZlcG91X3Jyd0d5MjYwZ05iWTNtT3k4U3E2OTdHeWFybTdSaURSMlIzSkxhbjFDbE11TjZv?oc=5",
+          "time": "2026-09-25T14:02:00Z",
+          "published_date": "2026-09-25T14:02:00Z",
+          "publishedDate": "2026-09-25T14:02:00Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_iran_israel",
+            "sourceUrl": "https://news.google.com/rss/search?q=Iran+Israel+conflict+missile+drone+strike+escalation+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "b918a98cb0f6",
+          "sourceLabel": "https://www.aljazeera.com/news/2026/9/25/us-seeking-to-revive-russia-ukraine-ceasefire-talks?traffic_source=rss",
+          "sourceName": "https://www.aljazeera.com/news/2026/9/25/us-seeking-to-revive-russia-ukraine-ceasefire-talks?traffic_source=rss",
+          "sourceType": "international",
+          "title": "US seeking to revive Russia-Ukraine ceasefire talks",
+          "summary": "Ukraine's president added that eight regions have come under attack by Russian forces since the start of the day.",
+          "summary_snippet": "Ukraine's president added that eight regions have come under attack by Russian forces since the start of the day.",
+          "source": "https://www.aljazeera.com/news/2026/9/25/us-seeking-to-revive-russia-ukraine-ceasefire-talks?traffic_source=rss",
+          "url": "https://www.aljazeera.com/news/2026/9/25/us-seeking-to-revive-russia-ukraine-ceasefire-talks?traffic_source=rss",
+          "time": "2026-09-25T12:09:14Z",
+          "published_date": "2026-09-25T12:09:14Z",
+          "publishedDate": "2026-09-25T12:09:14Z",
+          "tag": "Breaking",
+          "confidence": "DEVELOPING",
+          "breaking": true,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "al_jazeera",
+            "sourceUrl": "https://www.aljazeera.com/xml/rss/all.xml",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
       "id": "27eedb2106c09acf",
       "title": "What’s in Iran’s seven-day plan to reopen the Strait of Hormuz?",
       "category": "general",
@@ -258,8 +329,8 @@
       "reports": [
         {
           "id": "d8783c802e54",
-          "sourceLabel": "Al Jazeera",
-          "sourceName": "Al Jazeera",
+          "sourceLabel": "https://www.aljazeera.com/news/2026/9/25/whats-in-irans-seven-day-plan-to-reopen-the-strait-of-hormuz?traffic_source=rss",
+          "sourceName": "https://www.aljazeera.com/news/2026/9/25/whats-in-irans-seven-day-plan-to-reopen-the-strait-of-hormuz?traffic_source=rss",
           "sourceType": "international",
           "title": "What’s in Iran’s seven-day plan to reopen the Strait of Hormuz?",
           "summary": "Tehran’s offer comes as high fuel prices put pressure on Trump ahead of the US midterm elections.",
@@ -281,8 +352,8 @@
         },
         {
           "id": "0a639ed20b66",
-          "sourceLabel": "Google News — South Asia Security",
-          "sourceName": "Google News — South Asia Security",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPWUh0QlgySVBUajFaWFp1VU84UktWN2s0d2xIdXoxNVlSenVVTWljbE5ibHotekN5SkdnWFMtSEJBTXhHeVUtWHVuVkl4ZzlSc2l0aExPS1pvYUw1N1V6SklkZm9FNk43aVhCcDZ6Umo3WklvSDBSR3EtRC0zcWdGamxXOU1ESXdXeVRrdFNqdTA1NDBHOHZ2d0VZekJyd2lfVDNFdTg0Q0pTVmttb2VzS1FPaThSOUpYTkVYNGh2dw?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPWUh0QlgySVBUajFaWFp1VU84UktWN2s0d2xIdXoxNVlSenVVTWljbE5ibHotekN5SkdnWFMtSEJBTXhHeVUtWHVuVkl4ZzlSc2l0aExPS1pvYUw1N1V6SklkZm9FNk43aVhCcDZ6Umo3WklvSDBSR3EtRC0zcWdGamxXOU1ESXdXeVRrdFNqdTA1NDBHOHZ2d0VZekJyd2lfVDNFdTg0Q0pTVmttb2VzS1FPaThSOUpYTkVYNGh2dw?oc=5",
           "sourceType": "south-asia",
           "title": "Iran proposes seven-day plan to reopen strait of hormuz in US talks - Business Upturn",
           "summary": "Iran proposes seven-day plan to reopen strait of hormuz in US talks Business Upturn",
@@ -299,274 +370,6 @@
           "credit": {
             "sourceId": "google_news_south_asia_security",
             "sourceUrl": "https://news.google.com/rss/search?q=India+Pakistan+Afghanistan+Bangladesh+Nepal+Sri+Lanka+conflict+security+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "63943633e8ee1c6e",
-      "title": "Years after storms, clean-up crews meticulously separate the sentimental from the wreckage",
-      "category": "general",
-      "confidence": "moderate",
-      "reportCount": 2,
-      "sourceCount": 2,
-      "sources": [
-        "npr.org",
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "2026-09-25T09:00:00Z",
-      "lastSeen": "2026-09-25T09:00:00Z",
-      "urls": [
-        "https://www.npr.org/2026/09/25/nx-s1-5844641/hurricane-debris-north-carolina-texas-flood",
-        "https://news.google.com/rss/articles/CBMikgFBVV95cUxNR3p5dk9uMVhUUjBXUC1zcnR4X0tWWU9qSXN1LXRZUlFXVlkyWlRNVjFwV3FTVkQ5cU1nYmpwRjFFTlFhNUhtSG5fUTN2OEUyakF0TlBfX21mOUk4dTdNUXRvM1J2UVN4YkpkemdJNEg2blhJVG9WV1NlVjZJZ0dDT2RxQXkzM0J2ZzFqYzRYdlNZdw?oc=5"
-      ],
-      "reports": [
-        {
-          "id": "ab2855f61b5d",
-          "sourceLabel": "NPR News",
-          "sourceName": "NPR News",
-          "sourceType": "us-politics",
-          "title": "Years after storms, clean-up crews meticulously separate the sentimental from the wreckage",
-          "summary": "Across the country, lost-and-found networks seek to reunite objects with disaster survivors. The work can take years. In some cases, it's impossible to pick up all the pieces.",
-          "summary_snippet": "Across the country, lost-and-found networks seek to reunite objects with disaster survivors. The work can take years. In some cases, it's impossible to pick up all the pieces.",
-          "source": "https://www.npr.org/2026/09/25/nx-s1-5844641/hurricane-debris-north-carolina-texas-flood",
-          "url": "https://www.npr.org/2026/09/25/nx-s1-5844641/hurricane-debris-north-carolina-texas-flood",
-          "time": "2026-09-25T09:00:00Z",
-          "published_date": "2026-09-25T09:00:00Z",
-          "publishedDate": "2026-09-25T09:00:00Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "npr_news",
-            "sourceUrl": "https://feeds.npr.org/1001/rss.xml",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "67ff5ec569f7",
-          "sourceLabel": "Google News — Climate & Disaster",
-          "sourceName": "Google News — Climate & Disaster",
-          "sourceType": "climate-hazard",
-          "title": "Years after storms, clean-up crews meticulously separate the sentimental from the wreckage - NPR",
-          "summary": "Years after storms, clean-up crews meticulously separate the sentimental from the wreckage NPR",
-          "summary_snippet": "Years after storms, clean-up crews meticulously separate the sentimental from the wreckage NPR",
-          "source": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNR3p5dk9uMVhUUjBXUC1zcnR4X0tWWU9qSXN1LXRZUlFXVlkyWlRNVjFwV3FTVkQ5cU1nYmpwRjFFTlFhNUhtSG5fUTN2OEUyakF0TlBfX21mOUk4dTdNUXRvM1J2UVN4YkpkemdJNEg2blhJVG9WV1NlVjZJZ0dDT2RxQXkzM0J2ZzFqYzRYdlNZdw?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNR3p5dk9uMVhUUjBXUC1zcnR4X0tWWU9qSXN1LXRZUlFXVlkyWlRNVjFwV3FTVkQ5cU1nYmpwRjFFTlFhNUhtSG5fUTN2OEUyakF0TlBfX21mOUk4dTdNUXRvM1J2UVN4YkpkemdJNEg2blhJVG9WV1NlVjZJZ0dDT2RxQXkzM0J2ZzFqYzRYdlNZdw?oc=5",
-          "time": "2026-09-25T09:00:00Z",
-          "published_date": "2026-09-25T09:00:00Z",
-          "publishedDate": "2026-09-25T09:00:00Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_climate_disaster",
-            "sourceUrl": "https://news.google.com/rss/search?q=flood+wildfire+hurricane+disaster+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "a18a396fc50faf5a",
-      "title": "Saudi Arabia allies line up support as Houthi attacks mount - Al Jazeera",
-      "category": "general",
-      "confidence": "moderate",
-      "reportCount": 2,
-      "sourceCount": 2,
-      "sources": [
-        "news.google.com",
-        "aljazeera.com"
-      ],
-      "anchors": [],
-      "firstSeen": "2026-09-25T08:32:48Z",
-      "lastSeen": "2026-09-25T08:42:34Z",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiogFBVV95cUxOU0JQNHBkcVluNkc0ZGM3RktERzltMnJIcHJydGpLdHlOUFEwWmhVYkQ2RXo4LXFlWmVvSlcwclV3N1ZWSlRmRFpwcTRyaDJBYjlEWmFJOGF0T0NqTnFacjd5cmRyVnNBNUk4U2xzQ2RhbWNnY3VlY1RUTTREX3JuSVZYQzBmQzJ5TW9QWnFnMnhOdmRleTRBUlpodlZvUF9JMVHSAacBQVVfeXFMT0RTUnMzT3NsXy1SRl90cmNtcS1WRVQyeUtMNjdwaXdSbTFSdVNBNVZiemtFckgwX1JLTm8xekpMZ2J4Sjg2MmlGTTJXYThYLVhROTBOVFBqZzlWWFE1b1ZTQnZhal80X2Z0ZmE5STBhMzdfVTRlTFk1djRlUC14OFJ6X005VjY1LTFNd1pIcWIyZXJYU0pvQW5wdEYwVjRvTTdmX2NZOE0?oc=5",
-        "https://www.aljazeera.com/news/2026/9/25/saudi-arabia-allies-line-up-support-as-houthi-attacks-mount?traffic_source=rss"
-      ],
-      "reports": [
-        {
-          "id": "a42c2f0aee51",
-          "sourceLabel": "Google News — Yemen / Red Sea",
-          "sourceName": "Google News — Yemen / Red Sea",
-          "sourceType": "middle-east-conflict",
-          "title": "Saudi Arabia allies line up support as Houthi attacks mount - Al Jazeera",
-          "summary": "Saudi Arabia allies line up support as Houthi attacks mount Al Jazeera",
-          "summary_snippet": "Saudi Arabia allies line up support as Houthi attacks mount Al Jazeera",
-          "source": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOU0JQNHBkcVluNkc0ZGM3RktERzltMnJIcHJydGpLdHlOUFEwWmhVYkQ2RXo4LXFlWmVvSlcwclV3N1ZWSlRmRFpwcTRyaDJBYjlEWmFJOGF0T0NqTnFacjd5cmRyVnNBNUk4U2xzQ2RhbWNnY3VlY1RUTTREX3JuSVZYQzBmQzJ5TW9QWnFnMnhOdmRleTRBUlpodlZvUF9JMVHSAacBQVVfeXFMT0RTUnMzT3NsXy1SRl90cmNtcS1WRVQyeUtMNjdwaXdSbTFSdVNBNVZiemtFckgwX1JLTm8xekpMZ2J4Sjg2MmlGTTJXYThYLVhROTBOVFBqZzlWWFE1b1ZTQnZhal80X2Z0ZmE5STBhMzdfVTRlTFk1djRlUC14OFJ6X005VjY1LTFNd1pIcWIyZXJYU0pvQW5wdEYwVjRvTTdmX2NZOE0?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOU0JQNHBkcVluNkc0ZGM3RktERzltMnJIcHJydGpLdHlOUFEwWmhVYkQ2RXo4LXFlWmVvSlcwclV3N1ZWSlRmRFpwcTRyaDJBYjlEWmFJOGF0T0NqTnFacjd5cmRyVnNBNUk4U2xzQ2RhbWNnY3VlY1RUTTREX3JuSVZYQzBmQzJ5TW9QWnFnMnhOdmRleTRBUlpodlZvUF9JMVHSAacBQVVfeXFMT0RTUnMzT3NsXy1SRl90cmNtcS1WRVQyeUtMNjdwaXdSbTFSdVNBNVZiemtFckgwX1JLTm8xekpMZ2J4Sjg2MmlGTTJXYThYLVhROTBOVFBqZzlWWFE1b1ZTQnZhal80X2Z0ZmE5STBhMzdfVTRlTFk1djRlUC14OFJ6X005VjY1LTFNd1pIcWIyZXJYU0pvQW5wdEYwVjRvTTdmX2NZOE0?oc=5",
-          "time": "2026-09-25T08:42:34Z",
-          "published_date": "2026-09-25T08:42:34Z",
-          "publishedDate": "2026-09-25T08:42:34Z",
-          "tag": "Breaking",
-          "confidence": "DEVELOPING",
-          "breaking": true,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_yemen_red_sea",
-            "sourceUrl": "https://news.google.com/rss/search?q=Yemen+Houthis+Red+Sea+shipping+missile+drone+conflict+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "044ac3ab2d1c",
-          "sourceLabel": "Al Jazeera",
-          "sourceName": "Al Jazeera",
-          "sourceType": "international",
-          "title": "Saudi Arabia allies line up support as Houthi attacks mount",
-          "summary": "France is sending military to protect key Yanbu oil terminal; Pakistan and Turkiye to hold military talks with Riyadh.",
-          "summary_snippet": "France is sending military to protect key Yanbu oil terminal; Pakistan and Turkiye to hold military talks with Riyadh.",
-          "source": "https://www.aljazeera.com/news/2026/9/25/saudi-arabia-allies-line-up-support-as-houthi-attacks-mount?traffic_source=rss",
-          "url": "https://www.aljazeera.com/news/2026/9/25/saudi-arabia-allies-line-up-support-as-houthi-attacks-mount?traffic_source=rss",
-          "time": "2026-09-25T08:32:48Z",
-          "published_date": "2026-09-25T08:32:48Z",
-          "publishedDate": "2026-09-25T08:32:48Z",
-          "tag": "Breaking",
-          "confidence": "DEVELOPING",
-          "breaking": true,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "al_jazeera",
-            "sourceUrl": "https://www.aljazeera.com/xml/rss/all.xml",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "7aa331828c4d559e",
-      "title": "Pakistani forces kill Afghan Taliban fighters in border escalation - Al Jazeera",
-      "category": "general",
-      "confidence": "moderate",
-      "reportCount": 2,
-      "sourceCount": 2,
-      "sources": [
-        "news.google.com",
-        "aljazeera.com"
-      ],
-      "anchors": [],
-      "firstSeen": "2026-09-25T04:22:10Z",
-      "lastSeen": "2026-09-25T04:24:28Z",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSTc0ZVdVTTVMY3JEMmJDZW5zbkhYYmU4R2x0SFRlb01qd0ZNR3VDdEJfZDlYQnBJR0ZxX3RNUVRUd1M3T1Q5M2hkMVpLX1NSTnR5LTJpUmNXOHhZdERFOERDRTFwVnBiZkJNT2xSWmV6aFdKLXdKS2doalR5MUcwU3RfdjJVb3hXR0pSZl8xX1YtRFpqMW56WExTUmlRRXZZNFBUaFdMN1plNzjSAbABQVVfeXFMTTZSTjdqMDYzNUdnMllnd3hjeWp6RFFCWXB5V1dTeHBMRndpN2U3LWxmNEJLUjBnRE9idjByVW9XcHFoSldQQWRLalVFS3RHa3VDTWdMMXRVaF9Hd1VUZ0dNMHJ5VHBuMGJRSEllbmpBQ3F6TkZKVnJQb1hiNEczQ01GTVFUT0VNMG5HeGpNeXBYc2RIcXJVM185ZjFJR2hXbW1mSFNVX1VvSVRDMFh2V1U?oc=5",
-        "https://www.aljazeera.com/news/2026/9/25/pakistani-forces-kill-afghan-taliban-fighters-in-border-escalation?traffic_source=rss"
-      ],
-      "reports": [
-        {
-          "id": "97141d11efeb",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSTc0ZVdVTTVMY3JEMmJDZW5zbkhYYmU4R2x0SFRlb01qd0ZNR3VDdEJfZDlYQnBJR0ZxX3RNUVRUd1M3T1Q5M2hkMVpLX1NSTnR5LTJpUmNXOHhZdERFOERDRTFwVnBiZkJNT2xSWmV6aFdKLXdKS2doalR5MUcwU3RfdjJVb3hXR0pSZl8xX1YtRFpqMW56WExTUmlRRXZZNFBUaFdMN1plNzjSAbABQVVfeXFMTTZSTjdqMDYzNUdnMllnd3hjeWp6RFFCWXB5V1dTeHBMRndpN2U3LWxmNEJLUjBnRE9idjByVW9XcHFoSldQQWRLalVFS3RHa3VDTWdMMXRVaF9Hd1VUZ0dNMHJ5VHBuMGJRSEllbmpBQ3F6TkZKVnJQb1hiNEczQ01GTVFUT0VNMG5HeGpNeXBYc2RIcXJVM185ZjFJR2hXbW1mSFNVX1VvSVRDMFh2V1U?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSTc0ZVdVTTVMY3JEMmJDZW5zbkhYYmU4R2x0SFRlb01qd0ZNR3VDdEJfZDlYQnBJR0ZxX3RNUVRUd1M3T1Q5M2hkMVpLX1NSTnR5LTJpUmNXOHhZdERFOERDRTFwVnBiZkJNT2xSWmV6aFdKLXdKS2doalR5MUcwU3RfdjJVb3hXR0pSZl8xX1YtRFpqMW56WExTUmlRRXZZNFBUaFdMN1plNzjSAbABQVVfeXFMTTZSTjdqMDYzNUdnMllnd3hjeWp6RFFCWXB5V1dTeHBMRndpN2U3LWxmNEJLUjBnRE9idjByVW9XcHFoSldQQWRLalVFS3RHa3VDTWdMMXRVaF9Hd1VUZ0dNMHJ5VHBuMGJRSEllbmpBQ3F6TkZKVnJQb1hiNEczQ01GTVFUT0VNMG5HeGpNeXBYc2RIcXJVM185ZjFJR2hXbW1mSFNVX1VvSVRDMFh2V1U?oc=5",
-          "sourceType": "south-asia-conflict",
-          "title": "Pakistani forces kill Afghan Taliban fighters in border escalation - Al Jazeera",
-          "summary": "Pakistani forces kill Afghan Taliban fighters in border escalation Al Jazeera",
-          "summary_snippet": "Pakistani forces kill Afghan Taliban fighters in border escalation Al Jazeera",
-          "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSTc0ZVdVTTVMY3JEMmJDZW5zbkhYYmU4R2x0SFRlb01qd0ZNR3VDdEJfZDlYQnBJR0ZxX3RNUVRUd1M3T1Q5M2hkMVpLX1NSTnR5LTJpUmNXOHhZdERFOERDRTFwVnBiZkJNT2xSWmV6aFdKLXdKS2doalR5MUcwU3RfdjJVb3hXR0pSZl8xX1YtRFpqMW56WExTUmlRRXZZNFBUaFdMN1plNzjSAbABQVVfeXFMTTZSTjdqMDYzNUdnMllnd3hjeWp6RFFCWXB5V1dTeHBMRndpN2U3LWxmNEJLUjBnRE9idjByVW9XcHFoSldQQWRLalVFS3RHa3VDTWdMMXRVaF9Hd1VUZ0dNMHJ5VHBuMGJRSEllbmpBQ3F6TkZKVnJQb1hiNEczQ01GTVFUT0VNMG5HeGpNeXBYc2RIcXJVM185ZjFJR2hXbW1mSFNVX1VvSVRDMFh2V1U?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSTc0ZVdVTTVMY3JEMmJDZW5zbkhYYmU4R2x0SFRlb01qd0ZNR3VDdEJfZDlYQnBJR0ZxX3RNUVRUd1M3T1Q5M2hkMVpLX1NSTnR5LTJpUmNXOHhZdERFOERDRTFwVnBiZkJNT2xSWmV6aFdKLXdKS2doalR5MUcwU3RfdjJVb3hXR0pSZl8xX1YtRFpqMW56WExTUmlRRXZZNFBUaFdMN1plNzjSAbABQVVfeXFMTTZSTjdqMDYzNUdnMllnd3hjeWp6RFFCWXB5V1dTeHBMRndpN2U3LWxmNEJLUjBnRE9idjByVW9XcHFoSldQQWRLalVFS3RHa3VDTWdMMXRVaF9Hd1VUZ0dNMHJ5VHBuMGJRSEllbmpBQ3F6TkZKVnJQb1hiNEczQ01GTVFUT0VNMG5HeGpNeXBYc2RIcXJVM185ZjFJR2hXbW1mSFNVX1VvSVRDMFh2V1U?oc=5",
-          "time": "2026-09-25T04:24:28Z",
-          "published_date": "2026-09-25T04:24:28Z",
-          "publishedDate": "2026-09-25T04:24:28Z",
-          "tag": "Breaking",
-          "confidence": "DEVELOPING",
-          "breaking": true,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_afghanistan_security",
-            "sourceUrl": "https://news.google.com/rss/search?q=Afghanistan+Taliban+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "c9047b7c6c6f",
-          "sourceLabel": "https://www.aljazeera.com/news/2026/9/25/pakistani-forces-kill-afghan-taliban-fighters-in-border-escalation?traffic_source=rss",
-          "sourceName": "https://www.aljazeera.com/news/2026/9/25/pakistani-forces-kill-afghan-taliban-fighters-in-border-escalation?traffic_source=rss",
-          "sourceType": "international",
-          "title": "Pakistani forces kill Afghan Taliban fighters in border escalation",
-          "summary": "Pakistan's security forces report ongoing cross-border fire in latest fighting with Afghanistan.",
-          "summary_snippet": "Pakistan's security forces report ongoing cross-border fire in latest fighting with Afghanistan.",
-          "source": "https://www.aljazeera.com/news/2026/9/25/pakistani-forces-kill-afghan-taliban-fighters-in-border-escalation?traffic_source=rss",
-          "url": "https://www.aljazeera.com/news/2026/9/25/pakistani-forces-kill-afghan-taliban-fighters-in-border-escalation?traffic_source=rss",
-          "time": "2026-09-25T04:22:10Z",
-          "published_date": "2026-09-25T04:22:10Z",
-          "publishedDate": "2026-09-25T04:22:10Z",
-          "tag": "Breaking",
-          "confidence": "DEVELOPING",
-          "breaking": true,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "al_jazeera",
-            "sourceUrl": "https://www.aljazeera.com/xml/rss/all.xml",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "f6f403e3d13bd1a4",
-      "title": "Saudi Arabia intercepts wave of Houthi missiles as oil climbs to one-week high",
-      "category": "general",
-      "confidence": "moderate",
-      "reportCount": 2,
-      "sourceCount": 2,
-      "sources": [
-        "theguardian.com",
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "2026-09-25T02:54:00Z",
-      "lastSeen": "2026-09-25T02:54:27Z",
-      "urls": [
-        "https://www.theguardian.com/world/2026/sep/25/saudi-arabia-intercepts-houthi-missiles-oil-prices-climbs",
-        "https://news.google.com/rss/articles/CBMipgFBVV95cUxON0MwRGdjN1NtYkFaMVhhdktMMEtrb0hMUHdmeU1QeTVqZGpqcHlZVkZiVTZ1Yk4xY0ZQMktfem5iTGpsY3FPS0hqZDNkbV9iMHNIVW1ZVk1yOWtiVEtWTkRreXRUTkRMYjE1NThLT0s1cTVIWUlJSGpUdWJpZE5EcEQ3SlJtcjdXV1ByNWFaMlJOeS0ydThQNWJFU1o5TTZIYk1tempn?oc=5"
-      ],
-      "reports": [
-        {
-          "id": "c8a1e1e423c0",
-          "sourceLabel": "https://www.theguardian.com/world/2026/sep/25/saudi-arabia-intercepts-houthi-missiles-oil-prices-climbs",
-          "sourceName": "https://www.theguardian.com/world/2026/sep/25/saudi-arabia-intercepts-houthi-missiles-oil-prices-climbs",
-          "sourceType": "international",
-          "title": "Saudi Arabia intercepts wave of Houthi missiles as oil climbs to one-week high",
-          "summary": "The ⁠Saudi-led coalition in Yemen said the missiles were ⁠aimed at Taif and the Yanbu area on the Red Sea, the main alternative route for Saudi oil Saudi Arabia says it intercepted six ballistic missiles fired by Yemen’s Iran-backed Houthis, with the latest attacks pushing oil prices ⁠to a one-week high over fears of spiralling supply disruptions. The ⁠Saudi-led coalition in Yemen said the missiles were ⁠aimed at Tai",
-          "summary_snippet": "The ⁠Saudi-led coalition in Yemen said the missiles were ⁠aimed at Taif and the Yanbu area on the Red Sea, the main alternative route for Saudi oil Saudi Arabia says it intercepted six ballistic missiles fired by Yemen’s Iran-backed Houthis, with the latest attacks pushing oil prices ⁠to a one-week high over fears of spiralling supply disruptions. The ⁠Saudi-led coalition in Yemen said the missiles were ⁠aimed at Tai",
-          "source": "https://www.theguardian.com/world/2026/sep/25/saudi-arabia-intercepts-houthi-missiles-oil-prices-climbs",
-          "url": "https://www.theguardian.com/world/2026/sep/25/saudi-arabia-intercepts-houthi-missiles-oil-prices-climbs",
-          "time": "2026-09-25T02:54:27Z",
-          "published_date": "2026-09-25T02:54:27Z",
-          "publishedDate": "2026-09-25T02:54:27Z",
-          "tag": "Breaking",
-          "confidence": "DEVELOPING",
-          "breaking": true,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "guardian_world",
-            "sourceUrl": "https://www.theguardian.com/world/rss",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "40115f69eae5",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMipgFBVV95cUxON0MwRGdjN1NtYkFaMVhhdktMMEtrb0hMUHdmeU1QeTVqZGpqcHlZVkZiVTZ1Yk4xY0ZQMktfem5iTGpsY3FPS0hqZDNkbV9iMHNIVW1ZVk1yOWtiVEtWTkRreXRUTkRMYjE1NThLT0s1cTVIWUlJSGpUdWJpZE5EcEQ3SlJtcjdXV1ByNWFaMlJOeS0ydThQNWJFU1o5TTZIYk1tempn?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMipgFBVV95cUxON0MwRGdjN1NtYkFaMVhhdktMMEtrb0hMUHdmeU1QeTVqZGpqcHlZVkZiVTZ1Yk4xY0ZQMktfem5iTGpsY3FPS0hqZDNkbV9iMHNIVW1ZVk1yOWtiVEtWTkRreXRUTkRMYjE1NThLT0s1cTVIWUlJSGpUdWJpZE5EcEQ3SlJtcjdXV1ByNWFaMlJOeS0ydThQNWJFU1o5TTZIYk1tempn?oc=5",
-          "sourceType": "middle-east-conflict",
-          "title": "Saudi Arabia intercepts wave of Houthi missiles as oil climbs to one-week high - theguardian.com",
-          "summary": "Saudi Arabia intercepts wave of Houthi missiles as oil climbs to one-week high theguardian.com",
-          "summary_snippet": "Saudi Arabia intercepts wave of Houthi missiles as oil climbs to one-week high theguardian.com",
-          "source": "https://news.google.com/rss/articles/CBMipgFBVV95cUxON0MwRGdjN1NtYkFaMVhhdktMMEtrb0hMUHdmeU1QeTVqZGpqcHlZVkZiVTZ1Yk4xY0ZQMktfem5iTGpsY3FPS0hqZDNkbV9iMHNIVW1ZVk1yOWtiVEtWTkRreXRUTkRMYjE1NThLT0s1cTVIWUlJSGpUdWJpZE5EcEQ3SlJtcjdXV1ByNWFaMlJOeS0ydThQNWJFU1o5TTZIYk1tempn?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxON0MwRGdjN1NtYkFaMVhhdktMMEtrb0hMUHdmeU1QeTVqZGpqcHlZVkZiVTZ1Yk4xY0ZQMktfem5iTGpsY3FPS0hqZDNkbV9iMHNIVW1ZVk1yOWtiVEtWTkRreXRUTkRMYjE1NThLT0s1cTVIWUlJSGpUdWJpZE5EcEQ3SlJtcjdXV1ByNWFaMlJOeS0ydThQNWJFU1o5TTZIYk1tempn?oc=5",
-          "time": "2026-09-25T02:54:00Z",
-          "published_date": "2026-09-25T02:54:00Z",
-          "publishedDate": "2026-09-25T02:54:00Z",
-          "tag": "Breaking",
-          "confidence": "DEVELOPING",
-          "breaking": true,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_yemen_red_sea",
-            "sourceUrl": "https://news.google.com/rss/search?q=Yemen+Houthis+Red+Sea+shipping+missile+drone+conflict+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
         }
@@ -669,9 +472,78 @@
       ]
     },
     {
-      "id": "451ee679e5ccab27",
-      "title": "US Israel Iran War Latest News: Will Turkey and Pakistan Support Saudi Arabia as Houthi Attacks Intensify? Why Are Military Chiefs Planning Urgent Talks? - The Sunday Guardian",
-      "category": "conflict",
+      "id": "bd2be21946c1d508",
+      "title": "Israeli shelling continues as Lebanon’s PM demands withdrawal in UN speech",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 2,
+      "sourceCount": 1,
+      "sources": [
+        "aljazeera.com"
+      ],
+      "anchors": [
+        "israel",
+        "lebanon"
+      ],
+      "firstSeen": "2026-09-25T15:07:48Z",
+      "lastSeen": "2026-09-25T16:57:39Z",
+      "urls": [
+        "https://www.aljazeera.com/news/2026/9/25/israeli-shelling-continues-as-lebanons-pm-demands-withdrawal-in-un-speech?traffic_source=rss",
+        "https://www.aljazeera.com/video/newsfeed/2026/9/25/lebanon-pm-calls-for-full-israeli-withdrawal-in-un-address?traffic_source=rss"
+      ],
+      "reports": [
+        {
+          "id": "70476e3090cb",
+          "sourceLabel": "Al Jazeera",
+          "sourceName": "Al Jazeera",
+          "sourceType": "international",
+          "title": "Israeli shelling continues as Lebanon’s PM demands withdrawal in UN speech",
+          "summary": "Lebanese Prime Minister Nawaf Salam wants a US-brokered ceasefire to be consolidated and for Israel to retreat.",
+          "summary_snippet": "Lebanese Prime Minister Nawaf Salam wants a US-brokered ceasefire to be consolidated and for Israel to retreat.",
+          "source": "https://www.aljazeera.com/news/2026/9/25/israeli-shelling-continues-as-lebanons-pm-demands-withdrawal-in-un-speech?traffic_source=rss",
+          "url": "https://www.aljazeera.com/news/2026/9/25/israeli-shelling-continues-as-lebanons-pm-demands-withdrawal-in-un-speech?traffic_source=rss",
+          "time": "2026-09-25T16:57:39Z",
+          "published_date": "2026-09-25T16:57:39Z",
+          "publishedDate": "2026-09-25T16:57:39Z",
+          "tag": "Breaking",
+          "confidence": "DEVELOPING",
+          "breaking": true,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "al_jazeera",
+            "sourceUrl": "https://www.aljazeera.com/xml/rss/all.xml",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "3fdcd08bbad3",
+          "sourceLabel": "Al Jazeera",
+          "sourceName": "Al Jazeera",
+          "sourceType": "international",
+          "title": "Lebanon PM calls for full Israeli withdrawal in UN address",
+          "summary": "Lebanon’s Prime Minister Nawaf Salam told the UN that his country will not be an ‘arena for the conflicts of others’.",
+          "summary_snippet": "Lebanon’s Prime Minister Nawaf Salam told the UN that his country will not be an ‘arena for the conflicts of others’.",
+          "source": "https://www.aljazeera.com/video/newsfeed/2026/9/25/lebanon-pm-calls-for-full-israeli-withdrawal-in-un-address?traffic_source=rss",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/25/lebanon-pm-calls-for-full-israeli-withdrawal-in-un-address?traffic_source=rss",
+          "time": "2026-09-25T15:07:48Z",
+          "published_date": "2026-09-25T15:07:48Z",
+          "publishedDate": "2026-09-25T15:07:48Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "al_jazeera",
+            "sourceUrl": "https://www.aljazeera.com/xml/rss/all.xml",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
+      "id": "6a23f10e9884ff57",
+      "title": "Xi calls for U.S. to ‘oppose’ Taiwan independence as Trump hails China as WWII ally - The Japan Times",
+      "category": "general",
       "confidence": "low",
       "reportCount": 2,
       "sourceCount": 1,
@@ -679,257 +551,57 @@
         "news.google.com"
       ],
       "anchors": [
-        "iran",
-        "israel"
+        "china",
+        "taiwan"
       ],
-      "firstSeen": "2026-09-25T07:34:38Z",
-      "lastSeen": "2026-09-25T11:26:52Z",
+      "firstSeen": "2026-09-25T12:00:06Z",
+      "lastSeen": "2026-09-25T13:17:47Z",
       "urls": [
-        "https://news.google.com/rss/articles/CBMioAJBVV95cUxNZzc1eUI1WEowRU1jZ0FPUzVUeXpnTnVJaDNvYktWWFFid3IxTG1WLVBWcGp5N2tjcHJYOG5sNklqdVozQk5hbG0yZGxPdXphQy1ELXlUWGI4ZElpX3ZKeEwxVzhlTUl2X1l0NU9Ub21OU2tiYVlRamptbGs1N0hZUWtqY3FVcThfRXNrUGNaWkdMb2ZjeDhkdWJVazlLSlRtQ19YSklMZHpyUW0yWUFmU082Vk5HSjU1Qzg4a2pxdExXTmpCWnctbTB3RHVSWkdJVG5oOGFUWk4xWVljYktEQTVqSGM5b2VPOExGdngzVkNMN2QzekRoNkJVc2VoYnY1dmJLdjZEbHE2SnhlamlNbFJLS0o0bmR5TmNqdERibVfSAaYCQVVfeXFMTVlNLUpUQVBiaTI5aDRvWVNrdTVhNTJSWjV1N0E0N2k0SW9oWmhxejR2NnNRRkZtWWhCZExiV3VlTlJTcmRYWHplLVdBS1hZMUlLLVFNMDBmQVlGWjlqNTJGbEQ1VmNnZ0lYU0lIRll1ckRsakp6cHVjRXU5cndPV1FDaEk0c1FHbWNSZmo0U0hpaWFkWFp4anNYTFNmMFlFbkMxRWFaUkpWUW1kYmdkcVktNHNJNkg3ZHYyVV84dzU5eEdxajdGRnR0SnVnNHVwVFVjQmZoSU1qMll0Z25jZ3hobThGZE1xTFFuTkZENldrZUg5UEZYSERicDJFaVZtRmJVRV91QzVNcURranM4ZHg1d2V3QVh4LWlVYTVHV1ZKaEVma3VR?oc=5",
-        "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPa1JSNFh0Y1QycldSS3FqV2x4X1o5cWxaUVA0a3ltTlNUVUJJaVhWYm9lMko3MmNFV1VfbXRGSVBfUXBwa2hEQWlFeE1oOWVyc0wzSzZreThySTFqazlDc1Q4VWpQaTVhNHY3M2FHQTU5T0JYNW83RGV6OXhUMkxwdGlfenpOS1FhMXo2aThWSm1SMnFEZnhQUVFyeXdhT1FzREZTZ3JTdlZVYnNURHFaT3AwT0pzdEZoOC0ybGd2U3RtVmdUbWRqaVA4NzRhSkhlUUx3OGpFM0xTTlhVUTVIdktVNkw1dGsxdEU0d1FqT2lfUTNJcjFURmUwSEFQUExUV0R3R2hDRXM1cUnSAYsCQVVfeXFMT2tSUjRYdGNUMnJXUktxaldseF9aOXFsWlFQNGt5bU5TVFVCSWlYVmJvZTJKNzJjRVdVX210RklQX1FwcGtoREFpRXhNaDllcnNMM0s2a3k4ckkxams5Q3NUOFVqUGk1YTR2NzNhR0E1OU9CWDVvN0Rlejl4VDJMcHRpX3p6TktRYTF6Nmk4VkptUjJxRGZ4UFFRcnl3YU9Rc0RGU2dyU3ZWVWJzVERxWk9wME9Kc3RGaDgtMmxndlN0bVZnVG1kamlQODc0YUpIZVFMdzhqRTNMU05YVVE1SHZLVTZMNXRrMXRFNHdRak9pX1EzSXIxVEZlMEhBUFBMVFdEd0doQ0VzNXFJ?oc=5"
+        "https://news.google.com/rss/articles/CBMinAFBVV95cUxNYlJQQmQzYkgxYjlpd21QUEc4UWtzSU9WU2RtdFFUWUVNS2ttZWYwRUNSQmliRE9zS0JZZ1liNHhvN1R2SEhBb050UVZLQjIxR1h4SkgxYkkwNzdHaXdVbGs4S1daUEhOM2RsYVRYV0RWMWJpRWF5TTlsUXl4UFk1QXBNRlV1QUFfZkZ1WFYwb1M4UXFFYzJsWkwyQjQ?oc=5",
+        "https://news.google.com/rss/articles/CBMitgFBVV95cUxPT01LbkRIQy1CU3NXRG5ZY1YzZnA5Y3V0eVIyTEhYV056cWYwOFYzZmdqOUE1Z1I0bTdlOF9tNlhFYUNlMUo1WDRYSVo3NkpBQllNdUc3LWNoV3VjMlVUNDBpX0VNQ0VNVHR2a09GalNVSTlCb09hV2YyRkV0Q19HSDk5U3YtMVl3eU0yMnR6QUJCcGFWRjVsNmlqb3JrYTZtNnI4am9jeWk4b1BSWVM4WjhVcllxQdIBtgFBVV95cUxPT01LbkRIQy1CU3NXRG5ZY1YzZnA5Y3V0eVIyTEhYV056cWYwOFYzZmdqOUE1Z1I0bTdlOF9tNlhFYUNlMUo1WDRYSVo3NkpBQllNdUc3LWNoV3VjMlVUNDBpX0VNQ0VNVHR2a09GalNVSTlCb09hV2YyRkV0Q19HSDk5U3YtMVl3eU0yMnR6QUJCcGFWRjVsNmlqb3JrYTZtNnI4am9jeWk4b1BSWVM4WjhVcllxQQ?oc=5"
       ],
       "reports": [
         {
-          "id": "5e43bf6e46ab",
-          "sourceLabel": "Google News — Iran Israel",
-          "sourceName": "Google News — Iran Israel",
-          "sourceType": "middle-east-conflict",
-          "title": "US Israel Iran War Latest News: Will Turkey and Pakistan Support Saudi Arabia as Houthi Attacks Intensify? Why Are Military Chiefs Planning Urgent Talks? - The Sunday Guardian",
-          "summary": "US Israel Iran War Latest News: Will Turkey and Pakistan Support Saudi Arabia as Houthi Attacks Intensify? Why Are Military Chiefs Planning Urgent Talks? The Sunday Guardian",
-          "summary_snippet": "US Israel Iran War Latest News: Will Turkey and Pakistan Support Saudi Arabia as Houthi Attacks Intensify? Why Are Military Chiefs Planning Urgent Talks? The Sunday Guardian",
-          "source": "https://news.google.com/rss/articles/CBMioAJBVV95cUxNZzc1eUI1WEowRU1jZ0FPUzVUeXpnTnVJaDNvYktWWFFid3IxTG1WLVBWcGp5N2tjcHJYOG5sNklqdVozQk5hbG0yZGxPdXphQy1ELXlUWGI4ZElpX3ZKeEwxVzhlTUl2X1l0NU9Ub21OU2tiYVlRamptbGs1N0hZUWtqY3FVcThfRXNrUGNaWkdMb2ZjeDhkdWJVazlLSlRtQ19YSklMZHpyUW0yWUFmU082Vk5HSjU1Qzg4a2pxdExXTmpCWnctbTB3RHVSWkdJVG5oOGFUWk4xWVljYktEQTVqSGM5b2VPOExGdngzVkNMN2QzekRoNkJVc2VoYnY1dmJLdjZEbHE2SnhlamlNbFJLS0o0bmR5TmNqdERibVfSAaYCQVVfeXFMTVlNLUpUQVBiaTI5aDRvWVNrdTVhNTJSWjV1N0E0N2k0SW9oWmhxejR2NnNRRkZtWWhCZExiV3VlTlJTcmRYWHplLVdBS1hZMUlLLVFNMDBmQVlGWjlqNTJGbEQ1VmNnZ0lYU0lIRll1ckRsakp6cHVjRXU5cndPV1FDaEk0c1FHbWNSZmo0U0hpaWFkWFp4anNYTFNmMFlFbkMxRWFaUkpWUW1kYmdkcVktNHNJNkg3ZHYyVV84dzU5eEdxajdGRnR0SnVnNHVwVFVjQmZoSU1qMll0Z25jZ3hobThGZE1xTFFuTkZENldrZUg5UEZYSERicDJFaVZtRmJVRV91QzVNcURranM4ZHg1d2V3QVh4LWlVYTVHV1ZKaEVma3VR?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxNZzc1eUI1WEowRU1jZ0FPUzVUeXpnTnVJaDNvYktWWFFid3IxTG1WLVBWcGp5N2tjcHJYOG5sNklqdVozQk5hbG0yZGxPdXphQy1ELXlUWGI4ZElpX3ZKeEwxVzhlTUl2X1l0NU9Ub21OU2tiYVlRamptbGs1N0hZUWtqY3FVcThfRXNrUGNaWkdMb2ZjeDhkdWJVazlLSlRtQ19YSklMZHpyUW0yWUFmU082Vk5HSjU1Qzg4a2pxdExXTmpCWnctbTB3RHVSWkdJVG5oOGFUWk4xWVljYktEQTVqSGM5b2VPOExGdngzVkNMN2QzekRoNkJVc2VoYnY1dmJLdjZEbHE2SnhlamlNbFJLS0o0bmR5TmNqdERibVfSAaYCQVVfeXFMTVlNLUpUQVBiaTI5aDRvWVNrdTVhNTJSWjV1N0E0N2k0SW9oWmhxejR2NnNRRkZtWWhCZExiV3VlTlJTcmRYWHplLVdBS1hZMUlLLVFNMDBmQVlGWjlqNTJGbEQ1VmNnZ0lYU0lIRll1ckRsakp6cHVjRXU5cndPV1FDaEk0c1FHbWNSZmo0U0hpaWFkWFp4anNYTFNmMFlFbkMxRWFaUkpWUW1kYmdkcVktNHNJNkg3ZHYyVV84dzU5eEdxajdGRnR0SnVnNHVwVFVjQmZoSU1qMll0Z25jZ3hobThGZE1xTFFuTkZENldrZUg5UEZYSERicDJFaVZtRmJVRV91QzVNcURranM4ZHg1d2V3QVh4LWlVYTVHV1ZKaEVma3VR?oc=5",
-          "time": "2026-09-25T11:26:52Z",
-          "published_date": "2026-09-25T11:26:52Z",
-          "publishedDate": "2026-09-25T11:26:52Z",
-          "tag": "Breaking",
+          "title": "Xi calls for U.S. to ‘oppose’ Taiwan independence as Trump hails China as WWII ally - The Japan Times",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNYlJQQmQzYkgxYjlpd21QUEc4UWtzSU9WU2RtdFFUWUVNS2ttZWYwRUNSQmliRE9zS0JZZ1liNHhvN1R2SEhBb050UVZLQjIxR1h4SkgxYkkwNzdHaXdVbGs4S1daUEhOM2RsYVRYV0RWMWJpRWF5TTlsUXl4UFk1QXBNRlV1QUFfZkZ1WFYwb1M4UXFFYzJsWkwyQjQ?oc=5",
+          "published_date": "2026-09-25T13:17:47Z",
+          "time": "2026-09-25T13:17:47Z",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: The Japan Times",
+          "summary": "Fallback discovery via Google News RSS; publisher: The Japan Times",
+          "source": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNYlJQQmQzYkgxYjlpd21QUEc4UWtzSU9WU2RtdFFUWUVNS2ttZWYwRUNSQmliRE9zS0JZZ1liNHhvN1R2SEhBb050UVZLQjIxR1h4SkgxYkkwNzdHaXdVbGs4S1daUEhOM2RsYVRYV0RWMWJpRWF5TTlsUXl4UFk1QXBNRlV1QUFfZkZ1WFYwb1M4UXFFYzJsWkwyQjQ?oc=5",
+          "sourceLabel": "The Japan Times",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @POTUS",
+          "credit_metadata": "Google News RSS fallback",
+          "id": "c0d59911f4af",
+          "sourceName": "The Japan Times",
+          "publishedDate": "2026-09-25T13:17:47Z",
+          "tag": "World",
           "confidence": "DEVELOPING",
-          "breaking": true,
+          "breaking": false,
           "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_iran_israel",
-            "sourceUrl": "https://news.google.com/rss/search?q=Iran+Israel+conflict+missile+drone+strike+escalation+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
+          "credit": "Google News RSS fallback"
         },
         {
-          "id": "93ec878784fc",
-          "sourceLabel": "Google News — Yemen / Red Sea",
-          "sourceName": "Google News — Yemen / Red Sea",
-          "sourceType": "middle-east-conflict",
-          "title": "US Israel Iran War Latest News: Saudi Grand Mufti Urges Troops to ‘Lay Down Their Lives’ as Houthi Attacks Escalate; What Happens Next? - The Sunday Guardian",
-          "summary": "US Israel Iran War Latest News: Saudi Grand Mufti Urges Troops to ‘Lay Down Their Lives’ as Houthi Attacks Escalate; What Happens Next? The Sunday Guardian",
-          "summary_snippet": "US Israel Iran War Latest News: Saudi Grand Mufti Urges Troops to ‘Lay Down Their Lives’ as Houthi Attacks Escalate; What Happens Next? The Sunday Guardian",
-          "source": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPa1JSNFh0Y1QycldSS3FqV2x4X1o5cWxaUVA0a3ltTlNUVUJJaVhWYm9lMko3MmNFV1VfbXRGSVBfUXBwa2hEQWlFeE1oOWVyc0wzSzZreThySTFqazlDc1Q4VWpQaTVhNHY3M2FHQTU5T0JYNW83RGV6OXhUMkxwdGlfenpOS1FhMXo2aThWSm1SMnFEZnhQUVFyeXdhT1FzREZTZ3JTdlZVYnNURHFaT3AwT0pzdEZoOC0ybGd2U3RtVmdUbWRqaVA4NzRhSkhlUUx3OGpFM0xTTlhVUTVIdktVNkw1dGsxdEU0d1FqT2lfUTNJcjFURmUwSEFQUExUV0R3R2hDRXM1cUnSAYsCQVVfeXFMT2tSUjRYdGNUMnJXUktxaldseF9aOXFsWlFQNGt5bU5TVFVCSWlYVmJvZTJKNzJjRVdVX210RklQX1FwcGtoREFpRXhNaDllcnNMM0s2a3k4ckkxams5Q3NUOFVqUGk1YTR2NzNhR0E1OU9CWDVvN0Rlejl4VDJMcHRpX3p6TktRYTF6Nmk4VkptUjJxRGZ4UFFRcnl3YU9Rc0RGU2dyU3ZWVWJzVERxWk9wME9Kc3RGaDgtMmxndlN0bVZnVG1kamlQODc0YUpIZVFMdzhqRTNMU05YVVE1SHZLVTZMNXRrMXRFNHdRak9pX1EzSXIxVEZlMEhBUFBMVFdEd0doQ0VzNXFJ?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPa1JSNFh0Y1QycldSS3FqV2x4X1o5cWxaUVA0a3ltTlNUVUJJaVhWYm9lMko3MmNFV1VfbXRGSVBfUXBwa2hEQWlFeE1oOWVyc0wzSzZreThySTFqazlDc1Q4VWpQaTVhNHY3M2FHQTU5T0JYNW83RGV6OXhUMkxwdGlfenpOS1FhMXo2aThWSm1SMnFEZnhQUVFyeXdhT1FzREZTZ3JTdlZVYnNURHFaT3AwT0pzdEZoOC0ybGd2U3RtVmdUbWRqaVA4NzRhSkhlUUx3OGpFM0xTTlhVUTVIdktVNkw1dGsxdEU0d1FqT2lfUTNJcjFURmUwSEFQUExUV0R3R2hDRXM1cUnSAYsCQVVfeXFMT2tSUjRYdGNUMnJXUktxaldseF9aOXFsWlFQNGt5bU5TVFVCSWlYVmJvZTJKNzJjRVdVX210RklQX1FwcGtoREFpRXhNaDllcnNMM0s2a3k4ckkxams5Q3NUOFVqUGk1YTR2NzNhR0E1OU9CWDVvN0Rlejl4VDJMcHRpX3p6TktRYTF6Nmk4VkptUjJxRGZ4UFFRcnl3YU9Rc0RGU2dyU3ZWVWJzVERxWk9wME9Kc3RGaDgtMmxndlN0bVZnVG1kamlQODc0YUpIZVFMdzhqRTNMU05YVVE1SHZLVTZMNXRrMXRFNHdRak9pX1EzSXIxVEZlMEhBUFBMVFdEd0doQ0VzNXFJ?oc=5",
-          "time": "2026-09-25T07:34:38Z",
-          "published_date": "2026-09-25T07:34:38Z",
-          "publishedDate": "2026-09-25T07:34:38Z",
-          "tag": "Breaking",
-          "confidence": "DEVELOPING",
-          "breaking": true,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_yemen_red_sea",
-            "sourceUrl": "https://news.google.com/rss/search?q=Yemen+Houthis+Red+Sea+shipping+missile+drone+conflict+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "f89c070ba5e3e542",
-      "title": "Pakistani forces kill several Afghan Taliban fighters in border clash amid escalating tensions - thehindu.com",
-      "category": "conflict",
-      "confidence": "low",
-      "reportCount": 2,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "2026-09-25T06:56:25Z",
-      "lastSeen": "2026-09-25T06:57:05Z",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNNjlmb0hEUmZkNEFkWl8zajlJS1YwcFh5SE5IN0otZzQzdDc3Q29tLWNZX0lFVzMycVFWZ0hDYm1mRUFhcnBIaG5KbWdDTHhnNXE5SzRoOVBhRVp6Mk04SXMxbklqS19TQjZ0MjQ3OWpVVkpLeEZLdFRpdHI3SklEQ1RtUGdfRXNpSVdoc0FtOGhkN05sLXZxT2JEb3VEUF92a3ppSnZPTjA3djU0QzlMSXBrMDRHMUlHY2JZelA2cV9WV2tFQWhHa3N4bU5UTV9GcmsyNUJkRFJsVXQ0RHdvTUNORUdaaEdjVGt3ejlMRdIB9gFBVV95cUxQdUpJeVRqSW5wTkg0MG1BWmdVYmwtY2VNRmdjZXR6YzNWc3Rwb05kZzhQa0dFVFNZNFJMWHBhLWhkVmxfMkdiQ2tVT2FEc3hzYllCUUYyLWVuU0RIcno4ZFRIMnA1VmhKT0N6YXFvMFA5RlB5MEppQmg0OEFvaUJ0MlJzbllDVFhvZzRjMEhmeV9jNlhrSDB6VENIS3Q5blpvUW5aM3N0UzM2Z1VOWEVxcDVnZmJuVDg0Ti1EWkNYNFZaUW1HeHZMRFRwc2Q1VXZER2dtOXgzd1NIX1lEMVA2bHFlck92SUlqWVEwY1NUdVNtSURLeXc?oc=5",
-        "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPX29lNVdFRmRUQjl1LW9vem1LM1p0ajN5OHBkV1QyaW5heGE2YXdZWXRUcDcyTHpHYlp1YWdCdTEyVG5fc0ZVU2NOaEY3dDctZ05iREVHRUtHdS1nTEc1NHJ1VXh0OTE0Q1ozSF94RlNvcmNfbE5pam9hOTU3c25SNnRqNG9FUTRtanB3RUZ6WllibWdLMDVhY1RvMDhLbi1oV2pvSUJiTE5MRl9RV1h5emxmblZXSkdRM2dZaVpUUmVSaXRhZklXNV9LenQzR0EwQ3cwQl9ZdXp5MlRRTGc?oc=5"
-      ],
-      "reports": [
-        {
-          "id": "e9485e9cfb04",
-          "sourceLabel": "Google News — Afghanistan Security",
-          "sourceName": "Google News — Afghanistan Security",
-          "sourceType": "south-asia-conflict",
-          "title": "Pakistani forces kill several Afghan Taliban fighters in border clash amid escalating tensions - thehindu.com",
-          "summary": "Pakistani forces kill several Afghan Taliban fighters in border clash amid escalating tensions thehindu.com",
-          "summary_snippet": "Pakistani forces kill several Afghan Taliban fighters in border clash amid escalating tensions thehindu.com",
-          "source": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNNjlmb0hEUmZkNEFkWl8zajlJS1YwcFh5SE5IN0otZzQzdDc3Q29tLWNZX0lFVzMycVFWZ0hDYm1mRUFhcnBIaG5KbWdDTHhnNXE5SzRoOVBhRVp6Mk04SXMxbklqS19TQjZ0MjQ3OWpVVkpLeEZLdFRpdHI3SklEQ1RtUGdfRXNpSVdoc0FtOGhkN05sLXZxT2JEb3VEUF92a3ppSnZPTjA3djU0QzlMSXBrMDRHMUlHY2JZelA2cV9WV2tFQWhHa3N4bU5UTV9GcmsyNUJkRFJsVXQ0RHdvTUNORUdaaEdjVGt3ejlMRdIB9gFBVV95cUxQdUpJeVRqSW5wTkg0MG1BWmdVYmwtY2VNRmdjZXR6YzNWc3Rwb05kZzhQa0dFVFNZNFJMWHBhLWhkVmxfMkdiQ2tVT2FEc3hzYllCUUYyLWVuU0RIcno4ZFRIMnA1VmhKT0N6YXFvMFA5RlB5MEppQmg0OEFvaUJ0MlJzbllDVFhvZzRjMEhmeV9jNlhrSDB6VENIS3Q5blpvUW5aM3N0UzM2Z1VOWEVxcDVnZmJuVDg0Ti1EWkNYNFZaUW1HeHZMRFRwc2Q1VXZER2dtOXgzd1NIX1lEMVA2bHFlck92SUlqWVEwY1NUdVNtSURLeXc?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNNjlmb0hEUmZkNEFkWl8zajlJS1YwcFh5SE5IN0otZzQzdDc3Q29tLWNZX0lFVzMycVFWZ0hDYm1mRUFhcnBIaG5KbWdDTHhnNXE5SzRoOVBhRVp6Mk04SXMxbklqS19TQjZ0MjQ3OWpVVkpLeEZLdFRpdHI3SklEQ1RtUGdfRXNpSVdoc0FtOGhkN05sLXZxT2JEb3VEUF92a3ppSnZPTjA3djU0QzlMSXBrMDRHMUlHY2JZelA2cV9WV2tFQWhHa3N4bU5UTV9GcmsyNUJkRFJsVXQ0RHdvTUNORUdaaEdjVGt3ejlMRdIB9gFBVV95cUxQdUpJeVRqSW5wTkg0MG1BWmdVYmwtY2VNRmdjZXR6YzNWc3Rwb05kZzhQa0dFVFNZNFJMWHBhLWhkVmxfMkdiQ2tVT2FEc3hzYllCUUYyLWVuU0RIcno4ZFRIMnA1VmhKT0N6YXFvMFA5RlB5MEppQmg0OEFvaUJ0MlJzbllDVFhvZzRjMEhmeV9jNlhrSDB6VENIS3Q5blpvUW5aM3N0UzM2Z1VOWEVxcDVnZmJuVDg0Ti1EWkNYNFZaUW1HeHZMRFRwc2Q1VXZER2dtOXgzd1NIX1lEMVA2bHFlck92SUlqWVEwY1NUdVNtSURLeXc?oc=5",
-          "time": "2026-09-25T06:57:05Z",
-          "published_date": "2026-09-25T06:57:05Z",
-          "publishedDate": "2026-09-25T06:57:05Z",
-          "tag": "Breaking",
-          "confidence": "DEVELOPING",
-          "breaking": true,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_afghanistan_security",
-            "sourceUrl": "https://news.google.com/rss/search?q=Afghanistan+Taliban+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "33568b78ecb8",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPX29lNVdFRmRUQjl1LW9vem1LM1p0ajN5OHBkV1QyaW5heGE2YXdZWXRUcDcyTHpHYlp1YWdCdTEyVG5fc0ZVU2NOaEY3dDctZ05iREVHRUtHdS1nTEc1NHJ1VXh0OTE0Q1ozSF94RlNvcmNfbE5pam9hOTU3c25SNnRqNG9FUTRtanB3RUZ6WllibWdLMDVhY1RvMDhLbi1oV2pvSUJiTE5MRl9RV1h5emxmblZXSkdRM2dZaVpUUmVSaXRhZklXNV9LenQzR0EwQ3cwQl9ZdXp5MlRRTGc?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPX29lNVdFRmRUQjl1LW9vem1LM1p0ajN5OHBkV1QyaW5heGE2YXdZWXRUcDcyTHpHYlp1YWdCdTEyVG5fc0ZVU2NOaEY3dDctZ05iREVHRUtHdS1nTEc1NHJ1VXh0OTE0Q1ozSF94RlNvcmNfbE5pam9hOTU3c25SNnRqNG9FUTRtanB3RUZ6WllibWdLMDVhY1RvMDhLbi1oV2pvSUJiTE5MRl9RV1h5emxmblZXSkdRM2dZaVpUUmVSaXRhZklXNV9LenQzR0EwQ3cwQl9ZdXp5MlRRTGc?oc=5",
-          "sourceType": "south-asia-conflict",
-          "title": "Pakistani forces kill several Afghan Taliban fighters in border clash amid escalating tensions - Udayavani",
-          "summary": "Pakistani forces kill several Afghan Taliban fighters in border clash amid escalating tensions Udayavani",
-          "summary_snippet": "Pakistani forces kill several Afghan Taliban fighters in border clash amid escalating tensions Udayavani",
-          "source": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPX29lNVdFRmRUQjl1LW9vem1LM1p0ajN5OHBkV1QyaW5heGE2YXdZWXRUcDcyTHpHYlp1YWdCdTEyVG5fc0ZVU2NOaEY3dDctZ05iREVHRUtHdS1nTEc1NHJ1VXh0OTE0Q1ozSF94RlNvcmNfbE5pam9hOTU3c25SNnRqNG9FUTRtanB3RUZ6WllibWdLMDVhY1RvMDhLbi1oV2pvSUJiTE5MRl9RV1h5emxmblZXSkdRM2dZaVpUUmVSaXRhZklXNV9LenQzR0EwQ3cwQl9ZdXp5MlRRTGc?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPX29lNVdFRmRUQjl1LW9vem1LM1p0ajN5OHBkV1QyaW5heGE2YXdZWXRUcDcyTHpHYlp1YWdCdTEyVG5fc0ZVU2NOaEY3dDctZ05iREVHRUtHdS1nTEc1NHJ1VXh0OTE0Q1ozSF94RlNvcmNfbE5pam9hOTU3c25SNnRqNG9FUTRtanB3RUZ6WllibWdLMDVhY1RvMDhLbi1oV2pvSUJiTE5MRl9RV1h5emxmblZXSkdRM2dZaVpUUmVSaXRhZklXNV9LenQzR0EwQ3cwQl9ZdXp5MlRRTGc?oc=5",
-          "time": "2026-09-25T06:56:25Z",
-          "published_date": "2026-09-25T06:56:25Z",
-          "publishedDate": "2026-09-25T06:56:25Z",
-          "tag": "Breaking",
-          "confidence": "DEVELOPING",
-          "breaking": true,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_afghanistan_security",
-            "sourceUrl": "https://news.google.com/rss/search?q=Afghanistan+Taliban+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "63a107794b71ed6b",
-      "title": "Pakistan Accused Of Airstrikes Targeting Afghan Refugees Near Border As Tensions Escalate - News18",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "2026-09-25T05:39:41Z",
-      "lastSeen": "2026-09-25T05:39:41Z",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPeDF4cldvTl95ZDJ1VFlZUUxPcXA0eUE1UXgwM1NUdHF5c1JDeGdJSjVyQjlxX3VCdVA3RDRoRW9nWDRGSV9VaGRoZ0w4WUxkVGd6OGdqb0Q0b0paOGw1WkdwOUNTRXhPLVlYTlNBcV9KM19KNTdYZTBOb2c5ejZ3VnRiUTM3c0d6ZXhZOTY5cTh4bjdGMHo2bUhNNFVONUtxaElaNURaOTBKNmRhalBwMUZXdGJUVTd6NEM2dWl3MDhaZHlTVFZ0NktoWUZnQTVIQkJBM0FQZUvSAdgBQVVfeXFMT3gxeHJXb05feWQydVRZWVFMT3FwNHlBNVF4MDNTVHRxeXNSQ3hnSUo1ckI5cV91QnVQN0Q0aEVvZ1g0RklfVWhkaGdMOFlMZFRnejhnam9ENG9KWjhsNVpHcDlDU0V4Ty1ZWE5TQXFfSjNfSjU3WGUwTm9nOXo2d1Z0YlEzN3NHemV4WTk2OXE4eG43RjB6Nm1ITTRVTjVLcWhJWjVEWjkwSjZkYWpQcDFGV3RiVFU3ejRDNnVpdzA4WmR5U1RWdDZLaFlGZ0E1SEJCQTNBUGVL?oc=5",
-        "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQU1FJZWpRRjY3YUx6VkY5Nm00VXZwYVBxQzVDazA1VHFJLTNiVHNZRWFwN1ZXOTkxWUs0aUE5ZXVpODJwS0VmeEZ2N0ZiN0laU1YwSVcycmdnczJPRFpydElBS3ZsaGhreXNJTGdzaXZudzBkblJFOUFZTGlVMHFuSHkyLXBWUGNGRzR1VDZxUzlNb05VYjctTkw0cnQtbl95M0FUUmR3TF9hdE00MDVQeXNjeWphMjFxdXoxWUNZRnFKTVJ1eEJ4czVUU0tsTEJkTk5n0gHYAUFVX3lxTE94MXhyV29OX3lkMnVUWVlRTE9xcDR5QTVReDAzU1R0cXlzUkN4Z0lKNXJCOXFfdUJ1UDdENGhFb2dYNEZJX1VoZGhnTDhZTGRUZ3o4Z2pvRDRvSlo4bDVaR3A5Q1NFeE8tWVhOU0FxX0ozX0o1N1hlME5vZzl6NndWdGJRMzdzR3pleFk5NjlxOHhuN0YwejZtSE00VU41S3FoSVo1RFo5MEo2ZGFqUHAxRld0YlRVN3o0QzZ1aXcwOFpkeVNUVnQ2S2hZRmdBNUhCQkEzQVBlSw?oc=5"
-      ],
-      "reports": [
-        {
-          "id": "4d4ceac0e4d4",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPeDF4cldvTl95ZDJ1VFlZUUxPcXA0eUE1UXgwM1NUdHF5c1JDeGdJSjVyQjlxX3VCdVA3RDRoRW9nWDRGSV9VaGRoZ0w4WUxkVGd6OGdqb0Q0b0paOGw1WkdwOUNTRXhPLVlYTlNBcV9KM19KNTdYZTBOb2c5ejZ3VnRiUTM3c0d6ZXhZOTY5cTh4bjdGMHo2bUhNNFVONUtxaElaNURaOTBKNmRhalBwMUZXdGJUVTd6NEM2dWl3MDhaZHlTVFZ0NktoWUZnQTVIQkJBM0FQZUvSAdgBQVVfeXFMT3gxeHJXb05feWQydVRZWVFMT3FwNHlBNVF4MDNTVHRxeXNSQ3hnSUo1ckI5cV91QnVQN0Q0aEVvZ1g0RklfVWhkaGdMOFlMZFRnejhnam9ENG9KWjhsNVpHcDlDU0V4Ty1ZWE5TQXFfSjNfSjU3WGUwTm9nOXo2d1Z0YlEzN3NHemV4WTk2OXE4eG43RjB6Nm1ITTRVTjVLcWhJWjVEWjkwSjZkYWpQcDFGV3RiVFU3ejRDNnVpdzA4WmR5U1RWdDZLaFlGZ0E1SEJCQTNBUGVL?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPeDF4cldvTl95ZDJ1VFlZUUxPcXA0eUE1UXgwM1NUdHF5c1JDeGdJSjVyQjlxX3VCdVA3RDRoRW9nWDRGSV9VaGRoZ0w4WUxkVGd6OGdqb0Q0b0paOGw1WkdwOUNTRXhPLVlYTlNBcV9KM19KNTdYZTBOb2c5ejZ3VnRiUTM3c0d6ZXhZOTY5cTh4bjdGMHo2bUhNNFVONUtxaElaNURaOTBKNmRhalBwMUZXdGJUVTd6NEM2dWl3MDhaZHlTVFZ0NktoWUZnQTVIQkJBM0FQZUvSAdgBQVVfeXFMT3gxeHJXb05feWQydVRZWVFMT3FwNHlBNVF4MDNTVHRxeXNSQ3hnSUo1ckI5cV91QnVQN0Q0aEVvZ1g0RklfVWhkaGdMOFlMZFRnejhnam9ENG9KWjhsNVpHcDlDU0V4Ty1ZWE5TQXFfSjNfSjU3WGUwTm9nOXo2d1Z0YlEzN3NHemV4WTk2OXE4eG43RjB6Nm1ITTRVTjVLcWhJWjVEWjkwSjZkYWpQcDFGV3RiVFU3ejRDNnVpdzA4WmR5U1RWdDZLaFlGZ0E1SEJCQTNBUGVL?oc=5",
-          "sourceType": "south-asia-conflict",
-          "title": "Pakistan Accused Of Airstrikes Targeting Afghan Refugees Near Border As Tensions Escalate - News18",
-          "summary": "Pakistan Accused Of Airstrikes Targeting Afghan Refugees Near Border As Tensions Escalate News18",
-          "summary_snippet": "Pakistan Accused Of Airstrikes Targeting Afghan Refugees Near Border As Tensions Escalate News18",
-          "source": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPeDF4cldvTl95ZDJ1VFlZUUxPcXA0eUE1UXgwM1NUdHF5c1JDeGdJSjVyQjlxX3VCdVA3RDRoRW9nWDRGSV9VaGRoZ0w4WUxkVGd6OGdqb0Q0b0paOGw1WkdwOUNTRXhPLVlYTlNBcV9KM19KNTdYZTBOb2c5ejZ3VnRiUTM3c0d6ZXhZOTY5cTh4bjdGMHo2bUhNNFVONUtxaElaNURaOTBKNmRhalBwMUZXdGJUVTd6NEM2dWl3MDhaZHlTVFZ0NktoWUZnQTVIQkJBM0FQZUvSAdgBQVVfeXFMT3gxeHJXb05feWQydVRZWVFMT3FwNHlBNVF4MDNTVHRxeXNSQ3hnSUo1ckI5cV91QnVQN0Q0aEVvZ1g0RklfVWhkaGdMOFlMZFRnejhnam9ENG9KWjhsNVpHcDlDU0V4Ty1ZWE5TQXFfSjNfSjU3WGUwTm9nOXo2d1Z0YlEzN3NHemV4WTk2OXE4eG43RjB6Nm1ITTRVTjVLcWhJWjVEWjkwSjZkYWpQcDFGV3RiVFU3ejRDNnVpdzA4WmR5U1RWdDZLaFlGZ0E1SEJCQTNBUGVL?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPeDF4cldvTl95ZDJ1VFlZUUxPcXA0eUE1UXgwM1NUdHF5c1JDeGdJSjVyQjlxX3VCdVA3RDRoRW9nWDRGSV9VaGRoZ0w4WUxkVGd6OGdqb0Q0b0paOGw1WkdwOUNTRXhPLVlYTlNBcV9KM19KNTdYZTBOb2c5ejZ3VnRiUTM3c0d6ZXhZOTY5cTh4bjdGMHo2bUhNNFVONUtxaElaNURaOTBKNmRhalBwMUZXdGJUVTd6NEM2dWl3MDhaZHlTVFZ0NktoWUZnQTVIQkJBM0FQZUvSAdgBQVVfeXFMT3gxeHJXb05feWQydVRZWVFMT3FwNHlBNVF4MDNTVHRxeXNSQ3hnSUo1ckI5cV91QnVQN0Q0aEVvZ1g0RklfVWhkaGdMOFlMZFRnejhnam9ENG9KWjhsNVpHcDlDU0V4Ty1ZWE5TQXFfSjNfSjU3WGUwTm9nOXo2d1Z0YlEzN3NHemV4WTk2OXE4eG43RjB6Nm1ITTRVTjVLcWhJWjVEWjkwSjZkYWpQcDFGV3RiVFU3ejRDNnVpdzA4WmR5U1RWdDZLaFlGZ0E1SEJCQTNBUGVL?oc=5",
-          "time": "2026-09-25T05:39:41Z",
-          "published_date": "2026-09-25T05:39:41Z",
-          "publishedDate": "2026-09-25T05:39:41Z",
-          "tag": "Breaking",
-          "confidence": "DEVELOPING",
-          "breaking": true,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_afghanistan_security",
-            "sourceUrl": "https://news.google.com/rss/search?q=Afghanistan+Taliban+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "76f8183cdb79",
-          "sourceLabel": "Google News — Afghanistan Security",
-          "sourceName": "Google News — Afghanistan Security",
-          "sourceType": "south-asia-conflict",
-          "title": "Pakistan Accused Of Airstrikes Targeting Afghan Refugees Near Border As Tensions Escalate - News18",
-          "summary": "Pakistan Accused Of Airstrikes Targeting Afghan Refugees Near Border As Tensions Escalate News18",
-          "summary_snippet": "Pakistan Accused Of Airstrikes Targeting Afghan Refugees Near Border As Tensions Escalate News18",
-          "source": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQU1FJZWpRRjY3YUx6VkY5Nm00VXZwYVBxQzVDazA1VHFJLTNiVHNZRWFwN1ZXOTkxWUs0aUE5ZXVpODJwS0VmeEZ2N0ZiN0laU1YwSVcycmdnczJPRFpydElBS3ZsaGhreXNJTGdzaXZudzBkblJFOUFZTGlVMHFuSHkyLXBWUGNGRzR1VDZxUzlNb05VYjctTkw0cnQtbl95M0FUUmR3TF9hdE00MDVQeXNjeWphMjFxdXoxWUNZRnFKTVJ1eEJ4czVUU0tsTEJkTk5n0gHYAUFVX3lxTE94MXhyV29OX3lkMnVUWVlRTE9xcDR5QTVReDAzU1R0cXlzUkN4Z0lKNXJCOXFfdUJ1UDdENGhFb2dYNEZJX1VoZGhnTDhZTGRUZ3o4Z2pvRDRvSlo4bDVaR3A5Q1NFeE8tWVhOU0FxX0ozX0o1N1hlME5vZzl6NndWdGJRMzdzR3pleFk5NjlxOHhuN0YwejZtSE00VU41S3FoSVo1RFo5MEo2ZGFqUHAxRld0YlRVN3o0QzZ1aXcwOFpkeVNUVnQ2S2hZRmdBNUhCQkEzQVBlSw?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQU1FJZWpRRjY3YUx6VkY5Nm00VXZwYVBxQzVDazA1VHFJLTNiVHNZRWFwN1ZXOTkxWUs0aUE5ZXVpODJwS0VmeEZ2N0ZiN0laU1YwSVcycmdnczJPRFpydElBS3ZsaGhreXNJTGdzaXZudzBkblJFOUFZTGlVMHFuSHkyLXBWUGNGRzR1VDZxUzlNb05VYjctTkw0cnQtbl95M0FUUmR3TF9hdE00MDVQeXNjeWphMjFxdXoxWUNZRnFKTVJ1eEJ4czVUU0tsTEJkTk5n0gHYAUFVX3lxTE94MXhyV29OX3lkMnVUWVlRTE9xcDR5QTVReDAzU1R0cXlzUkN4Z0lKNXJCOXFfdUJ1UDdENGhFb2dYNEZJX1VoZGhnTDhZTGRUZ3o4Z2pvRDRvSlo4bDVaR3A5Q1NFeE8tWVhOU0FxX0ozX0o1N1hlME5vZzl6NndWdGJRMzdzR3pleFk5NjlxOHhuN0YwejZtSE00VU41S3FoSVo1RFo5MEo2ZGFqUHAxRld0YlRVN3o0QzZ1aXcwOFpkeVNUVnQ2S2hZRmdBNUhCQkEzQVBlSw?oc=5",
-          "time": "2026-09-25T05:39:41Z",
-          "published_date": "2026-09-25T05:39:41Z",
-          "publishedDate": "2026-09-25T05:39:41Z",
-          "tag": "Breaking",
-          "confidence": "DEVELOPING",
-          "breaking": true,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_afghanistan_security",
-            "sourceUrl": "https://news.google.com/rss/search?q=Afghanistan+Taliban+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "d5a7069e5251d3de",
-      "title": "Essex biologist hopes to boost food security with maize research - BBC",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "2026-09-25T05:38:55Z",
-      "lastSeen": "2026-09-25T05:38:55Z",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5ya3kzSGdnVzdDMnh6Nk1MS1pmVEdBUDFGUUhkZXl6SnJRSTZuNmhBNlFubVE0NlF2Nk5BZWlRWnhVYmRWYmwzWm5ORmNPVlMxY2ZvZ05PTW1FRE1Ud1E?oc=5",
-        "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9nNEZ0ZmpsRnY5SkphNklfaHVGaWRFME95TU9DWnluNlh0SlRzajBDdndTeFE5NTA1d0c2MGhEOHRUZ2FiaF9UcUFqZnFkT256T0lORC1EZFVjbGs?oc=5"
-      ],
-      "reports": [
-        {
-          "id": "43ea465233f2",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5ya3kzSGdnVzdDMnh6Nk1MS1pmVEdBUDFGUUhkZXl6SnJRSTZuNmhBNlFubVE0NlF2Nk5BZWlRWnhVYmRWYmwzWm5ORmNPVlMxY2ZvZ05PTW1FRE1Ud1E?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5ya3kzSGdnVzdDMnh6Nk1MS1pmVEdBUDFGUUhkZXl6SnJRSTZuNmhBNlFubVE0NlF2Nk5BZWlRWnhVYmRWYmwzWm5ORmNPVlMxY2ZvZ05PTW1FRE1Ud1E?oc=5",
-          "sourceType": "climate-hazard",
-          "title": "Essex biologist hopes to boost food security with maize research - BBC",
-          "summary": "Essex biologist hopes to boost food security with maize research BBC",
-          "summary_snippet": "Essex biologist hopes to boost food security with maize research BBC",
-          "source": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5ya3kzSGdnVzdDMnh6Nk1MS1pmVEdBUDFGUUhkZXl6SnJRSTZuNmhBNlFubVE0NlF2Nk5BZWlRWnhVYmRWYmwzWm5ORmNPVlMxY2ZvZ05PTW1FRE1Ud1E?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5ya3kzSGdnVzdDMnh6Nk1MS1pmVEdBUDFGUUhkZXl6SnJRSTZuNmhBNlFubVE0NlF2Nk5BZWlRWnhVYmRWYmwzWm5ORmNPVlMxY2ZvZ05PTW1FRE1Ud1E?oc=5",
-          "time": "2026-09-25T05:38:55Z",
-          "published_date": "2026-09-25T05:38:55Z",
-          "publishedDate": "2026-09-25T05:38:55Z",
+          "id": "caccbdc2b8f7",
+          "sourceLabel": "Google News — China Security / PLA",
+          "sourceName": "Google News — China Security / PLA",
+          "sourceType": "china-security",
+          "title": "Xi presses Trump to take the next step on Taiwan: oppose independence - South China Morning Post",
+          "summary": "Xi presses Trump to take the next step on Taiwan: oppose independence South China Morning Post",
+          "summary_snippet": "Xi presses Trump to take the next step on Taiwan: oppose independence South China Morning Post",
+          "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPT01LbkRIQy1CU3NXRG5ZY1YzZnA5Y3V0eVIyTEhYV056cWYwOFYzZmdqOUE1Z1I0bTdlOF9tNlhFYUNlMUo1WDRYSVo3NkpBQllNdUc3LWNoV3VjMlVUNDBpX0VNQ0VNVHR2a09GalNVSTlCb09hV2YyRkV0Q19HSDk5U3YtMVl3eU0yMnR6QUJCcGFWRjVsNmlqb3JrYTZtNnI4am9jeWk4b1BSWVM4WjhVcllxQdIBtgFBVV95cUxPT01LbkRIQy1CU3NXRG5ZY1YzZnA5Y3V0eVIyTEhYV056cWYwOFYzZmdqOUE1Z1I0bTdlOF9tNlhFYUNlMUo1WDRYSVo3NkpBQllNdUc3LWNoV3VjMlVUNDBpX0VNQ0VNVHR2a09GalNVSTlCb09hV2YyRkV0Q19HSDk5U3YtMVl3eU0yMnR6QUJCcGFWRjVsNmlqb3JrYTZtNnI4am9jeWk4b1BSWVM4WjhVcllxQQ?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPT01LbkRIQy1CU3NXRG5ZY1YzZnA5Y3V0eVIyTEhYV056cWYwOFYzZmdqOUE1Z1I0bTdlOF9tNlhFYUNlMUo1WDRYSVo3NkpBQllNdUc3LWNoV3VjMlVUNDBpX0VNQ0VNVHR2a09GalNVSTlCb09hV2YyRkV0Q19HSDk5U3YtMVl3eU0yMnR6QUJCcGFWRjVsNmlqb3JrYTZtNnI4am9jeWk4b1BSWVM4WjhVcllxQdIBtgFBVV95cUxPT01LbkRIQy1CU3NXRG5ZY1YzZnA5Y3V0eVIyTEhYV056cWYwOFYzZmdqOUE1Z1I0bTdlOF9tNlhFYUNlMUo1WDRYSVo3NkpBQllNdUc3LWNoV3VjMlVUNDBpX0VNQ0VNVHR2a09GalNVSTlCb09hV2YyRkV0Q19HSDk5U3YtMVl3eU0yMnR6QUJCcGFWRjVsNmlqb3JrYTZtNnI4am9jeWk4b1BSWVM4WjhVcllxQQ?oc=5",
+          "time": "2026-09-25T12:00:06Z",
+          "published_date": "2026-09-25T12:00:06Z",
+          "publishedDate": "2026-09-25T12:00:06Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "google_news_climate_security",
-            "sourceUrl": "https://news.google.com/rss/search?q=climate+crisis+food+water+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "945ec4d05488",
-          "sourceLabel": "Google News — Climate Security",
-          "sourceName": "Google News — Climate Security",
-          "sourceType": "climate-hazard",
-          "title": "Essex biologist hopes to boost food security with maize research - BBC",
-          "summary": "Essex biologist hopes to boost food security with maize research BBC",
-          "summary_snippet": "Essex biologist hopes to boost food security with maize research BBC",
-          "source": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9nNEZ0ZmpsRnY5SkphNklfaHVGaWRFME95TU9DWnluNlh0SlRzajBDdndTeFE5NTA1d0c2MGhEOHRUZ2FiaF9UcUFqZnFkT256T0lORC1EZFVjbGs?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9nNEZ0ZmpsRnY5SkphNklfaHVGaWRFME95TU9DWnluNlh0SlRzajBDdndTeFE5NTA1d0c2MGhEOHRUZ2FiaF9UcUFqZnFkT256T0lORC1EZFVjbGs?oc=5",
-          "time": "2026-09-25T05:38:55Z",
-          "published_date": "2026-09-25T05:38:55Z",
-          "publishedDate": "2026-09-25T05:38:55Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_climate_security",
-            "sourceUrl": "https://news.google.com/rss/search?q=climate+crisis+food+water+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "sourceId": "china_security",
+            "sourceUrl": "https://news.google.com/rss/search?q=China+PLA+military+Taiwan+South+China+Sea+security+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
         }
@@ -968,8 +640,72 @@
       ]
     },
     {
-      "id": "e813bb6d8b8be7cc",
-      "title": "U.S. military attacks alleged drug-smuggling boat in Caribbean, killing 4 people - cbsnews.com",
+      "id": "c978ad10f15751ae",
+      "title": "4 Dead in SOUTHCOM Strike on Go-fast Vessel - USNI News",
+      "category": "conflict",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Wed, 26 Aug 2026 07:00:00 GMT",
+      "lastSeen": "Wed, 26 Aug 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiggFBVV95cUxQNDN0d0VPb1R0VTRrdXc3MGlKY1ZBc3FwYm5pSWlGUnJSMms2eTFqZG5CcjdkSVE1NFhPQ2RSRXI4VmdMQWtCRXlqTmZnRDliNnVudEZVaXgyT2YwZlMzYXU0WEF6eDl6WmZsU2NDLUE1SEM4TjdRaE9NcVRLejgzRl9R?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "4 Dead in SOUTHCOM Strike on Go-fast Vessel - USNI News",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQNDN0d0VPb1R0VTRrdXc3MGlKY1ZBc3FwYm5pSWlGUnJSMms2eTFqZG5CcjdkSVE1NFhPQ2RSRXI4VmdMQWtCRXlqTmZnRDliNnVudEZVaXgyT2YwZlMzYXU0WEF6eDl6WmZsU2NDLUE1SEM4TjdRaE9NcVRLejgzRl9R?oc=5",
+          "published_date": "Wed, 26 Aug 2026 07:00:00 GMT",
+          "time": "Wed, 26 Aug 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: USNI News",
+          "summary": "Fallback discovery via Google News RSS; publisher: USNI News",
+          "source": "USNI News",
+          "sourceLabel": "USNI News",
+          "sourceType": "fallback-news",
+          "fallbackFor": "SOUTHCOM Official Reporting — GDELT Mirror",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "9dbc58820cfb2ee1",
+      "title": "US Military Strike Kills 4 in Alleged Drug Trafficking Boat In Caribbean - NDTV",
+      "category": "conflict",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Wed, 26 Aug 2026 07:00:00 GMT",
+      "lastSeen": "Wed, 26 Aug 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiswFBVV95cUxPNjZMLVhOTEtZWWg1REdTYWRpeFgtUkFFeVk1SGxfd3llenVLTDNBcFJzTkxDZ2JyUU9JcjN6X2ItZGpobHdMc3liVkplT3NFM2Vrd3o5OUlIX0JpSHl2T3o5eC0tOWJuNy1MTldNa1F0dTQwUHcxaFhnRjZ4SU9jSlFSdkJ0S25zQmI0aDEtSFh5blVNaTc0MkdaOEZEV2NWV0o2T3ljWDdRNjROdUZJZDNEa9IBuwFBVV95cUxQbjdJdzRnVS1sVGs4WFlxRk92TnJyVWFXY1UybXFrMGFkbjdmejBjbktZY3dEMFJjTWFiVHRMRmtwcG1rV2w1MC1UTEF1X2ZfRHlNNG85YzJUSTU3MV9mRWhpZkdMdW11RldSWXpWN093Zm1sV0o2elllMW50UlhLNmdGVHRIaG1xZ3ZScnVndk5fMlpLMUFvMzFqc0hfVERJanFoRlBjN1JnZ2oxMV8zNUgwemhWOEc0a1Q0?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "US Military Strike Kills 4 in Alleged Drug Trafficking Boat In Caribbean - NDTV",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPNjZMLVhOTEtZWWg1REdTYWRpeFgtUkFFeVk1SGxfd3llenVLTDNBcFJzTkxDZ2JyUU9JcjN6X2ItZGpobHdMc3liVkplT3NFM2Vrd3o5OUlIX0JpSHl2T3o5eC0tOWJuNy1MTldNa1F0dTQwUHcxaFhnRjZ4SU9jSlFSdkJ0S25zQmI0aDEtSFh5blVNaTc0MkdaOEZEV2NWV0o2T3ljWDdRNjROdUZJZDNEa9IBuwFBVV95cUxQbjdJdzRnVS1sVGs4WFlxRk92TnJyVWFXY1UybXFrMGFkbjdmejBjbktZY3dEMFJjTWFiVHRMRmtwcG1rV2w1MC1UTEF1X2ZfRHlNNG85YzJUSTU3MV9mRWhpZkdMdW11RldSWXpWN093Zm1sV0o2elllMW50UlhLNmdGVHRIaG1xZ3ZScnVndk5fMlpLMUFvMzFqc0hfVERJanFoRlBjN1JnZ2oxMV8zNUgwemhWOEc0a1Q0?oc=5",
+          "published_date": "Wed, 26 Aug 2026 07:00:00 GMT",
+          "time": "Wed, 26 Aug 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NDTV",
+          "summary": "Fallback discovery via Google News RSS; publisher: NDTV",
+          "source": "NDTV",
+          "sourceLabel": "NDTV",
+          "sourceType": "fallback-news",
+          "fallbackFor": "SOUTHCOM Official Reporting — GDELT Mirror",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "103ec927c19d956d",
+      "title": "U.S. military attacks alleged drug-smuggling boat in Caribbean, killing 4 people - CBS News",
       "category": "conflict",
       "confidence": "low",
       "reportCount": 1,
@@ -985,14 +721,14 @@
       ],
       "reports": [
         {
-          "title": "U.S. military attacks alleged drug-smuggling boat in Caribbean, killing 4 people - cbsnews.com",
+          "title": "U.S. military attacks alleged drug-smuggling boat in Caribbean, killing 4 people - CBS News",
           "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOUXFqMmR3eGdpZVJTdHdwclhjbGQ3cDlqNnFIODhzVFlLRlNRamlNeWxXSDhIWWx2QjQxOXdnUjVvQlE2RHVnckhrS21zdF9BdE9CSkFpU0txdndCX0lVNU92QnlTRmlNRDN3ZnNGejlwSXdYMHRDcDNJX2hyNzk5eC1IUU9oM2ZhemFET2Uwc1p0MzFXeWVRRXNn?oc=5",
           "published_date": "Wed, 26 Aug 2026 07:00:00 GMT",
           "time": "Wed, 26 Aug 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: cbsnews.com",
-          "summary": "Fallback discovery via Google News RSS; publisher: cbsnews.com",
-          "source": "cbsnews.com",
-          "sourceLabel": "cbsnews.com",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: CBS News",
+          "summary": "Fallback discovery via Google News RSS; publisher: CBS News",
+          "source": "CBS News",
+          "sourceLabel": "CBS News",
           "sourceType": "fallback-news",
           "fallbackFor": "GDELT — Western Hemisphere Counter-Cartel",
           "credit_metadata": "Google News RSS fallback"
@@ -1027,38 +763,6 @@
           "sourceLabel": "Al Jazeera",
           "sourceType": "fallback-news",
           "fallbackFor": "GDELT — Western Hemisphere Counter-Cartel",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "a62d0deff2a34a28",
-      "title": "Trump’s Ban of News Organizations Goes Beyond Obama, Biden Actions - FactCheck.org",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Wed, 23 Sep 2026 21:16:22 GMT",
-      "lastSeen": "Wed, 23 Sep 2026 21:16:22 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMioAFBVV95cUxOZlFCVzcxVEpHUm5ZZF9adHpXSXc1Z0hmOG5XSmtleVZ5bTJpSVplbUxjQ1lXQURDU1ZWUm8tSTUzb3o0MGVySzQ2TzI1ZEd0NEJNSV82TFBJeVBzTUJySWp5VE1yRGNJRFlDbkhYdl9ac09GWVFTVWFKNUdkQ3U0YkpRM1JpVEZ6V09TMkFndC13R2lzanhJejdSaXptM3Bj?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Trump’s Ban of News Organizations Goes Beyond Obama, Biden Actions - FactCheck.org",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOZlFCVzcxVEpHUm5ZZF9adHpXSXc1Z0hmOG5XSmtleVZ5bTJpSVplbUxjQ1lXQURDU1ZWUm8tSTUzb3o0MGVySzQ2TzI1ZEd0NEJNSV82TFBJeVBzTUJySWp5VE1yRGNJRFlDbkhYdl9ac09GWVFTVWFKNUdkQ3U0YkpRM1JpVEZ6V09TMkFndC13R2lzanhJejdSaXptM3Bj?oc=5",
-          "published_date": "Wed, 23 Sep 2026 21:16:22 GMT",
-          "time": "Wed, 23 Sep 2026 21:16:22 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: FactCheck.org",
-          "summary": "Fallback discovery via Google News RSS; publisher: FactCheck.org",
-          "source": "FactCheck.org",
-          "sourceLabel": "FactCheck.org",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @POTUS",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -1128,38 +832,6 @@
       ]
     },
     {
-      "id": "88a7395b32d3a270",
-      "title": "The White House press pool: What is it and how does it work? - Al Jazeera",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Wed, 23 Sep 2026 19:01:03 GMT",
-      "lastSeen": "Wed, 23 Sep 2026 19:01:03 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMipAFBVV95cUxQRzdsUmtRNzhVcWFzck9fRW1nYmhOZFV4MExGY2duYXdPdmFCX2dFU0RINDRFY3RCcm9UeFEzcmlTSldtRW9TbzlTNFpjaDNhOUlrcThHSHdoczNNa2xJRHRvVlVRejdZamtLSkVtal9PZ1hvWXRGS3RQM0pQVjNRSzlKWFFaelh1YkJBZHV4S2tlWTMwRFJaTFJuVDFodFlfZHk3VNIBqgFBVV95cUxOTnpTN3A2LV9PLTFGdHZZS3FfQkljU2JMNTFJeU55WnJDc1B4Nnlldk9VS0xTVnFwbllnQU11VVBlVXo0ZzJrVzd3VkpONFgtQzZIVmpmVmxDVEFHNWpvQlI1aFF2TlBWRjBJVThOYzFNQXNCVFFEeVEtYXc4M0Nzb0Z3RjNuckRLVU9sVVZUM0J1OXNkci1RSkpITjBwejRvanpucmp1VmREdw?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "The White House press pool: What is it and how does it work? - Al Jazeera",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQRzdsUmtRNzhVcWFzck9fRW1nYmhOZFV4MExGY2duYXdPdmFCX2dFU0RINDRFY3RCcm9UeFEzcmlTSldtRW9TbzlTNFpjaDNhOUlrcThHSHdoczNNa2xJRHRvVlVRejdZamtLSkVtal9PZ1hvWXRGS3RQM0pQVjNRSzlKWFFaelh1YkJBZHV4S2tlWTMwRFJaTFJuVDFodFlfZHk3VNIBqgFBVV95cUxOTnpTN3A2LV9PLTFGdHZZS3FfQkljU2JMNTFJeU55WnJDc1B4Nnlldk9VS0xTVnFwbllnQU11VVBlVXo0ZzJrVzd3VkpONFgtQzZIVmpmVmxDVEFHNWpvQlI1aFF2TlBWRjBJVThOYzFNQXNCVFFEeVEtYXc4M0Nzb0Z3RjNuckRLVU9sVVZUM0J1OXNkci1RSkpITjBwejRvanpucmp1VmREdw?oc=5",
-          "published_date": "Wed, 23 Sep 2026 19:01:03 GMT",
-          "time": "Wed, 23 Sep 2026 19:01:03 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Al Jazeera",
-          "summary": "Fallback discovery via Google News RSS; publisher: Al Jazeera",
-          "source": "Al Jazeera",
-          "sourceLabel": "Al Jazeera",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @POTUS",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
       "id": "1a50de1c921dde25",
       "title": "Texas A&M students adapt NASA technology to assist wound healing - Texas A&M University",
       "category": "general",
@@ -1187,72 +859,6 @@
           "sourceLabel": "Texas A&M University",
           "sourceType": "fallback-news",
           "fallbackFor": "X @NASA",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "549fe881b898837e",
-      "title": "Secretary-General Urges Restraint as Fighting Intensifies in Northern Ethiopia - UN Meetings Coverage and Press Releases",
-      "category": "conflict",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [
-        "ethiopia"
-      ],
-      "firstSeen": "Wed, 23 Sep 2026 04:00:00 GMT",
-      "lastSeen": "Wed, 23 Sep 2026 04:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5rRlZvZWVXYjdBR2hIdkZHUUJVMk43TUVZazZHTDNqVndNLUlZcm9iTkhNZ1UtbTZhU3Vjb2M4dkNDVHhXeWR5TG1LaDJXanJYZ05IMWlRSHVWQQ?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Secretary-General Urges Restraint as Fighting Intensifies in Northern Ethiopia - UN Meetings Coverage and Press Releases",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5rRlZvZWVXYjdBR2hIdkZHUUJVMk43TUVZazZHTDNqVndNLUlZcm9iTkhNZ1UtbTZhU3Vjb2M4dkNDVHhXeWR5TG1LaDJXanJYZ05IMWlRSHVWQQ?oc=5",
-          "published_date": "Wed, 23 Sep 2026 04:00:00 GMT",
-          "time": "Wed, 23 Sep 2026 04:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: UN Meetings Coverage and Press Releases",
-          "summary": "Fallback discovery via Google News RSS; publisher: UN Meetings Coverage and Press Releases",
-          "source": "UN Meetings Coverage and Press Releases",
-          "sourceLabel": "UN Meetings Coverage and Press Releases",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @UN",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "c2e9c28bae60a838",
-      "title": "Hegseth announces second lethal strike on alleged drug-smuggling boats in the eastern Pacific - NBC News",
-      "category": "conflict",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Wed, 22 Oct 2025 07:00:00 GMT",
-      "lastSeen": "Wed, 22 Oct 2025 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPNUN5WmpwV1NQYWpUbGxCOVZ1LWNNcUpaUmFlbjg5TjlkQmlxUjNNVkRiUWszZkU0S3VqanI2S0w3c19LdnJSQUhWZG1XRGozaUp2UVgtR2VKQ3hzSlNtcHR6ZldVZzI3ZE9VWDRSdEFmdWFPbElienRGSWU2NzNpdW0xY1ctdDNGODc0cE5ORWt4LUgyWEZQWTF2Q1Y4aVp6WTNPd3Npb1E3a0NPbnItRGtXaGdPZGQtTmpCanRfQ1diak0?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Hegseth announces second lethal strike on alleged drug-smuggling boats in the eastern Pacific - NBC News",
-          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPNUN5WmpwV1NQYWpUbGxCOVZ1LWNNcUpaUmFlbjg5TjlkQmlxUjNNVkRiUWszZkU0S3VqanI2S0w3c19LdnJSQUhWZG1XRGozaUp2UVgtR2VKQ3hzSlNtcHR6ZldVZzI3ZE9VWDRSdEFmdWFPbElienRGSWU2NzNpdW0xY1ctdDNGODc0cE5ORWt4LUgyWEZQWTF2Q1Y4aVp6WTNPd3Npb1E3a0NPbnItRGtXaGdPZGQtTmpCanRfQ1diak0?oc=5",
-          "published_date": "Wed, 22 Oct 2025 07:00:00 GMT",
-          "time": "Wed, 22 Oct 2025 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NBC News",
-          "summary": "Fallback discovery via Google News RSS; publisher: NBC News",
-          "source": "NBC News",
-          "sourceLabel": "NBC News",
-          "sourceType": "fallback-news",
-          "fallbackFor": "GDELT — Western Hemisphere Counter-Cartel",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -1290,8 +896,40 @@
       ]
     },
     {
-      "id": "56b1037bcbd1a226",
-      "title": "Federal judge orders White House offices to comply with Presidential Records Act - The Washington Post",
+      "id": "c2e9c28bae60a838",
+      "title": "Hegseth announces second lethal strike on alleged drug-smuggling boats in the eastern Pacific - NBC News",
+      "category": "conflict",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Wed, 22 Oct 2025 07:00:00 GMT",
+      "lastSeen": "Wed, 22 Oct 2025 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPNUN5WmpwV1NQYWpUbGxCOVZ1LWNNcUpaUmFlbjg5TjlkQmlxUjNNVkRiUWszZkU0S3VqanI2S0w3c19LdnJSQUhWZG1XRGozaUp2UVgtR2VKQ3hzSlNtcHR6ZldVZzI3ZE9VWDRSdEFmdWFPbElienRGSWU2NzNpdW0xY1ctdDNGODc0cE5ORWt4LUgyWEZQWTF2Q1Y4aVp6WTNPd3Npb1E3a0NPbnItRGtXaGdPZGQtTmpCanRfQ1diak0?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "Hegseth announces second lethal strike on alleged drug-smuggling boats in the eastern Pacific - NBC News",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPNUN5WmpwV1NQYWpUbGxCOVZ1LWNNcUpaUmFlbjg5TjlkQmlxUjNNVkRiUWszZkU0S3VqanI2S0w3c19LdnJSQUhWZG1XRGozaUp2UVgtR2VKQ3hzSlNtcHR6ZldVZzI3ZE9VWDRSdEFmdWFPbElienRGSWU2NzNpdW0xY1ctdDNGODc0cE5ORWt4LUgyWEZQWTF2Q1Y4aVp6WTNPd3Npb1E3a0NPbnItRGtXaGdPZGQtTmpCanRfQ1diak0?oc=5",
+          "published_date": "Wed, 22 Oct 2025 07:00:00 GMT",
+          "time": "Wed, 22 Oct 2025 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NBC News",
+          "summary": "Fallback discovery via Google News RSS; publisher: NBC News",
+          "source": "NBC News",
+          "sourceLabel": "NBC News",
+          "sourceType": "fallback-news",
+          "fallbackFor": "GDELT — Western Hemisphere Counter-Cartel",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "b411909d0033a81e",
+      "title": "Federal judge orders White House offices to comply with Presidential Records Act - washingtonpost.com",
       "category": "general",
       "confidence": "low",
       "reportCount": 1,
@@ -1307,14 +945,14 @@
       ],
       "reports": [
         {
-          "title": "Federal judge orders White House offices to comply with Presidential Records Act - The Washington Post",
+          "title": "Federal judge orders White House offices to comply with Presidential Records Act - washingtonpost.com",
           "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOM0FzMFJSd3B3eWFtZ3RibUoxSk03dEdfWTJYSXdKQk81T0NfRk56bFJLZXRFS1dZNHRURkxlZWZ1cG03M1JQdllnUF9vT2pVSHZfX25qMHI4dU5XRXcxRTlIQmV6dk5seWI0YnljWGU5ejFsVUktcWdaQ2FOQWg2QlRpcWhGRFVGVnlaaVoyQjVIR2dDbW4tVHBwTHZUZExQN3htRU0wR1ZhNnJ6RGN6S1J3ODYtaVZmVWhjakZvMzBNM1hfRmVHeA?oc=5",
           "published_date": "Wed, 20 May 2026 07:00:00 GMT",
           "time": "Wed, 20 May 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: The Washington Post",
-          "summary": "Fallback discovery via Google News RSS; publisher: The Washington Post",
-          "source": "The Washington Post",
-          "sourceLabel": "The Washington Post",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: washingtonpost.com",
+          "summary": "Fallback discovery via Google News RSS; publisher: washingtonpost.com",
+          "source": "washingtonpost.com",
+          "sourceLabel": "washingtonpost.com",
           "sourceType": "fallback-news",
           "fallbackFor": "X @WhiteHouse",
           "credit_metadata": "Google News RSS fallback"
@@ -1354,9 +992,9 @@
       ]
     },
     {
-      "id": "db4d1cf23f0d7d46",
-      "title": "NASA Updates Next Steps for Commercial Swift Boost Mission - NASA (.gov)",
-      "category": "general",
+      "id": "b1a702a4191c7bc4",
+      "title": "WATCH: Trump talks about North Korea, interest rates while hosting cryptocurrency leaders at the White House - PBS",
+      "category": "diplomatic",
       "confidence": "low",
       "reportCount": 1,
       "sourceCount": 1,
@@ -1367,20 +1005,20 @@
       "firstSeen": "Wed, 19 Aug 2026 07:00:00 GMT",
       "lastSeen": "Wed, 19 Aug 2026 07:00:00 GMT",
       "urls": [
-        "https://news.google.com/rss/articles/CBMimAFBVV95cUxNVl9zajVkTXpSbDhHaEVYY3hENjF3dmJiOG1EdzRJVVdvOXhlY0RhUnpubTdKeTNkM1hrSmlrcmJPcWRyUWFUc2JHR3pSenRPUzBGUEh1Wlc3V0kxRzBNbTVJVzVLWWNBNHdka29XMzZRenZvendnUTRsRXp1N1YxMncyRFU0eDhVamxaVlVUQ1g2WDBMME9kag?oc=5"
+        "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPc05VMXV2c3NSVFNOMUF3LVp3b0dyejhsU1duLWVGZVdGQlFBR2pNa1VaS2E5eHpXcndKR2x4WkkzR2lUT3VnWFdlcC1WQmJ5d3ZIdXphM0xlUGxGbEFPMnZxaERuam1UX3NpY2x6MnlUMmNLcC12aEdkRGh3dHl1Vno4QTYtemg1ODdxWTc3RXBmbWVGSGU1azgxajJZUDdkaWhjYTgxRllXMWxlajJpQVRDQW1HdXVwWm94SWF4X21zOUhvTXptNXQ5TExhb3dGRDI4Nk1aVExyQmJB0gHiAUFVX3lxTE9HSjhacGd4SGFDYk9wYlNfZ2g1Z0c5dGx2UF9DNVY3SFRUVHF1bEJwbVBHSHlDdUZSXzVtYi15R0VPa0p6blNMV0NaLXdaRXh4VnVROXVMXzY5cXg4clNVaWlhbUhibU1BMmZWR0hVd09FSFRra2E0VXRrQjl2aGJUemdFQXl6MkMyVU5LSV91ZHREcWQ5VU5xd29QSURVN2h3MWVPTHpxajJkM0lwMVJEemluZjZpdi0yZHVjUHJRTUpnNW84OXRRN0JKZXdFZDVhSnE5THhJLUVGNGhSREJvanc?oc=5"
       ],
       "reports": [
         {
-          "title": "NASA Updates Next Steps for Commercial Swift Boost Mission - NASA (.gov)",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNVl9zajVkTXpSbDhHaEVYY3hENjF3dmJiOG1EdzRJVVdvOXhlY0RhUnpubTdKeTNkM1hrSmlrcmJPcWRyUWFUc2JHR3pSenRPUzBGUEh1Wlc3V0kxRzBNbTVJVzVLWWNBNHdka29XMzZRenZvendnUTRsRXp1N1YxMncyRFU0eDhVamxaVlVUQ1g2WDBMME9kag?oc=5",
+          "title": "WATCH: Trump talks about North Korea, interest rates while hosting cryptocurrency leaders at the White House - PBS",
+          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPc05VMXV2c3NSVFNOMUF3LVp3b0dyejhsU1duLWVGZVdGQlFBR2pNa1VaS2E5eHpXcndKR2x4WkkzR2lUT3VnWFdlcC1WQmJ5d3ZIdXphM0xlUGxGbEFPMnZxaERuam1UX3NpY2x6MnlUMmNLcC12aEdkRGh3dHl1Vno4QTYtemg1ODdxWTc3RXBmbWVGSGU1azgxajJZUDdkaWhjYTgxRllXMWxlajJpQVRDQW1HdXVwWm94SWF4X21zOUhvTXptNXQ5TExhb3dGRDI4Nk1aVExyQmJB0gHiAUFVX3lxTE9HSjhacGd4SGFDYk9wYlNfZ2g1Z0c5dGx2UF9DNVY3SFRUVHF1bEJwbVBHSHlDdUZSXzVtYi15R0VPa0p6blNMV0NaLXdaRXh4VnVROXVMXzY5cXg4clNVaWlhbUhibU1BMmZWR0hVd09FSFRra2E0VXRrQjl2aGJUemdFQXl6MkMyVU5LSV91ZHREcWQ5VU5xd29QSURVN2h3MWVPTHpxajJkM0lwMVJEemluZjZpdi0yZHVjUHJRTUpnNW84OXRRN0JKZXdFZDVhSnE5THhJLUVGNGhSREJvanc?oc=5",
           "published_date": "Wed, 19 Aug 2026 07:00:00 GMT",
           "time": "Wed, 19 Aug 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
-          "summary": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
-          "source": "NASA (.gov)",
-          "sourceLabel": "NASA (.gov)",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: PBS",
+          "summary": "Fallback discovery via Google News RSS; publisher: PBS",
+          "source": "PBS",
+          "sourceLabel": "PBS",
           "sourceType": "fallback-news",
-          "fallbackFor": "X @NASA",
+          "fallbackFor": "X @POTUS",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -1421,8 +1059,8 @@
       ]
     },
     {
-      "id": "2ea922f9bf256dfb",
-      "title": "NATO prepared to defend allies from any Iranian threat, official says - Washington Times",
+      "id": "5bd58bb41f55992f",
+      "title": "NATO prepared to defend allies from any Iranian threat, official says - washingtontimes.com",
       "category": "diplomatic",
       "confidence": "low",
       "reportCount": 1,
@@ -1441,14 +1079,14 @@
       ],
       "reports": [
         {
-          "title": "NATO prepared to defend allies from any Iranian threat, official says - Washington Times",
+          "title": "NATO prepared to defend allies from any Iranian threat, official says - washingtontimes.com",
           "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNdXRtSHhob196XzZQbUZYUkx2N3MwNnZBNkJacmczamdNRzJUekRsNWNnYTQ3WjhINlJEcDdhVlJ2VmVCNTlBa1psdl96cEJTb244OGI3eHBWZXYxa0JzVjB1VXQtNzNSRFJMelZOc1FSZmRKeXhHWkdiVlNWaVRyYVc2NlYtWWpfVUROcWMybHJGRUZZMnZGdm8tM3pWM2lVZmoydHZsSThCdw?oc=5",
           "published_date": "Wed, 19 Aug 2026 07:00:00 GMT",
           "time": "Wed, 19 Aug 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Washington Times",
-          "summary": "Fallback discovery via Google News RSS; publisher: Washington Times",
-          "source": "Washington Times",
-          "sourceLabel": "Washington Times",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: washingtontimes.com",
+          "summary": "Fallback discovery via Google News RSS; publisher: washingtontimes.com",
+          "source": "washingtontimes.com",
+          "sourceLabel": "washingtontimes.com",
           "sourceType": "fallback-news",
           "fallbackFor": "X @NATO",
           "credit_metadata": "Google News RSS fallback"
@@ -1491,8 +1129,8 @@
       ]
     },
     {
-      "id": "fc25e0c19534f53c",
-      "title": "NASA Announces Public-Private Partnership to Advance Mars Science - NASA (.gov)",
+      "id": "b73cd0a52a98ffba",
+      "title": "NASA's SpaceX Crew-12 News Conference Before Return to Earth - C-SPAN",
       "category": "general",
       "confidence": "low",
       "reportCount": 1,
@@ -1501,21 +1139,21 @@
         "news.google.com"
       ],
       "anchors": [],
-      "firstSeen": "Wed, 17 Jun 2026 07:00:00 GMT",
-      "lastSeen": "Wed, 17 Jun 2026 07:00:00 GMT",
+      "firstSeen": "Wed, 16 Sep 2026 23:42:58 GMT",
+      "lastSeen": "Wed, 16 Sep 2026 23:42:58 GMT",
       "urls": [
-        "https://news.google.com/rss/articles/CBMiogFBVV95cUxQOVFvNHpLWmg4Nk8ya3NpMWRCVlExX2dGV2VHcW81eVJZMzNnS3hxRnNaMUpHejZFa2ZvMVExeGQxem9BRHVfM3NuZ0NVZDJSQzJ6ZEpCeS1ZTEZnNFNTMFFJbTBEVWY4SW9QN2dFSUFpWnhmNENsalVsNElWYS11RW1EckZwMlZCSjlWRzRoOTNyWHFkb1VjdkRSLTI2Z2FINFE?oc=5"
+        "https://news.google.com/rss/articles/CBMiswFBVV95cUxOU0otcW4zcDZkb05CUk1xNTZPNVJrVF83OVVLd2kzRFZlRURiQVp4aUJzRkRyR0owX2xJRHN0aDZaVDI0X2ZyZUo2Y3A1cUxOajhPQUE4aTMzZDkzNjhKeUtoYUNVeUNmQXYxSHlEd2NOTzYwRzVEeDdjeHBlMDlqWWlBNVgyX0I1SGJGandKcEYyckJTOWxaYkFIdDluS3ItLVZDcksxVW1BcDFvSFUydHNDQQ?oc=5"
       ],
       "reports": [
         {
-          "title": "NASA Announces Public-Private Partnership to Advance Mars Science - NASA (.gov)",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQOVFvNHpLWmg4Nk8ya3NpMWRCVlExX2dGV2VHcW81eVJZMzNnS3hxRnNaMUpHejZFa2ZvMVExeGQxem9BRHVfM3NuZ0NVZDJSQzJ6ZEpCeS1ZTEZnNFNTMFFJbTBEVWY4SW9QN2dFSUFpWnhmNENsalVsNElWYS11RW1EckZwMlZCSjlWRzRoOTNyWHFkb1VjdkRSLTI2Z2FINFE?oc=5",
-          "published_date": "Wed, 17 Jun 2026 07:00:00 GMT",
-          "time": "Wed, 17 Jun 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
-          "summary": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
-          "source": "NASA (.gov)",
-          "sourceLabel": "NASA (.gov)",
+          "title": "NASA's SpaceX Crew-12 News Conference Before Return to Earth - C-SPAN",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOU0otcW4zcDZkb05CUk1xNTZPNVJrVF83OVVLd2kzRFZlRURiQVp4aUJzRkRyR0owX2xJRHN0aDZaVDI0X2ZyZUo2Y3A1cUxOajhPQUE4aTMzZDkzNjhKeUtoYUNVeUNmQXYxSHlEd2NOTzYwRzVEeDdjeHBlMDlqWWlBNVgyX0I1SGJGandKcEYyckJTOWxaYkFIdDluS3ItLVZDcksxVW1BcDFvSFUydHNDQQ?oc=5",
+          "published_date": "Wed, 16 Sep 2026 23:42:58 GMT",
+          "time": "Wed, 16 Sep 2026 23:42:58 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: C-SPAN",
+          "summary": "Fallback discovery via Google News RSS; publisher: C-SPAN",
+          "source": "C-SPAN",
+          "sourceLabel": "C-SPAN",
           "sourceType": "fallback-news",
           "fallbackFor": "X @NASA",
           "credit_metadata": "Google News RSS fallback"
@@ -1523,8 +1161,8 @@
       ]
     },
     {
-      "id": "cb7a631bb7ea89c4",
-      "title": "The UN and the crisis in the Middle East: What you need to know - unric.org",
+      "id": "48da621ccce316ed",
+      "title": "The UN and the crisis in the Middle East: What you need to know - unric",
       "category": "general",
       "confidence": "low",
       "reportCount": 1,
@@ -1540,14 +1178,14 @@
       ],
       "reports": [
         {
-          "title": "The UN and the crisis in the Middle East: What you need to know - unric.org",
+          "title": "The UN and the crisis in the Middle East: What you need to know - unric",
           "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE95ZXdiYzZfXzFaSmlKRy1PVzFIWElvcG1LQ0x2X2c5VEh5RnY3d0R1NUtNSWdqY3JISzRtdkhoTHl2dmxyTUxGb0tSYW9rVWtyZHVENFZrcjd4SEFZaGlHVGJ1TUVlNG1zWG0yTE9NS3VwYlkzVEp6ZA?oc=5",
           "published_date": "Wed, 16 Sep 2026 14:44:24 GMT",
           "time": "Wed, 16 Sep 2026 14:44:24 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: unric.org",
-          "summary": "Fallback discovery via Google News RSS; publisher: unric.org",
-          "source": "unric.org",
-          "sourceLabel": "unric.org",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: unric",
+          "summary": "Fallback discovery via Google News RSS; publisher: unric",
+          "source": "unric",
+          "sourceLabel": "unric",
           "sourceType": "fallback-news",
           "fallbackFor": "X @UN",
           "credit_metadata": "Google News RSS fallback"
@@ -1619,8 +1257,8 @@
       ]
     },
     {
-      "id": "45fc201e29d9f908",
-      "title": "3 killed in latest U.S. strike on alleged drug boat in eastern Pacific, Pentagon says - cbsnews.com",
+      "id": "99a565f8e0f2f10e",
+      "title": "3 killed in latest U.S. strike on alleged drug boat in eastern Pacific, Pentagon says - CBS News",
       "category": "conflict",
       "confidence": "low",
       "reportCount": 1,
@@ -1636,14 +1274,14 @@
       ],
       "reports": [
         {
-          "title": "3 killed in latest U.S. strike on alleged drug boat in eastern Pacific, Pentagon says - cbsnews.com",
+          "title": "3 killed in latest U.S. strike on alleged drug boat in eastern Pacific, Pentagon says - CBS News",
           "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPSTlERzBTM1lTYUkwcm9aQzR2Vnk1MFA5YWs4dmtxUEZXNmVqTkVsUFhpWkpkZ0p4eXBUczRVSmhPYVRQQU1LanBmQXlBY1YwcEZua2V0UHcydGhsWlFmVGNtRlhJaTFIbk5zbU1ZRmNiQ1EyNkZJZkVsckQxenZnMVIxZm1lV2lhWHVpa25mVDg2YjDSAZgBQVVfeXFMTUUxVVZlekllRUlBa2RtYnI5SU80eWZNQmlDczRxck81Wk5jQVc2aFNLUWkwQVFEMU54NV9wbGNBYzk5ZHZTM1ZtNThUVVhoT3JNM05ST1ZrTWxLMndvRkFzX3VOcDF5ZEc1Q0s4LTBOT2trNi1BNzJqQW9nOXZDZFJXQnhPNEkwbzNIeXlvYndqZ1gybVFmRnY?oc=5",
           "published_date": "Wed, 15 Apr 2026 07:00:00 GMT",
           "time": "Wed, 15 Apr 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: cbsnews.com",
-          "summary": "Fallback discovery via Google News RSS; publisher: cbsnews.com",
-          "source": "cbsnews.com",
-          "sourceLabel": "cbsnews.com",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: CBS News",
+          "summary": "Fallback discovery via Google News RSS; publisher: CBS News",
+          "source": "CBS News",
+          "sourceLabel": "CBS News",
           "sourceType": "fallback-news",
           "fallbackFor": "GDELT — Western Hemisphere Counter-Cartel",
           "credit_metadata": "Google News RSS fallback"
@@ -1685,8 +1323,8 @@
       ]
     },
     {
-      "id": "e46d771bc65ed9b1",
-      "title": "Spotlight on Gaza - un.org",
+      "id": "fc5d7083c2586de5",
+      "title": "Spotlight on Gaza - Welcome to the United Nations",
       "category": "general",
       "confidence": "low",
       "reportCount": 1,
@@ -1704,14 +1342,14 @@
       ],
       "reports": [
         {
-          "title": "Spotlight on Gaza - un.org",
+          "title": "Spotlight on Gaza - Welcome to the United Nations",
           "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1JODM2WHFNV3U5d29QeFRsWmVfWElFTEhKU0JwOEMzOVdzRlV5eHotMEhoNnE5TmdXMTBDSVFsdUFRZDFINUJPenNOVmdES1FE?oc=5",
           "published_date": "Wed, 11 Mar 2026 19:34:36 GMT",
           "time": "Wed, 11 Mar 2026 19:34:36 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: un.org",
-          "summary": "Fallback discovery via Google News RSS; publisher: un.org",
-          "source": "un.org",
-          "sourceLabel": "un.org",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Welcome to the United Nations",
+          "summary": "Fallback discovery via Google News RSS; publisher: Welcome to the United Nations",
+          "source": "Welcome to the United Nations",
+          "sourceLabel": "Welcome to the United Nations",
           "sourceType": "fallback-news",
           "fallbackFor": "X @UN",
           "credit_metadata": "Google News RSS fallback"
@@ -1719,8 +1357,8 @@
       ]
     },
     {
-      "id": "8e92c44bca8a88db",
-      "title": "Trump sees 22 medical specialists, appearing to set new bar for presidents - The Washington Post",
+      "id": "89b1d536605084bb",
+      "title": "Trump sees 22 medical specialists, appearing to set new bar for presidents - washingtonpost.com",
       "category": "general",
       "confidence": "low",
       "reportCount": 1,
@@ -1736,14 +1374,14 @@
       ],
       "reports": [
         {
-          "title": "Trump sees 22 medical specialists, appearing to set new bar for presidents - The Washington Post",
+          "title": "Trump sees 22 medical specialists, appearing to set new bar for presidents - washingtonpost.com",
           "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOSzZNbThoOG1SeVpUdFRqb1pyY0ZoUDdfZ3lGak5NM3phckZKUkJHYWxwQ3RncG5ITFlvSFdLS0RxQ08xX25IdHRXMHlISFdEYnBQODlFQzhSM0pBTGRlRUlyOWJacjVTV1FBM3BrRmotY1ZialNYLUlEd0twb0pJcDVxY1dFMW1oQm90M1I4OVNYOHNiUjM3dkxieGtRRjc2a1NjUm5HUXlZTFU3dko4X0NR?oc=5",
           "published_date": "Wed, 10 Jun 2026 07:00:00 GMT",
           "time": "Wed, 10 Jun 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: The Washington Post",
-          "summary": "Fallback discovery via Google News RSS; publisher: The Washington Post",
-          "source": "The Washington Post",
-          "sourceLabel": "The Washington Post",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: washingtonpost.com",
+          "summary": "Fallback discovery via Google News RSS; publisher: washingtonpost.com",
+          "source": "washingtonpost.com",
+          "sourceLabel": "washingtonpost.com",
           "sourceType": "fallback-news",
           "fallbackFor": "X @WhiteHouse",
           "credit_metadata": "Google News RSS fallback"
@@ -1783,8 +1421,72 @@
       ]
     },
     {
-      "id": "fcdd89b6487fa523",
-      "title": "NATO leaders issue joint declaration on collective defence, Russia, Ukraine and Iran - armenpress.am",
+      "id": "2acc654520b63bc3",
+      "title": "Astronaut Victor Glover Returns Full Time to Cal Poly After Historic Artemis II Mission - Cal Poly",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Wed, 09 Sep 2026 07:00:00 GMT",
+      "lastSeen": "Wed, 09 Sep 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiswFBVV95cUxQYW9MNlhpb1FYTnJSRmxieV9La080WUtJTUo4N0JUZ2hpcG9ZZW5oYWpla1BqMEI3SWptZHNDajNKbUFOaUdfaHJqUVdwT0ZFZ1hGZmRmcVRpRm1xN0x6dnpHVHVEZm9lNTdtRWVIYXhJalJIU3RpWFVaWFgwVGpEUHFqSl9GYzY2TXhSbTlpRm9UZDFIWHRzOThLeGI5VlRoME9BUzFpMnlQYUJuenl5bXNnWQ?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "Astronaut Victor Glover Returns Full Time to Cal Poly After Historic Artemis II Mission - Cal Poly",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQYW9MNlhpb1FYTnJSRmxieV9La080WUtJTUo4N0JUZ2hpcG9ZZW5oYWpla1BqMEI3SWptZHNDajNKbUFOaUdfaHJqUVdwT0ZFZ1hGZmRmcVRpRm1xN0x6dnpHVHVEZm9lNTdtRWVIYXhJalJIU3RpWFVaWFgwVGpEUHFqSl9GYzY2TXhSbTlpRm9UZDFIWHRzOThLeGI5VlRoME9BUzFpMnlQYUJuenl5bXNnWQ?oc=5",
+          "published_date": "Wed, 09 Sep 2026 07:00:00 GMT",
+          "time": "Wed, 09 Sep 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Cal Poly",
+          "summary": "Fallback discovery via Google News RSS; publisher: Cal Poly",
+          "source": "Cal Poly",
+          "sourceLabel": "Cal Poly",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NASA",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "91c2e2b56d0471e5",
+      "title": "Artemis II moonshot commander and pilot are hanging up their astronaut suits at NASA - AP News",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Wed, 09 Sep 2026 07:00:00 GMT",
+      "lastSeen": "Wed, 09 Sep 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMinwFBVV95cUxOY01JRy1Bb0lMX21IeVpXNkFndVZQVDFDbExjX2R2ODV1Ui1pQmF6d1lWaEJ6U0didUJ0b0NzbVo1UG00VGpXVlNmbVltYWpvMnpWNUlyT1JldHUxV2pSODdQSlNGdHZ1QUhvZkVMNUJRUHdEMTN5Q1VNS093eWpITUc0RVFVcXI2ZURzRmNZUGNFanI1cFIydWRjbFhEN1k?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "Artemis II moonshot commander and pilot are hanging up their astronaut suits at NASA - AP News",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOY01JRy1Bb0lMX21IeVpXNkFndVZQVDFDbExjX2R2ODV1Ui1pQmF6d1lWaEJ6U0didUJ0b0NzbVo1UG00VGpXVlNmbVltYWpvMnpWNUlyT1JldHUxV2pSODdQSlNGdHZ1QUhvZkVMNUJRUHdEMTN5Q1VNS093eWpITUc0RVFVcXI2ZURzRmNZUGNFanI1cFIydWRjbFhEN1k?oc=5",
+          "published_date": "Wed, 09 Sep 2026 07:00:00 GMT",
+          "time": "Wed, 09 Sep 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: AP News",
+          "summary": "Fallback discovery via Google News RSS; publisher: AP News",
+          "source": "AP News",
+          "sourceLabel": "AP News",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NASA",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "31b853ff16e13cbb",
+      "title": "NATO leaders issue joint declaration on collective defence, Russia, Ukraine and Iran - Armenpress",
       "category": "diplomatic",
       "confidence": "low",
       "reportCount": 1,
@@ -1806,14 +1508,114 @@
       ],
       "reports": [
         {
-          "title": "NATO leaders issue joint declaration on collective defence, Russia, Ukraine and Iran - armenpress.am",
+          "title": "NATO leaders issue joint declaration on collective defence, Russia, Ukraine and Iran - Armenpress",
           "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE00V2Ytd3l3X0N0aHpTUG5qMGJIcTkyOFhjNkpaVkdHNzFPSEt6bW55YThBNHIzdkRTQXZlaFdYNExlRXBkSzFHd3ZTdnJWSXYzX0HSAVdBVV95cUxQSWZCNFk4LWZXdm1kU1I4VGFVOVhjRHg3MWJMSTRZYW1QYzd4ZmY2Y2R5a3RvWkl5ZFcxYUxrQzVlOFVDUV9OLXliRGNWakNuaW1paDRoZWs?oc=5",
           "published_date": "Wed, 08 Jul 2026 07:00:00 GMT",
           "time": "Wed, 08 Jul 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: armenpress.am",
-          "summary": "Fallback discovery via Google News RSS; publisher: armenpress.am",
-          "source": "armenpress.am",
-          "sourceLabel": "armenpress.am",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Armenpress",
+          "summary": "Fallback discovery via Google News RSS; publisher: Armenpress",
+          "source": "Armenpress",
+          "sourceLabel": "Armenpress",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NATO",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "638e150ea7d47af1",
+      "title": "Trump’s abrupt U-turn on a plan to reopen the Strait of Hormuz came after backlash from allies - NBC News",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [
+        "hormuz"
+      ],
+      "firstSeen": "Wed, 06 May 2026 07:00:00 GMT",
+      "lastSeen": "Wed, 06 May 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOR2RtM2QzRXQ0cWtMaUtzdTJvbjgyM3JlRnlXTk9VWEJZZDEwVVVjZ0xkd1QzZEk1WjBtQ2xUcVdnSldScGhjRVRIYmduckRxWl84TVBDOTM1UTNsQlRBTWNSMEhnQUVrcjZCbVFUb01yNDJpSHBURWZtaW9MUjhKeG1mZWtFaUZKQ3hlbm9Ka0FFc05QR29rZVVoTVVIS1FTZ0tPdXo5eUdpbjBYdVdDSXFwQVk3elBUX091WEdXX3FyZw?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "Trump’s abrupt U-turn on a plan to reopen the Strait of Hormuz came after backlash from allies - NBC News",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOR2RtM2QzRXQ0cWtMaUtzdTJvbjgyM3JlRnlXTk9VWEJZZDEwVVVjZ0xkd1QzZEk1WjBtQ2xUcVdnSldScGhjRVRIYmduckRxWl84TVBDOTM1UTNsQlRBTWNSMEhnQUVrcjZCbVFUb01yNDJpSHBURWZtaW9MUjhKeG1mZWtFaUZKQ3hlbm9Ka0FFc05QR29rZVVoTVVIS1FTZ0tPdXo5eUdpbjBYdVdDSXFwQVk3elBUX091WEdXX3FyZw?oc=5",
+          "published_date": "Wed, 06 May 2026 07:00:00 GMT",
+          "time": "Wed, 06 May 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NBC News",
+          "summary": "Fallback discovery via Google News RSS; publisher: NBC News",
+          "source": "NBC News",
+          "sourceLabel": "NBC News",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @WhiteHouse",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "bc00c40ab962b572",
+      "title": "Army Launches New Task Force, Replacing Southern Spear's Efforts Against Drug Cartels - Military.com",
+      "category": "conflict",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Wed, 05 Aug 2026 07:00:00 GMT",
+      "lastSeen": "Wed, 05 Aug 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMimwFBVV95cUxOSWc5ZU5sZFdZTThEMjJzNXpWNzlQTElFT0UwOUtEVEdkT0M0bEdHZVo3Yld1UGJ2UHRaWEx5aHJDXy1NS2p0OWRZSUVVVWRkRXd5dTJNNWdrVnp6d21zTC1tYUh2eEt4ZnliTEZHS3c1c1dPMElJSElpTnBoSkZVaTY2b051WHRVQk1ScmQzdjY1OFh6Z3pFYl9Hcw?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "Army Launches New Task Force, Replacing Southern Spear's Efforts Against Drug Cartels - Military.com",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOSWc5ZU5sZFdZTThEMjJzNXpWNzlQTElFT0UwOUtEVEdkT0M0bEdHZVo3Yld1UGJ2UHRaWEx5aHJDXy1NS2p0OWRZSUVVVWRkRXd5dTJNNWdrVnp6d21zTC1tYUh2eEt4ZnliTEZHS3c1c1dPMElJSElpTnBoSkZVaTY2b051WHRVQk1ScmQzdjY1OFh6Z3pFYl9Hcw?oc=5",
+          "published_date": "Wed, 05 Aug 2026 07:00:00 GMT",
+          "time": "Wed, 05 Aug 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Military.com",
+          "summary": "Fallback discovery via Google News RSS; publisher: Military.com",
+          "source": "Military.com",
+          "sourceLabel": "Military.com",
+          "sourceType": "fallback-news",
+          "fallbackFor": "SOUTHCOM Official Reporting — GDELT Mirror",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "49d65e202fea7385",
+      "title": "Iran Denies Firing Missile Toward Turkey - The New York Times",
+      "category": "conflict",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [
+        "iran"
+      ],
+      "firstSeen": "Wed, 04 Mar 2026 08:00:00 GMT",
+      "lastSeen": "Wed, 04 Mar 2026 08:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMijAFBVV95cUxQd1VFOGl2eUVDLWc5bmo0dlgwTWF0ZlNPY29ZMGVEMFZ5QXYtNEgybVZaaGFYQVVlLTFRZko5Ml9fNllvdVlRZlFUVmd4dHBwMDViTHRzX1lsVVdIbTJkb3RaVmFGRkJ3WVkwSFMweGJ2LXNTdlZvTWd4d254NVhqN1NRTmRxakJrRk9Ddw?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "Iran Denies Firing Missile Toward Turkey - The New York Times",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQd1VFOGl2eUVDLWc5bmo0dlgwTWF0ZlNPY29ZMGVEMFZ5QXYtNEgybVZaaGFYQVVlLTFRZko5Ml9fNllvdVlRZlFUVmd4dHBwMDViTHRzX1lsVVdIbTJkb3RaVmFGRkJ3WVkwSFMweGJ2LXNTdlZvTWd4d254NVhqN1NRTmRxakJrRk9Ddw?oc=5",
+          "published_date": "Wed, 04 Mar 2026 08:00:00 GMT",
+          "time": "Wed, 04 Mar 2026 08:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: The New York Times",
+          "summary": "Fallback discovery via Google News RSS; publisher: The New York Times",
+          "source": "The New York Times",
+          "sourceLabel": "The New York Times",
           "sourceType": "fallback-news",
           "fallbackFor": "X @NATO",
           "credit_metadata": "Google News RSS fallback"
@@ -1848,38 +1650,6 @@
           "sourceLabel": "930 WFMD Free Talk",
           "sourceType": "fallback-news",
           "fallbackFor": "GDELT — Western Hemisphere Counter-Cartel",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "d10621e8c9d8444c",
-      "title": "NASA Says Farewell to MAVEN Mars Mission, Hosts Media Call Today - NASA (.gov)",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Wed, 03 Jun 2026 07:00:00 GMT",
-      "lastSeen": "Wed, 03 Jun 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMinwFBVV95cUxNbmdMYkd6T0tTTUZPTHkwTlJaX2Q0bFFHeS14Sk1tMlZ5alpDNm1ranFLSjlXZE1VU0lGSTczXzhfc2Z4dXVFZmRUZWxNQmN5RGtIc2RmaktJVWFYa0pWZk1qbXNiUzRVRTFtUkRNNTZ3ZmRNbUV5dE0zZ0gxdzNNTlJMMmp4QTROTFc1UE8wNzFmZ3hsbW13SFhVbTRGT0U?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "NASA Says Farewell to MAVEN Mars Mission, Hosts Media Call Today - NASA (.gov)",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNbmdMYkd6T0tTTUZPTHkwTlJaX2Q0bFFHeS14Sk1tMlZ5alpDNm1ranFLSjlXZE1VU0lGSTczXzhfc2Z4dXVFZmRUZWxNQmN5RGtIc2RmaktJVWFYa0pWZk1qbXNiUzRVRTFtUkRNNTZ3ZmRNbUV5dE0zZ0gxdzNNTlJMMmp4QTROTFc1UE8wNzFmZ3hsbW13SFhVbTRGT0U?oc=5",
-          "published_date": "Wed, 03 Jun 2026 07:00:00 GMT",
-          "time": "Wed, 03 Jun 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
-          "summary": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
-          "source": "NASA (.gov)",
-          "sourceLabel": "NASA (.gov)",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NASA",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -1946,6 +1716,41 @@
           "sourceLabel": "The National Desk",
           "sourceType": "fallback-news",
           "fallbackFor": "GDELT — Western Hemisphere Counter-Cartel",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "5018b53246db50b6",
+      "title": "Four-Star Dissent: Leaked Document Shows SOUTHCOM Chief Warned Iran War Is Straining Latin America - Latin Times",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [
+        "america",
+        "iran"
+      ],
+      "firstSeen": "Wed, 02 Sep 2026 07:00:00 GMT",
+      "lastSeen": "Wed, 02 Sep 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMixwFBVV95cUxOQ0tNcEJBMEREMkxWVm1QRnZicm5MTEF6a2ZtN3hBSWNOUjhzbkVHd3lmVzlFV0ZHdDVsdDRzOE5yMU9BRWJkVzJBdk5ub0lWTjNhTkRuOXVpdldmclhlYmZHdHVpS0dDQ3pKQW1TdWVxR1FucGxoQnJhRXZmcmRyN2JObkYtYXpRMnBZbnZOcWthVTQ5TGlkVWVRLURWYlZsVU5lNDJ4WG9OZDNmaWpTUlJzeUhRMExGenFQMTlNZDBpb3VkVzRF?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "Four-Star Dissent: Leaked Document Shows SOUTHCOM Chief Warned Iran War Is Straining Latin America - Latin Times",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOQ0tNcEJBMEREMkxWVm1QRnZicm5MTEF6a2ZtN3hBSWNOUjhzbkVHd3lmVzlFV0ZHdDVsdDRzOE5yMU9BRWJkVzJBdk5ub0lWTjNhTkRuOXVpdldmclhlYmZHdHVpS0dDQ3pKQW1TdWVxR1FucGxoQnJhRXZmcmRyN2JObkYtYXpRMnBZbnZOcWthVTQ5TGlkVWVRLURWYlZsVU5lNDJ4WG9OZDNmaWpTUlJzeUhRMExGenFQMTlNZDBpb3VkVzRF?oc=5",
+          "published_date": "Wed, 02 Sep 2026 07:00:00 GMT",
+          "time": "Wed, 02 Sep 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Latin Times",
+          "summary": "Fallback discovery via Google News RSS; publisher: Latin Times",
+          "source": "Latin Times",
+          "sourceLabel": "Latin Times",
+          "sourceType": "fallback-news",
+          "fallbackFor": "SOUTHCOM Official Reporting — GDELT Mirror",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -2115,70 +1920,6 @@
       ]
     },
     {
-      "id": "56ef13be5e445884",
-      "title": "NASA to Announce Artemis III Crew, Provide Mission Progress Update - NASA (.gov)",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Tue, 26 May 2026 07:00:00 GMT",
-      "lastSeen": "Tue, 26 May 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiogFBVV95cUxPbUVFMkI1emtEYVlJT1dReFNEeTJPWmVqZkI3dWVXbFlSZDFxeW01cWxTcVMtMTd4UHAyRjROSndMcngtZXVCbEE1dHRWcm9kanhFLTlJVkQxOHFfUWd6T1o5dmlWMDFqMFk1bGpZb2M5TGtVZFJyMXFMcHJRenNxekJwRFNMcEc0RWJjQ0RQdE1zYnlVdy1hQ05TdEpfTUcyOXc?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "NASA to Announce Artemis III Crew, Provide Mission Progress Update - NASA (.gov)",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPbUVFMkI1emtEYVlJT1dReFNEeTJPWmVqZkI3dWVXbFlSZDFxeW01cWxTcVMtMTd4UHAyRjROSndMcngtZXVCbEE1dHRWcm9kanhFLTlJVkQxOHFfUWd6T1o5dmlWMDFqMFk1bGpZb2M5TGtVZFJyMXFMcHJRenNxekJwRFNMcEc0RWJjQ0RQdE1zYnlVdy1hQ05TdEpfTUcyOXc?oc=5",
-          "published_date": "Tue, 26 May 2026 07:00:00 GMT",
-          "time": "Tue, 26 May 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
-          "summary": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
-          "source": "NASA (.gov)",
-          "sourceLabel": "NASA (.gov)",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NASA",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "c92c4eaafcc6a9d2",
-      "title": "NASA Provides Update on Moon Base Rovers, Landers, Missions - NASA (.gov)",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Tue, 26 May 2026 07:00:00 GMT",
-      "lastSeen": "Tue, 26 May 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMilwFBVV95cUxOdjNJWUJUYnF2eEUtazlSclhHZHpzZ3RvVnIxRlBGZnc4akl2bXIzZVlZSEtxMzdyVmNBdE9Wa2pIYlJXbUlDTE1WWXd2UHQ2V3BJcHF1M0FLWVFHdWFEUDhZYk9iR0FaNm5HTGZoVzN2aFJjVGVyeHBwcmZNdi1taE1DYTJwQWlKU3NQQUowcWJGVjNWWWdJ?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "NASA Provides Update on Moon Base Rovers, Landers, Missions - NASA (.gov)",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOdjNJWUJUYnF2eEUtazlSclhHZHpzZ3RvVnIxRlBGZnc4akl2bXIzZVlZSEtxMzdyVmNBdE9Wa2pIYlJXbUlDTE1WWXd2UHQ2V3BJcHF1M0FLWVFHdWFEUDhZYk9iR0FaNm5HTGZoVzN2aFJjVGVyeHBwcmZNdi1taE1DYTJwQWlKU3NQQUowcWJGVjNWWWdJ?oc=5",
-          "published_date": "Tue, 26 May 2026 07:00:00 GMT",
-          "time": "Tue, 26 May 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
-          "summary": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
-          "source": "NASA (.gov)",
-          "sourceLabel": "NASA (.gov)",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NASA",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
       "id": "1ca9ee3cebc8e6be",
       "title": "US boat strike in the Caribbean kills four suspected of ‘narco-trafficking’ - The Hill",
       "category": "conflict",
@@ -2205,14 +1946,14 @@
           "source": "The Hill",
           "sourceLabel": "The Hill",
           "sourceType": "fallback-news",
-          "fallbackFor": "GDELT — Western Hemisphere Counter-Cartel",
+          "fallbackFor": "SOUTHCOM Official Reporting — GDELT Mirror",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
     },
     {
-      "id": "98e8256d83829310",
-      "title": "New Next-Gen Dish Adds Muscle to NASA’s Deep Space Network - jpl.nasa.gov",
+      "id": "fa119470808948d3",
+      "title": "New Next-Gen Dish Adds Muscle to NASA’s Deep Space Network - NASA Jet Propulsion Laboratory (JPL) (.gov)",
       "category": "general",
       "confidence": "low",
       "reportCount": 1,
@@ -2228,14 +1969,14 @@
       ],
       "reports": [
         {
-          "title": "New Next-Gen Dish Adds Muscle to NASA’s Deep Space Network - jpl.nasa.gov",
+          "title": "New Next-Gen Dish Adds Muscle to NASA’s Deep Space Network - NASA Jet Propulsion Laboratory (JPL) (.gov)",
           "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPdzBhWnZQLWV4VGFqYUtKX0JCdW5tZi1UQnI2NVQ2QlJmNUdtLWhEOW5pUGlFOERwNDI3TGNBZldtQ2NnenpNU2FpY2RvUXRudHF4N3dZZ3g4SkIxOVd4WEV1c2hhWlYyREhsOF92RkpaSFJlcVNaWEx5emwxb2NyY0ljSkktQTFmUWVEQWJDSHkxZw?oc=5",
           "published_date": "Tue, 25 Aug 2026 07:00:00 GMT",
           "time": "Tue, 25 Aug 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: jpl.nasa.gov",
-          "summary": "Fallback discovery via Google News RSS; publisher: jpl.nasa.gov",
-          "source": "jpl.nasa.gov",
-          "sourceLabel": "jpl.nasa.gov",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NASA Jet Propulsion Laboratory (JPL) (.gov)",
+          "summary": "Fallback discovery via Google News RSS; publisher: NASA Jet Propulsion Laboratory (JPL) (.gov)",
+          "source": "NASA Jet Propulsion Laboratory (JPL) (.gov)",
+          "sourceLabel": "NASA Jet Propulsion Laboratory (JPL) (.gov)",
           "sourceType": "fallback-news",
           "fallbackFor": "X @NASA",
           "credit_metadata": "Google News RSS fallback"
@@ -2307,40 +2048,6 @@
       ]
     },
     {
-      "id": "6018b93c0e6cb467",
-      "title": "American power, AI and a walkout - key moments from Trump's UN speech - BBC",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [
-        "america"
-      ],
-      "firstSeen": "Tue, 22 Sep 2026 19:44:44 GMT",
-      "lastSeen": "Tue, 22 Sep 2026 19:44:44 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5sMXhQZXJPY1JROEktMHBINDhfbm0yWjdheVAxTVB4Y0xuUEFyYXNVclB0dUo5Zlk5d0FoNVJ0Z0gwS3llSU05ZFFqcG5EQk5zc25UWXZQOWtOMVk?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "American power, AI and a walkout - key moments from Trump's UN speech - BBC",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5sMXhQZXJPY1JROEktMHBINDhfbm0yWjdheVAxTVB4Y0xuUEFyYXNVclB0dUo5Zlk5d0FoNVJ0Z0gwS3llSU05ZFFqcG5EQk5zc25UWXZQOWtOMVk?oc=5",
-          "published_date": "Tue, 22 Sep 2026 19:44:44 GMT",
-          "time": "Tue, 22 Sep 2026 19:44:44 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: BBC",
-          "summary": "Fallback discovery via Google News RSS; publisher: BBC",
-          "source": "BBC",
-          "sourceLabel": "BBC",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @POTUS",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
       "id": "7540dbe4323f3bcc",
       "title": "President Trump at the United Nations: “While Others Have Talked, I Have Acted” - The White House (.gov)",
       "category": "political",
@@ -2405,9 +2112,9 @@
       ]
     },
     {
-      "id": "49dc7d0976c7eb2f",
-      "title": "Brazil - Welcome to the United Nations",
-      "category": "general",
+      "id": "a8c8c97808a653b0",
+      "title": "U.S. Strike on Caribbean Drug-Smuggling Boat Kills 4 - The SOFX Report",
+      "category": "conflict",
       "confidence": "low",
       "reportCount": 1,
       "sourceCount": 1,
@@ -2415,55 +2122,23 @@
         "news.google.com"
       ],
       "anchors": [],
-      "firstSeen": "Tue, 22 Sep 2026 04:00:00 GMT",
-      "lastSeen": "Tue, 22 Sep 2026 04:00:00 GMT",
+      "firstSeen": "Tue, 22 Sep 2026 04:32:47 GMT",
+      "lastSeen": "Tue, 22 Sep 2026 04:32:47 GMT",
       "urls": [
-        "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1PNTJKX25VN1I0ZXk1aXV2RW1KVlhiUE90bC1nMWM0czN3YU1KdEEtQzJSd2FFenZTbDRGSnB0WEl5VDJ6TjlzRzI5S2U?oc=5"
+        "https://news.google.com/rss/articles/CBMifkFVX3lxTE5nWk5JSDl1aVhEel9GQWxNbkhzUy04SkZoUFR5WkJfY2VmMnBZOXFBZ3ZXQkptT2RMOW1fVWtYTUhzM1dGREhScEFRZlBPWjZxS3BlZUxhZjNuYnl0ZG5nSm9Zc1ZWeXdTZXlUckZzdmR3ZTNUS0JMTW82Rl9Pdw?oc=5"
       ],
       "reports": [
         {
-          "title": "Brazil - Welcome to the United Nations",
-          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1PNTJKX25VN1I0ZXk1aXV2RW1KVlhiUE90bC1nMWM0czN3YU1KdEEtQzJSd2FFenZTbDRGSnB0WEl5VDJ6TjlzRzI5S2U?oc=5",
-          "published_date": "Tue, 22 Sep 2026 04:00:00 GMT",
-          "time": "Tue, 22 Sep 2026 04:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Welcome to the United Nations",
-          "summary": "Fallback discovery via Google News RSS; publisher: Welcome to the United Nations",
-          "source": "Welcome to the United Nations",
-          "sourceLabel": "Welcome to the United Nations",
+          "title": "U.S. Strike on Caribbean Drug-Smuggling Boat Kills 4 - The SOFX Report",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5nWk5JSDl1aVhEel9GQWxNbkhzUy04SkZoUFR5WkJfY2VmMnBZOXFBZ3ZXQkptT2RMOW1fVWtYTUhzM1dGREhScEFRZlBPWjZxS3BlZUxhZjNuYnl0ZG5nSm9Zc1ZWeXdTZXlUckZzdmR3ZTNUS0JMTW82Rl9Pdw?oc=5",
+          "published_date": "Tue, 22 Sep 2026 04:32:47 GMT",
+          "time": "Tue, 22 Sep 2026 04:32:47 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: The SOFX Report",
+          "summary": "Fallback discovery via Google News RSS; publisher: The SOFX Report",
+          "source": "The SOFX Report",
+          "sourceLabel": "The SOFX Report",
           "sourceType": "fallback-news",
-          "fallbackFor": "X @UN",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "e022205a57795ce2",
-      "title": "White House Ballroom Continues Proud Presidential Legacy - The White House (.gov)",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Tue, 21 Oct 2025 07:00:00 GMT",
-      "lastSeen": "Tue, 21 Oct 2025 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMilgFBVV95cUxPbDY3NEgzVWJLbWR3aU1DSjFxaVRmQmNNbjBnN3ZzVk9yUHBFMUctMXNSUTIzaXJXTEN4ckRUTzg2RTZsT0dFMk9Xd29zcGEtR2gtRkxqZjNQVmtGZW1jSmRBaXpXb3dvTUYxOXpGVWJrcnVyYTM5VHg1OS1pbVhQN3J3VzFHYTk2bWdTbUpJWXJHYXIyUEE?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "White House Ballroom Continues Proud Presidential Legacy - The White House (.gov)",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPbDY3NEgzVWJLbWR3aU1DSjFxaVRmQmNNbjBnN3ZzVk9yUHBFMUctMXNSUTIzaXJXTEN4ckRUTzg2RTZsT0dFMk9Xd29zcGEtR2gtRkxqZjNQVmtGZW1jSmRBaXpXb3dvTUYxOXpGVWJrcnVyYTM5VHg1OS1pbVhQN3J3VzFHYTk2bWdTbUpJWXJHYXIyUEE?oc=5",
-          "published_date": "Tue, 21 Oct 2025 07:00:00 GMT",
-          "time": "Tue, 21 Oct 2025 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: The White House (.gov)",
-          "summary": "Fallback discovery via Google News RSS; publisher: The White House (.gov)",
-          "source": "The White House (.gov)",
-          "sourceLabel": "The White House (.gov)",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @WhiteHouse",
+          "fallbackFor": "SOUTHCOM Official Reporting — GDELT Mirror",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -2535,6 +2210,38 @@
       ]
     },
     {
+      "id": "3cef30cb9cee6b89",
+      "title": "SOUTHCOM Establishes Autonomous Warfare Command - southcom.mil",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Tue, 21 Apr 2026 07:00:00 GMT",
+      "lastSeen": "Tue, 21 Apr 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMirAFBVV95cUxNdVdfM1RNVDFDd0hmQnFXb2U3amljWmVZSUdDcmNJbkpxS09rMGd3MkU5NjBFNVFld0NtamE3M3VUWlhKNXVXYy1Tbkd4ZnNBLVktSFFJUEdVS19fS3pZbzAwTjNYSkZVR1FLTTFSSVZoWVpVd0FNNzA5bU12ZkdIU3pJaVp0bWdPRmdQQ05QaktDNVlUUzdnYWIxU2thRTFqTmlDbDgya0wxSXBw?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "SOUTHCOM Establishes Autonomous Warfare Command - southcom.mil",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNdVdfM1RNVDFDd0hmQnFXb2U3amljWmVZSUdDcmNJbkpxS09rMGd3MkU5NjBFNVFld0NtamE3M3VUWlhKNXVXYy1Tbkd4ZnNBLVktSFFJUEdVS19fS3pZbzAwTjNYSkZVR1FLTTFSSVZoWVpVd0FNNzA5bU12ZkdIU3pJaVp0bWdPRmdQQ05QaktDNVlUUzdnYWIxU2thRTFqTmlDbDgya0wxSXBw?oc=5",
+          "published_date": "Tue, 21 Apr 2026 07:00:00 GMT",
+          "time": "Tue, 21 Apr 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: southcom.mil",
+          "summary": "Fallback discovery via Google News RSS; publisher: southcom.mil",
+          "source": "southcom.mil",
+          "sourceLabel": "southcom.mil",
+          "sourceType": "fallback-news",
+          "fallbackFor": "SOUTHCOM Official Reporting — GDELT Mirror",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
       "id": "53f42c51620f8065",
       "title": "UNRWA Commissioner-General: Unprecedented Violation of UN Premises and International Law in East Jerusalem - UNRWA",
       "category": "general",
@@ -2599,8 +2306,8 @@
       ]
     },
     {
-      "id": "42337819cacfb6b5",
-      "title": "CNN Condemns the White House’s Attacks on Journalist Kristen Holmes: Here’s What to Know - Time Magazine",
+      "id": "7b92db4b9492fdb8",
+      "title": "CNN Condemns the White House’s Attacks on Journalist Kristen Holmes: Here’s What to Know - time.com",
       "category": "general",
       "confidence": "low",
       "reportCount": 1,
@@ -2616,14 +2323,14 @@
       ],
       "reports": [
         {
-          "title": "CNN Condemns the White House’s Attacks on Journalist Kristen Holmes: Here’s What to Know - Time Magazine",
+          "title": "CNN Condemns the White House’s Attacks on Journalist Kristen Holmes: Here’s What to Know - time.com",
           "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPUTVldTRmSVpjQmJyZl9KZTctYVF3VWtzbnl4M0ZPNGg1Z1VpMmJKeU1haWExX21tNEdaWmQzNENEMjRWX1pkTXh5cHdaMGVxT1Bza2xzTDA5S194U0NwR1NTNVA4S21PVkFqMlc5YzA0WTNneVBLUXNiNkhGZVVVLXpBOU54Skw1N3RRaGE2NA?oc=5",
           "published_date": "Tue, 18 Aug 2026 07:00:00 GMT",
           "time": "Tue, 18 Aug 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Time Magazine",
-          "summary": "Fallback discovery via Google News RSS; publisher: Time Magazine",
-          "source": "Time Magazine",
-          "sourceLabel": "Time Magazine",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: time.com",
+          "summary": "Fallback discovery via Google News RSS; publisher: time.com",
+          "source": "time.com",
+          "sourceLabel": "time.com",
           "sourceType": "fallback-news",
           "fallbackFor": "X @WhiteHouse",
           "credit_metadata": "Google News RSS fallback"
@@ -2698,8 +2405,8 @@
       ]
     },
     {
-      "id": "16467bf106f0762c",
-      "title": "WATCH: Trump hosts Iraqi prime minister for bilateral meeting at the White House - pbs.org",
+      "id": "9f6c127ed7cf66a5",
+      "title": "WATCH: Trump hosts Iraqi prime minister for bilateral meeting at the White House - PBS",
       "category": "general",
       "confidence": "low",
       "reportCount": 1,
@@ -2717,14 +2424,14 @@
       ],
       "reports": [
         {
-          "title": "WATCH: Trump hosts Iraqi prime minister for bilateral meeting at the White House - pbs.org",
+          "title": "WATCH: Trump hosts Iraqi prime minister for bilateral meeting at the White House - PBS",
           "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPc041dnVVWDd3YkFmaHlaSHprMFFKQ0ZTeS1kTUJDTkdFdVgtdkcwcFF4UExYY0FFOUZrQWloUHBOUl9tLXJxaURvVU0zOUpNa2ZYUjduTm9ydXJrZ0NyVndQWjFQUm1SQVVsSjB1Y1lQalp6cmJIMWY0VHZRTEx1UV9aSFNUMEgwbmFWejEwY1BTeDViYlNBdEJHMzYxakwtM3UxSlpSUzV4cC1yN3VWbU4zYkR5OTNIUXhB0gHAAUFVX3lxTFBxd3pWOFVKZ2tvQ0xYbVRENDZ1NkVHZ1Zzc0w4ZDYzbWtzZ2RoZTRFNkxfNTU2cnlBd0x5NEtldTJTT09lYjkta09oS2o2Wnh3OUMzWGlMa1kydzBZVWg0enpLMG5za3Z3TkVmQTNCZlZUVU5NYzYyNG5rOUdxRlBRMnlEaXFwUkplb2pCMXlicmpsLUVCX3dDblp2UlZVejVuNEVBdkxMMlBYcFEzeXd0Z3ZMUFdJeHhuR1VRZXR2Zg?oc=5",
           "published_date": "Tue, 14 Jul 2026 07:00:00 GMT",
           "time": "Tue, 14 Jul 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: pbs.org",
-          "summary": "Fallback discovery via Google News RSS; publisher: pbs.org",
-          "source": "pbs.org",
-          "sourceLabel": "pbs.org",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: PBS",
+          "summary": "Fallback discovery via Google News RSS; publisher: PBS",
+          "source": "PBS",
+          "sourceLabel": "PBS",
           "sourceType": "fallback-news",
           "fallbackFor": "X @WhiteHouse",
           "credit_metadata": "Google News RSS fallback"
@@ -2796,72 +2503,8 @@
       ]
     },
     {
-      "id": "8c11e607a88398bf",
-      "title": "Artemis III Crew Announced - NASA (.gov)",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Tue, 09 Jun 2026 07:00:00 GMT",
-      "lastSeen": "Tue, 09 Jun 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMib0FVX3lxTE05clE0VDlXM1Y5UWtvMEx3OEZnWjhHZnowT0dRUl9Hd3NzNjdUT1lrRnJya3drOXRzakNwdVhKaXo2dkJTcXRIc19CTHR0eVBTQjBQWVFuWnBvbXZBTExuNmkxaHNyWWN1OTZOR2Z5TQ?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Artemis III Crew Announced - NASA (.gov)",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE05clE0VDlXM1Y5UWtvMEx3OEZnWjhHZnowT0dRUl9Hd3NzNjdUT1lrRnJya3drOXRzakNwdVhKaXo2dkJTcXRIc19CTHR0eVBTQjBQWVFuWnBvbXZBTExuNmkxaHNyWWN1OTZOR2Z5TQ?oc=5",
-          "published_date": "Tue, 09 Jun 2026 07:00:00 GMT",
-          "time": "Tue, 09 Jun 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
-          "summary": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
-          "source": "NASA (.gov)",
-          "sourceLabel": "NASA (.gov)",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NASA",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "4a8f2ee61840cb78",
-      "title": "NASA Marches Toward Artemis III Mission in 2027, Names Crew Members - NASA (.gov)",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Tue, 09 Jun 2026 07:00:00 GMT",
-      "lastSeen": "Tue, 09 Jun 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdktGaVcxMXJwRExGNGtxRGhfaWlPZFFLeEdzS3VNWVlrWVhfdFZRVUd5LWRPVjFoSlZYUDItUWlySjQ3WFFRdHFteHhPN2dYS3JjTEdfSnVNSlAwWWp6Vk9SOVdNWWdyUVpuQ1huVEtqUTJVQWhiMDN1THhHOTZfek9CcnNzTXRZT1dPZjBKeUN4Mm94U2w3b3BPZVVFMm9NYlJj?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "NASA Marches Toward Artemis III Mission in 2027, Names Crew Members - NASA (.gov)",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdktGaVcxMXJwRExGNGtxRGhfaWlPZFFLeEdzS3VNWVlrWVhfdFZRVUd5LWRPVjFoSlZYUDItUWlySjQ3WFFRdHFteHhPN2dYS3JjTEdfSnVNSlAwWWp6Vk9SOVdNWWdyUVpuQ1huVEtqUTJVQWhiMDN1THhHOTZfek9CcnNzTXRZT1dPZjBKeUN4Mm94U2w3b3BPZVVFMm9NYlJj?oc=5",
-          "published_date": "Tue, 09 Jun 2026 07:00:00 GMT",
-          "time": "Tue, 09 Jun 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
-          "summary": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
-          "source": "NASA (.gov)",
-          "sourceLabel": "NASA (.gov)",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NASA",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "6650001485b6b9cf",
-      "title": "Priorities - un.org",
+      "id": "0c1102e15b92ae3e",
+      "title": "Priorities - Welcome to the United Nations",
       "category": "general",
       "confidence": "low",
       "reportCount": 1,
@@ -2877,14 +2520,14 @@
       ],
       "reports": [
         {
-          "title": "Priorities - un.org",
+          "title": "Priorities - Welcome to the United Nations",
           "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9DdmZUOG9xLWQySkUyMkpzcHdBWUNNbG5ORnFvVXNYcUpERkt1M2lkMm1aeGFNang4b0M5QnZCYjFLMDlKMWloS2ltMGR2UQ?oc=5",
           "published_date": "Tue, 08 Sep 2026 07:00:00 GMT",
           "time": "Tue, 08 Sep 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: un.org",
-          "summary": "Fallback discovery via Google News RSS; publisher: un.org",
-          "source": "un.org",
-          "sourceLabel": "un.org",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Welcome to the United Nations",
+          "summary": "Fallback discovery via Google News RSS; publisher: Welcome to the United Nations",
+          "source": "Welcome to the United Nations",
+          "sourceLabel": "Welcome to the United Nations",
           "sourceType": "fallback-news",
           "fallbackFor": "X @UN",
           "credit_metadata": "Google News RSS fallback"
@@ -2926,40 +2569,6 @@
       ]
     },
     {
-      "id": "c22cdf1933d25dc4",
-      "title": "CNN Defends Reporting On Iran Statement After Trump Claims It Was Fake - Deadline",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [
-        "iran"
-      ],
-      "firstSeen": "Tue, 07 Apr 2026 07:00:00 GMT",
-      "lastSeen": "Tue, 07 Apr 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMic0FVX3lxTE1Kd0s5cXBtRUZKZllxZ25fTzF2WnZPU0NYMC1QWVdaOGw2R09McWNjNTd4TUxOQTI5ejBmRUdVcE1XS0NhWnpwQnk0LWFmUXU1Q0FyWDh6b01EZ3BIZTNTVEVqUzJxeVk0dXNsUFdlUm84QkE?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "CNN Defends Reporting On Iran Statement After Trump Claims It Was Fake - Deadline",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1Kd0s5cXBtRUZKZllxZ25fTzF2WnZPU0NYMC1QWVdaOGw2R09McWNjNTd4TUxOQTI5ejBmRUdVcE1XS0NhWnpwQnk0LWFmUXU1Q0FyWDh6b01EZ3BIZTNTVEVqUzJxeVk0dXNsUFdlUm84QkE?oc=5",
-          "published_date": "Tue, 07 Apr 2026 07:00:00 GMT",
-          "time": "Tue, 07 Apr 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Deadline",
-          "summary": "Fallback discovery via Google News RSS; publisher: Deadline",
-          "source": "Deadline",
-          "sourceLabel": "Deadline",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @WhiteHouse",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
       "id": "088eb82dc58f9a39",
       "title": "January 6: A Date Which Will Live in Infamy - The White House (.gov)",
       "category": "general",
@@ -2992,8 +2601,8 @@
       ]
     },
     {
-      "id": "ebcbf6d19879a36e",
-      "title": "2 killed in latest U.S. strike on alleged drug boat in the Pacific, Hegseth says - cbsnews.com",
+      "id": "f582d669468bb1d4",
+      "title": "2 killed in latest U.S. strike on alleged drug boat in the Pacific, Hegseth says - CBS News",
       "category": "conflict",
       "confidence": "low",
       "reportCount": 1,
@@ -3009,14 +2618,14 @@
       ],
       "reports": [
         {
-          "title": "2 killed in latest U.S. strike on alleged drug boat in the Pacific, Hegseth says - cbsnews.com",
+          "title": "2 killed in latest U.S. strike on alleged drug boat in the Pacific, Hegseth says - CBS News",
           "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxONlpKSzlqM0pGaHRtaW83RUpyUWNnQVhfMm5Ud2pyUkhqa3lCLU03N0VjWTRhWnl0bXZEZEcteEZjTlVUT2xzQXplMm9tcm1OM2M2ckhkOXU5Z2RhU1l6cVdkQmFuTmhrWjR4UU9jaklrU0NJZWtFTnBDdkdRX3ZERGtVck5PRnBEbk92djFJZndJSGc3bTFWT3NOeGhqN00?oc=5",
           "published_date": "Tue, 04 Nov 2025 08:00:00 GMT",
           "time": "Tue, 04 Nov 2025 08:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: cbsnews.com",
-          "summary": "Fallback discovery via Google News RSS; publisher: cbsnews.com",
-          "source": "cbsnews.com",
-          "sourceLabel": "cbsnews.com",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: CBS News",
+          "summary": "Fallback discovery via Google News RSS; publisher: CBS News",
+          "source": "CBS News",
+          "sourceLabel": "CBS News",
           "sourceType": "fallback-news",
           "fallbackFor": "GDELT — Western Hemisphere Counter-Cartel",
           "credit_metadata": "Google News RSS fallback"
@@ -3056,6 +2665,40 @@
       ]
     },
     {
+      "id": "3bd03c497f34f858",
+      "title": "U.S. military creates new command to target cartels in the Americas - Miami Herald",
+      "category": "conflict",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [
+        "america"
+      ],
+      "firstSeen": "Tue, 04 Aug 2026 07:00:00 GMT",
+      "lastSeen": "Tue, 04 Aug 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMikAFBVV95cUxNdjkxNTlsczJFS25WSi1pa3RSOFJ2MGNMMGNIOGVVaVAzSUdxVjNTYUtNeTNodTRuMGZDcV9EWlN4MXplLW9TNXVHVTU4T3hqR0p3Y3k0aVBQYXB6UmRDVW9oQnhFX0FrcXVkNmM2QmMwTlYxTmIwZmlibDZySFBhYWVvLUNEbXNXOWZJQTlzN07SAZABQVVfeXFMTkJldm4yVEdqSF9hbGNJQUMzMUNhSXl1U3lYNEVOQWVpV25ORmZfbmtzMXpFQzduWVlvMkNrbUNmZU9QWkVJNGtNbVM3Wk5WV3hhQjZNcGRXamVIRUhqXzRrTllwMTlNRmxiZ3pWZUFlR042ZDMzbDh1S0pvMUZERGM4WHdob2FLa1JCa2lfQ014?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "U.S. military creates new command to target cartels in the Americas - Miami Herald",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNdjkxNTlsczJFS25WSi1pa3RSOFJ2MGNMMGNIOGVVaVAzSUdxVjNTYUtNeTNodTRuMGZDcV9EWlN4MXplLW9TNXVHVTU4T3hqR0p3Y3k0aVBQYXB6UmRDVW9oQnhFX0FrcXVkNmM2QmMwTlYxTmIwZmlibDZySFBhYWVvLUNEbXNXOWZJQTlzN07SAZABQVVfeXFMTkJldm4yVEdqSF9hbGNJQUMzMUNhSXl1U3lYNEVOQWVpV25ORmZfbmtzMXpFQzduWVlvMkNrbUNmZU9QWkVJNGtNbVM3Wk5WV3hhQjZNcGRXamVIRUhqXzRrTllwMTlNRmxiZ3pWZUFlR042ZDMzbDh1S0pvMUZERGM4WHdob2FLa1JCa2lfQ014?oc=5",
+          "published_date": "Tue, 04 Aug 2026 07:00:00 GMT",
+          "time": "Tue, 04 Aug 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Miami Herald",
+          "summary": "Fallback discovery via Google News RSS; publisher: Miami Herald",
+          "source": "Miami Herald",
+          "sourceLabel": "Miami Herald",
+          "sourceType": "fallback-news",
+          "fallbackFor": "SOUTHCOM Official Reporting — GDELT Mirror",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
       "id": "9f0d864786ad8692",
       "title": "WHCA Announces Summer Dinner - White House Correspondents' Association",
       "category": "general",
@@ -3081,6 +2724,201 @@
           "summary": "Fallback discovery via Google News RSS; publisher: White House Correspondents' Association",
           "source": "White House Correspondents' Association",
           "sourceLabel": "White House Correspondents' Association",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @WhiteHouse",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "43314375fc6ba191",
+      "title": "NASA Selects Blue Origin as Mars Telecommunications Network Provider - NASA (.gov)",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Tue, 01 Sep 2026 07:00:00 GMT",
+      "lastSeen": "Tue, 01 Sep 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMipgFBVV95cUxPV3U0MUFqREpxdEJvbjZSYXpKVGhzbS1OeE1XZ2d3Q00yellQNGNxZTJEOERXQXJiejZNTHF6eXpkV0xiVXE0YWtrMWpZaHlnSHltNjdGN29XX2FGVTFJVXdQcWpZWjFsTlZ6MlRMXzllRVoxenhFeTZ4eE4ySld5RFRNTEJ1b203TEMtSkxPOUxzM0RWbXhoN0JWUFFlbmd2OTBiR2xR?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "NASA Selects Blue Origin as Mars Telecommunications Network Provider - NASA (.gov)",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPV3U0MUFqREpxdEJvbjZSYXpKVGhzbS1OeE1XZ2d3Q00yellQNGNxZTJEOERXQXJiejZNTHF6eXpkV0xiVXE0YWtrMWpZaHlnSHltNjdGN29XX2FGVTFJVXdQcWpZWjFsTlZ6MlRMXzllRVoxenhFeTZ4eE4ySld5RFRNTEJ1b203TEMtSkxPOUxzM0RWbXhoN0JWUFFlbmd2OTBiR2xR?oc=5",
+          "published_date": "Tue, 01 Sep 2026 07:00:00 GMT",
+          "time": "Tue, 01 Sep 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
+          "summary": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
+          "source": "NASA (.gov)",
+          "sourceLabel": "NASA (.gov)",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NASA",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "bbf298746373ecb3",
+      "title": "Assessing the Facts and Legal Questions About the U.S. Strikes on Alleged Drug Boats - FactCheck.org",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Thu, 30 Oct 2025 07:00:00 GMT",
+      "lastSeen": "Thu, 30 Oct 2025 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiugFBVV95cUxPSWo4YTN2TUk5SnNPa2VySzhEbl9wM2JQVEc3Nm9DVGh6ZlZfbWVTQ1Q3NnlBOXlaNmZpZ1pKS3d0V1FQQUFQU3lxMlFkUlBjdVowZlUwa20yU1c3SEhoZHJPSTVlS3NoX0FUb0NYaFIta0xZRmkwQTdsNkJCVlhxRHplTHhjbkd1U1JkNkstZEQ4QmNENHRFdlFXZHU4eld4RzFEUEJKLWlNUU1tUnFMejdmNTlUUGowQ1E?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "Assessing the Facts and Legal Questions About the U.S. Strikes on Alleged Drug Boats - FactCheck.org",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPSWo4YTN2TUk5SnNPa2VySzhEbl9wM2JQVEc3Nm9DVGh6ZlZfbWVTQ1Q3NnlBOXlaNmZpZ1pKS3d0V1FQQUFQU3lxMlFkUlBjdVowZlUwa20yU1c3SEhoZHJPSTVlS3NoX0FUb0NYaFIta0xZRmkwQTdsNkJCVlhxRHplTHhjbkd1U1JkNkstZEQ4QmNENHRFdlFXZHU4eld4RzFEUEJKLWlNUU1tUnFMejdmNTlUUGowQ1E?oc=5",
+          "published_date": "Thu, 30 Oct 2025 07:00:00 GMT",
+          "time": "Thu, 30 Oct 2025 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: FactCheck.org",
+          "summary": "Fallback discovery via Google News RSS; publisher: FactCheck.org",
+          "source": "FactCheck.org",
+          "sourceLabel": "FactCheck.org",
+          "sourceType": "fallback-news",
+          "fallbackFor": "GDELT — Western Hemisphere Counter-Cartel",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "2497bca4ae8ed6c3",
+      "title": "Trump’s latest declaration of an emergency leaves GOP allies scrambling again - washingtonpost.com",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Thu, 25 Jun 2026 07:00:00 GMT",
+      "lastSeen": "Thu, 25 Jun 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiwgFBVV95cUxORjJ5NHBzQndEWFJSQ3VKOU5PREQtTzR1RmV6Q3JUVGZxMTVYQXpMVGxtUUFYUGdVMnNndU80WkRGdlBxUUhiMmFZRU83c2lCSm8tTXlwSS1Wd2REa3dCc3Q1aVp1ZWVlUmF6Sm9VNGxIZjJZbDhxYkdqWUVKblBRZDFqeEY0OWtQaGxLaUxJVmlLcTRUZUNmVVJZXzlCTGN3VGdIUS1jcFpaRGZ2TGlpX1hLUDk1TUtyMHBnM2ZpbVdoZw?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "Trump’s latest declaration of an emergency leaves GOP allies scrambling again - washingtonpost.com",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxORjJ5NHBzQndEWFJSQ3VKOU5PREQtTzR1RmV6Q3JUVGZxMTVYQXpMVGxtUUFYUGdVMnNndU80WkRGdlBxUUhiMmFZRU83c2lCSm8tTXlwSS1Wd2REa3dCc3Q1aVp1ZWVlUmF6Sm9VNGxIZjJZbDhxYkdqWUVKblBRZDFqeEY0OWtQaGxLaUxJVmlLcTRUZUNmVVJZXzlCTGN3VGdIUS1jcFpaRGZ2TGlpX1hLUDk1TUtyMHBnM2ZpbVdoZw?oc=5",
+          "published_date": "Thu, 25 Jun 2026 07:00:00 GMT",
+          "time": "Thu, 25 Jun 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: washingtonpost.com",
+          "summary": "Fallback discovery via Google News RSS; publisher: washingtonpost.com",
+          "source": "washingtonpost.com",
+          "sourceLabel": "washingtonpost.com",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @WhiteHouse",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "5c37dc16a5577696",
+      "title": "Trump-Xi summit: Four key takeaways from the Washington, DC, meeting - Al Jazeera",
+      "category": "diplomatic",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Thu, 24 Sep 2026 23:54:31 GMT",
+      "lastSeen": "Thu, 24 Sep 2026 23:54:31 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiqgFBVV95cUxORDBwV3d5TTVkeFJpdjhwSDV3Y2JLNkxRd0pyQjhWLTZETGc0ZjZjN29LdlhObEJXd29zMzAza0tZZ0FwN3BaN3ZMc2g0N2tCZUhPUnpfVU5nWjBrNFVZbHRRLTIxUUZQZHRfYnRfOXBpQWZaRFR0dkcxbE5WcjEzeDdZQjNuM3dpekVWbDllS3lBVmNDVXBIVUFwMW5OTDZFYU1Ub0ZTa2ZfQdIBrwFBVV95cUxPN3ZkbFVZTXRoNE02bHo2bXBkLTVybmtnT0JjYWJRZFVZbm9ULTJJeXhuLW1IbUhJRDNoMXpHc3NCM3M5MjFPakN1aC1sVTYyc21wWWFJMHZWNWg2N0xDWV9UZTA3RlJXZGNRZ2lfQm9SS3JyT3p2dC1pZ1dEWTBLV1FuZVBwU0JsbnZBVVJwd21oeTBoemZOalpjOVlyemRxeFdmZEZyUDlvYmFjZE9V?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "Trump-Xi summit: Four key takeaways from the Washington, DC, meeting - Al Jazeera",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxORDBwV3d5TTVkeFJpdjhwSDV3Y2JLNkxRd0pyQjhWLTZETGc0ZjZjN29LdlhObEJXd29zMzAza0tZZ0FwN3BaN3ZMc2g0N2tCZUhPUnpfVU5nWjBrNFVZbHRRLTIxUUZQZHRfYnRfOXBpQWZaRFR0dkcxbE5WcjEzeDdZQjNuM3dpekVWbDllS3lBVmNDVXBIVUFwMW5OTDZFYU1Ub0ZTa2ZfQdIBrwFBVV95cUxPN3ZkbFVZTXRoNE02bHo2bXBkLTVybmtnT0JjYWJRZFVZbm9ULTJJeXhuLW1IbUhJRDNoMXpHc3NCM3M5MjFPakN1aC1sVTYyc21wWWFJMHZWNWg2N0xDWV9UZTA3RlJXZGNRZ2lfQm9SS3JyT3p2dC1pZ1dEWTBLV1FuZVBwU0JsbnZBVVJwd21oeTBoemZOalpjOVlyemRxeFdmZEZyUDlvYmFjZE9V?oc=5",
+          "published_date": "Thu, 24 Sep 2026 23:54:31 GMT",
+          "time": "Thu, 24 Sep 2026 23:54:31 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Al Jazeera",
+          "summary": "Fallback discovery via Google News RSS; publisher: Al Jazeera",
+          "source": "Al Jazeera",
+          "sourceLabel": "Al Jazeera",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @POTUS",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "f4cd5add648df439",
+      "title": "US Democrats criticize lavish Trump-Xi summit as lacking substance - Reuters",
+      "category": "diplomatic",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Thu, 24 Sep 2026 23:12:10 GMT",
+      "lastSeen": "Thu, 24 Sep 2026 23:12:10 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMitwFBVV95cUxOTUZjSjY1VWloRVlHOGNncVhDOEktaDhRS213am9WcVFoQm5WazVBT09USEdTdy1vamlHQktXMmd2S3FwM2Y2eUhsd2FPWGxQNmR6cEJBcVZfcFBZbWlMQnFDWDQ3dGd6SjFyRlNoTDhxOU8tckZtblZOSzJPSG5IVTBqS0ptZlZtaUUtSkQ0MDVIaE5TUFowTUYzQXlfamk1UTdKTkp6OW0zd1NyTTBlclFlQzFzcVU?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "US Democrats criticize lavish Trump-Xi summit as lacking substance - Reuters",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOTUZjSjY1VWloRVlHOGNncVhDOEktaDhRS213am9WcVFoQm5WazVBT09USEdTdy1vamlHQktXMmd2S3FwM2Y2eUhsd2FPWGxQNmR6cEJBcVZfcFBZbWlMQnFDWDQ3dGd6SjFyRlNoTDhxOU8tckZtblZOSzJPSG5IVTBqS0ptZlZtaUUtSkQ0MDVIaE5TUFowTUYzQXlfamk1UTdKTkp6OW0zd1NyTTBlclFlQzFzcVU?oc=5",
+          "published_date": "Thu, 24 Sep 2026 23:12:10 GMT",
+          "time": "Thu, 24 Sep 2026 23:12:10 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Reuters",
+          "summary": "Fallback discovery via Google News RSS; publisher: Reuters",
+          "source": "Reuters",
+          "sourceLabel": "Reuters",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @POTUS",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "d7e0db4cae1167c7",
+      "title": "Trump and Xi Jinping discuss Ukraine during White House meeting - Українська правда",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [
+        "uk",
+        "ukraine"
+      ],
+      "firstSeen": "Thu, 24 Sep 2026 22:50:00 GMT",
+      "lastSeen": "Thu, 24 Sep 2026 22:50:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiZEFVX3lxTE8tUmxlY0k2ZExIa2R3SmhHQ0Nvc19XWHNpUmtPb0E0d0s2VVRUV0xmUmVhd3pPWXd3Z0lsUk81YTBqSEkydlJmWEU1clBfaFpkMm1nT1ZjbVZxZGZQb3NKaDlXa2zSAXBBVV95cUxNenNQbVo5U3ByTnoxSkF0WER1dkdzM2daTktCaHRuZjk1VmZWQUtjWVhrZ0ZRZWlPVWN3aUxJUnFQdUpad0c2SDhlSDZuek1TbW53ZFJJOThPYVBhNW9TWVNFMjNRaFRRZWZDY2Ntb19N?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "Trump and Xi Jinping discuss Ukraine during White House meeting - Українська правда",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE8tUmxlY0k2ZExIa2R3SmhHQ0Nvc19XWHNpUmtPb0E0d0s2VVRUV0xmUmVhd3pPWXd3Z0lsUk81YTBqSEkydlJmWEU1clBfaFpkMm1nT1ZjbVZxZGZQb3NKaDlXa2zSAXBBVV95cUxNenNQbVo5U3ByTnoxSkF0WER1dkdzM2daTktCaHRuZjk1VmZWQUtjWVhrZ0ZRZWlPVWN3aUxJUnFQdUpad0c2SDhlSDZuek1TbW53ZFJJOThPYVBhNW9TWVNFMjNRaFRRZWZDY2Ntb19N?oc=5",
+          "published_date": "Thu, 24 Sep 2026 22:50:00 GMT",
+          "time": "Thu, 24 Sep 2026 22:50:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Українська правда",
+          "summary": "Fallback discovery via Google News RSS; publisher: Українська правда",
+          "source": "Українська правда",
+          "sourceLabel": "Українська правда",
           "sourceType": "fallback-news",
           "fallbackFor": "X @WhiteHouse",
           "credit_metadata": "Google News RSS fallback"
