@@ -1,36 +1,82 @@
 {
-  "updatedAt": "2026-09-26T13:53:08.938786Z",
+  "updatedAt": "2026-09-26T17:29:40.685851Z",
   "window": "recent public reporting",
   "method": "anchor-aware title clustering with category and publication-time agreement; candidate grouping only, not proof reports describe identical facts",
   "events": [
     {
-      "id": "12b6a5ddc24bed76",
-      "title": "M 4.7 - 73 km ENE of Tadine, New Caledonia",
+      "id": "0b8c3b2255ce9d85",
+      "title": "M 5.1 - 74 km ENE of Tadine, New Caledonia",
       "category": "general",
       "confidence": "low",
-      "reportCount": 16,
+      "reportCount": 13,
       "sourceCount": 1,
       "sources": [
         "earthquake.usgs.gov"
       ],
       "anchors": [],
-      "firstSeen": "2026-09-25T23:50:33.040000Z",
-      "lastSeen": "2026-09-26T12:57:59.040000Z",
+      "firstSeen": "2026-09-26T07:39:42.040000Z",
+      "lastSeen": "2026-09-26T15:20:48.040000Z",
       "urls": [
+        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txtn",
+        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txt9",
         "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txsy",
         "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txsz",
         "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txt0",
         "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txse",
         "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txs6",
-        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txs3",
-        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txs2",
-        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txrz"
+        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txs3"
       ],
       "reports": [
         {
-          "id": "80ce79a63476",
+          "id": "a0ea44c19fdc",
           "sourceLabel": "USGS M4.5+ Earthquakes — Past Day",
           "sourceName": "USGS M4.5+ Earthquakes — Past Day",
+          "sourceType": "climate-hazard",
+          "title": "M 5.1 - 74 km ENE of Tadine, New Caledonia",
+          "summary": "Time 2026-09-26 15:01:36 UTC 2026-09-26 15:01:36 UTC at epicenter Location 21.388°S 168.575°E Depth 10.00 km (6.21 mi)",
+          "summary_snippet": "Time 2026-09-26 15:01:36 UTC 2026-09-26 15:01:36 UTC at epicenter Location 21.388°S 168.575°E Depth 10.00 km (6.21 mi)",
+          "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txtn",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txtn",
+          "time": "2026-09-26T15:20:48.040000Z",
+          "published_date": "2026-09-26T15:20:48.040000Z",
+          "publishedDate": "2026-09-26T15:20:48.040000Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "usgs_m4_5_earthquakes_past_day",
+            "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
+            "feedFormat": "atom"
+          }
+        },
+        {
+          "id": "79b3299e2a69",
+          "sourceLabel": "USGS M4.5+ Earthquakes — Past Day",
+          "sourceName": "USGS M4.5+ Earthquakes — Past Day",
+          "sourceType": "climate-hazard",
+          "title": "M 4.8 - 86 km NE of Tadine, New Caledonia",
+          "summary": "Time 2026-09-26 13:48:50 UTC 2026-09-26 13:48:50 UTC at epicenter Location 21.063°S 168.533°E Depth 14.38 km (8.94 mi)",
+          "summary_snippet": "Time 2026-09-26 13:48:50 UTC 2026-09-26 13:48:50 UTC at epicenter Location 21.063°S 168.533°E Depth 14.38 km (8.94 mi)",
+          "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txt9",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txt9",
+          "time": "2026-09-26T14:19:09.040000Z",
+          "published_date": "2026-09-26T14:19:09.040000Z",
+          "publishedDate": "2026-09-26T14:19:09.040000Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "usgs_m4_5_earthquakes_past_day",
+            "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
+            "feedFormat": "atom"
+          }
+        },
+        {
+          "id": "80ce79a63476",
+          "sourceLabel": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txsy",
+          "sourceName": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txsy",
           "sourceType": "climate-hazard",
           "title": "M 4.7 - 73 km ENE of Tadine, New Caledonia",
           "summary": "Time 2026-09-26 12:11:01 UTC 2026-09-26 12:11:01 UTC at epicenter Location 21.265°S 168.518°E Depth 10.00 km (6.21 mi)",
@@ -52,8 +98,8 @@
         },
         {
           "id": "d192c21eacc4",
-          "sourceLabel": "USGS M4.5+ Earthquakes — Past Day",
-          "sourceName": "USGS M4.5+ Earthquakes — Past Day",
+          "sourceLabel": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txsz",
+          "sourceName": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txsz",
           "sourceType": "climate-hazard",
           "title": "M 5.0 - 76 km NE of Tadine, New Caledonia",
           "summary": "Time 2026-09-26 12:14:20 UTC 2026-09-26 12:14:20 UTC at epicenter Location 21.128°S 168.468°E Depth 10.00 km (6.21 mi)",
@@ -75,8 +121,8 @@
         },
         {
           "id": "07f0442896c5",
-          "sourceLabel": "USGS M4.5+ Earthquakes — Past Day",
-          "sourceName": "USGS M4.5+ Earthquakes — Past Day",
+          "sourceLabel": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txt0",
+          "sourceName": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txt0",
           "sourceType": "climate-hazard",
           "title": "M 5.2 - 58 km NE of Tadine, New Caledonia",
           "summary": "Time 2026-09-26 12:14:58 UTC 2026-09-26 12:14:58 UTC at epicenter Location 21.218°S 168.323°E Depth 10.00 km (6.21 mi)",
@@ -98,8 +144,8 @@
         },
         {
           "id": "23886800d88e",
-          "sourceLabel": "USGS M4.5+ Earthquakes — Past Day",
-          "sourceName": "USGS M4.5+ Earthquakes — Past Day",
+          "sourceLabel": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txse",
+          "sourceName": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txse",
           "sourceType": "climate-hazard",
           "title": "M 4.9 - 73 km ENE of Tadine, New Caledonia",
           "summary": "Time 2026-09-26 10:21:05 UTC 2026-09-26 10:21:05 UTC at epicenter Location 21.211°S 168.496°E Depth 10.00 km (6.21 mi)",
@@ -121,8 +167,8 @@
         },
         {
           "id": "28705a745174",
-          "sourceLabel": "USGS M4.5+ Earthquakes — Past Day",
-          "sourceName": "USGS M4.5+ Earthquakes — Past Day",
+          "sourceLabel": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txs6",
+          "sourceName": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txs6",
           "sourceType": "climate-hazard",
           "title": "M 4.7 - 71 km ENE of Tadine, New Caledonia",
           "summary": "Time 2026-09-26 09:07:19 UTC 2026-09-26 09:07:19 UTC at epicenter Location 21.237°S 168.487°E Depth 10.00 km (6.21 mi)",
@@ -144,8 +190,8 @@
         },
         {
           "id": "95bcf9633c2c",
-          "sourceLabel": "USGS M4.5+ Earthquakes — Past Day",
-          "sourceName": "USGS M4.5+ Earthquakes — Past Day",
+          "sourceLabel": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txs3",
+          "sourceName": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txs3",
           "sourceType": "climate-hazard",
           "title": "M 4.8 - 78 km ENE of Tadine, New Caledonia",
           "summary": "Time 2026-09-26 09:10:31 UTC 2026-09-26 09:10:31 UTC at epicenter Location 21.182°S 168.530°E Depth 10.00 km (6.21 mi)",
@@ -155,52 +201,6 @@
           "time": "2026-09-26T09:31:20.040000Z",
           "published_date": "2026-09-26T09:31:20.040000Z",
           "publishedDate": "2026-09-26T09:31:20.040000Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "usgs_m4_5_earthquakes_past_day",
-            "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
-            "feedFormat": "atom"
-          }
-        },
-        {
-          "id": "3813a224fe1e",
-          "sourceLabel": "USGS M4.5+ Earthquakes — Past Day",
-          "sourceName": "USGS M4.5+ Earthquakes — Past Day",
-          "sourceType": "climate-hazard",
-          "title": "M 4.8 - 97 km NE of Tadine, New Caledonia",
-          "summary": "Time 2026-09-26 09:08:05 UTC 2026-09-26 09:08:05 UTC at epicenter Location 21.006°S 168.624°E Depth 10.00 km (6.21 mi)",
-          "summary_snippet": "Time 2026-09-26 09:08:05 UTC 2026-09-26 09:08:05 UTC at epicenter Location 21.006°S 168.624°E Depth 10.00 km (6.21 mi)",
-          "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txs2",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txs2",
-          "time": "2026-09-26T09:27:24.040000Z",
-          "published_date": "2026-09-26T09:27:24.040000Z",
-          "publishedDate": "2026-09-26T09:27:24.040000Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "usgs_m4_5_earthquakes_past_day",
-            "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
-            "feedFormat": "atom"
-          }
-        },
-        {
-          "id": "d574e59e0327",
-          "sourceLabel": "USGS M4.5+ Earthquakes — Past Day",
-          "sourceName": "USGS M4.5+ Earthquakes — Past Day",
-          "sourceType": "climate-hazard",
-          "title": "M 4.7 - 97 km NE of Tadine, New Caledonia",
-          "summary": "Time 2026-09-26 08:54:03 UTC 2026-09-26 08:54:03 UTC at epicenter Location 21.017°S 168.633°E Depth 10.00 km (6.21 mi)",
-          "summary_snippet": "Time 2026-09-26 08:54:03 UTC 2026-09-26 08:54:03 UTC at epicenter Location 21.017°S 168.633°E Depth 10.00 km (6.21 mi)",
-          "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txrz",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000txrz",
-          "time": "2026-09-26T09:12:45.040000Z",
-          "published_date": "2026-09-26T09:12:45.040000Z",
-          "publishedDate": "2026-09-26T09:12:45.040000Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
@@ -307,34 +307,146 @@
       ]
     },
     {
+      "id": "f4bef1a266999855",
+      "title": "Green forest fire notification in Australia",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 4,
+      "sourceCount": 1,
+      "sources": [
+        "gdacs.org"
+      ],
+      "anchors": [],
+      "firstSeen": "2026-09-26T11:00:21Z",
+      "lastSeen": "2026-09-26T11:06:54Z",
+      "urls": [
+        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032412",
+        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032410",
+        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032409",
+        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032408"
+      ],
+      "reports": [
+        {
+          "id": "85b45685ce8b",
+          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032412",
+          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032412",
+          "sourceType": "climate-hazard",
+          "title": "Green forest fire notification in Australia",
+          "summary": "On 19/09/2026, a forest fire started in Australia, until 26/09/2026.",
+          "summary_snippet": "On 19/09/2026, a forest fire started in Australia, until 26/09/2026.",
+          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032412",
+          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032412",
+          "time": "2026-09-26T11:06:54Z",
+          "published_date": "2026-09-26T11:06:54Z",
+          "publishedDate": "2026-09-26T11:06:54Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "gdacs_global_disaster_alerts",
+            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "d9df53e8f555",
+          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032410",
+          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032410",
+          "sourceType": "climate-hazard",
+          "title": "Green forest fire notification in Australia",
+          "summary": "On 23/09/2026, a forest fire started in Australia, until 26/09/2026.",
+          "summary_snippet": "On 23/09/2026, a forest fire started in Australia, until 26/09/2026.",
+          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032410",
+          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032410",
+          "time": "2026-09-26T11:01:37Z",
+          "published_date": "2026-09-26T11:01:37Z",
+          "publishedDate": "2026-09-26T11:01:37Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "gdacs_global_disaster_alerts",
+            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "c62d94350862",
+          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032409",
+          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032409",
+          "sourceType": "climate-hazard",
+          "title": "Green forest fire notification in Australia",
+          "summary": "On 24/09/2026, a forest fire started in Australia, until 26/09/2026.",
+          "summary_snippet": "On 24/09/2026, a forest fire started in Australia, until 26/09/2026.",
+          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032409",
+          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032409",
+          "time": "2026-09-26T11:00:30Z",
+          "published_date": "2026-09-26T11:00:30Z",
+          "publishedDate": "2026-09-26T11:00:30Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "gdacs_global_disaster_alerts",
+            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "e759862504f8",
+          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032408",
+          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032408",
+          "sourceType": "climate-hazard",
+          "title": "Green forest fire notification in Australia",
+          "summary": "On 25/09/2026, a forest fire started in Australia, until 26/09/2026.",
+          "summary_snippet": "On 25/09/2026, a forest fire started in Australia, until 26/09/2026.",
+          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032408",
+          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032408",
+          "time": "2026-09-26T11:00:21Z",
+          "published_date": "2026-09-26T11:00:21Z",
+          "publishedDate": "2026-09-26T11:00:21Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "gdacs_global_disaster_alerts",
+            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
       "id": "a73098cddd5360b5",
       "title": "China, US to open AI 'communication channel' after summit",
       "category": "diplomatic",
       "confidence": "high",
-      "reportCount": 4,
-      "sourceCount": 4,
+      "reportCount": 3,
+      "sourceCount": 3,
       "sources": [
         "rfi.fr",
-        "aljazeera.com",
-        "channelnewsasia.com",
-        "news.google.com"
+        "news.google.com",
+        "aljazeera.com"
       ],
       "anchors": [
         "china"
       ],
-      "firstSeen": "2026-09-26T05:59:00Z",
-      "lastSeen": "Sat, 26 Sep 2026 09:07:18 GMT",
+      "firstSeen": "2026-09-26T09:02:10Z",
+      "lastSeen": "2026-09-26T09:28:35Z",
       "urls": [
         "https://www.rfi.fr/en/international/20260926-china-us-to-open-ai-communication-channel-after-summit",
-        "https://www.aljazeera.com/news/2026/9/26/china-us-to-open-ai-communication-channel-after-summit-white-house-says?traffic_source=rss",
-        "https://www.channelnewsasia.com/world/united-states-china-ai-communication-channel-6412426",
-        "https://news.google.com/rss/articles/CBMisgFBVV95cUxPSlV4Q3ViaXhtVTVPODZkRHRpYjdXS0hvUWE1UnAzNWFSSWhFN1NLd2g0ZDZmUlJKWW81b0lUNk9rVnNUMF9Xa3lSa1NLdWhEZzBaYXQ3RF9ObHpLNTdqM09zNzJpa0tNeVFBWkpjeTJxempabkd2Z25EalNXY2RRUzdraTV3UWxqOGFjcEZadjRRVEpJOW9mOFMwX0JieWpwdXczNHBoTURiYTBtajJUa0xB0gG3AUFVX3lxTE1TamZEbF9mVV81UXhhalVNc2l4WFhWNzBqS2tjWmhpUnBnZWc3Y2pfQnU3Sld5MEM5U2V6WlBfRjg1MGtjZXNrMlp1T3lUcVFyS2drYXFUaFBjYVZOYUxqVHN3b0VRSGtOajUxcmpjTHBWbEVSUi05WHNIR3RIcURVS1FVOExWZkdRT0hjYUcxbDloWjNlNlZmbmJmd2wzbGpPcEpKMG84cU1IaXdMSXo5YkprbkFQUQ?oc=5"
+        "https://news.google.com/rss/articles/CBMisgFBVV95cUxPSlV4Q3ViaXhtVTVPODZkRHRpYjdXS0hvUWE1UnAzNWFSSWhFN1NLd2g0ZDZmUlJKWW81b0lUNk9rVnNUMF9Xa3lSa1NLdWhEZzBaYXQ3RF9ObHpLNTdqM09zNzJpa0tNeVFBWkpjeTJxempabkd2Z25EalNXY2RRUzdraTV3UWxqOGFjcEZadjRRVEpJOW9mOFMwX0JieWpwdXczNHBoTURiYTBtajJUa0xB0gG3AUFVX3lxTE1TamZEbF9mVV81UXhhalVNc2l4WFhWNzBqS2tjWmhpUnBnZWc3Y2pfQnU3Sld5MEM5U2V6WlBfRjg1MGtjZXNrMlp1T3lUcVFyS2drYXFUaFBjYVZOYUxqVHN3b0VRSGtOajUxcmpjTHBWbEVSUi05WHNIR3RIcURVS1FVOExWZkdRT0hjYUcxbDloWjNlNlZmbmJmd2wzbGpPcEpKMG84cU1IaXdMSXo5YkprbkFQUQ?oc=5",
+        "https://www.aljazeera.com/news/2026/9/26/china-us-to-open-ai-communication-channel-after-summit-white-house-says?traffic_source=rss"
       ],
       "reports": [
         {
           "id": "38a32cc39584",
-          "sourceLabel": "RFI World",
-          "sourceName": "RFI World",
+          "sourceLabel": "https://www.rfi.fr/en/international/20260926-china-us-to-open-ai-communication-channel-after-summit",
+          "sourceName": "https://www.rfi.fr/en/international/20260926-china-us-to-open-ai-communication-channel-after-summit",
           "sourceType": "international",
           "title": "China, US to open AI 'communication channel' after summit",
           "summary": "China and the United States agreed to set up a \"communication channel\" for artificial intelligence incidents, both sides said, after a Washington summit short on breakthroughs.",
@@ -355,9 +467,30 @@
           }
         },
         {
-          "id": "8884cb4fe214",
+          "title": "China, US to open AI ‘communication channel’ after summit, White House says - Al Jazeera",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPSlV4Q3ViaXhtVTVPODZkRHRpYjdXS0hvUWE1UnAzNWFSSWhFN1NLd2g0ZDZmUlJKWW81b0lUNk9rVnNUMF9Xa3lSa1NLdWhEZzBaYXQ3RF9ObHpLNTdqM09zNzJpa0tNeVFBWkpjeTJxempabkd2Z25EalNXY2RRUzdraTV3UWxqOGFjcEZadjRRVEpJOW9mOFMwX0JieWpwdXczNHBoTURiYTBtajJUa0xB0gG3AUFVX3lxTE1TamZEbF9mVV81UXhhalVNc2l4WFhWNzBqS2tjWmhpUnBnZWc3Y2pfQnU3Sld5MEM5U2V6WlBfRjg1MGtjZXNrMlp1T3lUcVFyS2drYXFUaFBjYVZOYUxqVHN3b0VRSGtOajUxcmpjTHBWbEVSUi05WHNIR3RIcURVS1FVOExWZkdRT0hjYUcxbDloWjNlNlZmbmJmd2wzbGpPcEpKMG84cU1IaXdMSXo5YkprbkFQUQ?oc=5",
+          "published_date": "2026-09-26T09:07:18Z",
+          "time": "2026-09-26T09:07:18Z",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Al Jazeera",
+          "summary": "Fallback discovery via Google News RSS; publisher: Al Jazeera",
+          "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPSlV4Q3ViaXhtVTVPODZkRHRpYjdXS0hvUWE1UnAzNWFSSWhFN1NLd2g0ZDZmUlJKWW81b0lUNk9rVnNUMF9Xa3lSa1NLdWhEZzBaYXQ3RF9ObHpLNTdqM09zNzJpa0tNeVFBWkpjeTJxempabkd2Z25EalNXY2RRUzdraTV3UWxqOGFjcEZadjRRVEpJOW9mOFMwX0JieWpwdXczNHBoTURiYTBtajJUa0xB0gG3AUFVX3lxTE1TamZEbF9mVV81UXhhalVNc2l4WFhWNzBqS2tjWmhpUnBnZWc3Y2pfQnU3Sld5MEM5U2V6WlBfRjg1MGtjZXNrMlp1T3lUcVFyS2drYXFUaFBjYVZOYUxqVHN3b0VRSGtOajUxcmpjTHBWbEVSUi05WHNIR3RIcURVS1FVOExWZkdRT0hjYUcxbDloWjNlNlZmbmJmd2wzbGpPcEpKMG84cU1IaXdMSXo5YkprbkFQUQ?oc=5",
           "sourceLabel": "Al Jazeera",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @POTUS",
+          "credit_metadata": "Google News RSS fallback",
+          "id": "8b6a33c6cdc3",
           "sourceName": "Al Jazeera",
+          "publishedDate": "2026-09-26T09:07:18Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": "Google News RSS fallback"
+        },
+        {
+          "id": "8884cb4fe214",
+          "sourceLabel": "https://www.aljazeera.com/news/2026/9/26/china-us-to-open-ai-communication-channel-after-summit-white-house-says?traffic_source=rss",
+          "sourceName": "https://www.aljazeera.com/news/2026/9/26/china-us-to-open-ai-communication-channel-after-summit-white-house-says?traffic_source=rss",
           "sourceType": "international",
           "title": "China, US to open AI ‘communication channel’ after summit, White House says",
           "summary": "White House says the two countries agreed to open a 'bilateral communication channel' for AI incidents.",
@@ -376,39 +509,63 @@
             "sourceUrl": "https://www.aljazeera.com/xml/rss/all.xml",
             "feedFormat": "rss"
           }
+        }
+      ]
+    },
+    {
+      "id": "3a17d9e4b3bfb44f",
+      "title": "President Trump Delivers Remarks, Aug. 14, 2026 - The White House (.gov)",
+      "category": "political",
+      "confidence": "low",
+      "reportCount": 3,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Fri, 14 Aug 2026 07:00:00 GMT",
+      "lastSeen": "Wed, 22 Jul 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMihgFBVV95cUxOZHE5TDFsN1R3dDVueFd3bVFSY2xsTXNyNnM4MTU2TFhfYldwaE54NTRnSHE5LVgwdC1hRHpfOXc4OWVKcFd6OFlNcC1KSF92cEE4cGdzS1ZuOFIyWnlYckNWQ3d0b080Y1lNOUZKT1daQUpIQ0U2NDk1dko5TUZHNVZabmw4QQ?oc=5",
+        "https://news.google.com/rss/articles/CBMihgFBVV95cUxONHVia0VBLWsya09YTzRTOVQzZ1ZvNE1QYmx0Z3habXFWektabUd4QmxlOTd3QjdfMFQtanZzcW9yMWVKTXBHb0ZwUWF6QjQxeDh2bFAwYi1mZGJ2cXNvazhiVFVGekFTWGlYQllYdzFFMkpJWFZfWDJ2N2MzZm82cmprN05Zdw?oc=5",
+        "https://news.google.com/rss/articles/CBMihgFBVV95cUxPWTMtcWh6dzRKYUh3cGdyN0ZHV3JGYVN4anFvZ3NyQ0R3cXFVdHo0ZHVxemE0Smk1ZG9uRkJrUlF0RGt3WmNwdU9MYjY1WTh3MzA2eVZrRDlJZTRlLWV0VFpXSEFNUmEwbGR2c29TVExLM3BHVFJSM3NVbVpGMVJxbTE5TFZQUQ?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "President Trump Delivers Remarks, Aug. 14, 2026 - The White House (.gov)",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOZHE5TDFsN1R3dDVueFd3bVFSY2xsTXNyNnM4MTU2TFhfYldwaE54NTRnSHE5LVgwdC1hRHpfOXc4OWVKcFd6OFlNcC1KSF92cEE4cGdzS1ZuOFIyWnlYckNWQ3d0b080Y1lNOUZKT1daQUpIQ0U2NDk1dko5TUZHNVZabmw4QQ?oc=5",
+          "published_date": "Fri, 14 Aug 2026 07:00:00 GMT",
+          "time": "Fri, 14 Aug 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: The White House (.gov)",
+          "summary": "Fallback discovery via Google News RSS; publisher: The White House (.gov)",
+          "source": "The White House (.gov)",
+          "sourceLabel": "The White House (.gov)",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @POTUS",
+          "credit_metadata": "Google News RSS fallback"
         },
         {
-          "id": "c664aa2746b0",
-          "sourceLabel": "CNA World",
-          "sourceName": "CNA World",
-          "sourceType": "news",
-          "title": "China, US to open AI 'communication channel' after summit",
-          "summary": "US President Donald Trump and Chinese President Xi Jinping confirmed that they would meet a third and fourth time this year at international summits in China and the United States.",
-          "summary_snippet": "US President Donald Trump and Chinese President Xi Jinping confirmed that they would meet a third and fourth time this year at international summits in China and the United States.",
-          "source": "https://www.channelnewsasia.com/world/united-states-china-ai-communication-channel-6412426",
-          "url": "https://www.channelnewsasia.com/world/united-states-china-ai-communication-channel-6412426",
-          "time": "2026-09-26T05:59:00Z",
-          "published_date": "2026-09-26T05:59:00Z",
-          "publishedDate": "2026-09-26T05:59:00Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "cna_world",
-            "sourceUrl": "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml&category=6311",
-            "feedFormat": "rss"
-          }
+          "title": "President Trump Delivers Remarks, Jul. 24, 2026 - The White House (.gov)",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxONHVia0VBLWsya09YTzRTOVQzZ1ZvNE1QYmx0Z3habXFWektabUd4QmxlOTd3QjdfMFQtanZzcW9yMWVKTXBHb0ZwUWF6QjQxeDh2bFAwYi1mZGJ2cXNvazhiVFVGekFTWGlYQllYdzFFMkpJWFZfWDJ2N2MzZm82cmprN05Zdw?oc=5",
+          "published_date": "Fri, 24 Jul 2026 07:00:00 GMT",
+          "time": "Fri, 24 Jul 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: The White House (.gov)",
+          "summary": "Fallback discovery via Google News RSS; publisher: The White House (.gov)",
+          "source": "The White House (.gov)",
+          "sourceLabel": "The White House (.gov)",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @POTUS",
+          "credit_metadata": "Google News RSS fallback"
         },
         {
-          "title": "China, US to open AI ‘communication channel’ after summit, White House says - Al Jazeera",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPSlV4Q3ViaXhtVTVPODZkRHRpYjdXS0hvUWE1UnAzNWFSSWhFN1NLd2g0ZDZmUlJKWW81b0lUNk9rVnNUMF9Xa3lSa1NLdWhEZzBaYXQ3RF9ObHpLNTdqM09zNzJpa0tNeVFBWkpjeTJxempabkd2Z25EalNXY2RRUzdraTV3UWxqOGFjcEZadjRRVEpJOW9mOFMwX0JieWpwdXczNHBoTURiYTBtajJUa0xB0gG3AUFVX3lxTE1TamZEbF9mVV81UXhhalVNc2l4WFhWNzBqS2tjWmhpUnBnZWc3Y2pfQnU3Sld5MEM5U2V6WlBfRjg1MGtjZXNrMlp1T3lUcVFyS2drYXFUaFBjYVZOYUxqVHN3b0VRSGtOajUxcmpjTHBWbEVSUi05WHNIR3RIcURVS1FVOExWZkdRT0hjYUcxbDloWjNlNlZmbmJmd2wzbGpPcEpKMG84cU1IaXdMSXo5YkprbkFQUQ?oc=5",
-          "published_date": "Sat, 26 Sep 2026 09:07:18 GMT",
-          "time": "Sat, 26 Sep 2026 09:07:18 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Al Jazeera",
-          "summary": "Fallback discovery via Google News RSS; publisher: Al Jazeera",
-          "source": "Al Jazeera",
-          "sourceLabel": "Al Jazeera",
+          "title": "President Trump Delivers Remarks, Jul. 22, 2026 - The White House (.gov)",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPWTMtcWh6dzRKYUh3cGdyN0ZHV3JGYVN4anFvZ3NyQ0R3cXFVdHo0ZHVxemE0Smk1ZG9uRkJrUlF0RGt3WmNwdU9MYjY1WTh3MzA2eVZrRDlJZTRlLWV0VFpXSEFNUmEwbGR2c29TVExLM3BHVFJSM3NVbVpGMVJxbTE5TFZQUQ?oc=5",
+          "published_date": "Wed, 22 Jul 2026 07:00:00 GMT",
+          "time": "Wed, 22 Jul 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: The White House (.gov)",
+          "summary": "Fallback discovery via Google News RSS; publisher: The White House (.gov)",
+          "source": "The White House (.gov)",
+          "sourceLabel": "The White House (.gov)",
           "sourceType": "fallback-news",
           "fallbackFor": "X @POTUS",
           "credit_metadata": "Google News RSS fallback"
@@ -420,7 +577,7 @@
       "title": "Statement of condemnation by the North Atlantic Council of Russia's malicious cyber activities - North Atlantic Treaty Organization | NATO",
       "category": "diplomatic",
       "confidence": "low",
-      "reportCount": 4,
+      "reportCount": 3,
       "sourceCount": 1,
       "sources": [
         "news.google.com"
@@ -430,13 +587,12 @@
         "nato",
         "russia"
       ],
-      "firstSeen": "Fri, 18 Jul 2025 07:00:00 GMT",
+      "firstSeen": "Mon, 13 Jul 2026 07:00:00 GMT",
       "lastSeen": "Tue, 23 Sep 2025 07:00:00 GMT",
       "urls": [
         "https://news.google.com/rss/articles/CBMijgJBVV95cUxOdXFsbG5PYXZ0MHhiRUo2Z04zckU5STRuWEpTOXZkcVZBbnRFLUg3ZzdoUGR0OFViSUpONWhuU0J4dXI5Tk5qX19kT0dhczVQZFQ1MXF4RkpXMGNSUTd3NzRBbEJxNEZyT1FjV2NMQm01Z0hnaE8yUXdwVGJrRmcwckFlYjgwNWVjVWY3ck9hS3lta0c5WXQydmhtTUxseVIyRzlsZ2IxMFRDTF9BRHpHNGtYV3MxdkIxVVVGYm5vTVh5TGNudVB1NW1PTlVqT0loeW5vTXBZTldVNGZYYUljQ3JjQWlHVnphdWttYXktR2pZdV9JMGF1ekFtMmJ5bGdXUGQwYWpVdVFIeDRCY2c?oc=5",
         "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQMnctZExoMHJER1JGMDlSVWdXT3BjSHJvRk9xRGZ5QThFdkdhN0ZjU3d1a0hEXzkwNnNOSVlvX2w2OGtkMldLbEFRcVNCV3hYeXhUSjBJZ2c3cV9MajR3aFlxcjdOWDJvZjgtRE1lTlFPSDMwd0o0SXBwdnVpUWx5Zy13NzlfdzBIWjhQX2VPNUx5aFNocU9nOXEzaVEzTEZoZUFaY1VfWnBrdU9aS0tyb2steEg5Zmx0Y2tlSHpZbWxrQ3kzR3NubGdsVjA0M0VTcmFmSmhsMzRnc1RiZWxIaTdMU1NZSmRWMjU0dDZiMVZaLVJ5dmxhUkZOOA?oc=5",
-        "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPUTJDOVlBUVY2Z1FYeldub1dSMk1HWnNSV0pSWG9IQjdhcjdOY3VQOURRZXkxY0QxdzRWR0dIRzRaZEpaRkxTNDc3cjJUd0JoM3VfQ3ZhTHlQa21NcmJwcTktMnFVNkRhZzU1X1BHNllRX24zZWZsUWozd0dmUGkyVlZPT24tNDZyMnFWcFhuM1NKTEhlR3ZCZ0xmWHdjQV9MRjVNdXc5MVlIcUZNaGFQRm5QVXBCUVZJMnlab1Etd3liUldudHhERm1tVFprOWV6TEp2cnp3V0NzTW1rZXp1clQxWjhWLWM5UHU2dWFLWWlzWXJGTHc?oc=5",
-        "https://news.google.com/rss/articles/CBMimAJBVV95cUxOSmVyblUtTGxrWG00ZzFCZzVESDVmTHJ4NkgxdU5zd2tZaWVLOW9lcHFULTFoVFZSdllnOTBPdmUtSktGd0hZcXpERVpERTdqc0Jvc0djb2VGMDlyNDg1d2hoMERlY2JrQllOb1hBS0t4VDNIekxxeHlDMzY5N1VUZUlJYnJEdExlWHEweU1jQTI4Vk9RRkNBMEV3MlhMTmNTU3hZQU5jeVBYWVlYMHlEQWxoTG9SOTlhY2VXUjh1VkxJNnE1S1RmUVFncHRlYmZSemE1ZG9UdmpaajhfTVp1bmhHb0F2SVhLbDB0SWxVSTJQS0hRLTlPZTd1ZmpvRUxRczJjSXJUb09NTUZNcUZPdDdUa0xMcVFw?oc=5"
+        "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPUTJDOVlBUVY2Z1FYeldub1dSMk1HWnNSV0pSWG9IQjdhcjdOY3VQOURRZXkxY0QxdzRWR0dIRzRaZEpaRkxTNDc3cjJUd0JoM3VfQ3ZhTHlQa21NcmJwcTktMnFVNkRhZzU1X1BHNllRX24zZWZsUWozd0dmUGkyVlZPT24tNDZyMnFWcFhuM1NKTEhlR3ZCZ0xmWHdjQV9MRjVNdXc5MVlIcUZNaGFQRm5QVXBCUVZJMnlab1Etd3liUldudHhERm1tVFprOWV6TEp2cnp3V0NzTW1rZXp1clQxWjhWLWM5UHU2dWFLWWlzWXJGTHc?oc=5"
       ],
       "reports": [
         {
@@ -477,298 +633,246 @@
           "sourceType": "fallback-news",
           "fallbackFor": "X @NATO",
           "credit_metadata": "Google News RSS fallback"
-        },
-        {
-          "title": "Statement of condemnation by the North Atlantic Council concerning Russian malicious cyber activities - North Atlantic Treaty Organization | NATO",
-          "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxOSmVyblUtTGxrWG00ZzFCZzVESDVmTHJ4NkgxdU5zd2tZaWVLOW9lcHFULTFoVFZSdllnOTBPdmUtSktGd0hZcXpERVpERTdqc0Jvc0djb2VGMDlyNDg1d2hoMERlY2JrQllOb1hBS0t4VDNIekxxeHlDMzY5N1VUZUlJYnJEdExlWHEweU1jQTI4Vk9RRkNBMEV3MlhMTmNTU3hZQU5jeVBYWVlYMHlEQWxoTG9SOTlhY2VXUjh1VkxJNnE1S1RmUVFncHRlYmZSemE1ZG9UdmpaajhfTVp1bmhHb0F2SVhLbDB0SWxVSTJQS0hRLTlPZTd1ZmpvRUxRczJjSXJUb09NTUZNcUZPdDdUa0xMcVFw?oc=5",
-          "published_date": "Fri, 18 Jul 2025 07:00:00 GMT",
-          "time": "Fri, 18 Jul 2025 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "summary": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "source": "North Atlantic Treaty Organization | NATO",
-          "sourceLabel": "North Atlantic Treaty Organization | NATO",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NATO",
-          "credit_metadata": "Google News RSS fallback"
         }
       ]
     },
     {
-      "id": "f4bef1a266999855",
-      "title": "Green forest fire notification in Australia",
+      "id": "b9c4d6570964e84c",
+      "title": "Russian and Ukrainian strikes leave 10 dead as aerial war intensifies - CTV News",
       "category": "general",
       "confidence": "low",
-      "reportCount": 4,
+      "reportCount": 3,
       "sourceCount": 1,
       "sources": [
-        "gdacs.org"
-      ],
-      "anchors": [],
-      "firstSeen": "2026-09-26T11:00:21Z",
-      "lastSeen": "2026-09-26T11:06:54Z",
-      "urls": [
-        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032412",
-        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032410",
-        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032409",
-        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032408"
-      ],
-      "reports": [
-        {
-          "id": "85b45685ce8b",
-          "sourceLabel": "GDACS Global Disaster Alerts",
-          "sourceName": "GDACS Global Disaster Alerts",
-          "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in Australia",
-          "summary": "On 19/09/2026, a forest fire started in Australia, until 26/09/2026.",
-          "summary_snippet": "On 19/09/2026, a forest fire started in Australia, until 26/09/2026.",
-          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032412",
-          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032412",
-          "time": "2026-09-26T11:06:54Z",
-          "published_date": "2026-09-26T11:06:54Z",
-          "publishedDate": "2026-09-26T11:06:54Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "d9df53e8f555",
-          "sourceLabel": "GDACS Global Disaster Alerts",
-          "sourceName": "GDACS Global Disaster Alerts",
-          "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in Australia",
-          "summary": "On 23/09/2026, a forest fire started in Australia, until 26/09/2026.",
-          "summary_snippet": "On 23/09/2026, a forest fire started in Australia, until 26/09/2026.",
-          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032410",
-          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032410",
-          "time": "2026-09-26T11:01:37Z",
-          "published_date": "2026-09-26T11:01:37Z",
-          "publishedDate": "2026-09-26T11:01:37Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "c62d94350862",
-          "sourceLabel": "GDACS Global Disaster Alerts",
-          "sourceName": "GDACS Global Disaster Alerts",
-          "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in Australia",
-          "summary": "On 24/09/2026, a forest fire started in Australia, until 26/09/2026.",
-          "summary_snippet": "On 24/09/2026, a forest fire started in Australia, until 26/09/2026.",
-          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032409",
-          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032409",
-          "time": "2026-09-26T11:00:30Z",
-          "published_date": "2026-09-26T11:00:30Z",
-          "publishedDate": "2026-09-26T11:00:30Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "e759862504f8",
-          "sourceLabel": "GDACS Global Disaster Alerts",
-          "sourceName": "GDACS Global Disaster Alerts",
-          "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in Australia",
-          "summary": "On 25/09/2026, a forest fire started in Australia, until 26/09/2026.",
-          "summary_snippet": "On 25/09/2026, a forest fire started in Australia, until 26/09/2026.",
-          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032408",
-          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032408",
-          "time": "2026-09-26T11:00:21Z",
-          "published_date": "2026-09-26T11:00:21Z",
-          "publishedDate": "2026-09-26T11:00:21Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "47c8d26a3f6bfc94",
-      "title": "Iran awaits US move after WSJ report says Trump rejects peace plan",
-      "category": "general",
-      "confidence": "moderate",
-      "reportCount": 3,
-      "sourceCount": 2,
-      "sources": [
-        "channelnewsasia.com",
         "news.google.com"
       ],
       "anchors": [
-        "iran"
+        "russia",
+        "uk",
+        "ukraine"
       ],
-      "firstSeen": "2026-09-26T03:50:09Z",
-      "lastSeen": "2026-09-26T08:24:00Z",
+      "firstSeen": "2026-09-26T11:26:14Z",
+      "lastSeen": "2026-09-26T14:31:22Z",
       "urls": [
-        "https://www.channelnewsasia.com/world/iran-us-trump-reject-peace-plan-wsj-report-6412236",
-        "https://news.google.com/rss/articles/CBMipgFBVV95cUxOSXY5Y3NZMWRSVGo5YWZkNldYVnJEMlZ1d2hNa2NoWlVsM3BMdFVjbkVyUlN4STVuV2pYYmFxWk9fcm1GdWRTakRjUFVGQXVIRmRnMU5GbzlGY0RPUWNfVWRpeVd4TDdIXzZiQ1MtSTc0bGpCWWhoRVFDeUVFY3dRaTN6eDMzYXVrUk40Ny1sdVFabW04VWZIZmNwLU9STTJ1SEhmb3RB?oc=5",
-        "https://news.google.com/rss/articles/CBMib0FVX3lxTE5ndU1TNElyUzlYaWFDTGdoRE1QWjI4U2FOdVdxcEs3X2czTzBWWmlxSmFad3VQOWRST3NVRVZDV1FPVkhudU5rdkdrVEF6enR5SnRwSVVLc3QyZTd4bFZnV2VReFRLRDg1V0k5cU05VdIBfEFVX3lxTE1faU9INFZKM1ZRWThydi1raFZVSGRwN3FHYWstSG10T3NzbFJVMjQtcEZwR3RReDhVQVZSSWRoaWp5S3BlRGM0UUN3UnltSHgzNXRYaDk2WDdiV1prbjJraVRQS2ZoV01UdlJPRHNrTHB0elVHYlNfQncwSk0?oc=5"
+        "https://news.google.com/rss/articles/CBMirwFBVV95cUxPRmdJTDJnTHRVY25wbEh1dmdkNlFRMzdCcXRWekFQQktLTFFDR2RnYTdudjVFTkhNbnJKc083Z3d2bDRya1hxNmJQOU1RdHg3U2UzY1hPUXJxdUQ3VjRRczFRNC15TW9RY3F1THlWSl9HWGZvcU5EV1cyN3ZJSlIzc2NxRDFLS09DdTJveUU1QUZYSGRYcTIyeUc4S3prdW5YOUcybkdUQWtuVzNlMWZ3?oc=5",
+        "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNUHZZZkpSY3NydVk3dDY5Z1o1UlREZGRpVHRKYk4yYnFNNk93aEhhTHZNV0dkenRLcW1WZ2Z4ZUpUdHBHY3Q1V2s5aUhxdFpQcUU3Vk1WRGtUbjlMZlVzRWpOV1FQbEZLWk9iSlU5clBMWVBnRVJ1WHZ4WVNUcTNIdlpGM2o1Y2JxYmdtekdfMDJZckxnTlF2SUVMMGcwNG5JZEg2VmVkNGV4Slp5TFhGNkNSdHpjNlZFWjhZZzdaVmU3ZG5KVV81OUJ4WEhmenA3U3d5RUY4aDlUcUlZSWZsYVo2QdIB6gFBVV95cUxQRmtxTHpsVGlUVlg3bDZ2MVNSZk1BX3NhOWgxbXhuc2hKSGpjRzNoZlEycEQwZ2dwRVd2ckZVUnF2WnRXOTFKa1VDWm5zcjBXOUhiVW05UXBYeEdlNmlFVUJKa2tzT3AzMERDMVJ6ajI5WHJPdnE3bGtzU3JiTTZwYVlodkFLWF9xcjUtR21QYldDcHhBLVVmZGRqd29sSnpleW1YSHdIQ01rSDh4S2lpV21NMGdsOFducEhrQjJMQzhwQlhxNi1XM3hZLWJmZUZfWm0yam5TR3pzRGoxYnR5T0lTWU9VT2pmVlE?oc=5",
+        "https://news.google.com/rss/articles/CBMijwFBVV95cUxNeUVfWkhEOXdtRHpLZjNrcHNaZ0xMVmVMRnlySFFxZlJ6dzdUMkNtakFnQjNCaGVhVEs4SEdSQURpbWNBUkdCNUtWbkgxZTlYOU1vaFhTZmV4Rk1CY3MtQjY0ZUVlRWt6Ykx0SkE1MTNsSGUya0hHLWU5N1RsR1pBdV9XRWctS1Y2TWxqZHE3UQ?oc=5"
       ],
       "reports": [
         {
-          "id": "456a42219d1f",
-          "sourceLabel": "CNA World",
-          "sourceName": "CNA World",
-          "sourceType": "news",
-          "title": "Iran awaits US move after WSJ report says Trump rejects peace plan",
-          "summary": "Donald Trump is privately sceptical that Iran will meet his demands and has told his staff that he sees a renewed bombing campaign as likely after the November US midterm elections, the Wall Street Journal reported, citing unnamed US officials.",
-          "summary_snippet": "Donald Trump is privately sceptical that Iran will meet his demands and has told his staff that he sees a renewed bombing campaign as likely after the November US midterm elections, the Wall Street Journal reported, citing unnamed US officials.",
-          "source": "https://www.channelnewsasia.com/world/iran-us-trump-reject-peace-plan-wsj-report-6412236",
-          "url": "https://www.channelnewsasia.com/world/iran-us-trump-reject-peace-plan-wsj-report-6412236",
-          "time": "2026-09-26T08:24:00Z",
-          "published_date": "2026-09-26T08:24:00Z",
-          "publishedDate": "2026-09-26T08:24:00Z",
+          "id": "e28e44cc5816",
+          "sourceLabel": "Google News — Ukraine War",
+          "sourceName": "Google News — Ukraine War",
+          "sourceType": "europe-conflict",
+          "title": "Russian and Ukrainian strikes leave 10 dead as aerial war intensifies - CTV News",
+          "summary": "Russian and Ukrainian strikes leave 10 dead as aerial war intensifies CTV News",
+          "summary_snippet": "Russian and Ukrainian strikes leave 10 dead as aerial war intensifies CTV News",
+          "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPRmdJTDJnTHRVY25wbEh1dmdkNlFRMzdCcXRWekFQQktLTFFDR2RnYTdudjVFTkhNbnJKc083Z3d2bDRya1hxNmJQOU1RdHg3U2UzY1hPUXJxdUQ3VjRRczFRNC15TW9RY3F1THlWSl9HWGZvcU5EV1cyN3ZJSlIzc2NxRDFLS09DdTJveUU1QUZYSGRYcTIyeUc4S3prdW5YOUcybkdUQWtuVzNlMWZ3?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPRmdJTDJnTHRVY25wbEh1dmdkNlFRMzdCcXRWekFQQktLTFFDR2RnYTdudjVFTkhNbnJKc083Z3d2bDRya1hxNmJQOU1RdHg3U2UzY1hPUXJxdUQ3VjRRczFRNC15TW9RY3F1THlWSl9HWGZvcU5EV1cyN3ZJSlIzc2NxRDFLS09DdTJveUU1QUZYSGRYcTIyeUc4S3prdW5YOUcybkdUQWtuVzNlMWZ3?oc=5",
+          "time": "2026-09-26T14:31:22Z",
+          "published_date": "2026-09-26T14:31:22Z",
+          "publishedDate": "2026-09-26T14:31:22Z",
           "tag": "Breaking",
           "confidence": "DEVELOPING",
           "breaking": true,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "cna_world",
-            "sourceUrl": "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml&category=6311",
+            "sourceId": "google_news_ukraine_war",
+            "sourceUrl": "https://news.google.com/rss/search?q=Ukraine+Russia+war+frontline+missile+drone+strike+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
         },
         {
-          "id": "10ec60cf06f2",
-          "sourceLabel": "Google News — Yemen / Red Sea",
-          "sourceName": "Google News — Yemen / Red Sea",
-          "sourceType": "middle-east-conflict",
-          "title": "Iran awaits US move after WSJ report says Trump rejects peace plan - The Express Tribune",
-          "summary": "Iran awaits US move after WSJ report says Trump rejects peace plan The Express Tribune",
-          "summary_snippet": "Iran awaits US move after WSJ report says Trump rejects peace plan The Express Tribune",
-          "source": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOSXY5Y3NZMWRSVGo5YWZkNldYVnJEMlZ1d2hNa2NoWlVsM3BMdFVjbkVyUlN4STVuV2pYYmFxWk9fcm1GdWRTakRjUFVGQXVIRmRnMU5GbzlGY0RPUWNfVWRpeVd4TDdIXzZiQ1MtSTc0bGpCWWhoRVFDeUVFY3dRaTN6eDMzYXVrUk40Ny1sdVFabW04VWZIZmNwLU9STTJ1SEhmb3RB?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOSXY5Y3NZMWRSVGo5YWZkNldYVnJEMlZ1d2hNa2NoWlVsM3BMdFVjbkVyUlN4STVuV2pYYmFxWk9fcm1GdWRTakRjUFVGQXVIRmRnMU5GbzlGY0RPUWNfVWRpeVd4TDdIXzZiQ1MtSTc0bGpCWWhoRVFDeUVFY3dRaTN6eDMzYXVrUk40Ny1sdVFabW04VWZIZmNwLU9STTJ1SEhmb3RB?oc=5",
-          "time": "2026-09-26T06:11:49Z",
-          "published_date": "2026-09-26T06:11:49Z",
-          "publishedDate": "2026-09-26T06:11:49Z",
-          "tag": "World",
+          "id": "d6549b2a3a6b",
+          "sourceLabel": "Google News — Ukraine War",
+          "sourceName": "Google News — Ukraine War",
+          "sourceType": "europe-conflict",
+          "title": "At least 7 dead as Russia, Ukraine exchange strikes and aerial war intensifies - The Hindu",
+          "summary": "At least 7 dead as Russia, Ukraine exchange strikes and aerial war intensifies The Hindu",
+          "summary_snippet": "At least 7 dead as Russia, Ukraine exchange strikes and aerial war intensifies The Hindu",
+          "source": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNUHZZZkpSY3NydVk3dDY5Z1o1UlREZGRpVHRKYk4yYnFNNk93aEhhTHZNV0dkenRLcW1WZ2Z4ZUpUdHBHY3Q1V2s5aUhxdFpQcUU3Vk1WRGtUbjlMZlVzRWpOV1FQbEZLWk9iSlU5clBMWVBnRVJ1WHZ4WVNUcTNIdlpGM2o1Y2JxYmdtekdfMDJZckxnTlF2SUVMMGcwNG5JZEg2VmVkNGV4Slp5TFhGNkNSdHpjNlZFWjhZZzdaVmU3ZG5KVV81OUJ4WEhmenA3U3d5RUY4aDlUcUlZSWZsYVo2QdIB6gFBVV95cUxQRmtxTHpsVGlUVlg3bDZ2MVNSZk1BX3NhOWgxbXhuc2hKSGpjRzNoZlEycEQwZ2dwRVd2ckZVUnF2WnRXOTFKa1VDWm5zcjBXOUhiVW05UXBYeEdlNmlFVUJKa2tzT3AzMERDMVJ6ajI5WHJPdnE3bGtzU3JiTTZwYVlodkFLWF9xcjUtR21QYldDcHhBLVVmZGRqd29sSnpleW1YSHdIQ01rSDh4S2lpV21NMGdsOFducEhrQjJMQzhwQlhxNi1XM3hZLWJmZUZfWm0yam5TR3pzRGoxYnR5T0lTWU9VT2pmVlE?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNUHZZZkpSY3NydVk3dDY5Z1o1UlREZGRpVHRKYk4yYnFNNk93aEhhTHZNV0dkenRLcW1WZ2Z4ZUpUdHBHY3Q1V2s5aUhxdFpQcUU3Vk1WRGtUbjlMZlVzRWpOV1FQbEZLWk9iSlU5clBMWVBnRVJ1WHZ4WVNUcTNIdlpGM2o1Y2JxYmdtekdfMDJZckxnTlF2SUVMMGcwNG5JZEg2VmVkNGV4Slp5TFhGNkNSdHpjNlZFWjhZZzdaVmU3ZG5KVV81OUJ4WEhmenA3U3d5RUY4aDlUcUlZSWZsYVo2QdIB6gFBVV95cUxQRmtxTHpsVGlUVlg3bDZ2MVNSZk1BX3NhOWgxbXhuc2hKSGpjRzNoZlEycEQwZ2dwRVd2ckZVUnF2WnRXOTFKa1VDWm5zcjBXOUhiVW05UXBYeEdlNmlFVUJKa2tzT3AzMERDMVJ6ajI5WHJPdnE3bGtzU3JiTTZwYVlodkFLWF9xcjUtR21QYldDcHhBLVVmZGRqd29sSnpleW1YSHdIQ01rSDh4S2lpV21NMGdsOFducEhrQjJMQzhwQlhxNi1XM3hZLWJmZUZfWm0yam5TR3pzRGoxYnR5T0lTWU9VT2pmVlE?oc=5",
+          "time": "2026-09-26T12:10:13Z",
+          "published_date": "2026-09-26T12:10:13Z",
+          "publishedDate": "2026-09-26T12:10:13Z",
+          "tag": "Breaking",
           "confidence": "DEVELOPING",
-          "breaking": false,
+          "breaking": true,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "google_news_yemen_red_sea",
-            "sourceUrl": "https://news.google.com/rss/search?q=Yemen+Houthis+Red+Sea+shipping+missile+drone+conflict+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "sourceId": "google_news_ukraine_war",
+            "sourceUrl": "https://news.google.com/rss/search?q=Ukraine+Russia+war+frontline+missile+drone+strike+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
         },
         {
-          "id": "dec720fe49f7",
-          "sourceLabel": "Google News — Yemen / Red Sea",
-          "sourceName": "Google News — Yemen / Red Sea",
-          "sourceType": "middle-east-conflict",
-          "title": "Iran awaits US move after WSJ report says Trump rejects peace plan - en.prothomalo.com",
-          "summary": "Iran awaits US move after WSJ report says Trump rejects peace plan en.prothomalo.com",
-          "summary_snippet": "Iran awaits US move after WSJ report says Trump rejects peace plan en.prothomalo.com",
-          "source": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5ndU1TNElyUzlYaWFDTGdoRE1QWjI4U2FOdVdxcEs3X2czTzBWWmlxSmFad3VQOWRST3NVRVZDV1FPVkhudU5rdkdrVEF6enR5SnRwSVVLc3QyZTd4bFZnV2VReFRLRDg1V0k5cU05VdIBfEFVX3lxTE1faU9INFZKM1ZRWThydi1raFZVSGRwN3FHYWstSG10T3NzbFJVMjQtcEZwR3RReDhVQVZSSWRoaWp5S3BlRGM0UUN3UnltSHgzNXRYaDk2WDdiV1prbjJraVRQS2ZoV01UdlJPRHNrTHB0elVHYlNfQncwSk0?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5ndU1TNElyUzlYaWFDTGdoRE1QWjI4U2FOdVdxcEs3X2czTzBWWmlxSmFad3VQOWRST3NVRVZDV1FPVkhudU5rdkdrVEF6enR5SnRwSVVLc3QyZTd4bFZnV2VReFRLRDg1V0k5cU05VdIBfEFVX3lxTE1faU9INFZKM1ZRWThydi1raFZVSGRwN3FHYWstSG10T3NzbFJVMjQtcEZwR3RReDhVQVZSSWRoaWp5S3BlRGM0UUN3UnltSHgzNXRYaDk2WDdiV1prbjJraVRQS2ZoV01UdlJPRHNrTHB0elVHYlNfQncwSk0?oc=5",
-          "time": "2026-09-26T03:50:09Z",
-          "published_date": "2026-09-26T03:50:09Z",
-          "publishedDate": "2026-09-26T03:50:09Z",
-          "tag": "World",
+          "id": "5c2f31d88d9b",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNeUVfWkhEOXdtRHpLZjNrcHNaZ0xMVmVMRnlySFFxZlJ6dzdUMkNtakFnQjNCaGVhVEs4SEdSQURpbWNBUkdCNUtWbkgxZTlYOU1vaFhTZmV4Rk1CY3MtQjY0ZUVlRWt6Ykx0SkE1MTNsSGUya0hHLWU5N1RsR1pBdV9XRWctS1Y2TWxqZHE3UQ?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNeUVfWkhEOXdtRHpLZjNrcHNaZ0xMVmVMRnlySFFxZlJ6dzdUMkNtakFnQjNCaGVhVEs4SEdSQURpbWNBUkdCNUtWbkgxZTlYOU1vaFhTZmV4Rk1CY3MtQjY0ZUVlRWt6Ykx0SkE1MTNsSGUya0hHLWU5N1RsR1pBdV9XRWctS1Y2TWxqZHE3UQ?oc=5",
+          "sourceType": "europe-conflict",
+          "title": "Russia, Ukraine exchange strikes as air war intensifies - aapnews.aap.com.au",
+          "summary": "Russia, Ukraine exchange strikes as air war intensifies aapnews.aap.com.au",
+          "summary_snippet": "Russia, Ukraine exchange strikes as air war intensifies aapnews.aap.com.au",
+          "source": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNeUVfWkhEOXdtRHpLZjNrcHNaZ0xMVmVMRnlySFFxZlJ6dzdUMkNtakFnQjNCaGVhVEs4SEdSQURpbWNBUkdCNUtWbkgxZTlYOU1vaFhTZmV4Rk1CY3MtQjY0ZUVlRWt6Ykx0SkE1MTNsSGUya0hHLWU5N1RsR1pBdV9XRWctS1Y2TWxqZHE3UQ?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNeUVfWkhEOXdtRHpLZjNrcHNaZ0xMVmVMRnlySFFxZlJ6dzdUMkNtakFnQjNCaGVhVEs4SEdSQURpbWNBUkdCNUtWbkgxZTlYOU1vaFhTZmV4Rk1CY3MtQjY0ZUVlRWt6Ykx0SkE1MTNsSGUya0hHLWU5N1RsR1pBdV9XRWctS1Y2TWxqZHE3UQ?oc=5",
+          "time": "2026-09-26T11:26:14Z",
+          "published_date": "2026-09-26T11:26:14Z",
+          "publishedDate": "2026-09-26T11:26:14Z",
+          "tag": "Breaking",
           "confidence": "DEVELOPING",
-          "breaking": false,
+          "breaking": true,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "google_news_yemen_red_sea",
-            "sourceUrl": "https://news.google.com/rss/search?q=Yemen+Houthis+Red+Sea+shipping+missile+drone+conflict+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "sourceId": "google_news_ukraine_war",
+            "sourceUrl": "https://news.google.com/rss/search?q=Ukraine+Russia+war+frontline+missile+drone+strike+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
         }
       ]
     },
     {
-      "id": "815b8fd2b96a1668",
-      "title": "President Trump Delivers Remarks, Sep. 22, 2026 - The White House (.gov)",
-      "category": "political",
-      "confidence": "low",
-      "reportCount": 3,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Fri, 14 Aug 2026 07:00:00 GMT",
-      "lastSeen": "Tue, 22 Sep 2026 15:11:46 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMihgFBVV95cUxNX050UFJETEpTbl9leHpKZXhqVEt4ZjZrU0drZlpKWkFCRmptV3VtV0R2bF9YT0R5OWJWU1ZWNTBkaWdmVVVhcmhqS3picVE5M0tqeUFueEQ4b3lYbWhESVl3RXhueFlXOE5JVWV6azlvQjZXTV8wNm4xY3B5ZkNnU2kxd2FEUQ?oc=5",
-        "https://news.google.com/rss/articles/CBMihgFBVV95cUxOZHE5TDFsN1R3dDVueFd3bVFSY2xsTXNyNnM4MTU2TFhfYldwaE54NTRnSHE5LVgwdC1hRHpfOXc4OWVKcFd6OFlNcC1KSF92cEE4cGdzS1ZuOFIyWnlYckNWQ3d0b080Y1lNOUZKT1daQUpIQ0U2NDk1dko5TUZHNVZabmw4QQ?oc=5",
-        "https://news.google.com/rss/articles/CBMihgFBVV95cUxONHVia0VBLWsya09YTzRTOVQzZ1ZvNE1QYmx0Z3habXFWektabUd4QmxlOTd3QjdfMFQtanZzcW9yMWVKTXBHb0ZwUWF6QjQxeDh2bFAwYi1mZGJ2cXNvazhiVFVGekFTWGlYQllYdzFFMkpJWFZfWDJ2N2MzZm82cmprN05Zdw?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "President Trump Delivers Remarks, Sep. 22, 2026 - The White House (.gov)",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNX050UFJETEpTbl9leHpKZXhqVEt4ZjZrU0drZlpKWkFCRmptV3VtV0R2bF9YT0R5OWJWU1ZWNTBkaWdmVVVhcmhqS3picVE5M0tqeUFueEQ4b3lYbWhESVl3RXhueFlXOE5JVWV6azlvQjZXTV8wNm4xY3B5ZkNnU2kxd2FEUQ?oc=5",
-          "published_date": "Tue, 22 Sep 2026 15:11:46 GMT",
-          "time": "Tue, 22 Sep 2026 15:11:46 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: The White House (.gov)",
-          "summary": "Fallback discovery via Google News RSS; publisher: The White House (.gov)",
-          "source": "The White House (.gov)",
-          "sourceLabel": "The White House (.gov)",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @POTUS",
-          "credit_metadata": "Google News RSS fallback"
-        },
-        {
-          "title": "President Trump Delivers Remarks, Aug. 14, 2026 - The White House (.gov)",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOZHE5TDFsN1R3dDVueFd3bVFSY2xsTXNyNnM4MTU2TFhfYldwaE54NTRnSHE5LVgwdC1hRHpfOXc4OWVKcFd6OFlNcC1KSF92cEE4cGdzS1ZuOFIyWnlYckNWQ3d0b080Y1lNOUZKT1daQUpIQ0U2NDk1dko5TUZHNVZabmw4QQ?oc=5",
-          "published_date": "Fri, 14 Aug 2026 07:00:00 GMT",
-          "time": "Fri, 14 Aug 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: The White House (.gov)",
-          "summary": "Fallback discovery via Google News RSS; publisher: The White House (.gov)",
-          "source": "The White House (.gov)",
-          "sourceLabel": "The White House (.gov)",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @POTUS",
-          "credit_metadata": "Google News RSS fallback"
-        },
-        {
-          "title": "President Trump Delivers Remarks, Jul. 24, 2026 - The White House (.gov)",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxONHVia0VBLWsya09YTzRTOVQzZ1ZvNE1QYmx0Z3habXFWektabUd4QmxlOTd3QjdfMFQtanZzcW9yMWVKTXBHb0ZwUWF6QjQxeDh2bFAwYi1mZGJ2cXNvazhiVFVGekFTWGlYQllYdzFFMkpJWFZfWDJ2N2MzZm82cmprN05Zdw?oc=5",
-          "published_date": "Fri, 24 Jul 2026 07:00:00 GMT",
-          "time": "Fri, 24 Jul 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: The White House (.gov)",
-          "summary": "Fallback discovery via Google News RSS; publisher: The White House (.gov)",
-          "source": "The White House (.gov)",
-          "sourceLabel": "The White House (.gov)",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @POTUS",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "278630fbd4627b03",
-      "title": "Iran proposes Hormuz plan, Trump reportedly refuses",
+      "id": "5ce9a60e7df9cc76",
+      "title": "US strikes on Ecuadorian fishing boats raise humanitarian concerns but Trump admin not wavering - theguardian.com",
       "category": "general",
       "confidence": "moderate",
       "reportCount": 2,
       "sourceCount": 2,
       "sources": [
-        "rfi.fr",
+        "news.google.com",
+        "theguardian.com"
+      ],
+      "anchors": [],
+      "firstSeen": "2026-09-26T16:00:39Z",
+      "lastSeen": "2026-09-26T16:02:00Z",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMigAFBVV95cUxNMWwtbnltVFBnbnBIMTZWMmZIcXpxdUxnal9aeDg3cEpiVUVGanNlZUFJay14X3dPRzNFVXFEZWo1cnV0dVctOTlsdkxTdG5YMkVOWWYzLS1GWnQ5WlRzclR3YUNJVFhBMWRYZ2VVcG14WDMxT1lRaC1EcjdsWFd4TQ?oc=5",
+        "https://www.theguardian.com/world/2026/sep/26/us-airstrikes-ecuador-fishers"
+      ],
+      "reports": [
+        {
+          "id": "c4f9108296d4",
+          "sourceLabel": "Google News — SOUTHCOM",
+          "sourceName": "Google News — SOUTHCOM",
+          "sourceType": "southcom-news",
+          "title": "US strikes on Ecuadorian fishing boats raise humanitarian concerns but Trump admin not wavering - theguardian.com",
+          "summary": "US strikes on Ecuadorian fishing boats raise humanitarian concerns but Trump admin not wavering theguardian.com",
+          "summary_snippet": "US strikes on Ecuadorian fishing boats raise humanitarian concerns but Trump admin not wavering theguardian.com",
+          "source": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNMWwtbnltVFBnbnBIMTZWMmZIcXpxdUxnal9aeDg3cEpiVUVGanNlZUFJay14X3dPRzNFVXFEZWo1cnV0dVctOTlsdkxTdG5YMkVOWWYzLS1GWnQ5WlRzclR3YUNJVFhBMWRYZ2VVcG14WDMxT1lRaC1EcjdsWFd4TQ?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNMWwtbnltVFBnbnBIMTZWMmZIcXpxdUxnal9aeDg3cEpiVUVGanNlZUFJay14X3dPRzNFVXFEZWo1cnV0dVctOTlsdkxTdG5YMkVOWWYzLS1GWnQ5WlRzclR3YUNJVFhBMWRYZ2VVcG14WDMxT1lRaC1EcjdsWFd4TQ?oc=5",
+          "time": "2026-09-26T16:02:00Z",
+          "published_date": "2026-09-26T16:02:00Z",
+          "publishedDate": "2026-09-26T16:02:00Z",
+          "tag": "Breaking",
+          "confidence": "DEVELOPING",
+          "breaking": true,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_southcom",
+            "sourceUrl": "https://news.google.com/rss/search?q=SOUTHCOM+US+Southern+Command+military+Caribbean+Eastern+Pacific+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "1de452215342",
+          "sourceLabel": "Guardian World",
+          "sourceName": "Guardian World",
+          "sourceType": "international",
+          "title": "US strikes on Ecuadorian fishing boats raise humanitarian concerns but Trump admin not wavering",
+          "summary": "Attorney says fishers ‘losing their livelihoods’, but Marco Rubio maintains US still willing to ‘blow up ships if need be’ While the US secretary of state, Marco Rubio , was being decorated in Quito by Ecuador’s president for “helping to promote peace in the region”, 10 Ecuadorian fishers whose boat had been blown up by US forces were adrift in the eastern Pacific. On 8 September, a day before Rubio arrived, a US pat",
+          "summary_snippet": "Attorney says fishers ‘losing their livelihoods’, but Marco Rubio maintains US still willing to ‘blow up ships if need be’ While the US secretary of state, Marco Rubio , was being decorated in Quito by Ecuador’s president for “helping to promote peace in the region”, 10 Ecuadorian fishers whose boat had been blown up by US forces were adrift in the eastern Pacific. On 8 September, a day before Rubio arrived, a US pat",
+          "source": "https://www.theguardian.com/world/2026/sep/26/us-airstrikes-ecuador-fishers",
+          "url": "https://www.theguardian.com/world/2026/sep/26/us-airstrikes-ecuador-fishers",
+          "time": "2026-09-26T16:00:39Z",
+          "published_date": "2026-09-26T16:00:39Z",
+          "publishedDate": "2026-09-26T16:00:39Z",
+          "tag": "Breaking",
+          "confidence": "DEVELOPING",
+          "breaking": true,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "guardian_world",
+            "sourceUrl": "https://www.theguardian.com/world/rss",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0bc3d5e2b80e4275",
+      "title": "Watch: Bangkok declared flood disaster zone",
+      "category": "disaster",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "sourceCount": 2,
+      "sources": [
+        "bbc.co.uk",
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "2026-09-26T15:34:18Z",
+      "lastSeen": "2026-09-26T15:34:18Z",
+      "urls": [
+        "https://www.bbc.co.uk/news/videos/cwp933mr9v1xo?at_medium=RSS&at_campaign=rss",
+        "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBXaG1qUVN0bEtQS2dlcWVDZktOTkNlMjNxcUhaLXlhY3h6anRSZENrY29ZV2xLTlhqMFNheU1XZ3A3Z25FQnBaSGdNWHhVMk1sYkdkRGh3OWI?oc=5"
+      ],
+      "reports": [
+        {
+          "id": "b5cc08a0c333",
+          "sourceLabel": "BBC World",
+          "sourceName": "BBC World",
+          "sourceType": "international",
+          "title": "Watch: Bangkok declared flood disaster zone",
+          "summary": "Heavy rain over the last two days has overwhelmed Bangkok's water systems, with more rain forecast on Sunday.",
+          "summary_snippet": "Heavy rain over the last two days has overwhelmed Bangkok's water systems, with more rain forecast on Sunday.",
+          "source": "https://www.bbc.co.uk/news/videos/cwp933mr9v1xo?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.bbc.co.uk/news/videos/cwp933mr9v1xo?at_medium=RSS&at_campaign=rss",
+          "time": "2026-09-26T15:34:18Z",
+          "published_date": "2026-09-26T15:34:18Z",
+          "publishedDate": "2026-09-26T15:34:18Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "bbc_world",
+            "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "7a18826399ff",
+          "sourceLabel": "Google News — Climate & Disaster",
+          "sourceName": "Google News — Climate & Disaster",
+          "sourceType": "climate-hazard",
+          "title": "Watch: Bangkok declared flood disaster zone - BBC",
+          "summary": "Watch: Bangkok declared flood disaster zone BBC",
+          "summary_snippet": "Watch: Bangkok declared flood disaster zone BBC",
+          "source": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBXaG1qUVN0bEtQS2dlcWVDZktOTkNlMjNxcUhaLXlhY3h6anRSZENrY29ZV2xLTlhqMFNheU1XZ3A3Z25FQnBaSGdNWHhVMk1sYkdkRGh3OWI?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBXaG1qUVN0bEtQS2dlcWVDZktOTkNlMjNxcUhaLXlhY3h6anRSZENrY29ZV2xLTlhqMFNheU1XZ3A3Z25FQnBaSGdNWHhVMk1sYkdkRGh3OWI?oc=5",
+          "time": "2026-09-26T15:34:18Z",
+          "published_date": "2026-09-26T15:34:18Z",
+          "publishedDate": "2026-09-26T15:34:18Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_climate_disaster",
+            "sourceUrl": "https://news.google.com/rss/search?q=flood+wildfire+hurricane+disaster+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
+      "id": "c9c765fd61dc08e8",
+      "title": "Trump rejects Iran’s seven-day roadmap to reopen Strait of Hormuz",
+      "category": "general",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "sourceCount": 2,
+      "sources": [
+        "aljazeera.com",
         "theguardian.com"
       ],
       "anchors": [
@@ -776,39 +880,39 @@
         "iran"
       ],
       "firstSeen": "2026-09-26T12:38:46Z",
-      "lastSeen": "2026-09-26T13:10:39Z",
+      "lastSeen": "2026-09-26T14:46:53Z",
       "urls": [
-        "https://www.rfi.fr/en/international/20260926-iran-proposes-hormuz-plan-trump-reportedly-refuses",
+        "https://www.aljazeera.com/news/2026/9/26/trump-rejects-irans-seven-day-roadmap-to-reopen-strait-of-hormuz?traffic_source=rss",
         "https://www.theguardian.com/world/2026/sep/26/trump-dismiss-iran-seven-day-peace-deal-hormuz"
       ],
       "reports": [
         {
-          "id": "4824673647ea",
-          "sourceLabel": "RFI World",
-          "sourceName": "RFI World",
+          "id": "032dbed088b1",
+          "sourceLabel": "Al Jazeera",
+          "sourceName": "Al Jazeera",
           "sourceType": "international",
-          "title": "Iran proposes Hormuz plan, Trump reportedly refuses",
-          "summary": "The United States had yet to publicly respond on Saturday after Iran offered a plan to reopen the strategic Strait of Hormuz, though reports indicated that President Donald Trump had rejected the proposal.",
-          "summary_snippet": "The United States had yet to publicly respond on Saturday after Iran offered a plan to reopen the strategic Strait of Hormuz, though reports indicated that President Donald Trump had rejected the proposal.",
-          "source": "https://www.rfi.fr/en/international/20260926-iran-proposes-hormuz-plan-trump-reportedly-refuses",
-          "url": "https://www.rfi.fr/en/international/20260926-iran-proposes-hormuz-plan-trump-reportedly-refuses",
-          "time": "2026-09-26T13:10:39Z",
-          "published_date": "2026-09-26T13:10:39Z",
-          "publishedDate": "2026-09-26T13:10:39Z",
+          "title": "Trump rejects Iran’s seven-day roadmap to reopen Strait of Hormuz",
+          "summary": "Tehran submitted a proposal via Qatar to reopen the strait and resume nuclear talks within a week if Washington agreed.",
+          "summary_snippet": "Tehran submitted a proposal via Qatar to reopen the strait and resume nuclear talks within a week if Washington agreed.",
+          "source": "https://www.aljazeera.com/news/2026/9/26/trump-rejects-irans-seven-day-roadmap-to-reopen-strait-of-hormuz?traffic_source=rss",
+          "url": "https://www.aljazeera.com/news/2026/9/26/trump-rejects-irans-seven-day-roadmap-to-reopen-strait-of-hormuz?traffic_source=rss",
+          "time": "2026-09-26T14:46:53Z",
+          "published_date": "2026-09-26T14:46:53Z",
+          "publishedDate": "2026-09-26T14:46:53Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "rfi_world",
-            "sourceUrl": "https://www.rfi.fr/en/general/rss",
+            "sourceId": "al_jazeera",
+            "sourceUrl": "https://www.aljazeera.com/xml/rss/all.xml",
             "feedFormat": "rss"
           }
         },
         {
           "id": "0807250554d3",
-          "sourceLabel": "Guardian World",
-          "sourceName": "Guardian World",
+          "sourceLabel": "https://www.theguardian.com/world/2026/sep/26/trump-dismiss-iran-seven-day-peace-deal-hormuz",
+          "sourceName": "https://www.theguardian.com/world/2026/sep/26/trump-dismiss-iran-seven-day-peace-deal-hormuz",
           "sourceType": "international",
           "title": "Trump reportedly rejects Iran’s seven-day peace deal to reopen strait of Hormuz",
           "summary": "Tehran awaits official response to plan, but US president is said to expect renewed strikes after midterms Iran is ⁠awaiting an official US response to its proposal to reopen the strait of Hormuz within a week and resume nuclear talks in return for the lifting of the US naval blockade of Iranian ports, as Donald Trump was reported to have rejected the deal. Although Iran is yet to receive his official response, the U",
@@ -825,143 +929,6 @@
           "credit": {
             "sourceId": "guardian_world",
             "sourceUrl": "https://www.theguardian.com/world/rss",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "d76cc50c3432a6bf",
-      "title": "Bangkok declares disaster as heavy rains spark flooding",
-      "category": "general",
-      "confidence": "moderate",
-      "reportCount": 2,
-      "sourceCount": 2,
-      "sources": [
-        "bbc.co.uk",
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "2026-09-26T06:28:58Z",
-      "lastSeen": "2026-09-26T06:28:58Z",
-      "urls": [
-        "https://www.bbc.co.uk/news/videos/ck9800jdj1q0o?at_medium=RSS&at_campaign=rss",
-        "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5jVDdjZXM3SlU1T25DVXBFMURNdEk5M1RTdzhiVzdFWVVSVHNhM2FIOGV2dloycG9HYjEzRXBkSzlRTEhxN3FhNU03MktIczJkZFFqRC13ZkU?oc=5"
-      ],
-      "reports": [
-        {
-          "id": "718df1282783",
-          "sourceLabel": "BBC World",
-          "sourceName": "BBC World",
-          "sourceType": "international",
-          "title": "Bangkok declares disaster as heavy rains spark flooding",
-          "summary": "Days of near continuous downpours have caused widespread flooding in the Thai capital.",
-          "summary_snippet": "Days of near continuous downpours have caused widespread flooding in the Thai capital.",
-          "source": "https://www.bbc.co.uk/news/videos/ck9800jdj1q0o?at_medium=RSS&at_campaign=rss",
-          "url": "https://www.bbc.co.uk/news/videos/ck9800jdj1q0o?at_medium=RSS&at_campaign=rss",
-          "time": "2026-09-26T06:28:58Z",
-          "published_date": "2026-09-26T06:28:58Z",
-          "publishedDate": "2026-09-26T06:28:58Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "bbc_world",
-            "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "d6e503eb401c",
-          "sourceLabel": "Google News — Climate & Disaster",
-          "sourceName": "Google News — Climate & Disaster",
-          "sourceType": "climate-hazard",
-          "title": "Bangkok declares disaster as heavy rains spark flooding - BBC",
-          "summary": "Bangkok declares disaster as heavy rains spark flooding BBC",
-          "summary_snippet": "Bangkok declares disaster as heavy rains spark flooding BBC",
-          "source": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5jVDdjZXM3SlU1T25DVXBFMURNdEk5M1RTdzhiVzdFWVVSVHNhM2FIOGV2dloycG9HYjEzRXBkSzlRTEhxN3FhNU03MktIczJkZFFqRC13ZkU?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5jVDdjZXM3SlU1T25DVXBFMURNdEk5M1RTdzhiVzdFWVVSVHNhM2FIOGV2dloycG9HYjEzRXBkSzlRTEhxN3FhNU03MktIczJkZFFqRC13ZkU?oc=5",
-          "time": "2026-09-26T06:28:58Z",
-          "published_date": "2026-09-26T06:28:58Z",
-          "publishedDate": "2026-09-26T06:28:58Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_climate_disaster",
-            "sourceUrl": "https://news.google.com/rss/search?q=flood+wildfire+hurricane+disaster+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "0e487ec4a7ee012d",
-      "title": "Iran proposes reopening Strait of Hormuz within seven days: Foreign minister - The Business Standard",
-      "category": "general",
-      "confidence": "moderate",
-      "reportCount": 2,
-      "sourceCount": 2,
-      "sources": [
-        "news.google.com",
-        "aljazeera.com"
-      ],
-      "anchors": [
-        "hormuz",
-        "iran"
-      ],
-      "firstSeen": "2026-09-26T00:00:00Z",
-      "lastSeen": "2026-09-26T02:42:06Z",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOMDNQdlk0Y0xPdlRRenpzQ3Z1ZkgyUlhvOHJZOFB5bThoaTFrbC1zSm40S3RmeFRvN3dvNW5JaEdJQTNwLVBrVjNtUEJYemFTR2YxTlpBNXRVT1dkd29LRDRpeWw3dllWYVRWZVUtRzg5VkVIcjJGOGlKejBQNTlkc1lYSWJLbmM5NU1ncU9XdF90ZzdweUYtQVh1bHZ0ckU3QnBZOG5Ld092VlhUSTQyVXVOUXJCRkJP?oc=5",
-        "https://www.aljazeera.com/news/liveblog/2026/9/26/iran-war-live-tehran-offers-us-plan-to-reopen-hormuz-within-seven-days?traffic_source=rss"
-      ],
-      "reports": [
-        {
-          "id": "9847d14eff7e",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOMDNQdlk0Y0xPdlRRenpzQ3Z1ZkgyUlhvOHJZOFB5bThoaTFrbC1zSm40S3RmeFRvN3dvNW5JaEdJQTNwLVBrVjNtUEJYemFTR2YxTlpBNXRVT1dkd29LRDRpeWw3dllWYVRWZVUtRzg5VkVIcjJGOGlKejBQNTlkc1lYSWJLbmM5NU1ncU9XdF90ZzdweUYtQVh1bHZ0ckU3QnBZOG5Ld092VlhUSTQyVXVOUXJCRkJP?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOMDNQdlk0Y0xPdlRRenpzQ3Z1ZkgyUlhvOHJZOFB5bThoaTFrbC1zSm40S3RmeFRvN3dvNW5JaEdJQTNwLVBrVjNtUEJYemFTR2YxTlpBNXRVT1dkd29LRDRpeWw3dllWYVRWZVUtRzg5VkVIcjJGOGlKejBQNTlkc1lYSWJLbmM5NU1ncU9XdF90ZzdweUYtQVh1bHZ0ckU3QnBZOG5Ld092VlhUSTQyVXVOUXJCRkJP?oc=5",
-          "sourceType": "middle-east-conflict",
-          "title": "Iran proposes reopening Strait of Hormuz within seven days: Foreign minister - The Business Standard",
-          "summary": "Iran proposes reopening Strait of Hormuz within seven days: Foreign minister The Business Standard",
-          "summary_snippet": "Iran proposes reopening Strait of Hormuz within seven days: Foreign minister The Business Standard",
-          "source": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOMDNQdlk0Y0xPdlRRenpzQ3Z1ZkgyUlhvOHJZOFB5bThoaTFrbC1zSm40S3RmeFRvN3dvNW5JaEdJQTNwLVBrVjNtUEJYemFTR2YxTlpBNXRVT1dkd29LRDRpeWw3dllWYVRWZVUtRzg5VkVIcjJGOGlKejBQNTlkc1lYSWJLbmM5NU1ncU9XdF90ZzdweUYtQVh1bHZ0ckU3QnBZOG5Ld092VlhUSTQyVXVOUXJCRkJP?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOMDNQdlk0Y0xPdlRRenpzQ3Z1ZkgyUlhvOHJZOFB5bThoaTFrbC1zSm40S3RmeFRvN3dvNW5JaEdJQTNwLVBrVjNtUEJYemFTR2YxTlpBNXRVT1dkd29LRDRpeWw3dllWYVRWZVUtRzg5VkVIcjJGOGlKejBQNTlkc1lYSWJLbmM5NU1ncU9XdF90ZzdweUYtQVh1bHZ0ckU3QnBZOG5Ld092VlhUSTQyVXVOUXJCRkJP?oc=5",
-          "time": "2026-09-26T02:42:06Z",
-          "published_date": "2026-09-26T02:42:06Z",
-          "publishedDate": "2026-09-26T02:42:06Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_yemen_red_sea",
-            "sourceUrl": "https://news.google.com/rss/search?q=Yemen+Houthis+Red+Sea+shipping+missile+drone+conflict+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "018a3a00472a",
-          "sourceLabel": "https://www.aljazeera.com/news/liveblog/2026/9/26/iran-war-live-tehran-offers-us-plan-to-reopen-hormuz-within-seven-days?traffic_source=rss",
-          "sourceName": "https://www.aljazeera.com/news/liveblog/2026/9/26/iran-war-live-tehran-offers-us-plan-to-reopen-hormuz-within-seven-days?traffic_source=rss",
-          "sourceType": "international",
-          "title": "Iran war live: Tehran offers US plan to reopen Hormuz within seven days",
-          "summary": "Iran's FM says the \"choice rests with the US\" to approve the proposed seven-day proposal to reopen Hormuz.",
-          "summary_snippet": "Iran's FM says the \"choice rests with the US\" to approve the proposed seven-day proposal to reopen Hormuz.",
-          "source": "https://www.aljazeera.com/news/liveblog/2026/9/26/iran-war-live-tehran-offers-us-plan-to-reopen-hormuz-within-seven-days?traffic_source=rss",
-          "url": "https://www.aljazeera.com/news/liveblog/2026/9/26/iran-war-live-tehran-offers-us-plan-to-reopen-hormuz-within-seven-days?traffic_source=rss",
-          "time": "2026-09-26T00:00:00Z",
-          "published_date": "2026-09-26T00:00:00Z",
-          "publishedDate": "2026-09-26T00:00:00Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "al_jazeera",
-            "sourceUrl": "https://www.aljazeera.com/xml/rss/all.xml",
             "feedFormat": "rss"
           }
         }
@@ -1064,9 +1031,9 @@
       ]
     },
     {
-      "id": "d988202c2eb6268f",
-      "title": "Rep. Jason Crow calls out 'pick me' Trump: 'He wants affirmation' from China's Xi - CNN",
-      "category": "general",
+      "id": "445a5b1b762cc1a7",
+      "title": "President Trump and the President of China Deliver Remarks - The White House (.gov)",
+      "category": "political",
       "confidence": "low",
       "reportCount": 2,
       "sourceCount": 1,
@@ -1076,64 +1043,447 @@
       "anchors": [
         "china"
       ],
-      "firstSeen": "2026-09-25T23:47:45Z",
-      "lastSeen": "2026-09-25T23:47:45Z",
+      "firstSeen": "Fri, 25 Sep 2026 00:17:02 GMT",
+      "lastSeen": "Thu, 24 Sep 2026 14:48:19 GMT",
       "urls": [
-        "https://news.google.com/rss/articles/CBMilAFBVV95cUxNdlUySUw0Vm5GbVh5QjRMbG96MFlQdThxRUdMb21BQVhkcGRMMDJ0dTg1RTQ3aXNLZE5TMjNMNXNfYkF1YTF4WllHM3NFY1lWU0RwMGJZLVhySzgxTXVobTdBZHlzU0pqVW13TzhubGNtN3gxdkw5cW5tQUY4eFZ4VzNTa2JYXzVFaU5uLUJhU3NyWGxB?oc=5",
-        "https://news.google.com/rss/articles/CBMijwFBVV95cUxQRjV6bGJaUVN0Q0NUMF9IbUVhM3hHU254a3k1Q0tlWExlc3VyR3Zuckp5dHFFc1BCTlQ4RTY0V0g0VFhqcjFLckMtX1BwU3dIVjJPVU91bGdtM2p4Mlg1U1lwVmtwSTUzR1RNODZNT093UXNEdUNjajBOOG1COW9TRjNRMlZLdmNZMmQ1MFZ1cw?oc=5"
+        "https://news.google.com/rss/articles/CBMimAFBVV95cUxOSUhoU3VpWVFDbDY3NkcwTmU0bmc2Z3lPOERKa2FmVWdRbVRzMTdYQnZJdFBmM2tDM1pteDVxemJSbHNmWWNFNDNkY05uVFhCMEM2VDZTV0VTMnFvYzRTeUFBYXlrUnRhVEdrZWstRlAxUU1Jby0zeGpxS21MTmJfVFFmRTJVcTk0TWxDWDBNTjlyYXBSWVNXTg?oc=5",
+        "https://news.google.com/rss/articles/CBMisAFBVV95cUxPNFZrdU5GbXlWN3FKMVFXTkxrSTF0TlhkdzA1VXdMd3l0Zmx1VVRNWmpBSmxTeGU3MU5fMk1ld0RpRXZNdHNfd1QwWEc0X1Q0NTBmbUVIcU5OSW40aWNhRFRPb3dBRkh0XzY2LXNwQTR1MWhrQ1hna3pyS0tzeDlMTHloaHdhT1hrX3RWb2NQT3FvbDAzdVl5R3VfR25TT0N1YV9JY2t6OUZ2U01tT3dNVw?oc=5"
       ],
       "reports": [
         {
-          "id": "e8d8db5bc8e2",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNdlUySUw0Vm5GbVh5QjRMbG96MFlQdThxRUdMb21BQVhkcGRMMDJ0dTg1RTQ3aXNLZE5TMjNMNXNfYkF1YTF4WllHM3NFY1lWU0RwMGJZLVhySzgxTXVobTdBZHlzU0pqVW13TzhubGNtN3gxdkw5cW5tQUY4eFZ4VzNTa2JYXzVFaU5uLUJhU3NyWGxB?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNdlUySUw0Vm5GbVh5QjRMbG96MFlQdThxRUdMb21BQVhkcGRMMDJ0dTg1RTQ3aXNLZE5TMjNMNXNfYkF1YTF4WllHM3NFY1lWU0RwMGJZLVhySzgxTXVobTdBZHlzU0pqVW13TzhubGNtN3gxdkw5cW5tQUY4eFZ4VzNTa2JYXzVFaU5uLUJhU3NyWGxB?oc=5",
-          "sourceType": "us-politics",
-          "title": "Rep. Jason Crow calls out 'pick me' Trump: 'He wants affirmation' from China's Xi - CNN",
-          "summary": "Rep. Jason Crow calls out 'pick me' Trump: 'He wants affirmation' from China's Xi CNN",
-          "summary_snippet": "Rep. Jason Crow calls out 'pick me' Trump: 'He wants affirmation' from China's Xi CNN",
-          "source": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNdlUySUw0Vm5GbVh5QjRMbG96MFlQdThxRUdMb21BQVhkcGRMMDJ0dTg1RTQ3aXNLZE5TMjNMNXNfYkF1YTF4WllHM3NFY1lWU0RwMGJZLVhySzgxTXVobTdBZHlzU0pqVW13TzhubGNtN3gxdkw5cW5tQUY4eFZ4VzNTa2JYXzVFaU5uLUJhU3NyWGxB?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNdlUySUw0Vm5GbVh5QjRMbG96MFlQdThxRUdMb21BQVhkcGRMMDJ0dTg1RTQ3aXNLZE5TMjNMNXNfYkF1YTF4WllHM3NFY1lWU0RwMGJZLVhySzgxTXVobTdBZHlzU0pqVW13TzhubGNtN3gxdkw5cW5tQUY4eFZ4VzNTa2JYXzVFaU5uLUJhU3NyWGxB?oc=5",
-          "time": "2026-09-25T23:47:45Z",
-          "published_date": "2026-09-25T23:47:45Z",
-          "publishedDate": "2026-09-25T23:47:45Z",
+          "title": "President Trump and the President of China Deliver Remarks - The White House (.gov)",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOSUhoU3VpWVFDbDY3NkcwTmU0bmc2Z3lPOERKa2FmVWdRbVRzMTdYQnZJdFBmM2tDM1pteDVxemJSbHNmWWNFNDNkY05uVFhCMEM2VDZTV0VTMnFvYzRTeUFBYXlrUnRhVEdrZWstRlAxUU1Jby0zeGpxS21MTmJfVFFmRTJVcTk0TWxDWDBNTjlyYXBSWVNXTg?oc=5",
+          "published_date": "Thu, 24 Sep 2026 14:48:19 GMT",
+          "time": "Thu, 24 Sep 2026 14:48:19 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: The White House (.gov)",
+          "summary": "Fallback discovery via Google News RSS; publisher: The White House (.gov)",
+          "source": "The White House (.gov)",
+          "sourceLabel": "The White House (.gov)",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @POTUS",
+          "credit_metadata": "Google News RSS fallback"
+        },
+        {
+          "title": "President Trump and the President of China Deliver Remarks at a State Dinner - The White House (.gov)",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPNFZrdU5GbXlWN3FKMVFXTkxrSTF0TlhkdzA1VXdMd3l0Zmx1VVRNWmpBSmxTeGU3MU5fMk1ld0RpRXZNdHNfd1QwWEc0X1Q0NTBmbUVIcU5OSW40aWNhRFRPb3dBRkh0XzY2LXNwQTR1MWhrQ1hna3pyS0tzeDlMTHloaHdhT1hrX3RWb2NQT3FvbDAzdVl5R3VfR25TT0N1YV9JY2t6OUZ2U01tT3dNVw?oc=5",
+          "published_date": "Fri, 25 Sep 2026 00:17:02 GMT",
+          "time": "Fri, 25 Sep 2026 00:17:02 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: The White House (.gov)",
+          "summary": "Fallback discovery via Google News RSS; publisher: The White House (.gov)",
+          "source": "The White House (.gov)",
+          "sourceLabel": "The White House (.gov)",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @POTUS",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "87d83855927b1bd9",
+      "title": "Lavrov says Russia will achieve Ukraine war goals, eliminate security threats and restore peace - Business Upturn",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 2,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [
+        "russia",
+        "uk",
+        "ukraine"
+      ],
+      "firstSeen": "2026-09-26T16:41:10Z",
+      "lastSeen": "2026-09-26T16:56:10Z",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOeGkwaE9yTm52dWNILWRBWGV2dTdOdTd0eTNuRWItbDlYLUx2d2Y4S3ZOX1FFTEQ1cUlvWTRBWlozc2VFcER3MTVkTjZZclVZaFl0R2tzaHNDWEk4MGFucW1aY0NVemEwdkFZbzR1X1hpMC03MG01Q1ZRV2F0LU9xb1U0LWxxZ25UOFNTLW4xbzBfUDNvRUUzeHZUa1NCeXRTVWxJQS05Q3h5VHFhZG1qZURfNlpPOVNzNlJrRTRPakVSTG43U2pxUFZfejhQRzNEbGdMVEVrX3JxTHJUVnNWS1BR?oc=5",
+        "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOaHVERjJKTHRkc0N0Q0VoUjhzQWJSdFhwTXQxZnhERVU4TDJpcDdVUWZ2TUNFTFVwbG5IUHZGVkNJWUtGM2pTZnFuSUE4M1pHcGdFX0tKLS16T1lmd1A5d2JUYlUzQUthT1hpcUlYVWJMNVJEeDJkbHA5dFJBaTVET1JqVHFtdWNmelM4emZFUmNpX1VGclNDbWZfLUp3ZGVyd0lxV29GYmlrclBzcEN5RzVBdDNLbjAzR0NpQjk2ZFFYTjE2SGprUlBrZml4U1JxamxKYS11Q0tHUWQ4QzMw?oc=5"
+      ],
+      "reports": [
+        {
+          "id": "fa83dc0a8a55",
+          "sourceLabel": "Google News — South Asia Security",
+          "sourceName": "Google News — South Asia Security",
+          "sourceType": "south-asia",
+          "title": "Lavrov says Russia will achieve Ukraine war goals, eliminate security threats and restore peace - Business Upturn",
+          "summary": "Lavrov says Russia will achieve Ukraine war goals, eliminate security threats and restore peace Business Upturn",
+          "summary_snippet": "Lavrov says Russia will achieve Ukraine war goals, eliminate security threats and restore peace Business Upturn",
+          "source": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOeGkwaE9yTm52dWNILWRBWGV2dTdOdTd0eTNuRWItbDlYLUx2d2Y4S3ZOX1FFTEQ1cUlvWTRBWlozc2VFcER3MTVkTjZZclVZaFl0R2tzaHNDWEk4MGFucW1aY0NVemEwdkFZbzR1X1hpMC03MG01Q1ZRV2F0LU9xb1U0LWxxZ25UOFNTLW4xbzBfUDNvRUUzeHZUa1NCeXRTVWxJQS05Q3h5VHFhZG1qZURfNlpPOVNzNlJrRTRPakVSTG43U2pxUFZfejhQRzNEbGdMVEVrX3JxTHJUVnNWS1BR?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOeGkwaE9yTm52dWNILWRBWGV2dTdOdTd0eTNuRWItbDlYLUx2d2Y4S3ZOX1FFTEQ1cUlvWTRBWlozc2VFcER3MTVkTjZZclVZaFl0R2tzaHNDWEk4MGFucW1aY0NVemEwdkFZbzR1X1hpMC03MG01Q1ZRV2F0LU9xb1U0LWxxZ25UOFNTLW4xbzBfUDNvRUUzeHZUa1NCeXRTVWxJQS05Q3h5VHFhZG1qZURfNlpPOVNzNlJrRTRPakVSTG43U2pxUFZfejhQRzNEbGdMVEVrX3JxTHJUVnNWS1BR?oc=5",
+          "time": "2026-09-26T16:56:10Z",
+          "published_date": "2026-09-26T16:56:10Z",
+          "publishedDate": "2026-09-26T16:56:10Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "google_news_cnn_politics",
-            "sourceUrl": "https://news.google.com/rss/search?q=site%3Acnn.com+politics+Trump+Congress+Senate+White+House+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "sourceId": "google_news_south_asia_security",
+            "sourceUrl": "https://news.google.com/rss/search?q=India+Pakistan+Afghanistan+Bangladesh+Nepal+Sri+Lanka+conflict+security+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
         },
         {
-          "id": "46f5b6d787b3",
-          "sourceLabel": "Google News — CNN Politics",
-          "sourceName": "Google News — CNN Politics",
-          "sourceType": "us-politics",
-          "title": "Rep. Jason Crow calls out ‘pick me’ Trump: ‘He wants affirmation’ from China’s Xi - CNN",
-          "summary": "Rep. Jason Crow calls out ‘pick me’ Trump: ‘He wants affirmation’ from China’s Xi CNN",
-          "summary_snippet": "Rep. Jason Crow calls out ‘pick me’ Trump: ‘He wants affirmation’ from China’s Xi CNN",
-          "source": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQRjV6bGJaUVN0Q0NUMF9IbUVhM3hHU254a3k1Q0tlWExlc3VyR3Zuckp5dHFFc1BCTlQ4RTY0V0g0VFhqcjFLckMtX1BwU3dIVjJPVU91bGdtM2p4Mlg1U1lwVmtwSTUzR1RNODZNT093UXNEdUNjajBOOG1COW9TRjNRMlZLdmNZMmQ1MFZ1cw?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQRjV6bGJaUVN0Q0NUMF9IbUVhM3hHU254a3k1Q0tlWExlc3VyR3Zuckp5dHFFc1BCTlQ4RTY0V0g0VFhqcjFLckMtX1BwU3dIVjJPVU91bGdtM2p4Mlg1U1lwVmtwSTUzR1RNODZNT093UXNEdUNjajBOOG1COW9TRjNRMlZLdmNZMmQ1MFZ1cw?oc=5",
-          "time": "2026-09-25T23:47:45Z",
-          "published_date": "2026-09-25T23:47:45Z",
-          "publishedDate": "2026-09-25T23:47:45Z",
+          "id": "f75cfc21bfa6",
+          "sourceLabel": "Google News — South Asia Security",
+          "sourceName": "Google News — South Asia Security",
+          "sourceType": "south-asia",
+          "title": "Russian FM Lavrov says Europe is obstructing US-backed efforts to negotiate peace in Ukraine - Business Upturn",
+          "summary": "Russian FM Lavrov says Europe is obstructing US-backed efforts to negotiate peace in Ukraine Business Upturn",
+          "summary_snippet": "Russian FM Lavrov says Europe is obstructing US-backed efforts to negotiate peace in Ukraine Business Upturn",
+          "source": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOaHVERjJKTHRkc0N0Q0VoUjhzQWJSdFhwTXQxZnhERVU4TDJpcDdVUWZ2TUNFTFVwbG5IUHZGVkNJWUtGM2pTZnFuSUE4M1pHcGdFX0tKLS16T1lmd1A5d2JUYlUzQUthT1hpcUlYVWJMNVJEeDJkbHA5dFJBaTVET1JqVHFtdWNmelM4emZFUmNpX1VGclNDbWZfLUp3ZGVyd0lxV29GYmlrclBzcEN5RzVBdDNLbjAzR0NpQjk2ZFFYTjE2SGprUlBrZml4U1JxamxKYS11Q0tHUWQ4QzMw?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOaHVERjJKTHRkc0N0Q0VoUjhzQWJSdFhwTXQxZnhERVU4TDJpcDdVUWZ2TUNFTFVwbG5IUHZGVkNJWUtGM2pTZnFuSUE4M1pHcGdFX0tKLS16T1lmd1A5d2JUYlUzQUthT1hpcUlYVWJMNVJEeDJkbHA5dFJBaTVET1JqVHFtdWNmelM4emZFUmNpX1VGclNDbWZfLUp3ZGVyd0lxV29GYmlrclBzcEN5RzVBdDNLbjAzR0NpQjk2ZFFYTjE2SGprUlBrZml4U1JxamxKYS11Q0tHUWQ4QzMw?oc=5",
+          "time": "2026-09-26T16:41:10Z",
+          "published_date": "2026-09-26T16:41:10Z",
+          "publishedDate": "2026-09-26T16:41:10Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "google_news_cnn_politics",
-            "sourceUrl": "https://news.google.com/rss/search?q=site%3Acnn.com+politics+Trump+Congress+Senate+White+House+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "sourceId": "google_news_south_asia_security",
+            "sourceUrl": "https://news.google.com/rss/search?q=India+Pakistan+Afghanistan+Bangladesh+Nepal+Sri+Lanka+conflict+security+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
         }
       ]
     },
     {
-      "id": "faf3a267da47a898",
-      "title": "Cyprus: Guterres calls for renewed trust and a new meeting on the way forward - news.un.org",
+      "id": "c86f0fa46d260802",
+      "title": "Iran president calls for regional solution to Yemen crisis, says Saudi Arabia can help unite Islamic world - Business Upturn",
+      "category": "political",
+      "confidence": "low",
+      "reportCount": 2,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [
+        "iran",
+        "yemen"
+      ],
+      "firstSeen": "2026-09-26T11:00:57Z",
+      "lastSeen": "2026-09-26T16:25:50Z",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOd1FXeUkzdnN4dXl5eFJ4ZGw1anpHaTdOekVVM2g1TEJpeEVBbWZLSFJzUzhhUjdSZTVEQU1xcURGUWF1dlpkam1qOHpFd1RDWXZRa2lyUWxGaHBBM3Yxb05JZUtrUnJiMmlPMWlDRXBCS2Ztb3RCa08yY2VjX2d2RHZkR09Cbzc4YzBuaFZEQmdLTzN1VU90ckhRUG5URzRLVGVYeDBNQ2dLdDlnVXVHSTgxRVFIMFFpaWw5M2VXUUU5QkI1UDNxaEp2WmU3V1UyT2Q4TktLTXdzTlhvQ1o3NlNRREdHZ3hVcVNlUzZodVRLQQ?oc=5",
+        "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQVEpqTGJSZHFXNXJuZC14eHFueFNiRHZ3UGV0bVRiZjdxMGxxQnBWTG9VMDlxM1loQndCTmFxdHFvYTUyMGxEUlNFSkdrUXR0R1JXUGtFRE13dW5oaFdyN1B0SVI4ZXZQMjhCeUlhOFZjb0JGNWVOSU1RaHQwS2dSVXVkN1N5LVlZdFdZMWp0VjAzZTlyTjQtTmtUWmRDNWt3enhDbk1kdWpzQ2tuVjhHd19zYWZvVVN3azhDZ21FV0Voa2FIQ21NNmVEN01mMDhFVFRmbjgzSlJqdGQyS2RsdGlOcWo5dXZjd2N0Q290WHNMZ0F1cVBr?oc=5"
+      ],
+      "reports": [
+        {
+          "id": "e838ba4f3fc3",
+          "sourceLabel": "Google News — South Asia Security",
+          "sourceName": "Google News — South Asia Security",
+          "sourceType": "south-asia",
+          "title": "Iran president calls for regional solution to Yemen crisis, says Saudi Arabia can help unite Islamic world - Business Upturn",
+          "summary": "Iran president calls for regional solution to Yemen crisis, says Saudi Arabia can help unite Islamic world Business Upturn",
+          "summary_snippet": "Iran president calls for regional solution to Yemen crisis, says Saudi Arabia can help unite Islamic world Business Upturn",
+          "source": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOd1FXeUkzdnN4dXl5eFJ4ZGw1anpHaTdOekVVM2g1TEJpeEVBbWZLSFJzUzhhUjdSZTVEQU1xcURGUWF1dlpkam1qOHpFd1RDWXZRa2lyUWxGaHBBM3Yxb05JZUtrUnJiMmlPMWlDRXBCS2Ztb3RCa08yY2VjX2d2RHZkR09Cbzc4YzBuaFZEQmdLTzN1VU90ckhRUG5URzRLVGVYeDBNQ2dLdDlnVXVHSTgxRVFIMFFpaWw5M2VXUUU5QkI1UDNxaEp2WmU3V1UyT2Q4TktLTXdzTlhvQ1o3NlNRREdHZ3hVcVNlUzZodVRLQQ?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOd1FXeUkzdnN4dXl5eFJ4ZGw1anpHaTdOekVVM2g1TEJpeEVBbWZLSFJzUzhhUjdSZTVEQU1xcURGUWF1dlpkam1qOHpFd1RDWXZRa2lyUWxGaHBBM3Yxb05JZUtrUnJiMmlPMWlDRXBCS2Ztb3RCa08yY2VjX2d2RHZkR09Cbzc4YzBuaFZEQmdLTzN1VU90ckhRUG5URzRLVGVYeDBNQ2dLdDlnVXVHSTgxRVFIMFFpaWw5M2VXUUU5QkI1UDNxaEp2WmU3V1UyT2Q4TktLTXdzTlhvQ1o3NlNRREdHZ3hVcVNlUzZodVRLQQ?oc=5",
+          "time": "2026-09-26T16:25:50Z",
+          "published_date": "2026-09-26T16:25:50Z",
+          "publishedDate": "2026-09-26T16:25:50Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_south_asia_security",
+            "sourceUrl": "https://news.google.com/rss/search?q=India+Pakistan+Afghanistan+Bangladesh+Nepal+Sri+Lanka+conflict+security+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "5bc24f10d252",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQVEpqTGJSZHFXNXJuZC14eHFueFNiRHZ3UGV0bVRiZjdxMGxxQnBWTG9VMDlxM1loQndCTmFxdHFvYTUyMGxEUlNFSkdrUXR0R1JXUGtFRE13dW5oaFdyN1B0SVI4ZXZQMjhCeUlhOFZjb0JGNWVOSU1RaHQwS2dSVXVkN1N5LVlZdFdZMWp0VjAzZTlyTjQtTmtUWmRDNWt3enhDbk1kdWpzQ2tuVjhHd19zYWZvVVN3azhDZ21FV0Voa2FIQ21NNmVEN01mMDhFVFRmbjgzSlJqdGQyS2RsdGlOcWo5dXZjd2N0Q290WHNMZ0F1cVBr?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQVEpqTGJSZHFXNXJuZC14eHFueFNiRHZ3UGV0bVRiZjdxMGxxQnBWTG9VMDlxM1loQndCTmFxdHFvYTUyMGxEUlNFSkdrUXR0R1JXUGtFRE13dW5oaFdyN1B0SVI4ZXZQMjhCeUlhOFZjb0JGNWVOSU1RaHQwS2dSVXVkN1N5LVlZdFdZMWp0VjAzZTlyTjQtTmtUWmRDNWt3enhDbk1kdWpzQ2tuVjhHd19zYWZvVVN3azhDZ21FV0Voa2FIQ21NNmVEN01mMDhFVFRmbjgzSlJqdGQyS2RsdGlOcWo5dXZjd2N0Q290WHNMZ0F1cVBr?oc=5",
+          "sourceType": "south-asia",
+          "title": "Iran president calls for regional solution to Yemen crisis, says Saudi Arabia can help unite Islamic world - Business Upturn",
+          "summary": "Iran president calls for regional solution to Yemen crisis, says Saudi Arabia can help unite Islamic world Business Upturn",
+          "summary_snippet": "Iran president calls for regional solution to Yemen crisis, says Saudi Arabia can help unite Islamic world Business Upturn",
+          "source": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQVEpqTGJSZHFXNXJuZC14eHFueFNiRHZ3UGV0bVRiZjdxMGxxQnBWTG9VMDlxM1loQndCTmFxdHFvYTUyMGxEUlNFSkdrUXR0R1JXUGtFRE13dW5oaFdyN1B0SVI4ZXZQMjhCeUlhOFZjb0JGNWVOSU1RaHQwS2dSVXVkN1N5LVlZdFdZMWp0VjAzZTlyTjQtTmtUWmRDNWt3enhDbk1kdWpzQ2tuVjhHd19zYWZvVVN3azhDZ21FV0Voa2FIQ21NNmVEN01mMDhFVFRmbjgzSlJqdGQyS2RsdGlOcWo5dXZjd2N0Q290WHNMZ0F1cVBr?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQVEpqTGJSZHFXNXJuZC14eHFueFNiRHZ3UGV0bVRiZjdxMGxxQnBWTG9VMDlxM1loQndCTmFxdHFvYTUyMGxEUlNFSkdrUXR0R1JXUGtFRE13dW5oaFdyN1B0SVI4ZXZQMjhCeUlhOFZjb0JGNWVOSU1RaHQwS2dSVXVkN1N5LVlZdFdZMWp0VjAzZTlyTjQtTmtUWmRDNWt3enhDbk1kdWpzQ2tuVjhHd19zYWZvVVN3azhDZ21FV0Voa2FIQ21NNmVEN01mMDhFVFRmbjgzSlJqdGQyS2RsdGlOcWo5dXZjd2N0Q290WHNMZ0F1cVBr?oc=5",
+          "time": "2026-09-26T11:00:57Z",
+          "published_date": "2026-09-26T11:00:57Z",
+          "publishedDate": "2026-09-26T11:00:57Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_south_asia_security",
+            "sourceUrl": "https://news.google.com/rss/search?q=India+Pakistan+Afghanistan+Bangladesh+Nepal+Sri+Lanka+conflict+security+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
+      "id": "4bead0a4696f2444",
+      "title": "Hurricane Nolo bringing flood threat, gusty winds to Hawaii - The Weather Channel",
+      "category": "disaster",
+      "confidence": "low",
+      "reportCount": 2,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "2026-09-26T11:00:44Z",
+      "lastSeen": "2026-09-26T11:23:45Z",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMipgFBVV95cUxQMEdObHdjZU1CY3ExY1dTamxCd3loQ1hXelAwRE1qWlVJZ2xuV0h1aWc4WVlzSVJ0N0drN2ZXYmVla1pseUtZazZ4TmstVzlsZzhLdml1TWEtd1BwUnpYUnMwVVJsUjZPZS12VTN5S3JRUnpiWENkVVVueGpnZDhmM1ItX3lIWlUyMVMwNUI4UmRLVU1PTjQ2bmkxNjZHeDZ2T1pKaVp3?oc=5",
+        "https://news.google.com/rss/articles/CBMirwFBVV95cUxQamJ4TTRBd28zUjJIOEtwdE5uX1hrbXFpVW9kVmFBZld6TnJEMlcyX2p2UjBZMXFoZXBaZXdQdC1yY2xhTmZmZlZTSVVoWDZwVUsxUE0xVHh6WTQ4ZjQzM0dVRS03enJoXy1EXzJYQU5RYmhJdllVTGtrdEh5c0hiME14VmRyMzNHV2dKR3lmM0JPa2lIbkZjUTUxQ0ZCNENra0xUM01lTzVSYS1YdVNv?oc=5"
+      ],
+      "reports": [
+        {
+          "id": "8e6b26702947",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQMEdObHdjZU1CY3ExY1dTamxCd3loQ1hXelAwRE1qWlVJZ2xuV0h1aWc4WVlzSVJ0N0drN2ZXYmVla1pseUtZazZ4TmstVzlsZzhLdml1TWEtd1BwUnpYUnMwVVJsUjZPZS12VTN5S3JRUnpiWENkVVVueGpnZDhmM1ItX3lIWlUyMVMwNUI4UmRLVU1PTjQ2bmkxNjZHeDZ2T1pKaVp3?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQMEdObHdjZU1CY3ExY1dTamxCd3loQ1hXelAwRE1qWlVJZ2xuV0h1aWc4WVlzSVJ0N0drN2ZXYmVla1pseUtZazZ4TmstVzlsZzhLdml1TWEtd1BwUnpYUnMwVVJsUjZPZS12VTN5S3JRUnpiWENkVVVueGpnZDhmM1ItX3lIWlUyMVMwNUI4UmRLVU1PTjQ2bmkxNjZHeDZ2T1pKaVp3?oc=5",
+          "sourceType": "climate-hazard",
+          "title": "Hurricane Nolo bringing flood threat, gusty winds to Hawaii - The Weather Channel",
+          "summary": "Hurricane Nolo bringing flood threat, gusty winds to Hawaii The Weather Channel",
+          "summary_snippet": "Hurricane Nolo bringing flood threat, gusty winds to Hawaii The Weather Channel",
+          "source": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQMEdObHdjZU1CY3ExY1dTamxCd3loQ1hXelAwRE1qWlVJZ2xuV0h1aWc4WVlzSVJ0N0drN2ZXYmVla1pseUtZazZ4TmstVzlsZzhLdml1TWEtd1BwUnpYUnMwVVJsUjZPZS12VTN5S3JRUnpiWENkVVVueGpnZDhmM1ItX3lIWlUyMVMwNUI4UmRLVU1PTjQ2bmkxNjZHeDZ2T1pKaVp3?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQMEdObHdjZU1CY3ExY1dTamxCd3loQ1hXelAwRE1qWlVJZ2xuV0h1aWc4WVlzSVJ0N0drN2ZXYmVla1pseUtZazZ4TmstVzlsZzhLdml1TWEtd1BwUnpYUnMwVVJsUjZPZS12VTN5S3JRUnpiWENkVVVueGpnZDhmM1ItX3lIWlUyMVMwNUI4UmRLVU1PTjQ2bmkxNjZHeDZ2T1pKaVp3?oc=5",
+          "time": "2026-09-26T11:23:45Z",
+          "published_date": "2026-09-26T11:23:45Z",
+          "publishedDate": "2026-09-26T11:23:45Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_climate_disaster",
+            "sourceUrl": "https://news.google.com/rss/search?q=flood+wildfire+hurricane+disaster+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "48e907dfc3b7",
+          "sourceLabel": "Google News — Climate & Disaster",
+          "sourceName": "Google News — Climate & Disaster",
+          "sourceType": "climate-hazard",
+          "title": "Hurricane Nolo bringing flood threat, gusty winds to Hawaii - The Weather Channel",
+          "summary": "Hurricane Nolo bringing flood threat, gusty winds to Hawaii The Weather Channel",
+          "summary_snippet": "Hurricane Nolo bringing flood threat, gusty winds to Hawaii The Weather Channel",
+          "source": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQamJ4TTRBd28zUjJIOEtwdE5uX1hrbXFpVW9kVmFBZld6TnJEMlcyX2p2UjBZMXFoZXBaZXdQdC1yY2xhTmZmZlZTSVVoWDZwVUsxUE0xVHh6WTQ4ZjQzM0dVRS03enJoXy1EXzJYQU5RYmhJdllVTGtrdEh5c0hiME14VmRyMzNHV2dKR3lmM0JPa2lIbkZjUTUxQ0ZCNENra0xUM01lTzVSYS1YdVNv?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQamJ4TTRBd28zUjJIOEtwdE5uX1hrbXFpVW9kVmFBZld6TnJEMlcyX2p2UjBZMXFoZXBaZXdQdC1yY2xhTmZmZlZTSVVoWDZwVUsxUE0xVHh6WTQ4ZjQzM0dVRS03enJoXy1EXzJYQU5RYmhJdllVTGtrdEh5c0hiME14VmRyMzNHV2dKR3lmM0JPa2lIbkZjUTUxQ0ZCNENra0xUM01lTzVSYS1YdVNv?oc=5",
+          "time": "2026-09-26T11:00:44Z",
+          "published_date": "2026-09-26T11:00:44Z",
+          "publishedDate": "2026-09-26T11:00:44Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_climate_disaster",
+            "sourceUrl": "https://news.google.com/rss/search?q=flood+wildfire+hurricane+disaster+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0a23e5182656311f",
+      "title": "Asian Games cricket quarter-finals line-up confirmed - The Express Tribune",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 2,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "2026-09-26T10:39:49Z",
+      "lastSeen": "2026-09-26T10:39:49Z",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMikwFBVV95cUxNRVVlTXlsQkhfMnBnYWZ2Nklycy1QZGNVTm53cGNTNDdTc3Awc2Z0NVRlRzBGOWZONDNHeU9UU2ZsbWJhOEpNekFoSWVTTzEyM3pJXzhrV05kNUMwekJud2hmUHp3Wk5WaHluUHJRUHZMdFRIWHRYaWd1QTdvVUJSQ1BYLXBWTlphMDlfOW54VDN5bms?oc=5",
+        "https://news.google.com/rss/articles/CBMikwFBVV95cUxNRVVlTXlsQkhfMnBnYWZ2Nklycy1QZGNVTm53cGNTNDdTc3Awc2Z0NVRlRzBGOWZONDNHeU9UU2ZsbWJhOEpNekFoSWVTTzEyM3pJXzhrV05kNUMwekJud2hmUHp3Wk5WaHluUHJRUHZMdFRIWHRYaWd1QTdvVUJSQ1BYLXBWTlphMDlfOW54VDN5bmvSAZsBQVVfeXFMT2VzOG1FWHlDSVhJWkQxbklCdVBwb2M4WGxKeHp3RW5LMXcxTlM2Zl83bUxIWFlYbEZfcnFfRmU2cUVVRW1aM1R6SExSd2RzRDJlV0FiNFlHdklBVm9udHRqb2VDV0tjYjBwTmFKNDZmaXBkZDRPQjdicGtfbC1Xd3B2ZXVGOWZKNTF2VEMxY3JzQXVCOUprbVh0bHc?oc=5"
+      ],
+      "reports": [
+        {
+          "id": "c4d22de4f6c2",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNRVVlTXlsQkhfMnBnYWZ2Nklycy1QZGNVTm53cGNTNDdTc3Awc2Z0NVRlRzBGOWZONDNHeU9UU2ZsbWJhOEpNekFoSWVTTzEyM3pJXzhrV05kNUMwekJud2hmUHp3Wk5WaHluUHJRUHZMdFRIWHRYaWd1QTdvVUJSQ1BYLXBWTlphMDlfOW54VDN5bms?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNRVVlTXlsQkhfMnBnYWZ2Nklycy1QZGNVTm53cGNTNDdTc3Awc2Z0NVRlRzBGOWZONDNHeU9UU2ZsbWJhOEpNekFoSWVTTzEyM3pJXzhrV05kNUMwekJud2hmUHp3Wk5WaHluUHJRUHZMdFRIWHRYaWd1QTdvVUJSQ1BYLXBWTlphMDlfOW54VDN5bms?oc=5",
+          "sourceType": "south-asia",
+          "title": "Asian Games cricket quarter-finals line-up confirmed - The Express Tribune",
+          "summary": "Asian Games cricket quarter-finals line-up confirmed The Express Tribune",
+          "summary_snippet": "Asian Games cricket quarter-finals line-up confirmed The Express Tribune",
+          "source": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNRVVlTXlsQkhfMnBnYWZ2Nklycy1QZGNVTm53cGNTNDdTc3Awc2Z0NVRlRzBGOWZONDNHeU9UU2ZsbWJhOEpNekFoSWVTTzEyM3pJXzhrV05kNUMwekJud2hmUHp3Wk5WaHluUHJRUHZMdFRIWHRYaWd1QTdvVUJSQ1BYLXBWTlphMDlfOW54VDN5bms?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNRVVlTXlsQkhfMnBnYWZ2Nklycy1QZGNVTm53cGNTNDdTc3Awc2Z0NVRlRzBGOWZONDNHeU9UU2ZsbWJhOEpNekFoSWVTTzEyM3pJXzhrV05kNUMwekJud2hmUHp3Wk5WaHluUHJRUHZMdFRIWHRYaWd1QTdvVUJSQ1BYLXBWTlphMDlfOW54VDN5bms?oc=5",
+          "time": "2026-09-26T10:39:49Z",
+          "published_date": "2026-09-26T10:39:49Z",
+          "publishedDate": "2026-09-26T10:39:49Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_south_asia_security",
+            "sourceUrl": "https://news.google.com/rss/search?q=India+Pakistan+Afghanistan+Bangladesh+Nepal+Sri+Lanka+conflict+security+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "2359169aa3bd",
+          "sourceLabel": "Google News — South Asia Security",
+          "sourceName": "Google News — South Asia Security",
+          "sourceType": "south-asia",
+          "title": "Asian Games cricket quarter-finals line-up confirmed - The Express Tribune",
+          "summary": "Asian Games cricket quarter-finals line-up confirmed The Express Tribune",
+          "summary_snippet": "Asian Games cricket quarter-finals line-up confirmed The Express Tribune",
+          "source": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNRVVlTXlsQkhfMnBnYWZ2Nklycy1QZGNVTm53cGNTNDdTc3Awc2Z0NVRlRzBGOWZONDNHeU9UU2ZsbWJhOEpNekFoSWVTTzEyM3pJXzhrV05kNUMwekJud2hmUHp3Wk5WaHluUHJRUHZMdFRIWHRYaWd1QTdvVUJSQ1BYLXBWTlphMDlfOW54VDN5bmvSAZsBQVVfeXFMT2VzOG1FWHlDSVhJWkQxbklCdVBwb2M4WGxKeHp3RW5LMXcxTlM2Zl83bUxIWFlYbEZfcnFfRmU2cUVVRW1aM1R6SExSd2RzRDJlV0FiNFlHdklBVm9udHRqb2VDV0tjYjBwTmFKNDZmaXBkZDRPQjdicGtfbC1Xd3B2ZXVGOWZKNTF2VEMxY3JzQXVCOUprbVh0bHc?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNRVVlTXlsQkhfMnBnYWZ2Nklycy1QZGNVTm53cGNTNDdTc3Awc2Z0NVRlRzBGOWZONDNHeU9UU2ZsbWJhOEpNekFoSWVTTzEyM3pJXzhrV05kNUMwekJud2hmUHp3Wk5WaHluUHJRUHZMdFRIWHRYaWd1QTdvVUJSQ1BYLXBWTlphMDlfOW54VDN5bmvSAZsBQVVfeXFMT2VzOG1FWHlDSVhJWkQxbklCdVBwb2M4WGxKeHp3RW5LMXcxTlM2Zl83bUxIWFlYbEZfcnFfRmU2cUVVRW1aM1R6SExSd2RzRDJlV0FiNFlHdklBVm9udHRqb2VDV0tjYjBwTmFKNDZmaXBkZDRPQjdicGtfbC1Xd3B2ZXVGOWZKNTF2VEMxY3JzQXVCOUprbVh0bHc?oc=5",
+          "time": "2026-09-26T10:39:49Z",
+          "published_date": "2026-09-26T10:39:49Z",
+          "publishedDate": "2026-09-26T10:39:49Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_south_asia_security",
+            "sourceUrl": "https://news.google.com/rss/search?q=India+Pakistan+Afghanistan+Bangladesh+Nepal+Sri+Lanka+conflict+security+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
+      "id": "8352b1e5e492ae72",
+      "title": "The cartels expanding bloodthirsty drug empire worldwide with super meth labs - the-sun.com",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 2,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "2026-09-26T10:17:15Z",
+      "lastSeen": "2026-09-26T10:17:15Z",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMingFBVV95cUxQMjVEdGdJWGtDOUhoc3VaV3hfUERsRS1zZEdlb00xN0lmYUEtVVVNd0ZlcWNnWm9wenpUSjM0TkFXaUI5Z29LZGxJMXlQbmswc09xbGdWXzJLQ21WUGhBT25iLV9RaXFkMS1obm9WdjNncDhmbzRaTlkwSnh2cDFYTldkTnRCVldQM3pSbXJpUEljRmJKWEZrSGxUWXhYdw?oc=5",
+        "https://news.google.com/rss/articles/CBMinwFBVV95cUxQS1hxdDZGbE9xM0xLakl4NGZvTXVMQ2ZkODFqcTRCMmY2Wkw4X3lDbDkwZGVsY3NiOC1BOE1GUUxGUEdRX3pqVl9yS0hpRks3LWUzSjUwcTFhTU4xOTktN0ZIODJwZzZSQU80YlBodTB5VnpOaU52aFdvTnA4WFFLNHg5a0dqMHRzal95QjNvT0pnV1h3blpGSmJGVjdzTFU?oc=5"
+      ],
+      "reports": [
+        {
+          "id": "e70a3a26c373",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMingFBVV95cUxQMjVEdGdJWGtDOUhoc3VaV3hfUERsRS1zZEdlb00xN0lmYUEtVVVNd0ZlcWNnWm9wenpUSjM0TkFXaUI5Z29LZGxJMXlQbmswc09xbGdWXzJLQ21WUGhBT25iLV9RaXFkMS1obm9WdjNncDhmbzRaTlkwSnh2cDFYTldkTnRCVldQM3pSbXJpUEljRmJKWEZrSGxUWXhYdw?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMingFBVV95cUxQMjVEdGdJWGtDOUhoc3VaV3hfUERsRS1zZEdlb00xN0lmYUEtVVVNd0ZlcWNnWm9wenpUSjM0TkFXaUI5Z29LZGxJMXlQbmswc09xbGdWXzJLQ21WUGhBT25iLV9RaXFkMS1obm9WdjNncDhmbzRaTlkwSnh2cDFYTldkTnRCVldQM3pSbXJpUEljRmJKWEZrSGxUWXhYdw?oc=5",
+          "sourceType": "cartel",
+          "title": "The cartels expanding bloodthirsty drug empire worldwide with super meth labs - the-sun.com",
+          "summary": "The cartels expanding bloodthirsty drug empire worldwide with super meth labs the-sun.com",
+          "summary_snippet": "The cartels expanding bloodthirsty drug empire worldwide with super meth labs the-sun.com",
+          "source": "https://news.google.com/rss/articles/CBMingFBVV95cUxQMjVEdGdJWGtDOUhoc3VaV3hfUERsRS1zZEdlb00xN0lmYUEtVVVNd0ZlcWNnWm9wenpUSjM0TkFXaUI5Z29LZGxJMXlQbmswc09xbGdWXzJLQ21WUGhBT25iLV9RaXFkMS1obm9WdjNncDhmbzRaTlkwSnh2cDFYTldkTnRCVldQM3pSbXJpUEljRmJKWEZrSGxUWXhYdw?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQMjVEdGdJWGtDOUhoc3VaV3hfUERsRS1zZEdlb00xN0lmYUEtVVVNd0ZlcWNnWm9wenpUSjM0TkFXaUI5Z29LZGxJMXlQbmswc09xbGdWXzJLQ21WUGhBT25iLV9RaXFkMS1obm9WdjNncDhmbzRaTlkwSnh2cDFYTldkTnRCVldQM3pSbXJpUEljRmJKWEZrSGxUWXhYdw?oc=5",
+          "time": "2026-09-26T10:17:15Z",
+          "published_date": "2026-09-26T10:17:15Z",
+          "publishedDate": "2026-09-26T10:17:15Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_sinaloa_cartel_cjng",
+            "sourceUrl": "https://news.google.com/rss/search?q=Sinaloa+Cartel+CJNG+Mexico+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "54ebbd18281d",
+          "sourceLabel": "Google News — Sinaloa Cartel / CJNG",
+          "sourceName": "Google News — Sinaloa Cartel / CJNG",
+          "sourceType": "cartel",
+          "title": "The cartels expanding bloodthirsty drug empire worldwide with super meth labs - the-sun.com",
+          "summary": "The cartels expanding bloodthirsty drug empire worldwide with super meth labs the-sun.com",
+          "summary_snippet": "The cartels expanding bloodthirsty drug empire worldwide with super meth labs the-sun.com",
+          "source": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQS1hxdDZGbE9xM0xLakl4NGZvTXVMQ2ZkODFqcTRCMmY2Wkw4X3lDbDkwZGVsY3NiOC1BOE1GUUxGUEdRX3pqVl9yS0hpRks3LWUzSjUwcTFhTU4xOTktN0ZIODJwZzZSQU80YlBodTB5VnpOaU52aFdvTnA4WFFLNHg5a0dqMHRzal95QjNvT0pnV1h3blpGSmJGVjdzTFU?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQS1hxdDZGbE9xM0xLakl4NGZvTXVMQ2ZkODFqcTRCMmY2Wkw4X3lDbDkwZGVsY3NiOC1BOE1GUUxGUEdRX3pqVl9yS0hpRks3LWUzSjUwcTFhTU4xOTktN0ZIODJwZzZSQU80YlBodTB5VnpOaU52aFdvTnA4WFFLNHg5a0dqMHRzal95QjNvT0pnV1h3blpGSmJGVjdzTFU?oc=5",
+          "time": "2026-09-26T10:17:15Z",
+          "published_date": "2026-09-26T10:17:15Z",
+          "publishedDate": "2026-09-26T10:17:15Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_sinaloa_cartel_cjng",
+            "sourceUrl": "https://news.google.com/rss/search?q=Sinaloa+Cartel+CJNG+Mexico+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
+      "id": "48c139487ffd59c1",
+      "title": "At ECO meeting, Dar voices concern over regional, Middle East security situation - Dawn",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 2,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "2026-09-26T08:15:28Z",
+      "lastSeen": "2026-09-26T08:15:28Z",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiSEFVX3lxTE02VkRyal8wdkxMaDZibk5SbmNKWWR0cHpDR3FzN2NlclBfTTZNUzZHTVRVYUxxWFJUVGxwcmcyVDhKenJhalJkMNIBTkFVX3lxTE1iX3hKTk5aVnNHMDNnMHVVWVpHdVRreHluS0JoTXZJZVZxTk1ZZU9FMmZ0S1VISVo0clZ4c1lmc3oxZHJpcTQyWDFtRGhTZw?oc=5",
+        "https://news.google.com/rss/articles/CBMisgFBVV95cUxQbzlqeEVnVUNBOEpCUWdEZGxhc2hSelN3OWhOSm9VbXZuNFMzZEs1TGg1b191M2JVSnNPaW03UlZWS2d0RmY2R2tmeEhWYzdLXy1DR3h5eWdoQmptR1hPR1gtelIydHlHa2FzbWtHRHgtbUN1TkZsd240b21IdWtxYVpSMmh6WFE3cElsTS1QWXZiZ2RNNjlheGpKTERockUxZk5lTjZ4TWQ0OXNCLTRGeHVR0gFOQVVfeXFMTWJfeEpOTlpWc0cwM2cwdVVZWkd1VGt4eW5LQmhNdkllVnFOTVllT0UyZnRLVUhJWjRyVnhzWWZzejFkcmlxNDJYMW1EaFNn?oc=5"
+      ],
+      "reports": [
+        {
+          "id": "ce535382fcb4",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE02VkRyal8wdkxMaDZibk5SbmNKWWR0cHpDR3FzN2NlclBfTTZNUzZHTVRVYUxxWFJUVGxwcmcyVDhKenJhalJkMNIBTkFVX3lxTE1iX3hKTk5aVnNHMDNnMHVVWVpHdVRreHluS0JoTXZJZVZxTk1ZZU9FMmZ0S1VISVo0clZ4c1lmc3oxZHJpcTQyWDFtRGhTZw?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE02VkRyal8wdkxMaDZibk5SbmNKWWR0cHpDR3FzN2NlclBfTTZNUzZHTVRVYUxxWFJUVGxwcmcyVDhKenJhalJkMNIBTkFVX3lxTE1iX3hKTk5aVnNHMDNnMHVVWVpHdVRreHluS0JoTXZJZVZxTk1ZZU9FMmZ0S1VISVo0clZ4c1lmc3oxZHJpcTQyWDFtRGhTZw?oc=5",
+          "sourceType": "climate-hazard",
+          "title": "At ECO meeting, Dar voices concern over regional, Middle East security situation - Dawn",
+          "summary": "At ECO meeting, Dar voices concern over regional, Middle East security situation Dawn",
+          "summary_snippet": "At ECO meeting, Dar voices concern over regional, Middle East security situation Dawn",
+          "source": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE02VkRyal8wdkxMaDZibk5SbmNKWWR0cHpDR3FzN2NlclBfTTZNUzZHTVRVYUxxWFJUVGxwcmcyVDhKenJhalJkMNIBTkFVX3lxTE1iX3hKTk5aVnNHMDNnMHVVWVpHdVRreHluS0JoTXZJZVZxTk1ZZU9FMmZ0S1VISVo0clZ4c1lmc3oxZHJpcTQyWDFtRGhTZw?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE02VkRyal8wdkxMaDZibk5SbmNKWWR0cHpDR3FzN2NlclBfTTZNUzZHTVRVYUxxWFJUVGxwcmcyVDhKenJhalJkMNIBTkFVX3lxTE1iX3hKTk5aVnNHMDNnMHVVWVpHdVRreHluS0JoTXZJZVZxTk1ZZU9FMmZ0S1VISVo0clZ4c1lmc3oxZHJpcTQyWDFtRGhTZw?oc=5",
+          "time": "2026-09-26T08:15:28Z",
+          "published_date": "2026-09-26T08:15:28Z",
+          "publishedDate": "2026-09-26T08:15:28Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_climate_security",
+            "sourceUrl": "https://news.google.com/rss/search?q=climate+crisis+food+water+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "39ed28910029",
+          "sourceLabel": "Google News — Climate Security",
+          "sourceName": "Google News — Climate Security",
+          "sourceType": "climate-hazard",
+          "title": "At ECO meeting, Dar voices concern over regional, Middle East security situation - Dawn",
+          "summary": "At ECO meeting, Dar voices concern over regional, Middle East security situation Dawn",
+          "summary_snippet": "At ECO meeting, Dar voices concern over regional, Middle East security situation Dawn",
+          "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQbzlqeEVnVUNBOEpCUWdEZGxhc2hSelN3OWhOSm9VbXZuNFMzZEs1TGg1b191M2JVSnNPaW03UlZWS2d0RmY2R2tmeEhWYzdLXy1DR3h5eWdoQmptR1hPR1gtelIydHlHa2FzbWtHRHgtbUN1TkZsd240b21IdWtxYVpSMmh6WFE3cElsTS1QWXZiZ2RNNjlheGpKTERockUxZk5lTjZ4TWQ0OXNCLTRGeHVR0gFOQVVfeXFMTWJfeEpOTlpWc0cwM2cwdVVZWkd1VGt4eW5LQmhNdkllVnFOTVllT0UyZnRLVUhJWjRyVnhzWWZzejFkcmlxNDJYMW1EaFNn?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQbzlqeEVnVUNBOEpCUWdEZGxhc2hSelN3OWhOSm9VbXZuNFMzZEs1TGg1b191M2JVSnNPaW03UlZWS2d0RmY2R2tmeEhWYzdLXy1DR3h5eWdoQmptR1hPR1gtelIydHlHa2FzbWtHRHgtbUN1TkZsd240b21IdWtxYVpSMmh6WFE3cElsTS1QWXZiZ2RNNjlheGpKTERockUxZk5lTjZ4TWQ0OXNCLTRGeHVR0gFOQVVfeXFMTWJfeEpOTlpWc0cwM2cwdVVZWkd1VGt4eW5LQmhNdkllVnFOTVllT0UyZnRLVUhJWjRyVnhzWWZzejFkcmlxNDJYMW1EaFNn?oc=5",
+          "time": "2026-09-26T08:15:28Z",
+          "published_date": "2026-09-26T08:15:28Z",
+          "publishedDate": "2026-09-26T08:15:28Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_climate_security",
+            "sourceUrl": "https://news.google.com/rss/search?q=climate+crisis+food+water+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
+      "id": "d280bc33a695d8f5",
+      "title": "Cyprus: Guterres calls for renewed trust and a new meeting on the way forward - UN News",
       "category": "general",
       "confidence": "low",
       "reportCount": 1,
@@ -1149,16 +1499,48 @@
       ],
       "reports": [
         {
-          "title": "Cyprus: Guterres calls for renewed trust and a new meeting on the way forward - news.un.org",
+          "title": "Cyprus: Guterres calls for renewed trust and a new meeting on the way forward - UN News",
           "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1makk0b1UxNDhHb2phWkd4NlhhNWhDVVptYU5FWFhQZFAxUGFTZmZRQm8wZ1FiNGgtQU9FS0tEdWI1UE1NTFZ3Y2xwU3Yya19HRW5PZnYtdw?oc=5",
           "published_date": "Wed, 29 Jul 2026 07:00:00 GMT",
           "time": "Wed, 29 Jul 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: news.un.org",
-          "summary": "Fallback discovery via Google News RSS; publisher: news.un.org",
-          "source": "news.un.org",
-          "sourceLabel": "news.un.org",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: UN News",
+          "summary": "Fallback discovery via Google News RSS; publisher: UN News",
+          "source": "UN News",
+          "sourceLabel": "UN News",
           "sourceType": "fallback-news",
           "fallbackFor": "X @UN",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "c92c4eaafcc6a9d2",
+      "title": "NASA Provides Update on Moon Base Rovers, Landers, Missions - NASA (.gov)",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Wed, 27 May 2026 07:00:00 GMT",
+      "lastSeen": "Wed, 27 May 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMilwFBVV95cUxOdjNJWUJUYnF2eEUtazlSclhHZHpzZ3RvVnIxRlBGZnc4akl2bXIzZVlZSEtxMzdyVmNBdE9Wa2pIYlJXbUlDTE1WWXd2UHQ2V3BJcHF1M0FLWVFHdWFEUDhZYk9iR0FaNm5HTGZoVzN2aFJjVGVyeHBwcmZNdi1taE1DYTJwQWlKU3NQQUowcWJGVjNWWWdJ?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "NASA Provides Update on Moon Base Rovers, Landers, Missions - NASA (.gov)",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOdjNJWUJUYnF2eEUtazlSclhHZHpzZ3RvVnIxRlBGZnc4akl2bXIzZVlZSEtxMzdyVmNBdE9Wa2pIYlJXbUlDTE1WWXd2UHQ2V3BJcHF1M0FLWVFHdWFEUDhZYk9iR0FaNm5HTGZoVzN2aFJjVGVyeHBwcmZNdi1taE1DYTJwQWlKU3NQQUowcWJGVjNWWWdJ?oc=5",
+          "published_date": "Wed, 27 May 2026 07:00:00 GMT",
+          "time": "Wed, 27 May 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
+          "summary": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
+          "source": "NASA (.gov)",
+          "sourceLabel": "NASA (.gov)",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NASA",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -1324,8 +1706,8 @@
       ]
     },
     {
-      "id": "0465f42b5244a739",
-      "title": "US strikes 2nd alleged drug cartel vessel in Pacific, in expansion of attacks - abcnews.com",
+      "id": "2a5df5ab65dd23b6",
+      "title": "US strikes 2nd alleged drug cartel vessel in Pacific, in expansion of attacks - ABC News - Breaking News, Latest News and Videos",
       "category": "general",
       "confidence": "low",
       "reportCount": 1,
@@ -1341,14 +1723,14 @@
       ],
       "reports": [
         {
-          "title": "US strikes 2nd alleged drug cartel vessel in Pacific, in expansion of attacks - abcnews.com",
+          "title": "US strikes 2nd alleged drug cartel vessel in Pacific, in expansion of attacks - ABC News - Breaking News, Latest News and Videos",
           "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNZG4zc0xyNzVzRVhEd3J4RG1OazhPTFRDclpJeEIwWWlWam9CMUN1UjZpX0FVajNiS1ZmSlBUdlNQLTMxZ2xsOWpnazhBUGlWOEtQTzJyZjRXNXFJY1dXdG5MN1FHemt6TjMtdUhrWkhEM09wMHloUkxxNVd4S3IzaHZ6a3VNZjRJUWtLRlpxNkNxU3dNS1VDa0hiSmFpaWfSAaQBQVVfeXFMUEFLYUM5SEdNRnphUFZabUUyY1RaeHhSMkw3MHlHRUN3YUx2ZkMxbEIwLTBkRVJ6XzNOaXQtVFRJOXVGWTR3Vm02OWNlMzlaQ2hWb1ZIaFdWTmY1T3ZVRDhiSVVaclExX1hzeTFMZC1QUVY2S1lRMHBfWkxUbEhyalRiSWFIN0xSeUw5QnhRMVBlVUVxaVVOMEZMOTlmMjhPVzJGVUU?oc=5",
           "published_date": "Wed, 22 Oct 2025 07:00:00 GMT",
           "time": "Wed, 22 Oct 2025 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: abcnews.com",
-          "summary": "Fallback discovery via Google News RSS; publisher: abcnews.com",
-          "source": "abcnews.com",
-          "sourceLabel": "abcnews.com",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: ABC News - Breaking News, Latest News and Videos",
+          "summary": "Fallback discovery via Google News RSS; publisher: ABC News - Breaking News, Latest News and Videos",
+          "source": "ABC News - Breaking News, Latest News and Videos",
+          "sourceLabel": "ABC News - Breaking News, Latest News and Videos",
           "sourceType": "fallback-news",
           "fallbackFor": "GDELT — Western Hemisphere Counter-Cartel",
           "credit_metadata": "Google News RSS fallback"
@@ -1452,6 +1834,38 @@
       ]
     },
     {
+      "id": "db4d1cf23f0d7d46",
+      "title": "NASA Updates Next Steps for Commercial Swift Boost Mission - NASA (.gov)",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Wed, 19 Aug 2026 07:00:00 GMT",
+      "lastSeen": "Wed, 19 Aug 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMimAFBVV95cUxNVl9zajVkTXpSbDhHaEVYY3hENjF3dmJiOG1EdzRJVVdvOXhlY0RhUnpubTdKeTNkM1hrSmlrcmJPcWRyUWFUc2JHR3pSenRPUzBGUEh1Wlc3V0kxRzBNbTVJVzVLWWNBNHdka29XMzZRenZvendnUTRsRXp1N1YxMncyRFU0eDhVamxaVlVUQ1g2WDBMME9kag?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "NASA Updates Next Steps for Commercial Swift Boost Mission - NASA (.gov)",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNVl9zajVkTXpSbDhHaEVYY3hENjF3dmJiOG1EdzRJVVdvOXhlY0RhUnpubTdKeTNkM1hrSmlrcmJPcWRyUWFUc2JHR3pSenRPUzBGUEh1Wlc3V0kxRzBNbTVJVzVLWWNBNHdka29XMzZRenZvendnUTRsRXp1N1YxMncyRFU0eDhVamxaVlVUQ1g2WDBMME9kag?oc=5",
+          "published_date": "Wed, 19 Aug 2026 07:00:00 GMT",
+          "time": "Wed, 19 Aug 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
+          "summary": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
+          "source": "NASA (.gov)",
+          "sourceLabel": "NASA (.gov)",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NASA",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
       "id": "b1a702a4191c7bc4",
       "title": "WATCH: Trump talks about North Korea, interest rates while hosting cryptocurrency leaders at the White House - PBS",
       "category": "diplomatic",
@@ -1484,8 +1898,8 @@
       ]
     },
     {
-      "id": "820916d3522d6bb1",
-      "title": "NATO says ‘prepared’ for any threat over possible Iranian strikes on US military targets in Europe - Anadolu Ajansı",
+      "id": "b5cb3e093049f23a",
+      "title": "NATO says ‘prepared’ for any threat over possible Iranian strikes on US military targets in Europe - aa.com.tr",
       "category": "conflict",
       "confidence": "low",
       "reportCount": 1,
@@ -1504,14 +1918,14 @@
       ],
       "reports": [
         {
-          "title": "NATO says ‘prepared’ for any threat over possible Iranian strikes on US military targets in Europe - Anadolu Ajansı",
+          "title": "NATO says ‘prepared’ for any threat over possible Iranian strikes on US military targets in Europe - aa.com.tr",
           "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOcjFUa3l4WVppeE12amkyRGFQTGp3bl9TQmJsSjNIalhVdkNoX0tuMWo2Q19JclpQSldHNXRmaDNPX3VNbXlKSkthM3JQYUNWVkNIRUJaTGdrY3VUYVU0VkRldTlJWGM3eDM4Ukw2ME1tWHRRR21vSWo2cVM0VzFqYWxZbVFHMi1pSkdXSXd1eXc5dGYyWkNPbTd6UzhWQnl0eFV2QXROX2ZCenA1UFNUVHA0NXJBcGtfc0dvekZ4ejNmS0J2eWtTQTNuMmx4RXl6?oc=5",
           "published_date": "Wed, 19 Aug 2026 07:00:00 GMT",
           "time": "Wed, 19 Aug 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Anadolu Ajansı",
-          "summary": "Fallback discovery via Google News RSS; publisher: Anadolu Ajansı",
-          "source": "Anadolu Ajansı",
-          "sourceLabel": "Anadolu Ajansı",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: aa.com.tr",
+          "summary": "Fallback discovery via Google News RSS; publisher: aa.com.tr",
+          "source": "aa.com.tr",
+          "sourceLabel": "aa.com.tr",
           "sourceType": "fallback-news",
           "fallbackFor": "X @NATO",
           "credit_metadata": "Google News RSS fallback"
@@ -1519,8 +1933,8 @@
       ]
     },
     {
-      "id": "5bd58bb41f55992f",
-      "title": "NATO prepared to defend allies from any Iranian threat, official says - washingtontimes.com",
+      "id": "2ea922f9bf256dfb",
+      "title": "NATO prepared to defend allies from any Iranian threat, official says - Washington Times",
       "category": "diplomatic",
       "confidence": "low",
       "reportCount": 1,
@@ -1539,14 +1953,14 @@
       ],
       "reports": [
         {
-          "title": "NATO prepared to defend allies from any Iranian threat, official says - washingtontimes.com",
+          "title": "NATO prepared to defend allies from any Iranian threat, official says - Washington Times",
           "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNdXRtSHhob196XzZQbUZYUkx2N3MwNnZBNkJacmczamdNRzJUekRsNWNnYTQ3WjhINlJEcDdhVlJ2VmVCNTlBa1psdl96cEJTb244OGI3eHBWZXYxa0JzVjB1VXQtNzNSRFJMelZOc1FSZmRKeXhHWkdiVlNWaVRyYVc2NlYtWWpfVUROcWMybHJGRUZZMnZGdm8tM3pWM2lVZmoydHZsSThCdw?oc=5",
           "published_date": "Wed, 19 Aug 2026 07:00:00 GMT",
           "time": "Wed, 19 Aug 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: washingtontimes.com",
-          "summary": "Fallback discovery via Google News RSS; publisher: washingtontimes.com",
-          "source": "washingtontimes.com",
-          "sourceLabel": "washingtontimes.com",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Washington Times",
+          "summary": "Fallback discovery via Google News RSS; publisher: Washington Times",
+          "source": "Washington Times",
+          "sourceLabel": "Washington Times",
           "sourceType": "fallback-news",
           "fallbackFor": "X @NATO",
           "credit_metadata": "Google News RSS fallback"
@@ -1589,38 +2003,6 @@
       ]
     },
     {
-      "id": "fc25e0c19534f53c",
-      "title": "NASA Announces Public-Private Partnership to Advance Mars Science - NASA (.gov)",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Wed, 17 Jun 2026 07:00:00 GMT",
-      "lastSeen": "Wed, 17 Jun 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiogFBVV95cUxQOVFvNHpLWmg4Nk8ya3NpMWRCVlExX2dGV2VHcW81eVJZMzNnS3hxRnNaMUpHejZFa2ZvMVExeGQxem9BRHVfM3NuZ0NVZDJSQzJ6ZEpCeS1ZTEZnNFNTMFFJbTBEVWY4SW9QN2dFSUFpWnhmNENsalVsNElWYS11RW1EckZwMlZCSjlWRzRoOTNyWHFkb1VjdkRSLTI2Z2FINFE?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "NASA Announces Public-Private Partnership to Advance Mars Science - NASA (.gov)",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQOVFvNHpLWmg4Nk8ya3NpMWRCVlExX2dGV2VHcW81eVJZMzNnS3hxRnNaMUpHejZFa2ZvMVExeGQxem9BRHVfM3NuZ0NVZDJSQzJ6ZEpCeS1ZTEZnNFNTMFFJbTBEVWY4SW9QN2dFSUFpWnhmNENsalVsNElWYS11RW1EckZwMlZCSjlWRzRoOTNyWHFkb1VjdkRSLTI2Z2FINFE?oc=5",
-          "published_date": "Wed, 17 Jun 2026 07:00:00 GMT",
-          "time": "Wed, 17 Jun 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
-          "summary": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
-          "source": "NASA (.gov)",
-          "sourceLabel": "NASA (.gov)",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NASA",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
       "id": "48da621ccce316ed",
       "title": "The UN and the crisis in the Middle East: What you need to know - Unric",
       "category": "general",
@@ -1653,8 +2035,8 @@
       ]
     },
     {
-      "id": "c46d0d40d8c564d9",
-      "title": "NASA’s Moon Orbiter Spots New, ‘Once-in-Century’ Moon Crater - science.nasa.gov",
+      "id": "f5f8e0642f3129dd",
+      "title": "NASA’s Moon Orbiter Spots New, ‘Once-in-Century’ Moon Crater - NASA Science (.gov)",
       "category": "general",
       "confidence": "low",
       "reportCount": 1,
@@ -1670,14 +2052,14 @@
       ],
       "reports": [
         {
-          "title": "NASA’s Moon Orbiter Spots New, ‘Once-in-Century’ Moon Crater - science.nasa.gov",
+          "title": "NASA’s Moon Orbiter Spots New, ‘Once-in-Century’ Moon Crater - NASA Science (.gov)",
           "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPdUNhN2dWcHJQa3AzQmwtRHFHUHRmTUNzZU1kVldtUXZCVVJaNE1BMFh6WVZWdER6Sm9QQURVMUVjWG5HU2s2dmpJV3RkeklMcnNSRjZja0Z3aWFGekI1andydWZIOUVwSE9ISFBWRXktd293c1pialFHS1hWU0UyTG1PVUg3R3FjWU01ck0zemhWbHZrNG04WUJna2taaXJuWkE?oc=5",
           "published_date": "Wed, 16 Sep 2026 07:00:00 GMT",
           "time": "Wed, 16 Sep 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: science.nasa.gov",
-          "summary": "Fallback discovery via Google News RSS; publisher: science.nasa.gov",
-          "source": "science.nasa.gov",
-          "sourceLabel": "science.nasa.gov",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NASA Science (.gov)",
+          "summary": "Fallback discovery via Google News RSS; publisher: NASA Science (.gov)",
+          "source": "NASA Science (.gov)",
+          "sourceLabel": "NASA Science (.gov)",
           "sourceType": "fallback-news",
           "fallbackFor": "X @NASA",
           "credit_metadata": "Google News RSS fallback"
@@ -1685,8 +2067,8 @@
       ]
     },
     {
-      "id": "ebfe35d2c63f3f78",
-      "title": "Newfound ‘Baby’ Planet Smashes Record for Youngest Known World - science.nasa.gov",
+      "id": "35cc7ea6887e90e7",
+      "title": "Newfound ‘Baby’ Planet Smashes Record for Youngest Known World - NASA Science (.gov)",
       "category": "general",
       "confidence": "low",
       "reportCount": 1,
@@ -1702,14 +2084,14 @@
       ],
       "reports": [
         {
-          "title": "Newfound ‘Baby’ Planet Smashes Record for Youngest Known World - science.nasa.gov",
+          "title": "Newfound ‘Baby’ Planet Smashes Record for Youngest Known World - NASA Science (.gov)",
           "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPWURWS0dUQ0s0azVvbnRCYjdjbE8zRUlSb0tpVkQyb2VZWjdkY0NCSVJic21uWm05QWJ1NVMyOV9sUVhhM0g2eDYzOWZ5MEZtcEpQd3JvMzRMYlEzYUgtZmlLUVNLZ0RhUExRNGllbXZPOVRDYnF1d2tHcDliTlRObHk2OXlRVGMwQnhjaExid2NKc2JJSmtlZXgydw?oc=5",
           "published_date": "Wed, 16 Sep 2026 07:00:00 GMT",
           "time": "Wed, 16 Sep 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: science.nasa.gov",
-          "summary": "Fallback discovery via Google News RSS; publisher: science.nasa.gov",
-          "source": "science.nasa.gov",
-          "sourceLabel": "science.nasa.gov",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NASA Science (.gov)",
+          "summary": "Fallback discovery via Google News RSS; publisher: NASA Science (.gov)",
+          "source": "NASA Science (.gov)",
+          "sourceLabel": "NASA Science (.gov)",
           "sourceType": "fallback-news",
           "fallbackFor": "X @NASA",
           "credit_metadata": "Google News RSS fallback"
@@ -1744,6 +2126,40 @@
           "sourceLabel": "CBS News",
           "sourceType": "fallback-news",
           "fallbackFor": "GDELT — Western Hemisphere Counter-Cartel",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "0f10f42d81a615e0",
+      "title": "Collective defence and Article 5 - North Atlantic Treaty Organization | NATO",
+      "category": "diplomatic",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [
+        "nato"
+      ],
+      "firstSeen": "Wed, 12 Nov 2025 08:00:00 GMT",
+      "lastSeen": "Wed, 12 Nov 2025 08:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMikgFBVV95cUxOaFRoaGdzSXNHMlM5ejFsQkxvOGZZYV9ucG1JU1FQUkU3NHdZN1RTOFZDYmZ4MkpSMFBGTXZBSWJHNFBFamR3WHhVUmpxRFBEQ1Z0NjFsM1ZmdmhsZDRSVXBsQU1yZ1lfMWVXOFRLTU9MY25VTmo5RHp2UEhXdVczUmtTREFJVVR4SXhfNG8xVXRLZw?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "Collective defence and Article 5 - North Atlantic Treaty Organization | NATO",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOaFRoaGdzSXNHMlM5ejFsQkxvOGZZYV9ucG1JU1FQUkU3NHdZN1RTOFZDYmZ4MkpSMFBGTXZBSWJHNFBFamR3WHhVUmpxRFBEQ1Z0NjFsM1ZmdmhsZDRSVXBsQU1yZ1lfMWVXOFRLTU9MY25VTmo5RHp2UEhXdVczUmtTREFJVVR4SXhfNG8xVXRLZw?oc=5",
+          "published_date": "Wed, 12 Nov 2025 08:00:00 GMT",
+          "time": "Wed, 12 Nov 2025 08:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
+          "summary": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
+          "source": "North Atlantic Treaty Organization | NATO",
+          "sourceLabel": "North Atlantic Treaty Organization | NATO",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NATO",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -1880,40 +2296,6 @@
           "sourceLabel": "Armenpress",
           "sourceType": "fallback-news",
           "fallbackFor": "X @NATO",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "638e150ea7d47af1",
-      "title": "Trump’s abrupt U-turn on a plan to reopen the Strait of Hormuz came after backlash from allies - NBC News",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [
-        "hormuz"
-      ],
-      "firstSeen": "Wed, 06 May 2026 07:00:00 GMT",
-      "lastSeen": "Wed, 06 May 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOR2RtM2QzRXQ0cWtMaUtzdTJvbjgyM3JlRnlXTk9VWEJZZDEwVVVjZ0xkd1QzZEk1WjBtQ2xUcVdnSldScGhjRVRIYmduckRxWl84TVBDOTM1UTNsQlRBTWNSMEhnQUVrcjZCbVFUb01yNDJpSHBURWZtaW9MUjhKeG1mZWtFaUZKQ3hlbm9Ka0FFc05QR29rZVVoTVVIS1FTZ0tPdXo5eUdpbjBYdVdDSXFwQVk3elBUX091WEdXX3FyZw?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Trump’s abrupt U-turn on a plan to reopen the Strait of Hormuz came after backlash from allies - NBC News",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOR2RtM2QzRXQ0cWtMaUtzdTJvbjgyM3JlRnlXTk9VWEJZZDEwVVVjZ0xkd1QzZEk1WjBtQ2xUcVdnSldScGhjRVRIYmduckRxWl84TVBDOTM1UTNsQlRBTWNSMEhnQUVrcjZCbVFUb01yNDJpSHBURWZtaW9MUjhKeG1mZWtFaUZKQ3hlbm9Ka0FFc05QR29rZVVoTVVIS1FTZ0tPdXo5eUdpbjBYdVdDSXFwQVk3elBUX091WEdXX3FyZw?oc=5",
-          "published_date": "Wed, 06 May 2026 07:00:00 GMT",
-          "time": "Wed, 06 May 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NBC News",
-          "summary": "Fallback discovery via Google News RSS; publisher: NBC News",
-          "source": "NBC News",
-          "sourceLabel": "NBC News",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @WhiteHouse",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -2245,38 +2627,6 @@
       ]
     },
     {
-      "id": "c92c4eaafcc6a9d2",
-      "title": "NASA Provides Update on Moon Base Rovers, Landers, Missions - NASA (.gov)",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Tue, 26 May 2026 07:00:00 GMT",
-      "lastSeen": "Tue, 26 May 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMilwFBVV95cUxOdjNJWUJUYnF2eEUtazlSclhHZHpzZ3RvVnIxRlBGZnc4akl2bXIzZVlZSEtxMzdyVmNBdE9Wa2pIYlJXbUlDTE1WWXd2UHQ2V3BJcHF1M0FLWVFHdWFEUDhZYk9iR0FaNm5HTGZoVzN2aFJjVGVyeHBwcmZNdi1taE1DYTJwQWlKU3NQQUowcWJGVjNWWWdJ?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "NASA Provides Update on Moon Base Rovers, Landers, Missions - NASA (.gov)",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOdjNJWUJUYnF2eEUtazlSclhHZHpzZ3RvVnIxRlBGZnc4akl2bXIzZVlZSEtxMzdyVmNBdE9Wa2pIYlJXbUlDTE1WWXd2UHQ2V3BJcHF1M0FLWVFHdWFEUDhZYk9iR0FaNm5HTGZoVzN2aFJjVGVyeHBwcmZNdi1taE1DYTJwQWlKU3NQQUowcWJGVjNWWWdJ?oc=5",
-          "published_date": "Tue, 26 May 2026 07:00:00 GMT",
-          "time": "Tue, 26 May 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
-          "summary": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
-          "source": "NASA (.gov)",
-          "sourceLabel": "NASA (.gov)",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NASA",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
       "id": "1ca9ee3cebc8e6be",
       "title": "US boat strike in the Caribbean kills four suspected of ‘narco-trafficking’ - The Hill",
       "category": "conflict",
@@ -2537,8 +2887,8 @@
       ]
     },
     {
-      "id": "4cf39162a16f2e84",
-      "title": "‘Business as usual is a business of death’: UN adopts road safety pledge over US objection - news.un.org",
+      "id": "120126f8c01ae97c",
+      "title": "‘Business as usual is a business of death’: UN adopts road safety pledge over US objection - UN News",
       "category": "general",
       "confidence": "low",
       "reportCount": 1,
@@ -2554,14 +2904,14 @@
       ],
       "reports": [
         {
-          "title": "‘Business as usual is a business of death’: UN adopts road safety pledge over US objection - news.un.org",
+          "title": "‘Business as usual is a business of death’: UN adopts road safety pledge over US objection - UN News",
           "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9YY3pDcUR2NGRXeVU0UVhnTHlKTG9mQXJQMjB4c3VYU2FKWjVvRDhGb09COVZHazBHZlRaWDd6TVNTRDVwQnFnNWZLaXdUWW9vTS1LeUFHTQ?oc=5",
           "published_date": "Tue, 21 Jul 2026 07:00:00 GMT",
           "time": "Tue, 21 Jul 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: news.un.org",
-          "summary": "Fallback discovery via Google News RSS; publisher: news.un.org",
-          "source": "news.un.org",
-          "sourceLabel": "news.un.org",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: UN News",
+          "summary": "Fallback discovery via Google News RSS; publisher: UN News",
+          "source": "UN News",
+          "sourceLabel": "UN News",
           "sourceType": "fallback-news",
           "fallbackFor": "X @UN",
           "credit_metadata": "Google News RSS fallback"
@@ -2766,6 +3116,38 @@
       ]
     },
     {
+      "id": "1564e77b904bbe28",
+      "title": "Trump to assert voting machine vulnerabilities in Thursday speech - Reuters",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Tue, 14 Jul 2026 07:00:00 GMT",
+      "lastSeen": "Tue, 14 Jul 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQNTZsOUhDOHRqLTNSOUNGM2VMOVhkNXExcjd6Y1lPQlNiNkYxVk40RURyNDBTbW9Wb0kzdUg2Sm5WNFRuYW1oVHhOUk05S0x1aU1tMkVRNnF4Ui1NOFNqZE92UjdFRTZpTkVaOE54Q3hnaUhtcjFsNVhYRkhyUm85QzBUcjg2QXJzczhvSzlLd0lXXzVNOFNrVlJrUC0tM0NSUjFKdDZzNTNlcWdfdjFoQ0JlX3FwM3REZHpB?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "Trump to assert voting machine vulnerabilities in Thursday speech - Reuters",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQNTZsOUhDOHRqLTNSOUNGM2VMOVhkNXExcjd6Y1lPQlNiNkYxVk40RURyNDBTbW9Wb0kzdUg2Sm5WNFRuYW1oVHhOUk05S0x1aU1tMkVRNnF4Ui1NOFNqZE92UjdFRTZpTkVaOE54Q3hnaUhtcjFsNVhYRkhyUm85QzBUcjg2QXJzczhvSzlLd0lXXzVNOFNrVlJrUC0tM0NSUjFKdDZzNTNlcWdfdjFoQ0JlX3FwM3REZHpB?oc=5",
+          "published_date": "Tue, 14 Jul 2026 07:00:00 GMT",
+          "time": "Tue, 14 Jul 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Reuters",
+          "summary": "Fallback discovery via Google News RSS; publisher: Reuters",
+          "source": "Reuters",
+          "sourceLabel": "Reuters",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @POTUS",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
       "id": "446f548096f458d7",
       "title": "US military kills two men in new strike on vessel in eastern Pacific - Al Jazeera",
       "category": "conflict",
@@ -2798,8 +3180,8 @@
       ]
     },
     {
-      "id": "e5871ac11ad5e801",
-      "title": "Timeline: US strikes on alleged drug boats - abcnews.com",
+      "id": "8353b62612795232",
+      "title": "Timeline: US strikes on alleged drug boats - ABC News - Breaking News, Latest News and Videos",
       "category": "general",
       "confidence": "low",
       "reportCount": 1,
@@ -2815,14 +3197,14 @@
       ],
       "reports": [
         {
-          "title": "Timeline: US strikes on alleged drug boats - abcnews.com",
+          "title": "Timeline: US strikes on alleged drug boats - ABC News - Breaking News, Latest News and Videos",
           "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQSDVWTzdUUEU0ZFhUc1N6cHd5QnZEOWpfdi1ObjJVd29EN1YzQXdJZ2dETUVUeUs3TG1SSlpfTXQyY0QzTE56T1hZdGRGVWlIM04yT3JiNkdJZnZpTUlCazRJX2V2S0VWNktZNGtzMVRIem53UUl0NllqbG1qLWxCT2FnekIzRkdKRHJYZFUzd9IBlAFBVV95cUxQQk9NQ2dIZGhTVUdQZjh1MU80dkVsOHlzQ1VOZ3FjRzRINEZnOVY5SjRWQ3Axbk8tWkdGa05oajhGM0FLbEFwaGVYNlBaaFFOZ2xCc1FON0FKcEl0UTJMTjk4UTVwVkxIeFBKT0RId1pIcGVBRUs0OVdxQzVhYjNqUHZieTdDTGJqU1Q1bEs0OV9uSlli?oc=5",
           "published_date": "Tue, 10 Feb 2026 23:30:21 GMT",
           "time": "Tue, 10 Feb 2026 23:30:21 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: abcnews.com",
-          "summary": "Fallback discovery via Google News RSS; publisher: abcnews.com",
-          "source": "abcnews.com",
-          "sourceLabel": "abcnews.com",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: ABC News - Breaking News, Latest News and Videos",
+          "summary": "Fallback discovery via Google News RSS; publisher: ABC News - Breaking News, Latest News and Videos",
+          "source": "ABC News - Breaking News, Latest News and Videos",
+          "sourceLabel": "ABC News - Breaking News, Latest News and Videos",
           "sourceType": "fallback-news",
           "fallbackFor": "GDELT — Western Hemisphere Counter-Cartel",
           "credit_metadata": "Google News RSS fallback"
@@ -3083,235 +3465,6 @@
           "sourceLabel": "White House Correspondents' Association",
           "sourceType": "fallback-news",
           "fallbackFor": "X @WhiteHouse",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "bbf298746373ecb3",
-      "title": "Assessing the Facts and Legal Questions About the U.S. Strikes on Alleged Drug Boats - FactCheck.org",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Thu, 30 Oct 2025 07:00:00 GMT",
-      "lastSeen": "Thu, 30 Oct 2025 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiugFBVV95cUxPSWo4YTN2TUk5SnNPa2VySzhEbl9wM2JQVEc3Nm9DVGh6ZlZfbWVTQ1Q3NnlBOXlaNmZpZ1pKS3d0V1FQQUFQU3lxMlFkUlBjdVowZlUwa20yU1c3SEhoZHJPSTVlS3NoX0FUb0NYaFIta0xZRmkwQTdsNkJCVlhxRHplTHhjbkd1U1JkNkstZEQ4QmNENHRFdlFXZHU4eld4RzFEUEJKLWlNUU1tUnFMejdmNTlUUGowQ1E?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Assessing the Facts and Legal Questions About the U.S. Strikes on Alleged Drug Boats - FactCheck.org",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPSWo4YTN2TUk5SnNPa2VySzhEbl9wM2JQVEc3Nm9DVGh6ZlZfbWVTQ1Q3NnlBOXlaNmZpZ1pKS3d0V1FQQUFQU3lxMlFkUlBjdVowZlUwa20yU1c3SEhoZHJPSTVlS3NoX0FUb0NYaFIta0xZRmkwQTdsNkJCVlhxRHplTHhjbkd1U1JkNkstZEQ4QmNENHRFdlFXZHU4eld4RzFEUEJKLWlNUU1tUnFMejdmNTlUUGowQ1E?oc=5",
-          "published_date": "Thu, 30 Oct 2025 07:00:00 GMT",
-          "time": "Thu, 30 Oct 2025 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: FactCheck.org",
-          "summary": "Fallback discovery via Google News RSS; publisher: FactCheck.org",
-          "source": "FactCheck.org",
-          "sourceLabel": "FactCheck.org",
-          "sourceType": "fallback-news",
-          "fallbackFor": "GDELT — Western Hemisphere Counter-Cartel",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "71f14a60e7b88d0c",
-      "title": "Countering hybrid threats - North Atlantic Treaty Organization | NATO",
-      "category": "diplomatic",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [
-        "nato"
-      ],
-      "firstSeen": "Thu, 29 Jan 2026 08:00:00 GMT",
-      "lastSeen": "Thu, 29 Jan 2026 08:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQOS1JYWhNcjdZeVRMeF9nTjJLd1VYYXVfR3FHUXF3Z29sX2RVa3hxamgtNUZicUxxb01LU1ZrR0FQYTVpNEJVUXczQ0dJbVItVTFCT202RDBsMFV1M0ZHNElBZzFMNEtrTkpJRjd1TE8zWVR5eFItWDJCTmw1bEIwbHI0T3F4U3puM0NJ?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Countering hybrid threats - North Atlantic Treaty Organization | NATO",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQOS1JYWhNcjdZeVRMeF9nTjJLd1VYYXVfR3FHUXF3Z29sX2RVa3hxamgtNUZicUxxb01LU1ZrR0FQYTVpNEJVUXczQ0dJbVItVTFCT202RDBsMFV1M0ZHNElBZzFMNEtrTkpJRjd1TE8zWVR5eFItWDJCTmw1bEIwbHI0T3F4U3puM0NJ?oc=5",
-          "published_date": "Thu, 29 Jan 2026 08:00:00 GMT",
-          "time": "Thu, 29 Jan 2026 08:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "summary": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "source": "North Atlantic Treaty Organization | NATO",
-          "sourceLabel": "North Atlantic Treaty Organization | NATO",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NATO",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "42a80ab0ec9f8e5b",
-      "title": "Trump’s latest declaration of an emergency leaves GOP allies scrambling again - The Washington Post",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Thu, 25 Jun 2026 07:00:00 GMT",
-      "lastSeen": "Thu, 25 Jun 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiwgFBVV95cUxORjJ5NHBzQndEWFJSQ3VKOU5PREQtTzR1RmV6Q3JUVGZxMTVYQXpMVGxtUUFYUGdVMnNndU80WkRGdlBxUUhiMmFZRU83c2lCSm8tTXlwSS1Wd2REa3dCc3Q1aVp1ZWVlUmF6Sm9VNGxIZjJZbDhxYkdqWUVKblBRZDFqeEY0OWtQaGxLaUxJVmlLcTRUZUNmVVJZXzlCTGN3VGdIUS1jcFpaRGZ2TGlpX1hLUDk1TUtyMHBnM2ZpbVdoZw?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Trump’s latest declaration of an emergency leaves GOP allies scrambling again - The Washington Post",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxORjJ5NHBzQndEWFJSQ3VKOU5PREQtTzR1RmV6Q3JUVGZxMTVYQXpMVGxtUUFYUGdVMnNndU80WkRGdlBxUUhiMmFZRU83c2lCSm8tTXlwSS1Wd2REa3dCc3Q1aVp1ZWVlUmF6Sm9VNGxIZjJZbDhxYkdqWUVKblBRZDFqeEY0OWtQaGxLaUxJVmlLcTRUZUNmVVJZXzlCTGN3VGdIUS1jcFpaRGZ2TGlpX1hLUDk1TUtyMHBnM2ZpbVdoZw?oc=5",
-          "published_date": "Thu, 25 Jun 2026 07:00:00 GMT",
-          "time": "Thu, 25 Jun 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: The Washington Post",
-          "summary": "Fallback discovery via Google News RSS; publisher: The Washington Post",
-          "source": "The Washington Post",
-          "sourceLabel": "The Washington Post",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @WhiteHouse",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "f4cd5add648df439",
-      "title": "US Democrats criticize lavish Trump-Xi summit as lacking substance - Reuters",
-      "category": "diplomatic",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Thu, 24 Sep 2026 23:12:10 GMT",
-      "lastSeen": "Thu, 24 Sep 2026 23:12:10 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMitwFBVV95cUxOTUZjSjY1VWloRVlHOGNncVhDOEktaDhRS213am9WcVFoQm5WazVBT09USEdTdy1vamlHQktXMmd2S3FwM2Y2eUhsd2FPWGxQNmR6cEJBcVZfcFBZbWlMQnFDWDQ3dGd6SjFyRlNoTDhxOU8tckZtblZOSzJPSG5IVTBqS0ptZlZtaUUtSkQ0MDVIaE5TUFowTUYzQXlfamk1UTdKTkp6OW0zd1NyTTBlclFlQzFzcVU?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "US Democrats criticize lavish Trump-Xi summit as lacking substance - Reuters",
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOTUZjSjY1VWloRVlHOGNncVhDOEktaDhRS213am9WcVFoQm5WazVBT09USEdTdy1vamlHQktXMmd2S3FwM2Y2eUhsd2FPWGxQNmR6cEJBcVZfcFBZbWlMQnFDWDQ3dGd6SjFyRlNoTDhxOU8tckZtblZOSzJPSG5IVTBqS0ptZlZtaUUtSkQ0MDVIaE5TUFowTUYzQXlfamk1UTdKTkp6OW0zd1NyTTBlclFlQzFzcVU?oc=5",
-          "published_date": "Thu, 24 Sep 2026 23:12:10 GMT",
-          "time": "Thu, 24 Sep 2026 23:12:10 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Reuters",
-          "summary": "Fallback discovery via Google News RSS; publisher: Reuters",
-          "source": "Reuters",
-          "sourceLabel": "Reuters",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @POTUS",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "d7e0db4cae1167c7",
-      "title": "Trump and Xi Jinping discuss Ukraine during White House meeting - Українська правда",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [
-        "uk",
-        "ukraine"
-      ],
-      "firstSeen": "Thu, 24 Sep 2026 22:50:00 GMT",
-      "lastSeen": "Thu, 24 Sep 2026 22:50:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiZEFVX3lxTE8tUmxlY0k2ZExIa2R3SmhHQ0Nvc19XWHNpUmtPb0E0d0s2VVRUV0xmUmVhd3pPWXd3Z0lsUk81YTBqSEkydlJmWEU1clBfaFpkMm1nT1ZjbVZxZGZQb3NKaDlXa2zSAXBBVV95cUxNenNQbVo5U3ByTnoxSkF0WER1dkdzM2daTktCaHRuZjk1VmZWQUtjWVhrZ0ZRZWlPVWN3aUxJUnFQdUpad0c2SDhlSDZuek1TbW53ZFJJOThPYVBhNW9TWVNFMjNRaFRRZWZDY2Ntb19N?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Trump and Xi Jinping discuss Ukraine during White House meeting - Українська правда",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE8tUmxlY0k2ZExIa2R3SmhHQ0Nvc19XWHNpUmtPb0E0d0s2VVRUV0xmUmVhd3pPWXd3Z0lsUk81YTBqSEkydlJmWEU1clBfaFpkMm1nT1ZjbVZxZGZQb3NKaDlXa2zSAXBBVV95cUxNenNQbVo5U3ByTnoxSkF0WER1dkdzM2daTktCaHRuZjk1VmZWQUtjWVhrZ0ZRZWlPVWN3aUxJUnFQdUpad0c2SDhlSDZuek1TbW53ZFJJOThPYVBhNW9TWVNFMjNRaFRRZWZDY2Ntb19N?oc=5",
-          "published_date": "Thu, 24 Sep 2026 22:50:00 GMT",
-          "time": "Thu, 24 Sep 2026 22:50:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Українська правда",
-          "summary": "Fallback discovery via Google News RSS; publisher: Українська правда",
-          "source": "Українська правда",
-          "sourceLabel": "Українська правда",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @WhiteHouse",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "071b0e0232217ac5",
-      "title": "Administration's pro-Trump TV ad is taxpayer-funded - abcnews.com",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Thu, 24 Sep 2026 22:37:49 GMT",
-      "lastSeen": "Thu, 24 Sep 2026 22:37:49 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNNEc3UWRPWjdaWkt2Wk9vcklvTkd3LUU0eEFHNnBTNGE1M01jZ1ZsczFwN0o1VjVmMk9rU3kxOUx5M1N2V1MtLVRqNjFfUXJYV0FQeFJSV3pBSEJ1Y2NFV29FMzFGLUxmVGVRa2tVVnhwM3hRYVhzSnFRM2YzUklyR3BjQm4xOUltenU0V2lRSHB2SzJlVmpMLV9lMHdGT2dJU3FBZG5FVVnSAa4BQVVfeXFMT2lPdUJtQ0JKMEs1aVhMMUFfOXFWRmxwZlBsSk9LYjFHX3pMamdNOUV6c1BNZnQwdGtVUzRTMS1IVzJoWjl4c3Z1elZtdWotY2MwazN5UzhQNGk1TGtnSGJhMzI3WUNlY3BlemEzWGlNMkpGNnFjNXZiZU1vQVZ3SFRPYklhZjN1ek4wWUN3ZUt4YUxMcDJpTmhGMjhaVkg4Wm0tMm9CbERyWnVENjNB?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Administration's pro-Trump TV ad is taxpayer-funded - abcnews.com",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNNEc3UWRPWjdaWkt2Wk9vcklvTkd3LUU0eEFHNnBTNGE1M01jZ1ZsczFwN0o1VjVmMk9rU3kxOUx5M1N2V1MtLVRqNjFfUXJYV0FQeFJSV3pBSEJ1Y2NFV29FMzFGLUxmVGVRa2tVVnhwM3hRYVhzSnFRM2YzUklyR3BjQm4xOUltenU0V2lRSHB2SzJlVmpMLV9lMHdGT2dJU3FBZG5FVVnSAa4BQVVfeXFMT2lPdUJtQ0JKMEs1aVhMMUFfOXFWRmxwZlBsSk9LYjFHX3pMamdNOUV6c1BNZnQwdGtVUzRTMS1IVzJoWjl4c3Z1elZtdWotY2MwazN5UzhQNGk1TGtnSGJhMzI3WUNlY3BlemEzWGlNMkpGNnFjNXZiZU1vQVZ3SFRPYklhZjN1ek4wWUN3ZUt4YUxMcDJpTmhGMjhaVkg4Wm0tMm9CbERyWnVENjNB?oc=5",
-          "published_date": "Thu, 24 Sep 2026 22:37:49 GMT",
-          "time": "Thu, 24 Sep 2026 22:37:49 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: abcnews.com",
-          "summary": "Fallback discovery via Google News RSS; publisher: abcnews.com",
-          "source": "abcnews.com",
-          "sourceLabel": "abcnews.com",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @WhiteHouse",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "85ae9deec2d13454",
-      "title": "NASA Shares SpaceX Crew-14 Assignments for Space Station Mission - NASA (.gov)",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Thu, 24 Sep 2026 21:24:32 GMT",
-      "lastSeen": "Thu, 24 Sep 2026 21:24:32 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMioAFBVV95cUxOUnIyXzM4SDhEZmo5RG4tTUo2dVRKRGN6VjNwbk9JcjBuRGhGMk10LVFvUGx6R0xkRnNObWpYaloxRjdmN1V3QjV1NkN6SmxUTFM0aXo2em5XNGZYRS10R2R4NzUxQjFmYjNfUWdZVnFCQTlHMjlGb0FHRnpyNmNyNkNoQXhiZEUyUkNtbXpaUUY4T3BjSDZGZDU0TUJ2R0pY?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "NASA Shares SpaceX Crew-14 Assignments for Space Station Mission - NASA (.gov)",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOUnIyXzM4SDhEZmo5RG4tTUo2dVRKRGN6VjNwbk9JcjBuRGhGMk10LVFvUGx6R0xkRnNObWpYaloxRjdmN1V3QjV1NkN6SmxUTFM0aXo2em5XNGZYRS10R2R4NzUxQjFmYjNfUWdZVnFCQTlHMjlGb0FHRnpyNmNyNkNoQXhiZEUyUkNtbXpaUUY4T3BjSDZGZDU0TUJ2R0pY?oc=5",
-          "published_date": "Thu, 24 Sep 2026 21:24:32 GMT",
-          "time": "Thu, 24 Sep 2026 21:24:32 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
-          "summary": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
-          "source": "NASA (.gov)",
-          "sourceLabel": "NASA (.gov)",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NASA",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
