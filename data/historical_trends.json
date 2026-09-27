@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-27T00:56:58.714787Z",
-  "availableSamples": 171,
-  "availableHours": 519.6,
+  "updatedAt": "2026-09-27T11:25:01.646484Z",
+  "availableSamples": 172,
+  "availableHours": 530.1,
   "series": [
     {
       "updatedAt": "2026-09-05T09:19:53.754145+00:00",
@@ -1029,44 +1029,44 @@
       "tension": 38,
       "delta": 0.0,
       "scoreVersion": 5
+    },
+    {
+      "updatedAt": "2026-09-27T11:25:01.646484Z",
+      "tension": 38,
+      "delta": 0.0,
+      "scoreVersion": 5
     }
   ],
   "windows": {
     "6h": {
-      "available": true,
-      "samples": 3,
-      "start": "2026-09-26T20:04:44.960317Z",
-      "end": "2026-09-27T00:56:58.714787Z",
-      "startTension": 39,
-      "endTension": 38,
-      "delta": -1.0,
-      "trend": "STABLE"
+      "available": false,
+      "reason": "Only 1 samples in requested window"
     },
     "24h": {
       "available": true,
       "samples": 6,
-      "start": "2026-09-26T04:48:58.415629Z",
-      "end": "2026-09-27T00:56:58.714787Z",
-      "startTension": 37,
+      "start": "2026-09-26T13:53:09.202692Z",
+      "end": "2026-09-27T11:25:01.646484Z",
+      "startTension": 38,
       "endTension": 38,
-      "delta": 1.0,
+      "delta": 0.0,
       "trend": "STABLE"
     },
     "7d": {
       "available": true,
-      "samples": 43,
-      "start": "2026-09-20T01:15:12.512835Z",
-      "end": "2026-09-27T00:56:58.714787Z",
-      "startTension": 37,
+      "samples": 42,
+      "start": "2026-09-20T11:36:19.713923Z",
+      "end": "2026-09-27T11:25:01.646484Z",
+      "startTension": 38,
       "endTension": 38,
-      "delta": 1.0,
+      "delta": 0.0,
       "trend": "STABLE"
     },
     "30d": {
       "available": true,
-      "samples": 171,
+      "samples": 172,
       "start": "2026-09-05T09:19:53.754145+00:00",
-      "end": "2026-09-27T00:56:58.714787Z",
+      "end": "2026-09-27T11:25:01.646484Z",
       "startTension": 41,
       "endTension": 38,
       "delta": -3.0,

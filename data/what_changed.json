@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-09-27T00:56:49.632373Z",
+  "updatedAt": "2026-09-27T11:24:50.643957Z",
   "window": "12 hours primary + 7-day recent fallback",
   "items": [
     {
@@ -12,8 +12,9 @@
       "delta": 0,
       "score": null,
       "level": "MODERATE",
-      "new": true,
-      "time": "2026-09-26T20:55:44+00:00"
+      "new": false,
+      "time": "2026-09-26T20:55:44+00:00",
+      "recentFallback": true
     },
     {
       "type": "event",
@@ -24,56 +25,9 @@
       "delta": 0,
       "score": null,
       "level": "LOW",
-      "new": true,
-      "time": "2026-09-26T19:19:45+00:00"
-    },
-    {
-      "type": "event",
-      "eventId": "f5aad923339c30d6",
-      "entity": null,
-      "title": "Trump rejects combining US-China AI efforts",
-      "detail": "2 reports · 2 source domains · MODERATE confidence",
-      "delta": 0,
-      "score": null,
-      "level": "MODERATE",
-      "new": true,
-      "time": "2026-09-26T17:39:18+00:00"
-    },
-    {
-      "type": "event",
-      "eventId": "0b3968fe070e7f72",
-      "entity": null,
-      "title": "Russia pitches Gulf peace plan as Strait of Hormuz clashes threaten global shipping and trade - Business Upturn",
-      "detail": "2 reports · 1 source domains · LOW confidence",
-      "delta": 0,
-      "score": null,
-      "level": "LOW",
-      "new": true,
-      "time": "2026-09-26T16:31:16+00:00"
-    },
-    {
-      "type": "event",
-      "eventId": "7d01f7a983aa5299",
-      "entity": null,
-      "title": "M 4.9 - 78 km ESE of Kokopo, Papua New Guinea",
-      "detail": "2 reports · 1 source domains · LOW confidence",
-      "delta": 0,
-      "score": null,
-      "level": "LOW",
-      "new": true,
-      "time": "2026-09-26T16:13:49.733000+00:00"
-    },
-    {
-      "type": "event",
-      "eventId": "e618b2456ff92cb2",
-      "entity": null,
-      "title": "Trump calls Iranian plan to reopen Strait of Hormuz not 'acceptable'",
-      "detail": "3 reports · 2 source domains · MODERATE confidence",
-      "delta": 0,
-      "score": null,
-      "level": "MODERATE",
-      "new": true,
-      "time": "2026-09-26T14:46:53+00:00"
+      "new": false,
+      "time": "2026-09-26T19:19:45+00:00",
+      "recentFallback": true
     },
     {
       "type": "event",
@@ -85,7 +39,8 @@
       "score": null,
       "level": "MODERATE",
       "new": false,
-      "time": "2026-09-26T19:12:26+00:00"
+      "time": "2026-09-26T19:12:26+00:00",
+      "recentFallback": true
     },
     {
       "type": "event",
@@ -97,7 +52,34 @@
       "score": null,
       "level": "LOW",
       "new": false,
-      "time": "2026-09-26T19:01:04+00:00"
+      "time": "2026-09-26T19:01:04+00:00",
+      "recentFallback": true
+    },
+    {
+      "type": "event",
+      "eventId": "f4bef1a266999855",
+      "entity": null,
+      "title": "Green forest fire notification in Australia",
+      "detail": "2 reports · 1 source domains · LOW confidence",
+      "delta": 0,
+      "score": null,
+      "level": "LOW",
+      "new": false,
+      "time": "2026-09-26T19:00:47+00:00",
+      "recentFallback": true
+    },
+    {
+      "type": "event",
+      "eventId": "a0a9b8f52ca72ae0",
+      "entity": null,
+      "title": "Trump rejects combining US-China AI efforts - Al Jazeera",
+      "detail": "2 reports · 2 source domains · MODERATE confidence",
+      "delta": 0,
+      "score": null,
+      "level": "MODERATE",
+      "new": true,
+      "time": "2026-09-26T17:39:18+00:00",
+      "recentFallback": true
     },
     {
       "type": "event",
@@ -109,7 +91,34 @@
       "score": null,
       "level": "LOW",
       "new": false,
-      "time": "2026-09-26T16:41:10+00:00"
+      "time": "2026-09-26T16:41:10+00:00",
+      "recentFallback": true
+    },
+    {
+      "type": "event",
+      "eventId": "0b3968fe070e7f72",
+      "entity": null,
+      "title": "Russia pitches Gulf peace plan as Strait of Hormuz clashes threaten global shipping and trade - Business Upturn",
+      "detail": "2 reports · 1 source domains · LOW confidence",
+      "delta": 0,
+      "score": null,
+      "level": "LOW",
+      "new": false,
+      "time": "2026-09-26T16:31:16+00:00",
+      "recentFallback": true
+    },
+    {
+      "type": "event",
+      "eventId": "7d01f7a983aa5299",
+      "entity": null,
+      "title": "M 4.9 - 78 km ESE of Kokopo, Papua New Guinea",
+      "detail": "2 reports · 1 source domains · LOW confidence",
+      "delta": 0,
+      "score": null,
+      "level": "LOW",
+      "new": false,
+      "time": "2026-09-26T16:13:49.733000+00:00",
+      "recentFallback": true
     },
     {
       "type": "event",
@@ -121,7 +130,8 @@
       "score": null,
       "level": "MODERATE",
       "new": false,
-      "time": "2026-09-26T16:00:39+00:00"
+      "time": "2026-09-26T16:00:39+00:00",
+      "recentFallback": true
     },
     {
       "type": "event",
@@ -133,7 +143,8 @@
       "score": null,
       "level": "MODERATE",
       "new": false,
-      "time": "2026-09-26T15:34:18+00:00"
+      "time": "2026-09-26T15:34:18+00:00",
+      "recentFallback": true
     },
     {
       "type": "event",
@@ -145,7 +156,21 @@
       "score": null,
       "level": "LOW",
       "new": false,
-      "time": "2026-09-26T15:08:55+00:00"
+      "time": "2026-09-26T15:08:55+00:00",
+      "recentFallback": true
+    },
+    {
+      "type": "event",
+      "eventId": "e618b2456ff92cb2",
+      "entity": null,
+      "title": "Trump calls Iranian plan to reopen Strait of Hormuz not 'acceptable'",
+      "detail": "3 reports · 2 source domains · MODERATE confidence",
+      "delta": 0,
+      "score": null,
+      "level": "MODERATE",
+      "new": false,
+      "time": "2026-09-26T14:46:53+00:00",
+      "recentFallback": true
     },
     {
       "type": "event",
@@ -169,7 +194,7 @@
       "delta": 0,
       "score": null,
       "level": "MODERATE",
-      "new": true,
+      "new": false,
       "time": "2026-09-26T12:38:46+00:00",
       "recentFallback": true
     },
@@ -185,64 +210,12 @@
       "new": false,
       "time": "2026-09-26T11:26:14+00:00",
       "recentFallback": true
-    },
-    {
-      "type": "event",
-      "eventId": "06fa94fb6c56490b",
-      "entity": null,
-      "title": "Afghanistan’s women footballers escaped the Taliban - now they represent their country | DW Reporter - Modern Ghana",
-      "detail": "2 reports · 1 source domains · LOW confidence",
-      "delta": 0,
-      "score": null,
-      "level": "LOW",
-      "new": false,
-      "time": "2026-09-26T11:07:09+00:00",
-      "recentFallback": true
-    },
-    {
-      "type": "event",
-      "eventId": "c86f0fa46d260802",
-      "entity": null,
-      "title": "Iran president calls for regional solution to Yemen crisis, says Saudi Arabia can help unite Islamic world - Business Upturn",
-      "detail": "2 reports · 1 source domains · LOW confidence",
-      "delta": 0,
-      "score": null,
-      "level": "LOW",
-      "new": false,
-      "time": "2026-09-26T11:00:57+00:00",
-      "recentFallback": true
-    },
-    {
-      "type": "event",
-      "eventId": "4bead0a4696f2444",
-      "entity": null,
-      "title": "Hurricane Nolo bringing flood threat, gusty winds to Hawaii - The Weather Channel",
-      "detail": "2 reports · 1 source domains · LOW confidence",
-      "delta": 0,
-      "score": null,
-      "level": "LOW",
-      "new": false,
-      "time": "2026-09-26T11:00:44+00:00",
-      "recentFallback": true
-    },
-    {
-      "type": "event",
-      "eventId": "f4bef1a266999855",
-      "entity": null,
-      "title": "Green forest fire notification in Australia",
-      "detail": "5 reports · 1 source domains · LOW confidence",
-      "delta": 0,
-      "score": null,
-      "level": "LOW",
-      "new": false,
-      "time": "2026-09-26T11:00:21+00:00",
-      "recentFallback": true
     }
   ],
   "summary": {
-    "newEvents": 6,
+    "newEvents": 0,
     "indicatorMoves": 0,
-    "recentFallbackEvents": 7,
-    "total": 19
+    "recentFallbackEvents": 16,
+    "total": 16
   }
 }
