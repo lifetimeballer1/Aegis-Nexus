@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "generatedAt": "2026-09-26T22:42:40.595639Z",
+  "generatedAt": "2026-09-27T00:56:48.650051Z",
   "sourceBackedOnly": true,
   "method": "Source-backed Brain evidence plus dict/list action layers; co-mention targets are co-occurrence volumes, not causality.",
   "signals": [
@@ -10,10 +10,10 @@
       "category": "technology",
       "categories": {
         "technology": 100,
-        "diplomatic": 58,
-        "economic": 46,
+        "diplomatic": 56,
+        "economic": 48,
         "military": 45,
-        "political": 39,
+        "political": 42,
         "security": 25,
         "energy": 23,
         "maritime": 14
@@ -26,7 +26,7 @@
         },
         {
           "target": "Iran",
-          "mentions": 32
+          "mentions": 31
         },
         {
           "target": "Oil",
@@ -41,11 +41,11 @@
           "mentions": 6
         }
       ],
-      "actionCount": 350,
-      "actionEvidenceCount": 350,
+      "actionCount": 353,
+      "actionEvidenceCount": 353,
       "categoryCount": 100,
       "targetCount": 32,
-      "evidenceCount": 88,
+      "evidenceCount": 89,
       "lastEvidenceTime": "Tue, 27 Jan 2026 08:00:00 GMT",
       "intensity": 100,
       "evidence": [
@@ -53,7 +53,7 @@
           "title": "China and U.S. agree to establish AI safety channel and continue trade and military talks - PBS",
           "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNdDFwb1JqdmQ1UnZaV0FvaWpPWEtGdXlXVXR5cV9oeUVUeV8teFgwQkJVNGo1MFduQzQxcUxQaVhDaVUwck9qQzE0NXlaSFpWdC15UTIwYVVxQzBPWG84N2ZnNXkxOGVjcjVWZ25zNDBCbzZUOFZPMkxUTDhmMFJieHdFWWFabVFuTHhYczFGeWV2bTA5YkxoQlRicVlGVzl4Z0h0UTZxMi00aFctTHhGUnh5MmhUS1hFRzFjVlBPckjSAcYBQVVfeXFMUGU5X1ZtYXFrZFdpbUNGQjJjVDc0S1BaM2w3UW91RC1LNVVjc3NGME0zV3RqUWpsTE85SUF3d0NfMkJ5cmpLcWRPbXlqTTh1NFNKaVppUmRlMTNTakpGejVneVBxTFdHTHFGZ3FNRWQtdUZadEFEVk0yRDZLb2hUa2hfc0JhbkFncjd5U0g1a0JyWFNOS2N5ZjI4QW85ZkJlSjhKTFcwYXhNTWI0eGNlN01RVTJwVy1zeFBPTFMxcmdFZlpnT1R3?oc=5",
           "source": "PBS",
-          "time": "Sat, 26 Sep 2026 17:53:24 GMT"
+          "time": "2026-09-26T17:53:24Z"
         },
         {
           "title": "China backs Africa’s strongest military as Egypt and Ethiopia face off over Africa’s longest river after U.S. talks collapsed - Business Insider Africa",
@@ -174,17 +174,17 @@
     },
     {
       "actor": "China",
-      "signal": "China shows source-backed diplomatic activity",
-      "category": "diplomatic",
+      "signal": "China shows source-backed technology activity",
+      "category": "technology",
       "categories": {
         "diplomatic": 100,
         "economic": 100,
         "technology": 100,
-        "political": 46,
+        "political": 48,
         "military": 45,
         "security": 26,
         "energy": 26,
-        "maritime": 24
+        "maritime": 23
       },
       "dominantTarget": "Iran",
       "topTargets": [
@@ -209,14 +209,26 @@
           "mentions": 4
         }
       ],
-      "actionCount": 467,
-      "actionEvidenceCount": 467,
+      "actionCount": 468,
+      "actionEvidenceCount": 468,
       "categoryCount": 100,
       "targetCount": 30,
-      "evidenceCount": 78,
-      "lastEvidenceTime": "Sat, 26 Sep 2026 19:12:26 GMT",
+      "evidenceCount": 74,
+      "lastEvidenceTime": "2026-09-26T22:10:03Z",
       "intensity": 100,
       "evidence": [
+        {
+          "title": "China, US agree to AI dialogue, tariff cuts on $30 billion in goods during Xi visit - Reuters",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNT2FRVWRwSDZuWUZPYTRXcmNuNTFDR0hrQkVUZnpSdV9RdGhpUjV5R0hwN2V6MUNUS2hiTHpENFhwUFVDODBIeDhBSm5SdUJOeU1qSUhjekl2RzBDd0VBYi0tdmNDblQwV1RMTF9QMGFHdlFRcDRmalE3dWlhX0l6aUJjSGtsVjlsZXNnbmZWY3JzMEtwY3hxNEZHT3JjWXJEQlVRSFpSM0haSUROOUFRaWJB?oc=5",
+          "source": "Reuters",
+          "time": "2026-09-26T19:12:26Z"
+        },
+        {
+          "title": "China and U.S. agree to establish AI safety channel and continue trade and military talks - PBS",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNdDFwb1JqdmQ1UnZaV0FvaWpPWEtGdXlXVXR5cV9oeUVUeV8teFgwQkJVNGo1MFduQzQxcUxQaVhDaVUwck9qQzE0NXlaSFpWdC15UTIwYVVxQzBPWG84N2ZnNXkxOGVjcjVWZ25zNDBCbzZUOFZPMkxUTDhmMFJieHdFWWFabVFuTHhYczFGeWV2bTA5YkxoQlRicVlGVzl4Z0h0UTZxMi00aFctTHhGUnh5MmhUS1hFRzFjVlBPckjSAcYBQVVfeXFMUGU5X1ZtYXFrZFdpbUNGQjJjVDc0S1BaM2w3UW91RC1LNVVjc3NGME0zV3RqUWpsTE85SUF3d0NfMkJ5cmpLcWRPbXlqTTh1NFNKaVppUmRlMTNTakpGejVneVBxTFdHTHFGZ3FNRWQtdUZadEFEVk0yRDZLb2hUa2hfc0JhbkFncjd5U0g1a0JyWFNOS2N5ZjI4QW85ZkJlSjhKTFcwYXhNTWI0eGNlN01RVTJwVy1zeFBPTFMxcmdFZlpnT1R3?oc=5",
+          "source": "PBS",
+          "time": "2026-09-26T17:53:24Z"
+        },
         {
           "title": "US, China strike deal to lower tariffs on $30B in goods after Trump-Xi Washington summit",
           "url": "https://www.foxnews.com/politics/us-china-strike-deal-lower-tariffs-30b-goods-trump-xi-washington-summit",
@@ -226,25 +238,13 @@
         {
           "title": "China and Us Reach Agreement on Coal and Establish Channel of Dialogue on AI - telesurenglish.net",
           "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOdDdoRFZUeVJ1WHFveXFfbHRTMDJzbUR6dWx1cUZ3bGNsLU1YYmtrcl96Umx1VGFHbkk2TzA2Z2tuUmM0cC0wVU1BUmNxQXlyZUhTQTFxWHhQQ0xsaWlMSVJPaWpoM1F4alRRS3prdUg5MkJiTjhNX1JrZFBrZnFya05mMExuZ3ZsRnM2Y0ZpZWtVeDJ5SlFPOHNYNFZqcjNMYWJ2djF1MjdIUm95?oc=5",
-          "source": "telesurenglish.net",
+          "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOdDdoRFZUeVJ1WHFveXFfbHRTMDJzbUR6dWx1cUZ3bGNsLU1YYmtrcl96Umx1VGFHbkk2TzA2Z2tuUmM0cC0wVU1BUmNxQXlyZUhTQTFxWHhQQ0xsaWlMSVJPaWpoM1F4alRRS3prdUg5MkJiTjhNX1JrZFBrZnFya05mMExuZ3ZsRnM2Y0ZpZWtVeDJ5SlFPOHNYNFZqcjNMYWJ2djF1MjdIUm95?oc=5",
           "time": "2026-09-26T14:54:53Z"
-        },
-        {
-          "title": "China and U.S. agree to establish AI safety channel and continue trade and military talks - PBS",
-          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNdDFwb1JqdmQ1UnZaV0FvaWpPWEtGdXlXVXR5cV9oeUVUeV8teFgwQkJVNGo1MFduQzQxcUxQaVhDaVUwck9qQzE0NXlaSFpWdC15UTIwYVVxQzBPWG84N2ZnNXkxOGVjcjVWZ25zNDBCbzZUOFZPMkxUTDhmMFJieHdFWWFabVFuTHhYczFGeWV2bTA5YkxoQlRicVlGVzl4Z0h0UTZxMi00aFctTHhGUnh5MmhUS1hFRzFjVlBPckjSAcYBQVVfeXFMUGU5X1ZtYXFrZFdpbUNGQjJjVDc0S1BaM2w3UW91RC1LNVVjc3NGME0zV3RqUWpsTE85SUF3d0NfMkJ5cmpLcWRPbXlqTTh1NFNKaVppUmRlMTNTakpGejVneVBxTFdHTHFGZ3FNRWQtdUZadEFEVk0yRDZLb2hUa2hfc0JhbkFncjd5U0g1a0JyWFNOS2N5ZjI4QW85ZkJlSjhKTFcwYXhNTWI0eGNlN01RVTJwVy1zeFBPTFMxcmdFZlpnT1R3?oc=5",
-          "source": "PBS",
-          "time": "Sat, 26 Sep 2026 17:53:24 GMT"
-        },
-        {
-          "title": "China, US agree to AI dialogue, tariff cuts on $30 billion in goods during Xi visit - Reuters",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNT2FRVWRwSDZuWUZPYTRXcmNuNTFDR0hrQkVUZnpSdV9RdGhpUjV5R0hwN2V6MUNUS2hiTHpENFhwUFVDODBIeDhBSm5SdUJOeU1qSUhjekl2RzBDd0VBYi0tdmNDblQwV1RMTF9QMGFHdlFRcDRmalE3dWlhX0l6aUJjSGtsVjlsZXNnbmZWY3JzMEtwY3hxNEZHT3JjWXJEQlVRSFpSM0haSUROOUFRaWJB?oc=5",
-          "source": "Reuters",
-          "time": "Sat, 26 Sep 2026 19:12:26 GMT"
         },
         {
           "title": "Beijing says US, China to pursue military crisis-communication pact - South China Morning Post",
           "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOd1FmYTdPSXpUU01ZaDFqLXN6RUg3YmRrMGpwX3huekJCbVg3Q2RYZlNiTjZpeE9HUmVCOFdOZW14MXNrVldvNkRYVVhVb2JTcGw5cm5iaTRueURhNDljeW52Tm5felVBV1VXVS1DMEw1ODZpT25CaDdUYmFnT3pscG9KUHoxSURhUUZkMjdFanZPZEJPcHNYdWJPMlhpTGtvNzJxNVc0c0JfbWZ5TUdHbdIBsAFBVV95cUxOd1FmYTdPSXpUU01ZaDFqLXN6RUg3YmRrMGpwX3huekJCbVg3Q2RYZlNiTjZpeE9HUmVCOFdOZW14MXNrVldvNkRYVVhVb2JTcGw5cm5iaTRueURhNDljeW52Tm5felVBV1VXVS1DMEw1ODZpT25CaDdUYmFnT3pscG9KUHoxSURhUUZkMjdFanZPZEJPcHNYdWJPMlhpTGtvNzJxNVc0c0JfbWZ5TUdHbQ?oc=5",
-          "source": "Google News — China Security / PLA",
+          "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOd1FmYTdPSXpUU01ZaDFqLXN6RUg3YmRrMGpwX3huekJCbVg3Q2RYZlNiTjZpeE9HUmVCOFdOZW14MXNrVldvNkRYVVhVb2JTcGw5cm5iaTRueURhNDljeW52Tm5felVBV1VXVS1DMEw1ODZpT25CaDdUYmFnT3pscG9KUHoxSURhUUZkMjdFanZPZEJPcHNYdWJPMlhpTGtvNzJxNVc0c0JfbWZ5TUdHbdIBsAFBVV95cUxOd1FmYTdPSXpUU01ZaDFqLXN6RUg3YmRrMGpwX3huekJCbVg3Q2RYZlNiTjZpeE9HUmVCOFdOZW14MXNrVldvNkRYVVhVb2JTcGw5cm5iaTRueURhNDljeW52Tm5felVBV1VXVS1DMEw1ODZpT25CaDdUYmFnT3pscG9KUHoxSURhUUZkMjdFanZPZEJPcHNYdWJPMlhpTGtvNzJxNVc0c0JfbWZ5TUdHbQ?oc=5",
           "time": "2026-09-26T19:07:53Z"
         },
         {
@@ -332,10 +332,10 @@
           "time": ""
         },
         {
-          "title": "Trump gave Xi Jinping a warm welcome. What did the talks accomplish?",
-          "url": "https://www.npr.org/2026/09/26/nx-s1-5980066/trump-gave-xi-jinping-a-warm-welcome-what-did-the-talks-accomplish",
-          "source": "NPR News",
-          "time": "2026-09-26T21:13:54Z"
+          "title": "Exclusive: Sen. Dave McCormick Says China, Russia Fueling U.S. Data Center Backlash - breitbart.com",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOaTV3b1E5Y0tQU0hqT1JJb2I4blN5a05fU0ZSdlRJN1NZU3NxTEdRTUhiSzFKQ2RHOXhyOW53a1hKTXQyLW13ZHFSVTFsOW9idUctaDdxQ2hNcGVoRml5YjJleE12dTlUOTAwQmVvQUtJTTd5WGZPdU1FdFgyVUliMG0wUHlhMjRoVk9DYVNoOXpxTkNweTdUTDZIdFBkVkZjVmdtSVVlYnJkMzkyMnFwcmIyWkUzSVJqTU1meHVCcmFLV2ZRUzBxSGlR0gHKAUFVX3lxTE5pNXdvUTljS1BTSGpPUklvYjhuU3lrTl9TRlJ2VEk3U1lTc3FMR1FNSGJLMUpDZEc5eHI5bndrWEpNdDItbXdkcVJVMWw5b2J1Ry1oN3FDaE1wZWhGaXliMmV4TXZ1OVQ5MDBCZW9BS0lNN3lYZk91TUV0WDJVSWIwbTBQeWEyNGhWT0NhU2g5enFOQ3B5N1RMNkh0UGRWRmNWZ21JVWVicmQzOTIycXByYjJaRTNJUmpNTWZ4dUJyYUtXZlFTMHFIaVE?oc=5",
+          "source": "Google News — China Politics / CCP",
+          "time": "2026-09-26T22:10:03Z"
         }
       ],
       "sourceBacked": true
@@ -353,14 +353,14 @@
       "actionEvidenceCount": 0,
       "categoryCount": 1,
       "targetCount": 0,
-      "evidenceCount": 94,
+      "evidenceCount": 95,
       "lastEvidenceTime": "Thu, 03 Sep 2026 07:02:12 GMT",
       "intensity": 35,
       "evidence": [
         {
           "title": "Lavrov: Russia’s war in Ukraine will continue ‘through to the end’",
           "url": "https://www.aljazeera.com/video/newsfeed/2026/9/26/lavrov-russias-war-in-ukraine-will-continue-through-to-the?traffic_source=rss",
-          "source": "Al Jazeera",
+          "source": "https://www.aljazeera.com/video/newsfeed/2026/9/26/lavrov-russias-war-in-ukraine-will-continue-through-to-the?traffic_source=rss",
           "time": "2026-09-26T19:40:14Z"
         },
         {
@@ -370,21 +370,9 @@
           "time": "2026-09-26T15:39:00Z"
         },
         {
-          "title": "She grew up under Soviet rule. Now EU's top diplomat warns Europe against giving Russia what it wants",
-          "url": "https://www.foxnews.com/politics/grew-up-soviet-rule-eu-top-diplomat-warns-europe-against-giving-russia-wants",
-          "source": "https://www.foxnews.com/politics/grew-up-soviet-rule-eu-top-diplomat-warns-europe-against-giving-russia-wants",
-          "time": "2026-09-26T10:00:22Z"
-        },
-        {
-          "title": "At least 10 people killed in Russian and Ukrainian attacks",
-          "url": "https://www.aljazeera.com/news/2026/9/26/at-least-10-people-killed-in-russian-and-ukrainian-attacks?traffic_source=rss",
-          "source": "https://www.aljazeera.com/news/2026/9/26/at-least-10-people-killed-in-russian-and-ukrainian-attacks?traffic_source=rss",
-          "time": "2026-09-26T16:16:49Z"
-        },
-        {
           "title": "Russia scales up strikes on Ukraine as largest steelmaker halts operations",
           "url": "https://www.aljazeera.com/video/newsfeed/2026/9/26/russia-scales-up-strikes-on-ukraine-as-largest-steelmaker-halts-operations?traffic_source=rss",
-          "source": "Al Jazeera",
+          "source": "https://www.aljazeera.com/video/newsfeed/2026/9/26/russia-scales-up-strikes-on-ukraine-as-largest-steelmaker-halts-operations?traffic_source=rss",
           "time": "2026-09-26T20:57:54Z"
         },
         {
@@ -402,7 +390,7 @@
         {
           "title": "Russia pitches Gulf peace plan as Strait of Hormuz clashes threaten global shipping and trade - Business Upturn",
           "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxObXItTjFpeWwzR0FKc2t6ejlLMm5aUW5Rak9NQjZ2czJNX3pmdm1kTlNVOTZMdkJ3U2Jab1FTRnNXOV9sNmUtQkw2Qk5lUTNOcDROdDRDcDNrWkxaSDlBN1JFVl9URnNwblRnT1VjaTExVVltRlBkTVpYSmdNS2RBckx5NTliVHVfdmE4RlF1d0JxMXJid3A4RGJ5M004d0Y3dlFCT3QwOUdrYjJWVlZfaWQyY2d5YktuT3UwcXpKSUlXZGxfTkV4Yk5YcG5qYXZMejk4bDBsbEVacTlVSHpBSw?oc=5",
-          "source": "Google News — South Asia Security",
+          "source": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxObXItTjFpeWwzR0FKc2t6ejlLMm5aUW5Rak9NQjZ2czJNX3pmdm1kTlNVOTZMdkJ3U2Jab1FTRnNXOV9sNmUtQkw2Qk5lUTNOcDROdDRDcDNrWkxaSDlBN1JFVl9URnNwblRnT1VjaTExVVltRlBkTVpYSmdNS2RBckx5NTliVHVfdmE4RlF1d0JxMXJid3A4RGJ5M004d0Y3dlFCT3QwOUdrYjJWVlZfaWQyY2d5YktuT3UwcXpKSUlXZGxfTkV4Yk5YcG5qYXZMejk4bDBsbEVacTlVSHpBSw?oc=5",
           "time": "2026-09-26T16:46:04Z"
         },
         {
@@ -476,145 +464,17 @@
           "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE41c2lucFRNejVBYlg3azU0RmNIeFdpbEt4cHpDNnByMmRCb0xPbVYtbHpZcDYtTEg2ZVJmYnZzUlJVZVljMHhFMlhJMWxfS3dJSXhDY2VrZGdwYklJb2tNWmZqV190QUhZUkpOenRDMW54YjVwaVNJZQ?oc=5",
           "source": "Google News RSS",
           "time": ""
-        }
-      ],
-      "sourceBacked": true
-    },
-    {
-      "actor": "Strategic Chokepoints",
-      "signal": "Strategic Chokepoints has source-backed intelligence activity",
-      "category": "military",
-      "categories": {
-        "military": 1
-      },
-      "dominantTarget": "",
-      "topTargets": [],
-      "actionCount": 0,
-      "actionEvidenceCount": 0,
-      "categoryCount": 1,
-      "targetCount": 0,
-      "evidenceCount": 87,
-      "lastEvidenceTime": "Fri, 03 Apr 2026 07:00:00 GMT",
-      "intensity": 35,
-      "evidence": [
-        {
-          "title": "Trump rejects Iranian offer to reopen Strait of Hormuz",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/26/trump-rejects-iranian-offer-to-reopen-strait-of-hormuz?traffic_source=rss",
-          "source": "Al Jazeera",
-          "time": "2026-09-26T18:00:43Z"
         },
         {
-          "title": "Trump reportedly rejects Iran’s seven-day peace deal to reopen strait of Hormuz",
-          "url": "https://www.theguardian.com/world/2026/sep/26/trump-dismiss-iran-seven-day-peace-deal-hormuz",
-          "source": "https://www.theguardian.com/world/2026/sep/26/trump-dismiss-iran-seven-day-peace-deal-hormuz",
-          "time": "2026-09-26T12:38:46Z"
-        },
-        {
-          "title": "Russia pitches Gulf peace plan as Strait of Hormuz clashes threaten global shipping and trade - Business Upturn",
-          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxObXItTjFpeWwzR0FKc2t6ejlLMm5aUW5Rak9NQjZ2czJNX3pmdm1kTlNVOTZMdkJ3U2Jab1FTRnNXOV9sNmUtQkw2Qk5lUTNOcDROdDRDcDNrWkxaSDlBN1JFVl9URnNwblRnT1VjaTExVVltRlBkTVpYSmdNS2RBckx5NTliVHVfdmE4RlF1d0JxMXJid3A4RGJ5M004d0Y3dlFCT3QwOUdrYjJWVlZfaWQyY2d5YktuT3UwcXpKSUlXZGxfTkV4Yk5YcG5qYXZMejk4bDBsbEVacTlVSHpBSw?oc=5",
-          "source": "Google News — South Asia Security",
-          "time": "2026-09-26T16:46:04Z"
-        },
-        {
-          "title": "Russia pitches Gulf peace plan as Strait of Hormuz clashes threaten global shipping and trade - Business Upturn",
-          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQRmQyWVAxa1RWalBhTTZRUEhodllMbll3czA3NXhxWW01WHRxUHh0Q2Z2RGxURDRQZk9qNXA4cWZHZ2JxRXJGOTdXYWdZTGNGT18yUlZwXzBycFFqUjNhcGxKR2daZmZyN2w4QnV4VzVUMVJjY0JZM0Yzc0VsdHlMVWc2elE0cFJaNHh1eEMwMEphQURXSXEzdG9FamZrNWlXdk5LSUZ4T0JFMmROZDNjLUpvY1JLRFZTSDFFempZSXFSVEV4Z1J6dlNmMExzd1VtdlczZ1AtUHZjdGpCdERTcFRLaEFfZw?oc=5",
-          "source": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQRmQyWVAxa1RWalBhTTZRUEhodllMbll3czA3NXhxWW01WHRxUHh0Q2Z2RGxURDRQZk9qNXA4cWZHZ2JxRXJGOTdXYWdZTGNGT18yUlZwXzBycFFqUjNhcGxKR2daZmZyN2w4QnV4VzVUMVJjY0JZM0Yzc0VsdHlMVWc2elE0cFJaNHh1eEMwMEphQURXSXEzdG9FamZrNWlXdk5LSUZ4T0JFMmROZDNjLUpvY1JLRFZTSDFFempZSXFSVEV4Z1J6dlNmMExzd1VtdlczZ1AtUHZjdGpCdERTcFRLaEFfZw?oc=5",
-          "time": "2026-09-26T16:31:16Z"
-        },
-        {
-          "title": "Trump rejects Iran proposal on Hormuz as Houthis target Riyadh",
-          "url": "https://www.stripes.com/theaters/us/2026-09-26/trump-rejects-iran-proposal-22973797.html",
-          "source": "Stars and Stripes",
-          "time": "2026-09-26T19:09:34Z"
-        },
-        {
-          "title": "Saudi coalition says it halted Houthi attack - taipeitimes.com",
-          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5NNFpmYjE4c2laRUVfQzlrT3BWYkpuaGxSN0xONDJZODZpQV9rbmY3dVJHN3dlaHZXdGNXc0NBZ0toMkJDbm9tSlpLb2doRHRKV2psbFE0WTlFa1RPRFVobTJwQmd5M19QM2s4VDhETGZLZUMycjQ3cQ?oc=5",
-          "source": "Google News — Yemen / Red Sea",
-          "time": "2026-09-26T16:00:00Z"
-        },
-        {
-          "title": "Iran denies link to Houthi attacks in Yemen & Saudi Arabia; warns US as Trump rejects peace offer - The Times of India",
-          "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxNSDBWMXpIQVlUZEJqYkNFX3NOS2tyT2Jtc0xnbEM4N05HMDRLTGJaWG10Y3JOUWtWTFBLelRXUzgxS3J0WEp3Z0dQc0xGcnVSRnUySjVWWlc4SWtRU1JDQ0c2TE1fN3JWejNVV3A5bFFOS2V0bFZHdG5LSXpVVk1lQ3k4eXk1cnZEZEVKNHlmQ0Frci00SVNLeHUtbHJBSGdiTmptdlVQUDIzb2lsVmVxYy1BT1ctVWtlYnF2U1JDM1N4S25oSUZlVFFreWhxN2ttTlBWakpLeVVkTG0yRTBkdUxZc2JDcHN1alJRMnBZcXFaczA2WGlMRHFENlFwUmdaWkVDcdIBigJBVV95cUxQZjNZbEJ4akM3RDZCeFBNUmpQNnZibFhEcXBnOWFNUE4xYTc2bnNVVWpWVFp4UUFhY0VqeVN4NEl4WGdlTXJqRjAwdXBTRFFXUHBKRHZwR0dnS2RNS3J1a3N2UF9iZG5fZlhHSko0VG9fVEhPNExaYzA1TWs0U01GUG9mOTkzaGFwb0E3NzA3b3VkR19uSVJhUGRuQ2w2UjQ2ODdNeno5ckVsdnlWRDB4eWZrdEdRLWNYejFRbDZOakpwNWZCbk52VkNPckhGVFh5SHBOMmxYYm1EeHVkTVN4M1FfcjNsdkNFMFE2TU5UZ1ZOR1NJWkRqaE9Da0JiZkJzdXViY1hCM1ZkZw?oc=5",
-          "source": "https://news.google.com/rss/articles/CBMihAJBVV95cUxNSDBWMXpIQVlUZEJqYkNFX3NOS2tyT2Jtc0xnbEM4N05HMDRLTGJaWG10Y3JOUWtWTFBLelRXUzgxS3J0WEp3Z0dQc0xGcnVSRnUySjVWWlc4SWtRU1JDQ0c2TE1fN3JWejNVV3A5bFFOS2V0bFZHdG5LSXpVVk1lQ3k4eXk1cnZEZEVKNHlmQ0Frci00SVNLeHUtbHJBSGdiTmptdlVQUDIzb2lsVmVxYy1BT1ctVWtlYnF2U1JDM1N4S25oSUZlVFFreWhxN2ttTlBWakpLeVVkTG0yRTBkdUxZc2JDcHN1alJRMnBZcXFaczA2WGlMRHFENlFwUmdaWkVDcdIBigJBVV95cUxQZjNZbEJ4akM3RDZCeFBNUmpQNnZibFhEcXBnOWFNUE4xYTc2bnNVVWpWVFp4UUFhY0VqeVN4NEl4WGdlTXJqRjAwdXBTRFFXUHBKRHZwR0dnS2RNS3J1a3N2UF9iZG5fZlhHSko0VG9fVEhPNExaYzA1TWs0U01GUG9mOTkzaGFwb0E3NzA3b3VkR19uSVJhUGRuQ2w2UjQ2ODdNeno5ckVsdnlWRDB4eWZrdEdRLWNYejFRbDZOakpwNWZCbk52VkNPckhGVFh5SHBOMmxYYm1EeHVkTVN4M1FfcjNsdkNFMFE2TU5UZ1ZOR1NJWkRqaE9Da0JiZkJzdXViY1hCM1ZkZw?oc=5",
-          "time": "2026-09-26T10:59:00Z"
-        },
-        {
-          "title": "Mecca defence alliance chiefs meet amid Houthi attacks",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/26/26-09-sv-saudi-turkiye-pakistan-chiefs-riy-ks?traffic_source=rss",
-          "source": "https://www.aljazeera.com/video/newsfeed/2026/9/26/26-09-sv-saudi-turkiye-pakistan-chiefs-riy-ks?traffic_source=rss",
-          "time": "2026-09-26T12:48:50Z"
-        },
-        {
-          "title": "Saudi Coalition Intercepts Houthi Missiles As Regional Defence Coordination Deepens - Sada Elbalad English",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNMnB1MWZNMlVoVWl0aDQ3cG5mNFNDbE96eUd4N2kxOHBxN01PSk5KU3hjei1raXJUeVBMbVdaeVFOaF9HeldhRjFzMjl5WTZ5VjM1MTY3Vnl6dVluMjFCeDF1VUdnbW1MRFE1ODB6OUtXN3JuRkplWmplX25FalF1eW9XMmdqbHlYQXJMTWttU0dKRjR3Nktud1VVdERhZjZWa2c?oc=5",
-          "source": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNMnB1MWZNMlVoVWl0aDQ3cG5mNFNDbE96eUd4N2kxOHBxN01PSk5KU3hjei1raXJUeVBMbVdaeVFOaF9HeldhRjFzMjl5WTZ5VjM1MTY3Vnl6dVluMjFCeDF1VUdnbW1MRFE1ODB6OUtXN3JuRkplWmplX25FalF1eW9XMmdqbHlYQXJMTWttU0dKRjR3Nktud1VVdERhZjZWa2c?oc=5",
-          "time": "2026-09-26T11:33:06Z"
-        },
-        {
-          "title": "Trump rejects Iran’s seven-day roadmap to reopen Strait of Hormuz",
-          "url": "https://www.aljazeera.com/news/2026/9/26/trump-rejects-irans-seven-day-roadmap-to-reopen-strait-of-hormuz?traffic_source=rss",
-          "source": "https://www.aljazeera.com/news/2026/9/26/trump-rejects-irans-seven-day-roadmap-to-reopen-strait-of-hormuz?traffic_source=rss",
-          "time": "2026-09-26T14:46:53Z"
-        },
-        {
-          "title": "From the Nile to the Red Sea, can Egypt and Ethiopia ever agree? - The New Arab",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNUnVCMG5kMzZhaDFYZEtSYUlyVlNVaVpsQjR6OGFINm0ySnBnUkpfVEdrZGYxSDZuRWtIT09NY01fbHctZGFOQk45LXM1V3gtX3hzck5LRWdBdEw4RVhRbElkMm1NTUN5OGFTb1hGcE1OUXFyd1RreVJmNzBRbXJTQW9NRHU0d9IBiwFBVV95cUxQS0JRMzgwczRNdEpjTDEzV1dXSHdvYTR4Y1RjRnFyUXlna2RfWldPTlRGUUpKN2VZTVIxTTl4bUlHcXN4ZWthRklZYWtVbHhXV2pBV01lN1ZLNU5qSkhVZlZ0emx5R3lTQlpWc0FXWkxMbkFlX19qTE9IVG9SREVCTE9hUUZrejVETGZr?oc=5",
+          "title": "Air Tanzania Suspends Flights to Russia Following Zelensky’s Airspace Warning - The Moscow Times",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNYzhnc3JMdDFtSVAyVFV4UXdfVl83dzZiOHZaV2hnWXFmMDFEX0RldHZZS0RaUl9DWUlfaWZXM2ZjU0psNkVlV2ZrbG05TkdUUzFqY1VrMFM4NUdNUWNVM3RNMjJib2o2UlhRTzczWDFsSUNSdWxnc1FLZldudjBmN25oa2tMZDNGNUozdVlIZHR2Z2ZGR2dOSk93YXR5a1BsRV95T3QydkM2dmprYUhKZFNtc3czdXpWQmN2d1pSVi1SU28?oc=5",
           "source": "Google News RSS",
           "time": ""
         },
         {
-          "title": "South Korea mulls ‘contributions’ in Strait of Hormuz - Al Jazeera",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNOGNKSndEUXU1NmZJeVJ5b1B2Tk94VnJkS1F3aGpIbExRRTFmOWlvazk0MzJYY25DNjVCNEpIM2tRd2JhSHcxSTNHVDBLdkJPZHNLcEFyNDcxOUdYMDQwLURJa1M2RWg5UFU2NGdaVVlZaXl1c21LN3FFdzhIVFZNbGlqdG5mb3RYTGpLRktYSk9SVmFxYVHSAZsBQVVfeXFMTk1iMTJFa2pKY2VFZTdUTU4zeDMzTTZ5ck1xRFdsUnIxTnFxRy1hT0xqNEFHcHBITjlPRG1USlhQUklfWmd6aklSZlVHY0U0WjdFSEd3ZWxfTjQycXN4am5QcWRuTDVqYjdpM2wxdnY0TzIwQVZiWFR4MHNUTVQ4dnJsUUxmdVVDcTBpTzBKR1k1bWJrNk1ub3Q1VVE?oc=5",
+          "title": "Air Tanzania becomes first airline to halt flights to Russia after Zelenskyy warning - Al Arabiya English",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNTXllUHlBRm82MVF0Z0xiel95aDlidGY4aHBvRjRyYUtKcWFORGY5bFVVUi1hQkJaMS1jMFptajM0UTFTMDFtRXJ0bzFZMEtacUN6dUJCS2dzNGZ5NGRRUEZmd1RZWHRCUlBCSHFkYVhHc3RRRDBaclAwcXdLcnFxWU9EZzk1eVplZDJyc3FnWUJOdjQzN0x3bEJoWjFuWXVfVW1aeEpfY2JkUURuRVRtMm42YWVQZVNUZ2dOZlc3a2Y4aWhfUnRPUTdyNWwtMUNFMHhSTGV0MNIB1wFBVV95cUxNTXllUHlBRm82MVF0Z0xiel95aDlidGY4aHBvRjRyYUtKcWFORGY5bFVVUi1hQkJaMS1jMFptajM0UTFTMDFtRXJ0bzFZMEtacUN6dUJCS2dzNGZ5NGRRUEZmd1RZWHRCUlBCSHFkYVhHc3RRRDBaclAwcXdLcnFxWU9EZzk1eVplZDJyc3FnWUJOdjQzN0x3bEJoWjFuWXVfVW1aeEpfY2JkUURuRVRtMm42YWVQZVNUZ2dOZlc3a2Y4aWhfUnRPUTdyNWwtMUNFMHhSTGV0MA?oc=5",
           "source": "Google News RSS",
-          "time": ""
-        },
-        {
-          "title": "Iranian Embassy posts satirical video about Hormuz mines - Roya News",
-          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9Ia2dvclRmSXJQcmMwOExXTzZxeDZMLXd5M1cwNkE5dng4Ykp3TnZuMm9vX1IzcjhRNUFtZHBPckN2cjdCZURfWQ?oc=5",
-          "source": "Google News RSS",
-          "time": ""
-        },
-        {
-          "title": "World’s 5th most powerful military set to join US, UK and France in Strait of Hormuz after attacks on Liberia-flagged ships carrying Saudi crude - Business Insider Africa",
-          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNUm5DRl9nUVVFRmVpQTQ2YmF1NTl5ZVhydVlkX0VOZ2ZYcDlMTFM1c1hVSlkyaXR2MXhFVkc2Qm8tYVJXWHRVaFQ3NlFLalQtZXRDOTVVeGZ3UzhXb0w5WEtnaFhEUkROajZ2aW5RZzY0a0ZpdzNhbGxQS2YtNERnN3NvT0RJZ2NiNmF1eEJPWEVYV2tDS2hPckl6N3AydDY0TUFySnROZFJPLXpON0pHM244cno4M1B3bURtZkNNMXVkcnpMS24wR1NWVldFUHRqd2FRTU9B?oc=5",
-          "source": "Google News RSS",
-          "time": ""
-        },
-        {
-          "title": "Egypt’s Strategic Spoiler Role in the Horn of Africa and Red Sea - ENA English",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE0tSjQyaHNiSkt4dEhIOFlTams4cWhJRUFfTlluYXh0QldYLW0xcFZsQkJUdDhXZXRULW9NYWtwUGxteUt6Vk9jS3lSWGFQeGwyVUE?oc=5",
-          "source": "Google News RSS",
-          "time": ""
-        },
-        {
-          "title": "Houthis Threaten to Close Bab el-Mandeb Strait - migflug.com",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPemNiSS0zUnkxSEROUVpRSjVWRVIwSXZOelFNamJiSUktaGdvVVFRNTdmbi1uQThLTjlmRGZfVXc2d3NzZ0FaNGpoTGlGaXJDNDlOcENTa0VVeEswZFFfV0ppRzBPZURmSnZzN0k0b29vSHZwT2lCSWdaZDJNbHlxY3haWWl3Q1pkMEhoOGRfVmFGQzRfUEIwcmpB?oc=5",
-          "source": "Google News RSS",
-          "time": ""
-        },
-        {
-          "title": "South Korea Reviews Troop Dispatch to Hormuz Strait as Japan Hesitates - 조선일보",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQRXRBcDlPYUplWjlvX2E1YzRRX25tMVhnSEFmWFRYbnpRZUo2dGJoUEt4RU0zSTVRYXBwWEd4c0cycWlJdnVjNEJ5NHlDQXQwYXF5RnV1dEJ0enFLQ0RranRrZ1FLOU5XNi11WkhKOWtFVmJoQUZrR3lIUlV6LWFpNXZJdHo?oc=5",
-          "source": "Google News RSS",
-          "time": ""
-        },
-        {
-          "title": "Pakistan Worries About Being Drawn Into US-Iran Conflict After Houthis Attack Saudi Arabia - EnergyNow.com",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOVTJHS2hXV0doNGMtQjkxWnYzNWhNeXF0NGJwQ2U0Vm1FRkFsRk5iTlp3MDlXc0pOdEVaTm1JemNobFRxVVVnanBOM2dMVXh5eWF4SXdqWVFEVzlqTW5VUThoNmdsZDR0bGloRzMwRkkybnVRUkY0blFtRXBSMWFfOFg1bkpFalJaV095Z0FVYWFBWVBfVHlLNmdmcUJGYnZZVDJLejk3NnlFeHlGSEV6TWNfbUJmZ0hpZWQ5cHhB?oc=5",
-          "source": "Google News RSS",
-          "time": ""
-        },
-        {
-          "title": "Iran fires anti-ship missiles",
-          "url": "https://x.com/HormuzLetter/status/2093847720599355732?s=20",
-          "source": "Global War News Map",
-          "time": ""
-        },
-        {
-          "title": "US will support but not lead military operations against the Houthis",
-          "url": "https://x.com/Conflict_Radar/status/2093779745939038591?s=20",
-          "source": "Global War News Map",
           "time": ""
         }
       ],
@@ -633,7 +493,7 @@
       "actionEvidenceCount": 0,
       "categoryCount": 1,
       "targetCount": 0,
-      "evidenceCount": 86,
+      "evidenceCount": 87,
       "lastEvidenceTime": "Wed, 19 Aug 2026 07:00:00 GMT",
       "intensity": 35,
       "evidence": [
@@ -706,13 +566,13 @@
         {
           "title": "3 Export Stocks Retail Investors May Revisit After The US China Tariff Reset - simplywall.st",
           "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPMUFHUHRZRVpPX1JsWVRteXItVUQxbUxuQ3BoUzg3T1dGUC05TUFDMWFrd01kQWFvS1hrQWpJU1JPSTBlUmtrRWZLYU1HTFd2anh3OXV5ajBiQkRia05SZjI5ZDBCNV9FX2xJRGRCbXI1elRIcmdvOWk1Y01EbHUyOUF2bll2UFBYNTRBNDFmc05DOUFYVzVOYnRiT2M5dXJ4eXRKeGRXVldxTWd6LWMzSW5HQjZmcVdwOWxhVDlCZGpMWmdHbXFtZm1PSEVpRnA4NDBVVkN30gHbAUFVX3lxTE9RYzFqdzBNVEFlMXlGQl9KVU1fQVZybFpMRHF4VTdHZ2NXbElPODdkRml1MXVleGlmUldMbVNlWVJNcGdCRzNDYi1iZTBPYWkxTWYxbDBWVXZRTlZHaUwxLWI5M2wweGY2SWhmZTZaLTA4VHNqSmZWTGcxQWU1XzVvQWFxb1ZPZGRYTVNzdW56aXlCRFM4SllaUHRpSlQ0WGdpc05XYXJxeTJEc2VWUDlCcDFKVE0zUTJDRllIaEZfUk82VTA3em9jUGotcWYzVmlRcUdKNmdORHUtNA?oc=5",
-          "source": "Google News — China Economy / Trade",
+          "source": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPMUFHUHRZRVpPX1JsWVRteXItVUQxbUxuQ3BoUzg3T1dGUC05TUFDMWFrd01kQWFvS1hrQWpJU1JPSTBlUmtrRWZLYU1HTFd2anh3OXV5ajBiQkRia05SZjI5ZDBCNV9FX2xJRGRCbXI1elRIcmdvOWk1Y01EbHUyOUF2bll2UFBYNTRBNDFmc05DOUFYVzVOYnRiT2M5dXJ4eXRKeGRXVldxTWd6LWMzSW5HQjZmcVdwOWxhVDlCZGpMWmdHbXFtZm1PSEVpRnA4NDBVVkN30gHbAUFVX3lxTE9RYzFqdzBNVEFlMXlGQl9KVU1fQVZybFpMRHF4VTdHZ2NXbElPODdkRml1MXVleGlmUldMbVNlWVJNcGdCRzNDYi1iZTBPYWkxTWYxbDBWVXZRTlZHaUwxLWI5M2wweGY2SWhmZTZaLTA4VHNqSmZWTGcxQWU1XzVvQWFxb1ZPZGRYTVNzdW56aXlCRFM4SllaUHRpSlQ0WGdpc05XYXJxeTJEc2VWUDlCcDFKVE0zUTJDRllIaEZfUk82VTA3em9jUGotcWYzVmlRcUdKNmdORHUtNA?oc=5",
           "time": "2026-09-26T21:00:27Z"
         },
         {
           "title": "US regains foothold in Bangladesh’s corn market with 6% share - The Daily Star",
           "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOX193MUZpSzVNQjhZbGR0VHpnc1NMR3dUa0N4WHdZb3JWdGxWdkpUOTROV2l2ajh6bmRJNk9XbEx6cl94UGhKX1gyVDFZWGhmTGRPZXVUWXRDbDExZkFZazIxUXRPRGN4RW5palEybmdFdC1nNEpJbVFET1RJakRWZDk1V1ZpS0N4aWxmS3FfT1BXRi00Q2dZZUZKeXpkcm1hT3plSA?oc=5",
-          "source": "Google News — China Economy / Trade",
+          "source": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOX193MUZpSzVNQjhZbGR0VHpnc1NMR3dUa0N4WHdZb3JWdGxWdkpUOTROV2l2ajh6bmRJNk9XbEx6cl94UGhKX1gyVDFZWGhmTGRPZXVUWXRDbDExZkFZazIxUXRPRGN4RW5palEybmdFdC1nNEpJbVFET1RJakRWZDk1V1ZpS0N4aWxmS3FfT1BXRi00Q2dZZUZKeXpkcm1hT3plSA?oc=5",
           "time": "2026-09-26T20:02:18Z"
         },
         {
@@ -734,6 +594,12 @@
           "time": "2026-09-26T15:49:57Z"
         },
         {
+          "title": "World Bank: Security Spending Dominates Taliban Administration’s Budget as Economic Pressures Mount - ShiaWaves",
+          "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOZUs4ek1qWG10MFhZRW5UVXNXenFZYzhZMW1HY1RxU2ZYcjd3cU9OcUxjTDl1UVVtTVhhQzNkdWg0U1B5RnhUVWJDdE9aZG9vRGVDcjNhYkhkZzZzOW9QTDJ5dzA3dVNaNDBiZWtTN3l3THVBZ3hKTngwRS1vZklDaENlRmxpMEdKSXhweTh0V1p0R0VrTTJ2TkRJU1RUVEFJMElDc2F1R2pFeWFMUjNUOWtCQ0NCdW5sTGcxN0tfNjE2MGU0ZjJXNmRCRmFtRVVIQ2VIaU9QOG1SUG9ZQWNwVlJSdFkzTlQ2c0F5SXRtWQ?oc=5",
+          "source": "Google News — Afghanistan Security",
+          "time": "2026-09-26T15:33:46Z"
+        },
+        {
           "title": "EU single market key to food security amid climate challenges - Agriland",
           "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNX2xXQTR1ajhBd2Ftb2NrUk5ZVWtJVjdjYVlsYzZxSnBhOHc3Z25VNElORmRITkhJMEZJM3dIZVlFRW5qX2VaLXhKdkpDZTRwVjM2VVdybUhNS2FyNllnZnU1SElabFY0SW5fOF8wZFFMTUNCRGNTVEQ5dnNmdGZSQjZJeDJHTnh6cERQcW96MktXakRIb3M4TW9sT1lxSVY1?oc=5",
           "source": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNX2xXQTR1ajhBd2Ftb2NrUk5ZVWtJVjdjYVlsYzZxSnBhOHc3Z25VNElORmRITkhJMEZJM3dIZVlFRW5qX2VaLXhKdkpDZTRwVjM2VVdybUhNS2FyNllnZnU1SElabFY0SW5fOF8wZFFMTUNCRGNTVEQ5dnNmdGZSQjZJeDJHTnh6cERQcW96MktXakRIb3M4TW9sT1lxSVY1?oc=5",
@@ -750,12 +616,146 @@
           "url": "https://www.theguardian.com/us-news/2026/sep/26/san-francisco-bay-area-public-transportation-bart",
           "source": "https://www.theguardian.com/us-news/2026/sep/26/san-francisco-bay-area-public-transportation-bart",
           "time": "2026-09-26T14:00:37Z"
+        }
+      ],
+      "sourceBacked": true
+    },
+    {
+      "actor": "Strategic Chokepoints",
+      "signal": "Strategic Chokepoints has source-backed intelligence activity",
+      "category": "military",
+      "categories": {
+        "military": 1
+      },
+      "dominantTarget": "",
+      "topTargets": [],
+      "actionCount": 0,
+      "actionEvidenceCount": 0,
+      "categoryCount": 1,
+      "targetCount": 0,
+      "evidenceCount": 84,
+      "lastEvidenceTime": "Fri, 03 Apr 2026 07:00:00 GMT",
+      "intensity": 35,
+      "evidence": [
+        {
+          "title": "Trump rejects Iranian offer to reopen Strait of Hormuz",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/26/trump-rejects-iranian-offer-to-reopen-strait-of-hormuz?traffic_source=rss",
+          "source": "https://www.aljazeera.com/video/newsfeed/2026/9/26/trump-rejects-iranian-offer-to-reopen-strait-of-hormuz?traffic_source=rss",
+          "time": "2026-09-26T18:00:43Z"
         },
         {
-          "title": "Managing Asymmetric Supply Vulnerability: Bilateral Bargaining and Strategic Stockpiling in Sino-American Economic Relations - debuglies.com",
-          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQd0stNnA1OUJ5RmZBc2hXc2s0ODdPdTgyQmhmMmlWdl9WdDNOcjhsbU9ldDRnLXBQQWVsRTlMdnoyb3VfczBKc3EyT1F3SlVzSWZjd2NZRFRaaFdNazJDamx0TVdDS0trRTRxbTQwaFExS1k1eWdRS19BMkZta3hDMnBWWjh4QUtkT25WZGNtUVZ0RlpVMHM0OVdaZmdTTk9ZaXVEOTlFM0tKWGV5MmE0UXM1LVhORlZod2tYM1BJMF83UlI3bmpqV0hLTlllaFVrUXFHaHJVSDMxaFNfS3FXaWxpemV2el9wUURxMjBn?oc=5",
-          "source": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQd0stNnA1OUJ5RmZBc2hXc2s0ODdPdTgyQmhmMmlWdl9WdDNOcjhsbU9ldDRnLXBQQWVsRTlMdnoyb3VfczBKc3EyT1F3SlVzSWZjd2NZRFRaaFdNazJDamx0TVdDS0trRTRxbTQwaFExS1k1eWdRS19BMkZta3hDMnBWWjh4QUtkT25WZGNtUVZ0RlpVMHM0OVdaZmdTTk9ZaXVEOTlFM0tKWGV5MmE0UXM1LVhORlZod2tYM1BJMF83UlI3bmpqV0hLTlllaFVrUXFHaHJVSDMxaFNfS3FXaWxpemV2el9wUURxMjBn?oc=5",
-          "time": "2026-09-26T12:21:06Z"
+          "title": "Trump reportedly rejects Iran’s seven-day peace deal to reopen strait of Hormuz",
+          "url": "https://www.theguardian.com/world/2026/sep/26/trump-dismiss-iran-seven-day-peace-deal-hormuz",
+          "source": "https://www.theguardian.com/world/2026/sep/26/trump-dismiss-iran-seven-day-peace-deal-hormuz",
+          "time": "2026-09-26T12:38:46Z"
+        },
+        {
+          "title": "Russia pitches Gulf peace plan as Strait of Hormuz clashes threaten global shipping and trade - Business Upturn",
+          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxObXItTjFpeWwzR0FKc2t6ejlLMm5aUW5Rak9NQjZ2czJNX3pmdm1kTlNVOTZMdkJ3U2Jab1FTRnNXOV9sNmUtQkw2Qk5lUTNOcDROdDRDcDNrWkxaSDlBN1JFVl9URnNwblRnT1VjaTExVVltRlBkTVpYSmdNS2RBckx5NTliVHVfdmE4RlF1d0JxMXJid3A4RGJ5M004d0Y3dlFCT3QwOUdrYjJWVlZfaWQyY2d5YktuT3UwcXpKSUlXZGxfTkV4Yk5YcG5qYXZMejk4bDBsbEVacTlVSHpBSw?oc=5",
+          "source": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxObXItTjFpeWwzR0FKc2t6ejlLMm5aUW5Rak9NQjZ2czJNX3pmdm1kTlNVOTZMdkJ3U2Jab1FTRnNXOV9sNmUtQkw2Qk5lUTNOcDROdDRDcDNrWkxaSDlBN1JFVl9URnNwblRnT1VjaTExVVltRlBkTVpYSmdNS2RBckx5NTliVHVfdmE4RlF1d0JxMXJid3A4RGJ5M004d0Y3dlFCT3QwOUdrYjJWVlZfaWQyY2d5YktuT3UwcXpKSUlXZGxfTkV4Yk5YcG5qYXZMejk4bDBsbEVacTlVSHpBSw?oc=5",
+          "time": "2026-09-26T16:46:04Z"
+        },
+        {
+          "title": "Russia pitches Gulf peace plan as Strait of Hormuz clashes threaten global shipping and trade - Business Upturn",
+          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQRmQyWVAxa1RWalBhTTZRUEhodllMbll3czA3NXhxWW01WHRxUHh0Q2Z2RGxURDRQZk9qNXA4cWZHZ2JxRXJGOTdXYWdZTGNGT18yUlZwXzBycFFqUjNhcGxKR2daZmZyN2w4QnV4VzVUMVJjY0JZM0Yzc0VsdHlMVWc2elE0cFJaNHh1eEMwMEphQURXSXEzdG9FamZrNWlXdk5LSUZ4T0JFMmROZDNjLUpvY1JLRFZTSDFFempZSXFSVEV4Z1J6dlNmMExzd1VtdlczZ1AtUHZjdGpCdERTcFRLaEFfZw?oc=5",
+          "source": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQRmQyWVAxa1RWalBhTTZRUEhodllMbll3czA3NXhxWW01WHRxUHh0Q2Z2RGxURDRQZk9qNXA4cWZHZ2JxRXJGOTdXYWdZTGNGT18yUlZwXzBycFFqUjNhcGxKR2daZmZyN2w4QnV4VzVUMVJjY0JZM0Yzc0VsdHlMVWc2elE0cFJaNHh1eEMwMEphQURXSXEzdG9FamZrNWlXdk5LSUZ4T0JFMmROZDNjLUpvY1JLRFZTSDFFempZSXFSVEV4Z1J6dlNmMExzd1VtdlczZ1AtUHZjdGpCdERTcFRLaEFfZw?oc=5",
+          "time": "2026-09-26T16:31:16Z"
+        },
+        {
+          "title": "Trump rejects Iran proposal on Hormuz as Houthis target Riyadh",
+          "url": "https://www.stripes.com/theaters/us/2026-09-26/trump-rejects-iran-proposal-22973797.html",
+          "source": "https://www.stripes.com/theaters/us/2026-09-26/trump-rejects-iran-proposal-22973797.html",
+          "time": "2026-09-26T19:09:34Z"
+        },
+        {
+          "title": "Saudi coalition says it halted Houthi attack - taipeitimes.com",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5NNFpmYjE4c2laRUVfQzlrT3BWYkpuaGxSN0xONDJZODZpQV9rbmY3dVJHN3dlaHZXdGNXc0NBZ0toMkJDbm9tSlpLb2doRHRKV2psbFE0WTlFa1RPRFVobTJwQmd5M19QM2s4VDhETGZLZUMycjQ3cQ?oc=5",
+          "source": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5NNFpmYjE4c2laRUVfQzlrT3BWYkpuaGxSN0xONDJZODZpQV9rbmY3dVJHN3dlaHZXdGNXc0NBZ0toMkJDbm9tSlpLb2doRHRKV2psbFE0WTlFa1RPRFVobTJwQmd5M19QM2s4VDhETGZLZUMycjQ3cQ?oc=5",
+          "time": "2026-09-26T16:00:00Z"
+        },
+        {
+          "title": "Mecca defence alliance chiefs meet amid Houthi attacks",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/26/26-09-sv-saudi-turkiye-pakistan-chiefs-riy-ks?traffic_source=rss",
+          "source": "https://www.aljazeera.com/video/newsfeed/2026/9/26/26-09-sv-saudi-turkiye-pakistan-chiefs-riy-ks?traffic_source=rss",
+          "time": "2026-09-26T12:48:50Z"
+        },
+        {
+          "title": "Saudi Coalition Intercepts Houthi Missiles As Regional Defence Coordination Deepens - Sada Elbalad English",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNMnB1MWZNMlVoVWl0aDQ3cG5mNFNDbE96eUd4N2kxOHBxN01PSk5KU3hjei1raXJUeVBMbVdaeVFOaF9HeldhRjFzMjl5WTZ5VjM1MTY3Vnl6dVluMjFCeDF1VUdnbW1MRFE1ODB6OUtXN3JuRkplWmplX25FalF1eW9XMmdqbHlYQXJMTWttU0dKRjR3Nktud1VVdERhZjZWa2c?oc=5",
+          "source": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNMnB1MWZNMlVoVWl0aDQ3cG5mNFNDbE96eUd4N2kxOHBxN01PSk5KU3hjei1raXJUeVBMbVdaeVFOaF9HeldhRjFzMjl5WTZ5VjM1MTY3Vnl6dVluMjFCeDF1VUdnbW1MRFE1ODB6OUtXN3JuRkplWmplX25FalF1eW9XMmdqbHlYQXJMTWttU0dKRjR3Nktud1VVdERhZjZWa2c?oc=5",
+          "time": "2026-09-26T11:33:06Z"
+        },
+        {
+          "title": "Iran war live: Tehran awaits official response as Trump rejects Hormuz plan",
+          "url": "https://www.aljazeera.com/news/liveblog/2026/9/27/iran-war-live-tehran-awaits-official-response-as-trump-rejects-hormuz-plan?traffic_source=rss",
+          "source": "Al Jazeera",
+          "time": "2026-09-27T00:00:00Z"
+        },
+        {
+          "title": "From the Nile to the Red Sea, can Egypt and Ethiopia ever agree? - The New Arab",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNUnVCMG5kMzZhaDFYZEtSYUlyVlNVaVpsQjR6OGFINm0ySnBnUkpfVEdrZGYxSDZuRWtIT09NY01fbHctZGFOQk45LXM1V3gtX3hzck5LRWdBdEw4RVhRbElkMm1NTUN5OGFTb1hGcE1OUXFyd1RreVJmNzBRbXJTQW9NRHU0d9IBiwFBVV95cUxQS0JRMzgwczRNdEpjTDEzV1dXSHdvYTR4Y1RjRnFyUXlna2RfWldPTlRGUUpKN2VZTVIxTTl4bUlHcXN4ZWthRklZYWtVbHhXV2pBV01lN1ZLNU5qSkhVZlZ0emx5R3lTQlpWc0FXWkxMbkFlX19qTE9IVG9SREVCTE9hUUZrejVETGZr?oc=5",
+          "source": "Google News RSS",
+          "time": ""
+        },
+        {
+          "title": "South Korea mulls ‘contributions’ in Strait of Hormuz - Al Jazeera",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNOGNKSndEUXU1NmZJeVJ5b1B2Tk94VnJkS1F3aGpIbExRRTFmOWlvazk0MzJYY25DNjVCNEpIM2tRd2JhSHcxSTNHVDBLdkJPZHNLcEFyNDcxOUdYMDQwLURJa1M2RWg5UFU2NGdaVVlZaXl1c21LN3FFdzhIVFZNbGlqdG5mb3RYTGpLRktYSk9SVmFxYVHSAZsBQVVfeXFMTk1iMTJFa2pKY2VFZTdUTU4zeDMzTTZ5ck1xRFdsUnIxTnFxRy1hT0xqNEFHcHBITjlPRG1USlhQUklfWmd6aklSZlVHY0U0WjdFSEd3ZWxfTjQycXN4am5QcWRuTDVqYjdpM2wxdnY0TzIwQVZiWFR4MHNUTVQ4dnJsUUxmdVVDcTBpTzBKR1k1bWJrNk1ub3Q1VVE?oc=5",
+          "source": "Google News RSS",
+          "time": ""
+        },
+        {
+          "title": "Iranian Embassy posts satirical video about Hormuz mines - Roya News",
+          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9Ia2dvclRmSXJQcmMwOExXTzZxeDZMLXd5M1cwNkE5dng4Ykp3TnZuMm9vX1IzcjhRNUFtZHBPckN2cjdCZURfWQ?oc=5",
+          "source": "Google News RSS",
+          "time": ""
+        },
+        {
+          "title": "World’s 5th most powerful military set to join US, UK and France in Strait of Hormuz after attacks on Liberia-flagged ships carrying Saudi crude - Business Insider Africa",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNUm5DRl9nUVVFRmVpQTQ2YmF1NTl5ZVhydVlkX0VOZ2ZYcDlMTFM1c1hVSlkyaXR2MXhFVkc2Qm8tYVJXWHRVaFQ3NlFLalQtZXRDOTVVeGZ3UzhXb0w5WEtnaFhEUkROajZ2aW5RZzY0a0ZpdzNhbGxQS2YtNERnN3NvT0RJZ2NiNmF1eEJPWEVYV2tDS2hPckl6N3AydDY0TUFySnROZFJPLXpON0pHM244cno4M1B3bURtZkNNMXVkcnpMS24wR1NWVldFUHRqd2FRTU9B?oc=5",
+          "source": "Google News RSS",
+          "time": ""
+        },
+        {
+          "title": "Egypt’s Strategic Spoiler Role in the Horn of Africa and Red Sea - ENA English",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE0tSjQyaHNiSkt4dEhIOFlTams4cWhJRUFfTlluYXh0QldYLW0xcFZsQkJUdDhXZXRULW9NYWtwUGxteUt6Vk9jS3lSWGFQeGwyVUE?oc=5",
+          "source": "Google News RSS",
+          "time": ""
+        },
+        {
+          "title": "Houthis Threaten to Close Bab el-Mandeb Strait - migflug.com",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPemNiSS0zUnkxSEROUVpRSjVWRVIwSXZOelFNamJiSUktaGdvVVFRNTdmbi1uQThLTjlmRGZfVXc2d3NzZ0FaNGpoTGlGaXJDNDlOcENTa0VVeEswZFFfV0ppRzBPZURmSnZzN0k0b29vSHZwT2lCSWdaZDJNbHlxY3haWWl3Q1pkMEhoOGRfVmFGQzRfUEIwcmpB?oc=5",
+          "source": "Google News RSS",
+          "time": ""
+        },
+        {
+          "title": "South Korea Reviews Troop Dispatch to Hormuz Strait as Japan Hesitates - 조선일보",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQRXRBcDlPYUplWjlvX2E1YzRRX25tMVhnSEFmWFRYbnpRZUo2dGJoUEt4RU0zSTVRYXBwWEd4c0cycWlJdnVjNEJ5NHlDQXQwYXF5RnV1dEJ0enFLQ0RranRrZ1FLOU5XNi11WkhKOWtFVmJoQUZrR3lIUlV6LWFpNXZJdHo?oc=5",
+          "source": "Google News RSS",
+          "time": ""
+        },
+        {
+          "title": "Pakistan Worries About Being Drawn Into US-Iran Conflict After Houthis Attack Saudi Arabia - EnergyNow.com",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOVTJHS2hXV0doNGMtQjkxWnYzNWhNeXF0NGJwQ2U0Vm1FRkFsRk5iTlp3MDlXc0pOdEVaTm1JemNobFRxVVVnanBOM2dMVXh5eWF4SXdqWVFEVzlqTW5VUThoNmdsZDR0bGloRzMwRkkybnVRUkY0blFtRXBSMWFfOFg1bkpFalJaV095Z0FVYWFBWVBfVHlLNmdmcUJGYnZZVDJLejk3NnlFeHlGSEV6TWNfbUJmZ0hpZWQ5cHhB?oc=5",
+          "source": "Google News RSS",
+          "time": ""
+        },
+        {
+          "title": "Iran fires anti-ship missiles",
+          "url": "https://x.com/HormuzLetter/status/2093847720599355732?s=20",
+          "source": "Global War News Map",
+          "time": ""
+        },
+        {
+          "title": "US will support but not lead military operations against the Houthis",
+          "url": "https://x.com/Conflict_Radar/status/2093779745939038591?s=20",
+          "source": "Global War News Map",
+          "time": ""
+        },
+        {
+          "title": "explosions in the Hormuz",
+          "url": "https://x.com/Worldsource24/status/2093406367088271842?s=20",
+          "source": "Global War News Map",
+          "time": ""
         }
       ],
       "sourceBacked": true
@@ -786,26 +786,20 @@
         {
           "title": "Trump rejects Iran proposal on Hormuz as Houthis target Riyadh",
           "url": "https://www.stripes.com/theaters/us/2026-09-26/trump-rejects-iran-proposal-22973797.html",
-          "source": "Stars and Stripes",
+          "source": "https://www.stripes.com/theaters/us/2026-09-26/trump-rejects-iran-proposal-22973797.html",
           "time": "2026-09-26T19:09:34Z"
         },
         {
-          "title": "Iran denies link to Houthi attacks in Yemen & Saudi Arabia; warns US as Trump rejects peace offer - The Times of India",
-          "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxNSDBWMXpIQVlUZEJqYkNFX3NOS2tyT2Jtc0xnbEM4N05HMDRLTGJaWG10Y3JOUWtWTFBLelRXUzgxS3J0WEp3Z0dQc0xGcnVSRnUySjVWWlc4SWtRU1JDQ0c2TE1fN3JWejNVV3A5bFFOS2V0bFZHdG5LSXpVVk1lQ3k4eXk1cnZEZEVKNHlmQ0Frci00SVNLeHUtbHJBSGdiTmptdlVQUDIzb2lsVmVxYy1BT1ctVWtlYnF2U1JDM1N4S25oSUZlVFFreWhxN2ttTlBWakpLeVVkTG0yRTBkdUxZc2JDcHN1alJRMnBZcXFaczA2WGlMRHFENlFwUmdaWkVDcdIBigJBVV95cUxQZjNZbEJ4akM3RDZCeFBNUmpQNnZibFhEcXBnOWFNUE4xYTc2bnNVVWpWVFp4UUFhY0VqeVN4NEl4WGdlTXJqRjAwdXBTRFFXUHBKRHZwR0dnS2RNS3J1a3N2UF9iZG5fZlhHSko0VG9fVEhPNExaYzA1TWs0U01GUG9mOTkzaGFwb0E3NzA3b3VkR19uSVJhUGRuQ2w2UjQ2ODdNeno5ckVsdnlWRDB4eWZrdEdRLWNYejFRbDZOakpwNWZCbk52VkNPckhGVFh5SHBOMmxYYm1EeHVkTVN4M1FfcjNsdkNFMFE2TU5UZ1ZOR1NJWkRqaE9Da0JiZkJzdXViY1hCM1ZkZw?oc=5",
-          "source": "https://news.google.com/rss/articles/CBMihAJBVV95cUxNSDBWMXpIQVlUZEJqYkNFX3NOS2tyT2Jtc0xnbEM4N05HMDRLTGJaWG10Y3JOUWtWTFBLelRXUzgxS3J0WEp3Z0dQc0xGcnVSRnUySjVWWlc4SWtRU1JDQ0c2TE1fN3JWejNVV3A5bFFOS2V0bFZHdG5LSXpVVk1lQ3k4eXk1cnZEZEVKNHlmQ0Frci00SVNLeHUtbHJBSGdiTmptdlVQUDIzb2lsVmVxYy1BT1ctVWtlYnF2U1JDM1N4S25oSUZlVFFreWhxN2ttTlBWakpLeVVkTG0yRTBkdUxZc2JDcHN1alJRMnBZcXFaczA2WGlMRHFENlFwUmdaWkVDcdIBigJBVV95cUxQZjNZbEJ4akM3RDZCeFBNUmpQNnZibFhEcXBnOWFNUE4xYTc2bnNVVWpWVFp4UUFhY0VqeVN4NEl4WGdlTXJqRjAwdXBTRFFXUHBKRHZwR0dnS2RNS3J1a3N2UF9iZG5fZlhHSko0VG9fVEhPNExaYzA1TWs0U01GUG9mOTkzaGFwb0E3NzA3b3VkR19uSVJhUGRuQ2w2UjQ2ODdNeno5ckVsdnlWRDB4eWZrdEdRLWNYejFRbDZOakpwNWZCbk52VkNPckhGVFh5SHBOMmxYYm1EeHVkTVN4M1FfcjNsdkNFMFE2TU5UZ1ZOR1NJWkRqaE9Da0JiZkJzdXViY1hCM1ZkZw?oc=5",
-          "time": "2026-09-26T10:59:00Z"
-        },
-        {
-          "title": "Trump rejects Iran’s seven-day roadmap to reopen Strait of Hormuz",
-          "url": "https://www.aljazeera.com/news/2026/9/26/trump-rejects-irans-seven-day-roadmap-to-reopen-strait-of-hormuz?traffic_source=rss",
-          "source": "https://www.aljazeera.com/news/2026/9/26/trump-rejects-irans-seven-day-roadmap-to-reopen-strait-of-hormuz?traffic_source=rss",
-          "time": "2026-09-26T14:46:53Z"
+          "title": "Iran war live: Tehran awaits official response as Trump rejects Hormuz plan",
+          "url": "https://www.aljazeera.com/news/liveblog/2026/9/27/iran-war-live-tehran-awaits-official-response-as-trump-rejects-hormuz-plan?traffic_source=rss",
+          "source": "Al Jazeera",
+          "time": "2026-09-27T00:00:00Z"
         },
         {
           "title": "Pezeshkian says Iran ‘no longer trusts talks with Washington’",
-          "url": "https://www.aljazeera.com/news/2026/9/26/pezeshkian-says-iran-no-longer-trusts-talks-with-washington?traffic_source=rss",
-          "source": "https://www.aljazeera.com/news/2026/9/26/pezeshkian-says-iran-no-longer-trusts-talks-with-washington?traffic_source=rss",
-          "time": "2026-09-26T11:06:28Z"
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/26/pezeshkian-says-iran-no-longer-trusts-talks-with?traffic_source=rss",
+          "source": "Al Jazeera",
+          "time": "2026-09-26T23:49:30Z"
         },
         {
           "title": "Oil prices set for 8 per cent weekly gain on fresh US-Iran hostilities - The Eastleigh Voice",
@@ -894,6 +888,12 @@
         {
           "title": "The Latest: Trump turns to a dual economic and military approach in latest attempt to squeeze Iran - RochesterFirst",
           "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNb2c4Y2t3dXQxU1UwaERIMElYUWU1cE1YWUlKR2hXOVdqSDZxa29pQ0FYODNuQVVxQ3RmRzdVZVBkNXVOVXVVT1BQMHJOell3ei1kaGxOaVFmTUxQYmh2bGVRZ1YyZ3VNaEt6S2FyR0F1VVhycVBlYklFbDdueXJacjZHUl8xc0wzMFo3NVEzaDZXMFFwcnkzYUdWOUdKWFdsRkg4eFFMWEsxX0hTRlhaUHVDcnh0ZFlPcHdIRWktOEQ2Yy1YcU1ueGJfT3Q4Und0RWZDeVAxYkjSAdgBQVVfeXFMTW9nOGNrd3V0MVNVMGhESDBJWFFlNXBNWFlJSkdoVzlXakg2cWtvaUNBWDgzbkFVcUN0Zkc3VWVQZDV1TlV1VU9QUDByTnpZd3otZGhsTmlRZk1MUGJodmxlUWdWMmd1TWhLekthckdBdVVYcnFQZWJJRWw3bnlyWnI2R1JfMXNMMzBaNzVRM2g2VzBRcHJ5M2FHVjlHSlhXbEZIOHhRTFhLMV9IU0ZYWlB1Q3J4dGRZT3B3SEVpLThENmMtWHFNbnhiX090OFJ3dEVmQ3lQMWJI?oc=5",
+          "source": "Google News RSS",
+          "time": ""
+        },
+        {
+          "title": "US 'administered' polygraphs to military officers for Iran war leaks - Anadolu Ajansı",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQeDVZOUVlMUl0Y3FTc1Y1empmM29pVk0tNHozS1AwTWdOR0J2MF9uQm4xTDc5WEpQSGpKUlhZSXpGRGlDTFZ6eHktQ2c2S2NZTXRCTURsa2pmbUU0REV5ODloNzhMVmZadklrNWJXb1RpYUpBX3hLb3I2cEd2NWlXcU12cXpaTEJ6Vm0tbjBwRVBhT29NSHZwenhWcjRjZzJzNW03dHpSYVhSeDRl?oc=5",
           "source": "Google News RSS",
           "time": ""
         }
@@ -1053,14 +1053,14 @@
       "actionEvidenceCount": 0,
       "categoryCount": 1,
       "targetCount": 0,
-      "evidenceCount": 79,
+      "evidenceCount": 77,
       "lastEvidenceTime": "Tue, 07 Apr 2026 07:00:00 GMT",
       "intensity": 35,
       "evidence": [
         {
           "title": "Lavrov: Russia’s war in Ukraine will continue ‘through to the end’",
           "url": "https://www.aljazeera.com/video/newsfeed/2026/9/26/lavrov-russias-war-in-ukraine-will-continue-through-to-the?traffic_source=rss",
-          "source": "Al Jazeera",
+          "source": "https://www.aljazeera.com/video/newsfeed/2026/9/26/lavrov-russias-war-in-ukraine-will-continue-through-to-the?traffic_source=rss",
           "time": "2026-09-26T19:40:14Z"
         },
         {
@@ -1070,15 +1070,9 @@
           "time": "2026-09-26T15:39:00Z"
         },
         {
-          "title": "She grew up under Soviet rule. Now EU's top diplomat warns Europe against giving Russia what it wants",
-          "url": "https://www.foxnews.com/politics/grew-up-soviet-rule-eu-top-diplomat-warns-europe-against-giving-russia-wants",
-          "source": "https://www.foxnews.com/politics/grew-up-soviet-rule-eu-top-diplomat-warns-europe-against-giving-russia-wants",
-          "time": "2026-09-26T10:00:22Z"
-        },
-        {
           "title": "Russia scales up strikes on Ukraine as largest steelmaker halts operations",
           "url": "https://www.aljazeera.com/video/newsfeed/2026/9/26/russia-scales-up-strikes-on-ukraine-as-largest-steelmaker-halts-operations?traffic_source=rss",
-          "source": "Al Jazeera",
+          "source": "https://www.aljazeera.com/video/newsfeed/2026/9/26/russia-scales-up-strikes-on-ukraine-as-largest-steelmaker-halts-operations?traffic_source=rss",
           "time": "2026-09-26T20:57:54Z"
         },
         {
@@ -1090,7 +1084,7 @@
         {
           "title": "Russia pitches Gulf peace plan as Strait of Hormuz clashes threaten global shipping and trade - Business Upturn",
           "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxObXItTjFpeWwzR0FKc2t6ejlLMm5aUW5Rak9NQjZ2czJNX3pmdm1kTlNVOTZMdkJ3U2Jab1FTRnNXOV9sNmUtQkw2Qk5lUTNOcDROdDRDcDNrWkxaSDlBN1JFVl9URnNwblRnT1VjaTExVVltRlBkTVpYSmdNS2RBckx5NTliVHVfdmE4RlF1d0JxMXJid3A4RGJ5M004d0Y3dlFCT3QwOUdrYjJWVlZfaWQyY2d5YktuT3UwcXpKSUlXZGxfTkV4Yk5YcG5qYXZMejk4bDBsbEVacTlVSHpBSw?oc=5",
-          "source": "Google News — South Asia Security",
+          "source": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxObXItTjFpeWwzR0FKc2t6ejlLMm5aUW5Rak9NQjZ2czJNX3pmdm1kTlNVOTZMdkJ3U2Jab1FTRnNXOV9sNmUtQkw2Qk5lUTNOcDROdDRDcDNrWkxaSDlBN1JFVl9URnNwblRnT1VjaTExVVltRlBkTVpYSmdNS2RBckx5NTliVHVfdmE4RlF1d0JxMXJid3A4RGJ5M004d0Y3dlFCT3QwOUdrYjJWVlZfaWQyY2d5YktuT3UwcXpKSUlXZGxfTkV4Yk5YcG5qYXZMejk4bDBsbEVacTlVSHpBSw?oc=5",
           "time": "2026-09-26T16:46:04Z"
         },
         {
@@ -1174,6 +1168,12 @@
         {
           "title": "Air Tanzania suspends flights to Russia over safety concerns - Citizen Digital",
           "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPRS1xOUh1QWdHcmxJZWlxS0Fra1NnLWM5VVFwUDN1UFo2VllCTWw0RUlPbXVBTFVRd0ZrSEIzNmZYSmlnc3R4TFVqM2JCOFUxWF9VelRNMC16dGlDUFRhREwwWGJPakxzTEI0QkRKay1Wdl85MElUNjdFVHEyZC05bi13UVBQY1VXZmgwQ2tsOVcwLVctMl9hUXFNcDJVTUJIQ1E?oc=5",
+          "source": "Google News RSS",
+          "time": ""
+        },
+        {
+          "title": "Air Tanzania to resume flights to Russia on September 7 after temporary halt - Devdiscourse",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOalptWnpveEU0aDQ4U3hXZzE2SzY3emMzNndZM3p2UWdBYlYtUXB2U0VtMzFqZEs2bnpVTUZYMm0wSlpCeHJLMENtVi1jQkYyZldRTE5wS2c1WUtUcXJZbDR2VUIzVVJ5VHNSam9CeXJ6aG1WT0Z2MTFZemoxYk9oc0UxOEp4Z0Q5M2lzUjZuOUhJaTJJZUR0WXpMYzhmV1ZxQm9hdjdNWUZrVUZYWHdSWVRMa0JqOHFISTEtVVktaW9DNl9lMWE2ZEdyMkRTM1BCa2dHVFFB0gHWAUFVX3lxTE5qWm1aem94RTRoNDhTeFdnMTZLNjd6YzM2d1kzenZRZ0FiVi1RcHZTRW0zMWpkSzZuelVNRlgybTBKWkJ4ckswQ21WLWNCRjJmV1FMTnBLZzVZS1RxcllsNHZVQjNVUnlUc1Jqb0J5cnpobVZPRnYxMVl6ajFiT2hzRTE4SnhnRDkzaXNSNm45SElpMkllRHRZekxjOGZXVnFCb2F2N01ZRmtVRlhYd1JZVExrQmo4cUhJMS1VWS1pb0M2X2UxYTZkR3IyRFMzUEJrZ0dUUUE?oc=5",
           "source": "Google News RSS",
           "time": ""
         }
