@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-29T15:52:33.492097Z",
+  "updatedAt": "2026-09-29T20:47:42.300509Z",
   "method": "Deterministic prioritization of existing public Global Pulse artifacts; not a forecast or causal model.",
   "freshness": {
-    "snapshotUpdatedAt": "2026-09-29T11:48:23.487679+00:00",
-    "eventsUpdatedAt": "2026-09-29T11:48:27.609244Z",
+    "snapshotUpdatedAt": "2026-09-29T17:04:35.400182+00:00",
+    "eventsUpdatedAt": "2026-09-29T17:04:39.813368Z",
     "assessmentsUpdatedAt": "2026-09-10T03:03:12.655499Z"
   },
   "headline": {
@@ -13,54 +13,116 @@
   },
   "topDevelopments": [
     {
-      "id": "b326f6074b875a49",
-      "title": "Watch: Bangkok locals create floating market during floods",
-      "category": "economic",
+      "id": "e97600be626b8ee4",
+      "title": "Estonia blames Russia for arson attack on drone maker supplying Ukraine",
+      "category": "conflict",
       "confidence": "moderate",
       "reportCount": 2,
       "independentSourceCount": 2,
       "sources": [
-        "bbc_world",
-        "google_news_climate_disaster"
+        "guardian_world",
+        "bbc_world"
+      ],
+      "breaking": true,
+      "firstSeen": "2026-09-29T13:15:51Z",
+      "lastSeen": "2026-09-29T14:20:39Z"
+    },
+    {
+      "id": "58419a9edc6fe9f0",
+      "title": "Are Houthis using new modified cruise missiles in Yemen’s war? - Al Jazeera",
+      "category": "general",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "independentSourceCount": 2,
+      "sources": [
+        "google_news_yemen_red_sea",
+        "al_jazeera"
+      ],
+      "breaking": true,
+      "firstSeen": "2026-09-29T13:22:28Z",
+      "lastSeen": "2026-09-29T13:25:59Z"
+    },
+    {
+      "id": "55c22f47f8c4d5ec",
+      "title": "Russia's ballistic missile and jet-propelled drone blitz keeps Kyiv on edge - Messenger-Inquirer",
+      "category": "conflict",
+      "confidence": "low",
+      "reportCount": 6,
+      "independentSourceCount": 2,
+      "sources": [
+        "google_news_iran_israel",
+        "google_news_ukraine_war"
+      ],
+      "breaking": true,
+      "firstSeen": "2026-09-29T09:59:00Z",
+      "lastSeen": "2026-09-29T12:32:01Z"
+    },
+    {
+      "id": "726fd883c3f63487",
+      "title": "Iran downplays their possible role in Houthis’ recent Yemen victories - Al Jazeera",
+      "category": "general",
+      "confidence": "moderate",
+      "reportCount": 3,
+      "independentSourceCount": 2,
+      "sources": [
+        "google_news_yemen_red_sea",
+        "al_jazeera"
       ],
       "breaking": false,
-      "firstSeen": "2026-09-29T06:15:25Z",
-      "lastSeen": "2026-09-29T06:15:25Z"
+      "firstSeen": "2026-09-29T12:00:10Z",
+      "lastSeen": "2026-09-29T13:21:18Z"
     },
     {
-      "id": "231a720aff2f7603",
-      "title": "Russia's ballistic missile and jet-propelled drone blitz keeps Kyiv on edge - Naharnet",
-      "category": "conflict",
-      "confidence": "low",
+      "id": "d27f3ed3dcbb6207",
+      "title": "Burkina Faso, Mali and Niger launch Tafouk TV channel to push their own narrative",
+      "category": "general",
+      "confidence": "moderate",
       "reportCount": 2,
-      "independentSourceCount": 1,
+      "independentSourceCount": 2,
       "sources": [
+        "rfi_world",
+        "google_news_africa_security"
+      ],
+      "breaking": false,
+      "firstSeen": "2026-09-29T12:41:11Z",
+      "lastSeen": "2026-09-29T12:41:11Z"
+    },
+    {
+      "id": "c9f7a28061d6ecfb",
+      "title": "Trump denies offering Iran sanctions relief for nuclear concessions – US politics live",
+      "category": "diplomatic",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "independentSourceCount": 2,
+      "sources": [
+        "guardian_world",
         "google_news_iran_israel"
       ],
-      "breaking": true,
-      "firstSeen": "2026-09-29T09:59:08Z",
-      "lastSeen": "2026-09-29T11:32:00Z"
+      "breaking": false,
+      "firstSeen": "2026-09-29T11:38:36Z",
+      "lastSeen": "2026-09-29T11:38:36Z"
     },
     {
-      "id": "122b26d2fcc0a5b1",
-      "title": "US visa clash exposes Sudan’s forgotten war as foreign powers compete for strategic foothold - WFIN",
-      "category": "conflict",
-      "confidence": "low",
+      "id": "87edd4cce7f4be4b",
+      "title": "How Senate Democrats can stop Trump from stealing the midterms | David Walbert",
+      "category": "general",
+      "confidence": "moderate",
       "reportCount": 2,
-      "independentSourceCount": 1,
+      "independentSourceCount": 2,
       "sources": [
-        "google_news_sudan_conflict"
+        "guardian_us",
+        "google_news_u_s_politics"
       ],
-      "breaking": true,
-      "firstSeen": "2026-09-28T22:15:22Z",
-      "lastSeen": "2026-09-29T03:06:58Z"
+      "breaking": false,
+      "firstSeen": "2026-09-29T10:00:00Z",
+      "lastSeen": "2026-09-29T10:00:48Z"
     },
     {
       "id": "d4032f4cad0427a7",
       "title": "Relations with Ukraine - North Atlantic Treaty Organization | NATO",
       "category": "diplomatic",
       "confidence": "low",
-      "reportCount": 5,
+      "reportCount": 6,
       "independentSourceCount": 1,
       "sources": [
         "North Atlantic Treaty Organization | NATO"
@@ -70,89 +132,33 @@
       "lastSeen": "Tue, 11 Nov 2025 08:00:00 GMT"
     },
     {
-      "id": "9dbe1492b2c609c1",
-      "title": "Statement of condemnation by the North Atlantic Council of Russia's malicious cyber activities - North Atlantic Treaty Organization | NATO",
-      "category": "diplomatic",
-      "confidence": "low",
-      "reportCount": 4,
-      "independentSourceCount": 1,
-      "sources": [
-        "North Atlantic Treaty Organization | NATO"
-      ],
-      "breaking": false,
-      "firstSeen": "Fri, 18 Jul 2025 07:00:00 GMT",
-      "lastSeen": "Tue, 23 Sep 2025 07:00:00 GMT"
-    },
-    {
-      "id": "abe123655a7813c2",
-      "title": "President Trump Delivers Remarks, Jul. 24, 2026 - The White House (.gov)",
-      "category": "political",
-      "confidence": "low",
-      "reportCount": 3,
-      "independentSourceCount": 1,
-      "sources": [
-        "The White House (.gov)"
-      ],
-      "breaking": false,
-      "firstSeen": "Fri, 14 Aug 2026 07:00:00 GMT",
-      "lastSeen": "Wed, 22 Jul 2026 07:00:00 GMT"
-    },
-    {
-      "id": "db037c2987eba324",
-      "title": "Green forest fire notification in Brazil",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 3,
-      "independentSourceCount": 1,
-      "sources": [
-        "gdacs_global_disaster_alerts"
-      ],
-      "breaking": false,
-      "firstSeen": "2026-09-28T23:00:49Z",
-      "lastSeen": "2026-09-28T23:04:25Z"
-    },
-    {
-      "id": "7e25ab364b4dcc3b",
-      "title": "Explanation of Vote Before the Vote for UNGA 80 Adoption on the Resolution to “Correct the Map” - United States Mission to the United Nations (.gov)",
+      "id": "80bc33bfba330f40",
+      "title": "Al-Shabaab Fighters Spent 3 Months in Yemen Learning Drone Assembly , Control Systems - Yemen Online",
       "category": "general",
       "confidence": "low",
       "reportCount": 2,
       "independentSourceCount": 1,
       "sources": [
-        "United States Mission to the United Nations (.gov)"
+        "google_news_somalia_security"
       ],
-      "breaking": false,
-      "firstSeen": "Fri, 04 Sep 2026 07:00:00 GMT",
-      "lastSeen": "Wed, 25 Mar 2026 07:00:00 GMT"
+      "breaking": true,
+      "firstSeen": "2026-09-29T10:18:25Z",
+      "lastSeen": "2026-09-29T16:09:54Z"
     },
     {
-      "id": "fcd2c34449d21a25",
-      "title": "Next NATO summit in Albania in doubt amid US reluctance and low defence spending - Reuters",
-      "category": "diplomatic",
+      "id": "6e825d4e3e8ef64e",
+      "title": "U.S. Forcing Mexico to Take Down Terrorist Cartel, Three of Five Top Bosses Jailed or Killed - breitbart.com",
+      "category": "general",
       "confidence": "low",
       "reportCount": 2,
       "independentSourceCount": 2,
       "sources": [
-        "Reuters",
-        "Internazionale"
+        "google_news_sinaloa_cartel_cjng",
+        "google_news_mexico_cartel_conflict"
       ],
-      "breaking": false,
-      "firstSeen": "Tue, 30 Jun 2026 07:00:00 GMT",
-      "lastSeen": "Tue, 30 Jun 2026 07:00:00 GMT"
-    },
-    {
-      "id": "632fbbf1bd52c1e7",
-      "title": "Green forest fire notification in Indonesia",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "independentSourceCount": 1,
-      "sources": [
-        "gdacs_global_disaster_alerts"
-      ],
-      "breaking": false,
-      "firstSeen": "2026-09-29T11:04:00Z",
-      "lastSeen": "2026-09-29T11:05:48Z"
+      "breaking": true,
+      "firstSeen": "2026-09-29T13:04:44Z",
+      "lastSeen": "2026-09-29T13:04:44Z"
     }
   ],
   "watchlist": [
