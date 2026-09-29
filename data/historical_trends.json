@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-29T00:24:42.560181Z",
-  "availableSamples": 180,
-  "availableHours": 567.1,
+  "updatedAt": "2026-09-29T05:56:50.375283Z",
+  "availableSamples": 181,
+  "availableHours": 572.6,
   "series": [
     {
       "updatedAt": "2026-09-05T09:19:53.754145+00:00",
@@ -1083,47 +1083,53 @@
       "tension": 39,
       "delta": -1.0,
       "scoreVersion": 5
+    },
+    {
+      "updatedAt": "2026-09-29T05:56:50.375283Z",
+      "tension": 38,
+      "delta": -1.0,
+      "scoreVersion": 5
     }
   ],
   "windows": {
     "6h": {
       "available": true,
       "samples": 2,
-      "start": "2026-09-28T20:16:24.754949Z",
-      "end": "2026-09-29T00:24:42.560181Z",
-      "startTension": 40,
-      "endTension": 39,
+      "start": "2026-09-29T00:24:42.560181Z",
+      "end": "2026-09-29T05:56:50.375283Z",
+      "startTension": 39,
+      "endTension": 38,
       "delta": -1.0,
       "trend": "STABLE"
     },
     "24h": {
       "available": true,
       "samples": 5,
-      "start": "2026-09-28T00:52:09.831468Z",
-      "end": "2026-09-29T00:24:42.560181Z",
-      "startTension": 39,
-      "endTension": 39,
+      "start": "2026-09-28T06:07:55.115835Z",
+      "end": "2026-09-29T05:56:50.375283Z",
+      "startTension": 38,
+      "endTension": 38,
       "delta": 0.0,
       "trend": "STABLE"
     },
     "7d": {
       "available": true,
       "samples": 39,
-      "start": "2026-09-22T01:14:39.678998Z",
-      "end": "2026-09-29T00:24:42.560181Z",
+      "start": "2026-09-22T06:18:23.377727Z",
+      "end": "2026-09-29T05:56:50.375283Z",
       "startTension": 38,
-      "endTension": 39,
-      "delta": 1.0,
+      "endTension": 38,
+      "delta": 0.0,
       "trend": "STABLE"
     },
     "30d": {
       "available": true,
-      "samples": 180,
+      "samples": 181,
       "start": "2026-09-05T09:19:53.754145+00:00",
-      "end": "2026-09-29T00:24:42.560181Z",
+      "end": "2026-09-29T05:56:50.375283Z",
       "startTension": 41,
-      "endTension": 39,
-      "delta": -2.0,
+      "endTension": 38,
+      "delta": -3.0,
       "trend": "DOWN"
     }
   }
