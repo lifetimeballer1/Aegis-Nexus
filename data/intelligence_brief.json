@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-30T00:28:04.197906Z",
+  "updatedAt": "2026-09-30T06:44:07.823275Z",
   "method": "Deterministic prioritization of existing public Global Pulse artifacts; not a forecast or causal model.",
   "freshness": {
-    "snapshotUpdatedAt": "2026-09-29T21:23:30.651628+00:00",
-    "eventsUpdatedAt": "2026-09-29T21:23:34.969740Z",
+    "snapshotUpdatedAt": "2026-09-30T05:57:14.342034+00:00",
+    "eventsUpdatedAt": "2026-09-30T05:57:17.184199Z",
     "assessmentsUpdatedAt": "2026-09-10T03:03:12.655499Z"
   },
   "headline": {
@@ -12,6 +12,21 @@
     "description": "Highest-priority developments and attention indicators from the latest generated intelligence artifacts."
   },
   "topDevelopments": [
+    {
+      "id": "a085328aeccb4f0d",
+      "title": "Venezuelan man shot by ICE officer in Texas is charged with assault",
+      "category": "general",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "independentSourceCount": 2,
+      "sources": [
+        "al_jazeera",
+        "guardian_world"
+      ],
+      "breaking": true,
+      "firstSeen": "2026-09-29T22:18:37Z",
+      "lastSeen": "2026-09-29T23:15:35Z"
+    },
     {
       "id": "694bba3686dcf4f0",
       "title": "Former American Idol contestant and pastor found guilty of murdering wife",
@@ -43,64 +58,49 @@
       "lastSeen": "2026-09-29T19:11:15Z"
     },
     {
-      "id": "e97600be626b8ee4",
-      "title": "Estonia blames Russia for arson attack on drone maker supplying Ukraine",
-      "category": "conflict",
+      "id": "f0c832372ac624b0",
+      "title": "Watch: Moment a government building collapses into a river in Nepal amid floods",
+      "category": "political",
       "confidence": "moderate",
       "reportCount": 2,
       "independentSourceCount": 2,
       "sources": [
-        "guardian_world",
-        "bbc_world"
+        "bbc_world",
+        "google_news_climate_disaster"
       ],
-      "breaking": true,
-      "firstSeen": "2026-09-29T13:15:51Z",
-      "lastSeen": "2026-09-29T14:20:39Z"
+      "breaking": false,
+      "firstSeen": "2026-09-30T03:21:28Z",
+      "lastSeen": "2026-09-30T03:21:28Z"
     },
     {
-      "id": "58419a9edc6fe9f0",
-      "title": "Are Houthis using new modified cruise missiles in Yemen’s war? - Al Jazeera",
+      "id": "efe862a589a74830",
+      "title": "Morocco’s pro-Palestine protests challenge Rabat’s deepening Israel ties - Al Jazeera",
       "category": "general",
       "confidence": "moderate",
       "reportCount": 2,
       "independentSourceCount": 2,
       "sources": [
-        "google_news_yemen_red_sea",
-        "al_jazeera"
-      ],
-      "breaking": true,
-      "firstSeen": "2026-09-29T13:22:28Z",
-      "lastSeen": "2026-09-29T13:25:59Z"
-    },
-    {
-      "id": "2cf095059b4e70c2",
-      "title": "Iran downplays possible role in Houthis’ recent Yemen victories - Al Jazeera",
-      "category": "general",
-      "confidence": "moderate",
-      "reportCount": 3,
-      "independentSourceCount": 2,
-      "sources": [
-        "google_news_yemen_red_sea",
+        "google_news_world_politics",
         "al_jazeera"
       ],
       "breaking": false,
-      "firstSeen": "2026-09-29T13:20:34Z",
-      "lastSeen": "2026-09-29T13:35:14Z"
+      "firstSeen": "2026-09-30T01:46:53Z",
+      "lastSeen": "2026-09-30T01:47:42Z"
     },
     {
-      "id": "364723b977829400",
-      "title": "Drug cartel kingpin among targets in sweeping Trump crackdown on alleged Mexican corruption network",
+      "id": "39a3b53ef4a741ce",
+      "title": "UN extends mandate of Gang Suppression Force in Haiti for six months - Al Jazeera",
       "category": "general",
       "confidence": "moderate",
       "reportCount": 2,
       "independentSourceCount": 2,
       "sources": [
-        "fox_news_politics",
-        "google_news_joint_task_force_western_hemisphere"
+        "google_news_haiti_security",
+        "al_jazeera"
       ],
       "breaking": false,
-      "firstSeen": "2026-09-29T16:29:34Z",
-      "lastSeen": "2026-09-29T16:29:34Z"
+      "firstSeen": "2026-09-29T22:38:10Z",
+      "lastSeen": "2026-09-29T22:46:51Z"
     },
     {
       "id": "1286d8943d730dcf",
@@ -117,40 +117,25 @@
       "lastSeen": "2026-09-29T18:26:19Z"
     },
     {
-      "id": "b4d398d74594ccf9",
-      "title": "Russia’s ballistic missile and jet-propelled drone blitz keeps Kyiv on edge - Times & Star",
-      "category": "conflict",
+      "id": "9dbe1492b2c609c1",
+      "title": "Statement of condemnation by the North Atlantic Council of Russia's malicious cyber activities - North Atlantic Treaty Organization | NATO",
+      "category": "diplomatic",
       "confidence": "low",
-      "reportCount": 2,
+      "reportCount": 4,
       "independentSourceCount": 1,
       "sources": [
-        "google_news_ukraine_war"
+        "North Atlantic Treaty Organization | NATO"
       ],
-      "breaking": true,
-      "firstSeen": "2026-09-29T15:24:58Z",
-      "lastSeen": "2026-09-29T17:12:16Z"
-    },
-    {
-      "id": "6e825d4e3e8ef64e",
-      "title": "U.S. Forcing Mexico to Take Down Terrorist Cartel, Three of Five Top Bosses Jailed or Killed - breitbart.com",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "independentSourceCount": 2,
-      "sources": [
-        "google_news_sinaloa_cartel_cjng",
-        "google_news_mexico_cartel_conflict"
-      ],
-      "breaking": true,
-      "firstSeen": "2026-09-29T13:04:44Z",
-      "lastSeen": "2026-09-29T13:04:44Z"
+      "breaking": false,
+      "firstSeen": "Fri, 18 Jul 2025 07:00:00 GMT",
+      "lastSeen": "Tue, 23 Sep 2025 07:00:00 GMT"
     },
     {
       "id": "d4032f4cad0427a7",
       "title": "Relations with Ukraine - North Atlantic Treaty Organization | NATO",
       "category": "diplomatic",
       "confidence": "low",
-      "reportCount": 5,
+      "reportCount": 4,
       "independentSourceCount": 1,
       "sources": [
         "North Atlantic Treaty Organization | NATO"
@@ -158,6 +143,20 @@
       "breaking": false,
       "firstSeen": "Thu, 09 Jul 2026 07:00:00 GMT",
       "lastSeen": "Tue, 11 Nov 2025 08:00:00 GMT"
+    },
+    {
+      "id": "db037c2987eba324",
+      "title": "Green forest fire notification in Brazil",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 3,
+      "independentSourceCount": 1,
+      "sources": [
+        "gdacs_global_disaster_alerts"
+      ],
+      "breaking": false,
+      "firstSeen": "2026-09-29T23:00:52Z",
+      "lastSeen": "2026-09-29T23:08:03Z"
     }
   ],
   "watchlist": [
