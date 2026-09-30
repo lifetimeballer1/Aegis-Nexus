@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "generatedAt": "2026-09-29T21:23:24.867231Z",
+  "generatedAt": "2026-09-30T00:38:24.953448Z",
   "sourceBackedOnly": true,
   "method": "Source-backed Brain evidence plus dict/list action layers; co-mention targets are co-occurrence volumes, not causality.",
   "signals": [
@@ -9,24 +9,24 @@
       "signal": "United States shows source-backed technology activity",
       "category": "technology",
       "categories": {
-        "technology": 93,
-        "military": 40,
-        "economic": 39,
+        "technology": 98,
+        "military": 41,
+        "economic": 40,
         "political": 39,
-        "diplomatic": 33,
-        "energy": 25,
-        "security": 21,
-        "maritime": 11
+        "diplomatic": 35,
+        "security": 26,
+        "energy": 26,
+        "maritime": 10
       },
       "dominantTarget": "Iran",
       "topTargets": [
         {
           "target": "Iran",
-          "mentions": 28
+          "mentions": 27
         },
         {
           "target": "China",
-          "mentions": 17
+          "mentions": 18
         },
         {
           "target": "Oil",
@@ -34,38 +34,44 @@
         },
         {
           "target": "Israel",
-          "mentions": 9
+          "mentions": 8
         },
         {
-          "target": "Pakistan",
+          "target": "Russia",
           "mentions": 6
         }
       ],
-      "actionCount": 301,
-      "actionEvidenceCount": 301,
-      "categoryCount": 93,
-      "targetCount": 28,
-      "evidenceCount": 91,
+      "actionCount": 315,
+      "actionEvidenceCount": 315,
+      "categoryCount": 98,
+      "targetCount": 27,
+      "evidenceCount": 89,
       "lastEvidenceTime": "Tue, 27 Jan 2026 08:00:00 GMT",
       "intensity": 100,
       "evidence": [
         {
-          "title": "U.S. Forcing Mexico to Take Down Terrorist Cartel, Three of Five Top Bosses Jailed or Killed - breitbart.com",
-          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOSDlTY1JoY0JtNlA1SDNuOGVab3IxOU1zZ282eTlEdGw1V2l1NVdSR0NXVk1QT0xkeXlUS3JPN0xDYU9LNUpXSHBVUW11Njh1SnRLOGhZaTF4bmJfbmVDdTJJMmh4RFhiUnB3N1ZORl9kZndVLWxvWllia2RRM1lLZjJuTWZwNzBoc3NCZkVRTmt6VV9MOUxMRGxIbWdoTHFYQUdfNm1FNUw5alBvLXN5ZWVpNVFlS0Z2MGVFczRCemhmLVct0gHEAUFVX3lxTE5IOVNjUmhjQm02UDVIM244ZVpvcjE5TXNnbzZ5OUR0bDVXaXU1V1JHQ1dWTVBPTGR5eVRLck83TENhT0s1SldIcFVRbXU2OHVKdEs4aFlpMXhuYl9uZUN1MkkyaHhEWGJScHc3Vk5GX2Rmd1UtbG9aWWJrZFEzWUtmMm5NZnA3MGhzc0JmRVFOa3pVX0w5TExEbEhtZ2hMcVhBR182bUU1TDlqUG8tc3llZWk1UWVLRnYwZUVzNEJ6aGYtVy0?oc=5",
-          "source": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOSDlTY1JoY0JtNlA1SDNuOGVab3IxOU1zZ282eTlEdGw1V2l1NVdSR0NXVk1QT0xkeXlUS3JPN0xDYU9LNUpXSHBVUW11Njh1SnRLOGhZaTF4bmJfbmVDdTJJMmh4RFhiUnB3N1ZORl9kZndVLWxvWllia2RRM1lLZjJuTWZwNzBoc3NCZkVRTmt6VV9MOUxMRGxIbWdoTHFYQUdfNm1FNUw5alBvLXN5ZWVpNVFlS0Z2MGVFczRCemhmLVct0gHEAUFVX3lxTE5IOVNjUmhjQm02UDVIM244ZVpvcjE5TXNnbzZ5OUR0bDVXaXU1V1JHQ1dWTVBPTGR5eVRLck83TENhT0s1SldIcFVRbXU2OHVKdEs4aFlpMXhuYl9uZUN1MkkyaHhEWGJScHc3Vk5GX2Rmd1UtbG9aWWJrZFEzWUtmMm5NZnA3MGhzc0JmRVFOa3pVX0w5TExEbEhtZ2hMcVhBR182bUU1TDlqUG8tc3llZWk1UWVLRnYwZUVzNEJ6aGYtVy0?oc=5",
-          "time": "2026-09-29T13:04:44Z"
+          "title": "Iran tells U.S. public that Trump's war has failed, and other Mideast developments - The Tribune-Democrat",
+          "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNLVEzNDFuaE5CZVpBam1QMmFoUVZrZVNQanJfd0Eyc3lvV0RrdkVWc2pubjVvejZSdTYyZ3B6QjdOcEhNZnpJVV9fSUhDMVhSZXBYMzdYMFNWY0xYejl6dzRnWXZwTVlCQ19MMjFsSkF3N0ZoNDkxTk5hR1JiX250clppbE9paGdvOUZTRlJzeVZ2SWk5aEU5ODJOcWJwaDFMa0hMTFEzUVB6d3hhVEdCZnk2akw3T0xKWURPQnNRX1hTWlhiY3o4X1NINWFncTdjX0QtZ2VvUlVLOU1ta09qN2FjSnJqWG5YLXVPVUl5TXhkb09pODc5dUNCMTBxUkE?oc=5",
+          "source": "Google News — Middle East Security",
+          "time": "2026-09-29T18:20:00Z"
         },
         {
-          "title": "U.S. Freezes Assets Of Nearly 50 People And Businesses Linked To Mexico's Sinaloa Cartel - tampafp.com",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPaG55UkxMTUVodmt2aVBWYmtoQUJRczVkdWFnLUdoU3RGSURpT2tmbXFBRG4xbmpCemNaV3JwUFpYZk1ZX0tYUmdJNFlxTDJsbzRucXZQMmVFRTRra1RrdTRXY0h1WEtmYjIzSzBmWlVfUmpsaXhCX1RLRkJNN1ZEXzhsZDEzOFc4UzJPV0RycmNVZ0I2amt5cHdQY2dfdUdYNXRoV2FyVE9MN0ZQZUxPTg?oc=5",
+          "title": "U.S. stocks slip on Wall Street as rising Treasury yields pressure the market - BNN Bloomberg",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPdHdiTVBKZVh3dGN0X1NpWUVHZmQzR1dUNUc2ejlSdHhaUWx1cGtQWHJpejNROFhncThSTDgyaWU0OVRqRjV3OWV5b1RIU0psY0RrdmpXSXRjMjY4MndpSkw4YzZCQUdPZWNMZWY4dks3RmFXRDhUMDJJd1daR1dLUXFiZ2VMUXB4V0dPZW92cWFWQU1WSWJJbE5zRUEtU3VodDA0VU1YZDdTMW1hd2RSUUhQdi1NaHZpYlhZ?oc=5",
+          "source": "Google News — Global Economics",
+          "time": "2026-09-29T18:00:58Z"
+        },
+        {
+          "title": "United States: Sanctioning Sinaloa Cartel Leaders and Corrupt Enablers in Baja California Press Statement - The St Kitts Nevis Observer",
+          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQSFRfeXdoR1UwaUxnY3kwOWNHQnN1ZWNhTzlEN0VVWG1pUjhIZDAzRTlVR0thTGp2MmRnMllJN3pLd0FJel9jNk5YZDZENl9iNnlQUFVDcnRVUzJ3LUlFVF9WcTdwWHFtUnhMSUhNWTE2YXNReV93RnA3OVNCZEF6VW1BdnN1c0hTSXpYRkpmczl5V2xOQVh1WUlrN2N6UjRUMGlJYjRNNElFdWh2Ym1veV9FcS1ERWprcWdkeXgwbC12YnJyWUs5TmlLS1JCNHgzcV80dHBBNVhWRHloQVE?oc=5",
           "source": "Google News — Mexico Cartel Conflict",
-          "time": "2026-09-29T18:21:36Z"
+          "time": "2026-09-29T22:29:29Z"
         },
         {
-          "title": "U.S. Forcing Mexico to Take Down Terrorist Cartel, Three of Five Top Bosses Jailed or Killed - breitbart.com",
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOUzNqWEVjcF8wYTMwSGV2MVgxaUtXMl9ZejU4R3dQOXVCUC15QTJvYVhLT20wWlhPa0RZbkRuUmVsYVZfRW1BQ3hzZUZzbktXMlNGRjRydUpxQzdwaGxBNXk2ak1RZkNxN1lVM3ppdzNabVM0eWI4R3llamxVeFNaSEd5V2NJUTdCNWdlY2F3TnV3bVc5YUM2ejI3cmRVZXUwR0NydDluc25kSUs4MnRHcUY4MW1LTGF5aFNtNlFVWdIBxAFBVV95cUxOSDlTY1JoY0JtNlA1SDNuOGVab3IxOU1zZ282eTlEdGw1V2l1NVdSR0NXVk1QT0xkeXlUS3JPN0xDYU9LNUpXSHBVUW11Njh1SnRLOGhZaTF4bmJfbmVDdTJJMmh4RFhiUnB3N1ZORl9kZndVLWxvWllia2RRM1lLZjJuTWZwNzBoc3NCZkVRTmt6VV9MOUxMRGxIbWdoTHFYQUdfNm1FNUw5alBvLXN5ZWVpNVFlS0Z2MGVFczRCemhmLVct?oc=5",
-          "source": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOUzNqWEVjcF8wYTMwSGV2MVgxaUtXMl9ZejU4R3dQOXVCUC15QTJvYVhLT20wWlhPa0RZbkRuUmVsYVZfRW1BQ3hzZUZzbktXMlNGRjRydUpxQzdwaGxBNXk2ak1RZkNxN1lVM3ppdzNabVM0eWI4R3llamxVeFNaSEd5V2NJUTdCNWdlY2F3TnV3bVc5YUM2ejI3cmRVZXUwR0NydDluc25kSUs4MnRHcUY4MW1LTGF5aFNtNlFVWdIBxAFBVV95cUxOSDlTY1JoY0JtNlA1SDNuOGVab3IxOU1zZ282eTlEdGw1V2l1NVdSR0NXVk1QT0xkeXlUS3JPN0xDYU9LNUpXSHBVUW11Njh1SnRLOGhZaTF4bmJfbmVDdTJJMmh4RFhiUnB3N1ZORl9kZndVLWxvWllia2RRM1lLZjJuTWZwNzBoc3NCZkVRTmt6VV9MOUxMRGxIbWdoTHFYQUdfNm1FNUw5alBvLXN5ZWVpNVFlS0Z2MGVFczRCemhmLVct?oc=5",
-          "time": "2026-09-29T13:04:44Z"
+          "title": "China & Taiwan Update, September 29, 2026 - American Enterprise Institute - AEI",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE96N3ExQl9aRVNkN1JqQlN3OFZ5a0FzaXh0X3NSeldYa0Y3YlZrYTNtcGNKTDNNcnhsb2pGQ3VpemhRWHJndU14QXhFOTZqNE9XVWhEc3d0d1Q4Zm50TXhvZ1ptWWlIWkgyZXdHRlhQYnh3QTcyVWFSNA?oc=5",
+          "source": "Google News — China Security / PLA",
+          "time": "2026-09-29T21:04:46Z"
         },
         {
           "title": "China backs Africa’s strongest military as Egypt and Ethiopia face off over Africa’s longest river after U.S. talks collapsed - Business Insider Africa",
@@ -162,12 +168,6 @@
           "url": "https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR7lElhcTo9vfNPYjBH0HiBn3CaDqubJg7B0qe7tK0EL9130n2fKYvFLRfx1I2-7xLa-UOXYyBkpmjWz4HQFG4L43Q6g5BjiVPiukAkZqBSDMG3_kt4ptrobSCdXKyzUmtvl6lXdKtFQBfsIC9qOOJzofTlLaGkdfVjhLT4wFaue5W8MND_MlC8ZQ1kdQrT9-HXimogI753xxeWPXThnsPtutnHPtorvUnC75xM9AxdRr7KsMqDXp9HweIs?fife=s16383",
           "source": "Cartel Intelligence Map",
           "time": ""
-        },
-        {
-          "title": "\"Protected Witness\" Operates from California: Directs Fentanyl Trafficking and Extortion in Sonora\n \n💥💥SAN YSIDRO, CALIFORNIA, USA \n\nSajid Emilio Quin",
-          "url": "https://x.com/ContactoRevist/status/2036479635618160777",
-          "source": "Cartel Intelligence Map",
-          "time": ""
         }
       ],
       "sourceBacked": true
@@ -180,17 +180,17 @@
         "diplomatic": 100,
         "economic": 100,
         "technology": 100,
-        "military": 50,
-        "political": 38,
-        "security": 34,
-        "energy": 27,
+        "military": 53,
+        "political": 37,
+        "security": 36,
+        "energy": 29,
         "maritime": 21
       },
       "dominantTarget": "Iran",
       "topTargets": [
         {
           "target": "Iran",
-          "mentions": 26
+          "mentions": 28
         },
         {
           "target": "Oil",
@@ -206,23 +206,17 @@
         },
         {
           "target": "Pakistan",
-          "mentions": 6
+          "mentions": 7
         }
       ],
-      "actionCount": 470,
-      "actionEvidenceCount": 470,
+      "actionCount": 476,
+      "actionEvidenceCount": 476,
       "categoryCount": 100,
-      "targetCount": 26,
-      "evidenceCount": 84,
+      "targetCount": 28,
+      "evidenceCount": 81,
       "lastEvidenceTime": "Sat, 26 Sep 2026 19:59:32 GMT",
       "intensity": 100,
       "evidence": [
-        {
-          "title": "Real winner of Xi summit revealed as Trump looks to usher in new era with China",
-          "url": "https://www.foxnews.com/politics/real-winner-xi-summit-revealed-trump-looks-usher-new-era-china",
-          "source": "https://www.foxnews.com/politics/real-winner-xi-summit-revealed-trump-looks-usher-new-era-china",
-          "time": "2026-09-29T11:00:47Z"
-        },
         {
           "title": "US, China slash tariffs on basic goods – but leave rare earths off the record - South China Morning Post",
           "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQTkxUMGphZ2ZwYnpUbzUxUUd2c3dER01QeDZNZHFmQlEzQmJSMllMX0FvYmpkSnp0YWhOYlhhM1BHNWM3bjZ1RllpNmNoOFd5UXdIRWRKc2lXVWQzWXp1Vi1wc2ZjV2cxa2dHS25NMDh2UTF0VU9BUFBRU2QtRUlVako1cE1sY1FHYXZrSkhkcnYtQVJYc2NVMC1CZlUtWFVPdzdtaU1zRW1Nend3dWs3V29QblBqcWlZOFc1dlVyT3BDNTBoZlRmUHpKVk7SAcwBQVVfeXFMUE5ib3FJaFRzM1JnR3l4eG9UM0FUcVlPNy1WSHI3S1FJVm5xYTdVR0V1S3AzLWpxQzVZZE1MQjZtSjdITU5ESU1KQTZacnNweEptdDl5TGJJTVpJSEIwcUUzckdmSVpIVTNjb3hjanJUMlQzbnpQTWs5b0xVYUl3NjlnS2l5bm1nT2lUQzd3WnNmd0wzRXFiU0J4cVZGcko4dnltVXpfYkpwWXcyMW9fVmNKWTRrTjZIRjZvSFo4WjdlWDlXM19zek05aGJh?oc=5",
@@ -230,34 +224,34 @@
           "time": "Mon, 28 Sep 2026 07:00:36 GMT"
         },
         {
-          "title": "North Korea has recently completed two road bridges easing transport to strategic allies Russia and China",
-          "url": "https://www.dw.com/en/north-korea-has-recently-completed-two-road-bridges-easing-transport-to-strategic-allies-russia-and-china/a-79473981?maca=en-rss-en-world-4025-xml-mrss",
-          "source": "DW World",
-          "time": "2026-09-29T13:35:00Z"
+          "title": "China & Taiwan Update, September 29, 2026 - American Enterprise Institute - AEI",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE96N3ExQl9aRVNkN1JqQlN3OFZ5a0FzaXh0X3NSeldYa0Y3YlZrYTNtcGNKTDNNcnhsb2pGQ3VpemhRWHJndU14QXhFOTZqNE9XVWhEc3d0d1Q4Zm50TXhvZ1ptWWlIWkgyZXdHRlhQYnh3QTcyVWFSNA?oc=5",
+          "source": "Google News — China Security / PLA",
+          "time": "2026-09-29T21:04:46Z"
         },
         {
           "title": "China strengthens position for Taiwan conflict with mobilization law - Nikkei Asia",
           "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOUmttd1pLV0VNc1NqVEZoSExqRUROd1poU1BsTjVEdWxJdk9DcG1jU0hKRzF0S3FHQWJtTXk3cjI0YzRTR2JlbDVIN1Y4aFZvU0JHN2N3OWRNMEVXMXZpZEl5Um9Kc2dIdW1waG1wamlTYjJEZHJjaHhVMTZuNFdWdFNfVU16aDQ2QUVSWVRxTUV1V0xaM3gxa21TVFZkUzRXblJPM1hPbTVMa1NMcWc?oc=5",
-          "source": "Google News — China Security / PLA",
+          "source": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOUmttd1pLV0VNc1NqVEZoSExqRUROd1poU1BsTjVEdWxJdk9DcG1jU0hKRzF0S3FHQWJtTXk3cjI0YzRTR2JlbDVIN1Y4aFZvU0JHN2N3OWRNMEVXMXZpZEl5Um9Kc2dIdW1waG1wamlTYjJEZHJjaHhVMTZuNFdWdFNfVU16aDQ2QUVSWVRxTUV1V0xaM3gxa21TVFZkUzRXblJPM1hPbTVMa1NMcWc?oc=5",
           "time": "2026-09-29T18:06:00Z"
         },
         {
           "title": "China Maritime Report #58—“Tightening the Institutional Cage: The PLA Navy’s Discipline Inspection Commission” - Andrew Erickson",
           "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOcUJQMWZYWTVZbHBibmprZkkzVEpyQjVDOXZmVk9QdkppOVhmaldKckZYa3g2cEM3OGZkQ1NIYlBpWHpscDljWGxnNXB2YjZmNjJaaTh2NGQ3M3l6cHlENGZVeEl4NVcwWlIyUkZQVG1jbnZyMU1rRTB0bGp1TWxYMjBBamdDTlUzZW03eWJxQW5qU0F2V2tITF92N09RQUNpT0phREdiVzZ2eXpROVA3ZWxhd1FzNWdWbmVDY1A2OTNmQmxVSF9XZW1fVlN5S2ZqWVdvZ0pjM0tUZ0lVTlE?oc=5",
-          "source": "Google News — China Politics / CCP",
+          "source": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOcUJQMWZYWTVZbHBibmprZkkzVEpyQjVDOXZmVk9QdkppOVhmaldKckZYa3g2cEM3OGZkQ1NIYlBpWHpscDljWGxnNXB2YjZmNjJaaTh2NGQ3M3l6cHlENGZVeEl4NVcwWlIyUkZQVG1jbnZyMU1rRTB0bGp1TWxYMjBBamdDTlUzZW03eWJxQW5qU0F2V2tITF92N09RQUNpT0phREdiVzZ2eXpROVA3ZWxhd1FzNWdWbmVDY1A2OTNmQmxVSF9XZW1fVlN5S2ZqWVdvZ0pjM0tUZ0lVTlE?oc=5",
           "time": "2026-09-29T19:00:35Z"
         },
         {
           "title": "China’s ‘10 million tonnes’ US coal bet is about more than energy: What Beijing gets from trade deal | Explained - Livemint",
           "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNNGozQUExME9FWU5RTkh3RnI5eXFaYlVVNWkwNnpFQVI5Z1JveVZHdXRnandfVjlOU2doQW1OYzMzZzhPN243blNlUjdYX19iVDZHVTIxZEl6R3psSlpNdTdCMlotUGpKQmREWHZuSDhwdkM4aWFLNU5SWHBTcGhEci0xQUt5MHVZY3NUY195ZjdFODNSRWl5SUcwZkl0YVlBMmdkUE9FLV9xa1QxeUM0NmR6Qkc3LVJXQktBOHpTWDRaMmZSVU5rLUtNLVJtUVlJbmhqWUs5dEthdzRMNThIaVVjc3ZqTFJH0gHoAUFVX3lxTE00ajNBQTEwT0VZTlFOSHdGcjl5cVpiVVU1aTA2ekVBUjlnUm95Vkd1dGdqd19WOU5TZ2hBbU5jMzNnOE83bjduU2VSN1hfX2JUNkdVMjFkSXpHemxKWk11N0IyWi1QakpCZERYdm5IOHB2QzhpYUs1TlJYcFNwaERyLTFBS3kwdVljc1RjX3lmN0U4M1JFaXlJRzBmSXRhWUEyZ2RQT0UtX3FrVDF5QzQ2ZHpCRzctUldCS0E4elNYNFoyZlJVTmstS00tUm1RWUluaGpZSzl0S2F3NEw1OEhpVWNzdmpMUkc?oc=5",
-          "source": "Google News — China Economy / Trade",
+          "source": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNNGozQUExME9FWU5RTkh3RnI5eXFaYlVVNWkwNnpFQVI5Z1JveVZHdXRnandfVjlOU2doQW1OYzMzZzhPN243blNlUjdYX19iVDZHVTIxZEl6R3psSlpNdTdCMlotUGpKQmREWHZuSDhwdkM4aWFLNU5SWHBTcGhEci0xQUt5MHVZY3NUY195ZjdFODNSRWl5SUcwZkl0YVlBMmdkUE9FLV9xa1QxeUM0NmR6Qkc3LVJXQktBOHpTWDRaMmZSVU5rLUtNLVJtUVlJbmhqWUs5dEthdzRMNThIaVVjc3ZqTFJH0gHoAUFVX3lxTE00ajNBQTEwT0VZTlFOSHdGcjl5cVpiVVU1aTA2ekVBUjlnUm95Vkd1dGdqd19WOU5TZ2hBbU5jMzNnOE83bjduU2VSN1hfX2JUNkdVMjFkSXpHemxKWk11N0IyWi1QakpCZERYdm5IOHB2QzhpYUs1TlJYcFNwaERyLTFBS3kwdVljc1RjX3lmN0U4M1JFaXlJRzBmSXRhWUEyZ2RQT0UtX3FrVDF5QzQ2ZHpCRzctUldCS0E4elNYNFoyZlJVTmstS00tUm1RWUluaGpZSzl0S2F3NEw1OEhpVWNzdmpMUkc?oc=5",
           "time": "2026-09-29T18:21:47Z"
         },
         {
-          "title": "US-China Tariff Cuts: $60bn Trade Deal Targets Toys, Food and Household Goods - The Trumpet Newspaper Nigeria",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNdVgwNndSZjNCT0NqQUduZjZ6MmhrRkdCSi1ha2ItVHdBbk11Sl9FQUpGYnJuWHc2UEVlaGhfQzE1QW5sNlJtR2lpRUU1X2VwZVJZdXNKNFVocFl2NV9NNzhhUXR2UVF1QWVrcjMtZlhQS0dTRlhtdGpOd2NoVDlueGhLREZzOHQ0Z3d2aVZZRmdqcVB5VDlOZERHZVREQQ?oc=5",
-          "source": "https://news.google.com/rss/articles/CBMingFBVV95cUxNdVgwNndSZjNCT0NqQUduZjZ6MmhrRkdCSi1ha2ItVHdBbk11Sl9FQUpGYnJuWHc2UEVlaGhfQzE1QW5sNlJtR2lpRUU1X2VwZVJZdXNKNFVocFl2NV9NNzhhUXR2UVF1QWVrcjMtZlhQS0dTRlhtdGpOd2NoVDlueGhLREZzOHQ0Z3d2aVZZRmdqcVB5VDlOZERHZVREQQ?oc=5",
-          "time": "2026-09-29T14:46:58Z"
+          "title": "South Korea's Chip Exports Hit 48 Per Cent of Total as China Dependency Deepens - briefasia.com",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOc3RrNVFLdmxYMmxZdlhydmlpN0R0enkyRzdMMU1OOU1ZZURDcGhQN0pDVFEtMHZiNWs5VDNUT0l1Z0s4NzhKajV2SGxtOEFWRnVuVDNlZk1xWjNiMm1DcTZrNXpUUENaVnpFdmFYQVlWWk1mQVFzS2tSeXNlMWJRc3REWU9WNl8xOTFYQzNRcw?oc=5",
+          "source": "Google News — China Economy / Trade",
+          "time": "2026-09-29T20:47:46Z"
         },
         {
           "title": "As the China-US AI race reaches Cairo, Egypt faces a strategic decision - Al Jazeera",
@@ -334,8 +328,14 @@
         {
           "title": "US sanctions 10 entities for allegedly supporting Iran’s military",
           "url": "https://www.aljazeera.com/news/2026/9/29/us-sanctions-10-entities-for-allegedly-supporting-irans-military?traffic_source=rss",
-          "source": "Al Jazeera",
+          "source": "https://www.aljazeera.com/news/2026/9/29/us-sanctions-10-entities-for-allegedly-supporting-irans-military?traffic_source=rss",
           "time": "2026-09-29T20:48:34Z"
+        },
+        {
+          "title": "China’s ‘10 million tonnes’ US coal bet is about more than energy: What Beijing gets from trade deal | Explained - Livemint",
+          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxORW9CQmNiYVN3c09JZ2NFd1RPMmJPeTZ2VmxlZkcxVlhRR3ZMdDRraVJmdGlfOHNtaWRvakxsR3FIeFVVOFFINkxuTHVldGtYak84VDU1LUpSQk9ibUh1U1NkbVd1cUZVU09hUUxNazZpa0JRTXpaTFJrbTZQSUV1T1d3UnRjVjdTUlRBeEpLMXJGVjJ6N0g5MjhfSXhBVmN1UFRRWHVZSlUxNWc3emxRajdYWUd2bzJ5REI1ZUwzLTR1WnhDUFgyY3FDY3V1N3VrSzRzSFlJbXBXVkw2alNNd0Vaa9IB6AFBVV95cUxNNGozQUExME9FWU5RTkh3RnI5eXFaYlVVNWkwNnpFQVI5Z1JveVZHdXRnandfVjlOU2doQW1OYzMzZzhPN243blNlUjdYX19iVDZHVTIxZEl6R3psSlpNdTdCMlotUGpKQmREWHZuSDhwdkM4aWFLNU5SWHBTcGhEci0xQUt5MHVZY3NUY195ZjdFODNSRWl5SUcwZkl0YVlBMmdkUE9FLV9xa1QxeUM0NmR6Qkc3LVJXQktBOHpTWDRaMmZSVU5rLUtNLVJtUVlJbmhqWUs5dEthdzRMNThIaVVjc3ZqTFJH?oc=5",
+          "source": "Google News — China Economy / Trade",
+          "time": "2026-09-29T18:21:47Z"
         }
       ],
       "sourceBacked": true
@@ -353,45 +353,33 @@
       "actionEvidenceCount": 0,
       "categoryCount": 1,
       "targetCount": 0,
-      "evidenceCount": 93,
+      "evidenceCount": 95,
       "lastEvidenceTime": "Thu, 03 Sep 2026 07:02:12 GMT",
       "intensity": 35,
       "evidence": [
         {
-          "title": "Estonia blames Russia for arson attack on drone maker supplying Ukraine",
-          "url": "https://www.theguardian.com/world/2026/sep/29/estonia-blames-russia-arson-attack-drone-maker-ukraine",
-          "source": "Guardian World",
-          "time": "2026-09-29T14:20:39Z"
-        },
-        {
-          "title": "North Korea has recently completed two road bridges easing transport to strategic allies Russia and China",
-          "url": "https://www.dw.com/en/north-korea-has-recently-completed-two-road-bridges-easing-transport-to-strategic-allies-russia-and-china/a-79473981?maca=en-rss-en-world-4025-xml-mrss",
-          "source": "DW World",
-          "time": "2026-09-29T13:35:00Z"
-        },
-        {
-          "title": "Why has Putin added 15,000 new soldiers to Russia’s army?",
-          "url": "https://www.aljazeera.com/news/2026/9/29/why-has-putin-added-15000-new-soldiers-to-russias-army?traffic_source=rss",
-          "source": "Al Jazeera",
-          "time": "2026-09-29T14:46:53Z"
+          "title": "Russia’s ballistic missile and jet-propelled drone blitz keeps Kyiv on edge - Ham & High",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPVFp2R1c2SWF4SUpjS0NFX09yUF9QVXBUMkwyZURZMThORHJQTlpNR1JxSkh6V2pIYjFtazlnRmsyeGVXYVpmT0Qxd3RKRFA4dWFXYVlWcjhObURYVXZKakhfMzhXVjVrYm1wcFFqSkFMRndSN09JSWtLdjNPLUpKSXNkVGk4bjRHcExUSlhvZk5JYXpjTkd1Z2RyTms5Mjh0bGdYd3laQjdPSHhUWWQ5WWYtNWViYXVG?oc=5",
+          "source": "Google News — Ukraine War",
+          "time": "2026-09-29T17:12:16Z"
         },
         {
           "title": "Russia’s ballistic missile and jet-propelled drone blitz keeps Kyiv on edge - Times & Star",
           "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPdkRwUkVWYTNzbVk1WWx2eGlsZlNURVE3cHR0d3Y4UTF3ZUs1YzVSU1NKSnJnWTEzQk5mWjg2TEZsY2RKWU16MmpId2s0NHdDWXhyd0tSVVQ4QVByYzZ0aWE2RWNaN2FYanRVWHJfSlNUTGVlUks2V3k4OHNVanpBZXhnSllMX1V0ZWdqS2V2X2JpcFVCeS1nQ2hGU3lxOGdNdFZTQjV0eFRhdUo5YlN2M2xtRXBrZWlLbjRZeXFudw?oc=5",
-          "source": "Google News — Ukraine War",
+          "source": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPdkRwUkVWYTNzbVk1WWx2eGlsZlNURVE3cHR0d3Y4UTF3ZUs1YzVSU1NKSnJnWTEzQk5mWjg2TEZsY2RKWU16MmpId2s0NHdDWXhyd0tSVVQ4QVByYzZ0aWE2RWNaN2FYanRVWHJfSlNUTGVlUks2V3k4OHNVanpBZXhnSllMX1V0ZWdqS2V2X2JpcFVCeS1nQ2hGU3lxOGdNdFZTQjV0eFRhdUo5YlN2M2xtRXBrZWlLbjRZeXFudw?oc=5",
+          "time": "2026-09-29T17:12:16Z"
+        },
+        {
+          "title": "Russia’s ballistic missile and jet-propelled drone blitz keeps Kyiv on edge - Milford Mercury",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPdnhUT2RiVTZGOHdndHJZYXNSeWp0VHRSMDMxSHE1RFFvV21tRUkzb29lMHBSZEpCM09qYVRucHBtTkN2czlsR1hWaWF0c1YwZzFXb2l5d2R6WFY0TWpqT0NkZlMwWjNpMVVfV0Y2cDFpVzIyTlo5WnFCY3UwMXpRVl9TelppQmljcGpiU0pyV1dpVEFvemkwV2NkeUhLa3BTSlhFWjZSOXpZWUNZck84c3U0cGtITVFNOUdwSUI5cEhNQQ?oc=5",
+          "source": "Google News — Iran Israel",
           "time": "2026-09-29T17:12:16Z"
         },
         {
           "title": "Russia's ballistic missile, jet-propelled drone blitz keeps Kyiv on edge - The Hindu",
           "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOV0NEcnVDLXJIejdsSy1WMEZLRWtkV0JHeUQwYjlHaVpBdGVuVUJwXzdGdHVxRm9WUThYaUpoWXhwcG1qaVplVWxGNnU4dEFCdEJHVHdqWVV0N0Z0U0daQjQwMjJyekg0aEtJOFM0N2JlbDhEbG1FWnBRcUdvXzVFT0w3M0pYWlRtSW0taHNFWTc3cHlWQ3UycWhOeXl6NGtweHhYYVM5WlgybW5JSURkV1h2OVAxX2hhTGlRcks4c1lEd0tYYUkxTWZZc29PcVYzTEhGd0Fn0gHWAUFVX3lxTE5XQ0RydUMtckh6N2xLLVYwRktFa2RXQkd5RDBiOUdpWkF0ZW5VQnBfN0Z0dXFGb1ZROFhpSmhZeHBwbWppWmVVbEY2dTh0QUJ0QkdUd2pZVXQ3RnRTR1pCNDAyMnJ6SDRoS0k4UzQ3YmVsOERsbUVacFFxR29fNUVPTDczSlhaVG1JbS1oc0VZNzdweVZDdTJxaE55eXo0a3B4eFhhUzlaWDJtbklJRGRXWHY5UDFfaGFMaVFySzhzWUR3S1hhSTFNZllzb09xVjNMSEZ3QWc?oc=5",
-          "source": "Google News — Ukraine War",
+          "source": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOV0NEcnVDLXJIejdsSy1WMEZLRWtkV0JHeUQwYjlHaVpBdGVuVUJwXzdGdHVxRm9WUThYaUpoWXhwcG1qaVplVWxGNnU4dEFCdEJHVHdqWVV0N0Z0U0daQjQwMjJyekg0aEtJOFM0N2JlbDhEbG1FWnBRcUdvXzVFT0w3M0pYWlRtSW0taHNFWTc3cHlWQ3UycWhOeXl6NGtweHhYYVM5WlgybW5JSURkV1h2OVAxX2hhTGlRcks4c1lEd0tYYUkxTWZZc29PcVYzTEhGd0Fn0gHWAUFVX3lxTE5XQ0RydUMtckh6N2xLLVYwRktFa2RXQkd5RDBiOUdpWkF0ZW5VQnBfN0Z0dXFGb1ZROFhpSmhZeHBwbWppWmVVbEY2dTh0QUJ0QkdUd2pZVXQ3RnRTR1pCNDAyMnJ6SDRoS0k4UzQ3YmVsOERsbUVacFFxR29fNUVPTDczSlhaVG1JbS1oc0VZNzdweVZDdTJxaE55eXo0a3B4eFhhUzlaWDJtbklJRGRXWHY5UDFfaGFMaVFySzhzWUR3S1hhSTFNZllzb09xVjNMSEZ3QWc?oc=5",
           "time": "2026-09-29T15:24:58Z"
-        },
-        {
-          "title": "Scientists flee burning building in Kyiv’s mini-9/11, as Russian drone also explodes 200m from EU embassy (Ukraine Battlefield update, Day 1,678) - euobserver.com",
-          "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQck1MaUY2MjJKWTZ2TDFnUmVQWlREdERhYmhfcWp0M2N0SWdxYVpkYVpSeVNUX0tTaWFKN3FBYmIzWUotY2xyVkNPa3llTVRGQXhRalIzQzhwSG5sVEJ0YjluMFlxOFVINzBISDJCUTMwb2hSaVJCVHc3MEhOUEctbmxOLUk3azNmeFRRWldXX1JoTy05akk0NzRaTXY0VDNLemRieWt5bklnUGQ0OVB0T2ZyVGg5X1ByTzUwdmxYUUlGSzJnVURGUDV0ZE5YODhNNWE3R3pRZ0p4T053T2pxUU5RWUpBd2pWV3VuTlU3czlweVhlQVdCVWprb1ozR2c?oc=5",
-          "source": "Google News — Ukraine War",
-          "time": "2026-09-29T13:48:09Z"
         },
         {
           "title": "M5.5 earthquake — 156 km E of Kuril’sk, Russia",
@@ -476,16 +464,28 @@
           "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNaG9xTUNSTHA0YUJocFpHYXQzT29vT0VUZWhrWk1fR2RmVHU4RnRJSzREaGo1eEd5dWtWWmE0NVdMTjZQTlhNRGFNdWcxV1FBVTQwclVqU0JrLUtxSFlUSTA3aFhBUUhDWTJyZ1l0SVlOQlR1bi1TWTQ0bkNYQ0ZSMXFaYzQtVy1DN19ZUm9FSDh1dllROXhGSE03RjFINDdFOFFDRlV6aDd6ZEFGNkRpV3pBRlY4MFY1d1UtVw?oc=5",
           "source": "Google News RSS",
           "time": ""
+        },
+        {
+          "title": "First airline cancels flights to Moscow amid Ukrainian threat to 'close' Russia's skies - The Kyiv Independent",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOdXhTVFdRSlU4MFhYOGltdkVtejlZWTlJLXBod3RnaHE2RU82d0NqZlhQN0tIZjloOG9LVHhzMGlhSWxpZ29MX2VIbVNmOGVONmI5ZkxaVGNyQ1c0aURrYXphSDViQnRVa0E5a3ZWX25PdkFBb3pQb2s2NjJ4VUV6UlExOFJIUHlBcEFZRFNEOHRxc2g1QnpTUEJ0NTZ1LXptNHNiS1Z5ZWlidmZaRktfQTQ2WQ?oc=5",
+          "source": "Google News RSS",
+          "time": ""
+        },
+        {
+          "title": "Air Tanzania suspends flights to Russia over safety concerns - Citizen Digital",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPRS1xOUh1QWdHcmxJZWlxS0Fra1NnLWM5VVFwUDN1UFo2VllCTWw0RUlPbXVBTFVRd0ZrSEIzNmZYSmlnc3R4TFVqM2JCOFUxWF9VelRNMC16dGlDUFRhREwwWGJPakxzTEI0QkRKay1Wdl85MElUNjdFVHEyZC05bi13UVBQY1VXZmgwQ2tsOVcwLVctMl9hUXFNcDJVTUJIQ1E?oc=5",
+          "source": "Google News RSS",
+          "time": ""
         }
       ],
       "sourceBacked": true
     },
     {
-      "actor": "Markets",
-      "signal": "Markets has source-backed intelligence activity",
-      "category": "economic",
+      "actor": "Iran",
+      "signal": "Iran has source-backed intelligence activity",
+      "category": "military",
       "categories": {
-        "economic": 1
+        "military": 1
       },
       "dominantTarget": "",
       "topTargets": [],
@@ -494,149 +494,21 @@
       "categoryCount": 1,
       "targetCount": 0,
       "evidenceCount": 87,
-      "lastEvidenceTime": "Wed, 11 Mar 2026 07:00:00 GMT",
-      "intensity": 35,
-      "evidence": [
-        {
-          "title": "21 killed in South Sudan clashes - The Financial Express",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNTTdDcW1UQVpXbktkUGZoN0Y2VEt0cUVBY0M3WWFBN0FRSkc1OFA5TTA1OFY5RkZoRy01ZnZQUGo4U2V5UTNIbll4Tk9jRFZwMzZDYzFGbU9yWUVPdnlSVEZIS3NRQ3FheUVzNGpsSm0wTWFxMDlIZTdYYktzLXR5NDNzcXN1STA?oc=5",
-          "source": "Google News RSS",
-          "time": ""
-        },
-        {
-          "title": "World Bank removes Zimbabwe from fragile economies list - APAnews - Agence de Presse Africaine",
-          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNTmtSU0FnMGs1bV84dExVR0FRbnIwNDBRLXM2ZEhkMnpqTHl0X0RrOG9Ea3ZucTBNellEZ2dQcDBpU3o3NzBxd3BmRnVaMVNNYk5aaFdZMmR2U0xTRVBkZnB3TXh4N3JlUzZ5dUhVVTlHMWRueHUxY1hhWW41Yy1odmln?oc=5",
-          "source": "Google News RSS",
-          "time": ""
-        },
-        {
-          "title": "Jailed banker Vorcaro’s web of powerful contacts puts Brazil’s top court in spotlight - Malay Mail",
-          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQT3JOZEVOWTB5Z1pOQTNhd0l0dW5NLUVwQUxsZFc0aEpaSl9OZDlGc0htYVJ5QkhiQ0FNMXIwZDdEOUxfTHFRTE1kWV9OcXFKdUwxUk5Hc1BpcWdfYlNMSkNPQWVVbnNkS0tSZDBaMXJ1QkpWbE41Mkt5QjU0am56UkJNRkgzd2pETk10QVVZNU5DcW5Tbkl5T0d6eHlyRjc2dGoyNGx4b1UxZG8wa1ZjYTZrRThHcHlVSVRqS0t0QW9EZDYwY1A3NGtzLWgtckpTWWV1c2wzZFVTd9IB2gFBVV95cUxQT3JOZEVOWTB5Z1pOQTNhd0l0dW5NLUVwQUxsZFc0aEpaSl9OZDlGc0htYVJ5QkhiQ0FNMXIwZDdEOUxfTHFRTE1kWV9OcXFKdUwxUk5Hc1BpcWdfYlNMSkNPQWVVbnNkS0tSZDBaMXJ1QkpWbE41Mkt5QjU0am56UkJNRkgzd2pETk10QVVZNU5DcW5Tbkl5T0d6eHlyRjc2dGoyNGx4b1UxZG8wa1ZjYTZrRThHcHlVSVRqS0t0QW9EZDYwY1A3NGtzLWgtckpTWWV1c2wzZFVTdw?oc=5",
-          "source": "Google News RSS",
-          "time": ""
-        },
-        {
-          "title": "Boosting Bhutan-Bangladesh business ties - The Financial Express",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPdXMxamtwNExacHVjeEloVVFhc0JvTTZHcW4zNVBqYzA4ZFJEZ0g5QXdMZEwtVXdrM2RpcW9TdVpFanJ6R1NPQVRsM3N1bDBtUU8xYkhCMUFnSUlhYmlDWU44akhsdEd4enJOTWtmSUU3VjAwTzlUbmlzSXNjd19UejRfMGctRmxTQkdQcjFzbVU4MlJ4aERv?oc=5",
-          "source": "Google News RSS",
-          "time": ""
-        },
-        {
-          "title": "Patriot stockpiles beyond critical",
-          "url": "https://x.com/Maks_NAFO_FELLA/status/2093011920446009787?s=20",
-          "source": "Global War News Map",
-          "time": ""
-        },
-        {
-          "title": "09/04/2026 | Cancún, Quintana Roo, Mexico\n\nMore Than $1.7 Million Pesos in Foreign Currency Seized at Cancún Airport\n\nAs part of inspection and survei",
-          "url": "https://x.com/EJTO_FAM_GN/status/2096063189720924648",
-          "source": "Cartel Intelligence Map",
-          "time": ""
-        },
-        {
-          "title": "This is reportedly the face of Javier “Gringo/Güero,” described as the principal financial operator for René 00 in Sinaloa and Baja California Sur.\n\nA",
-          "url": "https://x.com/blogdelosguachs/status/2066657915537391876",
-          "source": "Cartel Intelligence Map",
-          "time": ""
-        },
-        {
-          "title": "Cártel Independiente de Sonora / Gente Nueva / Los Salazares / Los Cazadores / Los Paredes / Gente Nueva Salazar",
-          "url": "https://x.com/HEARST_BB/status/1932857074385367482",
-          "source": "Cartel Intelligence Map",
-          "time": ""
-        },
-        {
-          "title": "Memphis, TN",
-          "url": "https://www.cnn.com/2024/03/03/us/memphis-gangs-ceasefire-paul-young/index.html",
-          "source": "Cartel Intelligence Map",
-          "time": ""
-        },
-        {
-          "title": "Atlanta, GA",
-          "url": "https://www.fox5atlanta.com/news/u-s-attorney-links-atlanta-overdoses-mexican-cartel-operations",
-          "source": "Cartel Intelligence Map",
-          "time": ""
-        },
-        {
-          "title": "New York City, NY",
-          "url": "https://www.google.com/maps/d/viewer?mid=1fssgCzO1J6TnXS2SqlbutbaxbPQFo3I",
-          "source": "Cartel Intelligence Map",
-          "time": ""
-        },
-        {
-          "title": "Australia news live: Home Affairs orders ‘rapid’ stocktake of government cyber-systems after OpenAI hack",
-          "url": "https://www.theguardian.com/australia-news/live/2026/sep/30/labor-anthony-albanese-coalition-polling-new-greens-leader-openai-hack-ntwnfb",
-          "source": "Guardian World",
-          "time": "2026-09-29T21:12:02Z"
-        },
-        {
-          "title": "Jerusalem Daily: Israeli worshippers attack Palestinian man",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/29/aje-onl-nf_j_daily_israeli-worshippers-attack-palestinian-man-290926?traffic_source=rss",
-          "source": "Al Jazeera",
-          "time": "2026-09-29T18:51:30Z"
-        },
-        {
-          "title": "U.S. stocks slip on Wall Street as rising Treasury yields pressure the market - BNN Bloomberg",
-          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPdHdiTVBKZVh3dGN0X1NpWUVHZmQzR1dUNUc2ejlSdHhaUWx1cGtQWHJpejNROFhncThSTDgyaWU0OVRqRjV3OWV5b1RIU0psY0RrdmpXSXRjMjY4MndpSkw4YzZCQUdPZWNMZWY4dks3RmFXRDhUMDJJd1daR1dLUXFiZ2VMUXB4V0dPZW92cWFWQU1WSWJJbE5zRUEtU3VodDA0VU1YZDdTMW1hd2RSUUhQdi1NaHZpYlhZ?oc=5",
-          "source": "Google News — Global Economics",
-          "time": "2026-09-29T18:00:58Z"
-        },
-        {
-          "title": "Globalisation in Asia: benefits & challenges - The Financial Express",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOZlB3b3pWWmRXMEdwWXRzTDQxcko1RTVIMFdjYllTeHVjX1QtUVhGR3RjS3ZZNE5BYnJvajNBNHk4aW1UcmJmTkZhVU5BUU50cFJjUHZUUC1zMEtPUGZsSGlIVGJSUlpUcHJDVUVfNVlwU05MOWZNMGVBeXNvLUpxWEhNMkJUSVMwRWc?oc=5",
-          "source": "Google News — China Economy / Trade",
-          "time": "2026-09-29T17:32:25Z"
-        },
-        {
-          "title": "Soros nephew divulges how family's power helped bankroll El-Sayed's education during secretive fundraiser",
-          "url": "https://www.foxnews.com/politics/soros-nephew-divulges-how-familys-power-helped-bankroll-el-sayeds-education-during-secretive-fundraiser",
-          "source": "Fox News Politics",
-          "time": "2026-09-29T17:21:13Z"
-        },
-        {
-          "title": "US 30-year Treasury yield tops 5.6%, reaching highest level since 2002 - The Economic Times",
-          "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPOE1wbGE4cDkzTGRBVDRnRUVWSmFBMTFjc3BVQWRWS0luNlZGekVXMjNRRWFQWnQtR2JtMWJsVXJ5ZXVNNDhTSmwtUlQ1VnpiTS01RnpKUm9iNzJ5dlkxcG5GVWRGa3YydEM3Qy1JdFJiX0dZVE5sY1pRTnZQZVJlemlWT3l3MnlFUG12TjlOTjVrNnpFNF9FYzdaMndoYWFWTm9iNU1oUkhqQzhoMWV0ZXh5eERtOUJLM2dYSEFleXBFQlJlQl9RTzE2TENOSlR4U3ZYNlB3alN1S01lNmFRdW9lZ3BSYjVWOXFQUEJJNNIB9AFBVV95cUxOR1p3NG9ZV0VTV1NwWm1aTXBJOFpNNHEydERWcEJUS01MczhlMEtvcEk0QjdxQ0xqVTBWTU1Rb1NaLTJJTlB2YXpvTHZ6QkhIWmdYQWdkaWllbHdQZGxvMW5GOHg0UEtybWdxMDRMTTRtejZ2V2U2eWQxUmxIMkM3TUhjbXRIa1pndmdsOWZyVTNaZ1IycDdQZTFtd3dQZlNNSVk5V1NUZl9rbVdPZ3ktZEcyNlNSakgtRmZmSHJ0QlRlOXZJWV9OWlBjQm1uaDB3RlNmQUV4R3hmOWY5WHNicFMwSFpYUFlfUHVZZzVFOG1OTXJO?oc=5",
-          "source": "Google News — Global Economics",
-          "time": "2026-09-29T16:44:38Z"
-        },
-        {
-          "title": "Man City guilty of all serious financial breach charges: Premier League",
-          "url": "https://www.aljazeera.com/sports/2026/9/29/man-city-guilty-of-all-serious-financial-breach-charges-premier-league?traffic_source=rss",
-          "source": "https://www.aljazeera.com/sports/2026/9/29/man-city-guilty-of-all-serious-financial-breach-charges-premier-league?traffic_source=rss",
-          "time": "2026-09-29T16:30:50Z"
-        },
-        {
-          "title": "South West Water fined £8m for hundreds of sewage spills in Cornwall and Devon",
-          "url": "https://www.theguardian.com/environment/2026/sep/29/south-west-water-record-fine-sewage-spills-cornwall-devon",
-          "source": "https://www.theguardian.com/environment/2026/sep/29/south-west-water-record-fine-sewage-spills-cornwall-devon",
-          "time": "2026-09-29T15:19:57Z"
-        },
-        {
-          "title": "Australia orders government technology stocktake after AI hack",
-          "url": "https://www.channelnewsasia.com/world/australia-orders-government-technology-stocktake-after-ai-hack-6418956",
-          "source": "https://www.channelnewsasia.com/world/australia-orders-government-technology-stocktake-after-ai-hack-6418956",
-          "time": "2026-09-29T14:23:00Z"
-        }
-      ],
-      "sourceBacked": true
-    },
-    {
-      "actor": "Iran",
-      "signal": "Iran has source-backed intelligence activity",
-      "category": "energy",
-      "categories": {
-        "energy": 1
-      },
-      "dominantTarget": "",
-      "topTargets": [],
-      "actionCount": 0,
-      "actionEvidenceCount": 0,
-      "categoryCount": 1,
-      "targetCount": 0,
-      "evidenceCount": 84,
       "lastEvidenceTime": "Wed, 03 Jun 2026 07:00:00 GMT",
       "intensity": 35,
       "evidence": [
+        {
+          "title": "Iran tells U.S. public that Trump's war has failed, and other Mideast developments - The Tribune-Democrat",
+          "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNLVEzNDFuaE5CZVpBam1QMmFoUVZrZVNQanJfd0Eyc3lvV0RrdkVWc2pubjVvejZSdTYyZ3B6QjdOcEhNZnpJVV9fSUhDMVhSZXBYMzdYMFNWY0xYejl6dzRnWXZwTVlCQ19MMjFsSkF3N0ZoNDkxTk5hR1JiX250clppbE9paGdvOUZTRlJzeVZ2SWk5aEU5ODJOcWJwaDFMa0hMTFEzUVB6d3hhVEdCZnk2akw3T0xKWURPQnNRX1hTWlhiY3o4X1NINWFncTdjX0QtZ2VvUlVLOU1ta09qN2FjSnJqWG5YLXVPVUl5TXhkb09pODc5dUNCMTBxUkE?oc=5",
+          "source": "Google News — Middle East Security",
+          "time": "2026-09-29T18:20:00Z"
+        },
+        {
+          "title": "Trump administration ‘must be changed’: Iran’s IRGC appeals to US voters",
+          "url": "https://www.aljazeera.com/news/2026/9/29/trump-administration-must-be-changed-irans-irgc-appeals-to-us-voters?traffic_source=rss",
+          "source": "Al Jazeera",
+          "time": "2026-09-29T17:51:11Z"
+        },
         {
           "title": "US sanctions 10 entities for allegedly supporting Iran’s military",
           "url": "https://www.aljazeera.com/news/2026/9/29/us-sanctions-10-entities-for-allegedly-supporting-irans-military?traffic_source=rss",
@@ -644,28 +516,34 @@
           "time": "2026-09-29T20:48:34Z"
         },
         {
-          "title": "Pakistan vows to defend Saudi Arabia against Iran-backed Houthis by ‘whatever means’ - Seattlepi.com",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPUkRIa0lETkJ4aTJIQ3o1YW85TlNOMkFGUGhSSC1ySXpWcTlJMDdYWjJUaVdKWU9ILU4wbWZBN0p2WWJwWVpHNWVWbV9mSFlKOWxLa3hoM0liM1FsZ1M4SXdObW00SzJkenJkOXpuSGt1bktiaDJPX1JfeDNId3NtY1VtMU44UWRaazVpY1dnNktEWmJsY2c?oc=5",
+          "title": "How Seized Stockpiles, Iran and Chinese Parts Built the Houthis' Missile and Drone Arsenal - الحرة",
+          "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE96QlNhekxMZ21HWDFOZERPbjdtTF9pUkpRNDQtQjgtaEZGdFNBa1U4MktsT09sQmJ1VFcyS2hYU0JBQQ?oc=5",
           "source": "Google News — Yemen / Red Sea",
-          "time": "2026-09-29T20:41:26Z"
+          "time": "2026-09-29T21:51:39Z"
         },
         {
-          "title": "Iran threatens new strikes as it awaits US response to Hormuz plan",
-          "url": "https://www.channelnewsasia.com/world/iran-new-strikes-threat-hormuz-us-response-6418906",
-          "source": "https://www.channelnewsasia.com/world/iran-new-strikes-threat-hormuz-us-response-6418906",
-          "time": "2026-09-29T14:22:00Z"
+          "title": "Pakistan vows to defend Saudi Arabia against Iran-backed Houthis by ‘whatever means’ - Jacksonville Journal-Courier",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQdWM4YUdYWGRuUjk3SGt3ZUhETy15c09TbDhpaVRCaFlqd1NoM05YV1lvTUpIc2pNLWJBYTdFODVZRXVGQ3Jic3pMQ19Jb1I0MmZ1b2ZfejVRVTQ0YlVvWWJkV2lHMldSS1NzNmdoSFhtSDZrTHkwY2I2RDJLLWs3NW0wUG5QOElKRDNtd21HeDR3eWVVQ1pMWWd6dVZxa3lLaWx6X2gtUjhZeXV3YlE?oc=5",
+          "source": "Google News — Yemen / Red Sea",
+          "time": "2026-09-29T20:43:18Z"
         },
         {
-          "title": "Mapping seven months of Iran war, from Hormuz to the Red Sea | HT Immersive - Hindustan Times",
-          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNZk50Q3pFUVluRmZ5OVNib0NSbHQycmtVS0FYWG5ibUJxQ2JUb25ORnhaWnBLOVVqSFAzbjlfd1VOemdFSGVKdmJ5WjR4Qlg1RjJEUFFjZnB5U1lOUV83UTFkUko2czZzU2lneVVPeUd0amNSNVZWYldZRkF2X0N2T25XelhqclVyVlZMV3duUzByYkRVakpqbFdERU9PZjRkVElmSlhLMURXSzBmQXo2N2tiaEhlVFgtNmNsUUgtUW14eDhQZlpJVEVHam04ZnVPckhnRDJ1aS1Rdw?oc=5",
-          "source": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNZk50Q3pFUVluRmZ5OVNib0NSbHQycmtVS0FYWG5ibUJxQ2JUb25ORnhaWnBLOVVqSFAzbjlfd1VOemdFSGVKdmJ5WjR4Qlg1RjJEUFFjZnB5U1lOUV83UTFkUko2czZzU2lneVVPeUd0amNSNVZWYldZRkF2X0N2T25XelhqclVyVlZMV3duUzByYkRVakpqbFdERU9PZjRkVElmSlhLMURXSzBmQXo2N2tiaEhlVFgtNmNsUUgtUW14eDhQZlpJVEVHam04ZnVPckhnRDJ1aS1Rdw?oc=5",
-          "time": "2026-09-29T14:51:09Z"
-        },
-        {
-          "title": "How Joe Biden averted a wider war with Iran: Explained in 10 points - The Times of India",
-          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQR1VVOG9vdnh6c2g4UWp6VC1ENzFRUG5XS2lhWTVLUjM1Z1BYb0NWdEFLUW5OVW9iVDJCYTU5NkFfRDUtUXoyWU1Eb191LVRnOEpsNEdncF9zQXUyZ3hsTmloRzQtOHJNa2xFY3ItallqR3R4SUJid1RhOHZRakN2TE5hSGZyeTNhcjhwODRKSFZ6SmZUU2NFRllwZTdOcjJFbm15b0l3MzcyZGNtYzVsSV9LRDZrSUtjb21BSS1HbUtXWG1HZW5HWWdxWG1aUdIB0wFBVV95cUxOT2ZKRnRnVVY3V3VMNV9qTDBndzRzUmZGN3FEVFp2ZDVCS0xoS01iTDFhYV8weTFqM0hOYUMtQjJoVk1vWkxrdk1oNHVXbjRtYWxEQVNyUFFfYjlsbDNIeGxiQk9MbEZTRjQ2bmNxa0JGSGhreGxZVU5Za0EwT3RHdUhLdVNCMktnTWpWYjI0Y2xKNHgtcTQzSzBvRHo5dmE1dnlDaFN6Q3VnRE5LdlRHd1ZHUVJqbzB6SFY1bnRFSUxCYTQ4R3NyRFdjRnpIeE9YcFpr?oc=5",
+          "title": "Iran Targets US-Escorted Ships In Hormuz As America Moves Another Carrier? - timesofindia.indiatimes.com",
+          "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOYUd0ZG1IMzhtMFJJT2FrcHJBSDRISE5kYWN1OG50MGxVVXM2dDFKcHZsWEwyM1diRkdRblBoOWt1N2xjUC1TZnlMem55TFlycGZ0OGI1ZmdaT2JBSi1IdE40ZTBDbnRWS29TWGhzcHNqRlE1bHczMGpTcGRaWXU3TDlzQmhxRjZMNHVGR1NCLUxYQkxsVThRZTVFQ0J3cERLbmpOVThvLTVEZ2NnSTRXTG9VVXJJX0doNDZrQVVndjRCa3I5NFpaYTdsLTRKeXRhUFdRRWhIVGlMQUNwZ0tyTzFRRG1oel9uSVHSAe8BQVVfeXFMT0QtcXM2TGxzcktSaHNlckQ5TFBUUWRmWndBOUVkdXBlUFMwTS1PTnZhYklmYnp1UTVWQTNzLURIOGstU1RwYV96VEkxdVVqTGQ2UUZVdTBUTnd3YXU0WEtVWXZwTVB5VjNTOHpwRk9PZ1pvNkVSYXFFSHUzNTVMY2pDWlNkYl8wSW4wcWRZX3pYeWtJcEZYYlRNWGNkWW03X3J1V0ZXUE5pRmgwdGZVbGR5UDhvSVNyQnhlUmcwVHM4Rk5CS210eF8tNXFCaV9NU2Z4YlptamZZeENaMkVSc1R6QkFObmpucnJhUUwxeDA?oc=5",
           "source": "Google News — Iran Israel",
-          "time": "2026-09-29T16:56:00Z"
+          "time": "2026-09-29T19:44:08Z"
+        },
+        {
+          "title": "Commentary: Forget another big US-Iran deal. They need to start small",
+          "url": "https://www.channelnewsasia.com/commentary/iran-war-us-trump-deal-strait-hormuz-power-6418116",
+          "source": "CNA World",
+          "time": "2026-09-29T22:00:00Z"
+        },
+        {
+          "title": "Iran war live: Trump claims war will end ‘very soon’, gives no details",
+          "url": "https://www.aljazeera.com/news/liveblog/2026/9/30/iran-war-live-trump-claims-war-will-end-very-soon-provides-no-details?traffic_source=rss",
+          "source": "Al Jazeera",
+          "time": "2026-09-30T00:00:00Z"
         },
         {
           "title": "Oil prices set for 8 per cent weekly gain on fresh US-Iran hostilities - The Eastleigh Voice",
@@ -738,23 +616,285 @@
           "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPaXpNVWN6bmN3QmVJS0kzT3FadmFPRzBIbTJLcUF5MzNWUFIxbDFtOEQtTU9STFlaMnhDcFFFU3ZjTC1Qcm02anZYNHBFNmFUb0UtUWNzbTFoQmdoRXJUWVprOUx4c25XVkZEaTlURktDbTVKUzJvQUU1OEpMOWo5bEJfUHBjTnlJSnVaWldlQVBodTFGNDdQblNONUNvUndNRE9MM04zeko0dnZuLVBEUV81dS1Pa2hveWx3UGxrbWlvM1hVNmE1U25obWN3NWZwN1VubzBSN3VLZw?oc=5",
           "source": "Google News RSS",
           "time": ""
+        }
+      ],
+      "sourceBacked": true
+    },
+    {
+      "actor": "Markets",
+      "signal": "Markets has source-backed intelligence activity",
+      "category": "economic",
+      "categories": {
+        "economic": 1
+      },
+      "dominantTarget": "",
+      "topTargets": [],
+      "actionCount": 0,
+      "actionEvidenceCount": 0,
+      "categoryCount": 1,
+      "targetCount": 0,
+      "evidenceCount": 87,
+      "lastEvidenceTime": "Wed, 11 Mar 2026 07:00:00 GMT",
+      "intensity": 35,
+      "evidence": [
+        {
+          "title": "U.S. stocks slip on Wall Street as rising Treasury yields pressure the market - BNN Bloomberg",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPdHdiTVBKZVh3dGN0X1NpWUVHZmQzR1dUNUc2ejlSdHhaUWx1cGtQWHJpejNROFhncThSTDgyaWU0OVRqRjV3OWV5b1RIU0psY0RrdmpXSXRjMjY4MndpSkw4YzZCQUdPZWNMZWY4dks3RmFXRDhUMDJJd1daR1dLUXFiZ2VMUXB4V0dPZW92cWFWQU1WSWJJbE5zRUEtU3VodDA0VU1YZDdTMW1hd2RSUUhQdi1NaHZpYlhZ?oc=5",
+          "source": "Google News — Global Economics",
+          "time": "2026-09-29T18:00:58Z"
         },
         {
-          "title": "The Iran War Has Put Venezuela's Oil Back in the Spotlight - Crude Oil Prices Today | OilPrice.com",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNX3VIWXVfd05vVnFvWmpGZFdYNk9jTUJNNEFaZExweGwzMy12dnNnZUxRdGVUMTJwTEltR3lrWkYteGhkLXR0Z1Bfb09tU0hydVRSZHJSR25fdE5HbmhFT3ItQmFPWThpVmJWdHhVc0R4cFJvSTV3MjdZekY0dDFta2tEUmY1RVRlLVV6Z2hNb3VxYmlJTmM1S2hNb1hLVE5MNTN3dWl2SmdRVEl0OWfSAa4BQVVfeXFMTV91SFl1X3dOb1Zxb1pqRmRXWDZPY01CTTRBWmRMcHhsMzMtdnZzZ2VMUXRlVDEycExJbUd5a1pGLXhoZC10dGdQX29PbVNIcnVUUmRyUkduX3ROR25oRU9yLUJhT1k4aVZiVnR4VXNEeHBSb0k1dzI3WXpGNHQxbWtrRFJmNUVUZS1VemdoTW91cWJpSU5jNUtoTW9YS1ROTDUzd3VpdkpnUVRJdDln?oc=5",
+          "title": "US 30-year Treasury yield tops 5.6%, reaching highest level since 2002 - The Economic Times",
+          "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPOE1wbGE4cDkzTGRBVDRnRUVWSmFBMTFjc3BVQWRWS0luNlZGekVXMjNRRWFQWnQtR2JtMWJsVXJ5ZXVNNDhTSmwtUlQ1VnpiTS01RnpKUm9iNzJ5dlkxcG5GVWRGa3YydEM3Qy1JdFJiX0dZVE5sY1pRTnZQZVJlemlWT3l3MnlFUG12TjlOTjVrNnpFNF9FYzdaMndoYWFWTm9iNU1oUkhqQzhoMWV0ZXh5eERtOUJLM2dYSEFleXBFQlJlQl9RTzE2TENOSlR4U3ZYNlB3alN1S01lNmFRdW9lZ3BSYjVWOXFQUEJJNNIB9AFBVV95cUxOR1p3NG9ZV0VTV1NwWm1aTXBJOFpNNHEydERWcEJUS01MczhlMEtvcEk0QjdxQ0xqVTBWTU1Rb1NaLTJJTlB2YXpvTHZ6QkhIWmdYQWdkaWllbHdQZGxvMW5GOHg0UEtybWdxMDRMTTRtejZ2V2U2eWQxUmxIMkM3TUhjbXRIa1pndmdsOWZyVTNaZ1IycDdQZTFtd3dQZlNNSVk5V1NUZl9rbVdPZ3ktZEcyNlNSakgtRmZmSHJ0QlRlOXZJWV9OWlBjQm1uaDB3RlNmQUV4R3hmOWY5WHNicFMwSFpYUFlfUHVZZzVFOG1OTXJO?oc=5",
+          "source": "Google News — Global Economics",
+          "time": "2026-09-29T16:44:38Z"
+        },
+        {
+          "title": "US Senate blocks resolution demanding accountability over Israeli violence in West Bank",
+          "url": "https://www.theguardian.com/us-news/2026/sep/29/senate-resolution-west-bank-israel-violence",
+          "source": "Guardian World",
+          "time": "2026-09-30T00:16:17Z"
+        },
+        {
+          "title": "How Seized Stockpiles, Iran and Chinese Parts Built the Houthis' Missile and Drone Arsenal - الحرة",
+          "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE96QlNhekxMZ21HWDFOZERPbjdtTF9pUkpRNDQtQjgtaEZGdFNBa1U4MktsT09sQmJ1VFcyS2hYU0JBQQ?oc=5",
+          "source": "Google News — Yemen / Red Sea",
+          "time": "2026-09-29T21:51:39Z"
+        },
+        {
+          "title": "21 killed in South Sudan clashes - The Financial Express",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNTTdDcW1UQVpXbktkUGZoN0Y2VEt0cUVBY0M3WWFBN0FRSkc1OFA5TTA1OFY5RkZoRy01ZnZQUGo4U2V5UTNIbll4Tk9jRFZwMzZDYzFGbU9yWUVPdnlSVEZIS3NRQ3FheUVzNGpsSm0wTWFxMDlIZTdYYktzLXR5NDNzcXN1STA?oc=5",
           "source": "Google News RSS",
           "time": ""
         },
         {
-          "title": "The Latest: Trump turns to a dual economic and military approach in latest attempt to squeeze Iran - WKRG",
-          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNcjdNWU5YV2F0bXhjQjE0SGU3bGtNQWdabGlJY01DY1hBM2xIMU5CVHV2djdBOE1vM1oxbHB2eENCdHdOUDJjcGJCODMyQ3pyLW5mWWJoNTBKZlk5SVpKaGtQTTJhNnl5SFk2eEh2cFJDQnNnMFk5OVlUWmRnYzZNRlZEMVk2QmJrMTlmbWZmcFlrMnpZWUNlNzVTeUprbWcweFpKeG5UOWlxSW5FRkE5M3RtU0ZCNkVBdElPYnRoQVFvRDBUeWFDY3BKMNIBywFBVV95cUxNcjdNWU5YV2F0bXhjQjE0SGU3bGtNQWdabGlJY01DY1hBM2xIMU5CVHV2djdBOE1vM1oxbHB2eENCdHdOUDJjcGJCODMyQ3pyLW5mWWJoNTBKZlk5SVpKaGtQTTJhNnl5SFk2eEh2cFJDQnNnMFk5OVlUWmRnYzZNRlZEMVk2QmJrMTlmbWZmcFlrMnpZWUNlNzVTeUprbWcweFpKeG5UOWlxSW5FRkE5M3RtU0ZCNkVBdElPYnRoQVFvRDBUeWFDY3BKMA?oc=5",
+          "title": "World Bank removes Zimbabwe from fragile economies list - APAnews - Agence de Presse Africaine",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNTmtSU0FnMGs1bV84dExVR0FRbnIwNDBRLXM2ZEhkMnpqTHl0X0RrOG9Ea3ZucTBNellEZ2dQcDBpU3o3NzBxd3BmRnVaMVNNYk5aaFdZMmR2U0xTRVBkZnB3TXh4N3JlUzZ5dUhVVTlHMWRueHUxY1hhWW41Yy1odmln?oc=5",
           "source": "Google News RSS",
           "time": ""
         },
         {
-          "title": "The Latest: Trump turns to a dual economic and military approach in latest attempt to squeeze Iran - RochesterFirst",
-          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNb2c4Y2t3dXQxU1UwaERIMElYUWU1cE1YWUlKR2hXOVdqSDZxa29pQ0FYODNuQVVxQ3RmRzdVZVBkNXVOVXVVT1BQMHJOell3ei1kaGxOaVFmTUxQYmh2bGVRZ1YyZ3VNaEt6S2FyR0F1VVhycVBlYklFbDdueXJacjZHUl8xc0wzMFo3NVEzaDZXMFFwcnkzYUdWOUdKWFdsRkg4eFFMWEsxX0hTRlhaUHVDcnh0ZFlPcHdIRWktOEQ2Yy1YcU1ueGJfT3Q4Und0RWZDeVAxYkjSAdgBQVVfeXFMTW9nOGNrd3V0MVNVMGhESDBJWFFlNXBNWFlJSkdoVzlXakg2cWtvaUNBWDgzbkFVcUN0Zkc3VWVQZDV1TlV1VU9QUDByTnpZd3otZGhsTmlRZk1MUGJodmxlUWdWMmd1TWhLekthckdBdVVYcnFQZWJJRWw3bnlyWnI2R1JfMXNMMzBaNzVRM2g2VzBRcHJ5M2FHVjlHSlhXbEZIOHhRTFhLMV9IU0ZYWlB1Q3J4dGRZT3B3SEVpLThENmMtWHFNbnhiX090OFJ3dEVmQ3lQMWJI?oc=5",
+          "title": "Jailed banker Vorcaro’s web of powerful contacts puts Brazil’s top court in spotlight - Malay Mail",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQT3JOZEVOWTB5Z1pOQTNhd0l0dW5NLUVwQUxsZFc0aEpaSl9OZDlGc0htYVJ5QkhiQ0FNMXIwZDdEOUxfTHFRTE1kWV9OcXFKdUwxUk5Hc1BpcWdfYlNMSkNPQWVVbnNkS0tSZDBaMXJ1QkpWbE41Mkt5QjU0am56UkJNRkgzd2pETk10QVVZNU5DcW5Tbkl5T0d6eHlyRjc2dGoyNGx4b1UxZG8wa1ZjYTZrRThHcHlVSVRqS0t0QW9EZDYwY1A3NGtzLWgtckpTWWV1c2wzZFVTd9IB2gFBVV95cUxQT3JOZEVOWTB5Z1pOQTNhd0l0dW5NLUVwQUxsZFc0aEpaSl9OZDlGc0htYVJ5QkhiQ0FNMXIwZDdEOUxfTHFRTE1kWV9OcXFKdUwxUk5Hc1BpcWdfYlNMSkNPQWVVbnNkS0tSZDBaMXJ1QkpWbE41Mkt5QjU0am56UkJNRkgzd2pETk10QVVZNU5DcW5Tbkl5T0d6eHlyRjc2dGoyNGx4b1UxZG8wa1ZjYTZrRThHcHlVSVRqS0t0QW9EZDYwY1A3NGtzLWgtckpTWWV1c2wzZFVTdw?oc=5",
           "source": "Google News RSS",
+          "time": ""
+        },
+        {
+          "title": "Boosting Bhutan-Bangladesh business ties - The Financial Express",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPdXMxamtwNExacHVjeEloVVFhc0JvTTZHcW4zNVBqYzA4ZFJEZ0g5QXdMZEwtVXdrM2RpcW9TdVpFanJ6R1NPQVRsM3N1bDBtUU8xYkhCMUFnSUlhYmlDWU44akhsdEd4enJOTWtmSUU3VjAwTzlUbmlzSXNjd19UejRfMGctRmxTQkdQcjFzbVU4MlJ4aERv?oc=5",
+          "source": "Google News RSS",
+          "time": ""
+        },
+        {
+          "title": "Patriot stockpiles beyond critical",
+          "url": "https://x.com/Maks_NAFO_FELLA/status/2093011920446009787?s=20",
+          "source": "Global War News Map",
+          "time": ""
+        },
+        {
+          "title": "09/04/2026 | Cancún, Quintana Roo, Mexico\n\nMore Than $1.7 Million Pesos in Foreign Currency Seized at Cancún Airport\n\nAs part of inspection and survei",
+          "url": "https://x.com/EJTO_FAM_GN/status/2096063189720924648",
+          "source": "Cartel Intelligence Map",
+          "time": ""
+        },
+        {
+          "title": "This is reportedly the face of Javier “Gringo/Güero,” described as the principal financial operator for René 00 in Sinaloa and Baja California Sur.\n\nA",
+          "url": "https://x.com/blogdelosguachs/status/2066657915537391876",
+          "source": "Cartel Intelligence Map",
+          "time": ""
+        },
+        {
+          "title": "Cártel Independiente de Sonora / Gente Nueva / Los Salazares / Los Cazadores / Los Paredes / Gente Nueva Salazar",
+          "url": "https://x.com/HEARST_BB/status/1932857074385367482",
+          "source": "Cartel Intelligence Map",
+          "time": ""
+        },
+        {
+          "title": "Memphis, TN",
+          "url": "https://www.cnn.com/2024/03/03/us/memphis-gangs-ceasefire-paul-young/index.html",
+          "source": "Cartel Intelligence Map",
+          "time": ""
+        },
+        {
+          "title": "Atlanta, GA",
+          "url": "https://www.fox5atlanta.com/news/u-s-attorney-links-atlanta-overdoses-mexican-cartel-operations",
+          "source": "Cartel Intelligence Map",
+          "time": ""
+        },
+        {
+          "title": "New York City, NY",
+          "url": "https://www.google.com/maps/d/viewer?mid=1fssgCzO1J6TnXS2SqlbutbaxbPQFo3I",
+          "source": "Cartel Intelligence Map",
+          "time": ""
+        },
+        {
+          "title": "Man City CEO: Premier League verdict based on ‘conspiracy theory’",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/29/man-city-ceo-premier-league-verdict-based-on-conspiracy?traffic_source=rss",
+          "source": "Al Jazeera",
+          "time": "2026-09-29T23:06:07Z"
+        },
+        {
+          "title": "Oil down, but stocks lower as bond yields rise",
+          "url": "https://www.channelnewsasia.com/world/oil-down-stocks-lower-bond-yields-rise-6419856",
+          "source": "CNA World",
+          "time": "2026-09-29T21:47:28Z"
+        },
+        {
+          "title": "Australia news live: Home Affairs orders ‘rapid’ stocktake of government cyber-systems after OpenAI hack",
+          "url": "https://www.theguardian.com/australia-news/live/2026/sep/30/labor-anthony-albanese-coalition-polling-new-greens-leader-openai-hack-ntwnfb",
+          "source": "https://www.theguardian.com/australia-news/live/2026/sep/30/labor-anthony-albanese-coalition-polling-new-greens-leader-openai-hack-ntwnfb",
+          "time": "2026-09-29T21:12:02Z"
+        },
+        {
+          "title": "Jerusalem Daily: Israeli worshippers attack Palestinian man",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/9/29/aje-onl-nf_j_daily_israeli-worshippers-attack-palestinian-man-290926?traffic_source=rss",
+          "source": "https://www.aljazeera.com/video/newsfeed/2026/9/29/aje-onl-nf_j_daily_israeli-worshippers-attack-palestinian-man-290926?traffic_source=rss",
+          "time": "2026-09-29T18:51:30Z"
+        },
+        {
+          "title": "Globalisation in Asia benefits & challenges - The Financial Express",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOVzk0OWZBOEd2TDFZSDdVZDVSSVprZ21DT1dHWnV2anV3ZGhyM3BNbUdnWWpUbDZ0c3dfZU9EWncxQVBOd21mS1dyeXJtcFdoNFViQ1pNcEROc3lwUWNEX0xoUTV4d2tSMWs0V3FJWVZTQzdza0RkSXJzLWhjZE8ycUZGbWJ2YXBRVHR5UmxVU1U3VkkxX3hsLXNHbzNrUHZ1WEpnVXNUTkE4WTjSAbcBQVVfeXFMT2FOMUdnaWFQRmtPdE16dmtmbFhzcFBoc1RKeGpEM2U0Vjl3cUY1VG9CeUNDUEZZTE1mTVdZYjl2QWl5MkR5dW5sb3ZnX0ZkMlU2MGdzSGhpV2pMWjlOTHdaX01mRldjRVpTbFVaMFNNbWwzOG5LSF96MkY5UWRpUDBFX3czc0RDNXA5YW5oV1F3bFNyNjZMcVU4NUxwMkR0cVBTTm1QdzkwN1lrYjJCZHg3dHhHdmhN?oc=5",
+          "source": "Google News — China Economy / Trade",
+          "time": "2026-09-29T18:02:50Z"
+        }
+      ],
+      "sourceBacked": true
+    },
+    {
+      "actor": "Strategic Chokepoints",
+      "signal": "Strategic Chokepoints has source-backed intelligence activity",
+      "category": "military",
+      "categories": {
+        "military": 1
+      },
+      "dominantTarget": "",
+      "topTargets": [],
+      "actionCount": 0,
+      "actionEvidenceCount": 0,
+      "categoryCount": 1,
+      "targetCount": 0,
+      "evidenceCount": 83,
+      "lastEvidenceTime": "Fri, 03 Apr 2026 07:00:00 GMT",
+      "intensity": 35,
+      "evidence": [
+        {
+          "title": "Yemen’s Houthis enter West Asia conflict, launch ballistic missiles at Israel - Mid-Day",
+          "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQWGpLcGlGdjZITFZVN0JKRVdWMEIya0ZQVWk3Mm0xaDBUQWNPT3hDd2RpdVNnODFJa3BfYXY2bnpsSnhKRG8tLVg3TVZpV19STmhPZ2Rja3ZBVnBDQ1ZkdTk3eS1ubUhmYjg3a0Z1dGZCRVZzS0hrU3RHUlNDRkRxWW42UC1NZDdEOTF4QnJSbEJTSVNCWmlJczBROERJQnI2RlVFSzNHaHI0M1NONm1ZNEplNjlqMFJiSnRESTZ0cXlJazkwN0NCemVhV2N6QlBsNHI1SEw1M2xfSVdUdTgwdGxNWFZNNzA3ZmNIaHhUTm5HS0w3UEpPQWFHVjlYMXR1ZTlSdFhOZE_SAYgCQVVfeXFMUFhqS3BpRnY2SExWVTdCSkVXVjBCMmtGUFVpNzJtMWgwVEFjT094Q3dkaXVTZzgxSWtwX2F2Nm56bEp4SkRvLS1YN01WaVdfUk5oT2dkY2t2QVZwQ0NWZHU5N3ktbm1IZmI4N2tGdXRmQkVWc0tIa1N0R1JTQ0ZEcVluNlAtTWQ3RDkxeEJyUmxCU0lTQlppSXMwUThESUJyNkZVRUszR2hyNDNTTjZtWTRKZTY5ajBSYkp0REk2dHF5SWs5MDdDQnplYVdjekJQbDRyNUhMNTNsX0lXVHU4MHRsTVhWTTcwN2ZjSGh4VE5uR0tMN1BKT0FhR1Y5WDF0dWU5UnRYTmRP?oc=5",
+          "source": "Google News — Yemen / Red Sea",
+          "time": "2026-09-29T20:58:40Z"
+        },
+        {
+          "title": "How Seized Stockpiles, Iran and Chinese Parts Built the Houthis' Missile and Drone Arsenal - الحرة",
+          "url": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE96QlNhekxMZ21HWDFOZERPbjdtTF9pUkpRNDQtQjgtaEZGdFNBa1U4MktsT09sQmJ1VFcyS2hYU0JBQQ?oc=5",
+          "source": "Google News — Yemen / Red Sea",
+          "time": "2026-09-29T21:51:39Z"
+        },
+        {
+          "title": "Saudi Arabia urged to reconcile with UAE to drive back Houthi separatists in Yemen",
+          "url": "https://www.theguardian.com/world/2026/sep/29/saudi-arabia-urged-to-reconcile-with-uae-to-drive-back-houthi-separatists-in-yemen",
+          "source": "https://www.theguardian.com/world/2026/sep/29/saudi-arabia-urged-to-reconcile-with-uae-to-drive-back-houthi-separatists-in-yemen",
+          "time": "2026-09-29T16:52:37Z"
+        },
+        {
+          "title": "Pakistan vows to defend Saudi Arabia against Iran-backed Houthis by ‘whatever means’ - Jacksonville Journal-Courier",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQdWM4YUdYWGRuUjk3SGt3ZUhETy15c09TbDhpaVRCaFlqd1NoM05YV1lvTUpIc2pNLWJBYTdFODVZRXVGQ3Jic3pMQ19Jb1I0MmZ1b2ZfejVRVTQ0YlVvWWJkV2lHMldSS1NzNmdoSFhtSDZrTHkwY2I2RDJLLWs3NW0wUG5QOElKRDNtd21HeDR3eWVVQ1pMWWd6dVZxa3lLaWx6X2gtUjhZeXV3YlE?oc=5",
+          "source": "Google News — Yemen / Red Sea",
+          "time": "2026-09-29T20:43:18Z"
+        },
+        {
+          "title": "Al-Shabaab Seeks Drones from Houthis - Africa Defense Forum",
+          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1HMEJPdENlX2IwUWFxaU5EZGRUbWFzQTZOYjNfSzBqVVdkYjVsQ0MwRlRXejVYWjdLN2JyWXpJMktOdHI5V2d4bi1ILVc5SzB4N2w4d0xsNjNKUXdCRHpKRGN5VU9pVGpMRG1qTkh5MUplZVk5SnJtZS13?oc=5",
+          "source": "Google News — Somalia Security",
+          "time": "2026-09-29T18:36:50Z"
+        },
+        {
+          "title": "Iran Targets US-Escorted Ships In Hormuz As America Moves Another Carrier? - timesofindia.indiatimes.com",
+          "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOYUd0ZG1IMzhtMFJJT2FrcHJBSDRISE5kYWN1OG50MGxVVXM2dDFKcHZsWEwyM1diRkdRblBoOWt1N2xjUC1TZnlMem55TFlycGZ0OGI1ZmdaT2JBSi1IdE40ZTBDbnRWS29TWGhzcHNqRlE1bHczMGpTcGRaWXU3TDlzQmhxRjZMNHVGR1NCLUxYQkxsVThRZTVFQ0J3cERLbmpOVThvLTVEZ2NnSTRXTG9VVXJJX0doNDZrQVVndjRCa3I5NFpaYTdsLTRKeXRhUFdRRWhIVGlMQUNwZ0tyTzFRRG1oel9uSVHSAe8BQVVfeXFMT0QtcXM2TGxzcktSaHNlckQ5TFBUUWRmWndBOUVkdXBlUFMwTS1PTnZhYklmYnp1UTVWQTNzLURIOGstU1RwYV96VEkxdVVqTGQ2UUZVdTBUTnd3YXU0WEtVWXZwTVB5VjNTOHpwRk9PZ1pvNkVSYXFFSHUzNTVMY2pDWlNkYl8wSW4wcWRZX3pYeWtJcEZYYlRNWGNkWW03X3J1V0ZXUE5pRmgwdGZVbGR5UDhvSVNyQnhlUmcwVHM4Rk5CS210eF8tNXFCaV9NU2Z4YlptamZZeENaMkVSc1R6QkFObmpucnJhUUwxeDA?oc=5",
+          "source": "Google News — Iran Israel",
+          "time": "2026-09-29T19:44:08Z"
+        },
+        {
+          "title": "IRGC warns of new weapons ahead of US Hormuz reply - News Ghana",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOaDdNYjRJbzZDR0pVYTAzU1dLNU1vdHB4RXNHQ0VmYkJ4dXliNzhWZVFVcHZQSEdqdXctVGgwWjhNTWE3azZ1ZVNEWUhnRlZDNEZ4WjNFVk0xenpoM3k3RVdPWDVPZldUTjVmbTVvSHVCd2p5Z0hvQnQyalZMakFKZG9R?oc=5",
+          "source": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOaDdNYjRJbzZDR0pVYTAzU1dLNU1vdHB4RXNHQ0VmYkJ4dXliNzhWZVFVcHZQSEdqdXctVGgwWjhNTWE3azZ1ZVNEWUhnRlZDNEZ4WjNFVk0xenpoM3k3RVdPWDVPZldUTjVmbTVvSHVCd2p5Z0hvQnQyalZMakFKZG9R?oc=5",
+          "time": "2026-09-29T16:49:56Z"
+        },
+        {
+          "title": "From the Nile to the Red Sea, can Egypt and Ethiopia ever agree? - The New Arab",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNUnVCMG5kMzZhaDFYZEtSYUlyVlNVaVpsQjR6OGFINm0ySnBnUkpfVEdrZGYxSDZuRWtIT09NY01fbHctZGFOQk45LXM1V3gtX3hzck5LRWdBdEw4RVhRbElkMm1NTUN5OGFTb1hGcE1OUXFyd1RreVJmNzBRbXJTQW9NRHU0d9IBiwFBVV95cUxQS0JRMzgwczRNdEpjTDEzV1dXSHdvYTR4Y1RjRnFyUXlna2RfWldPTlRGUUpKN2VZTVIxTTl4bUlHcXN4ZWthRklZYWtVbHhXV2pBV01lN1ZLNU5qSkhVZlZ0emx5R3lTQlpWc0FXWkxMbkFlX19qTE9IVG9SREVCTE9hUUZrejVETGZr?oc=5",
+          "source": "Google News RSS",
+          "time": ""
+        },
+        {
+          "title": "South Korea mulls ‘contributions’ in Strait of Hormuz - Al Jazeera",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNOGNKSndEUXU1NmZJeVJ5b1B2Tk94VnJkS1F3aGpIbExRRTFmOWlvazk0MzJYY25DNjVCNEpIM2tRd2JhSHcxSTNHVDBLdkJPZHNLcEFyNDcxOUdYMDQwLURJa1M2RWg5UFU2NGdaVVlZaXl1c21LN3FFdzhIVFZNbGlqdG5mb3RYTGpLRktYSk9SVmFxYVHSAZsBQVVfeXFMTk1iMTJFa2pKY2VFZTdUTU4zeDMzTTZ5ck1xRFdsUnIxTnFxRy1hT0xqNEFHcHBITjlPRG1USlhQUklfWmd6aklSZlVHY0U0WjdFSEd3ZWxfTjQycXN4am5QcWRuTDVqYjdpM2wxdnY0TzIwQVZiWFR4MHNUTVQ4dnJsUUxmdVVDcTBpTzBKR1k1bWJrNk1ub3Q1VVE?oc=5",
+          "source": "Google News RSS",
+          "time": ""
+        },
+        {
+          "title": "Iranian Embassy posts satirical video about Hormuz mines - Roya News",
+          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9Ia2dvclRmSXJQcmMwOExXTzZxeDZMLXd5M1cwNkE5dng4Ykp3TnZuMm9vX1IzcjhRNUFtZHBPckN2cjdCZURfWQ?oc=5",
+          "source": "Google News RSS",
+          "time": ""
+        },
+        {
+          "title": "World’s 5th most powerful military set to join US, UK and France in Strait of Hormuz after attacks on Liberia-flagged ships carrying Saudi crude - Business Insider Africa",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNUm5DRl9nUVVFRmVpQTQ2YmF1NTl5ZVhydVlkX0VOZ2ZYcDlMTFM1c1hVSlkyaXR2MXhFVkc2Qm8tYVJXWHRVaFQ3NlFLalQtZXRDOTVVeGZ3UzhXb0w5WEtnaFhEUkROajZ2aW5RZzY0a0ZpdzNhbGxQS2YtNERnN3NvT0RJZ2NiNmF1eEJPWEVYV2tDS2hPckl6N3AydDY0TUFySnROZFJPLXpON0pHM244cno4M1B3bURtZkNNMXVkcnpMS24wR1NWVldFUHRqd2FRTU9B?oc=5",
+          "source": "Google News RSS",
+          "time": ""
+        },
+        {
+          "title": "Egypt’s Strategic Spoiler Role in the Horn of Africa and Red Sea - ENA English",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE0tSjQyaHNiSkt4dEhIOFlTams4cWhJRUFfTlluYXh0QldYLW0xcFZsQkJUdDhXZXRULW9NYWtwUGxteUt6Vk9jS3lSWGFQeGwyVUE?oc=5",
+          "source": "Google News RSS",
+          "time": ""
+        },
+        {
+          "title": "Houthis Threaten to Close Bab el-Mandeb Strait - migflug.com",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPemNiSS0zUnkxSEROUVpRSjVWRVIwSXZOelFNamJiSUktaGdvVVFRNTdmbi1uQThLTjlmRGZfVXc2d3NzZ0FaNGpoTGlGaXJDNDlOcENTa0VVeEswZFFfV0ppRzBPZURmSnZzN0k0b29vSHZwT2lCSWdaZDJNbHlxY3haWWl3Q1pkMEhoOGRfVmFGQzRfUEIwcmpB?oc=5",
+          "source": "Google News RSS",
+          "time": ""
+        },
+        {
+          "title": "South Korea Reviews Troop Dispatch to Hormuz Strait as Japan Hesitates - 조선일보",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQRXRBcDlPYUplWjlvX2E1YzRRX25tMVhnSEFmWFRYbnpRZUo2dGJoUEt4RU0zSTVRYXBwWEd4c0cycWlJdnVjNEJ5NHlDQXQwYXF5RnV1dEJ0enFLQ0RranRrZ1FLOU5XNi11WkhKOWtFVmJoQUZrR3lIUlV6LWFpNXZJdHo?oc=5",
+          "source": "Google News RSS",
+          "time": ""
+        },
+        {
+          "title": "Pakistan Worries About Being Drawn Into US-Iran Conflict After Houthis Attack Saudi Arabia - EnergyNow.com",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOVTJHS2hXV0doNGMtQjkxWnYzNWhNeXF0NGJwQ2U0Vm1FRkFsRk5iTlp3MDlXc0pOdEVaTm1JemNobFRxVVVnanBOM2dMVXh5eWF4SXdqWVFEVzlqTW5VUThoNmdsZDR0bGloRzMwRkkybnVRUkY0blFtRXBSMWFfOFg1bkpFalJaV095Z0FVYWFBWVBfVHlLNmdmcUJGYnZZVDJLejk3NnlFeHlGSEV6TWNfbUJmZ0hpZWQ5cHhB?oc=5",
+          "source": "Google News RSS",
+          "time": ""
+        },
+        {
+          "title": "Iran fires anti-ship missiles",
+          "url": "https://x.com/HormuzLetter/status/2093847720599355732?s=20",
+          "source": "Global War News Map",
+          "time": ""
+        },
+        {
+          "title": "US will support but not lead military operations against the Houthis",
+          "url": "https://x.com/Conflict_Radar/status/2093779745939038591?s=20",
+          "source": "Global War News Map",
+          "time": ""
+        },
+        {
+          "title": "explosions in the Hormuz",
+          "url": "https://x.com/Worldsource24/status/2093406367088271842?s=20",
+          "source": "Global War News Map",
+          "time": ""
+        },
+        {
+          "title": "vessel hit in Hormuz",
+          "url": "https://x.com/visegrad24/status/2094129903666962619?s=20",
+          "source": "Global War News Map",
+          "time": ""
+        },
+        {
+          "title": "2 tankers hit in Hormuz",
+          "url": "https://x.com/DeItaone/status/2094737751912386905?s=20",
+          "source": "Global War News Map",
           "time": ""
         }
       ],
@@ -773,7 +913,7 @@
       "actionEvidenceCount": 0,
       "categoryCount": 1,
       "targetCount": 0,
-      "evidenceCount": 84,
+      "evidenceCount": 82,
       "lastEvidenceTime": "Wed, 17 Dec 2025 08:00:00 GMT",
       "intensity": 35,
       "evidence": [
@@ -892,150 +1032,10 @@
           "time": ""
         },
         {
-          "title": "Saudi Arabia resumes Yanbu oil loading after pipeline restart",
-          "url": "https://www.channelnewsasia.com/world/saudi-arabia-yanbu-oil-pipeline-aramco-resume-6419751",
+          "title": "Oil down, but stocks lower as bond yields rise",
+          "url": "https://www.channelnewsasia.com/world/oil-down-stocks-lower-bond-yields-rise-6419856",
           "source": "CNA World",
-          "time": "2026-09-29T21:09:54Z"
-        }
-      ],
-      "sourceBacked": true
-    },
-    {
-      "actor": "Strategic Chokepoints",
-      "signal": "Strategic Chokepoints has source-backed intelligence activity",
-      "category": "military",
-      "categories": {
-        "military": 1
-      },
-      "dominantTarget": "",
-      "topTargets": [],
-      "actionCount": 0,
-      "actionEvidenceCount": 0,
-      "categoryCount": 1,
-      "targetCount": 0,
-      "evidenceCount": 83,
-      "lastEvidenceTime": "Fri, 03 Apr 2026 07:00:00 GMT",
-      "intensity": 35,
-      "evidence": [
-        {
-          "title": "Are Houthis using new modified cruise missiles in Yemen’s war?",
-          "url": "https://www.aljazeera.com/features/2026/9/29/are-houthis-using-new-modified-cruise-missiles-in-yemens-war?traffic_source=rss",
-          "source": "Al Jazeera",
-          "time": "2026-09-29T13:22:28Z"
-        },
-        {
-          "title": "Saudi Arabia urged to reconcile with UAE to drive back Houthi separatists in Yemen",
-          "url": "https://www.theguardian.com/world/2026/sep/29/saudi-arabia-urged-to-reconcile-with-uae-to-drive-back-houthi-separatists-in-yemen",
-          "source": "Guardian World",
-          "time": "2026-09-29T16:52:37Z"
-        },
-        {
-          "title": "Are Houthis using new modified cruise missiles in Yemen’s war? - Al Jazeera",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOa3h6NTdxaWU0WU1NWE1YTk5GUGtaTWtWOWM5UUFEYi1FenZwUmxablJtUzJjQVphR180WUp0OFJPcnFHb0dRREhWX1VqbU1LQW9xQ0haRzRWVm11MFprNTU3My16Z196d3c0c2dCMlFYZmV0Zy04NTBILVF1Y1ZVVHU1TlZpY1ZyRUdHQzFvdl9rSnV2SnM2R0lWRlhCTWRjWXoxMHcxMmLSAa4BQVVfeXFMT0dCWC1DeUlfclZIX0tYOUlOWWhVZ0w4Vm5nODJUTkJsMmxOSHQ2ZFlXZTR1WWlNUW85NFRGcXM2YzJYemx2ekVuOTFnTjFVUkpid1lLcVFoVTFJMzNMd044MTdELXlkazdrS21fU0pEaXFCXzEwRklMeWMtYkk1ZURxN1FTTnRVX1hjMGtnWmRzWjZnVUhNOGhIRGxmaFBmaDZsMjBTS3cySzJNWW13?oc=5",
-          "source": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOa3h6NTdxaWU0WU1NWE1YTk5GUGtaTWtWOWM5UUFEYi1FenZwUmxablJtUzJjQVphR180WUp0OFJPcnFHb0dRREhWX1VqbU1LQW9xQ0haRzRWVm11MFprNTU3My16Z196d3c0c2dCMlFYZmV0Zy04NTBILVF1Y1ZVVHU1TlZpY1ZyRUdHQzFvdl9rSnV2SnM2R0lWRlhCTWRjWXoxMHcxMmLSAa4BQVVfeXFMT0dCWC1DeUlfclZIX0tYOUlOWWhVZ0w4Vm5nODJUTkJsMmxOSHQ2ZFlXZTR1WWlNUW85NFRGcXM2YzJYemx2ekVuOTFnTjFVUkpid1lLcVFoVTFJMzNMd044MTdELXlkazdrS21fU0pEaXFCXzEwRklMeWMtYkk1ZURxN1FTTnRVX1hjMGtnWmRzWjZnVUhNOGhIRGxmaFBmaDZsMjBTS3cySzJNWW13?oc=5",
-          "time": "2026-09-29T13:25:59Z"
-        },
-        {
-          "title": "Pakistan vows to defend Saudi Arabia against Iran-backed Houthis by ‘whatever means’ - Seattlepi.com",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPUkRIa0lETkJ4aTJIQ3o1YW85TlNOMkFGUGhSSC1ySXpWcTlJMDdYWjJUaVdKWU9ILU4wbWZBN0p2WWJwWVpHNWVWbV9mSFlKOWxLa3hoM0liM1FsZ1M4SXdObW00SzJkenJkOXpuSGt1bktiaDJPX1JfeDNId3NtY1VtMU44UWRaazVpY1dnNktEWmJsY2c?oc=5",
-          "source": "Google News — Yemen / Red Sea",
-          "time": "2026-09-29T20:41:26Z"
-        },
-        {
-          "title": "Iran threatens new strikes as it awaits US response to Hormuz plan",
-          "url": "https://www.channelnewsasia.com/world/iran-new-strikes-threat-hormuz-us-response-6418906",
-          "source": "https://www.channelnewsasia.com/world/iran-new-strikes-threat-hormuz-us-response-6418906",
-          "time": "2026-09-29T14:22:00Z"
-        },
-        {
-          "title": "IRGC warns of new weapons ahead of US Hormuz reply - News Ghana",
-          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOaDdNYjRJbzZDR0pVYTAzU1dLNU1vdHB4RXNHQ0VmYkJ4dXliNzhWZVFVcHZQSEdqdXctVGgwWjhNTWE3azZ1ZVNEWUhnRlZDNEZ4WjNFVk0xenpoM3k3RVdPWDVPZldUTjVmbTVvSHVCd2p5Z0hvQnQyalZMakFKZG9R?oc=5",
-          "source": "Google News — Iran Israel",
-          "time": "2026-09-29T16:49:56Z"
-        },
-        {
-          "title": "Mapping seven months of Iran war, from Hormuz to the Red Sea | HT Immersive - Hindustan Times",
-          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNZk50Q3pFUVluRmZ5OVNib0NSbHQycmtVS0FYWG5ibUJxQ2JUb25ORnhaWnBLOVVqSFAzbjlfd1VOemdFSGVKdmJ5WjR4Qlg1RjJEUFFjZnB5U1lOUV83UTFkUko2czZzU2lneVVPeUd0amNSNVZWYldZRkF2X0N2T25XelhqclVyVlZMV3duUzByYkRVakpqbFdERU9PZjRkVElmSlhLMURXSzBmQXo2N2tiaEhlVFgtNmNsUUgtUW14eDhQZlpJVEVHam04ZnVPckhnRDJ1aS1Rdw?oc=5",
-          "source": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNZk50Q3pFUVluRmZ5OVNib0NSbHQycmtVS0FYWG5ibUJxQ2JUb25ORnhaWnBLOVVqSFAzbjlfd1VOemdFSGVKdmJ5WjR4Qlg1RjJEUFFjZnB5U1lOUV83UTFkUko2czZzU2lneVVPeUd0amNSNVZWYldZRkF2X0N2T25XelhqclVyVlZMV3duUzByYkRVakpqbFdERU9PZjRkVElmSlhLMURXSzBmQXo2N2tiaEhlVFgtNmNsUUgtUW14eDhQZlpJVEVHam04ZnVPckhnRDJ1aS1Rdw?oc=5",
-          "time": "2026-09-29T14:51:09Z"
-        },
-        {
-          "title": "From the Nile to the Red Sea, can Egypt and Ethiopia ever agree? - The New Arab",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNUnVCMG5kMzZhaDFYZEtSYUlyVlNVaVpsQjR6OGFINm0ySnBnUkpfVEdrZGYxSDZuRWtIT09NY01fbHctZGFOQk45LXM1V3gtX3hzck5LRWdBdEw4RVhRbElkMm1NTUN5OGFTb1hGcE1OUXFyd1RreVJmNzBRbXJTQW9NRHU0d9IBiwFBVV95cUxQS0JRMzgwczRNdEpjTDEzV1dXSHdvYTR4Y1RjRnFyUXlna2RfWldPTlRGUUpKN2VZTVIxTTl4bUlHcXN4ZWthRklZYWtVbHhXV2pBV01lN1ZLNU5qSkhVZlZ0emx5R3lTQlpWc0FXWkxMbkFlX19qTE9IVG9SREVCTE9hUUZrejVETGZr?oc=5",
-          "source": "Google News RSS",
-          "time": ""
-        },
-        {
-          "title": "South Korea mulls ‘contributions’ in Strait of Hormuz - Al Jazeera",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNOGNKSndEUXU1NmZJeVJ5b1B2Tk94VnJkS1F3aGpIbExRRTFmOWlvazk0MzJYY25DNjVCNEpIM2tRd2JhSHcxSTNHVDBLdkJPZHNLcEFyNDcxOUdYMDQwLURJa1M2RWg5UFU2NGdaVVlZaXl1c21LN3FFdzhIVFZNbGlqdG5mb3RYTGpLRktYSk9SVmFxYVHSAZsBQVVfeXFMTk1iMTJFa2pKY2VFZTdUTU4zeDMzTTZ5ck1xRFdsUnIxTnFxRy1hT0xqNEFHcHBITjlPRG1USlhQUklfWmd6aklSZlVHY0U0WjdFSEd3ZWxfTjQycXN4am5QcWRuTDVqYjdpM2wxdnY0TzIwQVZiWFR4MHNUTVQ4dnJsUUxmdVVDcTBpTzBKR1k1bWJrNk1ub3Q1VVE?oc=5",
-          "source": "Google News RSS",
-          "time": ""
-        },
-        {
-          "title": "Iranian Embassy posts satirical video about Hormuz mines - Roya News",
-          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9Ia2dvclRmSXJQcmMwOExXTzZxeDZMLXd5M1cwNkE5dng4Ykp3TnZuMm9vX1IzcjhRNUFtZHBPckN2cjdCZURfWQ?oc=5",
-          "source": "Google News RSS",
-          "time": ""
-        },
-        {
-          "title": "World’s 5th most powerful military set to join US, UK and France in Strait of Hormuz after attacks on Liberia-flagged ships carrying Saudi crude - Business Insider Africa",
-          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNUm5DRl9nUVVFRmVpQTQ2YmF1NTl5ZVhydVlkX0VOZ2ZYcDlMTFM1c1hVSlkyaXR2MXhFVkc2Qm8tYVJXWHRVaFQ3NlFLalQtZXRDOTVVeGZ3UzhXb0w5WEtnaFhEUkROajZ2aW5RZzY0a0ZpdzNhbGxQS2YtNERnN3NvT0RJZ2NiNmF1eEJPWEVYV2tDS2hPckl6N3AydDY0TUFySnROZFJPLXpON0pHM244cno4M1B3bURtZkNNMXVkcnpMS24wR1NWVldFUHRqd2FRTU9B?oc=5",
-          "source": "Google News RSS",
-          "time": ""
-        },
-        {
-          "title": "Egypt’s Strategic Spoiler Role in the Horn of Africa and Red Sea - ENA English",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE0tSjQyaHNiSkt4dEhIOFlTams4cWhJRUFfTlluYXh0QldYLW0xcFZsQkJUdDhXZXRULW9NYWtwUGxteUt6Vk9jS3lSWGFQeGwyVUE?oc=5",
-          "source": "Google News RSS",
-          "time": ""
-        },
-        {
-          "title": "Houthis Threaten to Close Bab el-Mandeb Strait - migflug.com",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPemNiSS0zUnkxSEROUVpRSjVWRVIwSXZOelFNamJiSUktaGdvVVFRNTdmbi1uQThLTjlmRGZfVXc2d3NzZ0FaNGpoTGlGaXJDNDlOcENTa0VVeEswZFFfV0ppRzBPZURmSnZzN0k0b29vSHZwT2lCSWdaZDJNbHlxY3haWWl3Q1pkMEhoOGRfVmFGQzRfUEIwcmpB?oc=5",
-          "source": "Google News RSS",
-          "time": ""
-        },
-        {
-          "title": "South Korea Reviews Troop Dispatch to Hormuz Strait as Japan Hesitates - 조선일보",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQRXRBcDlPYUplWjlvX2E1YzRRX25tMVhnSEFmWFRYbnpRZUo2dGJoUEt4RU0zSTVRYXBwWEd4c0cycWlJdnVjNEJ5NHlDQXQwYXF5RnV1dEJ0enFLQ0RranRrZ1FLOU5XNi11WkhKOWtFVmJoQUZrR3lIUlV6LWFpNXZJdHo?oc=5",
-          "source": "Google News RSS",
-          "time": ""
-        },
-        {
-          "title": "Pakistan Worries About Being Drawn Into US-Iran Conflict After Houthis Attack Saudi Arabia - EnergyNow.com",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOVTJHS2hXV0doNGMtQjkxWnYzNWhNeXF0NGJwQ2U0Vm1FRkFsRk5iTlp3MDlXc0pOdEVaTm1JemNobFRxVVVnanBOM2dMVXh5eWF4SXdqWVFEVzlqTW5VUThoNmdsZDR0bGloRzMwRkkybnVRUkY0blFtRXBSMWFfOFg1bkpFalJaV095Z0FVYWFBWVBfVHlLNmdmcUJGYnZZVDJLejk3NnlFeHlGSEV6TWNfbUJmZ0hpZWQ5cHhB?oc=5",
-          "source": "Google News RSS",
-          "time": ""
-        },
-        {
-          "title": "Iran fires anti-ship missiles",
-          "url": "https://x.com/HormuzLetter/status/2093847720599355732?s=20",
-          "source": "Global War News Map",
-          "time": ""
-        },
-        {
-          "title": "US will support but not lead military operations against the Houthis",
-          "url": "https://x.com/Conflict_Radar/status/2093779745939038591?s=20",
-          "source": "Global War News Map",
-          "time": ""
-        },
-        {
-          "title": "explosions in the Hormuz",
-          "url": "https://x.com/Worldsource24/status/2093406367088271842?s=20",
-          "source": "Global War News Map",
-          "time": ""
-        },
-        {
-          "title": "vessel hit in Hormuz",
-          "url": "https://x.com/visegrad24/status/2094129903666962619?s=20",
-          "source": "Global War News Map",
-          "time": ""
-        },
-        {
-          "title": "2 tankers hit in Hormuz",
-          "url": "https://x.com/DeItaone/status/2094737751912386905?s=20",
-          "source": "Global War News Map",
-          "time": ""
+          "time": "2026-09-29T21:47:28Z"
         }
       ],
       "sourceBacked": true
@@ -1053,14 +1053,14 @@
       "actionEvidenceCount": 0,
       "categoryCount": 1,
       "targetCount": 0,
-      "evidenceCount": 79,
+      "evidenceCount": 82,
       "lastEvidenceTime": "Wed, 13 May 2026 07:00:00 GMT",
       "intensity": 35,
       "evidence": [
         {
           "title": "Sudan’s Water Crisis Deepens as War, Drought and Chemical Weapons Claims Add to Humanitarian Strain - Tuko News",
           "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNSldRRjBTVnVDTUhPSk9CQ2F5OFE3Ni1DZk93Tm5DQ2hJdTdiWnduVnJ3cjJOanhja24xeERzVUcxWnNteEh4TVdRSks2NlpZMFNaWElYQ1pFTEh6Qm9Eb3N2QUROUmJzN0s2b0JJdW1Qck5UMXljRmxmb2Q2eGpBUUpSa3BZSHp3YXowZV9QV1FJcXNJbWRaajFQcGhKZEQ4dGh5em50bGhESTFRSTFyeWN6MllzeUNEdURnTHRpYUpORTFEeDR3SlhoTQ?oc=5",
-          "source": "Google News — Climate Security",
+          "source": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNSldRRjBTVnVDTUhPSk9CQ2F5OFE3Ni1DZk93Tm5DQ2hJdTdiWnduVnJ3cjJOanhja24xeERzVUcxWnNteEh4TVdRSks2NlpZMFNaWElYQ1pFTEh6Qm9Eb3N2QUROUmJzN0s2b0JJdW1Qck5UMXljRmxmb2Q2eGpBUUpSa3BZSHp3YXowZV9QV1FJcXNJbWRaajFQcGhKZEQ4dGh5em50bGhESTFRSTFyeWN6MllzeUNEdURnTHRpYUpORTFEeDR3SlhoTQ?oc=5",
           "time": "2026-09-29T16:03:02Z"
         },
         {
@@ -1072,19 +1072,25 @@
         {
           "title": "Sudan foreign minister attacks external intervention at UN - Dabanga Radio TV Online",
           "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPWXp6Z29RUzlHVlRRVk83bEU3bV9aN2lQQjdYUVdiSUpkRkhWWlFkYXdXSjVqSlpOa241ejNIMk5CYUVuRlRYX3JheEY4bUdQYWJPY1hEZ1l2aC1RRy1tTW9FdzJpcGU0X1pzZ1dJaDNBMjdSMnNENjd2Rlo0amYyUTVUVVNvQnJ1SVF6SEdubkltZU5fWnE1Vm9lWnBOa1pfSUhwYVM1TUpBRGM?oc=5",
-          "source": "Google News — Sudan Conflict",
+          "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPWXp6Z29RUzlHVlRRVk83bEU3bV9aN2lQQjdYUVdiSUpkRkhWWlFkYXdXSjVqSlpOa241ejNIMk5CYUVuRlRYX3JheEY4bUdQYWJPY1hEZ1l2aC1RRy1tTW9FdzJpcGU0X1pzZ1dJaDNBMjdSMnNENjd2Rlo0amYyUTVUVVNvQnJ1SVF6SEdubkltZU5fWnE1Vm9lWnBOa1pfSUhwYVM1TUpBRGM?oc=5",
           "time": "2026-09-29T17:17:25Z"
         },
         {
           "title": "Evidence Mounts of Chemical Weapons Use in Sudan - Africa Defense Forum",
           "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPU2xxT1hDMlRHTXF4a2lLV2VzUHJucTJiYUs2WldzZXQ5bkgtbk04dlZoZmtDd0VtN25mMjlFWDFIOG1mNjBpbGdVSGl3eTZsNFFmR01rZE9Nc1UyQUJUYVJGNHhxVjNVY1A4a2tRTV9nMkNYbVZTbE9SbHd6Rm9TZWl6X0tnV1pNX0E?oc=5",
-          "source": "Google News — Sudan Conflict",
+          "source": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPU2xxT1hDMlRHTXF4a2lLV2VzUHJucTJiYUs2WldzZXQ5bkgtbk04dlZoZmtDd0VtN25mMjlFWDFIOG1mNjBpbGdVSGl3eTZsNFFmR01rZE9Nc1UyQUJUYVJGNHhxVjNVY1A4a2tRTV9nMkNYbVZTbE9SbHd6Rm9TZWl6X0tnV1pNX0E?oc=5",
           "time": "2026-09-29T18:29:43Z"
+        },
+        {
+          "title": "Today's top news: El Niño/CERF, Democratic Republic of the Congo, Sudan, Occupied Palestinian Territory, Syria, Haiti - OCHA",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPT0NzNlVYcnZjWGNlRW1mLWhReHppMHhEZGNRU1EyMlNRZk5CazhSc2pYcS14RnNUN1lvcTBvOWJzWmJBeGhMdkI1aS1hcWEyVmtWQjFzT3Y5V0pYN0hubXNIclRXNmpEcE9pR0FuczhWUTIyZEpBWlNLemtmekJqbmdKSVFHakR1WS0xVkdqMVpVNkVPZS1Vb1NNZWNCNnFJTnVmSWVtR2UyN2pXTGFRVnFpd1oyb2dUS2c?oc=5",
+          "source": "Google News — Climate Security",
+          "time": "2026-09-29T18:15:56Z"
         },
         {
           "title": "Today's top news: El Niño/CERF, DRC, Sudan, Occupied Palestinian Territory, Syria, Haiti - OCHA",
           "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOYVk2RFVDanhxQVlNY2NsS2dMd2dNMEwxYklYeGlDZzd1M2hsT1hHS1NzSGp2VTMzUnNrNTNWeDhSZ1MteWo1TUpZT1lNRm9zengtSVotX2NYLWYta0VkWlZXM2RXVDZ0Q2pyTEFMTGUtQlp6WGNuM3VYMnQ4cnJZbTBRaHNiUlJaZGJNNGhCdXRYellRTFNiZWdHR25kSGpzS0RlWElvV05ENGNo?oc=5",
-          "source": "Google News — Climate Security",
+          "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOYVk2RFVDanhxQVlNY2NsS2dMd2dNMEwxYklYeGlDZzd1M2hsT1hHS1NzSGp2VTMzUnNrNTNWeDhSZ1MteWo1TUpZT1lNRm9zengtSVotX2NYLWYta0VkWlZXM2RXVDZ0Q2pyTEFMTGUtQlp6WGNuM3VYMnQ4cnJZbTBRaHNiUlJaZGJNNGhCdXRYellRTFNiZWdHR25kSGpzS0RlWElvV05ENGNo?oc=5",
           "time": "2026-09-29T18:01:53Z"
         },
         {
@@ -1168,12 +1174,6 @@
         {
           "title": "Clashes erupt in Sudan’s Blue Nile as rebel alliance advances toward Ed Damazin - Sudan Tribune",
           "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1WYWYydS1rSU1sTnhtclVsVkdJUTRZQTBjV3JJNWNXX0d1YmpMN2NZWnhqdnpiVk94eE1zSHdTaHpjTGJFUkoyUWlJSGlja25T?oc=5",
-          "source": "Google News RSS",
-          "time": ""
-        },
-        {
-          "title": "UN rights experts to assess South Sudan’s worsening crisis - Eye Radio",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPejBRblZGSE5XdVRmVE1ZTExHM0c4eEtOS2VDV25FVGYwTEpVeUxxWUc5RlJ2dGJLUWZJcU90OVQ1MklWZHJXOXo2YTFXTjlGUTJ3eDN5TFdaNlg3QXhlQS1YRzNfUUlWYUUtMHZkNURfTVI1Z1pnTE9yaXpFU3EyeE5Lb0hRZmFseWpj0gGQAUFVX3lxTE05V1Y2Q0N4UjJtUGRYWG5va2pNQkxKRUFPNFFWMXd4dlRiOUxxRWNYZDh5b2ZXdlBiTW1qaUxWMnlWOE1GOGdpS09aeTFIOGxVbkdfMjVrS1FtNGc2bC12cXRoNVQwQXpXXzdSUTFCNmpjd3dFY1V2MzUwMzZYWGN6ZW95N3oxbVIyRk8yZG1PNQ?oc=5",
           "source": "Google News RSS",
           "time": ""
         }
