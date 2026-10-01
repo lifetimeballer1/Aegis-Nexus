@@ -1,8 +1,32 @@
 {
   "version": 2,
-  "updatedAt": "2026-10-01T00:36:21.488468Z",
+  "updatedAt": "2026-10-01T06:30:03.748643Z",
   "window": "12 hours primary + 7-day recent fallback",
   "items": [
+    {
+      "type": "event",
+      "eventId": "db037c2987eba324",
+      "entity": null,
+      "title": "Green forest fire notification in Brazil",
+      "detail": "6 reports · 1 source domains · LOW confidence",
+      "delta": 0,
+      "score": null,
+      "level": "LOW",
+      "new": true,
+      "time": "2026-09-30T23:01:26+00:00"
+    },
+    {
+      "type": "event",
+      "eventId": "f4bef1a266999855",
+      "entity": null,
+      "title": "Green forest fire notification in Australia",
+      "detail": "2 reports · 1 source domains · LOW confidence",
+      "delta": 0,
+      "score": null,
+      "level": "LOW",
+      "new": true,
+      "time": "2026-09-30T23:01:21+00:00"
+    },
     {
       "type": "event",
       "eventId": "532b04c7aa7d6a20",
@@ -12,7 +36,7 @@
       "delta": 0,
       "score": null,
       "level": "MODERATE",
-      "new": true,
+      "new": false,
       "time": "2026-09-30T20:36:35+00:00"
     },
     {
@@ -24,7 +48,7 @@
       "delta": 0,
       "score": null,
       "level": "LOW",
-      "new": true,
+      "new": false,
       "time": "2026-09-30T18:37:42.040000+00:00"
     },
     {
@@ -36,8 +60,9 @@
       "delta": 0,
       "score": null,
       "level": "MODERATE",
-      "new": true,
-      "time": "2026-09-30T18:09:51+00:00"
+      "new": false,
+      "time": "2026-09-30T18:09:51+00:00",
+      "recentFallback": true
     },
     {
       "type": "event",
@@ -48,8 +73,35 @@
       "delta": 0,
       "score": null,
       "level": "MODERATE",
+      "new": false,
+      "time": "2026-09-30T17:11:08+00:00",
+      "recentFallback": true
+    },
+    {
+      "type": "event",
+      "eventId": "571498b8731d1ef4",
+      "entity": null,
+      "title": "US troops complete Iraq exit, as Iran and its allies celebrate - KOMU 8",
+      "detail": "2 reports · 1 source domains · LOW confidence",
+      "delta": 0,
+      "score": null,
+      "level": "LOW",
       "new": true,
-      "time": "2026-09-30T17:11:08+00:00"
+      "time": "2026-09-30T17:05:57+00:00",
+      "recentFallback": true
+    },
+    {
+      "type": "event",
+      "eventId": "f9441ee2762e9200",
+      "entity": null,
+      "title": "Afghanistan claims 41 fighters killed, 62 captured in three days of border clashes with Pakistan - Mid-Day",
+      "detail": "2 reports · 1 source domains · LOW confidence",
+      "delta": 0,
+      "score": null,
+      "level": "LOW",
+      "new": true,
+      "time": "2026-09-30T16:46:00+00:00",
+      "recentFallback": true
     },
     {
       "type": "event",
@@ -60,20 +112,22 @@
       "delta": 0,
       "score": null,
       "level": "LOW",
-      "new": true,
-      "time": "2026-09-30T16:01:00+00:00"
+      "new": false,
+      "time": "2026-09-30T16:01:00+00:00",
+      "recentFallback": true
     },
     {
       "type": "event",
-      "eventId": "a57e470c5b6f5043",
+      "eventId": "14c4f715a8ccb84a",
       "entity": null,
-      "title": "Russia targets Kyiv power supply as freezing winter approaches - Yahoo News Singapore",
+      "title": "CNN.com - Transcripts - CNN",
       "detail": "2 reports · 1 source domains · LOW confidence",
       "delta": 0,
       "score": null,
       "level": "LOW",
       "new": true,
-      "time": "2026-09-30T12:38:33+00:00"
+      "time": "2026-09-30T15:44:23+00:00",
+      "recentFallback": true
     },
     {
       "type": "event",
@@ -85,13 +139,14 @@
       "score": null,
       "level": "MODERATE",
       "new": false,
-      "time": "2026-09-30T15:00:54+00:00"
+      "time": "2026-09-30T15:00:54+00:00",
+      "recentFallback": true
     }
   ],
   "summary": {
-    "newEvents": 6,
+    "newEvents": 2,
     "indicatorMoves": 0,
-    "recentFallbackEvents": 0,
-    "total": 7
+    "recentFallbackEvents": 7,
+    "total": 11
   }
 }
