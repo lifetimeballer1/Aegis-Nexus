@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-01T05:55:08.725696Z",
+  "updatedAt": "2026-10-01T13:16:25.360958Z",
   "method": "Deterministic prioritization of existing public Global Pulse artifacts; not a forecast or causal model.",
   "freshness": {
-    "snapshotUpdatedAt": "2026-10-01T00:36:25.906282+00:00",
-    "eventsUpdatedAt": "2026-10-01T00:36:30.356114Z",
+    "snapshotUpdatedAt": "2026-10-01T06:30:08.168228+00:00",
+    "eventsUpdatedAt": "2026-10-01T06:30:11.284697Z",
     "assessmentsUpdatedAt": "2026-09-10T03:03:12.655499Z"
   },
   "headline": {
@@ -13,19 +13,49 @@
   },
   "topDevelopments": [
     {
-      "id": "aa147664ef34e63a",
-      "title": "What we know about stabbing on Flydubai flight to Israel",
+      "id": "2b6cdb7418726381",
+      "title": "Pakistan launches deadly air strikes on Afghanistan",
       "category": "general",
       "confidence": "moderate",
       "reportCount": 2,
       "independentSourceCount": 2,
       "sources": [
-        "bbc_middle_east",
-        "guardian_world"
+        "bbc_asia",
+        "google_news_afghanistan_security"
       ],
       "breaking": true,
-      "firstSeen": "2026-09-30T15:00:54Z",
-      "lastSeen": "2026-09-30T16:24:18Z"
+      "firstSeen": "2026-10-01T06:23:13Z",
+      "lastSeen": "2026-10-01T06:23:13Z"
+    },
+    {
+      "id": "95d36a24abc9df9c",
+      "title": "Swiss glaciers suffer 'disastrous' year of ice loss, threatening water supplies",
+      "category": "general",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "independentSourceCount": 2,
+      "sources": [
+        "bbc_world",
+        "google_news_climate_security"
+      ],
+      "breaking": false,
+      "firstSeen": "2026-10-01T00:08:23Z",
+      "lastSeen": "2026-10-01T00:08:23Z"
+    },
+    {
+      "id": "e7101726331f08a3",
+      "title": "Swiss glaciers suffer another year of record ice loss",
+      "category": "general",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "independentSourceCount": 2,
+      "sources": [
+        "npr_news",
+        "google_news_climate_security"
+      ],
+      "breaking": false,
+      "firstSeen": "2026-09-30T23:00:00Z",
+      "lastSeen": "2026-09-30T23:00:00Z"
     },
     {
       "id": "532b04c7aa7d6a20",
@@ -43,36 +73,6 @@
       "lastSeen": "2026-09-30T20:44:00Z"
     },
     {
-      "id": "811fbe712db29c2f",
-      "title": "UK PM says 'strong indications' Iran involved in airbase incident",
-      "category": "general",
-      "confidence": "moderate",
-      "reportCount": 2,
-      "independentSourceCount": 2,
-      "sources": [
-        "cna_world",
-        "al_jazeera"
-      ],
-      "breaking": false,
-      "firstSeen": "2026-09-30T18:09:51Z",
-      "lastSeen": "2026-09-30T20:20:57Z"
-    },
-    {
-      "id": "e4713ab6bbd3af45",
-      "title": "UK-France Channel migrant exchange deal scrapped: London",
-      "category": "general",
-      "confidence": "moderate",
-      "reportCount": 2,
-      "independentSourceCount": 2,
-      "sources": [
-        "cna_world",
-        "bbc_world"
-      ],
-      "breaking": false,
-      "firstSeen": "2026-09-30T17:11:08Z",
-      "lastSeen": "2026-09-30T19:34:24Z"
-    },
-    {
       "id": "db037c2987eba324",
       "title": "Green forest fire notification in Brazil",
       "category": "general",
@@ -85,20 +85,6 @@
       "breaking": false,
       "firstSeen": "2026-09-30T23:01:26Z",
       "lastSeen": "2026-09-30T23:06:16Z"
-    },
-    {
-      "id": "f9441ee2762e9200",
-      "title": "Afghanistan claims 41 fighters killed, 62 captured in three days of border clashes with Pakistan - Mid-Day",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "independentSourceCount": 1,
-      "sources": [
-        "google_news_afghanistan_security"
-      ],
-      "breaking": true,
-      "firstSeen": "2026-09-30T16:46:00Z",
-      "lastSeen": "2026-09-30T16:46:00Z"
     },
     {
       "id": "d4032f4cad0427a7",
@@ -129,20 +115,6 @@
       "lastSeen": "Tue, 23 Sep 2025 07:00:00 GMT"
     },
     {
-      "id": "7e25ab364b4dcc3b",
-      "title": "Explanation of Vote Before the Vote for UNGA 80 Adoption on the Resolution to “Correct the Map” - United States Mission to the United Nations (.gov)",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "independentSourceCount": 1,
-      "sources": [
-        "United States Mission to the United Nations (.gov)"
-      ],
-      "breaking": false,
-      "firstSeen": "Fri, 04 Sep 2026 07:00:00 GMT",
-      "lastSeen": "Wed, 25 Mar 2026 07:00:00 GMT"
-    },
-    {
       "id": "fcd2c34449d21a25",
       "title": "Next NATO summit in Albania in doubt amid US reluctance and low defence spending - Reuters",
       "category": "diplomatic",
@@ -156,6 +128,35 @@
       "breaking": false,
       "firstSeen": "Tue, 30 Jun 2026 07:00:00 GMT",
       "lastSeen": "Tue, 30 Jun 2026 07:00:00 GMT"
+    },
+    {
+      "id": "8ae13132efb89089",
+      "title": "Trump says he is banning CNN and Politico from White House - BBC",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 2,
+      "independentSourceCount": 2,
+      "sources": [
+        "BBC",
+        "cnn.com"
+      ],
+      "breaking": false,
+      "firstSeen": "Fri, 18 Sep 2026 07:00:00 GMT",
+      "lastSeen": "Sat, 19 Sep 2026 07:00:00 GMT"
+    },
+    {
+      "id": "37d466dc9cb15bc0",
+      "title": "Senators Hit Deal on Energy Project Permitting Bill, Vote After Midterm Elections - mb.ntd.com",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 2,
+      "independentSourceCount": 1,
+      "sources": [
+        "google_news_u_s_politics"
+      ],
+      "breaking": false,
+      "firstSeen": "2026-09-30T23:20:33Z",
+      "lastSeen": "2026-10-01T03:52:27Z"
     }
   ],
   "watchlist": [
