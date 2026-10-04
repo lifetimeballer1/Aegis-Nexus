@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-04T17:35:00.739125Z",
+  "updatedAt": "2026-10-04T21:26:02.988604Z",
   "method": "Deterministic prioritization of existing public Global Pulse artifacts; not a forecast or causal model.",
   "freshness": {
-    "snapshotUpdatedAt": "2026-10-04T17:01:14.929832+00:00",
-    "eventsUpdatedAt": "2026-10-04T17:01:19.285837Z",
+    "snapshotUpdatedAt": "2026-10-04T19:57:04.232200+00:00",
+    "eventsUpdatedAt": "2026-10-04T19:57:08.683735Z",
     "assessmentsUpdatedAt": "2026-09-10T03:03:12.655499Z"
   },
   "headline": {
@@ -12,6 +12,21 @@
     "description": "Highest-priority developments and attention indicators from the latest generated intelligence artifacts."
   },
   "topDevelopments": [
+    {
+      "id": "fbdfe6340b5f03d4",
+      "title": "Air strike in Sudan kills UN aid truck driver: WFP - Al Jazeera",
+      "category": "conflict",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "independentSourceCount": 2,
+      "sources": [
+        "google_news_sudan_conflict",
+        "al_jazeera"
+      ],
+      "breaking": true,
+      "firstSeen": "2026-10-04T16:28:43Z",
+      "lastSeen": "2026-10-04T16:31:30Z"
+    },
     {
       "id": "bda88f6d40b59809",
       "title": "Russia hits Kyiv bridge as Germany’s Merz visits Ukraine’s capital",
@@ -118,47 +133,32 @@
       "lastSeen": "2026-10-04T11:00:28Z"
     },
     {
-      "id": "bce178c19c60eb45",
-      "title": "Iran prepares surprise offensive on US bases in Persian Gulf - Bankingnews",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "independentSourceCount": 1,
-      "sources": [
-        "google_news_iran_israel"
-      ],
-      "breaking": true,
-      "firstSeen": "2026-10-04T08:30:17Z",
-      "lastSeen": "2026-10-04T08:30:20Z"
-    },
-    {
-      "id": "7b5f2e0e5c7dca18",
-      "title": "Yemen War Explodes Again: Sanaa Hit After Aramco Attack, Saudi Offensive Looms - dynamitenews.com",
-      "category": "conflict",
-      "confidence": "low",
-      "reportCount": 2,
-      "independentSourceCount": 2,
-      "sources": [
-        "google_news_global_conflict",
-        "google_news_yemen_red_sea"
-      ],
-      "breaking": true,
-      "firstSeen": "2026-10-04T05:06:14Z",
-      "lastSeen": "2026-10-04T05:06:14Z"
-    },
-    {
-      "id": "395493fbf934adbb",
-      "title": "Statement of condemnation by the North Atlantic Council of Russia's malicious cyber activities - nato.int",
+      "id": "9dbe1492b2c609c1",
+      "title": "Statement of condemnation by the North Atlantic Council of Russia's malicious cyber activities - North Atlantic Treaty Organization | NATO",
       "category": "diplomatic",
       "confidence": "low",
       "reportCount": 3,
       "independentSourceCount": 1,
       "sources": [
-        "nato.int"
+        "North Atlantic Treaty Organization | NATO"
       ],
       "breaking": false,
       "firstSeen": "Mon, 13 Jul 2026 07:00:00 GMT",
       "lastSeen": "Tue, 23 Sep 2025 07:00:00 GMT"
+    },
+    {
+      "id": "d4032f4cad0427a7",
+      "title": "Relations with Ukraine - North Atlantic Treaty Organization | NATO",
+      "category": "diplomatic",
+      "confidence": "low",
+      "reportCount": 3,
+      "independentSourceCount": 1,
+      "sources": [
+        "North Atlantic Treaty Organization | NATO"
+      ],
+      "breaking": false,
+      "firstSeen": "Thu, 09 Jul 2026 07:00:00 GMT",
+      "lastSeen": "Tue, 11 Nov 2025 08:00:00 GMT"
     }
   ],
   "watchlist": [
