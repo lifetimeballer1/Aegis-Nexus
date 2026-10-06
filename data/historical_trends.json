@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-05T22:17:07.984818Z",
-  "availableSamples": 200,
-  "availableHours": 733.0,
+  "updatedAt": "2026-10-06T02:21:15.473310Z",
+  "availableSamples": 201,
+  "availableHours": 737.0,
   "series": [
     {
       "updatedAt": "2026-09-05T09:19:53.754145+00:00",
@@ -1203,38 +1203,50 @@
       "tension": 39,
       "delta": 0.0,
       "scoreVersion": 5
+    },
+    {
+      "updatedAt": "2026-10-06T02:21:15.473310Z",
+      "tension": 39,
+      "delta": 0.0,
+      "scoreVersion": 5
     }
   ],
   "windows": {
     "6h": {
-      "available": false,
-      "reason": "Only 1 samples in requested window"
-    },
-    "24h": {
       "available": true,
-      "samples": 5,
-      "start": "2026-10-04T22:38:17.201341Z",
-      "end": "2026-10-05T22:17:07.984818Z",
-      "startTension": 38,
-      "endTension": 39,
-      "delta": 1.0,
-      "trend": "STABLE"
-    },
-    "7d": {
-      "available": true,
-      "samples": 21,
-      "start": "2026-09-29T00:24:42.560181Z",
-      "end": "2026-10-05T22:17:07.984818Z",
+      "samples": 2,
+      "start": "2026-10-05T22:17:07.984818Z",
+      "end": "2026-10-06T02:21:15.473310Z",
       "startTension": 39,
       "endTension": 39,
       "delta": 0.0,
       "trend": "STABLE"
     },
+    "24h": {
+      "available": true,
+      "samples": 4,
+      "start": "2026-10-05T07:05:42.884432Z",
+      "end": "2026-10-06T02:21:15.473310Z",
+      "startTension": 37,
+      "endTension": 39,
+      "delta": 2.0,
+      "trend": "UP"
+    },
+    "7d": {
+      "available": true,
+      "samples": 21,
+      "start": "2026-09-29T05:56:50.375283Z",
+      "end": "2026-10-06T02:21:15.473310Z",
+      "startTension": 38,
+      "endTension": 39,
+      "delta": 1.0,
+      "trend": "STABLE"
+    },
     "30d": {
       "available": true,
-      "samples": 160,
-      "start": "2026-09-05T22:21:12.049383+00:00",
-      "end": "2026-10-05T22:17:07.984818Z",
+      "samples": 144,
+      "start": "2026-09-06T02:45:08.822652+00:00",
+      "end": "2026-10-06T02:21:15.473310Z",
       "startTension": 41,
       "endTension": 39,
       "delta": -2.0,
