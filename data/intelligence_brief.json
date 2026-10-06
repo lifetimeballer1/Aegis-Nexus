@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-05T22:37:58.701091Z",
+  "updatedAt": "2026-10-06T02:58:47.635357Z",
   "method": "Deterministic prioritization of existing public Global Pulse artifacts; not a forecast or causal model.",
   "freshness": {
-    "snapshotUpdatedAt": "2026-10-05T22:17:03.395219+00:00",
-    "eventsUpdatedAt": "2026-10-05T22:17:07.703022Z",
+    "snapshotUpdatedAt": "2026-10-06T02:21:11.141045+00:00",
+    "eventsUpdatedAt": "2026-10-06T02:21:15.209755Z",
     "assessmentsUpdatedAt": "2026-09-10T03:03:12.655499Z"
   },
   "headline": {
@@ -12,6 +12,21 @@
     "description": "Highest-priority developments and attention indicators from the latest generated intelligence artifacts."
   },
   "topDevelopments": [
+    {
+      "id": "c0381381ba0933f1",
+      "title": "Saudi-backed forces recapture key areas around strait from Houthis in Yemen",
+      "category": "general",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "independentSourceCount": 2,
+      "sources": [
+        "guardian_world",
+        "google_news_yemen_red_sea"
+      ],
+      "breaking": true,
+      "firstSeen": "2026-10-05T18:28:54Z",
+      "lastSeen": "2026-10-05T19:44:01Z"
+    },
     {
       "id": "1b7f58d1bee5e5c0",
       "title": "Teenager loses hand picking up grenade in France school protests",
@@ -26,21 +41,6 @@
       "breaking": true,
       "firstSeen": "2026-10-05T15:50:50Z",
       "lastSeen": "2026-10-05T17:00:00Z"
-    },
-    {
-      "id": "a1c73c5c324e1913",
-      "title": "Latest US military strike on alleged drug boat kills four in Caribbean",
-      "category": "conflict",
-      "confidence": "moderate",
-      "reportCount": 2,
-      "independentSourceCount": 2,
-      "sources": [
-        "al_jazeera",
-        "google_news_operation_southern_spear"
-      ],
-      "breaking": true,
-      "firstSeen": "2026-10-05T14:58:02Z",
-      "lastSeen": "2026-10-05T14:58:02Z"
     },
     {
       "id": "51e550188eefd2c4",
@@ -58,79 +58,47 @@
       "lastSeen": "2026-10-05T18:42:36Z"
     },
     {
-      "id": "0493b318b0eb69de",
-      "title": "Dennis Hastert, former House speaker disgraced by molestation allegations, dies aged 84",
-      "category": "general",
-      "confidence": "moderate",
-      "reportCount": 2,
-      "independentSourceCount": 2,
-      "sources": [
-        "guardian_world",
-        "google_news_u_s_politics"
-      ],
-      "breaking": false,
-      "firstSeen": "2026-10-05T14:26:00Z",
-      "lastSeen": "2026-10-05T14:26:01Z"
-    },
-    {
-      "id": "fd8db3902a6b18c8",
-      "title": "Dennis Hastert, longtime Republican House speaker who went to prison, dies at age 84",
-      "category": "general",
-      "confidence": "moderate",
-      "reportCount": 2,
-      "independentSourceCount": 2,
-      "sources": [
-        "npr_news",
-        "google_news_u_s_politics"
-      ],
-      "breaking": false,
-      "firstSeen": "2026-10-05T14:24:31Z",
-      "lastSeen": "2026-10-05T14:24:31Z"
-    },
-    {
-      "id": "2b3d14581bbcba4f",
-      "title": "Why did the US rush to withdraw bombers from RAF Fairford? - The Latest",
-      "category": "general",
+      "id": "ac06d1fb34be900f",
+      "title": "US-Israel-Iran War Latest Live News: Houthis Claim Attacks on Riyadh Airport and Aramco Refinery as Government Forces Launch Major Offensive to Retake Houthi Territory - The Sunday Guardian",
+      "category": "political",
       "confidence": "low",
       "reportCount": 2,
       "independentSourceCount": 2,
       "sources": [
-        "guardian_world",
-        "guardian_us"
+        "google_news_iran_israel",
+        "google_news_yemen_red_sea"
       ],
       "breaking": true,
-      "firstSeen": "2026-10-05T15:18:55Z",
-      "lastSeen": "2026-10-05T15:45:46Z"
+      "firstSeen": "2026-10-05T22:27:04Z",
+      "lastSeen": "2026-10-05T22:27:06Z"
     },
     {
-      "id": "24da94b34c36825f",
-      "title": "Russia hosts Taliban delegation, others - millenniumpost.in",
+      "id": "7ab26b0ca0b3d71d",
+      "title": "Saudi strikes, Houthis attack, Mecca Pact activated: Why Yemen conflict is escalating across the region - Moneycontrol.com",
+      "category": "conflict",
+      "confidence": "low",
+      "reportCount": 2,
+      "independentSourceCount": 1,
+      "sources": [
+        "google_news_yemen_red_sea"
+      ],
+      "breaking": true,
+      "firstSeen": "2026-10-05T21:19:20Z",
+      "lastSeen": "2026-10-05T21:19:20Z"
+    },
+    {
+      "id": "db037c2987eba324",
+      "title": "Green forest fire notification in Brazil",
       "category": "general",
       "confidence": "low",
       "reportCount": 4,
       "independentSourceCount": 1,
       "sources": [
-        "google_news_afghanistan_security"
+        "gdacs_global_disaster_alerts"
       ],
       "breaking": false,
-      "firstSeen": "2026-10-05T15:30:33Z",
-      "lastSeen": "2026-10-05T18:42:27Z"
-    },
-    {
-      "id": "fcd2c34449d21a25",
-      "title": "Next NATO summit in Albania in doubt amid US reluctance and low defence spending - Reuters",
-      "category": "diplomatic",
-      "confidence": "low",
-      "reportCount": 3,
-      "independentSourceCount": 3,
-      "sources": [
-        "Reuters",
-        "japantimes.co.jp",
-        "Internazionale"
-      ],
-      "breaking": false,
-      "firstSeen": "Tue, 30 Jun 2026 07:00:00 GMT",
-      "lastSeen": "Wed, 01 Jul 2026 07:00:00 GMT"
+      "firstSeen": "2026-10-05T23:00:54Z",
+      "lastSeen": "2026-10-05T23:02:46Z"
     },
     {
       "id": "9dbe1492b2c609c1",
@@ -159,6 +127,35 @@
       "breaking": false,
       "firstSeen": "Thu, 09 Jul 2026 07:00:00 GMT",
       "lastSeen": "Tue, 11 Nov 2025 08:00:00 GMT"
+    },
+    {
+      "id": "24da94b34c36825f",
+      "title": "Russia hosts Taliban delegation, others - millenniumpost.in",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 3,
+      "independentSourceCount": 1,
+      "sources": [
+        "google_news_afghanistan_security"
+      ],
+      "breaking": false,
+      "firstSeen": "2026-10-05T15:31:38Z",
+      "lastSeen": "2026-10-05T18:42:27Z"
+    },
+    {
+      "id": "5bd58bb41f55992f",
+      "title": "NATO prepared to defend allies from any Iranian threat, official says - washingtontimes.com",
+      "category": "diplomatic",
+      "confidence": "low",
+      "reportCount": 2,
+      "independentSourceCount": 2,
+      "sources": [
+        "washingtontimes.com",
+        "The New Region"
+      ],
+      "breaking": false,
+      "firstSeen": "Wed, 19 Aug 2026 07:00:00 GMT",
+      "lastSeen": "Wed, 19 Aug 2026 07:00:00 GMT"
     }
   ],
   "watchlist": [
