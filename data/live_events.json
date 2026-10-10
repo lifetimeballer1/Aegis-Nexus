@@ -1,36 +1,59 @@
 {
-  "updatedAt": "2026-10-10T02:42:55.733133Z",
+  "updatedAt": "2026-10-10T09:05:46.468850Z",
   "window": "recent public reporting",
   "method": "anchor-aware title clustering with category and publication-time agreement; candidate grouping only, not proof reports describe identical facts",
   "events": [
     {
-      "id": "3755aa49480d86cb",
-      "title": "M 4.6 - 10 km S of Río Grande, Panama",
+      "id": "b6baa5d13c71faa8",
+      "title": "M 4.5 - 18 km SSE of Río Grande, Panama",
       "category": "general",
       "confidence": "low",
-      "reportCount": 9,
+      "reportCount": 10,
       "sourceCount": 1,
       "sources": [
         "earthquake.usgs.gov"
       ],
       "anchors": [],
       "firstSeen": "2026-10-09T19:25:01.040000Z",
-      "lastSeen": "2026-10-10T01:54:37.040000Z",
+      "lastSeen": "2026-10-10T05:37:55.863000Z",
       "urls": [
+        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1bw",
         "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1bp",
         "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1b4",
         "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1az",
         "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u19w",
         "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1ai",
         "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1a9",
-        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1aa",
-        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u19h"
+        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1aa"
       ],
       "reports": [
         {
-          "id": "ce613dd21767",
+          "id": "d4d3117a6da7",
           "sourceLabel": "USGS M4.5+ Earthquakes — Past Day",
           "sourceName": "USGS M4.5+ Earthquakes — Past Day",
+          "sourceType": "climate-hazard",
+          "title": "M 4.5 - 18 km SSE of Río Grande, Panama",
+          "summary": "DYFI? - III Time 2026-10-10 02:43:38 UTC 2026-10-10 02:43:38 UTC at epicenter Location 7.575°N 81.249°W Depth 10.00 km (6.21 mi)",
+          "summary_snippet": "DYFI? - III Time 2026-10-10 02:43:38 UTC 2026-10-10 02:43:38 UTC at epicenter Location 7.575°N 81.249°W Depth 10.00 km (6.21 mi)",
+          "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1bw",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1bw",
+          "time": "2026-10-10T05:37:55.863000Z",
+          "published_date": "2026-10-10T05:37:55.863000Z",
+          "publishedDate": "2026-10-10T05:37:55.863000Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "usgs_m4_5_earthquakes_past_day",
+            "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
+            "feedFormat": "atom"
+          }
+        },
+        {
+          "id": "ce613dd21767",
+          "sourceLabel": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1bp",
+          "sourceName": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1bp",
           "sourceType": "climate-hazard",
           "title": "M 4.6 - 10 km S of Río Grande, Panama",
           "summary": "Time 2026-10-10 01:35:47 UTC 2026-10-10 01:35:47 UTC at epicenter Location 7.627°N 81.324°W Depth 10.00 km (6.21 mi)",
@@ -52,8 +75,8 @@
         },
         {
           "id": "6675acd56286",
-          "sourceLabel": "USGS M4.5+ Earthquakes — Past Day",
-          "sourceName": "USGS M4.5+ Earthquakes — Past Day",
+          "sourceLabel": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1b4",
+          "sourceName": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1b4",
           "sourceType": "climate-hazard",
           "title": "M 4.7 - 14 km W of Río Grande, Panama",
           "summary": "Time 2026-10-09 23:57:38 UTC 2026-10-09 23:57:38 UTC at epicenter Location 7.738°N 81.460°W Depth 10.00 km (6.21 mi)",
@@ -75,8 +98,8 @@
         },
         {
           "id": "a3a493950adf",
-          "sourceLabel": "USGS M4.5+ Earthquakes — Past Day",
-          "sourceName": "USGS M4.5+ Earthquakes — Past Day",
+          "sourceLabel": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1az",
+          "sourceName": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1az",
           "sourceType": "climate-hazard",
           "title": "M 4.9 - 9 km SW of Río Grande, Panama",
           "summary": "DYFI? - III Time 2026-10-09 23:23:13 UTC 2026-10-09 23:23:13 UTC at epicenter Location 7.665°N 81.401°W Depth 10.00 km (6.21 mi)",
@@ -178,29 +201,6 @@
           "time": "2026-10-09T21:50:50.040000Z",
           "published_date": "2026-10-09T21:50:50.040000Z",
           "publishedDate": "2026-10-09T21:50:50.040000Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "usgs_m4_5_earthquakes_past_day",
-            "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
-            "feedFormat": "atom"
-          }
-        },
-        {
-          "id": "4f3e5f1a7592",
-          "sourceLabel": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u19h",
-          "sourceName": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u19h",
-          "sourceType": "climate-hazard",
-          "title": "M 5.2 - 11 km SE of Río Grande, Panama",
-          "summary": "DYFI? - II Time 2026-10-09 19:48:55 UTC 2026-10-09 19:48:55 UTC at epicenter Location 7.642°N 81.268°W Depth 10.00 km (6.21 mi)",
-          "summary_snippet": "DYFI? - II Time 2026-10-09 19:48:55 UTC 2026-10-09 19:48:55 UTC at epicenter Location 7.642°N 81.268°W Depth 10.00 km (6.21 mi)",
-          "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u19h",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u19h",
-          "time": "2026-10-09T21:22:18.248000Z",
-          "published_date": "2026-10-09T21:22:18.248000Z",
-          "publishedDate": "2026-10-09T21:22:18.248000Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
@@ -424,6 +424,330 @@
       ]
     },
     {
+      "id": "4d941cfc863e2de4",
+      "title": "M 6.0 - 7 km N of La Tronosa, Panama",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 7,
+      "sourceCount": 1,
+      "sources": [
+        "earthquake.usgs.gov"
+      ],
+      "anchors": [],
+      "firstSeen": "2026-10-09T21:40:03.031000Z",
+      "lastSeen": "2026-10-10T07:48:13.229000Z",
+      "urls": [
+        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1cf",
+        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1cb",
+        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1bj",
+        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1bl",
+        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1ax",
+        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u19t",
+        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u19c"
+      ],
+      "reports": [
+        {
+          "id": "08f9d1aff0bb",
+          "sourceLabel": "USGS M4.5+ Earthquakes — Past Day",
+          "sourceName": "USGS M4.5+ Earthquakes — Past Day",
+          "sourceType": "climate-hazard",
+          "title": "M 6.0 - 7 km N of La Tronosa, Panama",
+          "summary": "PAGER - YELLOW ShakeMap - VIII DYFI? - VI Time 2026-10-10 04:14:01 UTC 2026-10-10 04:14:01 UTC at epicenter Location 7.507°N 80.599°W Depth 10.00 km (6.21 mi)",
+          "summary_snippet": "PAGER - YELLOW ShakeMap - VIII DYFI? - VI Time 2026-10-10 04:14:01 UTC 2026-10-10 04:14:01 UTC at epicenter Location 7.507°N 80.599°W Depth 10.00 km (6.21 mi)",
+          "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1cf",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1cf",
+          "time": "2026-10-10T07:48:13.229000Z",
+          "published_date": "2026-10-10T07:48:13.229000Z",
+          "publishedDate": "2026-10-10T07:48:13.229000Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "usgs_m4_5_earthquakes_past_day",
+            "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
+            "feedFormat": "atom"
+          }
+        },
+        {
+          "id": "514a7ac7b7db",
+          "sourceLabel": "USGS M4.5+ Earthquakes — Past Day",
+          "sourceName": "USGS M4.5+ Earthquakes — Past Day",
+          "sourceType": "climate-hazard",
+          "title": "M 4.7 - 8 km N of La Tronosa, Panama",
+          "summary": "DYFI? - I Time 2026-10-10 03:56:17 UTC 2026-10-10 03:56:17 UTC at epicenter Location 7.514°N 80.585°W Depth 10.00 km (6.21 mi)",
+          "summary_snippet": "DYFI? - I Time 2026-10-10 03:56:17 UTC 2026-10-10 03:56:17 UTC at epicenter Location 7.514°N 80.585°W Depth 10.00 km (6.21 mi)",
+          "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1cb",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1cb",
+          "time": "2026-10-10T04:50:08.248000Z",
+          "published_date": "2026-10-10T04:50:08.248000Z",
+          "publishedDate": "2026-10-10T04:50:08.248000Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "usgs_m4_5_earthquakes_past_day",
+            "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
+            "feedFormat": "atom"
+          }
+        },
+        {
+          "id": "a719e91737aa",
+          "sourceLabel": "USGS M4.5+ Earthquakes — Past Day",
+          "sourceName": "USGS M4.5+ Earthquakes — Past Day",
+          "sourceType": "climate-hazard",
+          "title": "M 4.6 - 9 km NNE of La Tronosa, Panama",
+          "summary": "DYFI? - I Time 2026-10-10 00:51:48 UTC 2026-10-10 00:51:48 UTC at epicenter Location 7.516°N 80.557°W Depth 10.00 km (6.21 mi)",
+          "summary_snippet": "DYFI? - I Time 2026-10-10 00:51:48 UTC 2026-10-10 00:51:48 UTC at epicenter Location 7.516°N 80.557°W Depth 10.00 km (6.21 mi)",
+          "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1bj",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1bj",
+          "time": "2026-10-10T03:15:53.565000Z",
+          "published_date": "2026-10-10T03:15:53.565000Z",
+          "publishedDate": "2026-10-10T03:15:53.565000Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "usgs_m4_5_earthquakes_past_day",
+            "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
+            "feedFormat": "atom"
+          }
+        },
+        {
+          "id": "e95d427020f2",
+          "sourceLabel": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1bl",
+          "sourceName": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1bl",
+          "sourceType": "climate-hazard",
+          "title": "M 4.7 - 10 km N of La Tronosa, Panama",
+          "summary": "DYFI? - III Time 2026-10-10 01:11:47 UTC 2026-10-10 01:11:47 UTC at epicenter Location 7.530°N 80.586°W Depth 10.00 km (6.21 mi)",
+          "summary_snippet": "DYFI? - III Time 2026-10-10 01:11:47 UTC 2026-10-10 01:11:47 UTC at epicenter Location 7.530°N 80.586°W Depth 10.00 km (6.21 mi)",
+          "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1bl",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1bl",
+          "time": "2026-10-10T01:36:54.248000Z",
+          "published_date": "2026-10-10T01:36:54.248000Z",
+          "publishedDate": "2026-10-10T01:36:54.248000Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "usgs_m4_5_earthquakes_past_day",
+            "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
+            "feedFormat": "atom"
+          }
+        },
+        {
+          "id": "7809b6f2602c",
+          "sourceLabel": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1ax",
+          "sourceName": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1ax",
+          "sourceType": "climate-hazard",
+          "title": "M 5.0 - 8 km ESE of La Tronosa, Panama",
+          "summary": "Time 2026-10-09 23:10:02 UTC 2026-10-09 23:10:02 UTC at epicenter Location 7.396°N 80.528°W Depth 10.00 km (6.21 mi)",
+          "summary_snippet": "Time 2026-10-09 23:10:02 UTC 2026-10-09 23:10:02 UTC at epicenter Location 7.396°N 80.528°W Depth 10.00 km (6.21 mi)",
+          "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1ax",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1ax",
+          "time": "2026-10-09T23:38:07.040000Z",
+          "published_date": "2026-10-09T23:38:07.040000Z",
+          "publishedDate": "2026-10-09T23:38:07.040000Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "usgs_m4_5_earthquakes_past_day",
+            "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
+            "feedFormat": "atom"
+          }
+        },
+        {
+          "id": "0146870a09c6",
+          "sourceLabel": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u19t",
+          "sourceName": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u19t",
+          "sourceType": "climate-hazard",
+          "title": "M 5.0 - 6 km NE of La Tronosa, Panama",
+          "summary": "Time 2026-10-09 20:21:37 UTC 2026-10-09 20:21:37 UTC at epicenter Location 7.473°N 80.549°W Depth 10.00 km (6.21 mi)",
+          "summary_snippet": "Time 2026-10-09 20:21:37 UTC 2026-10-09 20:21:37 UTC at epicenter Location 7.473°N 80.549°W Depth 10.00 km (6.21 mi)",
+          "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u19t",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u19t",
+          "time": "2026-10-09T21:59:53.040000Z",
+          "published_date": "2026-10-09T21:59:53.040000Z",
+          "publishedDate": "2026-10-09T21:59:53.040000Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "usgs_m4_5_earthquakes_past_day",
+            "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
+            "feedFormat": "atom"
+          }
+        },
+        {
+          "id": "be3321676d83",
+          "sourceLabel": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u19c",
+          "sourceName": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u19c",
+          "sourceType": "climate-hazard",
+          "title": "M 4.7 - 8 km N of La Tronosa, Panama",
+          "summary": "DYFI? - I Time 2026-10-09 19:32:19 UTC 2026-10-09 19:32:19 UTC at epicenter Location 7.515°N 80.590°W Depth 10.00 km (6.21 mi)",
+          "summary_snippet": "DYFI? - I Time 2026-10-09 19:32:19 UTC 2026-10-09 19:32:19 UTC at epicenter Location 7.515°N 80.590°W Depth 10.00 km (6.21 mi)",
+          "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u19c",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u19c",
+          "time": "2026-10-09T21:40:03.031000Z",
+          "published_date": "2026-10-09T21:40:03.031000Z",
+          "publishedDate": "2026-10-09T21:40:03.031000Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "usgs_m4_5_earthquakes_past_day",
+            "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
+            "feedFormat": "atom"
+          }
+        }
+      ]
+    },
+    {
+      "id": "87b50f2c69aebd15",
+      "title": "M 4.5 - 10 km SE of Pedasí, Panama",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 5,
+      "sourceCount": 1,
+      "sources": [
+        "earthquake.usgs.gov"
+      ],
+      "anchors": [],
+      "firstSeen": "2026-10-10T00:53:22.993000Z",
+      "lastSeen": "2026-10-10T08:01:25.040000Z",
+      "urls": [
+        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1db",
+        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1d1",
+        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1d5",
+        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1d7",
+        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1b3"
+      ],
+      "reports": [
+        {
+          "id": "232cb169fd02",
+          "sourceLabel": "USGS M4.5+ Earthquakes — Past Day",
+          "sourceName": "USGS M4.5+ Earthquakes — Past Day",
+          "sourceType": "climate-hazard",
+          "title": "M 4.5 - 10 km SE of Pedasí, Panama",
+          "summary": "Time 2026-10-10 06:47:49 UTC 2026-10-10 06:47:49 UTC at epicenter Location 7.456°N 79.961°W Depth 10.00 km (6.21 mi)",
+          "summary_snippet": "Time 2026-10-10 06:47:49 UTC 2026-10-10 06:47:49 UTC at epicenter Location 7.456°N 79.961°W Depth 10.00 km (6.21 mi)",
+          "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1db",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1db",
+          "time": "2026-10-10T08:01:25.040000Z",
+          "published_date": "2026-10-10T08:01:25.040000Z",
+          "publishedDate": "2026-10-10T08:01:25.040000Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "usgs_m4_5_earthquakes_past_day",
+            "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
+            "feedFormat": "atom"
+          }
+        },
+        {
+          "id": "a9a902079722",
+          "sourceLabel": "USGS M4.5+ Earthquakes — Past Day",
+          "sourceName": "USGS M4.5+ Earthquakes — Past Day",
+          "sourceType": "climate-hazard",
+          "title": "M 4.5 - 25 km SSE of Pedasí, Panama",
+          "summary": "Time 2026-10-10 06:16:32 UTC 2026-10-10 06:16:32 UTC at epicenter Location 7.317°N 79.948°W Depth 10.00 km (6.21 mi)",
+          "summary_snippet": "Time 2026-10-10 06:16:32 UTC 2026-10-10 06:16:32 UTC at epicenter Location 7.317°N 79.948°W Depth 10.00 km (6.21 mi)",
+          "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1d1",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1d1",
+          "time": "2026-10-10T07:32:53.040000Z",
+          "published_date": "2026-10-10T07:32:53.040000Z",
+          "publishedDate": "2026-10-10T07:32:53.040000Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "usgs_m4_5_earthquakes_past_day",
+            "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
+            "feedFormat": "atom"
+          }
+        },
+        {
+          "id": "d620096b5e78",
+          "sourceLabel": "USGS M4.5+ Earthquakes — Past Day",
+          "sourceName": "USGS M4.5+ Earthquakes — Past Day",
+          "sourceType": "climate-hazard",
+          "title": "M 4.7 - 26 km S of Pedasí, Panama",
+          "summary": "Time 2026-10-10 06:27:09 UTC 2026-10-10 06:27:09 UTC at epicenter Location 7.297°N 79.983°W Depth 10.00 km (6.21 mi)",
+          "summary_snippet": "Time 2026-10-10 06:27:09 UTC 2026-10-10 06:27:09 UTC at epicenter Location 7.297°N 79.983°W Depth 10.00 km (6.21 mi)",
+          "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1d5",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1d5",
+          "time": "2026-10-10T06:58:49.040000Z",
+          "published_date": "2026-10-10T06:58:49.040000Z",
+          "publishedDate": "2026-10-10T06:58:49.040000Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "usgs_m4_5_earthquakes_past_day",
+            "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
+            "feedFormat": "atom"
+          }
+        },
+        {
+          "id": "697f7005ac7d",
+          "sourceLabel": "USGS M4.5+ Earthquakes — Past Day",
+          "sourceName": "USGS M4.5+ Earthquakes — Past Day",
+          "sourceType": "climate-hazard",
+          "title": "M 4.9 - 26 km SSE of Pedasí, Panama",
+          "summary": "Time 2026-10-10 06:30:03 UTC 2026-10-10 06:30:03 UTC at epicenter Location 7.300°N 79.969°W Depth 10.00 km (6.21 mi)",
+          "summary_snippet": "Time 2026-10-10 06:30:03 UTC 2026-10-10 06:30:03 UTC at epicenter Location 7.300°N 79.969°W Depth 10.00 km (6.21 mi)",
+          "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1d7",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1d7",
+          "time": "2026-10-10T06:48:43.040000Z",
+          "published_date": "2026-10-10T06:48:43.040000Z",
+          "publishedDate": "2026-10-10T06:48:43.040000Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "usgs_m4_5_earthquakes_past_day",
+            "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
+            "feedFormat": "atom"
+          }
+        },
+        {
+          "id": "a16418504157",
+          "sourceLabel": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1b3",
+          "sourceName": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1b3",
+          "sourceType": "climate-hazard",
+          "title": "M 4.5 - 45 km SSE of Pedasí, Panama",
+          "summary": "DYFI? - III Time 2026-10-09 23:54:22 UTC 2026-10-09 23:54:22 UTC at epicenter Location 7.144°N 79.890°W Depth 10.00 km (6.21 mi)",
+          "summary_snippet": "DYFI? - III Time 2026-10-09 23:54:22 UTC 2026-10-09 23:54:22 UTC at epicenter Location 7.144°N 79.890°W Depth 10.00 km (6.21 mi)",
+          "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1b3",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1b3",
+          "time": "2026-10-10T00:53:22.993000Z",
+          "published_date": "2026-10-10T00:53:22.993000Z",
+          "publishedDate": "2026-10-10T00:53:22.993000Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "usgs_m4_5_earthquakes_past_day",
+            "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
+            "feedFormat": "atom"
+          }
+        }
+      ]
+    },
+    {
       "id": "db037c2987eba324",
       "title": "Green forest fire notification in Brazil",
       "category": "general",
@@ -640,115 +964,385 @@
       ]
     },
     {
-      "id": "bf2460937d9fa573",
-      "title": "M 4.7 - 10 km N of La Tronosa, Panama",
+      "id": "14c4f715a8ccb84a",
+      "title": "CNN.com - Transcripts - CNN",
       "category": "general",
       "confidence": "low",
       "reportCount": 4,
       "sourceCount": 1,
       "sources": [
-        "earthquake.usgs.gov"
+        "news.google.com"
       ],
       "anchors": [],
-      "firstSeen": "2026-10-09T21:40:03.031000Z",
-      "lastSeen": "2026-10-10T01:36:54.248000Z",
+      "firstSeen": "2026-10-09T19:00:00Z",
+      "lastSeen": "2026-10-09T22:00:00Z",
       "urls": [
-        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1bl",
-        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1ax",
-        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u19t",
-        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u19c"
+        "https://news.google.com/rss/articles/CBMic0FVX3lxTE9ES0lfbVkxMTZYY1RkdEUyWlFSTE9LN2EyS28wNU5td0gtRGZER3Yxa2FUZXNabkJGcDJRaHJwY3UyN0xOeTNTdXJyY2tmNVk3NWxfdUxUYWdfSzRkWnJEQTcyZ2JzTDVodEZNNlFhUUQ0VEE?oc=5",
+        "https://news.google.com/rss/articles/CBMib0FVX3lxTE9sV182SUlseVRfU2xBS3YwbnFSRlJMeVhGYktCZlZYLUp6dWtuVGJ3dDNHNVBKRTdBRnltOVRiRjRZZmg0azFtYmlic1NsUkpiTy0yRFdld2tPWnIyeXFUN1Nac3d6bTNCS2NQUEJraw?oc=5",
+        "https://news.google.com/rss/articles/CBMic0FVX3lxTE1Xek9PWDFNU0JhcHJ4X1VtWTREMXRTN2NyRzB6eXRYLUdrdVZaazFlZ2VnRi13WDZMR2ZoaEFiUnlyUEJGOHhzWWRRbHhvS1NfRWltOGdKYmc0NHFOcUl3cFVhZms4VF9KSjVDcjNLRmJCZ1U?oc=5",
+        "https://news.google.com/rss/articles/CBMic0FVX3lxTE41eXg1N092dnlEcFdmOXFGMXlZczJLS1JFa2dqaUFMb2EtenctcnRhLTBmSllmOHgyY3A3cFpGT25PTTl1eUJ4Rl8wd0l1MkJ2ZVdIVHRsWWdKMC1hTkV4Yk1aajh5VGpLdzFmU2VnYWZWN1k?oc=5"
       ],
       "reports": [
         {
-          "id": "e95d427020f2",
-          "sourceLabel": "USGS M4.5+ Earthquakes — Past Day",
-          "sourceName": "USGS M4.5+ Earthquakes — Past Day",
-          "sourceType": "climate-hazard",
-          "title": "M 4.7 - 10 km N of La Tronosa, Panama",
-          "summary": "DYFI? - III Time 2026-10-10 01:11:47 UTC 2026-10-10 01:11:47 UTC at epicenter Location 7.530°N 80.586°W Depth 10.00 km (6.21 mi)",
-          "summary_snippet": "DYFI? - III Time 2026-10-10 01:11:47 UTC 2026-10-10 01:11:47 UTC at epicenter Location 7.530°N 80.586°W Depth 10.00 km (6.21 mi)",
-          "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1bl",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1bl",
-          "time": "2026-10-10T01:36:54.248000Z",
-          "published_date": "2026-10-10T01:36:54.248000Z",
-          "publishedDate": "2026-10-10T01:36:54.248000Z",
+          "id": "4144d6e7ed58",
+          "sourceLabel": "Google News — CNN Politics",
+          "sourceName": "Google News — CNN Politics",
+          "sourceType": "us-politics",
+          "title": "CNN.com - Transcripts - CNN",
+          "summary": "CNN.com - Transcripts CNN",
+          "summary_snippet": "CNN.com - Transcripts CNN",
+          "source": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9ES0lfbVkxMTZYY1RkdEUyWlFSTE9LN2EyS28wNU5td0gtRGZER3Yxa2FUZXNabkJGcDJRaHJwY3UyN0xOeTNTdXJyY2tmNVk3NWxfdUxUYWdfSzRkWnJEQTcyZ2JzTDVodEZNNlFhUUQ0VEE?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9ES0lfbVkxMTZYY1RkdEUyWlFSTE9LN2EyS28wNU5td0gtRGZER3Yxa2FUZXNabkJGcDJRaHJwY3UyN0xOeTNTdXJyY2tmNVk3NWxfdUxUYWdfSzRkWnJEQTcyZ2JzTDVodEZNNlFhUUQ0VEE?oc=5",
+          "time": "2026-10-09T22:00:00Z",
+          "published_date": "2026-10-09T22:00:00Z",
+          "publishedDate": "2026-10-09T22:00:00Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "usgs_m4_5_earthquakes_past_day",
-            "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
-            "feedFormat": "atom"
+            "sourceId": "google_news_cnn_politics",
+            "sourceUrl": "https://news.google.com/rss/search?q=site%3Acnn.com+politics+Trump+Congress+Senate+White+House+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
           }
         },
         {
-          "id": "7809b6f2602c",
-          "sourceLabel": "USGS M4.5+ Earthquakes — Past Day",
-          "sourceName": "USGS M4.5+ Earthquakes — Past Day",
-          "sourceType": "climate-hazard",
-          "title": "M 5.0 - 8 km ESE of La Tronosa, Panama",
-          "summary": "Time 2026-10-09 23:10:02 UTC 2026-10-09 23:10:02 UTC at epicenter Location 7.396°N 80.528°W Depth 10.00 km (6.21 mi)",
-          "summary_snippet": "Time 2026-10-09 23:10:02 UTC 2026-10-09 23:10:02 UTC at epicenter Location 7.396°N 80.528°W Depth 10.00 km (6.21 mi)",
-          "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1ax",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1ax",
-          "time": "2026-10-09T23:38:07.040000Z",
-          "published_date": "2026-10-09T23:38:07.040000Z",
-          "publishedDate": "2026-10-09T23:38:07.040000Z",
+          "id": "1cc07acb1169",
+          "sourceLabel": "Google News — CNN Politics",
+          "sourceName": "Google News — CNN Politics",
+          "sourceType": "us-politics",
+          "title": "CNN.com - Transcripts - CNN",
+          "summary": "CNN.com - Transcripts CNN",
+          "summary_snippet": "CNN.com - Transcripts CNN",
+          "source": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9sV182SUlseVRfU2xBS3YwbnFSRlJMeVhGYktCZlZYLUp6dWtuVGJ3dDNHNVBKRTdBRnltOVRiRjRZZmg0azFtYmlic1NsUkpiTy0yRFdld2tPWnIyeXFUN1Nac3d6bTNCS2NQUEJraw?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9sV182SUlseVRfU2xBS3YwbnFSRlJMeVhGYktCZlZYLUp6dWtuVGJ3dDNHNVBKRTdBRnltOVRiRjRZZmg0azFtYmlic1NsUkpiTy0yRFdld2tPWnIyeXFUN1Nac3d6bTNCS2NQUEJraw?oc=5",
+          "time": "2026-10-09T22:00:00Z",
+          "published_date": "2026-10-09T22:00:00Z",
+          "publishedDate": "2026-10-09T22:00:00Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "usgs_m4_5_earthquakes_past_day",
-            "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
-            "feedFormat": "atom"
+            "sourceId": "google_news_cnn_politics",
+            "sourceUrl": "https://news.google.com/rss/search?q=site%3Acnn.com+politics+Trump+Congress+Senate+White+House+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
           }
         },
         {
-          "id": "0146870a09c6",
-          "sourceLabel": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u19t",
-          "sourceName": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u19t",
-          "sourceType": "climate-hazard",
-          "title": "M 5.0 - 6 km NE of La Tronosa, Panama",
-          "summary": "Time 2026-10-09 20:21:37 UTC 2026-10-09 20:21:37 UTC at epicenter Location 7.473°N 80.549°W Depth 10.00 km (6.21 mi)",
-          "summary_snippet": "Time 2026-10-09 20:21:37 UTC 2026-10-09 20:21:37 UTC at epicenter Location 7.473°N 80.549°W Depth 10.00 km (6.21 mi)",
-          "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u19t",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u19t",
-          "time": "2026-10-09T21:59:53.040000Z",
-          "published_date": "2026-10-09T21:59:53.040000Z",
-          "publishedDate": "2026-10-09T21:59:53.040000Z",
+          "id": "926edca7694f",
+          "sourceLabel": "Google News — CNN Politics",
+          "sourceName": "Google News — CNN Politics",
+          "sourceType": "us-politics",
+          "title": "CNN.com - Transcripts - CNN",
+          "summary": "CNN.com - Transcripts CNN",
+          "summary_snippet": "CNN.com - Transcripts CNN",
+          "source": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1Xek9PWDFNU0JhcHJ4X1VtWTREMXRTN2NyRzB6eXRYLUdrdVZaazFlZ2VnRi13WDZMR2ZoaEFiUnlyUEJGOHhzWWRRbHhvS1NfRWltOGdKYmc0NHFOcUl3cFVhZms4VF9KSjVDcjNLRmJCZ1U?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1Xek9PWDFNU0JhcHJ4X1VtWTREMXRTN2NyRzB6eXRYLUdrdVZaazFlZ2VnRi13WDZMR2ZoaEFiUnlyUEJGOHhzWWRRbHhvS1NfRWltOGdKYmc0NHFOcUl3cFVhZms4VF9KSjVDcjNLRmJCZ1U?oc=5",
+          "time": "2026-10-09T20:00:00Z",
+          "published_date": "2026-10-09T20:00:00Z",
+          "publishedDate": "2026-10-09T20:00:00Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "usgs_m4_5_earthquakes_past_day",
-            "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
-            "feedFormat": "atom"
+            "sourceId": "google_news_cnn_politics",
+            "sourceUrl": "https://news.google.com/rss/search?q=site%3Acnn.com+politics+Trump+Congress+Senate+White+House+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
           }
         },
         {
-          "id": "be3321676d83",
-          "sourceLabel": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u19c",
-          "sourceName": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u19c",
-          "sourceType": "climate-hazard",
-          "title": "M 4.7 - 8 km N of La Tronosa, Panama",
-          "summary": "DYFI? - I Time 2026-10-09 19:32:19 UTC 2026-10-09 19:32:19 UTC at epicenter Location 7.515°N 80.590°W Depth 10.00 km (6.21 mi)",
-          "summary_snippet": "DYFI? - I Time 2026-10-09 19:32:19 UTC 2026-10-09 19:32:19 UTC at epicenter Location 7.515°N 80.590°W Depth 10.00 km (6.21 mi)",
-          "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u19c",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u19c",
-          "time": "2026-10-09T21:40:03.031000Z",
-          "published_date": "2026-10-09T21:40:03.031000Z",
-          "publishedDate": "2026-10-09T21:40:03.031000Z",
+          "id": "6f7655323dad",
+          "sourceLabel": "Google News — CNN Politics",
+          "sourceName": "Google News — CNN Politics",
+          "sourceType": "us-politics",
+          "title": "CNN.com - Transcripts - CNN",
+          "summary": "CNN.com - Transcripts CNN",
+          "summary_snippet": "CNN.com - Transcripts CNN",
+          "source": "https://news.google.com/rss/articles/CBMic0FVX3lxTE41eXg1N092dnlEcFdmOXFGMXlZczJLS1JFa2dqaUFMb2EtenctcnRhLTBmSllmOHgyY3A3cFpGT25PTTl1eUJ4Rl8wd0l1MkJ2ZVdIVHRsWWdKMC1hTkV4Yk1aajh5VGpLdzFmU2VnYWZWN1k?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE41eXg1N092dnlEcFdmOXFGMXlZczJLS1JFa2dqaUFMb2EtenctcnRhLTBmSllmOHgyY3A3cFpGT25PTTl1eUJ4Rl8wd0l1MkJ2ZVdIVHRsWWdKMC1hTkV4Yk1aajh5VGpLdzFmU2VnYWZWN1k?oc=5",
+          "time": "2026-10-09T19:00:00Z",
+          "published_date": "2026-10-09T19:00:00Z",
+          "publishedDate": "2026-10-09T19:00:00Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "usgs_m4_5_earthquakes_past_day",
-            "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
-            "feedFormat": "atom"
+            "sourceId": "google_news_cnn_politics",
+            "sourceUrl": "https://news.google.com/rss/search?q=site%3Acnn.com+politics+Trump+Congress+Senate+White+House+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
+      "id": "20f3fa125c09c501",
+      "title": "Green forest fire notification in Papua New Guinea",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 3,
+      "sourceCount": 1,
+      "sources": [
+        "gdacs.org"
+      ],
+      "anchors": [],
+      "firstSeen": "2026-10-09T23:06:00Z",
+      "lastSeen": "2026-10-10T07:06:01Z",
+      "urls": [
+        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032700",
+        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032699",
+        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032692"
+      ],
+      "reports": [
+        {
+          "id": "3532cb1bbf50",
+          "sourceLabel": "GDACS Global Disaster Alerts",
+          "sourceName": "GDACS Global Disaster Alerts",
+          "sourceType": "climate-hazard",
+          "title": "Green forest fire notification in Papua New Guinea",
+          "summary": "On 02/10/2026, a forest fire started in Papua New Guinea, until 10/10/2026.",
+          "summary_snippet": "On 02/10/2026, a forest fire started in Papua New Guinea, until 10/10/2026.",
+          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032700",
+          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032700",
+          "time": "2026-10-10T07:06:01Z",
+          "published_date": "2026-10-10T07:06:01Z",
+          "publishedDate": "2026-10-10T07:06:01Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "gdacs_global_disaster_alerts",
+            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "ac1b28aaddf5",
+          "sourceLabel": "GDACS Global Disaster Alerts",
+          "sourceName": "GDACS Global Disaster Alerts",
+          "sourceType": "climate-hazard",
+          "title": "Green forest fire notification in Papua New Guinea",
+          "summary": "On 04/10/2026, a forest fire started in Papua New Guinea, until 10/10/2026.",
+          "summary_snippet": "On 04/10/2026, a forest fire started in Papua New Guinea, until 10/10/2026.",
+          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032699",
+          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032699",
+          "time": "2026-10-10T07:04:25Z",
+          "published_date": "2026-10-10T07:04:25Z",
+          "publishedDate": "2026-10-10T07:04:25Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "gdacs_global_disaster_alerts",
+            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "80a0e8cf1fe9",
+          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032692",
+          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032692",
+          "sourceType": "climate-hazard",
+          "title": "Green forest fire notification in Papua New Guinea",
+          "summary": "On 02/10/2026, a forest fire started in Papua New Guinea, until 09/10/2026.",
+          "summary_snippet": "On 02/10/2026, a forest fire started in Papua New Guinea, until 09/10/2026.",
+          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032692",
+          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032692",
+          "time": "2026-10-09T23:06:00Z",
+          "published_date": "2026-10-09T23:06:00Z",
+          "publishedDate": "2026-10-09T23:06:00Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "gdacs_global_disaster_alerts",
+            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
+      "id": "5e48752d78514088",
+      "title": "Green forest fire notification in Bolivia",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 3,
+      "sourceCount": 1,
+      "sources": [
+        "gdacs.org"
+      ],
+      "anchors": [],
+      "firstSeen": "2026-10-09T23:01:34Z",
+      "lastSeen": "2026-10-10T07:00:42Z",
+      "urls": [
+        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032697",
+        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032690",
+        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032686"
+      ],
+      "reports": [
+        {
+          "id": "5b25e9ea587e",
+          "sourceLabel": "GDACS Global Disaster Alerts",
+          "sourceName": "GDACS Global Disaster Alerts",
+          "sourceType": "climate-hazard",
+          "title": "Green forest fire notification in Bolivia",
+          "summary": "On 09/10/2026, a forest fire started in Bolivia, until 10/10/2026.",
+          "summary_snippet": "On 09/10/2026, a forest fire started in Bolivia, until 10/10/2026.",
+          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032697",
+          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032697",
+          "time": "2026-10-10T07:00:42Z",
+          "published_date": "2026-10-10T07:00:42Z",
+          "publishedDate": "2026-10-10T07:00:42Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "gdacs_global_disaster_alerts",
+            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "4d04933448d5",
+          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032690",
+          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032690",
+          "sourceType": "climate-hazard",
+          "title": "Green forest fire notification in Bolivia",
+          "summary": "On 03/10/2026, a forest fire started in Bolivia, until 09/10/2026.",
+          "summary_snippet": "On 03/10/2026, a forest fire started in Bolivia, until 09/10/2026.",
+          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032690",
+          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032690",
+          "time": "2026-10-09T23:04:35Z",
+          "published_date": "2026-10-09T23:04:35Z",
+          "publishedDate": "2026-10-09T23:04:35Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "gdacs_global_disaster_alerts",
+            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "71ffec967a29",
+          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032686",
+          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032686",
+          "sourceType": "climate-hazard",
+          "title": "Green forest fire notification in Bolivia",
+          "summary": "On 07/10/2026, a forest fire started in Bolivia, until 09/10/2026.",
+          "summary_snippet": "On 07/10/2026, a forest fire started in Bolivia, until 09/10/2026.",
+          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032686",
+          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032686",
+          "time": "2026-10-09T23:01:34Z",
+          "published_date": "2026-10-09T23:01:34Z",
+          "publishedDate": "2026-10-09T23:01:34Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "gdacs_global_disaster_alerts",
+            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
+      "id": "199780e0cc2d9d2b",
+      "title": "Green earthquake (Magnitude 6M, Depth:10km) in Panama 10/10/2026 04:14 UTC, 4 thousand (in MMI>=VII).",
+      "category": "disaster",
+      "confidence": "low",
+      "reportCount": 3,
+      "sourceCount": 1,
+      "sources": [
+        "gdacs.org"
+      ],
+      "anchors": [],
+      "firstSeen": "2026-10-09T18:49:51Z",
+      "lastSeen": "2026-10-10T04:32:21Z",
+      "urls": [
+        "https://www.gdacs.org/report.aspx?eventtype=EQ&eventid=1570467",
+        "https://www.gdacs.org/report.aspx?eventtype=EQ&eventid=1570370",
+        "https://www.gdacs.org/report.aspx?eventtype=EQ&eventid=1570350"
+      ],
+      "reports": [
+        {
+          "id": "778b7a3dad40",
+          "sourceLabel": "GDACS Global Disaster Alerts",
+          "sourceName": "GDACS Global Disaster Alerts",
+          "sourceType": "climate-hazard",
+          "title": "Green earthquake (Magnitude 6M, Depth:10km) in Panama 10/10/2026 04:14 UTC, 4 thousand (in MMI>=VII).",
+          "summary": "On 10/10/2026 4:14:01 AM, an earthquake occurred in Panama potentially affecting 4 thousand (in MMI>=VII). The earthquake had Magnitude 6M, Depth:10km.",
+          "summary_snippet": "On 10/10/2026 4:14:01 AM, an earthquake occurred in Panama potentially affecting 4 thousand (in MMI>=VII). The earthquake had Magnitude 6M, Depth:10km.",
+          "source": "https://www.gdacs.org/report.aspx?eventtype=EQ&eventid=1570467",
+          "url": "https://www.gdacs.org/report.aspx?eventtype=EQ&eventid=1570467",
+          "time": "2026-10-10T04:32:21Z",
+          "published_date": "2026-10-10T04:32:21Z",
+          "publishedDate": "2026-10-10T04:32:21Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "gdacs_global_disaster_alerts",
+            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "773bbdc2cd70",
+          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=EQ&eventid=1570370",
+          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=EQ&eventid=1570370",
+          "sourceType": "climate-hazard",
+          "title": "Green earthquake (Magnitude 6.6M, Depth:10km) in Panama 09/10/2026 20:25 UTC, 10 thousand (in MMI>=VII).",
+          "summary": "On 10/9/2026 8:25:39 PM, an earthquake occurred in Panama potentially affecting 10 thousand (in MMI>=VII). The earthquake had Magnitude 6.6M, Depth:10km.",
+          "summary_snippet": "On 10/9/2026 8:25:39 PM, an earthquake occurred in Panama potentially affecting 10 thousand (in MMI>=VII). The earthquake had Magnitude 6.6M, Depth:10km.",
+          "source": "https://www.gdacs.org/report.aspx?eventtype=EQ&eventid=1570370",
+          "url": "https://www.gdacs.org/report.aspx?eventtype=EQ&eventid=1570370",
+          "time": "2026-10-09T20:32:32Z",
+          "published_date": "2026-10-09T20:32:32Z",
+          "publishedDate": "2026-10-09T20:32:32Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "gdacs_global_disaster_alerts",
+            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "7bf78244cc8e",
+          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=EQ&eventid=1570350",
+          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=EQ&eventid=1570350",
+          "sourceType": "climate-hazard",
+          "title": "Green earthquake (Magnitude 5.8M, Depth:10km) in Panama 09/10/2026 18:37 UTC, 5 thousand (in MMI>=VII).",
+          "summary": "On 10/9/2026 6:37:46 PM, an earthquake occurred in Panama potentially affecting 5 thousand (in MMI>=VII). The earthquake had Magnitude 5.8M, Depth:10km.",
+          "summary_snippet": "On 10/9/2026 6:37:46 PM, an earthquake occurred in Panama potentially affecting 5 thousand (in MMI>=VII). The earthquake had Magnitude 5.8M, Depth:10km.",
+          "source": "https://www.gdacs.org/report.aspx?eventtype=EQ&eventid=1570350",
+          "url": "https://www.gdacs.org/report.aspx?eventtype=EQ&eventid=1570350",
+          "time": "2026-10-09T18:49:51Z",
+          "published_date": "2026-10-09T18:49:51Z",
+          "publishedDate": "2026-10-09T18:49:51Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "gdacs_global_disaster_alerts",
+            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "feedFormat": "rss"
           }
         }
       ]
@@ -774,8 +1368,8 @@
       "reports": [
         {
           "id": "9b51b6c95074",
-          "sourceLabel": "USGS M4.5+ Earthquakes — Past Day",
-          "sourceName": "USGS M4.5+ Earthquakes — Past Day",
+          "sourceLabel": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1ay",
+          "sourceName": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1ay",
           "sourceType": "climate-hazard",
           "title": "M 5.4 - 9 km SSE of Los Asientos, Panama",
           "summary": "PAGER - GREEN ShakeMap - VII DYFI? - V Time 2026-10-09 23:12:37 UTC 2026-10-09 23:12:37 UTC at epicenter Location 7.437°N 80.097°W Depth 10.00 km (6.21 mi)",
@@ -1154,67 +1748,67 @@
       ]
     },
     {
-      "id": "5e48752d78514088",
-      "title": "Green forest fire notification in Bolivia",
+      "id": "54d460131b7b8adb",
+      "title": "M 4.9 - 10 km SSW of Cañas, Panama",
       "category": "general",
       "confidence": "low",
       "reportCount": 2,
       "sourceCount": 1,
       "sources": [
-        "gdacs.org"
+        "earthquake.usgs.gov"
       ],
       "anchors": [],
-      "firstSeen": "2026-10-09T23:01:34Z",
-      "lastSeen": "2026-10-09T23:04:35Z",
+      "firstSeen": "2026-10-10T01:33:30.040000Z",
+      "lastSeen": "2026-10-10T06:40:14.954000Z",
       "urls": [
-        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032690",
-        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032686"
+        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1d2",
+        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1b5"
       ],
       "reports": [
         {
-          "id": "4d04933448d5",
-          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032690",
-          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032690",
+          "id": "b999ce576e3c",
+          "sourceLabel": "USGS M4.5+ Earthquakes — Past Day",
+          "sourceName": "USGS M4.5+ Earthquakes — Past Day",
           "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in Bolivia",
-          "summary": "On 03/10/2026, a forest fire started in Bolivia, until 09/10/2026.",
-          "summary_snippet": "On 03/10/2026, a forest fire started in Bolivia, until 09/10/2026.",
-          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032690",
-          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032690",
-          "time": "2026-10-09T23:04:35Z",
-          "published_date": "2026-10-09T23:04:35Z",
-          "publishedDate": "2026-10-09T23:04:35Z",
+          "title": "M 4.9 - 10 km SSW of Cañas, Panama",
+          "summary": "DYFI? - III Time 2026-10-10 06:18:55 UTC 2026-10-10 06:18:55 UTC at epicenter Location 7.366°N 80.317°W Depth 10.00 km (6.21 mi)",
+          "summary_snippet": "DYFI? - III Time 2026-10-10 06:18:55 UTC 2026-10-10 06:18:55 UTC at epicenter Location 7.366°N 80.317°W Depth 10.00 km (6.21 mi)",
+          "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1d2",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1d2",
+          "time": "2026-10-10T06:40:14.954000Z",
+          "published_date": "2026-10-10T06:40:14.954000Z",
+          "publishedDate": "2026-10-10T06:40:14.954000Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
-            "feedFormat": "rss"
+            "sourceId": "usgs_m4_5_earthquakes_past_day",
+            "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
+            "feedFormat": "atom"
           }
         },
         {
-          "id": "71ffec967a29",
-          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032686",
-          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032686",
+          "id": "2211d9b74720",
+          "sourceLabel": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1b5",
+          "sourceName": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1b5",
           "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in Bolivia",
-          "summary": "On 07/10/2026, a forest fire started in Bolivia, until 09/10/2026.",
-          "summary_snippet": "On 07/10/2026, a forest fire started in Bolivia, until 09/10/2026.",
-          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032686",
-          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032686",
-          "time": "2026-10-09T23:01:34Z",
-          "published_date": "2026-10-09T23:01:34Z",
-          "publishedDate": "2026-10-09T23:01:34Z",
+          "title": "M 4.8 - 5 km SW of Cañas, Panama",
+          "summary": "Time 2026-10-10 00:03:04 UTC 2026-10-10 00:03:04 UTC at epicenter Location 7.405°N 80.296°W Depth 10.00 km (6.21 mi)",
+          "summary_snippet": "Time 2026-10-10 00:03:04 UTC 2026-10-10 00:03:04 UTC at epicenter Location 7.405°N 80.296°W Depth 10.00 km (6.21 mi)",
+          "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1b5",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1b5",
+          "time": "2026-10-10T01:33:30.040000Z",
+          "published_date": "2026-10-10T01:33:30.040000Z",
+          "publishedDate": "2026-10-10T01:33:30.040000Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
-            "feedFormat": "rss"
+            "sourceId": "usgs_m4_5_earthquakes_past_day",
+            "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
+            "feedFormat": "atom"
           }
         }
       ]
@@ -1420,72 +2014,6 @@
       ]
     },
     {
-      "id": "e179bd2259b29661",
-      "title": "Green earthquake (Magnitude 6.6M, Depth:10km) in Panama 09/10/2026 20:25 UTC, 10 thousand (in MMI>=VII).",
-      "category": "disaster",
-      "confidence": "low",
-      "reportCount": 2,
-      "sourceCount": 1,
-      "sources": [
-        "gdacs.org"
-      ],
-      "anchors": [],
-      "firstSeen": "2026-10-09T18:49:51Z",
-      "lastSeen": "2026-10-09T20:32:32Z",
-      "urls": [
-        "https://www.gdacs.org/report.aspx?eventtype=EQ&eventid=1570370",
-        "https://www.gdacs.org/report.aspx?eventtype=EQ&eventid=1570350"
-      ],
-      "reports": [
-        {
-          "id": "773bbdc2cd70",
-          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=EQ&eventid=1570370",
-          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=EQ&eventid=1570370",
-          "sourceType": "climate-hazard",
-          "title": "Green earthquake (Magnitude 6.6M, Depth:10km) in Panama 09/10/2026 20:25 UTC, 10 thousand (in MMI>=VII).",
-          "summary": "On 10/9/2026 8:25:39 PM, an earthquake occurred in Panama potentially affecting 10 thousand (in MMI>=VII). The earthquake had Magnitude 6.6M, Depth:10km.",
-          "summary_snippet": "On 10/9/2026 8:25:39 PM, an earthquake occurred in Panama potentially affecting 10 thousand (in MMI>=VII). The earthquake had Magnitude 6.6M, Depth:10km.",
-          "source": "https://www.gdacs.org/report.aspx?eventtype=EQ&eventid=1570370",
-          "url": "https://www.gdacs.org/report.aspx?eventtype=EQ&eventid=1570370",
-          "time": "2026-10-09T20:32:32Z",
-          "published_date": "2026-10-09T20:32:32Z",
-          "publishedDate": "2026-10-09T20:32:32Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "7bf78244cc8e",
-          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=EQ&eventid=1570350",
-          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=EQ&eventid=1570350",
-          "sourceType": "climate-hazard",
-          "title": "Green earthquake (Magnitude 5.8M, Depth:10km) in Panama 09/10/2026 18:37 UTC, 5 thousand (in MMI>=VII).",
-          "summary": "On 10/9/2026 6:37:46 PM, an earthquake occurred in Panama potentially affecting 5 thousand (in MMI>=VII). The earthquake had Magnitude 5.8M, Depth:10km.",
-          "summary_snippet": "On 10/9/2026 6:37:46 PM, an earthquake occurred in Panama potentially affecting 5 thousand (in MMI>=VII). The earthquake had Magnitude 5.8M, Depth:10km.",
-          "source": "https://www.gdacs.org/report.aspx?eventtype=EQ&eventid=1570350",
-          "url": "https://www.gdacs.org/report.aspx?eventtype=EQ&eventid=1570350",
-          "time": "2026-10-09T18:49:51Z",
-          "published_date": "2026-10-09T18:49:51Z",
-          "publishedDate": "2026-10-09T18:49:51Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
       "id": "4066761cb0024bb4",
       "title": "CNN News Central - CNN",
       "category": "general",
@@ -1505,8 +2033,8 @@
       "reports": [
         {
           "id": "0227ea1a6e18",
-          "sourceLabel": "Google News — CNN Politics",
-          "sourceName": "Google News — CNN Politics",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5uYTg1OTRoeldKSkQ1T09DdmlWQlBPa3pwZk9LWHlBNmdMSUdZbXZnNlk2dHp5bDZHOGdSblR1dUVUb3FEVkYtVlM4SUlYUHREenQzX1ZJZVFYX1I4bG10ZzhtSGRlNXpDY1A2VG1QM0g?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5uYTg1OTRoeldKSkQ1T09DdmlWQlBPa3pwZk9LWHlBNmdMSUdZbXZnNlk2dHp5bDZHOGdSblR1dUVUb3FEVkYtVlM4SUlYUHREenQzX1ZJZVFYX1I4bG10ZzhtSGRlNXpDY1A2VG1QM0g?oc=5",
           "sourceType": "us-politics",
           "title": "CNN News Central - CNN",
           "summary": "CNN News Central CNN",
@@ -1528,8 +2056,8 @@
         },
         {
           "id": "ec97de209072",
-          "sourceLabel": "Google News — CNN Politics",
-          "sourceName": "Google News — CNN Politics",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMicEFVX3lxTE54d0RFNUR5X1FibkMzQ2d6RTFMVDE5aDR4TmdHalV6b2E4OUVoQjRYR2RBbG9ZOUxkWXFjVUN6RHY2aHlMeWhWTjBJaTJIeUZNTDRqVG15WG1yRnV2bG1PeEtvckhqWDE1eHE5bWRMa3Y?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMicEFVX3lxTE54d0RFNUR5X1FibkMzQ2d6RTFMVDE5aDR4TmdHalV6b2E4OUVoQjRYR2RBbG9ZOUxkWXFjVUN6RHY2aHlMeWhWTjBJaTJIeUZNTDRqVG15WG1yRnV2bG1PeEtvckhqWDE1eHE5bWRMa3Y?oc=5",
           "sourceType": "us-politics",
           "title": "CNN News Central - CNN",
           "summary": "CNN News Central CNN",
@@ -1548,240 +2076,6 @@
             "sourceUrl": "https://news.google.com/rss/search?q=site%3Acnn.com+politics+Trump+Congress+Senate+White+House+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
-        }
-      ]
-    },
-    {
-      "id": "05e7a40f084fa218",
-      "title": "China’s revised defence mobilisation law touches nearly every sector - www.daily-sun.com",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [
-        "china"
-      ],
-      "firstSeen": "2026-10-09T17:56:00Z",
-      "lastSeen": "2026-10-09T17:56:00Z",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1LMDZabDFZTHJOTlczZDlOcVRKc19rLVY1ZmhOUG10RjJJVGRRa1FlNDNmRldGMUFIUEhUTXhiS2FIdlhkRTRYeXJlUG12MnlUV0xNQ19iUHMxZEk?oc=5",
-        "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1oVExXM2Z0YmdmbUpuSXpjVjFBSURZbzNHbFEtbFVLcFRKeEk4V01FTmJpZWNoOF9LUkI1bG0waDd6QTNzd1o2NDdZYm5jTXVmRkxwMThDSTIzZVRuSm13eHJ2QXR1SlN1?oc=5"
-      ],
-      "reports": [
-        {
-          "id": "7dd4b4dceb86",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1LMDZabDFZTHJOTlczZDlOcVRKc19rLVY1ZmhOUG10RjJJVGRRa1FlNDNmRldGMUFIUEhUTXhiS2FIdlhkRTRYeXJlUG12MnlUV0xNQ19iUHMxZEk?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1LMDZabDFZTHJOTlczZDlOcVRKc19rLVY1ZmhOUG10RjJJVGRRa1FlNDNmRldGMUFIUEhUTXhiS2FIdlhkRTRYeXJlUG12MnlUV0xNQ19iUHMxZEk?oc=5",
-          "sourceType": "china-security",
-          "title": "China’s revised defence mobilisation law touches nearly every sector - www.daily-sun.com",
-          "summary": "China’s revised defence mobilisation law touches nearly every sector www.daily-sun.com",
-          "summary_snippet": "China’s revised defence mobilisation law touches nearly every sector www.daily-sun.com",
-          "source": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1LMDZabDFZTHJOTlczZDlOcVRKc19rLVY1ZmhOUG10RjJJVGRRa1FlNDNmRldGMUFIUEhUTXhiS2FIdlhkRTRYeXJlUG12MnlUV0xNQ19iUHMxZEk?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1LMDZabDFZTHJOTlczZDlOcVRKc19rLVY1ZmhOUG10RjJJVGRRa1FlNDNmRldGMUFIUEhUTXhiS2FIdlhkRTRYeXJlUG12MnlUV0xNQ19iUHMxZEk?oc=5",
-          "time": "2026-10-09T17:56:00Z",
-          "published_date": "2026-10-09T17:56:00Z",
-          "publishedDate": "2026-10-09T17:56:00Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "china_security",
-            "sourceUrl": "https://news.google.com/rss/search?q=China+PLA+military+Taiwan+South+China+Sea+security+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "ac8e3e1473b6",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1oVExXM2Z0YmdmbUpuSXpjVjFBSURZbzNHbFEtbFVLcFRKeEk4V01FTmJpZWNoOF9LUkI1bG0waDd6QTNzd1o2NDdZYm5jTXVmRkxwMThDSTIzZVRuSm13eHJ2QXR1SlN1?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1oVExXM2Z0YmdmbUpuSXpjVjFBSURZbzNHbFEtbFVLcFRKeEk4V01FTmJpZWNoOF9LUkI1bG0waDd6QTNzd1o2NDdZYm5jTXVmRkxwMThDSTIzZVRuSm13eHJ2QXR1SlN1?oc=5",
-          "sourceType": "china-security",
-          "title": "China’s revised defence mobilisation law touches nearly every sector - www.daily-sun.com",
-          "summary": "China’s revised defence mobilisation law touches nearly every sector www.daily-sun.com",
-          "summary_snippet": "China’s revised defence mobilisation law touches nearly every sector www.daily-sun.com",
-          "source": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1oVExXM2Z0YmdmbUpuSXpjVjFBSURZbzNHbFEtbFVLcFRKeEk4V01FTmJpZWNoOF9LUkI1bG0waDd6QTNzd1o2NDdZYm5jTXVmRkxwMThDSTIzZVRuSm13eHJ2QXR1SlN1?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1oVExXM2Z0YmdmbUpuSXpjVjFBSURZbzNHbFEtbFVLcFRKeEk4V01FTmJpZWNoOF9LUkI1bG0waDd6QTNzd1o2NDdZYm5jTXVmRkxwMThDSTIzZVRuSm13eHJ2QXR1SlN1?oc=5",
-          "time": "2026-10-09T17:56:00Z",
-          "published_date": "2026-10-09T17:56:00Z",
-          "publishedDate": "2026-10-09T17:56:00Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "china_security",
-            "sourceUrl": "https://news.google.com/rss/search?q=China+PLA+military+Taiwan+South+China+Sea+security+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "5c81af3d7c0de3fc",
-      "title": "M 4.7 - 138 km SE of Petropavlovsk-Kamchatsky, Russia",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "sourceCount": 1,
-      "sources": [
-        "earthquake.usgs.gov"
-      ],
-      "anchors": [
-        "russia"
-      ],
-      "firstSeen": "2026-10-09T17:26:57.040000Z",
-      "lastSeen": "2026-10-09T17:32:27.040000Z",
-      "urls": [
-        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u18d",
-        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u18e"
-      ],
-      "reports": [
-        {
-          "id": "a248d4a345e0",
-          "sourceLabel": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u18d",
-          "sourceName": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u18d",
-          "sourceType": "climate-hazard",
-          "title": "M 4.7 - 138 km SE of Petropavlovsk-Kamchatsky, Russia",
-          "summary": "Time 2026-10-09 16:59:35 UTC 2026-10-09 16:59:35 UTC at epicenter Location 52.221°N 160.131°E Depth 33.51 km (20.82 mi)",
-          "summary_snippet": "Time 2026-10-09 16:59:35 UTC 2026-10-09 16:59:35 UTC at epicenter Location 52.221°N 160.131°E Depth 33.51 km (20.82 mi)",
-          "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u18d",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u18d",
-          "time": "2026-10-09T17:32:27.040000Z",
-          "published_date": "2026-10-09T17:32:27.040000Z",
-          "publishedDate": "2026-10-09T17:32:27.040000Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "usgs_m4_5_earthquakes_past_day",
-            "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
-            "feedFormat": "atom"
-          }
-        },
-        {
-          "id": "351593adda24",
-          "sourceLabel": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u18e",
-          "sourceName": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u18e",
-          "sourceType": "climate-hazard",
-          "title": "M 4.8 - 191 km SE of Petropavlovsk-Kamchatsky, Russia",
-          "summary": "Time 2026-10-09 17:09:04 UTC 2026-10-09 17:09:04 UTC at epicenter Location 51.895°N 160.699°E Depth 10.00 km (6.21 mi)",
-          "summary_snippet": "Time 2026-10-09 17:09:04 UTC 2026-10-09 17:09:04 UTC at epicenter Location 51.895°N 160.699°E Depth 10.00 km (6.21 mi)",
-          "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u18e",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u18e",
-          "time": "2026-10-09T17:26:57.040000Z",
-          "published_date": "2026-10-09T17:26:57.040000Z",
-          "publishedDate": "2026-10-09T17:26:57.040000Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "usgs_m4_5_earthquakes_past_day",
-            "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
-            "feedFormat": "atom"
-          }
-        }
-      ]
-    },
-    {
-      "id": "beeec7f6b0524aeb",
-      "title": "How the 2026 midterms could affect stocks—and what investors should do - CNBC",
-      "category": "economic",
-      "confidence": "low",
-      "reportCount": 2,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "2026-10-09T15:57:13Z",
-      "lastSeen": "2026-10-09T15:57:13Z",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMigAFBVV95cUxNTVFmb0tYaDVuZFJCS0tHcy1ab25aLTEwWE1LTXFpczl1Z0otZWlLY2p0RjVIbkVjRXBTSk5Cd3o3dHlZT2ZQLXZlUmZaQ2UtSGdxSDctS2ZQRTVmbkQ5ZXBIM21OelVjQnBOb3RjaElMX0lBR3RjREQwNkVwcS1qddIBhgFBVV95cUxQdFZCTS0xZEszNWNUSFF1VXF5NUQtNFU1VmUyb05XVk5zZUdzZDBTNndYOTR0bGQwc0phb3JYT2w3SlVLTVdWZi1acGRiSXVGNmpCX1RiTjFsQkZycVFSYkxhY0V3Y19NT2ptVTQzdnBSQTRqb2hqNldhRmxvSXpmMHhuSmlRQQ?oc=5",
-        "https://news.google.com/rss/articles/CBMigAFBVV95cUxNTVFmb0tYaDVuZFJCS0tHcy1ab25aLTEwWE1LTXFpczl1Z0otZWlLY2p0RjVIbkVjRXBTSk5Cd3o3dHlZT2ZQLXZlUmZaQ2UtSGdxSDctS2ZQRTVmbkQ5ZXBIM21OelVjQnBOb3RjaElMX0lBR3RjREQwNkVwcS1qdQ?oc=5"
-      ],
-      "reports": [
-        {
-          "id": "d84c5931f00c",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNTVFmb0tYaDVuZFJCS0tHcy1ab25aLTEwWE1LTXFpczl1Z0otZWlLY2p0RjVIbkVjRXBTSk5Cd3o3dHlZT2ZQLXZlUmZaQ2UtSGdxSDctS2ZQRTVmbkQ5ZXBIM21OelVjQnBOb3RjaElMX0lBR3RjREQwNkVwcS1qddIBhgFBVV95cUxQdFZCTS0xZEszNWNUSFF1VXF5NUQtNFU1VmUyb05XVk5zZUdzZDBTNndYOTR0bGQwc0phb3JYT2w3SlVLTVdWZi1acGRiSXVGNmpCX1RiTjFsQkZycVFSYkxhY0V3Y19NT2ptVTQzdnBSQTRqb2hqNldhRmxvSXpmMHhuSmlRQQ?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNTVFmb0tYaDVuZFJCS0tHcy1ab25aLTEwWE1LTXFpczl1Z0otZWlLY2p0RjVIbkVjRXBTSk5Cd3o3dHlZT2ZQLXZlUmZaQ2UtSGdxSDctS2ZQRTVmbkQ5ZXBIM21OelVjQnBOb3RjaElMX0lBR3RjREQwNkVwcS1qddIBhgFBVV95cUxQdFZCTS0xZEszNWNUSFF1VXF5NUQtNFU1VmUyb05XVk5zZUdzZDBTNndYOTR0bGQwc0phb3JYT2w3SlVLTVdWZi1acGRiSXVGNmpCX1RiTjFsQkZycVFSYkxhY0V3Y19NT2ptVTQzdnBSQTRqb2hqNldhRmxvSXpmMHhuSmlRQQ?oc=5",
-          "sourceType": "us-politics",
-          "title": "How the 2026 midterms could affect stocks—and what investors should do - CNBC",
-          "summary": "How the 2026 midterms could affect stocks—and what investors should do CNBC",
-          "summary_snippet": "How the 2026 midterms could affect stocks—and what investors should do CNBC",
-          "source": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNTVFmb0tYaDVuZFJCS0tHcy1ab25aLTEwWE1LTXFpczl1Z0otZWlLY2p0RjVIbkVjRXBTSk5Cd3o3dHlZT2ZQLXZlUmZaQ2UtSGdxSDctS2ZQRTVmbkQ5ZXBIM21OelVjQnBOb3RjaElMX0lBR3RjREQwNkVwcS1qddIBhgFBVV95cUxQdFZCTS0xZEszNWNUSFF1VXF5NUQtNFU1VmUyb05XVk5zZUdzZDBTNndYOTR0bGQwc0phb3JYT2w3SlVLTVdWZi1acGRiSXVGNmpCX1RiTjFsQkZycVFSYkxhY0V3Y19NT2ptVTQzdnBSQTRqb2hqNldhRmxvSXpmMHhuSmlRQQ?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNTVFmb0tYaDVuZFJCS0tHcy1ab25aLTEwWE1LTXFpczl1Z0otZWlLY2p0RjVIbkVjRXBTSk5Cd3o3dHlZT2ZQLXZlUmZaQ2UtSGdxSDctS2ZQRTVmbkQ5ZXBIM21OelVjQnBOb3RjaElMX0lBR3RjREQwNkVwcS1qddIBhgFBVV95cUxQdFZCTS0xZEszNWNUSFF1VXF5NUQtNFU1VmUyb05XVk5zZUdzZDBTNndYOTR0bGQwc0phb3JYT2w3SlVLTVdWZi1acGRiSXVGNmpCX1RiTjFsQkZycVFSYkxhY0V3Y19NT2ptVTQzdnBSQTRqb2hqNldhRmxvSXpmMHhuSmlRQQ?oc=5",
-          "time": "2026-10-09T15:57:13Z",
-          "published_date": "2026-10-09T15:57:13Z",
-          "publishedDate": "2026-10-09T15:57:13Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_u_s_politics",
-            "sourceUrl": "https://news.google.com/rss/search?q=US+politics+Congress+Senate+White+House+election+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "576adf6db0c8",
-          "sourceLabel": "Google News — U.S. Politics",
-          "sourceName": "Google News — U.S. Politics",
-          "sourceType": "us-politics",
-          "title": "How the 2026 midterms could affect stocks—and what investors should do - CNBC",
-          "summary": "How the 2026 midterms could affect stocks—and what investors should do CNBC",
-          "summary_snippet": "How the 2026 midterms could affect stocks—and what investors should do CNBC",
-          "source": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNTVFmb0tYaDVuZFJCS0tHcy1ab25aLTEwWE1LTXFpczl1Z0otZWlLY2p0RjVIbkVjRXBTSk5Cd3o3dHlZT2ZQLXZlUmZaQ2UtSGdxSDctS2ZQRTVmbkQ5ZXBIM21OelVjQnBOb3RjaElMX0lBR3RjREQwNkVwcS1qdQ?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNTVFmb0tYaDVuZFJCS0tHcy1ab25aLTEwWE1LTXFpczl1Z0otZWlLY2p0RjVIbkVjRXBTSk5Cd3o3dHlZT2ZQLXZlUmZaQ2UtSGdxSDctS2ZQRTVmbkQ5ZXBIM21OelVjQnBOb3RjaElMX0lBR3RjREQwNkVwcS1qdQ?oc=5",
-          "time": "2026-10-09T15:57:13Z",
-          "published_date": "2026-10-09T15:57:13Z",
-          "publishedDate": "2026-10-09T15:57:13Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_u_s_politics",
-            "sourceUrl": "https://news.google.com/rss/search?q=US+politics+Congress+Senate+White+House+election+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "aaf2c7d0aef8b962",
-      "title": "Southcom General Won't Rule Out Land Strikes on Cartels: \"All Options Are on the Table\" - Latin Times",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Wed, 30 Sep 2026 19:15:54 GMT",
-      "lastSeen": "Wed, 30 Sep 2026 19:15:54 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOd21QaU1CVXpEUE5landQaGZ1TTE5a1NFSTJzRGdNNDZ4U3R6eHBaOHB4RXBRNFpUMW0ycWtJRVdoYkFqYmNFMDhRT1J0VFhIbFZEdnlwa0l4eXRjQWhXaG40UVlCcjIwSXlIZHZ1VGRrYURIaHlhNjVGUWF3WkZNc1RyOU5zQVdGWDJRZG5ZVnIxTG1YS3RyQVMyUjFSYWIxcDVvZ3hvNkZ4S3M?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Southcom General Won't Rule Out Land Strikes on Cartels: \"All Options Are on the Table\" - Latin Times",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOd21QaU1CVXpEUE5landQaGZ1TTE5a1NFSTJzRGdNNDZ4U3R6eHBaOHB4RXBRNFpUMW0ycWtJRVdoYkFqYmNFMDhRT1J0VFhIbFZEdnlwa0l4eXRjQWhXaG40UVlCcjIwSXlIZHZ1VGRrYURIaHlhNjVGUWF3WkZNc1RyOU5zQVdGWDJRZG5ZVnIxTG1YS3RyQVMyUjFSYWIxcDVvZ3hvNkZ4S3M?oc=5",
-          "published_date": "Wed, 30 Sep 2026 19:15:54 GMT",
-          "time": "Wed, 30 Sep 2026 19:15:54 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Latin Times",
-          "summary": "Fallback discovery via Google News RSS; publisher: Latin Times",
-          "source": "Latin Times",
-          "sourceLabel": "Latin Times",
-          "sourceType": "fallback-news",
-          "fallbackFor": "SOUTHCOM Official Reporting — GDELT Mirror",
-          "credit_metadata": "Google News RSS fallback"
         }
       ]
     },
@@ -1813,38 +2107,6 @@
           "sourceLabel": "UN News",
           "sourceType": "fallback-news",
           "fallbackFor": "X @UN",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "c978ad10f15751ae",
-      "title": "4 Dead in SOUTHCOM Strike on Go-fast Vessel - USNI News",
-      "category": "conflict",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Wed, 26 Aug 2026 07:00:00 GMT",
-      "lastSeen": "Wed, 26 Aug 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiggFBVV95cUxQNDN0d0VPb1R0VTRrdXc3MGlKY1ZBc3FwYm5pSWlGUnJSMms2eTFqZG5CcjdkSVE1NFhPQ2RSRXI4VmdMQWtCRXlqTmZnRDliNnVudEZVaXgyT2YwZlMzYXU0WEF6eDl6WmZsU2NDLUE1SEM4TjdRaE9NcVRLejgzRl9R?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "4 Dead in SOUTHCOM Strike on Go-fast Vessel - USNI News",
-          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQNDN0d0VPb1R0VTRrdXc3MGlKY1ZBc3FwYm5pSWlGUnJSMms2eTFqZG5CcjdkSVE1NFhPQ2RSRXI4VmdMQWtCRXlqTmZnRDliNnVudEZVaXgyT2YwZlMzYXU0WEF6eDl6WmZsU2NDLUE1SEM4TjdRaE9NcVRLejgzRl9R?oc=5",
-          "published_date": "Wed, 26 Aug 2026 07:00:00 GMT",
-          "time": "Wed, 26 Aug 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: USNI News",
-          "summary": "Fallback discovery via Google News RSS; publisher: USNI News",
-          "source": "USNI News",
-          "sourceLabel": "USNI News",
-          "sourceType": "fallback-news",
-          "fallbackFor": "SOUTHCOM Official Reporting — GDELT Mirror",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -1973,38 +2235,6 @@
           "sourceLabel": "NASA (.gov)",
           "sourceType": "fallback-news",
           "fallbackFor": "X @NASA",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "2a5df5ab65dd23b6",
-      "title": "US strikes 2nd alleged drug cartel vessel in Pacific, in expansion of attacks - ABC News - Breaking News, Latest News and Videos",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Wed, 22 Oct 2025 07:00:00 GMT",
-      "lastSeen": "Wed, 22 Oct 2025 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMinwFBVV95cUxNZG4zc0xyNzVzRVhEd3J4RG1OazhPTFRDclpJeEIwWWlWam9CMUN1UjZpX0FVajNiS1ZmSlBUdlNQLTMxZ2xsOWpnazhBUGlWOEtQTzJyZjRXNXFJY1dXdG5MN1FHemt6TjMtdUhrWkhEM09wMHloUkxxNVd4S3IzaHZ6a3VNZjRJUWtLRlpxNkNxU3dNS1VDa0hiSmFpaWfSAaQBQVVfeXFMUEFLYUM5SEdNRnphUFZabUUyY1RaeHhSMkw3MHlHRUN3YUx2ZkMxbEIwLTBkRVJ6XzNOaXQtVFRJOXVGWTR3Vm02OWNlMzlaQ2hWb1ZIaFdWTmY1T3ZVRDhiSVVaclExX1hzeTFMZC1QUVY2S1lRMHBfWkxUbEhyalRiSWFIN0xSeUw5QnhRMVBlVUVxaVVOMEZMOTlmMjhPVzJGVUU?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "US strikes 2nd alleged drug cartel vessel in Pacific, in expansion of attacks - ABC News - Breaking News, Latest News and Videos",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNZG4zc0xyNzVzRVhEd3J4RG1OazhPTFRDclpJeEIwWWlWam9CMUN1UjZpX0FVajNiS1ZmSlBUdlNQLTMxZ2xsOWpnazhBUGlWOEtQTzJyZjRXNXFJY1dXdG5MN1FHemt6TjMtdUhrWkhEM09wMHloUkxxNVd4S3IzaHZ6a3VNZjRJUWtLRlpxNkNxU3dNS1VDa0hiSmFpaWfSAaQBQVVfeXFMUEFLYUM5SEdNRnphUFZabUUyY1RaeHhSMkw3MHlHRUN3YUx2ZkMxbEIwLTBkRVJ6XzNOaXQtVFRJOXVGWTR3Vm02OWNlMzlaQ2hWb1ZIaFdWTmY1T3ZVRDhiSVVaclExX1hzeTFMZC1QUVY2S1lRMHBfWkxUbEhyalRiSWFIN0xSeUw5QnhRMVBlVUVxaVVOMEZMOTlmMjhPVzJGVUU?oc=5",
-          "published_date": "Wed, 22 Oct 2025 07:00:00 GMT",
-          "time": "Wed, 22 Oct 2025 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: ABC News - Breaking News, Latest News and Videos",
-          "summary": "Fallback discovery via Google News RSS; publisher: ABC News - Breaking News, Latest News and Videos",
-          "source": "ABC News - Breaking News, Latest News and Videos",
-          "sourceLabel": "ABC News - Breaking News, Latest News and Videos",
-          "sourceType": "fallback-news",
-          "fallbackFor": "GDELT — Western Hemisphere Counter-Cartel",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -2206,38 +2436,6 @@
           "sourceLabel": "Al Jazeera",
           "sourceType": "fallback-news",
           "fallbackFor": "X @NATO",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "fc25e0c19534f53c",
-      "title": "NASA Announces Public-Private Partnership to Advance Mars Science - NASA (.gov)",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Wed, 17 Jun 2026 07:00:00 GMT",
-      "lastSeen": "Wed, 17 Jun 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiogFBVV95cUxQOVFvNHpLWmg4Nk8ya3NpMWRCVlExX2dGV2VHcW81eVJZMzNnS3hxRnNaMUpHejZFa2ZvMVExeGQxem9BRHVfM3NuZ0NVZDJSQzJ6ZEpCeS1ZTEZnNFNTMFFJbTBEVWY4SW9QN2dFSUFpWnhmNENsalVsNElWYS11RW1EckZwMlZCSjlWRzRoOTNyWHFkb1VjdkRSLTI2Z2FINFE?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "NASA Announces Public-Private Partnership to Advance Mars Science - NASA (.gov)",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQOVFvNHpLWmg4Nk8ya3NpMWRCVlExX2dGV2VHcW81eVJZMzNnS3hxRnNaMUpHejZFa2ZvMVExeGQxem9BRHVfM3NuZ0NVZDJSQzJ6ZEpCeS1ZTEZnNFNTMFFJbTBEVWY4SW9QN2dFSUFpWnhmNENsalVsNElWYS11RW1EckZwMlZCSjlWRzRoOTNyWHFkb1VjdkRSLTI2Z2FINFE?oc=5",
-          "published_date": "Wed, 17 Jun 2026 07:00:00 GMT",
-          "time": "Wed, 17 Jun 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
-          "summary": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
-          "source": "NASA (.gov)",
-          "sourceLabel": "NASA (.gov)",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NASA",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -2503,6 +2701,38 @@
       ]
     },
     {
+      "id": "2a5df5ab65dd23b6",
+      "title": "US strikes 2nd alleged drug cartel vessel in Pacific, in expansion of attacks - ABC News - Breaking News, Latest News and Videos",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Wed, 11 Feb 2026 01:59:34 GMT",
+      "lastSeen": "Wed, 11 Feb 2026 01:59:34 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMinwFBVV95cUxNZG4zc0xyNzVzRVhEd3J4RG1OazhPTFRDclpJeEIwWWlWam9CMUN1UjZpX0FVajNiS1ZmSlBUdlNQLTMxZ2xsOWpnazhBUGlWOEtQTzJyZjRXNXFJY1dXdG5MN1FHemt6TjMtdUhrWkhEM09wMHloUkxxNVd4S3IzaHZ6a3VNZjRJUWtLRlpxNkNxU3dNS1VDa0hiSmFpaWfSAaQBQVVfeXFMUEFLYUM5SEdNRnphUFZabUUyY1RaeHhSMkw3MHlHRUN3YUx2ZkMxbEIwLTBkRVJ6XzNOaXQtVFRJOXVGWTR3Vm02OWNlMzlaQ2hWb1ZIaFdWTmY1T3ZVRDhiSVVaclExX1hzeTFMZC1QUVY2S1lRMHBfWkxUbEhyalRiSWFIN0xSeUw5QnhRMVBlVUVxaVVOMEZMOTlmMjhPVzJGVUU?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "US strikes 2nd alleged drug cartel vessel in Pacific, in expansion of attacks - ABC News - Breaking News, Latest News and Videos",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNZG4zc0xyNzVzRVhEd3J4RG1OazhPTFRDclpJeEIwWWlWam9CMUN1UjZpX0FVajNiS1ZmSlBUdlNQLTMxZ2xsOWpnazhBUGlWOEtQTzJyZjRXNXFJY1dXdG5MN1FHemt6TjMtdUhrWkhEM09wMHloUkxxNVd4S3IzaHZ6a3VNZjRJUWtLRlpxNkNxU3dNS1VDa0hiSmFpaWfSAaQBQVVfeXFMUEFLYUM5SEdNRnphUFZabUUyY1RaeHhSMkw3MHlHRUN3YUx2ZkMxbEIwLTBkRVJ6XzNOaXQtVFRJOXVGWTR3Vm02OWNlMzlaQ2hWb1ZIaFdWTmY1T3ZVRDhiSVVaclExX1hzeTFMZC1QUVY2S1lRMHBfWkxUbEhyalRiSWFIN0xSeUw5QnhRMVBlVUVxaVVOMEZMOTlmMjhPVzJGVUU?oc=5",
+          "published_date": "Wed, 11 Feb 2026 01:59:34 GMT",
+          "time": "Wed, 11 Feb 2026 01:59:34 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: ABC News - Breaking News, Latest News and Videos",
+          "summary": "Fallback discovery via Google News RSS; publisher: ABC News - Breaking News, Latest News and Videos",
+          "source": "ABC News - Breaking News, Latest News and Videos",
+          "sourceLabel": "ABC News - Breaking News, Latest News and Videos",
+          "sourceType": "fallback-news",
+          "fallbackFor": "GDELT — Western Hemisphere Counter-Cartel",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
       "id": "8e92c44bca8a88db",
       "title": "Trump sees 22 medical specialists, appearing to set new bar for presidents - The Washington Post",
       "category": "general",
@@ -2728,38 +2958,6 @@
           "sourceLabel": "Reuters",
           "sourceType": "fallback-news",
           "fallbackFor": "X @WhiteHouse",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "bc00c40ab962b572",
-      "title": "Army Launches New Task Force, Replacing Southern Spear's Efforts Against Drug Cartels - Military.com",
-      "category": "conflict",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Wed, 05 Aug 2026 07:00:00 GMT",
-      "lastSeen": "Wed, 05 Aug 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMimwFBVV95cUxOSWc5ZU5sZFdZTThEMjJzNXpWNzlQTElFT0UwOUtEVEdkT0M0bEdHZVo3Yld1UGJ2UHRaWEx5aHJDXy1NS2p0OWRZSUVVVWRkRXd5dTJNNWdrVnp6d21zTC1tYUh2eEt4ZnliTEZHS3c1c1dPMElJSElpTnBoSkZVaTY2b051WHRVQk1ScmQzdjY1OFh6Z3pFYl9Hcw?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Army Launches New Task Force, Replacing Southern Spear's Efforts Against Drug Cartels - Military.com",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOSWc5ZU5sZFdZTThEMjJzNXpWNzlQTElFT0UwOUtEVEdkT0M0bEdHZVo3Yld1UGJ2UHRaWEx5aHJDXy1NS2p0OWRZSUVVVWRkRXd5dTJNNWdrVnp6d21zTC1tYUh2eEt4ZnliTEZHS3c1c1dPMElJSElpTnBoSkZVaTY2b051WHRVQk1ScmQzdjY1OFh6Z3pFYl9Hcw?oc=5",
-          "published_date": "Wed, 05 Aug 2026 07:00:00 GMT",
-          "time": "Wed, 05 Aug 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Military.com",
-          "summary": "Fallback discovery via Google News RSS; publisher: Military.com",
-          "source": "Military.com",
-          "sourceLabel": "Military.com",
-          "sourceType": "fallback-news",
-          "fallbackFor": "SOUTHCOM Official Reporting — GDELT Mirror",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -3051,7 +3249,7 @@
           "source": "The Hill",
           "sourceLabel": "The Hill",
           "sourceType": "fallback-news",
-          "fallbackFor": "SOUTHCOM Official Reporting — GDELT Mirror",
+          "fallbackFor": "GDELT — Western Hemisphere Counter-Cartel",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -3645,6 +3843,38 @@
       ]
     },
     {
+      "id": "f1763afdd165dfbf",
+      "title": "NASA’s Curiosity Rover Catches Stunning Martian Dawn - NASA Jet Propulsion Laboratory (JPL) (.gov)",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Tue, 06 Oct 2026 15:33:53 GMT",
+      "lastSeen": "Tue, 06 Oct 2026 15:33:53 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiigFBVV95cUxPWlJnSmZNY0NwTkE3TWd3ZTVqaTBGY3VWd2dISm1ycFZQQndKb2ZXU2thc256OFFHbzk2ZGdfVTdvZ1JuRF9uNnZMY1FJMjllN3AtY1c2QmpiVUtzMVZaSmlieHFOZ2lzamxOX3VXdklqNUotTFN6UlpJOGVhOWl1cXFpY3dxQnRFLUE?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "NASA’s Curiosity Rover Catches Stunning Martian Dawn - NASA Jet Propulsion Laboratory (JPL) (.gov)",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPWlJnSmZNY0NwTkE3TWd3ZTVqaTBGY3VWd2dISm1ycFZQQndKb2ZXU2thc256OFFHbzk2ZGdfVTdvZ1JuRF9uNnZMY1FJMjllN3AtY1c2QmpiVUtzMVZaSmlieHFOZ2lzamxOX3VXdklqNUotTFN6UlpJOGVhOWl1cXFpY3dxQnRFLUE?oc=5",
+          "published_date": "Tue, 06 Oct 2026 15:33:53 GMT",
+          "time": "Tue, 06 Oct 2026 15:33:53 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NASA Jet Propulsion Laboratory (JPL) (.gov)",
+          "summary": "Fallback discovery via Google News RSS; publisher: NASA Jet Propulsion Laboratory (JPL) (.gov)",
+          "source": "NASA Jet Propulsion Laboratory (JPL) (.gov)",
+          "sourceLabel": "NASA Jet Propulsion Laboratory (JPL) (.gov)",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NASA",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
       "id": "a6ccfb97e5aaf43c",
       "title": "Huntsville companies among 16 selected for $1.4 billion NASA logistics agreements - 256 Today",
       "category": "general",
@@ -3672,6 +3902,70 @@
           "sourceLabel": "256 Today",
           "sourceType": "fallback-news",
           "fallbackFor": "X @NASA",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "088eb82dc58f9a39",
+      "title": "January 6: A Date Which Will Live in Infamy - The White House (.gov)",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Tue, 06 Jan 2026 08:00:00 GMT",
+      "lastSeen": "Tue, 06 Jan 2026 08:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiREFVX3lxTE5UWHVjRk9VY21yLTN2R1NDRDNZQWFjRTJTMGtnX1Q5aVZ5TS1SbWRpTF9WaEVJYkNQaXVycDlBUk1PM3Rr?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "January 6: A Date Which Will Live in Infamy - The White House (.gov)",
+          "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE5UWHVjRk9VY21yLTN2R1NDRDNZQWFjRTJTMGtnX1Q5aVZ5TS1SbWRpTF9WaEVJYkNQaXVycDlBUk1PM3Rr?oc=5",
+          "published_date": "Tue, 06 Jan 2026 08:00:00 GMT",
+          "time": "Tue, 06 Jan 2026 08:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: The White House (.gov)",
+          "summary": "Fallback discovery via Google News RSS; publisher: The White House (.gov)",
+          "source": "The White House (.gov)",
+          "sourceLabel": "The White House (.gov)",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @WhiteHouse",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "f582d669468bb1d4",
+      "title": "2 killed in latest U.S. strike on alleged drug boat in the Pacific, Hegseth says - CBS News",
+      "category": "conflict",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Tue, 04 Nov 2025 08:00:00 GMT",
+      "lastSeen": "Tue, 04 Nov 2025 08:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMinwFBVV95cUxONlpKSzlqM0pGaHRtaW83RUpyUWNnQVhfMm5Ud2pyUkhqa3lCLU03N0VjWTRhWnl0bXZEZEcteEZjTlVUT2xzQXplMm9tcm1OM2M2ckhkOXU5Z2RhU1l6cVdkQmFuTmhrWjR4UU9jaklrU0NJZWtFTnBDdkdRX3ZERGtVck5PRnBEbk92djFJZndJSGc3bTFWT3NOeGhqN00?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "2 killed in latest U.S. strike on alleged drug boat in the Pacific, Hegseth says - CBS News",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxONlpKSzlqM0pGaHRtaW83RUpyUWNnQVhfMm5Ud2pyUkhqa3lCLU03N0VjWTRhWnl0bXZEZEcteEZjTlVUT2xzQXplMm9tcm1OM2M2ckhkOXU5Z2RhU1l6cVdkQmFuTmhrWjR4UU9jaklrU0NJZWtFTnBDdkdRX3ZERGtVck5PRnBEbk92djFJZndJSGc3bTFWT3NOeGhqN00?oc=5",
+          "published_date": "Tue, 04 Nov 2025 08:00:00 GMT",
+          "time": "Tue, 04 Nov 2025 08:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: CBS News",
+          "summary": "Fallback discovery via Google News RSS; publisher: CBS News",
+          "source": "CBS News",
+          "sourceLabel": "CBS News",
+          "sourceType": "fallback-news",
+          "fallbackFor": "GDELT — Western Hemisphere Counter-Cartel",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
