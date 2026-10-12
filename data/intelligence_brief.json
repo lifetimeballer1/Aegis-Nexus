@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-12T00:32:50.863528Z",
+  "updatedAt": "2026-10-12T07:21:42.981158Z",
   "method": "Deterministic prioritization of existing public Global Pulse artifacts; not a forecast or causal model.",
   "freshness": {
-    "snapshotUpdatedAt": "2026-10-10T09:05:42.500593+00:00",
-    "eventsUpdatedAt": "2026-10-10T09:05:46.468850Z",
+    "snapshotUpdatedAt": "2026-10-12T01:43:55.950379+00:00",
+    "eventsUpdatedAt": "2026-10-12T01:43:58.381514Z",
     "assessmentsUpdatedAt": "2026-09-10T03:03:12.655499Z"
   },
   "headline": {
@@ -13,145 +13,153 @@
   },
   "topDevelopments": [
     {
-      "id": "511444315cc3edd8",
-      "title": "Trump announces Russian diesel deal amid soaring US fuel prices",
+      "id": "567bad96689932e0",
+      "title": "Dozens of gold prospectors killed in strikes on Egypt-Sudan border, rights group says",
+      "category": "general",
+      "confidence": "high",
+      "reportCount": 3,
+      "independentSourceCount": 3,
+      "sources": [
+        "bbc_world",
+        "al_jazeera",
+        "dw_world"
+      ],
+      "breaking": true,
+      "firstSeen": "2026-10-11T19:41:00Z",
+      "lastSeen": "2026-10-11T21:12:44Z"
+    },
+    {
+      "id": "d13b8d8156a6c04a",
+      "title": "Russia hits Ukraine power plants despite Trump energy ceasefire claim",
+      "category": "diplomatic",
+      "confidence": "high",
+      "reportCount": 3,
+      "independentSourceCount": 3,
+      "sources": [
+        "cna_world",
+        "fox_news_politics",
+        "dw_world"
+      ],
+      "breaking": true,
+      "firstSeen": "2026-10-11T14:47:00Z",
+      "lastSeen": "2026-10-11T14:59:00Z"
+    },
+    {
+      "id": "e66ef0209eeed626",
+      "title": "Zelenskyy signals surprise at Trump claim of Russia-Ukraine ‘energy ceasefire’ but would back it if Moscow does – as it happened",
+      "category": "diplomatic",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "independentSourceCount": 2,
+      "sources": [
+        "guardian_world",
+        "cna_world"
+      ],
+      "breaking": true,
+      "firstSeen": "2026-10-11T17:36:00Z",
+      "lastSeen": "2026-10-11T18:36:54Z"
+    },
+    {
+      "id": "0fc1971acb75ed6c",
+      "title": "Trump announces partial ceasefire in Ukraine war as Zelenskyy says deal is ‘news to me’",
+      "category": "diplomatic",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "independentSourceCount": 2,
+      "sources": [
+        "guardian_world",
+        "google_news_ukraine_war"
+      ],
+      "breaking": true,
+      "firstSeen": "2026-10-11T15:43:57Z",
+      "lastSeen": "2026-10-11T17:21:39Z"
+    },
+    {
+      "id": "c608fc26916f5d5f",
+      "title": "Riyadh airport attacks another dangerous moment in already tense conflict",
       "category": "general",
       "confidence": "moderate",
       "reportCount": 2,
       "independentSourceCount": 2,
       "sources": [
-        "al_jazeera",
-        "bbc_world"
+        "bbc_world",
+        "google_news_yemen_red_sea"
       ],
-      "breaking": false,
-      "firstSeen": "2026-10-09T19:32:07Z",
-      "lastSeen": "2026-10-09T19:47:33Z"
+      "breaking": true,
+      "firstSeen": "2026-10-11T15:32:32Z",
+      "lastSeen": "2026-10-11T15:32:32Z"
     },
     {
-      "id": "b6baa5d13c71faa8",
-      "title": "M 4.5 - 18 km SSE of Río Grande, Panama",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 10,
-      "independentSourceCount": 1,
+      "id": "04f1468abc1296c9",
+      "title": "Abdul El-Sayed: Democrats must ‘win by massive numbers’ to fend off Trump election denial - The Guardian",
+      "category": "political",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "independentSourceCount": 2,
       "sources": [
-        "usgs_m4_5_earthquakes_past_day"
+        "google_news_u_s_politics",
+        "guardian_world"
       ],
       "breaking": false,
-      "firstSeen": "2026-10-09T19:25:01.040000Z",
-      "lastSeen": "2026-10-10T05:37:55.863000Z"
+      "firstSeen": "2026-10-11T17:23:28Z",
+      "lastSeen": "2026-10-11T17:24:00Z"
     },
     {
-      "id": "cd02c5e532c38eed",
-      "title": "Green forest fire notification in Mozambique",
-      "category": "general",
+      "id": "4c93900bff8b9ae2",
+      "title": "After the Riyadh airport attack: How far could the confrontation with the Houthis go? - نون بوست",
+      "category": "conflict",
       "confidence": "low",
-      "reportCount": 8,
-      "independentSourceCount": 1,
+      "reportCount": 2,
+      "independentSourceCount": 2,
       "sources": [
-        "gdacs_global_disaster_alerts"
+        "google_news_yemen_red_sea",
+        "google_news_iran_israel"
       ],
-      "breaking": false,
-      "firstSeen": "2026-10-09T19:01:25Z",
-      "lastSeen": "2026-10-09T19:04:03Z"
-    },
-    {
-      "id": "4d941cfc863e2de4",
-      "title": "M 6.0 - 7 km N of La Tronosa, Panama",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 7,
-      "independentSourceCount": 1,
-      "sources": [
-        "usgs_m4_5_earthquakes_past_day"
-      ],
-      "breaking": false,
-      "firstSeen": "2026-10-09T21:40:03.031000Z",
-      "lastSeen": "2026-10-10T07:48:13.229000Z"
-    },
-    {
-      "id": "87b50f2c69aebd15",
-      "title": "M 4.5 - 10 km SE of Pedasí, Panama",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 5,
-      "independentSourceCount": 1,
-      "sources": [
-        "usgs_m4_5_earthquakes_past_day"
-      ],
-      "breaking": false,
-      "firstSeen": "2026-10-10T00:53:22.993000Z",
-      "lastSeen": "2026-10-10T08:01:25.040000Z"
+      "breaking": true,
+      "firstSeen": "2026-10-11T14:02:34Z",
+      "lastSeen": "2026-10-11T14:02:34Z"
     },
     {
       "id": "db037c2987eba324",
       "title": "Green forest fire notification in Brazil",
       "category": "general",
       "confidence": "low",
-      "reportCount": 5,
+      "reportCount": 4,
       "independentSourceCount": 1,
       "sources": [
         "gdacs_global_disaster_alerts"
       ],
       "breaking": false,
-      "firstSeen": "2026-10-09T23:01:21Z",
-      "lastSeen": "2026-10-09T23:05:15Z"
+      "firstSeen": "2026-10-11T15:02:56Z",
+      "lastSeen": "2026-10-11T23:07:21Z"
+    },
+    {
+      "id": "f4bef1a266999855",
+      "title": "Green forest fire notification in Australia",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 4,
+      "independentSourceCount": 1,
+      "sources": [
+        "gdacs_global_disaster_alerts"
+      ],
+      "breaking": false,
+      "firstSeen": "2026-10-11T15:01:00Z",
+      "lastSeen": "2026-10-11T23:03:46Z"
     },
     {
       "id": "9dbe1492b2c609c1",
       "title": "Statement of condemnation by the North Atlantic Council of Russia's malicious cyber activities - North Atlantic Treaty Organization | NATO",
       "category": "diplomatic",
       "confidence": "low",
-      "reportCount": 4,
+      "reportCount": 3,
       "independentSourceCount": 1,
       "sources": [
         "North Atlantic Treaty Organization | NATO"
       ],
       "breaking": false,
-      "firstSeen": "Fri, 18 Jul 2025 07:00:00 GMT",
+      "firstSeen": "Mon, 13 Jul 2026 07:00:00 GMT",
       "lastSeen": "Tue, 23 Sep 2025 07:00:00 GMT"
-    },
-    {
-      "id": "14c4f715a8ccb84a",
-      "title": "CNN.com - Transcripts - CNN",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 4,
-      "independentSourceCount": 1,
-      "sources": [
-        "google_news_cnn_politics"
-      ],
-      "breaking": false,
-      "firstSeen": "2026-10-09T19:00:00Z",
-      "lastSeen": "2026-10-09T22:00:00Z"
-    },
-    {
-      "id": "20f3fa125c09c501",
-      "title": "Green forest fire notification in Papua New Guinea",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 3,
-      "independentSourceCount": 1,
-      "sources": [
-        "gdacs_global_disaster_alerts"
-      ],
-      "breaking": false,
-      "firstSeen": "2026-10-09T23:06:00Z",
-      "lastSeen": "2026-10-10T07:06:01Z"
-    },
-    {
-      "id": "5e48752d78514088",
-      "title": "Green forest fire notification in Bolivia",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 3,
-      "independentSourceCount": 1,
-      "sources": [
-        "gdacs_global_disaster_alerts"
-      ],
-      "breaking": false,
-      "firstSeen": "2026-10-09T23:01:34Z",
-      "lastSeen": "2026-10-10T07:00:42Z"
     }
   ],
   "watchlist": [
