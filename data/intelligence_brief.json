@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-13T00:40:49.920401Z",
+  "updatedAt": "2026-10-13T07:43:04.953763Z",
   "method": "Deterministic prioritization of existing public Global Pulse artifacts; not a forecast or causal model.",
   "freshness": {
-    "snapshotUpdatedAt": "2026-10-12T23:48:34.981282+00:00",
-    "eventsUpdatedAt": "2026-10-12T23:48:38.062996Z",
+    "snapshotUpdatedAt": "2026-10-13T03:56:42.026228+00:00",
+    "eventsUpdatedAt": "2026-10-13T03:56:45.229753Z",
     "assessmentsUpdatedAt": "2026-09-10T03:03:12.655499Z"
   },
   "headline": {
@@ -13,35 +13,34 @@
   },
   "topDevelopments": [
     {
+      "id": "27423371744c5616",
+      "title": "Trump insists energy ceasefire holds as Ukraine reports new Russian strikes",
+      "category": "diplomatic",
+      "confidence": "moderate",
+      "reportCount": 3,
+      "independentSourceCount": 2,
+      "sources": [
+        "al_jazeera",
+        "France 24"
+      ],
+      "breaking": true,
+      "firstSeen": "2026-10-13T03:11:19Z",
+      "lastSeen": "Sun, 11 Oct 2026 14:39:26 GMT"
+    },
+    {
       "id": "1bc74816d3cd2a19",
       "title": "UK: Iran 'highly likely' to be behind RAF Fairford incident",
       "category": "general",
-      "confidence": "high",
-      "reportCount": 3,
-      "independentSourceCount": 3,
-      "sources": [
-        "dw_world",
-        "al_jazeera",
-        "cna_world"
-      ],
-      "breaking": true,
-      "firstSeen": "2026-10-12T15:11:00Z",
-      "lastSeen": "2026-10-12T19:02:00Z"
-    },
-    {
-      "id": "ef4e57ef776b5d30",
-      "title": "Ukraine War, Day 1,691: Trump Lies About \"Partial Ceasefire\" As His Officials Threaten Kyiv - EA WorldView",
-      "category": "diplomatic",
       "confidence": "moderate",
       "reportCount": 2,
       "independentSourceCount": 2,
       "sources": [
-        "google_news_ukraine_war",
-        "bbc_world"
+        "dw_world",
+        "al_jazeera"
       ],
       "breaking": true,
-      "firstSeen": "2026-10-12T15:51:30Z",
-      "lastSeen": "2026-10-12T17:02:19Z"
+      "firstSeen": "2026-10-12T18:24:42Z",
+      "lastSeen": "2026-10-12T19:02:00Z"
     },
     {
       "id": "213e4a7a5a87ad9a",
@@ -57,6 +56,21 @@
       "breaking": false,
       "firstSeen": "2026-10-12T16:40:57Z",
       "lastSeen": "2026-10-12T21:30:57Z"
+    },
+    {
+      "id": "9ce7849446179fe3",
+      "title": "Teenager shoots headmaster, teacher at French school",
+      "category": "general",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "independentSourceCount": 2,
+      "sources": [
+        "cna_world",
+        "al_jazeera"
+      ],
+      "breaking": false,
+      "firstSeen": "2026-10-12T19:44:00Z",
+      "lastSeen": "2026-10-13T03:01:42Z"
     },
     {
       "id": "2cacde0d3145b2c7",
@@ -89,35 +103,6 @@
       "lastSeen": "2026-10-12T19:53:13Z"
     },
     {
-      "id": "6d02fb73edf2b713",
-      "title": "Iran-Saudi talks on Yemen’s Houthis: What’s in it for Tehran? - Al Jazeera",
-      "category": "diplomatic",
-      "confidence": "moderate",
-      "reportCount": 2,
-      "independentSourceCount": 2,
-      "sources": [
-        "google_news_iran_israel",
-        "al_jazeera"
-      ],
-      "breaking": false,
-      "firstSeen": "2026-10-12T14:27:49Z",
-      "lastSeen": "2026-10-12T14:31:38Z"
-    },
-    {
-      "id": "f4bef1a266999855",
-      "title": "Green forest fire notification in Australia",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 9,
-      "independentSourceCount": 1,
-      "sources": [
-        "gdacs_global_disaster_alerts"
-      ],
-      "breaking": false,
-      "firstSeen": "2026-10-12T15:00:48Z",
-      "lastSeen": "2026-10-12T23:04:24Z"
-    },
-    {
       "id": "cd02c5e532c38eed",
       "title": "Green forest fire notification in Mozambique",
       "category": "general",
@@ -132,6 +117,34 @@
       "lastSeen": "2026-10-12T23:07:00Z"
     },
     {
+      "id": "9866061acfd9bd4c",
+      "title": "M 4.9 - 17 km W of Río Grande, Panama",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 4,
+      "independentSourceCount": 1,
+      "sources": [
+        "usgs_m4_5_earthquakes_past_day"
+      ],
+      "breaking": false,
+      "firstSeen": "2026-10-12T20:38:48.040000Z",
+      "lastSeen": "2026-10-13T03:49:29.764000Z"
+    },
+    {
+      "id": "f4bef1a266999855",
+      "title": "Green forest fire notification in Australia",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 4,
+      "independentSourceCount": 1,
+      "sources": [
+        "gdacs_global_disaster_alerts"
+      ],
+      "breaking": false,
+      "firstSeen": "2026-10-12T19:00:42Z",
+      "lastSeen": "2026-10-12T23:04:24Z"
+    },
+    {
       "id": "9dbe1492b2c609c1",
       "title": "Statement of condemnation by the North Atlantic Council of Russia's malicious cyber activities - North Atlantic Treaty Organization | NATO",
       "category": "diplomatic",
@@ -144,20 +157,6 @@
       "breaking": false,
       "firstSeen": "Mon, 13 Jul 2026 07:00:00 GMT",
       "lastSeen": "Tue, 23 Sep 2025 07:00:00 GMT"
-    },
-    {
-      "id": "7e25ab364b4dcc3b",
-      "title": "Explanation of Vote Before the Vote for UNGA 80 Adoption on the Resolution to “Correct the Map” - United States Mission to the United Nations (.gov)",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "independentSourceCount": 1,
-      "sources": [
-        "United States Mission to the United Nations (.gov)"
-      ],
-      "breaking": false,
-      "firstSeen": "Fri, 04 Sep 2026 07:00:00 GMT",
-      "lastSeen": "Wed, 25 Mar 2026 07:00:00 GMT"
     }
   ],
   "watchlist": [
