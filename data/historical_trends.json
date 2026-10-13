@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-13T18:22:36.119728Z",
-  "availableSamples": 223,
-  "availableHours": 921.0,
+  "updatedAt": "2026-10-13T22:59:27.358578Z",
+  "availableSamples": 224,
+  "availableHours": 925.7,
   "series": [
     {
       "updatedAt": "2026-09-05T09:19:53.754145+00:00",
@@ -1341,41 +1341,53 @@
       "tension": 38,
       "delta": 0.0,
       "scoreVersion": 5
+    },
+    {
+      "updatedAt": "2026-10-13T22:59:27.358578Z",
+      "tension": 37,
+      "delta": -1.0,
+      "scoreVersion": 5
     }
   ],
   "windows": {
     "6h": {
-      "available": false,
-      "reason": "Only 1 samples in requested window"
+      "available": true,
+      "samples": 2,
+      "start": "2026-10-13T18:22:36.119728Z",
+      "end": "2026-10-13T22:59:27.358578Z",
+      "startTension": 38,
+      "endTension": 37,
+      "delta": -1.0,
+      "trend": "STABLE"
     },
     "24h": {
       "available": true,
-      "samples": 4,
+      "samples": 5,
       "start": "2026-10-12T23:48:38.256962Z",
-      "end": "2026-10-13T18:22:36.119728Z",
+      "end": "2026-10-13T22:59:27.358578Z",
       "startTension": 38,
-      "endTension": 38,
-      "delta": 0.0,
+      "endTension": 37,
+      "delta": -1.0,
       "trend": "STABLE"
     },
     "7d": {
       "available": true,
-      "samples": 20,
+      "samples": 21,
       "start": "2026-10-07T18:53:35.533640Z",
-      "end": "2026-10-13T18:22:36.119728Z",
+      "end": "2026-10-13T22:59:27.358578Z",
       "startTension": 39,
-      "endTension": 38,
-      "delta": -1.0,
-      "trend": "STABLE"
+      "endTension": 37,
+      "delta": -2.0,
+      "trend": "DOWN"
     },
     "30d": {
       "available": true,
-      "samples": 125,
+      "samples": 126,
       "start": "2026-09-14T17:03:53.700707Z",
-      "end": "2026-10-13T18:22:36.119728Z",
+      "end": "2026-10-13T22:59:27.358578Z",
       "startTension": 41,
-      "endTension": 38,
-      "delta": -3.0,
+      "endTension": 37,
+      "delta": -4.0,
       "trend": "DOWN"
     }
   }
