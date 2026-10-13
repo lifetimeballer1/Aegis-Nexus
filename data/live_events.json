@@ -1,28 +1,404 @@
 {
-  "updatedAt": "2026-10-13T03:56:45.229753Z",
+  "updatedAt": "2026-10-13T11:18:10.562366Z",
   "window": "recent public reporting",
   "method": "anchor-aware title clustering with category and publication-time agreement; candidate grouping only, not proof reports describe identical facts",
   "events": [
+    {
+      "id": "bdfb369e8b4353a5",
+      "title": "EU cautious over Trump’s ‘energy ceasefire’ as Russia continues Ukraine attacks",
+      "category": "diplomatic",
+      "confidence": "high",
+      "reportCount": 4,
+      "sourceCount": 3,
+      "sources": [
+        "rfi.fr",
+        "aljazeera.com",
+        "news.google.com"
+      ],
+      "anchors": [
+        "france",
+        "russia",
+        "uk",
+        "ukraine"
+      ],
+      "firstSeen": "2026-10-13T03:11:19Z",
+      "lastSeen": "Sun, 11 Oct 2026 14:39:26 GMT",
+      "urls": [
+        "https://www.rfi.fr/en/international/20261013-eu-cautious-over-trump-s-energy-ceasefire-as-russia-continues-ukraine-attacks",
+        "https://www.aljazeera.com/economy/2026/10/13/trump-insists-energy-ceasefire-holds-as-ukraine-reports-new-russian-strikes?traffic_source=rss",
+        "https://www.aljazeera.com/video/newsfeed/2026/10/13/russia-and-ukraine-trade-strikes-amid-doubt-over-energy?traffic_source=rss",
+        "https://news.google.com/rss/articles/CBMinAFBVV95cUxQeGkwZFBocjY2TmR2T0E4TzFCVzZNT3NmcGRDcWd1R0hMX3lTemNSWDNiVWVOTTkxZUExdVowRk9ka180OFhrQ3R2X05vZm1WZkNpVlFpenp4ZkdQQTZ5MGdaaUl3UTRwakVjSVBzSjBrTl9LUnRGTEFJS0hveTJNSkVmS2t3VHlIYmQ0bGU1el9tN2VHWUdQTzhycEs?oc=5"
+      ],
+      "reports": [
+        {
+          "id": "83188751732f",
+          "sourceLabel": "RFI World",
+          "sourceName": "RFI World",
+          "sourceType": "international",
+          "title": "EU cautious over Trump’s ‘energy ceasefire’ as Russia continues Ukraine attacks",
+          "summary": "The European Union has given a cautious welcome to the prospect of an “energy ceasefire” between Russia and Ukraine, as winter approaches and renewed Russian strikes put fresh pressure on the country’s power network.",
+          "summary_snippet": "The European Union has given a cautious welcome to the prospect of an “energy ceasefire” between Russia and Ukraine, as winter approaches and renewed Russian strikes put fresh pressure on the country’s power network.",
+          "source": "https://www.rfi.fr/en/international/20261013-eu-cautious-over-trump-s-energy-ceasefire-as-russia-continues-ukraine-attacks",
+          "url": "https://www.rfi.fr/en/international/20261013-eu-cautious-over-trump-s-energy-ceasefire-as-russia-continues-ukraine-attacks",
+          "time": "2026-10-13T07:03:23Z",
+          "published_date": "2026-10-13T07:03:23Z",
+          "publishedDate": "2026-10-13T07:03:23Z",
+          "tag": "Breaking",
+          "confidence": "DEVELOPING",
+          "breaking": true,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "rfi_world",
+            "sourceUrl": "https://www.rfi.fr/en/general/rss",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "a54e39e1e903",
+          "sourceLabel": "https://www.aljazeera.com/economy/2026/10/13/trump-insists-energy-ceasefire-holds-as-ukraine-reports-new-russian-strikes?traffic_source=rss",
+          "sourceName": "https://www.aljazeera.com/economy/2026/10/13/trump-insists-energy-ceasefire-holds-as-ukraine-reports-new-russian-strikes?traffic_source=rss",
+          "sourceType": "international",
+          "title": "Trump insists energy ceasefire holds as Ukraine reports new Russian strikes",
+          "summary": "US President urges Zelenskyy, Putin to end 'ridiculous war' and insists they agreed to stop attacks on energy sites.",
+          "summary_snippet": "US President urges Zelenskyy, Putin to end 'ridiculous war' and insists they agreed to stop attacks on energy sites.",
+          "source": "https://www.aljazeera.com/economy/2026/10/13/trump-insists-energy-ceasefire-holds-as-ukraine-reports-new-russian-strikes?traffic_source=rss",
+          "url": "https://www.aljazeera.com/economy/2026/10/13/trump-insists-energy-ceasefire-holds-as-ukraine-reports-new-russian-strikes?traffic_source=rss",
+          "time": "2026-10-13T03:30:23Z",
+          "published_date": "2026-10-13T03:30:23Z",
+          "publishedDate": "2026-10-13T03:30:23Z",
+          "tag": "Breaking",
+          "confidence": "DEVELOPING",
+          "breaking": true,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "al_jazeera",
+            "sourceUrl": "https://www.aljazeera.com/xml/rss/all.xml",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "218e2e968901",
+          "sourceLabel": "https://www.aljazeera.com/video/newsfeed/2026/10/13/russia-and-ukraine-trade-strikes-amid-doubt-over-energy?traffic_source=rss",
+          "sourceName": "https://www.aljazeera.com/video/newsfeed/2026/10/13/russia-and-ukraine-trade-strikes-amid-doubt-over-energy?traffic_source=rss",
+          "sourceType": "international",
+          "title": "Russia and Ukraine trade strikes amid doubt over ‘energy ceasefire’",
+          "summary": "Ukraine's president says Russian attacks on Ukraine’s energy infrastructure are continuing despite 'energy ceasefire'.",
+          "summary_snippet": "Ukraine's president says Russian attacks on Ukraine’s energy infrastructure are continuing despite 'energy ceasefire'.",
+          "source": "https://www.aljazeera.com/video/newsfeed/2026/10/13/russia-and-ukraine-trade-strikes-amid-doubt-over-energy?traffic_source=rss",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/13/russia-and-ukraine-trade-strikes-amid-doubt-over-energy?traffic_source=rss",
+          "time": "2026-10-13T03:11:19Z",
+          "published_date": "2026-10-13T03:11:19Z",
+          "publishedDate": "2026-10-13T03:11:19Z",
+          "tag": "Breaking",
+          "confidence": "DEVELOPING",
+          "breaking": true,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "al_jazeera",
+            "sourceUrl": "https://www.aljazeera.com/xml/rss/all.xml",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "title": "New Russian strikes follow Trump's announcement of Russia-Ukraine energy ceasefire - France 24",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQeGkwZFBocjY2TmR2T0E4TzFCVzZNT3NmcGRDcWd1R0hMX3lTemNSWDNiVWVOTTkxZUExdVowRk9ka180OFhrQ3R2X05vZm1WZkNpVlFpenp4ZkdQQTZ5MGdaaUl3UTRwakVjSVBzSjBrTl9LUnRGTEFJS0hveTJNSkVmS2t3VHlIYmQ0bGU1el9tN2VHWUdQTzhycEs?oc=5",
+          "published_date": "Sun, 11 Oct 2026 14:39:26 GMT",
+          "time": "Sun, 11 Oct 2026 14:39:26 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: France 24",
+          "summary": "Fallback discovery via Google News RSS; publisher: France 24",
+          "source": "France 24",
+          "sourceLabel": "France 24",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @POTUS",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "c4431e2acb7640eb",
+      "title": "M 4.7 - 14 km WNW of Río Grande, Panama",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 4,
+      "sourceCount": 1,
+      "sources": [
+        "earthquake.usgs.gov"
+      ],
+      "anchors": [],
+      "firstSeen": "2026-10-12T23:42:46.521000Z",
+      "lastSeen": "2026-10-13T07:36:35.040000Z",
+      "urls": [
+        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1zh",
+        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1ww",
+        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1x2",
+        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1wn"
+      ],
+      "reports": [
+        {
+          "id": "0a5f3d3915c5",
+          "sourceLabel": "USGS M4.5+ Earthquakes — Past Day",
+          "sourceName": "USGS M4.5+ Earthquakes — Past Day",
+          "sourceType": "climate-hazard",
+          "title": "M 4.7 - 14 km WNW of Río Grande, Panama",
+          "summary": "Time 2026-10-13 06:39:04 UTC 2026-10-13 06:39:04 UTC at epicenter Location 7.769°N 81.453°W Depth 10.00 km (6.21 mi)",
+          "summary_snippet": "Time 2026-10-13 06:39:04 UTC 2026-10-13 06:39:04 UTC at epicenter Location 7.769°N 81.453°W Depth 10.00 km (6.21 mi)",
+          "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1zh",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1zh",
+          "time": "2026-10-13T07:36:35.040000Z",
+          "published_date": "2026-10-13T07:36:35.040000Z",
+          "publishedDate": "2026-10-13T07:36:35.040000Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "usgs_m4_5_earthquakes_past_day",
+            "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
+            "feedFormat": "atom"
+          }
+        },
+        {
+          "id": "573612d03b6e",
+          "sourceLabel": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1ww",
+          "sourceName": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1ww",
+          "sourceType": "climate-hazard",
+          "title": "M 4.9 - 17 km W of Río Grande, Panama",
+          "summary": "DYFI? - IV Time 2026-10-12 23:36:46 UTC 2026-10-12 23:36:46 UTC at epicenter Location 7.733°N 81.493°W Depth 10.00 km (6.21 mi)",
+          "summary_snippet": "DYFI? - IV Time 2026-10-12 23:36:46 UTC 2026-10-12 23:36:46 UTC at epicenter Location 7.733°N 81.493°W Depth 10.00 km (6.21 mi)",
+          "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1ww",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1ww",
+          "time": "2026-10-13T03:49:29.764000Z",
+          "published_date": "2026-10-13T03:49:29.764000Z",
+          "publishedDate": "2026-10-13T03:49:29.764000Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "usgs_m4_5_earthquakes_past_day",
+            "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
+            "feedFormat": "atom"
+          }
+        },
+        {
+          "id": "c55d3f19dcf5",
+          "sourceLabel": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1x2",
+          "sourceName": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1x2",
+          "sourceType": "climate-hazard",
+          "title": "M 4.6 - 23 km WNW of Río Grande, Panama",
+          "summary": "Time 2026-10-13 00:02:01 UTC 2026-10-13 00:02:01 UTC at epicenter Location 7.796°N 81.529°W Depth 10.00 km (6.21 mi)",
+          "summary_snippet": "Time 2026-10-13 00:02:01 UTC 2026-10-13 00:02:01 UTC at epicenter Location 7.796°N 81.529°W Depth 10.00 km (6.21 mi)",
+          "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1x2",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1x2",
+          "time": "2026-10-13T03:11:13.040000Z",
+          "published_date": "2026-10-13T03:11:13.040000Z",
+          "publishedDate": "2026-10-13T03:11:13.040000Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "usgs_m4_5_earthquakes_past_day",
+            "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
+            "feedFormat": "atom"
+          }
+        },
+        {
+          "id": "cf48bc7d060e",
+          "sourceLabel": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1wn",
+          "sourceName": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1wn",
+          "sourceType": "climate-hazard",
+          "title": "M 6.1 - 18 km W of Río Grande, Panama",
+          "summary": "PAGER - GREEN ShakeMap - VIII DYFI? - IV Time 2026-10-12 23:20:36 UTC 2026-10-12 23:20:36 UTC at epicenter Location 7.703°N 81.499°W Depth 10.00 km (6.21 mi)",
+          "summary_snippet": "PAGER - GREEN ShakeMap - VIII DYFI? - IV Time 2026-10-12 23:20:36 UTC 2026-10-12 23:20:36 UTC at epicenter Location 7.703°N 81.499°W Depth 10.00 km (6.21 mi)",
+          "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1wn",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1wn",
+          "time": "2026-10-12T23:42:46.521000Z",
+          "published_date": "2026-10-12T23:42:46.521000Z",
+          "publishedDate": "2026-10-12T23:42:46.521000Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "usgs_m4_5_earthquakes_past_day",
+            "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
+            "feedFormat": "atom"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9dbe1492b2c609c1",
+      "title": "Statement of condemnation by the North Atlantic Council of Russia's malicious cyber activities - North Atlantic Treaty Organization | NATO",
+      "category": "diplomatic",
+      "confidence": "low",
+      "reportCount": 3,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [
+        "mali",
+        "nato",
+        "russia"
+      ],
+      "firstSeen": "Mon, 13 Jul 2026 07:00:00 GMT",
+      "lastSeen": "Tue, 23 Sep 2025 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMijgJBVV95cUxOdXFsbG5PYXZ0MHhiRUo2Z04zckU5STRuWEpTOXZkcVZBbnRFLUg3ZzdoUGR0OFViSUpONWhuU0J4dXI5Tk5qX19kT0dhczVQZFQ1MXF4RkpXMGNSUTd3NzRBbEJxNEZyT1FjV2NMQm01Z0hnaE8yUXdwVGJrRmcwckFlYjgwNWVjVWY3ck9hS3lta0c5WXQydmhtTUxseVIyRzlsZ2IxMFRDTF9BRHpHNGtYV3MxdkIxVVVGYm5vTVh5TGNudVB1NW1PTlVqT0loeW5vTXBZTldVNGZYYUljQ3JjQWlHVnphdWttYXktR2pZdV9JMGF1ekFtMmJ5bGdXUGQwYWpVdVFIeDRCY2c?oc=5",
+        "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQMnctZExoMHJER1JGMDlSVWdXT3BjSHJvRk9xRGZ5QThFdkdhN0ZjU3d1a0hEXzkwNnNOSVlvX2w2OGtkMldLbEFRcVNCV3hYeXhUSjBJZ2c3cV9MajR3aFlxcjdOWDJvZjgtRE1lTlFPSDMwd0o0SXBwdnVpUWx5Zy13NzlfdzBIWjhQX2VPNUx5aFNocU9nOXEzaVEzTEZoZUFaY1VfWnBrdU9aS0tyb2steEg5Zmx0Y2tlSHpZbWxrQ3kzR3NubGdsVjA0M0VTcmFmSmhsMzRnc1RiZWxIaTdMU1NZSmRWMjU0dDZiMVZaLVJ5dmxhUkZOOA?oc=5",
+        "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPUTJDOVlBUVY2Z1FYeldub1dSMk1HWnNSV0pSWG9IQjdhcjdOY3VQOURRZXkxY0QxdzRWR0dIRzRaZEpaRkxTNDc3cjJUd0JoM3VfQ3ZhTHlQa21NcmJwcTktMnFVNkRhZzU1X1BHNllRX24zZWZsUWozd0dmUGkyVlZPT24tNDZyMnFWcFhuM1NKTEhlR3ZCZ0xmWHdjQV9MRjVNdXc5MVlIcUZNaGFQRm5QVXBCUVZJMnlab1Etd3liUldudHhERm1tVFprOWV6TEp2cnp3V0NzTW1rZXp1clQxWjhWLWM5UHU2dWFLWWlzWXJGTHc?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "Statement of condemnation by the North Atlantic Council of Russia's malicious cyber activities - North Atlantic Treaty Organization | NATO",
+          "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxOdXFsbG5PYXZ0MHhiRUo2Z04zckU5STRuWEpTOXZkcVZBbnRFLUg3ZzdoUGR0OFViSUpONWhuU0J4dXI5Tk5qX19kT0dhczVQZFQ1MXF4RkpXMGNSUTd3NzRBbEJxNEZyT1FjV2NMQm01Z0hnaE8yUXdwVGJrRmcwckFlYjgwNWVjVWY3ck9hS3lta0c5WXQydmhtTUxseVIyRzlsZ2IxMFRDTF9BRHpHNGtYV3MxdkIxVVVGYm5vTVh5TGNudVB1NW1PTlVqT0loeW5vTXBZTldVNGZYYUljQ3JjQWlHVnphdWttYXktR2pZdV9JMGF1ekFtMmJ5bGdXUGQwYWpVdVFIeDRCY2c?oc=5",
+          "published_date": "Mon, 13 Jul 2026 07:00:00 GMT",
+          "time": "Mon, 13 Jul 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
+          "summary": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
+          "source": "North Atlantic Treaty Organization | NATO",
+          "sourceLabel": "North Atlantic Treaty Organization | NATO",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NATO",
+          "credit_metadata": "Google News RSS fallback"
+        },
+        {
+          "title": "Statement by the North Atlantic Council on recent airspace violations by Russia - North Atlantic Treaty Organization | NATO",
+          "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQMnctZExoMHJER1JGMDlSVWdXT3BjSHJvRk9xRGZ5QThFdkdhN0ZjU3d1a0hEXzkwNnNOSVlvX2w2OGtkMldLbEFRcVNCV3hYeXhUSjBJZ2c3cV9MajR3aFlxcjdOWDJvZjgtRE1lTlFPSDMwd0o0SXBwdnVpUWx5Zy13NzlfdzBIWjhQX2VPNUx5aFNocU9nOXEzaVEzTEZoZUFaY1VfWnBrdU9aS0tyb2steEg5Zmx0Y2tlSHpZbWxrQ3kzR3NubGdsVjA0M0VTcmFmSmhsMzRnc1RiZWxIaTdMU1NZSmRWMjU0dDZiMVZaLVJ5dmxhUkZOOA?oc=5",
+          "published_date": "Tue, 23 Sep 2025 07:00:00 GMT",
+          "time": "Tue, 23 Sep 2025 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
+          "summary": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
+          "source": "North Atlantic Treaty Organization | NATO",
+          "sourceLabel": "North Atlantic Treaty Organization | NATO",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NATO",
+          "credit_metadata": "Google News RSS fallback"
+        },
+        {
+          "title": "Statement by the North Atlantic Council on recent Russian hybrid activities - North Atlantic Treaty Organization | NATO",
+          "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPUTJDOVlBUVY2Z1FYeldub1dSMk1HWnNSV0pSWG9IQjdhcjdOY3VQOURRZXkxY0QxdzRWR0dIRzRaZEpaRkxTNDc3cjJUd0JoM3VfQ3ZhTHlQa21NcmJwcTktMnFVNkRhZzU1X1BHNllRX24zZWZsUWozd0dmUGkyVlZPT24tNDZyMnFWcFhuM1NKTEhlR3ZCZ0xmWHdjQV9MRjVNdXc5MVlIcUZNaGFQRm5QVXBCUVZJMnlab1Etd3liUldudHhERm1tVFprOWV6TEp2cnp3V0NzTW1rZXp1clQxWjhWLWM5UHU2dWFLWWlzWXJGTHc?oc=5",
+          "published_date": "Thu, 02 May 2024 07:00:00 GMT",
+          "time": "Thu, 02 May 2024 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
+          "summary": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
+          "source": "North Atlantic Treaty Organization | NATO",
+          "sourceLabel": "North Atlantic Treaty Organization | NATO",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NATO",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "c274ea56831ea346",
+      "title": "England Cricketer Ollie Pope Withdraws From Afghanistan Premier League Draft Amid Criticism Over Taliban's - News18",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 3,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "2026-10-13T02:34:58Z",
+      "lastSeen": "2026-10-13T02:34:58Z",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMihgJBVV95cUxQUV9NVFVGMG9TRHpsVUZsVWdtc1FTZTZtdGtVNVBDTVlHelAzMG1MYnZraktWUzNpcElVV2V2aE1MN0FMaFBBWG93NE13dHJteHpjOGNCWkRoUElWWUIwdkFiekZPRTdqV1UwQWtvZUpfcGJTWVp6REZ6U0Z3b0lfQ1dOUjhRbEloVFpDUUdlLVdnVmlwQ3VrTXNMcHluRU1iS1lJVE0xeGlheHg2Z3hQZWNDc1FxUkRDc0hxZE9NcS1rR2tELTJhN3FwaGF4UmlHeUVxV0VhQ3RKSmdlcURERlFhVk1UdXVhdHhCWXFHbndMV1lvVjlPeGZnSEJIb2R1eGlhNnl30gGLAkFVX3lxTE1vOWZSRDhFbDNmS3Q0X2lPU2o4ZlR0QWw3akFlelhEN296emFHMlVicnJ1Q2xGUjVrdkl3c0JmSTFfYlZxNjA4UzA4dy1Ec2lZY1JLVWtEMV9kc0dGd3c2UzhxTmVJbEdsMWE1eEdJdDdjcUpVejVHVGR3WDFVQmhRanhYczM3RFVwMWFlLUF3dkg4YWsxekpMRTlsdlAzNHpuZzZhaE9MSnMzZUNTSkN1LXlrTmxEcFlVRF95UkxubTd6Uk9HZVZtX0Q3RTFtM0hjcE5kREszMEZRTmlfYjA4d21sd1BjR1hvNk9QVThqRXYzYVkwQkxkOHJKblBoSS1XZGxmMFVmMUtWdw?oc=5",
+        "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNbzlmUkQ4RWwzZkt0NF9pT1NqOGZUdEFsN2pBZXpYRDdvenphRzJVYnJydUNsRlI1a3ZJd3NCZkkxX2JWcTYwOFMwOHctRHNpWWNSS1VrRDFfZHNHRnd3NlM4cU5lSWxHbDFhNXhHSXQ3Y3FKVXo1R1Rkd1gxVUJoUWp4WHMzN0RVcDFhZS1Bd3ZIOGFrMXpKTEU5bHZQMzR6bmc2YWhPTEpzM2VDU0pDdS15a05sRHBZVURfeVJMbm03elJPR2VWbV9EN0UxbTNIY3BOZERLMzBGUU5pX2IwOHdtbHdQY0dYbzZPUFU4akV2M2FZMEJMZDhySm5QaEktV2RsZjBVZjFLVnfSAYsCQVVfeXFMTW85ZlJEOEVsM2ZLdDRfaU9TajhmVHRBbDdqQWV6WEQ3b3p6YUcyVWJycnVDbEZSNWt2SXdzQmZJMV9iVnE2MDhTMDh3LURzaVljUktVa0QxX2RzR0Z3dzZTOHFOZUlsR2wxYTV4R0l0N2NxSlV6NUdUZHdYMVVCaFFqeFhzMzdEVXAxYWUtQXd2SDhhazF6SkxFOWx2UDM0em5nNmFoT0xKczNlQ1NKQ3UteWtObERwWVVEX3lSTG5tN3pST0dlVm1fRDdFMW0zSGNwTmRESzMwRlFOaV9iMDh3bWx3UGNHWG82T1BVOGpFdjNhWTBCTGQ4ckpuUGhJLVdkbGYwVWYxS1Z3?oc=5",
+        "https://news.google.com/rss/articles/CBMijAJBVV95cUxQd3NXUnZZeTdOQWYwM3R1dXZqakZmdDJOTHRGTkhXdmc5N0Y3SXlGWmxGMlhGcW1wbFJ6TWpuaVF1M2VaUGZCRW1tcDhZbG9Zd1lONDBZN0xjMEtVeEhiX1lZZFFFeHlfODRXYlFDTGhCTFVUdjZVV0ttUXlDTG9MWHo5ME1DNFIydW8wdnQ1N2NLVVo3NmtRTVJBUXFCUkhZRmF6S0VwalFKUVhGZXpPZElsZm9ydWo4SUQ3dnMxanEyeHBLVjFWWWR3eVJiOHBPNmZDLXpXSXVRa1Y2VTJMNjVwSzlQckZuQ1FxcEhiZWZpRlZiS21pOUtXampheHBfOUpqajJDZzRza1c50gGMAkFVX3lxTFB3c1dSdll5N05BZjAzdHV1dmpqRmZ0Mk5MdEZOSFd2Zzk3RjdJeUZabEYyWEZxbXBsUnpNam5pUXUzZVpQZkJFbW1wOFlsb1l3WU40MFk3TGMwS1V4SGJfWVlkUUV4eV84NFdiUUNMaEJMVVR2NlVXS21ReUNMb0xYejkwTUM0UjJ1bzB2dDU3Y0tVWjc2a1FNUkFRcUJSSFlGYXpLRXBqUUpRWEZlek9kSWxmb3J1ajhJRDd2czFqcTJ4cEtWMVZZZHd5UmI4cE82ZkMteldJdVFrVjZVMkw2NXBLOVByRm5DUXFwSGJlZmlGVmJLbWk5S1dqamF4cF85SmpqMkNnNHNrVzk?oc=5"
+      ],
+      "reports": [
+        {
+          "id": "3ecff7a07ae3",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMihgJBVV95cUxQUV9NVFVGMG9TRHpsVUZsVWdtc1FTZTZtdGtVNVBDTVlHelAzMG1MYnZraktWUzNpcElVV2V2aE1MN0FMaFBBWG93NE13dHJteHpjOGNCWkRoUElWWUIwdkFiekZPRTdqV1UwQWtvZUpfcGJTWVp6REZ6U0Z3b0lfQ1dOUjhRbEloVFpDUUdlLVdnVmlwQ3VrTXNMcHluRU1iS1lJVE0xeGlheHg2Z3hQZWNDc1FxUkRDc0hxZE9NcS1rR2tELTJhN3FwaGF4UmlHeUVxV0VhQ3RKSmdlcURERlFhVk1UdXVhdHhCWXFHbndMV1lvVjlPeGZnSEJIb2R1eGlhNnl30gGLAkFVX3lxTE1vOWZSRDhFbDNmS3Q0X2lPU2o4ZlR0QWw3akFlelhEN296emFHMlVicnJ1Q2xGUjVrdkl3c0JmSTFfYlZxNjA4UzA4dy1Ec2lZY1JLVWtEMV9kc0dGd3c2UzhxTmVJbEdsMWE1eEdJdDdjcUpVejVHVGR3WDFVQmhRanhYczM3RFVwMWFlLUF3dkg4YWsxekpMRTlsdlAzNHpuZzZhaE9MSnMzZUNTSkN1LXlrTmxEcFlVRF95UkxubTd6Uk9HZVZtX0Q3RTFtM0hjcE5kREszMEZRTmlfYjA4d21sd1BjR1hvNk9QVThqRXYzYVkwQkxkOHJKblBoSS1XZGxmMFVmMUtWdw?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMihgJBVV95cUxQUV9NVFVGMG9TRHpsVUZsVWdtc1FTZTZtdGtVNVBDTVlHelAzMG1MYnZraktWUzNpcElVV2V2aE1MN0FMaFBBWG93NE13dHJteHpjOGNCWkRoUElWWUIwdkFiekZPRTdqV1UwQWtvZUpfcGJTWVp6REZ6U0Z3b0lfQ1dOUjhRbEloVFpDUUdlLVdnVmlwQ3VrTXNMcHluRU1iS1lJVE0xeGlheHg2Z3hQZWNDc1FxUkRDc0hxZE9NcS1rR2tELTJhN3FwaGF4UmlHeUVxV0VhQ3RKSmdlcURERlFhVk1UdXVhdHhCWXFHbndMV1lvVjlPeGZnSEJIb2R1eGlhNnl30gGLAkFVX3lxTE1vOWZSRDhFbDNmS3Q0X2lPU2o4ZlR0QWw3akFlelhEN296emFHMlVicnJ1Q2xGUjVrdkl3c0JmSTFfYlZxNjA4UzA4dy1Ec2lZY1JLVWtEMV9kc0dGd3c2UzhxTmVJbEdsMWE1eEdJdDdjcUpVejVHVGR3WDFVQmhRanhYczM3RFVwMWFlLUF3dkg4YWsxekpMRTlsdlAzNHpuZzZhaE9MSnMzZUNTSkN1LXlrTmxEcFlVRF95UkxubTd6Uk9HZVZtX0Q3RTFtM0hjcE5kREszMEZRTmlfYjA4d21sd1BjR1hvNk9QVThqRXYzYVkwQkxkOHJKblBoSS1XZGxmMFVmMUtWdw?oc=5",
+          "sourceType": "south-asia-conflict",
+          "title": "England Cricketer Ollie Pope Withdraws From Afghanistan Premier League Draft Amid Criticism Over Taliban's - News18",
+          "summary": "England Cricketer Ollie Pope Withdraws From Afghanistan Premier League Draft Amid Criticism Over Taliban's News18",
+          "summary_snippet": "England Cricketer Ollie Pope Withdraws From Afghanistan Premier League Draft Amid Criticism Over Taliban's News18",
+          "source": "https://news.google.com/rss/articles/CBMihgJBVV95cUxQUV9NVFVGMG9TRHpsVUZsVWdtc1FTZTZtdGtVNVBDTVlHelAzMG1MYnZraktWUzNpcElVV2V2aE1MN0FMaFBBWG93NE13dHJteHpjOGNCWkRoUElWWUIwdkFiekZPRTdqV1UwQWtvZUpfcGJTWVp6REZ6U0Z3b0lfQ1dOUjhRbEloVFpDUUdlLVdnVmlwQ3VrTXNMcHluRU1iS1lJVE0xeGlheHg2Z3hQZWNDc1FxUkRDc0hxZE9NcS1rR2tELTJhN3FwaGF4UmlHeUVxV0VhQ3RKSmdlcURERlFhVk1UdXVhdHhCWXFHbndMV1lvVjlPeGZnSEJIb2R1eGlhNnl30gGLAkFVX3lxTE1vOWZSRDhFbDNmS3Q0X2lPU2o4ZlR0QWw3akFlelhEN296emFHMlVicnJ1Q2xGUjVrdkl3c0JmSTFfYlZxNjA4UzA4dy1Ec2lZY1JLVWtEMV9kc0dGd3c2UzhxTmVJbEdsMWE1eEdJdDdjcUpVejVHVGR3WDFVQmhRanhYczM3RFVwMWFlLUF3dkg4YWsxekpMRTlsdlAzNHpuZzZhaE9MSnMzZUNTSkN1LXlrTmxEcFlVRF95UkxubTd6Uk9HZVZtX0Q3RTFtM0hjcE5kREszMEZRTmlfYjA4d21sd1BjR1hvNk9QVThqRXYzYVkwQkxkOHJKblBoSS1XZGxmMFVmMUtWdw?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxQUV9NVFVGMG9TRHpsVUZsVWdtc1FTZTZtdGtVNVBDTVlHelAzMG1MYnZraktWUzNpcElVV2V2aE1MN0FMaFBBWG93NE13dHJteHpjOGNCWkRoUElWWUIwdkFiekZPRTdqV1UwQWtvZUpfcGJTWVp6REZ6U0Z3b0lfQ1dOUjhRbEloVFpDUUdlLVdnVmlwQ3VrTXNMcHluRU1iS1lJVE0xeGlheHg2Z3hQZWNDc1FxUkRDc0hxZE9NcS1rR2tELTJhN3FwaGF4UmlHeUVxV0VhQ3RKSmdlcURERlFhVk1UdXVhdHhCWXFHbndMV1lvVjlPeGZnSEJIb2R1eGlhNnl30gGLAkFVX3lxTE1vOWZSRDhFbDNmS3Q0X2lPU2o4ZlR0QWw3akFlelhEN296emFHMlVicnJ1Q2xGUjVrdkl3c0JmSTFfYlZxNjA4UzA4dy1Ec2lZY1JLVWtEMV9kc0dGd3c2UzhxTmVJbEdsMWE1eEdJdDdjcUpVejVHVGR3WDFVQmhRanhYczM3RFVwMWFlLUF3dkg4YWsxekpMRTlsdlAzNHpuZzZhaE9MSnMzZUNTSkN1LXlrTmxEcFlVRF95UkxubTd6Uk9HZVZtX0Q3RTFtM0hjcE5kREszMEZRTmlfYjA4d21sd1BjR1hvNk9QVThqRXYzYVkwQkxkOHJKblBoSS1XZGxmMFVmMUtWdw?oc=5",
+          "time": "2026-10-13T02:34:58Z",
+          "published_date": "2026-10-13T02:34:58Z",
+          "publishedDate": "2026-10-13T02:34:58Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_afghanistan_security",
+            "sourceUrl": "https://news.google.com/rss/search?q=Afghanistan+Taliban+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "9c2058c80b24",
+          "sourceLabel": "Google News — Afghanistan Security",
+          "sourceName": "Google News — Afghanistan Security",
+          "sourceType": "south-asia-conflict",
+          "title": "England Cricketer Ollie Pope Withdraws From Afghanistan Premier League Draft Amid Criticism Over Taliban's - News18",
+          "summary": "England Cricketer Ollie Pope Withdraws From Afghanistan Premier League Draft Amid Criticism Over Taliban's News18",
+          "summary_snippet": "England Cricketer Ollie Pope Withdraws From Afghanistan Premier League Draft Amid Criticism Over Taliban's News18",
+          "source": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNbzlmUkQ4RWwzZkt0NF9pT1NqOGZUdEFsN2pBZXpYRDdvenphRzJVYnJydUNsRlI1a3ZJd3NCZkkxX2JWcTYwOFMwOHctRHNpWWNSS1VrRDFfZHNHRnd3NlM4cU5lSWxHbDFhNXhHSXQ3Y3FKVXo1R1Rkd1gxVUJoUWp4WHMzN0RVcDFhZS1Bd3ZIOGFrMXpKTEU5bHZQMzR6bmc2YWhPTEpzM2VDU0pDdS15a05sRHBZVURfeVJMbm03elJPR2VWbV9EN0UxbTNIY3BOZERLMzBGUU5pX2IwOHdtbHdQY0dYbzZPUFU4akV2M2FZMEJMZDhySm5QaEktV2RsZjBVZjFLVnfSAYsCQVVfeXFMTW85ZlJEOEVsM2ZLdDRfaU9TajhmVHRBbDdqQWV6WEQ3b3p6YUcyVWJycnVDbEZSNWt2SXdzQmZJMV9iVnE2MDhTMDh3LURzaVljUktVa0QxX2RzR0Z3dzZTOHFOZUlsR2wxYTV4R0l0N2NxSlV6NUdUZHdYMVVCaFFqeFhzMzdEVXAxYWUtQXd2SDhhazF6SkxFOWx2UDM0em5nNmFoT0xKczNlQ1NKQ3UteWtObERwWVVEX3lSTG5tN3pST0dlVm1fRDdFMW0zSGNwTmRESzMwRlFOaV9iMDh3bWx3UGNHWG82T1BVOGpFdjNhWTBCTGQ4ckpuUGhJLVdkbGYwVWYxS1Z3?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxNbzlmUkQ4RWwzZkt0NF9pT1NqOGZUdEFsN2pBZXpYRDdvenphRzJVYnJydUNsRlI1a3ZJd3NCZkkxX2JWcTYwOFMwOHctRHNpWWNSS1VrRDFfZHNHRnd3NlM4cU5lSWxHbDFhNXhHSXQ3Y3FKVXo1R1Rkd1gxVUJoUWp4WHMzN0RVcDFhZS1Bd3ZIOGFrMXpKTEU5bHZQMzR6bmc2YWhPTEpzM2VDU0pDdS15a05sRHBZVURfeVJMbm03elJPR2VWbV9EN0UxbTNIY3BOZERLMzBGUU5pX2IwOHdtbHdQY0dYbzZPUFU4akV2M2FZMEJMZDhySm5QaEktV2RsZjBVZjFLVnfSAYsCQVVfeXFMTW85ZlJEOEVsM2ZLdDRfaU9TajhmVHRBbDdqQWV6WEQ3b3p6YUcyVWJycnVDbEZSNWt2SXdzQmZJMV9iVnE2MDhTMDh3LURzaVljUktVa0QxX2RzR0Z3dzZTOHFOZUlsR2wxYTV4R0l0N2NxSlV6NUdUZHdYMVVCaFFqeFhzMzdEVXAxYWUtQXd2SDhhazF6SkxFOWx2UDM0em5nNmFoT0xKczNlQ1NKQ3UteWtObERwWVVEX3lSTG5tN3pST0dlVm1fRDdFMW0zSGNwTmRESzMwRlFOaV9iMDh3bWx3UGNHWG82T1BVOGpFdjNhWTBCTGQ4ckpuUGhJLVdkbGYwVWYxS1Z3?oc=5",
+          "time": "2026-10-13T02:34:58Z",
+          "published_date": "2026-10-13T02:34:58Z",
+          "publishedDate": "2026-10-13T02:34:58Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_afghanistan_security",
+            "sourceUrl": "https://news.google.com/rss/search?q=Afghanistan+Taliban+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "150baed299d6",
+          "sourceLabel": "Google News — Afghanistan Security",
+          "sourceName": "Google News — Afghanistan Security",
+          "sourceType": "south-asia-conflict",
+          "title": "England Cricketer Ollie Pope Withdraws From Afghanistan Premier League Draft Amid Criticism Over Taliban's - News18",
+          "summary": "England Cricketer Ollie Pope Withdraws From Afghanistan Premier League Draft Amid Criticism Over Taliban's News18",
+          "summary_snippet": "England Cricketer Ollie Pope Withdraws From Afghanistan Premier League Draft Amid Criticism Over Taliban's News18",
+          "source": "https://news.google.com/rss/articles/CBMijAJBVV95cUxQd3NXUnZZeTdOQWYwM3R1dXZqakZmdDJOTHRGTkhXdmc5N0Y3SXlGWmxGMlhGcW1wbFJ6TWpuaVF1M2VaUGZCRW1tcDhZbG9Zd1lONDBZN0xjMEtVeEhiX1lZZFFFeHlfODRXYlFDTGhCTFVUdjZVV0ttUXlDTG9MWHo5ME1DNFIydW8wdnQ1N2NLVVo3NmtRTVJBUXFCUkhZRmF6S0VwalFKUVhGZXpPZElsZm9ydWo4SUQ3dnMxanEyeHBLVjFWWWR3eVJiOHBPNmZDLXpXSXVRa1Y2VTJMNjVwSzlQckZuQ1FxcEhiZWZpRlZiS21pOUtXampheHBfOUpqajJDZzRza1c50gGMAkFVX3lxTFB3c1dSdll5N05BZjAzdHV1dmpqRmZ0Mk5MdEZOSFd2Zzk3RjdJeUZabEYyWEZxbXBsUnpNam5pUXUzZVpQZkJFbW1wOFlsb1l3WU40MFk3TGMwS1V4SGJfWVlkUUV4eV84NFdiUUNMaEJMVVR2NlVXS21ReUNMb0xYejkwTUM0UjJ1bzB2dDU3Y0tVWjc2a1FNUkFRcUJSSFlGYXpLRXBqUUpRWEZlek9kSWxmb3J1ajhJRDd2czFqcTJ4cEtWMVZZZHd5UmI4cE82ZkMteldJdVFrVjZVMkw2NXBLOVByRm5DUXFwSGJlZmlGVmJLbWk5S1dqamF4cF85SmpqMkNnNHNrVzk?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxQd3NXUnZZeTdOQWYwM3R1dXZqakZmdDJOTHRGTkhXdmc5N0Y3SXlGWmxGMlhGcW1wbFJ6TWpuaVF1M2VaUGZCRW1tcDhZbG9Zd1lONDBZN0xjMEtVeEhiX1lZZFFFeHlfODRXYlFDTGhCTFVUdjZVV0ttUXlDTG9MWHo5ME1DNFIydW8wdnQ1N2NLVVo3NmtRTVJBUXFCUkhZRmF6S0VwalFKUVhGZXpPZElsZm9ydWo4SUQ3dnMxanEyeHBLVjFWWWR3eVJiOHBPNmZDLXpXSXVRa1Y2VTJMNjVwSzlQckZuQ1FxcEhiZWZpRlZiS21pOUtXampheHBfOUpqajJDZzRza1c50gGMAkFVX3lxTFB3c1dSdll5N05BZjAzdHV1dmpqRmZ0Mk5MdEZOSFd2Zzk3RjdJeUZabEYyWEZxbXBsUnpNam5pUXUzZVpQZkJFbW1wOFlsb1l3WU40MFk3TGMwS1V4SGJfWVlkUUV4eV84NFdiUUNMaEJMVVR2NlVXS21ReUNMb0xYejkwTUM0UjJ1bzB2dDU3Y0tVWjc2a1FNUkFRcUJSSFlGYXpLRXBqUUpRWEZlek9kSWxmb3J1ajhJRDd2czFqcTJ4cEtWMVZZZHd5UmI4cE82ZkMteldJdVFrVjZVMkw2NXBLOVByRm5DUXFwSGJlZmlGVmJLbWk5S1dqamF4cF85SmpqMkNnNHNrVzk?oc=5",
+          "time": "2026-10-13T02:34:58Z",
+          "published_date": "2026-10-13T02:34:58Z",
+          "publishedDate": "2026-10-13T02:34:58Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_afghanistan_security",
+            "sourceUrl": "https://news.google.com/rss/search?q=Afghanistan+Taliban+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
     {
       "id": "cd02c5e532c38eed",
       "title": "Green forest fire notification in Mozambique",
       "category": "general",
       "confidence": "low",
-      "reportCount": 6,
+      "reportCount": 3,
       "sourceCount": 1,
       "sources": [
         "gdacs.org"
       ],
       "anchors": [],
-      "firstSeen": "2026-10-12T23:01:37Z",
+      "firstSeen": "2026-10-12T23:05:56Z",
       "lastSeen": "2026-10-12T23:07:00Z",
       "urls": [
         "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032773",
         "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032772",
-        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032770",
-        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032769",
-        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032768",
-        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032767"
+        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032770"
       ],
       "reports": [
         {
@@ -93,607 +469,70 @@
             "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
             "feedFormat": "rss"
           }
-        },
-        {
-          "id": "4e2bd550a4ae",
-          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032769",
-          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032769",
-          "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in Mozambique",
-          "summary": "On 07/10/2026, a forest fire started in Mozambique, until 12/10/2026.",
-          "summary_snippet": "On 07/10/2026, a forest fire started in Mozambique, until 12/10/2026.",
-          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032769",
-          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032769",
-          "time": "2026-10-12T23:04:27Z",
-          "published_date": "2026-10-12T23:04:27Z",
-          "publishedDate": "2026-10-12T23:04:27Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "27b4a1b13415",
-          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032768",
-          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032768",
-          "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in Mozambique",
-          "summary": "On 08/10/2026, a forest fire started in Mozambique, until 12/10/2026.",
-          "summary_snippet": "On 08/10/2026, a forest fire started in Mozambique, until 12/10/2026.",
-          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032768",
-          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032768",
-          "time": "2026-10-12T23:03:30Z",
-          "published_date": "2026-10-12T23:03:30Z",
-          "publishedDate": "2026-10-12T23:03:30Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "e7b1566f2cc2",
-          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032767",
-          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032767",
-          "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in Mozambique",
-          "summary": "On 10/10/2026, a forest fire started in Mozambique, until 12/10/2026.",
-          "summary_snippet": "On 10/10/2026, a forest fire started in Mozambique, until 12/10/2026.",
-          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032767",
-          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032767",
-          "time": "2026-10-12T23:01:37Z",
-          "published_date": "2026-10-12T23:01:37Z",
-          "publishedDate": "2026-10-12T23:01:37Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
-            "feedFormat": "rss"
-          }
         }
       ]
     },
     {
-      "id": "9866061acfd9bd4c",
-      "title": "M 4.9 - 17 km W of Río Grande, Panama",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 4,
-      "sourceCount": 1,
-      "sources": [
-        "earthquake.usgs.gov"
-      ],
-      "anchors": [],
-      "firstSeen": "2026-10-12T20:38:48.040000Z",
-      "lastSeen": "2026-10-13T03:49:29.764000Z",
-      "urls": [
-        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1ww",
-        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1x2",
-        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1wn",
-        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1vf"
-      ],
-      "reports": [
-        {
-          "id": "573612d03b6e",
-          "sourceLabel": "USGS M4.5+ Earthquakes — Past Day",
-          "sourceName": "USGS M4.5+ Earthquakes — Past Day",
-          "sourceType": "climate-hazard",
-          "title": "M 4.9 - 17 km W of Río Grande, Panama",
-          "summary": "DYFI? - IV Time 2026-10-12 23:36:46 UTC 2026-10-12 23:36:46 UTC at epicenter Location 7.733°N 81.493°W Depth 10.00 km (6.21 mi)",
-          "summary_snippet": "DYFI? - IV Time 2026-10-12 23:36:46 UTC 2026-10-12 23:36:46 UTC at epicenter Location 7.733°N 81.493°W Depth 10.00 km (6.21 mi)",
-          "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1ww",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1ww",
-          "time": "2026-10-13T03:49:29.764000Z",
-          "published_date": "2026-10-13T03:49:29.764000Z",
-          "publishedDate": "2026-10-13T03:49:29.764000Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "usgs_m4_5_earthquakes_past_day",
-            "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
-            "feedFormat": "atom"
-          }
-        },
-        {
-          "id": "c55d3f19dcf5",
-          "sourceLabel": "USGS M4.5+ Earthquakes — Past Day",
-          "sourceName": "USGS M4.5+ Earthquakes — Past Day",
-          "sourceType": "climate-hazard",
-          "title": "M 4.6 - 23 km WNW of Río Grande, Panama",
-          "summary": "Time 2026-10-13 00:02:01 UTC 2026-10-13 00:02:01 UTC at epicenter Location 7.796°N 81.529°W Depth 10.00 km (6.21 mi)",
-          "summary_snippet": "Time 2026-10-13 00:02:01 UTC 2026-10-13 00:02:01 UTC at epicenter Location 7.796°N 81.529°W Depth 10.00 km (6.21 mi)",
-          "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1x2",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1x2",
-          "time": "2026-10-13T03:11:13.040000Z",
-          "published_date": "2026-10-13T03:11:13.040000Z",
-          "publishedDate": "2026-10-13T03:11:13.040000Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "usgs_m4_5_earthquakes_past_day",
-            "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
-            "feedFormat": "atom"
-          }
-        },
-        {
-          "id": "cf48bc7d060e",
-          "sourceLabel": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1wn",
-          "sourceName": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1wn",
-          "sourceType": "climate-hazard",
-          "title": "M 6.1 - 18 km W of Río Grande, Panama",
-          "summary": "PAGER - GREEN ShakeMap - VIII DYFI? - IV Time 2026-10-12 23:20:36 UTC 2026-10-12 23:20:36 UTC at epicenter Location 7.703°N 81.499°W Depth 10.00 km (6.21 mi)",
-          "summary_snippet": "PAGER - GREEN ShakeMap - VIII DYFI? - IV Time 2026-10-12 23:20:36 UTC 2026-10-12 23:20:36 UTC at epicenter Location 7.703°N 81.499°W Depth 10.00 km (6.21 mi)",
-          "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1wn",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1wn",
-          "time": "2026-10-12T23:42:46.521000Z",
-          "published_date": "2026-10-12T23:42:46.521000Z",
-          "publishedDate": "2026-10-12T23:42:46.521000Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "usgs_m4_5_earthquakes_past_day",
-            "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
-            "feedFormat": "atom"
-          }
-        },
-        {
-          "id": "af5a236b8f91",
-          "sourceLabel": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1vf",
-          "sourceName": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1vf",
-          "sourceType": "climate-hazard",
-          "title": "M 4.8 - 25 km W of Río Grande, Panama",
-          "summary": "Time 2026-10-12 20:05:25 UTC 2026-10-12 20:05:25 UTC at epicenter Location 7.718°N 81.568°W Depth 10.00 km (6.21 mi)",
-          "summary_snippet": "Time 2026-10-12 20:05:25 UTC 2026-10-12 20:05:25 UTC at epicenter Location 7.718°N 81.568°W Depth 10.00 km (6.21 mi)",
-          "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1vf",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1vf",
-          "time": "2026-10-12T20:38:48.040000Z",
-          "published_date": "2026-10-12T20:38:48.040000Z",
-          "publishedDate": "2026-10-12T20:38:48.040000Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "usgs_m4_5_earthquakes_past_day",
-            "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
-            "feedFormat": "atom"
-          }
-        }
-      ]
-    },
-    {
-      "id": "f4bef1a266999855",
-      "title": "Green forest fire notification in Australia",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 4,
-      "sourceCount": 1,
-      "sources": [
-        "gdacs.org"
-      ],
-      "anchors": [],
-      "firstSeen": "2026-10-12T19:00:42Z",
-      "lastSeen": "2026-10-12T23:04:24Z",
-      "urls": [
-        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032777",
-        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032776",
-        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032775",
-        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032765"
-      ],
-      "reports": [
-        {
-          "id": "4a75bb5a8778",
-          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032777",
-          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032777",
-          "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in Australia",
-          "summary": "On 07/10/2026, a forest fire started in Australia, until 12/10/2026.",
-          "summary_snippet": "On 07/10/2026, a forest fire started in Australia, until 12/10/2026.",
-          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032777",
-          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032777",
-          "time": "2026-10-12T23:04:24Z",
-          "published_date": "2026-10-12T23:04:24Z",
-          "publishedDate": "2026-10-12T23:04:24Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "19d183eb498d",
-          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032776",
-          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032776",
-          "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in Australia",
-          "summary": "On 08/10/2026, a forest fire started in Australia, until 12/10/2026.",
-          "summary_snippet": "On 08/10/2026, a forest fire started in Australia, until 12/10/2026.",
-          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032776",
-          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032776",
-          "time": "2026-10-12T23:02:52Z",
-          "published_date": "2026-10-12T23:02:52Z",
-          "publishedDate": "2026-10-12T23:02:52Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "67571259878d",
-          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032775",
-          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032775",
-          "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in Australia",
-          "summary": "On 09/10/2026, a forest fire started in Australia, until 12/10/2026.",
-          "summary_snippet": "On 09/10/2026, a forest fire started in Australia, until 12/10/2026.",
-          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032775",
-          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032775",
-          "time": "2026-10-12T23:02:47Z",
-          "published_date": "2026-10-12T23:02:47Z",
-          "publishedDate": "2026-10-12T23:02:47Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "971a2fbb444f",
-          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032765",
-          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032765",
-          "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in Australia",
-          "summary": "On 11/10/2026, a forest fire started in Australia, until 12/10/2026.",
-          "summary_snippet": "On 11/10/2026, a forest fire started in Australia, until 12/10/2026.",
-          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032765",
-          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032765",
-          "time": "2026-10-12T19:00:42Z",
-          "published_date": "2026-10-12T19:00:42Z",
-          "publishedDate": "2026-10-12T19:00:42Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "27423371744c5616",
-      "title": "Trump insists energy ceasefire holds as Ukraine reports new Russian strikes",
-      "category": "diplomatic",
+      "id": "ea2265cc82d06831",
+      "title": "Bulgaria summons Russian ambassador after ship sinks in Black Sea drone attack",
+      "category": "conflict",
       "confidence": "moderate",
-      "reportCount": 3,
+      "reportCount": 2,
       "sourceCount": 2,
       "sources": [
-        "aljazeera.com",
-        "news.google.com"
-      ],
-      "anchors": [
-        "france",
-        "russia",
-        "uk",
-        "ukraine"
-      ],
-      "firstSeen": "2026-10-13T03:11:19Z",
-      "lastSeen": "Sun, 11 Oct 2026 14:39:26 GMT",
-      "urls": [
-        "https://www.aljazeera.com/economy/2026/10/13/trump-insists-energy-ceasefire-holds-as-ukraine-reports-new-russian-strikes?traffic_source=rss",
-        "https://www.aljazeera.com/video/newsfeed/2026/10/13/russia-and-ukraine-trade-strikes-amid-doubt-over-energy?traffic_source=rss",
-        "https://news.google.com/rss/articles/CBMinAFBVV95cUxQeGkwZFBocjY2TmR2T0E4TzFCVzZNT3NmcGRDcWd1R0hMX3lTemNSWDNiVWVOTTkxZUExdVowRk9ka180OFhrQ3R2X05vZm1WZkNpVlFpenp4ZkdQQTZ5MGdaaUl3UTRwakVjSVBzSjBrTl9LUnRGTEFJS0hveTJNSkVmS2t3VHlIYmQ0bGU1el9tN2VHWUdQTzhycEs?oc=5"
-      ],
-      "reports": [
-        {
-          "id": "a54e39e1e903",
-          "sourceLabel": "Al Jazeera",
-          "sourceName": "Al Jazeera",
-          "sourceType": "international",
-          "title": "Trump insists energy ceasefire holds as Ukraine reports new Russian strikes",
-          "summary": "US President urges Zelenskyy, Putin to end 'ridiculous war' and insists they agreed to stop attacks on energy sites.",
-          "summary_snippet": "US President urges Zelenskyy, Putin to end 'ridiculous war' and insists they agreed to stop attacks on energy sites.",
-          "source": "https://www.aljazeera.com/economy/2026/10/13/trump-insists-energy-ceasefire-holds-as-ukraine-reports-new-russian-strikes?traffic_source=rss",
-          "url": "https://www.aljazeera.com/economy/2026/10/13/trump-insists-energy-ceasefire-holds-as-ukraine-reports-new-russian-strikes?traffic_source=rss",
-          "time": "2026-10-13T03:30:23Z",
-          "published_date": "2026-10-13T03:30:23Z",
-          "publishedDate": "2026-10-13T03:30:23Z",
-          "tag": "Breaking",
-          "confidence": "DEVELOPING",
-          "breaking": true,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "al_jazeera",
-            "sourceUrl": "https://www.aljazeera.com/xml/rss/all.xml",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "218e2e968901",
-          "sourceLabel": "Al Jazeera",
-          "sourceName": "Al Jazeera",
-          "sourceType": "international",
-          "title": "Russia and Ukraine trade strikes amid doubt over ‘energy ceasefire’",
-          "summary": "Ukraine's president says Russian attacks on Ukraine’s energy infrastructure are continuing despite 'energy ceasefire'.",
-          "summary_snippet": "Ukraine's president says Russian attacks on Ukraine’s energy infrastructure are continuing despite 'energy ceasefire'.",
-          "source": "https://www.aljazeera.com/video/newsfeed/2026/10/13/russia-and-ukraine-trade-strikes-amid-doubt-over-energy?traffic_source=rss",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/13/russia-and-ukraine-trade-strikes-amid-doubt-over-energy?traffic_source=rss",
-          "time": "2026-10-13T03:11:19Z",
-          "published_date": "2026-10-13T03:11:19Z",
-          "publishedDate": "2026-10-13T03:11:19Z",
-          "tag": "Breaking",
-          "confidence": "DEVELOPING",
-          "breaking": true,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "al_jazeera",
-            "sourceUrl": "https://www.aljazeera.com/xml/rss/all.xml",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "title": "New Russian strikes follow Trump's announcement of Russia-Ukraine energy ceasefire - France 24",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQeGkwZFBocjY2TmR2T0E4TzFCVzZNT3NmcGRDcWd1R0hMX3lTemNSWDNiVWVOTTkxZUExdVowRk9ka180OFhrQ3R2X05vZm1WZkNpVlFpenp4ZkdQQTZ5MGdaaUl3UTRwakVjSVBzSjBrTl9LUnRGTEFJS0hveTJNSkVmS2t3VHlIYmQ0bGU1el9tN2VHWUdQTzhycEs?oc=5",
-          "published_date": "Sun, 11 Oct 2026 14:39:26 GMT",
-          "time": "Sun, 11 Oct 2026 14:39:26 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: France 24",
-          "summary": "Fallback discovery via Google News RSS; publisher: France 24",
-          "source": "France 24",
-          "sourceLabel": "France 24",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @POTUS",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "213e4a7a5a87ad9a",
-      "title": "Sudan's famine risk worsened by conflict, drought and funding shortages, report says - PBS",
-      "category": "general",
-      "confidence": "moderate",
-      "reportCount": 3,
-      "sourceCount": 2,
-      "sources": [
-        "news.google.com",
+        "bbc.co.uk",
         "aljazeera.com"
       ],
       "anchors": [
-        "sudan"
-      ],
-      "firstSeen": "2026-10-12T16:40:57Z",
-      "lastSeen": "2026-10-12T21:30:57Z",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMivAFBVV95cUxQcHRJNFhHZkRWaUV6aG1ZdDJXRWNlZzVLLWh6WEhQOWpFODFZRTNjamQwdDN1NThfZTBRTXM2SFBuSC1jcGlUcG1zZnNYWE5ud3c4MFdiQW5wMFNybkxuaTNlTHpMQ19JOGVROGt2UnRTLXlHU2tJZEE1NnZkNTduZnlJZEt2Z1haTGtscy1wbnJEeFFkX1ZxS1V6dEVoam4wZmkxMmc5LUE3T2pUVk1RWTAzSDNKczBjWkxoWdIBvAFBVV95cUxQcHRJNFhHZkRWaUV6aG1ZdDJXRWNlZzVLLWh6WEhQOWpFODFZRTNjamQwdDN1NThfZTBRTXM2SFBuSC1jcGlUcG1zZnNYWE5ud3c4MFdiQW5wMFNybkxuaTNlTHpMQ19JOGVROGt2UnRTLXlHU2tJZEE1NnZkNTduZnlJZEt2Z1haTGtscy1wbnJEeFFkX1ZxS1V6dEVoam4wZmkxMmc5LUE3T2pUVk1RWTAzSDNKczBjWkxoWQ?oc=5",
-        "https://www.aljazeera.com/news/2026/10/12/conflict-drought-increasing-risk-of-famine-in-sudan-monitor?traffic_source=rss",
-        "https://news.google.com/rss/articles/CBMixwFBVV95cUxOXzg1Z0RDVzdQMlZBWWxNbVNxZTZjUnlFZzFfQWk2S1ZVWXNXQzZiRWlrRjlFQXJyM2pTTDRBZnRQOHVZaU1SNGNVdS0taEg0bEZhMXlnZTJkdV9QT085Q0NOREV3a0tsSkJuVjhiUzRuUWhEMnBMTF9ZZFlSYXhORk9oSjBRSjVVMkN4dlFLVHpaZEtKV1c2cFYxUlZWNUpBZUtWVFc4cFJoUjFyRGluS3JOeVhYUFF1R1JrLW1DOWs3OUMtSGpj?oc=5"
-      ],
-      "reports": [
-        {
-          "id": "485f5a59aee7",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQcHRJNFhHZkRWaUV6aG1ZdDJXRWNlZzVLLWh6WEhQOWpFODFZRTNjamQwdDN1NThfZTBRTXM2SFBuSC1jcGlUcG1zZnNYWE5ud3c4MFdiQW5wMFNybkxuaTNlTHpMQ19JOGVROGt2UnRTLXlHU2tJZEE1NnZkNTduZnlJZEt2Z1haTGtscy1wbnJEeFFkX1ZxS1V6dEVoam4wZmkxMmc5LUE3T2pUVk1RWTAzSDNKczBjWkxoWdIBvAFBVV95cUxQcHRJNFhHZkRWaUV6aG1ZdDJXRWNlZzVLLWh6WEhQOWpFODFZRTNjamQwdDN1NThfZTBRTXM2SFBuSC1jcGlUcG1zZnNYWE5ud3c4MFdiQW5wMFNybkxuaTNlTHpMQ19JOGVROGt2UnRTLXlHU2tJZEE1NnZkNTduZnlJZEt2Z1haTGtscy1wbnJEeFFkX1ZxS1V6dEVoam4wZmkxMmc5LUE3T2pUVk1RWTAzSDNKczBjWkxoWQ?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQcHRJNFhHZkRWaUV6aG1ZdDJXRWNlZzVLLWh6WEhQOWpFODFZRTNjamQwdDN1NThfZTBRTXM2SFBuSC1jcGlUcG1zZnNYWE5ud3c4MFdiQW5wMFNybkxuaTNlTHpMQ19JOGVROGt2UnRTLXlHU2tJZEE1NnZkNTduZnlJZEt2Z1haTGtscy1wbnJEeFFkX1ZxS1V6dEVoam4wZmkxMmc5LUE3T2pUVk1RWTAzSDNKczBjWkxoWdIBvAFBVV95cUxQcHRJNFhHZkRWaUV6aG1ZdDJXRWNlZzVLLWh6WEhQOWpFODFZRTNjamQwdDN1NThfZTBRTXM2SFBuSC1jcGlUcG1zZnNYWE5ud3c4MFdiQW5wMFNybkxuaTNlTHpMQ19JOGVROGt2UnRTLXlHU2tJZEE1NnZkNTduZnlJZEt2Z1haTGtscy1wbnJEeFFkX1ZxS1V6dEVoam4wZmkxMmc5LUE3T2pUVk1RWTAzSDNKczBjWkxoWQ?oc=5",
-          "sourceType": "africa-conflict",
-          "title": "Sudan's famine risk worsened by conflict, drought and funding shortages, report says - PBS",
-          "summary": "Sudan's famine risk worsened by conflict, drought and funding shortages, report says PBS",
-          "summary_snippet": "Sudan's famine risk worsened by conflict, drought and funding shortages, report says PBS",
-          "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQcHRJNFhHZkRWaUV6aG1ZdDJXRWNlZzVLLWh6WEhQOWpFODFZRTNjamQwdDN1NThfZTBRTXM2SFBuSC1jcGlUcG1zZnNYWE5ud3c4MFdiQW5wMFNybkxuaTNlTHpMQ19JOGVROGt2UnRTLXlHU2tJZEE1NnZkNTduZnlJZEt2Z1haTGtscy1wbnJEeFFkX1ZxS1V6dEVoam4wZmkxMmc5LUE3T2pUVk1RWTAzSDNKczBjWkxoWdIBvAFBVV95cUxQcHRJNFhHZkRWaUV6aG1ZdDJXRWNlZzVLLWh6WEhQOWpFODFZRTNjamQwdDN1NThfZTBRTXM2SFBuSC1jcGlUcG1zZnNYWE5ud3c4MFdiQW5wMFNybkxuaTNlTHpMQ19JOGVROGt2UnRTLXlHU2tJZEE1NnZkNTduZnlJZEt2Z1haTGtscy1wbnJEeFFkX1ZxS1V6dEVoam4wZmkxMmc5LUE3T2pUVk1RWTAzSDNKczBjWkxoWQ?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQcHRJNFhHZkRWaUV6aG1ZdDJXRWNlZzVLLWh6WEhQOWpFODFZRTNjamQwdDN1NThfZTBRTXM2SFBuSC1jcGlUcG1zZnNYWE5ud3c4MFdiQW5wMFNybkxuaTNlTHpMQ19JOGVROGt2UnRTLXlHU2tJZEE1NnZkNTduZnlJZEt2Z1haTGtscy1wbnJEeFFkX1ZxS1V6dEVoam4wZmkxMmc5LUE3T2pUVk1RWTAzSDNKczBjWkxoWdIBvAFBVV95cUxQcHRJNFhHZkRWaUV6aG1ZdDJXRWNlZzVLLWh6WEhQOWpFODFZRTNjamQwdDN1NThfZTBRTXM2SFBuSC1jcGlUcG1zZnNYWE5ud3c4MFdiQW5wMFNybkxuaTNlTHpMQ19JOGVROGt2UnRTLXlHU2tJZEE1NnZkNTduZnlJZEt2Z1haTGtscy1wbnJEeFFkX1ZxS1V6dEVoam4wZmkxMmc5LUE3T2pUVk1RWTAzSDNKczBjWkxoWQ?oc=5",
-          "time": "2026-10-12T21:30:57Z",
-          "published_date": "2026-10-12T21:30:57Z",
-          "publishedDate": "2026-10-12T21:30:57Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_sudan_conflict",
-            "sourceUrl": "https://news.google.com/rss/search?q=Sudan+SAF+RSF+Darfur+conflict+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "36dbd86c3d56",
-          "sourceLabel": "https://www.aljazeera.com/news/2026/10/12/conflict-drought-increasing-risk-of-famine-in-sudan-monitor?traffic_source=rss",
-          "sourceName": "https://www.aljazeera.com/news/2026/10/12/conflict-drought-increasing-risk-of-famine-in-sudan-monitor?traffic_source=rss",
-          "sourceType": "international",
-          "title": "Conflict, drought increasing risk of famine in Sudan: Monitor",
-          "summary": "El Nino-induced drought is affecting roughly half of the country as three-year long war continues.",
-          "summary_snippet": "El Nino-induced drought is affecting roughly half of the country as three-year long war continues.",
-          "source": "https://www.aljazeera.com/news/2026/10/12/conflict-drought-increasing-risk-of-famine-in-sudan-monitor?traffic_source=rss",
-          "url": "https://www.aljazeera.com/news/2026/10/12/conflict-drought-increasing-risk-of-famine-in-sudan-monitor?traffic_source=rss",
-          "time": "2026-10-12T21:27:42Z",
-          "published_date": "2026-10-12T21:27:42Z",
-          "publishedDate": "2026-10-12T21:27:42Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "al_jazeera",
-            "sourceUrl": "https://www.aljazeera.com/xml/rss/all.xml",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "6d81ab045221",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOXzg1Z0RDVzdQMlZBWWxNbVNxZTZjUnlFZzFfQWk2S1ZVWXNXQzZiRWlrRjlFQXJyM2pTTDRBZnRQOHVZaU1SNGNVdS0taEg0bEZhMXlnZTJkdV9QT085Q0NOREV3a0tsSkJuVjhiUzRuUWhEMnBMTF9ZZFlSYXhORk9oSjBRSjVVMkN4dlFLVHpaZEtKV1c2cFYxUlZWNUpBZUtWVFc4cFJoUjFyRGluS3JOeVhYUFF1R1JrLW1DOWs3OUMtSGpj?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOXzg1Z0RDVzdQMlZBWWxNbVNxZTZjUnlFZzFfQWk2S1ZVWXNXQzZiRWlrRjlFQXJyM2pTTDRBZnRQOHVZaU1SNGNVdS0taEg0bEZhMXlnZTJkdV9QT085Q0NOREV3a0tsSkJuVjhiUzRuUWhEMnBMTF9ZZFlSYXhORk9oSjBRSjVVMkN4dlFLVHpaZEtKV1c2cFYxUlZWNUpBZUtWVFc4cFJoUjFyRGluS3JOeVhYUFF1R1JrLW1DOWs3OUMtSGpj?oc=5",
-          "sourceType": "africa-conflict",
-          "title": "Sudan's famine risk worsened by conflict, drought and funding shortages, report says - The Washington Post",
-          "summary": "Sudan's famine risk worsened by conflict, drought and funding shortages, report says The Washington Post",
-          "summary_snippet": "Sudan's famine risk worsened by conflict, drought and funding shortages, report says The Washington Post",
-          "source": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOXzg1Z0RDVzdQMlZBWWxNbVNxZTZjUnlFZzFfQWk2S1ZVWXNXQzZiRWlrRjlFQXJyM2pTTDRBZnRQOHVZaU1SNGNVdS0taEg0bEZhMXlnZTJkdV9QT085Q0NOREV3a0tsSkJuVjhiUzRuUWhEMnBMTF9ZZFlSYXhORk9oSjBRSjVVMkN4dlFLVHpaZEtKV1c2cFYxUlZWNUpBZUtWVFc4cFJoUjFyRGluS3JOeVhYUFF1R1JrLW1DOWs3OUMtSGpj?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOXzg1Z0RDVzdQMlZBWWxNbVNxZTZjUnlFZzFfQWk2S1ZVWXNXQzZiRWlrRjlFQXJyM2pTTDRBZnRQOHVZaU1SNGNVdS0taEg0bEZhMXlnZTJkdV9QT085Q0NOREV3a0tsSkJuVjhiUzRuUWhEMnBMTF9ZZFlSYXhORk9oSjBRSjVVMkN4dlFLVHpaZEtKV1c2cFYxUlZWNUpBZUtWVFc4cFJoUjFyRGluS3JOeVhYUFF1R1JrLW1DOWs3OUMtSGpj?oc=5",
-          "time": "2026-10-12T16:40:57Z",
-          "published_date": "2026-10-12T16:40:57Z",
-          "publishedDate": "2026-10-12T16:40:57Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_sudan_conflict",
-            "sourceUrl": "https://news.google.com/rss/search?q=Sudan+SAF+RSF+Darfur+conflict+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "9dbe1492b2c609c1",
-      "title": "Statement of condemnation by the North Atlantic Council of Russia's malicious cyber activities - North Atlantic Treaty Organization | NATO",
-      "category": "diplomatic",
-      "confidence": "low",
-      "reportCount": 3,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [
-        "mali",
-        "nato",
+        "black sea",
         "russia"
       ],
-      "firstSeen": "Mon, 13 Jul 2026 07:00:00 GMT",
-      "lastSeen": "Tue, 23 Sep 2025 07:00:00 GMT",
+      "firstSeen": "2026-10-13T07:36:38Z",
+      "lastSeen": "2026-10-13T10:57:17Z",
       "urls": [
-        "https://news.google.com/rss/articles/CBMijgJBVV95cUxOdXFsbG5PYXZ0MHhiRUo2Z04zckU5STRuWEpTOXZkcVZBbnRFLUg3ZzdoUGR0OFViSUpONWhuU0J4dXI5Tk5qX19kT0dhczVQZFQ1MXF4RkpXMGNSUTd3NzRBbEJxNEZyT1FjV2NMQm01Z0hnaE8yUXdwVGJrRmcwckFlYjgwNWVjVWY3ck9hS3lta0c5WXQydmhtTUxseVIyRzlsZ2IxMFRDTF9BRHpHNGtYV3MxdkIxVVVGYm5vTVh5TGNudVB1NW1PTlVqT0loeW5vTXBZTldVNGZYYUljQ3JjQWlHVnphdWttYXktR2pZdV9JMGF1ekFtMmJ5bGdXUGQwYWpVdVFIeDRCY2c?oc=5",
-        "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQMnctZExoMHJER1JGMDlSVWdXT3BjSHJvRk9xRGZ5QThFdkdhN0ZjU3d1a0hEXzkwNnNOSVlvX2w2OGtkMldLbEFRcVNCV3hYeXhUSjBJZ2c3cV9MajR3aFlxcjdOWDJvZjgtRE1lTlFPSDMwd0o0SXBwdnVpUWx5Zy13NzlfdzBIWjhQX2VPNUx5aFNocU9nOXEzaVEzTEZoZUFaY1VfWnBrdU9aS0tyb2steEg5Zmx0Y2tlSHpZbWxrQ3kzR3NubGdsVjA0M0VTcmFmSmhsMzRnc1RiZWxIaTdMU1NZSmRWMjU0dDZiMVZaLVJ5dmxhUkZOOA?oc=5",
-        "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPUTJDOVlBUVY2Z1FYeldub1dSMk1HWnNSV0pSWG9IQjdhcjdOY3VQOURRZXkxY0QxdzRWR0dIRzRaZEpaRkxTNDc3cjJUd0JoM3VfQ3ZhTHlQa21NcmJwcTktMnFVNkRhZzU1X1BHNllRX24zZWZsUWozd0dmUGkyVlZPT24tNDZyMnFWcFhuM1NKTEhlR3ZCZ0xmWHdjQV9MRjVNdXc5MVlIcUZNaGFQRm5QVXBCUVZJMnlab1Etd3liUldudHhERm1tVFprOWV6TEp2cnp3V0NzTW1rZXp1clQxWjhWLWM5UHU2dWFLWWlzWXJGTHc?oc=5"
+        "https://www.bbc.co.uk/news/articles/cmn06w5x9g25o?at_medium=RSS&at_campaign=rss",
+        "https://www.aljazeera.com/news/2026/10/13/drone-attack-sinks-ship-off-bulgarias-black-sea-coast-pm-says?traffic_source=rss"
       ],
       "reports": [
         {
-          "title": "Statement of condemnation by the North Atlantic Council of Russia's malicious cyber activities - North Atlantic Treaty Organization | NATO",
-          "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxOdXFsbG5PYXZ0MHhiRUo2Z04zckU5STRuWEpTOXZkcVZBbnRFLUg3ZzdoUGR0OFViSUpONWhuU0J4dXI5Tk5qX19kT0dhczVQZFQ1MXF4RkpXMGNSUTd3NzRBbEJxNEZyT1FjV2NMQm01Z0hnaE8yUXdwVGJrRmcwckFlYjgwNWVjVWY3ck9hS3lta0c5WXQydmhtTUxseVIyRzlsZ2IxMFRDTF9BRHpHNGtYV3MxdkIxVVVGYm5vTVh5TGNudVB1NW1PTlVqT0loeW5vTXBZTldVNGZYYUljQ3JjQWlHVnphdWttYXktR2pZdV9JMGF1ekFtMmJ5bGdXUGQwYWpVdVFIeDRCY2c?oc=5",
-          "published_date": "Mon, 13 Jul 2026 07:00:00 GMT",
-          "time": "Mon, 13 Jul 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "summary": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "source": "North Atlantic Treaty Organization | NATO",
-          "sourceLabel": "North Atlantic Treaty Organization | NATO",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NATO",
-          "credit_metadata": "Google News RSS fallback"
-        },
-        {
-          "title": "Statement by the North Atlantic Council on recent airspace violations by Russia - North Atlantic Treaty Organization | NATO",
-          "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQMnctZExoMHJER1JGMDlSVWdXT3BjSHJvRk9xRGZ5QThFdkdhN0ZjU3d1a0hEXzkwNnNOSVlvX2w2OGtkMldLbEFRcVNCV3hYeXhUSjBJZ2c3cV9MajR3aFlxcjdOWDJvZjgtRE1lTlFPSDMwd0o0SXBwdnVpUWx5Zy13NzlfdzBIWjhQX2VPNUx5aFNocU9nOXEzaVEzTEZoZUFaY1VfWnBrdU9aS0tyb2steEg5Zmx0Y2tlSHpZbWxrQ3kzR3NubGdsVjA0M0VTcmFmSmhsMzRnc1RiZWxIaTdMU1NZSmRWMjU0dDZiMVZaLVJ5dmxhUkZOOA?oc=5",
-          "published_date": "Tue, 23 Sep 2025 07:00:00 GMT",
-          "time": "Tue, 23 Sep 2025 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "summary": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "source": "North Atlantic Treaty Organization | NATO",
-          "sourceLabel": "North Atlantic Treaty Organization | NATO",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NATO",
-          "credit_metadata": "Google News RSS fallback"
-        },
-        {
-          "title": "Statement by the North Atlantic Council on recent Russian hybrid activities - North Atlantic Treaty Organization | NATO",
-          "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPUTJDOVlBUVY2Z1FYeldub1dSMk1HWnNSV0pSWG9IQjdhcjdOY3VQOURRZXkxY0QxdzRWR0dIRzRaZEpaRkxTNDc3cjJUd0JoM3VfQ3ZhTHlQa21NcmJwcTktMnFVNkRhZzU1X1BHNllRX24zZWZsUWozd0dmUGkyVlZPT24tNDZyMnFWcFhuM1NKTEhlR3ZCZ0xmWHdjQV9MRjVNdXc5MVlIcUZNaGFQRm5QVXBCUVZJMnlab1Etd3liUldudHhERm1tVFprOWV6TEp2cnp3V0NzTW1rZXp1clQxWjhWLWM5UHU2dWFLWWlzWXJGTHc?oc=5",
-          "published_date": "Thu, 02 May 2024 07:00:00 GMT",
-          "time": "Thu, 02 May 2024 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "summary": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "source": "North Atlantic Treaty Organization | NATO",
-          "sourceLabel": "North Atlantic Treaty Organization | NATO",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NATO",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "9ce7849446179fe3",
-      "title": "Teenager shoots headmaster, teacher at French school",
-      "category": "general",
-      "confidence": "moderate",
-      "reportCount": 2,
-      "sourceCount": 2,
-      "sources": [
-        "channelnewsasia.com",
-        "aljazeera.com"
-      ],
-      "anchors": [],
-      "firstSeen": "2026-10-12T19:44:00Z",
-      "lastSeen": "2026-10-13T03:01:42Z",
-      "urls": [
-        "https://www.channelnewsasia.com/world/france-school-teenager-shoots-headmaster-teacher-6454686",
-        "https://www.aljazeera.com/video/newsfeed/2026/10/12/teenager-shoots-headmaster-teacher-at-french-school?traffic_source=rss"
-      ],
-      "reports": [
-        {
-          "id": "2775da24545f",
-          "sourceLabel": "CNA World",
-          "sourceName": "CNA World",
-          "sourceType": "news",
-          "title": "Teenager shoots headmaster, teacher at French school",
-          "summary": "Authorities said there did not appear to be a link with the high school protests that have rocked France in recent weeks.",
-          "summary_snippet": "Authorities said there did not appear to be a link with the high school protests that have rocked France in recent weeks.",
-          "source": "https://www.channelnewsasia.com/world/france-school-teenager-shoots-headmaster-teacher-6454686",
-          "url": "https://www.channelnewsasia.com/world/france-school-teenager-shoots-headmaster-teacher-6454686",
-          "time": "2026-10-13T03:01:42Z",
-          "published_date": "2026-10-13T03:01:42Z",
-          "publishedDate": "2026-10-13T03:01:42Z",
-          "tag": "World",
+          "id": "8669f2494bbb",
+          "sourceLabel": "BBC World",
+          "sourceName": "BBC World",
+          "sourceType": "international",
+          "title": "Bulgaria summons Russian ambassador after ship sinks in Black Sea drone attack",
+          "summary": "Eleven crew members are missing after a merchant ship was sunk overnight, local officials say.",
+          "summary_snippet": "Eleven crew members are missing after a merchant ship was sunk overnight, local officials say.",
+          "source": "https://www.bbc.co.uk/news/articles/cmn06w5x9g25o?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.bbc.co.uk/news/articles/cmn06w5x9g25o?at_medium=RSS&at_campaign=rss",
+          "time": "2026-10-13T10:57:17Z",
+          "published_date": "2026-10-13T10:57:17Z",
+          "publishedDate": "2026-10-13T10:57:17Z",
+          "tag": "Breaking",
           "confidence": "DEVELOPING",
-          "breaking": false,
+          "breaking": true,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "cna_world",
-            "sourceUrl": "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml&category=6311",
+            "sourceId": "bbc_world",
+            "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
             "feedFormat": "rss"
           }
         },
         {
-          "id": "a85cd121dfb0",
-          "sourceLabel": "https://www.aljazeera.com/video/newsfeed/2026/10/12/teenager-shoots-headmaster-teacher-at-french-school?traffic_source=rss",
-          "sourceName": "https://www.aljazeera.com/video/newsfeed/2026/10/12/teenager-shoots-headmaster-teacher-at-french-school?traffic_source=rss",
+          "id": "43b42136bc2b",
+          "sourceLabel": "Al Jazeera",
+          "sourceName": "Al Jazeera",
           "sourceType": "international",
-          "title": "Teenager shoots headmaster, teacher at French school",
-          "summary": "French officials say a 14-year-old boy opened fire with a hunting rifle at a middle school in the town of Aubagne.",
-          "summary_snippet": "French officials say a 14-year-old boy opened fire with a hunting rifle at a middle school in the town of Aubagne.",
-          "source": "https://www.aljazeera.com/video/newsfeed/2026/10/12/teenager-shoots-headmaster-teacher-at-french-school?traffic_source=rss",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/12/teenager-shoots-headmaster-teacher-at-french-school?traffic_source=rss",
-          "time": "2026-10-12T19:44:00Z",
-          "published_date": "2026-10-12T19:44:00Z",
-          "publishedDate": "2026-10-12T19:44:00Z",
-          "tag": "World",
+          "title": "Drone attack sinks ship off Bulgaria’s Black Sea coast, PM says",
+          "summary": "Two ships were hit in the attack, including the Ukrainian-owned Chelsea 3, which sustained damage.",
+          "summary_snippet": "Two ships were hit in the attack, including the Ukrainian-owned Chelsea 3, which sustained damage.",
+          "source": "https://www.aljazeera.com/news/2026/10/13/drone-attack-sinks-ship-off-bulgarias-black-sea-coast-pm-says?traffic_source=rss",
+          "url": "https://www.aljazeera.com/news/2026/10/13/drone-attack-sinks-ship-off-bulgarias-black-sea-coast-pm-says?traffic_source=rss",
+          "time": "2026-10-13T07:36:38Z",
+          "published_date": "2026-10-13T07:36:38Z",
+          "publishedDate": "2026-10-13T07:36:38Z",
+          "tag": "Breaking",
           "confidence": "DEVELOPING",
-          "breaking": false,
+          "breaking": true,
           "liveDatabase": true,
           "credit": {
             "sourceId": "al_jazeera",
@@ -704,60 +543,106 @@
       ]
     },
     {
-      "id": "2cacde0d3145b2c7",
-      "title": "Immigration agents search Congresswoman Ilhan Omar's home - BBC",
+      "id": "89d009d670a6f121",
+      "title": "Latin American organised crime ‘may operate in 16 European countries’ - The Guardian",
       "category": "general",
       "confidence": "moderate",
       "reportCount": 2,
       "sourceCount": 2,
       "sources": [
         "news.google.com",
-        "bbc.co.uk"
+        "theguardian.com"
       ],
-      "anchors": [],
-      "firstSeen": "2026-10-12T17:09:55Z",
-      "lastSeen": "2026-10-12T22:05:31Z",
+      "anchors": [
+        "america"
+      ],
+      "firstSeen": "2026-10-13T07:00:18Z",
+      "lastSeen": "2026-10-13T07:18:00Z",
       "urls": [
-        "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9nMXdITGJwRFVwSXB0SHIwS3pRM000X3phc2l3Z3lBckxlVkljNk9NRkZuUTNUYTFVbXNObjdSd2czd1p3STZtRzFKcDZsZGtqQ2w5UVdSRzl1VTQ?oc=5",
-        "https://www.bbc.co.uk/news/articles/cvp8glg97393o?at_medium=RSS&at_campaign=rss"
+        "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPOXhDQ3dIbkpmRndpS3NsTFF4SDdIb3Y4QVh2dXEwZDQzME1jRHY4cHlXVmdEV2h3anRMRXB6Uld5YWt0SGxFeklpTl9xdGk1ODJIbUFaYmc4R1M2cWZ1dHNITVVRZzI1N0JCbG43UW83QXJVYjQ5anRnbzFsYTBjcFNTdWt0YWtQeGFJRGNGSTkwUjFvdDJJVVJ4QkRUSkQ4QmdJUG56UC1BWjBIaVk5dmdpTktZcThm?oc=5",
+        "https://www.theguardian.com/global-development/2026/oct/13/latin-america-organised-crime-cartels-drugs-cocaine-europe"
       ],
       "reports": [
         {
-          "id": "0da9bf0393f7",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9nMXdITGJwRFVwSXB0SHIwS3pRM000X3phc2l3Z3lBckxlVkljNk9NRkZuUTNUYTFVbXNObjdSd2czd1p3STZtRzFKcDZsZGtqQ2w5UVdSRzl1VTQ?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9nMXdITGJwRFVwSXB0SHIwS3pRM000X3phc2l3Z3lBckxlVkljNk9NRkZuUTNUYTFVbXNObjdSd2czd1p3STZtRzFKcDZsZGtqQ2w5UVdSRzl1VTQ?oc=5",
-          "sourceType": "us-politics",
-          "title": "Immigration agents search Congresswoman Ilhan Omar's home - BBC",
-          "summary": "Immigration agents search Congresswoman Ilhan Omar's home BBC",
-          "summary_snippet": "Immigration agents search Congresswoman Ilhan Omar's home BBC",
-          "source": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9nMXdITGJwRFVwSXB0SHIwS3pRM000X3phc2l3Z3lBckxlVkljNk9NRkZuUTNUYTFVbXNObjdSd2czd1p3STZtRzFKcDZsZGtqQ2w5UVdSRzl1VTQ?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9nMXdITGJwRFVwSXB0SHIwS3pRM000X3phc2l3Z3lBckxlVkljNk9NRkZuUTNUYTFVbXNObjdSd2czd1p3STZtRzFKcDZsZGtqQ2w5UVdSRzl1VTQ?oc=5",
-          "time": "2026-10-12T22:05:31Z",
-          "published_date": "2026-10-12T22:05:31Z",
-          "publishedDate": "2026-10-12T22:05:31Z",
+          "id": "c5bff34b7a2e",
+          "sourceLabel": "Google News — Sinaloa Cartel / CJNG",
+          "sourceName": "Google News — Sinaloa Cartel / CJNG",
+          "sourceType": "cartel",
+          "title": "Latin American organised crime ‘may operate in 16 European countries’ - The Guardian",
+          "summary": "Latin American organised crime ‘may operate in 16 European countries’ The Guardian",
+          "summary_snippet": "Latin American organised crime ‘may operate in 16 European countries’ The Guardian",
+          "source": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPOXhDQ3dIbkpmRndpS3NsTFF4SDdIb3Y4QVh2dXEwZDQzME1jRHY4cHlXVmdEV2h3anRMRXB6Uld5YWt0SGxFeklpTl9xdGk1ODJIbUFaYmc4R1M2cWZ1dHNITVVRZzI1N0JCbG43UW83QXJVYjQ5anRnbzFsYTBjcFNTdWt0YWtQeGFJRGNGSTkwUjFvdDJJVVJ4QkRUSkQ4QmdJUG56UC1BWjBIaVk5dmdpTktZcThm?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPOXhDQ3dIbkpmRndpS3NsTFF4SDdIb3Y4QVh2dXEwZDQzME1jRHY4cHlXVmdEV2h3anRMRXB6Uld5YWt0SGxFeklpTl9xdGk1ODJIbUFaYmc4R1M2cWZ1dHNITVVRZzI1N0JCbG43UW83QXJVYjQ5anRnbzFsYTBjcFNTdWt0YWtQeGFJRGNGSTkwUjFvdDJJVVJ4QkRUSkQ4QmdJUG56UC1BWjBIaVk5dmdpTktZcThm?oc=5",
+          "time": "2026-10-13T07:18:00Z",
+          "published_date": "2026-10-13T07:18:00Z",
+          "publishedDate": "2026-10-13T07:18:00Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "google_news_u_s_politics",
-            "sourceUrl": "https://news.google.com/rss/search?q=US+politics+Congress+Senate+White+House+election+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "sourceId": "google_news_sinaloa_cartel_cjng",
+            "sourceUrl": "https://news.google.com/rss/search?q=Sinaloa+Cartel+CJNG+Mexico+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
         },
         {
-          "id": "d7320b9b78a9",
-          "sourceLabel": "https://www.bbc.co.uk/news/articles/cvp8glg97393o?at_medium=RSS&at_campaign=rss",
-          "sourceName": "https://www.bbc.co.uk/news/articles/cvp8glg97393o?at_medium=RSS&at_campaign=rss",
+          "id": "501017426fe3",
+          "sourceLabel": "Guardian World",
+          "sourceName": "Guardian World",
           "sourceType": "international",
-          "title": "Immigration agents search Congresswoman Ilhan Omar's home",
-          "summary": "Omar, an outspoken Trump critic, said the search was \"an attempt to target political enemies\" and that she \"will not be silenced\".",
-          "summary_snippet": "Omar, an outspoken Trump critic, said the search was \"an attempt to target political enemies\" and that she \"will not be silenced\".",
-          "source": "https://www.bbc.co.uk/news/articles/cvp8glg97393o?at_medium=RSS&at_campaign=rss",
-          "url": "https://www.bbc.co.uk/news/articles/cvp8glg97393o?at_medium=RSS&at_campaign=rss",
-          "time": "2026-10-12T17:09:55Z",
-          "published_date": "2026-10-12T17:09:55Z",
-          "publishedDate": "2026-10-12T17:09:55Z",
+          "title": "Latin American organised crime ‘may operate in 16 European countries’",
+          "summary": "Cocaine seizures in Europe are up more than fivefold in 10 years as a host of cartels take root. A four-month Guardian investigation reveals the true scale of a continent-wide shift A four-month investigation by the Guardian has revealed that the surge in cocaine trafficking to Europe is directly linked to the expanding presence of Latin American criminal networks in Europe, where they have forged close ties with loc",
+          "summary_snippet": "Cocaine seizures in Europe are up more than fivefold in 10 years as a host of cartels take root. A four-month Guardian investigation reveals the true scale of a continent-wide shift A four-month investigation by the Guardian has revealed that the surge in cocaine trafficking to Europe is directly linked to the expanding presence of Latin American criminal networks in Europe, where they have forged close ties with loc",
+          "source": "https://www.theguardian.com/global-development/2026/oct/13/latin-america-organised-crime-cartels-drugs-cocaine-europe",
+          "url": "https://www.theguardian.com/global-development/2026/oct/13/latin-america-organised-crime-cartels-drugs-cocaine-europe",
+          "time": "2026-10-13T07:00:18Z",
+          "published_date": "2026-10-13T07:00:18Z",
+          "publishedDate": "2026-10-13T07:00:18Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "guardian_world",
+            "sourceUrl": "https://www.theguardian.com/world/rss",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ab4e878250e5d749",
+      "title": "Where the US midterm elections will be won and lost",
+      "category": "general",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "sourceCount": 2,
+      "sources": [
+        "bbc.co.uk",
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "2026-10-13T05:02:44Z",
+      "lastSeen": "2026-10-13T05:02:44Z",
+      "urls": [
+        "https://www.bbc.co.uk/news/articles/cr20wlp09gn3o?at_medium=RSS&at_campaign=rss",
+        "https://news.google.com/rss/articles/CBMiXkFVX3lxTFB3dXY1NkFXaUQ3ZGxpNTdjUVBjbTRadUY0YU5ENXc3TGNPRm9XNkJXYlNHRXJmN3lULU9LNUtaQVhjQkZkZ3FjRkNWOUhUSWJlUGV4ZV9MZWs3WHU5bkE?oc=5"
+      ],
+      "reports": [
+        {
+          "id": "6c0e5653903c",
+          "sourceLabel": "BBC World",
+          "sourceName": "BBC World",
+          "sourceType": "international",
+          "title": "Where the US midterm elections will be won and lost",
+          "summary": "An in-depth look at the key polling, races and issues ahead of an election that will define Trump’s final two years as president.",
+          "summary_snippet": "An in-depth look at the key polling, races and issues ahead of an election that will define Trump’s final two years as president.",
+          "source": "https://www.bbc.co.uk/news/articles/cr20wlp09gn3o?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.bbc.co.uk/news/articles/cr20wlp09gn3o?at_medium=RSS&at_campaign=rss",
+          "time": "2026-10-13T05:02:44Z",
+          "published_date": "2026-10-13T05:02:44Z",
+          "publishedDate": "2026-10-13T05:02:44Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
@@ -767,41 +652,20 @@
             "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
             "feedFormat": "rss"
           }
-        }
-      ]
-    },
-    {
-      "id": "8a8a09d0cca472ef",
-      "title": "Elon Musk spends $366m to bolster Republican Party in US midterm elections - Al Jazeera",
-      "category": "general",
-      "confidence": "moderate",
-      "reportCount": 2,
-      "sourceCount": 2,
-      "sources": [
-        "news.google.com",
-        "aljazeera.com"
-      ],
-      "anchors": [],
-      "firstSeen": "2026-10-12T19:48:21Z",
-      "lastSeen": "2026-10-12T19:53:13Z",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMitgFBVV95cUxQdVNnUTJVaDl6NkxNYzlmMGVkcEtDQXB6RGV2WThMSzB3Q1FyYWw0cnlUTjBxNVI3YkxJWVhNUWE5SXRzRW11T25ucUczcmdnMFo0WkthLS14bENhY2ZuazUtNWcxc0tZcFNURVAwQUJUcWZ1VlhCLU5rZEhJQTlrOWtEcXFab2V1N1V0VGY2OVIxRktQbXE3Njgzb1R5cUNXRl80WjRNRmZVYWZneWQ5eC1pSlZHUdIBuwFBVV95cUxQME9XdmkxeDJNeS10cjQwdUZCZFZYYjRXNnEzTllaX2FLcmlreXdyTWI3dktMSkhJWDRibm8tSDItbjFJRWkydlRTVU1hblllLTI2YjdLT2swT0UycG5SMXkzMzlOdjdYeWRNamxkc002T1hUdXlYdUs2QjllR3JKWXByS1JjcEZqTVNmWHJ0MG9rekNVVGxVWFJabTh5M2I1QUdsWVV1R1E0WDYwNjhFVlVyNE9lS3piYk1N?oc=5",
-        "https://www.aljazeera.com/news/2026/10/12/elon-musk-spends-366m-to-bolster-republican-party-in-us-midterm-elections?traffic_source=rss"
-      ],
-      "reports": [
+        },
         {
-          "id": "9aba6fb13c62",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQdVNnUTJVaDl6NkxNYzlmMGVkcEtDQXB6RGV2WThMSzB3Q1FyYWw0cnlUTjBxNVI3YkxJWVhNUWE5SXRzRW11T25ucUczcmdnMFo0WkthLS14bENhY2ZuazUtNWcxc0tZcFNURVAwQUJUcWZ1VlhCLU5rZEhJQTlrOWtEcXFab2V1N1V0VGY2OVIxRktQbXE3Njgzb1R5cUNXRl80WjRNRmZVYWZneWQ5eC1pSlZHUdIBuwFBVV95cUxQME9XdmkxeDJNeS10cjQwdUZCZFZYYjRXNnEzTllaX2FLcmlreXdyTWI3dktMSkhJWDRibm8tSDItbjFJRWkydlRTVU1hblllLTI2YjdLT2swT0UycG5SMXkzMzlOdjdYeWRNamxkc002T1hUdXlYdUs2QjllR3JKWXByS1JjcEZqTVNmWHJ0MG9rekNVVGxVWFJabTh5M2I1QUdsWVV1R1E0WDYwNjhFVlVyNE9lS3piYk1N?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQdVNnUTJVaDl6NkxNYzlmMGVkcEtDQXB6RGV2WThMSzB3Q1FyYWw0cnlUTjBxNVI3YkxJWVhNUWE5SXRzRW11T25ucUczcmdnMFo0WkthLS14bENhY2ZuazUtNWcxc0tZcFNURVAwQUJUcWZ1VlhCLU5rZEhJQTlrOWtEcXFab2V1N1V0VGY2OVIxRktQbXE3Njgzb1R5cUNXRl80WjRNRmZVYWZneWQ5eC1pSlZHUdIBuwFBVV95cUxQME9XdmkxeDJNeS10cjQwdUZCZFZYYjRXNnEzTllaX2FLcmlreXdyTWI3dktMSkhJWDRibm8tSDItbjFJRWkydlRTVU1hblllLTI2YjdLT2swT0UycG5SMXkzMzlOdjdYeWRNamxkc002T1hUdXlYdUs2QjllR3JKWXByS1JjcEZqTVNmWHJ0MG9rekNVVGxVWFJabTh5M2I1QUdsWVV1R1E0WDYwNjhFVlVyNE9lS3piYk1N?oc=5",
+          "id": "eb122c73ebf1",
+          "sourceLabel": "Google News — U.S. Politics",
+          "sourceName": "Google News — U.S. Politics",
           "sourceType": "us-politics",
-          "title": "Elon Musk spends $366m to bolster Republican Party in US midterm elections - Al Jazeera",
-          "summary": "Elon Musk spends $366m to bolster Republican Party in US midterm elections Al Jazeera",
-          "summary_snippet": "Elon Musk spends $366m to bolster Republican Party in US midterm elections Al Jazeera",
-          "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQdVNnUTJVaDl6NkxNYzlmMGVkcEtDQXB6RGV2WThMSzB3Q1FyYWw0cnlUTjBxNVI3YkxJWVhNUWE5SXRzRW11T25ucUczcmdnMFo0WkthLS14bENhY2ZuazUtNWcxc0tZcFNURVAwQUJUcWZ1VlhCLU5rZEhJQTlrOWtEcXFab2V1N1V0VGY2OVIxRktQbXE3Njgzb1R5cUNXRl80WjRNRmZVYWZneWQ5eC1pSlZHUdIBuwFBVV95cUxQME9XdmkxeDJNeS10cjQwdUZCZFZYYjRXNnEzTllaX2FLcmlreXdyTWI3dktMSkhJWDRibm8tSDItbjFJRWkydlRTVU1hblllLTI2YjdLT2swT0UycG5SMXkzMzlOdjdYeWRNamxkc002T1hUdXlYdUs2QjllR3JKWXByS1JjcEZqTVNmWHJ0MG9rekNVVGxVWFJabTh5M2I1QUdsWVV1R1E0WDYwNjhFVlVyNE9lS3piYk1N?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQdVNnUTJVaDl6NkxNYzlmMGVkcEtDQXB6RGV2WThMSzB3Q1FyYWw0cnlUTjBxNVI3YkxJWVhNUWE5SXRzRW11T25ucUczcmdnMFo0WkthLS14bENhY2ZuazUtNWcxc0tZcFNURVAwQUJUcWZ1VlhCLU5rZEhJQTlrOWtEcXFab2V1N1V0VGY2OVIxRktQbXE3Njgzb1R5cUNXRl80WjRNRmZVYWZneWQ5eC1pSlZHUdIBuwFBVV95cUxQME9XdmkxeDJNeS10cjQwdUZCZFZYYjRXNnEzTllaX2FLcmlreXdyTWI3dktMSkhJWDRibm8tSDItbjFJRWkydlRTVU1hblllLTI2YjdLT2swT0UycG5SMXkzMzlOdjdYeWRNamxkc002T1hUdXlYdUs2QjllR3JKWXByS1JjcEZqTVNmWHJ0MG9rekNVVGxVWFJabTh5M2I1QUdsWVV1R1E0WDYwNjhFVlVyNE9lS3piYk1N?oc=5",
-          "time": "2026-10-12T19:53:13Z",
-          "published_date": "2026-10-12T19:53:13Z",
-          "publishedDate": "2026-10-12T19:53:13Z",
+          "title": "Where the US midterm elections will be won and lost - BBC",
+          "summary": "Where the US midterm elections will be won and lost BBC",
+          "summary_snippet": "Where the US midterm elections will be won and lost BBC",
+          "source": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFB3dXY1NkFXaUQ3ZGxpNTdjUVBjbTRadUY0YU5ENXc3TGNPRm9XNkJXYlNHRXJmN3lULU9LNUtaQVhjQkZkZ3FjRkNWOUhUSWJlUGV4ZV9MZWs3WHU5bkE?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFB3dXY1NkFXaUQ3ZGxpNTdjUVBjbTRadUY0YU5ENXc3TGNPRm9XNkJXYlNHRXJmN3lULU9LNUtaQVhjQkZkZ3FjRkNWOUhUSWJlUGV4ZV9MZWs3WHU5bkE?oc=5",
+          "time": "2026-10-13T05:02:44Z",
+          "published_date": "2026-10-13T05:02:44Z",
+          "publishedDate": "2026-10-13T05:02:44Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
@@ -811,153 +675,12 @@
             "sourceUrl": "https://news.google.com/rss/search?q=US+politics+Congress+Senate+White+House+election+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
-        },
-        {
-          "id": "645c28821b8b",
-          "sourceLabel": "https://www.aljazeera.com/news/2026/10/12/elon-musk-spends-366m-to-bolster-republican-party-in-us-midterm-elections?traffic_source=rss",
-          "sourceName": "https://www.aljazeera.com/news/2026/10/12/elon-musk-spends-366m-to-bolster-republican-party-in-us-midterm-elections?traffic_source=rss",
-          "sourceType": "international",
-          "title": "Elon Musk spends $366m to bolster Republican Party in US midterm elections",
-          "summary": "The barrage of spending comes as Republicans fight to overcome Trump's slipping popularity and cost of living concerns.",
-          "summary_snippet": "The barrage of spending comes as Republicans fight to overcome Trump's slipping popularity and cost of living concerns.",
-          "source": "https://www.aljazeera.com/news/2026/10/12/elon-musk-spends-366m-to-bolster-republican-party-in-us-midterm-elections?traffic_source=rss",
-          "url": "https://www.aljazeera.com/news/2026/10/12/elon-musk-spends-366m-to-bolster-republican-party-in-us-midterm-elections?traffic_source=rss",
-          "time": "2026-10-12T19:48:21Z",
-          "published_date": "2026-10-12T19:48:21Z",
-          "publishedDate": "2026-10-12T19:48:21Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "al_jazeera",
-            "sourceUrl": "https://www.aljazeera.com/xml/rss/all.xml",
-            "feedFormat": "rss"
-          }
         }
       ]
     },
     {
-      "id": "1bc74816d3cd2a19",
-      "title": "UK: Iran 'highly likely' to be behind RAF Fairford incident",
-      "category": "general",
-      "confidence": "moderate",
-      "reportCount": 2,
-      "sourceCount": 2,
-      "sources": [
-        "dw.com",
-        "aljazeera.com"
-      ],
-      "anchors": [
-        "iran",
-        "uk"
-      ],
-      "firstSeen": "2026-10-12T18:24:42Z",
-      "lastSeen": "2026-10-12T19:02:00Z",
-      "urls": [
-        "https://www.dw.com/en/uk-iran-highly-likely-to-be-behind-raf-fairford-incident/a-79645941?maca=en-rss-en-world-4025-xml-mrss",
-        "https://www.aljazeera.com/video/newsfeed/2026/10/12/uk-pm-says-raf-base-incidents-likely-coordinated-by-iran?traffic_source=rss"
-      ],
-      "reports": [
-        {
-          "id": "3fe8bc995c99",
-          "sourceLabel": "https://www.dw.com/en/uk-iran-highly-likely-to-be-behind-raf-fairford-incident/a-79645941?maca=en-rss-en-world-4025-xml-mrss",
-          "sourceName": "https://www.dw.com/en/uk-iran-highly-likely-to-be-behind-raf-fairford-incident/a-79645941?maca=en-rss-en-world-4025-xml-mrss",
-          "sourceType": "international",
-          "title": "UK: Iran 'highly likely' to be behind RAF Fairford incident",
-          "summary": "Prime Minister Andy Burnham told parliament there were \"strong indications\" of Iranian involvement. The government summoned Iran's ambassador. The scare at RAF Fairford led to the withdrawal of USAF B-1 heavy bombers.",
-          "summary_snippet": "Prime Minister Andy Burnham told parliament there were \"strong indications\" of Iranian involvement. The government summoned Iran's ambassador. The scare at RAF Fairford led to the withdrawal of USAF B-1 heavy bombers.",
-          "source": "https://www.dw.com/en/uk-iran-highly-likely-to-be-behind-raf-fairford-incident/a-79645941?maca=en-rss-en-world-4025-xml-mrss",
-          "url": "https://www.dw.com/en/uk-iran-highly-likely-to-be-behind-raf-fairford-incident/a-79645941?maca=en-rss-en-world-4025-xml-mrss",
-          "time": "2026-10-12T19:02:00Z",
-          "published_date": "2026-10-12T19:02:00Z",
-          "publishedDate": "2026-10-12T19:02:00Z",
-          "tag": "Breaking",
-          "confidence": "DEVELOPING",
-          "breaking": true,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "dw_world",
-            "sourceUrl": "https://rss.dw.com/xml/rss-en-world",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "fba4a8c4f130",
-          "sourceLabel": "https://www.aljazeera.com/video/newsfeed/2026/10/12/uk-pm-says-raf-base-incidents-likely-coordinated-by-iran?traffic_source=rss",
-          "sourceName": "https://www.aljazeera.com/video/newsfeed/2026/10/12/uk-pm-says-raf-base-incidents-likely-coordinated-by-iran?traffic_source=rss",
-          "sourceType": "international",
-          "title": "UK PM says RAF base incidents ‘likely coordinated’ by Iran",
-          "summary": "UK Prime Minister Andy Burnham says the incidents at RAF Fairford and RAF Molesworth were likely coordinated by Iran.",
-          "summary_snippet": "UK Prime Minister Andy Burnham says the incidents at RAF Fairford and RAF Molesworth were likely coordinated by Iran.",
-          "source": "https://www.aljazeera.com/video/newsfeed/2026/10/12/uk-pm-says-raf-base-incidents-likely-coordinated-by-iran?traffic_source=rss",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/12/uk-pm-says-raf-base-incidents-likely-coordinated-by-iran?traffic_source=rss",
-          "time": "2026-10-12T18:24:42Z",
-          "published_date": "2026-10-12T18:24:42Z",
-          "publishedDate": "2026-10-12T18:24:42Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "al_jazeera",
-            "sourceUrl": "https://www.aljazeera.com/xml/rss/all.xml",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "7e25ab364b4dcc3b",
-      "title": "Explanation of Vote Before the Vote for UNGA 80 Adoption on the Resolution to “Correct the Map” - United States Mission to the United Nations (.gov)",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [
-        "united states"
-      ],
-      "firstSeen": "Fri, 04 Sep 2026 07:00:00 GMT",
-      "lastSeen": "Wed, 25 Mar 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMivgFBVV95cUxNTHA4MlhhUlpyZGZCdnZ6NzEzVGRMMzZlQVVxNGVRaXNsTGcxZU4zaHBUYlZQaG5TTlJ3ZlZQSmcyYlgwNGVQdWx6cDNpN2ZKUkJ0TlcySWxnT3U0bnRCV1NzVmFoVk5oQUNTZzc1a0xHMTNIQXRfcE4wc3d0MjVhNmtINlhiNVdvQkVhaUc2NFNLZlpQQ1RiMl9aaHBvTXB0TWR4c29ERDlpbDB1WDgxVDV1SWJ6VnN4R2d1VkRB?oc=5",
-        "https://news.google.com/rss/articles/CBMidkFVX3lxTE9YcXR5WUN6NzQ5WVVDNzZjeGNqdDBvcnVHbm9uRlhOQW1JSXFLdTViUWJLcVJOUDBaRlpBNS0xQ2Y0V1FXRW1iSmpCcWw2NU1sNnpYbF9acjJMb09rbEVwQXgwWXprVXlrZkhRLXNtTzhDeFlHYlE?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Explanation of Vote Before the Vote for UNGA 80 Adoption on the Resolution to “Correct the Map” - United States Mission to the United Nations (.gov)",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNTHA4MlhhUlpyZGZCdnZ6NzEzVGRMMzZlQVVxNGVRaXNsTGcxZU4zaHBUYlZQaG5TTlJ3ZlZQSmcyYlgwNGVQdWx6cDNpN2ZKUkJ0TlcySWxnT3U0bnRCV1NzVmFoVk5oQUNTZzc1a0xHMTNIQXRfcE4wc3d0MjVhNmtINlhiNVdvQkVhaUc2NFNLZlpQQ1RiMl9aaHBvTXB0TWR4c29ERDlpbDB1WDgxVDV1SWJ6VnN4R2d1VkRB?oc=5",
-          "published_date": "Fri, 04 Sep 2026 07:00:00 GMT",
-          "time": "Fri, 04 Sep 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: United States Mission to the United Nations (.gov)",
-          "summary": "Fallback discovery via Google News RSS; publisher: United States Mission to the United Nations (.gov)",
-          "source": "United States Mission to the United Nations (.gov)",
-          "sourceLabel": "United States Mission to the United Nations (.gov)",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @UN",
-          "credit_metadata": "Google News RSS fallback"
-        },
-        {
-          "title": "Explanation of Vote for UNGA Resolution - United States Mission to the United Nations (.gov)",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9YcXR5WUN6NzQ5WVVDNzZjeGNqdDBvcnVHbm9uRlhOQW1JSXFLdTViUWJLcVJOUDBaRlpBNS0xQ2Y0V1FXRW1iSmpCcWw2NU1sNnpYbF9acjJMb09rbEVwQXgwWXprVXlrZkhRLXNtTzhDeFlHYlE?oc=5",
-          "published_date": "Wed, 25 Mar 2026 07:00:00 GMT",
-          "time": "Wed, 25 Mar 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: United States Mission to the United Nations (.gov)",
-          "summary": "Fallback discovery via Google News RSS; publisher: United States Mission to the United Nations (.gov)",
-          "source": "United States Mission to the United Nations (.gov)",
-          "sourceLabel": "United States Mission to the United Nations (.gov)",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @UN",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "dccb26f9fa049143",
-      "title": "NATO ‘prepared’ to defend allies amid reported Iran threat - The New Region",
+      "id": "2ea922f9bf256dfb",
+      "title": "NATO prepared to defend allies from any Iranian threat, official says - Washington Times",
       "category": "diplomatic",
       "confidence": "low",
       "reportCount": 2,
@@ -972,23 +695,10 @@
       "firstSeen": "Wed, 19 Aug 2026 07:00:00 GMT",
       "lastSeen": "Wed, 19 Aug 2026 07:00:00 GMT",
       "urls": [
-        "https://news.google.com/rss/articles/CBMiS0FVX3lxTE01aVNKS0wtd2VFMld4YjA1YU5xcC1VV3JDUFVnM0hmOHd5eHZCbGxnYy1vRDhocTRRSk5NSEI2cDhYVHY1VFAtNGxfSQ?oc=5",
-        "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNdXRtSHhob196XzZQbUZYUkx2N3MwNnZBNkJacmczamdNRzJUekRsNWNnYTQ3WjhINlJEcDdhVlJ2VmVCNTlBa1psdl96cEJTb244OGI3eHBWZXYxa0JzVjB1VXQtNzNSRFJMelZOc1FSZmRKeXhHWkdiVlNWaVRyYVc2NlYtWWpfVUROcWMybHJGRUZZMnZGdm8tM3pWM2lVZmoydHZsSThCdw?oc=5"
+        "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNdXRtSHhob196XzZQbUZYUkx2N3MwNnZBNkJacmczamdNRzJUekRsNWNnYTQ3WjhINlJEcDdhVlJ2VmVCNTlBa1psdl96cEJTb244OGI3eHBWZXYxa0JzVjB1VXQtNzNSRFJMelZOc1FSZmRKeXhHWkdiVlNWaVRyYVc2NlYtWWpfVUROcWMybHJGRUZZMnZGdm8tM3pWM2lVZmoydHZsSThCdw?oc=5",
+        "https://news.google.com/rss/articles/CBMiS0FVX3lxTE01aVNKS0wtd2VFMld4YjA1YU5xcC1VV3JDUFVnM0hmOHd5eHZCbGxnYy1vRDhocTRRSk5NSEI2cDhYVHY1VFAtNGxfSQ?oc=5"
       ],
       "reports": [
-        {
-          "title": "NATO ‘prepared’ to defend allies amid reported Iran threat - The New Region",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE01aVNKS0wtd2VFMld4YjA1YU5xcC1VV3JDUFVnM0hmOHd5eHZCbGxnYy1vRDhocTRRSk5NSEI2cDhYVHY1VFAtNGxfSQ?oc=5",
-          "published_date": "Wed, 19 Aug 2026 07:00:00 GMT",
-          "time": "Wed, 19 Aug 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: The New Region",
-          "summary": "Fallback discovery via Google News RSS; publisher: The New Region",
-          "source": "The New Region",
-          "sourceLabel": "The New Region",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NATO",
-          "credit_metadata": "Google News RSS fallback"
-        },
         {
           "title": "NATO prepared to defend allies from any Iranian threat, official says - Washington Times",
           "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNdXRtSHhob196XzZQbUZYUkx2N3MwNnZBNkJacmczamdNRzJUekRsNWNnYTQ3WjhINlJEcDdhVlJ2VmVCNTlBa1psdl96cEJTb244OGI3eHBWZXYxa0JzVjB1VXQtNzNSRFJMelZOc1FSZmRKeXhHWkdiVlNWaVRyYVc2NlYtWWpfVUROcWMybHJGRUZZMnZGdm8tM3pWM2lVZmoydHZsSThCdw?oc=5",
@@ -998,6 +708,19 @@
           "summary": "Fallback discovery via Google News RSS; publisher: Washington Times",
           "source": "Washington Times",
           "sourceLabel": "Washington Times",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NATO",
+          "credit_metadata": "Google News RSS fallback"
+        },
+        {
+          "title": "NATO ‘prepared’ to defend allies amid reported Iran threat - The New Region",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE01aVNKS0wtd2VFMld4YjA1YU5xcC1VV3JDUFVnM0hmOHd5eHZCbGxnYy1vRDhocTRRSk5NSEI2cDhYVHY1VFAtNGxfSQ?oc=5",
+          "published_date": "Wed, 19 Aug 2026 07:00:00 GMT",
+          "time": "Wed, 19 Aug 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: The New Region",
+          "summary": "Fallback discovery via Google News RSS; publisher: The New Region",
+          "source": "The New Region",
+          "sourceLabel": "The New Region",
           "sourceType": "fallback-news",
           "fallbackFor": "X @NATO",
           "credit_metadata": "Google News RSS fallback"
@@ -1151,8 +874,8 @@
       ]
     },
     {
-      "id": "16f7df8159e6b663",
-      "title": "Trump says he’s ‘banning’ CNN, MS NOW and Politico from the White House - CNN",
+      "id": "8ae13132efb89089",
+      "title": "Trump says he is banning CNN and Politico from White House - BBC",
       "category": "general",
       "confidence": "low",
       "reportCount": 2,
@@ -1164,23 +887,10 @@
       "firstSeen": "Fri, 18 Sep 2026 07:00:00 GMT",
       "lastSeen": "Sat, 19 Sep 2026 07:00:00 GMT",
       "urls": [
-        "https://news.google.com/rss/articles/CBMijAFBVV95cUxNdFYtOFZpNXR6ZHNJMkdwMGJKdmJMbGgzNDFQcmxNQXJDQ1JJLUZ4QTlBUnkwdGJGMlVXQTFVOS02NW16Z0NGVlp1bUh1aUdqc3VVcmNFTVhBUUQzTUJYc2hSMUZIaEVSZDF2bXRlVWVQblVWZHpMcUQ0SUxjdmdfelNFVUVOQ3F0QkhKbw?oc=5",
-        "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1YYnB1TGxRRDZLRFRqcU9OQmFDMmlaTklBQktCeWJYd3NyTk1JQ043QWN2dVoxTFRONmlNQ2g3TFBsMk5aWDBIS0lzeVNROEtQRHJHYmlleDdwcHM?oc=5"
+        "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1YYnB1TGxRRDZLRFRqcU9OQmFDMmlaTklBQktCeWJYd3NyTk1JQ043QWN2dVoxTFRONmlNQ2g3TFBsMk5aWDBIS0lzeVNROEtQRHJHYmlleDdwcHM?oc=5",
+        "https://news.google.com/rss/articles/CBMijAFBVV95cUxNdFYtOFZpNXR6ZHNJMkdwMGJKdmJMbGgzNDFQcmxNQXJDQ1JJLUZ4QTlBUnkwdGJGMlVXQTFVOS02NW16Z0NGVlp1bUh1aUdqc3VVcmNFTVhBUUQzTUJYc2hSMUZIaEVSZDF2bXRlVWVQblVWZHpMcUQ0SUxjdmdfelNFVUVOQ3F0QkhKbw?oc=5"
       ],
       "reports": [
-        {
-          "title": "Trump says he’s ‘banning’ CNN, MS NOW and Politico from the White House - CNN",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNdFYtOFZpNXR6ZHNJMkdwMGJKdmJMbGgzNDFQcmxNQXJDQ1JJLUZ4QTlBUnkwdGJGMlVXQTFVOS02NW16Z0NGVlp1bUh1aUdqc3VVcmNFTVhBUUQzTUJYc2hSMUZIaEVSZDF2bXRlVWVQblVWZHpMcUQ0SUxjdmdfelNFVUVOQ3F0QkhKbw?oc=5",
-          "published_date": "Fri, 18 Sep 2026 07:00:00 GMT",
-          "time": "Fri, 18 Sep 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: CNN",
-          "summary": "Fallback discovery via Google News RSS; publisher: CNN",
-          "source": "CNN",
-          "sourceLabel": "CNN",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @POTUS",
-          "credit_metadata": "Google News RSS fallback"
-        },
         {
           "title": "Trump says he is banning CNN and Politico from White House - BBC",
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1YYnB1TGxRRDZLRFRqcU9OQmFDMmlaTklBQktCeWJYd3NyTk1JQ043QWN2dVoxTFRONmlNQ2g3TFBsMk5aWDBIS0lzeVNROEtQRHJHYmlleDdwcHM?oc=5",
@@ -1193,70 +903,83 @@
           "sourceType": "fallback-news",
           "fallbackFor": "X @POTUS",
           "credit_metadata": "Google News RSS fallback"
+        },
+        {
+          "title": "Trump says he’s ‘banning’ CNN, MS NOW and Politico from the White House - CNN",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNdFYtOFZpNXR6ZHNJMkdwMGJKdmJMbGgzNDFQcmxNQXJDQ1JJLUZ4QTlBUnkwdGJGMlVXQTFVOS02NW16Z0NGVlp1bUh1aUdqc3VVcmNFTVhBUUQzTUJYc2hSMUZIaEVSZDF2bXRlVWVQblVWZHpMcUQ0SUxjdmdfelNFVUVOQ3F0QkhKbw?oc=5",
+          "published_date": "Fri, 18 Sep 2026 07:00:00 GMT",
+          "time": "Fri, 18 Sep 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: CNN",
+          "summary": "Fallback discovery via Google News RSS; publisher: CNN",
+          "source": "CNN",
+          "sourceLabel": "CNN",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @POTUS",
+          "credit_metadata": "Google News RSS fallback"
         }
       ]
     },
     {
-      "id": "db037c2987eba324",
-      "title": "Green forest fire notification in Brazil",
+      "id": "891d9d7272ff16a6",
+      "title": "Elon Musk emerges as top donor in US midterm polls with $366 million funding - The Indian Express",
       "category": "general",
       "confidence": "low",
       "reportCount": 2,
       "sourceCount": 1,
       "sources": [
-        "gdacs.org"
+        "news.google.com"
       ],
       "anchors": [],
-      "firstSeen": "2026-10-12T23:02:25Z",
-      "lastSeen": "2026-10-13T03:05:40Z",
+      "firstSeen": "2026-10-13T03:36:47Z",
+      "lastSeen": "2026-10-13T03:36:47Z",
       "urls": [
-        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032781",
-        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032774"
+        "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPV1VQWlNGUEV3UDNOMkxDRGM1eWVyTWd4UzhRYkR0V05fSkZwSElkVmVzTHBkdFpFNHdpY1BSM0V4RzFfZjlyTFBXUzFrMjdMRVp3cjZla3poVzl0NU50Rmh3VTlWbXd1QU5fbDF0V2Vib0EtTUgxR0dFWWg1T3ZEZ2VJYTl1c09XUHI2SFNwUmFycEpselhMQzJvZ0c4VzJ4dFNrMV80Tmo1T3NYblR6RG1fRTlFaHYtTlVINlplUUQxbVE?oc=5",
+        "https://news.google.com/rss/articles/CBMirgFBVV95cUxQOHpEZkxDYjEwQXRPaUxJZTNSbjZWc0xTeXBBdzRZa05ieUFnMFJfS0tKYTgwa0Fsak5qcnVQcmJEZHVSSjJheXhVZjZLWEtDMFRkNWNSbEtIbnpONnRqZXEzLTNpd1BhSXY3SHRUNUs3ZF9jckRwejZadlpzOE9kY1BLRFBhU0FxZWRkeVpoZ2VoVjkwaC1BUmQwM2ZuR2V4MEJWOGk1cFZ6OFRSX1HSAbQBQVVfeXFMTzRRcmNEN1htcWZReF9fU05kbE1zQk9LX1FJVjNlN2NJeWFYWWZGWjZnNXBSX0RYVWRUeXhnel9kQ1VsZDFLOHVZbUJmR0F0dDA2SkdPc04tX2NfYkNOTkpaSTlBSThhaUdGQUZ2LXpLWnFmMFktWWxXUHQ0bm9seXFHRHN3MFFWSGd3SjIwTzdJakhjUEhNM1RqVnRfeVA4VXlNcG00SG1nY2NILWpfNWlYQmZi?oc=5"
       ],
       "reports": [
         {
-          "id": "44075963fb44",
-          "sourceLabel": "GDACS Global Disaster Alerts",
-          "sourceName": "GDACS Global Disaster Alerts",
-          "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in Brazil",
-          "summary": "On 06/10/2026, a forest fire started in Brazil, until 12/10/2026.",
-          "summary_snippet": "On 06/10/2026, a forest fire started in Brazil, until 12/10/2026.",
-          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032781",
-          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032781",
-          "time": "2026-10-13T03:05:40Z",
-          "published_date": "2026-10-13T03:05:40Z",
-          "publishedDate": "2026-10-13T03:05:40Z",
+          "id": "12bb296c8d9e",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPV1VQWlNGUEV3UDNOMkxDRGM1eWVyTWd4UzhRYkR0V05fSkZwSElkVmVzTHBkdFpFNHdpY1BSM0V4RzFfZjlyTFBXUzFrMjdMRVp3cjZla3poVzl0NU50Rmh3VTlWbXd1QU5fbDF0V2Vib0EtTUgxR0dFWWg1T3ZEZ2VJYTl1c09XUHI2SFNwUmFycEpselhMQzJvZ0c4VzJ4dFNrMV80Tmo1T3NYblR6RG1fRTlFaHYtTlVINlplUUQxbVE?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPV1VQWlNGUEV3UDNOMkxDRGM1eWVyTWd4UzhRYkR0V05fSkZwSElkVmVzTHBkdFpFNHdpY1BSM0V4RzFfZjlyTFBXUzFrMjdMRVp3cjZla3poVzl0NU50Rmh3VTlWbXd1QU5fbDF0V2Vib0EtTUgxR0dFWWg1T3ZEZ2VJYTl1c09XUHI2SFNwUmFycEpselhMQzJvZ0c4VzJ4dFNrMV80Tmo1T3NYblR6RG1fRTlFaHYtTlVINlplUUQxbVE?oc=5",
+          "sourceType": "us-politics",
+          "title": "Elon Musk emerges as top donor in US midterm polls with $366 million funding - The Indian Express",
+          "summary": "Elon Musk emerges as top donor in US midterm polls with $366 million funding The Indian Express",
+          "summary_snippet": "Elon Musk emerges as top donor in US midterm polls with $366 million funding The Indian Express",
+          "source": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPV1VQWlNGUEV3UDNOMkxDRGM1eWVyTWd4UzhRYkR0V05fSkZwSElkVmVzTHBkdFpFNHdpY1BSM0V4RzFfZjlyTFBXUzFrMjdMRVp3cjZla3poVzl0NU50Rmh3VTlWbXd1QU5fbDF0V2Vib0EtTUgxR0dFWWg1T3ZEZ2VJYTl1c09XUHI2SFNwUmFycEpselhMQzJvZ0c4VzJ4dFNrMV80Tmo1T3NYblR6RG1fRTlFaHYtTlVINlplUUQxbVE?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPV1VQWlNGUEV3UDNOMkxDRGM1eWVyTWd4UzhRYkR0V05fSkZwSElkVmVzTHBkdFpFNHdpY1BSM0V4RzFfZjlyTFBXUzFrMjdMRVp3cjZla3poVzl0NU50Rmh3VTlWbXd1QU5fbDF0V2Vib0EtTUgxR0dFWWg1T3ZEZ2VJYTl1c09XUHI2SFNwUmFycEpselhMQzJvZ0c4VzJ4dFNrMV80Tmo1T3NYblR6RG1fRTlFaHYtTlVINlplUUQxbVE?oc=5",
+          "time": "2026-10-13T03:36:47Z",
+          "published_date": "2026-10-13T03:36:47Z",
+          "publishedDate": "2026-10-13T03:36:47Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "sourceId": "google_news_u_s_politics",
+            "sourceUrl": "https://news.google.com/rss/search?q=US+politics+Congress+Senate+White+House+election+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
         },
         {
-          "id": "ef76c6925a09",
-          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032774",
-          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032774",
-          "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in Brazil",
-          "summary": "On 09/10/2026, a forest fire started in Brazil, until 12/10/2026.",
-          "summary_snippet": "On 09/10/2026, a forest fire started in Brazil, until 12/10/2026.",
-          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032774",
-          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032774",
-          "time": "2026-10-12T23:02:25Z",
-          "published_date": "2026-10-12T23:02:25Z",
-          "publishedDate": "2026-10-12T23:02:25Z",
+          "id": "e0ff1aa7e26a",
+          "sourceLabel": "Google News — U.S. Politics",
+          "sourceName": "Google News — U.S. Politics",
+          "sourceType": "us-politics",
+          "title": "Elon Musk emerges as top donor in US midterm polls with $366 million funding - The Indian Express",
+          "summary": "Elon Musk emerges as top donor in US midterm polls with $366 million funding The Indian Express",
+          "summary_snippet": "Elon Musk emerges as top donor in US midterm polls with $366 million funding The Indian Express",
+          "source": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQOHpEZkxDYjEwQXRPaUxJZTNSbjZWc0xTeXBBdzRZa05ieUFnMFJfS0tKYTgwa0Fsak5qcnVQcmJEZHVSSjJheXhVZjZLWEtDMFRkNWNSbEtIbnpONnRqZXEzLTNpd1BhSXY3SHRUNUs3ZF9jckRwejZadlpzOE9kY1BLRFBhU0FxZWRkeVpoZ2VoVjkwaC1BUmQwM2ZuR2V4MEJWOGk1cFZ6OFRSX1HSAbQBQVVfeXFMTzRRcmNEN1htcWZReF9fU05kbE1zQk9LX1FJVjNlN2NJeWFYWWZGWjZnNXBSX0RYVWRUeXhnel9kQ1VsZDFLOHVZbUJmR0F0dDA2SkdPc04tX2NfYkNOTkpaSTlBSThhaUdGQUZ2LXpLWnFmMFktWWxXUHQ0bm9seXFHRHN3MFFWSGd3SjIwTzdJakhjUEhNM1RqVnRfeVA4VXlNcG00SG1nY2NILWpfNWlYQmZi?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQOHpEZkxDYjEwQXRPaUxJZTNSbjZWc0xTeXBBdzRZa05ieUFnMFJfS0tKYTgwa0Fsak5qcnVQcmJEZHVSSjJheXhVZjZLWEtDMFRkNWNSbEtIbnpONnRqZXEzLTNpd1BhSXY3SHRUNUs3ZF9jckRwejZadlpzOE9kY1BLRFBhU0FxZWRkeVpoZ2VoVjkwaC1BUmQwM2ZuR2V4MEJWOGk1cFZ6OFRSX1HSAbQBQVVfeXFMTzRRcmNEN1htcWZReF9fU05kbE1zQk9LX1FJVjNlN2NJeWFYWWZGWjZnNXBSX0RYVWRUeXhnel9kQ1VsZDFLOHVZbUJmR0F0dDA2SkdPc04tX2NfYkNOTkpaSTlBSThhaUdGQUZ2LXpLWnFmMFktWWxXUHQ0bm9seXFHRHN3MFFWSGd3SjIwTzdJakhjUEhNM1RqVnRfeVA4VXlNcG00SG1nY2NILWpfNWlYQmZi?oc=5",
+          "time": "2026-10-13T03:36:47Z",
+          "published_date": "2026-10-13T03:36:47Z",
+          "publishedDate": "2026-10-13T03:36:47Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "sourceId": "google_news_u_s_politics",
+            "sourceUrl": "https://news.google.com/rss/search?q=US+politics+Congress+Senate+White+House+election+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
         }
@@ -1282,8 +1005,8 @@
       "reports": [
         {
           "id": "edb04e09fb32",
-          "sourceLabel": "Google News — U.S. Politics",
-          "sourceName": "Google News — U.S. Politics",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOSUNzeU1BT1RDcnRESDY1UXNvb1hzX0tiYS1aX0Q5d3V2N0NUVGphcnEzYUplYzBVUW1JaGdXNlJSUXdiTUhxWllONHAwWmVCY0FhV0syQXdlZkJnelpISFBuS01PYmUxQ1V5NVFOcVJMTFlCMkVyaW9sVTdmY3dGQlhfZUZDZTRtcTZKQXJ2ZlEwRFluLTNvejFUQzF2YlJhTUdrb1NOWVdrZFVT0gGsAUFVX3lxTE5JQ3N5TUFPVENydERINjVRc29vWHNfS2JhLVpfRDl3dXY3Q1RUamFycTNhSmVjMFVRbUloZ1c2UlJRd2JNSHFaWU40cDBaZUJjQWFXSzJBd2VmQmd6WkhIUG5LTU9iZTFDVXk1UU5xUkxMWUIyRXJpb2xVN2Zjd0ZCWF9lRkNlNG1xNkpBcnZmUTBEWW4tM296MVRDMXZiUmFNR2tvU05ZV2tkVVM?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOSUNzeU1BT1RDcnRESDY1UXNvb1hzX0tiYS1aX0Q5d3V2N0NUVGphcnEzYUplYzBVUW1JaGdXNlJSUXdiTUhxWllONHAwWmVCY0FhV0syQXdlZkJnelpISFBuS01PYmUxQ1V5NVFOcVJMTFlCMkVyaW9sVTdmY3dGQlhfZUZDZTRtcTZKQXJ2ZlEwRFluLTNvejFUQzF2YlJhTUdrb1NOWVdrZFVT0gGsAUFVX3lxTE5JQ3N5TUFPVENydERINjVRc29vWHNfS2JhLVpfRDl3dXY3Q1RUamFycTNhSmVjMFVRbUloZ1c2UlJRd2JNSHFaWU40cDBaZUJjQWFXSzJBd2VmQmd6WkhIUG5LTU9iZTFDVXk1UU5xUkxMWUIyRXJpb2xVN2Zjd0ZCWF9lRkNlNG1xNkpBcnZmUTBEWW4tM296MVRDMXZiUmFNR2tvU05ZV2tkVVM?oc=5",
           "sourceType": "us-politics",
           "title": "Musk spent $276 mil. to boost Republicans in midterms: US media - The Korea Times",
           "summary": "Musk spent $276 mil. to boost Republicans in midterms: US media The Korea Times",
@@ -1316,270 +1039,6 @@
           "time": "2026-10-12T23:10:00Z",
           "published_date": "2026-10-12T23:10:00Z",
           "publishedDate": "2026-10-12T23:10:00Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_u_s_politics",
-            "sourceUrl": "https://news.google.com/rss/search?q=US+politics+Congress+Senate+White+House+election+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "59c8f84da45ed98d",
-      "title": "M 4.5 - 7 km WSW of Calidonia, Panama",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "sourceCount": 1,
-      "sources": [
-        "earthquake.usgs.gov"
-      ],
-      "anchors": [],
-      "firstSeen": "2026-10-12T22:26:49.040000Z",
-      "lastSeen": "2026-10-12T22:30:43.040000Z",
-      "urls": [
-        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1w7",
-        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1w6"
-      ],
-      "reports": [
-        {
-          "id": "4241a917a339",
-          "sourceLabel": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1w7",
-          "sourceName": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1w7",
-          "sourceType": "climate-hazard",
-          "title": "M 4.5 - 7 km WSW of Calidonia, Panama",
-          "summary": "Time 2026-10-12 21:48:54 UTC 2026-10-12 21:48:54 UTC at epicenter Location 7.931°N 81.445°W Depth 10.00 km (6.21 mi)",
-          "summary_snippet": "Time 2026-10-12 21:48:54 UTC 2026-10-12 21:48:54 UTC at epicenter Location 7.931°N 81.445°W Depth 10.00 km (6.21 mi)",
-          "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1w7",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1w7",
-          "time": "2026-10-12T22:30:43.040000Z",
-          "published_date": "2026-10-12T22:30:43.040000Z",
-          "publishedDate": "2026-10-12T22:30:43.040000Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "usgs_m4_5_earthquakes_past_day",
-            "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
-            "feedFormat": "atom"
-          }
-        },
-        {
-          "id": "c781d21da024",
-          "sourceLabel": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1w6",
-          "sourceName": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1w6",
-          "sourceType": "climate-hazard",
-          "title": "M 4.5 - 19 km SW of Calidonia, Panama",
-          "summary": "Time 2026-10-12 21:43:30 UTC 2026-10-12 21:43:30 UTC at epicenter Location 7.823°N 81.502°W Depth 10.00 km (6.21 mi)",
-          "summary_snippet": "Time 2026-10-12 21:43:30 UTC 2026-10-12 21:43:30 UTC at epicenter Location 7.823°N 81.502°W Depth 10.00 km (6.21 mi)",
-          "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1w6",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1w6",
-          "time": "2026-10-12T22:26:49.040000Z",
-          "published_date": "2026-10-12T22:26:49.040000Z",
-          "publishedDate": "2026-10-12T22:26:49.040000Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "usgs_m4_5_earthquakes_past_day",
-            "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
-            "feedFormat": "atom"
-          }
-        }
-      ]
-    },
-    {
-      "id": "735f2444dd915848",
-      "title": "Amu TV 8pm News 12October 2026 - Amu TV",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "2026-10-12T20:28:54Z",
-      "lastSeen": "2026-10-12T20:33:36Z",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiOkFVX3lxTE95UnhHSzE2dmEyRllwSlVsdXJFVURlOGlGNk9iLXBtQnU0Vm82SzQzay1scXU2SWlIZUE?oc=5",
-        "https://news.google.com/rss/articles/CBMiOkFVX3lxTE1FdHJ2WVBNdGVLdWcyVi02bUxuazgwSWd2eTllZFgyZ3M0ZzFhTVEzTUxVOXRHSURKc1E?oc=5"
-      ],
-      "reports": [
-        {
-          "id": "5deb51d0cba4",
-          "sourceLabel": "Google News — Afghanistan Security",
-          "sourceName": "Google News — Afghanistan Security",
-          "sourceType": "south-asia-conflict",
-          "title": "Amu TV 8pm News 12October 2026 - Amu TV",
-          "summary": "Amu TV 8pm News 12October 2026 Amu TV",
-          "summary_snippet": "Amu TV 8pm News 12October 2026 Amu TV",
-          "source": "https://news.google.com/rss/articles/CBMiOkFVX3lxTE95UnhHSzE2dmEyRllwSlVsdXJFVURlOGlGNk9iLXBtQnU0Vm82SzQzay1scXU2SWlIZUE?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMiOkFVX3lxTE95UnhHSzE2dmEyRllwSlVsdXJFVURlOGlGNk9iLXBtQnU0Vm82SzQzay1scXU2SWlIZUE?oc=5",
-          "time": "2026-10-12T20:33:36Z",
-          "published_date": "2026-10-12T20:33:36Z",
-          "publishedDate": "2026-10-12T20:33:36Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_afghanistan_security",
-            "sourceUrl": "https://news.google.com/rss/search?q=Afghanistan+Taliban+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "6ac6e306fede",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMiOkFVX3lxTE1FdHJ2WVBNdGVLdWcyVi02bUxuazgwSWd2eTllZFgyZ3M0ZzFhTVEzTUxVOXRHSURKc1E?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMiOkFVX3lxTE1FdHJ2WVBNdGVLdWcyVi02bUxuazgwSWd2eTllZFgyZ3M0ZzFhTVEzTUxVOXRHSURKc1E?oc=5",
-          "sourceType": "south-asia-conflict",
-          "title": "Amu TV 6pm News 12October 2026 - Amu TV",
-          "summary": "Amu TV 6pm News 12October 2026 Amu TV",
-          "summary_snippet": "Amu TV 6pm News 12October 2026 Amu TV",
-          "source": "https://news.google.com/rss/articles/CBMiOkFVX3lxTE1FdHJ2WVBNdGVLdWcyVi02bUxuazgwSWd2eTllZFgyZ3M0ZzFhTVEzTUxVOXRHSURKc1E?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMiOkFVX3lxTE1FdHJ2WVBNdGVLdWcyVi02bUxuazgwSWd2eTllZFgyZ3M0ZzFhTVEzTUxVOXRHSURKc1E?oc=5",
-          "time": "2026-10-12T20:28:54Z",
-          "published_date": "2026-10-12T20:28:54Z",
-          "publishedDate": "2026-10-12T20:28:54Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_afghanistan_security",
-            "sourceUrl": "https://news.google.com/rss/search?q=Afghanistan+Taliban+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "832603f1d82b2ac4",
-      "title": "M 4.6 - Mid-Indian Ridge",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "sourceCount": 1,
-      "sources": [
-        "earthquake.usgs.gov"
-      ],
-      "anchors": [],
-      "firstSeen": "2026-10-12T18:51:44.040000Z",
-      "lastSeen": "2026-10-12T18:58:30.040000Z",
-      "urls": [
-        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1uv",
-        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1ut"
-      ],
-      "reports": [
-        {
-          "id": "9f08627540db",
-          "sourceLabel": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1uv",
-          "sourceName": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1uv",
-          "sourceType": "climate-hazard",
-          "title": "M 4.6 - Mid-Indian Ridge",
-          "summary": "Time 2026-10-12 18:30:19 UTC 2026-10-12 18:30:19 UTC at epicenter Location 16.538°S 67.000°E Depth 10.00 km (6.21 mi)",
-          "summary_snippet": "Time 2026-10-12 18:30:19 UTC 2026-10-12 18:30:19 UTC at epicenter Location 16.538°S 67.000°E Depth 10.00 km (6.21 mi)",
-          "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1uv",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1uv",
-          "time": "2026-10-12T18:58:30.040000Z",
-          "published_date": "2026-10-12T18:58:30.040000Z",
-          "publishedDate": "2026-10-12T18:58:30.040000Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "usgs_m4_5_earthquakes_past_day",
-            "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
-            "feedFormat": "atom"
-          }
-        },
-        {
-          "id": "66616d3d8644",
-          "sourceLabel": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1ut",
-          "sourceName": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1ut",
-          "sourceType": "climate-hazard",
-          "title": "M 4.7 - Mid-Indian Ridge",
-          "summary": "Time 2026-10-12 18:27:41 UTC 2026-10-12 18:27:41 UTC at epicenter Location 16.294°S 67.110°E Depth 10.00 km (6.21 mi)",
-          "summary_snippet": "Time 2026-10-12 18:27:41 UTC 2026-10-12 18:27:41 UTC at epicenter Location 16.294°S 67.110°E Depth 10.00 km (6.21 mi)",
-          "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1ut",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u1ut",
-          "time": "2026-10-12T18:51:44.040000Z",
-          "published_date": "2026-10-12T18:51:44.040000Z",
-          "publishedDate": "2026-10-12T18:51:44.040000Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "usgs_m4_5_earthquakes_past_day",
-            "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
-            "feedFormat": "atom"
-          }
-        }
-      ]
-    },
-    {
-      "id": "3c924d6bb839b03e",
-      "title": "US agents search home of Ilhan Omar, Trump critic and Congress member - Al Jazeera",
-      "category": "political",
-      "confidence": "low",
-      "reportCount": 2,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "2026-10-12T17:03:45Z",
-      "lastSeen": "2026-10-12T17:09:34Z",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiswFBVV95cUxPcDI4UnZ5UXMxZ2VJSEV2VS1XVVJROGRCZ1BZTGVrTDM3QzhQVnlvVHVGMC1YZE40UWN3TWpaVzRUV1NVZTZmYXpTRDVXWVk5Q3dlR1VxekZMbURDa3ZRNjFqU3Rqa2lOcWwxNlFvaWgyLXBXc1g3OXpWTXFsMkpNeDRIV3pqclYwMGNBWU1CdzZPNjlGLURZQVljU05GeFU4MzhLSFEwQkVtYTJLQVFXNUZHRdIBuAFBVV95cUxNVHhQYWV2cE4wb2tQbDJlNGpzSDVOYVFjU1hqcS1QQVhhNk94WUpPcmxoVjA0U1ZyYWNYYVExSDdxSVdtOHJ1RUVxdDhKdC1kX2QxamxWN1dLUFNqM0UzN2s5R2R1Q1B1R0xWN29CYlpsTktIdE9oMF94TE5Qd1VLQVpqSGlmeXZ3bFRrcjhCWEVCcTZaOFc4SEVOOGNFbnN5VktqYU5YR01rSmR3Y3RNbjlKZXR5ank1?oc=5",
-        "https://news.google.com/rss/articles/CBMiswFBVV95cUxPcDI4UnZ5UXMxZ2VJSEV2VS1XVVJROGRCZ1BZTGVrTDM3QzhQVnlvVHVGMC1YZE40UWN3TWpaVzRUV1NVZTZmYXpTRDVXWVk5Q3dlR1VxekZMbURDa3ZRNjFqU3Rqa2lOcWwxNlFvaWgyLXBXc1g3OXpWTXFsMkpNeDRIV3pqclYwMGNBWU1CdzZPNjlGLURZQVljU05GeFU4MzhLSFEwQkVtYTJLQVFXNUZHRQ?oc=5"
-      ],
-      "reports": [
-        {
-          "id": "dac77a38d1b8",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPcDI4UnZ5UXMxZ2VJSEV2VS1XVVJROGRCZ1BZTGVrTDM3QzhQVnlvVHVGMC1YZE40UWN3TWpaVzRUV1NVZTZmYXpTRDVXWVk5Q3dlR1VxekZMbURDa3ZRNjFqU3Rqa2lOcWwxNlFvaWgyLXBXc1g3OXpWTXFsMkpNeDRIV3pqclYwMGNBWU1CdzZPNjlGLURZQVljU05GeFU4MzhLSFEwQkVtYTJLQVFXNUZHRdIBuAFBVV95cUxNVHhQYWV2cE4wb2tQbDJlNGpzSDVOYVFjU1hqcS1QQVhhNk94WUpPcmxoVjA0U1ZyYWNYYVExSDdxSVdtOHJ1RUVxdDhKdC1kX2QxamxWN1dLUFNqM0UzN2s5R2R1Q1B1R0xWN29CYlpsTktIdE9oMF94TE5Qd1VLQVpqSGlmeXZ3bFRrcjhCWEVCcTZaOFc4SEVOOGNFbnN5VktqYU5YR01rSmR3Y3RNbjlKZXR5ank1?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPcDI4UnZ5UXMxZ2VJSEV2VS1XVVJROGRCZ1BZTGVrTDM3QzhQVnlvVHVGMC1YZE40UWN3TWpaVzRUV1NVZTZmYXpTRDVXWVk5Q3dlR1VxekZMbURDa3ZRNjFqU3Rqa2lOcWwxNlFvaWgyLXBXc1g3OXpWTXFsMkpNeDRIV3pqclYwMGNBWU1CdzZPNjlGLURZQVljU05GeFU4MzhLSFEwQkVtYTJLQVFXNUZHRdIBuAFBVV95cUxNVHhQYWV2cE4wb2tQbDJlNGpzSDVOYVFjU1hqcS1QQVhhNk94WUpPcmxoVjA0U1ZyYWNYYVExSDdxSVdtOHJ1RUVxdDhKdC1kX2QxamxWN1dLUFNqM0UzN2s5R2R1Q1B1R0xWN29CYlpsTktIdE9oMF94TE5Qd1VLQVpqSGlmeXZ3bFRrcjhCWEVCcTZaOFc4SEVOOGNFbnN5VktqYU5YR01rSmR3Y3RNbjlKZXR5ank1?oc=5",
-          "sourceType": "us-politics",
-          "title": "US agents search home of Ilhan Omar, Trump critic and Congress member - Al Jazeera",
-          "summary": "US agents search home of Ilhan Omar, Trump critic and Congress member Al Jazeera",
-          "summary_snippet": "US agents search home of Ilhan Omar, Trump critic and Congress member Al Jazeera",
-          "source": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPcDI4UnZ5UXMxZ2VJSEV2VS1XVVJROGRCZ1BZTGVrTDM3QzhQVnlvVHVGMC1YZE40UWN3TWpaVzRUV1NVZTZmYXpTRDVXWVk5Q3dlR1VxekZMbURDa3ZRNjFqU3Rqa2lOcWwxNlFvaWgyLXBXc1g3OXpWTXFsMkpNeDRIV3pqclYwMGNBWU1CdzZPNjlGLURZQVljU05GeFU4MzhLSFEwQkVtYTJLQVFXNUZHRdIBuAFBVV95cUxNVHhQYWV2cE4wb2tQbDJlNGpzSDVOYVFjU1hqcS1QQVhhNk94WUpPcmxoVjA0U1ZyYWNYYVExSDdxSVdtOHJ1RUVxdDhKdC1kX2QxamxWN1dLUFNqM0UzN2s5R2R1Q1B1R0xWN29CYlpsTktIdE9oMF94TE5Qd1VLQVpqSGlmeXZ3bFRrcjhCWEVCcTZaOFc4SEVOOGNFbnN5VktqYU5YR01rSmR3Y3RNbjlKZXR5ank1?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPcDI4UnZ5UXMxZ2VJSEV2VS1XVVJROGRCZ1BZTGVrTDM3QzhQVnlvVHVGMC1YZE40UWN3TWpaVzRUV1NVZTZmYXpTRDVXWVk5Q3dlR1VxekZMbURDa3ZRNjFqU3Rqa2lOcWwxNlFvaWgyLXBXc1g3OXpWTXFsMkpNeDRIV3pqclYwMGNBWU1CdzZPNjlGLURZQVljU05GeFU4MzhLSFEwQkVtYTJLQVFXNUZHRdIBuAFBVV95cUxNVHhQYWV2cE4wb2tQbDJlNGpzSDVOYVFjU1hqcS1QQVhhNk94WUpPcmxoVjA0U1ZyYWNYYVExSDdxSVdtOHJ1RUVxdDhKdC1kX2QxamxWN1dLUFNqM0UzN2s5R2R1Q1B1R0xWN29CYlpsTktIdE9oMF94TE5Qd1VLQVpqSGlmeXZ3bFRrcjhCWEVCcTZaOFc4SEVOOGNFbnN5VktqYU5YR01rSmR3Y3RNbjlKZXR5ank1?oc=5",
-          "time": "2026-10-12T17:09:34Z",
-          "published_date": "2026-10-12T17:09:34Z",
-          "publishedDate": "2026-10-12T17:09:34Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_u_s_politics",
-            "sourceUrl": "https://news.google.com/rss/search?q=US+politics+Congress+Senate+White+House+election+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "2edb06654061",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPcDI4UnZ5UXMxZ2VJSEV2VS1XVVJROGRCZ1BZTGVrTDM3QzhQVnlvVHVGMC1YZE40UWN3TWpaVzRUV1NVZTZmYXpTRDVXWVk5Q3dlR1VxekZMbURDa3ZRNjFqU3Rqa2lOcWwxNlFvaWgyLXBXc1g3OXpWTXFsMkpNeDRIV3pqclYwMGNBWU1CdzZPNjlGLURZQVljU05GeFU4MzhLSFEwQkVtYTJLQVFXNUZHRQ?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPcDI4UnZ5UXMxZ2VJSEV2VS1XVVJROGRCZ1BZTGVrTDM3QzhQVnlvVHVGMC1YZE40UWN3TWpaVzRUV1NVZTZmYXpTRDVXWVk5Q3dlR1VxekZMbURDa3ZRNjFqU3Rqa2lOcWwxNlFvaWgyLXBXc1g3OXpWTXFsMkpNeDRIV3pqclYwMGNBWU1CdzZPNjlGLURZQVljU05GeFU4MzhLSFEwQkVtYTJLQVFXNUZHRQ?oc=5",
-          "sourceType": "us-politics",
-          "title": "US agents search home of Ilhan Omar, Trump critic and Congress member - Al Jazeera",
-          "summary": "US agents search home of Ilhan Omar, Trump critic and Congress member Al Jazeera",
-          "summary_snippet": "US agents search home of Ilhan Omar, Trump critic and Congress member Al Jazeera",
-          "source": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPcDI4UnZ5UXMxZ2VJSEV2VS1XVVJROGRCZ1BZTGVrTDM3QzhQVnlvVHVGMC1YZE40UWN3TWpaVzRUV1NVZTZmYXpTRDVXWVk5Q3dlR1VxekZMbURDa3ZRNjFqU3Rqa2lOcWwxNlFvaWgyLXBXc1g3OXpWTXFsMkpNeDRIV3pqclYwMGNBWU1CdzZPNjlGLURZQVljU05GeFU4MzhLSFEwQkVtYTJLQVFXNUZHRQ?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPcDI4UnZ5UXMxZ2VJSEV2VS1XVVJROGRCZ1BZTGVrTDM3QzhQVnlvVHVGMC1YZE40UWN3TWpaVzRUV1NVZTZmYXpTRDVXWVk5Q3dlR1VxekZMbURDa3ZRNjFqU3Rqa2lOcWwxNlFvaWgyLXBXc1g3OXpWTXFsMkpNeDRIV3pqclYwMGNBWU1CdzZPNjlGLURZQVljU05GeFU4MzhLSFEwQkVtYTJLQVFXNUZHRQ?oc=5",
-          "time": "2026-10-12T17:03:45Z",
-          "published_date": "2026-10-12T17:03:45Z",
-          "publishedDate": "2026-10-12T17:03:45Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
@@ -1988,6 +1447,38 @@
       ]
     },
     {
+      "id": "7967581d7f306738",
+      "title": "Statement by Christian Saunders, UNRWA Commissioner-General a.i. at the Meeting of the Advisory Commission (AdCom) - UNRWA",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Wed, 17 Jun 2026 07:00:00 GMT",
+      "lastSeen": "Wed, 17 Jun 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPbWYzSldLdlFJVGJVRG9kNGdyelJVQk1lUjB2QWtZZkk5ZEZaV1BNbjhBdmd6VW80MHBzZWRQQzV4V3FFeXg0U1BXMUhCUEF2cDhPY0VrTnFndTAzYUk1dnJxeEs5c29vMlVTWHZDbzZZd0RfSUpyakUzUDFNekdZcnJlZzlYM1V6R1dqcFR0bVhXUkZacWRLSTBseVdhZDNvbVhnMHNmTEgzRDRYNFBOZ2hjQl91dmsw?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "Statement by Christian Saunders, UNRWA Commissioner-General a.i. at the Meeting of the Advisory Commission (AdCom) - UNRWA",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPbWYzSldLdlFJVGJVRG9kNGdyelJVQk1lUjB2QWtZZkk5ZEZaV1BNbjhBdmd6VW80MHBzZWRQQzV4V3FFeXg0U1BXMUhCUEF2cDhPY0VrTnFndTAzYUk1dnJxeEs5c29vMlVTWHZDbzZZd0RfSUpyakUzUDFNekdZcnJlZzlYM1V6R1dqcFR0bVhXUkZacWRLSTBseVdhZDNvbVhnMHNmTEgzRDRYNFBOZ2hjQl91dmsw?oc=5",
+          "published_date": "Wed, 17 Jun 2026 07:00:00 GMT",
+          "time": "Wed, 17 Jun 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: UNRWA",
+          "summary": "Fallback discovery via Google News RSS; publisher: UNRWA",
+          "source": "UNRWA",
+          "sourceLabel": "UNRWA",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @UN",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
       "id": "d96234abebb11010",
       "title": "Vision Statement of Secretary-General on Transforming Education - Welcome to the United Nations",
       "category": "general",
@@ -2147,38 +1638,6 @@
           "sourceLabel": "ABC News - Breaking News, Latest News and Videos",
           "sourceType": "fallback-news",
           "fallbackFor": "GDELT — Western Hemisphere Counter-Cartel",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "27474212684c31b1",
-      "title": "US military is 'always an option' for Trump to acquire Greenland, White House official says - ABC News - Breaking News, Latest News and Videos",
-      "category": "conflict",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Wed, 11 Feb 2026 01:19:01 GMT",
-      "lastSeen": "Wed, 11 Feb 2026 01:19:01 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQbXNuSGItUkFzR1J6SFA2ZjNPNzN4bzQzeXNpbjZkbWYyMzRJWi1ZbkltQ3dEMzgzWHBCemp6cGFzMnVkUkEtWXFWbjJxTV9XdFdRVHl1SDgwMHIxZFEtMk9QaUVoR0JaNE1uQ3VsQVFFY3JlaHU2MTY3YVZmaXVIUTFCd0xRQUN6RGhISi1iY183SHNBa3dWSWdHSzEyTGFCUGFONUx0SnYybUXSAbABQVVfeXFMUERpU3VwRy1MTXV2T3J0S2p6eC12ZnYyX0Z5XzZSY09sRXhxRlRsU0VMR3RmbW96X1M1a0piTnVrWXgwYnRVQzBCa1VzNERTLXZqcERaYWNJTnhSaktZRnIxWHZLNVVzRHgwbWEtSHRWaGdaR1hMY2pVUFpYbnBhanE3bkFLZEs2c25WZVlOd0RwSjB4SEd0WVVwdkppalA4eEJVcHAtNzE0MHNXSVNpVU0?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "US military is 'always an option' for Trump to acquire Greenland, White House official says - ABC News - Breaking News, Latest News and Videos",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQbXNuSGItUkFzR1J6SFA2ZjNPNzN4bzQzeXNpbjZkbWYyMzRJWi1ZbkltQ3dEMzgzWHBCemp6cGFzMnVkUkEtWXFWbjJxTV9XdFdRVHl1SDgwMHIxZFEtMk9QaUVoR0JaNE1uQ3VsQVFFY3JlaHU2MTY3YVZmaXVIUTFCd0xRQUN6RGhISi1iY183SHNBa3dWSWdHSzEyTGFCUGFONUx0SnYybUXSAbABQVVfeXFMUERpU3VwRy1MTXV2T3J0S2p6eC12ZnYyX0Z5XzZSY09sRXhxRlRsU0VMR3RmbW96X1M1a0piTnVrWXgwYnRVQzBCa1VzNERTLXZqcERaYWNJTnhSaktZRnIxWHZLNVVzRHgwbWEtSHRWaGdaR1hMY2pVUFpYbnBhanE3bkFLZEs2c25WZVlOd0RwSjB4SEd0WVVwdkppalA4eEJVcHAtNzE0MHNXSVNpVU0?oc=5",
-          "published_date": "Wed, 11 Feb 2026 01:19:01 GMT",
-          "time": "Wed, 11 Feb 2026 01:19:01 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: ABC News - Breaking News, Latest News and Videos",
-          "summary": "Fallback discovery via Google News RSS; publisher: ABC News - Breaking News, Latest News and Videos",
-          "source": "ABC News - Breaking News, Latest News and Videos",
-          "sourceLabel": "ABC News - Breaking News, Latest News and Videos",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @WhiteHouse",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -2478,6 +1937,38 @@
       ]
     },
     {
+      "id": "e11f50ddc1b16afc",
+      "title": "US military assists Ecuador in 1st land operation against cartels: Source - ABC News - Breaking News, Latest News and Videos",
+      "category": "conflict",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Wed, 04 Mar 2026 03:25:06 GMT",
+      "lastSeen": "Wed, 04 Mar 2026 03:25:06 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPS0FEVERUTVcwVFd4NUNKX2dRRzNzQXhfQUlNX2JDRW9zeWsyeU93ZVl5XzJ1a3BJbUtZQ1N2SjVPLTVlN0pfZUw4OFVWRWptM2VuNVYtSV9wbm5ELW5hdEtZdWNDclZwLTFFSmlLeUNrY3RnVk9KdkJfNFdkbmxZS0lMVXdpZWVROE9ob3VQY0E2UDJyVjhoekRlN3ljWHVseVNCNklFLUlVYm_SAbABQVVfeXFMUEVoWXJOeGhaM1FGMWZfUFRyOXRYVnJBTUFWV3FBT1U0YTVDdF9iR3g0NGhxWjVLOHhBTVhqYUNWemVNSms2U3ItX21fUVJKZUg4S2U5SVBSMzg3TGVLa0RwY3lqWUR2WjdZSUVELXJETElPNmctMkVva3hWTURMa3QzU1ZIcGx1dU5tWDlRT3Z2bjVVMUJmNzVnSFA1c1BQNHVCUGUzLUxCUnV1azI4Rzg?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "US military assists Ecuador in 1st land operation against cartels: Source - ABC News - Breaking News, Latest News and Videos",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPS0FEVERUTVcwVFd4NUNKX2dRRzNzQXhfQUlNX2JDRW9zeWsyeU93ZVl5XzJ1a3BJbUtZQ1N2SjVPLTVlN0pfZUw4OFVWRWptM2VuNVYtSV9wbm5ELW5hdEtZdWNDclZwLTFFSmlLeUNrY3RnVk9KdkJfNFdkbmxZS0lMVXdpZWVROE9ob3VQY0E2UDJyVjhoekRlN3ljWHVseVNCNklFLUlVYm_SAbABQVVfeXFMUEVoWXJOeGhaM1FGMWZfUFRyOXRYVnJBTUFWV3FBT1U0YTVDdF9iR3g0NGhxWjVLOHhBTVhqYUNWemVNSms2U3ItX21fUVJKZUg4S2U5SVBSMzg3TGVLa0RwY3lqWUR2WjdZSUVELXJETElPNmctMkVva3hWTURMa3QzU1ZIcGx1dU5tWDlRT3Z2bjVVMUJmNzVnSFA1c1BQNHVCUGUzLUxCUnV1azI4Rzg?oc=5",
+          "published_date": "Wed, 04 Mar 2026 03:25:06 GMT",
+          "time": "Wed, 04 Mar 2026 03:25:06 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: ABC News - Breaking News, Latest News and Videos",
+          "summary": "Fallback discovery via Google News RSS; publisher: ABC News - Breaking News, Latest News and Videos",
+          "source": "ABC News - Breaking News, Latest News and Videos",
+          "sourceLabel": "ABC News - Breaking News, Latest News and Videos",
+          "sourceType": "fallback-news",
+          "fallbackFor": "GDELT — Western Hemisphere Counter-Cartel",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
       "id": "6693671530779557",
       "title": "US military kills two alleged narco-terrorists in latest Eastern Pacific strike on drug-trafficking vessel - 930 WFMD Free Talk",
       "category": "conflict",
@@ -2642,6 +2133,38 @@
       ]
     },
     {
+      "id": "fad16948b82ae4d0",
+      "title": "International Day of the World’s Indigenous Peoples 2026 - Division for Inclusive Social Development",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Tue, 30 Jun 2026 23:14:04 GMT",
+      "lastSeen": "Tue, 30 Jun 2026 23:14:04 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMieEFVX3lxTE9QWThiWHlEUjNhMThsdHRDMzQzaklaNWdaNDdJQ0xtNWUxUzByRFpINlBNUHZGNFlTcFhDbmFPeWtYeTh6cXRFUDU3NnUzR1NXb1JqRU1yM1hLcG5WS3gtSGN0VGVSQXRFTXl6RkttR2ExZHFkWWFaUg?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "International Day of the World’s Indigenous Peoples 2026 - Division for Inclusive Social Development",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9QWThiWHlEUjNhMThsdHRDMzQzaklaNWdaNDdJQ0xtNWUxUzByRFpINlBNUHZGNFlTcFhDbmFPeWtYeTh6cXRFUDU3NnUzR1NXb1JqRU1yM1hLcG5WS3gtSGN0VGVSQXRFTXl6RkttR2ExZHFkWWFaUg?oc=5",
+          "published_date": "Tue, 30 Jun 2026 23:14:04 GMT",
+          "time": "Tue, 30 Jun 2026 23:14:04 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Division for Inclusive Social Development",
+          "summary": "Fallback discovery via Google News RSS; publisher: Division for Inclusive Social Development",
+          "source": "Division for Inclusive Social Development",
+          "sourceLabel": "Division for Inclusive Social Development",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @UN",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
       "id": "9b808377f6ecd0dc",
       "title": "The Secretary-General Remarks to the General Assembly Ad Hoc Committee Announcement of Voluntary Contributions to UNRWA - UNRWA",
       "category": "general",
@@ -2687,12 +2210,12 @@
       "firstSeen": "Tue, 26 May 2026 07:00:00 GMT",
       "lastSeen": "Tue, 26 May 2026 07:00:00 GMT",
       "urls": [
-        "https://news.google.com/rss/articles/CBMivwFBVV95cUxQY2lBTjNsNjR1M1pxenNzMWdtdWRzNTZmcFYyMW16ZHF4VTAxVlhGV21oNHpadDhpRzJKaUp1WHNGTWJWTG85WTVabERiY0tMdFlHQnJ3aUpRaHNrNzlWQVZMbjNVeC03akJPbm9EdjI4Z2hGelgteEwyczBNY3RSZllObkhkanUzVDVPTzVaaDUxcm5zd3paTzhla0l1Z0w2a2ZyNmwwYk56RnlPYXJHQTItZFBrSEt0dlVYLWF6QdIBxAFBVV95cUxNUVVnczJFV0JuN2o3TTJrZ29sX2gtcWYxRDhWMmJzQzhDRUoyWU5BdzFxME1UVWZ1aWVWcEZKY0tYZXFJMVh0dFY3NjA4Ylpfeko0cjBQbG5wc2N5R25ScTVaVHVqNEh0SEYySU5sLXU3MkFJMUsyYmR0UHJGZXFnUl9QR3FLeU1VdXVBZlFzbWVEMElmNzRmd0psV1VVbGhTc21XOUV3ZDE3RGpsTEtNSXRSX2tybGtnVVBoZjhVblRWZHlr?oc=5"
+        "https://news.google.com/rss/articles/CBMivwFBVV95cUxQY2lBTjNsNjR1M1pxenNzMWdtdWRzNTZmcFYyMW16ZHF4VTAxVlhGV21oNHpadDhpRzJKaUp1WHNGTWJWTG85WTVabERiY0tMdFlHQnJ3aUpRaHNrNzlWQVZMbjNVeC03akJPbm9EdjI4Z2hGelgteEwyczBNY3RSZllObkhkanUzVDVPTzVaaDUxcm5zd3paTzhla0l1Z0w2a2ZyNmwwYk56RnlPYXJHQTItZFBrSEt0dlVYLWF6QQ?oc=5"
       ],
       "reports": [
         {
           "title": "U.S. military kills alleged narco-terrorist in lethal strike on drug-trafficking vessel in Eastern Pacific - Fox News",
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQY2lBTjNsNjR1M1pxenNzMWdtdWRzNTZmcFYyMW16ZHF4VTAxVlhGV21oNHpadDhpRzJKaUp1WHNGTWJWTG85WTVabERiY0tMdFlHQnJ3aUpRaHNrNzlWQVZMbjNVeC03akJPbm9EdjI4Z2hGelgteEwyczBNY3RSZllObkhkanUzVDVPTzVaaDUxcm5zd3paTzhla0l1Z0w2a2ZyNmwwYk56RnlPYXJHQTItZFBrSEt0dlVYLWF6QdIBxAFBVV95cUxNUVVnczJFV0JuN2o3TTJrZ29sX2gtcWYxRDhWMmJzQzhDRUoyWU5BdzFxME1UVWZ1aWVWcEZKY0tYZXFJMVh0dFY3NjA4Ylpfeko0cjBQbG5wc2N5R25ScTVaVHVqNEh0SEYySU5sLXU3MkFJMUsyYmR0UHJGZXFnUl9QR3FLeU1VdXVBZlFzbWVEMElmNzRmd0psV1VVbGhTc21XOUV3ZDE3RGpsTEtNSXRSX2tybGtnVVBoZjhVblRWZHlr?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQY2lBTjNsNjR1M1pxenNzMWdtdWRzNTZmcFYyMW16ZHF4VTAxVlhGV21oNHpadDhpRzJKaUp1WHNGTWJWTG85WTVabERiY0tMdFlHQnJ3aUpRaHNrNzlWQVZMbjNVeC03akJPbm9EdjI4Z2hGelgteEwyczBNY3RSZllObkhkanUzVDVPTzVaaDUxcm5zd3paTzhla0l1Z0w2a2ZyNmwwYk56RnlPYXJHQTItZFBrSEt0dlVYLWF6QQ?oc=5",
           "published_date": "Tue, 26 May 2026 07:00:00 GMT",
           "time": "Tue, 26 May 2026 07:00:00 GMT",
           "summary_snippet": "Fallback discovery via Google News RSS; publisher: Fox News",
@@ -2994,8 +2517,8 @@
       ]
     },
     {
-      "id": "6018b93c0e6cb467",
-      "title": "American power, AI and a walkout - key moments from Trump's UN speech - BBC",
+      "id": "4739569612f8b7d1",
+      "title": "Secretary-General of the United Nations | 81st session - Welcome to the United Nations",
       "category": "general",
       "confidence": "low",
       "reportCount": 1,
@@ -3003,26 +2526,24 @@
       "sources": [
         "news.google.com"
       ],
-      "anchors": [
-        "america"
-      ],
+      "anchors": [],
       "firstSeen": "Tue, 22 Sep 2026 07:00:00 GMT",
       "lastSeen": "Tue, 22 Sep 2026 07:00:00 GMT",
       "urls": [
-        "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5sMXhQZXJPY1JROEktMHBINDhfbm0yWjdheVAxTVB4Y0xuUEFyYXNVclB0dUo5Zlk5d0FoNVJ0Z0gwS3llSU05ZFFqcG5EQk5zc25UWXZQOWtOMVk?oc=5"
+        "https://news.google.com/rss/articles/CBMib0FVX3lxTE1Melc3LXlLSmJPR09JT045cDlRLXlLOXllV2VuSUdybzFmQVhMQW5ycmhSZ1c5T1pjR0pUVHpEbnpBZ1I3STF1bk8yNU1yRDl1N1VHVW1xTjR5RGI2TVJndWZPZGJFcEsySjJ6bHB4QQ?oc=5"
       ],
       "reports": [
         {
-          "title": "American power, AI and a walkout - key moments from Trump's UN speech - BBC",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5sMXhQZXJPY1JROEktMHBINDhfbm0yWjdheVAxTVB4Y0xuUEFyYXNVclB0dUo5Zlk5d0FoNVJ0Z0gwS3llSU05ZFFqcG5EQk5zc25UWXZQOWtOMVk?oc=5",
+          "title": "Secretary-General of the United Nations | 81st session - Welcome to the United Nations",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1Melc3LXlLSmJPR09JT045cDlRLXlLOXllV2VuSUdybzFmQVhMQW5ycmhSZ1c5T1pjR0pUVHpEbnpBZ1I3STF1bk8yNU1yRDl1N1VHVW1xTjR5RGI2TVJndWZPZGJFcEsySjJ6bHB4QQ?oc=5",
           "published_date": "Tue, 22 Sep 2026 07:00:00 GMT",
           "time": "Tue, 22 Sep 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: BBC",
-          "summary": "Fallback discovery via Google News RSS; publisher: BBC",
-          "source": "BBC",
-          "sourceLabel": "BBC",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Welcome to the United Nations",
+          "summary": "Fallback discovery via Google News RSS; publisher: Welcome to the United Nations",
+          "source": "Welcome to the United Nations",
+          "sourceLabel": "Welcome to the United Nations",
           "sourceType": "fallback-news",
-          "fallbackFor": "X @POTUS",
+          "fallbackFor": "X @UN",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -3055,38 +2576,6 @@
           "summary": "Fallback discovery via Google News RSS; publisher: Reuters",
           "source": "Reuters",
           "sourceLabel": "Reuters",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @UN",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "4739569612f8b7d1",
-      "title": "Secretary-General of the United Nations | 81st session - Welcome to the United Nations",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Tue, 22 Sep 2026 07:00:00 GMT",
-      "lastSeen": "Tue, 22 Sep 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMib0FVX3lxTE1Melc3LXlLSmJPR09JT045cDlRLXlLOXllV2VuSUdybzFmQVhMQW5ycmhSZ1c5T1pjR0pUVHpEbnpBZ1I3STF1bk8yNU1yRDl1N1VHVW1xTjR5RGI2TVJndWZPZGJFcEsySjJ6bHB4QQ?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Secretary-General of the United Nations | 81st session - Welcome to the United Nations",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1Melc3LXlLSmJPR09JT045cDlRLXlLOXllV2VuSUdybzFmQVhMQW5ycmhSZ1c5T1pjR0pUVHpEbnpBZ1I3STF1bk8yNU1yRDl1N1VHVW1xTjR5RGI2TVJndWZPZGJFcEsySjJ6bHB4QQ?oc=5",
-          "published_date": "Tue, 22 Sep 2026 07:00:00 GMT",
-          "time": "Tue, 22 Sep 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Welcome to the United Nations",
-          "summary": "Fallback discovery via Google News RSS; publisher: Welcome to the United Nations",
-          "source": "Welcome to the United Nations",
-          "sourceLabel": "Welcome to the United Nations",
           "sourceType": "fallback-news",
           "fallbackFor": "X @UN",
           "credit_metadata": "Google News RSS fallback"
@@ -3355,6 +2844,102 @@
       ]
     },
     {
+      "id": "dc48118dfa5de6f0",
+      "title": "52 of the most stupid things Donald Trump has ever said - Indy100 | News",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Tue, 13 Oct 2026 03:57:31 GMT",
+      "lastSeen": "Tue, 13 Oct 2026 03:57:31 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMikAFBVV95cUxQRDJScXVyX1BzVk9LYnlaX191Y2ZNaVlMSEtFazMteFN6MGlXT2VxM0R4S1ZDaHRGaUZGSWZZcTFYanhBV3FEcnBCeUI3SkYzdElSa2xRNVBpSzFWMkE1U2REZGEzbW4wYjRYZm14amZZZWtCNHhGUFcybl9lQk5MQzNyd0hqczJFdTJIaTY2bkI?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "52 of the most stupid things Donald Trump has ever said - Indy100 | News",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQRDJScXVyX1BzVk9LYnlaX191Y2ZNaVlMSEtFazMteFN6MGlXT2VxM0R4S1ZDaHRGaUZGSWZZcTFYanhBV3FEcnBCeUI3SkYzdElSa2xRNVBpSzFWMkE1U2REZGEzbW4wYjRYZm14amZZZWtCNHhGUFcybl9lQk5MQzNyd0hqczJFdTJIaTY2bkI?oc=5",
+          "published_date": "Tue, 13 Oct 2026 03:57:31 GMT",
+          "time": "Tue, 13 Oct 2026 03:57:31 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Indy100 | News",
+          "summary": "Fallback discovery via Google News RSS; publisher: Indy100 | News",
+          "source": "Indy100 | News",
+          "sourceLabel": "Indy100 | News",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @POTUS",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "2d9ce6aec3830ba5",
+      "title": "'Humiliating' - former PM Helen Clark slams NZ abstention on UN pandemic vote - RNZ",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Tue, 13 Oct 2026 02:29:46 GMT",
+      "lastSeen": "Tue, 13 Oct 2026 02:29:46 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNUko0am51WW16S1VlQ3A2ODI3eVJyOGgzNXVUVC1IeVpDRkVnSVQ3VWFabS0zR1hvbHFoUDY5MFlLYlk1RmpMUmdNMEx0Y0NZalc3MkxTQnBjWjBRTUF4MFc2TFBPam5UNUNDQi1SR0I1eGFwbFM3cVR4ZDg3cy1DSE1tU2ZVN1NSeXpOODRDejNFVUNTU0ZGcVhJZXBCNFVKSVJGc0J2bGNuRUJWQXlCOU84YlR6SW56?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "'Humiliating' - former PM Helen Clark slams NZ abstention on UN pandemic vote - RNZ",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNUko0am51WW16S1VlQ3A2ODI3eVJyOGgzNXVUVC1IeVpDRkVnSVQ3VWFabS0zR1hvbHFoUDY5MFlLYlk1RmpMUmdNMEx0Y0NZalc3MkxTQnBjWjBRTUF4MFc2TFBPam5UNUNDQi1SR0I1eGFwbFM3cVR4ZDg3cy1DSE1tU2ZVN1NSeXpOODRDejNFVUNTU0ZGcVhJZXBCNFVKSVJGc0J2bGNuRUJWQXlCOU84YlR6SW56?oc=5",
+          "published_date": "Tue, 13 Oct 2026 02:29:46 GMT",
+          "time": "Tue, 13 Oct 2026 02:29:46 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: RNZ",
+          "summary": "Fallback discovery via Google News RSS; publisher: RNZ",
+          "source": "RNZ",
+          "sourceLabel": "RNZ",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @UN",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "58a3f64964ad4e3a",
+      "title": "National says it doesn’t agree with Peters captain’s call to not support global pandemic plan - Stuff",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Tue, 13 Oct 2026 02:13:06 GMT",
+      "lastSeen": "Tue, 13 Oct 2026 02:13:06 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMixAFBVV95cUxQWWlUN25NT3hEcjFWNTEtSU9vejV4R2pRaE9PU1ZZZ2t6VnNRY1hhMGQ3allaZ2xjUnlQMXdNblFKaGJNbTNNRml0ZkJLWnNTeGsyYnJ4OHc5S0Y4QzVRTUQtR2x6VmZvd0lwcEFkakhYV0U3bTBRaGFZdkdLelF6dVo2dFpBTWVLTzdfa2hEaDJpOHVManVjc3BLSHpQbXd4bmdaYm9VV1ZLNnJSR2tnak1jVURObXl4NGNIVmZnZ2p5enls?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "National says it doesn’t agree with Peters captain’s call to not support global pandemic plan - Stuff",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQWWlUN25NT3hEcjFWNTEtSU9vejV4R2pRaE9PU1ZZZ2t6VnNRY1hhMGQ3allaZ2xjUnlQMXdNblFKaGJNbTNNRml0ZkJLWnNTeGsyYnJ4OHc5S0Y4QzVRTUQtR2x6VmZvd0lwcEFkakhYV0U3bTBRaGFZdkdLelF6dVo2dFpBTWVLTzdfa2hEaDJpOHVManVjc3BLSHpQbXd4bmdaYm9VV1ZLNnJSR2tnak1jVURObXl4NGNIVmZnZ2p5enls?oc=5",
+          "published_date": "Tue, 13 Oct 2026 02:13:06 GMT",
+          "time": "Tue, 13 Oct 2026 02:13:06 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Stuff",
+          "summary": "Fallback discovery via Google News RSS; publisher: Stuff",
+          "source": "Stuff",
+          "sourceLabel": "Stuff",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @UN",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
       "id": "8353b62612795232",
       "title": "Timeline: US strikes on alleged drug boats - ABC News - Breaking News, Latest News and Videos",
       "category": "general",
@@ -3382,38 +2967,6 @@
           "sourceLabel": "ABC News - Breaking News, Latest News and Videos",
           "sourceType": "fallback-news",
           "fallbackFor": "GDELT — Western Hemisphere Counter-Cartel",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "8c11e607a88398bf",
-      "title": "Artemis III Crew Announced - NASA (.gov)",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Tue, 09 Jun 2026 07:00:00 GMT",
-      "lastSeen": "Tue, 09 Jun 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMib0FVX3lxTE05clE0VDlXM1Y5UWtvMEx3OEZnWjhHZnowT0dRUl9Hd3NzNjdUT1lrRnJya3drOXRzakNwdVhKaXo2dkJTcXRIc19CTHR0eVBTQjBQWVFuWnBvbXZBTExuNmkxaHNyWWN1OTZOR2Z5TQ?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Artemis III Crew Announced - NASA (.gov)",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE05clE0VDlXM1Y5UWtvMEx3OEZnWjhHZnowT0dRUl9Hd3NzNjdUT1lrRnJya3drOXRzakNwdVhKaXo2dkJTcXRIc19CTHR0eVBTQjBQWVFuWnBvbXZBTExuNmkxaHNyWWN1OTZOR2Z5TQ?oc=5",
-          "published_date": "Tue, 09 Jun 2026 07:00:00 GMT",
-          "time": "Tue, 09 Jun 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
-          "summary": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
-          "source": "NASA (.gov)",
-          "sourceLabel": "NASA (.gov)",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NASA",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -3481,6 +3034,136 @@
           "sourceLabel": "North Atlantic Treaty Organization | NATO",
           "sourceType": "fallback-news",
           "fallbackFor": "X @NATO",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "90c2e7589701f036",
+      "title": "White House defends Trump comment to let Iran 'take out' LA and San Diego - BBC",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [
+        "iran"
+      ],
+      "firstSeen": "Tue, 06 Oct 2026 20:15:31 GMT",
+      "lastSeen": "Tue, 06 Oct 2026 20:15:31 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiW0FVX3lxTE93cEtTcmRaQm04RTdROTUtUm80V214eGRjaDlLcGh5d0NLcG9Ud1VnM1Vhc1hpTzV5VDI1ZjQ4ZHZqLVZReGFHX2xFOXVEeTVJWThpVm1HNWRQdkU?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "White House defends Trump comment to let Iran 'take out' LA and San Diego - BBC",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE93cEtTcmRaQm04RTdROTUtUm80V214eGRjaDlLcGh5d0NLcG9Ud1VnM1Vhc1hpTzV5VDI1ZjQ4ZHZqLVZReGFHX2xFOXVEeTVJWThpVm1HNWRQdkU?oc=5",
+          "published_date": "Tue, 06 Oct 2026 20:15:31 GMT",
+          "time": "Tue, 06 Oct 2026 20:15:31 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: BBC",
+          "summary": "Fallback discovery via Google News RSS; publisher: BBC",
+          "source": "BBC",
+          "sourceLabel": "BBC",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @POTUS",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "b18fb94b6844e697",
+      "title": "NASA’s SunRISE Mission Targets No Earlier Than Mid-2027 Launch - NASA Jet Propulsion Laboratory (JPL) (.gov)",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Tue, 06 Oct 2026 17:09:19 GMT",
+      "lastSeen": "Tue, 06 Oct 2026 17:09:19 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMilwFBVV95cUxQdVZwODdDUGdlMUZmcWV6ejdnTEVpaTdnTFZJcE5BRjREWUxHaDhueFdtcVpPdXJhRHV2U3REMVI1d3FqLWtwTXZ1ZkdUcEI0Z3QzNGlfa3hfdUJ5Nm1sZjFDa0FPMnFMb0FsUk05OWpJekwzb0tHNGQ1V2R5RzZWbE1rcXQtWi00NFk4QzBNeC1BZDE1dWow?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "NASA’s SunRISE Mission Targets No Earlier Than Mid-2027 Launch - NASA Jet Propulsion Laboratory (JPL) (.gov)",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQdVZwODdDUGdlMUZmcWV6ejdnTEVpaTdnTFZJcE5BRjREWUxHaDhueFdtcVpPdXJhRHV2U3REMVI1d3FqLWtwTXZ1ZkdUcEI0Z3QzNGlfa3hfdUJ5Nm1sZjFDa0FPMnFMb0FsUk05OWpJekwzb0tHNGQ1V2R5RzZWbE1rcXQtWi00NFk4QzBNeC1BZDE1dWow?oc=5",
+          "published_date": "Tue, 06 Oct 2026 17:09:19 GMT",
+          "time": "Tue, 06 Oct 2026 17:09:19 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NASA Jet Propulsion Laboratory (JPL) (.gov)",
+          "summary": "Fallback discovery via Google News RSS; publisher: NASA Jet Propulsion Laboratory (JPL) (.gov)",
+          "source": "NASA Jet Propulsion Laboratory (JPL) (.gov)",
+          "sourceLabel": "NASA Jet Propulsion Laboratory (JPL) (.gov)",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NASA",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "088eb82dc58f9a39",
+      "title": "January 6: A Date Which Will Live in Infamy - The White House (.gov)",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Tue, 06 Jan 2026 08:00:00 GMT",
+      "lastSeen": "Tue, 06 Jan 2026 08:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiREFVX3lxTE5UWHVjRk9VY21yLTN2R1NDRDNZQWFjRTJTMGtnX1Q5aVZ5TS1SbWRpTF9WaEVJYkNQaXVycDlBUk1PM3Rr?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "January 6: A Date Which Will Live in Infamy - The White House (.gov)",
+          "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE5UWHVjRk9VY21yLTN2R1NDRDNZQWFjRTJTMGtnX1Q5aVZ5TS1SbWRpTF9WaEVJYkNQaXVycDlBUk1PM3Rr?oc=5",
+          "published_date": "Tue, 06 Jan 2026 08:00:00 GMT",
+          "time": "Tue, 06 Jan 2026 08:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: The White House (.gov)",
+          "summary": "Fallback discovery via Google News RSS; publisher: The White House (.gov)",
+          "source": "The White House (.gov)",
+          "sourceLabel": "The White House (.gov)",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @WhiteHouse",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "f582d669468bb1d4",
+      "title": "2 killed in latest U.S. strike on alleged drug boat in the Pacific, Hegseth says - CBS News",
+      "category": "conflict",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Tue, 04 Nov 2025 08:00:00 GMT",
+      "lastSeen": "Tue, 04 Nov 2025 08:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMinwFBVV95cUxONlpKSzlqM0pGaHRtaW83RUpyUWNnQVhfMm5Ud2pyUkhqa3lCLU03N0VjWTRhWnl0bXZEZEcteEZjTlVUT2xzQXplMm9tcm1OM2M2ckhkOXU5Z2RhU1l6cVdkQmFuTmhrWjR4UU9jaklrU0NJZWtFTnBDdkdRX3ZERGtVck5PRnBEbk92djFJZndJSGc3bTFWT3NOeGhqN00?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "2 killed in latest U.S. strike on alleged drug boat in the Pacific, Hegseth says - CBS News",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxONlpKSzlqM0pGaHRtaW83RUpyUWNnQVhfMm5Ud2pyUkhqa3lCLU03N0VjWTRhWnl0bXZEZEcteEZjTlVUT2xzQXplMm9tcm1OM2M2ckhkOXU5Z2RhU1l6cVdkQmFuTmhrWjR4UU9jaklrU0NJZWtFTnBDdkdRX3ZERGtVck5PRnBEbk92djFJZndJSGc3bTFWT3NOeGhqN00?oc=5",
+          "published_date": "Tue, 04 Nov 2025 08:00:00 GMT",
+          "time": "Tue, 04 Nov 2025 08:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: CBS News",
+          "summary": "Fallback discovery via Google News RSS; publisher: CBS News",
+          "source": "CBS News",
+          "sourceLabel": "CBS News",
+          "sourceType": "fallback-news",
+          "fallbackFor": "GDELT — Western Hemisphere Counter-Cartel",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
