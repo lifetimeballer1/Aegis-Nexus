@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "generatedAt": "2026-10-16T18:09:01.285658Z",
+  "generatedAt": "2026-10-16T21:02:06.359387Z",
   "sourceBackedOnly": true,
   "method": "Source-backed Brain evidence plus dict/list action layers; co-mention targets are co-occurrence volumes, not causality.",
   "signals": [
@@ -11,55 +11,61 @@
       "categories": {
         "technology": 100,
         "military": 54,
-        "economic": 51,
         "political": 50,
+        "economic": 49,
         "diplomatic": 34,
         "security": 31,
-        "energy": 28,
-        "maritime": 13
+        "energy": 29,
+        "maritime": 12
       },
       "dominantTarget": "Iran",
       "topTargets": [
         {
           "target": "Iran",
-          "mentions": 34
+          "mentions": 33
         },
         {
           "target": "China",
-          "mentions": 20
+          "mentions": 23
         },
         {
           "target": "Oil",
           "mentions": 19
         },
         {
-          "target": "Israel",
+          "target": "Ukraine",
           "mentions": 15
         },
         {
-          "target": "Ukraine",
-          "mentions": 14
+          "target": "Israel",
+          "mentions": 15
         }
       ],
-      "actionCount": 361,
-      "actionEvidenceCount": 361,
+      "actionCount": 359,
+      "actionEvidenceCount": 359,
       "categoryCount": 100,
-      "targetCount": 34,
-      "evidenceCount": 93,
+      "targetCount": 33,
+      "evidenceCount": 89,
       "lastEvidenceTime": "Tue, 27 Jan 2026 08:00:00 GMT",
       "intensity": 100,
       "evidence": [
         {
           "title": "Israeli settlers beat Palestinians and a U.S. photojournalist in West Bank attacks",
           "url": "https://www.npr.org/2026/10/16/nx-s1-6004904/israeli-settlers-beat-us-photojournalist-washington-post-west-bank",
-          "source": "NPR News",
+          "source": "https://www.npr.org/2026/10/16/nx-s1-6004904/israeli-settlers-beat-us-photojournalist-washington-post-west-bank",
           "time": "2026-10-16T15:57:27Z"
         },
         {
           "title": "Mexico’s Drug Cartels Are Stealing American Trucks. Here’s What They’re Doing with Them. - The National Interest",
           "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNR0RZWHVPdWR1NUVPeG1ZY3dxN1U0TFR5eVl1Z3czTW1hQXp1Um4yaUJMblQxSlZuNG05MGNaM2ZCejdhU0lEMFFhZUlOVGx5MEJsN0ZwS3pXa2QwMkcyaGxGMGpsODU1TGV3SUlKMkZTYXJ6U05rZUtPM0FYZnNwbTJWVGRYQ0hTM2Y5V3ZKd0pBSGxIbHJPREpLYjN6UDBZdEJuN0lSelk5eEhCc3NfWnJwUGwzb2U3M3c?oc=5",
-          "source": "Google News — Mexico Cartel Conflict",
+          "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNR0RZWHVPdWR1NUVPeG1ZY3dxN1U0TFR5eVl1Z3czTW1hQXp1Um4yaUJMblQxSlZuNG05MGNaM2ZCejdhU0lEMFFhZUlOVGx5MEJsN0ZwS3pXa2QwMkcyaGxGMGpsODU1TGV3SUlKMkZTYXJ6U05rZUtPM0FYZnNwbTJWVGRYQ0hTM2Y5V3ZKd0pBSGxIbHJPREpLYjN6UDBZdEJuN0lSelk5eEhCc3NfWnJwUGwzb2U3M3c?oc=5",
           "time": "2026-10-16T17:02:16Z"
+        },
+        {
+          "title": "China & Taiwan Update, October 16, 2026 - American Enterprise Institute - AEI",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE05aXd3cEEwS1ZzYzh2R21faVA4Y05LZFgyTHpsaTEtYkl2Tl9BTG1DbE00ZGxlN1R0ei0zbnI3bjdtNnNDc1ZmQjdpV181bzZRYVRkemRGei12MmhkcDdXTWFBYTI1X2w1alhMeHZRRFRTU2tFTXc?oc=5",
+          "source": "Google News — China Security / PLA",
+          "time": "2026-10-16T18:27:17Z"
         },
         {
           "title": "China backs Africa’s strongest military as Egypt and Ethiopia face off over Africa’s longest river after U.S. talks collapsed - Business Insider Africa",
@@ -162,29 +168,23 @@
           "url": "https://x.com/ContactoRevist/status/2036479635618160777",
           "source": "Cartel Intelligence Map",
           "time": ""
-        },
-        {
-          "title": "09/01/2026 | Celaya, Guanajuato, Mexico\n\nU.S. national detained in Celaya after authorities discover he is wanted by U.S. authorities\n\nMembers of the",
-          "url": "https://x.com/MauroGonzalezMa/status/2094802459365707805",
-          "source": "Cartel Intelligence Map",
-          "time": ""
         }
       ],
       "sourceBacked": true
     },
     {
       "actor": "China",
-      "signal": "China shows source-backed economic activity",
-      "category": "economic",
+      "signal": "China shows source-backed technology activity",
+      "category": "technology",
       "categories": {
         "economic": 100,
         "technology": 100,
         "diplomatic": 92,
-        "military": 87,
+        "military": 90,
         "security": 65,
-        "energy": 36,
-        "political": 34,
-        "maritime": 28
+        "energy": 37,
+        "political": 33,
+        "maritime": 26
       },
       "dominantTarget": "Iran",
       "topTargets": [
@@ -209,37 +209,31 @@
           "mentions": 9
         }
       ],
-      "actionCount": 542,
-      "actionEvidenceCount": 542,
+      "actionCount": 543,
+      "actionEvidenceCount": 543,
       "categoryCount": 100,
       "targetCount": 34,
-      "evidenceCount": 80,
-      "lastEvidenceTime": "2026-10-16T17:24:57Z",
+      "evidenceCount": 76,
+      "lastEvidenceTime": "Sat, 26 Sep 2026 07:00:00 GMT",
       "intensity": 100,
       "evidence": [
         {
+          "title": "China, US to open AI ‘communication channel’ after summit, White House says - Al Jazeera",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPSlV4Q3ViaXhtVTVPODZkRHRpYjdXS0hvUWE1UnAzNWFSSWhFN1NLd2g0ZDZmUlJKWW81b0lUNk9rVnNUMF9Xa3lSa1NLdWhEZzBaYXQ3RF9ObHpLNTdqM09zNzJpa0tNeVFBWkpjeTJxempabkd2Z25EalNXY2RRUzdraTV3UWxqOGFjcEZadjRRVEpJOW9mOFMwX0JieWpwdXczNHBoTURiYTBtajJUa0xB0gG3AUFVX3lxTE1TamZEbF9mVV81UXhhalVNc2l4WFhWNzBqS2tjWmhpUnBnZWc3Y2pfQnU3Sld5MEM5U2V6WlBfRjg1MGtjZXNrMlp1T3lUcVFyS2drYXFUaFBjYVZOYUxqVHN3b0VRSGtOajUxcmpjTHBWbEVSUi05WHNIR3RIcURVS1FVOExWZkdRT0hjYUcxbDloWjNlNlZmbmJmd2wzbGpPcEpKMG84cU1IaXdMSXo5YkprbkFQUQ?oc=5",
+          "source": "Al Jazeera",
+          "time": "Sat, 26 Sep 2026 07:00:00 GMT"
+        },
+        {
           "title": "Why is China buying up gold?",
           "url": "https://www.aljazeera.com/news-analysis/2026/10/16/why-is-china-buying-up-gold?traffic_source=rss",
-          "source": "Al Jazeera",
+          "source": "https://www.aljazeera.com/news-analysis/2026/10/16/why-is-china-buying-up-gold?traffic_source=rss",
           "time": "2026-10-16T11:38:11Z"
         },
         {
-          "title": "The Newly Revised National Defense Mobilization Law of the People's Republic of China: Preparing for a War or Bureaucratic Housekeeping? - The Geopolitics",
-          "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOdkh5ZGVNX0dfdGxXU0ktRlJfZmhfR2w0LTgxTk0wLWtsU3hSZnV6akt2NW9RdjhndXZuTFVDYXZIZzlmNTBZX3hCZE1hdWxvNlUyRDM5N0JTMzl6QW41cmhjdTc3X2ItRzRfSVlxUDctN2ZneXlxak81YlB2WEhsdGFWajczNGxNZnJVN1BxaVpYQmxaam5BQldINjFzSktOaE5aN2k0clF5MlRBMWU4LWxGZ1AxQTJKU2xiRV9jS3F4YnYxbWlDVFdyMFJqWVBFYm1fSnM1QW93Y0MzRVl4YkZWM2JYcy1VYTdFSDVnM0Y4SXc?oc=5",
+          "title": "China & Taiwan Update, October 16, 2026 - American Enterprise Institute - AEI",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE05aXd3cEEwS1ZzYzh2R21faVA4Y05LZFgyTHpsaTEtYkl2Tl9BTG1DbE00ZGxlN1R0ei0zbnI3bjdtNnNDc1ZmQjdpV181bzZRYVRkemRGei12MmhkcDdXTWFBYTI1X2w1alhMeHZRRFRTU2tFTXc?oc=5",
           "source": "Google News — China Security / PLA",
-          "time": "2026-10-16T17:24:57Z"
-        },
-        {
-          "title": "China sets up its first overseas military facility focused on air power in Laos. Why does this matter? - The Week",
-          "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPdWNqZ0FGZXZYWjA2WXMwTE5PeW5mZXBlZXJtRG9uUE1wQjRiemM1aWJFZWx2SDhFbU1DWGxfaGRNY1Z2bkdnVU5oa1pwclQ4MElYRmVVamRqT3pJbWJJZTBmRzVBcUt1dFlMNi1VNzVTQkRwNGhzNDRHRllOdzZiWC1UY0J4TWp6amUwQlJvWFpxWWh6WlMxZGFPSUc4Y1ZaOTNhSTFfZC1QMVl1QUVQRGZCTFRXUDNXaXdMSl9XZE5Jc1JhalpjOUdJN1IyMWV2NVRtTVJlZGhyS1NfNWJ3eTNFM0NFX1dUUm5JZ9IB7AFBVV95cUxPdWNqZ0FGZXZYWjA2WXMwTE5PeW5mZXBlZXJtRG9uUE1wQjRiemM1aWJFZWx2SDhFbU1DWGxfaGRNY1Z2bkdnVU5oa1pwclQ4MElYRmVVamRqT3pJbWJJZTBmRzVBcUt1dFlMNi1VNzVTQkRwNGhzNDRHRllOdzZiWC1UY0J4TWp6amUwQlJvWFpxWWh6WlMxZGFPSUc4Y1ZaOTNhSTFfZC1QMVl1QUVQRGZCTFRXUDNXaXdMSl9XZE5Jc1JhalpjOUdJN1IyMWV2NVRtTVJlZGhyS1NfNWJ3eTNFM0NFX1dUUm5JZw?oc=5",
-          "source": "Google News — China Security / PLA",
-          "time": "2026-10-16T12:38:31Z"
-        },
-        {
-          "title": "China-North Korea border bridge may do little to spur trade, experts say",
-          "url": "https://www.aljazeera.com/economy/2026/10/16/china-north-korea-border-bridge-may-do-little-to-spur-trade-experts-say?traffic_source=rss",
-          "source": "https://www.aljazeera.com/economy/2026/10/16/china-north-korea-border-bridge-may-do-little-to-spur-trade-experts-say?traffic_source=rss",
-          "time": "2026-10-16T09:21:40Z"
+          "time": "2026-10-16T18:27:17Z"
         },
         {
           "title": "As the China-US AI race reaches Cairo, Egypt faces a strategic decision - Al Jazeera",
@@ -314,28 +308,34 @@
           "time": ""
         },
         {
+          "title": "Green forest fire notification in China",
+          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032850",
+          "source": "GDACS Global Disaster Alerts",
+          "time": "2026-10-16T19:01:11Z"
+        },
+        {
+          "title": "The Newly Revised National Defense Mobilization Law of the People's Republic of China: Preparing for a War or Bureaucratic Housekeeping? - The Geopolitics",
+          "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOdkh5ZGVNX0dfdGxXU0ktRlJfZmhfR2w0LTgxTk0wLWtsU3hSZnV6akt2NW9RdjhndXZuTFVDYXZIZzlmNTBZX3hCZE1hdWxvNlUyRDM5N0JTMzl6QW41cmhjdTc3X2ItRzRfSVlxUDctN2ZneXlxak81YlB2WEhsdGFWajczNGxNZnJVN1BxaVpYQmxaam5BQldINjFzSktOaE5aN2k0clF5MlRBMWU4LWxGZ1AxQTJKU2xiRV9jS3F4YnYxbWlDVFdyMFJqWVBFYm1fSnM1QW93Y0MzRVl4YkZWM2JYcy1VYTdFSDVnM0Y4SXc?oc=5",
+          "source": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOdkh5ZGVNX0dfdGxXU0ktRlJfZmhfR2w0LTgxTk0wLWtsU3hSZnV6akt2NW9RdjhndXZuTFVDYXZIZzlmNTBZX3hCZE1hdWxvNlUyRDM5N0JTMzl6QW41cmhjdTc3X2ItRzRfSVlxUDctN2ZneXlxak81YlB2WEhsdGFWajczNGxNZnJVN1BxaVpYQmxaam5BQldINjFzSktOaE5aN2k0clF5MlRBMWU4LWxGZ1AxQTJKU2xiRV9jS3F4YnYxbWlDVFdyMFJqWVBFYm1fSnM1QW93Y0MzRVl4YkZWM2JYcy1VYTdFSDVnM0Y4SXc?oc=5",
+          "time": "2026-10-16T17:24:57Z"
+        },
+        {
           "title": "White House Press Secretary Katie Zacharia, who was appointed less than a week ago, said China lacked \"proper toilets\" in an interview that aired on Thursday. | via ANC 24/7 Link to full story in the comments section. - Facebook",
           "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQVHVwUEFKQks1cnkzUmxHeHpJdzg1Nmo4enFxNWlDa3pVYlprZGtieHpKa1hrYllDYWJQZl94Y1U1dG1kUi1ma18zWEppYzlqYU5HQVRZVFhEaGtpMXgxUDZYd2stNm53QVlYaVN1UGdMUmltUXFZMFNPWVppSjJNUnFCcldUYi0zU1pSU2xxUlBfUFZPeDFJbjB2NTFtSUNjbmNva3hUNVVKa3l3UTJtalB1dWJ2VHkxazhlLV9BVE1LTDRwcndwTFkxOEoxb2R6Rml4Ujd5SQ?oc=5",
-          "source": "Google News — China Politics / CCP",
+          "source": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQVHVwUEFKQks1cnkzUmxHeHpJdzg1Nmo4enFxNWlDa3pVYlprZGtieHpKa1hrYllDYWJQZl94Y1U1dG1kUi1ma18zWEppYzlqYU5HQVRZVFhEaGtpMXgxUDZYd2stNm53QVlYaVN1UGdMUmltUXFZMFNPWVppSjJNUnFCcldUYi0zU1pSU2xxUlBfUFZPeDFJbjB2NTFtSUNjbmNva3hUNVVKa3l3UTJtalB1dWJ2VHkxazhlLV9BVE1LTDRwcndwTFkxOEoxb2R6Rml4Ujd5SQ?oc=5",
           "time": "2026-10-16T17:00:52Z"
         },
         {
           "title": "U.S. China Economic Warfare Study Finds Export Controls Can Erode Their Own Power as Global Supply Chains Adapt - Rare Earth Exchanges",
           "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOZkczV3NvajBlLTdCVk52ZnFLbDRBZ2NCRHptTjAzazB6Tk5QSzYzZ3FjYmlvaWRCSmRXUXh3V3NMUmFMV2ZTaHJxMkpSZlpOVnhldmVVdUl4ZlBENzVxRW04S3VjTVQ0RFU4ZGhMWmNMenliYmNvX1pIVXp5LTgxXw?oc=5",
-          "source": "Google News — China Economy / Trade",
+          "source": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOZkczV3NvajBlLTdCVk52ZnFLbDRBZ2NCRHptTjAzazB6Tk5QSzYzZ3FjYmlvaWRCSmRXUXh3V3NMUmFMV2ZTaHJxMkpSZlpOVnhldmVVdUl4ZlBENzVxRW04S3VjTVQ0RFU4ZGhMWmNMenliYmNvX1pIVXp5LTgxXw?oc=5",
           "time": "2026-10-16T15:51:50Z"
         },
         {
           "title": "Dr Doom’s India Forecast: Why economist Nouriel Roubini sees 9% growth as key to beating China’s rise? - ET Now",
           "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPcmFIWVgxazJZQzFQVGticjQ0bm54Q05vbmR6U284SFFjYnFDUzFNS3JETEpHcXlNeDBWdzYxaEpOWjRzT2tHRGRXLUNyempDNlFXRWc5UTF5OHpfSEFtTlB1RWRKWWRIOXZySjU4dV85M3hJMFhwOEVlaHlNNUZTVXI4bzYyZEpFUHhvV2lRZDVIanZHT085SnVzUXhPbzFFU3FwaHhKeThnazFfSUUzZVFEVjdUbVg1SlNoZ3BGc1hIMV9lU2tpTXBrT21JUXgzU0VIVVJkR3FxbWY2bmVYVi0wNNIB6AFBVV95cUxPY3diWUJqT0VLWmtQdFY1MWFQNUdGM3ZVck9Ra3hYOE1ubGJ6M3JTd2J2cHpBSlE5amh3cE1aVVd6YklaU2pKQjR2dDdlV3lMS09DOUd1YWY4S0Fmb1Eyck1UUWxycjBLYnFIMFloS0xCb2Y2RGR2NkFWb2VnN0dSQ1R5Umkyd0pqR0hPcE00a2tyT2M0N044Zk9JVDNvMXZjbDlvMU9RclMxcVNkRTV3NUhHNWVKZXZCREdObFh2dkk1aVZWb1l0T0lBRGt3czJGRGl4Ym9XOTliSC1JMHNNcjFRVUw3c1hI?oc=5",
-          "source": "Google News — China Economy / Trade",
+          "source": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPcmFIWVgxazJZQzFQVGticjQ0bm54Q05vbmR6U284SFFjYnFDUzFNS3JETEpHcXlNeDBWdzYxaEpOWjRzT2tHRGRXLUNyempDNlFXRWc5UTF5OHpfSEFtTlB1RWRKWWRIOXZySjU4dV85M3hJMFhwOEVlaHlNNUZTVXI4bzYyZEpFUHhvV2lRZDVIanZHT085SnVzUXhPbzFFU3FwaHhKeThnazFfSUUzZVFEVjdUbVg1SlNoZ3BGc1hIMV9lU2tpTXBrT21JUXgzU0VIVVJkR3FxbWY2bmVYVi0wNNIB6AFBVV95cUxPY3diWUJqT0VLWmtQdFY1MWFQNUdGM3ZVck9Ra3hYOE1ubGJ6M3JTd2J2cHpBSlE5amh3cE1aVVd6YklaU2pKQjR2dDdlV3lMS09DOUd1YWY4S0Fmb1Eyck1UUWxycjBLYnFIMFloS0xCb2Y2RGR2NkFWb2VnN0dSQ1R5Umkyd0pqR0hPcE00a2tyT2M0N044Zk9JVDNvMXZjbDlvMU9RclMxcVNkRTV3NUhHNWVKZXZCREdObFh2dkk1aVZWb1l0T0lBRGt3czJGRGl4Ym9XOTliSC1JMHNNcjFRVUw3c1hI?oc=5",
           "time": "2026-10-16T15:47:32Z"
-        },
-        {
-          "title": "The EU wants an AI revolution. But on whose terms?",
-          "url": "https://www.dw.com/en/the-eu-wants-an-ai-revolution-but-on-whose-terms/a-79673456?maca=en-rss-en-world-4025-xml-mrss",
-          "source": "https://www.dw.com/en/the-eu-wants-an-ai-revolution-but-on-whose-terms/a-79673456?maca=en-rss-en-world-4025-xml-mrss",
-          "time": "2026-10-16T13:12:00Z"
         }
       ],
       "sourceBacked": true
@@ -354,44 +354,56 @@
       "categoryCount": 1,
       "targetCount": 0,
       "evidenceCount": 94,
-      "lastEvidenceTime": "Thu, 08 Oct 2026 07:00:00 GMT",
+      "lastEvidenceTime": "Thu, 03 Sep 2026 07:02:12 GMT",
       "intensity": 35,
       "evidence": [
         {
-          "title": "Poland scrambles fighter jets as Russia strikes western Ukraine",
-          "url": "https://www.aljazeera.com/news/2026/10/16/poland-scrambles-fighter-jets-as-russia-strikes-western-ukraine?traffic_source=rss",
-          "source": "Al Jazeera",
-          "time": "2026-10-16T10:56:20Z"
+          "title": "Inside Ukrainian offensive pushing Russia back - with Starlink playing a key role",
+          "url": "https://www.bbc.co.uk/news/articles/cvx284w16z1po?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "time": "2026-10-16T16:00:30Z"
         },
         {
-          "title": "Relations with Ukraine - North Atlantic Treaty Organization | NATO",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOQlhJTWVrR21ySE5Fc1VGNXo5aFRwY09CcDlyRGhocjFJSHN2LU16VE5PNXVBTGNjdl9MV1Z2Um1BMk1XSU8tTHp6SUhZenlIT3p3bnFfTWpOSGstV3R4N2tWUGpVaTB5QnctdDl1Wi1zMTAyQjhhcVdyT2U1dy1FVEdZalFncjRmVi05c3I4OA?oc=5",
-          "source": "North Atlantic Treaty Organization | NATO",
-          "time": "Thu, 08 Oct 2026 07:00:00 GMT"
+          "title": "Madagascar marks one year since uprising as Russia’s influence grows",
+          "url": "https://www.rfi.fr/en/africa/20261016-madagascar-marks-one-year-since-uprising-as-russia-s-influence-grows",
+          "source": "RFI World",
+          "time": "2026-10-16T16:02:39Z"
         },
         {
-          "title": "Zelenskyy smiles when asked if Trump is treating him as a 'scapegoat' – video",
-          "url": "https://www.theguardian.com/world/video/2026/oct/16/zelenskyy-smiles-when-asked-if-trump-is-treating-him-as-a-scapegoat-video",
-          "source": "Guardian US",
-          "time": "2026-10-16T14:01:21Z"
+          "title": "Starlink access still not fully restored for Ukraine’s military, says Zelenskyy",
+          "url": "https://www.theguardian.com/world/2026/oct/16/ukraine-military-starlink-access-starshield-volodymyr-zelenskyy",
+          "source": "Guardian World",
+          "time": "2026-10-16T15:39:41Z"
+        },
+        {
+          "title": "Power plant attacks reflect Russian blueprint to make Ukrainian cities unlivable",
+          "url": "https://www.theguardian.com/world/2026/oct/16/attacks-on-ukraine-power-plants-show-russia-has-given-up-on-military-victory",
+          "source": "Guardian World",
+          "time": "2026-10-16T15:28:10Z"
         },
         {
           "title": "Ukraine advances in occupied Donetsk as Trump hands Putin diesel deal",
           "url": "https://www.aljazeera.com/news/2026/10/16/ukraine-repels-russian-forces-as-us-support-wavers-energy-strikes-escalate?traffic_source=rss",
-          "source": "Al Jazeera",
+          "source": "https://www.aljazeera.com/news/2026/10/16/ukraine-repels-russian-forces-as-us-support-wavers-energy-strikes-escalate?traffic_source=rss",
           "time": "2026-10-16T17:28:41Z"
+        },
+        {
+          "title": "Ukraine president targets Trump, Putin at EU summit",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/16/ukraine-president-targets-trump-putin-at-eu-summit?traffic_source=rss",
+          "source": "Al Jazeera",
+          "time": "2026-10-16T17:59:48Z"
         },
         {
           "title": "Ukraine civilian casualties surge as Russia intensifies strikes",
           "url": "https://www.stripes.com/theaters/europe/2026-10-16/ukraine-civilian-casualties-rise-23173114.html",
-          "source": "Stars and Stripes",
+          "source": "https://www.stripes.com/theaters/europe/2026-10-16/ukraine-civilian-casualties-rise-23173114.html",
           "time": "2026-10-16T14:14:17Z"
         },
         {
-          "title": "Poland scrambles fighter jets as Russia strikes western Ukraine - Al Jazeera",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNa0t1UU80NzZ6ZG5RYXBHRWwwbWhEN2ZCSUszVjFlMUR0cWpPa2NQNlVrU1dXZFd1alcwR2dtbWN3dGF4ZEd0cTZ0emd6YVRwWjUxd3B0VnpkSDUxeGxkMlpFVmMzZjhvUlFsamN5MXEzWWFkSVRZZ2h4Q0tzN2Y2akVkT0JRMUZhSVptbjdDSHJoVjg1QTJnRzR2dHdlaVNkVVNuQ3gxRk_SAa4BQVVfeXFMT29BVHBOSUtKZFhzak1xN3FZZGpZTkpWY0NtbVFkM2hxM0R4Q2sxcUdjZklDbGp3OTZCVEFGRkQybDYzWkw3Z29GcE5xdFdkUU9DZXlZS2VHbVFvM3BpUVVxa3J1eVhHeUh3d2g4a1dqS015bmhHNWdWcDJXNDRrYVdWRGpnWFZ4Mmd1QTFJckdlbjBUUzA5ZkdvUU84NkFjLUx6dUNabEVUNXJnWTh3?oc=5",
-          "source": "Google News — Iran Israel",
-          "time": "2026-10-16T11:12:41Z"
+          "title": "Taliban Envoy in Russia Calls Pakistan the Main Threat to Regional Security - خبرگزاری اطلس",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPSExoejhDN1NyaVpidU90MEFJWXJWTnI5ZWNrNGRoOWVCb0FYWWxkSmIyZnlKb3pVQ1Q4TkF5cUZqcXB0eGJGWGxJamhBeVVCaDVBUzB1UGdWbGhyUkROWWRFT28xRmZiMHFZMFpveF9kY0NQcENTMnF3UENMeTdNTTloVTctZ01VNk9RSG9lSFZHU0hVVy14Nw?oc=5",
+          "source": "Google News — Afghanistan Security",
+          "time": "2026-10-16T18:56:06Z"
         },
         {
           "title": "What was Russian Spy Chief doing in Kabul as Interior Minister met Pakistan’s Leaders in Islamabad? - Pakistan Observer",
@@ -464,18 +476,6 @@
           "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE41c2lucFRNejVBYlg3azU0RmNIeFdpbEt4cHpDNnByMmRCb0xPbVYtbHpZcDYtTEg2ZVJmYnZzUlJVZVljMHhFMlhJMWxfS3dJSXhDY2VrZGdwYklJb2tNWmZqV190QUhZUkpOenRDMW54YjVwaVNJZQ?oc=5",
           "source": "Google News RSS",
           "time": ""
-        },
-        {
-          "title": "Air Tanzania Suspends Flights to Russia Following Zelensky’s Airspace Warning - The Moscow Times",
-          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNYzhnc3JMdDFtSVAyVFV4UXdfVl83dzZiOHZaV2hnWXFmMDFEX0RldHZZS0RaUl9DWUlfaWZXM2ZjU0psNkVlV2ZrbG05TkdUUzFqY1VrMFM4NUdNUWNVM3RNMjJib2o2UlhRTzczWDFsSUNSdWxnc1FLZldudjBmN25oa2tMZDNGNUozdVlIZHR2Z2ZGR2dOSk93YXR5a1BsRV95T3QydkM2dmprYUhKZFNtc3czdXpWQmN2d1pSVi1SU28?oc=5",
-          "source": "Google News RSS",
-          "time": ""
-        },
-        {
-          "title": "Air Tanzania becomes first airline to halt flights to Russia after Zelenskyy warning - Al Arabiya English",
-          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNTXllUHlBRm82MVF0Z0xiel95aDlidGY4aHBvRjRyYUtKcWFORGY5bFVVUi1hQkJaMS1jMFptajM0UTFTMDFtRXJ0bzFZMEtacUN6dUJCS2dzNGZ5NGRRUEZmd1RZWHRCUlBCSHFkYVhHc3RRRDBaclAwcXdLcnFxWU9EZzk1eVplZDJyc3FnWUJOdjQzN0x3bEJoWjFuWXVfVW1aeEpfY2JkUURuRVRtMm42YWVQZVNUZ2dOZlc3a2Y4aWhfUnRPUTdyNWwtMUNFMHhSTGV0MNIB1wFBVV95cUxNTXllUHlBRm82MVF0Z0xiel95aDlidGY4aHBvRjRyYUtKcWFORGY5bFVVUi1hQkJaMS1jMFptajM0UTFTMDFtRXJ0bzFZMEtacUN6dUJCS2dzNGZ5NGRRUEZmd1RZWHRCUlBCSHFkYVhHc3RRRDBaclAwcXdLcnFxWU9EZzk1eVplZDJyc3FnWUJOdjQzN0x3bEJoWjFuWXVfVW1aeEpfY2JkUURuRVRtMm42YWVQZVNUZ2dOZlc3a2Y4aWhfUnRPUTdyNWwtMUNFMHhSTGV0MA?oc=5",
-          "source": "Google News RSS",
-          "time": ""
         }
       ],
       "sourceBacked": true
@@ -493,33 +493,39 @@
       "actionEvidenceCount": 0,
       "categoryCount": 1,
       "targetCount": 0,
-      "evidenceCount": 90,
+      "evidenceCount": 91,
       "lastEvidenceTime": "Fri, 03 Apr 2026 07:00:00 GMT",
       "intensity": 35,
       "evidence": [
         {
-          "title": "Houthi attacks on strategic Saudi assets threaten Riyadh's regional leadership and economic ambitions",
-          "url": "https://www.dw.com/en/houthi-attacks-on-strategic-saudi-assets-threaten-riyadh-s-regional-leadership-and-economic-ambitions/a-79680200?maca=en-rss-en-world-4025-xml-mrss",
-          "source": "DW World",
-          "time": "2026-10-16T14:03:00Z"
-        },
-        {
-          "title": "Missiles, drones and smuggled weapons: How the Houthis keep striking back - Malay Mail",
-          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQclFvWURxQU1rRGMyNUVKUjJWSTZyZ2htRzFzYXdRcXBLLS04RmFkSVliWlZMR1JXWlJlMTVjZWFGNFJYcG55M1h3WU9aMi1NWjFZbXE3SnhhZHZ4cEZRTlFZTGxjTjVNa2Z6VTZqRURVeUxMcWNKdTVRNXBUVVJtb2hQcFVKaTJqX1hDUklKYkUtZnlvTllhOGtTTzVEU3RjYVN6dzk2X0pUMjgwSm1wN2ZJUllZekhOX3RFel9tc0NNOUxkYlhYWnZR0gHKAUFVX3lxTFByUW9ZRHFBTWtEYzI1RUpSMlZJNnJnaG1HMXNhd1FxcEstLThGYWRJWWJaVkxHUldaUmUxNWNlYUY0UlhwbnkzWHdZT1oyLU1aMVltcTdKeGFkdnhwRlFOUVlMbGNONU1rZnpVNmpFRFV5TExxY0p1NVE1cFRVUm1vaFBwVUppMmpfWENSSUpiRS1meW9OWWE4a1NPNURTdGNhU3p3OTZfSlQyODBKbXA3ZklSWVl6SE5fdEV6X21zQ005TGRiWFhadlE?oc=5",
+          "title": "Houthi missile ambitions challenge Saudi air defenses and infrastructure - domain-b.com",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOUWpfS0RqcVZwWTdhbGh3Wm13YzlyaVBUNU5YMTRTMlhvcWg5Y3phdGpiMEZSQTF2eFZHdURoQVNoUk1EVGRFZ3paTlRlanhHaXByUnM1YUUxcXlweGpLejVqVG9ReEV6WG1odUtNc0lGWkwtRjlzTEdMN1Bqd1dFOEFJMlN6X0RoN19xYnVGdmtnYjFGMXB0WXhHODlDZWtiT3FmUG5peXRBVTVJZm9KSlpqUTTSAbQBQVVfeXFMTlFqX0tEanFWcFk3YWxod1ptd2M5cmlQVDVOWDE0UzJYb3FoOWN6YXRqYjBGUkExdnhWR3VEaEFTaFJNRFRkRWd6Wk5UZWp4R2lwclJzNWFFMXF5cHhqS3o1alRvUXhFelhtaHVLTXNJRlpMLUY5c0xHTDdQandXRThBSTJTel9EaDdfcWJ1RnZrZ2IxRjFwdFl4Rzg5Q2VrYk9xZlBuaXl0QVU1SWZvSkpaalE0?oc=5",
           "source": "Google News — Yemen / Red Sea",
-          "time": "2026-10-16T13:07:50Z"
+          "time": "2026-10-16T14:57:02Z"
         },
         {
-          "title": "Human Rights Organization Warns of Humanitarian Catastrophe in Taiz Over Houthi Siege - www.sabanew.net",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE4wWlpOTldGcndrVVpRNUJLWXlEMWhZOXpKYzEtLVNDS0tuTjM3aHNRc1YyUGJBeEx5RjVzcnZpanpxSWE1UjJ4MHVmMWRONmdQ?oc=5",
-          "source": "Google News — Humanitarian",
-          "time": "2026-10-16T14:04:02Z"
+          "title": "Houthi Missiles Hit Yemen's Presidential Palace — 5 Dead, PM Survives - Latin Times",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNY0tUN2NxaHhldk5PTTBwcHFFbzlwRG5JdDJoS0FZU2JVUExsdjRUQjRCbmhSdVJFNGxIVTVIZV9YbGpsNEFBRl9wVkhyc1VLSl85RTRQS0RlM083VUxPQTFhenFES3hZcU5jTzZERW8tYmxuTG1rUy1RTFdjeUVoa2pmUnk3OENISVlTTWxabDBoUmUxNDY1MHdhT0M1VDRC?oc=5",
+          "source": "Google News — Iran Israel",
+          "time": "2026-10-16T20:49:26Z"
         },
         {
-          "title": "Ships in Strait of Hormuz still face \"indiscriminate attacks,\" maritime monitor warns - CBS News",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQT1N6LVU4X3R3a3ljSC1KY3BYOGI1bFVCWjA0bnM1WjE2eDRZQW43VVUxMnhFbThpcDdGSUdneU03ZFFjeFFmVWczeDVaelRBeXZGekhFdmNxeWZzUHlHNUpseS0tN09GMWtkSzB2WnJEV3ZnUXhqQnlyMEY3VVl0bA?oc=5",
-          "source": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQT1N6LVU4X3R3a3ljSC1KY3BYOGI1bFVCWjA0bnM1WjE2eDRZQW43VVUxMnhFbThpcDdGSUdneU03ZFFjeFFmVWczeDVaelRBeXZGekhFdmNxeWZzUHlHNUpseS0tN09GMWtkSzB2WnJEV3ZnUXhqQnlyMEY3VVl0bA?oc=5",
-          "time": "2026-10-16T10:31:00Z"
+          "title": "US-Israel-Iran War Latest Live News: Tanker Carrying 15 Indian Seafarers Hit in Strait of Hormuz, Trump Signals Possible Iran Nuclear Site Strike - The Sunday Guardian",
+          "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxNS3dNc3BjRllsTU50NWxrcEtEV1RIX3ZmUGloQmF3dVBROFp6a0VzYzd0SGdBbU1fdUJwY3NoZ0w3UDRURjdJWUhRZVVQRzZ0eEhwalZncDJDbDItc1dNTGZTcjRDZmI3Y0k1WERtbzJlZnNjWWJTWkdOWlBFMUNpUjdKdXQzYW1jdG04NUZ5OGlxeXludy1WR1o4N2lkNHptZHFHOENoMDVuR1JaVnZiVVAwQVE4OUFkeFlGeE5oN0I3VDFudk9YQ3RxVHp6NXVCOFZ1VjFUc2M3SW9NYnY5VS1HZTc0dXZERTZwVUt0VmZDeUROYTNCeWR3MjYzXzNHZDRGQVFWbnFYZ25xWnRra25XVUY0QWw0dHZnSNIBnAJBVV95cUxNS3dNc3BjRllsTU50NWxrcEtEV1RIX3ZmUGloQmF3dVBROFp6a0VzYzd0SGdBbU1fdUJwY3NoZ0w3UDRURjdJWUhRZVVQRzZ0eEhwalZncDJDbDItc1dNTGZTcjRDZmI3Y0k1WERtbzJlZnNjWWJTWkdOWlBFMUNpUjdKdXQzYW1jdG04NUZ5OGlxeXludy1WR1o4N2lkNHptZHFHOENoMDVuR1JaVnZiVVAwQVE4OUFkeFlGeE5oN0I3VDFudk9YQ3RxVHp6NXVCOFZ1VjFUc2M3SW9NYnY5VS1HZTc0dXZERTZwVUt0VmZDeUROYTNCeWR3MjYzXzNHZDRGQVFWbnFYZ25xWnRra25XVUY0QWw0dHZnSA?oc=5",
+          "source": "Google News — Yemen / Red Sea",
+          "time": "2026-10-16T19:03:18Z"
+        },
+        {
+          "title": "Houthis Strike Yemen's Presidential Palace as Saudi Arabia Reports Attacks - Haaretz",
+          "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNQXlpa2RRaWVIUlQyWjY2dDR3YWdoTXl5VzV6djZPT2RhVnR6QTVYclMtMk5ZcmxaOXRuSUxTOG80TVBlQ2JDaG5raFNWZEZqc1l2cTZHMXRCVS1ya203Y1A5YVBYNjhmYmFSNEtGZDJlcF8zcU1jbUxsbm4teE1SSzRxXzZMaV9lQVlESXZEQzJsR19EYlZ1SnFlU3k2MzBtSjZneHlSZUFsMnc5TktWSXJ1NkwtTWpZQ1VVUkI5MndqQk5JSEJBWXV5bEp0R3B5S0tuOXVvZ05jR1MybkJ0dlVWd1JBVzE5VndYeHFLUEtYOG4wUGdJT3RtZ1M1b2M?oc=5",
+          "source": "Google News — Iran Israel",
+          "time": "2026-10-16T19:37:00Z"
+        },
+        {
+          "title": "Saudi Arabia says Houthi attacks violate terms of rapprochement with Iran - Middle East Eye",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQOUpxeGduTThCLVNjLWsyQTRWME52eEtENkhUMkQycXJQVUJIMTJ2RHdjRzFYQWRTYjVrZ0oyRTNISHQ2V2o0WERwZ0t1YV9WeHVGcExhd1hLWkEyQWE2eTFRS2l6bEhiWndkZ0hNcDhIdEc0UXNVa1laa2ZtR05XRVJHcFZpWFp0UWRJdHZwWUZIelA4Vk1LTXNLbzQ3NGthNHc?oc=5",
+          "source": "Google News — Iran Israel",
+          "time": "2026-10-16T19:32:47Z"
         },
         {
           "title": "Strait of Hormuz reflects deeper crisis as freedom of the seas fades - TradeWinds News",
@@ -610,12 +616,6 @@
           "url": "https://www.cfr.org/global-conflict-tracker/conflict/war-yemen",
           "source": "Council on Foreign Relations — Global Conflict Tracker",
           "time": ""
-        },
-        {
-          "title": "Suez Canal",
-          "url": "https://www.suezcanal.gov.eg/",
-          "source": "Guerilla Map Strategic Reference",
-          "time": ""
         }
       ],
       "sourceBacked": true
@@ -633,14 +633,14 @@
       "actionEvidenceCount": 0,
       "categoryCount": 1,
       "targetCount": 0,
-      "evidenceCount": 90,
+      "evidenceCount": 88,
       "lastEvidenceTime": "Wed, 17 Dec 2025 08:00:00 GMT",
       "intensity": 35,
       "evidence": [
         {
           "title": "Ukraine advances in occupied Donetsk as Trump hands Putin diesel deal",
           "url": "https://www.aljazeera.com/news/2026/10/16/ukraine-repels-russian-forces-as-us-support-wavers-energy-strikes-escalate?traffic_source=rss",
-          "source": "Al Jazeera",
+          "source": "https://www.aljazeera.com/news/2026/10/16/ukraine-repels-russian-forces-as-us-support-wavers-energy-strikes-escalate?traffic_source=rss",
           "time": "2026-10-16T17:28:41Z"
         },
         {
@@ -773,27 +773,33 @@
       "actionEvidenceCount": 0,
       "categoryCount": 1,
       "targetCount": 0,
-      "evidenceCount": 89,
+      "evidenceCount": 86,
       "lastEvidenceTime": "Tue, 07 Apr 2026 07:00:00 GMT",
       "intensity": 35,
       "evidence": [
         {
-          "title": "Poland scrambles fighter jets as Russia strikes western Ukraine",
-          "url": "https://www.aljazeera.com/news/2026/10/16/poland-scrambles-fighter-jets-as-russia-strikes-western-ukraine?traffic_source=rss",
-          "source": "Al Jazeera",
-          "time": "2026-10-16T10:56:20Z"
+          "title": "Inside Ukrainian offensive pushing Russia back - with Starlink playing a key role",
+          "url": "https://www.bbc.co.uk/news/articles/cvx284w16z1po?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "time": "2026-10-16T16:00:30Z"
+        },
+        {
+          "title": "Madagascar marks one year since uprising as Russia’s influence grows",
+          "url": "https://www.rfi.fr/en/africa/20261016-madagascar-marks-one-year-since-uprising-as-russia-s-influence-grows",
+          "source": "RFI World",
+          "time": "2026-10-16T16:02:39Z"
         },
         {
           "title": "Ukraine civilian casualties surge as Russia intensifies strikes",
           "url": "https://www.stripes.com/theaters/europe/2026-10-16/ukraine-civilian-casualties-rise-23173114.html",
-          "source": "Stars and Stripes",
+          "source": "https://www.stripes.com/theaters/europe/2026-10-16/ukraine-civilian-casualties-rise-23173114.html",
           "time": "2026-10-16T14:14:17Z"
         },
         {
-          "title": "Poland scrambles fighter jets as Russia strikes western Ukraine - Al Jazeera",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNa0t1UU80NzZ6ZG5RYXBHRWwwbWhEN2ZCSUszVjFlMUR0cWpPa2NQNlVrU1dXZFd1alcwR2dtbWN3dGF4ZEd0cTZ0emd6YVRwWjUxd3B0VnpkSDUxeGxkMlpFVmMzZjhvUlFsamN5MXEzWWFkSVRZZ2h4Q0tzN2Y2akVkT0JRMUZhSVptbjdDSHJoVjg1QTJnRzR2dHdlaVNkVVNuQ3gxRk_SAa4BQVVfeXFMT29BVHBOSUtKZFhzak1xN3FZZGpZTkpWY0NtbVFkM2hxM0R4Q2sxcUdjZklDbGp3OTZCVEFGRkQybDYzWkw3Z29GcE5xdFdkUU9DZXlZS2VHbVFvM3BpUVVxa3J1eVhHeUh3d2g4a1dqS015bmhHNWdWcDJXNDRrYVdWRGpnWFZ4Mmd1QTFJckdlbjBUUzA5ZkdvUU84NkFjLUx6dUNabEVUNXJnWTh3?oc=5",
-          "source": "Google News — Iran Israel",
-          "time": "2026-10-16T11:12:41Z"
+          "title": "Taliban Envoy in Russia Calls Pakistan the Main Threat to Regional Security - خبرگزاری اطلس",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPSExoejhDN1NyaVpidU90MEFJWXJWTnI5ZWNrNGRoOWVCb0FYWWxkSmIyZnlKb3pVQ1Q4TkF5cUZqcXB0eGJGWGxJamhBeVVCaDVBUzB1UGdWbGhyUkROWWRFT28xRmZiMHFZMFpveF9kY0NQcENTMnF3UENMeTdNTTloVTctZ01VNk9RSG9lSFZHU0hVVy14Nw?oc=5",
+          "source": "Google News — Afghanistan Security",
+          "time": "2026-10-16T18:56:06Z"
         },
         {
           "title": "M5.5 earthquake — 156 km E of Kuril’sk, Russia",
@@ -890,12 +896,6 @@
           "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNeXNFZ18tTk9SUHVRa0cwSlpWS1JoWnFmNUxuMzBvR1dVNmxzcVhuQm44WFZmanNuX2NTdlpiaHNta0x4eEI0c2xHbFhDUlNuaG0xaHd0dzZ3SnZRNHNseGhxcHUzU3kxUkx2c0FDRkotRDNvUGZnUFRMZTJFZklUNGx0TnVkVXBCX0JuWWRmUklhOXpMLVRTN2N1V2I4TUxkOHhnRXNvUEtYdnhfSjduYi1tTWpKNGdkM0lNUktsZklWVDMwZXfSAcwBQVVfeXFMTUZCNDI4Nk1yRXpHU1J2UkVIaFBXcWRxUTdTRXRBaTFVc1dTWWNDeWJ5NWNDdmo2aUYycTgteDFYUXowNUJqWTdYeW04UTBrc0hiRjVOR0xwLVhtb19qNWw1WDR1RDgtcklBWlZnVlBHTllQRDQ4bkVSMlJIeS1YZVZxeFNIb3RZUFZLY0JFOVFvZF9ER1BIelFqekRncXNSczI4MmpVNjU1bXlrT3VZZXJXR1pVdkhseWJWdDJhbWxFVDJzTGNTcTVUakZR?oc=5",
           "source": "Google News RSS",
           "time": ""
-        },
-        {
-          "title": "Indonesia investigates reports of 8 citizens fighting in Russia’s war against Ukraine - South China Morning Post",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQQnBOZlZCZk5FQlZCMVVsNmsyNFlPTzNzSFpaazNsbUlUeUE5NWVuUHJKaWRlaXFLc3g3RG9OSi1lYkxFa1gwUmV6Z3JVaVMtUGZRMHdTOWFvX3ZQN21vam5xR1l3MmtaMVJRN0NDNTQ1ZnRGWWlBTDBtZFQtb2FVa0s1RUdGeW1tNk5uVy1GMEgwRTVqUkxuUkk5R2hsMkU5TFZTTlpMQ0ZYdEVTekVSQVNuT0pDWmczdFE?oc=5",
-          "source": "Google News RSS",
-          "time": ""
         }
       ],
       "sourceBacked": true
@@ -913,39 +913,39 @@
       "actionEvidenceCount": 0,
       "categoryCount": 1,
       "targetCount": 0,
-      "evidenceCount": 87,
+      "evidenceCount": 83,
       "lastEvidenceTime": "Wed, 03 Jun 2026 07:00:00 GMT",
       "intensity": 35,
       "evidence": [
         {
-          "title": "Live Updates: War returns to Iran with Israel, US strikes - Dawn",
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE4wWU1XcTJjVkhydDJ6REhTa1RGZHp5eHJhYXVpQlRoNndhUjBOamFNWlRERkdMYk53LWc4LVhDbktnSXZ3RkJyWmtEMEgycjRFNmJN?oc=5",
-          "source": "Google News — Global Conflict",
-          "time": "2026-10-16T11:39:56Z"
-        },
-        {
-          "title": "White House official: Iran's 'new potential leadership' suggests it's open to talks and Trump says he's 'eventually' willing - PBS",
-          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOQklMUW1sUXV0S2p4TWhVb0tjRThiN1VpYklGN1FJMlhaSnk3eEQ4RmpEV3E1dndVM1B1NUhuU3QwUnlXeE9sOVBnX3VKVjJ1S3FVaUNaTkZ5V1ZIdFFpT0NPX0ZKTmF5UmdmRTJ0QVhTUXpQaGg4OUdvWEJNWXlNLTBoTm8yOXpGeEhxdmJKZHN2T3ZPSTk2ZXBZZEFUMkl2czg3SHdxc1BiTFZZSUFpdW5DZHNtdHREd0RENnJYUGoxaHdZanJOZjZqZ2Z5UGlOUnhWR3ByNGI3QXpYLXdQcEo0VGt0QQ?oc=5",
-          "source": "PBS",
-          "time": "Sun, 01 Mar 2026 08:00:00 GMT"
-        },
-        {
-          "title": "Israel Prepares For Iran-Lebanon Strikes As Saudi Airspace Closes Under Missile Threats - ScheerPost",
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPd1NneEd0Rno0TTAxTWlIYkhpcHYtaHVObTljb0FPMl83Y09xUmlJcVRvd2ptOUp2Rld6OTdxN0U3SW5yYWhJZmhYTGs2OVFtd2FNLWRYQmpIdl83TkRIQkYtTjVZNjBKV3pyQjNWZEJUbzZaM09HcEl5UHlVbEFQY2VwRDE3SWJJeEgxYkJkTXRNQTM0SDVwdGlLbEl1SHktN3RTR2FnNjNkV1ZUOFlLdzJKQ2tfZTduVGUySmxVYw?oc=5",
-          "source": "Google News — Middle East Security",
-          "time": "2026-10-16T12:58:24Z"
-        },
-        {
-          "title": "Trump rules out using a nuclear bomb on Iran: Why that matters",
-          "url": "https://www.aljazeera.com/news/2026/10/16/trump-rules-out-using-a-nuclear-bomb-on-iran-why-that-matters?traffic_source=rss",
+          "title": "Iran’s president condemns environmental impact of war in Middle East",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/16/irans-president-condemns-environmental-impact-of-war-in-middle-eas?traffic_source=rss",
           "source": "Al Jazeera",
-          "time": "2026-10-16T10:21:12Z"
+          "time": "2026-10-16T16:45:03Z"
         },
         {
-          "title": "The Victory of Asymmetry in the Iran War - Council on Foreign Relations",
-          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE43OUIxMHNwSW04WUVCMm9kdjd0MDBNWjBaeWl1aWZqT3VEODFEamJiWHRsRHBBQ1Q2eVFYRGdsbFVmb1cwRjZDN3JyZWpOQjhBbEdmVWNfVEgycV9uREtJMEYwMzdSaDJZb3E2UUgxeFgyMVhkT3V2OA?oc=5",
+          "title": "How War is Reshaping Iran’s “Axis of Resistance” - International Crisis Group",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOV3h1NUkwM1VnR3lRQzV2WnVhVm52RnotSURwRVMxVUFucDVZeTNXRDNZczNaNGFsSlFvcmUtSmNrbFYtSGhBQTBXU3V6cFg0cEszUnVzZ1BWOW9TNGtBZkxWRjlQeDNBRjVSQ2RMLTF6QTNTVVFraUh5ZVZ3NVEzMzJ5NV9qbHhoWEhhclpGMVd6VUFzVkpNdE5ldGtxbDlNa0ZN?oc=5",
+          "source": "Google News — Middle East Security",
+          "time": "2026-10-16T16:13:40Z"
+        },
+        {
+          "title": "From Proxy War to Direct Deterrence: Is Iran Redefining Its Regional Strategy? - Geopolitical Monitor",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5fc09tRjdYRmQyRzdSM3d4RGlwdUVPM1lSb1hLLU5JMzVBSmcxQjNDQUk2Ymo0Q0FiOEVKZFM1cHdoZ0gtSE44ejdHYzlXY0RvdlgxVEZDU1laQUJBTU9ETXp4eG1GeG9KMGd5SEd0ZUFub1loNmp0RlBHUGc5N2s?oc=5",
+          "source": "Google News — Middle East Security",
+          "time": "2026-10-16T11:40:47Z"
+        },
+        {
+          "title": "US-Israel-Iran War Latest Live News: Tanker Carrying 15 Indian Seafarers Hit in Strait of Hormuz, Trump Signals Possible Iran Nuclear Site Strike - The Sunday Guardian",
+          "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxNS3dNc3BjRllsTU50NWxrcEtEV1RIX3ZmUGloQmF3dVBROFp6a0VzYzd0SGdBbU1fdUJwY3NoZ0w3UDRURjdJWUhRZVVQRzZ0eEhwalZncDJDbDItc1dNTGZTcjRDZmI3Y0k1WERtbzJlZnNjWWJTWkdOWlBFMUNpUjdKdXQzYW1jdG04NUZ5OGlxeXludy1WR1o4N2lkNHptZHFHOENoMDVuR1JaVnZiVVAwQVE4OUFkeFlGeE5oN0I3VDFudk9YQ3RxVHp6NXVCOFZ1VjFUc2M3SW9NYnY5VS1HZTc0dXZERTZwVUt0VmZDeUROYTNCeWR3MjYzXzNHZDRGQVFWbnFYZ25xWnRra25XVUY0QWw0dHZnSNIBnAJBVV95cUxNS3dNc3BjRllsTU50NWxrcEtEV1RIX3ZmUGloQmF3dVBROFp6a0VzYzd0SGdBbU1fdUJwY3NoZ0w3UDRURjdJWUhRZVVQRzZ0eEhwalZncDJDbDItc1dNTGZTcjRDZmI3Y0k1WERtbzJlZnNjWWJTWkdOWlBFMUNpUjdKdXQzYW1jdG04NUZ5OGlxeXludy1WR1o4N2lkNHptZHFHOENoMDVuR1JaVnZiVVAwQVE4OUFkeFlGeE5oN0I3VDFudk9YQ3RxVHp6NXVCOFZ1VjFUc2M3SW9NYnY5VS1HZTc0dXZERTZwVUt0VmZDeUROYTNCeWR3MjYzXzNHZDRGQVFWbnFYZ25xWnRra25XVUY0QWw0dHZnSA?oc=5",
+          "source": "Google News — Yemen / Red Sea",
+          "time": "2026-10-16T19:03:18Z"
+        },
+        {
+          "title": "Saudi Arabia says Houthi attacks violate terms of rapprochement with Iran - Middle East Eye",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQOUpxeGduTThCLVNjLWsyQTRWME52eEtENkhUMkQycXJQVUJIMTJ2RHdjRzFYQWRTYjVrZ0oyRTNISHQ2V2o0WERwZ0t1YV9WeHVGcExhd1hLWkEyQWE2eTFRS2l6bEhiWndkZ0hNcDhIdEc0UXNVa1laa2ZtR05XRVJHcFZpWFp0UWRJdHZwWUZIelA4Vk1LTXNLbzQ3NGthNHc?oc=5",
           "source": "Google News — Iran Israel",
-          "time": "2026-10-16T16:56:08Z"
+          "time": "2026-10-16T19:32:47Z"
         },
         {
           "title": "Oil prices set for 8 per cent weekly gain on fresh US-Iran hostilities - The Eastleigh Voice",
@@ -1041,11 +1041,11 @@
       "sourceBacked": true
     },
     {
-      "actor": "Ukraine",
-      "signal": "Ukraine has source-backed intelligence activity",
-      "category": "energy",
+      "actor": "Markets",
+      "signal": "Markets has source-backed intelligence activity",
+      "category": "economic",
       "categories": {
-        "energy": 1
+        "economic": 1
       },
       "dominantTarget": "",
       "topTargets": [],
@@ -1053,129 +1053,129 @@
       "actionEvidenceCount": 0,
       "categoryCount": 1,
       "targetCount": 0,
-      "evidenceCount": 87,
-      "lastEvidenceTime": "Tue, 24 Dec 2024 08:00:00 GMT",
+      "evidenceCount": 80,
+      "lastEvidenceTime": "Wed, 11 Mar 2026 07:00:00 GMT",
       "intensity": 35,
       "evidence": [
         {
-          "title": "Poland scrambles fighter jets as Russia strikes western Ukraine",
-          "url": "https://www.aljazeera.com/news/2026/10/16/poland-scrambles-fighter-jets-as-russia-strikes-western-ukraine?traffic_source=rss",
-          "source": "Al Jazeera",
-          "time": "2026-10-16T10:56:20Z"
+          "title": "Republicans turn on Donald Trump’s tariffs in battle for ‘political survival’ - Financial Times",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOWEZ5aWNuTFRWSnBoRkFoZ01RSEhkWmtIUmc0VjdUOU9RLW50RnVudUhIcGtUTG5oU3llbGt3MXBzaFRSX01MVDRtSi00aUx4a0xINktTbmpkVkZkSFFOVFZ3N1Q4MkZfYzNzYjhIR3hUYURIU243NHN3SUJmd0ZJSExBdWI?oc=5",
+          "source": "Google News — U.S. Politics",
+          "time": "2026-10-16T10:00:09Z"
         },
         {
-          "title": "Relations with Ukraine - North Atlantic Treaty Organization | NATO",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOQlhJTWVrR21ySE5Fc1VGNXo5aFRwY09CcDlyRGhocjFJSHN2LU16VE5PNXVBTGNjdl9MV1Z2Um1BMk1XSU8tTHp6SUhZenlIT3p3bnFfTWpOSGstV3R4N2tWUGpVaTB5QnctdDl1Wi1zMTAyQjhhcVdyT2U1dy1FVEdZalFncjRmVi05c3I4OA?oc=5",
-          "source": "North Atlantic Treaty Organization | NATO",
-          "time": "Thu, 08 Oct 2026 07:00:00 GMT"
+          "title": "Israeli settlers attack Palestinians in West Bank during olive harvest",
+          "url": "https://www.bbc.co.uk/news/videos/cqn06zx2r15jo?at_medium=RSS&at_campaign=rss",
+          "source": "https://www.bbc.co.uk/news/videos/cqn06zx2r15jo?at_medium=RSS&at_campaign=rss",
+          "time": "2026-10-16T11:40:41Z"
         },
         {
-          "title": "Ukraine advances in occupied Donetsk as Trump hands Putin diesel deal",
-          "url": "https://www.aljazeera.com/news/2026/10/16/ukraine-repels-russian-forces-as-us-support-wavers-energy-strikes-escalate?traffic_source=rss",
-          "source": "Al Jazeera",
-          "time": "2026-10-16T17:28:41Z"
+          "title": "Israeli settlers beat Palestinians and a U.S. photojournalist in West Bank attacks",
+          "url": "https://www.npr.org/2026/10/16/nx-s1-6004904/israeli-settlers-beat-us-photojournalist-washington-post-west-bank",
+          "source": "https://www.npr.org/2026/10/16/nx-s1-6004904/israeli-settlers-beat-us-photojournalist-washington-post-west-bank",
+          "time": "2026-10-16T15:57:27Z"
         },
         {
-          "title": "Ukraine civilian casualties surge as Russia intensifies strikes",
-          "url": "https://www.stripes.com/theaters/europe/2026-10-16/ukraine-civilian-casualties-rise-23173114.html",
-          "source": "Stars and Stripes",
-          "time": "2026-10-16T14:14:17Z"
+          "title": "Palestinians and US journalist injured by Israeli settlers in West Bank harvest attack",
+          "url": "https://www.bbc.co.uk/news/articles/c65ynk7212vqo?at_medium=RSS&at_campaign=rss",
+          "source": "https://www.bbc.co.uk/news/articles/c65ynk7212vqo?at_medium=RSS&at_campaign=rss",
+          "time": "2026-10-16T14:31:04Z"
         },
         {
-          "title": "Poland scrambles fighter jets as Russia strikes western Ukraine - Al Jazeera",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNa0t1UU80NzZ6ZG5RYXBHRWwwbWhEN2ZCSUszVjFlMUR0cWpPa2NQNlVrU1dXZFd1alcwR2dtbWN3dGF4ZEd0cTZ0emd6YVRwWjUxd3B0VnpkSDUxeGxkMlpFVmMzZjhvUlFsamN5MXEzWWFkSVRZZ2h4Q0tzN2Y2akVkT0JRMUZhSVptbjdDSHJoVjg1QTJnRzR2dHdlaVNkVVNuQ3gxRk_SAa4BQVVfeXFMT29BVHBOSUtKZFhzak1xN3FZZGpZTkpWY0NtbVFkM2hxM0R4Q2sxcUdjZklDbGp3OTZCVEFGRkQybDYzWkw3Z29GcE5xdFdkUU9DZXlZS2VHbVFvM3BpUVVxa3J1eVhHeUh3d2g4a1dqS015bmhHNWdWcDJXNDRrYVdWRGpnWFZ4Mmd1QTFJckdlbjBUUzA5ZkdvUU84NkFjLUx6dUNabEVUNXJnWTh3?oc=5",
-          "source": "Google News — Iran Israel",
-          "time": "2026-10-16T11:12:41Z"
+          "title": "Fuel tanker fire engulfs market in southern Nigeria",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/16/fuel-tanker-fire-engulfs-market-in-southern-nigeria?traffic_source=rss",
+          "source": "https://www.aljazeera.com/video/newsfeed/2026/10/16/fuel-tanker-fire-engulfs-market-in-southern-nigeria?traffic_source=rss",
+          "time": "2026-10-16T12:23:12Z"
         },
         {
-          "title": "Ukraine Says Russian Attack On Security Service Headquarters ‘Major Escalation’ - Ommcom News",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQUnVxZDF3dDlqOHFFYVZlMHZCS0s0QnhLNmxXSlY4R3lSay1XVENaS3hCeTBMTmx3LWo5MERCREwzQ1M0SENzWmJKb19xLW9SeDB0eDhwUE95Tm9EODFyTUFidEZDM3VyZVFkaVZaWUgtQU5aRTFkUlVsQ3o0cnVuUEpqUE5jOERxY2Z1YUtlZUJSejJtRmh3LXlkVndFVDE5YzVoQ0FoYlRISk1la3JScTFR?oc=5",
+          "title": "21 killed in South Sudan clashes - The Financial Express",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNTTdDcW1UQVpXbktkUGZoN0Y2VEt0cUVBY0M3WWFBN0FRSkc1OFA5TTA1OFY5RkZoRy01ZnZQUGo4U2V5UTNIbll4Tk9jRFZwMzZDYzFGbU9yWUVPdnlSVEZIS3NRQ3FheUVzNGpsSm0wTWFxMDlIZTdYYktzLXR5NDNzcXN1STA?oc=5",
           "source": "Google News RSS",
           "time": ""
         },
         {
-          "title": "U.S. President Trump demands Europe repay billions in Ukraine aid as African nations push back against U.S. aid tied to critical minerals - Business Insider Africa",
-          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQTVhUWkM1TWE2SDVDZUkxWlhSTXU3ODNKVEo3dHB0VmQ0T3ZrN09HLU9PUDV4YUxhSC1RRnpRSFJFNWxSeXN4U2JES1luZEExQ2JXc19Za2dYWW9VcHZhWGlNRGVXa1BmWXdiU2pmME5DZ0NKNTlfMUNtWHdibkVKa0dmN0gyOEl6ODZ2OG1xZDRwN0FIMWhlWDhIaE02MGp0SDViUVFob1Rmb0p6MlhMMEtzTDAyZVBkUDN1LVVfWGJxWEtXdFhuMmhJLWxRcFNPNDh4X3dR?oc=5",
+          "title": "World Bank removes Zimbabwe from fragile economies list - APAnews - Agence de Presse Africaine",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNTmtSU0FnMGs1bV84dExVR0FRbnIwNDBRLXM2ZEhkMnpqTHl0X0RrOG9Ea3ZucTBNellEZ2dQcDBpU3o3NzBxd3BmRnVaMVNNYk5aaFdZMmR2U0xTRVBkZnB3TXh4N3JlUzZ5dUhVVTlHMWRueHUxY1hhWW41Yy1odmln?oc=5",
           "source": "Google News RSS",
           "time": ""
         },
         {
-          "title": "India in continuous touch with Ukraine and Russia to help end the conflict: Jaishankar - The Hindu",
-          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNX3g1cDBWUThtWUM1SmcwdllpQU5RemlyUm9vdkVuNm11blVOVVRaTUpRMzQ0U2x6aUJaOVJJTHRBN1NLbE9IaXZrWWxROXl0WTdQZWd0MnpHakhWZ3JJQnNPU1NLSTBHOE1zcEM1NnRnc3QxQmRxUDRqMy1ValNUMWE4TG1fUjhlYlBMQjRXYnZTczU0VEZhYzdWaF94bW5zSDl5WkR3ZE5rb002cjVpbWpYbjhwem54RzZCYlVGekVZeXVkaFl4aWIyQ2t4UTBwMXo1eE9DRHctNVlq0gHjAUFVX3lxTE1DdmVyelZPZ1l4WFNSMmJEUzhyR1R4Vm8zdGV4WjNuRy1ub2NTYjNzMUhvX2ZtZTFfdHVmRXVZTHhTYWw0LTY2VTczMzZ3WVZSVS1LUzB1cWZiUmpseEF3RmtxYkhVNmpiWGFRVnRjNVo0RmxfaFgzX01YbTZMVkdpOVVjTDRjRUI0NmlKdUpWNmF3OUlzcXpqZnM0UUo5b3Y5bktCNjRSX3FVVDNnNi1faExzUk5UVnJhemRoZGdpU1JTWUlCdGNCMjF2UXJBU2pILWxCS2ZBNWNVX3dSMTU2UG9r?oc=5",
+          "title": "Jailed banker Vorcaro’s web of powerful contacts puts Brazil’s top court in spotlight - Malay Mail",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQT3JOZEVOWTB5Z1pOQTNhd0l0dW5NLUVwQUxsZFc0aEpaSl9OZDlGc0htYVJ5QkhiQ0FNMXIwZDdEOUxfTHFRTE1kWV9OcXFKdUwxUk5Hc1BpcWdfYlNMSkNPQWVVbnNkS0tSZDBaMXJ1QkpWbE41Mkt5QjU0am56UkJNRkgzd2pETk10QVVZNU5DcW5Tbkl5T0d6eHlyRjc2dGoyNGx4b1UxZG8wa1ZjYTZrRThHcHlVSVRqS0t0QW9EZDYwY1A3NGtzLWgtckpTWWV1c2wzZFVTd9IB2gFBVV95cUxQT3JOZEVOWTB5Z1pOQTNhd0l0dW5NLUVwQUxsZFc0aEpaSl9OZDlGc0htYVJ5QkhiQ0FNMXIwZDdEOUxfTHFRTE1kWV9OcXFKdUwxUk5Hc1BpcWdfYlNMSkNPQWVVbnNkS0tSZDBaMXJ1QkpWbE41Mkt5QjU0am56UkJNRkgzd2pETk10QVVZNU5DcW5Tbkl5T0d6eHlyRjc2dGoyNGx4b1UxZG8wa1ZjYTZrRThHcHlVSVRqS0t0QW9EZDYwY1A3NGtzLWgtckpTWWV1c2wzZFVTdw?oc=5",
           "source": "Google News RSS",
           "time": ""
         },
         {
-          "title": "India in continuous touch with Ukraine, Russia to help end conflict: Jaishankar - indianexpress.com",
-          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNeXNFZ18tTk9SUHVRa0cwSlpWS1JoWnFmNUxuMzBvR1dVNmxzcVhuQm44WFZmanNuX2NTdlpiaHNta0x4eEI0c2xHbFhDUlNuaG0xaHd0dzZ3SnZRNHNseGhxcHUzU3kxUkx2c0FDRkotRDNvUGZnUFRMZTJFZklUNGx0TnVkVXBCX0JuWWRmUklhOXpMLVRTN2N1V2I4TUxkOHhnRXNvUEtYdnhfSjduYi1tTWpKNGdkM0lNUktsZklWVDMwZXfSAcwBQVVfeXFMTUZCNDI4Nk1yRXpHU1J2UkVIaFBXcWRxUTdTRXRBaTFVc1dTWWNDeWJ5NWNDdmo2aUYycTgteDFYUXowNUJqWTdYeW04UTBrc0hiRjVOR0xwLVhtb19qNWw1WDR1RDgtcklBWlZnVlBHTllQRDQ4bkVSMlJIeS1YZVZxeFNIb3RZUFZLY0JFOVFvZF9ER1BIelFqekRncXNSczI4MmpVNjU1bXlrT3VZZXJXR1pVdkhseWJWdDJhbWxFVDJzTGNTcTVUakZR?oc=5",
+          "title": "Boosting Bhutan-Bangladesh business ties - The Financial Express",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPdXMxamtwNExacHVjeEloVVFhc0JvTTZHcW4zNVBqYzA4ZFJEZ0g5QXdMZEwtVXdrM2RpcW9TdVpFanJ6R1NPQVRsM3N1bDBtUU8xYkhCMUFnSUlhYmlDWU44akhsdEd4enJOTWtmSUU3VjAwTzlUbmlzSXNjd19UejRfMGctRmxTQkdQcjFzbVU4MlJ4aERv?oc=5",
           "source": "Google News RSS",
           "time": ""
         },
         {
-          "title": "Russian strike kills four in Ukraine: military authority - Bangladesh Sangbad Sangstha (BSS)",
-          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBTLXItRDk4UVRXMHRLRUk0Y2JvZXZDVkVQZ01lc1pqUmJ1TTdZb1ZSSHV6WThwNldSRm4yWHZNMFpSc2NjUkhlNUp3ZGtXNGFvQm9qTnBndw?oc=5",
-          "source": "Google News RSS",
-          "time": ""
-        },
-        {
-          "title": "Indonesia investigates reports of 8 citizens fighting in Russia’s war against Ukraine - South China Morning Post",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQQnBOZlZCZk5FQlZCMVVsNmsyNFlPTzNzSFpaazNsbUlUeUE5NWVuUHJKaWRlaXFLc3g3RG9OSi1lYkxFa1gwUmV6Z3JVaVMtUGZRMHdTOWFvX3ZQN21vam5xR1l3MmtaMVJRN0NDNTQ1ZnRGWWlBTDBtZFQtb2FVa0s1RUdGeW1tNk5uVy1GMEgwRTVqUkxuUkk5R2hsMkU5TFZTTlpMQ0ZYdEVTekVSQVNuT0pDWmczdFE?oc=5",
-          "source": "Google News RSS",
-          "time": ""
-        },
-        {
-          "title": "Ukraine needs 30K a month",
-          "url": "https://x.com/Maks_NAFO_FELLA/status/2093334491758526790?s=20",
+          "title": "Patriot stockpiles beyond critical",
+          "url": "https://x.com/Maks_NAFO_FELLA/status/2093011920446009787?s=20",
           "source": "Global War News Map",
           "time": ""
         },
         {
-          "title": "CFR: War in Ukraine",
-          "url": "https://www.cfr.org/global-conflict-tracker/conflict/conflict-ukraine",
-          "source": "Council on Foreign Relations — Global Conflict Tracker",
+          "title": "09/04/2026 | Cancún, Quintana Roo, Mexico\n\nMore Than $1.7 Million Pesos in Foreign Currency Seized at Cancún Airport\n\nAs part of inspection and survei",
+          "url": "https://x.com/EJTO_FAM_GN/status/2096063189720924648",
+          "source": "Cartel Intelligence Map",
           "time": ""
         },
         {
-          "title": "UCDP corroboration — Russia - Ukraine",
-          "url": "https://ucdp.uu.se/downloads/",
-          "source": "UCDP Candidate Events",
-          "time": "2026-07-06 00:00:00.000"
+          "title": "This is reportedly the face of Javier “Gringo/Güero,” described as the principal financial operator for René 00 in Sinaloa and Baja California Sur.\n\nA",
+          "url": "https://x.com/blogdelosguachs/status/2066657915537391876",
+          "source": "Cartel Intelligence Map",
+          "time": ""
         },
         {
-          "title": "Inside Ukraine's Operation Vivaldi pushing Russia back on frontline - BBC",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9mYjBRWG90OVZMVzBhdkN4QUcyQzRHTUNaZGdvQmVYS3gwekdUcGFqLTJsaU12RDl2em93akJUeUxVRmo1MzQ5RkRrdHNEZzAzOVlFN3o0TDk?oc=5",
-          "source": "Google News — Ukraine War",
-          "time": "2026-10-16T17:41:53Z"
+          "title": "Cártel Independiente de Sonora / Gente Nueva / Los Salazares / Los Cazadores / Los Paredes / Gente Nueva Salazar",
+          "url": "https://x.com/HEARST_BB/status/1932857074385367482",
+          "source": "Cartel Intelligence Map",
+          "time": ""
         },
         {
-          "title": "Ukraine advances in occupied Donetsk as Trump hands Putin diesel deal - Al Jazeera",
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQZnRrME9ZQUVSeGlIUVp4Q25qU2NFZ3BHeDlGdkM5Sy1BNHkzVlJDd3pWNHpuTUhmcWFZUnM2NmI1NDVQV21iNm5GU2tHV1QxdlpPcl9mSzhmVjZLSTZLaExIbXBlWkFmRU1wdjBNdXhjSlZVZF9yRUt6UEhBdVZackxoOS1WNE9DdXM2RElnaVoteWpveHVEQXk5aC1reUVZcUYxaG5KdHdJTzlrQzJXMFFKcTA2T0nSAbwBQVVfeXFMTll2bEE2R01ucHJ5RTdqQUtiSV9sdW1fdzJkdmNMTWo2a2RpNXhoejhObVRWR3M2VndNQlB4Vkl4WjJ5TzBRMzFqQlFHVHdCeUtzTXFKbjhlX001SWRFS21lZ0lpcVhSMUYyR0ZuVnVjOG9kendRbzE1ZEVoWnJQdnQwWU9ySjdnZmhDOHVJeVRxN3VGbm1tS0dxRDVXb1lVdDJBVFZFRWVLU1BWZk5GaW03RmxpY1JsVFVlSEM?oc=5",
-          "source": "Google News — Ukraine War",
-          "time": "2026-10-16T17:31:42Z"
+          "title": "Memphis, TN",
+          "url": "https://www.cnn.com/2024/03/03/us/memphis-gangs-ceasefire-paul-young/index.html",
+          "source": "Cartel Intelligence Map",
+          "time": ""
         },
         {
-          "title": "Russian drones kill three in Ukraine, cut power to over a million",
-          "url": "https://www.channelnewsasia.com/world/russia-ukraine-drone-attack-power-blackout-three-killed-6466786",
-          "source": "CNA World",
-          "time": "2026-10-16T16:12:44Z"
+          "title": "Atlanta, GA",
+          "url": "https://www.fox5atlanta.com/news/u-s-attorney-links-atlanta-overdoses-mexican-cartel-operations",
+          "source": "Cartel Intelligence Map",
+          "time": ""
         },
         {
-          "title": "EU rallies in support of Ukraine amid Trump standoff",
-          "url": "https://www.aljazeera.com/news/2026/10/16/eu-rallies-in-support-of-ukraine-amid-trump-standoff?traffic_source=rss",
-          "source": "Al Jazeera",
-          "time": "2026-10-16T16:02:13Z"
+          "title": "New York City, NY",
+          "url": "https://www.google.com/maps/d/viewer?mid=1fssgCzO1J6TnXS2SqlbutbaxbPQFo3I",
+          "source": "Cartel Intelligence Map",
+          "time": ""
         },
         {
-          "title": "Inside Ukrainian offensive pushing Russia back - with Starlink playing a key role",
-          "url": "https://www.bbc.co.uk/news/articles/cvx284w16z1po?at_medium=RSS&at_campaign=rss",
-          "source": "BBC World",
-          "time": "2026-10-16T16:00:30Z"
+          "title": "KLA Corp Stock (KLAC) Moved Down by 3.27% on Oct 16: What Investors Need To Know - TradingKey",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxORlZKQjdLNDVLaUREcnNrMk5Deno0VFoyaUw1ejRobzg4SmVVWkppS2dNMjZ3bDBUNGxTSTFuVVZhdUJNbTlHUEV4YkJOc0QwUkM3YjcwVkYxV1RtOEQtTExTbXY2eFBKQjdmRDJiWEc2a2l3NTh0dVdLcm1xOEUwYnA1d1o5SDhkdUMw?oc=5",
+          "source": "Google News — China Economy / Trade",
+          "time": "2026-10-16T18:15:31Z"
         },
         {
-          "title": "Watch: Will Ukraine get the support needed as tensions with US rise?",
-          "url": "https://www.bbc.co.uk/news/videos/cm2ke1v8e4geo?at_medium=RSS&at_campaign=rss",
-          "source": "BBC World",
-          "time": "2026-10-16T15:45:10Z"
+          "title": "Tribhuvan Darbari stresses on greater global market access for MSMEs and startups - MillenniumPost",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQbG5TTHlDeEJWRnVTbkhLWXRiZlVyMTY3M01TX0o2N2Q4S2duTWkzNzlUajVoNzdlSEExcnU2cDVhMGJqeUJ2dV96VF9kV3lWTnJmRHhDMUJuTlU4NlVKcnRSQXRqRUphOVdZbGZQNGdWUjhlTWV6bWhScG5UejBkQUpGeEM1eWRGMFdFNnJ4ZzdMVkRncDItMWZnOEpreFlkdkRTZEpIUUN0UTVOM01Ja2I3bndYVXB4ZkxJODEtVzFTNEpISHVCSXFkY9IBywFBVV95cUxQbG5TTHlDeEJWRnVTbkhLWXRiZlVyMTY3M01TX0o2N2Q4S2duTWkzNzlUajVoNzdlSEExcnU2cDVhMGJqeUJ2dV96VF9kV3lWTnJmRHhDMUJuTlU4NlVKcnRSQXRqRUphOVdZbGZQNGdWUjhlTWV6bWhScG5UejBkQUpGeEM1eWRGMFdFNnJ4ZzdMVkRncDItMWZnOEpreFlkdkRTZEpIUUN0UTVOM01Ja2I3bndYVXB4ZkxJODEtVzFTNEpISHVCSXFkYw?oc=5",
+          "source": "Google News — China Economy / Trade",
+          "time": "2026-10-16T17:30:26Z"
+        },
+        {
+          "title": "Israeli settlers attack olive farmers and Washington Post journalist in West Bank",
+          "url": "https://www.theguardian.com/world/2026/oct/16/israeli-settlers-attack-olive-farmers-west-bank-washington-post-journalist-heidi-levine",
+          "source": "https://www.theguardian.com/world/2026/oct/16/israeli-settlers-attack-olive-farmers-west-bank-washington-post-journalist-heidi-levine",
+          "time": "2026-10-16T14:06:59Z"
+        },
+        {
+          "title": "Palestinians, US journalist attacked in West Bank pogrom: What we know",
+          "url": "https://www.aljazeera.com/news/2026/10/16/palestinians-us-journalist-attacked-in-west-bank-pogrom-what-we-know?traffic_source=rss",
+          "source": "https://www.aljazeera.com/news/2026/10/16/palestinians-us-journalist-attacked-in-west-bank-pogrom-what-we-know?traffic_source=rss",
+          "time": "2026-10-16T13:26:47Z"
         }
       ],
       "sourceBacked": true
