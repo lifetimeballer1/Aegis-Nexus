@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-17T20:58:08.948779Z",
+  "updatedAt": "2026-10-17T22:50:19.848308Z",
   "window": "recent public reporting",
   "method": "anchor-aware title clustering with category and publication-time agreement; candidate grouping only, not proof reports describe identical facts",
   "events": [
@@ -26,8 +26,8 @@
       "reports": [
         {
           "id": "a7efd40a5b4e",
-          "sourceLabel": "GDACS Global Disaster Alerts",
-          "sourceName": "GDACS Global Disaster Alerts",
+          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032874",
+          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032874",
           "sourceType": "climate-hazard",
           "title": "Green forest fire notification in Australia",
           "summary": "On 13/10/2026, a forest fire started in Australia, until 17/10/2026.",
@@ -49,8 +49,8 @@
         },
         {
           "id": "a48fc4a48bc2",
-          "sourceLabel": "GDACS Global Disaster Alerts",
-          "sourceName": "GDACS Global Disaster Alerts",
+          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032870",
+          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032870",
           "sourceType": "climate-hazard",
           "title": "Green forest fire notification in Australia",
           "summary": "On 16/10/2026, a forest fire started in Australia, until 17/10/2026.",
@@ -142,6 +142,100 @@
       ]
     },
     {
+      "id": "cf2f46cc7dd7fd86",
+      "title": "European diplomats attacked by Israeli settlers in West Bank",
+      "category": "general",
+      "confidence": "high",
+      "reportCount": 3,
+      "sourceCount": 3,
+      "sources": [
+        "bbc.co.uk",
+        "theguardian.com",
+        "news.google.com"
+      ],
+      "anchors": [
+        "israel"
+      ],
+      "firstSeen": "2026-10-17T16:11:59Z",
+      "lastSeen": "2026-10-17T18:38:57Z",
+      "urls": [
+        "https://www.bbc.co.uk/news/articles/c962ydpmjm3zo?at_medium=RSS&at_campaign=rss",
+        "https://www.theguardian.com/world/2026/oct/17/israeli-settlers-attack-european-diplomats-in-west-bank",
+        "https://news.google.com/rss/articles/CBMicEFVX3lxTE92Q19aRmhnT2lIZTdybTYxQWcwM21Kekt3WnhEdzROaVU5MnJ0ckw1enUwaUlyQjk4NlBfOGp6N1EtN1NSQnoxUkRzdGFNU2VrMmQ4elpDaEdsY0E5OWpmWnExbzkydWs2WE1vVERoUXQ?oc=5"
+      ],
+      "reports": [
+        {
+          "id": "46647e002280",
+          "sourceLabel": "BBC World",
+          "sourceName": "BBC World",
+          "sourceType": "international",
+          "title": "European diplomats attacked by Israeli settlers in West Bank",
+          "summary": "The Israeli military condemns the violence but the prime minister's office says it is part of a \"smear\" campaign.",
+          "summary_snippet": "The Israeli military condemns the violence but the prime minister's office says it is part of a \"smear\" campaign.",
+          "source": "https://www.bbc.co.uk/news/articles/c962ydpmjm3zo?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.bbc.co.uk/news/articles/c962ydpmjm3zo?at_medium=RSS&at_campaign=rss",
+          "time": "2026-10-17T18:38:57Z",
+          "published_date": "2026-10-17T18:38:57Z",
+          "publishedDate": "2026-10-17T18:38:57Z",
+          "tag": "Breaking",
+          "confidence": "DEVELOPING",
+          "breaking": true,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "bbc_world",
+            "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "9edf563710cc",
+          "sourceLabel": "https://www.theguardian.com/world/2026/oct/17/israeli-settlers-attack-european-diplomats-in-west-bank",
+          "sourceName": "https://www.theguardian.com/world/2026/oct/17/israeli-settlers-attack-european-diplomats-in-west-bank",
+          "sourceType": "international",
+          "title": "Israeli settlers attack European diplomats in West Bank",
+          "summary": "French mayor and archbishop also attacked during violent attempt to stop Palestinians harvesting olives Israeli settler militants have attacked European diplomats, a French mayor and the archbishop of Cambrai in Taybeh, in the occupied West Bank, injuring three people and damaging a car, in the latest violent attempt to prevent Palestinians from harvesting olives on their own land. Bernard Baudoux, mayor of Aulnoye-A",
+          "summary_snippet": "French mayor and archbishop also attacked during violent attempt to stop Palestinians harvesting olives Israeli settler militants have attacked European diplomats, a French mayor and the archbishop of Cambrai in Taybeh, in the occupied West Bank, injuring three people and damaging a car, in the latest violent attempt to prevent Palestinians from harvesting olives on their own land. Bernard Baudoux, mayor of Aulnoye-A",
+          "source": "https://www.theguardian.com/world/2026/oct/17/israeli-settlers-attack-european-diplomats-in-west-bank",
+          "url": "https://www.theguardian.com/world/2026/oct/17/israeli-settlers-attack-european-diplomats-in-west-bank",
+          "time": "2026-10-17T18:20:11Z",
+          "published_date": "2026-10-17T18:20:11Z",
+          "publishedDate": "2026-10-17T18:20:11Z",
+          "tag": "Breaking",
+          "confidence": "DEVELOPING",
+          "breaking": true,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "guardian_world",
+            "sourceUrl": "https://www.theguardian.com/world/rss",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "f58d16a2d53c",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMicEFVX3lxTE92Q19aRmhnT2lIZTdybTYxQWcwM21Kekt3WnhEdzROaVU5MnJ0ckw1enUwaUlyQjk4NlBfOGp6N1EtN1NSQnoxUkRzdGFNU2VrMmQ4elpDaEdsY0E5OWpmWnExbzkydWs2WE1vVERoUXQ?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMicEFVX3lxTE92Q19aRmhnT2lIZTdybTYxQWcwM21Kekt3WnhEdzROaVU5MnJ0ckw1enUwaUlyQjk4NlBfOGp6N1EtN1NSQnoxUkRzdGFNU2VrMmQ4elpDaEdsY0E5OWpmWnExbzkydWs2WE1vVERoUXQ?oc=5",
+          "sourceType": "world-politics",
+          "title": "Israeli settlers attack European diplomats in the West Bank - Financial Times",
+          "summary": "Israeli settlers attack European diplomats in the West Bank Financial Times",
+          "summary_snippet": "Israeli settlers attack European diplomats in the West Bank Financial Times",
+          "source": "https://news.google.com/rss/articles/CBMicEFVX3lxTE92Q19aRmhnT2lIZTdybTYxQWcwM21Kekt3WnhEdzROaVU5MnJ0ckw1enUwaUlyQjk4NlBfOGp6N1EtN1NSQnoxUkRzdGFNU2VrMmQ4elpDaEdsY0E5OWpmWnExbzkydWs2WE1vVERoUXQ?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE92Q19aRmhnT2lIZTdybTYxQWcwM21Kekt3WnhEdzROaVU5MnJ0ckw1enUwaUlyQjk4NlBfOGp6N1EtN1NSQnoxUkRzdGFNU2VrMmQ4elpDaEdsY0E5OWpmWnExbzkydWs2WE1vVERoUXQ?oc=5",
+          "time": "2026-10-17T16:11:59Z",
+          "published_date": "2026-10-17T16:11:59Z",
+          "publishedDate": "2026-10-17T16:11:59Z",
+          "tag": "Breaking",
+          "confidence": "DEVELOPING",
+          "breaking": true,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_world_politics",
+            "sourceUrl": "https://news.google.com/rss/search?q=election+parliament+diplomacy+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
       "id": "f8bd2792480ec2f3",
       "title": "Zelensky warns of possible escalation in Russian strikes on western Ukraine - Business Upturn",
       "category": "general",
@@ -224,99 +318,6 @@
           "time": "2026-10-17T11:22:41Z",
           "published_date": "2026-10-17T11:22:41Z",
           "publishedDate": "2026-10-17T11:22:41Z",
-          "tag": "Breaking",
-          "confidence": "DEVELOPING",
-          "breaking": true,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "al_jazeera",
-            "sourceUrl": "https://www.aljazeera.com/xml/rss/all.xml",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "a277987358f03d5d",
-      "title": "Sudan’s army says dozens of RSF fighters killed in Nyala — Al Jazeera - UA.NEWS",
-      "category": "general",
-      "confidence": "moderate",
-      "reportCount": 3,
-      "sourceCount": 2,
-      "sources": [
-        "news.google.com",
-        "aljazeera.com"
-      ],
-      "anchors": [
-        "sudan"
-      ],
-      "firstSeen": "2026-10-17T09:44:47Z",
-      "lastSeen": "2026-10-17T10:36:33Z",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiogFBVV95cUxNMW1id08wM1owcW1UbEM0S3pSQldTSk9OTDNxQzJNZVVVenFNZE9kMGV1bEVtQlBoMVRRS2Vnc0lxa3hwZWhvczJDOFQ2Szk0QThXY09UZUZ6c0tYSERNUDM1VmZ5eUpqY2FIVDl3Y3dzY2dwSFFVN18tTnV5c0dpeVRlNGdkQkhEMHFsaGZFVUZSN2ZFYlNYUHBFTldpUHBub2c?oc=5",
-        "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1DdVo0cVRncXRWb0Q0Y3dvM0QxZEtFZGd4eFQwRUQwTllWZDBjZ0FYMkpHdGNKNUw3ZnZkRnoxOFVZUWdFU3N2T0JpOWV4TUpKVE5RVDFRWnlEZ9IBX0FVX3lxTE84YkRGMTBGYkdwNmszTGJnMURCN1pCZTJOWHYyTGFVQ21JbHdyQnVSUE5OMS1ySHJMSTJlYmhnaFFQV2xDcXNiNE9SUndNUDZuRk01TXRQaURHRmVET2pJ?oc=5",
-        "https://www.aljazeera.com/news/2026/10/17/2550?traffic_source=rss"
-      ],
-      "reports": [
-        {
-          "id": "323de1227248",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNMW1id08wM1owcW1UbEM0S3pSQldTSk9OTDNxQzJNZVVVenFNZE9kMGV1bEVtQlBoMVRRS2Vnc0lxa3hwZWhvczJDOFQ2Szk0QThXY09UZUZ6c0tYSERNUDM1VmZ5eUpqY2FIVDl3Y3dzY2dwSFFVN18tTnV5c0dpeVRlNGdkQkhEMHFsaGZFVUZSN2ZFYlNYUHBFTldpUHBub2c?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNMW1id08wM1owcW1UbEM0S3pSQldTSk9OTDNxQzJNZVVVenFNZE9kMGV1bEVtQlBoMVRRS2Vnc0lxa3hwZWhvczJDOFQ2Szk0QThXY09UZUZ6c0tYSERNUDM1VmZ5eUpqY2FIVDl3Y3dzY2dwSFFVN18tTnV5c0dpeVRlNGdkQkhEMHFsaGZFVUZSN2ZFYlNYUHBFTldpUHBub2c?oc=5",
-          "sourceType": "africa-conflict",
-          "title": "Sudan’s army says dozens of RSF fighters killed in Nyala — Al Jazeera - UA.NEWS",
-          "summary": "Sudan’s army says dozens of RSF fighters killed in Nyala — Al Jazeera UA.NEWS",
-          "summary_snippet": "Sudan’s army says dozens of RSF fighters killed in Nyala — Al Jazeera UA.NEWS",
-          "source": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNMW1id08wM1owcW1UbEM0S3pSQldTSk9OTDNxQzJNZVVVenFNZE9kMGV1bEVtQlBoMVRRS2Vnc0lxa3hwZWhvczJDOFQ2Szk0QThXY09UZUZ6c0tYSERNUDM1VmZ5eUpqY2FIVDl3Y3dzY2dwSFFVN18tTnV5c0dpeVRlNGdkQkhEMHFsaGZFVUZSN2ZFYlNYUHBFTldpUHBub2c?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNMW1id08wM1owcW1UbEM0S3pSQldTSk9OTDNxQzJNZVVVenFNZE9kMGV1bEVtQlBoMVRRS2Vnc0lxa3hwZWhvczJDOFQ2Szk0QThXY09UZUZ6c0tYSERNUDM1VmZ5eUpqY2FIVDl3Y3dzY2dwSFFVN18tTnV5c0dpeVRlNGdkQkhEMHFsaGZFVUZSN2ZFYlNYUHBFTldpUHBub2c?oc=5",
-          "time": "2026-10-17T10:36:33Z",
-          "published_date": "2026-10-17T10:36:33Z",
-          "publishedDate": "2026-10-17T10:36:33Z",
-          "tag": "Breaking",
-          "confidence": "DEVELOPING",
-          "breaking": true,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_sudan_conflict",
-            "sourceUrl": "https://news.google.com/rss/search?q=Sudan+SAF+RSF+Darfur+conflict+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "e1e4900f9a21",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1DdVo0cVRncXRWb0Q0Y3dvM0QxZEtFZGd4eFQwRUQwTllWZDBjZ0FYMkpHdGNKNUw3ZnZkRnoxOFVZUWdFU3N2T0JpOWV4TUpKVE5RVDFRWnlEZ9IBX0FVX3lxTE84YkRGMTBGYkdwNmszTGJnMURCN1pCZTJOWHYyTGFVQ21JbHdyQnVSUE5OMS1ySHJMSTJlYmhnaFFQV2xDcXNiNE9SUndNUDZuRk01TXRQaURHRmVET2pJ?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1DdVo0cVRncXRWb0Q0Y3dvM0QxZEtFZGd4eFQwRUQwTllWZDBjZ0FYMkpHdGNKNUw3ZnZkRnoxOFVZUWdFU3N2T0JpOWV4TUpKVE5RVDFRWnlEZ9IBX0FVX3lxTE84YkRGMTBGYkdwNmszTGJnMURCN1pCZTJOWHYyTGFVQ21JbHdyQnVSUE5OMS1ySHJMSTJlYmhnaFFQV2xDcXNiNE9SUndNUDZuRk01TXRQaURHRmVET2pJ?oc=5",
-          "sourceType": "africa-conflict",
-          "title": "Sudan’s army claims dozens of RSF fighters killed in Nyala attack - Al Jazeera",
-          "summary": "Sudan’s army claims dozens of RSF fighters killed in Nyala attack Al Jazeera",
-          "summary_snippet": "Sudan’s army claims dozens of RSF fighters killed in Nyala attack Al Jazeera",
-          "source": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1DdVo0cVRncXRWb0Q0Y3dvM0QxZEtFZGd4eFQwRUQwTllWZDBjZ0FYMkpHdGNKNUw3ZnZkRnoxOFVZUWdFU3N2T0JpOWV4TUpKVE5RVDFRWnlEZ9IBX0FVX3lxTE84YkRGMTBGYkdwNmszTGJnMURCN1pCZTJOWHYyTGFVQ21JbHdyQnVSUE5OMS1ySHJMSTJlYmhnaFFQV2xDcXNiNE9SUndNUDZuRk01TXRQaURHRmVET2pJ?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1DdVo0cVRncXRWb0Q0Y3dvM0QxZEtFZGd4eFQwRUQwTllWZDBjZ0FYMkpHdGNKNUw3ZnZkRnoxOFVZUWdFU3N2T0JpOWV4TUpKVE5RVDFRWnlEZ9IBX0FVX3lxTE84YkRGMTBGYkdwNmszTGJnMURCN1pCZTJOWHYyTGFVQ21JbHdyQnVSUE5OMS1ySHJMSTJlYmhnaFFQV2xDcXNiNE9SUndNUDZuRk01TXRQaURHRmVET2pJ?oc=5",
-          "time": "2026-10-17T09:45:08Z",
-          "published_date": "2026-10-17T09:45:08Z",
-          "publishedDate": "2026-10-17T09:45:08Z",
-          "tag": "Breaking",
-          "confidence": "DEVELOPING",
-          "breaking": true,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_sudan_conflict",
-            "sourceUrl": "https://news.google.com/rss/search?q=Sudan+SAF+RSF+Darfur+conflict+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "1246c2c5440a",
-          "sourceLabel": "https://www.aljazeera.com/news/2026/10/17/2550?traffic_source=rss",
-          "sourceName": "https://www.aljazeera.com/news/2026/10/17/2550?traffic_source=rss",
-          "sourceType": "international",
-          "title": "Sudan’s army claims dozens of RSF fighters killed in Nyala attack",
-          "summary": "Rapid Support Forces accuse army of killing 30 civilians in attack on Nyala's busy livestock market.",
-          "summary_snippet": "Rapid Support Forces accuse army of killing 30 civilians in attack on Nyala's busy livestock market.",
-          "source": "https://www.aljazeera.com/news/2026/10/17/2550?traffic_source=rss",
-          "url": "https://www.aljazeera.com/news/2026/10/17/2550?traffic_source=rss",
-          "time": "2026-10-17T09:44:47Z",
-          "published_date": "2026-10-17T09:44:47Z",
-          "publishedDate": "2026-10-17T09:44:47Z",
           "tag": "Breaking",
           "confidence": "DEVELOPING",
           "breaking": true,
@@ -478,8 +479,8 @@
       "reports": [
         {
           "id": "49e26f795a89",
-          "sourceLabel": "GDACS Global Disaster Alerts",
-          "sourceName": "GDACS Global Disaster Alerts",
+          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032880",
+          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032880",
           "sourceType": "climate-hazard",
           "title": "Green forest fire notification in Mozambique",
           "summary": "On 09/10/2026, a forest fire started in Mozambique, until 17/10/2026.",
@@ -501,8 +502,8 @@
         },
         {
           "id": "04191bc50d13",
-          "sourceLabel": "GDACS Global Disaster Alerts",
-          "sourceName": "GDACS Global Disaster Alerts",
+          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032879",
+          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032879",
           "sourceType": "climate-hazard",
           "title": "Green forest fire notification in Mozambique",
           "summary": "On 09/10/2026, a forest fire started in Mozambique, until 17/10/2026.",
@@ -524,8 +525,8 @@
         },
         {
           "id": "84945822e0c8",
-          "sourceLabel": "GDACS Global Disaster Alerts",
-          "sourceName": "GDACS Global Disaster Alerts",
+          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032878",
+          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032878",
           "sourceType": "climate-hazard",
           "title": "Green forest fire notification in Mozambique",
           "summary": "On 10/10/2026, a forest fire started in Mozambique, until 17/10/2026.",
@@ -568,8 +569,8 @@
       "reports": [
         {
           "id": "36fdb242fe6b",
-          "sourceLabel": "GDACS Global Disaster Alerts",
-          "sourceName": "GDACS Global Disaster Alerts",
+          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032871",
+          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032871",
           "sourceType": "climate-hazard",
           "title": "Green forest fire notification in Brazil",
           "summary": "On 14/10/2026, a forest fire started in Brazil, until 17/10/2026.",
@@ -632,170 +633,6 @@
           "credit": {
             "sourceId": "gdacs_global_disaster_alerts",
             "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "6ab6f57092f27440",
-      "title": "US-Israel-Iran War Latest Live News: ‘Strait of Hormuz is Closed,’ Warns IRGC Navy After Tankers Hit and Passage of Ships of Different Nationalities is Prohibited - The Sunday Guardian",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 3,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [
-        "hormuz",
-        "iran",
-        "israel",
-        "yemen"
-      ],
-      "firstSeen": "2026-10-17T10:17:56Z",
-      "lastSeen": "2026-10-17T11:07:18Z",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMisAJBVV95cUxNV2hvSC1qdEYtRG05NUpqbU81WlFPMS1oQjRKbzhXV2p2RXlDUGNKbEpySnVyR01lMTF6VjRMSnpPUmtkdTBvYk1Way1aTGdPbFF3QmJfX0pGeTR3Q1dST0VQZ1J1MVgtem5zRFZPX1V5a3duYS1NQWdOY0dSUHhQVURvU2t0NjJ0N2VOekVMbFpIN0FvbEpjbVNnaE1VdEtXUkJ6WWJnMVR5UklFVXhFYTdCVEEtcEloVHlET3NDbmYtV3d0dkpDRDJEU3F6N0FuSzVBemZ2NVFVRl9ZWFpYXzI2VU5DRXdobkcySFZBNWhQYzg1alJwVVQtdElScWdHNXFhZEdsaFZNY28tWmpHdlJwb1NuSS1wLVhZMVZLRUdDREZFd1VGTDhNVWpEWlVh0gGwAkFVX3lxTE1XaG9ILWp0Ri1EbTk1SmptTzVaUU8xLWhCNEpvOFdXanZFeUNQY0psSnJKdXJHTWUxMXpWNExKek9Sa2R1MG9iTVZrLVpMZ09sUXdCYl9fSkZ5NHdDV1JPRVBnUnUxWC16bnNEVk9fVXlrd25hLU1BZ05jR1JQeFBVRG9Ta3Q2MnQ3ZU56RUxsWkg3QW9sSmNtU2doTVV0S1dSQnpZYmcxVHlSSUVVeEVhN0JUQS1wSWhUeURPc0NuZi1Xd3R2SkNEMkRTcXo3QW5LNUF6ZnY1UVVGX1lYWlhfMjZVTkNFd2huRzJIVkE1aFBjODVqUnBVVC10SVJxZ0c1cWFkR2xoVk1jby1aakd2UnBvU25JLXAtWFkxVktFR0NERkV3VUZMOE1VakRaVWE?oc=5",
-        "https://news.google.com/rss/articles/CBMiqwJBVV95cUxNeExSN2tvZjJnX3NsUzhNa2tEaF9HRFVqa0plX0lBTl9PTzExVWRWWERxZXJrdHV3bkNKYUFTb1N6clZUdG1pMUVWZ2M4NWExRE5YRmNKR1ZwTHZra0UtMElhZ3lJZWtKTjF4cTVwb2RydFIzRE0xZkVvZExUdVpzQjJfckU5M21xLUxZY1FJS1Jlc2VXMWJfejhIVjN6dktSRWE4Y2VCaEZtYTRGMVUwNVBlU0d2M051N04yNVY2bjJLMEVxQzZIdnNoV2FmT0cwNGtrS1JNVVZIZF9PMGN2WFpmSXprVWZQV3VtX1k1SGxrLVVjZGtGTGJpNkROMTN0aE9tX014dWtOUE1CQTcyakFqUThmLUNkN3A3c2plNWNxc3NPN24ycVF2TdIBsAJBVV95cUxNV2hvSC1qdEYtRG05NUpqbU81WlFPMS1oQjRKbzhXV2p2RXlDUGNKbEpySnVyR01lMTF6VjRMSnpPUmtkdTBvYk1Way1aTGdPbFF3QmJfX0pGeTR3Q1dST0VQZ1J1MVgtem5zRFZPX1V5a3duYS1NQWdOY0dSUHhQVURvU2t0NjJ0N2VOekVMbFpIN0FvbEpjbVNnaE1VdEtXUkJ6WWJnMVR5UklFVXhFYTdCVEEtcEloVHlET3NDbmYtV3d0dkpDRDJEU3F6N0FuSzVBemZ2NVFVRl9ZWFpYXzI2VU5DRXdobkcySFZBNWhQYzg1alJwVVQtdElScWdHNXFhZEdsaFZNY28tWmpHdlJwb1NuSS1wLVhZMVZLRUdDREZFd1VGTDhNVWpEWlVh?oc=5",
-        "https://news.google.com/rss/articles/CBMiywJBVV95cUxNbmV3NUszMktrNlZfU3daa2FPc1hieFBvSVFnZW1JaU5TeUZ3OEhmanRnNk5YY3FQd3FMUTJDekhjSUFteHZ2QS11aDhHMTMxUWxHOUpNY0M3aVlTWEt1MTZ6OWRsbjRFSzQ3WmktemYxUW9MNWZsQkdabmxtZmo1V25FV1YzR2xaZXUzbFQtNl9nWC01NEpNUE9qSnZiX2V2a2F6R3hhTEpPZ2FDenJwY0pta21SSFFCMHlzRU92dGE4YmU1RVNFbEtLVDNDTUhXLVV6M1M4LVFpeW9lUHIta20wQXVQLXNnSUhDM2Vra1NCR1JrOVhLV1hNa2dGZTBTNlVOMHFhekdiZHhOZTZDRGZUaEd5WDFPbUl1c1VZRG5wZlFsVmQ1dEpacmNiM0QzWkI1RzNqMVZsaFNOQ3hLSTU5MGNoR0V1VGJR0gHQAkFVX3lxTFA4ZVBxdmQ4UUNYS25MNlRiQVBTVnhTNEVLY0piVEFHMHpFRVBhejl1RWphU09LaTMycmxhWlB1cHA5bHdCbHE0d0R3dWd5SzIwZzA5NEN1ZjlRT2hYdGtIY2xEZTUwZDRoNHY0Uk9DaEJ4MjRLSGVqYVhiMjFiUzB4dVhkTTFWM1ZIOWNfT2pxeWEza0dMYlVwYUF3cDQ1eGx0M3BhNm4tVWJ4QkFGWWM1bmdyXzZtYURPMUFCaFlOM0NZSVV2R0ZoN1g0WWJtWVRXRlgzRURvRzZhT2dUZGFNUVdKNEpqYlBVQ3VmN2tSLWlTRGw0LTk1SzZHTTZ6SnJiekJ1Tnp0VFd4bENCbXVITlhhOU1tcXFuWko4QldKVVNYbGllU0xhMThqd01LSlI3dS02SU5vd2xLdi1zcmMtU2NYV0FYanJwTlRwSGtkcw?oc=5"
-      ],
-      "reports": [
-        {
-          "id": "773f3ee3e9dd",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMisAJBVV95cUxNV2hvSC1qdEYtRG05NUpqbU81WlFPMS1oQjRKbzhXV2p2RXlDUGNKbEpySnVyR01lMTF6VjRMSnpPUmtkdTBvYk1Way1aTGdPbFF3QmJfX0pGeTR3Q1dST0VQZ1J1MVgtem5zRFZPX1V5a3duYS1NQWdOY0dSUHhQVURvU2t0NjJ0N2VOekVMbFpIN0FvbEpjbVNnaE1VdEtXUkJ6WWJnMVR5UklFVXhFYTdCVEEtcEloVHlET3NDbmYtV3d0dkpDRDJEU3F6N0FuSzVBemZ2NVFVRl9ZWFpYXzI2VU5DRXdobkcySFZBNWhQYzg1alJwVVQtdElScWdHNXFhZEdsaFZNY28tWmpHdlJwb1NuSS1wLVhZMVZLRUdDREZFd1VGTDhNVWpEWlVh0gGwAkFVX3lxTE1XaG9ILWp0Ri1EbTk1SmptTzVaUU8xLWhCNEpvOFdXanZFeUNQY0psSnJKdXJHTWUxMXpWNExKek9Sa2R1MG9iTVZrLVpMZ09sUXdCYl9fSkZ5NHdDV1JPRVBnUnUxWC16bnNEVk9fVXlrd25hLU1BZ05jR1JQeFBVRG9Ta3Q2MnQ3ZU56RUxsWkg3QW9sSmNtU2doTVV0S1dSQnpZYmcxVHlSSUVVeEVhN0JUQS1wSWhUeURPc0NuZi1Xd3R2SkNEMkRTcXo3QW5LNUF6ZnY1UVVGX1lYWlhfMjZVTkNFd2huRzJIVkE1aFBjODVqUnBVVC10SVJxZ0c1cWFkR2xoVk1jby1aakd2UnBvU25JLXAtWFkxVktFR0NERkV3VUZMOE1VakRaVWE?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMisAJBVV95cUxNV2hvSC1qdEYtRG05NUpqbU81WlFPMS1oQjRKbzhXV2p2RXlDUGNKbEpySnVyR01lMTF6VjRMSnpPUmtkdTBvYk1Way1aTGdPbFF3QmJfX0pGeTR3Q1dST0VQZ1J1MVgtem5zRFZPX1V5a3duYS1NQWdOY0dSUHhQVURvU2t0NjJ0N2VOekVMbFpIN0FvbEpjbVNnaE1VdEtXUkJ6WWJnMVR5UklFVXhFYTdCVEEtcEloVHlET3NDbmYtV3d0dkpDRDJEU3F6N0FuSzVBemZ2NVFVRl9ZWFpYXzI2VU5DRXdobkcySFZBNWhQYzg1alJwVVQtdElScWdHNXFhZEdsaFZNY28tWmpHdlJwb1NuSS1wLVhZMVZLRUdDREZFd1VGTDhNVWpEWlVh0gGwAkFVX3lxTE1XaG9ILWp0Ri1EbTk1SmptTzVaUU8xLWhCNEpvOFdXanZFeUNQY0psSnJKdXJHTWUxMXpWNExKek9Sa2R1MG9iTVZrLVpMZ09sUXdCYl9fSkZ5NHdDV1JPRVBnUnUxWC16bnNEVk9fVXlrd25hLU1BZ05jR1JQeFBVRG9Ta3Q2MnQ3ZU56RUxsWkg3QW9sSmNtU2doTVV0S1dSQnpZYmcxVHlSSUVVeEVhN0JUQS1wSWhUeURPc0NuZi1Xd3R2SkNEMkRTcXo3QW5LNUF6ZnY1UVVGX1lYWlhfMjZVTkNFd2huRzJIVkE1aFBjODVqUnBVVC10SVJxZ0c1cWFkR2xoVk1jby1aakd2UnBvU25JLXAtWFkxVktFR0NERkV3VUZMOE1VakRaVWE?oc=5",
-          "sourceType": "middle-east-conflict",
-          "title": "US-Israel-Iran War Latest Live News: ‘Strait of Hormuz is Closed,’ Warns IRGC Navy After Tankers Hit and Passage of Ships of Different Nationalities is Prohibited - The Sunday Guardian",
-          "summary": "US-Israel-Iran War Latest Live News: ‘Strait of Hormuz is Closed,’ Warns IRGC Navy After Tankers Hit and Passage of Ships of Different Nationalities is Prohibited The Sunday Guardian",
-          "summary_snippet": "US-Israel-Iran War Latest Live News: ‘Strait of Hormuz is Closed,’ Warns IRGC Navy After Tankers Hit and Passage of Ships of Different Nationalities is Prohibited The Sunday Guardian",
-          "source": "https://news.google.com/rss/articles/CBMisAJBVV95cUxNV2hvSC1qdEYtRG05NUpqbU81WlFPMS1oQjRKbzhXV2p2RXlDUGNKbEpySnVyR01lMTF6VjRMSnpPUmtkdTBvYk1Way1aTGdPbFF3QmJfX0pGeTR3Q1dST0VQZ1J1MVgtem5zRFZPX1V5a3duYS1NQWdOY0dSUHhQVURvU2t0NjJ0N2VOekVMbFpIN0FvbEpjbVNnaE1VdEtXUkJ6WWJnMVR5UklFVXhFYTdCVEEtcEloVHlET3NDbmYtV3d0dkpDRDJEU3F6N0FuSzVBemZ2NVFVRl9ZWFpYXzI2VU5DRXdobkcySFZBNWhQYzg1alJwVVQtdElScWdHNXFhZEdsaFZNY28tWmpHdlJwb1NuSS1wLVhZMVZLRUdDREZFd1VGTDhNVWpEWlVh0gGwAkFVX3lxTE1XaG9ILWp0Ri1EbTk1SmptTzVaUU8xLWhCNEpvOFdXanZFeUNQY0psSnJKdXJHTWUxMXpWNExKek9Sa2R1MG9iTVZrLVpMZ09sUXdCYl9fSkZ5NHdDV1JPRVBnUnUxWC16bnNEVk9fVXlrd25hLU1BZ05jR1JQeFBVRG9Ta3Q2MnQ3ZU56RUxsWkg3QW9sSmNtU2doTVV0S1dSQnpZYmcxVHlSSUVVeEVhN0JUQS1wSWhUeURPc0NuZi1Xd3R2SkNEMkRTcXo3QW5LNUF6ZnY1UVVGX1lYWlhfMjZVTkNFd2huRzJIVkE1aFBjODVqUnBVVC10SVJxZ0c1cWFkR2xoVk1jby1aakd2UnBvU25JLXAtWFkxVktFR0NERkV3VUZMOE1VakRaVWE?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMisAJBVV95cUxNV2hvSC1qdEYtRG05NUpqbU81WlFPMS1oQjRKbzhXV2p2RXlDUGNKbEpySnVyR01lMTF6VjRMSnpPUmtkdTBvYk1Way1aTGdPbFF3QmJfX0pGeTR3Q1dST0VQZ1J1MVgtem5zRFZPX1V5a3duYS1NQWdOY0dSUHhQVURvU2t0NjJ0N2VOekVMbFpIN0FvbEpjbVNnaE1VdEtXUkJ6WWJnMVR5UklFVXhFYTdCVEEtcEloVHlET3NDbmYtV3d0dkpDRDJEU3F6N0FuSzVBemZ2NVFVRl9ZWFpYXzI2VU5DRXdobkcySFZBNWhQYzg1alJwVVQtdElScWdHNXFhZEdsaFZNY28tWmpHdlJwb1NuSS1wLVhZMVZLRUdDREZFd1VGTDhNVWpEWlVh0gGwAkFVX3lxTE1XaG9ILWp0Ri1EbTk1SmptTzVaUU8xLWhCNEpvOFdXanZFeUNQY0psSnJKdXJHTWUxMXpWNExKek9Sa2R1MG9iTVZrLVpMZ09sUXdCYl9fSkZ5NHdDV1JPRVBnUnUxWC16bnNEVk9fVXlrd25hLU1BZ05jR1JQeFBVRG9Ta3Q2MnQ3ZU56RUxsWkg3QW9sSmNtU2doTVV0S1dSQnpZYmcxVHlSSUVVeEVhN0JUQS1wSWhUeURPc0NuZi1Xd3R2SkNEMkRTcXo3QW5LNUF6ZnY1UVVGX1lYWlhfMjZVTkNFd2huRzJIVkE1aFBjODVqUnBVVC10SVJxZ0c1cWFkR2xoVk1jby1aakd2UnBvU25JLXAtWFkxVktFR0NERkV3VUZMOE1VakRaVWE?oc=5",
-          "time": "2026-10-17T11:07:18Z",
-          "published_date": "2026-10-17T11:07:18Z",
-          "publishedDate": "2026-10-17T11:07:18Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_iran_israel",
-            "sourceUrl": "https://news.google.com/rss/search?q=Iran+Israel+conflict+missile+drone+strike+escalation+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "0337d42dbd56",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxNeExSN2tvZjJnX3NsUzhNa2tEaF9HRFVqa0plX0lBTl9PTzExVWRWWERxZXJrdHV3bkNKYUFTb1N6clZUdG1pMUVWZ2M4NWExRE5YRmNKR1ZwTHZra0UtMElhZ3lJZWtKTjF4cTVwb2RydFIzRE0xZkVvZExUdVpzQjJfckU5M21xLUxZY1FJS1Jlc2VXMWJfejhIVjN6dktSRWE4Y2VCaEZtYTRGMVUwNVBlU0d2M051N04yNVY2bjJLMEVxQzZIdnNoV2FmT0cwNGtrS1JNVVZIZF9PMGN2WFpmSXprVWZQV3VtX1k1SGxrLVVjZGtGTGJpNkROMTN0aE9tX014dWtOUE1CQTcyakFqUThmLUNkN3A3c2plNWNxc3NPN24ycVF2TdIBsAJBVV95cUxNV2hvSC1qdEYtRG05NUpqbU81WlFPMS1oQjRKbzhXV2p2RXlDUGNKbEpySnVyR01lMTF6VjRMSnpPUmtkdTBvYk1Way1aTGdPbFF3QmJfX0pGeTR3Q1dST0VQZ1J1MVgtem5zRFZPX1V5a3duYS1NQWdOY0dSUHhQVURvU2t0NjJ0N2VOekVMbFpIN0FvbEpjbVNnaE1VdEtXUkJ6WWJnMVR5UklFVXhFYTdCVEEtcEloVHlET3NDbmYtV3d0dkpDRDJEU3F6N0FuSzVBemZ2NVFVRl9ZWFpYXzI2VU5DRXdobkcySFZBNWhQYzg1alJwVVQtdElScWdHNXFhZEdsaFZNY28tWmpHdlJwb1NuSS1wLVhZMVZLRUdDREZFd1VGTDhNVWpEWlVh?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxNeExSN2tvZjJnX3NsUzhNa2tEaF9HRFVqa0plX0lBTl9PTzExVWRWWERxZXJrdHV3bkNKYUFTb1N6clZUdG1pMUVWZ2M4NWExRE5YRmNKR1ZwTHZra0UtMElhZ3lJZWtKTjF4cTVwb2RydFIzRE0xZkVvZExUdVpzQjJfckU5M21xLUxZY1FJS1Jlc2VXMWJfejhIVjN6dktSRWE4Y2VCaEZtYTRGMVUwNVBlU0d2M051N04yNVY2bjJLMEVxQzZIdnNoV2FmT0cwNGtrS1JNVVZIZF9PMGN2WFpmSXprVWZQV3VtX1k1SGxrLVVjZGtGTGJpNkROMTN0aE9tX014dWtOUE1CQTcyakFqUThmLUNkN3A3c2plNWNxc3NPN24ycVF2TdIBsAJBVV95cUxNV2hvSC1qdEYtRG05NUpqbU81WlFPMS1oQjRKbzhXV2p2RXlDUGNKbEpySnVyR01lMTF6VjRMSnpPUmtkdTBvYk1Way1aTGdPbFF3QmJfX0pGeTR3Q1dST0VQZ1J1MVgtem5zRFZPX1V5a3duYS1NQWdOY0dSUHhQVURvU2t0NjJ0N2VOekVMbFpIN0FvbEpjbVNnaE1VdEtXUkJ6WWJnMVR5UklFVXhFYTdCVEEtcEloVHlET3NDbmYtV3d0dkpDRDJEU3F6N0FuSzVBemZ2NVFVRl9ZWFpYXzI2VU5DRXdobkcySFZBNWhQYzg1alJwVVQtdElScWdHNXFhZEdsaFZNY28tWmpHdlJwb1NuSS1wLVhZMVZLRUdDREZFd1VGTDhNVWpEWlVh?oc=5",
-          "sourceType": "middle-east-conflict",
-          "title": "US-Israel-Iran War Latest Live News: ‘Strait of Hormuz is Closed,’ Warns IRGC Navy After Tankers Hit and Passage of Ships of Different Nationalities is Prohibited - The Sunday Guardian",
-          "summary": "US-Israel-Iran War Latest Live News: ‘Strait of Hormuz is Closed,’ Warns IRGC Navy After Tankers Hit and Passage of Ships of Different Nationalities is Prohibited The Sunday Guardian",
-          "summary_snippet": "US-Israel-Iran War Latest Live News: ‘Strait of Hormuz is Closed,’ Warns IRGC Navy After Tankers Hit and Passage of Ships of Different Nationalities is Prohibited The Sunday Guardian",
-          "source": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxNeExSN2tvZjJnX3NsUzhNa2tEaF9HRFVqa0plX0lBTl9PTzExVWRWWERxZXJrdHV3bkNKYUFTb1N6clZUdG1pMUVWZ2M4NWExRE5YRmNKR1ZwTHZra0UtMElhZ3lJZWtKTjF4cTVwb2RydFIzRE0xZkVvZExUdVpzQjJfckU5M21xLUxZY1FJS1Jlc2VXMWJfejhIVjN6dktSRWE4Y2VCaEZtYTRGMVUwNVBlU0d2M051N04yNVY2bjJLMEVxQzZIdnNoV2FmT0cwNGtrS1JNVVZIZF9PMGN2WFpmSXprVWZQV3VtX1k1SGxrLVVjZGtGTGJpNkROMTN0aE9tX014dWtOUE1CQTcyakFqUThmLUNkN3A3c2plNWNxc3NPN24ycVF2TdIBsAJBVV95cUxNV2hvSC1qdEYtRG05NUpqbU81WlFPMS1oQjRKbzhXV2p2RXlDUGNKbEpySnVyR01lMTF6VjRMSnpPUmtkdTBvYk1Way1aTGdPbFF3QmJfX0pGeTR3Q1dST0VQZ1J1MVgtem5zRFZPX1V5a3duYS1NQWdOY0dSUHhQVURvU2t0NjJ0N2VOekVMbFpIN0FvbEpjbVNnaE1VdEtXUkJ6WWJnMVR5UklFVXhFYTdCVEEtcEloVHlET3NDbmYtV3d0dkpDRDJEU3F6N0FuSzVBemZ2NVFVRl9ZWFpYXzI2VU5DRXdobkcySFZBNWhQYzg1alJwVVQtdElScWdHNXFhZEdsaFZNY28tWmpHdlJwb1NuSS1wLVhZMVZLRUdDREZFd1VGTDhNVWpEWlVh?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxNeExSN2tvZjJnX3NsUzhNa2tEaF9HRFVqa0plX0lBTl9PTzExVWRWWERxZXJrdHV3bkNKYUFTb1N6clZUdG1pMUVWZ2M4NWExRE5YRmNKR1ZwTHZra0UtMElhZ3lJZWtKTjF4cTVwb2RydFIzRE0xZkVvZExUdVpzQjJfckU5M21xLUxZY1FJS1Jlc2VXMWJfejhIVjN6dktSRWE4Y2VCaEZtYTRGMVUwNVBlU0d2M051N04yNVY2bjJLMEVxQzZIdnNoV2FmT0cwNGtrS1JNVVZIZF9PMGN2WFpmSXprVWZQV3VtX1k1SGxrLVVjZGtGTGJpNkROMTN0aE9tX014dWtOUE1CQTcyakFqUThmLUNkN3A3c2plNWNxc3NPN24ycVF2TdIBsAJBVV95cUxNV2hvSC1qdEYtRG05NUpqbU81WlFPMS1oQjRKbzhXV2p2RXlDUGNKbEpySnVyR01lMTF6VjRMSnpPUmtkdTBvYk1Way1aTGdPbFF3QmJfX0pGeTR3Q1dST0VQZ1J1MVgtem5zRFZPX1V5a3duYS1NQWdOY0dSUHhQVURvU2t0NjJ0N2VOekVMbFpIN0FvbEpjbVNnaE1VdEtXUkJ6WWJnMVR5UklFVXhFYTdCVEEtcEloVHlET3NDbmYtV3d0dkpDRDJEU3F6N0FuSzVBemZ2NVFVRl9ZWFpYXzI2VU5DRXdobkcySFZBNWhQYzg1alJwVVQtdElScWdHNXFhZEdsaFZNY28tWmpHdlJwb1NuSS1wLVhZMVZLRUdDREZFd1VGTDhNVWpEWlVh?oc=5",
-          "time": "2026-10-17T11:07:08Z",
-          "published_date": "2026-10-17T11:07:08Z",
-          "publishedDate": "2026-10-17T11:07:08Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_iran_israel",
-            "sourceUrl": "https://news.google.com/rss/search?q=Iran+Israel+conflict+missile+drone+strike+escalation+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "8e1ba00fe99a",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMiywJBVV95cUxNbmV3NUszMktrNlZfU3daa2FPc1hieFBvSVFnZW1JaU5TeUZ3OEhmanRnNk5YY3FQd3FMUTJDekhjSUFteHZ2QS11aDhHMTMxUWxHOUpNY0M3aVlTWEt1MTZ6OWRsbjRFSzQ3WmktemYxUW9MNWZsQkdabmxtZmo1V25FV1YzR2xaZXUzbFQtNl9nWC01NEpNUE9qSnZiX2V2a2F6R3hhTEpPZ2FDenJwY0pta21SSFFCMHlzRU92dGE4YmU1RVNFbEtLVDNDTUhXLVV6M1M4LVFpeW9lUHIta20wQXVQLXNnSUhDM2Vra1NCR1JrOVhLV1hNa2dGZTBTNlVOMHFhekdiZHhOZTZDRGZUaEd5WDFPbUl1c1VZRG5wZlFsVmQ1dEpacmNiM0QzWkI1RzNqMVZsaFNOQ3hLSTU5MGNoR0V1VGJR0gHQAkFVX3lxTFA4ZVBxdmQ4UUNYS25MNlRiQVBTVnhTNEVLY0piVEFHMHpFRVBhejl1RWphU09LaTMycmxhWlB1cHA5bHdCbHE0d0R3dWd5SzIwZzA5NEN1ZjlRT2hYdGtIY2xEZTUwZDRoNHY0Uk9DaEJ4MjRLSGVqYVhiMjFiUzB4dVhkTTFWM1ZIOWNfT2pxeWEza0dMYlVwYUF3cDQ1eGx0M3BhNm4tVWJ4QkFGWWM1bmdyXzZtYURPMUFCaFlOM0NZSVV2R0ZoN1g0WWJtWVRXRlgzRURvRzZhT2dUZGFNUVdKNEpqYlBVQ3VmN2tSLWlTRGw0LTk1SzZHTTZ6SnJiekJ1Tnp0VFd4bENCbXVITlhhOU1tcXFuWko4QldKVVNYbGllU0xhMThqd01LSlI3dS02SU5vd2xLdi1zcmMtU2NYV0FYanJwTlRwSGtkcw?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMiywJBVV95cUxNbmV3NUszMktrNlZfU3daa2FPc1hieFBvSVFnZW1JaU5TeUZ3OEhmanRnNk5YY3FQd3FMUTJDekhjSUFteHZ2QS11aDhHMTMxUWxHOUpNY0M3aVlTWEt1MTZ6OWRsbjRFSzQ3WmktemYxUW9MNWZsQkdabmxtZmo1V25FV1YzR2xaZXUzbFQtNl9nWC01NEpNUE9qSnZiX2V2a2F6R3hhTEpPZ2FDenJwY0pta21SSFFCMHlzRU92dGE4YmU1RVNFbEtLVDNDTUhXLVV6M1M4LVFpeW9lUHIta20wQXVQLXNnSUhDM2Vra1NCR1JrOVhLV1hNa2dGZTBTNlVOMHFhekdiZHhOZTZDRGZUaEd5WDFPbUl1c1VZRG5wZlFsVmQ1dEpacmNiM0QzWkI1RzNqMVZsaFNOQ3hLSTU5MGNoR0V1VGJR0gHQAkFVX3lxTFA4ZVBxdmQ4UUNYS25MNlRiQVBTVnhTNEVLY0piVEFHMHpFRVBhejl1RWphU09LaTMycmxhWlB1cHA5bHdCbHE0d0R3dWd5SzIwZzA5NEN1ZjlRT2hYdGtIY2xEZTUwZDRoNHY0Uk9DaEJ4MjRLSGVqYVhiMjFiUzB4dVhkTTFWM1ZIOWNfT2pxeWEza0dMYlVwYUF3cDQ1eGx0M3BhNm4tVWJ4QkFGWWM1bmdyXzZtYURPMUFCaFlOM0NZSVV2R0ZoN1g0WWJtWVRXRlgzRURvRzZhT2dUZGFNUVdKNEpqYlBVQ3VmN2tSLWlTRGw0LTk1SzZHTTZ6SnJiekJ1Tnp0VFd4bENCbXVITlhhOU1tcXFuWko4QldKVVNYbGllU0xhMThqd01LSlI3dS02SU5vd2xLdi1zcmMtU2NYV0FYanJwTlRwSGtkcw?oc=5",
-          "sourceType": "middle-east-conflict",
-          "title": "US-Israel-Iran War Latest Live News: 3 Civilians Killed, 5 Injured in Houthi Attacks on Taiz as Yemen’s Siege Affairs Office Reports Rising Violence Amid Escalating Middle East Tensions - The Sunday Guardian",
-          "summary": "US-Israel-Iran War Latest Live News: 3 Civilians Killed, 5 Injured in Houthi Attacks on Taiz as Yemen’s Siege Affairs Office Reports Rising Violence Amid Escalating Middle East Tensions The Sunday Guardian",
-          "summary_snippet": "US-Israel-Iran War Latest Live News: 3 Civilians Killed, 5 Injured in Houthi Attacks on Taiz as Yemen’s Siege Affairs Office Reports Rising Violence Amid Escalating Middle East Tensions The Sunday Guardian",
-          "source": "https://news.google.com/rss/articles/CBMiywJBVV95cUxNbmV3NUszMktrNlZfU3daa2FPc1hieFBvSVFnZW1JaU5TeUZ3OEhmanRnNk5YY3FQd3FMUTJDekhjSUFteHZ2QS11aDhHMTMxUWxHOUpNY0M3aVlTWEt1MTZ6OWRsbjRFSzQ3WmktemYxUW9MNWZsQkdabmxtZmo1V25FV1YzR2xaZXUzbFQtNl9nWC01NEpNUE9qSnZiX2V2a2F6R3hhTEpPZ2FDenJwY0pta21SSFFCMHlzRU92dGE4YmU1RVNFbEtLVDNDTUhXLVV6M1M4LVFpeW9lUHIta20wQXVQLXNnSUhDM2Vra1NCR1JrOVhLV1hNa2dGZTBTNlVOMHFhekdiZHhOZTZDRGZUaEd5WDFPbUl1c1VZRG5wZlFsVmQ1dEpacmNiM0QzWkI1RzNqMVZsaFNOQ3hLSTU5MGNoR0V1VGJR0gHQAkFVX3lxTFA4ZVBxdmQ4UUNYS25MNlRiQVBTVnhTNEVLY0piVEFHMHpFRVBhejl1RWphU09LaTMycmxhWlB1cHA5bHdCbHE0d0R3dWd5SzIwZzA5NEN1ZjlRT2hYdGtIY2xEZTUwZDRoNHY0Uk9DaEJ4MjRLSGVqYVhiMjFiUzB4dVhkTTFWM1ZIOWNfT2pxeWEza0dMYlVwYUF3cDQ1eGx0M3BhNm4tVWJ4QkFGWWM1bmdyXzZtYURPMUFCaFlOM0NZSVV2R0ZoN1g0WWJtWVRXRlgzRURvRzZhT2dUZGFNUVdKNEpqYlBVQ3VmN2tSLWlTRGw0LTk1SzZHTTZ6SnJiekJ1Tnp0VFd4bENCbXVITlhhOU1tcXFuWko4QldKVVNYbGllU0xhMThqd01LSlI3dS02SU5vd2xLdi1zcmMtU2NYV0FYanJwTlRwSGtkcw?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMiywJBVV95cUxNbmV3NUszMktrNlZfU3daa2FPc1hieFBvSVFnZW1JaU5TeUZ3OEhmanRnNk5YY3FQd3FMUTJDekhjSUFteHZ2QS11aDhHMTMxUWxHOUpNY0M3aVlTWEt1MTZ6OWRsbjRFSzQ3WmktemYxUW9MNWZsQkdabmxtZmo1V25FV1YzR2xaZXUzbFQtNl9nWC01NEpNUE9qSnZiX2V2a2F6R3hhTEpPZ2FDenJwY0pta21SSFFCMHlzRU92dGE4YmU1RVNFbEtLVDNDTUhXLVV6M1M4LVFpeW9lUHIta20wQXVQLXNnSUhDM2Vra1NCR1JrOVhLV1hNa2dGZTBTNlVOMHFhekdiZHhOZTZDRGZUaEd5WDFPbUl1c1VZRG5wZlFsVmQ1dEpacmNiM0QzWkI1RzNqMVZsaFNOQ3hLSTU5MGNoR0V1VGJR0gHQAkFVX3lxTFA4ZVBxdmQ4UUNYS25MNlRiQVBTVnhTNEVLY0piVEFHMHpFRVBhejl1RWphU09LaTMycmxhWlB1cHA5bHdCbHE0d0R3dWd5SzIwZzA5NEN1ZjlRT2hYdGtIY2xEZTUwZDRoNHY0Uk9DaEJ4MjRLSGVqYVhiMjFiUzB4dVhkTTFWM1ZIOWNfT2pxeWEza0dMYlVwYUF3cDQ1eGx0M3BhNm4tVWJ4QkFGWWM1bmdyXzZtYURPMUFCaFlOM0NZSVV2R0ZoN1g0WWJtWVRXRlgzRURvRzZhT2dUZGFNUVdKNEpqYlBVQ3VmN2tSLWlTRGw0LTk1SzZHTTZ6SnJiekJ1Tnp0VFd4bENCbXVITlhhOU1tcXFuWko4QldKVVNYbGllU0xhMThqd01LSlI3dS02SU5vd2xLdi1zcmMtU2NYV0FYanJwTlRwSGtkcw?oc=5",
-          "time": "2026-10-17T10:17:56Z",
-          "published_date": "2026-10-17T10:17:56Z",
-          "publishedDate": "2026-10-17T10:17:56Z",
-          "tag": "Breaking",
-          "confidence": "DEVELOPING",
-          "breaking": true,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_iran_israel",
-            "sourceUrl": "https://news.google.com/rss/search?q=Iran+Israel+conflict+missile+drone+strike+escalation+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "ea01130091bb5aec",
-      "title": "Israeli settlers attack European diplomats in West Bank",
-      "category": "conflict",
-      "confidence": "moderate",
-      "reportCount": 2,
-      "sourceCount": 2,
-      "sources": [
-        "theguardian.com",
-        "news.google.com"
-      ],
-      "anchors": [
-        "israel"
-      ],
-      "firstSeen": "2026-10-17T16:11:59Z",
-      "lastSeen": "2026-10-17T18:20:11Z",
-      "urls": [
-        "https://www.theguardian.com/world/2026/oct/17/israeli-settlers-attack-european-diplomats-in-west-bank",
-        "https://news.google.com/rss/articles/CBMicEFVX3lxTE92Q19aRmhnT2lIZTdybTYxQWcwM21Kekt3WnhEdzROaVU5MnJ0ckw1enUwaUlyQjk4NlBfOGp6N1EtN1NSQnoxUkRzdGFNU2VrMmQ4elpDaEdsY0E5OWpmWnExbzkydWs2WE1vVERoUXQ?oc=5"
-      ],
-      "reports": [
-        {
-          "id": "9edf563710cc",
-          "sourceLabel": "https://www.theguardian.com/world/2026/oct/17/israeli-settlers-attack-european-diplomats-in-west-bank",
-          "sourceName": "https://www.theguardian.com/world/2026/oct/17/israeli-settlers-attack-european-diplomats-in-west-bank",
-          "sourceType": "international",
-          "title": "Israeli settlers attack European diplomats in West Bank",
-          "summary": "French mayor and archbishop also attacked during violent attempt to stop Palestinians harvesting olives Israeli settler militants have attacked European diplomats, a French mayor and the archbishop of Cambrai in Taybeh, in the occupied West Bank, injuring three people and damaging a car, in the latest violent attempt to prevent Palestinians from harvesting olives on their own land. Bernard Baudoux, mayor of Aulnoye-A",
-          "summary_snippet": "French mayor and archbishop also attacked during violent attempt to stop Palestinians harvesting olives Israeli settler militants have attacked European diplomats, a French mayor and the archbishop of Cambrai in Taybeh, in the occupied West Bank, injuring three people and damaging a car, in the latest violent attempt to prevent Palestinians from harvesting olives on their own land. Bernard Baudoux, mayor of Aulnoye-A",
-          "source": "https://www.theguardian.com/world/2026/oct/17/israeli-settlers-attack-european-diplomats-in-west-bank",
-          "url": "https://www.theguardian.com/world/2026/oct/17/israeli-settlers-attack-european-diplomats-in-west-bank",
-          "time": "2026-10-17T18:20:11Z",
-          "published_date": "2026-10-17T18:20:11Z",
-          "publishedDate": "2026-10-17T18:20:11Z",
-          "tag": "Breaking",
-          "confidence": "DEVELOPING",
-          "breaking": true,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "guardian_world",
-            "sourceUrl": "https://www.theguardian.com/world/rss",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "f58d16a2d53c",
-          "sourceLabel": "Google News — World Politics",
-          "sourceName": "Google News — World Politics",
-          "sourceType": "world-politics",
-          "title": "Israeli settlers attack European diplomats in the West Bank - Financial Times",
-          "summary": "Israeli settlers attack European diplomats in the West Bank Financial Times",
-          "summary_snippet": "Israeli settlers attack European diplomats in the West Bank Financial Times",
-          "source": "https://news.google.com/rss/articles/CBMicEFVX3lxTE92Q19aRmhnT2lIZTdybTYxQWcwM21Kekt3WnhEdzROaVU5MnJ0ckw1enUwaUlyQjk4NlBfOGp6N1EtN1NSQnoxUkRzdGFNU2VrMmQ4elpDaEdsY0E5OWpmWnExbzkydWs2WE1vVERoUXQ?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE92Q19aRmhnT2lIZTdybTYxQWcwM21Kekt3WnhEdzROaVU5MnJ0ckw1enUwaUlyQjk4NlBfOGp6N1EtN1NSQnoxUkRzdGFNU2VrMmQ4elpDaEdsY0E5OWpmWnExbzkydWs2WE1vVERoUXQ?oc=5",
-          "time": "2026-10-17T16:11:59Z",
-          "published_date": "2026-10-17T16:11:59Z",
-          "publishedDate": "2026-10-17T16:11:59Z",
-          "tag": "Breaking",
-          "confidence": "DEVELOPING",
-          "breaking": true,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_world_politics",
-            "sourceUrl": "https://news.google.com/rss/search?q=election+parliament+diplomacy+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
         }
@@ -1110,6 +947,72 @@
       ]
     },
     {
+      "id": "112859bc3a476479",
+      "title": "Seven Pakistani soldiers killed in clashes with Afghan forces along Durand Line - India Today",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 2,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "2026-10-17T20:10:13Z",
+      "lastSeen": "2026-10-17T20:10:13Z",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQN0hxankxX0FaMS05SEp1SnF4RzVSRHB2dmJtbjg0RlBrVno5a2NxWmRZT1hHUXpyWjh1T3V6WkNVRVlTeGg0UlA3ODZha2NTazVleWhzSzIyVzNpZ0w4dzZjN25Hc0h1djUtWk5pLVkwbW9hc3B1Z1VzbEFiRFNzejVDS2FlRW1TZWpTdDRTYVJ4UGdMMnkzRzJYTWp1QWU3S3Y2Nkk2QkJreWJtLXo1S1ZGUzRwdVlGSzk4d2ROQ0FseDUydUxIQ3JEQWFhR0QyeDFOa19WV2FoYVBPdFVLcTYwSExSV2fSAecBQVVfeXFMUDdIcWp5MV9BWjEtOUhKdUpxeEc1UkRwdnZibW44NEZQa1Z6OWtjcVpkWU9YR1F6clo4dU91elpDVUVZU3hoNFJQNzg2YWtjU2s1ZXloc0syMlczaWdMOHc2YzduR3NIdXY1LVpOaS1ZMG1vYXNwdWdVc2xBYkRTc3o1Q0thZUVtU2VqU3Q0U2FSeFBnTDJ5M0cyWE1qdUFlN0t2NjZJNkJCa3libS16NUtWRlM0cHVZRks5OHdkTkNBbHg1MnVMSENyREFhYUdEMngxTmtfVldhaGFQT3RVS3E2MEhMUldn?oc=5",
+        "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPNFoteHQ1WFVBZUZpNkw3MVBLeWo4WEphLWpJc2FocjVOcWNYVFBmZ2FCcEJjcXBMaDJBc2I1RjVudU9qbWd5cllkaExRd2Y5V2dKeGRxR1dPMHI1LW1wYTliUDMydkJMdjNEUnNUeE0za3J2ekxqcldrVlpvX2NQQkY3QktSOFh6bFppaktCM0xLeTZDRUI5Um82aEJ3NE9iS0dzMGFyT0VPQ2pCdV9wOVZMQ3A5czJ4LUFfR3V3VU51TFg0T3lreWNFZ2xBU1JkMUVISTVJN2NmSDdfYWRZV01n0gHnAUFVX3lxTFA3SHFqeTFfQVoxLTlISnVKcXhHNVJEcHZ2Ym1uODRGUGtWejlrY3FaZFlPWEdRenJaOHVPdXpaQ1VFWVN4aDRSUDc4NmFrY1NrNWV5aHNLMjJXM2lnTDh3NmM3bkdzSHV2NS1aTmktWTBtb2FzcHVnVXNsQWJEU3N6NUNLYWVFbVNlalN0NFNhUnhQZ0wyeTNHMlhNanVBZTdLdjY2STZCQmt5Ym0tejVLVkZTNHB1WUZLOTh3ZE5DQWx4NTJ1TEhDckRBYWFHRDJ4MU5rX1ZXYWhhUE90VUtxNjBITFJXZw?oc=5"
+      ],
+      "reports": [
+        {
+          "id": "d5b494203721",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQN0hxankxX0FaMS05SEp1SnF4RzVSRHB2dmJtbjg0RlBrVno5a2NxWmRZT1hHUXpyWjh1T3V6WkNVRVlTeGg0UlA3ODZha2NTazVleWhzSzIyVzNpZ0w4dzZjN25Hc0h1djUtWk5pLVkwbW9hc3B1Z1VzbEFiRFNzejVDS2FlRW1TZWpTdDRTYVJ4UGdMMnkzRzJYTWp1QWU3S3Y2Nkk2QkJreWJtLXo1S1ZGUzRwdVlGSzk4d2ROQ0FseDUydUxIQ3JEQWFhR0QyeDFOa19WV2FoYVBPdFVLcTYwSExSV2fSAecBQVVfeXFMUDdIcWp5MV9BWjEtOUhKdUpxeEc1UkRwdnZibW44NEZQa1Z6OWtjcVpkWU9YR1F6clo4dU91elpDVUVZU3hoNFJQNzg2YWtjU2s1ZXloc0syMlczaWdMOHc2YzduR3NIdXY1LVpOaS1ZMG1vYXNwdWdVc2xBYkRTc3o1Q0thZUVtU2VqU3Q0U2FSeFBnTDJ5M0cyWE1qdUFlN0t2NjZJNkJCa3libS16NUtWRlM0cHVZRks5OHdkTkNBbHg1MnVMSENyREFhYUdEMngxTmtfVldhaGFQT3RVS3E2MEhMUldn?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQN0hxankxX0FaMS05SEp1SnF4RzVSRHB2dmJtbjg0RlBrVno5a2NxWmRZT1hHUXpyWjh1T3V6WkNVRVlTeGg0UlA3ODZha2NTazVleWhzSzIyVzNpZ0w4dzZjN25Hc0h1djUtWk5pLVkwbW9hc3B1Z1VzbEFiRFNzejVDS2FlRW1TZWpTdDRTYVJ4UGdMMnkzRzJYTWp1QWU3S3Y2Nkk2QkJreWJtLXo1S1ZGUzRwdVlGSzk4d2ROQ0FseDUydUxIQ3JEQWFhR0QyeDFOa19WV2FoYVBPdFVLcTYwSExSV2fSAecBQVVfeXFMUDdIcWp5MV9BWjEtOUhKdUpxeEc1UkRwdnZibW44NEZQa1Z6OWtjcVpkWU9YR1F6clo4dU91elpDVUVZU3hoNFJQNzg2YWtjU2s1ZXloc0syMlczaWdMOHc2YzduR3NIdXY1LVpOaS1ZMG1vYXNwdWdVc2xBYkRTc3o1Q0thZUVtU2VqU3Q0U2FSeFBnTDJ5M0cyWE1qdUFlN0t2NjZJNkJCa3libS16NUtWRlM0cHVZRks5OHdkTkNBbHg1MnVMSENyREFhYUdEMngxTmtfVldhaGFQT3RVS3E2MEhMUldn?oc=5",
+          "sourceType": "south-asia-conflict",
+          "title": "Seven Pakistani soldiers killed in clashes with Afghan forces along Durand Line - India Today",
+          "summary": "Seven Pakistani soldiers killed in clashes with Afghan forces along Durand Line India Today",
+          "summary_snippet": "Seven Pakistani soldiers killed in clashes with Afghan forces along Durand Line India Today",
+          "source": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQN0hxankxX0FaMS05SEp1SnF4RzVSRHB2dmJtbjg0RlBrVno5a2NxWmRZT1hHUXpyWjh1T3V6WkNVRVlTeGg0UlA3ODZha2NTazVleWhzSzIyVzNpZ0w4dzZjN25Hc0h1djUtWk5pLVkwbW9hc3B1Z1VzbEFiRFNzejVDS2FlRW1TZWpTdDRTYVJ4UGdMMnkzRzJYTWp1QWU3S3Y2Nkk2QkJreWJtLXo1S1ZGUzRwdVlGSzk4d2ROQ0FseDUydUxIQ3JEQWFhR0QyeDFOa19WV2FoYVBPdFVLcTYwSExSV2fSAecBQVVfeXFMUDdIcWp5MV9BWjEtOUhKdUpxeEc1UkRwdnZibW44NEZQa1Z6OWtjcVpkWU9YR1F6clo4dU91elpDVUVZU3hoNFJQNzg2YWtjU2s1ZXloc0syMlczaWdMOHc2YzduR3NIdXY1LVpOaS1ZMG1vYXNwdWdVc2xBYkRTc3o1Q0thZUVtU2VqU3Q0U2FSeFBnTDJ5M0cyWE1qdUFlN0t2NjZJNkJCa3libS16NUtWRlM0cHVZRks5OHdkTkNBbHg1MnVMSENyREFhYUdEMngxTmtfVldhaGFQT3RVS3E2MEhMUldn?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQN0hxankxX0FaMS05SEp1SnF4RzVSRHB2dmJtbjg0RlBrVno5a2NxWmRZT1hHUXpyWjh1T3V6WkNVRVlTeGg0UlA3ODZha2NTazVleWhzSzIyVzNpZ0w4dzZjN25Hc0h1djUtWk5pLVkwbW9hc3B1Z1VzbEFiRFNzejVDS2FlRW1TZWpTdDRTYVJ4UGdMMnkzRzJYTWp1QWU3S3Y2Nkk2QkJreWJtLXo1S1ZGUzRwdVlGSzk4d2ROQ0FseDUydUxIQ3JEQWFhR0QyeDFOa19WV2FoYVBPdFVLcTYwSExSV2fSAecBQVVfeXFMUDdIcWp5MV9BWjEtOUhKdUpxeEc1UkRwdnZibW44NEZQa1Z6OWtjcVpkWU9YR1F6clo4dU91elpDVUVZU3hoNFJQNzg2YWtjU2s1ZXloc0syMlczaWdMOHc2YzduR3NIdXY1LVpOaS1ZMG1vYXNwdWdVc2xBYkRTc3o1Q0thZUVtU2VqU3Q0U2FSeFBnTDJ5M0cyWE1qdUFlN0t2NjZJNkJCa3libS16NUtWRlM0cHVZRks5OHdkTkNBbHg1MnVMSENyREFhYUdEMngxTmtfVldhaGFQT3RVS3E2MEhMUldn?oc=5",
+          "time": "2026-10-17T20:10:13Z",
+          "published_date": "2026-10-17T20:10:13Z",
+          "publishedDate": "2026-10-17T20:10:13Z",
+          "tag": "Breaking",
+          "confidence": "DEVELOPING",
+          "breaking": true,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_afghanistan_security",
+            "sourceUrl": "https://news.google.com/rss/search?q=Afghanistan+Taliban+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "f84eae14bb96",
+          "sourceLabel": "Google News — Afghanistan Security",
+          "sourceName": "Google News — Afghanistan Security",
+          "sourceType": "south-asia-conflict",
+          "title": "Seven Pakistani soldiers killed in clashes with Afghan forces along Durand Line - India Today",
+          "summary": "Seven Pakistani soldiers killed in clashes with Afghan forces along Durand Line India Today",
+          "summary_snippet": "Seven Pakistani soldiers killed in clashes with Afghan forces along Durand Line India Today",
+          "source": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPNFoteHQ1WFVBZUZpNkw3MVBLeWo4WEphLWpJc2FocjVOcWNYVFBmZ2FCcEJjcXBMaDJBc2I1RjVudU9qbWd5cllkaExRd2Y5V2dKeGRxR1dPMHI1LW1wYTliUDMydkJMdjNEUnNUeE0za3J2ekxqcldrVlpvX2NQQkY3QktSOFh6bFppaktCM0xLeTZDRUI5Um82aEJ3NE9iS0dzMGFyT0VPQ2pCdV9wOVZMQ3A5czJ4LUFfR3V3VU51TFg0T3lreWNFZ2xBU1JkMUVISTVJN2NmSDdfYWRZV01n0gHnAUFVX3lxTFA3SHFqeTFfQVoxLTlISnVKcXhHNVJEcHZ2Ym1uODRGUGtWejlrY3FaZFlPWEdRenJaOHVPdXpaQ1VFWVN4aDRSUDc4NmFrY1NrNWV5aHNLMjJXM2lnTDh3NmM3bkdzSHV2NS1aTmktWTBtb2FzcHVnVXNsQWJEU3N6NUNLYWVFbVNlalN0NFNhUnhQZ0wyeTNHMlhNanVBZTdLdjY2STZCQmt5Ym0tejVLVkZTNHB1WUZLOTh3ZE5DQWx4NTJ1TEhDckRBYWFHRDJ4MU5rX1ZXYWhhUE90VUtxNjBITFJXZw?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPNFoteHQ1WFVBZUZpNkw3MVBLeWo4WEphLWpJc2FocjVOcWNYVFBmZ2FCcEJjcXBMaDJBc2I1RjVudU9qbWd5cllkaExRd2Y5V2dKeGRxR1dPMHI1LW1wYTliUDMydkJMdjNEUnNUeE0za3J2ekxqcldrVlpvX2NQQkY3QktSOFh6bFppaktCM0xLeTZDRUI5Um82aEJ3NE9iS0dzMGFyT0VPQ2pCdV9wOVZMQ3A5czJ4LUFfR3V3VU51TFg0T3lreWNFZ2xBU1JkMUVISTVJN2NmSDdfYWRZV01n0gHnAUFVX3lxTFA3SHFqeTFfQVoxLTlISnVKcXhHNVJEcHZ2Ym1uODRGUGtWejlrY3FaZFlPWEdRenJaOHVPdXpaQ1VFWVN4aDRSUDc4NmFrY1NrNWV5aHNLMjJXM2lnTDh3NmM3bkdzSHV2NS1aTmktWTBtb2FzcHVnVXNsQWJEU3N6NUNLYWVFbVNlalN0NFNhUnhQZ0wyeTNHMlhNanVBZTdLdjY2STZCQmt5Ym0tejVLVkZTNHB1WUZLOTh3ZE5DQWx4NTJ1TEhDckRBYWFHRDJ4MU5rX1ZXYWhhUE90VUtxNjBITFJXZw?oc=5",
+          "time": "2026-10-17T20:10:13Z",
+          "published_date": "2026-10-17T20:10:13Z",
+          "publishedDate": "2026-10-17T20:10:13Z",
+          "tag": "Breaking",
+          "confidence": "DEVELOPING",
+          "breaking": true,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_afghanistan_security",
+            "sourceUrl": "https://news.google.com/rss/search?q=Afghanistan+Taliban+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
       "id": "b24bb43f31cb984e",
       "title": "Green forest fire notification in Sudan",
       "category": "general",
@@ -1131,8 +1034,8 @@
       "reports": [
         {
           "id": "fedb33a33965",
-          "sourceLabel": "GDACS Global Disaster Alerts",
-          "sourceName": "GDACS Global Disaster Alerts",
+          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032875",
+          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032875",
           "sourceType": "climate-hazard",
           "title": "Green forest fire notification in Sudan",
           "summary": "On 13/10/2026, a forest fire started in Sudan, until 17/10/2026.",
@@ -1154,8 +1057,8 @@
         },
         {
           "id": "50e9721106d0",
-          "sourceLabel": "GDACS Global Disaster Alerts",
-          "sourceName": "GDACS Global Disaster Alerts",
+          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032872",
+          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032872",
           "sourceType": "climate-hazard",
           "title": "Green forest fire notification in Sudan",
           "summary": "On 14/10/2026, a forest fire started in Sudan, until 17/10/2026.",
@@ -1172,6 +1075,72 @@
           "credit": {
             "sourceId": "gdacs_global_disaster_alerts",
             "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
+      "id": "d5ab405cf163ceab",
+      "title": "Pakistani forces, Afghan Taliban exchange fire after militants attempt to infiltrate Pakistan - Goshen News",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 2,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "2026-10-17T17:49:00Z",
+      "lastSeen": "2026-10-17T17:49:54Z",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMilwJBVV95cUxPakh6aUw5YzJBRDN0b0cwQUVzb0doczdpMW9udUVJcC1ZWE5kUldwNnJpYWgwQk1EZnhORnkyY29MYWJEa2M3dDlPbHRqRHZRZDNsdDQ4Xzk2Vm95UkxYOU5vVWJOcGpZUDRBQzlHS2ctZllkV0J6UUNkcnhyRVVQeWhCcm1RdzBMRFlQOTJ1WGVjYm43cDA5Q19BRHkyNGQ4VkpUeHhjZWZ2TXhISzA5aFVfTG9CNE9DZldkb3h6eVlQUzZuQ2ZrU01TWDNWanpXNkxkaHd3bVkzbnlKcjhVaVZwdVhQVkVMdy14ZERBbHhhZjNYZy1NMWFDYndiVml5cDlKSjRyYnZxdmcyV19VemVwVFRIdWM?oc=5",
+        "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQeTN5NEtkT05nX1pSOXpKMXZraVY2VGhWcklJSWU2bVZjM3NqcWpHdDV1b3daZXNOVkdPZGR2b3BIX3haX0lDakc4dTg3eFBQY0U3dGl5QmZVNkdFZjJOTFhncEZyX0twZ05Ha2RXMG5hcG4tcXhYMGdTTEV0RENSb21kMkZsb1JSejg1eC1EV3ZTcDNKblRWWm5la2NoMl9YUURzVFN5QXJJTDEzaVA2MGhFYWJxTm1T?oc=5"
+      ],
+      "reports": [
+        {
+          "id": "0012f1c0d9b5",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMilwJBVV95cUxPakh6aUw5YzJBRDN0b0cwQUVzb0doczdpMW9udUVJcC1ZWE5kUldwNnJpYWgwQk1EZnhORnkyY29MYWJEa2M3dDlPbHRqRHZRZDNsdDQ4Xzk2Vm95UkxYOU5vVWJOcGpZUDRBQzlHS2ctZllkV0J6UUNkcnhyRVVQeWhCcm1RdzBMRFlQOTJ1WGVjYm43cDA5Q19BRHkyNGQ4VkpUeHhjZWZ2TXhISzA5aFVfTG9CNE9DZldkb3h6eVlQUzZuQ2ZrU01TWDNWanpXNkxkaHd3bVkzbnlKcjhVaVZwdVhQVkVMdy14ZERBbHhhZjNYZy1NMWFDYndiVml5cDlKSjRyYnZxdmcyV19VemVwVFRIdWM?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMilwJBVV95cUxPakh6aUw5YzJBRDN0b0cwQUVzb0doczdpMW9udUVJcC1ZWE5kUldwNnJpYWgwQk1EZnhORnkyY29MYWJEa2M3dDlPbHRqRHZRZDNsdDQ4Xzk2Vm95UkxYOU5vVWJOcGpZUDRBQzlHS2ctZllkV0J6UUNkcnhyRVVQeWhCcm1RdzBMRFlQOTJ1WGVjYm43cDA5Q19BRHkyNGQ4VkpUeHhjZWZ2TXhISzA5aFVfTG9CNE9DZldkb3h6eVlQUzZuQ2ZrU01TWDNWanpXNkxkaHd3bVkzbnlKcjhVaVZwdVhQVkVMdy14ZERBbHhhZjNYZy1NMWFDYndiVml5cDlKSjRyYnZxdmcyV19VemVwVFRIdWM?oc=5",
+          "sourceType": "south-asia-conflict",
+          "title": "Pakistani forces, Afghan Taliban exchange fire after militants attempt to infiltrate Pakistan - Goshen News",
+          "summary": "Pakistani forces, Afghan Taliban exchange fire after militants attempt to infiltrate Pakistan Goshen News",
+          "summary_snippet": "Pakistani forces, Afghan Taliban exchange fire after militants attempt to infiltrate Pakistan Goshen News",
+          "source": "https://news.google.com/rss/articles/CBMilwJBVV95cUxPakh6aUw5YzJBRDN0b0cwQUVzb0doczdpMW9udUVJcC1ZWE5kUldwNnJpYWgwQk1EZnhORnkyY29MYWJEa2M3dDlPbHRqRHZRZDNsdDQ4Xzk2Vm95UkxYOU5vVWJOcGpZUDRBQzlHS2ctZllkV0J6UUNkcnhyRVVQeWhCcm1RdzBMRFlQOTJ1WGVjYm43cDA5Q19BRHkyNGQ4VkpUeHhjZWZ2TXhISzA5aFVfTG9CNE9DZldkb3h6eVlQUzZuQ2ZrU01TWDNWanpXNkxkaHd3bVkzbnlKcjhVaVZwdVhQVkVMdy14ZERBbHhhZjNYZy1NMWFDYndiVml5cDlKSjRyYnZxdmcyV19VemVwVFRIdWM?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxPakh6aUw5YzJBRDN0b0cwQUVzb0doczdpMW9udUVJcC1ZWE5kUldwNnJpYWgwQk1EZnhORnkyY29MYWJEa2M3dDlPbHRqRHZRZDNsdDQ4Xzk2Vm95UkxYOU5vVWJOcGpZUDRBQzlHS2ctZllkV0J6UUNkcnhyRVVQeWhCcm1RdzBMRFlQOTJ1WGVjYm43cDA5Q19BRHkyNGQ4VkpUeHhjZWZ2TXhISzA5aFVfTG9CNE9DZldkb3h6eVlQUzZuQ2ZrU01TWDNWanpXNkxkaHd3bVkzbnlKcjhVaVZwdVhQVkVMdy14ZERBbHhhZjNYZy1NMWFDYndiVml5cDlKSjRyYnZxdmcyV19VemVwVFRIdWM?oc=5",
+          "time": "2026-10-17T17:49:54Z",
+          "published_date": "2026-10-17T17:49:54Z",
+          "publishedDate": "2026-10-17T17:49:54Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_afghanistan_security",
+            "sourceUrl": "https://news.google.com/rss/search?q=Afghanistan+Taliban+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "abdb2094dcae",
+          "sourceLabel": "Google News — Afghanistan Security",
+          "sourceName": "Google News — Afghanistan Security",
+          "sourceType": "south-asia-conflict",
+          "title": "Pakistani forces, Afghan Taliban exchange fire after militants attempt to infiltrate Pakistan - AP News",
+          "summary": "Pakistani forces, Afghan Taliban exchange fire after militants attempt to infiltrate Pakistan AP News",
+          "summary_snippet": "Pakistani forces, Afghan Taliban exchange fire after militants attempt to infiltrate Pakistan AP News",
+          "source": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQeTN5NEtkT05nX1pSOXpKMXZraVY2VGhWcklJSWU2bVZjM3NqcWpHdDV1b3daZXNOVkdPZGR2b3BIX3haX0lDakc4dTg3eFBQY0U3dGl5QmZVNkdFZjJOTFhncEZyX0twZ05Ha2RXMG5hcG4tcXhYMGdTTEV0RENSb21kMkZsb1JSejg1eC1EV3ZTcDNKblRWWm5la2NoMl9YUURzVFN5QXJJTDEzaVA2MGhFYWJxTm1T?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQeTN5NEtkT05nX1pSOXpKMXZraVY2VGhWcklJSWU2bVZjM3NqcWpHdDV1b3daZXNOVkdPZGR2b3BIX3haX0lDakc4dTg3eFBQY0U3dGl5QmZVNkdFZjJOTFhncEZyX0twZ05Ha2RXMG5hcG4tcXhYMGdTTEV0RENSb21kMkZsb1JSejg1eC1EV3ZTcDNKblRWWm5la2NoMl9YUURzVFN5QXJJTDEzaVA2MGhFYWJxTm1T?oc=5",
+          "time": "2026-10-17T17:49:00Z",
+          "published_date": "2026-10-17T17:49:00Z",
+          "publishedDate": "2026-10-17T17:49:00Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_afghanistan_security",
+            "sourceUrl": "https://news.google.com/rss/search?q=Afghanistan+Taliban+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
         }
@@ -1224,8 +1193,8 @@
         },
         {
           "id": "a9d82abddb2a",
-          "sourceLabel": "Google News — Ukraine War",
-          "sourceName": "Google News — Ukraine War",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1fSzJPMHR3MlRNcGhCbERLQ0JSS0o3QTNOSjRVQktQQW1oa2xHeXc4OVIxOGtGQVhFWnMwMVp3WVBGa2x4Z0N4YTVFeU9vTElUVEtZQ1RnaWN5WlRJZ3BfYlQ3VThEMUFKRHFpYVNJZkN3Q1VSZXBxVHliMTUzZUk?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1fSzJPMHR3MlRNcGhCbERLQ0JSS0o3QTNOSjRVQktQQW1oa2xHeXc4OVIxOGtGQVhFWnMwMVp3WVBGa2x4Z0N4YTVFeU9vTElUVEtZQ1RnaWN5WlRJZ3BfYlQ3VThEMUFKRHFpYVNJZkN3Q1VSZXBxVHliMTUzZUk?oc=5",
           "sourceType": "europe-conflict",
           "title": "Ex- Ukraine footballer killed in Russian war 20 months after going missing - www.the-sun.com",
           "summary": "Ex- Ukraine footballer killed in Russian war 20 months after going missing www.the-sun.com",
@@ -1242,6 +1211,72 @@
           "credit": {
             "sourceId": "google_news_ukraine_war",
             "sourceUrl": "https://news.google.com/rss/search?q=Ukraine+Russia+war+frontline+missile+drone+strike+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
+      "id": "5e8d816029ec1783",
+      "title": "Pakistan Army responds to ‘unprovoked’ Afghan Taliban firing in Kurram sector: state media - Business Recorder",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 2,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "2026-10-17T17:04:07Z",
+      "lastSeen": "2026-10-17T17:04:07Z",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMixgFBVV95cUxOcXVzSmNIY1NoREpVaGVtd2Z5Uk5RMzBKYmFFTWozVy0tZ1lIQjNBQ3NZbWJDTC1HcWJvWThaeVlrVUszaTRqLXAtYmRBTi1wTXo3N0JlYV9OZlNiT0lNR1NiWHRqOURpaUpMQW9OMms3MzRsV2ZDZkhCYktEYXRtZ2ppTnZ6XzdfQlg5cHNXQXNkV0lzdTJVS09KOWY0aV9NanE4cjdGb1ktYWRoRFJFXzFKblJvUFQwTEFMcHRmaExJbGxKNEHSAVZBVV95cUxQY293ZmZWSWRwcG82MHNaUXozT3g3RGRvWEp6Z2lFM09ZQzZSdERwY2JCb1ZHMFMxeGdrM1RTMmlRYVJWMEZIZG0zbm5NM0lGeVItaGo5UQ?oc=5",
+        "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9MeDQyQzBaRDZSVXl2MHNkZHB4WVRsR0lGQTdlNjNaMXJSbzVicGtKQ1FsbUxMTUc5eVQtUm5PejJHWTIyUW1idGZ4MEJXY3FI0gFWQVVfeXFMUGNvd2ZmVklkcHBvNjBzWlF6M094N0Rkb1hKemdpRTNPWUM2UnREcGNiQm9WRzBTMXhnazNUUzJpUWFSVjBGSGRtM25uTTNJRnlSLWhqOVE?oc=5"
+      ],
+      "reports": [
+        {
+          "id": "8abb748fa373",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOcXVzSmNIY1NoREpVaGVtd2Z5Uk5RMzBKYmFFTWozVy0tZ1lIQjNBQ3NZbWJDTC1HcWJvWThaeVlrVUszaTRqLXAtYmRBTi1wTXo3N0JlYV9OZlNiT0lNR1NiWHRqOURpaUpMQW9OMms3MzRsV2ZDZkhCYktEYXRtZ2ppTnZ6XzdfQlg5cHNXQXNkV0lzdTJVS09KOWY0aV9NanE4cjdGb1ktYWRoRFJFXzFKblJvUFQwTEFMcHRmaExJbGxKNEHSAVZBVV95cUxQY293ZmZWSWRwcG82MHNaUXozT3g3RGRvWEp6Z2lFM09ZQzZSdERwY2JCb1ZHMFMxeGdrM1RTMmlRYVJWMEZIZG0zbm5NM0lGeVItaGo5UQ?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOcXVzSmNIY1NoREpVaGVtd2Z5Uk5RMzBKYmFFTWozVy0tZ1lIQjNBQ3NZbWJDTC1HcWJvWThaeVlrVUszaTRqLXAtYmRBTi1wTXo3N0JlYV9OZlNiT0lNR1NiWHRqOURpaUpMQW9OMms3MzRsV2ZDZkhCYktEYXRtZ2ppTnZ6XzdfQlg5cHNXQXNkV0lzdTJVS09KOWY0aV9NanE4cjdGb1ktYWRoRFJFXzFKblJvUFQwTEFMcHRmaExJbGxKNEHSAVZBVV95cUxQY293ZmZWSWRwcG82MHNaUXozT3g3RGRvWEp6Z2lFM09ZQzZSdERwY2JCb1ZHMFMxeGdrM1RTMmlRYVJWMEZIZG0zbm5NM0lGeVItaGo5UQ?oc=5",
+          "sourceType": "south-asia-conflict",
+          "title": "Pakistan Army responds to ‘unprovoked’ Afghan Taliban firing in Kurram sector: state media - Business Recorder",
+          "summary": "Pakistan Army responds to ‘unprovoked’ Afghan Taliban firing in Kurram sector: state media Business Recorder",
+          "summary_snippet": "Pakistan Army responds to ‘unprovoked’ Afghan Taliban firing in Kurram sector: state media Business Recorder",
+          "source": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOcXVzSmNIY1NoREpVaGVtd2Z5Uk5RMzBKYmFFTWozVy0tZ1lIQjNBQ3NZbWJDTC1HcWJvWThaeVlrVUszaTRqLXAtYmRBTi1wTXo3N0JlYV9OZlNiT0lNR1NiWHRqOURpaUpMQW9OMms3MzRsV2ZDZkhCYktEYXRtZ2ppTnZ6XzdfQlg5cHNXQXNkV0lzdTJVS09KOWY0aV9NanE4cjdGb1ktYWRoRFJFXzFKblJvUFQwTEFMcHRmaExJbGxKNEHSAVZBVV95cUxQY293ZmZWSWRwcG82MHNaUXozT3g3RGRvWEp6Z2lFM09ZQzZSdERwY2JCb1ZHMFMxeGdrM1RTMmlRYVJWMEZIZG0zbm5NM0lGeVItaGo5UQ?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOcXVzSmNIY1NoREpVaGVtd2Z5Uk5RMzBKYmFFTWozVy0tZ1lIQjNBQ3NZbWJDTC1HcWJvWThaeVlrVUszaTRqLXAtYmRBTi1wTXo3N0JlYV9OZlNiT0lNR1NiWHRqOURpaUpMQW9OMms3MzRsV2ZDZkhCYktEYXRtZ2ppTnZ6XzdfQlg5cHNXQXNkV0lzdTJVS09KOWY0aV9NanE4cjdGb1ktYWRoRFJFXzFKblJvUFQwTEFMcHRmaExJbGxKNEHSAVZBVV95cUxQY293ZmZWSWRwcG82MHNaUXozT3g3RGRvWEp6Z2lFM09ZQzZSdERwY2JCb1ZHMFMxeGdrM1RTMmlRYVJWMEZIZG0zbm5NM0lGeVItaGo5UQ?oc=5",
+          "time": "2026-10-17T17:04:07Z",
+          "published_date": "2026-10-17T17:04:07Z",
+          "publishedDate": "2026-10-17T17:04:07Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_afghanistan_security",
+            "sourceUrl": "https://news.google.com/rss/search?q=Afghanistan+Taliban+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "3af01c61589b",
+          "sourceLabel": "Google News — Afghanistan Security",
+          "sourceName": "Google News — Afghanistan Security",
+          "sourceType": "south-asia-conflict",
+          "title": "Pakistan Army responds to ‘unprovoked’ Afghan Taliban firing in Kurram sector: state media - Business Recorder",
+          "summary": "Pakistan Army responds to ‘unprovoked’ Afghan Taliban firing in Kurram sector: state media Business Recorder",
+          "summary_snippet": "Pakistan Army responds to ‘unprovoked’ Afghan Taliban firing in Kurram sector: state media Business Recorder",
+          "source": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9MeDQyQzBaRDZSVXl2MHNkZHB4WVRsR0lGQTdlNjNaMXJSbzVicGtKQ1FsbUxMTUc5eVQtUm5PejJHWTIyUW1idGZ4MEJXY3FI0gFWQVVfeXFMUGNvd2ZmVklkcHBvNjBzWlF6M094N0Rkb1hKemdpRTNPWUM2UnREcGNiQm9WRzBTMXhnazNUUzJpUWFSVjBGSGRtM25uTTNJRnlSLWhqOVE?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9MeDQyQzBaRDZSVXl2MHNkZHB4WVRsR0lGQTdlNjNaMXJSbzVicGtKQ1FsbUxMTUc5eVQtUm5PejJHWTIyUW1idGZ4MEJXY3FI0gFWQVVfeXFMUGNvd2ZmVklkcHBvNjBzWlF6M094N0Rkb1hKemdpRTNPWUM2UnREcGNiQm9WRzBTMXhnazNUUzJpUWFSVjBGSGRtM25uTTNJRnlSLWhqOVE?oc=5",
+          "time": "2026-10-17T17:04:07Z",
+          "published_date": "2026-10-17T17:04:07Z",
+          "publishedDate": "2026-10-17T17:04:07Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_afghanistan_security",
+            "sourceUrl": "https://news.google.com/rss/search?q=Afghanistan+Taliban+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
         }
@@ -1356,8 +1391,8 @@
         },
         {
           "id": "ef39bfb77931",
-          "sourceLabel": "Google News — Afghanistan Security",
-          "sourceName": "Google News — Afghanistan Security",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQQlhrQVRYelVxSEF1cGJRU2dUcjNvVTZYT1ZfRWVKalRmNkJMYVNWdW9neDZuTVhrVFJnZE93X1RqMEt1ZHJ6TjAzYkRlN0E5YWlMSlVDQ2FQU0NzVFB1VkM5UEVsNGNtdU5ZaHhmMnVkV3JHcnF2Z3JWT2xZTWEyaU1Hc2pRSXlJU3ZlZ1VMNG1lVlE1WFU0SlMtdU1xUkQtRDhTYWQzbHBPb3ZYQzFKTVYyVQ?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQQlhrQVRYelVxSEF1cGJRU2dUcjNvVTZYT1ZfRWVKalRmNkJMYVNWdW9neDZuTVhrVFJnZE93X1RqMEt1ZHJ6TjAzYkRlN0E5YWlMSlVDQ2FQU0NzVFB1VkM5UEVsNGNtdU5ZaHhmMnVkV3JHcnF2Z3JWT2xZTWEyaU1Hc2pRSXlJU3ZlZ1VMNG1lVlE1WFU0SlMtdU1xUkQtRDhTYWQzbHBPb3ZYQzFKTVYyVQ?oc=5",
           "sourceType": "south-asia-conflict",
           "title": "Pakistan Army hits Afghan Taliban positions after cross-border firing in KP - Aaj English TV",
           "summary": "Pakistan Army hits Afghan Taliban positions after cross-border firing in KP Aaj English TV",
@@ -1374,6 +1409,74 @@
           "credit": {
             "sourceId": "google_news_afghanistan_security",
             "sourceUrl": "https://news.google.com/rss/search?q=Afghanistan+Taliban+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
+      "id": "82a9e4bbbdbb49f5",
+      "title": "Trump's decision to waive Russian sanctions outrages Congress, but no quick counter seen - PBS",
+      "category": "diplomatic",
+      "confidence": "low",
+      "reportCount": 2,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [
+        "russia"
+      ],
+      "firstSeen": "2026-10-17T15:31:56Z",
+      "lastSeen": "2026-10-17T15:57:10Z",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQNzZONHNudUlsZUZGN1c5dVZtaTRIXzZlVVJDRkpock9WVEExbmNKdl9JLWZhSjQxVHpDLUJ6M3hnNXJIeFJNTWJSWnJQc3duc2VvcDJ0QzRpbzZlZ3lJVnJDQi1hbkY1cF9QbG5vc2ZhNVBacVBBVUhBN3JnamR2b1NjSi02UzZDQXJ0TTFKVmpQUXAtQ0RYSGdQNU9TZ0hkdkNQeXZKUG9hRFFlblpBNTdid1Nzc0UwZi1nd09HRDA1QdIBxwFBVV95cUxQSm94MFV3UHdyM2dGSHBlajNTS2lYLUhtUHlNVkFrdW9XYUhQUDJjaFM3WlByc3pxb3FMWHVwY0xFMUlSWE5EYTZQaENxNEZEUXVVdVcteWFHeU51QjFTVEJsQi03YmhsM2h6NFczZk5MUjN3UWxEd0VaN3YzQ3paa25uUEVNVVM1S3YxN3B3UVpWaGhfcmF0cWRQdFpodVBfV2NZaklHOVRlX285V3RvelEtOVRIN25Ra1lUZk53bEdmTWFwZmIw?oc=5",
+        "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOTEdiT1F0cFRiSlp4ZXVtRWxyNzZFTE8zbGZsLWJ3RkJ0bl8yNnpwUkl1LTQyTU9lUmV6YUZqNmJWRk5Mb0lFdWgtdmR4bGU5Uzh5WThsNDctN0VSQzlfWVFBWkprMEJqb1FSeHVYZTZ1UEFnMHU2ZWNXeEd4TFV2YzVjamczSElGTXZvX0kzaTBBUFNVY2ZjalVDYVBDeGtUTjhtaXl5aTNsaGcxc0ZDVTJZQ2NWTnNuQWtiT1hhb0Z4TVI0X05XY3g4S1diS21lMEE?oc=5"
+      ],
+      "reports": [
+        {
+          "id": "3ceed0baf609",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQNzZONHNudUlsZUZGN1c5dVZtaTRIXzZlVVJDRkpock9WVEExbmNKdl9JLWZhSjQxVHpDLUJ6M3hnNXJIeFJNTWJSWnJQc3duc2VvcDJ0QzRpbzZlZ3lJVnJDQi1hbkY1cF9QbG5vc2ZhNVBacVBBVUhBN3JnamR2b1NjSi02UzZDQXJ0TTFKVmpQUXAtQ0RYSGdQNU9TZ0hkdkNQeXZKUG9hRFFlblpBNTdid1Nzc0UwZi1nd09HRDA1QdIBxwFBVV95cUxQSm94MFV3UHdyM2dGSHBlajNTS2lYLUhtUHlNVkFrdW9XYUhQUDJjaFM3WlByc3pxb3FMWHVwY0xFMUlSWE5EYTZQaENxNEZEUXVVdVcteWFHeU51QjFTVEJsQi03YmhsM2h6NFczZk5MUjN3UWxEd0VaN3YzQ3paa25uUEVNVVM1S3YxN3B3UVpWaGhfcmF0cWRQdFpodVBfV2NZaklHOVRlX285V3RvelEtOVRIN25Ra1lUZk53bEdmTWFwZmIw?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQNzZONHNudUlsZUZGN1c5dVZtaTRIXzZlVVJDRkpock9WVEExbmNKdl9JLWZhSjQxVHpDLUJ6M3hnNXJIeFJNTWJSWnJQc3duc2VvcDJ0QzRpbzZlZ3lJVnJDQi1hbkY1cF9QbG5vc2ZhNVBacVBBVUhBN3JnamR2b1NjSi02UzZDQXJ0TTFKVmpQUXAtQ0RYSGdQNU9TZ0hkdkNQeXZKUG9hRFFlblpBNTdid1Nzc0UwZi1nd09HRDA1QdIBxwFBVV95cUxQSm94MFV3UHdyM2dGSHBlajNTS2lYLUhtUHlNVkFrdW9XYUhQUDJjaFM3WlByc3pxb3FMWHVwY0xFMUlSWE5EYTZQaENxNEZEUXVVdVcteWFHeU51QjFTVEJsQi03YmhsM2h6NFczZk5MUjN3UWxEd0VaN3YzQ3paa25uUEVNVVM1S3YxN3B3UVpWaGhfcmF0cWRQdFpodVBfV2NZaklHOVRlX285V3RvelEtOVRIN25Ra1lUZk53bEdmTWFwZmIw?oc=5",
+          "sourceType": "us-politics",
+          "title": "Trump's decision to waive Russian sanctions outrages Congress, but no quick counter seen - PBS",
+          "summary": "Trump's decision to waive Russian sanctions outrages Congress, but no quick counter seen PBS",
+          "summary_snippet": "Trump's decision to waive Russian sanctions outrages Congress, but no quick counter seen PBS",
+          "source": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQNzZONHNudUlsZUZGN1c5dVZtaTRIXzZlVVJDRkpock9WVEExbmNKdl9JLWZhSjQxVHpDLUJ6M3hnNXJIeFJNTWJSWnJQc3duc2VvcDJ0QzRpbzZlZ3lJVnJDQi1hbkY1cF9QbG5vc2ZhNVBacVBBVUhBN3JnamR2b1NjSi02UzZDQXJ0TTFKVmpQUXAtQ0RYSGdQNU9TZ0hkdkNQeXZKUG9hRFFlblpBNTdid1Nzc0UwZi1nd09HRDA1QdIBxwFBVV95cUxQSm94MFV3UHdyM2dGSHBlajNTS2lYLUhtUHlNVkFrdW9XYUhQUDJjaFM3WlByc3pxb3FMWHVwY0xFMUlSWE5EYTZQaENxNEZEUXVVdVcteWFHeU51QjFTVEJsQi03YmhsM2h6NFczZk5MUjN3UWxEd0VaN3YzQ3paa25uUEVNVVM1S3YxN3B3UVpWaGhfcmF0cWRQdFpodVBfV2NZaklHOVRlX285V3RvelEtOVRIN25Ra1lUZk53bEdmTWFwZmIw?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQNzZONHNudUlsZUZGN1c5dVZtaTRIXzZlVVJDRkpock9WVEExbmNKdl9JLWZhSjQxVHpDLUJ6M3hnNXJIeFJNTWJSWnJQc3duc2VvcDJ0QzRpbzZlZ3lJVnJDQi1hbkY1cF9QbG5vc2ZhNVBacVBBVUhBN3JnamR2b1NjSi02UzZDQXJ0TTFKVmpQUXAtQ0RYSGdQNU9TZ0hkdkNQeXZKUG9hRFFlblpBNTdid1Nzc0UwZi1nd09HRDA1QdIBxwFBVV95cUxQSm94MFV3UHdyM2dGSHBlajNTS2lYLUhtUHlNVkFrdW9XYUhQUDJjaFM3WlByc3pxb3FMWHVwY0xFMUlSWE5EYTZQaENxNEZEUXVVdVcteWFHeU51QjFTVEJsQi03YmhsM2h6NFczZk5MUjN3UWxEd0VaN3YzQ3paa25uUEVNVVM1S3YxN3B3UVpWaGhfcmF0cWRQdFpodVBfV2NZaklHOVRlX285V3RvelEtOVRIN25Ra1lUZk53bEdmTWFwZmIw?oc=5",
+          "time": "2026-10-17T15:57:10Z",
+          "published_date": "2026-10-17T15:57:10Z",
+          "publishedDate": "2026-10-17T15:57:10Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_u_s_politics",
+            "sourceUrl": "https://news.google.com/rss/search?q=US+politics+Congress+Senate+White+House+election+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "b9d1458b4bd5",
+          "sourceLabel": "Google News — U.S. Politics",
+          "sourceName": "Google News — U.S. Politics",
+          "sourceType": "us-politics",
+          "title": "Trump’s decision to waive Russian sanctions outrages Congress, but no quick counter seen - Los Angeles Times",
+          "summary": "Trump’s decision to waive Russian sanctions outrages Congress, but no quick counter seen Los Angeles Times",
+          "summary_snippet": "Trump’s decision to waive Russian sanctions outrages Congress, but no quick counter seen Los Angeles Times",
+          "source": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOTEdiT1F0cFRiSlp4ZXVtRWxyNzZFTE8zbGZsLWJ3RkJ0bl8yNnpwUkl1LTQyTU9lUmV6YUZqNmJWRk5Mb0lFdWgtdmR4bGU5Uzh5WThsNDctN0VSQzlfWVFBWkprMEJqb1FSeHVYZTZ1UEFnMHU2ZWNXeEd4TFV2YzVjamczSElGTXZvX0kzaTBBUFNVY2ZjalVDYVBDeGtUTjhtaXl5aTNsaGcxc0ZDVTJZQ2NWTnNuQWtiT1hhb0Z4TVI0X05XY3g4S1diS21lMEE?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOTEdiT1F0cFRiSlp4ZXVtRWxyNzZFTE8zbGZsLWJ3RkJ0bl8yNnpwUkl1LTQyTU9lUmV6YUZqNmJWRk5Mb0lFdWgtdmR4bGU5Uzh5WThsNDctN0VSQzlfWVFBWkprMEJqb1FSeHVYZTZ1UEFnMHU2ZWNXeEd4TFV2YzVjamczSElGTXZvX0kzaTBBUFNVY2ZjalVDYVBDeGtUTjhtaXl5aTNsaGcxc0ZDVTJZQ2NWTnNuQWtiT1hhb0Z4TVI0X05XY3g4S1diS21lMEE?oc=5",
+          "time": "2026-10-17T15:31:56Z",
+          "published_date": "2026-10-17T15:31:56Z",
+          "publishedDate": "2026-10-17T15:31:56Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_u_s_politics",
+            "sourceUrl": "https://news.google.com/rss/search?q=US+politics+Congress+Senate+White+House+election+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
         }
@@ -1655,74 +1758,8 @@
       ]
     },
     {
-      "id": "f765ba7b84894c57",
-      "title": "This university cracked down on Greek life. Here’s how it’s going - CNN",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "2026-10-17T10:30:45Z",
-      "lastSeen": "2026-10-17T10:30:45Z",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMilgFBVV95cUxQLW1pYzJJVWdRUzZRSTdUTURHX3dPLVBPVEh6Y2R4UVdSNlkwTjh6bmFNMmYzcFZCOGxrb1FMZmZwNUV3Wk9fS3dKdG1pYV9iOHFOV19hYk9YeEdLc09TY0VvVUtCM2FsaXI3WGRUUUNEa0ZGM0NzeTFyT3JsNURMOEpIS3loSFVKOUthaFhQbWtJTHdRdWc?oc=5",
-        "https://news.google.com/rss/articles/CBMikAFBVV95cUxORF96WExsUFlidmZlc1JxZUZDbk9ndm43bEg3YkstVFhCaVF3bE1yeENFenVhaXJLU1I5b1JhQWV5Z2pnaURUeUdyOU9fVTZaU3NaTmNMVEViUDd1WmdtTC02X0s1M2l0a1Q1akx1MWFqZE8wMmpRZzV1TC1BdmZjOHBIZ0kxbGQ1elduN3kzOGo?oc=5"
-      ],
-      "reports": [
-        {
-          "id": "c9f2200ca033",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQLW1pYzJJVWdRUzZRSTdUTURHX3dPLVBPVEh6Y2R4UVdSNlkwTjh6bmFNMmYzcFZCOGxrb1FMZmZwNUV3Wk9fS3dKdG1pYV9iOHFOV19hYk9YeEdLc09TY0VvVUtCM2FsaXI3WGRUUUNEa0ZGM0NzeTFyT3JsNURMOEpIS3loSFVKOUthaFhQbWtJTHdRdWc?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQLW1pYzJJVWdRUzZRSTdUTURHX3dPLVBPVEh6Y2R4UVdSNlkwTjh6bmFNMmYzcFZCOGxrb1FMZmZwNUV3Wk9fS3dKdG1pYV9iOHFOV19hYk9YeEdLc09TY0VvVUtCM2FsaXI3WGRUUUNEa0ZGM0NzeTFyT3JsNURMOEpIS3loSFVKOUthaFhQbWtJTHdRdWc?oc=5",
-          "sourceType": "us-politics",
-          "title": "This university cracked down on Greek life. Here’s how it’s going - CNN",
-          "summary": "This university cracked down on Greek life. Here’s how it’s going CNN",
-          "summary_snippet": "This university cracked down on Greek life. Here’s how it’s going CNN",
-          "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQLW1pYzJJVWdRUzZRSTdUTURHX3dPLVBPVEh6Y2R4UVdSNlkwTjh6bmFNMmYzcFZCOGxrb1FMZmZwNUV3Wk9fS3dKdG1pYV9iOHFOV19hYk9YeEdLc09TY0VvVUtCM2FsaXI3WGRUUUNEa0ZGM0NzeTFyT3JsNURMOEpIS3loSFVKOUthaFhQbWtJTHdRdWc?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQLW1pYzJJVWdRUzZRSTdUTURHX3dPLVBPVEh6Y2R4UVdSNlkwTjh6bmFNMmYzcFZCOGxrb1FMZmZwNUV3Wk9fS3dKdG1pYV9iOHFOV19hYk9YeEdLc09TY0VvVUtCM2FsaXI3WGRUUUNEa0ZGM0NzeTFyT3JsNURMOEpIS3loSFVKOUthaFhQbWtJTHdRdWc?oc=5",
-          "time": "2026-10-17T10:30:45Z",
-          "published_date": "2026-10-17T10:30:45Z",
-          "publishedDate": "2026-10-17T10:30:45Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_cnn_politics",
-            "sourceUrl": "https://news.google.com/rss/search?q=site%3Acnn.com+politics+Trump+Congress+Senate+White+House+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "c7e80f10b179",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMikAFBVV95cUxORF96WExsUFlidmZlc1JxZUZDbk9ndm43bEg3YkstVFhCaVF3bE1yeENFenVhaXJLU1I5b1JhQWV5Z2pnaURUeUdyOU9fVTZaU3NaTmNMVEViUDd1WmdtTC02X0s1M2l0a1Q1akx1MWFqZE8wMmpRZzV1TC1BdmZjOHBIZ0kxbGQ1elduN3kzOGo?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMikAFBVV95cUxORF96WExsUFlidmZlc1JxZUZDbk9ndm43bEg3YkstVFhCaVF3bE1yeENFenVhaXJLU1I5b1JhQWV5Z2pnaURUeUdyOU9fVTZaU3NaTmNMVEViUDd1WmdtTC02X0s1M2l0a1Q1akx1MWFqZE8wMmpRZzV1TC1BdmZjOHBIZ0kxbGQ1elduN3kzOGo?oc=5",
-          "sourceType": "us-politics",
-          "title": "This university cracked down on Greek life. Here’s how it’s going - CNN",
-          "summary": "This university cracked down on Greek life. Here’s how it’s going CNN",
-          "summary_snippet": "This university cracked down on Greek life. Here’s how it’s going CNN",
-          "source": "https://news.google.com/rss/articles/CBMikAFBVV95cUxORF96WExsUFlidmZlc1JxZUZDbk9ndm43bEg3YkstVFhCaVF3bE1yeENFenVhaXJLU1I5b1JhQWV5Z2pnaURUeUdyOU9fVTZaU3NaTmNMVEViUDd1WmdtTC02X0s1M2l0a1Q1akx1MWFqZE8wMmpRZzV1TC1BdmZjOHBIZ0kxbGQ1elduN3kzOGo?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxORF96WExsUFlidmZlc1JxZUZDbk9ndm43bEg3YkstVFhCaVF3bE1yeENFenVhaXJLU1I5b1JhQWV5Z2pnaURUeUdyOU9fVTZaU3NaTmNMVEViUDd1WmdtTC02X0s1M2l0a1Q1akx1MWFqZE8wMmpRZzV1TC1BdmZjOHBIZ0kxbGQ1elduN3kzOGo?oc=5",
-          "time": "2026-10-17T10:30:45Z",
-          "published_date": "2026-10-17T10:30:45Z",
-          "publishedDate": "2026-10-17T10:30:45Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_cnn_politics",
-            "sourceUrl": "https://news.google.com/rss/search?q=site%3Acnn.com+politics+Trump+Congress+Senate+White+House+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "a877f0da6dba185d",
-      "title": "Iran’s Assembly of Experts urges national unity, warns against US war threats - Business Upturn",
+      "id": "6ab6f57092f27440",
+      "title": "US-Israel-Iran War Latest Live News: ‘Strait of Hormuz is Closed,’ Warns IRGC Navy After Tankers Hit and Passage of Ships of Different Nationalities is Prohibited - The Sunday Guardian",
       "category": "general",
       "confidence": "low",
       "reportCount": 2,
@@ -1731,192 +1768,60 @@
         "news.google.com"
       ],
       "anchors": [
-        "iran"
+        "hormuz",
+        "iran",
+        "israel"
       ],
-      "firstSeen": "2026-10-17T10:17:22Z",
-      "lastSeen": "2026-10-17T10:17:30Z",
+      "firstSeen": "2026-10-17T11:07:08Z",
+      "lastSeen": "2026-10-17T11:07:18Z",
       "urls": [
-        "https://news.google.com/rss/articles/CBMizwFBVV95cUxPTlI4LWRJX1lzcDFiQVVLUTZqa3pwM09SQ0pDOEEtRktBaUxHTlFhcFJadXVhZU9EX0twTnRLa1VxZU5IVVBoVWtveFloVWpyRFJhcGlnYUJ3LXVCd05WVlFqSzJuVUNLX2pDVHlDaUF2V2xrQktsRVFYaDAzWEFyOEZXOW9PNEFxWHA1aTFzVnhueEVBeTdnZ2hPNHJrdllVeUpuT1JWRi1DdjZ3dDdVRGFGMVhqOHhWZU1MeExnemdPRHFlQVp5T0xNbFI3aWM?oc=5",
-        "https://news.google.com/rss/articles/CBMiygFBVV95cUxOVl9TMU9CaGgxTlgwbHdtZHBEUUJtWlY4RVRadmR3Mml4ZHhORXI3SzlTR1VKbWZsY0xveEU4SFdVMy1SbkpyRDZJSTUzdkc1a0VKTUQ2TS1EZ3ZwTnRYZDZfX3MwT244R2tTLWdpSk10R2FRTWt5cFJLMzlwNGhzSTAyMjkxT2xGakhkQ1Q4RjdzS0tTN2tKOElUcVNPOWlfTEVKWjRkQVJObmpKNUU0MnFEZno5REZ5MF9PdElLaVZlLTlvWkZEemJ3?oc=5"
+        "https://news.google.com/rss/articles/CBMisAJBVV95cUxNV2hvSC1qdEYtRG05NUpqbU81WlFPMS1oQjRKbzhXV2p2RXlDUGNKbEpySnVyR01lMTF6VjRMSnpPUmtkdTBvYk1Way1aTGdPbFF3QmJfX0pGeTR3Q1dST0VQZ1J1MVgtem5zRFZPX1V5a3duYS1NQWdOY0dSUHhQVURvU2t0NjJ0N2VOekVMbFpIN0FvbEpjbVNnaE1VdEtXUkJ6WWJnMVR5UklFVXhFYTdCVEEtcEloVHlET3NDbmYtV3d0dkpDRDJEU3F6N0FuSzVBemZ2NVFVRl9ZWFpYXzI2VU5DRXdobkcySFZBNWhQYzg1alJwVVQtdElScWdHNXFhZEdsaFZNY28tWmpHdlJwb1NuSS1wLVhZMVZLRUdDREZFd1VGTDhNVWpEWlVh0gGwAkFVX3lxTE1XaG9ILWp0Ri1EbTk1SmptTzVaUU8xLWhCNEpvOFdXanZFeUNQY0psSnJKdXJHTWUxMXpWNExKek9Sa2R1MG9iTVZrLVpMZ09sUXdCYl9fSkZ5NHdDV1JPRVBnUnUxWC16bnNEVk9fVXlrd25hLU1BZ05jR1JQeFBVRG9Ta3Q2MnQ3ZU56RUxsWkg3QW9sSmNtU2doTVV0S1dSQnpZYmcxVHlSSUVVeEVhN0JUQS1wSWhUeURPc0NuZi1Xd3R2SkNEMkRTcXo3QW5LNUF6ZnY1UVVGX1lYWlhfMjZVTkNFd2huRzJIVkE1aFBjODVqUnBVVC10SVJxZ0c1cWFkR2xoVk1jby1aakd2UnBvU25JLXAtWFkxVktFR0NERkV3VUZMOE1VakRaVWE?oc=5",
+        "https://news.google.com/rss/articles/CBMiqwJBVV95cUxNeExSN2tvZjJnX3NsUzhNa2tEaF9HRFVqa0plX0lBTl9PTzExVWRWWERxZXJrdHV3bkNKYUFTb1N6clZUdG1pMUVWZ2M4NWExRE5YRmNKR1ZwTHZra0UtMElhZ3lJZWtKTjF4cTVwb2RydFIzRE0xZkVvZExUdVpzQjJfckU5M21xLUxZY1FJS1Jlc2VXMWJfejhIVjN6dktSRWE4Y2VCaEZtYTRGMVUwNVBlU0d2M051N04yNVY2bjJLMEVxQzZIdnNoV2FmT0cwNGtrS1JNVVZIZF9PMGN2WFpmSXprVWZQV3VtX1k1SGxrLVVjZGtGTGJpNkROMTN0aE9tX014dWtOUE1CQTcyakFqUThmLUNkN3A3c2plNWNxc3NPN24ycVF2TdIBsAJBVV95cUxNV2hvSC1qdEYtRG05NUpqbU81WlFPMS1oQjRKbzhXV2p2RXlDUGNKbEpySnVyR01lMTF6VjRMSnpPUmtkdTBvYk1Way1aTGdPbFF3QmJfX0pGeTR3Q1dST0VQZ1J1MVgtem5zRFZPX1V5a3duYS1NQWdOY0dSUHhQVURvU2t0NjJ0N2VOekVMbFpIN0FvbEpjbVNnaE1VdEtXUkJ6WWJnMVR5UklFVXhFYTdCVEEtcEloVHlET3NDbmYtV3d0dkpDRDJEU3F6N0FuSzVBemZ2NVFVRl9ZWFpYXzI2VU5DRXdobkcySFZBNWhQYzg1alJwVVQtdElScWdHNXFhZEdsaFZNY28tWmpHdlJwb1NuSS1wLVhZMVZLRUdDREZFd1VGTDhNVWpEWlVh?oc=5"
       ],
       "reports": [
         {
-          "id": "b744865e0f37",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPTlI4LWRJX1lzcDFiQVVLUTZqa3pwM09SQ0pDOEEtRktBaUxHTlFhcFJadXVhZU9EX0twTnRLa1VxZU5IVVBoVWtveFloVWpyRFJhcGlnYUJ3LXVCd05WVlFqSzJuVUNLX2pDVHlDaUF2V2xrQktsRVFYaDAzWEFyOEZXOW9PNEFxWHA1aTFzVnhueEVBeTdnZ2hPNHJrdllVeUpuT1JWRi1DdjZ3dDdVRGFGMVhqOHhWZU1MeExnemdPRHFlQVp5T0xNbFI3aWM?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPTlI4LWRJX1lzcDFiQVVLUTZqa3pwM09SQ0pDOEEtRktBaUxHTlFhcFJadXVhZU9EX0twTnRLa1VxZU5IVVBoVWtveFloVWpyRFJhcGlnYUJ3LXVCd05WVlFqSzJuVUNLX2pDVHlDaUF2V2xrQktsRVFYaDAzWEFyOEZXOW9PNEFxWHA1aTFzVnhueEVBeTdnZ2hPNHJrdllVeUpuT1JWRi1DdjZ3dDdVRGFGMVhqOHhWZU1MeExnemdPRHFlQVp5T0xNbFI3aWM?oc=5",
-          "sourceType": "south-asia",
-          "title": "Iran’s Assembly of Experts urges national unity, warns against US war threats - Business Upturn",
-          "summary": "Iran’s Assembly of Experts urges national unity, warns against US war threats Business Upturn",
-          "summary_snippet": "Iran’s Assembly of Experts urges national unity, warns against US war threats Business Upturn",
-          "source": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPTlI4LWRJX1lzcDFiQVVLUTZqa3pwM09SQ0pDOEEtRktBaUxHTlFhcFJadXVhZU9EX0twTnRLa1VxZU5IVVBoVWtveFloVWpyRFJhcGlnYUJ3LXVCd05WVlFqSzJuVUNLX2pDVHlDaUF2V2xrQktsRVFYaDAzWEFyOEZXOW9PNEFxWHA1aTFzVnhueEVBeTdnZ2hPNHJrdllVeUpuT1JWRi1DdjZ3dDdVRGFGMVhqOHhWZU1MeExnemdPRHFlQVp5T0xNbFI3aWM?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPTlI4LWRJX1lzcDFiQVVLUTZqa3pwM09SQ0pDOEEtRktBaUxHTlFhcFJadXVhZU9EX0twTnRLa1VxZU5IVVBoVWtveFloVWpyRFJhcGlnYUJ3LXVCd05WVlFqSzJuVUNLX2pDVHlDaUF2V2xrQktsRVFYaDAzWEFyOEZXOW9PNEFxWHA1aTFzVnhueEVBeTdnZ2hPNHJrdllVeUpuT1JWRi1DdjZ3dDdVRGFGMVhqOHhWZU1MeExnemdPRHFlQVp5T0xNbFI3aWM?oc=5",
-          "time": "2026-10-17T10:17:30Z",
-          "published_date": "2026-10-17T10:17:30Z",
-          "publishedDate": "2026-10-17T10:17:30Z",
+          "id": "773f3ee3e9dd",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMisAJBVV95cUxNV2hvSC1qdEYtRG05NUpqbU81WlFPMS1oQjRKbzhXV2p2RXlDUGNKbEpySnVyR01lMTF6VjRMSnpPUmtkdTBvYk1Way1aTGdPbFF3QmJfX0pGeTR3Q1dST0VQZ1J1MVgtem5zRFZPX1V5a3duYS1NQWdOY0dSUHhQVURvU2t0NjJ0N2VOekVMbFpIN0FvbEpjbVNnaE1VdEtXUkJ6WWJnMVR5UklFVXhFYTdCVEEtcEloVHlET3NDbmYtV3d0dkpDRDJEU3F6N0FuSzVBemZ2NVFVRl9ZWFpYXzI2VU5DRXdobkcySFZBNWhQYzg1alJwVVQtdElScWdHNXFhZEdsaFZNY28tWmpHdlJwb1NuSS1wLVhZMVZLRUdDREZFd1VGTDhNVWpEWlVh0gGwAkFVX3lxTE1XaG9ILWp0Ri1EbTk1SmptTzVaUU8xLWhCNEpvOFdXanZFeUNQY0psSnJKdXJHTWUxMXpWNExKek9Sa2R1MG9iTVZrLVpMZ09sUXdCYl9fSkZ5NHdDV1JPRVBnUnUxWC16bnNEVk9fVXlrd25hLU1BZ05jR1JQeFBVRG9Ta3Q2MnQ3ZU56RUxsWkg3QW9sSmNtU2doTVV0S1dSQnpZYmcxVHlSSUVVeEVhN0JUQS1wSWhUeURPc0NuZi1Xd3R2SkNEMkRTcXo3QW5LNUF6ZnY1UVVGX1lYWlhfMjZVTkNFd2huRzJIVkE1aFBjODVqUnBVVC10SVJxZ0c1cWFkR2xoVk1jby1aakd2UnBvU25JLXAtWFkxVktFR0NERkV3VUZMOE1VakRaVWE?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMisAJBVV95cUxNV2hvSC1qdEYtRG05NUpqbU81WlFPMS1oQjRKbzhXV2p2RXlDUGNKbEpySnVyR01lMTF6VjRMSnpPUmtkdTBvYk1Way1aTGdPbFF3QmJfX0pGeTR3Q1dST0VQZ1J1MVgtem5zRFZPX1V5a3duYS1NQWdOY0dSUHhQVURvU2t0NjJ0N2VOekVMbFpIN0FvbEpjbVNnaE1VdEtXUkJ6WWJnMVR5UklFVXhFYTdCVEEtcEloVHlET3NDbmYtV3d0dkpDRDJEU3F6N0FuSzVBemZ2NVFVRl9ZWFpYXzI2VU5DRXdobkcySFZBNWhQYzg1alJwVVQtdElScWdHNXFhZEdsaFZNY28tWmpHdlJwb1NuSS1wLVhZMVZLRUdDREZFd1VGTDhNVWpEWlVh0gGwAkFVX3lxTE1XaG9ILWp0Ri1EbTk1SmptTzVaUU8xLWhCNEpvOFdXanZFeUNQY0psSnJKdXJHTWUxMXpWNExKek9Sa2R1MG9iTVZrLVpMZ09sUXdCYl9fSkZ5NHdDV1JPRVBnUnUxWC16bnNEVk9fVXlrd25hLU1BZ05jR1JQeFBVRG9Ta3Q2MnQ3ZU56RUxsWkg3QW9sSmNtU2doTVV0S1dSQnpZYmcxVHlSSUVVeEVhN0JUQS1wSWhUeURPc0NuZi1Xd3R2SkNEMkRTcXo3QW5LNUF6ZnY1UVVGX1lYWlhfMjZVTkNFd2huRzJIVkE1aFBjODVqUnBVVC10SVJxZ0c1cWFkR2xoVk1jby1aakd2UnBvU25JLXAtWFkxVktFR0NERkV3VUZMOE1VakRaVWE?oc=5",
+          "sourceType": "middle-east-conflict",
+          "title": "US-Israel-Iran War Latest Live News: ‘Strait of Hormuz is Closed,’ Warns IRGC Navy After Tankers Hit and Passage of Ships of Different Nationalities is Prohibited - The Sunday Guardian",
+          "summary": "US-Israel-Iran War Latest Live News: ‘Strait of Hormuz is Closed,’ Warns IRGC Navy After Tankers Hit and Passage of Ships of Different Nationalities is Prohibited The Sunday Guardian",
+          "summary_snippet": "US-Israel-Iran War Latest Live News: ‘Strait of Hormuz is Closed,’ Warns IRGC Navy After Tankers Hit and Passage of Ships of Different Nationalities is Prohibited The Sunday Guardian",
+          "source": "https://news.google.com/rss/articles/CBMisAJBVV95cUxNV2hvSC1qdEYtRG05NUpqbU81WlFPMS1oQjRKbzhXV2p2RXlDUGNKbEpySnVyR01lMTF6VjRMSnpPUmtkdTBvYk1Way1aTGdPbFF3QmJfX0pGeTR3Q1dST0VQZ1J1MVgtem5zRFZPX1V5a3duYS1NQWdOY0dSUHhQVURvU2t0NjJ0N2VOekVMbFpIN0FvbEpjbVNnaE1VdEtXUkJ6WWJnMVR5UklFVXhFYTdCVEEtcEloVHlET3NDbmYtV3d0dkpDRDJEU3F6N0FuSzVBemZ2NVFVRl9ZWFpYXzI2VU5DRXdobkcySFZBNWhQYzg1alJwVVQtdElScWdHNXFhZEdsaFZNY28tWmpHdlJwb1NuSS1wLVhZMVZLRUdDREZFd1VGTDhNVWpEWlVh0gGwAkFVX3lxTE1XaG9ILWp0Ri1EbTk1SmptTzVaUU8xLWhCNEpvOFdXanZFeUNQY0psSnJKdXJHTWUxMXpWNExKek9Sa2R1MG9iTVZrLVpMZ09sUXdCYl9fSkZ5NHdDV1JPRVBnUnUxWC16bnNEVk9fVXlrd25hLU1BZ05jR1JQeFBVRG9Ta3Q2MnQ3ZU56RUxsWkg3QW9sSmNtU2doTVV0S1dSQnpZYmcxVHlSSUVVeEVhN0JUQS1wSWhUeURPc0NuZi1Xd3R2SkNEMkRTcXo3QW5LNUF6ZnY1UVVGX1lYWlhfMjZVTkNFd2huRzJIVkE1aFBjODVqUnBVVC10SVJxZ0c1cWFkR2xoVk1jby1aakd2UnBvU25JLXAtWFkxVktFR0NERkV3VUZMOE1VakRaVWE?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMisAJBVV95cUxNV2hvSC1qdEYtRG05NUpqbU81WlFPMS1oQjRKbzhXV2p2RXlDUGNKbEpySnVyR01lMTF6VjRMSnpPUmtkdTBvYk1Way1aTGdPbFF3QmJfX0pGeTR3Q1dST0VQZ1J1MVgtem5zRFZPX1V5a3duYS1NQWdOY0dSUHhQVURvU2t0NjJ0N2VOekVMbFpIN0FvbEpjbVNnaE1VdEtXUkJ6WWJnMVR5UklFVXhFYTdCVEEtcEloVHlET3NDbmYtV3d0dkpDRDJEU3F6N0FuSzVBemZ2NVFVRl9ZWFpYXzI2VU5DRXdobkcySFZBNWhQYzg1alJwVVQtdElScWdHNXFhZEdsaFZNY28tWmpHdlJwb1NuSS1wLVhZMVZLRUdDREZFd1VGTDhNVWpEWlVh0gGwAkFVX3lxTE1XaG9ILWp0Ri1EbTk1SmptTzVaUU8xLWhCNEpvOFdXanZFeUNQY0psSnJKdXJHTWUxMXpWNExKek9Sa2R1MG9iTVZrLVpMZ09sUXdCYl9fSkZ5NHdDV1JPRVBnUnUxWC16bnNEVk9fVXlrd25hLU1BZ05jR1JQeFBVRG9Ta3Q2MnQ3ZU56RUxsWkg3QW9sSmNtU2doTVV0S1dSQnpZYmcxVHlSSUVVeEVhN0JUQS1wSWhUeURPc0NuZi1Xd3R2SkNEMkRTcXo3QW5LNUF6ZnY1UVVGX1lYWlhfMjZVTkNFd2huRzJIVkE1aFBjODVqUnBVVC10SVJxZ0c1cWFkR2xoVk1jby1aakd2UnBvU25JLXAtWFkxVktFR0NERkV3VUZMOE1VakRaVWE?oc=5",
+          "time": "2026-10-17T11:07:18Z",
+          "published_date": "2026-10-17T11:07:18Z",
+          "publishedDate": "2026-10-17T11:07:18Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "google_news_south_asia_security",
-            "sourceUrl": "https://news.google.com/rss/search?q=India+Pakistan+Afghanistan+Bangladesh+Nepal+Sri+Lanka+conflict+security+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "sourceId": "google_news_iran_israel",
+            "sourceUrl": "https://news.google.com/rss/search?q=Iran+Israel+conflict+missile+drone+strike+escalation+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
         },
         {
-          "id": "266ee9ef213d",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOVl9TMU9CaGgxTlgwbHdtZHBEUUJtWlY4RVRadmR3Mml4ZHhORXI3SzlTR1VKbWZsY0xveEU4SFdVMy1SbkpyRDZJSTUzdkc1a0VKTUQ2TS1EZ3ZwTnRYZDZfX3MwT244R2tTLWdpSk10R2FRTWt5cFJLMzlwNGhzSTAyMjkxT2xGakhkQ1Q4RjdzS0tTN2tKOElUcVNPOWlfTEVKWjRkQVJObmpKNUU0MnFEZno5REZ5MF9PdElLaVZlLTlvWkZEemJ3?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOVl9TMU9CaGgxTlgwbHdtZHBEUUJtWlY4RVRadmR3Mml4ZHhORXI3SzlTR1VKbWZsY0xveEU4SFdVMy1SbkpyRDZJSTUzdkc1a0VKTUQ2TS1EZ3ZwTnRYZDZfX3MwT244R2tTLWdpSk10R2FRTWt5cFJLMzlwNGhzSTAyMjkxT2xGakhkQ1Q4RjdzS0tTN2tKOElUcVNPOWlfTEVKWjRkQVJObmpKNUU0MnFEZno5REZ5MF9PdElLaVZlLTlvWkZEemJ3?oc=5",
-          "sourceType": "south-asia",
-          "title": "Iran’s Assembly of Experts urges national unity, warns against US war threats - Business Upturn",
-          "summary": "Iran’s Assembly of Experts urges national unity, warns against US war threats Business Upturn",
-          "summary_snippet": "Iran’s Assembly of Experts urges national unity, warns against US war threats Business Upturn",
-          "source": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOVl9TMU9CaGgxTlgwbHdtZHBEUUJtWlY4RVRadmR3Mml4ZHhORXI3SzlTR1VKbWZsY0xveEU4SFdVMy1SbkpyRDZJSTUzdkc1a0VKTUQ2TS1EZ3ZwTnRYZDZfX3MwT244R2tTLWdpSk10R2FRTWt5cFJLMzlwNGhzSTAyMjkxT2xGakhkQ1Q4RjdzS0tTN2tKOElUcVNPOWlfTEVKWjRkQVJObmpKNUU0MnFEZno5REZ5MF9PdElLaVZlLTlvWkZEemJ3?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOVl9TMU9CaGgxTlgwbHdtZHBEUUJtWlY4RVRadmR3Mml4ZHhORXI3SzlTR1VKbWZsY0xveEU4SFdVMy1SbkpyRDZJSTUzdkc1a0VKTUQ2TS1EZ3ZwTnRYZDZfX3MwT244R2tTLWdpSk10R2FRTWt5cFJLMzlwNGhzSTAyMjkxT2xGakhkQ1Q4RjdzS0tTN2tKOElUcVNPOWlfTEVKWjRkQVJObmpKNUU0MnFEZno5REZ5MF9PdElLaVZlLTlvWkZEemJ3?oc=5",
-          "time": "2026-10-17T10:17:22Z",
-          "published_date": "2026-10-17T10:17:22Z",
-          "publishedDate": "2026-10-17T10:17:22Z",
+          "id": "0337d42dbd56",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxNeExSN2tvZjJnX3NsUzhNa2tEaF9HRFVqa0plX0lBTl9PTzExVWRWWERxZXJrdHV3bkNKYUFTb1N6clZUdG1pMUVWZ2M4NWExRE5YRmNKR1ZwTHZra0UtMElhZ3lJZWtKTjF4cTVwb2RydFIzRE0xZkVvZExUdVpzQjJfckU5M21xLUxZY1FJS1Jlc2VXMWJfejhIVjN6dktSRWE4Y2VCaEZtYTRGMVUwNVBlU0d2M051N04yNVY2bjJLMEVxQzZIdnNoV2FmT0cwNGtrS1JNVVZIZF9PMGN2WFpmSXprVWZQV3VtX1k1SGxrLVVjZGtGTGJpNkROMTN0aE9tX014dWtOUE1CQTcyakFqUThmLUNkN3A3c2plNWNxc3NPN24ycVF2TdIBsAJBVV95cUxNV2hvSC1qdEYtRG05NUpqbU81WlFPMS1oQjRKbzhXV2p2RXlDUGNKbEpySnVyR01lMTF6VjRMSnpPUmtkdTBvYk1Way1aTGdPbFF3QmJfX0pGeTR3Q1dST0VQZ1J1MVgtem5zRFZPX1V5a3duYS1NQWdOY0dSUHhQVURvU2t0NjJ0N2VOekVMbFpIN0FvbEpjbVNnaE1VdEtXUkJ6WWJnMVR5UklFVXhFYTdCVEEtcEloVHlET3NDbmYtV3d0dkpDRDJEU3F6N0FuSzVBemZ2NVFVRl9ZWFpYXzI2VU5DRXdobkcySFZBNWhQYzg1alJwVVQtdElScWdHNXFhZEdsaFZNY28tWmpHdlJwb1NuSS1wLVhZMVZLRUdDREZFd1VGTDhNVWpEWlVh?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxNeExSN2tvZjJnX3NsUzhNa2tEaF9HRFVqa0plX0lBTl9PTzExVWRWWERxZXJrdHV3bkNKYUFTb1N6clZUdG1pMUVWZ2M4NWExRE5YRmNKR1ZwTHZra0UtMElhZ3lJZWtKTjF4cTVwb2RydFIzRE0xZkVvZExUdVpzQjJfckU5M21xLUxZY1FJS1Jlc2VXMWJfejhIVjN6dktSRWE4Y2VCaEZtYTRGMVUwNVBlU0d2M051N04yNVY2bjJLMEVxQzZIdnNoV2FmT0cwNGtrS1JNVVZIZF9PMGN2WFpmSXprVWZQV3VtX1k1SGxrLVVjZGtGTGJpNkROMTN0aE9tX014dWtOUE1CQTcyakFqUThmLUNkN3A3c2plNWNxc3NPN24ycVF2TdIBsAJBVV95cUxNV2hvSC1qdEYtRG05NUpqbU81WlFPMS1oQjRKbzhXV2p2RXlDUGNKbEpySnVyR01lMTF6VjRMSnpPUmtkdTBvYk1Way1aTGdPbFF3QmJfX0pGeTR3Q1dST0VQZ1J1MVgtem5zRFZPX1V5a3duYS1NQWdOY0dSUHhQVURvU2t0NjJ0N2VOekVMbFpIN0FvbEpjbVNnaE1VdEtXUkJ6WWJnMVR5UklFVXhFYTdCVEEtcEloVHlET3NDbmYtV3d0dkpDRDJEU3F6N0FuSzVBemZ2NVFVRl9ZWFpYXzI2VU5DRXdobkcySFZBNWhQYzg1alJwVVQtdElScWdHNXFhZEdsaFZNY28tWmpHdlJwb1NuSS1wLVhZMVZLRUdDREZFd1VGTDhNVWpEWlVh?oc=5",
+          "sourceType": "middle-east-conflict",
+          "title": "US-Israel-Iran War Latest Live News: ‘Strait of Hormuz is Closed,’ Warns IRGC Navy After Tankers Hit and Passage of Ships of Different Nationalities is Prohibited - The Sunday Guardian",
+          "summary": "US-Israel-Iran War Latest Live News: ‘Strait of Hormuz is Closed,’ Warns IRGC Navy After Tankers Hit and Passage of Ships of Different Nationalities is Prohibited The Sunday Guardian",
+          "summary_snippet": "US-Israel-Iran War Latest Live News: ‘Strait of Hormuz is Closed,’ Warns IRGC Navy After Tankers Hit and Passage of Ships of Different Nationalities is Prohibited The Sunday Guardian",
+          "source": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxNeExSN2tvZjJnX3NsUzhNa2tEaF9HRFVqa0plX0lBTl9PTzExVWRWWERxZXJrdHV3bkNKYUFTb1N6clZUdG1pMUVWZ2M4NWExRE5YRmNKR1ZwTHZra0UtMElhZ3lJZWtKTjF4cTVwb2RydFIzRE0xZkVvZExUdVpzQjJfckU5M21xLUxZY1FJS1Jlc2VXMWJfejhIVjN6dktSRWE4Y2VCaEZtYTRGMVUwNVBlU0d2M051N04yNVY2bjJLMEVxQzZIdnNoV2FmT0cwNGtrS1JNVVZIZF9PMGN2WFpmSXprVWZQV3VtX1k1SGxrLVVjZGtGTGJpNkROMTN0aE9tX014dWtOUE1CQTcyakFqUThmLUNkN3A3c2plNWNxc3NPN24ycVF2TdIBsAJBVV95cUxNV2hvSC1qdEYtRG05NUpqbU81WlFPMS1oQjRKbzhXV2p2RXlDUGNKbEpySnVyR01lMTF6VjRMSnpPUmtkdTBvYk1Way1aTGdPbFF3QmJfX0pGeTR3Q1dST0VQZ1J1MVgtem5zRFZPX1V5a3duYS1NQWdOY0dSUHhQVURvU2t0NjJ0N2VOekVMbFpIN0FvbEpjbVNnaE1VdEtXUkJ6WWJnMVR5UklFVXhFYTdCVEEtcEloVHlET3NDbmYtV3d0dkpDRDJEU3F6N0FuSzVBemZ2NVFVRl9ZWFpYXzI2VU5DRXdobkcySFZBNWhQYzg1alJwVVQtdElScWdHNXFhZEdsaFZNY28tWmpHdlJwb1NuSS1wLVhZMVZLRUdDREZFd1VGTDhNVWpEWlVh?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxNeExSN2tvZjJnX3NsUzhNa2tEaF9HRFVqa0plX0lBTl9PTzExVWRWWERxZXJrdHV3bkNKYUFTb1N6clZUdG1pMUVWZ2M4NWExRE5YRmNKR1ZwTHZra0UtMElhZ3lJZWtKTjF4cTVwb2RydFIzRE0xZkVvZExUdVpzQjJfckU5M21xLUxZY1FJS1Jlc2VXMWJfejhIVjN6dktSRWE4Y2VCaEZtYTRGMVUwNVBlU0d2M051N04yNVY2bjJLMEVxQzZIdnNoV2FmT0cwNGtrS1JNVVZIZF9PMGN2WFpmSXprVWZQV3VtX1k1SGxrLVVjZGtGTGJpNkROMTN0aE9tX014dWtOUE1CQTcyakFqUThmLUNkN3A3c2plNWNxc3NPN24ycVF2TdIBsAJBVV95cUxNV2hvSC1qdEYtRG05NUpqbU81WlFPMS1oQjRKbzhXV2p2RXlDUGNKbEpySnVyR01lMTF6VjRMSnpPUmtkdTBvYk1Way1aTGdPbFF3QmJfX0pGeTR3Q1dST0VQZ1J1MVgtem5zRFZPX1V5a3duYS1NQWdOY0dSUHhQVURvU2t0NjJ0N2VOekVMbFpIN0FvbEpjbVNnaE1VdEtXUkJ6WWJnMVR5UklFVXhFYTdCVEEtcEloVHlET3NDbmYtV3d0dkpDRDJEU3F6N0FuSzVBemZ2NVFVRl9ZWFpYXzI2VU5DRXdobkcySFZBNWhQYzg1alJwVVQtdElScWdHNXFhZEdsaFZNY28tWmpHdlJwb1NuSS1wLVhZMVZLRUdDREZFd1VGTDhNVWpEWlVh?oc=5",
+          "time": "2026-10-17T11:07:08Z",
+          "published_date": "2026-10-17T11:07:08Z",
+          "publishedDate": "2026-10-17T11:07:08Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "google_news_south_asia_security",
-            "sourceUrl": "https://news.google.com/rss/search?q=India+Pakistan+Afghanistan+Bangladesh+Nepal+Sri+Lanka+conflict+security+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "b2fd65c3434c4da6",
-      "title": "Pope Leo will leave hospital, return to Vatican on Oct 17: Holy See",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "sourceCount": 1,
-      "sources": [
-        "channelnewsasia.com"
-      ],
-      "anchors": [],
-      "firstSeen": "2026-10-17T10:14:00Z",
-      "lastSeen": "2026-10-17T10:14:00Z",
-      "urls": [
-        "https://www.channelnewsasia.com/asia/pope-leo-will-leave-hospital-return-vatican-oct-17-holy-see-6468156",
-        "https://www.channelnewsasia.com/world/pope-leo-will-leave-hospital-return-vatican-oct-17-holy-see-6468156"
-      ],
-      "reports": [
-        {
-          "id": "5fe2e6af3596",
-          "sourceLabel": "https://www.channelnewsasia.com/asia/pope-leo-will-leave-hospital-return-vatican-oct-17-holy-see-6468156",
-          "sourceName": "https://www.channelnewsasia.com/asia/pope-leo-will-leave-hospital-return-vatican-oct-17-holy-see-6468156",
-          "sourceType": "news",
-          "title": "Pope Leo will leave hospital, return to Vatican on Oct 17: Holy See",
-          "summary": "The pope had part of his right lung removed on Tuesday (Oct 13) because of a cancerous tumour.",
-          "summary_snippet": "The pope had part of his right lung removed on Tuesday (Oct 13) because of a cancerous tumour.",
-          "source": "https://www.channelnewsasia.com/asia/pope-leo-will-leave-hospital-return-vatican-oct-17-holy-see-6468156",
-          "url": "https://www.channelnewsasia.com/asia/pope-leo-will-leave-hospital-return-vatican-oct-17-holy-see-6468156",
-          "time": "2026-10-17T10:14:00Z",
-          "published_date": "2026-10-17T10:14:00Z",
-          "publishedDate": "2026-10-17T10:14:00Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "cna_world",
-            "sourceUrl": "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml&category=6311",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "02140b32545d",
-          "sourceLabel": "https://www.channelnewsasia.com/world/pope-leo-will-leave-hospital-return-vatican-oct-17-holy-see-6468156",
-          "sourceName": "https://www.channelnewsasia.com/world/pope-leo-will-leave-hospital-return-vatican-oct-17-holy-see-6468156",
-          "sourceType": "news",
-          "title": "Pope Leo will leave hospital, return to Vatican on Oct 17: Holy See",
-          "summary": "The pope had part of his right lung removed on Tuesday (Oct 13) because of a cancerous tumour.",
-          "summary_snippet": "The pope had part of his right lung removed on Tuesday (Oct 13) because of a cancerous tumour.",
-          "source": "https://www.channelnewsasia.com/world/pope-leo-will-leave-hospital-return-vatican-oct-17-holy-see-6468156",
-          "url": "https://www.channelnewsasia.com/world/pope-leo-will-leave-hospital-return-vatican-oct-17-holy-see-6468156",
-          "time": "2026-10-17T10:14:00Z",
-          "published_date": "2026-10-17T10:14:00Z",
-          "publishedDate": "2026-10-17T10:14:00Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "cna_world",
-            "sourceUrl": "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml&category=6311",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "6c95580e87f723b8",
-      "title": "Erik Prince’s secretive operation targets gangs in Haiti - Operativ Məlumat Mərkəzi",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [
-        "haiti"
-      ],
-      "firstSeen": "2026-10-17T10:00:44Z",
-      "lastSeen": "2026-10-17T10:07:25Z",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMilgFBVV95cUxPT2JUWnpUbHZHdzROcmZ5a01YcGpDZ3ZQVXdoaFJTODRBVXRFNEhaRDd3cXRnM2UybGQ0bVJURFFkSHA4UTdhNkw4TWprWXl0ZFZ1WjhfRzZ2ZzBMS3NBaG9zeVJVMGc3UThoS201SDZ3aFRST0kzS0R1N3VIc1NOY0ltdlJIQmF6UTM0N3VENmxOWTZrSkE?oc=5",
-        "https://news.google.com/rss/articles/CBMickFVX3lxTE8tblkyTGdPd2dmUm1qOEU1a3p2Ty1WTVhyUjZTejFPN0hsUHJYM3NFQmhBTXNEUkdrN3FFY3NwZlh6VGtOdWlJNUJOYlQ4N3V5VEhDZXEwTFY5OEVDVGVObWVKTGNzNlUydVY3RmU3SUF3Zw?oc=5"
-      ],
-      "reports": [
-        {
-          "id": "86b631c63d7e",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPT2JUWnpUbHZHdzROcmZ5a01YcGpDZ3ZQVXdoaFJTODRBVXRFNEhaRDd3cXRnM2UybGQ0bVJURFFkSHA4UTdhNkw4TWprWXl0ZFZ1WjhfRzZ2ZzBMS3NBaG9zeVJVMGc3UThoS201SDZ3aFRST0kzS0R1N3VIc1NOY0ltdlJIQmF6UTM0N3VENmxOWTZrSkE?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPT2JUWnpUbHZHdzROcmZ5a01YcGpDZ3ZQVXdoaFJTODRBVXRFNEhaRDd3cXRnM2UybGQ0bVJURFFkSHA4UTdhNkw4TWprWXl0ZFZ1WjhfRzZ2ZzBMS3NBaG9zeVJVMGc3UThoS201SDZ3aFRST0kzS0R1N3VIc1NOY0ltdlJIQmF6UTM0N3VENmxOWTZrSkE?oc=5",
-          "sourceType": "americas-conflict",
-          "title": "Erik Prince’s secretive operation targets gangs in Haiti - Operativ Məlumat Mərkəzi",
-          "summary": "Erik Prince’s secretive operation targets gangs in Haiti Operativ Məlumat Mərkəzi",
-          "summary_snippet": "Erik Prince’s secretive operation targets gangs in Haiti Operativ Məlumat Mərkəzi",
-          "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPT2JUWnpUbHZHdzROcmZ5a01YcGpDZ3ZQVXdoaFJTODRBVXRFNEhaRDd3cXRnM2UybGQ0bVJURFFkSHA4UTdhNkw4TWprWXl0ZFZ1WjhfRzZ2ZzBMS3NBaG9zeVJVMGc3UThoS201SDZ3aFRST0kzS0R1N3VIc1NOY0ltdlJIQmF6UTM0N3VENmxOWTZrSkE?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPT2JUWnpUbHZHdzROcmZ5a01YcGpDZ3ZQVXdoaFJTODRBVXRFNEhaRDd3cXRnM2UybGQ0bVJURFFkSHA4UTdhNkw4TWprWXl0ZFZ1WjhfRzZ2ZzBMS3NBaG9zeVJVMGc3UThoS201SDZ3aFRST0kzS0R1N3VIc1NOY0ltdlJIQmF6UTM0N3VENmxOWTZrSkE?oc=5",
-          "time": "2026-10-17T10:07:25Z",
-          "published_date": "2026-10-17T10:07:25Z",
-          "publishedDate": "2026-10-17T10:07:25Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_haiti_security",
-            "sourceUrl": "https://news.google.com/rss/search?q=Haiti+gangs+Port-au-Prince+transitional+government+security+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "ea5ab8da5217",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMickFVX3lxTE8tblkyTGdPd2dmUm1qOEU1a3p2Ty1WTVhyUjZTejFPN0hsUHJYM3NFQmhBTXNEUkdrN3FFY3NwZlh6VGtOdWlJNUJOYlQ4N3V5VEhDZXEwTFY5OEVDVGVObWVKTGNzNlUydVY3RmU3SUF3Zw?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMickFVX3lxTE8tblkyTGdPd2dmUm1qOEU1a3p2Ty1WTVhyUjZTejFPN0hsUHJYM3NFQmhBTXNEUkdrN3FFY3NwZlh6VGtOdWlJNUJOYlQ4N3V5VEhDZXEwTFY5OEVDVGVObWVKTGNzNlUydVY3RmU3SUF3Zw?oc=5",
-          "sourceType": "americas-conflict",
-          "title": "Exclusive: Inside Erik Prince’s secretive operation taking on Haiti’s gangs - CNN",
-          "summary": "Exclusive: Inside Erik Prince’s secretive operation taking on Haiti’s gangs CNN",
-          "summary_snippet": "Exclusive: Inside Erik Prince’s secretive operation taking on Haiti’s gangs CNN",
-          "source": "https://news.google.com/rss/articles/CBMickFVX3lxTE8tblkyTGdPd2dmUm1qOEU1a3p2Ty1WTVhyUjZTejFPN0hsUHJYM3NFQmhBTXNEUkdrN3FFY3NwZlh6VGtOdWlJNUJOYlQ4N3V5VEhDZXEwTFY5OEVDVGVObWVKTGNzNlUydVY3RmU3SUF3Zw?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE8tblkyTGdPd2dmUm1qOEU1a3p2Ty1WTVhyUjZTejFPN0hsUHJYM3NFQmhBTXNEUkdrN3FFY3NwZlh6VGtOdWlJNUJOYlQ4N3V5VEhDZXEwTFY5OEVDVGVObWVKTGNzNlUydVY3RmU3SUF3Zw?oc=5",
-          "time": "2026-10-17T10:00:44Z",
-          "published_date": "2026-10-17T10:00:44Z",
-          "publishedDate": "2026-10-17T10:00:44Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_haiti_security",
-            "sourceUrl": "https://news.google.com/rss/search?q=Haiti+gangs+Port-au-Prince+transitional+government+security+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "sourceId": "google_news_iran_israel",
+            "sourceUrl": "https://news.google.com/rss/search?q=Iran+Israel+conflict+missile+drone+strike+escalation+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
         }
@@ -2911,8 +2816,8 @@
       ]
     },
     {
-      "id": "c4d70b030a0edfac",
-      "title": "Fact Check Team: High stakes on the high seas, cost and impact of US drug boat strikes - The National Desk",
+      "id": "cc4fc37e8c08c603",
+      "title": "Fact Check Team: High stakes on the high seas, cost and impact of US drug boat strikes - The National News Desk",
       "category": "general",
       "confidence": "low",
       "reportCount": 1,
@@ -2928,14 +2833,14 @@
       ],
       "reports": [
         {
-          "title": "Fact Check Team: High stakes on the high seas, cost and impact of US drug boat strikes - The National Desk",
+          "title": "Fact Check Team: High stakes on the high seas, cost and impact of US drug boat strikes - The National News Desk",
           "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxNYk9oSThGT0dQZG9BVUotY01JNjVyeF9Ea0ZEd2Rqb2EwOXIxdzNneGNBWk1xN0tNWU1EdmdqSDZfNmpoYjU5dTMzNjkyXzJySmdmcTUwam5KX0tDY1lwbUVWVGwzQzlfNW11dTVoNUNPVFlvRGY3TFBOanRSWlR1a25pR21ZS0NKOEN3LTY3LTJwMW5PVURSMWptbHBITVN0NzBQcUxZRmdHakJZWG94MHJPZGNtRWNnMVN5OTl5dkg1VjJrNllSRDBKMzJRUmRuR3lwNDdtMTBISHBoNVRsXy1mX1ZGcUxXSkFKVlM3cjJ2QjNHMlVZelpRWVRiZzhzM0hLSEM0SHFhMWpxUnc?oc=5",
           "published_date": "Wed, 03 Dec 2025 08:00:00 GMT",
           "time": "Wed, 03 Dec 2025 08:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: The National Desk",
-          "summary": "Fallback discovery via Google News RSS; publisher: The National Desk",
-          "source": "The National Desk",
-          "sourceLabel": "The National Desk",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: The National News Desk",
+          "summary": "Fallback discovery via Google News RSS; publisher: The National News Desk",
+          "source": "The National News Desk",
+          "sourceLabel": "The National News Desk",
           "sourceType": "fallback-news",
           "fallbackFor": "GDELT — Western Hemisphere Counter-Cartel",
           "credit_metadata": "Google News RSS fallback"
@@ -3393,6 +3298,38 @@
       ]
     },
     {
+      "id": "e868b4ebcafe0df7",
+      "title": "Major US outlets suspend shared Trump coverage in protest at media ban - BBC",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Tue, 22 Sep 2026 07:00:00 GMT",
+      "lastSeen": "Tue, 22 Sep 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBqUEg5eWZZZEZxN29iRUxDRm9qLUF3elppRG8xdTRoeS1TbjluclVxWV8wZjBlNXlfcXJUUndrbjV2U1VrVnl6UEVHWVRONHMwa2lmQlV0TGJQNzg?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "Major US outlets suspend shared Trump coverage in protest at media ban - BBC",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBqUEg5eWZZZEZxN29iRUxDRm9qLUF3elppRG8xdTRoeS1TbjluclVxWV8wZjBlNXlfcXJUUndrbjV2U1VrVnl6UEVHWVRONHMwa2lmQlV0TGJQNzg?oc=5",
+          "published_date": "Tue, 22 Sep 2026 07:00:00 GMT",
+          "time": "Tue, 22 Sep 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: BBC",
+          "summary": "Fallback discovery via Google News RSS; publisher: BBC",
+          "source": "BBC",
+          "sourceLabel": "BBC",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @POTUS",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
       "id": "6018b93c0e6cb467",
       "title": "American power, AI and a walkout - key moments from Trump's UN speech - BBC",
       "category": "general",
@@ -3414,38 +3351,6 @@
         {
           "title": "American power, AI and a walkout - key moments from Trump's UN speech - BBC",
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5sMXhQZXJPY1JROEktMHBINDhfbm0yWjdheVAxTVB4Y0xuUEFyYXNVclB0dUo5Zlk5d0FoNVJ0Z0gwS3llSU05ZFFqcG5EQk5zc25UWXZQOWtOMVk?oc=5",
-          "published_date": "Tue, 22 Sep 2026 07:00:00 GMT",
-          "time": "Tue, 22 Sep 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: BBC",
-          "summary": "Fallback discovery via Google News RSS; publisher: BBC",
-          "source": "BBC",
-          "sourceLabel": "BBC",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @POTUS",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "e868b4ebcafe0df7",
-      "title": "Major US outlets suspend shared Trump coverage in protest at media ban - BBC",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Tue, 22 Sep 2026 07:00:00 GMT",
-      "lastSeen": "Tue, 22 Sep 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBqUEg5eWZZZEZxN29iRUxDRm9qLUF3elppRG8xdTRoeS1TbjluclVxWV8wZjBlNXlfcXJUUndrbjV2U1VrVnl6UEVHWVRONHMwa2lmQlV0TGJQNzg?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Major US outlets suspend shared Trump coverage in protest at media ban - BBC",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBqUEg5eWZZZEZxN29iRUxDRm9qLUF3elppRG8xdTRoeS1TbjluclVxWV8wZjBlNXlfcXJUUndrbjV2U1VrVnl6UEVHWVRONHMwa2lmQlV0TGJQNzg?oc=5",
           "published_date": "Tue, 22 Sep 2026 07:00:00 GMT",
           "time": "Tue, 22 Sep 2026 07:00:00 GMT",
           "summary_snippet": "Fallback discovery via Google News RSS; publisher: BBC",
@@ -3520,6 +3425,38 @@
           "sourceLabel": "Reuters",
           "sourceType": "fallback-news",
           "fallbackFor": "X @UN",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "e022205a57795ce2",
+      "title": "White House Ballroom Continues Proud Presidential Legacy - The White House (.gov)",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Tue, 21 Oct 2025 07:00:00 GMT",
+      "lastSeen": "Tue, 21 Oct 2025 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMilgFBVV95cUxPbDY3NEgzVWJLbWR3aU1DSjFxaVRmQmNNbjBnN3ZzVk9yUHBFMUctMXNSUTIzaXJXTEN4ckRUTzg2RTZsT0dFMk9Xd29zcGEtR2gtRkxqZjNQVmtGZW1jSmRBaXpXb3dvTUYxOXpGVWJrcnVyYTM5VHg1OS1pbVhQN3J3VzFHYTk2bWdTbUpJWXJHYXIyUEE?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "White House Ballroom Continues Proud Presidential Legacy - The White House (.gov)",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPbDY3NEgzVWJLbWR3aU1DSjFxaVRmQmNNbjBnN3ZzVk9yUHBFMUctMXNSUTIzaXJXTEN4ckRUTzg2RTZsT0dFMk9Xd29zcGEtR2gtRkxqZjNQVmtGZW1jSmRBaXpXb3dvTUYxOXpGVWJrcnVyYTM5VHg1OS1pbVhQN3J3VzFHYTk2bWdTbUpJWXJHYXIyUEE?oc=5",
+          "published_date": "Tue, 21 Oct 2025 07:00:00 GMT",
+          "time": "Tue, 21 Oct 2025 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: The White House (.gov)",
+          "summary": "Fallback discovery via Google News RSS; publisher: The White House (.gov)",
+          "source": "The White House (.gov)",
+          "sourceLabel": "The White House (.gov)",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @WhiteHouse",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
