@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-18T09:15:42.221371Z",
+  "updatedAt": "2026-10-18T13:21:29.936668Z",
   "window": "recent public reporting",
   "method": "anchor-aware title clustering with category and publication-time agreement; candidate grouping only, not proof reports describe identical facts",
   "events": [
@@ -14,15 +14,61 @@
         "gdacs.org"
       ],
       "anchors": [],
-      "firstSeen": "2026-10-17T19:00:32Z",
-      "lastSeen": "2026-10-17T23:02:00Z",
+      "firstSeen": "2026-10-17T23:01:13Z",
+      "lastSeen": "2026-10-18T11:00:41Z",
       "urls": [
+        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032892",
+        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032891",
         "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032884",
-        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032883",
-        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032874",
-        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032870"
+        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032883"
       ],
       "reports": [
+        {
+          "id": "ddb81f90b52c",
+          "sourceLabel": "GDACS Global Disaster Alerts",
+          "sourceName": "GDACS Global Disaster Alerts",
+          "sourceType": "climate-hazard",
+          "title": "Green forest fire notification in Australia",
+          "summary": "On 17/10/2026, a forest fire started in Australia, until 18/10/2026.",
+          "summary_snippet": "On 17/10/2026, a forest fire started in Australia, until 18/10/2026.",
+          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032892",
+          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032892",
+          "time": "2026-10-18T11:00:41Z",
+          "published_date": "2026-10-18T11:00:41Z",
+          "publishedDate": "2026-10-18T11:00:41Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "gdacs_global_disaster_alerts",
+            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "da16a5a4f6e6",
+          "sourceLabel": "GDACS Global Disaster Alerts",
+          "sourceName": "GDACS Global Disaster Alerts",
+          "sourceType": "climate-hazard",
+          "title": "Green forest fire notification in Australia",
+          "summary": "On 17/10/2026, a forest fire started in Australia, until 18/10/2026.",
+          "summary_snippet": "On 17/10/2026, a forest fire started in Australia, until 18/10/2026.",
+          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032891",
+          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032891",
+          "time": "2026-10-18T11:00:36Z",
+          "published_date": "2026-10-18T11:00:36Z",
+          "publishedDate": "2026-10-18T11:00:36Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "gdacs_global_disaster_alerts",
+            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "feedFormat": "rss"
+          }
+        },
         {
           "id": "521b8c518b8b",
           "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032884",
@@ -66,146 +112,6 @@
           "credit": {
             "sourceId": "gdacs_global_disaster_alerts",
             "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "a7efd40a5b4e",
-          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032874",
-          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032874",
-          "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in Australia",
-          "summary": "On 13/10/2026, a forest fire started in Australia, until 17/10/2026.",
-          "summary_snippet": "On 13/10/2026, a forest fire started in Australia, until 17/10/2026.",
-          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032874",
-          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032874",
-          "time": "2026-10-17T19:02:34Z",
-          "published_date": "2026-10-17T19:02:34Z",
-          "publishedDate": "2026-10-17T19:02:34Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "a48fc4a48bc2",
-          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032870",
-          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032870",
-          "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in Australia",
-          "summary": "On 16/10/2026, a forest fire started in Australia, until 17/10/2026.",
-          "summary_snippet": "On 16/10/2026, a forest fire started in Australia, until 17/10/2026.",
-          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032870",
-          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032870",
-          "time": "2026-10-17T19:00:32Z",
-          "published_date": "2026-10-17T19:00:32Z",
-          "publishedDate": "2026-10-17T19:00:32Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "c57340e8a4b0f753",
-      "title": "Israeli settlers attack European diplomats in the occupied West Bank",
-      "category": "conflict",
-      "confidence": "high",
-      "reportCount": 3,
-      "sourceCount": 3,
-      "sources": [
-        "aljazeera.com",
-        "theguardian.com",
-        "news.google.com"
-      ],
-      "anchors": [
-        "israel"
-      ],
-      "firstSeen": "2026-10-17T16:11:59Z",
-      "lastSeen": "2026-10-18T01:02:37Z",
-      "urls": [
-        "https://www.aljazeera.com/video/newsfeed/2026/10/18/israeli-settlers-attack-european-diplomats-in-the-occupied-west-bank?traffic_source=rss",
-        "https://www.theguardian.com/world/2026/oct/17/israeli-settlers-attack-european-diplomats-in-west-bank",
-        "https://news.google.com/rss/articles/CBMicEFVX3lxTE92Q19aRmhnT2lIZTdybTYxQWcwM21Kekt3WnhEdzROaVU5MnJ0ckw1enUwaUlyQjk4NlBfOGp6N1EtN1NSQnoxUkRzdGFNU2VrMmQ4elpDaEdsY0E5OWpmWnExbzkydWs2WE1vVERoUXQ?oc=5"
-      ],
-      "reports": [
-        {
-          "id": "80c287479d5a",
-          "sourceLabel": "https://www.aljazeera.com/video/newsfeed/2026/10/18/israeli-settlers-attack-european-diplomats-in-the-occupied-west-bank?traffic_source=rss",
-          "sourceName": "https://www.aljazeera.com/video/newsfeed/2026/10/18/israeli-settlers-attack-european-diplomats-in-the-occupied-west-bank?traffic_source=rss",
-          "sourceType": "international",
-          "title": "Israeli settlers attack European diplomats in the occupied West Bank",
-          "summary": "Masked Israeli settlers attacked European diplomats, a French mayor and Palestinians in the occupied West Bank.",
-          "summary_snippet": "Masked Israeli settlers attacked European diplomats, a French mayor and Palestinians in the occupied West Bank.",
-          "source": "https://www.aljazeera.com/video/newsfeed/2026/10/18/israeli-settlers-attack-european-diplomats-in-the-occupied-west-bank?traffic_source=rss",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/18/israeli-settlers-attack-european-diplomats-in-the-occupied-west-bank?traffic_source=rss",
-          "time": "2026-10-18T01:02:37Z",
-          "published_date": "2026-10-18T01:02:37Z",
-          "publishedDate": "2026-10-18T01:02:37Z",
-          "tag": "Breaking",
-          "confidence": "DEVELOPING",
-          "breaking": true,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "al_jazeera",
-            "sourceUrl": "https://www.aljazeera.com/xml/rss/all.xml",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "9edf563710cc",
-          "sourceLabel": "https://www.theguardian.com/world/2026/oct/17/israeli-settlers-attack-european-diplomats-in-west-bank",
-          "sourceName": "https://www.theguardian.com/world/2026/oct/17/israeli-settlers-attack-european-diplomats-in-west-bank",
-          "sourceType": "international",
-          "title": "Israeli settlers attack European diplomats in West Bank",
-          "summary": "French mayor and archbishop also attacked during violent attempt to stop Palestinians harvesting olives Israeli settler militants have attacked European diplomats, a French mayor and the archbishop of Cambrai in Taybeh, in the occupied West Bank, injuring three people and damaging a car, in the latest violent attempt to prevent Palestinians from harvesting olives on their own land. Bernard Baudoux, mayor of Aulnoye-A",
-          "summary_snippet": "French mayor and archbishop also attacked during violent attempt to stop Palestinians harvesting olives Israeli settler militants have attacked European diplomats, a French mayor and the archbishop of Cambrai in Taybeh, in the occupied West Bank, injuring three people and damaging a car, in the latest violent attempt to prevent Palestinians from harvesting olives on their own land. Bernard Baudoux, mayor of Aulnoye-A",
-          "source": "https://www.theguardian.com/world/2026/oct/17/israeli-settlers-attack-european-diplomats-in-west-bank",
-          "url": "https://www.theguardian.com/world/2026/oct/17/israeli-settlers-attack-european-diplomats-in-west-bank",
-          "time": "2026-10-17T18:20:11Z",
-          "published_date": "2026-10-17T18:20:11Z",
-          "publishedDate": "2026-10-17T18:20:11Z",
-          "tag": "Breaking",
-          "confidence": "DEVELOPING",
-          "breaking": true,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "guardian_world",
-            "sourceUrl": "https://www.theguardian.com/world/rss",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "f58d16a2d53c",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMicEFVX3lxTE92Q19aRmhnT2lIZTdybTYxQWcwM21Kekt3WnhEdzROaVU5MnJ0ckw1enUwaUlyQjk4NlBfOGp6N1EtN1NSQnoxUkRzdGFNU2VrMmQ4elpDaEdsY0E5OWpmWnExbzkydWs2WE1vVERoUXQ?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMicEFVX3lxTE92Q19aRmhnT2lIZTdybTYxQWcwM21Kekt3WnhEdzROaVU5MnJ0ckw1enUwaUlyQjk4NlBfOGp6N1EtN1NSQnoxUkRzdGFNU2VrMmQ4elpDaEdsY0E5OWpmWnExbzkydWs2WE1vVERoUXQ?oc=5",
-          "sourceType": "world-politics",
-          "title": "Israeli settlers attack European diplomats in the West Bank - Financial Times",
-          "summary": "Israeli settlers attack European diplomats in the West Bank Financial Times",
-          "summary_snippet": "Israeli settlers attack European diplomats in the West Bank Financial Times",
-          "source": "https://news.google.com/rss/articles/CBMicEFVX3lxTE92Q19aRmhnT2lIZTdybTYxQWcwM21Kekt3WnhEdzROaVU5MnJ0ckw1enUwaUlyQjk4NlBfOGp6N1EtN1NSQnoxUkRzdGFNU2VrMmQ4elpDaEdsY0E5OWpmWnExbzkydWs2WE1vVERoUXQ?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE92Q19aRmhnT2lIZTdybTYxQWcwM21Kekt3WnhEdzROaVU5MnJ0ckw1enUwaUlyQjk4NlBfOGp6N1EtN1NSQnoxUkRzdGFNU2VrMmQ4elpDaEdsY0E5OWpmWnExbzkydWs2WE1vVERoUXQ?oc=5",
-          "time": "2026-10-17T16:11:59Z",
-          "published_date": "2026-10-17T16:11:59Z",
-          "publishedDate": "2026-10-17T16:11:59Z",
-          "tag": "Breaking",
-          "confidence": "DEVELOPING",
-          "breaking": true,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_world_politics",
-            "sourceUrl": "https://news.google.com/rss/search?q=election+parliament+diplomacy+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
         }
@@ -362,8 +268,8 @@
       "reports": [
         {
           "id": "2310842c640e",
-          "sourceLabel": "Google News — Yemen / Red Sea",
-          "sourceName": "Google News — Yemen / Red Sea",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMickFVX3lxTFBuZTctY0gzc0I4RE1wUUlPdWhCSl90bkVyZXA0ck53SDhlSUlEVW5wVFIxWXMyckpVNTlGNXJHU2NhZEltNjktU1RDZFVLZVNkZ2Z5XzFoZzFjWFY3OEl6aVJUSEFzbDY3VXJQVHdtc1hqQQ?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMickFVX3lxTFBuZTctY0gzc0I4RE1wUUlPdWhCSl90bkVyZXA0ck53SDhlSUlEVW5wVFIxWXMyckpVNTlGNXJHU2NhZEltNjktU1RDZFVLZVNkZ2Z5XzFoZzFjWFY3OEl6aVJUSEFzbDY3VXJQVHdtc1hqQQ?oc=5",
           "sourceType": "middle-east-conflict",
           "title": "Egypt ready to defend Saudi Arabia against Houthis: Sisi - Banglanews24",
           "summary": "Egypt ready to defend Saudi Arabia against Houthis: Sisi Banglanews24",
@@ -408,8 +314,8 @@
         },
         {
           "id": "274b0d291802",
-          "sourceLabel": "Google News — Yemen / Red Sea",
-          "sourceName": "Google News — Yemen / Red Sea",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFAwTmpTNVlUVlotQTN6QjhRVXVleW11YXUxYUtYWlEySjZwSjdaN2ZUMnBDWkFuQzNmd2l4ZU4wMnF3bFpxV2pzTg?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFAwTmpTNVlUVlotQTN6QjhRVXVleW11YXUxYUtYWlEySjZwSjdaN2ZUMnBDWkFuQzNmd2l4ZU4wMnF3bFpxV2pzTg?oc=5",
           "sourceType": "middle-east-conflict",
           "title": "Egypt ‘ready to defend’ Saudi Arabia against Houthis - Dawn",
           "summary": "Egypt ‘ready to defend’ Saudi Arabia against Houthis Dawn",
@@ -432,182 +338,138 @@
       ]
     },
     {
-      "id": "f29890339289f9b5",
-      "title": "Green forest fire notification in Mali",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 3,
-      "sourceCount": 1,
+      "id": "c8a38d4e2d555026",
+      "title": "Fighting intensifies across Yemen as humanitarian crisis deepens - Al Jazeera",
+      "category": "conflict",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "sourceCount": 2,
       "sources": [
-        "gdacs.org"
+        "news.google.com",
+        "aljazeera.com"
       ],
       "anchors": [
-        "mali"
+        "yemen"
       ],
-      "firstSeen": "2026-10-17T19:03:27Z",
-      "lastSeen": "2026-10-17T23:03:00Z",
+      "firstSeen": "2026-10-18T09:16:54Z",
+      "lastSeen": "2026-10-18T09:29:23Z",
       "urls": [
-        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032886",
-        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032885",
-        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032877"
+        "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNYVRlRFBGN0J5dV9yQ3BqWGduQUlmenJldi1DT2EzSzl0cWtSVjhJYjBNYmtfNzk5aEJfN1cxc2tYalBXLTJteDBMekZjdjVTb191XzRyRFFLZWc5THA4bzZ0RVdKcW5jNWVEUUVuWEZiNlQ0NXNwVUxtRU41MjlCOFpOYkphTTVWbmVMekg3ZVdLN2pPSzdzbjhBUzB2c2NaRlpMRUxqS2dLUdIBrwFBVV95cUxQcDFWR3lSeGVfcW1ZRm1zX2wyd3NSX3A1aEQ0cUxEOGpfaG1LWmQ5S3h6Slc0a1p4N2U4OVdQZ2xELXJaaHVLWFc3UEJ0RnAySFlXTmszZzQzR2MzaEVNUlN2Y2VDSGVHUWRJVkd5MHdERWNCZUY1LURLMUNCajJXZmQzbHlIdW1GSU5BbUZpYUdGVkFOUm9EaUNMYW1FWjN6SmF5eFZBdUtxX3puOGQ0?oc=5",
+        "https://www.aljazeera.com/news/2026/10/18/fighting-intensifies-across-yemen-as-humanitarian-crisis-deepens?traffic_source=rss"
       ],
       "reports": [
         {
-          "id": "986af079fded",
-          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032886",
-          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032886",
-          "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in Mali",
-          "summary": "On 12/10/2026, a forest fire started in Mali, until 17/10/2026.",
-          "summary_snippet": "On 12/10/2026, a forest fire started in Mali, until 17/10/2026.",
-          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032886",
-          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032886",
-          "time": "2026-10-17T23:03:00Z",
-          "published_date": "2026-10-17T23:03:00Z",
-          "publishedDate": "2026-10-17T23:03:00Z",
+          "id": "67871de8df62",
+          "sourceLabel": "Google News — Yemen / Red Sea",
+          "sourceName": "Google News — Yemen / Red Sea",
+          "sourceType": "middle-east-conflict",
+          "title": "Fighting intensifies across Yemen as humanitarian crisis deepens - Al Jazeera",
+          "summary": "Fighting intensifies across Yemen as humanitarian crisis deepens Al Jazeera",
+          "summary_snippet": "Fighting intensifies across Yemen as humanitarian crisis deepens Al Jazeera",
+          "source": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNYVRlRFBGN0J5dV9yQ3BqWGduQUlmenJldi1DT2EzSzl0cWtSVjhJYjBNYmtfNzk5aEJfN1cxc2tYalBXLTJteDBMekZjdjVTb191XzRyRFFLZWc5THA4bzZ0RVdKcW5jNWVEUUVuWEZiNlQ0NXNwVUxtRU41MjlCOFpOYkphTTVWbmVMekg3ZVdLN2pPSzdzbjhBUzB2c2NaRlpMRUxqS2dLUdIBrwFBVV95cUxQcDFWR3lSeGVfcW1ZRm1zX2wyd3NSX3A1aEQ0cUxEOGpfaG1LWmQ5S3h6Slc0a1p4N2U4OVdQZ2xELXJaaHVLWFc3UEJ0RnAySFlXTmszZzQzR2MzaEVNUlN2Y2VDSGVHUWRJVkd5MHdERWNCZUY1LURLMUNCajJXZmQzbHlIdW1GSU5BbUZpYUdGVkFOUm9EaUNMYW1FWjN6SmF5eFZBdUtxX3puOGQ0?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNYVRlRFBGN0J5dV9yQ3BqWGduQUlmenJldi1DT2EzSzl0cWtSVjhJYjBNYmtfNzk5aEJfN1cxc2tYalBXLTJteDBMekZjdjVTb191XzRyRFFLZWc5THA4bzZ0RVdKcW5jNWVEUUVuWEZiNlQ0NXNwVUxtRU41MjlCOFpOYkphTTVWbmVMekg3ZVdLN2pPSzdzbjhBUzB2c2NaRlpMRUxqS2dLUdIBrwFBVV95cUxQcDFWR3lSeGVfcW1ZRm1zX2wyd3NSX3A1aEQ0cUxEOGpfaG1LWmQ5S3h6Slc0a1p4N2U4OVdQZ2xELXJaaHVLWFc3UEJ0RnAySFlXTmszZzQzR2MzaEVNUlN2Y2VDSGVHUWRJVkd5MHdERWNCZUY1LURLMUNCajJXZmQzbHlIdW1GSU5BbUZpYUdGVkFOUm9EaUNMYW1FWjN6SmF5eFZBdUtxX3puOGQ0?oc=5",
+          "time": "2026-10-18T09:29:23Z",
+          "published_date": "2026-10-18T09:29:23Z",
+          "publishedDate": "2026-10-18T09:29:23Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "sourceId": "google_news_yemen_red_sea",
+            "sourceUrl": "https://news.google.com/rss/search?q=Yemen+Houthis+Red+Sea+shipping+missile+drone+conflict+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
         },
         {
-          "id": "0752c408974c",
-          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032885",
-          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032885",
-          "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in Mali",
-          "summary": "On 12/10/2026, a forest fire started in Mali, until 17/10/2026.",
-          "summary_snippet": "On 12/10/2026, a forest fire started in Mali, until 17/10/2026.",
-          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032885",
-          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032885",
-          "time": "2026-10-17T23:02:37Z",
-          "published_date": "2026-10-17T23:02:37Z",
-          "publishedDate": "2026-10-17T23:02:37Z",
-          "tag": "World",
+          "id": "c5304dc40c60",
+          "sourceLabel": "Al Jazeera",
+          "sourceName": "Al Jazeera",
+          "sourceType": "international",
+          "title": "Fighting intensifies across Yemen as humanitarian crisis deepens",
+          "summary": "Clashes between Yemeni forces and Houthis cause casualties on both sides as aid agencies warn of humanitarian crisis.",
+          "summary_snippet": "Clashes between Yemeni forces and Houthis cause casualties on both sides as aid agencies warn of humanitarian crisis.",
+          "source": "https://www.aljazeera.com/news/2026/10/18/fighting-intensifies-across-yemen-as-humanitarian-crisis-deepens?traffic_source=rss",
+          "url": "https://www.aljazeera.com/news/2026/10/18/fighting-intensifies-across-yemen-as-humanitarian-crisis-deepens?traffic_source=rss",
+          "time": "2026-10-18T09:16:54Z",
+          "published_date": "2026-10-18T09:16:54Z",
+          "publishedDate": "2026-10-18T09:16:54Z",
+          "tag": "Breaking",
           "confidence": "DEVELOPING",
-          "breaking": false,
+          "breaking": true,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "849ff9407a64",
-          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032877",
-          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032877",
-          "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in Mali",
-          "summary": "On 12/10/2026, a forest fire started in Mali, until 17/10/2026.",
-          "summary_snippet": "On 12/10/2026, a forest fire started in Mali, until 17/10/2026.",
-          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032877",
-          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032877",
-          "time": "2026-10-17T19:03:27Z",
-          "published_date": "2026-10-17T19:03:27Z",
-          "publishedDate": "2026-10-17T19:03:27Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "sourceId": "al_jazeera",
+            "sourceUrl": "https://www.aljazeera.com/xml/rss/all.xml",
             "feedFormat": "rss"
           }
         }
       ]
     },
     {
-      "id": "cd02c5e532c38eed",
-      "title": "Green forest fire notification in Mozambique",
+      "id": "9910dcc9196daee3",
+      "title": "Saudi-led coalition intercepts drones as Egypt weighs sending help - Al Jazeera",
       "category": "general",
-      "confidence": "low",
-      "reportCount": 3,
-      "sourceCount": 1,
+      "confidence": "moderate",
+      "reportCount": 2,
+      "sourceCount": 2,
       "sources": [
-        "gdacs.org"
+        "news.google.com",
+        "aljazeera.com"
       ],
-      "anchors": [],
-      "firstSeen": "2026-10-17T19:04:23Z",
-      "lastSeen": "2026-10-17T19:07:59Z",
+      "anchors": [
+        "egypt"
+      ],
+      "firstSeen": "2026-10-17T23:21:57Z",
+      "lastSeen": "2026-10-17T23:26:53Z",
       "urls": [
-        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032880",
-        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032879",
-        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032878"
+        "https://news.google.com/rss/articles/CBMirAFBVV95cUxObzE5OEQ1YmtRaTQzMEN4ZC16UVlZOXRXTm9kZm93dldxWmxwUkMwYVJPMkx4YktUcm15d2ZzbHJVbFNaZUZ5RDl3V1lxVzY2eDA0OHFhT2RINHhNMU9GRFNiQ1RRUmo0akRHOEhieFZiZkYxOEEtSkFWUkMwQ3UxdWF0VVFSanNMY3M1RDVBSzk0ZE5lRVd0R2U1TE9HOTEtRmxEOEduRlowLUpv0gGyAUFVX3lxTFBsajZwTGFfQ0YyU0hzT2drU2xPM1haeGl5V1JOamM5TXFDeGQ0VmlCQnBNWDNkanNELVBBZWJTREhPSVRUd0tJM1d3T1pKRzlvZTk0VVdQTHlJdVJUdWhndUFrbnFvcXJoaWwwVVNDM3kwWEtBdWN5Smt0b1dtZ3lFYkFIbTE2Z0Yzb0FXRVNSVUlhWHRJRENRT21EMnVjN3N0c3IxTjBHT2dqemFJZ1VIeVE?oc=5",
+        "https://www.aljazeera.com/news/2026/10/17/saudi-led-coalition-intercepts-drones-as-egypt-weighs-sending-help?traffic_source=rss"
       ],
       "reports": [
         {
-          "id": "49e26f795a89",
-          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032880",
-          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032880",
-          "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in Mozambique",
-          "summary": "On 09/10/2026, a forest fire started in Mozambique, until 17/10/2026.",
-          "summary_snippet": "On 09/10/2026, a forest fire started in Mozambique, until 17/10/2026.",
-          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032880",
-          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032880",
-          "time": "2026-10-17T19:07:59Z",
-          "published_date": "2026-10-17T19:07:59Z",
-          "publishedDate": "2026-10-17T19:07:59Z",
-          "tag": "World",
+          "id": "0161d79dca59",
+          "sourceLabel": "Google News — Iran Israel",
+          "sourceName": "Google News — Iran Israel",
+          "sourceType": "middle-east-conflict",
+          "title": "Saudi-led coalition intercepts drones as Egypt weighs sending help - Al Jazeera",
+          "summary": "Saudi-led coalition intercepts drones as Egypt weighs sending help Al Jazeera",
+          "summary_snippet": "Saudi-led coalition intercepts drones as Egypt weighs sending help Al Jazeera",
+          "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxObzE5OEQ1YmtRaTQzMEN4ZC16UVlZOXRXTm9kZm93dldxWmxwUkMwYVJPMkx4YktUcm15d2ZzbHJVbFNaZUZ5RDl3V1lxVzY2eDA0OHFhT2RINHhNMU9GRFNiQ1RRUmo0akRHOEhieFZiZkYxOEEtSkFWUkMwQ3UxdWF0VVFSanNMY3M1RDVBSzk0ZE5lRVd0R2U1TE9HOTEtRmxEOEduRlowLUpv0gGyAUFVX3lxTFBsajZwTGFfQ0YyU0hzT2drU2xPM1haeGl5V1JOamM5TXFDeGQ0VmlCQnBNWDNkanNELVBBZWJTREhPSVRUd0tJM1d3T1pKRzlvZTk0VVdQTHlJdVJUdWhndUFrbnFvcXJoaWwwVVNDM3kwWEtBdWN5Smt0b1dtZ3lFYkFIbTE2Z0Yzb0FXRVNSVUlhWHRJRENRT21EMnVjN3N0c3IxTjBHT2dqemFJZ1VIeVE?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxObzE5OEQ1YmtRaTQzMEN4ZC16UVlZOXRXTm9kZm93dldxWmxwUkMwYVJPMkx4YktUcm15d2ZzbHJVbFNaZUZ5RDl3V1lxVzY2eDA0OHFhT2RINHhNMU9GRFNiQ1RRUmo0akRHOEhieFZiZkYxOEEtSkFWUkMwQ3UxdWF0VVFSanNMY3M1RDVBSzk0ZE5lRVd0R2U1TE9HOTEtRmxEOEduRlowLUpv0gGyAUFVX3lxTFBsajZwTGFfQ0YyU0hzT2drU2xPM1haeGl5V1JOamM5TXFDeGQ0VmlCQnBNWDNkanNELVBBZWJTREhPSVRUd0tJM1d3T1pKRzlvZTk0VVdQTHlJdVJUdWhndUFrbnFvcXJoaWwwVVNDM3kwWEtBdWN5Smt0b1dtZ3lFYkFIbTE2Z0Yzb0FXRVNSVUlhWHRJRENRT21EMnVjN3N0c3IxTjBHT2dqemFJZ1VIeVE?oc=5",
+          "time": "2026-10-17T23:26:53Z",
+          "published_date": "2026-10-17T23:26:53Z",
+          "publishedDate": "2026-10-17T23:26:53Z",
+          "tag": "Breaking",
           "confidence": "DEVELOPING",
-          "breaking": false,
+          "breaking": true,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "sourceId": "google_news_iran_israel",
+            "sourceUrl": "https://news.google.com/rss/search?q=Iran+Israel+conflict+missile+drone+strike+escalation+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
         },
         {
-          "id": "04191bc50d13",
-          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032879",
-          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032879",
-          "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in Mozambique",
-          "summary": "On 09/10/2026, a forest fire started in Mozambique, until 17/10/2026.",
-          "summary_snippet": "On 09/10/2026, a forest fire started in Mozambique, until 17/10/2026.",
-          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032879",
-          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032879",
-          "time": "2026-10-17T19:07:33Z",
-          "published_date": "2026-10-17T19:07:33Z",
-          "publishedDate": "2026-10-17T19:07:33Z",
-          "tag": "World",
+          "id": "ba52249f4c28",
+          "sourceLabel": "https://www.aljazeera.com/news/2026/10/17/saudi-led-coalition-intercepts-drones-as-egypt-weighs-sending-help?traffic_source=rss",
+          "sourceName": "https://www.aljazeera.com/news/2026/10/17/saudi-led-coalition-intercepts-drones-as-egypt-weighs-sending-help?traffic_source=rss",
+          "sourceType": "international",
+          "title": "Saudi-led coalition intercepts drones as Egypt weighs sending help",
+          "summary": "Forces intercepted and destroyed four drones over Saudi Arabia's Riyadh, Eastern Province and southern region.",
+          "summary_snippet": "Forces intercepted and destroyed four drones over Saudi Arabia's Riyadh, Eastern Province and southern region.",
+          "source": "https://www.aljazeera.com/news/2026/10/17/saudi-led-coalition-intercepts-drones-as-egypt-weighs-sending-help?traffic_source=rss",
+          "url": "https://www.aljazeera.com/news/2026/10/17/saudi-led-coalition-intercepts-drones-as-egypt-weighs-sending-help?traffic_source=rss",
+          "time": "2026-10-17T23:21:57Z",
+          "published_date": "2026-10-17T23:21:57Z",
+          "publishedDate": "2026-10-17T23:21:57Z",
+          "tag": "Breaking",
           "confidence": "DEVELOPING",
-          "breaking": false,
+          "breaking": true,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "84945822e0c8",
-          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032878",
-          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032878",
-          "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in Mozambique",
-          "summary": "On 10/10/2026, a forest fire started in Mozambique, until 17/10/2026.",
-          "summary_snippet": "On 10/10/2026, a forest fire started in Mozambique, until 17/10/2026.",
-          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032878",
-          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032878",
-          "time": "2026-10-17T19:04:23Z",
-          "published_date": "2026-10-17T19:04:23Z",
-          "publishedDate": "2026-10-17T19:04:23Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "sourceId": "al_jazeera",
+            "sourceUrl": "https://www.aljazeera.com/xml/rss/all.xml",
             "feedFormat": "rss"
           }
         }
@@ -899,8 +761,8 @@
         },
         {
           "id": "3390fd063dce",
-          "sourceLabel": "Google News — Yemen / Red Sea",
-          "sourceName": "Google News — Yemen / Red Sea",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNOTVkZ3NwX0dBWDFmZ2VyOFZVR3VhTVByWW0zTWdrTzNweEk1aHRnWGFvRm1PbVgxaUdGcnRqWGtHVjZCRENlaHBMNGNKd2d3dUprNElOZk5VNlFSVzhIQ01yVzZhRi1UV2FmZ28yYnZmV1lLNkpiejFrZTNfTjhCRGRvc1I4cWZFNnlIeFpYOWlUaW9SVUlvQ3dXRUN0dlJjMGZkZU9sZHVYay1PZWJHU3dfRV9KbzU3OEE?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNOTVkZ3NwX0dBWDFmZ2VyOFZVR3VhTVByWW0zTWdrTzNweEk1aHRnWGFvRm1PbVgxaUdGcnRqWGtHVjZCRENlaHBMNGNKd2d3dUprNElOZk5VNlFSVzhIQ01yVzZhRi1UV2FmZ28yYnZmV1lLNkpiejFrZTNfTjhCRGRvc1I4cWZFNnlIeFpYOWlUaW9SVUlvQ3dXRUN0dlJjMGZkZU9sZHVYay1PZWJHU3dfRV9KbzU3OEE?oc=5",
           "sourceType": "middle-east-conflict",
           "title": "Saudi Arabia ntercepts Houthi drones as Egypt offers defensive support - The Vibes",
           "summary": "Saudi Arabia ntercepts Houthi drones as Egypt offers defensive support The Vibes",
@@ -917,6 +779,74 @@
           "credit": {
             "sourceId": "google_news_yemen_red_sea",
             "sourceUrl": "https://news.google.com/rss/search?q=Yemen+Houthis+Red+Sea+shipping+missile+drone+conflict+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cac006ad5cd5043c",
+      "title": "Houthi strikes on Saudi Arabia show Yemeni rebels' growing strength - PressReader",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 2,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [
+        "yemen"
+      ],
+      "firstSeen": "2026-10-17T21:04:33Z",
+      "lastSeen": "2026-10-18T00:55:56Z",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMihwFBVV95cUxOSlNWRWFUdmlQZFA1cmN2YkE4U0x2bTR6VTYzalQ5ejJKeU1tUjNOdE1IV3ZCV2U5TW9qVF9mbVNlWUVlX0ZxZ1lteVRXQWpwREdfNW0yb0Y3cWE1Wl92Yk4xTDM2WGNCel9ncUxrc29qT28wZE1obXhDdTVETmhVV2R6NnBvbWc?oc=5",
+        "https://news.google.com/rss/articles/CBMiqAFBVV95cUxON3ctZzVVZmROUF9ucW82clpVMWMzUXVUQ0xFendFWlh1U1lEbXRmTlh4TUJKR1lHT0FpLUNiUWZ1aDRkTjM0ak52X0QzR2thSGNKSUptNXdXOTQxM1gtYk9zZkJTN1Jjek9LY2Y5M2RWcERwZ2RheV9DSXBCZEItaFNWYlR2ZXp0c3dMVS1YQnJkY3F1TjVDaEJpZFVCcFYyTTJwNXZmTEvSAa4BQVVfeXFMUFNuYkZZWEZjUnIwMTZCNWVaTXEtMmh4OXZPWjRWVmkwS3liMHVMcEJmeHBocEJFQ2Z5d013RkVZOXQxWjc2emNMNTdTY0N2WDVmVDMzTUNhVkVXU1NQSk9kSUlwdDNibGs5eF91dGNSMVhZV2k3enN0cUE5X0piZ2E3dHlhZTkwOWp0S2FJTkdLd1Zub1lNRmR3WlNPMHBoUElxUm0yV1RYaFhkV253?oc=5"
+      ],
+      "reports": [
+        {
+          "id": "9721ce19e574",
+          "sourceLabel": "Google News — Yemen / Red Sea",
+          "sourceName": "Google News — Yemen / Red Sea",
+          "sourceType": "middle-east-conflict",
+          "title": "Houthi strikes on Saudi Arabia show Yemeni rebels' growing strength - PressReader",
+          "summary": "Houthi strikes on Saudi Arabia show Yemeni rebels' growing strength PressReader",
+          "summary_snippet": "Houthi strikes on Saudi Arabia show Yemeni rebels' growing strength PressReader",
+          "source": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOSlNWRWFUdmlQZFA1cmN2YkE4U0x2bTR6VTYzalQ5ejJKeU1tUjNOdE1IV3ZCV2U5TW9qVF9mbVNlWUVlX0ZxZ1lteVRXQWpwREdfNW0yb0Y3cWE1Wl92Yk4xTDM2WGNCel9ncUxrc29qT28wZE1obXhDdTVETmhVV2R6NnBvbWc?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOSlNWRWFUdmlQZFA1cmN2YkE4U0x2bTR6VTYzalQ5ejJKeU1tUjNOdE1IV3ZCV2U5TW9qVF9mbVNlWUVlX0ZxZ1lteVRXQWpwREdfNW0yb0Y3cWE1Wl92Yk4xTDM2WGNCel9ncUxrc29qT28wZE1obXhDdTVETmhVV2R6NnBvbWc?oc=5",
+          "time": "2026-10-18T00:55:56Z",
+          "published_date": "2026-10-18T00:55:56Z",
+          "publishedDate": "2026-10-18T00:55:56Z",
+          "tag": "Breaking",
+          "confidence": "DEVELOPING",
+          "breaking": true,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_yemen_red_sea",
+            "sourceUrl": "https://news.google.com/rss/search?q=Yemen+Houthis+Red+Sea+shipping+missile+drone+conflict+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "ab14e68d18ee",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxON3ctZzVVZmROUF9ucW82clpVMWMzUXVUQ0xFendFWlh1U1lEbXRmTlh4TUJKR1lHT0FpLUNiUWZ1aDRkTjM0ak52X0QzR2thSGNKSUptNXdXOTQxM1gtYk9zZkJTN1Jjek9LY2Y5M2RWcERwZ2RheV9DSXBCZEItaFNWYlR2ZXp0c3dMVS1YQnJkY3F1TjVDaEJpZFVCcFYyTTJwNXZmTEvSAa4BQVVfeXFMUFNuYkZZWEZjUnIwMTZCNWVaTXEtMmh4OXZPWjRWVmkwS3liMHVMcEJmeHBocEJFQ2Z5d013RkVZOXQxWjc2emNMNTdTY0N2WDVmVDMzTUNhVkVXU1NQSk9kSUlwdDNibGs5eF91dGNSMVhZV2k3enN0cUE5X0piZ2E3dHlhZTkwOWp0S2FJTkdLd1Zub1lNRmR3WlNPMHBoUElxUm0yV1RYaFhkV253?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxON3ctZzVVZmROUF9ucW82clpVMWMzUXVUQ0xFendFWlh1U1lEbXRmTlh4TUJKR1lHT0FpLUNiUWZ1aDRkTjM0ak52X0QzR2thSGNKSUptNXdXOTQxM1gtYk9zZkJTN1Jjek9LY2Y5M2RWcERwZ2RheV9DSXBCZEItaFNWYlR2ZXp0c3dMVS1YQnJkY3F1TjVDaEJpZFVCcFYyTTJwNXZmTEvSAa4BQVVfeXFMUFNuYkZZWEZjUnIwMTZCNWVaTXEtMmh4OXZPWjRWVmkwS3liMHVMcEJmeHBocEJFQ2Z5d013RkVZOXQxWjc2emNMNTdTY0N2WDVmVDMzTUNhVkVXU1NQSk9kSUlwdDNibGs5eF91dGNSMVhZV2k3enN0cUE5X0piZ2E3dHlhZTkwOWp0S2FJTkdLd1Zub1lNRmR3WlNPMHBoUElxUm0yV1RYaFhkV253?oc=5",
+          "sourceType": "middle-east-conflict",
+          "title": "Houthi strikes on Saudi Arabia show the Yemeni rebels' growing strength - PBS",
+          "summary": "Houthi strikes on Saudi Arabia show the Yemeni rebels' growing strength PBS",
+          "summary_snippet": "Houthi strikes on Saudi Arabia show the Yemeni rebels' growing strength PBS",
+          "source": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxON3ctZzVVZmROUF9ucW82clpVMWMzUXVUQ0xFendFWlh1U1lEbXRmTlh4TUJKR1lHT0FpLUNiUWZ1aDRkTjM0ak52X0QzR2thSGNKSUptNXdXOTQxM1gtYk9zZkJTN1Jjek9LY2Y5M2RWcERwZ2RheV9DSXBCZEItaFNWYlR2ZXp0c3dMVS1YQnJkY3F1TjVDaEJpZFVCcFYyTTJwNXZmTEvSAa4BQVVfeXFMUFNuYkZZWEZjUnIwMTZCNWVaTXEtMmh4OXZPWjRWVmkwS3liMHVMcEJmeHBocEJFQ2Z5d013RkVZOXQxWjc2emNMNTdTY0N2WDVmVDMzTUNhVkVXU1NQSk9kSUlwdDNibGs5eF91dGNSMVhZV2k3enN0cUE5X0piZ2E3dHlhZTkwOWp0S2FJTkdLd1Zub1lNRmR3WlNPMHBoUElxUm0yV1RYaFhkV253?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxON3ctZzVVZmROUF9ucW82clpVMWMzUXVUQ0xFendFWlh1U1lEbXRmTlh4TUJKR1lHT0FpLUNiUWZ1aDRkTjM0ak52X0QzR2thSGNKSUptNXdXOTQxM1gtYk9zZkJTN1Jjek9LY2Y5M2RWcERwZ2RheV9DSXBCZEItaFNWYlR2ZXp0c3dMVS1YQnJkY3F1TjVDaEJpZFVCcFYyTTJwNXZmTEvSAa4BQVVfeXFMUFNuYkZZWEZjUnIwMTZCNWVaTXEtMmh4OXZPWjRWVmkwS3liMHVMcEJmeHBocEJFQ2Z5d013RkVZOXQxWjc2emNMNTdTY0N2WDVmVDMzTUNhVkVXU1NQSk9kSUlwdDNibGs5eF91dGNSMVhZV2k3enN0cUE5X0piZ2E3dHlhZTkwOWp0S2FJTkdLd1Zub1lNRmR3WlNPMHBoUElxUm0yV1RYaFhkV253?oc=5",
+          "time": "2026-10-17T21:04:33Z",
+          "published_date": "2026-10-17T21:04:33Z",
+          "publishedDate": "2026-10-17T21:04:33Z",
+          "tag": "Breaking",
+          "confidence": "DEVELOPING",
+          "breaking": true,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_iran_israel",
+            "sourceUrl": "https://news.google.com/rss/search?q=Iran+Israel+conflict+missile+drone+strike+escalation+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
         }
@@ -965,8 +895,8 @@
         },
         {
           "id": "254e654eb9f6",
-          "sourceLabel": "Google News — U.S. Politics",
-          "sourceName": "Google News — U.S. Politics",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5tQW1xWUtwQlN2Sy1wMnlkcm0wd181Y0VtSF94Z1JKUmpBUGpOYWh4OVhuQ0pGMkFSUTJPbGowcEg0Qk02bzFsalpCeV9pZGNveEszeXBoc2R1ZHM?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5tQW1xWUtwQlN2Sy1wMnlkcm0wd181Y0VtSF94Z1JKUmpBUGpOYWh4OVhuQ0pGMkFSUTJPbGowcEg0Qk02bzFsalpCeV9pZGNveEszeXBoc2R1ZHM?oc=5",
           "sourceType": "us-politics",
           "title": "Three takeaways from Elon Musk's latest political donations - BBC",
           "summary": "Three takeaways from Elon Musk's latest political donations BBC",
@@ -983,6 +913,74 @@
           "credit": {
             "sourceId": "google_news_u_s_politics",
             "sourceUrl": "https://news.google.com/rss/search?q=US+politics+Congress+Senate+White+House+election+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
+      "id": "f29890339289f9b5",
+      "title": "Green forest fire notification in Mali",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 2,
+      "sourceCount": 1,
+      "sources": [
+        "gdacs.org"
+      ],
+      "anchors": [
+        "mali"
+      ],
+      "firstSeen": "2026-10-17T23:02:37Z",
+      "lastSeen": "2026-10-17T23:03:00Z",
+      "urls": [
+        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032886",
+        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032885"
+      ],
+      "reports": [
+        {
+          "id": "986af079fded",
+          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032886",
+          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032886",
+          "sourceType": "climate-hazard",
+          "title": "Green forest fire notification in Mali",
+          "summary": "On 12/10/2026, a forest fire started in Mali, until 17/10/2026.",
+          "summary_snippet": "On 12/10/2026, a forest fire started in Mali, until 17/10/2026.",
+          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032886",
+          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032886",
+          "time": "2026-10-17T23:03:00Z",
+          "published_date": "2026-10-17T23:03:00Z",
+          "publishedDate": "2026-10-17T23:03:00Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "gdacs_global_disaster_alerts",
+            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "0752c408974c",
+          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032885",
+          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032885",
+          "sourceType": "climate-hazard",
+          "title": "Green forest fire notification in Mali",
+          "summary": "On 12/10/2026, a forest fire started in Mali, until 17/10/2026.",
+          "summary_snippet": "On 12/10/2026, a forest fire started in Mali, until 17/10/2026.",
+          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032885",
+          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032885",
+          "time": "2026-10-17T23:02:37Z",
+          "published_date": "2026-10-17T23:02:37Z",
+          "publishedDate": "2026-10-17T23:02:37Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "gdacs_global_disaster_alerts",
+            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
             "feedFormat": "rss"
           }
         }
@@ -1187,770 +1185,6 @@
       ]
     },
     {
-      "id": "b24bb43f31cb984e",
-      "title": "Green forest fire notification in Sudan",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "sourceCount": 1,
-      "sources": [
-        "gdacs.org"
-      ],
-      "anchors": [
-        "sudan"
-      ],
-      "firstSeen": "2026-10-17T19:02:17Z",
-      "lastSeen": "2026-10-17T19:02:44Z",
-      "urls": [
-        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032875",
-        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032872"
-      ],
-      "reports": [
-        {
-          "id": "fedb33a33965",
-          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032875",
-          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032875",
-          "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in Sudan",
-          "summary": "On 13/10/2026, a forest fire started in Sudan, until 17/10/2026.",
-          "summary_snippet": "On 13/10/2026, a forest fire started in Sudan, until 17/10/2026.",
-          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032875",
-          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032875",
-          "time": "2026-10-17T19:02:44Z",
-          "published_date": "2026-10-17T19:02:44Z",
-          "publishedDate": "2026-10-17T19:02:44Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "50e9721106d0",
-          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032872",
-          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032872",
-          "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in Sudan",
-          "summary": "On 14/10/2026, a forest fire started in Sudan, until 17/10/2026.",
-          "summary_snippet": "On 14/10/2026, a forest fire started in Sudan, until 17/10/2026.",
-          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032872",
-          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032872",
-          "time": "2026-10-17T19:02:17Z",
-          "published_date": "2026-10-17T19:02:17Z",
-          "publishedDate": "2026-10-17T19:02:17Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "2fb83181a17331d3",
-      "title": "Several Afghan Taliban personnel killed in alleged retaliatory action along border, Pakistan says - The New Indian Express",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "2026-10-17T18:25:18Z",
-      "lastSeen": "2026-10-17T18:25:18Z",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNMlpqUXVuQUxrR2pYWldONEF2bm45VEJRcEVRUE5UVlYzMU5QX3F5WHhlWTROcGdIeGxDUC1RdXM3b051UFFSLS1hVmFlcFJtcE9tVzRubDh3ZG9Jam5uNjByZVhrM3ZWakV6S2FiWWgxbmE5RktzME9iQ3MtcHZUQUY0UWZEdndaelpmUmhfODVMaDlwNGE5b2l4bmtueTJBd0tLUmtFSGUxX3lSVWlhZUhhWVVmeVVpbWJweEdBZGswLUJOV0pNeU0xUmVnNVhZdXRpVHJoZkFuVUs5S3V0Z9IB7gFBVV95cUxOUWxFZTM2TEQ5QWpXdGVFQ0JSa0RweG1WOFFHeDJEWjJrU0dqVkQ1Y25TX1JUTk1Benppb3l3cGRkY0ZWNW91TlVPNEhhNTBkZ0wwbjZPWTFJWTcxZjNuMjZKVFVRR1pHSmhVSFZHNHhGNVczemlqU0x0TExwZV9jeVMyVkhLTTZOXzBCRmZ2Mi1IQXozWndvaFc3VF96NFFWbVFqZUVuZlBWN2V2RGNDdzdjRWdnU0xXSjFsdk1ONng0MnF6Q0dZZDNOc29aTTJpUVBvX2FMemUtcXFnTEFMZTRyWW9zb2RDLTBTTllB?oc=5",
-        "https://news.google.com/rss/articles/CBMingJBVV95cUxPeE4wTjktLUtHMnRmNUU5TVBHanhpdVNkRGpLYlRlMGhxVnhhTms1MnBDUzEtcFNpekFFbEM1X2Q5ejIyaW5Ed1BZU1pUTkF5bVZ6Vmc3VzU2OVNYYnp5R3RMMVFmX2hrc285QUNRcmtLYUlDVU42eFk0aFJqT0REU0J2RlVUcVg4Y3hMY3VzQm9saGdVT1lnRnJNVGFMLWhsdFlvUVB4TTNyTjJGRWZMRHNMUE95WWwteHpDdnFDbS0wTGJMNWRlVjczWFpZYzhkU21tYWVpN21KMXBvSHVMNkJQY1VxNkNZQ3U1TkNtNm45MzJORGlyLWtnRmhMM0JtbE83eW90VzhVT3pkZ0hCNVN0Ykt0LUswejYycWJR0gHuAUFVX3lxTE5RbEVlMzZMRDlBald0ZUVDQlJrRHB4bVY4UUd4MkRaMmtTR2pWRDVjblNfUlROTUF6emlveXdwZGRjRlY1b3VOVU80SGE1MGRnTDBuNk9ZMUlZNzFmM24yNkpUVVFHWkdKaFVIVkc0eEY1VzN6aWpTTHRMTHBlX2N5UzJWSEtNNk5fMEJGZnYyLUhBejNad29oVzdUX3o0UVZtUWplRW5mUFY3ZXZEY0N3N2NFZ2dTTFdKMWx2TU42eDQycXpDR1lkM05zb1pNMmlRUG9fYUx6ZS1xcWdMQUxlNHJZb3NvZEMtMFNOWUE?oc=5"
-      ],
-      "reports": [
-        {
-          "id": "472f35d2c375",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNMlpqUXVuQUxrR2pYWldONEF2bm45VEJRcEVRUE5UVlYzMU5QX3F5WHhlWTROcGdIeGxDUC1RdXM3b051UFFSLS1hVmFlcFJtcE9tVzRubDh3ZG9Jam5uNjByZVhrM3ZWakV6S2FiWWgxbmE5RktzME9iQ3MtcHZUQUY0UWZEdndaelpmUmhfODVMaDlwNGE5b2l4bmtueTJBd0tLUmtFSGUxX3lSVWlhZUhhWVVmeVVpbWJweEdBZGswLUJOV0pNeU0xUmVnNVhZdXRpVHJoZkFuVUs5S3V0Z9IB7gFBVV95cUxOUWxFZTM2TEQ5QWpXdGVFQ0JSa0RweG1WOFFHeDJEWjJrU0dqVkQ1Y25TX1JUTk1Benppb3l3cGRkY0ZWNW91TlVPNEhhNTBkZ0wwbjZPWTFJWTcxZjNuMjZKVFVRR1pHSmhVSFZHNHhGNVczemlqU0x0TExwZV9jeVMyVkhLTTZOXzBCRmZ2Mi1IQXozWndvaFc3VF96NFFWbVFqZUVuZlBWN2V2RGNDdzdjRWdnU0xXSjFsdk1ONng0MnF6Q0dZZDNOc29aTTJpUVBvX2FMemUtcXFnTEFMZTRyWW9zb2RDLTBTTllB?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNMlpqUXVuQUxrR2pYWldONEF2bm45VEJRcEVRUE5UVlYzMU5QX3F5WHhlWTROcGdIeGxDUC1RdXM3b051UFFSLS1hVmFlcFJtcE9tVzRubDh3ZG9Jam5uNjByZVhrM3ZWakV6S2FiWWgxbmE5RktzME9iQ3MtcHZUQUY0UWZEdndaelpmUmhfODVMaDlwNGE5b2l4bmtueTJBd0tLUmtFSGUxX3lSVWlhZUhhWVVmeVVpbWJweEdBZGswLUJOV0pNeU0xUmVnNVhZdXRpVHJoZkFuVUs5S3V0Z9IB7gFBVV95cUxOUWxFZTM2TEQ5QWpXdGVFQ0JSa0RweG1WOFFHeDJEWjJrU0dqVkQ1Y25TX1JUTk1Benppb3l3cGRkY0ZWNW91TlVPNEhhNTBkZ0wwbjZPWTFJWTcxZjNuMjZKVFVRR1pHSmhVSFZHNHhGNVczemlqU0x0TExwZV9jeVMyVkhLTTZOXzBCRmZ2Mi1IQXozWndvaFc3VF96NFFWbVFqZUVuZlBWN2V2RGNDdzdjRWdnU0xXSjFsdk1ONng0MnF6Q0dZZDNOc29aTTJpUVBvX2FMemUtcXFnTEFMZTRyWW9zb2RDLTBTTllB?oc=5",
-          "sourceType": "south-asia-conflict",
-          "title": "Several Afghan Taliban personnel killed in alleged retaliatory action along border, Pakistan says - The New Indian Express",
-          "summary": "Several Afghan Taliban personnel killed in alleged retaliatory action along border, Pakistan says The New Indian Express",
-          "summary_snippet": "Several Afghan Taliban personnel killed in alleged retaliatory action along border, Pakistan says The New Indian Express",
-          "source": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNMlpqUXVuQUxrR2pYWldONEF2bm45VEJRcEVRUE5UVlYzMU5QX3F5WHhlWTROcGdIeGxDUC1RdXM3b051UFFSLS1hVmFlcFJtcE9tVzRubDh3ZG9Jam5uNjByZVhrM3ZWakV6S2FiWWgxbmE5RktzME9iQ3MtcHZUQUY0UWZEdndaelpmUmhfODVMaDlwNGE5b2l4bmtueTJBd0tLUmtFSGUxX3lSVWlhZUhhWVVmeVVpbWJweEdBZGswLUJOV0pNeU0xUmVnNVhZdXRpVHJoZkFuVUs5S3V0Z9IB7gFBVV95cUxOUWxFZTM2TEQ5QWpXdGVFQ0JSa0RweG1WOFFHeDJEWjJrU0dqVkQ1Y25TX1JUTk1Benppb3l3cGRkY0ZWNW91TlVPNEhhNTBkZ0wwbjZPWTFJWTcxZjNuMjZKVFVRR1pHSmhVSFZHNHhGNVczemlqU0x0TExwZV9jeVMyVkhLTTZOXzBCRmZ2Mi1IQXozWndvaFc3VF96NFFWbVFqZUVuZlBWN2V2RGNDdzdjRWdnU0xXSjFsdk1ONng0MnF6Q0dZZDNOc29aTTJpUVBvX2FMemUtcXFnTEFMZTRyWW9zb2RDLTBTTllB?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNMlpqUXVuQUxrR2pYWldONEF2bm45VEJRcEVRUE5UVlYzMU5QX3F5WHhlWTROcGdIeGxDUC1RdXM3b051UFFSLS1hVmFlcFJtcE9tVzRubDh3ZG9Jam5uNjByZVhrM3ZWakV6S2FiWWgxbmE5RktzME9iQ3MtcHZUQUY0UWZEdndaelpmUmhfODVMaDlwNGE5b2l4bmtueTJBd0tLUmtFSGUxX3lSVWlhZUhhWVVmeVVpbWJweEdBZGswLUJOV0pNeU0xUmVnNVhZdXRpVHJoZkFuVUs5S3V0Z9IB7gFBVV95cUxOUWxFZTM2TEQ5QWpXdGVFQ0JSa0RweG1WOFFHeDJEWjJrU0dqVkQ1Y25TX1JUTk1Benppb3l3cGRkY0ZWNW91TlVPNEhhNTBkZ0wwbjZPWTFJWTcxZjNuMjZKVFVRR1pHSmhVSFZHNHhGNVczemlqU0x0TExwZV9jeVMyVkhLTTZOXzBCRmZ2Mi1IQXozWndvaFc3VF96NFFWbVFqZUVuZlBWN2V2RGNDdzdjRWdnU0xXSjFsdk1ONng0MnF6Q0dZZDNOc29aTTJpUVBvX2FMemUtcXFnTEFMZTRyWW9zb2RDLTBTTllB?oc=5",
-          "time": "2026-10-17T18:25:18Z",
-          "published_date": "2026-10-17T18:25:18Z",
-          "publishedDate": "2026-10-17T18:25:18Z",
-          "tag": "Breaking",
-          "confidence": "DEVELOPING",
-          "breaking": true,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_afghanistan_security",
-            "sourceUrl": "https://news.google.com/rss/search?q=Afghanistan+Taliban+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "99ff3f3c5091",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMingJBVV95cUxPeE4wTjktLUtHMnRmNUU5TVBHanhpdVNkRGpLYlRlMGhxVnhhTms1MnBDUzEtcFNpekFFbEM1X2Q5ejIyaW5Ed1BZU1pUTkF5bVZ6Vmc3VzU2OVNYYnp5R3RMMVFmX2hrc285QUNRcmtLYUlDVU42eFk0aFJqT0REU0J2RlVUcVg4Y3hMY3VzQm9saGdVT1lnRnJNVGFMLWhsdFlvUVB4TTNyTjJGRWZMRHNMUE95WWwteHpDdnFDbS0wTGJMNWRlVjczWFpZYzhkU21tYWVpN21KMXBvSHVMNkJQY1VxNkNZQ3U1TkNtNm45MzJORGlyLWtnRmhMM0JtbE83eW90VzhVT3pkZ0hCNVN0Ykt0LUswejYycWJR0gHuAUFVX3lxTE5RbEVlMzZMRDlBald0ZUVDQlJrRHB4bVY4UUd4MkRaMmtTR2pWRDVjblNfUlROTUF6emlveXdwZGRjRlY1b3VOVU80SGE1MGRnTDBuNk9ZMUlZNzFmM24yNkpUVVFHWkdKaFVIVkc0eEY1VzN6aWpTTHRMTHBlX2N5UzJWSEtNNk5fMEJGZnYyLUhBejNad29oVzdUX3o0UVZtUWplRW5mUFY3ZXZEY0N3N2NFZ2dTTFdKMWx2TU42eDQycXpDR1lkM05zb1pNMmlRUG9fYUx6ZS1xcWdMQUxlNHJZb3NvZEMtMFNOWUE?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMingJBVV95cUxPeE4wTjktLUtHMnRmNUU5TVBHanhpdVNkRGpLYlRlMGhxVnhhTms1MnBDUzEtcFNpekFFbEM1X2Q5ejIyaW5Ed1BZU1pUTkF5bVZ6Vmc3VzU2OVNYYnp5R3RMMVFmX2hrc285QUNRcmtLYUlDVU42eFk0aFJqT0REU0J2RlVUcVg4Y3hMY3VzQm9saGdVT1lnRnJNVGFMLWhsdFlvUVB4TTNyTjJGRWZMRHNMUE95WWwteHpDdnFDbS0wTGJMNWRlVjczWFpZYzhkU21tYWVpN21KMXBvSHVMNkJQY1VxNkNZQ3U1TkNtNm45MzJORGlyLWtnRmhMM0JtbE83eW90VzhVT3pkZ0hCNVN0Ykt0LUswejYycWJR0gHuAUFVX3lxTE5RbEVlMzZMRDlBald0ZUVDQlJrRHB4bVY4UUd4MkRaMmtTR2pWRDVjblNfUlROTUF6emlveXdwZGRjRlY1b3VOVU80SGE1MGRnTDBuNk9ZMUlZNzFmM24yNkpUVVFHWkdKaFVIVkc0eEY1VzN6aWpTTHRMTHBlX2N5UzJWSEtNNk5fMEJGZnYyLUhBejNad29oVzdUX3o0UVZtUWplRW5mUFY3ZXZEY0N3N2NFZ2dTTFdKMWx2TU42eDQycXpDR1lkM05zb1pNMmlRUG9fYUx6ZS1xcWdMQUxlNHJZb3NvZEMtMFNOWUE?oc=5",
-          "sourceType": "south-asia-conflict",
-          "title": "Several Afghan Taliban personnel killed in alleged retaliatory action along border, Pakistan says - The New Indian Express",
-          "summary": "Several Afghan Taliban personnel killed in alleged retaliatory action along border, Pakistan says The New Indian Express",
-          "summary_snippet": "Several Afghan Taliban personnel killed in alleged retaliatory action along border, Pakistan says The New Indian Express",
-          "source": "https://news.google.com/rss/articles/CBMingJBVV95cUxPeE4wTjktLUtHMnRmNUU5TVBHanhpdVNkRGpLYlRlMGhxVnhhTms1MnBDUzEtcFNpekFFbEM1X2Q5ejIyaW5Ed1BZU1pUTkF5bVZ6Vmc3VzU2OVNYYnp5R3RMMVFmX2hrc285QUNRcmtLYUlDVU42eFk0aFJqT0REU0J2RlVUcVg4Y3hMY3VzQm9saGdVT1lnRnJNVGFMLWhsdFlvUVB4TTNyTjJGRWZMRHNMUE95WWwteHpDdnFDbS0wTGJMNWRlVjczWFpZYzhkU21tYWVpN21KMXBvSHVMNkJQY1VxNkNZQ3U1TkNtNm45MzJORGlyLWtnRmhMM0JtbE83eW90VzhVT3pkZ0hCNVN0Ykt0LUswejYycWJR0gHuAUFVX3lxTE5RbEVlMzZMRDlBald0ZUVDQlJrRHB4bVY4UUd4MkRaMmtTR2pWRDVjblNfUlROTUF6emlveXdwZGRjRlY1b3VOVU80SGE1MGRnTDBuNk9ZMUlZNzFmM24yNkpUVVFHWkdKaFVIVkc0eEY1VzN6aWpTTHRMTHBlX2N5UzJWSEtNNk5fMEJGZnYyLUhBejNad29oVzdUX3o0UVZtUWplRW5mUFY3ZXZEY0N3N2NFZ2dTTFdKMWx2TU42eDQycXpDR1lkM05zb1pNMmlRUG9fYUx6ZS1xcWdMQUxlNHJZb3NvZEMtMFNOWUE?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxPeE4wTjktLUtHMnRmNUU5TVBHanhpdVNkRGpLYlRlMGhxVnhhTms1MnBDUzEtcFNpekFFbEM1X2Q5ejIyaW5Ed1BZU1pUTkF5bVZ6Vmc3VzU2OVNYYnp5R3RMMVFmX2hrc285QUNRcmtLYUlDVU42eFk0aFJqT0REU0J2RlVUcVg4Y3hMY3VzQm9saGdVT1lnRnJNVGFMLWhsdFlvUVB4TTNyTjJGRWZMRHNMUE95WWwteHpDdnFDbS0wTGJMNWRlVjczWFpZYzhkU21tYWVpN21KMXBvSHVMNkJQY1VxNkNZQ3U1TkNtNm45MzJORGlyLWtnRmhMM0JtbE83eW90VzhVT3pkZ0hCNVN0Ykt0LUswejYycWJR0gHuAUFVX3lxTE5RbEVlMzZMRDlBald0ZUVDQlJrRHB4bVY4UUd4MkRaMmtTR2pWRDVjblNfUlROTUF6emlveXdwZGRjRlY1b3VOVU80SGE1MGRnTDBuNk9ZMUlZNzFmM24yNkpUVVFHWkdKaFVIVkc0eEY1VzN6aWpTTHRMTHBlX2N5UzJWSEtNNk5fMEJGZnYyLUhBejNad29oVzdUX3o0UVZtUWplRW5mUFY3ZXZEY0N3N2NFZ2dTTFdKMWx2TU42eDQycXpDR1lkM05zb1pNMmlRUG9fYUx6ZS1xcWdMQUxlNHJZb3NvZEMtMFNOWUE?oc=5",
-          "time": "2026-10-17T18:25:18Z",
-          "published_date": "2026-10-17T18:25:18Z",
-          "publishedDate": "2026-10-17T18:25:18Z",
-          "tag": "Breaking",
-          "confidence": "DEVELOPING",
-          "breaking": true,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_afghanistan_security",
-            "sourceUrl": "https://news.google.com/rss/search?q=Afghanistan+Taliban+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "fa9e453e08e0d935",
-      "title": "Several Afghan Taliban Personnel killed In Alleged Retaliatory Action Along Border: Pak Officials - ETV Bharat",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "2026-10-17T17:45:43Z",
-      "lastSeen": "2026-10-17T18:07:01Z",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQNk1Jc0hzUHhfQkhiUi1DNHZSYjlEdHdMa1FvcWdDVGhYcno3aGVNZW82XzVsRlpBekhqMTBmeTRMdEJIOGxBV3ROcmNEMGFjSFZKbEtLTWFoejdZRzlPR3JacWxvNWNzbTcweUVKMXVXN0xnM3JPc0ZpMGdrSkFqNFlKLXVqTDFEVkpHSW1VcXJNVngydUVuTkxmaFgwd1F0QmdZbjRvOFI3Y0RkcFZXd0hScnJqTEszUHBfdlY5WGx2UFVOd2pnNTNyZ181OW15SzdJTHNZdkJXeVlHMjM4cVppX3dWaENWbXfSAe8BQVVfeXFMTk5WeWphYVB4dFhRbkYxM3gwSGhraFZQOWxGbzEtRW54ZHlHQmNCX2dTOC1VeEJlODJyVXhuS2hhRHR0MFNmc1RKbGdYSEozTW1BRUM0V293emtQQUMtNHdCX2tLYlF5MktwNmlUcUFiOW9lSGppLU41NWIxYjE2WGR0YjYwUDA4MXktb0ZUVDNpdktCTG91NzJCSmtsUmtfbTFQMXZhUFJHN2NjRWFJNXB4QkNNS1B4UGlZeXlnamdwRXcxOUJOSGQzQWNVV1BfZkdLRXgzajl2ejZoTTBMbVNObWJER1VfbGx0OFQ3c1U?oc=5",
-        "https://news.google.com/rss/articles/CBMiywFBVV95cUxNdk1JSEs2ZFJYQ3hEQlFkUUtraDBkQnhYOTFQVXh5SnpQeFFPd1VJLWxNVktETTVmSXpWYk5mcTdCclRyd2pxNU1ReVItSmtXdjAwbWJ5cm9mbTljVUNjZkRrTGJQalBLdklNb3R0Zk1TRGxJVjBMUFQwZ1hERFhEa0hkZk91UjM0TmhwNjR5cndpOUhSVEtPTjlkR0FrMXZOcG1BTlNEczhTUWg1N3E5OEVMUW5wNjZxNEg4N0szNUZleDd0XzFwYmJNMNIB0AFBVV95cUxPTEQ2ZGxlS2RlM2xzRmNMcnFwbkpLRk5hZS1TR3RSZ3hRNEplNFFkRXRxMzF3UFprMEtrZmJHRU9UbkcxM0xETFczeFJ3Sm1xcTZCdzBZamVaZlFzbExiNVRoSHZ4UzlLM3YzLThqaHY4a3kyUUktaU5TNktKUmZjSXFqcVd2VUxsOWNCbWN5R3pFemtKQ0g1T3FHTlM3WXFhUUZuTk9FOEtPWHMtcG02cVhyY2tMbXZldkF1MVJjNW9UelJMdmtDZ2Z0ZUpBS2xx?oc=5"
-      ],
-      "reports": [
-        {
-          "id": "516154f19ef5",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQNk1Jc0hzUHhfQkhiUi1DNHZSYjlEdHdMa1FvcWdDVGhYcno3aGVNZW82XzVsRlpBekhqMTBmeTRMdEJIOGxBV3ROcmNEMGFjSFZKbEtLTWFoejdZRzlPR3JacWxvNWNzbTcweUVKMXVXN0xnM3JPc0ZpMGdrSkFqNFlKLXVqTDFEVkpHSW1VcXJNVngydUVuTkxmaFgwd1F0QmdZbjRvOFI3Y0RkcFZXd0hScnJqTEszUHBfdlY5WGx2UFVOd2pnNTNyZ181OW15SzdJTHNZdkJXeVlHMjM4cVppX3dWaENWbXfSAe8BQVVfeXFMTk5WeWphYVB4dFhRbkYxM3gwSGhraFZQOWxGbzEtRW54ZHlHQmNCX2dTOC1VeEJlODJyVXhuS2hhRHR0MFNmc1RKbGdYSEozTW1BRUM0V293emtQQUMtNHdCX2tLYlF5MktwNmlUcUFiOW9lSGppLU41NWIxYjE2WGR0YjYwUDA4MXktb0ZUVDNpdktCTG91NzJCSmtsUmtfbTFQMXZhUFJHN2NjRWFJNXB4QkNNS1B4UGlZeXlnamdwRXcxOUJOSGQzQWNVV1BfZkdLRXgzajl2ejZoTTBMbVNObWJER1VfbGx0OFQ3c1U?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQNk1Jc0hzUHhfQkhiUi1DNHZSYjlEdHdMa1FvcWdDVGhYcno3aGVNZW82XzVsRlpBekhqMTBmeTRMdEJIOGxBV3ROcmNEMGFjSFZKbEtLTWFoejdZRzlPR3JacWxvNWNzbTcweUVKMXVXN0xnM3JPc0ZpMGdrSkFqNFlKLXVqTDFEVkpHSW1VcXJNVngydUVuTkxmaFgwd1F0QmdZbjRvOFI3Y0RkcFZXd0hScnJqTEszUHBfdlY5WGx2UFVOd2pnNTNyZ181OW15SzdJTHNZdkJXeVlHMjM4cVppX3dWaENWbXfSAe8BQVVfeXFMTk5WeWphYVB4dFhRbkYxM3gwSGhraFZQOWxGbzEtRW54ZHlHQmNCX2dTOC1VeEJlODJyVXhuS2hhRHR0MFNmc1RKbGdYSEozTW1BRUM0V293emtQQUMtNHdCX2tLYlF5MktwNmlUcUFiOW9lSGppLU41NWIxYjE2WGR0YjYwUDA4MXktb0ZUVDNpdktCTG91NzJCSmtsUmtfbTFQMXZhUFJHN2NjRWFJNXB4QkNNS1B4UGlZeXlnamdwRXcxOUJOSGQzQWNVV1BfZkdLRXgzajl2ejZoTTBMbVNObWJER1VfbGx0OFQ3c1U?oc=5",
-          "sourceType": "south-asia-conflict",
-          "title": "Several Afghan Taliban Personnel killed In Alleged Retaliatory Action Along Border: Pak Officials - ETV Bharat",
-          "summary": "Several Afghan Taliban Personnel killed In Alleged Retaliatory Action Along Border: Pak Officials ETV Bharat",
-          "summary_snippet": "Several Afghan Taliban Personnel killed In Alleged Retaliatory Action Along Border: Pak Officials ETV Bharat",
-          "source": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQNk1Jc0hzUHhfQkhiUi1DNHZSYjlEdHdMa1FvcWdDVGhYcno3aGVNZW82XzVsRlpBekhqMTBmeTRMdEJIOGxBV3ROcmNEMGFjSFZKbEtLTWFoejdZRzlPR3JacWxvNWNzbTcweUVKMXVXN0xnM3JPc0ZpMGdrSkFqNFlKLXVqTDFEVkpHSW1VcXJNVngydUVuTkxmaFgwd1F0QmdZbjRvOFI3Y0RkcFZXd0hScnJqTEszUHBfdlY5WGx2UFVOd2pnNTNyZ181OW15SzdJTHNZdkJXeVlHMjM4cVppX3dWaENWbXfSAe8BQVVfeXFMTk5WeWphYVB4dFhRbkYxM3gwSGhraFZQOWxGbzEtRW54ZHlHQmNCX2dTOC1VeEJlODJyVXhuS2hhRHR0MFNmc1RKbGdYSEozTW1BRUM0V293emtQQUMtNHdCX2tLYlF5MktwNmlUcUFiOW9lSGppLU41NWIxYjE2WGR0YjYwUDA4MXktb0ZUVDNpdktCTG91NzJCSmtsUmtfbTFQMXZhUFJHN2NjRWFJNXB4QkNNS1B4UGlZeXlnamdwRXcxOUJOSGQzQWNVV1BfZkdLRXgzajl2ejZoTTBMbVNObWJER1VfbGx0OFQ3c1U?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQNk1Jc0hzUHhfQkhiUi1DNHZSYjlEdHdMa1FvcWdDVGhYcno3aGVNZW82XzVsRlpBekhqMTBmeTRMdEJIOGxBV3ROcmNEMGFjSFZKbEtLTWFoejdZRzlPR3JacWxvNWNzbTcweUVKMXVXN0xnM3JPc0ZpMGdrSkFqNFlKLXVqTDFEVkpHSW1VcXJNVngydUVuTkxmaFgwd1F0QmdZbjRvOFI3Y0RkcFZXd0hScnJqTEszUHBfdlY5WGx2UFVOd2pnNTNyZ181OW15SzdJTHNZdkJXeVlHMjM4cVppX3dWaENWbXfSAe8BQVVfeXFMTk5WeWphYVB4dFhRbkYxM3gwSGhraFZQOWxGbzEtRW54ZHlHQmNCX2dTOC1VeEJlODJyVXhuS2hhRHR0MFNmc1RKbGdYSEozTW1BRUM0V293emtQQUMtNHdCX2tLYlF5MktwNmlUcUFiOW9lSGppLU41NWIxYjE2WGR0YjYwUDA4MXktb0ZUVDNpdktCTG91NzJCSmtsUmtfbTFQMXZhUFJHN2NjRWFJNXB4QkNNS1B4UGlZeXlnamdwRXcxOUJOSGQzQWNVV1BfZkdLRXgzajl2ejZoTTBMbVNObWJER1VfbGx0OFQ3c1U?oc=5",
-          "time": "2026-10-17T18:07:01Z",
-          "published_date": "2026-10-17T18:07:01Z",
-          "publishedDate": "2026-10-17T18:07:01Z",
-          "tag": "Breaking",
-          "confidence": "DEVELOPING",
-          "breaking": true,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_afghanistan_security",
-            "sourceUrl": "https://news.google.com/rss/search?q=Afghanistan+Taliban+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "19b3d8a48323",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNdk1JSEs2ZFJYQ3hEQlFkUUtraDBkQnhYOTFQVXh5SnpQeFFPd1VJLWxNVktETTVmSXpWYk5mcTdCclRyd2pxNU1ReVItSmtXdjAwbWJ5cm9mbTljVUNjZkRrTGJQalBLdklNb3R0Zk1TRGxJVjBMUFQwZ1hERFhEa0hkZk91UjM0TmhwNjR5cndpOUhSVEtPTjlkR0FrMXZOcG1BTlNEczhTUWg1N3E5OEVMUW5wNjZxNEg4N0szNUZleDd0XzFwYmJNMNIB0AFBVV95cUxPTEQ2ZGxlS2RlM2xzRmNMcnFwbkpLRk5hZS1TR3RSZ3hRNEplNFFkRXRxMzF3UFprMEtrZmJHRU9UbkcxM0xETFczeFJ3Sm1xcTZCdzBZamVaZlFzbExiNVRoSHZ4UzlLM3YzLThqaHY4a3kyUUktaU5TNktKUmZjSXFqcVd2VUxsOWNCbWN5R3pFemtKQ0g1T3FHTlM3WXFhUUZuTk9FOEtPWHMtcG02cVhyY2tMbXZldkF1MVJjNW9UelJMdmtDZ2Z0ZUpBS2xx?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNdk1JSEs2ZFJYQ3hEQlFkUUtraDBkQnhYOTFQVXh5SnpQeFFPd1VJLWxNVktETTVmSXpWYk5mcTdCclRyd2pxNU1ReVItSmtXdjAwbWJ5cm9mbTljVUNjZkRrTGJQalBLdklNb3R0Zk1TRGxJVjBMUFQwZ1hERFhEa0hkZk91UjM0TmhwNjR5cndpOUhSVEtPTjlkR0FrMXZOcG1BTlNEczhTUWg1N3E5OEVMUW5wNjZxNEg4N0szNUZleDd0XzFwYmJNMNIB0AFBVV95cUxPTEQ2ZGxlS2RlM2xzRmNMcnFwbkpLRk5hZS1TR3RSZ3hRNEplNFFkRXRxMzF3UFprMEtrZmJHRU9UbkcxM0xETFczeFJ3Sm1xcTZCdzBZamVaZlFzbExiNVRoSHZ4UzlLM3YzLThqaHY4a3kyUUktaU5TNktKUmZjSXFqcVd2VUxsOWNCbWN5R3pFemtKQ0g1T3FHTlM3WXFhUUZuTk9FOEtPWHMtcG02cVhyY2tMbXZldkF1MVJjNW9UelJMdmtDZ2Z0ZUpBS2xx?oc=5",
-          "sourceType": "south-asia-conflict",
-          "title": "Several Afghan Taliban personnel killed in alleged retaliatory action along border: Pak officials - ThePrint",
-          "summary": "Several Afghan Taliban personnel killed in alleged retaliatory action along border: Pak officials ThePrint",
-          "summary_snippet": "Several Afghan Taliban personnel killed in alleged retaliatory action along border: Pak officials ThePrint",
-          "source": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNdk1JSEs2ZFJYQ3hEQlFkUUtraDBkQnhYOTFQVXh5SnpQeFFPd1VJLWxNVktETTVmSXpWYk5mcTdCclRyd2pxNU1ReVItSmtXdjAwbWJ5cm9mbTljVUNjZkRrTGJQalBLdklNb3R0Zk1TRGxJVjBMUFQwZ1hERFhEa0hkZk91UjM0TmhwNjR5cndpOUhSVEtPTjlkR0FrMXZOcG1BTlNEczhTUWg1N3E5OEVMUW5wNjZxNEg4N0szNUZleDd0XzFwYmJNMNIB0AFBVV95cUxPTEQ2ZGxlS2RlM2xzRmNMcnFwbkpLRk5hZS1TR3RSZ3hRNEplNFFkRXRxMzF3UFprMEtrZmJHRU9UbkcxM0xETFczeFJ3Sm1xcTZCdzBZamVaZlFzbExiNVRoSHZ4UzlLM3YzLThqaHY4a3kyUUktaU5TNktKUmZjSXFqcVd2VUxsOWNCbWN5R3pFemtKQ0g1T3FHTlM3WXFhUUZuTk9FOEtPWHMtcG02cVhyY2tMbXZldkF1MVJjNW9UelJMdmtDZ2Z0ZUpBS2xx?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNdk1JSEs2ZFJYQ3hEQlFkUUtraDBkQnhYOTFQVXh5SnpQeFFPd1VJLWxNVktETTVmSXpWYk5mcTdCclRyd2pxNU1ReVItSmtXdjAwbWJ5cm9mbTljVUNjZkRrTGJQalBLdklNb3R0Zk1TRGxJVjBMUFQwZ1hERFhEa0hkZk91UjM0TmhwNjR5cndpOUhSVEtPTjlkR0FrMXZOcG1BTlNEczhTUWg1N3E5OEVMUW5wNjZxNEg4N0szNUZleDd0XzFwYmJNMNIB0AFBVV95cUxPTEQ2ZGxlS2RlM2xzRmNMcnFwbkpLRk5hZS1TR3RSZ3hRNEplNFFkRXRxMzF3UFprMEtrZmJHRU9UbkcxM0xETFczeFJ3Sm1xcTZCdzBZamVaZlFzbExiNVRoSHZ4UzlLM3YzLThqaHY4a3kyUUktaU5TNktKUmZjSXFqcVd2VUxsOWNCbWN5R3pFemtKQ0g1T3FHTlM3WXFhUUZuTk9FOEtPWHMtcG02cVhyY2tMbXZldkF1MVJjNW9UelJMdmtDZ2Z0ZUpBS2xx?oc=5",
-          "time": "2026-10-17T17:45:43Z",
-          "published_date": "2026-10-17T17:45:43Z",
-          "publishedDate": "2026-10-17T17:45:43Z",
-          "tag": "Breaking",
-          "confidence": "DEVELOPING",
-          "breaking": true,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_afghanistan_security",
-            "sourceUrl": "https://news.google.com/rss/search?q=Afghanistan+Taliban+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "39dcb30cc409690f",
-      "title": "CNN Newsroom - CNN",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "2026-10-17T17:00:00Z",
-      "lastSeen": "2026-10-17T18:00:00Z",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMicEFVX3lxTFBCZFhVSkk0cXJoQW9XTXR1MGpFLWc5M2doUEdlRDFwM0Y1aUx2OWlKS3cwN0NlSWVlSmNyRkUwTFdwUnJnRFZ4YXlsamVSbzh2ejk2dnZndmR3TW9UTVpqcXhyN09xMk1SZDZ2c0xVV08?oc=5",
-        "https://news.google.com/rss/articles/CBMicEFVX3lxTE9xM1g4SmNmWXhsRnd5NFZmUmVmTnlGcGhud3FTYXNTRzA3MmN1WnlQY1IzMkFWemMyYlVlc0w4UTF1cmFlbXMwcW1mcVo5aWVzejlfZjdBX2M0cVhoTUJhRHRfS195TjFRbmtBQ2Q1UW0?oc=5"
-      ],
-      "reports": [
-        {
-          "id": "2aede9bd95dc",
-          "sourceLabel": "Google News — CNN Politics",
-          "sourceName": "Google News — CNN Politics",
-          "sourceType": "us-politics",
-          "title": "CNN Newsroom - CNN",
-          "summary": "CNN Newsroom CNN",
-          "summary_snippet": "CNN Newsroom CNN",
-          "source": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBCZFhVSkk0cXJoQW9XTXR1MGpFLWc5M2doUEdlRDFwM0Y1aUx2OWlKS3cwN0NlSWVlSmNyRkUwTFdwUnJnRFZ4YXlsamVSbzh2ejk2dnZndmR3TW9UTVpqcXhyN09xMk1SZDZ2c0xVV08?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBCZFhVSkk0cXJoQW9XTXR1MGpFLWc5M2doUEdlRDFwM0Y1aUx2OWlKS3cwN0NlSWVlSmNyRkUwTFdwUnJnRFZ4YXlsamVSbzh2ejk2dnZndmR3TW9UTVpqcXhyN09xMk1SZDZ2c0xVV08?oc=5",
-          "time": "2026-10-17T18:00:00Z",
-          "published_date": "2026-10-17T18:00:00Z",
-          "publishedDate": "2026-10-17T18:00:00Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_cnn_politics",
-            "sourceUrl": "https://news.google.com/rss/search?q=site%3Acnn.com+politics+Trump+Congress+Senate+White+House+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "2a487973aff8",
-          "sourceLabel": "Google News — CNN Politics",
-          "sourceName": "Google News — CNN Politics",
-          "sourceType": "us-politics",
-          "title": "CNN Newsroom - CNN",
-          "summary": "CNN Newsroom CNN",
-          "summary_snippet": "CNN Newsroom CNN",
-          "source": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9xM1g4SmNmWXhsRnd5NFZmUmVmTnlGcGhud3FTYXNTRzA3MmN1WnlQY1IzMkFWemMyYlVlc0w4UTF1cmFlbXMwcW1mcVo5aWVzejlfZjdBX2M0cVhoTUJhRHRfS195TjFRbmtBQ2Q1UW0?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9xM1g4SmNmWXhsRnd5NFZmUmVmTnlGcGhud3FTYXNTRzA3MmN1WnlQY1IzMkFWemMyYlVlc0w4UTF1cmFlbXMwcW1mcVo5aWVzejlfZjdBX2M0cVhoTUJhRHRfS195TjFRbmtBQ2Q1UW0?oc=5",
-          "time": "2026-10-17T17:00:00Z",
-          "published_date": "2026-10-17T17:00:00Z",
-          "publishedDate": "2026-10-17T17:00:00Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_cnn_politics",
-            "sourceUrl": "https://news.google.com/rss/search?q=site%3Acnn.com+politics+Trump+Congress+Senate+White+House+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "7677ef3de84c6e65",
-      "title": "Pakistani forces, Afghan Taliban exchange fire after militants attempt to infiltrate Pakistan - The Spec",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "2026-10-17T17:49:54Z",
-      "lastSeen": "2026-10-17T17:50:39Z",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMijwJBVV95cUxNTW1XdU5penZQUVpQZ1o4U2kwU1Z4ZDJOdlllNHZ4enUwZG1xTV9qdlpvOGVBT2RoRTFRaldiT0NDdF9IVDBNTllJOW15MTRCTHRLcC1aM2dvbkpna1FQR19FVFI1X04wSzF3SEM0MzBvSy1SXzRBVmFHV0o5RGdkT2lFS3dZcllSSV9YNnpSMEZMSGtkbXI2TWMzLUVzQTJPanFSazc4bmtDY0lyVWJna3ZjX0RhbGNfcVVLU3lvSXJIYWliUTVsQXI0aHZBdEpZaTJiUDNXeDRGbVYya0xKQ1NOQzZ6NFkyUkdOZWgyd0dKM3N0R1JxYUlYU2wzTjlHZk1PaklSLXhjVTZaQmVF?oc=5",
-        "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOU2RpRS1TQVpXY19WeFVVaTJ4NG14dlB6eGZLOUVyY0dUem4zZkFidnIxSTdrQ2Z2cXRXdXQzVTBTSGFSS1U2bnRUSVVUM2hvM0NYWHRKM2t2T01IcTlMU2UwODlHcjFkeXcwSDNKbEtIUXd2TDcyb20tQ3c1WHhGR3ZCSFRpd3B5MDNKTzJ0MjhpM2hjTmlqclVHNGFpd0FLSDYxODZTNG9DNnBZX0lQcmEyYll1ZUFvdjBrcmlhcDJDRlVfUnNzWXN1RUlhSktQN3RiMEZNOA?oc=5"
-      ],
-      "reports": [
-        {
-          "id": "6490d8003720",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMijwJBVV95cUxNTW1XdU5penZQUVpQZ1o4U2kwU1Z4ZDJOdlllNHZ4enUwZG1xTV9qdlpvOGVBT2RoRTFRaldiT0NDdF9IVDBNTllJOW15MTRCTHRLcC1aM2dvbkpna1FQR19FVFI1X04wSzF3SEM0MzBvSy1SXzRBVmFHV0o5RGdkT2lFS3dZcllSSV9YNnpSMEZMSGtkbXI2TWMzLUVzQTJPanFSazc4bmtDY0lyVWJna3ZjX0RhbGNfcVVLU3lvSXJIYWliUTVsQXI0aHZBdEpZaTJiUDNXeDRGbVYya0xKQ1NOQzZ6NFkyUkdOZWgyd0dKM3N0R1JxYUlYU2wzTjlHZk1PaklSLXhjVTZaQmVF?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMijwJBVV95cUxNTW1XdU5penZQUVpQZ1o4U2kwU1Z4ZDJOdlllNHZ4enUwZG1xTV9qdlpvOGVBT2RoRTFRaldiT0NDdF9IVDBNTllJOW15MTRCTHRLcC1aM2dvbkpna1FQR19FVFI1X04wSzF3SEM0MzBvSy1SXzRBVmFHV0o5RGdkT2lFS3dZcllSSV9YNnpSMEZMSGtkbXI2TWMzLUVzQTJPanFSazc4bmtDY0lyVWJna3ZjX0RhbGNfcVVLU3lvSXJIYWliUTVsQXI0aHZBdEpZaTJiUDNXeDRGbVYya0xKQ1NOQzZ6NFkyUkdOZWgyd0dKM3N0R1JxYUlYU2wzTjlHZk1PaklSLXhjVTZaQmVF?oc=5",
-          "sourceType": "south-asia-conflict",
-          "title": "Pakistani forces, Afghan Taliban exchange fire after militants attempt to infiltrate Pakistan - The Spec",
-          "summary": "Pakistani forces, Afghan Taliban exchange fire after militants attempt to infiltrate Pakistan The Spec",
-          "summary_snippet": "Pakistani forces, Afghan Taliban exchange fire after militants attempt to infiltrate Pakistan The Spec",
-          "source": "https://news.google.com/rss/articles/CBMijwJBVV95cUxNTW1XdU5penZQUVpQZ1o4U2kwU1Z4ZDJOdlllNHZ4enUwZG1xTV9qdlpvOGVBT2RoRTFRaldiT0NDdF9IVDBNTllJOW15MTRCTHRLcC1aM2dvbkpna1FQR19FVFI1X04wSzF3SEM0MzBvSy1SXzRBVmFHV0o5RGdkT2lFS3dZcllSSV9YNnpSMEZMSGtkbXI2TWMzLUVzQTJPanFSazc4bmtDY0lyVWJna3ZjX0RhbGNfcVVLU3lvSXJIYWliUTVsQXI0aHZBdEpZaTJiUDNXeDRGbVYya0xKQ1NOQzZ6NFkyUkdOZWgyd0dKM3N0R1JxYUlYU2wzTjlHZk1PaklSLXhjVTZaQmVF?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxNTW1XdU5penZQUVpQZ1o4U2kwU1Z4ZDJOdlllNHZ4enUwZG1xTV9qdlpvOGVBT2RoRTFRaldiT0NDdF9IVDBNTllJOW15MTRCTHRLcC1aM2dvbkpna1FQR19FVFI1X04wSzF3SEM0MzBvSy1SXzRBVmFHV0o5RGdkT2lFS3dZcllSSV9YNnpSMEZMSGtkbXI2TWMzLUVzQTJPanFSazc4bmtDY0lyVWJna3ZjX0RhbGNfcVVLU3lvSXJIYWliUTVsQXI0aHZBdEpZaTJiUDNXeDRGbVYya0xKQ1NOQzZ6NFkyUkdOZWgyd0dKM3N0R1JxYUlYU2wzTjlHZk1PaklSLXhjVTZaQmVF?oc=5",
-          "time": "2026-10-17T17:50:39Z",
-          "published_date": "2026-10-17T17:50:39Z",
-          "publishedDate": "2026-10-17T17:50:39Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_afghanistan_security",
-            "sourceUrl": "https://news.google.com/rss/search?q=Afghanistan+Taliban+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "2cd9c477b9d8",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOU2RpRS1TQVpXY19WeFVVaTJ4NG14dlB6eGZLOUVyY0dUem4zZkFidnIxSTdrQ2Z2cXRXdXQzVTBTSGFSS1U2bnRUSVVUM2hvM0NYWHRKM2t2T01IcTlMU2UwODlHcjFkeXcwSDNKbEtIUXd2TDcyb20tQ3c1WHhGR3ZCSFRpd3B5MDNKTzJ0MjhpM2hjTmlqclVHNGFpd0FLSDYxODZTNG9DNnBZX0lQcmEyYll1ZUFvdjBrcmlhcDJDRlVfUnNzWXN1RUlhSktQN3RiMEZNOA?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOU2RpRS1TQVpXY19WeFVVaTJ4NG14dlB6eGZLOUVyY0dUem4zZkFidnIxSTdrQ2Z2cXRXdXQzVTBTSGFSS1U2bnRUSVVUM2hvM0NYWHRKM2t2T01IcTlMU2UwODlHcjFkeXcwSDNKbEtIUXd2TDcyb20tQ3c1WHhGR3ZCSFRpd3B5MDNKTzJ0MjhpM2hjTmlqclVHNGFpd0FLSDYxODZTNG9DNnBZX0lQcmEyYll1ZUFvdjBrcmlhcDJDRlVfUnNzWXN1RUlhSktQN3RiMEZNOA?oc=5",
-          "sourceType": "south-asia-conflict",
-          "title": "Pakistani forces, Afghan Taliban exchange fire after militants attempt to infiltrate Pakistan - News4JAX",
-          "summary": "Pakistani forces, Afghan Taliban exchange fire after militants attempt to infiltrate Pakistan News4JAX",
-          "summary_snippet": "Pakistani forces, Afghan Taliban exchange fire after militants attempt to infiltrate Pakistan News4JAX",
-          "source": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOU2RpRS1TQVpXY19WeFVVaTJ4NG14dlB6eGZLOUVyY0dUem4zZkFidnIxSTdrQ2Z2cXRXdXQzVTBTSGFSS1U2bnRUSVVUM2hvM0NYWHRKM2t2T01IcTlMU2UwODlHcjFkeXcwSDNKbEtIUXd2TDcyb20tQ3c1WHhGR3ZCSFRpd3B5MDNKTzJ0MjhpM2hjTmlqclVHNGFpd0FLSDYxODZTNG9DNnBZX0lQcmEyYll1ZUFvdjBrcmlhcDJDRlVfUnNzWXN1RUlhSktQN3RiMEZNOA?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOU2RpRS1TQVpXY19WeFVVaTJ4NG14dlB6eGZLOUVyY0dUem4zZkFidnIxSTdrQ2Z2cXRXdXQzVTBTSGFSS1U2bnRUSVVUM2hvM0NYWHRKM2t2T01IcTlMU2UwODlHcjFkeXcwSDNKbEtIUXd2TDcyb20tQ3c1WHhGR3ZCSFRpd3B5MDNKTzJ0MjhpM2hjTmlqclVHNGFpd0FLSDYxODZTNG9DNnBZX0lQcmEyYll1ZUFvdjBrcmlhcDJDRlVfUnNzWXN1RUlhSktQN3RiMEZNOA?oc=5",
-          "time": "2026-10-17T17:49:54Z",
-          "published_date": "2026-10-17T17:49:54Z",
-          "publishedDate": "2026-10-17T17:49:54Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_afghanistan_security",
-            "sourceUrl": "https://news.google.com/rss/search?q=Afghanistan+Taliban+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "d5ab405cf163ceab",
-      "title": "Pakistani forces, Afghan Taliban exchange fire after militants attempt to infiltrate Pakistan - Goshen News",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "2026-10-17T17:49:00Z",
-      "lastSeen": "2026-10-17T17:49:54Z",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMilwJBVV95cUxPakh6aUw5YzJBRDN0b0cwQUVzb0doczdpMW9udUVJcC1ZWE5kUldwNnJpYWgwQk1EZnhORnkyY29MYWJEa2M3dDlPbHRqRHZRZDNsdDQ4Xzk2Vm95UkxYOU5vVWJOcGpZUDRBQzlHS2ctZllkV0J6UUNkcnhyRVVQeWhCcm1RdzBMRFlQOTJ1WGVjYm43cDA5Q19BRHkyNGQ4VkpUeHhjZWZ2TXhISzA5aFVfTG9CNE9DZldkb3h6eVlQUzZuQ2ZrU01TWDNWanpXNkxkaHd3bVkzbnlKcjhVaVZwdVhQVkVMdy14ZERBbHhhZjNYZy1NMWFDYndiVml5cDlKSjRyYnZxdmcyV19VemVwVFRIdWM?oc=5",
-        "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQeTN5NEtkT05nX1pSOXpKMXZraVY2VGhWcklJSWU2bVZjM3NqcWpHdDV1b3daZXNOVkdPZGR2b3BIX3haX0lDakc4dTg3eFBQY0U3dGl5QmZVNkdFZjJOTFhncEZyX0twZ05Ha2RXMG5hcG4tcXhYMGdTTEV0RENSb21kMkZsb1JSejg1eC1EV3ZTcDNKblRWWm5la2NoMl9YUURzVFN5QXJJTDEzaVA2MGhFYWJxTm1T?oc=5"
-      ],
-      "reports": [
-        {
-          "id": "0012f1c0d9b5",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMilwJBVV95cUxPakh6aUw5YzJBRDN0b0cwQUVzb0doczdpMW9udUVJcC1ZWE5kUldwNnJpYWgwQk1EZnhORnkyY29MYWJEa2M3dDlPbHRqRHZRZDNsdDQ4Xzk2Vm95UkxYOU5vVWJOcGpZUDRBQzlHS2ctZllkV0J6UUNkcnhyRVVQeWhCcm1RdzBMRFlQOTJ1WGVjYm43cDA5Q19BRHkyNGQ4VkpUeHhjZWZ2TXhISzA5aFVfTG9CNE9DZldkb3h6eVlQUzZuQ2ZrU01TWDNWanpXNkxkaHd3bVkzbnlKcjhVaVZwdVhQVkVMdy14ZERBbHhhZjNYZy1NMWFDYndiVml5cDlKSjRyYnZxdmcyV19VemVwVFRIdWM?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMilwJBVV95cUxPakh6aUw5YzJBRDN0b0cwQUVzb0doczdpMW9udUVJcC1ZWE5kUldwNnJpYWgwQk1EZnhORnkyY29MYWJEa2M3dDlPbHRqRHZRZDNsdDQ4Xzk2Vm95UkxYOU5vVWJOcGpZUDRBQzlHS2ctZllkV0J6UUNkcnhyRVVQeWhCcm1RdzBMRFlQOTJ1WGVjYm43cDA5Q19BRHkyNGQ4VkpUeHhjZWZ2TXhISzA5aFVfTG9CNE9DZldkb3h6eVlQUzZuQ2ZrU01TWDNWanpXNkxkaHd3bVkzbnlKcjhVaVZwdVhQVkVMdy14ZERBbHhhZjNYZy1NMWFDYndiVml5cDlKSjRyYnZxdmcyV19VemVwVFRIdWM?oc=5",
-          "sourceType": "south-asia-conflict",
-          "title": "Pakistani forces, Afghan Taliban exchange fire after militants attempt to infiltrate Pakistan - Goshen News",
-          "summary": "Pakistani forces, Afghan Taliban exchange fire after militants attempt to infiltrate Pakistan Goshen News",
-          "summary_snippet": "Pakistani forces, Afghan Taliban exchange fire after militants attempt to infiltrate Pakistan Goshen News",
-          "source": "https://news.google.com/rss/articles/CBMilwJBVV95cUxPakh6aUw5YzJBRDN0b0cwQUVzb0doczdpMW9udUVJcC1ZWE5kUldwNnJpYWgwQk1EZnhORnkyY29MYWJEa2M3dDlPbHRqRHZRZDNsdDQ4Xzk2Vm95UkxYOU5vVWJOcGpZUDRBQzlHS2ctZllkV0J6UUNkcnhyRVVQeWhCcm1RdzBMRFlQOTJ1WGVjYm43cDA5Q19BRHkyNGQ4VkpUeHhjZWZ2TXhISzA5aFVfTG9CNE9DZldkb3h6eVlQUzZuQ2ZrU01TWDNWanpXNkxkaHd3bVkzbnlKcjhVaVZwdVhQVkVMdy14ZERBbHhhZjNYZy1NMWFDYndiVml5cDlKSjRyYnZxdmcyV19VemVwVFRIdWM?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxPakh6aUw5YzJBRDN0b0cwQUVzb0doczdpMW9udUVJcC1ZWE5kUldwNnJpYWgwQk1EZnhORnkyY29MYWJEa2M3dDlPbHRqRHZRZDNsdDQ4Xzk2Vm95UkxYOU5vVWJOcGpZUDRBQzlHS2ctZllkV0J6UUNkcnhyRVVQeWhCcm1RdzBMRFlQOTJ1WGVjYm43cDA5Q19BRHkyNGQ4VkpUeHhjZWZ2TXhISzA5aFVfTG9CNE9DZldkb3h6eVlQUzZuQ2ZrU01TWDNWanpXNkxkaHd3bVkzbnlKcjhVaVZwdVhQVkVMdy14ZERBbHhhZjNYZy1NMWFDYndiVml5cDlKSjRyYnZxdmcyV19VemVwVFRIdWM?oc=5",
-          "time": "2026-10-17T17:49:54Z",
-          "published_date": "2026-10-17T17:49:54Z",
-          "publishedDate": "2026-10-17T17:49:54Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_afghanistan_security",
-            "sourceUrl": "https://news.google.com/rss/search?q=Afghanistan+Taliban+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "abdb2094dcae",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQeTN5NEtkT05nX1pSOXpKMXZraVY2VGhWcklJSWU2bVZjM3NqcWpHdDV1b3daZXNOVkdPZGR2b3BIX3haX0lDakc4dTg3eFBQY0U3dGl5QmZVNkdFZjJOTFhncEZyX0twZ05Ha2RXMG5hcG4tcXhYMGdTTEV0RENSb21kMkZsb1JSejg1eC1EV3ZTcDNKblRWWm5la2NoMl9YUURzVFN5QXJJTDEzaVA2MGhFYWJxTm1T?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQeTN5NEtkT05nX1pSOXpKMXZraVY2VGhWcklJSWU2bVZjM3NqcWpHdDV1b3daZXNOVkdPZGR2b3BIX3haX0lDakc4dTg3eFBQY0U3dGl5QmZVNkdFZjJOTFhncEZyX0twZ05Ha2RXMG5hcG4tcXhYMGdTTEV0RENSb21kMkZsb1JSejg1eC1EV3ZTcDNKblRWWm5la2NoMl9YUURzVFN5QXJJTDEzaVA2MGhFYWJxTm1T?oc=5",
-          "sourceType": "south-asia-conflict",
-          "title": "Pakistani forces, Afghan Taliban exchange fire after militants attempt to infiltrate Pakistan - AP News",
-          "summary": "Pakistani forces, Afghan Taliban exchange fire after militants attempt to infiltrate Pakistan AP News",
-          "summary_snippet": "Pakistani forces, Afghan Taliban exchange fire after militants attempt to infiltrate Pakistan AP News",
-          "source": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQeTN5NEtkT05nX1pSOXpKMXZraVY2VGhWcklJSWU2bVZjM3NqcWpHdDV1b3daZXNOVkdPZGR2b3BIX3haX0lDakc4dTg3eFBQY0U3dGl5QmZVNkdFZjJOTFhncEZyX0twZ05Ha2RXMG5hcG4tcXhYMGdTTEV0RENSb21kMkZsb1JSejg1eC1EV3ZTcDNKblRWWm5la2NoMl9YUURzVFN5QXJJTDEzaVA2MGhFYWJxTm1T?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQeTN5NEtkT05nX1pSOXpKMXZraVY2VGhWcklJSWU2bVZjM3NqcWpHdDV1b3daZXNOVkdPZGR2b3BIX3haX0lDakc4dTg3eFBQY0U3dGl5QmZVNkdFZjJOTFhncEZyX0twZ05Ha2RXMG5hcG4tcXhYMGdTTEV0RENSb21kMkZsb1JSejg1eC1EV3ZTcDNKblRWWm5la2NoMl9YUURzVFN5QXJJTDEzaVA2MGhFYWJxTm1T?oc=5",
-          "time": "2026-10-17T17:49:00Z",
-          "published_date": "2026-10-17T17:49:00Z",
-          "publishedDate": "2026-10-17T17:49:00Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_afghanistan_security",
-            "sourceUrl": "https://news.google.com/rss/search?q=Afghanistan+Taliban+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "151015b412655c7a",
-      "title": "Ex- Ukraine footballer killed in Russian war 20 months after going missing - The Sun",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [
-        "russia",
-        "uk",
-        "ukraine"
-      ],
-      "firstSeen": "2026-10-17T17:39:12Z",
-      "lastSeen": "2026-10-17T17:39:12Z",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMigAFBVV95cUxQbUxNbEE4TWZtZjBGOXQ5MVI1SmJLUWVQUjQ1OFlyQWlseFlrS2Z3c2tBYU9TanNzVGZ5eG5UNlY1YXRFQ0ZlWWlGMm1wc2R3a0lReldaODV4VGx4VkFLbU9PazRRU0JKVkRWWWtyUnd1TTFWTUFvWkI2TGE5bWMxag?oc=5",
-        "https://news.google.com/rss/articles/CBMif0FVX3lxTE1fSzJPMHR3MlRNcGhCbERLQ0JSS0o3QTNOSjRVQktQQW1oa2xHeXc4OVIxOGtGQVhFWnMwMVp3WVBGa2x4Z0N4YTVFeU9vTElUVEtZQ1RnaWN5WlRJZ3BfYlQ3VThEMUFKRHFpYVNJZkN3Q1VSZXBxVHliMTUzZUk?oc=5"
-      ],
-      "reports": [
-        {
-          "id": "b878a2b232ef",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQbUxNbEE4TWZtZjBGOXQ5MVI1SmJLUWVQUjQ1OFlyQWlseFlrS2Z3c2tBYU9TanNzVGZ5eG5UNlY1YXRFQ0ZlWWlGMm1wc2R3a0lReldaODV4VGx4VkFLbU9PazRRU0JKVkRWWWtyUnd1TTFWTUFvWkI2TGE5bWMxag?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQbUxNbEE4TWZtZjBGOXQ5MVI1SmJLUWVQUjQ1OFlyQWlseFlrS2Z3c2tBYU9TanNzVGZ5eG5UNlY1YXRFQ0ZlWWlGMm1wc2R3a0lReldaODV4VGx4VkFLbU9PazRRU0JKVkRWWWtyUnd1TTFWTUFvWkI2TGE5bWMxag?oc=5",
-          "sourceType": "europe-conflict",
-          "title": "Ex- Ukraine footballer killed in Russian war 20 months after going missing - The Sun",
-          "summary": "Ex- Ukraine footballer killed in Russian war 20 months after going missing The Sun",
-          "summary_snippet": "Ex- Ukraine footballer killed in Russian war 20 months after going missing The Sun",
-          "source": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQbUxNbEE4TWZtZjBGOXQ5MVI1SmJLUWVQUjQ1OFlyQWlseFlrS2Z3c2tBYU9TanNzVGZ5eG5UNlY1YXRFQ0ZlWWlGMm1wc2R3a0lReldaODV4VGx4VkFLbU9PazRRU0JKVkRWWWtyUnd1TTFWTUFvWkI2TGE5bWMxag?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQbUxNbEE4TWZtZjBGOXQ5MVI1SmJLUWVQUjQ1OFlyQWlseFlrS2Z3c2tBYU9TanNzVGZ5eG5UNlY1YXRFQ0ZlWWlGMm1wc2R3a0lReldaODV4VGx4VkFLbU9PazRRU0JKVkRWWWtyUnd1TTFWTUFvWkI2TGE5bWMxag?oc=5",
-          "time": "2026-10-17T17:39:12Z",
-          "published_date": "2026-10-17T17:39:12Z",
-          "publishedDate": "2026-10-17T17:39:12Z",
-          "tag": "Breaking",
-          "confidence": "DEVELOPING",
-          "breaking": true,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_ukraine_war",
-            "sourceUrl": "https://news.google.com/rss/search?q=Ukraine+Russia+war+frontline+missile+drone+strike+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "a9d82abddb2a",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1fSzJPMHR3MlRNcGhCbERLQ0JSS0o3QTNOSjRVQktQQW1oa2xHeXc4OVIxOGtGQVhFWnMwMVp3WVBGa2x4Z0N4YTVFeU9vTElUVEtZQ1RnaWN5WlRJZ3BfYlQ3VThEMUFKRHFpYVNJZkN3Q1VSZXBxVHliMTUzZUk?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1fSzJPMHR3MlRNcGhCbERLQ0JSS0o3QTNOSjRVQktQQW1oa2xHeXc4OVIxOGtGQVhFWnMwMVp3WVBGa2x4Z0N4YTVFeU9vTElUVEtZQ1RnaWN5WlRJZ3BfYlQ3VThEMUFKRHFpYVNJZkN3Q1VSZXBxVHliMTUzZUk?oc=5",
-          "sourceType": "europe-conflict",
-          "title": "Ex- Ukraine footballer killed in Russian war 20 months after going missing - www.the-sun.com",
-          "summary": "Ex- Ukraine footballer killed in Russian war 20 months after going missing www.the-sun.com",
-          "summary_snippet": "Ex- Ukraine footballer killed in Russian war 20 months after going missing www.the-sun.com",
-          "source": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1fSzJPMHR3MlRNcGhCbERLQ0JSS0o3QTNOSjRVQktQQW1oa2xHeXc4OVIxOGtGQVhFWnMwMVp3WVBGa2x4Z0N4YTVFeU9vTElUVEtZQ1RnaWN5WlRJZ3BfYlQ3VThEMUFKRHFpYVNJZkN3Q1VSZXBxVHliMTUzZUk?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1fSzJPMHR3MlRNcGhCbERLQ0JSS0o3QTNOSjRVQktQQW1oa2xHeXc4OVIxOGtGQVhFWnMwMVp3WVBGa2x4Z0N4YTVFeU9vTElUVEtZQ1RnaWN5WlRJZ3BfYlQ3VThEMUFKRHFpYVNJZkN3Q1VSZXBxVHliMTUzZUk?oc=5",
-          "time": "2026-10-17T17:39:12Z",
-          "published_date": "2026-10-17T17:39:12Z",
-          "publishedDate": "2026-10-17T17:39:12Z",
-          "tag": "Breaking",
-          "confidence": "DEVELOPING",
-          "breaking": true,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_ukraine_war",
-            "sourceUrl": "https://news.google.com/rss/search?q=Ukraine+Russia+war+frontline+missile+drone+strike+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "395aab5b2753a353",
-      "title": "Several Afghan Taliban posts destroyed as Pakistan responds to Kurram border firing: state media - The Express Tribune",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "2026-10-17T17:28:38Z",
-      "lastSeen": "2026-10-17T17:28:38Z",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOeXNqZHVVMXJ0MUR3NW1NdFh5UjFjd0h5YWNsdkVwaGFNcWdoYlI2UXJ5aUFCdHBHa0lRUUpySkhRRDFxQzBncW5nZGt1SGdGY0xycWpoeldtRFBPWGRtNlBVbHludHZxWHBOVkU4U0ZKX3VjSmpHNzVMRmVzbnQxak93Z3RfUkFwUEtQU1YwQmI5MnZrLVFPMzU2YUNHdGVsc1dCMTRPZ01KREFEQ0FuekhjNW82Vi14d1dEYTg0NEptZVU?oc=5",
-        "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOeXNqZHVVMXJ0MUR3NW1NdFh5UjFjd0h5YWNsdkVwaGFNcWdoYlI2UXJ5aUFCdHBHa0lRUUpySkhRRDFxQzBncW5nZGt1SGdGY0xycWpoeldtRFBPWGRtNlBVbHludHZxWHBOVkU4U0ZKX3VjSmpHNzVMRmVzbnQxak93Z3RfUkFwUEtQU1YwQmI5MnZrLVFPMzU2YUNHdGVsc1dCMTRPZ01KREFEQ0FuekhjNW82Vi14d1dEYTg0NEptZVXSAcsBQVVfeXFMUFVKTm5Ral9PbU1uVHpPTHdUdDgxUGxURGotZUZiek9iT3Vfd1UwdHgxRV94S0JJN3hCS3NIZmlSd200MU5MajhDWXBLZkkteDBTemhydEd5MXBua3R2aWx2dXd1N0ZHS1pXNlNIM2R4T0xRclljMmI4US1iSmlkSVphaEtaQWoxVk9NTE1IUjdsZkhESDQ3aTZQQUc2ZHJsa0JOVXNJMlM3UWFUS0kyblZEOUxYWTZtQlZ1dzNabGVqSXFTeUVTSDN4UUE?oc=5"
-      ],
-      "reports": [
-        {
-          "id": "13f92da7d542",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOeXNqZHVVMXJ0MUR3NW1NdFh5UjFjd0h5YWNsdkVwaGFNcWdoYlI2UXJ5aUFCdHBHa0lRUUpySkhRRDFxQzBncW5nZGt1SGdGY0xycWpoeldtRFBPWGRtNlBVbHludHZxWHBOVkU4U0ZKX3VjSmpHNzVMRmVzbnQxak93Z3RfUkFwUEtQU1YwQmI5MnZrLVFPMzU2YUNHdGVsc1dCMTRPZ01KREFEQ0FuekhjNW82Vi14d1dEYTg0NEptZVU?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOeXNqZHVVMXJ0MUR3NW1NdFh5UjFjd0h5YWNsdkVwaGFNcWdoYlI2UXJ5aUFCdHBHa0lRUUpySkhRRDFxQzBncW5nZGt1SGdGY0xycWpoeldtRFBPWGRtNlBVbHludHZxWHBOVkU4U0ZKX3VjSmpHNzVMRmVzbnQxak93Z3RfUkFwUEtQU1YwQmI5MnZrLVFPMzU2YUNHdGVsc1dCMTRPZ01KREFEQ0FuekhjNW82Vi14d1dEYTg0NEptZVU?oc=5",
-          "sourceType": "south-asia-conflict",
-          "title": "Several Afghan Taliban posts destroyed as Pakistan responds to Kurram border firing: state media - The Express Tribune",
-          "summary": "Several Afghan Taliban posts destroyed as Pakistan responds to Kurram border firing: state media The Express Tribune",
-          "summary_snippet": "Several Afghan Taliban posts destroyed as Pakistan responds to Kurram border firing: state media The Express Tribune",
-          "source": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOeXNqZHVVMXJ0MUR3NW1NdFh5UjFjd0h5YWNsdkVwaGFNcWdoYlI2UXJ5aUFCdHBHa0lRUUpySkhRRDFxQzBncW5nZGt1SGdGY0xycWpoeldtRFBPWGRtNlBVbHludHZxWHBOVkU4U0ZKX3VjSmpHNzVMRmVzbnQxak93Z3RfUkFwUEtQU1YwQmI5MnZrLVFPMzU2YUNHdGVsc1dCMTRPZ01KREFEQ0FuekhjNW82Vi14d1dEYTg0NEptZVU?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOeXNqZHVVMXJ0MUR3NW1NdFh5UjFjd0h5YWNsdkVwaGFNcWdoYlI2UXJ5aUFCdHBHa0lRUUpySkhRRDFxQzBncW5nZGt1SGdGY0xycWpoeldtRFBPWGRtNlBVbHludHZxWHBOVkU4U0ZKX3VjSmpHNzVMRmVzbnQxak93Z3RfUkFwUEtQU1YwQmI5MnZrLVFPMzU2YUNHdGVsc1dCMTRPZ01KREFEQ0FuekhjNW82Vi14d1dEYTg0NEptZVU?oc=5",
-          "time": "2026-10-17T17:28:38Z",
-          "published_date": "2026-10-17T17:28:38Z",
-          "publishedDate": "2026-10-17T17:28:38Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_afghanistan_security",
-            "sourceUrl": "https://news.google.com/rss/search?q=Afghanistan+Taliban+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "3e8d510c2b7c",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOeXNqZHVVMXJ0MUR3NW1NdFh5UjFjd0h5YWNsdkVwaGFNcWdoYlI2UXJ5aUFCdHBHa0lRUUpySkhRRDFxQzBncW5nZGt1SGdGY0xycWpoeldtRFBPWGRtNlBVbHludHZxWHBOVkU4U0ZKX3VjSmpHNzVMRmVzbnQxak93Z3RfUkFwUEtQU1YwQmI5MnZrLVFPMzU2YUNHdGVsc1dCMTRPZ01KREFEQ0FuekhjNW82Vi14d1dEYTg0NEptZVXSAcsBQVVfeXFMUFVKTm5Ral9PbU1uVHpPTHdUdDgxUGxURGotZUZiek9iT3Vfd1UwdHgxRV94S0JJN3hCS3NIZmlSd200MU5MajhDWXBLZkkteDBTemhydEd5MXBua3R2aWx2dXd1N0ZHS1pXNlNIM2R4T0xRclljMmI4US1iSmlkSVphaEtaQWoxVk9NTE1IUjdsZkhESDQ3aTZQQUc2ZHJsa0JOVXNJMlM3UWFUS0kyblZEOUxYWTZtQlZ1dzNabGVqSXFTeUVTSDN4UUE?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOeXNqZHVVMXJ0MUR3NW1NdFh5UjFjd0h5YWNsdkVwaGFNcWdoYlI2UXJ5aUFCdHBHa0lRUUpySkhRRDFxQzBncW5nZGt1SGdGY0xycWpoeldtRFBPWGRtNlBVbHludHZxWHBOVkU4U0ZKX3VjSmpHNzVMRmVzbnQxak93Z3RfUkFwUEtQU1YwQmI5MnZrLVFPMzU2YUNHdGVsc1dCMTRPZ01KREFEQ0FuekhjNW82Vi14d1dEYTg0NEptZVXSAcsBQVVfeXFMUFVKTm5Ral9PbU1uVHpPTHdUdDgxUGxURGotZUZiek9iT3Vfd1UwdHgxRV94S0JJN3hCS3NIZmlSd200MU5MajhDWXBLZkkteDBTemhydEd5MXBua3R2aWx2dXd1N0ZHS1pXNlNIM2R4T0xRclljMmI4US1iSmlkSVphaEtaQWoxVk9NTE1IUjdsZkhESDQ3aTZQQUc2ZHJsa0JOVXNJMlM3UWFUS0kyblZEOUxYWTZtQlZ1dzNabGVqSXFTeUVTSDN4UUE?oc=5",
-          "sourceType": "south-asia-conflict",
-          "title": "Several Afghan Taliban posts destroyed as Pakistan responds to Kurram border firing: state media - The Express Tribune",
-          "summary": "Several Afghan Taliban posts destroyed as Pakistan responds to Kurram border firing: state media The Express Tribune",
-          "summary_snippet": "Several Afghan Taliban posts destroyed as Pakistan responds to Kurram border firing: state media The Express Tribune",
-          "source": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOeXNqZHVVMXJ0MUR3NW1NdFh5UjFjd0h5YWNsdkVwaGFNcWdoYlI2UXJ5aUFCdHBHa0lRUUpySkhRRDFxQzBncW5nZGt1SGdGY0xycWpoeldtRFBPWGRtNlBVbHludHZxWHBOVkU4U0ZKX3VjSmpHNzVMRmVzbnQxak93Z3RfUkFwUEtQU1YwQmI5MnZrLVFPMzU2YUNHdGVsc1dCMTRPZ01KREFEQ0FuekhjNW82Vi14d1dEYTg0NEptZVXSAcsBQVVfeXFMUFVKTm5Ral9PbU1uVHpPTHdUdDgxUGxURGotZUZiek9iT3Vfd1UwdHgxRV94S0JJN3hCS3NIZmlSd200MU5MajhDWXBLZkkteDBTemhydEd5MXBua3R2aWx2dXd1N0ZHS1pXNlNIM2R4T0xRclljMmI4US1iSmlkSVphaEtaQWoxVk9NTE1IUjdsZkhESDQ3aTZQQUc2ZHJsa0JOVXNJMlM3UWFUS0kyblZEOUxYWTZtQlZ1dzNabGVqSXFTeUVTSDN4UUE?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOeXNqZHVVMXJ0MUR3NW1NdFh5UjFjd0h5YWNsdkVwaGFNcWdoYlI2UXJ5aUFCdHBHa0lRUUpySkhRRDFxQzBncW5nZGt1SGdGY0xycWpoeldtRFBPWGRtNlBVbHludHZxWHBOVkU4U0ZKX3VjSmpHNzVMRmVzbnQxak93Z3RfUkFwUEtQU1YwQmI5MnZrLVFPMzU2YUNHdGVsc1dCMTRPZ01KREFEQ0FuekhjNW82Vi14d1dEYTg0NEptZVXSAcsBQVVfeXFMUFVKTm5Ral9PbU1uVHpPTHdUdDgxUGxURGotZUZiek9iT3Vfd1UwdHgxRV94S0JJN3hCS3NIZmlSd200MU5MajhDWXBLZkkteDBTemhydEd5MXBua3R2aWx2dXd1N0ZHS1pXNlNIM2R4T0xRclljMmI4US1iSmlkSVphaEtaQWoxVk9NTE1IUjdsZkhESDQ3aTZQQUc2ZHJsa0JOVXNJMlM3UWFUS0kyblZEOUxYWTZtQlZ1dzNabGVqSXFTeUVTSDN4UUE?oc=5",
-          "time": "2026-10-17T17:28:38Z",
-          "published_date": "2026-10-17T17:28:38Z",
-          "publishedDate": "2026-10-17T17:28:38Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_afghanistan_security",
-            "sourceUrl": "https://news.google.com/rss/search?q=Afghanistan+Taliban+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "5e8d816029ec1783",
-      "title": "Pakistan Army responds to ‘unprovoked’ Afghan Taliban firing in Kurram sector: state media - Business Recorder",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "2026-10-17T17:04:07Z",
-      "lastSeen": "2026-10-17T17:04:07Z",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMixgFBVV95cUxOcXVzSmNIY1NoREpVaGVtd2Z5Uk5RMzBKYmFFTWozVy0tZ1lIQjNBQ3NZbWJDTC1HcWJvWThaeVlrVUszaTRqLXAtYmRBTi1wTXo3N0JlYV9OZlNiT0lNR1NiWHRqOURpaUpMQW9OMms3MzRsV2ZDZkhCYktEYXRtZ2ppTnZ6XzdfQlg5cHNXQXNkV0lzdTJVS09KOWY0aV9NanE4cjdGb1ktYWRoRFJFXzFKblJvUFQwTEFMcHRmaExJbGxKNEHSAVZBVV95cUxQY293ZmZWSWRwcG82MHNaUXozT3g3RGRvWEp6Z2lFM09ZQzZSdERwY2JCb1ZHMFMxeGdrM1RTMmlRYVJWMEZIZG0zbm5NM0lGeVItaGo5UQ?oc=5",
-        "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9MeDQyQzBaRDZSVXl2MHNkZHB4WVRsR0lGQTdlNjNaMXJSbzVicGtKQ1FsbUxMTUc5eVQtUm5PejJHWTIyUW1idGZ4MEJXY3FI0gFWQVVfeXFMUGNvd2ZmVklkcHBvNjBzWlF6M094N0Rkb1hKemdpRTNPWUM2UnREcGNiQm9WRzBTMXhnazNUUzJpUWFSVjBGSGRtM25uTTNJRnlSLWhqOVE?oc=5"
-      ],
-      "reports": [
-        {
-          "id": "8abb748fa373",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOcXVzSmNIY1NoREpVaGVtd2Z5Uk5RMzBKYmFFTWozVy0tZ1lIQjNBQ3NZbWJDTC1HcWJvWThaeVlrVUszaTRqLXAtYmRBTi1wTXo3N0JlYV9OZlNiT0lNR1NiWHRqOURpaUpMQW9OMms3MzRsV2ZDZkhCYktEYXRtZ2ppTnZ6XzdfQlg5cHNXQXNkV0lzdTJVS09KOWY0aV9NanE4cjdGb1ktYWRoRFJFXzFKblJvUFQwTEFMcHRmaExJbGxKNEHSAVZBVV95cUxQY293ZmZWSWRwcG82MHNaUXozT3g3RGRvWEp6Z2lFM09ZQzZSdERwY2JCb1ZHMFMxeGdrM1RTMmlRYVJWMEZIZG0zbm5NM0lGeVItaGo5UQ?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOcXVzSmNIY1NoREpVaGVtd2Z5Uk5RMzBKYmFFTWozVy0tZ1lIQjNBQ3NZbWJDTC1HcWJvWThaeVlrVUszaTRqLXAtYmRBTi1wTXo3N0JlYV9OZlNiT0lNR1NiWHRqOURpaUpMQW9OMms3MzRsV2ZDZkhCYktEYXRtZ2ppTnZ6XzdfQlg5cHNXQXNkV0lzdTJVS09KOWY0aV9NanE4cjdGb1ktYWRoRFJFXzFKblJvUFQwTEFMcHRmaExJbGxKNEHSAVZBVV95cUxQY293ZmZWSWRwcG82MHNaUXozT3g3RGRvWEp6Z2lFM09ZQzZSdERwY2JCb1ZHMFMxeGdrM1RTMmlRYVJWMEZIZG0zbm5NM0lGeVItaGo5UQ?oc=5",
-          "sourceType": "south-asia-conflict",
-          "title": "Pakistan Army responds to ‘unprovoked’ Afghan Taliban firing in Kurram sector: state media - Business Recorder",
-          "summary": "Pakistan Army responds to ‘unprovoked’ Afghan Taliban firing in Kurram sector: state media Business Recorder",
-          "summary_snippet": "Pakistan Army responds to ‘unprovoked’ Afghan Taliban firing in Kurram sector: state media Business Recorder",
-          "source": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOcXVzSmNIY1NoREpVaGVtd2Z5Uk5RMzBKYmFFTWozVy0tZ1lIQjNBQ3NZbWJDTC1HcWJvWThaeVlrVUszaTRqLXAtYmRBTi1wTXo3N0JlYV9OZlNiT0lNR1NiWHRqOURpaUpMQW9OMms3MzRsV2ZDZkhCYktEYXRtZ2ppTnZ6XzdfQlg5cHNXQXNkV0lzdTJVS09KOWY0aV9NanE4cjdGb1ktYWRoRFJFXzFKblJvUFQwTEFMcHRmaExJbGxKNEHSAVZBVV95cUxQY293ZmZWSWRwcG82MHNaUXozT3g3RGRvWEp6Z2lFM09ZQzZSdERwY2JCb1ZHMFMxeGdrM1RTMmlRYVJWMEZIZG0zbm5NM0lGeVItaGo5UQ?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOcXVzSmNIY1NoREpVaGVtd2Z5Uk5RMzBKYmFFTWozVy0tZ1lIQjNBQ3NZbWJDTC1HcWJvWThaeVlrVUszaTRqLXAtYmRBTi1wTXo3N0JlYV9OZlNiT0lNR1NiWHRqOURpaUpMQW9OMms3MzRsV2ZDZkhCYktEYXRtZ2ppTnZ6XzdfQlg5cHNXQXNkV0lzdTJVS09KOWY0aV9NanE4cjdGb1ktYWRoRFJFXzFKblJvUFQwTEFMcHRmaExJbGxKNEHSAVZBVV95cUxQY293ZmZWSWRwcG82MHNaUXozT3g3RGRvWEp6Z2lFM09ZQzZSdERwY2JCb1ZHMFMxeGdrM1RTMmlRYVJWMEZIZG0zbm5NM0lGeVItaGo5UQ?oc=5",
-          "time": "2026-10-17T17:04:07Z",
-          "published_date": "2026-10-17T17:04:07Z",
-          "publishedDate": "2026-10-17T17:04:07Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_afghanistan_security",
-            "sourceUrl": "https://news.google.com/rss/search?q=Afghanistan+Taliban+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "3af01c61589b",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9MeDQyQzBaRDZSVXl2MHNkZHB4WVRsR0lGQTdlNjNaMXJSbzVicGtKQ1FsbUxMTUc5eVQtUm5PejJHWTIyUW1idGZ4MEJXY3FI0gFWQVVfeXFMUGNvd2ZmVklkcHBvNjBzWlF6M094N0Rkb1hKemdpRTNPWUM2UnREcGNiQm9WRzBTMXhnazNUUzJpUWFSVjBGSGRtM25uTTNJRnlSLWhqOVE?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9MeDQyQzBaRDZSVXl2MHNkZHB4WVRsR0lGQTdlNjNaMXJSbzVicGtKQ1FsbUxMTUc5eVQtUm5PejJHWTIyUW1idGZ4MEJXY3FI0gFWQVVfeXFMUGNvd2ZmVklkcHBvNjBzWlF6M094N0Rkb1hKemdpRTNPWUM2UnREcGNiQm9WRzBTMXhnazNUUzJpUWFSVjBGSGRtM25uTTNJRnlSLWhqOVE?oc=5",
-          "sourceType": "south-asia-conflict",
-          "title": "Pakistan Army responds to ‘unprovoked’ Afghan Taliban firing in Kurram sector: state media - Business Recorder",
-          "summary": "Pakistan Army responds to ‘unprovoked’ Afghan Taliban firing in Kurram sector: state media Business Recorder",
-          "summary_snippet": "Pakistan Army responds to ‘unprovoked’ Afghan Taliban firing in Kurram sector: state media Business Recorder",
-          "source": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9MeDQyQzBaRDZSVXl2MHNkZHB4WVRsR0lGQTdlNjNaMXJSbzVicGtKQ1FsbUxMTUc5eVQtUm5PejJHWTIyUW1idGZ4MEJXY3FI0gFWQVVfeXFMUGNvd2ZmVklkcHBvNjBzWlF6M094N0Rkb1hKemdpRTNPWUM2UnREcGNiQm9WRzBTMXhnazNUUzJpUWFSVjBGSGRtM25uTTNJRnlSLWhqOVE?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9MeDQyQzBaRDZSVXl2MHNkZHB4WVRsR0lGQTdlNjNaMXJSbzVicGtKQ1FsbUxMTUc5eVQtUm5PejJHWTIyUW1idGZ4MEJXY3FI0gFWQVVfeXFMUGNvd2ZmVklkcHBvNjBzWlF6M094N0Rkb1hKemdpRTNPWUM2UnREcGNiQm9WRzBTMXhnazNUUzJpUWFSVjBGSGRtM25uTTNJRnlSLWhqOVE?oc=5",
-          "time": "2026-10-17T17:04:07Z",
-          "published_date": "2026-10-17T17:04:07Z",
-          "publishedDate": "2026-10-17T17:04:07Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_afghanistan_security",
-            "sourceUrl": "https://news.google.com/rss/search?q=Afghanistan+Taliban+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "14c4f715a8ccb84a",
-      "title": "CNN.com - Transcripts - CNN",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "2026-10-17T16:00:00Z",
-      "lastSeen": "2026-10-17T16:51:10Z",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMic0FVX3lxTFB4QlYtWXFSX0pHN2Z2ZDN5R0x1amo3Z2oxdWdwRHAyOXZUYWhIYTVvYUgxWHFQWGR4OHB4Vl84WU5yZVQwd2E3cDY5akJtb3FVbXBMTVU4bGQyT2VBWlVZaXRIOEtodXNLTkFVR1Y4WjJOUDg?oc=5",
-        "https://news.google.com/rss/articles/CBMic0FVX3lxTE04MUVVdDRtSEpualBGVUY3NEplYk81cWF6VEQ5c0ozTWdjenFRaFlyNm1VTnE1d1UwVk9RVmEyakxWRFN6Sk5GUTRRT0NvOUJydkpmMWxndl9DaHp3N3BqSHV6YWwzVmNGWFRuYW5remRWaTA?oc=5"
-      ],
-      "reports": [
-        {
-          "id": "06817cbc345a",
-          "sourceLabel": "Google News — CNN Politics",
-          "sourceName": "Google News — CNN Politics",
-          "sourceType": "us-politics",
-          "title": "CNN.com - Transcripts - CNN",
-          "summary": "CNN.com - Transcripts CNN",
-          "summary_snippet": "CNN.com - Transcripts CNN",
-          "source": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB4QlYtWXFSX0pHN2Z2ZDN5R0x1amo3Z2oxdWdwRHAyOXZUYWhIYTVvYUgxWHFQWGR4OHB4Vl84WU5yZVQwd2E3cDY5akJtb3FVbXBMTVU4bGQyT2VBWlVZaXRIOEtodXNLTkFVR1Y4WjJOUDg?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB4QlYtWXFSX0pHN2Z2ZDN5R0x1amo3Z2oxdWdwRHAyOXZUYWhIYTVvYUgxWHFQWGR4OHB4Vl84WU5yZVQwd2E3cDY5akJtb3FVbXBMTVU4bGQyT2VBWlVZaXRIOEtodXNLTkFVR1Y4WjJOUDg?oc=5",
-          "time": "2026-10-17T16:51:10Z",
-          "published_date": "2026-10-17T16:51:10Z",
-          "publishedDate": "2026-10-17T16:51:10Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_cnn_politics",
-            "sourceUrl": "https://news.google.com/rss/search?q=site%3Acnn.com+politics+Trump+Congress+Senate+White+House+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "19b5c69a0ced",
-          "sourceLabel": "Google News — CNN Politics",
-          "sourceName": "Google News — CNN Politics",
-          "sourceType": "us-politics",
-          "title": "CNN.com - Transcripts - CNN",
-          "summary": "CNN.com - Transcripts CNN",
-          "summary_snippet": "CNN.com - Transcripts CNN",
-          "source": "https://news.google.com/rss/articles/CBMic0FVX3lxTE04MUVVdDRtSEpualBGVUY3NEplYk81cWF6VEQ5c0ozTWdjenFRaFlyNm1VTnE1d1UwVk9RVmEyakxWRFN6Sk5GUTRRT0NvOUJydkpmMWxndl9DaHp3N3BqSHV6YWwzVmNGWFRuYW5remRWaTA?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE04MUVVdDRtSEpualBGVUY3NEplYk81cWF6VEQ5c0ozTWdjenFRaFlyNm1VTnE1d1UwVk9RVmEyakxWRFN6Sk5GUTRRT0NvOUJydkpmMWxndl9DaHp3N3BqSHV6YWwzVmNGWFRuYW5remRWaTA?oc=5",
-          "time": "2026-10-17T16:00:00Z",
-          "published_date": "2026-10-17T16:00:00Z",
-          "publishedDate": "2026-10-17T16:00:00Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_cnn_politics",
-            "sourceUrl": "https://news.google.com/rss/search?q=site%3Acnn.com+politics+Trump+Congress+Senate+White+House+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "13cb27e52a53f3b6",
-      "title": "Security forces respond to unprovoked firing by Afghan Taliban along Kurram border: state media - Dawn",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "2026-10-17T16:00:51Z",
-      "lastSeen": "2026-10-17T16:00:51Z",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMixwFBVV95cUxPbWxTVnpMOVlOUXpkbEVVSHZ6Y2R1RkN0TEJZeDFrZmFTYUtYUkhfNkpybWJ4MEdXSzhzenRUWE95eFFOQnp5ODh4bDE5dk5od0NaZ2ozLWJYM2d0dVNMY2M0UnRFSFcyeEVrampzVkJyTV9zeFVEYzRfekpMLWZRQTB2UHpHWkNkeE1Jc2FKdm9ic2s3WUloNzM0T1FWZDc1SEhITTVnNmJrQWlrOUU1RFpFc005NFI4RHZhWEFLOUVDVkk2WG5r?oc=5",
-        "https://news.google.com/rss/articles/CBMiSEFVX3lxTE0tX29zUG5wUlpIVkd4Z0Q3N3JGZVNiYlZnaU5Oa09YdTdienpGaGxaU2RYQ3UxLWd1bksyNWJUTExiaFZUeDhrQQ?oc=5"
-      ],
-      "reports": [
-        {
-          "id": "6c1f5fc01a32",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPbWxTVnpMOVlOUXpkbEVVSHZ6Y2R1RkN0TEJZeDFrZmFTYUtYUkhfNkpybWJ4MEdXSzhzenRUWE95eFFOQnp5ODh4bDE5dk5od0NaZ2ozLWJYM2d0dVNMY2M0UnRFSFcyeEVrampzVkJyTV9zeFVEYzRfekpMLWZRQTB2UHpHWkNkeE1Jc2FKdm9ic2s3WUloNzM0T1FWZDc1SEhITTVnNmJrQWlrOUU1RFpFc005NFI4RHZhWEFLOUVDVkk2WG5r?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPbWxTVnpMOVlOUXpkbEVVSHZ6Y2R1RkN0TEJZeDFrZmFTYUtYUkhfNkpybWJ4MEdXSzhzenRUWE95eFFOQnp5ODh4bDE5dk5od0NaZ2ozLWJYM2d0dVNMY2M0UnRFSFcyeEVrampzVkJyTV9zeFVEYzRfekpMLWZRQTB2UHpHWkNkeE1Jc2FKdm9ic2s3WUloNzM0T1FWZDc1SEhITTVnNmJrQWlrOUU1RFpFc005NFI4RHZhWEFLOUVDVkk2WG5r?oc=5",
-          "sourceType": "south-asia-conflict",
-          "title": "Security forces respond to unprovoked firing by Afghan Taliban along Kurram border: state media - Dawn",
-          "summary": "Security forces respond to unprovoked firing by Afghan Taliban along Kurram border: state media Dawn",
-          "summary_snippet": "Security forces respond to unprovoked firing by Afghan Taliban along Kurram border: state media Dawn",
-          "source": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPbWxTVnpMOVlOUXpkbEVVSHZ6Y2R1RkN0TEJZeDFrZmFTYUtYUkhfNkpybWJ4MEdXSzhzenRUWE95eFFOQnp5ODh4bDE5dk5od0NaZ2ozLWJYM2d0dVNMY2M0UnRFSFcyeEVrampzVkJyTV9zeFVEYzRfekpMLWZRQTB2UHpHWkNkeE1Jc2FKdm9ic2s3WUloNzM0T1FWZDc1SEhITTVnNmJrQWlrOUU1RFpFc005NFI4RHZhWEFLOUVDVkk2WG5r?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPbWxTVnpMOVlOUXpkbEVVSHZ6Y2R1RkN0TEJZeDFrZmFTYUtYUkhfNkpybWJ4MEdXSzhzenRUWE95eFFOQnp5ODh4bDE5dk5od0NaZ2ozLWJYM2d0dVNMY2M0UnRFSFcyeEVrampzVkJyTV9zeFVEYzRfekpMLWZRQTB2UHpHWkNkeE1Jc2FKdm9ic2s3WUloNzM0T1FWZDc1SEhITTVnNmJrQWlrOUU1RFpFc005NFI4RHZhWEFLOUVDVkk2WG5r?oc=5",
-          "time": "2026-10-17T16:00:51Z",
-          "published_date": "2026-10-17T16:00:51Z",
-          "publishedDate": "2026-10-17T16:00:51Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_afghanistan_security",
-            "sourceUrl": "https://news.google.com/rss/search?q=Afghanistan+Taliban+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "f5c8e1477e34",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE0tX29zUG5wUlpIVkd4Z0Q3N3JGZVNiYlZnaU5Oa09YdTdienpGaGxaU2RYQ3UxLWd1bksyNWJUTExiaFZUeDhrQQ?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE0tX29zUG5wUlpIVkd4Z0Q3N3JGZVNiYlZnaU5Oa09YdTdienpGaGxaU2RYQ3UxLWd1bksyNWJUTExiaFZUeDhrQQ?oc=5",
-          "sourceType": "south-asia-conflict",
-          "title": "Security forces respond to unprovoked firing by Afghan Taliban along Kurram border: state media - Dawn",
-          "summary": "Security forces respond to unprovoked firing by Afghan Taliban along Kurram border: state media Dawn",
-          "summary_snippet": "Security forces respond to unprovoked firing by Afghan Taliban along Kurram border: state media Dawn",
-          "source": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE0tX29zUG5wUlpIVkd4Z0Q3N3JGZVNiYlZnaU5Oa09YdTdienpGaGxaU2RYQ3UxLWd1bksyNWJUTExiaFZUeDhrQQ?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE0tX29zUG5wUlpIVkd4Z0Q3N3JGZVNiYlZnaU5Oa09YdTdienpGaGxaU2RYQ3UxLWd1bksyNWJUTExiaFZUeDhrQQ?oc=5",
-          "time": "2026-10-17T16:00:51Z",
-          "published_date": "2026-10-17T16:00:51Z",
-          "publishedDate": "2026-10-17T16:00:51Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_afghanistan_security",
-            "sourceUrl": "https://news.google.com/rss/search?q=Afghanistan+Taliban+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "aaf2c7d0aef8b962",
-      "title": "Southcom General Won't Rule Out Land Strikes on Cartels: \"All Options Are on the Table\" - Latin Times",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Wed, 30 Sep 2026 07:00:00 GMT",
-      "lastSeen": "Wed, 30 Sep 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOd21QaU1CVXpEUE5landQaGZ1TTE5a1NFSTJzRGdNNDZ4U3R6eHBaOHB4RXBRNFpUMW0ycWtJRVdoYkFqYmNFMDhRT1J0VFhIbFZEdnlwa0l4eXRjQWhXaG40UVlCcjIwSXlIZHZ1VGRrYURIaHlhNjVGUWF3WkZNc1RyOU5zQVdGWDJRZG5ZVnIxTG1YS3RyQVMyUjFSYWIxcDVvZ3hvNkZ4S3M?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Southcom General Won't Rule Out Land Strikes on Cartels: \"All Options Are on the Table\" - Latin Times",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOd21QaU1CVXpEUE5landQaGZ1TTE5a1NFSTJzRGdNNDZ4U3R6eHBaOHB4RXBRNFpUMW0ycWtJRVdoYkFqYmNFMDhRT1J0VFhIbFZEdnlwa0l4eXRjQWhXaG40UVlCcjIwSXlIZHZ1VGRrYURIaHlhNjVGUWF3WkZNc1RyOU5zQVdGWDJRZG5ZVnIxTG1YS3RyQVMyUjFSYWIxcDVvZ3hvNkZ4S3M?oc=5",
-          "published_date": "Wed, 30 Sep 2026 07:00:00 GMT",
-          "time": "Wed, 30 Sep 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Latin Times",
-          "summary": "Fallback discovery via Google News RSS; publisher: Latin Times",
-          "source": "Latin Times",
-          "sourceLabel": "Latin Times",
-          "sourceType": "fallback-news",
-          "fallbackFor": "SOUTHCOM Official Reporting — GDELT Mirror",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
       "id": "25e4ddf3835aab4d",
       "title": "NASA Adds New Science Investigations for Moon Base - NASA (.gov)",
       "category": "general",
@@ -2010,38 +1244,6 @@
           "sourceLabel": "UN News",
           "sourceType": "fallback-news",
           "fallbackFor": "X @UN",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "c978ad10f15751ae",
-      "title": "4 Dead in SOUTHCOM Strike on Go-fast Vessel - USNI News",
-      "category": "conflict",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Wed, 26 Aug 2026 07:00:00 GMT",
-      "lastSeen": "Wed, 26 Aug 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiggFBVV95cUxQNDN0d0VPb1R0VTRrdXc3MGlKY1ZBc3FwYm5pSWlGUnJSMms2eTFqZG5CcjdkSVE1NFhPQ2RSRXI4VmdMQWtCRXlqTmZnRDliNnVudEZVaXgyT2YwZlMzYXU0WEF6eDl6WmZsU2NDLUE1SEM4TjdRaE9NcVRLejgzRl9R?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "4 Dead in SOUTHCOM Strike on Go-fast Vessel - USNI News",
-          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQNDN0d0VPb1R0VTRrdXc3MGlKY1ZBc3FwYm5pSWlGUnJSMms2eTFqZG5CcjdkSVE1NFhPQ2RSRXI4VmdMQWtCRXlqTmZnRDliNnVudEZVaXgyT2YwZlMzYXU0WEF6eDl6WmZsU2NDLUE1SEM4TjdRaE9NcVRLejgzRl9R?oc=5",
-          "published_date": "Wed, 26 Aug 2026 07:00:00 GMT",
-          "time": "Wed, 26 Aug 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: USNI News",
-          "summary": "Fallback discovery via Google News RSS; publisher: USNI News",
-          "source": "USNI News",
-          "sourceLabel": "USNI News",
-          "sourceType": "fallback-news",
-          "fallbackFor": "SOUTHCOM Official Reporting — GDELT Mirror",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -2474,40 +1676,6 @@
       ]
     },
     {
-      "id": "634385479ebcacb7",
-      "title": "WFP warns escalating Yemen conflict is cutting off life-saving assistance to city of Taiz | World Food Programme - UN World Food Programme",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [
-        "yemen"
-      ],
-      "firstSeen": "Wed, 14 Oct 2026 12:00:00 GMT",
-      "lastSeen": "Wed, 14 Oct 2026 12:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiowFBVV95cUxQaXdIRVRZMTJkOW03b1FJaDhfM2ZkS3VKN2F6N25kRzZjOHVRQXdwVGgwMmpHOTRWb3VEREFDRDNkQUF0Z0p2bkRvdjlsanJiZl9sZnBLVUh3WERZTHZmenhsOHdndml0bzBwVXptc19zcmVEVTFCZUl3R05tWmM3XzBaRE1QZmw5VVJvWXlrUDRRaHR6X2FuaXFNNC1JX19DcFJn?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "WFP warns escalating Yemen conflict is cutting off life-saving assistance to city of Taiz | World Food Programme - UN World Food Programme",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQaXdIRVRZMTJkOW03b1FJaDhfM2ZkS3VKN2F6N25kRzZjOHVRQXdwVGgwMmpHOTRWb3VEREFDRDNkQUF0Z0p2bkRvdjlsanJiZl9sZnBLVUh3WERZTHZmenhsOHdndml0bzBwVXptc19zcmVEVTFCZUl3R05tWmM3XzBaRE1QZmw5VVJvWXlrUDRRaHR6X2FuaXFNNC1JX19DcFJn?oc=5",
-          "published_date": "Wed, 14 Oct 2026 12:00:00 GMT",
-          "time": "Wed, 14 Oct 2026 12:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: UN World Food Programme",
-          "summary": "Fallback discovery via Google News RSS; publisher: UN World Food Programme",
-          "source": "UN World Food Programme",
-          "sourceLabel": "UN World Food Programme",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @UN",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
       "id": "86241ca88072b862",
       "title": "Community Announcement Commercial Observations Demonstration - NASA Science (.gov)",
       "category": "general",
@@ -2838,38 +2006,6 @@
       ]
     },
     {
-      "id": "bc00c40ab962b572",
-      "title": "Army Launches New Task Force, Replacing Southern Spear's Efforts Against Drug Cartels - Military.com",
-      "category": "conflict",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Wed, 05 Aug 2026 07:00:00 GMT",
-      "lastSeen": "Wed, 05 Aug 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMimwFBVV95cUxOSWc5ZU5sZFdZTThEMjJzNXpWNzlQTElFT0UwOUtEVEdkT0M0bEdHZVo3Yld1UGJ2UHRaWEx5aHJDXy1NS2p0OWRZSUVVVWRkRXd5dTJNNWdrVnp6d21zTC1tYUh2eEt4ZnliTEZHS3c1c1dPMElJSElpTnBoSkZVaTY2b051WHRVQk1ScmQzdjY1OFh6Z3pFYl9Hcw?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Army Launches New Task Force, Replacing Southern Spear's Efforts Against Drug Cartels - Military.com",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOSWc5ZU5sZFdZTThEMjJzNXpWNzlQTElFT0UwOUtEVEdkT0M0bEdHZVo3Yld1UGJ2UHRaWEx5aHJDXy1NS2p0OWRZSUVVVWRkRXd5dTJNNWdrVnp6d21zTC1tYUh2eEt4ZnliTEZHS3c1c1dPMElJSElpTnBoSkZVaTY2b051WHRVQk1ScmQzdjY1OFh6Z3pFYl9Hcw?oc=5",
-          "published_date": "Wed, 05 Aug 2026 07:00:00 GMT",
-          "time": "Wed, 05 Aug 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Military.com",
-          "summary": "Fallback discovery via Google News RSS; publisher: Military.com",
-          "source": "Military.com",
-          "sourceLabel": "Military.com",
-          "sourceType": "fallback-news",
-          "fallbackFor": "SOUTHCOM Official Reporting — GDELT Mirror",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
       "id": "949a03f0a97ff1fd",
       "title": "US military launches operations with Ecuador’s forces against ‘narco-terrorists’ - The Hill",
       "category": "conflict",
@@ -3030,38 +2166,6 @@
           "sourceLabel": "KEYE",
           "sourceType": "fallback-news",
           "fallbackFor": "GDELT — Western Hemisphere Counter-Cartel",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "8cefa4bd864e9969",
-      "title": "Officials Provide Progress Update on Major Operation 1 Year After its Launch - US Southern Command (SOUTHCOM) (.mil)",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Wed, 02 Sep 2026 07:00:00 GMT",
-      "lastSeen": "Wed, 02 Sep 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPSDREY1NkbVFsakdGcGNDeEU5S25YejhIRVZJd2ZQLVkzcGZOcWVlOHE4ZGFPVDY2M1J4czN6RUxqWXV0QlV1Z2RpZ3hGeXNlcFhWTU45X2FsV1ZjZlJfTU5HUTgtMktaZl9lRnJ6UTduT3FwNEVRMUJJb0RZZllyaGx0VERqSF9fbnR2ZU43U0dkMDZvVlZLX1lQelBvY3VheFZ5bnUxZTE4WVZwWHR1cTFaeUNhWElhTlFndG83Vmg1VnNnWDFwdDY1X0tUVEVobjNRUA?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Officials Provide Progress Update on Major Operation 1 Year After its Launch - US Southern Command (SOUTHCOM) (.mil)",
-          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPSDREY1NkbVFsakdGcGNDeEU5S25YejhIRVZJd2ZQLVkzcGZOcWVlOHE4ZGFPVDY2M1J4czN6RUxqWXV0QlV1Z2RpZ3hGeXNlcFhWTU45X2FsV1ZjZlJfTU5HUTgtMktaZl9lRnJ6UTduT3FwNEVRMUJJb0RZZllyaGx0VERqSF9fbnR2ZU43U0dkMDZvVlZLX1lQelBvY3VheFZ5bnUxZTE4WVZwWHR1cTFaeUNhWElhTlFndG83Vmg1VnNnWDFwdDY1X0tUVEVobjNRUA?oc=5",
-          "published_date": "Wed, 02 Sep 2026 07:00:00 GMT",
-          "time": "Wed, 02 Sep 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: US Southern Command (SOUTHCOM) (.mil)",
-          "summary": "Fallback discovery via Google News RSS; publisher: US Southern Command (SOUTHCOM) (.mil)",
-          "source": "US Southern Command (SOUTHCOM) (.mil)",
-          "sourceLabel": "US Southern Command (SOUTHCOM) (.mil)",
-          "sourceType": "fallback-news",
-          "fallbackFor": "SOUTHCOM Official Reporting — GDELT Mirror",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -3255,7 +2359,7 @@
           "source": "The Hill",
           "sourceLabel": "The Hill",
           "sourceType": "fallback-news",
-          "fallbackFor": "SOUTHCOM Official Reporting — GDELT Mirror",
+          "fallbackFor": "GDELT — Western Hemisphere Counter-Cartel",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -3389,6 +2493,38 @@
       ]
     },
     {
+      "id": "85107df82e2ac8ec",
+      "title": "WATCH: Trump addresses 2026 United Nations General Assembly - PBS",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Tue, 22 Sep 2026 07:00:00 GMT",
+      "lastSeen": "Tue, 22 Sep 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMinwFBVV95cUxNcDlfMEZKSnZWZFVuUEJJUnBsWXA3NWpmSXI0aFl3dTUtcHFmOVJ4MmF6QmxWLXBCVDZ3eGFCeVhYQTh2V2piam8wR1JnYWdBYVJvR0hFU203UFZEMFJqMWw0aFc1aUxyZmNTNGpJVkdVU1hzR2hjUmxpNC1wZVJFWWRQMDlPdWxmdTEtRjhSQXNmeFktYkVHS1pEVFNDcUHSAaQBQVVfeXFMTTNpMXhPNXBsSFdCdnhSem52YWt6SUVCdjc3RHRhSGRlSlNsRV9ZRGp2bmx4ZS1YVzZXNW9hUUxTaHJLRG9lcW5vdjVGMWE5ZEh6dHFKTzVmZzQ4Mk52WENMUUVMQlZ5MTU4M2RKV205MmVtaXlYZzhnRDFLVGxadXhQVWJJSGhkblpiRWpSWll5bWp3T2c1cThxWFlQak8zX3ZuSHY?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "WATCH: Trump addresses 2026 United Nations General Assembly - PBS",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNcDlfMEZKSnZWZFVuUEJJUnBsWXA3NWpmSXI0aFl3dTUtcHFmOVJ4MmF6QmxWLXBCVDZ3eGFCeVhYQTh2V2piam8wR1JnYWdBYVJvR0hFU203UFZEMFJqMWw0aFc1aUxyZmNTNGpJVkdVU1hzR2hjUmxpNC1wZVJFWWRQMDlPdWxmdTEtRjhSQXNmeFktYkVHS1pEVFNDcUHSAaQBQVVfeXFMTTNpMXhPNXBsSFdCdnhSem52YWt6SUVCdjc3RHRhSGRlSlNsRV9ZRGp2bmx4ZS1YVzZXNW9hUUxTaHJLRG9lcW5vdjVGMWE5ZEh6dHFKTzVmZzQ4Mk52WENMUUVMQlZ5MTU4M2RKV205MmVtaXlYZzhnRDFLVGxadXhQVWJJSGhkblpiRWpSWll5bWp3T2c1cThxWFlQak8zX3ZuSHY?oc=5",
+          "published_date": "Tue, 22 Sep 2026 07:00:00 GMT",
+          "time": "Tue, 22 Sep 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: PBS",
+          "summary": "Fallback discovery via Google News RSS; publisher: PBS",
+          "source": "PBS",
+          "sourceLabel": "PBS",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @POTUS",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
       "id": "37b2976c4a6dc81d",
       "title": "Trump heads to the U.N. looking for wins after a rough week - NPR",
       "category": "general",
@@ -3453,38 +2589,6 @@
       ]
     },
     {
-      "id": "85107df82e2ac8ec",
-      "title": "WATCH: Trump addresses 2026 United Nations General Assembly - PBS",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Tue, 22 Sep 2026 07:00:00 GMT",
-      "lastSeen": "Tue, 22 Sep 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMinwFBVV95cUxNcDlfMEZKSnZWZFVuUEJJUnBsWXA3NWpmSXI0aFl3dTUtcHFmOVJ4MmF6QmxWLXBCVDZ3eGFCeVhYQTh2V2piam8wR1JnYWdBYVJvR0hFU203UFZEMFJqMWw0aFc1aUxyZmNTNGpJVkdVU1hzR2hjUmxpNC1wZVJFWWRQMDlPdWxmdTEtRjhSQXNmeFktYkVHS1pEVFNDcUHSAaQBQVVfeXFMTTNpMXhPNXBsSFdCdnhSem52YWt6SUVCdjc3RHRhSGRlSlNsRV9ZRGp2bmx4ZS1YVzZXNW9hUUxTaHJLRG9lcW5vdjVGMWE5ZEh6dHFKTzVmZzQ4Mk52WENMUUVMQlZ5MTU4M2RKV205MmVtaXlYZzhnRDFLVGxadXhQVWJJSGhkblpiRWpSWll5bWp3T2c1cThxWFlQak8zX3ZuSHY?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "WATCH: Trump addresses 2026 United Nations General Assembly - PBS",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNcDlfMEZKSnZWZFVuUEJJUnBsWXA3NWpmSXI0aFl3dTUtcHFmOVJ4MmF6QmxWLXBCVDZ3eGFCeVhYQTh2V2piam8wR1JnYWdBYVJvR0hFU203UFZEMFJqMWw0aFc1aUxyZmNTNGpJVkdVU1hzR2hjUmxpNC1wZVJFWWRQMDlPdWxmdTEtRjhSQXNmeFktYkVHS1pEVFNDcUHSAaQBQVVfeXFMTTNpMXhPNXBsSFdCdnhSem52YWt6SUVCdjc3RHRhSGRlSlNsRV9ZRGp2bmx4ZS1YVzZXNW9hUUxTaHJLRG9lcW5vdjVGMWE5ZEh6dHFKTzVmZzQ4Mk52WENMUUVMQlZ5MTU4M2RKV205MmVtaXlYZzhnRDFLVGxadXhQVWJJSGhkblpiRWpSWll5bWp3T2c1cThxWFlQak8zX3ZuSHY?oc=5",
-          "published_date": "Tue, 22 Sep 2026 07:00:00 GMT",
-          "time": "Tue, 22 Sep 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: PBS",
-          "summary": "Fallback discovery via Google News RSS; publisher: PBS",
-          "source": "PBS",
-          "sourceLabel": "PBS",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @POTUS",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
       "id": "59f45d206bb07aa8",
       "title": "CNN, MS NOW and Politico file lawsuit against Trump's White House ban - BBC",
       "category": "general",
@@ -3536,6 +2640,40 @@
         {
           "title": "Major US outlets suspend shared Trump coverage in protest at media ban - BBC",
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBqUEg5eWZZZEZxN29iRUxDRm9qLUF3elppRG8xdTRoeS1TbjluclVxWV8wZjBlNXlfcXJUUndrbjV2U1VrVnl6UEVHWVRONHMwa2lmQlV0TGJQNzg?oc=5",
+          "published_date": "Tue, 22 Sep 2026 07:00:00 GMT",
+          "time": "Tue, 22 Sep 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: BBC",
+          "summary": "Fallback discovery via Google News RSS; publisher: BBC",
+          "source": "BBC",
+          "sourceLabel": "BBC",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @POTUS",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "6018b93c0e6cb467",
+      "title": "American power, AI and a walkout - key moments from Trump's UN speech - BBC",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [
+        "america"
+      ],
+      "firstSeen": "Tue, 22 Sep 2026 07:00:00 GMT",
+      "lastSeen": "Tue, 22 Sep 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5sMXhQZXJPY1JROEktMHBINDhfbm0yWjdheVAxTVB4Y0xuUEFyYXNVclB0dUo5Zlk5d0FoNVJ0Z0gwS3llSU05ZFFqcG5EQk5zc25UWXZQOWtOMVk?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "American power, AI and a walkout - key moments from Trump's UN speech - BBC",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5sMXhQZXJPY1JROEktMHBINDhfbm0yWjdheVAxTVB4Y0xuUEFyYXNVclB0dUo5Zlk5d0FoNVJ0Z0gwS3llSU05ZFFqcG5EQk5zc25UWXZQOWtOMVk?oc=5",
           "published_date": "Tue, 22 Sep 2026 07:00:00 GMT",
           "time": "Tue, 22 Sep 2026 07:00:00 GMT",
           "summary_snippet": "Fallback discovery via Google News RSS; publisher: BBC",
@@ -3608,6 +2746,459 @@
           "summary": "Fallback discovery via Google News RSS; publisher: Reuters",
           "source": "Reuters",
           "sourceLabel": "Reuters",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @UN",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "e022205a57795ce2",
+      "title": "White House Ballroom Continues Proud Presidential Legacy - The White House (.gov)",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Tue, 21 Oct 2025 07:00:00 GMT",
+      "lastSeen": "Tue, 21 Oct 2025 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMilgFBVV95cUxPbDY3NEgzVWJLbWR3aU1DSjFxaVRmQmNNbjBnN3ZzVk9yUHBFMUctMXNSUTIzaXJXTEN4ckRUTzg2RTZsT0dFMk9Xd29zcGEtR2gtRkxqZjNQVmtGZW1jSmRBaXpXb3dvTUYxOXpGVWJrcnVyYTM5VHg1OS1pbVhQN3J3VzFHYTk2bWdTbUpJWXJHYXIyUEE?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "White House Ballroom Continues Proud Presidential Legacy - The White House (.gov)",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPbDY3NEgzVWJLbWR3aU1DSjFxaVRmQmNNbjBnN3ZzVk9yUHBFMUctMXNSUTIzaXJXTEN4ckRUTzg2RTZsT0dFMk9Xd29zcGEtR2gtRkxqZjNQVmtGZW1jSmRBaXpXb3dvTUYxOXpGVWJrcnVyYTM5VHg1OS1pbVhQN3J3VzFHYTk2bWdTbUpJWXJHYXIyUEE?oc=5",
+          "published_date": "Tue, 21 Oct 2025 07:00:00 GMT",
+          "time": "Tue, 21 Oct 2025 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: The White House (.gov)",
+          "summary": "Fallback discovery via Google News RSS; publisher: The White House (.gov)",
+          "source": "The White House (.gov)",
+          "sourceLabel": "The White House (.gov)",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @WhiteHouse",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "118de3f0584192c9",
+      "title": "NATO official: KFOR will remain deployed where security is most needed - Kosovo Online",
+      "category": "diplomatic",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [
+        "nato"
+      ],
+      "firstSeen": "Tue, 21 Jul 2026 07:00:00 GMT",
+      "lastSeen": "Tue, 21 Jul 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiwAFBVV95cUxONEg0eVpMbzRvY3ZhVi10SGhxaGp4OHliTGsxZTdxbWg3R0tLVGFXeTIybDNoS1BVd3M2d2EtZGhtcHZCMm5GU0Y3YXpEZVFpa29ZZHMxNmM1T1V4Z0NrVXNWMW1VRW4tOE9LVnJIZk5VczlSS2ZleVRLX3NicXNhWDc5RktaRFJEZFVkcm14VkNnQjRIdkt1cEw4OFdYcFBrVGdYS0NrT3Z1Q0lLZmM4akp4Nmw3a2ZERU9hTVpUdTQ?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "NATO official: KFOR will remain deployed where security is most needed - Kosovo Online",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxONEg0eVpMbzRvY3ZhVi10SGhxaGp4OHliTGsxZTdxbWg3R0tLVGFXeTIybDNoS1BVd3M2d2EtZGhtcHZCMm5GU0Y3YXpEZVFpa29ZZHMxNmM1T1V4Z0NrVXNWMW1VRW4tOE9LVnJIZk5VczlSS2ZleVRLX3NicXNhWDc5RktaRFJEZFVkcm14VkNnQjRIdkt1cEw4OFdYcFBrVGdYS0NrT3Z1Q0lLZmM4akp4Nmw3a2ZERU9hTVpUdTQ?oc=5",
+          "published_date": "Tue, 21 Jul 2026 07:00:00 GMT",
+          "time": "Tue, 21 Jul 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Kosovo Online",
+          "summary": "Fallback discovery via Google News RSS; publisher: Kosovo Online",
+          "source": "Kosovo Online",
+          "sourceLabel": "Kosovo Online",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NATO",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "120126f8c01ae97c",
+      "title": "‘Business as usual is a business of death’: UN adopts road safety pledge over US objection - UN News",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Tue, 21 Jul 2026 07:00:00 GMT",
+      "lastSeen": "Tue, 21 Jul 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9YY3pDcUR2NGRXeVU0UVhnTHlKTG9mQXJQMjB4c3VYU2FKWjVvRDhGb09COVZHazBHZlRaWDd6TVNTRDVwQnFnNWZLaXdUWW9vTS1LeUFHTQ?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "‘Business as usual is a business of death’: UN adopts road safety pledge over US objection - UN News",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9YY3pDcUR2NGRXeVU0UVhnTHlKTG9mQXJQMjB4c3VYU2FKWjVvRDhGb09COVZHazBHZlRaWDd6TVNTRDVwQnFnNWZLaXdUWW9vTS1LeUFHTQ?oc=5",
+          "published_date": "Tue, 21 Jul 2026 07:00:00 GMT",
+          "time": "Tue, 21 Jul 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: UN News",
+          "summary": "Fallback discovery via Google News RSS; publisher: UN News",
+          "source": "UN News",
+          "sourceLabel": "UN News",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @UN",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "42337819cacfb6b5",
+      "title": "CNN Condemns the White House’s Attacks on Journalist Kristen Holmes: Here’s What to Know - Time Magazine",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Tue, 18 Aug 2026 07:00:00 GMT",
+      "lastSeen": "Tue, 18 Aug 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMijwFBVV95cUxPUTVldTRmSVpjQmJyZl9KZTctYVF3VWtzbnl4M0ZPNGg1Z1VpMmJKeU1haWExX21tNEdaWmQzNENEMjRWX1pkTXh5cHdaMGVxT1Bza2xzTDA5S194U0NwR1NTNVA4S21PVkFqMlc5YzA0WTNneVBLUXNiNkhGZVVVLXpBOU54Skw1N3RRaGE2NA?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "CNN Condemns the White House’s Attacks on Journalist Kristen Holmes: Here’s What to Know - Time Magazine",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPUTVldTRmSVpjQmJyZl9KZTctYVF3VWtzbnl4M0ZPNGg1Z1VpMmJKeU1haWExX21tNEdaWmQzNENEMjRWX1pkTXh5cHdaMGVxT1Bza2xzTDA5S194U0NwR1NTNVA4S21PVkFqMlc5YzA0WTNneVBLUXNiNkhGZVVVLXpBOU54Skw1N3RRaGE2NA?oc=5",
+          "published_date": "Tue, 18 Aug 2026 07:00:00 GMT",
+          "time": "Tue, 18 Aug 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Time Magazine",
+          "summary": "Fallback discovery via Google News RSS; publisher: Time Magazine",
+          "source": "Time Magazine",
+          "sourceLabel": "Time Magazine",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @WhiteHouse",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "d1295c3bcc563fe8",
+      "title": "Letter from UNRWA Commissioner-General Philippe Lazzarini to the President of the United Nations General Assembly Ms Annalena Baerbock - UNRWA",
+      "category": "political",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Tue, 17 Mar 2026 07:00:00 GMT",
+      "lastSeen": "Tue, 17 Mar 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMivAFBVV95cUxPSkNWM293djlMWVY4clNZUlAwcWxOLUF6bDFCVC13Z3FaWkw2dk1STFcydTIzS21zaXRMdk10aXhkZkdxcERSYU1OdE9LSVZDT1NaODNfSEhYNFhSQlhjRHFkWXM0cVlDYzhHcGZqRXlHYS0xdTk1MndvNzI5THNYT2EzNlBqMjN4SFlIUDVoMENCajVobGdSOTlWVVVhckpKMTAxcTNrTlNQMmlKSUJZOHZVOTJVWTJHVUhDcQ?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "Letter from UNRWA Commissioner-General Philippe Lazzarini to the President of the United Nations General Assembly Ms Annalena Baerbock - UNRWA",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPSkNWM293djlMWVY4clNZUlAwcWxOLUF6bDFCVC13Z3FaWkw2dk1STFcydTIzS21zaXRMdk10aXhkZkdxcERSYU1OdE9LSVZDT1NaODNfSEhYNFhSQlhjRHFkWXM0cVlDYzhHcGZqRXlHYS0xdTk1MndvNzI5THNYT2EzNlBqMjN4SFlIUDVoMENCajVobGdSOTlWVVVhckpKMTAxcTNrTlNQMmlKSUJZOHZVOTJVWTJHVUhDcQ?oc=5",
+          "published_date": "Tue, 17 Mar 2026 07:00:00 GMT",
+          "time": "Tue, 17 Mar 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: UNRWA",
+          "summary": "Fallback discovery via Google News RSS; publisher: UNRWA",
+          "source": "UNRWA",
+          "sourceLabel": "UNRWA",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @UN",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "4acb33e324a7494f",
+      "title": "The Houthis bear full responsibility for the escalation in Yemen: UK statement at the UN Security Council - GOV.UK",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [
+        "uk",
+        "yemen"
+      ],
+      "firstSeen": "Tue, 15 Sep 2026 07:00:00 GMT",
+      "lastSeen": "Tue, 15 Sep 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPdkF3NHVVYW1JSy1CWHU4Q09nSkVEZEtjN1lSckhZanVyRmdjZmpJTThWeDYyOWtESzY0ZHFiSURSWERtZFN0aExSQzJIdmpDRHd4QVN5NzN2V2ExWGlfNkVjbWV5WXdBSUI1MWtpU2Z1eXpDMVcxaXFybUJsN3Zma1RsRE5pU05wa183dzNVNkpJYk50SlZmQW03N2t3aGpfcWc4Z3JsaklXaHdqNk5TMndqeEF0NnlYRzlZNEpOaGRTVGNTWWlvVjRvTjk2by1NY1pFUW1VNjhDT1E?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "The Houthis bear full responsibility for the escalation in Yemen: UK statement at the UN Security Council - GOV.UK",
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPdkF3NHVVYW1JSy1CWHU4Q09nSkVEZEtjN1lSckhZanVyRmdjZmpJTThWeDYyOWtESzY0ZHFiSURSWERtZFN0aExSQzJIdmpDRHd4QVN5NzN2V2ExWGlfNkVjbWV5WXdBSUI1MWtpU2Z1eXpDMVcxaXFybUJsN3Zma1RsRE5pU05wa183dzNVNkpJYk50SlZmQW03N2t3aGpfcWc4Z3JsaklXaHdqNk5TMndqeEF0NnlYRzlZNEpOaGRTVGNTWWlvVjRvTjk2by1NY1pFUW1VNjhDT1E?oc=5",
+          "published_date": "Tue, 15 Sep 2026 07:00:00 GMT",
+          "time": "Tue, 15 Sep 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: GOV.UK",
+          "summary": "Fallback discovery via Google News RSS; publisher: GOV.UK",
+          "source": "GOV.UK",
+          "sourceLabel": "GOV.UK",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @UN",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "446f548096f458d7",
+      "title": "US military kills two men in new strike on vessel in eastern Pacific - Al Jazeera",
+      "category": "conflict",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Tue, 14 Apr 2026 07:00:00 GMT",
+      "lastSeen": "Tue, 14 Apr 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMirgFBVV95cUxQcGQySVc0LUVqYUR4YUNuTjdKREQ4Tl9XYVpwN3RoVUFtZlpoR1VyVFptUXdNRmprSEtCVm9xbncwbzNrMHJMc1F0Q2lVX0lhUUpPUHpPdHBkdnMtMWdqYmVOUUJ5aUk4bXhJellRMnRwWlNRNy1JNnN2TkZnWGZQNnFiN2c1ZW43WGtDaXlZSVhwMEc2bDJlRi11Y3dSZzBIUy1TNnd3dE9OUGY1c3fSAbMBQVVfeXFMTmY4YmVsSVJ4NFhaOE0wWWdneENjNEJCa21DclpRU3hiX0g4elk0cDRYS196SkNXWEhEbWs2ZkVQR3VEWG5fdEEzbDRKdDdIUlY2eFNhM2o2V0dvN1pMSVgyN1llRmZqYVc3anF1RENQNGo0N0RhYnBXTDNIWmd0THExaXByVlZTUjRzRUthUTlaVVYxRGxHOTdkR3ZaVnp5bzNucTBLb1ZYZ2NybExJU2RraHM?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "US military kills two men in new strike on vessel in eastern Pacific - Al Jazeera",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQcGQySVc0LUVqYUR4YUNuTjdKREQ4Tl9XYVpwN3RoVUFtZlpoR1VyVFptUXdNRmprSEtCVm9xbncwbzNrMHJMc1F0Q2lVX0lhUUpPUHpPdHBkdnMtMWdqYmVOUUJ5aUk4bXhJellRMnRwWlNRNy1JNnN2TkZnWGZQNnFiN2c1ZW43WGtDaXlZSVhwMEc2bDJlRi11Y3dSZzBIUy1TNnd3dE9OUGY1c3fSAbMBQVVfeXFMTmY4YmVsSVJ4NFhaOE0wWWdneENjNEJCa21DclpRU3hiX0g4elk0cDRYS196SkNXWEhEbWs2ZkVQR3VEWG5fdEEzbDRKdDdIUlY2eFNhM2o2V0dvN1pMSVgyN1llRmZqYVc3anF1RENQNGo0N0RhYnBXTDNIWmd0THExaXByVlZTUjRzRUthUTlaVVYxRGxHOTdkR3ZaVnp5bzNucTBLb1ZYZ2NybExJU2RraHM?oc=5",
+          "published_date": "Tue, 14 Apr 2026 07:00:00 GMT",
+          "time": "Tue, 14 Apr 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Al Jazeera",
+          "summary": "Fallback discovery via Google News RSS; publisher: Al Jazeera",
+          "source": "Al Jazeera",
+          "sourceLabel": "Al Jazeera",
+          "sourceType": "fallback-news",
+          "fallbackFor": "GDELT — Western Hemisphere Counter-Cartel",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "c8a082bc2e653760",
+      "title": "NASA Names Astronaut Christina Koch Acting Deputy Chief Engineer - NASA (.gov)",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Tue, 13 Oct 2026 20:43:19 GMT",
+      "lastSeen": "Tue, 13 Oct 2026 20:43:19 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMioAFBVV95cUxNWG1MR3FSRU5xV2txX1R0bUZiUU5hMzRnMDRWMkpBVDQ0YTd2cW4wa0dpUUhWMHFyZXB2Ny1jLWE2SjJiVjVia2gwYTRXeWFzQmt1VDZiVXZ4WUJ5X3lWZVYyWnV2d1NibVdZTlI0ZVdFbU5mYzhpenVBdzRiY1lWNzhUckNISFlFM3NsTkVHNWFFUWdSZ0l1V19PWFhxSnZy?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "NASA Names Astronaut Christina Koch Acting Deputy Chief Engineer - NASA (.gov)",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNWG1MR3FSRU5xV2txX1R0bUZiUU5hMzRnMDRWMkpBVDQ0YTd2cW4wa0dpUUhWMHFyZXB2Ny1jLWE2SjJiVjVia2gwYTRXeWFzQmt1VDZiVXZ4WUJ5X3lWZVYyWnV2d1NibVdZTlI0ZVdFbU5mYzhpenVBdzRiY1lWNzhUckNISFlFM3NsTkVHNWFFUWdSZ0l1V19PWFhxSnZy?oc=5",
+          "published_date": "Tue, 13 Oct 2026 20:43:19 GMT",
+          "time": "Tue, 13 Oct 2026 20:43:19 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
+          "summary": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
+          "source": "NASA (.gov)",
+          "sourceLabel": "NASA (.gov)",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NASA",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "3d71b3f0525cdd30",
+      "title": "Katie Zacharia Delivers Powerful Inaugural Briefing as the 37th White House Press Secretary - The White House (.gov)",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Tue, 13 Oct 2026 17:31:46 GMT",
+      "lastSeen": "Tue, 13 Oct 2026 17:31:46 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMizAFBVV95cUxQOUYwVXJMcEdocWZqQkJDXzRvZHFmY3RxMWVrYzF6aWk5ajhMSkJCN3dUaTNPZGpTbllOSnB0aDllNDh1OU91cVMyZ3RmeTR2NmZaeFphZmdNZ29RZHhDZkY0UzBLNWgwZzM1TEpRcFFhWDdMU0I1Q18yS284cHpKX2gtSGJjNFJXcWt2MFdtd0YzSnRTM2piVldfaGYxYnhsbi1CcDB5Q3dfcVFFZFVLbUtEWUJpcmVWT1VGVDQydmk4YUxBRlFLUGlIOGg?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "Katie Zacharia Delivers Powerful Inaugural Briefing as the 37th White House Press Secretary - The White House (.gov)",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQOUYwVXJMcEdocWZqQkJDXzRvZHFmY3RxMWVrYzF6aWk5ajhMSkJCN3dUaTNPZGpTbllOSnB0aDllNDh1OU91cVMyZ3RmeTR2NmZaeFphZmdNZ29RZHhDZkY0UzBLNWgwZzM1TEpRcFFhWDdMU0I1Q18yS284cHpKX2gtSGJjNFJXcWt2MFdtd0YzSnRTM2piVldfaGYxYnhsbi1CcDB5Q3dfcVFFZFVLbUtEWUJpcmVWT1VGVDQydmk4YUxBRlFLUGlIOGg?oc=5",
+          "published_date": "Tue, 13 Oct 2026 17:31:46 GMT",
+          "time": "Tue, 13 Oct 2026 17:31:46 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: The White House (.gov)",
+          "summary": "Fallback discovery via Google News RSS; publisher: The White House (.gov)",
+          "source": "The White House (.gov)",
+          "sourceLabel": "The White House (.gov)",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @WhiteHouse",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "f8db5dc9b7e6f7e1",
+      "title": "NASA Science, Cargo Launch on 35th SpaceX Resupply Mission to Station - NASA (.gov)",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Tue, 13 Oct 2026 11:16:44 GMT",
+      "lastSeen": "Tue, 13 Oct 2026 11:16:44 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMipgFBVV95cUxPdHA4eHRNQW1GZmZSN2sxdU9LM0xJS2NuSWNIazhPQWpGOVRydE9kenBybkVjaThPZHQyV2lPb19iMXQtZUlBWE5yQTUzWUMxTy1uQUN4TFYtNFAzcUxZOXRFUWpLQWRUSXN6ZjFwMFZUaXJwajFtN3JDR19TSVZWTFZjT21rLXRiYjdacl9LTXYtdUE5Z1RHbTEyODdNR0lzaThkWnVB?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "NASA Science, Cargo Launch on 35th SpaceX Resupply Mission to Station - NASA (.gov)",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPdHA4eHRNQW1GZmZSN2sxdU9LM0xJS2NuSWNIazhPQWpGOVRydE9kenBybkVjaThPZHQyV2lPb19iMXQtZUlBWE5yQTUzWUMxTy1uQUN4TFYtNFAzcUxZOXRFUWpLQWRUSXN6ZjFwMFZUaXJwajFtN3JDR19TSVZWTFZjT21rLXRiYjdacl9LTXYtdUE5Z1RHbTEyODdNR0lzaThkWnVB?oc=5",
+          "published_date": "Tue, 13 Oct 2026 11:16:44 GMT",
+          "time": "Tue, 13 Oct 2026 11:16:44 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
+          "summary": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
+          "source": "NASA (.gov)",
+          "sourceLabel": "NASA (.gov)",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NASA",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "5ab26488e9d5f822",
+      "title": "A new report contradicts public statements from the White House on Air Force One - NPR",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Tue, 11 Aug 2026 07:00:00 GMT",
+      "lastSeen": "Tue, 11 Aug 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMigAFBVV95cUxOUW9yLUl0TWFLaHhfUnZ4ZmlBQlA2UGdPZ24zbGdrdmpmc05TUnUzUEhTTW1fakhMQVpHWU5XRnFlLVFXV3VuVXlzR0wzbkFZX0VoVERwbzFNaHVIRjVFSkthaWJmLXVrcHRMVnh5WmpsRHI0Y3o0V3JDSFBzR0dHZQ?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "A new report contradicts public statements from the White House on Air Force One - NPR",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOUW9yLUl0TWFLaHhfUnZ4ZmlBQlA2UGdPZ24zbGdrdmpmc05TUnUzUEhTTW1fakhMQVpHWU5XRnFlLVFXV3VuVXlzR0wzbkFZX0VoVERwbzFNaHVIRjVFSkthaWJmLXVrcHRMVnh5WmpsRHI0Y3o0V3JDSFBzR0dHZQ?oc=5",
+          "published_date": "Tue, 11 Aug 2026 07:00:00 GMT",
+          "time": "Tue, 11 Aug 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NPR",
+          "summary": "Fallback discovery via Google News RSS; publisher: NPR",
+          "source": "NPR",
+          "sourceLabel": "NPR",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @WhiteHouse",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "8353b62612795232",
+      "title": "Timeline: US strikes on alleged drug boats - ABC News - Breaking News, Latest News and Videos",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Tue, 10 Feb 2026 23:30:21 GMT",
+      "lastSeen": "Tue, 10 Feb 2026 23:30:21 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMijwFBVV95cUxQSDVWTzdUUEU0ZFhUc1N6cHd5QnZEOWpfdi1ObjJVd29EN1YzQXdJZ2dETUVUeUs3TG1SSlpfTXQyY0QzTE56T1hZdGRGVWlIM04yT3JiNkdJZnZpTUlCazRJX2V2S0VWNktZNGtzMVRIem53UUl0NllqbG1qLWxCT2FnekIzRkdKRHJYZFUzd9IBlAFBVV95cUxQQk9NQ2dIZGhTVUdQZjh1MU80dkVsOHlzQ1VOZ3FjRzRINEZnOVY5SjRWQ3Axbk8tWkdGa05oajhGM0FLbEFwaGVYNlBaaFFOZ2xCc1FON0FKcEl0UTJMTjk4UTVwVkxIeFBKT0RId1pIcGVBRUs0OVdxQzVhYjNqUHZieTdDTGJqU1Q1bEs0OV9uSlli?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "Timeline: US strikes on alleged drug boats - ABC News - Breaking News, Latest News and Videos",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQSDVWTzdUUEU0ZFhUc1N6cHd5QnZEOWpfdi1ObjJVd29EN1YzQXdJZ2dETUVUeUs3TG1SSlpfTXQyY0QzTE56T1hZdGRGVWlIM04yT3JiNkdJZnZpTUlCazRJX2V2S0VWNktZNGtzMVRIem53UUl0NllqbG1qLWxCT2FnekIzRkdKRHJYZFUzd9IBlAFBVV95cUxQQk9NQ2dIZGhTVUdQZjh1MU80dkVsOHlzQ1VOZ3FjRzRINEZnOVY5SjRWQ3Axbk8tWkdGa05oajhGM0FLbEFwaGVYNlBaaFFOZ2xCc1FON0FKcEl0UTJMTjk4UTVwVkxIeFBKT0RId1pIcGVBRUs0OVdxQzVhYjNqUHZieTdDTGJqU1Q1bEs0OV9uSlli?oc=5",
+          "published_date": "Tue, 10 Feb 2026 23:30:21 GMT",
+          "time": "Tue, 10 Feb 2026 23:30:21 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: ABC News - Breaking News, Latest News and Videos",
+          "summary": "Fallback discovery via Google News RSS; publisher: ABC News - Breaking News, Latest News and Videos",
+          "source": "ABC News - Breaking News, Latest News and Videos",
+          "sourceLabel": "ABC News - Breaking News, Latest News and Videos",
+          "sourceType": "fallback-news",
+          "fallbackFor": "GDELT — Western Hemisphere Counter-Cartel",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "8c11e607a88398bf",
+      "title": "Artemis III Crew Announced - NASA (.gov)",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Tue, 09 Jun 2026 07:00:00 GMT",
+      "lastSeen": "Tue, 09 Jun 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMib0FVX3lxTE05clE0VDlXM1Y5UWtvMEx3OEZnWjhHZnowT0dRUl9Hd3NzNjdUT1lrRnJya3drOXRzakNwdVhKaXo2dkJTcXRIc19CTHR0eVBTQjBQWVFuWnBvbXZBTExuNmkxaHNyWWN1OTZOR2Z5TQ?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "Artemis III Crew Announced - NASA (.gov)",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE05clE0VDlXM1Y5UWtvMEx3OEZnWjhHZnowT0dRUl9Hd3NzNjdUT1lrRnJya3drOXRzakNwdVhKaXo2dkJTcXRIc19CTHR0eVBTQjBQWVFuWnBvbXZBTExuNmkxaHNyWWN1OTZOR2Z5TQ?oc=5",
+          "published_date": "Tue, 09 Jun 2026 07:00:00 GMT",
+          "time": "Tue, 09 Jun 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
+          "summary": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
+          "source": "NASA (.gov)",
+          "sourceLabel": "NASA (.gov)",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NASA",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "0c1102e15b92ae3e",
+      "title": "Priorities - Welcome to the United Nations",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Tue, 08 Sep 2026 07:00:00 GMT",
+      "lastSeen": "Tue, 08 Sep 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9DdmZUOG9xLWQySkUyMkpzcHdBWUNNbG5ORnFvVXNYcUpERkt1M2lkMm1aeGFNang4b0M5QnZCYjFLMDlKMWloS2ltMGR2UQ?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "Priorities - Welcome to the United Nations",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9DdmZUOG9xLWQySkUyMkpzcHdBWUNNbG5ORnFvVXNYcUpERkt1M2lkMm1aeGFNang4b0M5QnZCYjFLMDlKMWloS2ltMGR2UQ?oc=5",
+          "published_date": "Tue, 08 Sep 2026 07:00:00 GMT",
+          "time": "Tue, 08 Sep 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Welcome to the United Nations",
+          "summary": "Fallback discovery via Google News RSS; publisher: Welcome to the United Nations",
+          "source": "Welcome to the United Nations",
+          "sourceLabel": "Welcome to the United Nations",
           "sourceType": "fallback-news",
           "fallbackFor": "X @UN",
           "credit_metadata": "Google News RSS fallback"
