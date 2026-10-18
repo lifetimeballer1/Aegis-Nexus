@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-18T16:37:51.266921Z",
+  "updatedAt": "2026-10-18T18:54:24.276927Z",
   "window": "recent public reporting",
   "method": "anchor-aware title clustering with category and publication-time agreement; candidate grouping only, not proof reports describe identical facts",
   "events": [
@@ -152,8 +152,8 @@
       "reports": [
         {
           "id": "1e141fa11d8f",
-          "sourceLabel": "GDACS Global Disaster Alerts",
-          "sourceName": "GDACS Global Disaster Alerts",
+          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032895",
+          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032895",
           "sourceType": "climate-hazard",
           "title": "Green forest fire notification in Australia",
           "summary": "On 15/10/2026, a forest fire started in Australia, until 18/10/2026.",
@@ -222,39 +222,175 @@
       ]
     },
     {
-      "id": "86c42fb71622748e",
-      "title": "Egypt ready to defend Saudi Arabia against Houthis: Sisi - Banglanews24",
+      "id": "72ad3699022381b7",
+      "title": "US officials visit Palestinian village after settler attacks on diplomats",
       "category": "general",
-      "confidence": "low",
-      "reportCount": 3,
-      "sourceCount": 1,
+      "confidence": "moderate",
+      "reportCount": 2,
+      "sourceCount": 2,
       "sources": [
+        "channelnewsasia.com",
         "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "2026-10-18T17:14:53Z",
+      "lastSeen": "2026-10-18T18:43:47Z",
+      "urls": [
+        "https://www.channelnewsasia.com/world/us-officials-visit-palestinian-village-after-settler-attacks-diplomats-6469796",
+        "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNMXFmMW1hVjRCN2Fsa0p6OGNUX29BanZRTS1nS3ZwcV9fVzFsTklsN0w1TmxNSWVpamZ0NmEtU1RiQjNpdjNVcWY1TEZmcnhKSXltWEFtenZlVnZubzJPOENjTVotVjA2OVR4UVdwaVVsaGFLV050dnRTN0xKQzBmZWFNU0hPLTZUQ2VwaEtDelhCOTZqbEFYV2JYemRuNGE1dzNmUkhaQzN1OUltOUc3OXdMVUYyb19wNGI5aW04amZYQQ?oc=5"
+      ],
+      "reports": [
+        {
+          "id": "aa6e7ffc04f0",
+          "sourceLabel": "CNA World",
+          "sourceName": "CNA World",
+          "sourceType": "news",
+          "title": "US officials visit Palestinian village after settler attacks on diplomats",
+          "summary": "UN bodies and most countries deem the settlements illegal under international law, but Israel rejects this, viewing the territory as disputed rather than occupied.",
+          "summary_snippet": "UN bodies and most countries deem the settlements illegal under international law, but Israel rejects this, viewing the territory as disputed rather than occupied.",
+          "source": "https://www.channelnewsasia.com/world/us-officials-visit-palestinian-village-after-settler-attacks-diplomats-6469796",
+          "url": "https://www.channelnewsasia.com/world/us-officials-visit-palestinian-village-after-settler-attacks-diplomats-6469796",
+          "time": "2026-10-18T18:43:47Z",
+          "published_date": "2026-10-18T18:43:47Z",
+          "publishedDate": "2026-10-18T18:43:47Z",
+          "tag": "Breaking",
+          "confidence": "DEVELOPING",
+          "breaking": true,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "cna_world",
+            "sourceUrl": "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml&category=6311",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "d1a8f0e30d96",
+          "sourceLabel": "Google News — World Politics",
+          "sourceName": "Google News — World Politics",
+          "sourceType": "world-politics",
+          "title": "US officials visit Palestinian village after settler attacks on diplomats - Reuters",
+          "summary": "US officials visit Palestinian village after settler attacks on diplomats Reuters",
+          "summary_snippet": "US officials visit Palestinian village after settler attacks on diplomats Reuters",
+          "source": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNMXFmMW1hVjRCN2Fsa0p6OGNUX29BanZRTS1nS3ZwcV9fVzFsTklsN0w1TmxNSWVpamZ0NmEtU1RiQjNpdjNVcWY1TEZmcnhKSXltWEFtenZlVnZubzJPOENjTVotVjA2OVR4UVdwaVVsaGFLV050dnRTN0xKQzBmZWFNU0hPLTZUQ2VwaEtDelhCOTZqbEFYV2JYemRuNGE1dzNmUkhaQzN1OUltOUc3OXdMVUYyb19wNGI5aW04amZYQQ?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNMXFmMW1hVjRCN2Fsa0p6OGNUX29BanZRTS1nS3ZwcV9fVzFsTklsN0w1TmxNSWVpamZ0NmEtU1RiQjNpdjNVcWY1TEZmcnhKSXltWEFtenZlVnZubzJPOENjTVotVjA2OVR4UVdwaVVsaGFLV050dnRTN0xKQzBmZWFNU0hPLTZUQ2VwaEtDelhCOTZqbEFYV2JYemRuNGE1dzNmUkhaQzN1OUltOUc3OXdMVUYyb19wNGI5aW04amZYQQ?oc=5",
+          "time": "2026-10-18T17:14:53Z",
+          "published_date": "2026-10-18T17:14:53Z",
+          "publishedDate": "2026-10-18T17:14:53Z",
+          "tag": "Breaking",
+          "confidence": "DEVELOPING",
+          "breaking": true,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_world_politics",
+            "sourceUrl": "https://news.google.com/rss/search?q=election+parliament+diplomacy+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
+      "id": "5201cd9f02ece500",
+      "title": "Trump endorses Netanyahu in Israeli election",
+      "category": "political",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "sourceCount": 2,
+      "sources": [
+        "channelnewsasia.com",
+        "aljazeera.com"
+      ],
+      "anchors": [
+        "israel"
+      ],
+      "firstSeen": "2026-10-18T16:36:26Z",
+      "lastSeen": "2026-10-18T16:59:22Z",
+      "urls": [
+        "https://www.channelnewsasia.com/world/trump-endorses-netanyahu-in-israeli-election-6469761",
+        "https://www.aljazeera.com/news/2026/10/18/trump-endorses-netanyahu-in-israeli-legislative-elections?traffic_source=rss"
+      ],
+      "reports": [
+        {
+          "id": "5946607725dc",
+          "sourceLabel": "CNA World",
+          "sourceName": "CNA World",
+          "sourceType": "news",
+          "title": "Trump endorses Netanyahu in Israeli election",
+          "summary": "The Trump endorsement is not certain to give Netanyahu and his right-wing Likud party a boost as Israeli public support for Trump has diminished amid Israeli-US disagreements over Iran.",
+          "summary_snippet": "The Trump endorsement is not certain to give Netanyahu and his right-wing Likud party a boost as Israeli public support for Trump has diminished amid Israeli-US disagreements over Iran.",
+          "source": "https://www.channelnewsasia.com/world/trump-endorses-netanyahu-in-israeli-election-6469761",
+          "url": "https://www.channelnewsasia.com/world/trump-endorses-netanyahu-in-israeli-election-6469761",
+          "time": "2026-10-18T16:59:22Z",
+          "published_date": "2026-10-18T16:59:22Z",
+          "publishedDate": "2026-10-18T16:59:22Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "cna_world",
+            "sourceUrl": "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml&category=6311",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "1444cfda143e",
+          "sourceLabel": "Al Jazeera",
+          "sourceName": "Al Jazeera",
+          "sourceType": "international",
+          "title": "Trump endorses Netanyahu in Israeli legislative elections",
+          "summary": "In a social media post ahead of the October 27 election, Trump calls Netanyahu a 'Strong, Brave, and Brilliant' leader.",
+          "summary_snippet": "In a social media post ahead of the October 27 election, Trump calls Netanyahu a 'Strong, Brave, and Brilliant' leader.",
+          "source": "https://www.aljazeera.com/news/2026/10/18/trump-endorses-netanyahu-in-israeli-legislative-elections?traffic_source=rss",
+          "url": "https://www.aljazeera.com/news/2026/10/18/trump-endorses-netanyahu-in-israeli-legislative-elections?traffic_source=rss",
+          "time": "2026-10-18T16:36:26Z",
+          "published_date": "2026-10-18T16:36:26Z",
+          "publishedDate": "2026-10-18T16:36:26Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "al_jazeera",
+            "sourceUrl": "https://www.aljazeera.com/xml/rss/all.xml",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
+      "id": "6fbe5f43090ee715",
+      "title": "What help can Egypt offer Saudi Arabia in the war against the Houthis? - Al Jazeera",
+      "category": "general",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "sourceCount": 2,
+      "sources": [
+        "news.google.com",
+        "aljazeera.com"
       ],
       "anchors": [
         "egypt"
       ],
-      "firstSeen": "2026-10-18T01:38:47Z",
-      "lastSeen": "2026-10-18T05:55:34Z",
+      "firstSeen": "2026-10-18T11:11:26Z",
+      "lastSeen": "2026-10-18T11:13:21Z",
       "urls": [
-        "https://news.google.com/rss/articles/CBMickFVX3lxTFBuZTctY0gzc0I4RE1wUUlPdWhCSl90bkVyZXA0ck53SDhlSUlEVW5wVFIxWXMyckpVNTlGNXJHU2NhZEltNjktU1RDZFVLZVNkZ2Z5XzFoZzFjWFY3OEl6aVJUSEFzbDY3VXJQVHdtc1hqQQ?oc=5",
-        "https://news.google.com/rss/articles/CBMihwFBVV95cUxQNTN0dmlydzhRSFNGMTh6ZGZxa0RIem1XQzlWX0lQR21QQnU2T2RtdU9TNEVWNjRzSWM5S2VjUW1QSC1iM2tiQS1RVWthWGNzSmFpbVpnMmktRmlyUDBZWnR0OEFlVHdnOHg0QlpGajg2OWlPWlBpNzRkNmdCaE5Yc2pvRmF6Vk0?oc=5",
-        "https://news.google.com/rss/articles/CBMiSEFVX3lxTFAwTmpTNVlUVlotQTN6QjhRVXVleW11YXUxYUtYWlEySjZwSjdaN2ZUMnBDWkFuQzNmd2l4ZU4wMnF3bFpxV2pzTg?oc=5"
+        "https://news.google.com/rss/articles/CBMisAFBVV95cUxOMzhqQlNqYWdrQzFNTHpobVpTUndWZ3NoOWpxRXVoNUdYckdDaDVkSmtwbXJ4Y2RnZDN6OTZ0VjFLM1FfNHRZTGVOSXA4T19lamlwb3ZPQWFXd082VmNlWEJhQ082OHJvalJCdFNXa3B1NW9pVkhYVkZ6eG9uWk9YMTBzMlRQQV9QN19WclB5aWtwdjBKRlhyY1I2cFBoQUVZRlVvcVlCbHNpUG4wcGlSWdIBtgFBVV95cUxOR0tmR1ctSUduRlQ1Z3A4SlNJMUwtT28zSWNWYWRvWDM5d0dIaFcxQ3pvQnFRTTFlSHA0ODlJeEo5UHdzSC1hNDFLazEyUUN3T0JWMlFlTjlnZjFGTTVtNWVfSEwtbkhRd1BnR19VblIzTElFc1I2NXgyT1YyNElQYmxtTWJ3RmdDWldvdV9CYi0xaGZ4ZXJraXd1M2R1VGtmMFJWQXhmOERBYmpSYXEySGEzMDZ5Zw?oc=5",
+        "https://www.aljazeera.com/news/2026/10/18/what-help-can-egypt-offer-saudi-arabia-in-the-war-against-the-houthis?traffic_source=rss"
       ],
       "reports": [
         {
-          "id": "2310842c640e",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMickFVX3lxTFBuZTctY0gzc0I4RE1wUUlPdWhCSl90bkVyZXA0ck53SDhlSUlEVW5wVFIxWXMyckpVNTlGNXJHU2NhZEltNjktU1RDZFVLZVNkZ2Z5XzFoZzFjWFY3OEl6aVJUSEFzbDY3VXJQVHdtc1hqQQ?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMickFVX3lxTFBuZTctY0gzc0I4RE1wUUlPdWhCSl90bkVyZXA0ck53SDhlSUlEVW5wVFIxWXMyckpVNTlGNXJHU2NhZEltNjktU1RDZFVLZVNkZ2Z5XzFoZzFjWFY3OEl6aVJUSEFzbDY3VXJQVHdtc1hqQQ?oc=5",
+          "id": "759b05df3a4f",
+          "sourceLabel": "Google News — Yemen / Red Sea",
+          "sourceName": "Google News — Yemen / Red Sea",
           "sourceType": "middle-east-conflict",
-          "title": "Egypt ready to defend Saudi Arabia against Houthis: Sisi - Banglanews24",
-          "summary": "Egypt ready to defend Saudi Arabia against Houthis: Sisi Banglanews24",
-          "summary_snippet": "Egypt ready to defend Saudi Arabia against Houthis: Sisi Banglanews24",
-          "source": "https://news.google.com/rss/articles/CBMickFVX3lxTFBuZTctY0gzc0I4RE1wUUlPdWhCSl90bkVyZXA0ck53SDhlSUlEVW5wVFIxWXMyckpVNTlGNXJHU2NhZEltNjktU1RDZFVLZVNkZ2Z5XzFoZzFjWFY3OEl6aVJUSEFzbDY3VXJQVHdtc1hqQQ?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBuZTctY0gzc0I4RE1wUUlPdWhCSl90bkVyZXA0ck53SDhlSUlEVW5wVFIxWXMyckpVNTlGNXJHU2NhZEltNjktU1RDZFVLZVNkZ2Z5XzFoZzFjWFY3OEl6aVJUSEFzbDY3VXJQVHdtc1hqQQ?oc=5",
-          "time": "2026-10-18T05:55:34Z",
-          "published_date": "2026-10-18T05:55:34Z",
-          "publishedDate": "2026-10-18T05:55:34Z",
+          "title": "What help can Egypt offer Saudi Arabia in the war against the Houthis? - Al Jazeera",
+          "summary": "What help can Egypt offer Saudi Arabia in the war against the Houthis? Al Jazeera",
+          "summary_snippet": "What help can Egypt offer Saudi Arabia in the war against the Houthis? Al Jazeera",
+          "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOMzhqQlNqYWdrQzFNTHpobVpTUndWZ3NoOWpxRXVoNUdYckdDaDVkSmtwbXJ4Y2RnZDN6OTZ0VjFLM1FfNHRZTGVOSXA4T19lamlwb3ZPQWFXd082VmNlWEJhQ082OHJvalJCdFNXa3B1NW9pVkhYVkZ6eG9uWk9YMTBzMlRQQV9QN19WclB5aWtwdjBKRlhyY1I2cFBoQUVZRlVvcVlCbHNpUG4wcGlSWdIBtgFBVV95cUxOR0tmR1ctSUduRlQ1Z3A4SlNJMUwtT28zSWNWYWRvWDM5d0dIaFcxQ3pvQnFRTTFlSHA0ODlJeEo5UHdzSC1hNDFLazEyUUN3T0JWMlFlTjlnZjFGTTVtNWVfSEwtbkhRd1BnR19VblIzTElFc1I2NXgyT1YyNElQYmxtTWJ3RmdDWldvdV9CYi0xaGZ4ZXJraXd1M2R1VGtmMFJWQXhmOERBYmpSYXEySGEzMDZ5Zw?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOMzhqQlNqYWdrQzFNTHpobVpTUndWZ3NoOWpxRXVoNUdYckdDaDVkSmtwbXJ4Y2RnZDN6OTZ0VjFLM1FfNHRZTGVOSXA4T19lamlwb3ZPQWFXd082VmNlWEJhQ082OHJvalJCdFNXa3B1NW9pVkhYVkZ6eG9uWk9YMTBzMlRQQV9QN19WclB5aWtwdjBKRlhyY1I2cFBoQUVZRlVvcVlCbHNpUG4wcGlSWdIBtgFBVV95cUxOR0tmR1ctSUduRlQ1Z3A4SlNJMUwtT28zSWNWYWRvWDM5d0dIaFcxQ3pvQnFRTTFlSHA0ODlJeEo5UHdzSC1hNDFLazEyUUN3T0JWMlFlTjlnZjFGTTVtNWVfSEwtbkhRd1BnR19VblIzTElFc1I2NXgyT1YyNElQYmxtTWJ3RmdDWldvdV9CYi0xaGZ4ZXJraXd1M2R1VGtmMFJWQXhmOERBYmpSYXEySGEzMDZ5Zw?oc=5",
+          "time": "2026-10-18T11:13:21Z",
+          "published_date": "2026-10-18T11:13:21Z",
+          "publishedDate": "2026-10-18T11:13:21Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
@@ -266,48 +402,25 @@
           }
         },
         {
-          "id": "f7f139c41ac2",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQNTN0dmlydzhRSFNGMTh6ZGZxa0RIem1XQzlWX0lQR21QQnU2T2RtdU9TNEVWNjRzSWM5S2VjUW1QSC1iM2tiQS1RVWthWGNzSmFpbVpnMmktRmlyUDBZWnR0OEFlVHdnOHg0QlpGajg2OWlPWlBpNzRkNmdCaE5Yc2pvRmF6Vk0?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQNTN0dmlydzhRSFNGMTh6ZGZxa0RIem1XQzlWX0lQR21QQnU2T2RtdU9TNEVWNjRzSWM5S2VjUW1QSC1iM2tiQS1RVWthWGNzSmFpbVpnMmktRmlyUDBZWnR0OEFlVHdnOHg0QlpGajg2OWlPWlBpNzRkNmdCaE5Yc2pvRmF6Vk0?oc=5",
-          "sourceType": "middle-east-conflict",
-          "title": "Egypt ‘ready to defend’ S. Arabia against Houthis - Dawn",
-          "summary": "Egypt ‘ready to defend’ S. Arabia against Houthis Dawn",
-          "summary_snippet": "Egypt ‘ready to defend’ S. Arabia against Houthis Dawn",
-          "source": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQNTN0dmlydzhRSFNGMTh6ZGZxa0RIem1XQzlWX0lQR21QQnU2T2RtdU9TNEVWNjRzSWM5S2VjUW1QSC1iM2tiQS1RVWthWGNzSmFpbVpnMmktRmlyUDBZWnR0OEFlVHdnOHg0QlpGajg2OWlPWlBpNzRkNmdCaE5Yc2pvRmF6Vk0?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQNTN0dmlydzhRSFNGMTh6ZGZxa0RIem1XQzlWX0lQR21QQnU2T2RtdU9TNEVWNjRzSWM5S2VjUW1QSC1iM2tiQS1RVWthWGNzSmFpbVpnMmktRmlyUDBZWnR0OEFlVHdnOHg0QlpGajg2OWlPWlBpNzRkNmdCaE5Yc2pvRmF6Vk0?oc=5",
-          "time": "2026-10-18T01:38:47Z",
-          "published_date": "2026-10-18T01:38:47Z",
-          "publishedDate": "2026-10-18T01:38:47Z",
+          "id": "0a944469ee16",
+          "sourceLabel": "https://www.aljazeera.com/news/2026/10/18/what-help-can-egypt-offer-saudi-arabia-in-the-war-against-the-houthis?traffic_source=rss",
+          "sourceName": "https://www.aljazeera.com/news/2026/10/18/what-help-can-egypt-offer-saudi-arabia-in-the-war-against-the-houthis?traffic_source=rss",
+          "sourceType": "international",
+          "title": "What help can Egypt offer Saudi Arabia in the war against the Houthis?",
+          "summary": "Analysts say that any move from Egypt will remain 'strictly defensive', as the conflict in Yemen intensifies.",
+          "summary_snippet": "Analysts say that any move from Egypt will remain 'strictly defensive', as the conflict in Yemen intensifies.",
+          "source": "https://www.aljazeera.com/news/2026/10/18/what-help-can-egypt-offer-saudi-arabia-in-the-war-against-the-houthis?traffic_source=rss",
+          "url": "https://www.aljazeera.com/news/2026/10/18/what-help-can-egypt-offer-saudi-arabia-in-the-war-against-the-houthis?traffic_source=rss",
+          "time": "2026-10-18T11:11:26Z",
+          "published_date": "2026-10-18T11:11:26Z",
+          "publishedDate": "2026-10-18T11:11:26Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "google_news_yemen_red_sea",
-            "sourceUrl": "https://news.google.com/rss/search?q=Yemen+Houthis+Red+Sea+shipping+missile+drone+conflict+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "274b0d291802",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFAwTmpTNVlUVlotQTN6QjhRVXVleW11YXUxYUtYWlEySjZwSjdaN2ZUMnBDWkFuQzNmd2l4ZU4wMnF3bFpxV2pzTg?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFAwTmpTNVlUVlotQTN6QjhRVXVleW11YXUxYUtYWlEySjZwSjdaN2ZUMnBDWkFuQzNmd2l4ZU4wMnF3bFpxV2pzTg?oc=5",
-          "sourceType": "middle-east-conflict",
-          "title": "Egypt ‘ready to defend’ Saudi Arabia against Houthis - Dawn",
-          "summary": "Egypt ‘ready to defend’ Saudi Arabia against Houthis Dawn",
-          "summary_snippet": "Egypt ‘ready to defend’ Saudi Arabia against Houthis Dawn",
-          "source": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFAwTmpTNVlUVlotQTN6QjhRVXVleW11YXUxYUtYWlEySjZwSjdaN2ZUMnBDWkFuQzNmd2l4ZU4wMnF3bFpxV2pzTg?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFAwTmpTNVlUVlotQTN6QjhRVXVleW11YXUxYUtYWlEySjZwSjdaN2ZUMnBDWkFuQzNmd2l4ZU4wMnF3bFpxV2pzTg?oc=5",
-          "time": "2026-10-18T01:38:47Z",
-          "published_date": "2026-10-18T01:38:47Z",
-          "publishedDate": "2026-10-18T01:38:47Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_yemen_red_sea",
-            "sourceUrl": "https://news.google.com/rss/search?q=Yemen+Houthis+Red+Sea+shipping+missile+drone+conflict+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "sourceId": "al_jazeera",
+            "sourceUrl": "https://www.aljazeera.com/xml/rss/all.xml",
             "feedFormat": "rss"
           }
         }
@@ -645,8 +758,8 @@
       "reports": [
         {
           "id": "52b2195141c3",
-          "sourceLabel": "Google News — U.S. Politics",
-          "sourceName": "Google News — U.S. Politics",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQVGtMNDVfaWRReklFdnR2alpIU3R4TTlCbHZnVlVjbktJd2lYV2tqak1taVVuc01OLWdIbW8tRUJiVXk4RFVTQmNnTFZsSWlMalVPeVdBZjFXNUFWTGxsMXF1cXdaeklQNXVkNDY0VHZmczdKU2NuVlFVSUVrTnRyYWJDUlpIUllPZmpkX0h4VVR2RlBYd29mRkNHXzJmMjJmWVA1X2lDTS1TTzROMk5mTk1oSXNZZTJ4WXhWM1MxYy11c3hMWWV4TnZJeU9RT1FDR1pwNk1UWEhBcHo4MXlaamRIMkRjMTZ4Mmc?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQVGtMNDVfaWRReklFdnR2alpIU3R4TTlCbHZnVlVjbktJd2lYV2tqak1taVVuc01OLWdIbW8tRUJiVXk4RFVTQmNnTFZsSWlMalVPeVdBZjFXNUFWTGxsMXF1cXdaeklQNXVkNDY0VHZmczdKU2NuVlFVSUVrTnRyYWJDUlpIUllPZmpkX0h4VVR2RlBYd29mRkNHXzJmMjJmWVA1X2lDTS1TTzROMk5mTk1oSXNZZTJ4WXhWM1MxYy11c3hMWWV4TnZJeU9RT1FDR1pwNk1UWEhBcHo4MXlaamRIMkRjMTZ4Mmc?oc=5",
           "sourceType": "us-politics",
           "title": "Trump’s decision to waive Russian sanctions outrages Congress, but no quick counter seen - Las Vegas Review-Journal",
           "summary": "Trump’s decision to waive Russian sanctions outrages Congress, but no quick counter seen Las Vegas Review-Journal",
@@ -701,8 +814,8 @@
       "reports": [
         {
           "id": "9bf7ad1f2c10",
-          "sourceLabel": "Google News — World Politics",
-          "sourceName": "Google News — World Politics",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9lOEh5MkJ5cU45M2t1ZmRPTjQ1cE5oc1h6Ul95elhiSFFpZUFWbm5pRmI1bllBdEVGNWxucm5LMDZ4M28zWGVyQ2ZhblB3czJKS09F?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9lOEh5MkJ5cU45M2t1ZmRPTjQ1cE5oc1h6Ul95elhiSFFpZUFWbm5pRmI1bllBdEVGNWxucm5LMDZ4M28zWGVyQ2ZhblB3czJKS09F?oc=5",
           "sourceType": "world-politics",
           "title": "US Officials Visit Palestinian Village After Settler Attacks on Diplomats - شبكة تواصل الإخبارية",
           "summary": "US Officials Visit Palestinian Village After Settler Attacks on Diplomats شبكة تواصل الإخبارية",
@@ -724,8 +837,8 @@
         },
         {
           "id": "d2da11970eac",
-          "sourceLabel": "Google News — World Politics",
-          "sourceName": "Google News — World Politics",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQYnJIOXkxcE1vRHlkSjdQRk51bVNscHVuWTBKRHI5S3hsZmdRb18tMmVpRG1vZjhBelF5SWc5R0VHWURwUWtKS0xiMENhTE9MQkFwckJ1VGlLMERyaXM0SE9MaDJZZWV2TjZzVFluWnlaZExZTE5WY0FZcXNrSk1KMWxPTGZHcEZ1aUlMekRieXYtVlBJWWRqYldyWlVEUkhYc29PUQ?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQYnJIOXkxcE1vRHlkSjdQRk51bVNscHVuWTBKRHI5S3hsZmdRb18tMmVpRG1vZjhBelF5SWc5R0VHWURwUWtKS0xiMENhTE9MQkFwckJ1VGlLMERyaXM0SE9MaDJZZWV2TjZzVFluWnlaZExZTE5WY0FZcXNrSk1KMWxPTGZHcEZ1aUlMekRieXYtVlBJWWRqYldyWlVEUkhYc29PUQ?oc=5",
           "sourceType": "world-politics",
           "title": "US officials visit Palestinian village after settler attacks on diplomats - WTAQ",
           "summary": "US officials visit Palestinian village after settler attacks on diplomats WTAQ",
@@ -735,6 +848,72 @@
           "time": "2026-10-18T16:00:23Z",
           "published_date": "2026-10-18T16:00:23Z",
           "publishedDate": "2026-10-18T16:00:23Z",
+          "tag": "Breaking",
+          "confidence": "DEVELOPING",
+          "breaking": true,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_world_politics",
+            "sourceUrl": "https://news.google.com/rss/search?q=election+parliament+diplomacy+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
+      "id": "89278d21f8e8e82a",
+      "title": "US officials visit Palestinian Christian town after settler attacks on foreign diplomats - The Times of India",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 2,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "2026-10-18T16:06:00Z",
+      "lastSeen": "2026-10-18T16:06:00Z",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPNFNaLUMteU5fZzNYZHIwQl9kb2dmQ3pYV3paZXlUcTZuXzF1bV9xa1d0VGJIQmpkeXZJNU9KVkhESHRNVi16TExJWnEySmZjc1B3anZPTWtwMW9LVGRSb090b0VTY0xVZTdmR09jUkxoRGhkTG5sNU0xUENHUi1oSnFES3JOb3FFWUd2bEZOM1VxelJJN1ZfQ2VTaThFRnpTclVyaGU1Zk4wSFNuUEhiUU8xNnBWclczUEt0RkNKb0xVVjlHRE5WbVhvbUVqdmU2S3RFczVXTjlBWm12LUQtUWdWaFNpSzRVa1pkMHEyYVhCRzJsRTgzb2ZvNUbSAYICQVVfeXFMTndsNnA1a25vN0U3b01CM21JYzdiRVZycnRkOVJtZVY3QzdnTmpYZURDOGxTMEJ6VUE0d0Y5QWNmN0psd0NXYkpwcm5ERmpfQXhXUGxrbDg4WWVpb0RtdDNES213WHdCa3RVVG9zUVZHU2Y1NnJ1Nkk2TjZZbFA4UlRuTlBTYWxXRHA0TDlzUWh5ZUt1QnJkRVNLdFFQT1lwY3Z5bThGeU05b2xGMHZUNXhaUXJqS3p1VXkzUGFpbUsyaVp0VEQyY2FFMEJ4SHI5YUFOSE11dWYyNk54TFh1Vm1tVG0wQU1kWXdaYlh4MGNudk5UaS0wRUNTSDRZWXZJcTR3?oc=5",
+        "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPNFNaLUMteU5fZzNYZHIwQl9kb2dmQ3pYV3paZXlUcTZuXzF1bV9xa1d0VGJIQmpkeXZJNU9KVkhESHRNVi16TExJWnEySmZjc1B3anZPTWtwMW9LVGRSb090b0VTY0xVZTdmR09jUkxoRGhkTG5sNU0xUENHUi1oSnFES3JOb3FFWUd2bEZOM1VxelJJN1ZfQ2VTaThFRnpTclVyaGU1Zk4wSFNuUEhiUU8xNnBWclczUEt0RkNKb0xVVjlHRE5WbVhvbUVqdmU2S3RFczVXTjlBWm12LUQtUWdWaFNpSzRVa1pkMHEyYVhCRzJsRTgzb2ZvNUY?oc=5"
+      ],
+      "reports": [
+        {
+          "id": "73c93664203a",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPNFNaLUMteU5fZzNYZHIwQl9kb2dmQ3pYV3paZXlUcTZuXzF1bV9xa1d0VGJIQmpkeXZJNU9KVkhESHRNVi16TExJWnEySmZjc1B3anZPTWtwMW9LVGRSb090b0VTY0xVZTdmR09jUkxoRGhkTG5sNU0xUENHUi1oSnFES3JOb3FFWUd2bEZOM1VxelJJN1ZfQ2VTaThFRnpTclVyaGU1Zk4wSFNuUEhiUU8xNnBWclczUEt0RkNKb0xVVjlHRE5WbVhvbUVqdmU2S3RFczVXTjlBWm12LUQtUWdWaFNpSzRVa1pkMHEyYVhCRzJsRTgzb2ZvNUbSAYICQVVfeXFMTndsNnA1a25vN0U3b01CM21JYzdiRVZycnRkOVJtZVY3QzdnTmpYZURDOGxTMEJ6VUE0d0Y5QWNmN0psd0NXYkpwcm5ERmpfQXhXUGxrbDg4WWVpb0RtdDNES213WHdCa3RVVG9zUVZHU2Y1NnJ1Nkk2TjZZbFA4UlRuTlBTYWxXRHA0TDlzUWh5ZUt1QnJkRVNLdFFQT1lwY3Z5bThGeU05b2xGMHZUNXhaUXJqS3p1VXkzUGFpbUsyaVp0VEQyY2FFMEJ4SHI5YUFOSE11dWYyNk54TFh1Vm1tVG0wQU1kWXdaYlh4MGNudk5UaS0wRUNTSDRZWXZJcTR3?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPNFNaLUMteU5fZzNYZHIwQl9kb2dmQ3pYV3paZXlUcTZuXzF1bV9xa1d0VGJIQmpkeXZJNU9KVkhESHRNVi16TExJWnEySmZjc1B3anZPTWtwMW9LVGRSb090b0VTY0xVZTdmR09jUkxoRGhkTG5sNU0xUENHUi1oSnFES3JOb3FFWUd2bEZOM1VxelJJN1ZfQ2VTaThFRnpTclVyaGU1Zk4wSFNuUEhiUU8xNnBWclczUEt0RkNKb0xVVjlHRE5WbVhvbUVqdmU2S3RFczVXTjlBWm12LUQtUWdWaFNpSzRVa1pkMHEyYVhCRzJsRTgzb2ZvNUbSAYICQVVfeXFMTndsNnA1a25vN0U3b01CM21JYzdiRVZycnRkOVJtZVY3QzdnTmpYZURDOGxTMEJ6VUE0d0Y5QWNmN0psd0NXYkpwcm5ERmpfQXhXUGxrbDg4WWVpb0RtdDNES213WHdCa3RVVG9zUVZHU2Y1NnJ1Nkk2TjZZbFA4UlRuTlBTYWxXRHA0TDlzUWh5ZUt1QnJkRVNLdFFQT1lwY3Z5bThGeU05b2xGMHZUNXhaUXJqS3p1VXkzUGFpbUsyaVp0VEQyY2FFMEJ4SHI5YUFOSE11dWYyNk54TFh1Vm1tVG0wQU1kWXdaYlh4MGNudk5UaS0wRUNTSDRZWXZJcTR3?oc=5",
+          "sourceType": "world-politics",
+          "title": "US officials visit Palestinian Christian town after settler attacks on foreign diplomats - The Times of India",
+          "summary": "US officials visit Palestinian Christian town after settler attacks on foreign diplomats The Times of India",
+          "summary_snippet": "US officials visit Palestinian Christian town after settler attacks on foreign diplomats The Times of India",
+          "source": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPNFNaLUMteU5fZzNYZHIwQl9kb2dmQ3pYV3paZXlUcTZuXzF1bV9xa1d0VGJIQmpkeXZJNU9KVkhESHRNVi16TExJWnEySmZjc1B3anZPTWtwMW9LVGRSb090b0VTY0xVZTdmR09jUkxoRGhkTG5sNU0xUENHUi1oSnFES3JOb3FFWUd2bEZOM1VxelJJN1ZfQ2VTaThFRnpTclVyaGU1Zk4wSFNuUEhiUU8xNnBWclczUEt0RkNKb0xVVjlHRE5WbVhvbUVqdmU2S3RFczVXTjlBWm12LUQtUWdWaFNpSzRVa1pkMHEyYVhCRzJsRTgzb2ZvNUbSAYICQVVfeXFMTndsNnA1a25vN0U3b01CM21JYzdiRVZycnRkOVJtZVY3QzdnTmpYZURDOGxTMEJ6VUE0d0Y5QWNmN0psd0NXYkpwcm5ERmpfQXhXUGxrbDg4WWVpb0RtdDNES213WHdCa3RVVG9zUVZHU2Y1NnJ1Nkk2TjZZbFA4UlRuTlBTYWxXRHA0TDlzUWh5ZUt1QnJkRVNLdFFQT1lwY3Z5bThGeU05b2xGMHZUNXhaUXJqS3p1VXkzUGFpbUsyaVp0VEQyY2FFMEJ4SHI5YUFOSE11dWYyNk54TFh1Vm1tVG0wQU1kWXdaYlh4MGNudk5UaS0wRUNTSDRZWXZJcTR3?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPNFNaLUMteU5fZzNYZHIwQl9kb2dmQ3pYV3paZXlUcTZuXzF1bV9xa1d0VGJIQmpkeXZJNU9KVkhESHRNVi16TExJWnEySmZjc1B3anZPTWtwMW9LVGRSb090b0VTY0xVZTdmR09jUkxoRGhkTG5sNU0xUENHUi1oSnFES3JOb3FFWUd2bEZOM1VxelJJN1ZfQ2VTaThFRnpTclVyaGU1Zk4wSFNuUEhiUU8xNnBWclczUEt0RkNKb0xVVjlHRE5WbVhvbUVqdmU2S3RFczVXTjlBWm12LUQtUWdWaFNpSzRVa1pkMHEyYVhCRzJsRTgzb2ZvNUbSAYICQVVfeXFMTndsNnA1a25vN0U3b01CM21JYzdiRVZycnRkOVJtZVY3QzdnTmpYZURDOGxTMEJ6VUE0d0Y5QWNmN0psd0NXYkpwcm5ERmpfQXhXUGxrbDg4WWVpb0RtdDNES213WHdCa3RVVG9zUVZHU2Y1NnJ1Nkk2TjZZbFA4UlRuTlBTYWxXRHA0TDlzUWh5ZUt1QnJkRVNLdFFQT1lwY3Z5bThGeU05b2xGMHZUNXhaUXJqS3p1VXkzUGFpbUsyaVp0VEQyY2FFMEJ4SHI5YUFOSE11dWYyNk54TFh1Vm1tVG0wQU1kWXdaYlh4MGNudk5UaS0wRUNTSDRZWXZJcTR3?oc=5",
+          "time": "2026-10-18T16:06:00Z",
+          "published_date": "2026-10-18T16:06:00Z",
+          "publishedDate": "2026-10-18T16:06:00Z",
+          "tag": "Breaking",
+          "confidence": "DEVELOPING",
+          "breaking": true,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_world_politics",
+            "sourceUrl": "https://news.google.com/rss/search?q=election+parliament+diplomacy+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "6d3780b4ec19",
+          "sourceLabel": "Google News — World Politics",
+          "sourceName": "Google News — World Politics",
+          "sourceType": "world-politics",
+          "title": "US officials visit Palestinian Christian town after settler attacks on foreign diplomats - The Times of India",
+          "summary": "US officials visit Palestinian Christian town after settler attacks on foreign diplomats The Times of India",
+          "summary_snippet": "US officials visit Palestinian Christian town after settler attacks on foreign diplomats The Times of India",
+          "source": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPNFNaLUMteU5fZzNYZHIwQl9kb2dmQ3pYV3paZXlUcTZuXzF1bV9xa1d0VGJIQmpkeXZJNU9KVkhESHRNVi16TExJWnEySmZjc1B3anZPTWtwMW9LVGRSb090b0VTY0xVZTdmR09jUkxoRGhkTG5sNU0xUENHUi1oSnFES3JOb3FFWUd2bEZOM1VxelJJN1ZfQ2VTaThFRnpTclVyaGU1Zk4wSFNuUEhiUU8xNnBWclczUEt0RkNKb0xVVjlHRE5WbVhvbUVqdmU2S3RFczVXTjlBWm12LUQtUWdWaFNpSzRVa1pkMHEyYVhCRzJsRTgzb2ZvNUY?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPNFNaLUMteU5fZzNYZHIwQl9kb2dmQ3pYV3paZXlUcTZuXzF1bV9xa1d0VGJIQmpkeXZJNU9KVkhESHRNVi16TExJWnEySmZjc1B3anZPTWtwMW9LVGRSb090b0VTY0xVZTdmR09jUkxoRGhkTG5sNU0xUENHUi1oSnFES3JOb3FFWUd2bEZOM1VxelJJN1ZfQ2VTaThFRnpTclVyaGU1Zk4wSFNuUEhiUU8xNnBWclczUEt0RkNKb0xVVjlHRE5WbVhvbUVqdmU2S3RFczVXTjlBWm12LUQtUWdWaFNpSzRVa1pkMHEyYVhCRzJsRTgzb2ZvNUY?oc=5",
+          "time": "2026-10-18T16:06:00Z",
+          "published_date": "2026-10-18T16:06:00Z",
+          "publishedDate": "2026-10-18T16:06:00Z",
           "tag": "Breaking",
           "confidence": "DEVELOPING",
           "breaking": true,
@@ -767,8 +946,8 @@
       "reports": [
         {
           "id": "0d653614e430",
-          "sourceLabel": "GDACS Global Disaster Alerts",
-          "sourceName": "GDACS Global Disaster Alerts",
+          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032896",
+          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032896",
           "sourceType": "climate-hazard",
           "title": "Green forest fire notification in Papua New Guinea",
           "summary": "On 14/10/2026, a forest fire started in Papua New Guinea, until 18/10/2026.",
@@ -836,8 +1015,8 @@
       "reports": [
         {
           "id": "08cde7fd9055",
-          "sourceLabel": "Google News — Iran Israel",
-          "sourceName": "Google News — Iran Israel",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMinwFBVV95cUxObzhMN3p2cTFYczFid1IwVE5haHJHSjlYT1k0T09NNXNLXzIwTkJlMktkd0l6bFF5OGl5ek1xRmlnSXFkaXRVWjd2OVFRYVdGdzZsSW5lTHdqbUhqdkRyZGRyMDNGaGZVV2lQd3JUUzBLaUlndllsUUJDNHpnaGQ2alRCaEh5RlNZRklGOFB3Y2tDcXVqTF9KOFlka2lqeFU?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMinwFBVV95cUxObzhMN3p2cTFYczFid1IwVE5haHJHSjlYT1k0T09NNXNLXzIwTkJlMktkd0l6bFF5OGl5ek1xRmlnSXFkaXRVWjd2OVFRYVdGdzZsSW5lTHdqbUhqdkRyZGRyMDNGaGZVV2lQd3JUUzBLaUlndllsUUJDNHpnaGQ2alRCaEh5RlNZRklGOFB3Y2tDcXVqTF9KOFlka2lqeFU?oc=5",
           "sourceType": "middle-east-conflict",
           "title": "Iran Strikes Kurdish Opposition Base in Iraq as Regional Tensions Escalate - Belaaz",
           "summary": "Iran Strikes Kurdish Opposition Base in Iraq as Regional Tensions Escalate Belaaz",
@@ -883,8 +1062,8 @@
       ]
     },
     {
-      "id": "1cf0e269e2e0e187",
-      "title": "Saudi Arabia ntercepts Houthi drones as Egypt offers defensive support - Newswav",
+      "id": "36ef6c7bf163d2cb",
+      "title": "Ukraine defies Trump and launches one of its biggest drone attacks on Russia this year - CNN",
       "category": "general",
       "confidence": "low",
       "reportCount": 2,
@@ -893,160 +1072,62 @@
         "news.google.com"
       ],
       "anchors": [
-        "egypt"
+        "russia",
+        "uk",
+        "ukraine"
       ],
-      "firstSeen": "2026-10-18T02:03:00Z",
-      "lastSeen": "2026-10-18T02:03:00Z",
+      "firstSeen": "2026-10-18T10:49:15Z",
+      "lastSeen": "2026-10-18T10:49:15Z",
       "urls": [
-        "https://news.google.com/rss/articles/CBMisgFBVV95cUxQdlZwcV9FdVlPOGhjYnFKQWhsT2tPTlZpVGtHZjRUcjhvdDlBakNuMjl5cElmc1JrQjRVTEUtbURCRlRObFBrWE9UZTE2QnFMTHpNSnduX0drLVZCVWpYdHZCdkJ6Y2taU0JPWDdqVHk4VmpPcWVDMEMxTkJUNmdiTjBWYnNVRkNmUTZuNXAyTHp4bGpSZTM0WUZmVmtXSTVMZHhaMGdXWm1nLVBpNVF5d2xn?oc=5",
-        "https://news.google.com/rss/articles/CBMiugFBVV95cUxNOTVkZ3NwX0dBWDFmZ2VyOFZVR3VhTVByWW0zTWdrTzNweEk1aHRnWGFvRm1PbVgxaUdGcnRqWGtHVjZCRENlaHBMNGNKd2d3dUprNElOZk5VNlFSVzhIQ01yVzZhRi1UV2FmZ28yYnZmV1lLNkpiejFrZTNfTjhCRGRvc1I4cWZFNnlIeFpYOWlUaW9SVUlvQ3dXRUN0dlJjMGZkZU9sZHVYay1PZWJHU3dfRV9KbzU3OEE?oc=5"
+        "https://news.google.com/rss/articles/CBMihwFBVV95cUxNVmFIRGcydUhZa1dIRXNnd0duVkwxc2lDd1dxekFrb1h1TnAySExEODJlbFB5TXNYcVFCbktYSVN3Ylh1TGtjaWplM1NzOVZBbG45dWJwVUItX183UFVtOEZBLXgzTllzM1lhUUdyRDVzOUhpVHZqY2FtTzM4RWFlemhnTWY5OGs?oc=5",
+        "https://news.google.com/rss/articles/CBMiggFBVV95cUxQa1NDR01YZm95TF9nSGhfZFdidlRLWDFfNkpVOTd0Ymg3V19laGlfQjUzTVhoWG85NlB3R0ZLN04yWGt3cHB2REszc0R1U3BCVTMzTUxIdnU1c3VTbFFNbm1qTWI1ZFloT0dSaS1JLWtJQnJOUkl5WHR3LXRxeWZpTndR?oc=5"
       ],
       "reports": [
         {
-          "id": "75127ba20e7d",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQdlZwcV9FdVlPOGhjYnFKQWhsT2tPTlZpVGtHZjRUcjhvdDlBakNuMjl5cElmc1JrQjRVTEUtbURCRlRObFBrWE9UZTE2QnFMTHpNSnduX0drLVZCVWpYdHZCdkJ6Y2taU0JPWDdqVHk4VmpPcWVDMEMxTkJUNmdiTjBWYnNVRkNmUTZuNXAyTHp4bGpSZTM0WUZmVmtXSTVMZHhaMGdXWm1nLVBpNVF5d2xn?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQdlZwcV9FdVlPOGhjYnFKQWhsT2tPTlZpVGtHZjRUcjhvdDlBakNuMjl5cElmc1JrQjRVTEUtbURCRlRObFBrWE9UZTE2QnFMTHpNSnduX0drLVZCVWpYdHZCdkJ6Y2taU0JPWDdqVHk4VmpPcWVDMEMxTkJUNmdiTjBWYnNVRkNmUTZuNXAyTHp4bGpSZTM0WUZmVmtXSTVMZHhaMGdXWm1nLVBpNVF5d2xn?oc=5",
-          "sourceType": "middle-east-conflict",
-          "title": "Saudi Arabia ntercepts Houthi drones as Egypt offers defensive support - Newswav",
-          "summary": "Saudi Arabia ntercepts Houthi drones as Egypt offers defensive support Newswav",
-          "summary_snippet": "Saudi Arabia ntercepts Houthi drones as Egypt offers defensive support Newswav",
-          "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQdlZwcV9FdVlPOGhjYnFKQWhsT2tPTlZpVGtHZjRUcjhvdDlBakNuMjl5cElmc1JrQjRVTEUtbURCRlRObFBrWE9UZTE2QnFMTHpNSnduX0drLVZCVWpYdHZCdkJ6Y2taU0JPWDdqVHk4VmpPcWVDMEMxTkJUNmdiTjBWYnNVRkNmUTZuNXAyTHp4bGpSZTM0WUZmVmtXSTVMZHhaMGdXWm1nLVBpNVF5d2xn?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQdlZwcV9FdVlPOGhjYnFKQWhsT2tPTlZpVGtHZjRUcjhvdDlBakNuMjl5cElmc1JrQjRVTEUtbURCRlRObFBrWE9UZTE2QnFMTHpNSnduX0drLVZCVWpYdHZCdkJ6Y2taU0JPWDdqVHk4VmpPcWVDMEMxTkJUNmdiTjBWYnNVRkNmUTZuNXAyTHp4bGpSZTM0WUZmVmtXSTVMZHhaMGdXWm1nLVBpNVF5d2xn?oc=5",
-          "time": "2026-10-18T02:03:00Z",
-          "published_date": "2026-10-18T02:03:00Z",
-          "publishedDate": "2026-10-18T02:03:00Z",
+          "id": "25f423ad5916",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNVmFIRGcydUhZa1dIRXNnd0duVkwxc2lDd1dxekFrb1h1TnAySExEODJlbFB5TXNYcVFCbktYSVN3Ylh1TGtjaWplM1NzOVZBbG45dWJwVUItX183UFVtOEZBLXgzTllzM1lhUUdyRDVzOUhpVHZqY2FtTzM4RWFlemhnTWY5OGs?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNVmFIRGcydUhZa1dIRXNnd0duVkwxc2lDd1dxekFrb1h1TnAySExEODJlbFB5TXNYcVFCbktYSVN3Ylh1TGtjaWplM1NzOVZBbG45dWJwVUItX183UFVtOEZBLXgzTllzM1lhUUdyRDVzOUhpVHZqY2FtTzM4RWFlemhnTWY5OGs?oc=5",
+          "sourceType": "us-politics",
+          "title": "Ukraine defies Trump and launches one of its biggest drone attacks on Russia this year - CNN",
+          "summary": "Ukraine defies Trump and launches one of its biggest drone attacks on Russia this year CNN",
+          "summary_snippet": "Ukraine defies Trump and launches one of its biggest drone attacks on Russia this year CNN",
+          "source": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNVmFIRGcydUhZa1dIRXNnd0duVkwxc2lDd1dxekFrb1h1TnAySExEODJlbFB5TXNYcVFCbktYSVN3Ylh1TGtjaWplM1NzOVZBbG45dWJwVUItX183UFVtOEZBLXgzTllzM1lhUUdyRDVzOUhpVHZqY2FtTzM4RWFlemhnTWY5OGs?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNVmFIRGcydUhZa1dIRXNnd0duVkwxc2lDd1dxekFrb1h1TnAySExEODJlbFB5TXNYcVFCbktYSVN3Ylh1TGtjaWplM1NzOVZBbG45dWJwVUItX183UFVtOEZBLXgzTllzM1lhUUdyRDVzOUhpVHZqY2FtTzM4RWFlemhnTWY5OGs?oc=5",
+          "time": "2026-10-18T10:49:15Z",
+          "published_date": "2026-10-18T10:49:15Z",
+          "publishedDate": "2026-10-18T10:49:15Z",
           "tag": "Breaking",
           "confidence": "DEVELOPING",
           "breaking": true,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "google_news_yemen_red_sea",
-            "sourceUrl": "https://news.google.com/rss/search?q=Yemen+Houthis+Red+Sea+shipping+missile+drone+conflict+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "sourceId": "google_news_cnn_politics",
+            "sourceUrl": "https://news.google.com/rss/search?q=site%3Acnn.com+politics+Trump+Congress+Senate+White+House+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
         },
         {
-          "id": "3390fd063dce",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNOTVkZ3NwX0dBWDFmZ2VyOFZVR3VhTVByWW0zTWdrTzNweEk1aHRnWGFvRm1PbVgxaUdGcnRqWGtHVjZCRENlaHBMNGNKd2d3dUprNElOZk5VNlFSVzhIQ01yVzZhRi1UV2FmZ28yYnZmV1lLNkpiejFrZTNfTjhCRGRvc1I4cWZFNnlIeFpYOWlUaW9SVUlvQ3dXRUN0dlJjMGZkZU9sZHVYay1PZWJHU3dfRV9KbzU3OEE?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNOTVkZ3NwX0dBWDFmZ2VyOFZVR3VhTVByWW0zTWdrTzNweEk1aHRnWGFvRm1PbVgxaUdGcnRqWGtHVjZCRENlaHBMNGNKd2d3dUprNElOZk5VNlFSVzhIQ01yVzZhRi1UV2FmZ28yYnZmV1lLNkpiejFrZTNfTjhCRGRvc1I4cWZFNnlIeFpYOWlUaW9SVUlvQ3dXRUN0dlJjMGZkZU9sZHVYay1PZWJHU3dfRV9KbzU3OEE?oc=5",
-          "sourceType": "middle-east-conflict",
-          "title": "Saudi Arabia ntercepts Houthi drones as Egypt offers defensive support - The Vibes",
-          "summary": "Saudi Arabia ntercepts Houthi drones as Egypt offers defensive support The Vibes",
-          "summary_snippet": "Saudi Arabia ntercepts Houthi drones as Egypt offers defensive support The Vibes",
-          "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNOTVkZ3NwX0dBWDFmZ2VyOFZVR3VhTVByWW0zTWdrTzNweEk1aHRnWGFvRm1PbVgxaUdGcnRqWGtHVjZCRENlaHBMNGNKd2d3dUprNElOZk5VNlFSVzhIQ01yVzZhRi1UV2FmZ28yYnZmV1lLNkpiejFrZTNfTjhCRGRvc1I4cWZFNnlIeFpYOWlUaW9SVUlvQ3dXRUN0dlJjMGZkZU9sZHVYay1PZWJHU3dfRV9KbzU3OEE?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNOTVkZ3NwX0dBWDFmZ2VyOFZVR3VhTVByWW0zTWdrTzNweEk1aHRnWGFvRm1PbVgxaUdGcnRqWGtHVjZCRENlaHBMNGNKd2d3dUprNElOZk5VNlFSVzhIQ01yVzZhRi1UV2FmZ28yYnZmV1lLNkpiejFrZTNfTjhCRGRvc1I4cWZFNnlIeFpYOWlUaW9SVUlvQ3dXRUN0dlJjMGZkZU9sZHVYay1PZWJHU3dfRV9KbzU3OEE?oc=5",
-          "time": "2026-10-18T02:03:00Z",
-          "published_date": "2026-10-18T02:03:00Z",
-          "publishedDate": "2026-10-18T02:03:00Z",
+          "id": "c720ab2e0d33",
+          "sourceLabel": "Google News — CNN Politics",
+          "sourceName": "Google News — CNN Politics",
+          "sourceType": "us-politics",
+          "title": "Ukraine defies Trump and launches one of its biggest drone attacks on Russia this year - CNN",
+          "summary": "Ukraine defies Trump and launches one of its biggest drone attacks on Russia this year CNN",
+          "summary_snippet": "Ukraine defies Trump and launches one of its biggest drone attacks on Russia this year CNN",
+          "source": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQa1NDR01YZm95TF9nSGhfZFdidlRLWDFfNkpVOTd0Ymg3V19laGlfQjUzTVhoWG85NlB3R0ZLN04yWGt3cHB2REszc0R1U3BCVTMzTUxIdnU1c3VTbFFNbm1qTWI1ZFloT0dSaS1JLWtJQnJOUkl5WHR3LXRxeWZpTndR?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQa1NDR01YZm95TF9nSGhfZFdidlRLWDFfNkpVOTd0Ymg3V19laGlfQjUzTVhoWG85NlB3R0ZLN04yWGt3cHB2REszc0R1U3BCVTMzTUxIdnU1c3VTbFFNbm1qTWI1ZFloT0dSaS1JLWtJQnJOUkl5WHR3LXRxeWZpTndR?oc=5",
+          "time": "2026-10-18T10:49:15Z",
+          "published_date": "2026-10-18T10:49:15Z",
+          "publishedDate": "2026-10-18T10:49:15Z",
           "tag": "Breaking",
           "confidence": "DEVELOPING",
           "breaking": true,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "google_news_yemen_red_sea",
-            "sourceUrl": "https://news.google.com/rss/search?q=Yemen+Houthis+Red+Sea+shipping+missile+drone+conflict+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "sourceId": "google_news_cnn_politics",
+            "sourceUrl": "https://news.google.com/rss/search?q=site%3Acnn.com+politics+Trump+Congress+Senate+White+House+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
-        }
-      ]
-    },
-    {
-      "id": "00e84ea9aa5cc1b7",
-      "title": "Taiwan detects 2 PLA aircraft, 5 PLAN vessels operating near territory - Big News Network.com",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [
-        "taiwan"
-      ],
-      "firstSeen": "2026-10-18T01:22:00Z",
-      "lastSeen": "2026-10-18T01:30:00Z",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMitgFBVV95cUxNeF85LUk0RDNzaFMwazJhZWt5V0IzUjNoa0hOcDBLZVRtMFNpU09vQi1wQTJOYUdPS0hwdE1vell1U0lXRmlvMFFSR3BmUXlRZVRsc191QnVQckpQS3RGMmdGV0dYdFJLLXowdTl5b1F2czRuSnlKUlBZZDc5WG9fc3I3UWpHVEN3S0lBbE1uYy1TeTJFS2VJXzFkcmZsUEE3NzJQSUgxSlZRMzFJMnlwZW95Rm0xQQ?oc=5",
-        "https://news.google.com/rss/articles/CBMivwFBVV95cUxNbGJ5dE5tNTVuSG5wSkh1RXdxdE5YOVcxb2lFOVhBSTREazJHSXlwSkIzM3MycGhzc1dKeXV6NGw1VlhuNG0wSXFHX0d4UXdRSkp4WW8yc2tNenBzMXh1cU54VnJYWm9vSEdHMHp0UXRUVEU4ZUVsZVNqaktkNkozUzEzVWMtelg4dmVHaGlfQm4wWDgxOGNrOE5GSWlGeG5zaGpuamplWm1jZEtBejFJbWRzcTluVl8yV1ZIMVFPQQ?oc=5"
-      ],
-      "reports": [
-        {
-          "id": "b2a6e4d0cfe4",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNeF85LUk0RDNzaFMwazJhZWt5V0IzUjNoa0hOcDBLZVRtMFNpU09vQi1wQTJOYUdPS0hwdE1vell1U0lXRmlvMFFSR3BmUXlRZVRsc191QnVQckpQS3RGMmdGV0dYdFJLLXowdTl5b1F2czRuSnlKUlBZZDc5WG9fc3I3UWpHVEN3S0lBbE1uYy1TeTJFS2VJXzFkcmZsUEE3NzJQSUgxSlZRMzFJMnlwZW95Rm0xQQ?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNeF85LUk0RDNzaFMwazJhZWt5V0IzUjNoa0hOcDBLZVRtMFNpU09vQi1wQTJOYUdPS0hwdE1vell1U0lXRmlvMFFSR3BmUXlRZVRsc191QnVQckpQS3RGMmdGV0dYdFJLLXowdTl5b1F2czRuSnlKUlBZZDc5WG9fc3I3UWpHVEN3S0lBbE1uYy1TeTJFS2VJXzFkcmZsUEE3NzJQSUgxSlZRMzFJMnlwZW95Rm0xQQ?oc=5",
-          "sourceType": "china-security",
-          "title": "Taiwan detects 2 PLA aircraft, 5 PLAN vessels operating near territory - Big News Network.com",
-          "summary": "Taiwan detects 2 PLA aircraft, 5 PLAN vessels operating near territory Big News Network.com",
-          "summary_snippet": "Taiwan detects 2 PLA aircraft, 5 PLAN vessels operating near territory Big News Network.com",
-          "source": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNeF85LUk0RDNzaFMwazJhZWt5V0IzUjNoa0hOcDBLZVRtMFNpU09vQi1wQTJOYUdPS0hwdE1vell1U0lXRmlvMFFSR3BmUXlRZVRsc191QnVQckpQS3RGMmdGV0dYdFJLLXowdTl5b1F2czRuSnlKUlBZZDc5WG9fc3I3UWpHVEN3S0lBbE1uYy1TeTJFS2VJXzFkcmZsUEE3NzJQSUgxSlZRMzFJMnlwZW95Rm0xQQ?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNeF85LUk0RDNzaFMwazJhZWt5V0IzUjNoa0hOcDBLZVRtMFNpU09vQi1wQTJOYUdPS0hwdE1vell1U0lXRmlvMFFSR3BmUXlRZVRsc191QnVQckpQS3RGMmdGV0dYdFJLLXowdTl5b1F2czRuSnlKUlBZZDc5WG9fc3I3UWpHVEN3S0lBbE1uYy1TeTJFS2VJXzFkcmZsUEE3NzJQSUgxSlZRMzFJMnlwZW95Rm0xQQ?oc=5",
-          "time": "2026-10-18T01:30:00Z",
-          "published_date": "2026-10-18T01:30:00Z",
-          "publishedDate": "2026-10-18T01:30:00Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "china_security",
-            "sourceUrl": "https://news.google.com/rss/search?q=China+PLA+military+Taiwan+South+China+Sea+security+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "c06b38f2caf2",
-          "sourceLabel": "Google News — China Security / PLA",
-          "sourceName": "Google News — China Security / PLA",
-          "sourceType": "china-security",
-          "title": "Taiwan detects 2 PLA aircraft, 5 PLAN vessels operating near territory - ANI News",
-          "summary": "Taiwan detects 2 PLA aircraft, 5 PLAN vessels operating near territory ANI News",
-          "summary_snippet": "Taiwan detects 2 PLA aircraft, 5 PLAN vessels operating near territory ANI News",
-          "source": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNbGJ5dE5tNTVuSG5wSkh1RXdxdE5YOVcxb2lFOVhBSTREazJHSXlwSkIzM3MycGhzc1dKeXV6NGw1VlhuNG0wSXFHX0d4UXdRSkp4WW8yc2tNenBzMXh1cU54VnJYWm9vSEdHMHp0UXRUVEU4ZUVsZVNqaktkNkozUzEzVWMtelg4dmVHaGlfQm4wWDgxOGNrOE5GSWlGeG5zaGpuamplWm1jZEtBejFJbWRzcTluVl8yV1ZIMVFPQQ?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNbGJ5dE5tNTVuSG5wSkh1RXdxdE5YOVcxb2lFOVhBSTREazJHSXlwSkIzM3MycGhzc1dKeXV6NGw1VlhuNG0wSXFHX0d4UXdRSkp4WW8yc2tNenBzMXh1cU54VnJYWm9vSEdHMHp0UXRUVEU4ZUVsZVNqaktkNkozUzEzVWMtelg4dmVHaGlfQm4wWDgxOGNrOE5GSWlGeG5zaGpuamplWm1jZEtBejFJbWRzcTluVl8yV1ZIMVFPQQ?oc=5",
-          "time": "2026-10-18T01:22:00Z",
-          "published_date": "2026-10-18T01:22:00Z",
-          "publishedDate": "2026-10-18T01:22:00Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "china_security",
-            "sourceUrl": "https://news.google.com/rss/search?q=China+PLA+military+Taiwan+South+China+Sea+security+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "aaf2c7d0aef8b962",
-      "title": "Southcom General Won't Rule Out Land Strikes on Cartels: \"All Options Are on the Table\" - Latin Times",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Wed, 30 Sep 2026 07:00:00 GMT",
-      "lastSeen": "Wed, 30 Sep 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOd21QaU1CVXpEUE5landQaGZ1TTE5a1NFSTJzRGdNNDZ4U3R6eHBaOHB4RXBRNFpUMW0ycWtJRVdoYkFqYmNFMDhRT1J0VFhIbFZEdnlwa0l4eXRjQWhXaG40UVlCcjIwSXlIZHZ1VGRrYURIaHlhNjVGUWF3WkZNc1RyOU5zQVdGWDJRZG5ZVnIxTG1YS3RyQVMyUjFSYWIxcDVvZ3hvNkZ4S3M?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Southcom General Won't Rule Out Land Strikes on Cartels: \"All Options Are on the Table\" - Latin Times",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOd21QaU1CVXpEUE5landQaGZ1TTE5a1NFSTJzRGdNNDZ4U3R6eHBaOHB4RXBRNFpUMW0ycWtJRVdoYkFqYmNFMDhRT1J0VFhIbFZEdnlwa0l4eXRjQWhXaG40UVlCcjIwSXlIZHZ1VGRrYURIaHlhNjVGUWF3WkZNc1RyOU5zQVdGWDJRZG5ZVnIxTG1YS3RyQVMyUjFSYWIxcDVvZ3hvNkZ4S3M?oc=5",
-          "published_date": "Wed, 30 Sep 2026 07:00:00 GMT",
-          "time": "Wed, 30 Sep 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Latin Times",
-          "summary": "Fallback discovery via Google News RSS; publisher: Latin Times",
-          "source": "Latin Times",
-          "sourceLabel": "Latin Times",
-          "sourceType": "fallback-news",
-          "fallbackFor": "SOUTHCOM Official Reporting — GDELT Mirror",
-          "credit_metadata": "Google News RSS fallback"
         }
       ]
     },
@@ -1110,38 +1191,6 @@
           "sourceLabel": "UN News",
           "sourceType": "fallback-news",
           "fallbackFor": "X @UN",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "c978ad10f15751ae",
-      "title": "4 Dead in SOUTHCOM Strike on Go-fast Vessel - USNI News",
-      "category": "conflict",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Wed, 26 Aug 2026 07:00:00 GMT",
-      "lastSeen": "Wed, 26 Aug 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiggFBVV95cUxQNDN0d0VPb1R0VTRrdXc3MGlKY1ZBc3FwYm5pSWlGUnJSMms2eTFqZG5CcjdkSVE1NFhPQ2RSRXI4VmdMQWtCRXlqTmZnRDliNnVudEZVaXgyT2YwZlMzYXU0WEF6eDl6WmZsU2NDLUE1SEM4TjdRaE9NcVRLejgzRl9R?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "4 Dead in SOUTHCOM Strike on Go-fast Vessel - USNI News",
-          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQNDN0d0VPb1R0VTRrdXc3MGlKY1ZBc3FwYm5pSWlGUnJSMms2eTFqZG5CcjdkSVE1NFhPQ2RSRXI4VmdMQWtCRXlqTmZnRDliNnVudEZVaXgyT2YwZlMzYXU0WEF6eDl6WmZsU2NDLUE1SEM4TjdRaE9NcVRLejgzRl9R?oc=5",
-          "published_date": "Wed, 26 Aug 2026 07:00:00 GMT",
-          "time": "Wed, 26 Aug 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: USNI News",
-          "summary": "Fallback discovery via Google News RSS; publisher: USNI News",
-          "source": "USNI News",
-          "sourceLabel": "USNI News",
-          "sourceType": "fallback-news",
-          "fallbackFor": "SOUTHCOM Official Reporting — GDELT Mirror",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -1936,38 +1985,6 @@
       ]
     },
     {
-      "id": "bc00c40ab962b572",
-      "title": "Army Launches New Task Force, Replacing Southern Spear's Efforts Against Drug Cartels - Military.com",
-      "category": "conflict",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Wed, 05 Aug 2026 07:00:00 GMT",
-      "lastSeen": "Wed, 05 Aug 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMimwFBVV95cUxOSWc5ZU5sZFdZTThEMjJzNXpWNzlQTElFT0UwOUtEVEdkT0M0bEdHZVo3Yld1UGJ2UHRaWEx5aHJDXy1NS2p0OWRZSUVVVWRkRXd5dTJNNWdrVnp6d21zTC1tYUh2eEt4ZnliTEZHS3c1c1dPMElJSElpTnBoSkZVaTY2b051WHRVQk1ScmQzdjY1OFh6Z3pFYl9Hcw?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Army Launches New Task Force, Replacing Southern Spear's Efforts Against Drug Cartels - Military.com",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOSWc5ZU5sZFdZTThEMjJzNXpWNzlQTElFT0UwOUtEVEdkT0M0bEdHZVo3Yld1UGJ2UHRaWEx5aHJDXy1NS2p0OWRZSUVVVWRkRXd5dTJNNWdrVnp6d21zTC1tYUh2eEt4ZnliTEZHS3c1c1dPMElJSElpTnBoSkZVaTY2b051WHRVQk1ScmQzdjY1OFh6Z3pFYl9Hcw?oc=5",
-          "published_date": "Wed, 05 Aug 2026 07:00:00 GMT",
-          "time": "Wed, 05 Aug 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Military.com",
-          "summary": "Fallback discovery via Google News RSS; publisher: Military.com",
-          "source": "Military.com",
-          "sourceLabel": "Military.com",
-          "sourceType": "fallback-news",
-          "fallbackFor": "SOUTHCOM Official Reporting — GDELT Mirror",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
       "id": "949a03f0a97ff1fd",
       "title": "US military launches operations with Ecuador’s forces against ‘narco-terrorists’ - The Hill",
       "category": "conflict",
@@ -2128,38 +2145,6 @@
           "sourceLabel": "KEYE",
           "sourceType": "fallback-news",
           "fallbackFor": "GDELT — Western Hemisphere Counter-Cartel",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "8cefa4bd864e9969",
-      "title": "Officials Provide Progress Update on Major Operation 1 Year After its Launch - US Southern Command (SOUTHCOM) (.mil)",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Wed, 02 Sep 2026 07:00:00 GMT",
-      "lastSeen": "Wed, 02 Sep 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPSDREY1NkbVFsakdGcGNDeEU5S25YejhIRVZJd2ZQLVkzcGZOcWVlOHE4ZGFPVDY2M1J4czN6RUxqWXV0QlV1Z2RpZ3hGeXNlcFhWTU45X2FsV1ZjZlJfTU5HUTgtMktaZl9lRnJ6UTduT3FwNEVRMUJJb0RZZllyaGx0VERqSF9fbnR2ZU43U0dkMDZvVlZLX1lQelBvY3VheFZ5bnUxZTE4WVZwWHR1cTFaeUNhWElhTlFndG83Vmg1VnNnWDFwdDY1X0tUVEVobjNRUA?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Officials Provide Progress Update on Major Operation 1 Year After its Launch - US Southern Command (SOUTHCOM) (.mil)",
-          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPSDREY1NkbVFsakdGcGNDeEU5S25YejhIRVZJd2ZQLVkzcGZOcWVlOHE4ZGFPVDY2M1J4czN6RUxqWXV0QlV1Z2RpZ3hGeXNlcFhWTU45X2FsV1ZjZlJfTU5HUTgtMktaZl9lRnJ6UTduT3FwNEVRMUJJb0RZZllyaGx0VERqSF9fbnR2ZU43U0dkMDZvVlZLX1lQelBvY3VheFZ5bnUxZTE4WVZwWHR1cTFaeUNhWElhTlFndG83Vmg1VnNnWDFwdDY1X0tUVEVobjNRUA?oc=5",
-          "published_date": "Wed, 02 Sep 2026 07:00:00 GMT",
-          "time": "Wed, 02 Sep 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: US Southern Command (SOUTHCOM) (.mil)",
-          "summary": "Fallback discovery via Google News RSS; publisher: US Southern Command (SOUTHCOM) (.mil)",
-          "source": "US Southern Command (SOUTHCOM) (.mil)",
-          "sourceLabel": "US Southern Command (SOUTHCOM) (.mil)",
-          "sourceType": "fallback-news",
-          "fallbackFor": "SOUTHCOM Official Reporting — GDELT Mirror",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -2353,7 +2338,7 @@
           "source": "The Hill",
           "sourceLabel": "The Hill",
           "sourceType": "fallback-news",
-          "fallbackFor": "SOUTHCOM Official Reporting — GDELT Mirror",
+          "fallbackFor": "GDELT — Western Hemisphere Counter-Cartel",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -3099,6 +3084,70 @@
           "sourceLabel": "ABC News - Breaking News, Latest News and Videos",
           "sourceType": "fallback-news",
           "fallbackFor": "GDELT — Western Hemisphere Counter-Cartel",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "8c11e607a88398bf",
+      "title": "Artemis III Crew Announced - NASA (.gov)",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Tue, 09 Jun 2026 07:00:00 GMT",
+      "lastSeen": "Tue, 09 Jun 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMib0FVX3lxTE05clE0VDlXM1Y5UWtvMEx3OEZnWjhHZnowT0dRUl9Hd3NzNjdUT1lrRnJya3drOXRzakNwdVhKaXo2dkJTcXRIc19CTHR0eVBTQjBQWVFuWnBvbXZBTExuNmkxaHNyWWN1OTZOR2Z5TQ?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "Artemis III Crew Announced - NASA (.gov)",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE05clE0VDlXM1Y5UWtvMEx3OEZnWjhHZnowT0dRUl9Hd3NzNjdUT1lrRnJya3drOXRzakNwdVhKaXo2dkJTcXRIc19CTHR0eVBTQjBQWVFuWnBvbXZBTExuNmkxaHNyWWN1OTZOR2Z5TQ?oc=5",
+          "published_date": "Tue, 09 Jun 2026 07:00:00 GMT",
+          "time": "Tue, 09 Jun 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
+          "summary": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
+          "source": "NASA (.gov)",
+          "sourceLabel": "NASA (.gov)",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NASA",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "0c1102e15b92ae3e",
+      "title": "Priorities - Welcome to the United Nations",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Tue, 08 Sep 2026 07:00:00 GMT",
+      "lastSeen": "Tue, 08 Sep 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9DdmZUOG9xLWQySkUyMkpzcHdBWUNNbG5ORnFvVXNYcUpERkt1M2lkMm1aeGFNang4b0M5QnZCYjFLMDlKMWloS2ltMGR2UQ?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "Priorities - Welcome to the United Nations",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9DdmZUOG9xLWQySkUyMkpzcHdBWUNNbG5ORnFvVXNYcUpERkt1M2lkMm1aeGFNang4b0M5QnZCYjFLMDlKMWloS2ltMGR2UQ?oc=5",
+          "published_date": "Tue, 08 Sep 2026 07:00:00 GMT",
+          "time": "Tue, 08 Sep 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Welcome to the United Nations",
+          "summary": "Fallback discovery via Google News RSS; publisher: Welcome to the United Nations",
+          "source": "Welcome to the United Nations",
+          "sourceLabel": "Welcome to the United Nations",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @UN",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
