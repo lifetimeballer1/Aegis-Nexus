@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-18T18:54:24.276927Z",
+  "updatedAt": "2026-10-18T21:12:35.588081Z",
   "window": "recent public reporting",
   "method": "anchor-aware title clustering with category and publication-time agreement; candidate grouping only, not proof reports describe identical facts",
   "events": [
@@ -132,6 +132,96 @@
       ]
     },
     {
+      "id": "cd02c5e532c38eed",
+      "title": "Green forest fire notification in Mozambique",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 3,
+      "sourceCount": 1,
+      "sources": [
+        "gdacs.org"
+      ],
+      "anchors": [],
+      "firstSeen": "2026-10-18T19:01:13Z",
+      "lastSeen": "2026-10-18T19:09:14Z",
+      "urls": [
+        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032905",
+        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032904",
+        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032900"
+      ],
+      "reports": [
+        {
+          "id": "ca7e8727ea2d",
+          "sourceLabel": "GDACS Global Disaster Alerts",
+          "sourceName": "GDACS Global Disaster Alerts",
+          "sourceType": "climate-hazard",
+          "title": "Green forest fire notification in Mozambique",
+          "summary": "On 08/10/2026, a forest fire started in Mozambique, until 18/10/2026.",
+          "summary_snippet": "On 08/10/2026, a forest fire started in Mozambique, until 18/10/2026.",
+          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032905",
+          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032905",
+          "time": "2026-10-18T19:09:14Z",
+          "published_date": "2026-10-18T19:09:14Z",
+          "publishedDate": "2026-10-18T19:09:14Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "gdacs_global_disaster_alerts",
+            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "d86e6bc2b4b6",
+          "sourceLabel": "GDACS Global Disaster Alerts",
+          "sourceName": "GDACS Global Disaster Alerts",
+          "sourceType": "climate-hazard",
+          "title": "Green forest fire notification in Mozambique",
+          "summary": "On 11/10/2026, a forest fire started in Mozambique, until 18/10/2026.",
+          "summary_snippet": "On 11/10/2026, a forest fire started in Mozambique, until 18/10/2026.",
+          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032904",
+          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032904",
+          "time": "2026-10-18T19:03:48Z",
+          "published_date": "2026-10-18T19:03:48Z",
+          "publishedDate": "2026-10-18T19:03:48Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "gdacs_global_disaster_alerts",
+            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "ffe4b174ac5b",
+          "sourceLabel": "GDACS Global Disaster Alerts",
+          "sourceName": "GDACS Global Disaster Alerts",
+          "sourceType": "climate-hazard",
+          "title": "Green forest fire notification in Mozambique",
+          "summary": "On 15/10/2026, a forest fire started in Mozambique, until 18/10/2026.",
+          "summary_snippet": "On 15/10/2026, a forest fire started in Mozambique, until 18/10/2026.",
+          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032900",
+          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032900",
+          "time": "2026-10-18T19:01:13Z",
+          "published_date": "2026-10-18T19:01:13Z",
+          "publishedDate": "2026-10-18T19:01:13Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "gdacs_global_disaster_alerts",
+            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
       "id": "f4bef1a266999855",
       "title": "Green forest fire notification in Australia",
       "category": "general",
@@ -242,8 +332,8 @@
       "reports": [
         {
           "id": "aa6e7ffc04f0",
-          "sourceLabel": "CNA World",
-          "sourceName": "CNA World",
+          "sourceLabel": "https://www.channelnewsasia.com/world/us-officials-visit-palestinian-village-after-settler-attacks-diplomats-6469796",
+          "sourceName": "https://www.channelnewsasia.com/world/us-officials-visit-palestinian-village-after-settler-attacks-diplomats-6469796",
           "sourceType": "news",
           "title": "US officials visit Palestinian village after settler attacks on diplomats",
           "summary": "UN bodies and most countries deem the settlements illegal under international law, but Israel rejects this, viewing the territory as disputed rather than occupied.",
@@ -265,8 +355,8 @@
         },
         {
           "id": "d1a8f0e30d96",
-          "sourceLabel": "Google News — World Politics",
-          "sourceName": "Google News — World Politics",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNMXFmMW1hVjRCN2Fsa0p6OGNUX29BanZRTS1nS3ZwcV9fVzFsTklsN0w1TmxNSWVpamZ0NmEtU1RiQjNpdjNVcWY1TEZmcnhKSXltWEFtenZlVnZubzJPOENjTVotVjA2OVR4UVdwaVVsaGFLV050dnRTN0xKQzBmZWFNU0hPLTZUQ2VwaEtDelhCOTZqbEFYV2JYemRuNGE1dzNmUkhaQzN1OUltOUc3OXdMVUYyb19wNGI5aW04amZYQQ?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNMXFmMW1hVjRCN2Fsa0p6OGNUX29BanZRTS1nS3ZwcV9fVzFsTklsN0w1TmxNSWVpamZ0NmEtU1RiQjNpdjNVcWY1TEZmcnhKSXltWEFtenZlVnZubzJPOENjTVotVjA2OVR4UVdwaVVsaGFLV050dnRTN0xKQzBmZWFNU0hPLTZUQ2VwaEtDelhCOTZqbEFYV2JYemRuNGE1dzNmUkhaQzN1OUltOUc3OXdMVUYyb19wNGI5aW04amZYQQ?oc=5",
           "sourceType": "world-politics",
           "title": "US officials visit Palestinian village after settler attacks on diplomats - Reuters",
           "summary": "US officials visit Palestinian village after settler attacks on diplomats Reuters",
@@ -311,8 +401,8 @@
       "reports": [
         {
           "id": "5946607725dc",
-          "sourceLabel": "CNA World",
-          "sourceName": "CNA World",
+          "sourceLabel": "https://www.channelnewsasia.com/world/trump-endorses-netanyahu-in-israeli-election-6469761",
+          "sourceName": "https://www.channelnewsasia.com/world/trump-endorses-netanyahu-in-israeli-election-6469761",
           "sourceType": "news",
           "title": "Trump endorses Netanyahu in Israeli election",
           "summary": "The Trump endorsement is not certain to give Netanyahu and his right-wing Likud party a boost as Israeli public support for Trump has diminished amid Israeli-US disagreements over Iran.",
@@ -334,8 +424,8 @@
         },
         {
           "id": "1444cfda143e",
-          "sourceLabel": "Al Jazeera",
-          "sourceName": "Al Jazeera",
+          "sourceLabel": "https://www.aljazeera.com/news/2026/10/18/trump-endorses-netanyahu-in-israeli-legislative-elections?traffic_source=rss",
+          "sourceName": "https://www.aljazeera.com/news/2026/10/18/trump-endorses-netanyahu-in-israeli-legislative-elections?traffic_source=rss",
           "sourceType": "international",
           "title": "Trump endorses Netanyahu in Israeli legislative elections",
           "summary": "In a social media post ahead of the October 27 election, Trump calls Netanyahu a 'Strong, Brave, and Brilliant' leader.",
@@ -380,8 +470,8 @@
       "reports": [
         {
           "id": "759b05df3a4f",
-          "sourceLabel": "Google News — Yemen / Red Sea",
-          "sourceName": "Google News — Yemen / Red Sea",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOMzhqQlNqYWdrQzFNTHpobVpTUndWZ3NoOWpxRXVoNUdYckdDaDVkSmtwbXJ4Y2RnZDN6OTZ0VjFLM1FfNHRZTGVOSXA4T19lamlwb3ZPQWFXd082VmNlWEJhQ082OHJvalJCdFNXa3B1NW9pVkhYVkZ6eG9uWk9YMTBzMlRQQV9QN19WclB5aWtwdjBKRlhyY1I2cFBoQUVZRlVvcVlCbHNpUG4wcGlSWdIBtgFBVV95cUxOR0tmR1ctSUduRlQ1Z3A4SlNJMUwtT28zSWNWYWRvWDM5d0dIaFcxQ3pvQnFRTTFlSHA0ODlJeEo5UHdzSC1hNDFLazEyUUN3T0JWMlFlTjlnZjFGTTVtNWVfSEwtbkhRd1BnR19VblIzTElFc1I2NXgyT1YyNElQYmxtTWJ3RmdDWldvdV9CYi0xaGZ4ZXJraXd1M2R1VGtmMFJWQXhmOERBYmpSYXEySGEzMDZ5Zw?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOMzhqQlNqYWdrQzFNTHpobVpTUndWZ3NoOWpxRXVoNUdYckdDaDVkSmtwbXJ4Y2RnZDN6OTZ0VjFLM1FfNHRZTGVOSXA4T19lamlwb3ZPQWFXd082VmNlWEJhQ082OHJvalJCdFNXa3B1NW9pVkhYVkZ6eG9uWk9YMTBzMlRQQV9QN19WclB5aWtwdjBKRlhyY1I2cFBoQUVZRlVvcVlCbHNpUG4wcGlSWdIBtgFBVV95cUxOR0tmR1ctSUduRlQ1Z3A4SlNJMUwtT28zSWNWYWRvWDM5d0dIaFcxQ3pvQnFRTTFlSHA0ODlJeEo5UHdzSC1hNDFLazEyUUN3T0JWMlFlTjlnZjFGTTVtNWVfSEwtbkhRd1BnR19VblIzTElFc1I2NXgyT1YyNElQYmxtTWJ3RmdDWldvdV9CYi0xaGZ4ZXJraXd1M2R1VGtmMFJWQXhmOERBYmpSYXEySGEzMDZ5Zw?oc=5",
           "sourceType": "middle-east-conflict",
           "title": "What help can Egypt offer Saudi Arabia in the war against the Houthis? - Al Jazeera",
           "summary": "What help can Egypt offer Saudi Arabia in the war against the Houthis? Al Jazeera",
@@ -795,6 +885,210 @@
       ]
     },
     {
+      "id": "65d9b6fe5acd7523",
+      "title": "Green forest fire notification in Nigeria",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 2,
+      "sourceCount": 1,
+      "sources": [
+        "gdacs.org"
+      ],
+      "anchors": [
+        "niger",
+        "nigeria"
+      ],
+      "firstSeen": "2026-10-18T19:00:49Z",
+      "lastSeen": "2026-10-18T19:02:24Z",
+      "urls": [
+        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032902",
+        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032899"
+      ],
+      "reports": [
+        {
+          "id": "0e9652c677cf",
+          "sourceLabel": "GDACS Global Disaster Alerts",
+          "sourceName": "GDACS Global Disaster Alerts",
+          "sourceType": "climate-hazard",
+          "title": "Green forest fire notification in Nigeria",
+          "summary": "On 13/10/2026, a forest fire started in Nigeria, until 18/10/2026.",
+          "summary_snippet": "On 13/10/2026, a forest fire started in Nigeria, until 18/10/2026.",
+          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032902",
+          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032902",
+          "time": "2026-10-18T19:02:24Z",
+          "published_date": "2026-10-18T19:02:24Z",
+          "publishedDate": "2026-10-18T19:02:24Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "gdacs_global_disaster_alerts",
+            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "5fee9ec68758",
+          "sourceLabel": "GDACS Global Disaster Alerts",
+          "sourceName": "GDACS Global Disaster Alerts",
+          "sourceType": "climate-hazard",
+          "title": "Green forest fire notification in Nigeria",
+          "summary": "On 16/10/2026, a forest fire started in Nigeria, until 18/10/2026.",
+          "summary_snippet": "On 16/10/2026, a forest fire started in Nigeria, until 18/10/2026.",
+          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032899",
+          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032899",
+          "time": "2026-10-18T19:00:49Z",
+          "published_date": "2026-10-18T19:00:49Z",
+          "publishedDate": "2026-10-18T19:00:49Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "gdacs_global_disaster_alerts",
+            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
+      "id": "c31cb7ebf484c3a2",
+      "title": "US-Israel-Iran War Latest Live News: Trump Says Iran Has Been ‘Systematically Destroyed’ Militarily and Financially, Warns US Will ‘Soon Finish the Job’ as He Backs Netanyahu Ahead of Israel Elections - The Sunday Guardian",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 2,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [
+        "iran",
+        "israel"
+      ],
+      "firstSeen": "2026-10-18T18:54:31Z",
+      "lastSeen": "2026-10-18T18:56:15Z",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMi2wJBVV95cUxOYlRvaC1wVVF0SFVMX2dFUnJwczA2MXNsRGtVbE9RWUdFU1dTdklmeG5mcHBDRFVzY1Q5RGJpUGpHaWdhQXVwbVp3blZsRmJUS3R5U2dQaUxpTUJFSFJBZ2FZQ0lvUl8ya3NvNUJNVXMyOWlSNjVyZk02SEN2QTBXN01hY1I0cTVwamwzNmFPTjhDXy1vSkVMSTgtVG9ubUZ3VEpkTWZmUGU3NlRDc01LSGlOQVdWLWxBRUpxRGloUGFGci10cDVLVTltMkFlUTVzRXdGSXU5TzdZci1vcmJxNkRNcUZ5UU1QN3Y2NHRwYk4yeWZmaXZwWUpEZ0sxb0JHcHMwc3dtLWI1RUZuLTQwRXA1QVZlOXhzaDhRNDlyTmxHSnpqODJDNEhzZm02cjJoZkViTEZrYUl1a3FzWEhCRTdzYXpxRzQxRUlVcDFUaGd6cnNLdEFQVEZrUdIB4AJBVV95cUxQam1oaWFrbUVZX3VmblFIRnZlV3RrampxRnkyUlJHOGs5QUtUQkdFRHVaaEhOUy1hbFV1S2NXSGVlRldXaEpsaFlvVTljc2pUN09PcXU0WThISmFZcV84Tm82QVNZdjdPYWhCOWs5UnBWTEt5MlJxMWpBdW54Ynp2RGo5UG1CRmpxQzRCLVZ2b2ZVZXNaOHRWSWw5STdONkh2TjFlbksxS0hSZzRna0Q3bEE2NnpjYkZ2SlZleWdSeWV6UTh1WmhoczQtcHE1dWdIU3FUb081V1pwN0RkOWFfNkNCaTVLNTdsRzJrNU1xX3ZBT1J6SXRoRzN0YXNFNVc5a2stR0tIVEc1U2NIWWt3LVlhT09PZXZQWkJVdXhtRk0tSjExbmFWQlg2WmhpWGFvMmdNTG5JbmM3cmNtbFJsRHB4WGtBeEJyeFktaUZURlVpWUZvRDdzMmtyVnZfR01z?oc=5",
+        "https://news.google.com/rss/articles/CBMi4AJBVV95cUxQam1oaWFrbUVZX3VmblFIRnZlV3RrampxRnkyUlJHOGs5QUtUQkdFRHVaaEhOUy1hbFV1S2NXSGVlRldXaEpsaFlvVTljc2pUN09PcXU0WThISmFZcV84Tm82QVNZdjdPYWhCOWs5UnBWTEt5MlJxMWpBdW54Ynp2RGo5UG1CRmpxQzRCLVZ2b2ZVZXNaOHRWSWw5STdONkh2TjFlbksxS0hSZzRna0Q3bEE2NnpjYkZ2SlZleWdSeWV6UTh1WmhoczQtcHE1dWdIU3FUb081V1pwN0RkOWFfNkNCaTVLNTdsRzJrNU1xX3ZBT1J6SXRoRzN0YXNFNVc5a2stR0tIVEc1U2NIWWt3LVlhT09PZXZQWkJVdXhtRk0tSjExbmFWQlg2WmhpWGFvMmdNTG5JbmM3cmNtbFJsRHB4WGtBeEJyeFktaUZURlVpWUZvRDdzMmtyVnZfR01z0gHgAkFVX3lxTFBqbWhpYWttRVlfdWZuUUhGdmVXdGtqanFGeTJSUkc4azlBS1RCR0VEdVpoSE5TLWFsVXVLY1dIZWVGV1doSmxoWW9VOWNzalQ3T09xdTRZOEhKYVlxXzhObzZBU1l2N09haEI5azlScFZMS3kyUnExakF1bnhienZEajlQbUJGanFDNEItVnZvZlVlc1o4dFZJbDlJN042SHZOMWVuSzFLSFJnNGdrRDdsQTY2emNiRnZKVmV5Z1J5ZXpROHVaaGhzNC1wcTV1Z0hTcVRvTzVXWnA3RGQ5YV82Q0JpNUs1N2xHMms1TXFfdkFPUnpJdGhHM3Rhc0U1Vzlray1HS0hURzVTY0hZa3ctWWFPT09ldlBaQlV1eG1GTS1KMTFuYVZCWDZaaGlYYW8yZ01MbkluYzdyY21sUmxEcHhYa0F4QnJ4WS1pRlRGVWlZRm9EN3Mya3JWdl9HTXM?oc=5"
+      ],
+      "reports": [
+        {
+          "id": "ce80d8a11415",
+          "sourceLabel": "Google News — World Politics",
+          "sourceName": "Google News — World Politics",
+          "sourceType": "world-politics",
+          "title": "US-Israel-Iran War Latest Live News: Trump Says Iran Has Been ‘Systematically Destroyed’ Militarily and Financially, Warns US Will ‘Soon Finish the Job’ as He Backs Netanyahu Ahead of Israel Elections - The Sunday Guardian",
+          "summary": "US-Israel-Iran War Latest Live News: Trump Says Iran Has Been ‘Systematically Destroyed’ Militarily and Financially, Warns US Will ‘Soon Finish the Job’ as He Backs Netanyahu Ahead of Israel Elections The Sunday Guardian",
+          "summary_snippet": "US-Israel-Iran War Latest Live News: Trump Says Iran Has Been ‘Systematically Destroyed’ Militarily and Financially, Warns US Will ‘Soon Finish the Job’ as He Backs Netanyahu Ahead of Israel Elections The Sunday Guardian",
+          "source": "https://news.google.com/rss/articles/CBMi2wJBVV95cUxOYlRvaC1wVVF0SFVMX2dFUnJwczA2MXNsRGtVbE9RWUdFU1dTdklmeG5mcHBDRFVzY1Q5RGJpUGpHaWdhQXVwbVp3blZsRmJUS3R5U2dQaUxpTUJFSFJBZ2FZQ0lvUl8ya3NvNUJNVXMyOWlSNjVyZk02SEN2QTBXN01hY1I0cTVwamwzNmFPTjhDXy1vSkVMSTgtVG9ubUZ3VEpkTWZmUGU3NlRDc01LSGlOQVdWLWxBRUpxRGloUGFGci10cDVLVTltMkFlUTVzRXdGSXU5TzdZci1vcmJxNkRNcUZ5UU1QN3Y2NHRwYk4yeWZmaXZwWUpEZ0sxb0JHcHMwc3dtLWI1RUZuLTQwRXA1QVZlOXhzaDhRNDlyTmxHSnpqODJDNEhzZm02cjJoZkViTEZrYUl1a3FzWEhCRTdzYXpxRzQxRUlVcDFUaGd6cnNLdEFQVEZrUdIB4AJBVV95cUxQam1oaWFrbUVZX3VmblFIRnZlV3RrampxRnkyUlJHOGs5QUtUQkdFRHVaaEhOUy1hbFV1S2NXSGVlRldXaEpsaFlvVTljc2pUN09PcXU0WThISmFZcV84Tm82QVNZdjdPYWhCOWs5UnBWTEt5MlJxMWpBdW54Ynp2RGo5UG1CRmpxQzRCLVZ2b2ZVZXNaOHRWSWw5STdONkh2TjFlbksxS0hSZzRna0Q3bEE2NnpjYkZ2SlZleWdSeWV6UTh1WmhoczQtcHE1dWdIU3FUb081V1pwN0RkOWFfNkNCaTVLNTdsRzJrNU1xX3ZBT1J6SXRoRzN0YXNFNVc5a2stR0tIVEc1U2NIWWt3LVlhT09PZXZQWkJVdXhtRk0tSjExbmFWQlg2WmhpWGFvMmdNTG5JbmM3cmNtbFJsRHB4WGtBeEJyeFktaUZURlVpWUZvRDdzMmtyVnZfR01z?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMi2wJBVV95cUxOYlRvaC1wVVF0SFVMX2dFUnJwczA2MXNsRGtVbE9RWUdFU1dTdklmeG5mcHBDRFVzY1Q5RGJpUGpHaWdhQXVwbVp3blZsRmJUS3R5U2dQaUxpTUJFSFJBZ2FZQ0lvUl8ya3NvNUJNVXMyOWlSNjVyZk02SEN2QTBXN01hY1I0cTVwamwzNmFPTjhDXy1vSkVMSTgtVG9ubUZ3VEpkTWZmUGU3NlRDc01LSGlOQVdWLWxBRUpxRGloUGFGci10cDVLVTltMkFlUTVzRXdGSXU5TzdZci1vcmJxNkRNcUZ5UU1QN3Y2NHRwYk4yeWZmaXZwWUpEZ0sxb0JHcHMwc3dtLWI1RUZuLTQwRXA1QVZlOXhzaDhRNDlyTmxHSnpqODJDNEhzZm02cjJoZkViTEZrYUl1a3FzWEhCRTdzYXpxRzQxRUlVcDFUaGd6cnNLdEFQVEZrUdIB4AJBVV95cUxQam1oaWFrbUVZX3VmblFIRnZlV3RrampxRnkyUlJHOGs5QUtUQkdFRHVaaEhOUy1hbFV1S2NXSGVlRldXaEpsaFlvVTljc2pUN09PcXU0WThISmFZcV84Tm82QVNZdjdPYWhCOWs5UnBWTEt5MlJxMWpBdW54Ynp2RGo5UG1CRmpxQzRCLVZ2b2ZVZXNaOHRWSWw5STdONkh2TjFlbksxS0hSZzRna0Q3bEE2NnpjYkZ2SlZleWdSeWV6UTh1WmhoczQtcHE1dWdIU3FUb081V1pwN0RkOWFfNkNCaTVLNTdsRzJrNU1xX3ZBT1J6SXRoRzN0YXNFNVc5a2stR0tIVEc1U2NIWWt3LVlhT09PZXZQWkJVdXhtRk0tSjExbmFWQlg2WmhpWGFvMmdNTG5JbmM3cmNtbFJsRHB4WGtBeEJyeFktaUZURlVpWUZvRDdzMmtyVnZfR01z?oc=5",
+          "time": "2026-10-18T18:56:15Z",
+          "published_date": "2026-10-18T18:56:15Z",
+          "publishedDate": "2026-10-18T18:56:15Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_world_politics",
+            "sourceUrl": "https://news.google.com/rss/search?q=election+parliament+diplomacy+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "9df008c6753f",
+          "sourceLabel": "Google News — Iran Israel",
+          "sourceName": "Google News — Iran Israel",
+          "sourceType": "middle-east-conflict",
+          "title": "US-Israel-Iran War Latest Live News: Trump Says Iran Has Been ‘Systematically Destroyed’ Militarily and Financially, Warns US Will ‘Soon Finish the Job’ as He Backs Netanyahu Ahead of Israel Elections - The Sunday Guardian",
+          "summary": "US-Israel-Iran War Latest Live News: Trump Says Iran Has Been ‘Systematically Destroyed’ Militarily and Financially, Warns US Will ‘Soon Finish the Job’ as He Backs Netanyahu Ahead of Israel Elections The Sunday Guardian",
+          "summary_snippet": "US-Israel-Iran War Latest Live News: Trump Says Iran Has Been ‘Systematically Destroyed’ Militarily and Financially, Warns US Will ‘Soon Finish the Job’ as He Backs Netanyahu Ahead of Israel Elections The Sunday Guardian",
+          "source": "https://news.google.com/rss/articles/CBMi4AJBVV95cUxQam1oaWFrbUVZX3VmblFIRnZlV3RrampxRnkyUlJHOGs5QUtUQkdFRHVaaEhOUy1hbFV1S2NXSGVlRldXaEpsaFlvVTljc2pUN09PcXU0WThISmFZcV84Tm82QVNZdjdPYWhCOWs5UnBWTEt5MlJxMWpBdW54Ynp2RGo5UG1CRmpxQzRCLVZ2b2ZVZXNaOHRWSWw5STdONkh2TjFlbksxS0hSZzRna0Q3bEE2NnpjYkZ2SlZleWdSeWV6UTh1WmhoczQtcHE1dWdIU3FUb081V1pwN0RkOWFfNkNCaTVLNTdsRzJrNU1xX3ZBT1J6SXRoRzN0YXNFNVc5a2stR0tIVEc1U2NIWWt3LVlhT09PZXZQWkJVdXhtRk0tSjExbmFWQlg2WmhpWGFvMmdNTG5JbmM3cmNtbFJsRHB4WGtBeEJyeFktaUZURlVpWUZvRDdzMmtyVnZfR01z0gHgAkFVX3lxTFBqbWhpYWttRVlfdWZuUUhGdmVXdGtqanFGeTJSUkc4azlBS1RCR0VEdVpoSE5TLWFsVXVLY1dIZWVGV1doSmxoWW9VOWNzalQ3T09xdTRZOEhKYVlxXzhObzZBU1l2N09haEI5azlScFZMS3kyUnExakF1bnhienZEajlQbUJGanFDNEItVnZvZlVlc1o4dFZJbDlJN042SHZOMWVuSzFLSFJnNGdrRDdsQTY2emNiRnZKVmV5Z1J5ZXpROHVaaGhzNC1wcTV1Z0hTcVRvTzVXWnA3RGQ5YV82Q0JpNUs1N2xHMms1TXFfdkFPUnpJdGhHM3Rhc0U1Vzlray1HS0hURzVTY0hZa3ctWWFPT09ldlBaQlV1eG1GTS1KMTFuYVZCWDZaaGlYYW8yZ01MbkluYzdyY21sUmxEcHhYa0F4QnJ4WS1pRlRGVWlZRm9EN3Mya3JWdl9HTXM?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMi4AJBVV95cUxQam1oaWFrbUVZX3VmblFIRnZlV3RrampxRnkyUlJHOGs5QUtUQkdFRHVaaEhOUy1hbFV1S2NXSGVlRldXaEpsaFlvVTljc2pUN09PcXU0WThISmFZcV84Tm82QVNZdjdPYWhCOWs5UnBWTEt5MlJxMWpBdW54Ynp2RGo5UG1CRmpxQzRCLVZ2b2ZVZXNaOHRWSWw5STdONkh2TjFlbksxS0hSZzRna0Q3bEE2NnpjYkZ2SlZleWdSeWV6UTh1WmhoczQtcHE1dWdIU3FUb081V1pwN0RkOWFfNkNCaTVLNTdsRzJrNU1xX3ZBT1J6SXRoRzN0YXNFNVc5a2stR0tIVEc1U2NIWWt3LVlhT09PZXZQWkJVdXhtRk0tSjExbmFWQlg2WmhpWGFvMmdNTG5JbmM3cmNtbFJsRHB4WGtBeEJyeFktaUZURlVpWUZvRDdzMmtyVnZfR01z0gHgAkFVX3lxTFBqbWhpYWttRVlfdWZuUUhGdmVXdGtqanFGeTJSUkc4azlBS1RCR0VEdVpoSE5TLWFsVXVLY1dIZWVGV1doSmxoWW9VOWNzalQ3T09xdTRZOEhKYVlxXzhObzZBU1l2N09haEI5azlScFZMS3kyUnExakF1bnhienZEajlQbUJGanFDNEItVnZvZlVlc1o4dFZJbDlJN042SHZOMWVuSzFLSFJnNGdrRDdsQTY2emNiRnZKVmV5Z1J5ZXpROHVaaGhzNC1wcTV1Z0hTcVRvTzVXWnA3RGQ5YV82Q0JpNUs1N2xHMms1TXFfdkFPUnpJdGhHM3Rhc0U1Vzlray1HS0hURzVTY0hZa3ctWWFPT09ldlBaQlV1eG1GTS1KMTFuYVZCWDZaaGlYYW8yZ01MbkluYzdyY21sUmxEcHhYa0F4QnJ4WS1pRlRGVWlZRm9EN3Mya3JWdl9HTXM?oc=5",
+          "time": "2026-10-18T18:54:31Z",
+          "published_date": "2026-10-18T18:54:31Z",
+          "publishedDate": "2026-10-18T18:54:31Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_iran_israel",
+            "sourceUrl": "https://news.google.com/rss/search?q=Iran+Israel+conflict+missile+drone+strike+escalation+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
+      "id": "aa65c9357f12beb8",
+      "title": "Pakistan Responds to Afghan Taliban Firing in Upper Kurram, Border Alert Maintained - Aaj News",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 2,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "2026-10-18T18:05:11Z",
+      "lastSeen": "2026-10-18T18:10:07Z",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9zSnF3N21uaE1TYjJ1RjVhMW1qbkdXbEowUFJ3WEFMMGlDS0Z4aTBRUGdSeWZkUUJwdEwxSUIyZUNIR2laSDZidTZFQzQ?oc=5",
+        "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPWnN2T3Z4aGxDeTVQT18tM3pPV09MMnoxRE1OSTBkUlBPb1RjUUhTekI5aWREZWN3dDZCeVVpSU5QSUlBeXE0ek1mcGxkWXRua0ZlV2dVZHdtME5rc3pjTUxFMmpic3VvRlNTeGdWVzNlYzg4VmlRYUVnRDdLUjg0ZGNqbS1CbXBfeEtBUW9fb1hPR2U1SGhwUHJET0locVJaN3JuRjVvbGtKNVVxV2o3Q1g4OFktOFNSMFdRV1pKc0dTR09CVXY3Yw?oc=5"
+      ],
+      "reports": [
+        {
+          "id": "cfaba74f2e72",
+          "sourceLabel": "Google News — Afghanistan Security",
+          "sourceName": "Google News — Afghanistan Security",
+          "sourceType": "south-asia-conflict",
+          "title": "Pakistan Responds to Afghan Taliban Firing in Upper Kurram, Border Alert Maintained - Aaj News",
+          "summary": "Pakistan Responds to Afghan Taliban Firing in Upper Kurram, Border Alert Maintained Aaj News",
+          "summary_snippet": "Pakistan Responds to Afghan Taliban Firing in Upper Kurram, Border Alert Maintained Aaj News",
+          "source": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9zSnF3N21uaE1TYjJ1RjVhMW1qbkdXbEowUFJ3WEFMMGlDS0Z4aTBRUGdSeWZkUUJwdEwxSUIyZUNIR2laSDZidTZFQzQ?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9zSnF3N21uaE1TYjJ1RjVhMW1qbkdXbEowUFJ3WEFMMGlDS0Z4aTBRUGdSeWZkUUJwdEwxSUIyZUNIR2laSDZidTZFQzQ?oc=5",
+          "time": "2026-10-18T18:10:07Z",
+          "published_date": "2026-10-18T18:10:07Z",
+          "publishedDate": "2026-10-18T18:10:07Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_afghanistan_security",
+            "sourceUrl": "https://news.google.com/rss/search?q=Afghanistan+Taliban+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "1f4c76d33fc4",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPWnN2T3Z4aGxDeTVQT18tM3pPV09MMnoxRE1OSTBkUlBPb1RjUUhTekI5aWREZWN3dDZCeVVpSU5QSUlBeXE0ek1mcGxkWXRua0ZlV2dVZHdtME5rc3pjTUxFMmpic3VvRlNTeGdWVzNlYzg4VmlRYUVnRDdLUjg0ZGNqbS1CbXBfeEtBUW9fb1hPR2U1SGhwUHJET0locVJaN3JuRjVvbGtKNVVxV2o3Q1g4OFktOFNSMFdRV1pKc0dTR09CVXY3Yw?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPWnN2T3Z4aGxDeTVQT18tM3pPV09MMnoxRE1OSTBkUlBPb1RjUUhTekI5aWREZWN3dDZCeVVpSU5QSUlBeXE0ek1mcGxkWXRua0ZlV2dVZHdtME5rc3pjTUxFMmpic3VvRlNTeGdWVzNlYzg4VmlRYUVnRDdLUjg0ZGNqbS1CbXBfeEtBUW9fb1hPR2U1SGhwUHJET0locVJaN3JuRjVvbGtKNVVxV2o3Q1g4OFktOFNSMFdRV1pKc0dTR09CVXY3Yw?oc=5",
+          "sourceType": "south-asia-conflict",
+          "title": "Pakistan Responds to Afghan Taliban Firing in Upper Kurram, Border Alert Maintained - Aaj News - Aaj English TV",
+          "summary": "Pakistan Responds to Afghan Taliban Firing in Upper Kurram, Border Alert Maintained - Aaj News Aaj English TV",
+          "summary_snippet": "Pakistan Responds to Afghan Taliban Firing in Upper Kurram, Border Alert Maintained - Aaj News Aaj English TV",
+          "source": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPWnN2T3Z4aGxDeTVQT18tM3pPV09MMnoxRE1OSTBkUlBPb1RjUUhTekI5aWREZWN3dDZCeVVpSU5QSUlBeXE0ek1mcGxkWXRua0ZlV2dVZHdtME5rc3pjTUxFMmpic3VvRlNTeGdWVzNlYzg4VmlRYUVnRDdLUjg0ZGNqbS1CbXBfeEtBUW9fb1hPR2U1SGhwUHJET0locVJaN3JuRjVvbGtKNVVxV2o3Q1g4OFktOFNSMFdRV1pKc0dTR09CVXY3Yw?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPWnN2T3Z4aGxDeTVQT18tM3pPV09MMnoxRE1OSTBkUlBPb1RjUUhTekI5aWREZWN3dDZCeVVpSU5QSUlBeXE0ek1mcGxkWXRua0ZlV2dVZHdtME5rc3pjTUxFMmpic3VvRlNTeGdWVzNlYzg4VmlRYUVnRDdLUjg0ZGNqbS1CbXBfeEtBUW9fb1hPR2U1SGhwUHJET0locVJaN3JuRjVvbGtKNVVxV2o3Q1g4OFktOFNSMFdRV1pKc0dTR09CVXY3Yw?oc=5",
+          "time": "2026-10-18T18:05:11Z",
+          "published_date": "2026-10-18T18:05:11Z",
+          "publishedDate": "2026-10-18T18:05:11Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_afghanistan_security",
+            "sourceUrl": "https://news.google.com/rss/search?q=Afghanistan+Taliban+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
       "id": "fead6914356b103c",
       "title": "US Officials Visit Palestinian Village After Settler Attacks on Diplomats - شبكة تواصل الإخبارية",
       "category": "general",
@@ -903,8 +1197,8 @@
         },
         {
           "id": "6d3780b4ec19",
-          "sourceLabel": "Google News — World Politics",
-          "sourceName": "Google News — World Politics",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPNFNaLUMteU5fZzNYZHIwQl9kb2dmQ3pYV3paZXlUcTZuXzF1bV9xa1d0VGJIQmpkeXZJNU9KVkhESHRNVi16TExJWnEySmZjc1B3anZPTWtwMW9LVGRSb090b0VTY0xVZTdmR09jUkxoRGhkTG5sNU0xUENHUi1oSnFES3JOb3FFWUd2bEZOM1VxelJJN1ZfQ2VTaThFRnpTclVyaGU1Zk4wSFNuUEhiUU8xNnBWclczUEt0RkNKb0xVVjlHRE5WbVhvbUVqdmU2S3RFczVXTjlBWm12LUQtUWdWaFNpSzRVa1pkMHEyYVhCRzJsRTgzb2ZvNUY?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPNFNaLUMteU5fZzNYZHIwQl9kb2dmQ3pYV3paZXlUcTZuXzF1bV9xa1d0VGJIQmpkeXZJNU9KVkhESHRNVi16TExJWnEySmZjc1B3anZPTWtwMW9LVGRSb090b0VTY0xVZTdmR09jUkxoRGhkTG5sNU0xUENHUi1oSnFES3JOb3FFWUd2bEZOM1VxelJJN1ZfQ2VTaThFRnpTclVyaGU1Zk4wSFNuUEhiUU8xNnBWclczUEt0RkNKb0xVVjlHRE5WbVhvbUVqdmU2S3RFczVXTjlBWm12LUQtUWdWaFNpSzRVa1pkMHEyYVhCRzJsRTgzb2ZvNUY?oc=5",
           "sourceType": "world-politics",
           "title": "US officials visit Palestinian Christian town after settler attacks on foreign diplomats - The Times of India",
           "summary": "US officials visit Palestinian Christian town after settler attacks on foreign diplomats The Times of India",
@@ -1108,8 +1402,8 @@
         },
         {
           "id": "c720ab2e0d33",
-          "sourceLabel": "Google News — CNN Politics",
-          "sourceName": "Google News — CNN Politics",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQa1NDR01YZm95TF9nSGhfZFdidlRLWDFfNkpVOTd0Ymg3V19laGlfQjUzTVhoWG85NlB3R0ZLN04yWGt3cHB2REszc0R1U3BCVTMzTUxIdnU1c3VTbFFNbm1qTWI1ZFloT0dSaS1JLWtJQnJOUkl5WHR3LXRxeWZpTndR?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQa1NDR01YZm95TF9nSGhfZFdidlRLWDFfNkpVOTd0Ymg3V19laGlfQjUzTVhoWG85NlB3R0ZLN04yWGt3cHB2REszc0R1U3BCVTMzTUxIdnU1c3VTbFFNbm1qTWI1ZFloT0dSaS1JLWtJQnJOUkl5WHR3LXRxeWZpTndR?oc=5",
           "sourceType": "us-politics",
           "title": "Ukraine defies Trump and launches one of its biggest drone attacks on Russia this year - CNN",
           "summary": "Ukraine defies Trump and launches one of its biggest drone attacks on Russia this year CNN",
@@ -3020,134 +3314,6 @@
           "sourceLabel": "The White House (.gov)",
           "sourceType": "fallback-news",
           "fallbackFor": "X @WhiteHouse",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "f8db5dc9b7e6f7e1",
-      "title": "NASA Science, Cargo Launch on 35th SpaceX Resupply Mission to Station - NASA (.gov)",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Tue, 13 Oct 2026 11:16:44 GMT",
-      "lastSeen": "Tue, 13 Oct 2026 11:16:44 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMipgFBVV95cUxPdHA4eHRNQW1GZmZSN2sxdU9LM0xJS2NuSWNIazhPQWpGOVRydE9kenBybkVjaThPZHQyV2lPb19iMXQtZUlBWE5yQTUzWUMxTy1uQUN4TFYtNFAzcUxZOXRFUWpLQWRUSXN6ZjFwMFZUaXJwajFtN3JDR19TSVZWTFZjT21rLXRiYjdacl9LTXYtdUE5Z1RHbTEyODdNR0lzaThkWnVB?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "NASA Science, Cargo Launch on 35th SpaceX Resupply Mission to Station - NASA (.gov)",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPdHA4eHRNQW1GZmZSN2sxdU9LM0xJS2NuSWNIazhPQWpGOVRydE9kenBybkVjaThPZHQyV2lPb19iMXQtZUlBWE5yQTUzWUMxTy1uQUN4TFYtNFAzcUxZOXRFUWpLQWRUSXN6ZjFwMFZUaXJwajFtN3JDR19TSVZWTFZjT21rLXRiYjdacl9LTXYtdUE5Z1RHbTEyODdNR0lzaThkWnVB?oc=5",
-          "published_date": "Tue, 13 Oct 2026 11:16:44 GMT",
-          "time": "Tue, 13 Oct 2026 11:16:44 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
-          "summary": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
-          "source": "NASA (.gov)",
-          "sourceLabel": "NASA (.gov)",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NASA",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "8353b62612795232",
-      "title": "Timeline: US strikes on alleged drug boats - ABC News - Breaking News, Latest News and Videos",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Tue, 10 Feb 2026 23:30:21 GMT",
-      "lastSeen": "Tue, 10 Feb 2026 23:30:21 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMijwFBVV95cUxQSDVWTzdUUEU0ZFhUc1N6cHd5QnZEOWpfdi1ObjJVd29EN1YzQXdJZ2dETUVUeUs3TG1SSlpfTXQyY0QzTE56T1hZdGRGVWlIM04yT3JiNkdJZnZpTUlCazRJX2V2S0VWNktZNGtzMVRIem53UUl0NllqbG1qLWxCT2FnekIzRkdKRHJYZFUzd9IBlAFBVV95cUxQQk9NQ2dIZGhTVUdQZjh1MU80dkVsOHlzQ1VOZ3FjRzRINEZnOVY5SjRWQ3Axbk8tWkdGa05oajhGM0FLbEFwaGVYNlBaaFFOZ2xCc1FON0FKcEl0UTJMTjk4UTVwVkxIeFBKT0RId1pIcGVBRUs0OVdxQzVhYjNqUHZieTdDTGJqU1Q1bEs0OV9uSlli?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Timeline: US strikes on alleged drug boats - ABC News - Breaking News, Latest News and Videos",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQSDVWTzdUUEU0ZFhUc1N6cHd5QnZEOWpfdi1ObjJVd29EN1YzQXdJZ2dETUVUeUs3TG1SSlpfTXQyY0QzTE56T1hZdGRGVWlIM04yT3JiNkdJZnZpTUlCazRJX2V2S0VWNktZNGtzMVRIem53UUl0NllqbG1qLWxCT2FnekIzRkdKRHJYZFUzd9IBlAFBVV95cUxQQk9NQ2dIZGhTVUdQZjh1MU80dkVsOHlzQ1VOZ3FjRzRINEZnOVY5SjRWQ3Axbk8tWkdGa05oajhGM0FLbEFwaGVYNlBaaFFOZ2xCc1FON0FKcEl0UTJMTjk4UTVwVkxIeFBKT0RId1pIcGVBRUs0OVdxQzVhYjNqUHZieTdDTGJqU1Q1bEs0OV9uSlli?oc=5",
-          "published_date": "Tue, 10 Feb 2026 23:30:21 GMT",
-          "time": "Tue, 10 Feb 2026 23:30:21 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: ABC News - Breaking News, Latest News and Videos",
-          "summary": "Fallback discovery via Google News RSS; publisher: ABC News - Breaking News, Latest News and Videos",
-          "source": "ABC News - Breaking News, Latest News and Videos",
-          "sourceLabel": "ABC News - Breaking News, Latest News and Videos",
-          "sourceType": "fallback-news",
-          "fallbackFor": "GDELT — Western Hemisphere Counter-Cartel",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "8c11e607a88398bf",
-      "title": "Artemis III Crew Announced - NASA (.gov)",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Tue, 09 Jun 2026 07:00:00 GMT",
-      "lastSeen": "Tue, 09 Jun 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMib0FVX3lxTE05clE0VDlXM1Y5UWtvMEx3OEZnWjhHZnowT0dRUl9Hd3NzNjdUT1lrRnJya3drOXRzakNwdVhKaXo2dkJTcXRIc19CTHR0eVBTQjBQWVFuWnBvbXZBTExuNmkxaHNyWWN1OTZOR2Z5TQ?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Artemis III Crew Announced - NASA (.gov)",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE05clE0VDlXM1Y5UWtvMEx3OEZnWjhHZnowT0dRUl9Hd3NzNjdUT1lrRnJya3drOXRzakNwdVhKaXo2dkJTcXRIc19CTHR0eVBTQjBQWVFuWnBvbXZBTExuNmkxaHNyWWN1OTZOR2Z5TQ?oc=5",
-          "published_date": "Tue, 09 Jun 2026 07:00:00 GMT",
-          "time": "Tue, 09 Jun 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
-          "summary": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
-          "source": "NASA (.gov)",
-          "sourceLabel": "NASA (.gov)",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NASA",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "0c1102e15b92ae3e",
-      "title": "Priorities - Welcome to the United Nations",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Tue, 08 Sep 2026 07:00:00 GMT",
-      "lastSeen": "Tue, 08 Sep 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9DdmZUOG9xLWQySkUyMkpzcHdBWUNNbG5ORnFvVXNYcUpERkt1M2lkMm1aeGFNang4b0M5QnZCYjFLMDlKMWloS2ltMGR2UQ?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Priorities - Welcome to the United Nations",
-          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9DdmZUOG9xLWQySkUyMkpzcHdBWUNNbG5ORnFvVXNYcUpERkt1M2lkMm1aeGFNang4b0M5QnZCYjFLMDlKMWloS2ltMGR2UQ?oc=5",
-          "published_date": "Tue, 08 Sep 2026 07:00:00 GMT",
-          "time": "Tue, 08 Sep 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Welcome to the United Nations",
-          "summary": "Fallback discovery via Google News RSS; publisher: Welcome to the United Nations",
-          "source": "Welcome to the United Nations",
-          "sourceLabel": "Welcome to the United Nations",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @UN",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
