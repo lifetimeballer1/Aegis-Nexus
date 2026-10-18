@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-18T18:06:19.015135Z",
+  "updatedAt": "2026-10-18T20:44:16.890577Z",
   "method": "Deterministic prioritization of existing public Global Pulse artifacts; not a forecast or causal model.",
   "freshness": {
-    "snapshotUpdatedAt": "2026-10-18T16:37:46.618162+00:00",
-    "eventsUpdatedAt": "2026-10-18T16:37:51.266921Z",
+    "snapshotUpdatedAt": "2026-10-18T18:54:20.520106+00:00",
+    "eventsUpdatedAt": "2026-10-18T18:54:24.276927Z",
     "assessmentsUpdatedAt": "2026-09-10T03:03:12.655499Z"
   },
   "headline": {
@@ -12,6 +12,21 @@
     "description": "Highest-priority developments and attention indicators from the latest generated intelligence artifacts."
   },
   "topDevelopments": [
+    {
+      "id": "72ad3699022381b7",
+      "title": "US officials visit Palestinian village after settler attacks on diplomats",
+      "category": "general",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "independentSourceCount": 2,
+      "sources": [
+        "cna_world",
+        "google_news_world_politics"
+      ],
+      "breaking": true,
+      "firstSeen": "2026-10-18T17:14:53Z",
+      "lastSeen": "2026-10-18T18:43:47Z"
+    },
     {
       "id": "c8a38d4e2d555026",
       "title": "Fighting intensifies across Yemen as humanitarian crisis deepens - Al Jazeera",
@@ -28,6 +43,36 @@
       "lastSeen": "2026-10-18T09:29:23Z"
     },
     {
+      "id": "5201cd9f02ece500",
+      "title": "Trump endorses Netanyahu in Israeli election",
+      "category": "political",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "independentSourceCount": 2,
+      "sources": [
+        "cna_world",
+        "al_jazeera"
+      ],
+      "breaking": false,
+      "firstSeen": "2026-10-18T16:36:26Z",
+      "lastSeen": "2026-10-18T16:59:22Z"
+    },
+    {
+      "id": "6fbe5f43090ee715",
+      "title": "What help can Egypt offer Saudi Arabia in the war against the Houthis? - Al Jazeera",
+      "category": "general",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "independentSourceCount": 2,
+      "sources": [
+        "google_news_yemen_red_sea",
+        "al_jazeera"
+      ],
+      "breaking": false,
+      "firstSeen": "2026-10-18T11:11:26Z",
+      "lastSeen": "2026-10-18T11:13:21Z"
+    },
+    {
       "id": "fead6914356b103c",
       "title": "US Officials Visit Palestinian Village After Settler Attacks on Diplomats - شبكة تواصل الإخبارية",
       "category": "general",
@@ -40,6 +85,20 @@
       "breaking": true,
       "firstSeen": "2026-10-18T16:00:23Z",
       "lastSeen": "2026-10-18T16:26:37Z"
+    },
+    {
+      "id": "89278d21f8e8e82a",
+      "title": "US officials visit Palestinian Christian town after settler attacks on foreign diplomats - The Times of India",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 2,
+      "independentSourceCount": 1,
+      "sources": [
+        "google_news_world_politics"
+      ],
+      "breaking": true,
+      "firstSeen": "2026-10-18T16:06:00Z",
+      "lastSeen": "2026-10-18T16:06:00Z"
     },
     {
       "id": "6ac5137291e7e84e",
@@ -56,18 +115,18 @@
       "lastSeen": "2026-10-18T11:21:17Z"
     },
     {
-      "id": "1cf0e269e2e0e187",
-      "title": "Saudi Arabia ntercepts Houthi drones as Egypt offers defensive support - Newswav",
+      "id": "36ef6c7bf163d2cb",
+      "title": "Ukraine defies Trump and launches one of its biggest drone attacks on Russia this year - CNN",
       "category": "general",
       "confidence": "low",
       "reportCount": 2,
       "independentSourceCount": 1,
       "sources": [
-        "google_news_yemen_red_sea"
+        "google_news_cnn_politics"
       ],
       "breaking": true,
-      "firstSeen": "2026-10-18T02:03:00Z",
-      "lastSeen": "2026-10-18T02:03:00Z"
+      "firstSeen": "2026-10-18T10:49:15Z",
+      "lastSeen": "2026-10-18T10:49:15Z"
     },
     {
       "id": "d4032f4cad0427a7",
@@ -96,63 +155,6 @@
       "breaking": false,
       "firstSeen": "Fri, 18 Jul 2025 07:00:00 GMT",
       "lastSeen": "Thu, 02 May 2024 07:00:00 GMT"
-    },
-    {
-      "id": "f4bef1a266999855",
-      "title": "Green forest fire notification in Australia",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 3,
-      "independentSourceCount": 1,
-      "sources": [
-        "gdacs_global_disaster_alerts"
-      ],
-      "breaking": false,
-      "firstSeen": "2026-10-18T11:00:36Z",
-      "lastSeen": "2026-10-18T15:01:14Z"
-    },
-    {
-      "id": "86c42fb71622748e",
-      "title": "Egypt ready to defend Saudi Arabia against Houthis: Sisi - Banglanews24",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 3,
-      "independentSourceCount": 1,
-      "sources": [
-        "google_news_yemen_red_sea"
-      ],
-      "breaking": false,
-      "firstSeen": "2026-10-18T01:38:47Z",
-      "lastSeen": "2026-10-18T05:55:34Z"
-    },
-    {
-      "id": "7e25ab364b4dcc3b",
-      "title": "Explanation of Vote Before the Vote for UNGA 80 Adoption on the Resolution to “Correct the Map” - United States Mission to the United Nations (.gov)",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "independentSourceCount": 1,
-      "sources": [
-        "United States Mission to the United Nations (.gov)"
-      ],
-      "breaking": false,
-      "firstSeen": "Fri, 04 Sep 2026 07:00:00 GMT",
-      "lastSeen": "Wed, 25 Mar 2026 07:00:00 GMT"
-    },
-    {
-      "id": "2ea922f9bf256dfb",
-      "title": "NATO prepared to defend allies from any Iranian threat, official says - Washington Times",
-      "category": "diplomatic",
-      "confidence": "low",
-      "reportCount": 2,
-      "independentSourceCount": 2,
-      "sources": [
-        "Washington Times",
-        "The New Region"
-      ],
-      "breaking": false,
-      "firstSeen": "Wed, 19 Aug 2026 07:00:00 GMT",
-      "lastSeen": "Wed, 19 Aug 2026 07:00:00 GMT"
     }
   ],
   "watchlist": [
