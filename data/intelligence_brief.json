@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-19T01:20:27.046900Z",
+  "updatedAt": "2026-10-19T07:47:20.221710Z",
   "method": "Deterministic prioritization of existing public Global Pulse artifacts; not a forecast or causal model.",
   "freshness": {
-    "snapshotUpdatedAt": "2026-10-19T01:19:32.963774+00:00",
-    "eventsUpdatedAt": "2026-10-19T01:19:37.493945Z",
+    "snapshotUpdatedAt": "2026-10-19T06:19:04.279123+00:00",
+    "eventsUpdatedAt": "2026-10-19T06:19:08.838399Z",
     "assessmentsUpdatedAt": "2026-09-10T03:03:12.655499Z"
   },
   "headline": {
@@ -12,6 +12,21 @@
     "description": "Highest-priority developments and attention indicators from the latest generated intelligence artifacts."
   },
   "topDevelopments": [
+    {
+      "id": "54871df4c349fffd",
+      "title": "Bomb threat forces Israel to Austria flight into emergency landing",
+      "category": "conflict",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "independentSourceCount": 2,
+      "sources": [
+        "bbc_world",
+        "al_jazeera"
+      ],
+      "breaking": true,
+      "firstSeen": "2026-10-18T23:58:05Z",
+      "lastSeen": "2026-10-19T02:41:50Z"
+    },
     {
       "id": "72ad3699022381b7",
       "title": "US officials visit Palestinian village after settler attacks on diplomats",
@@ -26,6 +41,36 @@
       "breaking": true,
       "firstSeen": "2026-10-18T17:14:53Z",
       "lastSeen": "2026-10-18T18:43:47Z"
+    },
+    {
+      "id": "4a3f7eac7000e1b1",
+      "title": "What Earth's sixth mass extinction event means for humans - DW.com",
+      "category": "general",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "independentSourceCount": 2,
+      "sources": [
+        "google_news_climate_security",
+        "dw_world"
+      ],
+      "breaking": false,
+      "firstSeen": "2026-10-19T05:48:00Z",
+      "lastSeen": "2026-10-19T05:49:16Z"
+    },
+    {
+      "id": "446fbb1e260beefa",
+      "title": "Tap water no longer drinkable in Norwegian town as climate-related thawing releases heavy metals",
+      "category": "general",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "independentSourceCount": 2,
+      "sources": [
+        "guardian_world",
+        "google_news_climate_security"
+      ],
+      "breaking": false,
+      "firstSeen": "2026-10-19T05:00:00Z",
+      "lastSeen": "2026-10-19T05:00:20Z"
     },
     {
       "id": "1f82cdee7fb1d4cf",
@@ -43,19 +88,32 @@
       "lastSeen": "2026-10-18T17:30:28Z"
     },
     {
-      "id": "f0aa50bb0af05197",
-      "title": "The nine key races that will decide who controls the Senate, and where they stand",
+      "id": "17ea04d531ec9a2c",
+      "title": "US-Israel-Iran Latest News: US Embassies in Middle East Issue Security Alert for Americans, Citing Threats from Iran or Iran-Backed Houthis in Yemen - The Sunday Guardian",
       "category": "general",
-      "confidence": "moderate",
+      "confidence": "low",
       "reportCount": 2,
-      "independentSourceCount": 2,
+      "independentSourceCount": 1,
       "sources": [
-        "fox_news_politics",
-        "google_news_u_s_politics"
+        "google_news_iran_israel"
       ],
-      "breaking": false,
-      "firstSeen": "2026-10-18T13:00:37Z",
-      "lastSeen": "2026-10-18T13:00:37Z"
+      "breaking": true,
+      "firstSeen": "2026-10-19T04:01:20Z",
+      "lastSeen": "2026-10-19T05:34:48Z"
+    },
+    {
+      "id": "29dbfc45a833bf9d",
+      "title": "Situation Update No. 5: Escalation of hostilities and displacement across Yemen - ReliefWeb",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 2,
+      "independentSourceCount": 1,
+      "sources": [
+        "google_news_humanitarian"
+      ],
+      "breaking": true,
+      "firstSeen": "2026-10-18T20:13:50Z",
+      "lastSeen": "2026-10-18T20:13:50Z"
     },
     {
       "id": "b7537debc9c7ff4d",
@@ -72,59 +130,17 @@
       "lastSeen": "2026-10-18T17:53:50Z"
     },
     {
-      "id": "fead6914356b103c",
-      "title": "US Officials Visit Palestinian Village After Settler Attacks on Diplomats - شبكة تواصل الإخبارية",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "independentSourceCount": 1,
-      "sources": [
-        "google_news_world_politics"
-      ],
-      "breaking": true,
-      "firstSeen": "2026-10-18T16:00:23Z",
-      "lastSeen": "2026-10-18T16:26:37Z"
-    },
-    {
-      "id": "89278d21f8e8e82a",
-      "title": "US officials visit Palestinian Christian town after settler attacks on foreign diplomats - The Times of India",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "independentSourceCount": 1,
-      "sources": [
-        "google_news_world_politics"
-      ],
-      "breaking": true,
-      "firstSeen": "2026-10-18T16:06:00Z",
-      "lastSeen": "2026-10-18T16:06:00Z"
-    },
-    {
-      "id": "a4497343de611100",
-      "title": "Sudanese army airstrikes inflict heavy losses on RSF in Darfur, official says - Saudi Gazette",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "independentSourceCount": 1,
-      "sources": [
-        "google_news_sudan_conflict"
-      ],
-      "breaking": true,
-      "firstSeen": "2026-10-18T12:25:00Z",
-      "lastSeen": "2026-10-18T12:25:00Z"
-    },
-    {
       "id": "f4bef1a266999855",
       "title": "Green forest fire notification in Australia",
       "category": "general",
       "confidence": "low",
-      "reportCount": 5,
+      "reportCount": 4,
       "independentSourceCount": 1,
       "sources": [
         "gdacs_global_disaster_alerts"
       ],
       "breaking": false,
-      "firstSeen": "2026-10-18T15:01:14Z",
+      "firstSeen": "2026-10-18T23:00:35Z",
       "lastSeen": "2026-10-18T23:09:23Z"
     },
     {
@@ -140,20 +156,6 @@
       "breaking": false,
       "firstSeen": "Thu, 08 Oct 2026 07:00:00 GMT",
       "lastSeen": "Tue, 11 Nov 2025 08:00:00 GMT"
-    },
-    {
-      "id": "9dbe1492b2c609c1",
-      "title": "Statement of condemnation by the North Atlantic Council of Russia's malicious cyber activities - North Atlantic Treaty Organization | NATO",
-      "category": "diplomatic",
-      "confidence": "low",
-      "reportCount": 3,
-      "independentSourceCount": 1,
-      "sources": [
-        "North Atlantic Treaty Organization | NATO"
-      ],
-      "breaking": false,
-      "firstSeen": "Fri, 18 Jul 2025 07:00:00 GMT",
-      "lastSeen": "Thu, 02 May 2024 07:00:00 GMT"
     }
   ],
   "watchlist": [
