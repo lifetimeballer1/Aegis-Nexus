@@ -1,210 +1,307 @@
 {
-  "updatedAt": "2026-10-20T12:04:38.323004Z",
+  "updatedAt": "2026-10-20T16:52:43.880159Z",
   "window": "recent public reporting",
   "method": "anchor-aware title clustering with category and publication-time agreement; candidate grouping only, not proof reports describe identical facts",
   "events": [
     {
-      "id": "3cb348336a2ebf40",
-      "title": "M 4.9 - 199 km NW of Port-Olry, Vanuatu",
+      "id": "f4bef1a266999855",
+      "title": "Green forest fire notification in Australia",
       "category": "general",
       "confidence": "low",
-      "reportCount": 4,
+      "reportCount": 11,
       "sourceCount": 1,
       "sources": [
-        "earthquake.usgs.gov"
+        "gdacs.org"
       ],
       "anchors": [],
-      "firstSeen": "2026-10-20T01:10:16.040000Z",
-      "lastSeen": "2026-10-20T09:10:34.040000Z",
+      "firstSeen": "2026-10-20T13:30:49Z",
+      "lastSeen": "2026-10-20T15:02:59Z",
       "urls": [
-        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3l0",
-        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3k5",
-        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3jl",
-        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3j1"
+        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032970",
+        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032968",
+        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032967",
+        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032966",
+        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032965",
+        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032964",
+        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032963",
+        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032962"
       ],
       "reports": [
         {
-          "id": "4230b88083e0",
-          "sourceLabel": "USGS M4.5+ Earthquakes — Past Day",
-          "sourceName": "USGS M4.5+ Earthquakes — Past Day",
+          "id": "46b66d672546",
+          "sourceLabel": "GDACS Global Disaster Alerts",
+          "sourceName": "GDACS Global Disaster Alerts",
           "sourceType": "climate-hazard",
-          "title": "M 4.9 - 199 km NW of Port-Olry, Vanuatu",
-          "summary": "Time 2026-10-20 08:39:56 UTC 2026-10-20 08:39:56 UTC at epicenter Location 13.969°S 165.588°E Depth 10.00 km (6.21 mi)",
-          "summary_snippet": "Time 2026-10-20 08:39:56 UTC 2026-10-20 08:39:56 UTC at epicenter Location 13.969°S 165.588°E Depth 10.00 km (6.21 mi)",
-          "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3l0",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3l0",
-          "time": "2026-10-20T09:10:34.040000Z",
-          "published_date": "2026-10-20T09:10:34.040000Z",
-          "publishedDate": "2026-10-20T09:10:34.040000Z",
+          "title": "Green forest fire notification in Australia",
+          "summary": "On 16/10/2026, a forest fire started in Australia, until 20/10/2026.",
+          "summary_snippet": "On 16/10/2026, a forest fire started in Australia, until 20/10/2026.",
+          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032970",
+          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032970",
+          "time": "2026-10-20T15:02:59Z",
+          "published_date": "2026-10-20T15:02:59Z",
+          "publishedDate": "2026-10-20T15:02:59Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "usgs_m4_5_earthquakes_past_day",
-            "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
-            "feedFormat": "atom"
+            "sourceId": "gdacs_global_disaster_alerts",
+            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "feedFormat": "rss"
           }
         },
         {
-          "id": "00e5abe01501",
-          "sourceLabel": "USGS M4.5+ Earthquakes — Past Day",
-          "sourceName": "USGS M4.5+ Earthquakes — Past Day",
+          "id": "e1e1eaeb1edf",
+          "sourceLabel": "GDACS Global Disaster Alerts",
+          "sourceName": "GDACS Global Disaster Alerts",
           "sourceType": "climate-hazard",
-          "title": "M 5.2 - 206 km NW of Port-Olry, Vanuatu",
-          "summary": "Time 2026-10-20 06:29:22 UTC 2026-10-20 06:29:22 UTC at epicenter Location 13.857°S 165.587°E Depth 10.00 km (6.21 mi)",
-          "summary_snippet": "Time 2026-10-20 06:29:22 UTC 2026-10-20 06:29:22 UTC at epicenter Location 13.857°S 165.587°E Depth 10.00 km (6.21 mi)",
-          "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3k5",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3k5",
-          "time": "2026-10-20T07:11:40.040000Z",
-          "published_date": "2026-10-20T07:11:40.040000Z",
-          "publishedDate": "2026-10-20T07:11:40.040000Z",
+          "title": "Green forest fire notification in Australia",
+          "summary": "On 18/10/2026, a forest fire started in Australia, until 20/10/2026.",
+          "summary_snippet": "On 18/10/2026, a forest fire started in Australia, until 20/10/2026.",
+          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032968",
+          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032968",
+          "time": "2026-10-20T15:01:23Z",
+          "published_date": "2026-10-20T15:01:23Z",
+          "publishedDate": "2026-10-20T15:01:23Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "usgs_m4_5_earthquakes_past_day",
-            "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
-            "feedFormat": "atom"
+            "sourceId": "gdacs_global_disaster_alerts",
+            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "feedFormat": "rss"
           }
         },
         {
-          "id": "0bdb44aca826",
-          "sourceLabel": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3jl",
-          "sourceName": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3jl",
+          "id": "0d4407cae3c1",
+          "sourceLabel": "GDACS Global Disaster Alerts",
+          "sourceName": "GDACS Global Disaster Alerts",
           "sourceType": "climate-hazard",
-          "title": "M 6.3 - 197 km NW of Port-Olry, Vanuatu",
-          "summary": "PAGER - GREEN ShakeMap - IV DYFI? - III Time 2026-10-20 04:20:38 UTC 2026-10-20 04:20:38 UTC at epicenter Location 13.991°S 165.589°E Depth 16.00 km (9.94 mi)",
-          "summary_snippet": "PAGER - GREEN ShakeMap - IV DYFI? - III Time 2026-10-20 04:20:38 UTC 2026-10-20 04:20:38 UTC at epicenter Location 13.991°S 165.589°E Depth 16.00 km (9.94 mi)",
-          "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3jl",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3jl",
-          "time": "2026-10-20T06:28:59.943000Z",
-          "published_date": "2026-10-20T06:28:59.943000Z",
-          "publishedDate": "2026-10-20T06:28:59.943000Z",
+          "title": "Green forest fire notification in Australia",
+          "summary": "On 14/10/2026, a forest fire started in Australia, until 20/10/2026.",
+          "summary_snippet": "On 14/10/2026, a forest fire started in Australia, until 20/10/2026.",
+          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032967",
+          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032967",
+          "time": "2026-10-20T13:35:37Z",
+          "published_date": "2026-10-20T13:35:37Z",
+          "publishedDate": "2026-10-20T13:35:37Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "usgs_m4_5_earthquakes_past_day",
-            "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
-            "feedFormat": "atom"
+            "sourceId": "gdacs_global_disaster_alerts",
+            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "feedFormat": "rss"
           }
         },
         {
-          "id": "c9eade2bfa0f",
-          "sourceLabel": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3j1",
-          "sourceName": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3j1",
+          "id": "74cd01721d83",
+          "sourceLabel": "GDACS Global Disaster Alerts",
+          "sourceName": "GDACS Global Disaster Alerts",
           "sourceType": "climate-hazard",
-          "title": "M 5.0 - 205 km NW of Port-Olry, Vanuatu",
-          "summary": "Time 2026-10-20 00:38:28 UTC 2026-10-20 00:38:28 UTC at epicenter Location 13.948°S 165.529°E Depth 10.00 km (6.21 mi)",
-          "summary_snippet": "Time 2026-10-20 00:38:28 UTC 2026-10-20 00:38:28 UTC at epicenter Location 13.948°S 165.529°E Depth 10.00 km (6.21 mi)",
-          "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3j1",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3j1",
-          "time": "2026-10-20T01:10:16.040000Z",
-          "published_date": "2026-10-20T01:10:16.040000Z",
-          "publishedDate": "2026-10-20T01:10:16.040000Z",
+          "title": "Green forest fire notification in Australia",
+          "summary": "On 15/10/2026, a forest fire started in Australia, until 20/10/2026.",
+          "summary_snippet": "On 15/10/2026, a forest fire started in Australia, until 20/10/2026.",
+          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032966",
+          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032966",
+          "time": "2026-10-20T13:33:57Z",
+          "published_date": "2026-10-20T13:33:57Z",
+          "publishedDate": "2026-10-20T13:33:57Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "usgs_m4_5_earthquakes_past_day",
-            "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
-            "feedFormat": "atom"
+            "sourceId": "gdacs_global_disaster_alerts",
+            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "7c2f39cdff14",
+          "sourceLabel": "GDACS Global Disaster Alerts",
+          "sourceName": "GDACS Global Disaster Alerts",
+          "sourceType": "climate-hazard",
+          "title": "Green forest fire notification in Australia",
+          "summary": "On 16/10/2026, a forest fire started in Australia, until 20/10/2026.",
+          "summary_snippet": "On 16/10/2026, a forest fire started in Australia, until 20/10/2026.",
+          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032965",
+          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032965",
+          "time": "2026-10-20T13:33:27Z",
+          "published_date": "2026-10-20T13:33:27Z",
+          "publishedDate": "2026-10-20T13:33:27Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "gdacs_global_disaster_alerts",
+            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "7ca23496b161",
+          "sourceLabel": "GDACS Global Disaster Alerts",
+          "sourceName": "GDACS Global Disaster Alerts",
+          "sourceType": "climate-hazard",
+          "title": "Green forest fire notification in Australia",
+          "summary": "On 17/10/2026, a forest fire started in Australia, until 20/10/2026.",
+          "summary_snippet": "On 17/10/2026, a forest fire started in Australia, until 20/10/2026.",
+          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032964",
+          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032964",
+          "time": "2026-10-20T13:32:26Z",
+          "published_date": "2026-10-20T13:32:26Z",
+          "publishedDate": "2026-10-20T13:32:26Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "gdacs_global_disaster_alerts",
+            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "ae2f103099e3",
+          "sourceLabel": "GDACS Global Disaster Alerts",
+          "sourceName": "GDACS Global Disaster Alerts",
+          "sourceType": "climate-hazard",
+          "title": "Green forest fire notification in Australia",
+          "summary": "On 17/10/2026, a forest fire started in Australia, until 20/10/2026.",
+          "summary_snippet": "On 17/10/2026, a forest fire started in Australia, until 20/10/2026.",
+          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032963",
+          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032963",
+          "time": "2026-10-20T13:32:13Z",
+          "published_date": "2026-10-20T13:32:13Z",
+          "publishedDate": "2026-10-20T13:32:13Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "gdacs_global_disaster_alerts",
+            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "0a6e7ae1a8ed",
+          "sourceLabel": "GDACS Global Disaster Alerts",
+          "sourceName": "GDACS Global Disaster Alerts",
+          "sourceType": "climate-hazard",
+          "title": "Green forest fire notification in Australia",
+          "summary": "On 17/10/2026, a forest fire started in Australia, until 20/10/2026.",
+          "summary_snippet": "On 17/10/2026, a forest fire started in Australia, until 20/10/2026.",
+          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032962",
+          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032962",
+          "time": "2026-10-20T13:32:07Z",
+          "published_date": "2026-10-20T13:32:07Z",
+          "publishedDate": "2026-10-20T13:32:07Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "gdacs_global_disaster_alerts",
+            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "feedFormat": "rss"
           }
         }
       ]
     },
     {
-      "id": "7b8e5528275b9c85",
-      "title": "Hegseth meets Netanyahu during unannounced visit to Israel - Aaj English TV",
+      "id": "e3cdd79763c7b64e",
+      "title": "UK to deploy fighter jets to help protect Saudi from Houthi attacks",
       "category": "general",
-      "confidence": "moderate",
+      "confidence": "high",
       "reportCount": 3,
-      "sourceCount": 2,
+      "sourceCount": 3,
       "sources": [
-        "news.google.com",
-        "aljazeera.com"
+        "channelnewsasia.com",
+        "theguardian.com",
+        "news.google.com"
       ],
       "anchors": [
-        "israel"
+        "uk"
       ],
-      "firstSeen": "2026-10-20T00:08:01Z",
-      "lastSeen": "2026-10-20T03:52:39Z",
+      "firstSeen": "2026-10-20T11:08:00Z",
+      "lastSeen": "2026-10-20T11:25:00Z",
       "urls": [
-        "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5jMzYtRERnQmczRnJSTlgwT0ZVYnhOTzRTMjFUbHBUdmZHemY3OV92LWtxVVhvUW50TGlWZnBRSFVIY2V3clc0UXplbTlJQQ?oc=5",
-        "https://news.google.com/rss/articles/CBMipgFBVV95cUxOOE1INUtKd0RYT1p4d1dzRUxTOTE2YkZBYW5NWHVkUDNfMEQ2RGVpdk5IZi0xUXVJLVhiNmhpeXBQaERuUFpCZzdrWnVTbTBPYzI2TW9ubU14Q0FVMTFwcFozN3Q3bDAxODl0MWxobzlYc1FyRUhJQXBxUFZrQnRSakQ0SjhCX3N6ZXVYcjl5TWtDQXRHY3hJZjJfMkZlWEIzOWxheEZ30gGrAUFVX3lxTE13SDB4dTcxZXQ5TWM1NEdNeVJwblUxVGpPbDFaQlpIeGx4eFBlT3hObkNOSTlIMW05Wlk2bjRYSkk2TkhoekpReE5FOGhsaTBVcE1xa0I0SVRHZUZ6emhpSGlOVXpTVmM4SGN1Sll2R3BZdmVrNFFIbFE2S1RYWk5ZTnFqNFFPWHZCUGpsd05Zci1KUmx5QzlvUzYtWS1oWWNoRDJlMW12MDMtSQ?oc=5",
-        "https://www.aljazeera.com/news/2026/10/20/hegseth-meets-netanyahu-in-unannounced-israel-visit?traffic_source=rss"
+        "https://www.channelnewsasia.com/world/uk-deploy-fighter-jets-protect-saudi-houthi-attacks-6475431",
+        "https://www.theguardian.com/uk-news/2026/oct/20/uk-raf-typhoon-fighters-saudi-arabia-houthi-attacks",
+        "https://news.google.com/rss/articles/CBMioAFBVV95cUxNTHA3OEE4OVdhelZFWmQ5SWxwX1ZHZmlZZEsxU1NtQW5XMnNjd0NlemtLcmxPZnhTc3FtajRSeVFLS3REQ25aYjdQVEZyRF9ETFhlYkluc0xMYnloOHdqMzRlT0p0NWZrVXJHUl9xbGFRSVpVdHBuamdJOHNYWDNGenRXa1BLS1NoMTZSRUsyYWh0elJVUkN1MnJiT2p6UWkx?oc=5"
       ],
       "reports": [
         {
-          "id": "ec62c12b30d9",
+          "id": "7abcba81b7ec",
+          "sourceLabel": "https://www.channelnewsasia.com/world/uk-deploy-fighter-jets-protect-saudi-houthi-attacks-6475431",
+          "sourceName": "https://www.channelnewsasia.com/world/uk-deploy-fighter-jets-protect-saudi-houthi-attacks-6475431",
+          "sourceType": "news",
+          "title": "UK to deploy fighter jets to help protect Saudi from Houthi attacks",
+          "summary": "The UK will also send military advisers to support Saudi staff officers.",
+          "summary_snippet": "The UK will also send military advisers to support Saudi staff officers.",
+          "source": "https://www.channelnewsasia.com/world/uk-deploy-fighter-jets-protect-saudi-houthi-attacks-6475431",
+          "url": "https://www.channelnewsasia.com/world/uk-deploy-fighter-jets-protect-saudi-houthi-attacks-6475431",
+          "time": "2026-10-20T11:25:00Z",
+          "published_date": "2026-10-20T11:25:00Z",
+          "publishedDate": "2026-10-20T11:25:00Z",
+          "tag": "Breaking",
+          "confidence": "DEVELOPING",
+          "breaking": true,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "cna_world",
+            "sourceUrl": "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml&category=6311",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "20b965f0a69e",
+          "sourceLabel": "https://www.theguardian.com/uk-news/2026/oct/20/uk-raf-typhoon-fighters-saudi-arabia-houthi-attacks",
+          "sourceName": "https://www.theguardian.com/uk-news/2026/oct/20/uk-raf-typhoon-fighters-saudi-arabia-houthi-attacks",
+          "sourceType": "international",
+          "title": "UK to deploy fighter jets to protect Saudi Arabia from Houthi attacks",
+          "summary": "RAF Typhoon fighters will fly defensive missions over cities and infrastructure, in extension of UK support for Riyadh RAF Typhoon fighters are to protect Saudi Arabia from attack by Yemen’s Houthis, flying defensive missions over the country’s cities and critical infrastructure, as western allies step up their intervention in the escalating conflict. The operation – the most significant military mission signed off b",
+          "summary_snippet": "RAF Typhoon fighters will fly defensive missions over cities and infrastructure, in extension of UK support for Riyadh RAF Typhoon fighters are to protect Saudi Arabia from attack by Yemen’s Houthis, flying defensive missions over the country’s cities and critical infrastructure, as western allies step up their intervention in the escalating conflict. The operation – the most significant military mission signed off b",
+          "source": "https://www.theguardian.com/uk-news/2026/oct/20/uk-raf-typhoon-fighters-saudi-arabia-houthi-attacks",
+          "url": "https://www.theguardian.com/uk-news/2026/oct/20/uk-raf-typhoon-fighters-saudi-arabia-houthi-attacks",
+          "time": "2026-10-20T11:08:00Z",
+          "published_date": "2026-10-20T11:08:00Z",
+          "publishedDate": "2026-10-20T11:08:00Z",
+          "tag": "Breaking",
+          "confidence": "DEVELOPING",
+          "breaking": true,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "guardian_world",
+            "sourceUrl": "https://www.theguardian.com/world/rss",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "33060e06ffdc",
           "sourceLabel": "Google News — Iran Israel",
           "sourceName": "Google News — Iran Israel",
           "sourceType": "middle-east-conflict",
-          "title": "Hegseth meets Netanyahu during unannounced visit to Israel - Aaj English TV",
-          "summary": "Hegseth meets Netanyahu during unannounced visit to Israel Aaj English TV",
-          "summary_snippet": "Hegseth meets Netanyahu during unannounced visit to Israel Aaj English TV",
-          "source": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5jMzYtRERnQmczRnJSTlgwT0ZVYnhOTzRTMjFUbHBUdmZHemY3OV92LWtxVVhvUW50TGlWZnBRSFVIY2V3clc0UXplbTlJQQ?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5jMzYtRERnQmczRnJSTlgwT0ZVYnhOTzRTMjFUbHBUdmZHemY3OV92LWtxVVhvUW50TGlWZnBRSFVIY2V3clc0UXplbTlJQQ?oc=5",
-          "time": "2026-10-20T03:52:39Z",
-          "published_date": "2026-10-20T03:52:39Z",
-          "publishedDate": "2026-10-20T03:52:39Z",
-          "tag": "World",
+          "title": "UK to deploy fighter jets to protect Saudi Arabia from Houthi attacks - The Guardian",
+          "summary": "UK to deploy fighter jets to protect Saudi Arabia from Houthi attacks The Guardian",
+          "summary_snippet": "UK to deploy fighter jets to protect Saudi Arabia from Houthi attacks The Guardian",
+          "source": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNTHA3OEE4OVdhelZFWmQ5SWxwX1ZHZmlZZEsxU1NtQW5XMnNjd0NlemtLcmxPZnhTc3FtajRSeVFLS3REQ25aYjdQVEZyRF9ETFhlYkluc0xMYnloOHdqMzRlT0p0NWZrVXJHUl9xbGFRSVpVdHBuamdJOHNYWDNGenRXa1BLS1NoMTZSRUsyYWh0elJVUkN1MnJiT2p6UWkx?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNTHA3OEE4OVdhelZFWmQ5SWxwX1ZHZmlZZEsxU1NtQW5XMnNjd0NlemtLcmxPZnhTc3FtajRSeVFLS3REQ25aYjdQVEZyRF9ETFhlYkluc0xMYnloOHdqMzRlT0p0NWZrVXJHUl9xbGFRSVpVdHBuamdJOHNYWDNGenRXa1BLS1NoMTZSRUsyYWh0elJVUkN1MnJiT2p6UWkx?oc=5",
+          "time": "2026-10-20T11:08:00Z",
+          "published_date": "2026-10-20T11:08:00Z",
+          "publishedDate": "2026-10-20T11:08:00Z",
+          "tag": "Breaking",
           "confidence": "DEVELOPING",
-          "breaking": false,
+          "breaking": true,
           "liveDatabase": true,
           "credit": {
             "sourceId": "google_news_iran_israel",
             "sourceUrl": "https://news.google.com/rss/search?q=Iran+Israel+conflict+missile+drone+strike+escalation+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "34b79473b3a2",
-          "sourceLabel": "Google News — World Politics",
-          "sourceName": "Google News — World Politics",
-          "sourceType": "world-politics",
-          "title": "Hegseth meets Netanyahu in unannounced visit to Israel, Axios reports - ThePrint",
-          "summary": "Hegseth meets Netanyahu in unannounced visit to Israel, Axios reports ThePrint",
-          "summary_snippet": "Hegseth meets Netanyahu in unannounced visit to Israel, Axios reports ThePrint",
-          "source": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOOE1INUtKd0RYT1p4d1dzRUxTOTE2YkZBYW5NWHVkUDNfMEQ2RGVpdk5IZi0xUXVJLVhiNmhpeXBQaERuUFpCZzdrWnVTbTBPYzI2TW9ubU14Q0FVMTFwcFozN3Q3bDAxODl0MWxobzlYc1FyRUhJQXBxUFZrQnRSakQ0SjhCX3N6ZXVYcjl5TWtDQXRHY3hJZjJfMkZlWEIzOWxheEZ30gGrAUFVX3lxTE13SDB4dTcxZXQ5TWM1NEdNeVJwblUxVGpPbDFaQlpIeGx4eFBlT3hObkNOSTlIMW05Wlk2bjRYSkk2TkhoekpReE5FOGhsaTBVcE1xa0I0SVRHZUZ6emhpSGlOVXpTVmM4SGN1Sll2R3BZdmVrNFFIbFE2S1RYWk5ZTnFqNFFPWHZCUGpsd05Zci1KUmx5QzlvUzYtWS1oWWNoRDJlMW12MDMtSQ?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOOE1INUtKd0RYT1p4d1dzRUxTOTE2YkZBYW5NWHVkUDNfMEQ2RGVpdk5IZi0xUXVJLVhiNmhpeXBQaERuUFpCZzdrWnVTbTBPYzI2TW9ubU14Q0FVMTFwcFozN3Q3bDAxODl0MWxobzlYc1FyRUhJQXBxUFZrQnRSakQ0SjhCX3N6ZXVYcjl5TWtDQXRHY3hJZjJfMkZlWEIzOWxheEZ30gGrAUFVX3lxTE13SDB4dTcxZXQ5TWM1NEdNeVJwblUxVGpPbDFaQlpIeGx4eFBlT3hObkNOSTlIMW05Wlk2bjRYSkk2TkhoekpReE5FOGhsaTBVcE1xa0I0SVRHZUZ6emhpSGlOVXpTVmM4SGN1Sll2R3BZdmVrNFFIbFE2S1RYWk5ZTnFqNFFPWHZCUGpsd05Zci1KUmx5QzlvUzYtWS1oWWNoRDJlMW12MDMtSQ?oc=5",
-          "time": "2026-10-20T02:00:02Z",
-          "published_date": "2026-10-20T02:00:02Z",
-          "publishedDate": "2026-10-20T02:00:02Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_world_politics",
-            "sourceUrl": "https://news.google.com/rss/search?q=election+parliament+diplomacy+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "73af71d835c7",
-          "sourceLabel": "https://www.aljazeera.com/news/2026/10/20/hegseth-meets-netanyahu-in-unannounced-israel-visit?traffic_source=rss",
-          "sourceName": "https://www.aljazeera.com/news/2026/10/20/hegseth-meets-netanyahu-in-unannounced-israel-visit?traffic_source=rss",
-          "sourceType": "international",
-          "title": "Hegseth meets Netanyahu in unannounced Israel visit",
-          "summary": "Hegseth has travelled to Israel to meet Netanyahu ahead of a closely contested election, Axios reported, citing sources.",
-          "summary_snippet": "Hegseth has travelled to Israel to meet Netanyahu ahead of a closely contested election, Axios reported, citing sources.",
-          "source": "https://www.aljazeera.com/news/2026/10/20/hegseth-meets-netanyahu-in-unannounced-israel-visit?traffic_source=rss",
-          "url": "https://www.aljazeera.com/news/2026/10/20/hegseth-meets-netanyahu-in-unannounced-israel-visit?traffic_source=rss",
-          "time": "2026-10-20T00:08:01Z",
-          "published_date": "2026-10-20T00:08:01Z",
-          "publishedDate": "2026-10-20T00:08:01Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "al_jazeera",
-            "sourceUrl": "https://www.aljazeera.com/xml/rss/all.xml",
             "feedFormat": "rss"
           }
         }
@@ -339,8 +436,8 @@
       ]
     },
     {
-      "id": "28aa680f579fc675",
-      "title": "A Russian missile and drone blitz kills 7 in Ukraine as Zelenskyy seeks help in Norway - Springfield News-Sun",
+      "id": "14762d9414832ae9",
+      "title": "UK Deploys Typhoon Fighter Jets to Protect Saudi Arabia From Houthi Missile and Drone Attacks - www.nationpathindia.com",
       "category": "conflict",
       "confidence": "low",
       "reportCount": 3,
@@ -349,114 +446,204 @@
         "news.google.com"
       ],
       "anchors": [
-        "russia",
-        "uk",
-        "ukraine"
+        "uk"
       ],
-      "firstSeen": "2026-10-20T09:01:36Z",
-      "lastSeen": "2026-10-20T10:13:51Z",
+      "firstSeen": "2026-10-20T12:06:05Z",
+      "lastSeen": "2026-10-20T14:41:32Z",
       "urls": [
-        "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNRVdCQzYwNkdBTGdlMlhhRmVXX0FtaXgwUERIMmVyby04RllydElDS1AwLUwza0x0MXRfY192NEk0STBwSU4tN0FrNVB5OUdTWE5ZNGJ1ZFJsckVxSktGRW10THFUODJ6Tll2SmkwWnJnMC1OeEVld0lHQVZ1RzMxSWZ5SWlHYzMwTkZjTXpaUkJpbjRKLUtJT2RlTVhvNVNrX2poR1lQcnk2NUs5Ym5oOGVyVEQ1cXdibnhXWjhIdHBYZ2FDcmNfbl9sdVlxelpYSnZ6R09yV2JMR0lCSGJNYW9Ua0FlTkpVLWJUWjlnM1o1bHpzcDluWFFVRTN6THZKY1V2UnNPNXg?oc=5",
-        "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPbFZiRzVGQl9wUDJnVl9oZ1Z3TzdxV0NxU3NIUHBmQ1NvLWU5OGFjTlotMUdYZ2lVS2pNUy1YMGYwMXNoVy1nVGRmVHBTU0RQZ3poV1BVVmxxeXNZRjFFdXVHazJLLVVkSlpoLTRnaG8yWFpXWUZwMDR2QTloV1l1ZXpmZVRGeVNSRTJkcFRQYmdCeDgzRGRyMGFLVURzYXFIYS1BQUZfUnZ4T3BjOTNKQ3pnQWZPRmdTcEZOVmpwN2pTSGVfVE5vOEExcXp6ZWhMZ2NEMldWbDVXRXEwcTFTOHlMem9WeHNUb2JCdEo4dko2QQ?oc=5",
-        "https://news.google.com/rss/articles/CBMigwJBVV95cUxQNDhhUDhRYm5ualFnejhrRVl4dE9lSkpXTzJsRktNZURvQkFsZmI3Sjd6UnA4akkwd2FMQ0Z4ZWdudjVFVWZ5YjQ5OVl3bGgwNldKOGNXMDdDTi1aMTNTQ09CTkhyajQ1Q0hFUm9OU0pTaVg4ZmItSGk1OGpfenV4by1sdGhKb0N1X0tmb3NfczNiVUhJT0xlM3RXY204Z2twdGNHb1BMYnJueVpGRWRuRHJTMy0xQ2xjV3dNOGNHODJKWmwwRXkwYWhvR2pPYUg5OFZ5b1VScFFfSFlPRDlEQm1kVFMxR284VGdCVWxrZ1ZrVE9oLXoyYXp5N1pZcVBJc3Rz?oc=5"
+        "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQRWdINkR4M1hSQzZsU2JSRGxRWE5nenRsNnp4bTkwV2MyQUF1ZnBpX0NkVWVFZlJlX2JJTzE2Q05Jd3M3MW16WUl2c292RXB1QTlTY2NkOVlXcXhoWUo0d0M0bldrSjBiRHY5dV92eG1RYkp5d0VSaGlXemd6cnc2U1daN2hZN1gzWVlLYUVYemp1ZWFQS0FzTG1TSEhsU0lYa2lmYTFsUDV3dw?oc=5",
+        "https://news.google.com/rss/articles/CBMizgFBVV95cUxOdHN4aGVpOFZIazlhOGpuMEtienduWGJ0Skd2VzF0akFXU1pMYWlmOU9aV3hFVkxiTURPbTNTTWsyYmVBLTJHNGcyMk9xY2pTdlp6QUxuLUZNMkJXVk54SWZNS19KZVluMWs5N0llZm9qQjk3d0xGV05zN2Jja0k3NW9KRFlPby1TNnpGYVNia3FJYVNrNWlPR0xSWDZyLXBmcEJKRm9qemw5SDBwVmI5aE9BOTRhNmh3NUxWTmliQ1U5VE9yRHdpYzZhRURPZ9IB0wFBVV95cUxQZUFVZUYweVNvOU95Uk5rSll2TmV4V2JzMEVBM3VHMXFzdFdGX2pDaDRMbS1rQ21BcWtKa0V1dW1LTjQtVmh3SGlvVS13QTZoMWVBTU0yNXZ6XzgxdjhfdEJmOGE2SEVUYS1aVktqUmkzNmQ1QUp0RUVxbEdVeDN0SUxkSkwzdDJjN05sLUNjaFV3MU5jWXNVdFJHQnJHeDNSY1FVZS1LaWw3clY0bFdLNFJTSEQ3Z284dFc4WUpwVi1zT3YzN0dnXzdVVnFXTHBmU2ZR?oc=5",
+        "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQNlF3cjdUQ1JrTXF4cmh6eXQ1bnlfTHp0WDQyVE0yZ2I3X1BkRlE2OFR3SElWbHl5RDNUN1lsX0lqNEZySDAyb25lWHJjOGNHRWJ3LWs1d1BXMGpOaHR3UmV1RWFXSDhYOXBMXzdhNXdORW1mRUxFMzdKWm9fUmlvMUlPVFk0eE1XejV6SEs5RDd3bExmdWtramRNSzJGbUZLanpVRjhycGRNTGtrZWJNRVdmZHlYN2FuZU1FZk9fTGUwYWk5U1pSbTFacE1GQVdnWmRrWnBWLW1lZ2tPeFVkUDZQQk3SAeoBQVVfeXFMUFRQWUV4TExLMmE2YWVEUDFxSHQzVHY0U2E4Z2ZRWVlIVHNUT3BJcmRqajdCT1FieXV2di1IQVJIbWF6ZjJhUUozTDR4UjdicHF0N29jVWhZWURYWUt2VEQ2YUFqT0R4RjM3SnIxQmhmTGNLY2ZWcE9wSTZBOVJwMDJ5Q3ZpMW92bW9uVjByVXJYblNYTmE1MDhoVFYtRmNQWTd0eDdPUXVfS2tJQnpaTU1CeHlndEplXzVlMjduWFI4UXQ3VTFzeXFaUVl0dlZidktvZGFybkgzX2ZBYUxtU2EzemlLVXFpd01B?oc=5"
       ],
       "reports": [
         {
-          "id": "61a0653ebd2e",
-          "sourceLabel": "Google News — Ukraine War",
-          "sourceName": "Google News — Ukraine War",
-          "sourceType": "europe-conflict",
-          "title": "A Russian missile and drone blitz kills 7 in Ukraine as Zelenskyy seeks help in Norway - Springfield News-Sun",
-          "summary": "A Russian missile and drone blitz kills 7 in Ukraine as Zelenskyy seeks help in Norway Springfield News-Sun",
-          "summary_snippet": "A Russian missile and drone blitz kills 7 in Ukraine as Zelenskyy seeks help in Norway Springfield News-Sun",
-          "source": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNRVdCQzYwNkdBTGdlMlhhRmVXX0FtaXgwUERIMmVyby04RllydElDS1AwLUwza0x0MXRfY192NEk0STBwSU4tN0FrNVB5OUdTWE5ZNGJ1ZFJsckVxSktGRW10THFUODJ6Tll2SmkwWnJnMC1OeEVld0lHQVZ1RzMxSWZ5SWlHYzMwTkZjTXpaUkJpbjRKLUtJT2RlTVhvNVNrX2poR1lQcnk2NUs5Ym5oOGVyVEQ1cXdibnhXWjhIdHBYZ2FDcmNfbl9sdVlxelpYSnZ6R09yV2JMR0lCSGJNYW9Ua0FlTkpVLWJUWjlnM1o1bHpzcDluWFFVRTN6THZKY1V2UnNPNXg?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNRVdCQzYwNkdBTGdlMlhhRmVXX0FtaXgwUERIMmVyby04RllydElDS1AwLUwza0x0MXRfY192NEk0STBwSU4tN0FrNVB5OUdTWE5ZNGJ1ZFJsckVxSktGRW10THFUODJ6Tll2SmkwWnJnMC1OeEVld0lHQVZ1RzMxSWZ5SWlHYzMwTkZjTXpaUkJpbjRKLUtJT2RlTVhvNVNrX2poR1lQcnk2NUs5Ym5oOGVyVEQ1cXdibnhXWjhIdHBYZ2FDcmNfbl9sdVlxelpYSnZ6R09yV2JMR0lCSGJNYW9Ua0FlTkpVLWJUWjlnM1o1bHpzcDluWFFVRTN6THZKY1V2UnNPNXg?oc=5",
-          "time": "2026-10-20T10:13:51Z",
-          "published_date": "2026-10-20T10:13:51Z",
-          "publishedDate": "2026-10-20T10:13:51Z",
+          "id": "981a699aa49c",
+          "sourceLabel": "Google News — Yemen / Red Sea",
+          "sourceName": "Google News — Yemen / Red Sea",
+          "sourceType": "middle-east-conflict",
+          "title": "UK Deploys Typhoon Fighter Jets to Protect Saudi Arabia From Houthi Missile and Drone Attacks - www.nationpathindia.com",
+          "summary": "UK Deploys Typhoon Fighter Jets to Protect Saudi Arabia From Houthi Missile and Drone Attacks www.nationpathindia.com",
+          "summary_snippet": "UK Deploys Typhoon Fighter Jets to Protect Saudi Arabia From Houthi Missile and Drone Attacks www.nationpathindia.com",
+          "source": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQRWdINkR4M1hSQzZsU2JSRGxRWE5nenRsNnp4bTkwV2MyQUF1ZnBpX0NkVWVFZlJlX2JJTzE2Q05Jd3M3MW16WUl2c292RXB1QTlTY2NkOVlXcXhoWUo0d0M0bldrSjBiRHY5dV92eG1RYkp5d0VSaGlXemd6cnc2U1daN2hZN1gzWVlLYUVYemp1ZWFQS0FzTG1TSEhsU0lYa2lmYTFsUDV3dw?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQRWdINkR4M1hSQzZsU2JSRGxRWE5nenRsNnp4bTkwV2MyQUF1ZnBpX0NkVWVFZlJlX2JJTzE2Q05Jd3M3MW16WUl2c292RXB1QTlTY2NkOVlXcXhoWUo0d0M0bldrSjBiRHY5dV92eG1RYkp5d0VSaGlXemd6cnc2U1daN2hZN1gzWVlLYUVYemp1ZWFQS0FzTG1TSEhsU0lYa2lmYTFsUDV3dw?oc=5",
+          "time": "2026-10-20T14:41:32Z",
+          "published_date": "2026-10-20T14:41:32Z",
+          "publishedDate": "2026-10-20T14:41:32Z",
           "tag": "Breaking",
           "confidence": "DEVELOPING",
           "breaking": true,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "google_news_ukraine_war",
-            "sourceUrl": "https://news.google.com/rss/search?q=Ukraine+Russia+war+frontline+missile+drone+strike+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "sourceId": "google_news_yemen_red_sea",
+            "sourceUrl": "https://news.google.com/rss/search?q=Yemen+Houthis+Red+Sea+shipping+missile+drone+conflict+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
         },
         {
-          "id": "c29fa68d738a",
-          "sourceLabel": "Google News — Ukraine War",
-          "sourceName": "Google News — Ukraine War",
-          "sourceType": "europe-conflict",
-          "title": "A Russian missile and drone blitz kills 7 in Ukraine as Zelenskyy seeks help in Norway - The Killeen Daily Herald",
-          "summary": "A Russian missile and drone blitz kills 7 in Ukraine as Zelenskyy seeks help in Norway The Killeen Daily Herald",
-          "summary_snippet": "A Russian missile and drone blitz kills 7 in Ukraine as Zelenskyy seeks help in Norway The Killeen Daily Herald",
-          "source": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPbFZiRzVGQl9wUDJnVl9oZ1Z3TzdxV0NxU3NIUHBmQ1NvLWU5OGFjTlotMUdYZ2lVS2pNUy1YMGYwMXNoVy1nVGRmVHBTU0RQZ3poV1BVVmxxeXNZRjFFdXVHazJLLVVkSlpoLTRnaG8yWFpXWUZwMDR2QTloV1l1ZXpmZVRGeVNSRTJkcFRQYmdCeDgzRGRyMGFLVURzYXFIYS1BQUZfUnZ4T3BjOTNKQ3pnQWZPRmdTcEZOVmpwN2pTSGVfVE5vOEExcXp6ZWhMZ2NEMldWbDVXRXEwcTFTOHlMem9WeHNUb2JCdEo4dko2QQ?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPbFZiRzVGQl9wUDJnVl9oZ1Z3TzdxV0NxU3NIUHBmQ1NvLWU5OGFjTlotMUdYZ2lVS2pNUy1YMGYwMXNoVy1nVGRmVHBTU0RQZ3poV1BVVmxxeXNZRjFFdXVHazJLLVVkSlpoLTRnaG8yWFpXWUZwMDR2QTloV1l1ZXpmZVRGeVNSRTJkcFRQYmdCeDgzRGRyMGFLVURzYXFIYS1BQUZfUnZ4T3BjOTNKQ3pnQWZPRmdTcEZOVmpwN2pTSGVfVE5vOEExcXp6ZWhMZ2NEMldWbDVXRXEwcTFTOHlMem9WeHNUb2JCdEo4dko2QQ?oc=5",
-          "time": "2026-10-20T10:13:51Z",
-          "published_date": "2026-10-20T10:13:51Z",
-          "publishedDate": "2026-10-20T10:13:51Z",
+          "id": "b9f6079e39f9",
+          "sourceLabel": "Google News — Yemen / Red Sea",
+          "sourceName": "Google News — Yemen / Red Sea",
+          "sourceType": "middle-east-conflict",
+          "title": "UK to deploy fighter jets to defend Saudi Arabia against Houthi missile and drone attacks - WION",
+          "summary": "UK to deploy fighter jets to defend Saudi Arabia against Houthi missile and drone attacks WION",
+          "summary_snippet": "UK to deploy fighter jets to defend Saudi Arabia against Houthi missile and drone attacks WION",
+          "source": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOdHN4aGVpOFZIazlhOGpuMEtienduWGJ0Skd2VzF0akFXU1pMYWlmOU9aV3hFVkxiTURPbTNTTWsyYmVBLTJHNGcyMk9xY2pTdlp6QUxuLUZNMkJXVk54SWZNS19KZVluMWs5N0llZm9qQjk3d0xGV05zN2Jja0k3NW9KRFlPby1TNnpGYVNia3FJYVNrNWlPR0xSWDZyLXBmcEJKRm9qemw5SDBwVmI5aE9BOTRhNmh3NUxWTmliQ1U5VE9yRHdpYzZhRURPZ9IB0wFBVV95cUxQZUFVZUYweVNvOU95Uk5rSll2TmV4V2JzMEVBM3VHMXFzdFdGX2pDaDRMbS1rQ21BcWtKa0V1dW1LTjQtVmh3SGlvVS13QTZoMWVBTU0yNXZ6XzgxdjhfdEJmOGE2SEVUYS1aVktqUmkzNmQ1QUp0RUVxbEdVeDN0SUxkSkwzdDJjN05sLUNjaFV3MU5jWXNVdFJHQnJHeDNSY1FVZS1LaWw3clY0bFdLNFJTSEQ3Z284dFc4WUpwVi1zT3YzN0dnXzdVVnFXTHBmU2ZR?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOdHN4aGVpOFZIazlhOGpuMEtienduWGJ0Skd2VzF0akFXU1pMYWlmOU9aV3hFVkxiTURPbTNTTWsyYmVBLTJHNGcyMk9xY2pTdlp6QUxuLUZNMkJXVk54SWZNS19KZVluMWs5N0llZm9qQjk3d0xGV05zN2Jja0k3NW9KRFlPby1TNnpGYVNia3FJYVNrNWlPR0xSWDZyLXBmcEJKRm9qemw5SDBwVmI5aE9BOTRhNmh3NUxWTmliQ1U5VE9yRHdpYzZhRURPZ9IB0wFBVV95cUxQZUFVZUYweVNvOU95Uk5rSll2TmV4V2JzMEVBM3VHMXFzdFdGX2pDaDRMbS1rQ21BcWtKa0V1dW1LTjQtVmh3SGlvVS13QTZoMWVBTU0yNXZ6XzgxdjhfdEJmOGE2SEVUYS1aVktqUmkzNmQ1QUp0RUVxbEdVeDN0SUxkSkwzdDJjN05sLUNjaFV3MU5jWXNVdFJHQnJHeDNSY1FVZS1LaWw3clY0bFdLNFJTSEQ3Z284dFc4WUpwVi1zT3YzN0dnXzdVVnFXTHBmU2ZR?oc=5",
+          "time": "2026-10-20T13:37:00Z",
+          "published_date": "2026-10-20T13:37:00Z",
+          "publishedDate": "2026-10-20T13:37:00Z",
           "tag": "Breaking",
           "confidence": "DEVELOPING",
           "breaking": true,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "google_news_ukraine_war",
-            "sourceUrl": "https://news.google.com/rss/search?q=Ukraine+Russia+war+frontline+missile+drone+strike+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "sourceId": "google_news_yemen_red_sea",
+            "sourceUrl": "https://news.google.com/rss/search?q=Yemen+Houthis+Red+Sea+shipping+missile+drone+conflict+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
         },
         {
-          "id": "c68b5455ea53",
-          "sourceLabel": "Google News — Ukraine War",
-          "sourceName": "Google News — Ukraine War",
-          "sourceType": "europe-conflict",
-          "title": "Russian missile and drone blitz kills 4 in Ukraine as Zelenskyy seeks help in Norway - reflector.com",
-          "summary": "Russian missile and drone blitz kills 4 in Ukraine as Zelenskyy seeks help in Norway reflector.com",
-          "summary_snippet": "Russian missile and drone blitz kills 4 in Ukraine as Zelenskyy seeks help in Norway reflector.com",
-          "source": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQNDhhUDhRYm5ualFnejhrRVl4dE9lSkpXTzJsRktNZURvQkFsZmI3Sjd6UnA4akkwd2FMQ0Z4ZWdudjVFVWZ5YjQ5OVl3bGgwNldKOGNXMDdDTi1aMTNTQ09CTkhyajQ1Q0hFUm9OU0pTaVg4ZmItSGk1OGpfenV4by1sdGhKb0N1X0tmb3NfczNiVUhJT0xlM3RXY204Z2twdGNHb1BMYnJueVpGRWRuRHJTMy0xQ2xjV3dNOGNHODJKWmwwRXkwYWhvR2pPYUg5OFZ5b1VScFFfSFlPRDlEQm1kVFMxR284VGdCVWxrZ1ZrVE9oLXoyYXp5N1pZcVBJc3Rz?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQNDhhUDhRYm5ualFnejhrRVl4dE9lSkpXTzJsRktNZURvQkFsZmI3Sjd6UnA4akkwd2FMQ0Z4ZWdudjVFVWZ5YjQ5OVl3bGgwNldKOGNXMDdDTi1aMTNTQ09CTkhyajQ1Q0hFUm9OU0pTaVg4ZmItSGk1OGpfenV4by1sdGhKb0N1X0tmb3NfczNiVUhJT0xlM3RXY204Z2twdGNHb1BMYnJueVpGRWRuRHJTMy0xQ2xjV3dNOGNHODJKWmwwRXkwYWhvR2pPYUg5OFZ5b1VScFFfSFlPRDlEQm1kVFMxR284VGdCVWxrZ1ZrVE9oLXoyYXp5N1pZcVBJc3Rz?oc=5",
-          "time": "2026-10-20T09:01:36Z",
-          "published_date": "2026-10-20T09:01:36Z",
-          "publishedDate": "2026-10-20T09:01:36Z",
+          "id": "880c4bd97017",
+          "sourceLabel": "Google News — Yemen / Red Sea",
+          "sourceName": "Google News — Yemen / Red Sea",
+          "sourceType": "middle-east-conflict",
+          "title": "UK to deploy Typhoon fighter jets to defend Saudi Arabia against Houthi missile, drone attacks - Moneycontrol.com",
+          "summary": "UK to deploy Typhoon fighter jets to defend Saudi Arabia against Houthi missile, drone attacks Moneycontrol.com",
+          "summary_snippet": "UK to deploy Typhoon fighter jets to defend Saudi Arabia against Houthi missile, drone attacks Moneycontrol.com",
+          "source": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQNlF3cjdUQ1JrTXF4cmh6eXQ1bnlfTHp0WDQyVE0yZ2I3X1BkRlE2OFR3SElWbHl5RDNUN1lsX0lqNEZySDAyb25lWHJjOGNHRWJ3LWs1d1BXMGpOaHR3UmV1RWFXSDhYOXBMXzdhNXdORW1mRUxFMzdKWm9fUmlvMUlPVFk0eE1XejV6SEs5RDd3bExmdWtramRNSzJGbUZLanpVRjhycGRNTGtrZWJNRVdmZHlYN2FuZU1FZk9fTGUwYWk5U1pSbTFacE1GQVdnWmRrWnBWLW1lZ2tPeFVkUDZQQk3SAeoBQVVfeXFMUFRQWUV4TExLMmE2YWVEUDFxSHQzVHY0U2E4Z2ZRWVlIVHNUT3BJcmRqajdCT1FieXV2di1IQVJIbWF6ZjJhUUozTDR4UjdicHF0N29jVWhZWURYWUt2VEQ2YUFqT0R4RjM3SnIxQmhmTGNLY2ZWcE9wSTZBOVJwMDJ5Q3ZpMW92bW9uVjByVXJYblNYTmE1MDhoVFYtRmNQWTd0eDdPUXVfS2tJQnpaTU1CeHlndEplXzVlMjduWFI4UXQ3VTFzeXFaUVl0dlZidktvZGFybkgzX2ZBYUxtU2EzemlLVXFpd01B?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQNlF3cjdUQ1JrTXF4cmh6eXQ1bnlfTHp0WDQyVE0yZ2I3X1BkRlE2OFR3SElWbHl5RDNUN1lsX0lqNEZySDAyb25lWHJjOGNHRWJ3LWs1d1BXMGpOaHR3UmV1RWFXSDhYOXBMXzdhNXdORW1mRUxFMzdKWm9fUmlvMUlPVFk0eE1XejV6SEs5RDd3bExmdWtramRNSzJGbUZLanpVRjhycGRNTGtrZWJNRVdmZHlYN2FuZU1FZk9fTGUwYWk5U1pSbTFacE1GQVdnWmRrWnBWLW1lZ2tPeFVkUDZQQk3SAeoBQVVfeXFMUFRQWUV4TExLMmE2YWVEUDFxSHQzVHY0U2E4Z2ZRWVlIVHNUT3BJcmRqajdCT1FieXV2di1IQVJIbWF6ZjJhUUozTDR4UjdicHF0N29jVWhZWURYWUt2VEQ2YUFqT0R4RjM3SnIxQmhmTGNLY2ZWcE9wSTZBOVJwMDJ5Q3ZpMW92bW9uVjByVXJYblNYTmE1MDhoVFYtRmNQWTd0eDdPUXVfS2tJQnpaTU1CeHlndEplXzVlMjduWFI4UXQ3VTFzeXFaUVl0dlZidktvZGFybkgzX2ZBYUxtU2EzemlLVXFpd01B?oc=5",
+          "time": "2026-10-20T12:06:05Z",
+          "published_date": "2026-10-20T12:06:05Z",
+          "publishedDate": "2026-10-20T12:06:05Z",
           "tag": "Breaking",
           "confidence": "DEVELOPING",
           "breaking": true,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "google_news_ukraine_war",
-            "sourceUrl": "https://news.google.com/rss/search?q=Ukraine+Russia+war+frontline+missile+drone+strike+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "sourceId": "google_news_yemen_red_sea",
+            "sourceUrl": "https://news.google.com/rss/search?q=Yemen+Houthis+Red+Sea+shipping+missile+drone+conflict+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
         }
       ]
     },
     {
-      "id": "b80c19a36384b118",
-      "title": "UK to deploy jets to defend Saudi Arabia from Houthi attacks",
+      "id": "055f463c506b6140",
+      "title": "More than 250,000 displaced in Yemen since fighting escalated: UNHCR",
+      "category": "conflict",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "sourceCount": 2,
+      "sources": [
+        "aljazeera.com",
+        "news.google.com"
+      ],
+      "anchors": [
+        "yemen"
+      ],
+      "firstSeen": "2026-10-20T11:30:53Z",
+      "lastSeen": "2026-10-20T13:00:21Z",
+      "urls": [
+        "https://www.aljazeera.com/news/2026/10/20/more-than-250000-displaced-in-yemen-since-fighting-escalated-unhcr?traffic_source=rss",
+        "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOdTNzM2U4aTMwc1EwZUJKdGlIckEyWFVIU1NSUUpHTXdURk1jUURwQVY1cU1IMFR1UEsxVjRadVktZGlTNUJPQ01GZG44eFJnbzBWaDFKQkJSNE1xRjNWUmxTN1d5MlphbjdfNWwxYmVndkgxR3pDUGdvd0FubXF0SVY3cGVRMWRXdWN2ZXhRaVdocVpmX0FXbTRkakQ3cXlkN241UXNTa0ZNUFXSAasBQVVfeXFMTnUzczNlOGkzMHNRMGVCSnRpSHJBMlhVSFNTUlFKR013VEZNY1FEcEFWNXFNSDBUdVBLMVY0WnVZLWRpUzVCT0NNRmRuOHhSZ28wVmgxSkJCUjRNcUYzVlJsUzdXeTJaYW43XzVsMWJlZ3ZIMUd6Q1Bnb3dBbm1xdElWN3BlUTFkV3VjdmV4UWlXaHFaZl9BV200ZGpEN3F5ZDduNVFzU2tGTVBV?oc=5"
+      ],
+      "reports": [
+        {
+          "id": "01f0a71cdb6a",
+          "sourceLabel": "Al Jazeera",
+          "sourceName": "Al Jazeera",
+          "sourceType": "international",
+          "title": "More than 250,000 displaced in Yemen since fighting escalated: UNHCR",
+          "summary": "UNICEF says escalating fighting in Taiz is threatening its water systems, serving an estimated three million people.",
+          "summary_snippet": "UNICEF says escalating fighting in Taiz is threatening its water systems, serving an estimated three million people.",
+          "source": "https://www.aljazeera.com/news/2026/10/20/more-than-250000-displaced-in-yemen-since-fighting-escalated-unhcr?traffic_source=rss",
+          "url": "https://www.aljazeera.com/news/2026/10/20/more-than-250000-displaced-in-yemen-since-fighting-escalated-unhcr?traffic_source=rss",
+          "time": "2026-10-20T13:00:21Z",
+          "published_date": "2026-10-20T13:00:21Z",
+          "publishedDate": "2026-10-20T13:00:21Z",
+          "tag": "Breaking",
+          "confidence": "DEVELOPING",
+          "breaking": true,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "al_jazeera",
+            "sourceUrl": "https://www.aljazeera.com/xml/rss/all.xml",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "9251daff1c15",
+          "sourceLabel": "Google News — Yemen / Red Sea",
+          "sourceName": "Google News — Yemen / Red Sea",
+          "sourceType": "middle-east-conflict",
+          "title": "UN: More than 250,000 displaced within Yemen since fighting flared - Dhaka Tribune",
+          "summary": "UN: More than 250,000 displaced within Yemen since fighting flared Dhaka Tribune",
+          "summary_snippet": "UN: More than 250,000 displaced within Yemen since fighting flared Dhaka Tribune",
+          "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOdTNzM2U4aTMwc1EwZUJKdGlIckEyWFVIU1NSUUpHTXdURk1jUURwQVY1cU1IMFR1UEsxVjRadVktZGlTNUJPQ01GZG44eFJnbzBWaDFKQkJSNE1xRjNWUmxTN1d5MlphbjdfNWwxYmVndkgxR3pDUGdvd0FubXF0SVY3cGVRMWRXdWN2ZXhRaVdocVpmX0FXbTRkakQ3cXlkN241UXNTa0ZNUFXSAasBQVVfeXFMTnUzczNlOGkzMHNRMGVCSnRpSHJBMlhVSFNTUlFKR013VEZNY1FEcEFWNXFNSDBUdVBLMVY0WnVZLWRpUzVCT0NNRmRuOHhSZ28wVmgxSkJCUjRNcUYzVlJsUzdXeTJaYW43XzVsMWJlZ3ZIMUd6Q1Bnb3dBbm1xdElWN3BlUTFkV3VjdmV4UWlXaHFaZl9BV200ZGpEN3F5ZDduNVFzU2tGTVBV?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOdTNzM2U4aTMwc1EwZUJKdGlIckEyWFVIU1NSUUpHTXdURk1jUURwQVY1cU1IMFR1UEsxVjRadVktZGlTNUJPQ01GZG44eFJnbzBWaDFKQkJSNE1xRjNWUmxTN1d5MlphbjdfNWwxYmVndkgxR3pDUGdvd0FubXF0SVY3cGVRMWRXdWN2ZXhRaVdocVpmX0FXbTRkakQ3cXlkN241UXNTa0ZNUFXSAasBQVVfeXFMTnUzczNlOGkzMHNRMGVCSnRpSHJBMlhVSFNTUlFKR013VEZNY1FEcEFWNXFNSDBUdVBLMVY0WnVZLWRpUzVCT0NNRmRuOHhSZ28wVmgxSkJCUjRNcUYzVlJsUzdXeTJaYW43XzVsMWJlZ3ZIMUd6Q1Bnb3dBbm1xdElWN3BlUTFkV3VjdmV4UWlXaHFaZl9BV200ZGpEN3F5ZDduNVFzU2tGTVBV?oc=5",
+          "time": "2026-10-20T11:30:53Z",
+          "published_date": "2026-10-20T11:30:53Z",
+          "publishedDate": "2026-10-20T11:30:53Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_yemen_red_sea",
+            "sourceUrl": "https://news.google.com/rss/search?q=Yemen+Houthis+Red+Sea+shipping+missile+drone+conflict+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
+      "id": "9fd14517d5f07225",
+      "title": "UK to fly RAF Typhoons to defend Saudi Arabia from Houthi attacks - AeroTime",
       "category": "general",
       "confidence": "moderate",
       "reportCount": 2,
       "sourceCount": 2,
       "sources": [
-        "bbc.co.uk",
-        "news.google.com"
+        "news.google.com",
+        "bbc.co.uk"
       ],
       "anchors": [
         "uk"
       ],
-      "firstSeen": "2026-10-20T11:30:38Z",
-      "lastSeen": "2026-10-20T11:59:45Z",
+      "firstSeen": "2026-10-20T11:59:45Z",
+      "lastSeen": "2026-10-20T12:28:47Z",
       "urls": [
-        "https://www.bbc.co.uk/news/articles/ckr5yqe1r1llo?at_medium=RSS&at_campaign=rss",
-        "https://news.google.com/rss/articles/CBMifEFVX3lxTE1uSGVKbmpQdElUTFA0R3lpclM0cjY0T0xndURKdE5rZXZJX08tQVA1ZDY3aXRhNENBUjllT09BSVpiVXVRMXROcEdmcExjc2ZabGFvZUpCaWttQUNoWnBPWnZnNHI3aGo0REhyUWRELWtZZWxyTlBBbjJ4VVQ?oc=5"
+        "https://news.google.com/rss/articles/CBMiigFBVV95cUxQYmV2YzhOdkhpYUpQeDlBc1U3NktXeWxlRWMya2FfLVY1X2Vya3JKbWF2OVh0ZFVSU0pQSUVmSVF4UVFVemFOUFlmX0hPeTJZcE5lSnpUeGFjdFBJYXdfZHlJR2tOMFNSTFFRclhjQzVKTlh2RjRoNWZENVNyS1lUakR5ZGxIQV9jd3fSAY8BQVVfeXFMTl9SVmEtX2FyRVdKbk9wdl9GLXlNZlVuelcwUWduM2ItakFKMU1yaVFyeVlQSGNFMHRmSGxORDc4c3BtZU1kLUZWZzg2YzdJeDhCWmt1U0k3a3VCajNJNDl1Y0F1NExkNWtKUERpanJRSXpYS3lTTDZIS2lXRXJLZW8tQ1lBeFhXUnFlMWdHNlE?oc=5",
+        "https://www.bbc.co.uk/news/articles/ckr5yqe1r1llo?at_medium=RSS&at_campaign=rss"
       ],
       "reports": [
         {
+          "id": "0e3d56619c2f",
+          "sourceLabel": "Google News — Yemen / Red Sea",
+          "sourceName": "Google News — Yemen / Red Sea",
+          "sourceType": "middle-east-conflict",
+          "title": "UK to fly RAF Typhoons to defend Saudi Arabia from Houthi attacks - AeroTime",
+          "summary": "UK to fly RAF Typhoons to defend Saudi Arabia from Houthi attacks AeroTime",
+          "summary_snippet": "UK to fly RAF Typhoons to defend Saudi Arabia from Houthi attacks AeroTime",
+          "source": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQYmV2YzhOdkhpYUpQeDlBc1U3NktXeWxlRWMya2FfLVY1X2Vya3JKbWF2OVh0ZFVSU0pQSUVmSVF4UVFVemFOUFlmX0hPeTJZcE5lSnpUeGFjdFBJYXdfZHlJR2tOMFNSTFFRclhjQzVKTlh2RjRoNWZENVNyS1lUakR5ZGxIQV9jd3fSAY8BQVVfeXFMTl9SVmEtX2FyRVdKbk9wdl9GLXlNZlVuelcwUWduM2ItakFKMU1yaVFyeVlQSGNFMHRmSGxORDc4c3BtZU1kLUZWZzg2YzdJeDhCWmt1U0k3a3VCajNJNDl1Y0F1NExkNWtKUERpanJRSXpYS3lTTDZIS2lXRXJLZW8tQ1lBeFhXUnFlMWdHNlE?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQYmV2YzhOdkhpYUpQeDlBc1U3NktXeWxlRWMya2FfLVY1X2Vya3JKbWF2OVh0ZFVSU0pQSUVmSVF4UVFVemFOUFlmX0hPeTJZcE5lSnpUeGFjdFBJYXdfZHlJR2tOMFNSTFFRclhjQzVKTlh2RjRoNWZENVNyS1lUakR5ZGxIQV9jd3fSAY8BQVVfeXFMTl9SVmEtX2FyRVdKbk9wdl9GLXlNZlVuelcwUWduM2ItakFKMU1yaVFyeVlQSGNFMHRmSGxORDc4c3BtZU1kLUZWZzg2YzdJeDhCWmt1U0k3a3VCajNJNDl1Y0F1NExkNWtKUERpanJRSXpYS3lTTDZIS2lXRXJLZW8tQ1lBeFhXUnFlMWdHNlE?oc=5",
+          "time": "2026-10-20T12:28:47Z",
+          "published_date": "2026-10-20T12:28:47Z",
+          "publishedDate": "2026-10-20T12:28:47Z",
+          "tag": "Breaking",
+          "confidence": "DEVELOPING",
+          "breaking": true,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_yemen_red_sea",
+            "sourceUrl": "https://news.google.com/rss/search?q=Yemen+Houthis+Red+Sea+shipping+missile+drone+conflict+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        },
+        {
           "id": "7e6cefb920a5",
-          "sourceLabel": "BBC Middle East",
-          "sourceName": "BBC Middle East",
+          "sourceLabel": "https://www.bbc.co.uk/news/articles/ckr5yqe1r1llo?at_medium=RSS&at_campaign=rss",
+          "sourceName": "https://www.bbc.co.uk/news/articles/ckr5yqe1r1llo?at_medium=RSS&at_campaign=rss",
           "sourceType": "regional",
           "title": "UK to deploy jets to defend Saudi Arabia from Houthi attacks",
           "summary": "The UK announces it will provide additional defensive military support to Saudi Arabia as Houthi attacks escalate in the region.",
@@ -475,20 +662,41 @@
             "sourceUrl": "https://feeds.bbci.co.uk/news/world/middle_east/rss.xml",
             "feedFormat": "rss"
           }
-        },
+        }
+      ]
+    },
+    {
+      "id": "cc0fb27a41d3dd54",
+      "title": "US leaving oil-for-security approach, not Middle East: Envoy Tom Barrack - Al Jazeera",
+      "category": "general",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "sourceCount": 2,
+      "sources": [
+        "news.google.com",
+        "aljazeera.com"
+      ],
+      "anchors": [],
+      "firstSeen": "2026-10-20T10:36:57Z",
+      "lastSeen": "2026-10-20T10:45:43Z",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMisgFBVV95cUxNeFczaWFtb0JFb3NVYWg5NE5fQU1CcEZwZGtkRzBmRXdRS3NKNWNUMXEtSUV4UVljMFoya2FvUTdNSVlUWTk2eWRPX0gtLTc2SE9EMGg1YzJ2MFhjeWZxRXp2Z3VYeUNrcDF6VDdPZE1sUUxGQmpuUFNvcnBqdUNoa1FVRGpTc0JnS2MzaERnNTlJdWxKNWpzeTRVbDRad0tPdGNPalQ3Rm02SlpPTEE5R0Jn0gG3AUFVX3lxTFBycmVoX3JzTEJOSVQ3QU56OE9Wa3l1S3JsUUZzU21WSzZ5aTIyOEhtYWxKaDlxVHNTd0FZV1haSlNXdDFPSFNCZ1lQNkNUR09oRXZ5cXdtRElwSDNsY0JRelhjSHhQbkV5UkNUYVpJNnVKTGROb2EtR1BfZXc4V0llNjVHZmFBMVJab1lXci02TkJPUlljd1U0OFBqVkRtV3c0cE01V20weFNyX21HR2d6aUY4VkdJNA?oc=5",
+        "https://www.aljazeera.com/news/2026/10/20/us-leaving-oil-for-security-approach-not-middle-east-envoy-tom-barrack?traffic_source=rss"
+      ],
+      "reports": [
         {
-          "id": "101ce2ecd8f7",
+          "id": "9c56c77e896c",
           "sourceLabel": "Google News — Iran Israel",
           "sourceName": "Google News — Iran Israel",
           "sourceType": "middle-east-conflict",
-          "title": "UK To Deploy Typhoon Jets To Defend Saudi Arabia - The Whistler Newspaper",
-          "summary": "UK To Deploy Typhoon Jets To Defend Saudi Arabia The Whistler Newspaper",
-          "summary_snippet": "UK To Deploy Typhoon Jets To Defend Saudi Arabia The Whistler Newspaper",
-          "source": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1uSGVKbmpQdElUTFA0R3lpclM0cjY0T0xndURKdE5rZXZJX08tQVA1ZDY3aXRhNENBUjllT09BSVpiVXVRMXROcEdmcExjc2ZabGFvZUpCaWttQUNoWnBPWnZnNHI3aGo0REhyUWRELWtZZWxyTlBBbjJ4VVQ?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1uSGVKbmpQdElUTFA0R3lpclM0cjY0T0xndURKdE5rZXZJX08tQVA1ZDY3aXRhNENBUjllT09BSVpiVXVRMXROcEdmcExjc2ZabGFvZUpCaWttQUNoWnBPWnZnNHI3aGo0REhyUWRELWtZZWxyTlBBbjJ4VVQ?oc=5",
-          "time": "2026-10-20T11:30:38Z",
-          "published_date": "2026-10-20T11:30:38Z",
-          "publishedDate": "2026-10-20T11:30:38Z",
+          "title": "US leaving oil-for-security approach, not Middle East: Envoy Tom Barrack - Al Jazeera",
+          "summary": "US leaving oil-for-security approach, not Middle East: Envoy Tom Barrack Al Jazeera",
+          "summary_snippet": "US leaving oil-for-security approach, not Middle East: Envoy Tom Barrack Al Jazeera",
+          "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNeFczaWFtb0JFb3NVYWg5NE5fQU1CcEZwZGtkRzBmRXdRS3NKNWNUMXEtSUV4UVljMFoya2FvUTdNSVlUWTk2eWRPX0gtLTc2SE9EMGg1YzJ2MFhjeWZxRXp2Z3VYeUNrcDF6VDdPZE1sUUxGQmpuUFNvcnBqdUNoa1FVRGpTc0JnS2MzaERnNTlJdWxKNWpzeTRVbDRad0tPdGNPalQ3Rm02SlpPTEE5R0Jn0gG3AUFVX3lxTFBycmVoX3JzTEJOSVQ3QU56OE9Wa3l1S3JsUUZzU21WSzZ5aTIyOEhtYWxKaDlxVHNTd0FZV1haSlNXdDFPSFNCZ1lQNkNUR09oRXZ5cXdtRElwSDNsY0JRelhjSHhQbkV5UkNUYVpJNnVKTGROb2EtR1BfZXc4V0llNjVHZmFBMVJab1lXci02TkJPUlljd1U0OFBqVkRtV3c0cE01V20weFNyX21HR2d6aUY4VkdJNA?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNeFczaWFtb0JFb3NVYWg5NE5fQU1CcEZwZGtkRzBmRXdRS3NKNWNUMXEtSUV4UVljMFoya2FvUTdNSVlUWTk2eWRPX0gtLTc2SE9EMGg1YzJ2MFhjeWZxRXp2Z3VYeUNrcDF6VDdPZE1sUUxGQmpuUFNvcnBqdUNoa1FVRGpTc0JnS2MzaERnNTlJdWxKNWpzeTRVbDRad0tPdGNPalQ3Rm02SlpPTEE5R0Jn0gG3AUFVX3lxTFBycmVoX3JzTEJOSVQ3QU56OE9Wa3l1S3JsUUZzU21WSzZ5aTIyOEhtYWxKaDlxVHNTd0FZV1haSlNXdDFPSFNCZ1lQNkNUR09oRXZ5cXdtRElwSDNsY0JRelhjSHhQbkV5UkNUYVpJNnVKTGROb2EtR1BfZXc4V0llNjVHZmFBMVJab1lXci02TkJPUlljd1U0OFBqVkRtV3c0cE01V20weFNyX21HR2d6aUY4VkdJNA?oc=5",
+          "time": "2026-10-20T10:45:43Z",
+          "published_date": "2026-10-20T10:45:43Z",
+          "publishedDate": "2026-10-20T10:45:43Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
@@ -498,73 +706,27 @@
             "sourceUrl": "https://news.google.com/rss/search?q=Iran+Israel+conflict+missile+drone+strike+escalation+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
-        }
-      ]
-    },
-    {
-      "id": "e3cdd79763c7b64e",
-      "title": "UK to deploy fighter jets to help protect Saudi from Houthi attacks",
-      "category": "general",
-      "confidence": "moderate",
-      "reportCount": 2,
-      "sourceCount": 2,
-      "sources": [
-        "channelnewsasia.com",
-        "theguardian.com"
-      ],
-      "anchors": [
-        "uk"
-      ],
-      "firstSeen": "2026-10-20T11:08:00Z",
-      "lastSeen": "2026-10-20T11:25:00Z",
-      "urls": [
-        "https://www.channelnewsasia.com/world/uk-deploy-fighter-jets-protect-saudi-houthi-attacks-6475431",
-        "https://www.theguardian.com/uk-news/2026/oct/20/uk-raf-typhoon-fighters-saudi-arabia-houthi-attacks"
-      ],
-      "reports": [
-        {
-          "id": "7abcba81b7ec",
-          "sourceLabel": "CNA World",
-          "sourceName": "CNA World",
-          "sourceType": "news",
-          "title": "UK to deploy fighter jets to help protect Saudi from Houthi attacks",
-          "summary": "The UK will also send military advisers to support Saudi staff officers.",
-          "summary_snippet": "The UK will also send military advisers to support Saudi staff officers.",
-          "source": "https://www.channelnewsasia.com/world/uk-deploy-fighter-jets-protect-saudi-houthi-attacks-6475431",
-          "url": "https://www.channelnewsasia.com/world/uk-deploy-fighter-jets-protect-saudi-houthi-attacks-6475431",
-          "time": "2026-10-20T11:25:00Z",
-          "published_date": "2026-10-20T11:25:00Z",
-          "publishedDate": "2026-10-20T11:25:00Z",
-          "tag": "Breaking",
-          "confidence": "DEVELOPING",
-          "breaking": true,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "cna_world",
-            "sourceUrl": "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml&category=6311",
-            "feedFormat": "rss"
-          }
         },
         {
-          "id": "20b965f0a69e",
-          "sourceLabel": "Guardian World",
-          "sourceName": "Guardian World",
+          "id": "de400b9a851c",
+          "sourceLabel": "https://www.aljazeera.com/news/2026/10/20/us-leaving-oil-for-security-approach-not-middle-east-envoy-tom-barrack?traffic_source=rss",
+          "sourceName": "https://www.aljazeera.com/news/2026/10/20/us-leaving-oil-for-security-approach-not-middle-east-envoy-tom-barrack?traffic_source=rss",
           "sourceType": "international",
-          "title": "UK to deploy fighter jets to protect Saudi Arabia from Houthi attacks",
-          "summary": "RAF Typhoon fighters will fly defensive missions over cities and infrastructure, in extension of UK support for Riyadh RAF Typhoon fighters are to protect Saudi Arabia from attack by Yemen’s Houthis, flying defensive missions over the country’s cities and critical infrastructure, as western allies step up their intervention in the escalating conflict. The operation – the most significant military mission signed off b",
-          "summary_snippet": "RAF Typhoon fighters will fly defensive missions over cities and infrastructure, in extension of UK support for Riyadh RAF Typhoon fighters are to protect Saudi Arabia from attack by Yemen’s Houthis, flying defensive missions over the country’s cities and critical infrastructure, as western allies step up their intervention in the escalating conflict. The operation – the most significant military mission signed off b",
-          "source": "https://www.theguardian.com/uk-news/2026/oct/20/uk-raf-typhoon-fighters-saudi-arabia-houthi-attacks",
-          "url": "https://www.theguardian.com/uk-news/2026/oct/20/uk-raf-typhoon-fighters-saudi-arabia-houthi-attacks",
-          "time": "2026-10-20T11:08:00Z",
-          "published_date": "2026-10-20T11:08:00Z",
-          "publishedDate": "2026-10-20T11:08:00Z",
-          "tag": "Breaking",
+          "title": "US leaving oil-for-security approach, not Middle East: Envoy Tom Barrack",
+          "summary": "Barrack highlights limits of US interventions, admitting past regime changes in the Middle East were often mistakes.",
+          "summary_snippet": "Barrack highlights limits of US interventions, admitting past regime changes in the Middle East were often mistakes.",
+          "source": "https://www.aljazeera.com/news/2026/10/20/us-leaving-oil-for-security-approach-not-middle-east-envoy-tom-barrack?traffic_source=rss",
+          "url": "https://www.aljazeera.com/news/2026/10/20/us-leaving-oil-for-security-approach-not-middle-east-envoy-tom-barrack?traffic_source=rss",
+          "time": "2026-10-20T10:36:57Z",
+          "published_date": "2026-10-20T10:36:57Z",
+          "publishedDate": "2026-10-20T10:36:57Z",
+          "tag": "World",
           "confidence": "DEVELOPING",
-          "breaking": true,
+          "breaking": false,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "guardian_world",
-            "sourceUrl": "https://www.theguardian.com/world/rss",
+            "sourceId": "al_jazeera",
+            "sourceUrl": "https://www.aljazeera.com/xml/rss/all.xml",
             "feedFormat": "rss"
           }
         }
@@ -591,8 +753,8 @@
       "reports": [
         {
           "id": "3f8dfdf507a4",
-          "sourceLabel": "Google News — U.S. Politics",
-          "sourceName": "Google News — U.S. Politics",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPZ05WVnN3Szk1T2JfV1J3SVd5aDEwd0YxOTlVandwMXduU0pOWTh3cW8zZ0JJaVBMUjR4dlVObmVxZVk5TUcxZGxjZlVXSG13ZGxoTE9pX2J5YWNZTXJjenI0ZXVEWFhsaXUtbTJhenZRZ3JHODFvN0M3SjZ3UmxvNUtDSS1EMUZxX0NQV3pFdk1pZVBPdGlYNU9mdlB3UXZFem9SYi1RQUpza080alHSAbMBQVVfeXFMTzlhby01OXhJWjdaWTFuV0lNQ0EtNVJZYXhJZUp0em1BZkc2ckZGZFVPZ3Y2dUpESVBKZEw2Y0k4enprSk54cF9oeUZVM3hQdXB3Sk5uLU4yTkpoM0c5OVpsaHpleW12NEFqVl91NW84TzJuLXdHQTFzc2xCX3JoVWtLb1hpclhCbmdnSDJZZnFQUnFtbUxHcms0bVUzcTFkaDNNcmtiT0x1UXB2VFJ3dW50ZlU?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPZ05WVnN3Szk1T2JfV1J3SVd5aDEwd0YxOTlVandwMXduU0pOWTh3cW8zZ0JJaVBMUjR4dlVObmVxZVk5TUcxZGxjZlVXSG13ZGxoTE9pX2J5YWNZTXJjenI0ZXVEWFhsaXUtbTJhenZRZ3JHODFvN0M3SjZ3UmxvNUtDSS1EMUZxX0NQV3pFdk1pZVBPdGlYNU9mdlB3UXZFem9SYi1RQUpza080alHSAbMBQVVfeXFMTzlhby01OXhJWjdaWTFuV0lNQ0EtNVJZYXhJZUp0em1BZkc2ckZGZFVPZ3Y2dUpESVBKZEw2Y0k4enprSk54cF9oeUZVM3hQdXB3Sk5uLU4yTkpoM0c5OVpsaHpleW12NEFqVl91NW84TzJuLXdHQTFzc2xCX3JoVWtLb1hpclhCbmdnSDJZZnFQUnFtbUxHcms0bVUzcTFkaDNNcmtiT0x1UXB2VFJ3dW50ZlU?oc=5",
           "sourceType": "us-politics",
           "title": "Trump’s approval ratings plummet: what that means for the US midterms - Al Jazeera",
           "summary": "Trump’s approval ratings plummet: what that means for the US midterms Al Jazeera",
@@ -614,8 +776,8 @@
         },
         {
           "id": "f36a84d35806",
-          "sourceLabel": "Al Jazeera",
-          "sourceName": "Al Jazeera",
+          "sourceLabel": "https://www.aljazeera.com/news/2026/10/20/trumps-approval-ratings-plummet-what-that-means-for-the-us-midterms?traffic_source=rss",
+          "sourceName": "https://www.aljazeera.com/news/2026/10/20/trumps-approval-ratings-plummet-what-that-means-for-the-us-midterms?traffic_source=rss",
           "sourceType": "international",
           "title": "Trump’s approval ratings plummet: what that means for the US midterms",
           "summary": "Sitting presidents usually see a dip in approval ratings before midterms, but Trump's ratings are at a historic low.",
@@ -632,143 +794,6 @@
           "credit": {
             "sourceId": "al_jazeera",
             "sourceUrl": "https://www.aljazeera.com/xml/rss/all.xml",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "71f92ae6b5b9c02b",
-      "title": "South Korea to pull more embassy staff from Ukraine after POW row",
-      "category": "general",
-      "confidence": "moderate",
-      "reportCount": 2,
-      "sourceCount": 2,
-      "sources": [
-        "aljazeera.com",
-        "channelnewsasia.com"
-      ],
-      "anchors": [
-        "uk",
-        "ukraine"
-      ],
-      "firstSeen": "2026-10-20T06:33:00Z",
-      "lastSeen": "2026-10-20T09:26:02Z",
-      "urls": [
-        "https://www.aljazeera.com/news/2026/10/20/south-korea-to-pull-more-embassy-staff-from-ukraine-after-pow-row?traffic_source=rss",
-        "https://www.channelnewsasia.com/east-asia/south-korea-withdraw-ukraine-embassy-staff-6474651"
-      ],
-      "reports": [
-        {
-          "id": "ab8a9919c5bb",
-          "sourceLabel": "Al Jazeera",
-          "sourceName": "Al Jazeera",
-          "sourceType": "international",
-          "title": "South Korea to pull more embassy staff from Ukraine after POW row",
-          "summary": "Earlier this month, South Korea recalled its ambassador from Kyiv after Zelenskyy disclosed the prisoner transfer.",
-          "summary_snippet": "Earlier this month, South Korea recalled its ambassador from Kyiv after Zelenskyy disclosed the prisoner transfer.",
-          "source": "https://www.aljazeera.com/news/2026/10/20/south-korea-to-pull-more-embassy-staff-from-ukraine-after-pow-row?traffic_source=rss",
-          "url": "https://www.aljazeera.com/news/2026/10/20/south-korea-to-pull-more-embassy-staff-from-ukraine-after-pow-row?traffic_source=rss",
-          "time": "2026-10-20T09:26:02Z",
-          "published_date": "2026-10-20T09:26:02Z",
-          "publishedDate": "2026-10-20T09:26:02Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "al_jazeera",
-            "sourceUrl": "https://www.aljazeera.com/xml/rss/all.xml",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "af217dbf0005",
-          "sourceLabel": "CNA World",
-          "sourceName": "CNA World",
-          "sourceType": "news",
-          "title": "South Korea to withdraw some Ukraine embassy staff after POW row",
-          "summary": "Ukraine has insisted that \"diplomacy must prevail over emotions\" in relations between the countries and that they consider \"the situation resolved\".",
-          "summary_snippet": "Ukraine has insisted that \"diplomacy must prevail over emotions\" in relations between the countries and that they consider \"the situation resolved\".",
-          "source": "https://www.channelnewsasia.com/east-asia/south-korea-withdraw-ukraine-embassy-staff-6474651",
-          "url": "https://www.channelnewsasia.com/east-asia/south-korea-withdraw-ukraine-embassy-staff-6474651",
-          "time": "2026-10-20T06:33:00Z",
-          "published_date": "2026-10-20T06:33:00Z",
-          "publishedDate": "2026-10-20T06:33:00Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "cna_world",
-            "sourceUrl": "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml&category=6311",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "4656aedefe165d7a",
-      "title": "Five ways El Niño is affecting the weather around the world",
-      "category": "general",
-      "confidence": "moderate",
-      "reportCount": 2,
-      "sourceCount": 2,
-      "sources": [
-        "bbc.co.uk",
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "2026-10-19T23:08:25Z",
-      "lastSeen": "2026-10-19T23:08:25Z",
-      "urls": [
-        "https://www.bbc.co.uk/weather/articles/c6dx07dznpyyo?at_medium=RSS&at_campaign=rss",
-        "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1fR2V6SktXcnFZUUtJWElUdHRKRFE1ME5rbFpQQ0tUVnZRek54eFhORmU1LThvZXFXdWJpVERLVXpoNzJEZFJSRWdGblJ5VEY5NkYxMnpld3Y2S0hTa3FV?oc=5"
-      ],
-      "reports": [
-        {
-          "id": "1e7b8d336d6b",
-          "sourceLabel": "https://www.bbc.co.uk/weather/articles/c6dx07dznpyyo?at_medium=RSS&at_campaign=rss",
-          "sourceName": "https://www.bbc.co.uk/weather/articles/c6dx07dznpyyo?at_medium=RSS&at_campaign=rss",
-          "sourceType": "international",
-          "title": "Five ways El Niño is affecting the weather around the world",
-          "summary": "As the strongest El Niño on record continues to intensify, what impacts on weather patterns are already being felt across the globe? Sarah Keith-Lucas looks at the evidence.",
-          "summary_snippet": "As the strongest El Niño on record continues to intensify, what impacts on weather patterns are already being felt across the globe? Sarah Keith-Lucas looks at the evidence.",
-          "source": "https://www.bbc.co.uk/weather/articles/c6dx07dznpyyo?at_medium=RSS&at_campaign=rss",
-          "url": "https://www.bbc.co.uk/weather/articles/c6dx07dznpyyo?at_medium=RSS&at_campaign=rss",
-          "time": "2026-10-19T23:08:25Z",
-          "published_date": "2026-10-19T23:08:25Z",
-          "publishedDate": "2026-10-19T23:08:25Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "bbc_world",
-            "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "d25f5c92cf03",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1fR2V6SktXcnFZUUtJWElUdHRKRFE1ME5rbFpQQ0tUVnZRek54eFhORmU1LThvZXFXdWJpVERLVXpoNzJEZFJSRWdGblJ5VEY5NkYxMnpld3Y2S0hTa3FV?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1fR2V6SktXcnFZUUtJWElUdHRKRFE1ME5rbFpQQ0tUVnZRek54eFhORmU1LThvZXFXdWJpVERLVXpoNzJEZFJSRWdGblJ5VEY5NkYxMnpld3Y2S0hTa3FV?oc=5",
-          "sourceType": "climate-hazard",
-          "title": "Five ways El Niño is affecting the weather around the world - BBC",
-          "summary": "Five ways El Niño is affecting the weather around the world BBC",
-          "summary_snippet": "Five ways El Niño is affecting the weather around the world BBC",
-          "source": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1fR2V6SktXcnFZUUtJWElUdHRKRFE1ME5rbFpQQ0tUVnZRek54eFhORmU1LThvZXFXdWJpVERLVXpoNzJEZFJSRWdGblJ5VEY5NkYxMnpld3Y2S0hTa3FV?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1fR2V6SktXcnFZUUtJWElUdHRKRFE1ME5rbFpQQ0tUVnZRek54eFhORmU1LThvZXFXdWJpVERLVXpoNzJEZFJSRWdGblJ5VEY5NkYxMnpld3Y2S0hTa3FV?oc=5",
-          "time": "2026-10-19T23:08:25Z",
-          "published_date": "2026-10-19T23:08:25Z",
-          "publishedDate": "2026-10-19T23:08:25Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_climate_disaster",
-            "sourceUrl": "https://news.google.com/rss/search?q=flood+wildfire+hurricane+disaster+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
         }
@@ -1016,9 +1041,9 @@
       ]
     },
     {
-      "id": "38ad80ff66713144",
-      "title": "Statement by the North Atlantic Council on the New START Treaty - North Atlantic Treaty Organization | NATO",
-      "category": "diplomatic",
+      "id": "5aa6861506304841",
+      "title": "UK To Deploy Typhoon Jets To Defend Saudi Arabia Amid Houthi Attacks - Outlook India",
+      "category": "general",
       "confidence": "low",
       "reportCount": 2,
       "sourceCount": 1,
@@ -1026,46 +1051,66 @@
         "news.google.com"
       ],
       "anchors": [
-        "nato"
+        "uk"
       ],
-      "firstSeen": "Fri, 03 Feb 2023 08:00:00 GMT",
-      "lastSeen": "Mon, 19 Jul 2021 07:00:00 GMT",
+      "firstSeen": "2026-10-20T14:17:23Z",
+      "lastSeen": "2026-10-20T15:25:36Z",
       "urls": [
-        "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOT3hQZ1B0TEVRdWh4ZWk3amc0anpQNkc5RURXejRFM3pzN0kwRGNFOGNIYTE3SDJ5N1RwR3VFQTEtOGNpX2dEcWVDTkgtdTZVbTR4TkdkSTIyb0pVc3g1SVVPOWhfc3BGaXJkcy1OdXFfYW5WRGhad0x3VkdtSkxHX3dHMWhtMVBBRzRoUnZKZTlvejNRbWdQZjBKeUtpQzVGRHNqNm9RM2h4LVQzekRzZWRQMWYtNS1EOEszOWl5TlB2X0NJZ2JoOUJ4cUxuNkpEZTRrdnUwYWdSSV94Qy1kSXpvVndxUQ?oc=5",
-        "https://news.google.com/rss/articles/CBMingFBVV95cUxOZkxLV1ZvZDlhdVA4Q1VxajFrU3NObTF2V0VOVFEycnVnaFU3Vzk4REhHQk5ac2dqLWdKSWlaUFRiR3NYazdmczk3Qlk2SEpGUU1VVWdBYjhPMml4eGRfckNWVlJvSlZqU1ZpLXpfX1YtOUpQUS1XTkNQTG9hU3BuTUFCbElfWTFfbjFPcHMwMWs5OWJJZWFCSGllVmhFUQ?oc=5"
+        "https://news.google.com/rss/articles/CBMisAFBVV95cUxNN3BONXN5Zlc4dmw1MXB1R3VOa0NvMm8xR2hzUnkxX0ZZdmlfTG90SGZycEpqZGx2alZFdWpVbHV6ZGhtanBVandtUk1XZ0ZhU0VxRXMwTG84VzFIV3JyNHZPelJLeXZlSUJkUzlTTHE1dUMyRVJmSWNETWV3dldkWlhBRzAxOXFiZUpXYnN6S28tRFZQcFV5cWNMOWpkcjdYTXl1d3ktTVRwblFaRzF0LdIBvgFBVV95cUxPcEt2cVZJYTZEdVA2RzYtMDMzeC10SV91anlxNDlicmtaeUEteDBsaXVtWEhjRl9zMWc5ZlpfVFptZXFJT0ZaOFdaaEFac241NkhqTjB4NDE0Vy1hNUI2WFhYMzRPbXh6UGZ5WFE5THpHUFBRZkJSTXFLd2RLR1lCbndqbWxtdHN6Q0VLNkhualhCQmNlWlZhLXFPSlgzX04wbnB0LXRQQkdYakFzZ2NoSGZGZFk1YUR2NGhxb1J3?oc=5",
+        "https://news.google.com/rss/articles/CBMimgFBVV95cUxNdzBFVklHWEdWZUgtMlQwUVlBamRvcXdLMGROdXRrbks4RzZWMVJVa29ucHRVcFZ5LWJBWHIwT1BFQ0ZsR0ZMM212WktOc3JPNk0zSXFNdUFLTlc0b0txUDZWcG9FVUNQY2UyVkVmX0FwN0lXSnpka05reG00clNqalpxeTlVWU9LSlRrSXJKUVBKYUVyTWk3MXdB?oc=5"
       ],
       "reports": [
         {
-          "title": "Statement by the North Atlantic Council on the New START Treaty - North Atlantic Treaty Organization | NATO",
-          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOT3hQZ1B0TEVRdWh4ZWk3amc0anpQNkc5RURXejRFM3pzN0kwRGNFOGNIYTE3SDJ5N1RwR3VFQTEtOGNpX2dEcWVDTkgtdTZVbTR4TkdkSTIyb0pVc3g1SVVPOWhfc3BGaXJkcy1OdXFfYW5WRGhad0x3VkdtSkxHX3dHMWhtMVBBRzRoUnZKZTlvejNRbWdQZjBKeUtpQzVGRHNqNm9RM2h4LVQzekRzZWRQMWYtNS1EOEszOWl5TlB2X0NJZ2JoOUJ4cUxuNkpEZTRrdnUwYWdSSV94Qy1kSXpvVndxUQ?oc=5",
-          "published_date": "Fri, 03 Feb 2023 08:00:00 GMT",
-          "time": "Fri, 03 Feb 2023 08:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "summary": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "source": "North Atlantic Treaty Organization | NATO",
-          "sourceLabel": "North Atlantic Treaty Organization | NATO",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NATO",
-          "credit_metadata": "Google News RSS fallback"
+          "id": "99594a9a2b9b",
+          "sourceLabel": "Google News — Yemen / Red Sea",
+          "sourceName": "Google News — Yemen / Red Sea",
+          "sourceType": "middle-east-conflict",
+          "title": "UK To Deploy Typhoon Jets To Defend Saudi Arabia Amid Houthi Attacks - Outlook India",
+          "summary": "UK To Deploy Typhoon Jets To Defend Saudi Arabia Amid Houthi Attacks Outlook India",
+          "summary_snippet": "UK To Deploy Typhoon Jets To Defend Saudi Arabia Amid Houthi Attacks Outlook India",
+          "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNN3BONXN5Zlc4dmw1MXB1R3VOa0NvMm8xR2hzUnkxX0ZZdmlfTG90SGZycEpqZGx2alZFdWpVbHV6ZGhtanBVandtUk1XZ0ZhU0VxRXMwTG84VzFIV3JyNHZPelJLeXZlSUJkUzlTTHE1dUMyRVJmSWNETWV3dldkWlhBRzAxOXFiZUpXYnN6S28tRFZQcFV5cWNMOWpkcjdYTXl1d3ktTVRwblFaRzF0LdIBvgFBVV95cUxPcEt2cVZJYTZEdVA2RzYtMDMzeC10SV91anlxNDlicmtaeUEteDBsaXVtWEhjRl9zMWc5ZlpfVFptZXFJT0ZaOFdaaEFac241NkhqTjB4NDE0Vy1hNUI2WFhYMzRPbXh6UGZ5WFE5THpHUFBRZkJSTXFLd2RLR1lCbndqbWxtdHN6Q0VLNkhualhCQmNlWlZhLXFPSlgzX04wbnB0LXRQQkdYakFzZ2NoSGZGZFk1YUR2NGhxb1J3?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNN3BONXN5Zlc4dmw1MXB1R3VOa0NvMm8xR2hzUnkxX0ZZdmlfTG90SGZycEpqZGx2alZFdWpVbHV6ZGhtanBVandtUk1XZ0ZhU0VxRXMwTG84VzFIV3JyNHZPelJLeXZlSUJkUzlTTHE1dUMyRVJmSWNETWV3dldkWlhBRzAxOXFiZUpXYnN6S28tRFZQcFV5cWNMOWpkcjdYTXl1d3ktTVRwblFaRzF0LdIBvgFBVV95cUxPcEt2cVZJYTZEdVA2RzYtMDMzeC10SV91anlxNDlicmtaeUEteDBsaXVtWEhjRl9zMWc5ZlpfVFptZXFJT0ZaOFdaaEFac241NkhqTjB4NDE0Vy1hNUI2WFhYMzRPbXh6UGZ5WFE5THpHUFBRZkJSTXFLd2RLR1lCbndqbWxtdHN6Q0VLNkhualhCQmNlWlZhLXFPSlgzX04wbnB0LXRQQkdYakFzZ2NoSGZGZFk1YUR2NGhxb1J3?oc=5",
+          "time": "2026-10-20T15:25:36Z",
+          "published_date": "2026-10-20T15:25:36Z",
+          "publishedDate": "2026-10-20T15:25:36Z",
+          "tag": "Breaking",
+          "confidence": "DEVELOPING",
+          "breaking": true,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_yemen_red_sea",
+            "sourceUrl": "https://news.google.com/rss/search?q=Yemen+Houthis+Red+Sea+shipping+missile+drone+conflict+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
         },
         {
-          "title": "Statement - North Atlantic Treaty Organization | NATO",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOZkxLV1ZvZDlhdVA4Q1VxajFrU3NObTF2V0VOVFEycnVnaFU3Vzk4REhHQk5ac2dqLWdKSWlaUFRiR3NYazdmczk3Qlk2SEpGUU1VVWdBYjhPMml4eGRfckNWVlJvSlZqU1ZpLXpfX1YtOUpQUS1XTkNQTG9hU3BuTUFCbElfWTFfbjFPcHMwMWs5OWJJZWFCSGllVmhFUQ?oc=5",
-          "published_date": "Mon, 19 Jul 2021 07:00:00 GMT",
-          "time": "Mon, 19 Jul 2021 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "summary": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "source": "North Atlantic Treaty Organization | NATO",
-          "sourceLabel": "North Atlantic Treaty Organization | NATO",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NATO",
-          "credit_metadata": "Google News RSS fallback"
+          "id": "e6a8c07d6ee1",
+          "sourceLabel": "Google News — Yemen / Red Sea",
+          "sourceName": "Google News — Yemen / Red Sea",
+          "sourceType": "middle-east-conflict",
+          "title": "UK To Deploy Fighter Jets To Defend Saudi Arabia Against Houthi Attacks - LEADERSHIP Newspapers",
+          "summary": "UK To Deploy Fighter Jets To Defend Saudi Arabia Against Houthi Attacks LEADERSHIP Newspapers",
+          "summary_snippet": "UK To Deploy Fighter Jets To Defend Saudi Arabia Against Houthi Attacks LEADERSHIP Newspapers",
+          "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNdzBFVklHWEdWZUgtMlQwUVlBamRvcXdLMGROdXRrbks4RzZWMVJVa29ucHRVcFZ5LWJBWHIwT1BFQ0ZsR0ZMM212WktOc3JPNk0zSXFNdUFLTlc0b0txUDZWcG9FVUNQY2UyVkVmX0FwN0lXSnpka05reG00clNqalpxeTlVWU9LSlRrSXJKUVBKYUVyTWk3MXdB?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNdzBFVklHWEdWZUgtMlQwUVlBamRvcXdLMGROdXRrbks4RzZWMVJVa29ucHRVcFZ5LWJBWHIwT1BFQ0ZsR0ZMM212WktOc3JPNk0zSXFNdUFLTlc0b0txUDZWcG9FVUNQY2UyVkVmX0FwN0lXSnpka05reG00clNqalpxeTlVWU9LSlRrSXJKUVBKYUVyTWk3MXdB?oc=5",
+          "time": "2026-10-20T14:17:23Z",
+          "published_date": "2026-10-20T14:17:23Z",
+          "publishedDate": "2026-10-20T14:17:23Z",
+          "tag": "Breaking",
+          "confidence": "DEVELOPING",
+          "breaking": true,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_yemen_red_sea",
+            "sourceUrl": "https://news.google.com/rss/search?q=Yemen+Houthis+Red+Sea+shipping+missile+drone+conflict+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
         }
       ]
     },
     {
-      "id": "d5cc370bbb991406",
-      "title": "Iran, Russia agree on need to ease Taliban-Pakistan tensions - Amu TV",
+      "id": "49051623913623e9",
+      "title": "UK to deploy fighter jets to defend Saudi Arabia from Iran-backed Houthi attacks - Daily Express US",
       "category": "general",
       "confidence": "low",
       "reportCount": 2,
@@ -1075,200 +1120,66 @@
       ],
       "anchors": [
         "iran",
-        "russia"
+        "uk"
       ],
-      "firstSeen": "2026-10-20T05:21:35Z",
-      "lastSeen": "2026-10-20T10:46:31Z",
+      "firstSeen": "2026-10-20T12:58:04Z",
+      "lastSeen": "2026-10-20T13:24:15Z",
       "urls": [
-        "https://news.google.com/rss/articles/CBMiOkFVX3lxTE5tZVpPdzI5N19kS2gydmVMN1VQd0swdWRCTkxlSmhEdkhQaHpSR2NfWks2UjVseERacHc?oc=5",
-        "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBqR1Iwc3JiTDBwekY5LUlHMFZHZ1ZteWdLSlhnOHgwenZrRVdnNlM5b3pxbXBsSW9LSWVQZ1N6N3BKVTVHcHgyQm9wa3JYZHc?oc=5"
+        "https://news.google.com/rss/articles/CBMivgFBVV95cUxNdGJpN2prWmlHV25IVk9HTDlmWFlJalF5bEpIRW9zc2U5bl9lR2xrZUwxTjQzdlJBQnpodmZvRWNRcmEyTnp5ODFXeWtQYWdfRTdRelJsRHlyQ0VyZENsZEpnM3Z6bFVkc3lHVW5fVUJkaFlOdTNIVWxObVoxcGNEX19mTVlnbUE5VXJHSDRVY1hxZXlYZENYS0diX3JUOVZvN2lMU3ppSk5DYjBQZ3lpNWFqcURXdHNVSFEza2R30gHDAUFVX3lxTE9JcEpSR0tnUjBjSTVua1B3NFI2SWJuNWtFNU41UXNKU3MwWGZBV2dLLW5LcGNMZE9yMmxuQVNmd0lPenBEMkh3M2hVU21HU3Jsd1BVS1M2b2NPS0ZOWE82NzVJRU52dXZsS2VnTlN2QjI2RUh6ZHdld3pWZENwTlRYOEM0ZWtXd044c1h2dHZpWEZaYnB1TDJBUXd3eXowaFd3ZVBraENSRjU2SHlwX2JpbkMwd283clJoa3dRZndOdXgzUQ?oc=5",
+        "https://news.google.com/rss/articles/CBMid0FVX3lxTE8xQl9hM3ZsRkUyazBJQ3lmeVRfemFtaG0td1FicjFuMXhqT3o3cGl4QTJzUmhmMnpnYzlyMVAwU3pLMHh0Um9lWTVsZGtyWTR4aEhueWFFR2g4QktVYkYtWVo0S19LXzVWbW42SlVySjVNVEU3RUVR?oc=5"
       ],
       "reports": [
         {
-          "id": "f680c831179b",
-          "sourceLabel": "Google News — Afghanistan Security",
-          "sourceName": "Google News — Afghanistan Security",
-          "sourceType": "south-asia-conflict",
-          "title": "Iran, Russia agree on need to ease Taliban-Pakistan tensions - Amu TV",
-          "summary": "Iran, Russia agree on need to ease Taliban-Pakistan tensions Amu TV",
-          "summary_snippet": "Iran, Russia agree on need to ease Taliban-Pakistan tensions Amu TV",
-          "source": "https://news.google.com/rss/articles/CBMiOkFVX3lxTE5tZVpPdzI5N19kS2gydmVMN1VQd0swdWRCTkxlSmhEdkhQaHpSR2NfWks2UjVseERacHc?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMiOkFVX3lxTE5tZVpPdzI5N19kS2gydmVMN1VQd0swdWRCTkxlSmhEdkhQaHpSR2NfWks2UjVseERacHc?oc=5",
-          "time": "2026-10-20T10:46:31Z",
-          "published_date": "2026-10-20T10:46:31Z",
-          "publishedDate": "2026-10-20T10:46:31Z",
-          "tag": "World",
+          "id": "e9bd05d51060",
+          "sourceLabel": "Google News — Iran Israel",
+          "sourceName": "Google News — Iran Israel",
+          "sourceType": "middle-east-conflict",
+          "title": "UK to deploy fighter jets to defend Saudi Arabia from Iran-backed Houthi attacks - Daily Express US",
+          "summary": "UK to deploy fighter jets to defend Saudi Arabia from Iran-backed Houthi attacks Daily Express US",
+          "summary_snippet": "UK to deploy fighter jets to defend Saudi Arabia from Iran-backed Houthi attacks Daily Express US",
+          "source": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNdGJpN2prWmlHV25IVk9HTDlmWFlJalF5bEpIRW9zc2U5bl9lR2xrZUwxTjQzdlJBQnpodmZvRWNRcmEyTnp5ODFXeWtQYWdfRTdRelJsRHlyQ0VyZENsZEpnM3Z6bFVkc3lHVW5fVUJkaFlOdTNIVWxObVoxcGNEX19mTVlnbUE5VXJHSDRVY1hxZXlYZENYS0diX3JUOVZvN2lMU3ppSk5DYjBQZ3lpNWFqcURXdHNVSFEza2R30gHDAUFVX3lxTE9JcEpSR0tnUjBjSTVua1B3NFI2SWJuNWtFNU41UXNKU3MwWGZBV2dLLW5LcGNMZE9yMmxuQVNmd0lPenBEMkh3M2hVU21HU3Jsd1BVS1M2b2NPS0ZOWE82NzVJRU52dXZsS2VnTlN2QjI2RUh6ZHdld3pWZENwTlRYOEM0ZWtXd044c1h2dHZpWEZaYnB1TDJBUXd3eXowaFd3ZVBraENSRjU2SHlwX2JpbkMwd283clJoa3dRZndOdXgzUQ?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNdGJpN2prWmlHV25IVk9HTDlmWFlJalF5bEpIRW9zc2U5bl9lR2xrZUwxTjQzdlJBQnpodmZvRWNRcmEyTnp5ODFXeWtQYWdfRTdRelJsRHlyQ0VyZENsZEpnM3Z6bFVkc3lHVW5fVUJkaFlOdTNIVWxObVoxcGNEX19mTVlnbUE5VXJHSDRVY1hxZXlYZENYS0diX3JUOVZvN2lMU3ppSk5DYjBQZ3lpNWFqcURXdHNVSFEza2R30gHDAUFVX3lxTE9JcEpSR0tnUjBjSTVua1B3NFI2SWJuNWtFNU41UXNKU3MwWGZBV2dLLW5LcGNMZE9yMmxuQVNmd0lPenBEMkh3M2hVU21HU3Jsd1BVS1M2b2NPS0ZOWE82NzVJRU52dXZsS2VnTlN2QjI2RUh6ZHdld3pWZENwTlRYOEM0ZWtXd044c1h2dHZpWEZaYnB1TDJBUXd3eXowaFd3ZVBraENSRjU2SHlwX2JpbkMwd283clJoa3dRZndOdXgzUQ?oc=5",
+          "time": "2026-10-20T13:24:15Z",
+          "published_date": "2026-10-20T13:24:15Z",
+          "publishedDate": "2026-10-20T13:24:15Z",
+          "tag": "Breaking",
           "confidence": "DEVELOPING",
-          "breaking": false,
+          "breaking": true,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "google_news_afghanistan_security",
-            "sourceUrl": "https://news.google.com/rss/search?q=Afghanistan+Taliban+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "sourceId": "google_news_iran_israel",
+            "sourceUrl": "https://news.google.com/rss/search?q=Iran+Israel+conflict+missile+drone+strike+escalation+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
         },
         {
-          "id": "a3cc3d209ab1",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBqR1Iwc3JiTDBwekY5LUlHMFZHZ1ZteWdLSlhnOHgwenZrRVdnNlM5b3pxbXBsSW9LSWVQZ1N6N3BKVTVHcHgyQm9wa3JYZHc?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBqR1Iwc3JiTDBwekY5LUlHMFZHZ1ZteWdLSlhnOHgwenZrRVdnNlM5b3pxbXBsSW9LSWVQZ1N6N3BKVTVHcHgyQm9wa3JYZHc?oc=5",
-          "sourceType": "south-asia-conflict",
-          "title": "Iran, Russia Call for Easing Tensions Between Taliban and Pakistan - thekabultribune.com",
-          "summary": "Iran, Russia Call for Easing Tensions Between Taliban and Pakistan thekabultribune.com",
-          "summary_snippet": "Iran, Russia Call for Easing Tensions Between Taliban and Pakistan thekabultribune.com",
-          "source": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBqR1Iwc3JiTDBwekY5LUlHMFZHZ1ZteWdLSlhnOHgwenZrRVdnNlM5b3pxbXBsSW9LSWVQZ1N6N3BKVTVHcHgyQm9wa3JYZHc?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBqR1Iwc3JiTDBwekY5LUlHMFZHZ1ZteWdLSlhnOHgwenZrRVdnNlM5b3pxbXBsSW9LSWVQZ1N6N3BKVTVHcHgyQm9wa3JYZHc?oc=5",
-          "time": "2026-10-20T05:21:35Z",
-          "published_date": "2026-10-20T05:21:35Z",
-          "publishedDate": "2026-10-20T05:21:35Z",
-          "tag": "World",
+          "id": "af2ef5dcc002",
+          "sourceLabel": "Google News — Iran Israel",
+          "sourceName": "Google News — Iran Israel",
+          "sourceType": "middle-east-conflict",
+          "title": "UK to deploy jets to defend Saudi Arabia from Houthi attacks - Yahoo News Canada",
+          "summary": "UK to deploy jets to defend Saudi Arabia from Houthi attacks Yahoo News Canada",
+          "summary_snippet": "UK to deploy jets to defend Saudi Arabia from Houthi attacks Yahoo News Canada",
+          "source": "https://news.google.com/rss/articles/CBMid0FVX3lxTE8xQl9hM3ZsRkUyazBJQ3lmeVRfemFtaG0td1FicjFuMXhqT3o3cGl4QTJzUmhmMnpnYzlyMVAwU3pLMHh0Um9lWTVsZGtyWTR4aEhueWFFR2g4QktVYkYtWVo0S19LXzVWbW42SlVySjVNVEU3RUVR?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE8xQl9hM3ZsRkUyazBJQ3lmeVRfemFtaG0td1FicjFuMXhqT3o3cGl4QTJzUmhmMnpnYzlyMVAwU3pLMHh0Um9lWTVsZGtyWTR4aEhueWFFR2g4QktVYkYtWVo0S19LXzVWbW42SlVySjVNVEU3RUVR?oc=5",
+          "time": "2026-10-20T12:58:04Z",
+          "published_date": "2026-10-20T12:58:04Z",
+          "publishedDate": "2026-10-20T12:58:04Z",
+          "tag": "Breaking",
           "confidence": "DEVELOPING",
-          "breaking": false,
+          "breaking": true,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "google_news_afghanistan_security",
-            "sourceUrl": "https://news.google.com/rss/search?q=Afghanistan+Taliban+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "sourceId": "google_news_iran_israel",
+            "sourceUrl": "https://news.google.com/rss/search?q=Iran+Israel+conflict+missile+drone+strike+escalation+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
         }
       ]
     },
     {
-      "id": "79b300c026c16f36",
-      "title": "M 4.9 - Pagan region, Northern Mariana Islands",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "sourceCount": 1,
-      "sources": [
-        "earthquake.usgs.gov"
-      ],
-      "anchors": [],
-      "firstSeen": "2026-10-20T05:05:28.819000Z",
-      "lastSeen": "2026-10-20T07:33:12.040000Z",
-      "urls": [
-        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3kg",
-        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3jd"
-      ],
-      "reports": [
-        {
-          "id": "95106b8471a5",
-          "sourceLabel": "USGS M4.5+ Earthquakes — Past Day",
-          "sourceName": "USGS M4.5+ Earthquakes — Past Day",
-          "sourceType": "climate-hazard",
-          "title": "M 4.9 - Pagan region, Northern Mariana Islands",
-          "summary": "Time 2026-10-20 07:09:08 UTC 2026-10-20 07:09:08 UTC at epicenter Location 18.838°N 145.517°E Depth 250.03 km (155.36 mi)",
-          "summary_snippet": "Time 2026-10-20 07:09:08 UTC 2026-10-20 07:09:08 UTC at epicenter Location 18.838°N 145.517°E Depth 250.03 km (155.36 mi)",
-          "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3kg",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3kg",
-          "time": "2026-10-20T07:33:12.040000Z",
-          "published_date": "2026-10-20T07:33:12.040000Z",
-          "publishedDate": "2026-10-20T07:33:12.040000Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "usgs_m4_5_earthquakes_past_day",
-            "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
-            "feedFormat": "atom"
-          }
-        },
-        {
-          "id": "643e106e3d96",
-          "sourceLabel": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3jd",
-          "sourceName": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3jd",
-          "sourceType": "climate-hazard",
-          "title": "M 5.0 - Pagan region, Northern Mariana Islands",
-          "summary": "Time 2026-10-20 02:54:15 UTC 2026-10-20 02:54:15 UTC at epicenter Location 18.253°N 146.035°E Depth 129.36 km (80.38 mi)",
-          "summary_snippet": "Time 2026-10-20 02:54:15 UTC 2026-10-20 02:54:15 UTC at epicenter Location 18.253°N 146.035°E Depth 129.36 km (80.38 mi)",
-          "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3jd",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u3jd",
-          "time": "2026-10-20T05:05:28.819000Z",
-          "published_date": "2026-10-20T05:05:28.819000Z",
-          "publishedDate": "2026-10-20T05:05:28.819000Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "usgs_m4_5_earthquakes_past_day",
-            "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
-            "feedFormat": "atom"
-          }
-        }
-      ]
-    },
-    {
-      "id": "80c3fa4a25d216a2",
-      "title": "Korybko To Asif Durrani: The Russian-Pakistani Dispute Over Afghanistan Likely Won’t Be Resolved - Howl.link",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [
-        "russia"
-      ],
-      "firstSeen": "2026-10-20T06:15:32Z",
-      "lastSeen": "2026-10-20T06:16:11Z",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiO0FVX3lxTE9nTWhlb0dnUGl3V1V3OVdhSzFybUN6WVpqbnVxcFFXd1VHaFJVWjQzZk5MdW5IMDVLM2s4?oc=5",
-        "https://news.google.com/rss/articles/CBMiO0FVX3lxTE1fdkNaVzhkNTJtMlZXS1U0X2tPcW9iMzRwRVdob3ZFWm9SWTFacC1IckxNeXZKQUZ4NGg40gE7QVVfeXFMTV92Q1pXOGQ1Mm0yVldLVTRfa09xb2IzNHBFV2hvdkVab1JZMVpwLUhyTE15dkpBRng0aDg?oc=5"
-      ],
-      "reports": [
-        {
-          "id": "5289b5835398",
-          "sourceLabel": "Google News — Afghanistan Security",
-          "sourceName": "Google News — Afghanistan Security",
-          "sourceType": "south-asia-conflict",
-          "title": "Korybko To Asif Durrani: The Russian-Pakistani Dispute Over Afghanistan Likely Won’t Be Resolved - Howl.link",
-          "summary": "Korybko To Asif Durrani: The Russian-Pakistani Dispute Over Afghanistan Likely Won’t Be Resolved Howl.link",
-          "summary_snippet": "Korybko To Asif Durrani: The Russian-Pakistani Dispute Over Afghanistan Likely Won’t Be Resolved Howl.link",
-          "source": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE9nTWhlb0dnUGl3V1V3OVdhSzFybUN6WVpqbnVxcFFXd1VHaFJVWjQzZk5MdW5IMDVLM2s4?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE9nTWhlb0dnUGl3V1V3OVdhSzFybUN6WVpqbnVxcFFXd1VHaFJVWjQzZk5MdW5IMDVLM2s4?oc=5",
-          "time": "2026-10-20T06:16:11Z",
-          "published_date": "2026-10-20T06:16:11Z",
-          "publishedDate": "2026-10-20T06:16:11Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_afghanistan_security",
-            "sourceUrl": "https://news.google.com/rss/search?q=Afghanistan+Taliban+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "808194db0d6e",
-          "sourceLabel": "Google News — Afghanistan Security",
-          "sourceName": "Google News — Afghanistan Security",
-          "sourceType": "south-asia-conflict",
-          "title": "Korybko To Asif Durrani: The Russian-Pakistani Dispute Over Afghanistan Likely Won’t Be Resolved - Howl.link",
-          "summary": "Korybko To Asif Durrani: The Russian-Pakistani Dispute Over Afghanistan Likely Won’t Be Resolved Howl.link",
-          "summary_snippet": "Korybko To Asif Durrani: The Russian-Pakistani Dispute Over Afghanistan Likely Won’t Be Resolved Howl.link",
-          "source": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE1fdkNaVzhkNTJtMlZXS1U0X2tPcW9iMzRwRVdob3ZFWm9SWTFacC1IckxNeXZKQUZ4NGg40gE7QVVfeXFMTV92Q1pXOGQ1Mm0yVldLVTRfa09xb2IzNHBFV2hvdkVab1JZMVpwLUhyTE15dkpBRng0aDg?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE1fdkNaVzhkNTJtMlZXS1U0X2tPcW9iMzRwRVdob3ZFWm9SWTFacC1IckxNeXZKQUZ4NGg40gE7QVVfeXFMTV92Q1pXOGQ1Mm0yVldLVTRfa09xb2IzNHBFV2hvdkVab1JZMVpwLUhyTE15dkpBRng0aDg?oc=5",
-          "time": "2026-10-20T06:15:32Z",
-          "published_date": "2026-10-20T06:15:32Z",
-          "publishedDate": "2026-10-20T06:15:32Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_afghanistan_security",
-            "sourceUrl": "https://news.google.com/rss/search?q=Afghanistan+Taliban+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "ef0e53db938d9e38",
-      "title": "Indian rappers use music to sound climate alarm - Kuwait Times",
+      "id": "ddd4d222a8fa0759",
+      "title": "Pakistan has one expectation from Taliban regime, no use of Afghan soil for terrorism, says FM Dar at SCO - The Express Tribune",
       "category": "general",
       "confidence": "low",
       "reportCount": 2,
@@ -1277,26 +1188,158 @@
         "news.google.com"
       ],
       "anchors": [],
-      "firstSeen": "2026-10-20T04:15:00Z",
-      "lastSeen": "2026-10-20T04:41:15Z",
+      "firstSeen": "2026-10-20T11:42:45Z",
+      "lastSeen": "2026-10-20T11:42:45Z",
       "urls": [
-        "https://news.google.com/rss/articles/CBMilwFBVV95cUxQaVJ1ckhhM19OVmJTSEZTZHoyX0VDYzlYenNESnNlNk9NT0F5aGYxb3BaOURTNldWZUNKZFJzTHJ1Z2lIMWRSVFhJY2drM1J0V0g1eEpaeEwzZm1JekRpeE9BNkloZU5HTGVJTU9xOWVrZFRla2pfS1J0M19Tdi14MkdmOGlYbnozZlVqVjR1c1hnUHhVdGlJ0gGbAUFVX3lxTE9fN0FsMndGdnh0UmsyS2FVSk5pU1BZeDRlMVhrdkdKSHZMNmphTGIyMVVtN0VDMzlhRVgtQzBCN2Q3LS11T0d6MW9hbU1VSW1QakdrVFdMM1c1dk8zWF9ZZnFHa0dET1ROSGJKLVRWcGc3V3F0UGRVUkIxMlk4S3ZLaUtIQ0hpcmItUF8wMmQ3RGhEdFNQLWN3VVRr?oc=5",
-        "https://news.google.com/rss/articles/CBMimwFBVV95cUxPXzdBbDJ3RnZ4dFJrMkthVUpOaVNQWXg0ZTFYa3ZHSkh2TDZqYUxiMjFVbTdFQzM5YUVYLUMwQjdkNy0tdU9HejFvYW1NVUltUGpHa1RXTDNXNXZPM1hfWWZxR2tHRE9UTkhiSi1UVnBnN1dxdFBkVVJCMTJZOEt2S2lLSENIaXJiLVBfMDJkN0RoRHRTUC1jd1VUa9IBmwFBVV95cUxPXzdBbDJ3RnZ4dFJrMkthVUpOaVNQWXg0ZTFYa3ZHSkh2TDZqYUxiMjFVbTdFQzM5YUVYLUMwQjdkNy0tdU9HejFvYW1NVUltUGpHa1RXTDNXNXZPM1hfWWZxR2tHRE9UTkhiSi1UVnBnN1dxdFBkVVJCMTJZOEt2S2lLSENIaXJiLVBfMDJkN0RoRHRTUC1jd1VUaw?oc=5"
+        "https://news.google.com/rss/articles/CBMizgFBVV95cUxPSTRZdmVRZzlKc0lUYkFRQTZDZlk4MDRtTlNJRWsyUFlBN0RzVUpWR1RUVjNKOTh2TERZLVlULXJWUnpYUjMxdWZLMzUxS0hGY2xSRjl0YnR5Rmd1ZllTQmthLTJQbU1VTUlaOHhENnZSOFpER3c3eHpFZVVLd2tmbXo3eGo0VGp1Q1h2N3J3VEVBMjczeWhlMWZYUGdVdUNLemtZVGVKalVnXzA5RjNEZW03U3BrMGJTMHhkMC1IWEpfb0NuMzJPZnBsOC1Gd9IB1gFBVV95cUxQWTNxRWJMZjBDVkRDOUNkd1Q2OHJCbGJHT3lTOUcwcXZpQllrRkNYajFVQVFseG9reEFNSVFJNjNpU255WkZkQVFmOXI0VkIwcnBsMTlFc1YxaXBiLU93SzdqWWI3d05jcUxfSDlTbjZ2SkItZ0Y3Zzh6M3dldl9lQmd6ck1HNDV3OVk0cWVIS3QyZy1PVmlpZHkta0JvYXhhRTBseWdZZ25jcm9OTVozTmZkOXZLelliYjhlQWRUV2lnTC1BODRqSTVRQ3NwYzZ4VWJLc3F3?oc=5",
+        "https://news.google.com/rss/articles/CBMizgFBVV95cUxPSTRZdmVRZzlKc0lUYkFRQTZDZlk4MDRtTlNJRWsyUFlBN0RzVUpWR1RUVjNKOTh2TERZLVlULXJWUnpYUjMxdWZLMzUxS0hGY2xSRjl0YnR5Rmd1ZllTQmthLTJQbU1VTUlaOHhENnZSOFpER3c3eHpFZVVLd2tmbXo3eGo0VGp1Q1h2N3J3VEVBMjczeWhlMWZYUGdVdUNLemtZVGVKalVnXzA5RjNEZW03U3BrMGJTMHhkMC1IWEpfb0NuMzJPZnBsOC1Gdw?oc=5"
       ],
       "reports": [
         {
-          "id": "1047d8276999",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQaVJ1ckhhM19OVmJTSEZTZHoyX0VDYzlYenNESnNlNk9NT0F5aGYxb3BaOURTNldWZUNKZFJzTHJ1Z2lIMWRSVFhJY2drM1J0V0g1eEpaeEwzZm1JekRpeE9BNkloZU5HTGVJTU9xOWVrZFRla2pfS1J0M19Tdi14MkdmOGlYbnozZlVqVjR1c1hnUHhVdGlJ0gGbAUFVX3lxTE9fN0FsMndGdnh0UmsyS2FVSk5pU1BZeDRlMVhrdkdKSHZMNmphTGIyMVVtN0VDMzlhRVgtQzBCN2Q3LS11T0d6MW9hbU1VSW1QakdrVFdMM1c1dk8zWF9ZZnFHa0dET1ROSGJKLVRWcGc3V3F0UGRVUkIxMlk4S3ZLaUtIQ0hpcmItUF8wMmQ3RGhEdFNQLWN3VVRr?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQaVJ1ckhhM19OVmJTSEZTZHoyX0VDYzlYenNESnNlNk9NT0F5aGYxb3BaOURTNldWZUNKZFJzTHJ1Z2lIMWRSVFhJY2drM1J0V0g1eEpaeEwzZm1JekRpeE9BNkloZU5HTGVJTU9xOWVrZFRla2pfS1J0M19Tdi14MkdmOGlYbnozZlVqVjR1c1hnUHhVdGlJ0gGbAUFVX3lxTE9fN0FsMndGdnh0UmsyS2FVSk5pU1BZeDRlMVhrdkdKSHZMNmphTGIyMVVtN0VDMzlhRVgtQzBCN2Q3LS11T0d6MW9hbU1VSW1QakdrVFdMM1c1dk8zWF9ZZnFHa0dET1ROSGJKLVRWcGc3V3F0UGRVUkIxMlk4S3ZLaUtIQ0hpcmItUF8wMmQ3RGhEdFNQLWN3VVRr?oc=5",
+          "id": "52ca6b2307da",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPSTRZdmVRZzlKc0lUYkFRQTZDZlk4MDRtTlNJRWsyUFlBN0RzVUpWR1RUVjNKOTh2TERZLVlULXJWUnpYUjMxdWZLMzUxS0hGY2xSRjl0YnR5Rmd1ZllTQmthLTJQbU1VTUlaOHhENnZSOFpER3c3eHpFZVVLd2tmbXo3eGo0VGp1Q1h2N3J3VEVBMjczeWhlMWZYUGdVdUNLemtZVGVKalVnXzA5RjNEZW03U3BrMGJTMHhkMC1IWEpfb0NuMzJPZnBsOC1Gd9IB1gFBVV95cUxQWTNxRWJMZjBDVkRDOUNkd1Q2OHJCbGJHT3lTOUcwcXZpQllrRkNYajFVQVFseG9reEFNSVFJNjNpU255WkZkQVFmOXI0VkIwcnBsMTlFc1YxaXBiLU93SzdqWWI3d05jcUxfSDlTbjZ2SkItZ0Y3Zzh6M3dldl9lQmd6ck1HNDV3OVk0cWVIS3QyZy1PVmlpZHkta0JvYXhhRTBseWdZZ25jcm9OTVozTmZkOXZLelliYjhlQWRUV2lnTC1BODRqSTVRQ3NwYzZ4VWJLc3F3?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPSTRZdmVRZzlKc0lUYkFRQTZDZlk4MDRtTlNJRWsyUFlBN0RzVUpWR1RUVjNKOTh2TERZLVlULXJWUnpYUjMxdWZLMzUxS0hGY2xSRjl0YnR5Rmd1ZllTQmthLTJQbU1VTUlaOHhENnZSOFpER3c3eHpFZVVLd2tmbXo3eGo0VGp1Q1h2N3J3VEVBMjczeWhlMWZYUGdVdUNLemtZVGVKalVnXzA5RjNEZW03U3BrMGJTMHhkMC1IWEpfb0NuMzJPZnBsOC1Gd9IB1gFBVV95cUxQWTNxRWJMZjBDVkRDOUNkd1Q2OHJCbGJHT3lTOUcwcXZpQllrRkNYajFVQVFseG9reEFNSVFJNjNpU255WkZkQVFmOXI0VkIwcnBsMTlFc1YxaXBiLU93SzdqWWI3d05jcUxfSDlTbjZ2SkItZ0Y3Zzh6M3dldl9lQmd6ck1HNDV3OVk0cWVIS3QyZy1PVmlpZHkta0JvYXhhRTBseWdZZ25jcm9OTVozTmZkOXZLelliYjhlQWRUV2lnTC1BODRqSTVRQ3NwYzZ4VWJLc3F3?oc=5",
+          "sourceType": "south-asia-conflict",
+          "title": "Pakistan has one expectation from Taliban regime, no use of Afghan soil for terrorism, says FM Dar at SCO - The Express Tribune",
+          "summary": "Pakistan has one expectation from Taliban regime, no use of Afghan soil for terrorism, says FM Dar at SCO The Express Tribune",
+          "summary_snippet": "Pakistan has one expectation from Taliban regime, no use of Afghan soil for terrorism, says FM Dar at SCO The Express Tribune",
+          "source": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPSTRZdmVRZzlKc0lUYkFRQTZDZlk4MDRtTlNJRWsyUFlBN0RzVUpWR1RUVjNKOTh2TERZLVlULXJWUnpYUjMxdWZLMzUxS0hGY2xSRjl0YnR5Rmd1ZllTQmthLTJQbU1VTUlaOHhENnZSOFpER3c3eHpFZVVLd2tmbXo3eGo0VGp1Q1h2N3J3VEVBMjczeWhlMWZYUGdVdUNLemtZVGVKalVnXzA5RjNEZW03U3BrMGJTMHhkMC1IWEpfb0NuMzJPZnBsOC1Gd9IB1gFBVV95cUxQWTNxRWJMZjBDVkRDOUNkd1Q2OHJCbGJHT3lTOUcwcXZpQllrRkNYajFVQVFseG9reEFNSVFJNjNpU255WkZkQVFmOXI0VkIwcnBsMTlFc1YxaXBiLU93SzdqWWI3d05jcUxfSDlTbjZ2SkItZ0Y3Zzh6M3dldl9lQmd6ck1HNDV3OVk0cWVIS3QyZy1PVmlpZHkta0JvYXhhRTBseWdZZ25jcm9OTVozTmZkOXZLelliYjhlQWRUV2lnTC1BODRqSTVRQ3NwYzZ4VWJLc3F3?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPSTRZdmVRZzlKc0lUYkFRQTZDZlk4MDRtTlNJRWsyUFlBN0RzVUpWR1RUVjNKOTh2TERZLVlULXJWUnpYUjMxdWZLMzUxS0hGY2xSRjl0YnR5Rmd1ZllTQmthLTJQbU1VTUlaOHhENnZSOFpER3c3eHpFZVVLd2tmbXo3eGo0VGp1Q1h2N3J3VEVBMjczeWhlMWZYUGdVdUNLemtZVGVKalVnXzA5RjNEZW03U3BrMGJTMHhkMC1IWEpfb0NuMzJPZnBsOC1Gd9IB1gFBVV95cUxQWTNxRWJMZjBDVkRDOUNkd1Q2OHJCbGJHT3lTOUcwcXZpQllrRkNYajFVQVFseG9reEFNSVFJNjNpU255WkZkQVFmOXI0VkIwcnBsMTlFc1YxaXBiLU93SzdqWWI3d05jcUxfSDlTbjZ2SkItZ0Y3Zzh6M3dldl9lQmd6ck1HNDV3OVk0cWVIS3QyZy1PVmlpZHkta0JvYXhhRTBseWdZZ25jcm9OTVozTmZkOXZLelliYjhlQWRUV2lnTC1BODRqSTVRQ3NwYzZ4VWJLc3F3?oc=5",
+          "time": "2026-10-20T11:42:45Z",
+          "published_date": "2026-10-20T11:42:45Z",
+          "publishedDate": "2026-10-20T11:42:45Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_afghanistan_security",
+            "sourceUrl": "https://news.google.com/rss/search?q=Afghanistan+Taliban+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "1f17355ade6a",
+          "sourceLabel": "Google News — Afghanistan Security",
+          "sourceName": "Google News — Afghanistan Security",
+          "sourceType": "south-asia-conflict",
+          "title": "Pakistan has one expectation from Taliban regime, no use of Afghan soil for terrorism, says FM Dar at SCO - The Express Tribune",
+          "summary": "Pakistan has one expectation from Taliban regime, no use of Afghan soil for terrorism, says FM Dar at SCO The Express Tribune",
+          "summary_snippet": "Pakistan has one expectation from Taliban regime, no use of Afghan soil for terrorism, says FM Dar at SCO The Express Tribune",
+          "source": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPSTRZdmVRZzlKc0lUYkFRQTZDZlk4MDRtTlNJRWsyUFlBN0RzVUpWR1RUVjNKOTh2TERZLVlULXJWUnpYUjMxdWZLMzUxS0hGY2xSRjl0YnR5Rmd1ZllTQmthLTJQbU1VTUlaOHhENnZSOFpER3c3eHpFZVVLd2tmbXo3eGo0VGp1Q1h2N3J3VEVBMjczeWhlMWZYUGdVdUNLemtZVGVKalVnXzA5RjNEZW03U3BrMGJTMHhkMC1IWEpfb0NuMzJPZnBsOC1Gdw?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPSTRZdmVRZzlKc0lUYkFRQTZDZlk4MDRtTlNJRWsyUFlBN0RzVUpWR1RUVjNKOTh2TERZLVlULXJWUnpYUjMxdWZLMzUxS0hGY2xSRjl0YnR5Rmd1ZllTQmthLTJQbU1VTUlaOHhENnZSOFpER3c3eHpFZVVLd2tmbXo3eGo0VGp1Q1h2N3J3VEVBMjczeWhlMWZYUGdVdUNLemtZVGVKalVnXzA5RjNEZW03U3BrMGJTMHhkMC1IWEpfb0NuMzJPZnBsOC1Gdw?oc=5",
+          "time": "2026-10-20T11:42:45Z",
+          "published_date": "2026-10-20T11:42:45Z",
+          "publishedDate": "2026-10-20T11:42:45Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_afghanistan_security",
+            "sourceUrl": "https://news.google.com/rss/search?q=Afghanistan+Taliban+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
+      "id": "4066761cb0024bb4",
+      "title": "CNN News Central - CNN",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 2,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "2026-10-20T11:00:00Z",
+      "lastSeen": "2026-10-20T11:30:00Z",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMicEFVX3lxTE9iTlowbmNxTndKZzJKTFRYVU1xMm51dUwwTFBaNjkxUTBBM1VoVGx2aDIySjViX0NQSmI2SldqdlRsbHI2ZjUxQVNDbkhEbFRRVWRCMWU5MWx0dDdVLTdsYlh6NWVDUlZtaW1yb1JCVUE?oc=5",
+        "https://news.google.com/rss/articles/CBMicEFVX3lxTE1SOXpkYUZHN2NLQWtZUHVaQkhlZ3dweklpYV8xbC1zUEZSQVcxcjJiRFBKcjBkOEx0QkV4ZDBKbHVjY2UtVVFiVEI3MFlMWWp5VDJzNldRTEJ2ekVQblhVYlR2TXVNTkpIYzBjSXNlMTI?oc=5"
+      ],
+      "reports": [
+        {
+          "id": "ee832a29cd18",
+          "sourceLabel": "Google News — CNN Politics",
+          "sourceName": "Google News — CNN Politics",
+          "sourceType": "us-politics",
+          "title": "CNN News Central - CNN",
+          "summary": "CNN News Central CNN",
+          "summary_snippet": "CNN News Central CNN",
+          "source": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9iTlowbmNxTndKZzJKTFRYVU1xMm51dUwwTFBaNjkxUTBBM1VoVGx2aDIySjViX0NQSmI2SldqdlRsbHI2ZjUxQVNDbkhEbFRRVWRCMWU5MWx0dDdVLTdsYlh6NWVDUlZtaW1yb1JCVUE?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9iTlowbmNxTndKZzJKTFRYVU1xMm51dUwwTFBaNjkxUTBBM1VoVGx2aDIySjViX0NQSmI2SldqdlRsbHI2ZjUxQVNDbkhEbFRRVWRCMWU5MWx0dDdVLTdsYlh6NWVDUlZtaW1yb1JCVUE?oc=5",
+          "time": "2026-10-20T11:30:00Z",
+          "published_date": "2026-10-20T11:30:00Z",
+          "publishedDate": "2026-10-20T11:30:00Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_cnn_politics",
+            "sourceUrl": "https://news.google.com/rss/search?q=site%3Acnn.com+politics+Trump+Congress+Senate+White+House+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "31b6b6c01f7b",
+          "sourceLabel": "Google News — CNN Politics",
+          "sourceName": "Google News — CNN Politics",
+          "sourceType": "us-politics",
+          "title": "CNN News Central - CNN",
+          "summary": "CNN News Central CNN",
+          "summary_snippet": "CNN News Central CNN",
+          "source": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1SOXpkYUZHN2NLQWtZUHVaQkhlZ3dweklpYV8xbC1zUEZSQVcxcjJiRFBKcjBkOEx0QkV4ZDBKbHVjY2UtVVFiVEI3MFlMWWp5VDJzNldRTEJ2ekVQblhVYlR2TXVNTkpIYzBjSXNlMTI?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1SOXpkYUZHN2NLQWtZUHVaQkhlZ3dweklpYV8xbC1zUEZSQVcxcjJiRFBKcjBkOEx0QkV4ZDBKbHVjY2UtVVFiVEI3MFlMWWp5VDJzNldRTEJ2ekVQblhVYlR2TXVNTkpIYzBjSXNlMTI?oc=5",
+          "time": "2026-10-20T11:00:00Z",
+          "published_date": "2026-10-20T11:00:00Z",
+          "publishedDate": "2026-10-20T11:00:00Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_cnn_politics",
+            "sourceUrl": "https://news.google.com/rss/search?q=site%3Acnn.com+politics+Trump+Congress+Senate+White+House+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
+      "id": "5b704b292f7e4353",
+      "title": "Water scarcity and costly imports threaten food security in landlocked countries - Yahoo News Singapore",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 2,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "2026-10-20T11:25:02Z",
+      "lastSeen": "2026-10-20T11:25:02Z",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMihgFBVV95cUxPTHFEWG1iQkYyUHdyVDlVMVRtRU45QUFINmw5MkZYNHFURV92U00zMmY3R3lVQW56ZGpIVU1VdzRYT3ZmaW9EQnBhVnJETjJPY3EyajBob1Q5WVdmaFRqWnc0MVNZa3ZydzNYSVdQYVkzcTAzTlJkaTFTbXVXVThuT3VrZnBTZw?oc=5",
+        "https://news.google.com/rss/articles/CBMimwFBVV95cUxQSkxMWWxuZEQtbEpXX0RuVEJsWWFsdXY5bVBiem4xaEhZQ3h5bUlhX1BRLWJVQ3ZaM094LXpDNGlWdXNLQzlOUktJWEZOYlBXTjNwRkhsUlpwU2tCS1RBTU52QTZDdjcwVVVKNDdwdDJHTV9DMDdVYkt4M3NCZnhIWl9FeWM0NWx5LWF3Z3VadkduTkZtVnlmcEF5WQ?oc=5"
+      ],
+      "reports": [
+        {
+          "id": "e109f97e531d",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPTHFEWG1iQkYyUHdyVDlVMVRtRU45QUFINmw5MkZYNHFURV92U00zMmY3R3lVQW56ZGpIVU1VdzRYT3ZmaW9EQnBhVnJETjJPY3EyajBob1Q5WVdmaFRqWnc0MVNZa3ZydzNYSVdQYVkzcTAzTlJkaTFTbXVXVThuT3VrZnBTZw?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPTHFEWG1iQkYyUHdyVDlVMVRtRU45QUFINmw5MkZYNHFURV92U00zMmY3R3lVQW56ZGpIVU1VdzRYT3ZmaW9EQnBhVnJETjJPY3EyajBob1Q5WVdmaFRqWnc0MVNZa3ZydzNYSVdQYVkzcTAzTlJkaTFTbXVXVThuT3VrZnBTZw?oc=5",
           "sourceType": "climate-hazard",
-          "title": "Indian rappers use music to sound climate alarm - Kuwait Times",
-          "summary": "Indian rappers use music to sound climate alarm Kuwait Times",
-          "summary_snippet": "Indian rappers use music to sound climate alarm Kuwait Times",
-          "source": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQaVJ1ckhhM19OVmJTSEZTZHoyX0VDYzlYenNESnNlNk9NT0F5aGYxb3BaOURTNldWZUNKZFJzTHJ1Z2lIMWRSVFhJY2drM1J0V0g1eEpaeEwzZm1JekRpeE9BNkloZU5HTGVJTU9xOWVrZFRla2pfS1J0M19Tdi14MkdmOGlYbnozZlVqVjR1c1hnUHhVdGlJ0gGbAUFVX3lxTE9fN0FsMndGdnh0UmsyS2FVSk5pU1BZeDRlMVhrdkdKSHZMNmphTGIyMVVtN0VDMzlhRVgtQzBCN2Q3LS11T0d6MW9hbU1VSW1QakdrVFdMM1c1dk8zWF9ZZnFHa0dET1ROSGJKLVRWcGc3V3F0UGRVUkIxMlk4S3ZLaUtIQ0hpcmItUF8wMmQ3RGhEdFNQLWN3VVRr?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQaVJ1ckhhM19OVmJTSEZTZHoyX0VDYzlYenNESnNlNk9NT0F5aGYxb3BaOURTNldWZUNKZFJzTHJ1Z2lIMWRSVFhJY2drM1J0V0g1eEpaeEwzZm1JekRpeE9BNkloZU5HTGVJTU9xOWVrZFRla2pfS1J0M19Tdi14MkdmOGlYbnozZlVqVjR1c1hnUHhVdGlJ0gGbAUFVX3lxTE9fN0FsMndGdnh0UmsyS2FVSk5pU1BZeDRlMVhrdkdKSHZMNmphTGIyMVVtN0VDMzlhRVgtQzBCN2Q3LS11T0d6MW9hbU1VSW1QakdrVFdMM1c1dk8zWF9ZZnFHa0dET1ROSGJKLVRWcGc3V3F0UGRVUkIxMlk4S3ZLaUtIQ0hpcmItUF8wMmQ3RGhEdFNQLWN3VVRr?oc=5",
-          "time": "2026-10-20T04:41:15Z",
-          "published_date": "2026-10-20T04:41:15Z",
-          "publishedDate": "2026-10-20T04:41:15Z",
+          "title": "Water scarcity and costly imports threaten food security in landlocked countries - Yahoo News Singapore",
+          "summary": "Water scarcity and costly imports threaten food security in landlocked countries Yahoo News Singapore",
+          "summary_snippet": "Water scarcity and costly imports threaten food security in landlocked countries Yahoo News Singapore",
+          "source": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPTHFEWG1iQkYyUHdyVDlVMVRtRU45QUFINmw5MkZYNHFURV92U00zMmY3R3lVQW56ZGpIVU1VdzRYT3ZmaW9EQnBhVnJETjJPY3EyajBob1Q5WVdmaFRqWnc0MVNZa3ZydzNYSVdQYVkzcTAzTlJkaTFTbXVXVThuT3VrZnBTZw?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPTHFEWG1iQkYyUHdyVDlVMVRtRU45QUFINmw5MkZYNHFURV92U00zMmY3R3lVQW56ZGpIVU1VdzRYT3ZmaW9EQnBhVnJETjJPY3EyajBob1Q5WVdmaFRqWnc0MVNZa3ZydzNYSVdQYVkzcTAzTlJkaTFTbXVXVThuT3VrZnBTZw?oc=5",
+          "time": "2026-10-20T11:25:02Z",
+          "published_date": "2026-10-20T11:25:02Z",
+          "publishedDate": "2026-10-20T11:25:02Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
@@ -1308,18 +1351,18 @@
           }
         },
         {
-          "id": "9bf5e6392e67",
+          "id": "857a2b766889",
           "sourceLabel": "Google News — Climate Security",
           "sourceName": "Google News — Climate Security",
           "sourceType": "climate-hazard",
-          "title": "Indian rappers use music to sound climate alarm - Kuwait Times",
-          "summary": "Indian rappers use music to sound climate alarm Kuwait Times",
-          "summary_snippet": "Indian rappers use music to sound climate alarm Kuwait Times",
-          "source": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPXzdBbDJ3RnZ4dFJrMkthVUpOaVNQWXg0ZTFYa3ZHSkh2TDZqYUxiMjFVbTdFQzM5YUVYLUMwQjdkNy0tdU9HejFvYW1NVUltUGpHa1RXTDNXNXZPM1hfWWZxR2tHRE9UTkhiSi1UVnBnN1dxdFBkVVJCMTJZOEt2S2lLSENIaXJiLVBfMDJkN0RoRHRTUC1jd1VUa9IBmwFBVV95cUxPXzdBbDJ3RnZ4dFJrMkthVUpOaVNQWXg0ZTFYa3ZHSkh2TDZqYUxiMjFVbTdFQzM5YUVYLUMwQjdkNy0tdU9HejFvYW1NVUltUGpHa1RXTDNXNXZPM1hfWWZxR2tHRE9UTkhiSi1UVnBnN1dxdFBkVVJCMTJZOEt2S2lLSENIaXJiLVBfMDJkN0RoRHRTUC1jd1VUaw?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPXzdBbDJ3RnZ4dFJrMkthVUpOaVNQWXg0ZTFYa3ZHSkh2TDZqYUxiMjFVbTdFQzM5YUVYLUMwQjdkNy0tdU9HejFvYW1NVUltUGpHa1RXTDNXNXZPM1hfWWZxR2tHRE9UTkhiSi1UVnBnN1dxdFBkVVJCMTJZOEt2S2lLSENIaXJiLVBfMDJkN0RoRHRTUC1jd1VUa9IBmwFBVV95cUxPXzdBbDJ3RnZ4dFJrMkthVUpOaVNQWXg0ZTFYa3ZHSkh2TDZqYUxiMjFVbTdFQzM5YUVYLUMwQjdkNy0tdU9HejFvYW1NVUltUGpHa1RXTDNXNXZPM1hfWWZxR2tHRE9UTkhiSi1UVnBnN1dxdFBkVVJCMTJZOEt2S2lLSENIaXJiLVBfMDJkN0RoRHRTUC1jd1VUaw?oc=5",
-          "time": "2026-10-20T04:15:00Z",
-          "published_date": "2026-10-20T04:15:00Z",
-          "publishedDate": "2026-10-20T04:15:00Z",
+          "title": "Water scarcity and costly imports threaten food security in landlocked countries - Yahoo",
+          "summary": "Water scarcity and costly imports threaten food security in landlocked countries Yahoo",
+          "summary_snippet": "Water scarcity and costly imports threaten food security in landlocked countries Yahoo",
+          "source": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQSkxMWWxuZEQtbEpXX0RuVEJsWWFsdXY5bVBiem4xaEhZQ3h5bUlhX1BRLWJVQ3ZaM094LXpDNGlWdXNLQzlOUktJWEZOYlBXTjNwRkhsUlpwU2tCS1RBTU52QTZDdjcwVVVKNDdwdDJHTV9DMDdVYkt4M3NCZnhIWl9FeWM0NWx5LWF3Z3VadkduTkZtVnlmcEF5WQ?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQSkxMWWxuZEQtbEpXX0RuVEJsWWFsdXY5bVBiem4xaEhZQ3h5bUlhX1BRLWJVQ3ZaM094LXpDNGlWdXNLQzlOUktJWEZOYlBXTjNwRkhsUlpwU2tCS1RBTU52QTZDdjcwVVVKNDdwdDJHTV9DMDdVYkt4M3NCZnhIWl9FeWM0NWx5LWF3Z3VadkduTkZtVnlmcEF5WQ?oc=5",
+          "time": "2026-10-20T11:25:02Z",
+          "published_date": "2026-10-20T11:25:02Z",
+          "publishedDate": "2026-10-20T11:25:02Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
@@ -1333,8 +1376,8 @@
       ]
     },
     {
-      "id": "70c62a3512da5a8f",
-      "title": "Russian Offensive Campaign Assessment, October 19, 2026 - Institute for the Study of War",
+      "id": "e4ed87c883daefe6",
+      "title": "US WarSec Hegseth makes secret visit to Israel, meets Netanyahu amid rumors of Iranian escalation - All Israel News",
       "category": "general",
       "confidence": "low",
       "reportCount": 2,
@@ -1343,28 +1386,99 @@
         "news.google.com"
       ],
       "anchors": [
-        "russia"
+        "iran",
+        "israel"
       ],
-      "firstSeen": "2026-10-19T23:37:12Z",
-      "lastSeen": "2026-10-20T02:15:00Z",
+      "firstSeen": "2026-10-20T10:41:01Z",
+      "lastSeen": "2026-10-20T10:54:28Z",
       "urls": [
-        "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNRUZiRk9iMnJTb0tpV3BWSFBCY2tvUzBrakxjQWxjU1ozNW8wUU13eWtXM3FldVBrVzBoWU1vcVNmeUVEMUxfUTZlclVJN0R0czh3amk1X1ZZamNvb3FpY1hRelphMk9ZWHZYWFNyeWRILWxPMG81VjNGMnlGb1VLMHMwZjFyempuZzJ1eFJUamdzc3JJS3pWdDdjb1VvOHUybGl5aFJ0RG9SMlk?oc=5",
-        "https://news.google.com/rss/articles/CBMimgFBVV95cUxNblcxRGlDRmtjOERyZkw4X09vdlBHMHNLd1d4Tk42WVZ4LWdONzVtV0RiWkxRR2pRQklVcm93OGFpSVVxdHRDOXBGcUNXNUNkRTdWSnF5cHJMbGZ5UlpERE9uS000UFppVFhSbVJFSWRJRjhQM0JPS2NWRE8wWHZ4LXVTY3ZwOHhMOHF1X041S09yMlFodFpzVVdB?oc=5"
+        "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOU2tWUGlGMDY1REc2a3pZU1ZrdDVNeUdpRDR3bHhOTnd1S0czcjZ6Ym9OdUJRVTltSUhQVzRCUW9DYVlQX0NrZVdwWFphWHJlVVR2eHBGX21BUFBGNGhQZ2dUSzEtSmpVOXc5cl9LWENJd1p6ZG01Y1RTbkRYeXAwRUxCMHhxUG5vWkdxMmlkcEJkTm9YWEg1UkZlakdZejVqc1VZTGZkb1ZzS3ZxXzlCZUdEWF95Z21MRHVieFI0eWE?oc=5",
+        "https://news.google.com/rss/articles/CBMijgFBVV95cUxPTVZ5ekNnd0lWdHo2RW5CVnUtOVZqZG5VUWd6V1pUQ2d0a2NxWFEwRzI5OTBQckZtTnVKUWRMZzNuT3N0X1V5YXlEU0lfdWtRY0hlRXRJSlNpNFhXZ3hYN240RTNCamhPSDBSaGdVZ0J2TUl4RDR3QUFFa1laMDRQTm5kOWF4QXZjTWdyZjR3?oc=5"
       ],
       "reports": [
         {
-          "id": "8b7bd09cef67",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNRUZiRk9iMnJTb0tpV3BWSFBCY2tvUzBrakxjQWxjU1ozNW8wUU13eWtXM3FldVBrVzBoWU1vcVNmeUVEMUxfUTZlclVJN0R0czh3amk1X1ZZamNvb3FpY1hRelphMk9ZWHZYWFNyeWRILWxPMG81VjNGMnlGb1VLMHMwZjFyempuZzJ1eFJUamdzc3JJS3pWdDdjb1VvOHUybGl5aFJ0RG9SMlk?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNRUZiRk9iMnJTb0tpV3BWSFBCY2tvUzBrakxjQWxjU1ozNW8wUU13eWtXM3FldVBrVzBoWU1vcVNmeUVEMUxfUTZlclVJN0R0czh3amk1X1ZZamNvb3FpY1hRelphMk9ZWHZYWFNyeWRILWxPMG81VjNGMnlGb1VLMHMwZjFyempuZzJ1eFJUamdzc3JJS3pWdDdjb1VvOHUybGl5aFJ0RG9SMlk?oc=5",
+          "id": "b2a9eda37240",
+          "sourceLabel": "Google News — Iran Israel",
+          "sourceName": "Google News — Iran Israel",
+          "sourceType": "middle-east-conflict",
+          "title": "US WarSec Hegseth makes secret visit to Israel, meets Netanyahu amid rumors of Iranian escalation - All Israel News",
+          "summary": "US WarSec Hegseth makes secret visit to Israel, meets Netanyahu amid rumors of Iranian escalation All Israel News",
+          "summary_snippet": "US WarSec Hegseth makes secret visit to Israel, meets Netanyahu amid rumors of Iranian escalation All Israel News",
+          "source": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOU2tWUGlGMDY1REc2a3pZU1ZrdDVNeUdpRDR3bHhOTnd1S0czcjZ6Ym9OdUJRVTltSUhQVzRCUW9DYVlQX0NrZVdwWFphWHJlVVR2eHBGX21BUFBGNGhQZ2dUSzEtSmpVOXc5cl9LWENJd1p6ZG01Y1RTbkRYeXAwRUxCMHhxUG5vWkdxMmlkcEJkTm9YWEg1UkZlakdZejVqc1VZTGZkb1ZzS3ZxXzlCZUdEWF95Z21MRHVieFI0eWE?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOU2tWUGlGMDY1REc2a3pZU1ZrdDVNeUdpRDR3bHhOTnd1S0czcjZ6Ym9OdUJRVTltSUhQVzRCUW9DYVlQX0NrZVdwWFphWHJlVVR2eHBGX21BUFBGNGhQZ2dUSzEtSmpVOXc5cl9LWENJd1p6ZG01Y1RTbkRYeXAwRUxCMHhxUG5vWkdxMmlkcEJkTm9YWEg1UkZlakdZejVqc1VZTGZkb1ZzS3ZxXzlCZUdEWF95Z21MRHVieFI0eWE?oc=5",
+          "time": "2026-10-20T10:54:28Z",
+          "published_date": "2026-10-20T10:54:28Z",
+          "publishedDate": "2026-10-20T10:54:28Z",
+          "tag": "Breaking",
+          "confidence": "DEVELOPING",
+          "breaking": true,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_iran_israel",
+            "sourceUrl": "https://news.google.com/rss/search?q=Iran+Israel+conflict+missile+drone+strike+escalation+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "89ee4d8b9c68",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPTVZ5ekNnd0lWdHo2RW5CVnUtOVZqZG5VUWd6V1pUQ2d0a2NxWFEwRzI5OTBQckZtTnVKUWRMZzNuT3N0X1V5YXlEU0lfdWtRY0hlRXRJSlNpNFhXZ3hYN240RTNCamhPSDBSaGdVZ0J2TUl4RDR3QUFFa1laMDRQTm5kOWF4QXZjTWdyZjR3?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPTVZ5ekNnd0lWdHo2RW5CVnUtOVZqZG5VUWd6V1pUQ2d0a2NxWFEwRzI5OTBQckZtTnVKUWRMZzNuT3N0X1V5YXlEU0lfdWtRY0hlRXRJSlNpNFhXZ3hYN240RTNCamhPSDBSaGdVZ0J2TUl4RDR3QUFFa1laMDRQTm5kOWF4QXZjTWdyZjR3?oc=5",
+          "sourceType": "middle-east-conflict",
+          "title": "Iran war latest: Hegseth makes surprise visit to Israel as Netanyahu tells Trump 'we have job to finish' - The National",
+          "summary": "Iran war latest: Hegseth makes surprise visit to Israel as Netanyahu tells Trump 'we have job to finish' The National",
+          "summary_snippet": "Iran war latest: Hegseth makes surprise visit to Israel as Netanyahu tells Trump 'we have job to finish' The National",
+          "source": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPTVZ5ekNnd0lWdHo2RW5CVnUtOVZqZG5VUWd6V1pUQ2d0a2NxWFEwRzI5OTBQckZtTnVKUWRMZzNuT3N0X1V5YXlEU0lfdWtRY0hlRXRJSlNpNFhXZ3hYN240RTNCamhPSDBSaGdVZ0J2TUl4RDR3QUFFa1laMDRQTm5kOWF4QXZjTWdyZjR3?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPTVZ5ekNnd0lWdHo2RW5CVnUtOVZqZG5VUWd6V1pUQ2d0a2NxWFEwRzI5OTBQckZtTnVKUWRMZzNuT3N0X1V5YXlEU0lfdWtRY0hlRXRJSlNpNFhXZ3hYN240RTNCamhPSDBSaGdVZ0J2TUl4RDR3QUFFa1laMDRQTm5kOWF4QXZjTWdyZjR3?oc=5",
+          "time": "2026-10-20T10:41:01Z",
+          "published_date": "2026-10-20T10:41:01Z",
+          "publishedDate": "2026-10-20T10:41:01Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_iran_israel",
+            "sourceUrl": "https://news.google.com/rss/search?q=Iran+Israel+conflict+missile+drone+strike+escalation+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
+      "id": "28aa680f579fc675",
+      "title": "A Russian missile and drone blitz kills 7 in Ukraine as Zelenskyy seeks help in Norway - Springfield News-Sun",
+      "category": "conflict",
+      "confidence": "low",
+      "reportCount": 2,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [
+        "russia",
+        "uk",
+        "ukraine"
+      ],
+      "firstSeen": "2026-10-20T10:13:51Z",
+      "lastSeen": "2026-10-20T10:13:51Z",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNRVdCQzYwNkdBTGdlMlhhRmVXX0FtaXgwUERIMmVyby04RllydElDS1AwLUwza0x0MXRfY192NEk0STBwSU4tN0FrNVB5OUdTWE5ZNGJ1ZFJsckVxSktGRW10THFUODJ6Tll2SmkwWnJnMC1OeEVld0lHQVZ1RzMxSWZ5SWlHYzMwTkZjTXpaUkJpbjRKLUtJT2RlTVhvNVNrX2poR1lQcnk2NUs5Ym5oOGVyVEQ1cXdibnhXWjhIdHBYZ2FDcmNfbl9sdVlxelpYSnZ6R09yV2JMR0lCSGJNYW9Ua0FlTkpVLWJUWjlnM1o1bHpzcDluWFFVRTN6THZKY1V2UnNPNXg?oc=5",
+        "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPbFZiRzVGQl9wUDJnVl9oZ1Z3TzdxV0NxU3NIUHBmQ1NvLWU5OGFjTlotMUdYZ2lVS2pNUy1YMGYwMXNoVy1nVGRmVHBTU0RQZ3poV1BVVmxxeXNZRjFFdXVHazJLLVVkSlpoLTRnaG8yWFpXWUZwMDR2QTloV1l1ZXpmZVRGeVNSRTJkcFRQYmdCeDgzRGRyMGFLVURzYXFIYS1BQUZfUnZ4T3BjOTNKQ3pnQWZPRmdTcEZOVmpwN2pTSGVfVE5vOEExcXp6ZWhMZ2NEMldWbDVXRXEwcTFTOHlMem9WeHNUb2JCdEo4dko2QQ?oc=5"
+      ],
+      "reports": [
+        {
+          "id": "61a0653ebd2e",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNRVdCQzYwNkdBTGdlMlhhRmVXX0FtaXgwUERIMmVyby04RllydElDS1AwLUwza0x0MXRfY192NEk0STBwSU4tN0FrNVB5OUdTWE5ZNGJ1ZFJsckVxSktGRW10THFUODJ6Tll2SmkwWnJnMC1OeEVld0lHQVZ1RzMxSWZ5SWlHYzMwTkZjTXpaUkJpbjRKLUtJT2RlTVhvNVNrX2poR1lQcnk2NUs5Ym5oOGVyVEQ1cXdibnhXWjhIdHBYZ2FDcmNfbl9sdVlxelpYSnZ6R09yV2JMR0lCSGJNYW9Ua0FlTkpVLWJUWjlnM1o1bHpzcDluWFFVRTN6THZKY1V2UnNPNXg?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNRVdCQzYwNkdBTGdlMlhhRmVXX0FtaXgwUERIMmVyby04RllydElDS1AwLUwza0x0MXRfY192NEk0STBwSU4tN0FrNVB5OUdTWE5ZNGJ1ZFJsckVxSktGRW10THFUODJ6Tll2SmkwWnJnMC1OeEVld0lHQVZ1RzMxSWZ5SWlHYzMwTkZjTXpaUkJpbjRKLUtJT2RlTVhvNVNrX2poR1lQcnk2NUs5Ym5oOGVyVEQ1cXdibnhXWjhIdHBYZ2FDcmNfbl9sdVlxelpYSnZ6R09yV2JMR0lCSGJNYW9Ua0FlTkpVLWJUWjlnM1o1bHpzcDluWFFVRTN6THZKY1V2UnNPNXg?oc=5",
           "sourceType": "europe-conflict",
-          "title": "Russian Offensive Campaign Assessment, October 19, 2026 - Institute for the Study of War",
-          "summary": "Russian Offensive Campaign Assessment, October 19, 2026 Institute for the Study of War",
-          "summary_snippet": "Russian Offensive Campaign Assessment, October 19, 2026 Institute for the Study of War",
-          "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNRUZiRk9iMnJTb0tpV3BWSFBCY2tvUzBrakxjQWxjU1ozNW8wUU13eWtXM3FldVBrVzBoWU1vcVNmeUVEMUxfUTZlclVJN0R0czh3amk1X1ZZamNvb3FpY1hRelphMk9ZWHZYWFNyeWRILWxPMG81VjNGMnlGb1VLMHMwZjFyempuZzJ1eFJUamdzc3JJS3pWdDdjb1VvOHUybGl5aFJ0RG9SMlk?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNRUZiRk9iMnJTb0tpV3BWSFBCY2tvUzBrakxjQWxjU1ozNW8wUU13eWtXM3FldVBrVzBoWU1vcVNmeUVEMUxfUTZlclVJN0R0czh3amk1X1ZZamNvb3FpY1hRelphMk9ZWHZYWFNyeWRILWxPMG81VjNGMnlGb1VLMHMwZjFyempuZzJ1eFJUamdzc3JJS3pWdDdjb1VvOHUybGl5aFJ0RG9SMlk?oc=5",
-          "time": "2026-10-20T02:15:00Z",
-          "published_date": "2026-10-20T02:15:00Z",
-          "publishedDate": "2026-10-20T02:15:00Z",
+          "title": "A Russian missile and drone blitz kills 7 in Ukraine as Zelenskyy seeks help in Norway - Springfield News-Sun",
+          "summary": "A Russian missile and drone blitz kills 7 in Ukraine as Zelenskyy seeks help in Norway Springfield News-Sun",
+          "summary_snippet": "A Russian missile and drone blitz kills 7 in Ukraine as Zelenskyy seeks help in Norway Springfield News-Sun",
+          "source": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNRVdCQzYwNkdBTGdlMlhhRmVXX0FtaXgwUERIMmVyby04RllydElDS1AwLUwza0x0MXRfY192NEk0STBwSU4tN0FrNVB5OUdTWE5ZNGJ1ZFJsckVxSktGRW10THFUODJ6Tll2SmkwWnJnMC1OeEVld0lHQVZ1RzMxSWZ5SWlHYzMwTkZjTXpaUkJpbjRKLUtJT2RlTVhvNVNrX2poR1lQcnk2NUs5Ym5oOGVyVEQ1cXdibnhXWjhIdHBYZ2FDcmNfbl9sdVlxelpYSnZ6R09yV2JMR0lCSGJNYW9Ua0FlTkpVLWJUWjlnM1o1bHpzcDluWFFVRTN6THZKY1V2UnNPNXg?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNRVdCQzYwNkdBTGdlMlhhRmVXX0FtaXgwUERIMmVyby04RllydElDS1AwLUwza0x0MXRfY192NEk0STBwSU4tN0FrNVB5OUdTWE5ZNGJ1ZFJsckVxSktGRW10THFUODJ6Tll2SmkwWnJnMC1OeEVld0lHQVZ1RzMxSWZ5SWlHYzMwTkZjTXpaUkJpbjRKLUtJT2RlTVhvNVNrX2poR1lQcnk2NUs5Ym5oOGVyVEQ1cXdibnhXWjhIdHBYZ2FDcmNfbl9sdVlxelpYSnZ6R09yV2JMR0lCSGJNYW9Ua0FlTkpVLWJUWjlnM1o1bHpzcDluWFFVRTN6THZKY1V2UnNPNXg?oc=5",
+          "time": "2026-10-20T10:13:51Z",
+          "published_date": "2026-10-20T10:13:51Z",
+          "publishedDate": "2026-10-20T10:13:51Z",
           "tag": "Breaking",
           "confidence": "DEVELOPING",
           "breaking": true,
@@ -1376,18 +1490,18 @@
           }
         },
         {
-          "id": "ba521708d902",
-          "sourceLabel": "Google News — Ukraine War",
-          "sourceName": "Google News — Ukraine War",
+          "id": "c29fa68d738a",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPbFZiRzVGQl9wUDJnVl9oZ1Z3TzdxV0NxU3NIUHBmQ1NvLWU5OGFjTlotMUdYZ2lVS2pNUy1YMGYwMXNoVy1nVGRmVHBTU0RQZ3poV1BVVmxxeXNZRjFFdXVHazJLLVVkSlpoLTRnaG8yWFpXWUZwMDR2QTloV1l1ZXpmZVRGeVNSRTJkcFRQYmdCeDgzRGRyMGFLVURzYXFIYS1BQUZfUnZ4T3BjOTNKQ3pnQWZPRmdTcEZOVmpwN2pTSGVfVE5vOEExcXp6ZWhMZ2NEMldWbDVXRXEwcTFTOHlMem9WeHNUb2JCdEo4dko2QQ?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPbFZiRzVGQl9wUDJnVl9oZ1Z3TzdxV0NxU3NIUHBmQ1NvLWU5OGFjTlotMUdYZ2lVS2pNUy1YMGYwMXNoVy1nVGRmVHBTU0RQZ3poV1BVVmxxeXNZRjFFdXVHazJLLVVkSlpoLTRnaG8yWFpXWUZwMDR2QTloV1l1ZXpmZVRGeVNSRTJkcFRQYmdCeDgzRGRyMGFLVURzYXFIYS1BQUZfUnZ4T3BjOTNKQ3pnQWZPRmdTcEZOVmpwN2pTSGVfVE5vOEExcXp6ZWhMZ2NEMldWbDVXRXEwcTFTOHlMem9WeHNUb2JCdEo4dko2QQ?oc=5",
           "sourceType": "europe-conflict",
-          "title": "Russian Offensive Campaign Assessment, October 19, 2026 - Critical Threats",
-          "summary": "Russian Offensive Campaign Assessment, October 19, 2026 Critical Threats",
-          "summary_snippet": "Russian Offensive Campaign Assessment, October 19, 2026 Critical Threats",
-          "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNblcxRGlDRmtjOERyZkw4X09vdlBHMHNLd1d4Tk42WVZ4LWdONzVtV0RiWkxRR2pRQklVcm93OGFpSVVxdHRDOXBGcUNXNUNkRTdWSnF5cHJMbGZ5UlpERE9uS000UFppVFhSbVJFSWRJRjhQM0JPS2NWRE8wWHZ4LXVTY3ZwOHhMOHF1X041S09yMlFodFpzVVdB?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNblcxRGlDRmtjOERyZkw4X09vdlBHMHNLd1d4Tk42WVZ4LWdONzVtV0RiWkxRR2pRQklVcm93OGFpSVVxdHRDOXBGcUNXNUNkRTdWSnF5cHJMbGZ5UlpERE9uS000UFppVFhSbVJFSWRJRjhQM0JPS2NWRE8wWHZ4LXVTY3ZwOHhMOHF1X041S09yMlFodFpzVVdB?oc=5",
-          "time": "2026-10-19T23:37:12Z",
-          "published_date": "2026-10-19T23:37:12Z",
-          "publishedDate": "2026-10-19T23:37:12Z",
+          "title": "A Russian missile and drone blitz kills 7 in Ukraine as Zelenskyy seeks help in Norway - The Killeen Daily Herald",
+          "summary": "A Russian missile and drone blitz kills 7 in Ukraine as Zelenskyy seeks help in Norway The Killeen Daily Herald",
+          "summary_snippet": "A Russian missile and drone blitz kills 7 in Ukraine as Zelenskyy seeks help in Norway The Killeen Daily Herald",
+          "source": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPbFZiRzVGQl9wUDJnVl9oZ1Z3TzdxV0NxU3NIUHBmQ1NvLWU5OGFjTlotMUdYZ2lVS2pNUy1YMGYwMXNoVy1nVGRmVHBTU0RQZ3poV1BVVmxxeXNZRjFFdXVHazJLLVVkSlpoLTRnaG8yWFpXWUZwMDR2QTloV1l1ZXpmZVRGeVNSRTJkcFRQYmdCeDgzRGRyMGFLVURzYXFIYS1BQUZfUnZ4T3BjOTNKQ3pnQWZPRmdTcEZOVmpwN2pTSGVfVE5vOEExcXp6ZWhMZ2NEMldWbDVXRXEwcTFTOHlMem9WeHNUb2JCdEo4dko2QQ?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPbFZiRzVGQl9wUDJnVl9oZ1Z3TzdxV0NxU3NIUHBmQ1NvLWU5OGFjTlotMUdYZ2lVS2pNUy1YMGYwMXNoVy1nVGRmVHBTU0RQZ3poV1BVVmxxeXNZRjFFdXVHazJLLVVkSlpoLTRnaG8yWFpXWUZwMDR2QTloV1l1ZXpmZVRGeVNSRTJkcFRQYmdCeDgzRGRyMGFLVURzYXFIYS1BQUZfUnZ4T3BjOTNKQ3pnQWZPRmdTcEZOVmpwN2pTSGVfVE5vOEExcXp6ZWhMZ2NEMldWbDVXRXEwcTFTOHlMem9WeHNUb2JCdEo4dko2QQ?oc=5",
+          "time": "2026-10-20T10:13:51Z",
+          "published_date": "2026-10-20T10:13:51Z",
+          "publishedDate": "2026-10-20T10:13:51Z",
           "tag": "Breaking",
           "confidence": "DEVELOPING",
           "breaking": true,
@@ -1401,66 +1515,68 @@
       ]
     },
     {
-      "id": "c82f23e64c092299",
-      "title": "Green forest fire notification in Zambia, Zimbabwe",
+      "id": "fe6f507821b3c43b",
+      "title": "[Big read] China’s fifth plenum: What ongoing purges reveal about Xi Jinping’s power layout - ThinkChina",
       "category": "general",
       "confidence": "low",
       "reportCount": 2,
       "sourceCount": 1,
       "sources": [
-        "gdacs.org"
+        "news.google.com"
       ],
-      "anchors": [],
-      "firstSeen": "2026-10-19T23:05:41Z",
-      "lastSeen": "2026-10-19T23:07:37Z",
+      "anchors": [
+        "china"
+      ],
+      "firstSeen": "2026-10-20T09:28:53Z",
+      "lastSeen": "2026-10-20T09:28:54Z",
       "urls": [
-        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032953",
-        "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032951"
+        "https://news.google.com/rss/articles/CBMizwFBVV95cUxORGhjMWdUTTJwZ29BMDRDNUUzQ1VJcXJmbWNKZHlVd1phSS1lejBQZ0RjM2h6YTVxRmJkaTlzV2xvOU42WGl5RXV4ZTJYSHk1QUhLMk9OS3ladExWZW9ibGg5LTlCY1RPSW94NHc2SmRYZV9URlFfaFBNS3VFWnJwTU5iTDdHN1hmX01ST19Wc01zaGV5V0IyU0lLUHgxSDdZNEhuSm90UmpJNEo2dzZSWlR6WXZmM2tsUmtmcGdHX2FyVTNIX0NSWHM0SUVDTWc?oc=5",
+        "https://news.google.com/rss/articles/CBMivgFBVV95cUxPV0Z5ZVh5OWxQRWwzMWJJTFNGM19pdFZ3WV9CSGx1bmhKQ3pLdFpFODBhSkphRkJZMUgwMWJRN2JGeGJiaU5mLV9GV0pzNk0tTzJwVUNOb1dhM0JsZUs2MTZ2STJ4d09hS1VQVUNfNGxzVW1SRW5nMmtDNTVtMTRodlAzZDQ4ekJCWmlGVnlqTTBtdDdVdkptTFVyMnZTQzhOMGFtNHh0NEJsa0RmNWRXSDRZd0pfWFJld2ZsM2hB?oc=5"
       ],
       "reports": [
         {
-          "id": "a96dd5eb975d",
-          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032953",
-          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032953",
-          "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in Zambia, Zimbabwe",
-          "summary": "On 11/10/2026, a forest fire started in Zambia, Zimbabwe, until 19/10/2026.",
-          "summary_snippet": "On 11/10/2026, a forest fire started in Zambia, Zimbabwe, until 19/10/2026.",
-          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032953",
-          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032953",
-          "time": "2026-10-19T23:07:37Z",
-          "published_date": "2026-10-19T23:07:37Z",
-          "publishedDate": "2026-10-19T23:07:37Z",
+          "id": "5cfb349b23cc",
+          "sourceLabel": "Google News — China Politics / CCP",
+          "sourceName": "Google News — China Politics / CCP",
+          "sourceType": "china-politics",
+          "title": "[Big read] China’s fifth plenum: What ongoing purges reveal about Xi Jinping’s power layout - ThinkChina",
+          "summary": "[Big read] China’s fifth plenum: What ongoing purges reveal about Xi Jinping’s power layout ThinkChina",
+          "summary_snippet": "[Big read] China’s fifth plenum: What ongoing purges reveal about Xi Jinping’s power layout ThinkChina",
+          "source": "https://news.google.com/rss/articles/CBMizwFBVV95cUxORGhjMWdUTTJwZ29BMDRDNUUzQ1VJcXJmbWNKZHlVd1phSS1lejBQZ0RjM2h6YTVxRmJkaTlzV2xvOU42WGl5RXV4ZTJYSHk1QUhLMk9OS3ladExWZW9ibGg5LTlCY1RPSW94NHc2SmRYZV9URlFfaFBNS3VFWnJwTU5iTDdHN1hmX01ST19Wc01zaGV5V0IyU0lLUHgxSDdZNEhuSm90UmpJNEo2dzZSWlR6WXZmM2tsUmtmcGdHX2FyVTNIX0NSWHM0SUVDTWc?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxORGhjMWdUTTJwZ29BMDRDNUUzQ1VJcXJmbWNKZHlVd1phSS1lejBQZ0RjM2h6YTVxRmJkaTlzV2xvOU42WGl5RXV4ZTJYSHk1QUhLMk9OS3ladExWZW9ibGg5LTlCY1RPSW94NHc2SmRYZV9URlFfaFBNS3VFWnJwTU5iTDdHN1hmX01ST19Wc01zaGV5V0IyU0lLUHgxSDdZNEhuSm90UmpJNEo2dzZSWlR6WXZmM2tsUmtmcGdHX2FyVTNIX0NSWHM0SUVDTWc?oc=5",
+          "time": "2026-10-20T09:28:54Z",
+          "published_date": "2026-10-20T09:28:54Z",
+          "publishedDate": "2026-10-20T09:28:54Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "sourceId": "china_politics",
+            "sourceUrl": "https://news.google.com/rss/search?q=China+Xi+CCP+Communist+Party+government+policy+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
         },
         {
-          "id": "cc089bf600a0",
-          "sourceLabel": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032951",
-          "sourceName": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032951",
-          "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in Zimbabwe",
-          "summary": "On 13/10/2026, a forest fire started in Zimbabwe, until 19/10/2026.",
-          "summary_snippet": "On 13/10/2026, a forest fire started in Zimbabwe, until 19/10/2026.",
-          "source": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032951",
-          "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032951",
-          "time": "2026-10-19T23:05:41Z",
-          "published_date": "2026-10-19T23:05:41Z",
-          "publishedDate": "2026-10-19T23:05:41Z",
+          "id": "8fc355a72159",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPV0Z5ZVh5OWxQRWwzMWJJTFNGM19pdFZ3WV9CSGx1bmhKQ3pLdFpFODBhSkphRkJZMUgwMWJRN2JGeGJiaU5mLV9GV0pzNk0tTzJwVUNOb1dhM0JsZUs2MTZ2STJ4d09hS1VQVUNfNGxzVW1SRW5nMmtDNTVtMTRodlAzZDQ4ekJCWmlGVnlqTTBtdDdVdkptTFVyMnZTQzhOMGFtNHh0NEJsa0RmNWRXSDRZd0pfWFJld2ZsM2hB?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPV0Z5ZVh5OWxQRWwzMWJJTFNGM19pdFZ3WV9CSGx1bmhKQ3pLdFpFODBhSkphRkJZMUgwMWJRN2JGeGJiaU5mLV9GV0pzNk0tTzJwVUNOb1dhM0JsZUs2MTZ2STJ4d09hS1VQVUNfNGxzVW1SRW5nMmtDNTVtMTRodlAzZDQ4ekJCWmlGVnlqTTBtdDdVdkptTFVyMnZTQzhOMGFtNHh0NEJsa0RmNWRXSDRZd0pfWFJld2ZsM2hB?oc=5",
+          "sourceType": "china-politics",
+          "title": "[Big read] China’s fifth plenum: What ongoing purges reveal about Xi Jinping’s power layout - ThinkChina",
+          "summary": "[Big read] China’s fifth plenum: What ongoing purges reveal about Xi Jinping’s power layout ThinkChina",
+          "summary_snippet": "[Big read] China’s fifth plenum: What ongoing purges reveal about Xi Jinping’s power layout ThinkChina",
+          "source": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPV0Z5ZVh5OWxQRWwzMWJJTFNGM19pdFZ3WV9CSGx1bmhKQ3pLdFpFODBhSkphRkJZMUgwMWJRN2JGeGJiaU5mLV9GV0pzNk0tTzJwVUNOb1dhM0JsZUs2MTZ2STJ4d09hS1VQVUNfNGxzVW1SRW5nMmtDNTVtMTRodlAzZDQ4ekJCWmlGVnlqTTBtdDdVdkptTFVyMnZTQzhOMGFtNHh0NEJsa0RmNWRXSDRZd0pfWFJld2ZsM2hB?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPV0Z5ZVh5OWxQRWwzMWJJTFNGM19pdFZ3WV9CSGx1bmhKQ3pLdFpFODBhSkphRkJZMUgwMWJRN2JGeGJiaU5mLV9GV0pzNk0tTzJwVUNOb1dhM0JsZUs2MTZ2STJ4d09hS1VQVUNfNGxzVW1SRW5nMmtDNTVtMTRodlAzZDQ4ekJCWmlGVnlqTTBtdDdVdkptTFVyMnZTQzhOMGFtNHh0NEJsa0RmNWRXSDRZd0pfWFJld2ZsM2hB?oc=5",
+          "time": "2026-10-20T09:28:53Z",
+          "published_date": "2026-10-20T09:28:53Z",
+          "publishedDate": "2026-10-20T09:28:53Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "sourceId": "china_politics",
+            "sourceUrl": "https://news.google.com/rss/search?q=China+Xi+CCP+Communist+Party+government+policy+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
         }
@@ -1792,6 +1908,41 @@
       ]
     },
     {
+      "id": "820916d3522d6bb1",
+      "title": "NATO says ‘prepared’ for any threat over possible Iranian strikes on US military targets in Europe - Anadolu Ajansı",
+      "category": "conflict",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [
+        "iran",
+        "nato"
+      ],
+      "firstSeen": "Wed, 19 Aug 2026 07:00:00 GMT",
+      "lastSeen": "Wed, 19 Aug 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOcjFUa3l4WVppeE12amkyRGFQTGp3bl9TQmJsSjNIalhVdkNoX0tuMWo2Q19JclpQSldHNXRmaDNPX3VNbXlKSkthM3JQYUNWVkNIRUJaTGdrY3VUYVU0VkRldTlJWGM3eDM4Ukw2ME1tWHRRR21vSWo2cVM0VzFqYWxZbVFHMi1pSkdXSXd1eXc5dGYyWkNPbTd6UzhWQnl0eFV2QXROX2ZCenA1UFNUVHA0NXJBcGtfc0dvekZ4ejNmS0J2eWtTQTNuMmx4RXl6?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "NATO says ‘prepared’ for any threat over possible Iranian strikes on US military targets in Europe - Anadolu Ajansı",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOcjFUa3l4WVppeE12amkyRGFQTGp3bl9TQmJsSjNIalhVdkNoX0tuMWo2Q19JclpQSldHNXRmaDNPX3VNbXlKSkthM3JQYUNWVkNIRUJaTGdrY3VUYVU0VkRldTlJWGM3eDM4Ukw2ME1tWHRRR21vSWo2cVM0VzFqYWxZbVFHMi1pSkdXSXd1eXc5dGYyWkNPbTd6UzhWQnl0eFV2QXROX2ZCenA1UFNUVHA0NXJBcGtfc0dvekZ4ejNmS0J2eWtTQTNuMmx4RXl6?oc=5",
+          "published_date": "Wed, 19 Aug 2026 07:00:00 GMT",
+          "time": "Wed, 19 Aug 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Anadolu Ajansı",
+          "summary": "Fallback discovery via Google News RSS; publisher: Anadolu Ajansı",
+          "source": "Anadolu Ajansı",
+          "sourceLabel": "Anadolu Ajansı",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NATO",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
       "id": "d1da5bc710bec17f",
       "title": "NATO ‘prepared’ to defend allies amid report of Iranian strike plans - Al Jazeera",
       "category": "conflict",
@@ -1854,38 +2005,6 @@
           "sourceLabel": "NASA (.gov)",
           "sourceType": "fallback-news",
           "fallbackFor": "X @NASA",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "7967581d7f306738",
-      "title": "Statement by Christian Saunders, UNRWA Commissioner-General a.i. at the Meeting of the Advisory Commission (AdCom) - UNRWA",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Wed, 17 Jun 2026 07:00:00 GMT",
-      "lastSeen": "Wed, 17 Jun 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPbWYzSldLdlFJVGJVRG9kNGdyelJVQk1lUjB2QWtZZkk5ZEZaV1BNbjhBdmd6VW80MHBzZWRQQzV4V3FFeXg0U1BXMUhCUEF2cDhPY0VrTnFndTAzYUk1dnJxeEs5c29vMlVTWHZDbzZZd0RfSUpyakUzUDFNekdZcnJlZzlYM1V6R1dqcFR0bVhXUkZacWRLSTBseVdhZDNvbVhnMHNmTEgzRDRYNFBOZ2hjQl91dmsw?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Statement by Christian Saunders, UNRWA Commissioner-General a.i. at the Meeting of the Advisory Commission (AdCom) - UNRWA",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPbWYzSldLdlFJVGJVRG9kNGdyelJVQk1lUjB2QWtZZkk5ZEZaV1BNbjhBdmd6VW80MHBzZWRQQzV4V3FFeXg0U1BXMUhCUEF2cDhPY0VrTnFndTAzYUk1dnJxeEs5c29vMlVTWHZDbzZZd0RfSUpyakUzUDFNekdZcnJlZzlYM1V6R1dqcFR0bVhXUkZacWRLSTBseVdhZDNvbVhnMHNmTEgzRDRYNFBOZ2hjQl91dmsw?oc=5",
-          "published_date": "Wed, 17 Jun 2026 07:00:00 GMT",
-          "time": "Wed, 17 Jun 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: UNRWA",
-          "summary": "Fallback discovery via Google News RSS; publisher: UNRWA",
-          "source": "UNRWA",
-          "sourceLabel": "UNRWA",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @UN",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -2012,38 +2131,6 @@
           "summary": "Fallback discovery via Google News RSS; publisher: USA Today",
           "source": "USA Today",
           "sourceLabel": "USA Today",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NASA",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "8b603ee68e428df5",
-      "title": "NASA to Discuss Artemis Acceleration, Status of Upcoming Moon Missions - NASA (.gov)",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Wed, 14 Oct 2026 13:41:12 GMT",
-      "lastSeen": "Wed, 14 Oct 2026 13:41:12 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMipwFBVV95cUxOSVFSNkk5Mk9fcHZTdl9kUFFNcmlyS2Nabzl4NGx0bXlKSTNKVHRmbUlTdm43OW1XOWF6ODJnYjFUS2VwUkFsbHlCT1o0UjFlRE1VNTlSaUxnZFdIcEQ2c0NJTlVSTnhha094MW5xbW4wUnppZVltenQ2RTdqWEE5RW16VG9rUldXTVdIVXh2c0Qtblh0Tmx3YXJKME12Q3czMkNySWlJNA?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "NASA to Discuss Artemis Acceleration, Status of Upcoming Moon Missions - NASA (.gov)",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOSVFSNkk5Mk9fcHZTdl9kUFFNcmlyS2Nabzl4NGx0bXlKSTNKVHRmbUlTdm43OW1XOWF6ODJnYjFUS2VwUkFsbHlCT1o0UjFlRE1VNTlSaUxnZFdIcEQ2c0NJTlVSTnhha094MW5xbW4wUnppZVltenQ2RTdqWEE5RW16VG9rUldXTVdIVXh2c0Qtblh0Tmx3YXJKME12Q3czMkNySWlJNA?oc=5",
-          "published_date": "Wed, 14 Oct 2026 13:41:12 GMT",
-          "time": "Wed, 14 Oct 2026 13:41:12 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
-          "summary": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
-          "source": "NASA (.gov)",
-          "sourceLabel": "NASA (.gov)",
           "sourceType": "fallback-news",
           "fallbackFor": "X @NASA",
           "credit_metadata": "Google News RSS fallback"
@@ -2408,6 +2495,41 @@
           "sourceLabel": "NASA (.gov)",
           "sourceType": "fallback-news",
           "fallbackFor": "X @NASA",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "2d0f7f91699c18b9",
+      "title": "Statement by the Independent International Fact-Finding Mission on the Islamic Republic of Iran regarding Israeli-U.S. airstrikes against Iran - ohchr",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [
+        "iran",
+        "israel"
+      ],
+      "firstSeen": "Wed, 04 Mar 2026 08:00:00 GMT",
+      "lastSeen": "Wed, 04 Mar 2026 08:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMivgFBVV95cUxPbjYyOGlRY1Z4ajJ0d1RIUDluRThWS2VudnBTMDhGb1J5M1c5M2FtaFFoajhTb1BkSm9ZMzlpRGFRczlRQTJaLXV5aEZQUHIyVDNOWFlyS0tFVUdyWVJKdzJZSlBJVklCVEZEQjhsSWFiMHkwYWZfLVoxd0c1Ni00dUl4TkFCdG04TGd3blF5RU1DTEh4YjJhNEs5TkhSRGxVeUpxVk5LVTZBNWlsUG5ydWJiS19iS2tlSDE1XzJR?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "Statement by the Independent International Fact-Finding Mission on the Islamic Republic of Iran regarding Israeli-U.S. airstrikes against Iran - ohchr",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPbjYyOGlRY1Z4ajJ0d1RIUDluRThWS2VudnBTMDhGb1J5M1c5M2FtaFFoajhTb1BkSm9ZMzlpRGFRczlRQTJaLXV5aEZQUHIyVDNOWFlyS0tFVUdyWVJKdzJZSlBJVklCVEZEQjhsSWFiMHkwYWZfLVoxd0c1Ni00dUl4TkFCdG04TGd3blF5RU1DTEh4YjJhNEs5TkhSRGxVeUpxVk5LVTZBNWlsUG5ydWJiS19iS2tlSDE1XzJR?oc=5",
+          "published_date": "Wed, 04 Mar 2026 08:00:00 GMT",
+          "time": "Wed, 04 Mar 2026 08:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: ohchr",
+          "summary": "Fallback discovery via Google News RSS; publisher: ohchr",
+          "source": "ohchr",
+          "sourceLabel": "ohchr",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @UN",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -2929,6 +3051,38 @@
       ]
     },
     {
+      "id": "37b2976c4a6dc81d",
+      "title": "Trump heads to the U.N. looking for wins after a rough week - NPR",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Tue, 22 Sep 2026 07:00:00 GMT",
+      "lastSeen": "Tue, 22 Sep 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMioAFBVV95cUxPam9BZnhXVDJtS0VwWS1nZ2tENzF2OHdwamNwNzlkdmctT1NNZ296ZVFLckFNdTB3d2hCOEhwQU1OOEtFMjh0b3NmNFpZRHUxaGhuVU5la1hOM2NmYnJ4Z1hMRnc3YjlGanp6dDd0LUNjdFFXR2dDOGo3VkdYbmZVNjE2ZXdrdjYtWHRhdkhFenhzU1YweHBMU2JOaElpdjVR?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "Trump heads to the U.N. looking for wins after a rough week - NPR",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPam9BZnhXVDJtS0VwWS1nZ2tENzF2OHdwamNwNzlkdmctT1NNZ296ZVFLckFNdTB3d2hCOEhwQU1OOEtFMjh0b3NmNFpZRHUxaGhuVU5la1hOM2NmYnJ4Z1hMRnc3YjlGanp6dDd0LUNjdFFXR2dDOGo3VkdYbmZVNjE2ZXdrdjYtWHRhdkhFenhzU1YweHBMU2JOaElpdjVR?oc=5",
+          "published_date": "Tue, 22 Sep 2026 07:00:00 GMT",
+          "time": "Tue, 22 Sep 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NPR",
+          "summary": "Fallback discovery via Google News RSS; publisher: NPR",
+          "source": "NPR",
+          "sourceLabel": "NPR",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @POTUS",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
       "id": "59f45d206bb07aa8",
       "title": "CNN, MS NOW and Politico file lawsuit against Trump's White House ban - BBC",
       "category": "general",
@@ -3191,9 +3345,9 @@
       ]
     },
     {
-      "id": "e11f50ddc1b16afc",
-      "title": "US military assists Ecuador in 1st land operation against cartels: Source - ABC News - Breaking News, Latest News and Videos",
-      "category": "conflict",
+      "id": "c5515d5b8459d176",
+      "title": "Wild West Wing? Turmoil revives memories of Trump 1.0 - Yahoo News Singapore",
+      "category": "general",
       "confidence": "low",
       "reportCount": 1,
       "sourceCount": 1,
@@ -3201,23 +3355,55 @@
         "news.google.com"
       ],
       "anchors": [],
-      "firstSeen": "Tue, 20 Oct 2026 10:12:44 GMT",
-      "lastSeen": "Tue, 20 Oct 2026 10:12:44 GMT",
+      "firstSeen": "Tue, 20 Oct 2026 15:55:52 GMT",
+      "lastSeen": "Tue, 20 Oct 2026 15:55:52 GMT",
       "urls": [
-        "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPS0FEVERUTVcwVFd4NUNKX2dRRzNzQXhfQUlNX2JDRW9zeWsyeU93ZVl5XzJ1a3BJbUtZQ1N2SjVPLTVlN0pfZUw4OFVWRWptM2VuNVYtSV9wbm5ELW5hdEtZdWNDclZwLTFFSmlLeUNrY3RnVk9KdkJfNFdkbmxZS0lMVXdpZWVROE9ob3VQY0E2UDJyVjhoekRlN3ljWHVseVNCNklFLUlVYm_SAbABQVVfeXFMUEVoWXJOeGhaM1FGMWZfUFRyOXRYVnJBTUFWV3FBT1U0YTVDdF9iR3g0NGhxWjVLOHhBTVhqYUNWemVNSms2U3ItX21fUVJKZUg4S2U5SVBSMzg3TGVLa0RwY3lqWUR2WjdZSUVELXJETElPNmctMkVva3hWTURMa3QzU1ZIcGx1dU5tWDlRT3Z2bjVVMUJmNzVnSFA1c1BQNHVCUGUzLUxCUnV1azI4Rzg?oc=5"
+        "https://news.google.com/rss/articles/CBMie0FVX3lxTE40b1FSOFZvemtxNWlyR2tvU3ZXMFdpT0dPSUFkQmJQZVlPbkhGc1A1QmhzQUJYTVJYOW5fLW0xZXduS0lUWlVwRVlsSm5yRmxSWkNrZ201UC1UZ2s5eGo5THZHNl9KU0htOUJZZU8tWWU3ak1Udy1nT3dzOA?oc=5"
       ],
       "reports": [
         {
-          "title": "US military assists Ecuador in 1st land operation against cartels: Source - ABC News - Breaking News, Latest News and Videos",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPS0FEVERUTVcwVFd4NUNKX2dRRzNzQXhfQUlNX2JDRW9zeWsyeU93ZVl5XzJ1a3BJbUtZQ1N2SjVPLTVlN0pfZUw4OFVWRWptM2VuNVYtSV9wbm5ELW5hdEtZdWNDclZwLTFFSmlLeUNrY3RnVk9KdkJfNFdkbmxZS0lMVXdpZWVROE9ob3VQY0E2UDJyVjhoekRlN3ljWHVseVNCNklFLUlVYm_SAbABQVVfeXFMUEVoWXJOeGhaM1FGMWZfUFRyOXRYVnJBTUFWV3FBT1U0YTVDdF9iR3g0NGhxWjVLOHhBTVhqYUNWemVNSms2U3ItX21fUVJKZUg4S2U5SVBSMzg3TGVLa0RwY3lqWUR2WjdZSUVELXJETElPNmctMkVva3hWTURMa3QzU1ZIcGx1dU5tWDlRT3Z2bjVVMUJmNzVnSFA1c1BQNHVCUGUzLUxCUnV1azI4Rzg?oc=5",
-          "published_date": "Tue, 20 Oct 2026 10:12:44 GMT",
-          "time": "Tue, 20 Oct 2026 10:12:44 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: ABC News - Breaking News, Latest News and Videos",
-          "summary": "Fallback discovery via Google News RSS; publisher: ABC News - Breaking News, Latest News and Videos",
-          "source": "ABC News - Breaking News, Latest News and Videos",
-          "sourceLabel": "ABC News - Breaking News, Latest News and Videos",
+          "title": "Wild West Wing? Turmoil revives memories of Trump 1.0 - Yahoo News Singapore",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE40b1FSOFZvemtxNWlyR2tvU3ZXMFdpT0dPSUFkQmJQZVlPbkhGc1A1QmhzQUJYTVJYOW5fLW0xZXduS0lUWlVwRVlsSm5yRmxSWkNrZ201UC1UZ2s5eGo5THZHNl9KU0htOUJZZU8tWWU3ak1Udy1nT3dzOA?oc=5",
+          "published_date": "Tue, 20 Oct 2026 15:55:52 GMT",
+          "time": "Tue, 20 Oct 2026 15:55:52 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Yahoo News Singapore",
+          "summary": "Fallback discovery via Google News RSS; publisher: Yahoo News Singapore",
+          "source": "Yahoo News Singapore",
+          "sourceLabel": "Yahoo News Singapore",
           "sourceType": "fallback-news",
-          "fallbackFor": "GDELT — Western Hemisphere Counter-Cartel",
+          "fallbackFor": "X @POTUS",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "53f42c51620f8065",
+      "title": "UNRWA Commissioner-General: Unprecedented Violation of UN Premises and International Law in East Jerusalem - UNRWA",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Tue, 20 Jan 2026 08:00:00 GMT",
+      "lastSeen": "Tue, 20 Jan 2026 08:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiswFBVV95cUxONTRTSHVlemsyMnA2ZXBkdmllVjVKNVNPbUpRU0dZSGdkdHFXZ1JoN08wUVdjakRoUnQzNUNCZFczbU5CSmNnb3JXeFZYV2NZdjNxUU5STkRjdE9PTlBOQXdXLXZvQXFpY1ZjQTBYNFF1YTR4c0Y4WDdwNGRpWkVaajZaWG5ZeXRraWpoVmVqSDVNUm02dWNaZnBfZWxzS3hnM2xEeTFBRGxveWF2aVhOQVI1dw?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "UNRWA Commissioner-General: Unprecedented Violation of UN Premises and International Law in East Jerusalem - UNRWA",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxONTRTSHVlemsyMnA2ZXBkdmllVjVKNVNPbUpRU0dZSGdkdHFXZ1JoN08wUVdjakRoUnQzNUNCZFczbU5CSmNnb3JXeFZYV2NZdjNxUU5STkRjdE9PTlBOQXdXLXZvQXFpY1ZjQTBYNFF1YTR4c0Y4WDdwNGRpWkVaajZaWG5ZeXRraWpoVmVqSDVNUm02dWNaZnBfZWxzS3hnM2xEeTFBRGxveWF2aVhOQVI1dw?oc=5",
+          "published_date": "Tue, 20 Jan 2026 08:00:00 GMT",
+          "time": "Tue, 20 Jan 2026 08:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: UNRWA",
+          "summary": "Fallback discovery via Google News RSS; publisher: UNRWA",
+          "source": "UNRWA",
+          "sourceLabel": "UNRWA",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @UN",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -3282,75 +3468,6 @@
           "sourceLabel": "UNRWA",
           "sourceType": "fallback-news",
           "fallbackFor": "X @UN",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "4acb33e324a7494f",
-      "title": "The Houthis bear full responsibility for the escalation in Yemen: UK statement at the UN Security Council - GOV.UK",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [
-        "uk",
-        "yemen"
-      ],
-      "firstSeen": "Tue, 15 Sep 2026 07:00:00 GMT",
-      "lastSeen": "Tue, 15 Sep 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPdkF3NHVVYW1JSy1CWHU4Q09nSkVEZEtjN1lSckhZanVyRmdjZmpJTThWeDYyOWtESzY0ZHFiSURSWERtZFN0aExSQzJIdmpDRHd4QVN5NzN2V2ExWGlfNkVjbWV5WXdBSUI1MWtpU2Z1eXpDMVcxaXFybUJsN3Zma1RsRE5pU05wa183dzNVNkpJYk50SlZmQW03N2t3aGpfcWc4Z3JsaklXaHdqNk5TMndqeEF0NnlYRzlZNEpOaGRTVGNTWWlvVjRvTjk2by1NY1pFUW1VNjhDT1E?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "The Houthis bear full responsibility for the escalation in Yemen: UK statement at the UN Security Council - GOV.UK",
-          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPdkF3NHVVYW1JSy1CWHU4Q09nSkVEZEtjN1lSckhZanVyRmdjZmpJTThWeDYyOWtESzY0ZHFiSURSWERtZFN0aExSQzJIdmpDRHd4QVN5NzN2V2ExWGlfNkVjbWV5WXdBSUI1MWtpU2Z1eXpDMVcxaXFybUJsN3Zma1RsRE5pU05wa183dzNVNkpJYk50SlZmQW03N2t3aGpfcWc4Z3JsaklXaHdqNk5TMndqeEF0NnlYRzlZNEpOaGRTVGNTWWlvVjRvTjk2by1NY1pFUW1VNjhDT1E?oc=5",
-          "published_date": "Tue, 15 Sep 2026 07:00:00 GMT",
-          "time": "Tue, 15 Sep 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: GOV.UK",
-          "summary": "Fallback discovery via Google News RSS; publisher: GOV.UK",
-          "source": "GOV.UK",
-          "sourceLabel": "GOV.UK",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @UN",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "9f6c127ed7cf66a5",
-      "title": "WATCH: Trump hosts Iraqi prime minister for bilateral meeting at the White House - PBS",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [
-        "iraq"
-      ],
-      "firstSeen": "Tue, 14 Jul 2026 07:00:00 GMT",
-      "lastSeen": "Tue, 14 Jul 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPc041dnVVWDd3YkFmaHlaSHprMFFKQ0ZTeS1kTUJDTkdFdVgtdkcwcFF4UExYY0FFOUZrQWloUHBOUl9tLXJxaURvVU0zOUpNa2ZYUjduTm9ydXJrZ0NyVndQWjFQUm1SQVVsSjB1Y1lQalp6cmJIMWY0VHZRTEx1UV9aSFNUMEgwbmFWejEwY1BTeDViYlNBdEJHMzYxakwtM3UxSlpSUzV4cC1yN3VWbU4zYkR5OTNIUXhB0gHAAUFVX3lxTFBxd3pWOFVKZ2tvQ0xYbVRENDZ1NkVHZ1Zzc0w4ZDYzbWtzZ2RoZTRFNkxfNTU2cnlBd0x5NEtldTJTT09lYjkta09oS2o2Wnh3OUMzWGlMa1kydzBZVWg0enpLMG5za3Z3TkVmQTNCZlZUVU5NYzYyNG5rOUdxRlBRMnlEaXFwUkplb2pCMXlicmpsLUVCX3dDblp2UlZVejVuNEVBdkxMMlBYcFEzeXd0Z3ZMUFdJeHhuR1VRZXR2Zg?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "WATCH: Trump hosts Iraqi prime minister for bilateral meeting at the White House - PBS",
-          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPc041dnVVWDd3YkFmaHlaSHprMFFKQ0ZTeS1kTUJDTkdFdVgtdkcwcFF4UExYY0FFOUZrQWloUHBOUl9tLXJxaURvVU0zOUpNa2ZYUjduTm9ydXJrZ0NyVndQWjFQUm1SQVVsSjB1Y1lQalp6cmJIMWY0VHZRTEx1UV9aSFNUMEgwbmFWejEwY1BTeDViYlNBdEJHMzYxakwtM3UxSlpSUzV4cC1yN3VWbU4zYkR5OTNIUXhB0gHAAUFVX3lxTFBxd3pWOFVKZ2tvQ0xYbVRENDZ1NkVHZ1Zzc0w4ZDYzbWtzZ2RoZTRFNkxfNTU2cnlBd0x5NEtldTJTT09lYjkta09oS2o2Wnh3OUMzWGlMa1kydzBZVWg0enpLMG5za3Z3TkVmQTNCZlZUVU5NYzYyNG5rOUdxRlBRMnlEaXFwUkplb2pCMXlicmpsLUVCX3dDblp2UlZVejVuNEVBdkxMMlBYcFEzeXd0Z3ZMUFdJeHhuR1VRZXR2Zg?oc=5",
-          "published_date": "Tue, 14 Jul 2026 07:00:00 GMT",
-          "time": "Tue, 14 Jul 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: PBS",
-          "summary": "Fallback discovery via Google News RSS; publisher: PBS",
-          "source": "PBS",
-          "sourceLabel": "PBS",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @POTUS",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
