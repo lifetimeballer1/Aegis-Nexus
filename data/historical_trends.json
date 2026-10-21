@@ -1,15 +1,9 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-21T01:38:39.354517Z",
-  "availableSamples": 259,
-  "availableHours": 1096.3,
+  "updatedAt": "2026-10-21T06:33:20.178351Z",
+  "availableSamples": 260,
+  "availableHours": 1101.2,
   "series": [
-    {
-      "updatedAt": "2026-09-05T19:25:22.612550+00:00",
-      "tension": 74,
-      "delta": 32.0,
-      "scoreVersion": 5
-    },
     {
       "updatedAt": "2026-09-05T20:20:40.043609+00:00",
       "tension": 41,
@@ -1443,24 +1437,30 @@
       "tension": 38,
       "delta": -1.0,
       "scoreVersion": 5
+    },
+    {
+      "updatedAt": "2026-10-21T06:33:20.178351Z",
+      "tension": 38,
+      "delta": 0.0,
+      "scoreVersion": 5
     }
   ],
   "windows": {
     "6h": {
       "available": true,
-      "samples": 3,
-      "start": "2026-10-20T20:14:06.145196Z",
-      "end": "2026-10-21T01:38:39.354517Z",
-      "startTension": 39,
+      "samples": 2,
+      "start": "2026-10-21T01:38:39.354517Z",
+      "end": "2026-10-21T06:33:20.178351Z",
+      "startTension": 38,
       "endTension": 38,
-      "delta": -1.0,
+      "delta": 0.0,
       "trend": "STABLE"
     },
     "24h": {
       "available": true,
-      "samples": 6,
+      "samples": 7,
       "start": "2026-10-20T06:33:34.252633Z",
-      "end": "2026-10-21T01:38:39.354517Z",
+      "end": "2026-10-21T06:33:20.178351Z",
       "startTension": 38,
       "endTension": 38,
       "delta": 0.0,
@@ -1468,9 +1468,9 @@
     },
     "7d": {
       "available": true,
-      "samples": 34,
+      "samples": 35,
       "start": "2026-10-14T06:41:27.769766Z",
-      "end": "2026-10-21T01:38:39.354517Z",
+      "end": "2026-10-21T06:33:20.178351Z",
       "startTension": 38,
       "endTension": 38,
       "delta": 0.0,
@@ -1479,8 +1479,8 @@
     "30d": {
       "available": true,
       "samples": 123,
-      "start": "2026-09-21T01:44:03.275000Z",
-      "end": "2026-10-21T01:38:39.354517Z",
+      "start": "2026-09-21T07:14:41.297110Z",
+      "end": "2026-10-21T06:33:20.178351Z",
       "startTension": 37,
       "endTension": 38,
       "delta": 1.0,
