@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-20T23:53:11.564611Z",
+  "updatedAt": "2026-10-21T04:48:53.410794Z",
   "method": "Deterministic prioritization of existing public Global Pulse artifacts; not a forecast or causal model.",
   "freshness": {
-    "snapshotUpdatedAt": "2026-10-20T23:13:11.514104+00:00",
-    "eventsUpdatedAt": "2026-10-20T23:13:14.735940Z",
+    "snapshotUpdatedAt": "2026-10-21T01:38:35.029214+00:00",
+    "eventsUpdatedAt": "2026-10-21T01:38:39.121772Z",
     "assessmentsUpdatedAt": "2026-09-10T03:03:12.655499Z"
   },
   "headline": {
@@ -13,35 +13,20 @@
   },
   "topDevelopments": [
     {
-      "id": "c399dc9ad1c7d69d",
-      "title": "Nigeria confirms an Ebola case in Abuja as a woman arriving from Uganda tests positive",
+      "id": "4b8d41f7fcb04983",
+      "title": "Nigeria confirms Ebola case linked to East Africa",
       "category": "general",
       "confidence": "high",
       "reportCount": 3,
       "independentSourceCount": 3,
       "sources": [
-        "npr_news",
         "bbc_africa",
-        "dw_world"
-      ],
-      "breaking": false,
-      "firstSeen": "2026-10-20T19:08:00Z",
-      "lastSeen": "2026-10-20T20:19:16Z"
-    },
-    {
-      "id": "78e14f79a9cb0757",
-      "title": "UK to Deploy RAF Typhoon Jets to Defend Saudi Arabia Against Houthi Attacks - BBN Times",
-      "category": "general",
-      "confidence": "moderate",
-      "reportCount": 3,
-      "independentSourceCount": 2,
-      "sources": [
-        "google_news_yemen_red_sea",
+        "dw_world",
         "al_jazeera"
       ],
-      "breaking": true,
-      "firstSeen": "2026-10-20T15:25:36Z",
-      "lastSeen": "2026-10-20T18:58:04Z"
+      "breaking": false,
+      "firstSeen": "2026-10-20T17:31:26Z",
+      "lastSeen": "2026-10-20T19:11:15Z"
     },
     {
       "id": "cca8b7fee1a1c019",
@@ -59,18 +44,34 @@
       "lastSeen": "2026-10-20T19:06:49Z"
     },
     {
-      "id": "f4bef1a266999855",
-      "title": "Green forest fire notification in Australia",
+      "id": "78e14f79a9cb0757",
+      "title": "UK to Deploy RAF Typhoon Jets to Defend Saudi Arabia Against Houthi Attacks - BBN Times",
       "category": "general",
-      "confidence": "low",
-      "reportCount": 6,
-      "independentSourceCount": 1,
+      "confidence": "moderate",
+      "reportCount": 2,
+      "independentSourceCount": 2,
       "sources": [
-        "gdacs_global_disaster_alerts"
+        "google_news_yemen_red_sea",
+        "al_jazeera"
+      ],
+      "breaking": true,
+      "firstSeen": "2026-10-20T18:55:52Z",
+      "lastSeen": "2026-10-20T18:58:04Z"
+    },
+    {
+      "id": "082e234351e0ef16",
+      "title": "Nigeria confirms Ebola case as outbreak spreads into western Africa",
+      "category": "general",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "independentSourceCount": 2,
+      "sources": [
+        "guardian_world",
+        "npr_news"
       ],
       "breaking": false,
-      "firstSeen": "2026-10-20T15:01:23Z",
-      "lastSeen": "2026-10-20T23:02:30Z"
+      "firstSeen": "2026-10-20T20:19:16Z",
+      "lastSeen": "2026-10-21T00:14:55Z"
     },
     {
       "id": "9c181321e72662e2",
@@ -87,6 +88,20 @@
       "lastSeen": "2026-10-20T19:15:27Z"
     },
     {
+      "id": "f4bef1a266999855",
+      "title": "Green forest fire notification in Australia",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 4,
+      "independentSourceCount": 1,
+      "sources": [
+        "gdacs_global_disaster_alerts"
+      ],
+      "breaking": false,
+      "firstSeen": "2026-10-20T23:00:51Z",
+      "lastSeen": "2026-10-20T23:02:30Z"
+    },
+    {
       "id": "c82f23e64c092299",
       "title": "Green forest fire notification in Zambia, Zimbabwe",
       "category": "general",
@@ -99,6 +114,20 @@
       "breaking": false,
       "firstSeen": "2026-10-20T19:05:06Z",
       "lastSeen": "2026-10-20T19:09:33Z"
+    },
+    {
+      "id": "cb13f5fe934b9b29",
+      "title": "Jeffrey Bartos, U.S. Representative for United Nations Management and Reform — Statement at the UN Security Council on the Situation in Colombia - The America Times",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 3,
+      "independentSourceCount": 1,
+      "sources": [
+        "The America Times"
+      ],
+      "breaking": false,
+      "firstSeen": "Tue, 20 Oct 2026 09:36:53 GMT",
+      "lastSeen": "Tue, 20 Oct 2026 09:45:19 GMT"
     },
     {
       "id": "d4032f4cad0427a7",
@@ -127,35 +156,6 @@
       "breaking": false,
       "firstSeen": "Fri, 18 Jul 2025 07:00:00 GMT",
       "lastSeen": "Thu, 02 May 2024 07:00:00 GMT"
-    },
-    {
-      "id": "7e25ab364b4dcc3b",
-      "title": "Explanation of Vote Before the Vote for UNGA 80 Adoption on the Resolution to “Correct the Map” - United States Mission to the United Nations (.gov)",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "independentSourceCount": 1,
-      "sources": [
-        "United States Mission to the United Nations (.gov)"
-      ],
-      "breaking": false,
-      "firstSeen": "Fri, 04 Sep 2026 07:00:00 GMT",
-      "lastSeen": "Wed, 25 Mar 2026 07:00:00 GMT"
-    },
-    {
-      "id": "dccb26f9fa049143",
-      "title": "NATO ‘prepared’ to defend allies amid reported Iran threat - The New Region",
-      "category": "diplomatic",
-      "confidence": "low",
-      "reportCount": 2,
-      "independentSourceCount": 2,
-      "sources": [
-        "The New Region",
-        "Washington Times"
-      ],
-      "breaking": false,
-      "firstSeen": "Wed, 19 Aug 2026 07:00:00 GMT",
-      "lastSeen": "Wed, 19 Aug 2026 07:00:00 GMT"
     }
   ],
   "watchlist": [
