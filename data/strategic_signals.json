@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "generatedAt": "2026-10-21T06:33:11.058882Z",
+  "generatedAt": "2026-10-21T12:19:15.057332Z",
   "sourceBackedOnly": true,
   "method": "Source-backed Brain evidence plus dict/list action layers; co-mention targets are co-occurrence volumes, not causality.",
   "signals": [
@@ -10,13 +10,13 @@
       "category": "technology",
       "categories": {
         "technology": 100,
-        "political": 53,
-        "military": 51,
-        "diplomatic": 44,
-        "economic": 40,
+        "military": 54,
+        "political": 47,
+        "diplomatic": 41,
+        "economic": 38,
         "security": 31,
-        "energy": 30,
-        "maritime": 10
+        "energy": 29,
+        "maritime": 9
       },
       "dominantTarget": "Iran",
       "topTargets": [
@@ -25,12 +25,12 @@
           "mentions": 29
         },
         {
-          "target": "Ukraine",
+          "target": "Oil",
           "mentions": 21
         },
         {
-          "target": "Oil",
-          "mentions": 21
+          "target": "Ukraine",
+          "mentions": 20
         },
         {
           "target": "China",
@@ -41,37 +41,31 @@
           "mentions": 13
         }
       ],
-      "actionCount": 359,
-      "actionEvidenceCount": 359,
+      "actionCount": 349,
+      "actionEvidenceCount": 349,
       "categoryCount": 100,
       "targetCount": 29,
-      "evidenceCount": 89,
+      "evidenceCount": 91,
       "lastEvidenceTime": "Tue, 27 Jan 2026 08:00:00 GMT",
       "intensity": 100,
       "evidence": [
         {
-          "title": "Houthi Advance in Yemen Puts U.S. in a New Bind - EnergyNow.com",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQU0ZfbVdXNTBXeUdLMzc1cjhlNDhnWVRvRi1JUWt2eXNyZVdTLWNDRDNnLXhwekJoZ1gwZzRIUlluMjN1NUFIaXJWckpWUWtLTzRaQkt0dlZ5SE0zLUVYWEZfS3k4R3lRLTdvaXFJNEJ1ZGtGdXVpM1lWWVBTODdySnVXanRQdw?oc=5",
-          "source": "Google News — Yemen / Red Sea",
-          "time": "2026-10-20T21:27:44Z"
-        },
-        {
-          "title": "From Orange County to Mexico’s Cartel Wars: The U.S. Born Figures Linked to Two Powerful Criminal Organizations - Parriva",
-          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQb00yOXZ3Ti1md0ZZNFBqcU1qRnlPcDBRMm44YTV2UW00cm9qNUFQa2o3cVdCTGMzMEZFLVRBRmJxWkprVzB2VkcyQXgyVkV2SkpIU0JuNlR3YnZ6NGxlUmQ0eFU3VVZlNDJrdEtiRWdNVEV0TnkwMnY4QmtSd2Y1S1ZpR3JzcnNfcmowVWQ3Z0xPRExiNjBqWWszQXZOUzdBZzZzNkNNNlNxYS01OGVOemk4TVJiSVNjVGozSFdLYWFCanlxN0lPTDg2Z1Rmdw?oc=5",
-          "source": "Google News — Sinaloa Cartel / CJNG",
-          "time": "2026-10-21T01:22:46Z"
-        },
-        {
-          "title": "How The Toxic Relationship Between Cartels And Chinese Money Launderers Costs American Investors - tippinsights",
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOXzl5UmR2Q0M1eC0yMmh2SzZuMk00SS0tV2ZqWWx5amxOd1QybmJXdGpvZWpsVmJYUWRHLUpGTk8zRDhaTHRJaGlWdUxZVXVOa2R2R3RtNzE1ZWMwX1o3a2xNVC1iQUhvNWJiSkdVeUY4TmVUQXJsQkZkdjVvbkR0UzlDUDNJVzlUWU5EcTNFU2V4aWtrX0RTbTA3ZzNuQW1YYnhiVVY3UVg4eE5LakgzdWtZRUlmOWxFRnZObFJsdw?oc=5",
-          "source": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOXzl5UmR2Q0M1eC0yMmh2SzZuMk00SS0tV2ZqWWx5amxOd1QybmJXdGpvZWpsVmJYUWRHLUpGTk8zRDhaTHRJaGlWdUxZVXVOa2R2R3RtNzE1ZWMwX1o3a2xNVC1iQUhvNWJiSkdVeUY4TmVUQXJsQkZkdjVvbkR0UzlDUDNJVzlUWU5EcTNFU2V4aWtrX0RTbTA3ZzNuQW1YYnhiVVY3UVg4eE5LakgzdWtZRUlmOWxFRnZObFJsdw?oc=5",
-          "time": "2026-10-20T19:54:45Z"
+          "title": "Putin orders release of jailed American as he meets Trump envoy for Ukraine talks",
+          "url": "https://www.theguardian.com/world/2026/oct/21/putin-witkoff-russia-ukraine-trump-stephen-hubbard-release",
+          "source": "Guardian World",
+          "time": "2026-10-21T11:50:27Z"
         },
         {
           "title": "China Says It Is 'Safeguarding Order' Around Taiwan-Controlled South China Sea Atoll - U.S. News & World Report",
           "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQWEk5eXh6UVF5ZldvVGdnaDhXSmlCY2NPY0l3TVpKa0pDUFdDUjUwQ3dYcU1tRkt6OUs0VlJxd0FCS04zWVgtcTJhQ0hiQ2w3NzdDM2M2d1ZMYkltcUprYzh1WEFDU0RaVmFJeV9yY1Y5UkMzRFUyMFJNemp6Nzl5N3YwWldSNDhoUUEtWTJoT3dTREdBanNQR2V3SkpUVzE4aHo5aEJPaWdjdkNMOWZSSVNBTUVpQkJlRldqZmlWYjdXWTFad1RPY3RNQ1FQeWV5Nnc?oc=5",
-          "source": "Google News — China Security / PLA",
+          "source": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQWEk5eXh6UVF5ZldvVGdnaDhXSmlCY2NPY0l3TVpKa0pDUFdDUjUwQ3dYcU1tRkt6OUs0VlJxd0FCS04zWVgtcTJhQ0hiQ2w3NzdDM2M2d1ZMYkltcUprYzh1WEFDU0RaVmFJeV9yY1Y5UkMzRFUyMFJNemp6Nzl5N3YwWldSNDhoUUEtWTJoT3dTREdBanNQR2V3SkpUVzE4aHo5aEJPaWdjdkNMOWZSSVNBTUVpQkJlRldqZmlWYjdXWTFad1RPY3RNQ1FQeWV5Nnc?oc=5",
           "time": "2026-10-21T03:42:00Z"
+        },
+        {
+          "title": "From Orange County to Mexico’s Cartel Wars: The U.S. Born Figures Linked to Two Powerful Criminal Organizations - Parriva",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQb00yOXZ3Ti1md0ZZNFBqcU1qRnlPcDBRMm44YTV2UW00cm9qNUFQa2o3cVdCTGMzMEZFLVRBRmJxWkprVzB2VkcyQXgyVkV2SkpIU0JuNlR3YnZ6NGxlUmQ0eFU3VVZlNDJrdEtiRWdNVEV0TnkwMnY4QmtSd2Y1S1ZpR3JzcnNfcmowVWQ3Z0xPRExiNjBqWWszQXZOUzdBZzZzNkNNNlNxYS01OGVOemk4TVJiSVNjVGozSFdLYWFCanlxN0lPTDg2Z1Rmdw?oc=5",
+          "source": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQb00yOXZ3Ti1md0ZZNFBqcU1qRnlPcDBRMm44YTV2UW00cm9qNUFQa2o3cVdCTGMzMEZFLVRBRmJxWkprVzB2VkcyQXgyVkV2SkpIU0JuNlR3YnZ6NGxlUmQ0eFU3VVZlNDJrdEtiRWdNVEV0TnkwMnY4QmtSd2Y1S1ZpR3JzcnNfcmowVWQ3Z0xPRExiNjBqWWszQXZOUzdBZzZzNkNNNlNxYS01OGVOemk4TVJiSVNjVGozSFdLYWFCanlxN0lPTDg2Z1Rmdw?oc=5",
+          "time": "2026-10-21T01:22:46Z"
         },
         {
           "title": "China backs Africa’s strongest military as Egypt and Ethiopia face off over Africa’s longest river after U.S. talks collapsed - Business Insider Africa",
@@ -168,6 +162,12 @@
           "url": "https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR7lElhcTo9vfNPYjBH0HiBn3CaDqubJg7B0qe7tK0EL9130n2fKYvFLRfx1I2-7xLa-UOXYyBkpmjWz4HQFG4L43Q6g5BjiVPiukAkZqBSDMG3_kt4ptrobSCdXKyzUmtvl6lXdKtFQBfsIC9qOOJzofTlLaGkdfVjhLT4wFaue5W8MND_MlC8ZQ1kdQrT9-HXimogI753xxeWPXThnsPtutnHPtorvUnC75xM9AxdRr7KsMqDXp9HweIs?fife=s16383",
           "source": "Cartel Intelligence Map",
           "time": ""
+        },
+        {
+          "title": "\"Protected Witness\" Operates from California: Directs Fentanyl Trafficking and Extortion in Sonora\n \n💥💥SAN YSIDRO, CALIFORNIA, USA \n\nSajid Emilio Quin",
+          "url": "https://x.com/ContactoRevist/status/2036479635618160777",
+          "source": "Cartel Intelligence Map",
+          "time": ""
         }
       ],
       "sourceBacked": true
@@ -177,20 +177,20 @@
       "signal": "China shows source-backed military activity",
       "category": "military",
       "categories": {
+        "military": 100,
         "economic": 100,
         "technology": 100,
-        "military": 96,
-        "diplomatic": 90,
-        "security": 86,
-        "maritime": 53,
-        "political": 39,
+        "diplomatic": 92,
+        "security": 89,
+        "maritime": 55,
+        "political": 40,
         "energy": 37
       },
       "dominantTarget": "Iran",
       "topTargets": [
         {
           "target": "Iran",
-          "mentions": 34
+          "mentions": 35
         },
         {
           "target": "Russia",
@@ -205,41 +205,29 @@
           "mentions": 13
         },
         {
-          "target": "Pakistan",
-          "mentions": 10
+          "target": "Markets",
+          "mentions": 11
         }
       ],
-      "actionCount": 601,
-      "actionEvidenceCount": 601,
-      "categoryCount": 96,
-      "targetCount": 34,
-      "evidenceCount": 78,
+      "actionCount": 613,
+      "actionEvidenceCount": 613,
+      "categoryCount": 100,
+      "targetCount": 35,
+      "evidenceCount": 79,
       "lastEvidenceTime": "Sat, 26 Sep 2026 07:00:00 GMT",
       "intensity": 100,
       "evidence": [
         {
-          "title": "China Says It Is 'Safeguarding Order' Around Taiwan-Controlled South China Sea Atoll - U.S. News & World Report",
-          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQWEk5eXh6UVF5ZldvVGdnaDhXSmlCY2NPY0l3TVpKa0pDUFdDUjUwQ3dYcU1tRkt6OUs0VlJxd0FCS04zWVgtcTJhQ0hiQ2w3NzdDM2M2d1ZMYkltcUprYzh1WEFDU0RaVmFJeV9yY1Y5UkMzRFUyMFJNemp6Nzl5N3YwWldSNDhoUUEtWTJoT3dTREdBanNQR2V3SkpUVzE4aHo5aEJPaWdjdkNMOWZSSVNBTUVpQkJlRldqZmlWYjdXWTFad1RPY3RNQ1FQeWV5Nnc?oc=5",
+          "title": "China says it is 'safeguarding order' around Taiwan-controlled South China Sea atoll - Yahoo News UK",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPTXVidVhpQldfTDNmTFdaUjlNMC1WZFc5S1hYYUl4cHFqdnZxZl9FU1dXV3FpcE9qczY4aGVZWTdUZktvMk03SDZSYUE2TXBTS3pDcUt5Y2hIVnFSZUphSmZfWl9Nc0RGMGhTcjktbk04V0xUQlhubktVLWtUc19MYnQyMA?oc=5",
           "source": "Google News — China Security / PLA",
           "time": "2026-10-21T03:42:00Z"
         },
         {
-          "title": "Small base, long shadow: China's new military outpost in Laos | The Straits Times - newspaper - Magzter",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOVG5KMHA4dzJwWndNMVZEV2xhSGhISHg4WElZYUI1OXdBY28yaE1JQ1BfQnpYU09nZnFMSDdmME9ueFlVRlpxVmt0S2N3Z1d2Ukh2M1JzNUd6eFNNOHRYNjMzU0Z4WlNuTUN6aDgxMm5ndnhhZ3RDSHJFUE5kSnlnMUh5RUZINDdJQ1hhYVVZRE9oejZmcU9yYy1qSnlpbFlCWU1vemJQN1lLSFcxRkVmOXVwcE9YVDZVeGc?oc=5",
-          "source": "Google News — China Security / PLA",
-          "time": "2026-10-21T03:22:30Z"
-        },
-        {
-          "title": "China sends naval forces to monitor US warship near disputed shoal - Devdiscourse",
-          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNVUp0MWJHWjEyS0k0cVdMR2JIOEl0Nm1TWDZueUVuUVhNY3lSM1JuOElOclRJVUo5ODJ6bW1fQXVtT09EOUxlU25aNTE4QUI4Vzg2RWxzSnJpSkx1OUdDempWMXhiMGFFR0FFVDVFOHhhcjh5dEhQaVltZkc2TzJmS3VxQlZYdlo5NmNXX0hRSUN5MXZkZERWMVhKUmQ0TmJFYkVveFZ0bUszWnYzZzItZFVwTy1JaWJsSzhEVHZUVHpET1BhZjVKMdIByAFBVV95cUxNVUp0MWJHWjEyS0k0cVdMR2JIOEl0Nm1TWDZueUVuUVhNY3lSM1JuOElOclRJVUo5ODJ6bW1fQXVtT09EOUxlU25aNTE4QUI4Vzg2RWxzSnJpSkx1OUdDempWMXhiMGFFR0FFVDVFOHhhcjh5dEhQaVltZkc2TzJmS3VxQlZYdlo5NmNXX0hRSUN5MXZkZERWMVhKUmQ0TmJFYkVveFZ0bUszWnYzZzItZFVwTy1JaWJsSzhEVHZUVHpET1BhZjVKMQ?oc=5",
-          "source": "Google News — China Security / PLA",
-          "time": "2026-10-21T00:28:45Z"
-        },
-        {
-          "title": "US troops in South Korea must be ready for missions beyond peninsula: commander - South China Morning Post",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNVzBIRUg1WkFjX1M0MFdoVjA3bUdTbVVGUjNJRDR2QUpNQzkwM2FkWXh1dzBiaUlQSmg0OXFkYVJtb1Faamg1ck11aEc1STJKbkNCOVJoX18yWHl5b2o2X29xc2tocFZLUjN6R3hXa3l0NkJ4bzd3c2xQWF82eG9jcmgzSUxHQkY5SUN0Wjc1MzkwTnlnNEhHSTdGSnI3ckJrdmYtZlZwMmZ6NHZnMHdqUzFjVXhKS2V0V05vMENB0gG-AUFVX3lxTE1XMEhFSDVaQWNfUzQwV2hWMDdtR1NtVUZSM0lENHZBSk1DOTAzYWRZeHV3MGJpSVBKaDQ5cWRhUm1vUVpqaDVyTXVoRzVJMkpuQ0I5UmhfXzJYeXlvajZfb3Fza2hwVktSM3pHeFdreXQ2QnhvN3dzbFBYXzZ4b2NyaDNJTEdCRjlJQ3RaNzUzOTBOeWc0SEdJN0ZKcjdyQmt2Zi1mVnAyZno0dmcwd2pTMWNVeEpLZXRXTm8wQ0E?oc=5",
-          "source": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNVzBIRUg1WkFjX1M0MFdoVjA3bUdTbVVGUjNJRDR2QUpNQzkwM2FkWXh1dzBiaUlQSmg0OXFkYVJtb1Faamg1ck11aEc1STJKbkNCOVJoX18yWHl5b2o2X29xc2tocFZLUjN6R3hXa3l0NkJ4bzd3c2xQWF82eG9jcmgzSUxHQkY5SUN0Wjc1MzkwTnlnNEhHSTdGSnI3ckJrdmYtZlZwMmZ6NHZnMHdqUzFjVXhKS2V0V05vMENB0gG-AUFVX3lxTE1XMEhFSDVaQWNfUzQwV2hWMDdtR1NtVUZSM0lENHZBSk1DOTAzYWRZeHV3MGJpSVBKaDQ5cWRhUm1vUVpqaDVyTXVoRzVJMkpuQ0I5UmhfXzJYeXlvajZfb3Fza2hwVktSM3pHeFdreXQ2QnhvN3dzbFBYXzZ4b2NyaDNJTEdCRjlJQ3RaNzUzOTBOeWc0SEdJN0ZKcjdyQmt2Zi1mVnAyZno0dmcwd2pTMWNVeEpLZXRXTm8wQ0E?oc=5",
-          "time": "2026-10-20T21:52:49Z"
+          "title": "China Says It Is 'Safeguarding Order' Around Taiwan-Controlled South China Sea Atoll - U.S. News & World Report",
+          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQWEk5eXh6UVF5ZldvVGdnaDhXSmlCY2NPY0l3TVpKa0pDUFdDUjUwQ3dYcU1tRkt6OUs0VlJxd0FCS04zWVgtcTJhQ0hiQ2w3NzdDM2M2d1ZMYkltcUprYzh1WEFDU0RaVmFJeV9yY1Y5UkMzRFUyMFJNemp6Nzl5N3YwWldSNDhoUUEtWTJoT3dTREdBanNQR2V3SkpUVzE4aHo5aEJPaWdjdkNMOWZSSVNBTUVpQkJlRldqZmlWYjdXWTFad1RPY3RNQ1FQeWV5Nnc?oc=5",
+          "source": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQWEk5eXh6UVF5ZldvVGdnaDhXSmlCY2NPY0l3TVpKa0pDUFdDUjUwQ3dYcU1tRkt6OUs0VlJxd0FCS04zWVgtcTJhQ0hiQ2w3NzdDM2M2d1ZMYkltcUprYzh1WEFDU0RaVmFJeV9yY1Y5UkMzRFUyMFJNemp6Nzl5N3YwWldSNDhoUUEtWTJoT3dTREdBanNQR2V3SkpUVzE4aHo5aEJPaWdjdkNMOWZSSVNBTUVpQkJlRldqZmlWYjdXWTFad1RPY3RNQ1FQeWV5Nnc?oc=5",
+          "time": "2026-10-21T03:42:00Z"
         },
         {
           "title": "As the China-US AI race reaches Cairo, Egypt faces a strategic decision - Al Jazeera",
@@ -314,28 +302,40 @@
           "time": ""
         },
         {
+          "title": "Storm simulator: China’s latest typhoon trend - The Weather Channel",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPN1NQbk1nLWNVLUw1bnFwX0xSTDNlaEo2Yi1oeDM3eXFVSVhFS2g4aF9HRUM5aTZZbHczM2g5M3RrejhyVEVpVDltRS15RUxOaG9hMGtmX3FrNnY4MmREU2V1aFBicDhRX29CTlVVNXJwaHdHS2VsODk0NkRZM0JaNEtfRURZeFhhV1VIVG1SZy1NRzEtZUxNUURoTHFFUG94WXc?oc=5",
+          "source": "Google News — Climate & Disaster",
+          "time": "2026-10-21T10:48:27Z"
+        },
+        {
+          "title": "China Says It Shadowed USS Charleston Near Sabina Shoal, Challenging US Naval Access - Defence Security Asia",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQNEFHWWpLcGFHZEdiVER2UDlHQy1zbHZRVW5vUDE0RGhiSTdJd1JUajI2MF9NQVlUMlZTMDlvMG90WVUtN0hlZmtZcVZ3dTkyZWhpVS1HSE0yb3RjbFluNEZETHlfRnZQbWltOFBYdkJZa3c1N1dJQnJRS0RLVG0zSEFoTXpJcWpuX3c?oc=5",
+          "source": "Google News — China Security / PLA",
+          "time": "2026-10-21T06:07:17Z"
+        },
+        {
+          "title": "US Grapples With China-Linked Critical Minerals Shortfall Left Unresolved By Trump-Xi Summit - Radio Free Europe/Radio Liberty",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNWUFYV2lYZWVCSHNLMDZJWV94c1lyS2N3Uk1fdld1NTJ0UUtZemxIUURMOW5xWGZaeGQwSUNWVzZ4RGNHcE5TdXAzZ2RNUmw0ZHpob003VDZIYkctTjQ5YW1qT0hucXd1TTFvOEI5VjNVemhtcm1HNWZ2b2NFelVqeG96Z0Z3ZGtJbFJhMlZZajVMdFV6S1Nn0gGXAUFVX3lxTE1ZQVhXaVhlZUJIc0swNklZX3hzWXJLY3dSTV92V3U1MnRRS1l6bEhRREw5bnFYZlp4ZDBJQ1ZXNnhEY0dwTlN1cDNnZE1SbDRkemhvTTdUNkhiRy1ONDlhbWpPSG5xd3VNMW84QjlWM1V6aG1ybUc1ZnZvY0V6VWp4b3pnRndka0lsUmEyVllqNUx0VXpLU2c?oc=5",
+          "source": "Google News — China Politics / CCP",
+          "time": "2026-10-21T05:27:33Z"
+        },
+        {
+          "title": "Small base, long shadow: China's new military outpost in Laos | The Straits Times - newspaper - Magzter",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOVG5KMHA4dzJwWndNMVZEV2xhSGhISHg4WElZYUI1OXdBY28yaE1JQ1BfQnpYU09nZnFMSDdmME9ueFlVRlpxVmt0S2N3Z1d2Ukh2M1JzNUd6eFNNOHRYNjMzU0Z4WlNuTUN6aDgxMm5ndnhhZ3RDSHJFUE5kSnlnMUh5RUZINDdJQ1hhYVVZRE9oejZmcU9yYy1qSnlpbFlCWU1vemJQN1lLSFcxRkVmOXVwcE9YVDZVeGc?oc=5",
+          "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOVG5KMHA4dzJwWndNMVZEV2xhSGhISHg4WElZYUI1OXdBY28yaE1JQ1BfQnpYU09nZnFMSDdmME9ueFlVRlpxVmt0S2N3Z1d2Ukh2M1JzNUd6eFNNOHRYNjMzU0Z4WlNuTUN6aDgxMm5ndnhhZ3RDSHJFUE5kSnlnMUh5RUZINDdJQ1hhYVVZRE9oejZmcU9yYy1qSnlpbFlCWU1vemJQN1lLSFcxRkVmOXVwcE9YVDZVeGc?oc=5",
+          "time": "2026-10-21T03:22:30Z"
+        },
+        {
           "title": "China says tracked US Navy ship in disputed waters - Philstar.com",
           "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNQ0l4NktMcEhNNm9yWlpwVnJicEdsRTZ3eU04ZWFLVnlFenpPcC1lbVNGaEcyQjJwRXpkVG1fUHJibU9OY2lMZ0kyNDNlQWpWUHlNUjV6anlwZElPYXJDYU00QU5lV2dKdWIxbkgzc3YzNUVpVC1vdlEzRjZqdVdpRFkzU2g4VGtydnVBM3BTdE53ZW0xZnc2RmpDYnNNZEtpOTZr?oc=5",
           "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNQ0l4NktMcEhNNm9yWlpwVnJicEdsRTZ3eU04ZWFLVnlFenpPcC1lbVNGaEcyQjJwRXpkVG1fUHJibU9OY2lMZ0kyNDNlQWpWUHlNUjV6anlwZElPYXJDYU00QU5lV2dKdWIxbkgzc3YzNUVpVC1vdlEzRjZqdVdpRFkzU2g4VGtydnVBM3BTdE53ZW0xZnc2RmpDYnNNZEtpOTZr?oc=5",
           "time": "2026-10-21T00:33:00Z"
         },
         {
-          "title": "Public intelligence record",
-          "url": "https://data.worldbank.org/",
-          "source": "World Bank WDI",
-          "time": ""
-        },
-        {
-          "title": "China & Taiwan Update, October 20, 2026 - American Enterprise Institute - AEI",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1qaFpBQzVlRHdJWGVGYVFIZ1dObXBYTHR6T1JKN1BWaVJRZHRocjhkNjBIbVRzNmZqMTdURkNYQTU5NldCVDVTT19BSUxfSlhrclh5Z0IweHpWS2VRNWEyOFV5LUMtZmtuUFJfWTNwZ05fNTVnMUE?oc=5",
-          "source": "Google News — China Security / PLA",
-          "time": "2026-10-20T17:47:31+00:00"
-        },
-        {
-          "title": "New EU plan for Arctic warily eyes influence of Russia, US",
-          "url": "https://www.dw.com/en/new-eu-plan-for-arctic-warily-eyes-influence-of-russia-us/a-79715219?maca=en-rss-en-world-4025-xml-mrss",
-          "source": "DW World",
-          "time": "2026-10-20T16:44:00+00:00"
+          "title": "China sends naval forces to monitor US warship near disputed shoal - Devdiscourse",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNVUp0MWJHWjEyS0k0cVdMR2JIOEl0Nm1TWDZueUVuUVhNY3lSM1JuOElOclRJVUo5ODJ6bW1fQXVtT09EOUxlU25aNTE4QUI4Vzg2RWxzSnJpSkx1OUdDempWMXhiMGFFR0FFVDVFOHhhcjh5dEhQaVltZkc2TzJmS3VxQlZYdlo5NmNXX0hRSUN5MXZkZERWMVhKUmQ0TmJFYkVveFZ0bUszWnYzZzItZFVwTy1JaWJsSzhEVHZUVHpET1BhZjVKMdIByAFBVV95cUxNVUp0MWJHWjEyS0k0cVdMR2JIOEl0Nm1TWDZueUVuUVhNY3lSM1JuOElOclRJVUo5ODJ6bW1fQXVtT09EOUxlU25aNTE4QUI4Vzg2RWxzSnJpSkx1OUdDempWMXhiMGFFR0FFVDVFOHhhcjh5dEhQaVltZkc2TzJmS3VxQlZYdlo5NmNXX0hRSUN5MXZkZERWMVhKUmQ0TmJFYkVveFZ0bUszWnYzZzItZFVwTy1JaWJsSzhEVHZUVHpET1BhZjVKMQ?oc=5",
+          "source": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNVUp0MWJHWjEyS0k0cVdMR2JIOEl0Nm1TWDZueUVuUVhNY3lSM1JuOElOclRJVUo5ODJ6bW1fQXVtT09EOUxlU25aNTE4QUI4Vzg2RWxzSnJpSkx1OUdDempWMXhiMGFFR0FFVDVFOHhhcjh5dEhQaVltZkc2TzJmS3VxQlZYdlo5NmNXX0hRSUN5MXZkZERWMVhKUmQ0TmJFYkVveFZ0bUszWnYzZzItZFVwTy1JaWJsSzhEVHZUVHpET1BhZjVKMdIByAFBVV95cUxNVUp0MWJHWjEyS0k0cVdMR2JIOEl0Nm1TWDZueUVuUVhNY3lSM1JuOElOclRJVUo5ODJ6bW1fQXVtT09EOUxlU25aNTE4QUI4Vzg2RWxzSnJpSkx1OUdDempWMXhiMGFFR0FFVDVFOHhhcjh5dEhQaVltZkc2TzJmS3VxQlZYdlo5NmNXX0hRSUN5MXZkZERWMVhKUmQ0TmJFYkVveFZ0bUszWnYzZzItZFVwTy1JaWJsSzhEVHZUVHpET1BhZjVKMQ?oc=5",
+          "time": "2026-10-21T00:28:45Z"
         }
       ],
       "sourceBacked": true
@@ -354,38 +354,50 @@
       "categoryCount": 1,
       "targetCount": 0,
       "evidenceCount": 95,
-      "lastEvidenceTime": "Thu, 03 Sep 2026 07:02:12 GMT",
+      "lastEvidenceTime": "Tue, 20 Oct 2026 22:29:14 GMT",
       "intensity": 35,
       "evidence": [
         {
-          "title": "US has resumed sharing intelligence with Ukraine about Russian strikes, says Zelenskyy",
-          "url": "https://www.theguardian.com/world/2026/oct/20/us-has-resumed-sharing-intelligence-with-ukraine-about-russian-strikes-says-zelenskyy",
-          "source": "https://www.theguardian.com/world/2026/oct/20/us-has-resumed-sharing-intelligence-with-ukraine-about-russian-strikes-says-zelenskyy",
-          "time": "2026-10-20T19:32:28Z"
+          "title": "Zelenskyy says early warning system for Russian missile attacks resumes",
+          "url": "https://www.npr.org/2026/10/21/g-s1-149026/zelenskyy-russian-missiles-warning",
+          "source": "NPR News",
+          "time": "2026-10-21T05:43:24Z"
         },
         {
-          "title": "Zelenskyy hails resumption of US advance warning of strikes on Ukraine",
-          "url": "https://www.channelnewsasia.com/world/zelenskyy-hails-resumption-us-advance-warning-strikes-ukraine-6476751",
-          "source": "https://www.channelnewsasia.com/world/zelenskyy-hails-resumption-us-advance-warning-strikes-ukraine-6476751",
-          "time": "2026-10-20T21:06:00Z"
+          "title": "‘I don’t care how it’s done’: Trump pressures Ukraine to cut peace deal - Al Jazeera",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPaHprb0pxRDJCVXNnZEtEWGluTEQ0WTEtLVgyZUxmSU5ZclBQRUxTQW5mcFdIVjlpRDZoQXVCVzBjQmNmeFRMWDkyOGN6SnpDWHMzam1QTVlxQmJuNVdWRlAxcDlLb3RWT3dxM2V5RXhBcGR5ckNyZ0lwdDNfWGRIU2FfZGJ1cXp0bzd0UHU3VFFXZmt0MkJWM2RwVWk4b19jbW51X0o0ZEpJWm1G0gGyAUFVX3lxTFBYSE9FQmlFLVFmYWdobUQyeG5lWHAwUHFoR2docG5QNl93MG9rbjNVTlprRFRudW1TOTQxZXVhSGswenZiSDJjMmdzVGp4UmJyNUIxVXZVLWV0QktpeV9uREw4dTZYd0lvNmxsWXlLNnhSQWRmUnc3bEJjQ29NVGVseno5OVJjQ2pjdkZNa0g2RVc0TVRrUHZBYXFaTHNWUm9XcWV3YU9mYXBiaTFEblgwLXc?oc=5",
+          "source": "Al Jazeera",
+          "time": "Tue, 20 Oct 2026 22:29:14 GMT"
         },
         {
-          "title": "Ukraine Deployed Drone Units around Iran, Tehran Weighs Response – Tasnim - Palestine Chronicle",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOa3ZRU2JrQ3JqVVpRR1dmS2hXanAyZ0lJT21GeVE0YXhRbEZzNVR4VzNLanRZeVE5V2EzWlJGbVFtejl4LXVyUC1BU1ozX2paek9ja0hPVm93NE5RWDdWSVhNTExnWWpxS2ZKZVVBWVlUVVVNc0ROaEVpbXA3RG5MMWd5ZlV3RXBYVFVkZ1ZPSzdobDJZMHpVQ0trS0hIV0lURExxSWE2UEpiZw?oc=5",
-          "source": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOa3ZRU2JrQ3JqVVpRR1dmS2hXanAyZ0lJT21GeVE0YXhRbEZzNVR4VzNLanRZeVE5V2EzWlJGbVFtejl4LXVyUC1BU1ozX2paek9ja0hPVm93NE5RWDdWSVhNTExnWWpxS2ZKZVVBWVlUVVVNc0ROaEVpbXA3RG5MMWd5ZlV3RXBYVFVkZ1ZPSzdobDJZMHpVQ0trS0hIV0lURExxSWE2UEpiZw?oc=5",
-          "time": "2026-10-20T18:15:53Z"
+          "title": "Russia calls potential Japanese drone supplies to Ukraine a hostile step - Business Upturn",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNTGdHWjJLZFNvcjJaZ3JGVzdfT1FHUmJKaUM5Z0N6Z3kxYmVkVC1mWDY5a1F6bXRfSGpMd0hKNW1fUXBLZ0Y0WndSdVZic0xFOHdURWF1N2xuM3N2aXdDZ3A0SnpMaTgzN3JvUGtHYTJ6alRIbzVsb2FIT0MzaVRpVGs3MnZDVk5qTXNYZW5Ra1pZRkJvdEo3WXZDZWZfYllXY3Q3STZlY0NFdE5JOFg4S1Nlb183WERtWUd5d2JiOHQ1Y1pf?oc=5",
+          "source": "Google News — Iran Israel",
+          "time": "2026-10-21T10:46:37Z"
         },
         {
-          "title": "The Latest: US ties with Ukraine hit a new low as Trump slights Zelenskyy and eases up on Russia - The Washington Post",
-          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOVTVGRlZ3aTV2X3ZiVDlzU2tjeUNVYnpUT2Eyd29jOXpabWhidlk4VGpIaV9kQjdmXzl1dHNTVzNaQXU0TXBIcF9vblRaSFNQYXdfMHRnVDR4RW9ITExDLXIyOFNodEhhTnhXYXVWc3IwSnVKZGRQX2lFdWlac3JvZ0p6Y2x3YlBVcXA1alp1YjBxSlB3NzNmLUYwaEpFTHJnVkVkYjRtdGNiU2lxcjhFVlktcjZ4LUd4cHQzamhKeTdoX3FBZXlIZDNZUW1YdmM4VmdUU0lDYy1CMUlvcjVRQmZiaw?oc=5",
-          "source": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOVTVGRlZ3aTV2X3ZiVDlzU2tjeUNVYnpUT2Eyd29jOXpabWhidlk4VGpIaV9kQjdmXzl1dHNTVzNaQXU0TXBIcF9vblRaSFNQYXdfMHRnVDR4RW9ITExDLXIyOFNodEhhTnhXYXVWc3IwSnVKZGRQX2lFdWlac3JvZ0p6Y2x3YlBVcXA1alp1YjBxSlB3NzNmLUYwaEpFTHJnVkVkYjRtdGNiU2lxcjhFVlktcjZ4LUd4cHQzamhKeTdoX3FBZXlIZDNZUW1YdmM4VmdUU0lDYy1CMUlvcjVRQmZiaw?oc=5",
-          "time": "2026-10-20T20:06:01Z"
+          "title": "Putin hosts Trump envoy for new Ukraine peace talks, frees US citizen held in Russia",
+          "url": "https://www.channelnewsasia.com/world/putin-steve-witkoff-ukraine-peace-talks-frees-us-citizen-6478526",
+          "source": "CNA World",
+          "time": "2026-10-21T09:55:00Z"
         },
         {
-          "title": "US Investigating Alleged Links Between Ukrainian Officials And Mexican Cartels, Russia Claims - Sahara Reporters",
-          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQQmpqVkFJd2w5SkdXZy1heWVzTjg1Zy0wb2hZTjd1dlVsYU5QWGxuSHRtVVl1QktFNF9OaVIyelVmcnljVmZVSDZNVktHVWZRZFd0MVZSSDRrUTdpbWU4bXRGWFNKZUVQS1dDVXA4YXNpWG9qdzgtcHNjRjJjUE1QWTVIT3Zyd05mTlJkSkRtUGd5Q0RuQnVmQlFqcEdXeHlGZ1lBa3Z4VkZDSE9OUkF3cDFCQTFkempjNDQyMERiRmwzM0pJ?oc=5",
-          "source": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQQmpqVkFJd2w5SkdXZy1heWVzTjg1Zy0wb2hZTjd1dlVsYU5QWGxuSHRtVVl1QktFNF9OaVIyelVmcnljVmZVSDZNVktHVWZRZFd0MVZSSDRrUTdpbWU4bXRGWFNKZUVQS1dDVXA4YXNpWG9qdzgtcHNjRjJjUE1QWTVIT3Zyd05mTlJkSkRtUGd5Q0RuQnVmQlFqcEdXeHlGZ1lBa3Z4VkZDSE9OUkF3cDFCQTFkempjNDQyMERiRmwzM0pJ?oc=5",
-          "time": "2026-10-20T18:51:34Z"
+          "title": "Trump envoy Witkoff meets Russia’s Putin for Ukraine war talks",
+          "url": "https://www.aljazeera.com/news/2026/10/21/witkoff-in-russia-for-putin-meeting-after-positive-talks-with-zelenskyy?traffic_source=rss",
+          "source": "Al Jazeera",
+          "time": "2026-10-21T07:37:19Z"
+        },
+        {
+          "title": "Putin orders release of jailed American as he meets Trump envoy for Ukraine talks",
+          "url": "https://www.theguardian.com/world/2026/oct/21/putin-witkoff-russia-ukraine-trump-stephen-hubbard-release",
+          "source": "Guardian World",
+          "time": "2026-10-21T11:50:27Z"
+        },
+        {
+          "title": "Russia’s Bryansk Region reports one death, two injuries in alleged Ukrainian drone attack - Business Upturn",
+          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxONThKcS1sYkZBbGFsWTdjUnRDRDlMSnczTDFnWENZRVBVT0xUQU9WTE9wLWZ0Q0NlNFdUTWhvTTdBLUFKZ3Jfd1FxYnBnMmR6WW9rLV9SNEFjYzJiZjZ1OWFJLTAzaUVRNDlqMFY2OVEwakdabU1KS245MURSTXJLcUtTUDN1MGRQV2ZpQnh4V18xRjNzN01ERlpUaFl4MUxYTXA1Y19tRUJjQ1M4REVlTVpSTk5vRm9mLVM1NXJ6STc1X01qb2RkOXp0dzlBN25sUFMySk9EQkNCZGJKT3c?oc=5",
+          "source": "Google News — Iran Israel",
+          "time": "2026-10-21T07:26:22Z"
         },
         {
           "title": "M5.5 earthquake — 156 km E of Kuril’sk, Russia",
@@ -464,18 +476,6 @@
           "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNTXllUHlBRm82MVF0Z0xiel95aDlidGY4aHBvRjRyYUtKcWFORGY5bFVVUi1hQkJaMS1jMFptajM0UTFTMDFtRXJ0bzFZMEtacUN6dUJCS2dzNGZ5NGRRUEZmd1RZWHRCUlBCSHFkYVhHc3RRRDBaclAwcXdLcnFxWU9EZzk1eVplZDJyc3FnWUJOdjQzN0x3bEJoWjFuWXVfVW1aeEpfY2JkUURuRVRtMm42YWVQZVNUZ2dOZlc3a2Y4aWhfUnRPUTdyNWwtMUNFMHhSTGV0MNIB1wFBVV95cUxNTXllUHlBRm82MVF0Z0xiel95aDlidGY4aHBvRjRyYUtKcWFORGY5bFVVUi1hQkJaMS1jMFptajM0UTFTMDFtRXJ0bzFZMEtacUN6dUJCS2dzNGZ5NGRRUEZmd1RZWHRCUlBCSHFkYVhHc3RRRDBaclAwcXdLcnFxWU9EZzk1eVplZDJyc3FnWUJOdjQzN0x3bEJoWjFuWXVfVW1aeEpfY2JkUURuRVRtMm42YWVQZVNUZ2dOZlc3a2Y4aWhfUnRPUTdyNWwtMUNFMHhSTGV0MA?oc=5",
           "source": "Google News RSS",
           "time": ""
-        },
-        {
-          "title": "Air Tanzania First Carrier to Suspend Moscow Flights After Zelensky's Threats - Novinite.com",
-          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNaG9xTUNSTHA0YUJocFpHYXQzT29vT0VUZWhrWk1fR2RmVHU4RnRJSzREaGo1eEd5dWtWWmE0NVdMTjZQTlhNRGFNdWcxV1FBVTQwclVqU0JrLUtxSFlUSTA3aFhBUUhDWTJyZ1l0SVlOQlR1bi1TWTQ0bkNYQ0ZSMXFaYzQtVy1DN19ZUm9FSDh1dllROXhGSE03RjFINDdFOFFDRlV6aDd6ZEFGNkRpV3pBRlY4MFY1d1UtVw?oc=5",
-          "source": "Google News RSS",
-          "time": ""
-        },
-        {
-          "title": "First airline cancels flights to Moscow amid Ukrainian threat to 'close' Russia's skies - The Kyiv Independent",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOdXhTVFdRSlU4MFhYOGltdkVtejlZWTlJLXBod3RnaHE2RU82d0NqZlhQN0tIZjloOG9LVHhzMGlhSWxpZ29MX2VIbVNmOGVONmI5ZkxaVGNyQ1c0aURrYXphSDViQnRVa0E5a3ZWX25PdkFBb3pQb2s2NjJ4VUV6UlExOFJIUHlBcEFZRFNEOHRxc2g1QnpTUEJ0NTZ1LXptNHNiS1Z5ZWlidmZaRktfQTQ2WQ?oc=5",
-          "source": "Google News RSS",
-          "time": ""
         }
       ],
       "sourceBacked": true
@@ -493,14 +493,14 @@
       "actionEvidenceCount": 0,
       "categoryCount": 1,
       "targetCount": 0,
-      "evidenceCount": 85,
+      "evidenceCount": 88,
       "lastEvidenceTime": "Wed, 03 Jun 2026 07:00:00 GMT",
       "intensity": 35,
       "evidence": [
         {
           "title": "Iran war live: US warns peace deal with Tehran is extremely difficult",
           "url": "https://www.aljazeera.com/news/liveblog/2026/10/21/iran-war-live-us-warns-peace-deal-with-tehran-is-extremely-difficult?traffic_source=rss",
-          "source": "Al Jazeera",
+          "source": "https://www.aljazeera.com/news/liveblog/2026/10/21/iran-war-live-us-warns-peace-deal-with-tehran-is-extremely-difficult?traffic_source=rss",
           "time": "2026-10-21T00:00:00Z"
         },
         {
@@ -516,28 +516,16 @@
           "time": "2026-10-20T20:17:53Z"
         },
         {
-          "title": "Ukraine Deployed Drone Units around Iran, Tehran Weighs Response – Tasnim - Palestine Chronicle",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOa3ZRU2JrQ3JqVVpRR1dmS2hXanAyZ0lJT21GeVE0YXhRbEZzNVR4VzNLanRZeVE5V2EzWlJGbVFtejl4LXVyUC1BU1ozX2paek9ja0hPVm93NE5RWDdWSVhNTExnWWpxS2ZKZVVBWVlUVVVNc0ROaEVpbXA3RG5MMWd5ZlV3RXBYVFVkZ1ZPSzdobDJZMHpVQ0trS0hIV0lURExxSWE2UEpiZw?oc=5",
-          "source": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOa3ZRU2JrQ3JqVVpRR1dmS2hXanAyZ0lJT21GeVE0YXhRbEZzNVR4VzNLanRZeVE5V2EzWlJGbVFtejl4LXVyUC1BU1ozX2paek9ja0hPVm93NE5RWDdWSVhNTExnWWpxS2ZKZVVBWVlUVVVNc0ROaEVpbXA3RG5MMWd5ZlV3RXBYVFVkZ1ZPSzdobDJZMHpVQ0trS0hIV0lURExxSWE2UEpiZw?oc=5",
-          "time": "2026-10-20T18:15:53Z"
+          "title": "Iran’s Revolutionary Guard warns undersea internet cables in Strait of Hormuz could be targeted - Business Upturn",
+          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOQlZ2WUIzb04zRHBETkllYThZc3lhWk1YbXNSaGVDa3VOcFI2dWs5YWI2cWxVZGtnemI4MEdhcnptcG1qZkF1TWNNTlYyR2JNOTVfRkdHR09lVjJmS0lzRGZQbFAwSzc3OVlKSk9ya0tyZTFGUEJka192QUVKM3hwN0pGYUZTLXZaNU90bXF6aW5uWmctUVFMOVVieUs4ZjdfanBpZzRCM3pTcllib1VUNFZYa2hoTnlVcm1nZHg2TXpwNUQwY2dmNVdrR3Vval9HNkNfcjJqVkhIUWFOeExFNFI3aw?oc=5",
+          "source": "Google News — South Asia Security",
+          "time": "2026-10-21T08:16:23Z"
         },
         {
-          "title": "US-Israel-Iran War Latest Live News: UK Deploys RAF Typhoon Fighter Jets to Saudi Arabia to Help Defend Cities & Infrastructure Amid Houthi Threat - The Sunday Guardian",
-          "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxNdGVqb1ppMUlOX2lfQUl3Q0NyU1VwUTY4ZWlTSG9uWm5kSk9RZVJCSzdqVFhhVkZqbnhvUEVUNG0ySlRvdmFzcC1ESkRpcnM4MEtyN3hGU0Z6WGsxUkt4akFWNGxaMFNNNnNkTkw2dGpvQlh3aFFWMThDMHYxZmcyZVZPUkxWQ3N5dXV1cVljQzlSSG56dTh6cVlCeFY1YTY0eGZ4NkFnS1lKSl9tUVFJemlGQkpuS0taZzdnMnlWbFZtMExQbjBPWFl6dmJ1Vk9acHdCeHZ5QmZTMnA2OGRpZmtkcGVqZzk1R080RHZwemlmcXFpaDJrZ1R5QkJoQ1cyV2NWUEE1V0ozZ1JlMU9QWW95NEVKbTDSAZwCQVVfeXFMTTNsTE9ESVNzWXVDN1V1TEh3VGhkTkZScjFZcVE4aXpvQnNudDlGclJTVFljdFVmcVBJc3A3SkE1aWhKSFRMdkZnU1l4di1jV2xxTzR4UUxETlJRVW5zdHlDT3d6QmNaU0E5Sl9jTW9Va0FSR0dEQTdNMWF2TzZDVHpMcGEtQ0I3UEVRQ2ppUThLMHAxTjNkMUJjVXNTS29DNlF0SWhsSDlqVVZiVkdlOFZjTEpiaFlqSzYzM3JpQ1ZueTZLODFrU1BpSDM3dU02M1NYTE95aWhiUmluYkpnUW8zUE5YUDBxQ2JSWGtZQkE2TEl4aGQydEJoODhJOFpXRWRWeW1oRFFQcTd6aV9kODNwTWFVakJ6Q1c4bjU?oc=5",
-          "source": "Google News — Iran Israel",
-          "time": "2026-10-21T05:27:53Z"
-        },
-        {
-          "title": "US-Israel-Iran War Latest Live News: Saudi Coalition Destroys Houthi Missile Launcher After Riyadh Attack as Tanker Carrying Over 2 Million Barrels Reportedly Hits Naval Mine in St",
-          "url": "https://news.google.com/rss/articles/CBMi3wJBVV95cUxPOEwza1ljNUhLTWxKN2VIa1p1Q2t5ZF9GY1JXdXdENDNNOFh2MTR5MjFjbmZMbEtHcUYtT0RqUWNaWW95WTJ5ZEMzR3BiMkdzZGZNY0d5SFJPaXEwRVMtVEpLTGlMTmppdnlpZEFKVzVBaVdsV3VZNlJWazhsbzM4R2syTFROT1ZIT2dFcm5PV1cyYnMyYUkyUGoyek1rMnJ2bW93Vk0wVC0wREZNbFUwaXItNTB6cUdQQU5sWTQwZFlVYTBZRTFfemZOUjd0OXpERGpXV2RFVnZFRHZ1WDNnMkdodUJYRWhLNVZVMVg0OUd5ZGxib3pkbnU2b1VvOE9SREU1VVRmMmprd3JPeDcxNnpzd2tiLW1PYkZuSDM3SXVjcjFfdWF4a2s4dHBiZEJISEoxemI3aE90bnBGVm5oa2FHcVNKb1dkVGZQcEJMQWRRX1oyTlB0dnBSQW5IeTTSAd8CQVVfeXFMTzhMM2tZYzVIS01sSjdlSGtadUNreWRfRmNSV3V3RDQzTThYdjE0eTIxY25mTGxLR3FGLU9EalFjWllveVkyeWRDM0dwYjJHc2RmTWNHeUhST2lxMEVTLVRKS0xpTE5qaXZ5aWRBSlc1QWlXbFd1WTZSVms4bG8zOEdrMkxUTk9WSE9nRXJuT1dXMmJzMmFJMlBqMnpNazJydm1vd1ZNMFQtMERGTWxVMGlyLTUwenFHUEFObFk0MGRZVWEwWUUxX3pmTlI3dDl6RERqV1dkRVZ2RUR2dVgzZzJHaHVCWEVoSzVWVTFYNDlHeWRsYm96ZG51Nm9VbzhPUkRFNVVUZjJqa3dyT3g3MTZ6c3drYi1tT2JGbkgzN0l1Y3IxX3VheGtrOHRwYmRCSEhKMXpiN2hPdG5wRlZuaGthR3FTSm9XZFRmUHBCTEFkUV9aMk5QdHZwUkFuSHk0?oc=5",
-          "source": "https://news.google.com/rss/articles/CBMi3wJBVV95cUxPOEwza1ljNUhLTWxKN2VIa1p1Q2t5ZF9GY1JXdXdENDNNOFh2MTR5MjFjbmZMbEtHcUYtT0RqUWNaWW95WTJ5ZEMzR3BiMkdzZGZNY0d5SFJPaXEwRVMtVEpLTGlMTmppdnlpZEFKVzVBaVdsV3VZNlJWazhsbzM4R2syTFROT1ZIT2dFcm5PV1cyYnMyYUkyUGoyek1rMnJ2bW93Vk0wVC0wREZNbFUwaXItNTB6cUdQQU5sWTQwZFlVYTBZRTFfemZOUjd0OXpERGpXV2RFVnZFRHZ1WDNnMkdodUJYRWhLNVZVMVg0OUd5ZGxib3pkbnU2b1VvOE9SREU1VVRmMmprd3JPeDcxNnpzd2tiLW1PYkZuSDM3SXVjcjFfdWF4a2s4dHBiZEJISEoxemI3aE90bnBGVm5oa2FHcVNKb1dkVGZQcEJMQWRRX1oyTlB0dnBSQW5IeTTSAd8CQVVfeXFMTzhMM2tZYzVIS01sSjdlSGtadUNreWRfRmNSV3V3RDQzTThYdjE0eTIxY25mTGxLR3FGLU9EalFjWllveVkyeWRDM0dwYjJHc2RmTWNHeUhST2lxMEVTLVRKS0xpTE5qaXZ5aWRBSlc1QWlXbFd1WTZSVms4bG8zOEdrMkxUTk9WSE9nRXJuT1dXMmJzMmFJMlBqMnpNazJydm1vd1ZNMFQtMERGTWxVMGlyLTUwenFHUEFObFk0MGRZVWEwWUUxX3pmTlI3dDl6RERqV1dkRVZ2RUR2dVgzZzJHaHVCWEVoSzVWVTFYNDlHeWRsYm96ZG51Nm9VbzhPUkRFNVVUZjJqa3dyT3g3MTZ6c3drYi1tT2JGbkgzN0l1Y3IxX3VheGtrOHRwYmRCSEhKMXpiN2hPdG5wRlZuaGthR3FTSm9XZFRmUHBCTEFkUV9aMk5QdHZwUkFuSHk0?oc=5",
-          "time": "2026-10-20T19:15:27Z"
-        },
-        {
-          "title": "US-Israel-Iran War Latest Live News: Saudi Coalition Destroys Houthi Missile Launcher After Riyadh Attack as Tanker Carrying Over 2 Million Barrels Reportedly Hits Naval Mine in St",
-          "url": "https://news.google.com/rss/articles/CBMi2gJBVV95cUxNeFBvVVVYYTNSU05hSFJzWTY5cjRVLU5JSVR2cUxLMW5RSzVoNUhIa3NKenktWFFyLWNtUDl2Z0dKeHVtMmNDd3FMdURoLWMwLWxGaTNOSW1XclJzc0J4X1FrN2NMV29vY2R4N1ZwYmlzMW1ZbVBVdVhXdGptWG5xak8yV0lyeldLby00U3RMUmpUX2ZtTktiMG1leXU3eFVNTTRkUTNmSWtnYkFGcnZZcXVIR1ZjYkpzOEtTVlZBNjdaUmRHZ2M5aHpuekVrNUhWckVxdEs1R2o1dTZ5Tk1HeC16aG5QZHJ4cG9RQngwQ0FBV251YmJpTkNyLUJ6allFbDduT0JvTkptemNUamRlUVo3RlRHRkN0SXIxa21wMXNjVVRydUhScV9GZXBSaFlBRUU5NWY4d3ctazUwM2gtR005RzdwVnhLeEJVQ0U1Y1l4UVRmMTNyRGJR0gHfAkFVX3lxTE84TDNrWWM1SEtNbEo3ZUhrWnVDa3lkX0ZjUld1d0Q0M004WHYxNHkyMWNuZkxsS0dxRi1PRGpRY1pZb3lZMnlkQzNHcGIyR3NkZk1jR3lIUk9pcTBFUy1USktMaUxOaml2eWlkQUpXNUFpV2xXdVk2UlZrOGxvMzhHazJMVE5PVkhPZ0Vybk9XVzJiczJhSTJQajJ6TWsycnZtb3dWTTBULTBERk1sVTBpci01MHpxR1BBTmxZNDBkWVVhMFlFMV96Zk5SN3Q5ekREaldXZEVWdkVEdnVYM2cyR2h1QlhFaEs1VlUxWDQ5R3lkbGJvemRudTZvVW84T1JERTVVVGYyamt3ck94NzE2enN3a2ItbU9iRm5IMzdJdWNyMV91YXhrazh0cGJkQkhISjF6YjdoT3RucEZWbmhrYUdxU0pvV2RUZlBwQkxBZFFfWjJOUHR2cFJBbkh5NA?oc=5",
-          "source": "https://news.google.com/rss/articles/CBMi2gJBVV95cUxNeFBvVVVYYTNSU05hSFJzWTY5cjRVLU5JSVR2cUxLMW5RSzVoNUhIa3NKenktWFFyLWNtUDl2Z0dKeHVtMmNDd3FMdURoLWMwLWxGaTNOSW1XclJzc0J4X1FrN2NMV29vY2R4N1ZwYmlzMW1ZbVBVdVhXdGptWG5xak8yV0lyeldLby00U3RMUmpUX2ZtTktiMG1leXU3eFVNTTRkUTNmSWtnYkFGcnZZcXVIR1ZjYkpzOEtTVlZBNjdaUmRHZ2M5aHpuekVrNUhWckVxdEs1R2o1dTZ5Tk1HeC16aG5QZHJ4cG9RQngwQ0FBV251YmJpTkNyLUJ6allFbDduT0JvTkptemNUamRlUVo3RlRHRkN0SXIxa21wMXNjVVRydUhScV9GZXBSaFlBRUU5NWY4d3ctazUwM2gtR005RzdwVnhLeEJVQ0U1Y1l4UVRmMTNyRGJR0gHfAkFVX3lxTE84TDNrWWM1SEtNbEo3ZUhrWnVDa3lkX0ZjUld1d0Q0M004WHYxNHkyMWNuZkxsS0dxRi1PRGpRY1pZb3lZMnlkQzNHcGIyR3NkZk1jR3lIUk9pcTBFUy1USktMaUxOaml2eWlkQUpXNUFpV2xXdVk2UlZrOGxvMzhHazJMVE5PVkhPZ0Vybk9XVzJiczJhSTJQajJ6TWsycnZtb3dWTTBULTBERk1sVTBpci01MHpxR1BBTmxZNDBkWVVhMFlFMV96Zk5SN3Q5ekREaldXZEVWdkVEdnVYM2cyR2h1QlhFaEs1VlUxWDQ5R3lkbGJvemRudTZvVW84T1JERTVVVGYyamt3ck94NzE2enN3a2ItbU9iRm5IMzdJdWNyMV91YXhrazh0cGJkQkhISjF6YjdoT3RucEZWbmhrYUdxU0pvV2RUZlBwQkxBZFFfWjJOUHR2cFJBbkh5NA?oc=5",
-          "time": "2026-10-20T19:15:12Z"
+          "title": "Iran’s Proposal to Reopen Strait of Hormuz Rejected as Middle East Tensions Escalate - streamlinefeed.co.ke",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNd1lYRjVTaE1UR0QweTNOdS1WSGpORG9VOTBta1k5WmtMd3paa0hGR0dSdGhrMHA2NVdELWFzN3dkQUgzNmNJOHA2enhiYlRSWVRiVFpxS2RUbU51QzUzNXZyM1hUaDNRMFpVYXFMV2h3emlmQUhEVmxRSHM0d05DV0FveWExNV9oWjdVVWkwOWo5NVNYdXJfTHJTZ00yRUJ2bUhScE05ZnBMekRYcXJWMkt3d3dPN1NE?oc=5",
+          "source": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNd1lYRjVTaE1UR0QweTNOdS1WSGpORG9VOTBta1k5WmtMd3paa0hGR0dSdGhrMHA2NVdELWFzN3dkQUgzNmNJOHA2enhiYlRSWVRiVFpxS2RUbU51QzUzNXZyM1hUaDNRMFpVYXFMV2h3emlmQUhEVmxRSHM0d05DV0FveWExNV9oWjdVVWkwOWo5NVNYdXJfTHJTZ00yRUJ2bUhScE05ZnBMekRYcXJWMkt3d3dPN1NE?oc=5",
+          "time": "2026-10-21T05:25:29Z"
         },
         {
           "title": "Oil prices set for 8 per cent weekly gain on fresh US-Iran hostilities - The Eastleigh Voice",
@@ -616,146 +604,18 @@
           "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNX3VIWXVfd05vVnFvWmpGZFdYNk9jTUJNNEFaZExweGwzMy12dnNnZUxRdGVUMTJwTEltR3lrWkYteGhkLXR0Z1Bfb09tU0hydVRSZHJSR25fdE5HbmhFT3ItQmFPWThpVmJWdHhVc0R4cFJvSTV3MjdZekY0dDFta2tEUmY1RVRlLVV6Z2hNb3VxYmlJTmM1S2hNb1hLVE5MNTN3dWl2SmdRVEl0OWfSAa4BQVVfeXFMTV91SFl1X3dOb1Zxb1pqRmRXWDZPY01CTTRBWmRMcHhsMzMtdnZzZ2VMUXRlVDEycExJbUd5a1pGLXhoZC10dGdQX29PbVNIcnVUUmRyUkduX3ROR25oRU9yLUJhT1k4aVZiVnR4VXNEeHBSb0k1dzI3WXpGNHQxbWtrRFJmNUVUZS1VemdoTW91cWJpSU5jNUtoTW9YS1ROTDUzd3VpdkpnUVRJdDln?oc=5",
           "source": "Google News RSS",
           "time": ""
-        }
-      ],
-      "sourceBacked": true
-    },
-    {
-      "actor": "Markets",
-      "signal": "Markets has source-backed intelligence activity",
-      "category": "economic",
-      "categories": {
-        "economic": 1
-      },
-      "dominantTarget": "",
-      "topTargets": [],
-      "actionCount": 0,
-      "actionEvidenceCount": 0,
-      "categoryCount": 1,
-      "targetCount": 0,
-      "evidenceCount": 82,
-      "lastEvidenceTime": "Wed, 11 Mar 2026 07:00:00 GMT",
-      "intensity": 35,
-      "evidence": [
-        {
-          "title": "European Stocks Close Mixed in Tuesday Trading Amid Ongoing Unrest in France, Fighting in Middle East - Yahoo Finance",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPejdGX1V0Uzh2RjZBQjM5QjVmSmtUbmhERDlnVjdHSW1wbFRwRFRSNWdxbHdXcnVfT2ZUbGdxeXFQSGZEeU5Ic1N1NlhxVDBXOWY2cnZ6UzV4VDNDekRCUGpMeXlZaDUxb3M3d3RIYWx4VTk4ZVh6cHE4OWxZRWttTzVsRmxhaTdaaXFxZ19NYjdIbXFTQ3JkZ0NBOXZyTy1jNUZYdFlNUDFVZUE?oc=5",
-          "source": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPejdGX1V0Uzh2RjZBQjM5QjVmSmtUbmhERDlnVjdHSW1wbFRwRFRSNWdxbHdXcnVfT2ZUbGdxeXFQSGZEeU5Ic1N1NlhxVDBXOWY2cnZ6UzV4VDNDekRCUGpMeXlZaDUxb3M3d3RIYWx4VTk4ZVh6cHE4OWxZRWttTzVsRmxhaTdaaXFxZ19NYjdIbXFTQ3JkZ0NBOXZyTy1jNUZYdFlNUDFVZUE?oc=5",
-          "time": "2026-10-20T15:43:54Z"
         },
         {
-          "title": "Drone strike on Abyei market near Sudan-South Sudan border kills 150",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/21/drone-strike-on-abyei-market-near-sudan-south-sudan-border-kills-150?traffic_source=rss",
-          "source": "Al Jazeera",
-          "time": "2026-10-21T02:18:10Z"
-        },
-        {
-          "title": "21 killed in South Sudan clashes - The Financial Express",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNTTdDcW1UQVpXbktkUGZoN0Y2VEt0cUVBY0M3WWFBN0FRSkc1OFA5TTA1OFY5RkZoRy01ZnZQUGo4U2V5UTNIbll4Tk9jRFZwMzZDYzFGbU9yWUVPdnlSVEZIS3NRQ3FheUVzNGpsSm0wTWFxMDlIZTdYYktzLXR5NDNzcXN1STA?oc=5",
+          "title": "The Latest: Trump turns to a dual economic and military approach in latest attempt to squeeze Iran - WKRG",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNcjdNWU5YV2F0bXhjQjE0SGU3bGtNQWdabGlJY01DY1hBM2xIMU5CVHV2djdBOE1vM1oxbHB2eENCdHdOUDJjcGJCODMyQ3pyLW5mWWJoNTBKZlk5SVpKaGtQTTJhNnl5SFk2eEh2cFJDQnNnMFk5OVlUWmRnYzZNRlZEMVk2QmJrMTlmbWZmcFlrMnpZWUNlNzVTeUprbWcweFpKeG5UOWlxSW5FRkE5M3RtU0ZCNkVBdElPYnRoQVFvRDBUeWFDY3BKMNIBywFBVV95cUxNcjdNWU5YV2F0bXhjQjE0SGU3bGtNQWdabGlJY01DY1hBM2xIMU5CVHV2djdBOE1vM1oxbHB2eENCdHdOUDJjcGJCODMyQ3pyLW5mWWJoNTBKZlk5SVpKaGtQTTJhNnl5SFk2eEh2cFJDQnNnMFk5OVlUWmRnYzZNRlZEMVk2QmJrMTlmbWZmcFlrMnpZWUNlNzVTeUprbWcweFpKeG5UOWlxSW5FRkE5M3RtU0ZCNkVBdElPYnRoQVFvRDBUeWFDY3BKMA?oc=5",
           "source": "Google News RSS",
           "time": ""
         },
         {
-          "title": "World Bank removes Zimbabwe from fragile economies list - APAnews - Agence de Presse Africaine",
-          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNTmtSU0FnMGs1bV84dExVR0FRbnIwNDBRLXM2ZEhkMnpqTHl0X0RrOG9Ea3ZucTBNellEZ2dQcDBpU3o3NzBxd3BmRnVaMVNNYk5aaFdZMmR2U0xTRVBkZnB3TXh4N3JlUzZ5dUhVVTlHMWRueHUxY1hhWW41Yy1odmln?oc=5",
+          "title": "The Latest: Trump turns to a dual economic and military approach in latest attempt to squeeze Iran - RochesterFirst",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNb2c4Y2t3dXQxU1UwaERIMElYUWU1cE1YWUlKR2hXOVdqSDZxa29pQ0FYODNuQVVxQ3RmRzdVZVBkNXVOVXVVT1BQMHJOell3ei1kaGxOaVFmTUxQYmh2bGVRZ1YyZ3VNaEt6S2FyR0F1VVhycVBlYklFbDdueXJacjZHUl8xc0wzMFo3NVEzaDZXMFFwcnkzYUdWOUdKWFdsRkg4eFFMWEsxX0hTRlhaUHVDcnh0ZFlPcHdIRWktOEQ2Yy1YcU1ueGJfT3Q4Und0RWZDeVAxYkjSAdgBQVVfeXFMTW9nOGNrd3V0MVNVMGhESDBJWFFlNXBNWFlJSkdoVzlXakg2cWtvaUNBWDgzbkFVcUN0Zkc3VWVQZDV1TlV1VU9QUDByTnpZd3otZGhsTmlRZk1MUGJodmxlUWdWMmd1TWhLekthckdBdVVYcnFQZWJJRWw3bnlyWnI2R1JfMXNMMzBaNzVRM2g2VzBRcHJ5M2FHVjlHSlhXbEZIOHhRTFhLMV9IU0ZYWlB1Q3J4dGRZT3B3SEVpLThENmMtWHFNbnhiX090OFJ3dEVmQ3lQMWJI?oc=5",
           "source": "Google News RSS",
           "time": ""
-        },
-        {
-          "title": "Jailed banker Vorcaro’s web of powerful contacts puts Brazil’s top court in spotlight - Malay Mail",
-          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQT3JOZEVOWTB5Z1pOQTNhd0l0dW5NLUVwQUxsZFc0aEpaSl9OZDlGc0htYVJ5QkhiQ0FNMXIwZDdEOUxfTHFRTE1kWV9OcXFKdUwxUk5Hc1BpcWdfYlNMSkNPQWVVbnNkS0tSZDBaMXJ1QkpWbE41Mkt5QjU0am56UkJNRkgzd2pETk10QVVZNU5DcW5Tbkl5T0d6eHlyRjc2dGoyNGx4b1UxZG8wa1ZjYTZrRThHcHlVSVRqS0t0QW9EZDYwY1A3NGtzLWgtckpTWWV1c2wzZFVTd9IB2gFBVV95cUxQT3JOZEVOWTB5Z1pOQTNhd0l0dW5NLUVwQUxsZFc0aEpaSl9OZDlGc0htYVJ5QkhiQ0FNMXIwZDdEOUxfTHFRTE1kWV9OcXFKdUwxUk5Hc1BpcWdfYlNMSkNPQWVVbnNkS0tSZDBaMXJ1QkpWbE41Mkt5QjU0am56UkJNRkgzd2pETk10QVVZNU5DcW5Tbkl5T0d6eHlyRjc2dGoyNGx4b1UxZG8wa1ZjYTZrRThHcHlVSVRqS0t0QW9EZDYwY1A3NGtzLWgtckpTWWV1c2wzZFVTdw?oc=5",
-          "source": "Google News RSS",
-          "time": ""
-        },
-        {
-          "title": "Boosting Bhutan-Bangladesh business ties - The Financial Express",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPdXMxamtwNExacHVjeEloVVFhc0JvTTZHcW4zNVBqYzA4ZFJEZ0g5QXdMZEwtVXdrM2RpcW9TdVpFanJ6R1NPQVRsM3N1bDBtUU8xYkhCMUFnSUlhYmlDWU44akhsdEd4enJOTWtmSUU3VjAwTzlUbmlzSXNjd19UejRfMGctRmxTQkdQcjFzbVU4MlJ4aERv?oc=5",
-          "source": "Google News RSS",
-          "time": ""
-        },
-        {
-          "title": "Patriot stockpiles beyond critical",
-          "url": "https://x.com/Maks_NAFO_FELLA/status/2093011920446009787?s=20",
-          "source": "Global War News Map",
-          "time": ""
-        },
-        {
-          "title": "09/04/2026 | Cancún, Quintana Roo, Mexico\n\nMore Than $1.7 Million Pesos in Foreign Currency Seized at Cancún Airport\n\nAs part of inspection and survei",
-          "url": "https://x.com/EJTO_FAM_GN/status/2096063189720924648",
-          "source": "Cartel Intelligence Map",
-          "time": ""
-        },
-        {
-          "title": "This is reportedly the face of Javier “Gringo/Güero,” described as the principal financial operator for René 00 in Sinaloa and Baja California Sur.\n\nA",
-          "url": "https://x.com/blogdelosguachs/status/2066657915537391876",
-          "source": "Cartel Intelligence Map",
-          "time": ""
-        },
-        {
-          "title": "Cártel Independiente de Sonora / Gente Nueva / Los Salazares / Los Cazadores / Los Paredes / Gente Nueva Salazar",
-          "url": "https://x.com/HEARST_BB/status/1932857074385367482",
-          "source": "Cartel Intelligence Map",
-          "time": ""
-        },
-        {
-          "title": "Memphis, TN",
-          "url": "https://www.cnn.com/2024/03/03/us/memphis-gangs-ceasefire-paul-young/index.html",
-          "source": "Cartel Intelligence Map",
-          "time": ""
-        },
-        {
-          "title": "Atlanta, GA",
-          "url": "https://www.fox5atlanta.com/news/u-s-attorney-links-atlanta-overdoses-mexican-cartel-operations",
-          "source": "Cartel Intelligence Map",
-          "time": ""
-        },
-        {
-          "title": "New York City, NY",
-          "url": "https://www.google.com/maps/d/viewer?mid=1fssgCzO1J6TnXS2SqlbutbaxbPQFo3I",
-          "source": "Cartel Intelligence Map",
-          "time": ""
-        },
-        {
-          "title": "Global Market | Safe-haven assets under pressure: Dollar, Swiss franc, German bonds and gold in focus - The Economic Times",
-          "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxPNm9QSWFGNmVSY09VX1BNU0NRa0xLY3ViUDlTdTV2cjBsS2dMOUxmRmpPT2pYWkRUNG9CSlBOQU56Zkl4YnFDVk5kSVdfYmtaVEZQX1hFc3p2T1RMQWRPQklldHVoallDSU9QZk1rbEhMMkxQNlI5cVJnaVVsdDF2OU5Qd1hsb2hmQWNZaWFUSkZ4NGYyWWd5M08wdVFNeXlxVnVxeDFYXy1UZi1vOWJBNmJkWFk1eDFnUjZ2bVBPQmEwVHphU2lDYVMtNi14RnYteHJBc0tsaGM1MDk0SFAtWTNKenhoSy1OU3plYlk3ZEVaTkRQN2tIMFF1Q2VicXJ0UzFaRFRRdDVIWVdwVWlqaWVwT2fSAZoCQVVfeXFMTU1QMC1DdFQyamdDWFNqUUhfLW84Rmg0NmtLdDNXcTd4OHlKZGl2OFdBeFFXcEJJZnFNeFBodmg4S05EMGNIYXNKQUQ4VktzQmhZdS1tdV9zbnJSV3U0c1RXUEdCSXhuWFgtaEhLVjZLc1BXeDRsUjZqWEZOUERkbkZlc2xpX0JLWF9zQmJSMFRSY3ZkMUJXdjlYandzOVBSeGJCMnh3Wm5hS3ZlVWljY0ZNajB2MHJwa0JtYmxvc3J1cjBmZDV4dDVEaWhQNVFrdFIyWFQ2TWpSQUJrMjJidTd4ZVpFNVNKTWpndkEtc3ZzUjF5MlllNk02MWJNY2JoVTE1SU1fd1lpUFBfNFpwUHAxbVh6b2owWkd3?oc=5",
-          "source": "Google News — Global Economics",
-          "time": "2026-10-21T05:10:06Z"
-        },
-        {
-          "title": "A student protest movement has gripped Serbia for two years. This weekend it will try to take power",
-          "url": "https://www.theguardian.com/world/2026/oct/21/protest-movement-serbia-student-list-try-to-take-power",
-          "source": "Guardian World",
-          "time": "2026-10-21T04:00:07Z"
-        },
-        {
-          "title": "Odds of fifth interest rate hike this year likely to shorten as RBA deputy warns inflation outlook ‘worsening’",
-          "url": "https://www.theguardian.com/australia-news/2026/oct/21/odds-of-fifth-interest-rate-hike-this-year-likely-to-shorten-as-rba-deputy-warns-inflation-outlook-worsening",
-          "source": "https://www.theguardian.com/australia-news/2026/oct/21/odds-of-fifth-interest-rate-hike-this-year-likely-to-shorten-as-rba-deputy-warns-inflation-outlook-worsening",
-          "time": "2026-10-20T23:19:07Z"
-        },
-        {
-          "title": "Taking stock, looking ahead - Egypt - Al-Ahram Weekly - Ahram Online",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNOWdKTWRkTkptdFVYcGt0ZUd2aEpqWkwtdV9acnB3SmxkMUJSRV9TSnR5RWVveEhTaGZMYlB1eXYwcWlUS0VXZ3gtcUc3RENQb1V3RnpzdEFtVHloSE53WXJXVXhacFpubk1Vc19OZEJKUGZDODRraW5GeENMNXpmNnNMNmRTVWVXMkF2R0tDU3ZSYVhRVzRFRVd3SmhZRmM4TzJfRE5CMWpPcXdkOEE?oc=5",
-          "source": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNOWdKTWRkTkptdFVYcGt0ZUd2aEpqWkwtdV9acnB3SmxkMUJSRV9TSnR5RWVveEhTaGZMYlB1eXYwcWlUS0VXZ3gtcUc3RENQb1V3RnpzdEFtVHloSE53WXJXVXhacFpubk1Vc19OZEJKUGZDODRraW5GeENMNXpmNnNMNmRTVWVXMkF2R0tDU3ZSYVhRVzRFRVd3SmhZRmM4TzJfRE5CMWpPcXdkOEE?oc=5",
-          "time": "2026-10-20T20:07:22Z"
-        },
-        {
-          "title": "Fairbanks Morse Defense breaks ground on $60M expansion at Pascagoula propeller foundry - Tippah News",
-          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQTjhBT3F4TGMzMzBRSndJYUxXZlVEUk45SEhVZlM1WHhrbU5Pb040YkhHVnFwVGFISFV0TmpKaHhnbzFDak53azVrSUJPRi1Ia2tfSGJKRWVJOHpNTXYwQWwtZ3p6QXI4RG5acHJzS3pRSjNYbXk0NUsyanM5UWt6X3pac2hwNWFXTHd1OV9qSlZpaEt6bFE5U3o0Q1FycWl0TUdjai16TElZcm9WRlVkRFMxbkYzeHBZTlZyamY3UlVJajJXS2c?oc=5",
-          "source": "Google News — Morse Report",
-          "time": "2026-10-20T19:42:51Z"
-        },
-        {
-          "title": "Wall Street gains as healthcare stocks rally, oil prices fall",
-          "url": "https://www.channelnewsasia.com/world/wall-street-gains-healthcare-stocks-rally-oil-prices-fall-6476586",
-          "source": "https://www.channelnewsasia.com/world/wall-street-gains-healthcare-stocks-rally-oil-prices-fall-6476586",
-          "time": "2026-10-20T18:45:48Z"
-        },
-        {
-          "title": "Dow outperforms as Wall Street rises, healthcare stocks lead gains",
-          "url": "https://www.channelnewsasia.com/world/dow-outperforms-wall-street-rises-healthcare-stocks-lead-gains-6476586",
-          "source": "https://www.channelnewsasia.com/world/dow-outperforms-wall-street-rises-healthcare-stocks-lead-gains-6476586",
-          "time": "2026-10-20T18:45:00Z"
         }
       ],
       "sourceBacked": true
@@ -773,21 +633,33 @@
       "actionEvidenceCount": 0,
       "categoryCount": 1,
       "targetCount": 0,
-      "evidenceCount": 81,
+      "evidenceCount": 86,
       "lastEvidenceTime": "Tue, 07 Apr 2026 07:00:00 GMT",
       "intensity": 35,
       "evidence": [
         {
-          "title": "The Latest: US ties with Ukraine hit a new low as Trump slights Zelenskyy and eases up on Russia - The Washington Post",
-          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOVTVGRlZ3aTV2X3ZiVDlzU2tjeUNVYnpUT2Eyd29jOXpabWhidlk4VGpIaV9kQjdmXzl1dHNTVzNaQXU0TXBIcF9vblRaSFNQYXdfMHRnVDR4RW9ITExDLXIyOFNodEhhTnhXYXVWc3IwSnVKZGRQX2lFdWlac3JvZ0p6Y2x3YlBVcXA1alp1YjBxSlB3NzNmLUYwaEpFTHJnVkVkYjRtdGNiU2lxcjhFVlktcjZ4LUd4cHQzamhKeTdoX3FBZXlIZDNZUW1YdmM4VmdUU0lDYy1CMUlvcjVRQmZiaw?oc=5",
-          "source": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOVTVGRlZ3aTV2X3ZiVDlzU2tjeUNVYnpUT2Eyd29jOXpabWhidlk4VGpIaV9kQjdmXzl1dHNTVzNaQXU0TXBIcF9vblRaSFNQYXdfMHRnVDR4RW9ITExDLXIyOFNodEhhTnhXYXVWc3IwSnVKZGRQX2lFdWlac3JvZ0p6Y2x3YlBVcXA1alp1YjBxSlB3NzNmLUYwaEpFTHJnVkVkYjRtdGNiU2lxcjhFVlktcjZ4LUd4cHQzamhKeTdoX3FBZXlIZDNZUW1YdmM4VmdUU0lDYy1CMUlvcjVRQmZiaw?oc=5",
-          "time": "2026-10-20T20:06:01Z"
+          "title": "Russia calls potential Japanese drone supplies to Ukraine a hostile step - Business Upturn",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNTGdHWjJLZFNvcjJaZ3JGVzdfT1FHUmJKaUM5Z0N6Z3kxYmVkVC1mWDY5a1F6bXRfSGpMd0hKNW1fUXBLZ0Y0WndSdVZic0xFOHdURWF1N2xuM3N2aXdDZ3A0SnpMaTgzN3JvUGtHYTJ6alRIbzVsb2FIT0MzaVRpVGs3MnZDVk5qTXNYZW5Ra1pZRkJvdEo3WXZDZWZfYllXY3Q3STZlY0NFdE5JOFg4S1Nlb183WERtWUd5d2JiOHQ1Y1pf?oc=5",
+          "source": "Google News — Iran Israel",
+          "time": "2026-10-21T10:46:37Z"
         },
         {
-          "title": "US Investigating Alleged Links Between Ukrainian Officials And Mexican Cartels, Russia Claims - Sahara Reporters",
-          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQQmpqVkFJd2w5SkdXZy1heWVzTjg1Zy0wb2hZTjd1dlVsYU5QWGxuSHRtVVl1QktFNF9OaVIyelVmcnljVmZVSDZNVktHVWZRZFd0MVZSSDRrUTdpbWU4bXRGWFNKZUVQS1dDVXA4YXNpWG9qdzgtcHNjRjJjUE1QWTVIT3Zyd05mTlJkSkRtUGd5Q0RuQnVmQlFqcEdXeHlGZ1lBa3Z4VkZDSE9OUkF3cDFCQTFkempjNDQyMERiRmwzM0pJ?oc=5",
-          "source": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQQmpqVkFJd2w5SkdXZy1heWVzTjg1Zy0wb2hZTjd1dlVsYU5QWGxuSHRtVVl1QktFNF9OaVIyelVmcnljVmZVSDZNVktHVWZRZFd0MVZSSDRrUTdpbWU4bXRGWFNKZUVQS1dDVXA4YXNpWG9qdzgtcHNjRjJjUE1QWTVIT3Zyd05mTlJkSkRtUGd5Q0RuQnVmQlFqcEdXeHlGZ1lBa3Z4VkZDSE9OUkF3cDFCQTFkempjNDQyMERiRmwzM0pJ?oc=5",
-          "time": "2026-10-20T18:51:34Z"
+          "title": "Putin hosts Trump envoy for new Ukraine peace talks, frees US citizen held in Russia",
+          "url": "https://www.channelnewsasia.com/world/putin-steve-witkoff-ukraine-peace-talks-frees-us-citizen-6478526",
+          "source": "CNA World",
+          "time": "2026-10-21T09:55:00Z"
+        },
+        {
+          "title": "Trump envoy Witkoff meets Russia’s Putin for Ukraine war talks",
+          "url": "https://www.aljazeera.com/news/2026/10/21/witkoff-in-russia-for-putin-meeting-after-positive-talks-with-zelenskyy?traffic_source=rss",
+          "source": "Al Jazeera",
+          "time": "2026-10-21T07:37:19Z"
+        },
+        {
+          "title": "Russia’s Bryansk Region reports one death, two injuries in alleged Ukrainian drone attack - Business Upturn",
+          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxONThKcS1sYkZBbGFsWTdjUnRDRDlMSnczTDFnWENZRVBVT0xUQU9WTE9wLWZ0Q0NlNFdUTWhvTTdBLUFKZ3Jfd1FxYnBnMmR6WW9rLV9SNEFjYzJiZjZ1OWFJLTAzaUVRNDlqMFY2OVEwakdabU1KS245MURSTXJLcUtTUDN1MGRQV2ZpQnh4V18xRjNzN01ERlpUaFl4MUxYTXA1Y19tRUJjQ1M4REVlTVpSTk5vRm9mLVM1NXJ6STc1X01qb2RkOXp0dzlBN25sUFMySk9EQkNCZGJKT3c?oc=5",
+          "source": "Google News — Iran Israel",
+          "time": "2026-10-21T07:26:22Z"
         },
         {
           "title": "M5.5 earthquake — 156 km E of Kuril’sk, Russia",
@@ -884,18 +756,146 @@
           "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNeXNFZ18tTk9SUHVRa0cwSlpWS1JoWnFmNUxuMzBvR1dVNmxzcVhuQm44WFZmanNuX2NTdlpiaHNta0x4eEI0c2xHbFhDUlNuaG0xaHd0dzZ3SnZRNHNseGhxcHUzU3kxUkx2c0FDRkotRDNvUGZnUFRMZTJFZklUNGx0TnVkVXBCX0JuWWRmUklhOXpMLVRTN2N1V2I4TUxkOHhnRXNvUEtYdnhfSjduYi1tTWpKNGdkM0lNUktsZklWVDMwZXfSAcwBQVVfeXFMTUZCNDI4Nk1yRXpHU1J2UkVIaFBXcWRxUTdTRXRBaTFVc1dTWWNDeWJ5NWNDdmo2aUYycTgteDFYUXowNUJqWTdYeW04UTBrc0hiRjVOR0xwLVhtb19qNWw1WDR1RDgtcklBWlZnVlBHTllQRDQ4bkVSMlJIeS1YZVZxeFNIb3RZUFZLY0JFOVFvZF9ER1BIelFqekRncXNSczI4MmpVNjU1bXlrT3VZZXJXR1pVdkhseWJWdDJhbWxFVDJzTGNTcTVUakZR?oc=5",
           "source": "Google News RSS",
           "time": ""
+        }
+      ],
+      "sourceBacked": true
+    },
+    {
+      "actor": "Markets",
+      "signal": "Markets has source-backed intelligence activity",
+      "category": "economic",
+      "categories": {
+        "economic": 1
+      },
+      "dominantTarget": "",
+      "topTargets": [],
+      "actionCount": 0,
+      "actionEvidenceCount": 0,
+      "categoryCount": 1,
+      "targetCount": 0,
+      "evidenceCount": 84,
+      "lastEvidenceTime": "Wed, 11 Mar 2026 07:00:00 GMT",
+      "intensity": 35,
+      "evidence": [
+        {
+          "title": "Global Market | Safe-haven assets under pressure: Dollar, Swiss franc, German bonds and gold in focus - The Economic Times",
+          "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxPNm9QSWFGNmVSY09VX1BNU0NRa0xLY3ViUDlTdTV2cjBsS2dMOUxmRmpPT2pYWkRUNG9CSlBOQU56Zkl4YnFDVk5kSVdfYmtaVEZQX1hFc3p2T1RMQWRPQklldHVoallDSU9QZk1rbEhMMkxQNlI5cVJnaVVsdDF2OU5Qd1hsb2hmQWNZaWFUSkZ4NGYyWWd5M08wdVFNeXlxVnVxeDFYXy1UZi1vOWJBNmJkWFk1eDFnUjZ2bVBPQmEwVHphU2lDYVMtNi14RnYteHJBc0tsaGM1MDk0SFAtWTNKenhoSy1OU3plYlk3ZEVaTkRQN2tIMFF1Q2VicXJ0UzFaRFRRdDVIWVdwVWlqaWVwT2fSAZoCQVVfeXFMTU1QMC1DdFQyamdDWFNqUUhfLW84Rmg0NmtLdDNXcTd4OHlKZGl2OFdBeFFXcEJJZnFNeFBodmg4S05EMGNIYXNKQUQ4VktzQmhZdS1tdV9zbnJSV3U0c1RXUEdCSXhuWFgtaEhLVjZLc1BXeDRsUjZqWEZOUERkbkZlc2xpX0JLWF9zQmJSMFRSY3ZkMUJXdjlYandzOVBSeGJCMnh3Wm5hS3ZlVWljY0ZNajB2MHJwa0JtYmxvc3J1cjBmZDV4dDVEaWhQNVFrdFIyWFQ2TWpSQUJrMjJidTd4ZVpFNVNKTWpndkEtc3ZzUjF5MlllNk02MWJNY2JoVTE1SU1fd1lpUFBfNFpwUHAxbVh6b2owWkd3?oc=5",
+          "source": "Google News — Global Economics",
+          "time": "2026-10-21T05:10:06Z"
         },
         {
-          "title": "Indonesia investigates reports of 8 citizens fighting in Russia’s war against Ukraine - South China Morning Post",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQQnBOZlZCZk5FQlZCMVVsNmsyNFlPTzNzSFpaazNsbUlUeUE5NWVuUHJKaWRlaXFLc3g3RG9OSi1lYkxFa1gwUmV6Z3JVaVMtUGZRMHdTOWFvX3ZQN21vam5xR1l3MmtaMVJRN0NDNTQ1ZnRGWWlBTDBtZFQtb2FVa0s1RUdGeW1tNk5uVy1GMEgwRTVqUkxuUkk5R2hsMkU5TFZTTlpMQ0ZYdEVTekVSQVNuT0pDWmczdFE?oc=5",
+          "title": "Drone strike on Abyei market near Sudan-South Sudan border kills 150",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/21/drone-strike-on-abyei-market-near-sudan-south-sudan-border-kills-150?traffic_source=rss",
+          "source": "Al Jazeera",
+          "time": "2026-10-21T02:18:10Z"
+        },
+        {
+          "title": "Sudanese Army Drone Strike Hits Abyei Market, Kills At Least 153: who 21 outlets blamed - NewsCord",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQVi1IUU5aZ25rU3Vpc2tfTHNXZTFxaXk1ZThMXy1iYzRYVjJrNGp2SWZYQzJUcklXeENGR3JRUDk5YlRVVmlaNW92aHUwc3EtVWdheFJrQ3ZLOUE0dUp0RDhrMnVGcVk5SzRlQVpQWU1sYU9GSE00V2hiVTFNX2VERDBvVjNvcTAtV1pwTDI4cjE2NFJlNDQ4azRuRXoxR242eWVsNWxURldicjhGcXhzNFB3b0xGR2l0NmpwNFJBaXhBaGNXd3VxUHNSUGNRQQ?oc=5",
+          "source": "Google News — Sudan Conflict",
+          "time": "2026-10-21T11:29:12Z"
+        },
+        {
+          "title": "21 killed in South Sudan clashes - The Financial Express",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNTTdDcW1UQVpXbktkUGZoN0Y2VEt0cUVBY0M3WWFBN0FRSkc1OFA5TTA1OFY5RkZoRy01ZnZQUGo4U2V5UTNIbll4Tk9jRFZwMzZDYzFGbU9yWUVPdnlSVEZIS3NRQ3FheUVzNGpsSm0wTWFxMDlIZTdYYktzLXR5NDNzcXN1STA?oc=5",
           "source": "Google News RSS",
           "time": ""
         },
         {
-          "title": "Green earthquake (Magnitude 5.5M, Depth:32km) in Russia 04/09/2026 23:52 UTC, Few people affected in 100km.",
-          "url": "https://www.gdacs.org/report.aspx?eventtype=EQ&eventid=1563697",
-          "source": "GDACS",
-          "time": "Sat, 05 Sep 2026 00:11:54 GMT"
+          "title": "World Bank removes Zimbabwe from fragile economies list - APAnews - Agence de Presse Africaine",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNTmtSU0FnMGs1bV84dExVR0FRbnIwNDBRLXM2ZEhkMnpqTHl0X0RrOG9Ea3ZucTBNellEZ2dQcDBpU3o3NzBxd3BmRnVaMVNNYk5aaFdZMmR2U0xTRVBkZnB3TXh4N3JlUzZ5dUhVVTlHMWRueHUxY1hhWW41Yy1odmln?oc=5",
+          "source": "Google News RSS",
+          "time": ""
+        },
+        {
+          "title": "Jailed banker Vorcaro’s web of powerful contacts puts Brazil’s top court in spotlight - Malay Mail",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQT3JOZEVOWTB5Z1pOQTNhd0l0dW5NLUVwQUxsZFc0aEpaSl9OZDlGc0htYVJ5QkhiQ0FNMXIwZDdEOUxfTHFRTE1kWV9OcXFKdUwxUk5Hc1BpcWdfYlNMSkNPQWVVbnNkS0tSZDBaMXJ1QkpWbE41Mkt5QjU0am56UkJNRkgzd2pETk10QVVZNU5DcW5Tbkl5T0d6eHlyRjc2dGoyNGx4b1UxZG8wa1ZjYTZrRThHcHlVSVRqS0t0QW9EZDYwY1A3NGtzLWgtckpTWWV1c2wzZFVTd9IB2gFBVV95cUxQT3JOZEVOWTB5Z1pOQTNhd0l0dW5NLUVwQUxsZFc0aEpaSl9OZDlGc0htYVJ5QkhiQ0FNMXIwZDdEOUxfTHFRTE1kWV9OcXFKdUwxUk5Hc1BpcWdfYlNMSkNPQWVVbnNkS0tSZDBaMXJ1QkpWbE41Mkt5QjU0am56UkJNRkgzd2pETk10QVVZNU5DcW5Tbkl5T0d6eHlyRjc2dGoyNGx4b1UxZG8wa1ZjYTZrRThHcHlVSVRqS0t0QW9EZDYwY1A3NGtzLWgtckpTWWV1c2wzZFVTdw?oc=5",
+          "source": "Google News RSS",
+          "time": ""
+        },
+        {
+          "title": "Boosting Bhutan-Bangladesh business ties - The Financial Express",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPdXMxamtwNExacHVjeEloVVFhc0JvTTZHcW4zNVBqYzA4ZFJEZ0g5QXdMZEwtVXdrM2RpcW9TdVpFanJ6R1NPQVRsM3N1bDBtUU8xYkhCMUFnSUlhYmlDWU44akhsdEd4enJOTWtmSUU3VjAwTzlUbmlzSXNjd19UejRfMGctRmxTQkdQcjFzbVU4MlJ4aERv?oc=5",
+          "source": "Google News RSS",
+          "time": ""
+        },
+        {
+          "title": "Patriot stockpiles beyond critical",
+          "url": "https://x.com/Maks_NAFO_FELLA/status/2093011920446009787?s=20",
+          "source": "Global War News Map",
+          "time": ""
+        },
+        {
+          "title": "09/04/2026 | Cancún, Quintana Roo, Mexico\n\nMore Than $1.7 Million Pesos in Foreign Currency Seized at Cancún Airport\n\nAs part of inspection and survei",
+          "url": "https://x.com/EJTO_FAM_GN/status/2096063189720924648",
+          "source": "Cartel Intelligence Map",
+          "time": ""
+        },
+        {
+          "title": "This is reportedly the face of Javier “Gringo/Güero,” described as the principal financial operator for René 00 in Sinaloa and Baja California Sur.\n\nA",
+          "url": "https://x.com/blogdelosguachs/status/2066657915537391876",
+          "source": "Cartel Intelligence Map",
+          "time": ""
+        },
+        {
+          "title": "Cártel Independiente de Sonora / Gente Nueva / Los Salazares / Los Cazadores / Los Paredes / Gente Nueva Salazar",
+          "url": "https://x.com/HEARST_BB/status/1932857074385367482",
+          "source": "Cartel Intelligence Map",
+          "time": ""
+        },
+        {
+          "title": "Memphis, TN",
+          "url": "https://www.cnn.com/2024/03/03/us/memphis-gangs-ceasefire-paul-young/index.html",
+          "source": "Cartel Intelligence Map",
+          "time": ""
+        },
+        {
+          "title": "Atlanta, GA",
+          "url": "https://www.fox5atlanta.com/news/u-s-attorney-links-atlanta-overdoses-mexican-cartel-operations",
+          "source": "Cartel Intelligence Map",
+          "time": ""
+        },
+        {
+          "title": "New York City, NY",
+          "url": "https://www.google.com/maps/d/viewer?mid=1fssgCzO1J6TnXS2SqlbutbaxbPQFo3I",
+          "source": "Cartel Intelligence Map",
+          "time": ""
+        },
+        {
+          "title": "Russia says it will send first diesel cargo to US on Thursday",
+          "url": "https://www.channelnewsasia.com/world/russia-diesel-cargo-us-shipments-6478716",
+          "source": "CNA World",
+          "time": "2026-10-21T11:08:00Z"
+        },
+        {
+          "title": "WW1 to Houthis: British jets for Saudi Arabia build on long military bond",
+          "url": "https://www.aljazeera.com/news/2026/10/21/ww1-to-houthis-british-jets-for-saudi-arabia-build-on-long-military-bond?traffic_source=rss",
+          "source": "Al Jazeera",
+          "time": "2026-10-21T10:22:35Z"
+        },
+        {
+          "title": "Florida gambling helpline director sentenced to nearly 10 years over $1.4m theft to fund addiction",
+          "url": "https://www.theguardian.com/us-news/2026/oct/21/florida-gambling-director-jailed-addiction",
+          "source": "Guardian US",
+          "time": "2026-10-21T09:00:03Z"
+        },
+        {
+          "title": "Drone attack in disputed Sudan-South Sudan border region kills at least 153",
+          "url": "https://www.aljazeera.com/news/2026/10/21/drone-attack-in-disputed-sudan-south-sudan-border-region-kills-at-least-153?traffic_source=rss",
+          "source": "Al Jazeera",
+          "time": "2026-10-21T08:25:45Z"
+        },
+        {
+          "title": "Qualitative Questions Arise Over Chinese Microchips in Canadian Market - https://dailyasianage.com/",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOQzZMUUZhRENlS1Q4aWJpclRtVFJMZlpmMTFNUHRXRlc5U1N2ME5GQVhIdVBFT0dLYW9WY2REdV9VSzQzQWF5RjYtc1dQQ2xpZ1dqODEwakV1UkZrZGF6S3BhU0J2Y2hab2ttQjlkbHNaenkwWFlWQnBTVEZUSXhVS3RRWUxUdUdwVlZNeDNLajRRZXcyZk93MGtUa1dfVy1xa093cnhySW1sYUZo?oc=5",
+          "source": "Google News — China Economy / Trade",
+          "time": "2026-10-21T06:58:52Z"
+        },
+        {
+          "title": "Billionaire Mukesh Ambani's Jio launches India's biggest share sale",
+          "url": "https://www.bbc.co.uk/news/articles/ck7vp17z7jv3o?at_medium=RSS&at_campaign=rss",
+          "source": "BBC Asia",
+          "time": "2026-10-21T05:16:44Z"
         }
       ],
       "sourceBacked": true
@@ -913,32 +913,14 @@
       "actionEvidenceCount": 0,
       "categoryCount": 1,
       "targetCount": 0,
-      "evidenceCount": 78,
+      "evidenceCount": 80,
       "lastEvidenceTime": "Wed, 17 Dec 2025 08:00:00 GMT",
       "intensity": 35,
       "evidence": [
         {
-          "title": "UAE Says Iranian Missiles Struck Oil Tankers in Strait of Hormuz, One Sailor Killed - EnergyNow.com",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOWHI2dnA4RFFBdm9PemRsSGZPVE91QWpZRUprX084RjNiZmh4LUxUZ3RKRFZxRS1nTTkyemlUbmxJUjZocVl0Um5pWFZvN1R2Q2NIcThHQ2ZOalFRc21LQ3AyWVV4amMtal9pbmdySTdjcUxNRVlDQWlyc1RyVjA3RlpEN1F6VEEwU3VkTEhMR2ZqQmlwVHVOeFMwSkkyZmdINFp4bm9SX3ZSd1dMY0lmRi0tQQ?oc=5",
-          "source": "Google News — Iran Israel",
-          "time": "2026-10-20T21:28:18Z"
-        },
-        {
-          "title": "US-Israel-Iran War Latest Live News: Saudi Coalition Destroys Houthi Missile Launcher After Riyadh Attack as Tanker Carrying Over 2 Million Barrels Reportedly Hits Naval Mine in St",
-          "url": "https://news.google.com/rss/articles/CBMi3wJBVV95cUxPOEwza1ljNUhLTWxKN2VIa1p1Q2t5ZF9GY1JXdXdENDNNOFh2MTR5MjFjbmZMbEtHcUYtT0RqUWNaWW95WTJ5ZEMzR3BiMkdzZGZNY0d5SFJPaXEwRVMtVEpLTGlMTmppdnlpZEFKVzVBaVdsV3VZNlJWazhsbzM4R2syTFROT1ZIT2dFcm5PV1cyYnMyYUkyUGoyek1rMnJ2bW93Vk0wVC0wREZNbFUwaXItNTB6cUdQQU5sWTQwZFlVYTBZRTFfemZOUjd0OXpERGpXV2RFVnZFRHZ1WDNnMkdodUJYRWhLNVZVMVg0OUd5ZGxib3pkbnU2b1VvOE9SREU1VVRmMmprd3JPeDcxNnpzd2tiLW1PYkZuSDM3SXVjcjFfdWF4a2s4dHBiZEJISEoxemI3aE90bnBGVm5oa2FHcVNKb1dkVGZQcEJMQWRRX1oyTlB0dnBSQW5IeTTSAd8CQVVfeXFMTzhMM2tZYzVIS01sSjdlSGtadUNreWRfRmNSV3V3RDQzTThYdjE0eTIxY25mTGxLR3FGLU9EalFjWllveVkyeWRDM0dwYjJHc2RmTWNHeUhST2lxMEVTLVRKS0xpTE5qaXZ5aWRBSlc1QWlXbFd1WTZSVms4bG8zOEdrMkxUTk9WSE9nRXJuT1dXMmJzMmFJMlBqMnpNazJydm1vd1ZNMFQtMERGTWxVMGlyLTUwenFHUEFObFk0MGRZVWEwWUUxX3pmTlI3dDl6RERqV1dkRVZ2RUR2dVgzZzJHaHVCWEVoSzVWVTFYNDlHeWRsYm96ZG51Nm9VbzhPUkRFNVVUZjJqa3dyT3g3MTZ6c3drYi1tT2JGbkgzN0l1Y3IxX3VheGtrOHRwYmRCSEhKMXpiN2hPdG5wRlZuaGthR3FTSm9XZFRmUHBCTEFkUV9aMk5QdHZwUkFuSHk0?oc=5",
-          "source": "https://news.google.com/rss/articles/CBMi3wJBVV95cUxPOEwza1ljNUhLTWxKN2VIa1p1Q2t5ZF9GY1JXdXdENDNNOFh2MTR5MjFjbmZMbEtHcUYtT0RqUWNaWW95WTJ5ZEMzR3BiMkdzZGZNY0d5SFJPaXEwRVMtVEpLTGlMTmppdnlpZEFKVzVBaVdsV3VZNlJWazhsbzM4R2syTFROT1ZIT2dFcm5PV1cyYnMyYUkyUGoyek1rMnJ2bW93Vk0wVC0wREZNbFUwaXItNTB6cUdQQU5sWTQwZFlVYTBZRTFfemZOUjd0OXpERGpXV2RFVnZFRHZ1WDNnMkdodUJYRWhLNVZVMVg0OUd5ZGxib3pkbnU2b1VvOE9SREU1VVRmMmprd3JPeDcxNnpzd2tiLW1PYkZuSDM3SXVjcjFfdWF4a2s4dHBiZEJISEoxemI3aE90bnBGVm5oa2FHcVNKb1dkVGZQcEJMQWRRX1oyTlB0dnBSQW5IeTTSAd8CQVVfeXFMTzhMM2tZYzVIS01sSjdlSGtadUNreWRfRmNSV3V3RDQzTThYdjE0eTIxY25mTGxLR3FGLU9EalFjWllveVkyeWRDM0dwYjJHc2RmTWNHeUhST2lxMEVTLVRKS0xpTE5qaXZ5aWRBSlc1QWlXbFd1WTZSVms4bG8zOEdrMkxUTk9WSE9nRXJuT1dXMmJzMmFJMlBqMnpNazJydm1vd1ZNMFQtMERGTWxVMGlyLTUwenFHUEFObFk0MGRZVWEwWUUxX3pmTlI3dDl6RERqV1dkRVZ2RUR2dVgzZzJHaHVCWEVoSzVWVTFYNDlHeWRsYm96ZG51Nm9VbzhPUkRFNVVUZjJqa3dyT3g3MTZ6c3drYi1tT2JGbkgzN0l1Y3IxX3VheGtrOHRwYmRCSEhKMXpiN2hPdG5wRlZuaGthR3FTSm9XZFRmUHBCTEFkUV9aMk5QdHZwUkFuSHk0?oc=5",
-          "time": "2026-10-20T19:15:27Z"
-        },
-        {
-          "title": "US-Israel-Iran War Latest Live News: Saudi Coalition Destroys Houthi Missile Launcher After Riyadh Attack as Tanker Carrying Over 2 Million Barrels Reportedly Hits Naval Mine in St",
-          "url": "https://news.google.com/rss/articles/CBMi2gJBVV95cUxNeFBvVVVYYTNSU05hSFJzWTY5cjRVLU5JSVR2cUxLMW5RSzVoNUhIa3NKenktWFFyLWNtUDl2Z0dKeHVtMmNDd3FMdURoLWMwLWxGaTNOSW1XclJzc0J4X1FrN2NMV29vY2R4N1ZwYmlzMW1ZbVBVdVhXdGptWG5xak8yV0lyeldLby00U3RMUmpUX2ZtTktiMG1leXU3eFVNTTRkUTNmSWtnYkFGcnZZcXVIR1ZjYkpzOEtTVlZBNjdaUmRHZ2M5aHpuekVrNUhWckVxdEs1R2o1dTZ5Tk1HeC16aG5QZHJ4cG9RQngwQ0FBV251YmJpTkNyLUJ6allFbDduT0JvTkptemNUamRlUVo3RlRHRkN0SXIxa21wMXNjVVRydUhScV9GZXBSaFlBRUU5NWY4d3ctazUwM2gtR005RzdwVnhLeEJVQ0U1Y1l4UVRmMTNyRGJR0gHfAkFVX3lxTE84TDNrWWM1SEtNbEo3ZUhrWnVDa3lkX0ZjUld1d0Q0M004WHYxNHkyMWNuZkxsS0dxRi1PRGpRY1pZb3lZMnlkQzNHcGIyR3NkZk1jR3lIUk9pcTBFUy1USktMaUxOaml2eWlkQUpXNUFpV2xXdVk2UlZrOGxvMzhHazJMVE5PVkhPZ0Vybk9XVzJiczJhSTJQajJ6TWsycnZtb3dWTTBULTBERk1sVTBpci01MHpxR1BBTmxZNDBkWVVhMFlFMV96Zk5SN3Q5ekREaldXZEVWdkVEdnVYM2cyR2h1QlhFaEs1VlUxWDQ5R3lkbGJvemRudTZvVW84T1JERTVVVGYyamt3ck94NzE2enN3a2ItbU9iRm5IMzdJdWNyMV91YXhrazh0cGJkQkhISjF6YjdoT3RucEZWbmhrYUdxU0pvV2RUZlBwQkxBZFFfWjJOUHR2cFJBbkh5NA?oc=5",
-          "source": "https://news.google.com/rss/articles/CBMi2gJBVV95cUxNeFBvVVVYYTNSU05hSFJzWTY5cjRVLU5JSVR2cUxLMW5RSzVoNUhIa3NKenktWFFyLWNtUDl2Z0dKeHVtMmNDd3FMdURoLWMwLWxGaTNOSW1XclJzc0J4X1FrN2NMV29vY2R4N1ZwYmlzMW1ZbVBVdVhXdGptWG5xak8yV0lyeldLby00U3RMUmpUX2ZtTktiMG1leXU3eFVNTTRkUTNmSWtnYkFGcnZZcXVIR1ZjYkpzOEtTVlZBNjdaUmRHZ2M5aHpuekVrNUhWckVxdEs1R2o1dTZ5Tk1HeC16aG5QZHJ4cG9RQngwQ0FBV251YmJpTkNyLUJ6allFbDduT0JvTkptemNUamRlUVo3RlRHRkN0SXIxa21wMXNjVVRydUhScV9GZXBSaFlBRUU5NWY4d3ctazUwM2gtR005RzdwVnhLeEJVQ0U1Y1l4UVRmMTNyRGJR0gHfAkFVX3lxTE84TDNrWWM1SEtNbEo3ZUhrWnVDa3lkX0ZjUld1d0Q0M004WHYxNHkyMWNuZkxsS0dxRi1PRGpRY1pZb3lZMnlkQzNHcGIyR3NkZk1jR3lIUk9pcTBFUy1USktMaUxOaml2eWlkQUpXNUFpV2xXdVk2UlZrOGxvMzhHazJMVE5PVkhPZ0Vybk9XVzJiczJhSTJQajJ6TWsycnZtb3dWTTBULTBERk1sVTBpci01MHpxR1BBTmxZNDBkWVVhMFlFMV96Zk5SN3Q5ekREaldXZEVWdkVEdnVYM2cyR2h1QlhFaEs1VlUxWDQ5R3lkbGJvemRudTZvVW84T1JERTVVVGYyamt3ck94NzE2enN3a2ItbU9iRm5IMzdJdWNyMV91YXhrazh0cGJkQkhISjF6YjdoT3RucEZWbmhrYUdxU0pvV2RUZlBwQkxBZFFfWjJOUHR2cFJBbkh5NA?oc=5",
-          "time": "2026-10-20T19:15:12Z"
-        },
-        {
           "title": "Security Forces Foils Afghan Taliban Infiltration Attempt at Chaman Border, Six Killed - Balochistan Pulse",
           "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE95NFpJNzRkTEJsdjA3dEpUNjRKUVlLMTZPWDh4N2gzVG9VOUItckNaVnVBZzIxNHEtbENEcHhaUFBWMjE2Skd3ZXNyYWlSdWR5N0toOURvcFJVVnJ2Y3hXTHlfejRZV2wxTzdGc0RybzRVQ3pRMk93dnBB0gF6QVVfeXFMT3k0Wkk3NGRMQmx2MDd0SlQ2NEpRWUsxNk9YOHg3aDNUb1U5Qi1yQ1pWdUFnMjE0cS1sQ0RweFpQUFYyMTZKR3dlc3JhaVJ1ZHk3S2g5RG9wUlVWcnZjeFdMeV96NFlXbDFPN0ZzRHJvNFVDelEyT3d2cEE?oc=5",
-          "source": "Google News — Afghanistan Security",
+          "source": "https://news.google.com/rss/articles/CBMiekFVX3lxTE95NFpJNzRkTEJsdjA3dEpUNjRKUVlLMTZPWDh4N2gzVG9VOUItckNaVnVBZzIxNHEtbENEcHhaUFBWMjE2Skd3ZXNyYWlSdWR5N0toOURvcFJVVnJ2Y3hXTHlfejRZV2wxTzdGc0RybzRVQ3pRMk93dnBB0gF6QVVfeXFMT3k0Wkk3NGRMQmx2MDd0SlQ2NEpRWUsxNk9YOHg3aDNUb1U5Qi1yQ1pWdUFnMjE0cS1sQ0RweFpQUFYyMTZKR3dlc3JhaVJ1ZHk3S2g5RG9wUlVWcnZjeFdMeV96NFlXbDFPN0ZzRHJvNFVDelEyT3d2cEE?oc=5",
           "time": "2026-10-21T05:49:43Z"
         },
         {
@@ -1036,6 +1018,24 @@
           "url": "https://x.com/disclosetv/status/2093472392760705270?s=20",
           "source": "Global War News Map",
           "time": ""
+        },
+        {
+          "title": "Kirishi refinery hit",
+          "url": "https://x.com/visegrad24/status/2094052354328789113?s=20",
+          "source": "Global War News Map",
+          "time": ""
+        },
+        {
+          "title": "price of oil skyrockets",
+          "url": "https://x.com/KobeissiLetter/status/2094825207441633652?s=20",
+          "source": "Global War News Map",
+          "time": ""
+        },
+        {
+          "title": "09/01/2026 | Culiacán, Sinaloa, Mexico\n\nArmed individuals shot at Sushi Roca Navi and subsequently sprayed gasoline on the establishment in an attempt",
+          "url": "https://x.com/adiscusion/status/2094933905518600201",
+          "source": "Cartel Intelligence Map",
+          "time": ""
         }
       ],
       "sourceBacked": true
@@ -1053,14 +1053,14 @@
       "actionEvidenceCount": 0,
       "categoryCount": 1,
       "targetCount": 0,
-      "evidenceCount": 77,
+      "evidenceCount": 78,
       "lastEvidenceTime": "Fri, 03 Apr 2026 07:00:00 GMT",
       "intensity": 35,
       "evidence": [
         {
           "title": "ISRAELIRANWAR. Syria: Israel supports the Druze against al-Sharaa. Iranian Kurdish separatists deported to Iraq. Egyptians in Saudi Arabia fighting against the Houthis. - agc commu",
           "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxOOHNWclpWYU9YYWRsU1ludFJCWkpuYVlORkRhU2ZKZVp6VjJJR0dsc3hBRUFCdnM5Z054b1JwZkVFRFpsa1NjRXlQN1Axb0RqS19lX1ItSmxNS2FjRDZyNUZ3TmgzeTY0YjJ6Ym1PVWRBTXZ1dFRnX094T0hkQng4RGlYQldlN0VhUWdTbEZkRDBkZENvRVpad0xSOVFZWENwOUxIdTQzcXRJNmlGbElDV2pxZUx6eGo4YlRDS2U2TmNrek5VRmktUmpBY2o0ZEN0QmZVS0QtNzBVMzdMNjRSbDlwQk45MEZhVklUclhCVDlsOG1XZDFJRVFCZjAwVWxFWXRGVjZIX2g5OHY0bFdyWVRRZWVfQQ?oc=5",
-          "source": "Google News — Middle East Security",
+          "source": "https://news.google.com/rss/articles/CBMilgJBVV95cUxOOHNWclpWYU9YYWRsU1ludFJCWkpuYVlORkRhU2ZKZVp6VjJJR0dsc3hBRUFCdnM5Z054b1JwZkVFRFpsa1NjRXlQN1Axb0RqS19lX1ItSmxNS2FjRDZyNUZ3TmgzeTY0YjJ6Ym1PVWRBTXZ1dFRnX094T0hkQng4RGlYQldlN0VhUWdTbEZkRDBkZENvRVpad0xSOVFZWENwOUxIdTQzcXRJNmlGbElDV2pxZUx6eGo4YlRDS2U2TmNrek5VRmktUmpBY2o0ZEN0QmZVS0QtNzBVMzdMNjRSbDlwQk45MEZhVklUclhCVDlsOG1XZDFJRVFCZjAwVWxFWXRGVjZIX2g5OHY0bFdyWVRRZWVfQQ?oc=5",
           "time": "2026-10-21T00:45:00Z"
         },
         {
@@ -1070,52 +1070,40 @@
           "time": "2026-10-21T05:00:02Z"
         },
         {
-          "title": "US-Israel-Iran War Latest Live News: UK Deploys RAF Typhoon Fighter Jets to Saudi Arabia to Help Defend Cities & Infrastructure Amid Houthi Threat - The Sunday Guardian",
-          "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxNdGVqb1ppMUlOX2lfQUl3Q0NyU1VwUTY4ZWlTSG9uWm5kSk9RZVJCSzdqVFhhVkZqbnhvUEVUNG0ySlRvdmFzcC1ESkRpcnM4MEtyN3hGU0Z6WGsxUkt4akFWNGxaMFNNNnNkTkw2dGpvQlh3aFFWMThDMHYxZmcyZVZPUkxWQ3N5dXV1cVljQzlSSG56dTh6cVlCeFY1YTY0eGZ4NkFnS1lKSl9tUVFJemlGQkpuS0taZzdnMnlWbFZtMExQbjBPWFl6dmJ1Vk9acHdCeHZ5QmZTMnA2OGRpZmtkcGVqZzk1R080RHZwemlmcXFpaDJrZ1R5QkJoQ1cyV2NWUEE1V0ozZ1JlMU9QWW95NEVKbTDSAZwCQVVfeXFMTTNsTE9ESVNzWXVDN1V1TEh3VGhkTkZScjFZcVE4aXpvQnNudDlGclJTVFljdFVmcVBJc3A3SkE1aWhKSFRMdkZnU1l4di1jV2xxTzR4UUxETlJRVW5zdHlDT3d6QmNaU0E5Sl9jTW9Va0FSR0dEQTdNMWF2TzZDVHpMcGEtQ0I3UEVRQ2ppUThLMHAxTjNkMUJjVXNTS29DNlF0SWhsSDlqVVZiVkdlOFZjTEpiaFlqSzYzM3JpQ1ZueTZLODFrU1BpSDM3dU02M1NYTE95aWhiUmluYkpnUW8zUE5YUDBxQ2JSWGtZQkE2TEl4aGQydEJoODhJOFpXRWRWeW1oRFFQcTd6aV9kODNwTWFVakJ6Q1c4bjU?oc=5",
-          "source": "Google News — Iran Israel",
-          "time": "2026-10-21T05:27:53Z"
+          "title": "UK fighter jets to protect Saudi Arabia from Houthi attacks",
+          "url": "https://www.dw.com/en/uk-fighter-jets-to-protect-saudi-arabia-from-houthi-attacks/a-79718467?maca=en-rss-en-world-4025-xml-mrss",
+          "source": "DW World",
+          "time": "2026-10-21T01:23:00Z"
         },
         {
-          "title": "UAE Says Iranian Missiles Struck Oil Tankers in Strait of Hormuz, One Sailor Killed - EnergyNow.com",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOWHI2dnA4RFFBdm9PemRsSGZPVE91QWpZRUprX084RjNiZmh4LUxUZ3RKRFZxRS1nTTkyemlUbmxJUjZocVl0Um5pWFZvN1R2Q2NIcThHQ2ZOalFRc21LQ3AyWVV4amMtal9pbmdySTdjcUxNRVlDQWlyc1RyVjA3RlpEN1F6VEEwU3VkTEhMR2ZqQmlwVHVOeFMwSkkyZmdINFp4bm9SX3ZSd1dMY0lmRi0tQQ?oc=5",
-          "source": "Google News — Iran Israel",
-          "time": "2026-10-20T21:28:18Z"
+          "title": "Saudi Arabia cancels 'Davos in the Desert' due to Yemen's Houthi strikes",
+          "url": "https://www.npr.org/2026/10/21/nx-s1-6009545/saudi-arabia-cancels-davos-in-the-desert-due-to-air-strikes",
+          "source": "NPR News",
+          "time": "2026-10-21T08:40:51Z"
         },
         {
-          "title": "US-Israel-Iran War Latest Live News: Saudi Coalition Destroys Houthi Missile Launcher After Riyadh Attack as Tanker Carrying Over 2 Million Barrels Reportedly Hits Naval Mine in St",
-          "url": "https://news.google.com/rss/articles/CBMi3wJBVV95cUxPOEwza1ljNUhLTWxKN2VIa1p1Q2t5ZF9GY1JXdXdENDNNOFh2MTR5MjFjbmZMbEtHcUYtT0RqUWNaWW95WTJ5ZEMzR3BiMkdzZGZNY0d5SFJPaXEwRVMtVEpLTGlMTmppdnlpZEFKVzVBaVdsV3VZNlJWazhsbzM4R2syTFROT1ZIT2dFcm5PV1cyYnMyYUkyUGoyek1rMnJ2bW93Vk0wVC0wREZNbFUwaXItNTB6cUdQQU5sWTQwZFlVYTBZRTFfemZOUjd0OXpERGpXV2RFVnZFRHZ1WDNnMkdodUJYRWhLNVZVMVg0OUd5ZGxib3pkbnU2b1VvOE9SREU1VVRmMmprd3JPeDcxNnpzd2tiLW1PYkZuSDM3SXVjcjFfdWF4a2s4dHBiZEJISEoxemI3aE90bnBGVm5oa2FHcVNKb1dkVGZQcEJMQWRRX1oyTlB0dnBSQW5IeTTSAd8CQVVfeXFMTzhMM2tZYzVIS01sSjdlSGtadUNreWRfRmNSV3V3RDQzTThYdjE0eTIxY25mTGxLR3FGLU9EalFjWllveVkyeWRDM0dwYjJHc2RmTWNHeUhST2lxMEVTLVRKS0xpTE5qaXZ5aWRBSlc1QWlXbFd1WTZSVms4bG8zOEdrMkxUTk9WSE9nRXJuT1dXMmJzMmFJMlBqMnpNazJydm1vd1ZNMFQtMERGTWxVMGlyLTUwenFHUEFObFk0MGRZVWEwWUUxX3pmTlI3dDl6RERqV1dkRVZ2RUR2dVgzZzJHaHVCWEVoSzVWVTFYNDlHeWRsYm96ZG51Nm9VbzhPUkRFNVVUZjJqa3dyT3g3MTZ6c3drYi1tT2JGbkgzN0l1Y3IxX3VheGtrOHRwYmRCSEhKMXpiN2hPdG5wRlZuaGthR3FTSm9XZFRmUHBCTEFkUV9aMk5QdHZwUkFuSHk0?oc=5",
-          "source": "https://news.google.com/rss/articles/CBMi3wJBVV95cUxPOEwza1ljNUhLTWxKN2VIa1p1Q2t5ZF9GY1JXdXdENDNNOFh2MTR5MjFjbmZMbEtHcUYtT0RqUWNaWW95WTJ5ZEMzR3BiMkdzZGZNY0d5SFJPaXEwRVMtVEpLTGlMTmppdnlpZEFKVzVBaVdsV3VZNlJWazhsbzM4R2syTFROT1ZIT2dFcm5PV1cyYnMyYUkyUGoyek1rMnJ2bW93Vk0wVC0wREZNbFUwaXItNTB6cUdQQU5sWTQwZFlVYTBZRTFfemZOUjd0OXpERGpXV2RFVnZFRHZ1WDNnMkdodUJYRWhLNVZVMVg0OUd5ZGxib3pkbnU2b1VvOE9SREU1VVRmMmprd3JPeDcxNnpzd2tiLW1PYkZuSDM3SXVjcjFfdWF4a2s4dHBiZEJISEoxemI3aE90bnBGVm5oa2FHcVNKb1dkVGZQcEJMQWRRX1oyTlB0dnBSQW5IeTTSAd8CQVVfeXFMTzhMM2tZYzVIS01sSjdlSGtadUNreWRfRmNSV3V3RDQzTThYdjE0eTIxY25mTGxLR3FGLU9EalFjWllveVkyeWRDM0dwYjJHc2RmTWNHeUhST2lxMEVTLVRKS0xpTE5qaXZ5aWRBSlc1QWlXbFd1WTZSVms4bG8zOEdrMkxUTk9WSE9nRXJuT1dXMmJzMmFJMlBqMnpNazJydm1vd1ZNMFQtMERGTWxVMGlyLTUwenFHUEFObFk0MGRZVWEwWUUxX3pmTlI3dDl6RERqV1dkRVZ2RUR2dVgzZzJHaHVCWEVoSzVWVTFYNDlHeWRsYm96ZG51Nm9VbzhPUkRFNVVUZjJqa3dyT3g3MTZ6c3drYi1tT2JGbkgzN0l1Y3IxX3VheGtrOHRwYmRCSEhKMXpiN2hPdG5wRlZuaGthR3FTSm9XZFRmUHBCTEFkUV9aMk5QdHZwUkFuSHk0?oc=5",
-          "time": "2026-10-20T19:15:27Z"
+          "title": "How Saudi Arabia's defense vulnerabilities could become Trump's problem amid Houthi onslaught",
+          "url": "https://www.foxnews.com/politics/saudi-arabia-defense-vulnerabilities-trump-problem-houthi-onslaught",
+          "source": "Fox News Politics",
+          "time": "2026-10-21T11:00:05Z"
         },
         {
-          "title": "US-Israel-Iran War Latest Live News: Saudi Coalition Destroys Houthi Missile Launcher After Riyadh Attack as Tanker Carrying Over 2 Million Barrels Reportedly Hits Naval Mine in St",
-          "url": "https://news.google.com/rss/articles/CBMi2gJBVV95cUxNeFBvVVVYYTNSU05hSFJzWTY5cjRVLU5JSVR2cUxLMW5RSzVoNUhIa3NKenktWFFyLWNtUDl2Z0dKeHVtMmNDd3FMdURoLWMwLWxGaTNOSW1XclJzc0J4X1FrN2NMV29vY2R4N1ZwYmlzMW1ZbVBVdVhXdGptWG5xak8yV0lyeldLby00U3RMUmpUX2ZtTktiMG1leXU3eFVNTTRkUTNmSWtnYkFGcnZZcXVIR1ZjYkpzOEtTVlZBNjdaUmRHZ2M5aHpuekVrNUhWckVxdEs1R2o1dTZ5Tk1HeC16aG5QZHJ4cG9RQngwQ0FBV251YmJpTkNyLUJ6allFbDduT0JvTkptemNUamRlUVo3RlRHRkN0SXIxa21wMXNjVVRydUhScV9GZXBSaFlBRUU5NWY4d3ctazUwM2gtR005RzdwVnhLeEJVQ0U1Y1l4UVRmMTNyRGJR0gHfAkFVX3lxTE84TDNrWWM1SEtNbEo3ZUhrWnVDa3lkX0ZjUld1d0Q0M004WHYxNHkyMWNuZkxsS0dxRi1PRGpRY1pZb3lZMnlkQzNHcGIyR3NkZk1jR3lIUk9pcTBFUy1USktMaUxOaml2eWlkQUpXNUFpV2xXdVk2UlZrOGxvMzhHazJMVE5PVkhPZ0Vybk9XVzJiczJhSTJQajJ6TWsycnZtb3dWTTBULTBERk1sVTBpci01MHpxR1BBTmxZNDBkWVVhMFlFMV96Zk5SN3Q5ekREaldXZEVWdkVEdnVYM2cyR2h1QlhFaEs1VlUxWDQ5R3lkbGJvemRudTZvVW84T1JERTVVVGYyamt3ck94NzE2enN3a2ItbU9iRm5IMzdJdWNyMV91YXhrazh0cGJkQkhISjF6YjdoT3RucEZWbmhrYUdxU0pvV2RUZlBwQkxBZFFfWjJOUHR2cFJBbkh5NA?oc=5",
-          "source": "https://news.google.com/rss/articles/CBMi2gJBVV95cUxNeFBvVVVYYTNSU05hSFJzWTY5cjRVLU5JSVR2cUxLMW5RSzVoNUhIa3NKenktWFFyLWNtUDl2Z0dKeHVtMmNDd3FMdURoLWMwLWxGaTNOSW1XclJzc0J4X1FrN2NMV29vY2R4N1ZwYmlzMW1ZbVBVdVhXdGptWG5xak8yV0lyeldLby00U3RMUmpUX2ZtTktiMG1leXU3eFVNTTRkUTNmSWtnYkFGcnZZcXVIR1ZjYkpzOEtTVlZBNjdaUmRHZ2M5aHpuekVrNUhWckVxdEs1R2o1dTZ5Tk1HeC16aG5QZHJ4cG9RQngwQ0FBV251YmJpTkNyLUJ6allFbDduT0JvTkptemNUamRlUVo3RlRHRkN0SXIxa21wMXNjVVRydUhScV9GZXBSaFlBRUU5NWY4d3ctazUwM2gtR005RzdwVnhLeEJVQ0U1Y1l4UVRmMTNyRGJR0gHfAkFVX3lxTE84TDNrWWM1SEtNbEo3ZUhrWnVDa3lkX0ZjUld1d0Q0M004WHYxNHkyMWNuZkxsS0dxRi1PRGpRY1pZb3lZMnlkQzNHcGIyR3NkZk1jR3lIUk9pcTBFUy1USktMaUxOaml2eWlkQUpXNUFpV2xXdVk2UlZrOGxvMzhHazJMVE5PVkhPZ0Vybk9XVzJiczJhSTJQajJ6TWsycnZtb3dWTTBULTBERk1sVTBpci01MHpxR1BBTmxZNDBkWVVhMFlFMV96Zk5SN3Q5ekREaldXZEVWdkVEdnVYM2cyR2h1QlhFaEs1VlUxWDQ5R3lkbGJvemRudTZvVW84T1JERTVVVGYyamt3ck94NzE2enN3a2ItbU9iRm5IMzdJdWNyMV91YXhrazh0cGJkQkhISjF6YjdoT3RucEZWbmhrYUdxU0pvV2RUZlBwQkxBZFFfWjJOUHR2cFJBbkh5NA?oc=5",
-          "time": "2026-10-20T19:15:12Z"
+          "title": "Blast heard in Yemen’s Aden as Houthis claim attack on military camp",
+          "url": "https://www.aljazeera.com/news/2026/10/21/blast-heard-in-yemens-aden-as-houthis-claim-attack-on-military-camp?traffic_source=rss",
+          "source": "Al Jazeera",
+          "time": "2026-10-21T09:02:18Z"
         },
         {
-          "title": "Australia issues ‘do not travel’ alert after Houthi strike - https://www.thetraveler.org/",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNR3phZGY3X0FweExMQ3BfUTgyNVRTUEZ4eTRIRUVSa0tPSUVQX0ZyS012ZjZSV2lKbmUzamZqU0lyaFp1MkVuQmx1Z19qTXltMDJnbEVfdjdVdHdXWHRaR0VUS3pROTU4MUZFeXZlYloxTlFXc3Q0aWtFcW5uRXcyS1k4TUxaWDZva2F1OTJn?oc=5",
-          "source": "Google News — Yemen / Red Sea",
-          "time": "2026-10-21T05:55:53Z"
+          "title": "Iran’s Revolutionary Guard warns undersea internet cables in Strait of Hormuz could be targeted - Business Upturn",
+          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOQlZ2WUIzb04zRHBETkllYThZc3lhWk1YbXNSaGVDa3VOcFI2dWs5YWI2cWxVZGtnemI4MEdhcnptcG1qZkF1TWNNTlYyR2JNOTVfRkdHR09lVjJmS0lzRGZQbFAwSzc3OVlKSk9ya0tyZTFGUEJka192QUVKM3hwN0pGYUZTLXZaNU90bXF6aW5uWmctUVFMOVVieUs4ZjdfanBpZzRCM3pTcllib1VUNFZYa2hoTnlVcm1nZHg2TXpwNUQwY2dmNVdrR3Vval9HNkNfcjJqVkhIUWFOeExFNFI3aw?oc=5",
+          "source": "Google News — South Asia Security",
+          "time": "2026-10-21T08:16:23Z"
         },
         {
-          "title": "Houthis attack besieged city in Yemen that UN says is at 'grave risk' - The Washington Post",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNd28wNVEwS0FZdThJYmJaQ09SZENwQmVZeTFJM1M3X0p5X1NGRFg5dnRUMWJBc3FZd2cyeUhJT2JYNzFYRGVNXzFUY3NGV0c1TlpMYURmd2hRakY1MDFEclFWbEptemJZcUZJRVZHOENHZ2phTFVrNkdGRkhXeVduSzNRNkprSm1pckctNms0VFp2OFNPMU81V0Zid2ZLZzVCa0h6a2VRbjJNTEF3a1dVSEh1S2hLSVd3LTRJeFA0WF9YUQ?oc=5",
-          "source": "Google News — Yemen / Red Sea",
-          "time": "2026-10-20T21:46:23Z"
-        },
-        {
-          "title": "Houthi Advance in Yemen Puts U.S. in a New Bind - EnergyNow.com",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQU0ZfbVdXNTBXeUdLMzc1cjhlNDhnWVRvRi1JUWt2eXNyZVdTLWNDRDNnLXhwekJoZ1gwZzRIUlluMjN1NUFIaXJWckpWUWtLTzRaQkt0dlZ5SE0zLUVYWEZfS3k4R3lRLTdvaXFJNEJ1ZGtGdXVpM1lWWVBTODdySnVXanRQdw?oc=5",
-          "source": "Google News — Yemen / Red Sea",
-          "time": "2026-10-20T21:27:44Z"
-        },
-        {
-          "title": "Why Does Saudi Arabia Struggle to Stop Houthi Attacks? - The New York Times",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQQVlGa1lUdkZRb3JRU3NWRS1jeExIdWIzZDVWLU1sZW0tdlp6a25TMHpmUUluOUFUS3A2UGN4NFdRM1A4WlQ2ejctSmhUQm9jR051Wml3cG1qaFZoX0N0SDRFNHN6YWlNUTZIUlpVS0g1UnhVc1BQVkdWUHRXSWJZVlphX2dVV3RtdUZFRWhiSzhsaXFPbjhoZnNiS0VFbEE?oc=5",
-          "source": "Google News — Iran Israel",
-          "time": "2026-10-21T04:12:49Z"
+          "title": "Iran’s Proposal to Reopen Strait of Hormuz Rejected as Middle East Tensions Escalate - streamlinefeed.co.ke",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNd1lYRjVTaE1UR0QweTNOdS1WSGpORG9VOTBta1k5WmtMd3paa0hGR0dSdGhrMHA2NVdELWFzN3dkQUgzNmNJOHA2enhiYlRSWVRiVFpxS2RUbU51QzUzNXZyM1hUaDNRMFpVYXFMV2h3emlmQUhEVmxRSHM0d05DV0FveWExNV9oWjdVVWkwOWo5NVNYdXJfTHJTZ00yRUJ2bUhScE05ZnBMekRYcXJWMkt3d3dPN1NE?oc=5",
+          "source": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNd1lYRjVTaE1UR0QweTNOdS1WSGpORG9VOTBta1k5WmtMd3paa0hGR0dSdGhrMHA2NVdELWFzN3dkQUgzNmNJOHA2enhiYlRSWVRiVFpxS2RUbU51QzUzNXZyM1hUaDNRMFpVYXFMV2h3emlmQUhEVmxRSHM0d05DV0FveWExNV9oWjdVVWkwOWo5NVNYdXJfTHJTZ00yRUJ2bUhScE05ZnBMekRYcXJWMkt3d3dPN1NE?oc=5",
+          "time": "2026-10-21T05:25:29Z"
         },
         {
           "title": "From the Nile to the Red Sea, can Egypt and Ethiopia ever agree? - The New Arab",
@@ -1174,6 +1162,18 @@
         {
           "title": "US will support but not lead military operations against the Houthis",
           "url": "https://x.com/Conflict_Radar/status/2093779745939038591?s=20",
+          "source": "Global War News Map",
+          "time": ""
+        },
+        {
+          "title": "explosions in the Hormuz",
+          "url": "https://x.com/Worldsource24/status/2093406367088271842?s=20",
+          "source": "Global War News Map",
+          "time": ""
+        },
+        {
+          "title": "vessel hit in Hormuz",
+          "url": "https://x.com/visegrad24/status/2094129903666962619?s=20",
           "source": "Global War News Map",
           "time": ""
         }
