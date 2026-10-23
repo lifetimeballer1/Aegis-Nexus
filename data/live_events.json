@@ -1,213 +1,225 @@
 {
-  "updatedAt": "2026-10-23T17:03:50.247726Z",
+  "updatedAt": "2026-10-23T20:22:24.950254Z",
   "window": "recent public reporting",
   "method": "anchor-aware title clustering with category and publication-time agreement; candidate grouping only, not proof reports describe identical facts",
   "events": [
     {
-      "id": "f4bef1a266999855",
-      "title": "Green forest fire notification in Australia",
+      "id": "e9da84ceacdc7307",
+      "title": "Melania Trump announces truce in Ukrainian city 'on brink of disaster'",
       "category": "general",
-      "confidence": "low",
-      "reportCount": 12,
-      "sourceCount": 1,
+      "confidence": "high",
+      "reportCount": 4,
+      "sourceCount": 3,
       "sources": [
-        "gdacs.org"
+        "channelnewsasia.com",
+        "bbc.co.uk",
+        "news.google.com"
       ],
-      "anchors": [],
-      "firstSeen": "2026-10-23T11:01:08Z",
-      "lastSeen": "2026-10-23T11:10:03Z",
+      "anchors": [
+        "uk",
+        "ukraine"
+      ],
+      "firstSeen": "2026-10-23T14:13:33Z",
+      "lastSeen": "Fri, 23 Oct 2026 19:30:19 GMT",
       "urls": [
-        "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033096",
-        "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033049",
-        "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033095",
-        "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033094",
-        "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033093",
-        "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033092",
-        "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033091",
-        "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033045"
+        "https://www.channelnewsasia.com/world/melania-trumo-ukraine-russia-truce-oleshky-6487441",
+        "https://www.bbc.co.uk/news/articles/c6vgxkvl4w5eo?at_medium=RSS&at_campaign=rss",
+        "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBYUVV4eWV0b1BDdXpXeU41b3JSTlY2WHpqNXVQV0JQNlVBbEhGSmcyeEVMd0N4dFVZblFVTmRVVG00akhaTS1BdWJSS0I2SG9IQThSWkZNTGhoTnNuRVE?oc=5",
+        "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9HVXR4Q2ppWjg1UE14akpXVTFoRWtic1NBV3ZkbDdpaldLd0VjSmlRNFp6UGljVTRNOWpPVHlCdTVnYVYybFZsT2NFaldRN2JzbWF1bnlIMUJJamM?oc=5"
       ],
       "reports": [
         {
-          "id": "f95fc991a97e",
-          "sourceLabel": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033096",
-          "sourceName": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033096",
-          "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in Australia",
-          "summary": "On 19/10/2026, a forest fire started in Australia, until 23/10/2026.",
-          "summary_snippet": "On 19/10/2026, a forest fire started in Australia, until 23/10/2026.",
-          "source": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033096",
-          "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033096",
-          "time": "2026-10-23T11:10:03Z",
-          "published_date": "2026-10-23T11:10:03Z",
-          "publishedDate": "2026-10-23T11:10:03Z",
-          "tag": "World",
+          "id": "e7129da9ea9f",
+          "sourceLabel": "CNA World",
+          "sourceName": "CNA World",
+          "sourceType": "news",
+          "title": "Melania Trump announces truce in Ukrainian city 'on brink of disaster'",
+          "summary": "US First Lady Melania Trump described herself as an “exclusive intermediary” in ceasefire talks for the Ukrainian city of Oleshky, with the truce expected to begin on Oct 29.",
+          "summary_snippet": "US First Lady Melania Trump described herself as an “exclusive intermediary” in ceasefire talks for the Ukrainian city of Oleshky, with the truce expected to begin on Oct 29.",
+          "source": "https://www.channelnewsasia.com/world/melania-trumo-ukraine-russia-truce-oleshky-6487441",
+          "url": "https://www.channelnewsasia.com/world/melania-trumo-ukraine-russia-truce-oleshky-6487441",
+          "time": "2026-10-23T17:44:38Z",
+          "published_date": "2026-10-23T17:44:38Z",
+          "publishedDate": "2026-10-23T17:44:38Z",
+          "tag": "Breaking",
           "confidence": "DEVELOPING",
-          "breaking": false,
+          "breaking": true,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "sourceId": "cna_world",
+            "sourceUrl": "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml&category=6311",
             "feedFormat": "rss"
           }
         },
         {
-          "id": "2e7db1269cec",
-          "sourceLabel": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033049",
-          "sourceName": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033049",
-          "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in Australia",
-          "summary": "On 20/10/2026, a forest fire started in Australia, until 22/10/2026.",
-          "summary_snippet": "On 20/10/2026, a forest fire started in Australia, until 22/10/2026.",
-          "source": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033049",
-          "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033049",
-          "time": "2026-10-23T11:06:41Z",
-          "published_date": "2026-10-23T11:06:41Z",
-          "publishedDate": "2026-10-23T11:06:41Z",
+          "id": "f8deac049ef3",
+          "sourceLabel": "https://www.bbc.co.uk/news/articles/c6vgxkvl4w5eo?at_medium=RSS&at_campaign=rss",
+          "sourceName": "https://www.bbc.co.uk/news/articles/c6vgxkvl4w5eo?at_medium=RSS&at_campaign=rss",
+          "sourceType": "international",
+          "title": "White House says Melania Trump brokers truce for Ukraine city 'on brink of disaster'",
+          "summary": "Ukraine and Russia confirm the truce in Russian-occupied Oleshky, where residents have had to eat garden weeds to survive.",
+          "summary_snippet": "Ukraine and Russia confirm the truce in Russian-occupied Oleshky, where residents have had to eat garden weeds to survive.",
+          "source": "https://www.bbc.co.uk/news/articles/c6vgxkvl4w5eo?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.bbc.co.uk/news/articles/c6vgxkvl4w5eo?at_medium=RSS&at_campaign=rss",
+          "time": "2026-10-23T16:59:51Z",
+          "published_date": "2026-10-23T16:59:51Z",
+          "publishedDate": "2026-10-23T16:59:51Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "sourceId": "bbc_world",
+            "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
             "feedFormat": "rss"
           }
         },
         {
-          "id": "63f70d9c375d",
-          "sourceLabel": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033095",
-          "sourceName": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033095",
-          "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in Australia",
-          "summary": "On 20/10/2026, a forest fire started in Australia, until 23/10/2026.",
-          "summary_snippet": "On 20/10/2026, a forest fire started in Australia, until 23/10/2026.",
-          "source": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033095",
-          "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033095",
-          "time": "2026-10-23T11:06:15Z",
-          "published_date": "2026-10-23T11:06:15Z",
-          "publishedDate": "2026-10-23T11:06:15Z",
+          "title": "White House says Melania Trump brokers truce for Ukraine city 'on brink of disaster' - BBC",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBYUVV4eWV0b1BDdXpXeU41b3JSTlY2WHpqNXVQV0JQNlVBbEhGSmcyeEVMd0N4dFVZblFVTmRVVG00akhaTS1BdWJSS0I2SG9IQThSWkZNTGhoTnNuRVE?oc=5",
+          "published_date": "2026-10-23T14:13:33Z",
+          "time": "2026-10-23T14:13:33Z",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: BBC",
+          "summary": "Fallback discovery via Google News RSS; publisher: BBC",
+          "source": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBYUVV4eWV0b1BDdXpXeU41b3JSTlY2WHpqNXVQV0JQNlVBbEhGSmcyeEVMd0N4dFVZblFVTmRVVG00akhaTS1BdWJSS0I2SG9IQThSWkZNTGhoTnNuRVE?oc=5",
+          "sourceLabel": "BBC",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @POTUS",
+          "credit_metadata": "Google News RSS fallback",
+          "id": "97972acb5f9f",
+          "sourceName": "BBC",
+          "publishedDate": "2026-10-23T14:13:33Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
           "liveDatabase": true,
+          "credit": "Google News RSS fallback"
+        },
+        {
+          "title": "White House says Melania Trump brokers truce for Ukraine city 'on brink of disaster' - BBC",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9HVXR4Q2ppWjg1UE14akpXVTFoRWtic1NBV3ZkbDdpaldLd0VjSmlRNFp6UGljVTRNOWpPVHlCdTVnYVYybFZsT2NFaldRN2JzbWF1bnlIMUJJamM?oc=5",
+          "published_date": "Fri, 23 Oct 2026 19:30:19 GMT",
+          "time": "Fri, 23 Oct 2026 19:30:19 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: BBC",
+          "summary": "Fallback discovery via Google News RSS; publisher: BBC",
+          "source": "BBC",
+          "sourceLabel": "BBC",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @POTUS",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "9058f4f2af769d75",
+      "title": "Russia, Ukraine agree to ceasefire in Ukrainian city hit by food crisis, brokered by Melania Trump - Reuters",
+      "category": "diplomatic",
+      "confidence": "moderate",
+      "reportCount": 4,
+      "sourceCount": 2,
+      "sources": [
+        "news.google.com",
+        "theguardian.com"
+      ],
+      "anchors": [
+        "russia",
+        "uk",
+        "ukraine"
+      ],
+      "firstSeen": "2026-10-23T14:44:51Z",
+      "lastSeen": "2026-10-23T16:50:04Z",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZkVOVkZPUnl6Z2d6SWt4cWJDOUNrSW5Fdmt6WXVUTXJMRXFCMXVVSWRZUWNHUXc3Nk1MZHlLNGVhVzNRMWdsSzByUmtHWFh4YzNRVjVlT2dCbjh5Um13c0kxT2pENE1zS3hmbi15T1FEcHl1SWgwNFVIZTdYaW1LdktVZjVVeUIxOTEzUlZZZnQzVmpSdGd6d0lyTXNjWGUtZERkVXM5N0VZeFhTamI3VGRSeXFqUlJNbU81c2VlcGlrQ01MU1VR?oc=5",
+        "https://www.theguardian.com/world/2026/oct/23/ukraine-troops-report-ongoing-problems-with-starlink-satellite-network",
+        "https://news.google.com/rss/articles/CBMilgFBVV95cUxQWVBBaHBqUlg2c3ZBNF9yQzJ0eU1kTjBidndiU1M3Z2FXU20tTFRVQXhlcHBEbUFzWl9BbWNvb1ROSHZpMEtqMTJXY2UxTVJodUxGZWk3OUt5YzZCTENiSXBVLVJfWjFwN3NVOXZ1OHBmZ3R0LXFXaUNlUlZJbHZyb3lCZ1dmTTF1QVhqeDdnVnJ1QWhyTFE?oc=5",
+        "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOQWlrQ3NXNFlEWEQyRVlZS3R4Rmt5Z3JQR2R1VGdDUkpJZGNLUkRkNzZmY2IxZkJ4YUVLZ3lrSnkxTm1BTHo4Zl9HYS1uRVBNVk1uTGl2dkhjYmN4RkZ3UGlCMlNNRFI4WXowZWJjYjlxN0M2NU90eElwWXRaRE40LV9Nd09rUUJTN0ZDdmpVUlpobWNZN2xSV1ljTDNRS2cxSzZiRkZHdEVUd2xRSUdtT3RPa25jcTFGMVNxLU15OGlwYXp0bTB2SkxXQ0NDQWdrV0R4dG01TmxZYmxoSXQzQ1NjOE84OFJKdmdnag?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "Russia, Ukraine agree to ceasefire in Ukrainian city hit by food crisis, brokered by Melania Trump - Reuters",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZkVOVkZPUnl6Z2d6SWt4cWJDOUNrSW5Fdmt6WXVUTXJMRXFCMXVVSWRZUWNHUXc3Nk1MZHlLNGVhVzNRMWdsSzByUmtHWFh4YzNRVjVlT2dCbjh5Um13c0kxT2pENE1zS3hmbi15T1FEcHl1SWgwNFVIZTdYaW1LdktVZjVVeUIxOTEzUlZZZnQzVmpSdGd6d0lyTXNjWGUtZERkVXM5N0VZeFhTamI3VGRSeXFqUlJNbU81c2VlcGlrQ01MU1VR?oc=5",
+          "published_date": "2026-10-23T16:50:04Z",
+          "time": "2026-10-23T16:50:04Z",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Reuters",
+          "summary": "Fallback discovery via Google News RSS; publisher: Reuters",
+          "source": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZkVOVkZPUnl6Z2d6SWt4cWJDOUNrSW5Fdmt6WXVUTXJMRXFCMXVVSWRZUWNHUXc3Nk1MZHlLNGVhVzNRMWdsSzByUmtHWFh4YzNRVjVlT2dCbjh5Um13c0kxT2pENE1zS3hmbi15T1FEcHl1SWgwNFVIZTdYaW1LdktVZjVVeUIxOTEzUlZZZnQzVmpSdGd6d0lyTXNjWGUtZERkVXM5N0VZeFhTamI3VGRSeXFqUlJNbU81c2VlcGlrQ01MU1VR?oc=5",
+          "sourceLabel": "Reuters",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @POTUS",
+          "credit_metadata": "Google News RSS fallback",
+          "id": "8e53f3f63faa",
+          "sourceName": "Reuters",
+          "publishedDate": "2026-10-23T16:50:04Z",
+          "tag": "Breaking",
+          "confidence": "DEVELOPING",
+          "breaking": true,
+          "liveDatabase": true,
+          "credit": "Google News RSS fallback"
+        },
+        {
+          "id": "cb9eec62df6f",
+          "sourceLabel": "https://www.theguardian.com/world/2026/oct/23/ukraine-troops-report-ongoing-problems-with-starlink-satellite-network",
+          "sourceName": "https://www.theguardian.com/world/2026/oct/23/ukraine-troops-report-ongoing-problems-with-starlink-satellite-network",
+          "sourceType": "international",
+          "title": "Russia and Ukraine agree to local ceasefire in Oleshky amid deepening humanitarian crisis",
+          "summary": "People in Russian-occupied city facing severe shortages of food, water and electricity, with some reportedly surviving on weeds The White House has said that Russia and Ukraine have agreed to a ceasefire in the Russian-occupied city of Oleshky, where a deepening humanitarian crisis has left thousands of civilians struggling to survive. In a statement on Friday, the White House said both sides had agreed to halt all m",
+          "summary_snippet": "People in Russian-occupied city facing severe shortages of food, water and electricity, with some reportedly surviving on weeds The White House has said that Russia and Ukraine have agreed to a ceasefire in the Russian-occupied city of Oleshky, where a deepening humanitarian crisis has left thousands of civilians struggling to survive. In a statement on Friday, the White House said both sides had agreed to halt all m",
+          "source": "https://www.theguardian.com/world/2026/oct/23/ukraine-troops-report-ongoing-problems-with-starlink-satellite-network",
+          "url": "https://www.theguardian.com/world/2026/oct/23/ukraine-troops-report-ongoing-problems-with-starlink-satellite-network",
+          "time": "2026-10-23T16:10:34Z",
+          "published_date": "2026-10-23T16:10:34Z",
+          "publishedDate": "2026-10-23T16:10:34Z",
+          "tag": "Breaking",
+          "confidence": "DEVELOPING",
+          "breaking": true,
+          "liveDatabase": true,
           "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "sourceId": "guardian_world",
+            "sourceUrl": "https://www.theguardian.com/world/rss",
             "feedFormat": "rss"
           }
         },
         {
-          "id": "f7a580a4c2d8",
-          "sourceLabel": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033094",
-          "sourceName": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033094",
-          "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in Australia",
-          "summary": "On 20/10/2026, a forest fire started in Australia, until 23/10/2026.",
-          "summary_snippet": "On 20/10/2026, a forest fire started in Australia, until 23/10/2026.",
-          "source": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033094",
-          "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033094",
-          "time": "2026-10-23T11:04:24Z",
-          "published_date": "2026-10-23T11:04:24Z",
-          "publishedDate": "2026-10-23T11:04:24Z",
-          "tag": "World",
+          "title": "Melania Trump brokers humanitarian ceasefire for ravaged Ukraine city Oleshky - CBC",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQWVBBaHBqUlg2c3ZBNF9yQzJ0eU1kTjBidndiU1M3Z2FXU20tTFRVQXhlcHBEbUFzWl9BbWNvb1ROSHZpMEtqMTJXY2UxTVJodUxGZWk3OUt5YzZCTENiSXBVLVJfWjFwN3NVOXZ1OHBmZ3R0LXFXaUNlUlZJbHZyb3lCZ1dmTTF1QVhqeDdnVnJ1QWhyTFE?oc=5",
+          "published_date": "2026-10-23T16:02:35Z",
+          "time": "2026-10-23T16:02:35Z",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: CBC",
+          "summary": "Fallback discovery via Google News RSS; publisher: CBC",
+          "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQWVBBaHBqUlg2c3ZBNF9yQzJ0eU1kTjBidndiU1M3Z2FXU20tTFRVQXhlcHBEbUFzWl9BbWNvb1ROSHZpMEtqMTJXY2UxTVJodUxGZWk3OUt5YzZCTENiSXBVLVJfWjFwN3NVOXZ1OHBmZ3R0LXFXaUNlUlZJbHZyb3lCZ1dmTTF1QVhqeDdnVnJ1QWhyTFE?oc=5",
+          "sourceLabel": "CBC",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @POTUS",
+          "credit_metadata": "Google News RSS fallback",
+          "id": "a58c9b0df0a1",
+          "sourceName": "CBC",
+          "publishedDate": "2026-10-23T16:02:35Z",
+          "tag": "Breaking",
           "confidence": "DEVELOPING",
-          "breaking": false,
+          "breaking": true,
           "liveDatabase": true,
-          "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
-            "feedFormat": "rss"
-          }
+          "credit": "Google News RSS fallback"
         },
         {
-          "id": "324f50920d0c",
-          "sourceLabel": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033093",
-          "sourceName": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033093",
-          "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in Australia",
-          "summary": "On 20/10/2026, a forest fire started in Australia, until 23/10/2026.",
-          "summary_snippet": "On 20/10/2026, a forest fire started in Australia, until 23/10/2026.",
-          "source": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033093",
-          "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033093",
-          "time": "2026-10-23T11:04:15Z",
-          "published_date": "2026-10-23T11:04:15Z",
-          "publishedDate": "2026-10-23T11:04:15Z",
-          "tag": "World",
+          "id": "e001249b21e0",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOQWlrQ3NXNFlEWEQyRVlZS3R4Rmt5Z3JQR2R1VGdDUkpJZGNLUkRkNzZmY2IxZkJ4YUVLZ3lrSnkxTm1BTHo4Zl9HYS1uRVBNVk1uTGl2dkhjYmN4RkZ3UGlCMlNNRFI4WXowZWJjYjlxN0M2NU90eElwWXRaRE40LV9Nd09rUUJTN0ZDdmpVUlpobWNZN2xSV1ljTDNRS2cxSzZiRkZHdEVUd2xRSUdtT3RPa25jcTFGMVNxLU15OGlwYXp0bTB2SkxXQ0NDQWdrV0R4dG01TmxZYmxoSXQzQ1NjOE84OFJKdmdnag?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOQWlrQ3NXNFlEWEQyRVlZS3R4Rmt5Z3JQR2R1VGdDUkpJZGNLUkRkNzZmY2IxZkJ4YUVLZ3lrSnkxTm1BTHo4Zl9HYS1uRVBNVk1uTGl2dkhjYmN4RkZ3UGlCMlNNRFI4WXowZWJjYjlxN0M2NU90eElwWXRaRE40LV9Nd09rUUJTN0ZDdmpVUlpobWNZN2xSV1ljTDNRS2cxSzZiRkZHdEVUd2xRSUdtT3RPa25jcTFGMVNxLU15OGlwYXp0bTB2SkxXQ0NDQWdrV0R4dG01TmxZYmxoSXQzQ1NjOE84OFJKdmdnag?oc=5",
+          "sourceType": "south-asia",
+          "title": "Melania Trump helps secure Russia-Ukraine ceasefire in occupied Oleshky as humanitarian crisis deepens - Business Upturn",
+          "summary": "Melania Trump helps secure Russia-Ukraine ceasefire in occupied Oleshky as humanitarian crisis deepens Business Upturn",
+          "summary_snippet": "Melania Trump helps secure Russia-Ukraine ceasefire in occupied Oleshky as humanitarian crisis deepens Business Upturn",
+          "source": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOQWlrQ3NXNFlEWEQyRVlZS3R4Rmt5Z3JQR2R1VGdDUkpJZGNLUkRkNzZmY2IxZkJ4YUVLZ3lrSnkxTm1BTHo4Zl9HYS1uRVBNVk1uTGl2dkhjYmN4RkZ3UGlCMlNNRFI4WXowZWJjYjlxN0M2NU90eElwWXRaRE40LV9Nd09rUUJTN0ZDdmpVUlpobWNZN2xSV1ljTDNRS2cxSzZiRkZHdEVUd2xRSUdtT3RPa25jcTFGMVNxLU15OGlwYXp0bTB2SkxXQ0NDQWdrV0R4dG01TmxZYmxoSXQzQ1NjOE84OFJKdmdnag?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOQWlrQ3NXNFlEWEQyRVlZS3R4Rmt5Z3JQR2R1VGdDUkpJZGNLUkRkNzZmY2IxZkJ4YUVLZ3lrSnkxTm1BTHo4Zl9HYS1uRVBNVk1uTGl2dkhjYmN4RkZ3UGlCMlNNRFI4WXowZWJjYjlxN0M2NU90eElwWXRaRE40LV9Nd09rUUJTN0ZDdmpVUlpobWNZN2xSV1ljTDNRS2cxSzZiRkZHdEVUd2xRSUdtT3RPa25jcTFGMVNxLU15OGlwYXp0bTB2SkxXQ0NDQWdrV0R4dG01TmxZYmxoSXQzQ1NjOE84OFJKdmdnag?oc=5",
+          "time": "2026-10-23T14:44:51Z",
+          "published_date": "2026-10-23T14:44:51Z",
+          "publishedDate": "2026-10-23T14:44:51Z",
+          "tag": "Breaking",
           "confidence": "DEVELOPING",
-          "breaking": false,
+          "breaking": true,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "5de3d2a26cb9",
-          "sourceLabel": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033092",
-          "sourceName": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033092",
-          "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in Australia",
-          "summary": "On 21/10/2026, a forest fire started in Australia, until 23/10/2026.",
-          "summary_snippet": "On 21/10/2026, a forest fire started in Australia, until 23/10/2026.",
-          "source": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033092",
-          "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033092",
-          "time": "2026-10-23T11:03:24Z",
-          "published_date": "2026-10-23T11:03:24Z",
-          "publishedDate": "2026-10-23T11:03:24Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "b09b4a18fcff",
-          "sourceLabel": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033091",
-          "sourceName": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033091",
-          "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in Australia",
-          "summary": "On 21/10/2026, a forest fire started in Australia, until 23/10/2026.",
-          "summary_snippet": "On 21/10/2026, a forest fire started in Australia, until 23/10/2026.",
-          "source": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033091",
-          "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033091",
-          "time": "2026-10-23T11:03:16Z",
-          "published_date": "2026-10-23T11:03:16Z",
-          "publishedDate": "2026-10-23T11:03:16Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "856ca5e28337",
-          "sourceLabel": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033045",
-          "sourceName": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033045",
-          "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in Australia",
-          "summary": "On 21/10/2026, a forest fire started in Australia, until 22/10/2026.",
-          "summary_snippet": "On 21/10/2026, a forest fire started in Australia, until 22/10/2026.",
-          "source": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033045",
-          "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033045",
-          "time": "2026-10-23T11:02:50Z",
-          "published_date": "2026-10-23T11:02:50Z",
-          "publishedDate": "2026-10-23T11:02:50Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "sourceId": "google_news_south_asia_security",
+            "sourceUrl": "https://news.google.com/rss/search?q=India+Pakistan+Afghanistan+Bangladesh+Nepal+Sri+Lanka+conflict+security+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
         }
@@ -357,8 +369,8 @@
       ]
     },
     {
-      "id": "14561a92d760b826",
-      "title": "Green forest fire notification in South Sudan",
+      "id": "3bde1e8e9aa8197c",
+      "title": "Green forest fire notification in Botswana",
       "category": "general",
       "confidence": "low",
       "reportCount": 3,
@@ -366,30 +378,28 @@
       "sources": [
         "gdacs.org"
       ],
-      "anchors": [
-        "sudan"
-      ],
-      "firstSeen": "2026-10-23T11:11:04Z",
-      "lastSeen": "2026-10-23T11:14:36Z",
+      "anchors": [],
+      "firstSeen": "2026-10-23T19:03:22Z",
+      "lastSeen": "2026-10-23T19:07:13Z",
       "urls": [
-        "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033072",
-        "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033069",
-        "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033071"
+        "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033108",
+        "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033107",
+        "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033104"
       ],
       "reports": [
         {
-          "id": "3b1de3900991",
-          "sourceLabel": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033072",
-          "sourceName": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033072",
+          "id": "d90b2a0f35c4",
+          "sourceLabel": "GDACS Global Disaster Alerts",
+          "sourceName": "GDACS Global Disaster Alerts",
           "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in South Sudan",
-          "summary": "On 18/10/2026, a forest fire started in South Sudan, until 22/10/2026.",
-          "summary_snippet": "On 18/10/2026, a forest fire started in South Sudan, until 22/10/2026.",
-          "source": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033072",
-          "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033072",
-          "time": "2026-10-23T11:14:36Z",
-          "published_date": "2026-10-23T11:14:36Z",
-          "publishedDate": "2026-10-23T11:14:36Z",
+          "title": "Green forest fire notification in Botswana",
+          "summary": "On 20/10/2026, a forest fire started in Botswana, until 23/10/2026.",
+          "summary_snippet": "On 20/10/2026, a forest fire started in Botswana, until 23/10/2026.",
+          "source": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033108",
+          "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033108",
+          "time": "2026-10-23T19:07:13Z",
+          "published_date": "2026-10-23T19:07:13Z",
+          "publishedDate": "2026-10-23T19:07:13Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
@@ -401,18 +411,18 @@
           }
         },
         {
-          "id": "c1be1681f6cc",
-          "sourceLabel": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033069",
-          "sourceName": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033069",
+          "id": "41301824c4ab",
+          "sourceLabel": "GDACS Global Disaster Alerts",
+          "sourceName": "GDACS Global Disaster Alerts",
           "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in Sudan",
-          "summary": "On 19/10/2026, a forest fire started in Sudan, until 22/10/2026.",
-          "summary_snippet": "On 19/10/2026, a forest fire started in Sudan, until 22/10/2026.",
-          "source": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033069",
-          "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033069",
-          "time": "2026-10-23T11:11:09Z",
-          "published_date": "2026-10-23T11:11:09Z",
-          "publishedDate": "2026-10-23T11:11:09Z",
+          "title": "Green forest fire notification in Namibia, Botswana",
+          "summary": "On 20/10/2026, a forest fire started in Namibia, Botswana, until 23/10/2026.",
+          "summary_snippet": "On 20/10/2026, a forest fire started in Namibia, Botswana, until 23/10/2026.",
+          "source": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033107",
+          "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033107",
+          "time": "2026-10-23T19:07:07Z",
+          "published_date": "2026-10-23T19:07:07Z",
+          "publishedDate": "2026-10-23T19:07:07Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
@@ -424,18 +434,18 @@
           }
         },
         {
-          "id": "d157aa34194a",
-          "sourceLabel": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033071",
-          "sourceName": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033071",
+          "id": "921f773c1a32",
+          "sourceLabel": "GDACS Global Disaster Alerts",
+          "sourceName": "GDACS Global Disaster Alerts",
           "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in South Sudan",
-          "summary": "On 19/10/2026, a forest fire started in South Sudan, until 22/10/2026.",
-          "summary_snippet": "On 19/10/2026, a forest fire started in South Sudan, until 22/10/2026.",
-          "source": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033071",
-          "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033071",
-          "time": "2026-10-23T11:11:04Z",
-          "published_date": "2026-10-23T11:11:04Z",
-          "publishedDate": "2026-10-23T11:11:04Z",
+          "title": "Green forest fire notification in Botswana",
+          "summary": "On 21/10/2026, a forest fire started in Botswana, until 23/10/2026.",
+          "summary_snippet": "On 21/10/2026, a forest fire started in Botswana, until 23/10/2026.",
+          "source": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033104",
+          "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033104",
+          "time": "2026-10-23T19:03:22Z",
+          "published_date": "2026-10-23T19:03:22Z",
+          "publishedDate": "2026-10-23T19:03:22Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
@@ -449,131 +459,70 @@
       ]
     },
     {
-      "id": "cfa9da0819d0ec85",
-      "title": "White House says Melania Trump brokers truce for Ukraine city 'on brink of disaster'",
-      "category": "general",
+      "id": "a84a6900898fe9e1",
+      "title": "Ukraine says Starshield restrictions still affect military drones - The Journal Record",
+      "category": "conflict",
       "confidence": "moderate",
       "reportCount": 2,
       "sourceCount": 2,
       "sources": [
-        "bbc.co.uk",
-        "news.google.com"
+        "news.google.com",
+        "stripes.com"
       ],
       "anchors": [
         "uk",
         "ukraine"
       ],
-      "firstSeen": "2026-10-23T16:59:51Z",
-      "lastSeen": "Fri, 23 Oct 2026 14:13:33 GMT",
+      "firstSeen": "2026-10-23T15:03:03Z",
+      "lastSeen": "2026-10-23T16:17:54Z",
       "urls": [
-        "https://www.bbc.co.uk/news/articles/c6vgxkvl4w5eo?at_medium=RSS&at_campaign=rss",
-        "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBYUVV4eWV0b1BDdXpXeU41b3JSTlY2WHpqNXVQV0JQNlVBbEhGSmcyeEVMd0N4dFVZblFVTmRVVG00akhaTS1BdWJSS0I2SG9IQThSWkZNTGhoTnNuRVE?oc=5"
+        "https://news.google.com/rss/articles/CBMilgFBVV95cUxNemozYlROelJRcENEZ2xGejJGU0JnVmNZdm44cDBkZC1OV2N4NTZPdTk2UngzRXBhaWhMT0tPM254TjF4Wm5kNHpuOWRXT2NuVVR5eFRfQ0JGWWYzM0hvRENOSUdXaDBydGtjRWdVQmxSSDlKaFhQcE14cW13MTZhdzgwRHdDX3Vub1BrMWFWZTRBbmgzVGc?oc=5",
+        "https://www.stripes.com/theaters/europe/2026-10-23/starlink-still-limited-ukraine-23238084.html"
       ],
       "reports": [
         {
-          "id": "f8deac049ef3",
-          "sourceLabel": "BBC World",
-          "sourceName": "BBC World",
-          "sourceType": "international",
-          "title": "White House says Melania Trump brokers truce for Ukraine city 'on brink of disaster'",
-          "summary": "Ukraine and Russia confirm the truce in Russian-occupied Oleshky, where residents have had to eat garden weeds to survive.",
-          "summary_snippet": "Ukraine and Russia confirm the truce in Russian-occupied Oleshky, where residents have had to eat garden weeds to survive.",
-          "source": "https://www.bbc.co.uk/news/articles/c6vgxkvl4w5eo?at_medium=RSS&at_campaign=rss",
-          "url": "https://www.bbc.co.uk/news/articles/c6vgxkvl4w5eo?at_medium=RSS&at_campaign=rss",
-          "time": "2026-10-23T16:59:51Z",
-          "published_date": "2026-10-23T16:59:51Z",
-          "publishedDate": "2026-10-23T16:59:51Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "bbc_world",
-            "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "title": "White House says Melania Trump brokers truce for Ukraine city 'on brink of disaster' - BBC",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBYUVV4eWV0b1BDdXpXeU41b3JSTlY2WHpqNXVQV0JQNlVBbEhGSmcyeEVMd0N4dFVZblFVTmRVVG00akhaTS1BdWJSS0I2SG9IQThSWkZNTGhoTnNuRVE?oc=5",
-          "published_date": "Fri, 23 Oct 2026 14:13:33 GMT",
-          "time": "Fri, 23 Oct 2026 14:13:33 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: BBC",
-          "summary": "Fallback discovery via Google News RSS; publisher: BBC",
-          "source": "BBC",
-          "sourceLabel": "BBC",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @POTUS",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "6f8127337f6f9ba6",
-      "title": "Russia and Ukraine agree to local ceasefire in Oleshky amid deepening humanitarian crisis",
-      "category": "diplomatic",
-      "confidence": "moderate",
-      "reportCount": 2,
-      "sourceCount": 2,
-      "sources": [
-        "theguardian.com",
-        "news.google.com"
-      ],
-      "anchors": [
-        "russia",
-        "uk",
-        "ukraine"
-      ],
-      "firstSeen": "2026-10-23T14:44:51Z",
-      "lastSeen": "2026-10-23T16:10:34Z",
-      "urls": [
-        "https://www.theguardian.com/world/2026/oct/23/ukraine-troops-report-ongoing-problems-with-starlink-satellite-network",
-        "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOQWlrQ3NXNFlEWEQyRVlZS3R4Rmt5Z3JQR2R1VGdDUkpJZGNLUkRkNzZmY2IxZkJ4YUVLZ3lrSnkxTm1BTHo4Zl9HYS1uRVBNVk1uTGl2dkhjYmN4RkZ3UGlCMlNNRFI4WXowZWJjYjlxN0M2NU90eElwWXRaRE40LV9Nd09rUUJTN0ZDdmpVUlpobWNZN2xSV1ljTDNRS2cxSzZiRkZHdEVUd2xRSUdtT3RPa25jcTFGMVNxLU15OGlwYXp0bTB2SkxXQ0NDQWdrV0R4dG01TmxZYmxoSXQzQ1NjOE84OFJKdmdnag?oc=5"
-      ],
-      "reports": [
-        {
-          "id": "cb9eec62df6f",
-          "sourceLabel": "Guardian World",
-          "sourceName": "Guardian World",
-          "sourceType": "international",
-          "title": "Russia and Ukraine agree to local ceasefire in Oleshky amid deepening humanitarian crisis",
-          "summary": "People in Russian-occupied city facing severe shortages of food, water and electricity, with some reportedly surviving on weeds The White House has said that Russia and Ukraine have agreed to a ceasefire in the Russian-occupied city of Oleshky, where a deepening humanitarian crisis has left thousands of civilians struggling to survive. In a statement on Friday, the White House said both sides had agreed to halt all m",
-          "summary_snippet": "People in Russian-occupied city facing severe shortages of food, water and electricity, with some reportedly surviving on weeds The White House has said that Russia and Ukraine have agreed to a ceasefire in the Russian-occupied city of Oleshky, where a deepening humanitarian crisis has left thousands of civilians struggling to survive. In a statement on Friday, the White House said both sides had agreed to halt all m",
-          "source": "https://www.theguardian.com/world/2026/oct/23/ukraine-troops-report-ongoing-problems-with-starlink-satellite-network",
-          "url": "https://www.theguardian.com/world/2026/oct/23/ukraine-troops-report-ongoing-problems-with-starlink-satellite-network",
-          "time": "2026-10-23T16:10:34Z",
-          "published_date": "2026-10-23T16:10:34Z",
-          "publishedDate": "2026-10-23T16:10:34Z",
+          "id": "b6507e6791ae",
+          "sourceLabel": "Google News — Ukraine War",
+          "sourceName": "Google News — Ukraine War",
+          "sourceType": "europe-conflict",
+          "title": "Ukraine says Starshield restrictions still affect military drones - The Journal Record",
+          "summary": "Ukraine says Starshield restrictions still affect military drones The Journal Record",
+          "summary_snippet": "Ukraine says Starshield restrictions still affect military drones The Journal Record",
+          "source": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNemozYlROelJRcENEZ2xGejJGU0JnVmNZdm44cDBkZC1OV2N4NTZPdTk2UngzRXBhaWhMT0tPM254TjF4Wm5kNHpuOWRXT2NuVVR5eFRfQ0JGWWYzM0hvRENOSUdXaDBydGtjRWdVQmxSSDlKaFhQcE14cW13MTZhdzgwRHdDX3Vub1BrMWFWZTRBbmgzVGc?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNemozYlROelJRcENEZ2xGejJGU0JnVmNZdm44cDBkZC1OV2N4NTZPdTk2UngzRXBhaWhMT0tPM254TjF4Wm5kNHpuOWRXT2NuVVR5eFRfQ0JGWWYzM0hvRENOSUdXaDBydGtjRWdVQmxSSDlKaFhQcE14cW13MTZhdzgwRHdDX3Vub1BrMWFWZTRBbmgzVGc?oc=5",
+          "time": "2026-10-23T16:17:54Z",
+          "published_date": "2026-10-23T16:17:54Z",
+          "publishedDate": "2026-10-23T16:17:54Z",
           "tag": "Breaking",
           "confidence": "DEVELOPING",
           "breaking": true,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "guardian_world",
-            "sourceUrl": "https://www.theguardian.com/world/rss",
+            "sourceId": "google_news_ukraine_war",
+            "sourceUrl": "https://news.google.com/rss/search?q=Ukraine+Russia+war+frontline+missile+drone+strike+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
         },
         {
-          "id": "e001249b21e0",
-          "sourceLabel": "Google News — South Asia Security",
-          "sourceName": "Google News — South Asia Security",
-          "sourceType": "south-asia",
-          "title": "Melania Trump helps secure Russia-Ukraine ceasefire in occupied Oleshky as humanitarian crisis deepens - Business Upturn",
-          "summary": "Melania Trump helps secure Russia-Ukraine ceasefire in occupied Oleshky as humanitarian crisis deepens Business Upturn",
-          "summary_snippet": "Melania Trump helps secure Russia-Ukraine ceasefire in occupied Oleshky as humanitarian crisis deepens Business Upturn",
-          "source": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOQWlrQ3NXNFlEWEQyRVlZS3R4Rmt5Z3JQR2R1VGdDUkpJZGNLUkRkNzZmY2IxZkJ4YUVLZ3lrSnkxTm1BTHo4Zl9HYS1uRVBNVk1uTGl2dkhjYmN4RkZ3UGlCMlNNRFI4WXowZWJjYjlxN0M2NU90eElwWXRaRE40LV9Nd09rUUJTN0ZDdmpVUlpobWNZN2xSV1ljTDNRS2cxSzZiRkZHdEVUd2xRSUdtT3RPa25jcTFGMVNxLU15OGlwYXp0bTB2SkxXQ0NDQWdrV0R4dG01TmxZYmxoSXQzQ1NjOE84OFJKdmdnag?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOQWlrQ3NXNFlEWEQyRVlZS3R4Rmt5Z3JQR2R1VGdDUkpJZGNLUkRkNzZmY2IxZkJ4YUVLZ3lrSnkxTm1BTHo4Zl9HYS1uRVBNVk1uTGl2dkhjYmN4RkZ3UGlCMlNNRFI4WXowZWJjYjlxN0M2NU90eElwWXRaRE40LV9Nd09rUUJTN0ZDdmpVUlpobWNZN2xSV1ljTDNRS2cxSzZiRkZHdEVUd2xRSUdtT3RPa25jcTFGMVNxLU15OGlwYXp0bTB2SkxXQ0NDQWdrV0R4dG01TmxZYmxoSXQzQ1NjOE84OFJKdmdnag?oc=5",
-          "time": "2026-10-23T14:44:51Z",
-          "published_date": "2026-10-23T14:44:51Z",
-          "publishedDate": "2026-10-23T14:44:51Z",
+          "id": "b62269a64ee0",
+          "sourceLabel": "https://www.stripes.com/theaters/europe/2026-10-23/starlink-still-limited-ukraine-23238084.html",
+          "sourceName": "https://www.stripes.com/theaters/europe/2026-10-23/starlink-still-limited-ukraine-23238084.html",
+          "sourceType": "news",
+          "title": "Ukraine says Starlink limits still disrupting military operations",
+          "summary": "Ukrainian drone units and defense officials say connections with Starshield, a military-grade service using Starlink’s vast network of satellites, continued to fail throughout most of the country.",
+          "summary_snippet": "Ukrainian drone units and defense officials say connections with Starshield, a military-grade service using Starlink’s vast network of satellites, continued to fail throughout most of the country.",
+          "source": "https://www.stripes.com/theaters/europe/2026-10-23/starlink-still-limited-ukraine-23238084.html",
+          "url": "https://www.stripes.com/theaters/europe/2026-10-23/starlink-still-limited-ukraine-23238084.html",
+          "time": "2026-10-23T15:03:03Z",
+          "published_date": "2026-10-23T15:03:03Z",
+          "publishedDate": "2026-10-23T15:03:03Z",
           "tag": "Breaking",
           "confidence": "DEVELOPING",
           "breaking": true,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "google_news_south_asia_security",
-            "sourceUrl": "https://news.google.com/rss/search?q=India+Pakistan+Afghanistan+Bangladesh+Nepal+Sri+Lanka+conflict+security+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "sourceId": "stars_stripes",
+            "sourceUrl": "https://subscribe.stripes.com/rss/top-news.xml",
             "feedFormat": "rss"
           }
         }
@@ -600,8 +549,8 @@
       "reports": [
         {
           "id": "ddf67150a52c",
-          "sourceLabel": "Google News — Afghanistan Security",
-          "sourceName": "Google News — Afghanistan Security",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPZ3dMX29VUEo3OVNST0Nhb3ByXzh3LVg2QWgtUE9YOElMc00zOFM0WUM0V0tXdTYwZVRIekFuY2EwLWtya2M0cXJwU2lMRERZdDNfZ1dQTmJJbTBsbDFaQ0xKY0dBZFpNX2dXMlF3UldieC1GcENUdXBiR1NURlR0S1FqdXZVTHpWRDZjczV1VHh0eEYwVGZKQW10VkxIUklDb0xTatIBpAFBVV95cUxPVEx1NUw4NEVyM2l3X2dHU1p2Z1E4TmppTHhQOXlWbHR1SHJBTlZZMkxnSVZCY2NqWGVkdzZheUZzOGtoWnl3aFlXenVMb0pNckNMVi1nZkNqSkdVd1Y4aWZBSTV5ZGRuUWM3azdwSGRENXhocjBMc01sejRRWFhrMkdhbkJaSUQ2VzhKYmtYbzBrdG9oSV9oNGQwYXg0Z0duRjVMaA?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPZ3dMX29VUEo3OVNST0Nhb3ByXzh3LVg2QWgtUE9YOElMc00zOFM0WUM0V0tXdTYwZVRIekFuY2EwLWtya2M0cXJwU2lMRERZdDNfZ1dQTmJJbTBsbDFaQ0xKY0dBZFpNX2dXMlF3UldieC1GcENUdXBiR1NURlR0S1FqdXZVTHpWRDZjczV1VHh0eEYwVGZKQW10VkxIUklDb0xTatIBpAFBVV95cUxPVEx1NUw4NEVyM2l3X2dHU1p2Z1E4TmppTHhQOXlWbHR1SHJBTlZZMkxnSVZCY2NqWGVkdzZheUZzOGtoWnl3aFlXenVMb0pNckNMVi1nZkNqSkdVd1Y4aWZBSTV5ZGRuUWM3azdwSGRENXhocjBMc01sejRRWFhrMkdhbkJaSUQ2VzhKYmtYbzBrdG9oSV9oNGQwYXg0Z0duRjVMaA?oc=5",
           "sourceType": "south-asia-conflict",
           "title": "Afghan women could lose one of their last paths to a higher education - DW.com",
           "summary": "Afghan women could lose one of their last paths to a higher education DW.com",
@@ -623,8 +572,8 @@
         },
         {
           "id": "9d7a4f88e1f6",
-          "sourceLabel": "DW World",
-          "sourceName": "DW World",
+          "sourceLabel": "https://www.dw.com/en/afghan-women-could-lose-one-of-their-last-paths-to-a-higher-education/a-79745173?maca=en-rss-en-world-4025-xml-mrss",
+          "sourceName": "https://www.dw.com/en/afghan-women-could-lose-one-of-their-last-paths-to-a-higher-education/a-79745173?maca=en-rss-en-world-4025-xml-mrss",
           "sourceType": "international",
           "title": "Afghan women could lose one of their last paths to a higher education",
           "summary": "The US has defunded one of the last universities giving Afghan women the chance to receive an education after the Taliban takeover in 2021. DW spoke with a student who says she's lost hope of ever earning a degree.",
@@ -670,8 +619,8 @@
       "reports": [
         {
           "id": "274b664a49a6",
-          "sourceLabel": "NPR News",
-          "sourceName": "NPR News",
+          "sourceLabel": "https://www.npr.org/2026/10/23/g-s1-149515/africa-ebola-outbreak",
+          "sourceName": "https://www.npr.org/2026/10/23/g-s1-149515/africa-ebola-outbreak",
           "sourceType": "us-politics",
           "title": "Authorities investigating whether first Kenya and Nigeria Ebola cases crossed paths",
           "summary": "Nigeria this week recorded its first case of Ebola in the current outbreak, which has spread from the epicenter in Congo to several other African countries.",
@@ -693,8 +642,8 @@
         },
         {
           "id": "13942fa3334a",
-          "sourceLabel": "DW World",
-          "sourceName": "DW World",
+          "sourceLabel": "https://www.dw.com/en/uganda-says-it-has-no-active-ebola-cases-but-infections-in-kenya-and-nigeria-are-prompting-fresh-scrutiny/a-79741580?maca=en-rss-en-world-4025-xml-mrss",
+          "sourceName": "https://www.dw.com/en/uganda-says-it-has-no-active-ebola-cases-but-infections-in-kenya-and-nigeria-are-prompting-fresh-scrutiny/a-79741580?maca=en-rss-en-world-4025-xml-mrss",
           "sourceType": "international",
           "title": "Uganda says it has no active Ebola cases, but infections in Kenya and Nigeria are prompting fresh scrutiny",
           "summary": "Health officials are investigating whether Ebola patients in Kenya and Nigeria crossed paths at Uganda's main airport as conflicting accounts cloud the source of one infection.",
@@ -711,144 +660,6 @@
           "credit": {
             "sourceId": "dw_world",
             "sourceUrl": "https://rss.dw.com/xml/rss-en-world",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "af76a71cb8d1b4ef",
-      "title": "US-Iran war, then and now: How the landscape has changed since February - Al Jazeera",
-      "category": "general",
-      "confidence": "moderate",
-      "reportCount": 2,
-      "sourceCount": 2,
-      "sources": [
-        "news.google.com",
-        "aljazeera.com"
-      ],
-      "anchors": [
-        "iran"
-      ],
-      "firstSeen": "2026-10-23T11:43:53Z",
-      "lastSeen": "2026-10-23T11:48:22Z",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMisAFBVV95cUxNSU5RUE1mMXBUSlFKam8zamJLelROVFZybXVxNkZKZTBLM2swWEZxZmJoUVJYcmhEUEVUSzZ5RW82Y1VnOTZzdzN2NzNacE1ucG5waUNXRS1mZHFVV2FTZE5zeDNobXQxNU0zLWNJd0cxSmJoYnBjNkRzb0xPZ3p5YUwyblZRTlpwUDRsLWtfOXBwbV80ZEUzNmY1eXZaSUtlQXVoaHpUcFlubHlvQUQ2YdIBtgFBVV95cUxQLUs4eDdhSGt3aUV4SUJRSG9PTlhTaDJmMDFoU281VmphR01WVVE2MDdTWld1R2VZZ09EbnM3S0JwQXlwenNwOUp5Y2hkb1pXMkk3S2dsRFRCVGRrcGJJalRKa1R4RmxYSXpwZlIxSnU2NDZKYXMzdzVVTDVnUGlGUXlrTzNTam9GYnVxNFQ2eE9sT1FkQnZPU0EtTVZkb2lqcjZ3ZWtXYjVOUUk2aVZYcXZZT0lxUQ?oc=5",
-        "https://www.aljazeera.com/news/2026/10/23/us-iran-war-then-and-now-how-the-landscape-has-changed-since-february?traffic_source=rss"
-      ],
-      "reports": [
-        {
-          "id": "db7eab9b079e",
-          "sourceLabel": "Google News — Global Conflict",
-          "sourceName": "Google News — Global Conflict",
-          "sourceType": "live",
-          "title": "US-Iran war, then and now: How the landscape has changed since February - Al Jazeera",
-          "summary": "US-Iran war, then and now: How the landscape has changed since February Al Jazeera",
-          "summary_snippet": "US-Iran war, then and now: How the landscape has changed since February Al Jazeera",
-          "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNSU5RUE1mMXBUSlFKam8zamJLelROVFZybXVxNkZKZTBLM2swWEZxZmJoUVJYcmhEUEVUSzZ5RW82Y1VnOTZzdzN2NzNacE1ucG5waUNXRS1mZHFVV2FTZE5zeDNobXQxNU0zLWNJd0cxSmJoYnBjNkRzb0xPZ3p5YUwyblZRTlpwUDRsLWtfOXBwbV80ZEUzNmY1eXZaSUtlQXVoaHpUcFlubHlvQUQ2YdIBtgFBVV95cUxQLUs4eDdhSGt3aUV4SUJRSG9PTlhTaDJmMDFoU281VmphR01WVVE2MDdTWld1R2VZZ09EbnM3S0JwQXlwenNwOUp5Y2hkb1pXMkk3S2dsRFRCVGRrcGJJalRKa1R4RmxYSXpwZlIxSnU2NDZKYXMzdzVVTDVnUGlGUXlrTzNTam9GYnVxNFQ2eE9sT1FkQnZPU0EtTVZkb2lqcjZ3ZWtXYjVOUUk2aVZYcXZZT0lxUQ?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNSU5RUE1mMXBUSlFKam8zamJLelROVFZybXVxNkZKZTBLM2swWEZxZmJoUVJYcmhEUEVUSzZ5RW82Y1VnOTZzdzN2NzNacE1ucG5waUNXRS1mZHFVV2FTZE5zeDNobXQxNU0zLWNJd0cxSmJoYnBjNkRzb0xPZ3p5YUwyblZRTlpwUDRsLWtfOXBwbV80ZEUzNmY1eXZaSUtlQXVoaHpUcFlubHlvQUQ2YdIBtgFBVV95cUxQLUs4eDdhSGt3aUV4SUJRSG9PTlhTaDJmMDFoU281VmphR01WVVE2MDdTWld1R2VZZ09EbnM3S0JwQXlwenNwOUp5Y2hkb1pXMkk3S2dsRFRCVGRrcGJJalRKa1R4RmxYSXpwZlIxSnU2NDZKYXMzdzVVTDVnUGlGUXlrTzNTam9GYnVxNFQ2eE9sT1FkQnZPU0EtTVZkb2lqcjZ3ZWtXYjVOUUk2aVZYcXZZT0lxUQ?oc=5",
-          "time": "2026-10-23T11:48:22Z",
-          "published_date": "2026-10-23T11:48:22Z",
-          "publishedDate": "2026-10-23T11:48:22Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_global_conflict",
-            "sourceUrl": "https://news.google.com/rss/search?q=war+conflict+military+sanctions+crisis+attack+airstrike+missile+drone+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "daee4efc2ca5",
-          "sourceLabel": "https://www.aljazeera.com/news/2026/10/23/us-iran-war-then-and-now-how-the-landscape-has-changed-since-february?traffic_source=rss",
-          "sourceName": "https://www.aljazeera.com/news/2026/10/23/us-iran-war-then-and-now-how-the-landscape-has-changed-since-february?traffic_source=rss",
-          "sourceType": "international",
-          "title": "US-Iran war, then and now: How the landscape has changed since February",
-          "summary": "The positions of Washington and Tehran have changed dramatically since US-Israeli strikes began the war, analysts say.",
-          "summary_snippet": "The positions of Washington and Tehran have changed dramatically since US-Israeli strikes began the war, analysts say.",
-          "source": "https://www.aljazeera.com/news/2026/10/23/us-iran-war-then-and-now-how-the-landscape-has-changed-since-february?traffic_source=rss",
-          "url": "https://www.aljazeera.com/news/2026/10/23/us-iran-war-then-and-now-how-the-landscape-has-changed-since-february?traffic_source=rss",
-          "time": "2026-10-23T11:43:53Z",
-          "published_date": "2026-10-23T11:43:53Z",
-          "publishedDate": "2026-10-23T11:43:53Z",
-          "tag": "Breaking",
-          "confidence": "DEVELOPING",
-          "breaking": true,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "al_jazeera",
-            "sourceUrl": "https://www.aljazeera.com/xml/rss/all.xml",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "e3d4e66ae4672803",
-      "title": "Hospitals deliberately targeted by Sudan's RSF fighters, BBC finds",
-      "category": "general",
-      "confidence": "moderate",
-      "reportCount": 2,
-      "sourceCount": 2,
-      "sources": [
-        "bbc.co.uk",
-        "news.google.com"
-      ],
-      "anchors": [
-        "sudan"
-      ],
-      "firstSeen": "2026-10-23T10:23:07Z",
-      "lastSeen": "2026-10-23T10:23:07Z",
-      "urls": [
-        "https://www.bbc.co.uk/news/articles/c54g1kxw4nvvo?at_medium=RSS&at_campaign=rss",
-        "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9qNUhwT083MHNvS2ZOVG55OXEyNEpUVXZRMFh6X0Vhcmd0UTlHN29hb2tFelpjdGhRN1JXdVdWb2t6aTRqWmxBRnNXNHAyVGphMmdVSkNwNmdmWjg?oc=5"
-      ],
-      "reports": [
-        {
-          "id": "550a37e4dbfb",
-          "sourceLabel": "https://www.bbc.co.uk/news/articles/c54g1kxw4nvvo?at_medium=RSS&at_campaign=rss",
-          "sourceName": "https://www.bbc.co.uk/news/articles/c54g1kxw4nvvo?at_medium=RSS&at_campaign=rss",
-          "sourceType": "international",
-          "title": "Hospitals deliberately targeted by Sudan's RSF fighters, BBC finds",
-          "summary": "The UN human rights chief Volker Türk says the multiple attacks may amount to war crimes.",
-          "summary_snippet": "The UN human rights chief Volker Türk says the multiple attacks may amount to war crimes.",
-          "source": "https://www.bbc.co.uk/news/articles/c54g1kxw4nvvo?at_medium=RSS&at_campaign=rss",
-          "url": "https://www.bbc.co.uk/news/articles/c54g1kxw4nvvo?at_medium=RSS&at_campaign=rss",
-          "time": "2026-10-23T10:23:07Z",
-          "published_date": "2026-10-23T10:23:07Z",
-          "publishedDate": "2026-10-23T10:23:07Z",
-          "tag": "Breaking",
-          "confidence": "DEVELOPING",
-          "breaking": true,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "bbc_world",
-            "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "b01fe1dbdbab",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9qNUhwT083MHNvS2ZOVG55OXEyNEpUVXZRMFh6X0Vhcmd0UTlHN29hb2tFelpjdGhRN1JXdVdWb2t6aTRqWmxBRnNXNHAyVGphMmdVSkNwNmdmWjg?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9qNUhwT083MHNvS2ZOVG55OXEyNEpUVXZRMFh6X0Vhcmd0UTlHN29hb2tFelpjdGhRN1JXdVdWb2t6aTRqWmxBRnNXNHAyVGphMmdVSkNwNmdmWjg?oc=5",
-          "sourceType": "africa-conflict",
-          "title": "Sudan hospitals deliberately targeted in el-Fasher by RSF fighters, BBC finds - BBC",
-          "summary": "Sudan hospitals deliberately targeted in el-Fasher by RSF fighters, BBC finds BBC",
-          "summary_snippet": "Sudan hospitals deliberately targeted in el-Fasher by RSF fighters, BBC finds BBC",
-          "source": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9qNUhwT083MHNvS2ZOVG55OXEyNEpUVXZRMFh6X0Vhcmd0UTlHN29hb2tFelpjdGhRN1JXdVdWb2t6aTRqWmxBRnNXNHAyVGphMmdVSkNwNmdmWjg?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9qNUhwT083MHNvS2ZOVG55OXEyNEpUVXZRMFh6X0Vhcmd0UTlHN29hb2tFelpjdGhRN1JXdVdWb2t6aTRqWmxBRnNXNHAyVGphMmdVSkNwNmdmWjg?oc=5",
-          "time": "2026-10-23T10:23:07Z",
-          "published_date": "2026-10-23T10:23:07Z",
-          "publishedDate": "2026-10-23T10:23:07Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_sudan_conflict",
-            "sourceUrl": "https://news.google.com/rss/search?q=Sudan+SAF+RSF+Darfur+conflict+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
         }
@@ -1012,11 +823,11 @@
       "anchors": [
         "nato"
       ],
-      "firstSeen": "Fri, 03 Feb 2023 08:00:00 GMT",
+      "firstSeen": "Mon, 19 Jul 2021 07:00:00 GMT",
       "lastSeen": "Tue, 29 Nov 2022 08:00:00 GMT",
       "urls": [
         "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQVFh4ZkYwdENWVEhrOUpUSGtxVUZZV1RvLU05UUhGYVVwTV9PSWlXSFE4MFFmbjZyYUFlZVVxMjBCODFMeWk0VHRVeHVSV3o2RDg2MUUwdFZzb28yRGN0bzVKTklvUmlDVWUtMHpLRjNnZHdHTW56YXJER2VoSlFaVlVDX1FRa3ZIclJDdzl5NDdfZ0d1UXBhaF93MUx0MFdHczZRY1BndzFBX1ZSdWlCUGVPdFRNUFk1T2VzU2F2N3Y?oc=5",
-        "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOT3hQZ1B0TEVRdWh4ZWk3amc0anpQNkc5RURXejRFM3pzN0kwRGNFOGNIYTE3SDJ5N1RwR3VFQTEtOGNpX2dEcWVDTkgtdTZVbTR4TkdkSTIyb0pVc3g1SVVPOWhfc3BGaXJkcy1OdXFfYW5WRGhad0x3VkdtSkxHX3dHMWhtMVBBRzRoUnZKZTlvejNRbWdQZjBKeUtpQzVGRHNqNm9RM2h4LVQzekRzZWRQMWYtNS1EOEszOWl5TlB2X0NJZ2JoOUJ4cUxuNkpEZTRrdnUwYWdSSV94Qy1kSXpvVndxUQ?oc=5"
+        "https://news.google.com/rss/articles/CBMingFBVV95cUxOZkxLV1ZvZDlhdVA4Q1VxajFrU3NObTF2V0VOVFEycnVnaFU3Vzk4REhHQk5ac2dqLWdKSWlaUFRiR3NYazdmczk3Qlk2SEpGUU1VVWdBYjhPMml4eGRfckNWVlJvSlZqU1ZpLXpfX1YtOUpQUS1XTkNQTG9hU3BuTUFCbElfWTFfbjFPcHMwMWs5OWJJZWFCSGllVmhFUQ?oc=5"
       ],
       "reports": [
         {
@@ -1024,54 +835,6 @@
           "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQVFh4ZkYwdENWVEhrOUpUSGtxVUZZV1RvLU05UUhGYVVwTV9PSWlXSFE4MFFmbjZyYUFlZVVxMjBCODFMeWk0VHRVeHVSV3o2RDg2MUUwdFZzb28yRGN0bzVKTklvUmlDVWUtMHpLRjNnZHdHTW56YXJER2VoSlFaVlVDX1FRa3ZIclJDdzl5NDdfZ0d1UXBhaF93MUx0MFdHczZRY1BndzFBX1ZSdWlCUGVPdFRNUFk1T2VzU2F2N3Y?oc=5",
           "published_date": "Tue, 29 Nov 2022 08:00:00 GMT",
           "time": "Tue, 29 Nov 2022 08:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "summary": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "source": "North Atlantic Treaty Organization | NATO",
-          "sourceLabel": "North Atlantic Treaty Organization | NATO",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NATO",
-          "credit_metadata": "Google News RSS fallback"
-        },
-        {
-          "title": "Statement by the North Atlantic Council on the New START Treaty - North Atlantic Treaty Organization | NATO",
-          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOT3hQZ1B0TEVRdWh4ZWk3amc0anpQNkc5RURXejRFM3pzN0kwRGNFOGNIYTE3SDJ5N1RwR3VFQTEtOGNpX2dEcWVDTkgtdTZVbTR4TkdkSTIyb0pVc3g1SVVPOWhfc3BGaXJkcy1OdXFfYW5WRGhad0x3VkdtSkxHX3dHMWhtMVBBRzRoUnZKZTlvejNRbWdQZjBKeUtpQzVGRHNqNm9RM2h4LVQzekRzZWRQMWYtNS1EOEszOWl5TlB2X0NJZ2JoOUJ4cUxuNkpEZTRrdnUwYWdSSV94Qy1kSXpvVndxUQ?oc=5",
-          "published_date": "Fri, 03 Feb 2023 08:00:00 GMT",
-          "time": "Fri, 03 Feb 2023 08:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "summary": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "source": "North Atlantic Treaty Organization | NATO",
-          "sourceLabel": "North Atlantic Treaty Organization | NATO",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NATO",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "8e120b7b4a03c0ab",
-      "title": "Statement by NATO Heads of State and Government - North Atlantic Treaty Organization | NATO",
-      "category": "diplomatic",
-      "confidence": "low",
-      "reportCount": 2,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [
-        "nato"
-      ],
-      "firstSeen": "Mon, 19 Jul 2021 07:00:00 GMT",
-      "lastSeen": "Thu, 24 Mar 2022 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPSnBuTTFkSmNsd1RyQUQ2NGFka0d6aUxnSWZnYlhYaHNFbC0ydlJlOW94SjIxVmh0emFfZDNPdUMzb2xpeUhuR0NUOVEzdmZkSVRTSnpfWTVFZG5QTjR2TlZiZXF0TEp4cHRRU1VtRjFzWXVmaXQ1b3NMdVBMLTBwejJXSnVtRVlfVTFOaW1tMHhXY1RtU0F3QV9mdVluYUgzUUNYdFlrYXFLM1g3VnFsSHRSUEU0blg4WDVrb1dXTWNMSG0wMHVmWmd3blRFTU5M?oc=5",
-        "https://news.google.com/rss/articles/CBMingFBVV95cUxOZkxLV1ZvZDlhdVA4Q1VxajFrU3NObTF2V0VOVFEycnVnaFU3Vzk4REhHQk5ac2dqLWdKSWlaUFRiR3NYazdmczk3Qlk2SEpGUU1VVWdBYjhPMml4eGRfckNWVlJvSlZqU1ZpLXpfX1YtOUpQUS1XTkNQTG9hU3BuTUFCbElfWTFfbjFPcHMwMWs5OWJJZWFCSGllVmhFUQ?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Statement by NATO Heads of State and Government - North Atlantic Treaty Organization | NATO",
-          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPSnBuTTFkSmNsd1RyQUQ2NGFka0d6aUxnSWZnYlhYaHNFbC0ydlJlOW94SjIxVmh0emFfZDNPdUMzb2xpeUhuR0NUOVEzdmZkSVRTSnpfWTVFZG5QTjR2TlZiZXF0TEp4cHRRU1VtRjFzWXVmaXQ1b3NMdVBMLTBwejJXSnVtRVlfVTFOaW1tMHhXY1RtU0F3QV9mdVluYUgzUUNYdFlrYXFLM1g3VnFsSHRSUEU0blg4WDVrb1dXTWNMSG0wMHVmWmd3blRFTU5M?oc=5",
-          "published_date": "Thu, 24 Mar 2022 07:00:00 GMT",
-          "time": "Thu, 24 Mar 2022 07:00:00 GMT",
           "summary_snippet": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
           "summary": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
           "source": "North Atlantic Treaty Organization | NATO",
@@ -1144,8 +907,410 @@
       ]
     },
     {
-      "id": "6b874cdfad63244a",
-      "title": "UK tells public to keep three days’ emergency supplies at home - Philenews",
+      "id": "14561a92d760b826",
+      "title": "Green forest fire notification in South Sudan",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 2,
+      "sourceCount": 1,
+      "sources": [
+        "gdacs.org"
+      ],
+      "anchors": [
+        "sudan"
+      ],
+      "firstSeen": "2026-10-23T19:11:05Z",
+      "lastSeen": "2026-10-23T19:12:10Z",
+      "urls": [
+        "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033113",
+        "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033111"
+      ],
+      "reports": [
+        {
+          "id": "25462d162a73",
+          "sourceLabel": "GDACS Global Disaster Alerts",
+          "sourceName": "GDACS Global Disaster Alerts",
+          "sourceType": "climate-hazard",
+          "title": "Green forest fire notification in South Sudan",
+          "summary": "On 19/10/2026, a forest fire started in South Sudan, until 23/10/2026.",
+          "summary_snippet": "On 19/10/2026, a forest fire started in South Sudan, until 23/10/2026.",
+          "source": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033113",
+          "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033113",
+          "time": "2026-10-23T19:12:10Z",
+          "published_date": "2026-10-23T19:12:10Z",
+          "publishedDate": "2026-10-23T19:12:10Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "gdacs_global_disaster_alerts",
+            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "65d40a98cbec",
+          "sourceLabel": "GDACS Global Disaster Alerts",
+          "sourceName": "GDACS Global Disaster Alerts",
+          "sourceType": "climate-hazard",
+          "title": "Green forest fire notification in South Sudan",
+          "summary": "On 19/10/2026, a forest fire started in South Sudan, until 23/10/2026.",
+          "summary_snippet": "On 19/10/2026, a forest fire started in South Sudan, until 23/10/2026.",
+          "source": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033111",
+          "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033111",
+          "time": "2026-10-23T19:11:05Z",
+          "published_date": "2026-10-23T19:11:05Z",
+          "publishedDate": "2026-10-23T19:11:05Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "gdacs_global_disaster_alerts",
+            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cd02c5e532c38eed",
+      "title": "Green forest fire notification in Mozambique",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 2,
+      "sourceCount": 1,
+      "sources": [
+        "gdacs.org"
+      ],
+      "anchors": [],
+      "firstSeen": "2026-10-23T15:13:22Z",
+      "lastSeen": "2026-10-23T19:11:55Z",
+      "urls": [
+        "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033112",
+        "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033100"
+      ],
+      "reports": [
+        {
+          "id": "de7b4a5c04ae",
+          "sourceLabel": "GDACS Global Disaster Alerts",
+          "sourceName": "GDACS Global Disaster Alerts",
+          "sourceType": "climate-hazard",
+          "title": "Green forest fire notification in Mozambique",
+          "summary": "On 19/10/2026, a forest fire started in Mozambique, until 23/10/2026.",
+          "summary_snippet": "On 19/10/2026, a forest fire started in Mozambique, until 23/10/2026.",
+          "source": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033112",
+          "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033112",
+          "time": "2026-10-23T19:11:55Z",
+          "published_date": "2026-10-23T19:11:55Z",
+          "publishedDate": "2026-10-23T19:11:55Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "gdacs_global_disaster_alerts",
+            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "7b457acd711a",
+          "sourceLabel": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033100",
+          "sourceName": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033100",
+          "sourceType": "climate-hazard",
+          "title": "Green forest fire notification in Mozambique",
+          "summary": "On 18/10/2026, a forest fire started in Mozambique, until 23/10/2026.",
+          "summary_snippet": "On 18/10/2026, a forest fire started in Mozambique, until 23/10/2026.",
+          "source": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033100",
+          "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033100",
+          "time": "2026-10-23T15:13:22Z",
+          "published_date": "2026-10-23T15:13:22Z",
+          "publishedDate": "2026-10-23T15:13:22Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "gdacs_global_disaster_alerts",
+            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
+      "id": "442ed43950f76d51",
+      "title": "Green forest fire notification in Zimbabwe",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 2,
+      "sourceCount": 1,
+      "sources": [
+        "gdacs.org"
+      ],
+      "anchors": [],
+      "firstSeen": "2026-10-23T19:02:13Z",
+      "lastSeen": "2026-10-23T19:04:04Z",
+      "urls": [
+        "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033106",
+        "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033103"
+      ],
+      "reports": [
+        {
+          "id": "0e7c5bd8d801",
+          "sourceLabel": "GDACS Global Disaster Alerts",
+          "sourceName": "GDACS Global Disaster Alerts",
+          "sourceType": "climate-hazard",
+          "title": "Green forest fire notification in Zimbabwe",
+          "summary": "On 21/10/2026, a forest fire started in Zimbabwe, until 23/10/2026.",
+          "summary_snippet": "On 21/10/2026, a forest fire started in Zimbabwe, until 23/10/2026.",
+          "source": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033106",
+          "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033106",
+          "time": "2026-10-23T19:04:04Z",
+          "published_date": "2026-10-23T19:04:04Z",
+          "publishedDate": "2026-10-23T19:04:04Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "gdacs_global_disaster_alerts",
+            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "bd0da64268dc",
+          "sourceLabel": "GDACS Global Disaster Alerts",
+          "sourceName": "GDACS Global Disaster Alerts",
+          "sourceType": "climate-hazard",
+          "title": "Green forest fire notification in Botswana, Zimbabwe",
+          "summary": "On 22/10/2026, a forest fire started in Botswana, Zimbabwe, until 23/10/2026.",
+          "summary_snippet": "On 22/10/2026, a forest fire started in Botswana, Zimbabwe, until 23/10/2026.",
+          "source": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033103",
+          "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033103",
+          "time": "2026-10-23T19:02:13Z",
+          "published_date": "2026-10-23T19:02:13Z",
+          "publishedDate": "2026-10-23T19:02:13Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "gdacs_global_disaster_alerts",
+            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
+      "id": "087d93199a1a6bbd",
+      "title": "M 4.5 - 233 km ENE of Nagqu, China",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 2,
+      "sourceCount": 1,
+      "sources": [
+        "earthquake.usgs.gov"
+      ],
+      "anchors": [
+        "china"
+      ],
+      "firstSeen": "2026-10-23T18:46:05.040000Z",
+      "lastSeen": "2026-10-23T18:54:54.040000Z",
+      "urls": [
+        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4dk",
+        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4df"
+      ],
+      "reports": [
+        {
+          "id": "577149043e1b",
+          "sourceLabel": "USGS M4.5+ Earthquakes — Past Day",
+          "sourceName": "USGS M4.5+ Earthquakes — Past Day",
+          "sourceType": "climate-hazard",
+          "title": "M 4.5 - 233 km ENE of Nagqu, China",
+          "summary": "Time 2026-10-23 14:41:16 UTC 2026-10-23 14:41:16 UTC at epicenter Location 32.564°N 94.175°E Depth 10.00 km (6.21 mi)",
+          "summary_snippet": "Time 2026-10-23 14:41:16 UTC 2026-10-23 14:41:16 UTC at epicenter Location 32.564°N 94.175°E Depth 10.00 km (6.21 mi)",
+          "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4dk",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4dk",
+          "time": "2026-10-23T18:54:54.040000Z",
+          "published_date": "2026-10-23T18:54:54.040000Z",
+          "publishedDate": "2026-10-23T18:54:54.040000Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "usgs_m4_5_earthquakes_past_day",
+            "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
+            "feedFormat": "atom"
+          }
+        },
+        {
+          "id": "299c5ccfdd31",
+          "sourceLabel": "USGS M4.5+ Earthquakes — Past Day",
+          "sourceName": "USGS M4.5+ Earthquakes — Past Day",
+          "sourceType": "climate-hazard",
+          "title": "M 4.7 - 215 km NE of Nagqu, China",
+          "summary": "Time 2026-10-23 14:14:04 UTC 2026-10-23 14:14:04 UTC at epicenter Location 32.572°N 93.944°E Depth 10.00 km (6.21 mi)",
+          "summary_snippet": "Time 2026-10-23 14:14:04 UTC 2026-10-23 14:14:04 UTC at epicenter Location 32.572°N 93.944°E Depth 10.00 km (6.21 mi)",
+          "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4df",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4df",
+          "time": "2026-10-23T18:46:05.040000Z",
+          "published_date": "2026-10-23T18:46:05.040000Z",
+          "publishedDate": "2026-10-23T18:46:05.040000Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "usgs_m4_5_earthquakes_past_day",
+            "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
+            "feedFormat": "atom"
+          }
+        }
+      ]
+    },
+    {
+      "id": "d9dd912e4882caf1",
+      "title": "Israel locks down occupied West Bank after Hebron shooting",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 2,
+      "sourceCount": 1,
+      "sources": [
+        "aljazeera.com"
+      ],
+      "anchors": [
+        "israel"
+      ],
+      "firstSeen": "2026-10-23T17:30:51Z",
+      "lastSeen": "2026-10-23T18:38:26Z",
+      "urls": [
+        "https://www.aljazeera.com/video/newsfeed/2026/10/23/israel-locks-down-occupied-west-bank-after-hebron-shooting?traffic_source=rss",
+        "https://www.aljazeera.com/video/newsfeed/2026/10/23/jerusalem-daily-netanyahu-orders-a-full-lockdown-of-the-occupied-west-ba?traffic_source=rss"
+      ],
+      "reports": [
+        {
+          "id": "b7a5b65204a1",
+          "sourceLabel": "Al Jazeera",
+          "sourceName": "Al Jazeera",
+          "sourceType": "international",
+          "title": "Israel locks down occupied West Bank after Hebron shooting",
+          "summary": "Israel has imposed a lockdown across the occupied West Bank after a shooting near Hebron killed two Israeli soldiers.",
+          "summary_snippet": "Israel has imposed a lockdown across the occupied West Bank after a shooting near Hebron killed two Israeli soldiers.",
+          "source": "https://www.aljazeera.com/video/newsfeed/2026/10/23/israel-locks-down-occupied-west-bank-after-hebron-shooting?traffic_source=rss",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/23/israel-locks-down-occupied-west-bank-after-hebron-shooting?traffic_source=rss",
+          "time": "2026-10-23T18:38:26Z",
+          "published_date": "2026-10-23T18:38:26Z",
+          "publishedDate": "2026-10-23T18:38:26Z",
+          "tag": "Breaking",
+          "confidence": "DEVELOPING",
+          "breaking": true,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "al_jazeera",
+            "sourceUrl": "https://www.aljazeera.com/xml/rss/all.xml",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "56f7f0de4ff5",
+          "sourceLabel": "Al Jazeera",
+          "sourceName": "Al Jazeera",
+          "sourceType": "international",
+          "title": "Jerusalem Daily: Israel to ‘lock down’ occupied West Bank",
+          "summary": "Israeli Prime Minister Benjamin Netanyahu orders a “full lockdown” of the occupied West Bank following a shooting.",
+          "summary_snippet": "Israeli Prime Minister Benjamin Netanyahu orders a “full lockdown” of the occupied West Bank following a shooting.",
+          "source": "https://www.aljazeera.com/video/newsfeed/2026/10/23/jerusalem-daily-netanyahu-orders-a-full-lockdown-of-the-occupied-west-ba?traffic_source=rss",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/10/23/jerusalem-daily-netanyahu-orders-a-full-lockdown-of-the-occupied-west-ba?traffic_source=rss",
+          "time": "2026-10-23T17:30:51Z",
+          "published_date": "2026-10-23T17:30:51Z",
+          "publishedDate": "2026-10-23T17:30:51Z",
+          "tag": "Breaking",
+          "confidence": "DEVELOPING",
+          "breaking": true,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "al_jazeera",
+            "sourceUrl": "https://www.aljazeera.com/xml/rss/all.xml",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
+      "id": "0e9b365bc7b2851d",
+      "title": "M 4.7 - 52 km WNW of Malfa, Italy",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 2,
+      "sourceCount": 1,
+      "sources": [
+        "earthquake.usgs.gov"
+      ],
+      "anchors": [],
+      "firstSeen": "2026-10-23T14:22:44.737000Z",
+      "lastSeen": "2026-10-23T18:11:11.040000Z",
+      "urls": [
+        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4dx",
+        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4dc"
+      ],
+      "reports": [
+        {
+          "id": "4f2fa08d339f",
+          "sourceLabel": "USGS M4.5+ Earthquakes — Past Day",
+          "sourceName": "USGS M4.5+ Earthquakes — Past Day",
+          "sourceType": "climate-hazard",
+          "title": "M 4.7 - 52 km WNW of Malfa, Italy",
+          "summary": "Time 2026-10-23 15:32:13 UTC 2026-10-23 15:32:13 UTC at epicenter Location 38.814°N 14.307°E Depth 10.00 km (6.21 mi)",
+          "summary_snippet": "Time 2026-10-23 15:32:13 UTC 2026-10-23 15:32:13 UTC at epicenter Location 38.814°N 14.307°E Depth 10.00 km (6.21 mi)",
+          "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4dx",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4dx",
+          "time": "2026-10-23T18:11:11.040000Z",
+          "published_date": "2026-10-23T18:11:11.040000Z",
+          "publishedDate": "2026-10-23T18:11:11.040000Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "usgs_m4_5_earthquakes_past_day",
+            "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
+            "feedFormat": "atom"
+          }
+        },
+        {
+          "id": "85cc62e9892a",
+          "sourceLabel": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4dc",
+          "sourceName": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4dc",
+          "sourceType": "climate-hazard",
+          "title": "M 5.2 - 50 km WNW of Malfa, Italy",
+          "summary": "DYFI? - III Time 2026-10-23 13:55:36 UTC 2026-10-23 13:55:36 UTC at epicenter Location 38.779°N 14.315°E Depth 10.00 km (6.21 mi)",
+          "summary_snippet": "DYFI? - III Time 2026-10-23 13:55:36 UTC 2026-10-23 13:55:36 UTC at epicenter Location 38.779°N 14.315°E Depth 10.00 km (6.21 mi)",
+          "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4dc",
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4dc",
+          "time": "2026-10-23T14:22:44.737000Z",
+          "published_date": "2026-10-23T14:22:44.737000Z",
+          "publishedDate": "2026-10-23T14:22:44.737000Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "usgs_m4_5_earthquakes_past_day",
+            "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
+            "feedFormat": "atom"
+          }
+        }
+      ]
+    },
+    {
+      "id": "40f5b2f58ea3e691",
+      "title": "UK tells public to keep three days' emergency supplies at home - Reuters",
       "category": "general",
       "confidence": "low",
       "reportCount": 2,
@@ -1156,17 +1321,40 @@
       "anchors": [
         "uk"
       ],
-      "firstSeen": "2026-10-23T11:34:30Z",
-      "lastSeen": "2026-10-23T12:39:16Z",
+      "firstSeen": "2026-10-23T12:39:16Z",
+      "lastSeen": "2026-10-23T15:48:51Z",
       "urls": [
-        "https://news.google.com/rss/articles/CBMiowFBVV95cUxPZHJndzRMek1ZcGxndUdKR05wbVdFWmJ3dFUxSnlab3g2eWZMZEI2Y3NsNDRyckRzYVEyR251RXBraG1QczNpZFBLTFZKcWczaFhQdksyanFPRTdxeEkweVlnV2VHaEhNUEh5bEs1VkZfb0k0SnB2MENXUS1YeEFzV0JTSWdsbU1Udmt5YV9pV1FvMlZKdlQ1cWE2VW4xRk5vN3pN?oc=5",
-        "https://news.google.com/rss/articles/CBMivAFBVV95cUxPS0gtUzZhOHh0dW1GVUJxVzRjWlBacVJfa1RQUTZnOGlCN3F5dm9FdkR1OC1ZS2JrUVM4bHdzYzJzNWRreEV1ZEhyN2laclA3cjhuSE9KWGNNMkc1LXo2MzBJbEc5VkUwMHRLbzRDaEFlVnR4MHRXSDc5czNWR2NYT0U1REQ1ODRwdTRHeER1cVQxbVVsV2gtNTNtbXMxUzd6V3Z3bTNfQkZhd3MwUmJMdXp0SFVmOXZ4QUJsdNIBrwFBVV95cUxOZ3NvSTAzcDd4SVlXZnN2ejB2TXBhTnVLcTdSUFVlX1I2Z0dGeGdpbUp5VXRIci1yMV8welJrQTNsY0ZpeEFiX21FdUlacloxelVSWnVDdXBZQUdrMUhfWU5nLVp0MFJ1TkhyWTJmZ2w4SkxBVnRfZS1VMV8wc1QzUk8yM2FsbGY2R0Q2RlFkX2xBa3E3Yzd4RTkydklWc1FVc2pjWVhvZFBhMVRnVHFF?oc=5"
+        "https://news.google.com/rss/articles/CBMiugFBVV95cUxOVmRBVlhXaFdmTFBac29hb2o0NWNXRlJsYWRNYUJKeWtPLWN1c3FqcVh6RWhsemJPeFFzZThhM0dUWnNRTVFoWlNxemgtcGVfTnNBYy1vNlF1aEc0QU44Zy1KdVhiNGstRFFOU0JqVk1XMzFrQ1RTcUJvNmcwYVo5RUI1bkZBTFFDUERMYlRLdXh0VFU1Z0p0UlRySjk2QkxhX2Mya3NPaEw5TFR2b0o0T0VpWlRJRjJZTUE?oc=5",
+        "https://news.google.com/rss/articles/CBMiowFBVV95cUxPZHJndzRMek1ZcGxndUdKR05wbVdFWmJ3dFUxSnlab3g2eWZMZEI2Y3NsNDRyckRzYVEyR251RXBraG1QczNpZFBLTFZKcWczaFhQdksyanFPRTdxeEkweVlnV2VHaEhNUEh5bEs1VkZfb0k0SnB2MENXUS1YeEFzV0JTSWdsbU1Udmt5YV9pV1FvMlZKdlQ1cWE2VW4xRk5vN3pN?oc=5"
       ],
       "reports": [
         {
-          "id": "c3d86eb15b40",
+          "id": "9cb9bf1c8656",
           "sourceLabel": "Google News — Climate Security",
           "sourceName": "Google News — Climate Security",
+          "sourceType": "climate-hazard",
+          "title": "UK tells public to keep three days' emergency supplies at home - Reuters",
+          "summary": "UK tells public to keep three days' emergency supplies at home Reuters",
+          "summary_snippet": "UK tells public to keep three days' emergency supplies at home Reuters",
+          "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOVmRBVlhXaFdmTFBac29hb2o0NWNXRlJsYWRNYUJKeWtPLWN1c3FqcVh6RWhsemJPeFFzZThhM0dUWnNRTVFoWlNxemgtcGVfTnNBYy1vNlF1aEc0QU44Zy1KdVhiNGstRFFOU0JqVk1XMzFrQ1RTcUJvNmcwYVo5RUI1bkZBTFFDUERMYlRLdXh0VFU1Z0p0UlRySjk2QkxhX2Mya3NPaEw5TFR2b0o0T0VpWlRJRjJZTUE?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOVmRBVlhXaFdmTFBac29hb2o0NWNXRlJsYWRNYUJKeWtPLWN1c3FqcVh6RWhsemJPeFFzZThhM0dUWnNRTVFoWlNxemgtcGVfTnNBYy1vNlF1aEc0QU44Zy1KdVhiNGstRFFOU0JqVk1XMzFrQ1RTcUJvNmcwYVo5RUI1bkZBTFFDUERMYlRLdXh0VFU1Z0p0UlRySjk2QkxhX2Mya3NPaEw5TFR2b0o0T0VpWlRJRjJZTUE?oc=5",
+          "time": "2026-10-23T15:48:51Z",
+          "published_date": "2026-10-23T15:48:51Z",
+          "publishedDate": "2026-10-23T15:48:51Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_climate_security",
+            "sourceUrl": "https://news.google.com/rss/search?q=climate+crisis+food+water+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "c3d86eb15b40",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPZHJndzRMek1ZcGxndUdKR05wbVdFWmJ3dFUxSnlab3g2eWZMZEI2Y3NsNDRyckRzYVEyR251RXBraG1QczNpZFBLTFZKcWczaFhQdksyanFPRTdxeEkweVlnV2VHaEhNUEh5bEs1VkZfb0k0SnB2MENXUS1YeEFzV0JTSWdsbU1Udmt5YV9pV1FvMlZKdlQ1cWE2VW4xRk5vN3pN?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPZHJndzRMek1ZcGxndUdKR05wbVdFWmJ3dFUxSnlab3g2eWZMZEI2Y3NsNDRyckRzYVEyR251RXBraG1QczNpZFBLTFZKcWczaFhQdksyanFPRTdxeEkweVlnV2VHaEhNUEh5bEs1VkZfb0k0SnB2MENXUS1YeEFzV0JTSWdsbU1Udmt5YV9pV1FvMlZKdlQ1cWE2VW4xRk5vN3pN?oc=5",
           "sourceType": "climate-hazard",
           "title": "UK tells public to keep three days’ emergency supplies at home - Philenews",
           "summary": "UK tells public to keep three days’ emergency supplies at home Philenews",
@@ -1185,20 +1373,42 @@
             "sourceUrl": "https://news.google.com/rss/search?q=climate+crisis+food+water+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
-        },
+        }
+      ]
+    },
+    {
+      "id": "5a045f9dbc3f147e",
+      "title": "British premier urges UK households to stockpile water, food amid rising risks - Anadolu Ajansı",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 2,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [
+        "uk"
+      ],
+      "firstSeen": "2026-10-23T14:04:11Z",
+      "lastSeen": "2026-10-23T14:04:11Z",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiswFBVV95cUxQSTZBRzFGME5sLV94X3k1Smt5b3B6S2xlQW0tYXFsYkpONEY0YkhDd0o5cnY3enpJb1RRS1JpOWVZM1NmSHYxUFBjOU9aWHdFZlBuSkV6dXEtcW5La2xhQ0VUZS04bU9RVWZqa0FoVTZlSXVEZzROU2ZZeXp3b2p0QnpfMVVURUxwR2RndUhicTVnZGVpNTktTjNhU3Y5MG9URW5JRjNHU3htNnp0ZEkzZEYxMA?oc=5",
+        "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQcTF3V1JpdnB4UkxmOHFfTkJlelQycnlDSWF3TWdhVVlCTkFqM1Y3UUYzWHJuVzlpMHFUZjByUTRQQ2R0ZjdtU3lCZG5mekxlLUR3OXdDUC1tX1BmR0s4eEJ0WnpVZG5kQWYzc2hZLVdqRUpnX3pmem94QWZTcUFNblIzUEV4VkRVUDF3ZHEzN3ZteG9VUFRTZUR0bTRrZXhfMzRLMkVGN3lTazVjdWhheldIUnlvMElk?oc=5"
+      ],
+      "reports": [
         {
-          "id": "9c9514c044a6",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPS0gtUzZhOHh0dW1GVUJxVzRjWlBacVJfa1RQUTZnOGlCN3F5dm9FdkR1OC1ZS2JrUVM4bHdzYzJzNWRreEV1ZEhyN2laclA3cjhuSE9KWGNNMkc1LXo2MzBJbEc5VkUwMHRLbzRDaEFlVnR4MHRXSDc5czNWR2NYT0U1REQ1ODRwdTRHeER1cVQxbVVsV2gtNTNtbXMxUzd6V3Z3bTNfQkZhd3MwUmJMdXp0SFVmOXZ4QUJsdNIBrwFBVV95cUxOZ3NvSTAzcDd4SVlXZnN2ejB2TXBhTnVLcTdSUFVlX1I2Z0dGeGdpbUp5VXRIci1yMV8welJrQTNsY0ZpeEFiX21FdUlacloxelVSWnVDdXBZQUdrMUhfWU5nLVp0MFJ1TkhyWTJmZ2w4SkxBVnRfZS1VMV8wc1QzUk8yM2FsbGY2R0Q2RlFkX2xBa3E3Yzd4RTkydklWc1FVc2pjWVhvZFBhMVRnVHFF?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPS0gtUzZhOHh0dW1GVUJxVzRjWlBacVJfa1RQUTZnOGlCN3F5dm9FdkR1OC1ZS2JrUVM4bHdzYzJzNWRreEV1ZEhyN2laclA3cjhuSE9KWGNNMkc1LXo2MzBJbEc5VkUwMHRLbzRDaEFlVnR4MHRXSDc5czNWR2NYT0U1REQ1ODRwdTRHeER1cVQxbVVsV2gtNTNtbXMxUzd6V3Z3bTNfQkZhd3MwUmJMdXp0SFVmOXZ4QUJsdNIBrwFBVV95cUxOZ3NvSTAzcDd4SVlXZnN2ejB2TXBhTnVLcTdSUFVlX1I2Z0dGeGdpbUp5VXRIci1yMV8welJrQTNsY0ZpeEFiX21FdUlacloxelVSWnVDdXBZQUdrMUhfWU5nLVp0MFJ1TkhyWTJmZ2w4SkxBVnRfZS1VMV8wc1QzUk8yM2FsbGY2R0Q2RlFkX2xBa3E3Yzd4RTkydklWc1FVc2pjWVhvZFBhMVRnVHFF?oc=5",
+          "id": "a9618f89e550",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQSTZBRzFGME5sLV94X3k1Smt5b3B6S2xlQW0tYXFsYkpONEY0YkhDd0o5cnY3enpJb1RRS1JpOWVZM1NmSHYxUFBjOU9aWHdFZlBuSkV6dXEtcW5La2xhQ0VUZS04bU9RVWZqa0FoVTZlSXVEZzROU2ZZeXp3b2p0QnpfMVVURUxwR2RndUhicTVnZGVpNTktTjNhU3Y5MG9URW5JRjNHU3htNnp0ZEkzZEYxMA?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQSTZBRzFGME5sLV94X3k1Smt5b3B6S2xlQW0tYXFsYkpONEY0YkhDd0o5cnY3enpJb1RRS1JpOWVZM1NmSHYxUFBjOU9aWHdFZlBuSkV6dXEtcW5La2xhQ0VUZS04bU9RVWZqa0FoVTZlSXVEZzROU2ZZeXp3b2p0QnpfMVVURUxwR2RndUhicTVnZGVpNTktTjNhU3Y5MG9URW5JRjNHU3htNnp0ZEkzZEYxMA?oc=5",
           "sourceType": "climate-hazard",
-          "title": "UK tells public to keep three days' emergency supplies at home - NST Online",
-          "summary": "UK tells public to keep three days' emergency supplies at home NST Online",
-          "summary_snippet": "UK tells public to keep three days' emergency supplies at home NST Online",
-          "source": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPS0gtUzZhOHh0dW1GVUJxVzRjWlBacVJfa1RQUTZnOGlCN3F5dm9FdkR1OC1ZS2JrUVM4bHdzYzJzNWRreEV1ZEhyN2laclA3cjhuSE9KWGNNMkc1LXo2MzBJbEc5VkUwMHRLbzRDaEFlVnR4MHRXSDc5czNWR2NYT0U1REQ1ODRwdTRHeER1cVQxbVVsV2gtNTNtbXMxUzd6V3Z3bTNfQkZhd3MwUmJMdXp0SFVmOXZ4QUJsdNIBrwFBVV95cUxOZ3NvSTAzcDd4SVlXZnN2ejB2TXBhTnVLcTdSUFVlX1I2Z0dGeGdpbUp5VXRIci1yMV8welJrQTNsY0ZpeEFiX21FdUlacloxelVSWnVDdXBZQUdrMUhfWU5nLVp0MFJ1TkhyWTJmZ2w4SkxBVnRfZS1VMV8wc1QzUk8yM2FsbGY2R0Q2RlFkX2xBa3E3Yzd4RTkydklWc1FVc2pjWVhvZFBhMVRnVHFF?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPS0gtUzZhOHh0dW1GVUJxVzRjWlBacVJfa1RQUTZnOGlCN3F5dm9FdkR1OC1ZS2JrUVM4bHdzYzJzNWRreEV1ZEhyN2laclA3cjhuSE9KWGNNMkc1LXo2MzBJbEc5VkUwMHRLbzRDaEFlVnR4MHRXSDc5czNWR2NYT0U1REQ1ODRwdTRHeER1cVQxbVVsV2gtNTNtbXMxUzd6V3Z3bTNfQkZhd3MwUmJMdXp0SFVmOXZ4QUJsdNIBrwFBVV95cUxOZ3NvSTAzcDd4SVlXZnN2ejB2TXBhTnVLcTdSUFVlX1I2Z0dGeGdpbUp5VXRIci1yMV8welJrQTNsY0ZpeEFiX21FdUlacloxelVSWnVDdXBZQUdrMUhfWU5nLVp0MFJ1TkhyWTJmZ2w4SkxBVnRfZS1VMV8wc1QzUk8yM2FsbGY2R0Q2RlFkX2xBa3E3Yzd4RTkydklWc1FVc2pjWVhvZFBhMVRnVHFF?oc=5",
-          "time": "2026-10-23T11:34:30Z",
-          "published_date": "2026-10-23T11:34:30Z",
-          "publishedDate": "2026-10-23T11:34:30Z",
+          "title": "British premier urges UK households to stockpile water, food amid rising risks - Anadolu Ajansı",
+          "summary": "British premier urges UK households to stockpile water, food amid rising risks Anadolu Ajansı",
+          "summary_snippet": "British premier urges UK households to stockpile water, food amid rising risks Anadolu Ajansı",
+          "source": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQSTZBRzFGME5sLV94X3k1Smt5b3B6S2xlQW0tYXFsYkpONEY0YkhDd0o5cnY3enpJb1RRS1JpOWVZM1NmSHYxUFBjOU9aWHdFZlBuSkV6dXEtcW5La2xhQ0VUZS04bU9RVWZqa0FoVTZlSXVEZzROU2ZZeXp3b2p0QnpfMVVURUxwR2RndUhicTVnZGVpNTktTjNhU3Y5MG9URW5JRjNHU3htNnp0ZEkzZEYxMA?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQSTZBRzFGME5sLV94X3k1Smt5b3B6S2xlQW0tYXFsYkpONEY0YkhDd0o5cnY3enpJb1RRS1JpOWVZM1NmSHYxUFBjOU9aWHdFZlBuSkV6dXEtcW5La2xhQ0VUZS04bU9RVWZqa0FoVTZlSXVEZzROU2ZZeXp3b2p0QnpfMVVURUxwR2RndUhicTVnZGVpNTktTjNhU3Y5MG9URW5JRjNHU3htNnp0ZEkzZEYxMA?oc=5",
+          "time": "2026-10-23T14:04:11Z",
+          "published_date": "2026-10-23T14:04:11Z",
+          "publishedDate": "2026-10-23T14:04:11Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
@@ -1208,204 +1418,27 @@
             "sourceUrl": "https://news.google.com/rss/search?q=climate+crisis+food+water+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
-        }
-      ]
-    },
-    {
-      "id": "4066761cb0024bb4",
-      "title": "CNN News Central - CNN",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "2026-10-23T11:30:00Z",
-      "lastSeen": "2026-10-23T12:00:00Z",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMicEFVX3lxTE9Daks1cjI2TnlPNGx0TUtySzZ2M252YmZidlBjZUlVaTU2aDVMV0JWZllzckprTnIzc2QtWDBnVXlrX0FuNkNGV1V5OWtkY3lMWHQxbDZ3SlZyNjRucUpYOGlhenQzdUZlSk50enZnWXc?oc=5",
-        "https://news.google.com/rss/articles/CBMicEFVX3lxTE1MWjg0cFBYelJLNU9QaV9WeW5vNmpCMmkxTHd1cFBUMWNiWnpLZW80NkZ2MEFjRW5DSmxUYTY1aGxrRGJtaDV4OWpwMDczc19mRG1lMXh6ZHhJRWJtdEJUWkVHOVh1RVB4WWpIYXNTX1U?oc=5"
-      ],
-      "reports": [
-        {
-          "id": "a9376650a3c9",
-          "sourceLabel": "Google News — CNN Politics",
-          "sourceName": "Google News — CNN Politics",
-          "sourceType": "us-politics",
-          "title": "CNN News Central - CNN",
-          "summary": "CNN News Central CNN",
-          "summary_snippet": "CNN News Central CNN",
-          "source": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9Daks1cjI2TnlPNGx0TUtySzZ2M252YmZidlBjZUlVaTU2aDVMV0JWZllzckprTnIzc2QtWDBnVXlrX0FuNkNGV1V5OWtkY3lMWHQxbDZ3SlZyNjRucUpYOGlhenQzdUZlSk50enZnWXc?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9Daks1cjI2TnlPNGx0TUtySzZ2M252YmZidlBjZUlVaTU2aDVMV0JWZllzckprTnIzc2QtWDBnVXlrX0FuNkNGV1V5OWtkY3lMWHQxbDZ3SlZyNjRucUpYOGlhenQzdUZlSk50enZnWXc?oc=5",
-          "time": "2026-10-23T12:00:00Z",
-          "published_date": "2026-10-23T12:00:00Z",
-          "publishedDate": "2026-10-23T12:00:00Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_cnn_politics",
-            "sourceUrl": "https://news.google.com/rss/search?q=site%3Acnn.com+politics+Trump+Congress+Senate+White+House+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
         },
         {
-          "id": "4bc6eafc2a9e",
-          "sourceLabel": "Google News — CNN Politics",
-          "sourceName": "Google News — CNN Politics",
-          "sourceType": "us-politics",
-          "title": "CNN News Central - CNN",
-          "summary": "CNN News Central CNN",
-          "summary_snippet": "CNN News Central CNN",
-          "source": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1MWjg0cFBYelJLNU9QaV9WeW5vNmpCMmkxTHd1cFBUMWNiWnpLZW80NkZ2MEFjRW5DSmxUYTY1aGxrRGJtaDV4OWpwMDczc19mRG1lMXh6ZHhJRWJtdEJUWkVHOVh1RVB4WWpIYXNTX1U?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1MWjg0cFBYelJLNU9QaV9WeW5vNmpCMmkxTHd1cFBUMWNiWnpLZW80NkZ2MEFjRW5DSmxUYTY1aGxrRGJtaDV4OWpwMDczc19mRG1lMXh6ZHhJRWJtdEJUWkVHOVh1RVB4WWpIYXNTX1U?oc=5",
-          "time": "2026-10-23T11:30:00Z",
-          "published_date": "2026-10-23T11:30:00Z",
-          "publishedDate": "2026-10-23T11:30:00Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_cnn_politics",
-            "sourceUrl": "https://news.google.com/rss/search?q=site%3Acnn.com+politics+Trump+Congress+Senate+White+House+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "04d118282286a385",
-      "title": "M 5.7 - 61 km WNW of Leni, Italy",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "sourceCount": 1,
-      "sources": [
-        "earthquake.usgs.gov"
-      ],
-      "anchors": [],
-      "firstSeen": "2026-10-23T10:37:47.908000Z",
-      "lastSeen": "2026-10-23T11:56:07.796000Z",
-      "urls": [
-        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4bk",
-        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4bg"
-      ],
-      "reports": [
-        {
-          "id": "429a0d1180e7",
-          "sourceLabel": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4bk",
-          "sourceName": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4bk",
+          "id": "52610f43cdee",
+          "sourceLabel": "Google News — Climate Security",
+          "sourceName": "Google News — Climate Security",
           "sourceType": "climate-hazard",
-          "title": "M 5.7 - 61 km WNW of Leni, Italy",
-          "summary": "PAGER - GREEN ShakeMap - IV DYFI? - V Time 2026-10-23 10:19:16 UTC 2026-10-23 10:19:16 UTC at epicenter Location 38.720°N 14.152°E Depth 10.00 km (6.21 mi)",
-          "summary_snippet": "PAGER - GREEN ShakeMap - IV DYFI? - V Time 2026-10-23 10:19:16 UTC 2026-10-23 10:19:16 UTC at epicenter Location 38.720°N 14.152°E Depth 10.00 km (6.21 mi)",
-          "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4bk",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4bk",
-          "time": "2026-10-23T11:56:07.796000Z",
-          "published_date": "2026-10-23T11:56:07.796000Z",
-          "publishedDate": "2026-10-23T11:56:07.796000Z",
+          "title": "British premier urges UK households to stockpile water, food amid rising risks - Anadolu Ajansı",
+          "summary": "British premier urges UK households to stockpile water, food amid rising risks Anadolu Ajansı",
+          "summary_snippet": "British premier urges UK households to stockpile water, food amid rising risks Anadolu Ajansı",
+          "source": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQcTF3V1JpdnB4UkxmOHFfTkJlelQycnlDSWF3TWdhVVlCTkFqM1Y3UUYzWHJuVzlpMHFUZjByUTRQQ2R0ZjdtU3lCZG5mekxlLUR3OXdDUC1tX1BmR0s4eEJ0WnpVZG5kQWYzc2hZLVdqRUpnX3pmem94QWZTcUFNblIzUEV4VkRVUDF3ZHEzN3ZteG9VUFRTZUR0bTRrZXhfMzRLMkVGN3lTazVjdWhheldIUnlvMElk?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQcTF3V1JpdnB4UkxmOHFfTkJlelQycnlDSWF3TWdhVVlCTkFqM1Y3UUYzWHJuVzlpMHFUZjByUTRQQ2R0ZjdtU3lCZG5mekxlLUR3OXdDUC1tX1BmR0s4eEJ0WnpVZG5kQWYzc2hZLVdqRUpnX3pmem94QWZTcUFNblIzUEV4VkRVUDF3ZHEzN3ZteG9VUFRTZUR0bTRrZXhfMzRLMkVGN3lTazVjdWhheldIUnlvMElk?oc=5",
+          "time": "2026-10-23T14:04:11Z",
+          "published_date": "2026-10-23T14:04:11Z",
+          "publishedDate": "2026-10-23T14:04:11Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "usgs_m4_5_earthquakes_past_day",
-            "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
-            "feedFormat": "atom"
-          }
-        },
-        {
-          "id": "f6603cb93761",
-          "sourceLabel": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4bg",
-          "sourceName": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4bg",
-          "sourceType": "climate-hazard",
-          "title": "M 4.9 - 53 km WNW of Leni, Italy",
-          "summary": "DYFI? - I Time 2026-10-23 09:51:39 UTC 2026-10-23 09:51:39 UTC at epicenter Location 38.722°N 14.253°E Depth 10.00 km (6.21 mi)",
-          "summary_snippet": "DYFI? - I Time 2026-10-23 09:51:39 UTC 2026-10-23 09:51:39 UTC at epicenter Location 38.722°N 14.253°E Depth 10.00 km (6.21 mi)",
-          "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4bg",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4bg",
-          "time": "2026-10-23T10:37:47.908000Z",
-          "published_date": "2026-10-23T10:37:47.908000Z",
-          "publishedDate": "2026-10-23T10:37:47.908000Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "usgs_m4_5_earthquakes_past_day",
-            "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
-            "feedFormat": "atom"
-          }
-        }
-      ]
-    },
-    {
-      "id": "5602383ec1af1a1a",
-      "title": "The 3 Tests Before the Vote: What America’s Midterms Will Reveal - Vivekananda International Foundation (VIF)",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [
-        "america"
-      ],
-      "firstSeen": "2026-10-23T09:35:43Z",
-      "lastSeen": "2026-10-23T09:36:11Z",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMisgFBVV95cUxQdnlqdnlGYkxkOXFXN3g4Q3lDZE1vYVAwWDAwbGtTdWZsTzlMUUhCZzh4U1hGMkdXYmcyWGZiTW9PWEQzOVd1UTUweDJqRzNzUk5Uc3JFVzFzTXdLUGFKSDBtRDYwdWJOdXZXTDBNQUQ5Y1BlcVNGZDJnTktOYUlnUWIySTdBVGpxSVdjRmVienhEdEhxbE1HS010TC1XNnRZNlZ0d296dFpkRWY2eGstUmZ3?oc=5",
-        "https://news.google.com/rss/articles/CBMiygFBVV95cUxPb25nNy1wXzVpYXBBb0RCd2NWOHFyRGhVYXFRWGlJSkY3WEZhYUdQMk1Tb3pjRFJqNndmTk80UjVMTnZDaHNzQmRFdW90MHFDRmVyLWdZRG5FOFRTMnR4ZVhuYU9Hc1FkcHhOdHN5NW9xVmV3ZHZoZ2tzZVJ5THFBRmdTX3pJandjdXg3UXd1Z3JUS2JxZXZ3aXMyT3BzY3JXQ1lMdmYyY1k3ZS1IczgtWldKRDNrN2lETkg1ZnN5YlMwTjlIc2pBT1h3?oc=5"
-      ],
-      "reports": [
-        {
-          "id": "cc8c5b33f7ce",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQdnlqdnlGYkxkOXFXN3g4Q3lDZE1vYVAwWDAwbGtTdWZsTzlMUUhCZzh4U1hGMkdXYmcyWGZiTW9PWEQzOVd1UTUweDJqRzNzUk5Uc3JFVzFzTXdLUGFKSDBtRDYwdWJOdXZXTDBNQUQ5Y1BlcVNGZDJnTktOYUlnUWIySTdBVGpxSVdjRmVienhEdEhxbE1HS010TC1XNnRZNlZ0d296dFpkRWY2eGstUmZ3?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQdnlqdnlGYkxkOXFXN3g4Q3lDZE1vYVAwWDAwbGtTdWZsTzlMUUhCZzh4U1hGMkdXYmcyWGZiTW9PWEQzOVd1UTUweDJqRzNzUk5Uc3JFVzFzTXdLUGFKSDBtRDYwdWJOdXZXTDBNQUQ5Y1BlcVNGZDJnTktOYUlnUWIySTdBVGpxSVdjRmVienhEdEhxbE1HS010TC1XNnRZNlZ0d296dFpkRWY2eGstUmZ3?oc=5",
-          "sourceType": "us-politics",
-          "title": "The 3 Tests Before the Vote: What America’s Midterms Will Reveal - Vivekananda International Foundation (VIF)",
-          "summary": "The 3 Tests Before the Vote: What America’s Midterms Will Reveal Vivekananda International Foundation (VIF)",
-          "summary_snippet": "The 3 Tests Before the Vote: What America’s Midterms Will Reveal Vivekananda International Foundation (VIF)",
-          "source": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQdnlqdnlGYkxkOXFXN3g4Q3lDZE1vYVAwWDAwbGtTdWZsTzlMUUhCZzh4U1hGMkdXYmcyWGZiTW9PWEQzOVd1UTUweDJqRzNzUk5Uc3JFVzFzTXdLUGFKSDBtRDYwdWJOdXZXTDBNQUQ5Y1BlcVNGZDJnTktOYUlnUWIySTdBVGpxSVdjRmVienhEdEhxbE1HS010TC1XNnRZNlZ0d296dFpkRWY2eGstUmZ3?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQdnlqdnlGYkxkOXFXN3g4Q3lDZE1vYVAwWDAwbGtTdWZsTzlMUUhCZzh4U1hGMkdXYmcyWGZiTW9PWEQzOVd1UTUweDJqRzNzUk5Uc3JFVzFzTXdLUGFKSDBtRDYwdWJOdXZXTDBNQUQ5Y1BlcVNGZDJnTktOYUlnUWIySTdBVGpxSVdjRmVienhEdEhxbE1HS010TC1XNnRZNlZ0d296dFpkRWY2eGstUmZ3?oc=5",
-          "time": "2026-10-23T09:36:11Z",
-          "published_date": "2026-10-23T09:36:11Z",
-          "publishedDate": "2026-10-23T09:36:11Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_u_s_politics",
-            "sourceUrl": "https://news.google.com/rss/search?q=US+politics+Congress+Senate+White+House+election+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "729d6dd18ea5",
-          "sourceLabel": "Google News — U.S. Politics",
-          "sourceName": "Google News — U.S. Politics",
-          "sourceType": "us-politics",
-          "title": "The 3 Tests Before the Vote: What America’s Midterms Will Reveal - Vivekananda International Foundation (VIF)",
-          "summary": "The 3 Tests Before the Vote: What America’s Midterms Will Reveal Vivekananda International Foundation (VIF)",
-          "summary_snippet": "The 3 Tests Before the Vote: What America’s Midterms Will Reveal Vivekananda International Foundation (VIF)",
-          "source": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPb25nNy1wXzVpYXBBb0RCd2NWOHFyRGhVYXFRWGlJSkY3WEZhYUdQMk1Tb3pjRFJqNndmTk80UjVMTnZDaHNzQmRFdW90MHFDRmVyLWdZRG5FOFRTMnR4ZVhuYU9Hc1FkcHhOdHN5NW9xVmV3ZHZoZ2tzZVJ5THFBRmdTX3pJandjdXg3UXd1Z3JUS2JxZXZ3aXMyT3BzY3JXQ1lMdmYyY1k3ZS1IczgtWldKRDNrN2lETkg1ZnN5YlMwTjlIc2pBT1h3?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPb25nNy1wXzVpYXBBb0RCd2NWOHFyRGhVYXFRWGlJSkY3WEZhYUdQMk1Tb3pjRFJqNndmTk80UjVMTnZDaHNzQmRFdW90MHFDRmVyLWdZRG5FOFRTMnR4ZVhuYU9Hc1FkcHhOdHN5NW9xVmV3ZHZoZ2tzZVJ5THFBRmdTX3pJandjdXg3UXd1Z3JUS2JxZXZ3aXMyT3BzY3JXQ1lMdmYyY1k3ZS1IczgtWldKRDNrN2lETkg1ZnN5YlMwTjlIc2pBT1h3?oc=5",
-          "time": "2026-10-23T09:35:43Z",
-          "published_date": "2026-10-23T09:35:43Z",
-          "publishedDate": "2026-10-23T09:35:43Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_u_s_politics",
-            "sourceUrl": "https://news.google.com/rss/search?q=US+politics+Congress+Senate+White+House+election+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "sourceId": "google_news_climate_security",
+            "sourceUrl": "https://news.google.com/rss/search?q=climate+crisis+food+water+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
         }
@@ -1604,6 +1637,38 @@
       ]
     },
     {
+      "id": "2a5df5ab65dd23b6",
+      "title": "US strikes 2nd alleged drug cartel vessel in Pacific, in expansion of attacks - ABC News - Breaking News, Latest News and Videos",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Wed, 22 Oct 2025 07:00:00 GMT",
+      "lastSeen": "Wed, 22 Oct 2025 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMinwFBVV95cUxNZG4zc0xyNzVzRVhEd3J4RG1OazhPTFRDclpJeEIwWWlWam9CMUN1UjZpX0FVajNiS1ZmSlBUdlNQLTMxZ2xsOWpnazhBUGlWOEtQTzJyZjRXNXFJY1dXdG5MN1FHemt6TjMtdUhrWkhEM09wMHloUkxxNVd4S3IzaHZ6a3VNZjRJUWtLRlpxNkNxU3dNS1VDa0hiSmFpaWfSAaQBQVVfeXFMUEFLYUM5SEdNRnphUFZabUUyY1RaeHhSMkw3MHlHRUN3YUx2ZkMxbEIwLTBkRVJ6XzNOaXQtVFRJOXVGWTR3Vm02OWNlMzlaQ2hWb1ZIaFdWTmY1T3ZVRDhiSVVaclExX1hzeTFMZC1QUVY2S1lRMHBfWkxUbEhyalRiSWFIN0xSeUw5QnhRMVBlVUVxaVVOMEZMOTlmMjhPVzJGVUU?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "US strikes 2nd alleged drug cartel vessel in Pacific, in expansion of attacks - ABC News - Breaking News, Latest News and Videos",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNZG4zc0xyNzVzRVhEd3J4RG1OazhPTFRDclpJeEIwWWlWam9CMUN1UjZpX0FVajNiS1ZmSlBUdlNQLTMxZ2xsOWpnazhBUGlWOEtQTzJyZjRXNXFJY1dXdG5MN1FHemt6TjMtdUhrWkhEM09wMHloUkxxNVd4S3IzaHZ6a3VNZjRJUWtLRlpxNkNxU3dNS1VDa0hiSmFpaWfSAaQBQVVfeXFMUEFLYUM5SEdNRnphUFZabUUyY1RaeHhSMkw3MHlHRUN3YUx2ZkMxbEIwLTBkRVJ6XzNOaXQtVFRJOXVGWTR3Vm02OWNlMzlaQ2hWb1ZIaFdWTmY1T3ZVRDhiSVVaclExX1hzeTFMZC1QUVY2S1lRMHBfWkxUbEhyalRiSWFIN0xSeUw5QnhRMVBlVUVxaVVOMEZMOTlmMjhPVzJGVUU?oc=5",
+          "published_date": "Wed, 22 Oct 2025 07:00:00 GMT",
+          "time": "Wed, 22 Oct 2025 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: ABC News - Breaking News, Latest News and Videos",
+          "summary": "Fallback discovery via Google News RSS; publisher: ABC News - Breaking News, Latest News and Videos",
+          "source": "ABC News - Breaking News, Latest News and Videos",
+          "sourceLabel": "ABC News - Breaking News, Latest News and Videos",
+          "sourceType": "fallback-news",
+          "fallbackFor": "GDELT — Western Hemisphere Counter-Cartel",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
       "id": "7b8f97df23398086",
       "title": "NASA JPL Looks to Next 90 Years of Innovation, Exploration - NASA Jet Propulsion Laboratory (JPL) (.gov)",
       "category": "general",
@@ -1663,6 +1728,40 @@
           "sourceLabel": "Viasat",
           "sourceType": "fallback-news",
           "fallbackFor": "X @NASA",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "edc87fee172ccb93",
+      "title": "Top NATO official reveals details of stunning meeting with Trump that produced Greenland deal 'framework' - Fox News",
+      "category": "diplomatic",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [
+        "nato"
+      ],
+      "firstSeen": "Wed, 21 Jan 2026 08:00:00 GMT",
+      "lastSeen": "Wed, 21 Jan 2026 08:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMixwFBVV95cUxNWTVQZnYyN281MlJIZjZlQ3VQeDRLR25GeExvM0duMXhXd2ppQmdSejJWa3VhTmpYZEQ1eU9fbUM5bVUtSWFfaVRRanprTzhGY0lLUmZLRGNORlQwSEJNTUt3WDVqdzJ5aHFTWFY0VDV1WDlvMDExcFZ6dVVFNDA3NXhlaUxrUHhKM1BuSjhTT001OFh2VllVcW1LSDc4TG0zTlI2R18wbFJqV0hTNlVuZ1NYODhycU1CbV93a1JSV2E5bTNiRmhn0gHMAUFVX3lxTE9DS3R6SGJLQU9fR2RPMF8yNDZWNjQzV0VpWjB2VUlaSHVkWFRINUtodGp3bDhoSHBZZERRVnhNVmM0eWpDdzVTbGRMVFJmWnJpcUs5SHEyc19IZ2hCaWJYN0FnNnBHNkh0ZzJSSWh5Nk9zMWplMGxhcmlzd3kzYTV4LVBlR285d3lfcGRveGdrNWdnMjd6YS1xYktHRW5YWDA1Z0pKNDIyUXg5OHNseEpDdWxLdGxscG14N1phaUxrSUJMVnExTEpmM0V0Ng?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "Top NATO official reveals details of stunning meeting with Trump that produced Greenland deal 'framework' - Fox News",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNWTVQZnYyN281MlJIZjZlQ3VQeDRLR25GeExvM0duMXhXd2ppQmdSejJWa3VhTmpYZEQ1eU9fbUM5bVUtSWFfaVRRanprTzhGY0lLUmZLRGNORlQwSEJNTUt3WDVqdzJ5aHFTWFY0VDV1WDlvMDExcFZ6dVVFNDA3NXhlaUxrUHhKM1BuSjhTT001OFh2VllVcW1LSDc4TG0zTlI2R18wbFJqV0hTNlVuZ1NYODhycU1CbV93a1JSV2E5bTNiRmhn0gHMAUFVX3lxTE9DS3R6SGJLQU9fR2RPMF8yNDZWNjQzV0VpWjB2VUlaSHVkWFRINUtodGp3bDhoSHBZZERRVnhNVmM0eWpDdzVTbGRMVFJmWnJpcUs5SHEyc19IZ2hCaWJYN0FnNnBHNkh0ZzJSSWh5Nk9zMWplMGxhcmlzd3kzYTV4LVBlR285d3lfcGRveGdrNWdnMjd6YS1xYktHRW5YWDA1Z0pKNDIyUXg5OHNseEpDdWxLdGxscG14N1phaUxrSUJMVnExTEpmM0V0Ng?oc=5",
+          "published_date": "Wed, 21 Jan 2026 08:00:00 GMT",
+          "time": "Wed, 21 Jan 2026 08:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Fox News",
+          "summary": "Fallback discovery via Google News RSS; publisher: Fox News",
+          "source": "Fox News",
+          "sourceLabel": "Fox News",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NATO",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -1930,102 +2029,6 @@
       ]
     },
     {
-      "id": "8b603ee68e428df5",
-      "title": "NASA to Discuss Artemis Acceleration, Status of Upcoming Moon Missions - NASA (.gov)",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Wed, 14 Oct 2026 07:00:00 GMT",
-      "lastSeen": "Wed, 14 Oct 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMipwFBVV95cUxOSVFSNkk5Mk9fcHZTdl9kUFFNcmlyS2Nabzl4NGx0bXlKSTNKVHRmbUlTdm43OW1XOWF6ODJnYjFUS2VwUkFsbHlCT1o0UjFlRE1VNTlSaUxnZFdIcEQ2c0NJTlVSTnhha094MW5xbW4wUnppZVltenQ2RTdqWEE5RW16VG9rUldXTVdIVXh2c0Qtblh0Tmx3YXJKME12Q3czMkNySWlJNA?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "NASA to Discuss Artemis Acceleration, Status of Upcoming Moon Missions - NASA (.gov)",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOSVFSNkk5Mk9fcHZTdl9kUFFNcmlyS2Nabzl4NGx0bXlKSTNKVHRmbUlTdm43OW1XOWF6ODJnYjFUS2VwUkFsbHlCT1o0UjFlRE1VNTlSaUxnZFdIcEQ2c0NJTlVSTnhha094MW5xbW4wUnppZVltenQ2RTdqWEE5RW16VG9rUldXTVdIVXh2c0Qtblh0Tmx3YXJKME12Q3czMkNySWlJNA?oc=5",
-          "published_date": "Wed, 14 Oct 2026 07:00:00 GMT",
-          "time": "Wed, 14 Oct 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
-          "summary": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
-          "source": "NASA (.gov)",
-          "sourceLabel": "NASA (.gov)",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NASA",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "0056051aa1b75cee",
-      "title": "Astronaut Christina Koch trades spacesuit for desk in new role at NASA - USA Today",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Wed, 14 Oct 2026 07:00:00 GMT",
-      "lastSeen": "Wed, 14 Oct 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMimAFBVV95cUxPa1RSc1VtSFNHeWFtSE0yTm91SUpiZkF6UmVWUHpBeTRxTGZpZWpiZl9KaEpXR0VjcXkyNGFJTlFRcVFhT0J0YnJiNVY4X2FrWEtzV2FpWVprcUlkV3F2ZDZXbVVvZHdvMUtNdTdCSjVUWDJSTEp3NnZjLV94RmJhX2IzMnN4UWpGWkpQR1NLWF9UMEtzYm01VQ?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Astronaut Christina Koch trades spacesuit for desk in new role at NASA - USA Today",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPa1RSc1VtSFNHeWFtSE0yTm91SUpiZkF6UmVWUHpBeTRxTGZpZWpiZl9KaEpXR0VjcXkyNGFJTlFRcVFhT0J0YnJiNVY4X2FrWEtzV2FpWVprcUlkV3F2ZDZXbVVvZHdvMUtNdTdCSjVUWDJSTEp3NnZjLV94RmJhX2IzMnN4UWpGWkpQR1NLWF9UMEtzYm01VQ?oc=5",
-          "published_date": "Wed, 14 Oct 2026 07:00:00 GMT",
-          "time": "Wed, 14 Oct 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: USA Today",
-          "summary": "Fallback discovery via Google News RSS; publisher: USA Today",
-          "source": "USA Today",
-          "sourceLabel": "USA Today",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NASA",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "570439ef1ad99ede",
-      "title": "Mapping U.S. strikes in the Caribbean and eastern Pacific - The Washington Post",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Wed, 12 Nov 2025 08:00:00 GMT",
-      "lastSeen": "Wed, 12 Nov 2025 08:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMigwFBVV95cUxOS1Vab29Ta01mcWg2akhlM3kzS0lJNUt5bTFKLUN6QjdzNDkydV9zTW5OYVBfbG8wZVRxam0yRnVqTG1ETlBpX2RCYUtJeElwTk1nVHRvTHVzTklpWTh3SlZ6RWY0ajRKREllWXZ4anRndWZJWW5oSGlSMHlYVzQ1WFQ1QQ?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Mapping U.S. strikes in the Caribbean and eastern Pacific - The Washington Post",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOS1Vab29Ta01mcWg2akhlM3kzS0lJNUt5bTFKLUN6QjdzNDkydV9zTW5OYVBfbG8wZVRxam0yRnVqTG1ETlBpX2RCYUtJeElwTk1nVHRvTHVzTklpWTh3SlZ6RWY0ajRKREllWXZ4anRndWZJWW5oSGlSMHlYVzQ1WFQ1QQ?oc=5",
-          "published_date": "Wed, 12 Nov 2025 08:00:00 GMT",
-          "time": "Wed, 12 Nov 2025 08:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: The Washington Post",
-          "summary": "Fallback discovery via Google News RSS; publisher: The Washington Post",
-          "source": "The Washington Post",
-          "sourceLabel": "The Washington Post",
-          "sourceType": "fallback-news",
-          "fallbackFor": "GDELT — Western Hemisphere Counter-Cartel",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
       "id": "0f10f42d81a615e0",
       "title": "Collective defence and Article 5 - North Atlantic Treaty Organization | NATO",
       "category": "diplomatic",
@@ -2055,6 +2058,40 @@
           "sourceLabel": "North Atlantic Treaty Organization | NATO",
           "sourceType": "fallback-news",
           "fallbackFor": "X @NATO",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "0851150399382d38",
+      "title": "Hegseth cautions that ICC may investigate US boat strikes in Latin America - Al Jazeera",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [
+        "america"
+      ],
+      "firstSeen": "Wed, 12 Aug 2026 07:00:00 GMT",
+      "lastSeen": "Wed, 12 Aug 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMitgFBVV95cUxOd25ZaTBmTEt5ZjBXV2lOQUYyYVhtbE5fMlA0b2NtSnZiQlR6M0wySWVtZG9TYl9hR2Jha3kzeGZMSlp1X2ZCTVVaTEtNUW1fTlA3YUxMQ0dfbVRpdzJsck8wbXB2NW9Vd1pPeGNKZ3dEZGJZNmNzSkVmVkk4WS1rWVN5LWJTR0FVWExNM2VXZFBoRFc2ZzA2eW5vcFVrQm8wUjF1bmRiT2psMUVyOUhZcy00c1E4Z9IBuwFBVV95cUxPTDJYd1RTOUlBdFBEa2R3VjZqVUhhcEtDdVRIMGNXUGhyVmp3Uy0zMjFEQ1NiM3gtT3FCWDMxakVBNmJJelFYMnhpaG1zYlh0YS05LUdUc0pfT1A2LVRPYkptRkRURG1LVFFaTEtjdmJSYTBEMmsyd0oxbGRZS3dIX0NaNUNkX0xlRlRkazBjQmYtVVdSaG5GV1BJVlk0TDRTQXgzZ29xNkpzYTBvS0lodTUzS25KeXdydS1n?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "Hegseth cautions that ICC may investigate US boat strikes in Latin America - Al Jazeera",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOd25ZaTBmTEt5ZjBXV2lOQUYyYVhtbE5fMlA0b2NtSnZiQlR6M0wySWVtZG9TYl9hR2Jha3kzeGZMSlp1X2ZCTVVaTEtNUW1fTlA3YUxMQ0dfbVRpdzJsck8wbXB2NW9Vd1pPeGNKZ3dEZGJZNmNzSkVmVkk4WS1rWVN5LWJTR0FVWExNM2VXZFBoRFc2ZzA2eW5vcFVrQm8wUjF1bmRiT2psMUVyOUhZcy00c1E4Z9IBuwFBVV95cUxPTDJYd1RTOUlBdFBEa2R3VjZqVUhhcEtDdVRIMGNXUGhyVmp3Uy0zMjFEQ1NiM3gtT3FCWDMxakVBNmJJelFYMnhpaG1zYlh0YS05LUdUc0pfT1A2LVRPYkptRkRURG1LVFFaTEtjdmJSYTBEMmsyd0oxbGRZS3dIX0NaNUNkX0xlRlRkazBjQmYtVVdSaG5GV1BJVlk0TDRTQXgzZ29xNkpzYTBvS0lodTUzS25KeXdydS1n?oc=5",
+          "published_date": "Wed, 12 Aug 2026 07:00:00 GMT",
+          "time": "Wed, 12 Aug 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Al Jazeera",
+          "summary": "Fallback discovery via Google News RSS; publisher: Al Jazeera",
+          "source": "Al Jazeera",
+          "sourceLabel": "Al Jazeera",
+          "sourceType": "fallback-news",
+          "fallbackFor": "GDELT — Western Hemisphere Counter-Cartel",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -2121,6 +2158,38 @@
           "sourceLabel": "The Washington Post",
           "sourceType": "fallback-news",
           "fallbackFor": "X @WhiteHouse",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "9a2c6f27f19a138c",
+      "title": "US forces obliterate suspected 'narco-terrorist' vessel in lethal Eastern Pacific strike, killing 3 - Fox News",
+      "category": "conflict",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Wed, 09 Sep 2026 07:00:00 GMT",
+      "lastSeen": "Wed, 09 Sep 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMivAFBVV95cUxQTEdoeEVnemxCQTNxZDFMTU0tSGxvNzl4MEVUV1RKU2J3UlZjOFJsbm1lT3pNanR2QXBCek1sUlMtQTJCRjJwNlIzN1ZuU1psLWJIeFlON2NoU1FtNEVwWWZ1Rkp3NVhZUHYxc00xS05ldG9EZDhrYy1JWmJSQUZlaktHOTF6QV9NZnVFYmVhNExyLWdJNzAzT0JocjQxQlJkalNuNEo2VDR6Ty04WnNIa2lnWk85eVJSdkMxWNIBwgFBVV95cUxPcEZFcDZjOUl5U25fRFpsVzE2ODlBNzEydmtEb2dUbW8tbEt6bVlnLXlSS0REQTN3cjVGRV9NTXdJTDhKWmRxR3dCVTRjMWdVbHBYbGlSamZSSGhBYng4T2h0eDJfVkwwUzFQeDFsT29pY0YyRXRkbnNQZHEzNjVnQWhPdEl4TkJNc2RIcmlPTWV6aVBJa2NyenkzSE5TSVRobzFDX0FHZ21xWE9KTk8wbURiUXZqSG5fLTBCSkN1bGJHZw?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "US forces obliterate suspected 'narco-terrorist' vessel in lethal Eastern Pacific strike, killing 3 - Fox News",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQTEdoeEVnemxCQTNxZDFMTU0tSGxvNzl4MEVUV1RKU2J3UlZjOFJsbm1lT3pNanR2QXBCek1sUlMtQTJCRjJwNlIzN1ZuU1psLWJIeFlON2NoU1FtNEVwWWZ1Rkp3NVhZUHYxc00xS05ldG9EZDhrYy1JWmJSQUZlaktHOTF6QV9NZnVFYmVhNExyLWdJNzAzT0JocjQxQlJkalNuNEo2VDR6Ty04WnNIa2lnWk85eVJSdkMxWNIBwgFBVV95cUxPcEZFcDZjOUl5U25fRFpsVzE2ODlBNzEydmtEb2dUbW8tbEt6bVlnLXlSS0REQTN3cjVGRV9NTXdJTDhKWmRxR3dCVTRjMWdVbHBYbGlSamZSSGhBYng4T2h0eDJfVkwwUzFQeDFsT29pY0YyRXRkbnNQZHEzNjVnQWhPdEl4TkJNc2RIcmlPTWV6aVBJa2NyenkzSE5TSVRobzFDX0FHZ21xWE9KTk8wbURiUXZqSG5fLTBCSkN1bGJHZw?oc=5",
+          "published_date": "Wed, 09 Sep 2026 07:00:00 GMT",
+          "time": "Wed, 09 Sep 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Fox News",
+          "summary": "Fallback discovery via Google News RSS; publisher: Fox News",
+          "source": "Fox News",
+          "sourceLabel": "Fox News",
+          "sourceType": "fallback-news",
+          "fallbackFor": "GDELT — Western Hemisphere Counter-Cartel",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -2257,8 +2326,8 @@
       ]
     },
     {
-      "id": "564d2b27c259deb2",
-      "title": "US military kills two alleged narco-terrorists in latest Eastern Pacific strike on drug-trafficking vessel - Fox News",
+      "id": "6693671530779557",
+      "title": "US military kills two alleged narco-terrorists in latest Eastern Pacific strike on drug-trafficking vessel - 930 WFMD Free Talk",
       "category": "conflict",
       "confidence": "low",
       "reportCount": 1,
@@ -2270,18 +2339,18 @@
       "firstSeen": "Wed, 03 Jun 2026 07:00:00 GMT",
       "lastSeen": "Wed, 03 Jun 2026 07:00:00 GMT",
       "urls": [
-        "https://news.google.com/rss/articles/CBMixgFBVV95cUxNdC1HcjZnUFJZMzhoM3lpWkFNbUJ4M2ExU0JZaGd1c2NleFoydV9zNHVmTzZXSkgxNFYxaEtLWkd2eHdrNExYbkhjaVNWa0ZuZm9sZUlsaUs2VE1qTm1IVnJJU1BfQkVfMDBHT1NXQm0tOGhaYy16dWxJMVJyVUs0blR6STFYSDRIWlRENm1yWGl5ZkkyZy1pTzlrZjhhUGp0c3ItSjZrV2NNX1JpZXZyWFljV29sSEQyclduT1JUTW1NUkxteXfSAcsBQVVfeXFMTzJidEd2TlM5cGduYzF1RnBlTEhDRkNORlJ2ODEwc0RJcXRwbHhmMTFsQkF5a0NmcUZQVEhfX3cyaGRsRkY2N2pyUVB6R1BoNFBNajJIQXRLcjBXRTZ3eG93N0dzdXJWeW1mQnhjM2ozRHBGcmNnYmRfaUR6Xzc4aGtIN2dUNE1WM2hmSktZdFc5UXVpaUo5dTNKeUllVmJMN0NXQjlndzNHLVFFOXVGbVVkNGZCSXd6d2VIMElXdHdGelJsTWdiVUROWWM?oc=5"
+        "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPMTlJRTEwc1ltQ2FnVFlaX0FYc1JmS2xOaUZmY0RvUVAtd3hMeFNXeHQ4Y2tSSEJJbTFCU0U5Y29wbUJFaXk2dmhYaVQtRTlfaXRHNHFFM2ZHazNDb29HOS00Rk1ZeXZVY2N0Wmw1eFk1S1JFb1VkVGRMU0lOcXB1cWg2MVpSSFZacG14eUpUTE8ydlMwd1AtV1ZIZHVIRVREY0lIeHM2eFc3S25NR0V2WW93NC12UUM2VkUza2pTOXl6NFl0NmZyOFl1X2R0N2FScFB5WVZR?oc=5"
       ],
       "reports": [
         {
-          "title": "US military kills two alleged narco-terrorists in latest Eastern Pacific strike on drug-trafficking vessel - Fox News",
-          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNdC1HcjZnUFJZMzhoM3lpWkFNbUJ4M2ExU0JZaGd1c2NleFoydV9zNHVmTzZXSkgxNFYxaEtLWkd2eHdrNExYbkhjaVNWa0ZuZm9sZUlsaUs2VE1qTm1IVnJJU1BfQkVfMDBHT1NXQm0tOGhaYy16dWxJMVJyVUs0blR6STFYSDRIWlRENm1yWGl5ZkkyZy1pTzlrZjhhUGp0c3ItSjZrV2NNX1JpZXZyWFljV29sSEQyclduT1JUTW1NUkxteXfSAcsBQVVfeXFMTzJidEd2TlM5cGduYzF1RnBlTEhDRkNORlJ2ODEwc0RJcXRwbHhmMTFsQkF5a0NmcUZQVEhfX3cyaGRsRkY2N2pyUVB6R1BoNFBNajJIQXRLcjBXRTZ3eG93N0dzdXJWeW1mQnhjM2ozRHBGcmNnYmRfaUR6Xzc4aGtIN2dUNE1WM2hmSktZdFc5UXVpaUo5dTNKeUllVmJMN0NXQjlndzNHLVFFOXVGbVVkNGZCSXd6d2VIMElXdHdGelJsTWdiVUROWWM?oc=5",
+          "title": "US military kills two alleged narco-terrorists in latest Eastern Pacific strike on drug-trafficking vessel - 930 WFMD Free Talk",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPMTlJRTEwc1ltQ2FnVFlaX0FYc1JmS2xOaUZmY0RvUVAtd3hMeFNXeHQ4Y2tSSEJJbTFCU0U5Y29wbUJFaXk2dmhYaVQtRTlfaXRHNHFFM2ZHazNDb29HOS00Rk1ZeXZVY2N0Wmw1eFk1S1JFb1VkVGRMU0lOcXB1cWg2MVpSSFZacG14eUpUTE8ydlMwd1AtV1ZIZHVIRVREY0lIeHM2eFc3S25NR0V2WW93NC12UUM2VkUza2pTOXl6NFl0NmZyOFl1X2R0N2FScFB5WVZR?oc=5",
           "published_date": "Wed, 03 Jun 2026 07:00:00 GMT",
           "time": "Wed, 03 Jun 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Fox News",
-          "summary": "Fallback discovery via Google News RSS; publisher: Fox News",
-          "source": "Fox News",
-          "sourceLabel": "Fox News",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: 930 WFMD Free Talk",
+          "summary": "Fallback discovery via Google News RSS; publisher: 930 WFMD Free Talk",
+          "source": "930 WFMD Free Talk",
+          "sourceLabel": "930 WFMD Free Talk",
           "sourceType": "fallback-news",
           "fallbackFor": "GDELT — Western Hemisphere Counter-Cartel",
           "credit_metadata": "Google News RSS fallback"
@@ -2551,6 +2620,38 @@
       ]
     },
     {
+      "id": "e5eb7ef257f28ead",
+      "title": "U.S. military kills alleged narco-terrorist in lethal strike on drug-trafficking vessel in Eastern Pacific - Fox News",
+      "category": "conflict",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Tue, 26 May 2026 07:00:00 GMT",
+      "lastSeen": "Tue, 26 May 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMivwFBVV95cUxQY2lBTjNsNjR1M1pxenNzMWdtdWRzNTZmcFYyMW16ZHF4VTAxVlhGV21oNHpadDhpRzJKaUp1WHNGTWJWTG85WTVabERiY0tMdFlHQnJ3aUpRaHNrNzlWQVZMbjNVeC03akJPbm9EdjI4Z2hGelgteEwyczBNY3RSZllObkhkanUzVDVPTzVaaDUxcm5zd3paTzhla0l1Z0w2a2ZyNmwwYk56RnlPYXJHQTItZFBrSEt0dlVYLWF6QdIBxAFBVV95cUxNUVVnczJFV0JuN2o3TTJrZ29sX2gtcWYxRDhWMmJzQzhDRUoyWU5BdzFxME1UVWZ1aWVWcEZKY0tYZXFJMVh0dFY3NjA4Ylpfeko0cjBQbG5wc2N5R25ScTVaVHVqNEh0SEYySU5sLXU3MkFJMUsyYmR0UHJGZXFnUl9QR3FLeU1VdXVBZlFzbWVEMElmNzRmd0psV1VVbGhTc21XOUV3ZDE3RGpsTEtNSXRSX2tybGtnVVBoZjhVblRWZHlr?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "U.S. military kills alleged narco-terrorist in lethal strike on drug-trafficking vessel in Eastern Pacific - Fox News",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQY2lBTjNsNjR1M1pxenNzMWdtdWRzNTZmcFYyMW16ZHF4VTAxVlhGV21oNHpadDhpRzJKaUp1WHNGTWJWTG85WTVabERiY0tMdFlHQnJ3aUpRaHNrNzlWQVZMbjNVeC03akJPbm9EdjI4Z2hGelgteEwyczBNY3RSZllObkhkanUzVDVPTzVaaDUxcm5zd3paTzhla0l1Z0w2a2ZyNmwwYk56RnlPYXJHQTItZFBrSEt0dlVYLWF6QdIBxAFBVV95cUxNUVVnczJFV0JuN2o3TTJrZ29sX2gtcWYxRDhWMmJzQzhDRUoyWU5BdzFxME1UVWZ1aWVWcEZKY0tYZXFJMVh0dFY3NjA4Ylpfeko0cjBQbG5wc2N5R25ScTVaVHVqNEh0SEYySU5sLXU3MkFJMUsyYmR0UHJGZXFnUl9QR3FLeU1VdXVBZlFzbWVEMElmNzRmd0psV1VVbGhTc21XOUV3ZDE3RGpsTEtNSXRSX2tybGtnVVBoZjhVblRWZHlr?oc=5",
+          "published_date": "Tue, 26 May 2026 07:00:00 GMT",
+          "time": "Tue, 26 May 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Fox News",
+          "summary": "Fallback discovery via Google News RSS; publisher: Fox News",
+          "source": "Fox News",
+          "sourceLabel": "Fox News",
+          "sourceType": "fallback-news",
+          "fallbackFor": "GDELT — Western Hemisphere Counter-Cartel",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
       "id": "1ca9ee3cebc8e6be",
       "title": "US boat strike in the Caribbean kills four suspected of ‘narco-trafficking’ - The Hill",
       "category": "conflict",
@@ -2807,38 +2908,6 @@
       ]
     },
     {
-      "id": "37b2976c4a6dc81d",
-      "title": "Trump heads to the U.N. looking for wins after a rough week - NPR",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Tue, 22 Sep 2026 07:00:00 GMT",
-      "lastSeen": "Tue, 22 Sep 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMioAFBVV95cUxPam9BZnhXVDJtS0VwWS1nZ2tENzF2OHdwamNwNzlkdmctT1NNZ296ZVFLckFNdTB3d2hCOEhwQU1OOEtFMjh0b3NmNFpZRHUxaGhuVU5la1hOM2NmYnJ4Z1hMRnc3YjlGanp6dDd0LUNjdFFXR2dDOGo3VkdYbmZVNjE2ZXdrdjYtWHRhdkhFenhzU1YweHBMU2JOaElpdjVR?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Trump heads to the U.N. looking for wins after a rough week - NPR",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPam9BZnhXVDJtS0VwWS1nZ2tENzF2OHdwamNwNzlkdmctT1NNZ296ZVFLckFNdTB3d2hCOEhwQU1OOEtFMjh0b3NmNFpZRHUxaGhuVU5la1hOM2NmYnJ4Z1hMRnc3YjlGanp6dDd0LUNjdFFXR2dDOGo3VkdYbmZVNjE2ZXdrdjYtWHRhdkhFenhzU1YweHBMU2JOaElpdjVR?oc=5",
-          "published_date": "Tue, 22 Sep 2026 07:00:00 GMT",
-          "time": "Tue, 22 Sep 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NPR",
-          "summary": "Fallback discovery via Google News RSS; publisher: NPR",
-          "source": "NPR",
-          "sourceLabel": "NPR",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @POTUS",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
       "id": "1692178927cb93d0",
       "title": "EXCLUSIVE: US ties Sudanese army leader's UN visa to ceasefire plan, sources say - Reuters",
       "category": "diplomatic",
@@ -2971,38 +3040,6 @@
       ]
     },
     {
-      "id": "091f38bd12168ab4",
-      "title": "“You Better Be Careful”: Trump Lashes Out at White House Reporters - The New Republic",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Tue, 20 Oct 2026 20:11:51 GMT",
-      "lastSeen": "Tue, 20 Oct 2026 20:11:51 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMilwFBVV95cUxQUEx6Y1JiczdkQmdvQmVKZnBHTW1hMlM1ckNUNWcyaXBlSm1lbEkwb1RDeXVBR3doOGlGZFhFQkc4djI3LWZ4emxBOGc0ZHY2WEhRRTFfU1FYZDI4cWdRc3FsZXdKYS12NmNfSFJwMWtlYmlpWXMtMlF0VmlScFJYcGt1R1RFeTNGdTJvdlhhNmlRNVBFNmhz?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "“You Better Be Careful”: Trump Lashes Out at White House Reporters - The New Republic",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQUEx6Y1JiczdkQmdvQmVKZnBHTW1hMlM1ckNUNWcyaXBlSm1lbEkwb1RDeXVBR3doOGlGZFhFQkc4djI3LWZ4emxBOGc0ZHY2WEhRRTFfU1FYZDI4cWdRc3FsZXdKYS12NmNfSFJwMWtlYmlpWXMtMlF0VmlScFJYcGt1R1RFeTNGdTJvdlhhNmlRNVBFNmhz?oc=5",
-          "published_date": "Tue, 20 Oct 2026 20:11:51 GMT",
-          "time": "Tue, 20 Oct 2026 20:11:51 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: The New Republic",
-          "summary": "Fallback discovery via Google News RSS; publisher: The New Republic",
-          "source": "The New Republic",
-          "sourceLabel": "The New Republic",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @POTUS",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
       "id": "ed0c3b8feb10682b",
       "title": "NASA’s SR-1 Freedom Advances with Progress on Nuclear Power Module - NASA (.gov)",
       "category": "general",
@@ -3062,104 +3099,6 @@
           "sourceLabel": "NASA (.gov)",
           "sourceType": "fallback-news",
           "fallbackFor": "X @NASA",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "ac196e08bdb3bb36",
-      "title": "NASA Welcomes Uzbekistan as Newest Artemis Accords Signatory - NASA (.gov)",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [
-        "nato"
-      ],
-      "firstSeen": "Tue, 20 Oct 2026 14:21:42 GMT",
-      "lastSeen": "Tue, 20 Oct 2026 14:21:42 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNcFhVb1JCQ2FIR0NJam9QVmZxOWwwUmM5WDgwTS1TN1NDb3I4RWdQUl9qYzhPNF9QSmpXN2gyVWNRMS1JbTJQR09YU2MzaWhqbnQ1M1R3WEl4ekc1NnpQWFl1X1c0SzVkQjBWS21TVnFuXy10alhDMHlzSVYwWGw1eG1vdXlORUNUVkw3TFFLVTAtTjhTVVo3cmRxTE5JYWowdXZVQUg0cXJHb3pSNThEWS1FWElGYnhT?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "NASA Welcomes Uzbekistan as Newest Artemis Accords Signatory - NASA (.gov)",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNcFhVb1JCQ2FIR0NJam9QVmZxOWwwUmM5WDgwTS1TN1NDb3I4RWdQUl9qYzhPNF9QSmpXN2gyVWNRMS1JbTJQR09YU2MzaWhqbnQ1M1R3WEl4ekc1NnpQWFl1X1c0SzVkQjBWS21TVnFuXy10alhDMHlzSVYwWGw1eG1vdXlORUNUVkw3TFFLVTAtTjhTVVo3cmRxTE5JYWowdXZVQUg0cXJHb3pSNThEWS1FWElGYnhT?oc=5",
-          "published_date": "Tue, 20 Oct 2026 14:21:42 GMT",
-          "time": "Tue, 20 Oct 2026 14:21:42 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
-          "summary": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
-          "source": "NASA (.gov)",
-          "sourceLabel": "NASA (.gov)",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NASA",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "53f42c51620f8065",
-      "title": "UNRWA Commissioner-General: Unprecedented Violation of UN Premises and International Law in East Jerusalem - UNRWA",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Tue, 20 Jan 2026 08:00:00 GMT",
-      "lastSeen": "Tue, 20 Jan 2026 08:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiswFBVV95cUxONTRTSHVlemsyMnA2ZXBkdmllVjVKNVNPbUpRU0dZSGdkdHFXZ1JoN08wUVdjakRoUnQzNUNCZFczbU5CSmNnb3JXeFZYV2NZdjNxUU5STkRjdE9PTlBOQXdXLXZvQXFpY1ZjQTBYNFF1YTR4c0Y4WDdwNGRpWkVaajZaWG5ZeXRraWpoVmVqSDVNUm02dWNaZnBfZWxzS3hnM2xEeTFBRGxveWF2aVhOQVI1dw?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "UNRWA Commissioner-General: Unprecedented Violation of UN Premises and International Law in East Jerusalem - UNRWA",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxONTRTSHVlemsyMnA2ZXBkdmllVjVKNVNPbUpRU0dZSGdkdHFXZ1JoN08wUVdjakRoUnQzNUNCZFczbU5CSmNnb3JXeFZYV2NZdjNxUU5STkRjdE9PTlBOQXdXLXZvQXFpY1ZjQTBYNFF1YTR4c0Y4WDdwNGRpWkVaajZaWG5ZeXRraWpoVmVqSDVNUm02dWNaZnBfZWxzS3hnM2xEeTFBRGxveWF2aVhOQVI1dw?oc=5",
-          "published_date": "Tue, 20 Jan 2026 08:00:00 GMT",
-          "time": "Tue, 20 Jan 2026 08:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: UNRWA",
-          "summary": "Fallback discovery via Google News RSS; publisher: UNRWA",
-          "source": "UNRWA",
-          "sourceLabel": "UNRWA",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @UN",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "c52385d66fad1e42",
-      "title": "Fact Sheet: President Donald J. Trump Solidifies Economic and Defense Partnership with the Kingdom of Saudi Arabia - The White House (.gov)",
-      "category": "political",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Tue, 18 Nov 2025 08:00:00 GMT",
-      "lastSeen": "Tue, 18 Nov 2025 08:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOVVdyLW5JRGcyQ0Mxa2N1R01VSC04V0FsZDlNREp3NEVmc0VpWG91NjFCMWpTbmRvWGxIS3dMU2M1YjZGMVZFNEJIRGpqeE1VMjFkYU95MGNfVHkyT0xjSkF5OW42M1hPazBSU2RrUmo5RkYxQmVRMXlSMHNua1dMYWtxS2JBV0RFdnRKZ1N1WmI3MHVHbzRGYTk2S213TDhLa09BRnhPOS1lQ2xCd2JPX2ZWUW9TUEEzVzdaWjB1a0VidURvN1k0TFA5ZTBOaVYwNmo0OWtreGpHeXFfR3RaQjFQVkZqSzNFR1MyREszWEdVZw?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Fact Sheet: President Donald J. Trump Solidifies Economic and Defense Partnership with the Kingdom of Saudi Arabia - The White House (.gov)",
-          "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOVVdyLW5JRGcyQ0Mxa2N1R01VSC04V0FsZDlNREp3NEVmc0VpWG91NjFCMWpTbmRvWGxIS3dMU2M1YjZGMVZFNEJIRGpqeE1VMjFkYU95MGNfVHkyT0xjSkF5OW42M1hPazBSU2RrUmo5RkYxQmVRMXlSMHNua1dMYWtxS2JBV0RFdnRKZ1N1WmI3MHVHbzRGYTk2S213TDhLa09BRnhPOS1lQ2xCd2JPX2ZWUW9TUEEzVzdaWjB1a0VidURvN1k0TFA5ZTBOaVYwNmo0OWtreGpHeXFfR3RaQjFQVkZqSzNFR1MyREszWEdVZw?oc=5",
-          "published_date": "Tue, 18 Nov 2025 08:00:00 GMT",
-          "time": "Tue, 18 Nov 2025 08:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: The White House (.gov)",
-          "summary": "Fallback discovery via Google News RSS; publisher: The White House (.gov)",
-          "source": "The White House (.gov)",
-          "sourceLabel": "The White House (.gov)",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @WhiteHouse",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -3266,6 +3205,38 @@
       ]
     },
     {
+      "id": "446f548096f458d7",
+      "title": "US military kills two men in new strike on vessel in eastern Pacific - Al Jazeera",
+      "category": "conflict",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Tue, 14 Apr 2026 07:00:00 GMT",
+      "lastSeen": "Tue, 14 Apr 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMirgFBVV95cUxQcGQySVc0LUVqYUR4YUNuTjdKREQ4Tl9XYVpwN3RoVUFtZlpoR1VyVFptUXdNRmprSEtCVm9xbncwbzNrMHJMc1F0Q2lVX0lhUUpPUHpPdHBkdnMtMWdqYmVOUUJ5aUk4bXhJellRMnRwWlNRNy1JNnN2TkZnWGZQNnFiN2c1ZW43WGtDaXlZSVhwMEc2bDJlRi11Y3dSZzBIUy1TNnd3dE9OUGY1c3fSAbMBQVVfeXFMTmY4YmVsSVJ4NFhaOE0wWWdneENjNEJCa21DclpRU3hiX0g4elk0cDRYS196SkNXWEhEbWs2ZkVQR3VEWG5fdEEzbDRKdDdIUlY2eFNhM2o2V0dvN1pMSVgyN1llRmZqYVc3anF1RENQNGo0N0RhYnBXTDNIWmd0THExaXByVlZTUjRzRUthUTlaVVYxRGxHOTdkR3ZaVnp5bzNucTBLb1ZYZ2NybExJU2RraHM?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "US military kills two men in new strike on vessel in eastern Pacific - Al Jazeera",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQcGQySVc0LUVqYUR4YUNuTjdKREQ4Tl9XYVpwN3RoVUFtZlpoR1VyVFptUXdNRmprSEtCVm9xbncwbzNrMHJMc1F0Q2lVX0lhUUpPUHpPdHBkdnMtMWdqYmVOUUJ5aUk4bXhJellRMnRwWlNRNy1JNnN2TkZnWGZQNnFiN2c1ZW43WGtDaXlZSVhwMEc2bDJlRi11Y3dSZzBIUy1TNnd3dE9OUGY1c3fSAbMBQVVfeXFMTmY4YmVsSVJ4NFhaOE0wWWdneENjNEJCa21DclpRU3hiX0g4elk0cDRYS196SkNXWEhEbWs2ZkVQR3VEWG5fdEEzbDRKdDdIUlY2eFNhM2o2V0dvN1pMSVgyN1llRmZqYVc3anF1RENQNGo0N0RhYnBXTDNIWmd0THExaXByVlZTUjRzRUthUTlaVVYxRGxHOTdkR3ZaVnp5bzNucTBLb1ZYZ2NybExJU2RraHM?oc=5",
+          "published_date": "Tue, 14 Apr 2026 07:00:00 GMT",
+          "time": "Tue, 14 Apr 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Al Jazeera",
+          "summary": "Fallback discovery via Google News RSS; publisher: Al Jazeera",
+          "source": "Al Jazeera",
+          "sourceLabel": "Al Jazeera",
+          "sourceType": "fallback-news",
+          "fallbackFor": "GDELT — Western Hemisphere Counter-Cartel",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
       "id": "c8a082bc2e653760",
       "title": "NASA Names Astronaut Christina Koch Acting Deputy Chief Engineer - NASA (.gov)",
       "category": "general",
@@ -3291,6 +3262,38 @@
           "summary": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
           "source": "NASA (.gov)",
           "sourceLabel": "NASA (.gov)",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NASA",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "b669761d63945fb9",
+      "title": "NASA JPL Testing Readies Voyager Technologies Lander for Moon Mission - NASA Jet Propulsion Laboratory (JPL) (.gov)",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Tue, 13 Oct 2026 07:00:00 GMT",
+      "lastSeen": "Tue, 13 Oct 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiogFBVV95cUxNVmdBOHJ5U3BrcGRCUXdsbmxtV1VUQ1FqLU5aMm5rWWhXT0JFZFV0UTQ4c1NveTltSlpBY2x2UGJJMVN4SDdYZmVkcGZLaW5sWDZZbVNtZUtvTF9ZRlBqcVhaOXZVN0twQTVvX1YtdXIyV3pscERUM2JBZlA2WGxTV012ZmV6cmRfMkVJZzdCTURDY1ZudTdEdWdXVTRqNlNFSkE?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "NASA JPL Testing Readies Voyager Technologies Lander for Moon Mission - NASA Jet Propulsion Laboratory (JPL) (.gov)",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNVmdBOHJ5U3BrcGRCUXdsbmxtV1VUQ1FqLU5aMm5rWWhXT0JFZFV0UTQ4c1NveTltSlpBY2x2UGJJMVN4SDdYZmVkcGZLaW5sWDZZbVNtZUtvTF9ZRlBqcVhaOXZVN0twQTVvX1YtdXIyV3pscERUM2JBZlA2WGxTV012ZmV6cmRfMkVJZzdCTURDY1ZudTdEdWdXVTRqNlNFSkE?oc=5",
+          "published_date": "Tue, 13 Oct 2026 07:00:00 GMT",
+          "time": "Tue, 13 Oct 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NASA Jet Propulsion Laboratory (JPL) (.gov)",
+          "summary": "Fallback discovery via Google News RSS; publisher: NASA Jet Propulsion Laboratory (JPL) (.gov)",
+          "source": "NASA Jet Propulsion Laboratory (JPL) (.gov)",
+          "sourceLabel": "NASA Jet Propulsion Laboratory (JPL) (.gov)",
           "sourceType": "fallback-news",
           "fallbackFor": "X @NASA",
           "credit_metadata": "Google News RSS fallback"
@@ -3330,8 +3333,8 @@
       ]
     },
     {
-      "id": "0c1102e15b92ae3e",
-      "title": "Priorities - Welcome to the United Nations",
+      "id": "8353b62612795232",
+      "title": "Timeline: US strikes on alleged drug boats - ABC News - Breaking News, Latest News and Videos",
       "category": "general",
       "confidence": "low",
       "reportCount": 1,
@@ -3340,23 +3343,23 @@
         "news.google.com"
       ],
       "anchors": [],
-      "firstSeen": "Tue, 08 Sep 2026 07:00:00 GMT",
-      "lastSeen": "Tue, 08 Sep 2026 07:00:00 GMT",
+      "firstSeen": "Tue, 10 Feb 2026 23:30:21 GMT",
+      "lastSeen": "Tue, 10 Feb 2026 23:30:21 GMT",
       "urls": [
-        "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9DdmZUOG9xLWQySkUyMkpzcHdBWUNNbG5ORnFvVXNYcUpERkt1M2lkMm1aeGFNang4b0M5QnZCYjFLMDlKMWloS2ltMGR2UQ?oc=5"
+        "https://news.google.com/rss/articles/CBMijwFBVV95cUxQSDVWTzdUUEU0ZFhUc1N6cHd5QnZEOWpfdi1ObjJVd29EN1YzQXdJZ2dETUVUeUs3TG1SSlpfTXQyY0QzTE56T1hZdGRGVWlIM04yT3JiNkdJZnZpTUlCazRJX2V2S0VWNktZNGtzMVRIem53UUl0NllqbG1qLWxCT2FnekIzRkdKRHJYZFUzd9IBlAFBVV95cUxQQk9NQ2dIZGhTVUdQZjh1MU80dkVsOHlzQ1VOZ3FjRzRINEZnOVY5SjRWQ3Axbk8tWkdGa05oajhGM0FLbEFwaGVYNlBaaFFOZ2xCc1FON0FKcEl0UTJMTjk4UTVwVkxIeFBKT0RId1pIcGVBRUs0OVdxQzVhYjNqUHZieTdDTGJqU1Q1bEs0OV9uSlli?oc=5"
       ],
       "reports": [
         {
-          "title": "Priorities - Welcome to the United Nations",
-          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9DdmZUOG9xLWQySkUyMkpzcHdBWUNNbG5ORnFvVXNYcUpERkt1M2lkMm1aeGFNang4b0M5QnZCYjFLMDlKMWloS2ltMGR2UQ?oc=5",
-          "published_date": "Tue, 08 Sep 2026 07:00:00 GMT",
-          "time": "Tue, 08 Sep 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Welcome to the United Nations",
-          "summary": "Fallback discovery via Google News RSS; publisher: Welcome to the United Nations",
-          "source": "Welcome to the United Nations",
-          "sourceLabel": "Welcome to the United Nations",
+          "title": "Timeline: US strikes on alleged drug boats - ABC News - Breaking News, Latest News and Videos",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQSDVWTzdUUEU0ZFhUc1N6cHd5QnZEOWpfdi1ObjJVd29EN1YzQXdJZ2dETUVUeUs3TG1SSlpfTXQyY0QzTE56T1hZdGRGVWlIM04yT3JiNkdJZnZpTUlCazRJX2V2S0VWNktZNGtzMVRIem53UUl0NllqbG1qLWxCT2FnekIzRkdKRHJYZFUzd9IBlAFBVV95cUxQQk9NQ2dIZGhTVUdQZjh1MU80dkVsOHlzQ1VOZ3FjRzRINEZnOVY5SjRWQ3Axbk8tWkdGa05oajhGM0FLbEFwaGVYNlBaaFFOZ2xCc1FON0FKcEl0UTJMTjk4UTVwVkxIeFBKT0RId1pIcGVBRUs0OVdxQzVhYjNqUHZieTdDTGJqU1Q1bEs0OV9uSlli?oc=5",
+          "published_date": "Tue, 10 Feb 2026 23:30:21 GMT",
+          "time": "Tue, 10 Feb 2026 23:30:21 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: ABC News - Breaking News, Latest News and Videos",
+          "summary": "Fallback discovery via Google News RSS; publisher: ABC News - Breaking News, Latest News and Videos",
+          "source": "ABC News - Breaking News, Latest News and Videos",
+          "sourceLabel": "ABC News - Breaking News, Latest News and Videos",
           "sourceType": "fallback-news",
-          "fallbackFor": "X @UN",
+          "fallbackFor": "GDELT — Western Hemisphere Counter-Cartel",
           "credit_metadata": "Google News RSS fallback"
         }
       ]

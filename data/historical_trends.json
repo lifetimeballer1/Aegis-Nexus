@@ -1,15 +1,9 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-23T17:03:50.517968Z",
-  "availableSamples": 268,
-  "availableHours": 1159.7,
+  "updatedAt": "2026-10-23T20:22:25.144381Z",
+  "availableSamples": 269,
+  "availableHours": 1163.0,
   "series": [
-    {
-      "updatedAt": "2026-09-05T21:45:56.744093+00:00",
-      "tension": 41,
-      "delta": -34,
-      "scoreVersion": 5
-    },
     {
       "updatedAt": "2026-09-05T21:46:17.793927+00:00",
       "tension": 76,
@@ -1443,47 +1437,53 @@
       "tension": 38,
       "delta": -1.0,
       "scoreVersion": 5
+    },
+    {
+      "updatedAt": "2026-10-23T20:22:25.144381Z",
+      "tension": 37,
+      "delta": -1.0,
+      "scoreVersion": 5
     }
   ],
   "windows": {
     "6h": {
       "available": true,
       "samples": 2,
-      "start": "2026-10-23T12:11:26.713967Z",
-      "end": "2026-10-23T17:03:50.517968Z",
-      "startTension": 39,
-      "endTension": 38,
+      "start": "2026-10-23T17:03:50.517968Z",
+      "end": "2026-10-23T20:22:25.144381Z",
+      "startTension": 38,
+      "endTension": 37,
       "delta": -1.0,
       "trend": "STABLE"
     },
     "24h": {
       "available": true,
-      "samples": 2,
+      "samples": 3,
       "start": "2026-10-23T12:11:26.713967Z",
-      "end": "2026-10-23T17:03:50.517968Z",
+      "end": "2026-10-23T20:22:25.144381Z",
       "startTension": 39,
-      "endTension": 38,
-      "delta": -1.0,
-      "trend": "STABLE"
+      "endTension": 37,
+      "delta": -2.0,
+      "trend": "DOWN"
     },
     "7d": {
       "available": true,
       "samples": 39,
-      "start": "2026-10-16T18:09:10.122798Z",
-      "end": "2026-10-23T17:03:50.517968Z",
-      "startTension": 38,
-      "endTension": 38,
+      "start": "2026-10-16T21:02:15.494957Z",
+      "end": "2026-10-23T20:22:25.144381Z",
+      "startTension": 37,
+      "endTension": 37,
       "delta": 0.0,
       "trend": "STABLE"
     },
     "30d": {
       "available": true,
       "samples": 118,
-      "start": "2026-09-23T18:36:32.701974Z",
-      "end": "2026-10-23T17:03:50.517968Z",
+      "start": "2026-09-23T21:44:57.947133Z",
+      "end": "2026-10-23T20:22:25.144381Z",
       "startTension": 37,
-      "endTension": 38,
-      "delta": 1.0,
+      "endTension": 37,
+      "delta": 0.0,
       "trend": "STABLE"
     }
   }
