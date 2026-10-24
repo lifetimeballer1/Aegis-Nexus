@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-24T19:46:45.820288Z",
+  "updatedAt": "2026-10-24T21:56:42.786987Z",
   "window": "recent public reporting",
   "method": "anchor-aware title clustering with category and publication-time agreement; candidate grouping only, not proof reports describe identical facts",
   "events": [
@@ -218,13 +218,13 @@
       "title": "M 5.0 - 193 km NW of Port-Olry, Vanuatu",
       "category": "general",
       "confidence": "low",
-      "reportCount": 8,
+      "reportCount": 7,
       "sourceCount": 1,
       "sources": [
         "earthquake.usgs.gov"
       ],
       "anchors": [],
-      "firstSeen": "2026-10-24T09:54:31.040000Z",
+      "firstSeen": "2026-10-24T11:01:22.552000Z",
       "lastSeen": "2026-10-24T19:24:33.040000Z",
       "urls": [
         "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4nv",
@@ -233,14 +233,13 @@
         "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4ml",
         "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4mm",
         "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4mi",
-        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4lm",
-        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4lr"
+        "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4lm"
       ],
       "reports": [
         {
           "id": "cedfdfa67888",
-          "sourceLabel": "USGS M4.5+ Earthquakes — Past Day",
-          "sourceName": "USGS M4.5+ Earthquakes — Past Day",
+          "sourceLabel": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4nv",
+          "sourceName": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4nv",
           "sourceType": "climate-hazard",
           "title": "M 5.0 - 193 km NW of Port-Olry, Vanuatu",
           "summary": "Time 2026-10-24 19:07:15 UTC 2026-10-24 19:07:15 UTC at epicenter Location 13.975°S 165.656°E Depth 10.00 km (6.21 mi)",
@@ -397,29 +396,6 @@
             "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
             "feedFormat": "atom"
           }
-        },
-        {
-          "id": "271e142019a3",
-          "sourceLabel": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4lr",
-          "sourceName": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4lr",
-          "sourceType": "climate-hazard",
-          "title": "M 4.9 - 169 km NW of Port-Olry, Vanuatu",
-          "summary": "Time 2026-10-24 09:38:49 UTC 2026-10-24 09:38:49 UTC at epicenter Location 14.135°S 165.805°E Depth 10.00 km (6.21 mi)",
-          "summary_snippet": "Time 2026-10-24 09:38:49 UTC 2026-10-24 09:38:49 UTC at epicenter Location 14.135°S 165.805°E Depth 10.00 km (6.21 mi)",
-          "source": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4lr",
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4lr",
-          "time": "2026-10-24T09:54:31.040000Z",
-          "published_date": "2026-10-24T09:54:31.040000Z",
-          "publishedDate": "2026-10-24T09:54:31.040000Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "usgs_m4_5_earthquakes_past_day",
-            "sourceUrl": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom",
-            "feedFormat": "atom"
-          }
         }
       ]
     },
@@ -498,8 +474,8 @@
         },
         {
           "id": "b6fa2a776031",
-          "sourceLabel": "Google News — Ukraine War",
-          "sourceName": "Google News — Ukraine War",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNN2RTOW4yeUNxSWJHZnhTTkJBTzBhSE16R3plX2dSdmxEbmpJTVV3eHlTbkhaMjgyMmUtV2s3N3lFbFZYSFpydDQtVTN6QmxpQWE5UEMyVlltSXBMTF85YnVJUjd3bTRCYTNMTjd4RnRYWkh4UTZSR20wU25NcDdPd1pNN0h1SzEwZEdaOUVwR2dTbE1oOW4yQg?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNN2RTOW4yeUNxSWJHZnhTTkJBTzBhSE16R3plX2dSdmxEbmpJTVV3eHlTbkhaMjgyMmUtV2s3N3lFbFZYSFpydDQtVTN6QmxpQWE5UEMyVlltSXBMTF85YnVJUjd3bTRCYTNMTjd4RnRYWkh4UTZSR20wU25NcDdPd1pNN0h1SzEwZEdaOUVwR2dTbE1oOW4yQg?oc=5",
           "sourceType": "europe-conflict",
           "title": "Ukraine has 'stable connection' to Starlink: govt - France 24",
           "summary": "Ukraine has 'stable connection' to Starlink: govt France 24",
@@ -623,162 +599,6 @@
       ]
     },
     {
-      "id": "28742983871fd120",
-      "title": "Ukraine says Starlink is back to normal after disruptions",
-      "category": "general",
-      "confidence": "moderate",
-      "reportCount": 3,
-      "sourceCount": 2,
-      "sources": [
-        "npr.org",
-        "news.google.com"
-      ],
-      "anchors": [
-        "uk",
-        "ukraine"
-      ],
-      "firstSeen": "2026-10-24T13:14:00Z",
-      "lastSeen": "2026-10-24T17:54:25Z",
-      "urls": [
-        "https://www.npr.org/2026/10/24/nx-s1-6015482/ukraine-starlink-working-after-disruptions",
-        "https://news.google.com/rss/articles/CBMirAFBVV95cUxOcXRfcWhWNFRvYU1od2VMbjZobkI0aV9FZS1oaE9VOVRpSzJkeDJFVkZ0ZVR3RVU4SGJBenQ1SEtIS1BxYTFZa3E2YWFUZ1hIM2VjNlhvZVFXMGJLdFRNYVNkbk4zNGYzMExEcDJMR0c4YUR4MUhqZDJrS3RtalZsR3MxeGlKNkcxZGUxUFdUNVB1Z21ra0RMRWlBMmQ3dHVyNV9qbTFidE8zRm84?oc=5",
-        "https://news.google.com/rss/articles/CBMivgFBVV95cUxNVUgyMVNHajlDVXp0TVRQV1JQc2pEWW1PLTUxLUYzekt5ODl6TXl0U3hMTUZkZzBfd3BqaV9xTThNcS1HQllmaDBVejdaUjZYQkZNdm9xY2FFeFNDRlJCY0hiT0dEY2JDTk5UVS1NSjUtTW9xX0dPTXVQZ1NtUE1WLTNyWGdUazJQV1pCcjBPak92NVV3VzYyYklEZXRjOU9UamVYaFEwdkFRcGNlN2VScjg2Yk5yREpUcU1XalZ3?oc=5"
-      ],
-      "reports": [
-        {
-          "id": "19c0d49aeb1d",
-          "sourceLabel": "NPR News",
-          "sourceName": "NPR News",
-          "sourceType": "us-politics",
-          "title": "Ukraine says Starlink is back to normal after disruptions",
-          "summary": "Ukrainian President Volodymyr Zelenskyy said that normal Starlink operating speeds were restored after more than a week of disruptions.",
-          "summary_snippet": "Ukrainian President Volodymyr Zelenskyy said that normal Starlink operating speeds were restored after more than a week of disruptions.",
-          "source": "https://www.npr.org/2026/10/24/nx-s1-6015482/ukraine-starlink-working-after-disruptions",
-          "url": "https://www.npr.org/2026/10/24/nx-s1-6015482/ukraine-starlink-working-after-disruptions",
-          "time": "2026-10-24T17:54:25Z",
-          "published_date": "2026-10-24T17:54:25Z",
-          "publishedDate": "2026-10-24T17:54:25Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "npr_news",
-            "sourceUrl": "https://feeds.npr.org/1001/rss.xml",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "358071d45ef3",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOcXRfcWhWNFRvYU1od2VMbjZobkI0aV9FZS1oaE9VOVRpSzJkeDJFVkZ0ZVR3RVU4SGJBenQ1SEtIS1BxYTFZa3E2YWFUZ1hIM2VjNlhvZVFXMGJLdFRNYVNkbk4zNGYzMExEcDJMR0c4YUR4MUhqZDJrS3RtalZsR3MxeGlKNkcxZGUxUFdUNVB1Z21ra0RMRWlBMmQ3dHVyNV9qbTFidE8zRm84?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOcXRfcWhWNFRvYU1od2VMbjZobkI0aV9FZS1oaE9VOVRpSzJkeDJFVkZ0ZVR3RVU4SGJBenQ1SEtIS1BxYTFZa3E2YWFUZ1hIM2VjNlhvZVFXMGJLdFRNYVNkbk4zNGYzMExEcDJMR0c4YUR4MUhqZDJrS3RtalZsR3MxeGlKNkcxZGUxUFdUNVB1Z21ra0RMRWlBMmQ3dHVyNV9qbTFidE8zRm84?oc=5",
-          "sourceType": "europe-conflict",
-          "title": "Starlink in Ukraine Back to Normal After Week of Throttling - The Moscow Times",
-          "summary": "Starlink in Ukraine Back to Normal After Week of Throttling The Moscow Times",
-          "summary_snippet": "Starlink in Ukraine Back to Normal After Week of Throttling The Moscow Times",
-          "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOcXRfcWhWNFRvYU1od2VMbjZobkI0aV9FZS1oaE9VOVRpSzJkeDJFVkZ0ZVR3RVU4SGJBenQ1SEtIS1BxYTFZa3E2YWFUZ1hIM2VjNlhvZVFXMGJLdFRNYVNkbk4zNGYzMExEcDJMR0c4YUR4MUhqZDJrS3RtalZsR3MxeGlKNkcxZGUxUFdUNVB1Z21ra0RMRWlBMmQ3dHVyNV9qbTFidE8zRm84?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOcXRfcWhWNFRvYU1od2VMbjZobkI0aV9FZS1oaE9VOVRpSzJkeDJFVkZ0ZVR3RVU4SGJBenQ1SEtIS1BxYTFZa3E2YWFUZ1hIM2VjNlhvZVFXMGJLdFRNYVNkbk4zNGYzMExEcDJMR0c4YUR4MUhqZDJrS3RtalZsR3MxeGlKNkcxZGUxUFdUNVB1Z21ra0RMRWlBMmQ3dHVyNV9qbTFidE8zRm84?oc=5",
-          "time": "2026-10-24T15:18:06Z",
-          "published_date": "2026-10-24T15:18:06Z",
-          "publishedDate": "2026-10-24T15:18:06Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_ukraine_war",
-            "sourceUrl": "https://news.google.com/rss/search?q=Ukraine+Russia+war+frontline+missile+drone+strike+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "c66938e1299a",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNVUgyMVNHajlDVXp0TVRQV1JQc2pEWW1PLTUxLUYzekt5ODl6TXl0U3hMTUZkZzBfd3BqaV9xTThNcS1HQllmaDBVejdaUjZYQkZNdm9xY2FFeFNDRlJCY0hiT0dEY2JDTk5UVS1NSjUtTW9xX0dPTXVQZ1NtUE1WLTNyWGdUazJQV1pCcjBPak92NVV3VzYyYklEZXRjOU9UamVYaFEwdkFRcGNlN2VScjg2Yk5yREpUcU1XalZ3?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNVUgyMVNHajlDVXp0TVRQV1JQc2pEWW1PLTUxLUYzekt5ODl6TXl0U3hMTUZkZzBfd3BqaV9xTThNcS1HQllmaDBVejdaUjZYQkZNdm9xY2FFeFNDRlJCY0hiT0dEY2JDTk5UVS1NSjUtTW9xX0dPTXVQZ1NtUE1WLTNyWGdUazJQV1pCcjBPak92NVV3VzYyYklEZXRjOU9UamVYaFEwdkFRcGNlN2VScjg2Yk5yREpUcU1XalZ3?oc=5",
-          "sourceType": "europe-conflict",
-          "title": "Ukraine says Starlink back to normal after a week of throttling - Free Malaysia Today",
-          "summary": "Ukraine says Starlink back to normal after a week of throttling Free Malaysia Today",
-          "summary_snippet": "Ukraine says Starlink back to normal after a week of throttling Free Malaysia Today",
-          "source": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNVUgyMVNHajlDVXp0TVRQV1JQc2pEWW1PLTUxLUYzekt5ODl6TXl0U3hMTUZkZzBfd3BqaV9xTThNcS1HQllmaDBVejdaUjZYQkZNdm9xY2FFeFNDRlJCY0hiT0dEY2JDTk5UVS1NSjUtTW9xX0dPTXVQZ1NtUE1WLTNyWGdUazJQV1pCcjBPak92NVV3VzYyYklEZXRjOU9UamVYaFEwdkFRcGNlN2VScjg2Yk5yREpUcU1XalZ3?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNVUgyMVNHajlDVXp0TVRQV1JQc2pEWW1PLTUxLUYzekt5ODl6TXl0U3hMTUZkZzBfd3BqaV9xTThNcS1HQllmaDBVejdaUjZYQkZNdm9xY2FFeFNDRlJCY0hiT0dEY2JDTk5UVS1NSjUtTW9xX0dPTXVQZ1NtUE1WLTNyWGdUazJQV1pCcjBPak92NVV3VzYyYklEZXRjOU9UamVYaFEwdkFRcGNlN2VScjg2Yk5yREpUcU1XalZ3?oc=5",
-          "time": "2026-10-24T13:14:00Z",
-          "published_date": "2026-10-24T13:14:00Z",
-          "publishedDate": "2026-10-24T13:14:00Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_ukraine_war",
-            "sourceUrl": "https://news.google.com/rss/search?q=Ukraine+Russia+war+frontline+missile+drone+strike+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "b6368c4e1b113a3c",
-      "title": "Statement by NATO Foreign Ministers - North Atlantic Treaty Organization | NATO",
-      "category": "diplomatic",
-      "confidence": "low",
-      "reportCount": 3,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [
-        "nato"
-      ],
-      "firstSeen": "Fri, 03 Feb 2023 08:00:00 GMT",
-      "lastSeen": "Tue, 29 Nov 2022 08:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQVFh4ZkYwdENWVEhrOUpUSGtxVUZZV1RvLU05UUhGYVVwTV9PSWlXSFE4MFFmbjZyYUFlZVVxMjBCODFMeWk0VHRVeHVSV3o2RDg2MUUwdFZzb28yRGN0bzVKTklvUmlDVWUtMHpLRjNnZHdHTW56YXJER2VoSlFaVlVDX1FRa3ZIclJDdzl5NDdfZ0d1UXBhaF93MUx0MFdHczZRY1BndzFBX1ZSdWlCUGVPdFRNUFk1T2VzU2F2N3Y?oc=5",
-        "https://news.google.com/rss/articles/CBMingFBVV95cUxOZkxLV1ZvZDlhdVA4Q1VxajFrU3NObTF2V0VOVFEycnVnaFU3Vzk4REhHQk5ac2dqLWdKSWlaUFRiR3NYazdmczk3Qlk2SEpGUU1VVWdBYjhPMml4eGRfckNWVlJvSlZqU1ZpLXpfX1YtOUpQUS1XTkNQTG9hU3BuTUFCbElfWTFfbjFPcHMwMWs5OWJJZWFCSGllVmhFUQ?oc=5",
-        "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOT3hQZ1B0TEVRdWh4ZWk3amc0anpQNkc5RURXejRFM3pzN0kwRGNFOGNIYTE3SDJ5N1RwR3VFQTEtOGNpX2dEcWVDTkgtdTZVbTR4TkdkSTIyb0pVc3g1SVVPOWhfc3BGaXJkcy1OdXFfYW5WRGhad0x3VkdtSkxHX3dHMWhtMVBBRzRoUnZKZTlvejNRbWdQZjBKeUtpQzVGRHNqNm9RM2h4LVQzekRzZWRQMWYtNS1EOEszOWl5TlB2X0NJZ2JoOUJ4cUxuNkpEZTRrdnUwYWdSSV94Qy1kSXpvVndxUQ?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Statement by NATO Foreign Ministers - North Atlantic Treaty Organization | NATO",
-          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQVFh4ZkYwdENWVEhrOUpUSGtxVUZZV1RvLU05UUhGYVVwTV9PSWlXSFE4MFFmbjZyYUFlZVVxMjBCODFMeWk0VHRVeHVSV3o2RDg2MUUwdFZzb28yRGN0bzVKTklvUmlDVWUtMHpLRjNnZHdHTW56YXJER2VoSlFaVlVDX1FRa3ZIclJDdzl5NDdfZ0d1UXBhaF93MUx0MFdHczZRY1BndzFBX1ZSdWlCUGVPdFRNUFk1T2VzU2F2N3Y?oc=5",
-          "published_date": "Tue, 29 Nov 2022 08:00:00 GMT",
-          "time": "Tue, 29 Nov 2022 08:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "summary": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "source": "North Atlantic Treaty Organization | NATO",
-          "sourceLabel": "North Atlantic Treaty Organization | NATO",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NATO",
-          "credit_metadata": "Google News RSS fallback"
-        },
-        {
-          "title": "Statement - North Atlantic Treaty Organization | NATO",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOZkxLV1ZvZDlhdVA4Q1VxajFrU3NObTF2V0VOVFEycnVnaFU3Vzk4REhHQk5ac2dqLWdKSWlaUFRiR3NYazdmczk3Qlk2SEpGUU1VVWdBYjhPMml4eGRfckNWVlJvSlZqU1ZpLXpfX1YtOUpQUS1XTkNQTG9hU3BuTUFCbElfWTFfbjFPcHMwMWs5OWJJZWFCSGllVmhFUQ?oc=5",
-          "published_date": "Mon, 19 Jul 2021 07:00:00 GMT",
-          "time": "Mon, 19 Jul 2021 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "summary": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "source": "North Atlantic Treaty Organization | NATO",
-          "sourceLabel": "North Atlantic Treaty Organization | NATO",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NATO",
-          "credit_metadata": "Google News RSS fallback"
-        },
-        {
-          "title": "Statement by the North Atlantic Council on the New START Treaty - North Atlantic Treaty Organization | NATO",
-          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOT3hQZ1B0TEVRdWh4ZWk3amc0anpQNkc5RURXejRFM3pzN0kwRGNFOGNIYTE3SDJ5N1RwR3VFQTEtOGNpX2dEcWVDTkgtdTZVbTR4TkdkSTIyb0pVc3g1SVVPOWhfc3BGaXJkcy1OdXFfYW5WRGhad0x3VkdtSkxHX3dHMWhtMVBBRzRoUnZKZTlvejNRbWdQZjBKeUtpQzVGRHNqNm9RM2h4LVQzekRzZWRQMWYtNS1EOEszOWl5TlB2X0NJZ2JoOUJ4cUxuNkpEZTRrdnUwYWdSSV94Qy1kSXpvVndxUQ?oc=5",
-          "published_date": "Fri, 03 Feb 2023 08:00:00 GMT",
-          "time": "Fri, 03 Feb 2023 08:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "summary": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "source": "North Atlantic Treaty Organization | NATO",
-          "sourceLabel": "North Atlantic Treaty Organization | NATO",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NATO",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
       "id": "d4032f4cad0427a7",
       "title": "Relations with Ukraine - North Atlantic Treaty Organization | NATO",
       "category": "diplomatic",
@@ -844,8 +664,8 @@
       ]
     },
     {
-      "id": "505900baa135b205",
-      "title": "Ukraine reports Starlink speeds above 400 km/h after restrictions disrupted drone operations - Business Upturn",
+      "id": "0bcbc49df1997df5",
+      "title": "US Tightens Israel Travel Advisory Amid Rising Houthi Threat - https://www.thetraveler.org/",
       "category": "general",
       "confidence": "low",
       "reportCount": 3,
@@ -854,76 +674,122 @@
         "news.google.com"
       ],
       "anchors": [
-        "uk",
-        "ukraine"
+        "israel"
       ],
-      "firstSeen": "2026-10-24T10:11:00Z",
-      "lastSeen": "2026-10-24T11:37:01Z",
+      "firstSeen": "2026-10-24T18:18:41Z",
+      "lastSeen": "2026-10-24T20:23:41Z",
       "urls": [
-        "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPRnRjR2R4SU5yQkJhck9DSjhhLTZncWh1ZG9WS0l5SVBCN3dyOElLUTA3M2hGZ0p3TndyQXZpcUVlMW9LTHZLRlFhT3VTejRYbG8xTjRaTUxIZjJBZzNUZ0MtSVozQWVCdXpNMVQ2MGV1cnlYeUNSM3lhWHpUVUdrdms2S0xjb1NoMmdtb0hCTW1rLVZpVGRkTDZOMTQxNlVJbF9rc3VGUkI5VDllLU9YMm53Y0E3X0owRWxOaVEzOFNrM0hGalF0bnoyN01TekhOb3B5QnFJS0QxNEU?oc=5",
-        "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQRFVZN2tPS3ZDdGxvcmdxNDdMdFhzMGxFQzh6LTlTN1B4dGxXbnNCQTlYVVFHajVyMF9ycFltd3plSXdPeTZwMmQxRWRNanZRaUZEbXowNUdJbXFXcmlSSWhnYVkxMUlyZzFMUnhZR1MwTDNubjNIaHlkQUp6aldrX19tUVU0Q1R0cThiYWlxd0o4MXpoZXdpRzJBZjdtYjVQSk1CNGl2clJOUVQzQUN2eGtlS3ZtT0lfVFJNQWlmaHhIcERnOFZneTBHUmgwNU5feDBXajR3?oc=5",
-        "https://news.google.com/rss/articles/CBMimgFBVV95cUxNYUpuSFJPTXVhb1VPdG02ZzhkeHZ2cnhDY1I3bGJWLUlLTXh2Wk9JcEh0eWFESEJoazNNSXRPOHdkSnUxYzBKeU9uTllxUDhfSENPU2NCSFppREg4OGllRlVyUktsVFpBU1hPdmlPdkJfMVlRdlM2ZHFPdU0ybE9sR0Yxc01LOWd6bkN5WWlpOTlZQUw4ZEdjRlln?oc=5"
+        "https://news.google.com/rss/articles/CBMikwFBVV95cUxOdVZzSTBmZ1dLYXpldTN5T0djMVhjWEZuUGlpUi1GdnR1VHpYeVRMQlk1SnhoaEV5WUZIZmYxVU56d1pmZzFyOHlUWVlNRmcyLXE0djlRQVFLYzdvWUZJYkk0emVINl9xMHRiX2QxMWw4VW9LUndENFZ0dUltV3FWeE9QYlFxZW9xMmo3LXFnYXVWdFU?oc=5",
+        "https://news.google.com/rss/articles/CBMijgFBVV95cUxQWl95MzhEV2ZEZTNaYzVWclpfSGNVMkljdFpTb3JHdEo5ZVhLV3VvandORjI0R3EwOU1iS3FUT1hKdUZ3ZW8yUFVIcmd4UERON3ByZkR3R1U2S1ZMX0VrOGlyQi0xcjd6aWxlU2NTQThTV3BESG5YTk40MGdRVDBZcVBjRWhOXzdqMEJKNXln?oc=5",
+        "https://news.google.com/rss/articles/CBMikgFBVV95cUxPNTZ4UThmUC16V0tCclNJQUxHM2pNYUxteVZ6ZGh0d29fR0w0anBrTXp0MVJzNGRaeXlxWHBWYUxoUWJqdUV5Q2tKempuWExqNFpqb1FWam42M0xPQ2VVaGdCS2FmWWhYVkJGeGdISjd6eHJmTzVQRWNUS3RoZGd0YXRtdXhKeHJ4bnNEQlZpOUZhZw?oc=5"
       ],
       "reports": [
         {
-          "id": "0bb642b5c3e5",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPRnRjR2R4SU5yQkJhck9DSjhhLTZncWh1ZG9WS0l5SVBCN3dyOElLUTA3M2hGZ0p3TndyQXZpcUVlMW9LTHZLRlFhT3VTejRYbG8xTjRaTUxIZjJBZzNUZ0MtSVozQWVCdXpNMVQ2MGV1cnlYeUNSM3lhWHpUVUdrdms2S0xjb1NoMmdtb0hCTW1rLVZpVGRkTDZOMTQxNlVJbF9rc3VGUkI5VDllLU9YMm53Y0E3X0owRWxOaVEzOFNrM0hGalF0bnoyN01TekhOb3B5QnFJS0QxNEU?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPRnRjR2R4SU5yQkJhck9DSjhhLTZncWh1ZG9WS0l5SVBCN3dyOElLUTA3M2hGZ0p3TndyQXZpcUVlMW9LTHZLRlFhT3VTejRYbG8xTjRaTUxIZjJBZzNUZ0MtSVozQWVCdXpNMVQ2MGV1cnlYeUNSM3lhWHpUVUdrdms2S0xjb1NoMmdtb0hCTW1rLVZpVGRkTDZOMTQxNlVJbF9rc3VGUkI5VDllLU9YMm53Y0E3X0owRWxOaVEzOFNrM0hGalF0bnoyN01TekhOb3B5QnFJS0QxNEU?oc=5",
-          "sourceType": "europe-conflict",
-          "title": "Ukraine reports Starlink speeds above 400 km/h after restrictions disrupted drone operations - Business Upturn",
-          "summary": "Ukraine reports Starlink speeds above 400 km/h after restrictions disrupted drone operations Business Upturn",
-          "summary_snippet": "Ukraine reports Starlink speeds above 400 km/h after restrictions disrupted drone operations Business Upturn",
-          "source": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPRnRjR2R4SU5yQkJhck9DSjhhLTZncWh1ZG9WS0l5SVBCN3dyOElLUTA3M2hGZ0p3TndyQXZpcUVlMW9LTHZLRlFhT3VTejRYbG8xTjRaTUxIZjJBZzNUZ0MtSVozQWVCdXpNMVQ2MGV1cnlYeUNSM3lhWHpUVUdrdms2S0xjb1NoMmdtb0hCTW1rLVZpVGRkTDZOMTQxNlVJbF9rc3VGUkI5VDllLU9YMm53Y0E3X0owRWxOaVEzOFNrM0hGalF0bnoyN01TekhOb3B5QnFJS0QxNEU?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPRnRjR2R4SU5yQkJhck9DSjhhLTZncWh1ZG9WS0l5SVBCN3dyOElLUTA3M2hGZ0p3TndyQXZpcUVlMW9LTHZLRlFhT3VTejRYbG8xTjRaTUxIZjJBZzNUZ0MtSVozQWVCdXpNMVQ2MGV1cnlYeUNSM3lhWHpUVUdrdms2S0xjb1NoMmdtb0hCTW1rLVZpVGRkTDZOMTQxNlVJbF9rc3VGUkI5VDllLU9YMm53Y0E3X0owRWxOaVEzOFNrM0hGalF0bnoyN01TekhOb3B5QnFJS0QxNEU?oc=5",
-          "time": "2026-10-24T11:37:01Z",
-          "published_date": "2026-10-24T11:37:01Z",
-          "publishedDate": "2026-10-24T11:37:01Z",
-          "tag": "Breaking",
+          "id": "49e802fe72a0",
+          "sourceLabel": "Google News — Yemen / Red Sea",
+          "sourceName": "Google News — Yemen / Red Sea",
+          "sourceType": "middle-east-conflict",
+          "title": "US Tightens Israel Travel Advisory Amid Rising Houthi Threat - https://www.thetraveler.org/",
+          "summary": "US Tightens Israel Travel Advisory Amid Rising Houthi Threat https://www.thetraveler.org/",
+          "summary_snippet": "US Tightens Israel Travel Advisory Amid Rising Houthi Threat https://www.thetraveler.org/",
+          "source": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOdVZzSTBmZ1dLYXpldTN5T0djMVhjWEZuUGlpUi1GdnR1VHpYeVRMQlk1SnhoaEV5WUZIZmYxVU56d1pmZzFyOHlUWVlNRmcyLXE0djlRQVFLYzdvWUZJYkk0emVINl9xMHRiX2QxMWw4VW9LUndENFZ0dUltV3FWeE9QYlFxZW9xMmo3LXFnYXVWdFU?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOdVZzSTBmZ1dLYXpldTN5T0djMVhjWEZuUGlpUi1GdnR1VHpYeVRMQlk1SnhoaEV5WUZIZmYxVU56d1pmZzFyOHlUWVlNRmcyLXE0djlRQVFLYzdvWUZJYkk0emVINl9xMHRiX2QxMWw4VW9LUndENFZ0dUltV3FWeE9QYlFxZW9xMmo3LXFnYXVWdFU?oc=5",
+          "time": "2026-10-24T20:23:41Z",
+          "published_date": "2026-10-24T20:23:41Z",
+          "publishedDate": "2026-10-24T20:23:41Z",
+          "tag": "World",
           "confidence": "DEVELOPING",
-          "breaking": true,
+          "breaking": false,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "google_news_ukraine_war",
-            "sourceUrl": "https://news.google.com/rss/search?q=Ukraine+Russia+war+frontline+missile+drone+strike+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "sourceId": "google_news_yemen_red_sea",
+            "sourceUrl": "https://news.google.com/rss/search?q=Yemen+Houthis+Red+Sea+shipping+missile+drone+conflict+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
         },
         {
-          "id": "397c73edacee",
+          "id": "ce8e2e1b11e9",
+          "sourceLabel": "Google News — Iran Israel",
+          "sourceName": "Google News — Iran Israel",
+          "sourceType": "middle-east-conflict",
+          "title": "US Sharpens Israel Travel Warning As Houthi Threat Grows - https://www.thetraveler.org/",
+          "summary": "US Sharpens Israel Travel Warning As Houthi Threat Grows https://www.thetraveler.org/",
+          "summary_snippet": "US Sharpens Israel Travel Warning As Houthi Threat Grows https://www.thetraveler.org/",
+          "source": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQWl95MzhEV2ZEZTNaYzVWclpfSGNVMkljdFpTb3JHdEo5ZVhLV3VvandORjI0R3EwOU1iS3FUT1hKdUZ3ZW8yUFVIcmd4UERON3ByZkR3R1U2S1ZMX0VrOGlyQi0xcjd6aWxlU2NTQThTV3BESG5YTk40MGdRVDBZcVBjRWhOXzdqMEJKNXln?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQWl95MzhEV2ZEZTNaYzVWclpfSGNVMkljdFpTb3JHdEo5ZVhLV3VvandORjI0R3EwOU1iS3FUT1hKdUZ3ZW8yUFVIcmd4UERON3ByZkR3R1U2S1ZMX0VrOGlyQi0xcjd6aWxlU2NTQThTV3BESG5YTk40MGdRVDBZcVBjRWhOXzdqMEJKNXln?oc=5",
+          "time": "2026-10-24T19:43:41Z",
+          "published_date": "2026-10-24T19:43:41Z",
+          "publishedDate": "2026-10-24T19:43:41Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_iran_israel",
+            "sourceUrl": "https://news.google.com/rss/search?q=Iran+Israel+conflict+missile+drone+strike+escalation+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "21fc057b5074",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPNTZ4UThmUC16V0tCclNJQUxHM2pNYUxteVZ6ZGh0d29fR0w0anBrTXp0MVJzNGRaeXlxWHBWYUxoUWJqdUV5Q2tKempuWExqNFpqb1FWam42M0xPQ2VVaGdCS2FmWWhYVkJGeGdISjd6eHJmTzVQRWNUS3RoZGd0YXRtdXhKeHJ4bnNEQlZpOUZhZw?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPNTZ4UThmUC16V0tCclNJQUxHM2pNYUxteVZ6ZGh0d29fR0w0anBrTXp0MVJzNGRaeXlxWHBWYUxoUWJqdUV5Q2tKempuWExqNFpqb1FWam42M0xPQ2VVaGdCS2FmWWhYVkJGeGdISjd6eHJmTzVQRWNUS3RoZGd0YXRtdXhKeHJ4bnNEQlZpOUZhZw?oc=5",
+          "sourceType": "middle-east-conflict",
+          "title": "US Tightens Israel Travel Warning Amid Rising Houthi Threat - https://www.thetraveler.org/",
+          "summary": "US Tightens Israel Travel Warning Amid Rising Houthi Threat https://www.thetraveler.org/",
+          "summary_snippet": "US Tightens Israel Travel Warning Amid Rising Houthi Threat https://www.thetraveler.org/",
+          "source": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPNTZ4UThmUC16V0tCclNJQUxHM2pNYUxteVZ6ZGh0d29fR0w0anBrTXp0MVJzNGRaeXlxWHBWYUxoUWJqdUV5Q2tKempuWExqNFpqb1FWam42M0xPQ2VVaGdCS2FmWWhYVkJGeGdISjd6eHJmTzVQRWNUS3RoZGd0YXRtdXhKeHJ4bnNEQlZpOUZhZw?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPNTZ4UThmUC16V0tCclNJQUxHM2pNYUxteVZ6ZGh0d29fR0w0anBrTXp0MVJzNGRaeXlxWHBWYUxoUWJqdUV5Q2tKempuWExqNFpqb1FWam42M0xPQ2VVaGdCS2FmWWhYVkJGeGdISjd6eHJmTzVQRWNUS3RoZGd0YXRtdXhKeHJ4bnNEQlZpOUZhZw?oc=5",
+          "time": "2026-10-24T18:18:41Z",
+          "published_date": "2026-10-24T18:18:41Z",
+          "publishedDate": "2026-10-24T18:18:41Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_iran_israel",
+            "sourceUrl": "https://news.google.com/rss/search?q=Iran+Israel+conflict+missile+drone+strike+escalation+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
+      "id": "983e36d8f9c04506",
+      "title": "Musk speaks out on Starlink after service in Ukraine restored - Belfast Telegraph",
+      "category": "general",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "sourceCount": 2,
+      "sources": [
+        "news.google.com",
+        "stripes.com"
+      ],
+      "anchors": [
+        "uk",
+        "ukraine"
+      ],
+      "firstSeen": "2026-10-24T18:07:08Z",
+      "lastSeen": "2026-10-24T21:31:30Z",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQTjc4YU9aSFFhN2FlY3VKY2dIbnlRNlJ3bWRRd1BYY3lob3NiZ2FFNU81OUREVmtIUWhJY3REd1JPZ0ZhU2tNS2pEanFRM1VTM0twYXFJLTB0dlF5SGVpSzQwR1haQ002QkZIUno4QU1QNkp2Yk14NU52X20tbDEtbGdPa0RyWFpHX0JfbDMwRWFGWHd5VGdMdThJZmN5ZjFBUUtLbHhKcEJ4RUFxb3FJcG5NNkpUeEdEc0ljeDZGV0ZRU2lGZGRibQ?oc=5",
+        "https://www.stripes.com/theaters/europe/2026-10-24/starlink-ukraine-service-restored-23248708.html"
+      ],
+      "reports": [
+        {
+          "id": "1428fc69893d",
           "sourceLabel": "Google News — Ukraine War",
           "sourceName": "Google News — Ukraine War",
           "sourceType": "europe-conflict",
-          "title": "Ukraine reports Starlink speeds above 400 km/h after restrictions disrupted drone operations - Business Upturn",
-          "summary": "Ukraine reports Starlink speeds above 400 km/h after restrictions disrupted drone operations Business Upturn",
-          "summary_snippet": "Ukraine reports Starlink speeds above 400 km/h after restrictions disrupted drone operations Business Upturn",
-          "source": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQRFVZN2tPS3ZDdGxvcmdxNDdMdFhzMGxFQzh6LTlTN1B4dGxXbnNCQTlYVVFHajVyMF9ycFltd3plSXdPeTZwMmQxRWRNanZRaUZEbXowNUdJbXFXcmlSSWhnYVkxMUlyZzFMUnhZR1MwTDNubjNIaHlkQUp6aldrX19tUVU0Q1R0cThiYWlxd0o4MXpoZXdpRzJBZjdtYjVQSk1CNGl2clJOUVQzQUN2eGtlS3ZtT0lfVFJNQWlmaHhIcERnOFZneTBHUmgwNU5feDBXajR3?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQRFVZN2tPS3ZDdGxvcmdxNDdMdFhzMGxFQzh6LTlTN1B4dGxXbnNCQTlYVVFHajVyMF9ycFltd3plSXdPeTZwMmQxRWRNanZRaUZEbXowNUdJbXFXcmlSSWhnYVkxMUlyZzFMUnhZR1MwTDNubjNIaHlkQUp6aldrX19tUVU0Q1R0cThiYWlxd0o4MXpoZXdpRzJBZjdtYjVQSk1CNGl2clJOUVQzQUN2eGtlS3ZtT0lfVFJNQWlmaHhIcERnOFZneTBHUmgwNU5feDBXajR3?oc=5",
-          "time": "2026-10-24T11:37:01Z",
-          "published_date": "2026-10-24T11:37:01Z",
-          "publishedDate": "2026-10-24T11:37:01Z",
-          "tag": "Breaking",
-          "confidence": "DEVELOPING",
-          "breaking": true,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_ukraine_war",
-            "sourceUrl": "https://news.google.com/rss/search?q=Ukraine+Russia+war+frontline+missile+drone+strike+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "cd8f5818cf55",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNYUpuSFJPTXVhb1VPdG02ZzhkeHZ2cnhDY1I3bGJWLUlLTXh2Wk9JcEh0eWFESEJoazNNSXRPOHdkSnUxYzBKeU9uTllxUDhfSENPU2NCSFppREg4OGllRlVyUktsVFpBU1hPdmlPdkJfMVlRdlM2ZHFPdU0ybE9sR0Yxc01LOWd6bkN5WWlpOTlZQUw4ZEdjRlln?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNYUpuSFJPTXVhb1VPdG02ZzhkeHZ2cnhDY1I3bGJWLUlLTXh2Wk9JcEh0eWFESEJoazNNSXRPOHdkSnUxYzBKeU9uTllxUDhfSENPU2NCSFppREg4OGllRlVyUktsVFpBU1hPdmlPdkJfMVlRdlM2ZHFPdU0ybE9sR0Yxc01LOWd6bkN5WWlpOTlZQUw4ZEdjRlln?oc=5",
-          "sourceType": "europe-conflict",
-          "title": "Ukraine says Starlink, Starshield connections return to normal speeds - inkl",
-          "summary": "Ukraine says Starlink, Starshield connections return to normal speeds inkl",
-          "summary_snippet": "Ukraine says Starlink, Starshield connections return to normal speeds inkl",
-          "source": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNYUpuSFJPTXVhb1VPdG02ZzhkeHZ2cnhDY1I3bGJWLUlLTXh2Wk9JcEh0eWFESEJoazNNSXRPOHdkSnUxYzBKeU9uTllxUDhfSENPU2NCSFppREg4OGllRlVyUktsVFpBU1hPdmlPdkJfMVlRdlM2ZHFPdU0ybE9sR0Yxc01LOWd6bkN5WWlpOTlZQUw4ZEdjRlln?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNYUpuSFJPTXVhb1VPdG02ZzhkeHZ2cnhDY1I3bGJWLUlLTXh2Wk9JcEh0eWFESEJoazNNSXRPOHdkSnUxYzBKeU9uTllxUDhfSENPU2NCSFppREg4OGllRlVyUktsVFpBU1hPdmlPdkJfMVlRdlM2ZHFPdU0ybE9sR0Yxc01LOWd6bkN5WWlpOTlZQUw4ZEdjRlln?oc=5",
-          "time": "2026-10-24T10:11:00Z",
-          "published_date": "2026-10-24T10:11:00Z",
-          "publishedDate": "2026-10-24T10:11:00Z",
+          "title": "Musk speaks out on Starlink after service in Ukraine restored - Belfast Telegraph",
+          "summary": "Musk speaks out on Starlink after service in Ukraine restored Belfast Telegraph",
+          "summary_snippet": "Musk speaks out on Starlink after service in Ukraine restored Belfast Telegraph",
+          "source": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQTjc4YU9aSFFhN2FlY3VKY2dIbnlRNlJ3bWRRd1BYY3lob3NiZ2FFNU81OUREVmtIUWhJY3REd1JPZ0ZhU2tNS2pEanFRM1VTM0twYXFJLTB0dlF5SGVpSzQwR1haQ002QkZIUno4QU1QNkp2Yk14NU52X20tbDEtbGdPa0RyWFpHX0JfbDMwRWFGWHd5VGdMdThJZmN5ZjFBUUtLbHhKcEJ4RUFxb3FJcG5NNkpUeEdEc0ljeDZGV0ZRU2lGZGRibQ?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQTjc4YU9aSFFhN2FlY3VKY2dIbnlRNlJ3bWRRd1BYY3lob3NiZ2FFNU81OUREVmtIUWhJY3REd1JPZ0ZhU2tNS2pEanFRM1VTM0twYXFJLTB0dlF5SGVpSzQwR1haQ002QkZIUno4QU1QNkp2Yk14NU52X20tbDEtbGdPa0RyWFpHX0JfbDMwRWFGWHd5VGdMdThJZmN5ZjFBUUtLbHhKcEJ4RUFxb3FJcG5NNkpUeEdEc0ljeDZGV0ZRU2lGZGRibQ?oc=5",
+          "time": "2026-10-24T21:31:30Z",
+          "published_date": "2026-10-24T21:31:30Z",
+          "publishedDate": "2026-10-24T21:31:30Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
@@ -931,6 +797,99 @@
           "credit": {
             "sourceId": "google_news_ukraine_war",
             "sourceUrl": "https://news.google.com/rss/search?q=Ukraine+Russia+war+frontline+missile+drone+strike+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "28651bff4f06",
+          "sourceLabel": "Stars and Stripes",
+          "sourceName": "Stars and Stripes",
+          "sourceType": "news",
+          "title": "Ukraine says Starlink service has been fully restored after disrupted service",
+          "summary": "Ukrainian President Volodymyr Zelenskyy said Starlink and its military-grade version, Starshield, were again functioning at speeds needed to support Ukrainian drone operations and battlefield communications.",
+          "summary_snippet": "Ukrainian President Volodymyr Zelenskyy said Starlink and its military-grade version, Starshield, were again functioning at speeds needed to support Ukrainian drone operations and battlefield communications.",
+          "source": "https://www.stripes.com/theaters/europe/2026-10-24/starlink-ukraine-service-restored-23248708.html",
+          "url": "https://www.stripes.com/theaters/europe/2026-10-24/starlink-ukraine-service-restored-23248708.html",
+          "time": "2026-10-24T18:07:08Z",
+          "published_date": "2026-10-24T18:07:08Z",
+          "publishedDate": "2026-10-24T18:07:08Z",
+          "tag": "Breaking",
+          "confidence": "DEVELOPING",
+          "breaking": true,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "stars_stripes",
+            "sourceUrl": "https://subscribe.stripes.com/rss/top-news.xml",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
+      "id": "55849ac162783e57",
+      "title": "Ukraine says Starshield back to normal, Musk says Kyiv violated terms",
+      "category": "general",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "sourceCount": 2,
+      "sources": [
+        "channelnewsasia.com",
+        "npr.org"
+      ],
+      "anchors": [
+        "uk",
+        "ukraine"
+      ],
+      "firstSeen": "2026-10-24T17:54:25Z",
+      "lastSeen": "2026-10-24T21:27:24Z",
+      "urls": [
+        "https://www.channelnewsasia.com/world/ukraine-says-starshield-back-normal-musk-says-kyiv-violated-terms-6489801",
+        "https://www.npr.org/2026/10/24/nx-s1-6015482/ukraine-starlink-working-after-disruptions"
+      ],
+      "reports": [
+        {
+          "id": "4752bca793c5",
+          "sourceLabel": "CNA World",
+          "sourceName": "CNA World",
+          "sourceType": "news",
+          "title": "Ukraine says Starshield back to normal, Musk says Kyiv violated terms",
+          "summary": "Starshield's problems occurred after US President Donald Trump announced a deal to buy Russian diesel while pressing Kyiv to stop striking Russian oil refineries.",
+          "summary_snippet": "Starshield's problems occurred after US President Donald Trump announced a deal to buy Russian diesel while pressing Kyiv to stop striking Russian oil refineries.",
+          "source": "https://www.channelnewsasia.com/world/ukraine-says-starshield-back-normal-musk-says-kyiv-violated-terms-6489801",
+          "url": "https://www.channelnewsasia.com/world/ukraine-says-starshield-back-normal-musk-says-kyiv-violated-terms-6489801",
+          "time": "2026-10-24T21:27:24Z",
+          "published_date": "2026-10-24T21:27:24Z",
+          "publishedDate": "2026-10-24T21:27:24Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "cna_world",
+            "sourceUrl": "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml&category=6311",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "19c0d49aeb1d",
+          "sourceLabel": "https://www.npr.org/2026/10/24/nx-s1-6015482/ukraine-starlink-working-after-disruptions",
+          "sourceName": "https://www.npr.org/2026/10/24/nx-s1-6015482/ukraine-starlink-working-after-disruptions",
+          "sourceType": "us-politics",
+          "title": "Ukraine says Starlink is back to normal after disruptions",
+          "summary": "Ukrainian President Volodymyr Zelenskyy said that normal Starlink operating speeds were restored after more than a week of disruptions.",
+          "summary_snippet": "Ukrainian President Volodymyr Zelenskyy said that normal Starlink operating speeds were restored after more than a week of disruptions.",
+          "source": "https://www.npr.org/2026/10/24/nx-s1-6015482/ukraine-starlink-working-after-disruptions",
+          "url": "https://www.npr.org/2026/10/24/nx-s1-6015482/ukraine-starlink-working-after-disruptions",
+          "time": "2026-10-24T17:54:25Z",
+          "published_date": "2026-10-24T17:54:25Z",
+          "publishedDate": "2026-10-24T17:54:25Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "npr_news",
+            "sourceUrl": "https://feeds.npr.org/1001/rss.xml",
             "feedFormat": "rss"
           }
         }
@@ -960,8 +919,8 @@
       "reports": [
         {
           "id": "eeceee88d25a",
-          "sourceLabel": "Google News — Iran Israel",
-          "sourceName": "Google News — Iran Israel",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNYmtHSXQwRFhlWlZKbTU2TEhPODc5MERFTG9feGQwRUY1ZklES2JWS3UxTUxOelgxRExOSFdUWEJnVFFDX284OHNsZWxIUzBVRzdINlpRRVhIYlBTN3A4Q2JrYWFrZVZ0MEZGRXVXVXVKTW82dmgwRWROUHFXcVVPU0oxdkljc3lldHc?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNYmtHSXQwRFhlWlZKbTU2TEhPODc5MERFTG9feGQwRUY1ZklES2JWS3UxTUxOelgxRExOSFdUWEJnVFFDX284OHNsZWxIUzBVRzdINlpRRVhIYlBTN3A4Q2JrYWFrZVZ0MEZGRXVXVXVKTW82dmgwRWROUHFXcVVPU0oxdkljc3lldHc?oc=5",
           "sourceType": "middle-east-conflict",
           "title": "Iran in ‘Advanced Stages’ of Planning Attacks Against Americans, Officials Say - The New York Times",
           "summary": "Iran in ‘Advanced Stages’ of Planning Attacks Against Americans, Officials Say The New York Times",
@@ -1077,75 +1036,6 @@
       ]
     },
     {
-      "id": "f2f83d00d236d1e8",
-      "title": "British woman dies after trying to rescue sons swept away at sea in the Bahamas",
-      "category": "general",
-      "confidence": "moderate",
-      "reportCount": 2,
-      "sourceCount": 2,
-      "sources": [
-        "bbc.co.uk",
-        "theguardian.com"
-      ],
-      "anchors": [
-        "hamas"
-      ],
-      "firstSeen": "2026-10-24T09:43:09Z",
-      "lastSeen": "2026-10-24T09:45:47Z",
-      "urls": [
-        "https://www.bbc.co.uk/news/articles/cm86z5n0yvy6o?at_medium=RSS&at_campaign=rss",
-        "https://www.theguardian.com/world/2026/oct/24/british-woman-dies-trying-to-save-sons-on-bahamas-snorkelling-trip"
-      ],
-      "reports": [
-        {
-          "id": "d783cc6b4b3c",
-          "sourceLabel": "https://www.bbc.co.uk/news/articles/cm86z5n0yvy6o?at_medium=RSS&at_campaign=rss",
-          "sourceName": "https://www.bbc.co.uk/news/articles/cm86z5n0yvy6o?at_medium=RSS&at_campaign=rss",
-          "sourceType": "international",
-          "title": "British woman dies after trying to rescue sons swept away at sea in the Bahamas",
-          "summary": "The children were subsequently rescued from the water, police say.",
-          "summary_snippet": "The children were subsequently rescued from the water, police say.",
-          "source": "https://www.bbc.co.uk/news/articles/cm86z5n0yvy6o?at_medium=RSS&at_campaign=rss",
-          "url": "https://www.bbc.co.uk/news/articles/cm86z5n0yvy6o?at_medium=RSS&at_campaign=rss",
-          "time": "2026-10-24T09:45:47Z",
-          "published_date": "2026-10-24T09:45:47Z",
-          "publishedDate": "2026-10-24T09:45:47Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "bbc_world",
-            "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "0f3ca028bc6a",
-          "sourceLabel": "https://www.theguardian.com/world/2026/oct/24/british-woman-dies-trying-to-save-sons-on-bahamas-snorkelling-trip",
-          "sourceName": "https://www.theguardian.com/world/2026/oct/24/british-woman-dies-trying-to-save-sons-on-bahamas-snorkelling-trip",
-          "sourceType": "international",
-          "title": "British woman dies trying to save sons on Bahamas snorkelling trip",
-          "summary": "Mother, 36, died after current off North Bimini reportedly swept away two boys, who were later rescued, police say A British woman has died in the Bahamas while trying to rescue her two sons after a current swept them away as they were snorkelling. The Royal Bahamas police force said it had launched an investigation after the death of a 36-year-old woman on Tuesday. Continue reading...",
-          "summary_snippet": "Mother, 36, died after current off North Bimini reportedly swept away two boys, who were later rescued, police say A British woman has died in the Bahamas while trying to rescue her two sons after a current swept them away as they were snorkelling. The Royal Bahamas police force said it had launched an investigation after the death of a 36-year-old woman on Tuesday. Continue reading...",
-          "source": "https://www.theguardian.com/world/2026/oct/24/british-woman-dies-trying-to-save-sons-on-bahamas-snorkelling-trip",
-          "url": "https://www.theguardian.com/world/2026/oct/24/british-woman-dies-trying-to-save-sons-on-bahamas-snorkelling-trip",
-          "time": "2026-10-24T09:43:09Z",
-          "published_date": "2026-10-24T09:43:09Z",
-          "publishedDate": "2026-10-24T09:43:09Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "guardian_world",
-            "sourceUrl": "https://www.theguardian.com/world/rss",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
       "id": "7e25ab364b4dcc3b",
       "title": "Explanation of Vote Before the Vote for UNGA 80 Adoption on the Resolution to “Correct the Map” - United States Mission to the United Nations (.gov)",
       "category": "general",
@@ -1242,6 +1132,54 @@
       ]
     },
     {
+      "id": "b6368c4e1b113a3c",
+      "title": "Statement by NATO Foreign Ministers - North Atlantic Treaty Organization | NATO",
+      "category": "diplomatic",
+      "confidence": "low",
+      "reportCount": 2,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [
+        "nato"
+      ],
+      "firstSeen": "Mon, 19 Jul 2021 07:00:00 GMT",
+      "lastSeen": "Tue, 29 Nov 2022 08:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQVFh4ZkYwdENWVEhrOUpUSGtxVUZZV1RvLU05UUhGYVVwTV9PSWlXSFE4MFFmbjZyYUFlZVVxMjBCODFMeWk0VHRVeHVSV3o2RDg2MUUwdFZzb28yRGN0bzVKTklvUmlDVWUtMHpLRjNnZHdHTW56YXJER2VoSlFaVlVDX1FRa3ZIclJDdzl5NDdfZ0d1UXBhaF93MUx0MFdHczZRY1BndzFBX1ZSdWlCUGVPdFRNUFk1T2VzU2F2N3Y?oc=5",
+        "https://news.google.com/rss/articles/CBMingFBVV95cUxOZkxLV1ZvZDlhdVA4Q1VxajFrU3NObTF2V0VOVFEycnVnaFU3Vzk4REhHQk5ac2dqLWdKSWlaUFRiR3NYazdmczk3Qlk2SEpGUU1VVWdBYjhPMml4eGRfckNWVlJvSlZqU1ZpLXpfX1YtOUpQUS1XTkNQTG9hU3BuTUFCbElfWTFfbjFPcHMwMWs5OWJJZWFCSGllVmhFUQ?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "Statement by NATO Foreign Ministers - North Atlantic Treaty Organization | NATO",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQVFh4ZkYwdENWVEhrOUpUSGtxVUZZV1RvLU05UUhGYVVwTV9PSWlXSFE4MFFmbjZyYUFlZVVxMjBCODFMeWk0VHRVeHVSV3o2RDg2MUUwdFZzb28yRGN0bzVKTklvUmlDVWUtMHpLRjNnZHdHTW56YXJER2VoSlFaVlVDX1FRa3ZIclJDdzl5NDdfZ0d1UXBhaF93MUx0MFdHczZRY1BndzFBX1ZSdWlCUGVPdFRNUFk1T2VzU2F2N3Y?oc=5",
+          "published_date": "Tue, 29 Nov 2022 08:00:00 GMT",
+          "time": "Tue, 29 Nov 2022 08:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
+          "summary": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
+          "source": "North Atlantic Treaty Organization | NATO",
+          "sourceLabel": "North Atlantic Treaty Organization | NATO",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NATO",
+          "credit_metadata": "Google News RSS fallback"
+        },
+        {
+          "title": "Statement - North Atlantic Treaty Organization | NATO",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOZkxLV1ZvZDlhdVA4Q1VxajFrU3NObTF2V0VOVFEycnVnaFU3Vzk4REhHQk5ac2dqLWdKSWlaUFRiR3NYazdmczk3Qlk2SEpGUU1VVWdBYjhPMml4eGRfckNWVlJvSlZqU1ZpLXpfX1YtOUpQUS1XTkNQTG9hU3BuTUFCbElfWTFfbjFPcHMwMWs5OWJJZWFCSGllVmhFUQ?oc=5",
+          "published_date": "Mon, 19 Jul 2021 07:00:00 GMT",
+          "time": "Mon, 19 Jul 2021 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
+          "summary": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
+          "source": "North Atlantic Treaty Organization | NATO",
+          "sourceLabel": "North Atlantic Treaty Organization | NATO",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NATO",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
       "id": "cab09a0d85b19b11",
       "title": "Statement by the North Atlantic Council on the Democratic People’s Republic of Korea - North Atlantic Treaty Organization | NATO",
       "category": "diplomatic",
@@ -1285,55 +1223,6 @@
           "sourceLabel": "North Atlantic Treaty Organization | NATO",
           "sourceType": "fallback-news",
           "fallbackFor": "X @NATO",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "f27b4a6b11754e68",
-      "title": "White House says Melania Trump brokered truce for Ukraine city 'on brink of disaster' - BBC",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [
-        "uk",
-        "ukraine"
-      ],
-      "firstSeen": "Fri, 23 Oct 2026 14:13:33 GMT",
-      "lastSeen": "Sat, 24 Oct 2026 07:17:44 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9HVXR4Q2ppWjg1UE14akpXVTFoRWtic1NBV3ZkbDdpaldLd0VjSmlRNFp6UGljVTRNOWpPVHlCdTVnYVYybFZsT2NFaldRN2JzbWF1bnlIMUJJamM?oc=5",
-        "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBYUVV4eWV0b1BDdXpXeU41b3JSTlY2WHpqNXVQV0JQNlVBbEhGSmcyeEVMd0N4dFVZblFVTmRVVG00akhaTS1BdWJSS0I2SG9IQThSWkZNTGhoTnNuRVE?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "White House says Melania Trump brokered truce for Ukraine city 'on brink of disaster' - BBC",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9HVXR4Q2ppWjg1UE14akpXVTFoRWtic1NBV3ZkbDdpaldLd0VjSmlRNFp6UGljVTRNOWpPVHlCdTVnYVYybFZsT2NFaldRN2JzbWF1bnlIMUJJamM?oc=5",
-          "published_date": "Sat, 24 Oct 2026 07:17:44 GMT",
-          "time": "Sat, 24 Oct 2026 07:17:44 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: BBC",
-          "summary": "Fallback discovery via Google News RSS; publisher: BBC",
-          "source": "BBC",
-          "sourceLabel": "BBC",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @POTUS",
-          "credit_metadata": "Google News RSS fallback"
-        },
-        {
-          "title": "White House says Melania Trump brokered truce for Ukraine city 'on brink of disaster' - BBC",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBYUVV4eWV0b1BDdXpXeU41b3JSTlY2WHpqNXVQV0JQNlVBbEhGSmcyeEVMd0N4dFVZblFVTmRVVG00akhaTS1BdWJSS0I2SG9IQThSWkZNTGhoTnNuRVE?oc=5",
-          "published_date": "Fri, 23 Oct 2026 14:13:33 GMT",
-          "time": "Fri, 23 Oct 2026 14:13:33 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: BBC",
-          "summary": "Fallback discovery via Google News RSS; publisher: BBC",
-          "source": "BBC",
-          "sourceLabel": "BBC",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @POTUS",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -1408,8 +1297,8 @@
       "reports": [
         {
           "id": "73701f52c511",
-          "sourceLabel": "GDACS Global Disaster Alerts",
-          "sourceName": "GDACS Global Disaster Alerts",
+          "sourceLabel": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033152",
+          "sourceName": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033152",
           "sourceType": "climate-hazard",
           "title": "Green forest fire notification in Chad",
           "summary": "On 20/10/2026, a forest fire started in Chad, until 24/10/2026.",
@@ -1431,8 +1320,8 @@
         },
         {
           "id": "a7627070afca",
-          "sourceLabel": "GDACS Global Disaster Alerts",
-          "sourceName": "GDACS Global Disaster Alerts",
+          "sourceLabel": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033149",
+          "sourceName": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033149",
           "sourceType": "climate-hazard",
           "title": "Green forest fire notification in Chad",
           "summary": "On 22/10/2026, a forest fire started in Chad, until 24/10/2026.",
@@ -1474,8 +1363,8 @@
       "reports": [
         {
           "id": "e6fc88cad4f6",
-          "sourceLabel": "Google News — CNN Politics",
-          "sourceName": "Google News — CNN Politics",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMic0FVX3lxTE43a0ZyLXNQZURBNEVIanFyUG0xc1NVZ2RRNERXNTFSWUpzVVhjV0ttempiRkh2UDludndPNVJzS2Vsc1MwM0xnUTFfaExWNndOU2Z2eVQ5enlWMnlKZExjZ3ZwQXhZNV85TzNFcm5hWS1QVjg?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMic0FVX3lxTE43a0ZyLXNQZURBNEVIanFyUG0xc1NVZ2RRNERXNTFSWUpzVVhjV0ttempiRkh2UDludndPNVJzS2Vsc1MwM0xnUTFfaExWNndOU2Z2eVQ5enlWMnlKZExjZ3ZwQXhZNV85TzNFcm5hWS1QVjg?oc=5",
           "sourceType": "us-politics",
           "title": "CNN.com - Transcripts - CNN",
           "summary": "CNN.com - Transcripts CNN",
@@ -1543,8 +1432,8 @@
       "reports": [
         {
           "id": "21bcae2cdc69",
-          "sourceLabel": "Google News — Ukraine War",
-          "sourceName": "Google News — Ukraine War",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNaTdRMnRtaFV1NjQtWEIxeUtEYm9PemNVcmlOQjFwdUN4UG1uTEM5U2VYS3hscFplOG1wTzRyQlJENzV2RldFY2hfMTdMWXY4TjFRSWswemF2MHdyMDZwQnVicnhoS2tETXB3ekhoazR6Rk1fYlRwcWt2Zzg2eXlETWhBLWcxNkhwSGdoUzIxQnVtVnZmU0hqVlBXdy0xUWhaWHFR?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNaTdRMnRtaFV1NjQtWEIxeUtEYm9PemNVcmlOQjFwdUN4UG1uTEM5U2VYS3hscFplOG1wTzRyQlJENzV2RldFY2hfMTdMWXY4TjFRSWswemF2MHdyMDZwQnVicnhoS2tETXB3ekhoazR6Rk1fYlRwcWt2Zzg2eXlETWhBLWcxNkhwSGdoUzIxQnVtVnZmU0hqVlBXdy0xUWhaWHFR?oc=5",
           "sourceType": "europe-conflict",
           "title": "Russian Air Defences Down Nearly 1,300 Ukrainian Drones In Past Day - Ommcom News",
           "summary": "Russian Air Defences Down Nearly 1,300 Ukrainian Drones In Past Day Ommcom News",
@@ -1609,8 +1498,8 @@
       "reports": [
         {
           "id": "707341a3a4d8",
-          "sourceLabel": "Google News — Afghanistan Security",
-          "sourceName": "Google News — Afghanistan Security",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPNG05eTFnZzVWZ0cwSm9ZZWxkZVF3SExsQ25JNkdSUGhsSzZmQ1dUNzJEN0VOS0tLbXdSZVpEOTBIVXNmenFJQVZPcFIySXZfVkxuWFVaeUg0TkNzMTcwcFZHVDVobksteTJzUEo2eU9Gd2FnUEtXTFZjQUdBSFZUMkoxLXhuTlBkN0Q1Qm1R?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPNG05eTFnZzVWZ0cwSm9ZZWxkZVF3SExsQ25JNkdSUGhsSzZmQ1dUNzJEN0VOS0tLbXdSZVpEOTBIVXNmenFJQVZPcFIySXZfVkxuWFVaeUg0TkNzMTcwcFZHVDVobksteTJzUEo2eU9Gd2FnUEtXTFZjQUdBSFZUMkoxLXhuTlBkN0Q1Qm1R?oc=5",
           "sourceType": "south-asia-conflict",
           "title": "Pakistan strongly rejects Afghan Taliban’s allegations over security concerns - Pakistan Connect",
           "summary": "Pakistan strongly rejects Afghan Taliban’s allegations over security concerns Pakistan Connect",
@@ -1650,6 +1539,75 @@
           "credit": {
             "sourceId": "google_news_afghanistan_security",
             "sourceUrl": "https://news.google.com/rss/search?q=Afghanistan+Taliban+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
+      "id": "52097df4391600fe",
+      "title": "Starlink in Ukraine Back to Normal After Week of Throttling - The Moscow Times",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 2,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [
+        "uk",
+        "ukraine"
+      ],
+      "firstSeen": "2026-10-24T13:14:00Z",
+      "lastSeen": "2026-10-24T15:18:06Z",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMirAFBVV95cUxOcXRfcWhWNFRvYU1od2VMbjZobkI0aV9FZS1oaE9VOVRpSzJkeDJFVkZ0ZVR3RVU4SGJBenQ1SEtIS1BxYTFZa3E2YWFUZ1hIM2VjNlhvZVFXMGJLdFRNYVNkbk4zNGYzMExEcDJMR0c4YUR4MUhqZDJrS3RtalZsR3MxeGlKNkcxZGUxUFdUNVB1Z21ra0RMRWlBMmQ3dHVyNV9qbTFidE8zRm84?oc=5",
+        "https://news.google.com/rss/articles/CBMivgFBVV95cUxNVUgyMVNHajlDVXp0TVRQV1JQc2pEWW1PLTUxLUYzekt5ODl6TXl0U3hMTUZkZzBfd3BqaV9xTThNcS1HQllmaDBVejdaUjZYQkZNdm9xY2FFeFNDRlJCY0hiT0dEY2JDTk5UVS1NSjUtTW9xX0dPTXVQZ1NtUE1WLTNyWGdUazJQV1pCcjBPak92NVV3VzYyYklEZXRjOU9UamVYaFEwdkFRcGNlN2VScjg2Yk5yREpUcU1XalZ3?oc=5"
+      ],
+      "reports": [
+        {
+          "id": "358071d45ef3",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOcXRfcWhWNFRvYU1od2VMbjZobkI0aV9FZS1oaE9VOVRpSzJkeDJFVkZ0ZVR3RVU4SGJBenQ1SEtIS1BxYTFZa3E2YWFUZ1hIM2VjNlhvZVFXMGJLdFRNYVNkbk4zNGYzMExEcDJMR0c4YUR4MUhqZDJrS3RtalZsR3MxeGlKNkcxZGUxUFdUNVB1Z21ra0RMRWlBMmQ3dHVyNV9qbTFidE8zRm84?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOcXRfcWhWNFRvYU1od2VMbjZobkI0aV9FZS1oaE9VOVRpSzJkeDJFVkZ0ZVR3RVU4SGJBenQ1SEtIS1BxYTFZa3E2YWFUZ1hIM2VjNlhvZVFXMGJLdFRNYVNkbk4zNGYzMExEcDJMR0c4YUR4MUhqZDJrS3RtalZsR3MxeGlKNkcxZGUxUFdUNVB1Z21ra0RMRWlBMmQ3dHVyNV9qbTFidE8zRm84?oc=5",
+          "sourceType": "europe-conflict",
+          "title": "Starlink in Ukraine Back to Normal After Week of Throttling - The Moscow Times",
+          "summary": "Starlink in Ukraine Back to Normal After Week of Throttling The Moscow Times",
+          "summary_snippet": "Starlink in Ukraine Back to Normal After Week of Throttling The Moscow Times",
+          "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOcXRfcWhWNFRvYU1od2VMbjZobkI0aV9FZS1oaE9VOVRpSzJkeDJFVkZ0ZVR3RVU4SGJBenQ1SEtIS1BxYTFZa3E2YWFUZ1hIM2VjNlhvZVFXMGJLdFRNYVNkbk4zNGYzMExEcDJMR0c4YUR4MUhqZDJrS3RtalZsR3MxeGlKNkcxZGUxUFdUNVB1Z21ra0RMRWlBMmQ3dHVyNV9qbTFidE8zRm84?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOcXRfcWhWNFRvYU1od2VMbjZobkI0aV9FZS1oaE9VOVRpSzJkeDJFVkZ0ZVR3RVU4SGJBenQ1SEtIS1BxYTFZa3E2YWFUZ1hIM2VjNlhvZVFXMGJLdFRNYVNkbk4zNGYzMExEcDJMR0c4YUR4MUhqZDJrS3RtalZsR3MxeGlKNkcxZGUxUFdUNVB1Z21ra0RMRWlBMmQ3dHVyNV9qbTFidE8zRm84?oc=5",
+          "time": "2026-10-24T15:18:06Z",
+          "published_date": "2026-10-24T15:18:06Z",
+          "publishedDate": "2026-10-24T15:18:06Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_ukraine_war",
+            "sourceUrl": "https://news.google.com/rss/search?q=Ukraine+Russia+war+frontline+missile+drone+strike+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "c66938e1299a",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNVUgyMVNHajlDVXp0TVRQV1JQc2pEWW1PLTUxLUYzekt5ODl6TXl0U3hMTUZkZzBfd3BqaV9xTThNcS1HQllmaDBVejdaUjZYQkZNdm9xY2FFeFNDRlJCY0hiT0dEY2JDTk5UVS1NSjUtTW9xX0dPTXVQZ1NtUE1WLTNyWGdUazJQV1pCcjBPak92NVV3VzYyYklEZXRjOU9UamVYaFEwdkFRcGNlN2VScjg2Yk5yREpUcU1XalZ3?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNVUgyMVNHajlDVXp0TVRQV1JQc2pEWW1PLTUxLUYzekt5ODl6TXl0U3hMTUZkZzBfd3BqaV9xTThNcS1HQllmaDBVejdaUjZYQkZNdm9xY2FFeFNDRlJCY0hiT0dEY2JDTk5UVS1NSjUtTW9xX0dPTXVQZ1NtUE1WLTNyWGdUazJQV1pCcjBPak92NVV3VzYyYklEZXRjOU9UamVYaFEwdkFRcGNlN2VScjg2Yk5yREpUcU1XalZ3?oc=5",
+          "sourceType": "europe-conflict",
+          "title": "Ukraine says Starlink back to normal after a week of throttling - Free Malaysia Today",
+          "summary": "Ukraine says Starlink back to normal after a week of throttling Free Malaysia Today",
+          "summary_snippet": "Ukraine says Starlink back to normal after a week of throttling Free Malaysia Today",
+          "source": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNVUgyMVNHajlDVXp0TVRQV1JQc2pEWW1PLTUxLUYzekt5ODl6TXl0U3hMTUZkZzBfd3BqaV9xTThNcS1HQllmaDBVejdaUjZYQkZNdm9xY2FFeFNDRlJCY0hiT0dEY2JDTk5UVS1NSjUtTW9xX0dPTXVQZ1NtUE1WLTNyWGdUazJQV1pCcjBPak92NVV3VzYyYklEZXRjOU9UamVYaFEwdkFRcGNlN2VScjg2Yk5yREpUcU1XalZ3?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNVUgyMVNHajlDVXp0TVRQV1JQc2pEWW1PLTUxLUYzekt5ODl6TXl0U3hMTUZkZzBfd3BqaV9xTThNcS1HQllmaDBVejdaUjZYQkZNdm9xY2FFeFNDRlJCY0hiT0dEY2JDTk5UVS1NSjUtTW9xX0dPTXVQZ1NtUE1WLTNyWGdUazJQV1pCcjBPak92NVV3VzYyYklEZXRjOU9UamVYaFEwdkFRcGNlN2VScjg2Yk5yREpUcU1XalZ3?oc=5",
+          "time": "2026-10-24T13:14:00Z",
+          "published_date": "2026-10-24T13:14:00Z",
+          "publishedDate": "2026-10-24T13:14:00Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_ukraine_war",
+            "sourceUrl": "https://news.google.com/rss/search?q=Ukraine+Russia+war+frontline+missile+drone+strike+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
         }
@@ -1792,6 +1750,141 @@
       ]
     },
     {
+      "id": "505900baa135b205",
+      "title": "Ukraine reports Starlink speeds above 400 km/h after restrictions disrupted drone operations - Business Upturn",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 2,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [
+        "uk",
+        "ukraine"
+      ],
+      "firstSeen": "2026-10-24T11:37:01Z",
+      "lastSeen": "2026-10-24T11:37:01Z",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPRnRjR2R4SU5yQkJhck9DSjhhLTZncWh1ZG9WS0l5SVBCN3dyOElLUTA3M2hGZ0p3TndyQXZpcUVlMW9LTHZLRlFhT3VTejRYbG8xTjRaTUxIZjJBZzNUZ0MtSVozQWVCdXpNMVQ2MGV1cnlYeUNSM3lhWHpUVUdrdms2S0xjb1NoMmdtb0hCTW1rLVZpVGRkTDZOMTQxNlVJbF9rc3VGUkI5VDllLU9YMm53Y0E3X0owRWxOaVEzOFNrM0hGalF0bnoyN01TekhOb3B5QnFJS0QxNEU?oc=5",
+        "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQRFVZN2tPS3ZDdGxvcmdxNDdMdFhzMGxFQzh6LTlTN1B4dGxXbnNCQTlYVVFHajVyMF9ycFltd3plSXdPeTZwMmQxRWRNanZRaUZEbXowNUdJbXFXcmlSSWhnYVkxMUlyZzFMUnhZR1MwTDNubjNIaHlkQUp6aldrX19tUVU0Q1R0cThiYWlxd0o4MXpoZXdpRzJBZjdtYjVQSk1CNGl2clJOUVQzQUN2eGtlS3ZtT0lfVFJNQWlmaHhIcERnOFZneTBHUmgwNU5feDBXajR3?oc=5"
+      ],
+      "reports": [
+        {
+          "id": "0bb642b5c3e5",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPRnRjR2R4SU5yQkJhck9DSjhhLTZncWh1ZG9WS0l5SVBCN3dyOElLUTA3M2hGZ0p3TndyQXZpcUVlMW9LTHZLRlFhT3VTejRYbG8xTjRaTUxIZjJBZzNUZ0MtSVozQWVCdXpNMVQ2MGV1cnlYeUNSM3lhWHpUVUdrdms2S0xjb1NoMmdtb0hCTW1rLVZpVGRkTDZOMTQxNlVJbF9rc3VGUkI5VDllLU9YMm53Y0E3X0owRWxOaVEzOFNrM0hGalF0bnoyN01TekhOb3B5QnFJS0QxNEU?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPRnRjR2R4SU5yQkJhck9DSjhhLTZncWh1ZG9WS0l5SVBCN3dyOElLUTA3M2hGZ0p3TndyQXZpcUVlMW9LTHZLRlFhT3VTejRYbG8xTjRaTUxIZjJBZzNUZ0MtSVozQWVCdXpNMVQ2MGV1cnlYeUNSM3lhWHpUVUdrdms2S0xjb1NoMmdtb0hCTW1rLVZpVGRkTDZOMTQxNlVJbF9rc3VGUkI5VDllLU9YMm53Y0E3X0owRWxOaVEzOFNrM0hGalF0bnoyN01TekhOb3B5QnFJS0QxNEU?oc=5",
+          "sourceType": "europe-conflict",
+          "title": "Ukraine reports Starlink speeds above 400 km/h after restrictions disrupted drone operations - Business Upturn",
+          "summary": "Ukraine reports Starlink speeds above 400 km/h after restrictions disrupted drone operations Business Upturn",
+          "summary_snippet": "Ukraine reports Starlink speeds above 400 km/h after restrictions disrupted drone operations Business Upturn",
+          "source": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPRnRjR2R4SU5yQkJhck9DSjhhLTZncWh1ZG9WS0l5SVBCN3dyOElLUTA3M2hGZ0p3TndyQXZpcUVlMW9LTHZLRlFhT3VTejRYbG8xTjRaTUxIZjJBZzNUZ0MtSVozQWVCdXpNMVQ2MGV1cnlYeUNSM3lhWHpUVUdrdms2S0xjb1NoMmdtb0hCTW1rLVZpVGRkTDZOMTQxNlVJbF9rc3VGUkI5VDllLU9YMm53Y0E3X0owRWxOaVEzOFNrM0hGalF0bnoyN01TekhOb3B5QnFJS0QxNEU?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPRnRjR2R4SU5yQkJhck9DSjhhLTZncWh1ZG9WS0l5SVBCN3dyOElLUTA3M2hGZ0p3TndyQXZpcUVlMW9LTHZLRlFhT3VTejRYbG8xTjRaTUxIZjJBZzNUZ0MtSVozQWVCdXpNMVQ2MGV1cnlYeUNSM3lhWHpUVUdrdms2S0xjb1NoMmdtb0hCTW1rLVZpVGRkTDZOMTQxNlVJbF9rc3VGUkI5VDllLU9YMm53Y0E3X0owRWxOaVEzOFNrM0hGalF0bnoyN01TekhOb3B5QnFJS0QxNEU?oc=5",
+          "time": "2026-10-24T11:37:01Z",
+          "published_date": "2026-10-24T11:37:01Z",
+          "publishedDate": "2026-10-24T11:37:01Z",
+          "tag": "Breaking",
+          "confidence": "DEVELOPING",
+          "breaking": true,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_ukraine_war",
+            "sourceUrl": "https://news.google.com/rss/search?q=Ukraine+Russia+war+frontline+missile+drone+strike+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "397c73edacee",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQRFVZN2tPS3ZDdGxvcmdxNDdMdFhzMGxFQzh6LTlTN1B4dGxXbnNCQTlYVVFHajVyMF9ycFltd3plSXdPeTZwMmQxRWRNanZRaUZEbXowNUdJbXFXcmlSSWhnYVkxMUlyZzFMUnhZR1MwTDNubjNIaHlkQUp6aldrX19tUVU0Q1R0cThiYWlxd0o4MXpoZXdpRzJBZjdtYjVQSk1CNGl2clJOUVQzQUN2eGtlS3ZtT0lfVFJNQWlmaHhIcERnOFZneTBHUmgwNU5feDBXajR3?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQRFVZN2tPS3ZDdGxvcmdxNDdMdFhzMGxFQzh6LTlTN1B4dGxXbnNCQTlYVVFHajVyMF9ycFltd3plSXdPeTZwMmQxRWRNanZRaUZEbXowNUdJbXFXcmlSSWhnYVkxMUlyZzFMUnhZR1MwTDNubjNIaHlkQUp6aldrX19tUVU0Q1R0cThiYWlxd0o4MXpoZXdpRzJBZjdtYjVQSk1CNGl2clJOUVQzQUN2eGtlS3ZtT0lfVFJNQWlmaHhIcERnOFZneTBHUmgwNU5feDBXajR3?oc=5",
+          "sourceType": "europe-conflict",
+          "title": "Ukraine reports Starlink speeds above 400 km/h after restrictions disrupted drone operations - Business Upturn",
+          "summary": "Ukraine reports Starlink speeds above 400 km/h after restrictions disrupted drone operations Business Upturn",
+          "summary_snippet": "Ukraine reports Starlink speeds above 400 km/h after restrictions disrupted drone operations Business Upturn",
+          "source": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQRFVZN2tPS3ZDdGxvcmdxNDdMdFhzMGxFQzh6LTlTN1B4dGxXbnNCQTlYVVFHajVyMF9ycFltd3plSXdPeTZwMmQxRWRNanZRaUZEbXowNUdJbXFXcmlSSWhnYVkxMUlyZzFMUnhZR1MwTDNubjNIaHlkQUp6aldrX19tUVU0Q1R0cThiYWlxd0o4MXpoZXdpRzJBZjdtYjVQSk1CNGl2clJOUVQzQUN2eGtlS3ZtT0lfVFJNQWlmaHhIcERnOFZneTBHUmgwNU5feDBXajR3?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQRFVZN2tPS3ZDdGxvcmdxNDdMdFhzMGxFQzh6LTlTN1B4dGxXbnNCQTlYVVFHajVyMF9ycFltd3plSXdPeTZwMmQxRWRNanZRaUZEbXowNUdJbXFXcmlSSWhnYVkxMUlyZzFMUnhZR1MwTDNubjNIaHlkQUp6aldrX19tUVU0Q1R0cThiYWlxd0o4MXpoZXdpRzJBZjdtYjVQSk1CNGl2clJOUVQzQUN2eGtlS3ZtT0lfVFJNQWlmaHhIcERnOFZneTBHUmgwNU5feDBXajR3?oc=5",
+          "time": "2026-10-24T11:37:01Z",
+          "published_date": "2026-10-24T11:37:01Z",
+          "publishedDate": "2026-10-24T11:37:01Z",
+          "tag": "Breaking",
+          "confidence": "DEVELOPING",
+          "breaking": true,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_ukraine_war",
+            "sourceUrl": "https://news.google.com/rss/search?q=Ukraine+Russia+war+frontline+missile+drone+strike+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
+      "id": "577d97e0bc0043ae",
+      "title": "Pakistan rejects ex-US envoy Khalilzad’s 'baseless' allegations of arming Afghans to fight Taliban - Dawn",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 2,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "2026-10-24T11:32:43Z",
+      "lastSeen": "2026-10-24T11:32:43Z",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiSEFVX3lxTE03MV85N09fZWhPM2p6TDJsMlhwOHpaNXZZNHRMQnU4TzJ2TENlaTBtWTd3c0VVTnBuREpiQ1U4UHJ1eEdHNk1JUw?oc=5",
+        "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNLXdOUzkyZnk3bG5yd1NXR0FqOGRFakdhNjNDZ3NYSDctdTQ3dUNRSVRwSzN0Y1BrTnhRQmRPd1liWllIX3NBazZvcm0xS2JTaEh2MUhjSl9kRHFGWlFNcFhEaDRobHcwcFpJN2JhMXhkUmg2YVJGeEFVUUNZbnlkMHpEZzNkZi05T1lsN3R0dGJNdVk3ZVU1MzM5Ui1YSUZrOUstRHpkSmo5M3JkUlE1aEM2ZlhPNEY1SnIxV2tEU29TLU1QZ2t3Yg?oc=5"
+      ],
+      "reports": [
+        {
+          "id": "e3ac75d4f89f",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE03MV85N09fZWhPM2p6TDJsMlhwOHpaNXZZNHRMQnU4TzJ2TENlaTBtWTd3c0VVTnBuREpiQ1U4UHJ1eEdHNk1JUw?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE03MV85N09fZWhPM2p6TDJsMlhwOHpaNXZZNHRMQnU4TzJ2TENlaTBtWTd3c0VVTnBuREpiQ1U4UHJ1eEdHNk1JUw?oc=5",
+          "sourceType": "south-asia-conflict",
+          "title": "Pakistan rejects ex-US envoy Khalilzad’s 'baseless' allegations of arming Afghans to fight Taliban - Dawn",
+          "summary": "Pakistan rejects ex-US envoy Khalilzad’s 'baseless' allegations of arming Afghans to fight Taliban Dawn",
+          "summary_snippet": "Pakistan rejects ex-US envoy Khalilzad’s 'baseless' allegations of arming Afghans to fight Taliban Dawn",
+          "source": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE03MV85N09fZWhPM2p6TDJsMlhwOHpaNXZZNHRMQnU4TzJ2TENlaTBtWTd3c0VVTnBuREpiQ1U4UHJ1eEdHNk1JUw?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE03MV85N09fZWhPM2p6TDJsMlhwOHpaNXZZNHRMQnU4TzJ2TENlaTBtWTd3c0VVTnBuREpiQ1U4UHJ1eEdHNk1JUw?oc=5",
+          "time": "2026-10-24T11:32:43Z",
+          "published_date": "2026-10-24T11:32:43Z",
+          "publishedDate": "2026-10-24T11:32:43Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_afghanistan_security",
+            "sourceUrl": "https://news.google.com/rss/search?q=Afghanistan+Taliban+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "b39ebed455ab",
+          "sourceLabel": "Google News — Afghanistan Security",
+          "sourceName": "Google News — Afghanistan Security",
+          "sourceType": "south-asia-conflict",
+          "title": "Pakistan rejects ex-US envoy Khalilzad’s 'baseless' allegations of arming Afghans to fight Taliban - Dawn",
+          "summary": "Pakistan rejects ex-US envoy Khalilzad’s 'baseless' allegations of arming Afghans to fight Taliban Dawn",
+          "summary_snippet": "Pakistan rejects ex-US envoy Khalilzad’s 'baseless' allegations of arming Afghans to fight Taliban Dawn",
+          "source": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNLXdOUzkyZnk3bG5yd1NXR0FqOGRFakdhNjNDZ3NYSDctdTQ3dUNRSVRwSzN0Y1BrTnhRQmRPd1liWllIX3NBazZvcm0xS2JTaEh2MUhjSl9kRHFGWlFNcFhEaDRobHcwcFpJN2JhMXhkUmg2YVJGeEFVUUNZbnlkMHpEZzNkZi05T1lsN3R0dGJNdVk3ZVU1MzM5Ui1YSUZrOUstRHpkSmo5M3JkUlE1aEM2ZlhPNEY1SnIxV2tEU29TLU1QZ2t3Yg?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNLXdOUzkyZnk3bG5yd1NXR0FqOGRFakdhNjNDZ3NYSDctdTQ3dUNRSVRwSzN0Y1BrTnhRQmRPd1liWllIX3NBazZvcm0xS2JTaEh2MUhjSl9kRHFGWlFNcFhEaDRobHcwcFpJN2JhMXhkUmg2YVJGeEFVUUNZbnlkMHpEZzNkZi05T1lsN3R0dGJNdVk3ZVU1MzM5Ui1YSUZrOUstRHpkSmo5M3JkUlE1aEM2ZlhPNEY1SnIxV2tEU29TLU1QZ2t3Yg?oc=5",
+          "time": "2026-10-24T11:32:43Z",
+          "published_date": "2026-10-24T11:32:43Z",
+          "publishedDate": "2026-10-24T11:32:43Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_afghanistan_security",
+            "sourceUrl": "https://news.google.com/rss/search?q=Afghanistan+Taliban+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
       "id": "fdb226d9c0809dec",
       "title": "Letter from Mogadishu: Somalis to elect new president through universal suffrage in May - www.standardmedia.co.ke",
       "category": "political",
@@ -1836,8 +1929,8 @@
         },
         {
           "id": "9cfc3763e70f",
-          "sourceLabel": "Google News — Somalia Security",
-          "sourceName": "Google News — Somalia Security",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNY1lmN2k3eHNjeDh1bnh6MnUyTy1TMUdwQldPOW81OWVXMmp6UmJpSGFQdFRSMWhpMDRaV29WUGk2anQ0UWN5SGVIS2JyVVZ1U1RCdG1sRkJfbnp1SG5XNXdnazNjS3N5Vy1LamN3RGMtUU9IM2tyc0hNUmJIcVdrcHBiVWdkR215ZElRRVZDQmpnNzQwSGUxTWh0ZWZHNnpjRzdkM1k0cEcxX1Z0V19MZEVsblJpSkZ2bmo3amQ4cWpnNFJLNkYwVkp0UlhxZzFtSHBzVkdacGdiUW16OFJUNlJBWGZYSVVDbkNzUXBtcC1CZ0NJMlE?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNY1lmN2k3eHNjeDh1bnh6MnUyTy1TMUdwQldPOW81OWVXMmp6UmJpSGFQdFRSMWhpMDRaV29WUGk2anQ0UWN5SGVIS2JyVVZ1U1RCdG1sRkJfbnp1SG5XNXdnazNjS3N5Vy1LamN3RGMtUU9IM2tyc0hNUmJIcVdrcHBiVWdkR215ZElRRVZDQmpnNzQwSGUxTWh0ZWZHNnpjRzdkM1k0cEcxX1Z0V19MZEVsblJpSkZ2bmo3amQ4cWpnNFJLNkYwVkp0UlhxZzFtSHBzVkdacGdiUW16OFJUNlJBWGZYSVVDbkNzUXBtcC1CZ0NJMlE?oc=5",
           "sourceType": "africa-conflict",
           "title": "Letter from Mogadishu: Somalis to elect new president through universal suffrage in May - www.standardmedia.co.ke",
           "summary": "Letter from Mogadishu: Somalis to elect new president through universal suffrage in May www.standardmedia.co.ke",
@@ -1902,8 +1995,8 @@
         },
         {
           "id": "6b05243711cd",
-          "sourceLabel": "Google News — Afghanistan Security",
-          "sourceName": "Google News — Afghanistan Security",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBXQTc0Q3FoanE0RHVrdXRlemYxcVlXNnlpN2NLT3BjakxPSWV0eVBVUlphSWpoblVVRldHbFhGNVd1cWlZWXhYT3ZGX3F6MXMx0gFWQVVfeXFMTjFMNTJXNlNuQ19Cc3ZRLXhTOERlZktHNmJYYTZJYk55bDdjaU4zNmtCc2c5VnNFcmQwMUFCdU9PeGozOWk3WEZ4a01nZ2JmblN0ek94Qnc?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBXQTc0Q3FoanE0RHVrdXRlemYxcVlXNnlpN2NLT3BjakxPSWV0eVBVUlphSWpoblVVRldHbFhGNVd1cWlZWXhYT3ZGX3F6MXMx0gFWQVVfeXFMTjFMNTJXNlNuQ19Cc3ZRLXhTOERlZktHNmJYYTZJYk55bDdjaU4zNmtCc2c5VnNFcmQwMUFCdU9PeGozOWk3WEZ4a01nZ2JmblN0ek94Qnc?oc=5",
           "sourceType": "south-asia-conflict",
           "title": "Pakistan rejects Zalmay Khalilzad's allegations of arming Afghans - Business Recorder",
           "summary": "Pakistan rejects Zalmay Khalilzad's allegations of arming Afghans Business Recorder",
@@ -1994,173 +2087,6 @@
       ]
     },
     {
-      "id": "40b0fc1cd77deca8",
-      "title": "Saudi coalition intercepts missiles targeting Riyadh, Taif and Yanbu - Aaj English TV",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "2026-10-24T10:08:31Z",
-      "lastSeen": "2026-10-24T10:08:31Z",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNV1BoLVBwZEJmUmxJbS1Nd1pzcjBZVW9jdjh1OVU5VTZlamx5SmVFdVAyQ1pXRExJUmtwTU9oUUhKQ2lPdEdFTjgzX1BvNGprbnl4MnBDYU40NVgzdG5MZEVQX2t1MnBLMnBOenNuMjFodzhmVGh4X2U1T3dmNFJGTTJ4bUd0Z2M2d25XRk5HRGUwY3BGNkRXVl8ybElDQnItTmMxdFBRZkc?oc=5",
-        "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1OQWMxR0QtVEI4Sk44WkhLV0NEZ21DSkotQzctMXQ3cW5tTHRMbU02TGdyMW1GWlFnUEw0dHJ1b1RnblJQT2NSY2RaNzc1SXdkYUdZ?oc=5"
-      ],
-      "reports": [
-        {
-          "id": "ffe10a77d596",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNV1BoLVBwZEJmUmxJbS1Nd1pzcjBZVW9jdjh1OVU5VTZlamx5SmVFdVAyQ1pXRExJUmtwTU9oUUhKQ2lPdEdFTjgzX1BvNGprbnl4MnBDYU40NVgzdG5MZEVQX2t1MnBLMnBOenNuMjFodzhmVGh4X2U1T3dmNFJGTTJ4bUd0Z2M2d25XRk5HRGUwY3BGNkRXVl8ybElDQnItTmMxdFBRZkc?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNV1BoLVBwZEJmUmxJbS1Nd1pzcjBZVW9jdjh1OVU5VTZlamx5SmVFdVAyQ1pXRExJUmtwTU9oUUhKQ2lPdEdFTjgzX1BvNGprbnl4MnBDYU40NVgzdG5MZEVQX2t1MnBLMnBOenNuMjFodzhmVGh4X2U1T3dmNFJGTTJ4bUd0Z2M2d25XRk5HRGUwY3BGNkRXVl8ybElDQnItTmMxdFBRZkc?oc=5",
-          "sourceType": "middle-east-conflict",
-          "title": "Saudi coalition intercepts missiles targeting Riyadh, Taif and Yanbu - Aaj English TV",
-          "summary": "Saudi coalition intercepts missiles targeting Riyadh, Taif and Yanbu Aaj English TV",
-          "summary_snippet": "Saudi coalition intercepts missiles targeting Riyadh, Taif and Yanbu Aaj English TV",
-          "source": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNV1BoLVBwZEJmUmxJbS1Nd1pzcjBZVW9jdjh1OVU5VTZlamx5SmVFdVAyQ1pXRExJUmtwTU9oUUhKQ2lPdEdFTjgzX1BvNGprbnl4MnBDYU40NVgzdG5MZEVQX2t1MnBLMnBOenNuMjFodzhmVGh4X2U1T3dmNFJGTTJ4bUd0Z2M2d25XRk5HRGUwY3BGNkRXVl8ybElDQnItTmMxdFBRZkc?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNV1BoLVBwZEJmUmxJbS1Nd1pzcjBZVW9jdjh1OVU5VTZlamx5SmVFdVAyQ1pXRExJUmtwTU9oUUhKQ2lPdEdFTjgzX1BvNGprbnl4MnBDYU40NVgzdG5MZEVQX2t1MnBLMnBOenNuMjFodzhmVGh4X2U1T3dmNFJGTTJ4bUd0Z2M2d25XRk5HRGUwY3BGNkRXVl8ybElDQnItTmMxdFBRZkc?oc=5",
-          "time": "2026-10-24T10:08:31Z",
-          "published_date": "2026-10-24T10:08:31Z",
-          "publishedDate": "2026-10-24T10:08:31Z",
-          "tag": "Breaking",
-          "confidence": "DEVELOPING",
-          "breaking": true,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_iran_israel",
-            "sourceUrl": "https://news.google.com/rss/search?q=Iran+Israel+conflict+missile+drone+strike+escalation+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "22969a3e7c09",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1OQWMxR0QtVEI4Sk44WkhLV0NEZ21DSkotQzctMXQ3cW5tTHRMbU02TGdyMW1GWlFnUEw0dHJ1b1RnblJQT2NSY2RaNzc1SXdkYUdZ?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1OQWMxR0QtVEI4Sk44WkhLV0NEZ21DSkotQzctMXQ3cW5tTHRMbU02TGdyMW1GWlFnUEw0dHJ1b1RnblJQT2NSY2RaNzc1SXdkYUdZ?oc=5",
-          "sourceType": "middle-east-conflict",
-          "title": "Saudi coalition intercepts missiles targeting Riyadh, Taif and Yanbu - Aaj English TV",
-          "summary": "Saudi coalition intercepts missiles targeting Riyadh, Taif and Yanbu Aaj English TV",
-          "summary_snippet": "Saudi coalition intercepts missiles targeting Riyadh, Taif and Yanbu Aaj English TV",
-          "source": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1OQWMxR0QtVEI4Sk44WkhLV0NEZ21DSkotQzctMXQ3cW5tTHRMbU02TGdyMW1GWlFnUEw0dHJ1b1RnblJQT2NSY2RaNzc1SXdkYUdZ?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1OQWMxR0QtVEI4Sk44WkhLV0NEZ21DSkotQzctMXQ3cW5tTHRMbU02TGdyMW1GWlFnUEw0dHJ1b1RnblJQT2NSY2RaNzc1SXdkYUdZ?oc=5",
-          "time": "2026-10-24T10:08:31Z",
-          "published_date": "2026-10-24T10:08:31Z",
-          "publishedDate": "2026-10-24T10:08:31Z",
-          "tag": "Breaking",
-          "confidence": "DEVELOPING",
-          "breaking": true,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_iran_israel",
-            "sourceUrl": "https://news.google.com/rss/search?q=Iran+Israel+conflict+missile+drone+strike+escalation+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "df4a123517b240de",
-      "title": "China’s economy grows 4.5% on robust exports as domestic weakness persists - AOL.co.uk",
-      "category": "economic",
-      "confidence": "low",
-      "reportCount": 2,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [
-        "china",
-        "uk"
-      ],
-      "firstSeen": "2026-10-24T09:36:59Z",
-      "lastSeen": "2026-10-24T09:36:59Z",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMieEFVX3lxTE9PTDVFZF9RWkxLQ205VUI1WkNTUGZCRWJ0azROb0ZONHVzdUVNLWFwNFJZcUY5a2N2ZHpqZG1EdXIzbC1Fajk1Z1FSczVDVEJyemNSQl80dHB5amV2OUI5Zmo2aXVmT3djcmtqZWNINVRaT1g0ODNKcQ?oc=5",
-        "https://news.google.com/rss/articles/CBMifEFVX3lxTFA5MmZmOEo4bzczeEZKcGZWSEQzU2hiUTNMcFhxNTNjTWVNZkZQYkNoU1lNUk00MXItaFlOV2dDT3A0aDBmVXVpR0VBX3ExZWREREo2c005NEwxSFdXUHM3Q0Uxc3RLbGZybVZXNkVOZnNWTk51NkVUaEkxWGY?oc=5"
-      ],
-      "reports": [
-        {
-          "id": "a6565c89ae0b",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9PTDVFZF9RWkxLQ205VUI1WkNTUGZCRWJ0azROb0ZONHVzdUVNLWFwNFJZcUY5a2N2ZHpqZG1EdXIzbC1Fajk1Z1FSczVDVEJyemNSQl80dHB5amV2OUI5Zmo2aXVmT3djcmtqZWNINVRaT1g0ODNKcQ?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9PTDVFZF9RWkxLQ205VUI1WkNTUGZCRWJ0azROb0ZONHVzdUVNLWFwNFJZcUY5a2N2ZHpqZG1EdXIzbC1Fajk1Z1FSczVDVEJyemNSQl80dHB5amV2OUI5Zmo2aXVmT3djcmtqZWNINVRaT1g0ODNKcQ?oc=5",
-          "sourceType": "china-economics",
-          "title": "China’s economy grows 4.5% on robust exports as domestic weakness persists - AOL.co.uk",
-          "summary": "China’s economy grows 4.5% on robust exports as domestic weakness persists AOL.co.uk",
-          "summary_snippet": "China’s economy grows 4.5% on robust exports as domestic weakness persists AOL.co.uk",
-          "source": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9PTDVFZF9RWkxLQ205VUI1WkNTUGZCRWJ0azROb0ZONHVzdUVNLWFwNFJZcUY5a2N2ZHpqZG1EdXIzbC1Fajk1Z1FSczVDVEJyemNSQl80dHB5amV2OUI5Zmo2aXVmT3djcmtqZWNINVRaT1g0ODNKcQ?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9PTDVFZF9RWkxLQ205VUI1WkNTUGZCRWJ0azROb0ZONHVzdUVNLWFwNFJZcUY5a2N2ZHpqZG1EdXIzbC1Fajk1Z1FSczVDVEJyemNSQl80dHB5amV2OUI5Zmo2aXVmT3djcmtqZWNINVRaT1g0ODNKcQ?oc=5",
-          "time": "2026-10-24T09:36:59Z",
-          "published_date": "2026-10-24T09:36:59Z",
-          "publishedDate": "2026-10-24T09:36:59Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "china_economy",
-            "sourceUrl": "https://news.google.com/rss/search?q=China+economy+trade+tariffs+exports+semiconductors+markets+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "dd23289343db",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMifEFVX3lxTFA5MmZmOEo4bzczeEZKcGZWSEQzU2hiUTNMcFhxNTNjTWVNZkZQYkNoU1lNUk00MXItaFlOV2dDT3A0aDBmVXVpR0VBX3ExZWREREo2c005NEwxSFdXUHM3Q0Uxc3RLbGZybVZXNkVOZnNWTk51NkVUaEkxWGY?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMifEFVX3lxTFA5MmZmOEo4bzczeEZKcGZWSEQzU2hiUTNMcFhxNTNjTWVNZkZQYkNoU1lNUk00MXItaFlOV2dDT3A0aDBmVXVpR0VBX3ExZWREREo2c005NEwxSFdXUHM3Q0Uxc3RLbGZybVZXNkVOZnNWTk51NkVUaEkxWGY?oc=5",
-          "sourceType": "china-economics",
-          "title": "China’s economy grows 4.5% on robust exports as domestic weakness persists - Yahoo! Finance Canada",
-          "summary": "China’s economy grows 4.5% on robust exports as domestic weakness persists Yahoo! Finance Canada",
-          "summary_snippet": "China’s economy grows 4.5% on robust exports as domestic weakness persists Yahoo! Finance Canada",
-          "source": "https://news.google.com/rss/articles/CBMifEFVX3lxTFA5MmZmOEo4bzczeEZKcGZWSEQzU2hiUTNMcFhxNTNjTWVNZkZQYkNoU1lNUk00MXItaFlOV2dDT3A0aDBmVXVpR0VBX3ExZWREREo2c005NEwxSFdXUHM3Q0Uxc3RLbGZybVZXNkVOZnNWTk51NkVUaEkxWGY?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFA5MmZmOEo4bzczeEZKcGZWSEQzU2hiUTNMcFhxNTNjTWVNZkZQYkNoU1lNUk00MXItaFlOV2dDT3A0aDBmVXVpR0VBX3ExZWREREo2c005NEwxSFdXUHM3Q0Uxc3RLbGZybVZXNkVOZnNWTk51NkVUaEkxWGY?oc=5",
-          "time": "2026-10-24T09:36:59Z",
-          "published_date": "2026-10-24T09:36:59Z",
-          "publishedDate": "2026-10-24T09:36:59Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "china_economy",
-            "sourceUrl": "https://news.google.com/rss/search?q=China+economy+trade+tariffs+exports+semiconductors+markets+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "aaf2c7d0aef8b962",
-      "title": "Southcom General Won't Rule Out Land Strikes on Cartels: \"All Options Are on the Table\" - Latin Times",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Wed, 30 Sep 2026 07:00:00 GMT",
-      "lastSeen": "Wed, 30 Sep 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOd21QaU1CVXpEUE5landQaGZ1TTE5a1NFSTJzRGdNNDZ4U3R6eHBaOHB4RXBRNFpUMW0ycWtJRVdoYkFqYmNFMDhRT1J0VFhIbFZEdnlwa0l4eXRjQWhXaG40UVlCcjIwSXlIZHZ1VGRrYURIaHlhNjVGUWF3WkZNc1RyOU5zQVdGWDJRZG5ZVnIxTG1YS3RyQVMyUjFSYWIxcDVvZ3hvNkZ4S3M?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Southcom General Won't Rule Out Land Strikes on Cartels: \"All Options Are on the Table\" - Latin Times",
-          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOd21QaU1CVXpEUE5landQaGZ1TTE5a1NFSTJzRGdNNDZ4U3R6eHBaOHB4RXBRNFpUMW0ycWtJRVdoYkFqYmNFMDhRT1J0VFhIbFZEdnlwa0l4eXRjQWhXaG40UVlCcjIwSXlIZHZ1VGRrYURIaHlhNjVGUWF3WkZNc1RyOU5zQVdGWDJRZG5ZVnIxTG1YS3RyQVMyUjFSYWIxcDVvZ3hvNkZ4S3M?oc=5",
-          "published_date": "Wed, 30 Sep 2026 07:00:00 GMT",
-          "time": "Wed, 30 Sep 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Latin Times",
-          "summary": "Fallback discovery via Google News RSS; publisher: Latin Times",
-          "source": "Latin Times",
-          "sourceLabel": "Latin Times",
-          "sourceType": "fallback-news",
-          "fallbackFor": "SOUTHCOM Official Reporting — GDELT Mirror",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
       "id": "25e4ddf3835aab4d",
       "title": "NASA Adds New Science Investigations for Moon Base - NASA (.gov)",
       "category": "general",
@@ -2193,6 +2119,38 @@
       ]
     },
     {
+      "id": "93be7dc0a69fc6a0",
+      "title": "Trump rebrands AI as ‘super intelligence’ as tech giants sign White House accord - Mashable",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Wed, 30 Sep 2026 07:00:00 GMT",
+      "lastSeen": "Wed, 30 Sep 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiggFBVV95cUxQVkZJNmFOSHZNWHZ3V28zaFk5TTBZOVpQalI2cWdrY1VDbjdHQ2RDSk0waXVrRkl1dnA1b2p0a2lManJOOEJUeDdDVmQzS0h3TnRyMEJaVFRCLVRqRjZzc3U3SV9xNmpnREV5SHhCZHF2OFphUHNGN3dKQ2oxZ2VUT0N3?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "Trump rebrands AI as ‘super intelligence’ as tech giants sign White House accord - Mashable",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQVkZJNmFOSHZNWHZ3V28zaFk5TTBZOVpQalI2cWdrY1VDbjdHQ2RDSk0waXVrRkl1dnA1b2p0a2lManJOOEJUeDdDVmQzS0h3TnRyMEJaVFRCLVRqRjZzc3U3SV9xNmpnREV5SHhCZHF2OFphUHNGN3dKQ2oxZ2VUT0N3?oc=5",
+          "published_date": "Wed, 30 Sep 2026 07:00:00 GMT",
+          "time": "Wed, 30 Sep 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Mashable",
+          "summary": "Fallback discovery via Google News RSS; publisher: Mashable",
+          "source": "Mashable",
+          "sourceLabel": "Mashable",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @POTUS",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
       "id": "d280bc33a695d8f5",
       "title": "Cyprus: Guterres calls for renewed trust and a new meeting on the way forward - UN News",
       "category": "general",
@@ -2220,70 +2178,6 @@
           "sourceLabel": "UN News",
           "sourceType": "fallback-news",
           "fallbackFor": "X @UN",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "c978ad10f15751ae",
-      "title": "4 Dead in SOUTHCOM Strike on Go-fast Vessel - USNI News",
-      "category": "conflict",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Wed, 26 Aug 2026 07:00:00 GMT",
-      "lastSeen": "Wed, 26 Aug 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiggFBVV95cUxQNDN0d0VPb1R0VTRrdXc3MGlKY1ZBc3FwYm5pSWlGUnJSMms2eTFqZG5CcjdkSVE1NFhPQ2RSRXI4VmdMQWtCRXlqTmZnRDliNnVudEZVaXgyT2YwZlMzYXU0WEF6eDl6WmZsU2NDLUE1SEM4TjdRaE9NcVRLejgzRl9R?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "4 Dead in SOUTHCOM Strike on Go-fast Vessel - USNI News",
-          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQNDN0d0VPb1R0VTRrdXc3MGlKY1ZBc3FwYm5pSWlGUnJSMms2eTFqZG5CcjdkSVE1NFhPQ2RSRXI4VmdMQWtCRXlqTmZnRDliNnVudEZVaXgyT2YwZlMzYXU0WEF6eDl6WmZsU2NDLUE1SEM4TjdRaE9NcVRLejgzRl9R?oc=5",
-          "published_date": "Wed, 26 Aug 2026 07:00:00 GMT",
-          "time": "Wed, 26 Aug 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: USNI News",
-          "summary": "Fallback discovery via Google News RSS; publisher: USNI News",
-          "source": "USNI News",
-          "sourceLabel": "USNI News",
-          "sourceType": "fallback-news",
-          "fallbackFor": "SOUTHCOM Official Reporting — GDELT Mirror",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "9dbc58820cfb2ee1",
-      "title": "US Military Strike Kills 4 in Alleged Drug Trafficking Boat In Caribbean - NDTV",
-      "category": "conflict",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Wed, 26 Aug 2026 07:00:00 GMT",
-      "lastSeen": "Wed, 26 Aug 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiswFBVV95cUxPNjZMLVhOTEtZWWg1REdTYWRpeFgtUkFFeVk1SGxfd3llenVLTDNBcFJzTkxDZ2JyUU9JcjN6X2ItZGpobHdMc3liVkplT3NFM2Vrd3o5OUlIX0JpSHl2T3o5eC0tOWJuNy1MTldNa1F0dTQwUHcxaFhnRjZ4SU9jSlFSdkJ0S25zQmI0aDEtSFh5blVNaTc0MkdaOEZEV2NWV0o2T3ljWDdRNjROdUZJZDNEa9IBuwFBVV95cUxQbjdJdzRnVS1sVGs4WFlxRk92TnJyVWFXY1UybXFrMGFkbjdmejBjbktZY3dEMFJjTWFiVHRMRmtwcG1rV2w1MC1UTEF1X2ZfRHlNNG85YzJUSTU3MV9mRWhpZkdMdW11RldSWXpWN093Zm1sV0o2elllMW50UlhLNmdGVHRIaG1xZ3ZScnVndk5fMlpLMUFvMzFqc0hfVERJanFoRlBjN1JnZ2oxMV8zNUgwemhWOEc0a1Q0?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "US Military Strike Kills 4 in Alleged Drug Trafficking Boat In Caribbean - NDTV",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPNjZMLVhOTEtZWWg1REdTYWRpeFgtUkFFeVk1SGxfd3llenVLTDNBcFJzTkxDZ2JyUU9JcjN6X2ItZGpobHdMc3liVkplT3NFM2Vrd3o5OUlIX0JpSHl2T3o5eC0tOWJuNy1MTldNa1F0dTQwUHcxaFhnRjZ4SU9jSlFSdkJ0S25zQmI0aDEtSFh5blVNaTc0MkdaOEZEV2NWV0o2T3ljWDdRNjROdUZJZDNEa9IBuwFBVV95cUxQbjdJdzRnVS1sVGs4WFlxRk92TnJyVWFXY1UybXFrMGFkbjdmejBjbktZY3dEMFJjTWFiVHRMRmtwcG1rV2w1MC1UTEF1X2ZfRHlNNG85YzJUSTU3MV9mRWhpZkdMdW11RldSWXpWN093Zm1sV0o2elllMW50UlhLNmdGVHRIaG1xZ3ZScnVndk5fMlpLMUFvMzFqc0hfVERJanFoRlBjN1JnZ2oxMV8zNUgwemhWOEc0a1Q0?oc=5",
-          "published_date": "Wed, 26 Aug 2026 07:00:00 GMT",
-          "time": "Wed, 26 Aug 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NDTV",
-          "summary": "Fallback discovery via Google News RSS; publisher: NDTV",
-          "source": "NDTV",
-          "sourceLabel": "NDTV",
-          "sourceType": "fallback-news",
-          "fallbackFor": "SOUTHCOM Official Reporting — GDELT Mirror",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -2417,38 +2311,6 @@
       ]
     },
     {
-      "id": "4a1f367ca624700c",
-      "title": "Trump says fraud investigations make 'very big dent' in overseas scams - Reuters",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Wed, 21 Oct 2026 21:24:27 GMT",
-      "lastSeen": "Wed, 21 Oct 2026 21:24:27 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMimwFBVV95cUxOV1R4TWFDN2k5T1RwZjQ4dUxmeF9QY2x6SWdzYmhnRFhLY3hwVWUxN1pUcFVEd0tKSS13MUVPRTRCU0RKeUlKcFBZWGFUWjN1VW5fYzBMWGhhclo4QmZOaV94SmtXRGlVRUExS1BkaFRNZk45TDAwbjVfM1Uwd0V2cUtVa2ZLTHlyVHdhWWRtbEwwSWNvdmxTbUs4UQ?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Trump says fraud investigations make 'very big dent' in overseas scams - Reuters",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOV1R4TWFDN2k5T1RwZjQ4dUxmeF9QY2x6SWdzYmhnRFhLY3hwVWUxN1pUcFVEd0tKSS13MUVPRTRCU0RKeUlKcFBZWGFUWjN1VW5fYzBMWGhhclo4QmZOaV94SmtXRGlVRUExS1BkaFRNZk45TDAwbjVfM1Uwd0V2cUtVa2ZLTHlyVHdhWWRtbEwwSWNvdmxTbUs4UQ?oc=5",
-          "published_date": "Wed, 21 Oct 2026 21:24:27 GMT",
-          "time": "Wed, 21 Oct 2026 21:24:27 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Reuters",
-          "summary": "Fallback discovery via Google News RSS; publisher: Reuters",
-          "source": "Reuters",
-          "sourceLabel": "Reuters",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @POTUS",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
       "id": "7b8f97df23398086",
       "title": "NASA JPL Looks to Next 90 Years of Innovation, Exploration - NASA Jet Propulsion Laboratory (JPL) (.gov)",
       "category": "general",
@@ -2481,33 +2343,35 @@
       ]
     },
     {
-      "id": "6215e92b51bee362",
-      "title": "Viasat Advances NASA Communications Services Project Demonstration with Successful Launch - Viasat",
-      "category": "general",
+      "id": "edc87fee172ccb93",
+      "title": "Top NATO official reveals details of stunning meeting with Trump that produced Greenland deal 'framework' - Fox News",
+      "category": "diplomatic",
       "confidence": "low",
       "reportCount": 1,
       "sourceCount": 1,
       "sources": [
         "news.google.com"
       ],
-      "anchors": [],
-      "firstSeen": "Wed, 21 Oct 2026 14:12:13 GMT",
-      "lastSeen": "Wed, 21 Oct 2026 14:12:13 GMT",
+      "anchors": [
+        "nato"
+      ],
+      "firstSeen": "Wed, 21 Jan 2026 08:00:00 GMT",
+      "lastSeen": "Wed, 21 Jan 2026 08:00:00 GMT",
       "urls": [
-        "https://news.google.com/rss/articles/CBMivgFBVV95cUxQQzBreHNoM0JUaThXRFYyMDdUaFJPdEdOalQxa0pHNFA3cU9DbXJHZk9IY2hOYWFlWG9vYW9DSGhRR3dZYllOSTJKdUNGanQ3TmU2LXFTWjNtQ2VjcmV1RGF4SGt1bmNfd0s1ZEcxbENFTWpaYUNUeWlZTTRpMW9BOEFKQjhOamt0aVBuTVdlSng2Tk5IcTdfZkJId2VpQ2Q3UFNXUjBZNjlRQlFLQlZfZFNFNmVYYldaMVdXcVRR?oc=5"
+        "https://news.google.com/rss/articles/CBMixwFBVV95cUxNWTVQZnYyN281MlJIZjZlQ3VQeDRLR25GeExvM0duMXhXd2ppQmdSejJWa3VhTmpYZEQ1eU9fbUM5bVUtSWFfaVRRanprTzhGY0lLUmZLRGNORlQwSEJNTUt3WDVqdzJ5aHFTWFY0VDV1WDlvMDExcFZ6dVVFNDA3NXhlaUxrUHhKM1BuSjhTT001OFh2VllVcW1LSDc4TG0zTlI2R18wbFJqV0hTNlVuZ1NYODhycU1CbV93a1JSV2E5bTNiRmhn0gHMAUFVX3lxTE9DS3R6SGJLQU9fR2RPMF8yNDZWNjQzV0VpWjB2VUlaSHVkWFRINUtodGp3bDhoSHBZZERRVnhNVmM0eWpDdzVTbGRMVFJmWnJpcUs5SHEyc19IZ2hCaWJYN0FnNnBHNkh0ZzJSSWh5Nk9zMWplMGxhcmlzd3kzYTV4LVBlR285d3lfcGRveGdrNWdnMjd6YS1xYktHRW5YWDA1Z0pKNDIyUXg5OHNseEpDdWxLdGxscG14N1phaUxrSUJMVnExTEpmM0V0Ng?oc=5"
       ],
       "reports": [
         {
-          "title": "Viasat Advances NASA Communications Services Project Demonstration with Successful Launch - Viasat",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQQzBreHNoM0JUaThXRFYyMDdUaFJPdEdOalQxa0pHNFA3cU9DbXJHZk9IY2hOYWFlWG9vYW9DSGhRR3dZYllOSTJKdUNGanQ3TmU2LXFTWjNtQ2VjcmV1RGF4SGt1bmNfd0s1ZEcxbENFTWpaYUNUeWlZTTRpMW9BOEFKQjhOamt0aVBuTVdlSng2Tk5IcTdfZkJId2VpQ2Q3UFNXUjBZNjlRQlFLQlZfZFNFNmVYYldaMVdXcVRR?oc=5",
-          "published_date": "Wed, 21 Oct 2026 14:12:13 GMT",
-          "time": "Wed, 21 Oct 2026 14:12:13 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Viasat",
-          "summary": "Fallback discovery via Google News RSS; publisher: Viasat",
-          "source": "Viasat",
-          "sourceLabel": "Viasat",
+          "title": "Top NATO official reveals details of stunning meeting with Trump that produced Greenland deal 'framework' - Fox News",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNWTVQZnYyN281MlJIZjZlQ3VQeDRLR25GeExvM0duMXhXd2ppQmdSejJWa3VhTmpYZEQ1eU9fbUM5bVUtSWFfaVRRanprTzhGY0lLUmZLRGNORlQwSEJNTUt3WDVqdzJ5aHFTWFY0VDV1WDlvMDExcFZ6dVVFNDA3NXhlaUxrUHhKM1BuSjhTT001OFh2VllVcW1LSDc4TG0zTlI2R18wbFJqV0hTNlVuZ1NYODhycU1CbV93a1JSV2E5bTNiRmhn0gHMAUFVX3lxTE9DS3R6SGJLQU9fR2RPMF8yNDZWNjQzV0VpWjB2VUlaSHVkWFRINUtodGp3bDhoSHBZZERRVnhNVmM0eWpDdzVTbGRMVFJmWnJpcUs5SHEyc19IZ2hCaWJYN0FnNnBHNkh0ZzJSSWh5Nk9zMWplMGxhcmlzd3kzYTV4LVBlR285d3lfcGRveGdrNWdnMjd6YS1xYktHRW5YWDA1Z0pKNDIyUXg5OHNseEpDdWxLdGxscG14N1phaUxrSUJMVnExTEpmM0V0Ng?oc=5",
+          "published_date": "Wed, 21 Jan 2026 08:00:00 GMT",
+          "time": "Wed, 21 Jan 2026 08:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Fox News",
+          "summary": "Fallback discovery via Google News RSS; publisher: Fox News",
+          "source": "Fox News",
+          "sourceLabel": "Fox News",
           "sourceType": "fallback-news",
-          "fallbackFor": "X @NASA",
+          "fallbackFor": "X @NATO",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -2548,6 +2412,38 @@
       ]
     },
     {
+      "id": "b1a702a4191c7bc4",
+      "title": "WATCH: Trump talks about North Korea, interest rates while hosting cryptocurrency leaders at the White House - PBS",
+      "category": "diplomatic",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Wed, 19 Aug 2026 07:00:00 GMT",
+      "lastSeen": "Wed, 19 Aug 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPc05VMXV2c3NSVFNOMUF3LVp3b0dyejhsU1duLWVGZVdGQlFBR2pNa1VaS2E5eHpXcndKR2x4WkkzR2lUT3VnWFdlcC1WQmJ5d3ZIdXphM0xlUGxGbEFPMnZxaERuam1UX3NpY2x6MnlUMmNLcC12aEdkRGh3dHl1Vno4QTYtemg1ODdxWTc3RXBmbWVGSGU1azgxajJZUDdkaWhjYTgxRllXMWxlajJpQVRDQW1HdXVwWm94SWF4X21zOUhvTXptNXQ5TExhb3dGRDI4Nk1aVExyQmJB0gHiAUFVX3lxTE9HSjhacGd4SGFDYk9wYlNfZ2g1Z0c5dGx2UF9DNVY3SFRUVHF1bEJwbVBHSHlDdUZSXzVtYi15R0VPa0p6blNMV0NaLXdaRXh4VnVROXVMXzY5cXg4clNVaWlhbUhibU1BMmZWR0hVd09FSFRra2E0VXRrQjl2aGJUemdFQXl6MkMyVU5LSV91ZHREcWQ5VU5xd29QSURVN2h3MWVPTHpxajJkM0lwMVJEemluZjZpdi0yZHVjUHJRTUpnNW84OXRRN0JKZXdFZDVhSnE5THhJLUVGNGhSREJvanc?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "WATCH: Trump talks about North Korea, interest rates while hosting cryptocurrency leaders at the White House - PBS",
+          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPc05VMXV2c3NSVFNOMUF3LVp3b0dyejhsU1duLWVGZVdGQlFBR2pNa1VaS2E5eHpXcndKR2x4WkkzR2lUT3VnWFdlcC1WQmJ5d3ZIdXphM0xlUGxGbEFPMnZxaERuam1UX3NpY2x6MnlUMmNLcC12aEdkRGh3dHl1Vno4QTYtemg1ODdxWTc3RXBmbWVGSGU1azgxajJZUDdkaWhjYTgxRllXMWxlajJpQVRDQW1HdXVwWm94SWF4X21zOUhvTXptNXQ5TExhb3dGRDI4Nk1aVExyQmJB0gHiAUFVX3lxTE9HSjhacGd4SGFDYk9wYlNfZ2g1Z0c5dGx2UF9DNVY3SFRUVHF1bEJwbVBHSHlDdUZSXzVtYi15R0VPa0p6blNMV0NaLXdaRXh4VnVROXVMXzY5cXg4clNVaWlhbUhibU1BMmZWR0hVd09FSFRra2E0VXRrQjl2aGJUemdFQXl6MkMyVU5LSV91ZHREcWQ5VU5xd29QSURVN2h3MWVPTHpxajJkM0lwMVJEemluZjZpdi0yZHVjUHJRTUpnNW84OXRRN0JKZXdFZDVhSnE5THhJLUVGNGhSREJvanc?oc=5",
+          "published_date": "Wed, 19 Aug 2026 07:00:00 GMT",
+          "time": "Wed, 19 Aug 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: PBS",
+          "summary": "Fallback discovery via Google News RSS; publisher: PBS",
+          "source": "PBS",
+          "sourceLabel": "PBS",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @POTUS",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
       "id": "820916d3522d6bb1",
       "title": "NATO says ‘prepared’ for any threat over possible Iranian strikes on US military targets in Europe - Anadolu Ajansı",
       "category": "conflict",
@@ -2583,41 +2479,6 @@
       ]
     },
     {
-      "id": "dccb26f9fa049143",
-      "title": "NATO ‘prepared’ to defend allies amid reported Iran threat - The New Region",
-      "category": "diplomatic",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [
-        "iran",
-        "nato"
-      ],
-      "firstSeen": "Wed, 19 Aug 2026 07:00:00 GMT",
-      "lastSeen": "Wed, 19 Aug 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiS0FVX3lxTE01aVNKS0wtd2VFMld4YjA1YU5xcC1VV3JDUFVnM0hmOHd5eHZCbGxnYy1vRDhocTRRSk5NSEI2cDhYVHY1VFAtNGxfSQ?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "NATO ‘prepared’ to defend allies amid reported Iran threat - The New Region",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE01aVNKS0wtd2VFMld4YjA1YU5xcC1VV3JDUFVnM0hmOHd5eHZCbGxnYy1vRDhocTRRSk5NSEI2cDhYVHY1VFAtNGxfSQ?oc=5",
-          "published_date": "Wed, 19 Aug 2026 07:00:00 GMT",
-          "time": "Wed, 19 Aug 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: The New Region",
-          "summary": "Fallback discovery via Google News RSS; publisher: The New Region",
-          "source": "The New Region",
-          "sourceLabel": "The New Region",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NATO",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
       "id": "d1da5bc710bec17f",
       "title": "NATO ‘prepared’ to defend allies amid report of Iranian strike plans - Al Jazeera",
       "category": "conflict",
@@ -2646,6 +2507,41 @@
           "summary": "Fallback discovery via Google News RSS; publisher: Al Jazeera",
           "source": "Al Jazeera",
           "sourceLabel": "Al Jazeera",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NATO",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "dccb26f9fa049143",
+      "title": "NATO ‘prepared’ to defend allies amid reported Iran threat - The New Region",
+      "category": "diplomatic",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [
+        "iran",
+        "nato"
+      ],
+      "firstSeen": "Wed, 19 Aug 2026 07:00:00 GMT",
+      "lastSeen": "Wed, 19 Aug 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiS0FVX3lxTE01aVNKS0wtd2VFMld4YjA1YU5xcC1VV3JDUFVnM0hmOHd5eHZCbGxnYy1vRDhocTRRSk5NSEI2cDhYVHY1VFAtNGxfSQ?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "NATO ‘prepared’ to defend allies amid reported Iran threat - The New Region",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE01aVNKS0wtd2VFMld4YjA1YU5xcC1VV3JDUFVnM0hmOHd5eHZCbGxnYy1vRDhocTRRSk5NSEI2cDhYVHY1VFAtNGxfSQ?oc=5",
+          "published_date": "Wed, 19 Aug 2026 07:00:00 GMT",
+          "time": "Wed, 19 Aug 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: The New Region",
+          "summary": "Fallback discovery via Google News RSS; publisher: The New Region",
+          "source": "The New Region",
+          "sourceLabel": "The New Region",
           "sourceType": "fallback-news",
           "fallbackFor": "X @NATO",
           "credit_metadata": "Google News RSS fallback"
@@ -3171,38 +3067,6 @@
       ]
     },
     {
-      "id": "bc00c40ab962b572",
-      "title": "Army Launches New Task Force, Replacing Southern Spear's Efforts Against Drug Cartels - Military.com",
-      "category": "conflict",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Wed, 05 Aug 2026 07:00:00 GMT",
-      "lastSeen": "Wed, 05 Aug 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMimwFBVV95cUxOSWc5ZU5sZFdZTThEMjJzNXpWNzlQTElFT0UwOUtEVEdkT0M0bEdHZVo3Yld1UGJ2UHRaWEx5aHJDXy1NS2p0OWRZSUVVVWRkRXd5dTJNNWdrVnp6d21zTC1tYUh2eEt4ZnliTEZHS3c1c1dPMElJSElpTnBoSkZVaTY2b051WHRVQk1ScmQzdjY1OFh6Z3pFYl9Hcw?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Army Launches New Task Force, Replacing Southern Spear's Efforts Against Drug Cartels - Military.com",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOSWc5ZU5sZFdZTThEMjJzNXpWNzlQTElFT0UwOUtEVEdkT0M0bEdHZVo3Yld1UGJ2UHRaWEx5aHJDXy1NS2p0OWRZSUVVVWRkRXd5dTJNNWdrVnp6d21zTC1tYUh2eEt4ZnliTEZHS3c1c1dPMElJSElpTnBoSkZVaTY2b051WHRVQk1ScmQzdjY1OFh6Z3pFYl9Hcw?oc=5",
-          "published_date": "Wed, 05 Aug 2026 07:00:00 GMT",
-          "time": "Wed, 05 Aug 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Military.com",
-          "summary": "Fallback discovery via Google News RSS; publisher: Military.com",
-          "source": "Military.com",
-          "sourceLabel": "Military.com",
-          "sourceType": "fallback-news",
-          "fallbackFor": "SOUTHCOM Official Reporting — GDELT Mirror",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
       "id": "6693671530779557",
       "title": "US military kills two alleged narco-terrorists in latest Eastern Pacific strike on drug-trafficking vessel - 930 WFMD Free Talk",
       "category": "conflict",
@@ -3301,73 +3165,6 @@
       ]
     },
     {
-      "id": "cd8d1b84a7877d4d",
-      "title": "Officials Provide Progress Update on Major Operation 1 Year After its Launch - U.S. Southern Command (.mil)",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Wed, 02 Sep 2026 07:00:00 GMT",
-      "lastSeen": "Wed, 02 Sep 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPSDREY1NkbVFsakdGcGNDeEU5S25YejhIRVZJd2ZQLVkzcGZOcWVlOHE4ZGFPVDY2M1J4czN6RUxqWXV0QlV1Z2RpZ3hGeXNlcFhWTU45X2FsV1ZjZlJfTU5HUTgtMktaZl9lRnJ6UTduT3FwNEVRMUJJb0RZZllyaGx0VERqSF9fbnR2ZU43U0dkMDZvVlZLX1lQelBvY3VheFZ5bnUxZTE4WVZwWHR1cTFaeUNhWElhTlFndG83Vmg1VnNnWDFwdDY1X0tUVEVobjNRUA?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Officials Provide Progress Update on Major Operation 1 Year After its Launch - U.S. Southern Command (.mil)",
-          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPSDREY1NkbVFsakdGcGNDeEU5S25YejhIRVZJd2ZQLVkzcGZOcWVlOHE4ZGFPVDY2M1J4czN6RUxqWXV0QlV1Z2RpZ3hGeXNlcFhWTU45X2FsV1ZjZlJfTU5HUTgtMktaZl9lRnJ6UTduT3FwNEVRMUJJb0RZZllyaGx0VERqSF9fbnR2ZU43U0dkMDZvVlZLX1lQelBvY3VheFZ5bnUxZTE4WVZwWHR1cTFaeUNhWElhTlFndG83Vmg1VnNnWDFwdDY1X0tUVEVobjNRUA?oc=5",
-          "published_date": "Wed, 02 Sep 2026 07:00:00 GMT",
-          "time": "Wed, 02 Sep 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: U.S. Southern Command (.mil)",
-          "summary": "Fallback discovery via Google News RSS; publisher: U.S. Southern Command (.mil)",
-          "source": "U.S. Southern Command (.mil)",
-          "sourceLabel": "U.S. Southern Command (.mil)",
-          "sourceType": "fallback-news",
-          "fallbackFor": "SOUTHCOM Official Reporting — GDELT Mirror",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "5018b53246db50b6",
-      "title": "Four-Star Dissent: Leaked Document Shows SOUTHCOM Chief Warned Iran War Is Straining Latin America - Latin Times",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [
-        "america",
-        "iran"
-      ],
-      "firstSeen": "Wed, 02 Sep 2026 07:00:00 GMT",
-      "lastSeen": "Wed, 02 Sep 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMixwFBVV95cUxOQ0tNcEJBMEREMkxWVm1QRnZicm5MTEF6a2ZtN3hBSWNOUjhzbkVHd3lmVzlFV0ZHdDVsdDRzOE5yMU9BRWJkVzJBdk5ub0lWTjNhTkRuOXVpdldmclhlYmZHdHVpS0dDQ3pKQW1TdWVxR1FucGxoQnJhRXZmcmRyN2JObkYtYXpRMnBZbnZOcWthVTQ5TGlkVWVRLURWYlZsVU5lNDJ4WG9OZDNmaWpTUlJzeUhRMExGenFQMTlNZDBpb3VkVzRF?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Four-Star Dissent: Leaked Document Shows SOUTHCOM Chief Warned Iran War Is Straining Latin America - Latin Times",
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOQ0tNcEJBMEREMkxWVm1QRnZicm5MTEF6a2ZtN3hBSWNOUjhzbkVHd3lmVzlFV0ZHdDVsdDRzOE5yMU9BRWJkVzJBdk5ub0lWTjNhTkRuOXVpdldmclhlYmZHdHVpS0dDQ3pKQW1TdWVxR1FucGxoQnJhRXZmcmRyN2JObkYtYXpRMnBZbnZOcWthVTQ5TGlkVWVRLURWYlZsVU5lNDJ4WG9OZDNmaWpTUlJzeUhRMExGenFQMTlNZDBpb3VkVzRF?oc=5",
-          "published_date": "Wed, 02 Sep 2026 07:00:00 GMT",
-          "time": "Wed, 02 Sep 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Latin Times",
-          "summary": "Fallback discovery via Google News RSS; publisher: Latin Times",
-          "source": "Latin Times",
-          "sourceLabel": "Latin Times",
-          "sourceType": "fallback-news",
-          "fallbackFor": "SOUTHCOM Official Reporting — GDELT Mirror",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
       "id": "27bbb2066c93986d",
       "title": "Next NATO summit in Albania in doubt amid U.S. reluctance and low defense spending - The Japan Times",
       "category": "diplomatic",
@@ -3397,38 +3194,6 @@
           "sourceLabel": "The Japan Times",
           "sourceType": "fallback-news",
           "fallbackFor": "X @NATO",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "77eb51ae08a2ca62",
-      "title": "President Trump Delivers Powerful Primetime Address on Operation Epic Fury - The White House (.gov)",
-      "category": "political",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Wed, 01 Apr 2026 07:00:00 GMT",
-      "lastSeen": "Wed, 01 Apr 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQb1ZHZmIxVmltZDkzZWx0NklrWU5xQk9wcmgwZ0owQi03d3hFNFdfSkY0ZWFydHVfV2Z3MnU4WWJEenpJRmFOQkkxNmd2OGdkRXdrSl9XeWVjZkpnZDFuc0VZX25BNHI3QVBoY3YxZDQ3MTFjM0w0UE8tTHNjZTZGcVA2eTE2STZzOVBDdC10NkpmQ1dGZXNVVzZPV0lDQjNvdERTN0Q3aTY1YjJQUEpOTmRiYlhVT3oxQjNB?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "President Trump Delivers Powerful Primetime Address on Operation Epic Fury - The White House (.gov)",
-          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQb1ZHZmIxVmltZDkzZWx0NklrWU5xQk9wcmgwZ0owQi03d3hFNFdfSkY0ZWFydHVfV2Z3MnU4WWJEenpJRmFOQkkxNmd2OGdkRXdrSl9XeWVjZkpnZDFuc0VZX25BNHI3QVBoY3YxZDQ3MTFjM0w0UE8tTHNjZTZGcVA2eTE2STZzOVBDdC10NkpmQ1dGZXNVVzZPV0lDQjNvdERTN0Q3aTY1YjJQUEpOTmRiYlhVT3oxQjNB?oc=5",
-          "published_date": "Wed, 01 Apr 2026 07:00:00 GMT",
-          "time": "Wed, 01 Apr 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: The White House (.gov)",
-          "summary": "Fallback discovery via Google News RSS; publisher: The White House (.gov)",
-          "source": "The White House (.gov)",
-          "sourceLabel": "The White House (.gov)",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @POTUS",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -3532,6 +3297,38 @@
       ]
     },
     {
+      "id": "f76c59c17680f9a9",
+      "title": "Trump says he and tech leaders signed AI agreement that is 'morally binding' - CNBC",
+      "category": "diplomatic",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Tue, 29 Sep 2026 07:00:00 GMT",
+      "lastSeen": "Tue, 29 Sep 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMid0FVX3lxTFAzZUtiZGlERGZmYTdrbWdNUEFvYnR2WTdTVnRlYTNkR0J1Z09pQ3BqUzA2bE5XdFBvdTByeTQ3SVZHOUtkRVVGSlF5YzJYYi1CcHA1TExxSzF5bEt2NGVaV241dGhmOEhnVzRBRVB2RGZnOXdhOW1N0gF8QVVfeXFMTmZ4WTA5cFd2Tk9Zbk1xcXVlcEtPcjFYS1pVMFBOSU5sNlphd056Z3NzclNGNWR1eDd3NG5ZM2lodnVjMC1yVENpYXZPMnVGM3I0b3FuUmszNnBZSWQ5V21OMjhzY1Q4VG9FNkdIRUFOUFZ6QUsyajFuOHEyTA?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "Trump says he and tech leaders signed AI agreement that is 'morally binding' - CNBC",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFAzZUtiZGlERGZmYTdrbWdNUEFvYnR2WTdTVnRlYTNkR0J1Z09pQ3BqUzA2bE5XdFBvdTByeTQ3SVZHOUtkRVVGSlF5YzJYYi1CcHA1TExxSzF5bEt2NGVaV241dGhmOEhnVzRBRVB2RGZnOXdhOW1N0gF8QVVfeXFMTmZ4WTA5cFd2Tk9Zbk1xcXVlcEtPcjFYS1pVMFBOSU5sNlphd056Z3NzclNGNWR1eDd3NG5ZM2lodnVjMC1yVENpYXZPMnVGM3I0b3FuUmszNnBZSWQ5V21OMjhzY1Q4VG9FNkdIRUFOUFZ6QUsyajFuOHEyTA?oc=5",
+          "published_date": "Tue, 29 Sep 2026 07:00:00 GMT",
+          "time": "Tue, 29 Sep 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: CNBC",
+          "summary": "Fallback discovery via Google News RSS; publisher: CNBC",
+          "source": "CNBC",
+          "sourceLabel": "CNBC",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @POTUS",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
       "id": "e5eb7ef257f28ead",
       "title": "U.S. military kills alleged narco-terrorist in lethal strike on drug-trafficking vessel in Eastern Pacific - Fox News",
       "category": "conflict",
@@ -3590,7 +3387,7 @@
           "source": "The Hill",
           "sourceLabel": "The Hill",
           "sourceType": "fallback-news",
-          "fallbackFor": "SOUTHCOM Official Reporting — GDELT Mirror",
+          "fallbackFor": "GDELT — Western Hemisphere Counter-Cartel",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -3692,6 +3489,134 @@
       ]
     },
     {
+      "id": "8d5df0f12ac0e302",
+      "title": "White House press ban - what is the pool and why is it in a row with Trump? - BBC",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Tue, 22 Sep 2026 07:00:00 GMT",
+      "lastSeen": "Tue, 22 Sep 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiW0FVX3lxTFAybGVBQnJrOFJiSDlPWDZrTDdDWWdWSXhSR1lFbDI1WFhMMEMtX2FiNlNQVW1rUzdZRHlQSjQybDdPbXMzZ013OGI3RVhnYzQtVG9vZHhCOC1KRWs?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "White House press ban - what is the pool and why is it in a row with Trump? - BBC",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFAybGVBQnJrOFJiSDlPWDZrTDdDWWdWSXhSR1lFbDI1WFhMMEMtX2FiNlNQVW1rUzdZRHlQSjQybDdPbXMzZ013OGI3RVhnYzQtVG9vZHhCOC1KRWs?oc=5",
+          "published_date": "Tue, 22 Sep 2026 07:00:00 GMT",
+          "time": "Tue, 22 Sep 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: BBC",
+          "summary": "Fallback discovery via Google News RSS; publisher: BBC",
+          "source": "BBC",
+          "sourceLabel": "BBC",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @POTUS",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "85107df82e2ac8ec",
+      "title": "WATCH: Trump addresses 2026 United Nations General Assembly - PBS",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Tue, 22 Sep 2026 07:00:00 GMT",
+      "lastSeen": "Tue, 22 Sep 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMinwFBVV95cUxNcDlfMEZKSnZWZFVuUEJJUnBsWXA3NWpmSXI0aFl3dTUtcHFmOVJ4MmF6QmxWLXBCVDZ3eGFCeVhYQTh2V2piam8wR1JnYWdBYVJvR0hFU203UFZEMFJqMWw0aFc1aUxyZmNTNGpJVkdVU1hzR2hjUmxpNC1wZVJFWWRQMDlPdWxmdTEtRjhSQXNmeFktYkVHS1pEVFNDcUHSAaQBQVVfeXFMTTNpMXhPNXBsSFdCdnhSem52YWt6SUVCdjc3RHRhSGRlSlNsRV9ZRGp2bmx4ZS1YVzZXNW9hUUxTaHJLRG9lcW5vdjVGMWE5ZEh6dHFKTzVmZzQ4Mk52WENMUUVMQlZ5MTU4M2RKV205MmVtaXlYZzhnRDFLVGxadXhQVWJJSGhkblpiRWpSWll5bWp3T2c1cThxWFlQak8zX3ZuSHY?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "WATCH: Trump addresses 2026 United Nations General Assembly - PBS",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNcDlfMEZKSnZWZFVuUEJJUnBsWXA3NWpmSXI0aFl3dTUtcHFmOVJ4MmF6QmxWLXBCVDZ3eGFCeVhYQTh2V2piam8wR1JnYWdBYVJvR0hFU203UFZEMFJqMWw0aFc1aUxyZmNTNGpJVkdVU1hzR2hjUmxpNC1wZVJFWWRQMDlPdWxmdTEtRjhSQXNmeFktYkVHS1pEVFNDcUHSAaQBQVVfeXFMTTNpMXhPNXBsSFdCdnhSem52YWt6SUVCdjc3RHRhSGRlSlNsRV9ZRGp2bmx4ZS1YVzZXNW9hUUxTaHJLRG9lcW5vdjVGMWE5ZEh6dHFKTzVmZzQ4Mk52WENMUUVMQlZ5MTU4M2RKV205MmVtaXlYZzhnRDFLVGxadXhQVWJJSGhkblpiRWpSWll5bWp3T2c1cThxWFlQak8zX3ZuSHY?oc=5",
+          "published_date": "Tue, 22 Sep 2026 07:00:00 GMT",
+          "time": "Tue, 22 Sep 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: PBS",
+          "summary": "Fallback discovery via Google News RSS; publisher: PBS",
+          "source": "PBS",
+          "sourceLabel": "PBS",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @POTUS",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "580f467738d0c693",
+      "title": "White House launches 'Trump TV' after ban on major news outlets - NPR",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Tue, 22 Sep 2026 07:00:00 GMT",
+      "lastSeen": "Tue, 22 Sep 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMigAFBVV95cUxQRllOUVRILTZsSndKZl9hRWVKMjdBZGJvdjIwblpKNlVPTEdsU1RlSGF1TEJveWMxWkFHREpCSnh5eXpFdVF2anJnWF9tU2tsc29jdmVsd2xSYWpCVDVreEx1Y2NCdzJZMjhVT055YW9jc1d0d25raDBBUVRPS25aeQ?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "White House launches 'Trump TV' after ban on major news outlets - NPR",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQRllOUVRILTZsSndKZl9hRWVKMjdBZGJvdjIwblpKNlVPTEdsU1RlSGF1TEJveWMxWkFHREpCSnh5eXpFdVF2anJnWF9tU2tsc29jdmVsd2xSYWpCVDVreEx1Y2NCdzJZMjhVT055YW9jc1d0d25raDBBUVRPS25aeQ?oc=5",
+          "published_date": "Tue, 22 Sep 2026 07:00:00 GMT",
+          "time": "Tue, 22 Sep 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NPR",
+          "summary": "Fallback discovery via Google News RSS; publisher: NPR",
+          "source": "NPR",
+          "sourceLabel": "NPR",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @POTUS",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "7515df52bb3b7500",
+      "title": "White House Launches ‘Trump TV’ Amid Feud With Press - Time Magazine",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Tue, 22 Sep 2026 07:00:00 GMT",
+      "lastSeen": "Tue, 22 Sep 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMilwFBVV95cUxQcUpndHVYVjNmR2JwYXdrYWxneFNycUYyOTVCejJISWVOdmFGT0xEUlMtZGhOV2lJR2x2VVVRV1NlVzRuaHc0TFpua1ctS2hoMW1PdTJlcmJSX0JsVm9valEwNHpQOF9KeWhwbTdIRkVjU1hCdjRNWUxyZHJYUk9yQ0JtbDExR2JhWUVLWGRxNWlYVGlXdDVN?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "White House Launches ‘Trump TV’ Amid Feud With Press - Time Magazine",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQcUpndHVYVjNmR2JwYXdrYWxneFNycUYyOTVCejJISWVOdmFGT0xEUlMtZGhOV2lJR2x2VVVRV1NlVzRuaHc0TFpua1ctS2hoMW1PdTJlcmJSX0JsVm9valEwNHpQOF9KeWhwbTdIRkVjU1hCdjRNWUxyZHJYUk9yQ0JtbDExR2JhWUVLWGRxNWlYVGlXdDVN?oc=5",
+          "published_date": "Tue, 22 Sep 2026 07:00:00 GMT",
+          "time": "Tue, 22 Sep 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Time Magazine",
+          "summary": "Fallback discovery via Google News RSS; publisher: Time Magazine",
+          "source": "Time Magazine",
+          "sourceLabel": "Time Magazine",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @POTUS",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
       "id": "1692178927cb93d0",
       "title": "EXCLUSIVE: US ties Sudanese army leader's UN visa to ceasefire plan, sources say - Reuters",
       "category": "diplomatic",
@@ -3721,38 +3646,6 @@
           "sourceLabel": "Reuters",
           "sourceType": "fallback-news",
           "fallbackFor": "X @UN",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "7b0c560298101eae",
-      "title": "On Earth Day, We Finally Have a President Who Follows Science - The White House (.gov)",
-      "category": "political",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Tue, 22 Apr 2025 07:00:00 GMT",
-      "lastSeen": "Tue, 22 Apr 2025 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOQ0NhTWxMUlMyaV9BUVZGb05kZzdEbmxlRGVkUzk1WVRqT3h0aEhSYUk1SWlic3dZS1ZTaWNXNDRKa2pGSzR0djZCT1ZRaU0zSUJjYzBxY2s3cWwwQW5GWFdtbzh2WGhHVUlOem4wY1BRZW0yZzhFNXFWN1BfQVBpVXlKbHR2Nlg1WEJ2c3A2QVpyNkg1SURwOEp5QkM2VHFPSllteTZjM0Y?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "On Earth Day, We Finally Have a President Who Follows Science - The White House (.gov)",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOQ0NhTWxMUlMyaV9BUVZGb05kZzdEbmxlRGVkUzk1WVRqT3h0aEhSYUk1SWlic3dZS1ZTaWNXNDRKa2pGSzR0djZCT1ZRaU0zSUJjYzBxY2s3cWwwQW5GWFdtbzh2WGhHVUlOem4wY1BRZW0yZzhFNXFWN1BfQVBpVXlKbHR2Nlg1WEJ2c3A2QVpyNkg1SURwOEp5QkM2VHFPSllteTZjM0Y?oc=5",
-          "published_date": "Tue, 22 Apr 2025 07:00:00 GMT",
-          "time": "Tue, 22 Apr 2025 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: The White House (.gov)",
-          "summary": "Fallback discovery via Google News RSS; publisher: The White House (.gov)",
-          "source": "The White House (.gov)",
-          "sourceLabel": "The White House (.gov)",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @POTUS",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -3851,6 +3744,70 @@
           "sourceLabel": "UN News",
           "sourceType": "fallback-news",
           "fallbackFor": "X @UN",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "ed0c3b8feb10682b",
+      "title": "NASA’s SR-1 Freedom Advances with Progress on Nuclear Power Module - NASA (.gov)",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Tue, 20 Oct 2026 18:11:33 GMT",
+      "lastSeen": "Tue, 20 Oct 2026 18:11:33 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMirwFBVV95cUxQM243TXE0Vm1TUnZUVG9UNHlkRHpYNUt6NVNydk8yZzhtRFJCU0RlYW42QzNqRnVWUEN5SmI2dUliMExvUUhaZHFOS1Nxa01rN3gya3F2MkZNN0l4bGlHT2pWQzljb2dUZDc3aTAxelg4TU9GVVBFMFIwdkdaZ3FjOGdRRUdiWnViZlhoSnRWNFQ0SDdWVE5rNGd4SXZVTG1ya3pVTVpSSV9UdVhkSzM4?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "NASA’s SR-1 Freedom Advances with Progress on Nuclear Power Module - NASA (.gov)",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQM243TXE0Vm1TUnZUVG9UNHlkRHpYNUt6NVNydk8yZzhtRFJCU0RlYW42QzNqRnVWUEN5SmI2dUliMExvUUhaZHFOS1Nxa01rN3gya3F2MkZNN0l4bGlHT2pWQzljb2dUZDc3aTAxelg4TU9GVVBFMFIwdkdaZ3FjOGdRRUdiWnViZlhoSnRWNFQ0SDdWVE5rNGd4SXZVTG1ya3pVTVpSSV9UdVhkSzM4?oc=5",
+          "published_date": "Tue, 20 Oct 2026 18:11:33 GMT",
+          "time": "Tue, 20 Oct 2026 18:11:33 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
+          "summary": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
+          "source": "NASA (.gov)",
+          "sourceLabel": "NASA (.gov)",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NASA",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "681bd3a19fe91039",
+      "title": "NASA Experimental Mars Helicopter Blade Designs Target Longer Flights - NASA (.gov)",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Tue, 20 Oct 2026 16:02:35 GMT",
+      "lastSeen": "Tue, 20 Oct 2026 16:02:35 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPUnY1aFk4ejZUamxpT3N4NFVFNnpzSlZ3MkpmZktmMFFjZTRXZGdxajJocjNJSm5udEFIRm5YeVNWYnh5X2NTUU1FZXlMdzZOODJESjNacl91UE8wYjg1TDF6V0VCQ0ZkazJxT3JIM1VLMHFITGxmN1pQRG9DcVdHbnB2V1ZmUlFOTGhjcV9vU2JYNkx6WHBZRVA4ZlpBZE8tdUppQkFSY0FrbTZrOWh4YU0zcmJ4MmZYVkxpS3BIRGtzQkhPX2dYQg?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "NASA Experimental Mars Helicopter Blade Designs Target Longer Flights - NASA (.gov)",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPUnY1aFk4ejZUamxpT3N4NFVFNnpzSlZ3MkpmZktmMFFjZTRXZGdxajJocjNJSm5udEFIRm5YeVNWYnh5X2NTUU1FZXlMdzZOODJESjNacl91UE8wYjg1TDF6V0VCQ0ZkazJxT3JIM1VLMHFITGxmN1pQRG9DcVdHbnB2V1ZmUlFOTGhjcV9vU2JYNkx6WHBZRVA4ZlpBZE8tdUppQkFSY0FrbTZrOWh4YU0zcmJ4MmZYVkxpS3BIRGtzQkhPX2dYQg?oc=5",
+          "published_date": "Tue, 20 Oct 2026 16:02:35 GMT",
+          "time": "Tue, 20 Oct 2026 16:02:35 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
+          "summary": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
+          "source": "NASA (.gov)",
+          "sourceLabel": "NASA (.gov)",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NASA",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
