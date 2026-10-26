@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-26T06:14:55.076741Z",
+  "updatedAt": "2026-10-26T13:11:24.105957Z",
   "method": "Deterministic prioritization of existing public Global Pulse artifacts; not a forecast or causal model.",
   "freshness": {
-    "snapshotUpdatedAt": "2026-10-26T01:47:28.216480+00:00",
-    "eventsUpdatedAt": "2026-10-26T01:47:32.323986Z",
+    "snapshotUpdatedAt": "2026-10-26T07:03:21.181460+00:00",
+    "eventsUpdatedAt": "2026-10-26T07:03:25.280840Z",
     "assessmentsUpdatedAt": "2026-09-10T03:03:12.655499Z"
   },
   "headline": {
@@ -12,36 +12,6 @@
     "description": "Highest-priority developments and attention indicators from the latest generated intelligence artifacts."
   },
   "topDevelopments": [
-    {
-      "id": "b60d241306cf53cf",
-      "title": "How is the US-Israeli war on Iran causing havoc in Europe? - Al Jazeera",
-      "category": "general",
-      "confidence": "moderate",
-      "reportCount": 2,
-      "independentSourceCount": 2,
-      "sources": [
-        "google_news_iran_israel",
-        "al_jazeera"
-      ],
-      "breaking": true,
-      "firstSeen": "2026-10-25T14:47:55Z",
-      "lastSeen": "2026-10-25T14:48:45Z"
-    },
-    {
-      "id": "161a3235672fbc7c",
-      "title": "Saudi air defences intercept Houthi barrage near Mecca - Al Jazeera",
-      "category": "general",
-      "confidence": "moderate",
-      "reportCount": 2,
-      "independentSourceCount": 2,
-      "sources": [
-        "google_news_iran_israel",
-        "al_jazeera"
-      ],
-      "breaking": true,
-      "firstSeen": "2026-10-25T13:49:33Z",
-      "lastSeen": "2026-10-25T14:18:34Z"
-    },
     {
       "id": "cdd6fbe89cb0b6da",
       "title": "Venezuela’s opposition leader Machado returns after months in exile",
@@ -103,6 +73,20 @@
       "lastSeen": "2026-10-25T16:21:40Z"
     },
     {
+      "id": "82030fd7f9f7e6ff",
+      "title": "Israel drills for surprise attack with massive military exercise as expert invokes 1973 war - Fox News",
+      "category": "conflict",
+      "confidence": "low",
+      "reportCount": 2,
+      "independentSourceCount": 1,
+      "sources": [
+        "google_news_iran_israel"
+      ],
+      "breaking": true,
+      "firstSeen": "2026-10-26T00:42:24Z",
+      "lastSeen": "2026-10-26T00:42:24Z"
+    },
+    {
       "id": "d3ea1d75f9cc4ddd",
       "title": "Obama calls US midterms a ‘circuit breaker’ against Trump, attacks Iran strategy - شبكة تواصل الإخبارية",
       "category": "general",
@@ -117,47 +101,60 @@
       "lastSeen": "2026-10-25T18:44:01Z"
     },
     {
-      "id": "9ecfbf616c92d3fc",
-      "title": "One killed in Ukrainian missile strike on Russia’s Lipetsk industrial zone - Business Upturn",
-      "category": "conflict",
-      "confidence": "low",
-      "reportCount": 2,
-      "independentSourceCount": 1,
-      "sources": [
-        "google_news_south_asia_security"
-      ],
-      "breaking": true,
-      "firstSeen": "2026-10-25T14:36:26Z",
-      "lastSeen": "2026-10-25T14:36:44Z"
-    },
-    {
-      "id": "725c0380756b9052",
-      "title": "Saudi Arabia reports two injured after Houthi missile debris falls in Asir - Business Upturn",
-      "category": "conflict",
-      "confidence": "low",
-      "reportCount": 2,
-      "independentSourceCount": 2,
-      "sources": [
-        "google_news_iran_israel",
-        "google_news_south_asia_security"
-      ],
-      "breaking": true,
-      "firstSeen": "2026-10-25T14:31:34Z",
-      "lastSeen": "2026-10-25T14:31:34Z"
-    },
-    {
-      "id": "9acecb6ca80dda61",
-      "title": "Qatari mediators in Tehran for US-coordinated de-escalation effort - Iran International",
+      "id": "f29890339289f9b5",
+      "title": "Green forest fire notification in Mali",
       "category": "general",
       "confidence": "low",
-      "reportCount": 2,
+      "reportCount": 5,
       "independentSourceCount": 1,
       "sources": [
-        "google_news_iran_israel"
+        "gdacs_global_disaster_alerts"
       ],
-      "breaking": true,
-      "firstSeen": "2026-10-25T13:23:19Z",
-      "lastSeen": "2026-10-25T13:23:19Z"
+      "breaking": false,
+      "firstSeen": "2026-10-25T20:07:53Z",
+      "lastSeen": "2026-10-26T00:10:26Z"
+    },
+    {
+      "id": "9dbe1492b2c609c1",
+      "title": "Statement of condemnation by the North Atlantic Council of Russia's malicious cyber activities - North Atlantic Treaty Organization | NATO",
+      "category": "diplomatic",
+      "confidence": "low",
+      "reportCount": 4,
+      "independentSourceCount": 1,
+      "sources": [
+        "North Atlantic Treaty Organization | NATO"
+      ],
+      "breaking": false,
+      "firstSeen": "Fri, 18 Jul 2025 07:00:00 GMT",
+      "lastSeen": "Tue, 23 Sep 2025 07:00:00 GMT"
+    },
+    {
+      "id": "d4032f4cad0427a7",
+      "title": "Relations with Ukraine - North Atlantic Treaty Organization | NATO",
+      "category": "diplomatic",
+      "confidence": "low",
+      "reportCount": 3,
+      "independentSourceCount": 1,
+      "sources": [
+        "North Atlantic Treaty Organization | NATO"
+      ],
+      "breaking": false,
+      "firstSeen": "Mon, 05 Aug 2024 07:00:00 GMT",
+      "lastSeen": "Tue, 11 Nov 2025 08:00:00 GMT"
+    },
+    {
+      "id": "4ba162661136723c",
+      "title": "M 4.8 - 182 km NW of Port-Olry, Vanuatu",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 3,
+      "independentSourceCount": 1,
+      "sources": [
+        "usgs_m4_5_earthquakes_past_day"
+      ],
+      "breaking": false,
+      "firstSeen": "2026-10-25T20:49:14.040000Z",
+      "lastSeen": "2026-10-26T05:16:27.040000Z"
     }
   ],
   "watchlist": [
