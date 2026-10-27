@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-27T10:35:09.806360Z",
+  "updatedAt": "2026-10-27T16:40:07.292526Z",
   "method": "Deterministic prioritization of existing public Global Pulse artifacts; not a forecast or causal model.",
   "freshness": {
-    "snapshotUpdatedAt": "2026-10-27T07:56:53.437050+00:00",
-    "eventsUpdatedAt": "2026-10-27T07:56:57.597987Z",
+    "snapshotUpdatedAt": "2026-10-27T13:45:52.115261+00:00",
+    "eventsUpdatedAt": "2026-10-27T13:45:54.922916Z",
     "assessmentsUpdatedAt": "2026-09-10T03:03:12.655499Z"
   },
   "headline": {
@@ -13,19 +13,34 @@
   },
   "topDevelopments": [
     {
-      "id": "7165f0c046b2d2d8",
-      "title": "Truce begins in wartorn Ukraine city after it was announced by Melania Trump",
-      "category": "general",
+      "id": "fd4afa77df47b228",
+      "title": "Ukraine, Russia begin humanitarian ceasefire in Oleshky - MorungExpress",
+      "category": "diplomatic",
+      "confidence": "moderate",
+      "reportCount": 5,
+      "independentSourceCount": 2,
+      "sources": [
+        "google_news_ukraine_war",
+        "cna_world"
+      ],
+      "breaking": true,
+      "firstSeen": "2026-10-27T08:57:50Z",
+      "lastSeen": "2026-10-27T11:45:46Z"
+    },
+    {
+      "id": "e95312061e16513b",
+      "title": "Drone strike in Sudan’s Nyala kills at least 21, injures 40 - Al Jazeera",
+      "category": "conflict",
       "confidence": "moderate",
       "reportCount": 2,
       "independentSourceCount": 2,
       "sources": [
-        "bbc_world",
-        "BBC"
+        "google_news_sudan_conflict",
+        "al_jazeera"
       ],
       "breaking": true,
-      "firstSeen": "2026-10-27T02:58:48Z",
-      "lastSeen": "Sat, 24 Oct 2026 07:17:44 GMT"
+      "firstSeen": "2026-10-27T08:35:27Z",
+      "lastSeen": "2026-10-27T11:47:12Z"
     },
     {
       "id": "663f1a631552c746",
@@ -43,18 +58,76 @@
       "lastSeen": "2026-10-27T05:26:58Z"
     },
     {
-      "id": "d4032f4cad0427a7",
-      "title": "Relations with Ukraine - North Atlantic Treaty Organization | NATO",
-      "category": "diplomatic",
+      "id": "2a0f8ef30f0d92ee",
+      "title": "Democrats still poised to make gains, but poll shows warning signs for just how many",
+      "category": "general",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "independentSourceCount": 2,
+      "sources": [
+        "npr_news",
+        "google_news_u_s_politics"
+      ],
+      "breaking": false,
+      "firstSeen": "2026-10-27T09:00:00Z",
+      "lastSeen": "2026-10-27T09:00:00Z"
+    },
+    {
+      "id": "ef5e3fd4ffa752ac",
+      "title": "Israelis begin voting as Netanyahu fights for political survival",
+      "category": "general",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "independentSourceCount": 2,
+      "sources": [
+        "al_jazeera",
+        "google_news_iran_israel"
+      ],
+      "breaking": false,
+      "firstSeen": "2026-10-27T07:23:20Z",
+      "lastSeen": "2026-10-27T08:38:44Z"
+    },
+    {
+      "id": "342b8a43fc1274ae",
+      "title": "Dozens of Somali soldiers killed in battle with al-Shabaab, soldiers say - Sowetan",
+      "category": "general",
       "confidence": "low",
       "reportCount": 3,
       "independentSourceCount": 1,
       "sources": [
-        "North Atlantic Treaty Organization | NATO"
+        "google_news_somalia_security"
+      ],
+      "breaking": true,
+      "firstSeen": "2026-10-27T10:38:59Z",
+      "lastSeen": "2026-10-27T11:37:46Z"
+    },
+    {
+      "id": "ac9a264ffa10f43b",
+      "title": "Many killed in Somali army clash with militants - Uzalendo News",
+      "category": "conflict",
+      "confidence": "low",
+      "reportCount": 2,
+      "independentSourceCount": 1,
+      "sources": [
+        "google_news_somalia_security"
+      ],
+      "breaking": true,
+      "firstSeen": "2026-10-27T09:03:19Z",
+      "lastSeen": "2026-10-27T11:49:37Z"
+    },
+    {
+      "id": "48e388c65422eb5b",
+      "title": "M 5.2 - 191 km NW of Port-Olry, Vanuatu",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 4,
+      "independentSourceCount": 1,
+      "sources": [
+        "usgs_m4_5_earthquakes_past_day"
       ],
       "breaking": false,
-      "firstSeen": "Mon, 05 Aug 2024 07:00:00 GMT",
-      "lastSeen": "Tue, 11 Nov 2025 08:00:00 GMT"
+      "firstSeen": "2026-10-27T09:39:56.040000Z",
+      "lastSeen": "2026-10-27T11:09:11.040000Z"
     },
     {
       "id": "9dbe1492b2c609c1",
@@ -71,89 +144,18 @@
       "lastSeen": "Thu, 02 May 2024 07:00:00 GMT"
     },
     {
-      "id": "f4bef1a266999855",
-      "title": "Green forest fire notification in Australia",
+      "id": "1b9ba6874af77c9b",
+      "title": "China attempts to change the world with global initiatives - India's News.Net",
       "category": "general",
       "confidence": "low",
       "reportCount": 3,
       "independentSourceCount": 1,
       "sources": [
-        "gdacs_global_disaster_alerts"
+        "china_politics"
       ],
       "breaking": false,
-      "firstSeen": "2026-10-27T00:00:54Z",
-      "lastSeen": "2026-10-27T00:19:27Z"
-    },
-    {
-      "id": "14561a92d760b826",
-      "title": "Green forest fire notification in South Sudan",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 3,
-      "independentSourceCount": 1,
-      "sources": [
-        "gdacs_global_disaster_alerts"
-      ],
-      "breaking": false,
-      "firstSeen": "2026-10-26T20:08:38Z",
-      "lastSeen": "2026-10-26T20:14:19Z"
-    },
-    {
-      "id": "2ea922f9bf256dfb",
-      "title": "NATO prepared to defend allies from any Iranian threat, official says - Washington Times",
-      "category": "diplomatic",
-      "confidence": "low",
-      "reportCount": 2,
-      "independentSourceCount": 2,
-      "sources": [
-        "Washington Times",
-        "The New Region"
-      ],
-      "breaking": false,
-      "firstSeen": "Wed, 19 Aug 2026 07:00:00 GMT",
-      "lastSeen": "Wed, 19 Aug 2026 07:00:00 GMT"
-    },
-    {
-      "id": "39294d6480689eaa",
-      "title": "The Ankara Summit Declaration - North Atlantic Treaty Organization | NATO",
-      "category": "diplomatic",
-      "confidence": "low",
-      "reportCount": 2,
-      "independentSourceCount": 1,
-      "sources": [
-        "North Atlantic Treaty Organization | NATO"
-      ],
-      "breaking": false,
-      "firstSeen": "Tue, 07 Jul 2026 07:00:00 GMT",
-      "lastSeen": "Wed, 08 Jul 2026 07:00:00 GMT"
-    },
-    {
-      "id": "b6368c4e1b113a3c",
-      "title": "Statement by NATO Foreign Ministers - North Atlantic Treaty Organization | NATO",
-      "category": "diplomatic",
-      "confidence": "low",
-      "reportCount": 2,
-      "independentSourceCount": 1,
-      "sources": [
-        "North Atlantic Treaty Organization | NATO"
-      ],
-      "breaking": false,
-      "firstSeen": "Fri, 03 Feb 2023 08:00:00 GMT",
-      "lastSeen": "Tue, 29 Nov 2022 08:00:00 GMT"
-    },
-    {
-      "id": "cab09a0d85b19b11",
-      "title": "Statement by the North Atlantic Council on the Democratic People’s Republic of Korea - North Atlantic Treaty Organization | NATO",
-      "category": "diplomatic",
-      "confidence": "low",
-      "reportCount": 2,
-      "independentSourceCount": 1,
-      "sources": [
-        "North Atlantic Treaty Organization | NATO"
-      ],
-      "breaking": false,
-      "firstSeen": "Fri, 08 Nov 2024 08:00:00 GMT",
-      "lastSeen": "Thu, 22 Apr 2021 07:00:00 GMT"
+      "firstSeen": "2026-10-27T06:45:00Z",
+      "lastSeen": "2026-10-27T09:20:34Z"
     }
   ],
   "watchlist": [
