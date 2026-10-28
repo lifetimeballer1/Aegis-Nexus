@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-27T21:20:17.147953Z",
+  "updatedAt": "2026-10-28T01:23:00.398545Z",
   "method": "Deterministic prioritization of existing public Global Pulse artifacts; not a forecast or causal model.",
   "freshness": {
-    "snapshotUpdatedAt": "2026-10-27T19:02:44.678992+00:00",
-    "eventsUpdatedAt": "2026-10-27T19:02:47.309357Z",
+    "snapshotUpdatedAt": "2026-10-27T22:54:27.094026+00:00",
+    "eventsUpdatedAt": "2026-10-27T22:54:30.591101Z",
     "assessmentsUpdatedAt": "2026-09-10T03:03:12.655499Z"
   },
   "headline": {
@@ -13,34 +13,49 @@
   },
   "topDevelopments": [
     {
-      "id": "5c0f7aa3621aba0e",
-      "title": "Somalia says 75 Al-Shabaab killed as heavy army losses reported - Somalia Today",
-      "category": "general",
+      "id": "7ae5a9770291500b",
+      "title": "US says it killed five people in strike on alleged drug boat - Al Jazeera",
+      "category": "conflict",
       "confidence": "moderate",
-      "reportCount": 4,
+      "reportCount": 2,
+      "independentSourceCount": 2,
+      "sources": [
+        "google_news_southcom",
+        "al_jazeera"
+      ],
+      "breaking": true,
+      "firstSeen": "2026-10-27T20:54:38Z",
+      "lastSeen": "2026-10-27T20:57:25Z"
+    },
+    {
+      "id": "b6e86e1229d813b1",
+      "title": "Somalia reports deadly fighting with Al-Shabaab as both sides claim heavy losses - Modern Ghana",
+      "category": "conflict",
+      "confidence": "moderate",
+      "reportCount": 5,
       "independentSourceCount": 2,
       "sources": [
         "google_news_somalia_security",
         "rfi_world"
       ],
-      "breaking": true,
+      "breaking": false,
       "firstSeen": "2026-10-27T16:10:43Z",
-      "lastSeen": "2026-10-27T17:20:58Z"
+      "lastSeen": "2026-10-27T16:52:00Z"
     },
     {
-      "id": "91e7e78bf6a78214",
-      "title": "Russia, Ukraine Start Oleshky Ceasefire While Strikes Continue Elsewhere - newsfire.gr",
-      "category": "diplomatic",
+      "id": "4ac5900942bfe234",
+      "title": "Ukraine, Russia say US-brokered truce holding in ravaged city",
+      "category": "general",
       "confidence": "moderate",
       "reportCount": 2,
       "independentSourceCount": 2,
       "sources": [
-        "google_news_ukraine_war",
-        "al_jazeera"
+        "cna_world",
+        "google_news_ukraine_war"
       ],
-      "breaking": true,
-      "firstSeen": "2026-10-27T13:45:01Z",
-      "lastSeen": "2026-10-27T16:15:23Z"
+      "breaking": false,
+      "firstSeen": "2026-10-27T20:42:38Z",
+      "lastSeen": "2026-10-27T21:16:00Z"
     },
     {
       "id": "9e3c52cc0561b15b",
@@ -58,102 +73,88 @@
       "lastSeen": "2026-10-27T14:50:39Z"
     },
     {
-      "id": "342b8a43fc1274ae",
-      "title": "Dozens of Somali soldiers killed in battle with al-Shabaab, soldiers say - Sowetan",
+      "id": "255410bd482cd7e1",
+      "title": "Al-Shabaab ambush leaves heavy losses as Somalia claims 75 killed - Howl.Link",
       "category": "general",
       "confidence": "low",
-      "reportCount": 4,
+      "reportCount": 2,
       "independentSourceCount": 1,
       "sources": [
         "google_news_somalia_security"
       ],
       "breaking": true,
-      "firstSeen": "2026-10-27T10:38:59Z",
-      "lastSeen": "2026-10-27T11:37:46Z"
+      "firstSeen": "2026-10-27T17:20:58Z",
+      "lastSeen": "2026-10-27T20:24:44Z"
     },
     {
-      "id": "ad7a492ea885e6f7",
-      "title": "US Warns Of Missile, Drone Threats In Saudi Arabia As Houthi Attacks Escalate - Outlook India",
+      "id": "15ff383ba73c913c",
+      "title": "Al-Shabab claims it killed 321 Somali troops and allied fighters in ambush - The Copenhagen Post",
       "category": "conflict",
       "confidence": "low",
       "reportCount": 2,
       "independentSourceCount": 1,
       "sources": [
-        "google_news_iran_israel"
+        "google_news_somalia_security"
       ],
       "breaking": true,
-      "firstSeen": "2026-10-27T12:08:09Z",
-      "lastSeen": "2026-10-27T12:08:09Z"
+      "firstSeen": "2026-10-27T14:55:45Z",
+      "lastSeen": "2026-10-27T14:55:45Z"
     },
     {
       "id": "d4032f4cad0427a7",
       "title": "Relations with Ukraine - North Atlantic Treaty Organization | NATO",
       "category": "diplomatic",
       "confidence": "low",
-      "reportCount": 3,
+      "reportCount": 5,
       "independentSourceCount": 1,
       "sources": [
         "North Atlantic Treaty Organization | NATO"
       ],
       "breaking": false,
-      "firstSeen": "Mon, 05 Aug 2024 07:00:00 GMT",
-      "lastSeen": "Thu, 13 Nov 2025 21:45:28 GMT"
+      "firstSeen": "Fri, 18 Jun 2021 07:00:00 GMT",
+      "lastSeen": "Thu, 31 Oct 2019 07:00:00 GMT"
     },
     {
-      "id": "9dbe1492b2c609c1",
-      "title": "Statement of condemnation by the North Atlantic Council of Russia's malicious cyber activities - North Atlantic Treaty Organization | NATO",
+      "id": "8e120b7b4a03c0ab",
+      "title": "Statement by NATO Heads of State and Government - North Atlantic Treaty Organization | NATO",
       "category": "diplomatic",
       "confidence": "low",
-      "reportCount": 3,
+      "reportCount": 4,
       "independentSourceCount": 1,
       "sources": [
         "North Atlantic Treaty Organization | NATO"
       ],
       "breaking": false,
-      "firstSeen": "Fri, 18 Jul 2025 07:00:00 GMT",
-      "lastSeen": "Thu, 02 May 2024 07:00:00 GMT"
+      "firstSeen": "Fri, 25 Feb 2022 08:00:00 GMT",
+      "lastSeen": "Thu, 24 Mar 2022 07:00:00 GMT"
     },
     {
-      "id": "48e388c65422eb5b",
-      "title": "M 5.2 - 191 km NW of Port-Olry, Vanuatu",
+      "id": "f29890339289f9b5",
+      "title": "Green forest fire notification in Mali",
       "category": "general",
       "confidence": "low",
-      "reportCount": 3,
+      "reportCount": 4,
       "independentSourceCount": 1,
       "sources": [
-        "usgs_m4_5_earthquakes_past_day"
+        "gdacs_global_disaster_alerts"
       ],
       "breaking": false,
-      "firstSeen": "2026-10-27T10:50:39.040000Z",
-      "lastSeen": "2026-10-27T11:09:11.040000Z"
+      "firstSeen": "2026-10-27T16:42:51Z",
+      "lastSeen": "2026-10-27T20:31:54Z"
     },
     {
-      "id": "39294d6480689eaa",
-      "title": "The Ankara Summit Declaration - North Atlantic Treaty Organization | NATO",
-      "category": "diplomatic",
+      "id": "b8312a717b8e0a93",
+      "title": "$30M Florida drug bust exposes cartel cocaine pipeline stretching from Mexico to Tampa Bay - KDBC",
+      "category": "general",
       "confidence": "low",
-      "reportCount": 2,
+      "reportCount": 4,
       "independentSourceCount": 1,
       "sources": [
-        "North Atlantic Treaty Organization | NATO"
+        "google_news_mexico_cartel_conflict"
       ],
       "breaking": false,
-      "firstSeen": "Tue, 07 Jul 2026 07:00:00 GMT",
-      "lastSeen": "Wed, 08 Jul 2026 07:00:00 GMT"
-    },
-    {
-      "id": "b6368c4e1b113a3c",
-      "title": "Statement by NATO Foreign Ministers - North Atlantic Treaty Organization | NATO",
-      "category": "diplomatic",
-      "confidence": "low",
-      "reportCount": 2,
-      "independentSourceCount": 1,
-      "sources": [
-        "North Atlantic Treaty Organization | NATO"
-      ],
-      "breaking": false,
-      "firstSeen": "Fri, 03 Feb 2023 08:00:00 GMT",
-      "lastSeen": "Tue, 29 Nov 2022 08:00:00 GMT"
+      "firstSeen": "2026-10-27T17:00:58Z",
+      "lastSeen": "2026-10-27T17:52:28Z"
     }
   ],
   "watchlist": [
