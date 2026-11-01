@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-01T19:41:05.896164Z",
+  "updatedAt": "2026-11-01T23:36:29.680639Z",
   "method": "Deterministic prioritization of existing public Global Pulse artifacts; not a forecast or causal model.",
   "freshness": {
-    "snapshotUpdatedAt": "2026-11-01T16:57:24.561310+00:00",
-    "eventsUpdatedAt": "2026-11-01T16:57:28.890652Z",
+    "snapshotUpdatedAt": "2026-11-01T20:56:05.472870+00:00",
+    "eventsUpdatedAt": "2026-11-01T20:56:09.203331Z",
     "assessmentsUpdatedAt": "2026-09-10T03:03:12.655499Z"
   },
   "headline": {
@@ -12,6 +12,51 @@
     "description": "Highest-priority developments and attention indicators from the latest generated intelligence artifacts."
   },
   "topDevelopments": [
+    {
+      "id": "d37ab51f0897140f",
+      "title": "France opens ‘attempted murder’ probe into petrol bomb attacks on police",
+      "category": "conflict",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "independentSourceCount": 2,
+      "sources": [
+        "al_jazeera",
+        "rfi_world"
+      ],
+      "breaking": true,
+      "firstSeen": "2026-11-01T13:26:02Z",
+      "lastSeen": "2026-11-01T18:58:23Z"
+    },
+    {
+      "id": "b244defdaa3fd159",
+      "title": "Connecticut senator Chris Murphy hospitalized after stroke",
+      "category": "general",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "independentSourceCount": 2,
+      "sources": [
+        "guardian_world",
+        "npr_news"
+      ],
+      "breaking": false,
+      "firstSeen": "2026-11-01T19:00:58Z",
+      "lastSeen": "2026-11-01T19:27:44Z"
+    },
+    {
+      "id": "a6fe15d722ad1b3c",
+      "title": "A year after the fall of El Fasher, Sudan's war has left a ghost town in its wake",
+      "category": "general",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "independentSourceCount": 2,
+      "sources": [
+        "rfi_world",
+        "google_news_sudan_conflict"
+      ],
+      "breaking": false,
+      "firstSeen": "2026-11-01T18:37:57Z",
+      "lastSeen": "2026-11-01T18:37:57Z"
+    },
     {
       "id": "3a6b5432a7280e07",
       "title": "Iran and US explore diplomacy amid rising threats of war - Al Jazeera",
@@ -28,19 +73,18 @@
       "lastSeen": "2026-11-01T13:12:36Z"
     },
     {
-      "id": "c1b41c841df5d4e8",
-      "title": "Democrats are used to heartbreak in Texas - could Talarico turn the tide?",
+      "id": "f4bef1a266999855",
+      "title": "Green forest fire notification in Australia",
       "category": "general",
-      "confidence": "moderate",
-      "reportCount": 2,
-      "independentSourceCount": 2,
+      "confidence": "low",
+      "reportCount": 6,
+      "independentSourceCount": 1,
       "sources": [
-        "bbc_world",
-        "google_news_u_s_politics"
+        "gdacs_global_disaster_alerts"
       ],
       "breaking": false,
-      "firstSeen": "2026-11-01T06:03:57Z",
-      "lastSeen": "2026-11-01T06:03:57Z"
+      "firstSeen": "2026-11-01T12:11:05Z",
+      "lastSeen": "2026-11-01T20:07:04Z"
     },
     {
       "id": "50203d929c0c2c24",
@@ -57,18 +101,18 @@
       "lastSeen": "2026-11-01T16:22:11Z"
     },
     {
-      "id": "0d2337a8f7543c6f",
-      "title": "M 6.0 - 165 km NW of Port-Olry, Vanuatu",
-      "category": "general",
+      "id": "f068ea24bd3ce438",
+      "title": "Russia, Ukraine trade strikes, reporting damages and power cut - Oman Observer",
+      "category": "economic",
       "confidence": "low",
-      "reportCount": 6,
+      "reportCount": 2,
       "independentSourceCount": 1,
       "sources": [
-        "usgs_m4_5_earthquakes_past_day"
+        "google_news_ukraine_war"
       ],
-      "breaking": false,
-      "firstSeen": "2026-11-01T07:29:13.040000Z",
-      "lastSeen": "2026-11-01T13:53:55.673000Z"
+      "breaking": true,
+      "firstSeen": "2026-11-01T15:24:34Z",
+      "lastSeen": "2026-11-01T15:24:35Z"
     },
     {
       "id": "377a9c344c8b3610",
@@ -85,6 +129,20 @@
       "lastSeen": "2026-11-01T15:15:15Z"
     },
     {
+      "id": "e319e17674f9203a",
+      "title": "Saudi targets resources supporting Houthi attacks in Yemen - The Siasat Daily",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 2,
+      "independentSourceCount": 1,
+      "sources": [
+        "google_news_yemen_red_sea"
+      ],
+      "breaking": true,
+      "firstSeen": "2026-11-01T15:01:54Z",
+      "lastSeen": "2026-11-01T15:02:00Z"
+    },
+    {
       "id": "96bf551f9b71176e",
       "title": "Israeli attacks on Gaza kill at least nine people",
       "category": "general",
@@ -97,62 +155,6 @@
       "breaking": true,
       "firstSeen": "2026-11-01T13:36:16Z",
       "lastSeen": "2026-11-01T14:10:59Z"
-    },
-    {
-      "id": "f4bef1a266999855",
-      "title": "Green forest fire notification in Australia",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 5,
-      "independentSourceCount": 1,
-      "sources": [
-        "gdacs_global_disaster_alerts"
-      ],
-      "breaking": false,
-      "firstSeen": "2026-11-01T12:11:05Z",
-      "lastSeen": "2026-11-01T16:20:55Z"
-    },
-    {
-      "id": "9dbe1492b2c609c1",
-      "title": "Statement of condemnation by the North Atlantic Council of Russia's malicious cyber activities - North Atlantic Treaty Organization | NATO",
-      "category": "diplomatic",
-      "confidence": "low",
-      "reportCount": 3,
-      "independentSourceCount": 1,
-      "sources": [
-        "North Atlantic Treaty Organization | NATO"
-      ],
-      "breaking": false,
-      "firstSeen": "Fri, 18 Jul 2025 07:00:00 GMT",
-      "lastSeen": "Thu, 02 May 2024 07:00:00 GMT"
-    },
-    {
-      "id": "e1b8d1a3df876d06",
-      "title": "Statement by Dr. Khalilur Rahman, President of the 81st Session of the United Nations General Assembly, at the opening of the General Debate - The America Times",
-      "category": "political",
-      "confidence": "low",
-      "reportCount": 2,
-      "independentSourceCount": 1,
-      "sources": [
-        "The America Times"
-      ],
-      "breaking": false,
-      "firstSeen": "Wed, 23 Sep 2026 07:00:00 GMT",
-      "lastSeen": "Wed, 23 Sep 2026 07:00:00 GMT"
-    },
-    {
-      "id": "39294d6480689eaa",
-      "title": "The Ankara Summit Declaration - North Atlantic Treaty Organization | NATO",
-      "category": "diplomatic",
-      "confidence": "low",
-      "reportCount": 2,
-      "independentSourceCount": 1,
-      "sources": [
-        "North Atlantic Treaty Organization | NATO"
-      ],
-      "breaking": false,
-      "firstSeen": "Tue, 07 Jul 2026 07:00:00 GMT",
-      "lastSeen": "Wed, 08 Jul 2026 07:00:00 GMT"
     }
   ],
   "watchlist": [
