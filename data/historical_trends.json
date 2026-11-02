@@ -1,15 +1,9 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-02T05:53:11.303956Z",
+  "updatedAt": "2026-11-02T14:11:22.600578Z",
   "availableSamples": 288,
-  "availableHours": 1382.3,
+  "availableHours": 1386.9,
   "series": [
-    {
-      "updatedAt": "2026-09-06T03:03:18.491352+00:00",
-      "tension": 41,
-      "delta": 0,
-      "scoreVersion": 5
-    },
     {
       "updatedAt": "2026-09-06T03:33:11.322237+00:00",
       "tension": 40,
@@ -1443,47 +1437,47 @@
       "tension": 37,
       "delta": -1.0,
       "scoreVersion": 5
+    },
+    {
+      "updatedAt": "2026-11-02T14:11:22.600578Z",
+      "tension": 38,
+      "delta": 1.0,
+      "scoreVersion": 5
     }
   ],
   "windows": {
     "6h": {
-      "available": true,
-      "samples": 2,
-      "start": "2026-11-02T00:04:15.187780Z",
-      "end": "2026-11-02T05:53:11.303956Z",
-      "startTension": 38,
-      "endTension": 37,
-      "delta": -1.0,
-      "trend": "STABLE"
+      "available": false,
+      "reason": "Only 1 samples in requested window"
     },
     "24h": {
       "available": true,
-      "samples": 4,
+      "samples": 5,
       "start": "2026-11-01T16:57:29.282174Z",
-      "end": "2026-11-02T05:53:11.303956Z",
+      "end": "2026-11-02T14:11:22.600578Z",
       "startTension": 37,
-      "endTension": 37,
-      "delta": 0.0,
+      "endTension": 38,
+      "delta": 1.0,
       "trend": "STABLE"
     },
     "7d": {
       "available": true,
-      "samples": 19,
-      "start": "2026-10-26T07:03:25.544418Z",
-      "end": "2026-11-02T05:53:11.303956Z",
+      "samples": 18,
+      "start": "2026-10-26T19:54:57.355535Z",
+      "end": "2026-11-02T14:11:22.600578Z",
       "startTension": 37,
-      "endTension": 37,
-      "delta": 0.0,
+      "endTension": 38,
+      "delta": 1.0,
       "trend": "STABLE"
     },
     "30d": {
       "available": true,
-      "samples": 112,
+      "samples": 113,
       "start": "2026-10-04T06:25:13.671982Z",
-      "end": "2026-11-02T05:53:11.303956Z",
+      "end": "2026-11-02T14:11:22.600578Z",
       "startTension": 38,
-      "endTension": 37,
-      "delta": -1.0,
+      "endTension": 38,
+      "delta": 0.0,
       "trend": "STABLE"
     }
   }
