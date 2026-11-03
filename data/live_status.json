@@ -1,16 +1,20 @@
 {
-  "updatedAt": "2026-11-03T03:44:53.232079+00:00",
+  "updatedAt": "2026-11-03T11:25:47.841694+00:00",
   "feedsChecked": 70,
-  "rowsFetched": 1213,
-  "newArticles": 356,
-  "purged": 339,
-  "databaseArticles": 3984,
+  "rowsFetched": 1083,
+  "newArticles": 461,
+  "purged": 546,
+  "databaseArticles": 3899,
   "exportedArticles": 2000,
   "exportLimit": 2000,
-  "healthySources": 63,
-  "emptySources": 5,
+  "healthySources": 62,
+  "emptySources": 6,
   "fallbackSources": 0,
   "failedSources": [
+    {
+      "source": "GDACS Global Disaster Alerts",
+      "error": "ValueError: publisher returned HTML page, not RSS (quarantine candidate): GDACS Global Disaster Alerts"
+    },
     {
       "source": "SOUTHCOM Official Reporting — GDELT Mirror",
       "error": "HTTPError: HTTP Error 429: Too Many Requests"
@@ -21,23 +25,23 @@
     },
     {
       "source": "X @NASA",
-      "error": "RuntimeError: HTTP Error 451: "
+      "error": "RuntimeError: <urlopen error [Errno -3] Temporary failure in name resolution>"
     },
     {
       "source": "X @WhiteHouse",
-      "error": "RuntimeError: HTTP Error 451: "
+      "error": "RuntimeError: <urlopen error [Errno -3] Temporary failure in name resolution>"
     },
     {
       "source": "X @POTUS",
-      "error": "RuntimeError: HTTP Error 451: "
+      "error": "RuntimeError: <urlopen error [Errno -3] Temporary failure in name resolution>"
     },
     {
       "source": "X @NATO",
-      "error": "RuntimeError: HTTP Error 451: "
+      "error": "RuntimeError: <urlopen error [Errno -3] Temporary failure in name resolution>"
     },
     {
       "source": "X @UN",
-      "error": "RuntimeError: HTTP Error 451: "
+      "error": "RuntimeError: <urlopen error [Errno -3] Temporary failure in name resolution>"
     }
   ],
   "sourceResults": [
@@ -47,11 +51,11 @@
       "type": "climate-hazard",
       "category": "climate-hazard",
       "coverage": [],
-      "rowsFetched": 100,
-      "httpOk": true,
-      "mode": "native",
+      "rowsFetched": 0,
+      "httpOk": false,
+      "mode": "failed",
       "emptyFeed": false,
-      "error": ""
+      "error": "ValueError: publisher returned HTML page, not RSS (quarantine candidate): GDACS Global Disaster Alerts"
     },
     {
       "sourceId": "npr_news",
@@ -83,7 +87,7 @@
       "type": "international",
       "category": "international",
       "coverage": [],
-      "rowsFetched": 36,
+      "rowsFetched": 23,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -107,7 +111,7 @@
       "type": "regional",
       "category": "regional",
       "coverage": [],
-      "rowsFetched": 32,
+      "rowsFetched": 33,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -131,7 +135,7 @@
       "type": "regional",
       "category": "regional",
       "coverage": [],
-      "rowsFetched": 39,
+      "rowsFetched": 23,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -191,7 +195,7 @@
       "type": "international",
       "category": "international",
       "coverage": [],
-      "rowsFetched": 12,
+      "rowsFetched": 11,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -203,7 +207,7 @@
       "type": "international",
       "category": "international",
       "coverage": [],
-      "rowsFetched": 21,
+      "rowsFetched": 22,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -263,10 +267,10 @@
       "type": "counter-cartel",
       "category": "counter-cartel",
       "coverage": [],
-      "rowsFetched": 0,
+      "rowsFetched": 1,
       "httpOk": true,
-      "mode": "online-empty",
-      "emptyFeed": true,
+      "mode": "native",
+      "emptyFeed": false,
       "error": ""
     },
     {
@@ -275,7 +279,7 @@
       "type": "counter-cartel",
       "category": "counter-cartel",
       "coverage": [],
-      "rowsFetched": 2,
+      "rowsFetched": 3,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -299,7 +303,7 @@
       "type": "cartel",
       "category": "cartel",
       "coverage": [],
-      "rowsFetched": 2,
+      "rowsFetched": 1,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -335,7 +339,7 @@
       "type": "climate-hazard",
       "category": "climate-hazard",
       "coverage": [],
-      "rowsFetched": 11,
+      "rowsFetched": 10,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -419,7 +423,7 @@
       "type": "climate-hazard",
       "category": "climate-hazard",
       "coverage": [],
-      "rowsFetched": 55,
+      "rowsFetched": 61,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -443,7 +447,7 @@
       "type": "us-politics",
       "category": "us-politics",
       "coverage": [],
-      "rowsFetched": 26,
+      "rowsFetched": 42,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -455,7 +459,7 @@
       "type": "us-politics",
       "category": "us-politics",
       "coverage": [],
-      "rowsFetched": 35,
+      "rowsFetched": 23,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -491,7 +495,7 @@
       "type": "world-politics",
       "category": "world-politics",
       "coverage": [],
-      "rowsFetched": 17,
+      "rowsFetched": 16,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -503,7 +507,7 @@
       "type": "economics",
       "category": "economics",
       "coverage": [],
-      "rowsFetched": 6,
+      "rowsFetched": 7,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -515,7 +519,7 @@
       "type": "live",
       "category": "live",
       "coverage": [],
-      "rowsFetched": 2,
+      "rowsFetched": 1,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -527,7 +531,7 @@
       "type": "africa",
       "category": "africa",
       "coverage": [],
-      "rowsFetched": 4,
+      "rowsFetched": 3,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -539,7 +543,7 @@
       "type": "africa-conflict",
       "category": "africa-conflict",
       "coverage": [],
-      "rowsFetched": 7,
+      "rowsFetched": 4,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -551,7 +555,7 @@
       "type": "africa-conflict",
       "category": "africa-conflict",
       "coverage": [],
-      "rowsFetched": 2,
+      "rowsFetched": 3,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -575,7 +579,7 @@
       "type": "africa-conflict",
       "category": "africa-conflict",
       "coverage": [],
-      "rowsFetched": 20,
+      "rowsFetched": 19,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -587,7 +591,7 @@
       "type": "americas-conflict",
       "category": "americas-conflict",
       "coverage": [],
-      "rowsFetched": 3,
+      "rowsFetched": 4,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -599,7 +603,7 @@
       "type": "americas-conflict",
       "category": "americas-conflict",
       "coverage": [],
-      "rowsFetched": 6,
+      "rowsFetched": 5,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -611,7 +615,7 @@
       "type": "americas-conflict",
       "category": "americas-conflict",
       "coverage": [],
-      "rowsFetched": 5,
+      "rowsFetched": 3,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -623,10 +627,10 @@
       "type": "asia-conflict",
       "category": "asia-conflict",
       "coverage": [],
-      "rowsFetched": 1,
+      "rowsFetched": 0,
       "httpOk": true,
-      "mode": "native",
-      "emptyFeed": false,
+      "mode": "online-empty",
+      "emptyFeed": true,
       "error": ""
     },
     {
@@ -635,7 +639,7 @@
       "type": "south-asia-conflict",
       "category": "south-asia-conflict",
       "coverage": [],
-      "rowsFetched": 100,
+      "rowsFetched": 82,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -647,7 +651,7 @@
       "type": "middle-east-conflict",
       "category": "middle-east-conflict",
       "coverage": [],
-      "rowsFetched": 28,
+      "rowsFetched": 18,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -659,7 +663,7 @@
       "type": "middle-east-conflict",
       "category": "middle-east-conflict",
       "coverage": [],
-      "rowsFetched": 21,
+      "rowsFetched": 41,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -671,7 +675,7 @@
       "type": "europe-conflict",
       "category": "europe-conflict",
       "coverage": [],
-      "rowsFetched": 14,
+      "rowsFetched": 13,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -683,10 +687,10 @@
       "type": "americas",
       "category": "americas",
       "coverage": [],
-      "rowsFetched": 2,
+      "rowsFetched": 0,
       "httpOk": true,
-      "mode": "native",
-      "emptyFeed": false,
+      "mode": "online-empty",
+      "emptyFeed": true,
       "error": ""
     },
     {
@@ -695,7 +699,7 @@
       "type": "middle-east",
       "category": "middle-east",
       "coverage": [],
-      "rowsFetched": 2,
+      "rowsFetched": 4,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -707,7 +711,7 @@
       "type": "south-asia",
       "category": "south-asia",
       "coverage": [],
-      "rowsFetched": 1,
+      "rowsFetched": 3,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -789,7 +793,7 @@
       "coverage": [
         "china"
       ],
-      "rowsFetched": 8,
+      "rowsFetched": 10,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -803,7 +807,7 @@
       "coverage": [
         "china"
       ],
-      "rowsFetched": 3,
+      "rowsFetched": 2,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -817,7 +821,7 @@
       "coverage": [
         "china"
       ],
-      "rowsFetched": 9,
+      "rowsFetched": 10,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -831,7 +835,7 @@
       "coverage": [
         "china"
       ],
-      "rowsFetched": 2,
+      "rowsFetched": 3,
       "httpOk": true,
       "mode": "native",
       "emptyFeed": false,
@@ -847,7 +851,7 @@
       "httpOk": false,
       "mode": "failed",
       "emptyFeed": false,
-      "error": "RuntimeError: HTTP Error 451: "
+      "error": "RuntimeError: <urlopen error [Errno -3] Temporary failure in name resolution>"
     },
     {
       "sourceId": "x:WhiteHouse",
@@ -859,7 +863,7 @@
       "httpOk": false,
       "mode": "failed",
       "emptyFeed": false,
-      "error": "RuntimeError: HTTP Error 451: "
+      "error": "RuntimeError: <urlopen error [Errno -3] Temporary failure in name resolution>"
     },
     {
       "sourceId": "x:POTUS",
@@ -871,7 +875,7 @@
       "httpOk": false,
       "mode": "failed",
       "emptyFeed": false,
-      "error": "RuntimeError: HTTP Error 451: "
+      "error": "RuntimeError: <urlopen error [Errno -3] Temporary failure in name resolution>"
     },
     {
       "sourceId": "x:NATO",
@@ -883,7 +887,7 @@
       "httpOk": false,
       "mode": "failed",
       "emptyFeed": false,
-      "error": "RuntimeError: HTTP Error 451: "
+      "error": "RuntimeError: <urlopen error [Errno -3] Temporary failure in name resolution>"
     },
     {
       "sourceId": "x:UN",
@@ -895,7 +899,7 @@
       "httpOk": false,
       "mode": "failed",
       "emptyFeed": false,
-      "error": "RuntimeError: HTTP Error 451: "
+      "error": "RuntimeError: <urlopen error [Errno -3] Temporary failure in name resolution>"
     }
   ],
   "pollSeconds": 300,
