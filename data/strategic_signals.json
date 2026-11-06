@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "generatedAt": "2026-11-06T07:27:48.924773Z",
+  "generatedAt": "2026-11-06T15:15:52.112483Z",
   "sourceBackedOnly": true,
   "method": "Source-backed Brain evidence plus dict/list action layers; co-mention targets are co-occurrence volumes, not causality.",
   "signals": [
@@ -10,62 +10,74 @@
       "category": "technology",
       "categories": {
         "technology": 100,
-        "political": 57,
-        "military": 51,
-        "economic": 44,
+        "political": 60,
+        "military": 52,
+        "economic": 46,
         "diplomatic": 41,
-        "energy": 30,
-        "security": 28,
-        "maritime": 12
+        "energy": 31,
+        "security": 29,
+        "maritime": 13
       },
       "dominantTarget": "Iran",
       "topTargets": [
         {
           "target": "Iran",
-          "mentions": 30
+          "mentions": 32
         },
         {
           "target": "Oil",
           "mentions": 23
         },
         {
+          "target": "China",
+          "mentions": 19
+        },
+        {
           "target": "Ukraine",
           "mentions": 19
         },
         {
-          "target": "China",
-          "mentions": 18
-        },
-        {
           "target": "Israel",
-          "mentions": 18
+          "mentions": 19
         }
       ],
-      "actionCount": 363,
-      "actionEvidenceCount": 363,
+      "actionCount": 372,
+      "actionEvidenceCount": 372,
       "categoryCount": 100,
-      "targetCount": 30,
+      "targetCount": 32,
       "evidenceCount": 93,
       "lastEvidenceTime": "Tue, 27 Jan 2026 08:00:00 GMT",
       "intensity": 100,
       "evidence": [
         {
-          "title": "Mexican judge arrested after U.S. charges him of accepting $2M bribe in case linked to former Olympian - 930 WFMD Free Talk",
-          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQN1pFUXhiQnFrcWVaRUZFMWxTa05CUGc3Y3dLelp3T2FuNTgyTEdIcjhPc2ZpQWJCdi1kZTRQWkRUOFd5dzFrak1Fd0o1dWgwaHVLZVU1Q3hOdlJTOXFwNDhRRk82R2ZDc0tWUDBYRjJzOFdBOUJ1T3EtZ2RGMS1yRTVCdUw2MUIzU1dHOXFJUHg4bVh5bWxBejJUcDVHRTAtV1hxM3JVX213a0UtWkhmazFpTkpzWjhBM0dCZUtkR05ibl9mb0xhZ1RINDl0QQ?oc=5",
-          "source": "Google News — Mexico Cartel Conflict",
-          "time": "2026-11-05T20:16:18Z"
+          "title": "Presidential Advisor Song's Remarks Risk U.S. Diplomatic Space - 조선일보",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPZDlMaWtDX0l3VlJuQkFkS3gtbXJIRTJLWFl1aHQ2NEZqSG54UjdmRXk3TWhhOHlYeFcyLU9zNElLb0Rxc0FHbUl6RUVqaU5UeWVseU5SLVJKc1J5UUludEhENzYwOVVjRm14RlVpMlZ1MTFLUXlrRWo1VGNDU2haVTNiRVE?oc=5",
+          "source": "Google News — World Politics",
+          "time": "2026-11-05T21:24:49Z"
         },
         {
-          "title": "Mexican judge arrested, accused by U.S. of taking bribes to free accused drug trafficker linked to Olympian Ryan Wedding - CBS News",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOTEhnMmdXWmh4YVlNeEd6dnMzcXRZR3RPMzRxdkdrWEJVUDJsTmMwcFVGZFNicjlTeXQxNEtPdUUzYnU4a2k2YjBOS25QOWZvUndxZ3dFMWttbVNfdlQzTllEUmt3VVBGMFpadmpKdkhrUzg5OWstV09ocGNSX3FLbEdpNEItM3FTRzZGZW1OdW5SR3h2Xy1Ndg?oc=5",
-          "source": "Google News — Mexico Cartel Conflict",
-          "time": "2026-11-05T19:11:46Z"
+          "title": "U.S. Navy Ships Support Disaster Relief Operations in Venezuela - U.S. Southern Command (.mil)",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQa3ZlZ3ozUWNwNG1lTnhGc1FEaF9Mb2hYR04wcFR5c0kwOFB3Z05tN1pkVXpxSF9MRmI0clppNVQtdzVSWTRjcGNOc1VGZTVpRTBIaFRTcDZ2Y21lV2VYVFFDaWpyTzlkbVU5b1Z4SUR5d25iSUNlTjFwVk5QUmtZdTlad2lZd2dVOVdDZzE0dHRIYjVBMDFGclZoOE5fcVlJclR6LS1VSmpXcVpUTG94M0RsVkl1WGdfZHN3Z1JoaXM?oc=5",
+          "source": "U.S. Southern Command (.mil)",
+          "time": "Thu, 02 Jul 2026 20:29:53 GMT"
         },
         {
-          "title": "Exclusive: U.S. House Committee Urges South Korea to Align With U.S. on CCP - 조선일보",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQTjlRMXFDYmNUTVREeTJ6dEJVcUkySGhtYWllaVNTMWFTYmRTRmdJTjFfYTJCcUZacnhLV1h0Wlg2MWQxVUszNmJ5WHNPaE12UjdhMVdrdVc1Q245TklvQjJUdW9XRHRsUU9XT1N0elZ1NUZDTVgzel93NHdvdnVVeWtZdEY?oc=5",
-          "source": "Google News — China Politics / CCP",
-          "time": "2026-11-06T01:39:42Z"
+          "title": "Ecuadorian and U.S. Military Forces Launch Operations Against Narco-terrorists - U.S. Southern Command (.mil)",
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQUXlxZ3Q3TkNsS2ppRkRPQW1ObDU0blM5THFDdjRBQTAtV0hYTTl0bjBxNE9zSHJlal9ZdmtYY204T09ObzBMZTJmQlNkZWNDVWZnUlRJcGxWdllMMEhQTEVmTE4yOHpuMGx2Q1diSl9YMGxmSnNjQU5oTmpoUGRUclZpNTNKR2toTDcyNHhIZE9RQTdqdjN6NWoxQzh5NUJoa1J1Q0pjLUduT0RMWXAwWll3MUNram9WZ1RYWmhkdVBLQWpkYlhRSWluYUxaUXFpc1Rv?oc=5",
+          "source": "U.S. Southern Command (.mil)",
+          "time": "Tue, 03 Mar 2026 08:00:00 GMT"
+        },
+        {
+          "title": "U.S., South America Defense Leaders Discuss Regional Threats - U.S. Southern Command (.mil)",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQbWFnRm94ODZydUMtLVpLRHoxVkVlb1M5MTFuRF91N2VGYmZiVy1XZzdsU2dPSF9mQUZPVXBNUVFnbjN5UDVBYkNpMS1EeEx2OENRajB3OTFyODE5QkwtYlZSZlNkT2Z3blhHc1RJbmthaTZIVDduR3JqUzY2YzV3cmRsZ0pnNy1HcUY4Mnk5WmxuLVpxOHRHMFFRQ0w0WGNOaDBtWHlvRTl2QnhzTGpOeGhoOFgxWVdEVFdV?oc=5",
+          "source": "U.S. Southern Command (.mil)",
+          "time": "Thu, 21 Aug 2025 07:00:00 GMT"
+        },
+        {
+          "title": "pakistan-security-forces-foil-militant-infiltration-kurram-border-afghan-taliban-2026 Archives - TV ONE USA",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbkM5QUo2a2wxdFpTekNvVWJ2T1k5S01QRFZkZG84MG9Xel9wZWZEbWtIMXdkM3VkTW5fd05UNEQ5LVU0MUFreXozbG1MQUc3VjFqQ1AzdXR3dEo0bDlkbHdILU1WU3NBNXgtOW1rdVZrUG9PdDBhVmwzMHJkVTlBN3VlaHUwVlFfZ04zZG5SOFNTOHVaYXJwMW5JTTNvRUh5UW0xSXlEdVE3V3lXSjNSag?oc=5",
+          "source": "Google News — Afghanistan Security",
+          "time": "2026-11-06T10:31:24Z"
         },
         {
           "title": "China backs Africa’s strongest military as Egypt and Ethiopia face off over Africa’s longest river after U.S. talks collapsed - Business Insider Africa",
@@ -156,18 +168,6 @@
           "url": "https://www.gdacs.org/report.aspx?eventtype=TC&eventid=1001316",
           "source": "GDACS",
           "time": "Mon, 31 Aug 2026 21:18:21 GMT"
-        },
-        {
-          "title": "Víctor Manuel Barraza Pablos “El 40”",
-          "url": "https://mymaps.usercontent.google.com/hostedimage/m/*/3AAjQbR7lElhcTo9vfNPYjBH0HiBn3CaDqubJg7B0qe7tK0EL9130n2fKYvFLRfx1I2-7xLa-UOXYyBkpmjWz4HQFG4L43Q6g5BjiVPiukAkZqBSDMG3_kt4ptrobSCdXKyzUmtvl6lXdKtFQBfsIC9qOOJzofTlLaGkdfVjhLT4wFaue5W8MND_MlC8ZQ1kdQrT9-HXimogI753xxeWPXThnsPtutnHPtorvUnC75xM9AxdRr7KsMqDXp9HweIs?fife=s16383",
-          "source": "Cartel Intelligence Map",
-          "time": ""
-        },
-        {
-          "title": "\"Protected Witness\" Operates from California: Directs Fentanyl Trafficking and Extortion in Sonora\n \n💥💥SAN YSIDRO, CALIFORNIA, USA \n\nSajid Emilio Quin",
-          "url": "https://x.com/ContactoRevist/status/2036479635618160777",
-          "source": "Cartel Intelligence Map",
-          "time": ""
         }
       ],
       "sourceBacked": true
@@ -179,18 +179,18 @@
       "categories": {
         "economic": 100,
         "technology": 100,
-        "diplomatic": 81,
-        "military": 80,
-        "security": 67,
+        "diplomatic": 80,
+        "military": 79,
+        "security": 64,
         "political": 53,
         "energy": 33,
-        "maritime": 31
+        "maritime": 29
       },
       "dominantTarget": "Iran",
       "topTargets": [
         {
           "target": "Iran",
-          "mentions": 40
+          "mentions": 42
         },
         {
           "target": "Russia",
@@ -202,49 +202,37 @@
         },
         {
           "target": "Pakistan",
-          "mentions": 15
+          "mentions": 16
         },
         {
           "target": "Oil",
           "mentions": 14
         }
       ],
-      "actionCount": 545,
-      "actionEvidenceCount": 545,
+      "actionCount": 538,
+      "actionEvidenceCount": 538,
       "categoryCount": 100,
-      "targetCount": 40,
-      "evidenceCount": 90,
-      "lastEvidenceTime": "2026-11-06T06:06:24Z",
+      "targetCount": 42,
+      "evidenceCount": 87,
+      "lastEvidenceTime": "2026-11-06T13:19:54Z",
       "intensity": 100,
       "evidence": [
         {
           "title": "Afghanistan, China, Pakistan Islamabad urging Beijing to establish ties with Afghan armed opposition - Intelligence Online",
           "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPbHFEeGlQR19jemp5U1kwc1JhMDZORUFSSVZOdy16cWgwUmhaOTNzdnV2NFZQYjRQZDY1eUl1U0plVEplMFBMRG81cUZuWlRDSGJGeTltaHFheGJLN0RHMmRxYzRPSUk2RXhiVVd5MUV4SDNDWTlvZkUxVC12aEtHYWJJUk5pYnp2Szlhd3FMelZiaTlaSmczS2JiU3pubWxSRTZ5RDJnRzB0RmpiY2psOVBTb2VWX2RmX0ZsYzFLRk5VSEVTRjJEQk45RnlOVzh5YjRZMXBUbjhyQWlM?oc=5",
-          "source": "Google News — Afghanistan Security",
+          "source": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPbHFEeGlQR19jemp5U1kwc1JhMDZORUFSSVZOdy16cWgwUmhaOTNzdnV2NFZQYjRQZDY1eUl1U0plVEplMFBMRG81cUZuWlRDSGJGeTltaHFheGJLN0RHMmRxYzRPSUk2RXhiVVd5MUV4SDNDWTlvZkUxVC12aEtHYWJJUk5pYnp2Szlhd3FMelZiaTlaSmczS2JiU3pubWxSRTZ5RDJnRzB0RmpiY2psOVBTb2VWX2RmX0ZsYzFLRk5VSEVTRjJEQk45RnlOVzh5YjRZMXBUbjhyQWlM?oc=5",
           "time": "2026-11-06T05:02:43Z"
         },
         {
-          "title": "China doesn’t need to dominate the world to threaten Australia’s security - The Strategist | ASPI's analysis and commentary site",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPYkk5QVZ6WmpLY1ltdk9DcG9ja1JyNHBUTVFwTmpvVC1sUXc3U2JBTUdoZjBUV2FuaFBVOFFMNy1uVGhpTWZFc0Q1NEhDaWxyTjdCeWozXzNlMTlPWi1ZTGQ1eldWM05jZWhRMUJ6a3Ewdk5heUhjcUVMOGhDMERvck1DQW5xTzU3azc1VnAzOTJQNEtQN3V2YVRkWURuWVJqOTF1RU02Rmkwdw?oc=5",
+          "title": "China tightens the noose around Taiwan - IntelliNews",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNdVA3SEFjaFJPYnpPb2sxczhxZ0NYN0dfOHNkRnpTM0ZKX0V2N1ZPak1pdHZQaWpXTTBkcDJnZHB2WlhpRmV5MDlzaWp6UWduWWZGNTVoUnVpdl8ybVRCMTcwNDZPNEZEejZsQUFTRDRmQzlUM1lSRHp1enZCVmEycWV4UkUtT2lON0Q5N1AtUm0?oc=5",
           "source": "Google News — China Security / PLA",
-          "time": "2026-11-06T04:39:07Z"
-        },
-        {
-          "title": "China Crossed a Military Satellite Threshold the Pentagon's Own Count Can't Capture: Nine Ship-Tracking Spacecraft Now Blanket the Indo-Pacific - Tech Times",
-          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPS0lOem9zeUNGSGRBYWJhNlFkYlZtbDVlMXNpYlZRMUNFVUxPUC1PQV94WUlhdE9OZFd0UVJ2d0VhV1pXMXRuNjhkMFBOajM0M0o2ZUc3Z3oxRTlMT2RfdjVPeGpncUgwYzRSWENtZTc2clAyLVBfUTBTS1BjNFV6ZlU1d1o5Y2NWUFJjcnp1ZGdZZ2RjQWxWSkxXRHVGYUdsejA4YXVzT2dTRDU0VzR0endZSV9wY1Y4c0tXMHJ2N3EydUc2bTJMTmRoVjdqaXgyeEJBUkFHM1c5MWJycHFrYi1SVQ?oc=5",
-          "source": "Google News — China Security / PLA",
-          "time": "2026-11-06T02:17:03Z"
-        },
-        {
-          "title": "Likely new military command chiefs spotted at China’s plenum — South China Morning Post - UA.NEWS",
-          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNTG5FVEJ4andRRXdQdm9PZHo5YWo3YmpydjBBSHAxclRyR0YtQnEzRll0VUVNMEZBV3V3LU1PS1NSYmt2WTFTUDBQR2JWUlB1UFA3ZmQxeW91UDhFR09zRTNfdGFWZ0NuUEJabWxxenFMbE0wS3JHQ3UxYjh3SVFZaUJZRERuT3VwYUx1Q19BOGdlaU51WUltT2V2ckQ1bDRUbGluSGdwV3lRNF9wNzVleWh6MjJHakZwbkRLRFRiY09pZkRiR0pTZlVWV3pRUnlx?oc=5",
-          "source": "Google News — China Security / PLA",
-          "time": "2026-11-06T01:32:54Z"
+          "time": "2026-11-06T09:51:33Z"
         },
         {
           "title": "Why is Iran exempting India, China, Qatar, Iraq from Hormuz restrictions?",
           "url": "https://www.aljazeera.com/news/2026/11/6/why-is-iran-exempting-india-china-qatar-iraq-from-hormuz-restrictions?traffic_source=rss",
-          "source": "Al Jazeera",
+          "source": "https://www.aljazeera.com/news/2026/11/6/why-is-iran-exempting-india-china-qatar-iraq-from-hormuz-restrictions?traffic_source=rss",
           "time": "2026-11-06T06:06:24Z"
         },
         {
@@ -320,22 +308,34 @@
           "time": ""
         },
         {
+          "title": "Cardinal Chow at the Conference on the first Chinese bishops: an “intercultural” approach can support the journey of Catholics in today’s China - Agenzia Fides",
+          "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxOLUVLWkFCT1lFM0NhRzAtVTgxYVNHakFVeXkzd2Fjcl9NbkJ1WV9YT0FsV0pkQ3M2ZzZrR1B4MFpOWDN1LW1wVkp3TlpOUEZsSWZqWGtKVkZjYzAybkJkNXJqTFE1aHJTXzVkY01XeEg3b084bUJPb3VfSHIxVGQ2ejlEbTR4WDA3Tk5KVGw2TUNzUll5cWVJMm9MeGF5ZjRJUTVEV1dwQmVLaVIxenk0b1BfcmVsdnhQV19BZC00bGRSeW5CVjBIOW8zUU1MUFdyVk9RLVAxVzBSRkdNUHUyUnd5bFMxRDFxVjlQc2Q4VldIXzdhcXlzelVxNEMzVEpJQ0d6ZXBn?oc=5",
+          "source": "Google News — China Politics / CCP",
+          "time": "2026-11-06T13:19:54Z"
+        },
+        {
+          "title": "Trump left with ‘no good options’ to end Iran war after US midterms defeat - South China Morning Post",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPcmltNTZnMlo1OGRFV0F5WVlnUDgtN2xkZ1huZjc3NUlEaGVmbDExMHdVenpGUVBKRTUzWW5BTDlEZG9YcDh0clR5SkNHakxYaFVwQ0RGaW5OM3lIM0NTbEtONnZ1V1dKZlVZT01ycUlIMW9GdkFkajVQU3p5TXhsQUhGU2JhY09FVlpoSnROUS1acUZfR3dHUFc2WnRha3FmN200Y2tXNU9FMmZhQXpfN2o1NVpSbXg5cEwybDQyT1o5SzNGaWtaeTBrY3pMTFg00gHQAUFVX3lxTE5HZ3pDNFRhaDl4R29tVUhPQUVIZVVLNE5tR0VkeFpfN0xzc3dDWTg0MUJVT3FpMnVsZFFRU2FYSUtlaGtHdW9DcDc0MVpFV2tYSVdoZWRDMkM2a3o3WG45Sy1QU1VMVTk3eWl1M0dlZnJGYWhLNks3N2ZOMFhuMTQzV280Z2VoZVYwLUZYUmR6T2lvUVRuLTMxb0twdGRTRERfMXgzTjFHYklHN2s2SFhfWHoyeGpwQzd1Z3libEJZaURHT3FDZ1RmRHRnT1BOMHg?oc=5",
+          "source": "Google News — World Politics",
+          "time": "2026-11-06T13:12:30Z"
+        },
+        {
+          "title": "EU's trade imbalance narrative riddled with double standards - China Daily",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE11aVAtcDBfbjVlQjk1THBQR2JabHY2Tl9yRFdpNU9ZS0ZqTHNRNjNnUEhSeGlSaFplS2pPUXVSalFqLVFVY3o1VkJuemlyMjRtTWJEeEhXcUprNk1fNnhuN3N3R3YtUk1NZlhoVUkxWU5BT3laQUU3LS1ZdDlmZw?oc=5",
+          "source": "Google News — China Economy / Trade",
+          "time": "2026-11-06T11:52:15Z"
+        },
+        {
           "title": "Australia faces same issues that flipped control of US Congress in midterms, experts say",
           "url": "https://www.theguardian.com/australia-news/2026/nov/06/us-midterms-warning-for-australia-cost-of-living-fuel-prices",
-          "source": "Guardian World",
+          "source": "https://www.theguardian.com/australia-news/2026/nov/06/us-midterms-warning-for-australia-cost-of-living-fuel-prices",
           "time": "2026-11-06T04:45:24Z"
         },
         {
-          "title": "Nvidia chips pile up in Hong Kong as China withholds import approval - electronics.economictimes.indiatimes.com",
-          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPWjduUXJKenctRmVBLU9iR1FPWmlCblpabW1hdHc4LVE5NDNZcEdBRDhIbzMtSzZmLXpvNlQwc3U3ckpMTG5nUFh2Y2xBeGFoeGFrOV9xNVB2b3hZSUhyeUhtUDlSTm1rVmYwaWhpLWs0eTZtcC1vZjlDNk1oUjN1LWN3SldPb0tYaUhFcDBZYzNwamlWWmVTNnVuMVp3R2RtVTBsSEh6ZEpQdkNJSkFXZ196NDRDdlgyMGsxZ1RUMjNNN0RIMUgzdkVRWW14anBOcklLdzczc1lhekpCdTVWWQ?oc=5",
-          "source": "Google News — China Economy / Trade",
-          "time": "2026-11-06T02:15:13Z"
-        },
-        {
-          "title": "Midterm: Short-Term Gain, Long-Term Pain for China; China Calls Explosive Found at PNG a 'Wine Bottle' - NTD News",
-          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNQWlocEhqZE1tQnBmdkkycmlJbm9iZUQyX3ljaVNoZlF0NUZ3RGR0WkhPRklvemxhT0hIQ29hTkd1b3FnXzRQMWpPb0h5SDBzd3VpbFVwdzViWnNKaHVzMlh6c3BkczZTS0Z0UWNXMDVFT0tlMjljVHlaMF9xWWwwc1dKc1FUQjdOWno5YW82UzBBbFVOMjdfb21LRUtiMW5FbERoMjRZcUIyVHdXaEVhVHZhWlZySUFaWVdBS2FBZ18xMXhxeXBtelBtcFdVcnZ3RW1HTA?oc=5",
-          "source": "Google News — China Security / PLA",
-          "time": "2026-11-06T01:34:12Z"
+          "title": "China doesn’t need to dominate the world to threaten Australia’s security - The Strategist | ASPI's analysis and commentary site",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPYkk5QVZ6WmpLY1ltdk9DcG9ja1JyNHBUTVFwTmpvVC1sUXc3U2JBTUdoZjBUV2FuaFBVOFFMNy1uVGhpTWZFc0Q1NEhDaWxyTjdCeWozXzNlMTlPWi1ZTGQ1eldWM05jZWhRMUJ6a3Ewdk5heUhjcUVMOGhDMERvck1DQW5xTzU3azc1VnAzOTJQNEtQN3V2YVRkWURuWVJqOTF1RU02Rmkwdw?oc=5",
+          "source": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPYkk5QVZ6WmpLY1ltdk9DcG9ja1JyNHBUTVFwTmpvVC1sUXc3U2JBTUdoZjBUV2FuaFBVOFFMNy1uVGhpTWZFc0Q1NEhDaWxyTjdCeWozXzNlMTlPWi1ZTGQ1eldWM05jZWhRMUJ6a3Ewdk5heUhjcUVMOGhDMERvck1DQW5xTzU3azc1VnAzOTJQNEtQN3V2YVRkWURuWVJqOTF1RU02Rmkwdw?oc=5",
+          "time": "2026-11-06T04:39:07Z"
         }
       ],
       "sourceBacked": true
@@ -354,44 +354,50 @@
       "categoryCount": 1,
       "targetCount": 0,
       "evidenceCount": 95,
-      "lastEvidenceTime": "Thu, 03 Sep 2026 07:02:12 GMT",
+      "lastEvidenceTime": "Wed, 04 Nov 2026 16:57:00 GMT",
       "intensity": 35,
       "evidence": [
         {
-          "title": "Ukraine raises death toll from Russian strike on Zaporizhia to 40 people",
-          "url": "https://www.aljazeera.com/news/2026/11/4/ukraine-raises-death-toll-from-russian-strike-on-zaporizhia-to-40-people?traffic_source=rss",
-          "source": "https://www.aljazeera.com/news/2026/11/4/ukraine-raises-death-toll-from-russian-strike-on-zaporizhia-to-40-people?traffic_source=rss",
-          "time": "2026-11-04T20:31:56Z"
-        },
-        {
-          "title": "Russian Drones Sank Civilian Ship on NATO’s Black Sea Doorstep, Official Says - Newsweek",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNanlZLWFRZHotcTFLOEVyaGJrVzRQWlU3bmk3dlFhVVZhelF0QTZ2Wkp0dDg3N19mM2NsZEVpVWYzaG03eEZUdTh4UFJ0SjE2TGdUcmowVjBSTWtGdUtncW41bEhZejNOYXh3WlUxY21OenpKemVnRGFEanprVHc0ZHdTQ2d5UDR5V0hnTGxCd2VJUGMwaVd1UC1GOERNaU1JMFZienpvdDl5MmFwR0E?oc=5",
-          "source": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNanlZLWFRZHotcTFLOEVyaGJrVzRQWlU3bmk3dlFhVVZhelF0QTZ2Wkp0dDg3N19mM2NsZEVpVWYzaG03eEZUdTh4UFJ0SjE2TGdUcmowVjBSTWtGdUtncW41bEhZejNOYXh3WlUxY21OenpKemVnRGFEanprVHc0ZHdTQ2d5UDR5V0hnTGxCd2VJUGMwaVd1UC1GOERNaU1JMFZienpvdDl5MmFwR0E?oc=5",
-          "time": "2026-11-04T16:57:00Z"
-        },
-        {
-          "title": "Iran signals missile strikes on Kyiv, Lviv, Odesa: Putin in urgent meeting with Rezaei - Bankingnews",
-          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQUFZVN0FIRUZlQ2h4YTRNajRLUS16S25STkx3Slg1ZV80VXd1aEZocm9VZjBwejhBMHFxV0RwQTBSOHR3dkpTem5EalZXVHRSU1hIUXVpVzhLOW1LSjFnWHRsT2xJclZmSVdvazdYNk9sWkppM1VYWUw5NjJKMHgybjYyVDlwaVVSSnpnVzVYZzA5SnkteEZ0NkFaVlZDT1lPYWtvbkdKNzA1bmpvTW5tdzJNaTF2NjdRTTM0WHBDSENBMGdaZEdodWpWMHFTODNTNmRYNzFBUGRNRmdocjcwSkNCVW1qUkJTc3JBbkl3?oc=5",
-          "source": "Google News — Iran Israel",
-          "time": "2026-11-05T20:49:29Z"
-        },
-        {
-          "title": "White House event reveals Ukraine and Russia share one goal: flattering Melania",
-          "url": "https://www.theguardian.com/us-news/2026/nov/05/melania-trump-white-house-visit-ukraine-russia",
-          "source": "Guardian US",
-          "time": "2026-11-05T20:52:27Z"
-        },
-        {
-          "title": "Trump says Russia-Ukraine deal is near after meeting Putin’s envoy",
-          "url": "https://www.aljazeera.com/news/2026/11/6/trump-met-russian-envoy-after-he-appeared-with-melania-trump-and-ukrainians?traffic_source=rss",
-          "source": "Al Jazeera",
-          "time": "2026-11-06T00:06:31Z"
+          "title": "Melania Trump touts rare agreement she brokered between Russia and Ukraine",
+          "url": "https://www.npr.org/2026/11/05/nx-s1-6030662/melania-trump-touts-rare-agreement-she-brokered-between-russia-and-ukraine",
+          "source": "NPR News",
+          "time": "2026-11-05T23:52:48Z"
         },
         {
           "title": "Russia-Africa Summit; Sudan’s Drone War Intensifies: Africa File, November 5, 2026 - Critical Threats",
           "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPNjNsY1YyTGJZazBiWnAzM1JackgxcVU4cnc4TnpYTFh1c2h5OS1GUERVbldXRkhUaFZOLTVMUlNTbFJDQWJ1ZVhTdmk0SUk0SVYxSlo0WXEyWWUzXzVablg1Yml4RV9hNWNQdlV4X2xlUmNtTERHTzRGbEJjSFkwaWcwRTZCVXBLel9n?oc=5",
           "source": "Google News — Africa Security",
           "time": "2026-11-05T22:12:31Z"
+        },
+        {
+          "title": "Russian Drones Sank Civilian Ship on NATO’s Black Sea Doorstep, Official Says - Newsweek",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNanlZLWFRZHotcTFLOEVyaGJrVzRQWlU3bmk3dlFhVVZhelF0QTZ2Wkp0dDg3N19mM2NsZEVpVWYzaG03eEZUdTh4UFJ0SjE2TGdUcmowVjBSTWtGdUtncW41bEhZejNOYXh3WlUxY21OenpKemVnRGFEanprVHc0ZHdTQ2d5UDR5V0hnTGxCd2VJUGMwaVd1UC1GOERNaU1JMFZienpvdDl5MmFwR0E?oc=5",
+          "source": "Newsweek",
+          "time": "Wed, 04 Nov 2026 16:57:00 GMT"
+        },
+        {
+          "title": "New Deterrence: Ukraine and Europe must find a joint response to Moscow’s missile challenge - Re: Russia",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5lZzlDMFBQeWk5OHU4NjJJWThWa1RvZm1HeEMzdmljNnFYNk1XTW1jcU9QYlU3X0pOMDQyamJFY3d2XzdLUGc0Q0pNUGw3MUhWV3c?oc=5",
+          "source": "Google News — Iran Israel",
+          "time": "2026-11-06T11:35:55Z"
+        },
+        {
+          "title": "What a Trump-Xi-Putin summit could mean – and what it wouldn’t",
+          "url": "https://www.aljazeera.com/news/2026/11/6/what-a-trump-xi-putin-summit-would-mean-and-what-it-wouldnt?traffic_source=rss",
+          "source": "Al Jazeera",
+          "time": "2026-11-06T13:49:07Z"
+        },
+        {
+          "title": "Ukraine raises Zaporizhia aid strike death toll to at least 50",
+          "url": "https://www.aljazeera.com/news/2026/11/6/ukraine-raises-zaporizhia-aid-strike-death-toll-to-at-least-50?traffic_source=rss",
+          "source": "Al Jazeera",
+          "time": "2026-11-06T13:30:18Z"
+        },
+        {
+          "title": "Ukraine's GPS-Free Multi-Drone Technology Doubles Frontline Supply Deliveries - Oj - Odessa Journal",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNUW9NeEN4bEIzcjJLMm0wRmRhWDd4QWlUQ2xNMlo2QjVSY2NOQVl2TnRlbnQ2YWR0RHFxSFBfX1M2Z0VuZ2RMbFdiUXppWlZRYUtyTTkyUWZyUGVsRGdxVW45dk1EVVV6T2FzZzl0bUpBQTVScW9kTmx6b1d6dXhVMHBXd0pER0I4SEJ1R3h0dUhzbzFRVE81NEJwTFNSQ0h1T001V0hGUS15dTA?oc=5",
+          "source": "Google News — Ukraine War",
+          "time": "2026-11-06T09:51:03Z"
         },
         {
           "title": "M5.5 earthquake — 156 km E of Kuril’sk, Russia",
@@ -470,12 +476,6 @@
           "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNTXllUHlBRm82MVF0Z0xiel95aDlidGY4aHBvRjRyYUtKcWFORGY5bFVVUi1hQkJaMS1jMFptajM0UTFTMDFtRXJ0bzFZMEtacUN6dUJCS2dzNGZ5NGRRUEZmd1RZWHRCUlBCSHFkYVhHc3RRRDBaclAwcXdLcnFxWU9EZzk1eVplZDJyc3FnWUJOdjQzN0x3bEJoWjFuWXVfVW1aeEpfY2JkUURuRVRtMm42YWVQZVNUZ2dOZlc3a2Y4aWhfUnRPUTdyNWwtMUNFMHhSTGV0MNIB1wFBVV95cUxNTXllUHlBRm82MVF0Z0xiel95aDlidGY4aHBvRjRyYUtKcWFORGY5bFVVUi1hQkJaMS1jMFptajM0UTFTMDFtRXJ0bzFZMEtacUN6dUJCS2dzNGZ5NGRRUEZmd1RZWHRCUlBCSHFkYVhHc3RRRDBaclAwcXdLcnFxWU9EZzk1eVplZDJyc3FnWUJOdjQzN0x3bEJoWjFuWXVfVW1aeEpfY2JkUURuRVRtMm42YWVQZVNUZ2dOZlc3a2Y4aWhfUnRPUTdyNWwtMUNFMHhSTGV0MA?oc=5",
           "source": "Google News RSS",
           "time": ""
-        },
-        {
-          "title": "Air Tanzania First Carrier to Suspend Moscow Flights After Zelensky's Threats - Novinite.com",
-          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNaG9xTUNSTHA0YUJocFpHYXQzT29vT0VUZWhrWk1fR2RmVHU4RnRJSzREaGo1eEd5dWtWWmE0NVdMTjZQTlhNRGFNdWcxV1FBVTQwclVqU0JrLUtxSFlUSTA3aFhBUUhDWTJyZ1l0SVlOQlR1bi1TWTQ0bkNYQ0ZSMXFaYzQtVy1DN19ZUm9FSDh1dllROXhGSE03RjFINDdFOFFDRlV6aDd6ZEFGNkRpV3pBRlY4MFY1d1UtVw?oc=5",
-          "source": "Google News RSS",
-          "time": ""
         }
       ],
       "sourceBacked": true
@@ -493,81 +493,51 @@
       "actionEvidenceCount": 0,
       "categoryCount": 1,
       "targetCount": 0,
-      "evidenceCount": 92,
+      "evidenceCount": 90,
       "lastEvidenceTime": "Wed, 03 Jun 2026 07:00:00 GMT",
       "intensity": 35,
       "evidence": [
-        {
-          "title": "Vance walks Trump tightrope with scathing election critique blaming Iran war",
-          "url": "https://www.bbc.co.uk/news/articles/crz98zqkz7z0o?at_medium=RSS&at_campaign=rss",
-          "source": "BBC World",
-          "time": "2026-11-05T03:47:56Z"
-        },
-        {
-          "title": "Iran war live: Khamenei says US hostility will persist after midterms",
-          "url": "https://www.aljazeera.com/news/liveblog/2026/11/5/iran-war-live-trump-admits-war-caused-election-loss-but-had-to-do-it?traffic_source=rss",
-          "source": "Al Jazeera",
-          "time": "2026-11-05T00:00:00Z"
-        },
-        {
-          "title": "Trump blames Iran war for midterms losses",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/4/trump-blames-iran-war-for-midterms-losses?traffic_source=rss",
-          "source": "https://www.aljazeera.com/video/newsfeed/2026/11/4/trump-blames-iran-war-for-midterms-losses?traffic_source=rss",
-          "time": "2026-11-04T23:30:01Z"
-        },
-        {
-          "title": "Iran signals missile strikes on Kyiv, Lviv, Odesa: Putin in urgent meeting with Rezaei - Bankingnews",
-          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQUFZVN0FIRUZlQ2h4YTRNajRLUS16S25STkx3Slg1ZV80VXd1aEZocm9VZjBwejhBMHFxV0RwQTBSOHR3dkpTem5EalZXVHRSU1hIUXVpVzhLOW1LSjFnWHRsT2xJclZmSVdvazdYNk9sWkppM1VYWUw5NjJKMHgybjYyVDlwaVVSSnpnVzVYZzA5SnkteEZ0NkFaVlZDT1lPYWtvbkdKNzA1bmpvTW5tdzJNaTF2NjdRTTM0WHBDSENBMGdaZEdodWpWMHFTODNTNmRYNzFBUGRNRmdocjcwSkNCVW1qUkJTc3JBbkl3?oc=5",
-          "source": "Google News — Iran Israel",
-          "time": "2026-11-05T20:49:29Z"
-        },
-        {
-          "title": "Trump weighs Iran strikes as region scrambles to prevent war - The New Arab",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOSXJuVTE2dllkNVhPdGlHNUdNWDZJVktYTHVycER0am1VVU5rVGYtNGhqT3hmLXJ2amxKdlVGamdEQUJlZ1pLZHZsbjlwcmV6RFB2OUVqZUt5TUFFcUstTnF4bERIT2ZIN0lYZzNoQWRpdkg1NlREX3p0LWhKRzFUMEctd0I5Zw?oc=5",
-          "source": "Google News — Iran Israel",
-          "time": "2026-11-06T00:44:44Z"
-        },
-        {
-          "title": "Iran FM calls Gulf counterparts as fears of US attack grow - The New Arab",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNSUw2Sm4xOTdXZmNwUUs0SVh6T2gyMTl1VlNnWUJHNGQ1U25hQU9QX1RLTjJoWU9qMGVoMVpxVzFpRlUzYUVmRkpxRDB5dDNrdEduUzJ5V1JGVkFzYWZMSFQ1SDVlOGZnOGxZdHE2bHBOZE91TlVQQXh1RWc4M1J3clQwUU5neWRI?oc=5",
-          "source": "Google News — Iran Israel",
-          "time": "2026-11-05T17:51:11Z"
-        },
-        {
-          "title": "Iran war latest: Tehran reportedly sent nuclear proposal to the US via Qatar - The National",
-          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQaFNGVjU3UzU0cjFEQUhzeDVsZGJsRUsxeTVNUHNRbldqRWtZVFhiejFqNEZFMEs3T2luRkhkVXNmRkx4RVMyR2hjOUEzMXIyZU9Pak9KOU9WcVJCWEFnQUd2MVZhUWxIaWtwOHczMHRkaWwtZC1ua3VWU0R0ZEhIXzdBUENXN3NlT2pkYlJzdWg?oc=5",
-          "source": "Google News — Yemen / Red Sea",
-          "time": "2026-11-06T04:49:17Z"
-        },
-        {
-          "title": "Iran war latest: Iran claims series of Hormuz explosions as talks intensify - thenationalnews.com",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQa3prTFlUbjIxSUVNV3VDVHNEb1Nkb0ZqSDVTZkJwMng0YmQ2dFhmVDNYdlB4WGlQU1NMU3J5VWg3a1NTcjBoTm9oZ2piVXlKc29ZSTNzcHRHUHFNVmxzRDhRS2ZXUXI2RW1nU1hGZnI5U0RKeXR6NDJ5T2k2a1gtbXRCSFY1VUdJY1NUaXU5V2YzWE0?oc=5",
-          "source": "Google News — Yemen / Red Sea",
-          "time": "2026-11-06T02:10:06Z"
-        },
-        {
-          "title": "Iran Update: November 05, 2026 - Critical Threats",
-          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE96MF9iNlRHYkdhRVNRczRFa09GYndxNV9SRXRubk1YZ2hrT29mT01xQUZBNFVzUUF6Y1FqNUp2NzM2aHpxMEtCdmhYeVpYRkZTSUlvOTh5RnlSMVNpXzhPODVwLUhMOURWTlI5MDJkTHlfSDZlcVI2SA?oc=5",
-          "source": "Google News — Yemen / Red Sea",
-          "time": "2026-11-06T03:38:47Z"
-        },
-        {
-          "title": "Turkey's Mecca pact ratification paves way for military support to Saudi Arabia - Iran International",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE0yRHBma2FpX0tHcXNHMEU3QlNVaTFCRkdtLXhYVS1JRTZZNGo1ZXZ6NVBwUFBLUkw4enVPLW9EZzZ0a1FfVjZiXzBHeG9fMlFUTXc?oc=5",
-          "source": "Google News — Yemen / Red Sea",
-          "time": "2026-11-06T02:25:12Z"
-        },
-        {
-          "title": "Why is Iran exempting India, China, Qatar, Iraq from Hormuz restrictions?",
-          "url": "https://www.aljazeera.com/news/2026/11/6/why-is-iran-exempting-india-china-qatar-iraq-from-hormuz-restrictions?traffic_source=rss",
-          "source": "Al Jazeera",
-          "time": "2026-11-06T06:06:24Z"
-        },
         {
           "title": "Iraq’s al-Zaidi talks to Trump as Baghdad seeks to stay out of war on Iran",
           "url": "https://www.aljazeera.com/news/2026/11/6/iraqs-al-zaidi-talks-to-trump-as-baghdad-seeks-to-stay-out-of-war-on-iran?traffic_source=rss",
           "source": "Al Jazeera",
           "time": "2026-11-06T05:00:47Z"
+        },
+        {
+          "title": "Iran war live: Trump warns US may have to ‘destroy’ rest of Iran",
+          "url": "https://www.aljazeera.com/news/liveblog/2026/11/6/iran-war-live-trump-warns-us-may-have-to-destroy-rest-of-iran?traffic_source=rss",
+          "source": "Al Jazeera",
+          "time": "2026-11-06T00:00:00Z"
+        },
+        {
+          "title": "Pakistan Reaffirms Diplomatic Push as Iran Engages Regional Powers Over Conflict - Bloom Pakistan",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQSTJRbHNnMEhmZFpSNEpybHU1b244MkVCd3JWTTlObGlLejlsOUxXaHFleVBTZHFCbDdYQzY3UWU5WWVnbXJ2d2FjVTBiWHNWaXpLWkRSRGRTYUFLSUEwbkNiVkFqdVVvdGdmZkNPdjcxMHhSa3BWNm9nc1ZUZ0Zwa21tQWZHeEZIZGo3azJCUkNqeHM3aURZaE1OOTRWaklmdEtIX1pwNFFRODQ?oc=5",
+          "source": "Google News — World Politics",
+          "time": "2026-11-06T09:33:59Z"
+        },
+        {
+          "title": "Iran war latest: Iran claims series of Hormuz explosions as talks intensify - The National",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxORmUtU3VZNWJBdF9aTXRFU2d0Y1pDOW12VlhrdVdvVDg2TlhWRy10bHYzanloSjQ3Z0QxNGJ6TEtqV3NwRlV1NldudTA3NUs4dnBhY2h6SG5iZWpTY0JJOU9lNW1Db212bXZ5N3cwa2hDMlVrRnNFOFA2N3pTVDNacW1FZ05OcGJITGlpQXc2NFNpNk0?oc=5",
+          "source": "Google News — Yemen / Red Sea",
+          "time": "2026-11-06T03:49:54Z"
+        },
+        {
+          "title": "Iranian missile attacks threaten Persian Gulf aviation hubs - WSJ - Iran International",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE54a1lqdFNqZHJFcDFwVkdMSktZakpMQjEybVpuOWR1OE1jTkEtdUtITHFzdS1LQmI2SHNoZE1lUkxsdlNKQi1TUUNpNHc4LUVXelE?oc=5",
+          "source": "Google News — Iran Israel",
+          "time": "2026-11-06T03:35:33Z"
+        },
+        {
+          "title": "Iran-linked ships go dark over Persian Gulf internet cables after threats - FT - Iran International",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBKREZxUFZQckt1WnlmbEptNzlVUERxT0ZHVGM3dzBOSS1zZjBZQ3dkUThtM29lNHdsSUUyZlNRejZKMjhFT21ZV2IycnhBZzBHTHc?oc=5",
+          "source": "Google News — Iran Israel",
+          "time": "2026-11-06T13:08:14Z"
+        },
+        {
+          "title": "Why is Iran exempting India, China, Qatar, Iraq from Hormuz restrictions?",
+          "url": "https://www.aljazeera.com/news/2026/11/6/why-is-iran-exempting-india-china-qatar-iraq-from-hormuz-restrictions?traffic_source=rss",
+          "source": "https://www.aljazeera.com/news/2026/11/6/why-is-iran-exempting-india-china-qatar-iraq-from-hormuz-restrictions?traffic_source=rss",
+          "time": "2026-11-06T06:06:24Z"
         },
         {
           "title": "Oil prices set for 8 per cent weekly gain on fresh US-Iran hostilities - The Eastleigh Voice",
@@ -616,6 +586,36 @@
           "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBnTnBnT2RKQW1kcE1KR05CTkNvZi1kenc4ZjR0NlRkVno4SlZyYXhsVGJTR24zRVdfLVRmaFBfS0RORC1vYlJJc2NGR3drRnlNd1FaZHIyYXZRZmdydHZN0gFcQVVfeXFMTkNoSGE5WWRnRFhMc01iWWFTd0t3Vlh5RUpNRjcybGJnM1F1NDExdkVZNk1jajlaUnEwWEFtQUduUm1Icnk0S3dGazhBUzlvc1V4NDI4dUxHaHViNmc?oc=5",
           "source": "Google News RSS",
           "time": ""
+        },
+        {
+          "title": "Trump Calls Iran Conflict 'Small Potatoes' for US - Kurdistan24",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOQXd2c2ZkOUo0MGNXa2doV0dtYjZzVEY3aE50RVExMnFtQ1FIZjBtOV9QNU54SXVpS2trRHM1dnN4bWJsSDNoQ2dIXzd2RmpTUUhXVDZINkFLbU1nV1NmSnkzVUhqcmRPek9tTnhlelZDUkctcFRMdml4MnlvVTNzMnZaRWZsSURseGxTUkN3MDBpZElpRHc?oc=5",
+          "source": "Google News RSS",
+          "time": ""
+        },
+        {
+          "title": "Trump calls Iran conflict 'small potatoes' and defends Vance's position that it's not a 'war' - Thai PBS World",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOaW9iS3VCMUo3RU01UTNvdHI5UG44ZmZhaF9JY21RSl9TTzJaWS1zSTBUQmlVQXZydGQ3cS1HNk05aW1uaGpObmtjM3FIYzlLLUZ2UWlUWGJUQ3MyQ1RzREs0NDhmT3pyRG0yel9kMFdhbXBLVm5uVnV4VHNOREh2akJmTWJ5bW9MdXRVRmVfWmNxaldxTVAwUE1fcmVoeEZpUWJNNVE5dVhOSVJZUE5qNG50Wm95MjdkQ3dyLTlYRFAxSUdxRVVF?oc=5",
+          "source": "Google News RSS",
+          "time": ""
+        },
+        {
+          "title": "Venezuela is the blueprint for what Washington will demand from Iran - The Hill",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOOVRTZUtMcWs4X3FpTFctTEkyWVF4S1pSdUs2TEpPWThZZlJrQmczMkhnYnBlSktjYm1RbjFNLXRTTEZrdTFnRklSNjlBbS1XVUJLQkNZTFRtT3BTVkU4ZHRhWXZ3OWtucW5sS1VUdFNKV25EQ2FMaDVsbkFPQk1wUFQxLUI1aDRHa2fSAYoBQVVfeXFMTjlUU2VLTHFrOF9xaUxXLUxJMllReEtaUnVLNkxKT1k4WWZSa0JnMzJIZ2JwZUpLY2JtUW4xTS10U0xGa3UxZ0ZJUjY5QW0tV1VCS0JDWUxUbU9wU1ZFOGR0YVl2dzlrbnFubEtVVHRTSlduRENhTGg1bG5BT0JNcFBUMS1CNWg0R2tn?oc=5",
+          "source": "Google News RSS",
+          "time": ""
+        },
+        {
+          "title": "Trump says ‘it doesn’t matter’ if you call Iran conflict a war or not: ‘It’s small potatoes’ - Washington Examiner",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPaXpNVWN6bmN3QmVJS0kzT3FadmFPRzBIbTJLcUF5MzNWUFIxbDFtOEQtTU9STFlaMnhDcFFFU3ZjTC1Qcm02anZYNHBFNmFUb0UtUWNzbTFoQmdoRXJUWVprOUx4c25XVkZEaTlURktDbTVKUzJvQUU1OEpMOWo5bEJfUHBjTnlJSnVaWldlQVBodTFGNDdQblNONUNvUndNRE9MM04zeko0dnZuLVBEUV81dS1Pa2hveWx3UGxrbWlvM1hVNmE1U25obWN3NWZwN1VubzBSN3VLZw?oc=5",
+          "source": "Google News RSS",
+          "time": ""
+        },
+        {
+          "title": "The Iran War Has Put Venezuela's Oil Back in the Spotlight - Crude Oil Prices Today | OilPrice.com",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNX3VIWXVfd05vVnFvWmpGZFdYNk9jTUJNNEFaZExweGwzMy12dnNnZUxRdGVUMTJwTEltR3lrWkYteGhkLXR0Z1Bfb09tU0hydVRSZHJSR25fdE5HbmhFT3ItQmFPWThpVmJWdHhVc0R4cFJvSTV3MjdZekY0dDFta2tEUmY1RVRlLVV6Z2hNb3VxYmlJTmM1S2hNb1hLVE5MNTN3dWl2SmdRVEl0OWfSAa4BQVVfeXFMTV91SFl1X3dOb1Zxb1pqRmRXWDZPY01CTTRBWmRMcHhsMzMtdnZzZ2VMUXRlVDEycExJbUd5a1pGLXhoZC10dGdQX29PbVNIcnVUUmRyUkduX3ROR25oRU9yLUJhT1k4aVZiVnR4VXNEeHBSb0k1dzI3WXpGNHQxbWtrRFJmNUVUZS1VemdoTW91cWJpSU5jNUtoTW9YS1ROTDUzd3VpdkpnUVRJdDln?oc=5",
+          "source": "Google News RSS",
+          "time": ""
         }
       ],
       "sourceBacked": true
@@ -633,27 +633,39 @@
       "actionEvidenceCount": 0,
       "categoryCount": 1,
       "targetCount": 0,
-      "evidenceCount": 90,
+      "evidenceCount": 87,
       "lastEvidenceTime": "Wed, 11 Mar 2026 07:00:00 GMT",
       "intensity": 35,
       "evidence": [
         {
-          "title": "Trading Day: Oil tanks, stocks leap on US midterms - Yahoo Finance",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNemdHLWE2Y3JLeWFUc2ZJNzVkcDF3U3hsOHRxeWl6VnlFeGlEVmgtbzJxR2JSRjl6dWpidUx0VlRYMTlpUjRRcWRsOXRvaG5KMGJsa21yVWI3bmE1bnRTOVNWYl9RMXNlWlZaY3FiZVVIVHZqd0hWenJsODMyOEVfV0F6OW9mbWNRRE1aYnpuZw?oc=5",
-          "source": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNemdHLWE2Y3JLeWFUc2ZJNzVkcDF3U3hsOHRxeWl6VnlFeGlEVmgtbzJxR2JSRjl6dWpidUx0VlRYMTlpUjRRcWRsOXRvaG5KMGJsa21yVWI3bmE1bnRTOVNWYl9RMXNlWlZaY3FiZVVIVHZqd0hWenJsODMyOEVfV0F6OW9mbWNRRE1aYnpuZw?oc=5",
-          "time": "2026-11-04T22:04:26Z"
+          "title": "Bondi beach shooting: Eva Geller, 90, shot during massacre dies in hospital year after antisemitic attack",
+          "url": "https://www.theguardian.com/australia-news/2026/nov/06/bondi-beach-shooting-woman-dies-year-after-terror-attack-ntwnfb",
+          "source": "Guardian World",
+          "time": "2026-11-06T06:26:03Z"
         },
         {
-          "title": "European Stock Markets Today: STOXX Europe 600, FTSE MIB, DAX, CAC 40 and FTSE 100 Rally as Oil and Bond Yields Ease - BBN Times",
-          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQTlc4WG9HYVc4OEktUURpU1E0akdyMjZaY0pkSzBrS0lBdmtfUU1ZNmQ3ZnlaaUhEV3dwT0NsWlFZZk9NalpyVGdmaXY3QTUzY2s3QkZXTHlXOTBTbnBPZnA5cVVvVHVHeEdlSlVDNEVpOWNNSi1OU0FiLUVBcnY0T3VEdkdOaS00UzlQNWhtMkpIckNrNDdmajBRRTFpNXFTcU9fNjlsY1pTX282U2RiMlJmTDlhM2NkOWJfRFZlam1kOWxOOE85ei1FODJQNV9YQTdrZW5Pd1BLOXZOSGJtNg?oc=5",
-          "source": "Google News — Global Economics",
-          "time": "2026-11-04T21:56:27Z"
+          "title": "Global tech stocks plunge as US midterms add to AI slowdown fears",
+          "url": "https://www.bbc.co.uk/news/articles/cmn04705rd8jo?at_medium=RSS&at_campaign=rss",
+          "source": "BBC World",
+          "time": "2026-11-06T06:00:59Z"
         },
         {
-          "title": "Iran signals missile strikes on Kyiv, Lviv, Odesa: Putin in urgent meeting with Rezaei - Bankingnews",
-          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQUFZVN0FIRUZlQ2h4YTRNajRLUS16S25STkx3Slg1ZV80VXd1aEZocm9VZjBwejhBMHFxV0RwQTBSOHR3dkpTem5EalZXVHRSU1hIUXVpVzhLOW1LSjFnWHRsT2xJclZmSVdvazdYNk9sWkppM1VYWUw5NjJKMHgybjYyVDlwaVVSSnpnVzVYZzA5SnkteEZ0NkFaVlZDT1lPYWtvbkdKNzA1bmpvTW5tdzJNaTF2NjdRTTM0WHBDSENBMGdaZEdodWpWMHFTODNTNmRYNzFBUGRNRmdocjcwSkNCVW1qUkJTc3JBbkl3?oc=5",
-          "source": "Google News — Iran Israel",
-          "time": "2026-11-05T20:49:29Z"
+          "title": "Australian woman shot during Bondi Beach attack dies almost a year later",
+          "url": "https://www.bbc.co.uk/news/articles/c65ynn9x50d0o?at_medium=RSS&at_campaign=rss",
+          "source": "BBC Asia",
+          "time": "2026-11-06T05:32:58Z"
+        },
+        {
+          "title": "Paraguay’s president impeached amid bank collapse crisis",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/6/paraguays-president-impeached-amid-bank-collapse-crisis?traffic_source=rss",
+          "source": "Al Jazeera",
+          "time": "2026-11-06T03:49:33Z"
+        },
+        {
+          "title": "World Bank approves $500m to strengthen climate resilience in Nigeria - Africa Business Communities",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQbWx0N3FHd3Z2R3RNRGpJRzlFWFhJWWF5SFEwdlczLURHX2lPTXpkazYzME9jQ1hQSmNGVEJyOVFteHFnb3BsejRFSFFoS2NXbVBtOHRZSEhNbnZhRUphcFl3cXBGYjk0YWxTN19zVmRiRUtTLUR2Mk5UUDJQVFh0NTY0Q3BiSjI2WEJnaFNxTUJPcDhJZnFtbkx4TFlJcWtXOXpzV3J4QVVsVVVhamowNG1zZmVDQQ?oc=5",
+          "source": "Google News — Climate Security",
+          "time": "2026-11-06T11:10:06Z"
         },
         {
           "title": "21 killed in South Sudan clashes - The Financial Express",
@@ -722,40 +734,28 @@
           "time": ""
         },
         {
-          "title": "Friday briefing: ​After a week of disruption, is living with threats our new normal?",
-          "url": "https://www.theguardian.com/world/2026/nov/06/friday-briefing-after-a-week-of-disruption-is-living-with-threats-our-new-normal",
+          "title": "Hiring jumps: The economy added 165,000 jobs last month",
+          "url": "https://www.npr.org/2026/11/06/nx-s1-6030867/jobs-labor-market-economy-wages-inflation",
+          "source": "NPR News",
+          "time": "2026-11-06T13:49:21Z"
+        },
+        {
+          "title": "US job growth exceeds expectations in October despite economic uncertainty",
+          "url": "https://www.theguardian.com/business/2026/nov/06/us-job-growth-october",
           "source": "Guardian World",
-          "time": "2026-11-06T06:43:04Z"
+          "time": "2026-11-06T13:42:26Z"
         },
         {
-          "title": "Bondi beach shooting: Eva Geller, 90, shot during massacre dies in hospital year after antisemitic attack",
-          "url": "https://www.theguardian.com/australia-news/2026/nov/06/bondi-beach-shooting-woman-dies-year-after-terror-attack-ntwnfb",
+          "title": "Tesla to wind down Cybertruck production as Elon Musk focuses on robotics and AI",
+          "url": "https://www.theguardian.com/technology/2026/nov/06/tesla-to-wind-down-cybertruck-production-as-elon-musk-focuses-on-robotics-and-ai",
           "source": "Guardian World",
-          "time": "2026-11-06T06:26:03Z"
+          "time": "2026-11-06T12:38:05Z"
         },
         {
-          "title": "Paraguay’s president quits after millions of people’s savings frozen in bank crisis",
-          "url": "https://www.theguardian.com/world/2026/nov/05/paraguay-president-santiago-pena-resigns",
-          "source": "Guardian World",
-          "time": "2026-11-06T06:16:22Z"
-        },
-        {
-          "title": "Global tech stocks plunge as US midterms add to AI slowdown fears",
-          "url": "https://www.bbc.co.uk/news/articles/cmn04705rd8jo?at_medium=RSS&at_campaign=rss",
-          "source": "BBC World",
-          "time": "2026-11-06T06:00:59Z"
-        },
-        {
-          "title": "Australian woman shot during Bondi Beach attack dies almost a year later",
-          "url": "https://www.bbc.co.uk/news/articles/c65ynn9x50d0o?at_medium=RSS&at_campaign=rss",
-          "source": "BBC Asia",
-          "time": "2026-11-06T05:32:58Z"
-        },
-        {
-          "title": "Paraguay’s president impeached amid bank collapse crisis",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/6/paraguays-president-impeached-amid-bank-collapse-crisis?traffic_source=rss",
-          "source": "Al Jazeera",
-          "time": "2026-11-06T03:49:33Z"
+          "title": "Judge halts construction of Trump's arch. And, Labor Department to release jobs report",
+          "url": "https://www.npr.org/2026/11/06/g-s1-152213/up-first-newsletter-job-market-trump-arch-school-enrollment-harmeet-dhillon",
+          "source": "NPR News",
+          "time": "2026-11-06T12:24:52Z"
         }
       ],
       "sourceBacked": true
@@ -773,57 +773,39 @@
       "actionEvidenceCount": 0,
       "categoryCount": 1,
       "targetCount": 0,
-      "evidenceCount": 84,
+      "evidenceCount": 86,
       "lastEvidenceTime": "Wed, 17 Dec 2025 08:00:00 GMT",
       "intensity": 35,
       "evidence": [
         {
-          "title": "Africa’s richest man launches mega oil tank farm in Namibia",
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/5/africas-richest-man-launches-mega-oil-tank-farm-in-namibia?traffic_source=rss",
-          "source": "Al Jazeera",
-          "time": "2026-11-05T00:39:18Z"
-        },
-        {
-          "title": "Trading Day: Oil tanks, stocks leap on US midterms - Yahoo Finance",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNemdHLWE2Y3JLeWFUc2ZJNzVkcDF3U3hsOHRxeWl6VnlFeGlEVmgtbzJxR2JSRjl6dWpidUx0VlRYMTlpUjRRcWRsOXRvaG5KMGJsa21yVWI3bmE1bnRTOVNWYl9RMXNlWlZaY3FiZVVIVHZqd0hWenJsODMyOEVfV0F6OW9mbWNRRE1aYnpuZw?oc=5",
-          "source": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNemdHLWE2Y3JLeWFUc2ZJNzVkcDF3U3hsOHRxeWl6VnlFeGlEVmgtbzJxR2JSRjl6dWpidUx0VlRYMTlpUjRRcWRsOXRvaG5KMGJsa21yVWI3bmE1bnRTOVNWYl9RMXNlWlZaY3FiZVVIVHZqd0hWenJsODMyOEVfV0F6OW9mbWNRRE1aYnpuZw?oc=5",
-          "time": "2026-11-04T22:04:26Z"
-        },
-        {
-          "title": "European Stock Markets Today: STOXX Europe 600, FTSE MIB, DAX, CAC 40 and FTSE 100 Rally as Oil and Bond Yields Ease - BBN Times",
-          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQTlc4WG9HYVc4OEktUURpU1E0akdyMjZaY0pkSzBrS0lBdmtfUU1ZNmQ3ZnlaaUhEV3dwT0NsWlFZZk9NalpyVGdmaXY3QTUzY2s3QkZXTHlXOTBTbnBPZnA5cVVvVHVHeEdlSlVDNEVpOWNNSi1OU0FiLUVBcnY0T3VEdkdOaS00UzlQNWhtMkpIckNrNDdmajBRRTFpNXFTcU9fNjlsY1pTX282U2RiMlJmTDlhM2NkOWJfRFZlam1kOWxOOE85ei1FODJQNV9YQTdrZW5Pd1BLOXZOSGJtNg?oc=5",
-          "source": "Google News — Global Economics",
-          "time": "2026-11-04T21:56:27Z"
-        },
-        {
           "title": "Trump blames losses on GOP candidates, oil prices and his absence from ballot - The Washington Post",
           "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOcm8yRDN0ODJJUUd4WVlJTjk0Y0Z3ZWM2SFNOZ0pfUTJaUjd1QThhTDRveDdxV0hoZW12WUZKeFp0aUVZQnpucVRHZjZzcHZRVk1NRmRibXdjdW1WSk5VTmc1dGRVOW1CeDNLMzFmVFlUcklENUhGMC00OHdEUHlhZ1dpOWs0SFQzWEx2ZmpwMlJiTGxxVWozaVJWcHBleWU5S0pyU012VzRUcnNLcWFNV19rbzdLbDBpbkdzRUNTU3JZZw?oc=5",
-          "source": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOcm8yRDN0ODJJUUd4WVlJTjk0Y0Z3ZWM2SFNOZ0pfUTJaUjd1QThhTDRveDdxV0hoZW12WUZKeFp0aUVZQnpucVRHZjZzcHZRVk1NRmRibXdjdW1WSk5VTmc1dGRVOW1CeDNLMzFmVFlUcklENUhGMC00OHdEUHlhZ1dpOWs0SFQzWEx2ZmpwMlJiTGxxVWozaVJWcHBleWU5S0pyU012VzRUcnNLcWFNV19rbzdLbDBpbkdzRUNTU3JZZw?oc=5",
-          "time": "2026-11-04T18:24:48Z"
+          "source": "The Washington Post",
+          "time": "Wed, 04 Nov 2026 22:59:34 GMT"
         },
         {
-          "title": "Why Iranian, Houthi Threats to Red Sea Shipping Matter More For Oil Now - EnergyNow",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxONjJjTkVyazBJYVZNYVFRWUphYzJvU0tWSS1VOXdvOTZyX3E2VXR1emdlS08wcjJoUkh6alVyWUFXQU1nTnAtQ2pvR0t6VTgyUXhsVF80QTMtbVB3ekpjczZIYnZBNUh0a1puaG5ibHd1TktHMUVBa2tTUW9pM0xuN0VLcXRVSjFEeE1USE94V05ORG9QaTFxR1puMVVkVHJBcUE?oc=5",
+          "title": "pakistan-security-forces-foil-militant-infiltration-kurram-border-afghan-taliban-2026 Archives - TV ONE USA",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbkM5QUo2a2wxdFpTekNvVWJ2T1k5S01QRFZkZG84MG9Xel9wZWZEbWtIMXdkM3VkTW5fd05UNEQ5LVU0MUFreXozbG1MQUc3VjFqQ1AzdXR3dEo0bDlkbHdILU1WU3NBNXgtOW1rdVZrUG9PdDBhVmwzMHJkVTlBN3VlaHUwVlFfZ04zZG5SOFNTOHVaYXJwMW5JTTNvRUh5UW0xSXlEdVE3V3lXSjNSag?oc=5",
+          "source": "Google News — Afghanistan Security",
+          "time": "2026-11-06T10:31:24Z"
+        },
+        {
+          "title": "Pakistan Army Foils Terrorist Infiltration Attempt in Kurram Sector, Afghan Taliban Posts Suffer Damage - Daily Independent",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQdjRZUTR6OHpEdWloYzRmT01uNzhhc0hEdEQ1SHA1NHp2WHE0TlpzU1NueFdZa0VKNDhCNlRjNVZJVVVjbHY1dkN6M2tDb2x1M2VWU1V6QTBnWXUxR3BQTF9Rc3NnRHhPSERLMU1fVkpLRG5iRjJSVGJ6Ni1QeUZSTWFaMEIxLU9JODlYQ2lUYXR1QUNTRExuUkpKZ0pGc0N6ZldiS2d5Smw5MDkzLVNITkJNdnB6cUxOZER5U0gtU2VvMmh2SGdHTUVLeFJKbE5mc1N4c0lmaGdFR3VwUXBRRjhmOXg?oc=5",
+          "source": "Google News — Afghanistan Security",
+          "time": "2026-11-06T08:11:32Z"
+        },
+        {
+          "title": "Pakistan Says Army Foils TTP Infiltration Attempt Along Afghan Border - thekabultribune.com",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBaQUpjMHFXUm9pT1Q4UzlySTgtT211bXJIUXpjWER0SUtwYXFYLTNveHVPTUp2Y19Bb251dEhMckFwVnE0cEdYeFpUNUt5Wlk?oc=5",
+          "source": "Google News — Afghanistan Security",
+          "time": "2026-11-06T05:36:49Z"
+        },
+        {
+          "title": "More ships attacked in Persian Gulf, oil prices rebound slightly after post-midterm plunge - CBS News",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOTDROS29td1ZxNlFndnlTQnU4LVVwTXg1OW9kemVlQmx4M1pZTFlOd21RNnJhcnBVNENOSEpjT2YyWC1DMVhXcHFpNHBMUlF6Mk9NeVFmV19RVnpZTkl0RVE1YjFYVk5JRFZBVFJQbGtlaVFQS2FCazJKWWNQRUVOaDdNdzBuUU1z?oc=5",
           "source": "Google News — Yemen / Red Sea",
-          "time": "2026-11-05T22:18:54Z"
-        },
-        {
-          "title": "Pakistani security forces foil border infiltration attempt and destroy Afghan Taliban posts in Kurram - Daily Times",
-          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNYjl6Y05hem1LYzg4cDhrWFJoOGdaR0VacERUcm53Q3o3VGZRNUVGdk84QVBGY005M1o1T3hfeTMyd3FuZUpOajd4WEt5dkdJUEJIbXcxbkNYcHBiM0hqYXhETEhUenVQMzlsVWxHOXhCNkx1QXlEVlR4XzAtMUZ1dGF6NEoxQWx1Y2RpdEZjemNvX2VrTTJDcS1fNjNRMC1sOGl3NVFaUklJZmxuVTBfTVpBVnRKbzA0ZWVrX3ZDck84T2lDbFVWNG9qZFhGanE1UkE?oc=5",
-          "source": "Google News — Afghanistan Security",
-          "time": "2026-11-06T04:59:08Z"
-        },
-        {
-          "title": "Pakistan destroys Afghan Taliban posts, foils Kurram infiltration attempt - Dunya News",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPYlhqZTh2OEdlelhXQkh0bE05Vkt6WXRvM2NiTm1vVHJDQWJMa05jYXFzZ2hIc0RUMTU1eUJFejVlUElmS1gxRGdnUGJKZURKOFU5M19qTG0xY0ZtOUJ0NWJXZlNTeEZ3SVB6N3BmLWEtWEVtbXVaNUp6SmUydnZvc2hZLXliQy04TEl2YzhnMmRhLUZ5NmJJTHdFT1h3enA3MGIyX3gzazlYUVRNV0HSAVZBVV95cUxPaGJpem8tMl9Dc2pXckp0Qk94VHRjOTFtVGZucWR1eXJsdzhIRXoxYmpTVFFHX21ERXJpSkRYcXAwZ1lMbjZ3VmRLbjVtZTVOemF4TWUyZw?oc=5",
-          "source": "Google News — Afghanistan Security",
-          "time": "2026-11-05T23:29:15Z"
-        },
-        {
-          "title": "Pakistani forces foil TTA border infiltration attempt, arrest Afghan Kharij alive - Pakistan Connect",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPZ1dLU1ptMTAtcGx4TE4xLVlxRXFjSG4wR2owRmctbmpSVmp5QXlMLXRmRkt4c2czZTNka3hJTmlHYmM1NUVpWF95Nm9xWElnTzVyUW9ibEV3a2hReWZQMWhfMm5jZzdMYWFJdjFFN3dvbkhMSlUtZ0hOT2hNdVhJUDdXVV9CT29TMlhoR3otclJQdjg3RTlJVS1tdw?oc=5",
-          "source": "Google News — Afghanistan Security",
-          "time": "2026-11-05T18:24:35Z"
+          "time": "2026-11-06T10:23:00Z"
         },
         {
           "title": "Libya's NOC reports drone attack attempt at fuel depot - Pipeline and Gas Journal",
@@ -896,6 +878,24 @@
           "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9lbWVtZXdIMXZBTUpiTVZwTFhBNFZ2ZFUxVjRBNmk5d0RNQThvcVhZLWJ6X1FJcUhvZ1hLWVduV3dYMmxZdmRVZlNtb09fVmRsVFY2Nmw5S0wxaFJNS0IydzBHTHo4Tm1LRlhF?oc=5",
           "source": "Google News RSS",
           "time": ""
+        },
+        {
+          "title": "The Iran War Has Put Venezuela's Oil Back in the Spotlight - Crude Oil Prices Today | OilPrice.com",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNX3VIWXVfd05vVnFvWmpGZFdYNk9jTUJNNEFaZExweGwzMy12dnNnZUxRdGVUMTJwTEltR3lrWkYteGhkLXR0Z1Bfb09tU0hydVRSZHJSR25fdE5HbmhFT3ItQmFPWThpVmJWdHhVc0R4cFJvSTV3MjdZekY0dDFta2tEUmY1RVRlLVV6Z2hNb3VxYmlJTmM1S2hNb1hLVE5MNTN3dWl2SmdRVEl0OWfSAa4BQVVfeXFMTV91SFl1X3dOb1Zxb1pqRmRXWDZPY01CTTRBWmRMcHhsMzMtdnZzZ2VMUXRlVDEycExJbUd5a1pGLXhoZC10dGdQX29PbVNIcnVUUmRyUkduX3ROR25oRU9yLUJhT1k4aVZiVnR4VXNEeHBSb0k1dzI3WXpGNHQxbWtrRFJmNUVUZS1VemdoTW91cWJpSU5jNUtoTW9YS1ROTDUzd3VpdkpnUVRJdDln?oc=5",
+          "source": "Google News RSS",
+          "time": ""
+        },
+        {
+          "title": "India's national interest guides its energy purchases, MEA says on Russian oil imports - ET Government",
+          "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNLVEtWmxBcFJDbHdlLW0zajhOWk15NFFFSmdYQmlHU3V4amVmbmprT1RZeWRQRzM2MWcyc19rSHhyWUZnQW5DQ1hlSG1aMlV1ZkpyeXp3T0xoRG1sNXF5RlpXRnZfRVJhQnJkaDFzLXU4b1JXU25UdmsydkYzMWh1VW4taExGV0I1amxfcDBjU2xFZWtzTHBUdXppU25OdEhHQ2FOeFhvamZrQ3FPcG1tTTlmUlFUQm9fbDBuZ3BwbXFwcGdiWkptUjB0Z0w2eFBIbnktZk1Ud2NlZkZyUkJxZ3pJbk54Vk5TOGZLNFVvd9IB9AFBVV95cUxQTTZodENydzJlVTFMN3Z3UkJ5Qy16TzNCS3U3RldLZzA2a0ZjTVNzaVYwYm5Gd2R1QlRzeVU4OGU1LWREWHdab05jY2hJTl9sMWpBVTdhLXk3ZWRkMzNKZmwxYUZONVo5MXJTc0FzdEs5aEpJVmY3VVd1eDk1UGNQR3h6ckZUWm1XWmJ3QkZFa2hTMDFqZVhfMnU0Z3VUeUJFcm9ucVVFMzVNRHdpaVBkN0doQ24tYVhBYnJzZURPUHVTSHA5WGtTQUtDdFNKTFZ1b0VQZHhfMnh3emtZNWh0d3diMkxWVC14Nm4yQndfb1BRcHBj?oc=5",
+          "source": "Google News RSS",
+          "time": ""
+        },
+        {
+          "title": "Poland doesn't want nuclear weapons on their soil",
+          "url": "https://x.com/FaytuksNetwork/status/2093012423229755565?s=20",
+          "source": "Global War News Map",
+          "time": ""
         }
       ],
       "sourceBacked": true
@@ -913,26 +913,32 @@
       "actionEvidenceCount": 0,
       "categoryCount": 1,
       "targetCount": 0,
-      "evidenceCount": 83,
+      "evidenceCount": 84,
       "lastEvidenceTime": "Fri, 03 Apr 2026 07:00:00 GMT",
       "intensity": 35,
       "evidence": [
         {
-          "title": "Iran war latest: Iran claims series of Hormuz explosions as talks intensify - thenationalnews.com",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQa3prTFlUbjIxSUVNV3VDVHNEb1Nkb0ZqSDVTZkJwMng0YmQ2dFhmVDNYdlB4WGlQU1NMU3J5VWg3a1NTcjBoTm9oZ2piVXlKc29ZSTNzcHRHUHFNVmxzRDhRS2ZXUXI2RW1nU1hGZnI5U0RKeXR6NDJ5T2k2a1gtbXRCSFY1VUdJY1NUaXU5V2YzWE0?oc=5",
+          "title": "Iran war latest: Iran claims series of Hormuz explosions as talks intensify - The National",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxORmUtU3VZNWJBdF9aTXRFU2d0Y1pDOW12VlhrdVdvVDg2TlhWRy10bHYzanloSjQ3Z0QxNGJ6TEtqV3NwRlV1NldudTA3NUs4dnBhY2h6SG5iZWpTY0JJOU9lNW1Db212bXZ5N3cwa2hDMlVrRnNFOFA2N3pTVDNacW1FZ05OcGJITGlpQXc2NFNpNk0?oc=5",
           "source": "Google News — Yemen / Red Sea",
-          "time": "2026-11-06T02:10:06Z"
+          "time": "2026-11-06T03:49:54Z"
         },
         {
-          "title": "Why Iranian, Houthi Threats to Red Sea Shipping Matter More For Oil Now - EnergyNow",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxONjJjTkVyazBJYVZNYVFRWUphYzJvU0tWSS1VOXdvOTZyX3E2VXR1emdlS08wcjJoUkh6alVyWUFXQU1nTnAtQ2pvR0t6VTgyUXhsVF80QTMtbVB3ekpjczZIYnZBNUh0a1puaG5ibHd1TktHMUVBa2tTUW9pM0xuN0VLcXRVSjFEeE1USE94V05ORG9QaTFxR1puMVVkVHJBcUE?oc=5",
+          "title": "Saudi official calls WSJ report on Houthi demands baseless - Free Press Kashmir",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNaHYxeUNHNHoxWHZLQm1LNThVeWx2VGVjNWp5Nk1iUnducXY2U3UyOVBPamoxekZ3allXS1pBLWdsT1c4TC1oUThGdC1wNncxaDlJdWVnZ09BblJ6bV94MnJKV1pGbGZ1clNfWG9qTmpHOHNaSVU1T1JvU0NObkFCdnlQbHBTaUdMTmFsa1E4WkVHZS1ESXRMd1B6T0hZNW1hd2fSAacBQVVfeXFMTVdIbkpYZVl3cHI1dU84U0xFa1ZlTnp0X2FhbHppNXdVTWxmVF9GQi1oM0UwWWdLbzNMLXdacGVrVzRQemVQYWxxTm5LelhtTDZobWl2XzhEZmVYei1ldVdYZXpwQ0t6MkZrUzhHeHZnTVQycENVSGRSeU5MX2o5U2Y0N2FmNUNPVkFlaVNkVUFVSXJHNTNhR2RQX3puOFJvLXlPa0xPNTQ?oc=5",
           "source": "Google News — Yemen / Red Sea",
-          "time": "2026-11-05T22:18:54Z"
+          "time": "2026-11-06T07:15:05Z"
+        },
+        {
+          "title": "Born to be torn: A generation raised under Houthi rule in Yemen",
+          "url": "https://www.aljazeera.com/opinions/2026/11/6/born-to-be-torn-a-generation-raised-under-houthi-rule-in-yemen?traffic_source=rss",
+          "source": "Al Jazeera",
+          "time": "2026-11-06T12:16:40Z"
         },
         {
           "title": "Why is Iran exempting India, China, Qatar, Iraq from Hormuz restrictions?",
           "url": "https://www.aljazeera.com/news/2026/11/6/why-is-iran-exempting-india-china-qatar-iraq-from-hormuz-restrictions?traffic_source=rss",
-          "source": "Al Jazeera",
+          "source": "https://www.aljazeera.com/news/2026/11/6/why-is-iran-exempting-india-china-qatar-iraq-from-hormuz-restrictions?traffic_source=rss",
           "time": "2026-11-06T06:06:24Z"
         },
         {
@@ -1030,12 +1036,6 @@
           "url": "https://www.eia.gov/international/analysis/regions-of-interest/World",
           "source": "Guerilla Map Strategic Reference",
           "time": ""
-        },
-        {
-          "title": "Panama Canal",
-          "url": "https://pancanal.com/en/",
-          "source": "Guerilla Map Strategic Reference",
-          "time": ""
         }
       ],
       "sourceBacked": true
@@ -1053,27 +1053,27 @@
       "actionEvidenceCount": 0,
       "categoryCount": 1,
       "targetCount": 0,
-      "evidenceCount": 81,
+      "evidenceCount": 82,
       "lastEvidenceTime": "Tue, 07 Apr 2026 07:00:00 GMT",
       "intensity": 35,
       "evidence": [
         {
-          "title": "White House event reveals Ukraine and Russia share one goal: flattering Melania",
-          "url": "https://www.theguardian.com/us-news/2026/nov/05/melania-trump-white-house-visit-ukraine-russia",
-          "source": "Guardian US",
-          "time": "2026-11-05T20:52:27Z"
-        },
-        {
-          "title": "Trump says Russia-Ukraine deal is near after meeting Putin’s envoy",
-          "url": "https://www.aljazeera.com/news/2026/11/6/trump-met-russian-envoy-after-he-appeared-with-melania-trump-and-ukrainians?traffic_source=rss",
-          "source": "Al Jazeera",
-          "time": "2026-11-06T00:06:31Z"
+          "title": "Melania Trump touts rare agreement she brokered between Russia and Ukraine",
+          "url": "https://www.npr.org/2026/11/05/nx-s1-6030662/melania-trump-touts-rare-agreement-she-brokered-between-russia-and-ukraine",
+          "source": "NPR News",
+          "time": "2026-11-05T23:52:48Z"
         },
         {
           "title": "Russia-Africa Summit; Sudan’s Drone War Intensifies: Africa File, November 5, 2026 - Critical Threats",
           "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPNjNsY1YyTGJZazBiWnAzM1JackgxcVU4cnc4TnpYTFh1c2h5OS1GUERVbldXRkhUaFZOLTVMUlNTbFJDQWJ1ZVhTdmk0SUk0SVYxSlo0WXEyWWUzXzVablg1Yml4RV9hNWNQdlV4X2xlUmNtTERHTzRGbEJjSFkwaWcwRTZCVXBLel9n?oc=5",
           "source": "Google News — Africa Security",
           "time": "2026-11-05T22:12:31Z"
+        },
+        {
+          "title": "New Deterrence: Ukraine and Europe must find a joint response to Moscow’s missile challenge - Re: Russia",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5lZzlDMFBQeWk5OHU4NjJJWThWa1RvZm1HeEMzdmljNnFYNk1XTW1jcU9QYlU3X0pOMDQyamJFY3d2XzdLUGc0Q0pNUGw3MUhWV3c?oc=5",
+          "source": "Google News — Iran Israel",
+          "time": "2026-11-06T11:35:55Z"
         },
         {
           "title": "M5.5 earthquake — 156 km E of Kuril’sk, Russia",
