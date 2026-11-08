@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-08T18:36:48.733112Z",
+  "updatedAt": "2026-11-08T22:26:51.165865Z",
   "window": "recent public reporting",
   "method": "anchor-aware title clustering with category and publication-time agreement; candidate grouping only, not proof reports describe identical facts",
   "events": [
@@ -8,25 +8,46 @@
       "title": "Green forest fire notification in Australia",
       "category": "general",
       "confidence": "low",
-      "reportCount": 11,
+      "reportCount": 6,
       "sourceCount": 1,
       "sources": [
         "gdacs.org"
       ],
       "anchors": [],
-      "firstSeen": "2026-11-08T08:07:33Z",
-      "lastSeen": "2026-11-08T12:12:35Z",
+      "firstSeen": "2026-11-08T12:00:38Z",
+      "lastSeen": "2026-11-08T20:06:08Z",
       "urls": [
+        "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033636",
         "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033626",
         "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033625",
         "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033623",
         "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033622",
-        "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033621",
-        "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033616",
-        "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033615",
-        "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033614"
+        "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033621"
       ],
       "reports": [
+        {
+          "id": "40137177a9fe",
+          "sourceLabel": "GDACS Global Disaster Alerts",
+          "sourceName": "GDACS Global Disaster Alerts",
+          "sourceType": "climate-hazard",
+          "title": "Green forest fire notification in Australia",
+          "summary": "On 05/11/2026, a forest fire started in Australia, until 08/11/2026.",
+          "summary_snippet": "On 05/11/2026, a forest fire started in Australia, until 08/11/2026.",
+          "source": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033636",
+          "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033636",
+          "time": "2026-11-08T20:06:08Z",
+          "published_date": "2026-11-08T20:06:08Z",
+          "publishedDate": "2026-11-08T20:06:08Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "gdacs_global_disaster_alerts",
+            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "feedFormat": "rss"
+          }
+        },
         {
           "id": "d5886cec7d9b",
           "sourceLabel": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033626",
@@ -132,75 +153,6 @@
           "time": "2026-11-08T12:00:38Z",
           "published_date": "2026-11-08T12:00:38Z",
           "publishedDate": "2026-11-08T12:00:38Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "5a0cade58662",
-          "sourceLabel": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033616",
-          "sourceName": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033616",
-          "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in Australia",
-          "summary": "On 03/11/2026, a forest fire started in Australia, until 08/11/2026.",
-          "summary_snippet": "On 03/11/2026, a forest fire started in Australia, until 08/11/2026.",
-          "source": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033616",
-          "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033616",
-          "time": "2026-11-08T08:13:45Z",
-          "published_date": "2026-11-08T08:13:45Z",
-          "publishedDate": "2026-11-08T08:13:45Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "23efb1bab533",
-          "sourceLabel": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033615",
-          "sourceName": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033615",
-          "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in Australia",
-          "summary": "On 05/11/2026, a forest fire started in Australia, until 08/11/2026.",
-          "summary_snippet": "On 05/11/2026, a forest fire started in Australia, until 08/11/2026.",
-          "source": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033615",
-          "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033615",
-          "time": "2026-11-08T08:09:54Z",
-          "published_date": "2026-11-08T08:09:54Z",
-          "publishedDate": "2026-11-08T08:09:54Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "004450bd6aa1",
-          "sourceLabel": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033614",
-          "sourceName": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033614",
-          "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in Australia",
-          "summary": "On 05/11/2026, a forest fire started in Australia, until 08/11/2026.",
-          "summary_snippet": "On 05/11/2026, a forest fire started in Australia, until 08/11/2026.",
-          "source": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033614",
-          "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033614",
-          "time": "2026-11-08T08:09:38Z",
-          "published_date": "2026-11-08T08:09:38Z",
-          "publishedDate": "2026-11-08T08:09:38Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
@@ -497,6 +449,255 @@
       ]
     },
     {
+      "id": "3bde1e8e9aa8197c",
+      "title": "Green forest fire notification in Botswana",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 3,
+      "sourceCount": 1,
+      "sources": [
+        "gdacs.org"
+      ],
+      "anchors": [],
+      "firstSeen": "2026-11-08T20:01:14Z",
+      "lastSeen": "2026-11-08T20:07:33Z",
+      "urls": [
+        "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033638",
+        "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033634",
+        "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033632"
+      ],
+      "reports": [
+        {
+          "id": "6451644ac718",
+          "sourceLabel": "GDACS Global Disaster Alerts",
+          "sourceName": "GDACS Global Disaster Alerts",
+          "sourceType": "climate-hazard",
+          "title": "Green forest fire notification in Botswana",
+          "summary": "On 05/11/2026, a forest fire started in Botswana, until 08/11/2026.",
+          "summary_snippet": "On 05/11/2026, a forest fire started in Botswana, until 08/11/2026.",
+          "source": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033638",
+          "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033638",
+          "time": "2026-11-08T20:07:33Z",
+          "published_date": "2026-11-08T20:07:33Z",
+          "publishedDate": "2026-11-08T20:07:33Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "gdacs_global_disaster_alerts",
+            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "e75915d52a6e",
+          "sourceLabel": "GDACS Global Disaster Alerts",
+          "sourceName": "GDACS Global Disaster Alerts",
+          "sourceType": "climate-hazard",
+          "title": "Green forest fire notification in Botswana",
+          "summary": "On 06/11/2026, a forest fire started in Botswana, until 08/11/2026.",
+          "summary_snippet": "On 06/11/2026, a forest fire started in Botswana, until 08/11/2026.",
+          "source": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033634",
+          "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033634",
+          "time": "2026-11-08T20:03:28Z",
+          "published_date": "2026-11-08T20:03:28Z",
+          "publishedDate": "2026-11-08T20:03:28Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "gdacs_global_disaster_alerts",
+            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "3be30e1b3d47",
+          "sourceLabel": "GDACS Global Disaster Alerts",
+          "sourceName": "GDACS Global Disaster Alerts",
+          "sourceType": "climate-hazard",
+          "title": "Green forest fire notification in Botswana",
+          "summary": "On 07/11/2026, a forest fire started in Botswana, until 08/11/2026.",
+          "summary_snippet": "On 07/11/2026, a forest fire started in Botswana, until 08/11/2026.",
+          "source": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033632",
+          "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033632",
+          "time": "2026-11-08T20:01:14Z",
+          "published_date": "2026-11-08T20:01:14Z",
+          "publishedDate": "2026-11-08T20:01:14Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "gdacs_global_disaster_alerts",
+            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
+      "id": "f29890339289f9b5",
+      "title": "Green forest fire notification in Mali",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 3,
+      "sourceCount": 1,
+      "sources": [
+        "gdacs.org"
+      ],
+      "anchors": [
+        "mali"
+      ],
+      "firstSeen": "2026-11-08T16:02:34Z",
+      "lastSeen": "2026-11-08T20:07:14Z",
+      "urls": [
+        "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033637",
+        "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033633",
+        "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033630"
+      ],
+      "reports": [
+        {
+          "id": "dd2504c27a08",
+          "sourceLabel": "GDACS Global Disaster Alerts",
+          "sourceName": "GDACS Global Disaster Alerts",
+          "sourceType": "climate-hazard",
+          "title": "Green forest fire notification in Mali",
+          "summary": "On 05/11/2026, a forest fire started in Mali, until 08/11/2026.",
+          "summary_snippet": "On 05/11/2026, a forest fire started in Mali, until 08/11/2026.",
+          "source": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033637",
+          "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033637",
+          "time": "2026-11-08T20:07:14Z",
+          "published_date": "2026-11-08T20:07:14Z",
+          "publishedDate": "2026-11-08T20:07:14Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "gdacs_global_disaster_alerts",
+            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "8574c428e297",
+          "sourceLabel": "GDACS Global Disaster Alerts",
+          "sourceName": "GDACS Global Disaster Alerts",
+          "sourceType": "climate-hazard",
+          "title": "Green forest fire notification in Mali",
+          "summary": "On 06/11/2026, a forest fire started in Mali, until 08/11/2026.",
+          "summary_snippet": "On 06/11/2026, a forest fire started in Mali, until 08/11/2026.",
+          "source": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033633",
+          "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033633",
+          "time": "2026-11-08T20:03:14Z",
+          "published_date": "2026-11-08T20:03:14Z",
+          "publishedDate": "2026-11-08T20:03:14Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "gdacs_global_disaster_alerts",
+            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "007eae556e5d",
+          "sourceLabel": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033630",
+          "sourceName": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033630",
+          "sourceType": "climate-hazard",
+          "title": "Green forest fire notification in Mali",
+          "summary": "On 06/11/2026, a forest fire started in Mali, until 08/11/2026.",
+          "summary_snippet": "On 06/11/2026, a forest fire started in Mali, until 08/11/2026.",
+          "source": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033630",
+          "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033630",
+          "time": "2026-11-08T16:02:34Z",
+          "published_date": "2026-11-08T16:02:34Z",
+          "publishedDate": "2026-11-08T16:02:34Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "gdacs_global_disaster_alerts",
+            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2ae0a8e5e931f77f",
+      "title": "Trump set to lurch further right, claiming US took ‘giant step back’ in elections - The Guardian",
+      "category": "general",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "sourceCount": 2,
+      "sources": [
+        "news.google.com",
+        "theguardian.com"
+      ],
+      "anchors": [],
+      "firstSeen": "2026-11-08T17:58:43Z",
+      "lastSeen": "2026-11-08T18:00:00Z",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMinwFBVV95cUxORVJaRTZFeWVvVHlmV2FYTTlySGVxTzBwbGwycDgyUHlEWE00N2RtUmRta3ZRQXM4V3JxMWRObkdSN19KSERpbk5rOGF6aGVfdnVZTDBibTlhY3BXc3o3c3pfR3dYLTVib1RyMTFITWJXWDU2ZFBDenlxeElPZWIyQmxxbS1udWgtelZuTXNEUEpvZFctWHJOcEx4STkxX0E?oc=5",
+        "https://www.theguardian.com/us-news/2026/nov/08/trump-midterm-elections-loss-democrats-immigration"
+      ],
+      "reports": [
+        {
+          "id": "233154715ae9",
+          "sourceLabel": "Google News — U.S. Politics",
+          "sourceName": "Google News — U.S. Politics",
+          "sourceType": "us-politics",
+          "title": "Trump set to lurch further right, claiming US took ‘giant step back’ in elections - The Guardian",
+          "summary": "Trump set to lurch further right, claiming US took ‘giant step back’ in elections The Guardian",
+          "summary_snippet": "Trump set to lurch further right, claiming US took ‘giant step back’ in elections The Guardian",
+          "source": "https://news.google.com/rss/articles/CBMinwFBVV95cUxORVJaRTZFeWVvVHlmV2FYTTlySGVxTzBwbGwycDgyUHlEWE00N2RtUmRta3ZRQXM4V3JxMWRObkdSN19KSERpbk5rOGF6aGVfdnVZTDBibTlhY3BXc3o3c3pfR3dYLTVib1RyMTFITWJXWDU2ZFBDenlxeElPZWIyQmxxbS1udWgtelZuTXNEUEpvZFctWHJOcEx4STkxX0E?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxORVJaRTZFeWVvVHlmV2FYTTlySGVxTzBwbGwycDgyUHlEWE00N2RtUmRta3ZRQXM4V3JxMWRObkdSN19KSERpbk5rOGF6aGVfdnVZTDBibTlhY3BXc3o3c3pfR3dYLTVib1RyMTFITWJXWDU2ZFBDenlxeElPZWIyQmxxbS1udWgtelZuTXNEUEpvZFctWHJOcEx4STkxX0E?oc=5",
+          "time": "2026-11-08T18:00:00Z",
+          "published_date": "2026-11-08T18:00:00Z",
+          "publishedDate": "2026-11-08T18:00:00Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_u_s_politics",
+            "sourceUrl": "https://news.google.com/rss/search?q=US+politics+Congress+Senate+White+House+election+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "16f2d0293549",
+          "sourceLabel": "https://www.theguardian.com/us-news/2026/nov/08/trump-midterm-elections-loss-democrats-immigration",
+          "sourceName": "https://www.theguardian.com/us-news/2026/nov/08/trump-midterm-elections-loss-democrats-immigration",
+          "sourceType": "international",
+          "title": "Trump set to lurch further right, claiming US took ‘giant step back’ in elections",
+          "summary": "Trump poised to double down on immigration crackdown and refuse concessions to new Democratic majority in Congress Donald Trump set the stage for his administration to lurch further to the right this weekend, claiming the US had taken a “giant step back” by widely rejecting his party. The US president’s hardline aide, Stephen Miller, will begin as White House chief of staff on Monday. He will also meet with Dana Whit",
+          "summary_snippet": "Trump poised to double down on immigration crackdown and refuse concessions to new Democratic majority in Congress Donald Trump set the stage for his administration to lurch further to the right this weekend, claiming the US had taken a “giant step back” by widely rejecting his party. The US president’s hardline aide, Stephen Miller, will begin as White House chief of staff on Monday. He will also meet with Dana Whit",
+          "source": "https://www.theguardian.com/us-news/2026/nov/08/trump-midterm-elections-loss-democrats-immigration",
+          "url": "https://www.theguardian.com/us-news/2026/nov/08/trump-midterm-elections-loss-democrats-immigration",
+          "time": "2026-11-08T17:58:43Z",
+          "published_date": "2026-11-08T17:58:43Z",
+          "publishedDate": "2026-11-08T17:58:43Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "guardian_world",
+            "sourceUrl": "https://www.theguardian.com/world/rss",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
       "id": "35d3f4ff61359ddd",
       "title": "US task force to cut off Iran’s transport of advanced weapons: What we know - Al Jazeera",
       "category": "general",
@@ -519,8 +720,8 @@
       "reports": [
         {
           "id": "406ff39be7b9",
-          "sourceLabel": "Google News — Iran Israel",
-          "sourceName": "Google News — Iran Israel",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOSjhhZzlJeHBXWDRBRzY4SjB3eF8wUlRWS25YOGF4S0ZfemxqMm5nQmJhemhQXzNJcVdCVF9mcDQwX21xSnRmZHpVcWRJMmlLX1lvN2xLaFNFeXVSbHctbHVyQnZNZVE1ZkZLVElWeGVacmdmV3ZicDEwUzYxRHZENFVFenMyMU1NbVJmOVRGX0R0MTU5bkVnV3p2cjBUWjJkbjRLLWpaNXhUanFMS25uVjBleU_SAboBQVVfeXFMTkd1ZjRpcThWQ0ROQXdTSGoyOFVpZlplY25TbWhOOW55a2lablJVVE1rWGF0QVNndzBZanVzY3VfTEdpYlo2bktMWEV3MzFhN21qRjNTUF9oUjRSZHFLb2hJWTBvRWZFTmlfQ29Gc256cFJpUkhDOVhmd0dScVJ4TUhwVjN4UTB0MF9VWXprNGlvQkMxa0NJWThuakMyUjZ4R0RvSnZnLV9wTnJzYkdfeFhLVjNSZ1J5Mzln?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOSjhhZzlJeHBXWDRBRzY4SjB3eF8wUlRWS25YOGF4S0ZfemxqMm5nQmJhemhQXzNJcVdCVF9mcDQwX21xSnRmZHpVcWRJMmlLX1lvN2xLaFNFeXVSbHctbHVyQnZNZVE1ZkZLVElWeGVacmdmV3ZicDEwUzYxRHZENFVFenMyMU1NbVJmOVRGX0R0MTU5bkVnV3p2cjBUWjJkbjRLLWpaNXhUanFMS25uVjBleU_SAboBQVVfeXFMTkd1ZjRpcThWQ0ROQXdTSGoyOFVpZlplY25TbWhOOW55a2lablJVVE1rWGF0QVNndzBZanVzY3VfTEdpYlo2bktMWEV3MzFhN21qRjNTUF9oUjRSZHFLb2hJWTBvRWZFTmlfQ29Gc256cFJpUkhDOVhmd0dScVJ4TUhwVjN4UTB0MF9VWXprNGlvQkMxa0NJWThuakMyUjZ4R0RvSnZnLV9wTnJzYkdfeFhLVjNSZ1J5Mzln?oc=5",
           "sourceType": "middle-east-conflict",
           "title": "US task force to cut off Iran’s transport of advanced weapons: What we know - Al Jazeera",
           "summary": "US task force to cut off Iran’s transport of advanced weapons: What we know Al Jazeera",
@@ -542,8 +743,8 @@
         },
         {
           "id": "ded8e92bc29f",
-          "sourceLabel": "Al Jazeera",
-          "sourceName": "Al Jazeera",
+          "sourceLabel": "https://www.aljazeera.com/news/2026/11/8/us-task-force-to-cut-off-irans-transport-of-advanced-weapons-what-we-know?traffic_source=rss",
+          "sourceName": "https://www.aljazeera.com/news/2026/11/8/us-task-force-to-cut-off-irans-transport-of-advanced-weapons-what-we-know?traffic_source=rss",
           "sourceType": "international",
           "title": "US task force to cut off Iran’s transport of advanced weapons: What we know",
           "summary": "As fears of an escalation grow, Washington announces 'Task Force Iron Gate'.",
@@ -633,6 +834,73 @@
       ]
     },
     {
+      "id": "6f2ccfd6af05f959",
+      "title": "How Gen Z voters helped fuel a blue wave for Democrats",
+      "category": "general",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "sourceCount": 2,
+      "sources": [
+        "npr.org",
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "2026-11-08T10:00:00Z",
+      "lastSeen": "2026-11-08T10:00:00Z",
+      "urls": [
+        "https://www.npr.org/2026/11/08/nx-s1-6032829/gen-z-voters-midterm-elections",
+        "https://news.google.com/rss/articles/CBMigAFBVV95cUxPTGhrUDAtNUJ0WlR2cWwtRXkzYnFPYmVUR293LTRTejYxWVVRb1JGejA1SHoxamZTeW8tR0RFUlRmSXBLU0ZETUFvQUQ1dWNCQTJ1UzFXdmZPSXZuMU1zWW9OWnJSUkVGaVFVZTZ0aVRtMDIxLWVLQXJEbmtxWnhTWg?oc=5"
+      ],
+      "reports": [
+        {
+          "id": "cec675fa2da4",
+          "sourceLabel": "https://www.npr.org/2026/11/08/nx-s1-6032829/gen-z-voters-midterm-elections",
+          "sourceName": "https://www.npr.org/2026/11/08/nx-s1-6032829/gen-z-voters-midterm-elections",
+          "sourceType": "us-politics",
+          "title": "How Gen Z voters helped fuel a blue wave for Democrats",
+          "summary": "Republicans made gains with young voters in 2024, but in this year's midterms Americans under 30 issued a strong rebuke of President Trump and his party, voting decisively for Democrats instead.",
+          "summary_snippet": "Republicans made gains with young voters in 2024, but in this year's midterms Americans under 30 issued a strong rebuke of President Trump and his party, voting decisively for Democrats instead.",
+          "source": "https://www.npr.org/2026/11/08/nx-s1-6032829/gen-z-voters-midterm-elections",
+          "url": "https://www.npr.org/2026/11/08/nx-s1-6032829/gen-z-voters-midterm-elections",
+          "time": "2026-11-08T10:00:00Z",
+          "published_date": "2026-11-08T10:00:00Z",
+          "publishedDate": "2026-11-08T10:00:00Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "npr_news",
+            "sourceUrl": "https://feeds.npr.org/1001/rss.xml",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "e141b6fa88b9",
+          "sourceLabel": "Google News — U.S. Politics",
+          "sourceName": "Google News — U.S. Politics",
+          "sourceType": "us-politics",
+          "title": "How Gen Z voters helped fuel a blue wave for Democrats - NPR",
+          "summary": "How Gen Z voters helped fuel a blue wave for Democrats NPR",
+          "summary_snippet": "How Gen Z voters helped fuel a blue wave for Democrats NPR",
+          "source": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPTGhrUDAtNUJ0WlR2cWwtRXkzYnFPYmVUR293LTRTejYxWVVRb1JGejA1SHoxamZTeW8tR0RFUlRmSXBLU0ZETUFvQUQ1dWNCQTJ1UzFXdmZPSXZuMU1zWW9OWnJSUkVGaVFVZTZ0aVRtMDIxLWVLQXJEbmtxWnhTWg?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPTGhrUDAtNUJ0WlR2cWwtRXkzYnFPYmVUR293LTRTejYxWVVRb1JGejA1SHoxamZTeW8tR0RFUlRmSXBLU0ZETUFvQUQ1dWNCQTJ1UzFXdmZPSXZuMU1zWW9OWnJSUkVGaVFVZTZ0aVRtMDIxLWVLQXJEbmtxWnhTWg?oc=5",
+          "time": "2026-11-08T10:00:00Z",
+          "published_date": "2026-11-08T10:00:00Z",
+          "publishedDate": "2026-11-08T10:00:00Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_u_s_politics",
+            "sourceUrl": "https://news.google.com/rss/search?q=US+politics+Congress+Senate+White+House+election+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
       "id": "cab09a0d85b19b11",
       "title": "Statement by the North Atlantic Council on the Democratic People’s Republic of Korea - North Atlantic Treaty Organization | NATO",
       "category": "diplomatic",
@@ -681,6 +949,74 @@
       ]
     },
     {
+      "id": "49b9442d35adaf7c",
+      "title": "Syria’s 218 million fruit trees face challenges from drought and climate change - Arab News PK",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 2,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [
+        "syria"
+      ],
+      "firstSeen": "2026-11-08T09:30:06Z",
+      "lastSeen": "2026-11-08T19:39:16Z",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMivwFBVV95cUxPbnVzbjdaRkJzenhtRmQ5a2w4eS1pdElqY2NvdjBNOTRNTFktRXNfLVNWOEZxUTd1S25FN1dDYldGbUNNMnBRUURZQ0lJSFlpT0p4NkRONmZtOFMyU1RybHRoSFVJRHB5NDE2bERWMFZjRlNoQmlmRFZiRm9pYmhmTDg4SU1nOGpaRm01YklGNm5KV0Zic0N2Z19pWExHY05tQWpVcGgzRGNBa09FR0xtNjVCT3hLeC1vNWd5RWdCRQ?oc=5",
+        "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9ISURrQUxacG94NkdTMkRuS3JQSUVNZ0ViMmFzMFRycmRqbTFVNkNoZ240ZjFqQ0twQm5YOGRhRUs5WVJRWmEtTUlIRlo?oc=5"
+      ],
+      "reports": [
+        {
+          "id": "3119d94f1231",
+          "sourceLabel": "Google News — Climate Security",
+          "sourceName": "Google News — Climate Security",
+          "sourceType": "climate-hazard",
+          "title": "Syria’s 218 million fruit trees face challenges from drought and climate change - Arab News PK",
+          "summary": "Syria’s 218 million fruit trees face challenges from drought and climate change Arab News PK",
+          "summary_snippet": "Syria’s 218 million fruit trees face challenges from drought and climate change Arab News PK",
+          "source": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPbnVzbjdaRkJzenhtRmQ5a2w4eS1pdElqY2NvdjBNOTRNTFktRXNfLVNWOEZxUTd1S25FN1dDYldGbUNNMnBRUURZQ0lJSFlpT0p4NkRONmZtOFMyU1RybHRoSFVJRHB5NDE2bERWMFZjRlNoQmlmRFZiRm9pYmhmTDg4SU1nOGpaRm01YklGNm5KV0Zic0N2Z19pWExHY05tQWpVcGgzRGNBa09FR0xtNjVCT3hLeC1vNWd5RWdCRQ?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPbnVzbjdaRkJzenhtRmQ5a2w4eS1pdElqY2NvdjBNOTRNTFktRXNfLVNWOEZxUTd1S25FN1dDYldGbUNNMnBRUURZQ0lJSFlpT0p4NkRONmZtOFMyU1RybHRoSFVJRHB5NDE2bERWMFZjRlNoQmlmRFZiRm9pYmhmTDg4SU1nOGpaRm01YklGNm5KV0Zic0N2Z19pWExHY05tQWpVcGgzRGNBa09FR0xtNjVCT3hLeC1vNWd5RWdCRQ?oc=5",
+          "time": "2026-11-08T19:39:16Z",
+          "published_date": "2026-11-08T19:39:16Z",
+          "publishedDate": "2026-11-08T19:39:16Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_climate_security",
+            "sourceUrl": "https://news.google.com/rss/search?q=climate+crisis+food+water+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "6945049af902",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9ISURrQUxacG94NkdTMkRuS3JQSUVNZ0ViMmFzMFRycmRqbTFVNkNoZ240ZjFqQ0twQm5YOGRhRUs5WVJRWmEtTUlIRlo?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9ISURrQUxacG94NkdTMkRuS3JQSUVNZ0ViMmFzMFRycmRqbTFVNkNoZ240ZjFqQ0twQm5YOGRhRUs5WVJRWmEtTUlIRlo?oc=5",
+          "sourceType": "climate-hazard",
+          "title": "Syria’s 218 million fruit trees face challenges from drought and climate change - سانا",
+          "summary": "Syria’s 218 million fruit trees face challenges from drought and climate change سانا",
+          "summary_snippet": "Syria’s 218 million fruit trees face challenges from drought and climate change سانا",
+          "source": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9ISURrQUxacG94NkdTMkRuS3JQSUVNZ0ViMmFzMFRycmRqbTFVNkNoZ240ZjFqQ0twQm5YOGRhRUs5WVJRWmEtTUlIRlo?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9ISURrQUxacG94NkdTMkRuS3JQSUVNZ0ViMmFzMFRycmRqbTFVNkNoZ240ZjFqQ0twQm5YOGRhRUs5WVJRWmEtTUlIRlo?oc=5",
+          "time": "2026-11-08T09:30:06Z",
+          "published_date": "2026-11-08T09:30:06Z",
+          "publishedDate": "2026-11-08T09:30:06Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_climate_security",
+            "sourceUrl": "https://news.google.com/rss/search?q=climate+crisis+food+water+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
       "id": "c6586157b3dda7bb",
       "title": "Iconic Saudi tower hit as Yemen’s Houthis target Riyadh - The Australian",
       "category": "general",
@@ -702,8 +1038,8 @@
       "reports": [
         {
           "id": "309c852c6426",
-          "sourceLabel": "Google News — Yemen / Red Sea",
-          "sourceName": "Google News — Yemen / Red Sea",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQQzc3aFJsNTdpd05oUWhsU084cHBqUHotSDNFQ3J6amlEVXpVX1lnTEZFd0w1VFh0UkhQRm1mcDl5Rm5qb0wzTWFqMnZrbFRkQjFfQkpseThuVlUydGkzeFJLbXQ2M0xnUVRldUVjX3dqNlVYOUZsQnJ1bUU5WThFU1psREF6cHpVMjJidGwwRnhBYmtXa2dGVzZHNE54SGJzaVZBelVwOHdNc2pDbTZINDdQZ1RIb1ZUOGtVSGlnamVLN0VWVVpFNzkxQXMwOWR5cGtJ?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQQzc3aFJsNTdpd05oUWhsU084cHBqUHotSDNFQ3J6amlEVXpVX1lnTEZFd0w1VFh0UkhQRm1mcDl5Rm5qb0wzTWFqMnZrbFRkQjFfQkpseThuVlUydGkzeFJLbXQ2M0xnUVRldUVjX3dqNlVYOUZsQnJ1bUU5WThFU1psREF6cHpVMjJidGwwRnhBYmtXa2dGVzZHNE54SGJzaVZBelVwOHdNc2pDbTZINDdQZ1RIb1ZUOGtVSGlnamVLN0VWVVpFNzkxQXMwOWR5cGtJ?oc=5",
           "sourceType": "middle-east-conflict",
           "title": "Iconic Saudi tower hit as Yemen’s Houthis target Riyadh - The Australian",
           "summary": "Iconic Saudi tower hit as Yemen’s Houthis target Riyadh The Australian",
@@ -768,8 +1104,8 @@
       "reports": [
         {
           "id": "8bb28db878e3",
-          "sourceLabel": "Google News — Afghanistan Security",
-          "sourceName": "Google News — Afghanistan Security",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPOTlWMW5rVWVjSUlmeVA5bGtlaXBLd3RuQzFsUGlKZmk4MzRpcnFXREY1OHk4SnNtRy1ja0ZSREQyZ1AzMU5WX3ZZdjB2X0lYRG1MWkg4Mzh0NEI0TThtNE8tSWFmR2tzNDVxanRVZEs2bTVuWV9pRU51NjFyWHFobHUzaTg5clBZMlNIZG5zTVBzTFc2RkE?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPOTlWMW5rVWVjSUlmeVA5bGtlaXBLd3RuQzFsUGlKZmk4MzRpcnFXREY1OHk4SnNtRy1ja0ZSREQyZ1AzMU5WX3ZZdjB2X0lYRG1MWkg4Mzh0NEI0TThtNE8tSWFmR2tzNDVxanRVZEs2bTVuWV9pRU51NjFyWHFobHUzaTg5clBZMlNIZG5zTVBzTFc2RkE?oc=5",
           "sourceType": "south-asia-conflict",
           "title": "Islamic Emirate Rejects Foreign Travel Warnings on Afghanistan - https://www.thetraveler.org/",
           "summary": "Islamic Emirate Rejects Foreign Travel Warnings on Afghanistan https://www.thetraveler.org/",
@@ -805,6 +1141,140 @@
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_afghanistan_security",
+            "sourceUrl": "https://news.google.com/rss/search?q=Afghanistan+Taliban+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b8f2a5468d9bfae3",
+      "title": "Xi Jinping's power consolidation concerns China's innovation capacity - Daily Sun",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 2,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [
+        "china"
+      ],
+      "firstSeen": "2026-11-08T15:56:51Z",
+      "lastSeen": "2026-11-08T15:56:51Z",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMirAFBVV95cUxNc2xKSmVMWV9hUk93YTNOY1JzNUtFWXVsLVFsYU1Hb2g1TXFnSXVwTkc2VkU0Yk9SR2t2Q094OVlfbGNPd05aWjVTWjVtUlhCODlYX2hPNnlUbUY0Nk5QTHZiU0dlX2s1MzhHR2o2Yl9oQXhJOUFiOWN2RkFJVW1idDh0RXBXNEs4Ujc0SGRlUFhEZE1JVHdaRWsyYWp3amF5Nm1mcy1lajkwTmNa?oc=5",
+        "https://news.google.com/rss/articles/CBMiugFBVV95cUxOX3RRcnE1YmFzX1dDcGNTWWwzcUs1U2FEbkQ2ajltY0FSaEFuOVNEbGxoQW5scVJCS3hxak5STkJzQ0xBaWdlMl9aTnA2ejFOYUtTOTEtR2p1NHE1cVR3b2JNajVCdEJSRnNWRWEyQ056aVJxX2Z1ZU9ockhkdW9rTENxMG4tNFo2eGJTQzE1SF9weVdyY1VzbHl3ZjJJUUY5UVNKS1Z0VlNyblBtWGlLOGtXSy1UY19MTkE?oc=5"
+      ],
+      "reports": [
+        {
+          "id": "b6c7502d5499",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNc2xKSmVMWV9hUk93YTNOY1JzNUtFWXVsLVFsYU1Hb2g1TXFnSXVwTkc2VkU0Yk9SR2t2Q094OVlfbGNPd05aWjVTWjVtUlhCODlYX2hPNnlUbUY0Nk5QTHZiU0dlX2s1MzhHR2o2Yl9oQXhJOUFiOWN2RkFJVW1idDh0RXBXNEs4Ujc0SGRlUFhEZE1JVHdaRWsyYWp3amF5Nm1mcy1lajkwTmNa?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNc2xKSmVMWV9hUk93YTNOY1JzNUtFWXVsLVFsYU1Hb2g1TXFnSXVwTkc2VkU0Yk9SR2t2Q094OVlfbGNPd05aWjVTWjVtUlhCODlYX2hPNnlUbUY0Nk5QTHZiU0dlX2s1MzhHR2o2Yl9oQXhJOUFiOWN2RkFJVW1idDh0RXBXNEs4Ujc0SGRlUFhEZE1JVHdaRWsyYWp3amF5Nm1mcy1lajkwTmNa?oc=5",
+          "sourceType": "china-politics",
+          "title": "Xi Jinping's power consolidation concerns China's innovation capacity - Daily Sun",
+          "summary": "Xi Jinping's power consolidation concerns China's innovation capacity Daily Sun",
+          "summary_snippet": "Xi Jinping's power consolidation concerns China's innovation capacity Daily Sun",
+          "source": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNc2xKSmVMWV9hUk93YTNOY1JzNUtFWXVsLVFsYU1Hb2g1TXFnSXVwTkc2VkU0Yk9SR2t2Q094OVlfbGNPd05aWjVTWjVtUlhCODlYX2hPNnlUbUY0Nk5QTHZiU0dlX2s1MzhHR2o2Yl9oQXhJOUFiOWN2RkFJVW1idDh0RXBXNEs4Ujc0SGRlUFhEZE1JVHdaRWsyYWp3amF5Nm1mcy1lajkwTmNa?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNc2xKSmVMWV9hUk93YTNOY1JzNUtFWXVsLVFsYU1Hb2g1TXFnSXVwTkc2VkU0Yk9SR2t2Q094OVlfbGNPd05aWjVTWjVtUlhCODlYX2hPNnlUbUY0Nk5QTHZiU0dlX2s1MzhHR2o2Yl9oQXhJOUFiOWN2RkFJVW1idDh0RXBXNEs4Ujc0SGRlUFhEZE1JVHdaRWsyYWp3amF5Nm1mcy1lajkwTmNa?oc=5",
+          "time": "2026-11-08T15:56:51Z",
+          "published_date": "2026-11-08T15:56:51Z",
+          "publishedDate": "2026-11-08T15:56:51Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "china_politics",
+            "sourceUrl": "https://news.google.com/rss/search?q=China+Xi+CCP+Communist+Party+government+policy+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "cf2d10fc3209",
+          "sourceLabel": "Google News — China Politics / CCP",
+          "sourceName": "Google News — China Politics / CCP",
+          "sourceType": "china-politics",
+          "title": "Xi Jinping's power consolidation concerns China's innovation capacity - www.daily-sun.com",
+          "summary": "Xi Jinping's power consolidation concerns China's innovation capacity www.daily-sun.com",
+          "summary_snippet": "Xi Jinping's power consolidation concerns China's innovation capacity www.daily-sun.com",
+          "source": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOX3RRcnE1YmFzX1dDcGNTWWwzcUs1U2FEbkQ2ajltY0FSaEFuOVNEbGxoQW5scVJCS3hxak5STkJzQ0xBaWdlMl9aTnA2ejFOYUtTOTEtR2p1NHE1cVR3b2JNajVCdEJSRnNWRWEyQ056aVJxX2Z1ZU9ockhkdW9rTENxMG4tNFo2eGJTQzE1SF9weVdyY1VzbHl3ZjJJUUY5UVNKS1Z0VlNyblBtWGlLOGtXSy1UY19MTkE?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOX3RRcnE1YmFzX1dDcGNTWWwzcUs1U2FEbkQ2ajltY0FSaEFuOVNEbGxoQW5scVJCS3hxak5STkJzQ0xBaWdlMl9aTnA2ejFOYUtTOTEtR2p1NHE1cVR3b2JNajVCdEJSRnNWRWEyQ056aVJxX2Z1ZU9ockhkdW9rTENxMG4tNFo2eGJTQzE1SF9weVdyY1VzbHl3ZjJJUUY5UVNKS1Z0VlNyblBtWGlLOGtXSy1UY19MTkE?oc=5",
+          "time": "2026-11-08T15:56:51Z",
+          "published_date": "2026-11-08T15:56:51Z",
+          "publishedDate": "2026-11-08T15:56:51Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "china_politics",
+            "sourceUrl": "https://news.google.com/rss/search?q=China+Xi+CCP+Communist+Party+government+policy+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
+      "id": "93b2bbe8f6013fe8",
+      "title": "National Front of Resistance claims to have killed three Taliban in an operation in Herat - Demócrata",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 2,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "2026-11-08T12:36:26Z",
+      "lastSeen": "2026-11-08T12:36:26Z",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMizAFBVV95cUxNcjBvV09kX1dzd2dQRlJNRExQTklQSVlrOTZMVGVXUjJURXR0VWs4Yk1vZ2l0RG9OTnVPaFV2OElOM3lqdXAwZXpEaFBHNE9GYzg4R1ZWQ25NUF9BZVJnbFZ4N3piQjZXejAtRGRNeDlqWXk1ZFUxUTdmVFhLOGZ3emdjM1hOaGlZbHBLYlFLNzVWbGpzUGMyRDhyZFNqemZrcEtjS1BOeEFkRVZfWjB1cFpyLTJVdjhtSkpTNDZJQ0ZBMlpqcUhVZGN6c2bSAdIBQVVfeXFMTVZJVERNN1NSQnlHLTBQekc1QzJ4T3E3S0p4WUNmSDFkLVBzcEZIU2FMMy00VkxJajhFd0xOZWk0VzVBS2VxRDk5bnhVaUNnMS03RkZtUVgyTUlKQnMzUmNyOWl0c0JWa3YzeHlzQWhycVRrQ2pBTmZRTXAxbGoyU001X21YdUY4VTJScWVhU1hjc3o1cG9Cc2JOV2JiM1lhemlXSkhHQ19QSnhPLTgzdTlKQnQtbUJsTWJmSjVrTnRvU2lkblRTZnJvLVVwYXdVcnBB?oc=5",
+        "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNVklURE03U1JCeUctMFB6RzVDMnhPcTdLSnhZQ2ZIMWQtUHNwRkhTYUwzLTRWTElqOEV3TE5laTRXNUFLZXFEOTlueFVpQ2cxLTdGRm1RWDJNSUpCczNSY3I5aXRzQlZrdjN4eXNBaHJxVGtDakFOZlFNcDFsajJTTTVfbVh1RjhVMlJxZWFTWGNzejVwb0JzYk5XYmIzWWF6aVdKSEdDX1BKeE8tODN1OUpCdC1tQmxNYmZKNWtOdG9TaWRuVFNmcm8tVXBhd1VycEHSAdIBQVVfeXFMTVZJVERNN1NSQnlHLTBQekc1QzJ4T3E3S0p4WUNmSDFkLVBzcEZIU2FMMy00VkxJajhFd0xOZWk0VzVBS2VxRDk5bnhVaUNnMS03RkZtUVgyTUlKQnMzUmNyOWl0c0JWa3YzeHlzQWhycVRrQ2pBTmZRTXAxbGoyU001X21YdUY4VTJScWVhU1hjc3o1cG9Cc2JOV2JiM1lhemlXSkhHQ19QSnhPLTgzdTlKQnQtbUJsTWJmSjVrTnRvU2lkblRTZnJvLVVwYXdVcnBB?oc=5"
+      ],
+      "reports": [
+        {
+          "id": "2176f8ee522a",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNcjBvV09kX1dzd2dQRlJNRExQTklQSVlrOTZMVGVXUjJURXR0VWs4Yk1vZ2l0RG9OTnVPaFV2OElOM3lqdXAwZXpEaFBHNE9GYzg4R1ZWQ25NUF9BZVJnbFZ4N3piQjZXejAtRGRNeDlqWXk1ZFUxUTdmVFhLOGZ3emdjM1hOaGlZbHBLYlFLNzVWbGpzUGMyRDhyZFNqemZrcEtjS1BOeEFkRVZfWjB1cFpyLTJVdjhtSkpTNDZJQ0ZBMlpqcUhVZGN6c2bSAdIBQVVfeXFMTVZJVERNN1NSQnlHLTBQekc1QzJ4T3E3S0p4WUNmSDFkLVBzcEZIU2FMMy00VkxJajhFd0xOZWk0VzVBS2VxRDk5bnhVaUNnMS03RkZtUVgyTUlKQnMzUmNyOWl0c0JWa3YzeHlzQWhycVRrQ2pBTmZRTXAxbGoyU001X21YdUY4VTJScWVhU1hjc3o1cG9Cc2JOV2JiM1lhemlXSkhHQ19QSnhPLTgzdTlKQnQtbUJsTWJmSjVrTnRvU2lkblRTZnJvLVVwYXdVcnBB?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNcjBvV09kX1dzd2dQRlJNRExQTklQSVlrOTZMVGVXUjJURXR0VWs4Yk1vZ2l0RG9OTnVPaFV2OElOM3lqdXAwZXpEaFBHNE9GYzg4R1ZWQ25NUF9BZVJnbFZ4N3piQjZXejAtRGRNeDlqWXk1ZFUxUTdmVFhLOGZ3emdjM1hOaGlZbHBLYlFLNzVWbGpzUGMyRDhyZFNqemZrcEtjS1BOeEFkRVZfWjB1cFpyLTJVdjhtSkpTNDZJQ0ZBMlpqcUhVZGN6c2bSAdIBQVVfeXFMTVZJVERNN1NSQnlHLTBQekc1QzJ4T3E3S0p4WUNmSDFkLVBzcEZIU2FMMy00VkxJajhFd0xOZWk0VzVBS2VxRDk5bnhVaUNnMS03RkZtUVgyTUlKQnMzUmNyOWl0c0JWa3YzeHlzQWhycVRrQ2pBTmZRTXAxbGoyU001X21YdUY4VTJScWVhU1hjc3o1cG9Cc2JOV2JiM1lhemlXSkhHQ19QSnhPLTgzdTlKQnQtbUJsTWJmSjVrTnRvU2lkblRTZnJvLVVwYXdVcnBB?oc=5",
+          "sourceType": "south-asia-conflict",
+          "title": "National Front of Resistance claims to have killed three Taliban in an operation in Herat - Demócrata",
+          "summary": "National Front of Resistance claims to have killed three Taliban in an operation in Herat Demócrata",
+          "summary_snippet": "National Front of Resistance claims to have killed three Taliban in an operation in Herat Demócrata",
+          "source": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNcjBvV09kX1dzd2dQRlJNRExQTklQSVlrOTZMVGVXUjJURXR0VWs4Yk1vZ2l0RG9OTnVPaFV2OElOM3lqdXAwZXpEaFBHNE9GYzg4R1ZWQ25NUF9BZVJnbFZ4N3piQjZXejAtRGRNeDlqWXk1ZFUxUTdmVFhLOGZ3emdjM1hOaGlZbHBLYlFLNzVWbGpzUGMyRDhyZFNqemZrcEtjS1BOeEFkRVZfWjB1cFpyLTJVdjhtSkpTNDZJQ0ZBMlpqcUhVZGN6c2bSAdIBQVVfeXFMTVZJVERNN1NSQnlHLTBQekc1QzJ4T3E3S0p4WUNmSDFkLVBzcEZIU2FMMy00VkxJajhFd0xOZWk0VzVBS2VxRDk5bnhVaUNnMS03RkZtUVgyTUlKQnMzUmNyOWl0c0JWa3YzeHlzQWhycVRrQ2pBTmZRTXAxbGoyU001X21YdUY4VTJScWVhU1hjc3o1cG9Cc2JOV2JiM1lhemlXSkhHQ19QSnhPLTgzdTlKQnQtbUJsTWJmSjVrTnRvU2lkblRTZnJvLVVwYXdVcnBB?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNcjBvV09kX1dzd2dQRlJNRExQTklQSVlrOTZMVGVXUjJURXR0VWs4Yk1vZ2l0RG9OTnVPaFV2OElOM3lqdXAwZXpEaFBHNE9GYzg4R1ZWQ25NUF9BZVJnbFZ4N3piQjZXejAtRGRNeDlqWXk1ZFUxUTdmVFhLOGZ3emdjM1hOaGlZbHBLYlFLNzVWbGpzUGMyRDhyZFNqemZrcEtjS1BOeEFkRVZfWjB1cFpyLTJVdjhtSkpTNDZJQ0ZBMlpqcUhVZGN6c2bSAdIBQVVfeXFMTVZJVERNN1NSQnlHLTBQekc1QzJ4T3E3S0p4WUNmSDFkLVBzcEZIU2FMMy00VkxJajhFd0xOZWk0VzVBS2VxRDk5bnhVaUNnMS03RkZtUVgyTUlKQnMzUmNyOWl0c0JWa3YzeHlzQWhycVRrQ2pBTmZRTXAxbGoyU001X21YdUY4VTJScWVhU1hjc3o1cG9Cc2JOV2JiM1lhemlXSkhHQ19QSnhPLTgzdTlKQnQtbUJsTWJmSjVrTnRvU2lkblRTZnJvLVVwYXdVcnBB?oc=5",
+          "time": "2026-11-08T12:36:26Z",
+          "published_date": "2026-11-08T12:36:26Z",
+          "publishedDate": "2026-11-08T12:36:26Z",
+          "tag": "Breaking",
+          "confidence": "DEVELOPING",
+          "breaking": true,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_afghanistan_security",
+            "sourceUrl": "https://news.google.com/rss/search?q=Afghanistan+Taliban+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "ba1be98f6ff3",
+          "sourceLabel": "Google News — Afghanistan Security",
+          "sourceName": "Google News — Afghanistan Security",
+          "sourceType": "south-asia-conflict",
+          "title": "National Front of Resistance claims to have killed three Taliban in an operation in Herat - Demócrata",
+          "summary": "National Front of Resistance claims to have killed three Taliban in an operation in Herat Demócrata",
+          "summary_snippet": "National Front of Resistance claims to have killed three Taliban in an operation in Herat Demócrata",
+          "source": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNVklURE03U1JCeUctMFB6RzVDMnhPcTdLSnhZQ2ZIMWQtUHNwRkhTYUwzLTRWTElqOEV3TE5laTRXNUFLZXFEOTlueFVpQ2cxLTdGRm1RWDJNSUpCczNSY3I5aXRzQlZrdjN4eXNBaHJxVGtDakFOZlFNcDFsajJTTTVfbVh1RjhVMlJxZWFTWGNzejVwb0JzYk5XYmIzWWF6aVdKSEdDX1BKeE8tODN1OUpCdC1tQmxNYmZKNWtOdG9TaWRuVFNmcm8tVXBhd1VycEHSAdIBQVVfeXFMTVZJVERNN1NSQnlHLTBQekc1QzJ4T3E3S0p4WUNmSDFkLVBzcEZIU2FMMy00VkxJajhFd0xOZWk0VzVBS2VxRDk5bnhVaUNnMS03RkZtUVgyTUlKQnMzUmNyOWl0c0JWa3YzeHlzQWhycVRrQ2pBTmZRTXAxbGoyU001X21YdUY4VTJScWVhU1hjc3o1cG9Cc2JOV2JiM1lhemlXSkhHQ19QSnhPLTgzdTlKQnQtbUJsTWJmSjVrTnRvU2lkblRTZnJvLVVwYXdVcnBB?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNVklURE03U1JCeUctMFB6RzVDMnhPcTdLSnhZQ2ZIMWQtUHNwRkhTYUwzLTRWTElqOEV3TE5laTRXNUFLZXFEOTlueFVpQ2cxLTdGRm1RWDJNSUpCczNSY3I5aXRzQlZrdjN4eXNBaHJxVGtDakFOZlFNcDFsajJTTTVfbVh1RjhVMlJxZWFTWGNzejVwb0JzYk5XYmIzWWF6aVdKSEdDX1BKeE8tODN1OUpCdC1tQmxNYmZKNWtOdG9TaWRuVFNmcm8tVXBhd1VycEHSAdIBQVVfeXFMTVZJVERNN1NSQnlHLTBQekc1QzJ4T3E3S0p4WUNmSDFkLVBzcEZIU2FMMy00VkxJajhFd0xOZWk0VzVBS2VxRDk5bnhVaUNnMS03RkZtUVgyTUlKQnMzUmNyOWl0c0JWa3YzeHlzQWhycVRrQ2pBTmZRTXAxbGoyU001X21YdUY4VTJScWVhU1hjc3o1cG9Cc2JOV2JiM1lhemlXSkhHQ19QSnhPLTgzdTlKQnQtbUJsTWJmSjVrTnRvU2lkblRTZnJvLVVwYXdVcnBB?oc=5",
+          "time": "2026-11-08T12:36:26Z",
+          "published_date": "2026-11-08T12:36:26Z",
+          "publishedDate": "2026-11-08T12:36:26Z",
+          "tag": "Breaking",
+          "confidence": "DEVELOPING",
+          "breaking": true,
           "liveDatabase": true,
           "credit": {
             "sourceId": "google_news_afghanistan_security",
@@ -857,8 +1327,8 @@
         },
         {
           "id": "734ae3b3c435",
-          "sourceLabel": "Google News — Iran Israel",
-          "sourceName": "Google News — Iran Israel",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPWTNVNEdIT2szMHp0OXFQQ3ltYXZTZzhKTHVZanJXMC1YaFVPWHhEOG95UGE2QVdnY2tERkYxN19XZkgtaWJiRjNJSnl1eG5jSjNBbTMzbDB6ZG0zekVFYUh3QlVqMDlnLWRQb0p2d3pNeXFSZzhsSlQ3VVFlbXUyWjFLTHFiemxtMVpfaXQ2dTJXNTBwbkZIbnNlV0NaU0NTU3l2ZWlaRmlmSWM1UlhBWFgxb1lZdXBzeDJyWG1QTkJtSHFRSmRaYlNn?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPWTNVNEdIT2szMHp0OXFQQ3ltYXZTZzhKTHVZanJXMC1YaFVPWHhEOG95UGE2QVdnY2tERkYxN19XZkgtaWJiRjNJSnl1eG5jSjNBbTMzbDB6ZG0zekVFYUh3QlVqMDlnLWRQb0p2d3pNeXFSZzhsSlQ3VVFlbXUyWjFLTHFiemxtMVpfaXQ2dTJXNTBwbkZIbnNlV0NaU0NTU3l2ZWlaRmlmSWM1UlhBWFgxb1lZdXBzeDJyWG1QTkJtSHFRSmRaYlNn?oc=5",
           "sourceType": "middle-east-conflict",
           "title": "Time runs out for Trump as four warring nations count down to coming escalation - Bankingnews",
           "summary": "Time runs out for Trump as four warring nations count down to coming escalation Bankingnews",
@@ -881,76 +1351,77 @@
       ]
     },
     {
-      "id": "7fcffba546bc5089",
-      "title": "Floods in Gaza leave tens of thousands without shelter",
+      "id": "effab34f4cfffda7",
+      "title": "Somalia foreign minister attends farewell for US acting ambassador - Shabelle Media Network",
       "category": "general",
       "confidence": "low",
       "reportCount": 2,
       "sourceCount": 1,
       "sources": [
-        "aljazeera.com"
+        "news.google.com"
       ],
       "anchors": [
-        "gaza"
+        "mali",
+        "somalia"
       ],
-      "firstSeen": "2026-11-08T06:55:24Z",
-      "lastSeen": "2026-11-08T09:28:52Z",
+      "firstSeen": "2026-11-08T11:00:10Z",
+      "lastSeen": "2026-11-08T11:16:59Z",
       "urls": [
-        "https://www.aljazeera.com/news/2026/11/8/floods-in-gaza-leave-tens-of-thousands-without-shelter?traffic_source=rss",
-        "https://www.aljazeera.com/gallery/2026/11/8/photos-heavy-rains-leave-tens-of-thousands-without-shelter-in-gaza?traffic_source=rss"
+        "https://news.google.com/rss/articles/CBMimAFBVV95cUxORDRBZXItR240OHQ2XzBkZFFUQXBrdU1LY1BOaWpLQmxTWDZQeVNFRDNULWY2TlBTdVlzZVFiMldoWWJ6TFJtMlpObUV3NjBidExlUVJGRk1mYXhkZU9xaTR2cTQwUUlDdnVUc2VXNUhYYlNQeFR1OG8zajZoTUtTSkoyWXdFbjMwQ0kxTkpaWnZpOWtoTUh1aQ?oc=5",
+        "https://news.google.com/rss/articles/CBMikAFBVV95cUxNMmZUcG9tR0FtanNYQllIMWlyV3prVVFNTXBkRlhMTEtCSlJRYVhONGt6RUdHR1BZWUhPdzNxRDlnVTY5d0JwUWJVN2FKT01acFdsTHRSYTIwLUVlREVQMHdvSW5fT1RRdzZEalpwUU9wM2tJdWI1Rk9oaWE1eVFOOVdaWGJRblYzSlF4ZFoyLW8?oc=5"
       ],
       "reports": [
         {
-          "id": "e792cabafcd5",
-          "sourceLabel": "https://www.aljazeera.com/news/2026/11/8/floods-in-gaza-leave-tens-of-thousands-without-shelter?traffic_source=rss",
-          "sourceName": "https://www.aljazeera.com/news/2026/11/8/floods-in-gaza-leave-tens-of-thousands-without-shelter?traffic_source=rss",
-          "sourceType": "international",
-          "title": "Floods in Gaza leave tens of thousands without shelter",
-          "summary": "Civil Defence reports over 1,500 emergency calls as thousands of tents and shelters destroyed after heavy rains.",
-          "summary_snippet": "Civil Defence reports over 1,500 emergency calls as thousands of tents and shelters destroyed after heavy rains.",
-          "source": "https://www.aljazeera.com/news/2026/11/8/floods-in-gaza-leave-tens-of-thousands-without-shelter?traffic_source=rss",
-          "url": "https://www.aljazeera.com/news/2026/11/8/floods-in-gaza-leave-tens-of-thousands-without-shelter?traffic_source=rss",
-          "time": "2026-11-08T09:28:52Z",
-          "published_date": "2026-11-08T09:28:52Z",
-          "publishedDate": "2026-11-08T09:28:52Z",
+          "id": "ab632db5b6f1",
+          "sourceLabel": "Google News — Somalia Security",
+          "sourceName": "Google News — Somalia Security",
+          "sourceType": "africa-conflict",
+          "title": "Somalia foreign minister attends farewell for US acting ambassador - Shabelle Media Network",
+          "summary": "Somalia foreign minister attends farewell for US acting ambassador Shabelle Media Network",
+          "summary_snippet": "Somalia foreign minister attends farewell for US acting ambassador Shabelle Media Network",
+          "source": "https://news.google.com/rss/articles/CBMimAFBVV95cUxORDRBZXItR240OHQ2XzBkZFFUQXBrdU1LY1BOaWpLQmxTWDZQeVNFRDNULWY2TlBTdVlzZVFiMldoWWJ6TFJtMlpObUV3NjBidExlUVJGRk1mYXhkZU9xaTR2cTQwUUlDdnVUc2VXNUhYYlNQeFR1OG8zajZoTUtTSkoyWXdFbjMwQ0kxTkpaWnZpOWtoTUh1aQ?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxORDRBZXItR240OHQ2XzBkZFFUQXBrdU1LY1BOaWpLQmxTWDZQeVNFRDNULWY2TlBTdVlzZVFiMldoWWJ6TFJtMlpObUV3NjBidExlUVJGRk1mYXhkZU9xaTR2cTQwUUlDdnVUc2VXNUhYYlNQeFR1OG8zajZoTUtTSkoyWXdFbjMwQ0kxTkpaWnZpOWtoTUh1aQ?oc=5",
+          "time": "2026-11-08T11:16:59Z",
+          "published_date": "2026-11-08T11:16:59Z",
+          "publishedDate": "2026-11-08T11:16:59Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "al_jazeera",
-            "sourceUrl": "https://www.aljazeera.com/xml/rss/all.xml",
+            "sourceId": "google_news_somalia_security",
+            "sourceUrl": "https://news.google.com/rss/search?q=Somalia+al+Shabaab+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
         },
         {
-          "id": "3080e2bfc14e",
-          "sourceLabel": "https://www.aljazeera.com/gallery/2026/11/8/photos-heavy-rains-leave-tens-of-thousands-without-shelter-in-gaza?traffic_source=rss",
-          "sourceName": "https://www.aljazeera.com/gallery/2026/11/8/photos-heavy-rains-leave-tens-of-thousands-without-shelter-in-gaza?traffic_source=rss",
-          "sourceType": "international",
-          "title": "Photos: Heavy rains leave tens of thousands without shelter in Gaza",
-          "summary": "Heavy rain floods tents housing displaced Palestinians in Gaza as Israeli restrictions on aid hamper response.",
-          "summary_snippet": "Heavy rain floods tents housing displaced Palestinians in Gaza as Israeli restrictions on aid hamper response.",
-          "source": "https://www.aljazeera.com/gallery/2026/11/8/photos-heavy-rains-leave-tens-of-thousands-without-shelter-in-gaza?traffic_source=rss",
-          "url": "https://www.aljazeera.com/gallery/2026/11/8/photos-heavy-rains-leave-tens-of-thousands-without-shelter-in-gaza?traffic_source=rss",
-          "time": "2026-11-08T06:55:24Z",
-          "published_date": "2026-11-08T06:55:24Z",
-          "publishedDate": "2026-11-08T06:55:24Z",
+          "id": "3d49fe096238",
+          "sourceLabel": "Google News — Somalia Security",
+          "sourceName": "Google News — Somalia Security",
+          "sourceType": "africa-conflict",
+          "title": "Somalia detains two soldiers over U.S. flag desecration video - Shabelle Media Network",
+          "summary": "Somalia detains two soldiers over U.S. flag desecration video Shabelle Media Network",
+          "summary_snippet": "Somalia detains two soldiers over U.S. flag desecration video Shabelle Media Network",
+          "source": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNMmZUcG9tR0FtanNYQllIMWlyV3prVVFNTXBkRlhMTEtCSlJRYVhONGt6RUdHR1BZWUhPdzNxRDlnVTY5d0JwUWJVN2FKT01acFdsTHRSYTIwLUVlREVQMHdvSW5fT1RRdzZEalpwUU9wM2tJdWI1Rk9oaWE1eVFOOVdaWGJRblYzSlF4ZFoyLW8?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNMmZUcG9tR0FtanNYQllIMWlyV3prVVFNTXBkRlhMTEtCSlJRYVhONGt6RUdHR1BZWUhPdzNxRDlnVTY5d0JwUWJVN2FKT01acFdsTHRSYTIwLUVlREVQMHdvSW5fT1RRdzZEalpwUU9wM2tJdWI1Rk9oaWE1eVFOOVdaWGJRblYzSlF4ZFoyLW8?oc=5",
+          "time": "2026-11-08T11:00:10Z",
+          "published_date": "2026-11-08T11:00:10Z",
+          "publishedDate": "2026-11-08T11:00:10Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "al_jazeera",
-            "sourceUrl": "https://www.aljazeera.com/xml/rss/all.xml",
+            "sourceId": "google_news_somalia_security",
+            "sourceUrl": "https://news.google.com/rss/search?q=Somalia+al+Shabaab+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
         }
       ]
     },
     {
-      "id": "084e9b9ae735f418",
-      "title": "Power Cut at Herat Terminal: Where Did the Money Collected From the People Go? - 8AM Media",
+      "id": "2508bf17e70521e6",
+      "title": "Powerful El Niño of 2026-27: What It Means for Afghanistan’s Climate Future - 8AM Media",
       "category": "general",
       "confidence": "low",
       "reportCount": 2,
@@ -959,56 +1430,56 @@
         "news.google.com"
       ],
       "anchors": [],
-      "firstSeen": "2026-11-08T06:08:50Z",
-      "lastSeen": "2026-11-08T06:08:50Z",
+      "firstSeen": "2026-11-08T10:22:31Z",
+      "lastSeen": "2026-11-08T10:22:31Z",
       "urls": [
-        "https://news.google.com/rss/articles/CBMibkFVX3lxTE5QbjdjT3BqRFhURkc0R3QxQW5YX1dXRFBaMWhITkNlS1pwRVJmenR0WURjN1ZZR25tVmNiUUw2NGZKeEN0RWVsQVcyQ2h5cDVqN0V1QTVMSnZpMEdGR0NCZnZNSGZMUl9wNHFRRUlB?oc=5",
-        "https://news.google.com/rss/articles/CBMibEFVX3lxTE8wYVRqZ29odVc1Mzh1ajlLR3UzLVJycHZ0UVdVdG9KN293QTEzUkpOcXRRbEdncDBlV0c4MVdOMDNwUGtKSjVjNVV5NFdXV3paMTY1QVZwMWlUN3BUODRtUldLM1ExZlRYdWlMdw?oc=5"
+        "https://news.google.com/rss/articles/CBMickFVX3lxTE9tZ3diODZ4QnFrb2NhM19BeG5JYnZTdWhJTkwwaHgzVzFhT3NyMlZIaXl2bVQtN3p4Vjl2cktodmt6TDlvR0FoODc5SXgzbjcxRXgwaTFiYnhIZXJDSEtoZEF6aEVnX015UDZyeTBUZDVTdw?oc=5",
+        "https://news.google.com/rss/articles/CBMiREFVX3lxTE8zR1JfNjZVSE9HQ1lqcTB3SXBBSkc5UFZkUVloT3hCakZKdG13UVZoem5yZmZhejBmNXRSSFcteWJ6bU1r?oc=5"
       ],
       "reports": [
         {
-          "id": "c819ee8eba95",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5QbjdjT3BqRFhURkc0R3QxQW5YX1dXRFBaMWhITkNlS1pwRVJmenR0WURjN1ZZR25tVmNiUUw2NGZKeEN0RWVsQVcyQ2h5cDVqN0V1QTVMSnZpMEdGR0NCZnZNSGZMUl9wNHFRRUlB?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5QbjdjT3BqRFhURkc0R3QxQW5YX1dXRFBaMWhITkNlS1pwRVJmenR0WURjN1ZZR25tVmNiUUw2NGZKeEN0RWVsQVcyQ2h5cDVqN0V1QTVMSnZpMEdGR0NCZnZNSGZMUl9wNHFRRUlB?oc=5",
-          "sourceType": "south-asia-conflict",
-          "title": "Power Cut at Herat Terminal: Where Did the Money Collected From the People Go? - 8AM Media",
-          "summary": "Power Cut at Herat Terminal: Where Did the Money Collected From the People Go? 8AM Media",
-          "summary_snippet": "Power Cut at Herat Terminal: Where Did the Money Collected From the People Go? 8AM Media",
-          "source": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5QbjdjT3BqRFhURkc0R3QxQW5YX1dXRFBaMWhITkNlS1pwRVJmenR0WURjN1ZZR25tVmNiUUw2NGZKeEN0RWVsQVcyQ2h5cDVqN0V1QTVMSnZpMEdGR0NCZnZNSGZMUl9wNHFRRUlB?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5QbjdjT3BqRFhURkc0R3QxQW5YX1dXRFBaMWhITkNlS1pwRVJmenR0WURjN1ZZR25tVmNiUUw2NGZKeEN0RWVsQVcyQ2h5cDVqN0V1QTVMSnZpMEdGR0NCZnZNSGZMUl9wNHFRRUlB?oc=5",
-          "time": "2026-11-08T06:08:50Z",
-          "published_date": "2026-11-08T06:08:50Z",
-          "publishedDate": "2026-11-08T06:08:50Z",
+          "id": "da3fcafd6f2f",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMickFVX3lxTE9tZ3diODZ4QnFrb2NhM19BeG5JYnZTdWhJTkwwaHgzVzFhT3NyMlZIaXl2bVQtN3p4Vjl2cktodmt6TDlvR0FoODc5SXgzbjcxRXgwaTFiYnhIZXJDSEtoZEF6aEVnX015UDZyeTBUZDVTdw?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMickFVX3lxTE9tZ3diODZ4QnFrb2NhM19BeG5JYnZTdWhJTkwwaHgzVzFhT3NyMlZIaXl2bVQtN3p4Vjl2cktodmt6TDlvR0FoODc5SXgzbjcxRXgwaTFiYnhIZXJDSEtoZEF6aEVnX015UDZyeTBUZDVTdw?oc=5",
+          "sourceType": "climate-hazard",
+          "title": "Powerful El Niño of 2026-27: What It Means for Afghanistan’s Climate Future - 8AM Media",
+          "summary": "Powerful El Niño of 2026-27: What It Means for Afghanistan’s Climate Future 8AM Media",
+          "summary_snippet": "Powerful El Niño of 2026-27: What It Means for Afghanistan’s Climate Future 8AM Media",
+          "source": "https://news.google.com/rss/articles/CBMickFVX3lxTE9tZ3diODZ4QnFrb2NhM19BeG5JYnZTdWhJTkwwaHgzVzFhT3NyMlZIaXl2bVQtN3p4Vjl2cktodmt6TDlvR0FoODc5SXgzbjcxRXgwaTFiYnhIZXJDSEtoZEF6aEVnX015UDZyeTBUZDVTdw?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9tZ3diODZ4QnFrb2NhM19BeG5JYnZTdWhJTkwwaHgzVzFhT3NyMlZIaXl2bVQtN3p4Vjl2cktodmt6TDlvR0FoODc5SXgzbjcxRXgwaTFiYnhIZXJDSEtoZEF6aEVnX015UDZyeTBUZDVTdw?oc=5",
+          "time": "2026-11-08T10:22:31Z",
+          "published_date": "2026-11-08T10:22:31Z",
+          "publishedDate": "2026-11-08T10:22:31Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "google_news_afghanistan_security",
-            "sourceUrl": "https://news.google.com/rss/search?q=Afghanistan+Taliban+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "sourceId": "google_news_climate_security",
+            "sourceUrl": "https://news.google.com/rss/search?q=climate+crisis+food+water+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
         },
         {
-          "id": "b6dee10743d9",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8wYVRqZ29odVc1Mzh1ajlLR3UzLVJycHZ0UVdVdG9KN293QTEzUkpOcXRRbEdncDBlV0c4MVdOMDNwUGtKSjVjNVV5NFdXV3paMTY1QVZwMWlUN3BUODRtUldLM1ExZlRYdWlMdw?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8wYVRqZ29odVc1Mzh1ajlLR3UzLVJycHZ0UVdVdG9KN293QTEzUkpOcXRRbEdncDBlV0c4MVdOMDNwUGtKSjVjNVV5NFdXV3paMTY1QVZwMWlUN3BUODRtUldLM1ExZlRYdWlMdw?oc=5",
-          "sourceType": "south-asia-conflict",
-          "title": "Power Cut at Herat Terminal: Where Did the Money Collected From the People Go? - 8AM Media",
-          "summary": "Power Cut at Herat Terminal: Where Did the Money Collected From the People Go? 8AM Media",
-          "summary_snippet": "Power Cut at Herat Terminal: Where Did the Money Collected From the People Go? 8AM Media",
-          "source": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8wYVRqZ29odVc1Mzh1ajlLR3UzLVJycHZ0UVdVdG9KN293QTEzUkpOcXRRbEdncDBlV0c4MVdOMDNwUGtKSjVjNVV5NFdXV3paMTY1QVZwMWlUN3BUODRtUldLM1ExZlRYdWlMdw?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8wYVRqZ29odVc1Mzh1ajlLR3UzLVJycHZ0UVdVdG9KN293QTEzUkpOcXRRbEdncDBlV0c4MVdOMDNwUGtKSjVjNVV5NFdXV3paMTY1QVZwMWlUN3BUODRtUldLM1ExZlRYdWlMdw?oc=5",
-          "time": "2026-11-08T06:08:50Z",
-          "published_date": "2026-11-08T06:08:50Z",
-          "publishedDate": "2026-11-08T06:08:50Z",
+          "id": "1989ffb633cb",
+          "sourceLabel": "Google News — Climate Security",
+          "sourceName": "Google News — Climate Security",
+          "sourceType": "climate-hazard",
+          "title": "Powerful El Niño of 2026-27: What It Means for Afghanistan’s Climate Future - 8AM Media",
+          "summary": "Powerful El Niño of 2026-27: What It Means for Afghanistan’s Climate Future 8AM Media",
+          "summary_snippet": "Powerful El Niño of 2026-27: What It Means for Afghanistan’s Climate Future 8AM Media",
+          "source": "https://news.google.com/rss/articles/CBMiREFVX3lxTE8zR1JfNjZVSE9HQ1lqcTB3SXBBSkc5UFZkUVloT3hCakZKdG13UVZoem5yZmZhejBmNXRSSFcteWJ6bU1r?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE8zR1JfNjZVSE9HQ1lqcTB3SXBBSkc5UFZkUVloT3hCakZKdG13UVZoem5yZmZhejBmNXRSSFcteWJ6bU1r?oc=5",
+          "time": "2026-11-08T10:22:31Z",
+          "published_date": "2026-11-08T10:22:31Z",
+          "publishedDate": "2026-11-08T10:22:31Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "google_news_afghanistan_security",
-            "sourceUrl": "https://news.google.com/rss/search?q=Afghanistan+Taliban+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "sourceId": "google_news_climate_security",
+            "sourceUrl": "https://news.google.com/rss/search?q=climate+crisis+food+water+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
         }
@@ -1631,6 +2102,40 @@
       ]
     },
     {
+      "id": "ef8c7d9a5f4a3f46",
+      "title": "Swedish Gripens patrol Polish skies with multinational NATO tanker support - Aviation24.be",
+      "category": "diplomatic",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [
+        "nato"
+      ],
+      "firstSeen": "Wed, 04 Nov 2026 20:09:50 GMT",
+      "lastSeen": "Wed, 04 Nov 2026 20:09:50 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMivAFBVV95cUxNQUplQnN1VVpqR2hLVVpnMFRFR3pfZmdpRHRrSjUwMnRxV1gtenEzS2xpRTJVc1BOM0hsRno3cWpJN0c3enNEVl9rdUVGRlBJTjNTTmlpWnM4bFllS3Zrd0pJd0FRMHVsY2NoNkRlRjFHVzdkNzB4WERJbHNJMUJoeTd5dFFTbnIxMEZzQ2tuNUNOYlU4clE2VDFsckJvUk51TzJKQTNDMHdsN0Y0bUNEeHQyUXZ2U0wwMWViWA?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "Swedish Gripens patrol Polish skies with multinational NATO tanker support - Aviation24.be",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNQUplQnN1VVpqR2hLVVpnMFRFR3pfZmdpRHRrSjUwMnRxV1gtenEzS2xpRTJVc1BOM0hsRno3cWpJN0c3enNEVl9rdUVGRlBJTjNTTmlpWnM4bFllS3Zrd0pJd0FRMHVsY2NoNkRlRjFHVzdkNzB4WERJbHNJMUJoeTd5dFFTbnIxMEZzQ2tuNUNOYlU4clE2VDFsckJvUk51TzJKQTNDMHdsN0Y0bUNEeHQyUXZ2U0wwMWViWA?oc=5",
+          "published_date": "Wed, 04 Nov 2026 20:09:50 GMT",
+          "time": "Wed, 04 Nov 2026 20:09:50 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Aviation24.be",
+          "summary": "Fallback discovery via Google News RSS; publisher: Aviation24.be",
+          "source": "Aviation24.be",
+          "sourceLabel": "Aviation24.be",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NATO",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
       "id": "f77d10b128dbc99a",
       "title": "Russian Drones Sank Civilian Ship on NATO’s Black Sea Doorstep, Official Says - Newsweek",
       "category": "diplomatic",
@@ -2026,38 +2531,6 @@
       ]
     },
     {
-      "id": "c8a082bc2e653760",
-      "title": "NASA Names Astronaut Christina Koch Acting Deputy Chief Engineer - NASA (.gov)",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Tue, 13 Oct 2026 07:00:00 GMT",
-      "lastSeen": "Tue, 13 Oct 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMioAFBVV95cUxNWG1MR3FSRU5xV2txX1R0bUZiUU5hMzRnMDRWMkpBVDQ0YTd2cW4wa0dpUUhWMHFyZXB2Ny1jLWE2SjJiVjVia2gwYTRXeWFzQmt1VDZiVXZ4WUJ5X3lWZVYyWnV2d1NibVdZTlI0ZVdFbU5mYzhpenVBdzRiY1lWNzhUckNISFlFM3NsTkVHNWFFUWdSZ0l1V19PWFhxSnZy?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "NASA Names Astronaut Christina Koch Acting Deputy Chief Engineer - NASA (.gov)",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNWG1MR3FSRU5xV2txX1R0bUZiUU5hMzRnMDRWMkpBVDQ0YTd2cW4wa0dpUUhWMHFyZXB2Ny1jLWE2SjJiVjVia2gwYTRXeWFzQmt1VDZiVXZ4WUJ5X3lWZVYyWnV2d1NibVdZTlI0ZVdFbU5mYzhpenVBdzRiY1lWNzhUckNISFlFM3NsTkVHNWFFUWdSZ0l1V19PWFhxSnZy?oc=5",
-          "published_date": "Tue, 13 Oct 2026 07:00:00 GMT",
-          "time": "Tue, 13 Oct 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
-          "summary": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
-          "source": "NASA (.gov)",
-          "sourceLabel": "NASA (.gov)",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NASA",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
       "id": "3d71b3f0525cdd30",
       "title": "Katie Zacharia Delivers Powerful Inaugural Briefing as the 37th White House Press Secretary - The White House (.gov)",
       "category": "general",
@@ -2218,6 +2691,38 @@
           "sourceLabel": "Reuters",
           "sourceType": "fallback-news",
           "fallbackFor": "X @NATO",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "f52c0a2d4cd6656b",
+      "title": "Second World Summit for Social Development - Division for Inclusive Social Development",
+      "category": "diplomatic",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Tue, 01 Apr 2025 11:31:17 GMT",
+      "lastSeen": "Tue, 01 Apr 2025 11:31:17 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiV0FVX3lxTE4xUW5CZVpsdHlrVjQxZVFWU3MtWnRKeHN0cS1TTUpwdkVVLVpXZkZrUnV4a3ptSi0yRWNub1Q4M21kTjNYa2RVWFhxVVBpM2RHQXd5b1ZKVQ?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "Second World Summit for Social Development - Division for Inclusive Social Development",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE4xUW5CZVpsdHlrVjQxZVFWU3MtWnRKeHN0cS1TTUpwdkVVLVpXZkZrUnV4a3ptSi0yRWNub1Q4M21kTjNYa2RVWFhxVVBpM2RHQXd5b1ZKVQ?oc=5",
+          "published_date": "Tue, 01 Apr 2025 11:31:17 GMT",
+          "time": "Tue, 01 Apr 2025 11:31:17 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Division for Inclusive Social Development",
+          "summary": "Fallback discovery via Google News RSS; publisher: Division for Inclusive Social Development",
+          "source": "Division for Inclusive Social Development",
+          "sourceLabel": "Division for Inclusive Social Development",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @UN",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -2410,40 +2915,6 @@
           "sourceLabel": "NBC News",
           "sourceType": "fallback-news",
           "fallbackFor": "X @POTUS",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "adfd49aa53fa97a7",
-      "title": "Make America Healthy Again - The White House (.gov)",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [
-        "america"
-      ],
-      "firstSeen": "Thu, 22 Jan 2026 14:19:21 GMT",
-      "lastSeen": "Thu, 22 Jan 2026 14:19:21 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5ESlFkdjZURnV4YTZyT1RYTXRiZ2RrOXRnR0J3RDl2cVlmdjFHcVljemxmOGJSclFNdnVFTXFuaDUzVkpORlcwRmdEMWIyWWs3cURwMUZ3?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Make America Healthy Again - The White House (.gov)",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5ESlFkdjZURnV4YTZyT1RYTXRiZ2RrOXRnR0J3RDl2cVlmdjFHcVljemxmOGJSclFNdnVFTXFuaDUzVkpORlcwRmdEMWIyWWs3cURwMUZ3?oc=5",
-          "published_date": "Thu, 22 Jan 2026 14:19:21 GMT",
-          "time": "Thu, 22 Jan 2026 14:19:21 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: The White House (.gov)",
-          "summary": "Fallback discovery via Google News RSS; publisher: The White House (.gov)",
-          "source": "The White House (.gov)",
-          "sourceLabel": "The White House (.gov)",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @WhiteHouse",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -2645,38 +3116,6 @@
       ]
     },
     {
-      "id": "e0c1060053226e58",
-      "title": "NASA unveils mysterious X-70 experimental aircraft using AI-generated image - Ars Technica",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Thu, 05 Nov 2026 22:49:03 GMT",
-      "lastSeen": "Thu, 05 Nov 2026 22:49:03 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMinAFBVV95cUxPeXhMTTBEYkhTdzU2WHpUZ2s1WmhOOHYtWHBtX3BMcURSMHR1VVFud25NZlZNYUJ2V3VZdzAwMF9iLW9JaW1ZM2hJQTV4WklwM3VZT2pXUXpqQmhVbFFxWTc0QTBrN3pfVnJ5dEI5bl9TNUpuRHJQN1AtWGR5b04tVW5wdXp4MzY4TVV6NEhxOG43SmFEOXh4S3JLOHo?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "NASA unveils mysterious X-70 experimental aircraft using AI-generated image - Ars Technica",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPeXhMTTBEYkhTdzU2WHpUZ2s1WmhOOHYtWHBtX3BMcURSMHR1VVFud25NZlZNYUJ2V3VZdzAwMF9iLW9JaW1ZM2hJQTV4WklwM3VZT2pXUXpqQmhVbFFxWTc0QTBrN3pfVnJ5dEI5bl9TNUpuRHJQN1AtWGR5b04tVW5wdXp4MzY4TVV6NEhxOG43SmFEOXh4S3JLOHo?oc=5",
-          "published_date": "Thu, 05 Nov 2026 22:49:03 GMT",
-          "time": "Thu, 05 Nov 2026 22:49:03 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Ars Technica",
-          "summary": "Fallback discovery via Google News RSS; publisher: Ars Technica",
-          "source": "Ars Technica",
-          "sourceLabel": "Ars Technica",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NASA",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
       "id": "972c03dfd1e7001e",
       "title": "Trump makes the Oval Office a national monument, but future presidents can still redecorate - PBS",
       "category": "general",
@@ -2805,38 +3244,6 @@
       ]
     },
     {
-      "id": "ef980efe9b05808b",
-      "title": "Democrats gain influence over trade agenda, but tariff repeals to hit Trump veto wall - Reuters",
-      "category": "economic",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Thu, 05 Nov 2026 10:17:51 GMT",
-      "lastSeen": "Thu, 05 Nov 2026 10:17:51 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMizgFBVV95cUxQTzNLUjBwZFJZSVE0U0NxbTVYbVotU0R1ak1zb2g1LTR2a0MtYkxVcGZFOFhZNkcza1hhTlpobGN4bU1hVmZhUGs5UFk5TC1kYWdXS181NHdZZlJGdEJMc0NNcHl5dndpaHo2SXpJcUxjeHkwVkZQTkhBX2xVVlg0eWNkZXRkcGx6NEpRQlFiLWtXdElVcllTWHhGZWxvUEREWXEzM2RocjFjbXBIbm1wOVhUSkEzOGFCb3ZMZ21WdElEU3l3em15cGZtZkdUQQ?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Democrats gain influence over trade agenda, but tariff repeals to hit Trump veto wall - Reuters",
-          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQTzNLUjBwZFJZSVE0U0NxbTVYbVotU0R1ak1zb2g1LTR2a0MtYkxVcGZFOFhZNkcza1hhTlpobGN4bU1hVmZhUGs5UFk5TC1kYWdXS181NHdZZlJGdEJMc0NNcHl5dndpaHo2SXpJcUxjeHkwVkZQTkhBX2xVVlg0eWNkZXRkcGx6NEpRQlFiLWtXdElVcllTWHhGZWxvUEREWXEzM2RocjFjbXBIbm1wOVhUSkEzOGFCb3ZMZ21WdElEU3l3em15cGZtZkdUQQ?oc=5",
-          "published_date": "Thu, 05 Nov 2026 10:17:51 GMT",
-          "time": "Thu, 05 Nov 2026 10:17:51 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Reuters",
-          "summary": "Fallback discovery via Google News RSS; publisher: Reuters",
-          "source": "Reuters",
-          "sourceLabel": "Reuters",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @POTUS",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
       "id": "769acc87315c6d16",
       "title": "NASA Announces X-70 Program, Promises More Coming - Aviation Week",
       "category": "general",
@@ -2896,6 +3303,40 @@
           "sourceLabel": "NASA (.gov)",
           "sourceType": "fallback-news",
           "fallbackFor": "X @NASA",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "37d0d705fe6c31e8",
+      "title": "Trump officials stick \"terrorist\" label on Americans killed by DHS - Axios",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [
+        "america"
+      ],
+      "firstSeen": "Sun, 25 Jan 2026 08:00:00 GMT",
+      "lastSeen": "Sun, 25 Jan 2026 08:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMingFBVV95cUxQeXBqcUtNbGRCNHFRRUlNcWQ2cXFXM2Vyamh0MFJUem1rM2hWTmk4SG1PNGx6MmtLUWNDVDZvRS14alZPVHU3MEphZFZIVUZ4eTY1LXFvS1lHMV9oRWRsZ2RqamJ6cEk1aTNiSXQ0U0YwbWdDUzBTVGQyQmdmVXc4bzNKekJqUHpWSGVJcDJ4Si1FNEFjMHNDWUx0cGtrZw?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "Trump officials stick \"terrorist\" label on Americans killed by DHS - Axios",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQeXBqcUtNbGRCNHFRRUlNcWQ2cXFXM2Vyamh0MFJUem1rM2hWTmk4SG1PNGx6MmtLUWNDVDZvRS14alZPVHU3MEphZFZIVUZ4eTY1LXFvS1lHMV9oRWRsZ2RqamJ6cEk1aTNiSXQ0U0YwbWdDUzBTVGQyQmdmVXc4bzNKekJqUHpWSGVJcDJ4Si1FNEFjMHNDWUx0cGtrZw?oc=5",
+          "published_date": "Sun, 25 Jan 2026 08:00:00 GMT",
+          "time": "Sun, 25 Jan 2026 08:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Axios",
+          "summary": "Fallback discovery via Google News RSS; publisher: Axios",
+          "source": "Axios",
+          "sourceLabel": "Axios",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @WhiteHouse",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -2992,200 +3433,6 @@
           "sourceLabel": "The White House (.gov)",
           "sourceType": "fallback-news",
           "fallbackFor": "X @WhiteHouse",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "47e5f564e1af4a15",
-      "title": "White House blames bad GOP candidates as poor results come in for Republicans - KXAN Austin",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Sun, 08 Nov 2026 02:44:21 GMT",
-      "lastSeen": "Sun, 08 Nov 2026 02:44:21 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOSU0zckFtblZmUUhCZkRsaUltNTdienJUalZLSFAzZ0U3OWY1SG1SRTgzOUlrVVFLTkM4eDNCS244VkpOTUJSZG5vLTNCZFdudkt3eGdheU5tLVQ1cDdjS2lIMXNUYW12cG4weHctSjB5d2RVOEVhSXpNLW00TVRpZUU5VEJXUFo1MDlJbW5nUlJRZ2V0dEstSVc3dlhHNjJ3ZXRyQVRSdXJuWWJOS3JoMEN3Ml84UXRTX2JN0gHAAUFVX3lxTFAzOVA2SUFraGJkeVBRUVR4RWd5NFgzZlZXeFRoTjFkTi1sTC1QTDRvZDlBbGRSZVhZTkNoR2RwMmVSMDFOVzVkS0xVcTVJVW5WeFVIUFYzU1paLTRqWHltbklLbzFTVERIcllWY29mVkFUQTZSdVZPWHB6TFZZd3YzeXBCVjBEdll1ZzVxLWNQRVU5dWhLeHdmcUlINm4xaEcxVC1OUGQ0THZLSzJKaVE5Q29zTS1wZ2ZPSEU4cGRjNw?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "White House blames bad GOP candidates as poor results come in for Republicans - KXAN Austin",
-          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOSU0zckFtblZmUUhCZkRsaUltNTdienJUalZLSFAzZ0U3OWY1SG1SRTgzOUlrVVFLTkM4eDNCS244VkpOTUJSZG5vLTNCZFdudkt3eGdheU5tLVQ1cDdjS2lIMXNUYW12cG4weHctSjB5d2RVOEVhSXpNLW00TVRpZUU5VEJXUFo1MDlJbW5nUlJRZ2V0dEstSVc3dlhHNjJ3ZXRyQVRSdXJuWWJOS3JoMEN3Ml84UXRTX2JN0gHAAUFVX3lxTFAzOVA2SUFraGJkeVBRUVR4RWd5NFgzZlZXeFRoTjFkTi1sTC1QTDRvZDlBbGRSZVhZTkNoR2RwMmVSMDFOVzVkS0xVcTVJVW5WeFVIUFYzU1paLTRqWHltbklLbzFTVERIcllWY29mVkFUQTZSdVZPWHB6TFZZd3YzeXBCVjBEdll1ZzVxLWNQRVU5dWhLeHdmcUlINm4xaEcxVC1OUGQ0THZLSzJKaVE5Q29zTS1wZ2ZPSEU4cGRjNw?oc=5",
-          "published_date": "Sun, 08 Nov 2026 02:44:21 GMT",
-          "time": "Sun, 08 Nov 2026 02:44:21 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: KXAN Austin",
-          "summary": "Fallback discovery via Google News RSS; publisher: KXAN Austin",
-          "source": "KXAN Austin",
-          "sourceLabel": "KXAN Austin",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @WhiteHouse",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "8af86421a4bb6226",
-      "title": "World Press Freedom Day 3 May - Welcome to the United Nations",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Sun, 03 May 2026 07:00:00 GMT",
-      "lastSeen": "Sun, 03 May 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5SeHlhTHprN3pkZWxHRnd4Z2hYWVp5bkRicUd3VlRHQjFLSGVrckNzZUgwVXNTV1lJSGh5Slk1dzRCYXNjdUR0ekdMazV2bG44dmFMRDlmTVplWmlJbVFkbA?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "World Press Freedom Day 3 May - Welcome to the United Nations",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5SeHlhTHprN3pkZWxHRnd4Z2hYWVp5bkRicUd3VlRHQjFLSGVrckNzZUgwVXNTV1lJSGh5Slk1dzRCYXNjdUR0ekdMazV2bG44dmFMRDlmTVplWmlJbVFkbA?oc=5",
-          "published_date": "Sun, 03 May 2026 07:00:00 GMT",
-          "time": "Sun, 03 May 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Welcome to the United Nations",
-          "summary": "Fallback discovery via Google News RSS; publisher: Welcome to the United Nations",
-          "source": "Welcome to the United Nations",
-          "sourceLabel": "Welcome to the United Nations",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @UN",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "1c9bfb1d0cbf3c42",
-      "title": "Peace Through Strength: President Trump Launches Operation Epic Fury to Crush Iranian Regime, End Nuclear Threat - The White House (.gov)",
-      "category": "political",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [
-        "iran"
-      ],
-      "firstSeen": "Sun, 01 Mar 2026 08:00:00 GMT",
-      "lastSeen": "Sun, 01 Mar 2026 08:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOanZMNVpBLVRZRE5oWVNIcGlpVk1iUnVCNXVtQ2gtTU1DS0gzRUwyeEtqSGNBRWQ2Yk03djItYW5pb0JUSTlfbm9nelJ6OTdrS0Nxa0l0X0psR1I4OE5VektCTG11OXhFMldxYlZmYmZGaXJTenZ6Y1U4VG1GOE1RTUlFejdjTWlmOFh2U0FoTHNsYVVLSXlsckpvSUdBTGRTcC1HTUFrR3FnYTdrT0dHOW83eDZ6blFWZTNzb0hQUlJBTlk2NThOamVYdGx5RG9Ca2hmMlJPTVpZS3E3RTZFWkdYbG5hakQ0WTd3?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Peace Through Strength: President Trump Launches Operation Epic Fury to Crush Iranian Regime, End Nuclear Threat - The White House (.gov)",
-          "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOanZMNVpBLVRZRE5oWVNIcGlpVk1iUnVCNXVtQ2gtTU1DS0gzRUwyeEtqSGNBRWQ2Yk03djItYW5pb0JUSTlfbm9nelJ6OTdrS0Nxa0l0X0psR1I4OE5VektCTG11OXhFMldxYlZmYmZGaXJTenZ6Y1U4VG1GOE1RTUlFejdjTWlmOFh2U0FoTHNsYVVLSXlsckpvSUdBTGRTcC1HTUFrR3FnYTdrT0dHOW83eDZ6blFWZTNzb0hQUlJBTlk2NThOamVYdGx5RG9Ca2hmMlJPTVpZS3E3RTZFWkdYbG5hakQ0WTd3?oc=5",
-          "published_date": "Sun, 01 Mar 2026 08:00:00 GMT",
-          "time": "Sun, 01 Mar 2026 08:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: The White House (.gov)",
-          "summary": "Fallback discovery via Google News RSS; publisher: The White House (.gov)",
-          "source": "The White House (.gov)",
-          "sourceLabel": "The White House (.gov)",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @WhiteHouse",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "e139876cbe718683",
-      "title": "Ban Ki-moon | Secretary-General - Welcome to the United Nations",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Sat, 31 Dec 2016 18:30:27 GMT",
-      "lastSeen": "Sat, 31 Dec 2016 18:30:27 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1VR1NtYXpfeWZOdFFmWlNEcS1PVVNaVHhDRVNYbmxLRnZuN0V2R2RWY0VqOEo2cnd3am4za0ZObjdSLWVCdGU5SkFPQmNmbHZfc2RxNGpB?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Ban Ki-moon | Secretary-General - Welcome to the United Nations",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1VR1NtYXpfeWZOdFFmWlNEcS1PVVNaVHhDRVNYbmxLRnZuN0V2R2RWY0VqOEo2cnd3am4za0ZObjdSLWVCdGU5SkFPQmNmbHZfc2RxNGpB?oc=5",
-          "published_date": "Sat, 31 Dec 2016 18:30:27 GMT",
-          "time": "Sat, 31 Dec 2016 18:30:27 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Welcome to the United Nations",
-          "summary": "Fallback discovery via Google News RSS; publisher: Welcome to the United Nations",
-          "source": "Welcome to the United Nations",
-          "sourceLabel": "Welcome to the United Nations",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @UN",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "f8468fbf8ca35617",
-      "title": "International Day for the Elimination of Racial Discrimination, 21 March - Welcome to the United Nations",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Sat, 21 Mar 2026 07:00:00 GMT",
-      "lastSeen": "Sat, 21 Mar 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5fb1J6dFRVT3oyVzh1RUhhWTlld1EwbEhmSTRjQWUtVXpXUGFsa3lOWG5QU0Z5MDA1Vl9zTVNuRS1yOEtmQUFjc2RjVEhZdWVTNk41Q1NodFdkTTFl?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "International Day for the Elimination of Racial Discrimination, 21 March - Welcome to the United Nations",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5fb1J6dFRVT3oyVzh1RUhhWTlld1EwbEhmSTRjQWUtVXpXUGFsa3lOWG5QU0Z5MDA1Vl9zTVNuRS1yOEtmQUFjc2RjVEhZdWVTNk41Q1NodFdkTTFl?oc=5",
-          "published_date": "Sat, 21 Mar 2026 07:00:00 GMT",
-          "time": "Sat, 21 Mar 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Welcome to the United Nations",
-          "summary": "Fallback discovery via Google News RSS; publisher: Welcome to the United Nations",
-          "source": "Welcome to the United Nations",
-          "sourceLabel": "Welcome to the United Nations",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @UN",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "885cd19fe4e42c19",
-      "title": "International Mother Language Day 21 February - Welcome to the United Nations",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Sat, 21 Feb 2026 08:00:00 GMT",
-      "lastSeen": "Sat, 21 Feb 2026 08:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5HUkh2SUZTcFdhcV9Zbkk5eHlrMjVPVC1GeFdFOWx5d1ZXSjM2aV9qcjVHd3l0ejVfMkJhcy0zMG5ZcUlaZWY0NnM0ODB3WTBxdThRYWxjcUZid2RwOVNKMTJJUQ?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "International Mother Language Day 21 February - Welcome to the United Nations",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5HUkh2SUZTcFdhcV9Zbkk5eHlrMjVPVC1GeFdFOWx5d1ZXSjM2aV9qcjVHd3l0ejVfMkJhcy0zMG5ZcUlaZWY0NnM0ODB3WTBxdThRYWxjcUZid2RwOVNKMTJJUQ?oc=5",
-          "published_date": "Sat, 21 Feb 2026 08:00:00 GMT",
-          "time": "Sat, 21 Feb 2026 08:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Welcome to the United Nations",
-          "summary": "Fallback discovery via Google News RSS; publisher: Welcome to the United Nations",
-          "source": "Welcome to the United Nations",
-          "sourceLabel": "Welcome to the United Nations",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @UN",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
