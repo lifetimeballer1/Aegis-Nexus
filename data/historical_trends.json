@@ -1,15 +1,9 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-08T06:52:02.823490Z",
+  "updatedAt": "2026-11-08T13:56:39.064073Z",
   "availableSamples": 288,
-  "availableHours": 1520.8,
+  "availableHours": 1527.9,
   "series": [
-    {
-      "updatedAt": "2026-09-06T04:48:41.148419+00:00",
-      "tension": 41,
-      "delta": 1,
-      "scoreVersion": 5
-    },
     {
       "updatedAt": "2026-09-06T04:50:10.945934+00:00",
       "tension": 41,
@@ -1443,24 +1437,24 @@
       "tension": 38,
       "delta": -1.0,
       "scoreVersion": 5
+    },
+    {
+      "updatedAt": "2026-11-08T13:56:39.064073Z",
+      "tension": 38,
+      "delta": 0.0,
+      "scoreVersion": 5
     }
   ],
   "windows": {
     "6h": {
-      "available": true,
-      "samples": 2,
-      "start": "2026-11-08T00:57:49.330236Z",
-      "end": "2026-11-08T06:52:02.823490Z",
-      "startTension": 39,
-      "endTension": 38,
-      "delta": -1.0,
-      "trend": "STABLE"
+      "available": false,
+      "reason": "Only 1 samples in requested window"
     },
     "24h": {
       "available": true,
       "samples": 5,
-      "start": "2026-11-07T13:24:51.777903Z",
-      "end": "2026-11-08T06:52:02.823490Z",
+      "start": "2026-11-07T18:09:33.737264Z",
+      "end": "2026-11-08T13:56:39.064073Z",
       "startTension": 38,
       "endTension": 38,
       "delta": 0.0,
@@ -1468,9 +1462,9 @@
     },
     "7d": {
       "available": true,
-      "samples": 25,
+      "samples": 26,
       "start": "2026-11-01T16:57:29.282174Z",
-      "end": "2026-11-08T06:52:02.823490Z",
+      "end": "2026-11-08T13:56:39.064073Z",
       "startTension": 37,
       "endTension": 38,
       "delta": 1.0,
@@ -1479,11 +1473,11 @@
     "30d": {
       "available": true,
       "samples": 114,
-      "start": "2026-10-09T07:36:17.028549Z",
-      "end": "2026-11-08T06:52:02.823490Z",
-      "startTension": 39,
+      "start": "2026-10-09T14:39:06.357066Z",
+      "end": "2026-11-08T13:56:39.064073Z",
+      "startTension": 38,
       "endTension": 38,
-      "delta": -1.0,
+      "delta": 0.0,
       "trend": "STABLE"
     }
   }
