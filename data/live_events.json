@@ -1,215 +1,124 @@
 {
-  "updatedAt": "2026-11-12T04:00:52.481546Z",
+  "updatedAt": "2026-11-12T12:16:56.158569Z",
   "window": "recent public reporting",
   "method": "anchor-aware title clustering with category and publication-time agreement; candidate grouping only, not proof reports describe identical facts",
   "events": [
     {
-      "id": "14561a92d760b826",
-      "title": "Green forest fire notification in South Sudan",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 9,
-      "sourceCount": 1,
+      "id": "e49a0eeedae449e6",
+      "title": "Israeli strike on Gaza hospital kills six Palestinians, health ministry says",
+      "category": "conflict",
+      "confidence": "high",
+      "reportCount": 4,
+      "sourceCount": 4,
       "sources": [
-        "gdacs.org"
+        "bbc.co.uk",
+        "dw.com",
+        "theguardian.com",
+        "npr.org"
       ],
       "anchors": [
-        "sudan"
+        "gaza",
+        "hamas",
+        "israel"
       ],
-      "firstSeen": "2026-11-11T20:01:25Z",
-      "lastSeen": "2026-11-11T20:06:17Z",
+      "firstSeen": "2026-11-12T09:29:30Z",
+      "lastSeen": "2026-11-12T12:03:47Z",
       "urls": [
-        "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033752",
-        "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033751",
-        "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033750",
-        "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033749",
-        "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033748",
-        "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033745",
-        "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033744",
-        "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033741"
+        "https://www.bbc.co.uk/news/articles/ckzd9p7e4eqeo?at_medium=RSS&at_campaign=rss",
+        "https://www.dw.com/en/israel-targets-senior-hamas-member-in-gaza-hospital-strike/a-79927645?maca=en-rss-en-world-4025-xml-mrss",
+        "https://www.theguardian.com/world/2026/nov/12/israeli-airstrike-nasser-hospital-gaza-kills-surgeon",
+        "https://www.npr.org/2026/11/12/nx-s1-6038339/israeli-strike-gaza-hospital"
       ],
       "reports": [
         {
-          "id": "a5a32b1db0f4",
-          "sourceLabel": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033752",
-          "sourceName": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033752",
-          "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in South Sudan",
-          "summary": "On 08/11/2026, a forest fire started in South Sudan, until 11/11/2026.",
-          "summary_snippet": "On 08/11/2026, a forest fire started in South Sudan, until 11/11/2026.",
-          "source": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033752",
-          "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033752",
-          "time": "2026-11-11T20:06:17Z",
-          "published_date": "2026-11-11T20:06:17Z",
-          "publishedDate": "2026-11-11T20:06:17Z",
-          "tag": "World",
+          "id": "b8bb9c4cdad0",
+          "sourceLabel": "BBC World",
+          "sourceName": "BBC World",
+          "sourceType": "international",
+          "title": "Israeli strike on Gaza hospital kills six Palestinians, health ministry says",
+          "summary": "Witnesses say a missile hit a building containing the surgical wards and intensive care units at Nasser hospital, the largest in southern Gaza.",
+          "summary_snippet": "Witnesses say a missile hit a building containing the surgical wards and intensive care units at Nasser hospital, the largest in southern Gaza.",
+          "source": "https://www.bbc.co.uk/news/articles/ckzd9p7e4eqeo?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.bbc.co.uk/news/articles/ckzd9p7e4eqeo?at_medium=RSS&at_campaign=rss",
+          "time": "2026-11-12T12:03:47Z",
+          "published_date": "2026-11-12T12:03:47Z",
+          "publishedDate": "2026-11-12T12:03:47Z",
+          "tag": "Breaking",
           "confidence": "DEVELOPING",
-          "breaking": false,
+          "breaking": true,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "sourceId": "bbc_world",
+            "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
             "feedFormat": "rss"
           }
         },
         {
-          "id": "63615b10d54d",
-          "sourceLabel": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033751",
-          "sourceName": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033751",
-          "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in South Sudan",
-          "summary": "On 08/11/2026, a forest fire started in South Sudan, until 11/11/2026.",
-          "summary_snippet": "On 08/11/2026, a forest fire started in South Sudan, until 11/11/2026.",
-          "source": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033751",
-          "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033751",
-          "time": "2026-11-11T20:05:59Z",
-          "published_date": "2026-11-11T20:05:59Z",
-          "publishedDate": "2026-11-11T20:05:59Z",
-          "tag": "World",
+          "id": "fb2e9bbfe44b",
+          "sourceLabel": "DW World",
+          "sourceName": "DW World",
+          "sourceType": "international",
+          "title": "Israel targets senior Hamas member in Gaza hospital strike",
+          "summary": "Israel says Hamas was using the hospital as a military command center, while Palestinian officials report at least six people killed, including a surgeon. The strike comes amid an increasingly fragile ceasefire.",
+          "summary_snippet": "Israel says Hamas was using the hospital as a military command center, while Palestinian officials report at least six people killed, including a surgeon. The strike comes amid an increasingly fragile ceasefire.",
+          "source": "https://www.dw.com/en/israel-targets-senior-hamas-member-in-gaza-hospital-strike/a-79927645?maca=en-rss-en-world-4025-xml-mrss",
+          "url": "https://www.dw.com/en/israel-targets-senior-hamas-member-in-gaza-hospital-strike/a-79927645?maca=en-rss-en-world-4025-xml-mrss",
+          "time": "2026-11-12T11:27:00Z",
+          "published_date": "2026-11-12T11:27:00Z",
+          "publishedDate": "2026-11-12T11:27:00Z",
+          "tag": "Breaking",
           "confidence": "DEVELOPING",
-          "breaking": false,
+          "breaking": true,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "sourceId": "dw_world",
+            "sourceUrl": "https://rss.dw.com/xml/rss-en-world",
             "feedFormat": "rss"
           }
         },
         {
-          "id": "179559f6cd58",
-          "sourceLabel": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033750",
-          "sourceName": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033750",
-          "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in South Sudan",
-          "summary": "On 09/11/2026, a forest fire started in South Sudan, until 11/11/2026.",
-          "summary_snippet": "On 09/11/2026, a forest fire started in South Sudan, until 11/11/2026.",
-          "source": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033750",
-          "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033750",
-          "time": "2026-11-11T20:03:21Z",
-          "published_date": "2026-11-11T20:03:21Z",
-          "publishedDate": "2026-11-11T20:03:21Z",
-          "tag": "World",
+          "id": "7cf80c14f947",
+          "sourceLabel": "Guardian World",
+          "sourceName": "Guardian World",
+          "sourceType": "international",
+          "title": "Israeli airstrike on Nasser hospital in Gaza kills surgeon and five others",
+          "summary": "Patients awaiting surgery die in attack on one of few remaining medical facilities in the strip, doctor says An Israeli airstrike on Nasser hospital in southern Gaza killed six people, including a surgeon and a disabled man, and wounded more than 20 others, the Palestinian news agency reported. The Israeli military carried out the attack on the hospital, in Khan Younis, early on Thursday saying in a statement it had ",
+          "summary_snippet": "Patients awaiting surgery die in attack on one of few remaining medical facilities in the strip, doctor says An Israeli airstrike on Nasser hospital in southern Gaza killed six people, including a surgeon and a disabled man, and wounded more than 20 others, the Palestinian news agency reported. The Israeli military carried out the attack on the hospital, in Khan Younis, early on Thursday saying in a statement it had ",
+          "source": "https://www.theguardian.com/world/2026/nov/12/israeli-airstrike-nasser-hospital-gaza-kills-surgeon",
+          "url": "https://www.theguardian.com/world/2026/nov/12/israeli-airstrike-nasser-hospital-gaza-kills-surgeon",
+          "time": "2026-11-12T11:24:09Z",
+          "published_date": "2026-11-12T11:24:09Z",
+          "publishedDate": "2026-11-12T11:24:09Z",
+          "tag": "Breaking",
           "confidence": "DEVELOPING",
-          "breaking": false,
+          "breaking": true,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "sourceId": "guardian_world",
+            "sourceUrl": "https://www.theguardian.com/world/rss",
             "feedFormat": "rss"
           }
         },
         {
-          "id": "e876877b3663",
-          "sourceLabel": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033749",
-          "sourceName": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033749",
-          "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in South Sudan",
-          "summary": "On 09/11/2026, a forest fire started in South Sudan, until 11/11/2026.",
-          "summary_snippet": "On 09/11/2026, a forest fire started in South Sudan, until 11/11/2026.",
-          "source": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033749",
-          "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033749",
-          "time": "2026-11-11T20:03:14Z",
-          "published_date": "2026-11-11T20:03:14Z",
-          "publishedDate": "2026-11-11T20:03:14Z",
-          "tag": "World",
+          "id": "39b7babe27ba",
+          "sourceLabel": "NPR News",
+          "sourceName": "NPR News",
+          "sourceType": "us-politics",
+          "title": "Israeli strike on a Gaza hospital kills 6 people, health authorities say",
+          "summary": "The victims included a surgeon, and dozens more were injured. Israel said it was targeting a Hamas commander and other militants.",
+          "summary_snippet": "The victims included a surgeon, and dozens more were injured. Israel said it was targeting a Hamas commander and other militants.",
+          "source": "https://www.npr.org/2026/11/12/nx-s1-6038339/israeli-strike-gaza-hospital",
+          "url": "https://www.npr.org/2026/11/12/nx-s1-6038339/israeli-strike-gaza-hospital",
+          "time": "2026-11-12T09:29:30Z",
+          "published_date": "2026-11-12T09:29:30Z",
+          "publishedDate": "2026-11-12T09:29:30Z",
+          "tag": "Breaking",
           "confidence": "DEVELOPING",
-          "breaking": false,
+          "breaking": true,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "320980f4b6cc",
-          "sourceLabel": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033748",
-          "sourceName": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033748",
-          "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in South Sudan",
-          "summary": "On 09/11/2026, a forest fire started in South Sudan, until 11/11/2026.",
-          "summary_snippet": "On 09/11/2026, a forest fire started in South Sudan, until 11/11/2026.",
-          "source": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033748",
-          "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033748",
-          "time": "2026-11-11T20:03:09Z",
-          "published_date": "2026-11-11T20:03:09Z",
-          "publishedDate": "2026-11-11T20:03:09Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "ee89c1f83f60",
-          "sourceLabel": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033745",
-          "sourceName": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033745",
-          "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in South Sudan, Sudan",
-          "summary": "On 09/11/2026, a forest fire started in South Sudan, Sudan, until 11/11/2026.",
-          "summary_snippet": "On 09/11/2026, a forest fire started in South Sudan, Sudan, until 11/11/2026.",
-          "source": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033745",
-          "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033745",
-          "time": "2026-11-11T20:02:30Z",
-          "published_date": "2026-11-11T20:02:30Z",
-          "publishedDate": "2026-11-11T20:02:30Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "d155b0e93dba",
-          "sourceLabel": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033744",
-          "sourceName": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033744",
-          "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in South Sudan",
-          "summary": "On 09/11/2026, a forest fire started in South Sudan, until 11/11/2026.",
-          "summary_snippet": "On 09/11/2026, a forest fire started in South Sudan, until 11/11/2026.",
-          "source": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033744",
-          "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033744",
-          "time": "2026-11-11T20:02:20Z",
-          "published_date": "2026-11-11T20:02:20Z",
-          "publishedDate": "2026-11-11T20:02:20Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "7e0fbdbaf914",
-          "sourceLabel": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033741",
-          "sourceName": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033741",
-          "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in South Sudan",
-          "summary": "On 10/11/2026, a forest fire started in South Sudan, until 11/11/2026.",
-          "summary_snippet": "On 10/11/2026, a forest fire started in South Sudan, until 11/11/2026.",
-          "source": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033741",
-          "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1033741",
-          "time": "2026-11-11T20:01:30Z",
-          "published_date": "2026-11-11T20:01:30Z",
-          "publishedDate": "2026-11-11T20:01:30Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "sourceId": "npr_news",
+            "sourceUrl": "https://feeds.npr.org/1001/rss.xml",
             "feedFormat": "rss"
           }
         }
@@ -220,7 +129,7 @@
       "title": "Relations with Ukraine - North Atlantic Treaty Organization | NATO",
       "category": "diplomatic",
       "confidence": "low",
-      "reportCount": 5,
+      "reportCount": 4,
       "sourceCount": 1,
       "sources": [
         "news.google.com"
@@ -234,7 +143,6 @@
       "lastSeen": "Thu, 31 Oct 2019 07:00:00 GMT",
       "urls": [
         "https://news.google.com/rss/articles/CBMijwFBVV95cUxOQlhJTWVrR21ySE5Fc1VGNXo5aFRwY09CcDlyRGhocjFJSHN2LU16VE5PNXVBTGNjdl9MV1Z2Um1BMk1XSU8tTHp6SUhZenlIT3p3bnFfTWpOSGstV3R4N2tWUGpVaTB5QnctdDl1Wi1zMTAyQjhhcVdyT2U1dy1FVEdZalFncjRmVi05c3I4OA?oc=5",
-        "https://news.google.com/rss/articles/CBMiO0FVX3lxTE13S25tWi1faWFQMV93ZmJ4MnI1eFhSMGRYM190eFpjYnQ3ak4xb2NFRjEtQ0lSc2FXcEFz?oc=5",
         "https://news.google.com/rss/articles/CBMingFBVV95cUxOZkxLV1ZvZDlhdVA4Q1VxajFrU3NObTF2V0VOVFEycnVnaFU3Vzk4REhHQk5ac2dqLWdKSWlaUFRiR3NYazdmczk3Qlk2SEpGUU1VVWdBYjhPMml4eGRfckNWVlJvSlZqU1ZpLXpfX1YtOUpQUS1XTkNQTG9hU3BuTUFCbElfWTFfbjFPcHMwMWs5OWJJZWFCSGllVmhFUQ?oc=5",
         "https://news.google.com/rss/articles/CBMingFBVV95cUxNQWx2d3ZFc2czWlR4M2hwOXlnRm15R3BzZ2lYLTU0Y1VVcWJkRzJib2ZVdXQzM0wzdGhyMFpUOFpySFF3eElnMVQ3R0U2TlBxdlViajVsOUdtVWl4SHc5Vk96ejNBazJXcTZmWVRCQlQ2NmJjbS1PdFhvTVNNdUdIeldHUTloYS1MTjI5dzRzYWFUZ3lNeWcwVlpXYXMzdw?oc=5",
         "https://news.google.com/rss/articles/CBMixwFBVV95cUxQQXIwY0FIOGxLS1FVNjFZc25nemtjam15UGtCcHhqNVRJMFBVWDNEWUpnUHVUMXgyYWloU1JleS1MU05TUHQydmNHbDh0QlEtQ1gxVmlETFNrNDIzNnhFNVdtSFpOdTdVRUZDdUd0VDVsUWI2U3NjNWlwVFQ4QnVYeFdudXNCVWpxWTNNbWRSM2xKdU1JNkFrWWFaaW9VVWtYLVRkeVhKVU9NZmFiMHBJcENWVnBDM2V2ZEtQOE1GN3pCQnVCQ3Fv?oc=5"
@@ -245,19 +153,6 @@
           "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOQlhJTWVrR21ySE5Fc1VGNXo5aFRwY09CcDlyRGhocjFJSHN2LU16VE5PNXVBTGNjdl9MV1Z2Um1BMk1XSU8tTHp6SUhZenlIT3p3bnFfTWpOSGstV3R4N2tWUGpVaTB5QnctdDl1Wi1zMTAyQjhhcVdyT2U1dy1FVEdZalFncjRmVi05c3I4OA?oc=5",
           "published_date": "Thu, 08 Oct 2026 07:00:00 GMT",
           "time": "Thu, 08 Oct 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "summary": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "source": "North Atlantic Treaty Organization | NATO",
-          "sourceLabel": "North Atlantic Treaty Organization | NATO",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NATO",
-          "credit_metadata": "Google News RSS fallback"
-        },
-        {
-          "title": "North Atlantic Treaty Organization | NATO - North Atlantic Treaty Organization | NATO",
-          "url": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE13S25tWi1faWFQMV93ZmJ4MnI1eFhSMGRYM190eFpjYnQ3ak4xb2NFRjEtQ0lSc2FXcEFz?oc=5",
-          "published_date": "Thu, 13 Nov 2025 21:45:28 GMT",
-          "time": "Thu, 13 Nov 2025 21:45:28 GMT",
           "summary_snippet": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
           "summary": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
           "source": "North Atlantic Treaty Organization | NATO",
@@ -388,116 +283,94 @@
       ]
     },
     {
-      "id": "ea317727c377df91",
-      "title": "14 suspected Sinaloa cartel members detained in Mexico — UPI - UA.NEWS",
+      "id": "9af300d8a2ecd560",
+      "title": "Xi Jinping says Taiwan’s ‘complete reunification’ with China will happen",
       "category": "general",
-      "confidence": "low",
-      "reportCount": 4,
-      "sourceCount": 1,
+      "confidence": "moderate",
+      "reportCount": 3,
+      "sourceCount": 2,
       "sources": [
+        "aljazeera.com",
         "news.google.com"
       ],
       "anchors": [
-        "mexico"
+        "china",
+        "taiwan"
       ],
-      "firstSeen": "2026-11-11T17:40:00Z",
-      "lastSeen": "2026-11-11T18:50:14Z",
+      "firstSeen": "2026-11-12T08:34:45Z",
+      "lastSeen": "2026-11-12T11:59:28Z",
       "urls": [
-        "https://news.google.com/rss/articles/CBMinAFBVV95cUxQdE5NVHVHaEw5Y0c1cmk2MmlDbElRTk1JeXBrZ2NXQUhZVDg4ODJ2M2FyQnpZQjVoT0doRW9uNTBOVm5mdlRpaDUtVG9NdjlhTnhnYnpVS0V4N0ZSTjRfOEdjUF9JWWRoQzlmQWZFM0l4aDRDTk8xbzhtUGpvaEtnS3ZWajNsaXY2YXVoZ0ZFTFRrSzhBcmNmLU9rX3k?oc=5",
-        "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQQlhlSC1oc2dLYTRrVk5oRkt4RXVsc2hEbDRoMGxDY1pMWDROaXlMNTBkbEM1Q3A4LTZ6bS1sRzdOYm1HMmhzanV3bW43ZXEzczVfbWFybzJFaUwwZlFMd2RkZ1JsdG9tY2t2bEZ1THYyWGFDVDlCWXJfWHROU3dodTNsaE9SZWVKOFpXSzN4Uk9Fd1VyUnU1Ylh2NnlGaHg3NWs2QUwtR1I2QQ?oc=5",
-        "https://news.google.com/rss/articles/CBMisAFBVV95cUxPNzRaQ2pNSHRyQnBMLS02MHhJd2RZbEhseUp4Z2pxcEE3VUZGdUhrb0ktWFpUMktoUzF4Um55UDFfcVlqYjRCczZtbGJySnNuSUdXXzkyMGpTR1hRbzAxZkEtTzdRemRRazVQdFF4RmNvVWlfTlI1ZjNmZTFCak5jVU5KNFkxQmIwQ3ZPSXFrRkotbnYwMVZQOXlFODhxRGxQTWNIbWpfd3dwR0l6d05pS9IBtgFBVV95cUxNOVVnZ3BRb291enlqd05rSXZRSExrd2pOOUtacmtxOVlHQ21DSlJMMFNGWUlDVjhRRmZFUGl2Y3NqclBKczhoRU9XYW1NMmNBeWdlU1R0MmZ3UjZFSl9uU2lpR0hBRUIxVTMzS1hTNHB2WkFkLU5CZmlLbmpFb3pYX0VlbmtQaHVzSFFjSEVXazd0dDVpM04xMmhjcVU1T05RbjRmUUgyY1hlR0RrQkg4dmQzbDZ5Zw?oc=5",
-        "https://news.google.com/rss/articles/CBMimwFBVV95cUxOdzBiVGJ6MzZGZ3NraE9Ybm1nWjVSTlFIN1NMSFZYdFpHaEpXMnVIYVVoUzlkY2ZFWTVqT2RvS0ZsTGpmWFJ5U29GYnhfSWJvLURzSWVJcXB3WGRuZ0pkX3RvTHJTRlItVWNMZGxOTkV2eEo3TjNBVEJ4bG1kd2tRT2pMd2pWekFRNTlYYmRnMFBVN1FBMWtjX2YtNA?oc=5"
+        "https://www.aljazeera.com/news/2026/11/12/xi-jinping-says-taiwans-complete-reunification-with-china-will-happen?traffic_source=rss",
+        "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQTm5EajRMUU5BQlpTT1lENFlyUHBQdFFnQ2paTDVEZTgtU2J5RkZMYTVReUJnRFAyR0FINWdqOWxEZWhCU24xOEJLYlZzNzlsTjA1WHZ6NzZmYll0dXNiRXNZMzFSSTJGYjRROFpuMThnZU9saHlCT29IWGJHcG01OVZNZVYyQl9zcHZTa3lIMjh5VVgySVFUaFc4RGpLdEwyU2hCSExOcmNEQ3dRZFVxTlFqX3JwbXE1NG12V2RTOUhUa1JoMTNSYWtQcmNmZUpZQWE2U0hZNi02N3fSAeABQVVfeXFMTTlnQ3pxRGowQWxvbHpGWDhNd1RBdUNRczl4cFAwYzZVS1pJSlA2ZEVwc3g4Y0t0YW9RVHIxN1JSWUtjZWkwdmViX0RmQ2tTaG8xVDE0WTRySEdKUHI1ZDdPZDRtQ0lndGU0OFN2aEdDNlVxQUxGWU9UMVlVVnUwVTJDRGt5MUs1aFRiODh3QXR4dENKSkY0R2FyY1E1dDVZSXQtOVhnSmE1bmJXcmdnZk12NHZ1ejJMRXZJdXpQZEwxejVUTU5RQVhfYXBydzJtTzdjTkpEWEd0Z3c1OHhmSkQ?oc=5",
+        "https://www.aljazeera.com/video/newsfeed/2026/11/12/xi-jinping-says-taiwan-reunification-with-china-must-happen?traffic_source=rss"
       ],
       "reports": [
         {
-          "id": "fc30adbfbfdc",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQdE5NVHVHaEw5Y0c1cmk2MmlDbElRTk1JeXBrZ2NXQUhZVDg4ODJ2M2FyQnpZQjVoT0doRW9uNTBOVm5mdlRpaDUtVG9NdjlhTnhnYnpVS0V4N0ZSTjRfOEdjUF9JWWRoQzlmQWZFM0l4aDRDTk8xbzhtUGpvaEtnS3ZWajNsaXY2YXVoZ0ZFTFRrSzhBcmNmLU9rX3k?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQdE5NVHVHaEw5Y0c1cmk2MmlDbElRTk1JeXBrZ2NXQUhZVDg4ODJ2M2FyQnpZQjVoT0doRW9uNTBOVm5mdlRpaDUtVG9NdjlhTnhnYnpVS0V4N0ZSTjRfOEdjUF9JWWRoQzlmQWZFM0l4aDRDTk8xbzhtUGpvaEtnS3ZWajNsaXY2YXVoZ0ZFTFRrSzhBcmNmLU9rX3k?oc=5",
-          "sourceType": "americas-conflict",
-          "title": "14 suspected Sinaloa cartel members detained in Mexico — UPI - UA.NEWS",
-          "summary": "14 suspected Sinaloa cartel members detained in Mexico — UPI UA.NEWS",
-          "summary_snippet": "14 suspected Sinaloa cartel members detained in Mexico — UPI UA.NEWS",
-          "source": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQdE5NVHVHaEw5Y0c1cmk2MmlDbElRTk1JeXBrZ2NXQUhZVDg4ODJ2M2FyQnpZQjVoT0doRW9uNTBOVm5mdlRpaDUtVG9NdjlhTnhnYnpVS0V4N0ZSTjRfOEdjUF9JWWRoQzlmQWZFM0l4aDRDTk8xbzhtUGpvaEtnS3ZWajNsaXY2YXVoZ0ZFTFRrSzhBcmNmLU9rX3k?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQdE5NVHVHaEw5Y0c1cmk2MmlDbElRTk1JeXBrZ2NXQUhZVDg4ODJ2M2FyQnpZQjVoT0doRW9uNTBOVm5mdlRpaDUtVG9NdjlhTnhnYnpVS0V4N0ZSTjRfOEdjUF9JWWRoQzlmQWZFM0l4aDRDTk8xbzhtUGpvaEtnS3ZWajNsaXY2YXVoZ0ZFTFRrSzhBcmNmLU9rX3k?oc=5",
-          "time": "2026-11-11T18:50:14Z",
-          "published_date": "2026-11-11T18:50:14Z",
-          "publishedDate": "2026-11-11T18:50:14Z",
+          "id": "4049dd192773",
+          "sourceLabel": "Al Jazeera",
+          "sourceName": "Al Jazeera",
+          "sourceType": "international",
+          "title": "Xi Jinping says Taiwan’s ‘complete reunification’ with China will happen",
+          "summary": "Chinese president says the tide of history 'cannot be stopped' as Taiwan rejects 'one country, two systems'.",
+          "summary_snippet": "Chinese president says the tide of history 'cannot be stopped' as Taiwan rejects 'one country, two systems'.",
+          "source": "https://www.aljazeera.com/news/2026/11/12/xi-jinping-says-taiwans-complete-reunification-with-china-will-happen?traffic_source=rss",
+          "url": "https://www.aljazeera.com/news/2026/11/12/xi-jinping-says-taiwans-complete-reunification-with-china-will-happen?traffic_source=rss",
+          "time": "2026-11-12T11:59:28Z",
+          "published_date": "2026-11-12T11:59:28Z",
+          "publishedDate": "2026-11-12T11:59:28Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "google_news_mexico_cartel_conflict",
-            "sourceUrl": "https://news.google.com/rss/search?q=Mexico+cartel+Sinaloa+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "sourceId": "al_jazeera",
+            "sourceUrl": "https://www.aljazeera.com/xml/rss/all.xml",
             "feedFormat": "rss"
           }
         },
         {
-          "id": "bced929e91f2",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQQlhlSC1oc2dLYTRrVk5oRkt4RXVsc2hEbDRoMGxDY1pMWDROaXlMNTBkbEM1Q3A4LTZ6bS1sRzdOYm1HMmhzanV3bW43ZXEzczVfbWFybzJFaUwwZlFMd2RkZ1JsdG9tY2t2bEZ1THYyWGFDVDlCWXJfWHROU3dodTNsaE9SZWVKOFpXSzN4Uk9Fd1VyUnU1Ylh2NnlGaHg3NWs2QUwtR1I2QQ?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQQlhlSC1oc2dLYTRrVk5oRkt4RXVsc2hEbDRoMGxDY1pMWDROaXlMNTBkbEM1Q3A4LTZ6bS1sRzdOYm1HMmhzanV3bW43ZXEzczVfbWFybzJFaUwwZlFMd2RkZ1JsdG9tY2t2bEZ1THYyWGFDVDlCWXJfWHROU3dodTNsaE9SZWVKOFpXSzN4Uk9Fd1VyUnU1Ylh2NnlGaHg3NWs2QUwtR1I2QQ?oc=5",
-          "sourceType": "americas-conflict",
-          "title": "Mexico arrests 14 suspected Sinaloa Cartel members - NewsBreak: Local News & Alerts",
-          "summary": "Mexico arrests 14 suspected Sinaloa Cartel members NewsBreak: Local News & Alerts",
-          "summary_snippet": "Mexico arrests 14 suspected Sinaloa Cartel members NewsBreak: Local News & Alerts",
-          "source": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQQlhlSC1oc2dLYTRrVk5oRkt4RXVsc2hEbDRoMGxDY1pMWDROaXlMNTBkbEM1Q3A4LTZ6bS1sRzdOYm1HMmhzanV3bW43ZXEzczVfbWFybzJFaUwwZlFMd2RkZ1JsdG9tY2t2bEZ1THYyWGFDVDlCWXJfWHROU3dodTNsaE9SZWVKOFpXSzN4Uk9Fd1VyUnU1Ylh2NnlGaHg3NWs2QUwtR1I2QQ?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQQlhlSC1oc2dLYTRrVk5oRkt4RXVsc2hEbDRoMGxDY1pMWDROaXlMNTBkbEM1Q3A4LTZ6bS1sRzdOYm1HMmhzanV3bW43ZXEzczVfbWFybzJFaUwwZlFMd2RkZ1JsdG9tY2t2bEZ1THYyWGFDVDlCWXJfWHROU3dodTNsaE9SZWVKOFpXSzN4Uk9Fd1VyUnU1Ylh2NnlGaHg3NWs2QUwtR1I2QQ?oc=5",
-          "time": "2026-11-11T18:29:49Z",
-          "published_date": "2026-11-11T18:29:49Z",
-          "publishedDate": "2026-11-11T18:29:49Z",
+          "id": "ce39246f5b67",
+          "sourceLabel": "Google News — China Politics / CCP",
+          "sourceName": "Google News — China Politics / CCP",
+          "sourceType": "china-politics",
+          "title": "‘Peaceful reunification of Taiwan with China’: Has XI Jinping softened stance as prelude to war? - The Statesman",
+          "summary": "‘Peaceful reunification of Taiwan with China’: Has XI Jinping softened stance as prelude to war? The Statesman",
+          "summary_snippet": "‘Peaceful reunification of Taiwan with China’: Has XI Jinping softened stance as prelude to war? The Statesman",
+          "source": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQTm5EajRMUU5BQlpTT1lENFlyUHBQdFFnQ2paTDVEZTgtU2J5RkZMYTVReUJnRFAyR0FINWdqOWxEZWhCU24xOEJLYlZzNzlsTjA1WHZ6NzZmYll0dXNiRXNZMzFSSTJGYjRROFpuMThnZU9saHlCT29IWGJHcG01OVZNZVYyQl9zcHZTa3lIMjh5VVgySVFUaFc4RGpLdEwyU2hCSExOcmNEQ3dRZFVxTlFqX3JwbXE1NG12V2RTOUhUa1JoMTNSYWtQcmNmZUpZQWE2U0hZNi02N3fSAeABQVVfeXFMTTlnQ3pxRGowQWxvbHpGWDhNd1RBdUNRczl4cFAwYzZVS1pJSlA2ZEVwc3g4Y0t0YW9RVHIxN1JSWUtjZWkwdmViX0RmQ2tTaG8xVDE0WTRySEdKUHI1ZDdPZDRtQ0lndGU0OFN2aEdDNlVxQUxGWU9UMVlVVnUwVTJDRGt5MUs1aFRiODh3QXR4dENKSkY0R2FyY1E1dDVZSXQtOVhnSmE1bmJXcmdnZk12NHZ1ejJMRXZJdXpQZEwxejVUTU5RQVhfYXBydzJtTzdjTkpEWEd0Z3c1OHhmSkQ?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQTm5EajRMUU5BQlpTT1lENFlyUHBQdFFnQ2paTDVEZTgtU2J5RkZMYTVReUJnRFAyR0FINWdqOWxEZWhCU24xOEJLYlZzNzlsTjA1WHZ6NzZmYll0dXNiRXNZMzFSSTJGYjRROFpuMThnZU9saHlCT29IWGJHcG01OVZNZVYyQl9zcHZTa3lIMjh5VVgySVFUaFc4RGpLdEwyU2hCSExOcmNEQ3dRZFVxTlFqX3JwbXE1NG12V2RTOUhUa1JoMTNSYWtQcmNmZUpZQWE2U0hZNi02N3fSAeABQVVfeXFMTTlnQ3pxRGowQWxvbHpGWDhNd1RBdUNRczl4cFAwYzZVS1pJSlA2ZEVwc3g4Y0t0YW9RVHIxN1JSWUtjZWkwdmViX0RmQ2tTaG8xVDE0WTRySEdKUHI1ZDdPZDRtQ0lndGU0OFN2aEdDNlVxQUxGWU9UMVlVVnUwVTJDRGt5MUs1aFRiODh3QXR4dENKSkY0R2FyY1E1dDVZSXQtOVhnSmE1bmJXcmdnZk12NHZ1ejJMRXZJdXpQZEwxejVUTU5RQVhfYXBydzJtTzdjTkpEWEd0Z3c1OHhmSkQ?oc=5",
+          "time": "2026-11-12T08:48:00Z",
+          "published_date": "2026-11-12T08:48:00Z",
+          "publishedDate": "2026-11-12T08:48:00Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "google_news_mexico_cartel_conflict",
-            "sourceUrl": "https://news.google.com/rss/search?q=Mexico+cartel+Sinaloa+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "sourceId": "china_politics",
+            "sourceUrl": "https://news.google.com/rss/search?q=China+Xi+CCP+Communist+Party+government+policy+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
         },
         {
-          "id": "6f3de0d226fa",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPNzRaQ2pNSHRyQnBMLS02MHhJd2RZbEhseUp4Z2pxcEE3VUZGdUhrb0ktWFpUMktoUzF4Um55UDFfcVlqYjRCczZtbGJySnNuSUdXXzkyMGpTR1hRbzAxZkEtTzdRemRRazVQdFF4RmNvVWlfTlI1ZjNmZTFCak5jVU5KNFkxQmIwQ3ZPSXFrRkotbnYwMVZQOXlFODhxRGxQTWNIbWpfd3dwR0l6d05pS9IBtgFBVV95cUxNOVVnZ3BRb291enlqd05rSXZRSExrd2pOOUtacmtxOVlHQ21DSlJMMFNGWUlDVjhRRmZFUGl2Y3NqclBKczhoRU9XYW1NMmNBeWdlU1R0MmZ3UjZFSl9uU2lpR0hBRUIxVTMzS1hTNHB2WkFkLU5CZmlLbmpFb3pYX0VlbmtQaHVzSFFjSEVXazd0dDVpM04xMmhjcVU1T05RbjRmUUgyY1hlR0RrQkg4dmQzbDZ5Zw?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPNzRaQ2pNSHRyQnBMLS02MHhJd2RZbEhseUp4Z2pxcEE3VUZGdUhrb0ktWFpUMktoUzF4Um55UDFfcVlqYjRCczZtbGJySnNuSUdXXzkyMGpTR1hRbzAxZkEtTzdRemRRazVQdFF4RmNvVWlfTlI1ZjNmZTFCak5jVU5KNFkxQmIwQ3ZPSXFrRkotbnYwMVZQOXlFODhxRGxQTWNIbWpfd3dwR0l6d05pS9IBtgFBVV95cUxNOVVnZ3BRb291enlqd05rSXZRSExrd2pOOUtacmtxOVlHQ21DSlJMMFNGWUlDVjhRRmZFUGl2Y3NqclBKczhoRU9XYW1NMmNBeWdlU1R0MmZ3UjZFSl9uU2lpR0hBRUIxVTMzS1hTNHB2WkFkLU5CZmlLbmpFb3pYX0VlbmtQaHVzSFFjSEVXazd0dDVpM04xMmhjcVU1T05RbjRmUUgyY1hlR0RrQkg4dmQzbDZ5Zw?oc=5",
-          "sourceType": "americas-conflict",
-          "title": "Mexico arrests 14 suspected Sinaloa Cartel members - upi",
-          "summary": "Mexico arrests 14 suspected Sinaloa Cartel members upi",
-          "summary_snippet": "Mexico arrests 14 suspected Sinaloa Cartel members upi",
-          "source": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPNzRaQ2pNSHRyQnBMLS02MHhJd2RZbEhseUp4Z2pxcEE3VUZGdUhrb0ktWFpUMktoUzF4Um55UDFfcVlqYjRCczZtbGJySnNuSUdXXzkyMGpTR1hRbzAxZkEtTzdRemRRazVQdFF4RmNvVWlfTlI1ZjNmZTFCak5jVU5KNFkxQmIwQ3ZPSXFrRkotbnYwMVZQOXlFODhxRGxQTWNIbWpfd3dwR0l6d05pS9IBtgFBVV95cUxNOVVnZ3BRb291enlqd05rSXZRSExrd2pOOUtacmtxOVlHQ21DSlJMMFNGWUlDVjhRRmZFUGl2Y3NqclBKczhoRU9XYW1NMmNBeWdlU1R0MmZ3UjZFSl9uU2lpR0hBRUIxVTMzS1hTNHB2WkFkLU5CZmlLbmpFb3pYX0VlbmtQaHVzSFFjSEVXazd0dDVpM04xMmhjcVU1T05RbjRmUUgyY1hlR0RrQkg4dmQzbDZ5Zw?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPNzRaQ2pNSHRyQnBMLS02MHhJd2RZbEhseUp4Z2pxcEE3VUZGdUhrb0ktWFpUMktoUzF4Um55UDFfcVlqYjRCczZtbGJySnNuSUdXXzkyMGpTR1hRbzAxZkEtTzdRemRRazVQdFF4RmNvVWlfTlI1ZjNmZTFCak5jVU5KNFkxQmIwQ3ZPSXFrRkotbnYwMVZQOXlFODhxRGxQTWNIbWpfd3dwR0l6d05pS9IBtgFBVV95cUxNOVVnZ3BRb291enlqd05rSXZRSExrd2pOOUtacmtxOVlHQ21DSlJMMFNGWUlDVjhRRmZFUGl2Y3NqclBKczhoRU9XYW1NMmNBeWdlU1R0MmZ3UjZFSl9uU2lpR0hBRUIxVTMzS1hTNHB2WkFkLU5CZmlLbmpFb3pYX0VlbmtQaHVzSFFjSEVXazd0dDVpM04xMmhjcVU1T05RbjRmUUgyY1hlR0RrQkg4dmQzbDZ5Zw?oc=5",
-          "time": "2026-11-11T18:29:35Z",
-          "published_date": "2026-11-11T18:29:35Z",
-          "publishedDate": "2026-11-11T18:29:35Z",
+          "id": "f2f673a28b79",
+          "sourceLabel": "Al Jazeera",
+          "sourceName": "Al Jazeera",
+          "sourceType": "international",
+          "title": "Xi Jinping says Taiwan ‘reunification’ with China must happen",
+          "summary": "Xi Jinping, President of China, has called for the peaceful ‘reunification’ of Taiwan with China.",
+          "summary_snippet": "Xi Jinping, President of China, has called for the peaceful ‘reunification’ of Taiwan with China.",
+          "source": "https://www.aljazeera.com/video/newsfeed/2026/11/12/xi-jinping-says-taiwan-reunification-with-china-must-happen?traffic_source=rss",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/12/xi-jinping-says-taiwan-reunification-with-china-must-happen?traffic_source=rss",
+          "time": "2026-11-12T08:34:45Z",
+          "published_date": "2026-11-12T08:34:45Z",
+          "publishedDate": "2026-11-12T08:34:45Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "google_news_mexico_cartel_conflict",
-            "sourceUrl": "https://news.google.com/rss/search?q=Mexico+cartel+Sinaloa+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "f38c2c6150b7",
-          "sourceLabel": "Google News — Mexico Cartel Conflict",
-          "sourceName": "Google News — Mexico Cartel Conflict",
-          "sourceType": "americas-conflict",
-          "title": "Mexico arrests 14 suspected members of the Sinaloa Cartel ᐉ News from Fakti.bg - Crimes - Fakti.bg",
-          "summary": "Mexico arrests 14 suspected members of the Sinaloa Cartel ᐉ News from Fakti.bg - Crimes Fakti.bg",
-          "summary_snippet": "Mexico arrests 14 suspected members of the Sinaloa Cartel ᐉ News from Fakti.bg - Crimes Fakti.bg",
-          "source": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOdzBiVGJ6MzZGZ3NraE9Ybm1nWjVSTlFIN1NMSFZYdFpHaEpXMnVIYVVoUzlkY2ZFWTVqT2RvS0ZsTGpmWFJ5U29GYnhfSWJvLURzSWVJcXB3WGRuZ0pkX3RvTHJTRlItVWNMZGxOTkV2eEo3TjNBVEJ4bG1kd2tRT2pMd2pWekFRNTlYYmRnMFBVN1FBMWtjX2YtNA?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOdzBiVGJ6MzZGZ3NraE9Ybm1nWjVSTlFIN1NMSFZYdFpHaEpXMnVIYVVoUzlkY2ZFWTVqT2RvS0ZsTGpmWFJ5U29GYnhfSWJvLURzSWVJcXB3WGRuZ0pkX3RvTHJTRlItVWNMZGxOTkV2eEo3TjNBVEJ4bG1kd2tRT2pMd2pWekFRNTlYYmRnMFBVN1FBMWtjX2YtNA?oc=5",
-          "time": "2026-11-11T17:40:00Z",
-          "published_date": "2026-11-11T17:40:00Z",
-          "publishedDate": "2026-11-11T17:40:00Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_mexico_cartel_conflict",
-            "sourceUrl": "https://news.google.com/rss/search?q=Mexico+cartel+Sinaloa+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "sourceId": "al_jazeera",
+            "sourceUrl": "https://www.aljazeera.com/xml/rss/all.xml",
             "feedFormat": "rss"
           }
         }
@@ -629,111 +502,64 @@
       ]
     },
     {
-      "id": "f3e43e36f4d5496c",
-      "title": "Trump defends Iran war in Veterans Day address",
-      "category": "general",
+      "id": "70e801df6924337c",
+      "title": "US envoys arrive in Moscow for Ukraine talks with Vladimir Putin",
+      "category": "diplomatic",
       "confidence": "moderate",
       "reportCount": 2,
       "sourceCount": 2,
       "sources": [
-        "channelnewsasia.com",
-        "foxnews.com"
+        "bbc.co.uk",
+        "aljazeera.com"
       ],
       "anchors": [
-        "iran"
+        "russia",
+        "uk",
+        "ukraine"
       ],
-      "firstSeen": "2026-11-11T18:32:55Z",
-      "lastSeen": "2026-11-11T21:54:00Z",
+      "firstSeen": "2026-11-12T09:01:24Z",
+      "lastSeen": "2026-11-12T10:08:38Z",
       "urls": [
-        "https://www.channelnewsasia.com/world/trump-defends-iran-war-in-veterans-day-address-6543941",
-        "https://www.foxnews.com/politics/trump-defends-iran-war-during-veterans-day-address-says-making-world-safer"
+        "https://www.bbc.co.uk/news/articles/cwrkgmymk55zo?at_medium=RSS&at_campaign=rss",
+        "https://www.aljazeera.com/news/2026/11/12/us-envoys-arrive-in-moscow-for-russia-ukraine-talks-with-putin?traffic_source=rss"
       ],
       "reports": [
         {
-          "id": "00d14d03598e",
-          "sourceLabel": "https://www.channelnewsasia.com/world/trump-defends-iran-war-in-veterans-day-address-6543941",
-          "sourceName": "https://www.channelnewsasia.com/world/trump-defends-iran-war-in-veterans-day-address-6543941",
-          "sourceType": "news",
-          "title": "Trump defends Iran war in Veterans Day address",
-          "summary": "US President Donald Trump defended the war against Iran during a Veterans Day speech, saying the conflict would end soon and make the world \"a much safer and better place\".",
-          "summary_snippet": "US President Donald Trump defended the war against Iran during a Veterans Day speech, saying the conflict would end soon and make the world \"a much safer and better place\".",
-          "source": "https://www.channelnewsasia.com/world/trump-defends-iran-war-in-veterans-day-address-6543941",
-          "url": "https://www.channelnewsasia.com/world/trump-defends-iran-war-in-veterans-day-address-6543941",
-          "time": "2026-11-11T21:54:00Z",
-          "published_date": "2026-11-11T21:54:00Z",
-          "publishedDate": "2026-11-11T21:54:00Z",
+          "id": "c6a88938b538",
+          "sourceLabel": "BBC World",
+          "sourceName": "BBC World",
+          "sourceType": "international",
+          "title": "US envoys arrive in Moscow for Ukraine talks with Vladimir Putin",
+          "summary": "Later on Thursday, Jared Kushner and Steve Witkoff will travel to Dublin to meet Ukraine's Volodymyr Zelensky.",
+          "summary_snippet": "Later on Thursday, Jared Kushner and Steve Witkoff will travel to Dublin to meet Ukraine's Volodymyr Zelensky.",
+          "source": "https://www.bbc.co.uk/news/articles/cwrkgmymk55zo?at_medium=RSS&at_campaign=rss",
+          "url": "https://www.bbc.co.uk/news/articles/cwrkgmymk55zo?at_medium=RSS&at_campaign=rss",
+          "time": "2026-11-12T10:08:38Z",
+          "published_date": "2026-11-12T10:08:38Z",
+          "publishedDate": "2026-11-12T10:08:38Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "cna_world",
-            "sourceUrl": "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml&category=6311",
+            "sourceId": "bbc_world",
+            "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
             "feedFormat": "rss"
           }
         },
         {
-          "id": "db7de4c1860a",
-          "sourceLabel": "https://www.foxnews.com/politics/trump-defends-iran-war-during-veterans-day-address-says-making-world-safer",
-          "sourceName": "https://www.foxnews.com/politics/trump-defends-iran-war-during-veterans-day-address-says-making-world-safer",
-          "sourceType": "us-politics",
-          "title": "Trump defends Iran war during Veterans Day address, says he is making the world 'safer'",
-          "summary": "Trump told veterans at Arlington National Cemetery that the Iran conflict will end soon, vowing \"total victory\" in his Veterans Day address.",
-          "summary_snippet": "Trump told veterans at Arlington National Cemetery that the Iran conflict will end soon, vowing \"total victory\" in his Veterans Day address.",
-          "source": "https://www.foxnews.com/politics/trump-defends-iran-war-during-veterans-day-address-says-making-world-safer",
-          "url": "https://www.foxnews.com/politics/trump-defends-iran-war-during-veterans-day-address-says-making-world-safer",
-          "time": "2026-11-11T18:32:55Z",
-          "published_date": "2026-11-11T18:32:55Z",
-          "publishedDate": "2026-11-11T18:32:55Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "fox_news_politics",
-            "sourceUrl": "https://moxie.foxnews.com/google-publisher/politics.xml",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "b9dc4860679a5f5e",
-      "title": "Hormuz Strait will ‘never return’ to pre-war status, Iran’s Ghalibaf says",
-      "category": "general",
-      "confidence": "moderate",
-      "reportCount": 2,
-      "sourceCount": 2,
-      "sources": [
-        "aljazeera.com",
-        "news.google.com"
-      ],
-      "anchors": [
-        "hormuz",
-        "iran",
-        "israel",
-        "united states"
-      ],
-      "firstSeen": "2026-11-11T20:26:52Z",
-      "lastSeen": "2026-11-11T21:03:40Z",
-      "urls": [
-        "https://www.aljazeera.com/news/2026/11/11/strait-of-hormuz-will-never-return-to-pre-war-status-ghalibaf?traffic_source=rss",
-        "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5nTzlhOGZTS180cWNtVG91c2VWRVJFYlk0cW5Ba1RHUEFOSEtldU15QktQT0EzRVY1ZVdZZ0VTRHVWTVhyN1IzeU1wbmlDMUhrQ3Roc1YxcmdMUQ?oc=5"
-      ],
-      "reports": [
-        {
-          "id": "2ddd21430297",
-          "sourceLabel": "https://www.aljazeera.com/news/2026/11/11/strait-of-hormuz-will-never-return-to-pre-war-status-ghalibaf?traffic_source=rss",
-          "sourceName": "https://www.aljazeera.com/news/2026/11/11/strait-of-hormuz-will-never-return-to-pre-war-status-ghalibaf?traffic_source=rss",
+          "id": "433c28badd31",
+          "sourceLabel": "Al Jazeera",
+          "sourceName": "Al Jazeera",
           "sourceType": "international",
-          "title": "Hormuz Strait will ‘never return’ to pre-war status, Iran’s Ghalibaf says",
-          "summary": "Iran's parliament speaker and top negotiator says Tehran is waiting for an official US response to its seven conditions.",
-          "summary_snippet": "Iran's parliament speaker and top negotiator says Tehran is waiting for an official US response to its seven conditions.",
-          "source": "https://www.aljazeera.com/news/2026/11/11/strait-of-hormuz-will-never-return-to-pre-war-status-ghalibaf?traffic_source=rss",
-          "url": "https://www.aljazeera.com/news/2026/11/11/strait-of-hormuz-will-never-return-to-pre-war-status-ghalibaf?traffic_source=rss",
-          "time": "2026-11-11T21:03:40Z",
-          "published_date": "2026-11-11T21:03:40Z",
-          "publishedDate": "2026-11-11T21:03:40Z",
+          "title": "US envoys arrive in Moscow for Russia-Ukraine talks with Putin",
+          "summary": "The meeting with Kushner and Witkoff comes after two days of trilateral talks in the UAE yielded no breakthrough.",
+          "summary_snippet": "The meeting with Kushner and Witkoff comes after two days of trilateral talks in the UAE yielded no breakthrough.",
+          "source": "https://www.aljazeera.com/news/2026/11/12/us-envoys-arrive-in-moscow-for-russia-ukraine-talks-with-putin?traffic_source=rss",
+          "url": "https://www.aljazeera.com/news/2026/11/12/us-envoys-arrive-in-moscow-for-russia-ukraine-talks-with-putin?traffic_source=rss",
+          "time": "2026-11-12T09:01:24Z",
+          "published_date": "2026-11-12T09:01:24Z",
+          "publishedDate": "2026-11-12T09:01:24Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
@@ -743,36 +569,13 @@
             "sourceUrl": "https://www.aljazeera.com/xml/rss/all.xml",
             "feedFormat": "rss"
           }
-        },
-        {
-          "id": "f3aeb09e0dce",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5nTzlhOGZTS180cWNtVG91c2VWRVJFYlk0cW5Ba1RHUEFOSEtldU15QktQT0EzRVY1ZVdZZ0VTRHVWTVhyN1IzeU1wbmlDMUhrQ3Roc1YxcmdMUQ?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5nTzlhOGZTS180cWNtVG91c2VWRVJFYlk0cW5Ba1RHUEFOSEtldU15QktQT0EzRVY1ZVdZZ0VTRHVWTVhyN1IzeU1wbmlDMUhrQ3Roc1YxcmdMUQ?oc=5",
-          "sourceType": "live",
-          "title": "2026 Iran war | Oil, Explained, United States, Israel, Strait of Hormuz, Map, & Conflict - Britannica",
-          "summary": "2026 Iran war | Oil, Explained, United States, Israel, Strait of Hormuz, Map, & Conflict Britannica",
-          "summary_snippet": "2026 Iran war | Oil, Explained, United States, Israel, Strait of Hormuz, Map, & Conflict Britannica",
-          "source": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5nTzlhOGZTS180cWNtVG91c2VWRVJFYlk0cW5Ba1RHUEFOSEtldU15QktQT0EzRVY1ZVdZZ0VTRHVWTVhyN1IzeU1wbmlDMUhrQ3Roc1YxcmdMUQ?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5nTzlhOGZTS180cWNtVG91c2VWRVJFYlk0cW5Ba1RHUEFOSEtldU15QktQT0EzRVY1ZVdZZ0VTRHVWTVhyN1IzeU1wbmlDMUhrQ3Roc1YxcmdMUQ?oc=5",
-          "time": "2026-11-11T20:26:52Z",
-          "published_date": "2026-11-11T20:26:52Z",
-          "publishedDate": "2026-11-11T20:26:52Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_global_conflict",
-            "sourceUrl": "https://news.google.com/rss/search?q=war+conflict+military+sanctions+crisis+attack+airstrike+missile+drone+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
         }
       ]
     },
     {
-      "id": "c90bcc6af42bffd5",
-      "title": "Trump’s White House calls Democratic plans for congressional probes ‘abuse’ - Al Jazeera",
-      "category": "general",
+      "id": "0c28619f14c26c2e",
+      "title": "Ten police officers, 18 fighters killed in northwest Pakistan attack - Al Jazeera",
+      "category": "conflict",
       "confidence": "moderate",
       "reportCount": 2,
       "sourceCount": 2,
@@ -781,47 +584,49 @@
         "aljazeera.com"
       ],
       "anchors": [],
-      "firstSeen": "2026-11-11T20:39:50Z",
-      "lastSeen": "2026-11-11T20:48:45Z",
+      "firstSeen": "2026-11-12T08:35:20Z",
+      "lastSeen": "2026-11-12T08:35:47Z",
       "urls": [
-        "https://news.google.com/rss/articles/CBMitAFBVV95cUxOWVlLUWJmS0Z1SE5YWG4xZ3gweTQyUEwtaVNKQmJSWU5UQ2c4UTdLb1plUTNQRURBRG4ycHVzdUJGajNMdTBYT0Iwd2tnQUt5UDVWazF4dVBNQmN1RHlHbFg0X2FTcERXaTRGUE1RVHNqTktzbVpBakxTRG5rMzN5ei1QOHFXc2lvZlBYbmVfVGEwVERSWmdDNmEyRV9FdmJhWGZZRWF0TE5IRGE4RndfNzlCUkHSAboBQVVfeXFMUFJkTnB1VzBvdTBKdG96Vy16aFdiOHlkZTVzanNWUHRpUjJrUzlseUNiblNSX2hZQXlvMm9tbnFmakRYWVRKNFRocExpUjZNcktXN0RXOUZlMTQ2ODJNOHhnY2hsTFNMR2VJWkM1Rl9oa0hTNWVtMlVER0xfU1VULXhFeXpITDRzaG5wT1BkUXFhck13YW1JQ0RKUHNXU2JXUVdaOUItc3htTnBvaVVvMlJTTWQ4R2g1UVBn?oc=5",
-        "https://www.aljazeera.com/news/2026/11/11/trumps-white-house-calls-democratic-plans-for-congressional-probes-abuse?traffic_source=rss"
+        "https://news.google.com/rss/articles/CBMirgFBVV95cUxOR1EyZEVPSGEzVExyQ2lZSE5kX2pDYzRpXzc5U3dsMnp1aWlwWWhURzhpUmtjbGliOC1RdG5KY21DbGdfV0JUWU9TNWQtQ0k3WEZjczdPSTJEcktseDNVZTJfOVVqZlFCYWE3MHIzNFpYTkR4T00xY2FiSnNSdEFXMzBqVllRU3RBT1ZGOWdPRXFjTkd6VE1lcDkwaGpKQnVlQXRRRmFxa2huV1QxSUHSAbMBQVVfeXFMUFI0dmR5M2pRekxQMjU4eTRIbS1Jd2dNUjJYZHVMc0Z2VFMzTEUzSTVYNHBLSS1oOFVxekpoX2JKSS1PQTBNS3RiWEhoVGFpYXlnWXhCY2VSOHphWU1VNnlpQnJHa2IyR1ExZjRMM1Z0VDhoWWNvbWdzcnAzMGJXLTlMYzNIN0E5UzFwMHd5OFY1d290OHUtMHlKSHhNdktVSkFFdWV1MFctM1huaTJNM1htaDA?oc=5",
+        "https://www.aljazeera.com/news/2026/11/12/ten-police-officers-18-fighters-killed-in-northwest-pakistan-attack?traffic_source=rss"
       ],
       "reports": [
         {
-          "title": "Trump’s White House calls Democratic plans for congressional probes ‘abuse’ - Al Jazeera",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOWVlLUWJmS0Z1SE5YWG4xZ3gweTQyUEwtaVNKQmJSWU5UQ2c4UTdLb1plUTNQRURBRG4ycHVzdUJGajNMdTBYT0Iwd2tnQUt5UDVWazF4dVBNQmN1RHlHbFg0X2FTcERXaTRGUE1RVHNqTktzbVpBakxTRG5rMzN5ei1QOHFXc2lvZlBYbmVfVGEwVERSWmdDNmEyRV9FdmJhWGZZRWF0TE5IRGE4RndfNzlCUkHSAboBQVVfeXFMUFJkTnB1VzBvdTBKdG96Vy16aFdiOHlkZTVzanNWUHRpUjJrUzlseUNiblNSX2hZQXlvMm9tbnFmakRYWVRKNFRocExpUjZNcktXN0RXOUZlMTQ2ODJNOHhnY2hsTFNMR2VJWkM1Rl9oa0hTNWVtMlVER0xfU1VULXhFeXpITDRzaG5wT1BkUXFhck13YW1JQ0RKUHNXU2JXUVdaOUItc3htTnBvaVVvMlJTTWQ4R2g1UVBn?oc=5",
-          "published_date": "2026-11-11T20:48:45Z",
-          "time": "2026-11-11T20:48:45Z",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Al Jazeera",
-          "summary": "Fallback discovery via Google News RSS; publisher: Al Jazeera",
-          "source": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOWVlLUWJmS0Z1SE5YWG4xZ3gweTQyUEwtaVNKQmJSWU5UQ2c4UTdLb1plUTNQRURBRG4ycHVzdUJGajNMdTBYT0Iwd2tnQUt5UDVWazF4dVBNQmN1RHlHbFg0X2FTcERXaTRGUE1RVHNqTktzbVpBakxTRG5rMzN5ei1QOHFXc2lvZlBYbmVfVGEwVERSWmdDNmEyRV9FdmJhWGZZRWF0TE5IRGE4RndfNzlCUkHSAboBQVVfeXFMUFJkTnB1VzBvdTBKdG96Vy16aFdiOHlkZTVzanNWUHRpUjJrUzlseUNiblNSX2hZQXlvMm9tbnFmakRYWVRKNFRocExpUjZNcktXN0RXOUZlMTQ2ODJNOHhnY2hsTFNMR2VJWkM1Rl9oa0hTNWVtMlVER0xfU1VULXhFeXpITDRzaG5wT1BkUXFhck13YW1JQ0RKUHNXU2JXUVdaOUItc3htTnBvaVVvMlJTTWQ4R2g1UVBn?oc=5",
-          "sourceLabel": "Al Jazeera",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @WhiteHouse",
-          "credit_metadata": "Google News RSS fallback",
-          "id": "ae374e45083c",
-          "sourceName": "Al Jazeera",
-          "publishedDate": "2026-11-11T20:48:45Z",
-          "tag": "World",
+          "id": "592574bc561e",
+          "sourceLabel": "Google News — Afghanistan Security",
+          "sourceName": "Google News — Afghanistan Security",
+          "sourceType": "south-asia-conflict",
+          "title": "Ten police officers, 18 fighters killed in northwest Pakistan attack - Al Jazeera",
+          "summary": "Ten police officers, 18 fighters killed in northwest Pakistan attack Al Jazeera",
+          "summary_snippet": "Ten police officers, 18 fighters killed in northwest Pakistan attack Al Jazeera",
+          "source": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOR1EyZEVPSGEzVExyQ2lZSE5kX2pDYzRpXzc5U3dsMnp1aWlwWWhURzhpUmtjbGliOC1RdG5KY21DbGdfV0JUWU9TNWQtQ0k3WEZjczdPSTJEcktseDNVZTJfOVVqZlFCYWE3MHIzNFpYTkR4T00xY2FiSnNSdEFXMzBqVllRU3RBT1ZGOWdPRXFjTkd6VE1lcDkwaGpKQnVlQXRRRmFxa2huV1QxSUHSAbMBQVVfeXFMUFI0dmR5M2pRekxQMjU4eTRIbS1Jd2dNUjJYZHVMc0Z2VFMzTEUzSTVYNHBLSS1oOFVxekpoX2JKSS1PQTBNS3RiWEhoVGFpYXlnWXhCY2VSOHphWU1VNnlpQnJHa2IyR1ExZjRMM1Z0VDhoWWNvbWdzcnAzMGJXLTlMYzNIN0E5UzFwMHd5OFY1d290OHUtMHlKSHhNdktVSkFFdWV1MFctM1huaTJNM1htaDA?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOR1EyZEVPSGEzVExyQ2lZSE5kX2pDYzRpXzc5U3dsMnp1aWlwWWhURzhpUmtjbGliOC1RdG5KY21DbGdfV0JUWU9TNWQtQ0k3WEZjczdPSTJEcktseDNVZTJfOVVqZlFCYWE3MHIzNFpYTkR4T00xY2FiSnNSdEFXMzBqVllRU3RBT1ZGOWdPRXFjTkd6VE1lcDkwaGpKQnVlQXRRRmFxa2huV1QxSUHSAbMBQVVfeXFMUFI0dmR5M2pRekxQMjU4eTRIbS1Jd2dNUjJYZHVMc0Z2VFMzTEUzSTVYNHBLSS1oOFVxekpoX2JKSS1PQTBNS3RiWEhoVGFpYXlnWXhCY2VSOHphWU1VNnlpQnJHa2IyR1ExZjRMM1Z0VDhoWWNvbWdzcnAzMGJXLTlMYzNIN0E5UzFwMHd5OFY1d290OHUtMHlKSHhNdktVSkFFdWV1MFctM1huaTJNM1htaDA?oc=5",
+          "time": "2026-11-12T08:35:47Z",
+          "published_date": "2026-11-12T08:35:47Z",
+          "publishedDate": "2026-11-12T08:35:47Z",
+          "tag": "Breaking",
           "confidence": "DEVELOPING",
-          "breaking": false,
+          "breaking": true,
           "liveDatabase": true,
-          "credit": "Google News RSS fallback"
+          "credit": {
+            "sourceId": "google_news_afghanistan_security",
+            "sourceUrl": "https://news.google.com/rss/search?q=Afghanistan+Taliban+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
         },
         {
-          "id": "ff69673c5148",
-          "sourceLabel": "https://www.aljazeera.com/news/2026/11/11/trumps-white-house-calls-democratic-plans-for-congressional-probes-abuse?traffic_source=rss",
-          "sourceName": "https://www.aljazeera.com/news/2026/11/11/trumps-white-house-calls-democratic-plans-for-congressional-probes-abuse?traffic_source=rss",
+          "id": "b0a8093170fa",
+          "sourceLabel": "Al Jazeera",
+          "sourceName": "Al Jazeera",
           "sourceType": "international",
-          "title": "Trump’s White House calls Democratic plans for congressional probes ‘abuse’",
-          "summary": "Democratic lawmaker Robert Garcia denounced a White House letter as an unconstitutional attack on legislative branch.",
-          "summary_snippet": "Democratic lawmaker Robert Garcia denounced a White House letter as an unconstitutional attack on legislative branch.",
-          "source": "https://www.aljazeera.com/news/2026/11/11/trumps-white-house-calls-democratic-plans-for-congressional-probes-abuse?traffic_source=rss",
-          "url": "https://www.aljazeera.com/news/2026/11/11/trumps-white-house-calls-democratic-plans-for-congressional-probes-abuse?traffic_source=rss",
-          "time": "2026-11-11T20:39:50Z",
-          "published_date": "2026-11-11T20:39:50Z",
-          "publishedDate": "2026-11-11T20:39:50Z",
+          "title": "Ten police officers, 18 fighters killed in northwest Pakistan attack",
+          "summary": "Officers were returning from a mine in Kohat district when fighters opened fire on them, authorities say.",
+          "summary_snippet": "Officers were returning from a mine in Kohat district when fighters opened fire on them, authorities say.",
+          "source": "https://www.aljazeera.com/news/2026/11/12/ten-police-officers-18-fighters-killed-in-northwest-pakistan-attack?traffic_source=rss",
+          "url": "https://www.aljazeera.com/news/2026/11/12/ten-police-officers-18-fighters-killed-in-northwest-pakistan-attack?traffic_source=rss",
+          "time": "2026-11-12T08:35:20Z",
+          "published_date": "2026-11-12T08:35:20Z",
+          "publishedDate": "2026-11-12T08:35:20Z",
           "tag": "Breaking",
           "confidence": "DEVELOPING",
           "breaking": true,
@@ -835,50 +640,71 @@
       ]
     },
     {
-      "id": "c86469267aaf0dde",
-      "title": "Defence investment and NATO’s 5% commitment - North Atlantic Treaty Organization | NATO",
-      "category": "diplomatic",
-      "confidence": "low",
+      "id": "29bcf10721a4fabc",
+      "title": "Fighting intensifies in Yemen as Houthis deny targeting Mecca - Al Jazeera",
+      "category": "conflict",
+      "confidence": "moderate",
       "reportCount": 2,
-      "sourceCount": 1,
+      "sourceCount": 2,
       "sources": [
-        "news.google.com"
+        "news.google.com",
+        "aljazeera.com"
       ],
       "anchors": [
-        "nato"
+        "yemen"
       ],
-      "firstSeen": "Mon, 29 Jun 2026 07:00:00 GMT",
-      "lastSeen": "Wed, 12 Nov 2025 08:00:00 GMT",
+      "firstSeen": "2026-11-12T04:41:17Z",
+      "lastSeen": "2026-11-12T04:43:49Z",
       "urls": [
-        "https://news.google.com/rss/articles/CBMioAFBVV95cUxON3gyb2lIWU5pSjRMVE9jdDdqTXBHa21pN29vejJXTzQyU2VvZTR5bTdSZXI4bjQ0bGpVbWhqODdlUEhvUENZTG1pQjRreEFud3dHWFZqZk56SHFwZ0l6dVVtd211Sm16MHFjV1h3OGxmLUJTSGdRWkZoWWVBdUFrMDFjSElSNWpPOWtpMGRnZ3hZUU83VjRYUmFoNTdrN1h3?oc=5",
-        "https://news.google.com/rss/articles/CBMikgFBVV95cUxOaFRoaGdzSXNHMlM5ejFsQkxvOGZZYV9ucG1JU1FQUkU3NHdZN1RTOFZDYmZ4MkpSMFBGTXZBSWJHNFBFamR3WHhVUmpxRFBEQ1Z0NjFsM1ZmdmhsZDRSVXBsQU1yZ1lfMWVXOFRLTU9MY25VTmo5RHp2UEhXdVczUmtTREFJVVR4SXhfNG8xVXRLZw?oc=5"
+        "https://news.google.com/rss/articles/CBMipgFBVV95cUxOblNUcC1FYlVmaTQ5VlJIdmFWRG9ubmFQaHVvaWxwUm5WWF9iQ0syNTVZcWk5RXZVWVJHT3BVSndNT000MWVURE1QSTF6dkRFWDlZUWtyNERCbmx6c1VpSmNMaHlUOHEzNkZIM05EYkJXcHo0ZW5xVjAzUzBON1RaVU82WGRqb3Y2ME5wWThpR0lUTnUtcUh5NWNVOGh0aklnWEJGYkdR0gGrAUFVX3lxTE1zVndXa1pmQzQ2TmpPTGx4TERyNkNtYTlTMTFqR1lCYzhRTWZ4ZFpjRlNnUWNoWmQxcnR6MEtCdWczM3JFYS1zeDdESWthRlo2c2F4dG83NURZaVdnSXJ6UGJsMHhneGg5enhGNmg2eENXTUlzbHd6T2FsUVVOVExjNURLNEtpanFfVURqS09ydDQ5RXdVSnNhV2F3ZGFJWXVfV2FIQl9UZEZnYw?oc=5",
+        "https://www.aljazeera.com/news/2026/11/12/fighting-intensifies-in-yemen-as-houthis-deny-targeting-mecca?traffic_source=rss"
       ],
       "reports": [
         {
-          "title": "Defence investment and NATO’s 5% commitment - North Atlantic Treaty Organization | NATO",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxON3gyb2lIWU5pSjRMVE9jdDdqTXBHa21pN29vejJXTzQyU2VvZTR5bTdSZXI4bjQ0bGpVbWhqODdlUEhvUENZTG1pQjRreEFud3dHWFZqZk56SHFwZ0l6dVVtd211Sm16MHFjV1h3OGxmLUJTSGdRWkZoWWVBdUFrMDFjSElSNWpPOWtpMGRnZ3hZUU83VjRYUmFoNTdrN1h3?oc=5",
-          "published_date": "Mon, 29 Jun 2026 07:00:00 GMT",
-          "time": "Mon, 29 Jun 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "summary": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "source": "North Atlantic Treaty Organization | NATO",
-          "sourceLabel": "North Atlantic Treaty Organization | NATO",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NATO",
-          "credit_metadata": "Google News RSS fallback"
+          "id": "6d3df55d113a",
+          "sourceLabel": "Google News — Yemen / Red Sea",
+          "sourceName": "Google News — Yemen / Red Sea",
+          "sourceType": "middle-east-conflict",
+          "title": "Fighting intensifies in Yemen as Houthis deny targeting Mecca - Al Jazeera",
+          "summary": "Fighting intensifies in Yemen as Houthis deny targeting Mecca Al Jazeera",
+          "summary_snippet": "Fighting intensifies in Yemen as Houthis deny targeting Mecca Al Jazeera",
+          "source": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOblNUcC1FYlVmaTQ5VlJIdmFWRG9ubmFQaHVvaWxwUm5WWF9iQ0syNTVZcWk5RXZVWVJHT3BVSndNT000MWVURE1QSTF6dkRFWDlZUWtyNERCbmx6c1VpSmNMaHlUOHEzNkZIM05EYkJXcHo0ZW5xVjAzUzBON1RaVU82WGRqb3Y2ME5wWThpR0lUTnUtcUh5NWNVOGh0aklnWEJGYkdR0gGrAUFVX3lxTE1zVndXa1pmQzQ2TmpPTGx4TERyNkNtYTlTMTFqR1lCYzhRTWZ4ZFpjRlNnUWNoWmQxcnR6MEtCdWczM3JFYS1zeDdESWthRlo2c2F4dG83NURZaVdnSXJ6UGJsMHhneGg5enhGNmg2eENXTUlzbHd6T2FsUVVOVExjNURLNEtpanFfVURqS09ydDQ5RXdVSnNhV2F3ZGFJWXVfV2FIQl9UZEZnYw?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOblNUcC1FYlVmaTQ5VlJIdmFWRG9ubmFQaHVvaWxwUm5WWF9iQ0syNTVZcWk5RXZVWVJHT3BVSndNT000MWVURE1QSTF6dkRFWDlZUWtyNERCbmx6c1VpSmNMaHlUOHEzNkZIM05EYkJXcHo0ZW5xVjAzUzBON1RaVU82WGRqb3Y2ME5wWThpR0lUTnUtcUh5NWNVOGh0aklnWEJGYkdR0gGrAUFVX3lxTE1zVndXa1pmQzQ2TmpPTGx4TERyNkNtYTlTMTFqR1lCYzhRTWZ4ZFpjRlNnUWNoWmQxcnR6MEtCdWczM3JFYS1zeDdESWthRlo2c2F4dG83NURZaVdnSXJ6UGJsMHhneGg5enhGNmg2eENXTUlzbHd6T2FsUVVOVExjNURLNEtpanFfVURqS09ydDQ5RXdVSnNhV2F3ZGFJWXVfV2FIQl9UZEZnYw?oc=5",
+          "time": "2026-11-12T04:43:49Z",
+          "published_date": "2026-11-12T04:43:49Z",
+          "publishedDate": "2026-11-12T04:43:49Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_yemen_red_sea",
+            "sourceUrl": "https://news.google.com/rss/search?q=Yemen+Houthis+Red+Sea+shipping+missile+drone+conflict+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
         },
         {
-          "title": "Collective defence and Article 5 - North Atlantic Treaty Organization | NATO",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOaFRoaGdzSXNHMlM5ejFsQkxvOGZZYV9ucG1JU1FQUkU3NHdZN1RTOFZDYmZ4MkpSMFBGTXZBSWJHNFBFamR3WHhVUmpxRFBEQ1Z0NjFsM1ZmdmhsZDRSVXBsQU1yZ1lfMWVXOFRLTU9MY25VTmo5RHp2UEhXdVczUmtTREFJVVR4SXhfNG8xVXRLZw?oc=5",
-          "published_date": "Wed, 12 Nov 2025 08:00:00 GMT",
-          "time": "Wed, 12 Nov 2025 08:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "summary": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "source": "North Atlantic Treaty Organization | NATO",
-          "sourceLabel": "North Atlantic Treaty Organization | NATO",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NATO",
-          "credit_metadata": "Google News RSS fallback"
+          "id": "fc7dbdd5e16f",
+          "sourceLabel": "Al Jazeera",
+          "sourceName": "Al Jazeera",
+          "sourceType": "international",
+          "title": "Fighting intensifies in Yemen as Houthis deny targeting Mecca",
+          "summary": "World Health Organization says more than 320,000 people have been displaced in Yemen fighting since August 1.",
+          "summary_snippet": "World Health Organization says more than 320,000 people have been displaced in Yemen fighting since August 1.",
+          "source": "https://www.aljazeera.com/news/2026/11/12/fighting-intensifies-in-yemen-as-houthis-deny-targeting-mecca?traffic_source=rss",
+          "url": "https://www.aljazeera.com/news/2026/11/12/fighting-intensifies-in-yemen-as-houthis-deny-targeting-mecca?traffic_source=rss",
+          "time": "2026-11-12T04:41:17Z",
+          "published_date": "2026-11-12T04:41:17Z",
+          "publishedDate": "2026-11-12T04:41:17Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "al_jazeera",
+            "sourceUrl": "https://www.aljazeera.com/xml/rss/all.xml",
+            "feedFormat": "rss"
+          }
         }
       ]
     },
@@ -931,75 +757,9 @@
       ]
     },
     {
-      "id": "065d920aedff1851",
-      "title": "Main - Odessa Journal",
+      "id": "a72db7549fa92d1a",
+      "title": "Ukraine Seeks €40 Billion in Defence Funding for 2027, Prioritising Drones and Air Defence - Oj - Odessa Journal",
       "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "2026-11-11T20:57:55Z",
-      "lastSeen": "2026-11-11T21:58:53Z",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMitwFBVV95cUxOUUNlcnFfUG5seTJwZ0xMaVdPb0NPRnFndDVVM2ZWMk02dlhRdWhoU0JPTFhUMkY4M01pVk1FVXFUemh2WDNQM0JaS2JBQTZ3V3FYWFgtR25lVEVwNC1xQ09sN1ZIRWViYU1hcVo0dUFseF9IVUI5NW1RcUtwTzNvRGdia0I1a1RQdlllVF9kWU5iRTF3NmdMcWtFR2x4OVRFN3lsRWI3TzFZUFZyQ015QmY3RDU0LUk?oc=5",
-        "https://news.google.com/rss/articles/CBMikwFBVV95cUxOeWdqaGJQck1zZWtiMUFETk1RT3R2M1hTbFpoNmxpUU1OMGlMYUlhcTQ0YW9UQzMtOFFfdjhBQVFRUUJiemNsdGFSVVE4MXc3cGdsV2RGYXg3VHVMb2dMcXNTdlB6LVFXNXMtSDFkMHJrU0YxUXFsQU1rQTk5bXdIcVFLQUtSTVRRaUF1cWxrejlITjQ?oc=5"
-      ],
-      "reports": [
-        {
-          "id": "85f60c712c5d",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOUUNlcnFfUG5seTJwZ0xMaVdPb0NPRnFndDVVM2ZWMk02dlhRdWhoU0JPTFhUMkY4M01pVk1FVXFUemh2WDNQM0JaS2JBQTZ3V3FYWFgtR25lVEVwNC1xQ09sN1ZIRWViYU1hcVo0dUFseF9IVUI5NW1RcUtwTzNvRGdia0I1a1RQdlllVF9kWU5iRTF3NmdMcWtFR2x4OVRFN3lsRWI3TzFZUFZyQ015QmY3RDU0LUk?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOUUNlcnFfUG5seTJwZ0xMaVdPb0NPRnFndDVVM2ZWMk02dlhRdWhoU0JPTFhUMkY4M01pVk1FVXFUemh2WDNQM0JaS2JBQTZ3V3FYWFgtR25lVEVwNC1xQ09sN1ZIRWViYU1hcVo0dUFseF9IVUI5NW1RcUtwTzNvRGdia0I1a1RQdlllVF9kWU5iRTF3NmdMcWtFR2x4OVRFN3lsRWI3TzFZUFZyQ015QmY3RDU0LUk?oc=5",
-          "sourceType": "europe-conflict",
-          "title": "Main - Odessa Journal",
-          "summary": "Main Odessa Journal",
-          "summary_snippet": "Main Odessa Journal",
-          "source": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOUUNlcnFfUG5seTJwZ0xMaVdPb0NPRnFndDVVM2ZWMk02dlhRdWhoU0JPTFhUMkY4M01pVk1FVXFUemh2WDNQM0JaS2JBQTZ3V3FYWFgtR25lVEVwNC1xQ09sN1ZIRWViYU1hcVo0dUFseF9IVUI5NW1RcUtwTzNvRGdia0I1a1RQdlllVF9kWU5iRTF3NmdMcWtFR2x4OVRFN3lsRWI3TzFZUFZyQ015QmY3RDU0LUk?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOUUNlcnFfUG5seTJwZ0xMaVdPb0NPRnFndDVVM2ZWMk02dlhRdWhoU0JPTFhUMkY4M01pVk1FVXFUemh2WDNQM0JaS2JBQTZ3V3FYWFgtR25lVEVwNC1xQ09sN1ZIRWViYU1hcVo0dUFseF9IVUI5NW1RcUtwTzNvRGdia0I1a1RQdlllVF9kWU5iRTF3NmdMcWtFR2x4OVRFN3lsRWI3TzFZUFZyQ015QmY3RDU0LUk?oc=5",
-          "time": "2026-11-11T21:58:53Z",
-          "published_date": "2026-11-11T21:58:53Z",
-          "publishedDate": "2026-11-11T21:58:53Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_ukraine_war",
-            "sourceUrl": "https://news.google.com/rss/search?q=Ukraine+Russia+war+frontline+missile+drone+strike+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "609afeb8c925",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOeWdqaGJQck1zZWtiMUFETk1RT3R2M1hTbFpoNmxpUU1OMGlMYUlhcTQ0YW9UQzMtOFFfdjhBQVFRUUJiemNsdGFSVVE4MXc3cGdsV2RGYXg3VHVMb2dMcXNTdlB6LVFXNXMtSDFkMHJrU0YxUXFsQU1rQTk5bXdIcVFLQUtSTVRRaUF1cWxrejlITjQ?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOeWdqaGJQck1zZWtiMUFETk1RT3R2M1hTbFpoNmxpUU1OMGlMYUlhcTQ0YW9UQzMtOFFfdjhBQVFRUUJiemNsdGFSVVE4MXc3cGdsV2RGYXg3VHVMb2dMcXNTdlB6LVFXNXMtSDFkMHJrU0YxUXFsQU1rQTk5bXdIcVFLQUtSTVRRaUF1cWxrejlITjQ?oc=5",
-          "sourceType": "europe-conflict",
-          "title": "Main - Odessa Journal",
-          "summary": "Main Odessa Journal",
-          "summary_snippet": "Main Odessa Journal",
-          "source": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOeWdqaGJQck1zZWtiMUFETk1RT3R2M1hTbFpoNmxpUU1OMGlMYUlhcTQ0YW9UQzMtOFFfdjhBQVFRUUJiemNsdGFSVVE4MXc3cGdsV2RGYXg3VHVMb2dMcXNTdlB6LVFXNXMtSDFkMHJrU0YxUXFsQU1rQTk5bXdIcVFLQUtSTVRRaUF1cWxrejlITjQ?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOeWdqaGJQck1zZWtiMUFETk1RT3R2M1hTbFpoNmxpUU1OMGlMYUlhcTQ0YW9UQzMtOFFfdjhBQVFRUUJiemNsdGFSVVE4MXc3cGdsV2RGYXg3VHVMb2dMcXNTdlB6LVFXNXMtSDFkMHJrU0YxUXFsQU1rQTk5bXdIcVFLQUtSTVRRaUF1cWxrejlITjQ?oc=5",
-          "time": "2026-11-11T20:57:55Z",
-          "published_date": "2026-11-11T20:57:55Z",
-          "publishedDate": "2026-11-11T20:57:55Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_ukraine_war",
-            "sourceUrl": "https://news.google.com/rss/search?q=Ukraine+Russia+war+frontline+missile+drone+strike+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "856e0f317c21eafd",
-      "title": "Ukrainian Drones Strike Russian Oil Terminals and Missile Ship in Ust-Luga Operation - Oj - Odessa Journal",
-      "category": "conflict",
       "confidence": "low",
       "reportCount": 2,
       "sourceCount": 1,
@@ -1011,26 +771,26 @@
         "uk",
         "ukraine"
       ],
-      "firstSeen": "2026-11-11T21:47:37Z",
-      "lastSeen": "2026-11-11T21:58:53Z",
+      "firstSeen": "2026-11-12T07:36:47Z",
+      "lastSeen": "2026-11-12T08:28:27Z",
       "urls": [
-        "https://news.google.com/rss/articles/CBMirgFBVV95cUxQRTF0MWc2Zk9vUjRiaWxKWHdwMGZIRHpkVmhoUGJwLW5lcGpxc1cwUWR2RnZ4dVM2R1NTTzg2aE1FMjNFSzhlSHdmYWRBS0tiTzJxQlVseG5yZ19mOGZuSEQ3bWd2bS1jWTdGRlJCOVFoc1lONmMwTHFUX09UWGc3bHd5RzV5cUFfVjRxSWlsdXJwUTJ1M3I1U2pqNmNjYXo0UWdteW13c1JkNmJsbVE?oc=5",
-        "https://news.google.com/rss/articles/CBMinAFBVV95cUxPaFhzNzU1RlVaQnF4dFZETmdpNmotNEt2V2lpVzA0aENyNVBpUDdmZkJodE5DcjM2ck42ZTVBWTZDd0RfUUswcEQ3Tkg3dDRMYy0zME5TOHQ5dmlNaUFqSWhkdnI5YUlHZ0E3S25hdU5wTlcxamV1U2FORTNraHpESF8yVWFqOWlqMU5QZk05dEhfeTRIcUFCNUJzTkE?oc=5"
+        "https://news.google.com/rss/articles/CBMinwFBVV95cUxPTzBneUFOdGxRMTZoMTZPeFZGY0g2b0ZYdXg3b1dKeWtiVk91aVh1ME5nbjVzSmd6LWZubVA1NktSVmVGZE55V0NNWVotMTdJNFhLRlNSSGtMTUViaDZueU9OSV9PV3dhQ1dVbV9yZjM4SlRxZUdWVl8xYWJ6UjdjNHR0NDk3T2pOa0c0Y1NwMTIxQl9LXzY0dV9WSlRSZWc?oc=5",
+        "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOSl9LVktmWTktS3RfVWFNOWpEcnJNMHcxVVQ5bnhvX3pQeUhNa2JLT3J3Y2V6Y3RaRGZaVGdic0hJTVctZ0ZPc2JTNkFWYnVCTDkyWjRYNDRHSm15cWp2VjZBajVkLWY5SXBRUTJDYTkzMWJ4SFZGVDhCbDU2TE5nSUY5ZHNGdW9ESTQ4QlN4M0xKTC1DYm14UVFsekd6VTJrT1pRZEQyUVFSQQ?oc=5"
       ],
       "reports": [
         {
-          "id": "3142c0365864",
+          "id": "c9c7a1ce0ded",
           "sourceLabel": "Google News — Ukraine War",
           "sourceName": "Google News — Ukraine War",
           "sourceType": "europe-conflict",
-          "title": "Ukrainian Drones Strike Russian Oil Terminals and Missile Ship in Ust-Luga Operation - Oj - Odessa Journal",
-          "summary": "Ukrainian Drones Strike Russian Oil Terminals and Missile Ship in Ust-Luga Operation - Oj Odessa Journal",
-          "summary_snippet": "Ukrainian Drones Strike Russian Oil Terminals and Missile Ship in Ust-Luga Operation - Oj Odessa Journal",
-          "source": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQRTF0MWc2Zk9vUjRiaWxKWHdwMGZIRHpkVmhoUGJwLW5lcGpxc1cwUWR2RnZ4dVM2R1NTTzg2aE1FMjNFSzhlSHdmYWRBS0tiTzJxQlVseG5yZ19mOGZuSEQ3bWd2bS1jWTdGRlJCOVFoc1lONmMwTHFUX09UWGc3bHd5RzV5cUFfVjRxSWlsdXJwUTJ1M3I1U2pqNmNjYXo0UWdteW13c1JkNmJsbVE?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQRTF0MWc2Zk9vUjRiaWxKWHdwMGZIRHpkVmhoUGJwLW5lcGpxc1cwUWR2RnZ4dVM2R1NTTzg2aE1FMjNFSzhlSHdmYWRBS0tiTzJxQlVseG5yZ19mOGZuSEQ3bWd2bS1jWTdGRlJCOVFoc1lONmMwTHFUX09UWGc3bHd5RzV5cUFfVjRxSWlsdXJwUTJ1M3I1U2pqNmNjYXo0UWdteW13c1JkNmJsbVE?oc=5",
-          "time": "2026-11-11T21:58:53Z",
-          "published_date": "2026-11-11T21:58:53Z",
-          "publishedDate": "2026-11-11T21:58:53Z",
+          "title": "Ukraine Seeks €40 Billion in Defence Funding for 2027, Prioritising Drones and Air Defence - Oj - Odessa Journal",
+          "summary": "Ukraine Seeks €40 Billion in Defence Funding for 2027, Prioritising Drones and Air Defence - Oj Odessa Journal",
+          "summary_snippet": "Ukraine Seeks €40 Billion in Defence Funding for 2027, Prioritising Drones and Air Defence - Oj Odessa Journal",
+          "source": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPTzBneUFOdGxRMTZoMTZPeFZGY0g2b0ZYdXg3b1dKeWtiVk91aVh1ME5nbjVzSmd6LWZubVA1NktSVmVGZE55V0NNWVotMTdJNFhLRlNSSGtMTUViaDZueU9OSV9PV3dhQ1dVbV9yZjM4SlRxZUdWVl8xYWJ6UjdjNHR0NDk3T2pOa0c0Y1NwMTIxQl9LXzY0dV9WSlRSZWc?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPTzBneUFOdGxRMTZoMTZPeFZGY0g2b0ZYdXg3b1dKeWtiVk91aVh1ME5nbjVzSmd6LWZubVA1NktSVmVGZE55V0NNWVotMTdJNFhLRlNSSGtMTUViaDZueU9OSV9PV3dhQ1dVbV9yZjM4SlRxZUdWVl8xYWJ6UjdjNHR0NDk3T2pOa0c0Y1NwMTIxQl9LXzY0dV9WSlRSZWc?oc=5",
+          "time": "2026-11-12T08:28:27Z",
+          "published_date": "2026-11-12T08:28:27Z",
+          "publishedDate": "2026-11-12T08:28:27Z",
           "tag": "Breaking",
           "confidence": "DEVELOPING",
           "breaking": true,
@@ -1042,18 +802,18 @@
           }
         },
         {
-          "id": "133dfdd6e7e8",
+          "id": "741e75b7d1f3",
           "sourceLabel": "Google News — Ukraine War",
           "sourceName": "Google News — Ukraine War",
           "sourceType": "europe-conflict",
-          "title": "Ukraine Neutralises Over 3,000 Russian Attack Drones in Just 10 Days - Oj - Odessa Journal",
-          "summary": "Ukraine Neutralises Over 3,000 Russian Attack Drones in Just 10 Days - Oj Odessa Journal",
-          "summary_snippet": "Ukraine Neutralises Over 3,000 Russian Attack Drones in Just 10 Days - Oj Odessa Journal",
-          "source": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPaFhzNzU1RlVaQnF4dFZETmdpNmotNEt2V2lpVzA0aENyNVBpUDdmZkJodE5DcjM2ck42ZTVBWTZDd0RfUUswcEQ3Tkg3dDRMYy0zME5TOHQ5dmlNaUFqSWhkdnI5YUlHZ0E3S25hdU5wTlcxamV1U2FORTNraHpESF8yVWFqOWlqMU5QZk05dEhfeTRIcUFCNUJzTkE?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPaFhzNzU1RlVaQnF4dFZETmdpNmotNEt2V2lpVzA0aENyNVBpUDdmZkJodE5DcjM2ck42ZTVBWTZDd0RfUUswcEQ3Tkg3dDRMYy0zME5TOHQ5dmlNaUFqSWhkdnI5YUlHZ0E3S25hdU5wTlcxamV1U2FORTNraHpESF8yVWFqOWlqMU5QZk05dEhfeTRIcUFCNUJzTkE?oc=5",
-          "time": "2026-11-11T21:47:37Z",
-          "published_date": "2026-11-11T21:47:37Z",
-          "publishedDate": "2026-11-11T21:47:37Z",
+          "title": "Russia Attacks Ukraine with Ballistic Missiles, Zircons and 123 Drones, Striking 17 Locations - Oj - Odessa Journal",
+          "summary": "Russia Attacks Ukraine with Ballistic Missiles, Zircons and 123 Drones, Striking 17 Locations - Oj Odessa Journal",
+          "summary_snippet": "Russia Attacks Ukraine with Ballistic Missiles, Zircons and 123 Drones, Striking 17 Locations - Oj Odessa Journal",
+          "source": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOSl9LVktmWTktS3RfVWFNOWpEcnJNMHcxVVQ5bnhvX3pQeUhNa2JLT3J3Y2V6Y3RaRGZaVGdic0hJTVctZ0ZPc2JTNkFWYnVCTDkyWjRYNDRHSm15cWp2VjZBajVkLWY5SXBRUTJDYTkzMWJ4SFZGVDhCbDU2TE5nSUY5ZHNGdW9ESTQ4QlN4M0xKTC1DYm14UVFsekd6VTJrT1pRZEQyUVFSQQ?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOSl9LVktmWTktS3RfVWFNOWpEcnJNMHcxVVQ5bnhvX3pQeUhNa2JLT3J3Y2V6Y3RaRGZaVGdic0hJTVctZ0ZPc2JTNkFWYnVCTDkyWjRYNDRHSm15cWp2VjZBajVkLWY5SXBRUTJDYTkzMWJ4SFZGVDhCbDU2TE5nSUY5ZHNGdW9ESTQ4QlN4M0xKTC1DYm14UVFsekd6VTJrT1pRZEQyUVFSQQ?oc=5",
+          "time": "2026-11-12T07:36:47Z",
+          "published_date": "2026-11-12T07:36:47Z",
+          "publishedDate": "2026-11-12T07:36:47Z",
           "tag": "Breaking",
           "confidence": "DEVELOPING",
           "breaking": true,
@@ -1067,8 +827,8 @@
       ]
     },
     {
-      "id": "57b980dafcf64e18",
-      "title": "Hegseth and advisers reprimanded by guard at Tomb of the Unknown Soldier - BBC",
+      "id": "0a3f59acd39de7e2",
+      "title": "Incoming House Oversight Chair: ‘It’s very clear’ Trump administration lawyers ‘don’t understand the Constitution’ - CNN",
       "category": "general",
       "confidence": "low",
       "reportCount": 2,
@@ -1077,227 +837,26 @@
         "news.google.com"
       ],
       "anchors": [],
-      "firstSeen": "2026-11-11T19:47:07Z",
-      "lastSeen": "2026-11-11T21:43:35Z",
+      "firstSeen": "2026-11-12T02:26:00Z",
+      "lastSeen": "2026-11-12T02:26:00Z",
       "urls": [
-        "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1UU1BJVGh1eXN4eTNkQVVSakdYRkhiVE94dVQxM1htWmx0RENhY1dlXzdMTHJ6YXB6NlBSZUsxVzdINzV6dGhMM0lENWFzU2xyeXB3QWRySW8?oc=5",
-        "https://news.google.com/rss/articles/CBMivwFBVV95cUxPaEVLOE5Rel9JM1dzRXZPSkE3RlpKOFJmUExPRUp6OFFBcGtMUGdmUWdrQVVsa2ZPbkFCY0RWdlRIeVdhc25IbHRaTi03c1JuSlY5clFDY2FEX2JhZDhVc3NEODFxS1NkdGlCVklCcW9BTnhmR0JILUdJQkZSNDB3ejhKMDJrRjN0emh3QmJMaElLcEJ4VFdTQUFwTGJPT3RvSjVPZjI2TGl6Tk9ZdGxTZVdnYjU3b3JLQ3ljdHkyaw?oc=5"
+        "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQb2FoQUQ1aUVYdDRzVmd6Y19OMFBabjZoeGpNRFdKQzlCR3Zta0pEcEdmOEZVenhwMklVdjNKT2N2VGYzaWtudl91SmVkUUVwRjhrbl82LVFtNFhTVWJmWVFTQVVPYnQ5c3pUUjNvSGlxeUlIVEEwSVk3U0R3dUlJeXZsckR5cHM1a2RSU09yanZYMVg4YW16X01rZ2FUTjlZMnZxTU0zZlB3dGVIN09JSXJDSVZXR0lYY3hQandLdjUyRGlocEllVnFwWlhWenBXVHNYZ1RhVC1JbVRwMllDelZIQlBwTFVv?oc=5",
+        "https://news.google.com/rss/articles/CBMilwJBVV95cUxOMTFNQlNFZVlhdkdDd3ZER0xKekdGb3pnRWxHNEpGdGxWVE1GaWx5YlpacTBSUDZqRWdyQ3JMWEs1eHkxdDVCVV9tZG40Wjlfb25VTWlSbjlyMm40c2pnU2FGbXRSVnB1VHBVd2VCZXNMT2dSWHA1VmhkLTQ2bktHZU9HbnZtVXZLelh4OTk1RERrZVAzNDZoV1h0Q1pmdFd6LWVkY0hhaDVkQ2lzRzB0aDNPUlRzbXU3cFhtS0Z1WFNzMFh0bW9UbmRNVFBQM1N0NTY5cWpObEpOMVNMTXdrb0h0Z3E5cjRKVVROSXFrVnduMGtJS2hMN083UDZXQTZqOFNrUWN1b3NhcTdsR19zbmxhaENnR1k?oc=5"
       ],
       "reports": [
         {
-          "id": "14158bb9e245",
-          "sourceLabel": "Google News — U.S. Politics",
-          "sourceName": "Google News — U.S. Politics",
+          "id": "dd55eaa8419f",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQb2FoQUQ1aUVYdDRzVmd6Y19OMFBabjZoeGpNRFdKQzlCR3Zta0pEcEdmOEZVenhwMklVdjNKT2N2VGYzaWtudl91SmVkUUVwRjhrbl82LVFtNFhTVWJmWVFTQVVPYnQ5c3pUUjNvSGlxeUlIVEEwSVk3U0R3dUlJeXZsckR5cHM1a2RSU09yanZYMVg4YW16X01rZ2FUTjlZMnZxTU0zZlB3dGVIN09JSXJDSVZXR0lYY3hQandLdjUyRGlocEllVnFwWlhWenBXVHNYZ1RhVC1JbVRwMllDelZIQlBwTFVv?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQb2FoQUQ1aUVYdDRzVmd6Y19OMFBabjZoeGpNRFdKQzlCR3Zta0pEcEdmOEZVenhwMklVdjNKT2N2VGYzaWtudl91SmVkUUVwRjhrbl82LVFtNFhTVWJmWVFTQVVPYnQ5c3pUUjNvSGlxeUlIVEEwSVk3U0R3dUlJeXZsckR5cHM1a2RSU09yanZYMVg4YW16X01rZ2FUTjlZMnZxTU0zZlB3dGVIN09JSXJDSVZXR0lYY3hQandLdjUyRGlocEllVnFwWlhWenBXVHNYZ1RhVC1JbVRwMllDelZIQlBwTFVv?oc=5",
           "sourceType": "us-politics",
-          "title": "Hegseth and advisers reprimanded by guard at Tomb of the Unknown Soldier - BBC",
-          "summary": "Hegseth and advisers reprimanded by guard at Tomb of the Unknown Soldier BBC",
-          "summary_snippet": "Hegseth and advisers reprimanded by guard at Tomb of the Unknown Soldier BBC",
-          "source": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1UU1BJVGh1eXN4eTNkQVVSakdYRkhiVE94dVQxM1htWmx0RENhY1dlXzdMTHJ6YXB6NlBSZUsxVzdINzV6dGhMM0lENWFzU2xyeXB3QWRySW8?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1UU1BJVGh1eXN4eTNkQVVSakdYRkhiVE94dVQxM1htWmx0RENhY1dlXzdMTHJ6YXB6NlBSZUsxVzdINzV6dGhMM0lENWFzU2xyeXB3QWRySW8?oc=5",
-          "time": "2026-11-11T21:43:35Z",
-          "published_date": "2026-11-11T21:43:35Z",
-          "publishedDate": "2026-11-11T21:43:35Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_u_s_politics",
-            "sourceUrl": "https://news.google.com/rss/search?q=US+politics+Congress+Senate+White+House+election+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "03f6be214297",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPaEVLOE5Rel9JM1dzRXZPSkE3RlpKOFJmUExPRUp6OFFBcGtMUGdmUWdrQVVsa2ZPbkFCY0RWdlRIeVdhc25IbHRaTi03c1JuSlY5clFDY2FEX2JhZDhVc3NEODFxS1NkdGlCVklCcW9BTnhmR0JILUdJQkZSNDB3ejhKMDJrRjN0emh3QmJMaElLcEJ4VFdTQUFwTGJPT3RvSjVPZjI2TGl6Tk9ZdGxTZVdnYjU3b3JLQ3ljdHkyaw?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPaEVLOE5Rel9JM1dzRXZPSkE3RlpKOFJmUExPRUp6OFFBcGtMUGdmUWdrQVVsa2ZPbkFCY0RWdlRIeVdhc25IbHRaTi03c1JuSlY5clFDY2FEX2JhZDhVc3NEODFxS1NkdGlCVklCcW9BTnhmR0JILUdJQkZSNDB3ejhKMDJrRjN0emh3QmJMaElLcEJ4VFdTQUFwTGJPT3RvSjVPZjI2TGl6Tk9ZdGxTZVdnYjU3b3JLQ3ljdHkyaw?oc=5",
-          "sourceType": "us-politics",
-          "title": "Hegseth and advisers reprimanded by guard at Tomb of the Unknown Soldier - CNN",
-          "summary": "Hegseth and advisers reprimanded by guard at Tomb of the Unknown Soldier CNN",
-          "summary_snippet": "Hegseth and advisers reprimanded by guard at Tomb of the Unknown Soldier CNN",
-          "source": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPaEVLOE5Rel9JM1dzRXZPSkE3RlpKOFJmUExPRUp6OFFBcGtMUGdmUWdrQVVsa2ZPbkFCY0RWdlRIeVdhc25IbHRaTi03c1JuSlY5clFDY2FEX2JhZDhVc3NEODFxS1NkdGlCVklCcW9BTnhmR0JILUdJQkZSNDB3ejhKMDJrRjN0emh3QmJMaElLcEJ4VFdTQUFwTGJPT3RvSjVPZjI2TGl6Tk9ZdGxTZVdnYjU3b3JLQ3ljdHkyaw?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPaEVLOE5Rel9JM1dzRXZPSkE3RlpKOFJmUExPRUp6OFFBcGtMUGdmUWdrQVVsa2ZPbkFCY0RWdlRIeVdhc25IbHRaTi03c1JuSlY5clFDY2FEX2JhZDhVc3NEODFxS1NkdGlCVklCcW9BTnhmR0JILUdJQkZSNDB3ejhKMDJrRjN0emh3QmJMaElLcEJ4VFdTQUFwTGJPT3RvSjVPZjI2TGl6Tk9ZdGxTZVdnYjU3b3JLQ3ljdHkyaw?oc=5",
-          "time": "2026-11-11T19:47:07Z",
-          "published_date": "2026-11-11T19:47:07Z",
-          "publishedDate": "2026-11-11T19:47:07Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_cnn_politics",
-            "sourceUrl": "https://news.google.com/rss/search?q=site%3Acnn.com+politics+Trump+Congress+Senate+White+House+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "b9e82a63a213ec4c",
-      "title": "Somalia's next security challenge may come from the sky - www.standardmedia.co.ke",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [
-        "mali",
-        "somalia"
-      ],
-      "firstSeen": "2026-11-11T21:00:00Z",
-      "lastSeen": "2026-11-11T21:00:00Z",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNV21qSkRQZVppQlFCSHZxYlN3VDNGNE9uR1BpbDBLU0ZkdElfSWRZd3l2aHNKMFZDWlpoN1ZWZTlweGVaM3I1dW5CU1ZiY1B0WWRvWUN0OGFWUVE4c09sWXB6MXpoVndqZ01qOU5DdGVmS2pRRHJzM0lYbC1tTlF0cGQzSW1iOHE2NGNzU3dqYmNqM1BYck1iWnE2eW9nRkVLbWIwRW1TQk5FcHl2UUZrNDU4cGJyMVJx?oc=5",
-        "https://news.google.com/rss/articles/CBMiswFBVV95cUxQWUFyS3Jncjd3b2c2QVhOaDBWZEJmWTFORjN5S19mQ0VJMGRvRUdlSVlCanh6aFlGSVBNeEVzd1lTYVRQdFVhMU16NjNXcG9oUDBqYXRSeUdoRjJRTnhtSml2bnlJWE1XRmxaVFlBQUNWX1FaREFxZkpKUlZwMnpyXzl0cVB5STBQY3Jhd2ZnYVdWaWI2UVBqSDBmTFdOLXNYd0l6aFIxT1NwWkN4ZWFvQzZPcw?oc=5"
-      ],
-      "reports": [
-        {
-          "id": "ae0ef0449d03",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNV21qSkRQZVppQlFCSHZxYlN3VDNGNE9uR1BpbDBLU0ZkdElfSWRZd3l2aHNKMFZDWlpoN1ZWZTlweGVaM3I1dW5CU1ZiY1B0WWRvWUN0OGFWUVE4c09sWXB6MXpoVndqZ01qOU5DdGVmS2pRRHJzM0lYbC1tTlF0cGQzSW1iOHE2NGNzU3dqYmNqM1BYck1iWnE2eW9nRkVLbWIwRW1TQk5FcHl2UUZrNDU4cGJyMVJx?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNV21qSkRQZVppQlFCSHZxYlN3VDNGNE9uR1BpbDBLU0ZkdElfSWRZd3l2aHNKMFZDWlpoN1ZWZTlweGVaM3I1dW5CU1ZiY1B0WWRvWUN0OGFWUVE4c09sWXB6MXpoVndqZ01qOU5DdGVmS2pRRHJzM0lYbC1tTlF0cGQzSW1iOHE2NGNzU3dqYmNqM1BYck1iWnE2eW9nRkVLbWIwRW1TQk5FcHl2UUZrNDU4cGJyMVJx?oc=5",
-          "sourceType": "africa-conflict",
-          "title": "Somalia's next security challenge may come from the sky - www.standardmedia.co.ke",
-          "summary": "Somalia's next security challenge may come from the sky www.standardmedia.co.ke",
-          "summary_snippet": "Somalia's next security challenge may come from the sky www.standardmedia.co.ke",
-          "source": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNV21qSkRQZVppQlFCSHZxYlN3VDNGNE9uR1BpbDBLU0ZkdElfSWRZd3l2aHNKMFZDWlpoN1ZWZTlweGVaM3I1dW5CU1ZiY1B0WWRvWUN0OGFWUVE4c09sWXB6MXpoVndqZ01qOU5DdGVmS2pRRHJzM0lYbC1tTlF0cGQzSW1iOHE2NGNzU3dqYmNqM1BYck1iWnE2eW9nRkVLbWIwRW1TQk5FcHl2UUZrNDU4cGJyMVJx?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNV21qSkRQZVppQlFCSHZxYlN3VDNGNE9uR1BpbDBLU0ZkdElfSWRZd3l2aHNKMFZDWlpoN1ZWZTlweGVaM3I1dW5CU1ZiY1B0WWRvWUN0OGFWUVE4c09sWXB6MXpoVndqZ01qOU5DdGVmS2pRRHJzM0lYbC1tTlF0cGQzSW1iOHE2NGNzU3dqYmNqM1BYck1iWnE2eW9nRkVLbWIwRW1TQk5FcHl2UUZrNDU4cGJyMVJx?oc=5",
-          "time": "2026-11-11T21:00:00Z",
-          "published_date": "2026-11-11T21:00:00Z",
-          "publishedDate": "2026-11-11T21:00:00Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_somalia_security",
-            "sourceUrl": "https://news.google.com/rss/search?q=Somalia+al+Shabaab+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "70612cdf6268",
-          "sourceLabel": "Google News — Somalia Security",
-          "sourceName": "Google News — Somalia Security",
-          "sourceType": "africa-conflict",
-          "title": "Somalia's next security challenge may come from the sky - The Standard",
-          "summary": "Somalia's next security challenge may come from the sky The Standard",
-          "summary_snippet": "Somalia's next security challenge may come from the sky The Standard",
-          "source": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQWUFyS3Jncjd3b2c2QVhOaDBWZEJmWTFORjN5S19mQ0VJMGRvRUdlSVlCanh6aFlGSVBNeEVzd1lTYVRQdFVhMU16NjNXcG9oUDBqYXRSeUdoRjJRTnhtSml2bnlJWE1XRmxaVFlBQUNWX1FaREFxZkpKUlZwMnpyXzl0cVB5STBQY3Jhd2ZnYVdWaWI2UVBqSDBmTFdOLXNYd0l6aFIxT1NwWkN4ZWFvQzZPcw?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQWUFyS3Jncjd3b2c2QVhOaDBWZEJmWTFORjN5S19mQ0VJMGRvRUdlSVlCanh6aFlGSVBNeEVzd1lTYVRQdFVhMU16NjNXcG9oUDBqYXRSeUdoRjJRTnhtSml2bnlJWE1XRmxaVFlBQUNWX1FaREFxZkpKUlZwMnpyXzl0cVB5STBQY3Jhd2ZnYVdWaWI2UVBqSDBmTFdOLXNYd0l6aFIxT1NwWkN4ZWFvQzZPcw?oc=5",
-          "time": "2026-11-11T21:00:00Z",
-          "published_date": "2026-11-11T21:00:00Z",
-          "publishedDate": "2026-11-11T21:00:00Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_somalia_security",
-            "sourceUrl": "https://news.google.com/rss/search?q=Somalia+al+Shabaab+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "e76dc960296b110f",
-      "title": "Saudi Arabia intercepts Houthi missiles, drones; group denies targeting Mecca - Reuters",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "2026-11-11T20:10:55Z",
-      "lastSeen": "2026-11-11T20:57:51Z",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMizwFBVV95cUxNa0VablB0SWViZWpCRFg4bC0yX2ZTM19HNmFFVUdqVVlwbWRuRjdpSnNXZ3liU04zeTYyZWJPSlhLeEVRTUlMS0N2SnlPdEpINzVHUTJjRXJjd3RKdEZMLS14czdZSlpjcWlJWm95bFpTNHgxblNSVlFyLWhsQ0JncVFZRGRmQ0p6cDZQRGRtNlh6LWxnVXlLRkJyelFzdTFoM285d2tQZTJvS1BkYkRzLVZwUERKc2pHbVBqOUZDSmFRbGJ4TmpmQVExbnEzOTQ?oc=5",
-        "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQWm9WQ2ZGd25sQmpEWVc5NlNPeHI1TjZpWjJHeXc1ZG1ZSkpLV19RU3hzV0RFZFN3bFpwQmFBMEZFcl90Ti02VV80RGlJZkY3bmlnTEpCclFGX0p2WEk5QjU2cGFhZ3VfdHRvWFYtYTlKNjRsSUtzZVZWXzQzQkVTV3JJdEQzVUtubkxmQkttcDN2YVd3aDNneEk5OVhxLWczX1FXTjVOdDUyajh3M3BJXy10cDlWZVBfeXF3VV9LeTJmY21kWEhhRnd6MFllMlc0UkZKem930gHbAUFVX3lxTFBWcUt5b21xQVZNV2VlZ0huWUFvSkhEQ1lTaFNzZzQzN3M5UHM0Mk1SVzcxbmhkQTBCQlN4Y2dwa2x2WFlXQlFYejRIeXRKdTZwMnU2OG9GOWQ2UEU1MUtFMVNpNVU5OFZ4a0dXWHRFWjBCZHVOamdjeVc4Y1dEXzdSUHE5SHlYckZOR25nNXJvamFkS0pCSWxwbWVWRU5ybUlTXzRtSHpnaUJ5dnVueDhtNHExZFFMSlVHME9uRlRFTFk3d19vX3VVanlqOU1BYzFSUm9tRjdqaXBJMA?oc=5"
-      ],
-      "reports": [
-        {
-          "id": "64c3b72cd549",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNa0VablB0SWViZWpCRFg4bC0yX2ZTM19HNmFFVUdqVVlwbWRuRjdpSnNXZ3liU04zeTYyZWJPSlhLeEVRTUlMS0N2SnlPdEpINzVHUTJjRXJjd3RKdEZMLS14czdZSlpjcWlJWm95bFpTNHgxblNSVlFyLWhsQ0JncVFZRGRmQ0p6cDZQRGRtNlh6LWxnVXlLRkJyelFzdTFoM285d2tQZTJvS1BkYkRzLVZwUERKc2pHbVBqOUZDSmFRbGJ4TmpmQVExbnEzOTQ?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNa0VablB0SWViZWpCRFg4bC0yX2ZTM19HNmFFVUdqVVlwbWRuRjdpSnNXZ3liU04zeTYyZWJPSlhLeEVRTUlMS0N2SnlPdEpINzVHUTJjRXJjd3RKdEZMLS14czdZSlpjcWlJWm95bFpTNHgxblNSVlFyLWhsQ0JncVFZRGRmQ0p6cDZQRGRtNlh6LWxnVXlLRkJyelFzdTFoM285d2tQZTJvS1BkYkRzLVZwUERKc2pHbVBqOUZDSmFRbGJ4TmpmQVExbnEzOTQ?oc=5",
-          "sourceType": "middle-east-conflict",
-          "title": "Saudi Arabia intercepts Houthi missiles, drones; group denies targeting Mecca - Reuters",
-          "summary": "Saudi Arabia intercepts Houthi missiles, drones; group denies targeting Mecca Reuters",
-          "summary_snippet": "Saudi Arabia intercepts Houthi missiles, drones; group denies targeting Mecca Reuters",
-          "source": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNa0VablB0SWViZWpCRFg4bC0yX2ZTM19HNmFFVUdqVVlwbWRuRjdpSnNXZ3liU04zeTYyZWJPSlhLeEVRTUlMS0N2SnlPdEpINzVHUTJjRXJjd3RKdEZMLS14czdZSlpjcWlJWm95bFpTNHgxblNSVlFyLWhsQ0JncVFZRGRmQ0p6cDZQRGRtNlh6LWxnVXlLRkJyelFzdTFoM285d2tQZTJvS1BkYkRzLVZwUERKc2pHbVBqOUZDSmFRbGJ4TmpmQVExbnEzOTQ?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNa0VablB0SWViZWpCRFg4bC0yX2ZTM19HNmFFVUdqVVlwbWRuRjdpSnNXZ3liU04zeTYyZWJPSlhLeEVRTUlMS0N2SnlPdEpINzVHUTJjRXJjd3RKdEZMLS14czdZSlpjcWlJWm95bFpTNHgxblNSVlFyLWhsQ0JncVFZRGRmQ0p6cDZQRGRtNlh6LWxnVXlLRkJyelFzdTFoM285d2tQZTJvS1BkYkRzLVZwUERKc2pHbVBqOUZDSmFRbGJ4TmpmQVExbnEzOTQ?oc=5",
-          "time": "2026-11-11T20:57:51Z",
-          "published_date": "2026-11-11T20:57:51Z",
-          "publishedDate": "2026-11-11T20:57:51Z",
-          "tag": "Breaking",
-          "confidence": "DEVELOPING",
-          "breaking": true,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_yemen_red_sea",
-            "sourceUrl": "https://news.google.com/rss/search?q=Yemen+Houthis+Red+Sea+shipping+missile+drone+conflict+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "20c60c63a747",
-          "sourceLabel": "Google News — Yemen / Red Sea",
-          "sourceName": "Google News — Yemen / Red Sea",
-          "sourceType": "middle-east-conflict",
-          "title": "Saudi Arabia intercepts Houthi missiles, drones; group denies targeting Mecca - GMA Network",
-          "summary": "Saudi Arabia intercepts Houthi missiles, drones; group denies targeting Mecca GMA Network",
-          "summary_snippet": "Saudi Arabia intercepts Houthi missiles, drones; group denies targeting Mecca GMA Network",
-          "source": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQWm9WQ2ZGd25sQmpEWVc5NlNPeHI1TjZpWjJHeXc1ZG1ZSkpLV19RU3hzV0RFZFN3bFpwQmFBMEZFcl90Ti02VV80RGlJZkY3bmlnTEpCclFGX0p2WEk5QjU2cGFhZ3VfdHRvWFYtYTlKNjRsSUtzZVZWXzQzQkVTV3JJdEQzVUtubkxmQkttcDN2YVd3aDNneEk5OVhxLWczX1FXTjVOdDUyajh3M3BJXy10cDlWZVBfeXF3VV9LeTJmY21kWEhhRnd6MFllMlc0UkZKem930gHbAUFVX3lxTFBWcUt5b21xQVZNV2VlZ0huWUFvSkhEQ1lTaFNzZzQzN3M5UHM0Mk1SVzcxbmhkQTBCQlN4Y2dwa2x2WFlXQlFYejRIeXRKdTZwMnU2OG9GOWQ2UEU1MUtFMVNpNVU5OFZ4a0dXWHRFWjBCZHVOamdjeVc4Y1dEXzdSUHE5SHlYckZOR25nNXJvamFkS0pCSWxwbWVWRU5ybUlTXzRtSHpnaUJ5dnVueDhtNHExZFFMSlVHME9uRlRFTFk3d19vX3VVanlqOU1BYzFSUm9tRjdqaXBJMA?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQWm9WQ2ZGd25sQmpEWVc5NlNPeHI1TjZpWjJHeXc1ZG1ZSkpLV19RU3hzV0RFZFN3bFpwQmFBMEZFcl90Ti02VV80RGlJZkY3bmlnTEpCclFGX0p2WEk5QjU2cGFhZ3VfdHRvWFYtYTlKNjRsSUtzZVZWXzQzQkVTV3JJdEQzVUtubkxmQkttcDN2YVd3aDNneEk5OVhxLWczX1FXTjVOdDUyajh3M3BJXy10cDlWZVBfeXF3VV9LeTJmY21kWEhhRnd6MFllMlc0UkZKem930gHbAUFVX3lxTFBWcUt5b21xQVZNV2VlZ0huWUFvSkhEQ1lTaFNzZzQzN3M5UHM0Mk1SVzcxbmhkQTBCQlN4Y2dwa2x2WFlXQlFYejRIeXRKdTZwMnU2OG9GOWQ2UEU1MUtFMVNpNVU5OFZ4a0dXWHRFWjBCZHVOamdjeVc4Y1dEXzdSUHE5SHlYckZOR25nNXJvamFkS0pCSWxwbWVWRU5ybUlTXzRtSHpnaUJ5dnVueDhtNHExZFFMSlVHME9uRlRFTFk3d19vX3VVanlqOU1BYzFSUm9tRjdqaXBJMA?oc=5",
-          "time": "2026-11-11T20:10:55Z",
-          "published_date": "2026-11-11T20:10:55Z",
-          "publishedDate": "2026-11-11T20:10:55Z",
-          "tag": "Breaking",
-          "confidence": "DEVELOPING",
-          "breaking": true,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_yemen_red_sea",
-            "sourceUrl": "https://news.google.com/rss/search?q=Yemen+Houthis+Red+Sea+shipping+missile+drone+conflict+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "a11dedce1073370c",
-      "title": "Voter polls: Election 2026 - CNN",
-      "category": "political",
-      "confidence": "low",
-      "reportCount": 2,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "2026-11-11T18:37:24Z",
-      "lastSeen": "2026-11-11T19:09:25Z",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMihwFBVV95cUxOclJlTms4cVlaLTh0SndmajBvWjFDbi1UVlFDYm1xNmFlaHZNNlh2Y2tXNHl5M0kxeV9aYmZkLU1GWWk0dkJxUmlBWFVsOTZ3eUt6cXJ5UG9VXzJ6MHZqcHNpWWRFWlN0RGthTnlmd2t2X3FsMWJMQTRNeDlDZy0tUUx4QTVkaEE?oc=5",
-        "https://news.google.com/rss/articles/CBMiggFBVV95cUxOQ2ZXUE00VUxfaHpfcXlyVWpuNk8wZ2ZYckFFUW1JRGtKNl9LXzRFMW5raFlUWXJKTVQ3Z201YWlQLUVCSjBYU1N0d0Z0NDZpSlo5MF9GbU4tOFpoRHVPVERld2Q1ckRCZWliVXBaTUZOTnlUc2UwU0xXQ0RIRkpfWmZn?oc=5"
-      ],
-      "reports": [
-        {
-          "id": "4d2695bb9263",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOclJlTms4cVlaLTh0SndmajBvWjFDbi1UVlFDYm1xNmFlaHZNNlh2Y2tXNHl5M0kxeV9aYmZkLU1GWWk0dkJxUmlBWFVsOTZ3eUt6cXJ5UG9VXzJ6MHZqcHNpWWRFWlN0RGthTnlmd2t2X3FsMWJMQTRNeDlDZy0tUUx4QTVkaEE?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOclJlTms4cVlaLTh0SndmajBvWjFDbi1UVlFDYm1xNmFlaHZNNlh2Y2tXNHl5M0kxeV9aYmZkLU1GWWk0dkJxUmlBWFVsOTZ3eUt6cXJ5UG9VXzJ6MHZqcHNpWWRFWlN0RGthTnlmd2t2X3FsMWJMQTRNeDlDZy0tUUx4QTVkaEE?oc=5",
-          "sourceType": "us-politics",
-          "title": "Voter polls: Election 2026 - CNN",
-          "summary": "Voter polls: Election 2026 CNN",
-          "summary_snippet": "Voter polls: Election 2026 CNN",
-          "source": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOclJlTms4cVlaLTh0SndmajBvWjFDbi1UVlFDYm1xNmFlaHZNNlh2Y2tXNHl5M0kxeV9aYmZkLU1GWWk0dkJxUmlBWFVsOTZ3eUt6cXJ5UG9VXzJ6MHZqcHNpWWRFWlN0RGthTnlmd2t2X3FsMWJMQTRNeDlDZy0tUUx4QTVkaEE?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOclJlTms4cVlaLTh0SndmajBvWjFDbi1UVlFDYm1xNmFlaHZNNlh2Y2tXNHl5M0kxeV9aYmZkLU1GWWk0dkJxUmlBWFVsOTZ3eUt6cXJ5UG9VXzJ6MHZqcHNpWWRFWlN0RGthTnlmd2t2X3FsMWJMQTRNeDlDZy0tUUx4QTVkaEE?oc=5",
-          "time": "2026-11-11T19:09:25Z",
-          "published_date": "2026-11-11T19:09:25Z",
-          "publishedDate": "2026-11-11T19:09:25Z",
+          "title": "Incoming House Oversight Chair: ‘It’s very clear’ Trump administration lawyers ‘don’t understand the Constitution’ - CNN",
+          "summary": "Incoming House Oversight Chair: ‘It’s very clear’ Trump administration lawyers ‘don’t understand the Constitution’ CNN",
+          "summary_snippet": "Incoming House Oversight Chair: ‘It’s very clear’ Trump administration lawyers ‘don’t understand the Constitution’ CNN",
+          "source": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQb2FoQUQ1aUVYdDRzVmd6Y19OMFBabjZoeGpNRFdKQzlCR3Zta0pEcEdmOEZVenhwMklVdjNKT2N2VGYzaWtudl91SmVkUUVwRjhrbl82LVFtNFhTVWJmWVFTQVVPYnQ5c3pUUjNvSGlxeUlIVEEwSVk3U0R3dUlJeXZsckR5cHM1a2RSU09yanZYMVg4YW16X01rZ2FUTjlZMnZxTU0zZlB3dGVIN09JSXJDSVZXR0lYY3hQandLdjUyRGlocEllVnFwWlhWenBXVHNYZ1RhVC1JbVRwMllDelZIQlBwTFVv?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQb2FoQUQ1aUVYdDRzVmd6Y19OMFBabjZoeGpNRFdKQzlCR3Zta0pEcEdmOEZVenhwMklVdjNKT2N2VGYzaWtudl91SmVkUUVwRjhrbl82LVFtNFhTVWJmWVFTQVVPYnQ5c3pUUjNvSGlxeUlIVEEwSVk3U0R3dUlJeXZsckR5cHM1a2RSU09yanZYMVg4YW16X01rZ2FUTjlZMnZxTU0zZlB3dGVIN09JSXJDSVZXR0lYY3hQandLdjUyRGlocEllVnFwWlhWenBXVHNYZ1RhVC1JbVRwMllDelZIQlBwTFVv?oc=5",
+          "time": "2026-11-12T02:26:00Z",
+          "published_date": "2026-11-12T02:26:00Z",
+          "publishedDate": "2026-11-12T02:26:00Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
@@ -1309,84 +868,18 @@
           }
         },
         {
-          "id": "6cc4dfb9981f",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOQ2ZXUE00VUxfaHpfcXlyVWpuNk8wZ2ZYckFFUW1JRGtKNl9LXzRFMW5raFlUWXJKTVQ3Z201YWlQLUVCSjBYU1N0d0Z0NDZpSlo5MF9GbU4tOFpoRHVPVERld2Q1ckRCZWliVXBaTUZOTnlUc2UwU0xXQ0RIRkpfWmZn?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOQ2ZXUE00VUxfaHpfcXlyVWpuNk8wZ2ZYckFFUW1JRGtKNl9LXzRFMW5raFlUWXJKTVQ3Z201YWlQLUVCSjBYU1N0d0Z0NDZpSlo5MF9GbU4tOFpoRHVPVERld2Q1ckRCZWliVXBaTUZOTnlUc2UwU0xXQ0RIRkpfWmZn?oc=5",
-          "sourceType": "us-politics",
-          "title": "Voter polls: Election 2026 - CNN",
-          "summary": "Voter polls: Election 2026 CNN",
-          "summary_snippet": "Voter polls: Election 2026 CNN",
-          "source": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOQ2ZXUE00VUxfaHpfcXlyVWpuNk8wZ2ZYckFFUW1JRGtKNl9LXzRFMW5raFlUWXJKTVQ3Z201YWlQLUVCSjBYU1N0d0Z0NDZpSlo5MF9GbU4tOFpoRHVPVERld2Q1ckRCZWliVXBaTUZOTnlUc2UwU0xXQ0RIRkpfWmZn?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOQ2ZXUE00VUxfaHpfcXlyVWpuNk8wZ2ZYckFFUW1JRGtKNl9LXzRFMW5raFlUWXJKTVQ3Z201YWlQLUVCSjBYU1N0d0Z0NDZpSlo5MF9GbU4tOFpoRHVPVERld2Q1ckRCZWliVXBaTUZOTnlUc2UwU0xXQ0RIRkpfWmZn?oc=5",
-          "time": "2026-11-11T18:37:24Z",
-          "published_date": "2026-11-11T18:37:24Z",
-          "publishedDate": "2026-11-11T18:37:24Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_cnn_politics",
-            "sourceUrl": "https://news.google.com/rss/search?q=site%3Acnn.com+politics+Trump+Congress+Senate+White+House+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "f0edd9a4281d21e1",
-      "title": "Meet the 2028 Potential Presidential Contenders – Elissa Slotkin - CNN",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "2026-11-11T17:04:46Z",
-      "lastSeen": "2026-11-11T17:08:21Z",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMikwFBVV95cUxQVkNkU210OTlaeUZkZTlPZzJ4akIycHcyU0xxdGI4RWh6NklFR1M2MHhuVnp4bFVMLXZKN3pkbG5PUTZnZ1BPUnR1OXJFOE93WU1HYUw4TXpJTXVtSEdCUmZ0M1M3Z19lUmpPMS1yY1lMUEhMbWxWWXNhQTdwbXlPbkM3X1YzbDU2TTBTMkNGcUc2Ync?oc=5",
-        "https://news.google.com/rss/articles/CBMimAFBVV95cUxNNWNsOVhQN3M0VU8zSm90S3cyMDAxUEFGM3daeTctR3N0ZGNBOFR4VHVvZmhFRm5zaWRCU2RBQWJKR1ZWbDl6UEFSa1FRcm9qQkZBVXNEdWFFckJiSnJtMXRwWjRIOFVza2I1YW9sOWhJMFlLd2s5cFVlZE1qc1l2TU1OeDFPQll3UWJKYmstX2xGVlEtYlJxLQ?oc=5"
-      ],
-      "reports": [
-        {
-          "id": "6847500d43ac",
+          "id": "48467616d910",
           "sourceLabel": "Google News — CNN Politics",
           "sourceName": "Google News — CNN Politics",
           "sourceType": "us-politics",
-          "title": "Meet the 2028 Potential Presidential Contenders – Elissa Slotkin - CNN",
-          "summary": "Meet the 2028 Potential Presidential Contenders – Elissa Slotkin CNN",
-          "summary_snippet": "Meet the 2028 Potential Presidential Contenders – Elissa Slotkin CNN",
-          "source": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQVkNkU210OTlaeUZkZTlPZzJ4akIycHcyU0xxdGI4RWh6NklFR1M2MHhuVnp4bFVMLXZKN3pkbG5PUTZnZ1BPUnR1OXJFOE93WU1HYUw4TXpJTXVtSEdCUmZ0M1M3Z19lUmpPMS1yY1lMUEhMbWxWWXNhQTdwbXlPbkM3X1YzbDU2TTBTMkNGcUc2Ync?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQVkNkU210OTlaeUZkZTlPZzJ4akIycHcyU0xxdGI4RWh6NklFR1M2MHhuVnp4bFVMLXZKN3pkbG5PUTZnZ1BPUnR1OXJFOE93WU1HYUw4TXpJTXVtSEdCUmZ0M1M3Z19lUmpPMS1yY1lMUEhMbWxWWXNhQTdwbXlPbkM3X1YzbDU2TTBTMkNGcUc2Ync?oc=5",
-          "time": "2026-11-11T17:08:21Z",
-          "published_date": "2026-11-11T17:08:21Z",
-          "publishedDate": "2026-11-11T17:08:21Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_cnn_politics",
-            "sourceUrl": "https://news.google.com/rss/search?q=site%3Acnn.com+politics+Trump+Congress+Senate+White+House+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "ab0e30f630fb",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNNWNsOVhQN3M0VU8zSm90S3cyMDAxUEFGM3daeTctR3N0ZGNBOFR4VHVvZmhFRm5zaWRCU2RBQWJKR1ZWbDl6UEFSa1FRcm9qQkZBVXNEdWFFckJiSnJtMXRwWjRIOFVza2I1YW9sOWhJMFlLd2s5cFVlZE1qc1l2TU1OeDFPQll3UWJKYmstX2xGVlEtYlJxLQ?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNNWNsOVhQN3M0VU8zSm90S3cyMDAxUEFGM3daeTctR3N0ZGNBOFR4VHVvZmhFRm5zaWRCU2RBQWJKR1ZWbDl6UEFSa1FRcm9qQkZBVXNEdWFFckJiSnJtMXRwWjRIOFVza2I1YW9sOWhJMFlLd2s5cFVlZE1qc1l2TU1OeDFPQll3UWJKYmstX2xGVlEtYlJxLQ?oc=5",
-          "sourceType": "us-politics",
-          "title": "Meet the 2028 Potential Presidential Contenders – Elissa Slotkin - CNN",
-          "summary": "Meet the 2028 Potential Presidential Contenders – Elissa Slotkin CNN",
-          "summary_snippet": "Meet the 2028 Potential Presidential Contenders – Elissa Slotkin CNN",
-          "source": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNNWNsOVhQN3M0VU8zSm90S3cyMDAxUEFGM3daeTctR3N0ZGNBOFR4VHVvZmhFRm5zaWRCU2RBQWJKR1ZWbDl6UEFSa1FRcm9qQkZBVXNEdWFFckJiSnJtMXRwWjRIOFVza2I1YW9sOWhJMFlLd2s5cFVlZE1qc1l2TU1OeDFPQll3UWJKYmstX2xGVlEtYlJxLQ?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNNWNsOVhQN3M0VU8zSm90S3cyMDAxUEFGM3daeTctR3N0ZGNBOFR4VHVvZmhFRm5zaWRCU2RBQWJKR1ZWbDl6UEFSa1FRcm9qQkZBVXNEdWFFckJiSnJtMXRwWjRIOFVza2I1YW9sOWhJMFlLd2s5cFVlZE1qc1l2TU1OeDFPQll3UWJKYmstX2xGVlEtYlJxLQ?oc=5",
-          "time": "2026-11-11T17:04:46Z",
-          "published_date": "2026-11-11T17:04:46Z",
-          "publishedDate": "2026-11-11T17:04:46Z",
+          "title": "Incoming House Oversight Chair: \"It's very clear\" Trump administration lawyers \"don't understand the Constitution\" - CNN",
+          "summary": "Incoming House Oversight Chair: \"It's very clear\" Trump administration lawyers \"don't understand the Constitution\" CNN",
+          "summary_snippet": "Incoming House Oversight Chair: \"It's very clear\" Trump administration lawyers \"don't understand the Constitution\" CNN",
+          "source": "https://news.google.com/rss/articles/CBMilwJBVV95cUxOMTFNQlNFZVlhdkdDd3ZER0xKekdGb3pnRWxHNEpGdGxWVE1GaWx5YlpacTBSUDZqRWdyQ3JMWEs1eHkxdDVCVV9tZG40Wjlfb25VTWlSbjlyMm40c2pnU2FGbXRSVnB1VHBVd2VCZXNMT2dSWHA1VmhkLTQ2bktHZU9HbnZtVXZLelh4OTk1RERrZVAzNDZoV1h0Q1pmdFd6LWVkY0hhaDVkQ2lzRzB0aDNPUlRzbXU3cFhtS0Z1WFNzMFh0bW9UbmRNVFBQM1N0NTY5cWpObEpOMVNMTXdrb0h0Z3E5cjRKVVROSXFrVnduMGtJS2hMN083UDZXQTZqOFNrUWN1b3NhcTdsR19zbmxhaENnR1k?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxOMTFNQlNFZVlhdkdDd3ZER0xKekdGb3pnRWxHNEpGdGxWVE1GaWx5YlpacTBSUDZqRWdyQ3JMWEs1eHkxdDVCVV9tZG40Wjlfb25VTWlSbjlyMm40c2pnU2FGbXRSVnB1VHBVd2VCZXNMT2dSWHA1VmhkLTQ2bktHZU9HbnZtVXZLelh4OTk1RERrZVAzNDZoV1h0Q1pmdFd6LWVkY0hhaDVkQ2lzRzB0aDNPUlRzbXU3cFhtS0Z1WFNzMFh0bW9UbmRNVFBQM1N0NTY5cWpObEpOMVNMTXdrb0h0Z3E5cjRKVVROSXFrVnduMGtJS2hMN083UDZXQTZqOFNrUWN1b3NhcTdsR19zbmxhaENnR1k?oc=5",
+          "time": "2026-11-12T02:26:00Z",
+          "published_date": "2026-11-12T02:26:00Z",
+          "publishedDate": "2026-11-12T02:26:00Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
@@ -1400,8 +893,8 @@
       ]
     },
     {
-      "id": "d7f13c302d50b3ef",
-      "title": "Meet the 2028 Potential Presidential Contenders – Pete Buttigieg - CNN",
+      "id": "aaffd3c7baec5667",
+      "title": "'Summer was a wake-up call, winter could be dire' warning over food supplies - BBC",
       "category": "general",
       "confidence": "low",
       "reportCount": 2,
@@ -1410,122 +903,56 @@
         "news.google.com"
       ],
       "anchors": [],
-      "firstSeen": "2026-11-11T16:50:44Z",
-      "lastSeen": "2026-11-11T16:52:37Z",
+      "firstSeen": "2026-11-11T22:48:59Z",
+      "lastSeen": "2026-11-11T22:48:59Z",
       "urls": [
-        "https://news.google.com/rss/articles/CBMikwFBVV95cUxPdTdTNWlpbDVtNjhGSThLQmJHMkM3bC1GbVFSTkgyMVM0SnBkTzFIZ0F2U19iMEpXNHdRVUNuNVhyUnR4OVdDT2lpNFNhbkJwNmZCS1Q4RHBGeEtQQmNUX0RyT0QxUVhvQmdBN1pGRldGaXptQWYzX1dUSi1JclNtNHF3U2tsZ1ctaWlfOGNlQWY4eW8?oc=5",
-        "https://news.google.com/rss/articles/CBMimAFBVV95cUxQZGxmemNqRG10VlMyWDBQMnQxNV85Mmd6ZC1hTXhfS1lDdkxwczNFVzRuS0VYeEdYalphT3psb21nS1dqUThZaHNSZmlUcmRzTjF3QmkzZTg4RFlRNV9kbVJFUHBHWGZzT3JUSVpDVEZuV3FJd1N1d0VOTjlENGNUMy05aWxMUmtxUk5kX25ubEo4QTlwUnFwUQ?oc=5"
+        "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9JbU9tYkNnRXVWQi0tckZOczQxbG55ekhlREJ0QzV4eFIzY3haQnRpcWFPVFFNeDZYSFgyOUVjeVg5U1JCYWxnNmE4bWhwVFhmNDB6TlRTbFptVGs?oc=5",
+        "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9ZWk1NbHpyb1d6WFdGeVhwQkM2dkswVVk0RW5VdW9iRWQ2TVhid1UxWHI3SmVPLV9QMW4weVc4Y2E5dHJVaEtxcjRUNVhyZktmb0Jlai0zLWx0RFctNUE?oc=5"
       ],
       "reports": [
         {
-          "id": "c3f4bb23519c",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPdTdTNWlpbDVtNjhGSThLQmJHMkM3bC1GbVFSTkgyMVM0SnBkTzFIZ0F2U19iMEpXNHdRVUNuNVhyUnR4OVdDT2lpNFNhbkJwNmZCS1Q4RHBGeEtQQmNUX0RyT0QxUVhvQmdBN1pGRldGaXptQWYzX1dUSi1JclNtNHF3U2tsZ1ctaWlfOGNlQWY4eW8?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPdTdTNWlpbDVtNjhGSThLQmJHMkM3bC1GbVFSTkgyMVM0SnBkTzFIZ0F2U19iMEpXNHdRVUNuNVhyUnR4OVdDT2lpNFNhbkJwNmZCS1Q4RHBGeEtQQmNUX0RyT0QxUVhvQmdBN1pGRldGaXptQWYzX1dUSi1JclNtNHF3U2tsZ1ctaWlfOGNlQWY4eW8?oc=5",
-          "sourceType": "us-politics",
-          "title": "Meet the 2028 Potential Presidential Contenders – Pete Buttigieg - CNN",
-          "summary": "Meet the 2028 Potential Presidential Contenders – Pete Buttigieg CNN",
-          "summary_snippet": "Meet the 2028 Potential Presidential Contenders – Pete Buttigieg CNN",
-          "source": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPdTdTNWlpbDVtNjhGSThLQmJHMkM3bC1GbVFSTkgyMVM0SnBkTzFIZ0F2U19iMEpXNHdRVUNuNVhyUnR4OVdDT2lpNFNhbkJwNmZCS1Q4RHBGeEtQQmNUX0RyT0QxUVhvQmdBN1pGRldGaXptQWYzX1dUSi1JclNtNHF3U2tsZ1ctaWlfOGNlQWY4eW8?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPdTdTNWlpbDVtNjhGSThLQmJHMkM3bC1GbVFSTkgyMVM0SnBkTzFIZ0F2U19iMEpXNHdRVUNuNVhyUnR4OVdDT2lpNFNhbkJwNmZCS1Q4RHBGeEtQQmNUX0RyT0QxUVhvQmdBN1pGRldGaXptQWYzX1dUSi1JclNtNHF3U2tsZ1ctaWlfOGNlQWY4eW8?oc=5",
-          "time": "2026-11-11T16:52:37Z",
-          "published_date": "2026-11-11T16:52:37Z",
-          "publishedDate": "2026-11-11T16:52:37Z",
+          "id": "33c1ca2b55db",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9JbU9tYkNnRXVWQi0tckZOczQxbG55ekhlREJ0QzV4eFIzY3haQnRpcWFPVFFNeDZYSFgyOUVjeVg5U1JCYWxnNmE4bWhwVFhmNDB6TlRTbFptVGs?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9JbU9tYkNnRXVWQi0tckZOczQxbG55ekhlREJ0QzV4eFIzY3haQnRpcWFPVFFNeDZYSFgyOUVjeVg5U1JCYWxnNmE4bWhwVFhmNDB6TlRTbFptVGs?oc=5",
+          "sourceType": "climate-hazard",
+          "title": "'Summer was a wake-up call, winter could be dire' warning over food supplies - BBC",
+          "summary": "'Summer was a wake-up call, winter could be dire' warning over food supplies BBC",
+          "summary_snippet": "'Summer was a wake-up call, winter could be dire' warning over food supplies BBC",
+          "source": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9JbU9tYkNnRXVWQi0tckZOczQxbG55ekhlREJ0QzV4eFIzY3haQnRpcWFPVFFNeDZYSFgyOUVjeVg5U1JCYWxnNmE4bWhwVFhmNDB6TlRTbFptVGs?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9JbU9tYkNnRXVWQi0tckZOczQxbG55ekhlREJ0QzV4eFIzY3haQnRpcWFPVFFNeDZYSFgyOUVjeVg5U1JCYWxnNmE4bWhwVFhmNDB6TlRTbFptVGs?oc=5",
+          "time": "2026-11-11T22:48:59Z",
+          "published_date": "2026-11-11T22:48:59Z",
+          "publishedDate": "2026-11-11T22:48:59Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "google_news_cnn_politics",
-            "sourceUrl": "https://news.google.com/rss/search?q=site%3Acnn.com+politics+Trump+Congress+Senate+White+House+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "sourceId": "google_news_climate_security",
+            "sourceUrl": "https://news.google.com/rss/search?q=climate+crisis+food+water+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
         },
         {
-          "id": "da837b6d8579",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQZGxmemNqRG10VlMyWDBQMnQxNV85Mmd6ZC1hTXhfS1lDdkxwczNFVzRuS0VYeEdYalphT3psb21nS1dqUThZaHNSZmlUcmRzTjF3QmkzZTg4RFlRNV9kbVJFUHBHWGZzT3JUSVpDVEZuV3FJd1N1d0VOTjlENGNUMy05aWxMUmtxUk5kX25ubEo4QTlwUnFwUQ?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQZGxmemNqRG10VlMyWDBQMnQxNV85Mmd6ZC1hTXhfS1lDdkxwczNFVzRuS0VYeEdYalphT3psb21nS1dqUThZaHNSZmlUcmRzTjF3QmkzZTg4RFlRNV9kbVJFUHBHWGZzT3JUSVpDVEZuV3FJd1N1d0VOTjlENGNUMy05aWxMUmtxUk5kX25ubEo4QTlwUnFwUQ?oc=5",
-          "sourceType": "us-politics",
-          "title": "Meet the 2028 Potential Presidential Contenders – Pete Buttigieg - CNN",
-          "summary": "Meet the 2028 Potential Presidential Contenders – Pete Buttigieg CNN",
-          "summary_snippet": "Meet the 2028 Potential Presidential Contenders – Pete Buttigieg CNN",
-          "source": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQZGxmemNqRG10VlMyWDBQMnQxNV85Mmd6ZC1hTXhfS1lDdkxwczNFVzRuS0VYeEdYalphT3psb21nS1dqUThZaHNSZmlUcmRzTjF3QmkzZTg4RFlRNV9kbVJFUHBHWGZzT3JUSVpDVEZuV3FJd1N1d0VOTjlENGNUMy05aWxMUmtxUk5kX25ubEo4QTlwUnFwUQ?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQZGxmemNqRG10VlMyWDBQMnQxNV85Mmd6ZC1hTXhfS1lDdkxwczNFVzRuS0VYeEdYalphT3psb21nS1dqUThZaHNSZmlUcmRzTjF3QmkzZTg4RFlRNV9kbVJFUHBHWGZzT3JUSVpDVEZuV3FJd1N1d0VOTjlENGNUMy05aWxMUmtxUk5kX25ubEo4QTlwUnFwUQ?oc=5",
-          "time": "2026-11-11T16:50:44Z",
-          "published_date": "2026-11-11T16:50:44Z",
-          "publishedDate": "2026-11-11T16:50:44Z",
+          "id": "c03e79d8404c",
+          "sourceLabel": "Google News — Climate Security",
+          "sourceName": "Google News — Climate Security",
+          "sourceType": "climate-hazard",
+          "title": "'Summer was a wake-up call, winter could be dire' warning over food supplies - BBC",
+          "summary": "'Summer was a wake-up call, winter could be dire' warning over food supplies BBC",
+          "summary_snippet": "'Summer was a wake-up call, winter could be dire' warning over food supplies BBC",
+          "source": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9ZWk1NbHpyb1d6WFdGeVhwQkM2dkswVVk0RW5VdW9iRWQ2TVhid1UxWHI3SmVPLV9QMW4weVc4Y2E5dHJVaEtxcjRUNVhyZktmb0Jlai0zLWx0RFctNUE?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9ZWk1NbHpyb1d6WFdGeVhwQkM2dkswVVk0RW5VdW9iRWQ2TVhid1UxWHI3SmVPLV9QMW4weVc4Y2E5dHJVaEtxcjRUNVhyZktmb0Jlai0zLWx0RFctNUE?oc=5",
+          "time": "2026-11-11T22:48:59Z",
+          "published_date": "2026-11-11T22:48:59Z",
+          "publishedDate": "2026-11-11T22:48:59Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "google_news_cnn_politics",
-            "sourceUrl": "https://news.google.com/rss/search?q=site%3Acnn.com+politics+Trump+Congress+Senate+White+House+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "30442849bbf63cbb",
-      "title": "Meet the 2028 Potential Presidential Contenders – Jon Ossoff - CNN",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "2026-11-11T16:44:32Z",
-      "lastSeen": "2026-11-11T16:45:37Z",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMijgFBVV95cUxOaUFFMWh3TVRtNy1pSndVT1dxMTJGVllYWng4cUw1OURYUUJsaVF1NGdKY0tQUl9CWnlaeXZzSE0zcXc3NDdOdzJteG1GalBENUJ5R3Z5djdFcXJpQUJoSF9TVFdxV0tsRi1LRHUtTkpWVjdQci1KczhZV2tRQnFQZW1GWGNzSDlrWVpUeEpR?oc=5",
-        "https://news.google.com/rss/articles/CBMikwFBVV95cUxQLV92amRVczVSUkNub1NaWDFFOTV0NGxKU0labXd3bzFaLVN6WUZfb3o1ZmNQaXlINW1yRVlLbGpWZTRzU3BIeFlBZFZnNE9BMFZrZ3UwUGdzc2FOMkhSRTQ2SDN1RURXSGR2eTdIY0Y1SWRObVd6b0tlOUFjRWV4VmllY0tUczBEazE0MTFZZS12cEk?oc=5"
-      ],
-      "reports": [
-        {
-          "id": "0a80eebb91ca",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOaUFFMWh3TVRtNy1pSndVT1dxMTJGVllYWng4cUw1OURYUUJsaVF1NGdKY0tQUl9CWnlaeXZzSE0zcXc3NDdOdzJteG1GalBENUJ5R3Z5djdFcXJpQUJoSF9TVFdxV0tsRi1LRHUtTkpWVjdQci1KczhZV2tRQnFQZW1GWGNzSDlrWVpUeEpR?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOaUFFMWh3TVRtNy1pSndVT1dxMTJGVllYWng4cUw1OURYUUJsaVF1NGdKY0tQUl9CWnlaeXZzSE0zcXc3NDdOdzJteG1GalBENUJ5R3Z5djdFcXJpQUJoSF9TVFdxV0tsRi1LRHUtTkpWVjdQci1KczhZV2tRQnFQZW1GWGNzSDlrWVpUeEpR?oc=5",
-          "sourceType": "us-politics",
-          "title": "Meet the 2028 Potential Presidential Contenders – Jon Ossoff - CNN",
-          "summary": "Meet the 2028 Potential Presidential Contenders – Jon Ossoff CNN",
-          "summary_snippet": "Meet the 2028 Potential Presidential Contenders – Jon Ossoff CNN",
-          "source": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOaUFFMWh3TVRtNy1pSndVT1dxMTJGVllYWng4cUw1OURYUUJsaVF1NGdKY0tQUl9CWnlaeXZzSE0zcXc3NDdOdzJteG1GalBENUJ5R3Z5djdFcXJpQUJoSF9TVFdxV0tsRi1LRHUtTkpWVjdQci1KczhZV2tRQnFQZW1GWGNzSDlrWVpUeEpR?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOaUFFMWh3TVRtNy1pSndVT1dxMTJGVllYWng4cUw1OURYUUJsaVF1NGdKY0tQUl9CWnlaeXZzSE0zcXc3NDdOdzJteG1GalBENUJ5R3Z5djdFcXJpQUJoSF9TVFdxV0tsRi1LRHUtTkpWVjdQci1KczhZV2tRQnFQZW1GWGNzSDlrWVpUeEpR?oc=5",
-          "time": "2026-11-11T16:45:37Z",
-          "published_date": "2026-11-11T16:45:37Z",
-          "publishedDate": "2026-11-11T16:45:37Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_cnn_politics",
-            "sourceUrl": "https://news.google.com/rss/search?q=site%3Acnn.com+politics+Trump+Congress+Senate+White+House+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "bdc185ad9d85",
-          "sourceLabel": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQLV92amRVczVSUkNub1NaWDFFOTV0NGxKU0labXd3bzFaLVN6WUZfb3o1ZmNQaXlINW1yRVlLbGpWZTRzU3BIeFlBZFZnNE9BMFZrZ3UwUGdzc2FOMkhSRTQ2SDN1RURXSGR2eTdIY0Y1SWRObVd6b0tlOUFjRWV4VmllY0tUczBEazE0MTFZZS12cEk?oc=5",
-          "sourceName": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQLV92amRVczVSUkNub1NaWDFFOTV0NGxKU0labXd3bzFaLVN6WUZfb3o1ZmNQaXlINW1yRVlLbGpWZTRzU3BIeFlBZFZnNE9BMFZrZ3UwUGdzc2FOMkhSRTQ2SDN1RURXSGR2eTdIY0Y1SWRObVd6b0tlOUFjRWV4VmllY0tUczBEazE0MTFZZS12cEk?oc=5",
-          "sourceType": "us-politics",
-          "title": "Meet the 2028 Potential Presidential Contenders – Jon Ossoff - CNN",
-          "summary": "Meet the 2028 Potential Presidential Contenders – Jon Ossoff CNN",
-          "summary_snippet": "Meet the 2028 Potential Presidential Contenders – Jon Ossoff CNN",
-          "source": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQLV92amRVczVSUkNub1NaWDFFOTV0NGxKU0labXd3bzFaLVN6WUZfb3o1ZmNQaXlINW1yRVlLbGpWZTRzU3BIeFlBZFZnNE9BMFZrZ3UwUGdzc2FOMkhSRTQ2SDN1RURXSGR2eTdIY0Y1SWRObVd6b0tlOUFjRWV4VmllY0tUczBEazE0MTFZZS12cEk?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQLV92amRVczVSUkNub1NaWDFFOTV0NGxKU0labXd3bzFaLVN6WUZfb3o1ZmNQaXlINW1yRVlLbGpWZTRzU3BIeFlBZFZnNE9BMFZrZ3UwUGdzc2FOMkhSRTQ2SDN1RURXSGR2eTdIY0Y1SWRObVd6b0tlOUFjRWV4VmllY0tUczBEazE0MTFZZS12cEk?oc=5",
-          "time": "2026-11-11T16:44:32Z",
-          "published_date": "2026-11-11T16:44:32Z",
-          "publishedDate": "2026-11-11T16:44:32Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_cnn_politics",
-            "sourceUrl": "https://news.google.com/rss/search?q=site%3Acnn.com+politics+Trump+Congress+Senate+White+House+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "sourceId": "google_news_climate_security",
+            "sourceUrl": "https://news.google.com/rss/search?q=climate+crisis+food+water+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
         }
@@ -1564,33 +991,35 @@
       ]
     },
     {
-      "id": "50b4ca83d0c9eb07",
-      "title": "SOUTHCOM Commander Meets with President, Military Leaders During Visit to Dominican Republ - U.S. Southern Command (.mil)",
-      "category": "conflict",
+      "id": "29f42074fb252c9a",
+      "title": "ADDRESSING THREATS TO THE UNITED STATES BY THE GOVERNMENT OF BRAZIL - The White House (.gov)",
+      "category": "political",
       "confidence": "low",
       "reportCount": 1,
       "sourceCount": 1,
       "sources": [
         "news.google.com"
       ],
-      "anchors": [],
-      "firstSeen": "Wed, 30 Nov 2022 22:39:02 GMT",
-      "lastSeen": "Wed, 30 Nov 2022 22:39:02 GMT",
+      "anchors": [
+        "united states"
+      ],
+      "firstSeen": "Wed, 30 Jul 2025 07:00:00 GMT",
+      "lastSeen": "Wed, 30 Jul 2025 07:00:00 GMT",
       "urls": [
-        "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNT3RmdGRPc3ZXNzRmX2tKZWxOTXBKWGNmbndpSWh3V0tnM05tLUZ1eGZoTTBjV1p3cUFLcGJFc0hRSkVMNEVJUk0tLU1VLVJuclRNczIyTmQtNUItMUR1T2p4RExiV2VaNWpjQTltYl9SNFNmSExyN3hUb0JsYzFBd3lqQmdHMzlXQThvdi1vMkZVbHhFdk1DMUc0ZURpZUtEZXFPa0k2dm9xc05HaE5xNnlGV2dFY1MzV3ZSREZDZ2xQUXZBNXRKaVRibXB2eFZqSG5MbWZyMFU?oc=5"
+        "https://news.google.com/rss/articles/CBMijgFBVV95cUxQbGJ5dm1ScThnRXA4ajdvV2k4SmRDODVRV0ZIMGk3NkdwbmJfWFRabVJBTlhaSDNLV1hKNGVnY2I5b2staUV1VGN2dm13S1dXdU1qZjZKUmN5MVozMnNiRkc3eXdHaTdtRnJJZjhNUlVydDYwaFVCZ2tOai12WnZMOG14LW9RQzdtWEhCZTh3?oc=5"
       ],
       "reports": [
         {
-          "title": "SOUTHCOM Commander Meets with President, Military Leaders During Visit to Dominican Republ - U.S. Southern Command (.mil)",
-          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNT3RmdGRPc3ZXNzRmX2tKZWxOTXBKWGNmbndpSWh3V0tnM05tLUZ1eGZoTTBjV1p3cUFLcGJFc0hRSkVMNEVJUk0tLU1VLVJuclRNczIyTmQtNUItMUR1T2p4RExiV2VaNWpjQTltYl9SNFNmSExyN3hUb0JsYzFBd3lqQmdHMzlXQThvdi1vMkZVbHhFdk1DMUc0ZURpZUtEZXFPa0k2dm9xc05HaE5xNnlGV2dFY1MzV3ZSREZDZ2xQUXZBNXRKaVRibXB2eFZqSG5MbWZyMFU?oc=5",
-          "published_date": "Wed, 30 Nov 2022 22:39:02 GMT",
-          "time": "Wed, 30 Nov 2022 22:39:02 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: U.S. Southern Command (.mil)",
-          "summary": "Fallback discovery via Google News RSS; publisher: U.S. Southern Command (.mil)",
-          "source": "U.S. Southern Command (.mil)",
-          "sourceLabel": "U.S. Southern Command (.mil)",
+          "title": "ADDRESSING THREATS TO THE UNITED STATES BY THE GOVERNMENT OF BRAZIL - The White House (.gov)",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQbGJ5dm1ScThnRXA4ajdvV2k4SmRDODVRV0ZIMGk3NkdwbmJfWFRabVJBTlhaSDNLV1hKNGVnY2I5b2staUV1VGN2dm13S1dXdU1qZjZKUmN5MVozMnNiRkc3eXdHaTdtRnJJZjhNUlVydDYwaFVCZ2tOai12WnZMOG14LW9RQzdtWEhCZTh3?oc=5",
+          "published_date": "Wed, 30 Jul 2025 07:00:00 GMT",
+          "time": "Wed, 30 Jul 2025 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: The White House (.gov)",
+          "summary": "Fallback discovery via Google News RSS; publisher: The White House (.gov)",
+          "source": "The White House (.gov)",
+          "sourceLabel": "The White House (.gov)",
           "sourceType": "fallback-news",
-          "fallbackFor": "SOUTHCOM Official Reporting — GDELT Mirror",
+          "fallbackFor": "X @POTUS",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -1692,38 +1121,6 @@
       ]
     },
     {
-      "id": "5b95c4268510f73f",
-      "title": "The Story of the Charter - Welcome to the United Nations",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Wed, 25 Jun 2025 07:00:00 GMT",
-      "lastSeen": "Wed, 25 Jun 2025 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiXEFVX3lxTE94YXFLWEZ1aXZrLXNrQVQ4NXdEUG10OEh3cUttSXFyZV9uMXotYy1QbmVLaGRvVzNselJXTVo0bVo1ZVJQMEZGR25yYVdvOVRORVlRd3NRZkFZc2Ra?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "The Story of the Charter - Welcome to the United Nations",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE94YXFLWEZ1aXZrLXNrQVQ4NXdEUG10OEh3cUttSXFyZV9uMXotYy1QbmVLaGRvVzNselJXTVo0bVo1ZVJQMEZGR25yYVdvOVRORVlRd3NRZkFZc2Ra?oc=5",
-          "published_date": "Wed, 25 Jun 2025 07:00:00 GMT",
-          "time": "Wed, 25 Jun 2025 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Welcome to the United Nations",
-          "summary": "Fallback discovery via Google News RSS; publisher: Welcome to the United Nations",
-          "source": "Welcome to the United Nations",
-          "sourceLabel": "Welcome to the United Nations",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @UN",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
       "id": "1963100acdb16dcb",
       "title": "NASA Selects Far-Infrared Telescope as First in New Mission Class - NASA (.gov)",
       "category": "general",
@@ -1751,38 +1148,6 @@
           "sourceLabel": "NASA (.gov)",
           "sourceType": "fallback-news",
           "fallbackFor": "X @NASA",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "3882c63aea604f41",
-      "title": "Chile’s Top Military Officer Visits SOUTHCOM - U.S. Southern Command (.mil)",
-      "category": "conflict",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Wed, 23 Apr 2025 18:36:33 GMT",
-      "lastSeen": "Wed, 23 Apr 2025 18:36:33 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMipwFBVV95cUxQdUVzQlBuX0VyYnp3MVBOeFIxVnFycXNrLUtHYWhmV00zV2hSYUdCRzhnbEZ6T3JUZkE1R2hGT1NsQVhzam5BUkdqOHRqRk51b2tqdFh4VUwxWkNMR1o4eEF3bTZCLUpSaWYyUklscU40akhGT3A4WWVxd3hUOElZMlpzdDN6NEg5RkJ3bFdaY1pmMWlwX2tWc2gxRlpSbm53ckxtS0U1SQ?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Chile’s Top Military Officer Visits SOUTHCOM - U.S. Southern Command (.mil)",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQdUVzQlBuX0VyYnp3MVBOeFIxVnFycXNrLUtHYWhmV00zV2hSYUdCRzhnbEZ6T3JUZkE1R2hGT1NsQVhzam5BUkdqOHRqRk51b2tqdFh4VUwxWkNMR1o4eEF3bTZCLUpSaWYyUklscU40akhGT3A4WWVxd3hUOElZMlpzdDN6NEg5RkJ3bFdaY1pmMWlwX2tWc2gxRlpSbm53ckxtS0U1SQ?oc=5",
-          "published_date": "Wed, 23 Apr 2025 18:36:33 GMT",
-          "time": "Wed, 23 Apr 2025 18:36:33 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: U.S. Southern Command (.mil)",
-          "summary": "Fallback discovery via Google News RSS; publisher: U.S. Southern Command (.mil)",
-          "source": "U.S. Southern Command (.mil)",
-          "sourceLabel": "U.S. Southern Command (.mil)",
-          "sourceType": "fallback-news",
-          "fallbackFor": "SOUTHCOM Official Reporting — GDELT Mirror",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -2012,8 +1377,42 @@
       ]
     },
     {
-      "id": "975d636f0985ee70",
-      "title": "Statement on White House Counsel’s Letter - Howl.Link",
+      "id": "0f10f42d81a615e0",
+      "title": "Collective defence and Article 5 - North Atlantic Treaty Organization | NATO",
+      "category": "diplomatic",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [
+        "nato"
+      ],
+      "firstSeen": "Wed, 12 Nov 2025 08:00:00 GMT",
+      "lastSeen": "Wed, 12 Nov 2025 08:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMikgFBVV95cUxOaFRoaGdzSXNHMlM5ejFsQkxvOGZZYV9ucG1JU1FQUkU3NHdZN1RTOFZDYmZ4MkpSMFBGTXZBSWJHNFBFamR3WHhVUmpxRFBEQ1Z0NjFsM1ZmdmhsZDRSVXBsQU1yZ1lfMWVXOFRLTU9MY25VTmo5RHp2UEhXdVczUmtTREFJVVR4SXhfNG8xVXRLZw?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "Collective defence and Article 5 - North Atlantic Treaty Organization | NATO",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOaFRoaGdzSXNHMlM5ejFsQkxvOGZZYV9ucG1JU1FQUkU3NHdZN1RTOFZDYmZ4MkpSMFBGTXZBSWJHNFBFamR3WHhVUmpxRFBEQ1Z0NjFsM1ZmdmhsZDRSVXBsQU1yZ1lfMWVXOFRLTU9MY25VTmo5RHp2UEhXdVczUmtTREFJVVR4SXhfNG8xVXRLZw?oc=5",
+          "published_date": "Wed, 12 Nov 2025 08:00:00 GMT",
+          "time": "Wed, 12 Nov 2025 08:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
+          "summary": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
+          "source": "North Atlantic Treaty Organization | NATO",
+          "sourceLabel": "North Atlantic Treaty Organization | NATO",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NATO",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "71058d42e7346ad7",
+      "title": "Trump issues warning to ‘horrible’ Democrats, claims ‘we won’ Iran war during Veterans Day speech - New York Post",
       "category": "general",
       "confidence": "low",
       "reportCount": 1,
@@ -2021,24 +1420,26 @@
       "sources": [
         "news.google.com"
       ],
-      "anchors": [],
-      "firstSeen": "Wed, 11 Nov 2026 23:04:14 GMT",
-      "lastSeen": "Wed, 11 Nov 2026 23:04:14 GMT",
+      "anchors": [
+        "iran"
+      ],
+      "firstSeen": "Wed, 11 Nov 2026 21:16:00 GMT",
+      "lastSeen": "Wed, 11 Nov 2026 21:16:00 GMT",
       "urls": [
-        "https://news.google.com/rss/articles/CBMiO0FVX3lxTFA2dVVuZDlMY05MdlRYaElrM0ZPY1cybTZvVTBYeUpMQ19pclViZzVNWWRwZzN0V3BPNjdz?oc=5"
+        "https://news.google.com/rss/articles/CBMiywFBVV95cUxPSGdLREFobjRibDhyUVlwNUZiNmJrLUpfaG9TcG5xb21kQ2FIVTNmU3BwREFMRmxkTmJILU5WbnE1Mm9CUWltaFA1dDUyZURoeXF4bFItVk9nbmhlUzdyX3ZXc3RDRHQ3YzRxUDlDR0c2VmhMUFdobTd1ZzZiclg3dXd5OHJVWExCOXF2Y0V0Yk9WckdsWENRd3VKM1lOLTlTV3oteWJURlJIQm4yc1FORWp1YWpTdXNwOWdXMVNwWlBYUXRfcXgzTHJNYw?oc=5"
       ],
       "reports": [
         {
-          "title": "Statement on White House Counsel’s Letter - Howl.Link",
-          "url": "https://news.google.com/rss/articles/CBMiO0FVX3lxTFA2dVVuZDlMY05MdlRYaElrM0ZPY1cybTZvVTBYeUpMQ19pclViZzVNWWRwZzN0V3BPNjdz?oc=5",
-          "published_date": "Wed, 11 Nov 2026 23:04:14 GMT",
-          "time": "Wed, 11 Nov 2026 23:04:14 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Howl.Link",
-          "summary": "Fallback discovery via Google News RSS; publisher: Howl.Link",
-          "source": "Howl.Link",
-          "sourceLabel": "Howl.Link",
+          "title": "Trump issues warning to ‘horrible’ Democrats, claims ‘we won’ Iran war during Veterans Day speech - New York Post",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPSGdLREFobjRibDhyUVlwNUZiNmJrLUpfaG9TcG5xb21kQ2FIVTNmU3BwREFMRmxkTmJILU5WbnE1Mm9CUWltaFA1dDUyZURoeXF4bFItVk9nbmhlUzdyX3ZXc3RDRHQ3YzRxUDlDR0c2VmhMUFdobTd1ZzZiclg3dXd5OHJVWExCOXF2Y0V0Yk9WckdsWENRd3VKM1lOLTlTV3oteWJURlJIQm4yc1FORWp1YWpTdXNwOWdXMVNwWlBYUXRfcXgzTHJNYw?oc=5",
+          "published_date": "Wed, 11 Nov 2026 21:16:00 GMT",
+          "time": "Wed, 11 Nov 2026 21:16:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: New York Post",
+          "summary": "Fallback discovery via Google News RSS; publisher: New York Post",
+          "source": "New York Post",
+          "sourceLabel": "New York Post",
           "sourceType": "fallback-news",
-          "fallbackFor": "X @WhiteHouse",
+          "fallbackFor": "X @POTUS",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -2069,6 +1470,106 @@
           "summary": "Fallback discovery via Google News RSS; publisher: Reuters",
           "source": "Reuters",
           "sourceLabel": "Reuters",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @POTUS",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "c90bcc6af42bffd5",
+      "title": "Trump’s White House calls Democratic plans for congressional probes ‘abuse’ - Al Jazeera",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Wed, 11 Nov 2026 20:49:24 GMT",
+      "lastSeen": "Wed, 11 Nov 2026 20:49:24 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMitAFBVV95cUxOWVlLUWJmS0Z1SE5YWG4xZ3gweTQyUEwtaVNKQmJSWU5UQ2c4UTdLb1plUTNQRURBRG4ycHVzdUJGajNMdTBYT0Iwd2tnQUt5UDVWazF4dVBNQmN1RHlHbFg0X2FTcERXaTRGUE1RVHNqTktzbVpBakxTRG5rMzN5ei1QOHFXc2lvZlBYbmVfVGEwVERSWmdDNmEyRV9FdmJhWGZZRWF0TE5IRGE4RndfNzlCUkHSAboBQVVfeXFMUFJkTnB1VzBvdTBKdG96Vy16aFdiOHlkZTVzanNWUHRpUjJrUzlseUNiblNSX2hZQXlvMm9tbnFmakRYWVRKNFRocExpUjZNcktXN0RXOUZlMTQ2ODJNOHhnY2hsTFNMR2VJWkM1Rl9oa0hTNWVtMlVER0xfU1VULXhFeXpITDRzaG5wT1BkUXFhck13YW1JQ0RKUHNXU2JXUVdaOUItc3htTnBvaVVvMlJTTWQ4R2g1UVBn?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "Trump’s White House calls Democratic plans for congressional probes ‘abuse’ - Al Jazeera",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOWVlLUWJmS0Z1SE5YWG4xZ3gweTQyUEwtaVNKQmJSWU5UQ2c4UTdLb1plUTNQRURBRG4ycHVzdUJGajNMdTBYT0Iwd2tnQUt5UDVWazF4dVBNQmN1RHlHbFg0X2FTcERXaTRGUE1RVHNqTktzbVpBakxTRG5rMzN5ei1QOHFXc2lvZlBYbmVfVGEwVERSWmdDNmEyRV9FdmJhWGZZRWF0TE5IRGE4RndfNzlCUkHSAboBQVVfeXFMUFJkTnB1VzBvdTBKdG96Vy16aFdiOHlkZTVzanNWUHRpUjJrUzlseUNiblNSX2hZQXlvMm9tbnFmakRYWVRKNFRocExpUjZNcktXN0RXOUZlMTQ2ODJNOHhnY2hsTFNMR2VJWkM1Rl9oa0hTNWVtMlVER0xfU1VULXhFeXpITDRzaG5wT1BkUXFhck13YW1JQ0RKUHNXU2JXUVdaOUItc3htTnBvaVVvMlJTTWQ4R2g1UVBn?oc=5",
+          "published_date": "Wed, 11 Nov 2026 20:49:24 GMT",
+          "time": "Wed, 11 Nov 2026 20:49:24 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Al Jazeera",
+          "summary": "Fallback discovery via Google News RSS; publisher: Al Jazeera",
+          "source": "Al Jazeera",
+          "sourceLabel": "Al Jazeera",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @WhiteHouse",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "7ab1d349ff7b6c11",
+      "title": "Trump's judge nominee in Oklahoma faces setback as home-state senator balks - Reuters",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [
+        "nato"
+      ],
+      "firstSeen": "Wed, 11 Nov 2026 20:13:12 GMT",
+      "lastSeen": "Wed, 11 Nov 2026 20:13:12 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMivgFBVV95cUxPVjVVckJnbS14OWlrSmRYejlSN085ZVJwU1B4YUFtbW5KRURQRU5rS05fQk5BWVB4bkZTUkdOQ203djd5YU9HbDF1ZHhITGtJb3FxMW9ZcFFvbFN0ZGRuM1dmQXhwTnpCS2Iyem9iaFFiTkpCaEo1OGFOOHhyNFVmX09QdXZRcHQwRzZoaUM0QTZJWS0xSVIyTzlGb1o0QkxqdzVoRmNCcXpRSnp6T1RUaFI4cEJwc0VlWnFPamdR?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "Trump's judge nominee in Oklahoma faces setback as home-state senator balks - Reuters",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPVjVVckJnbS14OWlrSmRYejlSN085ZVJwU1B4YUFtbW5KRURQRU5rS05fQk5BWVB4bkZTUkdOQ203djd5YU9HbDF1ZHhITGtJb3FxMW9ZcFFvbFN0ZGRuM1dmQXhwTnpCS2Iyem9iaFFiTkpCaEo1OGFOOHhyNFVmX09QdXZRcHQwRzZoaUM0QTZJWS0xSVIyTzlGb1o0QkxqdzVoRmNCcXpRSnp6T1RUaFI4cEJwc0VlWnFPamdR?oc=5",
+          "published_date": "Wed, 11 Nov 2026 20:13:12 GMT",
+          "time": "Wed, 11 Nov 2026 20:13:12 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Reuters",
+          "summary": "Fallback discovery via Google News RSS; publisher: Reuters",
+          "source": "Reuters",
+          "sourceLabel": "Reuters",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @WhiteHouse",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "6ff9f4ee8e3096f9",
+      "title": "Watch: Trump says 'we won' Iran war during Veterans Day service - BBC",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [
+        "iran"
+      ],
+      "firstSeen": "Wed, 11 Nov 2026 19:30:48 GMT",
+      "lastSeen": "Wed, 11 Nov 2026 19:30:48 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5FRmJDYjhwWEtuOUdPMHZvcktHX3hFWUd3Ym51U3FpLThEQlNUSWpURWdjaXA5cmJsOU5hb192Y0RmSjdCNDF5U3hSZkFNMTZmX3lyZTRWMnQ?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "Watch: Trump says 'we won' Iran war during Veterans Day service - BBC",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5FRmJDYjhwWEtuOUdPMHZvcktHX3hFWUd3Ym51U3FpLThEQlNUSWpURWdjaXA5cmJsOU5hb192Y0RmSjdCNDF5U3hSZkFNMTZmX3lyZTRWMnQ?oc=5",
+          "published_date": "Wed, 11 Nov 2026 19:30:48 GMT",
+          "time": "Wed, 11 Nov 2026 19:30:48 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: BBC",
+          "summary": "Fallback discovery via Google News RSS; publisher: BBC",
+          "source": "BBC",
+          "sourceLabel": "BBC",
           "sourceType": "fallback-news",
           "fallbackFor": "X @POTUS",
           "credit_metadata": "Google News RSS fallback"
@@ -2108,8 +1609,8 @@
       ]
     },
     {
-      "id": "31ea0973680191b9",
-      "title": "Jacksonville’s Redwire lands $40M award for NASA moon base power - The Business Journals",
+      "id": "5e4631fa316a5a25",
+      "title": "White House warns Democrats against aggressive oversight - Roll Call",
       "category": "general",
       "confidence": "low",
       "reportCount": 1,
@@ -2118,23 +1619,220 @@
         "news.google.com"
       ],
       "anchors": [],
-      "firstSeen": "Wed, 11 Nov 2026 17:33:00 GMT",
-      "lastSeen": "Wed, 11 Nov 2026 17:33:00 GMT",
+      "firstSeen": "Wed, 11 Nov 2026 19:19:35 GMT",
+      "lastSeen": "Wed, 11 Nov 2026 19:19:35 GMT",
       "urls": [
-        "https://news.google.com/rss/articles/CBMirAFBVV95cUxPaTVkWjhZcXBGZGxyVVd6dVZqbUFmOTd6SGtUaUV3ZGs0TjlaMy16VmVnY216UkUyOUVNczdmMlYtYkRzRWtRcW90dFJHZjctMkJqUkVwdkY0b3h4aml2MDJYXzBkVzV1SWVIUXI5UU1SZ0FaTEhFdjJjWml0TWJ3ME1BVE9CRWQtUl9fd2F1ZHoxemJja1JEV2lWTE44TktuQjFCbkJPUzZqdmt5?oc=5"
+        "https://news.google.com/rss/articles/CBMikwFBVV95cUxPSzhKaUd0d3JTSW9xbXdHeXd0aGVnYkk0aE1mZGFaekNWdHNoZ2M3TDFJZXBzcE5NXzV1UkVzOGtuMGg2dUNfR3R0LWVpX0ktSlp4RXV5eHJxSVZDY1A5aGlwWmVIQWR1ZUJSNWZxWGRrNGhva1Q3U0Z3RlNWN0lVOVFUNERZRVA3LUR5OXI3TGh6cmM?oc=5"
       ],
       "reports": [
         {
-          "title": "Jacksonville’s Redwire lands $40M award for NASA moon base power - The Business Journals",
-          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPaTVkWjhZcXBGZGxyVVd6dVZqbUFmOTd6SGtUaUV3ZGs0TjlaMy16VmVnY216UkUyOUVNczdmMlYtYkRzRWtRcW90dFJHZjctMkJqUkVwdkY0b3h4aml2MDJYXzBkVzV1SWVIUXI5UU1SZ0FaTEhFdjJjWml0TWJ3ME1BVE9CRWQtUl9fd2F1ZHoxemJja1JEV2lWTE44TktuQjFCbkJPUzZqdmt5?oc=5",
-          "published_date": "Wed, 11 Nov 2026 17:33:00 GMT",
-          "time": "Wed, 11 Nov 2026 17:33:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: The Business Journals",
-          "summary": "Fallback discovery via Google News RSS; publisher: The Business Journals",
-          "source": "The Business Journals",
-          "sourceLabel": "The Business Journals",
+          "title": "White House warns Democrats against aggressive oversight - Roll Call",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPSzhKaUd0d3JTSW9xbXdHeXd0aGVnYkk0aE1mZGFaekNWdHNoZ2M3TDFJZXBzcE5NXzV1UkVzOGtuMGg2dUNfR3R0LWVpX0ktSlp4RXV5eHJxSVZDY1A5aGlwWmVIQWR1ZUJSNWZxWGRrNGhva1Q3U0Z3RlNWN0lVOVFUNERZRVA3LUR5OXI3TGh6cmM?oc=5",
+          "published_date": "Wed, 11 Nov 2026 19:19:35 GMT",
+          "time": "Wed, 11 Nov 2026 19:19:35 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Roll Call",
+          "summary": "Fallback discovery via Google News RSS; publisher: Roll Call",
+          "source": "Roll Call",
+          "sourceLabel": "Roll Call",
           "sourceType": "fallback-news",
-          "fallbackFor": "X @NASA",
+          "fallbackFor": "X @WhiteHouse",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "e58ab24a7cf9dd9d",
+      "title": "White House warns congressional Democrats: Investigating us may be a crime - NBC News",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Wed, 11 Nov 2026 19:05:57 GMT",
+      "lastSeen": "Wed, 11 Nov 2026 19:05:57 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPY3NwVERMZkt4QjlkRkc3UXFKa1E4eHRYNmZhdkhCUHV6MEltcjFMZ0ppZFlPdWE0aE9fVVpNQmttSVIyWnY5eExkUGZCdFFOS2xReS12aDRzLVh2QVk0M3d0Zm1UUnNGWVNwYjB4VkllRUNacktDNWQ1dUdJaE1LdTNmcTZmdjJDMU1WdFdTOHVEZTE5MEVnRkJadVg4dHRKVF9ra08wUzFyNGsxZlhfWDhYQ0R0SFRhZ2JsV3l3M2hSdw?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "White House warns congressional Democrats: Investigating us may be a crime - NBC News",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPY3NwVERMZkt4QjlkRkc3UXFKa1E4eHRYNmZhdkhCUHV6MEltcjFMZ0ppZFlPdWE0aE9fVVpNQmttSVIyWnY5eExkUGZCdFFOS2xReS12aDRzLVh2QVk0M3d0Zm1UUnNGWVNwYjB4VkllRUNacktDNWQ1dUdJaE1LdTNmcTZmdjJDMU1WdFdTOHVEZTE5MEVnRkJadVg4dHRKVF9ra08wUzFyNGsxZlhfWDhYQ0R0SFRhZ2JsV3l3M2hSdw?oc=5",
+          "published_date": "Wed, 11 Nov 2026 19:05:57 GMT",
+          "time": "Wed, 11 Nov 2026 19:05:57 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NBC News",
+          "summary": "Fallback discovery via Google News RSS; publisher: NBC News",
+          "source": "NBC News",
+          "sourceLabel": "NBC News",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @WhiteHouse",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "0dfbfbc63ce72665",
+      "title": "U.S. Army officer arrested in U.K. on suspicion of trying to steal secrets for Russia - The Washington Post",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [
+        "russia"
+      ],
+      "firstSeen": "Wed, 11 Nov 2026 18:33:27 GMT",
+      "lastSeen": "Wed, 11 Nov 2026 18:33:27 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMitAFBVV95cUxPV0ZuSmdENDlES0Z4TXdvbHMwdk5IUE5jbF9IalBrbFllVEJtbWRINVFyNzBUZVZ2YjdZdk5HaUJ4dHk4eHhxRnhVREUwdkhld2hDYl9DbWlWQUhxZWQ5R2xxUFJsOHh6dDRkOHFQUWpLSnlPLUZEZXljMGdTWExQWVZKT3dtN3BYMmc2Y0JPV19BdVBtYlhlLS1henREZUViWFBEZ0ZIZ0VsTHRacTU4MzlYbDE?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "U.S. Army officer arrested in U.K. on suspicion of trying to steal secrets for Russia - The Washington Post",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPV0ZuSmdENDlES0Z4TXdvbHMwdk5IUE5jbF9IalBrbFllVEJtbWRINVFyNzBUZVZ2YjdZdk5HaUJ4dHk4eHhxRnhVREUwdkhld2hDYl9DbWlWQUhxZWQ5R2xxUFJsOHh6dDRkOHFQUWpLSnlPLUZEZXljMGdTWExQWVZKT3dtN3BYMmc2Y0JPV19BdVBtYlhlLS1henREZUViWFBEZ0ZIZ0VsTHRacTU4MzlYbDE?oc=5",
+          "published_date": "Wed, 11 Nov 2026 18:33:27 GMT",
+          "time": "Wed, 11 Nov 2026 18:33:27 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: The Washington Post",
+          "summary": "Fallback discovery via Google News RSS; publisher: The Washington Post",
+          "source": "The Washington Post",
+          "sourceLabel": "The Washington Post",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NATO",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "9222b794d62afc63",
+      "title": "Top White House lawyer warns Democrats that threats of oversight could be criminally probed - ABC News - Breaking News, Latest News and Videos",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Wed, 11 Nov 2026 18:12:21 GMT",
+      "lastSeen": "Wed, 11 Nov 2026 18:12:21 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMipwFBVV95cUxQQVFZeWdaZ1dRb3JmcWVQM0xIaVRYRWlWSTE4d1hRQVBuU3FJWWN2M3h4dE9RNDh2eGtkbDBGeVBERFJxTmtDZWVTU0xjOGJXVTIzMXBqVDJiN2J6Um9aZEtiLW5FUXZNTGNTYzlMc1lqMWJFOGRBQzctMU9BRy1FRnpMTzUxUXNaWkdjSnBwSC0zWlUxbE4tTDJXNXFoS3FFQTl5bnVTZ9IBrAFBVV95cUxNT25xNXRrcUNXQm1IUzllZ0hvT0dta0hpaElRR3A4dkkzYVVSRHk3ZEZBa3RQZFNmdVZEUmNNWmtXNm5YTWtfNzNXNnBBMXcxRVRXbXdwcGdadFh4Sjc0Si1KQ01QMzJjWkp5Yi1kZmZhODkwUUYzUkdIZkc5TXgwM2VEN2tnTHZaR0ZXWlYtUUJOLW1fZzZsSEJZaHZ2eTRJaXFlekdrV0VhSkFs?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "Top White House lawyer warns Democrats that threats of oversight could be criminally probed - ABC News - Breaking News, Latest News and Videos",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQQVFZeWdaZ1dRb3JmcWVQM0xIaVRYRWlWSTE4d1hRQVBuU3FJWWN2M3h4dE9RNDh2eGtkbDBGeVBERFJxTmtDZWVTU0xjOGJXVTIzMXBqVDJiN2J6Um9aZEtiLW5FUXZNTGNTYzlMc1lqMWJFOGRBQzctMU9BRy1FRnpMTzUxUXNaWkdjSnBwSC0zWlUxbE4tTDJXNXFoS3FFQTl5bnVTZ9IBrAFBVV95cUxNT25xNXRrcUNXQm1IUzllZ0hvT0dta0hpaElRR3A4dkkzYVVSRHk3ZEZBa3RQZFNmdVZEUmNNWmtXNm5YTWtfNzNXNnBBMXcxRVRXbXdwcGdadFh4Sjc0Si1KQ01QMzJjWkp5Yi1kZmZhODkwUUYzUkdIZkc5TXgwM2VEN2tnTHZaR0ZXWlYtUUJOLW1fZzZsSEJZaHZ2eTRJaXFlekdrV0VhSkFs?oc=5",
+          "published_date": "Wed, 11 Nov 2026 18:12:21 GMT",
+          "time": "Wed, 11 Nov 2026 18:12:21 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: ABC News - Breaking News, Latest News and Videos",
+          "summary": "Fallback discovery via Google News RSS; publisher: ABC News - Breaking News, Latest News and Videos",
+          "source": "ABC News - Breaking News, Latest News and Videos",
+          "sourceLabel": "ABC News - Breaking News, Latest News and Videos",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @POTUS",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "7a52cb68b27f5bf4",
+      "title": "Senior US Army Soldier at NATO Corps HQ Arrested in Russia Spy Probe Could Face Life in Prison - Military.com",
+      "category": "conflict",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [
+        "nato",
+        "russia"
+      ],
+      "firstSeen": "Wed, 11 Nov 2026 18:05:19 GMT",
+      "lastSeen": "Wed, 11 Nov 2026 18:05:19 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMitAFBVV95cUxQMDZyOXJxaDNmRm16S0F3NmZEeUJOZ0UwbGc2cXhuZGpNelVsWG9vVU9lalJoeVVfTG1Kc3hkd3lnM1FXRFFvZjhpVEZvckhIVEFIZ1dpVVB5N2tTNmZOQ1VJZEVtX2hHZ3hmQklaeUJjdnRSaENlbEJMSTNIYm5QYjFtLUlvU3p6M2YwOHZRMG1HdTktYWtoMHRIRllORFRFLTNnLWVJVV9uODdIbGQ1MTdfU0I?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "Senior US Army Soldier at NATO Corps HQ Arrested in Russia Spy Probe Could Face Life in Prison - Military.com",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQMDZyOXJxaDNmRm16S0F3NmZEeUJOZ0UwbGc2cXhuZGpNelVsWG9vVU9lalJoeVVfTG1Kc3hkd3lnM1FXRFFvZjhpVEZvckhIVEFIZ1dpVVB5N2tTNmZOQ1VJZEVtX2hHZ3hmQklaeUJjdnRSaENlbEJMSTNIYm5QYjFtLUlvU3p6M2YwOHZRMG1HdTktYWtoMHRIRllORFRFLTNnLWVJVV9uODdIbGQ1MTdfU0I?oc=5",
+          "published_date": "Wed, 11 Nov 2026 18:05:19 GMT",
+          "time": "Wed, 11 Nov 2026 18:05:19 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Military.com",
+          "summary": "Fallback discovery via Google News RSS; publisher: Military.com",
+          "source": "Military.com",
+          "sourceLabel": "Military.com",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NATO",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "c7651b0ad19c2474",
+      "title": "White House sends warning to Democrats about investigating the Trump administration - PBS",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Wed, 11 Nov 2026 17:06:10 GMT",
+      "lastSeen": "Wed, 11 Nov 2026 17:06:10 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMivgFBVV95cUxQYVFxdFNPMFZYc1ZPODl2d29tT2NEWG94US1wTVFhTFM1QlNjV0xyRGE5NW1sMjJIb1VJVHBtR1pzb1RPbFBNa0xJYVlUZmFCeGotRXhoeWdoaHZLUHFGbVlNSGdLMHEtR1d4UnZlaG5BMjRxeW5KanVvOUR6Q3U1alljWnc5OTNla2hocHk1Ny05dnlTZjBVcFh0d1ZTMjNPbXNYd1p3OFo2cGpBMS00b24tdXI4MElGNUJlaFdB0gHDAUFVX3lxTE8zNHhaWlRucEhTQnZFdFllNnBTSDNIemI4TFJ0WEJyVW5vazROdDU3SkozYmw1SFlkR2s3RkY0UzhTQ29uVGpKSXBqYU5rbXdtWXpFVlA5N3hIQmJwNHN0YVBMSEJCOENaX3FuSVJmXzE2S0NQdmVLMzRTRTR1NjZXN0syeGZUMnNlSGtqUmsyZHRudExxbTFfYUtGcThuVHpYQWNXemxpX1p0UWVObkFaaThfMmJlZnYxMUNCX0FvU0lkOA?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "White House sends warning to Democrats about investigating the Trump administration - PBS",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQYVFxdFNPMFZYc1ZPODl2d29tT2NEWG94US1wTVFhTFM1QlNjV0xyRGE5NW1sMjJIb1VJVHBtR1pzb1RPbFBNa0xJYVlUZmFCeGotRXhoeWdoaHZLUHFGbVlNSGdLMHEtR1d4UnZlaG5BMjRxeW5KanVvOUR6Q3U1alljWnc5OTNla2hocHk1Ny05dnlTZjBVcFh0d1ZTMjNPbXNYd1p3OFo2cGpBMS00b24tdXI4MElGNUJlaFdB0gHDAUFVX3lxTE8zNHhaWlRucEhTQnZFdFllNnBTSDNIemI4TFJ0WEJyVW5vazROdDU3SkozYmw1SFlkR2s3RkY0UzhTQ29uVGpKSXBqYU5rbXdtWXpFVlA5N3hIQmJwNHN0YVBMSEJCOENaX3FuSVJmXzE2S0NQdmVLMzRTRTR1NjZXN0syeGZUMnNlSGtqUmsyZHRudExxbTFfYUtGcThuVHpYQWNXemxpX1p0UWVObkFaaThfMmJlZnYxMUNCX0FvU0lkOA?oc=5",
+          "published_date": "Wed, 11 Nov 2026 17:06:10 GMT",
+          "time": "Wed, 11 Nov 2026 17:06:10 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: PBS",
+          "summary": "Fallback discovery via Google News RSS; publisher: PBS",
+          "source": "PBS",
+          "sourceLabel": "PBS",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @POTUS",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "a86bb0abc2dd1560",
+      "title": "Top White House lawyer warns of \"blatant criminality\" in Democrats' investigations push - CBS News",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Wed, 11 Nov 2026 16:53:00 GMT",
+      "lastSeen": "Wed, 11 Nov 2026 16:53:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMitwFBVV95cUxPTF9jYTd1Ny1sUkJheFhFTVBmTjBGNGJiX1VaMWIyRlhRMHE4ME5xanpPYVk3SlRhR20xQnNCT2NyTDUtNWJ2VjA1eUVRbDdVT0M2M2ROSUZyejQ1NFNXY3E5NEVoZm1LNzJkel93QWJtYjU1eXBqMjMxYTA1QXpUOWJzU1ExcDd4dDdHYXh1UDlMTlRHcXItdUh6VE5yYjRhSk9GQzVWSHNtRTRzeDI3UDF5eFFfR2s?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "Top White House lawyer warns of \"blatant criminality\" in Democrats' investigations push - CBS News",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPTF9jYTd1Ny1sUkJheFhFTVBmTjBGNGJiX1VaMWIyRlhRMHE4ME5xanpPYVk3SlRhR20xQnNCT2NyTDUtNWJ2VjA1eUVRbDdVT0M2M2ROSUZyejQ1NFNXY3E5NEVoZm1LNzJkel93QWJtYjU1eXBqMjMxYTA1QXpUOWJzU1ExcDd4dDdHYXh1UDlMTlRHcXItdUh6VE5yYjRhSk9GQzVWSHNtRTRzeDI3UDF5eFFfR2s?oc=5",
+          "published_date": "Wed, 11 Nov 2026 16:53:00 GMT",
+          "time": "Wed, 11 Nov 2026 16:53:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: CBS News",
+          "summary": "Fallback discovery via Google News RSS; publisher: CBS News",
+          "source": "CBS News",
+          "sourceLabel": "CBS News",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @WhiteHouse",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -2236,6 +1934,38 @@
       ]
     },
     {
+      "id": "9056d2f350f35089",
+      "title": "WATCH: Trump marks Veterans Day with wreath laying, remarks at Arlington National Cemetery - PBS",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Wed, 11 Nov 2026 15:06:19 GMT",
+      "lastSeen": "Wed, 11 Nov 2026 15:06:19 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiywFBVV95cUxPM3F3Y21WZW1jRVFWbWttMFp6dFEwWlo5cFRJNUp4b1lRNXA3V25oMlN1bHVyQUJUaWJpWlA4YVRBakttODRoZUZqU0F2enhXb0FuSVJjX1RaSlpYSEhVeHkwTTc5NDI3YW1vUU5yQVZxemRsbWR6MlpHVDNjRHpFRmxMVVVGcDRZSlU4QlJLbTZJeUFRRkFiZ0NqYnNMdWFBZ1VKcG9YM2g5LXVHX2xENU95dFZDRFlGWkhGSVFkWVBIM3R1bTJKekdmWdIB0AFBVV95cUxPcFBtbDVVQlhGNGJKVGxvempGU0FLcDV2NEZWaWRvanI0cGR1OUJmWWpvTVFFM0lYZjVWelpmWlUwV1lDTGw3b2dDUWhIa0lZNFdBajd0TlVvaTJ3S0VXa0JBN0hZSzBSUTFqWW5PSk5xZmlmbXoyOUlmTVhXcGI1RjJKR3hsdFJEQkllQWFSUzduTnRJV05rT1FiNmpXM2Vidi1lOEhWR0xlVWtMYTZLb1NjVHZKRTd6TlpISWdDY1dNeTlZaTRyUjFUWUpSTjNE?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "WATCH: Trump marks Veterans Day with wreath laying, remarks at Arlington National Cemetery - PBS",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPM3F3Y21WZW1jRVFWbWttMFp6dFEwWlo5cFRJNUp4b1lRNXA3V25oMlN1bHVyQUJUaWJpWlA4YVRBakttODRoZUZqU0F2enhXb0FuSVJjX1RaSlpYSEhVeHkwTTc5NDI3YW1vUU5yQVZxemRsbWR6MlpHVDNjRHpFRmxMVVVGcDRZSlU4QlJLbTZJeUFRRkFiZ0NqYnNMdWFBZ1VKcG9YM2g5LXVHX2xENU95dFZDRFlGWkhGSVFkWVBIM3R1bTJKekdmWdIB0AFBVV95cUxPcFBtbDVVQlhGNGJKVGxvempGU0FLcDV2NEZWaWRvanI0cGR1OUJmWWpvTVFFM0lYZjVWelpmWlUwV1lDTGw3b2dDUWhIa0lZNFdBajd0TlVvaTJ3S0VXa0JBN0hZSzBSUTFqWW5PSk5xZmlmbXoyOUlmTVhXcGI1RjJKR3hsdFJEQkllQWFSUzduTnRJV05rT1FiNmpXM2Vidi1lOEhWR0xlVWtMYTZLb1NjVHZKRTd6TlpISWdDY1dNeTlZaTRyUjFUWUpSTjNE?oc=5",
+          "published_date": "Wed, 11 Nov 2026 15:06:19 GMT",
+          "time": "Wed, 11 Nov 2026 15:06:19 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: PBS",
+          "summary": "Fallback discovery via Google News RSS; publisher: PBS",
+          "source": "PBS",
+          "sourceLabel": "PBS",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @POTUS",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
       "id": "c0a64eec764d90bb",
       "title": "White House pushes back on Democrats, saying investigations could ‘cross the line’ into crime - The Hill",
       "category": "general",
@@ -2268,8 +1998,8 @@
       ]
     },
     {
-      "id": "9c1464a59caa8f10",
-      "title": "Gravity jet suit: Real-life Iron Man takes flight at NASA event - Aerospace Global News",
+      "id": "679e2fad35bb0383",
+      "title": "A U.S. soldier has been arrested in the United Kingdom on suspicion of espionage for Russia: what is known? - CiberCuba",
       "category": "general",
       "confidence": "low",
       "reportCount": 1,
@@ -2277,24 +2007,94 @@
       "sources": [
         "news.google.com"
       ],
-      "anchors": [],
-      "firstSeen": "Wed, 11 Nov 2026 13:13:59 GMT",
-      "lastSeen": "Wed, 11 Nov 2026 13:13:59 GMT",
+      "anchors": [
+        "russia"
+      ],
+      "firstSeen": "Wed, 11 Nov 2026 14:04:23 GMT",
+      "lastSeen": "Wed, 11 Nov 2026 14:04:23 GMT",
       "urls": [
-        "https://news.google.com/rss/articles/CBMif0FVX3lxTE80Q2FPVFlkNHJSQ0pIcmVjNFRUeXJzRjJVcXhka2lHRlVGU1AzUE95NVJYaXBWbDkwYWUzTnRvdFhJYU9PbWI5VER0MHYwRmxZbzl4LTl5NnVhX2l0N2ZyZnpBMG5zNERxajNXZXlYSDZtWW1qNC05cklzeUMtc2M?oc=5"
+        "https://news.google.com/rss/articles/CBMivwFBVV95cUxNMVNBak1xQ1FrYlk0aVItSUdGMHRGSnRVaVhQdlllRVVKM0hIVE1TbGRSU3l4WTNCNTZkNkN4RFpjcFdzeTJUTHV0WU1sTzFtVnV1TUFyX2xSODRYN2ZISDZNbUFEWWRCM1ljSUpERmdUbGhSMXJLY2gtd0hhaXZCWk9JYS10N1c0dlNvZGwyV25SVTBUV25lSEUyY1ktQmlHTk1JSlpxZVBWUTZJQVh2WG1oWHl6MEpSUkREeTczRQ?oc=5"
       ],
       "reports": [
         {
-          "title": "Gravity jet suit: Real-life Iron Man takes flight at NASA event - Aerospace Global News",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE80Q2FPVFlkNHJSQ0pIcmVjNFRUeXJzRjJVcXhka2lHRlVGU1AzUE95NVJYaXBWbDkwYWUzTnRvdFhJYU9PbWI5VER0MHYwRmxZbzl4LTl5NnVhX2l0N2ZyZnpBMG5zNERxajNXZXlYSDZtWW1qNC05cklzeUMtc2M?oc=5",
-          "published_date": "Wed, 11 Nov 2026 13:13:59 GMT",
-          "time": "Wed, 11 Nov 2026 13:13:59 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Aerospace Global News",
-          "summary": "Fallback discovery via Google News RSS; publisher: Aerospace Global News",
-          "source": "Aerospace Global News",
-          "sourceLabel": "Aerospace Global News",
+          "title": "A U.S. soldier has been arrested in the United Kingdom on suspicion of espionage for Russia: what is known? - CiberCuba",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNMVNBak1xQ1FrYlk0aVItSUdGMHRGSnRVaVhQdlllRVVKM0hIVE1TbGRSU3l4WTNCNTZkNkN4RFpjcFdzeTJUTHV0WU1sTzFtVnV1TUFyX2xSODRYN2ZISDZNbUFEWWRCM1ljSUpERmdUbGhSMXJLY2gtd0hhaXZCWk9JYS10N1c0dlNvZGwyV25SVTBUV25lSEUyY1ktQmlHTk1JSlpxZVBWUTZJQVh2WG1oWHl6MEpSUkREeTczRQ?oc=5",
+          "published_date": "Wed, 11 Nov 2026 14:04:23 GMT",
+          "time": "Wed, 11 Nov 2026 14:04:23 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: CiberCuba",
+          "summary": "Fallback discovery via Google News RSS; publisher: CiberCuba",
+          "source": "CiberCuba",
+          "sourceLabel": "CiberCuba",
           "sourceType": "fallback-news",
-          "fallbackFor": "X @NASA",
+          "fallbackFor": "X @NATO",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "62f6baf071182f51",
+      "title": "NATO country fighter jet declares mid-air emergency above holiday hotspot - Daily Express",
+      "category": "diplomatic",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [
+        "nato"
+      ],
+      "firstSeen": "Wed, 11 Nov 2026 11:40:00 GMT",
+      "lastSeen": "Wed, 11 Nov 2026 11:40:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMijgFBVV95cUxNa29QX0lYU0syS3BodVh1ckZmU1RpTWJzS2oxM3BralJ4cGhGaGVsY3dXNnEzS3hvY2NRU3lVYnJqWVZyNXFSOEVDWHhxLWRXREFDdnNNUDI0R3NyYWxpajIyM3hlMk9HX3puODVxTnBtMUx1X3hMNFBWbF9WMVhsTHA4UEhjWTJsOXlVejd30gGTAUFVX3lxTE0tbU9PZ0JqamtkaXdldG5XYXRDNmNBYjBwZHFoeFN1am81UzJyLUotNHY1eWlyU2hPbnRRSDhoLTh4dmQ5NlhDbDBmbjNCNWVDOWpfYkxTVDU0QkFtek5JUlpzcXhJMmNYMF9ZNnBfYVNua2ZubDBySENzR0N2Wk1aMnY2OEJLTzhJWWhRbDFNT1RyNA?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "NATO country fighter jet declares mid-air emergency above holiday hotspot - Daily Express",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNa29QX0lYU0syS3BodVh1ckZmU1RpTWJzS2oxM3BralJ4cGhGaGVsY3dXNnEzS3hvY2NRU3lVYnJqWVZyNXFSOEVDWHhxLWRXREFDdnNNUDI0R3NyYWxpajIyM3hlMk9HX3puODVxTnBtMUx1X3hMNFBWbF9WMVhsTHA4UEhjWTJsOXlVejd30gGTAUFVX3lxTE0tbU9PZ0JqamtkaXdldG5XYXRDNmNBYjBwZHFoeFN1am81UzJyLUotNHY1eWlyU2hPbnRRSDhoLTh4dmQ5NlhDbDBmbjNCNWVDOWpfYkxTVDU0QkFtek5JUlpzcXhJMmNYMF9ZNnBfYVNua2ZubDBySENzR0N2Wk1aMnY2OEJLTzhJWWhRbDFNT1RyNA?oc=5",
+          "published_date": "Wed, 11 Nov 2026 11:40:00 GMT",
+          "time": "Wed, 11 Nov 2026 11:40:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Daily Express",
+          "summary": "Fallback discovery via Google News RSS; publisher: Daily Express",
+          "source": "Daily Express",
+          "sourceLabel": "Daily Express",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NATO",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "8fd87d1ec1721548",
+      "title": "Kushner’s new security deal for Europe has a Russia problem - Defence24.com",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [
+        "russia"
+      ],
+      "firstSeen": "Wed, 11 Nov 2026 09:20:01 GMT",
+      "lastSeen": "Wed, 11 Nov 2026 09:20:01 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMilwFBVV95cUxPM3I3TzBoWTZFLWRqV2NPSG9SWTNrT09oNi10WVZFM2tIbjlDREhpNWNrMkJfZWE5N0ZzOGEtSjcwR3NGa2hiMFBGSlZUc0JiNTJjMU92bEhXXzhEalRVMlg5Q0JIM3FKMTJHUXhaTVpsYXQyQS03Tno1ZmFma3liSGtua1VfMnh1TmdOd2NCSWRkeGxwSHZB?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "Kushner’s new security deal for Europe has a Russia problem - Defence24.com",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPM3I3TzBoWTZFLWRqV2NPSG9SWTNrT09oNi10WVZFM2tIbjlDREhpNWNrMkJfZWE5N0ZzOGEtSjcwR3NGa2hiMFBGSlZUc0JiNTJjMU92bEhXXzhEalRVMlg5Q0JIM3FKMTJHUXhaTVpsYXQyQS03Tno1ZmFma3liSGtua1VfMnh1TmdOd2NCSWRkeGxwSHZB?oc=5",
+          "published_date": "Wed, 11 Nov 2026 09:20:01 GMT",
+          "time": "Wed, 11 Nov 2026 09:20:01 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Defence24.com",
+          "summary": "Fallback discovery via Google News RSS; publisher: Defence24.com",
+          "source": "Defence24.com",
+          "sourceLabel": "Defence24.com",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NATO",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -2325,6 +2125,40 @@
           "summary": "Fallback discovery via Google News RSS; publisher: تسنیم",
           "source": "تسنیم",
           "sourceLabel": "تسنیم",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @WhiteHouse",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "9bf066360fb8f44a",
+      "title": "Bessent Is Moved From D.C.-Area Home to Military Base Amid Iranian Threats - The New York Times",
+      "category": "conflict",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [
+        "iran"
+      ],
+      "firstSeen": "Wed, 11 Nov 2026 00:07:32 GMT",
+      "lastSeen": "Wed, 11 Nov 2026 00:07:32 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQbG81THloYW9zUDI4MkhNMXU5X084d0FtM0YtOXl2MnNTMkRNYXlGRkk3WWg4MUNxVUxtUXdaVlN1UzVXazRaenBjQUJSOVg1S2VtWkRMaGhaeGxOdnpIeXNUb1djNXduSjBiQjZncmdpZ1B5Tl9xeGJBU1hZdElvVzM3RmtGUThORnNJ?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "Bessent Is Moved From D.C.-Area Home to Military Base Amid Iranian Threats - The New York Times",
+          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQbG81THloYW9zUDI4MkhNMXU5X084d0FtM0YtOXl2MnNTMkRNYXlGRkk3WWg4MUNxVUxtUXdaVlN1UzVXazRaenBjQUJSOVg1S2VtWkRMaGhaeGxOdnpIeXNUb1djNXduSjBiQjZncmdpZ1B5Tl9xeGJBU1hZdElvVzM3RmtGUThORnNJ?oc=5",
+          "published_date": "Wed, 11 Nov 2026 00:07:32 GMT",
+          "time": "Wed, 11 Nov 2026 00:07:32 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: The New York Times",
+          "summary": "Fallback discovery via Google News RSS; publisher: The New York Times",
+          "source": "The New York Times",
+          "sourceLabel": "The New York Times",
           "sourceType": "fallback-news",
           "fallbackFor": "X @WhiteHouse",
           "credit_metadata": "Google News RSS fallback"
@@ -2528,38 +2362,6 @@
       ]
     },
     {
-      "id": "cd8d1b84a7877d4d",
-      "title": "Officials Provide Progress Update on Major Operation 1 Year After its Launch - U.S. Southern Command (.mil)",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Wed, 02 Sep 2026 07:00:00 GMT",
-      "lastSeen": "Wed, 02 Sep 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPSDREY1NkbVFsakdGcGNDeEU5S25YejhIRVZJd2ZQLVkzcGZOcWVlOHE4ZGFPVDY2M1J4czN6RUxqWXV0QlV1Z2RpZ3hGeXNlcFhWTU45X2FsV1ZjZlJfTU5HUTgtMktaZl9lRnJ6UTduT3FwNEVRMUJJb0RZZllyaGx0VERqSF9fbnR2ZU43U0dkMDZvVlZLX1lQelBvY3VheFZ5bnUxZTE4WVZwWHR1cTFaeUNhWElhTlFndG83Vmg1VnNnWDFwdDY1X0tUVEVobjNRUA?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Officials Provide Progress Update on Major Operation 1 Year After its Launch - U.S. Southern Command (.mil)",
-          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPSDREY1NkbVFsakdGcGNDeEU5S25YejhIRVZJd2ZQLVkzcGZOcWVlOHE4ZGFPVDY2M1J4czN6RUxqWXV0QlV1Z2RpZ3hGeXNlcFhWTU45X2FsV1ZjZlJfTU5HUTgtMktaZl9lRnJ6UTduT3FwNEVRMUJJb0RZZllyaGx0VERqSF9fbnR2ZU43U0dkMDZvVlZLX1lQelBvY3VheFZ5bnUxZTE4WVZwWHR1cTFaeUNhWElhTlFndG83Vmg1VnNnWDFwdDY1X0tUVEVobjNRUA?oc=5",
-          "published_date": "Wed, 02 Sep 2026 07:00:00 GMT",
-          "time": "Wed, 02 Sep 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: U.S. Southern Command (.mil)",
-          "summary": "Fallback discovery via Google News RSS; publisher: U.S. Southern Command (.mil)",
-          "source": "U.S. Southern Command (.mil)",
-          "sourceLabel": "U.S. Southern Command (.mil)",
-          "sourceType": "fallback-news",
-          "fallbackFor": "SOUTHCOM Official Reporting — GDELT Mirror",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
       "id": "841ba2387b5c662e",
       "title": "Officials Provide Progress Update on Major Operation 1 Year After its Launch - U.S. Department of War (.gov)",
       "category": "general",
@@ -2587,38 +2389,6 @@
           "sourceLabel": "U.S. Department of War (.gov)",
           "sourceType": "fallback-news",
           "fallbackFor": "GDELT — Western Hemisphere Counter-Cartel",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "8862b9d6836e2426",
-      "title": "Prime Minister of Dominica Visits SOUTHCOM - U.S. Southern Command (.mil)",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Tue, 30 Jul 2024 07:00:00 GMT",
-      "lastSeen": "Tue, 30 Jul 2024 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMipgFBVV95cUxQRUJRYU9GVmlqLW1JRGY1eDg0T3daMzMwSkgzT1l0aGY1aTlFZ043VnZIckNnYjFjdmtObUxrR2ZkeDZKeElVdW5wMkR0Y1JBRFVFWjhaXzBIN2FpTHl3SlYtcHFFVW5VN3B4bEJPSnIwVVZWeUZRRkhmQnJTN1NaYWhFc1hwU19WbGpBQ0w5d2FDYVJrZVZBUkgwZlVsYjFSQ0pwYnZn?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Prime Minister of Dominica Visits SOUTHCOM - U.S. Southern Command (.mil)",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQRUJRYU9GVmlqLW1JRGY1eDg0T3daMzMwSkgzT1l0aGY1aTlFZ043VnZIckNnYjFjdmtObUxrR2ZkeDZKeElVdW5wMkR0Y1JBRFVFWjhaXzBIN2FpTHl3SlYtcHFFVW5VN3B4bEJPSnIwVVZWeUZRRkhmQnJTN1NaYWhFc1hwU19WbGpBQ0w5d2FDYVJrZVZBUkgwZlVsYjFSQ0pwYnZn?oc=5",
-          "published_date": "Tue, 30 Jul 2024 07:00:00 GMT",
-          "time": "Tue, 30 Jul 2024 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: U.S. Southern Command (.mil)",
-          "summary": "Fallback discovery via Google News RSS; publisher: U.S. Southern Command (.mil)",
-          "source": "U.S. Southern Command (.mil)",
-          "sourceLabel": "U.S. Southern Command (.mil)",
-          "sourceType": "fallback-news",
-          "fallbackFor": "SOUTHCOM Official Reporting — GDELT Mirror",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -2653,38 +2423,6 @@
           "sourceLabel": "North Atlantic Treaty Organization | NATO",
           "sourceType": "fallback-news",
           "fallbackFor": "X @NATO",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "c720fc963d4588ac",
-      "title": "Phase II of Tradewinds 2017 exercise in Caribbean ends - U.S. Southern Command (.mil)",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Tue, 29 Jan 2019 15:07:07 GMT",
-      "lastSeen": "Tue, 29 Jan 2019 15:07:07 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMitwFBVV95cUxNVEpCY3ZXejlWd2t5elExWl9VM2xnU253MTFwN1Y4SE5KZF9lTXI4aW50cXBGeV9tSGVTYkg5MUxQcjEzcVVkX24zcjEzWVFTTHhyaU5aUDVuazE2ZDNHTmJUMWN6RjFXOExHTVVwT1g5SkRBdDA5Q1BQZWhuWlo3MXgxb25rU2ljcWNFVVJCT25mMHhWWmQ5TFM2ZHk4ZnFxQWZmUlF5dHhXcm1RMFh6cmp1TnpaOG8?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Phase II of Tradewinds 2017 exercise in Caribbean ends - U.S. Southern Command (.mil)",
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNVEpCY3ZXejlWd2t5elExWl9VM2xnU253MTFwN1Y4SE5KZF9lTXI4aW50cXBGeV9tSGVTYkg5MUxQcjEzcVVkX24zcjEzWVFTTHhyaU5aUDVuazE2ZDNHTmJUMWN6RjFXOExHTVVwT1g5SkRBdDA5Q1BQZWhuWlo3MXgxb25rU2ljcWNFVVJCT25mMHhWWmQ5TFM2ZHk4ZnFxQWZmUlF5dHhXcm1RMFh6cmp1TnpaOG8?oc=5",
-          "published_date": "Tue, 29 Jan 2019 15:07:07 GMT",
-          "time": "Tue, 29 Jan 2019 15:07:07 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: U.S. Southern Command (.mil)",
-          "summary": "Fallback discovery via Google News RSS; publisher: U.S. Southern Command (.mil)",
-          "source": "U.S. Southern Command (.mil)",
-          "sourceLabel": "U.S. Southern Command (.mil)",
-          "sourceType": "fallback-news",
-          "fallbackFor": "SOUTHCOM Official Reporting — GDELT Mirror",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -2946,70 +2684,6 @@
       ]
     },
     {
-      "id": "560db6028b917296",
-      "title": "SOUTHCOM Establishes Autonomous Warfare Command - U.S. Southern Command (.mil)",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Tue, 21 Apr 2026 07:00:00 GMT",
-      "lastSeen": "Tue, 21 Apr 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMirAFBVV95cUxNdVdfM1RNVDFDd0hmQnFXb2U3amljWmVZSUdDcmNJbkpxS09rMGd3MkU5NjBFNVFld0NtamE3M3VUWlhKNXVXYy1Tbkd4ZnNBLVktSFFJUEdVS19fS3pZbzAwTjNYSkZVR1FLTTFSSVZoWVpVd0FNNzA5bU12ZkdIU3pJaVp0bWdPRmdQQ05QaktDNVlUUzdnYWIxU2thRTFqTmlDbDgya0wxSXBw?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "SOUTHCOM Establishes Autonomous Warfare Command - U.S. Southern Command (.mil)",
-          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNdVdfM1RNVDFDd0hmQnFXb2U3amljWmVZSUdDcmNJbkpxS09rMGd3MkU5NjBFNVFld0NtamE3M3VUWlhKNXVXYy1Tbkd4ZnNBLVktSFFJUEdVS19fS3pZbzAwTjNYSkZVR1FLTTFSSVZoWVpVd0FNNzA5bU12ZkdIU3pJaVp0bWdPRmdQQ05QaktDNVlUUzdnYWIxU2thRTFqTmlDbDgya0wxSXBw?oc=5",
-          "published_date": "Tue, 21 Apr 2026 07:00:00 GMT",
-          "time": "Tue, 21 Apr 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: U.S. Southern Command (.mil)",
-          "summary": "Fallback discovery via Google News RSS; publisher: U.S. Southern Command (.mil)",
-          "source": "U.S. Southern Command (.mil)",
-          "sourceLabel": "U.S. Southern Command (.mil)",
-          "sourceType": "fallback-news",
-          "fallbackFor": "SOUTHCOM Official Reporting — GDELT Mirror",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "4c3f9feea1dc91e0",
-      "title": "Maritime Interdiction Operation, Jan. 20, 2026 - U.S. Southern Command (.mil)",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Tue, 20 Jan 2026 08:00:00 GMT",
-      "lastSeen": "Tue, 20 Jan 2026 08:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMipwFBVV95cUxNZDdZNXVDVno3YVAzQWVVRG96N2JMYW5DUEM5WnhXSnhSN05WQXlNYmlBeFJ1ZUpEOEtwTVo2OTlPTklLdWVTSURuQk0tVVIwN2xrb1dFRmFjeFdpbk12MUFBSVB0R2dQbnBVV1ViRmFVZlkxQ3d4Y2owc3BpbDRvbm8teHRHaloyMUE2LTktZV9oLVZUUGU4XzR5QTkxY2tJRkpWbjR4bw?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Maritime Interdiction Operation, Jan. 20, 2026 - U.S. Southern Command (.mil)",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNZDdZNXVDVno3YVAzQWVVRG96N2JMYW5DUEM5WnhXSnhSN05WQXlNYmlBeFJ1ZUpEOEtwTVo2OTlPTklLdWVTSURuQk0tVVIwN2xrb1dFRmFjeFdpbk12MUFBSVB0R2dQbnBVV1ViRmFVZlkxQ3d4Y2owc3BpbDRvbm8teHRHaloyMUE2LTktZV9oLVZUUGU4XzR5QTkxY2tJRkpWbjR4bw?oc=5",
-          "published_date": "Tue, 20 Jan 2026 08:00:00 GMT",
-          "time": "Tue, 20 Jan 2026 08:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: U.S. Southern Command (.mil)",
-          "summary": "Fallback discovery via Google News RSS; publisher: U.S. Southern Command (.mil)",
-          "source": "U.S. Southern Command (.mil)",
-          "sourceLabel": "U.S. Southern Command (.mil)",
-          "sourceType": "fallback-news",
-          "fallbackFor": "SOUTHCOM Official Reporting — GDELT Mirror",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
       "id": "40d3c2b3812e8edb",
       "title": "World enters era of ‘global water bankruptcy’ - UN News",
       "category": "general",
@@ -3175,6 +2849,38 @@
       ]
     },
     {
+      "id": "371738b9fc291eaf",
+      "title": "US President Donald Trump delivers remarks in the James S. Brady Press Briefing Room at the White House - The Lufkin Daily News",
+      "category": "political",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Tue, 10 Nov 2026 23:47:29 GMT",
+      "lastSeen": "Tue, 10 Nov 2026 23:47:29 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMikgJBVV95cUxQYmhjMXpmeG5DWkpRam1lYlRmZUdBY21HeXpiY2kxclFSelBXWFNoVVQzT3pXTlBBTXE2SWdlVHJUVGtWTXh3VW5kYzc2dzlZb0NVajFXUFNHemE5UnBiYk9KOHY1NGlLYjZXcW5KUjgxXzF2RUNaQ3c0eko2el80b2ZDTldleDBybW55VlZhTXpFbGRGZ0tpdnZrQUxvUnRhYjNZc2I0N0c1Nmw0MUFEbE5FZk43MXM2VWszT2VBVWJGbjB5V0x5OFF0YmNnNU84TDlzR2QtbE9Ba3o4OF9CRktERzk0QnVBM0FwR0w2bHZCenR0UHFoVXBVTFhKN2t5VWtyOVRqN2t3NEV5R2dQTUJB?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "US President Donald Trump delivers remarks in the James S. Brady Press Briefing Room at the White House - The Lufkin Daily News",
+          "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQYmhjMXpmeG5DWkpRam1lYlRmZUdBY21HeXpiY2kxclFSelBXWFNoVVQzT3pXTlBBTXE2SWdlVHJUVGtWTXh3VW5kYzc2dzlZb0NVajFXUFNHemE5UnBiYk9KOHY1NGlLYjZXcW5KUjgxXzF2RUNaQ3c0eko2el80b2ZDTldleDBybW55VlZhTXpFbGRGZ0tpdnZrQUxvUnRhYjNZc2I0N0c1Nmw0MUFEbE5FZk43MXM2VWszT2VBVWJGbjB5V0x5OFF0YmNnNU84TDlzR2QtbE9Ba3o4OF9CRktERzk0QnVBM0FwR0w2bHZCenR0UHFoVXBVTFhKN2t5VWtyOVRqN2t3NEV5R2dQTUJB?oc=5",
+          "published_date": "Tue, 10 Nov 2026 23:47:29 GMT",
+          "time": "Tue, 10 Nov 2026 23:47:29 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: The Lufkin Daily News",
+          "summary": "Fallback discovery via Google News RSS; publisher: The Lufkin Daily News",
+          "source": "The Lufkin Daily News",
+          "sourceLabel": "The Lufkin Daily News",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @POTUS",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
       "id": "2ca73248a27c5d77",
       "title": "NATO issues statement on US serviceman arrested in UK for 'spying for Russia' - Daily Express",
       "category": "diplomatic",
@@ -3281,6 +2987,70 @@
       ]
     },
     {
+      "id": "a30c4d43c9c79298",
+      "title": "NASA Invites Media, Public to Join Voyager 1 One-Light Day Activities - NASA Jet Propulsion Laboratory (JPL) (.gov)",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Tue, 10 Nov 2026 19:51:04 GMT",
+      "lastSeen": "Tue, 10 Nov 2026 19:51:04 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMioAFBVV95cUxQbjRBU0JGTXdRbjEtNUthWHdpeEp1YUVZNzYxVFhrSHZ3UktrY1lXaHpoWWJFbXNjS1N4a1ExS01GckVRU1N0WlpGLUZQdEQ1YVQ0akhZdDQ0SF8yWmlFYWFyWXcwZjd2V1N4ZjRJV3dYbEpjTW5QUGlTdzBXSUdOMWF0V3lnbC1SbmdRRmdydUtUQ19JM28yMWM5dEhTcDdC?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "NASA Invites Media, Public to Join Voyager 1 One-Light Day Activities - NASA Jet Propulsion Laboratory (JPL) (.gov)",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQbjRBU0JGTXdRbjEtNUthWHdpeEp1YUVZNzYxVFhrSHZ3UktrY1lXaHpoWWJFbXNjS1N4a1ExS01GckVRU1N0WlpGLUZQdEQ1YVQ0akhZdDQ0SF8yWmlFYWFyWXcwZjd2V1N4ZjRJV3dYbEpjTW5QUGlTdzBXSUdOMWF0V3lnbC1SbmdRRmdydUtUQ19JM28yMWM5dEhTcDdC?oc=5",
+          "published_date": "Tue, 10 Nov 2026 19:51:04 GMT",
+          "time": "Tue, 10 Nov 2026 19:51:04 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NASA Jet Propulsion Laboratory (JPL) (.gov)",
+          "summary": "Fallback discovery via Google News RSS; publisher: NASA Jet Propulsion Laboratory (JPL) (.gov)",
+          "source": "NASA Jet Propulsion Laboratory (JPL) (.gov)",
+          "sourceLabel": "NASA Jet Propulsion Laboratory (JPL) (.gov)",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NASA",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "7f9586b956922606",
+      "title": "NYT: Trump wished Biden well in newly disclosed 2021 letter - CNN",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Tue, 10 Nov 2026 18:10:42 GMT",
+      "lastSeen": "Tue, 10 Nov 2026 18:10:42 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMicEFVX3lxTE5jRlA2R1pkVGFVdXEwM1djSkd5TDhMSTd5UGtEWVp4bDNhTnNhQWplVk14ZThYZzgzdHJyWmI4OXktdHc0b2RsRkppUFFGSlkwaVBpMTBzdzFuYnZjSjVfNFBWRV9lMGZZSy1XaEptTXU?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "NYT: Trump wished Biden well in newly disclosed 2021 letter - CNN",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5jRlA2R1pkVGFVdXEwM1djSkd5TDhMSTd5UGtEWVp4bDNhTnNhQWplVk14ZThYZzgzdHJyWmI4OXktdHc0b2RsRkppUFFGSlkwaVBpMTBzdzFuYnZjSjVfNFBWRV9lMGZZSy1XaEptTXU?oc=5",
+          "published_date": "Tue, 10 Nov 2026 18:10:42 GMT",
+          "time": "Tue, 10 Nov 2026 18:10:42 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: CNN",
+          "summary": "Fallback discovery via Google News RSS; publisher: CNN",
+          "source": "CNN",
+          "sourceLabel": "CNN",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @POTUS",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
       "id": "c8638ce763bd0448",
       "title": "Illegal Alien Arrested Near White House Charged in Making Threats to President Trump, Illegal Firearms Possession in a Stolen F-150 - Department of Justice (.gov)",
       "category": "political",
@@ -3372,102 +3142,6 @@
           "sourceLabel": "USA Today",
           "sourceType": "fallback-news",
           "fallbackFor": "X @NASA",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "2cfdd1acc948b155",
-      "title": "Jimmy Kimmel Hits Back at White House ‘Failing Ratings’ Attack - Newsweek",
-      "category": "conflict",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Tue, 10 Nov 2026 12:08:00 GMT",
-      "lastSeen": "Tue, 10 Nov 2026 12:08:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMikgFBVV95cUxORmgwUFBoMEpWSlRlclF3X3BWUUtuOTYzNEpHeTlRU2lWeXhYc1V1bkx0dWlVeUpNTUVUTDgtU0JkcWN3a1hLajRJQWduS1VKUGhSVnBXb3JEUXFDaExOQnQtejRWSks0enVVdV9ONXZ2eEg1endfU1Y5MEhyaGd2REtGd0MzSGtiSENlZURvSVNyUQ?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Jimmy Kimmel Hits Back at White House ‘Failing Ratings’ Attack - Newsweek",
-          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxORmgwUFBoMEpWSlRlclF3X3BWUUtuOTYzNEpHeTlRU2lWeXhYc1V1bkx0dWlVeUpNTUVUTDgtU0JkcWN3a1hLajRJQWduS1VKUGhSVnBXb3JEUXFDaExOQnQtejRWSks0enVVdV9ONXZ2eEg1endfU1Y5MEhyaGd2REtGd0MzSGtiSENlZURvSVNyUQ?oc=5",
-          "published_date": "Tue, 10 Nov 2026 12:08:00 GMT",
-          "time": "Tue, 10 Nov 2026 12:08:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Newsweek",
-          "summary": "Fallback discovery via Google News RSS; publisher: Newsweek",
-          "source": "Newsweek",
-          "sourceLabel": "Newsweek",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @WhiteHouse",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "94acfe4342fd1fd9",
-      "title": "Susie Wiles' old lobbying firm made $186 million under Trump. Now it's caught in MAGA's feud. - CBS News",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Tue, 10 Nov 2026 11:00:00 GMT",
-      "lastSeen": "Tue, 10 Nov 2026 11:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMif0FVX3lxTE85eDJieHAzX1dBdm0xS0kyNzZpY0RmUGV2cmhwTk9rQ1hza2pjSDNwS1FQYnZ0d1Y5MWxNRTVUY2RwYnUySHQ4dUJCMTFZY1BuU0dwVmxjcWRjNjdLQ3Z0X2hfbGFaTFBXWloyR0VPZllvM2tWQkNMQTdNTzZGVU0?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Susie Wiles' old lobbying firm made $186 million under Trump. Now it's caught in MAGA's feud. - CBS News",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE85eDJieHAzX1dBdm0xS0kyNzZpY0RmUGV2cmhwTk9rQ1hza2pjSDNwS1FQYnZ0d1Y5MWxNRTVUY2RwYnUySHQ4dUJCMTFZY1BuU0dwVmxjcWRjNjdLQ3Z0X2hfbGFaTFBXWloyR0VPZllvM2tWQkNMQTdNTzZGVU0?oc=5",
-          "published_date": "Tue, 10 Nov 2026 11:00:00 GMT",
-          "time": "Tue, 10 Nov 2026 11:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: CBS News",
-          "summary": "Fallback discovery via Google News RSS; publisher: CBS News",
-          "source": "CBS News",
-          "sourceLabel": "CBS News",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @WhiteHouse",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "1c06017c09c03a35",
-      "title": "Why Nvidia CEO Jensen Huang's affair with alleged Chinese spy matters in AI race - DW.com",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Tue, 10 Nov 2026 09:07:57 GMT",
-      "lastSeen": "Tue, 10 Nov 2026 09:07:57 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiogFBVV95cUxQLVlHOHlrS013d3RDWXQ2OUVSaWZJcTJNY1ZKbGFQN0h0QmdxTklNYjNGUFBxamxtVnd3SGFJWkI2TmpwTy14LWJScktFc1NCV1hrdEJkdFg3X2RCR3hib1ZUX3BjY3NhVk9DV2x0U202VUd3eUJWN3lWd0FCNDl5azY4X1BDYWNvdnhwbW5RdjlvWXJTT1VYQXJKcndWV1BxemfSAaIBQVVfeXFMT19keU1oNnZUbThXYXRDaVduSkt2Z2RHendCU2dBMm1ndk01U0pmQ0NBcnh0TVlhTlh4REI4T0ktanRvdHkxa05WRmNCdWhVSkZDUmdNRjBORW1rd3VqWW5UaXIwRE5Bd3Q5RE5NRFZucDctNUpzRmU2NlIySHVLOVdyb1dUOWhiTUVYaEpmUXk0aksxU3U4NVJ2NGhIeFNQb0RR?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Why Nvidia CEO Jensen Huang's affair with alleged Chinese spy matters in AI race - DW.com",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQLVlHOHlrS013d3RDWXQ2OUVSaWZJcTJNY1ZKbGFQN0h0QmdxTklNYjNGUFBxamxtVnd3SGFJWkI2TmpwTy14LWJScktFc1NCV1hrdEJkdFg3X2RCR3hib1ZUX3BjY3NhVk9DV2x0U202VUd3eUJWN3lWd0FCNDl5azY4X1BDYWNvdnhwbW5RdjlvWXJTT1VYQXJKcndWV1BxemfSAaIBQVVfeXFMT19keU1oNnZUbThXYXRDaVduSkt2Z2RHendCU2dBMm1ndk01U0pmQ0NBcnh0TVlhTlh4REI4T0ktanRvdHkxa05WRmNCdWhVSkZDUmdNRjBORW1rd3VqWW5UaXIwRE5Bd3Q5RE5NRFZucDctNUpzRmU2NlIySHVLOVdyb1dUOWhiTUVYaEpmUXk0aksxU3U4NVJ2NGhIeFNQb0RR?oc=5",
-          "published_date": "Tue, 10 Nov 2026 09:07:57 GMT",
-          "time": "Tue, 10 Nov 2026 09:07:57 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: DW.com",
-          "summary": "Fallback discovery via Google News RSS; publisher: DW.com",
-          "source": "DW.com",
-          "sourceLabel": "DW.com",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @POTUS",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
