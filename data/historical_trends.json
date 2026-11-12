@@ -1,15 +1,9 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-11T23:28:35.625986Z",
+  "updatedAt": "2026-11-12T04:00:52.665636Z",
   "availableSamples": 288,
-  "availableHours": 1607.6,
+  "availableHours": 1612.1,
   "series": [
-    {
-      "updatedAt": "2026-09-06T15:38:22.251472+00:00",
-      "tension": 41,
-      "delta": -1,
-      "scoreVersion": 5
-    },
     {
       "updatedAt": "2026-09-14T17:03:53.700707Z",
       "tension": 41,
@@ -1443,28 +1437,40 @@
       "tension": 38,
       "delta": -1.0,
       "scoreVersion": 5
+    },
+    {
+      "updatedAt": "2026-11-12T04:00:52.665636Z",
+      "tension": 38,
+      "delta": 0.0,
+      "scoreVersion": 5
     }
   ],
   "windows": {
     "6h": {
-      "available": false,
-      "reason": "Only 1 samples in requested window"
-    },
-    "24h": {
       "available": true,
-      "samples": 4,
-      "start": "2026-11-11T02:03:46.583823Z",
-      "end": "2026-11-11T23:28:35.625986Z",
+      "samples": 2,
+      "start": "2026-11-11T23:28:35.625986Z",
+      "end": "2026-11-12T04:00:52.665636Z",
       "startTension": 38,
       "endTension": 38,
       "delta": 0.0,
       "trend": "STABLE"
     },
+    "24h": {
+      "available": true,
+      "samples": 4,
+      "start": "2026-11-11T09:16:25.426563Z",
+      "end": "2026-11-12T04:00:52.665636Z",
+      "startTension": 39,
+      "endTension": 38,
+      "delta": -1.0,
+      "trend": "STABLE"
+    },
     "7d": {
       "available": true,
       "samples": 25,
-      "start": "2026-11-04T23:52:37.186172Z",
-      "end": "2026-11-11T23:28:35.625986Z",
+      "start": "2026-11-05T04:10:50.635212Z",
+      "end": "2026-11-12T04:00:52.665636Z",
       "startTension": 37,
       "endTension": 38,
       "delta": 1.0,
@@ -1472,9 +1478,9 @@
     },
     "30d": {
       "available": true,
-      "samples": 118,
-      "start": "2026-10-12T23:48:38.256962Z",
-      "end": "2026-11-11T23:28:35.625986Z",
+      "samples": 117,
+      "start": "2026-10-13T11:18:10.788115Z",
+      "end": "2026-11-12T04:00:52.665636Z",
       "startTension": 38,
       "endTension": 38,
       "delta": 0.0,
