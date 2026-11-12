@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-12T02:59:52.592251Z",
+  "updatedAt": "2026-11-12T18:56:53.497359Z",
   "method": "Deterministic prioritization of existing public Global Pulse artifacts; not a forecast or causal model.",
   "freshness": {
-    "snapshotUpdatedAt": "2026-11-11T23:28:32.938603+00:00",
-    "eventsUpdatedAt": "2026-11-11T23:28:35.434343Z",
+    "snapshotUpdatedAt": "2026-11-12T12:16:52.082268+00:00",
+    "eventsUpdatedAt": "2026-11-12T12:16:56.158569Z",
     "assessmentsUpdatedAt": "2026-09-10T03:03:12.655499Z"
   },
   "headline": {
@@ -13,84 +13,102 @@
   },
   "topDevelopments": [
     {
-      "id": "f3e43e36f4d5496c",
-      "title": "Trump defends Iran war in Veterans Day address",
-      "category": "general",
+      "id": "e49a0eeedae449e6",
+      "title": "Israeli strike on Gaza hospital kills six Palestinians, health ministry says",
+      "category": "conflict",
+      "confidence": "high",
+      "reportCount": 4,
+      "independentSourceCount": 4,
+      "sources": [
+        "bbc_world",
+        "dw_world",
+        "guardian_world",
+        "npr_news"
+      ],
+      "breaking": true,
+      "firstSeen": "2026-11-12T09:29:30Z",
+      "lastSeen": "2026-11-12T12:03:47Z"
+    },
+    {
+      "id": "0c28619f14c26c2e",
+      "title": "Ten police officers, 18 fighters killed in northwest Pakistan attack - Al Jazeera",
+      "category": "conflict",
       "confidence": "moderate",
       "reportCount": 2,
       "independentSourceCount": 2,
       "sources": [
-        "cna_world",
-        "fox_news_politics"
+        "google_news_afghanistan_security",
+        "al_jazeera"
       ],
-      "breaking": false,
-      "firstSeen": "2026-11-11T18:32:55Z",
-      "lastSeen": "2026-11-11T21:54:00Z"
+      "breaking": true,
+      "firstSeen": "2026-11-12T08:35:20Z",
+      "lastSeen": "2026-11-12T08:35:47Z"
     },
     {
-      "id": "b9dc4860679a5f5e",
-      "title": "Hormuz Strait will ‘never return’ to pre-war status, Iran’s Ghalibaf says",
+      "id": "9af300d8a2ecd560",
+      "title": "Xi Jinping says Taiwan’s ‘complete reunification’ with China will happen",
       "category": "general",
       "confidence": "moderate",
-      "reportCount": 2,
+      "reportCount": 3,
       "independentSourceCount": 2,
       "sources": [
         "al_jazeera",
-        "google_news_global_conflict"
+        "china_politics"
       ],
       "breaking": false,
-      "firstSeen": "2026-11-11T20:26:52Z",
-      "lastSeen": "2026-11-11T21:03:40Z"
+      "firstSeen": "2026-11-12T08:34:45Z",
+      "lastSeen": "2026-11-12T11:59:28Z"
     },
     {
-      "id": "f63e3745341070da",
-      "title": "Ukraine talks in Abu Dhabi bring progress on prisoners but not on peace",
+      "id": "70e801df6924337c",
+      "title": "US envoys arrive in Moscow for Ukraine talks with Vladimir Putin",
       "category": "diplomatic",
       "confidence": "moderate",
       "reportCount": 2,
       "independentSourceCount": 2,
       "sources": [
-        "guardian_world",
-        "cna_world"
+        "bbc_world",
+        "al_jazeera"
       ],
       "breaking": false,
-      "firstSeen": "2026-11-11T14:28:00Z",
-      "lastSeen": "2026-11-11T17:03:43Z"
+      "firstSeen": "2026-11-12T09:01:24Z",
+      "lastSeen": "2026-11-12T10:08:38Z"
     },
     {
-      "id": "f4bef1a266999855",
-      "title": "Green forest fire notification in Australia",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 11,
-      "independentSourceCount": 1,
+      "id": "29bcf10721a4fabc",
+      "title": "Fighting intensifies in Yemen as Houthis deny targeting Mecca - Al Jazeera",
+      "category": "conflict",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "independentSourceCount": 2,
       "sources": [
-        "gdacs_global_disaster_alerts"
+        "google_news_yemen_red_sea",
+        "al_jazeera"
       ],
       "breaking": false,
-      "firstSeen": "2026-11-11T16:01:02Z",
-      "lastSeen": "2026-11-11T20:02:39Z"
+      "firstSeen": "2026-11-12T04:41:17Z",
+      "lastSeen": "2026-11-12T04:43:49Z"
     },
     {
-      "id": "14561a92d760b826",
-      "title": "Green forest fire notification in South Sudan",
+      "id": "a72db7549fa92d1a",
+      "title": "Ukraine Seeks €40 Billion in Defence Funding for 2027, Prioritising Drones and Air Defence - Oj - Odessa Journal",
       "category": "general",
       "confidence": "low",
-      "reportCount": 9,
+      "reportCount": 2,
       "independentSourceCount": 1,
       "sources": [
-        "gdacs_global_disaster_alerts"
+        "google_news_ukraine_war"
       ],
-      "breaking": false,
-      "firstSeen": "2026-11-11T20:01:25Z",
-      "lastSeen": "2026-11-11T20:06:17Z"
+      "breaking": true,
+      "firstSeen": "2026-11-12T07:36:47Z",
+      "lastSeen": "2026-11-12T08:28:27Z"
     },
     {
       "id": "d4032f4cad0427a7",
       "title": "Relations with Ukraine - North Atlantic Treaty Organization | NATO",
       "category": "diplomatic",
       "confidence": "low",
-      "reportCount": 5,
+      "reportCount": 4,
       "independentSourceCount": 1,
       "sources": [
         "North Atlantic Treaty Organization | NATO"
@@ -140,20 +158,6 @@
       "breaking": false,
       "firstSeen": "Thu, 02 May 2024 07:00:00 GMT",
       "lastSeen": "Tue, 23 Sep 2025 07:00:00 GMT"
-    },
-    {
-      "id": "ea317727c377df91",
-      "title": "14 suspected Sinaloa cartel members detained in Mexico — UPI - UA.NEWS",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 3,
-      "independentSourceCount": 1,
-      "sources": [
-        "google_news_mexico_cartel_conflict"
-      ],
-      "breaking": false,
-      "firstSeen": "2026-11-11T18:29:35Z",
-      "lastSeen": "2026-11-11T18:50:14Z"
     }
   ],
   "watchlist": [
