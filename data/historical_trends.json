@@ -1,15 +1,9 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-13T00:51:12.545731Z",
+  "updatedAt": "2026-11-13T07:25:44.956032Z",
   "availableSamples": 288,
-  "availableHours": 1632.5,
+  "availableHours": 1639.1,
   "series": [
-    {
-      "updatedAt": "2026-09-14T19:01:30.378295Z",
-      "tension": 38,
-      "delta": 0.0,
-      "scoreVersion": 5
-    },
     {
       "updatedAt": "2026-09-14T20:44:15.251146Z",
       "tension": 38,
@@ -1443,34 +1437,34 @@
       "tension": 37,
       "delta": 0.0,
       "scoreVersion": 5
+    },
+    {
+      "updatedAt": "2026-11-13T07:25:44.956032Z",
+      "tension": 37,
+      "delta": 0.0,
+      "scoreVersion": 5
     }
   ],
   "windows": {
     "6h": {
+      "available": false,
+      "reason": "Only 1 samples in requested window"
+    },
+    "24h": {
       "available": true,
-      "samples": 2,
-      "start": "2026-11-12T19:57:54.686900Z",
-      "end": "2026-11-13T00:51:12.545731Z",
+      "samples": 4,
+      "start": "2026-11-12T12:16:56.427026Z",
+      "end": "2026-11-13T07:25:44.956032Z",
       "startTension": 37,
       "endTension": 37,
       "delta": 0.0,
       "trend": "STABLE"
     },
-    "24h": {
-      "available": true,
-      "samples": 4,
-      "start": "2026-11-12T04:00:52.665636Z",
-      "end": "2026-11-13T00:51:12.545731Z",
-      "startTension": 38,
-      "endTension": 37,
-      "delta": -1.0,
-      "trend": "STABLE"
-    },
     "7d": {
       "available": true,
-      "samples": 27,
+      "samples": 28,
       "start": "2026-11-06T07:27:59.112074Z",
-      "end": "2026-11-13T00:51:12.545731Z",
+      "end": "2026-11-13T07:25:44.956032Z",
       "startTension": 38,
       "endTension": 37,
       "delta": -1.0,
@@ -1478,12 +1472,12 @@
     },
     "30d": {
       "available": true,
-      "samples": 117,
-      "start": "2026-10-14T01:35:50.062990Z",
-      "end": "2026-11-13T00:51:12.545731Z",
-      "startTension": 37,
+      "samples": 116,
+      "start": "2026-10-14T12:22:48.674122Z",
+      "end": "2026-11-13T07:25:44.956032Z",
+      "startTension": 38,
       "endTension": 37,
-      "delta": 0.0,
+      "delta": -1.0,
       "trend": "STABLE"
     }
   }
