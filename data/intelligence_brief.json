@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-13T16:25:14.496436Z",
+  "updatedAt": "2026-11-13T22:38:14.040881Z",
   "method": "Deterministic prioritization of existing public Global Pulse artifacts; not a forecast or causal model.",
   "freshness": {
-    "snapshotUpdatedAt": "2026-11-13T15:34:06.034373+00:00",
-    "eventsUpdatedAt": "2026-11-13T15:34:09.465407Z",
+    "snapshotUpdatedAt": "2026-11-13T21:36:26.804727+00:00",
+    "eventsUpdatedAt": "2026-11-13T21:36:30.724747Z",
     "assessmentsUpdatedAt": "2026-09-10T03:03:12.655499Z"
   },
   "headline": {
@@ -13,48 +13,92 @@
   },
   "topDevelopments": [
     {
-      "id": "0de455ea591d6a5f",
-      "title": "Pakistan military reports it killed 74 ‘terrorists’ during raids - Al Jazeera",
-      "category": "conflict",
+      "id": "82013b085eb52a88",
+      "title": "US air force responds to suspected drone activity at RAF Lakenheath",
+      "category": "general",
       "confidence": "moderate",
       "reportCount": 2,
       "independentSourceCount": 2,
       "sources": [
-        "google_news_afghanistan_security",
-        "al_jazeera"
+        "guardian_world",
+        "stars_stripes"
       ],
       "breaking": true,
-      "firstSeen": "2026-11-13T11:59:34Z",
-      "lastSeen": "2026-11-13T12:03:29Z"
+      "firstSeen": "2026-11-13T20:57:42Z",
+      "lastSeen": "2026-11-13T21:01:40Z"
     },
     {
-      "id": "4b6be0732d89e19f",
-      "title": "SpaceX's giant rocket may leave NASA in the dust",
+      "id": "7f9fc763cc47e802",
+      "title": "What's Trump's strategy now with Iran? To keep things as they are",
       "category": "general",
       "confidence": "moderate",
       "reportCount": 2,
       "independentSourceCount": 2,
       "sources": [
         "npr_news",
-        "NPR"
+        "google_news_iran_israel"
+      ],
+      "breaking": true,
+      "firstSeen": "2026-11-13T19:02:04Z",
+      "lastSeen": "2026-11-13T19:02:04Z"
+    },
+    {
+      "id": "49c19247d9be9b4c",
+      "title": "Iran targeted US radar system in Bahrain",
+      "category": "general",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "independentSourceCount": 2,
+      "sources": [
+        "cna_world",
+        "dw_world"
+      ],
+      "breaking": true,
+      "firstSeen": "2026-11-13T15:32:00Z",
+      "lastSeen": "2026-11-13T16:30:02Z"
+    },
+    {
+      "id": "50062bb4edd31453",
+      "title": "As Van Hollen wages a challenge, Senate Democrats are torn on whom to elect as their leader",
+      "category": "general",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "independentSourceCount": 2,
+      "sources": [
+        "guardian_us",
+        "google_news_u_s_politics"
       ],
       "breaking": false,
-      "firstSeen": "2026-11-13T10:00:00Z",
-      "lastSeen": "Fri, 13 Nov 2026 10:00:00 GMT"
+      "firstSeen": "2026-11-13T20:08:00Z",
+      "lastSeen": "2026-11-13T21:29:51Z"
     },
     {
       "id": "f4bef1a266999855",
       "title": "Green forest fire notification in Australia",
       "category": "general",
       "confidence": "low",
-      "reportCount": 14,
+      "reportCount": 10,
       "independentSourceCount": 1,
       "sources": [
         "gdacs_global_disaster_alerts"
       ],
       "breaking": false,
-      "firstSeen": "2026-11-13T09:14:38Z",
-      "lastSeen": "2026-11-13T12:24:01Z"
+      "firstSeen": "2026-11-13T12:08:01Z",
+      "lastSeen": "2026-11-13T20:12:20Z"
+    },
+    {
+      "id": "14561a92d760b826",
+      "title": "Green forest fire notification in South Sudan",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 6,
+      "independentSourceCount": 1,
+      "sources": [
+        "gdacs_global_disaster_alerts"
+      ],
+      "breaking": false,
+      "firstSeen": "2026-11-13T12:17:32Z",
+      "lastSeen": "2026-11-13T20:04:23Z"
     },
     {
       "id": "2179bfedcc2b8e58",
@@ -83,48 +127,6 @@
       "breaking": true,
       "firstSeen": "2026-11-13T12:48:58Z",
       "lastSeen": "2026-11-13T13:42:20Z"
-    },
-    {
-      "id": "39aa0e9bd1bdd642",
-      "title": "UK Tightens Saudi Arabia Travel Warning Over Missile Risk - https://www.thetraveler.org/",
-      "category": "conflict",
-      "confidence": "low",
-      "reportCount": 2,
-      "independentSourceCount": 1,
-      "sources": [
-        "google_news_yemen_red_sea"
-      ],
-      "breaking": true,
-      "firstSeen": "2026-11-13T06:13:03Z",
-      "lastSeen": "2026-11-13T06:53:03Z"
-    },
-    {
-      "id": "14561a92d760b826",
-      "title": "Green forest fire notification in South Sudan",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 5,
-      "independentSourceCount": 1,
-      "sources": [
-        "gdacs_global_disaster_alerts"
-      ],
-      "breaking": false,
-      "firstSeen": "2026-11-13T12:03:24Z",
-      "lastSeen": "2026-11-13T12:22:31Z"
-    },
-    {
-      "id": "3bde1e8e9aa8197c",
-      "title": "Green forest fire notification in Botswana",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 5,
-      "independentSourceCount": 1,
-      "sources": [
-        "gdacs_global_disaster_alerts"
-      ],
-      "breaking": false,
-      "firstSeen": "2026-11-13T09:01:53Z",
-      "lastSeen": "2026-11-13T12:21:51Z"
     },
     {
       "id": "d4032f4cad0427a7",
