@@ -1,15 +1,9 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-14T14:59:54.089495Z",
+  "updatedAt": "2026-11-14T19:43:10.064417Z",
   "availableSamples": 288,
-  "availableHours": 1668.1,
+  "availableHours": 1672.8,
   "series": [
-    {
-      "updatedAt": "2026-09-15T15:03:53.887798Z",
-      "tension": 41,
-      "delta": 1.0,
-      "scoreVersion": 5
-    },
     {
       "updatedAt": "2026-09-15T18:56:03.430710Z",
       "tension": 40,
@@ -1443,28 +1437,40 @@
       "tension": 38,
       "delta": 2.0,
       "scoreVersion": 5
+    },
+    {
+      "updatedAt": "2026-11-14T19:43:10.064417Z",
+      "tension": 38,
+      "delta": 0.0,
+      "scoreVersion": 5
     }
   ],
   "windows": {
     "6h": {
-      "available": false,
-      "reason": "Only 1 samples in requested window"
+      "available": true,
+      "samples": 2,
+      "start": "2026-11-14T14:59:54.089495Z",
+      "end": "2026-11-14T19:43:10.064417Z",
+      "startTension": 38,
+      "endTension": 38,
+      "delta": 0.0,
+      "trend": "STABLE"
     },
     "24h": {
       "available": true,
       "samples": 5,
-      "start": "2026-11-13T15:34:09.690944Z",
-      "end": "2026-11-14T14:59:54.089495Z",
-      "startTension": 39,
+      "start": "2026-11-13T21:36:31.008194Z",
+      "end": "2026-11-14T19:43:10.064417Z",
+      "startTension": 38,
       "endTension": 38,
-      "delta": -1.0,
+      "delta": 0.0,
       "trend": "STABLE"
     },
     "7d": {
       "available": true,
       "samples": 27,
-      "start": "2026-11-07T18:09:33.737264Z",
-      "end": "2026-11-14T14:59:54.089495Z",
+      "start": "2026-11-07T21:46:31.121487Z",
+      "end": "2026-11-14T19:43:10.064417Z",
       "startTension": 38,
       "endTension": 38,
       "delta": 0.0,
@@ -1472,9 +1478,9 @@
     },
     "30d": {
       "available": true,
-      "samples": 120,
+      "samples": 121,
       "start": "2026-10-16T09:43:23.802165Z",
-      "end": "2026-11-14T14:59:54.089495Z",
+      "end": "2026-11-14T19:43:10.064417Z",
       "startTension": 39,
       "endTension": 38,
       "delta": -1.0,
