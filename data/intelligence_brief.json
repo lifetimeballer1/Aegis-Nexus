@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-20T11:50:04.461383Z",
+  "updatedAt": "2026-11-20T20:21:11.441448Z",
   "method": "Deterministic prioritization of existing public Global Pulse artifacts; not a forecast or causal model.",
   "freshness": {
-    "snapshotUpdatedAt": "2026-11-20T10:29:26.317632+00:00",
-    "eventsUpdatedAt": "2026-11-20T10:29:29.458274Z",
+    "snapshotUpdatedAt": "2026-11-20T18:44:45.318387+00:00",
+    "eventsUpdatedAt": "2026-11-20T18:44:47.834321Z",
     "assessmentsUpdatedAt": "2026-09-10T03:03:12.655499Z"
   },
   "headline": {
@@ -13,48 +13,78 @@
   },
   "topDevelopments": [
     {
-      "id": "a8ab7a50cd31395b",
-      "title": "US signed off on sales of nearly 900,000 AI chips to China in six months, House committee says",
-      "category": "general",
+      "id": "3949aae9b67e5584",
+      "title": "What we know about the latest Russian missile strikes on Ukraine",
+      "category": "conflict",
       "confidence": "moderate",
       "reportCount": 2,
       "independentSourceCount": 2,
       "sources": [
-        "cna_world",
+        "bbc_world",
+        "google_news_ukraine_war"
+      ],
+      "breaking": true,
+      "firstSeen": "2026-11-20T15:14:01Z",
+      "lastSeen": "2026-11-20T15:14:01Z"
+    },
+    {
+      "id": "c2f986d230219280",
+      "title": "Saudi coalition and Houthis exchange threats to bomb key ports - Al Jazeera",
+      "category": "conflict",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "independentSourceCount": 2,
+      "sources": [
+        "google_news_yemen_red_sea",
         "al_jazeera"
       ],
-      "breaking": false,
-      "firstSeen": "2026-11-19T21:58:27Z",
-      "lastSeen": "2026-11-19T23:04:00Z"
+      "breaking": true,
+      "firstSeen": "2026-11-20T14:48:04Z",
+      "lastSeen": "2026-11-20T14:59:12Z"
     },
     {
-      "id": "5a567065bacb22e4",
-      "title": "Russia, Ukraine and US meet for Abu Dhabi talks as Trump says war can 'end soon' - ABC News - Breaking News, Latest News and Videos",
-      "category": "diplomatic",
+      "id": "004f64d925fcee60",
+      "title": "Is Pakistan backing anti-Taliban groups in Afghanistan? - DW.com",
+      "category": "general",
       "confidence": "moderate",
       "reportCount": 2,
       "independentSourceCount": 2,
       "sources": [
-        "google_news_ukraine_war",
-        "bbc_world"
+        "google_news_afghanistan_security",
+        "dw_world"
       ],
       "breaking": false,
-      "firstSeen": "2026-11-19T21:21:43Z",
-      "lastSeen": "2026-11-19T21:49:33Z"
+      "firstSeen": "2026-11-20T15:02:00Z",
+      "lastSeen": "2026-11-20T15:07:29Z"
     },
     {
-      "id": "384eb88634823d91",
-      "title": "Haiti police say 34 gang members killed in capital raid",
+      "id": "8159ff03b4f44163",
+      "title": "Iraqi forces deploy to Jurf al-Sakhar after deal with Iran-backed group",
       "category": "general",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "independentSourceCount": 2,
+      "sources": [
+        "al_jazeera",
+        "cna_world"
+      ],
+      "breaking": false,
+      "firstSeen": "2026-11-20T10:48:00Z",
+      "lastSeen": "2026-11-20T13:17:00Z"
+    },
+    {
+      "id": "4d8e2481659cc067",
+      "title": "Two Russian Missiles, Including Kh-101, and Jet-Powered Drone Fall in Poland During Attack on Ukraine - UNITED24 Media",
+      "category": "conflict",
       "confidence": "low",
       "reportCount": 2,
       "independentSourceCount": 1,
       "sources": [
-        "al_jazeera"
+        "google_news_ukraine_war"
       ],
       "breaking": true,
-      "firstSeen": "2026-11-19T21:39:39Z",
-      "lastSeen": "2026-11-20T00:31:02Z"
+      "firstSeen": "2026-11-20T10:42:03Z",
+      "lastSeen": "2026-11-20T10:56:15Z"
     },
     {
       "id": "d4032f4cad0427a7",
@@ -85,6 +115,20 @@
       "lastSeen": "Thu, 24 Mar 2022 07:00:00 GMT"
     },
     {
+      "id": "f4bef1a266999855",
+      "title": "Green forest fire notification in Australia",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 4,
+      "independentSourceCount": 1,
+      "sources": [
+        "gdacs_global_disaster_alerts"
+      ],
+      "breaking": false,
+      "firstSeen": "2026-11-20T16:01:29Z",
+      "lastSeen": "2026-11-20T16:11:11Z"
+    },
+    {
       "id": "b6368c4e1b113a3c",
       "title": "Statement by NATO Foreign Ministers - North Atlantic Treaty Organization | NATO",
       "category": "diplomatic",
@@ -111,49 +155,6 @@
       "breaking": false,
       "firstSeen": "Thu, 02 May 2024 07:00:00 GMT",
       "lastSeen": "Tue, 23 Sep 2025 07:00:00 GMT"
-    },
-    {
-      "id": "f8b4ac6496ad97fc",
-      "title": "Republican Senator Cornyn blocks Trump judicial nominee in Texas - Reuters",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "independentSourceCount": 2,
-      "sources": [
-        "Reuters",
-        "The Detroit News"
-      ],
-      "breaking": false,
-      "firstSeen": "Thu, 19 Nov 2026 13:11:00 GMT",
-      "lastSeen": "Wed, 18 Nov 2026 17:34:00 GMT"
-    },
-    {
-      "id": "cab09a0d85b19b11",
-      "title": "Statement by the North Atlantic Council on the Democratic People’s Republic of Korea - North Atlantic Treaty Organization | NATO",
-      "category": "diplomatic",
-      "confidence": "low",
-      "reportCount": 2,
-      "independentSourceCount": 1,
-      "sources": [
-        "North Atlantic Treaty Organization | NATO"
-      ],
-      "breaking": false,
-      "firstSeen": "Fri, 08 Nov 2024 08:00:00 GMT",
-      "lastSeen": "Thu, 22 Apr 2021 07:00:00 GMT"
-    },
-    {
-      "id": "c3b3158981503187",
-      "title": "Trump, Putin and Xi release 'peace declaration' after historic meeting - BBC",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "independentSourceCount": 1,
-      "sources": [
-        "BBC"
-      ],
-      "breaking": false,
-      "firstSeen": "Thu, 19 Nov 2026 12:07:18 GMT",
-      "lastSeen": "Thu, 19 Nov 2026 17:38:22 GMT"
     }
   ],
   "watchlist": [
