@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-21T17:33:06.947545Z",
+  "updatedAt": "2026-11-21T23:16:43.055295Z",
   "method": "Deterministic prioritization of existing public Global Pulse artifacts; not a forecast or causal model.",
   "freshness": {
-    "snapshotUpdatedAt": "2026-11-21T15:27:27.243559+00:00",
-    "eventsUpdatedAt": "2026-11-21T15:27:30.947019Z",
+    "snapshotUpdatedAt": "2026-11-21T20:59:44.601277+00:00",
+    "eventsUpdatedAt": "2026-11-21T20:59:47.814403Z",
     "assessmentsUpdatedAt": "2026-09-10T03:03:12.655499Z"
   },
   "headline": {
@@ -13,34 +13,79 @@
   },
   "topDevelopments": [
     {
-      "id": "64eb1d8087beb62c",
-      "title": "Nations at UN talks on AI killer robots agree to more talks but no firm commitment to rein them in",
-      "category": "diplomatic",
+      "id": "51ee748b71945f75",
+      "title": "Mexico detains top cartel boss 'El Chapo Isidro,' setting off a burst of violence in Sinaloa - PBS",
+      "category": "general",
       "confidence": "moderate",
-      "reportCount": 2,
+      "reportCount": 6,
       "independentSourceCount": 2,
       "sources": [
-        "npr_news",
-        "cna_world"
+        "google_news_mexico_cartel_conflict",
+        "npr_news"
       ],
-      "breaking": true,
-      "firstSeen": "2026-11-21T05:09:00Z",
-      "lastSeen": "2026-11-21T08:08:01Z"
+      "breaking": false,
+      "firstSeen": "2026-11-21T16:02:00Z",
+      "lastSeen": "2026-11-21T19:13:16Z"
     },
     {
-      "id": "314299d8cc400917",
-      "title": "Saudi-led coalition intercepts three Houthi missiles headed for Riyadh - Al Jazeera",
+      "id": "511cacb85a5b0743",
+      "title": "Alleged Mexican drug cartel boss ‘El Chapo Isidro’ arrested in special forces raid - The Guardian",
       "category": "general",
       "confidence": "moderate",
       "reportCount": 2,
       "independentSourceCount": 2,
       "sources": [
-        "google_news_iran_israel",
+        "google_news_mexico_cartel_conflict",
+        "guardian_world"
+      ],
+      "breaking": false,
+      "firstSeen": "2026-11-21T17:46:55Z",
+      "lastSeen": "2026-11-21T18:38:00Z"
+    },
+    {
+      "id": "85c8cde5012b0917",
+      "title": "Who is El Chapo Isidro, the alleged cartel boss arrested in Mexico? - Al Jazeera",
+      "category": "general",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "independentSourceCount": 2,
+      "sources": [
+        "google_news_mexico_cartel_conflict",
         "al_jazeera"
       ],
-      "breaking": true,
-      "firstSeen": "2026-11-21T04:32:07Z",
-      "lastSeen": "2026-11-21T04:40:12Z"
+      "breaking": false,
+      "firstSeen": "2026-11-21T16:03:16Z",
+      "lastSeen": "2026-11-21T16:40:53Z"
+    },
+    {
+      "id": "8faead3db4fd9156",
+      "title": "US midterms 2026: What happens before the new Congress takes office? - Al Jazeera",
+      "category": "political",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "independentSourceCount": 2,
+      "sources": [
+        "google_news_u_s_politics",
+        "al_jazeera"
+      ],
+      "breaking": false,
+      "firstSeen": "2026-11-21T15:49:32Z",
+      "lastSeen": "2026-11-21T15:50:20Z"
+    },
+    {
+      "id": "614091c9d5e14e63",
+      "title": "Anthropic worker claims to have solved a Holy Grail of math problems with the help of AI - CNN",
+      "category": "general",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "independentSourceCount": 2,
+      "sources": [
+        "google_news_cnn_politics",
+        "npr_news"
+      ],
+      "breaking": false,
+      "firstSeen": "2026-11-21T12:30:16Z",
+      "lastSeen": "2026-11-21T15:10:40Z"
     },
     {
       "id": "68af5092b9232d85",
@@ -101,60 +146,18 @@
       "lastSeen": "Thu, 24 Mar 2022 07:00:00 GMT"
     },
     {
-      "id": "b6368c4e1b113a3c",
-      "title": "Statement by NATO Foreign Ministers - North Atlantic Treaty Organization | NATO",
-      "category": "diplomatic",
-      "confidence": "low",
-      "reportCount": 3,
-      "independentSourceCount": 1,
-      "sources": [
-        "North Atlantic Treaty Organization | NATO"
-      ],
-      "breaking": false,
-      "firstSeen": "Fri, 03 Feb 2023 08:00:00 GMT",
-      "lastSeen": "Tue, 29 Nov 2022 08:00:00 GMT"
-    },
-    {
-      "id": "bc0da910a05944b6",
-      "title": "Statement by the North Atlantic Council on recent airspace violations by Russia - North Atlantic Treaty Organization | NATO",
-      "category": "diplomatic",
-      "confidence": "low",
-      "reportCount": 3,
-      "independentSourceCount": 1,
-      "sources": [
-        "North Atlantic Treaty Organization | NATO"
-      ],
-      "breaking": false,
-      "firstSeen": "Thu, 02 May 2024 07:00:00 GMT",
-      "lastSeen": "Tue, 23 Sep 2025 07:00:00 GMT"
-    },
-    {
-      "id": "cab09a0d85b19b11",
-      "title": "Statement by the North Atlantic Council on the Democratic People’s Republic of Korea - North Atlantic Treaty Organization | NATO",
-      "category": "diplomatic",
-      "confidence": "low",
-      "reportCount": 2,
-      "independentSourceCount": 1,
-      "sources": [
-        "North Atlantic Treaty Organization | NATO"
-      ],
-      "breaking": false,
-      "firstSeen": "Fri, 08 Nov 2024 08:00:00 GMT",
-      "lastSeen": "Thu, 22 Apr 2021 07:00:00 GMT"
-    },
-    {
-      "id": "dfd605eea4d34642",
-      "title": "Mexico captures drug kingpin on FBI's most wanted list - 24NewsHD",
+      "id": "3feec317a31722d9",
+      "title": "Green forest fire notification in South Sudan, Sudan",
       "category": "general",
       "confidence": "low",
-      "reportCount": 2,
+      "reportCount": 4,
       "independentSourceCount": 1,
       "sources": [
-        "google_news_mexico_cartel_conflict"
+        "gdacs_global_disaster_alerts"
       ],
       "breaking": false,
-      "firstSeen": "2026-11-21T14:00:45Z",
-      "lastSeen": "2026-11-21T15:00:54Z"
+      "firstSeen": "2026-11-21T16:00:24Z",
+      "lastSeen": "2026-11-21T20:01:40Z"
     }
   ],
   "watchlist": [
