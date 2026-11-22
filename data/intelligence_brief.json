@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-21T23:16:43.055295Z",
+  "updatedAt": "2026-11-22T03:15:44.783013Z",
   "method": "Deterministic prioritization of existing public Global Pulse artifacts; not a forecast or causal model.",
   "freshness": {
-    "snapshotUpdatedAt": "2026-11-21T20:59:44.601277+00:00",
-    "eventsUpdatedAt": "2026-11-21T20:59:47.814403Z",
+    "snapshotUpdatedAt": "2026-11-22T00:57:02.899883+00:00",
+    "eventsUpdatedAt": "2026-11-22T00:57:05.212066Z",
     "assessmentsUpdatedAt": "2026-09-10T03:03:12.655499Z"
   },
   "headline": {
@@ -13,8 +13,39 @@
   },
   "topDevelopments": [
     {
-      "id": "51ee748b71945f75",
-      "title": "Mexico detains top cartel boss 'El Chapo Isidro,' setting off a burst of violence in Sinaloa - PBS",
+      "id": "11f9cf0e18ae4a60",
+      "title": "Bahrain says Iranian attack hits industrial facility as air defences intercept attacks",
+      "category": "conflict",
+      "confidence": "high",
+      "reportCount": 3,
+      "independentSourceCount": 3,
+      "sources": [
+        "cna_world",
+        "al_jazeera",
+        "google_news_iran_israel"
+      ],
+      "breaking": true,
+      "firstSeen": "2026-11-21T21:24:10Z",
+      "lastSeen": "2026-11-22T00:47:22Z"
+    },
+    {
+      "id": "a753f9aeb271566f",
+      "title": "Iranian Attack Sets Bahrain Industrial Facility Ablaze - cwibc.co.id",
+      "category": "conflict",
+      "confidence": "moderate",
+      "reportCount": 3,
+      "independentSourceCount": 2,
+      "sources": [
+        "google_news_iran_israel",
+        "al_jazeera"
+      ],
+      "breaking": true,
+      "firstSeen": "2026-11-21T21:31:03Z",
+      "lastSeen": "2026-11-21T22:04:00Z"
+    },
+    {
+      "id": "ff850115849cb515",
+      "title": "Mexico detains top cartel boss 'El Chapo Isidro,' setting off a burst of violence in Sinaloa - Yahoo News Canada",
       "category": "general",
       "confidence": "moderate",
       "reportCount": 6,
@@ -24,8 +55,8 @@
         "npr_news"
       ],
       "breaking": false,
-      "firstSeen": "2026-11-21T16:02:00Z",
-      "lastSeen": "2026-11-21T19:13:16Z"
+      "firstSeen": "2026-11-21T17:17:18Z",
+      "lastSeen": "2026-11-22T00:11:00Z"
     },
     {
       "id": "511cacb85a5b0743",
@@ -58,6 +89,21 @@
       "lastSeen": "2026-11-21T16:40:53Z"
     },
     {
+      "id": "b4d9c8248f63f192",
+      "title": "Wes Streeting calls Putin a 'cold-blooded killer' as he meets Zelensky in Kyiv",
+      "category": "general",
+      "confidence": "moderate",
+      "reportCount": 2,
+      "independentSourceCount": 2,
+      "sources": [
+        "bbc_europe",
+        "google_news_ukraine_war"
+      ],
+      "breaking": false,
+      "firstSeen": "2026-11-21T16:16:29Z",
+      "lastSeen": "2026-11-21T16:16:29Z"
+    },
+    {
       "id": "8faead3db4fd9156",
       "title": "US midterms 2026: What happens before the new Congress takes office? - Al Jazeera",
       "category": "political",
@@ -71,21 +117,6 @@
       "breaking": false,
       "firstSeen": "2026-11-21T15:49:32Z",
       "lastSeen": "2026-11-21T15:50:20Z"
-    },
-    {
-      "id": "614091c9d5e14e63",
-      "title": "Anthropic worker claims to have solved a Holy Grail of math problems with the help of AI - CNN",
-      "category": "general",
-      "confidence": "moderate",
-      "reportCount": 2,
-      "independentSourceCount": 2,
-      "sources": [
-        "google_news_cnn_politics",
-        "npr_news"
-      ],
-      "breaking": false,
-      "firstSeen": "2026-11-21T12:30:16Z",
-      "lastSeen": "2026-11-21T15:10:40Z"
     },
     {
       "id": "68af5092b9232d85",
@@ -103,61 +134,32 @@
       "lastSeen": "2026-11-21T13:15:21Z"
     },
     {
-      "id": "5e8015a5f7238842",
-      "title": "Mexico captures FBI-wanted cartel boss in military raid - Al Jazeera",
-      "category": "conflict",
-      "confidence": "moderate",
-      "reportCount": 2,
-      "independentSourceCount": 2,
-      "sources": [
-        "google_news_mexico_cartel_conflict",
-        "al_jazeera"
-      ],
-      "breaking": false,
-      "firstSeen": "2026-11-21T11:53:56Z",
-      "lastSeen": "2026-11-21T11:54:10Z"
-    },
-    {
-      "id": "d4032f4cad0427a7",
-      "title": "Relations with Ukraine - North Atlantic Treaty Organization | NATO",
-      "category": "diplomatic",
-      "confidence": "low",
-      "reportCount": 4,
-      "independentSourceCount": 1,
-      "sources": [
-        "North Atlantic Treaty Organization | NATO"
-      ],
-      "breaking": false,
-      "firstSeen": "Fri, 18 Jun 2021 07:00:00 GMT",
-      "lastSeen": "Thu, 31 Oct 2019 07:00:00 GMT"
-    },
-    {
-      "id": "8e120b7b4a03c0ab",
-      "title": "Statement by NATO Heads of State and Government - North Atlantic Treaty Organization | NATO",
-      "category": "diplomatic",
-      "confidence": "low",
-      "reportCount": 4,
-      "independentSourceCount": 1,
-      "sources": [
-        "North Atlantic Treaty Organization | NATO"
-      ],
-      "breaking": false,
-      "firstSeen": "Fri, 25 Feb 2022 08:00:00 GMT",
-      "lastSeen": "Thu, 24 Mar 2022 07:00:00 GMT"
-    },
-    {
-      "id": "3feec317a31722d9",
-      "title": "Green forest fire notification in South Sudan, Sudan",
+      "id": "6cb4a3c5a96a5135",
+      "title": "11 killed in burst of violence in northern Mexico after capture of cartel leader - Castanet",
       "category": "general",
       "confidence": "low",
-      "reportCount": 4,
+      "reportCount": 3,
       "independentSourceCount": 1,
       "sources": [
-        "gdacs_global_disaster_alerts"
+        "google_news_mexico_cartel_conflict"
       ],
-      "breaking": false,
-      "firstSeen": "2026-11-21T16:00:24Z",
-      "lastSeen": "2026-11-21T20:01:40Z"
+      "breaking": true,
+      "firstSeen": "2026-11-21T19:41:00Z",
+      "lastSeen": "2026-11-21T20:55:00Z"
+    },
+    {
+      "id": "26d1575aef12a582",
+      "title": "Mexico captures top drug lord 'El Chapo Isidro', one of FBI's most wanted - RTE.ie",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 2,
+      "independentSourceCount": 1,
+      "sources": [
+        "google_news_mexico_cartel_conflict"
+      ],
+      "breaking": true,
+      "firstSeen": "2026-11-21T15:03:03Z",
+      "lastSeen": "2026-11-21T15:41:14Z"
     }
   ],
   "watchlist": [
