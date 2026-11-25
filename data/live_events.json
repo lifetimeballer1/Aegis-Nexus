@@ -1,169 +1,239 @@
 {
-  "updatedAt": "2026-11-25T00:52:57.259077Z",
+  "updatedAt": "2026-11-25T09:24:30.707591Z",
   "window": "recent public reporting",
   "method": "anchor-aware title clustering with category and publication-time agreement; candidate grouping only, not proof reports describe identical facts",
   "events": [
     {
-      "id": "d4032f4cad0427a7",
-      "title": "Relations with Ukraine - North Atlantic Treaty Organization | NATO",
-      "category": "diplomatic",
+      "id": "f4bef1a266999855",
+      "title": "Green forest fire notification in Australia",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 4,
+      "sourceCount": 1,
+      "sources": [
+        "gdacs.org"
+      ],
+      "anchors": [],
+      "firstSeen": "2026-11-25T00:00:11Z",
+      "lastSeen": "2026-11-25T08:02:43Z",
+      "urls": [
+        "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1034062",
+        "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1034061",
+        "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1034059",
+        "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1034058"
+      ],
+      "reports": [
+        {
+          "id": "3bbe6bc96c5b",
+          "sourceLabel": "GDACS Global Disaster Alerts",
+          "sourceName": "GDACS Global Disaster Alerts",
+          "sourceType": "climate-hazard",
+          "title": "Green forest fire notification in Australia",
+          "summary": "On 21/11/2026, a forest fire started in Australia, until 25/11/2026.",
+          "summary_snippet": "On 21/11/2026, a forest fire started in Australia, until 25/11/2026.",
+          "source": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1034062",
+          "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1034062",
+          "time": "2026-11-25T08:02:43Z",
+          "published_date": "2026-11-25T08:02:43Z",
+          "publishedDate": "2026-11-25T08:02:43Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "gdacs_global_disaster_alerts",
+            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "48d3f00de038",
+          "sourceLabel": "GDACS Global Disaster Alerts",
+          "sourceName": "GDACS Global Disaster Alerts",
+          "sourceType": "climate-hazard",
+          "title": "Green forest fire notification in Australia",
+          "summary": "On 21/11/2026, a forest fire started in Australia, until 25/11/2026.",
+          "summary_snippet": "On 21/11/2026, a forest fire started in Australia, until 25/11/2026.",
+          "source": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1034061",
+          "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1034061",
+          "time": "2026-11-25T08:02:11Z",
+          "published_date": "2026-11-25T08:02:11Z",
+          "publishedDate": "2026-11-25T08:02:11Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "gdacs_global_disaster_alerts",
+            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "8bace93eb157",
+          "sourceLabel": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1034059",
+          "sourceName": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1034059",
+          "sourceType": "climate-hazard",
+          "title": "Green forest fire notification in Australia",
+          "summary": "On 23/11/2026, a forest fire started in Australia, until 24/11/2026.",
+          "summary_snippet": "On 23/11/2026, a forest fire started in Australia, until 24/11/2026.",
+          "source": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1034059",
+          "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1034059",
+          "time": "2026-11-25T00:01:02Z",
+          "published_date": "2026-11-25T00:01:02Z",
+          "publishedDate": "2026-11-25T00:01:02Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "gdacs_global_disaster_alerts",
+            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "feedFormat": "rss"
+          }
+        },
+        {
+          "id": "da6388abe525",
+          "sourceLabel": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1034058",
+          "sourceName": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1034058",
+          "sourceType": "climate-hazard",
+          "title": "Green forest fire notification in Australia",
+          "summary": "On 24/11/2026, a forest fire started in Australia, until 24/11/2026.",
+          "summary_snippet": "On 24/11/2026, a forest fire started in Australia, until 24/11/2026.",
+          "source": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1034058",
+          "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1034058",
+          "time": "2026-11-25T00:00:11Z",
+          "published_date": "2026-11-25T00:00:11Z",
+          "publishedDate": "2026-11-25T00:00:11Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "gdacs_global_disaster_alerts",
+            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "feedFormat": "rss"
+          }
+        }
+      ]
+    },
+    {
+      "id": "14c4f715a8ccb84a",
+      "title": "CNN.com - Transcripts - CNN",
+      "category": "general",
       "confidence": "low",
       "reportCount": 4,
       "sourceCount": 1,
       "sources": [
         "news.google.com"
       ],
-      "anchors": [
-        "nato",
-        "uk",
-        "ukraine"
-      ],
-      "firstSeen": "Fri, 18 Jun 2021 07:00:00 GMT",
-      "lastSeen": "Thu, 31 Oct 2019 07:00:00 GMT",
+      "anchors": [],
+      "firstSeen": "2026-11-24T22:00:00Z",
+      "lastSeen": "2026-11-24T23:00:00Z",
       "urls": [
-        "https://news.google.com/rss/articles/CBMijwFBVV95cUxOQlhJTWVrR21ySE5Fc1VGNXo5aFRwY09CcDlyRGhocjFJSHN2LU16VE5PNXVBTGNjdl9MV1Z2Um1BMk1XSU8tTHp6SUhZenlIT3p3bnFfTWpOSGstV3R4N2tWUGpVaTB5QnctdDl1Wi1zMTAyQjhhcVdyT2U1dy1FVEdZalFncjRmVi05c3I4OA?oc=5",
-        "https://news.google.com/rss/articles/CBMingFBVV95cUxOZkxLV1ZvZDlhdVA4Q1VxajFrU3NObTF2V0VOVFEycnVnaFU3Vzk4REhHQk5ac2dqLWdKSWlaUFRiR3NYazdmczk3Qlk2SEpGUU1VVWdBYjhPMml4eGRfckNWVlJvSlZqU1ZpLXpfX1YtOUpQUS1XTkNQTG9hU3BuTUFCbElfWTFfbjFPcHMwMWs5OWJJZWFCSGllVmhFUQ?oc=5",
-        "https://news.google.com/rss/articles/CBMingFBVV95cUxNQWx2d3ZFc2czWlR4M2hwOXlnRm15R3BzZ2lYLTU0Y1VVcWJkRzJib2ZVdXQzM0wzdGhyMFpUOFpySFF3eElnMVQ3R0U2TlBxdlViajVsOUdtVWl4SHc5Vk96ejNBazJXcTZmWVRCQlQ2NmJjbS1PdFhvTVNNdUdIeldHUTloYS1MTjI5dzRzYWFUZ3lNeWcwVlpXYXMzdw?oc=5",
-        "https://news.google.com/rss/articles/CBMixwFBVV95cUxQQXIwY0FIOGxLS1FVNjFZc25nemtjam15UGtCcHhqNVRJMFBVWDNEWUpnUHVUMXgyYWloU1JleS1MU05TUHQydmNHbDh0QlEtQ1gxVmlETFNrNDIzNnhFNVdtSFpOdTdVRUZDdUd0VDVsUWI2U3NjNWlwVFQ4QnVYeFdudXNCVWpxWTNNbWRSM2xKdU1JNkFrWWFaaW9VVWtYLVRkeVhKVU9NZmFiMHBJcENWVnBDM2V2ZEtQOE1GN3pCQnVCQ3Fv?oc=5"
+        "https://news.google.com/rss/articles/CBMic0FVX3lxTFBpMldTTEJSMUVFTDF5MGlTOW5qb095eTRIbXg4Z3R1Zk1lV2I4bGpXZHV2VHdVc2FrUVpCV0tFN0R5X3pqQ3p1M0dHQnpRWFI3Vy1vRm9ibHJDdlFpNTVFcnA2SDk3c2VFYXB2SjE2X2RvM2M?oc=5",
+        "https://news.google.com/rss/articles/CBMib0FVX3lxTE5XcmRSdFFZSDlSazUxTUI4V2hFRVZtMHVGcDk1eml0ekRFcFRaaV9tR0dtU1lmQzk1ZlBVY1YyVWxtSVJoVmMzbnZFT0NaNUp0UkxXeEdSMEdxbjNIbndsZkhlVlZWa1hmclNYMXlWbw?oc=5",
+        "https://news.google.com/rss/articles/CBMib0FVX3lxTE5JR2lvUHdXZy1iVWN6R29TVFZNbmQxYnM5aWVfTnJZU2NHR0Fpc1R3STl3LXJPcWVWajZBc3RKSTlXUFlQeFE5djlXNWlOYXQ2OWx1Smc1LThSYktmY3lydGZBM0hrU1JYbU45cnZnOA?oc=5",
+        "https://news.google.com/rss/articles/CBMib0FVX3lxTFBOTGhYOEhKdGpJVHlXN0hoQ2wycWs1SWFQclhEWjIxOTF6M0QxbFFkeUt5V1VvaHItd0laU0J1UnpWMjliY1pIeEZtWFphVnd3TVU5TmxJOGw4N3Vxb3I4bzBnMXVWYk9BRjlhelNHQQ?oc=5"
       ],
       "reports": [
         {
-          "title": "Relations with Ukraine - North Atlantic Treaty Organization | NATO",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOQlhJTWVrR21ySE5Fc1VGNXo5aFRwY09CcDlyRGhocjFJSHN2LU16VE5PNXVBTGNjdl9MV1Z2Um1BMk1XSU8tTHp6SUhZenlIT3p3bnFfTWpOSGstV3R4N2tWUGpVaTB5QnctdDl1Wi1zMTAyQjhhcVdyT2U1dy1FVEdZalFncjRmVi05c3I4OA?oc=5",
-          "published_date": "Thu, 08 Oct 2026 07:00:00 GMT",
-          "time": "Thu, 08 Oct 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "summary": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "source": "North Atlantic Treaty Organization | NATO",
-          "sourceLabel": "North Atlantic Treaty Organization | NATO",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NATO",
-          "credit_metadata": "Google News RSS fallback"
+          "id": "054b8c0b0928",
+          "sourceLabel": "Google News — CNN Politics",
+          "sourceName": "Google News — CNN Politics",
+          "sourceType": "us-politics",
+          "title": "CNN.com - Transcripts - CNN",
+          "summary": "CNN.com - Transcripts CNN",
+          "summary_snippet": "CNN.com - Transcripts CNN",
+          "source": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBpMldTTEJSMUVFTDF5MGlTOW5qb095eTRIbXg4Z3R1Zk1lV2I4bGpXZHV2VHdVc2FrUVpCV0tFN0R5X3pqQ3p1M0dHQnpRWFI3Vy1vRm9ibHJDdlFpNTVFcnA2SDk3c2VFYXB2SjE2X2RvM2M?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBpMldTTEJSMUVFTDF5MGlTOW5qb095eTRIbXg4Z3R1Zk1lV2I4bGpXZHV2VHdVc2FrUVpCV0tFN0R5X3pqQ3p1M0dHQnpRWFI3Vy1vRm9ibHJDdlFpNTVFcnA2SDk3c2VFYXB2SjE2X2RvM2M?oc=5",
+          "time": "2026-11-24T23:00:00Z",
+          "published_date": "2026-11-24T23:00:00Z",
+          "publishedDate": "2026-11-24T23:00:00Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_cnn_politics",
+            "sourceUrl": "https://news.google.com/rss/search?q=site%3Acnn.com+politics+Trump+Congress+Senate+White+House+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
         },
         {
-          "title": "Statement - North Atlantic Treaty Organization | NATO",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOZkxLV1ZvZDlhdVA4Q1VxajFrU3NObTF2V0VOVFEycnVnaFU3Vzk4REhHQk5ac2dqLWdKSWlaUFRiR3NYazdmczk3Qlk2SEpGUU1VVWdBYjhPMml4eGRfckNWVlJvSlZqU1ZpLXpfX1YtOUpQUS1XTkNQTG9hU3BuTUFCbElfWTFfbjFPcHMwMWs5OWJJZWFCSGllVmhFUQ?oc=5",
-          "published_date": "Mon, 19 Jul 2021 07:00:00 GMT",
-          "time": "Mon, 19 Jul 2021 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "summary": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "source": "North Atlantic Treaty Organization | NATO",
-          "sourceLabel": "North Atlantic Treaty Organization | NATO",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NATO",
-          "credit_metadata": "Google News RSS fallback"
+          "id": "f79d5c43391a",
+          "sourceLabel": "Google News — CNN Politics",
+          "sourceName": "Google News — CNN Politics",
+          "sourceType": "us-politics",
+          "title": "CNN.com - Transcripts - CNN",
+          "summary": "CNN.com - Transcripts CNN",
+          "summary_snippet": "CNN.com - Transcripts CNN",
+          "source": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5XcmRSdFFZSDlSazUxTUI4V2hFRVZtMHVGcDk1eml0ekRFcFRaaV9tR0dtU1lmQzk1ZlBVY1YyVWxtSVJoVmMzbnZFT0NaNUp0UkxXeEdSMEdxbjNIbndsZkhlVlZWa1hmclNYMXlWbw?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5XcmRSdFFZSDlSazUxTUI4V2hFRVZtMHVGcDk1eml0ekRFcFRaaV9tR0dtU1lmQzk1ZlBVY1YyVWxtSVJoVmMzbnZFT0NaNUp0UkxXeEdSMEdxbjNIbndsZkhlVlZWa1hmclNYMXlWbw?oc=5",
+          "time": "2026-11-24T23:00:00Z",
+          "published_date": "2026-11-24T23:00:00Z",
+          "publishedDate": "2026-11-24T23:00:00Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_cnn_politics",
+            "sourceUrl": "https://news.google.com/rss/search?q=site%3Acnn.com+politics+Trump+Congress+Senate+White+House+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
         },
         {
-          "title": "Statement - North Atlantic Treaty Organization | NATO",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNQWx2d3ZFc2czWlR4M2hwOXlnRm15R3BzZ2lYLTU0Y1VVcWJkRzJib2ZVdXQzM0wzdGhyMFpUOFpySFF3eElnMVQ3R0U2TlBxdlViajVsOUdtVWl4SHc5Vk96ejNBazJXcTZmWVRCQlQ2NmJjbS1PdFhvTVNNdUdIeldHUTloYS1MTjI5dzRzYWFUZ3lNeWcwVlpXYXMzdw?oc=5",
-          "published_date": "Fri, 18 Jun 2021 07:00:00 GMT",
-          "time": "Fri, 18 Jun 2021 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "summary": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "source": "North Atlantic Treaty Organization | NATO",
-          "sourceLabel": "North Atlantic Treaty Organization | NATO",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NATO",
-          "credit_metadata": "Google News RSS fallback"
+          "id": "4ce0028833dd",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5JR2lvUHdXZy1iVWN6R29TVFZNbmQxYnM5aWVfTnJZU2NHR0Fpc1R3STl3LXJPcWVWajZBc3RKSTlXUFlQeFE5djlXNWlOYXQ2OWx1Smc1LThSYktmY3lydGZBM0hrU1JYbU45cnZnOA?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5JR2lvUHdXZy1iVWN6R29TVFZNbmQxYnM5aWVfTnJZU2NHR0Fpc1R3STl3LXJPcWVWajZBc3RKSTlXUFlQeFE5djlXNWlOYXQ2OWx1Smc1LThSYktmY3lydGZBM0hrU1JYbU45cnZnOA?oc=5",
+          "sourceType": "us-politics",
+          "title": "CNN.com - Transcripts - CNN",
+          "summary": "CNN.com - Transcripts CNN",
+          "summary_snippet": "CNN.com - Transcripts CNN",
+          "source": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5JR2lvUHdXZy1iVWN6R29TVFZNbmQxYnM5aWVfTnJZU2NHR0Fpc1R3STl3LXJPcWVWajZBc3RKSTlXUFlQeFE5djlXNWlOYXQ2OWx1Smc1LThSYktmY3lydGZBM0hrU1JYbU45cnZnOA?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5JR2lvUHdXZy1iVWN6R29TVFZNbmQxYnM5aWVfTnJZU2NHR0Fpc1R3STl3LXJPcWVWajZBc3RKSTlXUFlQeFE5djlXNWlOYXQ2OWx1Smc1LThSYktmY3lydGZBM0hrU1JYbU45cnZnOA?oc=5",
+          "time": "2026-11-24T22:31:18Z",
+          "published_date": "2026-11-24T22:31:18Z",
+          "publishedDate": "2026-11-24T22:31:18Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_cnn_politics",
+            "sourceUrl": "https://news.google.com/rss/search?q=site%3Acnn.com+politics+Trump+Congress+Senate+White+House+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
         },
         {
-          "title": "Statement of the NATO-Ukraine Commission - North Atlantic Treaty Organization | NATO",
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQQXIwY0FIOGxLS1FVNjFZc25nemtjam15UGtCcHhqNVRJMFBVWDNEWUpnUHVUMXgyYWloU1JleS1MU05TUHQydmNHbDh0QlEtQ1gxVmlETFNrNDIzNnhFNVdtSFpOdTdVRUZDdUd0VDVsUWI2U3NjNWlwVFQ4QnVYeFdudXNCVWpxWTNNbWRSM2xKdU1JNkFrWWFaaW9VVWtYLVRkeVhKVU9NZmFiMHBJcENWVnBDM2V2ZEtQOE1GN3pCQnVCQ3Fv?oc=5",
-          "published_date": "Thu, 31 Oct 2019 07:00:00 GMT",
-          "time": "Thu, 31 Oct 2019 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "summary": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "source": "North Atlantic Treaty Organization | NATO",
-          "sourceLabel": "North Atlantic Treaty Organization | NATO",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NATO",
-          "credit_metadata": "Google News RSS fallback"
+          "id": "913a426f373a",
+          "sourceLabel": "Google News — CNN Politics",
+          "sourceName": "Google News — CNN Politics",
+          "sourceType": "us-politics",
+          "title": "CNN.com - Transcripts - CNN",
+          "summary": "CNN.com - Transcripts CNN",
+          "summary_snippet": "CNN.com - Transcripts CNN",
+          "source": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBOTGhYOEhKdGpJVHlXN0hoQ2wycWs1SWFQclhEWjIxOTF6M0QxbFFkeUt5V1VvaHItd0laU0J1UnpWMjliY1pIeEZtWFphVnd3TVU5TmxJOGw4N3Vxb3I4bzBnMXVWYk9BRjlhelNHQQ?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBOTGhYOEhKdGpJVHlXN0hoQ2wycWs1SWFQclhEWjIxOTF6M0QxbFFkeUt5V1VvaHItd0laU0J1UnpWMjliY1pIeEZtWFphVnd3TVU5TmxJOGw4N3Vxb3I4bzBnMXVWYk9BRjlhelNHQQ?oc=5",
+          "time": "2026-11-24T22:00:00Z",
+          "published_date": "2026-11-24T22:00:00Z",
+          "publishedDate": "2026-11-24T22:00:00Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": {
+            "sourceId": "google_news_cnn_politics",
+            "sourceUrl": "https://news.google.com/rss/search?q=site%3Acnn.com+politics+Trump+Congress+Senate+White+House+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "feedFormat": "rss"
+          }
         }
       ]
     },
     {
-      "id": "8e120b7b4a03c0ab",
-      "title": "Statement by NATO Heads of State and Government - North Atlantic Treaty Organization | NATO",
-      "category": "diplomatic",
-      "confidence": "low",
-      "reportCount": 4,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [
-        "nato",
-        "russia",
-        "uk",
-        "ukraine",
-        "united states"
-      ],
-      "firstSeen": "Fri, 25 Feb 2022 08:00:00 GMT",
-      "lastSeen": "Thu, 24 Mar 2022 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPSnBuTTFkSmNsd1RyQUQ2NGFka0d6aUxnSWZnYlhYaHNFbC0ydlJlOW94SjIxVmh0emFfZDNPdUMzb2xpeUhuR0NUOVEzdmZkSVRTSnpfWTVFZG5QTjR2TlZiZXF0TEp4cHRRU1VtRjFzWXVmaXQ1b3NMdVBMLTBwejJXSnVtRVlfVTFOaW1tMHhXY1RtU0F3QV9mdVluYUgzUUNYdFlrYXFLM1g3VnFsSHRSUEU0blg4WDVrb1dXTWNMSG0wMHVmWmd3blRFTU5M?oc=5",
-        "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPTndBRDZPOWQ3SE1YaTVVdF9oS21mdHVLempsakc5elFyMlNvNXZ4NzZQNlY5U3VYRmItd3A2encySjhLWWxhQUFmSDIzcE1PZDFUbkctanZlQ0JWSTlxSU1pakpXSjFEM3lHR1pRdThPeGVJdFMyWkliVDIzMzRORE81enV6Nk5CaEtKXzI0OVZDYVEzSnNtU3dqLWFqa2FPeTNaLVl4MExSR2w3eTVhSl9iRzAyT2dJcEIyZVJzSlBfMHg5REhuRzdGNmEwLUNPOHE0S29jUWVfXzBOZDhobVM2emNBSGlFMVF4RGNIeER4bmFfRzZV?oc=5",
-        "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNenBRN05pMmxSYVFuczlmdzdWb2pTRk5ydzA3NGVwOUFfcEpYVmFuRExGdkJQWVdTbVp2REZ0YnJRZnZkazA5YUZGang0NTJRSHFJNkI4TUozSVBsUWw1UG00YjFmU250WjczdGt0SDFERkttaFZJLUY0MnZBeWw2MEhRQlA3Z3R4U296RndrVmJPQXN1MjBkalk3N08xMS1MT1Z5cVpPVmNhc0JZR3AyZUJOYkU3dVVpSWU4R1pzdXluemtXMS16QmNPQlFxZkh4VFlrYm04TjVndWwyLTdxWl9RR1c4MnpaWTYtSw?oc=5",
-        "https://news.google.com/rss/articles/CBMiqAJBVV95cUxPRi0yOHdBNVRJdHBEazhBSDRWa3RMSmRENWFHajNjY25HTFFXX2lWQlBLb0QzNHFnOEhQSDQ3aGdEdjh6dlNReUF0S08yTVFxQjNVV0d2YzdGVGRUR3MxSjlpZTQxQW9EcnV6NWJMQ2g3N0xlTlZTQUU5c2duNTRiTFFCd2lDcHp4WHA5TUp6Wm1RTWtpS2luSndTSGJ0VGlxdURXUGJqOGVIejlrbmNBUDU4LWs1Vk9QWnJDS0duSW9sbE9Ldjd6eElYcTQ2RVNCejlZTWdIclVkTTRSTVI1UHZWT3RlQ1EtRXN5bEliZVJvWmV5QUJ3TGhRLXI1OUZiM2JkR3g2UVZiUXRYWk11SUZOVHdJM2NwSmVCNHpJSlFBYnNGWUNkMQ?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Statement by NATO Heads of State and Government - North Atlantic Treaty Organization | NATO",
-          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPSnBuTTFkSmNsd1RyQUQ2NGFka0d6aUxnSWZnYlhYaHNFbC0ydlJlOW94SjIxVmh0emFfZDNPdUMzb2xpeUhuR0NUOVEzdmZkSVRTSnpfWTVFZG5QTjR2TlZiZXF0TEp4cHRRU1VtRjFzWXVmaXQ1b3NMdVBMLTBwejJXSnVtRVlfVTFOaW1tMHhXY1RtU0F3QV9mdVluYUgzUUNYdFlrYXFLM1g3VnFsSHRSUEU0blg4WDVrb1dXTWNMSG0wMHVmWmd3blRFTU5M?oc=5",
-          "published_date": "Thu, 24 Mar 2022 07:00:00 GMT",
-          "time": "Thu, 24 Mar 2022 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "summary": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "source": "North Atlantic Treaty Organization | NATO",
-          "sourceLabel": "North Atlantic Treaty Organization | NATO",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NATO",
-          "credit_metadata": "Google News RSS fallback"
-        },
-        {
-          "title": "Statement by NATO Heads of State and Government on Russia’s attack on Ukraine - North Atlantic Treaty Organization | NATO",
-          "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPTndBRDZPOWQ3SE1YaTVVdF9oS21mdHVLempsakc5elFyMlNvNXZ4NzZQNlY5U3VYRmItd3A2encySjhLWWxhQUFmSDIzcE1PZDFUbkctanZlQ0JWSTlxSU1pakpXSjFEM3lHR1pRdThPeGVJdFMyWkliVDIzMzRORE81enV6Nk5CaEtKXzI0OVZDYVEzSnNtU3dqLWFqa2FPeTNaLVl4MExSR2w3eTVhSl9iRzAyT2dJcEIyZVJzSlBfMHg5REhuRzdGNmEwLUNPOHE0S29jUWVfXzBOZDhobVM2emNBSGlFMVF4RGNIeER4bmFfRzZV?oc=5",
-          "published_date": "Fri, 25 Feb 2022 08:00:00 GMT",
-          "time": "Fri, 25 Feb 2022 08:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "summary": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "source": "North Atlantic Treaty Organization | NATO",
-          "sourceLabel": "North Atlantic Treaty Organization | NATO",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NATO",
-          "credit_metadata": "Google News RSS fallback"
-        },
-        {
-          "title": "Statement by the North Atlantic Council on Russia's attack on Ukraine - North Atlantic Treaty Organization | NATO",
-          "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNenBRN05pMmxSYVFuczlmdzdWb2pTRk5ydzA3NGVwOUFfcEpYVmFuRExGdkJQWVdTbVp2REZ0YnJRZnZkazA5YUZGang0NTJRSHFJNkI4TUozSVBsUWw1UG00YjFmU250WjczdGt0SDFERkttaFZJLUY0MnZBeWw2MEhRQlA3Z3R4U296RndrVmJPQXN1MjBkalk3N08xMS1MT1Z5cVpPVmNhc0JZR3AyZUJOYkU3dVVpSWU4R1pzdXluemtXMS16QmNPQlFxZkh4VFlrYm04TjVndWwyLTdxWl9RR1c4MnpaWTYtSw?oc=5",
-          "published_date": "Thu, 24 Feb 2022 08:00:00 GMT",
-          "time": "Thu, 24 Feb 2022 08:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "summary": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "source": "North Atlantic Treaty Organization | NATO",
-          "sourceLabel": "North Atlantic Treaty Organization | NATO",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NATO",
-          "credit_metadata": "Google News RSS fallback"
-        },
-        {
-          "title": "North Atlantic Council Statement following the announcement by the United States of actions with regard to Russia - North Atlantic Treaty Organization | NATO",
-          "url": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxPRi0yOHdBNVRJdHBEazhBSDRWa3RMSmRENWFHajNjY25HTFFXX2lWQlBLb0QzNHFnOEhQSDQ3aGdEdjh6dlNReUF0S08yTVFxQjNVV0d2YzdGVGRUR3MxSjlpZTQxQW9EcnV6NWJMQ2g3N0xlTlZTQUU5c2duNTRiTFFCd2lDcHp4WHA5TUp6Wm1RTWtpS2luSndTSGJ0VGlxdURXUGJqOGVIejlrbmNBUDU4LWs1Vk9QWnJDS0duSW9sbE9Ldjd6eElYcTQ2RVNCejlZTWdIclVkTTRSTVI1UHZWT3RlQ1EtRXN5bEliZVJvWmV5QUJ3TGhRLXI1OUZiM2JkR3g2UVZiUXRYWk11SUZOVHdJM2NwSmVCNHpJSlFBYnNGWUNkMQ?oc=5",
-          "published_date": "Thu, 15 Apr 2021 07:00:00 GMT",
-          "time": "Thu, 15 Apr 2021 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "summary": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "source": "North Atlantic Treaty Organization | NATO",
-          "sourceLabel": "North Atlantic Treaty Organization | NATO",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NATO",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "b6368c4e1b113a3c",
-      "title": "Statement by NATO Foreign Ministers - North Atlantic Treaty Organization | NATO",
+      "id": "9dbe1492b2c609c1",
+      "title": "Statement of condemnation by the North Atlantic Council of Russia's malicious cyber activities - North Atlantic Treaty Organization | NATO",
       "category": "diplomatic",
       "confidence": "low",
       "reportCount": 3,
@@ -172,21 +242,23 @@
         "news.google.com"
       ],
       "anchors": [
-        "nato"
+        "mali",
+        "nato",
+        "russia"
       ],
-      "firstSeen": "Fri, 03 Feb 2023 08:00:00 GMT",
-      "lastSeen": "Tue, 29 Nov 2022 08:00:00 GMT",
+      "firstSeen": "Fri, 18 Jul 2025 07:00:00 GMT",
+      "lastSeen": "Thu, 02 May 2024 07:00:00 GMT",
       "urls": [
-        "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQVFh4ZkYwdENWVEhrOUpUSGtxVUZZV1RvLU05UUhGYVVwTV9PSWlXSFE4MFFmbjZyYUFlZVVxMjBCODFMeWk0VHRVeHVSV3o2RDg2MUUwdFZzb28yRGN0bzVKTklvUmlDVWUtMHpLRjNnZHdHTW56YXJER2VoSlFaVlVDX1FRa3ZIclJDdzl5NDdfZ0d1UXBhaF93MUx0MFdHczZRY1BndzFBX1ZSdWlCUGVPdFRNUFk1T2VzU2F2N3Y?oc=5",
-        "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOT3hQZ1B0TEVRdWh4ZWk3amc0anpQNkc5RURXejRFM3pzN0kwRGNFOGNIYTE3SDJ5N1RwR3VFQTEtOGNpX2dEcWVDTkgtdTZVbTR4TkdkSTIyb0pVc3g1SVVPOWhfc3BGaXJkcy1OdXFfYW5WRGhad0x3VkdtSkxHX3dHMWhtMVBBRzRoUnZKZTlvejNRbWdQZjBKeUtpQzVGRHNqNm9RM2h4LVQzekRzZWRQMWYtNS1EOEszOWl5TlB2X0NJZ2JoOUJ4cUxuNkpEZTRrdnUwYWdSSV94Qy1kSXpvVndxUQ?oc=5",
-        "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOUjJYZTdLc0tWM2ZENzJxZTdoaXppa3hQN25WUHVsVVJsZl9SS3FKd2owa0xpTU83TFpnSDR6cXBnMWMzcjZ3YlVXZ3gxMEo4THhPT2J6Yy1mSU1NcW5LZEo5QnNqbmQ4Z1lRMkIyTHkyMHFwNk5jbE1jSlhHN0VlZkZyZ2Q3a1RsZlNrYjFlT2dOOEk3aXZqa1c3bTJXUy1JVU45Ri0zRlVKbU1uWWkxOUVsNGt1YUkwR09QeVJvU3M5U2VreWJPWUNVQ0tCSXJoXzlB?oc=5"
+        "https://news.google.com/rss/articles/CBMijgJBVV95cUxOdXFsbG5PYXZ0MHhiRUo2Z04zckU5STRuWEpTOXZkcVZBbnRFLUg3ZzdoUGR0OFViSUpONWhuU0J4dXI5Tk5qX19kT0dhczVQZFQ1MXF4RkpXMGNSUTd3NzRBbEJxNEZyT1FjV2NMQm01Z0hnaE8yUXdwVGJrRmcwckFlYjgwNWVjVWY3ck9hS3lta0c5WXQydmhtTUxseVIyRzlsZ2IxMFRDTF9BRHpHNGtYV3MxdkIxVVVGYm5vTVh5TGNudVB1NW1PTlVqT0loeW5vTXBZTldVNGZYYUljQ3JjQWlHVnphdWttYXktR2pZdV9JMGF1ekFtMmJ5bGdXUGQwYWpVdVFIeDRCY2c?oc=5",
+        "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPUTJDOVlBUVY2Z1FYeldub1dSMk1HWnNSV0pSWG9IQjdhcjdOY3VQOURRZXkxY0QxdzRWR0dIRzRaZEpaRkxTNDc3cjJUd0JoM3VfQ3ZhTHlQa21NcmJwcTktMnFVNkRhZzU1X1BHNllRX24zZWZsUWozd0dmUGkyVlZPT24tNDZyMnFWcFhuM1NKTEhlR3ZCZ0xmWHdjQV9MRjVNdXc5MVlIcUZNaGFQRm5QVXBCUVZJMnlab1Etd3liUldudHhERm1tVFprOWV6TEp2cnp3V0NzTW1rZXp1clQxWjhWLWM5UHU2dWFLWWlzWXJGTHc?oc=5",
+        "https://news.google.com/rss/articles/CBMimAJBVV95cUxOSmVyblUtTGxrWG00ZzFCZzVESDVmTHJ4NkgxdU5zd2tZaWVLOW9lcHFULTFoVFZSdllnOTBPdmUtSktGd0hZcXpERVpERTdqc0Jvc0djb2VGMDlyNDg1d2hoMERlY2JrQllOb1hBS0t4VDNIekxxeHlDMzY5N1VUZUlJYnJEdExlWHEweU1jQTI4Vk9RRkNBMEV3MlhMTmNTU3hZQU5jeVBYWVlYMHlEQWxoTG9SOTlhY2VXUjh1VkxJNnE1S1RmUVFncHRlYmZSemE1ZG9UdmpaajhfTVp1bmhHb0F2SVhLbDB0SWxVSTJQS0hRLTlPZTd1ZmpvRUxRczJjSXJUb09NTUZNcUZPdDdUa0xMcVFw?oc=5"
       ],
       "reports": [
         {
-          "title": "Statement by NATO Foreign Ministers - North Atlantic Treaty Organization | NATO",
-          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQVFh4ZkYwdENWVEhrOUpUSGtxVUZZV1RvLU05UUhGYVVwTV9PSWlXSFE4MFFmbjZyYUFlZVVxMjBCODFMeWk0VHRVeHVSV3o2RDg2MUUwdFZzb28yRGN0bzVKTklvUmlDVWUtMHpLRjNnZHdHTW56YXJER2VoSlFaVlVDX1FRa3ZIclJDdzl5NDdfZ0d1UXBhaF93MUx0MFdHczZRY1BndzFBX1ZSdWlCUGVPdFRNUFk1T2VzU2F2N3Y?oc=5",
-          "published_date": "Tue, 29 Nov 2022 08:00:00 GMT",
-          "time": "Tue, 29 Nov 2022 08:00:00 GMT",
+          "title": "Statement of condemnation by the North Atlantic Council of Russia's malicious cyber activities - North Atlantic Treaty Organization | NATO",
+          "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxOdXFsbG5PYXZ0MHhiRUo2Z04zckU5STRuWEpTOXZkcVZBbnRFLUg3ZzdoUGR0OFViSUpONWhuU0J4dXI5Tk5qX19kT0dhczVQZFQ1MXF4RkpXMGNSUTd3NzRBbEJxNEZyT1FjV2NMQm01Z0hnaE8yUXdwVGJrRmcwckFlYjgwNWVjVWY3ck9hS3lta0c5WXQydmhtTUxseVIyRzlsZ2IxMFRDTF9BRHpHNGtYV3MxdkIxVVVGYm5vTVh5TGNudVB1NW1PTlVqT0loeW5vTXBZTldVNGZYYUljQ3JjQWlHVnphdWttYXktR2pZdV9JMGF1ekFtMmJ5bGdXUGQwYWpVdVFIeDRCY2c?oc=5",
+          "published_date": "Mon, 13 Jul 2026 07:00:00 GMT",
+          "time": "Mon, 13 Jul 2026 07:00:00 GMT",
           "summary_snippet": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
           "summary": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
           "source": "North Atlantic Treaty Organization | NATO",
@@ -196,10 +268,10 @@
           "credit_metadata": "Google News RSS fallback"
         },
         {
-          "title": "Statement by the North Atlantic Council on the New START Treaty - North Atlantic Treaty Organization | NATO",
-          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOT3hQZ1B0TEVRdWh4ZWk3amc0anpQNkc5RURXejRFM3pzN0kwRGNFOGNIYTE3SDJ5N1RwR3VFQTEtOGNpX2dEcWVDTkgtdTZVbTR4TkdkSTIyb0pVc3g1SVVPOWhfc3BGaXJkcy1OdXFfYW5WRGhad0x3VkdtSkxHX3dHMWhtMVBBRzRoUnZKZTlvejNRbWdQZjBKeUtpQzVGRHNqNm9RM2h4LVQzekRzZWRQMWYtNS1EOEszOWl5TlB2X0NJZ2JoOUJ4cUxuNkpEZTRrdnUwYWdSSV94Qy1kSXpvVndxUQ?oc=5",
-          "published_date": "Fri, 03 Feb 2023 08:00:00 GMT",
-          "time": "Fri, 03 Feb 2023 08:00:00 GMT",
+          "title": "Statement by the North Atlantic Council on recent Russian hybrid activities - North Atlantic Treaty Organization | NATO",
+          "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPUTJDOVlBUVY2Z1FYeldub1dSMk1HWnNSV0pSWG9IQjdhcjdOY3VQOURRZXkxY0QxdzRWR0dIRzRaZEpaRkxTNDc3cjJUd0JoM3VfQ3ZhTHlQa21NcmJwcTktMnFVNkRhZzU1X1BHNllRX24zZWZsUWozd0dmUGkyVlZPT24tNDZyMnFWcFhuM1NKTEhlR3ZCZ0xmWHdjQV9MRjVNdXc5MVlIcUZNaGFQRm5QVXBCUVZJMnlab1Etd3liUldudHhERm1tVFprOWV6TEp2cnp3V0NzTW1rZXp1clQxWjhWLWM5UHU2dWFLWWlzWXJGTHc?oc=5",
+          "published_date": "Thu, 02 May 2024 07:00:00 GMT",
+          "time": "Thu, 02 May 2024 07:00:00 GMT",
           "summary_snippet": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
           "summary": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
           "source": "North Atlantic Treaty Organization | NATO",
@@ -209,10 +281,10 @@
           "credit_metadata": "Google News RSS fallback"
         },
         {
-          "title": "Statement by the North Atlantic Council on Crimea - North Atlantic Treaty Organization | NATO",
-          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOUjJYZTdLc0tWM2ZENzJxZTdoaXppa3hQN25WUHVsVVJsZl9SS3FKd2owa0xpTU83TFpnSDR6cXBnMWMzcjZ3YlVXZ3gxMEo4THhPT2J6Yy1mSU1NcW5LZEo5QnNqbmQ4Z1lRMkIyTHkyMHFwNk5jbE1jSlhHN0VlZkZyZ2Q3a1RsZlNrYjFlT2dOOEk3aXZqa1c3bTJXUy1JVU45Ri0zRlVKbU1uWWkxOUVsNGt1YUkwR09QeVJvU3M5U2VreWJPWUNVQ0tCSXJoXzlB?oc=5",
-          "published_date": "Mon, 18 Mar 2019 07:00:00 GMT",
-          "time": "Mon, 18 Mar 2019 07:00:00 GMT",
+          "title": "Statement of condemnation by the North Atlantic Council concerning Russian malicious cyber activities - North Atlantic Treaty Organization | NATO",
+          "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxOSmVyblUtTGxrWG00ZzFCZzVESDVmTHJ4NkgxdU5zd2tZaWVLOW9lcHFULTFoVFZSdllnOTBPdmUtSktGd0hZcXpERVpERTdqc0Jvc0djb2VGMDlyNDg1d2hoMERlY2JrQllOb1hBS0t4VDNIekxxeHlDMzY5N1VUZUlJYnJEdExlWHEweU1jQTI4Vk9RRkNBMEV3MlhMTmNTU3hZQU5jeVBYWVlYMHlEQWxoTG9SOTlhY2VXUjh1VkxJNnE1S1RmUVFncHRlYmZSemE1ZG9UdmpaajhfTVp1bmhHb0F2SVhLbDB0SWxVSTJQS0hRLTlPZTd1ZmpvRUxRczJjSXJUb09NTUZNcUZPdDdUa0xMcVFw?oc=5",
+          "published_date": "Fri, 18 Jul 2025 07:00:00 GMT",
+          "time": "Fri, 18 Jul 2025 07:00:00 GMT",
           "summary_snippet": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
           "summary": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
           "source": "North Atlantic Treaty Organization | NATO",
@@ -236,8 +308,8 @@
       "anchors": [
         "america"
       ],
-      "firstSeen": "Mon, 23 Nov 2026 05:00:00 GMT",
-      "lastSeen": "Tue, 24 Nov 2026 22:08:38 GMT",
+      "firstSeen": "2026-11-24T22:08:38Z",
+      "lastSeen": "Mon, 23 Nov 2026 22:19:45 GMT",
       "urls": [
         "https://news.google.com/rss/articles/CBMiowFBVV95cUxPclBvelNTYnBSa0dOX2haQW02TU9xUnJ6WjFibmJ3QUNxZjB4OE15aXdrNGFmRHYzNEF3Nkw0T0piQUpiVUszWFRYYW1kUGZyT1hPak45NVh3VnVSMmFuUkRqN09sbUw0UXEwV1FOWGd3QmhSR0Q5UTB4a0lISUNWdGhQQjZ1T1h5ZmhjUFZHU1Q2SVRINXIyTFRxTXg3SWdvUmlj?oc=5",
         "https://news.google.com/rss/articles/CBMirgFBVV95cUxOVTh4R2IxSkcxcHJ2eWRjX0w2TVZQOWw4ZVo2QVRsWFFZYmVXemV2ODkycE5qU2JENkpxaWtSX0V6VUxkRV94cXUxS0pFelppVnk0eWw2SFRNRlR2Z2I0OV9YU3pxaEdUMkFBeGpVUUlpVEI4N1FfMWJiekoteGRPZVNfdVU3WWxVTDFMVEV5UkRrODNRNW5PMEk3MUVzVzVVVHBmT2pUSmlPMlRIUnc?oc=5",
@@ -247,15 +319,23 @@
         {
           "title": "President Trump Delivers Remarks on Protecting American Families - The White House (.gov)",
           "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPclBvelNTYnBSa0dOX2haQW02TU9xUnJ6WjFibmJ3QUNxZjB4OE15aXdrNGFmRHYzNEF3Nkw0T0piQUpiVUszWFRYYW1kUGZyT1hPak45NVh3VnVSMmFuUkRqN09sbUw0UXEwV1FOWGd3QmhSR0Q5UTB4a0lISUNWdGhQQjZ1T1h5ZmhjUFZHU1Q2SVRINXIyTFRxTXg3SWdvUmlj?oc=5",
-          "published_date": "Tue, 24 Nov 2026 22:08:38 GMT",
-          "time": "Tue, 24 Nov 2026 22:08:38 GMT",
+          "published_date": "2026-11-24T22:08:38Z",
+          "time": "2026-11-24T22:08:38Z",
           "summary_snippet": "Fallback discovery via Google News RSS; publisher: The White House (.gov)",
           "summary": "Fallback discovery via Google News RSS; publisher: The White House (.gov)",
-          "source": "The White House (.gov)",
+          "source": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPclBvelNTYnBSa0dOX2haQW02TU9xUnJ6WjFibmJ3QUNxZjB4OE15aXdrNGFmRHYzNEF3Nkw0T0piQUpiVUszWFRYYW1kUGZyT1hPak45NVh3VnVSMmFuUkRqN09sbUw0UXEwV1FOWGd3QmhSR0Q5UTB4a0lISUNWdGhQQjZ1T1h5ZmhjUFZHU1Q2SVRINXIyTFRxTXg3SWdvUmlj?oc=5",
           "sourceLabel": "The White House (.gov)",
           "sourceType": "fallback-news",
           "fallbackFor": "X @POTUS",
-          "credit_metadata": "Google News RSS fallback"
+          "credit_metadata": "Google News RSS fallback",
+          "id": "260770d0159e",
+          "sourceName": "The White House (.gov)",
+          "publishedDate": "2026-11-24T22:08:38Z",
+          "tag": "World",
+          "confidence": "DEVELOPING",
+          "breaking": false,
+          "liveDatabase": true,
+          "credit": "Google News RSS fallback"
         },
         {
           "title": "President Trump Remarks on Protecting American Families - C-SPAN",
@@ -286,9 +366,9 @@
       ]
     },
     {
-      "id": "bc0da910a05944b6",
-      "title": "Statement by the North Atlantic Council on recent airspace violations by Russia - North Atlantic Treaty Organization | NATO",
-      "category": "diplomatic",
+      "id": "ea8923c11511689e",
+      "title": "Houthis Threaten Jeddah and Saudi Red Sea Ports - SuaraGarut.ID",
+      "category": "general",
       "confidence": "low",
       "reportCount": 3,
       "sourceCount": 1,
@@ -296,304 +376,150 @@
         "news.google.com"
       ],
       "anchors": [
-        "nato",
-        "russia"
+        "red sea",
+        "yemen"
       ],
-      "firstSeen": "Thu, 02 May 2024 07:00:00 GMT",
-      "lastSeen": "Tue, 23 Sep 2025 07:00:00 GMT",
+      "firstSeen": "2026-11-24T23:07:28Z",
+      "lastSeen": "2026-11-24T23:46:00Z",
       "urls": [
-        "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQMnctZExoMHJER1JGMDlSVWdXT3BjSHJvRk9xRGZ5QThFdkdhN0ZjU3d1a0hEXzkwNnNOSVlvX2w2OGtkMldLbEFRcVNCV3hYeXhUSjBJZ2c3cV9MajR3aFlxcjdOWDJvZjgtRE1lTlFPSDMwd0o0SXBwdnVpUWx5Zy13NzlfdzBIWjhQX2VPNUx5aFNocU9nOXEzaVEzTEZoZUFaY1VfWnBrdU9aS0tyb2steEg5Zmx0Y2tlSHpZbWxrQ3kzR3NubGdsVjA0M0VTcmFmSmhsMzRnc1RiZWxIaTdMU1NZSmRWMjU0dDZiMVZaLVJ5dmxhUkZOOA?oc=5",
-        "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPUTJDOVlBUVY2Z1FYeldub1dSMk1HWnNSV0pSWG9IQjdhcjdOY3VQOURRZXkxY0QxdzRWR0dIRzRaZEpaRkxTNDc3cjJUd0JoM3VfQ3ZhTHlQa21NcmJwcTktMnFVNkRhZzU1X1BHNllRX24zZWZsUWozd0dmUGkyVlZPT24tNDZyMnFWcFhuM1NKTEhlR3ZCZ0xmWHdjQV9MRjVNdXc5MVlIcUZNaGFQRm5QVXBCUVZJMnlab1Etd3liUldudHhERm1tVFprOWV6TEp2cnp3V0NzTW1rZXp1clQxWjhWLWM5UHU2dWFLWWlzWXJGTHc?oc=5",
-        "https://news.google.com/rss/articles/CBMiwgJBVV95cUxPaUxsbGpMVnhjaUR2cWZyd0M2SFppWkZObnoyOG1YRmJ4Y3ZmQzlDQmw1dEt5clprdGgzN0lfYVg2X2J1NjZud05oY3NCMzc5OFdtaC12N2M3WjFHU2RQMldxNnh4UGk2UUE3UXZ3dk1yNVJXWEJENnJpSEhTeGRXc09oVHB4Ti1FUzRpZ01SME5KdkEyRDhtUnl0VHNydmZETENVTnpzVVV6U2swQ19HZTFtZl9DVmZqQmVYRGkyNjdOV1g5RFBnamREalhWOUhlM0NqaWl5dVVhbEI2QjZJb1F2aC1pOE5oaHpyT21yYUN4enprWS11b2hUYTh3MXo0X3dlZ3Nhc1VtajM2TlNaR2FJLXZPUDBQODBCT3NFZFlrWGFfTEhnT3JqanZMZHZvWVZEMkpoVjRJWTc2QUVtMHNn?oc=5"
+        "https://news.google.com/rss/articles/CBMibkFVX3lxTE13Uk5vOWsyNmdKQzJhcHowMUFpc1hhV2JveFRoVHF1aHZPMC11ZVR1dmsxelhMWExqUzNVUVBnMlFXZHpUYXNkT0FORU5iYzBHTVNOQ1VVa3FqdDF6dmkyQ3Z3YmlDcVNiMkg5TFF3?oc=5",
+        "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNdnlNRDBfYzRCczhFMUthTnp5a3FTUDBYZ1AtaGk3bzlURGh2Q3F6UDhMNnpEZFZCaVNtX2hndE1oU002T2JPR0QzRlpWd0JjaHZieDNGUENFcGZzQVlpZzN6eXFqREFndlBJQzl4R3dQN3RzUC1yWUcxc3dxU2hIRXkzNmRFcm0wcWREeUpNcktjaWpjQjQ5clQyeEFxY3FEaFZwV1BBQ0VFV09SYWFxYnNtZV9tY3FXNXk4RFBoX29WWDJFdVRVYkNRU3MwaFA2Ti1hUUxSWHNWYWPSAdYBQVVfeXFMTjRhUVd5S2otUGUzc3BTVzNOR21LSFpBVk5wTDdBcWZJeWxGZ2NhTEY5MGQwcnd5XzFzWUpsbHZfNlpPa3pLdGdwbGRMNWVoTy1EQVpDYVkzWmF2OXNiVkYtLUNjbG5tLVZNVVBiWDVIX1FsbW8yU19yRlRHMjVVX0xGRzYwcVZaczJ1d3hiVGZ4eklHbzhmMm8tY3hfTkFjMVVna09abTYzRjVIb2VaRUUzVko5WTJwWFVnS0F0a2RyZVJnZW5mQmpTQ2R2T25HY2huVzdOZw?oc=5",
+        "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNNm5scktIQTFaYnlxR3RldzktV09aMExGZC1yeVpaRTRpanc3LW5KcE9kd29lN00wMWRSR0JkaHl6c1JXbU81Vl9SLUVISW12QjJ1eU9zSmpSSlQtZXByWEhTb1cwblNWa1ExZkh1NnFNbkhQSElyN282b09ReXFaalcxRDdPbzZ2Vk5nbmV2NzZRYnlWM3dnd0dpd0xPc0FyZUljY1gtQ0VKMEdpMHVPdHNrUkc3T01NS1NNekF4RGdXSkhvOU5fbG5IcXByZEph0gHWAUFVX3lxTE40YVFXeUtqLVBlM3NwU1czTkdtS0haQVZOcEw3QXFmSXlsRmdjYUxGOTBkMHJ3eV8xc1lKbGx2XzZaT2t6S3RncGxkTDVlaE8tREFaQ2FZM1phdjlzYlZGLS1DY2xubS1WTVVQYlg1SF9RbG1vMlNfckZURzI1VV9MRkc2MHFWWnMydXd4YlRmeHpJR284ZjJvLWN4X05BYzFVZ2tPWm02M0Y1SG9lWkVFM1ZKOVkycFhVZ0tBdGtkcmVSZ2VuZkJqU0Nkdk9uR2Noblc3Tmc?oc=5"
       ],
       "reports": [
         {
-          "title": "Statement by the North Atlantic Council on recent airspace violations by Russia - North Atlantic Treaty Organization | NATO",
-          "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQMnctZExoMHJER1JGMDlSVWdXT3BjSHJvRk9xRGZ5QThFdkdhN0ZjU3d1a0hEXzkwNnNOSVlvX2w2OGtkMldLbEFRcVNCV3hYeXhUSjBJZ2c3cV9MajR3aFlxcjdOWDJvZjgtRE1lTlFPSDMwd0o0SXBwdnVpUWx5Zy13NzlfdzBIWjhQX2VPNUx5aFNocU9nOXEzaVEzTEZoZUFaY1VfWnBrdU9aS0tyb2steEg5Zmx0Y2tlSHpZbWxrQ3kzR3NubGdsVjA0M0VTcmFmSmhsMzRnc1RiZWxIaTdMU1NZSmRWMjU0dDZiMVZaLVJ5dmxhUkZOOA?oc=5",
-          "published_date": "Tue, 23 Sep 2025 07:00:00 GMT",
-          "time": "Tue, 23 Sep 2025 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "summary": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "source": "North Atlantic Treaty Organization | NATO",
-          "sourceLabel": "North Atlantic Treaty Organization | NATO",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NATO",
-          "credit_metadata": "Google News RSS fallback"
-        },
-        {
-          "title": "Statement by the North Atlantic Council on recent Russian hybrid activities - North Atlantic Treaty Organization | NATO",
-          "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPUTJDOVlBUVY2Z1FYeldub1dSMk1HWnNSV0pSWG9IQjdhcjdOY3VQOURRZXkxY0QxdzRWR0dIRzRaZEpaRkxTNDc3cjJUd0JoM3VfQ3ZhTHlQa21NcmJwcTktMnFVNkRhZzU1X1BHNllRX24zZWZsUWozd0dmUGkyVlZPT24tNDZyMnFWcFhuM1NKTEhlR3ZCZ0xmWHdjQV9MRjVNdXc5MVlIcUZNaGFQRm5QVXBCUVZJMnlab1Etd3liUldudHhERm1tVFprOWV6TEp2cnp3V0NzTW1rZXp1clQxWjhWLWM5UHU2dWFLWWlzWXJGTHc?oc=5",
-          "published_date": "Thu, 02 May 2024 07:00:00 GMT",
-          "time": "Thu, 02 May 2024 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "summary": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "source": "North Atlantic Treaty Organization | NATO",
-          "sourceLabel": "North Atlantic Treaty Organization | NATO",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NATO",
-          "credit_metadata": "Google News RSS fallback"
-        },
-        {
-          "title": "North Atlantic Council statement on the Allied response to Russia's withdrawal from the Treaty on Conventional Armed Forces in Europe - North Atlantic Treaty Organization | NATO",
-          "url": "https://news.google.com/rss/articles/CBMiwgJBVV95cUxPaUxsbGpMVnhjaUR2cWZyd0M2SFppWkZObnoyOG1YRmJ4Y3ZmQzlDQmw1dEt5clprdGgzN0lfYVg2X2J1NjZud05oY3NCMzc5OFdtaC12N2M3WjFHU2RQMldxNnh4UGk2UUE3UXZ3dk1yNVJXWEJENnJpSEhTeGRXc09oVHB4Ti1FUzRpZ01SME5KdkEyRDhtUnl0VHNydmZETENVTnpzVVV6U2swQ19HZTFtZl9DVmZqQmVYRGkyNjdOV1g5RFBnamREalhWOUhlM0NqaWl5dVVhbEI2QjZJb1F2aC1pOE5oaHpyT21yYUN4enprWS11b2hUYTh3MXo0X3dlZ3Nhc1VtajM2TlNaR2FJLXZPUDBQODBCT3NFZFlrWGFfTEhnT3JqanZMZHZvWVZEMkpoVjRJWTc2QUVtMHNn?oc=5",
-          "published_date": "Tue, 07 Nov 2023 08:00:00 GMT",
-          "time": "Tue, 07 Nov 2023 08:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "summary": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "source": "North Atlantic Treaty Organization | NATO",
-          "sourceLabel": "North Atlantic Treaty Organization | NATO",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NATO",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "f4bef1a266999855",
-      "title": "Green forest fire notification in Australia",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 3,
-      "sourceCount": 1,
-      "sources": [
-        "gdacs.org"
-      ],
-      "anchors": [],
-      "firstSeen": "2026-11-24T16:09:03Z",
-      "lastSeen": "2026-11-25T00:01:02Z",
-      "urls": [
-        "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1034059",
-        "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1034058",
-        "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1034054"
-      ],
-      "reports": [
-        {
-          "id": "8bace93eb157",
-          "sourceLabel": "GDACS Global Disaster Alerts",
-          "sourceName": "GDACS Global Disaster Alerts",
-          "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in Australia",
-          "summary": "On 23/11/2026, a forest fire started in Australia, until 24/11/2026.",
-          "summary_snippet": "On 23/11/2026, a forest fire started in Australia, until 24/11/2026.",
-          "source": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1034059",
-          "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1034059",
-          "time": "2026-11-25T00:01:02Z",
-          "published_date": "2026-11-25T00:01:02Z",
-          "publishedDate": "2026-11-25T00:01:02Z",
+          "id": "73fb1cd94a49",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMibkFVX3lxTE13Uk5vOWsyNmdKQzJhcHowMUFpc1hhV2JveFRoVHF1aHZPMC11ZVR1dmsxelhMWExqUzNVUVBnMlFXZHpUYXNkT0FORU5iYzBHTVNOQ1VVa3FqdDF6dmkyQ3Z3YmlDcVNiMkg5TFF3?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMibkFVX3lxTE13Uk5vOWsyNmdKQzJhcHowMUFpc1hhV2JveFRoVHF1aHZPMC11ZVR1dmsxelhMWExqUzNVUVBnMlFXZHpUYXNkT0FORU5iYzBHTVNOQ1VVa3FqdDF6dmkyQ3Z3YmlDcVNiMkg5TFF3?oc=5",
+          "sourceType": "middle-east-conflict",
+          "title": "Houthis Threaten Jeddah and Saudi Red Sea Ports - SuaraGarut.ID",
+          "summary": "Houthis Threaten Jeddah and Saudi Red Sea Ports SuaraGarut.ID",
+          "summary_snippet": "Houthis Threaten Jeddah and Saudi Red Sea Ports SuaraGarut.ID",
+          "source": "https://news.google.com/rss/articles/CBMibkFVX3lxTE13Uk5vOWsyNmdKQzJhcHowMUFpc1hhV2JveFRoVHF1aHZPMC11ZVR1dmsxelhMWExqUzNVUVBnMlFXZHpUYXNkT0FORU5iYzBHTVNOQ1VVa3FqdDF6dmkyQ3Z3YmlDcVNiMkg5TFF3?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE13Uk5vOWsyNmdKQzJhcHowMUFpc1hhV2JveFRoVHF1aHZPMC11ZVR1dmsxelhMWExqUzNVUVBnMlFXZHpUYXNkT0FORU5iYzBHTVNOQ1VVa3FqdDF6dmkyQ3Z3YmlDcVNiMkg5TFF3?oc=5",
+          "time": "2026-11-24T23:46:00Z",
+          "published_date": "2026-11-24T23:46:00Z",
+          "publishedDate": "2026-11-24T23:46:00Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "sourceId": "google_news_yemen_red_sea",
+            "sourceUrl": "https://news.google.com/rss/search?q=Yemen+Houthis+Red+Sea+shipping+missile+drone+conflict+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
         },
         {
-          "id": "da6388abe525",
-          "sourceLabel": "GDACS Global Disaster Alerts",
-          "sourceName": "GDACS Global Disaster Alerts",
-          "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in Australia",
-          "summary": "On 24/11/2026, a forest fire started in Australia, until 24/11/2026.",
-          "summary_snippet": "On 24/11/2026, a forest fire started in Australia, until 24/11/2026.",
-          "source": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1034058",
-          "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1034058",
-          "time": "2026-11-25T00:00:11Z",
-          "published_date": "2026-11-25T00:00:11Z",
-          "publishedDate": "2026-11-25T00:00:11Z",
+          "id": "c4601f0c192d",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNdnlNRDBfYzRCczhFMUthTnp5a3FTUDBYZ1AtaGk3bzlURGh2Q3F6UDhMNnpEZFZCaVNtX2hndE1oU002T2JPR0QzRlpWd0JjaHZieDNGUENFcGZzQVlpZzN6eXFqREFndlBJQzl4R3dQN3RzUC1yWUcxc3dxU2hIRXkzNmRFcm0wcWREeUpNcktjaWpjQjQ5clQyeEFxY3FEaFZwV1BBQ0VFV09SYWFxYnNtZV9tY3FXNXk4RFBoX29WWDJFdVRVYkNRU3MwaFA2Ti1hUUxSWHNWYWPSAdYBQVVfeXFMTjRhUVd5S2otUGUzc3BTVzNOR21LSFpBVk5wTDdBcWZJeWxGZ2NhTEY5MGQwcnd5XzFzWUpsbHZfNlpPa3pLdGdwbGRMNWVoTy1EQVpDYVkzWmF2OXNiVkYtLUNjbG5tLVZNVVBiWDVIX1FsbW8yU19yRlRHMjVVX0xGRzYwcVZaczJ1d3hiVGZ4eklHbzhmMm8tY3hfTkFjMVVna09abTYzRjVIb2VaRUUzVko5WTJwWFVnS0F0a2RyZVJnZW5mQmpTQ2R2T25HY2huVzdOZw?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNdnlNRDBfYzRCczhFMUthTnp5a3FTUDBYZ1AtaGk3bzlURGh2Q3F6UDhMNnpEZFZCaVNtX2hndE1oU002T2JPR0QzRlpWd0JjaHZieDNGUENFcGZzQVlpZzN6eXFqREFndlBJQzl4R3dQN3RzUC1yWUcxc3dxU2hIRXkzNmRFcm0wcWREeUpNcktjaWpjQjQ5clQyeEFxY3FEaFZwV1BBQ0VFV09SYWFxYnNtZV9tY3FXNXk4RFBoX29WWDJFdVRVYkNRU3MwaFA2Ti1hUUxSWHNWYWPSAdYBQVVfeXFMTjRhUVd5S2otUGUzc3BTVzNOR21LSFpBVk5wTDdBcWZJeWxGZ2NhTEY5MGQwcnd5XzFzWUpsbHZfNlpPa3pLdGdwbGRMNWVoTy1EQVpDYVkzWmF2OXNiVkYtLUNjbG5tLVZNVVBiWDVIX1FsbW8yU19yRlRHMjVVX0xGRzYwcVZaczJ1d3hiVGZ4eklHbzhmMm8tY3hfTkFjMVVna09abTYzRjVIb2VaRUUzVko5WTJwWFVnS0F0a2RyZVJnZW5mQmpTQ2R2T25HY2huVzdOZw?oc=5",
+          "sourceType": "middle-east-conflict",
+          "title": "Yemen's Houthis threaten to target Jeddah and other Saudi Red Sea ports - GMA Network",
+          "summary": "Yemen's Houthis threaten to target Jeddah and other Saudi Red Sea ports GMA Network",
+          "summary_snippet": "Yemen's Houthis threaten to target Jeddah and other Saudi Red Sea ports GMA Network",
+          "source": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNdnlNRDBfYzRCczhFMUthTnp5a3FTUDBYZ1AtaGk3bzlURGh2Q3F6UDhMNnpEZFZCaVNtX2hndE1oU002T2JPR0QzRlpWd0JjaHZieDNGUENFcGZzQVlpZzN6eXFqREFndlBJQzl4R3dQN3RzUC1yWUcxc3dxU2hIRXkzNmRFcm0wcWREeUpNcktjaWpjQjQ5clQyeEFxY3FEaFZwV1BBQ0VFV09SYWFxYnNtZV9tY3FXNXk4RFBoX29WWDJFdVRVYkNRU3MwaFA2Ti1hUUxSWHNWYWPSAdYBQVVfeXFMTjRhUVd5S2otUGUzc3BTVzNOR21LSFpBVk5wTDdBcWZJeWxGZ2NhTEY5MGQwcnd5XzFzWUpsbHZfNlpPa3pLdGdwbGRMNWVoTy1EQVpDYVkzWmF2OXNiVkYtLUNjbG5tLVZNVVBiWDVIX1FsbW8yU19yRlRHMjVVX0xGRzYwcVZaczJ1d3hiVGZ4eklHbzhmMm8tY3hfTkFjMVVna09abTYzRjVIb2VaRUUzVko5WTJwWFVnS0F0a2RyZVJnZW5mQmpTQ2R2T25HY2huVzdOZw?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNdnlNRDBfYzRCczhFMUthTnp5a3FTUDBYZ1AtaGk3bzlURGh2Q3F6UDhMNnpEZFZCaVNtX2hndE1oU002T2JPR0QzRlpWd0JjaHZieDNGUENFcGZzQVlpZzN6eXFqREFndlBJQzl4R3dQN3RzUC1yWUcxc3dxU2hIRXkzNmRFcm0wcWREeUpNcktjaWpjQjQ5clQyeEFxY3FEaFZwV1BBQ0VFV09SYWFxYnNtZV9tY3FXNXk4RFBoX29WWDJFdVRVYkNRU3MwaFA2Ti1hUUxSWHNWYWPSAdYBQVVfeXFMTjRhUVd5S2otUGUzc3BTVzNOR21LSFpBVk5wTDdBcWZJeWxGZ2NhTEY5MGQwcnd5XzFzWUpsbHZfNlpPa3pLdGdwbGRMNWVoTy1EQVpDYVkzWmF2OXNiVkYtLUNjbG5tLVZNVVBiWDVIX1FsbW8yU19yRlRHMjVVX0xGRzYwcVZaczJ1d3hiVGZ4eklHbzhmMm8tY3hfTkFjMVVna09abTYzRjVIb2VaRUUzVko5WTJwWFVnS0F0a2RyZVJnZW5mQmpTQ2R2T25HY2huVzdOZw?oc=5",
+          "time": "2026-11-24T23:07:28Z",
+          "published_date": "2026-11-24T23:07:28Z",
+          "publishedDate": "2026-11-24T23:07:28Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "sourceId": "google_news_yemen_red_sea",
+            "sourceUrl": "https://news.google.com/rss/search?q=Yemen+Houthis+Red+Sea+shipping+missile+drone+conflict+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
         },
         {
-          "id": "bbc8ef32a02c",
-          "sourceLabel": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1034054",
-          "sourceName": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1034054",
-          "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in Australia",
-          "summary": "On 15/11/2026, a forest fire started in Australia, until 24/11/2026.",
-          "summary_snippet": "On 15/11/2026, a forest fire started in Australia, until 24/11/2026.",
-          "source": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1034054",
-          "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1034054",
-          "time": "2026-11-24T16:09:03Z",
-          "published_date": "2026-11-24T16:09:03Z",
-          "publishedDate": "2026-11-24T16:09:03Z",
+          "id": "c5b2e2718680",
+          "sourceLabel": "Google News — Yemen / Red Sea",
+          "sourceName": "Google News — Yemen / Red Sea",
+          "sourceType": "middle-east-conflict",
+          "title": "Yemen's Houthis threaten to target Jeddah and other Saudi Red Sea ports - GMA Network",
+          "summary": "Yemen's Houthis threaten to target Jeddah and other Saudi Red Sea ports GMA Network",
+          "summary_snippet": "Yemen's Houthis threaten to target Jeddah and other Saudi Red Sea ports GMA Network",
+          "source": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNNm5scktIQTFaYnlxR3RldzktV09aMExGZC1yeVpaRTRpanc3LW5KcE9kd29lN00wMWRSR0JkaHl6c1JXbU81Vl9SLUVISW12QjJ1eU9zSmpSSlQtZXByWEhTb1cwblNWa1ExZkh1NnFNbkhQSElyN282b09ReXFaalcxRDdPbzZ2Vk5nbmV2NzZRYnlWM3dnd0dpd0xPc0FyZUljY1gtQ0VKMEdpMHVPdHNrUkc3T01NS1NNekF4RGdXSkhvOU5fbG5IcXByZEph0gHWAUFVX3lxTE40YVFXeUtqLVBlM3NwU1czTkdtS0haQVZOcEw3QXFmSXlsRmdjYUxGOTBkMHJ3eV8xc1lKbGx2XzZaT2t6S3RncGxkTDVlaE8tREFaQ2FZM1phdjlzYlZGLS1DY2xubS1WTVVQYlg1SF9RbG1vMlNfckZURzI1VV9MRkc2MHFWWnMydXd4YlRmeHpJR284ZjJvLWN4X05BYzFVZ2tPWm02M0Y1SG9lWkVFM1ZKOVkycFhVZ0tBdGtkcmVSZ2VuZkJqU0Nkdk9uR2Noblc3Tmc?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNNm5scktIQTFaYnlxR3RldzktV09aMExGZC1yeVpaRTRpanc3LW5KcE9kd29lN00wMWRSR0JkaHl6c1JXbU81Vl9SLUVISW12QjJ1eU9zSmpSSlQtZXByWEhTb1cwblNWa1ExZkh1NnFNbkhQSElyN282b09ReXFaalcxRDdPbzZ2Vk5nbmV2NzZRYnlWM3dnd0dpd0xPc0FyZUljY1gtQ0VKMEdpMHVPdHNrUkc3T01NS1NNekF4RGdXSkhvOU5fbG5IcXByZEph0gHWAUFVX3lxTE40YVFXeUtqLVBlM3NwU1czTkdtS0haQVZOcEw3QXFmSXlsRmdjYUxGOTBkMHJ3eV8xc1lKbGx2XzZaT2t6S3RncGxkTDVlaE8tREFaQ2FZM1phdjlzYlZGLS1DY2xubS1WTVVQYlg1SF9RbG1vMlNfckZURzI1VV9MRkc2MHFWWnMydXd4YlRmeHpJR284ZjJvLWN4X05BYzFVZ2tPWm02M0Y1SG9lWkVFM1ZKOVkycFhVZ0tBdGtkcmVSZ2VuZkJqU0Nkdk9uR2Noblc3Tmc?oc=5",
+          "time": "2026-11-24T23:07:28Z",
+          "published_date": "2026-11-24T23:07:28Z",
+          "publishedDate": "2026-11-24T23:07:28Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
+            "sourceId": "google_news_yemen_red_sea",
+            "sourceUrl": "https://news.google.com/rss/search?q=Yemen+Houthis+Red+Sea+shipping+missile+drone+conflict+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
         }
       ]
     },
     {
-      "id": "14c4f715a8ccb84a",
-      "title": "CNN.com - Transcripts - CNN",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 3,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "2026-11-24T16:00:00Z",
-      "lastSeen": "2026-11-24T22:31:18Z",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMib0FVX3lxTE5JR2lvUHdXZy1iVWN6R29TVFZNbmQxYnM5aWVfTnJZU2NHR0Fpc1R3STl3LXJPcWVWajZBc3RKSTlXUFlQeFE5djlXNWlOYXQ2OWx1Smc1LThSYktmY3lydGZBM0hrU1JYbU45cnZnOA?oc=5",
-        "https://news.google.com/rss/articles/CBMib0FVX3lxTE5LMXE3Y09xQm1kdHhDNXAteGNraTlnLWR2ZnBvaWFUaXJUTzgtMUdpOGlLeXV2OGdQQzhaa2dwOU1fLU9GUVFJX29uU1VGVDBYblZPeDBKa2Q0cTNlYXJ2WE5KdDZ2Zl81eGViQ2pnSQ?oc=5",
-        "https://news.google.com/rss/articles/CBMib0FVX3lxTE1lUFV3OUhQZ05jalc2d0xFazFmVVRSQmJQVFlrcWctOWFNNGF3U29HaVdMRnJtQmxHVmpuT24xblVNTzBrWmhMQ1pZQVpsemEwdDZFZ1JoMkhGVWtQaV9GdGxhU3JUV2J1Y3BuOVZhWQ?oc=5"
-      ],
-      "reports": [
-        {
-          "id": "4ce0028833dd",
-          "sourceLabel": "Google News — CNN Politics",
-          "sourceName": "Google News — CNN Politics",
-          "sourceType": "us-politics",
-          "title": "CNN.com - Transcripts - CNN",
-          "summary": "CNN.com - Transcripts CNN",
-          "summary_snippet": "CNN.com - Transcripts CNN",
-          "source": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5JR2lvUHdXZy1iVWN6R29TVFZNbmQxYnM5aWVfTnJZU2NHR0Fpc1R3STl3LXJPcWVWajZBc3RKSTlXUFlQeFE5djlXNWlOYXQ2OWx1Smc1LThSYktmY3lydGZBM0hrU1JYbU45cnZnOA?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5JR2lvUHdXZy1iVWN6R29TVFZNbmQxYnM5aWVfTnJZU2NHR0Fpc1R3STl3LXJPcWVWajZBc3RKSTlXUFlQeFE5djlXNWlOYXQ2OWx1Smc1LThSYktmY3lydGZBM0hrU1JYbU45cnZnOA?oc=5",
-          "time": "2026-11-24T22:31:18Z",
-          "published_date": "2026-11-24T22:31:18Z",
-          "publishedDate": "2026-11-24T22:31:18Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_cnn_politics",
-            "sourceUrl": "https://news.google.com/rss/search?q=site%3Acnn.com+politics+Trump+Congress+Senate+White+House+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "3a791a1bf5a5",
-          "sourceLabel": "Google News — CNN Politics",
-          "sourceName": "Google News — CNN Politics",
-          "sourceType": "us-politics",
-          "title": "CNN.com - Transcripts - CNN",
-          "summary": "CNN.com - Transcripts CNN",
-          "summary_snippet": "CNN.com - Transcripts CNN",
-          "source": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5LMXE3Y09xQm1kdHhDNXAteGNraTlnLWR2ZnBvaWFUaXJUTzgtMUdpOGlLeXV2OGdQQzhaa2dwOU1fLU9GUVFJX29uU1VGVDBYblZPeDBKa2Q0cTNlYXJ2WE5KdDZ2Zl81eGViQ2pnSQ?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5LMXE3Y09xQm1kdHhDNXAteGNraTlnLWR2ZnBvaWFUaXJUTzgtMUdpOGlLeXV2OGdQQzhaa2dwOU1fLU9GUVFJX29uU1VGVDBYblZPeDBKa2Q0cTNlYXJ2WE5KdDZ2Zl81eGViQ2pnSQ?oc=5",
-          "time": "2026-11-24T17:00:00Z",
-          "published_date": "2026-11-24T17:00:00Z",
-          "publishedDate": "2026-11-24T17:00:00Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_cnn_politics",
-            "sourceUrl": "https://news.google.com/rss/search?q=site%3Acnn.com+politics+Trump+Congress+Senate+White+House+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "1cb8c4c6b4bd",
-          "sourceLabel": "Google News — CNN Politics",
-          "sourceName": "Google News — CNN Politics",
-          "sourceType": "us-politics",
-          "title": "CNN.com - Transcripts - CNN",
-          "summary": "CNN.com - Transcripts CNN",
-          "summary_snippet": "CNN.com - Transcripts CNN",
-          "source": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1lUFV3OUhQZ05jalc2d0xFazFmVVRSQmJQVFlrcWctOWFNNGF3U29HaVdMRnJtQmxHVmpuT24xblVNTzBrWmhMQ1pZQVpsemEwdDZFZ1JoMkhGVWtQaV9GdGxhU3JUV2J1Y3BuOVZhWQ?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1lUFV3OUhQZ05jalc2d0xFazFmVVRSQmJQVFlrcWctOWFNNGF3U29HaVdMRnJtQmxHVmpuT24xblVNTzBrWmhMQ1pZQVpsemEwdDZFZ1JoMkhGVWtQaV9GdGxhU3JUV2J1Y3BuOVZhWQ?oc=5",
-          "time": "2026-11-24T16:00:00Z",
-          "published_date": "2026-11-24T16:00:00Z",
-          "publishedDate": "2026-11-24T16:00:00Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_cnn_politics",
-            "sourceUrl": "https://news.google.com/rss/search?q=site%3Acnn.com+politics+Trump+Congress+Senate+White+House+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "38cbd4f027ebdfba",
-      "title": "South Africa convicts Zimbabwean who tried to fight Ukraine for Russia",
-      "category": "general",
+      "id": "8f750d3624d6a21b",
+      "title": "Saudi-led coalition intercepts Houthi attacks after Hodeidah strike - Al Jazeera",
+      "category": "conflict",
       "confidence": "moderate",
       "reportCount": 2,
       "sourceCount": 2,
       "sources": [
-        "aljazeera.com",
-        "bbc.co.uk"
+        "news.google.com",
+        "aljazeera.com"
       ],
-      "anchors": [
-        "russia",
-        "uk",
-        "ukraine"
-      ],
-      "firstSeen": "2026-11-24T17:04:00Z",
-      "lastSeen": "2026-11-24T23:29:40Z",
+      "anchors": [],
+      "firstSeen": "2026-11-25T08:23:35Z",
+      "lastSeen": "2026-11-25T08:26:15Z",
       "urls": [
-        "https://www.aljazeera.com/news/2026/11/24/south-africa-convicts-zimbabwean-who-tried-to-fight-ukraine-for-russia?traffic_source=rss",
-        "https://www.bbc.co.uk/news/articles/cmqj5qlj5yz9o?at_medium=RSS&at_campaign=rss"
+        "https://news.google.com/rss/articles/CBMirgFBVV95cUxNTEVITC1LZkREZDRPbDhBOFk4TFN0eFZWSEk0RnJwUnR4aDFpb042SEwwcTRYXzNGSGhjcXg5S0lYMUQwcHRZSW1IU2gzYVRtY3pTenRONUl6bW9UNFItSk5YTXZwLWo4MkJTckxPdUQxUTJ4Mzl2Y1VTam84dllIU3hXOGdUOGhFRGpyUzRrQUU3RTI0blpwX05jSGI2bnRrRk9EMXAtTDVRTlpTRnfSAbMBQVVfeXFMTnBiR1EteFNjS2JTSjVyaF90TThMS2xpT2Nvd2wxbGtQLXE0aE9uNWkwNzExNjM2RHVxOEJEOTdFYnUwb2xLaElxdDZnZDVrc00zTGpfUGRZWWdGdFlOMUNsLXVKMmtoOUc1UVdtYi1CUEFqZUFsMGtvOEdJZjFXbEVhLTVPS0ZnUWdNb3BOV2ZHR2hOZjZQY2drZ3Y0QmFidUNLLWxCYTI3bU1GM3hVN0NqeVU?oc=5",
+        "https://www.aljazeera.com/news/2026/11/25/saudi-led-coalition-intercepts-houthi-attacks-after-hodeidah-strike?traffic_source=rss"
       ],
       "reports": [
         {
-          "id": "bfafb17d5c85",
-          "sourceLabel": "Al Jazeera",
-          "sourceName": "Al Jazeera",
-          "sourceType": "international",
-          "title": "South Africa convicts Zimbabwean who tried to fight Ukraine for Russia",
-          "summary": "The Zimbabwean man was arrested on November 8 at a Johannesburg airport while attempting to board a flight to Russia.",
-          "summary_snippet": "The Zimbabwean man was arrested on November 8 at a Johannesburg airport while attempting to board a flight to Russia.",
-          "source": "https://www.aljazeera.com/news/2026/11/24/south-africa-convicts-zimbabwean-who-tried-to-fight-ukraine-for-russia?traffic_source=rss",
-          "url": "https://www.aljazeera.com/news/2026/11/24/south-africa-convicts-zimbabwean-who-tried-to-fight-ukraine-for-russia?traffic_source=rss",
-          "time": "2026-11-24T23:29:40Z",
-          "published_date": "2026-11-24T23:29:40Z",
-          "publishedDate": "2026-11-24T23:29:40Z",
-          "tag": "World",
+          "id": "0207526baa41",
+          "sourceLabel": "Google News — Yemen / Red Sea",
+          "sourceName": "Google News — Yemen / Red Sea",
+          "sourceType": "middle-east-conflict",
+          "title": "Saudi-led coalition intercepts Houthi attacks after Hodeidah strike - Al Jazeera",
+          "summary": "Saudi-led coalition intercepts Houthi attacks after Hodeidah strike Al Jazeera",
+          "summary_snippet": "Saudi-led coalition intercepts Houthi attacks after Hodeidah strike Al Jazeera",
+          "source": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNTEVITC1LZkREZDRPbDhBOFk4TFN0eFZWSEk0RnJwUnR4aDFpb042SEwwcTRYXzNGSGhjcXg5S0lYMUQwcHRZSW1IU2gzYVRtY3pTenRONUl6bW9UNFItSk5YTXZwLWo4MkJTckxPdUQxUTJ4Mzl2Y1VTam84dllIU3hXOGdUOGhFRGpyUzRrQUU3RTI0blpwX05jSGI2bnRrRk9EMXAtTDVRTlpTRnfSAbMBQVVfeXFMTnBiR1EteFNjS2JTSjVyaF90TThMS2xpT2Nvd2wxbGtQLXE0aE9uNWkwNzExNjM2RHVxOEJEOTdFYnUwb2xLaElxdDZnZDVrc00zTGpfUGRZWWdGdFlOMUNsLXVKMmtoOUc1UVdtYi1CUEFqZUFsMGtvOEdJZjFXbEVhLTVPS0ZnUWdNb3BOV2ZHR2hOZjZQY2drZ3Y0QmFidUNLLWxCYTI3bU1GM3hVN0NqeVU?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNTEVITC1LZkREZDRPbDhBOFk4TFN0eFZWSEk0RnJwUnR4aDFpb042SEwwcTRYXzNGSGhjcXg5S0lYMUQwcHRZSW1IU2gzYVRtY3pTenRONUl6bW9UNFItSk5YTXZwLWo4MkJTckxPdUQxUTJ4Mzl2Y1VTam84dllIU3hXOGdUOGhFRGpyUzRrQUU3RTI0blpwX05jSGI2bnRrRk9EMXAtTDVRTlpTRnfSAbMBQVVfeXFMTnBiR1EteFNjS2JTSjVyaF90TThMS2xpT2Nvd2wxbGtQLXE0aE9uNWkwNzExNjM2RHVxOEJEOTdFYnUwb2xLaElxdDZnZDVrc00zTGpfUGRZWWdGdFlOMUNsLXVKMmtoOUc1UVdtYi1CUEFqZUFsMGtvOEdJZjFXbEVhLTVPS0ZnUWdNb3BOV2ZHR2hOZjZQY2drZ3Y0QmFidUNLLWxCYTI3bU1GM3hVN0NqeVU?oc=5",
+          "time": "2026-11-25T08:26:15Z",
+          "published_date": "2026-11-25T08:26:15Z",
+          "publishedDate": "2026-11-25T08:26:15Z",
+          "tag": "Breaking",
           "confidence": "DEVELOPING",
-          "breaking": false,
+          "breaking": true,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "al_jazeera",
-            "sourceUrl": "https://www.aljazeera.com/xml/rss/all.xml",
+            "sourceId": "google_news_yemen_red_sea",
+            "sourceUrl": "https://news.google.com/rss/search?q=Yemen+Houthis+Red+Sea+shipping+missile+drone+conflict+when%3A1d&hl=en-US&gl=US&ceid=US:en",
             "feedFormat": "rss"
           }
         },
         {
-          "id": "2f1287ddddf1",
-          "sourceLabel": "BBC World",
-          "sourceName": "BBC World",
+          "id": "87ff37ca3986",
+          "sourceLabel": "Al Jazeera",
+          "sourceName": "Al Jazeera",
           "sourceType": "international",
-          "title": "Zimbabwean convicted in South Africa of trying to fight in Ukraine",
-          "summary": "Hundreds of people from different African countries have been recruited to fight for Russia, according to Ukraine.",
-          "summary_snippet": "Hundreds of people from different African countries have been recruited to fight for Russia, according to Ukraine.",
-          "source": "https://www.bbc.co.uk/news/articles/cmqj5qlj5yz9o?at_medium=RSS&at_campaign=rss",
-          "url": "https://www.bbc.co.uk/news/articles/cmqj5qlj5yz9o?at_medium=RSS&at_campaign=rss",
-          "time": "2026-11-24T17:04:00Z",
-          "published_date": "2026-11-24T17:04:00Z",
-          "publishedDate": "2026-11-24T17:04:00Z",
-          "tag": "World",
+          "title": "Saudi-led coalition intercepts Houthi attacks after Hodeidah strike",
+          "summary": "The escalation comes after the Yemeni rebel group threatened to attack the kingdom's Red Sea ports in retaliation.",
+          "summary_snippet": "The escalation comes after the Yemeni rebel group threatened to attack the kingdom's Red Sea ports in retaliation.",
+          "source": "https://www.aljazeera.com/news/2026/11/25/saudi-led-coalition-intercepts-houthi-attacks-after-hodeidah-strike?traffic_source=rss",
+          "url": "https://www.aljazeera.com/news/2026/11/25/saudi-led-coalition-intercepts-houthi-attacks-after-hodeidah-strike?traffic_source=rss",
+          "time": "2026-11-25T08:23:35Z",
+          "published_date": "2026-11-25T08:23:35Z",
+          "publishedDate": "2026-11-25T08:23:35Z",
+          "tag": "Breaking",
           "confidence": "DEVELOPING",
-          "breaking": false,
+          "breaking": true,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "bbc_world",
-            "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
+            "sourceId": "al_jazeera",
+            "sourceUrl": "https://www.aljazeera.com/xml/rss/all.xml",
             "feedFormat": "rss"
           }
         }
@@ -620,8 +546,8 @@
       "reports": [
         {
           "id": "398594f3c964",
-          "sourceLabel": "Google News — U.S. Politics",
-          "sourceName": "Google News — U.S. Politics",
+          "sourceLabel": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQR2plR2RlV2Y2N3B4eFlPWTAwQ1dCMWxLNWtFQ2tIY0tvZXdqM01VLVhweGJzVnhydVFPMVF0QVRGQ1lWUWZ4NXZXaTFlbTNOUjYwOVNSbTYtTkZyNlo4U1ZVVUl6cUQtUUZNUy1UWDZzQXowaTMyLWZ0UG1FQTVxU3JWM0ptcV91OVE?oc=5",
+          "sourceName": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQR2plR2RlV2Y2N3B4eFlPWTAwQ1dCMWxLNWtFQ2tIY0tvZXdqM01VLVhweGJzVnhydVFPMVF0QVRGQ1lWUWZ4NXZXaTFlbTNOUjYwOVNSbTYtTkZyNlo4U1ZVVUl6cUQtUUZNUy1UWDZzQXowaTMyLWZ0UG1FQTVxU3JWM0ptcV91OVE?oc=5",
           "sourceType": "us-politics",
           "title": "Climate scientists urge US lawmakers to vote no on sweeping permitting bill - The Guardian",
           "summary": "Climate scientists urge US lawmakers to vote no on sweeping permitting bill The Guardian",
@@ -643,8 +569,8 @@
         },
         {
           "id": "4001d0e7d9ac",
-          "sourceLabel": "Guardian US",
-          "sourceName": "Guardian US",
+          "sourceLabel": "https://www.theguardian.com/us-news/2026/nov/24/climate-scientists-lawmakers-baaja",
+          "sourceName": "https://www.theguardian.com/us-news/2026/nov/24/climate-scientists-lawmakers-baaja",
           "sourceType": "regional",
           "title": "Climate scientists urge US lawmakers to vote no on sweeping permitting bill",
           "summary": "Open letter warns Baaja, intended to expedite energy and infrastructure projects, will cause irreversible climate harm A group of more than 120 climate scientists have urged US lawmakers to not pass contentious legislation to speed up the building of energy projects, datacenters and other infrastructure, amid a growing backlash to the sweeping permitting bill. In an open letter to members of the House of Representati",
@@ -667,211 +593,51 @@
       ]
     },
     {
-      "id": "5c8e24d51f983c17",
-      "title": "Army sergeant pleads guilty in plot to sell military secrets to China - Military Times",
-      "category": "conflict",
-      "confidence": "moderate",
+      "id": "dccb26f9fa049143",
+      "title": "NATO ‘prepared’ to defend allies amid reported Iran threat - The New Region",
+      "category": "diplomatic",
+      "confidence": "low",
       "reportCount": 2,
-      "sourceCount": 2,
+      "sourceCount": 1,
       "sources": [
-        "news.google.com",
-        "stripes.com"
+        "news.google.com"
       ],
       "anchors": [
-        "china"
+        "iran",
+        "nato"
       ],
-      "firstSeen": "2026-11-24T13:54:32Z",
-      "lastSeen": "2026-11-24T20:53:30Z",
+      "firstSeen": "Wed, 19 Aug 2026 07:00:00 GMT",
+      "lastSeen": "Wed, 19 Aug 2026 07:00:00 GMT",
       "urls": [
-        "https://news.google.com/rss/articles/CBMiygFBVV95cUxQUnprRmZwaVhaNkljR1lkTGxQb2VoUkJzRTB1RjhxX2pTazRQV3lHSjdxcGE3a1BkQ0xCcHNZMndDN2ExdG9lcm5LNWluWDM3MGRhaDB5Q3Yxd2FZWEVSR1liZlVhRWdjdThxUGZ5QzBwdWEyTlFoRnNEb1ZsUWlzVTJKcmxWT1Z2MFFfQkgyclhBNjJ6UGE0XzAyZU1pWTk4a285SEFTWk1BeV9NMGdWZGhKWFJyWDV0QmlMY0Z6ck1mb25pc3JTZUR3?oc=5",
-        "https://www.stripes.com/branches/army/2026-11-24/army-sergeant-guilty-secrets-china-23563043.html"
+        "https://news.google.com/rss/articles/CBMiS0FVX3lxTE01aVNKS0wtd2VFMld4YjA1YU5xcC1VV3JDUFVnM0hmOHd5eHZCbGxnYy1vRDhocTRRSk5NSEI2cDhYVHY1VFAtNGxfSQ?oc=5",
+        "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNdXRtSHhob196XzZQbUZYUkx2N3MwNnZBNkJacmczamdNRzJUekRsNWNnYTQ3WjhINlJEcDdhVlJ2VmVCNTlBa1psdl96cEJTb244OGI3eHBWZXYxa0JzVjB1VXQtNzNSRFJMelZOc1FSZmRKeXhHWkdiVlNWaVRyYVc2NlYtWWpfVUROcWMybHJGRUZZMnZGdm8tM3pWM2lVZmoydHZsSThCdw?oc=5"
       ],
       "reports": [
         {
-          "id": "9224e18b79b3",
-          "sourceLabel": "Google News — China Security / PLA",
-          "sourceName": "Google News — China Security / PLA",
-          "sourceType": "china-security",
-          "title": "Army sergeant pleads guilty in plot to sell military secrets to China - Military Times",
-          "summary": "Army sergeant pleads guilty in plot to sell military secrets to China Military Times",
-          "summary_snippet": "Army sergeant pleads guilty in plot to sell military secrets to China Military Times",
-          "source": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQUnprRmZwaVhaNkljR1lkTGxQb2VoUkJzRTB1RjhxX2pTazRQV3lHSjdxcGE3a1BkQ0xCcHNZMndDN2ExdG9lcm5LNWluWDM3MGRhaDB5Q3Yxd2FZWEVSR1liZlVhRWdjdThxUGZ5QzBwdWEyTlFoRnNEb1ZsUWlzVTJKcmxWT1Z2MFFfQkgyclhBNjJ6UGE0XzAyZU1pWTk4a285SEFTWk1BeV9NMGdWZGhKWFJyWDV0QmlMY0Z6ck1mb25pc3JTZUR3?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQUnprRmZwaVhaNkljR1lkTGxQb2VoUkJzRTB1RjhxX2pTazRQV3lHSjdxcGE3a1BkQ0xCcHNZMndDN2ExdG9lcm5LNWluWDM3MGRhaDB5Q3Yxd2FZWEVSR1liZlVhRWdjdThxUGZ5QzBwdWEyTlFoRnNEb1ZsUWlzVTJKcmxWT1Z2MFFfQkgyclhBNjJ6UGE0XzAyZU1pWTk4a285SEFTWk1BeV9NMGdWZGhKWFJyWDV0QmlMY0Z6ck1mb25pc3JTZUR3?oc=5",
-          "time": "2026-11-24T20:53:30Z",
-          "published_date": "2026-11-24T20:53:30Z",
-          "publishedDate": "2026-11-24T20:53:30Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "china_security",
-            "sourceUrl": "https://news.google.com/rss/search?q=China+PLA+military+Taiwan+South+China+Sea+security+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
+          "title": "NATO ‘prepared’ to defend allies amid reported Iran threat - The New Region",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE01aVNKS0wtd2VFMld4YjA1YU5xcC1VV3JDUFVnM0hmOHd5eHZCbGxnYy1vRDhocTRRSk5NSEI2cDhYVHY1VFAtNGxfSQ?oc=5",
+          "published_date": "Wed, 19 Aug 2026 07:00:00 GMT",
+          "time": "Wed, 19 Aug 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: The New Region",
+          "summary": "Fallback discovery via Google News RSS; publisher: The New Region",
+          "source": "The New Region",
+          "sourceLabel": "The New Region",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NATO",
+          "credit_metadata": "Google News RSS fallback"
         },
         {
-          "id": "b1405136d57f",
-          "sourceLabel": "Stars and Stripes",
-          "sourceName": "Stars and Stripes",
-          "sourceType": "news",
-          "title": "Army sergeant pleads guilty to selling military secrets to China",
-          "summary": "Army Sgt. Jian Zhao pleaded guilty to conspiring to sell U.S. military secrets to China, including defense information and HIMARS data.",
-          "summary_snippet": "Army Sgt. Jian Zhao pleaded guilty to conspiring to sell U.S. military secrets to China, including defense information and HIMARS data.",
-          "source": "https://www.stripes.com/branches/army/2026-11-24/army-sergeant-guilty-secrets-china-23563043.html",
-          "url": "https://www.stripes.com/branches/army/2026-11-24/army-sergeant-guilty-secrets-china-23563043.html",
-          "time": "2026-11-24T13:54:32Z",
-          "published_date": "2026-11-24T13:54:32Z",
-          "publishedDate": "2026-11-24T13:54:32Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "stars_stripes",
-            "sourceUrl": "https://subscribe.stripes.com/rss/top-news.xml",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "f67b1dcb02e317a6",
-      "title": "UK police arrest two men after break-in at William and Kate's home",
-      "category": "general",
-      "confidence": "moderate",
-      "reportCount": 2,
-      "sourceCount": 2,
-      "sources": [
-        "channelnewsasia.com",
-        "aljazeera.com"
-      ],
-      "anchors": [
-        "uk"
-      ],
-      "firstSeen": "2026-11-24T15:19:47Z",
-      "lastSeen": "2026-11-24T16:29:34Z",
-      "urls": [
-        "https://www.channelnewsasia.com/world/uk-police-arrest-two-men-after-break-in-william-and-kates-home-6579091",
-        "https://www.aljazeera.com/news/2026/11/24/police-arrest-two-after-break-in-at-prince-william-and-kates-country-home?traffic_source=rss"
-      ],
-      "reports": [
-        {
-          "id": "09bb22f4e4a2",
-          "sourceLabel": "CNA World",
-          "sourceName": "CNA World",
-          "sourceType": "news",
-          "title": "UK police arrest two men after break-in at William and Kate's home",
-          "summary": "The men \"were arrested on the estate on suspicion of burglary and trespass\", UK police said.",
-          "summary_snippet": "The men \"were arrested on the estate on suspicion of burglary and trespass\", UK police said.",
-          "source": "https://www.channelnewsasia.com/world/uk-police-arrest-two-men-after-break-in-william-and-kates-home-6579091",
-          "url": "https://www.channelnewsasia.com/world/uk-police-arrest-two-men-after-break-in-william-and-kates-home-6579091",
-          "time": "2026-11-24T16:29:34Z",
-          "published_date": "2026-11-24T16:29:34Z",
-          "publishedDate": "2026-11-24T16:29:34Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "cna_world",
-            "sourceUrl": "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml&category=6311",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "71b08d8a9cc7",
-          "sourceLabel": "https://www.aljazeera.com/news/2026/11/24/police-arrest-two-after-break-in-at-prince-william-and-kates-country-home?traffic_source=rss",
-          "sourceName": "https://www.aljazeera.com/news/2026/11/24/police-arrest-two-after-break-in-at-prince-william-and-kates-country-home?traffic_source=rss",
-          "sourceType": "international",
-          "title": "UK police arrest two after break-in at Prince William’s country residence",
-          "summary": "The arrests were made at a property on ⁠⁠⁠⁠the royal family's Sandringham estate in Norfolk, eastern England.",
-          "summary_snippet": "The arrests were made at a property on ⁠⁠⁠⁠the royal family's Sandringham estate in Norfolk, eastern England.",
-          "source": "https://www.aljazeera.com/news/2026/11/24/police-arrest-two-after-break-in-at-prince-william-and-kates-country-home?traffic_source=rss",
-          "url": "https://www.aljazeera.com/news/2026/11/24/police-arrest-two-after-break-in-at-prince-william-and-kates-country-home?traffic_source=rss",
-          "time": "2026-11-24T15:19:47Z",
-          "published_date": "2026-11-24T15:19:47Z",
-          "publishedDate": "2026-11-24T15:19:47Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "al_jazeera",
-            "sourceUrl": "https://www.aljazeera.com/xml/rss/all.xml",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "0c441aff02a53845",
-      "title": "Israeli air strike kills Hamas internal security chief in Gaza",
-      "category": "conflict",
-      "confidence": "moderate",
-      "reportCount": 2,
-      "sourceCount": 2,
-      "sources": [
-        "bbc.co.uk",
-        "aljazeera.com"
-      ],
-      "anchors": [
-        "gaza",
-        "hamas",
-        "israel"
-      ],
-      "firstSeen": "2026-11-24T13:55:11Z",
-      "lastSeen": "2026-11-24T15:35:53Z",
-      "urls": [
-        "https://www.bbc.co.uk/news/articles/c6rrg7ggq190o?at_medium=RSS&at_campaign=rss",
-        "https://www.aljazeera.com/news/2026/11/24/israeli-air-strike-kills-senior-hamas-military-official-in-gaza?traffic_source=rss"
-      ],
-      "reports": [
-        {
-          "id": "828037c2e0af",
-          "sourceLabel": "https://www.bbc.co.uk/news/articles/c6rrg7ggq190o?at_medium=RSS&at_campaign=rss",
-          "sourceName": "https://www.bbc.co.uk/news/articles/c6rrg7ggq190o?at_medium=RSS&at_campaign=rss",
-          "sourceType": "international",
-          "title": "Israeli air strike kills Hamas internal security chief in Gaza",
-          "summary": "Naeem Abu Nahel, who had been in the post for two months, is among seven Palestinians reportedly killed in Israeli strikes on Tuesday.",
-          "summary_snippet": "Naeem Abu Nahel, who had been in the post for two months, is among seven Palestinians reportedly killed in Israeli strikes on Tuesday.",
-          "source": "https://www.bbc.co.uk/news/articles/c6rrg7ggq190o?at_medium=RSS&at_campaign=rss",
-          "url": "https://www.bbc.co.uk/news/articles/c6rrg7ggq190o?at_medium=RSS&at_campaign=rss",
-          "time": "2026-11-24T15:35:53Z",
-          "published_date": "2026-11-24T15:35:53Z",
-          "publishedDate": "2026-11-24T15:35:53Z",
-          "tag": "Breaking",
-          "confidence": "DEVELOPING",
-          "breaking": true,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "bbc_world",
-            "sourceUrl": "https://feeds.bbci.co.uk/news/world/rss.xml",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "7dfd72916188",
-          "sourceLabel": "https://www.aljazeera.com/news/2026/11/24/israeli-air-strike-kills-senior-hamas-military-official-in-gaza?traffic_source=rss",
-          "sourceName": "https://www.aljazeera.com/news/2026/11/24/israeli-air-strike-kills-senior-hamas-military-official-in-gaza?traffic_source=rss",
-          "sourceType": "international",
-          "title": "Israeli air strike kills senior Hamas security official in Gaza",
-          "summary": "Naim Abu Nahl, 50, was killed in a crowded area while four others, including a Palestinian woman, were wounded.",
-          "summary_snippet": "Naim Abu Nahl, 50, was killed in a crowded area while four others, including a Palestinian woman, were wounded.",
-          "source": "https://www.aljazeera.com/news/2026/11/24/israeli-air-strike-kills-senior-hamas-military-official-in-gaza?traffic_source=rss",
-          "url": "https://www.aljazeera.com/news/2026/11/24/israeli-air-strike-kills-senior-hamas-military-official-in-gaza?traffic_source=rss",
-          "time": "2026-11-24T13:55:11Z",
-          "published_date": "2026-11-24T13:55:11Z",
-          "publishedDate": "2026-11-24T13:55:11Z",
-          "tag": "Breaking",
-          "confidence": "DEVELOPING",
-          "breaking": true,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "al_jazeera",
-            "sourceUrl": "https://www.aljazeera.com/xml/rss/all.xml",
-            "feedFormat": "rss"
-          }
+          "title": "NATO prepared to defend allies from any Iranian threat, official says - Washington Times",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNdXRtSHhob196XzZQbUZYUkx2N3MwNnZBNkJacmczamdNRzJUekRsNWNnYTQ3WjhINlJEcDdhVlJ2VmVCNTlBa1psdl96cEJTb244OGI3eHBWZXYxa0JzVjB1VXQtNzNSRFJMelZOc1FSZmRKeXhHWkdiVlNWaVRyYVc2NlYtWWpfVUROcWMybHJGRUZZMnZGdm8tM3pWM2lVZmoydHZsSThCdw?oc=5",
+          "published_date": "Wed, 19 Aug 2026 07:00:00 GMT",
+          "time": "Wed, 19 Aug 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Washington Times",
+          "summary": "Fallback discovery via Google News RSS; publisher: Washington Times",
+          "source": "Washington Times",
+          "sourceLabel": "Washington Times",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NATO",
+          "credit_metadata": "Google News RSS fallback"
         }
       ]
     },
@@ -922,8 +688,8 @@
       ]
     },
     {
-      "id": "cab09a0d85b19b11",
-      "title": "Statement by the North Atlantic Council on the Democratic People’s Republic of Korea - North Atlantic Treaty Organization | NATO",
+      "id": "b6368c4e1b113a3c",
+      "title": "Statement by NATO Foreign Ministers - North Atlantic Treaty Organization | NATO",
       "category": "diplomatic",
       "confidence": "low",
       "reportCount": 2,
@@ -934,18 +700,18 @@
       "anchors": [
         "nato"
       ],
-      "firstSeen": "Fri, 08 Nov 2024 08:00:00 GMT",
-      "lastSeen": "Thu, 22 Apr 2021 07:00:00 GMT",
+      "firstSeen": "Fri, 03 Feb 2023 08:00:00 GMT",
+      "lastSeen": "Tue, 29 Nov 2022 08:00:00 GMT",
       "urls": [
-        "https://news.google.com/rss/articles/CBMigAJBVV95cUxOZXNKUTZoUUFVNG1Lb0RFVVdOamFYQjhJYi1wOHcyeEZ6dHZ5MjFKdUk2SGFVREpBS1d3ZjlCRHZxZlpzaUFzMm9aZ2ZwSzFfbUpRNmNuNi13NGMtdFZKZi1zLXBMVEZZdlMxMmZmbFYwRnIwSDNrN3hLX3VrWHE2Q2t4bXVlUDN5bjU0MlRZVzhJX2h1SVNPUDk4SHV6TFo1SkNfcnJkU1dldFFLX2VoM2NlX1U2d0JkaG9xcHAwd3hyNXB0X2VtTmVvMVJuSXRsdTQ5cU1NZkYtNUs1VktaNFpnX1pYRFhxS2h5b2hFaDA1Ul91OFJiWmQ4a2FOcjVF?oc=5",
-        "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQTEhuOHMxdGQ1WW9ZaVh2UjRVQ0lVNUhUUzEzOE4yRlNQUm9DdDZIVnluWGVCNFQ1ZDdDNk9sM0xhTVAteGRTaE96S3dVUDNXZnRUUHRycmQzeGpxNTl6R19JaEtwYk9yb0xwVXRUMmNmQWxaOGwtWnliT2Q1S0JhUUF3U0ttME1pNTZfVmFmTko3anZ3c3UzTnN4UmprVTBtODREdGk4bGVtRFN1WFZtdUJWc1JJUEprS3FQWmJDVGloeGs3WlVxTVFZQ0pUbDNHRjZyd0JkZnZHeXlfM0RVTE1PRmhPbWhGY2Yzd0FYYw?oc=5"
+        "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQVFh4ZkYwdENWVEhrOUpUSGtxVUZZV1RvLU05UUhGYVVwTV9PSWlXSFE4MFFmbjZyYUFlZVVxMjBCODFMeWk0VHRVeHVSV3o2RDg2MUUwdFZzb28yRGN0bzVKTklvUmlDVWUtMHpLRjNnZHdHTW56YXJER2VoSlFaVlVDX1FRa3ZIclJDdzl5NDdfZ0d1UXBhaF93MUx0MFdHczZRY1BndzFBX1ZSdWlCUGVPdFRNUFk1T2VzU2F2N3Y?oc=5",
+        "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOT3hQZ1B0TEVRdWh4ZWk3amc0anpQNkc5RURXejRFM3pzN0kwRGNFOGNIYTE3SDJ5N1RwR3VFQTEtOGNpX2dEcWVDTkgtdTZVbTR4TkdkSTIyb0pVc3g1SVVPOWhfc3BGaXJkcy1OdXFfYW5WRGhad0x3VkdtSkxHX3dHMWhtMVBBRzRoUnZKZTlvejNRbWdQZjBKeUtpQzVGRHNqNm9RM2h4LVQzekRzZWRQMWYtNS1EOEszOWl5TlB2X0NJZ2JoOUJ4cUxuNkpEZTRrdnUwYWdSSV94Qy1kSXpvVndxUQ?oc=5"
       ],
       "reports": [
         {
-          "title": "Statement by the North Atlantic Council on the Democratic People’s Republic of Korea - North Atlantic Treaty Organization | NATO",
-          "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxOZXNKUTZoUUFVNG1Lb0RFVVdOamFYQjhJYi1wOHcyeEZ6dHZ5MjFKdUk2SGFVREpBS1d3ZjlCRHZxZlpzaUFzMm9aZ2ZwSzFfbUpRNmNuNi13NGMtdFZKZi1zLXBMVEZZdlMxMmZmbFYwRnIwSDNrN3hLX3VrWHE2Q2t4bXVlUDN5bjU0MlRZVzhJX2h1SVNPUDk4SHV6TFo1SkNfcnJkU1dldFFLX2VoM2NlX1U2d0JkaG9xcHAwd3hyNXB0X2VtTmVvMVJuSXRsdTQ5cU1NZkYtNUs1VktaNFpnX1pYRFhxS2h5b2hFaDA1Ul91OFJiWmQ4a2FOcjVF?oc=5",
-          "published_date": "Fri, 08 Nov 2024 08:00:00 GMT",
-          "time": "Fri, 08 Nov 2024 08:00:00 GMT",
+          "title": "Statement by NATO Foreign Ministers - North Atlantic Treaty Organization | NATO",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQVFh4ZkYwdENWVEhrOUpUSGtxVUZZV1RvLU05UUhGYVVwTV9PSWlXSFE4MFFmbjZyYUFlZVVxMjBCODFMeWk0VHRVeHVSV3o2RDg2MUUwdFZzb28yRGN0bzVKTklvUmlDVWUtMHpLRjNnZHdHTW56YXJER2VoSlFaVlVDX1FRa3ZIclJDdzl5NDdfZ0d1UXBhaF93MUx0MFdHczZRY1BndzFBX1ZSdWlCUGVPdFRNUFk1T2VzU2F2N3Y?oc=5",
+          "published_date": "Tue, 29 Nov 2022 08:00:00 GMT",
+          "time": "Tue, 29 Nov 2022 08:00:00 GMT",
           "summary_snippet": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
           "summary": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
           "source": "North Atlantic Treaty Organization | NATO",
@@ -955,10 +721,10 @@
           "credit_metadata": "Google News RSS fallback"
         },
         {
-          "title": "North Atlantic Council statement in solidarity with the Czech Republic - North Atlantic Treaty Organization | NATO",
-          "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQTEhuOHMxdGQ1WW9ZaVh2UjRVQ0lVNUhUUzEzOE4yRlNQUm9DdDZIVnluWGVCNFQ1ZDdDNk9sM0xhTVAteGRTaE96S3dVUDNXZnRUUHRycmQzeGpxNTl6R19JaEtwYk9yb0xwVXRUMmNmQWxaOGwtWnliT2Q1S0JhUUF3U0ttME1pNTZfVmFmTko3anZ3c3UzTnN4UmprVTBtODREdGk4bGVtRFN1WFZtdUJWc1JJUEprS3FQWmJDVGloeGs3WlVxTVFZQ0pUbDNHRjZyd0JkZnZHeXlfM0RVTE1PRmhPbWhGY2Yzd0FYYw?oc=5",
-          "published_date": "Thu, 22 Apr 2021 07:00:00 GMT",
-          "time": "Thu, 22 Apr 2021 07:00:00 GMT",
+          "title": "Statement by the North Atlantic Council on the New START Treaty - North Atlantic Treaty Organization | NATO",
+          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOT3hQZ1B0TEVRdWh4ZWk3amc0anpQNkc5RURXejRFM3pzN0kwRGNFOGNIYTE3SDJ5N1RwR3VFQTEtOGNpX2dEcWVDTkgtdTZVbTR4TkdkSTIyb0pVc3g1SVVPOWhfc3BGaXJkcy1OdXFfYW5WRGhad0x3VkdtSkxHX3dHMWhtMVBBRzRoUnZKZTlvejNRbWdQZjBKeUtpQzVGRHNqNm9RM2h4LVQzekRzZWRQMWYtNS1EOEszOWl5TlB2X0NJZ2JoOUJ4cUxuNkpEZTRrdnUwYWdSSV94Qy1kSXpvVndxUQ?oc=5",
+          "published_date": "Fri, 03 Feb 2023 08:00:00 GMT",
+          "time": "Fri, 03 Feb 2023 08:00:00 GMT",
           "summary_snippet": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
           "summary": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
           "source": "North Atlantic Treaty Organization | NATO",
@@ -970,78 +736,9 @@
       ]
     },
     {
-      "id": "65d9b6fe5acd7523",
-      "title": "Green forest fire notification in Nigeria",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 2,
-      "sourceCount": 1,
-      "sources": [
-        "gdacs.org"
-      ],
-      "anchors": [
-        "niger",
-        "nigeria"
-      ],
-      "firstSeen": "2026-11-24T16:08:26Z",
-      "lastSeen": "2026-11-25T00:03:11Z",
-      "urls": [
-        "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1034057",
-        "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1034052"
-      ],
-      "reports": [
-        {
-          "id": "40c6a664fd25",
-          "sourceLabel": "GDACS Global Disaster Alerts",
-          "sourceName": "GDACS Global Disaster Alerts",
-          "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in Nigeria",
-          "summary": "On 19/11/2026, a forest fire started in Nigeria, until 24/11/2026.",
-          "summary_snippet": "On 19/11/2026, a forest fire started in Nigeria, until 24/11/2026.",
-          "source": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1034057",
-          "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1034057",
-          "time": "2026-11-25T00:03:11Z",
-          "published_date": "2026-11-25T00:03:11Z",
-          "publishedDate": "2026-11-25T00:03:11Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
-            "feedFormat": "rss"
-          }
-        },
-        {
-          "id": "08bd46b3aae5",
-          "sourceLabel": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1034052",
-          "sourceName": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1034052",
-          "sourceType": "climate-hazard",
-          "title": "Green forest fire notification in Nigeria, Cameroon",
-          "summary": "On 16/11/2026, a forest fire started in Nigeria, Cameroon, until 24/11/2026.",
-          "summary_snippet": "On 16/11/2026, a forest fire started in Nigeria, Cameroon, until 24/11/2026.",
-          "source": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1034052",
-          "url": "http://www.gdacs.org/report.aspx?eventtype=WF&eventid=1034052",
-          "time": "2026-11-24T16:08:26Z",
-          "published_date": "2026-11-24T16:08:26Z",
-          "publishedDate": "2026-11-24T16:08:26Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "gdacs_global_disaster_alerts",
-            "sourceUrl": "https://www.gdacs.org/xml/rss.xml",
-            "feedFormat": "rss"
-          }
-        }
-      ]
-    },
-    {
-      "id": "ea8923c11511689e",
-      "title": "Houthis Threaten Jeddah and Saudi Red Sea Ports - SuaraGarut.ID",
-      "category": "general",
+      "id": "bd7d27b8ebfb779a",
+      "title": "North Atlantic Council statement on the Allied response to Russia's withdrawal from the Treaty on Conventional Armed Forces in Europe - North Atlantic Treaty Organization | NATO",
+      "category": "diplomatic",
       "confidence": "low",
       "reportCount": 2,
       "sourceCount": 1,
@@ -1049,68 +746,48 @@
         "news.google.com"
       ],
       "anchors": [
-        "red sea",
-        "yemen"
+        "nato",
+        "russia"
       ],
-      "firstSeen": "2026-11-24T23:07:28Z",
-      "lastSeen": "2026-11-24T23:46:00Z",
+      "firstSeen": "Mon, 05 Aug 2024 07:00:00 GMT",
+      "lastSeen": "Tue, 07 Nov 2023 08:00:00 GMT",
       "urls": [
-        "https://news.google.com/rss/articles/CBMibkFVX3lxTE13Uk5vOWsyNmdKQzJhcHowMUFpc1hhV2JveFRoVHF1aHZPMC11ZVR1dmsxelhMWExqUzNVUVBnMlFXZHpUYXNkT0FORU5iYzBHTVNOQ1VVa3FqdDF6dmkyQ3Z3YmlDcVNiMkg5TFF3?oc=5",
-        "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNdnlNRDBfYzRCczhFMUthTnp5a3FTUDBYZ1AtaGk3bzlURGh2Q3F6UDhMNnpEZFZCaVNtX2hndE1oU002T2JPR0QzRlpWd0JjaHZieDNGUENFcGZzQVlpZzN6eXFqREFndlBJQzl4R3dQN3RzUC1yWUcxc3dxU2hIRXkzNmRFcm0wcWREeUpNcktjaWpjQjQ5clQyeEFxY3FEaFZwV1BBQ0VFV09SYWFxYnNtZV9tY3FXNXk4RFBoX29WWDJFdVRVYkNRU3MwaFA2Ti1hUUxSWHNWYWPSAdYBQVVfeXFMTjRhUVd5S2otUGUzc3BTVzNOR21LSFpBVk5wTDdBcWZJeWxGZ2NhTEY5MGQwcnd5XzFzWUpsbHZfNlpPa3pLdGdwbGRMNWVoTy1EQVpDYVkzWmF2OXNiVkYtLUNjbG5tLVZNVVBiWDVIX1FsbW8yU19yRlRHMjVVX0xGRzYwcVZaczJ1d3hiVGZ4eklHbzhmMm8tY3hfTkFjMVVna09abTYzRjVIb2VaRUUzVko5WTJwWFVnS0F0a2RyZVJnZW5mQmpTQ2R2T25HY2huVzdOZw?oc=5"
+        "https://news.google.com/rss/articles/CBMiwgJBVV95cUxPaUxsbGpMVnhjaUR2cWZyd0M2SFppWkZObnoyOG1YRmJ4Y3ZmQzlDQmw1dEt5clprdGgzN0lfYVg2X2J1NjZud05oY3NCMzc5OFdtaC12N2M3WjFHU2RQMldxNnh4UGk2UUE3UXZ3dk1yNVJXWEJENnJpSEhTeGRXc09oVHB4Ti1FUzRpZ01SME5KdkEyRDhtUnl0VHNydmZETENVTnpzVVV6U2swQ19HZTFtZl9DVmZqQmVYRGkyNjdOV1g5RFBnamREalhWOUhlM0NqaWl5dVVhbEI2QjZJb1F2aC1pOE5oaHpyT21yYUN4enprWS11b2hUYTh3MXo0X3dlZ3Nhc1VtajM2TlNaR2FJLXZPUDBQODBCT3NFZFlrWGFfTEhnT3JqanZMZHZvWVZEMkpoVjRJWTc2QUVtMHNn?oc=5",
+        "https://news.google.com/rss/articles/CBMijgFBVV95cUxPNzhEaDRGelRhMTEwQ0RteXNMalVBanAtMjRJQ29vVXRobWpKSW1pTlNyNE1sMXAtUC1MZlZuR0IxNmNCUUpocFV4Y2F2WjZvcmlHTUZuazVBSFlyc3dQWlpzdklmc0RqakxBMG44eDVWMzRtaXlLWC1rdjdZbU9vOGo1d2EzOHJQemdWbUVR?oc=5"
       ],
       "reports": [
         {
-          "id": "73fb1cd94a49",
-          "sourceLabel": "Google News — Yemen / Red Sea",
-          "sourceName": "Google News — Yemen / Red Sea",
-          "sourceType": "middle-east-conflict",
-          "title": "Houthis Threaten Jeddah and Saudi Red Sea Ports - SuaraGarut.ID",
-          "summary": "Houthis Threaten Jeddah and Saudi Red Sea Ports SuaraGarut.ID",
-          "summary_snippet": "Houthis Threaten Jeddah and Saudi Red Sea Ports SuaraGarut.ID",
-          "source": "https://news.google.com/rss/articles/CBMibkFVX3lxTE13Uk5vOWsyNmdKQzJhcHowMUFpc1hhV2JveFRoVHF1aHZPMC11ZVR1dmsxelhMWExqUzNVUVBnMlFXZHpUYXNkT0FORU5iYzBHTVNOQ1VVa3FqdDF6dmkyQ3Z3YmlDcVNiMkg5TFF3?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE13Uk5vOWsyNmdKQzJhcHowMUFpc1hhV2JveFRoVHF1aHZPMC11ZVR1dmsxelhMWExqUzNVUVBnMlFXZHpUYXNkT0FORU5iYzBHTVNOQ1VVa3FqdDF6dmkyQ3Z3YmlDcVNiMkg5TFF3?oc=5",
-          "time": "2026-11-24T23:46:00Z",
-          "published_date": "2026-11-24T23:46:00Z",
-          "publishedDate": "2026-11-24T23:46:00Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_yemen_red_sea",
-            "sourceUrl": "https://news.google.com/rss/search?q=Yemen+Houthis+Red+Sea+shipping+missile+drone+conflict+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
+          "title": "North Atlantic Council statement on the Allied response to Russia's withdrawal from the Treaty on Conventional Armed Forces in Europe - North Atlantic Treaty Organization | NATO",
+          "url": "https://news.google.com/rss/articles/CBMiwgJBVV95cUxPaUxsbGpMVnhjaUR2cWZyd0M2SFppWkZObnoyOG1YRmJ4Y3ZmQzlDQmw1dEt5clprdGgzN0lfYVg2X2J1NjZud05oY3NCMzc5OFdtaC12N2M3WjFHU2RQMldxNnh4UGk2UUE3UXZ3dk1yNVJXWEJENnJpSEhTeGRXc09oVHB4Ti1FUzRpZ01SME5KdkEyRDhtUnl0VHNydmZETENVTnpzVVV6U2swQ19HZTFtZl9DVmZqQmVYRGkyNjdOV1g5RFBnamREalhWOUhlM0NqaWl5dVVhbEI2QjZJb1F2aC1pOE5oaHpyT21yYUN4enprWS11b2hUYTh3MXo0X3dlZ3Nhc1VtajM2TlNaR2FJLXZPUDBQODBCT3NFZFlrWGFfTEhnT3JqanZMZHZvWVZEMkpoVjRJWTc2QUVtMHNn?oc=5",
+          "published_date": "Tue, 07 Nov 2023 08:00:00 GMT",
+          "time": "Tue, 07 Nov 2023 08:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
+          "summary": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
+          "source": "North Atlantic Treaty Organization | NATO",
+          "sourceLabel": "North Atlantic Treaty Organization | NATO",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NATO",
+          "credit_metadata": "Google News RSS fallback"
         },
         {
-          "id": "c4601f0c192d",
-          "sourceLabel": "Google News — Yemen / Red Sea",
-          "sourceName": "Google News — Yemen / Red Sea",
-          "sourceType": "middle-east-conflict",
-          "title": "Yemen's Houthis threaten to target Jeddah and other Saudi Red Sea ports - GMA Network",
-          "summary": "Yemen's Houthis threaten to target Jeddah and other Saudi Red Sea ports GMA Network",
-          "summary_snippet": "Yemen's Houthis threaten to target Jeddah and other Saudi Red Sea ports GMA Network",
-          "source": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNdnlNRDBfYzRCczhFMUthTnp5a3FTUDBYZ1AtaGk3bzlURGh2Q3F6UDhMNnpEZFZCaVNtX2hndE1oU002T2JPR0QzRlpWd0JjaHZieDNGUENFcGZzQVlpZzN6eXFqREFndlBJQzl4R3dQN3RzUC1yWUcxc3dxU2hIRXkzNmRFcm0wcWREeUpNcktjaWpjQjQ5clQyeEFxY3FEaFZwV1BBQ0VFV09SYWFxYnNtZV9tY3FXNXk4RFBoX29WWDJFdVRVYkNRU3MwaFA2Ti1hUUxSWHNWYWPSAdYBQVVfeXFMTjRhUVd5S2otUGUzc3BTVzNOR21LSFpBVk5wTDdBcWZJeWxGZ2NhTEY5MGQwcnd5XzFzWUpsbHZfNlpPa3pLdGdwbGRMNWVoTy1EQVpDYVkzWmF2OXNiVkYtLUNjbG5tLVZNVVBiWDVIX1FsbW8yU19yRlRHMjVVX0xGRzYwcVZaczJ1d3hiVGZ4eklHbzhmMm8tY3hfTkFjMVVna09abTYzRjVIb2VaRUUzVko5WTJwWFVnS0F0a2RyZVJnZW5mQmpTQ2R2T25HY2huVzdOZw?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNdnlNRDBfYzRCczhFMUthTnp5a3FTUDBYZ1AtaGk3bzlURGh2Q3F6UDhMNnpEZFZCaVNtX2hndE1oU002T2JPR0QzRlpWd0JjaHZieDNGUENFcGZzQVlpZzN6eXFqREFndlBJQzl4R3dQN3RzUC1yWUcxc3dxU2hIRXkzNmRFcm0wcWREeUpNcktjaWpjQjQ5clQyeEFxY3FEaFZwV1BBQ0VFV09SYWFxYnNtZV9tY3FXNXk4RFBoX29WWDJFdVRVYkNRU3MwaFA2Ti1hUUxSWHNWYWPSAdYBQVVfeXFMTjRhUVd5S2otUGUzc3BTVzNOR21LSFpBVk5wTDdBcWZJeWxGZ2NhTEY5MGQwcnd5XzFzWUpsbHZfNlpPa3pLdGdwbGRMNWVoTy1EQVpDYVkzWmF2OXNiVkYtLUNjbG5tLVZNVVBiWDVIX1FsbW8yU19yRlRHMjVVX0xGRzYwcVZaczJ1d3hiVGZ4eklHbzhmMm8tY3hfTkFjMVVna09abTYzRjVIb2VaRUUzVko5WTJwWFVnS0F0a2RyZVJnZW5mQmpTQ2R2T25HY2huVzdOZw?oc=5",
-          "time": "2026-11-24T23:07:28Z",
-          "published_date": "2026-11-24T23:07:28Z",
-          "publishedDate": "2026-11-24T23:07:28Z",
-          "tag": "World",
-          "confidence": "DEVELOPING",
-          "breaking": false,
-          "liveDatabase": true,
-          "credit": {
-            "sourceId": "google_news_yemen_red_sea",
-            "sourceUrl": "https://news.google.com/rss/search?q=Yemen+Houthis+Red+Sea+shipping+missile+drone+conflict+when%3A1d&hl=en-US&gl=US&ceid=US:en",
-            "feedFormat": "rss"
-          }
+          "title": "Relations with Russia - North Atlantic Treaty Organization | NATO",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPNzhEaDRGelRhMTEwQ0RteXNMalVBanAtMjRJQ29vVXRobWpKSW1pTlNyNE1sMXAtUC1MZlZuR0IxNmNCUUpocFV4Y2F2WjZvcmlHTUZuazVBSFlyc3dQWlpzdklmc0RqakxBMG44eDVWMzRtaXlLWC1rdjdZbU9vOGo1d2EzOHJQemdWbUVR?oc=5",
+          "published_date": "Mon, 05 Aug 2024 07:00:00 GMT",
+          "time": "Mon, 05 Aug 2024 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
+          "summary": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
+          "source": "North Atlantic Treaty Organization | NATO",
+          "sourceLabel": "North Atlantic Treaty Organization | NATO",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NATO",
+          "credit_metadata": "Google News RSS fallback"
         }
       ]
     },
     {
-      "id": "e752b84b5508e617",
-      "title": "Trump list of US-designated ‘foreign terrorist organizations’ in Latin America grows to 22 - BorderReport",
-      "category": "general",
+      "id": "d4032f4cad0427a7",
+      "title": "Relations with Ukraine - North Atlantic Treaty Organization | NATO",
+      "category": "diplomatic",
       "confidence": "low",
       "reportCount": 2,
       "sourceCount": 1,
@@ -1118,58 +795,108 @@
         "news.google.com"
       ],
       "anchors": [
-        "america"
+        "nato",
+        "uk",
+        "ukraine"
       ],
-      "firstSeen": "2026-11-24T16:26:42Z",
-      "lastSeen": "2026-11-24T22:26:42Z",
+      "firstSeen": "Thu, 08 Oct 2026 07:00:00 GMT",
+      "lastSeen": "Thu, 16 Dec 2021 08:00:00 GMT",
       "urls": [
-        "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNNkk4VW5GdjZxWmJVTzRKalBZZWdJWUpuYXZPU1JrYUtCNXFOWUM5ZWpkQWZ2OGZiRU10SEFzRzk0a3ZnNmVyYV82OWVNeF9lRGFIUFdpcEpDX2JCVkRMVkhoRWkxVlVxWTVyUF9zSWlvY0lGc0VvVkFOLUNzUk5KbTV0WU9PUTJpSVE5VTZ1YXRNZUtnaGxuMkpoaXQ1XzlPbkh0WFVWby16NGpRbVhQZ1JIYWI0RGVPR0dBdXJWZXN2S0VQSGFJcElVVHBaRlBxX1N0LUxPWkZCMkdwbm9HbUpwTjnSAeoBQVVfeXFMTno0RVpXOE1ReGsyUWcxWTFZaHFQb3daVjA1REtSdXJoanZrZVFXeXhxTXVCTm9VOHBTaEhHOUxuSGdDWE90OGJmc0hFNjU5NnRGNDVvX1FyVVZoZ21RM0RxSTJsNl9MeHpaUF9oQzhpRHJUYmxCVkd4SnZ1dFlqTWNHTThaSHA4WDltOHRYMy1Vck14RTBJQ1ZZWFBxem5vNzBGNlNUUEtvV2VFS2tvZGVIVmp3OWVnLXBQRXpMcWVCZ3VsWklEUlhodGdHTnJYV0JQRm9XZXBKaHNKVVo2a25XaUszVEhqMUJ3?oc=5",
-        "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOejRFWlc4TVF4azJRZzFZMVlocVBvd1pWMDVES1J1cmhqdmtlUVd5eHFNdUJOb1U4cFNoSEc5TG5IZ0NYT3Q4YmZzSEU2NTk2dEY0NW9fUXJVVmhnbVEzRHFJMmw2X0x4elpQX2hDOGlEclRibEJWR3hKdnV0WWpNY0dNOFpIcDhYOW04dFgzLVVyTXhFMElDVllYUHF6bm83MEY2U1RQS29XZUVLa29kZUhWanc5ZWctcFBFekxxZUJndWxaSURSWGh0Z0dOclhXQlBGb1dlcEpoc0pVWjZrbldpSzNUSGoxQnfSAeoBQVVfeXFMTno0RVpXOE1ReGsyUWcxWTFZaHFQb3daVjA1REtSdXJoanZrZVFXeXhxTXVCTm9VOHBTaEhHOUxuSGdDWE90OGJmc0hFNjU5NnRGNDVvX1FyVVZoZ21RM0RxSTJsNl9MeHpaUF9oQzhpRHJUYmxCVkd4SnZ1dFlqTWNHTThaSHA4WDltOHRYMy1Vck14RTBJQ1ZZWFBxem5vNzBGNlNUUEtvV2VFS2tvZGVIVmp3OWVnLXBQRXpMcWVCZ3VsWklEUlhodGdHTnJYV0JQRm9XZXBKaHNKVVo2a25XaUszVEhqMUJ3?oc=5"
+        "https://news.google.com/rss/articles/CBMijwFBVV95cUxOQlhJTWVrR21ySE5Fc1VGNXo5aFRwY09CcDlyRGhocjFJSHN2LU16VE5PNXVBTGNjdl9MV1Z2Um1BMk1XSU8tTHp6SUhZenlIT3p3bnFfTWpOSGstV3R4N2tWUGpVaTB5QnctdDl1Wi1zMTAyQjhhcVdyT2U1dy1FVEdZalFncjRmVi05c3I4OA?oc=5",
+        "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPRjExd3RUdzZ4eVpCQnFIYThqNG1Jd29GQzRieU5xZzZBVVo1Z05sNXZIMXlFWEk4RkZ0WU1xb2I4ek9zaGVOWGpIdjhTcnJLczJ3aUI1ZlBwRHNMY2QyRmNpdXZFR3NPMWl2NVVnT3lGUkZ4ZlNSUTJDNmRZLWNUOHNxRDhwd0xzellWczJLLVA5UmE3R1B3ZGxfUnd0V0k2b3NfX2czZHFzUXN4OGJ6ajhtQzlQQXlibl96VGRmcFptdXF4SjRqd3ZWeDJPTW00TWpjbzZLWEI4dVRxeXZkSmZ6SEdoVjJISnBJQ0VERHdpeFhKc1NBalRB?oc=5"
       ],
       "reports": [
         {
-          "id": "81e2bbffee0f",
-          "sourceLabel": "Google News — Los Choneros",
-          "sourceName": "Google News — Los Choneros",
-          "sourceType": "cartel",
-          "title": "Trump list of US-designated ‘foreign terrorist organizations’ in Latin America grows to 22 - BorderReport",
-          "summary": "Trump list of US-designated ‘foreign terrorist organizations’ in Latin America grows to 22 BorderReport",
-          "summary_snippet": "Trump list of US-designated ‘foreign terrorist organizations’ in Latin America grows to 22 BorderReport",
-          "source": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNNkk4VW5GdjZxWmJVTzRKalBZZWdJWUpuYXZPU1JrYUtCNXFOWUM5ZWpkQWZ2OGZiRU10SEFzRzk0a3ZnNmVyYV82OWVNeF9lRGFIUFdpcEpDX2JCVkRMVkhoRWkxVlVxWTVyUF9zSWlvY0lGc0VvVkFOLUNzUk5KbTV0WU9PUTJpSVE5VTZ1YXRNZUtnaGxuMkpoaXQ1XzlPbkh0WFVWby16NGpRbVhQZ1JIYWI0RGVPR0dBdXJWZXN2S0VQSGFJcElVVHBaRlBxX1N0LUxPWkZCMkdwbm9HbUpwTjnSAeoBQVVfeXFMTno0RVpXOE1ReGsyUWcxWTFZaHFQb3daVjA1REtSdXJoanZrZVFXeXhxTXVCTm9VOHBTaEhHOUxuSGdDWE90OGJmc0hFNjU5NnRGNDVvX1FyVVZoZ21RM0RxSTJsNl9MeHpaUF9oQzhpRHJUYmxCVkd4SnZ1dFlqTWNHTThaSHA4WDltOHRYMy1Vck14RTBJQ1ZZWFBxem5vNzBGNlNUUEtvV2VFS2tvZGVIVmp3OWVnLXBQRXpMcWVCZ3VsWklEUlhodGdHTnJYV0JQRm9XZXBKaHNKVVo2a25XaUszVEhqMUJ3?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNNkk4VW5GdjZxWmJVTzRKalBZZWdJWUpuYXZPU1JrYUtCNXFOWUM5ZWpkQWZ2OGZiRU10SEFzRzk0a3ZnNmVyYV82OWVNeF9lRGFIUFdpcEpDX2JCVkRMVkhoRWkxVlVxWTVyUF9zSWlvY0lGc0VvVkFOLUNzUk5KbTV0WU9PUTJpSVE5VTZ1YXRNZUtnaGxuMkpoaXQ1XzlPbkh0WFVWby16NGpRbVhQZ1JIYWI0RGVPR0dBdXJWZXN2S0VQSGFJcElVVHBaRlBxX1N0LUxPWkZCMkdwbm9HbUpwTjnSAeoBQVVfeXFMTno0RVpXOE1ReGsyUWcxWTFZaHFQb3daVjA1REtSdXJoanZrZVFXeXhxTXVCTm9VOHBTaEhHOUxuSGdDWE90OGJmc0hFNjU5NnRGNDVvX1FyVVZoZ21RM0RxSTJsNl9MeHpaUF9oQzhpRHJUYmxCVkd4SnZ1dFlqTWNHTThaSHA4WDltOHRYMy1Vck14RTBJQ1ZZWFBxem5vNzBGNlNUUEtvV2VFS2tvZGVIVmp3OWVnLXBQRXpMcWVCZ3VsWklEUlhodGdHTnJYV0JQRm9XZXBKaHNKVVo2a25XaUszVEhqMUJ3?oc=5",
-          "time": "2026-11-24T22:26:42Z",
-          "published_date": "2026-11-24T22:26:42Z",
-          "publishedDate": "2026-11-24T22:26:42Z",
+          "title": "Relations with Ukraine - North Atlantic Treaty Organization | NATO",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOQlhJTWVrR21ySE5Fc1VGNXo5aFRwY09CcDlyRGhocjFJSHN2LU16VE5PNXVBTGNjdl9MV1Z2Um1BMk1XSU8tTHp6SUhZenlIT3p3bnFfTWpOSGstV3R4N2tWUGpVaTB5QnctdDl1Wi1zMTAyQjhhcVdyT2U1dy1FVEdZalFncjRmVi05c3I4OA?oc=5",
+          "published_date": "Thu, 08 Oct 2026 07:00:00 GMT",
+          "time": "Thu, 08 Oct 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
+          "summary": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
+          "source": "North Atlantic Treaty Organization | NATO",
+          "sourceLabel": "North Atlantic Treaty Organization | NATO",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NATO",
+          "credit_metadata": "Google News RSS fallback"
+        },
+        {
+          "title": "Statement by the North Atlantic Council on the situation in and around Ukraine - North Atlantic Treaty Organization | NATO",
+          "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPRjExd3RUdzZ4eVpCQnFIYThqNG1Jd29GQzRieU5xZzZBVVo1Z05sNXZIMXlFWEk4RkZ0WU1xb2I4ek9zaGVOWGpIdjhTcnJLczJ3aUI1ZlBwRHNMY2QyRmNpdXZFR3NPMWl2NVVnT3lGUkZ4ZlNSUTJDNmRZLWNUOHNxRDhwd0xzellWczJLLVA5UmE3R1B3ZGxfUnd0V0k2b3NfX2czZHFzUXN4OGJ6ajhtQzlQQXlibl96VGRmcFptdXF4SjRqd3ZWeDJPTW00TWpjbzZLWEI4dVRxeXZkSmZ6SEdoVjJISnBJQ0VERHdpeFhKc1NBalRB?oc=5",
+          "published_date": "Thu, 16 Dec 2021 08:00:00 GMT",
+          "time": "Thu, 16 Dec 2021 08:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
+          "summary": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
+          "source": "North Atlantic Treaty Organization | NATO",
+          "sourceLabel": "North Atlantic Treaty Organization | NATO",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NATO",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "b24abd063922c36c",
+      "title": "Galatasaray defy Israel’s complaint to UEFA over pro-Palestine banners",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 2,
+      "sourceCount": 1,
+      "sources": [
+        "aljazeera.com"
+      ],
+      "anchors": [
+        "israel"
+      ],
+      "firstSeen": "2026-11-25T04:12:11Z",
+      "lastSeen": "2026-11-25T08:53:30Z",
+      "urls": [
+        "https://www.aljazeera.com/sports/2026/11/25/galatasaray-defy-israels-complaint-to-uefa-over-pro-palestine-banners?traffic_source=rss",
+        "https://www.aljazeera.com/video/newsfeed/2026/11/25/galatasaray-says-israel-complained-to-uefa-over-palestine-banners?traffic_source=rss"
+      ],
+      "reports": [
+        {
+          "id": "fa5bfa10240b",
+          "sourceLabel": "Al Jazeera",
+          "sourceName": "Al Jazeera",
+          "sourceType": "international",
+          "title": "Galatasaray defy Israel’s complaint to UEFA over pro-Palestine banners",
+          "summary": "The football club’s president said UEFA had made them aware of a complaint by Israel regarding pro-Palestinian banners.",
+          "summary_snippet": "The football club’s president said UEFA had made them aware of a complaint by Israel regarding pro-Palestinian banners.",
+          "source": "https://www.aljazeera.com/sports/2026/11/25/galatasaray-defy-israels-complaint-to-uefa-over-pro-palestine-banners?traffic_source=rss",
+          "url": "https://www.aljazeera.com/sports/2026/11/25/galatasaray-defy-israels-complaint-to-uefa-over-pro-palestine-banners?traffic_source=rss",
+          "time": "2026-11-25T08:53:30Z",
+          "published_date": "2026-11-25T08:53:30Z",
+          "publishedDate": "2026-11-25T08:53:30Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "google_news_los_choneros",
-            "sourceUrl": "https://news.google.com/rss/search?q=%22Los+Choneros%22+Ecuador+US+military+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "sourceId": "al_jazeera",
+            "sourceUrl": "https://www.aljazeera.com/xml/rss/all.xml",
             "feedFormat": "rss"
           }
         },
         {
-          "id": "9bcb71d8ba86",
-          "sourceLabel": "Google News — Mexico Cartel Conflict",
-          "sourceName": "Google News — Mexico Cartel Conflict",
-          "sourceType": "americas-conflict",
-          "title": "Trump list of US-designated ‘foreign terrorist organizations’ in Latin America grows to 22 - BorderReport",
-          "summary": "Trump list of US-designated ‘foreign terrorist organizations’ in Latin America grows to 22 BorderReport",
-          "summary_snippet": "Trump list of US-designated ‘foreign terrorist organizations’ in Latin America grows to 22 BorderReport",
-          "source": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOejRFWlc4TVF4azJRZzFZMVlocVBvd1pWMDVES1J1cmhqdmtlUVd5eHFNdUJOb1U4cFNoSEc5TG5IZ0NYT3Q4YmZzSEU2NTk2dEY0NW9fUXJVVmhnbVEzRHFJMmw2X0x4elpQX2hDOGlEclRibEJWR3hKdnV0WWpNY0dNOFpIcDhYOW04dFgzLVVyTXhFMElDVllYUHF6bm83MEY2U1RQS29XZUVLa29kZUhWanc5ZWctcFBFekxxZUJndWxaSURSWGh0Z0dOclhXQlBGb1dlcEpoc0pVWjZrbldpSzNUSGoxQnfSAeoBQVVfeXFMTno0RVpXOE1ReGsyUWcxWTFZaHFQb3daVjA1REtSdXJoanZrZVFXeXhxTXVCTm9VOHBTaEhHOUxuSGdDWE90OGJmc0hFNjU5NnRGNDVvX1FyVVZoZ21RM0RxSTJsNl9MeHpaUF9oQzhpRHJUYmxCVkd4SnZ1dFlqTWNHTThaSHA4WDltOHRYMy1Vck14RTBJQ1ZZWFBxem5vNzBGNlNUUEtvV2VFS2tvZGVIVmp3OWVnLXBQRXpMcWVCZ3VsWklEUlhodGdHTnJYV0JQRm9XZXBKaHNKVVo2a25XaUszVEhqMUJ3?oc=5",
-          "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOejRFWlc4TVF4azJRZzFZMVlocVBvd1pWMDVES1J1cmhqdmtlUVd5eHFNdUJOb1U4cFNoSEc5TG5IZ0NYT3Q4YmZzSEU2NTk2dEY0NW9fUXJVVmhnbVEzRHFJMmw2X0x4elpQX2hDOGlEclRibEJWR3hKdnV0WWpNY0dNOFpIcDhYOW04dFgzLVVyTXhFMElDVllYUHF6bm83MEY2U1RQS29XZUVLa29kZUhWanc5ZWctcFBFekxxZUJndWxaSURSWGh0Z0dOclhXQlBGb1dlcEpoc0pVWjZrbldpSzNUSGoxQnfSAeoBQVVfeXFMTno0RVpXOE1ReGsyUWcxWTFZaHFQb3daVjA1REtSdXJoanZrZVFXeXhxTXVCTm9VOHBTaEhHOUxuSGdDWE90OGJmc0hFNjU5NnRGNDVvX1FyVVZoZ21RM0RxSTJsNl9MeHpaUF9oQzhpRHJUYmxCVkd4SnZ1dFlqTWNHTThaSHA4WDltOHRYMy1Vck14RTBJQ1ZZWFBxem5vNzBGNlNUUEtvV2VFS2tvZGVIVmp3OWVnLXBQRXpMcWVCZ3VsWklEUlhodGdHTnJYV0JQRm9XZXBKaHNKVVo2a25XaUszVEhqMUJ3?oc=5",
-          "time": "2026-11-24T16:26:42Z",
-          "published_date": "2026-11-24T16:26:42Z",
-          "publishedDate": "2026-11-24T16:26:42Z",
+          "id": "cbe3d926c045",
+          "sourceLabel": "Al Jazeera",
+          "sourceName": "Al Jazeera",
+          "sourceType": "international",
+          "title": "Galatasaray says Israel complained to UEFA over Palestine banners",
+          "summary": "Galatasaray’s chairman says Israel’s Netanyahu government has reported the club to UEFA over pro-Palestine fan banners.",
+          "summary_snippet": "Galatasaray’s chairman says Israel’s Netanyahu government has reported the club to UEFA over pro-Palestine fan banners.",
+          "source": "https://www.aljazeera.com/video/newsfeed/2026/11/25/galatasaray-says-israel-complained-to-uefa-over-palestine-banners?traffic_source=rss",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/25/galatasaray-says-israel-complained-to-uefa-over-palestine-banners?traffic_source=rss",
+          "time": "2026-11-25T04:12:11Z",
+          "published_date": "2026-11-25T04:12:11Z",
+          "publishedDate": "2026-11-25T04:12:11Z",
           "tag": "World",
           "confidence": "DEVELOPING",
           "breaking": false,
           "liveDatabase": true,
           "credit": {
-            "sourceId": "google_news_mexico_cartel_conflict",
-            "sourceUrl": "https://news.google.com/rss/search?q=Mexico+cartel+Sinaloa+when%3A1d&hl=en-US&gl=US&ceid=US:en",
+            "sourceId": "al_jazeera",
+            "sourceUrl": "https://www.aljazeera.com/xml/rss/all.xml",
             "feedFormat": "rss"
           }
         }
@@ -1203,6 +930,38 @@
           "sourceLabel": "NASA (.gov)",
           "sourceType": "fallback-news",
           "fallbackFor": "X @NASA",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "d280bc33a695d8f5",
+      "title": "Cyprus: Guterres calls for renewed trust and a new meeting on the way forward - UN News",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Wed, 29 Jul 2026 07:00:00 GMT",
+      "lastSeen": "Wed, 29 Jul 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1makk0b1UxNDhHb2phWkd4NlhhNWhDVVptYU5FWFhQZFAxUGFTZmZRQm8wZ1FiNGgtQU9FS0tEdWI1UE1NTFZ3Y2xwU3Yya19HRW5PZnYtdw?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "Cyprus: Guterres calls for renewed trust and a new meeting on the way forward - UN News",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1makk0b1UxNDhHb2phWkd4NlhhNWhDVVptYU5FWFhQZFAxUGFTZmZRQm8wZ1FiNGgtQU9FS0tEdWI1UE1NTFZ3Y2xwU3Yya19HRW5PZnYtdw?oc=5",
+          "published_date": "Wed, 29 Jul 2026 07:00:00 GMT",
+          "time": "Wed, 29 Jul 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: UN News",
+          "summary": "Fallback discovery via Google News RSS; publisher: UN News",
+          "source": "UN News",
+          "sourceLabel": "UN News",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @UN",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -1304,6 +1063,136 @@
       ]
     },
     {
+      "id": "c35f704195dd9b86",
+      "title": "NASA chief dismantles Marjorie Taylor Greene's claims about Moon landing - The Jerusalem Post",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Wed, 25 Nov 2026 05:38:13 GMT",
+      "lastSeen": "Wed, 25 Nov 2026 05:38:13 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1Kb0ptallSWDFocWpHemp3VXkyWDVfZjI1bThxUFRrU19wcGhkRHdkNDhxVmFIY2ZwRHN3MjFRY1Q1UTEwVEVJLVduQmczUEJPUTV5MlVBMWNUQTNZdHlZ?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "NASA chief dismantles Marjorie Taylor Greene's claims about Moon landing - The Jerusalem Post",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1Kb0ptallSWDFocWpHemp3VXkyWDVfZjI1bThxUFRrU19wcGhkRHdkNDhxVmFIY2ZwRHN3MjFRY1Q1UTEwVEVJLVduQmczUEJPUTV5MlVBMWNUQTNZdHlZ?oc=5",
+          "published_date": "Wed, 25 Nov 2026 05:38:13 GMT",
+          "time": "Wed, 25 Nov 2026 05:38:13 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: The Jerusalem Post",
+          "summary": "Fallback discovery via Google News RSS; publisher: The Jerusalem Post",
+          "source": "The Jerusalem Post",
+          "sourceLabel": "The Jerusalem Post",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NASA",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "7c3b22c949f2d28a",
+      "title": "White House to 'Post': Trump's position on military aid to Israel unchanged - The Jerusalem Post",
+      "category": "conflict",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [
+        "israel"
+      ],
+      "firstSeen": "Wed, 25 Nov 2026 05:20:04 GMT",
+      "lastSeen": "Wed, 25 Nov 2026 05:20:04 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiX0FVX3lxTE8yM1Z6OGNwMzVrRFlOYlgxdnhlM0wwTkI4VkQ1ZTUwdGhoRllaNGZHMUVfSFZiN2o1TTBTcUxLQ1pGczRJN0xMNnVqaXNFTWVFMmZFMWM2Wm5BanBPMko4?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "White House to 'Post': Trump's position on military aid to Israel unchanged - The Jerusalem Post",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE8yM1Z6OGNwMzVrRFlOYlgxdnhlM0wwTkI4VkQ1ZTUwdGhoRllaNGZHMUVfSFZiN2o1TTBTcUxLQ1pGczRJN0xMNnVqaXNFTWVFMmZFMWM2Wm5BanBPMko4?oc=5",
+          "published_date": "Wed, 25 Nov 2026 05:20:04 GMT",
+          "time": "Wed, 25 Nov 2026 05:20:04 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: The Jerusalem Post",
+          "summary": "Fallback discovery via Google News RSS; publisher: The Jerusalem Post",
+          "source": "The Jerusalem Post",
+          "sourceLabel": "The Jerusalem Post",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @POTUS",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "044863e2b8e4ed89",
+      "title": "Nurses now eligible for NASA's next class of astronauts - Denver7",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Wed, 25 Nov 2026 04:40:22 GMT",
+      "lastSeen": "Wed, 25 Nov 2026 04:40:22 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMimgFBVV95cUxPNzhsQUI1QlZuY01qLVU4OHVuYWhLc0J2UmgzaTVyLUtHbDlGV1paYUxtWnZSdHoxT21TbUhOTjBzZm03MjJ6OVN4anVMUTFTTzNWWjB5NjRpRkxrRVNBSm00ZXVEZ2FCaDdnMVZEbFlRMktuUVFIMzBYY1NQVDZXOERaSEYwM3ZXb0xNbTgxa3NBZHpteUZ2Ymtn?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "Nurses now eligible for NASA's next class of astronauts - Denver7",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPNzhsQUI1QlZuY01qLVU4OHVuYWhLc0J2UmgzaTVyLUtHbDlGV1paYUxtWnZSdHoxT21TbUhOTjBzZm03MjJ6OVN4anVMUTFTTzNWWjB5NjRpRkxrRVNBSm00ZXVEZ2FCaDdnMVZEbFlRMktuUVFIMzBYY1NQVDZXOERaSEYwM3ZXb0xNbTgxa3NBZHpteUZ2Ymtn?oc=5",
+          "published_date": "Wed, 25 Nov 2026 04:40:22 GMT",
+          "time": "Wed, 25 Nov 2026 04:40:22 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Denver7",
+          "summary": "Fallback discovery via Google News RSS; publisher: Denver7",
+          "source": "Denver7",
+          "sourceLabel": "Denver7",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NASA",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "96832889984e8ce4",
+      "title": "NASA Lunar Nuclear Reactor Bids Due December 21: First Phase Tests Electric Heaters, Not Fission - Tech Times",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Wed, 25 Nov 2026 01:07:43 GMT",
+      "lastSeen": "Wed, 25 Nov 2026 01:07:43 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQeDBhWC04RFVNMjhCMVVfcFdmekhZWnJwN0ZSMTBBQ0VWZ05sY0hPYzJnUjdIVHRDYUNZYXI2ME1XYmFFamJBTHVtcXJXcWtuZnduTlp0enA3YmItVGMySEl3UmhLMnRaVGJBOWJRUFRhTndXTnRUVVc0YlkwNEhmaE5rMV9mQUdPV1Z6b2dTRVpKbmxxV0pOOW9NNHRJNi0za2hIa25UT2NlOE1TVkFfQkhfMUozOV9SR1NrUWZjTW85YnVyWWJ2bDNhdEVtbmJNOERndlBaZ0l5WHVDNXdNMGE5VQ?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "NASA Lunar Nuclear Reactor Bids Due December 21: First Phase Tests Electric Heaters, Not Fission - Tech Times",
+          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQeDBhWC04RFVNMjhCMVVfcFdmekhZWnJwN0ZSMTBBQ0VWZ05sY0hPYzJnUjdIVHRDYUNZYXI2ME1XYmFFamJBTHVtcXJXcWtuZnduTlp0enA3YmItVGMySEl3UmhLMnRaVGJBOWJRUFRhTndXTnRUVVc0YlkwNEhmaE5rMV9mQUdPV1Z6b2dTRVpKbmxxV0pOOW9NNHRJNi0za2hIa25UT2NlOE1TVkFfQkhfMUozOV9SR1NrUWZjTW85YnVyWWJ2bDNhdEVtbmJNOERndlBaZ0l5WHVDNXdNMGE5VQ?oc=5",
+          "published_date": "Wed, 25 Nov 2026 01:07:43 GMT",
+          "time": "Wed, 25 Nov 2026 01:07:43 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Tech Times",
+          "summary": "Fallback discovery via Google News RSS; publisher: Tech Times",
+          "source": "Tech Times",
+          "sourceLabel": "Tech Times",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NASA",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
       "id": "c3b5fe6e7afc8791",
       "title": "Four killed in latest US attack on alleged drug-smuggling boat in Caribbean - Al Jazeera",
       "category": "conflict",
@@ -1331,38 +1220,6 @@
           "sourceLabel": "Al Jazeera",
           "sourceType": "fallback-news",
           "fallbackFor": "GDELT — Western Hemisphere Counter-Cartel",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "90b7a156fb16fdc6",
-      "title": "UN 80th anniversary - Welcome to the United Nations",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Wed, 23 Apr 2025 06:37:05 GMT",
-      "lastSeen": "Wed, 23 Apr 2025 06:37:05 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiP0FVX3lxTE9BcWZ3SHZqdXFJQnVzN1FNbnJ5NFpTV0dSLUIyTGpxbVowVGtEam5rR1FxZGlsWGtIYmFYdy1Ucw?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "UN 80th anniversary - Welcome to the United Nations",
-          "url": "https://news.google.com/rss/articles/CBMiP0FVX3lxTE9BcWZ3SHZqdXFJQnVzN1FNbnJ5NFpTV0dSLUIyTGpxbVowVGtEam5rR1FxZGlsWGtIYmFYdy1Ucw?oc=5",
-          "published_date": "Wed, 23 Apr 2025 06:37:05 GMT",
-          "time": "Wed, 23 Apr 2025 06:37:05 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Welcome to the United Nations",
-          "summary": "Fallback discovery via Google News RSS; publisher: Welcome to the United Nations",
-          "source": "Welcome to the United Nations",
-          "sourceLabel": "Welcome to the United Nations",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @UN",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -1400,6 +1257,111 @@
       ]
     },
     {
+      "id": "74247654ca39faaa",
+      "title": "NATO ready to respond to potential Iranian strikes on US targets in Europe: official - TRT World",
+      "category": "diplomatic",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [
+        "iran",
+        "nato"
+      ],
+      "firstSeen": "Wed, 19 Aug 2026 13:47:07 GMT",
+      "lastSeen": "Wed, 19 Aug 2026 13:47:07 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBMaU96MkJiZnhscjdmVFZXY0Z0aHdMN0U2REZZLThZZm1COThfN0VzODNRNk5jbkJoMWVCOVJvUHJiSzFOMDBoSTViNXRFVXAwbmNtVElKQTM?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "NATO ready to respond to potential Iranian strikes on US targets in Europe: official - TRT World",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBMaU96MkJiZnhscjdmVFZXY0Z0aHdMN0U2REZZLThZZm1COThfN0VzODNRNk5jbkJoMWVCOVJvUHJiSzFOMDBoSTViNXRFVXAwbmNtVElKQTM?oc=5",
+          "published_date": "Wed, 19 Aug 2026 13:47:07 GMT",
+          "time": "Wed, 19 Aug 2026 13:47:07 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: TRT World",
+          "summary": "Fallback discovery via Google News RSS; publisher: TRT World",
+          "source": "TRT World",
+          "sourceLabel": "TRT World",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NATO",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "820916d3522d6bb1",
+      "title": "NATO says ‘prepared’ for any threat over possible Iranian strikes on US military targets in Europe - Anadolu Ajansı",
+      "category": "conflict",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [
+        "iran",
+        "nato"
+      ],
+      "firstSeen": "Wed, 19 Aug 2026 07:00:00 GMT",
+      "lastSeen": "Wed, 19 Aug 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOcjFUa3l4WVppeE12amkyRGFQTGp3bl9TQmJsSjNIalhVdkNoX0tuMWo2Q19JclpQSldHNXRmaDNPX3VNbXlKSkthM3JQYUNWVkNIRUJaTGdrY3VUYVU0VkRldTlJWGM3eDM4Ukw2ME1tWHRRR21vSWo2cVM0VzFqYWxZbVFHMi1pSkdXSXd1eXc5dGYyWkNPbTd6UzhWQnl0eFV2QXROX2ZCenA1UFNUVHA0NXJBcGtfc0dvekZ4ejNmS0J2eWtTQTNuMmx4RXl6?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "NATO says ‘prepared’ for any threat over possible Iranian strikes on US military targets in Europe - Anadolu Ajansı",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOcjFUa3l4WVppeE12amkyRGFQTGp3bl9TQmJsSjNIalhVdkNoX0tuMWo2Q19JclpQSldHNXRmaDNPX3VNbXlKSkthM3JQYUNWVkNIRUJaTGdrY3VUYVU0VkRldTlJWGM3eDM4Ukw2ME1tWHRRR21vSWo2cVM0VzFqYWxZbVFHMi1pSkdXSXd1eXc5dGYyWkNPbTd6UzhWQnl0eFV2QXROX2ZCenA1UFNUVHA0NXJBcGtfc0dvekZ4ejNmS0J2eWtTQTNuMmx4RXl6?oc=5",
+          "published_date": "Wed, 19 Aug 2026 07:00:00 GMT",
+          "time": "Wed, 19 Aug 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Anadolu Ajansı",
+          "summary": "Fallback discovery via Google News RSS; publisher: Anadolu Ajansı",
+          "source": "Anadolu Ajansı",
+          "sourceLabel": "Anadolu Ajansı",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NATO",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "d1da5bc710bec17f",
+      "title": "NATO ‘prepared’ to defend allies amid report of Iranian strike plans - Al Jazeera",
+      "category": "conflict",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [
+        "iran",
+        "nato"
+      ],
+      "firstSeen": "Wed, 19 Aug 2026 07:00:00 GMT",
+      "lastSeen": "Wed, 19 Aug 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOYkVKc09MNnM3LVBfaktoMjNQOEJTaThaR0tvTGxQZC1xZ2lpRGhTSklaaUNHMUdVZkNoZmlaUnZlS2dpaTFMWlhCUjNGZlRDQTZPaE1wUUJvREhHRHNRTUNmQVF3cFJYU2M3YjFtRFRURm9QZVZJQnd1QTh5QlE2Unp0N0d4NEI2c0pmeHloVktGdmJPempfbm5XSnhlcHVmRDJfWDBNZmNtbTjSAbABQVVfeXFMTWpjNzlyWFVLcUZiY2RXczdEUnQ4ZUlmTnh4dV9reElDVnRrSGxHMFRXd2VxWHQ1U1V5Y3dNZE52UGlwZ3B2Z3pVSGJJT2xCWENfYVY5UUxCc2Z2eG1NdHJTVC03VUtwY1ljcTFCcWpRN0ItQ1NjQkhLVkVhWjJhcm9wQlJhUFR5dzFGZzNBMHVhMWNacWVuMEtwSHJ3eGRKNzMyb3k2VjNpT25OX3l1RWY?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "NATO ‘prepared’ to defend allies amid report of Iranian strike plans - Al Jazeera",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOYkVKc09MNnM3LVBfaktoMjNQOEJTaThaR0tvTGxQZC1xZ2lpRGhTSklaaUNHMUdVZkNoZmlaUnZlS2dpaTFMWlhCUjNGZlRDQTZPaE1wUUJvREhHRHNRTUNmQVF3cFJYU2M3YjFtRFRURm9QZVZJQnd1QTh5QlE2Unp0N0d4NEI2c0pmeHloVktGdmJPempfbm5XSnhlcHVmRDJfWDBNZmNtbTjSAbABQVVfeXFMTWpjNzlyWFVLcUZiY2RXczdEUnQ4ZUlmTnh4dV9reElDVnRrSGxHMFRXd2VxWHQ1U1V5Y3dNZE52UGlwZ3B2Z3pVSGJJT2xCWENfYVY5UUxCc2Z2eG1NdHJTVC03VUtwY1ljcTFCcWpRN0ItQ1NjQkhLVkVhWjJhcm9wQlJhUFR5dzFGZzNBMHVhMWNacWVuMEtwSHJ3eGRKNzMyb3k2VjNpT25OX3l1RWY?oc=5",
+          "published_date": "Wed, 19 Aug 2026 07:00:00 GMT",
+          "time": "Wed, 19 Aug 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Al Jazeera",
+          "summary": "Fallback discovery via Google News RSS; publisher: Al Jazeera",
+          "source": "Al Jazeera",
+          "sourceLabel": "Al Jazeera",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NATO",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
       "id": "73717d7aa66104a2",
       "title": "NASA Scientists Find Clues to Ancient Ice Beyond Neptune - NASA Science (.gov)",
       "category": "general",
@@ -1421,6 +1383,38 @@
           "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQTndXdTRrelU0Ukd4d2ZkSHNqZ2l3aUpSVmtPazkwUzZjRHRKb0dWNmdFekxFNlFKRXJaWFVETjJHc3lGdmJ6NGtkemZRNDNmWk5LaG5za09xX0w1WGlBUEpfZV9JbEVZMjZheU1ibngzMGNpT2RnbXVJbWliVHJiemdmMFZpVHhJZmZCbUdmdmgxaVRINWhqcEsxcHhwT21tRTBIemY3WjQ1SHFIdHVQM0x3?oc=5",
           "published_date": "Wed, 18 Nov 2026 20:54:51 GMT",
           "time": "Wed, 18 Nov 2026 20:54:51 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NASA Science (.gov)",
+          "summary": "Fallback discovery via Google News RSS; publisher: NASA Science (.gov)",
+          "source": "NASA Science (.gov)",
+          "sourceLabel": "NASA Science (.gov)",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NASA",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "bb7f969471d7d0cd",
+      "title": "NASA Researchers Create 3D Maps of California to Assess Wildfire Risk - NASA Science (.gov)",
+      "category": "disaster",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Wed, 18 Nov 2026 19:20:11 GMT",
+      "lastSeen": "Wed, 18 Nov 2026 19:20:11 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMikgFBVV95cUxQOFhRcVZJSko5YkVqQWRlMUxRQnBsNmV6TkhQeC1va0xQRXFXLTUyRm1JUWxSYzJpUjZpSmkxVnhTZkhGOFVXbWRTcERCcFllMVpOM2NWWHFweFdlVUYwREJaLVlwYm1Kd2R5eDd4TUlGMUFJVVpEMkRIWDg5TnljMmpoQ0FZT0phcEZrSWY1SUZrUQ?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "NASA Researchers Create 3D Maps of California to Assess Wildfire Risk - NASA Science (.gov)",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQOFhRcVZJSko5YkVqQWRlMUxRQnBsNmV6TkhQeC1va0xQRXFXLTUyRm1JUWxSYzJpUjZpSmkxVnhTZkhGOFVXbWRTcERCcFllMVpOM2NWWHFweFdlVUYwREJaLVlwYm1Kd2R5eDd4TUlGMUFJVVpEMkRIWDg5TnljMmpoQ0FZT0phcEZrSWY1SUZrUQ?oc=5",
+          "published_date": "Wed, 18 Nov 2026 19:20:11 GMT",
+          "time": "Wed, 18 Nov 2026 19:20:11 GMT",
           "summary_snippet": "Fallback discovery via Google News RSS; publisher: NASA Science (.gov)",
           "summary": "Fallback discovery via Google News RSS; publisher: NASA Science (.gov)",
           "source": "NASA Science (.gov)",
@@ -1464,8 +1458,8 @@
       ]
     },
     {
-      "id": "5de4fcc819c75276",
-      "title": "Milestones in UN History 1941-1950 - Welcome to the United Nations",
+      "id": "464f47093d1d0efb",
+      "title": "High-level meeting of the General Assembly to commemorate the 25th anniversary of the adoption of the Durban Declaration and Programme of Action - ohchr",
       "category": "general",
       "confidence": "low",
       "reportCount": 1,
@@ -1474,21 +1468,21 @@
         "news.google.com"
       ],
       "anchors": [],
-      "firstSeen": "Wed, 17 Mar 2021 02:19:35 GMT",
-      "lastSeen": "Wed, 17 Mar 2021 02:19:35 GMT",
+      "firstSeen": "Wed, 16 Sep 2026 13:53:12 GMT",
+      "lastSeen": "Wed, 16 Sep 2026 13:53:12 GMT",
       "urls": [
-        "https://news.google.com/rss/articles/CBMiakFVX3lxTFAzRUQwRkprRWs3STI5MTlqTXppeFY2Q0dTc1BGU0VfdU9NNDEwbkJDaGhWQlhMOFhhbTFrTW1JTkR4eDBGVkhjWmQ2Zmo1eWh5SW1CZHN2a0hZWHFFTkUxeS1EQzhxSWhveVE?oc=5"
+        "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOSmFDaVFkU1JJYjY5S2RXMW1Ga0RZZW9NbmNiTEI1RXpadVVRUlUwOGowMTJsVnRPWlZ3Yk9TTGJtTUh3b0lJYWl2Tk1OT2JORElsaENpZjQ5VkRYbDBkSmNBLVlxMWY5aDh6eGQzcHJiSDBTS3ZBeHhQeTF5LWhzcG0xUFdlT3F1a1R4X1lTMkdKUlVOT2ZDMmVicUNWUm5xWHo4TWg2WmZ4THVRWVBPYmx2cklKU1RIWGZCZ1ZzWk1Sdw?oc=5"
       ],
       "reports": [
         {
-          "title": "Milestones in UN History 1941-1950 - Welcome to the United Nations",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAzRUQwRkprRWs3STI5MTlqTXppeFY2Q0dTc1BGU0VfdU9NNDEwbkJDaGhWQlhMOFhhbTFrTW1JTkR4eDBGVkhjWmQ2Zmo1eWh5SW1CZHN2a0hZWHFFTkUxeS1EQzhxSWhveVE?oc=5",
-          "published_date": "Wed, 17 Mar 2021 02:19:35 GMT",
-          "time": "Wed, 17 Mar 2021 02:19:35 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Welcome to the United Nations",
-          "summary": "Fallback discovery via Google News RSS; publisher: Welcome to the United Nations",
-          "source": "Welcome to the United Nations",
-          "sourceLabel": "Welcome to the United Nations",
+          "title": "High-level meeting of the General Assembly to commemorate the 25th anniversary of the adoption of the Durban Declaration and Programme of Action - ohchr",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOSmFDaVFkU1JJYjY5S2RXMW1Ga0RZZW9NbmNiTEI1RXpadVVRUlUwOGowMTJsVnRPWlZ3Yk9TTGJtTUh3b0lJYWl2Tk1OT2JORElsaENpZjQ5VkRYbDBkSmNBLVlxMWY5aDh6eGQzcHJiSDBTS3ZBeHhQeTF5LWhzcG0xUFdlT3F1a1R4X1lTMkdKUlVOT2ZDMmVicUNWUm5xWHo4TWg2WmZ4THVRWVBPYmx2cklKU1RIWGZCZ1ZzWk1Sdw?oc=5",
+          "published_date": "Wed, 16 Sep 2026 13:53:12 GMT",
+          "time": "Wed, 16 Sep 2026 13:53:12 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: ohchr",
+          "summary": "Fallback discovery via Google News RSS; publisher: ohchr",
+          "source": "ohchr",
+          "sourceLabel": "ohchr",
           "sourceType": "fallback-news",
           "fallbackFor": "X @UN",
           "credit_metadata": "Google News RSS fallback"
@@ -1692,40 +1686,6 @@
       ]
     },
     {
-      "id": "fc5d7083c2586de5",
-      "title": "Spotlight on Gaza - Welcome to the United Nations",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [
-        "gaza"
-      ],
-      "firstSeen": "Wed, 11 Mar 2026 19:34:36 GMT",
-      "lastSeen": "Wed, 11 Mar 2026 19:34:36 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1JODM2WHFNV3U5d29QeFRsWmVfWElFTEhKU0JwOEMzOVdzRlV5eHotMEhoNnE5TmdXMTBDSVFsdUFRZDFINUJPenNOVmdES1FE?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Spotlight on Gaza - Welcome to the United Nations",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1JODM2WHFNV3U5d29QeFRsWmVfWElFTEhKU0JwOEMzOVdzRlV5eHotMEhoNnE5TmdXMTBDSVFsdUFRZDFINUJPenNOVmdES1FE?oc=5",
-          "published_date": "Wed, 11 Mar 2026 19:34:36 GMT",
-          "time": "Wed, 11 Mar 2026 19:34:36 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Welcome to the United Nations",
-          "summary": "Fallback discovery via Google News RSS; publisher: Welcome to the United Nations",
-          "source": "Welcome to the United Nations",
-          "sourceLabel": "Welcome to the United Nations",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @UN",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
       "id": "8e92c44bca8a88db",
       "title": "Trump sees 22 medical specialists, appearing to set new bar for presidents - The Washington Post",
       "category": "general",
@@ -1753,38 +1713,6 @@
           "sourceLabel": "The Washington Post",
           "sourceType": "fallback-news",
           "fallbackFor": "X @WhiteHouse",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "f5b963c33a05c385",
-      "title": "Human Rights Day 10 December - Welcome to the United Nations",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Wed, 10 Dec 2025 08:00:00 GMT",
-      "lastSeen": "Wed, 10 Dec 2025 08:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5HZHdlbTU4S0laUWRlRTM5S09qRmdRU2RNc2Z0S0p5MHRrMVNBdFVSWXBjTlZQVDRBZUUwdGFRWVlzeFpnbk4yUmE1Q0p5aGxWRjBvUWxVbUhGUmhSSHJZ?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Human Rights Day 10 December - Welcome to the United Nations",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5HZHdlbTU4S0laUWRlRTM5S09qRmdRU2RNc2Z0S0p5MHRrMVNBdFVSWXBjTlZQVDRBZUUwdGFRWVlzeFpnbk4yUmE1Q0p5aGxWRjBvUWxVbUhGUmhSSHJZ?oc=5",
-          "published_date": "Wed, 10 Dec 2025 08:00:00 GMT",
-          "time": "Wed, 10 Dec 2025 08:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Welcome to the United Nations",
-          "summary": "Fallback discovery via Google News RSS; publisher: Welcome to the United Nations",
-          "source": "Welcome to the United Nations",
-          "sourceLabel": "Welcome to the United Nations",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @UN",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -1915,38 +1843,6 @@
           "sourceLabel": "North Atlantic Treaty Organization | NATO",
           "sourceType": "fallback-news",
           "fallbackFor": "X @NATO",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "71c7231d17e54a35",
-      "title": "United Nations Conference on Environment and Development, Rio de Janeiro, Brazil, 3-14 June 1992 - Welcome to the United Nations",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Wed, 05 Aug 2020 09:47:46 GMT",
-      "lastSeen": "Wed, 05 Aug 2020 09:47:46 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiY0FVX3lxTE44aFNibVBPeVlsNm5SVGhNYWhRTWxnVy11U1UweTBOT0VseGFVOFRPVzJXRGNVOUk5SmlZOVJzOEhMekExUmZCN2phVkg3SDBjYW5Xa05NQXU3cndOU2VPMVhucw?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "United Nations Conference on Environment and Development, Rio de Janeiro, Brazil, 3-14 June 1992 - Welcome to the United Nations",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE44aFNibVBPeVlsNm5SVGhNYWhRTWxnVy11U1UweTBOT0VseGFVOFRPVzJXRGNVOUk5SmlZOVJzOEhMekExUmZCN2phVkg3SDBjYW5Xa05NQXU3cndOU2VPMVhucw?oc=5",
-          "published_date": "Wed, 05 Aug 2020 09:47:46 GMT",
-          "time": "Wed, 05 Aug 2020 09:47:46 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Welcome to the United Nations",
-          "summary": "Fallback discovery via Google News RSS; publisher: Welcome to the United Nations",
-          "source": "Welcome to the United Nations",
-          "sourceLabel": "Welcome to the United Nations",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @UN",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -2144,6 +2040,40 @@
       ]
     },
     {
+      "id": "01f46ece26872f00",
+      "title": "U.S. rightsizes NATO Force Model contributions - European Command (.mil)",
+      "category": "diplomatic",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [
+        "nato"
+      ],
+      "firstSeen": "Wed, 03 Jun 2026 07:00:00 GMT",
+      "lastSeen": "Wed, 03 Jun 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMijgFBVV95cUxQMjBBODBGSzVacU5iOGtiWDlQLVZrSFkzcXY5Ymp5T3A3bnVRVlJUS3ZlMU5Ob29fRVJXMEdZWktEM0gzelBkMUI5Q3YxWlJoTzdyWVFkRU81RE1tZURlQWpDZ0U4VVRNZ0hBaFk2SEFFdzNubklfSnRYSVl4UzVzQXRLOFllLXJpQ1NRaVVn?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "U.S. rightsizes NATO Force Model contributions - European Command (.mil)",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQMjBBODBGSzVacU5iOGtiWDlQLVZrSFkzcXY5Ymp5T3A3bnVRVlJUS3ZlMU5Ob29fRVJXMEdZWktEM0gzelBkMUI5Q3YxWlJoTzdyWVFkRU81RE1tZURlQWpDZ0U4VVRNZ0hBaFk2SEFFdzNubklfSnRYSVl4UzVzQXRLOFllLXJpQ1NRaVVn?oc=5",
+          "published_date": "Wed, 03 Jun 2026 07:00:00 GMT",
+          "time": "Wed, 03 Jun 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: European Command (.mil)",
+          "summary": "Fallback discovery via Google News RSS; publisher: European Command (.mil)",
+          "source": "European Command (.mil)",
+          "sourceLabel": "European Command (.mil)",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NATO",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
       "id": "841ba2387b5c662e",
       "title": "Officials Provide Progress Update on Major Operation 1 Year After its Launch - U.S. Department of War (.gov)",
       "category": "general",
@@ -2171,6 +2101,174 @@
           "sourceLabel": "U.S. Department of War (.gov)",
           "sourceType": "fallback-news",
           "fallbackFor": "GDELT — Western Hemisphere Counter-Cartel",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "27bbb2066c93986d",
+      "title": "Next NATO summit in Albania in doubt amid U.S. reluctance and low defense spending - The Japan Times",
+      "category": "diplomatic",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [
+        "nato"
+      ],
+      "firstSeen": "Wed, 01 Jul 2026 07:00:00 GMT",
+      "lastSeen": "Wed, 01 Jul 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMimAFBVV95cUxONHRWUUtXQ05qX2dzUDR6RFZRT25fMmFGNFVYZW94YkxaYnkwNVFzNmROZ0ZVZmZkSWRGOXFiOVVoVUtiUUpraVVEblVZSWt1SkVicTBld3ZhMVE3QUZnSUkyNmY2M21WWUJzNFRGUE9oY3d1cGZjNlBXYnpYSmV6dmdlbnZ3QmJISTg5TjR4RHRfZ1Jrb3RncQ?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "Next NATO summit in Albania in doubt amid U.S. reluctance and low defense spending - The Japan Times",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxONHRWUUtXQ05qX2dzUDR6RFZRT25fMmFGNFVYZW94YkxaYnkwNVFzNmROZ0ZVZmZkSWRGOXFiOVVoVUtiUUpraVVEblVZSWt1SkVicTBld3ZhMVE3QUZnSUkyNmY2M21WWUJzNFRGUE9oY3d1cGZjNlBXYnpYSmV6dmdlbnZ3QmJISTg5TjR4RHRfZ1Jrb3RncQ?oc=5",
+          "published_date": "Wed, 01 Jul 2026 07:00:00 GMT",
+          "time": "Wed, 01 Jul 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: The Japan Times",
+          "summary": "Fallback discovery via Google News RSS; publisher: The Japan Times",
+          "source": "The Japan Times",
+          "sourceLabel": "The Japan Times",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NATO",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "a8fdd5388e78db1a",
+      "title": "Trump’s 5% NATO demand puts Albania’s planned 2027 summit at risk - The New Voice of Ukraine",
+      "category": "diplomatic",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [
+        "nato",
+        "uk",
+        "ukraine"
+      ],
+      "firstSeen": "Wed, 01 Jul 2026 07:00:00 GMT",
+      "lastSeen": "Wed, 01 Jul 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMirAFBVV95cUxQN0N1M0ZOdGdGV0dmb2ZWd294a3dfQlpqTlVaeHZqenJsS19YMjRpNll2bVhELVVVaG5uZm94MjFkSUY1TFctV3FUR0l5Z1dwSDg2Z0ZCOUNublVqcVFhcmNBNHR2bWlCc0dSb09KUGs5N0ZweDBDYmpBS2ozRnd5bm5xQnRzV3JfTlVZR1A3Sm9YdWh4bUcyOHRLNk1wc1d2SG5UdzBOMENHcmZI0gGoAUFVX3lxTE1iQnM0eXd5SHVfZEVBT2N5WDhuamtwOVhrU1B4Nm1aWmZxNUZLTHg5N1JIMlZOWmpPZ0E1Z2pIS2RqMl8xdWF5ZmJrTWRnOGRfb0UyY0JvNkVJQWdrWUFNX3VzcXZlMzM1M19JbUZpbjBhMXIxTnVqLXZyblZKdWRTZTRHZXpNY2E1MUFfeVZ0cmdveHNZYUpGd1Q2ZkFMeUZwdHBCbHkyYw?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "Trump’s 5% NATO demand puts Albania’s planned 2027 summit at risk - The New Voice of Ukraine",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQN0N1M0ZOdGdGV0dmb2ZWd294a3dfQlpqTlVaeHZqenJsS19YMjRpNll2bVhELVVVaG5uZm94MjFkSUY1TFctV3FUR0l5Z1dwSDg2Z0ZCOUNublVqcVFhcmNBNHR2bWlCc0dSb09KUGs5N0ZweDBDYmpBS2ozRnd5bm5xQnRzV3JfTlVZR1A3Sm9YdWh4bUcyOHRLNk1wc1d2SG5UdzBOMENHcmZI0gGoAUFVX3lxTE1iQnM0eXd5SHVfZEVBT2N5WDhuamtwOVhrU1B4Nm1aWmZxNUZLTHg5N1JIMlZOWmpPZ0E1Z2pIS2RqMl8xdWF5ZmJrTWRnOGRfb0UyY0JvNkVJQWdrWUFNX3VzcXZlMzM1M19JbUZpbjBhMXIxTnVqLXZyblZKdWRTZTRHZXpNY2E1MUFfeVZ0cmdveHNZYUpGd1Q2ZkFMeUZwdHBCbHkyYw?oc=5",
+          "published_date": "Wed, 01 Jul 2026 07:00:00 GMT",
+          "time": "Wed, 01 Jul 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: The New Voice of Ukraine",
+          "summary": "Fallback discovery via Google News RSS; publisher: The New Voice of Ukraine",
+          "source": "The New Voice of Ukraine",
+          "sourceLabel": "The New Voice of Ukraine",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NATO",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "fad16948b82ae4d0",
+      "title": "International Day of the World’s Indigenous Peoples 2026 - Division for Inclusive Social Development",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Tue, 30 Jun 2026 23:14:04 GMT",
+      "lastSeen": "Tue, 30 Jun 2026 23:14:04 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMieEFVX3lxTE9QWThiWHlEUjNhMThsdHRDMzQzaklaNWdaNDdJQ0xtNWUxUzByRFpINlBNUHZGNFlTcFhDbmFPeWtYeTh6cXRFUDU3NnUzR1NXb1JqRU1yM1hLcG5WS3gtSGN0VGVSQXRFTXl6RkttR2ExZHFkWWFaUg?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "International Day of the World’s Indigenous Peoples 2026 - Division for Inclusive Social Development",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9QWThiWHlEUjNhMThsdHRDMzQzaklaNWdaNDdJQ0xtNWUxUzByRFpINlBNUHZGNFlTcFhDbmFPeWtYeTh6cXRFUDU3NnUzR1NXb1JqRU1yM1hLcG5WS3gtSGN0VGVSQXRFTXl6RkttR2ExZHFkWWFaUg?oc=5",
+          "published_date": "Tue, 30 Jun 2026 23:14:04 GMT",
+          "time": "Tue, 30 Jun 2026 23:14:04 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Division for Inclusive Social Development",
+          "summary": "Fallback discovery via Google News RSS; publisher: Division for Inclusive Social Development",
+          "source": "Division for Inclusive Social Development",
+          "sourceLabel": "Division for Inclusive Social Development",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @UN",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "fcd2c34449d21a25",
+      "title": "Next NATO summit in Albania in doubt amid US reluctance and low defence spending - Reuters",
+      "category": "diplomatic",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [
+        "nato"
+      ],
+      "firstSeen": "Tue, 30 Jun 2026 07:00:00 GMT",
+      "lastSeen": "Tue, 30 Jun 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMizgFBVV95cUxOTDV0X1hIeHUtTS1NS0ZjTEJfRUZ1eFdRNXhfNzJmWld5Njl1Q0wtT1E0WHJueHUwaVlERnVQcjk1bkp1bXBoNXBTQjIzbi1PR3lTbWxjRUt2WjJGYnU4dVJtUEY3eDQ1akwzYmxxOWo5b1RNdk9vWi13QnFINURKaWZmaXZ6Z2ZPUTJubnB0SlVWSF9mQTdqbVNrR3VxYjhRNDlUcjNzUkJZaUJyMl9henB5aUtFY3lSQVpOdERISkVNR3lTTFpqSkhudllRdw?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "Next NATO summit in Albania in doubt amid US reluctance and low defence spending - Reuters",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOTDV0X1hIeHUtTS1NS0ZjTEJfRUZ1eFdRNXhfNzJmWld5Njl1Q0wtT1E0WHJueHUwaVlERnVQcjk1bkp1bXBoNXBTQjIzbi1PR3lTbWxjRUt2WjJGYnU4dVJtUEY3eDQ1akwzYmxxOWo5b1RNdk9vWi13QnFINURKaWZmaXZ6Z2ZPUTJubnB0SlVWSF9mQTdqbVNrR3VxYjhRNDlUcjNzUkJZaUJyMl9henB5aUtFY3lSQVpOdERISkVNR3lTTFpqSkhudllRdw?oc=5",
+          "published_date": "Tue, 30 Jun 2026 07:00:00 GMT",
+          "time": "Tue, 30 Jun 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Reuters",
+          "summary": "Fallback discovery via Google News RSS; publisher: Reuters",
+          "source": "Reuters",
+          "sourceLabel": "Reuters",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NATO",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "9b808377f6ecd0dc",
+      "title": "The Secretary-General Remarks to the General Assembly Ad Hoc Committee Announcement of Voluntary Contributions to UNRWA - UNRWA",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Tue, 30 Jun 2026 07:00:00 GMT",
+      "lastSeen": "Tue, 30 Jun 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMitAFBVV95cUxPSmh2UDhTUFRUVkZrVlEybTVURmxzYTQ5SlpobGZSX09zQWhmcFV0QzBSdzc3YWZFZ2s5S0dENXJEMFBQOGdTOUxSYnZxY1FxSlBYbVEtM2toLUhFZnBscGhoNGRxSWlrT0Z6dnpZV0MtZjRKWGlzVklGdXg0UHBIZWt5M0dVUEx6clZfeUQ1cGE3Z0JuZjNjTlgwZXM1a1gxVWZZS19VRGV4NUN4UHJIZUE0c2s?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "The Secretary-General Remarks to the General Assembly Ad Hoc Committee Announcement of Voluntary Contributions to UNRWA - UNRWA",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPSmh2UDhTUFRUVkZrVlEybTVURmxzYTQ5SlpobGZSX09zQWhmcFV0QzBSdzc3YWZFZ2s5S0dENXJEMFBQOGdTOUxSYnZxY1FxSlBYbVEtM2toLUhFZnBscGhoNGRxSWlrT0Z6dnpZV0MtZjRKWGlzVklGdXg0UHBIZWt5M0dVUEx6clZfeUQ1cGE3Z0JuZjNjTlgwZXM1a1gxVWZZS19VRGV4NUN4UHJIZUE0c2s?oc=5",
+          "published_date": "Tue, 30 Jun 2026 07:00:00 GMT",
+          "time": "Tue, 30 Jun 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: UNRWA",
+          "summary": "Fallback discovery via Google News RSS; publisher: UNRWA",
+          "source": "UNRWA",
+          "sourceLabel": "UNRWA",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @UN",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -2237,6 +2335,40 @@
           "sourceLabel": "North Atlantic Treaty Organization | NATO",
           "sourceType": "fallback-news",
           "fallbackFor": "X @NATO",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "9727722a688cd52a",
+      "title": "Security Council LIVE: Updates on Gaza, West Bank amid regional tensions - UN News",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [
+        "gaza"
+      ],
+      "firstSeen": "Tue, 28 Jul 2026 07:00:00 GMT",
+      "lastSeen": "Tue, 28 Jul 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiV0FVX3lxTE16QXNPQ2FnX2FvSzQ5QTZGaUw3WEVvLTduNmMxWnNxeXo3VFNBNFFKRlFxZlBDdnVFN01zbE9IcGROc3ByVjJBNmoxWEk3NFpFVUJGeHdJMA?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "Security Council LIVE: Updates on Gaza, West Bank amid regional tensions - UN News",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE16QXNPQ2FnX2FvSzQ5QTZGaUw3WEVvLTduNmMxWnNxeXo3VFNBNFFKRlFxZlBDdnVFN01zbE9IcGROc3ByVjJBNmoxWEk3NFpFVUJGeHdJMA?oc=5",
+          "published_date": "Tue, 28 Jul 2026 07:00:00 GMT",
+          "time": "Tue, 28 Jul 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: UN News",
+          "summary": "Fallback discovery via Google News RSS; publisher: UN News",
+          "source": "UN News",
+          "sourceLabel": "UN News",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @UN",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -2338,38 +2470,6 @@
       ]
     },
     {
-      "id": "aa26c8e9cf9d91b8",
-      "title": "Iowa governor issues emergency proclamation for 3 counties hours before controlled Army munition explosion - ABC News - Breaking News, Latest News and Videos",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Tue, 24 Nov 2026 21:31:23 GMT",
-      "lastSeen": "Tue, 24 Nov 2026 21:31:23 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMioAFBVV95cUxOWDVwcTVyTnRRZEVjOV9acVZnd2tKQnI2VTgzTThzSmNZOWV1M3N4ektvZ1JmbEVfNUx1VUdWQlVpd3IzWHR1UVoxYk5hb253U2EtbU55T25SdjJncTBVaFVQLXdtLVZ4Rm90SmlTRWhGd05BWDVnWlQ1bXAzTlYweWhNT2tLVy1GWlVzQjlWSGZPLXNhTGdRek01ZjhiRzR20gGmAUFVX3lxTE1kX0xNWjFlVUpFMkJDN1hKaE96RXNTUU9lTnFvQUVxSjlYZXdBc2YzaTFydktvUE00bmRrcWE2akhTT0ZvM3lGdkYyc2lkM2ZuZ3VzN3JLRHRnTXJZcWVURmk0ZzczbkNxR20zWG5DcFJmTjVPMmxaUHdsenEyT2ZnakFnenBvU0l6MU9wdjVmWlFPUEItNTYzNmFGZG10bWlseTJaQXc?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Iowa governor issues emergency proclamation for 3 counties hours before controlled Army munition explosion - ABC News - Breaking News, Latest News and Videos",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOWDVwcTVyTnRRZEVjOV9acVZnd2tKQnI2VTgzTThzSmNZOWV1M3N4ektvZ1JmbEVfNUx1VUdWQlVpd3IzWHR1UVoxYk5hb253U2EtbU55T25SdjJncTBVaFVQLXdtLVZ4Rm90SmlTRWhGd05BWDVnWlQ1bXAzTlYweWhNT2tLVy1GWlVzQjlWSGZPLXNhTGdRek01ZjhiRzR20gGmAUFVX3lxTE1kX0xNWjFlVUpFMkJDN1hKaE96RXNTUU9lTnFvQUVxSjlYZXdBc2YzaTFydktvUE00bmRrcWE2akhTT0ZvM3lGdkYyc2lkM2ZuZ3VzN3JLRHRnTXJZcWVURmk0ZzczbkNxR20zWG5DcFJmTjVPMmxaUHdsenEyT2ZnakFnenBvU0l6MU9wdjVmWlFPUEItNTYzNmFGZG10bWlseTJaQXc?oc=5",
-          "published_date": "Tue, 24 Nov 2026 21:31:23 GMT",
-          "time": "Tue, 24 Nov 2026 21:31:23 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: ABC News - Breaking News, Latest News and Videos",
-          "summary": "Fallback discovery via Google News RSS; publisher: ABC News - Breaking News, Latest News and Videos",
-          "source": "ABC News - Breaking News, Latest News and Videos",
-          "sourceLabel": "ABC News - Breaking News, Latest News and Videos",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NASA",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
       "id": "888358e26ab987a1",
       "title": "Trump presents Rudy Giuliani with Presidential Medal of Freedom - CBS News",
       "category": "general",
@@ -2429,6 +2529,38 @@
           "sourceLabel": "Yahoo Finance",
           "sourceType": "fallback-news",
           "fallbackFor": "X @POTUS",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "ed10eadb88553b59",
+      "title": "Progress Cargo Craft Counts Down to Launch from Kazakhstan - NASA (.gov)",
+      "category": "general",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [],
+      "firstSeen": "Tue, 24 Nov 2026 09:42:58 GMT",
+      "lastSeen": "Tue, 24 Nov 2026 09:42:58 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMirwFBVV95cUxNMzVFOWp0czB6RFJJOTNlZmRDblNvWE5mUl9sS3F5Z1hRV2o0ZEp1em5CSWJNcENVaHRReEQwWlJkTm1vUmUtZkxvUTlhNmh5R1dUZENtek1OQ3BvSzBmTF9EaWdrd3hLbkxrUTlMLXgzZHhQRkhobTltWkNPV0w5TVRlOWtBcFdPcTc0TGdrWDZyOUJEYzhCa0oxNE1OUHVQaUVkNnNRbG9BNjZzNkFr?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "Progress Cargo Craft Counts Down to Launch from Kazakhstan - NASA (.gov)",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNMzVFOWp0czB6RFJJOTNlZmRDblNvWE5mUl9sS3F5Z1hRV2o0ZEp1em5CSWJNcENVaHRReEQwWlJkTm1vUmUtZkxvUTlhNmh5R1dUZENtek1OQ3BvSzBmTF9EaWdrd3hLbkxrUTlMLXgzZHhQRkhobTltWkNPV0w5TVRlOWtBcFdPcTc0TGdrWDZyOUJEYzhCa0oxNE1OUHVQaUVkNnNRbG9BNjZzNkFr?oc=5",
+          "published_date": "Tue, 24 Nov 2026 09:42:58 GMT",
+          "time": "Tue, 24 Nov 2026 09:42:58 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
+          "summary": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
+          "source": "NASA (.gov)",
+          "sourceLabel": "NASA (.gov)",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NASA",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -2498,38 +2630,6 @@
       ]
     },
     {
-      "id": "7540dbe4323f3bcc",
-      "title": "President Trump at the United Nations: “While Others Have Talked, I Have Acted” - The White House (.gov)",
-      "category": "political",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Tue, 22 Sep 2026 07:00:00 GMT",
-      "lastSeen": "Tue, 22 Sep 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMivAFBVV95cUxOSTR1MUtUWVhRRkY5YnZuaE1OQTFlRDQ2YURvMEVtQlZ0X29EeHZSWGhEX3lJWmRDS2FzMjllWm1Zbkx4ZnNTdkpYVm1hNjE0X2ppTmE5dWZJOEYzZDdKUzB0dXJnaTdxMUlCQW9Wc3pBZkUzY2cwNV96TE9NYUtDZGZubXh6Si0tcENQblYtM3FSRUZUNDJHc09CaFBwTUxJWXItWEYwbzJlZ2xVVGdfY0J4ZjFvMkh3eWpKaA?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "President Trump at the United Nations: “While Others Have Talked, I Have Acted” - The White House (.gov)",
-          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOSTR1MUtUWVhRRkY5YnZuaE1OQTFlRDQ2YURvMEVtQlZ0X29EeHZSWGhEX3lJWmRDS2FzMjllWm1Zbkx4ZnNTdkpYVm1hNjE0X2ppTmE5dWZJOEYzZDdKUzB0dXJnaTdxMUlCQW9Wc3pBZkUzY2cwNV96TE9NYUtDZGZubXh6Si0tcENQblYtM3FSRUZUNDJHc09CaFBwTUxJWXItWEYwbzJlZ2xVVGdfY0J4ZjFvMkh3eWpKaA?oc=5",
-          "published_date": "Tue, 22 Sep 2026 07:00:00 GMT",
-          "time": "Tue, 22 Sep 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: The White House (.gov)",
-          "summary": "Fallback discovery via Google News RSS; publisher: The White House (.gov)",
-          "source": "The White House (.gov)",
-          "sourceLabel": "The White House (.gov)",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @POTUS",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
       "id": "8d5df0f12ac0e302",
       "title": "White House press ban - what is the pool and why is it in a row with Trump? - BBC",
       "category": "general",
@@ -2562,9 +2662,9 @@
       ]
     },
     {
-      "id": "6a1c2fcf0fafa191",
-      "title": "Secretary-General of the United Nations | 81st session - General Debate",
-      "category": "general",
+      "id": "7540dbe4323f3bcc",
+      "title": "President Trump at the United Nations: “While Others Have Talked, I Have Acted” - The White House (.gov)",
+      "category": "political",
       "confidence": "low",
       "reportCount": 1,
       "sourceCount": 1,
@@ -2575,52 +2675,20 @@
       "firstSeen": "Tue, 22 Sep 2026 07:00:00 GMT",
       "lastSeen": "Tue, 22 Sep 2026 07:00:00 GMT",
       "urls": [
-        "https://news.google.com/rss/articles/CBMib0FVX3lxTE1Melc3LXlLSmJPR09JT045cDlRLXlLOXllV2VuSUdybzFmQVhMQW5ycmhSZ1c5T1pjR0pUVHpEbnpBZ1I3STF1bk8yNU1yRDl1N1VHVW1xTjR5RGI2TVJndWZPZGJFcEsySjJ6bHB4QQ?oc=5"
+        "https://news.google.com/rss/articles/CBMivAFBVV95cUxOSTR1MUtUWVhRRkY5YnZuaE1OQTFlRDQ2YURvMEVtQlZ0X29EeHZSWGhEX3lJWmRDS2FzMjllWm1Zbkx4ZnNTdkpYVm1hNjE0X2ppTmE5dWZJOEYzZDdKUzB0dXJnaTdxMUlCQW9Wc3pBZkUzY2cwNV96TE9NYUtDZGZubXh6Si0tcENQblYtM3FSRUZUNDJHc09CaFBwTUxJWXItWEYwbzJlZ2xVVGdfY0J4ZjFvMkh3eWpKaA?oc=5"
       ],
       "reports": [
         {
-          "title": "Secretary-General of the United Nations | 81st session - General Debate",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1Melc3LXlLSmJPR09JT045cDlRLXlLOXllV2VuSUdybzFmQVhMQW5ycmhSZ1c5T1pjR0pUVHpEbnpBZ1I3STF1bk8yNU1yRDl1N1VHVW1xTjR5RGI2TVJndWZPZGJFcEsySjJ6bHB4QQ?oc=5",
+          "title": "President Trump at the United Nations: “While Others Have Talked, I Have Acted” - The White House (.gov)",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOSTR1MUtUWVhRRkY5YnZuaE1OQTFlRDQ2YURvMEVtQlZ0X29EeHZSWGhEX3lJWmRDS2FzMjllWm1Zbkx4ZnNTdkpYVm1hNjE0X2ppTmE5dWZJOEYzZDdKUzB0dXJnaTdxMUlCQW9Wc3pBZkUzY2cwNV96TE9NYUtDZGZubXh6Si0tcENQblYtM3FSRUZUNDJHc09CaFBwTUxJWXItWEYwbzJlZ2xVVGdfY0J4ZjFvMkh3eWpKaA?oc=5",
           "published_date": "Tue, 22 Sep 2026 07:00:00 GMT",
           "time": "Tue, 22 Sep 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: General Debate",
-          "summary": "Fallback discovery via Google News RSS; publisher: General Debate",
-          "source": "General Debate",
-          "sourceLabel": "General Debate",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: The White House (.gov)",
+          "summary": "Fallback discovery via Google News RSS; publisher: The White House (.gov)",
+          "source": "The White House (.gov)",
+          "sourceLabel": "The White House (.gov)",
           "sourceType": "fallback-news",
-          "fallbackFor": "X @UN",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "8de4890295b7c9c7",
-      "title": "Artificial Intelligence (AI) - Welcome to the United Nations",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Tue, 22 Apr 2025 15:05:00 GMT",
-      "lastSeen": "Tue, 22 Apr 2025 15:05:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMia0FVX3lxTE5SZUhsaXQyd3ROdW13N1RXRGhncGRtanZiMGZheXBhaVBLdjl2ZVZmSUx3M0pIRmxhdWV6blJac3phTWlReXRFcm9SS1dHRjEybk0yUTUwLW9Bd1RSd0QxYXZpODRTYlBJVEpn?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Artificial Intelligence (AI) - Welcome to the United Nations",
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5SZUhsaXQyd3ROdW13N1RXRGhncGRtanZiMGZheXBhaVBLdjl2ZVZmSUx3M0pIRmxhdWV6blJac3phTWlReXRFcm9SS1dHRjEybk0yUTUwLW9Bd1RSd0QxYXZpODRTYlBJVEpn?oc=5",
-          "published_date": "Tue, 22 Apr 2025 15:05:00 GMT",
-          "time": "Tue, 22 Apr 2025 15:05:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Welcome to the United Nations",
-          "summary": "Fallback discovery via Google News RSS; publisher: Welcome to the United Nations",
-          "source": "Welcome to the United Nations",
-          "sourceLabel": "Welcome to the United Nations",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @UN",
+          "fallbackFor": "X @POTUS",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -2658,8 +2726,42 @@
       ]
     },
     {
-      "id": "40d3c2b3812e8edb",
-      "title": "World enters era of ‘global water bankruptcy’ - UN News",
+      "id": "118de3f0584192c9",
+      "title": "NATO official: KFOR will remain deployed where security is most needed - Kosovo Online",
+      "category": "diplomatic",
+      "confidence": "low",
+      "reportCount": 1,
+      "sourceCount": 1,
+      "sources": [
+        "news.google.com"
+      ],
+      "anchors": [
+        "nato"
+      ],
+      "firstSeen": "Tue, 21 Jul 2026 07:00:00 GMT",
+      "lastSeen": "Tue, 21 Jul 2026 07:00:00 GMT",
+      "urls": [
+        "https://news.google.com/rss/articles/CBMiwAFBVV95cUxONEg0eVpMbzRvY3ZhVi10SGhxaGp4OHliTGsxZTdxbWg3R0tLVGFXeTIybDNoS1BVd3M2d2EtZGhtcHZCMm5GU0Y3YXpEZVFpa29ZZHMxNmM1T1V4Z0NrVXNWMW1VRW4tOE9LVnJIZk5VczlSS2ZleVRLX3NicXNhWDc5RktaRFJEZFVkcm14VkNnQjRIdkt1cEw4OFdYcFBrVGdYS0NrT3Z1Q0lLZmM4akp4Nmw3a2ZERU9hTVpUdTQ?oc=5"
+      ],
+      "reports": [
+        {
+          "title": "NATO official: KFOR will remain deployed where security is most needed - Kosovo Online",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxONEg0eVpMbzRvY3ZhVi10SGhxaGp4OHliTGsxZTdxbWg3R0tLVGFXeTIybDNoS1BVd3M2d2EtZGhtcHZCMm5GU0Y3YXpEZVFpa29ZZHMxNmM1T1V4Z0NrVXNWMW1VRW4tOE9LVnJIZk5VczlSS2ZleVRLX3NicXNhWDc5RktaRFJEZFVkcm14VkNnQjRIdkt1cEw4OFdYcFBrVGdYS0NrT3Z1Q0lLZmM4akp4Nmw3a2ZERU9hTVpUdTQ?oc=5",
+          "published_date": "Tue, 21 Jul 2026 07:00:00 GMT",
+          "time": "Tue, 21 Jul 2026 07:00:00 GMT",
+          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Kosovo Online",
+          "summary": "Fallback discovery via Google News RSS; publisher: Kosovo Online",
+          "source": "Kosovo Online",
+          "sourceLabel": "Kosovo Online",
+          "sourceType": "fallback-news",
+          "fallbackFor": "X @NATO",
+          "credit_metadata": "Google News RSS fallback"
+        }
+      ]
+    },
+    {
+      "id": "120126f8c01ae97c",
+      "title": "‘Business as usual is a business of death’: UN adopts road safety pledge over US objection - UN News",
       "category": "general",
       "confidence": "low",
       "reportCount": 1,
@@ -2668,17 +2770,17 @@
         "news.google.com"
       ],
       "anchors": [],
-      "firstSeen": "Tue, 20 Jan 2026 08:00:00 GMT",
-      "lastSeen": "Tue, 20 Jan 2026 08:00:00 GMT",
+      "firstSeen": "Tue, 21 Jul 2026 07:00:00 GMT",
+      "lastSeen": "Tue, 21 Jul 2026 07:00:00 GMT",
       "urls": [
-        "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1jQjNyd2JZd3N1TU0yOHY5NWlfSEdOZk1PUGV4UG9WZkMyTXNHRHZkX2g0UWlwNjFIbzFZQVB5b3czN1dHYnh6OWhtSmdWVHg0VU52S1UzZw?oc=5"
+        "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9YY3pDcUR2NGRXeVU0UVhnTHlKTG9mQXJQMjB4c3VYU2FKWjVvRDhGb09COVZHazBHZlRaWDd6TVNTRDVwQnFnNWZLaXdUWW9vTS1LeUFHTQ?oc=5"
       ],
       "reports": [
         {
-          "title": "World enters era of ‘global water bankruptcy’ - UN News",
-          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1jQjNyd2JZd3N1TU0yOHY5NWlfSEdOZk1PUGV4UG9WZkMyTXNHRHZkX2g0UWlwNjFIbzFZQVB5b3czN1dHYnh6OWhtSmdWVHg0VU52S1UzZw?oc=5",
-          "published_date": "Tue, 20 Jan 2026 08:00:00 GMT",
-          "time": "Tue, 20 Jan 2026 08:00:00 GMT",
+          "title": "‘Business as usual is a business of death’: UN adopts road safety pledge over US objection - UN News",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9YY3pDcUR2NGRXeVU0UVhnTHlKTG9mQXJQMjB4c3VYU2FKWjVvRDhGb09COVZHazBHZlRaWDd6TVNTRDVwQnFnNWZLaXdUWW9vTS1LeUFHTQ?oc=5",
+          "published_date": "Tue, 21 Jul 2026 07:00:00 GMT",
+          "time": "Tue, 21 Jul 2026 07:00:00 GMT",
           "summary_snippet": "Fallback discovery via Google News RSS; publisher: UN News",
           "summary": "Fallback discovery via Google News RSS; publisher: UN News",
           "source": "UN News",
@@ -2781,107 +2883,6 @@
           "sourceLabel": "NASA Science (.gov)",
           "sourceType": "fallback-news",
           "fallbackFor": "X @NASA",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "1675e11fc91f93a3",
-      "title": "NASA Invites Media, Public to View Roman Telescope’s First Images - NASA (.gov)",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Tue, 17 Nov 2026 17:11:52 GMT",
-      "lastSeen": "Tue, 17 Nov 2026 17:11:52 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMinwFBVV95cUxNcktfNTROLW9QM3M4dW5JT0ZrQUNiNHc0Sm9DNnFNV05sd0xiTGpSWFV5ODZ6OG8wcjc2ZkNkelJLcXc3RFc5RVRGMWNhM2ZyQjBXaVRVTUFQX0JhNDl1Y0ExY091TlJCWU9rV1pQdzdvS0FCdU9DU1ZJM1BPNFZzUnMxdE5iNzVVbkl4N2c1SXRxZHN1emN2cVFDQlpUOFU?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "NASA Invites Media, Public to View Roman Telescope’s First Images - NASA (.gov)",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNcktfNTROLW9QM3M4dW5JT0ZrQUNiNHc0Sm9DNnFNV05sd0xiTGpSWFV5ODZ6OG8wcjc2ZkNkelJLcXc3RFc5RVRGMWNhM2ZyQjBXaVRVTUFQX0JhNDl1Y0ExY091TlJCWU9rV1pQdzdvS0FCdU9DU1ZJM1BPNFZzUnMxdE5iNzVVbkl4N2c1SXRxZHN1emN2cVFDQlpUOFU?oc=5",
-          "published_date": "Tue, 17 Nov 2026 17:11:52 GMT",
-          "time": "Tue, 17 Nov 2026 17:11:52 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
-          "summary": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
-          "source": "NASA (.gov)",
-          "sourceLabel": "NASA (.gov)",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NASA",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "33aeea60b690d61a",
-      "title": "Israel has committed genocide in the Gaza Strip, UN Commission of Inquiry finds - Question of Palestine - Welcome to the United Nations",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [
-        "gaza",
-        "israel"
-      ],
-      "firstSeen": "Tue, 16 Sep 2025 07:00:00 GMT",
-      "lastSeen": "Tue, 16 Sep 2025 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMisgFBVV95cUxPMHJfcGJMT3hTdE0zMDM3SEdVUWdZSDZqVWhpZ0xhWGZoWFFPQkZXaVpNQWYwZXZ6TnpwejVIeHdDenhPUWtsZWdSenpRbGo0OFNCOExnYlJnWDhKbS1hbjk2MkhqWHNaTjluREU1WTVaWXhpWXowaVZvWDZHX1lqT1lVbXBZbXBKZVR6TzZzMjFUVUl2cVhObFZWb2lRZ1VKOHFSdWtQVlhQZnJmTkRxSmRn?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Israel has committed genocide in the Gaza Strip, UN Commission of Inquiry finds - Question of Palestine - Welcome to the United Nations",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPMHJfcGJMT3hTdE0zMDM3SEdVUWdZSDZqVWhpZ0xhWGZoWFFPQkZXaVpNQWYwZXZ6TnpwejVIeHdDenhPUWtsZWdSenpRbGo0OFNCOExnYlJnWDhKbS1hbjk2MkhqWHNaTjluREU1WTVaWXhpWXowaVZvWDZHX1lqT1lVbXBZbXBKZVR6TzZzMjFUVUl2cVhObFZWb2lRZ1VKOHFSdWtQVlhQZnJmTkRxSmRn?oc=5",
-          "published_date": "Tue, 16 Sep 2025 07:00:00 GMT",
-          "time": "Tue, 16 Sep 2025 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Welcome to the United Nations",
-          "summary": "Fallback discovery via Google News RSS; publisher: Welcome to the United Nations",
-          "source": "Welcome to the United Nations",
-          "sourceLabel": "Welcome to the United Nations",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @UN",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "664348ad602d3cef",
-      "title": "NATO launches 'Baltic Sentry' to increase critical infrastructure security - North Atlantic Treaty Organization | NATO",
-      "category": "diplomatic",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [
-        "nato"
-      ],
-      "firstSeen": "Tue, 14 Jan 2025 08:00:00 GMT",
-      "lastSeen": "Tue, 14 Jan 2025 08:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOeENGQXRKQ05UckxXWkNZZm5UX0FyaGVRSzd2ajhkYi0xanUxOU9pLWdRT045SE5NeHhfaDdBenR4N2x2Sm1tc1Rxc21YcXg2SHpGS0tHOGl2WW5LNnZWcnlRR29vMlhFczlQQlV6cDhzYzhMX3pkMkwzRHMxMzZFWjNMMmktcmlyRVkteTBERG1Ranl3YWZIM1phUnNaT2lpMVdSZ0pabDZKVDZuSWxFRU1iWXVWRVpPejNDeXljRUpuMjZRdTVuNWNjeVVtcDhOaFlj?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "NATO launches 'Baltic Sentry' to increase critical infrastructure security - North Atlantic Treaty Organization | NATO",
-          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOeENGQXRKQ05UckxXWkNZZm5UX0FyaGVRSzd2ajhkYi0xanUxOU9pLWdRT045SE5NeHhfaDdBenR4N2x2Sm1tc1Rxc21YcXg2SHpGS0tHOGl2WW5LNnZWcnlRR29vMlhFczlQQlV6cDhzYzhMX3pkMkwzRHMxMzZFWjNMMmktcmlyRVkteTBERG1Ranl3YWZIM1phUnNaT2lpMVdSZ0pabDZKVDZuSWxFRU1iWXVWRVpPejNDeXljRUpuMjZRdTVuNWNjeVVtcDhOaFlj?oc=5",
-          "published_date": "Tue, 14 Jan 2025 08:00:00 GMT",
-          "time": "Tue, 14 Jan 2025 08:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "summary": "Fallback discovery via Google News RSS; publisher: North Atlantic Treaty Organization | NATO",
-          "source": "North Atlantic Treaty Organization | NATO",
-          "sourceLabel": "North Atlantic Treaty Organization | NATO",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NATO",
           "credit_metadata": "Google News RSS fallback"
         }
       ]
@@ -3072,136 +3073,6 @@
           "summary": "Fallback discovery via Google News RSS; publisher: NPR",
           "source": "NPR",
           "sourceLabel": "NPR",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @WhiteHouse",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "49bb872be0c657da",
-      "title": "NASA Invites Media, Public to Join Voyager 1 One-Light Day Activities - NASA (.gov)",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Tue, 10 Nov 2026 08:00:00 GMT",
-      "lastSeen": "Tue, 10 Nov 2026 08:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMipgFBVV95cUxQXzVYdjEyMWllNkhsb1F5TlY5bEY0WmY3RjN5ZmF3ZjQ4eWdPX0I0SXE3VEs1cEYzQ0I5TGlfYkNhd2U5b1AtWU90WHoxZE5vMEtzYmo5QUg1RVc3TklwNWdVR3BQbFl5bXItcUpTMk9PQU0yUXhmMC1sUlljd0tkYXlyWUpuZFFWZkVPcUp3amphMzd4dGwxUGxkU1VGT0VWcTRjMDRB?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "NASA Invites Media, Public to Join Voyager 1 One-Light Day Activities - NASA (.gov)",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQXzVYdjEyMWllNkhsb1F5TlY5bEY0WmY3RjN5ZmF3ZjQ4eWdPX0I0SXE3VEs1cEYzQ0I5TGlfYkNhd2U5b1AtWU90WHoxZE5vMEtzYmo5QUg1RVc3TklwNWdVR3BQbFl5bXItcUpTMk9PQU0yUXhmMC1sUlljd0tkYXlyWUpuZFFWZkVPcUp3amphMzd4dGwxUGxkU1VGT0VWcTRjMDRB?oc=5",
-          "published_date": "Tue, 10 Nov 2026 08:00:00 GMT",
-          "time": "Tue, 10 Nov 2026 08:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
-          "summary": "Fallback discovery via Google News RSS; publisher: NASA (.gov)",
-          "source": "NASA (.gov)",
-          "sourceLabel": "NASA (.gov)",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @NASA",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "8353b62612795232",
-      "title": "Timeline: US strikes on alleged drug boats - ABC News - Breaking News, Latest News and Videos",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Tue, 10 Feb 2026 23:30:21 GMT",
-      "lastSeen": "Tue, 10 Feb 2026 23:30:21 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMijwFBVV95cUxQSDVWTzdUUEU0ZFhUc1N6cHd5QnZEOWpfdi1ObjJVd29EN1YzQXdJZ2dETUVUeUs3TG1SSlpfTXQyY0QzTE56T1hZdGRGVWlIM04yT3JiNkdJZnZpTUlCazRJX2V2S0VWNktZNGtzMVRIem53UUl0NllqbG1qLWxCT2FnekIzRkdKRHJYZFUzd9IBlAFBVV95cUxQQk9NQ2dIZGhTVUdQZjh1MU80dkVsOHlzQ1VOZ3FjRzRINEZnOVY5SjRWQ3Axbk8tWkdGa05oajhGM0FLbEFwaGVYNlBaaFFOZ2xCc1FON0FKcEl0UTJMTjk4UTVwVkxIeFBKT0RId1pIcGVBRUs0OVdxQzVhYjNqUHZieTdDTGJqU1Q1bEs0OV9uSlli?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Timeline: US strikes on alleged drug boats - ABC News - Breaking News, Latest News and Videos",
-          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQSDVWTzdUUEU0ZFhUc1N6cHd5QnZEOWpfdi1ObjJVd29EN1YzQXdJZ2dETUVUeUs3TG1SSlpfTXQyY0QzTE56T1hZdGRGVWlIM04yT3JiNkdJZnZpTUlCazRJX2V2S0VWNktZNGtzMVRIem53UUl0NllqbG1qLWxCT2FnekIzRkdKRHJYZFUzd9IBlAFBVV95cUxQQk9NQ2dIZGhTVUdQZjh1MU80dkVsOHlzQ1VOZ3FjRzRINEZnOVY5SjRWQ3Axbk8tWkdGa05oajhGM0FLbEFwaGVYNlBaaFFOZ2xCc1FON0FKcEl0UTJMTjk4UTVwVkxIeFBKT0RId1pIcGVBRUs0OVdxQzVhYjNqUHZieTdDTGJqU1Q1bEs0OV9uSlli?oc=5",
-          "published_date": "Tue, 10 Feb 2026 23:30:21 GMT",
-          "time": "Tue, 10 Feb 2026 23:30:21 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: ABC News - Breaking News, Latest News and Videos",
-          "summary": "Fallback discovery via Google News RSS; publisher: ABC News - Breaking News, Latest News and Videos",
-          "source": "ABC News - Breaking News, Latest News and Videos",
-          "sourceLabel": "ABC News - Breaking News, Latest News and Videos",
-          "sourceType": "fallback-news",
-          "fallbackFor": "GDELT — Western Hemisphere Counter-Cartel",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "90c2e7589701f036",
-      "title": "White House defends Trump comment to let Iran 'take out' LA and San Diego - BBC",
-      "category": "general",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [
-        "iran"
-      ],
-      "firstSeen": "Tue, 06 Oct 2026 07:00:00 GMT",
-      "lastSeen": "Tue, 06 Oct 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMiW0FVX3lxTE93cEtTcmRaQm04RTdROTUtUm80V214eGRjaDlLcGh5d0NLcG9Ud1VnM1Vhc1hpTzV5VDI1ZjQ4ZHZqLVZReGFHX2xFOXVEeTVJWThpVm1HNWRQdkU?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "White House defends Trump comment to let Iran 'take out' LA and San Diego - BBC",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE93cEtTcmRaQm04RTdROTUtUm80V214eGRjaDlLcGh5d0NLcG9Ud1VnM1Vhc1hpTzV5VDI1ZjQ4ZHZqLVZReGFHX2xFOXVEeTVJWThpVm1HNWRQdkU?oc=5",
-          "published_date": "Tue, 06 Oct 2026 07:00:00 GMT",
-          "time": "Tue, 06 Oct 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: BBC",
-          "summary": "Fallback discovery via Google News RSS; publisher: BBC",
-          "source": "BBC",
-          "sourceLabel": "BBC",
-          "sourceType": "fallback-news",
-          "fallbackFor": "X @WhiteHouse",
-          "credit_metadata": "Google News RSS fallback"
-        }
-      ]
-    },
-    {
-      "id": "414a18814d96b5f3",
-      "title": "Trump comments on attacks on San Diego and Los Angeles spark clash between critics, White House - Times of San Diego",
-      "category": "conflict",
-      "confidence": "low",
-      "reportCount": 1,
-      "sourceCount": 1,
-      "sources": [
-        "news.google.com"
-      ],
-      "anchors": [],
-      "firstSeen": "Tue, 06 Oct 2026 07:00:00 GMT",
-      "lastSeen": "Tue, 06 Oct 2026 07:00:00 GMT",
-      "urls": [
-        "https://news.google.com/rss/articles/CBMimgFBVV95cUxNMWdiZFZxM2tRWllEQ0ZMRGhTUFRESFNxRExvNkh4cXc5UHhUS3I4c3dCWVlwa1RLLXhnQ05McV9IbzBNYzdlQmtUcFpvRzRkdGV2cUF6OTFiS3dZQ1pJa25FVHVjcG11NVVmVUhMLWtuaFRCZVBpazlQX3pLLUVfdkcyMDhQZUhEQ1I4a0lOTEJjQ1ZwUDRocHNR?oc=5"
-      ],
-      "reports": [
-        {
-          "title": "Trump comments on attacks on San Diego and Los Angeles spark clash between critics, White House - Times of San Diego",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNMWdiZFZxM2tRWllEQ0ZMRGhTUFRESFNxRExvNkh4cXc5UHhUS3I4c3dCWVlwa1RLLXhnQ05McV9IbzBNYzdlQmtUcFpvRzRkdGV2cUF6OTFiS3dZQ1pJa25FVHVjcG11NVVmVUhMLWtuaFRCZVBpazlQX3pLLUVfdkcyMDhQZUhEQ1I4a0lOTEJjQ1ZwUDRocHNR?oc=5",
-          "published_date": "Tue, 06 Oct 2026 07:00:00 GMT",
-          "time": "Tue, 06 Oct 2026 07:00:00 GMT",
-          "summary_snippet": "Fallback discovery via Google News RSS; publisher: Times of San Diego",
-          "summary": "Fallback discovery via Google News RSS; publisher: Times of San Diego",
-          "source": "Times of San Diego",
-          "sourceLabel": "Times of San Diego",
           "sourceType": "fallback-news",
           "fallbackFor": "X @WhiteHouse",
           "credit_metadata": "Google News RSS fallback"
